@@ -1,0 +1,359 @@
+---
+layout: post
+title: Bubbles
+description: bubbles
+platform: WindowsForms
+control: Maps
+documentation: ug
+---
+
+# Bubbles
+
+Bubbles in the Maps control represent the under-bound data values of the map. Bubbles are scattered throughout map shapes, which contain bound values.
+
+Bubbles are included when data binding is set as mentioned above and the BubbleSetting is set.
+
+The following properties are available in BubbleSetting:
+
+<table>
+<tr>
+<td>
+Property</td><td>
+Type</td><td>
+Description</td></tr>
+<tr>
+<td>
+AutoFillColor</td><td>
+Boolean (true / false)</td><td>
+Gets or sets whether the colors should be automatically filled.</td></tr>
+<tr>
+<td>
+MaxSize</td><td>
+Double</td><td>
+Get or sets the maximum height and width of the bubble.</td></tr>
+<tr>
+<td>
+MinSize</td><td>
+Double</td><td>
+Gets or sets the minimum height and width of the bubble.</td></tr>
+<tr>
+<td>
+StrokeThickness</td><td>
+Double</td><td>
+Gets or sets the border thickness of the bubbles.</td></tr>
+<tr>
+<td>
+ColorValuePath</td><td>
+String</td><td>
+Gets or sets the value for bubble colormapping</td></tr>
+<tr>
+<td>
+ValuePath</td><td>
+String</td><td>
+Gets or sets the name of the under-bound property in ItemsSource.</td></tr>
+<tr>
+<td>
+ColorMapping</td><td>
+ObservableCollection<RangeColorMapping></td><td>
+Gets or sets the tree map colors.</td></tr>
+<tr>
+<td>
+Fill</td><td>
+Brush</td><td>
+Gets or sets the fill brush of the bubble when auto fill color is set to true.</td></tr>
+</table>
+
+
+## Adding Bubbles to a Map 
+
+To add bubbles to a map, the BubbleSetting has to be added to the ShapeFileLayer.  Set the AutoFillColors as false and set the Fill property. Also set the MaxSize, MinSize, and ValuePath properties as shown in the code sample below.
+
+When the under-bound value is below any of the given sorted range or above the sorted range, then the fill is set as “Black.” 
+
+“AutoFillColors” must be set as “False” to enable range color mapping.
+
+
+
+
+
+[FORM1.DESIGNER.CS]
+
+partial class Form1
+
+    {
+
+         private void InitializeComponent()
+
+         {
+
+            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+
+            this.mapsControl1.Name = "mapsControl1";
+
+            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+
+            this.Controls.Add(this.mapsControl1);  
+
+             this.ClientSize = new System.Drawing.Size(880, 585);          
+
+            this.Load += new System.EventHandler(this.Form1_Load);
+
+         }
+
+            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
+
+     }  
+
+
+
+[FORM1.CS]
+
+
+
+public partial class Form1 : Form
+
+    {
+
+        private void Form1_Load(object sender, EventArgs e)
+
+        {
+
+            this.mapsControl1.Dock = DockStyle.Fill;
+
+            this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+
+            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+
+            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+
+
+
+             MapViewModel viewmodel = new MapViewModel();
+
+
+
+
+
+             ShapeFileLayer shapeLayer = new ShapeFileLayer();
+
+             shapeLayer.Uri = "world1.shp";
+
+             shapeLayer.ItemSource = viewmodel.Countries;
+
+             shapeLayer.ShapeIDPath = "NAME";
+
+             shapeLayer.ShapeIDTableField = "NAME"; 
+
+
+
+             shapeLayer.ShapeSetting.ShapeValuePath = "Population";
+
+             shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
+
+             shapeLayer.ShapeSetting.ShapeDisplayValuePath = "NAME";
+
+
+
+             shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
+
+             shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
+
+             shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
+
+
+
+            shapeLayer.BubbleSetting.AutoFillColors = false;
+
+            shapeLayer.BubbleSetting.MaxSize = 70;
+
+            shapeLayer.BubbleSetting.MinSize = 25;
+
+            shapeLayer.BubbleSetting.ValuePath = "Population";
+
+            shapeLayer.BubbleSetting.ColorValuePath = "Population";
+
+
+
+            this.mapsControl1.Layers.Add(shapeLayer);
+
+         }
+
+     }       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Screenshot:
+
+{ ![](Bubbles_images/Bubbles_img1.png) | markdownify }
+{:.image }
+
+
+## RangeColorMapping
+
+Range color mapping is one of the feature used to differentiate the bubble fill, based on its under-bound value and color ranges. It contains the following properties:
+
+
+
+<table>
+<tr>
+<td>
+Property</td><td>
+Type</td><td>
+Description</td></tr>
+<tr>
+<td>
+(From and To)</td><td>
+Double</td><td>
+Gets or sets the From and To values based on the ColorValuePath to the bubbles.</td></tr>
+<tr>
+<td>
+Color</td><td>
+Color</td><td>
+Gets or sets the color values for a given From and To value.</td></tr>
+</table>
+
+
+The fill color of a particular bubble fill can be determined by its under-bound value and the color range. For example, consider the following color ranges:
+
+
+
+[FORM1.DESIGNER.CS]
+
+partial class Form1
+
+    {
+
+
+
+ private void InitializeComponent()
+
+         {
+
+            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+
+            this.mapsControl1.Name = "mapsControl1";
+
+            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+
+            this.Controls.Add(this.mapsControl1);  
+
+             this.ClientSize = new System.Drawing.Size(880, 585);          
+
+            this.Load += new System.EventHandler(this.Form1_Load);
+
+         }
+
+            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
+
+     }  
+
+
+
+[FORM1.CS]
+
+public partial class Form1 : Form
+
+    {
+
+        private void Form1_Load(object sender, EventArgs e)
+
+        {
+
+            this.mapsControl1.Dock = DockStyle.Fill;
+
+            this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+
+            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+
+            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+
+
+
+             MapViewModel viewmodel = new MapViewModel();
+
+
+
+             ShapeFileLayer shapeLayer = new ShapeFileLayer();
+
+             shapeLayer.Uri = "world1.shp";
+
+             shapeLayer.ItemSource = viewmodel.Countries;
+
+             shapeLayer.ShapeIDPath = "NAME";
+
+             shapeLayer.ShapeIDTableField = "NAME";
+
+             shapeLayer.ShapeSetting.ShapeValuePath = "Population";
+
+             shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
+
+             shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
+
+             shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
+
+             shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
+
+
+
+            shapeLayer.BubbleSetting.AutoFillColors = false;
+
+            shapeLayer.BubbleSetting.MaxSize = 70;
+
+            shapeLayer.BubbleSetting.MinSize = 25;
+
+            shapeLayer.BubbleSetting.ValuePath = "Population";
+
+            shapeLayer.BubbleSetting.ColorValuePath = "Population";
+
+            shapeLayer.BubbleSetting.ColorMappings = new System.Collections.ObjectModel.ObservableCollection<ColorMapping>();
+
+            shapeLayer.BubbleSetting.ColorMappings.Add(new RangeColorMapping { From =314623001, To = 1347350000, Color = System.Drawing.Color.FromArgb(0x7F, 0x20, 0xBC, 0xEE) });
+
+            shapeLayer.BubbleSetting.ColorMappings.Add(new RangeColorMapping { From = 143228301, To= 314623001, Color = System.Drawing.Color.FromArgb(0x7F, 0xA7, 0xCE, 0x38) });
+
+            shapeLayer.BubbleSetting.ColorMappings.Add(new RangeColorMapping { From = 82724090, To= 143228301, Color = System.Drawing.Color.FromArgb(0x7F, 0xF1, 0xB2, 0x1A) });
+
+            shapeLayer.BubbleSetting.ColorMappings.Add(new RangeColorMapping { From = 22789702,  To= 50586757, Color = System.Drawing.Color.FromArgb(0x7F, 0x1D, 0xA2, 0x49) });
+
+            shapeLayer.BubbleSetting.ColorMappings.Add(new RangeColorMapping { From = 0, To = 22789702, Color = System.Drawing.Color.FromArgb(0x7F, 0xEB, 0x73, 0x7C) });
+
+            shapeLayer.BubbleSetting.ColorMappings.Add(new RangeColorMapping { From = 50586757, To = 82724090, Color = System.Drawing.Color.FromArgb(0x7F, 0xED, 0x2D, 0x95) });
+
+
+
+             this.mapsControl1.Layers.Add(shapeLayer);
+
+         }
+
+     }       
+
+
+
+Screenshot:
+
+{ ![](Bubbles_images/Bubbles_img2.png) | markdownify }
+{:.image }
+
+
+
+

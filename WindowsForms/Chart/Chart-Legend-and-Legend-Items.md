@@ -1,0 +1,1073 @@
+---
+layout: post
+title: Chart-Legend-and-Legend-Items
+description: chart legend and legend items
+platform: WindowsForms
+control: Chart
+documentation: ug
+---
+
+# Chart Legend and Legend Items
+
+Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _282__: Chart with Legend and Legend Items_
+
+
+
+1. Legend - The rectangular region that lists one or more legend items.
+2. Legend Item - Represented by an icon or image and a text; this usually gets rendered automatically corresponding to each ChartSeries in the chart. You can also add custom legend items to a Legend.
+3. Symbols - These refer to the symbols drawn at the data points in a plot. The legend items corresponding to the series can also be rendered with this symbol instead of an icon.
+
+You can turn off the legend by setting the ShowLegend property in the chart to false. The legend instances in the Chart are exposed via the Legends collection. The first entry in this list is considered the "default legend" and is exposed by the Legend property.
+
+## ChartLegend
+
+The legend is represented by the ChartLegend type.
+
+Default Legend
+
+By default, a custom ChartLegend instance gets added to the Legends list in the control. You can access this default legend as follows. 
+
+
+
+[C#]
+
+
+
+// Changing the position of the default legend
+
+this.chartControl1.Legends[0].LegendPosition = Syncfusion.Windows.Forms.Chart.ChartDock.Top;
+
+
+
+[VB.NET]
+
+
+
+' Changing the position of the default legend
+
+Me.chartControl1.Legends[0].LegendPosition = Syncfusion.Windows.Forms.Chart.ChartDock.Top
+
+
+
+Adding Custom Legends
+
+You can add custom legends to the chart through the Legends list as follows:
+
+
+
+[C#]
+
+
+
+// Changing the position of the default legend
+
+ChartLegend legend2 = new ChartLegend(chartControl1);
+
+legend2.Name = "MyLegend";
+
+chartControl1.Legends.Add(legend2);
+
+
+
+[VB.NET]
+
+
+
+Dim legend2 As New ChartLegend()
+
+legend2.Name = "MyLegend"
+
+chartControl1.Legends.Add(legend2)
+
+
+
+You can then add custom legend items into the ChartLegend through the CustomItems property as explained in the next topic (ChartLegendItem).
+
+You can also associate a ChartSeries to a custom ChartLegend as follows (then the legend item corresponding to that series will be rendered within the specified legend):
+
+
+
+[C#]
+
+
+
+// Associate legend1with series1
+
+series[0].LegendName = "legend1";
+
+// Associate legend2with series2
+
+series[1].LegendName = "legend2";
+
+
+
+[VB.NET]
+
+
+
+' Associate legend1with series1
+
+series[0].LegendName = "legend1"
+
+' Associate legend2with series2
+
+series[1].LegendName = "legend2"
+
+
+
+Legend Look and Feel
+
+Here are some common properties you could use to customize the overall legend appearance:
+
+
+
+_Table_ _117__: Legend Look and Feel_
+
+<table>
+<tr>
+<td>
+ChartLegend Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+BackColor</td><td>
+Gets / sets the background color of the legend. The default value is Transparent.</td></tr>
+<tr>
+<td>
+VisibleCheckBox</td><td>
+If set to true, a checkbox will be displayed beside each legend item. And if this checkbox is unchecked the corresponding series will disappear from the chart plot. Default is false.</td></tr>
+</table>
+
+
+_Table_ _118__: Properties_
+
+<table>
+<tr>
+<td>
+Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+Border</td><td>
+Gets / sets the border style of the legend. ShowBorder should be true.</td></tr>
+<tr>
+<td>
+ShowBorder</td><td>
+Specifies whether a border should be drawn. By default it is set to false.</td></tr>
+<tr>
+<td>
+Font</td><td>
+Specifies the font that is to be used for the text rendered in the legend items. The default font style is Verdana, 8, Regular.</td></tr>
+<tr>
+<td>
+BackInterior</td><td>
+Sets the interior appearance for the legend. This overrides the BackColor property.</td></tr>
+<tr>
+<td>
+BackgroundImage</td><td>
+Sets the background image for the legend. This setting overrides the BackInterior property settings.</td></tr>
+<tr>
+<td>
+BackgroundImageLayout</td><td>
+Sets the layout for the background image.</td></tr>
+</table>
+
+
+Legend Positioning
+
+The legend positioning can be affected in the following ways.
+
+
+
+_Table_ _119__: Legend Positioning_
+
+<table>
+<tr>
+<td>
+ChartLegend Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+Position</td><td>
+Specifies the position relative to the chart at which to render the legend.* Top - above the chart* Left - left of the chart* Right - right of the chart* Bottom - below the chart* Floating - will not be docked to any specific location(default setting)</td></tr>
+<tr>
+<td>
+<br>LegendAlignment</td><td>
+When docked to a side, this property specifies how the legend should be aligned with respect to the chart boundaries.</td></tr>
+<tr>
+<td>
+LegendPlacement</td><td>
+Specifies the placement of a legend in a chart. It can be placed Inside or Outside the chart area using ChartPlacement enum.</td></tr>
+<tr>
+<td>
+DockingFree</td><td>
+If set to true, the legend will be floating and cannot be dragged and docked to the sides.</td></tr>
+<tr>
+<td>
+Behavior</td><td>
+Specifies the docking behavior of the Legend.* Docking - It is dockable on all four sides* Movable - It is movable* All - It is movable and dockable* None - It is neither movable nor dockable</td></tr>
+<tr>
+<td>
+<br>FloatingAutoSize</td><td>
+Specifies whether to determine the size automatically or not, while floating.</td></tr>
+<tr>
+<td>
+OnlyColumnsForFloating</td><td>
+The legend items will be displayed vertically in columns when floating.</td></tr>
+<tr>
+<td>
+RowsCount</td><td>
+Specifies the number of rows in which the legend items should be rendered.</td></tr>
+<tr>
+<td>
+ColumnsCount</td><td>
+Specifies the number of columns in which the legend items should be rendered.</td></tr>
+</table>
+
+
+> { ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img2.jpeg) | markdownify }
+{:.image }
+_Note: Note that the user can drag the legend around during run time. He can dock it to the sides if docking is enabled. Docking behavior is controlled by Behavior property which is described in the above table._
+
+Changing Legend Properties at Run Time
+
+The Legend's look and feel can also be customized during runtime. Double-clicking legend's text will pop up the below properties window. Properties set through this dialogue can be applied to the chart. 
+
+> { ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img3.jpeg) | markdownify }
+{:.image }
+_Note: These settings will be lost when the application is closed._
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img4.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _283__: Legend Properties Dialog Box_
+
+See Also
+
+ChartLegend
+
+## ChartLegendItem
+
+The legend item is represented by the ChartLegendItem type.
+
+Default Series LegendItems
+
+Every ChartSeries in the chart control has a ChartLegendItem associated with it. This legend item gets automatically added to the default ChartLegend. 
+
+But, if you want to get that associated with a custom ChartLegend, use the LegendName to specify that chart legend as follows:
+
+
+
+[C#]
+
+
+
+// Specifies the custom ChartLegend with which this series' legend item should be associated with
+
+series1.LegendName = "MyLegend";
+
+
+
+[VB.NET]
+
+
+
+' Specifies the custom ChartLegend with which this series' legend item should be associated with
+
+series1.LegendName = "MyLegend"
+
+
+
+Adding Custom Legend Items
+
+To add your own custom legend items to a legend, use the CustomItems property in the ChartLegend as follows.
+
+
+
+[C#]
+
+
+
+// Adding some custom items into the 2nd custom Legend
+
+
+
+ChartLegendItem legendItem1 = new ChartLegendItem();
+
+legendItem1.ItemStyle.ShowSymbol = true;
+
+legendItem1.ItemStyle.Symbol.Shape = ChartSymbolShape.Circle;
+
+legendItem1.ItemStyle.Symbol.Color = Color.Blue;
+
+legendItem1.Text = "Legend Item";
+
+
+
+this.chartControl1.Legends[1].CustomItems = new ChartLegendItem[] { legendItem1};
+
+
+
+[VB.NET]
+
+
+
+'Adding some custom items into the 2nd custom Legend
+
+
+
+Dim legendItem1 As New ChartLegendItem()
+
+legendItem1.ItemStyle.ShowSymbol = True
+
+legendItem1.ItemStyle.Symbol.Shape = ChartSymbolShape.Circle
+
+legendItem1.ItemStyle.Symbol.Color = Color.Blue
+
+legendItem1.Text = "Legend Item"
+
+
+
+'Adding the custom Legend item to the chart
+
+Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img5.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _284__: Custom Legend Item_
+
+Customizing items through event
+
+There is also a way to specify custom legend item via events right before they get rendered. 
+
+In this example, we reverse the order in which the legend items are rendered through the FilterItems event.
+
+
+
+[C#]
+
+
+
+private void Legend_FilterItems(object sender, ChartLegendFilterItemsEventArgs e)
+
+{
+
+    //This creates an new instance of the ChartLegendItemCollection
+
+    ChartLegendItemsCollection items = new ChartLegendItemsCollection();
+
+    for (int i = e.Items.Count - 1; i >= 0; i--)
+
+        items.Add(e.Items[i]);
+
+    e.Items = items;
+
+}
+
+
+
+[VB.NET]
+
+
+
+Private Sub Legend_FilterItems(ByVal sender As Object, ByVal e As ChartLegendFilterItemsEventArgs) 
+
+    'This creates an new instance of the ChartLegendItemCollection 
+
+    Dim item As New ChartLegendItemsCollection() 
+
+    For i As Integer = e.Items.Count - 1 To 0 Step -1 
+
+        item.Add(e.Items(i)) 
+
+    Next 
+
+    e.Items = item 
+
+End Sub 
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img6.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _285__: Chart with Legends in specified order using FilterItems Event_
+
+Legend Item's Look and Feel
+
+The legend item's look and feel can be customized to a good extent using the following properties in ChartLegend. 
+
+These settings affect all the items in the legend.
+
+
+
+_Table_ _120__: Legend Item Properties_
+
+<table>
+<tr>
+<td>
+ChartLegend Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+RowCount</td><td>
+Specifies the number of rows to be used in the legend.</td></tr>
+<tr>
+<td>
+ColumnCount</td><td>
+Specifies the number of columns to be used in the legend.</td></tr>
+<tr>
+<td>
+ItemsAlignment</td><td>
+Specifies the horizontal alignment of the items within the legend. Possible values:Near - Default valueCenterFar</td></tr>
+<tr>
+<td>
+ShowItemsShadow</td><td>
+Will render a shadow around the item image and text using the ItemsShadowColor. Default is false.</td></tr>
+<tr>
+<td>
+ItemsShadowColor</td><td>
+Specifies the color of the shadow to use. ShowItemsShadow should be set to true. Default is Gray.</td></tr>
+<tr>
+<td>
+ItemsShadowOffset</td><td>
+Specifies the breadth of the shadow. Default is {2, 2}.</td></tr>
+<tr>
+<td>
+ItemsSize</td><td>
+Specifies the size of the legend item rectangle. If the specified size is smaller than necessary to render the text, then it's ignored.</td></tr>
+<tr>
+<td>
+ItemsTextAlignment</td><td>
+Specifies the vertical alignment of the legend item text within the item bounds. Possible Values:BottomCenter - Default valueTop</td></tr>
+<tr>
+<td>
+Spacing</td><td>
+Specifies the space between the legend borders and the legend items. Default is 4.</td></tr>
+<tr>
+<td>
+Text</td><td>
+Specifies the title text for the legend. You can set multiline text for the legend; Enter the text in the combobox and press ENTER key to begin a new line and CTRL+ENTER to set the entered multiline text.</td></tr>
+<tr>
+<td>
+TextColor</td><td>
+Specifies the color of the title text.</td></tr>
+<tr>
+<td>
+TextAlignment</td><td>
+Specifies the horizontal alignment of the title text. Possible Values:Center (Default value)FarNear</td></tr>
+</table>
+
+
+_Table_ _121__: Legend Item Properties_
+
+<table>
+<tr>
+<th>
+Event </th><th>
+Description </th><th>
+Arguments </th><th>
+Type </th><th>
+Reference links </th></tr>
+<tr>
+<th>
+MinSize</th><th>
+Used to specify a minimum rectangular size for the legend item.</th><th>
+object sender, ChartLegendMinSizeEventArgs e</th><th>
+NA </th><th>
+NA</th></tr>
+<tr>
+<th>
+DrawItem</th><th>
+Used to customize the rendering of the legend.</th><th>
+object sender, ChartLegendDrawItemEventArgs e</th><th>
+NA</th><th>
+NA</th></tr>
+<tr>
+<th>
+DrawItemText</th><th>
+Used to customize the rendering of the legend item text.</th><th>
+object sender, ChartLegendDrawItemTextEventArgs e</th><th>
+NA</th><th>
+NA</th></tr>
+<tr>
+<th>
+FilterItems</th><th>
+Used to dynamically provide a list of legend items during runtime. </th><th>
+object sender, ChartLegendFilterItemsEventArgs e</th><th>
+NA</th><th>
+NA</th></tr>
+</table>
+
+
+
+
+_Table_ _122__: ChartLegend Properties_
+
+<table>
+<tr>
+<td>
+ChartLegend Method</td><td>
+Description</td></tr>
+<tr>
+<td>
+GetItemBy</td><td>
+Gets the legend item at the specified coordinates.</td></tr>
+</table>
+
+
+You can also reference specific legend items and apply settings on them individually:
+
+
+
+_Table_ _123__: Legend Item Properties_
+
+<table>
+<tr>
+<td>
+LegendItem Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+BorderColor</td><td>
+Specifies the color of the border around the legend shape.</td></tr>
+<tr>
+<td>
+Font</td><td>
+Specifies the font for the text in this legend item.</td></tr>
+<tr>
+<td>
+Spacing</td><td>
+Specifies the space between this item and it's adjacent items. Default is 20.</td></tr>
+<tr>
+<td>
+Text</td><td>
+Specifies the text of the legend item. By default this will reflect the corresponding series name.</td></tr>
+<tr>
+<td>
+TextColor</td><td>
+Specifies the text color for this item.</td></tr>
+<tr>
+<td>
+IconAlignment</td><td>
+Specifies how the icon should be aligned within the item rectangle.</td></tr>
+<tr>
+<td>
+TextAlignment</td><td>
+Specifies how the text should be aligned within the item rectangle.</td></tr>
+<tr>
+<td>
+VisibleCheckBox</td><td>
+If this property is set to true, a checkbox will be shown beside the legend item through which the user can show/hide the corresponding series in the chart.</td></tr>
+<tr>
+<td>
+ShowShadow</td><td>
+Will render a shadow around the item image and text using the ItemsShadowColor.</td></tr>
+<tr>
+<td>
+ShadowOffset</td><td>
+Specifies the breadth of the shadow.</td></tr>
+<tr>
+<td>
+ShadowColor</td><td>
+Specifies the color of the shadow to use. ShowItemsShadow should be set to true. Default is Gray.</td></tr>
+<tr>
+<td>
+Children</td><td>
+Returns the child collection of the LegendItem.</td></tr>
+<tr>
+<td>
+IsChecked </td><td>
+Gets / sets the checkstate of the ChartLegendItem checkbox. By default it is set to true.</td></tr>
+<tr>
+<td>
+Visible</td><td>
+Lets you show / hide the legend item.</td></tr>
+</table>
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img7.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _286__: Chart with "Series1" Legend Item Unchecked_
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _287__: Chart with Multiline Legend Title 'Multiline Legend Text'_
+
+
+
+See Also
+
+ChartLegend, Customizing LegendItem Image
+
+## Customizing LegendItem Image
+
+There are several options to customize the image rendered in the Legend. The following properties let you do so:
+
+
+
+_Table_ _124__: ChartLegend Property_
+
+<table>
+<tr>
+<td>
+ChartLegend Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+ShowSymbol</td><td>
+If true, the exact symbol rendered in the series data points will be used to render the icon in the legend as well. This overrides most of the other settings.</td></tr>
+<tr>
+<td>
+RepresentationType</td><td>
+Specifies how each legend item should be represented, as the name implies:None (default setting)SeriesType - An icon representing the series type.SeriesImage - Will use the ImageList associated with the                              Series style.* Rectangle* Line* StraightLine* Circle* Diamond* Hexagon* Pentagon* Triangle* InvertedTriangle* Cross</td></tr>
+</table>
+
+
+
+The following ChartLegendItem properties that can be accessed via the Legend.Items list typically override the above settings set in the Legend.
+
+
+
+_Table_ _125__: ChartLegendItem Property_
+
+<table>
+<tr>
+<td>
+ChartLegendItem Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+DrawSeriesIcon</td><td>
+Specifies if an icon representing the series type should be rendered for this legend item.</td></tr>
+<tr>
+<td>
+ImageList</td><td>
+Contains a collection of images and will be referred to, by the ImageList property.</td></tr>
+<tr>
+<td>
+ImageIndex</td><td>
+Specifies the index into the ImageList array which contains the image for this item.</td></tr>
+<tr>
+<td>
+Interior</td><td>
+Specifies the BrushInfo used to render the interior of a Chart Symbol.</td></tr>
+<tr>
+<td>
+RepresentationSize</td><td>
+Specifies the size of the rectangle inside which the associated image or symbol will get rendered.</td></tr>
+<tr>
+<td>
+ShowSymbol</td><td>
+If true, the exact symbol rendered in the corresponding series data points will be used to render the icon in this legend as well. This overrides most of the other settings.</td></tr>
+<tr>
+<td>
+Symbol</td><td>
+Symbols rendered in the Legend item can be customized using this property.</td></tr>
+<tr>
+<td>
+Type</td><td>
+If ShowSymbol is false, you can customize the type of icon that gets rendered in the legend item. The default value will reflect the ChartLegend.RepresentationType setting.Possible Values:* Area* Circle* Cross* Diamond* Hexagon* Image* InvertedTriangle* Line* None* Pentagon* PieSlice* Rectangle* Spline* SplineArea* StraightLine* Rectangle</td></tr>
+<tr>
+<td>
+<br>ShowIcon</td><td>
+If set to false, no icons will be rendered. This overrides most of the other settings including ShowSymbol.</td></tr>
+</table>
+
+
+Series Type Icon
+
+An icon representing the series type can be rendered in the legend. 
+
+To do this for all the legend items:
+
+
+
+[C#]
+
+
+
+this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesType;
+
+
+
+[VB.NET]
+
+
+
+Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesType
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img9.jpeg) | markdownify }
+{:.image }
+
+
+_Figure_ _288__: Legend Item with the Series Type Icon_
+
+To do this for specific legend items,
+
+
+
+[C#]
+
+
+
+// The general setting affecting all Legend items could be anything
+
+this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesImage;
+
+
+
+// This will force a specific legend item to show a series icon
+
+this.chartControl1.Legend.Items[0].DrawSeriesIcon = true;
+
+
+
+[VB.NET]
+
+
+
+'The general setting affecting all Legend items could be anything
+
+Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesImage
+
+
+
+'This will force a specific legend item to show a series icon
+
+Me.chartControl1.Legend.Items(0).DrawSeriesIcon = True
+
+
+
+Series Symbol
+
+You can also choose to show the exact same symbol that is shown in the data points in a series.
+
+To do this for all the legend items:
+
+
+
+[C#]
+
+
+
+//Set symbol for first series
+
+this.chartControl1.Series[0].Style.Symbol.Shape = ChartSymbolShape.Diamond;
+
+this.chartControl1.Series[0].Style.Symbol.Color = Color.Red ;
+
+this.chartControl1.Series[0].Style.Symbol.Size = new Size(7, 7);
+
+
+
+//This will cause the legend to render with the same symbol defined above.
+
+this.chartControl1.Legend.ShowSymbol = true;
+
+
+
+//Setting RepresentationType to None to hide other representations
+
+this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None;
+
+
+
+[VB.NET]
+
+
+
+'Set symbol for first series
+
+Me.chartControl1.Series(0).Style.Symbol.Shape = ChartSymbolShape.Diamond
+
+Me.chartControl1.Series(0).Style.Symbol.Color = Color.Red
+
+Me.chartControl1.Series(10).Style.Symbol.Size = New Size(7, 7)
+
+
+
+'This will cause the legend to render with the same symbol defined above.
+
+Me.chartControl1.Legend.ShowSymbol = True
+
+
+
+'Setting RepresentationType to None to hide other representations
+
+Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _289__: Legend Items rendered with the Same Symbol_
+
+
+
+Custom Representation Icon
+
+You can also choose to use one of the built-in representation icons in the legend items.
+
+To do this for all the legend items:
+
+
+
+[C#]
+
+
+
+this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Diamond;
+
+
+
+// To specify a custom color for the interior of the icon
+
+this.chartControl1.Legend.Items[0].Interior = new BrushInfo(Color.Violet);
+
+
+
+[VB.NET]
+
+
+
+Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Diamond
+
+
+
+'To specify a custom color for the interior of the icon
+
+Me.chartControl1.Legend.Items(0).Interior = New BrushInfo(Color.Violet)
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _290__: Legend Item with a Custom Representation Icon_
+
+To do the above only on specific legend items, use the ChartLegendItem.Type property.
+
+More Symbol Shapes
+
+ChartLegendItem has the Symbol property, using which we can customize the symbols for particular legend items. This setting overrides the Series [0].Style.Symbol settings. 
+
+
+
+[C#]
+
+
+
+//Series symbol settings
+
+chartControl1.Legend.ShowSymbol = true;
+
+chartControl1.Series[0].Style.Symbol.Shape = ChartSymbolShape.Diamond;
+
+chartControl1.Series[0].Style.Symbol.Color = Color.AliceBlue;
+
+
+
+//the above symbol settings is overridden by the following settings
+
+chartControl1.Legend.Items[0].Symbol.Shape = ChartSymbolShape.Triangle;
+
+chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow;
+
+
+
+[VB.NET]
+
+
+
+'Series symbol settings
+
+chartControl1.Legend.ShowSymbol = True
+
+chartControl1.Series(0).Style.Symbol.Shape = ChartSymbolShape.Diamond
+
+chartControl1.Series(0).Style.Symbol.Color = Color.AliceBlue
+
+
+
+'the above symbol settings is overridden by the following settings
+
+chartControl1.Legend.Items[0].Symbol.Shape = ChartSymbolShape.Triangle
+
+chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _291__: LegendItem customized with "Triangle" Symbol in "Yellow" Color_
+
+Custom Images
+
+You can also choose to show custom images in the legend items as follows:
+
+
+
+[C#]
+
+
+
+// Setting the representation type for the Legend items
+
+this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesImage;
+
+//Setting the image index
+
+this.chartControl1.Legend.Items[0].ImageIndex = 0;
+
+// The image will be picked up from this collection
+
+series1.Style.Images = new ChartImageCollection(this.imageList1.Images);
+
+
+
+// Or from this collection, if available
+
+this.chartControl1.Legend.Items[0].ImageList = new ChartImageCollection(this.imageList1.Images);
+
+
+
+[VB.NET]
+
+
+
+'Setting the representation type for the Legend items
+
+Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesImage
+
+'Setting the image index
+
+Me.chartControl1.Legend.Items(0).ImageIndex = 0
+
+
+
+' The image will be picked up from this collection
+
+series1.Style.Images = New ChartImageCollection(Me.imageList1.Images)
+
+
+
+' Or from this collection, if available
+
+Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.imageList1.Images)
+
+
+
+{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg) | markdownify }
+{:.image }
+
+
+
+
+_Figure_ _292__: Chart Legend Items with Custom Images_
+
+Hiding Icons
+
+Icons for legend items can be hidden in any of the following ways:
+
+
+
+[C#]
+
+
+
+this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None;
+
+
+
+// To do this for a specific legend item:
+
+
+
+// This will not even allocate any space for the icons
+
+this.chartControl1.Legend.Items[0].ShowIcon = false;
+
+
+
+// Or, set this. This will not render the icons, but will allocate some empty space for it
+
+this.chartControl1.Legend.Items[0].Type = ChartLegendItemType.None;
+
+
+
+[VB.NET]
+
+
+
+Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
+
+
+
+'To do this for a specific legend item
+
+
+
+'This will not even allocate any space for the icons
+
+Me.chartControl1.Legend.Items(0).ShowIcon = False
+
+
+
+'Or, set this. This will not render the icons, but will allocate some empty space for it
+
+Me.chartControl1.Legend.Items(0).Type = ChartLegendItemType.None
+
+
+
+See Also
+
+ChartLegend, ChartLegendItem
+

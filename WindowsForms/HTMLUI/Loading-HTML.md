@@ -1,0 +1,482 @@
+---
+layout: post
+title: Loading-HTML
+description: loading html
+platform: WindowsForms
+control: HTML UI
+documentation: ug
+---
+
+# Loading HTML
+
+HTML documents available at various resources can be easily loaded into the HTMLUI control. Some of the resources from where the HTML documents can be loaded are as follows.
+
+
+
+* HTML files available on the disk
+* HTML files available in the embedded resource
+* As links from one HTML document to the other
+* HTML files available in the URI
+* HTML which is in the form of a text
+
+
+
+An HTML document can be loaded into the HTMLUI control in two ways.
+
+## Loading As a Startup Document
+
+There may be situations where the HTML document is to be loaded initially at startup. An HTML document is loaded at startup for the front page applications. It may be an introductory page or a page that contains information regarding forthcoming pages. An HTML document can be loaded at Startup by two ways:
+
+* Using the Properties window
+* Coding
+
+
+
+Using the Properties window involves specifying the location of the Startup HTML file in the StartupDocument property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
+
+{ ![](Loading-HTML_images/Loading-HTML_img1.png) | markdownify }
+{:.image }
+
+
+While coding for the Startup Document, it should be written in the form_load event that is handled before the form is displayed for the first time.  
+
+
+
+[C#]
+
+
+
+// Get or Set the path to the Startup Document for the control.
+
+private void Form1_Load(object sender, System.EventArgs e)
+
+{
+
+this.htmluiControl1.StartupDocument = @"C:\MyProjects\Startup\startup_page.htm";
+
+}
+
+
+
+[VB.NET]
+
+
+
+‘Get/Set the path to the Startup Document for the control.
+
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+
+Me.htmluiControl1.StartupDocument = "C:\MyProjects\Startup\startup_page.htm"
+
+End Sub
+
+
+
+The following image illustrates Loading an HTML document as the Startup Document.
+
+
+
+
+
+{ ![](Loading-HTML_images/Loading-HTML_img2.png) | markdownify }
+{:.image }
+
+
+### Startup File Sample
+
+This sample demonstrates the implementation of Startup Document by using HTML file in HTMLUI.
+
+{ ![](Loading-HTML_images/Loading-HTML_img3.jpeg) | markdownify }
+{:.image }
+
+
+
+
+By default, this sample can be found under the following location: 
+
+_…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+
+##  Loading At Run Time
+
+ HTML documents can also be loaded during runtime; for example, in a file link where an HTML file may link to another file. In that case a new file is loaded in the control after the one that was initially loaded.
+
+The various ways of loading the document during the runtime from various resources are as follows:
+
+
+
+* Loading the file from disk
+* As links from one HTML document to the other
+* Loading the file from URI
+* Loading HTML in the form of text
+* Loading the file from Resource
+
+
+
+The following sections explains the above concepts in detail.
+
+
+
+### Loading the File From Disk
+
+The HTML file that is located in the user's disk can be loaded into the HTMLUIControl. It is loaded by specifying the location of the file in the disk.
+
+
+
+[C#]
+
+
+
+// Load the specified HTML Document from user's drive.
+
+string filepath = @"C:\MyProjects\LoadHTML\FromDisk.htm";
+
+this.htmluiControl1.LoadHTML(filePath);
+
+
+
+[VB.NET]
+
+
+
+'Load the specified HTML Document from user's drive.
+
+Private filepath As String = "C:\MyProjects\LoadHTML\FromDisk.htm"
+
+Me.HtmluiControl1.LoadHTML(filepath)
+
+
+
+The following image shows file loaded from the User's Drive.
+
+{ ![](Loading-HTML_images/Loading-HTML_img4.png) | markdownify }
+{:.image }
+
+
+#### Load File From Disk Sample
+
+This sample demonstrates the implementation of Loading a file from Disk by using HTMLUI.
+
+{ ![](Loading-HTML_images/Loading-HTML_img5.jpeg) | markdownify }
+{:.image }
+
+
+
+
+By default, this sample can be found under the following location:
+
+_…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+
+### As Links From One HTML Document To Another
+
+The HTMLUI supports Link property. Links in HTML code are easily invoked in HTMLUI Control. The main document that contains links to other documents is loaded into the HTMLUI control. The linked document is loaded by clicking the respective link in the main document.
+
+
+
+[C#]
+
+
+
+// Load the specified HTML Document that contains link for another document.
+
+string filepath = @"C:\MyProjects\LoadHTML\Main.htm";
+
+this.htmluiControl1.LoadHTML(filePath);
+
+
+
+[VB.NET]
+
+
+
+‘Load the specified HTML Document that contains link for another document.
+
+Private filepath As String = "C:\MyProjects\LoadHTML\Main.htm"
+
+Me.HtmluiControl1.LoadHTML(filepath)
+
+
+
+HTML Code
+
+An HTML document containing file links is illustrated by the code given below:
+
+
+
+[HTML]
+
+
+
+&lt;HTML&gt;
+
+&lt;HEAD&gt;
+
+<title>FILE LINK</title>
+
+&lt;/HEAD&gt;
+
+&lt;body bgColor="#ffffff"&gt;
+
+<P>THIS FORM IS A SAMPLE TO SHOW FILE LINKS</P>
+
+&lt;FONT color="#66ffff" size="6"&gt;
+
+<A href="MODEL1.htm">To link1</a>
+
+&lt;/FONT&gt;
+
+&lt;P&gt;
+
+&lt;FONT color="#66ffff" size="6"&gt;
+
+<A href="MODEL2.htm">To link2</a>
+
+&lt;/FONT&gt;
+
+&lt;/P&gt;
+
+&lt;/body&gt;
+
+&lt;/HTML&gt;
+
+
+
+The following image shows file links that link to another HTML Document.
+
+{ ![](Loading-HTML_images/Loading-HTML_img6.png) | markdownify }
+{:.image }
+
+
+
+
+#### File Links Sample
+
+This sample demonstrates how HTML files can be linked from one document to another by using HTMLUI.
+
+
+
+{ ![](Loading-HTML_images/Loading-HTML_img7.jpeg) | markdownify }
+{:.image }
+
+
+
+
+By default, this sample can be found under the following location: 
+
+_…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+
+### Loading the File From URI
+
+HTML contents can also be loaded from the URI (Uniform Resource Identifier). This is a great advantage of HTMLUI that it can be used for browsing purposes like popular web browsers.
+
+
+
+[C#]
+
+
+
+// Load the HTML document from the specified Uri in to HTMLUI Control.
+
+Uri uri = new Uri("http://www.syncfusion.com");
+
+htmluiControl1.LoadHTML(uri);
+
+
+
+[VB.NET]
+
+
+
+‘Load the HTML document from the specified Uri in to HTMLUI Control.
+
+Private uri As Uri = New Uri("http://www.syncfusion.com")
+
+HtmluiControl1.LoadHTML(uri)
+
+
+
+A new URI has to be declared in the code with the path from which the URI has to be loaded, as shown in the above example. The URI class provides an object representation of a URI and also provides easy access to the parts of the URI.
+
+### Loading HTML Which Is In the Form Of Text
+
+The HTML code sometimes can be directly written and stored as a string. The HTML code available in the form of string is loaded into the HTMLUI Control by using the LoadFromString method and the HTML contents will be displayed in the HTMLUI control.
+
+
+
+[C#]
+
+
+
+// Load HTML Document from String.
+
+string htmlCode ="&lt;HTML&gt;
+
+&lt;HEAD&gt;
+
+<TITLE>HI</TITLE>
+
+&lt;/HEAD&gt;
+
+&lt;BODY bgcolor='#ffffff'&gt;
+
+&lt;INPUT type='button' id='btn'/&gt;&lt;/INPUT&gt;
+
+&lt;/BODY&gt;
+
+&lt;/HTML&gt;";
+
+this.htmluiControl1.LoadFromString(htmlCode);
+
+
+
+[VB.NET]
+
+
+
+'  Load HTML Document from String
+
+Private htmlCode As String = "&lt;HTML&gt;
+
+&lt;HEAD&gt;
+
+<TITLE>HI</TITLE>
+
+&lt;/HEAD&gt;
+
+&lt;BODY bgcolor='#ffffff'&gt;
+
+&lt;INPUT type='button' id='btn'/&gt;&lt;/INPUT&gt;
+
+&lt;/BODY&gt;
+
+&lt;/HTML&gt;"
+
+Me.HtmluiControl1.LoadFromString(htmlCode)
+
+
+
+### Load the File from Resource
+
+The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The procedure to be followed for making an HTML file as an embedded resource is discussed below.
+
+
+
+1. Open the Solution Explorer from the View menu of the Menu Bar.
+
+
+
+2. Right-click on the C# file name in the Solution Explorer. A menu opens.
+
+
+
+3. Click the Add tab; a sub-menu is displayed.
+
+
+
+{ ![](Loading-HTML_images/Loading-HTML_img8.png) | markdownify }
+{:.image }
+
+
+
+
+4. In the sub-menu, click AddNewItem; a template wizard is displayed.
+
+
+
+5. In the wizard, select HTML Page. The default name for the page is 'HTMLPage1.htm'.
+
+
+
+6. You can change the name by using the Name tab given at the bottom of the wizard.
+
+{ ![](Loading-HTML_images/Loading-HTML_img9.png) | markdownify }
+{:.image }
+
+
+
+
+7. The HTML file will be shown in the Solution Explorer as shown in the figure above.
+
+
+
+8. In the properties grid of the resource HTML file, specify its BuildAction as the Embedded Resource.
+
+
+
+
+
+{ ![](Loading-HTML_images/Loading-HTML_img10.png) | markdownify }
+{:.image }
+
+
+
+
+The file can be retrieved from the resource by using the following C# code.
+
+[C#]
+
+
+
+// Load the specified HTML file which is marked as the project's embedded resource.
+
+htmlStream = (Stream)Assembly.GetExecutingAssembly().GetManifestResourceStream
+
+("LoadingFileFromResource.resfile.htm");
+
+
+
+this.htmluiControl1.LoadHTML(htmlStream); 
+
+
+
+[VB.NET]
+
+
+
+'  Load the specified HTML file which is marked as the project's embedded resource.
+
+Private htmlStream = Ctype(System.Reflection.Assembly.GetExecutingAssembly().
+
+GetManifestResourceStream ("LoadingFileFromResource.resfile.htm"), Stream)
+
+
+
+Me.HtmluiControl1.LoadHTML(htmlStream)
+
+
+
+It is necessary to invoke the System.IO and System.Reflection namespaces to use the classes and their methods used in the code above.
+
+The System.Reflection.Assembly.GetExecutingAssembly method gets the assembly from which the code is currently running from and the GetManifestResourceStream method of the same class loads the specified manifest resource from the assembly.
+
+The System.IO.Stream is used to provide a generic view of sequence of bytes when the IO in the assembly is referred.
+
+> { ![](Loading-HTML_images/Loading-HTML_img11.jpeg) | markdownify }
+{:.image }
+_Note: The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users._
+
+The following image shows file loaded from an embedded resource.
+
+
+
+{ ![](Loading-HTML_images/Loading-HTML_img12.png) | markdownify }
+{:.image }
+
+
+
+
+#### Load Resource File Sample
+
+This sample demonstrates the implementation of Loading Embedded Resource Files by using HTMLUI.
+
+{ ![](Loading-HTML_images/Loading-HTML_img13.jpeg) | markdownify }
+{:.image }
+
+
+
+
+By default, this sample can be found under the following location:
+
+
+
+...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+

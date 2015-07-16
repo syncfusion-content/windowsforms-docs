@@ -1,0 +1,46 @@
+---
+layout: post
+title: HTML-Layout
+description: html layout
+platform: WindowsForms
+control: HTML UI
+documentation: ug
+---
+
+# HTML Layout
+
+HTMLUI can be used as a HTML viewer in two ways.
+
+* Display Engine
+* Layout Engine
+
+
+
+The display purposes involve the functionality similar to Web browsers in displaying the contents of the HTML document. In the Layout purpose, it is used to layout and customize rich user-interactive interfaces.
+
+HTMLUI control can be used in a variety of applications which are common in our day-to-day life. 
+
+With HTMLUI control's support to images and animated images, Chat applications can be developed. The form based dialog box applications used in the office desks can also be developed at ease by simply changing different HTML documents as per the needs. The other interesting applications that can be developed using HTMLUI include games, animations, user blogs, and so on.
+
+The following figure shows a form based dialog that illustrates HTMLUI as a Layout Engine.
+
+
+
+{ ![](HTML-Layout_images/HTML-Layout_img1.png) | markdownify }
+{:.image }
+
+
+## HTMLUI Chat Sample
+
+This sample illustrates how a Chat application can be implemented using HTMLUI.
+
+{ ![](HTML-Layout_images/HTML-Layout_img2.jpeg) | markdownify }
+{:.image }
+
+
+
+
+By default, this sample can be found under the following location:
+
+...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+
