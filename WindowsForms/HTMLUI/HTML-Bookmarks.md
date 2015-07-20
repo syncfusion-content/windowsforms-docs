@@ -17,29 +17,29 @@ Bookmarks feature is enabled in the HTMLUI control. This allows the user to swit
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;a href="Newfile.htm#bookmark"&gt; New file Book mark &lt;/a&gt;
+<a href="Newfile.htm#bookmark"> New file Book mark </a>
 
-&lt;a href="#bookmark"&gt; Bookmark in same file &lt;/a&gt;
-
-......
+<a href="#bookmark"> Bookmark in same file </a>
 
 ......
 
-&lt;div id="bookmark"&gt; Syncfusion's HTMLUI Control &lt;/div&gt;
+......
 
-&lt;/body&gt;
+<div id="bookmark"> Syncfusion's HTMLUI Control </div>
 
-&lt;/html&gt;
+</body>
+
+</html>
 
 The following image shows the bookmarks implemented using HTMLUI.
 
 
 
-{ ![](HTML-Bookmarks_images/HTML-Bookmarks_img1.png) | markdownify }
+{{ '![](HTML-Bookmarks_images/HTML-Bookmarks_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -49,7 +49,7 @@ This sample illustrates the implementation of Bookmarks in HTMLUI.
 
 
 
-{ ![](HTML-Bookmarks_images/HTML-Bookmarks_img2.jpeg) | markdownify }
+{{ '![](HTML-Bookmarks_images/HTML-Bookmarks_img2.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -143,13 +143,13 @@ documentExplorer1.ShowNodeToolTips = True
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img1.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img2.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -225,25 +225,25 @@ Sample Diagrams are as follows.
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img3.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img3.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img4.png) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img5.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img5.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img6.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -319,13 +319,13 @@ Sample Diagram is as follows.
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img7.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img7.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img8.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -411,13 +411,13 @@ Sample Diagrams are as follows.
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img9.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img9.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img10.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -487,13 +487,13 @@ Sample diagrams are as follows:
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img11.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img11.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img12.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -595,7 +595,7 @@ The following is a sample Diagram showing GraphLayoutManager:
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img13.jpeg) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -687,7 +687,7 @@ End Sub
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img14.png) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -755,13 +755,13 @@ Sample diagram is as follows.
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img15.png) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img15.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Management_images/Layout-Management_img16.png) | markdownify }
+{{ '![](Layout-Management_images/Layout-Management_img16.png)' | markdownify }}
 {:.image }
 
 

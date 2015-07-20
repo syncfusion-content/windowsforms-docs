@@ -44,11 +44,11 @@ NA</td></tr>
 Adding Localization to an application
 
 1. Create your localization resource file (.resx) in the  bin > Debug folder with the following naming convention:
-* ChartControl.&lt;your culture info name&gt;.resx
+* ChartControl.<your culture info name>.resx
 
 
 
-> { ![](Localization_images/Localization_img1.jpeg) | markdownify }
+> {{ '![](Localization_images/Localization_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: It is mandatory to follow this naming convention._ 
 
@@ -56,7 +56,7 @@ _Note: It is mandatory to follow this naming convention._
 
 
 
-{ ![](Localization_images/Localization_img2.png) | markdownify }
+{{ '![](Localization_images/Localization_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -68,7 +68,7 @@ _Figure_ _371__: Resource File_
 
 
 
-{ ![D:/Feature2011_VOL4/English.PNG](Localization_images/Localization_img3.png) | markdownify }
+{{ '![D:/Feature2011_VOL4/English.PNG](Localization_images/Localization_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -76,7 +76,7 @@ _Figure_ _372__: Default English resource file_
 
 
 
-> { ![](Localization_images/Localization_img4.jpeg) | markdownify }
+> {{ '![](Localization_images/Localization_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: It is mantatory to specify equivalent terms for all static element to localize the chart._
 
@@ -96,7 +96,7 @@ Me.chartControl1.Localize=”de-DE”
 
 
 
-{ ![](Localization_images/Localization_img5.png) | markdownify }
+{{ '![](Localization_images/Localization_img5.png)' | markdownify }}
 {:.image }
 
 

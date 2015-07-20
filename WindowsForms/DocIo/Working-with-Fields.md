@@ -11,7 +11,7 @@ documentation: ug
 
 Fields are special elements of a Word document. To insert a field, click Insert menu, and then click Field option in Microsoft Word.
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img1.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -21,7 +21,7 @@ WField class represents a field in a Word document. There are many types of fiel
 
 
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img2.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -211,7 +211,7 @@ The following code example illustrates how to add a merge field to the header an
 
 WEmbedField class represents an embed field type in a Word document. Word does not allow to create an embed field type manually (by using Microsoft Word interface). This field is used when the document has embedded objects. This field usually points to the container in the document that encloses the embedded instance.
 
-> { ![](Working-with-Fields_images/Working-with-Fields_img3.jpeg) | markdownify }
+> {{ '![](Working-with-Fields_images/Working-with-Fields_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: Modification of WEmbedField properties can cause document corruption or incorrect document preservation. DocIO preserves only fields of this type._
 
@@ -316,7 +316,7 @@ Essential DocIO provides support to work with these document variables. You can 
 
 You can refer these fields in other parts of the document easily. For example, you can use the IWParagraph.AppendField(string fieldName, FieldType type) method, where the 1st argument is the name of the document field and the 2nd argument is FiledType.FieldDocVariable.
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img4.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -479,7 +479,7 @@ REF BookmarkName [Switches]
 
 
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image21_0.jpg](Working-with-Fields_images/Working-with-Fields_img5.jpeg) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image21_0.jpg](Working-with-Fields_images/Working-with-Fields_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: Page number and Paragraph number options are not supported in Silverlight, WinRT and Windows Phone applications while updating Cross reference field._
 
@@ -541,7 +541,7 @@ To add a Cross-Reference field in Microsoft Word, click the Insert menu and then
 
 
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img6.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img6.png)' | markdownify }}
 {:.image }
 
 

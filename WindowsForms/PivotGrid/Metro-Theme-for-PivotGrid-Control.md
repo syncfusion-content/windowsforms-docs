@@ -71,7 +71,7 @@ The following screenshot is a sample output for the previous code.
 
 
 
-{ ![](Metro-Theme-for-PivotGrid-Control_images/Metro-Theme-for-PivotGrid-Control_img1.png) | markdownify }
+{{ '![](Metro-Theme-for-PivotGrid-Control_images/Metro-Theme-for-PivotGrid-Control_img1.png)' | markdownify }}
 {:.image }
 
 

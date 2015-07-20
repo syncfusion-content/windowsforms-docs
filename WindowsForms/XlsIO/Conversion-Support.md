@@ -15,7 +15,7 @@ Essential XlsIO supports converting workbook and worksheets into a Pdf document,
 
 Essential XlsIO allows exporting an Excel document into PDF format. Use the Convert method of the ExcelToPdfConverter class to convert the Excel spreadsheet and save the PDF output. 
 
-> { ![](Conversion-Support_images/Conversion-Support_img1.jpeg) | markdownify }
+> {{ '![](Conversion-Support_images/Conversion-Support_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: You need to have both Essential PDF and Essential XlsIO installed in your system since Syncfusion.ExceltoPDFConverter.Base.dll is conditionally shipped when both XlsIO.Base and Pdf.Base is installed._
 
@@ -205,7 +205,7 @@ Background Images
 
 The Background image present in the Excel document is preserved in the generated PDF document.
 
-> { ![](Conversion-Support_images/Conversion-Support_img2.jpeg) | markdownify }
+> {{ '![](Conversion-Support_images/Conversion-Support_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: The image gets tiled based on the size of the output pdf document._
 
@@ -241,7 +241,7 @@ The Print order enabled in the Excel document is considered while laying out the
 * Down Then Over
 * Over Then Down
 > 
-{ ![](Conversion-Support_images/Conversion-Support_img3.jpeg) | markdownify }
+{{ '![](Conversion-Support_images/Conversion-Support_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: It considers the Print Area and Page breaks while laying out, based on Print Order._
 
@@ -376,7 +376,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Conversion-Support_images/Conversion-Support_img4.jpeg) | markdownify }
+{{ '![](Conversion-Support_images/Conversion-Support_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -394,7 +394,7 @@ Essential XlsIO can convert a worksheet based on the input range of the rows and
 ## Convert Chart to Image 
 
 > 
-{ ![](Conversion-Support_images/Conversion-Support_img5.jpeg) | markdownify }
+{{ '![](Conversion-Support_images/Conversion-Support_img5.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 
@@ -572,7 +572,7 @@ The following screenshot shows an Excel Chart converted to an image.
 
 
 
-{ ![](Conversion-Support_images/Conversion-Support_img6.jpeg) | markdownify }
+{{ '![](Conversion-Support_images/Conversion-Support_img6.jpeg)' | markdownify }}
 {:.image }
 
 

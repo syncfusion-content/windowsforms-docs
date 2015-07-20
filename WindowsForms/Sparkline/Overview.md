@@ -17,7 +17,7 @@ A sparkline can display a trend based on adjacent data in a clear and compact gr
 
 The following screenshot shows three types of sparklines, which are drawn inside the grid control cell, based on row values.
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -180,7 +180,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType.Line
 
 
 
-{ ![](Overview_images/Overview_img2.png) | markdownify }
+{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -217,7 +217,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. Column
 
 
 
-{ ![](Overview_images/Overview_img3.png) | markdownify }
+{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -256,7 +256,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. WinLoss
 
 
 
-{ ![](Overview_images/Overview_img4.png) | markdownify }
+{{ '![](Overview_images/Overview_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -344,7 +344,7 @@ Me.sparkLine1.Markers.ShowMarker  =True
 
 
 
-{ ![](Overview_images/Overview_img5.png) | markdownify }
+{{ '![](Overview_images/Overview_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -399,7 +399,7 @@ Me.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagon
 
 
 
-{ ![](Overview_images/Overview_img6.png) | markdownify }
+{{ '![](Overview_images/Overview_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -455,7 +455,7 @@ Me.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagon
 
 
 
-{ ![](Overview_images/Overview_img7.png) | markdownify }
+{{ '![](Overview_images/Overview_img7.png)' | markdownify }}
 {:.image }
 
 

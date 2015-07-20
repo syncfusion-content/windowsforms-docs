@@ -169,7 +169,7 @@ The figure below shows the chart EPS image text editing in Adobe Illustrator.
 
 
 
-{ ![](Exporting_images/Exporting_img1.png) | markdownify }
+{{ '![](Exporting_images/Exporting_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -177,7 +177,7 @@ _Figure_ _354__: EPS Chart with Editable Text_
 
 
 
-{ ![http://help.syncfusion.com/UG/User%20Interface/Windows%20Forms/Chart/ImagesExt/image9_1.png](Exporting_images/Exporting_img2.png) | markdownify }
+{{ '![http://help.syncfusion.com/UG/User%20Interface/Windows%20Forms/Chart/ImagesExt/image9_1.png](Exporting_images/Exporting_img2.png)' | markdownify }}
 {:.image }
 _Note: Chart wrapping and formatting will not be possible in the EPS image by enabling this property._
 
@@ -187,7 +187,7 @@ The chart control can be exported to a Word doc file as an image using Essential
 
 
 
-{ ![](Exporting_images/Exporting_img3.jpeg) | markdownify }
+{{ '![](Exporting_images/Exporting_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -354,7 +354,7 @@ The chart control can be exported into a grid cell (in Essential Grid) as an ima
 
 
 
-{ ![](Exporting_images/Exporting_img4.jpeg) | markdownify }
+{{ '![](Exporting_images/Exporting_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -571,7 +571,7 @@ EssentialChart data can be exported into an Excel document and an Excel chart ca
 
 
 
-{ ![](Exporting_images/Exporting_img5.jpeg) | markdownify }
+{{ '![](Exporting_images/Exporting_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -798,7 +798,7 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 
 
 
-{ ![](Exporting_images/Exporting_img6.jpeg) | markdownify }
+{{ '![](Exporting_images/Exporting_img6.jpeg)' | markdownify }}
 {:.image }
 
 

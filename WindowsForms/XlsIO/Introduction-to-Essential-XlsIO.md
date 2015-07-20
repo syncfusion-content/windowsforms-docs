@@ -27,7 +27,7 @@ XlsIO can read and write Excel files that are compatible with Excel 97 to Excel 
 
 The following image shows a sample worksheet.
 
-{ ![](Introduction-to-Essential-XlsIO_images/Introduction-to-Essential-XlsIO_img1.png) | markdownify }
+{{ '![](Introduction-to-Essential-XlsIO_images/Introduction-to-Essential-XlsIO_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -47,7 +47,7 @@ The following code example performs Mail Merge using the Execute method.
 <td>
 [VB.NET]Dim dataBase As String = "Northwind.mdb"‘Opens the Word document.Dim doc As WordDocument = New WordDocument("EmployeesReportDemo.doc")‘Creates database connection.Dim conn As OleDbConnection = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + dataBase)conn.Open()‘Populates data table.Dim table As DataTable = New DataTable()Dim adapter As OleDbDataAdapter = New OleDbDataAdapter("select * from employees", conn)adapter.Fill(table)adapter.Dispose()‘Performs Mail Merge.doc.MailMerge.Execute(table)‘Saves the document.doc.Save("MailMerge.doc", FormatType.Doc)‘Closes the document.doc.Close()</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img1.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img1.png)' | markdownify }}
 {:.image }
 _Note: For more information on mail merge using DocIO, you can refer to online documentation link:_
 
@@ -83,7 +83,7 @@ The following code example shows you how to perform a simple “Find and Replace
 <td>
 [VB.NET]‘Opens the Word document.Dim doc As WordDocument = New WordDocument("FindAndReplaceTemplate.doc")‘Defines text to be replaced.Dim replaceText As String = "World"‘Performs replace.doc.Replace(New Regex("Hello"), replaceText)‘Saves the document.doc.Save("Find And Replace.doc")‘Closes the document.doc.Close()</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img2.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img2.png)' | markdownify }}
 {:.image }
 _Note: For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:_
 
@@ -121,7 +121,7 @@ The following code example shows how to insert the bookmark using DocIO. Here, t
 <td>
 [VB.NET]‘Creates a new Word document.Dim doc As WordDocument = New WordDocument()Dim section As IWSection = doc.AddSection()Dim paragraph As IWParagraph = section.AddParagraph()paragraph.AppendText("Simple Bookmark")paragraph = section.AddParagraph()paragraph.AppendText("Bookmark with one ")‘Inserts bookmark.paragraph.AppendBookmarkStart("one_word")paragraph.AppendText("word")paragraph.AppendBookmarkEnd("one_word")paragraph.AppendText(" selected")‘Saves the document.doc.Save("Bookmarks.doc")‘Closes the document.doc.Close()</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_95.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img3.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_95.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img3.png)' | markdownify }}
 {:.image }
 _Note: For more information on working with bookmarks using DocIO, you can refer to the online documentation link:_
 
@@ -201,7 +201,7 @@ The following code example shows how to insert the text watermark to the Word do
 <td>
 [VB.NET]‘Creates a new Word document.Dim doc As WordDocument = New WordDocument()doc.EnsureMinimal()‘Adds text watermark to the document.Dim TextWatermark As TextWatermark = New TextWatermark()doc.Watermark = TextWatermarkTextWatermark.Size = 48TextWatermark.Layout = WatermarkLayout.HorizontalTextWatermark.Semitransparent = FalseTextWatermark.Color = Color.BlackTextWatermark.Text = "Watermark"‘Saves the document.doc.Save("Watermark.doc", FormatType.Doc)‘Closes the document.doc.Close()</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img4.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img4.png)' | markdownify }}
 {:.image }
 _Note: For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:_
 
@@ -244,7 +244,7 @@ You can set the header and footer by using the HeadersFooters property in the 
 <td>
 [VB.NET]‘Opens the Word document.Dim doc As WordDocument = New WordDocument("original.doc")‘Adds header and footer to each section in the document.For Each sec As WSection In doc.Sections     ‘Header.     Dim para As WParagraph = New WParagraph(doc)     para.AppendField("page", FieldType.FieldPage)     para.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Right     sec.HeadersFooters.Header.Paragraphs.Add(para)     ‘Footer.     Dim para1 As WParagraph = New WParagraph(doc)     para1.AppendText("Internal")     para1.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left     sec.HeadersFooters.Footer.Paragraphs.Add(para1)Next‘Saves the document.doc.Save("HeaderFooterDocIO.doc", FormatType.Doc)‘Closes the document.doc.Close()</td></tr>
 </table>
-> __{ ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img5.png) | markdownify }
+> __{{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img5.png)' | markdownify }}
 {:.image }
 _Note: For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:_
 
@@ -308,7 +308,7 @@ The following code example shows how to insert an empty table to a Word document
 <td>
 [VB.NET]‘Creates a new Word document.Dim doc As IWordDocument = New WordDocument()Dim section As IWSection = doc.AddSection()‘Adds a table to the document.Dim table As IWTable = section.AddTable()table.ResetCells(3, 2)‘Saves the document.doc.Save("TableDocIO.doc")</td></tr>
 </table>
-> __{ ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img6.png) | markdownify }
+> __{{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img6.png)' | markdownify }}
 {:.image }
 _Note: For more information on creating tables using DocIO, refer to online documentation link:_
 
@@ -372,7 +372,7 @@ The CommentsCollection property holds all the comments present in the Word doc
 <td>
 [VB.NET]‘Opens the Word document.Dim doc As WordDocument = New WordDocument("Comments.doc")‘Gets all the comments in the document.Dim Comments As CommentsCollection = doc.Comments‘Removes all the comments from the document.Comments.Clear()‘Saves the document.doc.Save("CommentsRemovedDocIO.doc", FormatType.Doc)</td></tr>
 </table>
-> __{ ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img7.png) | markdownify }
+> __{{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img7.png)' | markdownify }}
 {:.image }
 _Note: For more information on working with the comments using DocIO, you can refer to the online documentation link:_
 

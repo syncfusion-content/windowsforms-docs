@@ -151,7 +151,7 @@ Essential Edit now comes with an XML Schema Definition (XSD) file that provides 
 
 
 
-{ ![](Text-Export_images/Text-Export_img1.png) | markdownify }
+{{ '![](Text-Export_images/Text-Export_img1.png)' | markdownify }}
 {:.image }
 
 

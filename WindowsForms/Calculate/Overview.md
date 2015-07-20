@@ -21,7 +21,7 @@ Essential Calculate allows you to add extensive calculation support to your busi
 
 
 
-{ ![](Overview_images/Overview_img1.jpeg) | markdownify }
+{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -144,13 +144,13 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/resources) | markdownify } (Navigate to the Calculate User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the Calculate User Guide.)> ![](Overview_images/Overview_img5.jpeg)
 {:.image }
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+{{{ ''_Note: Click Download as PDF to access a PDF version._'' | markdownify }}}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{ [http://help.syncfusion.com/cr](http://help.syncfusion.com/cr) | markdownify }  (Navigate to the Reporting User Guide. Select {{ '_Calculate_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/cr](http://help.syncfusion.com/cr)' | markdownify }}  (Navigate to the Reporting User Guide. Select {{{ ''_Calculate_'' | markdownify }}}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

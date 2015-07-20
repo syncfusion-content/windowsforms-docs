@@ -17,7 +17,7 @@ Excel supports various built-in functions that make large calculations in large 
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img1.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -131,7 +131,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img2.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -757,7 +757,7 @@ Returns or sets the object's formula in A1-style notation and in the language of
 <tr>
 <td>
 FormulaArray</td><td>
-Represents array-entered formula. Visit{ [http://www.cpearson.com/excel/array.htm](http://www.cpearson.com/excel/ArrayFormulas.aspx) | markdownify } for more information. </td></tr>
+Represents array-entered formula. Visit{{ '[http://www.cpearson.com/excel/array.htm](http://www.cpearson.com/excel/ArrayFormulas.aspx)' | markdownify }} for more information. </td></tr>
 <tr>
 <td>
 FormulaArrayR1C1</td><td>
@@ -1079,7 +1079,7 @@ excelEngine.Dispose()
 
 
 
-> { ![](Working-with-Formulas_images/Working-with-Formulas_img3.jpeg) | markdownify }
+> {{ '![](Working-with-Formulas_images/Working-with-Formulas_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: Enable automatic updation of links in Excel to view the result for the preceding code._
 
@@ -1405,7 +1405,7 @@ Checks to see if two text values are identical.</td></tr>
 <tr>
 <td>
 EXP</td><td>
-Returns {{ '_e_' | markdownify }} raised to the power of a given number.</td></tr>
+Returns {{{ ''_e_'' | markdownify }}} raised to the power of a given number.</td></tr>
 <tr>
 <td>
 EXPONDIST</td><td>
@@ -2231,13 +2231,13 @@ Named Ranges is a powerful feature in Excel that makes it possible to assign a n
 
 To create Named Ranges in MS Excel, open Formulas tab and click Define Name button under Defined Names section. Names are created at workbook-level, by default, but you can create a sheet-level name, by entering the sheet name followed by an exclamation mark (!), followed by the name of the range. For instance, to create a named range TEST on Sheet1, enter the name as 'Sheet1!TEST'.
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img4.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img5.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -2385,7 +2385,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img6.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -2849,7 +2849,7 @@ excelEngine.Dispose()
 
 Excel has an option to find the quickest way to identify any cell that contains an error on the active worksheet and ignore the error that shows with green indicator through the Error Checking dialog box. This dialog box provides various options to get information on the error, how a formula is evaluated, its trace, and an option to ignore the error by changing its data type.
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img7.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -2865,7 +2865,7 @@ Excel has the following set of rules that can be enabled or disabled to show/hid
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img8.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -3051,7 +3051,7 @@ Excel has a range of options that allows you to control the way it calculates. T
 * Automatic except for Data Tables
 * Manual
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img9.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -3672,7 +3672,7 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-> { ![](Working-with-Formulas_images/Working-with-Formulas_img10.jpeg) | markdownify }
+> {{ '![](Working-with-Formulas_images/Working-with-Formulas_img10.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 

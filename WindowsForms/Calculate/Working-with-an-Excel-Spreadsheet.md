@@ -15,7 +15,7 @@ Example
 
 To illustrate this process, consider a sample project, Essential Studio\x.x.x.x\Windows\Calculation.Windows\Samples\2.0\XlsFileUsingExcelRW. 
 
-> { ![C:/Documents and Settings/jananit/Desktop/Dataicon.jpg](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg) | markdownify }
+> {{ '![C:/Documents and Settings/jananit/Desktop/Dataicon.jpg](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg)' | markdownify }}
 {:.image }
  _Note: This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required._
 
@@ -26,25 +26,25 @@ The spreadsheet you are using is a car insurance calculator. It uses Names to ma
 * Calculate-Does the actual calculations. Based on the input values from the input sheet, formulas in this sheet, look up appropriate weights from the LookUps sheet, and compute the car insurance cost depending upon these weights.
 * Outputs-Contains the computed results obtained from the Calculate sheet.
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52,7 +52,7 @@ This layout represents a general calculation design process which you can use fo
 
 For example, consider the below form which accepts input values from the user. Once the values are set, the user clicks a button on the form that puts these values into the inputs sheet and then retrieves the insurance costs from the Outputs sheet and displays it on the form.
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img6.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -70,7 +70,7 @@ In the Adding Calculation Support section, you would have learnt how to support 
 
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img7.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img7.jpeg)' | markdownify }}
 {:.image }
  For more detailed information on these classes, check out the class reference.
 
@@ -84,7 +84,7 @@ Limitation-You cannot perform actual computations on the contents of the XLS fil
 
 A sample which illustrates the usage of Essential XlsIO with Essential Calculate is available in the following sample installation location:
 
-_&lt;Install Location&gt;\Windows\Calculate.Windows\Samples\2.0\Xls File Using CalcEngine Demo\cs_ 
+_<Install Location>\Windows\Calculate.Windows\Samples\2.0\Xls File Using CalcEngine Demo\cs_ 
 
 
 

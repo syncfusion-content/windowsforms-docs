@@ -25,7 +25,7 @@ By default points in a series are plotted against their x and y values. However 
 
 In the figure below, the first chart shows a line chart that is not-indexed while the second chart shows a line chart whose x-axis is indexed.
 
-{ ![](Chart-Axes_images/Chart-Axes_img1.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33,7 +33,7 @@ _Figure_ _247__: Non-Indexed X Values_
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img2.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ _Figure_ _248_ _Indexed X Values_
 
 
 
-> { ![](Chart-Axes_images/Chart-Axes_img3.jpeg) | markdownify }
+> {{ '![](Chart-Axes_images/Chart-Axes_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: Indexing is supported only on the x-axis in Essential Chart._
 
@@ -123,7 +123,7 @@ The following image shows a chart whose x and y axes have been reversed.
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img4.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -175,7 +175,7 @@ The above code snippet will place both the x and y-axes in the position opposite
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img5.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -243,7 +243,7 @@ Me.chartControl1.Series(1).XAxis = Me.secXAxis
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img6.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -259,7 +259,7 @@ By default, this additional axis will be rendered right next to the correspondin
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img7.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -293,7 +293,7 @@ Me.ChartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide;
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img8.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -309,7 +309,7 @@ You can now combine the stacking and side-by-side chart axes layouts when multip
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img9.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -427,7 +427,7 @@ chartControl1.ChartArea.YLayouts.Add(layout1)
 
 
 
-> { ![](Chart-Axes_images/Chart-Axes_img10.jpeg) | markdownify }
+> {{ '![](Chart-Axes_images/Chart-Axes_img10.jpeg)' | markdownify }}
 {:.image }
 _Note: All the axes with the same orientation must be added to ChartAxisLayout (PrimaryAxis as well) as illustrated in the above code snippet._
 
@@ -707,7 +707,7 @@ Illustrating Custom Axis Location
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img11.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -741,7 +741,7 @@ Illustrating Custom Axis Size
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img12.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -751,7 +751,7 @@ _Figure_ _256__: Chart rendered in AutoSize Mode_
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img13.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -833,7 +833,7 @@ If LabelRotate is true, this property specifies the angle of rotation.</td></tr>
 </table>
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img14.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1083,7 +1083,7 @@ End Sub
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img15.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1155,7 +1155,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Colo
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img16.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1207,7 +1207,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, Ne
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img17.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1261,7 +1261,7 @@ Me.ChartWebControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectActio
 
 
 
-{ ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/IntersectingLabels.png](Chart-Axes_images/Chart-Axes_img18.png) | markdownify }
+{{ '![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/IntersectingLabels.png](Chart-Axes_images/Chart-Axes_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1347,7 +1347,7 @@ Me.chartControl1.PrimaryXAxis.DrawTickLabelGrid = True
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img19.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1531,7 +1531,7 @@ End Sub
 
 
 
-{ ![C:/Users/sivakumard/Desktop/Tooltip.png](Chart-Axes_images/Chart-Axes_img20.png) | markdownify }
+{{ '![C:/Users/sivakumard/Desktop/Tooltip.png](Chart-Axes_images/Chart-Axes_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -1603,7 +1603,7 @@ You can now wrap the axes titles and display them as multiline text. Set multili
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img21.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1617,7 +1617,7 @@ The below screenshot illustrates a chart with multiline axes titles.
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img22.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1675,7 +1675,7 @@ Me.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img23.png) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1718,7 +1718,7 @@ Defines the number of ticks to render while zooming.* NumberOfIntervalsFixed - W
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img24.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1776,7 +1776,7 @@ Specifies the size of the tick rectangle.</td></tr>
 </table>
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img25.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1881,7 +1881,7 @@ Me.chartControl1.Rotation = 60
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img26.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1927,7 +1927,7 @@ Me.chartControl1.RealMode3D = True
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img27.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1941,7 +1941,7 @@ Rotating Chart
 
 The end-users can be allowed to rotate the chart at run-time, using the mouse (middle or right mouse button) by setting the EnableMouseRotation property to true. 
 
-> { ![](Chart-Axes_images/Chart-Axes_img28.jpeg) | markdownify }
+> {{ '![](Chart-Axes_images/Chart-Axes_img28.jpeg)' | markdownify }}
 {:.image }
 _Note: Rotation will not be possible with the LEFT-MOUSE button by enabling this property._
 
@@ -1969,7 +1969,7 @@ Me.chartControl1.EnableMouseRotation = True
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img29.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2014,7 +2014,7 @@ Specifies whether the chart should be rendered in 3-D style.</td></tr>
 
 
 
-{ ![http://www.syncfusion.com/downloads/Support/DirectTrac/93985/clip_image001105907764.png](Chart-Axes_images/Chart-Axes_img30.png) | markdownify }
+{{ '![http://www.syncfusion.com/downloads/Support/DirectTrac/93985/clip_image001105907764.png](Chart-Axes_images/Chart-Axes_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -2061,7 +2061,7 @@ The thickness of the lines.</td></tr>
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img31.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img31.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2325,7 +2325,7 @@ Me.chartControl1.PrimaryXAxis.StripLines.Add(stripLine)
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img32.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2339,7 +2339,7 @@ Use an image as StripLine by setting through StripLine.BackImage property.
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img33.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2368,7 +2368,7 @@ All breaks work only with decart axes.
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img34.png) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -2442,7 +2442,7 @@ Me.chartControl1.PrimaryYAxis.BreakRanges.BreakAmount = 0.5
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img35.jpeg) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img35.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2522,7 +2522,7 @@ Me.chartControl1.Series3D = True
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img36.png) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img36.png)' | markdownify }}
 {:.image }
 
 
@@ -2581,7 +2581,7 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img37.png) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img37.png)' | markdownify }}
 {:.image }
 
 
@@ -2757,7 +2757,7 @@ The following screenshot illustrates the customization options for individual la
 
 
 
-{ ![](Chart-Axes_images/Chart-Axes_img38.png) | markdownify }
+{{ '![](Chart-Axes_images/Chart-Axes_img38.png)' | markdownify }}
 {:.image }
 
 

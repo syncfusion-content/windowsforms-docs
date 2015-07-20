@@ -211,7 +211,7 @@ Me.editControl1.SplitFourQuadrants()
 
 
 
-{ ![](Appearance_images/Appearance_img1.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -257,7 +257,7 @@ Me.editControl1.UseXPStyle = True
 
 
 
-{ ![](Appearance_images/Appearance_img2.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -419,7 +419,7 @@ Me.editControl1.SelectionMarginWidth = 100
 
 
 
-{ ![](Appearance_images/Appearance_img3.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -453,7 +453,7 @@ Me.editControl1.MarkChangedLines = True
 
 
 
-{ ![](Appearance_images/Appearance_img4.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -567,7 +567,7 @@ Me.editControl1.UserMarginTextColor = Color.Green
 
 
 
-{ ![](Appearance_images/Appearance_img5.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -661,7 +661,7 @@ Specifies background fill style and color.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style. The options provided are as follows:{{ '_Solid_' | markdownify }}{{ '_Pattern_' | markdownify }}{{ '_Gradient_' | markdownify }}</td></tr>
+Specifies the brush style. The options provided are as follows:{{{ ''_Solid_'' | markdownify }}}{{{ ''_Pattern_'' | markdownify }}}{{{ ''_Gradient_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -697,7 +697,7 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 
 
-{ ![](Appearance_images/Appearance_img6.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -793,7 +793,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 
 
-{ ![](Appearance_images/Appearance_img7.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -801,7 +801,7 @@ _Figure_ _69_: Background Color and Border set for Text_
 
 > 
 
-> { ![](Appearance_images/Appearance_img8.jpeg) | markdownify }
+> {{ '![](Appearance_images/Appearance_img8.jpeg)' | markdownify }}
 {:.image }
 _Note: Refer the_ Text Border _topic to know how to set the border for the text._
 
@@ -887,21 +887,21 @@ The Edit Control supports customization of fonts through the configuration file,
 
 
 
-&lt;format name="Text" Font="Courier New, 10pt" FontColor="Black" /&gt;
+<format name="Text" Font="Courier New, 10pt" FontColor="Black" />
 
-&lt;format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" /&gt;
+<format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" />
 
-&lt;format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" /&gt;
+<format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
 
-&lt;format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" /&gt;
+<format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" />
 
-&lt;format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" /&gt;
+<format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
 
-&lt;format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" /&gt; 
+<format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" /> 
 
 
 
-{ ![](Appearance_images/Appearance_img9.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -969,13 +969,13 @@ You can turn on the single line mode of the Edit Control by setting the SingleLi
 
 
 
-> { ![](Appearance_images/Appearance_img10.jpeg) | markdownify }
+> {{ '![](Appearance_images/Appearance_img10.jpeg)' | markdownify }}
 {:.image }
 _Note: The SingleLineMode is intended for use, only when the Edit Control contains small amounts of text data in it. Using it in a scenario where the Edit Control has a huge file loaded into it, may lead to poor performance._
 
 
 
-{ ![](Appearance_images/Appearance_img11.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1085,7 +1085,7 @@ Private Sub FindDialogExt_FindComplete(ByVal sender As Object, ByVal e As frmFin
 
 'Arabic text as message (localize)
 
-If messageString &lt;&gt; String.Empty Then
+If messageString <> String.Empty Then
 
 e.Message = "انتهى"
 
@@ -1101,7 +1101,7 @@ End Sub
 
 
 
-{ ![](Appearance_images/Appearance_img12.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img12.jpeg)' | markdownify }}
 {:.image }
 
 

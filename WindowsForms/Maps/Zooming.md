@@ -102,7 +102,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-{ ![](Zooming_images/Zooming_img1.png) | markdownify }
+{{ '![](Zooming_images/Zooming_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -192,7 +192,7 @@ public partial class Form1 : Form
 
 
 
-Screenshot:{ ![](Zooming_images/Zooming_img2.png) | markdownify }
+Screenshot:{{ '![](Zooming_images/Zooming_img2.png)' | markdownify }}
 {:.image }
 
 

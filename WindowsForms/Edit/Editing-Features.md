@@ -89,7 +89,7 @@ Clear the undo buffer. Hence undo operation is not allowed on contents/actions p
 </table>
 
 
-> { ![](Editing-Features_images/Editing-Features_img1.jpeg) | markdownify }
+> {{ '![](Editing-Features_images/Editing-Features_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: The undo/redo buffer is cleared after the 'Save' operation._
 
@@ -197,7 +197,7 @@ The following screenshot shows action grouping in Edit Control.
 
 
 
-{ ![](Editing-Features_images/Editing-Features_img2.jpeg) | markdownify }
+{{ '![](Editing-Features_images/Editing-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -225,7 +225,7 @@ Similarly, the GetNewLineStyle method returns a NewLineStyle enumerator value wh
 
 
 
-> { ![](Editing-Features_images/Editing-Features_img3.jpeg) | markdownify }
+> {{ '![](Editing-Features_images/Editing-Features_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: The default new line style value is set to 'Control'. This value can be changed according to the needs of the user using the DefaultNewLineStyle property._
 
@@ -441,7 +441,7 @@ Me.editControl1.EnableMD5 = True
 
 
 
-> { ![](Editing-Features_images/Editing-Features_img4.jpeg) | markdownify }
+> {{ '![](Editing-Features_images/Editing-Features_img4.jpeg)' | markdownify }}
 {:.image }
 _Note:_ 
 
@@ -476,7 +476,7 @@ The following illustration shows the Keys Binding dialog box.
 
 
 
-{ ![](Editing-Features_images/Editing-Features_img5.jpeg) | markdownify }
+{{ '![](Editing-Features_images/Editing-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -612,19 +612,19 @@ There are certain regular expression command characters that must be translated 
 
 
 
-&lt;lexem BeginBlock="#region" EndBlock="#end region" Type="PreprocessorKeyword" IsEndRegex="true" IsComplex="true" IsCollapsable="true" AutoNameExpression="\s*(?&lt;text&gt;.*).*\n" AutoNameTemplate="${text} " IsCollapseAutoNamed="true" CollapseName="#region">
+<lexem BeginBlock="#region" EndBlock="#end region" Type="PreprocessorKeyword" IsEndRegex="true" IsComplex="true" IsCollapsable="true" AutoNameExpression="\s*(?<text>.*).*\n" AutoNameTemplate="${text} " IsCollapseAutoNamed="true" CollapseName="#region">
 
-        &lt;SubLexems&gt;
+        <SubLexems>
 
-                &lt;lexem BeginBlock="\n" IsBeginRegex="true" /&gt;
+                <lexem BeginBlock="\n" IsBeginRegex="true" />
 
-        &lt;/SubLexems&gt;
+        </SubLexems>
 
-&lt;/lexem&gt;
+</lexem>
 
 
 
-Ampersands (&) can be escaped using &amp, less-than symbols (&lt;) can be escaped using &lt, and greater-than symbols (&gt;) can be escaped using &gt.
+Ampersands (&) can be escaped using &amp, less-than symbols (<) can be escaped using &lt, and greater-than symbols (>) can be escaped using &gt.
 
 
 
@@ -1014,7 +1014,7 @@ IMacro macro = this.Edit Control1.LexicalMacrosManager.Add("testMacro", ".+");
 
 // Create a config lexem that belongs to a custom format. 
 
-ConfigLexem configLex = new ConfigLexem("&lt;%@", "%&gt;", FormatType.Custom, false);
+ConfigLexem configLex = new ConfigLexem("<%@", "%>", FormatType.Custom, false);
 
 
 
@@ -1044,7 +1044,7 @@ Dim macro As IMacro = Me.Edit Control1.LexicalMacrosManager.Add("testMacro", ".+
 
 ' Create a config lexem that belongs to a custom format. 
 
-Dim configLex As ConfigLexem = New ConfigLexem("&lt;%@", "%&gt;", FormatType.Custom, False)
+Dim configLex As ConfigLexem = New ConfigLexem("<%@", "%>", FormatType.Custom, False)
 
 
 
@@ -1195,7 +1195,7 @@ With RTL support, you can use EditControl, to render content in Right-To-left la
 
 
 
-{ ![](Editing-Features_images/Editing-Features_img6.png) | markdownify }
+{{ '![](Editing-Features_images/Editing-Features_img6.png)' | markdownify }}
 {:.image }
 
 

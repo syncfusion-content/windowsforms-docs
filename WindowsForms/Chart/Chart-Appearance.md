@@ -37,7 +37,7 @@ Me.chartControl1.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Drawing.
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img1.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ Me.chartControl1.ChartArea.BackInterior = New Syncfusion.Drawing.BrushInfo(Syste
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img2.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99,7 +99,7 @@ this.chartControl1.ChartInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.D
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img3.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -153,7 +153,7 @@ Me.ChartControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretc
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img4.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -195,7 +195,7 @@ Me.ChartControl1.ChartAreaBackImage = myCustomImage
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img5.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -227,7 +227,7 @@ Me.ChartControl1.ChartInteriorBackImage = myCustomImage
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img6.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -398,7 +398,7 @@ Me.chartControl1.ShadowWidth = 7
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img7.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -582,7 +582,7 @@ Me.chartControl1.TextPosition = ChartTextPosition.Top
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img8.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -657,7 +657,7 @@ chartControl1.Title.Font = New System.Drawing.Font("Candara", 9F, System.Drawing
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img9.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -708,7 +708,7 @@ There are several appearance options that can be applied on the ChartTitle insta
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img10.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -760,7 +760,7 @@ Me.ChartControl1.Titles.Add(title)
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img11.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -774,7 +774,7 @@ You can now wrap the Chart titles and display them as multiline text. Set multil
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img12.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -900,7 +900,7 @@ End Sub
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img13.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -988,7 +988,7 @@ Me.chartControl1.ChartArea.Watermark.ZOrder=ChartWaterMarkOrder.Behind;
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img14.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1024,7 +1024,7 @@ Me.chartControl1.PrimaryYAxis.InterlacedGridInterior = new Syncfusion.Drawing.Br
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img15.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1034,7 +1034,7 @@ The preceding image illustrates interlaced grid background for the chart.
 
 A sample which illustrates the Interlaced Grid for the Chart is available in the below sample installation location.
 
-&lt;Sample location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Interlaced Grid
+<Sample location>\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Interlaced Grid
 
 ## Minor Grid Lines
 
@@ -1074,13 +1074,13 @@ chartControl1.PrimaryXAxis.SmallTicksPerInterval = 1
 
 
 
-> { ![](Chart-Appearance_images/Chart-Appearance_img16.jpeg) | markdownify }
+> {{ '![](Chart-Appearance_images/Chart-Appearance_img16.jpeg)' | markdownify }}
 {:.image }
 _Note: In the above code we have specified value for SmallTicksPerInterval property. No of minor grids lines depends on the value of this property of Chart Axis. Default value is 0; So, MinorGridLines will not appear in the chart by default. To see the minor grid lines in the chart, set SmallTicksPerInterval property to 1 or greater that 1._
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img17.jpeg) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1127,7 +1127,7 @@ The following output is displayed when the Skins value is set to Office2007 Blac
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img18.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1137,7 +1137,7 @@ The following output is displayed when the Skins value is set to Office2007 Blue
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img19.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1145,19 +1145,19 @@ _Figure_ _334__: Office2007 Blue_
 
 The following output is displayed when the Skins value is set to Office2007 Silver.
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img20.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img20.png)' | markdownify }}
 {:.image }
 
 
 The following output is displayed when the Skins value is set to Almond.
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img21.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img21.png)' | markdownify }}
 {:.image }
 
 
 The following output is displayed when the Skins value is set to Blend.
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img22.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -1165,13 +1165,13 @@ The following output is displayed when the Skins value is set to Blueberry.
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img23.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img23.png)' | markdownify }}
 {:.image }
 
 
 The following output is displayed when the Skins value is set to Marble.
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img24.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -1181,19 +1181,19 @@ The following output is displayed when the Skins value is set to Midnight.
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img25.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img25.png)' | markdownify }}
 {:.image }
 
 
 The following output is displayed when the Skins value is set to Monochrome.
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img26.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img26.png)' | markdownify }}
 {:.image }
 
 
 The following output is displayed when the Skins value is set to Olive.
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img27.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1201,13 +1201,13 @@ The following output is displayed when the Skins value is set to Sandune.
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img28.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img28.png)' | markdownify }}
 {:.image }
 
 
 The following output is displayed when the Skins value is set to Turquoise.
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img29.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -1215,7 +1215,7 @@ The following output is displayed when the Skins value is set to Vista.
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img30.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -1225,7 +1225,7 @@ The following output is displayed when the Skins value is set to VS2010.
 
 
 
-{ ![](Chart-Appearance_images/Chart-Appearance_img31.png) | markdownify }
+{{ '![](Chart-Appearance_images/Chart-Appearance_img31.png)' | markdownify }}
 {:.image }
 
 

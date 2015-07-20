@@ -25,7 +25,7 @@ There is also a more flexible support for implementing custom data models by imp
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img1.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: One important reason you might want to use either of the above two approaches is to greatly enhance performance (speed and memory) especially while dealing with a large set of data points._
 
@@ -41,7 +41,7 @@ The following sample code illustrates how a custom DataSet can be bound to a Cha
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img2.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -179,7 +179,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img3.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -389,7 +389,7 @@ Me.chartControl1.Series.Add(series1)
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img4.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -655,7 +655,7 @@ chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img5.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -675,7 +675,7 @@ The below steps lets you bind a database table with the ChartControl.
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img6.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -689,7 +689,7 @@ _Figure_ _28__: Data Source Tab_
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img7.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -703,7 +703,7 @@ _Figure_ _29__: Selecting "new BindingSource...." from the drop-down list in the
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img8.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -717,7 +717,7 @@ _Figure_ _30__: Selecting the Data Source Type_
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img9.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -731,7 +731,7 @@ _Figure_ _31__: Creating a New Connection_
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img10.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -745,7 +745,7 @@ _Figure_ _32__: Choose Data Source Dialog Box_
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img11.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -759,7 +759,7 @@ _Figure_ _33__: Selecting the Database file by clicking on the Browse Button in 
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img12.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -773,7 +773,7 @@ _Figure_ _34__: Next button in the Data Source Configuration Wizard is Clicked_
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img13.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -787,7 +787,7 @@ _Figure_ _35__: Finish button in the Data Source Configuration Wizard is clicked
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img14.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -801,7 +801,7 @@ _Figure_ _36__: Selecting the Database from the drop-down List in the Data Sourc
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img15.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -817,7 +817,7 @@ Binding the Table Data with Chart Series
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img16.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -831,7 +831,7 @@ _Figure_ _38__: Selecting the Series to which the data is to be Bound_
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img17.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -841,7 +841,7 @@ _Figure_ _39__: Assigning the retrieved database column to X value of the Series
 
 
 
-{ ![](Chart-Data_images/Chart-Data_img18.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -853,7 +853,7 @@ _Figure_ _40__: Assigning the retrieved database column to Y value of the Series
 
 3. Click Finish to apply these data binding settings to the Chart. The below image illustrates the Chart bound with custom data.
 
-{ ![](Chart-Data_images/Chart-Data_img19.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -875,11 +875,11 @@ Step-1:
 
 Open the Chart Wizard in designer. Chart wizard can be opened either by right-clicking the Chart control and choosing the Chart Wizard option in context menu or by clicking Chart Wizard option in smart tag of the Chart control. Chart wizard appears as follows.
 
-{ ![](Chart-Data_images/Chart-Data_img20.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img20.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Data_images/Chart-Data_img21.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -889,7 +889,7 @@ Step-2:
 
 In Chart Wizard, click Series button and click Data Source tab to choose the data source.
 
-{ ![](Chart-Data_images/Chart-Data_img22.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -899,17 +899,17 @@ Step-3:
 
 The combo box displays all the available binding sources in the Form. Choose the binding source for Chart from the binding sources available in the combo box.
 
-{ ![](Chart-Data_images/Chart-Data_img23.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img23.jpeg)' | markdownify }}
 {:.image }
 _Note: When Form does not contain any binding source, then only [none] and [new Binding Source…] options are present in the combo box._ 
 
-{ ![](Chart-Data_images/Chart-Data_img24.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img24.png)' | markdownify }}
 {:.image }
 
 
 Here, MyBindingSource is a binding source present in the form.
 
-{ ![](Chart-Data_images/Chart-Data_img25.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -917,7 +917,7 @@ Step-4:
 
 Click Series Data tab to map the binding source fields with X and Yvalues of the Chart. Select a series in the combo box and other fields in this tab are enabled.
 
-{ ![](Chart-Data_images/Chart-Data_img26.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -925,11 +925,11 @@ Step-5:
 
 In the X Value combo box, choose the field that should be bound with the X value of series. Similarly, in Y Value combo box, choose the field that should be bound with the Y value of the series and click Finish button. 
 
-{ ![](Chart-Data_images/Chart-Data_img27.jpeg) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img27.jpeg)' | markdownify }}
 {:.image }
 _Note: You can also change series Type and Name here._
 
-{ ![](Chart-Data_images/Chart-Data_img28.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -1103,7 +1103,7 @@ Set ChartDataBindModel object as value to the ChartSeries object. This binds the
 
 The following screenshot displays a Chart bounded with binding source in code behind.
 
-{ ![](Chart-Data_images/Chart-Data_img29.png) | markdownify }
+{{ '![](Chart-Data_images/Chart-Data_img29.png)' | markdownify }}
 {:.image }
 
 

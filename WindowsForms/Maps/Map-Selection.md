@@ -117,7 +117,7 @@ Screenshot:
 
 
 
-{ ![](Map-Selection_images/Map-Selection_img1.png) | markdownify }
+{{ '![](Map-Selection_images/Map-Selection_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -155,7 +155,7 @@ MultiSelection can be performed by selecting the map shape and holding the ctrl 
 
 Screenshot:
 
-{ ![](Map-Selection_images/Map-Selection_img2.png) | markdownify }
+{{ '![](Map-Selection_images/Map-Selection_img2.png)' | markdownify }}
 {:.image }
 
 

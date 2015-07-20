@@ -11,7 +11,7 @@ documentation: ug
 
 ### Configuring the SwfConfig file
 
-An XML file in QTP called SwfConfig is the configuration file located at (Installed location of Essential QuickTest Professional)\Config\&lt;version-2.0, 3.5, or 4.0&gt;\swfconfig, which contains all the mapping information for QTP to recognize Syncfusion controls. Using the SwfConfig utility, users can easily configure the SwfConfig.xml file in HP QTP.
+An XML file in QTP called SwfConfig is the configuration file located at (Installed location of Essential QuickTest Professional)\Config\<version-2.0, 3.5, or 4.0>\swfconfig, which contains all the mapping information for QTP to recognize Syncfusion controls. Using the SwfConfig utility, users can easily configure the SwfConfig.xml file in HP QTP.
 
 Steps to Configure the SwfConfig.xml File
 
@@ -21,7 +21,7 @@ Steps to Configure the SwfConfig.xml File
 
 
 
-{ ![](Utilities_images/Utilities_img1.png) | markdownify }
+{{ '![](Utilities_images/Utilities_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -33,7 +33,7 @@ _Figure_ _29__: Creating the SwfConfig.xml File for Essential Studio 10.3_
 
 2. Then Essential QTP Configurator shows the dialog box for appending the swfconfig.xml file. Click Yes to append the swfconfig.xml file in the QTP machine.
 
-{ ![](Utilities_images/Utilities_img2.png) | markdownify }
+{{ '![](Utilities_images/Utilities_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -47,7 +47,7 @@ _Figure_ _30__: Appending the SwfConfig File_
 
 
 
-{ ![](Utilities_images/Utilities_img3.png) | markdownify }
+{{ '![](Utilities_images/Utilities_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -59,7 +59,7 @@ _Figure_ _31__: Replacing the SwfConfig.xml File_
 
 
 
-{ ![](Utilities_images/Utilities_img4.png) | markdownify }
+{{ '![](Utilities_images/Utilities_img4.png)' | markdownify }}
 {:.image }
 
 

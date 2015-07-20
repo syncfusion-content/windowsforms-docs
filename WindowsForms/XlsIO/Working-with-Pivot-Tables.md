@@ -17,7 +17,7 @@ Essential XlsIO supports the usage of Pivot Table. Creation and Manipulation of 
 
 In Excel, Pivot Table can be inserted by selecting the PivotTable option from the Insert menu.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img1.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -27,7 +27,7 @@ Excel automatically selects the entire range. However, it is possible to modify 
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img2.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -35,7 +35,7 @@ Once you select a field, the Pivot Table appears. Now you need to populate it wi
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img3.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ PivotTable Creation Manipulation by Using XlsIO
 
 XlsIO provides support for creation and manipulation of Pivot Table by using simple APIs. IPivotCache interface caches the data that needs to be summarized. IPivotTable represents a pivot table in object, and has properties that allow customizing it. IPivotTable interface returns the collection of Pivot Tables present in a worksheet. IPivotField represents the field in the pivot table. This includes row, column, and data field axis. IPivotDataFields gets collection of data field.
 
-> { ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img4.jpeg) | markdownify }
+> {{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: Pivot Table is currently not supported for .xls format._
 
@@ -742,7 +742,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img5.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -889,7 +889,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img6.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1128,7 +1128,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img7.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1240,7 +1240,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img8.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1248,7 +1248,7 @@ excelEngine.Dispose()
 
 Excel provides various options through the PivotTableOptions dialog box to customize the appearance of the pivot table.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img9.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1896,7 +1896,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img10.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -2019,7 +2019,7 @@ Excel 2007 provides set of built-in styles that allow formatting the pivot table
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img11.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -2521,7 +2521,7 @@ PivotChart Creation by Using MS Excel 2010
 
 In Microsoft Excel, the PivotChart can be created by using the PivotChart Option from the Insert menu. Refer to Figure 113: PivotChart Creation.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img12.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -2529,7 +2529,7 @@ By default, MS Excel selects the entire range. However, it is possible to modify
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img13.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -2537,7 +2537,7 @@ Once you select a field, the PivotTable and the PivotChart appear. PivotTable an
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img14.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -2545,7 +2545,7 @@ PivotChart Creation by Using XlsIO
 
 XlsIO provides support for the creation of PivotTables and PivotCharts by using simple code examples. IPivotCache interface caches the data that need to be summarized when filtering. IPivotTable represents a PivotTable in object and has properties that allow customizing it. IPivotTable interface returns the collection of PivotTables that are present in a worksheet. IPivotField represents the field in the PivotTable. This includes row, column, and data field axes. IPivotDataFields get a collection of the data field and once the PivotTable is created, it is required to create a PivotChart by setting the PivotSource property of the IChart interface that references the created PivotTable.
 
-> { ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img15.jpeg) | markdownify }
+> {{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img15.jpeg)' | markdownify }}
 {:.image }
 _Note: PivotTable and PivotChart are currently not supported for .xls format._
 
@@ -2671,7 +2671,7 @@ PivotChart Options
 
 The field buttons of the PivotChart can be displayed or hidden by selecting PivotChart Tools->Analyze->Field Buttons. XlsIO provides an equivalent API to perform simple properties as follows:
 
-> { ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img16.jpeg) | markdownify }
+> {{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img16.jpeg)' | markdownify }}
 {:.image }
 _Note: These properties are exclusive for Excel 2010._
 
@@ -2857,7 +2857,7 @@ Sample Link
 
  To understand this process, consider the sample project: \EssentialStudio\*.*.*.* \Windows\XlsIO.Windows\Samples\2.0\Business Intelligence\Pivot Chart. 
 
-> { ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img17.jpeg) | markdownify }
+> {{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img17.jpeg)' | markdownify }}
 {:.image }
 _Note: It is mandatory to have Essential XlsIO installed. MS Excel is not required._
 

@@ -41,7 +41,7 @@ printPreviewDialog1.ShowDialog()
 
 
 
-{ ![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg) | markdownify }
+{{ '![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -113,7 +113,7 @@ Setting GrayScale print mode for the chart lets you print the chart in a gray sc
 
 
 
-{ ![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img2.jpeg) | markdownify }
+{{ '![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img2.jpeg)' | markdownify }}
 {:.image }
 
 

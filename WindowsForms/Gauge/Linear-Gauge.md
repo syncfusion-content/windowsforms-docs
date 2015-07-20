@@ -96,12 +96,12 @@ Gets or sets the value indicator color of the gauge.</td></tr>
 </table>
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img1.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img1.png)' | markdownify }}
 {:.image }
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img2.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -255,19 +255,19 @@ this.linearGauge1.PointerPlacement = Placement.Center;
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img3.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img4.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img5.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -359,7 +359,7 @@ Me.linearGauge1.Ranges.Add(range1)
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img6.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -457,25 +457,25 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img7.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img7.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img8.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img8.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img9.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img9.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Linear-Gauge_images/Linear-Gauge_img10.png) | markdownify }
+{{ '![](Linear-Gauge_images/Linear-Gauge_img10.png)' | markdownify }}
 {:.image }
 
 

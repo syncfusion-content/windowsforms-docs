@@ -80,7 +80,7 @@ CalcEngine.Calculate is the method that actually performs calculations. It does 
 * It accepts a parsed formula 
 * Uses a stack oriented calculation technique to convert the parsed formula into the value that it represents. 
 > 
-{ ![](Inside-CalcEngine_images/Inside-CalcEngine_img1.jpeg) | markdownify }
+{{ '![](Inside-CalcEngine_images/Inside-CalcEngine_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: The value returned is a string holding the computed quantity._
 
@@ -242,13 +242,13 @@ engine.UseDatesInCalculations = True
 
 The following screenshot displays the calculation when UseDatesInCalculations propertyis set to “False”.
 
-{ ![C:/Users/labuser/Desktop/b.png](Inside-CalcEngine_images/Inside-CalcEngine_img2.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/b.png](Inside-CalcEngine_images/Inside-CalcEngine_img2.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot shows a Grid when UseDatesInCalculations propertyis set to “True”.
 
-{ ![C:/Users/labuser/Desktop/c.png](Inside-CalcEngine_images/Inside-CalcEngine_img3.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/c.png](Inside-CalcEngine_images/Inside-CalcEngine_img3.png)' | markdownify }}
 {:.image }
 
 

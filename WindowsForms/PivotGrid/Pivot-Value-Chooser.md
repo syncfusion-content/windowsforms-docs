@@ -19,7 +19,7 @@ This feature enables you to show or hide particular pivot calculations in the Pi
 
 
 
-{ ![](Pivot-Value-Chooser_images/Pivot-Value-Chooser_img1.png) | markdownify }
+{{ '![](Pivot-Value-Chooser_images/Pivot-Value-Chooser_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ ObservableCollectionOf type PivotComputationInfo</td></tr>
 
 You can show or hide the Pivot Value Chooser by setting the ShowPivotValueChooser property to ‘true’ or ‘false’, respectively. The RowPivotsOnly mode is enabled in the Pivot Grid for this feature.
 
-> { ![C:/Users/labuser/Desktop/note.jpg](Pivot-Value-Chooser_images/Pivot-Value-Chooser_img2.jpeg) | markdownify }
+> {{ '![C:/Users/labuser/Desktop/note.jpg](Pivot-Value-Chooser_images/Pivot-Value-Chooser_img2.jpeg)' | markdownify }}
 {:.image }
 _Note:__PossiblePivotCalculations__is a collection where you can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection is automatically generated from the PivotGrid control’s__ItemSource._
 

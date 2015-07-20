@@ -700,7 +700,7 @@ This sample illustrates the different events executed by the HTMLUI control.
 
 
 
-{ ![](Control-Events_images/Control-Events_img1.jpeg) | markdownify }
+{{ '![](Control-Events_images/Control-Events_img1.jpeg)' | markdownify }}
 {:.image }
 
 

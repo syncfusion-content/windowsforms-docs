@@ -13,7 +13,7 @@ This sections details the HTML tags supported by HTMLUI. Most of the tags confor
 
 ## A - Anchor Tag
 
-The Anchor tag is used for creating links to other files or in creating bookmarks. This tag ends with &lt;/A&gt;. It includes the following attributes.
+The Anchor tag is used for creating links to other files or in creating bookmarks. This tag ends with </A>. It includes the following attributes.
 
 
 
@@ -30,7 +30,7 @@ The following example illustrates how the Anchor tag is rendered in HTMLUI.
 
 
 
-string htmlCode="&lt;html&gt;&lt;head&gt;<title>A Tag support</title>&lt;/head&gt;&lt;body&gt;<A href="link.htm">Link</A>&lt;/body&gt;&lt;/html&gt;";
+string htmlCode="<html><head><title>A Tag support</title></head><body><A href="link.htm">Link</A></body></html>";
 
 this.htmluiControl1.LoadFromString(htmlCode);
 
@@ -40,7 +40,7 @@ this.htmluiControl1.LoadFromString(htmlCode);
 
 
 
-Private htmlCode As String = "&lt;html&gt;&lt;head&gt;<title>A Tag support</title>&lt;/head&gt;&lt;body&gt;<A href="link.htm">Link</A>&lt;/body&gt;&lt;/html&gt;"
+Private htmlCode As String = "<html><head><title>A Tag support</title></head><body><A href="link.htm">Link</A></body></html>"
 
 Me.HtmluiControl1.LoadFromString(htmlCode)
 
@@ -48,7 +48,7 @@ Me.HtmluiControl1.LoadFromString(htmlCode)
 
 ## ABBR - Abbreviation Tag
 
-The Abbreviation tag is used to indicate the abbreviated forms of long and important texts. The title attribute is used to display a tooltip text when the cursor is moved over the abbreviated text. The support for &lt;abbr&gt; tag is shown in the following code snippet.
+The Abbreviation tag is used to indicate the abbreviated forms of long and important texts. The title attribute is used to display a tooltip text when the cursor is moved over the abbreviated text. The support for <abbr> tag is shown in the following code snippet.
 
 
 
@@ -60,15 +60,15 @@ File Location and Name:  C:\MyProjects\Anchor\abbr.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
 <abbr title="United Nations">UN</abbr>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -104,15 +104,15 @@ File Location and Name:  C:\MyProjects\Acronym\acronym.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
 <abbr title="World Wide Web">WWW</abbr>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -146,17 +146,17 @@ File Location and Name:  C:\MyProjects\Comment\comment.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;!-- This is a HTML comment --&gt;
+<!-- This is a HTML comment -->
 
 <p>HTMLUI supports HTML commenting</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -182,12 +182,12 @@ The Font Style tags are used to format the appearance of the specified text when
 
 
 
-* &lt;b&gt;: Bold tag renders the text in bold face
-* &lt;i&gt;: Italics tag renders italicized text
-* &lt;u&gt;:Underline tag renders underlined text
-* &lt;em&gt;:Emphasizing Text tag highlights important text in the document
-* &lt;strong&gt;:Strong tag renders specified text in bold face
-* &lt;code&gt;:Code tag renders specified text similar to computer coded text
+* <b>: Bold tag renders the text in bold face
+* <i>: Italics tag renders italicized text
+* <u>:Underline tag renders underlined text
+* <em>:Emphasizing Text tag highlights important text in the document
+* <strong>:Strong tag renders specified text in bold face
+* <code>:Code tag renders specified text similar to computer coded text
 
 
 
@@ -199,25 +199,25 @@ File Location and Name:  C:\MyProjects\FontStyle\fontStyle.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-<b>Bold text</b>&lt;br/&gt;
+<b>Bold text</b><br/>
 
-<i>Italic text</i>&lt;br/&gt;
+<i>Italic text</i><br/>
 
-<u>Underlined text</u>&lt;br/&gt;
+<u>Underlined text</u><br/>
 
-<em>Emphasized Text</em>&lt;br/&gt;
+<em>Emphasized Text</em><br/>
 
-<strong>Strong Text</strong>&lt;br/&gt;
+<strong>Strong Text</strong><br/>
 
 <code>Computer coded text</code>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -251,15 +251,15 @@ File Location and Name:  C:\MyProjects\body\bodyTag.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body bgcolor="#ffffff"&gt; 
+<body bgcolor="#ffffff"> 
 
-<p>Body tag holds the contents to be displayed in the browser.&lt;/p&gt;
+<p>Body tag holds the contents to be displayed in the browser.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -293,15 +293,15 @@ File Location and Name:  C:\MyProjects\break\br.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt; 
+<body> 
 
-<p>This is the first line.&lt;/p&gt;&lt;br/&gt;<p>This is the next line</p>
+<p>This is the first line.</p><br/><p>This is the next line</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -340,9 +340,9 @@ File Location and Name:  C:\MyProjects\divide\div.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
 <div align="left">Essential Studio</div>
 
@@ -352,9 +352,9 @@ File Location and Name:  C:\MyProjects\divide\div.html
 
 <div align="justify">HTMLUI</div>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -388,25 +388,25 @@ File Location and Name:  C:\MyProjects\UserInput\form.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;form&gt;
+<form>
 
-&lt;input type="text"/&gt;&lt;br/&gt;
+<input type="text"/><br/>
 
-&lt;input type="submit"/&gt;&lt;br/&gt;
+<input type="submit"/><br/>
 
-&lt;input type="radio"/&gt;&lt;br/&gt;
+<input type="radio"/><br/>
 
-&lt;input type="checkbox"/&gt;&lt;br/&gt;
+<input type="checkbox"/><br/>
 
-&lt;/form&gt;
+</form>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -446,25 +446,25 @@ File Location and Name:  C:\MyProjects\heading\head.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;link href=”style.css” rel=”stylesheet” type=”text/css”&gt;
+<link href=”style.css” rel=”stylesheet” type=”text/css”>
 
-<style>p{“background-color:#dae5f5;”}&lt;/style&gt;
+<style>p{“background-color:#dae5f5;”}</style>
 
 <title>Head section</title>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
 <p>The head contains the title for the document</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -498,25 +498,25 @@ File Location and Name:  C:\MyProjects\header\h.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-<h1 align="center">Header 1</h1>&lt;br/&gt;
+<h1 align="center">Header 1</h1><br/>
 
-<h2 align="left">Header 2</h2>&lt;br/&gt;
+<h2 align="left">Header 2</h2><br/>
 
-<h3 align="justify">Header 3</h3>&lt;br/&gt;
+<h3 align="justify">Header 3</h3><br/>
 
-<h4 align="right">Header 4</h4>&lt;br/&gt;
+<h4 align="right">Header 4</h4><br/>
 
-<h5>Header 5</h5>&lt;br/&gt;
+<h5>Header 5</h5><br/>
 
-<h6>Header 6</h6>&lt;br/&gt;
+<h6>Header 6</h6><br/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -538,7 +538,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\header\h.html")
 
 ## HR - Horizontal Rule Tag
 
-The Horizontal Rule tag is used to draw an horizontal line in the document. The &lt;hr&gt; tag in HTMLUI supports the following attributes.
+The Horizontal Rule tag is used to draw an horizontal line in the document. The <hr> tag in HTMLUI supports the following attributes.
 
 
 
@@ -556,15 +556,15 @@ File Location and Name:  C:\MyProjects\HorizRule\rule.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-<p>Syncfusion</p>&lt;hr width=100 size=10 noshade /&gt;<p>Essential Studio</p>
+<p>Syncfusion</p><hr width=100 size=10 noshade /><p>Essential Studio</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -598,21 +598,21 @@ File Location and Name:  C:\MyProjects\HTML\htmlElement.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
 <title>New html document</title>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>The HTML tag contains the head and the body elements as its child element.&lt;/p&gt;
+<p>The HTML tag contains the head and the body elements as its child element.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -651,15 +651,15 @@ File Location and Name:  C:\MyProjects\img\imageElement.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;img src="htmlui.jpg" alt="Syncfusion Essential HTMLUI"/&gt;
+<img src="htmlui.jpg" alt="Syncfusion Essential HTMLUI"/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -746,27 +746,27 @@ File Location and Name:  C:\MyProjects\input\input.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;input type="text" value="textbox" size="20" maxlength="5" /&gt;&lt;br/&gt;
+<input type="text" value="textbox" size="20" maxlength="5" /><br/>
 
-&lt;input type="button" value="button element"/&gt;&lt;br/&gt;
+<input type="button" value="button element"/><br/>
 
-&lt;input type="checkbox" value="checkbox" checked/&gt;&lt;br/&gt;
+<input type="checkbox" value="checkbox" checked/><br/>
 
-&lt;input type="password" value="password" size="20"/&gt;&lt;br/&gt;
+<input type="password" value="password" size="20"/><br/>
 
-&lt;input type="radio" value="radio"/&gt;&lt;br/&gt;
+<input type="radio" value="radio"/><br/>
 
-&lt;input type="reset" value="reset"/&gt;&lt;br/&gt;
+<input type="reset" value="reset"/><br/>
 
-&lt;input type="submit" value="submit" size="50"/&gt;&lt;br/&gt;
+<input type="submit" value="submit" size="50"/><br/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -786,7 +786,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\input\input.html")
 
 ## LI - List Item Tag
 
-The List Item tag defines a list item. The &lt;li&gt; tag is used inside the &lt;ol&gt; tag or &lt;ul&gt; tag to define each and every list item included inside them.
+The List Item tag defines a list item. The <li> tag is used inside the <ol> tag or <ul> tag to define each and every list item included inside them.
 
 
 
@@ -798,11 +798,11 @@ File Location and Name:  C:\MyProjects\listItem\li.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;ol&gt;
+<ol>
 
 <li>Essential Tools</li>
 
@@ -810,11 +810,11 @@ File Location and Name:  C:\MyProjects\listItem\li.html
 
 <li>Essential HTMLUI</li>
 
-&lt;/ol&gt;
+</ol>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -854,17 +854,17 @@ File Location and Name:  C:\MyProjects\link\link.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;&lt;link rel="stylesheet" type="text/css" href="background.css"/&gt;&lt;/head&gt;
+<head><link rel="stylesheet" type="text/css" href="background.css"/></head>
 
-&lt;body&gt;
+<body>
 
-<p>The document receives its background color from the external style sheet.&lt;/p&gt;
+<p>The document receives its background color from the external style sheet.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -904,7 +904,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\link\link.html")
 
 ## OL - Ordered List Tag
 
-The Ordered List tag defines the start of an ordered list. The ordered list is numbered in the following scheme as '1, i, I, a, A' based on the requirements of the user. The ordered list contains the &lt;li&gt; items as its child elements. Each &lt;li&gt; element defines a list item. The type attribute is used to choose the required numbering style.
+The Ordered List tag defines the start of an ordered list. The ordered list is numbered in the following scheme as '1, i, I, a, A' based on the requirements of the user. The ordered list contains the <li> items as its child elements. Each <li> element defines a list item. The type attribute is used to choose the required numbering style.
 
 
 
@@ -916,11 +916,11 @@ File Location and Name:  C:\MyProjects\listItem\ol.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;ol type=”i”&gt;
+<ol type=”i”>
 
 <li>Essential Tools</li>
 
@@ -928,11 +928,11 @@ File Location and Name:  C:\MyProjects\listItem\ol.html
 
 <li>Essential HTMLUI</li>
 
-&lt;/ol&gt;
+</ol>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -968,13 +968,13 @@ File Location and Name:  C:\MyProjects\select\option.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-<p>Dear Customer, please choose your option among our following products.&lt;/p&gt;
+<p>Dear Customer, please choose your option among our following products.</p>
 
-&lt;select&gt;
+<select>
 
 <option>Essential Tools</option>
 
@@ -986,11 +986,11 @@ File Location and Name:  C:\MyProjects\select\option.html
 
 <!-- HTMLUI also supports this format, <option selected>Essential HTMLUI</option> -->
 
-&lt;/select&gt;
+</select>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1031,17 +1031,17 @@ File Location and Name:  C:\MyProjects\paragraph\p.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;p align="left"&gt;<b>Essential Studio</b>&lt;/p&gt;
+<p align="left"><b>Essential Studio</b></p>
 
-<p align="justify">Essential Studio contains 10 .NET libraries. It has components ranging from a Grid control to a HTML display control. They are available for both Windows Forms and ASP.NET.&lt;/p&gt;
+<p align="justify">Essential Studio contains 10 .NET libraries. It has components ranging from a Grid control to a HTML display control. They are available for both Windows Forms and ASP.NET.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1067,7 +1067,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html")
 
 ## PRE - Preformatted Tag
 
-The HTMLUI control renders preformatted texts written inside the &lt;pre&gt; tags. These texts are rendered with the fixed-pitch fonts and the control preserves the spaces and the line breaks used in the document.
+The HTMLUI control renders preformatted texts written inside the <pre> tags. These texts are rendered with the fixed-pitch fonts and the control preserves the spaces and the line breaks used in the document.
 
 
 
@@ -1079,21 +1079,21 @@ File Location and Name:  C:\MyProjects\pre\pre.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;pre&gt;
+<pre>
 
 Evaluation Center:
 
 The Evaluation Center has online sample code and complete sample downloads to help you get started quickly.
 
-&lt;/pre&gt;
+</pre>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1129,17 +1129,17 @@ File Location and Name:  C:\MyProjects\scripting\scripting.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;<title>Scripting</title>&lt;/head&gt;
+<head><title>Scripting</title></head>
 
-&lt;body&gt;
+<body>
 
-&lt;P&gt;&lt;input type="button" id="btn"&gt;&lt;/p&gt;
+<P><input type="button" id="btn"></p>
 
-&lt;p&gt;&lt;img id="img" src=""/&gt;&lt;/p&gt;
+<p><img id="img" src=""/></p>
 
-&lt;script language="C#"&gt;
+<script language="C#">
 
 
 
@@ -1211,11 +1211,11 @@ public class Script
 
 }
 
-&lt;/script&gt;&lt;br/&gt;
+</script><br/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1238,17 +1238,17 @@ File Location and Name:  C:\MyProjects\select\select.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;p&gt;
+<p>
 
 Essential Studio includes ten component libraries in one great package. Each of these products has a unique and useful feature set.
 
-&lt;/p&gt;
+</p>
 
-&lt;select size="2"&gt;
+<select size="2">
 
   <option>Essential Tools</option>
 
@@ -1258,11 +1258,11 @@ Essential Studio includes ten component libraries in one great package. Each of 
 
   <option>Essential HTMLUI</option>
 
-&lt;/select&gt;
+</select>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1296,15 +1296,15 @@ File Location and Name: C:\MyProjects\span\span.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-<p>100% .NET HTML display engine that can be used to create extremely flexible user interfaces. Part of <span style="color:#0000FF;">Essential Studio</span> Enterprise.&lt;/p&gt; 
+<p>100% .NET HTML display engine that can be used to create extremely flexible user interfaces. Part of <span style="color:#0000FF;">Essential Studio</span> Enterprise.</p> 
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1340,7 +1340,7 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
 
 
-<style>p {color: red}&lt;/style&gt;
+<style>p {color: red}</style>
 
 <p>Sample</p>
 
@@ -1354,7 +1354,7 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
 
 
-&lt;style&gt;.span {color: green}&lt;/style&gt;
+<style>.span {color: green}</style>
 
 <span class=”span”>Sample</span>
 
@@ -1368,7 +1368,7 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
 
 
-&lt;style&gt;#divide {color: blue}&lt;/style&gt;
+<style>#divide {color: blue}</style>
 
 <div id=”divide”>Sample</span>
 
@@ -1386,11 +1386,11 @@ File Location and Name:  C:\MyProjects\style\style.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 p {color: red}
 
@@ -1398,21 +1398,21 @@ p {color: red}
 
 #bluebg { background-color: #dae5f5; background-repeat: repeat-x;}
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body id="bluebg"&gt;
+<body id="bluebg">
 
 <p>100% .NET HTML display engine that can be used to create 
 
 extremely flexible user interfaces. Part of <span 
 
-class="span">Essential Studio</span> Enterprise.&lt;/p&gt; 
+class="span">Essential Studio</span> Enterprise.</p> 
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1446,23 +1446,23 @@ File Location and Name:  C:\MyProjects\sub\sub.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
 Water - H<sub>2</sub>O<br/>
 
-Sulphuric Acid - H<sub>2</sub>SO<sub>4</sub>&lt;br/&gt;
+Sulphuric Acid - H<sub>2</sub>SO<sub>4</sub><br/>
 
 Carbon-di-Oxide - CO<sub>2</sub>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1496,27 +1496,27 @@ File Location and Name:  C:\MyProjects\sup\sup.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-Pythagoras theorem:&lt;br/&gt;
+Pythagoras theorem:<br/>
 
-In a right angled triangle,&lt;br/&gt;
+In a right angled triangle,<br/>
 
-&lt;code&gt;
+<code>
 
 hypotenuse<sup>2</sup> = opposite<sup>2</sup> + adjacent<sup>2</sup>
 
-&lt;/code&gt;
+</code>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1542,7 +1542,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\sup\sup.html")
 
 ## TABLE - Table Tag
 
-A Table tag defines a table in an HTML document. The table tag uses the &lt;tr&gt; tag to define a row and a &lt;td&gt; tag to define a cell element. The HTMLUI control supports the table with the following attributes that helps the rendering and display of complex html pages in the control easily.
+A Table tag defines a table in an HTML document. The table tag uses the <tr> tag to define a row and a <td> tag to define a cell element. The HTMLUI control supports the table with the following attributes that helps the rendering and display of complex html pages in the control easily.
 
 
 
@@ -1559,23 +1559,23 @@ File Location and Name:  C:\MyProjects\table\table.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;table bgcolor="#dae5f5" border="1"&gt;
+<table bgcolor="#dae5f5" border="1">
 
-&lt;tr&gt;
+<tr>
 
 <td>Sample</td><td>Sample</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;/table&gt;
+</table>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1597,7 +1597,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\table.html")
 
 ## TD - Table Cell Tag
 
-The Table Cell tag defines a cell inside a table. The &lt;td&gt; tag has a parent &lt;tr&gt; tag to define the row and a &lt;table&gt; tag to define the table in which it is present. The td tag in HTMLUI supports the following attributes that help the user in designing custom structures for their documents easily.
+The Table Cell tag defines a cell inside a table. The <td> tag has a parent <tr> tag to define the row and a <table> tag to define the table in which it is present. The td tag in HTMLUI supports the following attributes that help the user in designing custom structures for their documents easily.
 
 
 
@@ -1620,69 +1620,69 @@ File Location and Name:  C:\MyProjects\table\td.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;table border = "1"&gt;
+<table border = "1">
 
-&lt;tr&gt;
+<tr>
 
 <td >Sample</td>
 
 <td align="center">Text Aligned Cell</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td bgcolor="Blue">bgcolor cell</td>
 
 <td >Cell</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td colspan=2>Colspan cell</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td height="50">Custom height cell</td>
 
 <td nowrap>nowrap cell</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td rowspan=2>Rowspan cell</td>
 
 <td valign="bottom" height="80">V align cell</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td width="300">custom width cell</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
-
-<td>Cell</td>
+<tr>
 
 <td>Cell</td>
 
-&lt;/tr&gt;
+<td>Cell</td>
 
-&lt;/table&gt;
+</tr>
 
-&lt;/body&gt;
+</table>
 
-&lt;/html&gt;
+</body>
+
+</html>
 
 
 
@@ -1704,7 +1704,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\td.html")
 
 ## TEXTAREA - Text Area Tag
 
-The Text Area tag is used to define a multiline text box. The HTMLUI control supports the following attributes with the &lt;textarea&gt; tag for receiving inputs from the user effectively.
+The Text Area tag is used to define a multiline text box. The HTMLUI control supports the following attributes with the <textarea> tag for receiving inputs from the user effectively.
 
 * rows: Specifies the number of rows for the text area
 * cols: Specifies the number of columns for the text area
@@ -1719,19 +1719,19 @@ File Location and Name:  C:\MyProjects\textArea\textarea.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;textarea rows="5" cols="20"&gt;
+<textarea rows="5" cols="20">
 
 Essential Studio features "Just-In-Time" source level debugging. Switch between debug and release versions with a single click.
 
-&lt;/textarea&gt;
+</textarea>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1751,7 +1751,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\textArea\textarea.html")
 
 ## TH - Table Header Tag
 
-The Table Header tag is used to define header cells for the cells in a table. The &lt;th&gt; tag renders the text content in the particular cell in a bold face. The &lt;th&gt; tag supports the following attributes:
+The Table Header tag is used to define header cells for the cells in a table. The <th> tag renders the text content in the particular cell in a bold face. The <th> tag supports the following attributes:
 
 
 
@@ -1774,55 +1774,55 @@ File Location and Name:  C:\MyProjects\table\th.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;table border = "1"&gt;
+<table border = "1">
 
-&lt;tr&gt;
+<tr>
 
 <th colspan = 2>Essential Studio</th>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Essential</td>
 
 <td>Tools</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Essential</td>
 
 <td>Grid</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Essential</td>
 
 <td>Chart</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Essential</td>
 
 <td>HTMLUI</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;/table&gt;
+</table>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1844,7 +1844,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\th.html")
 
 ## TITLE - Title Tag
 
-The Title tag is used to enter a title to the document. The &lt;title&gt; tag is displayed in the title bar of in the HTMLUI control, which is present at the top of the control. The title display can be toggled with the help of ShowTitle property of the HTMLUI control. This is a bool property, which when set to true displays the title bar over the control. The title tag is inserted in the head section of the document.
+The Title tag is used to enter a title to the document. The <title> tag is displayed in the title bar of in the HTMLUI control, which is present at the top of the control. The title display can be toggled with the help of ShowTitle property of the HTMLUI control. This is a bool property, which when set to true displays the title bar over the control. The title tag is inserted in the head section of the document.
 
 
 
@@ -1856,25 +1856,25 @@ File Location and Name:  C:\MyProjects\head\title.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;title&gt;
+<title>
 
 Syncfusion Essential HTMLUI
 
-&lt;/title&gt;
+</title>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>100% .NET HTML display engine that can be used to create extremely flexible user interfaces. Part of Essential Studio Enterprise.&lt;/p&gt;
+<p>100% .NET HTML display engine that can be used to create extremely flexible user interfaces. Part of Essential Studio Enterprise.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1906,25 +1906,25 @@ File Location and Name:  C:\MyProjects\table\tr.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;table border = "1"&gt;
+<table border = "1">
 
-&lt;tr align="center"&gt;
+<tr align="center">
 
 <td>Syncfusion</td>
 
 <td>Essential Studio</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;/table&gt;
+</table>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1946,7 +1946,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\tr.html")
 
 ## UL - UnOrdered List Tag
 
-The UnOrdered List tag defines the start of a bulleted list. HTMLUI supports the bullets of the following shapes: Circle, Square and Disc. The unordered list contains the &lt;li&gt; items as its child elements. Each &lt;li&gt; element define a list item. The type attribute is used to choose the required bulleting style.
+The UnOrdered List tag defines the start of a bulleted list. HTMLUI supports the bullets of the following shapes: Circle, Square and Disc. The unordered list contains the <li> items as its child elements. Each <li> element define a list item. The type attribute is used to choose the required bulleting style.
 
 
 
@@ -1958,11 +1958,11 @@ File Location and Name:  C:\MyProjects\listItem\ul.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;ul type="disc"&gt;
+<ul type="disc">
 
 <li>Essential Tools</li>
 
@@ -1970,11 +1970,11 @@ File Location and Name:  C:\MyProjects\listItem\ul.html
 
 <li>Essential HTMLUI</li>
 
-&lt;/ul&gt;
+</ul>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -2000,7 +2000,7 @@ This sample shows the various Tags supported in HTMLUI.
 
 
 
-{ ![](HTML-Tags_images/HTML-Tags_img1.jpeg) | markdownify }
+{{ '![](HTML-Tags_images/HTML-Tags_img1.jpeg)' | markdownify }}
 {:.image }
 
 

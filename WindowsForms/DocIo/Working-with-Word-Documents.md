@@ -337,7 +337,7 @@ Updates Paragraph Count, Word Count, and Character Count.</td></tr>
 
 By using Essential DocIO, you can create a copy of a whole Word document or a particular entity (such as WSection, WParagraph, WTable, WTextRange, etc.) by invoking the Clone method of the Entity. This method returns the shallow copy of the Entity that invoked the Clone method. By using this functionality, you can copy the whole document or part of its content along with its formatting from one document and add it to another document.
 
-> { ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img1.jpeg) | markdownify }
+> {{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document._
 
@@ -391,7 +391,7 @@ This section provides information about how to restrict anonymous users from vie
 
 You can use the EncryptDocument method to protect a Word document with a password, and restrict anonymous users from viewing or accessing the content of the document. A password for encrypting a Word document is set in Microsoft Word through the Protect Document tab in the File menu.
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img2.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -409,7 +409,7 @@ The following code example illustrates how to encrypt and decrypt a Word documen
 <td>
 [VB.NET]'Encrypts the Word document with a password.document.EncryptDocument(password)'Opens the encrypted Word document.Dim document As New WordDocument(filename, password)</td></tr>
 </table>
-> { ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img3.jpeg) | markdownify }
+> {{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform._
 
@@ -417,7 +417,7 @@ _Note: Essential DocIO does not support encryption and decryption techniques of 
 
 Essential DocIO provides support to restrict a Word document from editing. All the users can view the contents of the document, but editing is restricted based on the contents. In Microsoft Word, a document is protected through the Restrict Editing option in the Review menu.
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img4.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -451,7 +451,7 @@ Document Properties contain general information about the document such as autho
 
 To view or edit the document properties, go to File menu and click Properties in Microsoft Word. The Document Properties dialog box appears as follows.
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img5.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -561,7 +561,7 @@ The following code example illustrates how to get, set, and modify Document Prop
 
 CustomDocumentProperties class enables you to create and save your own custom properties. It contains a collection of DocumentProperty instances. You can access a document property by indexing, that is, by specifying the property name or index.
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img6.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -692,7 +692,7 @@ To set the background effects in a Microsoft Word document, open the Design menu
 
 
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img7.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -708,7 +708,7 @@ Background class represents the background color and fill effects in a Word docu
 * Texture: Insert a picture as the.
 * Color: Color fill effect.
 > 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img8.jpeg) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img8.jpeg)' | markdownify }}
 {:.image }
 _Note: Pattern fill effect is currently not supported by Essential DocIO._
 
@@ -744,7 +744,7 @@ Specifies the type of the background effect for a document.</td></tr>
 </table>
 
 
-> { ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img9.jpeg) | markdownify }
+> {{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img9.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details on BackgroundGradient class, refer to the_ BackgroundGradient _topic._
 
@@ -766,7 +766,7 @@ Background Gradient class represents the background gradient fill effect in the 
 
 The following screenshot shows the Fill Effects dialog box that appears.
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img10.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -884,7 +884,7 @@ Gets or sets the watermark type such as picture or text or none.</td></tr>
 
 TextWatermark class represents text watermarks in a Word document. The following screenshot illustrates the Text Watermark settings.
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img11.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -993,7 +993,7 @@ The following code example illustrates how to use the TextWatermark class.
 
 PictureWatermark class represents picture watermarks in a Word document.
 
-{ ![](Working-with-Word-Documents_images/Working-with-Word-Documents_img12.png) | markdownify }
+{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -1057,7 +1057,7 @@ Gets or sets picture scaling (in percent).</td></tr>
 <tr>
 <td>
 Washout</td><td>
-Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{ '_true_' | markdownify }}.</td></tr>
+Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{{ ''_true_'' | markdownify }}}.</td></tr>
 </table>
 
 

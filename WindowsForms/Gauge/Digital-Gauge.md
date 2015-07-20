@@ -75,7 +75,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img1.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -94,7 +94,7 @@ this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue;
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img2.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -113,7 +113,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silve
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img3.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -131,7 +131,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img4.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -184,7 +184,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img5.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -206,7 +206,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img6.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -228,7 +228,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img7.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -252,7 +252,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img8.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -277,7 +277,7 @@ Me.digitalGauge1.Value = 123456
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img9.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -306,7 +306,7 @@ Me.digitalGauge1.Value = 123456
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img10.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -328,7 +328,7 @@ this.digitalGauge1.ShowInvisibleSegments = true;
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img11.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -350,7 +350,7 @@ Me.digitalGauge1.RoundCornerRadius = 50
 
 
 
-{ ![](Digital-Gauge_images/Digital-Gauge_img12.png) | markdownify }
+{{ '![](Digital-Gauge_images/Digital-Gauge_img12.png)' | markdownify }}
 {:.image }
 
 

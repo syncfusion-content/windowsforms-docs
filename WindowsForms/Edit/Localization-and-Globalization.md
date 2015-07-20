@@ -15,7 +15,7 @@ The following images shows how the Find dialog in Edit Control is localized to F
 
 
 
-{ ![](Localization-and-Globalization_images/Localization-and-Globalization_img1.jpeg) | markdownify }
+{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23,7 +23,7 @@ _Figure_ _80__: Find dialog localized to French_
 
 
 
-{ ![](Localization-and-Globalization_images/Localization-and-Globalization_img2.jpeg) | markdownify }
+{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67,7 +67,7 @@ For example, the following figure shows the Syncfusion.Windows.Forms.Edit.Dialog
 
 
 
-{ ![](Localization-and-Globalization_images/Localization-and-Globalization_img3.jpeg) | markdownify }
+{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -127,7 +127,7 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalizatio
 
 
 
-{ ![](Localization-and-Globalization_images/Localization-and-Globalization_img4.jpeg) | markdownify }
+{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img4.jpeg)' | markdownify }}
 {:.image }
 
 

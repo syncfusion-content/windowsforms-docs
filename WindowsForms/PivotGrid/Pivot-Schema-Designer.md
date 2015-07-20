@@ -16,7 +16,7 @@ The pivot schema designer for Windows Forms can be supported in PivotGrid sample
 
 
 
-{ ![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img1.png) | markdownify }
+{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ Report Filter
 
 The report filter is used to filter the entire report based on the selected item in the report filter. The report filter pop-up window can be launched by clicking on the expander icon available in the right corner of each filter item.
 
-{ ![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img2.png) | markdownify }
+{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ Pivot Computation Information window
 
 The Pivot Computation Information window is used to change or edit value format and summary type.
 
-{ ![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img3.png) | markdownify }
+{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -101,7 +101,7 @@ Boolean</td><td>
 
 Sample Link
 
-&lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Product ShowCase\Pivot Customization Demo
+<InstalledLocation>\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Product ShowCase\Pivot Customization Demo
 
 
 
@@ -121,7 +121,7 @@ this.pivotGridControl1.ShowPivotTableFieldList = true;
 
 
 
-{ ![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img4.png) | markdownify }
+{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img4.png)' | markdownify }}
 {:.image }
 
 

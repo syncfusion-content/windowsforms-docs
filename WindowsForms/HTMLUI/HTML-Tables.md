@@ -17,19 +17,19 @@ HTMLUI has a rich table support that lets the user to decide the table's dimensi
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;table&gt;
+<table>
 
-&lt;tr&gt;<td>Table support in HTMLUI</td>&lt;/tr&gt;
+<tr><td>Table support in HTMLUI</td></tr>
 
-&lt;/table&gt;
+</table>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -41,7 +41,7 @@ This sample illustrates how to implement Tables using HTMLUI.
 
 
 
-{ ![](HTML-Tables_images/HTML-Tables_img1.jpeg) | markdownify }
+{{ '![](HTML-Tables_images/HTML-Tables_img1.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -33,7 +33,7 @@ Benefits
 
 
 
-{ ![](Design-time-Features_images/Design-time-Features_img1.jpeg) | markdownify }
+{{ '![](Design-time-Features_images/Design-time-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ _Figure_ _359__: Saving Template through Context Menu_
 
 
 
-{ ![](Design-time-Features_images/Design-time-Features_img2.jpeg) | markdownify }
+{{ '![](Design-time-Features_images/Design-time-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -136,7 +136,7 @@ The tasks window has sufficient properties exposed in the right manner for users
 
 
 
-{ ![](Design-time-Features_images/Design-time-Features_img3.jpeg) | markdownify }
+{{ '![](Design-time-Features_images/Design-time-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 

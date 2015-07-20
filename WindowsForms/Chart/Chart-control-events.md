@@ -312,7 +312,7 @@ End Sub
 
 
 
-{ ![](Chart-control-events_images/Chart-control-events_img1.jpeg) | markdownify }
+{{ '![](Chart-control-events_images/Chart-control-events_img1.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -111,7 +111,7 @@ shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
 Screenshot:
 
-{ ![](Tooltip-Support_images/Tooltip-Support_img1.png) | markdownify }
+{{ '![](Tooltip-Support_images/Tooltip-Support_img1.png)' | markdownify }}
 {:.image }
 
 

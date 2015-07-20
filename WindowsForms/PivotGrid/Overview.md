@@ -17,7 +17,7 @@ Essential PivotGrid for Windows Forms is a powerful cell-oriented, extensible gr
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Doc Images/PivotGrid WPF/1.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Doc Images/PivotGrid WPF/1.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -70,7 +70,7 @@ Description</td></tr>
 Note</td><td>
 > ![](Overview_images/Overview_img2.jpeg)
 {:.image }
-{{ '_Note:_' | markdownify }}</td><td>
+{{{ ''_Note:_'' | markdownify }}}</td><td>
 Represents important information.</td></tr>
 <tr>
 <td>
@@ -156,21 +156,21 @@ Location</td></tr>
 <tr>
 <td>
 Read Me</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\&lt;version number&gt;\Infrastructure\Read Me\UI_Windows.html</td></tr>
+[drive:]\Program Files\Syncfusion\Essential Studio\<version number>\Infrastructure\Read Me\UI_Windows.html</td></tr>
 <tr>
 <td>
 Release Notes</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\&lt;version number&gt;\Infrastructure\Release Notes\UI.html</td></tr>
+[drive:]\Program Files\Syncfusion\Essential Studio\<version number>\Infrastructure\Release Notes\UI.html</td></tr>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/) | markdownify } (Navigate to the Pivot Grid for Windows Forms User Guide.)![](Overview_images/Overview_img5.jpeg)
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the Pivot Grid for Windows Forms User Guide.)![](Overview_images/Overview_img5.jpeg)
 {:.image }
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{ [http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/) | markdownify }(Navigate to the Windows Forms User Guide. Select Pivot Analysis - Pivot Grid, and then click the Class Reference link found in the upper right section of the page)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select Pivot Analysis - Pivot Grid, and then click the Class Reference link found in the upper right section of the page)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

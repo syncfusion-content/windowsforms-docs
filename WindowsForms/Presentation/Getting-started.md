@@ -19,7 +19,7 @@ In this section, we will seeyou can learn how to create a simple PowerPoint pres
 
 Initially, we will seeyou can learn how to create a slide as follows.like the one below.
 
-{ ![](Getting-started_images/Getting-started_img1.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ textPart.Font.Bold = true;
 
 At this point, the slide created will look like the below one.Refer to the following scrennshot.
 
-{ ![](Getting-started_images/Getting-started_img2.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -143,13 +143,13 @@ textPart.Font.FontSize = 40;
 
 On saving the Presentation at this instance will result with the PowerPoint Presentation with one slide and its contents are like belowfollows. We have completed our first slide in the PowerPoint Presentation.
 
-{ ![](Getting-started_images/Getting-started_img3.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img3.png)' | markdownify }}
 {:.image }
 
 
 Now we are going tothis section demonstrates how to create a bulleted and numbered list in our the second slide as follows.. we will see how to create a slide like the one below 
 
-{ ![](Getting-started_images/Getting-started_img4.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -329,7 +329,7 @@ paragraph.FirstLineIndent = -20;
 
 Now, at this instance the slide will look like the below.Refer to the following screenshot.
 
-{ ![](Getting-started_images/Getting-started_img5.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -403,7 +403,7 @@ paragraph.FirstLineIndent = -20;
 
 On saving the presentation at this instance, the second slide with the list will look like the belowis as follows.
 
-{ ![](Getting-started_images/Getting-started_img6.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -503,7 +503,7 @@ paragraph.FirstLineIndent = -20;
 
 On saving the presentation at this instance, then thisthe slide will looks like the below following screenshotone.
 
-{ ![](Getting-started_images/Getting-started_img7.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -557,7 +557,7 @@ picture = thirdSlide.Shapes.AddPicture(new MemoryStream(image.ImageData), 485, 1
 
 After adding the images into the slide, now the slide will looks like the belowfollowing screenshot. 
 
-{ ![](Getting-started_images/Getting-started_img8.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -617,7 +617,7 @@ chart.ChartTitleArea.Bold = true;
 
 The chart type can beis specified with the help of ChartType property of IOfficeChart interface. 
 
-> { ![](Getting-started_images/Getting-started_img9.jpeg) | markdownify }
+> {{ '![](Getting-started_images/Getting-started_img9.jpeg)' | markdownify }}
 {:.image }
 _Note: 3D charts are not supported in image & PDF conversion._
 
@@ -703,7 +703,7 @@ chart.ChartData.SetValue(7, 4, 30);
 
 After the filling these data, the embedded excel sheet will looks like the belowfollowing screenshot. 
 
-{ ![](Getting-started_images/Getting-started_img10.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -761,7 +761,7 @@ presentation.Close();
 
 Now the chart added in the slide will looks like chart in the below following chartscreenshot.
 
-{ ![](Getting-started_images/Getting-started_img11.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img11.png)' | markdownify }}
 {:.image }
 
 

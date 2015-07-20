@@ -33,7 +33,7 @@ The following code snippets show how to create a PivotGrid and specify cell sele
 </table>
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png)' | markdownify }}
 {:.image }
 
 

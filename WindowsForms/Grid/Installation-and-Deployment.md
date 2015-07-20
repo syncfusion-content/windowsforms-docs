@@ -29,29 +29,29 @@ Sample Installation Location
 
 Grid Windows Forms samples are installed at the following location locally on the disk:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\_
 
 Grid Grouping Windows Forms samples are installed at the following location locally on the disk:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\_
 
 GridDataBound control’ssamples are installed at the following location locally on the disk:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\_
 
 Viewing Samples
 
 To view the samples, follow the steps below:
 
-1. Click Start > All Programs > Syncfusion > Essential Studio &lt;version number&gt; > Dashboard.
+1. Click Start > All Programs > Syncfusion > Essential Studio <version number> > Dashboard.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Form Sample Browser window is displayed.
 > 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the following three ways:_
 
@@ -59,7 +59,7 @@ _Note: You can view the samples in any of the following three ways:_
 * Online Samples - Click to view online samples.
 * Explore Samples - Explore BI Web samples on disk.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -67,19 +67,19 @@ _Note: You can view the samples in any of the following three ways:_
 
 3. To view Grid samples, click Grid at the bottom-left pane.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 
 4. To view Grid grouping samples, click Data Grid at the bottom-left pane.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)' | markdownify }}
 {:.image }
 
 
 5. To view Grid data bound samples, click GridDataBound from the bottom-left pane.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)' | markdownify }}
 {:.image }
 
 

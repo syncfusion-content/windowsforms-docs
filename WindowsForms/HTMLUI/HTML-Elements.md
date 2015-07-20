@@ -158,7 +158,7 @@ UL Element</td><td>
 
 ## A - Anchor Element
 
-The A element is used in creating links to another document or in creating bookmarks within the same document. This element is defined by the &lt;a&gt; tag in the HTML code. The AElementImpl class contains the properties and methods related to this element. Some of the important properties and methods are listed below:
+The A element is used in creating links to another document or in creating bookmarks within the same document. This element is defined by the <a> tag in the HTML code. The AElementImpl class contains the properties and methods related to this element. Some of the important properties and methods are listed below:
 
 
 
@@ -222,7 +222,7 @@ The BODY element forms the main section in the HTMLUI because this element conta
 
 ## BR - Break Element
 
-The BR element is used for inserting a line break after a particular line. This is implemented using the &lt;br&gt; tag in the HTML document. The BRElementImpl class contains the properties and methods for this element's behavior. 
+The BR element is used for inserting a line break after a particular line. This is implemented using the <br> tag in the HTML document. The BRElementImpl class contains the properties and methods for this element's behavior. 
 
 
 
@@ -264,7 +264,7 @@ The CODE element is used in marking the specified text as a computer code, forma
 
 ## CUSTOM Element
 
-The CUSTOM element is used in creating the custom tags as determined by the user. The CUSTOMElementImpl class is responsible for the custom controls declared by the &lt;custom&gt; tag in the HTML document and contains the element's properties and methods.
+The CUSTOM element is used in creating the custom tags as determined by the user. The CUSTOMElementImpl class is responsible for the custom controls declared by the <custom> tag in the HTML document and contains the element's properties and methods.
 
 ## DIV - Division Element
 
@@ -272,13 +272,13 @@ The DIV element divides the given page into logical sections. The DIVElementImpl
 
 ## EM - Emphasize element
 
-The EM element is responsible for emphasizing a specific text, usually in italics. The HTML code uses the &lt;em&gt; tag to specify this element. The EMElementImpl class specifies the properties and methods to be used while coding this element.
+The EM element is responsible for emphasizing a specific text, usually in italics. The HTML code uses the <em> tag to specify this element. The EMElementImpl class specifies the properties and methods to be used while coding this element.
 
 
 
 ## FONT Element
 
-The FONT element is used for changing the font face, size and color of the specified text. The &lt;font&gt; tag is used to specify the FONT element in the HTML code. The FONTElementImpl class determines the properties and methods used by this element.
+The FONT element is used for changing the font face, size and color of the specified text. The <font> tag is used to specify the FONT element in the HTML code. The FONTElementImpl class determines the properties and methods used by this element.
 
 ## FORM Element
 
@@ -316,7 +316,7 @@ The HEAD element contains information regarding the document like the title of t
 
 ## HTML Element
 
-The HTML element is used to specify that the document is an HTML document. It is mentioned by the &lt;html&gt; tag in the HTML document. The properties and methods of this element are defined in the HTMLElementImpl class.
+The HTML element is used to specify that the document is an HTML document. It is mentioned by the <html> tag in the HTML document. The properties and methods of this element are defined in the HTMLElementImpl class.
 
 ## HR - Horizontal Rule Element
 
@@ -328,7 +328,7 @@ The I element is used in formatting the specified text in italics. The IElementI
 
 ## IMG - Image Element
 
-The IMG element is used in defining and applying an image in the document wherever needed. The &lt;img&gt; tag is used for this. The properties and methods of this element is defined in the IMGElementImpl class.
+The IMG element is used in defining and applying an image in the document wherever needed. The <img> tag is used for this. The properties and methods of this element is defined in the IMGElementImpl class.
 
 
 
@@ -372,7 +372,7 @@ Me.label1.Text =Constants.vbLf & "IMG(Image)" & Me.img.Image.PhysicalDimension.T
 
 ## INPUT Element
 
-The INPUT element is used for getting input from the user. It can be a text box, a button element or a check box which is determined by the type attribute of the &lt;input&gt; tag in the HTML document. The INPUTElementImpl class is used in determining the methods and properties for this element.
+The INPUT element is used for getting input from the user. It can be a text box, a button element or a check box which is determined by the type attribute of the <input> tag in the HTML document. The INPUTElementImpl class is used in determining the methods and properties for this element.
 
 
 
@@ -615,7 +615,7 @@ The STRONG element is used to emphasize the specified text, usually in bold. The
 
 ## STYLE Element
 
-The STYLE element is used to implement custom style in a document. It occurs inside the head section. An external style sheet is linked by using the &lt;link&gt; tag in a HTML document. The StyleElementImpl class is invoked for defining the properties and methods of the style element.
+The STYLE element is used to implement custom style in a document. It occurs inside the head section. An external style sheet is linked by using the <link> tag in a HTML document. The StyleElementImpl class is invoked for defining the properties and methods of the style element.
 
 
 

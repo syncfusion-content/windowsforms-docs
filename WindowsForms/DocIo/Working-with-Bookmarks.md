@@ -18,7 +18,7 @@ The following steps illustrate how to add a bookmark in Word:
 
 
 
-{ ![](Working-with-Bookmarks_images/Working-with-Bookmarks_img1.png) | markdownify }
+{{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -27,7 +27,7 @@ The following steps illustrate how to add a bookmark in Word:
 3. Type the name of the bookmark.
 4. Click Add button.
 > 
-{ ![](Working-with-Bookmarks_images/Working-with-Bookmarks_img2.jpeg) | markdownify }
+{{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words._
 
@@ -119,7 +119,7 @@ DocIO provides support to navigate to bookmarks. For details, see BookmarkNaviga
 
 
 
-> { ![](Working-with-Bookmarks_images/Working-with-Bookmarks_img3.jpeg) | markdownify }
+> {{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: Modification of bookmarks in the Bookmarks Collection causes document corruption._
 
@@ -238,7 +238,7 @@ Inserts the paragraph.</td></tr>
 InsertTextBodyPart</td><td>
 Inserts the body part of the text.</td></tr>
 </table>
-> { ![](Working-with-Bookmarks_images/Working-with-Bookmarks_img4.jpeg) | markdownify }
+> {{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img4.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 
@@ -254,13 +254,13 @@ Due to MS Word’s behavior, you cannot replace the bookmark content, when the b
 
 Case 1
 
-{ ![^E6721B4986F9545EF92693A89BD41D3E477EF62EB5EA1E82CE^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img5.png) | markdownify }
+{{ '![^E6721B4986F9545EF92693A89BD41D3E477EF62EB5EA1E82CE^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img5.png)' | markdownify }}
 {:.image }
 
 
 Case 2
 
-{ ![^808D0403340DCCC6C0D4853B479F46AE75C9328F5BFE21863E^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img6.png) | markdownify }
+{{ '![^808D0403340DCCC6C0D4853B479F46AE75C9328F5BFE21863E^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -304,7 +304,7 @@ You can also preserve the formatting in the template (target) document while ins
 
 WordDocumentPart class contains the collection of sections. WordDocumentPart is usually used with the Bookmark Navigator.
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image133_0.jpg](Working-with-Bookmarks_images/Working-with-Bookmarks_img7.jpeg) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image133_0.jpg](Working-with-Bookmarks_images/Working-with-Bookmarks_img7.jpeg)' | markdownify }}
 {:.image }
 _Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document._
 

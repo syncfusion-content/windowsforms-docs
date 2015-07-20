@@ -137,7 +137,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-{ ![](Map-Points_images/Map-Points_img1.png) | markdownify }
+{{ '![](Map-Points_images/Map-Points_img1.png)' | markdownify }}
 {:.image }
  _Figure 19: Map points_
 

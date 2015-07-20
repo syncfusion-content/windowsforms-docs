@@ -25,7 +25,7 @@ BreakCharacterFormat property is used to set character formatting for the Break 
 
 
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img1.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -239,7 +239,7 @@ WTextRange class represents a piece of text that has separate formatting. You ca
 
 You can also use the AppendText method of the WParagraph class to append text to the paragraph.
 
-> { ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img2.jpeg) | markdownify }
+> {{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: AppendText method appends a new text range to the paragraph with the default character formatting._
 
@@ -506,7 +506,7 @@ Loads image.</td></tr>
 
 The following screenshot illustrates the various layout formats available in Microsoft Word.
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img3.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -658,7 +658,7 @@ The following code example illustrates how to use the WListFormat and list style
 
 A Hyperlink is a colored and underlined text or a graphic that when clicked, directs to a file, or a location in a file, or an HTML page on the World Wide Web, or an HTML page on an Intranet. It includes the path information to another instance. The instance is a target on the same document, a file on the same computer, or a uniform resource locator, giving the location of a Web page halfway around the world. The process is exactly the same in all cases. Some point on the document is turned into an active spot that includes the path information.
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img4.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -979,7 +979,7 @@ The following code example illustrates how to get all the comments from the docu
 
 WSymbol class represents a symbol in the Word document. To insert a symbol, click the Insert menu, and then click Symbol in Microsoft Word.
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img5.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -1059,7 +1059,7 @@ The following code example illustrates how to use the WSymbol class.
 
 Break class represents a break in the Word document. To insert a break, open the PageLayout menu, and click Breaks in Microsoft Word.
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img6.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1073,7 +1073,7 @@ You can use the AppendBreak method of WParagraph to insert a break by using DocI
 
 
 
-> { ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img7.jpeg) | markdownify }
+> {{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img7.jpeg)' | markdownify }}
 {:.image }
 _Note: Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method._
 
@@ -1143,7 +1143,7 @@ The following code example illustrates how to add a break to a paragraph.
 
 By using the WOleObject instance, you can insert content from one program to another. To know what types of content you can insert, click Insert tab, and select Object in the Text group.
 
-> { ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img8.jpeg) | markdownify }
+> {{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img8.jpeg)' | markdownify }}
 {:.image }
 _Note: Only installed programs that support OLE objects appear in the Object dialog box._
 
@@ -1167,7 +1167,7 @@ Objects can be either linked to the program or embedded in the program. Linked O
 
 When you copy information as an embedded instance, the destination file requires more disk space than linking the information. When the file is opened on another computer, the embedded instance can be viewed without having access to the original data. OleLinkType property of WOleObject is used to set the instance type as Embed or Link.
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img9.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1209,7 +1209,7 @@ Essential DocIO provides support for embedding OLE objects in a Word document to
 * When the DisplayAsIcon property is set to true, the OLE instance in the Word document is displayed as an icon.
 * When the DisplayAsIcon property is set to false, the OLE instance in the Word document is displayed as content. This enables the Word document to dynamically update images based on the content present within the OLE instance.
 > 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img10.jpeg) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img10.jpeg)' | markdownify }}
 {:.image }
 _Note: Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance._
 

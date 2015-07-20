@@ -41,7 +41,7 @@ This sample shows how a text can be searched in a document loaded into the HTMLU
 
 
 
-{ ![](Searching_images/Searching_img1.jpeg) | markdownify }
+{{ '![](Searching_images/Searching_img1.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -23,7 +23,7 @@ The below figure shows a chart where the tooltip text for each point shows the c
 
 
 
-{ ![](Hit-Testing_images/Hit-Testing_img1.jpeg) | markdownify }
+{{ '![](Hit-Testing_images/Hit-Testing_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -143,7 +143,7 @@ End Sub
 
 
 
-{ ![](Hit-Testing_images/Hit-Testing_img2.jpeg) | markdownify }
+{{ '![](Hit-Testing_images/Hit-Testing_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -201,7 +201,7 @@ End Sub
 
 
 
-{ ![](Hit-Testing_images/Hit-Testing_img3.jpeg) | markdownify }
+{{ '![](Hit-Testing_images/Hit-Testing_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -259,7 +259,7 @@ End Sub
 
 
 
-{ ![](Hit-Testing_images/Hit-Testing_img4.jpeg) | markdownify }
+{{ '![](Hit-Testing_images/Hit-Testing_img4.jpeg)' | markdownify }}
 {:.image }
 
 

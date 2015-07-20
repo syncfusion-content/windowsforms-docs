@@ -100,7 +100,7 @@ End Sub
 
 
 
-{ ![](Connectors-or-Links_images/Connectors-or-Links_img1.jpeg) | markdownify }
+{{ '![](Connectors-or-Links_images/Connectors-or-Links_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -184,7 +184,7 @@ End Sub
 
 
 
-{ ![](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg) | markdownify }
+{{ '![](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -257,7 +257,7 @@ diagram1.Model.AppendChild(orthogonal)
 
 
 
-{ ![](Connectors-or-Links_images/Connectors-or-Links_img3.png) | markdownify }
+{{ '![](Connectors-or-Links_images/Connectors-or-Links_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -291,7 +291,7 @@ diagram1.Controller.ActivateTool("OrgLineConnectorTool")
 
 
 
-{ ![](Connectors-or-Links_images/Connectors-or-Links_img4.png) | markdownify }
+{{ '![](Connectors-or-Links_images/Connectors-or-Links_img4.png)' | markdownify }}
 {:.image }
 
 

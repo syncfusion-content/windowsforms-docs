@@ -569,7 +569,7 @@ task1.IsSummary = True
 
 The summary task created using the above code will look like as shown below when viewed in Microsoft Project.
 
-{ ![](Task_images/Task_img1.jpeg) | markdownify }
+{{ '![](Task_images/Task_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -721,7 +721,7 @@ P.Save("ProjectWithTasks.xml")
 
 The project file created using above code will look as shown in the following screenshot.
 
-{ ![](Task_images/Task_img2.jpeg) | markdownify }
+{{ '![](Task_images/Task_img2.jpeg)' | markdownify }}
 {:.image }
 
 

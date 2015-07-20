@@ -22,7 +22,7 @@ The Edit control provides support to include a built-in status bar at the bottom
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_76.png](Status-Bar_images/Status-Bar_img1.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_76.png](Status-Bar_images/Status-Bar_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -103,7 +103,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_77.png](Status-Bar_images/Status-Bar_img2.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_77.png](Status-Bar_images/Status-Bar_img2.png)' | markdownify }}
 {:.image }
 
 

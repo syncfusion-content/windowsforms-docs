@@ -31,31 +31,31 @@ Description</td></tr>
 <tr>
 <td>
 AllowChangeHeight </td><td>
-Specifies whether or not to allow the height to be changed. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the height to be changed. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 AllowChangeWidth </td><td>
-Specifies whether or not to allow the width to be changed. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the width to be changed. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 AllowDelete  </td><td>
-Specifies whether or not to allow the node to be deleted on clicking the DELETE key. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the node to be deleted on clicking the DELETE key. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 AllowMoveX</td><td>
-Specifies whether or not to allow the node to be moved along the x-axis. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the node to be moved along the x-axis. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 AllowMoveY</td><td>
-Specifies whether or not to allow the node to be moved along the y-axis. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the node to be moved along the y-axis. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 AllowRotate</td><td>
-Specifies whether or not to rotate the node using the PinPoint. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to rotate the node using the PinPoint. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 AllowSelect</td><td>
-Specifies whether or not to select the node on mouse click. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to select the node on mouse click. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 </table>
 
 
@@ -127,19 +127,19 @@ Specifies the mode in which the node should be handled. The default value for li
 <tr>
 <td>
 Enabled</td><td>
-Specifies whether the node is enabled. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether the node is enabled. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 AllowVertexEdit</td><td>
-Specifies whether or not to edit the vertex. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to edit the vertex. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 HidePinPoint</td><td>
-Specifies whether to show or hide the PinPoint. Default value is {{ '_False_' | markdownify }}.</td></tr>
+Specifies whether to show or hide the PinPoint. Default value is {{{ ''_False_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 HideRotationHandle</td><td>
-Specifies whether to show or hide the RotationHandle in order to control the rotation of the node. Default value is {{ '_False_' | markdownify }}.</td></tr>
+Specifies whether to show or hide the RotationHandle in order to control the rotation of the node. Default value is {{{ ''_False_'' | markdownify }}}.</td></tr>
 </table>
 
 
@@ -191,23 +191,23 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img1.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img2.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img3.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img4.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -267,7 +267,7 @@ Sample diagram is as follows:
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img5.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -283,7 +283,7 @@ Custom ports can be defined at any position of the diagram node, thus allowing t
 
 
 
-> { ![](Advanced-Features_images/Advanced-Features_img6.jpeg) | markdownify }
+> {{ '![](Advanced-Features_images/Advanced-Features_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: When a link is drawn to a node or another link and when the EnableCentralPort is set to True, the links cannot be connected to the custom port. Hence make sure to disable that property for the links and the nodes to connect the links to the custom ports._
 
@@ -337,7 +337,7 @@ Sample diagram is as follows.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img7.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -388,7 +388,7 @@ Sample diagram is as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img8.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -450,7 +450,7 @@ cp.ConnectionsLimit = 12
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img9.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -464,7 +464,7 @@ Sample diagram  is as follows:
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img10.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -514,7 +514,7 @@ The following image illustrates the above settings.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img11.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -524,7 +524,7 @@ This property inturn has customization properties to set the style for the Conne
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img12.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -562,7 +562,7 @@ The below images illustrates the above settings.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img13.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -638,7 +638,7 @@ Sample diagram is as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img14.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -648,7 +648,7 @@ _Figure_ _105_: BottomLeft ConnectionPoint_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img15.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -658,7 +658,7 @@ _Figure_ _106_: TopCenter ConnectionPoint_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img16.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -668,7 +668,7 @@ _Figure_ _107_: MiddleRight ConnectionPoint_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img17.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -714,7 +714,7 @@ rect1.Ports.Add(port)
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img18.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -790,7 +790,7 @@ Layers are transparent sheets that can be added to the model and the objects are
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img19.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -924,7 +924,7 @@ sp.Layers.Add(layer3)
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img20.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1060,7 +1060,7 @@ Sample diagram is as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img21.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1180,7 +1180,7 @@ Sample diagram is as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img22.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1262,7 +1262,7 @@ Sample diagram is as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img23.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1422,7 +1422,7 @@ foreach (Node node in Diagram1.Model.Nodes)
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img24.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1462,13 +1462,13 @@ group.GroupNodePosition = GroupNodePositions.Absolute
 
 
 
-{ ![C:/Users/pandimurugana/Desktop/Image.PNG](Advanced-Features_images/Advanced-Features_img25.png) | markdownify }
+{{ '![C:/Users/pandimurugana/Desktop/Image.PNG](Advanced-Features_images/Advanced-Features_img25.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/pandimurugana/Desktop/Image1.PNG](Advanced-Features_images/Advanced-Features_img26.png) | markdownify }
+{{ '![C:/Users/pandimurugana/Desktop/Image1.PNG](Advanced-Features_images/Advanced-Features_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -1548,7 +1548,7 @@ Sample diagram is as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img27.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1620,7 +1620,7 @@ Me.diagram1.HScrollBar.SmallChange = 200
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img28.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1648,7 +1648,7 @@ Me.diagram1.ScrollVirtualBounds = New RectangleF(0, 0, 0, 0)
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img29.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1844,7 +1844,7 @@ Me.diagram1.FillSplitterPane = True
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img30.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -2000,7 +2000,7 @@ Me.diagram1.View.ZoomType = ZoomType.Center
 
 
 
-{ ![C:/Users/amsathm/Desktop/diagram_centerzoom.png](Advanced-Features_images/Advanced-Features_img31.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/diagram_centerzoom.png](Advanced-Features_images/Advanced-Features_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -2028,7 +2028,7 @@ Me.diagram1.View.ZoomType = ZoomType.TopLeft
 
 
 
-{ ![C:/Users/amsathm/Desktop/diagram_leftzoom.png](Advanced-Features_images/Advanced-Features_img32.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/diagram_leftzoom.png](Advanced-Features_images/Advanced-Features_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -2038,7 +2038,7 @@ Essential Diagram supports zooming the diagram document to the pointer position 
 
 
 
-{ ![C:/Users/amsathm/Desktop/diagram_mousezoom.png](Advanced-Features_images/Advanced-Features_img33.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/diagram_mousezoom.png](Advanced-Features_images/Advanced-Features_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -2110,13 +2110,13 @@ zoomTool.ZoomIncrement = 10
 
 
 
-{ ![C:/Users/amsathm/Desktop/IMG_05122012_062203.png](Advanced-Features_images/Advanced-Features_img34.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/IMG_05122012_062203.png](Advanced-Features_images/Advanced-Features_img34.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/amsathm/Desktop/IMG_05122012_062341.png](Advanced-Features_images/Advanced-Features_img35.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/IMG_05122012_062341.png](Advanced-Features_images/Advanced-Features_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -2148,7 +2148,7 @@ Sample diagram is as follows.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img36.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2318,13 +2318,13 @@ Sample diagrams are as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img37.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img37.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img38.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img38.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2460,13 +2460,13 @@ Sample diagrams are as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img39.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img39.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img40.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img40.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2690,7 +2690,7 @@ Sample diagrams are as follows.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img41.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img41.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2700,7 +2700,7 @@ _Figure_ _132_: Origin Initial Stage_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img42.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img42.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2788,7 +2788,7 @@ End Sub
 
 
 
-&lt;EventHandlerPriorityAttribute(True)&gt; _
+<EventHandlerPriorityAttribute(True)> _
 
 Private Sub Form1_MagnificationChanged(ByVal evtArgs As ViewMagnificationEventArgs)
 
@@ -2802,13 +2802,13 @@ Sample diagrams are as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img43.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img43.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img44.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img44.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3084,13 +3084,13 @@ Sample diagrams are as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img45.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img45.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img46.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img46.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3306,13 +3306,13 @@ Sample diagrams are as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img47.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img47.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img48.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img48.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3522,25 +3522,25 @@ Sample diagrams are as follows:
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img49.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img49.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img50.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img50.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img51.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img51.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img52.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img52.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3674,13 +3674,13 @@ Sample diagram are as follows:
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img53.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img53.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img54.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img54.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3818,7 +3818,7 @@ Sample diagram is as follows.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img55.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img55.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3882,7 +3882,7 @@ Sample diagram is as follows.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img56.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img56.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4028,13 +4028,13 @@ Sample diagrams are as follows.
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img57.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img57.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img58.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img58.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4220,7 +4220,7 @@ Sample diagram is as follows,
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img59.jpeg) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img59.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4280,7 +4280,7 @@ The following code illustrates how to enable the default context menu:
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img60.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img60.png)' | markdownify }}
 {:.image }
 
 
@@ -4374,13 +4374,13 @@ paletteGroupBar1.Diagram = diagram1;
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img61.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img61.png)' | markdownify }}
 {:.image }
 
 
 
 
-> { ![](Advanced-Features_images/Advanced-Features_img62.jpeg) | markdownify }
+> {{ '![](Advanced-Features_images/Advanced-Features_img62.jpeg)' | markdownify }}
 {:.image }
 _Note: Click the Diagram page to add the selected node. Click and drag to get the required size._ 
 
@@ -4477,7 +4477,7 @@ Following code example illustrates how to enable preview support:
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img63.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img63.png)' | markdownify }}
 {:.image }
 
 
@@ -4583,7 +4583,7 @@ diagram1.Controller.RotatingStyle = RenderingHelperStyle.DashedOutline
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img64.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img64.png)' | markdownify }}
 {:.image }
 
 
@@ -4621,7 +4621,7 @@ Gets or sets the visual style for Diagram Guides.</td></tr>
 <tr>
 <td>
 Type</td><td>
-Specifies the Guide Type for nodes. The options included are as follows:{{ '_Boundary_' | markdownify }}{{ '_Center_' | markdownify }}{{ '_Margin_' | markdownify }}{{ '_All_' | markdownify }}</td></tr>
+Specifies the Guide Type for nodes. The options included are as follows:{{{ ''_Boundary_'' | markdownify }}}{{{ ''_Center_'' | markdownify }}}{{{ ''_Margin_'' | markdownify }}}{{{ ''_All_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 Margin</td><td>
@@ -4689,7 +4689,7 @@ diagram1.Controller.Guides.Margin = 50
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img65.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img65.png)' | markdownify }}
 {:.image }
 
 
@@ -4743,7 +4743,7 @@ diagram1.TouchMode = True
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img66.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img66.png)' | markdownify }}
 {:.image }
 
 
@@ -4751,7 +4751,7 @@ _Figure_ _156_: Touch Support in Diagram Control_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img67.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img67.png)' | markdownify }}
 {:.image }
 
 
@@ -4813,7 +4813,7 @@ node.PropertyBag.Add("Designation", emply.Designation)
 
 
 
-{ ![C:/Users/amsathm/Desktop/dynamic - Copy.png](Advanced-Features_images/Advanced-Features_img68.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/dynamic - Copy.png](Advanced-Features_images/Advanced-Features_img68.png)' | markdownify }}
 {:.image }
 
 

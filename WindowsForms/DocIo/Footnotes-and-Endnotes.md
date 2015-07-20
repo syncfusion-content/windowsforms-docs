@@ -25,7 +25,7 @@ Following are the steps to add a footnote or endnote to a Word document in Micro
 
 3.   Point to Footnotes and then click Footnotes in the Microsoft Word menu.
 
-{ ![](Footnotes-and-Endnotes_images/Footnotes-and-Endnotes_img1.png) | markdownify }
+{{ '![](Footnotes-and-Endnotes_images/Footnotes-and-Endnotes_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -51,7 +51,7 @@ To view the samples, follow the steps below:
 
 
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard. Essential Studio Enterprise Edition window is displayed.
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. Essential Studio Enterprise Edition window is displayed.
 
 
 
@@ -79,7 +79,7 @@ To view the samples, follow the steps below:
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -89,7 +89,7 @@ To view the samples, follow the steps below:
 
 
 
-> { ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg) | markdownify }
+> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the following three ways:_
 
@@ -111,7 +111,7 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -121,7 +121,7 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -176,7 +176,7 @@ Windows Forms – HTMLUI
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)' | markdownify }}
 {:.image }
  Syncfusion.HTMLUI.Base.dll depends on Syncfusion.MIME.Base.dll. So this needs to be included in the deployment of any application which uses HTMLUI.
 

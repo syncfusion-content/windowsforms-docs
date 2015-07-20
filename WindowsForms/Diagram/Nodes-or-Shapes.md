@@ -83,7 +83,7 @@ End Sub
 
 
 
-{ ![](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg) | markdownify }
+{{ '![](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -193,7 +193,7 @@ End Sub
 
 
 
-{ ![](Nodes-or-Shapes_images/Nodes-or-Shapes_img2.jpeg) | markdownify }
+{{ '![](Nodes-or-Shapes_images/Nodes-or-Shapes_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -251,7 +251,7 @@ End Sub
 
 
 
-{ ![](Nodes-or-Shapes_images/Nodes-or-Shapes_img3.jpeg) | markdownify }
+{{ '![](Nodes-or-Shapes_images/Nodes-or-Shapes_img3.jpeg)' | markdownify }}
 {:.image }
 
 

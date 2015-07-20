@@ -201,7 +201,7 @@ Encryption is a method for protecting a workbook with a password that converts i
 
 A password for encrypting a workbook can be set in MS Excel through File > Info > Protect Workbook option.
 
-{ ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img1.png) | markdownify }
+{{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -211,17 +211,17 @@ There are two different passwords to encrypt a document.
 
 
 
-{ ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img2.png) | markdownify }
+{{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Password to Modify-This password does not encrypt and is only meant to give specific users permission to edit workbook data and save changes to the file.
 
-{ ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img3.png) | markdownify }
+{{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img3.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img4.jpeg) | markdownify }
+> {{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: Password protection of a workbook file is different from the workbook structure and window protection that you can set in the Protect Workbook dialog box._
 
@@ -279,7 +279,7 @@ workbook.ReadOnlyRecommended= true
 
 Now, the encrypted workbook can be saved. Refer to Saving Excel Workbook section for more details. To know more on how to open an encrypted document, refer to Open Encrypted Workbook section.
 
-> { ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img5.jpeg) | markdownify }
+> {{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: Essential XlsIO supports default encryption of the type "Office97-2000 compatible", and does not support weak and strong encryption types._
 

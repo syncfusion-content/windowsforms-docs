@@ -33,11 +33,11 @@ Viewing Samples
 
 To view the samples, follow the steps below:
 
-Click Start All Programs  Syncfusion  Essential Studio &lt;version number&gt;  Dashboard.
+Click Start All Programs  Syncfusion  Essential Studio <version number>  Dashboard.
 
 Essential Studio Enterprise Edition window is displayed.
 
-{ ![C:/Users/rajaduraic/Desktop/ScreenShots/ScreenShots/WF/FirstPage.png](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![C:/Users/rajaduraic/Desktop/ScreenShots/ScreenShots/WF/FirstPage.png](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -53,13 +53,13 @@ You can view the samples in the preceding three ways.
 
 1. Click Run, Locally Installed Samples link. Essential Studio User Interface Edition Windows Forms sample browser is displayed.
 
-{ ![C:/Users/rajaduraic/Desktop/ScreenShots/ScreenShots/WF/UI SB.png](Installation-and-Deployment_images/Installation-and-Deployment_img2.png) | markdownify }
+{{ '![C:/Users/rajaduraic/Desktop/ScreenShots/ScreenShots/WF/UI SB.png](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Under Contents tab, expand the Schedule samples to view the samples of the control.
 
-{ ![C:/Users/rajaduraic/Desktop/ScreenShots/ScreenShots/WF/Schedule.png](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![C:/Users/rajaduraic/Desktop/ScreenShots/ScreenShots/WF/Schedule.png](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -86,18 +86,18 @@ Viewing Samples
 
 To view the samples, follow the steps below:
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard.
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard.
 2. Essential Studio Enterprise Edition window is displayed.
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 
 3. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Form Sample Browser window is displayed.
 > 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the following three ways:_
 
@@ -105,13 +105,13 @@ _Note: You can view the samples in any of the following three ways:_
 * Online Samples-Click to view online samples
 * Explore Samples-Explore BI Web samples on disk
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)' | markdownify }}
 {:.image }
 
 
 4. Click Schedule from the bottom-left pane. Schedule samples will be displayed.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)' | markdownify }}
 {:.image }
 
 

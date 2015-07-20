@@ -91,7 +91,7 @@ pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldNam
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Grouping-Bar_images/Grouping-Bar_img1.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Grouping-Bar_images/Grouping-Bar_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -101,7 +101,7 @@ Data filtering displays only a subset of data that meets criteria specified by y
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Grouping-Bar_images/Grouping-Bar_img2.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Grouping-Bar_images/Grouping-Bar_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -125,7 +125,7 @@ The sort indicator in the item represents the sort type such as ascending order 
 
 The following image illustrates the sort indicator with sort types.
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Sort.png](Grouping-Bar_images/Grouping-Bar_img3.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Sort.png](Grouping-Bar_images/Grouping-Bar_img3.png)' | markdownify }}
 {:.image }
 
 

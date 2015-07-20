@@ -45,7 +45,7 @@ IRange this[int row, int column, int lastRow, int lastColumn] { get; }
 
 
 
-> { ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img1.jpeg) | markdownify }
+> {{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: Here row and column indexes in the range are "one based". Following code example explains various ways of accessing cells._
 
@@ -511,7 +511,7 @@ excelEngine.Dispose()
 
 XlsIO enables you to get the range of cells used in a given sheet. This helps you to apply the same format to all the cells used in the worksheet. You can also get the first row/column, last row/column, and number of rows/columns used in the sheet by using the various methods of IRange.
 
-> { ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img2.jpeg) | markdownify }
+> {{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: By default, XlsIO considers a cell as used, even when there exists some formatting. You can disable this behavior, and make XlsIO consider a cell as used, only when there exists data, by using the UsedRangeIncludesFormatting property._
 
@@ -909,7 +909,7 @@ excelEngine.Dispose()
 
 MoveTo method is used to move a range of cells to the destination. The only difference between copy and move operation is that Move does not create a copy in the source. This is similar to the Cut and Paste options in the Excel. 
 
-> { ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img3.jpeg) | markdownify }
+> {{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: Move does not update formulas._
 
@@ -1033,7 +1033,7 @@ excelEngine.Dispose()
 
 Find and Replace feature in Excel enables you to navigate between large spreadsheets. It carries out a simultaneous search in Microsoft Excel values, formulas, and also comments. XlsIO also supports finding and replacing contents in a worksheet. It has various options to find the first matching entry, find all the matching entries, and replace the found content with various data and data sources.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img4.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -1909,7 +1909,7 @@ This feature allows sorting any range of cells dynamically at runtime without an
 2. Sorting by Font Color
 3. Sorting by Cell Color
 > 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img5.jpeg) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: Presently, sorting based on cell icon, parsing, and serialization of its sorting details are not supported._
 
@@ -1919,7 +1919,7 @@ This is used to sort a range of cells by values at runtime. This is explained in
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -2085,7 +2085,7 @@ excelEngine.Dispose()
 
 With this feature, MS Excel moves the text that is applied with the selected color to the specified location (bottom or top) of the sorting range.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img7.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -2259,7 +2259,7 @@ excelEngine.Dispose()
 
 With this feature, MS Excel moves the cell text and color to the specified location (bottom or top) of the sorting range.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img8.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -2433,7 +2433,7 @@ MS Excel AutoFilter feature literally makes filtering out unwanted data in a dat
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img9.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -2671,7 +2671,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img10.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -2681,7 +2681,7 @@ The Data Validation feature available in MS Excel dynamically validates the data
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img11.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -2828,13 +2828,13 @@ excelEngine.Dispose()
 
 The following screenshots illustrate the error alert settings through the Data Validation dialog box in MS Excel.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img12.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img12.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img13.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -3156,7 +3156,7 @@ excelEngine.Dispose()
 
 A Hyperlink is a convenient way to instantly access another place in the workbook, or another workbook, or a file associated with another application. A hyperlink can be inserted in a cell or a shape in Excel. Select the cell or shape, and select Hyperlink from the Insert menu, or right-click anywhere in the cell or shape, and then select Hyperlink from the pop-up menu. You can enter a cell reference in the current workbook, browse to another workbook, a different file, or a web page, and even enter an email address and subject line. You can also edit the text for a hyperlink in a cell. Following is the Insert Hyperlink dialog box of MS Excel that allows setting various hyperlinks.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img14.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -3397,7 +3397,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img15.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img15.png)' | markdownify }}
 {:.image }
 
 

@@ -212,7 +212,7 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 
 
-{ ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png) | markdownify }
+{{ '![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -332,7 +332,7 @@ Text Search
 
 Essential PDF Viewer allows end users to search and highlight the text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
 
-{ ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png) | markdownify }
+{{ '![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)' | markdownify }}
 {:.image }
 
 

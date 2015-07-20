@@ -23,63 +23,63 @@ The following code snippet illustrates a sample XML-based configuration file.
 
 
 
-&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+<?xml version="1.0" encoding="utf-8" ?>
 
-&lt;ArrayOfConfigLanguage&gt;
+<ArrayOfConfigLanguage>
 
-  &lt;ConfigLanguage name="default_language"&gt;
+  <ConfigLanguage name="default_language">
 
-    &lt;formats&gt;
+    <formats>
 
-      &lt;format name="Text" Font="Courier New, 10pt" FontColor="Black" /&gt;
+      <format name="Text" Font="Courier New, 10pt" FontColor="Black" />
 
-      &lt;format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" /&gt;
+      <format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" />
 
-    &lt;/formats&gt;
+    </formats>
 
-    &lt;extensions /&gt;
+    <extensions />
 
-    &lt;lexems /&gt;
+    <lexems />
 
-    &lt;splits /&gt;
+    <splits />
 
-  &lt;/ConfigLanguage&gt;
+  </ConfigLanguage>
 
-  &lt;ConfigLanguage name="C#"&gt;
+  <ConfigLanguage name="C#">
 
-    &lt;formats&gt;
+    <formats>
 
-      &lt;format name="Text" Font="Courier New, 10pt" FontColor="Black" /&gt;
+      <format name="Text" Font="Courier New, 10pt" FontColor="Black" />
 
-      &lt;format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" /&gt;
+      <format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" />
 
-      &lt;format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" /&gt;
+      <format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" />
 
-      &lt;format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" /&gt;
+      <format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
 
-    &lt;/formats&gt;
+    </formats>
 
-    &lt;extensions&gt;
+    <extensions>
 
       <extension>cs</extension>
 
-    &lt;/extensions&gt;
+    </extensions>
 
-    &lt;lexems&gt;
+    <lexems>
 
-      &lt;lexem BeginBlock="public" Type="KeyWord" /&gt;
+      <lexem BeginBlock="public" Type="KeyWord" />
 
-    &lt;/lexems&gt;
+    </lexems>
 
-    &lt;splits&gt;
+    <splits>
 
-      &lt;split&gt;+=&lt;/split&gt;
+      <split>+=</split>
 
-    &lt;/splits&gt;
+    </splits>
 
-  &lt;/ConfigLanguage&gt;
+  </ConfigLanguage>
 
-&lt;/ArrayOfConfigLanguage&gt;
+</ArrayOfConfigLanguage>
 
 
 
@@ -114,11 +114,11 @@ Language configuration is divided into the following four sections:
 
 
 
-&lt;split&gt;+=&lt;/split&gt;
+<split>+=</split>
 
 
 
-* Formats-Contains a list of definitions of the formats that can be used later in lexem configuration. Every format is specified by a tag &lt;format&gt;. Every format contains the attributes such as name, font, fore color, font color, back color, style, weight, underline and line color.
+* Formats-Contains a list of definitions of the formats that can be used later in lexem configuration. Every format is specified by a tag <format>. Every format contains the attributes such as name, font, fore color, font color, back color, style, weight, underline and line color.
 * Name-Specifies the name of the format. SelectedText is always used for selection (if fontcolor is not specified, selected text is drawn with its own color; only the background is changed).
 * Font-String with XML representation of the font. Refer to the default configuration file for examples.
 * Forecolor-Specifies the color of the rectangle that is drawn around the text. It is not drawn if fore color is not specified.
@@ -143,7 +143,7 @@ The simplest case of lexem definition looks like the following:
 
 
 
-&lt;lexem BeginBlock="public" Type="KeyWord" /&gt;
+<lexem BeginBlock="public" Type="KeyWord" />
 
 
 
@@ -170,7 +170,7 @@ Example
 
 
 
-&lt;lexem BeginBlock="$" EndBlock="^[0-9a-fA-F]+$" IsEndRegex="true" Type="Number" /&gt;
+<lexem BeginBlock="$" EndBlock="^[0-9a-fA-F]+$" IsEndRegex="true" Type="Number" />
 
 
 
@@ -178,7 +178,7 @@ In Delphi file parsing, numbers in hexadecimal format like $54df54af will be tre
 
 
 
-If the IsComplex attribute is set to 'True', and the token matches the BeginBlock of the lexem, then the lexem found is inserted into the stack. At the start, the stack contains only language, so the parser checks only for children of the &lt;lexems&gt; tag. Configuration for the token is always searched among sub-lexems of the last lexem in the stack. If the configuration is not found, a search is done among the sub-lexems of the second lexem in the stack, and so on. This feature can be disabled by setting the OnlyLocalSublexems attribute to 'True', and the token will be colored like the last lexem from the stack. If the configuration is still not found, the parser checks if it is the EndBlock of the last lexem in the stack, and if it matches, the token is formatted accordingly and the lexem is removed from the stack. If the token is the EndBlock,and the IsPseudoEnd attribute is set to 'True', the lexem is removed from the stack, but the search process for that token does not stop. Refer to the sample code below.
+If the IsComplex attribute is set to 'True', and the token matches the BeginBlock of the lexem, then the lexem found is inserted into the stack. At the start, the stack contains only language, so the parser checks only for children of the <lexems> tag. Configuration for the token is always searched among sub-lexems of the last lexem in the stack. If the configuration is not found, a search is done among the sub-lexems of the second lexem in the stack, and so on. This feature can be disabled by setting the OnlyLocalSublexems attribute to 'True', and the token will be colored like the last lexem from the stack. If the configuration is still not found, the parser checks if it is the EndBlock of the last lexem in the stack, and if it matches, the token is formatted accordingly and the lexem is removed from the stack. If the token is the EndBlock,and the IsPseudoEnd attribute is set to 'True', the lexem is removed from the stack, but the search process for that token does not stop. Refer to the sample code below.
 
 
 
@@ -190,15 +190,15 @@ To parse a C# string, a typical lexem would be as shown below:
 
 
 
-&lt;lexem BeginBlock="&quot;" EndBlock="&quot;" Type="String" IsComplex="true" OnlyLocalSublexems="true"&gt;
+<lexem BeginBlock="&quot;" EndBlock="&quot;" Type="String" IsComplex="true" OnlyLocalSublexems="true">
 
-&lt;SubLexems&gt;
+<SubLexems>
 
-&lt;lexem BeginBlock="\" EndBlock="&quot;" Type="String" /&gt;
+<lexem BeginBlock="\" EndBlock="&quot;" Type="String" />
 
-&lt;/SubLexems&gt;
+</SubLexems>
 
-&lt;/lexem&gt;
+</lexem>
 
 
 
@@ -210,15 +210,15 @@ To collapse complex lexems, set IsCollapsible to 'True'. CollapseName property s
 
 
 
-&lt;lexem BeginBlock="&quot;" EndBlock="&quot;" Type="String" IsComplex="true" OnlyLocalSublexems="true" IsCollapsable="true"  CollapseName="String"&gt;
+<lexem BeginBlock="&quot;" EndBlock="&quot;" Type="String" IsComplex="true" OnlyLocalSublexems="true" IsCollapsable="true"  CollapseName="String">
 
-&lt;SubLexems&gt;
+<SubLexems>
 
-&lt;lexem BeginBlock="\" EndBlock="&quot;" Type="String" /&gt;
+<lexem BeginBlock="\" EndBlock="&quot;" Type="String" />
 
-&lt;/SubLexems&gt;
+</SubLexems>
 
-&lt;/lexem&gt;
+</lexem>
 
 
 
@@ -340,7 +340,7 @@ formatMethod.BackColor = Color.Yellow
 
 // Creating a ConfigLexem object that belongs to the above defined format.
 
-ConfigLexem configLex = new ConfigLexem("&lt;%@", "%&gt;", FormatType.Custom, false);
+ConfigLexem configLex = new ConfigLexem("<%@", "%>", FormatType.Custom, false);
 
 
 
@@ -364,7 +364,7 @@ configLex.FormatName = "CodeBehind";
 
 // Creating a ConfigLexem object that belongs to the above defined format.
 
-Dim configLex As ConfigLexem = New ConfigLexem("&lt;%", "%&gt;", FormatType.Custom, False)
+Dim configLex As ConfigLexem = New ConfigLexem("<%", "%>", FormatType.Custom, False)
 
 
 

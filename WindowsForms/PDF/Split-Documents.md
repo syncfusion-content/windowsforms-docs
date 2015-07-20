@@ -50,7 +50,7 @@ Const destFilePattern As String = "Output" + "split{0:00}.pdf"
 loadedDocument.Split(destFilePattern)
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Split-Documents_images/Split-Documents_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Split-Documents_images/Split-Documents_img1.png)' | markdownify }}
 {:.image }
 _Note: Splitting algorithm uses Import Page methods, so the result would be similar to it._
 

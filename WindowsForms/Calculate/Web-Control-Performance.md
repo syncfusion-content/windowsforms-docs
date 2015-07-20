@@ -13,7 +13,7 @@ Syncfusion Essential studio makes use of the class named ScriptResourceAttribute
 
 Then the resource files which are all used in the Syncfusion controls are gzipped and served over the network. The following screen shot shows this.
 
-{ ![](Web-Control-Performance_images/Web-Control-Performance_img1.jpeg) | markdownify }
+{{ '![](Web-Control-Performance_images/Web-Control-Performance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21,13 +21,13 @@ In order to achieve this, you need to set the following attributes in the projec
 
 
 
-&lt;configuration system.web.extensions/&gt;
+<configuration system.web.extensions/>
 . . .
-&lt;scripting&gt;
-&lt;ScriptResourceHandler enableCompression="true" enableCaching="true" /&gt;
-&lt;/scripting&gt;
+<scripting>
+<ScriptResourceHandler enableCompression="true" enableCaching="true" />
+</scripting>
 . . .
-&lt;/system.web.extensions&gt;
+</system.web.extensions>
 
 
 

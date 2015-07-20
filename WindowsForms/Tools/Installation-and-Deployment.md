@@ -39,18 +39,18 @@ Viewing Samples
 
 To view the samples, follow the steps below:
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard.
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard.
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Form Sample Browser window is displayed.
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
 Tools samples will be displayed by default.
 
-> { ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg) | markdownify }
+> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the following three ways:_
 
@@ -58,7 +58,7 @@ _Note: You can view the samples in any of the following three ways:_
 * Online Samples-Click to view online samples
 * Explore Samples-Explore BI Web samples on disk
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 

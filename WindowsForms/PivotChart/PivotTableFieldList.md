@@ -41,7 +41,7 @@ Me.panel.Controls.Add(Me.pivotTableFieldList1.PivotGrid
 
 
 
-{ ![](PivotTableFieldList_images/PivotTableFieldList_img1.png) | markdownify }
+{{ '![](PivotTableFieldList_images/PivotTableFieldList_img1.png)' | markdownify }}
 {:.image }
 
 

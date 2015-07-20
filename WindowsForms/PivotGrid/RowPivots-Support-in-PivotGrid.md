@@ -30,7 +30,7 @@ Using this support small amount of data is evaluated easily.</td></tr>
 <tr>
 <td>
 For evaluating data in the form of rows and columns.</td><td>
-Using this support the PivotItems is evaluated in the form of Grid.<br>({{ '_Rows and columns calculation_' | markdownify }})<br></td></tr>
+Using this support the PivotItems is evaluated in the form of Grid.<br>({{{ ''_Rows and columns calculation_'' | markdownify }}})<br></td></tr>
 <tr>
 <td>
 Filtering and sorting support for the PivotCalculation.</td><td>
@@ -61,7 +61,7 @@ The PivotCalculation item is supported with Sorting. Sorting of the PivotCalcula
 
 
 
-{ ![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img1.png) | markdownify }
+{{ '![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ The PivotCalculation item is supported with Sorting. Sorting of the PivotCalcula
 
 The PivotCalculation items are supported with Filtering. Whereas the PivotRows is not supported with Filters. This operation is enabled or disabled using AllowFilter Property.
 
-{ ![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img2.png) | markdownify }
+{{ '![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -79,7 +79,7 @@ Pivot Value chooser is a customized dialog that showcases the available Pivot Ca
 
 
 
-{ ![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img3.png) | markdownify }
+{{ '![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img3.png)' | markdownify }}
 {:.image }
 
 

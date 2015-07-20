@@ -59,7 +59,7 @@ Me.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusi
 
 The following screenshot is a sample output for the previous code.
 
-{ ![](Metro-Theme-for-Essential-Schedule_images/Metro-Theme-for-Essential-Schedule_img1.png) | markdownify }
+{{ '![](Metro-Theme-for-Essential-Schedule_images/Metro-Theme-for-Essential-Schedule_img1.png)' | markdownify }}
 {:.image }
 
 

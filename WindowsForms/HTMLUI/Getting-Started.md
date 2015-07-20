@@ -50,7 +50,7 @@ In this lesson, you will learn about the following:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -142,7 +142,7 @@ End Sub
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -164,7 +164,7 @@ In this lesson, you will learn about about the following:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -174,7 +174,7 @@ In this lesson, you will learn about about the following:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -188,65 +188,65 @@ In this lesson, you will learn about about the following:
 
 
 
-&lt;HTML&gt;
+<HTML>
 
-&lt;HEAD&gt;
+<HEAD>
 
-&lt;TITLE&gt; Creating User Interface &lt;/TITLE&gt;
+<TITLE> Creating User Interface </TITLE>
 
-&lt;/HEAD&gt;
+</HEAD>
 
-&lt;BODY bgcolor="#ffffff"&gt;
-
-
-
-&lt;TABLE id="Table1" height="360" cellSpacing="1" cellPadding="1" width="392" border="1"&gt;
+<BODY bgcolor="#ffffff">
 
 
 
-&lt;TR&gt;
-
-&lt;TD align="center" height="72" valign="middle"&gt;
-
-&lt;INPUT id="txt" type="text" size="40" name="Text1"&gt;&lt;/INPUT&gt;
-
-&lt;/TD&gt;
-
-&lt;/TR&gt;
+<TABLE id="Table1" height="360" cellSpacing="1" cellPadding="1" width="392" border="1">
 
 
 
-&lt;TR&gt;
+<TR>
 
-&lt;TD align="center" height="209" valign="middle"&gt;
+<TD align="center" height="72" valign="middle">
 
-&lt;TEXTAREA id="txtArea" name="Textarea1" rows="9" cols="35"&gt;&lt;/TEXTAREA&gt;
+<INPUT id="txt" type="text" size="40" name="Text1"></INPUT>
 
-&lt;/TD&gt;
+</TD>
 
-&lt;/TR&gt;
-
-
-
-&lt;TR&gt;
-
-&lt;TD align="center" valign="middle"&gt;
-
-&lt;INPUT id="btn" type="button" size="" value="Button" name="Button1"&gt;&lt;/INPUT&gt;
-
-&lt;/TD&gt;
-
-&lt;/TR&gt;
+</TR>
 
 
 
-&lt;/TABLE&gt;
+<TR>
+
+<TD align="center" height="209" valign="middle">
+
+<TEXTAREA id="txtArea" name="Textarea1" rows="9" cols="35"></TEXTAREA>
+
+</TD>
+
+</TR>
 
 
 
-&lt;/BODY&gt;
+<TR>
 
-&lt;/HTML&gt;
+<TD align="center" valign="middle">
+
+<INPUT id="btn" type="button" size="" value="Button" name="Button1"></INPUT>
+
+</TD>
+
+</TR>
+
+
+
+</TABLE>
+
+
+
+</BODY>
+
+</HTML>
 
 
 
@@ -326,7 +326,7 @@ this.textArea.UserControl.CustomControl.Text = "The HTMLUI control adds the abil
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -342,73 +342,73 @@ To create and display Custom Controls:
 
 
 
-&lt;HTML&gt;
+<HTML>
 
-&lt;HEAD&gt;
+<HEAD>
 
 <TITLE>HTMLUI CUSTOM CONTROLS</TITLE>
 
-&lt;style&gt; 
+<style> 
 
 .tttDisplay { text-decoration: none; color: #ffffff; font-family: Tahoma; font-size: 34pt; font-weight: bold; line-height: 30px; padding-left: 2px; }
 
-&lt;/style&gt;
+</style>
 
-&lt;/HEAD&gt;
+</HEAD>
 
-&lt;BODY&gt;
-
-
-
-&lt;TABLE id="CustomControls" cellSpacing="0" cellPadding="0" width="100%" bgColor="silver" border="1" height="100%" align="center"&gt;
+<BODY>
 
 
 
-&lt;TR&gt;
-
-&lt;TD class="tttDisplay" height="33%" width="100%" id="cctd1" vAlign="center"&gt;
-
-&lt;maskededittextbox id="maskedEditTextBox1" height="20" width="136"&gt;
-
-&lt;/maskededittextbox&gt;
-
-&lt;/TD&gt;
-
-&lt;/TR&gt;
+<TABLE id="CustomControls" cellSpacing="0" cellPadding="0" width="100%" bgColor="silver" border="1" height="100%" align="center">
 
 
 
-&lt;TR&gt;
+<TR>
 
-&lt;TD class="tttDisplay" height="33%" width="100%" id="cctd2" vAlign="center"&gt;
+<TD class="tttDisplay" height="33%" width="100%" id="cctd1" vAlign="center">
 
-&lt;monthcalendar id="monthCalendar1" width="199" height="155"&gt;&lt;/monthcalendar&gt;
+<maskededittextbox id="maskedEditTextBox1" height="20" width="136">
 
-&lt;/TD&gt;
+</maskededittextbox>
 
-&lt;/TR&gt;
+</TD>
 
-
-
-&lt;TR&gt;
-
-&lt;TD class="tttDisplay" height="33%" width="100%" id="cctd3" vAlign="center"&gt;
-
-&lt;datagrid id="dataGrid1" width="304" height="144"&gt;&lt;/datagrid&gt;
-
-&lt;/TD&gt;
-
-&lt;/TR&gt;
+</TR>
 
 
 
-&lt;/TABLE&gt;
+<TR>
+
+<TD class="tttDisplay" height="33%" width="100%" id="cctd2" vAlign="center">
+
+<monthcalendar id="monthCalendar1" width="199" height="155"></monthcalendar>
+
+</TD>
+
+</TR>
 
 
 
-&lt;/BODY&gt;
+<TR>
 
-&lt;/HTML&gt;
+<TD class="tttDisplay" height="33%" width="100%" id="cctd3" vAlign="center">
+
+<datagrid id="dataGrid1" width="304" height="144"></datagrid>
+
+</TD>
+
+</TR>
+
+
+
+</TABLE>
+
+
+
+</BODY>
+
+</HTML>
 
 
 
@@ -421,7 +421,7 @@ In the previous step, three custom controls were defined as part of the HTMLUI i
 2. Drag a MonthCalendar control from the toolbox and drop it on the form. The MonthCalendar will be named monthCalendar1 by default. Use this name in the next step to associate it with the appropriate HTML-defined control.
 3. Drag a MaskedEditBox control and a DataGrid control onto the form.
 
-{ ![](Getting-Started_images/Getting-Started_img6.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -549,7 +549,7 @@ return success;
 
 }
 
-{ ![](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.jpeg)' | markdownify }}
 {:.image }
 
 

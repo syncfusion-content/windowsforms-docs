@@ -11,7 +11,7 @@ documentation: ug
 
 Essential XlsIO can create large reports in a few seconds. 
 
-{ ![](Improving-Performance_images/Improving-Performance_img1.jpeg) | markdownify }
+{{ '![](Improving-Performance_images/Improving-Performance_img1.jpeg)' | markdownify }}
 {:.image }
 Tips to improve the Performance
 

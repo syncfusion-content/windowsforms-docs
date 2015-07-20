@@ -67,7 +67,7 @@ This is the only requirement on the method. You are free to use any kind of conv
 
 Here add a method that accepts an argument list and then returns the minimum value in this list. The list may be individual cell references and cell ranges, or numbers. This sample code uses CalcEngine methods to handle the parsing and retrieving of values from the argument list.
 
-> { ![](Function-Library_images/Function-Library_img1.jpeg) | markdownify }
+> {{ '![](Function-Library_images/Function-Library_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: List separators can vary depending upon culture. While it is reasonable to use a comma as a separator in en-US, this is not the case with fr-FR where the comma is used as a decimal separator. For this reason, CalcEngine.ParseArgumentSeparator is a static member that holds the list separator that is recognized by the parsing of algorithms in the CalcEngine._
 
@@ -241,7 +241,7 @@ Public Function ComputeMymin(ByVal args As String) As String
 
                         s1 = engine.GetValueFromArg(s)
 
-                        If s1 &lt;&gt; "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
+                        If s1 <> "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
 
                             min = Math.Min(min, d)
 
@@ -261,7 +261,7 @@ Public Function ComputeMymin(ByVal args As String) As String
 
                     s1 = engine.GetValueFromArg(r)
 
-                    If s1 &lt;&gt; "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
+                    If s1 <> "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
 
                         min = Math.Min(min, d)
 
@@ -277,7 +277,7 @@ Public Function ComputeMymin(ByVal args As String) As String
 
         Next r
 
-        If min &lt;&gt; Double.MaxValue Then
+        If min <> Double.MaxValue Then
 
             Return min.ToString()
 
@@ -319,7 +319,7 @@ Me.engine.AddFunction("Mymin", AddressOf ComputeMymin)
 
 By convention, within the Essential Calculate library, the C# implementation method for each of the library functions that are shipped with the word "Compute" is named and followed by the name of the library function. The above code confirms to this convention, with the function name being 'Mymin' and the method name being 'ComputeMymin'. Our library functions are public members of the CalcEngine class, so that you can access them directly if it serves your purpose. Additionally, if you own the source code version, you can see implementation details that may be of use to you if you try to implement many custom library methods on your own.
 
-> { ![](Function-Library_images/Function-Library_img2.jpeg) | markdownify }
+> {{ '![](Function-Library_images/Function-Library_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: Once this is done, you can use your custom method in the same manner as the default library functions._
 
@@ -887,7 +887,7 @@ The syntax of the ISEVEN function is
 
 The given value must be a numeric value. If it is non-integer value, the value is rounded down.
 
-> { ![](Function-Library_images/Function-Library_img3.jpeg) | markdownify }
+> {{ '![](Function-Library_images/Function-Library_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: If the given value is nonnumeric, the ISEVEN function returns the ‘#VALUE!’ error value._
 
@@ -925,7 +925,7 @@ The syntax of the ISODD function is
 
 The given value must be a numeric value. If it is a non-integer value, the value is rounded down.
 
-> { ![](Function-Library_images/Function-Library_img4.jpeg) | markdownify }
+> {{ '![](Function-Library_images/Function-Library_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: If the given value is nonnumeric, ISODD function returns the ‘#VALUE!’ error value._
 
@@ -1001,7 +1001,7 @@ The syntax of NA function is
 
 The NA function syntax has no arguments.
 
-> { ![](Function-Library_images/Function-Library_img5.jpeg) | markdownify }
+> {{ '![](Function-Library_images/Function-Library_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: The function doesn’t have any arguments._
 
@@ -1155,7 +1155,7 @@ Ref1 The first named range which is used for the subtotal. This value is require
 
 Ref2 This value is optional.
 
-> { ![](Function-Library_images/Function-Library_img6.jpeg) | markdownify }
+> {{ '![](Function-Library_images/Function-Library_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: If the subtotal function has any nested subtotal functions, then the nested subtotal is ignored for double counting._
 

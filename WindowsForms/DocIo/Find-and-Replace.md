@@ -116,7 +116,7 @@ Gets the System.String at the specified index.  </td></tr>
 </table>
 
 
-> { ![](Find-and-Replace_images/Find-and-Replace_img1.jpeg) | markdownify }
+> {{ '![](Find-and-Replace_images/Find-and-Replace_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: TextSelection and GetAsOneRange should not be used for text replacement._
 
@@ -140,7 +140,7 @@ Dim rangesHolder1 As TextSelection = document.Find("The PlaceHolder1", False, Fa
 
 TextBodyPart class contains the collection of body items (it means that TextBodyPart can contain paragraphs, tables, and even sections). These text body parts are the members used to construct a word document. TextBodyPart is usually used with the Bookmark Navigator.
 
-> { ![](Find-and-Replace_images/Find-and-Replace_img2.jpeg) | markdownify }
+> {{ '![](Find-and-Replace_images/Find-and-Replace_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: TextBodyPart contains the copy of objects from the documents (paragraphs, tables, sections, and so on). So, if you modify the content of the TextBodyPart, it will not affect the objects inside the document._
 

@@ -127,7 +127,7 @@ public partial class Form1 : Form
 
 
 
-Screenshot:{ ![](Annotations_images/Annotations_img1.png) | markdownify }
+Screenshot:{{ '![](Annotations_images/Annotations_img1.png)' | markdownify }}
 {:.image }
 
 

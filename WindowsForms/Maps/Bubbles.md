@@ -204,7 +204,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-{ ![](Bubbles_images/Bubbles_img1.png) | markdownify }
+{{ '![](Bubbles_images/Bubbles_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -351,7 +351,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-{ ![](Bubbles_images/Bubbles_img2.png) | markdownify }
+{{ '![](Bubbles_images/Bubbles_img2.png)' | markdownify }}
 {:.image }
 
 

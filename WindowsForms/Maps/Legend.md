@@ -185,7 +185,7 @@ shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
 The following screenshot illustrate a map displaying default legend
 
-{ ![](Legend_images/Legend_img1.png) | markdownify }
+{{ '![](Legend_images/Legend_img1.png)' | markdownify }}
 {:.image }
 
 

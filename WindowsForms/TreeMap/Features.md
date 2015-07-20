@@ -15,7 +15,7 @@ The WeightValuePath ofTreeMap is a path to a field on the source object, which s
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img1.png)' | markdownify }}
 {:.image }
 _Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection._
 
@@ -73,7 +73,7 @@ public Form1()
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img2.png)' | markdownify }}
 {:.image }
 _Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection._
 
@@ -626,7 +626,7 @@ public partial class Form1 : Form
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img3.png)' | markdownify }}
 {:.image }
 _Note: The specified field must be a collection of sub class (object) specified in the nested data collection._
 
@@ -702,7 +702,7 @@ The following screen shot illustrates a squarified layout.
 
 
 
-{ ![](Features_images/Features_img4.png) | markdownify }
+{{ '![](Features_images/Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -764,7 +764,7 @@ The following screen shot illustrates a slice-and-dice layout.
 
 
 
-{ ![](Features_images/Features_img5.png) | markdownify }
+{{ '![](Features_images/Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -825,7 +825,7 @@ The following screen shot shows a Slice-and-dice treemap in horizontal layout.
 <td>
 ![](Features_images/Features_img6.png)
 {:.image }
-{{ '_Figure_'  | markdownify }}{{ '_3_' | markdownify }}{{ '_: Slice-and-dice treemap in horizontal layout_' | markdownify }}</td></tr>
+{{{ ''_Figure_' ' | markdownify }}}{{{ ''_3_'' | markdownify }}}{{{ ''_: Slice-and-dice treemap in horizontal layout_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -884,7 +884,7 @@ The following screen shot shows a Slice-and-dice treemap in vertical layout.
 
 
 
-{ ![](Features_images/Features_img7.png) | markdownify }
+{{ '![](Features_images/Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -981,7 +981,7 @@ uniColorMapping.Color = Color.MediumSlateBlue;
 
 
 
-{ ![](Features_images/Features_img8.png) | markdownify }
+{{ '![](Features_images/Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1075,7 +1075,7 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 
 
 
-{ ![](Features_images/Features_img9.png) | markdownify }
+{{ '![](Features_images/Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1167,7 +1167,7 @@ public partial class Form1 : Form
 
 
 
-{ ![](Features_images/Features_img10.png) | markdownify }
+{{ '![](Features_images/Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -1255,7 +1255,7 @@ public partial class Form1 : Form
 
 
 
-{ ![](Features_images/Features_img11.png) | markdownify }
+{{ '![](Features_images/Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1349,7 +1349,7 @@ RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();
 
 
 
-{ ![](Features_images/Features_img12.png) | markdownify }
+{{ '![](Features_images/Features_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -1421,7 +1421,7 @@ public partial class Form1 : Form
 
 
 
-{ ![](Features_images/Features_img13.png) | markdownify }
+{{ '![](Features_images/Features_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -1491,7 +1491,7 @@ public partial class Form1 : Form
 
 
 
-{ ![](Features_images/Features_img14.png) | markdownify }
+{{ '![](Features_images/Features_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -1545,7 +1545,7 @@ public partial class Form1 : Form
 
             ToolTipInfo itemInfoHead = new ToolTipInfo();
 
-            itemInfoHead.ToolTipHeaderPattern = "&lt;b&gt;{Label}&lt;/b&gt;";
+            itemInfoHead.ToolTipHeaderPattern = "<b>{Label}</b>";
 
             itemInfoHead.ToolTipContentPattern = "Growth \t  :  {Growth} % ";
 
@@ -1553,7 +1553,7 @@ public partial class Form1 : Form
 
             ToolTipInfo itemInfo = new ToolTipInfo();
 
-            itemInfo.ToolTipHeaderPattern = "&lt;b&gt;{Country}&lt;/b&gt;";
+            itemInfo.ToolTipHeaderPattern = "<b>{Country}</b>";
 
             itemInfo.ToolTipContentPattern = "Growth \t      :  {Growth} %  \nPopulation   :  {StrPopulation}  ";
 
@@ -1597,7 +1597,7 @@ The following screen shot shows a tree map with a tool tip.
 
 
 
-{ ![](Features_images/Features_img15.png) | markdownify }
+{{ '![](Features_images/Features_img15.png)' | markdownify }}
 {:.image }
 
 

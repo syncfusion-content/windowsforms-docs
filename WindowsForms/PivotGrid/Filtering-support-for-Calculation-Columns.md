@@ -21,14 +21,14 @@ The FilterDialog is designed to have a look and feel like Excel Filter. The Filt
 
 
 
-{ ![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img1.png) | markdownify }
+{{ '![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
 
-{ ![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img2.png) | markdownify }
+{{ '![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -36,7 +36,7 @@ _Figure_ _29__: Filtered Image showing PivotSummaries are being updated._
 
 
 
-{ ![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img3.png) | markdownify }
+{{ '![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img3.png)' | markdownify }}
 {:.image }
 
 

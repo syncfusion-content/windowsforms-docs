@@ -75,7 +75,7 @@ series.Points.Add(1,300)
 
 
 
-> { ![](Chart-Series_images/Chart-Series_img1.jpeg) | markdownify }
+> {{ '![](Chart-Series_images/Chart-Series_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: Same ChartSeries object being added to more than one chart is not supported. It binds the series to the default primary axis always._
 
@@ -190,7 +190,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Double
 
 
 
-> { ![](Chart-Series_images/Chart-Series_img2.jpeg) | markdownify }
+> {{ '![](Chart-Series_images/Chart-Series_img2.jpeg)' | markdownify }}
 {:.image }
 _Note : To display the text right next to the data points, the DisplayText property of the data point's style should be set._
 
@@ -745,7 +745,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.AngleOffset = 45f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img3.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -755,7 +755,7 @@ _Figure_ _96__:_ _PieChart with No AngleOffset_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img4.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -853,7 +853,7 @@ series.Style.ShadowOffset = New Size(3, 3)
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img5.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -907,7 +907,7 @@ series2.Styles(2).Border.Color = Color.White
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img6.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1021,7 +1021,7 @@ Me.chartControl1.Series[0].Styles(1).ImageIndex = 1
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img7.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1091,7 +1091,7 @@ Me.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img8.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1101,7 +1101,7 @@ _Figure_ _101__: ColumnDrawMode set to "PlaneMode"_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img9.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1111,7 +1111,7 @@ _Figure_ _102__: ColumnDrawMode set to "InDepthMode"_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img10.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1201,7 +1201,7 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.DefaultWidthMode
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img11.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1263,7 +1263,7 @@ Me.chartControl1.ColumnWidthMode = ChartColumnWidthMode.RelativeWidthMode
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img12.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1313,13 +1313,13 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.FixedWidthMode
 
 
 
-> { ![](Chart-Series_images/Chart-Series_img13.jpeg) | markdownify }
+> {{ '![](Chart-Series_images/Chart-Series_img13.jpeg)' | markdownify }}
 {:.image }
 _Note: The width of the column can also be specified by ColumnFixedWidth property. If both second Y value and ColumnFixedWidth are specified, second Y value takes higher priority._
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img14.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1411,13 +1411,13 @@ chartControl1.ColumnFixedWidth = 45
 
 
 
-> { ![](Chart-Series_images/Chart-Series_img15.jpeg) | markdownify }
+> {{ '![](Chart-Series_images/Chart-Series_img15.jpeg)' | markdownify }}
 {:.image }
 _Note: The ColumnFixedWidth property can be overridden by specifying a second y value in the data point. See_ ColumnWidthMode _for a sample._
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img16.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1489,7 +1489,7 @@ Me.chartControl1.Series(1).ConfigItems.ColumnItem.ColumnType = ChartColumnType.B
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img17.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1561,7 +1561,7 @@ Me.chartControl1.Series(0).ConfigItems.FinancialItem.ColorsMode = ChartFinancial
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img18.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1571,7 +1571,7 @@ _Figure_ _109__: Renko Chart with "DarkLight" ColorsMode_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img19.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1651,7 +1651,7 @@ Me.chartControl1.Series(0).ConfigItems.FinancialItem.DarkLightPower = 200
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img20.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1734,7 +1734,7 @@ series1.Styles(0).DisplayShadow = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img21.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1836,7 +1836,7 @@ Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img22.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1846,7 +1846,7 @@ _Figure_ _113__: DisplayText in Pie Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img23.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1946,7 +1946,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient = 0.5f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img24.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2014,7 +2014,7 @@ Me.chartControl1.Series(0).DrawColumnSeparatingLines = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img25.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2130,7 +2130,7 @@ Private Me.chartControl1.Series(0).DrawErrorBars = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img26.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2140,7 +2140,7 @@ _Figure_ _117__: ColumnChart with ErrorBars_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img27.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2260,7 +2260,7 @@ Me.chartControl1.Series.Add(s1)
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img28.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2346,7 +2346,7 @@ series2.NumberOfHistogramIntervals = 10
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img29.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2448,7 +2448,7 @@ Me.chartControl1.Series(0).DrawSeriesNameInDepth = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img30.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2570,7 +2570,7 @@ Me.chartControl1.Series(0).Style.ElementBorders = cbi
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img31.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img31.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2666,7 +2666,7 @@ Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img32.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2704,7 +2704,7 @@ Me.chartControl1.Series(0).EnableAreaToolTip = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img33.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2772,7 +2772,7 @@ Me.chartControl1.Series(0).ErrorBarsSymbolShape = ChartSymbolShape.Circle
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img34.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img34.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2842,7 +2842,7 @@ Me.chartControl1.Series(0).ExplodedAll = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img35.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img35.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2912,7 +2912,7 @@ Me.chartControl1.Series(0).ExplodedIndex = 0
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img36.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2986,7 +2986,7 @@ Me.chartControl1.Series(0).ExplosionOffset = 30f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img37.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img37.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3068,7 +3068,7 @@ Me.chartControl1.Series(0).FancyToolTip.Visible = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img38.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img38.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3166,7 +3166,7 @@ Pyramid Chart
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img39.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img39.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3176,7 +3176,7 @@ _Figure_ _130__: Pyramid Chart with Figure Base = " Circle"_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img40.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img40.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3190,7 +3190,7 @@ Funnel Chart
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img41.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img41.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3200,7 +3200,7 @@ _Figure_ _132__: Funnel Chart with Figure Base ="Circle"_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img42.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img42.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3282,7 +3282,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.FillMode = ChartPieFillMode.Every
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img43.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img43.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3292,7 +3292,7 @@ _Figure_ _134__: Pie Chart with "EveryPie" FillMode_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img44.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img44.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3366,7 +3366,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.Y
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img45.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img45.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3376,7 +3376,7 @@ _Figure_ _136__: Funnel Chart with FunnelMode as "Height"_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img46.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img46.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3488,7 +3488,7 @@ Me.chartControl1.Series(0).Styles(0).Font.Facename = "Arial"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img47.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img47.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3598,7 +3598,7 @@ Me.chartControl1.Series(1).GanttDrawMode = ChartGanttDrawMode.AutoSizeMode
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img48.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img48.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3608,7 +3608,7 @@ _Figure_ _139__: Gantt Chart with AutoSizeMode_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img49.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img49.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3698,7 +3698,7 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.GapRatio = 0.1f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img50.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img50.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3708,7 +3708,7 @@ _Figure_ _141__: Funnel chart with 0.1 GapRatio_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img51.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img51.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3800,7 +3800,7 @@ series.ConfigItems.PieItem.Gradient = clrblnd
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img52.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img52.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3870,7 +3870,7 @@ Me.chartControl1.Series(0).HeightBox = 2f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img53.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img53.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3880,7 +3880,7 @@ _Figure_ _144__: PointAndFigure Chart with Box Size of 1 (Default)_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img54.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img54.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3954,7 +3954,7 @@ Me.chartControl1.ChartArea.Depth = 25f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img55.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img55.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3964,7 +3964,7 @@ _Figure_ _146__: Pie Chart with Default Dimension_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img56.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img56.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4038,7 +4038,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img57.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img57.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4120,7 +4120,7 @@ series1.Style.HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, C
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img58.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img58.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4264,7 +4264,7 @@ End Sub
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img59.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img59.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4352,7 +4352,7 @@ series1.Style.Symbol.Shape = ChartSymbolShape.Image
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img60.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img60.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4510,7 +4510,7 @@ Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img61.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img61.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4636,7 +4636,7 @@ series1.InSideRadius = 0.5f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img62.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img62.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4714,7 +4714,7 @@ Me.chartControl1.Series(0).Style.Interior = New BrushInfo(GradientStyle.Horizont
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img63.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img63.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4800,7 +4800,7 @@ series1.Styles(3).Text = "Server4"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img64.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img64.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4870,7 +4870,7 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelPlacement = ChartAccumul
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img65.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img65.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4900,7 +4900,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelPlacement = ChartAccumula
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img66.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img66.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4968,7 +4968,7 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelStyle= ChartAccumulation
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img67.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img67.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4998,7 +4998,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelStyle= ChartAccumulationL
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img68.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img68.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5080,7 +5080,7 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightAngle = 45
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img69.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img69.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5090,7 +5090,7 @@ _Figure_ _160__: Light Angle = 45 with 3D Effect_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img70.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img70.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5164,7 +5164,7 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightColor = Color.Gre
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img71.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img71.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5272,7 +5272,7 @@ Me.chartControl1.Series["Product1"].Style.Symbol.Color = Color.Red
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img72.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img72.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5346,7 +5346,7 @@ series.NumberOfHistogramIntervals = 20
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img73.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img73.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5448,7 +5448,7 @@ Me.chartControl1.Series(0).OpenCloseDrawMode = ChartOpenCloseDrawMode.Open
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img74.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img74.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5458,7 +5458,7 @@ _Figure_ _165__: Chart with "Open" Mode_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img75.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img75.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5468,7 +5468,7 @@ _Figure_ _166__: Chart with "Close" Mode_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img76.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img76.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5576,7 +5576,7 @@ Me.chartControl1.Series.Add(series)
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img77.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img77.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5586,7 +5586,7 @@ _Figure_ _168__: OptimizePiePointPositions set to True_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img78.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img78.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5656,7 +5656,7 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.PhongAlpha = 2.0
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img79.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img79.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5666,7 +5666,7 @@ _Figure_ _170__: Normal Column Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img80.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img80.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5736,7 +5736,7 @@ The following screen shots depict these types.
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img81.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img81.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5746,7 +5746,7 @@ _Figure_ _172__: Pie Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img82.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img82.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5756,7 +5756,7 @@ _Figure_ _173__: Pie Bevel Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img83.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img83.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5766,7 +5766,7 @@ _Figure_ _174__: Pie Inside Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img84.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img84.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5776,7 +5776,7 @@ _Figure_ _175__: Pie Outside Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img85.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img85.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5912,7 +5912,7 @@ Private ganttSeries.Style.PointWidth = 0.25f
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img86.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img86.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5922,7 +5922,7 @@ _Figure_ _177__: Chart with default PointWidth_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img87.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img87.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6022,7 +6022,7 @@ series7.PriceUpColor = Color.Orange
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img88.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img88.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6096,7 +6096,7 @@ series.PriceDownColor = Color.Green
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img89.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img89.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6162,7 +6162,7 @@ Private Me.chartControl1.Series(0).ConfigItems.PyramidItem.PyramidMode=ChartPyra
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img90.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img90.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6252,7 +6252,7 @@ Private Me.chartControl1.Series(1).Style.Symbol.Color = Color.Green
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img91.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img91.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6322,7 +6322,7 @@ Me.chartControl1.RadarStyle = ChartRadarAxisStyle.Circle
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img92.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img92.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6332,7 +6332,7 @@ _Figure_ _183__: Radar Chart with Circle RadarStyle_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img93.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img93.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6462,7 +6462,7 @@ Me.chartControl1.Series(1).Styles(5).RelatedPoints.DashStyle = System.Drawing.Dr
 
 Me.chartControl1.Series(1).Styles(5).RelatedPoints.Width = 3f
 
-{ ![](Chart-Series_images/Chart-Series_img94.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img94.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6516,7 +6516,7 @@ Here is code snippet using ReversalAmount in Renko Chart.
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img95.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img95.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6540,7 +6540,7 @@ Private series.ReversalAmount = 3
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img96.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img96.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6608,7 +6608,7 @@ Private Me.chartControl1.Series(0).Rotate = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img97.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img97.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6618,7 +6618,7 @@ _Figure_ _188__: Column Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img98.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img98.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6688,7 +6688,7 @@ series.ScatterConnectType = ScatterConnectType.Line
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img99.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img99.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6724,7 +6724,7 @@ series.ScatterSplineTension = 1 ' Default is 0
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img100.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img100.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6796,7 +6796,7 @@ Private Me.chartControl1.Series(i).ScatterSplineTension =3
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img101.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img101.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6867,7 +6867,7 @@ Private Me.chartControl1.Series(1).SeriesToolTipFormat="{0}"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img102.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img102.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6935,7 +6935,7 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartCol
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img103.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img103.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6945,7 +6945,7 @@ _Figure_ _194__: Normal Column Chart (3D View)_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img104.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img104.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7023,7 +7023,7 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img105.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img105.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7147,7 +7147,7 @@ Private series.Styles(2).ShadowOffset = New Size(6, 6)
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img106.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img106.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7269,7 +7269,7 @@ Me.chartControl.Series(0).ConfigItems.PyramidItem.ShowDataBindLabels = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img107.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img107.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7279,7 +7279,7 @@ _Figure_ _198__: Doughnut Chart with Data-Bound Labels_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img108.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img108.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7291,7 +7291,7 @@ _Figure_ _199__: Funnel Chart with Data-Bound Labels_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img109.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img109.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7361,7 +7361,7 @@ Private Me.chartControl1.Series(0).ShowHistogramDataPoints =True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img110.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img110.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7373,7 +7373,7 @@ _Figure_ _201__: ShowHistogramDataPoints set to True_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img111.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img111.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7447,7 +7447,7 @@ Private Me.chartControl1.Series(0).ShowTicks = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img112.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img112.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7455,7 +7455,7 @@ _Figure_ _203__: ShowTicks = "True"_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img113.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img113.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7533,7 +7533,7 @@ Private Me.chartControl1.Series(0).SmartLabels = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img114.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img114.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7543,7 +7543,7 @@ _Figure_ _205__: Chart without enabling SmartLabels_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img115.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img115.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7643,7 +7643,7 @@ Me.chartControl1.Spacing = 50
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img116.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img116.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7713,7 +7713,7 @@ Me.chartControl1.SpacingBetweenSeries = 20
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img117.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img117.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7723,7 +7723,7 @@ _Figure_ _208__: Chart with default Spacing between Series_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img118.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img118.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7861,13 +7861,13 @@ ser3.StackingGroup = "FirstGroup"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img119.png) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img119.png)' | markdownify }}
 {:.image }
 
 
 _Figure_ _210__: Column chart with stacking group._
 
-{ ![](Chart-Series_images/Chart-Series_img120.png) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img120.png)' | markdownify }}
 {:.image }
 
 
@@ -7933,7 +7933,7 @@ Private Me.chartControl1.Series(0).ConfigItems.StepItem.Inverted=True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img121.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img121.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7943,7 +7943,7 @@ _Figure_ _212__: Inverted = "False"_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img122.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img122.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8037,7 +8037,7 @@ this.chartControl1.Series[0].Summary.GetYPercentage(1, 0)
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img123.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img123.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8159,7 +8159,7 @@ Private Me.chartControl1.Series0).Style.Symbol.Border.DashStyle = DashStyle.Soli
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img124.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img124.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8359,7 +8359,7 @@ series2.Text = "JuneSales"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img125.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img125.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8405,7 +8405,7 @@ chartControl1.Series(0).Style.Text = "Series1 Point"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img126.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img126.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8451,7 +8451,7 @@ chartControl1.Series(0).Styles(2).Text = "Third Point"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img127.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img127.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8461,7 +8461,7 @@ _Figure_ _218__: Using Series.Styles[0].Text in Column Chart_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img128.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img128.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8543,7 +8543,7 @@ Private Me.chartControl1.Series(2).Style.TextColor = Color.Green
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img129.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img129.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8653,7 +8653,7 @@ Me.chartControl1.Series(0).Style.TextFormat = "T = {0}"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img130.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img130.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8751,7 +8751,7 @@ Me.chartControl1.Series(0).Style.TextOffset = 10.0F
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img131.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img131.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8865,7 +8865,7 @@ Private Me.chartControl1.Series(1).Style.TextColor=Color.Red
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img132.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img132.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9021,7 +9021,7 @@ series1.Style.ToolTip = "Tooltip of Series1"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img133.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img133.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9067,7 +9067,7 @@ Loop
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img134.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img134.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9145,7 +9145,7 @@ Me.chartControl1.Series[1].Style.ToolTipFormat = "Y = {0}"
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img135.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img135.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9189,7 +9189,7 @@ series1.Styles(i).ToolTipFormat = "{0}";
 
 Loop
 
-{ ![](Chart-Series_images/Chart-Series_img136.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img136.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9267,7 +9267,7 @@ Private Me.chartControl1.Series(1).Visible = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img137.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img137.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9277,7 +9277,7 @@ _Figure_ _228__: Second Series Visible_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img138.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img138.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9351,7 +9351,7 @@ chartControl1.Legend.RowsCount = 3
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img139.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img139.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9361,7 +9361,7 @@ _Figure_ _230__: VisibleAllPies set to True_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img140.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img140.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9431,7 +9431,7 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).XType.ToString()
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img141.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img141.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9501,7 +9501,7 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).YType.ToString()
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img142.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img142.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9577,7 +9577,7 @@ Private Me.chartControl1.Series(1).ZOrder = 1
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img143.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img143.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9587,7 +9587,7 @@ _Figure_ _234__: Series 1 ZOrder = 0, Series 2 ZOrder = 1_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img144.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img144.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9634,7 +9634,7 @@ Me.chartControl1.EndUpdate()
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img145.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img145.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9658,7 +9658,7 @@ Text labels can be rendered at the data points using the DisplayText, Text and T
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img146.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img146.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9676,7 +9676,7 @@ Built-in or custom symbols can be rendered at the data points to emphasize impor
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img147.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img147.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9694,7 +9694,7 @@ You can set the co-ordinates (XValue and the YValue property), symbols and their
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img148.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img148.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9704,7 +9704,7 @@ _Figure_ _239__: CustomPoints Collection Editor during Design Time_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img149.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img149.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9850,7 +9850,7 @@ chartCustomPoint1.Font.Size = 10F
 
 
 
-> { ![](Chart-Series_images/Chart-Series_img150.jpeg) | markdownify }
+> {{ '![](Chart-Series_images/Chart-Series_img150.jpeg)' | markdownify }}
 {:.image }
 _Note: You can also customize a custom point symbol using Symbol property._ 
 
@@ -9908,7 +9908,7 @@ The coordinates are specified to be in pixels of the chart area.</td></tr>
 </table>
 
 
-{ ![](Chart-Series_images/Chart-Series_img151.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img151.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10007,7 +10007,7 @@ Me.ChartWebControl1.CustomPoints.Add(cp)
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img152.png) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img152.png)' | markdownify }}
 {:.image }
 
 
@@ -10045,7 +10045,7 @@ The following images illustrate the same. The second image displays after settin
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img153.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img153.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10055,7 +10055,7 @@ _Figure_ _243__: Chart without Empty Point_
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img154.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img154.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10071,7 +10071,7 @@ It is possible to set some data point as empty point and still show the chart wi
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img155.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img155.jpeg)' | markdownify }}
 {:.image }
 _Note: You need to set ChartControl.Indexed property to true for the above setting to be effective._
 
@@ -10101,7 +10101,7 @@ Me.chartControl1.Series(0).Points(5).IsEmpty = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img156.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img156.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10131,7 +10131,7 @@ Me.chartControl1.AllowGapForEmptyPoints = True
 
 
 
-{ ![](Chart-Series_images/Chart-Series_img157.jpeg) | markdownify }
+{{ '![](Chart-Series_images/Chart-Series_img157.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -37,17 +37,17 @@ C:\Syncfusion\Essential Studio<version number>\Windows\Gauge.Windows\Samples
 
 Windows 7/Vista:
 
-C:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version number&gt;\Windows\Gauge.Windows\Samples 
+C:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\Windows\Gauge.Windows\Samples 
 
 #### Viewing Samples
 
 Use the following steps to view the samples:
 
-1.  Click Start > All Programs > Syncfusion > Essential Studio &lt;version number&gt; >Dashboard.
+1.  Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard.
 
 The Essential Studio Enterprise Edition window will be displayed.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -55,7 +55,7 @@ The Essential Studio Enterprise Edition window will be displayed.
 > 
 
 
-> { ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png) | markdownify }
+> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
 {:.image }
  _Note: You can view the samples in any of the following three ways:_
 
@@ -69,7 +69,7 @@ The Essential Studio Enterprise Edition window will be displayed.
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -79,7 +79,7 @@ The Essential Studio Enterprise Edition window will be displayed.
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 

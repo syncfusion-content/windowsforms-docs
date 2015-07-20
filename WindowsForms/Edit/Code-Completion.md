@@ -100,7 +100,7 @@ The AutoReplace Trigger keys are defined within the language definitions. This m
 
 
 
-{ ![](Code-Completion_images/Code-Completion_img1.jpeg) | markdownify }
+{{ '![](Code-Completion_images/Code-Completion_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108,7 +108,7 @@ _Figure_ _12__: "for" has been incorrectly typed as "fro"_
 
 
 
-{ ![](Code-Completion_images/Code-Completion_img2.jpeg) | markdownify }
+{{ '![](Code-Completion_images/Code-Completion_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -142,7 +142,7 @@ The keys used as AutoReplace Triggers are defined by using the TriggersActivator
 
 
 
-&lt;ConfigLanguage name ="C#" Known ="Csharp" StartComment ="//" TriggersActivators =" ;.=()"&gt;
+<ConfigLanguage name ="C#" Known ="Csharp" StartComment ="//" TriggersActivators =" ;.=()">
 
 
 
@@ -150,7 +150,7 @@ Triggers can be flagged as valid only within the specific lexical states. For ex
 
 
 
-&lt;lexem BeginBlock="/* EndBlock="*/" Type="Comment" OnlyLocalSublexems="true" IsComplex="true" IsCollapsable="true" CollapseName="/*...*/" AllowTriggers="false"&gt;
+<lexem BeginBlock="/* EndBlock="*/" Type="Comment" OnlyLocalSublexems="true" IsComplex="true" IsCollapsable="true" CollapseName="/*...*/" AllowTriggers="false">
 
 
 
@@ -178,15 +178,15 @@ The words to be replaced can also be defined within the language definition in t
 
 
 
-&lt;AutoReplaceTriggers&gt;
+<AutoReplaceTriggers>
 
-        &lt;AutoReplaceTrigger From ="tis" To ="this" /&gt;
+        <AutoReplaceTrigger From ="tis" To ="this" />
 
 
 
- &lt;AutoReplaceTrigger From ="itn" To ="int" /&gt;
+ <AutoReplaceTrigger From ="itn" To ="int" />
 
-&lt;/AutoReplaceTriggers&gt;
+</AutoReplaceTriggers>
 
 
 

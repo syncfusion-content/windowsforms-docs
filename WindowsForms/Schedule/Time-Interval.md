@@ -94,7 +94,7 @@ Me.scheduleControl1.AllowSecondsInAppointment = True
 
 
 
-{ ![](Time-Interval_images/Time-Interval_img1.png) | markdownify }
+{{ '![](Time-Interval_images/Time-Interval_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -110,7 +110,7 @@ Recurrence Appointments can be added by using the appointment recurrence dialog 
 2. Uncheck the All Day event.
 3. Enter the Start Time and End Time values.
 
-{ ![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^D7E225994120331E40BD64E3029818F53B14DCAF00CBEDA431^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img2.png) | markdownify }
+{{ '![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^D7E225994120331E40BD64E3029818F53B14DCAF00CBEDA431^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -118,7 +118,7 @@ Recurrence Appointments can be added by using the appointment recurrence dialog 
 
 4. Now click the Make Recurring button to open the Appointment Recurrence Dialog.
 
-{ ![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^B7E1DA37FC59D3BB6D6C41CD1E63B09765AB4C992B642D7F30^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img3.jpeg) | markdownify }
+{{ '![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^B7E1DA37FC59D3BB6D6C41CD1E63B09765AB4C992B642D7F30^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -194,7 +194,7 @@ End If
 
 The following screenshot displays appointments shown in the day view every 10 minutes from 1:00 AM to 2:00 AM.
 
-{ ![](Time-Interval_images/Time-Interval_img4.png) | markdownify }
+{{ '![](Time-Interval_images/Time-Interval_img4.png)' | markdownify }}
 {:.image }
 
 

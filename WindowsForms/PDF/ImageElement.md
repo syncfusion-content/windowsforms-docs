@@ -12,7 +12,7 @@ documentation: ug
 ImageElement is used to render images in the page of the PDF document. It can also support replacing images; HTML to image and PDF to image. These are explained in the following topics.
 
 
-{ ![](ImageElement_images/ImageElement_img1.png) | markdownify }
+{{ '![](ImageElement_images/ImageElement_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ Essential PDF provides you support for loading image streams, files on disk, and
 
 Images are supported through the PdfImage class that is an abstract base class that provides the common functionality for PdfBitmap and PdfMetafile classes. There are static methods in PdfImage providing the capability to create a PdfImage instance from different sources.
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](ImageElement_images/ImageElement_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](ImageElement_images/ImageElement_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce the file size._
 

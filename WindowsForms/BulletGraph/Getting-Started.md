@@ -29,7 +29,7 @@ Steps to create a simple Bullet Graph control:
 
 1. Create a new Windows Forms application project in Visual Studio.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -76,7 +76,7 @@ BulletGraph bulletgraph = new BulletGraph();
 
 4. Run the application to view the Bullet Graph.
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -88,31 +88,31 @@ BulletGraph bulletgraph = new BulletGraph();
 
 1. Create a simple Windows Forms application using Visual Studio.
 
-{ ![D:/Help UGs/BulletGraph/WF/VS_NewProject.bmp](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/VS_NewProject.bmp](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
-{ ![D:/Help UGs/BulletGraph/WF/Select_Ref_Manager.bmp](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/Select_Ref_Manager.bmp](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 3. The Syncfusion Reference Manager Wizard is opened as shown in the following screenshot.
 
-{ ![D:/Help UGs/BulletGraph/WF/Ref_Manager.bmp](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/Ref_Manager.bmp](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
 4. Search for Bullet Graph using SearchBox and select Bullet Graph Control.  Click on Done to add selected Bullet Graph Control.
 
-{ ![D:/Help UGs/BulletGraph/WF/Select_BG.bmp](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/Select_BG.bmp](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
 5. The Bullet Graph assemblies are automatically added to the Project after Clicking OK
 
-{ ![D:/Help UGs/BulletGraph/WF/Selected_BG.bmp](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/Selected_BG.bmp](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -158,11 +158,11 @@ BulletGraph bulletgraph = new BulletGraph();
 
 7. The simple Bullet Graph control is created as shown in the following screenshot.
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 _Note:_   
 

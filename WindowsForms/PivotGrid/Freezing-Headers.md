@@ -25,7 +25,7 @@ The PivotGrid for Windows Forms provides built-in support for freezing column an
 
 
 
-{ ![](Freezing-Headers_images/Freezing-Headers_img1.png) | markdownify }
+{{ '![](Freezing-Headers_images/Freezing-Headers_img1.png)' | markdownify }}
 {:.image }
 
 

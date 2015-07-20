@@ -25,7 +25,7 @@ Me.pivotChart1.AllowDrillDown = True
 
 
 
-{ ![](Drill-UpDown-Level_images/Drill-UpDown-Level_img1.png) | markdownify }
+{{ '![](Drill-UpDown-Level_images/Drill-UpDown-Level_img1.png)' | markdownify }}
 {:.image }
 
 

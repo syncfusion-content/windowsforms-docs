@@ -124,7 +124,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img1.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -855,13 +855,13 @@ excelEngine.Dispose()
 
 The following screenshot shows the connection wizard in MS Excel.
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img2.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img3.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img3.png)' | markdownify }}
 {:.image }
 
 

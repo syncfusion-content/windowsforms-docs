@@ -357,7 +357,7 @@ To add a PDF Viewer control to your application:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -369,7 +369,7 @@ To add a PDF Viewer control to your application:
 
 Appearance and behavior-related aspects of the PDF Viewer can be controlled by setting the appropriate properties through the properties grid. 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -417,13 +417,13 @@ Refer to Viewing PDF files for more information.
 
 The following screenshot is a pictorial representation of PDF Viewer. 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 ToolStrip
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 

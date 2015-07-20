@@ -21,7 +21,7 @@ The user can embed the PDF viewer within the .NET application using this feature
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -77,13 +77,13 @@ ReleaseNotes: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/resources) | markdownify } (Navigate to the PDF Viewer for Windows Forms User Guide.)> ![](Overview_images/Overview_img2.jpeg)
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the PDF Viewer for Windows Forms User Guide.)> ![](Overview_images/Overview_img2.jpeg)
 {:.image }
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+{{{ ''_Note: Click Download as PDF to access a PDF version._'' | markdownify }}}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/resources) | markdownify }cr (Navigate to the Windows Forms User Guide. Select {{ '_PDF Viewer_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }}cr (Navigate to the Windows Forms User Guide. Select {{{ ''_PDF Viewer_'' | markdownify }}}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

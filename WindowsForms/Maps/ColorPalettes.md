@@ -133,7 +133,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-{ ![](ColorPalettes_images/ColorPalettes_img1.png) | markdownify }
+{{ '![](ColorPalettes_images/ColorPalettes_img1.png)' | markdownify }}
 {:.image }
 
 

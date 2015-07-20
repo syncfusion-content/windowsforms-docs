@@ -21,7 +21,7 @@ To create a new test:
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: The QuickTest Professional – Add-in Manager window is displayed._ 
 
@@ -31,7 +31,7 @@ _Note: The QuickTest Professional – Add-in Manager window is displayed._
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -45,11 +45,11 @@ _Figure_ _9__: QuickTest Professional - Add-In Manager_
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 _Note:The QuickTest Professional – [Start Page] window is displayed. There are two tabs, Start Page and Test, in the main pane of the window. The content under the Start Page tab is displayed by default._
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -63,7 +63,7 @@ _Figure_ _10__: QuickTest Professional – [Start Page]_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -81,7 +81,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -91,11 +91,11 @@ _Figure_ _12__: QuickTest Professional – [Test*] Window showing Record tool_
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img7.jpeg)' | markdownify }}
 {:.image }
 _Note: A Record and Run Settings dialog box is displayed._
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -109,11 +109,11 @@ _Figure_ _13__: Record and Run Settings-Web tab_
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img9.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img9.jpeg)' | markdownify }}
 {:.image }
 _Note: The content under the tab is displayed._ 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -121,7 +121,7 @@ _Note: The content under the tab is displayed._
 
 _Figure_ _14__: Record and Run Settings-Windows Applications_
 
-> { ![](Getting-Started_images/Getting-Started_img11.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img11.jpeg)' | markdownify }}
 {:.image }
 _Note: The Record and run only on option button is selected by default, and the check boxes selected under it ensure that only the applications opened by QuickTest and added applications are tested._
 
@@ -131,11 +131,11 @@ _Note: The Record and run only on option button is selected by default, and the 
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img12.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img12.jpeg)' | markdownify }}
 {:.image }
 _Note: The Application Details dialog box is displayed._ 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -145,14 +145,14 @@ _Figure_ _15__: Application Details_
 
 
 
-8. Browse and select the path of the application that is to be tested by clicking ({ ![](Getting-Started_images/Getting-Started_img14.jpeg) | markdownify }
+8. Browse and select the path of the application that is to be tested by clicking ({{ '![](Getting-Started_images/Getting-Started_img14.jpeg)' | markdownify }}
 {:.image }
 ) for the Application: label.
-9. Browse and select the path of the working folder by clicking ({ ![](Getting-Started_images/Getting-Started_img15.jpeg) | markdownify }
+9. Browse and select the path of the working folder by clicking ({{ '![](Getting-Started_images/Getting-Started_img15.jpeg)' | markdownify }}
 {:.image }
 ) for the Working folder: label.
 > 
-{ ![](Getting-Started_images/Getting-Started_img16.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.jpeg)' | markdownify }}
 {:.image }
 _Note: Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box includes all the processes that are descendant to the current process. Both these check boxes will be selected by default._
 
@@ -162,11 +162,11 @@ _Note: Selecting the Launch application check box launches the application immed
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img17.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img17.jpeg)' | markdownify }}
 {:.image }
 _Note: The path of the application and working folder are displayed in the Application details frame as shown below._
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -180,13 +180,13 @@ _Figure_ _16__: Record and Run Settings with the Application Location_
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img19.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img19.jpeg)' | markdownify }}
 {:.image }
 _Note: The recording starts. The application in the given path is opened as shown below._
 
 > 
 
-{ ![](Getting-Started_images/Getting-Started_img20.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -200,7 +200,7 @@ _Figure_ _17__: Application using Grid Control_
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img21.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img21.jpeg)' | markdownify }}
 {:.image }
 _Note: Whenever the user performs any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL._
 
@@ -210,19 +210,19 @@ _Note: Whenever the user performs any action involving the Syncfusion control us
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img22.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img22.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img23.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img23.jpeg)' | markdownify }}
 {:.image }
 _Note:This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording in which the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown below._
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img24.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -232,7 +232,7 @@ _Figure_ _18__: Default recording without recognizing Syncfusion control_
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img25.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img25.jpeg)' | markdownify }}
 {:.image }
 _Note:The low-level recording is the default recording, which is done by QTP when the steps mentioned in the Configuring Essential QuickTest Professional section are not followed. The recording can be stopped by clicking the Stop button in the toolbar._
 
@@ -248,11 +248,11 @@ On recording, all the user actions performed in the control are just noted with 
 
 1. Click Run in the toolbar.
 > 
-{ ![](Getting-Started_images/Getting-Started_img26.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img26.jpeg)' | markdownify }}
 {:.image }
 _Note: The Run dialog box is displayed. The Results Location tab is highlighted by default._
 
-{ ![](Getting-Started_images/Getting-Started_img27.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -271,19 +271,19 @@ In the Results Location tab, two options are provided:
 
 2. Click the required option.
 > 
-{ ![](Getting-Started_images/Getting-Started_img28.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img28.jpeg)' | markdownify }}
 {:.image }
 _Note: Selecting one option renders the other unavailable._
 
 
 
-3. Browse and select the required location by clicking the &lt;icon&gt;
+3. Browse and select the required location by clicking the <icon>
 > 
-{ ![](Getting-Started_images/Getting-Started_img29.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img29.jpeg)' | markdownify }}
 {:.image }
 _Note: QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, in which the results are summarized as shown below:_
 
-{ ![](Getting-Started_images/Getting-Started_img30.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -297,7 +297,7 @@ The process of running the test is completed.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img31.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img31.jpeg)' | markdownify }}
 {:.image }
  To know more about running scripts, refer to the QTP help document. 
 
@@ -319,7 +319,7 @@ The following image shows adding a script line to the Expert View pane.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img32.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -333,11 +333,11 @@ You can run the edited test to check whether the newly added or changed scripts 
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img33.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img33.jpeg)' | markdownify }}
 {:.image }
 _Note: Sometimes, the newly added or changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog will show the failure as shown below:_
 
-{ ![](Getting-Started_images/Getting-Started_img34.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img34.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -355,7 +355,7 @@ Editing in Keyword View
 
 The keyword view is meant for persons who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown below.
 
-{ ![](Getting-Started_images/Getting-Started_img35.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img35.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -373,7 +373,7 @@ To edit the test in Keyword view, you can perform any of the following actions:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img36.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -387,11 +387,11 @@ For example, clicking Cut in the menu will cause the row representing a user-act
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img37.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img37.jpeg)' | markdownify }}
 {:.image }
 _Note: All the items under the Item header are represented as a drop-down list._
 
-{ ![](Getting-Started_images/Getting-Started_img38.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img38.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -405,7 +405,7 @@ You can then run the edited test.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img39.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img39.jpeg)' | markdownify }}
 {:.image }
  For more details on running the edited test, refer to Editing on Expert View topic.
 
@@ -417,7 +417,7 @@ Saving a test is like saving any other document or picture. To save a test, foll
 
 1. Click the Save button in the toolbar. The Save Test dialog box is displayed.
 
-{ ![](Getting-Started_images/Getting-Started_img40.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -443,11 +443,11 @@ The tests that have been saved can be replayed later. To run a saved test, follo
 
 1. Click Open on the toolbar.
 > 
-{ ![](Getting-Started_images/Getting-Started_img41.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img41.jpeg)' | markdownify }}
 {:.image }
 _Note: The Open Test dialog box is displayed with a list of saved tests._
 
-{ ![](Getting-Started_images/Getting-Started_img42.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -459,7 +459,7 @@ _Figure_ _27__: Open Test Dialog_
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img43.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img43.jpeg)' | markdownify }}
 {:.image }
 _Note: The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened._
 
@@ -469,7 +469,7 @@ The following image shows the mouse pointer pointing towards the path and file d
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img44.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -481,7 +481,7 @@ _Figure_ _28__: Test Opened_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img45.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img45.jpeg)' | markdownify }}
 {:.image }
  For more details on running the test, refer to the Running a Test topic in this document.
 

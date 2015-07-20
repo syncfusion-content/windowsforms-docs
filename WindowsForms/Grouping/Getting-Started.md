@@ -23,7 +23,7 @@ Creating a Windows Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ Creating a WPF Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99,7 +99,7 @@ The following steps will guide you to deploy Essential Grouping:
 4. Now you may see that the Syncfusion assemblies referenced in the project are copied to the output directory along with the application executable (bin/debug/).
 5. Deploy the exe along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application exe in the target machine.
 > 
-{ ![](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._ 
 
@@ -122,7 +122,7 @@ The following steps will guide you to deploy Essential Grouping in an ASP.NET ap
 1. Marking the Application directory-The appropriate directory, usually where the aspx files are stored, must be marked as Application in IIS.
 2. Syncfusion Assemblies-The Syncfusion assemblies need to be in the bin folder that is beside the aspx files.
 > 
-{ ![](Getting-Started_images/Getting-Started_img5.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: They can also be in the GAC, in which case, they should be referenced in Web.config file._
 
@@ -132,27 +132,27 @@ _Note: They can also be in the GAC, in which case, they should be referenced in 
 
 
 
-&lt;configuration&gt;
+<configuration>
 
-   &lt;system.web&gt;
+   <system.web>
 
-     &lt;compilation&gt;
+     <compilation>
 
-      &lt;assemblies&gt;
+      <assemblies>
 
-&lt;add assembly="Syncfusion.Grid.Grouping.Web, Version=x.x.x.x, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/&gt;&lt;/assemblies&gt;
+<add assembly="Syncfusion.Grid.Grouping.Web, Version=x.x.x.x, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/></assemblies>
 
-     &lt;/compilation&gt;
+     </compilation>
 
   ...                
 
-  &lt;/system.web&gt;
+  </system.web>
 
-&lt;/configuration&gt;
+</configuration>
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img6.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: The version numbers in the above references will vary depending on the version you are linking to._
 
@@ -162,7 +162,7 @@ Refer to the document in the following path, for step by step process of Syncfus
 
 [http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
 
-> { ![](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img7.jpeg)' | markdownify }}
 {:.image }
 _Note: Application with Essential Grouping needs the following dependent assemblies for deployment._
 

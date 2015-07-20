@@ -17,17 +17,17 @@ Essential HTMLUI has extensive support to Scripts. Scripting involves creating s
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body bgColor="#edf0f7"&gt;
+<body bgColor="#edf0f7">
 
-&lt;p&gt;
+<p>
 
-&lt;input type="text" id="txt"&gt;&lt;/input&gt;
+<input type="text" id="txt"></input>
 
-&lt;/p&gt;
+</p>
 
-&lt;script language="C#"&gt;
+<script language="C#">
 
 using System;
 
@@ -91,11 +91,11 @@ scripttext.UserControl.CustomControl.Text = "This is a sample for scripting";
 
 }
 
-&lt;/script&gt;&lt;br/&gt;
+</script><br/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -103,7 +103,7 @@ scripttext.UserControl.CustomControl.Text = "This is a sample for scripting";
 
 This sample illustrates the support of self-contained HTML documents in HTMLUI.
 
-{ ![](Scripting_images/Scripting_img1.jpeg) | markdownify }
+{{ '![](Scripting_images/Scripting_img1.jpeg)' | markdownify }}
 {:.image }
 
 

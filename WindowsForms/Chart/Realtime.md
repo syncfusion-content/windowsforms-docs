@@ -17,5 +17,5 @@ While you can use the ChartSeries.Points to add new data points to the existing 
 
 A sample application that illustrates this is distributed along with the EssentialChart installation and can be found at:
 
-Sample Location: "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Real Time\Chart Recorder"
+Sample Location: "<sample installation location>\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Real Time\Chart Recorder"
 

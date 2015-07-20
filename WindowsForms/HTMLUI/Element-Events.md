@@ -17,15 +17,15 @@ Each HTML element in an HTML document is made to support events, such asClick, D
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;input type="text" id="text1"/&gt;
+<input type="text" id="text1"/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -159,19 +159,19 @@ Another important feature of the HTMLUI is its Bubbling Event architecture. With
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;input type="button" id="button1"/&gt;
+<input type="button" id="button1"/>
 
-&lt;br/&gt;
+<br/>
 
-&lt;input type="button" id="button2"/&gt;
+<input type="button" id="button2"/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -287,7 +287,7 @@ End Sub
 
 This sample demonstrates the implementation of Bubbling Event architecture in HTMLUI.
 
-{ ![](Element-Events_images/Element-Events_img1.jpeg) | markdownify }
+{{ '![](Element-Events_images/Element-Events_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -305,7 +305,7 @@ This sample shows how element events are handled for creating effective user int
 
 
 
-{ ![](Element-Events_images/Element-Events_img2.jpeg) | markdownify }
+{{ '![](Element-Events_images/Element-Events_img2.jpeg)' | markdownify }}
 {:.image }
 
 

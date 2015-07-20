@@ -326,7 +326,7 @@ The following code example illustrates how to stream the document to the browser
 
 You can utilize the asynchronous Open and Save methods of WordDocument class to develop UI responsive applications. These asynchronous methods return tasks that have information about the task completion status, history, any exception that is raised or canceled, and the final result.
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: Asynchronous support is applicable only to Windows Store, Windows Phone - Silverlight 8 and 8.1, and Windows Phone 8.1 (based on WinRT) apps._
 
@@ -430,7 +430,7 @@ To begin with, create a Word document with a single section and customized page 
 
 This creates an A4 size Word document with the four margins of the pages set to 72 points. The following screenshot shows how the document appears after customizing the page settings.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -448,7 +448,7 @@ You can add a header to a document and position it according to your requirement
 </table>
 In the preceding code, the picture is appended to the paragraph, and the width and height of the picture are set to fit inside the cell. The following screenshot shows how the document looks after adding the logo.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -466,7 +466,7 @@ You can add the address of the sender to an invoice. The following code example 
 </table>
 You can append address text to the paragraph by specifying the font and size in the invoice. The following screenshot shows how the document looks after adding the sender’s address.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -494,7 +494,7 @@ You can specify the font size, style, and color for a paragraph. You can also cr
 </table>
 Similarly, you can append the Merge field for the current date, and reuse the font that is created for the subheading. The following screenshot shows the invoice document with the invoice number and date.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -512,7 +512,7 @@ You can create a new table and append the Merge field to add the buyer’s addre
 </table>
 The contents are displayed as shown in the following template document. You can notice that the table has different header style than that of the other rows.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -552,7 +552,7 @@ For the other rows, you can specify the cell format and string format just as fo
 </table>
 The contents are displayed as shown in the following template document.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -570,7 +570,7 @@ To add total due, you can append the TotalDue merge field to the table cell. You
 </table>
 The invoice template appears as shown in the following screenshot.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -588,7 +588,7 @@ You can add an empty paragraph to the footer of the current section and apply a 
 </table>
 The invoice document appears as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -608,7 +608,7 @@ Finally, the template document is saved to the disk or stream by using the Save 
 
 The final template document that is ready to be distributed, appears as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -654,7 +654,7 @@ The final template document that is ready to be distributed, appears as follows.
 
 The final document that is ready to be distributed, appears as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 

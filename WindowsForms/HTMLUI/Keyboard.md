@@ -15,7 +15,7 @@ The HTMLUI control also supports usage of keyboards for navigating through the l
 
 This sample shows how elements in the document can be focused by using the Keyboard support in HTMLUI.
 
-{ ![](Keyboard_images/Keyboard_img1.jpeg) | markdownify }
+{{ '![](Keyboard_images/Keyboard_img1.jpeg)' | markdownify }}
 {:.image }
 
 

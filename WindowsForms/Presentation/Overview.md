@@ -24,7 +24,7 @@ Important features of Essential Presentation are as follows.
 
 
 
-> { ![](Overview_images/Overview_img1.jpeg) | markdownify }
+> {{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 {:.image }
 _The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, creation & editing of Handsouts, equations, built-in themes & its variants._ 
 

@@ -19,11 +19,11 @@ The computations are performed as listed below, with level one operations done f
 
 * *, /: multiplication, division 
 * +, -: addition, subtraction 
-* &lt;, &gt;, =, &lt;=, &gt;=, &lt;&gt;: less than, greater than, equal, less than or equal, greater than or equal, not equal
+* <, >, =, <=, >=, <>: less than, greater than, equal, less than or equal, greater than or equal, not equal
 * match, like, in, between 
 * or, and, or
 > 
-{ ![](Algebra-Supported-In-Expressions--Filters_images/Algebra-Supported-In-Expressions--Filters_img1.jpeg) | markdownify }
+{{ '![](Algebra-Supported-In-Expressions--Filters_images/Algebra-Supported-In-Expressions--Filters_img1.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 
@@ -61,7 +61,7 @@ Example
 
 
 
-{ ![](Algebra-Supported-In-Expressions--Filters_images/Algebra-Supported-In-Expressions--Filters_img2.jpeg) | markdownify }
+{{ '![](Algebra-Supported-In-Expressions--Filters_images/Algebra-Supported-In-Expressions--Filters_img2.jpeg)' | markdownify }}
 {:.image }
  Note that spaces that are significant in the list, i.e. {RTR,MAS} is not the same as {RTR, MAS}. 
 

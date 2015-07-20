@@ -65,7 +65,7 @@ BulletGraph bulletgraph = new BulletGraph();
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_Caption.bmp](Features_images/Features_img3.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_Caption.bmp](Features_images/Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -94,7 +94,7 @@ The caption in the Bullet Graph is placed at the start or end of the quantitativ
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_Caption_Far.bmp](Features_images/Features_img4.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_Caption_Far.bmp](Features_images/Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -132,7 +132,7 @@ The value of the Featured Measure of the BulletGraph is set by the FeaturedMeasu
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_FM.bmp](Features_images/Features_img5.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_FM.bmp](Features_images/Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -168,7 +168,7 @@ The value of the Comparative Measure is set by using the ComparativeMeasure prop
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_CM.bmp](Features_images/Features_img6.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_CM.bmp](Features_images/Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -202,7 +202,7 @@ The width of the ranges are customized by setting the QualitativeRangesSize prop
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Features_images/Features_img7.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Features_images/Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -240,7 +240,7 @@ bulletgraph.BindRangeStrokeToTicks = true;
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_BindRangeStrokeToTicksLabels.png](Features_images/Features_img8.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_BindRangeStrokeToTicksLabels.png](Features_images/Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -290,7 +290,7 @@ BulletGraph bulletgraph = new BulletGraph();
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_Tick.png](Features_images/Features_img9.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_Tick.png](Features_images/Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -330,7 +330,7 @@ BulletGraph bulletgraph = new BulletGraph();
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_TickPos.bmp](Features_images/Features_img10.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_TickPos.bmp](Features_images/Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -374,7 +374,7 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_Label.bmp](Features_images/Features_img11.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_Label.bmp](Features_images/Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -411,7 +411,7 @@ The labels in the scale are placed above or below the qualitative ranges by choo
 
 
 
-{ ![D:/Help UGs/BulletGraph/WF/BG_LabelPos.bmp](Features_images/Features_img12.png) | markdownify }
+{{ '![D:/Help UGs/BulletGraph/WF/BG_LabelPos.bmp](Features_images/Features_img12.png)' | markdownify }}
 {:.image }
 
 

@@ -139,7 +139,7 @@ End Sub
 
 The following figure shows the Print preview page that appears when the corresponding button is clicked. This illustrates the Printing feature in HTMLUI.
 
-{ ![](Printing_images/Printing_img1.png) | markdownify }
+{{ '![](Printing_images/Printing_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -147,7 +147,7 @@ The following figure shows the Print preview page that appears when the correspo
 
 This sample shows how an HTML document available in the HTMLUI can be printed.
 
-{ ![](Printing_images/Printing_img2.jpeg) | markdownify }
+{{ '![](Printing_images/Printing_img2.jpeg)' | markdownify }}
 {:.image }
 
 

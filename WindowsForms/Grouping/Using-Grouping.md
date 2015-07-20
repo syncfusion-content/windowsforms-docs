@@ -17,7 +17,7 @@ In this lesson, you will start working with the Grouping.Engine object to see ho
 
 You will now look at the property that holds the schema information that is associated with the data, i.e., the grouping.Engine.TableDescriptor property. For example, the TableDescriptor.Columns property holds a collection of ColumnDescriptor objects that define the schema information on the columns in the data. 
 
-> { ![C:/Users/ApoorvahR/Desktop/Note.png](Using-Grouping_images/Using-Grouping_img1.png) | markdownify }
+> {{ '![C:/Users/ApoorvahR/Desktop/Note.png](Using-Grouping_images/Using-Grouping_img1.png)' | markdownify }}
 {:.image }
 _Note: Here, the columns correspond to the public properties in our sample MyObject class, A, B, C, and D._
 
@@ -89,7 +89,7 @@ Next rec
 
 
 
-{ ![](Using-Grouping_images/Using-Grouping_img2.png) | markdownify }
+{{ '![](Using-Grouping_images/Using-Grouping_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -307,7 +307,7 @@ Console.ReadLine()
 
 
 
-{ ![](Using-Grouping_images/Using-Grouping_img3.png) | markdownify }
+{{ '![](Using-Grouping_images/Using-Grouping_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -383,7 +383,7 @@ groupingEngine.TableDescriptor.Summaries.Add(sdBInt32Agg)
 
 
 
-{ ![](Using-Grouping_images/Using-Grouping_img4.jpeg) | markdownify }
+{{ '![](Using-Grouping_images/Using-Grouping_img4.jpeg)' | markdownify }}
 {:.image }
  There are several overloads of the constructor for SummaryDescriptor. Here, we are using the overload that accepts a SummaryType enum as the third argument. This SummaryType will allow you to pick out some predefined calculations such as the Int32Aggregate functions like Max, Min, Sum, and Average. There are enums that specify double, boolean, and other aggregate types. Here, we choose Int32 as that is the type of value you will see in the B property in the data.
 
@@ -479,7 +479,7 @@ Console.ReadLine()
 
 
 
-{ ![](Using-Grouping_images/Using-Grouping_img5.png) | markdownify }
+{{ '![](Using-Grouping_images/Using-Grouping_img5.png)' | markdownify }}
 {:.image }
 
 

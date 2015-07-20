@@ -17,7 +17,7 @@ Tree map-like support provides rich UI for shapes and bubbles. Annotation and To
 
 
 
-Options like zooming, panning, and map selection extend the interactivity of the map.{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+Options like zooming, panning, and map selection extend the interactivity of the map.{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -33,7 +33,7 @@ Options like zooming, panning, and map selection extend the interactivity of the
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -143,7 +143,7 @@ In the above snippet “world1” is a shapefile name.
 
 Screenshot:
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 

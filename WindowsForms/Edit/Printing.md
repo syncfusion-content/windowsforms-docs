@@ -59,7 +59,7 @@ Me.editControl1.Print()
 
 
 
-{ ![](Printing_images/Printing_img1.jpeg) | markdownify }
+{{ '![](Printing_images/Printing_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ Me.editControl1.PrintPreview()
 
 
 
-{ ![](Printing_images/Printing_img2.jpeg) | markdownify }
+{{ '![](Printing_images/Printing_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -291,7 +291,7 @@ The following image shows a typical page with a header and footer in Print Previ
 
 
 
-{ ![](Printing_images/Printing_img3.jpeg) | markdownify }
+{{ '![](Printing_images/Printing_img3.jpeg)' | markdownify }}
 {:.image }
 
 

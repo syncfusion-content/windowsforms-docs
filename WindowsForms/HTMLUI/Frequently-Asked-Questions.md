@@ -23,27 +23,27 @@ The following code snippet illustrates how the child elements of the Body elemen
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;style&gt;.nav{"background-color:#dae5f5"}&lt;/style&gt;
+<style>.nav{"background-color:#dae5f5"}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-&lt;p/&gt;
+<p/>
 
-&lt;img src="sync.jpg" id="img1" class="nav"/&gt;
+<img src="sync.jpg" id="img1" class="nav"/>
 
-&lt;p/&gt;
+<p/>
 
 <div>This is a sample</div>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -199,15 +199,15 @@ The following HTML document shows an input tag textbox element with an id as the
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt; 
+<body> 
 
-&lt;input type="text" id="txt"/&gt;
+<input type="text" id="txt"/>
 
-&lt;/body&gt; 
+</body> 
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -287,23 +287,23 @@ The following HTML document contains a div element. The code snippet shows how t
 
 
 
-&lt;!-- HTML Document --&gt;
+<!-- HTML Document -->
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;div id="div1"&gt;
+<div id="div1">
 
 Have an issue you need to contact Syncfusion about? Use our state of the art incident management
 
 system - Direct-Trac.
 
-&lt;/div&gt;
+</div>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -345,19 +345,19 @@ The following HTML document illustrates how an input element with a name is decl
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;p&gt;
+<p>
 
-&lt;input type="text" id="txt1" name="textboxOne" size="20"&gt;&lt;/input&gt;
+<input type="text" id="txt1" name="textboxOne" size="20"></input>
 
-&lt;/p&gt;
+</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -487,29 +487,29 @@ The PreRenderDocument event is raised when the elements in the HTML document are
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body bgcolor="#c4d6e9"&gt;
+<body bgcolor="#c4d6e9">
 
 <h1>Syncfusion</h1>
 
-&lt;h4&gt;.NET Essentials</h4>
+<h4>.NET Essentials</h4>
 
-&lt;p&gt;
+<p>
 
-&lt;img id="image" src="files/oldImage.gif"/&gt;
+<img id="image" src="files/oldImage.gif"/>
 
-&lt;/p&gt;
+</p>
 
-&lt;p&gt;
+<p>
 
 Essential Studio includes ten component libraries in one great package. Each of these products has a unique and useful feature set. Syncfusion aims to provide customers with the utmost satisfaction and value in using Syncfusion and Microsoft technologies through our technical consulting and training services.
 
-&lt;/p&gt;
+</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 The following snippet shows how an image reference is changed for a page in the HTMLUI at run time, by using the PrerenderDocument event. 
@@ -622,7 +622,7 @@ The following figure illustrates this behavior where the oldImage has been repla
 
 
 
-{ ![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img1.jpeg) | markdownify }
+{{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -664,27 +664,27 @@ The following HTML document contains a textbox and a button element. The followi
 
 
 
-&lt;!-- HTML document --&gt;
+<!-- HTML document -->
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;p&gt;
+<p>
 
-&lt;input type="text" id="txt1"&gt;&lt;/input&gt;
+<input type="text" id="txt1"></input>
 
-&lt;/p&gt;
+</p>
 
-&lt;p&gt;
+<p>
 
-&lt;input type="button" id="btn1" value="Button1"&gt;&lt;/input&gt;
+<input type="button" id="btn1" value="Button1"></input>
 
-&lt;/p&gt;
+</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -906,23 +906,23 @@ The following snippet shows how the elements interact with each other on the exe
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
 <title>HTMLUI Element Interactivity</title>
 
-&lt;/head&gt;
+</head>
 
-&lt;body bgcolor="#DBE2F2"&gt;
+<body bgcolor="#DBE2F2">
 
-&lt;p&gt;&lt;input type="button" id="btn" value="HTMLButton"/&gt;&lt;/p&gt;
+<p><input type="button" id="btn" value="HTMLButton"/></p>
 
-&lt;p&gt;<div id="div">HTMLUI supports a wide variety of HTML tags that can be used to display very rich HTML documents.&lt;/div&gt;&lt;/p&gt;
+<p><div id="div">HTMLUI supports a wide variety of HTML tags that can be used to display very rich HTML documents.</div></p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -930,13 +930,13 @@ The following snippet shows how the elements interact with each other on the exe
 
 
 
-// Class that is responsible for &lt;input&gt; tag
+// Class that is responsible for <input> tag
 
 INPUTElementImpl button; 
 
 
 
-// Class that is responsible for &lt;div&gt; tag
+// Class that is responsible for <div> tag
 
 DIVElementImpl div;
 
@@ -990,7 +990,7 @@ private void div_InnerHTMLChanged(object sender, ValueChangedEventArgs e)
 
    // the output.
 
-this.div.Children.Parent.Parent.InnerHTML = this.div.OuterHTML + "&lt;p/&gt;&lt;img src='HTMLUI.gif'/&gt;";
+this.div.Children.Parent.Parent.InnerHTML = this.div.OuterHTML + "<p/><img src='HTMLUI.gif'/>";
 
 }
 
@@ -1000,13 +1000,13 @@ this.div.Children.Parent.Parent.InnerHTML = this.div.OuterHTML + "&lt;p/&gt;&lt;
 
 
 
-'  Class that is responsible for &lt;input&gt; tag
+'  Class that is responsible for <input> tag
 
 Private button As INPUTElementImpl
 
 
 
-' Class that is responsible for &lt;div&gt; tag    
+' Class that is responsible for <div> tag    
 
 Private div As DIVElementImpl
 
@@ -1054,7 +1054,7 @@ Private Sub div_InnerHTMLChanged(ByVal sender As Object, ByVal e As ValueChanged
 
 '   the output
 
-Me.div.Children.Parent.Parent.InnerHTML = Me.div.OuterHTML & "&lt;p/&gt;&lt;img src='HTMLUI.gif'/&gt;"
+Me.div.Children.Parent.Parent.InnerHTML = Me.div.OuterHTML & "<p/><img src='HTMLUI.gif'/>"
 
 End Sub
 
@@ -1064,7 +1064,7 @@ The button and the div elements are obtained. Events are declared for both the e
 
 
 
-{ ![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img2.jpeg) | markdownify }
+{{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1078,15 +1078,15 @@ You can make use of the GetControlByElement() method of the InputHTML Interface 
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt; 
+<body> 
 
-&lt;input type="text" id="txt"/&gt;
+<input type="text" id="txt"/>
 
-&lt;/body&gt; 
+</body> 
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1162,73 +1162,73 @@ An HTML document containing custom controls is shown below.
 
 
 
-&lt;HTML&gt;
+<HTML>
 
-&lt;HEAD&gt;
+<HEAD>
 
 <TITLE>HTMLUI CUSTOM CONTROLS</TITLE>
 
-&lt;style&gt; 
+<style> 
 
 .tttDisplay { text-decoration: none; color: #ffffff; font-family: Tahoma; font-size: 34pt; font-weight: bold; line-height: 30px; padding-left: 2px; }
 
-&lt;/style&gt;
+</style>
 
-&lt;/HEAD&gt;
+</HEAD>
 
-&lt;BODY&gt;
-
-
-
-&lt;TABLE id="CustomControls" cellSpacing="0" cellPadding="0" width="100%" bgColor="silver" border="1" height="100%" align="center"&gt;
+<BODY>
 
 
 
-&lt;TR&gt;
-
-&lt;TD class="tttDisplay" height="33%" width="100%" id="cctd1" vAlign="center"&gt;
-
-&lt;maskededittextbox id="maskedEditTextBox1" height="20" width="136"&gt;
-
-&lt;/maskededittextbox&gt;
-
-&lt;/TD&gt;
-
-&lt;/TR&gt;
+<TABLE id="CustomControls" cellSpacing="0" cellPadding="0" width="100%" bgColor="silver" border="1" height="100%" align="center">
 
 
 
-&lt;TR&gt;
+<TR>
 
-&lt;TD class="tttDisplay" height="33%" width="100%" id="cctd2" vAlign="center"&gt;
+<TD class="tttDisplay" height="33%" width="100%" id="cctd1" vAlign="center">
 
-&lt;monthcalendar id="monthCalendar1" width="199" height="155"&gt;&lt;/monthcalendar&gt;
+<maskededittextbox id="maskedEditTextBox1" height="20" width="136">
 
-&lt;/TD&gt;
+</maskededittextbox>
 
-&lt;/TR&gt;
+</TD>
 
-
-
-&lt;TR&gt;
-
-&lt;TD class="tttDisplay" height="33%" width="100%" id="cctd3" vAlign="center"&gt;
-
-&lt;datagrid id="dataGrid1" width="304" height="144"&gt;&lt;/datagrid&gt;
-
-&lt;/TD&gt;
-
-&lt;/TR&gt;
+</TR>
 
 
 
-&lt;/TABLE&gt;
+<TR>
+
+<TD class="tttDisplay" height="33%" width="100%" id="cctd2" vAlign="center">
+
+<monthcalendar id="monthCalendar1" width="199" height="155"></monthcalendar>
+
+</TD>
+
+</TR>
 
 
 
-&lt;/BODY&gt;
+<TR>
 
-&lt;/HTML&gt;
+<TD class="tttDisplay" height="33%" width="100%" id="cctd3" vAlign="center">
+
+<datagrid id="dataGrid1" width="304" height="144"></datagrid>
+
+</TD>
+
+</TR>
+
+
+
+</TABLE>
+
+
+
+</BODY>
+
+</HTML>
 
 
 
@@ -1332,15 +1332,15 @@ You can make use of the GetControlByElement() method of the InputHTML Interface 
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt; 
+<body> 
 
-&lt;input type="text" id="txt"/&gt;
+<input type="text" id="txt"/>
 
-&lt;/body&gt; 
+</body> 
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1417,7 +1417,7 @@ An HTML document can be loaded at startup by two ways:
 
 Using the Properties window, involves specifying the location of the startup HTML file by using the StartupDocument property of the HTMLUI control. The link shown at the bottom of the Properties window can also be used for the same purpose.
 
-{ ![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img3.jpeg) | markdownify }
+{{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1533,9 +1533,9 @@ Loading HTML in the form of a string can be done as shown below.
 
 
 
-string htmlCode ="&lt;HTML&gt;&lt;HEAD&gt;<TITLE>HI</TITLE>&lt;/HEAD&gt;
+string htmlCode ="<HTML><HEAD><TITLE>HI</TITLE></HEAD>
 
-&lt;BODY bgcolor='#ffffff'&gt;&lt;INPUT type='button' id='btn'/&gt;&lt;/INPUT&gt;&lt;/BODY&gt;&lt;/HTML&gt;";
+<BODY bgcolor='#ffffff'><INPUT type='button' id='btn'/></INPUT></BODY></HTML>";
 
 this.htmluiControl1.LoadFromString(htmlCode);
 
@@ -1545,9 +1545,9 @@ this.htmluiControl1.LoadFromString(htmlCode);
 
 
 
-Private htmlCode As String = "&lt;HTML&gt;&lt;HEAD&gt;<TITLE>HI</TITLE>&lt;/HEAD&gt;"
+Private htmlCode As String = "<HTML><HEAD><TITLE>HI</TITLE></HEAD>"
 
-&lt;BODY bgcolor="#ffffff'&gt;&lt;INPUT type='button' id='btn'/&gt;&lt;/INPUT&gt;&lt;/BODY&gt;&lt;/HTML&gt;"
+<BODY bgcolor="#ffffff'><INPUT type='button' id='btn'/></INPUT></BODY></HTML>"
 
 Me.HtmluiControl1.LoadFromString(htmlCode)
 
@@ -1583,7 +1583,7 @@ Me.HtmluiControl1.LoadHTML(htmlStream)
 
 
 
-> { ![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img4.jpeg) | markdownify }
+> {{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users._
 
@@ -1681,35 +1681,35 @@ The following code snippet shows how the visibility of an element is toggled on 
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;table&gt;
+<table>
 
-&lt;tr&gt;
-
-<td id="tdpopup">Cell Toggle</td>
+<tr>
 
 <td id="tdpopup">Cell Toggle</td>
 
-&lt;/tr&gt;
+<td id="tdpopup">Cell Toggle</td>
 
-&lt;tr&gt;
+</tr>
 
-&lt;td colspan="2"&gt;
+<tr>
 
-&lt;img src="sync.gif" id="img"/&gt;
+<td colspan="2">
 
-&lt;/td&gt;
+<img src="sync.gif" id="img"/>
 
-&lt;/tr&gt;
+</td>
 
-&lt;/table&gt;
+</tr>
 
-&lt;/body&gt;
+</table>
 
-&lt;/html&gt;
+</body>
+
+</html>
 
 
 

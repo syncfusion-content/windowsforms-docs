@@ -28,7 +28,7 @@ Advantages of Content compression
 
 •Reduces a text file upto 50 percent of its original size.
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](PDF-Compliance_images/PDF-Compliance_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](PDF-Compliance_images/PDF-Compliance_img1.png)' | markdownify }}
 {:.image }
 _Note: Compression is performed by a program that uses a formula or algorithm, which determines how to compress or decompress the data. This algorithm is one of the critical factors that determines compression quality and is elaborated below._ 
 

@@ -296,20 +296,20 @@ The following code illustrates how to insert a HTML string into the body part of
 <table>
 <tr>
 <td>
-[C#]//Inserts XHTML String.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”);</td></tr>
+[C#]//Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”);</td></tr>
 <tr>
 <td>
-[VB.NET]'Inserts XHTML String.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”)</td></tr>
+[VB.NET]'Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”)</td></tr>
 </table>
 You can also insert the HTML string in the particular position of the document by specifying the index of the paragraph in the InsertXHTML overload of the TextBody class.
 
 <table>
 <tr>
 <td>
-[C#]//Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1);</td></tr>
+[C#]//Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1);</td></tr>
 <tr>
 <td>
-[VB.NET]'Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1)</td></tr>
+[VB.NET]'Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1)</td></tr>
 </table>
 
 
@@ -319,17 +319,17 @@ You can also insert the HTML string in the particular position of the document b
 <table>
 <tr>
 <td>
-[C#]//Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1,2);</td></tr>
+[C#]//Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2);</td></tr>
 <tr>
 <td>
-[VB.NET]'Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1,2)</td></tr>
+[VB.NET]'Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2)</td></tr>
 </table>
 
 
 It is possible to insert XHTML formatted text inside a Paragraph with the following limitations:
 
-* The content is placed inside a &lt;p&gt; tag, to validate against the XHTML schemas as explained before.
-* This HTML example cannot contain any block elements like div, and so on, and results in an exception being thrown otherwise. The only exception to this case is a single &lt;p&gt; tag.
+* The content is placed inside a <p> tag, to validate against the XHTML schemas as explained before.
+* This HTML example cannot contain any block elements like div, and so on, and results in an exception being thrown otherwise. The only exception to this case is a single <p> tag.
 * Among the supported XHTML tags, only the inline tags are used for formatting text.
 
 
@@ -346,7 +346,7 @@ The following code example illustrates, appending a HTML formatted string into a
 </table>
 
 
-> { ![](Importing-and-Exporting_images/Importing-and-Exporting_img1.jpeg) | markdownify }
+> {{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img1.jpeg)' | markdownify }}
 {:.image }
 _Notes: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications._
 
@@ -378,11 +378,11 @@ Description</td></tr>
 <tr>
 <td>
 Strict</td><td>
-The strict type validation does not support any HTML presentation elements (such as &lt;p&gt;, &lt;a&gt;, &lt;b&gt;, etc.). This is the low-featured XHTML validation type.</td></tr>
+The strict type validation does not support any HTML presentation elements (such as <p>, <a>, <b>, etc.). This is the low-featured XHTML validation type.</td></tr>
 <tr>
 <td>
 Transitional</td><td>
-The Transitional type DTD adds support for HTML presentation elements. That means you can use HTML elements (such as &lt;p&gt;, &lt;a&gt;, &lt;b&gt;, etc.) directly inside of your XHTML document. </td></tr>
+The Transitional type DTD adds support for HTML presentation elements. That means you can use HTML elements (such as <p>, <a>, <b>, etc.) directly inside of your XHTML document. </td></tr>
 </table>
 The following code illustrates how to validate a HTML string.
 
@@ -401,7 +401,7 @@ Parameter Description
 1. htmlString: The desired HTML string to be validated.
 2. XHTMLValidationType: It defines the validation type. It could be Strict, Transitional, or None.
 > 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img2.jpeg) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img2.jpeg)' | markdownify }}
 {:.image }
 _Notes: Currently XHTML Validation is not supported in Windows Store applications._
 
@@ -856,7 +856,7 @@ Underline</td><td>
 Partial</td><td>
 Underline types and colors are ignored.</td></tr>
 </table>
-> { ![](Importing-and-Exporting_images/Importing-and-Exporting_img3.jpeg) | markdownify }
+> {{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img3.jpeg)' | markdownify }}
 {:.image }
 _Notes: Currently Doc to Html conversion and vice-versa is not supported in Silverlight and Windows Phone 8 applications._
 
@@ -945,7 +945,7 @@ Assembly Dependencies for this Conversion
 * Syncfusion.Core.dll
 * Syncfusion.Compression.Base.dll
 > 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img4.jpeg) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img4.jpeg)' | markdownify }}
 {:.image }
 _Note:_ 
 
@@ -1098,7 +1098,7 @@ Essential DocIO supports conversion of Microsoft Word documents to EPub v2.0.1. 
 
 By default, Table of Contents (TOC) is enabled in the EPub document. It is generated based on the built-in heading styles or custom styles mentioned in the TOC field. 
 
-> { ![](Importing-and-Exporting_images/Importing-and-Exporting_img5.jpeg) | markdownify }
+> {{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: You need to have an EPub reader installed in the machine to view the resultant EPub document._
 
@@ -1127,7 +1127,7 @@ The following code example illustrates how to convert a Word document to EPub fi
 
 The following screenshot illustrates the resultant EPub document.
 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img6.png) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1151,7 +1151,7 @@ The following code example illustrates how to embed font file.
 
 The following screenshot illustrates the resultant EPub document.
 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img7.png) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1177,7 +1177,7 @@ The following code example illustrates how to export header and footer.
 
 The following is the screenshot of the resultant EPub document with the disabled header and footer contents.
 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img8.png) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1206,7 +1206,7 @@ The following are the known limitations:
 * Embedding font files can increase the size of the EPub document
 * Embedding font files is not supported in medium trust
 > 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img9.jpeg) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img9.jpeg)' | markdownify }}
 {:.image }
 _Note: Currently Doc to EPub conversion is not supported in Silverlight application._
 
@@ -1221,7 +1221,7 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 * WordDocument.RenderAsImages(pageIndex, imageType): This is used to render/convert a particular page of the document into an image; it returns the resultant image of type Image.
 * WordDocument.RenderAsImages(pageIndex, noOfPages, imageType): This is used to render/convert multiple number of pages in the document, starting from the specified page index. It returns the resultant image of type Image[] array.
 > 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image21_0.jpg](Importing-and-Exporting_images/Importing-and-Exporting_img10.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image21_0.jpg](Importing-and-Exporting_images/Importing-and-Exporting_img10.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 

@@ -32,7 +32,7 @@ Device color space simply describes the range of colors that a camera can see, a
 * DeviceRGB
 * DeviceCMYK
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Color-Space_images/Color-Space_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Color-Space_images/Color-Space_img1.png)' | markdownify }}
 {:.image }
 _Note: This property does not convert the entire document into different color spaces. It will also not have any impact on pages that have been created before the property value had changed. It just chooses the color space for pages created after the alteration._
 
@@ -743,7 +743,7 @@ pdfDocument.Close(True)
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Color-Space_images/Color-Space_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Color-Space_images/Color-Space_img2.png)' | markdownify }}
 {:.image }
 _Note: You can change the color space as many times as you wish, however, you cannot alternate the color space for objects that have saved before._
 

@@ -19,7 +19,7 @@ There is no built-in support in Chart for importing data from CSV (Comma Separat
 
 
 
-{ ![](Importing_images/Importing_img1.jpeg) | markdownify }
+{{ '![](Importing_images/Importing_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35,7 +35,7 @@ There is no built-in support in Chart for importing data from an XML file. But g
 
 
 
-{ ![](Importing_images/Importing_img2.jpeg) | markdownify }
+{{ '![](Importing_images/Importing_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ There is no built-in support in Chart for importing data from XLS (MS Excel) fil
 
 
 
-{ ![](Importing_images/Importing_img3.jpeg) | markdownify }
+{{ '![](Importing_images/Importing_img3.jpeg)' | markdownify }}
 {:.image }
 
 

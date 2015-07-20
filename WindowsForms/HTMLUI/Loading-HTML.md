@@ -34,7 +34,7 @@ There may be situations where the HTML document is to be loaded initially at sta
 
 Using the Properties window involves specifying the location of the Startup HTML file in the StartupDocument property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
 
-{ ![](Loading-HTML_images/Loading-HTML_img1.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -78,7 +78,7 @@ The following image illustrates Loading an HTML document as the Startup Document
 
 
 
-{ ![](Loading-HTML_images/Loading-HTML_img2.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ The following image illustrates Loading an HTML document as the Startup Document
 
 This sample demonstrates the implementation of Startup Document by using HTML file in HTMLUI.
 
-{ ![](Loading-HTML_images/Loading-HTML_img3.jpeg) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -148,7 +148,7 @@ Me.HtmluiControl1.LoadHTML(filepath)
 
 The following image shows file loaded from the User's Drive.
 
-{ ![](Loading-HTML_images/Loading-HTML_img4.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -156,7 +156,7 @@ The following image shows file loaded from the User's Drive.
 
 This sample demonstrates the implementation of Loading a file from Disk by using HTMLUI.
 
-{ ![](Loading-HTML_images/Loading-HTML_img5.jpeg) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -206,43 +206,43 @@ An HTML document containing file links is illustrated by the code given below:
 
 
 
-&lt;HTML&gt;
+<HTML>
 
-&lt;HEAD&gt;
+<HEAD>
 
 <title>FILE LINK</title>
 
-&lt;/HEAD&gt;
+</HEAD>
 
-&lt;body bgColor="#ffffff"&gt;
+<body bgColor="#ffffff">
 
 <P>THIS FORM IS A SAMPLE TO SHOW FILE LINKS</P>
 
-&lt;FONT color="#66ffff" size="6"&gt;
+<FONT color="#66ffff" size="6">
 
 <A href="MODEL1.htm">To link1</a>
 
-&lt;/FONT&gt;
+</FONT>
 
-&lt;P&gt;
+<P>
 
-&lt;FONT color="#66ffff" size="6"&gt;
+<FONT color="#66ffff" size="6">
 
 <A href="MODEL2.htm">To link2</a>
 
-&lt;/FONT&gt;
+</FONT>
 
-&lt;/P&gt;
+</P>
 
-&lt;/body&gt;
+</body>
 
-&lt;/HTML&gt;
+</HTML>
 
 
 
 The following image shows file links that link to another HTML Document.
 
-{ ![](Loading-HTML_images/Loading-HTML_img6.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -254,7 +254,7 @@ This sample demonstrates how HTML files can be linked from one document to anoth
 
 
 
-{ ![](Loading-HTML_images/Loading-HTML_img7.jpeg) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -308,21 +308,21 @@ The HTML code sometimes can be directly written and stored as a string. The HTML
 
 // Load HTML Document from String.
 
-string htmlCode ="&lt;HTML&gt;
+string htmlCode ="<HTML>
 
-&lt;HEAD&gt;
+<HEAD>
 
 <TITLE>HI</TITLE>
 
-&lt;/HEAD&gt;
+</HEAD>
 
-&lt;BODY bgcolor='#ffffff'&gt;
+<BODY bgcolor='#ffffff'>
 
-&lt;INPUT type='button' id='btn'/&gt;&lt;/INPUT&gt;
+<INPUT type='button' id='btn'/></INPUT>
 
-&lt;/BODY&gt;
+</BODY>
 
-&lt;/HTML&gt;";
+</HTML>";
 
 this.htmluiControl1.LoadFromString(htmlCode);
 
@@ -334,21 +334,21 @@ this.htmluiControl1.LoadFromString(htmlCode);
 
 '  Load HTML Document from String
 
-Private htmlCode As String = "&lt;HTML&gt;
+Private htmlCode As String = "<HTML>
 
-&lt;HEAD&gt;
+<HEAD>
 
 <TITLE>HI</TITLE>
 
-&lt;/HEAD&gt;
+</HEAD>
 
-&lt;BODY bgcolor='#ffffff'&gt;
+<BODY bgcolor='#ffffff'>
 
-&lt;INPUT type='button' id='btn'/&gt;&lt;/INPUT&gt;
+<INPUT type='button' id='btn'/></INPUT>
 
-&lt;/BODY&gt;
+</BODY>
 
-&lt;/HTML&gt;"
+</HTML>"
 
 Me.HtmluiControl1.LoadFromString(htmlCode)
 
@@ -372,7 +372,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 
 
-{ ![](Loading-HTML_images/Loading-HTML_img8.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -388,7 +388,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 6. You can change the name by using the Name tab given at the bottom of the wizard.
 
-{ ![](Loading-HTML_images/Loading-HTML_img9.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -404,7 +404,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 
 
-{ ![](Loading-HTML_images/Loading-HTML_img10.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -450,7 +450,7 @@ The System.Reflection.Assembly.GetExecutingAssembly method gets the assembly fro
 
 The System.IO.Stream is used to provide a generic view of sequence of bytes when the IO in the assembly is referred.
 
-> { ![](Loading-HTML_images/Loading-HTML_img11.jpeg) | markdownify }
+> {{ '![](Loading-HTML_images/Loading-HTML_img11.jpeg)' | markdownify }}
 {:.image }
 _Note: The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users._
 
@@ -458,7 +458,7 @@ The following image shows file loaded from an embedded resource.
 
 
 
-{ ![](Loading-HTML_images/Loading-HTML_img12.png) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -468,7 +468,7 @@ The following image shows file loaded from an embedded resource.
 
 This sample demonstrates the implementation of Loading Embedded Resource Files by using HTMLUI.
 
-{ ![](Loading-HTML_images/Loading-HTML_img13.jpeg) | markdownify }
+{{ '![](Loading-HTML_images/Loading-HTML_img13.jpeg)' | markdownify }}
 {:.image }
 
 

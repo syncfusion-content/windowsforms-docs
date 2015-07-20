@@ -19,13 +19,13 @@ When the user has more computational fields with subtotals in each group of thei
 
 The following screenshots show the PivotGrid with shown and hidden sub totals.
 
-{ ![C:/Users/diana/Desktop/SubTotalsshown.PNG](Subtotal-Hiding_images/Subtotal-Hiding_img1.png) | markdownify }
+{{ '![C:/Users/diana/Desktop/SubTotalsshown.PNG](Subtotal-Hiding_images/Subtotal-Hiding_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/diana/Desktop/SuTotals Hidden.PNG](Subtotal-Hiding_images/Subtotal-Hiding_img2.png) | markdownify }
+{{ '![C:/Users/diana/Desktop/SuTotals Hidden.PNG](Subtotal-Hiding_images/Subtotal-Hiding_img2.png)' | markdownify }}
 {:.image }
 
 

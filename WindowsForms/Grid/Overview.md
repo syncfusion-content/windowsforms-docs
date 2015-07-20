@@ -17,7 +17,7 @@ Essential Grid is a powerful grid control that is implemented by using unique st
 
 Essential Grid controls are useful for those users who want to build a Windows application which can be used an any .NET environment including C#, VB.NET and C++. It is beneficial to those users who want to create true nested grids with hierarchical data, and also display multiple, unrelated tables in one grid. 
 
-{ ![](Overview_images/Overview_img1.jpeg) | markdownify }
+{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60,7 +60,7 @@ Description</td></tr>
 Note</td><td>
 ![](Overview_images/Overview_img2.jpeg)
 {:.image }
-{{ '_Note:_' | markdownify }}</td><td>
+{{{ ''_Note:_'' | markdownify }}}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>
@@ -139,7 +139,7 @@ This section analyses the efficiency of the Grids based on the most important fe
 * ExcelExport
 * Filtering
 
-{ ![](Overview_images/Overview_img5.png) | markdownify }
+{{ '![](Overview_images/Overview_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -153,7 +153,7 @@ GridGroupingControl
 
 GridGroupingControl has an extremely high-performance standard. It can handle very high frequency updates and refresh scenarios. It also provides complete support for Virtual Mode wherein the data will be loaded only on demand. By simply setting a few properties, you can have the grid work with large amounts of data without affecting the performance. 
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img6.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img6.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Performance
 
@@ -161,7 +161,7 @@ GridControl and GridDataBoundGrid
 
 GridControl has an extremely high performance standard. It can handle high frequency updates and work with large amounts of data without affecting the performance, similarly GridDataBoundGrid can also handle large amount of data without affecting the performance. 
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img7.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img7.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Grid Data Bound Grid Performance _and_ Performance
 
@@ -173,15 +173,15 @@ GridGroupingControl alone supports grouping. This control is exclusively designe
 
 Grid Grouping control allows you to group the data based on one or more columns. When grouping is applied, the data will be organized into a hierarchical structure based on the matching field values.  This control enables you to combine identical value to form a group. Each group is identified by its _GroupCaptionSection_._ You can expand this to view the records in the group. _GroupCaptionSection_ provides information about a particular group such as the group name, number of items in the group and so on. The Grid Grouping control also provides Expand/Collapse button for every group. 
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img8.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img8.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Grouping
 
 Sample 
 
-A sample of this feature is available in the following location:_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
+A sample of this feature is available in the following location:_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
 
-{ ![](Overview_images/Overview_img9.jpeg) | markdownify }
+{{ '![](Overview_images/Overview_img9.jpeg)' | markdownify }}
 {:.image }
 GridControl and the GridDataBoundGrid do not support Grouping.
 
@@ -191,7 +191,7 @@ GridGroupingControl
 
 GridGroupingcontrol alone supports calculating summaries and allows you to display summaries for each group. This enables you to derive additional information from your data such as average, maximum and minimum, summation, count, and so on. This engine supports summaries that operate on vectors such as Distinct Count, Median, 25% and 75% Quartile. You can also easily add custom summaries.
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img10.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img10.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Summaries
 
@@ -199,7 +199,7 @@ Sample
 
 A sample of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Calculate Summary\Summary Tutorial_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Calculate Summary\Summary Tutorial_
 
 * GridControl and the GridDataBoundGrid do not support Summary.
 ### Sorting
@@ -209,7 +209,7 @@ GridGroupingControl
 
 GridGroupingcontrol provides in-built support for sorting. This allows you to sort the table data against one or more columns and provides support to sort unlimited number of columns. While sorting, the grid will rearrange the data to match the current sort criteria.
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img11.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img11.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Sorting_
 
@@ -217,7 +217,7 @@ Sample
 
 A sample of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
 
 GridDataBoundGrid
 
@@ -227,7 +227,7 @@ GridDataBoundGrid allows you to arrange items in sequence, in different sets or 
 * DoubleClick: Sort column on double-click.
 * None: Sorting is disabled.
 > 
-{ ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img12.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img12.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Sorting By Display Member_
 
@@ -235,7 +235,7 @@ Sample
 
 A sample of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Sorting\Sort By DisplayMember Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Sorting\Sort By DisplayMember Demo_
 
 GridControl
 
@@ -245,7 +245,7 @@ Sample
 
 The sample in the following location illustrates how to implement header-click sorting for the GridControl based grids. 
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Sorting Demo\_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Sorting Demo\_
 
 #### Sort Icon Placement
 
@@ -287,7 +287,7 @@ enumeration</td></tr>
 </table>
 ##### Sample Link
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
 
 ##### Adding Sort Icon Placement to an Application 
 
@@ -309,7 +309,7 @@ Me.gridGroupingControl1.SortIconPlacement = SortIconPlacement.Top
 
 
 
-. { ![](Overview_images/Overview_img13.png) | markdownify }
+. {{ '![](Overview_images/Overview_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -326,7 +326,7 @@ This control automatically copies the Grid's styles, formats, groups, summary ro
 * RowHeader 
 * ColumnHeader.
 > 
-{ ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img14.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img14.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Exporting Grid Grouping Control To Excel
 
@@ -334,13 +334,13 @@ Sample
 
 A sample of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo_
 
 GridControl and GridDataBoundGrid
 
 _GridExcelConverter_ class enables you to export data from a Grid control or Grid Data Bound Grid into Excel. This control automatically copies the Grid's styles and formats to Excel. 
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img15.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img15.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ [Exporting the Grid Control or Grid Data Bound Grid To Excel](http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/default.htm?turl=Documents%2F3161exportingthegridcontrolorgriddataboundgridtoexcel.htm)
 
@@ -350,11 +350,11 @@ A sample of this feature is available in the following location:
 
 For GDBG: 
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Export\DBG XLS Export Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Export\DBG XLS Export Demo_
 
 For GC:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo_
 
 ### Filtering
 
@@ -370,7 +370,7 @@ Dynamic filter
 
 Dynamic Filter serves as good replacement for Filter Bar. This provides advanced filtering capabilities. This is built on the foundation of the regular filter bar with added provisions to support dynamic filtering. The dynamic filter can be used with Nested Tables and Nested Groups.
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img16.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img16.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Record Filtering
 
@@ -378,13 +378,13 @@ Sample
 
 A sample of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions_
 
 GridDataBoundGrid 
 
 You can enable filtering for the grid based on GridDataBoundGrid, by adding a row of drop-down cells at the top of a simple (non-hierarchical) Grid Data Bound Grid. This allows you to filter match values from the drop-down. This control also supports filter by DisplayMember. 
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img17.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Overview_images/Overview_img17.png)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following section:_ Filtering a Grid Data Bound Grid
 
@@ -394,7 +394,7 @@ Sample
 
 A sample of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Filtering\Filter By DisplayMember Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Filtering\Filter By DisplayMember Demo_
 
 #### Filter for Specific Columns
 
@@ -429,7 +429,7 @@ Bool</td></tr>
 </table>
 
 
-{ ![](Overview_images/Overview_img18.png) | markdownify }
+{{ '![](Overview_images/Overview_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -439,7 +439,7 @@ Sample Link
 
 A sample is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo_
 
 Enable Filters on Desired Columns
 
@@ -503,13 +503,13 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/) | markdownify } (Navigate to the Grid for Windows Forms User Guide.)![](Overview_images/Overview_img19.jpeg)
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the Grid for Windows Forms User Guide.)![](Overview_images/Overview_img19.jpeg)
 {:.image }
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{ [http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/) | markdownify }(Navigate to the Windows Forms User Guide. Select {{ '_Grid_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{{ ''_Grid_'' | markdownify }}} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

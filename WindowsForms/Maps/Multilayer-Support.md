@@ -151,7 +151,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-{ ![](Multilayer-Support_images/Multilayer-Support_img1.png) | markdownify }
+{{ '![](Multilayer-Support_images/Multilayer-Support_img1.png)' | markdownify }}
 {:.image }
 
 

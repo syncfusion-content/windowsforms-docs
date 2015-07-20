@@ -17,7 +17,7 @@ The following illustration shows the Class Diagram for Essential Calculate.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ Windows Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47,7 +47,7 @@ Web Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ WPF Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97,7 +97,7 @@ The following steps will guide you to deploy Essential Calculate:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -109,7 +109,7 @@ This will add references to the following dependent assemblies of your project:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -117,7 +117,7 @@ This will add references to the following dependent assemblies of your project:
 
 
 
-> { ![C:/Documents and Settings/jananit/Desktop/Dataicon.jpg](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
+> {{ '![C:/Documents and Settings/jananit/Desktop/Dataicon.jpg](Getting-Started_images/Getting-Started_img7.jpeg)' | markdownify }}
 {:.image }
  _Note: For detailed documentation on Windows Application deployment, see_ [http://www.syncfusion.com/support/user/uploads/DeployingWindowsApplication_bdaf76f7.pdf](http://www.syncfusion.com/support/user/uploads/DeployingWindowsApplication_bdaf76f7.pdf)
 
@@ -205,7 +205,7 @@ cq.Engine.UseNoAmpersandQuotes = True
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img8.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img8.jpeg)' | markdownify }}
 {:.image }
 _Note: Engine is a class that is defined as a "property" in Essential Calculate._
 
@@ -228,7 +228,7 @@ The following steps will guide you to deploy Essential Calculate in an ASP.NET a
 1. Marking the Application directory-The appropriate directory, usually where the aspx files are stored, must be marked as Application in IIS.
 2. Syncfusion Assemblies-The Syncfusion assemblies need to be in the bin folder that is beside the aspx files.
 > 
-{ ![](Getting-Started_images/Getting-Started_img9.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.jpeg)' | markdownify }}
 {:.image }
 _Note: They can also be in the GAC, in which case, they should be referenced in Web.config file._
 
@@ -238,27 +238,27 @@ _Note: They can also be in the GAC, in which case, they should be referenced in 
 
 
 
-&lt;configuration&gt;
+<configuration>
 
-   &lt;system.web&gt;
+   <system.web>
 
-     &lt;compilation&gt;
+     <compilation>
 
-      &lt;assemblies&gt;
+      <assemblies>
 
-        &lt;add assembly="Syncfusion.Calculate.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/&gt;&lt;/assemblies&gt;
+        <add assembly="Syncfusion.Calculate.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/></assemblies>
 
-     &lt;/compilation&gt;
+     </compilation>
 
   ...                
 
-  &lt;/system.web&gt;
+  </system.web>
 
-&lt;/configuration&gt;
+</configuration>
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img10.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img10.jpeg)' | markdownify }}
 {:.image }
 _Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using._
 
@@ -268,7 +268,7 @@ Refer to the document in the following path, for step by step process of Syncfus
 
 [http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
 
-> { ![](Getting-Started_images/Getting-Started_img11.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img11.jpeg)' | markdownify }}
 {:.image }
 _Note: Application with Essential Calculate needs the following dependent assemblies for deployment._
 
@@ -310,7 +310,7 @@ cq.Engine.UseNoAmpersandQuotes = true;
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img12.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img12.jpeg)' | markdownify }}
 {:.image }
 _Note: The Engine is a class that is defined as a "property" in Essential Calculate._
 
@@ -332,7 +332,7 @@ The following steps will guide you to deploy Essential Calculate:
 * Syncfusion.Compression.Base.dll
 * Syncfusion.Calculate.Base.dll
 > 
-{ ![](Getting-Started_images/Getting-Started_img13.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.jpeg)' | markdownify }}
 {:.image }
 _Note: There is no toolbox support for Calculate in WPF application._
 
@@ -420,7 +420,7 @@ cq.Engine.UseNoAmpersandQuotes = True
 
 
 
-> { ![](Getting-Started_images/Getting-Started_img14.jpeg) | markdownify }
+> {{ '![](Getting-Started_images/Getting-Started_img14.jpeg)' | markdownify }}
 {:.image }
 _Note: Engine is a class that is defined as a "property" in Essential Calculate._
 
@@ -476,7 +476,7 @@ The step-by-step procedure to create a simple console application is as follows:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -498,21 +498,21 @@ namespace CalcQuickBaseTutorial
 
 {
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Summary description for Class1.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         class Class1
 
         {
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// The main entry point for the application.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
                 [STAThread]
 
@@ -572,7 +572,7 @@ Namespace CalcQuickBaseTutorial
 
             Dim s As String = Console.ReadLine()
 
-            Do While s &lt;&gt; ""
+            Do While s <> ""
 
                 Dim val As String = cq.ParseAndCompute(s)
 
@@ -612,7 +612,7 @@ End Namespace
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -626,7 +626,7 @@ In this section, you will learn how to create a Windows Application that allows 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img17.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -634,7 +634,7 @@ In this section, you will learn how to create a Windows Application that allows 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -798,7 +798,7 @@ End Sub
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img19.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -816,7 +816,7 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img20.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -826,7 +826,7 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img21.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -838,7 +838,7 @@ In order to add arbitrary calculation support to an object, that object must imp
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img22.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -846,7 +846,7 @@ In order to add arbitrary calculation support to an object, that object must imp
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img23.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -866,11 +866,11 @@ namespace Calculate_ICalcData
 
 {
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Summary description for ArrayCalcData.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         public class ArrayCalcData
 
@@ -904,11 +904,11 @@ Imports System
 
 Namespace Calculate_ICalcData 
 
-        ''' &lt;summary&gt; 
+        ''' <summary> 
 
         ''' Summary description for ArrayCalcData. 
 
-        ''' &lt;/summary&gt; 
+        ''' </summary> 
 
         Public Class ArrayCalcData
 
@@ -950,43 +950,43 @@ namespace Calculate_ICalcData
 
         {
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// Original double array.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
                 private double[,] dValues;
 
 
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// Vector holding the sum of the rows.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
-                /// &lt;remarks&gt;
+                /// <remarks>
 
                 /// Serves as the last column.
 
-                /// &lt;/remarks&gt;
+                /// </remarks>
 
                 private object[] rowSums;
 
 
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// Vector holding the sum of the columns.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
-                /// &lt;remarks&gt;
+                /// <remarks>
 
                 /// Serves as the last row.
 
-                /// &lt;/remarks&gt;
+                /// </remarks>
 
                 private object[] colSums;
 
@@ -1020,43 +1020,43 @@ Public Class ArrayCalcData
 
 
 
-    '/ &lt;summary&gt;
+    '/ <summary>
 
     '/ Original double array.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
     Private dValues(,) As Double
 
 
 
-    '/ &lt;summary&gt;
+    '/ <summary>
 
     '/ Vector holding the sum of the rows.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
-    '/ &lt;remarks&gt;
+    '/ <remarks>
 
     '/ Serves as the last column.
 
-    '/ &lt;/remarks&gt;
+    '/ </remarks>
 
     Private rowSums() As Object
 
 
 
-    '/ &lt;summary&gt;
+    '/ <summary>
 
     '/ Vector holding the sum of the columns.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
-    '/ &lt;remarks&gt;
+    '/ <remarks>
 
     '/ Serves as the last row.
 
-    '/ &lt;/remarks&gt;
+    '/ </remarks>
 
     Private colSums() As Object
 
@@ -1082,13 +1082,13 @@ If you notice, you are actually populating these added arrays with formula strin
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Wraps the double array with an extra row and column that holds calculated sums.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;param name="dValues"&gt;&lt;/param&gt;
+/// <param name="dValues"></param>
 
 public ArrayCalcData(double[,] dValues)
 
@@ -1144,13 +1144,13 @@ public ArrayCalcData(double[,] dValues)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Wraps the double array with an extra row and column that holds calculated sums.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="dValues"&gt;&lt;/param&gt;
+'/ <param name="dValues"></param>
 
 Public Sub New(ByVal dValues(,) As Double)
 
@@ -1211,7 +1211,7 @@ End Sub
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img24.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -1219,7 +1219,7 @@ If you are using VB.NET, then you can add the ICalcData stubs using the drop-dow
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img25.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -1227,7 +1227,7 @@ Then, in the right drop-down, click each of the four items listed to add the pro
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img26.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -1317,19 +1317,19 @@ Syncfusion.Calculate.ValueChangedEventArgs) Implements _
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Gets the value into either the double array or column vector or row vector.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="row">One-based row index.&lt;/param&gt;
+/// <param name="row">One-based row index.</param>
 
-/// <param name="col">One-based column index.&lt;/param&gt;
+/// <param name="col">One-based column index.</param>
 
-/// <returns>The value.&lt;/returns&gt;
+/// <returns>The value.</returns>
 
-/// &lt;remarks&gt; By convention, ICalcData uses one-based indexes.&lt;/remarks&gt;
+/// <remarks> By convention, ICalcData uses one-based indexes.</remarks>
 
 public object GetValueRowCol(int row, int col)
 
@@ -1365,19 +1365,19 @@ public object GetValueRowCol(int row, int col)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Gets the value into either the double array or column vector or row vector.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ <param name="row">One-based row index.&lt;/param&gt;
+'/ <param name="row">One-based row index.</param>
 
-'/ <param name="col">One-based column index.&lt;/param&gt;
+'/ <param name="col">One-based column index.</param>
 
-'/ <returns>The value.&lt;/returns&gt;
+'/ <returns>The value.</returns>
 
-'/ &lt;remarks&gt; By convention, ICalcData uses one-based indexes.&lt;/remarks&gt;
+'/ <remarks> By convention, ICalcData uses one-based indexes.</remarks>
 
 Public Function GetValueRowCol(ByVal row As Integer, ByVal col As Integer) _
 
@@ -1421,19 +1421,19 @@ Here is the code you must use. The code is the reverse process of the GetValueRo
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Sets the value into either the double array or column vector or row vector.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="row">One-based row index.&lt;/param&gt;
+/// <param name="row">One-based row index.</param>
 
-/// <param name="col">One-based column index.&lt;/param&gt;
+/// <param name="col">One-based column index.</param>
 
-/// <param name="value">The value to be set.&lt;/param&gt;
+/// <param name="value">The value to be set.</param>
 
-/// &lt;remarks&gt; This setter raises the ICalcData.ValueChanged event which, 
+/// <remarks> This setter raises the ICalcData.ValueChanged event which, 
 
 /// is listened to by the CalcEngine to manage the calculations.
 
@@ -1441,7 +1441,7 @@ Here is the code you must use. The code is the reverse process of the GetValueRo
 
 /// By convention, ICalcData uses one-based indexes.
 
-/// &lt;/remarks&gt;
+/// </remarks>
 
 public void SetValueRowCol(object value, int row, int col)
 
@@ -1481,19 +1481,19 @@ public void SetValueRowCol(object value, int row, int col)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
     '/ Sets the value into either the double array or column vector or row vector.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
-    '/ <param name="row">One-based row index.&lt;/param&gt;
+    '/ <param name="row">One-based row index.</param>
 
-    '/ <param name="col">One-based column index.&lt;/param&gt;
+    '/ <param name="col">One-based column index.</param>
 
-    '/ <param name="value">The value to be set.&lt;/param&gt;
+    '/ <param name="value">The value to be set.</param>
 
-    '/ &lt;remarks&gt; This setter raises the ICalcData.ValueChanged event which, 
+    '/ <remarks> This setter raises the ICalcData.ValueChanged event which, 
 
     '/ is listened to by the CalcEngine to manage the calculations.
 
@@ -1501,7 +1501,7 @@ public void SetValueRowCol(object value, int row, int col)
 
     '/ By convention, ICalcData uses one-based indexes.
 
-    '/ &lt;/remarks&gt;
+    '/ </remarks>
 
     Public Sub SetValueRowCol(ByVal value As Object, ByVal row As Integer, _
 
@@ -1551,13 +1551,13 @@ Here is the code you must use. It is just a Get and Set implementation that goes
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Gets / sets the value of this ArrayCalcData object.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;remarks&gt;
+/// <remarks>
 
 /// Since this class wraps a double array, the indexing is zero-based but,
 
@@ -1565,7 +1565,7 @@ Here is the code you must use. It is just a Get and Set implementation that goes
 
 /// one is added to the indexes when the ICalcData methods are called.
 
-/// &lt;/remarks&gt;
+/// </remarks>
 
 public object this[int row, int col]
 
@@ -1583,13 +1583,13 @@ public object this[int row, int col]
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Gets / sets the value of this ArrayCalcData object.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;remarks&gt;
+'/ <remarks>
 
 '/ Since this class wraps a double array, the indexing is zero-based but, 
 
@@ -1597,7 +1597,7 @@ public object this[int row, int col]
 
 '/ one is added to the indexes when the ICalcData methods are called.
 
-'/ &lt;/remarks&gt;
+'/ </remarks>
 
 Default Public Property Item(ByVal row As Integer, ByVal col As Integer) As Object
 
@@ -1647,15 +1647,15 @@ int nCols;
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Populates the double array.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;param name="sender"&gt;&lt;/param&gt;
+/// <param name="sender"></param>
 
-/// &lt;param name="e"&gt;&lt;/param&gt;
+/// <param name="e"></param>
 
 private void button1_Click(object sender, System.EventArgs e)
 
@@ -1707,11 +1707,11 @@ private void button1_Click(object sender, System.EventArgs e)
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Displays the ArrayCalcData values in a text box.
 
-/// &lt;/summary&gt;
+/// </summary>
 
 private void ShowObject()
 
@@ -1763,15 +1763,15 @@ Dim nCols As Integer
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Populates the double array.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="sender"&gt;&lt;/param&gt;
+'/ <param name="sender"></param>
 
-'/ &lt;param name="e"&gt;&lt;/param&gt;
+'/ <param name="e"></param>
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
 
@@ -1837,11 +1837,11 @@ End Sub
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Displays the ArrayCalcData values in a text box.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
 Private Sub ShowObject()
 
@@ -1877,7 +1877,7 @@ Here is a typical display that you might see if you run the application at this 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img27.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1890,15 +1890,15 @@ Here is a typical display that you might see if you run the application at this 
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Populates a single entry in the ArrayCalcData object.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;param name="sender"&gt;&lt;/param&gt;
+/// <param name="sender"></param>
 
-/// &lt;param name="e"&gt;&lt;/param&gt;
+/// <param name="e"></param>
 
 private void button2_Click(object sender, System.EventArgs e)
 
@@ -1934,15 +1934,15 @@ private void button2_Click(object sender, System.EventArgs e)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Populates a single entry in the ArrayCalcData object.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="sender"&gt;&lt;/param&gt;
+'/ <param name="sender"></param>
 
-'/ &lt;param name="e"&gt;&lt;/param&gt;
+'/ <param name="e"></param>
 
 Private Sub button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
 
@@ -1984,7 +1984,7 @@ On the previous screen, if you click the Set button, it will place 123 in cell 0
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img28.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img28.png)' | markdownify }}
 {:.image }
 
 

@@ -15,7 +15,7 @@ This section guides you on getting started with Windows application, controls et
 
 The following screen shot shows the structure of the ScheduleControl.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -59,7 +59,7 @@ Here is a Day view that shows a panel added under the NavigationCalendar by usin
 
 You can dock any control under the NavigationCalendar by using this method.
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ A Custom view is one where you can display up to eight individual days in the Sc
 
 Here are a series of screen shots illustrating these different views.
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77,7 +77,7 @@ Notice in the WorkWeek view snapshot below, there is a Vacation entry at the top
 
 This entry is an All-Day entry which has no specific time assigned to it. It is simply associated with the particular date. For the Day, WorkWeek and Custom views, All-Day entries are displayed in a frozen row at the top of the ScheduleGrid. For Week and Month views, All-Day entries are listed with the time entries.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -85,13 +85,13 @@ Here is a Week view snapshot.
 
 Notice in the NavigationCalendar on the left, week numbers appear on the left side of each week in the NavigationCalendar. You can optionally turn these numbers off using the ScheduleControl.Calendar.ShowWeekNumbers property.
 
-{ ![](Getting-Started_images/Getting-Started_img5.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
 {:.image }
 
 
 The snapshot below shows a Schedule Control displaying three days. You can select any combination of up to either dates (either contiguous or not) to be displayed in this manner in a Custom view. 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -99,7 +99,7 @@ The snapshot below shows a Schedule Control displaying three days. You can selec
 
 Essential Schedule primarily consists of a UserControl-derived class named ScheduleControl, which in turn is constructed with the help of four control derived objects, namely, CaptionPanel, NavigationPanel, NavigationCalendar and ScheduleGrid.
 
-{ ![](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -123,13 +123,13 @@ The following section explains in detail:
 
 1. From Visual Studio, go to the File menu, select New and then click Project, to create a new Windows Application named ScheduleSample. 
 
-{ ![](Getting-Started_images/Getting-Started_img8.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.jpeg)' | markdownify }}
 {:.image }
 
 
 2. When the Visual Studio Designer opens, drag the Schedule Control from the Syncfusion Tab onto the Form.
 
-{ ![](Getting-Started_images/Getting-Started_img9.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -137,13 +137,13 @@ The following section explains in detail:
 
 3. The ScheduleControl will show on the design surface. Below is a typical display of this. Notice the Appearance property in the property grid. This is the object that has many properties that affect the appearance of the ScheduleControl.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
 4. Add a Form1_Load handler to the Form1.cs file by double-clicking on the Form that is not covered by the ScheduleControl. This should display a code window showing code like this.
 
-{ ![](Getting-Started_images/Getting-Started_img11.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -159,7 +159,7 @@ For now, just use the implementation provided in the SimpleScheduleDataProvider.
 
 Drill down to this folder, and add this file to your project by using the Solution Explorer window as shown here.
 
-{ ![](Getting-Started_images/Getting-Started_img12.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -167,7 +167,7 @@ Drill down to this folder, and add this file to your project by using the Soluti
 
 6. Here, you can find the SimpleScheduleDataProvider.cs file in the _\Syncfusion\Essential Studio\5.x.x.x\Windows\Schedule.Windows\ Samples\ 2.0\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
 
-{ ![](Getting-Started_images/Getting-Started_img13.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -251,37 +251,37 @@ this.scheduleControl1.DataSource = data;
 
 8. Now press F5 key to compile and run your application. A screen similar to this one should appear.
 
-{ ![](Getting-Started_images/Getting-Started_img14.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.jpeg)' | markdownify }}
 {:.image }
 
 
 9. To change the Month view to a Day view, right-click the ScheduleGrid area of the ScheduleControl to display a ContextMenu and select Day.
 
-{ ![](Getting-Started_images/Getting-Started_img15.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.jpeg)' | markdownify }}
 {:.image }
 
 
 10. Here is the Day view that appears after the execution of the ContextMenu selection done in step 9.
 
-{ ![](Getting-Started_images/Getting-Started_img16.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.jpeg)' | markdownify }}
 {:.image }
 
 
 11. Double-click one of the time slots on the ScheduleGrid in the ScheduleControl. This action will display a new appointment screen where you can enter a new schedule item as shown below.
 
-{ ![](Getting-Started_images/Getting-Started_img17.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img17.jpeg)' | markdownify }}
 {:.image }
 
 
 12. Clicking the Save and Close button on the Appointment screen will re-display the Day view ScheduleControl with the new appointment displayed. If you hover over the appointment in the ScheduleGrid, a tooltip will display as shown below.
 
-{ ![](Getting-Started_images/Getting-Started_img18.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img18.jpeg)' | markdownify }}
 {:.image }
 
 
 13. Click the Close button on the form system menu on the upper-right corner of the form. Since the data has been modified in this ScheduleControl, a dialog will appear as below, asking whether you want to save these changes to a disk file. Click Yes to save the changes.
 
-{ ![](Getting-Started_images/Getting-Started_img19.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -375,7 +375,7 @@ this.scheduleControl1.DataSource = data;
 
 15. As our last step, compile and run the application again. The Month view should reappear but, this time the appointment you added earlier should appear.
 
-{ ![](Getting-Started_images/Getting-Started_img20.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -863,7 +863,7 @@ ListObjectList - The ListObjectList is a strongly-typed ArrayList that holds a c
 
 
 
-/// Returns the property descriptors for each property in ListObject.&lt;/returns&gt;
+/// Returns the property descriptors for each property in ListObject.</returns>
 
 public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
 
@@ -1173,35 +1173,35 @@ void InitLists();
 
 
 
-/// Returns a list holding the possible values for the &lt;see cref="IScheduleAppointment.LocationValue"/&gt; property.
+/// Returns a list holding the possible values for the <see cref="IScheduleAppointment.LocationValue"/> property.
 
 ILookUpObjectList GetLocations();
 
 
 
-/// Returns a list holding the possible values for the &lt;see cref="IScheduleAppointment.MarkerValue"/&gt; property.
+/// Returns a list holding the possible values for the <see cref="IScheduleAppointment.MarkerValue"/> property.
 
 ILookUpObjectList GetMarkers();
 
 
 
-/// Returns a list holding the possible values for the &lt;see cref="IScheduleAppointment.LabelValue"/&gt; property.
+/// Returns a list holding the possible values for the <see cref="IScheduleAppointment.LabelValue"/> property.
 
 ILookUpObjectList GetLabels();
 
 
 
-/// Returns a list holding the possible values for the &lt;see cref="IScheduleAppointment.ReminderValue"/&gt; property.
+/// Returns a list holding the possible values for the <see cref="IScheduleAppointment.ReminderValue"/> property.
 
-/// &lt;/summary&gt;
+/// </summary>
 
 ILookUpObjectList GetReminders();
 
 
 
-/// Returns a list holding the possible values for the &lt;see cref="IScheduleAppointment.Owner"/&gt; property.
+/// Returns a list holding the possible values for the <see cref="IScheduleAppointment.Owner"/> property.
 
-/// &lt;/summary&gt;
+/// </summary>
 
 ILookUpObjectList GetOwners();
 
@@ -1258,7 +1258,7 @@ ILookUpObjectListInterface - ILookUpObjectList is the wrapper for this list of o
 [C#]
 
 
-/// Collection of &lt;see cref="ILookUpObject"/&gt; items.
+/// Collection of <see cref="ILookUpObject"/> items.
 
 public interface ILookUpObjectList
 

@@ -23,7 +23,7 @@ Enable Zooming via the EnableXZooming and EnableYZooming properties.
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img1.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33,7 +33,7 @@ _Figure_ _293_: Select a region in the chart to Zoom-In_
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img2.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49,7 +49,7 @@ User can zoom out by clicking the "Zoom Out" button in the scrollbar.
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img3.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -129,7 +129,7 @@ Description</td></tr>
 <tr>
 <td>
 ZoomActions</td><td>
-Specifies the zoom action on the corresponding axis. The options are,{{ '_Panning_' | markdownify }} - Enables panning in the zoomed chart.{{ '_None_' | markdownify }} - Disables panning in the zoomed chart.</td></tr>
+Specifies the zoom action on the corresponding axis. The options are,{{{ ''_Panning_'' | markdownify }}} - Enables panning in the zoomed chart.{{{ ''_None_'' | markdownify }}} - Disables panning in the zoomed chart.</td></tr>
 </table>
 
 
@@ -155,7 +155,7 @@ Me.chartControl1.PrimaryXAxis.ZoomActions = ChartZoomingAction.Panning
 
 Me.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 
-> { ![](Runtime-Features_images/Runtime-Features_img4.jpeg) | markdownify }
+> {{ '![](Runtime-Features_images/Runtime-Features_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: Remember to enable zooming on both the axis using EnableXZooming and EnableYZooming properties, before trying out the above panning feature. You cannot pan a chart without zooming it._
 
@@ -195,7 +195,7 @@ Me.chartControl1.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img5.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -203,13 +203,13 @@ Me.chartControl1.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00
 
 _Figure_ _296_: SmartDateZoomDayLevelLabelFormat = "dd MM/yy  HH.00"_
 
-> { ![](Runtime-Features_images/Runtime-Features_img6.jpeg) | markdownify }
+> {{ '![](Runtime-Features_images/Runtime-Features_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: The value type of the axis should be "DateTime" for setting the above formatted labels._
 
 A sample which demonstrates the zooming and scrolling features is available in the following sample installation location.
 
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Install version&gt;\Web\chart.web\Samples\3.5\UserInteraction\ZoomingAndScrolling
+<Install Location>\Syncfusion\EssentialStudio\<Install version>\Web\chart.web\Samples\3.5\UserInteraction\ZoomingAndScrolling
 
 See Also
 
@@ -235,7 +235,7 @@ The toolbar looks like the below image.
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img7.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -402,7 +402,7 @@ Me.chartControl1.ToolBar.Items.Add(x1)
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img8.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -412,7 +412,7 @@ _Figure_ _298_: CustomCommand = "ChartCommands.AutoHighlight" ; Command ToolTip 
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img9.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -426,7 +426,7 @@ The chart control provides complete support for customizing the toolbar appearan
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img10.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -531,7 +531,7 @@ The below image shows how to set the interior properties through "Interior" tab 
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img11.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -541,7 +541,7 @@ _Figure_ _301_: Chart Series Style Window to set Interior Properties_
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img12.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -561,7 +561,7 @@ User can enable or disable the Border line of Toolbar by using ShowBorder proper
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img13.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -605,7 +605,7 @@ Me.chartControl1.ToolBar.Behavior = ChartDockingFlags.All
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img14.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img14.jpeg)' | markdownify }}
 {:.image }
 _Note: You can display or hide a toolbar while printing a Chart. See Printing And Print Preview topic for more details._
 
@@ -625,7 +625,7 @@ There are two types of context menus, both of which get shown by default when th
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img15.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -641,7 +641,7 @@ This context menu can be disabled by setting the DisplayChartContextMenu propert
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img16.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -657,7 +657,7 @@ This context menu can be enabled by setting the ShowContextMenuInLegend property
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img17.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -719,7 +719,7 @@ cursor1.Color = Color.Red
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img18.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -733,7 +733,7 @@ The points or the series of the chart can be highlighted when the mouse hovers o
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img19.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -767,11 +767,11 @@ Controls the transparency of the non-highlighted series. While mouse hovering on
 <tr>
 <td>
 SeriesHighlightIndex</td><td>
-If you want to highlight only a particular series alone, you need to set the index value for this property. The default value is {{ '_-1_' | markdownify }}.</td></tr>
+If you want to highlight only a particular series alone, you need to set the index value for this property. The default value is {{{ ''_-1_'' | markdownify }}}.</td></tr>
 </table>
 
 
-> { ![](Runtime-Features_images/Runtime-Features_img20.jpeg) | markdownify }
+> {{ '![](Runtime-Features_images/Runtime-Features_img20.jpeg)' | markdownify }}
 {:.image }
 _Note: The AutoHighlight property should be disabled to enable this chart series highlighting feature._
 
@@ -805,7 +805,7 @@ Me.chartControl1.Series(0).Style.HiddenInterior = New BrushInfo(0, bi)
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img21.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -823,7 +823,7 @@ The purpose of using Chart Interactive Cursor is to indicate the x-axis and y-ax
 
 The following screen shot shows the Interactive cursor, which is drawn in horizontal orientation:
 
-{ ![](Runtime-Features_images/Runtime-Features_img22.png) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -960,7 +960,7 @@ Now, the default color would be replaced with blue color at both the orientation
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img23.png) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -998,7 +998,7 @@ cursor1.HorizontalCursorColor = Color.Red;
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img24.png) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -1124,7 +1124,7 @@ Symbols will be displayed when the interactive cursor meets the series point in 
 
 
 
-{ ![C:/Users/sivakumard/Desktop/Symbols.PNG](Runtime-Features_images/Runtime-Features_img25.png) | markdownify }
+{{ '![C:/Users/sivakumard/Desktop/Symbols.PNG](Runtime-Features_images/Runtime-Features_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -1136,7 +1136,7 @@ Essential Chart supports ToolTips in different areas of the chart which comes wi
 
 The different tooltips in the chart can be turned off using the control's ShowToolTips property.
 
-{ ![](Runtime-Features_images/Runtime-Features_img26.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img26.jpeg)' | markdownify }}
 {:.image }
 _Note: The ShowToolTips property in the chart is false by default, so remember to turn this on, before setting tooltips in the different chart areas._
 
@@ -1176,7 +1176,7 @@ series1.PointsToolTipFormat = "Sales:{4}K"
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img27.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1254,7 +1254,7 @@ End Sub
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img28.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1366,7 +1366,7 @@ series1.FancyToolTip.Alignment = TabAlignment.Top
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img29.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img29.jpeg)' | markdownify }}
 {:.image }
 
 

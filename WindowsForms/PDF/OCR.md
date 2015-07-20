@@ -277,9 +277,9 @@ lDoc.Save("Sample.pdf")
 
 lDoc.Close(True)
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](OCR_images/OCR_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](OCR_images/OCR_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: The Tesseract binaries, namely SyncfusionTessaract.dll, liblept168.dll, and language pack (tessdata), will be available in the following location._
 
-&lt;&lt;Installation Location&gt;>\Syncfusion\Essential Studio\&lt;&lt;Version Number&gt;>\OCRProcessor
+<<Installation Location>>\Syncfusion\Essential Studio\<<Version Number>>\OCRProcessor
 

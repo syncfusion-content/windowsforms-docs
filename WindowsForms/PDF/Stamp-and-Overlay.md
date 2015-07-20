@@ -11,7 +11,7 @@ documentation: ug
 
 You apply stamp to a PDF in much the same way as you apply a rubber stamp to a paper document. You can create your own stamps and can stamp PDF using text or images. Overlay feature is used to overlap two PDF pages one above other.
 
-{ ![](Stamp-and-Overlay_images/Stamp-and-Overlay_img1.png) | markdownify }
+{{ '![](Stamp-and-Overlay_images/Stamp-and-Overlay_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -276,7 +276,7 @@ g.DrawPdfTemplate(template, PointF.Empty, page.GetClientSize())
 doc.Save("NewPDF.pdf")
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Stamp-and-Overlay_images/Stamp-and-Overlay_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Stamp-and-Overlay_images/Stamp-and-Overlay_img2.png)' | markdownify }}
 {:.image }
 _Note: This template can be scaled, rotated, placed at different coordinates, and so on._
 

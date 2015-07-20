@@ -127,7 +127,7 @@ Screenshot:
 
 
 
-{ ![](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png) | markdownify }
+{{ '![](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png)' | markdownify }}
 {:.image }
 
 

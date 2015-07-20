@@ -139,7 +139,7 @@ End Function
 
 This sample illustrates the export of HTML documents loaded into the HTMLUI to images.
 
-{ ![](Exporting_images/Exporting_img1.jpeg) | markdownify }
+{{ '![](Exporting_images/Exporting_img1.jpeg)' | markdownify }}
 {:.image }
 
 

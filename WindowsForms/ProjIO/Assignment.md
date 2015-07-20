@@ -477,7 +477,7 @@ project.Assignments.Add(assignment)
 
 The project created using the above code will look as shown in the following Microsoft Project screenshot.
 
-{ ![](Assignment_images/Assignment_img1.jpeg) | markdownify }
+{{ '![](Assignment_images/Assignment_img1.jpeg)' | markdownify }}
 {:.image }
 
 

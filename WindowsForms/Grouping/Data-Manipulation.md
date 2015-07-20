@@ -111,7 +111,7 @@ Do the following steps:
 3. Add it to the RecordFilters collection. 
 4. List the filtered data. 
 > 
-{ ![](Data-Manipulation_images/Data-Manipulation_img1.jpeg) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: To list the data, instead of accessing the Table.Records collections, you were using the Table.FilteredRecords collections. The FilteredRecords collection only includes the records that satisfy all filters in the RecordFilters collection. Add this code at the end of the Main method._
 
@@ -243,7 +243,7 @@ Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
 
 
-{ ![](Data-Manipulation_images/Data-Manipulation_img2.png) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -329,7 +329,7 @@ Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
 
 
-{ ![](Data-Manipulation_images/Data-Manipulation_img3.png) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -520,7 +520,7 @@ Next rec
 
 
 
-{ ![](Data-Manipulation_images/Data-Manipulation_img4.png) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -708,7 +708,7 @@ Console.ReadLine()
 
 
 
-{ ![](Data-Manipulation_images/Data-Manipulation_img5.png) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -748,7 +748,7 @@ Overloads Public Function Add(sdc As SortColumnDescriptor) As Integer
 
 The second overload can be used to specify the sort direction. The SortColumnDescriptor.Comparer is an IComparer property that allows you to specify a custom comparer object. 
 
-> { ![](Data-Manipulation_images/Data-Manipulation_img6.jpeg) | markdownify }
+> {{ '![](Data-Manipulation_images/Data-Manipulation_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: We are going to use the third function in this section to perform custom sorting._
 
@@ -1083,7 +1083,7 @@ Console.ReadLine()
 
 
 
-{ ![](Data-Manipulation_images/Data-Manipulation_img7.png) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img7.png)' | markdownify }}
 {:.image }
 
 

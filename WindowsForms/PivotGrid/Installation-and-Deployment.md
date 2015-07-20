@@ -49,7 +49,7 @@ C:\Syncfusion\Essential Studio<version number>\Windows\PivotGrid.Windows\Samples
 
 Windows 7/Vista:
 
-C:\Users\&lt;username&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version number&gt;\Windows\PivotGrid.Windows\Samples
+C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\<version number>\Windows\PivotGrid.Windows\Samples
 
 
 
@@ -59,11 +59,11 @@ To view the samples, follow the steps below:
 
 
 
-1. Click Start > All Programs > Syncfusion > Essential Studio&lt;version number&gt; > Dashboard. 
+1. Click Start > All Programs > Syncfusion > Essential Studio<version number> > Dashboard. 
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -73,7 +73,7 @@ To view the samples, follow the steps below:
 
 
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/pivotgrid/ImagesExt/image9_1.png](Installation-and-Deployment_images/Installation-and-Deployment_img2.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/pivotgrid/ImagesExt/image9_1.png](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the following three ways:_
 
@@ -83,7 +83,7 @@ _Note: You can view the samples in any of the following three ways:_
 * Online Samples - Click to view online samples.
 * Explore Samples - Explore UI Windows Forms on disk.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -93,7 +93,7 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -144,7 +144,7 @@ Description</td></tr>
 <td>
 DeferLayoutUpdate</td><td>
 bool</td><td>
-Gets or sets a value to specify whether the layout should be updated immediately after updating the pivoting info, or if it should wait for a {{ '_Refresh()_' | markdownify }} call.</td></tr>
+Gets or sets a value to specify whether the layout should be updated immediately after updating the pivoting info, or if it should wait for a {{{ ''_Refresh()_'' | markdownify }}} call.</td></tr>
 <tr>
 <td>
 FreezeHeaders</td><td>

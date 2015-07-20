@@ -95,7 +95,7 @@ Private endPoint = New Point(beginPoint.X + element.Size.Width, beginPoint.Y + e
 
 This sample shows how the styles are applied by using the HTML Format object.
 
-{ ![](HTML-Format_images/HTML-Format_img1.jpeg) | markdownify }
+{{ '![](HTML-Format_images/HTML-Format_img1.jpeg)' | markdownify }}
 {:.image }
 
 

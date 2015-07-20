@@ -19,7 +19,7 @@ Syncfusion Essential Grouping is a data technology that allows you to easily acc
 
 
 
-{ ![](Overview_images/Overview_img1.jpeg) | markdownify }
+{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -140,21 +140,21 @@ Location</td></tr>
 <tr>
 <td>
 Readme</td><td>
-1. For Windows and BackOffice: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\readme.htm2. For other platforms: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\&lt;asp/WPF&gt; Release Notes\readme.htm</td></tr>
+1. For Windows and BackOffice: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\readme.htm2. For other platforms: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\<asp/WPF> Release Notes\readme.htm</td></tr>
 <tr>
 <td>
 Release Notes</td><td>
-1. For Windows and BackOffice: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\Release Notes.htm2. For other platforms: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\&lt;asp/WPF&gt; Release Notes\Release Notes.htm</td></tr>
+1. For Windows and BackOffice: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\Release Notes.htm2. For other platforms: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\<asp/WPF> Release Notes\Release Notes.htm</td></tr>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/resources) | markdownify } (Navigate to the Grouping User Guide.)![](Overview_images/Overview_img5.jpeg)
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the Grouping User Guide.)![](Overview_images/Overview_img5.jpeg)
 {:.image }
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{ [http://help.syncfusion.com/cr](http://help.syncfusion.com/cr) | markdownify }  (Navigate to the Reporting User Guide. Select {{ '_Grouping_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/cr](http://help.syncfusion.com/cr)' | markdownify }}  (Navigate to the Reporting User Guide. Select {{{ ''_Grouping_'' | markdownify }}}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

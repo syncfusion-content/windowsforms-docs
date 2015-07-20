@@ -15,7 +15,7 @@ Essential XlsIO supports working with form controls, OLE objects, and auto-shape
 
 Essential XlsIO provides support to read and write the Text Box, Check Box, and Combo Box controls. It enables creation of forms that are user-friendly and also enhances the appearance of the forms.
 
-> { ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img1.jpeg) | markdownify }
+> {{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: Essential XlsIO provides support to read and write Form controls. Support for Active X Form controls is not yet available._
 
@@ -170,7 +170,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -334,7 +334,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -496,7 +496,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -666,7 +666,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -674,7 +674,7 @@ excelEngine.Dispose()
 
 Object Linking and Embedding (OLE) is one of the best known ways to insert data into Microsoft Office documents. Though embedding or linking objects increases the size of the original document, it helps improve the document readability by providing offline reading of documents (where the existing online links can be replaced). In order to read the content of the object, associated software needs to be installed in the machine. For example, a PDF file linked or embedded to an Excel file needs Adobe Reader in order to launch and read the PDF file. Essential XlsIO supports read and write of OLE Objects in XLSX file format. Objects can either be linked or embedded in the Excel documents by using IOleObject interface. 
 
-> { ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img6.jpeg) | markdownify }
+> {{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: Currently read and write functions for OLE Objects are supported in Windows, ASP.NET, and WPF platforms only._
 
@@ -1643,7 +1643,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img7.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img7.png)' | markdownify }}
 {:.image }
 
 

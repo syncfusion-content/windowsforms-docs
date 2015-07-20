@@ -101,7 +101,7 @@ Total Variation
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img1.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -111,7 +111,7 @@ Between Variation
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img2.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -161,7 +161,7 @@ Between Variation
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img3.png) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -171,7 +171,7 @@ Within Variation
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img4.png) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -181,7 +181,7 @@ Within Variation
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img5.png) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -240,7 +240,7 @@ The following image displays the results of an ANOVA test.
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -260,7 +260,7 @@ When the measured correlation coefficient is positive, the series values would b
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img7.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -324,7 +324,7 @@ Correlation1=BasicStatisticalFormulas.Correlation(series,series1)
 
 
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img8.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img8.jpeg)' | markdownify }}
 {:.image }
 _Note: For further details, refer to this Browser Sample:_
 
@@ -402,7 +402,7 @@ Covariance1=BasicStatisticalFormulas.Covariance (series,series1)
 
 
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img9.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img9.jpeg)' | markdownify }}
 {:.image }
 _Note: For further details, refer to this Browser Sample:_
 
@@ -465,7 +465,7 @@ Dim ttr As FTestResult = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisti
 
 
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img10.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img10.jpeg)' | markdownify }}
 {:.image }
 _Note: For further details, refer to this Browser Sample:_
 
@@ -525,7 +525,7 @@ calculatedMean = BasicStatisticalFormulas.Mean(series1)
 
 
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img11.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img11.jpeg)' | markdownify }}
 {:.image }
 _Note: For further details, refer to this Browser Sample:_
 
@@ -587,7 +587,7 @@ calculatedMedian = BasicStatisticalFormulas.Median(series1)
 
 
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img12.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img12.jpeg)' | markdownify }}
 {:.image }
 _Note: For further details, refer to this Browser Sample:_
 
@@ -651,7 +651,7 @@ Deviation1 = BasicStatisticalFormulas. StandartDeviation  (series1,false)
 
 
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img13.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img13.jpeg)' | markdownify }}
 {:.image }
 _Note: For further details, refer to this Browser Sample:_
 
@@ -693,7 +693,7 @@ This formula performs a T-test for two groups of data and assumes unequal varian
 
 This analysis tool is referred to as a heteroscedastic t-test and can be used when the groups that are under study are distinct. Use a paired test when there is one group before and after a treatment.
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img14.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img14.jpeg)' | markdownify }}
 {:.image }
 _Note: For programming example, refer to the following Browser Sample:_
 
@@ -808,7 +808,7 @@ _Md = µ1 - µ2_
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img15.png) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -880,7 +880,7 @@ Steps to perform the test
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img16.png) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1015,7 +1015,7 @@ This test requires the sample to be random and is taken from a population that i
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img17.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1025,7 +1025,7 @@ This test requires the sample to be random and is taken from a population that i
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img18.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1082,7 +1082,7 @@ Dim ztr As ZTestResult = BasicStatisticalFormulas.ZTest(Convert.ToDouble(TextBox
 
 
 
-> { ![](Statistical-Formulas_images/Statistical-Formulas_img19.jpeg) | markdownify }
+> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img19.jpeg)' | markdownify }}
 {:.image }
 _Note: For programming example, refer to the following Sample:_
 
@@ -1172,7 +1172,7 @@ There are two widely used utility functions, the Gamma and Beta functions, which
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img20.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1228,7 +1228,7 @@ The Beta Distribution can be defined as a family of probability distributions di
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1312,7 +1312,7 @@ Binomial Coefficient is an utility function used in statistical calculations. Th
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img22.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1417,7 +1417,7 @@ Dim double as result = UtilityFunctions.InverseBetaCumulativeDistribution (a, b,
 The Error function, denoted as Erf(x), gives the probability that a measurement under the influence of accidental errors has a distance less than x from the average value at the center. It is the integral of Gauss curve, that is usually normalized to one with a factor of 2/Öp. It is otherwise called as integrated Gauss function or Gauss Error function.
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img23.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1429,7 +1429,7 @@ Here is the plot of error function.
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img24.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1485,7 +1485,7 @@ The factorial function is defined by the following expression.
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img25.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1547,7 +1547,7 @@ This formula returns cumulative F Distribution which can be defined as the ratio
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img26.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1611,7 +1611,7 @@ The Gamma Function is an attempt to generalize the factorial function to real an
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img27.png) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1623,7 +1623,7 @@ For a complex number x with a positive real part, the function can be given by
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img28.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1631,7 +1631,7 @@ For a complex number x with a positive real part, the function can be given by
 
 Special Values of gamma function
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img29.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1685,7 +1685,7 @@ The formula for the cumulative distribution function for the gamma distribution 
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img30.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1695,7 +1695,7 @@ where is the gamma function defined above and is the incomplete gamma function. 
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img31.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img31.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1910,7 +1910,7 @@ The normal density function is given by,
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img32.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1918,7 +1918,7 @@ The normal density function is given by,
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1990,7 +1990,7 @@ The log-normal distribution has a probability density function (pdf),
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img34.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img34.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2000,7 +2000,7 @@ for x > 0, where µ and s are the median and standard deviation of the variable'
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img35.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img35.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2010,13 +2010,13 @@ and the variance is,
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img36.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img36.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img37.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img37.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2118,13 +2118,13 @@ double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degree
 
 This formula will return the T cumulative distribution (student's t-distribution) for a degree of freedom > 0. When there is a need to estimate the mean of a normally distributed population for a given sample, the t-distribution comes into action. It is the basis of the popular t-tests to find out the difference between two sample means.
 
-For a sample with size n drawn from a normal population with mean  and standard deviation . Let { ![](Statistical-Formulas_images/Statistical-Formulas_img38.png) | markdownify }
+For a sample with size n drawn from a normal population with mean  and standard deviation . Let {{ '![](Statistical-Formulas_images/Statistical-Formulas_img38.png)' | markdownify }}
 {:.image }
  and _s_  denote the sample mean and sample standard deviation respectively. Then the quantity 
 
 
 
-{ ![](Statistical-Formulas_images/Statistical-Formulas_img39.jpeg) | markdownify }
+{{ '![](Statistical-Formulas_images/Statistical-Formulas_img39.jpeg)' | markdownify }}
 {:.image }
 
 

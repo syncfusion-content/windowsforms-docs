@@ -18,7 +18,7 @@ The following snippet shows how a text content can be replaced with an image in 
 
 
 
-private const string DEF_IMG_TAG = "&lt;img src='..\\..\\clock.jpg'&gt;";
+private const string DEF_IMG_TAG = "<img src='..\\..\\clock.jpg'>";
 
 private const string DEF_TIME = "time";
 
@@ -48,7 +48,7 @@ this.htmluiControl1.Refresh();
 
 
 
-Private Const DEF_IMG_TAG As String = "&lt;img src='..\..\clock.jpg'&gt;"
+Private Const DEF_IMG_TAG As String = "<img src='..\..\clock.jpg'>"
 
 Private Const DEF_TIME As String = "time"
 
@@ -76,7 +76,7 @@ End Sub
 
 The following image shows the text element Time replaced by an image while displayed using HTMLUI.
 
-{ ![](Element-Format_images/Element-Format_img1.png) | markdownify }
+{{ '![](Element-Format_images/Element-Format_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ This sample illustrates Element Formatting in HTMLUI.
 
 
 
-{ ![](Element-Format_images/Element-Format_img2.jpeg) | markdownify }
+{{ '![](Element-Format_images/Element-Format_img2.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -13,7 +13,7 @@ Essential Chart by default displays a legend with information on each series tha
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -235,7 +235,7 @@ Specifies the number of columns in which the legend items should be rendered.</t
 </table>
 
 
-> { ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img2.jpeg) | markdownify }
+> {{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: Note that the user can drag the legend around during run time. He can dock it to the sides if docking is enabled. Docking behavior is controlled by Behavior property which is described in the above table._
 
@@ -243,13 +243,13 @@ Changing Legend Properties at Run Time
 
 The Legend's look and feel can also be customized during runtime. Double-clicking legend's text will pop up the below properties window. Properties set through this dialogue can be applied to the chart. 
 
-> { ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img3.jpeg) | markdownify }
+> {{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: These settings will be lost when the application is closed._
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img4.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -349,7 +349,7 @@ Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img5.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -409,7 +409,7 @@ End Sub
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img6.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -610,7 +610,7 @@ Lets you show / hide the legend item.</td></tr>
 </table>
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img7.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -620,7 +620,7 @@ _Figure_ _286__: Chart with "Series1" Legend Item Unchecked_
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -733,7 +733,7 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Serie
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img9.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -835,7 +835,7 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -881,7 +881,7 @@ Me.chartControl1.Legend.Items(0).Interior = New BrushInfo(Color.Violet)
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -941,7 +941,7 @@ chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1005,7 +1005,7 @@ Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.image
 
 
 
-{ ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg) | markdownify }
+{{ '![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)' | markdownify }}
 {:.image }
 
 

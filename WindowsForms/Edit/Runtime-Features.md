@@ -248,7 +248,7 @@ Dim bmp as Bitmap = Me.editControl1.CreateBitmap()
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img1.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -388,7 +388,7 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img2.png) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -402,7 +402,7 @@ Edit Control also supports advanced and customizable Find and Replace dialog box
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img3.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -412,7 +412,7 @@ _Figure_ _47__: Find Dialog Box_
 
 The Replace dialog box is invoked by using the ShowReplaceDialog method. The keyboard shortcut to this dialog box is Ctrl+H. The Replace dialog box also allows you to find and replace words within the selected text.
 
-{ ![](Runtime-Features_images/Runtime-Features_img4.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -506,7 +506,7 @@ Me.editControl1.ShowGoToDialog()
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img5.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -600,7 +600,7 @@ Me.editControl1.FindHistory.Clear()
 
 
 
-> { ![](Runtime-Features_images/Runtime-Features_img6.jpeg) | markdownify }
+> {{ '![](Runtime-Features_images/Runtime-Features_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: The above methods can also be set for the ReplaceHistory and ReplaceSearchHistory properties._
 
@@ -620,13 +620,13 @@ Essential Edit control Find Dialog is now enhanced with an alert message box. Th
 
 
 
-> { ![](Runtime-Features_images/Runtime-Features_img7.jpeg) | markdownify }
+> {{ '![](Runtime-Features_images/Runtime-Features_img7.jpeg)' | markdownify }}
 {:.image }
 _Note: In search option Current Selection, click OK in alert message box, then the search area is selected again automatically as in VS editor._
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img8.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -704,7 +704,7 @@ The Edit Control supports scroller events that are raised when the scroll arrows
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img9.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -907,7 +907,7 @@ The following illustration shows the Edit Control with custom color (green) set 
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img10.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -936,7 +936,7 @@ The context menu has the standard VS.NET-like appearance, and can optionally be 
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img11.png) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1140,7 +1140,7 @@ End Sub
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img12.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1150,7 +1150,7 @@ If the Syncfusion.Tools.Windows assembly is loaded before the instantiation of t
 
 
 
-> { ![](Runtime-Features_images/Runtime-Features_img13.jpeg) | markdownify }
+> {{ '![](Runtime-Features_images/Runtime-Features_img13.jpeg)' | markdownify }}
 {:.image }
 _Note: You must have reference to the Syncfusion.Tools.Windows assembly in your project._
 
@@ -1186,7 +1186,7 @@ Code Snippets are inserted into the Edit Control by following the procedure give
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img14.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1289,11 +1289,11 @@ Code snippets can also be created by using the configuration file. For example, 
 
 
 
-&lt;CodeSnippetsContainer Name ="Container 2"&gt;
+<CodeSnippetsContainer Name ="Container 2">
 
-&lt;CodeSnippet Format ="1.0.0"&gt;
+<CodeSnippet Format ="1.0.0">
 
-       &lt;Header&gt;
+       <Header>
 
         <Title>struct</Title>
 
@@ -1301,13 +1301,13 @@ Code snippets can also be created by using the configuration file. For example, 
 
  <Description>Code snippet for struct</Description>
 
-     &lt;/Header&gt;
+     </Header>
 
-     &lt;Snippet&gt;
+     <Snippet>
 
-          &lt;Declarations&gt;
+          <Declarations>
 
-        &lt;Literal&gt;
+        <Literal>
 
          <ID>name</ID>
 
@@ -1315,11 +1315,11 @@ Code snippets can also be created by using the configuration file. For example, 
 
         <Default>MyStruct</Default>
 
-      &lt;/Literal&gt;
+      </Literal>
 
-         &lt;/Declarations&gt;
+         </Declarations>
 
-       &lt;Code Language ="csharp"&gt;<![CDATA[struct $name$
+       <Code Language ="csharp"><![CDATA[struct $name$
 
        {
 
@@ -1327,17 +1327,17 @@ Code snippets can also be created by using the configuration file. For example, 
 
        }]]>
 
-       &lt;/Code&gt;
+       </Code>
 
-&lt;/Snippet&gt;
+</Snippet>
 
-&lt;/CodeSnippet&gt;
+</CodeSnippet>
 
-&lt;/CodeSnippetsContainer&gt;
+</CodeSnippetsContainer>
 
 
 
-The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. For example, literal strings, numeric values, and some variable names should be declared as literals. The symbol $ is placed at the beginning and end of the literal ID element value. For example, if a literal has an ID element that contains the value MyID, you must reference that literal in the code element as $MyID$. All code snippets must be placed between &lt;![CDATA[ and ]]&gt; brackets.
+The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. For example, literal strings, numeric values, and some variable names should be declared as literals. The symbol $ is placed at the beginning and end of the literal ID element value. For example, if a literal has an ID element that contains the value MyID, you must reference that literal in the code element as $MyID$. All code snippets must be placed between <![CDATA[ and ]]> brackets.
 
 
 
@@ -1399,7 +1399,7 @@ The Context Choice support allows you to create pop-ups for displaying a list of
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img15.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1415,13 +1415,13 @@ The Context Choice displaying characters are specified in the configuration file
 
 
 
-&lt;lexem BeginBlock="." Type="Operator" DropContextChoiceList="true"/&gt;
+<lexem BeginBlock="." Type="Operator" DropContextChoiceList="true"/>
 
-&lt;lexem BeginBlock="," Type="Operator" DropContextChoiceList="true"/&gt;
+<lexem BeginBlock="," Type="Operator" DropContextChoiceList="true"/>
 
 
 
-The preceding code has to be placed within the &lt;lexems&gt; section of the configuration file.
+The preceding code has to be placed within the <lexems> section of the configuration file.
 
 
 
@@ -1894,7 +1894,7 @@ FilterAutoCompleteItems property when set to True, filters the item in the AutoC
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img16.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1958,7 +1958,7 @@ The Context Prompt feature allows you to create pop-ups for displaying variation
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img17.png) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1972,13 +1972,13 @@ The Context Prompt displaying characters are specified in the configuration file
 
 [XML]
 
-&lt;lexem BeginBlock="(" Type="Operator" IsComplex="true" DropContextPrompt="true" /&gt;
+<lexem BeginBlock="(" Type="Operator" IsComplex="true" DropContextPrompt="true" />
 
-&lt;lexem BeginBlock="{" Type="Operator" IsComplex="true" DropContextPrompt="true"/&gt;
+<lexem BeginBlock="{" Type="Operator" IsComplex="true" DropContextPrompt="true"/>
 
 
 
-The preceding code has to be placed within the &lt;lexems&gt; section of the configuration file. 
+The preceding code has to be placed within the <lexems> section of the configuration file. 
 
 
 
@@ -2638,7 +2638,7 @@ The Context ToolTip displays helpful tooltips when the mouse is hovered over a l
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img18.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2974,7 +2974,7 @@ Essential Edit provides excellent support for viewport navigation including inte
 
 
 
-{ ![](Runtime-Features_images/Runtime-Features_img19.jpeg) | markdownify }
+{{ '![](Runtime-Features_images/Runtime-Features_img19.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -19,7 +19,7 @@ The following screen shot illustrates the structure of the Edit Control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -49,7 +49,7 @@ The following image shows Edit Control in the toolbox.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66,7 +66,7 @@ The following illustration shows Edit Control created through designer.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -224,7 +224,7 @@ The following illustration shows Edit Control created through code.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
 {:.image }
 
 

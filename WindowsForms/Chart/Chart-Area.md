@@ -63,7 +63,7 @@ ChartSeries.ConfigItems.PyramidItem.ShowSeriesTitle = True
 
 A sample which demonstrates the chartdividearea support is available in the following sample installation location.
 
-&lt;sample installed location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Chart Divide Area
+<sample installed location>\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Chart Divide Area
 
 See Also
 

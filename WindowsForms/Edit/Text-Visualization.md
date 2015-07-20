@@ -235,7 +235,7 @@ Me.editControl1.MoveToEnd();
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img1.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -361,7 +361,7 @@ The coordinates associated with the above properties are referred to as Virtual 
 
 
 
-> { ![](Text-Visualization_images/Text-Visualization_img2.jpeg) | markdownify }
+> {{ '![](Text-Visualization_images/Text-Visualization_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: The Virtual coordinates of the top-left corner in the Edit Control is (1,1), and it is not a zero-based coordinates system._
 
@@ -483,7 +483,7 @@ Me.editControl1.ConvertVirtualPointToCoordinatePoint(Integer Column, Integer lin
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img3.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -491,7 +491,7 @@ _Figure_ _15_: Positions and Offsets Conversion Options in Edit Control_
 
 
 
-> { ![](Text-Visualization_images/Text-Visualization_img4.jpeg) | markdownify }
+> {{ '![](Text-Visualization_images/Text-Visualization_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: The Offset value is always calculated from the top-left corner of the Edit Control from the Virtual coordinates (1,1)._
 
@@ -599,7 +599,7 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img5.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -621,7 +621,7 @@ Edit Control supports content dividers just like VB.NET code in Visual Studio.NE
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img6.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -641,23 +641,23 @@ This feature can be enabled for sections of the Edit Control contents, by settin
 
 <lexem BeginBlock="Function" EndBlock="End Function" Type="KeyWord" IsComplex="true" IsCollapsable="true" Indent="true"
 
-        CollapseName="{Function...End Function}" AutoNameExpression='.*Function.*\s+(?&lt;text>\w+)\s*\(' AutoNameTemplate="Function [${text}]"
+        CollapseName="{Function...End Function}" AutoNameExpression='.*Function.*\s+(?<text>\w+)\s*\(' AutoNameTemplate="Function [${text}]"
 
         IsCollapseAutoNamed="true" ContentDivider="true" >
 
-        &lt;References&gt;
+        <References>
 
-          &lt;reference RefID="777"/&gt;
+          <reference RefID="777"/>
 
-        &lt;/References&gt;
+        </References>
 
-        &lt;SubLexems&gt;
+        <SubLexems>
 
-          &lt;lexem BeginBlock="\n" IsBeginRegex="true" /&gt;
+          <lexem BeginBlock="\n" IsBeginRegex="true" />
 
-        &lt;/SubLexems&gt;  
+        </SubLexems>  
 
-&lt;/lexem&gt;
+</lexem>
 
 
 
@@ -767,7 +767,7 @@ You can also set the underlining from the configuration file, as shown in the be
 
 
 
-&lt;format name="Comment" Font="Courier New, 10pt, style=Bold" FontColor="Green" LineColor="Red" Weight="Thick" Underline="DashDot" /&gt;
+<format name="Comment" Font="Courier New, 10pt, style=Bold" FontColor="Green" LineColor="Red" Weight="Thick" Underline="DashDot" />
 
 
 
@@ -775,7 +775,7 @@ LineColor, Weight and Underline parameters are used to specify the type of under
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img7.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -843,7 +843,7 @@ To remove the strikethrough line, just call one of the above mentioned methods a
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img8.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1187,7 +1187,7 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img9.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1429,7 +1429,7 @@ Edit Control has the ability to indicatewhitespaces in its contents with default
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img10.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1713,7 +1713,7 @@ Description</td></tr>
 <tr>
 <td>
 LineNumbersAlignment</td><td>
-Specifies the alignment of line numbers. The options provided are{{ '_Left_' | markdownify }}{{ '_Right_' | markdownify }}</td></tr>
+Specifies the alignment of line numbers. The options provided are{{{ ''_Left_'' | markdownify }}}{{{ ''_Right_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 LineNumbersColor</td><td>
@@ -1785,7 +1785,7 @@ Me.editControl1.SelectOnLineNumberClick = True
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img11.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1833,7 +1833,7 @@ Me.editControl1.CurrentLineHighlightColor = Color.Orange
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img12.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1851,7 +1851,7 @@ The Edit Control allows any number of custom images or bookmarks to be added to 
 
 
 
-> { ![](Text-Visualization_images/Text-Visualization_img13.jpeg) | markdownify }
+> {{ '![](Text-Visualization_images/Text-Visualization_img13.jpeg)' | markdownify }}
 {:.image }
 _Note: At any given point of time, each line can have only one indicator or bookmark associated with it._
 
@@ -2037,7 +2037,7 @@ Removes the custom bookmark from the desired line.</td></tr>
 </table>
 
 
-> { ![](Text-Visualization_images/Text-Visualization_img14.jpeg) | markdownify }
+> {{ '![](Text-Visualization_images/Text-Visualization_img14.jpeg)' | markdownify }}
 {:.image }
 _Note: To clear the bookmarks set by using the SetCustomBookmark method, you must use the BookmarkClear method with its bool argument set as True._
 
@@ -2153,7 +2153,7 @@ Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img15.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2319,7 +2319,7 @@ End Sub
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img16.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2471,7 +2471,7 @@ The bracket highlighting feature can be turned on by enabling the ShowIndentatio
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img17.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2479,7 +2479,7 @@ _Figure_ _26_: Bracket Highlighting with Indentation Guidelines_
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img18.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2561,7 +2561,7 @@ Me.editControl1.ShowIndentationBlockBorders = True
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img19.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2645,7 +2645,7 @@ If Enter is pressed when the AutoIndentMode is set to None, the text is not inde
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img20.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2657,7 +2657,7 @@ When the AutoIndentMode is set to Smart, the next line is indented by one TabSiz
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img21.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2669,7 +2669,7 @@ When the AutoIndentMode is set to Block, the next line begins at the same column
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img22.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2685,7 +2685,7 @@ The Auto Indentation characters can be specified by setting the Indent field to 
 
 
 
-&lt;lexem BeginBlock="{" EndBlock="}" Type="Operator" IsComplex="true" IsCollapsable="true" Indent="true"  CollapseName="{...}" IndentationGuideline="true"&gt;
+<lexem BeginBlock="{" EndBlock="}" Type="Operator" IsComplex="true" IsCollapsable="true" Indent="true"  CollapseName="{...}" IndentationGuideline="true">
 
 
 
@@ -2755,7 +2755,7 @@ For example, the closing brace gets automatically aligned with the opening brace
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img23.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2767,7 +2767,7 @@ Now, when the closing brace '}' is typed, it gets automatically aligned with the
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img24.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2775,7 +2775,7 @@ _Figure_ _33_: AutoFormatting support for code in Edit Control_
 
 
 
-> { ![](Text-Visualization_images/Text-Visualization_img25.jpeg) | markdownify }
+> {{ '![](Text-Visualization_images/Text-Visualization_img25.jpeg)' | markdownify }}
 {:.image }
 _Note: The_ AutoIndentMode _property for the Edit Control should be set to Smart for this purpose._
 
@@ -2785,7 +2785,7 @@ Essential Edit provides an extensible interface, IAutoFormatter, which can be im
 
 
 
-* XML or HTML text of the following format - &lt;abc&gt; &lt;xyz&gt; .... &lt;/xyz&gt; &lt;/abc&gt; should be autoformatted as follows.
+* XML or HTML text of the following format - <abc> <xyz> .... </xyz> </abc> should be autoformatted as follows.
 
 
 
@@ -2793,15 +2793,15 @@ Essential Edit provides an extensible interface, IAutoFormatter, which can be im
 
 
 
-&lt;abc&gt;
+<abc>
 
-      &lt;xyz&gt;
+      <xyz>
 
         ...
 
-      &lt;/xyz&gt;
+      </xyz>
 
-&lt;/abc&gt;
+</abc>
 
 
 
@@ -2839,7 +2839,7 @@ The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian 
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img26.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3077,7 +3077,7 @@ Me.editControl1.ShowOutliningTooltip = True
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img27.png) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -3187,7 +3187,7 @@ Gets / sets state of the word wrapping mode.</td></tr>
 <tr>
 <td>
 WordWrapType</td><td>
-Gets / sets type of word wrapping. The options provided are* {{ '_WrapByChar_' | markdownify }} - wraps the text by individual characters* {{ '_WrapByWord_' | markdownify }} - wraps the text by individual words<br>The default value is WrapByWord.</td></tr>
+Gets / sets type of word wrapping. The options provided are* {{{ ''_WrapByChar_'' | markdownify }}} - wraps the text by individual characters* {{{ ''_WrapByWord_'' | markdownify }}} - wraps the text by individual words<br>The default value is WrapByWord.</td></tr>
 </table>
 
 
@@ -3237,7 +3237,7 @@ Description</td></tr>
 <tr>
 <td>
 WordWrapMode</td><td>
-Gets / sets state of the word wrapping mode. The options provided are{{ '_WordWrapMargin_'  | markdownify }}- wraps text at the boundary between text area and wordwrap margin of the Edit ControlThe area beyond the text area in the Edit Control is referred to asthe wordwrap margin. Hence, the width of the wordwrap margin is the difference between Edit Control's width and the TextArea width.{{ '_Control_'  | markdownify }}- wraps the text at the edge of the Edit Control{{ '_SpecifiedColumn -_' | markdownify }} wraps the text at the specified column that is specified in WordWrapColumn propertyThe default value is set to Control.</td></tr>
+Gets / sets state of the word wrapping mode. The options provided are{{{ ''_WordWrapMargin_' ' | markdownify }}}- wraps text at the boundary between text area and wordwrap margin of the Edit ControlThe area beyond the text area in the Edit Control is referred to asthe wordwrap margin. Hence, the width of the wordwrap margin is the difference between Edit Control's width and the TextArea width.{{{ ''_Control_' ' | markdownify }}}- wraps the text at the edge of the Edit Control{{{ ''_SpecifiedColumn -_'' | markdownify }}} wraps the text at the specified column that is specified in WordWrapColumn propertyThe default value is set to Control.</td></tr>
 <tr>
 <td>
 WordWrapColumnMeasuringFont</td><td>
@@ -3327,7 +3327,7 @@ The following illustration shows the Edit Control with the WordWrappingMode and 
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img28.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3363,7 +3363,7 @@ Gets / sets value indicating whether the wordwrap margin should be visible.</td>
 <tr>
 <td>
 WordWrapMarginLineStyle</td><td>
-Specifies style of line that is drawn at the border of the wordwrap margin. The options provided are* Solid* Dash* Dot* DashDot* DashDotDot* Custom<br>The default value is {{ '_Solid_' | markdownify }}.</td></tr>
+Specifies style of line that is drawn at the border of the wordwrap margin. The options provided are* Solid* Dash* Dot* DashDot* DashDotDot* Custom<br>The default value is {{{ ''_Solid_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 WordWrapMarginLineColor</td><td>
@@ -3431,7 +3431,7 @@ Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusio
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img29.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3537,7 +3537,7 @@ Me.editControl1.MarkWrappedLines = True
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img30.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3601,7 +3601,7 @@ The following screenshot shows a read-only region in the code section of the Edi
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img31.png) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -3718,7 +3718,7 @@ Me.editControl1.RemoveTextBorder(New Point(1, 13), New Point(15, 13)
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img32.png) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -4044,7 +4044,7 @@ Setting the TransparentSelection property to True, will highlight the selected t
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img33.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4056,7 +4056,7 @@ Setting the TransparentSelection property to False, will highlight the selected 
 
 
 
-{ ![](Text-Visualization_images/Text-Visualization_img34.jpeg) | markdownify }
+{{ '![](Text-Visualization_images/Text-Visualization_img34.jpeg)' | markdownify }}
 {:.image }
 
 

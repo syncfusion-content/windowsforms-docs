@@ -57,7 +57,7 @@ Binary Logical Operators
 
 >=       Greater Than Or Equal
 
-&lt;&gt;       Not Equal
+<>       Not Equal
 
 
 
@@ -68,7 +68,7 @@ All operations are subject to the following hierarchy of operations. The level 1
 1. - (Unary Minus)
 2. *    /
 3. +    -
-4. &lt;   &gt;    =    &lt;=    &gt;=    &lt;&gt;
+4. <   >    =    <=    >=    <>
 5. & (Concatenation)
 
 

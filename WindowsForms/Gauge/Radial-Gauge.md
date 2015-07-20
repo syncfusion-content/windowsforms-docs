@@ -19,7 +19,7 @@ The best example of a radial gauge is a speedometer. The speedometer can be desi
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img1.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -39,13 +39,13 @@ Drag the RadialGauge control from the toolbox onto the form.
 
 
 
-{ ![C:/Users/Arun/Desktop/Gauge_img/ToolBox.png](Radial-Gauge_images/Radial-Gauge_img2.png) | markdownify }
+{{ '![C:/Users/Arun/Desktop/Gauge_img/ToolBox.png](Radial-Gauge_images/Radial-Gauge_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img3.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -196,13 +196,13 @@ Gets or sets the gauge value visibility.</td></tr>
 </table>
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img4.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img5.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -226,7 +226,7 @@ Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.HalfCircle
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img6.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -287,13 +287,13 @@ Gets or sets the text orientation layout. </td></tr>
 </table>
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img7.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img7.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img8.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -419,13 +419,13 @@ Me.radialGauge1.MinorInnerLinesHeight = 6
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img9.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img9.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img10.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -573,13 +573,13 @@ Me.radialGauge1.Ranges.Add(range1)
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img11.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img11.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img12.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -675,25 +675,25 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img13.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img13.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img14.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img14.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img15.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img15.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Radial-Gauge_images/Radial-Gauge_img16.png) | markdownify }
+{{ '![](Radial-Gauge_images/Radial-Gauge_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -715,13 +715,13 @@ this.radialGauge1.DisplayMember = [column name];
 
 [ASPX]
 
-  &lt;input type="text" value="" id="SetDropDowntext" /&gt;
+  <input type="text" value="" id="SetDropDowntext" />
 
-   &lt;input type="button" value="Set Text" id="setText" /&gt;
+   <input type="button" value="Set Text" id="setText" />
 
 
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
        $("#setText").bind('click', function () {
 
@@ -731,7 +731,7 @@ this.radialGauge1.DisplayMember = [column name];
 
        });
 
-  &lt;/script&gt;
+  </script>
 
 ### Frequently Asked Questions
 
@@ -743,7 +743,7 @@ The Radial Gauge control can be used for representing a range of values in cir
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Radial-Gauge_images/Radial-Gauge_img17.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Radial-Gauge_images/Radial-Gauge_img17.png)' | markdownify }}
 {:.image }
 
 

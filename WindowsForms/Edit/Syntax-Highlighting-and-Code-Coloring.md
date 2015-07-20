@@ -295,7 +295,7 @@ Syntax Highlighting and Code Coloring can be implemented at run time by using th
 
 
 
-{ ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img1.jpeg) | markdownify }
+{{ '![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -403,71 +403,71 @@ The language-specific configuration is stored in XML files. The below given code
 
 
 
-&lt;ConfigLanguage name="Custom LISP"&gt;
+<ConfigLanguage name="Custom LISP">
 
-        &lt;formats&gt;
+        <formats>
 
-                &lt;format name="Text" Font="Courier New, 10pt" FontColor="Black" /&gt;
+                <format name="Text" Font="Courier New, 10pt" FontColor="Black" />
 
-                &lt;format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" /&gt;
+                <format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" />
 
-                &lt;format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" /&gt;
+                <format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
 
-                &lt;format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" /&gt;
+                <format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
 
-                &lt;format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" /&gt;
+                <format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" />
 
-                &lt;format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" /&gt;
+                <format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
 
-                &lt;format name="Comment" Font="Courier New, 10pt, style=Bold" FontColor="Green" /&gt;
+                <format name="Comment" Font="Courier New, 10pt, style=Bold" FontColor="Green" />
 
-                &lt;format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" /&gt;
+                <format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" />
 
-                &lt;format name="CollapsedText" Font="Courier New, 10pt" FontColor="Black" BackColor="White"/&gt;
+                <format name="CollapsedText" Font="Courier New, 10pt" FontColor="Black" BackColor="White"/>
 
-        &lt;/formats&gt;
+        </formats>
 
-        &lt;extensions&gt;
+        <extensions>
 
                 <extension>lsp</extension>
 
-        &lt;/extensions&gt;
+        </extensions>
 
-        &lt;lexems&gt;
+        <lexems>
 
-                &lt;lexem BeginBlock="(" Type="Operator" /&gt;
+                <lexem BeginBlock="(" Type="Operator" />
 
-                &lt;lexem BeginBlock=")" Type="Operator" /&gt;
+                <lexem BeginBlock=")" Type="Operator" />
 
-                &lt;lexem BeginBlock="'" Type="Operator" /&gt;
+                <lexem BeginBlock="'" Type="Operator" />
 
-                &lt;lexem BeginBlock="car" Type="KeyWord" /&gt;
+                <lexem BeginBlock="car" Type="KeyWord" />
 
-                &lt;lexem BeginBlock="cdr" Type="KeyWord" /&gt;
+                <lexem BeginBlock="cdr" Type="KeyWord" />
 
-                &lt;lexem BeginBlock="cons" Type="KeyWord" /&gt;
+                <lexem BeginBlock="cons" Type="KeyWord" />
 
-                &lt;lexem BeginBlock="#Region" EndBlock="#End Region" Type="PreprocessorKeyword" IsEndRegex="true" IsComplex="true"IsCollapsable="true" AutoNameExpression="\s*(?&lt;text&gt;.*).*\n" AutoNameTemplate="${text} " IsCollapseAutoNamed="true" CollapseName="#Region"> 
+                <lexem BeginBlock="#Region" EndBlock="#End Region" Type="PreprocessorKeyword" IsEndRegex="true" IsComplex="true"IsCollapsable="true" AutoNameExpression="\s*(?<text>.*).*\n" AutoNameTemplate="${text} " IsCollapseAutoNamed="true" CollapseName="#Region"> 
 
-                 &lt;SubLexems&gt;
+                 <SubLexems>
 
-                          &lt;lexem BeginBlock="\n" IsBeginRegex="true" /&gt; 
+                          <lexem BeginBlock="\n" IsBeginRegex="true" /> 
 
-                 &lt;/SubLexems&gt;
+                 </SubLexems>
 
-                &lt;/lexem&gt;
+                </lexem>
 
-        &lt;/lexems&gt;
+        </lexems>
 
-        &lt;splits&gt;
+        <splits>
 
-                &lt;split&gt;#Region</split>
+                <split>#Region</split>
 
-                &lt;split&gt;#End Region</split>
+                <split>#End Region</split>
 
-        &lt;/splits&gt;
+        </splits>
 
-&lt;/ConfigLanguage&gt;
+</ConfigLanguage>
 
 
 
@@ -489,7 +489,7 @@ Edit Control supportssyntax highlighting in scenarios where more than one langua
 
 
 
-{ ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img2.jpeg) | markdownify }
+{{ '![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img2.jpeg)' | markdownify }}
 {:.image }
 
 

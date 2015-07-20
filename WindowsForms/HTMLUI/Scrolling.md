@@ -43,7 +43,7 @@ This sample illustrates the Scrolling feature supported in HTMLUI.
 
 
 
-{ ![](Scrolling_images/Scrolling_img1.jpeg) | markdownify }
+{{ '![](Scrolling_images/Scrolling_img1.jpeg)' | markdownify }}
 {:.image }
 
 

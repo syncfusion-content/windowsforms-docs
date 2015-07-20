@@ -28,5 +28,5 @@ Dim excelExport As New ExcelExport(Me.pivotChart1, Syncfusion.XlsIO.ExcelVersion
 excelExport.Export(savedialog.FileName)
 
 
-Sample: &lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\&lt;InstalledVersion&gt;\Windows\PivotChart.Windows\Samples\Exporting\PivotChartExport Demo\CS
+Sample: <InstalledLocation>\Syncfusion\EssentialStudio\<InstalledVersion>\Windows\PivotChart.Windows\Samples\Exporting\PivotChartExport Demo\CS
 

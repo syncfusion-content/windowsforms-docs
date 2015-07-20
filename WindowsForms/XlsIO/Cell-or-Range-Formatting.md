@@ -19,7 +19,7 @@ Microsoft Excel provides support to create styles by using the Style dialog box 
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img1.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -171,7 +171,7 @@ excelEngine.Dispose()
 
 
 
-> { ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img2.jpeg) | markdownify }
+> {{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: Applying custom styles will override the original styles. See Also_ Global Styles.
 
@@ -179,7 +179,7 @@ _Note: Applying custom styles will override the original styles. See Also_ Globa
 
 XlsIO provides support for adding and modifying common (or global) styles that can be applied to one or more cells in a workbook. These styles can be created and applied to several ranges of cells in the workbook. Note that the usage of common styles to format spreadsheets is the recommended approach since setting a separate style for each cell can reduce the performance considerably.
 
-> { ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img3.jpeg) | markdownify }
+> {{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: when you want to apply more than one style for cells, enclose the style within the Begin and End calls. This improves the performance._
 
@@ -423,7 +423,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img4.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -435,7 +435,7 @@ Number Formats are little code that help you control the appearance of numbers i
 
 Microsoft Excel recognizes the numbers in various formats: Accounting, Scientific, Fractions, and Currency. MS Excel allows to set these number formats by using the Number tab in the Format Cells dialog box.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img5.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -513,7 +513,7 @@ These characters are displayed in the number. To display any other character, en
 <tr>
 <td>
 \character</td><td>
-This code displays the succeeding character you specify.<br><br>Note Typing !, ^, &, ', ~, {, }, =, &lt;, or &gt; automatically places a backslash in front of the character.</td></tr>
+This code displays the succeeding character you specify.<br><br>Note Typing !, ^, &, ', ~, {, }, =, <, or > automatically places a backslash in front of the character.</td></tr>
 <tr>
 <td>
 "text"</td><td>
@@ -523,7 +523,7 @@ This code displays the text.</td></tr>
 *</td><td>
 This code repeats the next character in the format to fill the column width.<br><br>![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img6.jpeg)
 {:.image }
-{{ '_Note: Only one asterisk per section of a format is allowed._' | markdownify }}</td></tr>
+{{{ ''_Note: Only one asterisk per section of a format is allowed._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 _ (underscore)</td><td>
@@ -631,7 +631,7 @@ These codes display the characters in the specified colors. <br><br>Note: n is a
 <tr>
 <td>
 [Condition value]</td><td>
-Condition may be &lt;, &gt;, =, >=, &lt;=, &lt;&gt; and value may be any number.<br><br>Note: A number format may contain up to two conditions.</td></tr>
+Condition may be <, >, =, >=, <=, <> and value may be any number.<br><br>Note: A number format may contain up to two conditions.</td></tr>
 </table>
 
 
@@ -1593,7 +1593,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img7.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1603,7 +1603,7 @@ Text has to be aligned inside the cells to properly fit in any data. This is don
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img8.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -2009,7 +2009,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img9.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -2565,7 +2565,7 @@ excelEngine.Dispose()
 
 MS Excel provides support to customize the font settings through the Format Cells dialog box. Font tab in the format dialog box provides options to set the font name, size, color, and so on.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img10.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -2785,7 +2785,7 @@ Color
 
 MS Excel provides support to format its cells, rows, and columns with various colors and patterns. This can be done by using the Fill Color button and the associated palette.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img11.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -3127,7 +3127,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img12.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -3371,7 +3371,7 @@ Microsoft Excel provides a default appearance for a cell background. For example
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img13.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -3555,7 +3555,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img14.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -3681,7 +3681,7 @@ Editing Rich Text
 
 XlsIO provides support for reading and writing rich text by using the IRichTextString interface. It enables formatting each character in the cell with different font styles.
 
-> { ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img15.jpeg) | markdownify }
+> {{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img15.jpeg)' | markdownify }}
 {:.image }
 _Note: Currently XlsIO cannot write formatted rich text._
 
@@ -3855,7 +3855,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img16.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -3863,7 +3863,7 @@ excelEngine.Dispose()
 
 Cell modification can be prevented on locking the cell by using the Protection tab in the FormatCells dialog box.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img17.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -3871,7 +3871,7 @@ This prompts the following error message at runtime when you try to modify the c
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img18.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -3987,17 +3987,17 @@ In MS Excel, click the Format menu and then click Conditional Formatting. You ca
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img19.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img19.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img20.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img20.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img21.jpeg) | markdownify }
+> {{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img21.jpeg)' | markdownify }}
 {:.image }
 _Note: Excel allows the addition of a maximum of three conditions for the same cell in the Biff8 format. However, this restriction is removed in Excel 2007 formats._
 
@@ -4379,7 +4379,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img22.jpeg) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4512,7 +4512,7 @@ To remove the conditional formats in MS-Excel:
 1. Select the cell that has the conditional format that you want to delete.
 2. Click Conditional Formatting on Home tab, and then select Clear Rules. The ClearRules property can be applied to the selected cells or to the entire sheet.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img23.png) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -4958,13 +4958,13 @@ Data Bars
 
 Data Bars give you an opportunity to create visual effects in your data that help you see how the value of a cell is compared with other cells. Excel compares the values in each of the selected cells and draws a data bar in each cell representing the value of that cell relative to the other cells in the selected range. This bar provides a clear visual cue, making it easier to pick out larger and smaller values in a range.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img24.jpeg) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img24.jpeg)' | markdownify }}
 {:.image }
 
 
 MS Excel enables setting these formats through the Conditional Formatting menu. It also allows you to set the criteria through the New Formatting Rule dialog box as follows.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img25.jpeg) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4972,7 +4972,7 @@ Color Scales
 
 Color Scales let you create visual effects in your data to compare the value of a cell with the values in a range of cells. A color scale uses cell shading as opposed to bars to communicate relative values. This is especially useful when you want to communicate more about your data beyond the relative size of the value of a cell.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img26.jpeg) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4980,7 +4980,7 @@ You can customize the criteria through the New Formatting Rule dialog box in MS 
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img27.jpeg) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4988,7 +4988,7 @@ Icon Sets
 
 Icon Sets give you an opportunity to create visual effects in your data to see how the value of a cell is compared with other cells. Excel 2007 offers several choices of icon sets. You can choose the icons that are most appropriate for the data you are using. Icon Sets come in three sizes that enables increase or decrease of the font size of the icon and it becomes larger or smaller appropriately.
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img28.jpeg) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4996,7 +4996,7 @@ It is possible to hide the value of the cell and just draw the icon while applyi
 
 
 
-{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img29.jpeg) | markdownify }
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5238,11 +5238,11 @@ excelEngine.Dispose()
 
 
 
-{ ![C:/Users/mahajothir/Desktop/CFImage/sshot-2.png](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img30.png) | markdownify }
+{{ '![C:/Users/mahajothir/Desktop/CFImage/sshot-2.png](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img30.png)' | markdownify }}
 {:.image }
 
 
-> _{ ![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img31.jpeg) | markdownify }
+> _{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img31.jpeg)' | markdownify }}
 {:.image }
 _Note: XlsIO visualization has been enhanced with backward compatibility for Advanced Conditional Formatting._
 

@@ -25,7 +25,7 @@ The first thing you need to do is to derive a class that will serve as your cust
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -357,7 +357,7 @@ End Sub
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -371,7 +371,7 @@ End Sub
 
 Add the following grouping namespace for referring the assemblies deployed in the application.
 
-{ ![](Data-Binding_images/Data-Binding_img3.jpeg) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img3.jpeg)' | markdownify }}
 {:.image }
  Refer Deploying Essential Grouping section to know about deploying Essential Grouping.
 
@@ -397,7 +397,7 @@ Then create a Grouping.Engine object and set the ArrayList we created to be its 
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img4.jpeg) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img4.jpeg)' | markdownify }}
 {:.image }
  For more details on creating array list, refer Creating an ArrayList Of Objects topic.
 
@@ -455,7 +455,7 @@ This section will show you how to access the data through the Grouping.Engine ob
 
 Add the following code to the main function. This code will iterate through the Records collection and will display the output in the Console.
 
-{ ![](Data-Binding_images/Data-Binding_img5.jpeg) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img5.jpeg)' | markdownify }}
 {:.image }
  Console is a text-only user interface that allows the user to interact with the operating system or text-based application by entering the text through the keyboard and reading the text output from the computer screen.
 
@@ -519,7 +519,7 @@ Console.ReadLine()
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img6.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img6.png)' | markdownify }}
 {:.image }
 
 

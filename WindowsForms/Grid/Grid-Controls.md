@@ -324,7 +324,7 @@ Associates a custom tag with a cell.</td></tr>
 
 The following path helps you implement the appearance of Grid Window: _{Installed Drive}\Users\{User}\AppData\Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance_
 
-The following path holds the Dashboard sample where Cell Style properties are implemented: _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Cell Customization Demo\_
+The following path holds the Dashboard sample where Cell Style properties are implemented: _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Cell Customization Demo\_
 
 ##### Cell Types
 
@@ -987,7 +987,7 @@ StringCollection holding the strings for the drop down.</td></tr>
 <tr>
 <td>
 ExclusiveChoiceList</td><td>
-{{ '_True_' | markdownify }} if you want to list the items in the drop-down, {{ '_false_' | markdownify }} otherwise.</td></tr>
+{{{ ''_True_'' | markdownify }}} if you want to list the items in the drop-down, {{{ ''_false_'' | markdownify }}} otherwise.</td></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -1501,7 +1501,7 @@ gridControl1(rowIndex, colIndex + 2).ExclusiveChoiceList = True
 
 A sample which demonstrates Grid List Control cell type is available in the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
 
 
 
@@ -1907,7 +1907,7 @@ progressBarEx3.ProgressValue = 75
 
 
 
-For other code samples, refer to the samples in the following location: _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Cell Types\Content Cell Demo_
+For other code samples, refer to the samples in the following location: _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Cell Types\Content Cell Demo_
 
 ###### Push Button
 
@@ -2504,7 +2504,7 @@ Since BaseStyles are considered parent styles, where do they fit within the prec
 
 To work with BaseStyles from within the Visual Studio designer, you need to use the Edit base styles verb that appears at the bottom of the Grid control's property grid.
 
-{ ![](Grid-Controls_images/Grid-Controls_img37.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img37.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2512,7 +2512,7 @@ To work with BaseStyles from within the Visual Studio designer, you need to use 
 
 When you click Edit base styles verb, GridBaseStyle Collection Editor dialog box is displayed. You can use GridBaseStyle Collection Editor to edit existing BaseStyles or add new ones.
 
-{ ![](Grid-Controls_images/Grid-Controls_img38.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img38.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2610,7 +2610,7 @@ Returns GridRangeInfo object containing columns fromCol through toCol.</td></tr>
 GridRangeInfo.Table()</td><td>
 Returns GridRangeInfo object containing the whole table.</td></tr>
 </table>
-> { ![](Grid-Controls_images/Grid-Controls_img39.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img39.jpeg)' | markdownify }}
 {:.image }
 _Note: For complete description of GridRangeInfo class, see the Essential Grid Class Reference._
 
@@ -2746,11 +2746,11 @@ Me.gridControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.Always
 
 The Grid property, RefreshCurrentCellBehavior determines the behavior of refreshing cells while the focus is moved from current cell to another. GridRefreshCurrentCellBehavior enumeration specifies which cells to refresh when the focus is moved from current cell to another.
 
-> { ![](Grid-Controls_images/Grid-Controls_img40.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img40.jpeg)' | markdownify }}
 {:.image }
 _Note: Refreshing behavior of the cells enables them to display current data automatically after updates._
 
-> { ![](Grid-Controls_images/Grid-Controls_img41.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img41.jpeg)' | markdownify }}
 {:.image }
 _Note: Refreshing the cells denote reloading cell's value._
 
@@ -2786,7 +2786,7 @@ GridStyleInfo Properties
 
 GridStyleInfo class comprises properties that let users to control the appearance and behavior of grid cells.
 
-{ ![](Grid-Controls_images/Grid-Controls_img42.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img42.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2904,7 +2904,7 @@ gridControl1[3, 4].Font.Orientation = 270
 
 A sample demonstrating this feature is available under the following sample installation path. 
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Cell Customization Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Cell Customization Demo_
 
 Custom Borders
 
@@ -3082,7 +3082,7 @@ End Sub
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img43.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img43.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3090,7 +3090,7 @@ Number Formats
 
 The formats of a numeric field (cell value) can be masked by using Format object. You can specify numeric format string as a mask. Format mask objects are assigned to date and numeric fields, and are also used to define how the data returned for that field is displayed.
 
-> { ![](Grid-Controls_images/Grid-Controls_img44.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img44.jpeg)' | markdownify }}
 {:.image }
 _Note: Format masks object cannot be deleted once assigned to a field._
 
@@ -3114,7 +3114,7 @@ Me.gridControl1(2, 2).Format = "###0.##%"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img45.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img45.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3178,7 +3178,7 @@ Me.gridControl1.TableStyle.CellTipText = "TipText for table"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img46.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img46.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3186,13 +3186,13 @@ Cell Comment Tips
 
 Excel-like Cell Comment Tips can be included in a Grid by deriving the mouse controller class. The comment text is a custom style property added to cells that hold comments. To change, add, or delete a commen right-click the cell or left-click the red corner.
 
-{ ![](Grid-Controls_images/Grid-Controls_img47.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img47.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-A sample demonstrating this feature is available under the following sample installation path. _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\ToolTip\Cell Comment Tip Demo_
+A sample demonstrating this feature is available under the following sample installation path. _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\ToolTip\Cell Comment Tip Demo_
 
 ###### Grid New Feature
 
@@ -3539,7 +3539,7 @@ sp.ButtonEditInfo.ButtonEditType = ButtonType.Browse
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img48.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img48.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3555,7 +3555,7 @@ In a payroll application, the generated report can be attached to the grid and v
 
 Sample Link
 
-Find a sample in the following location: _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\ Grid Controls / Grid Control / Concepts and Features/Custom Cell Types_
+Find a sample in the following location: _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\ Grid Controls / Grid Control / Concepts and Features/Custom Cell Types_
 
 
 
@@ -3583,7 +3583,7 @@ Me.gridControl1(rowIndex, colIndex).Description = GetIconFile("common\Data\DocIO
 
 
 
-{ ![C:/Users/Giftline/Desktop/a.png](Grid-Controls_images/Grid-Controls_img49.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/a.png](Grid-Controls_images/Grid-Controls_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -3633,7 +3633,7 @@ style.Control = c2
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img50.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img50.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3669,7 +3669,7 @@ style.Control = New MonthCalendar()
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img51.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img51.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3709,7 +3709,7 @@ Me.gridControl1(4, 2).Format = "MM/dd/yyyy hh:mm"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img52.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img52.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3853,7 +3853,7 @@ sp.FloatNumericUpDownProperties.DecimalPlaces = 1
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img53.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img53.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3929,7 +3929,7 @@ Me.gridControl1.Controls.Add(grid)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img54.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img54.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3973,7 +3973,7 @@ gridControl1(rowIndex, 2).Tag = "http://www.syncfusion.com"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img55.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img55.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4017,7 +4017,7 @@ sp.Image = GetImage("one.jpg")
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img56.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img56.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4081,7 +4081,7 @@ sp.Orientation = Orientation.Vertical
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img57.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img57.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4098,15 +4098,15 @@ The CellModel (read GridCellModelBase class in this document) handles any serial
 
 
 
-string xhtml1 = "&lt;body style=\"font-family:Arial; line-height:1em\"&gt; ";
+string xhtml1 = "<body style=\"font-family:Arial; line-height:1em\"> ";
 
 xhtml1 += "<h1 style=\"text-align:center; color:#EE7A03 \">XhtmlCells</h1>";
 
-xhtml1 += "&lt;p/&gt;";
+xhtml1 += "<p/>";
 
-xhtml1 += "<p>XhtmlCells use the RichTextBoxSupportsXHTML control from GotDotNet user samples to display XHTML formatted text inside a cell.&lt;/p&gt;";
+xhtml1 += "<p>XhtmlCells use the RichTextBoxSupportsXHTML control from GotDotNet user samples to display XHTML formatted text inside a cell.</p>";
 
-xhtml1 += "&lt;/body&gt;";
+xhtml1 += "</body>";
 
 gridControl1[rowIndex, 1].CellType = "XhtmlCell";
 
@@ -4118,15 +4118,15 @@ gridControl1[rowIndex, 1].Text = xhtml1;
 
 
 
-Dim xhtml1 As String = "&lt;body style=""font-family:Arial; line-height:1em""&gt; "
+Dim xhtml1 As String = "<body style=""font-family:Arial; line-height:1em""> "
 
 xhtml1 += "<h1 style=""text-align:center; color:#EE7A03 "">XhtmlCells</h1>"
 
-xhtml1 += "&lt;p/&gt;"
+xhtml1 += "<p/>"
 
-xhtml1 += "<p>XhtmlCells use the RichTextBoxSupportsXHTML control from GotDotNet user samples to display XHTML formatted text inside a cell.&lt;/p&gt;"
+xhtml1 += "<p>XhtmlCells use the RichTextBoxSupportsXHTML control from GotDotNet user samples to display XHTML formatted text inside a cell.</p>"
 
-xhtml1 += "&lt;/body&gt;"
+xhtml1 += "</body>"
 
 gridControl1(rowIndex, 1).CellType = "XhtmlCell"
 
@@ -4134,7 +4134,7 @@ gridControl1(rowIndex, 1).Text = xhtml1
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img58.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img58.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4190,7 +4190,7 @@ csp.TitleAlignment = StringAlignment.Center
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img59.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img59.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4246,7 +4246,7 @@ Me.gridControl1(rowIndex,1).CellType = "GridADropCell"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img60.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img60.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4321,7 +4321,7 @@ Me.gridControl1(6, 2).CellType = "DropDownUserControl"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img61.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img61.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4349,7 +4349,7 @@ RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.IntegerTextBox)
 
 Me.gridControl1(4, 2).CellType = CustomCellTypes.IntegerTextBox.ToString()
 
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Integer TextBox Cell Demo/images/sample.png](Grid-Controls_images/Grid-Controls_img62.png) | markdownify }
+{{ '![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Integer TextBox Cell Demo/images/sample.png](Grid-Controls_images/Grid-Controls_img62.png)' | markdownify }}
 {:.image }
 
 
@@ -4377,7 +4377,7 @@ Me.gridControl1(4, 2).CellType = CustomCellTypes.DoubleTextBox.ToString()
 
 
 
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Double TextBox Cell Demo/images/sample.png](Grid-Controls_images/Grid-Controls_img63.png) | markdownify }
+{{ '![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Double TextBox Cell Demo/images/sample.png](Grid-Controls_images/Grid-Controls_img63.png)' | markdownify }}
 {:.image }
 
 
@@ -4407,7 +4407,7 @@ RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.PercentTextBox)
 
 Me.gridControl1(4, 2).CellType = CustomCellTypes.PercentTextBox.ToString() 
 
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Percentage TextBox Cell Demo/images/sample.png](Grid-Controls_images/Grid-Controls_img64.png) | markdownify }
+{{ '![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Percentage TextBox Cell Demo/images/sample.png](Grid-Controls_images/Grid-Controls_img64.png)' | markdownify }}
 {:.image }
 
 
@@ -4435,7 +4435,7 @@ Me.gridControl1.ExcelLikeSelectionFrame = True
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img65.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img65.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4459,7 +4459,7 @@ Me.gridControl1.ExcelLikeCurrentCell = True
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img66.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img66.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4509,7 +4509,7 @@ Me.tabBarPage2.Controls.Add(Me.gridControl2)
 
 Me.tabBarPage3.Controls.Add(Me.gridControl3)
 
-{ ![](Grid-Controls_images/Grid-Controls_img67.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img67.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4591,7 +4591,7 @@ Console.WriteLine("Closed: " & e.ToString())
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img68.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img68.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4617,11 +4617,11 @@ Me.gridControl1.Model.Rows.FrozenCount = 4
 
 Me.gridControl1.Model.Cols.FrozenCount = 3
 
-> _{ ![](Grid-Controls_images/Grid-Controls_img69.jpeg) | markdownify }
+> _{{ '![](Grid-Controls_images/Grid-Controls_img69.jpeg)' | markdownify }}
 {:.image }
 _Note: You can unfreeze the frozen rows or columns by clicking Unfreeze Current Row/Col button on the UI._
 
-{ ![](Grid-Controls_images/Grid-Controls_img70.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img70.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4653,7 +4653,7 @@ Me.gridControl1.CommandStack.Redo()
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img71.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img71.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4716,7 +4716,7 @@ GridFindReplaceDialogSink(frDialog.Find(frEvents))
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img72.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img72.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4782,15 +4782,15 @@ highlighttext.HighlightColor = Color.Yellow
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img73.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img73.png)' | markdownify }}
 {:.image }
 
 
 
 
-To view a sample on Highlighting Search Text, see _&lt;Installed Location&gt;\Syncfusion\EssentialStudio_
+To view a sample on Highlighting Search Text, see _<Installed Location>\Syncfusion\EssentialStudio_
 
-_\&lt;Version&gt;\Windows\Grid.Windows\Samples\Editing \Find-Replace Demo_
+_\<Version>\Windows\Grid.Windows\Samples\Editing \Find-Replace Demo_
 
 ###### Unhide Column by Double-Clicking Disabled
 
@@ -4875,7 +4875,7 @@ Me.gridControl1.MarkRowHeader = true
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img74.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img74.png)' | markdownify }}
 {:.image }
 
 
@@ -4920,7 +4920,7 @@ Me.gridControl1.BaseStylesMap("Standard").StyleInfo.CellType = "FormulaCell"
 
 Essential Grid's Formula Library contains mathematical functions that are available in the .NET Framework's System.Math class. In addition, there are Sum and Avg members. You can also add additional functions to this library by using your own code.
 
-{ ![](Grid-Controls_images/Grid-Controls_img75.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img75.png)' | markdownify }}
 {:.image }
 
 
@@ -4928,7 +4928,7 @@ Essential Grid's Formula Library contains mathematical functions that are availa
 
 In the above screen shot, cell A2 has a formula that uses four different library functions: Sqrt, Pow, Cos, and Sin.
 
-> { ![](Grid-Controls_images/Grid-Controls_img76.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img76.jpeg)' | markdownify }}
 {:.image }
 _Note: For a complete list of these library functions, refer to the Class Reference for "GridFormulaEngine"._
 
@@ -4959,7 +4959,7 @@ Addition, Subtraction</td><td>
 <tr>
 <td>
 Less Than, Greater Than, Equal, Less Than Or Equal, Greater Than Or Equal, Not Equal</td><td>
-&lt;  &gt; = &lt;= &gt;= &lt;&gt;</td><td>
+<  > = <= >= <></td><td>
 3rd</td></tr>
 </table>
 
@@ -5220,7 +5220,7 @@ Return ex.Message
 
 End Try
 
-If s1 &lt;&gt; "" Then
+If s1 <> "" Then
 
 
 
@@ -5248,7 +5248,7 @@ Return ex.Message
 
 End Try
 
-If s1 &lt;&gt; "" Then
+If s1 <> "" Then
 
 If Double.TryParse(s1, NumberStyles.Number, Nothing, d) And d > 0 Then
 
@@ -5332,12 +5332,12 @@ Remarks:
 * #VALUE - occurs if issue, first_interest, or settlement is not a valid date
 * #NUM! - occurs if rate ≤ 0 or if par ≤ 0
 * #NUM! - occurs if frequency is any number other than 1, 2, or 4
-* #NUM! - occurs if basis &lt; 0 or if basis &gt; 4
+* #NUM! - occurs if basis < 0 or if basis > 4
 * #NUM! - occurs if issue ≥ settlement
 
 ACCRINT is calculated as follows: 
 
-{ ![Description: Equation](Grid-Controls_images/Grid-Controls_img77.jpeg) | markdownify }
+{{ '![Description: Equation](Grid-Controls_images/Grid-Controls_img77.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5400,7 +5400,7 @@ Remarks:
 
 This mathematical equation is used:
 
-{ ![Description: Formula for hyperbolic arccotangent](Grid-Controls_images/Grid-Controls_img78.jpeg) | markdownify }
+{{ '![Description: Formula for hyperbolic arccotangent](Grid-Controls_images/Grid-Controls_img78.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5557,7 +5557,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img79.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img79.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5805,7 +5805,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img80.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img80.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5813,7 +5813,7 @@ where:
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img81.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img81.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5827,7 +5827,7 @@ is COMBIN(n,x).
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img82.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img82.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5944,7 +5944,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img83.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img83.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6012,7 +6012,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img84.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img84.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6022,7 +6022,7 @@ where:
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img85.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img85.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6044,7 +6044,7 @@ Remarks:
 
 The following equation is used:
 
-{ ![Description: COMBINA equation](Grid-Controls_images/Grid-Controls_img86.jpeg) | markdownify }
+{{ '![Description: COMBINA equation](Grid-Controls_images/Grid-Controls_img86.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6121,7 +6121,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img87.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img87.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6147,7 +6147,7 @@ Remarks
 
 The formula for the hyperbolic cosine is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img88.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img88.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6182,7 +6182,7 @@ Remarks
 The following equation is used:
 
 
-{ ![Description: COTH equation](Grid-Controls_images/Grid-Controls_img89.jpeg) | markdownify }
+{{ '![Description: COTH equation](Grid-Controls_images/Grid-Controls_img89.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6253,7 +6253,7 @@ Remarks
 * array1 and array2 must have the same number of data points. 
 * The covariance is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img90.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img90.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6276,7 +6276,7 @@ Remarks
 
 The covariance is:
 
-{ ![Description: COVAR Equation](Grid-Controls_images/Grid-Controls_img91.jpeg) | markdownify }
+{{ '![Description: COVAR Equation](Grid-Controls_images/Grid-Controls_img91.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6548,7 +6548,7 @@ period is the period for which you want to calculate the depreciation. Period m
 
 factor is the rate at which the balance declines. If factor is omitted, it is assumed to be 2 (the double-declining balance method).
 
-> { ![](Grid-Controls_images/Grid-Controls_img92.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img92.jpeg)' | markdownify }}
 {:.image }
 _Note: All five arguments must be positive numbers._
 
@@ -6598,7 +6598,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img93.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img93.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6898,13 +6898,13 @@ Remarks
 
 The equation for the probability density function is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img94.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img94.jpeg)' | markdownify }}
 {:.image }
 
 
 * The equation for the cumulative distribution function is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img95.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img95.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7048,7 +7048,7 @@ Remarks
 * X must be > -1 and < 1.
 * The equation for the Fisher transformation is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img96.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img96.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7066,7 +7066,7 @@ Remarks
 
 * The equation for the inverse of the Fisher transformation is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img97.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img97.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7123,13 +7123,13 @@ Remarks
 
  where
 
-{ ![](Grid-Controls_images/Grid-Controls_img98.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img98.png)' | markdownify }}
 {:.image }
 
 
 and
 
-{ ![](Grid-Controls_images/Grid-Controls_img99.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img99.png)' | markdownify }}
 {:.image }
 
 
@@ -7160,7 +7160,7 @@ type is the number 0 or 1 and indicates when payments are due. If type is omitt
 * 0 - Payments are due at the end of the period.
 * 1 - Payments are due at the beginning of the period.
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img100.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img100.jpeg)' | markdownify }}
 {:.image }
 _Note: For a more complete description of the arguments in FV, see PV._
 
@@ -7206,13 +7206,13 @@ Remarks
 * Alpha and beta must be > 0. 
 * The equation for the gamma probability density function is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img101.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img101.png)' | markdownify }}
 {:.image }
 
 
 The standard gamma probability density function is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img102.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img102.png)' | markdownify }}
 {:.image }
 
 
@@ -7222,7 +7222,7 @@ When alpha = 1, GAMMADIST returns the exponential distribution with,
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img103.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img103.png)' | markdownify }}
 {:.image }
 
 
@@ -7246,13 +7246,13 @@ Remarks
 * x must be positive.
 * GAMMALN is calculated as follows,
 
-{ ![](Grid-Controls_images/Grid-Controls_img104.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img104.png)' | markdownify }}
 {:.image }
 
 
 where:
 
-{ ![](Grid-Controls_images/Grid-Controls_img105.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img105.png)' | markdownify }}
 {:.image }
 
 
@@ -7336,7 +7336,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img106.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img106.png)' | markdownify }}
 {:.image }
 
 
@@ -7396,7 +7396,7 @@ Remarks
 * All data values must be positive. 
 * The equation for the harmonic mean is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img107.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img107.png)' | markdownify }}
 {:.image }
 
 
@@ -7441,7 +7441,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img108.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img108.png)' | markdownify }}
 {:.image }
 
 
@@ -7620,7 +7620,7 @@ Remarks
 
 * The equation for the intercept of the regression line, a, is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img109.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img109.png)' | markdownify }}
 {:.image }
 
 
@@ -7630,7 +7630,7 @@ where the slope, b, is calculated as:
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img110.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img110.png)' | markdownify }}
 {:.image }
 
 
@@ -7791,7 +7791,7 @@ Remarks
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img111.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img111.png)' | markdownify }}
 {:.image }
 
 
@@ -8061,7 +8061,7 @@ Remarks
 * Standard_dev must be positive. 
 * The inverse of the lognormal distribution function is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img112.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img112.png)' | markdownify }}
 {:.image }
 
 
@@ -8084,7 +8084,7 @@ Remarks
 * Both x and standard_dev must be positive. 
 * The equation for the lognormal cumulative distribution function is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img113.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img113.png)' | markdownify }}
 {:.image }
 
 
@@ -8304,7 +8304,7 @@ Remarks
 * MIRR uses the order of values to interpret the order of cash flows. Be sure to enter your payment and income values in the sequence you want and with the correct signs (positive values for cash received, negative values for cash paid). 
 * If n is the number of cash flows in values, frate is the finance_rate, and rrate is the reinvest_rate, then the formula for MIRR is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img114.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img114.png)' | markdownify }}
 {:.image }
 
 
@@ -8538,7 +8538,7 @@ Remarks
 * number_f  must be >= 0. 
 * The equation for the negative binomial distribution is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img115.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img115.png)' | markdownify }}
 {:.image }
 
 
@@ -8599,7 +8599,7 @@ Remarks
 * Standard_dev must be > 0. 
 * The equation for normal density function (cumulative = False) is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img116.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img116.png)' | markdownify }}
 {:.image }
 
 
@@ -8663,7 +8663,7 @@ Remarks
 
 The equation for the standard normal density function is:
 
-{ ![Description: NORMSDIST Equation](Grid-Controls_images/Grid-Controls_img117.jpeg) | markdownify }
+{{ '![Description: NORMSDIST Equation](Grid-Controls_images/Grid-Controls_img117.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8737,7 +8737,7 @@ Remarks
 * NPV investment begins one period before the date of the value1 cash flow and ends with the last cash flow in the list. NPV calculation is based on future cash flows. If your first cash flow occurs at the beginning of the first period, the first value must be added to the NPV result, not included in the value arguments. 
 * If n is the number of cash flows in the list of values, the formula for NPV is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img118.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img118.png)' | markdownify }}
 {:.image }
 
 
@@ -8782,7 +8782,7 @@ Remarks
 * The arguments must be either numbers or names, array constants or references that contain numbers. 
 * The formula for the Pearson product moment correlation coefficient, r, is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img119.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img119.png)' | markdownify }}
 {:.image }
 
 
@@ -8897,7 +8897,7 @@ Remarks
 * Number must be >= number_chosen.
 * The equation for the number of permutations is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img120.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img120.png)' | markdownify }}
 {:.image }
 
 
@@ -8974,13 +8974,13 @@ Remarks
 
 For cumulative = False,
 
-{ ![](Grid-Controls_images/Grid-Controls_img121.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img121.png)' | markdownify }}
 {:.image }
 
 
 For cumulative = True,
 
-{ ![](Grid-Controls_images/Grid-Controls_img122.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img122.png)' | markdownify }}
 {:.image }
 
 
@@ -9091,7 +9091,7 @@ Remarks
 * In annuity functions, the cash you pay out such as a deposit to savings is represented by a negative number; the cash you receive such as a dividend check is represented by a positive number. 
 * One financial argument is solved in terms of the others. If rate is not 0, then,
 
-{ ![](Grid-Controls_images/Grid-Controls_img123.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img123.png)' | markdownify }}
 {:.image }
 
 
@@ -9286,7 +9286,7 @@ Remarks
 
 RECEIVED is calculated as follows:
 
-{ ![Description: RECEIVED Equation](Grid-Controls_images/Grid-Controls_img124.jpeg) | markdownify }
+{{ '![Description: RECEIVED Equation](Grid-Controls_images/Grid-Controls_img124.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9445,7 +9445,7 @@ Remarks
 
 * The equation for the Pearson product moment correlation coefficient is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img125.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img125.png)' | markdownify }}
 {:.image }
 
 
@@ -9555,7 +9555,7 @@ Remarks
 
 * The formula for the hyperbolic sine is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img126.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img126.png)' | markdownify }}
 {:.image }
 
 
@@ -9571,7 +9571,7 @@ Remarks
 
 * The equation for skewness is defined as follows.
 
-{ ![](Grid-Controls_images/Grid-Controls_img127.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img127.png)' | markdownify }}
 {:.image }
 
 
@@ -9619,7 +9619,7 @@ Remarks
 
 * The equation for the slope of the regression line is
 
-{ ![](Grid-Controls_images/Grid-Controls_img128.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img128.png)' | markdownify }}
 {:.image }
 
 
@@ -9703,7 +9703,7 @@ Remarks
 * standard_dev must be > 0. 
 * The equation for the normalized value is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img129.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img129.png)' | markdownify }}
 {:.image }
 
 
@@ -9720,7 +9720,7 @@ Remarks
 * STDEV assumes that its arguments are a sample of the population. If your data represents the entire population, then compute the standard deviation using STDEVP. 
 * STDEV uses the following formula,
 
-{ ![](Grid-Controls_images/Grid-Controls_img130.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img130.png)' | markdownify }}
 {:.image }
 
 
@@ -9741,7 +9741,7 @@ Remarks
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero). 
 * STDEVA uses the following formula,
 
-{ ![](Grid-Controls_images/Grid-Controls_img131.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img131.png)' | markdownify }}
 {:.image }
 
 
@@ -9760,7 +9760,7 @@ Remarks
 * STDEVP assumes that its arguments are the entire population. If your data represents a sample of the population, then compute the standard deviation using STDEV. 
 * STDEVP uses the following formula:
 
-{ ![](Grid-Controls_images/Grid-Controls_img132.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img132.png)' | markdownify }}
 {:.image }
 
 
@@ -9779,7 +9779,7 @@ Remarks
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero).
 * STDEVPA uses the following formula,
 
-{ ![](Grid-Controls_images/Grid-Controls_img133.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img133.png)' | markdownify }}
 {:.image }
 
 
@@ -9819,7 +9819,7 @@ Remarks
 
 * The equation for the standard error of the predicted y is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img134.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img134.png)' | markdownify }}
 {:.image }
 
 
@@ -10100,7 +10100,7 @@ Remarks
 * If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included. 
 * The equation for the sum of the difference of squares is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img135.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img135.png)' | markdownify }}
 {:.image }
 
 
@@ -10121,7 +10121,7 @@ Remarks
 * If an array or reference argument contains text, logical value, or empty cells, those values are ignored; however, cells with the value zero are included. 
 * The equation for the sum of the sum of squares is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img136.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img136.png)' | markdownify }}
 {:.image }
 
 
@@ -10352,7 +10352,7 @@ Remarks
 * Logical values such as True, False, and text are ignored. If logical values and text must not be ignored, use the VARA worksheet function. 
 * VAR uses the following formula,
 
-{ ![](Grid-Controls_images/Grid-Controls_img137.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img137.png)' | markdownify }}
 {:.image }
 
 
@@ -10374,7 +10374,7 @@ Remarks
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero). If the calculation must not include text or logical values, use the VAR worksheet function instead. 
 * VARA uses the following formula,
 
-{ ![](Grid-Controls_images/Grid-Controls_img138.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img138.png)' | markdownify }}
 {:.image }
 
 
@@ -10395,7 +10395,7 @@ Remarks
 * VARP assumes that its arguments are the entire population. If your data represents a sample of the population, then compute the variance using VAR. 
 * The equation for VARP is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img139.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img139.png)' | markdownify }}
 {:.image }
 
 
@@ -10417,7 +10417,7 @@ Remarks
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero). If the calculation does not include text or logical values, use the VARP worksheet function instead. 
 * The equation for VARPA is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img140.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img140.png)' | markdownify }}
 {:.image }
 
 
@@ -10533,16 +10533,16 @@ Remarks
 * Alpha and beta must > 0. 
 * The equation for the Weibull cumulative distribution function is,
 
-{ ![](Grid-Controls_images/Grid-Controls_img141.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img141.png)' | markdownify }}
 {:.image }
 
 
-* The equation for the Weibull probability density function is,   { ![](Grid-Controls_images/Grid-Controls_img142.png) | markdownify }
+* The equation for the Weibull probability density function is,   {{ '![](Grid-Controls_images/Grid-Controls_img142.png)' | markdownify }}
 {:.image }
 
 * When alpha = 1, WEIBULL returns the exponential distribution with,
 
-{ ![](Grid-Controls_images/Grid-Controls_img143.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img143.png)' | markdownify }}
 {:.image }
 
 
@@ -10642,13 +10642,13 @@ Remarks
 
 * ZTEST is calculated as follows when sigma is not omitted,
 
-{ ![](Grid-Controls_images/Grid-Controls_img144.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img144.png)' | markdownify }}
 {:.image }
 
 
 * or when sigma is omitted,
 
-{ ![](Grid-Controls_images/Grid-Controls_img145.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img145.png)' | markdownify }}
 {:.image }
 
 
@@ -10658,7 +10658,7 @@ where x is the sample mean AVERAGE(array); s is the sample standard deviation ST
 
 Essential Grid control supports cross sheet references. A formula cell can be defined with values from another grid by using cross sheet references. In this case, multiple grids can either be in worksheet format or multiple grids can be laid out in a form. The following screen shot shows multiple grids in worksheet format.
 
-{ ![](Grid-Controls_images/Grid-Controls_img146.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img146.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10670,7 +10670,7 @@ _Figure_ _249_: Multiple Grids in Worksheet Format_
 
 The following screen shot shows multiple grids laid out in the form.
 
-{ ![](Grid-Controls_images/Grid-Controls_img147.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img147.png)' | markdownify }}
 {:.image }
 
 
@@ -10779,7 +10779,7 @@ Me.gridCalculations(row, col + 1).Text = "=Display!B13"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img148.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img148.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10787,13 +10787,13 @@ Me.gridCalculations(row, col + 1).Text = "=Display!B13"
 
 After computing the values, the Display sheet displays the Annual Income and Calculation sheet displays the Tax Deductions. A sample that demonstrates this feature is available in the followinf sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Formula Support\Cross-Reference Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Formula Support\Cross-Reference Demo_
 
 ###### Named Ranges
 
 Essential Grid supports named ranges along with Grid Formula Engine. Named ranges let the users to set up names for expressions or ranges, and then use these names in formulas. For example, if you name the range, "B4:B12" as "Expenses", you can use formula =Sum(Expenses) instead of =Sum(B4:B12).
 
-{ ![](Grid-Controls_images/Grid-Controls_img149.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img149.png)' | markdownify }}
 {:.image }
 
 
@@ -10843,7 +10843,7 @@ GridFormulaNamedRangesEditHelper.ShowNamedRangesDialog(Me.engine)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img150.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img150.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10853,7 +10853,7 @@ In the above dialog box, you will notice the named ranges (Members) displayed in
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img151.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img151.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10921,13 +10921,13 @@ End Sub
 
 Custom Title for ShowNamedRange dialog is set to "CashFlow Inputs" by using the above code.
 
-{ ![](Grid-Controls_images/Grid-Controls_img152.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img152.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img153.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img153.jpeg)' | markdownify }}
 {:.image }
-_Note: The following sample illustrates the use of Cross Sheet References and Named Ranges with Grid Formula Engine.  &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Formula Support\Named Range Demo_
+_Note: The following sample illustrates the use of Cross Sheet References and Named Ranges with Grid Formula Engine.  <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Formula Support\Named Range Demo_
 
 ##### Populating the Grid Control
 
@@ -11079,7 +11079,7 @@ Setting GridStyleInfo Properties
 
 There are several ways of setting GridStyleInfo properties. If you want to set them for a particular cell, you need to use row and column values as indexers on GridControl object to retrieve GridStyleInfo object that is associated with a particular cell. But, to change BaseStyle, ColumnStyle, or RowStyle, you will have to use different accessory methods to retrieve the style which is under consideration. The code samples that follow will show you several ways of changing particular styles. 
 
-> { ![](Grid-Controls_images/Grid-Controls_img154.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img154.jpeg)' | markdownify }}
 {:.image }
 _Note: This section shows working with cell-oriented Grid control allows explicit setting of individual cell and row properties. Column-oriented Grid Data Bound Grid does not support explicit setting of individual cell and row properties. Instead, events are used to set these properties on demand. You can see samples in the DataBound Grid section._
 
@@ -11155,7 +11155,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 3, 4, 4), style)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img155.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img155.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11181,7 +11181,7 @@ Me.gridControl1.TableStyle.BackColor = Color.FromArgb(255, 192, 192)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img156.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img156.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11219,7 +11219,7 @@ Me.gridControl1.ColStyles(3).CellValue = "Red"
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img157.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img157.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11245,7 +11245,7 @@ gridControl1.BaseStylesMap("Row Header").StyleInfo.BackColor = Color.FromArgb(22
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img158.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img158.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11253,7 +11253,7 @@ Through Designer
 
 To edit cell styles from the designer, you must select the grid on the design surface and then click Toggle Interactive Mode verb shown at the bottom of the PropertyGrid. This will allow you to select cells that are within the Grid control on the design surface. To change any of the style settings of the selected cells, you must first click the Cell Settings tool bar button at the top of PropertyGrid. This will display the cell style settings that are within the PropertyGrid and will allow you to change them. The changes will affect the currently selected range or the current cell if no range is selected. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img159.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img159.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11616,13 +11616,13 @@ Sample Output
 
 Below images depict the conversion of grid content to a Word file.
 
-{ ![](Grid-Controls_images/Grid-Controls_img160.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img160.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img161.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img161.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11630,7 +11630,7 @@ Below images depict the conversion of grid content to a Word file.
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Exporting\Exporting Demo\_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Exporting\Exporting Demo\_
 
 ###### Excel Export
 
@@ -11669,7 +11669,7 @@ gecc.GridToExcel(Me.gridControl1.Model, "C:\MyGC.xls")
 
 The following screenshot shows a grid, which has some data that can be exported.
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image641_259.jpg](Grid-Controls_images/Grid-Controls_img162.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image641_259.jpg](Grid-Controls_images/Grid-Controls_img162.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11701,7 +11701,7 @@ gecc.GridToExcel(Me.gridDataBoundGrid1.Model, "C:\MyGC.xls")
 
 The following screenshot shows the output of the exported excel. 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image641_260.jpg](Grid-Controls_images/Grid-Controls_img163.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image641_260.jpg](Grid-Controls_images/Grid-Controls_img163.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11709,7 +11709,7 @@ The following screenshot shows the output of the exported excel.
 
 You can view the sample for this demo under the following location.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\ [Version Number]\Windows\Grid.Windows\Samples\Exporting\Exporting Demo_
+_<Install Location>\Syncfusion\EssentialStudio\ [Version Number]\Windows\Grid.Windows\Samples\Exporting\Exporting Demo_
 
 ###### PDF Export
 
@@ -11740,7 +11740,7 @@ pdfConvertor.ExportToPdf("Sample1.pdf", Me.gridControl1)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img164.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img164.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11748,7 +11748,7 @@ pdfConvertor.ExportToPdf("Sample1.pdf", Me.gridControl1)
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Export\PDF Converter Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Export\PDF Converter Demo_
 
 Support to Access or Modify Document Attributes of Exported PDF
 
@@ -11869,7 +11869,7 @@ ExcelExport.ExportStyle = True
 
 ExcelExport.ExportImage = False
 
-> { ![](Grid-Controls_images/Grid-Controls_img165.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img165.jpeg)' | markdownify }}
 {:.image }
 _Note: Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called deserialization._
 
@@ -12045,7 +12045,7 @@ Me.gridControl1.Model.Data = CType(xs.Deserialize(xw), GridData)
 
 Me.gridControl1.Refresh()
 
-{ ![](Grid-Controls_images/Grid-Controls_img166.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img166.png)' | markdownify }}
 {:.image }
 
 
@@ -12053,7 +12053,7 @@ Me.gridControl1.Refresh()
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Serialization\Serialize Grid Control Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Serialization\Serialize Grid Control Demo_
 
 ##### Virtual Grids
 
@@ -12788,7 +12788,7 @@ The following image shows the printed output of the pivot grid:
 
 
 
-{ ![C:/Users/athirams/Desktop/print/page1.png](Grid-Controls_images/Grid-Controls_img167.png) | markdownify }
+{{ '![C:/Users/athirams/Desktop/print/page1.png](Grid-Controls_images/Grid-Controls_img167.png)' | markdownify }}
 {:.image }
  _Figure_ _267_: Pivot Grid in Print Preview_
 
@@ -12796,7 +12796,7 @@ The following image shows the printed output of the pivot grid:
 
 Sample Link
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows\Samples\Printing\Pivot Print Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows\Samples\Printing\Pivot Print Demo_
 
 ##### Appearance
 
@@ -12806,7 +12806,7 @@ This section comprises the following:
 
 GridFormatCellDialog simulates FormatCells dialog feature of MS Excel. It provides numerous formatting options such as Font, Alignment, Background, and Number, which aid in formatting grid cells dynamically. It is now available as an add-on feature for Essential Grid control. GridFormatCellDialog class accepts an instance of the Grid control to be formatted, and exposes the above mentioned formatting options to operate on grid cells that are selected. Below image illustrates such a sample dialog.
 
-{ ![](Grid-Controls_images/Grid-Controls_img168.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img168.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12816,7 +12816,7 @@ Setting up GridFormatCellDialog
 
 This GridFormatCellDialog can be enabled by instantiating GridFormatCellDialog class and invoking its ShowDialog method. 
 
-> { ![](Grid-Controls_images/Grid-Controls_img169.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img169.jpeg)' | markdownify }}
 {:.image }
 _Note: You must select the cells to be formatted before activating this dialog._
 
@@ -12846,7 +12846,7 @@ Font Tab
 
 This provides options to set the font, font style, font size, font effects, and font color for the desired grid cells.
 
-{ ![](Grid-Controls_images/Grid-Controls_img170.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img170.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12856,7 +12856,7 @@ Number Tab
 
 This allows you to specify text format for grid cells. The possible options are Number, Currency, Percentage, Date, Time, Scientific and Text.
 
-{ ![](Grid-Controls_images/Grid-Controls_img171.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img171.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12868,7 +12868,7 @@ This allows you to set background color for grid cells. You can set gradient sha
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img172.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img172.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12878,7 +12878,7 @@ Alignment Tab
 
 This provides various cell alignment options such as Horizontal Alignment, Vertical Alignment, Merge Cells, Wrap Text, and so on.
 
-{ ![](Grid-Controls_images/Grid-Controls_img173.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img173.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12888,7 +12888,7 @@ This section provides information on VisualStyles and ThemesEnabled properties (
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img174.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img174.png)' | markdownify }}
 {:.image }
 
 
@@ -12943,19 +12943,19 @@ Following is the step-by-step procedure to edit Grid control's cell styles using
 1. Right click the Grid control. A context menu is displayed.
 2. Select Edit from the context menu drop-down. The figure below illustrates this user-action:
 
-{ ![](Grid-Controls_images/Grid-Controls_img175.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img175.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img176.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img176.jpeg)' | markdownify }}
 {:.image }
 _Note: Editor opens up on the right hand side of the page and Grid Properties tab is highlighted by default. The cell content, styles and general grid properties can be modified under Grid Properties tab._ 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img177.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img177.png)' | markdownify }}
 {:.image }
 
 
@@ -12972,7 +12972,7 @@ To modify properties of a selected range, follow the steps listed below:
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img178.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img178.png)' | markdownify }}
 {:.image }
 
 
@@ -12983,7 +12983,7 @@ The figure above shows the Property grid under Selected Range tab in GridControl
 3. Make the required modifications in the property grid so that they are affected in the selected range of the main grid.
 4. Exit editor after modifications are done. 
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img179.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img179.jpeg)' | markdownify }}
 {:.image }
 _Note: The system prompts you to save the changes to the Grid control in the designer if exited without saving._
 
@@ -12997,7 +12997,7 @@ The properties that majorly affect the appearance cells and data in cells of a g
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img180.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img180.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13031,7 +13031,7 @@ Me.gridControl1.TransparentBackground = True
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the TransparentBackground property is set to true.
 
-{ ![](Grid-Controls_images/Grid-Controls_img181.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img181.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13061,7 +13061,7 @@ Me.gridControl1.Properties.DisplayHorzLines = False
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.DisplayHorzLines property is set to false.
 
-{ ![](Grid-Controls_images/Grid-Controls_img182.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img182.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13093,7 +13093,7 @@ Me.gridControl1.Properties.DisplayVertLines = False
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.DisplayVertLines property is set to false.
 
-{ ![](Grid-Controls_images/Grid-Controls_img183.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img183.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13125,7 +13125,7 @@ Me.gridControl1.Properties.ColHeaders = False
 
 The following illustration shows how the Grid in "Figure 1" is transformed when Properties.ColHeaders property is set to false.
 
-{ ![](Grid-Controls_images/Grid-Controls_img184.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img184.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13153,7 +13153,7 @@ Me.gridControl1.Properties.RowHeaders = False
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.RowHeaders property is set to false.
 
-{ ![](Grid-Controls_images/Grid-Controls_img185.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img185.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13183,7 +13183,7 @@ Me.gridControl1.Properties.Buttons3D = False
 
 The following illustration shows how the Grid in "Figure 1" is transformed when Properties.Buttons3D property is set to false.
 
-{ ![](Grid-Controls_images/Grid-Controls_img186.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img186.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13215,7 +13215,7 @@ Me.gridControl1.Properties.GridLineColor = System.Drawing.Color.IndianRed
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.GridLineColor property is set to IndianRed.
 
-{ ![](Grid-Controls_images/Grid-Controls_img187.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img187.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13245,7 +13245,7 @@ Me.gridControl1.BackgroundImage = Image.FromFile(FindImageFile("..\..\..\..pic.j
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the BackgroundImage property is set.
 
-{ ![](Grid-Controls_images/Grid-Controls_img188.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img188.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13277,7 +13277,7 @@ Me.gridControl1.TableStyle.TextColor = Color.MidnightBlue
 
 The following illustration shows how the Grid in "Figure 1" is transformed when TableStyle.TextColor property is set to MidnightBlue.
 
-{ ![](Grid-Controls_images/Grid-Controls_img189.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img189.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13307,7 +13307,7 @@ Me.gridControl1.BackColor = Color.Beige
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the BackColor property is set to Beige.
 
-{ ![](Grid-Controls_images/Grid-Controls_img190.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img190.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13385,7 +13385,7 @@ Me.gridControl1.Properties.FixedLinesColor = Color.YellowGreen
 
 A sample demonstrating these properties is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Properties Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Properties Demo_
 
 Print Properties
 
@@ -13597,13 +13597,13 @@ Me.gridControl1.Model.Properties.CenterHorizontal = False
 
 A sample demonstrating these properties is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Print Grid Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Print Grid Demo_
 
 Scroll Bar Properties
 
 Essential Grid provides support to control functionalities and appearance of the grid scroll bars.
 
-{ ![](Grid-Controls_images/Grid-Controls_img191.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img191.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13685,7 +13685,7 @@ Me.gridControl1.HorizontalScrollTips = True
 
 The following illustration shows how the Grid in "Figure 1" is transformed when thorizontalScrollTips if  property is set to true.
 
-{ ![](Grid-Controls_images/Grid-Controls_img192.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img192.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13719,7 +13719,7 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img193.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img193.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13801,7 +13801,7 @@ Me.gridControl1.HorizontalThumbTrack = True
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the HorizontalThumbTrack property is set to true.
 
-{ ![](Grid-Controls_images/Grid-Controls_img194.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img194.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13835,7 +13835,7 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img195.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img195.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14007,7 +14007,7 @@ Me.gridControl1.VScroll = True
 
 A sample demonstrating these properties is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\ScrollBar Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\ScrollBar Demo_
 
 ###### Custom Drawing
 
@@ -14172,7 +14172,7 @@ Essential Grid has built-in support for displaying a Grid List control as a drop
 
 The following screen shot shows grid cell with Grid List control as its drop-down.
 
-{ ![](Grid-Controls_images/Grid-Controls_img196.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img196.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14250,7 +14250,7 @@ Me.gridControl1(rowIndex, 2).DisplayMember = "Name"
 
 We have now added a Grid List control in a Grid cell and bound the data to it. This Grid List control can be customized by accessing GridDropDownGridListControlCellRenderer class inside the CurrentCellShowedDropDown event handler.
 
-> { ![](Grid-Controls_images/Grid-Controls_img197.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img197.jpeg)' | markdownify }}
 {:.image }
 _Note: CurrentCellShowedDropDown event is handled once the drop-down of the specified grid cell is made visible by clicking the downward arrow at the end of the cell._
 
@@ -14408,11 +14408,11 @@ Me.GridControl1.Cols.Hidden(0) = True
 
 Me.GridControl1.Rows.Hidden(0) = True  
 
-{ ![](Grid-Controls_images/Grid-Controls_img198.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img198.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img199.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img199.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14438,7 +14438,7 @@ this.gridControl1.Rows.HeaderCount = 2;
 
 Me.GridControl1.Cols.Rows.HeaderCount = 2  
 
-{ ![](Grid-Controls_images/Grid-Controls_img200.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img200.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14476,7 +14476,7 @@ Me.GridControl1.Rows.FrozenCount = 2
 
 Me.GridControl1.Rows.HeaderCount = 2   
 
-{ ![](Grid-Controls_images/Grid-Controls_img201.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img201.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14528,7 +14528,7 @@ this.gridControl1.Rows.MoveRange(7, 2, 4);
 
 Me.GridControl1.Rows.MoveRange(7, 2, 4)
 
-{ ![](Grid-Controls_images/Grid-Controls_img202.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img202.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14536,7 +14536,7 @@ Me.GridControl1.Rows.MoveRange(7, 2, 4)
 
 GridControl.ColWidths and GridControl.RowHeights collections will allow you to programmatically set the width of a column and/or the height of a row.
 
-> { ![](Grid-Controls_images/Grid-Controls_img203.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img203.jpeg)' | markdownify }}
 {:.image }
 _Note: Before you can use GridDataBoundGrid.Model.ColWidths to explicitly set column widths in Data Bound Grid, you must first set GridDataBoundGrid.AllowResizeToFit to false. Otherwise, the grid will try to size columns based on the width of the header text._ 
 
@@ -14570,7 +14570,7 @@ Me.GridControl1.ColWidths(3) = 40
 
 Me.GridControl1.RowHeights(4) = 40 
 
-{ ![](Grid-Controls_images/Grid-Controls_img204.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img204.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14578,7 +14578,7 @@ Me.GridControl1.RowHeights(4) = 40
 
 GridControl.ColStyles and GridControl.RowStyles collections will allow you to programmatically set the default row or column style. This code will set backcolor and text color as well as set the font to bold for column two and row three.
 
-> { ![](Grid-Controls_images/Grid-Controls_img205.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img205.jpeg)' | markdownify }}
 {:.image }
 _Note: RowStyles and ColStyles are not supported in DataBound Grid. For that grid, you will need to use  GridBoundColumn.StyleInfo property to set column styles and you will need to use grid.Model.QueryCellInfo event to set row styles._
 
@@ -14630,7 +14630,7 @@ Me.GridControl1.RowStyles(3).Font.Bold = True
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img206.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img206.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14642,7 +14642,7 @@ GridResizeCellsBehavior enumeration provides the following options to control re
 
 * AllowDragOutside - Allows the user to drag the cell boundary outside grid client area and resize specific row or column.
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img207.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img207.jpeg)' | markdownify }}
 {:.image }
 _Note: Grid client area is the area where cells along with row and column headers are visible to the client. Dragging outside the client area means dragging beyond the boundary of the grid._
 
@@ -14653,7 +14653,7 @@ _Note: Grid client area is the area where cells along with row and column header
 * ResizeAll - Resizes all rows or columns automatically when the user resizes one row or column with the mouse. All rows and columns are resized to the same size as the current row or column being resized.
 * ResizeSingle - Resizes the row or column being resized by the user using the mouse.
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img208.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img208.jpeg)' | markdownify }}
 {:.image }
 _Note: You can also control the mouse controller's behavior at run time while the user is performing the action by subscribing to ResizingColumns and ResizingRows events._
 
@@ -14711,7 +14711,7 @@ Me.gridControl1.ColWidths.ResizeToFit(GridRangeInfo.Cols(1, 5))
 
 Me.gridControl1.RowHeights.ResizeToFit(GridRangeInfo.Rows(1, 5))
 
-> { ![](Grid-Controls_images/Grid-Controls_img209.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img209.jpeg)' | markdownify }}
 {:.image }
 _Note: The parameter passed to ResizeToFit method is either GridRangeInfo.Cols or GridInfo.Rows method, which in turn has two parameters:_
 
@@ -14720,15 +14720,15 @@ _Note: The parameter passed to ResizeToFit method is either GridRangeInfo.Cols o
 
 The following image shows the application of resize to fit operation to the first five rows of the grid.
 
-{ ![](Grid-Controls_images/Grid-Controls_img210.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img210.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img211.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img211.jpeg)' | markdownify }}
 {:.image }
 _Note: The preceding image is the output of a demo that is available in the samples in the following installed location._
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Resize To Fit Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Resize To Fit Demo_
 
 
 
@@ -14792,7 +14792,7 @@ Me.gridControl1.RowHeights.ResizeToFitOptimized(GridRangeInfo.Rows(1,8));
 
  The following image shows the application of ResizeToFitOptimized to the first column of the grid.
 
-{ ![](Grid-Controls_images/Grid-Controls_img212.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img212.png)' | markdownify }}
 {:.image }
 
 
@@ -14910,7 +14910,7 @@ End Function
 
 The following image shows how the cell resizes itself automatically to the size of the control, when a custom control is added to it.
 
-{ ![](Grid-Controls_images/Grid-Controls_img213.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img213.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15040,7 +15040,7 @@ Sample Link
 
 Samples for this feature are available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Cell Formatting Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Cell Formatting Demo_
 
 ##### Covered Cells
 
@@ -15330,7 +15330,7 @@ Me.gridControl1(2, 2).Font.Bold = True
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img214.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img214.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15356,7 +15356,7 @@ Me.tabBarSplitterControl.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Of
 
 Me.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
-{ ![](Grid-Controls_images/Grid-Controls_img215.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img215.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15388,7 +15388,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.PowderBlue)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img216.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img216.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15656,7 +15656,7 @@ previewDialog.Show()
 
 Following screen shot illustrates Advanced Printing functionality provided by the GridPrintDocumentAdv class.
 
-{ ![](Grid-Controls_images/Grid-Controls_img217.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img217.png)' | markdownify }}
 {:.image }
 
 
@@ -15698,11 +15698,11 @@ layoutHelper.TextColor = Color.Green
 
 Following screen shot shows the page layout of the grid, with the segment line and page number.
 
-{ ![](Grid-Controls_images/Grid-Controls_img218.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img218.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img219.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img219.jpeg)' | markdownify }}
 {:.image }
 _Note: The functionality mentioned above can also be achieved on UI by selecting Show Page Layout check box on the UI, which allows the user to view the page layout._
 
@@ -15744,7 +15744,7 @@ End If
 
 Following screen shot illustrates the Grid's Print To Fit feature.
 
-{ ![](Grid-Controls_images/Grid-Controls_img220.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img220.png)' | markdownify }}
 {:.image }
 
 
@@ -15807,7 +15807,7 @@ Multiple grid columns are scaled to fit the printed page.</td></tr>
 
 Sample Link
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing_
 
 ###### Adding Multi-Grid Printing to an Application
 
@@ -15884,7 +15884,7 @@ printDialog.ShowDialog()
 
 The following screen shot illustrates the advanced printing functionality provided by MultipleGridPrintDocument class:
 
-{ ![](Grid-Controls_images/Grid-Controls_img221.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img221.png)' | markdownify }}
 {:.image }
 
 
@@ -15920,7 +15920,7 @@ Me.gridControl1.ControllerOptions = Me.gridControl1.ControllerOptions Or GridCon
 
 Private Sub gridControl1_QueryAllowDragColumnHeader(ByVal sender As Object, ByVal e As                                                    GridQueryDragColumnHeaderEventArgs)
 
-    If e.Reason &lt;&gt; GridQueryDragColumnHeaderReason.HitTest Then
+    If e.Reason <> GridQueryDragColumnHeaderReason.HitTest Then
 
         System.Diagnostics.Debug.WriteLine("gridControl1_QueryAllowDragColumnHeader: " & e.ToString())
 
@@ -15932,7 +15932,7 @@ End Sub
 
  The following screen shot illustrates how to drag the column header.
 
-{ ![](Grid-Controls_images/Grid-Controls_img222.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img222.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15940,7 +15940,7 @@ End Sub
 
 Essential Grid offers support functionality like Object Linking and Embedding (OLE) Drag-and-Drop. A range in one grid can be selected and dragged to another grid or into a Rich Edit Box. The following screen shot shows selected region of grid that has been dragged and dropped into another grid:
 
-{ ![](Grid-Controls_images/Grid-Controls_img223.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img223.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16006,7 +16006,7 @@ e.Effect = DragDropEffects.Copy
 
 Essential Grid supports different selection modes for grid cells. A specific selection behavior can be set through GridControl.AllowSelection property. The following screen shot shows a window with a list of selection modes.
 
-{ ![](Grid-Controls_images/Grid-Controls_img224.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img224.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16049,7 +16049,7 @@ Banner cells are multiple cells spanning a single background image. An image to 
 
 The following screen shot shows an example of how multiple cells span a single background image to form banner cells.
 
-{ ![](Grid-Controls_images/Grid-Controls_img225.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img225.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16101,7 +16101,7 @@ style.BackgroundImageMode = GridBackgroundImageMode.StretchImage
 
 Merge Cells feature merges two or more adjacent cells with the same value into one cell and displays the content in the merged cell. A single cell is created by combining two or more selected cells.
 
-> { ![](Grid-Controls_images/Grid-Controls_img226.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img226.jpeg)' | markdownify }}
 {:.image }
 _Note: The data in the merged cells will be displayed on the first cell of the merged range._
 
@@ -16175,13 +16175,13 @@ Me.gridControl1.ColStyles(2).MergeCell = GridMergeCellDirection.RowsInColumn
 
 The following screen shots illustrate the merge cells feature in Essential Grid.
 
-{ ![](Grid-Controls_images/Grid-Controls_img227.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img227.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img228.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img228.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16197,19 +16197,19 @@ Example
 
 Let us consider the Tetris game application, which is implemented by using Essential Grid. This game application makes use of arrow keys to move the blocks and change the block shape. It also provides an option to display the next block.
 
-{ ![](Grid-Controls_images/Grid-Controls_img229.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img229.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Essential Blocks Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Essential Blocks Demo_
 
 ###### MS Excel 2007-like UI
 
 Essential Grid control provides support to implement Microsoft Excel 2007-like User Interface (UI). It contains Name Box that shows the current selection range and Formula Bar, which supports the formula cells. The row and column headers of the selected range are highlighted on the UI. This feature is similar to Excel.
 
-{ ![](Grid-Controls_images/Grid-Controls_img230.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img230.png)' | markdownify }}
 {:.image }
 
 
@@ -16217,7 +16217,7 @@ Essential Grid control provides support to implement Microsoft Excel 2007-like U
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo_
 
 ###### Grid Folder Browser
 
@@ -16227,7 +16227,7 @@ Example
 
 Let us consider the Grid Folder Browser sample which is available under the following installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo_
 
 This sample operates grid in virtual mode in order to populate the data dynamically on demand, i.e., when the tree is expanded. QueryCellInfo, QueryColCount and QueryRowCount events must be handled in order to implement virtual grid. These events provide basic information about the number of rows and columns and the values of the data.
 
@@ -16297,7 +16297,7 @@ End Sub
 
 The implementation uses CollapsibleDataSource class. This class makes use of custom collection to hold a list of SampleData objects. (Consider each of these objects as a row in the underlying grid). Each row carries information on a specific folder. Each SampleData object has IndentValue property, ExpandState property, and Items string array that holds the different column values for this row. The column values display folder details like the name of the folder, folder size and so on. This class also contains InsertData method, which retrieves data of inner subtree and inserts data into the collection when a node is expanded.
 
-{ ![](Grid-Controls_images/Grid-Controls_img231.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img231.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16305,13 +16305,13 @@ The implementation uses CollapsibleDataSource class. This class makes use of cus
 
 Essential Grid supports Multiple Document Interface (MDI) by enabling users to work with multiple grid controls simultaneously. Here, multiple windows reside under a single parent window.
 
-{ ![](Grid-Controls_images/Grid-Controls_img232.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img232.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Pad Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Pad Demo_
 
 ##### Clipboard Support
 
@@ -16345,7 +16345,7 @@ Me.gridControl1.Model.CutPaste.ClipboardFlags = GridDragDropFlags.Styles
 
 * CanCopy - This method checks whether there are selected ranges of cells that can be copied to clipboard or if the current cell's contents can be copied. The return type of this method is Boolean. If it returns true, it indicates that the selected range of cells or the current cell's contents can be copied to the clipboard. If it is false, it indicates that the selected range of cells or the current cell's contents cannot be copied to the clipboard.
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img233.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img233.jpeg)' | markdownify }}
 {:.image }
 _Note: Any content copied is pasted to the Clipboard by default._
 
@@ -16467,7 +16467,7 @@ Me.gridControl1.Model.CutPaste.CopyCellsToClipboard(list, True)
 
 * CanCut-This method checks if there are selected ranges that can be cut or if the current cell's contents can be cut. The return type of this method is Boolean. If it returns true, it indicates that the content in the selected range of cells or the current cell's content can be cut. This method returns false, when no selected range is available to cut.
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img234.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img234.jpeg)' | markdownify }}
 {:.image }
 _Note: Any content cut is pasted to the clipboard by default._
 
@@ -16551,7 +16551,7 @@ Me.gridControl1.Model.CutPaste.CanPaste()
 
 * Paste-This method pastes the content from the clipboard into the grid at the current selected range or current cell.
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img235.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img235.jpeg)' | markdownify }}
 {:.image }
 _Note: It is not mandatory to call this method after CanPaste method. If there is no content in the clipboard to be pasted, this method will not respond._
 
@@ -16597,7 +16597,7 @@ Example:
 
 In this example, a timer changes the cell in short intervals, inserts and removes rows. This example draws cell changes directly to the graphics context instead of performing an Invalidate. It also shows you text using GDI instead of GDI+ and how to optimize updates for inserting and removing rows. You can start multiple instances without slowing down your machine. You can confirm the same by viewing TaskManager CPU usage while the sample runs.
 
-{ ![](Grid-Controls_images/Grid-Controls_img236.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img236.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16605,7 +16605,7 @@ In this example, a timer changes the cell in short intervals, inserts and remove
 
 A sample demonstrating this feature is available under the following sample installation path:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
 
 ###### Data Handling
 
@@ -16798,7 +16798,7 @@ End Sub
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img237.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img237.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16806,7 +16806,7 @@ End Sub
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
 
 ##### Zooming options
 
@@ -16818,7 +16818,7 @@ We can implement zooming functionality in Essential Grid to show a magnified ima
 
 The following screen shot shows a grid that is zoomed to the grid-level.
 
-{ ![](Grid-Controls_images/Grid-Controls_img238.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img238.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16826,7 +16826,7 @@ The following screen shot shows a grid that is zoomed to the grid-level.
 
 The following screen shot shows a grid that is zoomed to the cell-level.
 
-{ ![](Grid-Controls_images/Grid-Controls_img239.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img239.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16932,7 +16932,7 @@ The preceding code sets the font and cell size using the percent parameter.
 
 2. When the cell to be zoomed is clicked, handle CellClick event to display it as a zoomed cell. Here we use a PictureBox to show the magnified view of the cell content. 
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img240.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img240.jpeg)' | markdownify }}
 {:.image }
 _Note: A PictureBox is a Microsoft’s .NET Control used to display an image._
 
@@ -17108,11 +17108,11 @@ End Sub
 
 Now when you click any cell, it displays a picture box over the cell showing cell content in a magnified manner.
 
-> { ![](Grid-Controls_images/Grid-Controls_img241.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img241.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details on this feature, refer the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
 
 ##### Tile Image In Grid Cell 
 
@@ -17132,7 +17132,7 @@ this.gridControl1[2, 2].BackgroundImageMode = GridBackgroundImageMode.TileImage;
 
 When the code runs, the following image is displayed.
 
-{ ![](Grid-Controls_images/Grid-Controls_img242.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img242.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17306,7 +17306,7 @@ Me.Controls.Add(Me.GridGroupingControl1)
 
 6. When you run the application, the grid will look like the following image.
 
-{ ![](Grid-Controls_images/Grid-Controls_img243.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img243.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17528,7 +17528,7 @@ Me.Controls.Add(Me.GridGroupingControl1)
 
 6. When you run the application, the grid will look like the following image. You will be able to sort data by clicking the header of the column you want to sort.
 
-{ ![](Grid-Controls_images/Grid-Controls_img244.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img244.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17540,13 +17540,13 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img245.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img245.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img246.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img246.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17554,7 +17554,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Data Binding: The grid grouping control supports variety of data sources used to automatically populate the grid with data. It has full ADO+ support and also allows any component that implements IList, IBindingList, ITypedList, or IListSource interface. It also supports unbound mode.
 
-{ ![](Grid-Controls_images/Grid-Controls_img247.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img247.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17564,7 +17564,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img248.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img248.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17572,7 +17572,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Grouping: Grid data can be arranged based on matching field values to form groups. Essential Grid supports nested grouping by hierarchically combining the groups in different levels. The number of levels of grouping is unlimited.
 
-{ ![](Grid-Controls_images/Grid-Controls_img249.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img249.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17580,7 +17580,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Summaries: The grid allows you to add summary rows that is used to display brief information about groups or specific columns. It is also possible to add user defined summaries.
 
-{ ![](Grid-Controls_images/Grid-Controls_img250.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img250.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17588,7 +17588,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Filters: The grid grouping control has in-built support for FilterBar. The filter bar can be used to display a subset of records that satisfies user-defined criteria.
 
-{ ![](Grid-Controls_images/Grid-Controls_img251.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img251.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17596,7 +17596,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Sorting: Grid Grouping control allows you to sort the data against an unlimited number of columns either in ascending or in descending order. When editing is done, the record values will be adjusted automatically to maintain the sorting order.
 
-{ ![](Grid-Controls_images/Grid-Controls_img252.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img252.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17604,7 +17604,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Expression Fields: Expression fields facilitate inclusion of columns with formula expressions.
 
-{ ![](Grid-Controls_images/Grid-Controls_img253.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img253.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17612,7 +17612,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Unbound Fields: Grid Grouping control can have unbound fields with custom values using which you can evaluate the field values at runtime similar to Expression Fields.
 
-{ ![](Grid-Controls_images/Grid-Controls_img254.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img254.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17620,7 +17620,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Preview Rows: It is possible to add preview section for each group or record. The preview rows can be enabled when you want to display memo fields or some notes for a given group or record.
 
-{ ![](Grid-Controls_images/Grid-Controls_img255.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img255.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17628,7 +17628,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Frozen Columns: This feature will allow you to lock specific columns so that they will always be visible on the screen no matter how far you scroll to the right or down.
 
-{ ![](Grid-Controls_images/Grid-Controls_img256.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img256.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17636,7 +17636,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Stacked MultiHeaders: This feature allows you to create additional header rows that span across visible grid columns. You can group columns under each header row. It also supports drag and drop of these header rows.
 
-{ ![](Grid-Controls_images/Grid-Controls_img257.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img257.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17644,7 +17644,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Multi Row Record: With Grid Grouping control, you can make a single record to span across several rows.
 
-{ ![](Grid-Controls_images/Grid-Controls_img258.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img258.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17652,7 +17652,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Designer Support: The Grid Grouping control offers rich design time support to customize the appearance and behavior of various grid elements.
 
-{ ![](Grid-Controls_images/Grid-Controls_img259.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img259.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17660,7 +17660,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Appearance: The grid provides design time and run time options to customize the appearance of its elements. The appearance settings include various options such as background color, font, text color, alignment, and so on.
 
-{ ![](Grid-Controls_images/Grid-Controls_img260.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img260.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17672,7 +17672,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Navigation: Grid Grouping control includes built-in Navigation and Page Bars that allows users to navigate records with ease.
 
-{ ![](Grid-Controls_images/Grid-Controls_img261.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img261.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17682,7 +17682,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img262.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img262.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17690,7 +17690,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Serialization: The grid schema information can be serialized and deserialized. Grid Grouping control supports several serialization formats such as XML and XLS.
 
-{ ![](Grid-Controls_images/Grid-Controls_img263.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img263.png)' | markdownify }}
 {:.image }
 
 
@@ -17732,7 +17732,7 @@ Grid Grouping control has an extremelyhigh performance standard. It can handle v
 
 All the properties that affects grid performance are wrapped into a category named Optimization. Here is an image of the property grid listing various optimization properties.
 
-{ ![](Grid-Controls_images/Grid-Controls_img264.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img264.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17872,7 +17872,7 @@ All counters are supported: visible elements, filtered records, YAmount, hidden 
 
 footprint.
 
-> { ![](Grid-Controls_images/Grid-Controls_img265.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img265.jpeg)' | markdownify }}
 {:.image }
 _Note: Allowing certain optimizations does not mean that the optimization is necessarily used. Optimizations will only be used when applicable. Take for example the optimization. If you allow this optimization, the engine will check schema settings when loading the table. If there are no SortedColumns, RecordFilters, GroupedColumns, or nested relations for a table, then virtual mode can be used and no records need to be loaded into memory. If the user later sorts by one column, the virtual mode cannot be used any more. Records will need to be iterated through and sorted and tree structures will be built that allow quick access to records and IndexOf operations. When initializing table, the engine will check if criteria for DisableCounters optimization are met._
 
@@ -17886,11 +17886,11 @@ All the optimizations are enabled by setting AllowedOptimizations to All. As sai
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img266.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img266.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following Browser Sample:_ 
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Engine Optimization Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Engine Optimization Demo_
 
 Implementation
 
@@ -18322,7 +18322,7 @@ End Class
 
 3. Add a button and listbox to the main form. Clicking the button will create a grid grouping control and load it with Virtual List. ListBox serves as Log Window wherein you will display the log messages like time elapsed for loading the grid, list of optimizations applied, and so on. Your form will look like the one below at design time.
 
-{ ![](Grid-Controls_images/Grid-Controls_img267.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img267.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18744,21 +18744,21 @@ Here are the screen shots that show the optimizations applied at different engin
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img268.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img268.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img269.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img269.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img270.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img270.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img271.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img271.png)' | markdownify }}
 {:.image }
 
 
@@ -18800,11 +18800,11 @@ ScrollWithImmediateUpdate
 
 It will keep engine in synchronization and use ScrollWindow to scroll window contents or adjust top row index if changes occurred before current visible row.
 
-> { ![](Grid-Controls_images/Grid-Controls_img272.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img272.jpeg)' | markdownify }}
 {:.image }
 _Note: For Complete Code for this example, refer the following Browser sample:_ 
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
 
 Implementation
 
@@ -19560,7 +19560,7 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
 
             gridGroupingControl1.TableModel.GetHeaderColumnDescriptorAt(e.TableCellIdentity.ColIndex)
 
-            If column IsNot Nothing AndAlso table.TotalSummaries.IndexOf(column.MappingName) &lt;&gt; -1 Then
+            If column IsNot Nothing AndAlso table.TotalSummaries.IndexOf(column.MappingName) <> -1 Then
 
                 Dim index As Integer = column.TableDescriptor.Fields.IndexOf(column.FieldDescriptor)
 
@@ -19590,7 +19590,7 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
 
         Dim column As GridColumnDescriptor = Me.gridGroupingControl1.TableModel.GetHeaderColumnDescriptorAt(e.TableCellIdentity.ColIndex)
 
-        If column IsNot Nothing AndAlso table.TotalSummaries.IndexOf(column.MappingName) &lt;&gt; -1 Then
+        If column IsNot Nothing AndAlso table.TotalSummaries.IndexOf(column.MappingName) <> -1 Then
 
             Dim index As Integer = column.TableDescriptor.Fields.IndexOf(column.FieldDescriptor)
 
@@ -20032,7 +20032,7 @@ gridGroupingControl1.TableDescriptor.UnboundFields("ShipVia_CompanyName").Refere
 
 Here is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img273.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img273.png)' | markdownify }}
 {:.image }
 
 
@@ -20046,11 +20046,11 @@ ReferencedFields property, as the name implies, saves a list of field names refe
 
 ReferencedFields property is very user interactive option and provides options to test the performance of the grid by enabling or disabling grouping, sorting, and filtering in the midst of heavy updates. It also allows you to change the timer frequency that controls the throughput i.e., the number of updates per unit time. At run time, you can also vary the amount of time the changes are highlighted.
 
-> { ![](Grid-Controls_images/Grid-Controls_img274.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img274.jpeg)' | markdownify }}
 {:.image }
 _Note: For Complete Code for this example, refer to the following Browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
 
 Implementation
 
@@ -20280,7 +20280,7 @@ Dim style As GridTableCellStyleInfo = CType(e.Inner.Style, GridTableCellStyleInf
 
 Dim bs As BlinkState = gridGroupingControl1.GetBlinkState(style.TableCellIdentity)
 
-If bs &lt;&gt; BlinkState.None Then
+If bs <> BlinkState.None Then
 
 If bs = BlinkState.NewRecord Then
 
@@ -21018,7 +21018,7 @@ End Sub
 
 7. Given below is a sample screen shot. While running the sample, apply grouping, sorting and filtering, and then check for the CPU time usage in TaskManager to detect grid performance.
 
-{ ![](Grid-Controls_images/Grid-Controls_img275.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img275.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21026,11 +21026,11 @@ End Sub
 
 This section focuses on a sample that lets you check the performance of the grid grouping control by toggling various options that can affect the speed of the grid. The different options include Sort and Categorize the records, Calculating MaximumColumnWidth, CustomSorting and MultiThreading (in case if a multiprocessor system is available). 
 
-> { ![](Grid-Controls_images/Grid-Controls_img276.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img276.jpeg)' | markdownify }}
 {:.image }
 _Note: For Code, refer to the following Browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Performance Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Performance Demo_
 
 The following is the list of the options used.
 
@@ -21066,7 +21066,7 @@ After enabling the options required, click the LoadGrid button. This will then c
 
 Given below is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img277.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img277.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21134,11 +21134,11 @@ The following code illustrates how to enable real time updates.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img278.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img278.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img279.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img279.jpeg)' | markdownify }}
 {:.image }
         _Figure_ _357_: Time Taken to Group the Records_
 
@@ -21596,15 +21596,15 @@ Me.gridGroupingControl1.DataSource = al
 
 4. Run the sample. Your grid will look similar to the one below.
 
-{ ![](Grid-Controls_images/Grid-Controls_img280.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img280.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img281.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img281.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
 
 IBindingList
 
@@ -21625,11 +21625,11 @@ Follow these steps to create your own collection that implements IBindingList an
 5. Make SupportChangeNotifications property to return true.
 6. Create an instance of Class2 and add a list of records into it. Then assign this list to DataSource of grouping grid.
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img282.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img282.jpeg)' | markdownify }}
 {:.image }
 _Note: For the complete code refer the sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\IBindingList Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\IBindingList Demo_
 
 ITypedList
 
@@ -21881,15 +21881,15 @@ Me.GridGroupingControl1.DataSource = MyProducts
 
 5. Run the sample. Given below is a sample screenshot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img283.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img283.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img284.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img284.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
 
 Strongly Typed Collections
 
@@ -22186,15 +22186,15 @@ Me.GridGroupingControl1.DataSource = MyProducts
 
 5. Run the sample. Here is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img285.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img285.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img286.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img286.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Collection Base Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Collection Base Demo_
 
 Generic Collection
 
@@ -22446,7 +22446,7 @@ Public Class CustomClass : Implements INotifyPropertyChanged
 
         Set(ByVal value As Integer)
 
-            If cusid &lt;&gt; value Then
+            If cusid <> value Then
 
                 cusid = value
 
@@ -22470,7 +22470,7 @@ Public Class CustomClass : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If first_name &lt;&gt; value Then
+            If first_name <> value Then
 
                 first_name = value
 
@@ -22494,7 +22494,7 @@ Public Class CustomClass : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If last_name &lt;&gt; value Then
+            If last_name <> value Then
 
                 last_name = value
 
@@ -22518,7 +22518,7 @@ Public Class CustomClass : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If addr &lt;&gt; value Then
+            If addr <> value Then
 
                 addr = value
 
@@ -22542,7 +22542,7 @@ Public Class CustomClass : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If cityname &lt;&gt; value Then
+            If cityname <> value Then
 
                 cityname = value
 
@@ -22572,7 +22572,7 @@ End Class
 
 
 
-2. Instantiate BindingList &lt;T&gt; class by specifying the type of collection as CustomClass and add few records to it. This will create a collection of CustomClass type objects.
+2. Instantiate BindingList <T> class by specifying the type of collection as CustomClass and add few records to it. This will create a collection of CustomClass type objects.
 
 [C#]
 
@@ -22638,15 +22638,15 @@ Me.GridGroupingControl1.DataSource = bl
 
 4. Finally, run the sample. Your grid will look like this.
 
-{ ![](Grid-Controls_images/Grid-Controls_img287.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img287.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img288.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img288.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo_
 
 ###### Unbound Mode
 
@@ -23006,7 +23006,7 @@ End Sub
 
 6. Run the sample. Here is a sample screenshot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img289.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img289.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23050,7 +23050,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title")
 
 The grid below displays data columns from the Employees Table grouped by the values of Title field.
 
-{ ![](Grid-Controls_images/Grid-Controls_img290.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img290.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23076,7 +23076,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDire
 
 The screenshot below reflects this process.
 
-{ ![](Grid-Controls_images/Grid-Controls_img291.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img291.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23102,25 +23102,25 @@ this.gridGroupingControl1.TableDescriptor.Relations[0].ChildTableDescriptor.Grou
 
 Me.gridGroupingControl1.TableDescriptor.Relations(0).ChildTableDescriptor.GroupedColumns.Add("CategoryName", ListSortDirection.Descending)
 
-> { ![](Grid-Controls_images/Grid-Controls_img292.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img292.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
 
 Multi Column Grouping
 
 Grid Grouping control provides inbuilt support to group the data by more than one column. It is as simple as adding the column names to the GroupedColumns collection. With multicolumn grouping, grouping grid organizes data in a hierarchical structure showing groups in different levels. In the image below, you see Employees data grouped by Title and Country columns.
 
-{ ![](Grid-Controls_images/Grid-Controls_img293.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img293.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img294.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img294.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Multi Column Grouping Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Multi Column Grouping Demo_
 
 Grouping Through Designer
 
@@ -23128,7 +23128,7 @@ Grouping can also be done at design time. After binding dataset to the grouping 
 
 The image below depicts this process.
 
-{ ![](Grid-Controls_images/Grid-Controls_img295.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img295.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23232,29 +23232,29 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 
 Here are runtime screens showing the effect of setting ShowGroupDropArea property.
 
-{ ![](Grid-Controls_images/Grid-Controls_img296.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img296.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img297.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img297.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img298.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img298.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img299.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img299.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img300.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img300.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23304,7 +23304,7 @@ Me.gridGroupingControl1.AddGroupDropArea("OrderDetails")
 
 Given below is a sample screenshot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img301.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img301.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23704,7 +23704,7 @@ End Sub
 
 10. Here is a sample output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img302.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img302.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23825,7 +23825,7 @@ Me.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img303.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img303.png)' | markdownify }}
 {:.image }
 
 
@@ -23835,7 +23835,7 @@ By default, GroupDropArea is displayed at the top of the Grid Grouping control. 
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img304.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img304.jpeg)' | markdownify }}
 {:.image }
 _Note: For GroupDropAreaAlignment property to take effect, HierarchicalGroupDropArea property must be set to false._
 
@@ -23899,13 +23899,13 @@ Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Righ
 
 The following screen shot shows GroupDropArea postioned at the top of Grid Grouping control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img305.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img305.png)' | markdownify }}
 {:.image }
 
 
 The following screen shot shows GroupDropArea postioned at the left of Grid Grouping control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img306.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img306.png)' | markdownify }}
 {:.image }
 _Figure_ _376_: GroupDropArea aligned at the Left_
 
@@ -23913,19 +23913,19 @@ _Figure_ _376_: GroupDropArea aligned at the Left_
 
 The following screen shot shows GroupDropArea postioned at the bottom of Grid Grouping control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img307.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img307.png)' | markdownify }}
 {:.image }
 
 
 The following screen shot shows GroupDropArea postioned at the right of Grid Grouping control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img308.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img308.png)' | markdownify }}
 {:.image }
 
 
 For more information on setting the alignment of GroupDropArea, see 
 
-&lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Grouping.Windows\
+<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\
 
 Samples\Grouping\Grouping Demo.
 
@@ -24045,10 +24045,10 @@ Group Headers and Footers
 
 The headers and footers of a group can be used to display any information that is common to all elements of that group. You can toggle the display of these headers and footers by using the boolean properties given below.
 
-* &lt;GroupOptions&gt;.ShowGroupHeader
-* &lt;GroupOptions&gt;.ShowGroupFooter
+* <GroupOptions>.ShowGroupHeader
+* <GroupOptions>.ShowGroupFooter
 
-where &lt;GroupOptions&gt; can be any one of the following: TopLevelGroupOptions to affect only the top most group, ChildGroupOptions to affect the child groups, or NestedTableGroupOptions to affect the groups in nested tables.
+where <GroupOptions> can be any one of the following: TopLevelGroupOptions to affect only the top most group, ChildGroupOptions to affect the child groups, or NestedTableGroupOptions to affect the groups in nested tables.
 
 You can also set header and footer attributes such as HeaderSectionHeight and FooterSectionHeight by using the properties given below.
 
@@ -24057,15 +24057,15 @@ You can also set header and footer attributes such as HeaderSectionHeight and Fo
 
 Group headers and footers can be populated by handling QueryCellStyleInfo event wherein you can check Header and Footer cell types and provide the data.
 
-{ ![](Grid-Controls_images/Grid-Controls_img309.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img309.jpeg)' | markdownify }}
 {:.image }
 
 
 GroupPreviewRows
 
-GroupPreviewSection is the suitable place when you want to display memo fields or add custom notes for a given group. It can be enabled by setting &lt;GroupOptions&gt;.ShowGroupPreview property to True. You can adjust the size of preview row through TableOptions.GroupPreviewSectionHeight property. QueryCellStyleInfo event can be used to populate preview rows.
+GroupPreviewSection is the suitable place when you want to display memo fields or add custom notes for a given group. It can be enabled by setting <GroupOptions>.ShowGroupPreview property to True. You can adjust the size of preview row through TableOptions.GroupPreviewSectionHeight property. QueryCellStyleInfo event can be used to populate preview rows.
 
-{ ![](Grid-Controls_images/Grid-Controls_img310.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img310.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -24073,10 +24073,10 @@ AddNew Records
 
 Each group can optionally have an AddNew row where you can provide the values for a new record. Once a new record is entered, the record will be sorted into the existing record set and will be assigned a group's category automatically. The visibility of the AddNewRecord can be controlled through the following two boolean properties.
 
-* &lt;GroupOptions&gt;.ShowAddNewRecordBeforeDetails - adds the AddNew row at the top of a group.
-* &lt;GroupOptions&gt;.ShowAddNewRecordAfterDetails - adds the AddNew row at the bottom of a group.
+* <GroupOptions>.ShowAddNewRecordBeforeDetails - adds the AddNew row at the top of a group.
+* <GroupOptions>.ShowAddNewRecordAfterDetails - adds the AddNew row at the bottom of a group.
 
-{ ![](Grid-Controls_images/Grid-Controls_img311.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img311.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -24084,16 +24084,16 @@ GroupCaptionSection
 
 This is the first section within a group that provides a caption bar above column headers. GroupCaptionRows are unbound rows that are created only to combine records into a group. By default, they display group category and the number of items in that group. The following properties can be used to control CaptionSection display.
 
-* &lt;GroupOptions&gt;.ShowCaption - enables the display of caption section; True by default. 
-* &lt;GroupOptions&gt;.CaptionText - used to get and set caption text.
+* <GroupOptions>.ShowCaption - enables the display of caption section; True by default. 
+* <GroupOptions>.CaptionText - used to get and set caption text.
 
-{ ![](Grid-Controls_images/Grid-Controls_img312.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img312.jpeg)' | markdownify }}
 {:.image }
 
 
 CaptionText Tokens
 
-The following table lists the available token formats for &lt;GroupOptions&gt;.CaptionText.
+The following table lists the available token formats for <GroupOptions>.CaptionText.
 
 _Table 85: Token formats_
 
@@ -24340,17 +24340,17 @@ Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Col
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img313.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img313.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img314.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img314.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser samples:_
 
-* _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Top-Level-Group Options Demo_
-* _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Child-Group Options Demo_
-* _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Nested-Table Group Options Demo_
+* _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Top-Level-Group Options Demo_
+* _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Child-Group Options Demo_
+* _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Nested-Table Group Options Demo_
 Working with Groups
 
 
@@ -24841,21 +24841,21 @@ Me.gridgroupingcontrol.FreezeCaption = True
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img315.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img315.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img316.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img316.png)' | markdownify }}
 {:.image }
 
 
 
 
-To view a sample on Freezing the Caption Row, see &lt;Installed Location&gt;\Syncfusion\EssentialStudio
+To view a sample on Freezing the Caption Row, see <Installed Location>\Syncfusion\EssentialStudio
 
-\&lt;Version&gt;\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Demo
+\<Version>\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Demo
 
 ###### Sorting
 
@@ -24873,7 +24873,7 @@ Through Designer
 
 At design time, data can be sorted by accessing SortedColumns property under TableDescriptor section in the property grid of Grid Grouping control. This will open SortColumnDescriptorCollection Editor. In that Editor, clicking Add button will add existing columns into the collection. Name and SortDirection in the property window of the editor will let you specify your desired field name to sort and the sort order. The image given below illustrates this process.
 
-{ ![](Grid-Controls_images/Grid-Controls_img317.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img317.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -24931,21 +24931,21 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("UnitPrice", ListSortD
 
 Here is a sample output. To indicate sort direction, a sort icon will be displayed in the column headers. When multicolumn sorting is applied, an index number will be displayed in the column headers along with sort icon that facilitates sort order. In the example below, the order of sorting would be ProductName(0), Quantity(1) and then UnitPrice(2). 
 
-{ ![](Grid-Controls_images/Grid-Controls_img318.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img318.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img319.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img319.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Multi Column Sorting Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Multi Column Sorting Demo_
 
 Sorting By Display Member
 
 Grid Grouping control sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foriegn-key reference relation between related tables. 
 
-> { ![](Grid-Controls_images/Grid-Controls_img320.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img320.jpeg)' | markdownify }}
 {:.image }
 _Note: A foreign-key reference relation allows the user to look up values in a related table using an id column in the main table._
 
@@ -25111,15 +25111,15 @@ td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 
 7. Run the application. The following output is generated.
 
-{ ![](Grid-Controls_images/Grid-Controls_img321.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img321.jpeg)' | markdownify }}
 {:.image }
 
 
 In the figure above, CustomerName column is displayed in Foreign Table whereas a column named Customer is located in the Main Table. Customer column holds key values that match the values in a column named CustomerID in the Foreign Table.
 
-> { ![](Grid-Controls_images/Grid-Controls_img322.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img322.jpeg)' | markdownify }}
 {:.image }
-_Note: For more details, refer to the following browser sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sort By Display Member Demo_
+_Note: For more details, refer to the following browser sample: <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sort By Display Member Demo_
 
 Enable or Disable Sorting
 
@@ -25129,7 +25129,7 @@ Properties used to control Sorting
 
 Sorting on the grid data can be controlled by two boolean properties under TableOptions: AllowSortColumns and AllowMultiColumnSort. These properties are used to enable and disable sorting action. They are set to True by default. To prevent sorting against multiple columns, you should set AllowMultiColumnSort to False whereas the AllowSortColumns property should be set to True to allow single column sorting. The screenshot given below highlights these properties in the property window.
 
-{ ![](Grid-Controls_images/Grid-Controls_img323.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img323.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25181,11 +25181,11 @@ End Sub
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img324.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img324.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
 
 ###### Summaries
 
@@ -25213,7 +25213,7 @@ Summaries Through Designer
 
 Summaries can be set at design time itself through property window of the grid grouping control. In the property window, SummaryRows under TableDescriptor node will let you manage summaries for a grouping grid. Accessing SummaryRows property will the GridSummaryRowDescriptor collection editor. The editor contains a list of properties such as Title, SummaryColumn, Appearance, etc. that allows you to define summaries for the desired columns and to control the appearance of these summaries.
 
-{ ![](Grid-Controls_images/Grid-Controls_img325.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img325.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25313,15 +25313,15 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
 
 4. Run the sample. The grid will look like this.
 
-{ ![](Grid-Controls_images/Grid-Controls_img326.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img326.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img327.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img327.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Getting Started_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Getting Started_
 
 Exploring Summaries
 
@@ -25387,7 +25387,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
 
 Here is a sample screenshot displaying the summaries for the columns wins and losses.
 
-{ ![](Grid-Controls_images/Grid-Controls_img328.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img328.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25473,7 +25473,7 @@ Given below is a sample screenshot.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img329.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img329.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25547,15 +25547,15 @@ Me.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(srd)
 
 Here is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img330.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img330.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img331.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img331.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Nested-Table and Group Summary Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Nested-Table and Group Summary Demo_
 
 Summary In Caption
 
@@ -25725,7 +25725,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 
 5. When you run the sample, your grid will look similar to this.
 
-{ ![](Grid-Controls_images/Grid-Controls_img332.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img332.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25733,15 +25733,15 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 
 Here is another screenshot that shows the grouping grid with Caption Summaries disabled.
 
-{ ![](Grid-Controls_images/Grid-Controls_img333.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img333.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img334.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img334.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Caption Summary Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Caption Summary Demo_
 
 Sort By Summary In Caption
 
@@ -25863,15 +25863,15 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd)
 
 9. When you run the sample, you will see the groups sorted against summary values of Freight. Here is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img335.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img335.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img336.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img336.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Sort by Summary Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Sort by Summary Demo_
 
 ###### Filters and Expressions
 
@@ -25923,7 +25923,7 @@ Saves a list of referenced field names used in the expression. Use semicolon as 
 
 You can add any number of expression fields to the table. The following image depicts this.
 
-{ ![](Grid-Controls_images/Grid-Controls_img337.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img337.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25969,15 +25969,15 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Syncfusi
 
 The screen shot given below highlights these expression fields.
 
-{ ![](Grid-Controls_images/Grid-Controls_img338.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img338.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img339.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img339.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Expression Field Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Expression Field Demo_
 
 See Also
 
@@ -26049,7 +26049,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ExpCol2").Appearance.AnyRecordF
 
 Here is a sample screen shot showing two expression fields ExpCol1 and ExpCol2 where ExpCol2 is referencing ExpCol1.
 
-{ ![](Grid-Controls_images/Grid-Controls_img340.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img340.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26063,7 +26063,7 @@ The computations are performed as listed with level one operations done first. A
 
 * *, / : multiplication, division.
 * +, - : addition, subtraction.
-* &lt;, &gt;, =, &lt;=, &gt;=: less than, greater than, equal, less than or equal.
+* <, >, =, <=, >=: less than, greater than, equal, less than or equal.
 * match, like, in, between.
 * or, and.
 
@@ -26135,9 +26135,9 @@ Returns true if both arguments have the same value.</td><td>
 <tr>
 <td>
 Not Equal to</td><td>
-&lt;&gt;</td><td>
+<></td><td>
 Returns true if both arguments do not have same value.</td><td>
-[CustomerID] &lt;&gt; 95</td></tr>
+[CustomerID] <> 95</td></tr>
 <tr>
 <td>
 Match</td><td>
@@ -26181,7 +26181,7 @@ Adding Filters Through Designer
 
 Record Filters can easily be added through the designer. Opening TableDescriptor.RecordFilters property in the property window will display RecordFilterDescriptor Collection Editor that allows you to define record filters. The designer settings shown in the image below will setup a record filter for the field 'wins', to display only records with wins > 20.
 
-{ ![](Grid-Controls_images/Grid-Controls_img341.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img341.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26245,11 +26245,11 @@ Me.gridGroupingControl1.TableDescriptor.RecordFilters.Add(filter)
 
 Given below is a sample screen shot showing the grid filtered with wins > 20.
 
-{ ![](Grid-Controls_images/Grid-Controls_img342.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img342.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img343.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img343.jpeg)' | markdownify }}
 {:.image }
 _Note: Filter Expressions share the same format as in expression fields. For a list of valid expressions, refer to_ List of Filter Expressions.
 
@@ -26435,7 +26435,7 @@ Return pattern
 
 End Function
 
-> { ![](Grid-Controls_images/Grid-Controls_img344.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img344.jpeg)' | markdownify }}
 {:.image }
 _Note: The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx for detailed information._
 
@@ -26459,11 +26459,11 @@ Me.gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img345.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img345.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Getting Started_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Getting Started_
 
 Filter Bar
 
@@ -26535,11 +26535,11 @@ Through Designer
 
 A filter bar can also be added at design time by setting the above properties through property window of the grouping grid. The designer settings shown below adds the filter for columns CompanyName and ContactTitle.
 
-{ ![](Grid-Controls_images/Grid-Controls_img346.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img346.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img347.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img347.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26549,7 +26549,7 @@ Setting AllowFilter property for the column CompanyName
 
 Here is a sample screen shot that shows the filter bar with filters enabled for columns CompanyName and ContactTitle. The records are filtered against filter condition ContactTitle = 'Sales Representative'. The image also shows filter options for the column CompanyName.
 
-{ ![](Grid-Controls_images/Grid-Controls_img348.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img348.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26557,7 +26557,7 @@ Here is a sample screen shot that shows the filter bar with filters enabled for 
 
 While enabling FilterBar, it automatically adds up an option for showing All records and Custom option. Clicking the Custom option will open the RecordFilterDescriptor collection editor wherein you can edit the filter conditions or add any more filters you want. The following screen shot illustrates this process.
 
-{ ![](Grid-Controls_images/Grid-Controls_img349.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img349.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26597,11 +26597,11 @@ Me.gridGroupingControl1.NestedTableGroupOptions.ShowFilterBar = True
 
 Me.gridGroupingControl1.ChildGroupOptions.ShowFilterBar = True
 
-> { ![](Grid-Controls_images/Grid-Controls_img350.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img350.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter Bar Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter Bar Demo_
 
 Dynamic Filter
 
@@ -26653,15 +26653,15 @@ Sample Output
 
 Below image illustrates a sample output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img351.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img351.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img352.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img352.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
 Localization Support for CompareOperatorListBox 
 
@@ -26675,7 +26675,7 @@ Sample Link
 
 A demo of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
 Adding Localization Support for CompareOperatorListBox 
 
@@ -26961,7 +26961,7 @@ End Function
 
 
 
-{ ![C:/Users/Giftline/Desktop/localization in DF.png](Grid-Controls_images/Grid-Controls_img353.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/localization in DF.png](Grid-Controls_images/Grid-Controls_img353.png)' | markdownify }}
 {:.image }
 
 
@@ -27113,7 +27113,7 @@ Next el
 
 Dim cr As GridTableFilterBarCellRenderer = TryCast(Me.gridGroupingControl1.TableControl.CellRenderers("FilterBarCell"), GridTableFilterBarCellRenderer)
 
-If Not cr Is Nothing AndAlso row &lt;&gt; 0 Then
+If Not cr Is Nothing AndAlso row <> 0 Then
 
 Console.WriteLine(cr.GetFilterBarText(Me.gridGroupingControl1.TableModel(row, col)))
 
@@ -27171,15 +27171,15 @@ gGCFilter.UnwireGrid(gridGroupingControl1)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img354.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img354.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img355.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img355.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo_
 
 List of Filter Expressions
 
@@ -27242,8 +27242,8 @@ Filters grid displaying records whose specified column holds value equal to the 
 Filters grid displaying records whose specified column holds value greater than or equal to the mentioned value.</td></tr>
 <tr>
 <td>
-&lt;&gt;</td><td>
-[columnname] &lt;&gt; 'value'</td><td>
+<></td><td>
+[columnname] <> 'value'</td><td>
 Filters grid displaying records whose specified column holds value not equal to the mentioned value.</td></tr>
 <tr>
 <td>
@@ -27306,7 +27306,7 @@ Setting Up Relations Through Designer
 
 After binding an hierarchical dataset to the grouping grid, you could find TableDescriptor.Relations collection populated with values. These values represent the relationship between the parent and child tables. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img356.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img356.png)' | markdownify }}
 {:.image }
 
 
@@ -27378,7 +27378,7 @@ When a Foreign Key relation (a relation for looking up values into a related chi
 
 ForeignKey DropDown showing Edit Button (button with Pencil Icon) clicking which allows you to edit the list
 
-{ ![](Grid-Controls_images/Grid-Controls_img357.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img357.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -27386,7 +27386,7 @@ ForeignKey DropDown showing Edit Button (button with Pencil Icon) clicking which
 
 The image below shows the state after clicking Edit button.
 
-{ ![](Grid-Controls_images/Grid-Controls_img358.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img358.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -27766,15 +27766,15 @@ Me.gridGroupingControl1.DataSource = parentTable
 
 5. When you run the sample, you could find the tables connected with Master-Details relation.
 
-{ ![](Grid-Controls_images/Grid-Controls_img359.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img359.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img360.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img360.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Related Master Details Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Related Master Details Demo_
 
 Foreign Key Reference Relation
 
@@ -28008,7 +28008,7 @@ public class USState
 
 'US States Collection.
 
-&lt;Serializable()&gt;  _
+<Serializable()>  _
 
 Public Class USStatesCollection
 
@@ -28100,7 +28100,7 @@ End Class
 
 'US State Class.
 
-&lt;Serializable()&gt;  _
+<Serializable()>  _
 
 Public Class USState
 
@@ -28126,7 +28126,7 @@ End Sub
 
 
 
-&lt;Browsable(True)&gt;  _
+<Browsable(True)>  _
 
 Public Property Key() As String
 
@@ -28146,7 +28146,7 @@ End Property
 
 
 
-&lt;Browsable(True)&gt;  _
+<Browsable(True)>  _
 
 Public Property Name() As String
 
@@ -28382,15 +28382,15 @@ mainTd.Name = "ForeignKeyReference"
 
 5. Here is a sample output that displays a look up child list for data column State with value Georgia.
 
-{ ![](Grid-Controls_images/Grid-Controls_img361.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img361.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img362.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img362.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo_
 
 GridForeignKeyHelper
 
@@ -28724,15 +28724,15 @@ Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 
 5. Here is a sample output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img363.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img363.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img364.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img364.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Employee Territory Order Demo\_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Employee Territory Order Demo\_
 
 ListItem Reference Relation
 
@@ -28972,7 +28972,7 @@ public class Country
 
 'Countries Collection
 
-&lt;Serializable()&gt;  _
+<Serializable()>  _
 
 Public Class CountriesCollection
 
@@ -29072,7 +29072,7 @@ End Class
 
 'Country Class.
 
-&lt;Serializable()&gt;  _
+<Serializable()>  _
 
 Public Class Country
 
@@ -29096,7 +29096,7 @@ Me._name = strName
 
 End Sub    
 
-&lt;Browsable(True)&gt;  _
+<Browsable(True)>  _
 
 Public Property CountryCode() As String
 
@@ -29116,7 +29116,7 @@ End Property
 
 
 
-&lt;Browsable(True)&gt;  _
+<Browsable(True)>  _
 
 Public Property Name() As String
 
@@ -29352,15 +29352,15 @@ mainTd.Name = “ListItemReference”
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img365.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img365.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img366.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img366.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\List Item Reference Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\List Item Reference Demo_
 
 Uniform Child List Relation
 
@@ -29530,7 +29530,7 @@ Public Class ChildObj : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If f1 &lt;&gt; value Then
+            If f1 <> value Then
 
                 f1 = value
 
@@ -29556,7 +29556,7 @@ Public Class ChildObj : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If f2 &lt;&gt; value Then
+            If f2 <> value Then
 
                 f2 = value
 
@@ -29582,7 +29582,7 @@ Public Class ChildObj : Implements INotifyPropertyChanged
 
         Set(ByVal value As Integer)
 
-            If f3 &lt;&gt; value Then
+            If f3 <> value Then
 
                 f3 = value
 
@@ -29796,7 +29796,7 @@ Public Class ParentObj : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If f1 &lt;&gt; value Then
+            If f1 <> value Then
 
                 f1 = value
 
@@ -29820,7 +29820,7 @@ Public Class ParentObj : Implements INotifyPropertyChanged
 
         Set(ByVal value As String)
 
-            If f2 &lt;&gt; value Then
+            If f2 <> value Then
 
                 f2 = value
 
@@ -29844,7 +29844,7 @@ Public Class ParentObj : Implements INotifyPropertyChanged
 
         Set(ByVal value As Integer)
 
-            If f3 &lt;&gt; value Then
+            If f3 <> value Then
 
                 f3 = value
 
@@ -30040,15 +30040,15 @@ chiltTable.TableDescriptor.GroupedColumns.Add("Field1")
 
 6. Here is a sample output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img367.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img367.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img368.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img368.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Uniform Child List Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Uniform Child List Demo_
 
 Working with Relations
 
@@ -30375,7 +30375,7 @@ Next col
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img369.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img369.png)' | markdownify }}
 {:.image }
 
 
@@ -30383,7 +30383,7 @@ The following sample illustrates Paging support in the GridGrouping control for 
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img370.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img370.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following sample link:_
 
@@ -30421,13 +30421,13 @@ This property allows you to control the appearance of the grouping grid at desig
 
 Appearance contains a list of GridStyleInfo properties as seen in the following graphic. GridStyleInfo object contains many properties such as BackColor, Font and CellType, which defines the look and behavior of a grid cell. Each of these properties identifies a particular set of cells that make up Grid Grouping control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img371.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img371.jpeg)' | markdownify }}
 {:.image }
 
 
 To understand exactly what is going on here, let us consider three of these GridStyleInfo properties: AnyCell, AnyRecordFieldCell and AnyAlternateRecordFieldCell. Say we set AnyCell.BackColor = Color.LightBlue. This will color any grid cell light blue.
 
-> { ![](Grid-Controls_images/Grid-Controls_img372.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img372.jpeg)' | markdownify }}
 {:.image }
 _Note: If you are using a Themed Operating system like Windows XP, turn the GridGroupingControl.ThemesEnabled property off so that the theme coloring does not affect things like header cell buttons. Otherwise, this will interfere with illustrating the concepts we are trying to communicate in this section._
 
@@ -30435,7 +30435,7 @@ Next, if we set AnyRecordFieldCell.BackColor = Color.Azure, we will see the colo
 
 There is an inheritance hierarchy that is associated with the Appearance properties. The general rule is that, if present, the more specific property takes precedence over the less specific property. This means thatAnyCell.BackColor is overridden by setting AnyRecordFieldCell.BackColor, which is again overridden by setting even more specific AnyAlternatingRecordFieldCell.BackColor. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img373.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img373.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30445,7 +30445,7 @@ The simplest way to check the exact cells affected by setting one of these prope
 
 When using Preview tool at design-time, there is a cell tip that is displayed over each cell that gives information about that cell. In particular, the first line of the tip will give the exact Appearance property that this cell is based on. In addition, it will also list the Appearance properties that the cell inherits. Here is a graphic showing some cell tip samples.
 
-{ ![](Grid-Controls_images/Grid-Controls_img374.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img374.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30453,7 +30453,7 @@ When using Preview tool at design-time, there is a cell tip that is displayed ov
 
 > 
 
-> { ![](Grid-Controls_images/Grid-Controls_img375.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img375.jpeg)' | markdownify }}
 {:.image }
 _Note: When using Preview, make sure that you set ThemesEnabled to False, if you want to see the effect of setting the property on a header cell or a button type cell. If you do not, then the theme appearance will supersede the appearance properties you set here._ 
 
@@ -30827,15 +30827,15 @@ gtd.Appearance.GroupCaptionCell.Borders.Bottom = New GridBorder(GridBorderStyle.
 
 Here is a sample screenshot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img376.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img376.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img377.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img377.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer To the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting_
 
 Styles At Group Level
 
@@ -30887,15 +30887,15 @@ gridGroupingControl1.Appearance.GroupHeaderSectionCell.Interior = New BrushInfo(
 
 Here is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img378.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img378.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img379.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img379.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Group Style Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Group Style Demo_
 
 ColumnStyles
 
@@ -30903,7 +30903,7 @@ Grid Grouping control allows you to do Column-Based formatting. With this featur
 
 ColumnFormatting can be done at design time. Once the data source is set, select TableDescriptor.Columns property in the property window of the grid grouping control. This will open the GridColumnDescriptor collection editor that is populated with the columns in the datasource. You can modify the appearance of the desired column by setting Appearance property of that column in this editor. The following picture shows this process.
 
-{ ![](Grid-Controls_images/Grid-Controls_img380.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img380.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30987,15 +30987,15 @@ desc1.Appearance.RecordFieldCell.Interior = New BrushInfo(Color.FromArgb(252, 17
 
 Given below is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img381.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img381.jpeg)' | markdownify }}
 {:.image }
 
 
-> _\_{ ![](Grid-Controls_images/Grid-Controls_img382.jpeg) | markdownify }
+> _\_{{ '![](Grid-Controls_images/Grid-Controls_img382.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Column Style Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Column Style Demo_
 
 Render Images in Header Cells
 
@@ -31005,7 +31005,7 @@ Use Case Scenarios
 
 In a payroll application, images in the header cells help the user understand the nature of data type in which the column is supposed to be bound.
 
-{ ![](Grid-Controls_images/Grid-Controls_img383.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img383.png)' | markdownify }}
 {:.image }
 
 
@@ -31037,7 +31037,7 @@ Sample Link
 
 Find a sample in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Demo_
 
 Adding Images at Header Cells to an Application 
 
@@ -31073,7 +31073,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns(Name/Index).HeaderImageAlignment
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img384.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img384.png)' | markdownify }}
 {:.image }
 
 
@@ -31100,7 +31100,7 @@ RETURN TYPE </th><th>
 REFERENCE LINKS </th></tr>
 <tr>
 <th>
-{{ '_Grouping_' | markdownify }}GridFormatCellDialog ()</th><th>
+{{{ ''_Grouping_'' | markdownify }}}GridFormatCellDialog ()</th><th>
 Uses to wire the Grid with FormatCell Dialog</th><th>
 GridGoupingControl </th><th>
 Method (Constructor)</th><th>
@@ -31111,7 +31111,7 @@ Sample Link
 
 A demo of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\_
 
 Adding GridFormatCellDialog To GridGroupingControl 
 
@@ -31139,7 +31139,7 @@ Dim Dialog As GroupingGridFormatCellDialog = New GroupingGridFormatCellDialog(Me
 
 Dialog.ShowDialog()
 
-{ ![D:/Task Doc/Marketing Content/10.4/UI/WF/Grid/sshot-1.png](Grid-Controls_images/Grid-Controls_img385.png) | markdownify }
+{{ '![D:/Task Doc/Marketing Content/10.4/UI/WF/Grid/sshot-1.png](Grid-Controls_images/Grid-Controls_img385.png)' | markdownify }}
 {:.image }
 
 
@@ -31149,7 +31149,7 @@ Grid Grouping control has in-built support for Conditional Formatting. This feat
 
 Conditional Formatting can be specified through the designer itself by accessing the TableDescriptor.ConditionalFormats property. This will open GridConditionalFormatDescriptor editor wherein you can add as many formatters as you want. For each such formatter, you need to specify the filter criteria either by adding RecordFilters or by an Expression. The below property editor illustrates this process.
 
-{ ![](Grid-Controls_images/Grid-Controls_img386.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img386.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31259,15 +31259,15 @@ Given below is a sample screenshot.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img387.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img387.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img388.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img388.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Conditional Formatting Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Conditional Formatting Demo_
 
 ###### Dynamic Formatting
 
@@ -31409,17 +31409,17 @@ End Sub
 
 Given below is a sample screen shot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img389.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img389.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img390.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img390.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
 ###### Merge Cells Dynamically
 
@@ -31495,7 +31495,7 @@ Applying BaseStyles
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img391.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img391.png)' | markdownify }}
 {:.image }
 
 
@@ -31505,13 +31505,13 @@ Applying BaseStyles
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img392.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img392.png)' | markdownify }}
 {:.image }
 
 
 3. Here is a sample screenshot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img393.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img393.png)' | markdownify }}
 {:.image }
 
 
@@ -31746,7 +31746,7 @@ End Sub
 
 2. Here is a sample output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img394.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img394.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31774,7 +31774,7 @@ Me.gridGroupingControl1.ThemesEnabled = True
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img395.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img395.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31804,7 +31804,7 @@ this.gridGroupingControl1.TableOptions.GridVisualStyles = GridVisualStyles.Offic
 
 Me.gridGroupingControl1.TableOptions.GridVisualStyles = GridVisualStyles.Office2007Blue
 
-{ ![](Grid-Controls_images/Grid-Controls_img396.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img396.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31814,19 +31814,19 @@ Me.gridGroupingControl1.TableOptions.GridVisualStyles = GridVisualStyles.Office2
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img397.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img397.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img398.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img398.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img399.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img399.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31834,7 +31834,7 @@ Me.gridGroupingControl1.TableOptions.GridVisualStyles = GridVisualStyles.Office2
 
 Since visual styles also affect how the cells behave, cell controls are painted with a different gradient when users interact with them either by clicking or by hovering the mouse over them. Below is the image that exposes these cases.
 
-{ ![](Grid-Controls_images/Grid-Controls_img400.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img400.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31862,7 +31862,7 @@ GridSkins.ApplySkin(Me.gridControl1.Model, Skins.Vista)
 
 The image below illustrates a sample output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img401.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img401.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31870,7 +31870,7 @@ The image below illustrates a sample output.
 
 TableOptions lets you set various properties that will affect the look and behavior of a grouping grid across all groups and child groups. Properties such as default height of a Caption Row, GroupHeader and Footer, PreviewRow, or whether TreeLines are visible between PlusMinus cells are controlled by this property. Here is a screen shot that shows the list of properties you can set under TableOptions.
 
-{ ![](Grid-Controls_images/Grid-Controls_img402.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img402.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32028,15 +32028,15 @@ Controls the style of the line that is used to draw the tree lines.</td></tr>
 </table>
 In the Preview, try various property settings to see their effect on display. Below is a sample of what you might see. The properties changed here are CaptionRowHeight, ColumnHeaderRowHeight, GridLineBorder, GridVisualStyles, ListBoxSelectionMode, SelectionBackColor, SelectionTextColor and ShowTreeLines.
 
-{ ![](Grid-Controls_images/Grid-Controls_img403.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img403.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img404.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img404.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Table Options Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Table Options Demo_
 
 ##### Grid Layout
 
@@ -32072,7 +32072,7 @@ Creating Stacked Headers is a two-step process.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img405.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img405.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32108,7 +32108,7 @@ Controls the appearance of the StackedHeaderCell.</td></tr>
 
 2. The second step is to enable the display of StackedHeaders for the given table and group by setting ShowStackedHeaders property to true.
 
-{ ![](Grid-Controls_images/Grid-Controls_img406.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img406.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32116,19 +32116,19 @@ Output
 
 Here are the screen shots showing Grouping Grid with two Stacked Header Rows. It illustrates the effect of doing Drag and Drop on StackedHeaders. Notice that the order of the Visible columns gets affected automatically while rearranging StackedHeaders.
 
-{ ![](Grid-Controls_images/Grid-Controls_img407.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img407.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img408.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img408.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img409.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img409.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32138,7 +32138,7 @@ StackedHeaders for NestedGroups
 
 Stacked Headers can be enabled for Child Group by setting ChildGroupOptions.ShowStackedHeaders to true. The grouping grid in the image below displays stacked headers for nested groups.
 
-{ ![](Grid-Controls_images/Grid-Controls_img410.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img410.png)' | markdownify }}
 {:.image }
 
 
@@ -32150,7 +32150,7 @@ Appearance of StackedHeaders can be controlled in a couple of ways. One way to a
 
 Here is the property window with GridStackedHeaderRowDescriptor Collection Editor showing the appearance settings of Stacked Headers defined.
 
-{ ![](Grid-Controls_images/Grid-Controls_img411.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img411.png)' | markdownify }}
 {:.image }
 
 
@@ -32160,7 +32160,7 @@ Output
 
 Here is the effect of the above settings.
 
-{ ![](Grid-Controls_images/Grid-Controls_img412.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img412.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32216,11 +32216,11 @@ Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd)
 
 Me.gridGroupingControl1.Appearance.StackedHeaderCell.BackColor = Color.Teal
 
-> { ![](Grid-Controls_images/Grid-Controls_img413.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img413.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Stacked Headers Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Stacked Headers Demo_
 
 ###### MultiRow Record
 
@@ -32342,7 +32342,7 @@ Me.gridGroupingControl1.TableDescriptor.ColumnSets.Add(csd)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img414.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img414.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32350,15 +32350,15 @@ Through Designer
 
 To create ColumnSets that defines ColumnSpans for a grid, select TableDescriptor.ColumnSets property in the property window. This will open GridColumnSetDescriptor Collection Editor that will let you specify the columns to span and the range for each of the columns.
 
-{ ![](Grid-Controls_images/Grid-Controls_img415.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img415.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img416.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img416.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Serialization\Employee View Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Serialization\Employee View Demo_
 
 ###### Grid Field Chooser
 
@@ -32386,13 +32386,13 @@ Dim fchooser As FieldChooser = New FieldChooser(Me.gridGroupingControl1)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img417.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img417.jpeg)' | markdownify }}
 {:.image }
 
 
 For more details, refer the following sample:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Field Chooser Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Field Chooser Demo_
 
 Field Chooser Update on Close support
 
@@ -32638,7 +32638,7 @@ RETURN TYPE </th></tr>
 <th>
 FieldChooser</th><th>
 Used to wire the GridGroupin gControl  with the field chooser. </th><th>
-(&lt;GridGroupingControl&gt;)</th><th>
+(<GridGroupingControl>)</th><th>
 Constructor</th><th>
 class</th></tr>
 </table>
@@ -32646,7 +32646,7 @@ Sample Link
 
 A demo of this feature is available in the following location: 
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Stacked Headers Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Stacked Headers Demo_
 
 Adding Field Chooser Stacked Headers In GridGroupingControl
 
@@ -32688,7 +32688,7 @@ When the code runs, the entire grid will open.
 
 2.  Right click on a column header and select Field Chooser menu item to view Field Chooser dialog.
 
-{ ![](Grid-Controls_images/Grid-Controls_img418.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img418.png)' | markdownify }}
 {:.image }
 
 
@@ -32696,13 +32696,13 @@ When the code runs, the entire grid will open.
 
 3. This dialog will list all the column names with check boxes adjacent to them.
 
-{ ![](Grid-Controls_images/Grid-Controls_img419.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img419.png)' | markdownify }}
 {:.image }
 
 
 9. Select the checkboxes of the columns to be displayed in the grid. The grid will have only the columns that are selected in the Field Chooser dialog.
 
-{ ![D:/Task Doc/Marketing Content/10.4/UI/WF/Grid/Stacked Header.png](Grid-Controls_images/Grid-Controls_img420.png) | markdownify }
+{{ '![D:/Task Doc/Marketing Content/10.4/UI/WF/Grid/Stacked Header.png](Grid-Controls_images/Grid-Controls_img420.png)' | markdownify }}
 {:.image }
 
 
@@ -32796,7 +32796,7 @@ Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBl
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img421.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img421.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32826,15 +32826,15 @@ Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img422.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img422.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img423.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img423.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Table Options Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Table Options Demo_
 
 ###### Record Based Selection
 
@@ -32868,7 +32868,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img424.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img424.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32896,7 +32896,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiS
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img425.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img425.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32924,7 +32924,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiE
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img426.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img426.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32970,7 +32970,7 @@ Me.gridGroupingControl1.TableOptions.SelectionTextColor = Color.Green
 
 Here is the effect of the above settings.
 
-{ ![](Grid-Controls_images/Grid-Controls_img427.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img427.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32998,7 +32998,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img428.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img428.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33026,7 +33026,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img429.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img429.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33054,7 +33054,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img430.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img430.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33070,7 +33070,7 @@ When ListBoxSelection mode is set, you can control the appearance and behavior o
 
 Do not select a current cell in the current row.
 
-{ ![](Grid-Controls_images/Grid-Controls_img431.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img431.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33082,7 +33082,7 @@ When a current cell is in current row, it is drawn with the original cell backgr
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img432.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img432.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33094,7 +33094,7 @@ When a current cell is in current row, it is drawn with the same color used for 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img433.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img433.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33104,15 +33104,15 @@ When a current cell is in current row, it is drawn with the same color used for 
 
 Used only with SelectionMode.MultiExtended. Moves current cell when user extends the selection with mouse. The image below illustrates this mode well. Here, the selection started with the cell {R2:C1} and has extended up to Row4 through a mouse drag that made the current cell to shift to the cell {R4:C1} by following the mouse.
 
-{ ![](Grid-Controls_images/Grid-Controls_img434.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img434.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img435.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img435.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping Grid Options\Table Options Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping Grid Options\Table Options Demo_
 
 ###### Focused Selection
 
@@ -33628,7 +33628,7 @@ Here is a sample output that focuses the current row and column.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img436.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img436.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33684,15 +33684,15 @@ t.SelectedRecords.Add(r3)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img437.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img437.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img438.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img438.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
 
 RecordSelection with NestedTables
 
@@ -33768,7 +33768,7 @@ Me.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or2)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img439.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img439.png)' | markdownify }}
 {:.image }
 
 
@@ -33882,11 +33882,11 @@ this.gridGroupingControl1.Table.SelectedRecords.Clear();
 
 Me.gridGroupingControl1.Table.SelectedRecords.Clear()
 
-> { ![](Grid-Controls_images/Grid-Controls_img440.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img440.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
 
 ###### Selected Ranges Collection
 
@@ -33982,7 +33982,7 @@ Next range
 
 3. Here is a sample screenshot.
 
-{ ![](Grid-Controls_images/Grid-Controls_img441.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img441.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -34251,27 +34251,27 @@ End Sub
 
 6. While running the sample, click Serialize button and save the grid schema into an XML file. Then click Reset button to switch the grid to its default state. It removes all the appearance settings done in the first step. You can also make changes in the TableDescriptor of the grid manually like rearranging columns through drag and drop so that after reloading the grid schema, you would notice that the entire grid schema has been serialized. Reloading will transform the grouping grid back to the state before serialization.
 
-{ ![](Grid-Controls_images/Grid-Controls_img442.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img442.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img443.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img443.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img444.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img444.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img445.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img445.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser samples:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Serialization\XML Serialization Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Serialization\XML Serialization Demo_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Serialization\Employee View Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Serialization\Employee View Demo_
 
 
 
@@ -34288,7 +34288,7 @@ Through Verbs
 
 The verbs "Save Look and Feel" and "Choose Look and Feel" that are found at the bottom of the property grid of Grid Grouping control will allow you to easily accomplish this task. Use the Save verb to save Look and Feel properties of the current Grid Grouping control. Then use Choose verb to apply the saved settings to a different control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img446.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img446.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35138,19 +35138,19 @@ converter.GroupingGridToExcel(Me.gridGroupingControl1, "ExcelGrid.xls", Converte
 
 Here are screen shots showing grouping grid and the exported grid in Excel file.
 
-{ ![](Grid-Controls_images/Grid-Controls_img447.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img447.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img448.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img448.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img449.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img449.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo_
 
 ###### Word Converter
 
@@ -35216,19 +35216,19 @@ Sample Output
 
 The images below depict the conversion of grid content to a Word file.
 
-{ ![](Grid-Controls_images/Grid-Controls_img450.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img450.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img451.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img451.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img452.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img452.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Word Converter Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Word Converter Demo_
 
 ###### PDF Converter
 
@@ -35279,11 +35279,11 @@ pdfConvertor.ExportToPdf("Sample.pdf", Me.gridGroupingControl1.TableControl)
 
 System.Diagnostics.Process.Start("Sample.pdf")
 
-{ ![](Grid-Controls_images/Grid-Controls_img453.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img453.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img454.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img454.png)' | markdownify }}
 {:.image }
 
 
@@ -35295,17 +35295,17 @@ This section provides information on the realtime applications of Essential Grou
 
 The user can simulate Portfolio Manager application by using Essential Grid. It allows you to track all your investments and assets in stocks and mutual funds. It provides you with an insight on current market pricing that would help to plan your future investments.
 
-{ ![](Grid-Controls_images/Grid-Controls_img455.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img455.png)' | markdownify }}
 {:.image }
 
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img456.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img456.jpeg)' | markdownify }}
 {:.image }
  _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Product Showcase\Portfolio Grid Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Product Showcase\Portfolio Grid Demo_
 
 
 
@@ -35318,7 +35318,7 @@ Dashboard : This is the place where you can track the status of all your investm
 * Industry/Sector View - Provides a consolidated view of your stock holdings. 
 * Stock Exchange View - Displays details with respect to individual stock exchange. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img457.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img457.png)' | markdownify }}
 {:.image }
 
 
@@ -35326,7 +35326,7 @@ Dashboard : This is the place where you can track the status of all your investm
 
 Contribution Analyzer : This module illustrates the contributions of different stocks for every portfolio account in a graphical representation by using chart controls. Click the desired portfolio account on the left side chart to view its contributions.
 
-{ ![](Grid-Controls_images/Grid-Controls_img458.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img458.png)' | markdownify }}
 {:.image }
 
 
@@ -35336,7 +35336,7 @@ Performance Analyzer : This module does a performance analysis and displays the 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img459.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img459.png)' | markdownify }}
 {:.image }
 
 
@@ -35344,15 +35344,15 @@ Performance Analyzer : This module does a performance analysis and displays the 
 
 You can implement Microsoft Outlook 2007-like interface by using Essential Grid Grouping control and other components from Essential Studio. Essential Grid has been extended to support all the Office 2007 themes (Blue, Black, and Silver) with the look and feel of Outlook 2007.
 
-{ ![](Grid-Controls_images/Grid-Controls_img460.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img460.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img461.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img461.jpeg)' | markdownify }}
 {:.image }
  _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Product Showcase\Outlook Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Product Showcase\Outlook Demo_
 
 Example: Following are the major features of the sample.
 
@@ -35373,7 +35373,7 @@ Grid Grouping control has strong designer support. You can control all aspects o
 
 Clicking Preview and Edit verb will allow you to view the Grid Grouping control, populated with data along with companion property grid as seen in the picture below. It also displays help description for the properties that are being selected. You can use the property grid to change Grid Grouping control's properties and see the effect immediately on the populated control. When you close the preview, you will have the option of saving any changed properties to the property grid in the designer. We will use this Preview and Edit support to see the effects of setting various TableOption properties.
 
-{ ![](Grid-Controls_images/Grid-Controls_img462.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img462.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35385,13 +35385,13 @@ Grouping
 
 Designer provides full drag and drop capability so that you can group the records by dragging a column header and dropping it into GroupDropArea, provided the GroupDropArea is enabled by setting ShowGroupDropArea to true. Likewise you can group data against any number of columns across the tables when multiple nested tables are used.
 
-{ ![](Grid-Controls_images/Grid-Controls_img463.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img463.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img464.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img464.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35399,7 +35399,7 @@ Designer provides full drag and drop capability so that you can group the record
 
 You can also use TableDescriptor.GroupedColumns property to add groups where you need to specify the column names based on which the table has to be grouped.
 
-{ ![](Grid-Controls_images/Grid-Controls_img465.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img465.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35409,13 +35409,13 @@ Sorting
 
 Sorting can be done on the table data by simply clicking the desired column header by which the values need to be sorted. Once sorting is done, the grouping grid displays ListSortIcon in the respective column header to indicate Sort Direction. You could also make use of the TableDescriptor.SortedColumns property to sort table data wherein you need to provide the column to be sorted and sort order.
 
-{ ![](Grid-Controls_images/Grid-Controls_img466.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img466.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img467.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img467.png)' | markdownify }}
 {:.image }
 
 
@@ -35427,13 +35427,13 @@ Summaries can be added in the designer itself by accessing TableDescriptor.Summa
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img468.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img468.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img469.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img469.png)' | markdownify }}
 {:.image }
 
 
@@ -35445,13 +35445,13 @@ Record Filters
 
 By using the TableDescriptor.RecordFilters property, you can add row filters for your grid table. Once you have specified filter criteria and column name whose values have to be checked against the given criteria, the grouping grid will display only the subset of records that satisfies the given criteria.
 
-{ ![](Grid-Controls_images/Grid-Controls_img470.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img470.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img471.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img471.png)' | markdownify }}
 {:.image }
 
 
@@ -35463,17 +35463,17 @@ By using the TableDescriptor.RecordFilters property, you can add row filters for
 
 Grid Grouping control provides AutoFilterRow, which can be enabled by setting ShowFilterBar property to true. Once that is done, you must enable AllowFilter property for the desired columns to enable filtering on those columns.
 
-{ ![](Grid-Controls_images/Grid-Controls_img472.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img472.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img473.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img473.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img474.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img474.png)' | markdownify }}
 {:.image }
 
 
@@ -35483,13 +35483,13 @@ Expression Fields
 
 When there is a need to display calculated values based on the values on other fields in the same record, ExpressionFields would be the right choice to use. ExpressionFields can be created by using TableDescriptor.ExpressionFields property. This will open an editor wherein you can add any number of expression fields each with its own expression used to calculate the results.
 
-{ ![](Grid-Controls_images/Grid-Controls_img475.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img475.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img476.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img476.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35501,7 +35501,7 @@ Relations
 
 It is possible to specify the relation to be used across the tables in case multiple tables are used. It can be done by accessing TableDescriptor.Relations property wherein you can specify the relation type, name of the child table, relation keys consisting of the keys in parent and child tables and other information necessary to setup the relation.
 
-{ ![](Grid-Controls_images/Grid-Controls_img477.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img477.png)' | markdownify }}
 {:.image }
 
 
@@ -35511,7 +35511,7 @@ Appearance
 
 The appearance of every grid element can be customized by accessing Appearance property. It allows you to set GridStyleInfo properties like cell type, value, back color, font, etc. for grid cells. It holds a sub tree of different grid elements, each with its own set of formatting properties. For instance, when you want to set appearance for alternate record field cell, you can make use of Appearance.AlternateRecordFieldCell property; if you want to customize summary cells, you will have to use Appearance.SummaryFieldCell or related property.
 
-{ ![](Grid-Controls_images/Grid-Controls_img478.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img478.png)' | markdownify }}
 {:.image }
 
 
@@ -35521,7 +35521,7 @@ Skins
 
 You can change the appearance and behavior of every grid element to provide grid with a rich look and feel by setting skins. Grouping Grid currently offers five such skins: Office2007Blue, Office2007Silver, Office2007Black, Office2003 and SystemTheme(Default XP theme). To set a skin, GridVisualStyles property which is under TableOptions section is used. It lists possible skin options in a drop down, which will make the entire grid redrawn with the chosen style.
 
-{ ![](Grid-Controls_images/Grid-Controls_img479.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img479.png)' | markdownify }}
 {:.image }
 
 
@@ -35587,7 +35587,7 @@ Private Me.gridGroupingControl1.ShowNavigationBarToolTips = True
 
 Through Designer
 
-{ ![](Grid-Controls_images/Grid-Controls_img480.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img480.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35595,7 +35595,7 @@ Through Designer
 
 Output
 
-{ ![](Grid-Controls_images/Grid-Controls_img481.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img481.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35685,21 +35685,21 @@ End If
 
 Given below are sample screen shots.
 
-{ ![](Grid-Controls_images/Grid-Controls_img482.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img482.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img483.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img483.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img484.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img484.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Printing\Hierarchical Grid Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Printing\Hierarchical Grid Demo_
 
 
 
@@ -35783,15 +35783,15 @@ AddHandler pd.DrawGridPrintFooter, AddressOf pd_DrawGridPrintFooter
 
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img485.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img485.jpeg)' | markdownify }}
 {:.image }
  _Note: For more details, refer to the following browser sample:_
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Printing\Hierarchical Grid Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Printing\Hierarchical Grid Demo_
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img486.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img486.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -36323,7 +36323,7 @@ Given below is a sample screen shot.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img487.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img487.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -36661,11 +36661,11 @@ End Sub
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img488.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img488.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img489.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img489.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -37111,7 +37111,7 @@ Loop
 
 2. Add another form, say FilterDialog to the project. This form will accept two filter conditions combined by a logical operator. Add a label to display the name of the filter column, two comboboxes to display the compare operator choices and two text boxes to accept the compare values, two radio buttons to determine logical combination of the filter conditions, and two buttons 'Ok' to pass the filter string to the parent grid and 'Cancel' to cancel the filter action. Here is a sample image of the form's designer.
 
-{ ![](Grid-Controls_images/Grid-Controls_img490.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img490.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -37191,7 +37191,7 @@ private string GetFilter(int index, string text)
 
         case 1:
 
-        s = " &lt;&gt; '" + text + "'";
+        s = " <> '" + text + "'";
 
         break;
 
@@ -37305,7 +37305,7 @@ s = " = '" + text + "'"
 
 Case 1 
 
-s = " &lt;&gt; '" + text + "'"
+s = " <> '" + text + "'"
 
 Case 2 
 
@@ -37599,13 +37599,13 @@ Me.gridGroupingControl1.Appearance.FilterBarCell.CellType = "MyFilterCell"
 
 6. When you run the sample, click the filter drop down and then select custom option to show up our filter dialog. This is shown in the screenshots below.
 
-{ ![](Grid-Controls_images/Grid-Controls_img491.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img491.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img492.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img492.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -37649,7 +37649,7 @@ The following code illustrates how to optimize the filter.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img493.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img493.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -37659,7 +37659,7 @@ You can filter StackedColumnHeader by choosing any one of the columns from the c
 
 The following screenshot displays the Filter Dialogue.
 
-{ ![](Grid-Controls_images/Grid-Controls_img494.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img494.png)' | markdownify }}
 {:.image }
 
 
@@ -37743,7 +37743,7 @@ gridStackedHeaderRowDescriptor1.Headers.AddRange(New Syncfusion.Windows.Forms.Gr
 
 
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image25_1.png](Grid-Controls_images/Grid-Controls_img495.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image25_1.png](Grid-Controls_images/Grid-Controls_img495.png)' | markdownify }}
 {:.image }
 _Note: The highlighted column name is the column based on which the corresponding stacked header gets filtered. By default, it takes the first column in stacked column collection._
 
@@ -38659,7 +38659,7 @@ Private Sub gridGroupingControl1_RecordValueChanged(ByVal sender As Object, ByVa
 
     Dim r As Record = e.Record
 
-    If e.Column &lt;&gt; "Column2" Then
+    If e.Column <> "Column2" Then
 
         r.SetValue("Column2", "")
 
@@ -39952,14 +39952,14 @@ TYPE </th><th>
 REFERENCE LINKS </th></tr>
 <tr>
 <th>
-{{ '_FilterBarSelectedItemChanging_' | markdownify }}</th><th>
+{{{ ''_FilterBarSelectedItemChanging_'' | markdownify }}}</th><th>
 This event will be triggered while filtering a column.  This can be canceled. Selected index or selected text can be modified as required.  </th><th>
  public FilterBarSelectedItemChangingEventArgs( GridColumnDescriptor column, int selectedIndex, string selectedText)</th><th>
 Event</th><th>
 NA </th></tr>
 <tr>
 <th>
-{{ '_FilterBarSelectedItemChanged_' | markdownify }}</th><th>
+{{{ ''_FilterBarSelectedItemChanged_'' | markdownify }}}</th><th>
 This event will be triggered after a column is filtered.    Selected column, selected index, and selected text can be retrieved with this event.</th><th>
         public FilterBarSelectedItemChangedEventArgs(GridColumnDescriptor column, int selectedIndex, string selectedText)</th><th>
 Event </th><th>
@@ -40089,7 +40089,7 @@ When the code runs, deleting manually selected record is bound to Delete All[Sel
 
 The following code illustrates deleting Specified records.
 
-> { ![](Grid-Controls_images/Grid-Controls_img496.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img496.jpeg)' | markdownify }}
 {:.image }
 _Note: Parameter – Specify the collection of records that needs to be deleted._
 
@@ -40105,7 +40105,7 @@ _Note: Parameter – Specify the collection of records that needs to be deleted.
 
 When the code runs, deleting specified records are bound to Delete Selected Records button. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img497.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img497.png)' | markdownify }}
 {:.image }
 
 
@@ -40130,7 +40130,7 @@ this.gridGroupingControl1.Table.Records.SelectAll();
 
 When the code runs, selecting all record is bound to Select All button.
 
-{ ![](Grid-Controls_images/Grid-Controls_img498.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img498.png)' | markdownify }}
 {:.image }
 
 
@@ -40140,7 +40140,7 @@ Selecting Specified Records
 
 The following code illustrates how to select specified records.
 
-> { ![](Grid-Controls_images/Grid-Controls_img499.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img499.jpeg)' | markdownify }}
 {:.image }
 _Note: Method Name:  AddRange   Parameter: Specify the Record collection to be selected_
 
@@ -40152,7 +40152,7 @@ this.gridGroupingControl1.Table.SelectedRecords.AddRange(rec);
 
 When the code runs, selecting specified records is bound to Select Specified Records button. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img500.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img500.png)' | markdownify }}
 {:.image }
 
 
@@ -40192,7 +40192,7 @@ converter.ExportCaptionSummary = true;
 
 
 
-{ ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/exportsummarycaption.png](Grid-Controls_images/Grid-Controls_img501.png) | markdownify }
+{{ '![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/exportsummarycaption.png](Grid-Controls_images/Grid-Controls_img501.png)' | markdownify }}
 {:.image }
 
 
@@ -40272,7 +40272,7 @@ Me.gridGroupingControl1.TableDescriptor.Search("Duke", list)
 
 DataBound Grid has been designed to be used as a grid that is bound to a data source such as an ADO.NET dataset or data table. It can be used with either flat or hierarchical data sources and it does not include grouping support. No data value is stored in GridDataBoundGrid object. DataBound Grid is more column-centric than the Grid control as it is data bound. Its GridBoundColumns collection property will maintain an array of GridBoundColumn objects that will hold information like HeaderText, MappingName and GridStyleInfo object that holds the style properties for the column.
 
-{ ![](Grid-Controls_images/Grid-Controls_img502.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img502.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40286,7 +40286,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 1. Drag GridBoundDataGrid object from your toolbox onto the form.
 
-{ ![](Grid-Controls_images/Grid-Controls_img503.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img503.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40297,7 +40297,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img504.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img504.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40305,13 +40305,13 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 4. In the Data Source Configuration wizard, select Database and click Next.
 
-{ ![](Grid-Controls_images/Grid-Controls_img505.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img505.jpeg)' | markdownify }}
 {:.image }
 
 
-5. Select appropriate data connection and click Next. This example uses Northwind database available in: _&lt;Sample Install Location&gt;\Syncfusion\EssentialStudio\x.x.x.x\Common\Data_
+5. Select appropriate data connection and click Next. This example uses Northwind database available in: _<Sample Install Location>\Syncfusion\EssentialStudio\x.x.x.x\Common\Data_
 
-{ ![](Grid-Controls_images/Grid-Controls_img506.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img506.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40319,7 +40319,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 6. Select appropriate table and data using this wizard.
 
-{ ![](Grid-Controls_images/Grid-Controls_img507.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img507.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40331,7 +40331,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img508.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img508.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40339,7 +40339,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 8. Run the application. Following is the output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img509.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img509.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40679,7 +40679,7 @@ See Also
 
 Any change that you make to the grid will be posted back to the ArrayList. Keep in mind that you cannot add new items to the ArrayList through the grid. Instead, make sure that your data source supports the IBindingList interface and that it implements an appropriate AddNew method. The IBindingList support determines whether you can add new items and sort items as well as do searching for other basic aspects of list behavior. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img510.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img510.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -41055,7 +41055,7 @@ Shows only rows where the Name column begins with *a.</td></tr>
 Name LIKE *a</td><td>
 Shows only rows where the Name column ends with *a.</td></tr>
 </table>
-{ ![](Grid-Controls_images/Grid-Controls_img511.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img511.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -41111,7 +41111,7 @@ filterBar.WireGrid(GridDataBoundGrid1)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img512.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img512.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -41143,15 +41143,15 @@ filterBar.WireGrid(gridDataBoundGrid1)
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img513.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img513.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img514.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img514.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_ 
 
-> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo_
+> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo_
 
 ##### GridBoundColumns and Controlling the Column Format
 
@@ -41455,7 +41455,7 @@ To define simple Master-Details relation, you must have two tables. The first is
 
 Here is a screen shot showing you Master-Detail grid pair using NorthWind Customers table as the Master table, and the NorthWind Orders table as the details table. As you click on a customer in the customers grid, the orders for that customer will appear in the second grid.
 
-{ ![](Grid-Controls_images/Grid-Controls_img515.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img515.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -41791,7 +41791,7 @@ Return dt
 
 End Function
 
-{ ![](Grid-Controls_images/Grid-Controls_img516.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img516.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -41823,7 +41823,7 @@ Me.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img517.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img517.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -41831,7 +41831,7 @@ Me.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick
 
 By default, sorting is done in DataBound Grid through IBindingList.
 
-> { ![](Grid-Controls_images/Grid-Controls_img518.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img518.jpeg)' | markdownify }}
 {:.image }
 _Note: IBindingList interface provides features required to support both complex and simple scenarios when binding to a data source._
 
@@ -41931,7 +41931,7 @@ dv.Sort = sortName
 
 End If
 
-> { ![](Grid-Controls_images/Grid-Controls_img519.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img519.jpeg)' | markdownify }}
 {:.image }
 _Note: CurrencyManager manages a list of binding objects when data source uses IBindingList interface._
 
@@ -41967,13 +41967,13 @@ End If
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img520.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img520.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Sort By DisplayMember Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Sort By DisplayMember Demo_
 
 ##### Data Relations
 
@@ -42053,7 +42053,7 @@ e.FilterString = string.Format("CustomerID = '{0}'", this.customerGrid1.Model[e.
 
 Private Sub ProvideOrdersFilterStrings(ByVal sender As Object, ByVal e As QueryFilterStringEventArgs)
 
-If Me.customerGrid1.Model(e.Row, e.Column + 1).Text &lt;&gt; "" Then
+If Me.customerGrid1.Model(e.Row, e.Column + 1).Text <> "" Then
 
 
 
@@ -42067,13 +42067,13 @@ End Sub
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img521.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img521.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Drop Grid Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Drop Grid Demo_
 
 ###### Multiple Nested Relations
 
@@ -42101,13 +42101,13 @@ Dim hlCategory_Products As GridHierarchyLevel = gridBinder.AddRelation("Category
 
 Dim hlProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRelation("Products_OrderDetails")
 
-{ ![](Grid-Controls_images/Grid-Controls_img522.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img522.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\Expand Grid Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\Expand Grid Demo_
 
 ###### Hierarchical Grid with Tree Lines
 
@@ -42131,13 +42131,13 @@ Me.gridDataBoundGrid1.ShowTreeLines = True
 
 With ShowTreeLines property set to true, there is no separate column allotted for plus or minus buttons, instead the indented text in the first column can be seen. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img523.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img523.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\GDBG Tree Lines Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\GDBG Tree Lines Demo_
 
 ###### ExpandAll and CollapseAll Methods
 
@@ -42160,7 +42160,7 @@ this.gridDataBoundGrid1.ExpandAll();
 
 Me.gridDataBoundGrid1.ExpandAll()
 
-{ ![](Grid-Controls_images/Grid-Controls_img524.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img524.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42183,7 +42183,7 @@ this.gridDataBoundGrid1.CollapseAll();
 
 Me.gridDataBoundGrid1.CollapseAll()
 
-{ ![](Grid-Controls_images/Grid-Controls_img525.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img525.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42191,15 +42191,15 @@ Me.gridDataBoundGrid1.CollapseAll()
 
 DataBound Grid has support for displaying a single record in multiple rows. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img526.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img526.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img527.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img527.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Multi Row Record Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Multi Row Record Demo_
 
 Example
 
@@ -42243,15 +42243,15 @@ binder.LayoutColumns(New String() {"CustomerID", "CompanyName", "ContactTitle", 
 
 It is possible to display DataBound Grid within Grid Record Navigation control. This combination will give you a look similar to Microsoft Access.
 
-{ ![](Grid-Controls_images/Grid-Controls_img528.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img528.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img529.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img529.jpeg)' | markdownify }}
 {:.image }
 _Note: For more details, refer to the following browser sample:_
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_
 
 Example
 
@@ -42259,13 +42259,13 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
 
 1. Step 1: Create an SqlDataAdapter and connect to the Customers table of NorthWind database. 
 > 
-{ ![](Grid-Controls_images/Grid-Controls_img530.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img530.jpeg)' | markdownify }}
 {:.image }
 _Note: A DataSet is generated._ 
 
 7. Step 2: Drag Grid Record Navigation control onto the form.
 
-{ ![](Grid-Controls_images/Grid-Controls_img531.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img531.png)' | markdownify }}
 {:.image }
 
 
@@ -42275,15 +42275,15 @@ _Note: A DataSet is generated._
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img532.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img532.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img533.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img533.jpeg)' | markdownify }}
 {:.image }
 _Note: Records can be displayed by typing in the NavigationBar._
 
-{ ![](Grid-Controls_images/Grid-Controls_img534.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img534.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42335,7 +42335,7 @@ Me.gridDataBoundGrid1.Model.Cols.HeaderCount = extraColHeaders
 
 The resultant output is shown below.
 
-{ ![](Grid-Controls_images/Grid-Controls_img535.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img535.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42343,13 +42343,13 @@ The resultant output is shown below.
 
 Essential DataBound Grid can handle large amount of data without a performance hit.
 
-{ ![](Grid-Controls_images/Grid-Controls_img536.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img536.png)' | markdownify }}
 {:.image }
 
 
 
 
-For more details, refer to the sample: _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Grid Performance Demo_
+For more details, refer to the sample: _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Grid Performance Demo_
 
 Example
 
@@ -42367,7 +42367,7 @@ In the Manipulate Grid group box
 * Selecting Use ScrollWindow check box invalidates only the inserted or removed rows instead of invalidating the whole Grid.
 * Insert Records, Remove Records and Change Records buttons let you check the performance when inserting, removing, or changing records in the underlying data table. Once the data is loaded after the batch update, you will be able to see the performance and memory usage in a text box, as shown below.
 
-{ ![](Grid-Controls_images/Grid-Controls_img537.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img537.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42654,7 +42654,7 @@ REFERENCE LINKS </th></tr>
 <tr>
 <th>
 WireGrid </th><th>
-Used to wire the {{ '_FieldChooser._' | markdownify }}</th><th>
+Used to wire the {{{ ''_FieldChooser._'' | markdownify }}}</th><th>
 Overloads:  ( Arg1) </th><th>
 In GridWindowsForm </th><th>
 Example: GridDataboundGrid1.WireGrid(GridDataboundGrid). </th><th>
@@ -42705,20 +42705,20 @@ Dim fchooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
 10. When the code runs, the entire grid will open.
 11. Right click on a column header and select the Field Chooser menu item to view _Field Chooser_ dialog.
 
-{ ![](Grid-Controls_images/Grid-Controls_img538.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img538.png)' | markdownify }}
 {:.image }
 
 
 12. This dialog will list all the column names with check boxes adjacent to them.
 
-{ ![](Grid-Controls_images/Grid-Controls_img539.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img539.png)' | markdownify }}
 {:.image }
 
 
 13. Select the checkboxes of the columns you want to be displayed in the grid.
 14. The grid will have only the columns which are selected in the _Field Chooser_ dialog.
 
-{ ![](Grid-Controls_images/Grid-Controls_img540.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img540.png)' | markdownify }}
 {:.image }
 
 
@@ -42726,7 +42726,7 @@ Dim fchooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
 
 Grid List control is System.Windows.Forms ListControl-derived object. It uses an embedded GridControl object to hold data. Using this GridListControl.Grid member, you can easily control the appearance of your list control through the GridControl object.
 
-{ ![](Grid-Controls_images/Grid-Controls_img541.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img541.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42742,13 +42742,13 @@ To Create a Data Source
 
 1. Drag an SqlDataAdapter from Data tab of the Toolbox onto the form. Follow the steps in the wizard to select database and SQL query used to generate the table.
 
-{ ![](Grid-Controls_images/Grid-Controls_img542.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img542.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Click SqlAdapter in the components tray with the right Mouse button and generate a dataset for this adapter by just taking the defaults. 
 
-{ ![](Grid-Controls_images/Grid-Controls_img543.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img543.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42756,26 +42756,26 @@ To Create a Data Source
 
 3. In the Form_Load event handler, Fill method will be called automatically for this SqlDataAdapter by passing dataset that is generated in the previous step.
 
-{ ![](Grid-Controls_images/Grid-Controls_img544.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img544.jpeg)' | markdownify }}
 {:.image }
 
 
 4. Drag GridListControl object from your tool box and drop it onto the form.
 
-{ ![](Grid-Controls_images/Grid-Controls_img545.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img545.jpeg)' | markdownify }}
 {:.image }
 
 
 5. Size and position it.
 6. Go to Properties dialog of this Grid List control and set DataSource property of this control to an appropriate object.
 
-{ ![](Grid-Controls_images/Grid-Controls_img546.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img546.jpeg)' | markdownify }}
 {:.image }
 
 
 7. Run the application. Following is the output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img547.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img547.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42787,7 +42787,7 @@ The Grid List control sample that ships with Essential Grid does not use the des
 
 For the complete implementation details, refer to the sample in the below installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
 
 [C#]
 
@@ -42963,7 +42963,7 @@ Me.comboBoxBase1.ListControl = Me.gridListControl1
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img548.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img548.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42991,7 +42991,7 @@ Me.gridListControl1.TransparentBackground = True
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img549.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img549.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43019,13 +43019,13 @@ Me.gridListControl1.Properties.DisplayHorzLines = True
 
 Me.gridListControl1.Properties.DisplayVertLines = True
 
-{ ![](Grid-Controls_images/Grid-Controls_img550.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img550.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img551.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img551.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43049,7 +43049,7 @@ this.gridListControl1.Properties.Buttons3D = true;
 
 Me.gridListControl1.Properties.Buttons3D = True
 
-{ ![](Grid-Controls_images/Grid-Controls_img552.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img552.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43073,7 +43073,7 @@ Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img553.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img553.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43099,7 +43099,7 @@ Me.gridListControl1.BackColor = Color.Beige
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img554.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img554.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43163,7 +43163,7 @@ Me.gridListControl1.BackgroundImage = Image.FromFile("Colud.jpg")
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img555.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img555.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43171,7 +43171,7 @@ Me.gridListControl1.BackgroundImage = Image.FromFile("Colud.jpg")
 
 Grid Record Navigation control will allow the user to move from row to row using Microsoft Access-like navigation bar at the bottom of the grid.
 
-{ ![](Grid-Controls_images/Grid-Controls_img556.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img556.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43185,7 +43185,7 @@ With the designer you can drag both Grid Record Navigation control and Grid cont
 
 8. Drag GridRecordNavigationControl object from your toolbox and drop it on the form.
 
-{ ![](Grid-Controls_images/Grid-Controls_img557.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img557.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43194,13 +43194,13 @@ With the designer you can drag both Grid Record Navigation control and Grid cont
 9. Size and position it.
 10. Drag GridDataBoundGrid object from your toolbox and drop it on Grid Record Navigation control (and not the form itself).
 
-{ ![](Grid-Controls_images/Grid-Controls_img558.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img558.jpeg)' | markdownify }}
 {:.image }
 
 
 11. Set GridDataBoundGrid.DataSource property to an appropriate object.
 
-{ ![](Grid-Controls_images/Grid-Controls_img559.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img559.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43208,7 +43208,7 @@ With the designer you can drag both Grid Record Navigation control and Grid cont
 
 12. Run the application. The following will be the output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img560.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img560.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43358,7 +43358,7 @@ Sample Link
 
 A demo of this feature is available in the following location:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
 
 Adding Navigation Bar to the RecordNavigationControl
 
@@ -43394,7 +43394,7 @@ Me.gridGroupingControl1.ShowNavigationBar = True
 <td>
 [VB]'This property should set to true to show the navigation bar.       Me.gridGroupingControl1.ShowNavigationBar = True'This method is used to navigate the first record.     Me.gridGroupingControl1.RecordNavigationBar.MoveFirst()'This method is used to navigate the last record.     Me.gridGroupingControl1.RecordNavigationBar.MoveLast()'This method is used to navigate the next record.  Me.gridGroupingControl1.RecordNavigationBar.MoveNext()'This method is used to navigate the previous record.     Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()</td></tr>
 </table>
-{ ![](Grid-Controls_images/Grid-Controls_img561.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img561.png)' | markdownify }}
 {:.image }
 
 
@@ -43425,7 +43425,7 @@ Me.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img562.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img562.png)' | markdownify }}
 {:.image }
 
 
@@ -43473,7 +43473,7 @@ pdfConvertor.ShowHeader = true;
 
 pdfConvertor.ShowHeader = True
 
-{ ![](Grid-Controls_images/Grid-Controls_img563.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img563.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43495,7 +43495,7 @@ pdfConvertor.ShowFooter = true;
 
 pdfConvertor.ShowFooter = True
 
-{ ![](Grid-Controls_images/Grid-Controls_img564.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img564.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43653,7 +43653,7 @@ You can make use of AllowResizingIndividualRows class by adding dependent assemb
 
 The following screen shot illustrates how the heights of individual rows in the grid have been resized.
 
-{ ![](Grid-Controls_images/Grid-Controls_img565.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img565.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43683,7 +43683,7 @@ GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndivi
 
 The following screen shot illustrates Grid Grouping control with filter drop down.
 
-{ ![](Grid-Controls_images/Grid-Controls_img566.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img566.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43693,13 +43693,13 @@ GridDynamicFilter in GridGroupingControl is now an enhanced functionality to ser
 
 
 
-<code>filter.LoadCompareOperator();&lt;/code&gt;
+<code>filter.LoadCompareOperator();</code>
 
-<code>filter.SaveCompareOperator();&lt;/code&gt;
+<code>filter.SaveCompareOperator();</code>
 
 When the code runs, the following output displays.
 
-{ ![](Grid-Controls_images/Grid-Controls_img567.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img567.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43721,7 +43721,7 @@ The following code illustrates how to add ApplyFilterOnlyOnCellLostFocus propert
 
 When the code runs, the following output displays.
 
-{ ![](Grid-Controls_images/Grid-Controls_img568.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img568.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43745,7 +43745,7 @@ GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", co
 
 GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", countries, "CountryCode", "CountryName")
 
-> { ![](Grid-Controls_images/Grid-Controls_img569.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img569.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 
@@ -43757,7 +43757,7 @@ _Note:_
 
 The following screen shot illustrates Foreign Key Relations in the Grid Grouping control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img570.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img570.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43834,51 +43834,51 @@ Following screen shots illustrate different Button Edit cell types.
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img571.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img571.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img572.jpeg) | markdownify }
-{:.image }
-
-
-
-
-{ ![](Grid-Controls_images/Grid-Controls_img573.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img572.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img574.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img573.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img575.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img574.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img576.jpeg) | markdownify }
-{:.image }
-
-
-{ ![](Grid-Controls_images/Grid-Controls_img577.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img575.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img578.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img576.jpeg)' | markdownify }}
+{:.image }
+
+
+{{ '![](Grid-Controls_images/Grid-Controls_img577.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img579.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img578.jpeg)' | markdownify }}
+{:.image }
+
+
+
+
+{{ '![](Grid-Controls_images/Grid-Controls_img579.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43886,19 +43886,19 @@ _Figure_ _559_: "Right" Button Edit Cell Type_
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img580.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img580.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img581.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img581.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img582.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img582.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43964,7 +43964,7 @@ style.Control = c1
 
 Following screen shot illustrates CalculatorTextBox cell type in the Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img583.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img583.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44018,7 +44018,7 @@ style.Control = New MonthCalendar()
 
 Following screen shot illustrates Calendar cell type in Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img584.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img584.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44072,7 +44072,7 @@ Me.gridControl1(4, 2).Format = "MM/dd/yyyy hh:mm"
 
 Following screen shot illustrates DateTimePicker cell type in Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img585.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img585.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44120,7 +44120,7 @@ style.Text = "0.5"
 
 Following screen shot illustrates FNumericUpDown cell type in the Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img586.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img586.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44192,7 +44192,7 @@ Me.gridControl1.Controls.Add(grid)
 
 Following screen shot illustrates GridinCell cell type in Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img587.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img587.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44246,7 +44246,7 @@ gridControl1(rowIndex, 2).HorizontalAlignment = GridHorizontalAlignment.Center
 
 Following screen shot illustrates LinkLabelCell cell type in the Grid control.                                      
 
-{ ![](Grid-Controls_images/Grid-Controls_img588.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img588.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44330,7 +44330,7 @@ sp.Image = GetImage("one.jpg")
 
 Following screen shot illustrates PictureBox cell type in Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img589.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img589.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44352,7 +44352,7 @@ You can customize column appearance of a Grid Grouping control by using plug-in 
 
 Following screen shot shows Grid Grouping control with the Field dialog box.
 
-{ ![](Grid-Controls_images/Grid-Controls_img590.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img590.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44362,7 +44362,7 @@ To add or remove columns by using Field Chooser, right-click column header and s
 
 A sample demonstration of Grid Field Chooser feature is available in the following sample installation path.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Field Chooser Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Field Chooser Demo_
 
 #### Filtering By Display Member
 
@@ -44400,7 +44400,7 @@ filterBar.WireGrid(Me.gridDataBoundGrid1)
 
 Following screen shot illustrates how to filter a column in the Grid Data Bound Grid by its display member.
 
-{ ![](Grid-Controls_images/Grid-Controls_img591.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img591.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44438,7 +44438,7 @@ Me.gGCFilter.WireGrid(Me.gridGroupingControl1)
 
 Following screen shot illustrates how to filter a column in the Grid Grouping control by its display member.
 
-{ ![](Grid-Controls_images/Grid-Controls_img592.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img592.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44468,7 +44468,7 @@ f.ShowDialog()
 
 Following screen shot illustrates the Format Cell Dialog of Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img593.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img593.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44536,11 +44536,11 @@ previewDialog.Show()
 
 The following screen shots illustrate the Print Preview feature of the Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img594.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img594.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img595.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img595.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44582,7 +44582,7 @@ layoutHelper.LineColor = Color.SteelBlue
 
 Following screen shot illustrates print page layout feature of the Grid control.
 
-{ ![](Grid-Controls_images/Grid-Controls_img596.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img596.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44662,11 +44662,11 @@ e.Header.AddParagraph().AppendText("Syncfusion Inc.")
 
 The following screen shots illustrate Grid to Word conversion.
 
-{ ![](Grid-Controls_images/Grid-Controls_img597.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img597.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img598.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img598.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44752,11 +44752,11 @@ txt.CharacterFormat.Font = New Font("verdana", 12.0F, FontStyle.Bold)
 
 The following screen shots illustrate Grouping Grid to Word conversion.
 
-{ ![](Grid-Controls_images/Grid-Controls_img599.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img599.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img600.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img600.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44817,7 +44817,7 @@ Following are screen shots illustrating the feature.
 
 1. Image displaying drag operation of the selected series towards bottom.
 
-{ ![](Grid-Controls_images/Grid-Controls_img601.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img601.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44825,7 +44825,7 @@ Following are screen shots illustrating the feature.
 
 2. Image displaying the filled series.
 
-{ ![](Grid-Controls_images/Grid-Controls_img602.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img602.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44833,11 +44833,11 @@ Following are screen shots illustrating the feature.
 
 3. The image shows popup menu displayed after dragging the cell that displays January.
 
-{ ![](Grid-Controls_images/Grid-Controls_img603.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img603.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Grid-Controls_images/Grid-Controls_img604.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img604.jpeg)' | markdownify }}
 {:.image }
 _Note: The cell has been dragged exactly the same as it is done in Excel._ 
 
@@ -44845,7 +44845,7 @@ _Note: The cell has been dragged exactly the same as it is done in Excel._
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img605.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img605.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44917,7 +44917,7 @@ The following code illustrates how to add Excel Like Filter to the Grid filter b
 
     End Sub
 
-> { ![](Grid-Controls_images/Grid-Controls_img606.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img606.jpeg)' | markdownify }}
 {:.image }
 _Note: GridOffice2007Filter can be unwired from the grid to disable Excel like filter._
 
@@ -44927,7 +44927,7 @@ The feature has multiple selections of values to filter.
 
 You can specify the value of the column that has to filter in the check box of tree view inside the drop down container.
 
-{ ![](Grid-Controls_images/Grid-Controls_img607.jpeg) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img607.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45038,7 +45038,7 @@ GridExcelFilter’s FilterByColor functionality is used to filter GridGroupingCo
 The following screenshot shows the result of setting FilterByColor property in GridGroupingControl.
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img608.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img608.png)' | markdownify }}
 {:.image }
 
 
@@ -45075,13 +45075,13 @@ The following screen shots show the list of available colors when FilerByColor p
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img609.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img609.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img610.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img610.png)' | markdownify }}
 {:.image }
 
 
@@ -45100,7 +45100,7 @@ Option to Filter Empty values in Application
 
 The option to filter empty values (Blanks) will automatically be included in filter choices when there are one or more empty values in the grid. No property is needed to enable this feature.
 
-{ ![](Grid-Controls_images/Grid-Controls_img611.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img611.png)' | markdownify }}
 {:.image }
 
 
@@ -45110,7 +45110,7 @@ The option to filter empty values (Blanks) will automatically be included in fil
 
 You can use EnableDateFilter property in GridExcelFilter to search and filter the dates quickly. The following screenshot shows the values that are filtered by years in a filter Drop-down box. 
 
-{ ![C:/Users/Giftline/Desktop/a.png](Grid-Controls_images/Grid-Controls_img612.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/a.png](Grid-Controls_images/Grid-Controls_img612.png)' | markdownify }}
 {:.image }
 
 
@@ -45153,7 +45153,7 @@ Filter options
 
 You can filter the top selected values or percentage of values using the Top 10 Filter option in EnableNumberFilter property. The following image shows an example of the Top 10 Filter option in EnableNumberFilter property.
 
-{ ![](Grid-Controls_images/Grid-Controls_img613.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img613.png)' | markdownify }}
 {:.image }
 
 
@@ -45362,13 +45362,13 @@ Event</th></tr>
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img614.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img614.png)' | markdownify }}
 {:.image }
 
 
 Sample Link
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Card View Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Card View Demo_
 
 ##### Enable the Card View Layout
 
@@ -45410,7 +45410,7 @@ To apply Office 2010 Visual Style to Grid:
 
 
 
-{ ![Description: C:/Users/christopherk/Desktop/DesignView1.png](Grid-Controls_images/Grid-Controls_img615.png) | markdownify }
+{{ '![Description: C:/Users/christopherk/Desktop/DesignView1.png](Grid-Controls_images/Grid-Controls_img615.png)' | markdownify }}
 {:.image }
 
 
@@ -45423,7 +45423,7 @@ To enable Office 2010 Scrollbars:
 3. Set GridOfficeScrollBars property to Office 2010.
 4. Set Office2010ScrollBarColorScheme property to Blue, Black, or Silver.
 
-{ ![Description: C:/Users/christopherk/Pictures/presentation/Scrollbarproperty.png](Grid-Controls_images/Grid-Controls_img616.png) | markdownify }
+{{ '![Description: C:/Users/christopherk/Pictures/presentation/Scrollbarproperty.png](Grid-Controls_images/Grid-Controls_img616.png)' | markdownify }}
 {:.image }
 
 
@@ -45431,17 +45431,17 @@ Use Case Scenarios
 
 Office2010Theme support for Windows Grids is useful for commercial applications in order to attract its users with inspiring UI look and feel.
 
-{ ![Description: C:/Users/christopherk/Pictures/presentation/BlueTheme.png](Grid-Controls_images/Grid-Controls_img617.png) | markdownify }
+{{ '![Description: C:/Users/christopherk/Pictures/presentation/BlueTheme.png](Grid-Controls_images/Grid-Controls_img617.png)' | markdownify }}
 {:.image }
 
 
-{ ![Description: C:/Users/christopherk/Pictures/presentation/BlackTheme.png](Grid-Controls_images/Grid-Controls_img618.png) | markdownify }
+{{ '![Description: C:/Users/christopherk/Pictures/presentation/BlackTheme.png](Grid-Controls_images/Grid-Controls_img618.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![Description: C:/Users/christopherk/Pictures/presentation/SilverTheme.png](Grid-Controls_images/Grid-Controls_img619.png) | markdownify }
+{{ '![Description: C:/Users/christopherk/Pictures/presentation/SilverTheme.png](Grid-Controls_images/Grid-Controls_img619.png)' | markdownify }}
 {:.image }
 
 
@@ -45560,7 +45560,7 @@ Sample Link
 
 To get the Schedule samples from the dashboard:
 
-1. Open Essential Studio Dashboard by selecting Start -> All Programs -> Syncfusion -> Essential Studio &lt;&lt;Version Number&gt;> -> Dashboard.
+1. Open Essential Studio Dashboard by selecting Start -> All Programs -> Syncfusion -> Essential Studio <<Version Number>> -> Dashboard.
 2. Select “Run Locally Installed Samples” from the Windows Forms drop-down list on the User Interface pane.
 3. Expand “Grid samples” in the left panel of sample browser.
 4. Expand “Appearance” subsection and select “Grid Style Demo”.
@@ -45572,7 +45572,7 @@ To open sample project:
 
 1. Navigate to the following sample location in your system:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\GridStyle Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\GridStyle Demo_
 
 2. This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application language.
 ### Enhanced Visual Styles for Syncfusion Windows Grids
@@ -45609,7 +45609,7 @@ Boolean</td></tr>
 
 Samples for the feature are available in the following locations: 
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Skin Customization Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Skin Customization Demo_
 
 #### Applying Enhanced GridVisualStyle to the Application
 
@@ -45655,7 +45655,7 @@ this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2007Black;
 
 this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2007Black
 
-{ ![](Grid-Controls_images/Grid-Controls_img620.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img620.png)' | markdownify }}
 {:.image }
 
 
@@ -45751,7 +45751,7 @@ Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Metro
 
 The following screenshot is a sample output for the previous code.
 
-{ ![](Grid-Controls_images/Grid-Controls_img621.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img621.png)' | markdownify }}
 {:.image }
 
 
@@ -45775,17 +45775,17 @@ A method that takes the user-defined back color, mouse hover color, and mouse pr
 </table>
 
 
-{ ![E:/Vol 2 Release/Feature/Metro Theme/snap/GridControl.PNG](Grid-Controls_images/Grid-Controls_img622.png) | markdownify }
+{{ '![E:/Vol 2 Release/Feature/Metro Theme/snap/GridControl.PNG](Grid-Controls_images/Grid-Controls_img622.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img623.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img623.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img624.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img624.png)' | markdownify }}
 {:.image }
 
 
@@ -45869,7 +45869,7 @@ To create Unit Tests with VS2010:
 
 1. Create a new test project in VS2010.
 
-{ ![](Grid-Controls_images/Grid-Controls_img625.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img625.png)' | markdownify }}
 {:.image }
 
 
@@ -45879,7 +45879,7 @@ To create Unit Tests with VS2010:
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img626.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img626.png)' | markdownify }}
 {:.image }
 
 _Figure_ _604_: Adding Coded UI Test file_
@@ -45908,7 +45908,7 @@ public void CodedUITestMethod1()
 
 [VB]
 
-  &lt;TestMethod()&gt;
+  <TestMethod()>
 
 Public Sub CodedUITestMethod1()
 
@@ -45924,7 +45924,7 @@ End Sub
 
 2. Build and run the Grid application that was configured already. Right-click TestMethod body and then select Generate Code for Coded UI Test -> Use Coded UI Test Builder as shown in the following screenshot:
 
-{ ![](Grid-Controls_images/Grid-Controls_img627.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img627.png)' | markdownify }}
 {:.image }
 
 
@@ -45932,23 +45932,23 @@ End Sub
 
 3. Click the Record button to perform actions. In this scenario, add a text Hello World in a cell [x, y].
 
-{ ![](Grid-Controls_images/Grid-Controls_img628.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img628.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/Tablecontrol.png](Grid-Controls_images/Grid-Controls_img629.png) | markdownify }
+{{ '![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/Tablecontrol.png](Grid-Controls_images/Grid-Controls_img629.png)' | markdownify }}
 {:.image }
      _Figure_ _607_: Identifying the Table of the Syncfusion Grid_
 
-{ ![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/GDBG.png](Grid-Controls_images/Grid-Controls_img630.png) | markdownify }
+{{ '![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/GDBG.png](Grid-Controls_images/Grid-Controls_img630.png)' | markdownify }}
 {:.image }
 
 
 4. Assert the cell value using cross-hair present in Coded UI Test builder. Click cross-hair and hover to the cell. It will display Assert window as shown in the following screenshot:
 
-{ ![](Grid-Controls_images/Grid-Controls_img631.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img631.png)' | markdownify }}
 {:.image }
 
 
@@ -45968,7 +45968,7 @@ DATA TYPE</th></tr>
 <tr>
 <td>
 AllowEnter</td><td>
-Indicates that by pressing the &lt;Enter&gt;-Key, a new line is inserted into the edited text.</td><td>
+Indicates that by pressing the <Enter>-Key, a new line is inserted into the edited text.</td><td>
 -</td><td>
 bool</td></tr>
 <tr>
@@ -46624,7 +46624,7 @@ The following code example illustrates how to enable AccessibilityEnabled proper
 
     Me.grid.AccessibilityEnabled = True
 
-> { ![](Grid-Controls_images/Grid-Controls_img632.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img632.jpeg)' | markdownify }}
 {:.image }
 _You can follow the same steps to test the application with generated coded UI tests as described in the chapter_ Testing the Application with Generated Coded UI Tests_._
 
@@ -46698,11 +46698,11 @@ A sample of this feature is available in the following location:
 
 GridDataBoundGrid
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Appearance\Error Provider Demo_   
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Appearance\Error Provider Demo_   
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Error Provider Demo_                                                                           
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Error Provider Demo_                                                                           
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Error Provider Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Error Provider Demo_
 
 #### Enabling Error Alert
 
@@ -46738,7 +46738,7 @@ Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 
 
 
-{ ![D:/Task Doc/Marketing Content/10.4/UI/WF/Grid/sample.PNG](Grid-Controls_images/Grid-Controls_img633.png) | markdownify }
+{{ '![D:/Task Doc/Marketing Content/10.4/UI/WF/Grid/sample.PNG](Grid-Controls_images/Grid-Controls_img633.png)' | markdownify }}
 {:.image }
 
 
@@ -46770,7 +46770,7 @@ Me.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= False
 
 Me.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text"
 
-{ ![C:/Users/ragamathullahb/Desktop/sshot-2.png](Grid-Controls_images/Grid-Controls_img634.png) | markdownify }
+{{ '![C:/Users/ragamathullahb/Desktop/sshot-2.png](Grid-Controls_images/Grid-Controls_img634.png)' | markdownify }}
 {:.image }
 
 
@@ -46850,7 +46850,7 @@ Overloads:* (Control, String)* (Control,VisualTheme)</th><th>
 </table>
 Sample Link
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\SkinManager Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\SkinManager Demo_
 
 #### Adding Skin Manager to an Application 
 
@@ -46882,7 +46882,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
 
 Implementing the above code will create the following output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img635.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img635.png)' | markdownify }}
 {:.image }
 
 
@@ -46898,7 +46898,7 @@ Sample Link
 
 To open sample project, navigate to the following sample location in your system:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo_
 
 Adding Localization Support to Grid Controls
 
@@ -47105,7 +47105,7 @@ Cannotchangepartofamergedcell</td></tr>
 
 This will generate the following output.
 
-{ ![](Grid-Controls_images/Grid-Controls_img636.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img636.png)' | markdownify }}
 {:.image }
 
 
@@ -47199,7 +47199,7 @@ End Function
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img637.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img637.png)' | markdownify }}
 {:.image }
 
 
@@ -47227,7 +47227,7 @@ Resgen Text_file.txt  Resource_File.resources
 
 
 
-{ ![](Grid-Controls_images/Grid-Controls_img638.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img638.png)' | markdownify }}
 {:.image }
 
 
@@ -47235,7 +47235,7 @@ Resgen Text_file.txt  Resource_File.resources
 
 3. You can modify the resource file according to your requirements by using the Resorce Editor.
 
-{ ![](Grid-Controls_images/Grid-Controls_img639.png) | markdownify }
+{{ '![](Grid-Controls_images/Grid-Controls_img639.png)' | markdownify }}
 {:.image }
 
 
@@ -47245,13 +47245,13 @@ Resgen Text_file.txt  Resource_File.resources
 
 
 
-al /t:lib /culture:de-DE /out:&lt;Location&gt;\Syncfusion.GridHelperClasses.Windows.resources.dll /v:1.1.0.0 /delay+ /keyf:&lt;Location&gt;:\\sf.publicsnk /embed:&lt;Location&gt;\Syncfusion. GridHelperClasses.Windows.Localization.SR.de-DE.Resources  
+al /t:lib /culture:de-DE /out:<Location>\Syncfusion.GridHelperClasses.Windows.resources.dll /v:1.1.0.0 /delay+ /keyf:<Location>:\\sf.publicsnk /embed:<Location>\Syncfusion. GridHelperClasses.Windows.Localization.SR.de-DE.Resources  
 
 
 
 5. After creating the satellite assembly, you must have the assembly signed to access the resources in the assembly. The signing operation is done by using the following code:
 
-Sn –Vr &lt;Location of Satellite dll&gt;\Syncfusion.GridHelperClasses.Windows.resources.dll
+Sn –Vr <Location of Satellite dll>\Syncfusion.GridHelperClasses.Windows.resources.dll
 
 
 
@@ -47259,9 +47259,9 @@ Sn –Vr &lt;Location of Satellite dll&gt;\Syncfusion.GridHelperClasses.Windows.
 
 
 
-&lt;Location of Program&gt;\bin\debug\de-DE (German Culture)
+<Location of Program>\bin\debug\de-DE (German Culture)
 
-> { ![](Grid-Controls_images/Grid-Controls_img640.jpeg) | markdownify }
+> {{ '![](Grid-Controls_images/Grid-Controls_img640.jpeg)' | markdownify }}
 {:.image }
 _Note: The name of the subfolder in Debug folder differs based on the culture of the application. For example, fr-FR is used for the French Culture, and so on._
 
@@ -47273,7 +47273,7 @@ Similarly, you can create satellite assemblies for resource files of Windows Gri
 
 * Grid
 
-_&lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Windows\Samples\_
+_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Windows\Samples\_
 
 _Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
@@ -47281,7 +47281,7 @@ _Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
 * Grid Grouping
 
-_&lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Grouping.Windows\_
+_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\_
 
 _Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
@@ -47289,7 +47289,7 @@ _Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
 * Pivot Grid
 
-_&lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\PivotGrid.Windows\_
+_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\PivotGrid.Windows\_
 
 _Samples\Localization\ Localization using Satellite Assemblies\CS\Resources\SR.resources_
 
@@ -47356,19 +47356,19 @@ To open sample project, navigate to the following sample locations in your syste
 
 For GridControl:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
 
 
 
 For GridDataBoundGrid:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Zoom\Zooming Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Zoom\Zooming Demo_
 
 
 
 For GridGroupingControl:
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Zooming\Zooming Demo_
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Zooming\Zooming Demo_
 
 #### Zooming Grid Controls
 
@@ -47394,7 +47394,7 @@ Dim zoom As New ZoomGrid(Me.gridControl1)
 
 
 
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Zoom and Scrolling/GridControl Zoom/Images/zoom1.png](Grid-Controls_images/Grid-Controls_img641.png) | markdownify }
+{{ '![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Zoom and Scrolling/GridControl Zoom/Images/zoom1.png](Grid-Controls_images/Grid-Controls_img641.png)' | markdownify }}
 {:.image }
 
 
@@ -47420,7 +47420,7 @@ Dim zoom As New ZoomGrid(Me.gridDataBoundGrid1)
 
 
 
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/GridDataBound.Windows/Samples/2.0/Zoom/Zoom Grid Demo/Images/zoom5.png](Grid-Controls_images/Grid-Controls_img642.png) | markdownify }
+{{ '![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/GridDataBound.Windows/Samples/2.0/Zoom/Zoom Grid Demo/Images/zoom5.png](Grid-Controls_images/Grid-Controls_img642.png)' | markdownify }}
 {:.image }
 
 
@@ -47442,7 +47442,7 @@ Dim zoom As New ZoomGroupingGrid (Me.gridGroupingControl1)
 
 zoom.zoomGrid(Me.trackBar1.Value.ToString())
 
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Grouping.Windows/Samples/2.0/Zoom/Zoom Grid Demo/Images/zoom7.png](Grid-Controls_images/Grid-Controls_img643.png) | markdownify }
+{{ '![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Grouping.Windows/Samples/2.0/Zoom/Zoom Grid Demo/Images/zoom7.png](Grid-Controls_images/Grid-Controls_img643.png)' | markdownify }}
 {:.image }
 
 
@@ -47462,7 +47462,7 @@ You can also zoom individual cells of a grid by using ZoomGridControlCell proper
 
 
 
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Zoom and Scrolling/GridControl Zoom/Images/zoom3.png](Grid-Controls_images/Grid-Controls_img644.png) | markdownify }
+{{ '![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Zoom and Scrolling/GridControl Zoom/Images/zoom3.png](Grid-Controls_images/Grid-Controls_img644.png)' | markdownify }}
 {:.image }
 
 

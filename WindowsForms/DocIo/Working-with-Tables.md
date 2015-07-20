@@ -191,7 +191,7 @@ The following code example illustrates how to create an empty table with two row
 </table>
 
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img1.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -228,7 +228,7 @@ Table row height provides the following options:
 
 The following screenshot illustrates how to set the above properties by using the Table Properties dialog box in Microsoft Word.
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img2.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -330,7 +330,7 @@ WTableCell class represents a table cell in a Word document. WTextBody is thebas
 
 The following screenshot illustrates how to set the Cell Format in Microsoft Word.
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img3.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -500,7 +500,7 @@ Properties
 
 The following screenshot illustrates how to set Row Format in Microsoft Word.
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img4.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -562,14 +562,14 @@ Gets paddings.</td></tr>
 
 WTableStyle class represents table style in a Word document. Table style specifies a set of formatting characteristics for a table.
 
-{ ![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_32.png](Working-with-Tables_images/Working-with-Tables_img5.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_32.png](Working-with-Tables_images/Working-with-Tables_img5.png)' | markdownify }}
 {:.image }
 
 
 * You can apply Word built-in table styles by using the WTable.ApplyStyle method with Built-inTableStyle enumeration parameter that specifies the built-in table style.
 * You can get information of the related style that is applied to the table by using the GetStyle method of WTable class.
 > 
-{ ![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_0.jpg](Working-with-Tables_images/Working-with-Tables_img6.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_0.jpg](Working-with-Tables_images/Working-with-Tables_img6.jpeg)' | markdownify }}
 {:.image }
 _Note: Essential DocIO currently provides support for built-in table styles in Word2007, Word2010, and Word2013 formats. The visual formatting is also preserved in Word to PDF, Word to Image, and Word to HTML conversions._
 
@@ -591,7 +591,7 @@ You can choose the features of the table style that is to be applied in the rows
 
 The following screenshot illustrates how to set the conditional formatting to the table by using the Table Style Options ribbon in Microsoft Word
 
-{ ![sshot-2](Working-with-Tables_images/Working-with-Tables_img7.png) | markdownify }
+{{ '![sshot-2](Working-with-Tables_images/Working-with-Tables_img7.png)' | markdownify }}
 {:.image }
 
 

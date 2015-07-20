@@ -23,7 +23,7 @@ The following image displays the same data with data from transactions that occu
 
 
 
-{ ![](Data-Manipulation_images/Data-Manipulation_img1.png) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ Essential Chart offers great interaction capabilities with Essential Grid. You c
 
 
 
-{ ![](Data-Manipulation_images/Data-Manipulation_img2.png) | markdownify }
+{{ '![](Data-Manipulation_images/Data-Manipulation_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -106,13 +106,13 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 </table>
 
 
-> { ![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img1.jpeg) | markdownify }
+> {{ '![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels._
 
 
 
-{ ![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img2.png) | markdownify }
+{{ '![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -154,7 +154,7 @@ UpdatingTableOfContents method of WordDocument class updates table of contents f
 
 
 
-> { ![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img3.jpeg) | markdownify }
+> {{ '![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications._
 

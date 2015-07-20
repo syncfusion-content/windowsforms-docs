@@ -17,7 +17,7 @@ Line bridging provides the visual effect such that the links jump over other lin
 
 
 
-{ ![](Customizing-Nodes_images/Customizing-Nodes_img1.jpeg) | markdownify }
+{{ '![](Customizing-Nodes_images/Customizing-Nodes_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -98,7 +98,7 @@ Me.diagram1.Model.BridgeStyle = BridgeStyle.Square
 
 
 
-> { ![](Customizing-Nodes_images/Customizing-Nodes_img2.jpeg) | markdownify }
+> {{ '![](Customizing-Nodes_images/Customizing-Nodes_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: In the above code snippets, link refers to the instance of the Link node._
 
@@ -158,7 +158,7 @@ link.LineRoutingEnabled = True.Model.LineBridgeSize = 5
 
 
 
-> { ![](Customizing-Nodes_images/Customizing-Nodes_img3.jpeg) | markdownify }
+> {{ '![](Customizing-Nodes_images/Customizing-Nodes_img3.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 
@@ -354,7 +354,7 @@ Me.diagramWebControl1.Model.AppendChild(grp)
 
 
 
-{ ![](Customizing-Nodes_images/Customizing-Nodes_img4.jpeg) | markdownify }
+{{ '![](Customizing-Nodes_images/Customizing-Nodes_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -825,7 +825,7 @@ diagram1.Model.AppendChild(node)
 
 
 
-{ ![](Customizing-Nodes_images/Customizing-Nodes_img5.png) | markdownify }
+{{ '![](Customizing-Nodes_images/Customizing-Nodes_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -881,13 +881,13 @@ node.Labels.Add(label)
 
 
 
-{ ![C:/Users/amsathm/Desktop/Horizontal orientation.png](Customizing-Nodes_images/Customizing-Nodes_img6.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/Horizontal orientation.png](Customizing-Nodes_images/Customizing-Nodes_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/amsathm/Desktop/Automatic Orientation.png](Customizing-Nodes_images/Customizing-Nodes_img7.png) | markdownify }
+{{ '![C:/Users/amsathm/Desktop/Automatic Orientation.png](Customizing-Nodes_images/Customizing-Nodes_img7.png)' | markdownify }}
 {:.image }
 
 

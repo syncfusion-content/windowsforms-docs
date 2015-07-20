@@ -15,7 +15,7 @@ The controls associated with the Diagram control are illustrated in the followin
 
 
 
-{ ![](Supported-Controls_images/Supported-Controls_img1.png) | markdownify }
+{{ '![](Supported-Controls_images/Supported-Controls_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -155,7 +155,7 @@ overviewControl1.TabIndex = 1
 
 
 
-{ ![](Supported-Controls_images/Supported-Controls_img2.jpeg) | markdownify }
+{{ '![](Supported-Controls_images/Supported-Controls_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -673,7 +673,7 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 
 
-{ ![](Supported-Controls_images/Supported-Controls_img3.jpeg) | markdownify }
+{{ '![](Supported-Controls_images/Supported-Controls_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -929,7 +929,7 @@ documentExplorer1.ShowNodeToolTips = True
 
 
 
-{ ![](Supported-Controls_images/Supported-Controls_img4.jpeg) | markdownify }
+{{ '![](Supported-Controls_images/Supported-Controls_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -989,7 +989,7 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 
 
-{ ![](Supported-Controls_images/Supported-Controls_img5.jpeg) | markdownify }
+{{ '![](Supported-Controls_images/Supported-Controls_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1063,7 +1063,7 @@ this.propertyEditor.Diagram = diagram1;
 
 
 
-{ ![](Supported-Controls_images/Supported-Controls_img6.jpeg) | markdownify }
+{{ '![](Supported-Controls_images/Supported-Controls_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1157,7 +1157,7 @@ diagram1.View.Grid.SnapToGrid = true;
 
 
 
-{ ![](Supported-Controls_images/Supported-Controls_img7.jpeg) | markdownify }
+{{ '![](Supported-Controls_images/Supported-Controls_img7.jpeg)' | markdownify }}
 {:.image }
 
 

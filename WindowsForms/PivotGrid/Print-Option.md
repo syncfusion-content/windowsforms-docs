@@ -133,7 +133,7 @@ The following image shows the printed output of the pivot grid:
 
 
 
-{ ![C:/Users/athirams/Desktop/print/page1.png](Print-Option_images/Print-Option_img1.png) | markdownify }
+{{ '![C:/Users/athirams/Desktop/print/page1.png](Print-Option_images/Print-Option_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -143,5 +143,5 @@ Sample Link
 
 A sample is available in the following location:
 
-&lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows \Samples\2.0\Print\Print Grid Demo
+<InstalledLocation>\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows \Samples\2.0\Print\Print Grid Demo
 

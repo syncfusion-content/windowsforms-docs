@@ -15,23 +15,23 @@ Forms are the containers for placing the elements in a HTML document. HTMLUI sup
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;form&gt;
+<form>
 
-&lt;input type = "text"/&gt;&lt;br/&gt;
+<input type = "text"/><br/>
 
-&lt;input type = "button"/&gt;&lt;br/&gt;
+<input type = "button"/><br/>
 
-&lt;input type = "checkbox" checked /&gt;&lt;br/&gt;
+<input type = "checkbox" checked /><br/>
 
-&lt;/form&gt;
+</form>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -39,7 +39,7 @@ Loading the above HTML document into HTMLUI creates a Form with the three contro
 
 
 
-{ ![](HTML-Forms_images/HTML-Forms_img1.png) | markdownify }
+{{ '![](HTML-Forms_images/HTML-Forms_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -49,7 +49,7 @@ This sample illustrates the implementation of Forms by using HTMLUI.
 
 
 
-{ ![](HTML-Forms_images/HTML-Forms_img2.jpeg) | markdownify }
+{{ '![](HTML-Forms_images/HTML-Forms_img2.jpeg)' | markdownify }}
 {:.image }
 
 

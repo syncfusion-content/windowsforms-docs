@@ -1153,7 +1153,7 @@ End Sub
 
 
 
-{ ![](Edit-Control-Events_images/Edit-Control-Events_img1.jpeg) | markdownify }
+{{ '![](Edit-Control-Events_images/Edit-Control-Events_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2598,7 +2598,7 @@ End Sub
 
 
 
-{ ![](Edit-Control-Events_images/Edit-Control-Events_img2.jpeg) | markdownify }
+{{ '![](Edit-Control-Events_images/Edit-Control-Events_img2.jpeg)' | markdownify }}
 {:.image }
 
 

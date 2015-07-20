@@ -363,7 +363,7 @@ excelEngine.Dispose()
 
 
 
-> { ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img1.jpeg) | markdownify }
+> {{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: Here, row and column index of Insert methods are "one based"._
 
@@ -515,7 +515,7 @@ Delete Rows and Columns
 
 MS Excel allows you to delete rows and columns in a spreadsheet by selecting and deleting the rows through the context menu that appears on right-clicking.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img2.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -763,11 +763,11 @@ excelEngine.Dispose()
 
 
 
-> { ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img3.jpeg) | markdownify }
+> {{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: Deletion by using the above method is more efficient than looping._
 
-> { ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img4.jpeg) | markdownify }
+> {{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: Row/Column index of these methods are "one based"._
 
@@ -775,7 +775,7 @@ _Note: Row/Column index of these methods are "one based"._
 
 Excel allows you to hide a row/column by using the Hide command, but a row or column also becomes hidden when you change its row height or column width to zero. You can also show a hidden row/column by using the Unhide command.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img5.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -928,7 +928,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img6.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1226,9 +1226,9 @@ MS Excel allows you to set the row height and column width by using the Format m
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img7.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img7.png)' | markdownify }}
 {:.image }
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img8.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1388,7 +1388,7 @@ excelEngine.Dispose()
 
 AutoFit is the option in MS Excel that can be enabled or disabled through the Format menu. AutoFit is the name given to the automatic width (or height) adjustment to fit the contents of a cell, row, or column.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img9.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1526,7 +1526,7 @@ excelEngine.Dispose()
 
 
 
-> { ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img10.jpeg) | markdownify }
+> {{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img10.jpeg)' | markdownify }}
 {:.image }
 _Note: These indexes are "one based"._
 
@@ -1640,7 +1640,7 @@ excelEngine.Dispose()
 
 
 
-> { ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img11.jpeg) | markdownify }
+> {{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img11.jpeg)' | markdownify }}
 {:.image }
 _Note: Here column and row indexes are "zero based"._
 
@@ -1938,7 +1938,7 @@ excelEngine.Dispose()
 
 Here, though the cell B2 has long text, AutoFit will not be applied to this column as the cell inside the range[5, 2, 19, 2] has text smaller than that. Similarly, row height for Row 15 will not be affected with AutoFit rows as the range [5, 2, 13, 4] has row height smaller than Row 15.  
 
-> { ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img12.jpeg) | markdownify }
+> {{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img12.jpeg)' | markdownify }}
 {:.image }
 _Note:_
 
@@ -1952,7 +1952,7 @@ Microsoft Excel has grouping and outlining features that allows you to group lar
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img13.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -2112,13 +2112,13 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img14.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img14.png)' | markdownify }}
 {:.image }
 
 
 Excel has options to customize the Grouping settings through the Settings dialog box. You can show the Summary details row below or right of the column by using the options provided in the Settings dialog box.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img15.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img15.png)' | markdownify }}
 {:.image }
 
 

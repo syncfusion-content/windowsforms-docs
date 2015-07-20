@@ -85,7 +85,7 @@ Sample Location
 
 {Installedpath}\Syncfusion\EssentialStudio\{Version}\Windows\PivotGrid.Windows\Samples\Product Showcase\Conditional Format Demo
 
-{ ![](Conditional-Formatting_images/Conditional-Formatting_img1.png) | markdownify }
+{{ '![](Conditional-Formatting_images/Conditional-Formatting_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -111,7 +111,7 @@ The following rule types are supported for applying conditional formats across v
 * Format Only Values That Are Above Or Below Average
 * Format Only Unique Or Duplicate Values
 
-{ ![](Conditional-Formatting_images/Conditional-Formatting_img2.png) | markdownify }
+{{ '![](Conditional-Formatting_images/Conditional-Formatting_img2.png)' | markdownify }}
 {:.image }
 
 

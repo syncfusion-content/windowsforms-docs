@@ -87,19 +87,19 @@ The various packages included are as follows:
 
 Syncfusion introduces BannerTextProvider class which provides the ability to show banner text in the textbox. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 * BannerTextProvider component is available in the Toolbox under Syncfusion tab. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2.jpeg)' | markdownify }}
 {:.image }
 
 
 * Drag the component onto the form. The control in the form, for ex, ComboBoxBarItem will get an extender provider property as in the image below. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img3.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -133,7 +133,7 @@ Sets the font style for the banner text.</td></tr>
 <tr>
 <td>
 Mode</td><td>
-Specifies the rendering mode of the banner text. The modes are,* {{ '_FocusMode_' | markdownify }} - The banner text disappears when the control gets focus.* {{ '_EditMode_' | markdownify }} - The banner text will only disappears when the control is in Edit Mode or the associated textbox is not empty.</td></tr>
+Specifies the rendering mode of the banner text. The modes are,* {{{ ''_FocusMode_'' | markdownify }}} - The banner text disappears when the control gets focus.* {{{ ''_EditMode_'' | markdownify }}} - The banner text will only disappears when the control is in Edit Mode or the associated textbox is not empty.</td></tr>
 </table>
 
 
@@ -154,11 +154,11 @@ Me.bannerTextProvider1.SetBannerText(Me.comboBoxBarItem1, New Syncfusion.Windows
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img4.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img4.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img5.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img5.jpeg)' | markdownify }}
 {:.image }
 _Note: BannerText feature can be made available for the below controls only._
 
@@ -207,7 +207,7 @@ Dim info As BannerTextInfo = bannerTextProvider1.GetBannerText(comboBoxAutoCompl
 
 info.Text = "New Banner Text"
 
-> { ![](Tools-Controls_images/Tools-Controls_img6.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img6.jpeg)' | markdownify }}
 {:.image }
  _Note: Make sure you clear the default value of the Text property of the controls before setting the banner text._
 
@@ -232,7 +232,7 @@ Follow these steps to add the Carousel control to an application through Visual 
 2. Drag the Carousel control from the Toolbox tab to the designer. The Carousel control will be added.
 3. Add items to the Carousel in either the Properties window or in the Smart Tags of the Carousel control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img7.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -457,7 +457,7 @@ The three main classes of the CommandBar framework are CommandBarController, Com
 * A CommandBar, similar to the Win32 / MFC ControlBars, is purely a container control that is responsible only for it's layout state.
 * A ControlBar enables application developers to add dockable / floatable controls to their form's toolbar layout. A common example of a ControlBar is the task pane window found in the Microsoft Office 2003 product suite. Refer to the 'Detached ControlBars' topic under the Menus Package which has explained the ControlBar in detail.
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img8.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img8.jpeg)' | markdownify }}
 {:.image }
  _Note: The CommandBar framework should be used directly in an application only when there is no requirement for XP style menus and toolbars. Refer to the Essential Tools Menus Package for implementing XP style menus and toolbars._
 
@@ -531,7 +531,7 @@ The following steps are involved in creating and setting up a simple CommandBar 
 
 * Drag the CommandBarController component from the toolbox onto the form. The CommandBarController will be created in the components area of the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img9.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -543,15 +543,15 @@ The CommandBars can also be added or removed using the Add CommandBar design tim
 
 New CommandBars will be initially docked to the top border of the form. The commandbars can then be dragged, redocked or floated to the desired location.
 
-{ ![](Tools-Controls_images/Tools-Controls_img10.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img10.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img11.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img11.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img12.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -720,7 +720,7 @@ CType(Me.commandBarController1, System.ComponentModel.ISupportInitialize).EndIni
 
 8. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img13.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -795,13 +795,13 @@ Me.commandBar1.Text = "commandBar1"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img14.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img14.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img15.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -885,7 +885,7 @@ Me.commandBar1.FloatBounds = New System.Drawing.Rectangle(419, 303, 183, 47)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img16.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -937,7 +937,7 @@ Gets / sets the current dock or float state for the CommandBar.</td></tr>
 ShowDockModeText</td><td>
 Indicates whether the text caption should be displayed on a docked CommandBar.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img17.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img17.jpeg)' | markdownify }}
 {:.image }
  _Note: The DisableDocking property must be set to 'False' for the above settings to take effect._
 
@@ -1012,7 +1012,7 @@ Me.commandBarController1.EnabledDockBorders = (CType(((Syncfusion.Windows.Forms.
 
 The following figure illustrates the above settings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img18.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1022,13 +1022,13 @@ The following step by step procedure helps you to dock the CommandBar to the tar
 
 1. Drag the CommandBarController onto the form and add a CommandBar through the design time verb.
 
-{ ![](Tools-Controls_images/Tools-Controls_img19.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img19.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Drag buttons onto the form and arrange the buttons as shown as below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img20.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1132,7 +1132,7 @@ Output
 
 The following figure shows the CommandBar docked to the right border of the Form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img21.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1168,7 +1168,7 @@ Determines whether the CommandBar will have a close button when floating.</td></
 HideDropDownButton</td><td>
 Draws the CommandBar with / without the dropdown button.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img22.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img22.jpeg)' | markdownify }}
 {:.image }
 _Note: Popup Menu can be displayed from the dropdown button of the CommandBar. Refer Popup Menu topic._
 
@@ -1192,11 +1192,11 @@ Me.commandBar1.HideDropDownButton=True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img23.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img23.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img24.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1280,11 +1280,11 @@ Me.CommandBar1.IsChevronVisible = True
 
 The following screen shot displays the chevron in the CommandBar.
 
-{ ![](Tools-Controls_images/Tools-Controls_img25.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img25.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img26.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img26.jpeg)' | markdownify }}
 {:.image }
  _Note: The chevron will be visible only when the toolbar icons do not fit in the space available in the toolbar. Normally it will not be displayed._
 
@@ -1310,13 +1310,13 @@ To display the popup menu on the dropdown button of the CommandBar, follow the s
 4. Add Items to the PopupMenu control. This can be done as follows.
 5. Add a ParentBarItem to the PopupMenu control through the Add Default ParentBarItem design time verb.
 
-{ ![](Tools-Controls_images/Tools-Controls_img27.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img27.jpeg)' | markdownify }}
 {:.image }
 
 
 6. In the properties window, select the Items property. The BarItem Collection Editor will be opened. Click Add, to add the required number of Items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img28.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1500,11 +1500,11 @@ Me.barItem3.Text = "Syncfusion Sales"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img29.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img29.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img30.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1707,11 +1707,11 @@ Me.barItem3.Text = "Syncfusion Sales"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img31.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img31.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img32.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1749,7 +1749,7 @@ Me.commandBar1.Controls.Add(Me.panel1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img33.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1843,11 +1843,11 @@ Me.commandBar1.BackColor = System.Drawing.Color.Wheat
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img34.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img34.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img35.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img35.jpeg)' | markdownify }}
 {:.image }
  _Note: The ResetBackColor() method of the CommandBarController can be used to reset it's BackColor property to the default value. Similarly, the ResetBackColor() method of the CommandBar can be used to reset it's BackColor property to the default value._
 
@@ -1889,7 +1889,7 @@ Me.commandBar1.HideGripper=True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img36.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1927,11 +1927,11 @@ Me.commandBar3.Font = New System.Drawing.Font("Comic Sans MS", 8.25F, System.Dra
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img37.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img37.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img38.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img38.jpeg)' | markdownify }}
 {:.image }
  _Note: The ResetFont() method can be used to reset the Font property to it's default value._
 
@@ -2001,7 +2001,7 @@ Me.commandBar1.IntegralHeight = 2
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img39.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img39.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2059,7 +2059,7 @@ this.commandBar1.Cursor = System.Windows.Forms.Cursors.Hand;
 
 Me.commandBar1.Cursor = System.Windows.Forms.Cursors.Hand
 
-> { ![](Tools-Controls_images/Tools-Controls_img40.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img40.jpeg)' | markdownify }}
 {:.image }
  _Note: The ResetCursor() method can be used to reset the Cursor property to it's default value._
 
@@ -2205,7 +2205,7 @@ Me.commandBarController1.ThemesEnabled=True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img41.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img41.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2247,11 +2247,11 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img42.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img42.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img43.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img43.jpeg)' | markdownify }}
 {:.image }
  _Note : For the Office2003 and VS2005 styles to take effect, the ThemesEnabled property should be set to 'False'._
 
@@ -2293,11 +2293,11 @@ Me.commandBarController1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Co
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img44.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img44.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img45.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img45.jpeg)' | markdownify }}
 {:.image }
 _Note: The Style property must be set to 'Office2007' or 'Office2007Outlook' to get the Office 2007 theme effect._
 
@@ -2563,7 +2563,7 @@ The following step by step procedure helps you to save and load the layout state
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img46.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img46.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3051,7 +3051,7 @@ Run the sample, dock the CommandBars to any target location and save it's state 
 
 The following screen shot shows the saved layout state of the CommandBar object after closing the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img47.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img47.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3893,7 +3893,7 @@ The CommandBars framework should be used only with the standard .NET Menus / Too
 
 But it is possible to add a CommandBar to a form containing XP Menus through code as shown in the sample screen shot.
 
-{ ![](Tools-Controls_images/Tools-Controls_img48.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img48.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3907,7 +3907,7 @@ Docking Manager is the component that supports Visual Studio .NET style docking 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img49.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -4010,13 +4010,13 @@ The following steps outline the sequence of steps involved in setting up a simpl
 1. Open the host form within the windows forms designer and add the controls that should be implemented as docking windows.
 2. Drag a DockingManager control from the toolbox onto the form. The docking manager is implemented as an extender provider and will add the EnableDocking on dockingManager property to all the child controls that are dropped in the form as shown in the image below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img50.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img50.jpeg)' | markdownify }}
 {:.image }
 
 
 3. Turn on the EnableDocking on dockingManager property for those controls that should be hosted as docking windows. Setting this property will immediately transform the control into a docking window by creating a dockable container and adding the control to it. The control is now a full-featured docking window that is docked to the form's left border, by default as in the image displayed below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img51.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img51.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4024,25 +4024,25 @@ The following steps outline the sequence of steps involved in setting up a simpl
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img52.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img52.jpeg)' | markdownify }}
 {:.image }
 
 
 5. DockingManager comes with enormous appearance properties, whose settings will be applied to all the docked controls.
 
-{ ![](Tools-Controls_images/Tools-Controls_img53.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img53.jpeg)' | markdownify }}
 {:.image }
 
 
 6. The form's docking layout can be set up by dragging the dock-enabled controls and redocking or floating them at the desired locations by using DragProviderStyle property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img54.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img54.jpeg)' | markdownify }}
 {:.image }
 
 
 7. Use the AutoHideOnLoad and HiddenOnLoad extended properties for setting the autohidden and hidden dock states for the controls.
 
-{ ![](Tools-Controls_images/Tools-Controls_img55.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img55.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4196,7 +4196,7 @@ Me.dockingManager.DockControl(Me.listBox1, Me.listBox2,Syncfusion.Windows.Forms.
 
 The resulting form will look like the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img56.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img56.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4237,17 +4237,17 @@ Me.dockingManager.DockControl(Me.listBox1, Me.listBox2,Syncfusion.Windows.Forms.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img57.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img57.jpeg)' | markdownify }}
 {:.image }
 
 
 At runtime, docking style can be selected easily using the context menu.
 
-{ ![](Tools-Controls_images/Tools-Controls_img58.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img58.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img59.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img59.jpeg)' | markdownify }}
 {:.image }
  _Note: At run time, docking style can also be set with the help of_ Dock Arrows _provided by the DragProviderStyle property._
 
@@ -4259,7 +4259,7 @@ At Design Time
 
 The docked controls can be tabbed in the designer, by just dragging and dropping into one another. DockingManager helps you in doing this using different DragProviderStyle.
 
-{ ![](Tools-Controls_images/Tools-Controls_img60.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img60.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4267,7 +4267,7 @@ At RunTime
 
 DockingManager helps you in dragging and dropping the docked controls at run time, using different DragProviderStyle. This styles display prediction Bands, which lets you decide whether you can drop the control in that location.
 
-{ ![](Tools-Controls_images/Tools-Controls_img61.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img61.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4289,7 +4289,7 @@ this.dockingManager.DockControl(this.Panel1, this.Panel2, Syncfusion.Windows.For
 
 Me.dockingManager.DockControl(Me.Panel1, Me.Panel2, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200, True)
 
-> { ![](Tools-Controls_images/Tools-Controls_img62.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img62.jpeg)' | markdownify }}
 {:.image }
  _Note: In the Tabbed style, the control is docked as a tabbed window along with the dock target. This style is not applicable when the dock target is the host form / user control._ 
 
@@ -4313,7 +4313,7 @@ Description</td></tr>
 DockTabAlignment</td><td>
 Property which sets the value indicating the alignment of the dock tabs. The different alignment options are,Top, Bottom, Left and Right.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img63.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img63.jpeg)' | markdownify }}
 {:.image }
  _Note: This property can also be set easily using_ Task Window.
 
@@ -4335,7 +4335,7 @@ Me.dockingManager.DockTabAlignment = Syncfusion.Windows.Forms.Tools.DockTabAlign
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img64.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img64.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4423,7 +4423,7 @@ Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rcfrm.Right+25,rcfrm.B
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img65.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img65.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4461,7 +4461,7 @@ Me.dockingManager1.DisallowFloating = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img66.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img66.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4553,7 +4553,7 @@ Docking manager provides auto hide facility to the docked control. When the auto
 
 The below image displays an autohidden docked control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img67.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img67.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4623,11 +4623,11 @@ Me.dockingManager1.FullCaptionsInAutoHideMode = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img68.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img68.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img69.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img69.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4663,7 +4663,7 @@ DockingManager.AnimationStep = 1000;  //(arg.Bounds.Width)
 
 DockingManager.AnimationStep = 1000;  '(arg.Bounds.Width)
 
-> { ![](Tools-Controls_images/Tools-Controls_img70.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img70.jpeg)' | markdownify }}
 {:.image }
  _Note: For a control to show animation in autohide mode, the animation step value should be more than the width of the particular hidden control._
 
@@ -4693,7 +4693,7 @@ Me.dockingManager1.EnableDragAutoHiddenTabs = True
 
  Caption for the docked controls can be enabled using ShowCaption property. By default this property is true. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img71.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img71.png)' | markdownify }}
 {:.image }
 
 
@@ -4737,17 +4737,17 @@ Me.dockingManager.SetDockLabel(Me.listBox1, "Syncfusion ASP.NET products")
 
 Me.dockingManager1.DockLabelAlignment = Syncfusion.Windows.Forms.Tools.DockLabelAlignmentStyle.Left
 
-{ ![](Tools-Controls_images/Tools-Controls_img72.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img72.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img73.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img73.jpeg)' | markdownify }}
 {:.image }
 
 
 Custom CaptionLabel aligned to left
 
-> { ![](Tools-Controls_images/Tools-Controls_img74.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img74.jpeg)' | markdownify }}
 {:.image }
  _Note: DockLabelAlignment can also be set easily using_ Task Window.
 
@@ -4812,7 +4812,7 @@ Me.DockingManager1.SetDockIcon(Me.ListBox1, 2)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img75.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img75.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4840,7 +4840,7 @@ This overloaded method returns the index of the image associated with the dockin
 SetDockLabel</td><td>
 Sets the text to be displayed in the docking window caption.Ctrl - Indicates the docking window.strText - A string value representing the text caption.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img76.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img76.jpeg)' | markdownify }}
 {:.image }
  _Note:_ Background _and_ foreground _appearance of the captions can be customized._
 
@@ -4854,7 +4854,7 @@ The buttons available for the docked control and the properties which controls t
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img77.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img77.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4866,7 +4866,7 @@ Maximize Button
 
 Maximize button can be enabled by using the MaximizeButtonEnabled property. This maximize button allows users to maximize / restore a docking window, so that a clear view of the contents can be made visible.
 
-> { ![](Tools-Controls_images/Tools-Controls_img78.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img78.jpeg)' | markdownify }}
 {:.image }
  _Note: The Maximize button will be visible only if any other control is docked to the bottom of the former control._
 
@@ -4878,7 +4878,7 @@ AutoHide Button
 
 Setting AutoHideEnabled property shows or hides the auto hide button in the docked control. Clicking this button will autohide the docked controls.
 
-> { ![](Tools-Controls_images/Tools-Controls_img79.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img79.jpeg)' | markdownify }}
 {:.image }
  _Note: Docking Manager let you customize the above default buttons and also add custom caption buttons. See_ Custom Caption Buttons _for more details._
 
@@ -4892,7 +4892,7 @@ Custom Caption Collection Editor which can be accessed using DockingManager.Capt
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img80.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img80.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4900,7 +4900,7 @@ Adding and customizing caption Buttons
 
 In the CaptionButton Collection Editor, click "Add" to add a new caption button. To customize the caption button, modify the properties provided to the right of the members in the editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img81.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img81.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4994,11 +4994,11 @@ me.dockingManager1.ShowCustomButtonsInFloating = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img82.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img82.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img83.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img83.jpeg)' | markdownify }}
 {:.image }
 _Note: This feature is not applicable for VS2005 (default) visual style._
 
@@ -5014,7 +5014,7 @@ Dragging and Docking at DesignTime
 
 DockingManager supports dragging and docking of the dockable controls at the design time itself. It also lets you float the controls.
 
-{ ![](Tools-Controls_images/Tools-Controls_img84.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img84.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5022,7 +5022,7 @@ Property Settings using Task Window
 
 The Task Window of the DockingManager at design time lets you apply certain Appearance and behavior settings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img85.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img85.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5034,11 +5034,11 @@ The following runtime features are discussed in this section.
 
 DockingManager lets you specify the keyboard key combinations, to tab through the docked controls. The property BrowsingKey of the docking manager, provides modifiers like CTRL, SHIFT, ALT Keys and keys like A, B, C, 0, 1 etc., User can also provide a combination of modifiers and the keys. Example "CTRL + 0", as shown in the image below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img86.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img86.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img87.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img87.jpeg)' | markdownify }}
 {:.image }
  _Note: Before we set this property for docking manager, we have to set TabStop property to true and TabIndex property with the appropriate value. Otherwise its BrowsingKey property will not work._
 
@@ -5098,11 +5098,11 @@ Me.TreeViewAdv1.TabIndex = 0
 
 By default, tooltips will be displayed for the caption buttons in a docked control when the mouse is moved over it.
 
-{ ![](Tools-Controls_images/Tools-Controls_img88.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img88.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img89.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img89.jpeg)' | markdownify }}
 {:.image }
  _Note: EnableSuperTooltip property which is discussed below, should be set to false to effect the above default tooltip._
 
@@ -5150,13 +5150,13 @@ Me.dockingManager1.SuperToolTip = Me.superToolTip1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img90.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img90.jpeg)' | markdownify }}
 {:.image }
 
 
 Text for the supertooltip and other customizing options can be specified for a particular button by using the CaptionButton Collection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img91.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img91.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5188,15 +5188,15 @@ Me.dockingManager1.EnableAutoHideTabContextMenu = True
 
 The below images illustrates context menu features.
 
-{ ![](Tools-Controls_images/Tools-Controls_img92.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img92.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img93.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img93.jpeg)' | markdownify }}
 {:.image }
  _Note: If MDIContainer property of the form is set to true, then the context menu will include MDI child option. You can observe that the MDI Child option is disabled for the above image. This is because MDIContainer property is false for this case._
 
-{ ![](Tools-Controls_images/Tools-Controls_img94.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img94.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5204,7 +5204,7 @@ Context Menu for TabbedControls
 
 Context menu for the tabbed controls is similar to the default context menu like the above image. When TabbedMDIManager component is used, context menu will include TabbedDocument instead of MDI child.
 
-{ ![](Tools-Controls_images/Tools-Controls_img95.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img95.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5268,11 +5268,11 @@ Me.DockingManager1.DockTabHeight = 30
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img96.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img96.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img97.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img97.jpeg)' | markdownify }}
 {:.image }
  _Note: ResetDockTabFont and ResetDockTabHeight methods lets you reset the above settings._
 
@@ -5318,7 +5318,7 @@ Description</td></tr>
 AutoHideTabFont</td><td>
 Gets or sets the tab for the autohide tab control.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img98.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img98.jpeg)' | markdownify }}
 {:.image }
  _Note: This setting will effect only with DockingManager.VisualStyle property set as Default._
 
@@ -5346,7 +5346,7 @@ Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawin
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img99.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img99.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5364,7 +5364,7 @@ Description</td></tr>
 AutoHideTabHeight</td><td>
 Gets or sets the height of the autohide tab control.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img100.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img100.jpeg)' | markdownify }}
 {:.image }
  _Note: This setting will effect only with DockingManager.VisualStyle property set as Default._
 
@@ -5388,7 +5388,7 @@ Me.DockingManager1.AutoHideTabHeight = 35
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img101.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img101.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5418,7 +5418,7 @@ Gets or sets the font for the active caption.</td></tr>
 ActiveCaptionForeGround</td><td>
 Indicates the color of the caption text in the active state.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img102.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img102.jpeg)' | markdownify }}
 {:.image }
  _Note: These settings will effect only with DockingManager.VisualStyle property set as Default._
 
@@ -5444,7 +5444,7 @@ Me.DockingManager1.ActiveCaptionForeGround = System.Drawing.Color.Red
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img103.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img103.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5468,7 +5468,7 @@ Gets or sets the font of the inactive caption.</td></tr>
 InactiveCaptionForeGround</td><td>
 Indicates the color of the caption text in inactive state.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img104.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img104.jpeg)' | markdownify }}
 {:.image }
  _Note: These settings will effect only with DockingManager.VisualStyle property set as Default._
 
@@ -5496,7 +5496,7 @@ Me.DockingManager1.InActiveCaptionForeGround = System.Drawing.Color.MediumSlateB
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img105.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img105.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5580,7 +5580,7 @@ Description</td></tr>
 ActiveCaptionBackground</td><td>
 Sets background for the caption area using BrushInfo object.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img106.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img106.jpeg)' | markdownify }}
 {:.image }
  _Note: This setting will effect only with DockingManager.VisualStyle property set as Default._
 
@@ -5602,7 +5602,7 @@ Me.DockingManager1.ActiveCaptionBackground = New Syncfusion.Drawing.BrushInfo(Sy
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img107.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img107.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5622,7 +5622,7 @@ Description</td></tr>
 InactiveCaptionBackground</td><td>
 Sets caption background of the inactive docked control using BrushInfo object.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img108.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img108.jpeg)' | markdownify }}
 {:.image }
  _Note: This setting will effect only with DockingManager.VisualStyle property set as Default._ 
 
@@ -5690,7 +5690,7 @@ Me.DockingManager1.BorderColor = System.Drawing.Color.Blue
 
 Me.DockingManager1.PaintBorders = True
 
-{ ![](Tools-Controls_images/Tools-Controls_img109.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img109.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5726,7 +5726,7 @@ Me.DockingManager1.HostFormClientBorder = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img110.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img110.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5764,7 +5764,7 @@ Me.dockingManager1.SplitterWidth = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img111.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img111.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5803,7 +5803,7 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 
 
-{ ![image](Tools-Controls_images/Tools-Controls_img112.png) | markdownify }
+{{ '![image](Tools-Controls_images/Tools-Controls_img112.png)' | markdownify }}
 {:.image }
 
 
@@ -5827,7 +5827,7 @@ Me.dockingManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Si
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img113.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img113.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5855,7 +5855,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red);
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img114.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img114.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5879,14 +5879,14 @@ Me.dockingManager1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img115.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img115.jpeg)' | markdownify }}
 {:.image }
 
 
 * Visual Studio 2010
 * Metro Theme
 
-{ ![image](Tools-Controls_images/Tools-Controls_img116.png) | markdownify }
+{{ '![image](Tools-Controls_images/Tools-Controls_img116.png)' | markdownify }}
 {:.image }
 
 
@@ -5927,15 +5927,15 @@ Me.dockingManager1.DragProviderStyle = Syncfusion.Windows.Forms.Tools.DragProvid
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img117.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img117.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img118.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img118.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img119.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img119.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5963,15 +5963,15 @@ Indicates where the user can dock the controls in a form using the drag provider
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img120.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img120.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img121.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img121.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img122.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img122.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6013,7 +6013,7 @@ Me.dockingManager1.DockToFill = True;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img123.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img123.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6083,7 +6083,7 @@ Non-MDI forms, however, do not have any such client window and all non-dockable 
 
 The Essential Tools DockingClientPanel control helps overcome this limitation by providing an auto-resized client surface on which a form's non-dockable controls may be located.
 
-{ ![](Tools-Controls_images/Tools-Controls_img124.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img124.jpeg)' | markdownify }}
 {:.image }
 _Note: The DockingClientPanel control is intended only for use with forms that do not have the MDIContainer style set._ 
 
@@ -6207,7 +6207,7 @@ Me.dockingClientPanel1.ResumeLayout(False)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img125.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img125.png)' | markdownify }}
 {:.image }
 
 
@@ -6313,7 +6313,7 @@ Below image illustrates a DockingClientPanel with the foreground and background 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img126.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img126.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6367,7 +6367,7 @@ Me.dockingClientPanel1.AutoScrollMinSize = New System.Drawing.Size(1, 1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img127.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img127.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6819,7 +6819,7 @@ ProvidePersistenceID Event, How to avoid flickering while loading dock state?,
 
 How to serialize or deserialize the docking state for a docked control on loading the application?
 
-> { ![](Tools-Controls_images/Tools-Controls_img128.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img128.jpeg)' | markdownify }}
 {:.image }
 _Note: PersistState property mechanism assumes that the DockingManger is hosted on a form and captures the docking layout on the host form’s closing event. When DockingManager is hosted on a UserControl, LoadDockState and SaveDockState methods have to be called explicitly, on the Load and Closed events of the form that hosts the UserControl._
 
@@ -6950,21 +6950,21 @@ End Sub
 
 5. Run the application, click the buttons and see the respective transitions.
 
-{ ![](Tools-Controls_images/Tools-Controls_img129.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img129.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img130.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img130.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img131.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img131.jpeg)' | markdownify }}
 {:.image }
  _Note: You can set the docked control as an MDI Child in an easy method, by using the "MDI Child" option in the_ context menu.
 
 A sample that demonstrates MDI child transition is available in the following sample installation path.
 
-_C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\MDI\CS_
+_C:\Users\<User>\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\MDI\CS_
 
 Office 2007 Style for MDI Child Form
 
@@ -6998,7 +6998,7 @@ Me.dockingManager1.Office2007MdiColorScheme = Office2007Theme.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img132.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img132.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7010,11 +7010,11 @@ How to avoid flickering while creating MDI child form?,How to detect whether a p
 
 Docking windows framework provides full-fledged support for nested docking and Floating at runtime without implementing a single piece of code. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img133.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img133.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img134.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img134.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7707,7 +7707,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img135.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img135.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9049,7 +9049,7 @@ Gets the dockable control for which the caption is being drawn.</td></tr>
 IsActiveCaption</td><td>
 Gets the active / inactive state of the docking window.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img136.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img136.jpeg)' | markdownify }}
 {:.image }
  _Note: If the control is in floating state, DockingManager.ProvideGraphicsItems event will not get triggered._
 
@@ -9205,7 +9205,7 @@ Caption Button Collection:
 
 In Visual studio 2010, if you double-click on the docked window, the _caption control_ moves to _floating_ state and displays the _Caption Button_ collections as shown in the following screen shot. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img137.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img137.png)' | markdownify }}
 {:.image }
 
 
@@ -9219,7 +9219,7 @@ You can maximize/restore the dock panel to the earlier floating window position 
 
 The following screen shot shows how to restore a dock panel using _maximize_ and _restore_ buttons.
 
-{ ![](Tools-Controls_images/Tools-Controls_img138.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img138.png)' | markdownify }}
 {:.image }
 
 
@@ -9229,7 +9229,7 @@ You can auto-hide a dock panel by selecting the “Auto-Hide” menu item in the
 
 The following screen shot shows how to auto-hide a dock panel.
 
-{ ![](Tools-Controls_images/Tools-Controls_img139.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img139.png)' | markdownify }}
 {:.image }
 
 
@@ -9237,7 +9237,7 @@ Auto Hide State:
 
 The following screen shot shows a dock panel in auto-hide state.
 
-{ ![](Tools-Controls_images/Tools-Controls_img140.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img140.png)' | markdownify }}
 {:.image }
 
 
@@ -9315,7 +9315,7 @@ Description</td></tr>
 <tr>
 <td>
 ActivateControl</td><td>
-Activates the docked control which is passed as a parameter to this method. This method will be effective only when the control is tabbed to other control or controls. This method can be called from a handler for DockingManager.NewDockStateEndLoad Event. The parameter is,{{ '_Ctrl_' | markdownify }} - Indicates the docking window.</td></tr>
+Activates the docked control which is passed as a parameter to this method. This method will be effective only when the control is tabbed to other control or controls. This method can be called from a handler for DockingManager.NewDockStateEndLoad Event. The parameter is,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docking window.</td></tr>
 </table>
 
 
@@ -9369,7 +9369,7 @@ Description</td></tr>
 <tr>
 <td>
 GetDockingStyle</td><td>
-Returns the current docking style of the control. The return value for this method would be docking style value, that specifies the dock type / position. The docked control for which the dock style is to be identified should be passed as a parameter to this method. The parameter is,{{ '_Ctrl_' | markdownify }} - Indicates the docked control for which the DockStyle needs to be retrieved.</td></tr>
+Returns the current docking style of the control. The return value for this method would be docking style value, that specifies the dock type / position. The docked control for which the dock style is to be identified should be passed as a parameter to this method. The parameter is,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control for which the DockStyle needs to be retrieved.</td></tr>
 </table>
 
 
@@ -9567,7 +9567,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img141.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img141.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9811,7 +9811,7 @@ Private Sub GetDockingRelationship(ByVal dockedControl As Control)
 
 
 
-                If count &lt;&gt; dockedctrls.Count - 1 Then
+                If count <> dockedctrls.Count - 1 Then
 
                     targetControl = baseController.HostControl.Controls(0)
 
@@ -9847,7 +9847,7 @@ Private Sub GetDockingRelationship(ByVal dockedControl As Control)
 
 
 
-                If targetControl.Name &lt;&gt; dockedControl.Name Then
+                If targetControl.Name <> dockedControl.Name Then
 
                     statusMessage += "The tab group primary control is " + targetControl.Name + "."
 
@@ -9927,11 +9927,11 @@ Description</td></tr>
 <tr>
 <td>
 GetDockAbility</td><td>
-Retrieves the dock ability of the control. The parameter is,{{ '_Ctrl_' | markdownify }} - Indicates the docked control for which DockAbility has to be obtained.</td></tr>
+Retrieves the dock ability of the control. The parameter is,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control for which DockAbility has to be obtained.</td></tr>
 <tr>
 <td>
 SetDockAbility</td><td>
-Sets the dock ability of the control.{{ '_Ctrl_' | markdownify }} - Indicates the docked control for which DockAbility need to be set.</td></tr>
+Sets the dock ability of the control.{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control for which DockAbility need to be set.</td></tr>
 </table>
 
 
@@ -9979,11 +9979,11 @@ Description</td></tr>
 <tr>
 <td>
 GetControlSize</td><td>
-Gets the size of the docked or the floating control, by passing the control as a parameter to this method. The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the docking window.</td></tr>
+Gets the size of the docked or the floating control, by passing the control as a parameter to this method. The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docking window.</td></tr>
 <tr>
 <td>
 SetControlSize</td><td>
-Sets the new size (width, Height) for the docked or the floating control, by passing the control as a parameter to this method. The default value of size is Empty. The parameters are,{{ '_Ctrl_''  | markdownify }}- Indicates the docking window.{{ '_Size_' | markdownify }} - Specifies the new size for the control.</td></tr>
+Sets the new size (width, Height) for the docked or the floating control, by passing the control as a parameter to this method. The default value of size is Empty. The parameters are,{{{ ''_Ctrl_'' ' | markdownify }}}- Indicates the docking window.{{{ ''_Size_'' | markdownify }}} - Specifies the new size for the control.</td></tr>
 </table>
 
 
@@ -10320,7 +10320,7 @@ The DockingManager.Controls property returns an enumerator that may be used for 
 
 Step 1: Create the respective controls and dock the control through design by setting EnableDocking on dockingManagerproperty to true and follow the below given steps to enable, access and modify the docked controls.
 
-{ ![](Tools-Controls_images/Tools-Controls_img142.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img142.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10388,7 +10388,7 @@ Next ctrl
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img143.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img143.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10440,7 +10440,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 4. Tab the controls as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img144.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img144.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10590,7 +10590,7 @@ MDI Child Transition
 
  Normally tabbed-MDI is used in MDI applications where the child forms are the children that get tabbed. But, we could also use tabbed-MDI with UserControls as children and that are also dockable. The sample attached here shows how the UserControls can be used as tabbed-MDI children in association with the DockingManager.
 
-> { ![](Tools-Controls_images/Tools-Controls_img145.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img145.jpeg)' | markdownify }}
 {:.image }
  _Note: Set the IsMdiContainer property of the form to true. Otherwise this will not work._
 
@@ -10654,7 +10654,7 @@ Me.dockingManager1.SetAsMDIChild(Me.userControl31,True)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img146.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img146.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10684,7 +10684,7 @@ Description</td></tr>
 <tr>
 <td>
 ShowMenu</td><td>
-Show's the docking caption context menu at the specified point (Pt). The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the control for which dock / floating state is been queried.{{ '_Pt_' | markdownify }} - Indicates the location of the menu to be displayed.</td></tr>
+Show's the docking caption context menu at the specified point (Pt). The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the control for which dock / floating state is been queried.{{{ ''_Pt_'' | markdownify }}} - Indicates the location of the menu to be displayed.</td></tr>
 </table>
 
 
@@ -10732,7 +10732,7 @@ Description</td></tr>
 <tr>
 <td>
 IsFloating</td><td>
-Gets the value indicating whether the docked control is floating or not.{{ '_Ctrl_' | markdownify }} - Indicates the control for which dock / floating state is been queried.</td></tr>
+Gets the value indicating whether the docked control is floating or not.{{{ ''_Ctrl_'' | markdownify }}} - Indicates the control for which dock / floating state is been queried.</td></tr>
 </table>
 
 
@@ -10855,7 +10855,7 @@ Description</td></tr>
 <tr>
 <td>
 SetFloatOnly</td><td>
-Make the docked control a float only control.{{ '_Ctrl_' | markdownify }} - The control for which docking is enabled.{{' _bFloating_' | markdownify }} - Represents a boolean value, TRUE, to disabled docking.</td></tr>
+Make the docked control a float only control.{{{ ''_Ctrl_'' | markdownify }}} - The control for which docking is enabled.{{' _bFloating_' | markdownify }} - Represents a boolean value, TRUE, to disabled docking.</td></tr>
 </table>
 
 
@@ -10875,7 +10875,7 @@ Me.dockingManager1.SetFloatOnly(Me.listBox2, True);
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img147.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img147.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10897,7 +10897,7 @@ Description</td></tr>
 <tr>
 <td>
 SetAutoHideOnLoad</td><td>
-AutoHides the docked control when the application loads. The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the docked control.{{ '_bautohide_' | markdownify }} - Value indicating true or false.</td></tr>
+AutoHides the docked control when the application loads. The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control.{{{ ''_bautohide_'' | markdownify }}} - Value indicating true or false.</td></tr>
 </table>
 
 
@@ -10985,7 +10985,7 @@ Description</td></tr>
 <tr>
 <td>
 SetHiddenOnLoad</td><td>
-Hides the docked control when the application loads. The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the docked control.{{ '_bhidden_' | markdownify }} - Value indicating true or false.</td></tr>
+Hides the docked control when the application loads. The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control.{{{ ''_bhidden_'' | markdownify }}} - Value indicating true or false.</td></tr>
 </table>
 
 
@@ -11113,7 +11113,7 @@ Dim di As Syncfusion.Windows.Forms.Tools.DockInfo = dhc.GetSerCurrentDI()
 
 The Editors package is a comprehensive collection of controls most commonly used in creating data entry forms. All the editor controls architectures with a view to providing simple and powerful means for capturing data input, validating the data and displaying the data with the appropriate formatting. They also offer complete support for data binding, inter nationalization and localization.
 
-{ ![](Tools-Controls_images/Tools-Controls_img148.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img148.png)' | markdownify }}
 {:.image }
 
 
@@ -11331,13 +11331,13 @@ Features
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img149.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img149.jpeg)' | markdownify }}
 {:.image }
 
 
 * Office2007Style - Added ability to set all the three color schemes, Blue, Silver and Black for Office2007 style.
 
-{ ![](Tools-Controls_images/Tools-Controls_img150.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img150.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11504,13 +11504,13 @@ The AutoComplete control is an extender control that provides AutoCompletion ser
 
 AutoCompletion can be defined as prompting the user with probable matches during data entry. This feature is similar to the AutoCompletion of the web addresses in the Internet Explorer address box.
 
-{ ![](Tools-Controls_images/Tools-Controls_img151.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img151.png)' | markdownify }}
 {:.image }
 
 
 AutoCompletion is a feature enhancement for edit controls. It expands strings that have been partially entered in an edit control into complete strings based on a list of previously specified strings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img152.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img152.png)' | markdownify }}
 {:.image }
 
 
@@ -11555,33 +11555,33 @@ This tutorial illustrates the usage of the AutoComplete control for TextBox, wit
 
 1. Create a new Windows Forms application and open the main form for the application in the designer. Add the Syncfusion controls to the VS .NET toolbox, if you have not done so already. Drag-and-drop an AutoComplete control onto the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img153.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img153.jpeg)' | markdownify }}
 {:.image }
 
 
 2. The AutoComplete control will appear as a component in the component tray of the design environment. Similarly add aText box, two labels and a button to make the form interactive. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img154.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img154.jpeg)' | markdownify }}
 {:.image }
 
 
 3. When the AutoComplete control is added to the form, the AutoComplete on autocomplete property is added to the text box control properties. This property specifies the type of autocompletion to be provided by the autoComplete1 control for the comboBox1 control. The default value for AutoComplete on autoComplete1 will be set to AutoCompleteModes.Disabled. Use the drop-down box provided in the property grid to change it to the mode of autocompletion toAutoSuggest. The different modes of autocompletion are detailed in AutoComplete Modes topic. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img155.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img155.jpeg)' | markdownify }}
 {:.image }
 
 
 4. Set AutoComplete.AutoAddItem property to true. Run the application, type any text in the textbox and hit Enter to save the entry. Select the text, delete it and then retype the first letter of the text you saved. You should see autocompletion of the letter, as shown below.
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img156.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img156.jpeg)' | markdownify }}
 {:.image }
  _Note: The text entered can be saved only when AutoAddItem property is set to True._
 
-{ ![](Tools-Controls_images/Tools-Controls_img157.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img157.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img158.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img158.jpeg)' | markdownify }}
 {:.image }
  _Note: We can also add a list of autocomplete items through designer, which can used as a source for AutoComplete control. SeeSee_ Source for AutoComplete Control _topic for details._
 
@@ -11703,7 +11703,7 @@ Me.Controls.Add(Me.textBox1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img159.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img159.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11719,7 +11719,7 @@ AutoComplete Popup
 
 When a control is associated with an AutoComplete control, a popup will be displayed, based on the source. This section illustrates various components of the AutoComplete Popup with their properties which can control the appearance and behavior of the components.
 
-{ ![](Tools-Controls_images/Tools-Controls_img160.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img160.png)' | markdownify }}
 {:.image }
 
 
@@ -11743,7 +11743,7 @@ Description</td></tr>
 AutoAddItem</td><td>
 Specifies whether the current item in the target control is to be automatically added during validation, when the ENTER key is pressed.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img161.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img161.jpeg)' | markdownify }}
 {:.image }
  _Note: The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None._
 
@@ -11771,11 +11771,11 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img162.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img162.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img163.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img163.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also set multiple columns. Refer_ Multiple Columns _to know more._
 
@@ -11799,7 +11799,7 @@ Specifies whether to show the CloseButton at the bottom right of the DropDownCon
 ShowGripper</td><td>
 Specifies whether to show gripper at the bottom right of a DropDownContainer. By default it is true.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img164.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img164.jpeg)' | markdownify }}
 {:.image }
  _Note: The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method._
 
@@ -11869,7 +11869,7 @@ Me.autoComplete1.CaseSensitive = True
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image130_129.jpg](Tools-Controls_images/Tools-Controls_img165.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image130_129.jpg](Tools-Controls_images/Tools-Controls_img165.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12037,7 +12037,7 @@ Me.autoComplete1.PreferredWidth = 300
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img166.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img166.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12085,7 +12085,7 @@ Me.autoComplete1.CategoryName = "FTP"
 
 Me.autoComplete1.DataSource = DataTable1
 
-> { ![](Tools-Controls_images/Tools-Controls_img167.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img167.jpeg)' | markdownify }}
 {:.image }
  _Note: We can set External datasource for the autocompletion. See_ External DataSource _topic._
 
@@ -12113,7 +12113,7 @@ Description</td></tr>
 <tr>
 <td>
 AutoCompleteSource</td><td>
-Auto completion source for the control. The different sources are,{{ '_FileSystem_' | markdownify }} - Files system as source,{{ '_HistoryList_' | markdownify }} - Includes all the URLs in the history list,{{ '_RecentlyUsedList_' | markdownify }} - Includes the list of most recently used URLs,{{ '_AllUrl_' | markdownify }} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{ '_AllSystemSources_' | markdownify }} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompletMode is set to values other than default value),{{ '_ListItems_' | markdownify }} - Specifies the items in the control, {{ '_FileSystemDirectories_' | markdownify }} - Specifies directory names alone without file names,{{ '_CustomSource_' | markdownify }} - Uses the string values entered in AutoCompleteCustomSource property and{{ '_None_' | markdownify }} - There will not be any source for the auto completion.</td></tr>
+Auto completion source for the control. The different sources are,{{{ ''_FileSystem_'' | markdownify }}} - Files system as source,{{{ ''_HistoryList_'' | markdownify }}} - Includes all the URLs in the history list,{{{ ''_RecentlyUsedList_'' | markdownify }}} - Includes the list of most recently used URLs,{{{ ''_AllUrl_'' | markdownify }}} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{{ ''_AllSystemSources_'' | markdownify }}} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompletMode is set to values other than default value),{{{ ''_ListItems_'' | markdownify }}} - Specifies the items in the control, {{{ ''_FileSystemDirectories_'' | markdownify }}} - Specifies directory names alone without file names,{{{ ''_CustomSource_'' | markdownify }}} - Uses the string values entered in AutoCompleteCustomSource property and{{{ ''_None_'' | markdownify }}} - There will not be any source for the auto completion.</td></tr>
 </table>
 
 
@@ -12133,7 +12133,7 @@ Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.History
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img168.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img168.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12141,13 +12141,13 @@ Custom Source
 
 AutoComplete control lets you to specify a set of auto completion text using String Collection Editor. This editor is invoked using Control.AutoCompleteCustomSource property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img169.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img169.jpeg)' | markdownify }}
 {:.image }
 
 
 At run time when the user types the first letter, it will automatically display the auto completion list added through this editor.
 
-> { ![](Tools-Controls_images/Tools-Controls_img170.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img170.jpeg)' | markdownify }}
 {:.image }
  _Note: Control.AutoCompleteSource property should be set to "CustomSource" for this setting to be effective._
 
@@ -12179,7 +12179,7 @@ Me.textBox1.AutoCompleteCustomSource.AddRange(New String[] {"Customization Setti
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img171.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img171.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12197,7 +12197,7 @@ Description</td></tr>
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Gets or sets an option that controls how automatic completion, works for the control. The available modes are,{{ '_None_' | markdownify }} - No autocompletion will be provided for this target edit control,{{ '_Suggest_' | markdownify }} - The autocompletion will be presented as a list of probable matches in the form of a drop-down window,{{ '_Append_' | markdownify }} - The closest match will be added to the partial string in the edit control and{{ '_SuggestAppend_' | markdownify }} - A list of probable matches will be displayed as well as the entry will be completed in the edit control with the closest match.</td></tr>
+Gets or sets an option that controls how automatic completion, works for the control. The available modes are,{{{ ''_None_'' | markdownify }}} - No autocompletion will be provided for this target edit control,{{{ ''_Suggest_'' | markdownify }}} - The autocompletion will be presented as a list of probable matches in the form of a drop-down window,{{{ ''_Append_'' | markdownify }}} - The closest match will be added to the partial string in the edit control and{{{ ''_SuggestAppend_'' | markdownify }}} - A list of probable matches will be displayed as well as the entry will be completed in the edit control with the closest match.</td></tr>
 </table>
 
 
@@ -12217,7 +12217,7 @@ Me.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppe
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img172.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img172.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12302,7 +12302,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img173.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img173.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12326,11 +12326,11 @@ Specifies the collection of columns in the auto complete dropdown, when AutoComp
 <tr>
 <td>
 MatchMode</td><td>
-Specifies the modes in which the AutoCompleteControl fills the history list for the current text in the current edit control.The values are, {{ '_Manual and_'  | markdownify }}{{ '_Automatic (default)._' | markdownify }}</td></tr>
+Specifies the modes in which the AutoCompleteControl fills the history list for the current text in the current edit control.The values are, {{{ ''_Manual and_' ' | markdownify }}}{{{ ''_Automatic (default)._'' | markdownify }}}</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img174.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img174.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12408,7 +12408,7 @@ Me.autoCompleteDataColumnInfo1.Visible = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img175.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img175.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12418,7 +12418,7 @@ Column can be added matched using external sources also. A sample which demonstr
 
 While using an external datasource, the Columns property can be initially refreshed by clicking on the RefreshColumns verb visible in the designer.
 
-> { ![](Tools-Controls_images/Tools-Controls_img176.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img176.jpeg)' | markdownify }}
 {:.image }
  _Note: We can also add images to the dropdown items using internal source and external source. See_ Image Settings _for details._
 
@@ -12440,7 +12440,7 @@ Description</td></tr>
 <tr>
 <td>
 AddHistoryItem</td><td>
-Adds item to the internal history of the AutoComplete control. The parameters are,{{ '_newItemText_' | markdownify }} - Text for the dropdown item.{{ '_ImageIndexValue_' | markdownify }} - Index of the image for the particular item.</td></tr>
+Adds item to the internal history of the AutoComplete control. The parameters are,{{{ ''_newItemText_'' | markdownify }}} - Text for the dropdown item.{{{ ''_ImageIndexValue_'' | markdownify }}} - Index of the image for the particular item.</td></tr>
 </table>
 
 
@@ -12504,7 +12504,7 @@ Me.autoComplete1.AddHistoryItem("User Item", 2)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img177.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img177.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13444,7 +13444,7 @@ Me.autoComplete1.SetAutoComplete(Me.textBoxExt1 , Syncfusion.Windows.Forms.Tools
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img178.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img178.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13466,7 +13466,7 @@ Me.autoComplete1.SetAutoComplete(Me.textBoxExt1 , Syncfusion.Windows.Forms.Tools
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img179.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img179.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13498,26 +13498,26 @@ Through Designer
 
  This tutorial illustrates the usage of the ComboBoxAutoComplete control without any external datasource.
 
-> { ![](Tools-Controls_images/Tools-Controls_img180.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img180.jpeg)' | markdownify }}
 {:.image }
  _Note : This is applicable only for VS2005._
 
 1. Drag-and-drop a ComboBoxAutoComplete control from the toolbox onto the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img181.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img181.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Add items to ComboBoxAutoComplete using AutoCompleteCustomSource collection editor as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img182.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img182.jpeg)' | markdownify }}
 {:.image }
 
 
 3. Specify the text completion behavior of the control using ComboBoxAutoComplete.AutoCompleteMode. The value of AutoCompleteMode should not be none in this case. SeeSee Source for AutoComplete Control to know the different AutoCompleteModes. 
 4. Set AutoCompleteSource to CustomSource as shown below. SeeSee Source for AutoComplete Control to know the different AutoComplete sources.
 
-{ ![](Tools-Controls_images/Tools-Controls_img183.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img183.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13525,7 +13525,7 @@ Output
 
 At runtime, type 'C' in the display area of ComboBoxAutoComplete, you will see the autocompletion behavior as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img184.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img184.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13609,7 +13609,7 @@ Me.Controls.Add(Me.comboBoxAutoComplete1)
 
 4. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img185.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img185.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13675,7 +13675,7 @@ Refreshing the Columns
 
 When the datasource of the AutoComplete control is set to a valid datasource through the designer, the "Refresh Columns" verb can be clicked to automatically populate the Columns collection. This option is available in the context menu of the ComboBoxAutoComplete control and also as property grid command.
 
-{ ![](Tools-Controls_images/Tools-Controls_img186.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img186.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13683,7 +13683,7 @@ Banner Text Support
 
 We can set banner text for the ComboBoxAutoComplete control. Refer BannerTextProvider Component topic for more details.
 
-{ ![](Tools-Controls_images/Tools-Controls_img187.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img187.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13691,7 +13691,7 @@ Multi Columns
 
 We can use multiples columns in the ComboBoxAutoComplete control. In this case, we need to specify which column is to be used as the matching column using the ComboBoxAutoComplete.AutoCompleteControl.Columns properties. Adding multiple columns is discussed Multiple Columns topic in AutoCompleteControl UG. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img188.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img188.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13710,7 +13710,7 @@ The following steps sets a DataView as the DataSource of ComboBoxAutoComplete.
 5. Create a name for your DataSet object and select the table(s) to include. 
 6. Enter the following code in the Load event of your form to fill the DataSet with data from the database.
 
-{ ![](Tools-Controls_images/Tools-Controls_img189.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img189.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13736,7 +13736,7 @@ Adding Columns to the Popup and setting the matching column
 
 Add columns through designer using ComboBoxAutoComplete.AutoCompleteControl.Columns property. Set the first column as the matching column.
 
-{ ![](Tools-Controls_images/Tools-Controls_img190.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img190.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13798,7 +13798,7 @@ Me.autoCompleteDataColumnInfo2.ColumnHeaderText = "ID"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img191.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img191.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13829,11 +13829,11 @@ Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img192.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img192.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img193.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img193.jpeg)' | markdownify }}
 {:.image }
  _Note: The control supports all the three office color schemes._
 
@@ -13861,7 +13861,7 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img194.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img194.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13877,7 +13877,7 @@ The AutoAppend class provides this service for any combo box control without the
 
 The following screen shot illustrates the usage of the AutoAppend class to persist items previously entered in a combo box and add them to the items collection of the combo box.
 
-{ ![](Tools-Controls_images/Tools-Controls_img195.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img195.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13949,7 +13949,7 @@ Description</td></tr>
 <tr>
 <td>
 SetAutoAppend</td><td>
-Sets AutoAppend behavior for the control specified. The parameters are,{{ '_control_' | markdownify }} - control to which auto append class has to be associated.{{ '_autoAppendInfo_' | markdownify }} - Initializes an AutoAppendInfo class which  has three parameters - {{ '_AutoAppend_' | markdownify }} - specifies whether autoappend is enabled or not (true or false){{ '_categoryName_' | markdownify }} - category to which contents in this control belong to.{{ '_items_' | markdownify }} - Reference to an item list.{{ '_maxItems_' | markdownify }} - specifies maximum number of items.</td></tr>
+Sets AutoAppend behavior for the control specified. The parameters are,{{{ ''_control_'' | markdownify }}} - control to which auto append class has to be associated.{{{ ''_autoAppendInfo_'' | markdownify }}} - Initializes an AutoAppendInfo class which  has three parameters - {{{ ''_AutoAppend_'' | markdownify }}} - specifies whether autoappend is enabled or not (true or false){{{ ''_categoryName_'' | markdownify }}} - category to which contents in this control belong to.{{{ ''_items_'' | markdownify }}} - Reference to an item list.{{{ ''_maxItems_'' | markdownify }}} - specifies maximum number of items.</td></tr>
 <tr>ss
 <td>
 GetAutoAppend</td><td>
@@ -14000,7 +14000,7 @@ Me.autoAppend1.InsertOrMoveToTop(Me.comboBox1,"www.syncfusion.com")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img196.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img196.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14012,7 +14012,7 @@ Essential Tools Button controls are as follows. Detailed user guides are availab
 
 ButtonAdv is an advanced button control capable of displaying  images with different alignments and various border styles. It contains some additional feature to the standard Windows Forms Button. It can be configured into any of the predefined ButtonTypes such as Calculator, Up, Down, and so on. Also it can afford the XP or Office styles.
 
-{ ![](Tools-Controls_images/Tools-Controls_img197.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img197.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14032,7 +14032,7 @@ ButtonAdvcontrol has the following features.
 
 The ButtonAdv control can be made available through designer by just dragging and dropping the control from the toolbox onto the form. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img198.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img198.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14106,9 +14106,9 @@ Description</td></tr>
 <tr>
 <td>
 ButtonType</td><td>
-Specifies the button type to be used in the ButtonAdv control. The options are as follows.{{ '_Normal_' | markdownify }} - Normal button. (user can specify the image with this ButtonType).{{ '_Calculator_' | markdownify }} - Calculator image is used.{{ '_Currency_' | markdownify }} - Currency image is used.{{ '_Down_' | markdownify }} - Down image is used.{{ '_ComboXPDown_' | markdownify }} - Down image like in a Windows XP combo box.{{ '_Up_' | markdownify }} - Up image is used.{{ '_Left_' | markdownify }} - Left image is used.{{ '_Right_' | markdownify }} - Right image is used.{{ '_Redo_' | markdownify }} - Redo image is used.{{ '_Undo_' | markdownify }} - Undo image is used.{{ '_Check_' | markdownify }} - Check image is used.{{ '_Browse_' | markdownify }} - Browse image is used.{{ '_LeftEnd_' | markdownify }} - Left end image is used.{{ '_RightEnd_' | markdownify }} - Right end image is used.</td></tr>
+Specifies the button type to be used in the ButtonAdv control. The options are as follows.{{{ ''_Normal_'' | markdownify }}} - Normal button. (user can specify the image with this ButtonType).{{{ ''_Calculator_'' | markdownify }}} - Calculator image is used.{{{ ''_Currency_'' | markdownify }}} - Currency image is used.{{{ ''_Down_'' | markdownify }}} - Down image is used.{{{ ''_ComboXPDown_'' | markdownify }}} - Down image like in a Windows XP combo box.{{{ ''_Up_'' | markdownify }}} - Up image is used.{{{ ''_Left_'' | markdownify }}} - Left image is used.{{{ ''_Right_'' | markdownify }}} - Right image is used.{{{ ''_Redo_'' | markdownify }}} - Redo image is used.{{{ ''_Undo_'' | markdownify }}} - Undo image is used.{{{ ''_Check_'' | markdownify }}} - Check image is used.{{{ ''_Browse_'' | markdownify }}} - Browse image is used.{{{ ''_LeftEnd_'' | markdownify }}} - Left end image is used.{{{ ''_RightEnd_'' | markdownify }}} - Right end image is used.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img199.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img199.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See_ Image Settings _to know more._
 
@@ -14132,17 +14132,17 @@ Me.ButtonAdvControl.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calc
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img200.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img200.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img201.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img201.jpeg)' | markdownify }}
 {:.image }
  _Note: The ButtonTypes are only provided for ease of use and do not in any way change the functionality of the buttons._
 
 Example - A sample image which uses most of the button types in a single application is as follows. User will have to add respective functionalities for each button type.
 
-{ ![](Tools-Controls_images/Tools-Controls_img202.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img202.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14160,9 +14160,9 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyleAdv</td><td>
-Specifies the border style for ButtonAdv control. The styles are,{{ '_None,_' | markdownify }}{{ '_Default,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Dotted,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenInner and_' | markdownify }}{{ '_SunkenOuter._' | markdownify }}</td></tr>
+Specifies the border style for ButtonAdv control. The styles are,{{{ ''_None,_'' | markdownify }}}{{{ ''_Default,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Flat,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_SunkenInner and_'' | markdownify }}}{{{ ''_SunkenOuter._'' | markdownify }}}</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img203.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img203.jpeg)' | markdownify }}
 {:.image }
  _Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See_ Visual Styles_._ 
 
@@ -14186,7 +14186,7 @@ Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Su
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img204.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img204.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14208,7 +14208,7 @@ Description</td></tr>
 <tr>
 <td>
 Appearance</td><td>
-Sets the visual styles for the control when UseVisualStyle property is true. The styles are,{{ '_Classic,_' | markdownify }}{{ '_Office2000,_' | markdownify }}{{ '_WindowsXP,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003 and_'  | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Sets the visual styles for the control when UseVisualStyle property is true. The styles are,{{{ ''_Classic,_'' | markdownify }}}{{{ ''_Office2000,_'' | markdownify }}}{{{ ''_WindowsXP,_'' | markdownify }}}{{{ ''_OfficeXP,_'' | markdownify }}}{{{ ''_Office2003 and_' ' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -14236,11 +14236,11 @@ Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.OfficeXP
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img205.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img205.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img206.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img206.jpeg)' | markdownify }}
 {:.image }
  _Note: While mouse hovering over the OfficeXP, Office2003 and WindowsXP at run time, the button will be painted with some standard colors. This is an inbuilt feature in the ButtonControlAdv._
 
@@ -14268,7 +14268,7 @@ Me.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.S
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img207.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img207.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14296,7 +14296,7 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img208.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img208.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14322,11 +14322,11 @@ Sets the text for the ButtonAdv control.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Sets the alignment of the text in the control.  The options are,{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_'  | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_'   | markdownify }}{{ '_MiddleCenter,_'  | markdownify }}{{ '_MiddleRight,_'  | markdownify }}{{ '_BottomLeft,_'  | markdownify }}{{ '_BottomCenter and_'  | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Sets the alignment of the text in the control.  The options are,{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_' ' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'  ' | markdownify }}}{{{ ''_MiddleCenter,_' ' | markdownify }}}{{{ ''_MiddleRight,_' ' | markdownify }}}{{{ ''_BottomLeft,_' ' | markdownify }}}{{{ ''_BottomCenter and_' ' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Sets the relative location of the image to the text. The options are,{{ '_Overlay,_' | markdownify }}{{ '_ImageBeforeText,_' | markdownify }}{{ '_TextBeforeImage,_' | markdownify }}{{ '_ImageAboveText and_'  | markdownify }}{{ '_TextAboveImage._' | markdownify }}</td></tr>
+Sets the relative location of the image to the text. The options are,{{{ ''_Overlay,_'' | markdownify }}}{{{ ''_ImageBeforeText,_'' | markdownify }}}{{{ ''_TextBeforeImage,_'' | markdownify }}}{{{ ''_ImageAboveText and_' ' | markdownify }}}{{{ ''_TextAboveImage._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 Font</td><td>
@@ -14374,7 +14374,7 @@ Me.buttonAdv1.ForeColor = System.Drawing.Color.White
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img209.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img209.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14384,7 +14384,7 @@ ButtonAdv control has Smart Tag, which lets you set the properties easily.
 
 Smart Tag Options
 
-{ ![](Tools-Controls_images/Tools-Controls_img210.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img210.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14412,7 +14412,7 @@ BackgroundImage
 
 BackgroundImage is the image used as the Background for the control, which is set using the BackgroundImage property. This BackgroundImage can be laid in various manner with the BackgroundImageLayout property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img211.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img211.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14420,7 +14420,7 @@ Image
 
 Image that will be displayed on the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img212.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img212.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14440,7 +14440,7 @@ Sets the imagelist used for this control.</td></tr>
 <tr>
 <td>
 ImageAlign</td><td>
-Sets the alignment of the image inside the control. The options are,{{ '_TopLeft,_'  | markdownify }}{{ '_TopCenter,_'  | markdownify }}{{ '_TopRight_' | markdownify }}{{ '_MiddleLeft,_'   | markdownify }}{{ '_MiddleCenter,_'  | markdownify }}{{ '_MiddleRight,_'  | markdownify }}{{ '_BottomLeft,_'  | markdownify }}{{ '_BottomCenter and_'  | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Sets the alignment of the image inside the control. The options are,{{{ ''_TopLeft,_' ' | markdownify }}}{{{ ''_TopCenter,_' ' | markdownify }}}{{{ ''_TopRight_'' | markdownify }}}{{{ ''_MiddleLeft,_'  ' | markdownify }}}{{{ ''_MiddleCenter,_' ' | markdownify }}}{{{ ''_MiddleRight,_' ' | markdownify }}}{{{ ''_BottomLeft,_' ' | markdownify }}}{{{ ''_BottomCenter and_' ' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 ImageIndex</td><td>
@@ -14452,19 +14452,19 @@ Sets the text for the ButtonAdv.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Sets the alignment of the text in the control.  The options are,{{ '_TopLeft,_'  | markdownify }}{{ '_TopCenter,_'  | markdownify }}{{ '_TopRight_' | markdownify }}{{ '_MiddleLeft,_'  | markdownify }}{{ '_MiddleCenter,_'  | markdownify }}{{ '_MiddleRight,_'  | markdownify }}{{ '_BottomLeft,_'  | markdownify }}{{ '_BottomCenter and_'  | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Sets the alignment of the text in the control.  The options are,{{{ ''_TopLeft,_' ' | markdownify }}}{{{ ''_TopCenter,_' ' | markdownify }}}{{{ ''_TopRight_'' | markdownify }}}{{{ ''_MiddleLeft,_' ' | markdownify }}}{{{ ''_MiddleCenter,_' ' | markdownify }}}{{{ ''_MiddleRight,_' ' | markdownify }}}{{{ ''_BottomLeft,_' ' | markdownify }}}{{{ ''_BottomCenter and_' ' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Sets the relative location of the image to the text. The options are,{{ '_Overlay,_' | markdownify }}{{ '_ImageBeforeText,_' | markdownify }}{{ '_TextBeforeImage,_' | markdownify }}{{ '_ImageAboveText and_'  | markdownify }}{{ '_TextAboveImage._' | markdownify }}</td></tr>
+Sets the relative location of the image to the text. The options are,{{{ ''_Overlay,_'' | markdownify }}}{{{ ''_ImageBeforeText,_'' | markdownify }}}{{{ ''_TextBeforeImage,_'' | markdownify }}}{{{ ''_ImageAboveText and_' ' | markdownify }}}{{{ ''_TextAboveImage._'' | markdownify }}}</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img213.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img213.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img214.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img214.jpeg)' | markdownify }}
 {:.image }
  _Note: The Image settings will be effective only when_ ButtonType _is set to Normal._
 
@@ -14496,7 +14496,7 @@ Me.btnAlignment.ImageList = Me.imageList1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img215.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img215.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14538,7 +14538,7 @@ Me.buttonAdv1.KeepFocusRectangle = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img216.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img216.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14598,7 +14598,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img217.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img217.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14608,7 +14608,7 @@ The ButtonEdit control embeds a text box control with a collection of button con
 
 The edit control with a browse button extends a regular edit control by adding a button which can display an user-defined "browse" dialog. The ButtonEdit control provides an easy way to create controls with an edit control and any number of associated buttons. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img218.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img218.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14643,35 +14643,35 @@ The ButtonEdit control can be used in situations where a set of buttons are need
 
 1. Create a new Windows Forms application and open the main form in the designer. Drag and drop ButtonEdit control from the toolbox to the form.  
 
-{ ![](Tools-Controls_images/Tools-Controls_img219.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img219.jpeg)' | markdownify }}
 {:.image }
 
 
 2. When the control is initially added to the form, it appears like an edit control with no buttons.
 
-{ ![](Tools-Controls_images/Tools-Controls_img220.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img220.jpeg)' | markdownify }}
 {:.image }
 
 
 3. We can add buttons to the control using ButtonEditChildButton Collection Editor which is invoked by ButtonEdit.Buttons property. Editor can also be accessed using Smart Tag option.
 
-{ ![](Tools-Controls_images/Tools-Controls_img221.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img221.jpeg)' | markdownify }}
 {:.image }
 
 
 4. Set properties for buttons using the Editor. You can specify the attributes for any of the child buttons through the collection editor or by clicking any button and then selecting the properties in theproperty grid, that display the properties for the selected button.
 
-{ ![](Tools-Controls_images/Tools-Controls_img222.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img222.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img223.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img223.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also add or remove buttons to the ButtonEdit.Buttons collection through the Add Button and Remove Button verbs provided._
 
 5. Run the application. You can specify handlers for these child buttons also.
 
-{ ![](Tools-Controls_images/Tools-Controls_img224.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img224.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14859,7 +14859,7 @@ Me.Controls.Add(Me.buttonEdit1)
 
 6. Run the application. The output will be like below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img225.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img225.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14899,7 +14899,7 @@ Description</td></tr>
 <tr>
 <td>
 ButtonStyle</td><td>
-Specifies the button style for the control. The styles are,{{ '_Classic,_' | markdownify }}{{ '_Office2000,_' | markdownify }}{{ '_WindowsXP,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003 and_'  | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Specifies the button style for the control. The styles are,{{{ ''_Classic,_'' | markdownify }}}{{{ ''_Office2000,_'' | markdownify }}}{{{ ''_WindowsXP,_'' | markdownify }}}{{{ ''_OfficeXP,_'' | markdownify }}}{{{ ''_Office2003 and_' ' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 UseVisualStyle</td><td>
@@ -14927,11 +14927,11 @@ Me.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Classic
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img226.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img226.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img227.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img227.jpeg)' | markdownify }}
 {:.image }
  _Note: ButtonEdit control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this._
 
@@ -14969,7 +14969,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightGreen)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img228.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img228.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14987,7 +14987,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets the 3D border style for the control. The options are,{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Adjust and_'  | markdownify }}{{ '_Bump._' | markdownify }}</td></tr>
+Sets the 3D border style for the control. The options are,{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Flat,_'' | markdownify }}}{{{ ''_Adjust and_' ' | markdownify }}}{{{ ''_Bump._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
@@ -15027,11 +15027,11 @@ this.buttonEdit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img229.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img229.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img230.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img230.jpeg)' | markdownify }}
 {:.image }
  _Note: The Border styles of the child buttons can be controlled using ButtonEditChildButton.BorderStyleAdv property. SeeSee_ Button Types and Border Styles _topic for details._
 
@@ -15085,11 +15085,11 @@ Me.buttonEdit3.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.F
 
 Me.buttonEdit3.ForeColor = Color.SteelBlue
 
-> { ![](Tools-Controls_images/Tools-Controls_img231.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img231.jpeg)' | markdownify }}
 {:.image }
  _Note: Foreground settings for the child buttons can be specified using ButtonEditChildButton.Font and ButtonEditChildButton.ForeColor properties._
 
-{ ![](Tools-Controls_images/Tools-Controls_img232.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img232.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15115,7 +15115,7 @@ Me.buttonEdit3.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.F
 
 Me.buttonEdit3.ForeColor = Color.SteelBlue
 
-> { ![](Tools-Controls_images/Tools-Controls_img233.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img233.jpeg)' | markdownify }}
 {:.image }
  _Note: This case setting can be overridden by TextBox.CharacterCasing property._
 
@@ -15149,9 +15149,9 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyleAdv</td><td>
-Specifies the border style for child buttons of the ButtonEdit control. The styles are,{{ '_None,_' | markdownify }}{{ '_Default,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Dotted,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenInner and_' | markdownify }}{{ '_SunkenOuter._' | markdownify }}</td></tr>
+Specifies the border style for child buttons of the ButtonEdit control. The styles are,{{{ ''_None,_'' | markdownify }}}{{{ ''_Default,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Flat,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_SunkenInner and_'' | markdownify }}}{{{ ''_SunkenOuter._'' | markdownify }}}</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img234.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img234.jpeg)' | markdownify }}
 {:.image }
  _Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonEdit.ButtonStyle property. See Style Settings. We can also set border style for ButtonEdit controls without enabling visual styles._
 
@@ -15175,7 +15175,7 @@ Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img235.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img235.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15221,11 +15221,11 @@ Me.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAli
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img236.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img236.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img237.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img237.jpeg)' | markdownify }}
 {:.image }
  _Note: There is no support for placing more than one buttons on the same side. We need to add the buttons in the order we require._
 
@@ -15311,7 +15311,7 @@ Me.buttonEditChildButton2.PreferredWidth = 64
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img238.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img238.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15359,7 +15359,7 @@ Me.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Col
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img239.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img239.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15381,7 +15381,7 @@ Determines whether the background of child button is drawn using visual style if
 Office2007ColorScheme</td><td>
 Specifies the office color scheme.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img240.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img240.jpeg)' | markdownify }}
 {:.image }
  _Note: Visual style of a child buttons is inherited from the visual style of it's parent (ButtonEdit) control. See_ Style Settings _topic. You can override those settings using the above properties._
 
@@ -15405,7 +15405,7 @@ Me.buttonEditChildButton3.KeepFocusRectangle = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img241.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img241.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15461,7 +15461,7 @@ Me.buttonEdit1.SelectionStart = 3
 
 Me.buttonEdit1.ShowTexBox = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img242.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img242.jpeg)' | markdownify }}
 {:.image }
  _Note: To increase the height of the ButtonEdit control, make the text as multiline textbox._
 
@@ -15471,7 +15471,7 @@ ButtonEdit control has Smart Tag, which lets you set the properties easily.
 
 Smart Tag Options
 
-{ ![](Tools-Controls_images/Tools-Controls_img243.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img243.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15781,7 +15781,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img244.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img244.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15803,7 +15803,7 @@ Description</td></tr>
 <tr>
 <td>
 HideButton</td><td>
-Indicates whether a child button is hidden or visible. The parameters are,{{ '_btnIndex_' | markdownify }} - Specifies the index of the button.{{ '_visible_' | markdownify }} - Specifies the visibility of the button. It can be true or false. If true, the button will be visible and if false, the button will not be visible.</td></tr>
+Indicates whether a child button is hidden or visible. The parameters are,{{{ ''_btnIndex_'' | markdownify }}} - Specifies the index of the button.{{{ ''_visible_'' | markdownify }}} - Specifies the visibility of the button. It can be true or false. If true, the button will be visible and if false, the button will not be visible.</td></tr>
 </table>
 
 
@@ -15827,19 +15827,19 @@ We can replace the default TextBox of the ButtonEdit control with other TextBox 
 
 1. Drag a ButtonEdit control and a PercentTextBox control that you would like to replace with the default TextBox of the ButtonEdit control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img245.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img245.jpeg)' | markdownify }}
 {:.image }
 
 
 2. From the property window of ButtonEdit, select the PercentTextBox to be the TextBox control of the ButtonEdit control as shown below. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img246.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img246.jpeg)' | markdownify }}
 {:.image }
 
 
 3. From the same properties window, you can set the percent properties for the ButtonEdit control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img247.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img247.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15847,7 +15847,7 @@ How to set tooltip for ButtonEdit Child buttons?
 
  To set tooltip for a child button in a ButtonEdit control, drag and drop a ToolTip control from the toolbox. Text for tooltip is set using the extender property of the particular child button.
 
-{ ![](Tools-Controls_images/Tools-Controls_img248.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img248.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15869,7 +15869,7 @@ Me.toolTip1.SetToolTip(Me.buttonEdit1, "Click here to search")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img249.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img249.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15877,7 +15877,7 @@ Me.toolTip1.SetToolTip(Me.buttonEdit1, "Click here to search")
 
 The Essential Tools CalculatorControl encapsulates the functionality of a standard calculator. It provides an easy way to implement a complete calculator in your applications. The value of the CalculatorControl in the form is maintained internally and also provides the value in the format required. The CalculatorValue class provides methods to get the value of the CalculatorControl as a String or as a Double Value. It supports Office2007 color schemes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img250.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img250.png)' | markdownify }}
 {:.image }
 
 
@@ -15901,7 +15901,7 @@ Concepts and Features
 
 The Calculator control can be available to the designer by just dragging-and-dropping the Calculator control from the toolbox onto the form. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img251.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img251.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15981,7 +15981,7 @@ Me.calculatorControl1.Visible=True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img252.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img252.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16047,7 +16047,7 @@ Me.calculatorControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Dr
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img253.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img253.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16138,11 +16138,11 @@ Me.calculatorControl1.LayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayo
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img254.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img254.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img255.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img255.jpeg)' | markdownify }}
 {:.image }
  _Note: We can set different button styles for the Calculator control, using CalculatorControl.ButtonStyle property. Refer_ Themes and Button Styles _topic to know more. ButtonStyles can be applied to both the layout modes._
 
@@ -16192,7 +16192,7 @@ Me.calculatorControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img256.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img256.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16220,7 +16220,7 @@ Me.calculatorControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.C
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img257.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img257.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16238,7 +16238,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies the 3D border style for the control. The options are,* {{ '_RaisedOuter_' | markdownify }}* {{ '_RaisedInner_' | markdownify }}* {{ '_SunkenOuter_' | markdownify }}* {{ '_SunkenInner_' | markdownify }}* {{ '_Raised_' | markdownify }}* {{ '_Sunken_' | markdownify }}* {{ '_Etched_' | markdownify }}* {{ '_Flat_' | markdownify }}* {{ '_Adjust_'  | markdownify }}* {{ '_Bump_' | markdownify }}</td></tr>
+Specifies the 3D border style for the control. The options are,* {{{ ''_RaisedOuter_'' | markdownify }}}* {{{ ''_RaisedInner_'' | markdownify }}}* {{{ ''_SunkenOuter_'' | markdownify }}}* {{{ ''_SunkenInner_'' | markdownify }}}* {{{ ''_Raised_'' | markdownify }}}* {{{ ''_Sunken_'' | markdownify }}}* {{{ ''_Etched_'' | markdownify }}}* {{{ ''_Flat_'' | markdownify }}}* {{{ ''_Adjust_' ' | markdownify }}}* {{{ ''_Bump_'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -16259,7 +16259,7 @@ this.calculatorControl1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img258.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img258.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16313,7 +16313,7 @@ Me.calculatorControl1.VerticalSpacing = 5
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img259.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img259.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16331,11 +16331,11 @@ Description</td></tr>
 <tr>
 <td>
 SetButtonColor</td><td>
-Sets text color for the calculator button. The parameters are,{{ '_caCalcButton_' | markdownify }} - The calculator button,{{ '_color_' | markdownify }} - The color to set for the button text.</td></tr>
+Sets text color for the calculator button. The parameters are,{{{ ''_caCalcButton_'' | markdownify }}} - The calculator button,{{{ ''_color_'' | markdownify }}} - The color to set for the button text.</td></tr>
 <tr>
 <td>
 SetButtonFont</td><td>
-Sets the font style for the text in the calculator button. The parameters are, {{ '_caCalcButton_' | markdownify }} - The calculator button,{{ '_font_' | markdownify }} - The font style for the button text.</td></tr>
+Sets the font style for the text in the calculator button. The parameters are, {{{ ''_caCalcButton_'' | markdownify }}} - The calculator button,{{{ ''_font_'' | markdownify }}} - The font style for the button text.</td></tr>
 </table>
 
 
@@ -16359,7 +16359,7 @@ Me.calculatorControl1.SetButtonFont(CalcActions.CalcSpecialBackspace, New Font("
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img260.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img260.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16534,7 +16534,7 @@ Me.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img261.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img261.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16560,7 +16560,7 @@ Me.calculatorControl1.ThemesEnabled = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img262.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img262.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16601,7 +16601,7 @@ this.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img263.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img263.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16625,7 +16625,7 @@ Me.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img264.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img264.png)' | markdownify }}
 {:.image }
 
 
@@ -16653,7 +16653,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Navy)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img265.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img265.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16749,7 +16749,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img266.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img266.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16833,7 +16833,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img267.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img267.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16889,7 +16889,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img268.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img268.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16901,7 +16901,7 @@ How to customize the calculator display text area to use NumberGroupSeparator?
 
 The calculator control by default does not allow the use of NumberGroupSeparator like in DoubleTextBox. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img269.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img269.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16981,7 +16981,7 @@ End Class
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img270.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img270.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17027,7 +17027,7 @@ Syncfusion CalendarDateTime controls are discussed below.
 
 The Essential Tools MonthCalendarAdvcontrol is an advanced calendar control that can display all the month of the year with the appropriate culture information for the months and days of the week. A wide variety of visual styles can be applied to the MonthCalendarAdv, to enhance the appearance of the control. This also includes the new Microsoft Office 2007 Style for all the child controls of the MonthCalendarAdv, such as the UpDown Spin Button, DropDown button of DateTimePickerAdv, ScrollButton, TodayButton and None button. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img271.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img271.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17053,7 +17053,7 @@ Sections of MonthCalendarAdv control
 
 The following figure displays the sections of MonthCalendarAdv control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img272.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img272.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17075,7 +17075,7 @@ Concepts and Features
 
 We can just drag and drop the MonthCalendarAdv onto the form through designer and can access their properties through the property grid. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img273.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img273.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17145,7 +17145,7 @@ Me.Controls.Add(Me.monthCalendarAdv1)
 
 4. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img274.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img274.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17175,15 +17175,15 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies whether the control should have a 2D or a 3D border. The options are,{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None (default)._' | markdownify }}</td></tr>
+Specifies whether the control should have a 2D or a 3D border. The options are,{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None (default)._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style for the MonthCalendarAdv control, when the BorderStyle=Fixed3D. The styles are,{{ '_Raised,_'  | markdownify }}{{ '_RaisedOuter,_'  | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_'  | markdownify }}{{ '_SunkenOuter,_'  | markdownify }}{{ '_SunkenInner,_'  | markdownify }}{{ '_Etched,_'  | markdownify }}{{ '_Bump,_'  | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
+Sets 3D border style for the MonthCalendarAdv control, when the BorderStyle=Fixed3D. The styles are,{{{ ''_Raised,_' ' | markdownify }}}{{{ ''_RaisedOuter,_' ' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Sunken (default),_' ' | markdownify }}}{{{ ''_SunkenOuter,_' ' | markdownify }}}{{{ ''_SunkenInner,_' ' | markdownify }}}{{{ ''_Etched,_' ' | markdownify }}}{{{ ''_Bump,_' ' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the sides of the control which can have a border. The sides options are,{{ '_Left,_'  | markdownify }}{{ '_Top,_'  | markdownify }}{{ '_Right,_'  | markdownify }}{{ '_Bottom,_'  | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
+Specifies the sides of the control which can have a border. The sides options are,{{{ ''_Left,_' ' | markdownify }}}{{{ ''_Top,_' ' | markdownify }}}{{{ ''_Right,_' ' | markdownify }}}{{{ ''_Bottom,_' ' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All (default)._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -17219,11 +17219,11 @@ Me.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenIn
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img275.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img275.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img276.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img276.jpeg)' | markdownify }}
 {:.image }
  _Note: MonthCalendarAdv.ThemedBorder property should be set to false to make the 3D border setting effective. Refer_ Visual Settings.
 
@@ -17257,7 +17257,7 @@ this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img277.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img277.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17289,7 +17289,7 @@ Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.St
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img278.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img278.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17349,7 +17349,7 @@ Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img279.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img279.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17367,7 +17367,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets or Sets the visual style of the MonthCalendarAdv. The options are {{ '_Default_' | markdownify }}{{ '_OfficeXP_' | markdownify }}{{ '_Office2003_' | markdownify }}{{ '_VS2005_' | markdownify }}{{ '_Office2007_' | markdownify }}The default value is 'Default'.</td></tr>
+Gets or Sets the visual style of the MonthCalendarAdv. The options are {{{ ''_Default_'' | markdownify }}}{{{ ''_OfficeXP_'' | markdownify }}}{{{ ''_Office2003_'' | markdownify }}}{{{ ''_VS2005_'' | markdownify }}}{{{ ''_Office2007_'' | markdownify }}}The default value is 'Default'.</td></tr>
 </table>
 
 
@@ -17391,7 +17391,7 @@ Me.monthCalendarAdv1.Style  = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img280.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img280.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17417,7 +17417,7 @@ Me.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img281.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img281.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17445,11 +17445,11 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img282.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img282.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img283.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img283.jpeg)' | markdownify }}
 {:.image }
  _Note: Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See_ Scroll Buttons.
 
@@ -17467,7 +17467,7 @@ Grid Settings
 
 In the MonthCalendarAdv control, the dates of a month is placed inside a grid and the dates are separated using grid lines.
 
-{ ![](Tools-Controls_images/Tools-Controls_img284.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img284.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17487,7 +17487,7 @@ Gets or Sets the back color of the Grid.</td></tr>
 <tr>
 <td>
 GridLines</td><td>
-Gets or Sets the style of the Grid lines. The options are* {{ '_NotSet_' | markdownify }}* {{ '_None_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_DashDot_' | markdownify }}* {{ '_DashDotDot_' | markdownify }}* {{ '_Solid_' | markdownify }}* {{ '_Standard_' | markdownify }}<br>The default value is 'Dotted'.</td></tr>
+Gets or Sets the style of the Grid lines. The options are* {{{ ''_NotSet_'' | markdownify }}}* {{{ ''_None_'' | markdownify }}}* {{{ ''_Dashed_'' | markdownify }}}* {{{ ''_Dotted_'' | markdownify }}}* {{{ ''_DashDot_'' | markdownify }}}* {{{ ''_DashDotDot_'' | markdownify }}}* {{{ ''_Solid_'' | markdownify }}}* {{{ ''_Standard_'' | markdownify }}}<br>The default value is 'Dotted'.</td></tr>
 </table>
 
 
@@ -17511,7 +17511,7 @@ Me.monthCalendarAdv1.GridLines = Syncfusion.Windows.Forms.Grid.GridBorderStyle.D
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img285.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img285.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17577,7 +17577,7 @@ Me.monthCalendarAdv1.HeaderStartColor = System.Drawing.Color.AliceBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img286.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img286.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17623,7 +17623,7 @@ Me.monthCalendarAdv1.HeadForeColor = System.Drawing.Color.Navy
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img287.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img287.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17669,7 +17669,7 @@ Me.monthCalendarAdv1.HeaderHeight = 30
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img288.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img288.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17723,7 +17723,7 @@ Me.monthCalendarAdv1.WeekTextColor = System.Drawing.Color.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img289.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img289.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17749,7 +17749,7 @@ Me.monthCalendarAdv1.WeekInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img290.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img290.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17815,7 +17815,7 @@ Me.monthCalendarAdv1.DaysFont = New System.Drawing.Font("Courier New", 8.25F, Sy
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img291.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img291.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17861,7 +17861,7 @@ Me.monthCalendarAdv1.UseShortestDayNames = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img292.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img292.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17885,7 +17885,7 @@ Me.monthCalendarAdv1.DaysHeaderInterior = New Syncfusion.Drawing.BrushInfo(Syncf
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img293.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img293.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17911,7 +17911,7 @@ Me.monthCalendarAdv1.TodayFontColor = System.Drawing.Color.Crimson
 
 The today's date for the below calendar image is "eighteenth".
 
-{ ![](Tools-Controls_images/Tools-Controls_img294.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img294.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17943,7 +17943,7 @@ Me.monthCalendarAdv1.HighlightColor = System.Drawing.Color.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img295.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img295.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -17965,11 +17965,11 @@ Description</td></tr>
 <tr>
 <td>
 HorizontalAlignment</td><td>
-Specifies the horizontal alignment of the dates inside a grid cell. The options are,{{ '_Left,_' | markdownify }}{{ '_Center and_'  | markdownify }}{{ '_Right._' | markdownify }}</td></tr>
+Specifies the horizontal alignment of the dates inside a grid cell. The options are,{{{ ''_Left,_'' | markdownify }}}{{{ ''_Center and_' ' | markdownify }}}{{{ ''_Right._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
-Specifies the vertical alignment of the dates inside a grid cell. The options are,{{ '_Top,_'  | markdownify }}{{ '_Middle and_'  | markdownify }}{{ '_Bottom._' | markdownify }}</td></tr>
+Specifies the vertical alignment of the dates inside a grid cell. The options are,{{{ ''_Top,_' ' | markdownify }}}{{{ ''_Middle and_' ' | markdownify }}}{{{ ''_Bottom._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 WrapText</td><td>
@@ -18001,7 +18001,7 @@ Me.monthCalendarAdv1.WrapText = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img296.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img296.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18046,7 +18046,7 @@ Customizing Today and None Buttons
 
 The "Today" and "None" buttons are like Essential Tools ButtonAdv controls and they support all the properties of ButtonAdv control. You can access those properties using MonthCalendarAdv.NoneButton.Visible which controls the visibility (for example).
 
-{ ![](Tools-Controls_images/Tools-Controls_img297.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img297.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18074,7 +18074,7 @@ monthCalendarAdv1.NoneButton.Visible=False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img298.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img298.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18142,7 +18142,7 @@ Me.monthCalendarAdv1.StretchScrollImage = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img299.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img299.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18204,11 +18204,11 @@ Me.monthCalendarAdv1.MaxValue = New System.DateTime(2008, 2, 21, 0, 0, 0, 0)
 
 When we drag and drop a MonthCalendarAdv control, current system date, i.e, today's date will be selected by default. To change the selected date, DateTime Collection Editor is used, which is invoked using SelectedDates property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img300.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img300.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img301.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img301.jpeg)' | markdownify }}
 {:.image }
  _Note: It is possible to set color for the highlighted date. See_ Text Settings _topic for details._
 
@@ -18254,7 +18254,7 @@ Me.monthCalendarAdv1.MouseDragMultiselect = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img302.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img302.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18282,11 +18282,11 @@ Me.monthCalendarAdv1.SelectedDates = dateTimes
 
 Dates should be specified in the DataTime Array List. Then the DateTime Array list should be declared to the SelectedDates Property. This would select the dates that are in the DateTime Array list. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img303.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img303.png)' | markdownify }}
 {:.image }
 
 
-> { ![Description: http://help.syncfusion.com/ug_84/User%20Interface/Windows%20Forms/Tools/ImagesExt/image86_1.jpg](Tools-Controls_images/Tools-Controls_img304.jpeg) | markdownify }
+> {{ '![Description: http://help.syncfusion.com/ug_84/User%20Interface/Windows%20Forms/Tools/ImagesExt/image86_1.jpg](Tools-Controls_images/Tools-Controls_img304.jpeg)' | markdownify }}
 {:.image }
  _Note: Date range should be specified manually in the DateTime Array list._
 
@@ -18296,7 +18296,7 @@ Navigation at RunTime
 
 At run time, you have options to move to the next month or previous month using the left or right scroll buttons and also using the context menu displayed, when you click on the month of the calendar. To specify images for individual months in the menu, use MonthImageList property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img305.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img305.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18316,7 +18316,7 @@ Me.monthCalendarAdv1.MonthImageList = Me.imageList1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img306.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img306.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18354,7 +18354,7 @@ Me.monthCalendarAdv1.InactiveMonthColor = System.Drawing.Color.InactiveCaptionTe
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img307.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img307.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18378,7 +18378,7 @@ Me.monthCalendarAdv1.FirstDayOfWeek = Day.Monday
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img308.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img308.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18390,7 +18390,7 @@ Context Menu
 
 This section deals with replacing MonthCalendarAdv 'Go to Today' ContextMenu with a Custom Context Menu. At run-time, you can right click any calendar date and go to the today date using 'Go to Today' ContextMenu.
 
-{ ![](Tools-Controls_images/Tools-Controls_img309.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img309.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18560,7 +18560,7 @@ End Class
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img310.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img310.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18572,7 +18572,7 @@ Globalization
 
 MonthCalendarAdv supports globalization through MonthCalendarAdv.Culture property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img311.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img311.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18592,7 +18592,7 @@ Me.monthCalendarAdv1.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img312.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img312.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18818,7 +18818,7 @@ End Sub
 
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img313.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img313.jpeg)' | markdownify }}
 {:.image }
  _Note:_ 
 
@@ -18826,13 +18826,13 @@ End Sub
 *  Edges of the 4th column cells (ColIndex=4), other than the current cell are set to "Raised" and hence shows a raised appearance.
 *  In Fig 2, user tries to query the cells outside the range, i.e inactive month dates and the respective tooltip is displayed.
 
-{ ![](Tools-Controls_images/Tools-Controls_img314.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img314.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img315.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img315.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18932,7 +18932,7 @@ End Sub
 
 The following screenshot illustrates the SuperToolTip when mouse hover on the respective date value by using DateHover event.
 
-{ ![](Tools-Controls_images/Tools-Controls_img316.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img316.png)' | markdownify }}
 {:.image }
 
 
@@ -19026,7 +19026,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img317.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img317.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19084,7 +19084,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img318.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img318.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19124,7 +19124,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img319.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img319.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19166,7 +19166,7 @@ Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, ByVal e 
 
     ' if not Monday 
 
-    If e.ColIndex &lt;&gt; 2 Then
+    If e.ColIndex <> 2 Then
 
         e.Style.Clickable = False
 
@@ -19268,7 +19268,7 @@ End Sub
 
 DateTimePickerAdvis an advanced DateTimePicker control. It provides an easy way to implement a culture-based DateTimePicker in an application. It has support for a string to be displayed when the user doesn't want a specific date selected. It also supports dropping down a custom window and interacts with its controls if a user chooses to implement the IDateTimePickerAdvCalendar interface. The control comes variety of visual style including Office2007 styles.
 
-{ ![](Tools-Controls_images/Tools-Controls_img320.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img320.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19298,7 +19298,7 @@ Concepts and Features
 
 DateTimePickerAdv control provides full support for the Windows Forms designer. To use a DateTimePickerAdv control in your application, all you need to do is drag and drop a DateTimePickerAdv control from the controls toolbox onto your form. You can then set any of its properties through the property grid. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img321.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img321.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19348,7 +19348,7 @@ Me.Controls.Add(Me.dateTimePickerAdv1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img322.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img322.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19364,7 +19364,7 @@ Child Controls
 
 DateTimePickerAdv has child controls like DropDown, Updown arrows, checkbox. This section discusses the properties which controls the appearance and behavior of these controls.
 
-{ ![](Tools-Controls_images/Tools-Controls_img323.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img323.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19420,15 +19420,15 @@ Me.dateTimePickerAdv2.ShowUpDownOnFocus = True
 
 In the below image, when focus is on button control, the updown button is hidden. In the second image, DateTimePickerAdv is focussed and the UpDown button is shown.
 
-{ ![](Tools-Controls_images/Tools-Controls_img324.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img324.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img325.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img325.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img326.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img326.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19484,11 +19484,11 @@ Me.dateTimePickerAdv2.DropDownPressedColor = System.Drawing.Color.Goldenrod
 
 Me.dateTimePickerAdv2.DropDownSelectedColor = System.Drawing.Color.SteelBlue
 
-> { ![](Tools-Controls_images/Tools-Controls_img327.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img327.jpeg)' | markdownify }}
 {:.image }
  _Note: These settings will be effective only when DateTimePickerAdv.Style is Office2003, OfficeXP and VS2005._
 
-{ ![](Tools-Controls_images/Tools-Controls_img328.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img328.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19510,11 +19510,11 @@ this.dateTimePickerAdv2.FlatDropButton = true;
 
 this.dateTimePickerAdv2.FlatDropButton = true;
 
-> { ![](Tools-Controls_images/Tools-Controls_img329.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img329.jpeg)' | markdownify }}
 {:.image }
  _Note: These setting will be effective only when DateTimePickerAdv.Style is Default._
 
-{ ![](Tools-Controls_images/Tools-Controls_img330.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img330.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19538,7 +19538,7 @@ Me.dateTimePickerAdv1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Ri
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img331.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img331.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19584,11 +19584,11 @@ Me.dateTimePickerAdv1.StretchDropDownImage = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img332.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img332.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img333.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img333.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19620,7 +19620,7 @@ Me.dateTimePickerAdv5.Checked = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img334.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img334.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19656,7 +19656,7 @@ Me.dateTimePickerAdv5.Checked = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img335.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img335.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19674,7 +19674,7 @@ Description</td></tr>
 <tr>
 <td>
 Format </td><td>
-Gets or Sets the format of the picker. The options are,{{ '_Long(default),_'  | markdownify }}{{ '_Short,_'  | markdownify }}{{ '_Time and_' | markdownify }}{{ '_Custom._' | markdownify }}</td></tr>
+Gets or Sets the format of the picker. The options are,{{{ ''_Long(default),_' ' | markdownify }}}{{{ ''_Short,_' ' | markdownify }}}{{{ ''_Time and_'' | markdownify }}}{{{ ''_Custom._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 CustomFormat</td><td>
@@ -19742,7 +19742,7 @@ Me.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img336.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img336.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19766,11 +19766,11 @@ Me.dateTimePickerAdv1.Spacing = 5
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img337.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img337.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img338.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img338.jpeg)' | markdownify }}
 {:.image }
  _Note: The text field can be refreshed programmatically by calling DateTimePickerAdv.RefreshFields() method._
 
@@ -19782,7 +19782,7 @@ Null Value Settings
 
 At run time, on clicking the "None" button of the popup calendar, "No date is selected" string will be displayed in the text field like the below image. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img339.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img339.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19798,7 +19798,7 @@ Description</td></tr>
 <tr>
 <td>
 EnableNullDate</td><td>
-Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text fielddisplays the selected date even when {{ '_None_' | markdownify }} button is selected. By default it is true.</td></tr>
+Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text fielddisplays the selected date even when {{{ ''_None_'' | markdownify }}} button is selected. By default it is true.</td></tr>
 <tr>
 <td>
 EnableNullKeys</td><td>
@@ -19810,11 +19810,11 @@ Specifies the text visible when there is no date selected.  EnableNullDate must 
 <tr>
 <td>
 NullModeKeyReset</td><td>
-Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ '_ArrowKeys (default),_' | markdownify }}{{ '_NumericKeys and_'  | markdownify }}{{ '_Any._' | markdownify }}EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{{ ''_ArrowKeys (default),_'' | markdownify }}}{{{ ''_NumericKeys and_' ' | markdownify }}}{{{ ''_Any._'' | markdownify }}}EnableNullDate must be set to true to make this setting effective.</td></tr>
 <tr>
 <td>
 IsNullDate</td><td>
-Set this to true, if you want to display null value ({{ '_String specified in NullString_' | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
+Set this to true, if you want to display null value ({{{ ''_String specified in NullString_'' | markdownify }}}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
 </table>
 
 
@@ -19846,7 +19846,7 @@ Me.dateTimePickerAdv1.NullModeKeyReset = Syncfusion.Windows.Forms.Tools.NullMode
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img340.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img340.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19854,7 +19854,7 @@ Calendar
 
 DateTimePickerAdv control contains embedded calendar control which pops-up on clicking the dropdown button at the end of the control. The popup calendar is a MonthCalendarAdv control and hence supports all the properties of the MonthCalendarAdv control. These properties of the calendar can be accessed using DateTimePickerAdv.Calendar.TodayButton _(for example)_property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img341.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img341.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -19898,7 +19898,7 @@ this.dateTimePickerAdv1.NoneButtonVisible = false;
 
 Me.dateTimePickerAdv1.NoneButtonVisible = False
 
-> { ![](Tools-Controls_images/Tools-Controls_img342.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img342.jpeg)' | markdownify }}
 {:.image }
  _Note: None button will not be visible when EnableNullDate property is set to false. See_ Null Value Settings _to know about EnableNullDate property._
 
@@ -19948,7 +19948,7 @@ Me.dateTimePickerAdv1.CalendarTitleBackColor = System.Drawing.Color.Wheat
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img343.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img343.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20010,7 +20010,7 @@ Me.dateTimePickerAdv1.CalendarTrailingForeColor = System.Drawing.Color.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img344.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img344.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20058,7 +20058,7 @@ Me.dateTimePickerAdv1.CalendarSizeToFit = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img345.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img345.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20120,7 +20120,7 @@ In the designer, DateTimePickerAdv control has shortcut for some property settin
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img346.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img346.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20174,7 +20174,7 @@ Me.dateTimePickerAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img347.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img347.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20216,7 +20216,7 @@ Me.dateTimePickerAdv2.BackgroundImage = DirectCast((resources.GetObject("dateTim
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img348.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img348.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20238,19 +20238,19 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are,* {{ '_None_' | markdownify }}* {{ '_FixedSingle_'  | markdownify }}* {{ '_Fixed3D(Default)_' | markdownify }}</td></tr>
+Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are,* {{{ ''_None_'' | markdownify }}}* {{{ ''_FixedSingle_' ' | markdownify }}}* {{{ ''_Fixed3D(Default)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 <br>Border3DStyle</td><td>
-Specifies the 3D border style of the DateTimePickerAdv.The options are,* {{ '_Raised_' | markdownify }}* {{ '_RaisedOuter_'  | markdownify }}* {{ '_RaisedInner_'  | markdownify }}* {{ '_Sunken(Default)_' | markdownify }}* {{ '_SunkenOuter_'  | markdownify }}* {{ '_SunkenInner_'  | markdownify }}* {{ '_Etched_'  | markdownify }}* {{ '_Bump_'  | markdownify }}* {{ '_Adjust_'  | markdownify }}* {{ '_Flat_' | markdownify }}</td></tr>
+Specifies the 3D border style of the DateTimePickerAdv.The options are,* {{{ ''_Raised_'' | markdownify }}}* {{{ ''_RaisedOuter_' ' | markdownify }}}* {{{ ''_RaisedInner_' ' | markdownify }}}* {{{ ''_Sunken(Default)_'' | markdownify }}}* {{{ ''_SunkenOuter_' ' | markdownify }}}* {{{ ''_SunkenInner_' ' | markdownify }}}* {{{ ''_Etched_' ' | markdownify }}}* {{{ ''_Bump_' ' | markdownify }}}* {{{ ''_Adjust_' ' | markdownify }}}* {{{ ''_Flat_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 <br>BorderSingle</td><td>
-Specifies the 2D border style of the DateTimePickerAdv. The options are,* {{ '_None_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Solid (default)_' | markdownify }}* {{ '_Inset_'  | markdownify }}* {{ '_Outset_' | markdownify }}</td></tr>
+Specifies the 2D border style of the DateTimePickerAdv. The options are,* {{{ ''_None_'' | markdownify }}}* {{{ ''_Dotted_'' | markdownify }}}* {{{ ''_Dashed_'' | markdownify }}}* {{{ ''_Solid (default)_'' | markdownify }}}* {{{ ''_Inset_' ' | markdownify }}}* {{{ ''_Outset_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 <br>BorderSides</td><td>
-Specifies the sides of the control which should have a border. The sides are,* {{ '_Left_' | markdownify }}* {{ '_Top_' | markdownify }}* {{ '_Right_'  | markdownify }}* {{ '_Bottom_' | markdownify }}* {{ '_Middle_'  | markdownify }}* {{ '_All (Default)_' | markdownify }}</td></tr>
+Specifies the sides of the control which should have a border. The sides are,* {{{ ''_Left_'' | markdownify }}}* {{{ ''_Top_'' | markdownify }}}* {{{ ''_Right_' ' | markdownify }}}* {{{ ''_Bottom_'' | markdownify }}}* {{{ ''_Middle_' ' | markdownify }}}* {{{ ''_All (Default)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 <br>BorderColor</td><td>
@@ -20322,7 +20322,7 @@ Me.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenI
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img349.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img349.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20374,7 +20374,7 @@ Me.dateTimePickerAdv1.MonthImageList = Me.imageList1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img350.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img350.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20382,7 +20382,7 @@ Context Menu
 
 When you right-click on a DateTimePickerAdv control at run time, a context menu will be displayed like the below image. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img351.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img351.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20404,7 +20404,7 @@ Me.dateTimePickerAdv1.UseEnhancedMenu = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img352.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img352.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20429,7 +20429,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipboardFormat</td><td>
-While doing copy / paste operation, we can specify the format of the value of the DateTimePickerAdv control that is copied, by using ClipBoardFormat property. The formats are, * {{ '_Long(default)_' | markdownify }}* {{ '_Short_'  | markdownify }}* {{ '_Time_'  | markdownify }}* {{ '_Custom_' | markdownify }}</td></tr>
+While doing copy / paste operation, we can specify the format of the value of the DateTimePickerAdv control that is copied, by using ClipBoardFormat property. The formats are, * {{{ ''_Long(default)_'' | markdownify }}}* {{{ ''_Short_' ' | markdownify }}}* {{{ ''_Time_' ' | markdownify }}}* {{{ ''_Custom_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 <br>CopyFieldsOnly</td><td>
@@ -20567,11 +20567,11 @@ Me.dateTimePickerAdv1.IgnoreThemeBackground = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img353.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img353.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img354.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img354.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20589,7 +20589,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the Office style of the picker. The options are :* {{ '_OfficeXP_'  | markdownify }}* {{ '_Office2003_'  | markdownify }}* {{ '_VS2005_' | markdownify }}* {{ '_Office2007_'  | markdownify }}* {{ '_Default (default)_' | markdownify }}</td></tr>
+Specifies the Office style of the picker. The options are :* {{{ ''_OfficeXP_' ' | markdownify }}}* {{{ ''_Office2003_' ' | markdownify }}}* {{{ ''_VS2005_'' | markdownify }}}* {{{ ''_Office2007_' ' | markdownify }}}* {{{ ''_Default (default)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 <br>Office2007Theme</td><td>
@@ -20617,7 +20617,7 @@ Me.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img355.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img355.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20643,7 +20643,7 @@ Me.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img356.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img356.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20671,7 +20671,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img357.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img357.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20683,7 +20683,7 @@ Data Binding
 
 Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and BindableValue property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img358.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img358.jpeg)' | markdownify }}
 {:.image }
 _Note: Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used._
 
@@ -20810,7 +20810,7 @@ dateTimePickerAdv1.Focus()
 
 5. Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
 
-{ ![](Tools-Controls_images/Tools-Controls_img359.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img359.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20860,7 +20860,7 @@ Me.dateTimePickerAdv1.Culture = New System.Globalization.CultureInfo("hi-IN")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img360.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img360.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -20884,11 +20884,11 @@ Boolean value indicating if the DateTimePickerAdv should consider the interface 
 <tr>
 <td>
 Appearance properties (CalendarFont, CalendarForeColor, CalendarMonthBackground, TitleBackColor, TitleForeColor and TrailingForeColor)</td><td>
-{{ '_CalendarFont_' | markdownify }} - Gets / sets the font used to draw the calendar that implements the interface, {{ '_CalendarForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of calendar that implements the interface, {{ '_CalendarMonthBackground_' | markdownify }} - Gets / sets the color used to draw the month background of calendar that implements the interface, {{ '_TitleBackColor_' | markdownify }} - Gets / sets the color used to draw the title background of calendar that implements the interface,{{ '_TitleForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of the title of calendar that implements the interface, {{ '_TrailingForeColor_' | markdownify }} - Gets / sets the color used to draw the trailing foreground of calendar that implements the interface.</td></tr>
+{{{ ''_CalendarFont_'' | markdownify }}} - Gets / sets the font used to draw the calendar that implements the interface, {{{ ''_CalendarForeColor_'' | markdownify }}} - Gets / sets the color used to draw the foreground of calendar that implements the interface, {{{ ''_CalendarMonthBackground_'' | markdownify }}} - Gets / sets the color used to draw the month background of calendar that implements the interface, {{{ ''_TitleBackColor_'' | markdownify }}} - Gets / sets the color used to draw the title background of calendar that implements the interface,{{{ ''_TitleForeColor_'' | markdownify }}} - Gets / sets the color used to draw the foreground of the title of calendar that implements the interface, {{{ ''_TrailingForeColor_'' | markdownify }}} - Gets / sets the color used to draw the trailing foreground of calendar that implements the interface.</td></tr>
 <tr>
 <td>
 Value properties (MinDate, MaxDate, Value)</td><td>
-{{ '_MinDate_' | markdownify }} - Gets / sets the minimum date of the calendar that implements the interface,{{ '_MaxDate_' | markdownify }} - Gets / sets the maximum date of the calendar that implements the interface and{{ '_Value_' | markdownify }} - Gets / sets the date of the calendar that implements the interface.</td></tr>
+{{{ ''_MinDate_'' | markdownify }}} - Gets / sets the minimum date of the calendar that implements the interface,{{{ ''_MaxDate_'' | markdownify }}} - Gets / sets the maximum date of the calendar that implements the interface and{{{ ''_Value_'' | markdownify }}} - Gets / sets the date of the calendar that implements the interface.</td></tr>
 <tr>
 <td>
 Culture</td><td>
@@ -20920,7 +20920,7 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
 
 1. Drag a DateTimePickerAdv, PopupControlContainer and a button onto the form designer from the toolbox. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img361.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img361.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21368,13 +21368,13 @@ End Sub
 
 5. Run the application and click the dropdown button of the DateTimePickerAdv control to display the custom popup. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img362.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img362.jpeg)' | markdownify }}
 {:.image }
 
 
 6. When you click the button, the DateTimePickerAdv will display the NullString specified in NullString property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img363.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img363.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21490,7 +21490,7 @@ Me.dateTimePickerAdv1.ReadOnlyValueChange = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img364.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img364.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21602,7 +21602,7 @@ Me.dateTimePickerAdv1.ValueChanged += New EventHandler(dateTimePickerAdv1_ValueC
 
 Private Sub dateTimePickerAdv1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-    If Control.MouseButtons &lt;&gt; MouseButtons.None Then
+    If Control.MouseButtons <> MouseButtons.None Then
 
         Console.WriteLine("Month Changed using ArrowButton")
 
@@ -21650,7 +21650,7 @@ The following advanced ColorUI Controls are discussed below.
 
 The Essential Tools ColorUIControl allows .NET developers to provide a standard user-interface which, is similar to the Visual Studio .NET color picker drop-down, for selecting colors in their Windows Forms applications. The ColorUIControl implements a palette type visual interface comprising of the System, Standard, Custom and UserColor color groups. The control can be used either as a regular control that is hosted within a parent container or as a drop-down. Refer ColorPickerButton to use ColorUIControl as drop down.
 
-{ ![](Tools-Controls_images/Tools-Controls_img365.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img365.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21685,7 +21685,7 @@ Concepts and Features
 
 ColorUIControl can be added through designer by just dragging-and-dropping it from thetoolbox onto the Windows Form Designer. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img366.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img366.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21757,7 +21757,7 @@ Me.Controls.Add(Me.colorUIControl1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img367.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img367.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21773,7 +21773,7 @@ Color Groups
 
 ColorUI control has three in-built color groups which are CustomColors, StandardColor, and SystemColors. This section gives you an idea of the color groups available.
 
-{ ![](Tools-Controls_images/Tools-Controls_img368.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img368.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21781,7 +21781,7 @@ Displaying the Color Groups
 
 We can control the display of the color groups using ColorGroups property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img369.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img369.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21801,7 +21801,7 @@ Me.colorUIControl1.ColorGroups = DirectCast(((Syncfusion.Windows.Forms.ColorUIGr
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img370.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img370.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21825,15 +21825,15 @@ Me.colorUIControl1.ColorGroups = DirectCast((((Syncfusion.Windows.Forms.ColorUIG
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img371.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img371.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img372.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img372.jpeg)' | markdownify }}
 {:.image }
  _Note: We can add custom text for the tabs of the Color groups. See_ Tab Text _for details._
 
-> { ![](Tools-Controls_images/Tools-Controls_img373.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img373.jpeg)' | markdownify }}
 {:.image }
  _Note: The Custom Color Panels and User Color Panels can be stretched according to the size of the control. Refer_ ColorUIControl Appearance _for details._
 
@@ -21899,11 +21899,11 @@ Me.colorUIControl1.CustomTabName = "Palettes"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img374.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img374.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img375.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img375.jpeg)' | markdownify }}
 {:.image }
  _Note: We can also change the font style of the tab text using ColorUIControl.Font property._
 
@@ -21925,7 +21925,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets border style for the control. The options are,{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D (default) and_'  | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Sets border style for the control. The options are,{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D (default) and_' ' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -21945,7 +21945,7 @@ Me.colorUIControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img376.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img376.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -21991,7 +21991,7 @@ Me.colorUIControl1.UserColorsStretchOnResize = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img377.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img377.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22029,11 +22029,11 @@ Me.colorUIControl1.SelectedColor = System.Drawing.Color.OrangeRed;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img378.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img378.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img379.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img379.jpeg)' | markdownify }}
 {:.image }
  _Note: These property settings can be reset using ResetSelectedColorGroup() and ResetSelectedColor() methods._
 
@@ -22104,13 +22104,13 @@ To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlCont
 1. Drag and drop a ColorUIControl, a PopupMenu control, a PopupControlContainer control, a label control and a Panel control onto the form. Place the ColorUIControl inside the PopupControlContainer and the label inside the panel control.
 2. Right click PopupMenu and select 'Add Default ParentBarItem" from the verbs. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img380.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img380.jpeg)' | markdownify }}
 {:.image }
 
 
 3. In the property grid of PopupMenu, expand ParentBarItem, then add a DropDownBarItem to the ParentBarItem using BarItem Collection Editor. Also set the PopupControlContainer as the DropDownBarItem's PopupControlContainer as shown in the image below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img381.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img381.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22142,11 +22142,11 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img382.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img382.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img383.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img383.jpeg)' | markdownify }}
 {:.image }
  _Note: You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event._ 
 
@@ -22212,11 +22212,11 @@ Next
 
      Me.colorUIControl1.UserColorsStretchOnResize = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img384.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img384.jpeg)' | markdownify }}
 {:.image }
  _Note : UserGroups should be selected in ColorGroups property to effect the above settings._
 
-{ ![](Tools-Controls_images/Tools-Controls_img385.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img385.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22224,7 +22224,7 @@ Next
 
 The Essential Tools ColorPickerButton allows.NET developers to provide a standard user interface similar to the Visual Studio .NET color picker dropdown, for selecting colors in Windows Forms applications. The ColorPickerButton displays the ColorUIControl as a drop-down in combination with a button. The .NET framework provides a color dialog control to allow applications to collect color information from users. However, the color dialog control does not provide any way to place a control within the layout of the application to collect color information. The Essential Tools ColorUIControl provides an easy to use color palette control that can be placed inline in your applications. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img386.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img386.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22244,7 +22244,7 @@ ColorPickerButtondrops down a ColorUIControl and provides a standard user interf
 
 ColorPickerButton is available to the designer by just dragging-and-dropping the ColorPickerButton from the toolbox onto the form. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img387.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img387.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22300,7 +22300,7 @@ Me.Controls.Add(Me.colorPickerButton1)
 
 3. Clicking this button at runtime will display the ColorUIControl.
 
-{ ![](Tools-Controls_images/Tools-Controls_img388.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img388.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22328,7 +22328,7 @@ Me.colorPickerButton1.ColorUISize = New System.Drawing.Size(250, 280)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img389.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img389.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22374,7 +22374,7 @@ Me.colorPickerButton1.SelectedAsText = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img390.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img390.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22386,7 +22386,7 @@ Color Groups,Tab Text, ColorUIControlAppearance, Runtime Settings of ColorUICont
 
 The Essential Tools ColorPickerUIAdv allows.NET developers to provide Microsoft Word 2007 ColorCells for selecting colors in their applications. The ColorPickerUIAdv comprises of a panel displaying themed colors and standard colors. The ColorPickerUIAdv also comes with a More Colors option, in a color dialog, displaying more sub colors for the base colors in the control. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img391.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img391.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22411,7 +22411,7 @@ This section will help you to get started with using the ColorPickerUIAdv contro
 
 The ColorPickerUIAdv can be easily created in the designer, by dragging-and-dropping from the toolbox on to the windows application form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img392.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img392.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22465,7 +22465,7 @@ Me.Controls.Add(cpa)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img393.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img393.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22497,11 +22497,11 @@ Represents the group of standard colors.</td></tr>
 ThemeGroup</td><td>
 Represents the group of theme colors.</td></tr>
 </table>
-{ ![](Tools-Controls_images/Tools-Controls_img394.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img394.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img395.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img395.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also add custom ColorGroups apart from the above default groups. Refer Custom ColorGroups topic to know more._
 
@@ -22509,7 +22509,7 @@ Sections of Color Groups
 
 The sections of a color group is illustrated in the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img396.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img396.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22521,7 +22521,7 @@ Custom Color Groups
 
 Custom Color Groups can be added to ColorPickerUIAdv control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
 
-{ ![](Tools-Controls_images/Tools-Controls_img397.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img397.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22571,11 +22571,11 @@ Me.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img398.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img398.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img399.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img399.jpeg)' | markdownify }}
 {:.image }
  _Note: The properties to customize the color groups are similar to default color groups. See how to Customize the Color Groups in_ Customizing the Color Groups _topic._
 
@@ -22611,19 +22611,19 @@ Specifies the depth of the sub items, i.e the number of sub items that can be ad
 
 * Opening ColorItem Collection Editor using Items property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img400.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img400.jpeg)' | markdownify }}
 {:.image }
 
 
 * Adding GroupColor items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img401.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img401.jpeg)' | markdownify }}
 {:.image }
 
 
 * Adding color / sub items to the GroupColor items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img402.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img402.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22651,11 +22651,11 @@ Me.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img403.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img403.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img404.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img404.jpeg)' | markdownify }}
 {:.image }
  _Note: To know how to customize a color item, refer_ Color Items _topic._
 
@@ -22665,11 +22665,11 @@ Customizing Color Items
 
 Size of the color items can be set through ColorItemSize property. Default width is 13 and height is 13.
 
-> { ![](Tools-Controls_images/Tools-Controls_img405.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img405.jpeg)' | markdownify }}
 {:.image }
  _Note: The colors within the groups are clickable at design time and you can change the color using property grid as in the below image._
 
-{ ![](Tools-Controls_images/Tools-Controls_img406.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img406.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22689,7 +22689,7 @@ Me.colorPickerUIAdv1.ColorItemSize = New System.Drawing.Size(20, 20)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img407.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img407.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22717,7 +22717,7 @@ Me.colorPickerUIAdv1.VerticalItemsSpacing = 15
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img408.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img408.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22807,7 +22807,7 @@ Me.colorPickerUIAdv1.Font = New System.Drawing.Font("Microsoft Sans Serif",9F, S
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img409.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img409.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22835,7 +22835,7 @@ Me.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img410.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img410.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22895,13 +22895,13 @@ Private colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img411.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img411.jpeg)' | markdownify }}
 {:.image }
 
 
 The Office2007 Visual Styles can be turned off by setting the UseOffice2007Style property to false.
 
-{ ![](Tools-Controls_images/Tools-Controls_img412.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img412.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22929,7 +22929,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img413.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img413.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22937,7 +22937,7 @@ Runtime Selection
 
 The ColorPickerUIAdv control at run time provides a Color dialog, using which we can select and add colors to the color groups.
 
-{ ![](Tools-Controls_images/Tools-Controls_img414.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img414.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -22959,11 +22959,11 @@ this.colorPickerUIAdv1.AutomaticColor = System.Drawing.Color.OrangeRed;
 
 Me.colorPickerUIAdv1.AutomaticColor = System.Drawing.Color.OrangeRed
 
-{ ![](Tools-Controls_images/Tools-Controls_img415.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img415.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img416.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img416.jpeg)' | markdownify }}
 {:.image }
  _Note: Height of this Automatic button can be specified in ColorPickerUIAdv.ButtonHeight property. Default value is 23._
 
@@ -23075,7 +23075,7 @@ The ComboDropDown control is a lightweight, combo box-like control that can host
 
 Once a control is associated with the ComboDropDown to be displayed in the drop-down area, the developer is responsible for handling the data interaction between the combo's edit portion and the control in the drop-down. For example, if the ComboDropDown is used with a TreeView control in a dropdown, the developer has to provide the code to transfer the selected item from the TreeView control to the combo box and also from the combo box to the TreeView. You should also determine when the dropdown should close. In this case, the dropdown could close when the user double-clicks on a node.
 
-{ ![](Tools-Controls_images/Tools-Controls_img417.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img417.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23103,29 +23103,29 @@ The below steps will guide you with this.
 
 1. Create a new Visual C# application or VB.NET application in Visual Studio .NET. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img418.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img418.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Drag and drop a ComboDropDown control, TreeView control from the toolbox onto the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img419.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img419.jpeg)' | markdownify }}
 {:.image }
 
 
 3. Add nodes to the TreeView control and set HideSelection property to false. The HideSelection property specifies whether the selected tree node remains highlighted even when the tree view has lost the focus.
 
-{ ![](Tools-Controls_images/Tools-Controls_img420.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img420.jpeg)' | markdownify }}
 {:.image }
 
 
 4.  Now set the ComboDropDown's PopupControl property to be the above TreeView instance. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img421.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img421.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img422.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img422.jpeg)' | markdownify }}
 {:.image }
  _Note: We can also include code to set up the interaction between the combo and the treeview control. Refer_ Setting Interaction between ComboDropDown and TreeView.
 
@@ -23197,7 +23197,7 @@ Me.comboDropDown1.PopupControl=Me.treeView1
 
 Me.Controls.Add(Me.comboDropDown1)
 
-> { ![](Tools-Controls_images/Tools-Controls_img423.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img423.jpeg)' | markdownify }}
 {:.image }
  _Note:_ Refer Setting Interaction between ComboDropDown and TreeView _to set the interaction between the ComboDropDown and Treeview._
 
@@ -23213,7 +23213,7 @@ ComboDropDown Text
 
 ComboDropDown control supports the properties which can change the appearance and behavior of the control's edit portion.
 
-{ ![](Tools-Controls_images/Tools-Controls_img424.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img424.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23277,7 +23277,7 @@ Banner Text Support
 
 We can set banner text for the ComboBoxDropDown control. Refer BannerTextProvider Component topic for more details.
 
-{ ![](Tools-Controls_images/Tools-Controls_img425.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img425.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23299,7 +23299,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets the 3D border style for the control. The options are,* {{ '_RaisedOuter_' | markdownify }}* {{ '_RaisedInner_' | markdownify }}* {{ '_SunkenOuter_' | markdownify }}* {{ '_SunkenInner_' | markdownify }}* {{ '_Raised_' | markdownify }}* {{ '_Sunken_' | markdownify }}* {{ '_Etched_' | markdownify }}* {{ '_Flat_' | markdownify }}* {{ '_Adjust_'  | markdownify }}* {{ '_Bump_' | markdownify }}<br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
+Sets the 3D border style for the control. The options are,* {{{ ''_RaisedOuter_'' | markdownify }}}* {{{ ''_RaisedInner_'' | markdownify }}}* {{{ ''_SunkenOuter_'' | markdownify }}}* {{{ ''_SunkenInner_'' | markdownify }}}* {{{ ''_Raised_'' | markdownify }}}* {{{ ''_Sunken_'' | markdownify }}}* {{{ ''_Etched_'' | markdownify }}}* {{{ ''_Flat_'' | markdownify }}}* {{{ ''_Adjust_' ' | markdownify }}}* {{{ ''_Bump_'' | markdownify }}}<br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
@@ -23335,11 +23335,11 @@ Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img426.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img426.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img427.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img427.jpeg)' | markdownify }}
 {:.image }
  _Note: ComboDropDown.Style property should be set to Default to effect the above settings. See_ Themes and Styles _topic._
 
@@ -23361,7 +23361,7 @@ Specifies whether the control will ignore the theme's background color and draw 
 <tr>
 <td>
 Style</td><td>
-Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,{{ '_Default,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003,_' | markdownify }}{{ '_VS2005 and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,{{{ ''_Default,_'' | markdownify }}}{{{ ''_OfficeXP,_'' | markdownify }}}{{{ ''_Office2003,_'' | markdownify }}}{{{ ''_VS2005 and_'' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -23425,7 +23425,7 @@ Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img428.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img428.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23469,7 +23469,7 @@ Me.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img429.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img429.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23497,7 +23497,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img430.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img430.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23691,7 +23691,7 @@ Private Sub comboDropDown1_DropDown(ByVal sender As Object, ByVal e As System.Ev
 
 ' Before the drop-down is shown, select a TreeNode based on the text in the combo.
 
-If Me.comboDropDown1.Text &lt;&gt; String.Empty Then
+If Me.comboDropDown1.Text <> String.Empty Then
 
 Dim matchedNode As TreeNode = Me.FindNode(Me.treeView1.Nodes, Me.comboDropDown1.Text)
 
@@ -23706,11 +23706,11 @@ End Sub
 4. At run time, when the user double on a node, the node text will appears in the ComboDropDown. 
 5. Also when the user edits the text, the corresponding node will be selected in the tree in the drop down. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img431.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img431.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img432.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img432.jpeg)' | markdownify }}
 {:.image }
  _Note: We can also suppress the dropdown event from firing by setting SuppressDropDownEvent property to true._
 
@@ -23766,7 +23766,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img433.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img433.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23870,7 +23870,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img434.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img434.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23946,7 +23946,7 @@ Based on the ComboBoxBase control, the ComboBoxAdv pre-binds a list box in its d
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdvControl.png](Tools-Controls_images/Tools-Controls_img435.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdvControl.png](Tools-Controls_images/Tools-Controls_img435.png)' | markdownify }}
 {:.image }
 
 
@@ -23976,7 +23976,7 @@ Adding a ComboBoxAdv control
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv in toolbox.png](Tools-Controls_images/Tools-Controls_img436.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv in toolbox.png](Tools-Controls_images/Tools-Controls_img436.png)' | markdownify }}
 {:.image }
 
 
@@ -23986,7 +23986,7 @@ The most commonly used settings of the TreeNavigator control can be configured e
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv smart tag.png](Tools-Controls_images/Tools-Controls_img437.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv smart tag.png](Tools-Controls_images/Tools-Controls_img437.png)' | markdownify }}
 {:.image }
 
 
@@ -24130,7 +24130,7 @@ this.Controls.Add(this.comboBoxAdv1);
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv items.png](Tools-Controls_images/Tools-Controls_img438.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv items.png](Tools-Controls_images/Tools-Controls_img438.png)' | markdownify }}
 {:.image }
 
 
@@ -24438,7 +24438,7 @@ You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvid
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/BannerText.png](Tools-Controls_images/Tools-Controls_img439.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/BannerText.png](Tools-Controls_images/Tools-Controls_img439.png)' | markdownify }}
 {:.image }
 
 
@@ -24524,11 +24524,11 @@ this.comboBoxAdv1.Sorted = true;
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/DropDown settings.png](Tools-Controls_images/Tools-Controls_img440.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/DropDown settings.png](Tools-Controls_images/Tools-Controls_img440.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_1.jpg](Tools-Controls_images/Tools-Controls_img441.jpeg) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_1.jpg](Tools-Controls_images/Tools-Controls_img441.jpeg)' | markdownify }}
 {:.image }
  _Note: Data for the dropdown can be set using Items property. Refer_[Data Settings](http://help.syncfusion.com/ug/windows%20forms/documents/datasettings1.htm) _for details. To know about different dropdown styles available for the control, see ReadOnly Settings section in_ [TextBox](http://help.syncfusion.com/ug/windows%20forms/documents/textbox2.htm)_topic._
 
@@ -24540,7 +24540,7 @@ Data Settings
 
 Data for the ComboBoxAdv is added through String Collection Editor, invoked through the ComboBoxAdv.Items property.
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Items collection.png](Tools-Controls_images/Tools-Controls_img442.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/Items collection.png](Tools-Controls_images/Tools-Controls_img442.png)' | markdownify }}
 {:.image }
 
 
@@ -24572,13 +24572,13 @@ Data for the ComboBoxAdv is added through String Collection Editor, invoked thro
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Items collectionimage.png](Tools-Controls_images/Tools-Controls_img443.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/Items collectionimage.png](Tools-Controls_images/Tools-Controls_img443.png)' | markdownify }}
 {:.image }
 
 
 
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_1.jpg](Tools-Controls_images/Tools-Controls_img444.jpeg) | markdownify }
+> {{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_1.jpg](Tools-Controls_images/Tools-Controls_img444.jpeg)' | markdownify }}
 {:.image }
  _Note: ComboBoxAdv can also be bound to an external Data source like Data Table. Refer_ [Databinding](http://help.syncfusion.com/ug/windows%20forms/documents/databinding8.htm) _topic. To set image for dropdown items refer_ [Image settings](http://help.syncfusion.com/ug/windows%20forms/documents/imagesettings2.htm)_._
 
@@ -24648,7 +24648,7 @@ this.comboBoxAdv1.MatchFirstCharacterOnly = true;
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Autocomplete true.png](Tools-Controls_images/Tools-Controls_img445.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/Autocomplete true.png](Tools-Controls_images/Tools-Controls_img445.png)' | markdownify }}
 {:.image }
 
 
@@ -24786,7 +24786,7 @@ ComboBoxAdv can be bound to DataView using the following code example.
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxDataTable.png](Tools-Controls_images/Tools-Controls_img446.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxDataTable.png](Tools-Controls_images/Tools-Controls_img446.png)' | markdownify }}
 {:.image }
 
 
@@ -24816,7 +24816,7 @@ Specifies the BorderSides of the control.The options are, * Left,* Top,* Right,
 <tr>
 <td>
 <br>FlatStyle</td><td>
-Specifies the Flat Style. The options are* {{ '_Flat,_' | markdownify }}* {{ '_Standard (Default) and_' | markdownify }}* {{ '_System._' | markdownify }}</td></tr>
+Specifies the Flat Style. The options are* {{{ ''_Flat,_'' | markdownify }}}* {{{ ''_Standard (Default) and_'' | markdownify }}}* {{{ ''_System._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 <br>FlatBorderColor</td><td>
@@ -24856,7 +24856,7 @@ this.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue;
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_360.jpg](Tools-Controls_images/Tools-Controls_img447.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_360.jpg](Tools-Controls_images/Tools-Controls_img447.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -24952,7 +24952,7 @@ ComboBoxAdv supports visual styles such as Default, OfficeXP, Office2003, Office
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/VisualStyle.png](Tools-Controls_images/Tools-Controls_img448.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/VisualStyle.png](Tools-Controls_images/Tools-Controls_img448.png)' | markdownify }}
 {:.image }
 
 
@@ -25010,7 +25010,7 @@ Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Office color schemes.png](Tools-Controls_images/Tools-Controls_img449.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/Office color schemes.png](Tools-Controls_images/Tools-Controls_img449.png)' | markdownify }}
 {:.image }
 
 
@@ -25040,7 +25040,7 @@ Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 
 
-{ ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Customcolorarchid.PNG](Tools-Controls_images/Tools-Controls_img450.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/ComboBoxAdv image/Customcolorarchid.PNG](Tools-Controls_images/Tools-Controls_img450.png)' | markdownify }}
 {:.image }
 
 
@@ -25070,7 +25070,7 @@ When ComboBoxAdv control is set with some style, theme background is drawn. You 
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_362.jpg](Tools-Controls_images/Tools-Controls_img451.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_362.jpg](Tools-Controls_images/Tools-Controls_img451.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25148,7 +25148,7 @@ Me.comboBoxAdv1.ShowImageInTextBox = True
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_363.jpg](Tools-Controls_images/Tools-Controls_img452.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_363.jpg](Tools-Controls_images/Tools-Controls_img452.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25620,7 +25620,7 @@ End Sub
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image14_364.jpg](Tools-Controls_images/Tools-Controls_img453.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image14_364.jpg](Tools-Controls_images/Tools-Controls_img453.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25736,7 +25736,7 @@ There is however, a ComboBoxAdv, which is based on the ComboBoxBase and provides
 
 Note that Essential Grid comes with a ListControl-derived GridListControl, which you can place in the drop-down area to get a multi-column drop-down combo.
 
-{ ![](Tools-Controls_images/Tools-Controls_img454.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img454.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25761,21 +25761,21 @@ ComboBoxBase is an advanced ComboBox control that provides many improvements ove
 
 ComboBoxBase can be created easily through designer, by just dragging and dropping the ComboBoxBase control from the Toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img455.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img455.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img456.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img456.png)' | markdownify }}
 {:.image }
 
 
 To add data for the popup, add a listbox control to the form and select it in ListControl property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img457.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img457.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img458.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img458.png)' | markdownify }}
 {:.image }
 
 
@@ -25922,7 +25922,7 @@ Me.Controls.Add(Me.comboBoxBase1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img459.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img459.png)' | markdownify }}
 {:.image }
 
 
@@ -26062,13 +26062,13 @@ This section deals with associating a CheckedListBox and handling the events. Af
 
 1. Create a CheckedListBox and populate it.
 
-{ ![](Tools-Controls_images/Tools-Controls_img460.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img460.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Associate it with the ComboBoxBase control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img461.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img461.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26148,7 +26148,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img462.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img462.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26273,7 +26273,7 @@ This combo box automatically shows all the fields in the datasource. You can dat
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img463.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img463.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26293,7 +26293,7 @@ Concepts and features
 
 The MultiColumnComboBox control provides full support for the Windows Forms designer. To use a MultiColumnComboBox control in your application, all you need to do is drag-and-drop the MultiColumnComboBox control from the toolbox onto your form. You can then set any of its properties through the property grid. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img464.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img464.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26361,7 +26361,7 @@ Multiple Columns
 
 MultiColumnComboBox control is a ComboBoxAdv control with multiple columns. Multiple columns will be enabled by default. To disable this, set MultiColumn property to false. We can display the headers for the columns using ShowColumnHeader property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img465.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img465.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26525,7 +26525,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img466.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img466.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26609,49 +26609,49 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 
 
 
-&lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False"&gt;
+<xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
 
-&lt;xs:complexType&gt;
+<xs:complexType>
 
-&lt;xs:choice maxOccurs="unbounded"&gt;
+<xs:choice maxOccurs="unbounded">
 
-&lt;xs:element name="roster"&gt;
+<xs:element name="roster">
 
-&lt;xs:complexType&gt;
+<xs:complexType>
 
-&lt;xs:sequence&gt;
+<xs:sequence>
 
-&lt;xs:element name="PositionID" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="PositionID" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="EmployeeID" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="PersonID" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="PersonID" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="FirstName" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="FirstName" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="LastName" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="LastName" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="BizUnitName" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="BizUnitName" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="Title" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="Title" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="FunctionalTitle" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="FunctionalTitle" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="CorporateID" type="xs:string" minOccurs="0" /&gt;
+<xs:element name="CorporateID" type="xs:string" minOccurs="0" />
 
-&lt;xs:element name="UserID" type="xs:int" minOccurs="0" /&gt;
+<xs:element name="UserID" type="xs:int" minOccurs="0" />
 
-&lt;/xs:sequence&gt;
+</xs:sequence>
 
-&lt;/xs:complexType&gt;
+</xs:complexType>
 
-&lt;/xs:element&gt;
+</xs:element>
 
-&lt;/xs:choice&gt;
+</xs:choice>
 
-&lt;/xs:complexType&gt;
+</xs:complexType>
 
-&lt;/xs:element&gt;
+</xs:element>
 
 
 
@@ -26662,11 +26662,11 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 
 
 
-&lt;?xml version="1.0" standalone="yes" ?&gt;
+<?xml version="1.0" standalone="yes" ?>
 
-&lt;NewDataSet xmlns="http://tempuri.org/NewDataSet.xsd"&gt;
+<NewDataSet xmlns="http://tempuri.org/NewDataSet.xsd">
 
-&lt;roster&gt;
+<roster>
 
 <PositionID>12345</PositionID>
 
@@ -26688,9 +26688,9 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 
 <UserID>11</UserID>
 
-&lt;/roster&gt;
+</roster>
 
-&lt;roster&gt;
+<roster>
 
 <PositionID>345667</PositionID>
 
@@ -26712,9 +26712,9 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 
 <UserID>12</UserID>
 
-&lt;/roster&gt;
+</roster>
 
-&lt;roster&gt;
+<roster>
 
 <PositionID>4655</PositionID>
 
@@ -26736,9 +26736,9 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 
 <UserID>55</UserID>
 
-&lt;/roster&gt;
+</roster>
 
-&lt;/NewDataSet&gt;
+</NewDataSet>
 
 
 
@@ -26846,7 +26846,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img467.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img467.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26879,11 +26879,11 @@ Me.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img468.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img468.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img469.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img469.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26911,7 +26911,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img470.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img470.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -27062,7 +27062,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img471.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img471.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -27284,7 +27284,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img472.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img472.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -27412,7 +27412,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img473.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img473.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -27482,7 +27482,7 @@ End Sub
 
 The MultiSelectionComboBox is a type of ComboBox Control with multiple item selection and auto suggestion capabilities. When you type a character into the text area, the control performs a search operation and suggest a list of possible matching results to select.
 
-{ ![1](Tools-Controls_images/Tools-Controls_img474.png) | markdownify }
+{{ '![1](Tools-Controls_images/Tools-Controls_img474.png)' | markdownify }}
 {:.image }
 
 
@@ -27511,7 +27511,7 @@ This section briefly describes you on how to design a MultiSelectionComboBox con
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drop a MultiSelectionComboBox control on the Form. The MultiSelectionComboBox is loaded in the form as illustrated in the following screenshot.
 
-{ ![](Tools-Controls_images/Tools-Controls_img475.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img475.png)' | markdownify }}
 {:.image }
 
 
@@ -27521,7 +27521,7 @@ _Figure_ _385_: MultiSelectionComboBox control in Toolbox_
 
 The commonly used settings of the MultiSelectionComboBox control can be configured either through Designer using the Smart tag or through the Properties window or through code. 
 
-{ ![1](Tools-Controls_images/Tools-Controls_img476.png) | markdownify }
+{{ '![1](Tools-Controls_images/Tools-Controls_img476.png)' | markdownify }}
 {:.image }
 
 
@@ -27595,7 +27595,7 @@ Visual Item
 
 Each selected item from its drop down list is displayed like a tag with remove button in text area.
 
-{ ![VisualItems](Tools-Controls_images/Tools-Controls_img477.png) | markdownify }
+{{ '![VisualItems](Tools-Controls_images/Tools-Controls_img477.png)' | markdownify }}
 {:.image }
 
 
@@ -27615,7 +27615,7 @@ Delimiter Mode
 
 Selected items are displayed in text area each separated with delimiter character.
 
-{ ![DelimiterMode](Tools-Controls_images/Tools-Controls_img478.png) | markdownify }
+{{ '![DelimiterMode](Tools-Controls_images/Tools-Controls_img478.png)' | markdownify }}
 {:.image }
 
 
@@ -27635,7 +27635,7 @@ Normal Mode
 
 At a time, only one value can be selected from the drop down list and displayed in text area.
 
-{ ![2](Tools-Controls_images/Tools-Controls_img479.png) | markdownify }
+{{ '![2](Tools-Controls_images/Tools-Controls_img479.png)' | markdownify }}
 {:.image }
 
 
@@ -27657,7 +27657,7 @@ Vertical
 
 The control size is increased with respect to its height upon adding Visual Item, from its dropdown list. 
 
-{ ![3](Tools-Controls_images/Tools-Controls_img480.png) | markdownify }
+{{ '![3](Tools-Controls_images/Tools-Controls_img480.png)' | markdownify }}
 {:.image }
 
 
@@ -27677,7 +27677,7 @@ Horizontal
 
 The control size is increased with respect to its width upon adding Visual Item, from its dropdown list. 
 
-{ ![4](Tools-Controls_images/Tools-Controls_img481.png) | markdownify }
+{{ '![4](Tools-Controls_images/Tools-Controls_img481.png)' | markdownify }}
 {:.image }
 
 
@@ -27699,7 +27699,7 @@ None
 
 The control size is only increased up to pre-defined size and once VisualItem size exceeds it, Scrollbar is displayed to navigate between its items.
 
-{ ![5](Tools-Controls_images/Tools-Controls_img482.png) | markdownify }
+{{ '![5](Tools-Controls_images/Tools-Controls_img482.png)' | markdownify }}
 {:.image }
 
 
@@ -27765,7 +27765,7 @@ Grouping
 
 MultiSelectionComboBox contains support to group its drop down items based on initial character. You can enable or disable this support using its ShowGroups property.
 
-{ ![6](Tools-Controls_images/Tools-Controls_img483.png) | markdownify }
+{{ '![6](Tools-Controls_images/Tools-Controls_img483.png)' | markdownify }}
 {:.image }
 
 
@@ -27791,7 +27791,7 @@ Check Box Selection
 
 Checkboxes in drop down list can be enabled for multiple items selection through the ShowCheckBox property. 
 
-{ ![7](Tools-Controls_images/Tools-Controls_img484.png) | markdownify }
+{{ '![7](Tools-Controls_images/Tools-Controls_img484.png)' | markdownify }}
 {:.image }
 
 
@@ -27811,7 +27811,7 @@ Grouping Header Background
 
 Grouping Header background color can be customized using GroupHeaderBackColor property.
 
-{ ![8](Tools-Controls_images/Tools-Controls_img485.png) | markdownify }
+{{ '![8](Tools-Controls_images/Tools-Controls_img485.png)' | markdownify }}
 {:.image }
 
 
@@ -27833,7 +27833,7 @@ Grouping Header ForeColor
 
 Grouping Header text color can be customized using GroupHeaderForeColor property.
 
-{ ![9](Tools-Controls_images/Tools-Controls_img486.png) | markdownify }
+{{ '![9](Tools-Controls_images/Tools-Controls_img486.png)' | markdownify }}
 {:.image }
 
 
@@ -27855,7 +27855,7 @@ Grouping Header Separator Color
 
 Grouping Header Separator Color can be customized using GroupHeaderSeperatorColor property.
 
-{ ![10](Tools-Controls_images/Tools-Controls_img487.png) | markdownify }
+{{ '![10](Tools-Controls_images/Tools-Controls_img487.png)' | markdownify }}
 {:.image }
 
 
@@ -27939,7 +27939,7 @@ Visual Item Back Color
 
 Visual Item background color can be customized using VisualItemBackColor property.
 
-{ ![11](Tools-Controls_images/Tools-Controls_img488.png) | markdownify }
+{{ '![11](Tools-Controls_images/Tools-Controls_img488.png)' | markdownify }}
 {:.image }
 
 
@@ -27961,7 +27961,7 @@ Visual Item Fore Color
 
 Visual Item Fore Color can be customized using VisualItemForeColor property.
 
-{ ![12](Tools-Controls_images/Tools-Controls_img489.png) | markdownify }
+{{ '![12](Tools-Controls_images/Tools-Controls_img489.png)' | markdownify }}
 {:.image }
 
 
@@ -27983,7 +27983,7 @@ Visual Item Selection Color
 
 Visual Item Back Color upon selection can be customized using VisualItemSelectionColor property.
 
-{ ![13](Tools-Controls_images/Tools-Controls_img490.png) | markdownify }
+{{ '![13](Tools-Controls_images/Tools-Controls_img490.png)' | markdownify }}
 {:.image }
 
 
@@ -28005,7 +28005,7 @@ Visual Item Border Color
 
 Visual Item Border Color can be customized using VisualItemBorderColor property.
 
-{ ![14](Tools-Controls_images/Tools-Controls_img491.png) | markdownify }
+{{ '![14](Tools-Controls_images/Tools-Controls_img491.png)' | markdownify }}
 {:.image }
 
 
@@ -28027,7 +28027,7 @@ Delimiter Character
 
 Upon selecting multiple items from its drop down list, each selected item is separated by user defined delimiter character.
 
-{ ![15](Tools-Controls_images/Tools-Controls_img492.png) | markdownify }
+{{ '![15](Tools-Controls_images/Tools-Controls_img492.png)' | markdownify }}
 {:.image }
 
 
@@ -28043,7 +28043,7 @@ this.MultiSelectionComboBox1.DelimiterChar = ",";
 
 Me.MultiSelectionComboBox1.DelimiterChar = ","
 
-> { ![Note](Tools-Controls_images/Tools-Controls_img493.png) | markdownify }
+> {{ '![Note](Tools-Controls_images/Tools-Controls_img493.png)' | markdownify }}
 {:.image }
  _Note: Delimiter character needs to be single special characters like “,” “.”_ 
 
@@ -28443,13 +28443,13 @@ A PopupControlContainer is a panel-derived control that allows users to populate
 
 The PopupControlContainer was implemented to support creating custom control-rich popups and show them beside a popup-parent, such as a context menu. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img494.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img494.jpeg)' | markdownify }}
 {:.image }
 
 
 In code, call ShowPopup to show the popup anywhere in an application. It also allows you to align a popup beside a control (like in combo boxes) or popup at any given point (like in context menus). 
 
-{ ![](Tools-Controls_images/Tools-Controls_img495.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img495.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -28477,7 +28477,7 @@ Creating PopupControlContainer
 
 The PopupControlContainer control provides full support for the Windows Forms designer. To use a PopupControlContainer control in your application, all you need to do is drag and drop the PopupControlContainer control from the controls toolbox onto your form. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img496.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img496.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -28632,7 +28632,7 @@ A sample which illustrates the IPopupParent interface is available in the below 
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-{ ![](Tools-Controls_images/Tools-Controls_img497.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img497.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -28920,7 +28920,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img498.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img498.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -28948,7 +28948,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 2. Set up a Form with TextBox1 and Button1 added to the PopupControlContainer and RichTextBox as shown in the following figure.
 
-{ ![](Tools-Controls_images/Tools-Controls_img499.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img499.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29084,7 +29084,7 @@ Me.popupControlContainer1.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done
 
 At runtime, the Popup will be shown when the user right clicks on the RichTextBox. Type any text and close the Popup by clicking 'OK' button, you would see the text being assigned to the RichTextBox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img500.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img500.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29219,7 +29219,7 @@ Me.popupControlContainer1.ShowPopup(new Point(100, 100))
 
 At run time, right click on RichTextBox, the popup will be shown below the RichTextBox as in the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img501.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img501.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29325,7 +29325,7 @@ You can set the Boolean value to be false under the Form's Click event and Contr
 
 GradientPanel is a panel-derived control that acts as a container for other controls. It is used to group a collection of controls and it has the ability to have a custom background gradient using an array of colors. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img502.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img502.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29354,19 +29354,19 @@ This section will guide you to create a GradientPanel control.
 1. Create a new Visual C# application or VB.NET application in Visual Studio .NET. 
 2. Drag-and-drop a GradientPanel control object from the toolbox onto the form and resize it to the desired dimensions.
 
-{ ![](Tools-Controls_images/Tools-Controls_img503.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img503.jpeg)' | markdownify }}
 {:.image }
 
 
 3. Set background color for GradientPanel through property grid.
 
-{ ![](Tools-Controls_images/Tools-Controls_img504.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img504.jpeg)' | markdownify }}
 {:.image }
 
 
 4. Build and run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img505.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img505.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29468,7 +29468,7 @@ Me.Controls.Add(Me.GradientPanel1)
 
 6. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img506.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img506.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29522,7 +29522,7 @@ Me.gradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img507.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img507.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29568,7 +29568,7 @@ this.gradientPanel1.ForeColor = System.Drawing.Color.Blue;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img508.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img508.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29614,7 +29614,7 @@ Me.gradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stret
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img509.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img509.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29700,11 +29700,11 @@ Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img510.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img510.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img511.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img511.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29767,7 +29767,7 @@ Me.gradientPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly
 
 The GradientPanelExt is an enhanced version of the GradientPanel control. The GradientPanelExt borders can be rounded to any extent as needed. The control also supports hosting of primitives, in any of the panel borders. These primitives cover a wide range from text to any .NET control. The gradient colors applied to the GradientPanelExt apply to the primitives as well. These are no limitations on the number of these primitives.
 
-{ ![](Tools-Controls_images/Tools-Controls_img512.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img512.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -29799,26 +29799,26 @@ The following steps are involved in creating the GradientPanelExt through the de
 1. Create a new Windows Application.
 2. Drag the GradientPanelExt from the toolbox on to the windows application form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img513.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img513.png)' | markdownify }}
 {:.image }
 
 
 3. Gradient colors for the panel can be set by defining the gradient styles and colors, using the Color Collection Editor.
 4. Primitives can be added to GradientPanelExt 's border using the GradientPanelExt PrimitiveCollection Editor, that can be accessed using the Primitives property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img514.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img514.png)' | markdownify }}
 {:.image }
 
 
 5. The primitive alignment and position can be defined here.
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img515.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img515.png)' | markdownify }}
 {:.image }
  _Note: The properties for the primitives can be set individually using the property grid as well._
 
 6. Build and run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img516.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img516.png)' | markdownify }}
 {:.image }
 
 
@@ -30017,7 +30017,7 @@ The primitives that can be included in the GradientPanelExt are,
 
 The primitives for the GradientPanelExt can be included using the GradientPanelExt PrimitiveCollection Editor, which can be opened using the primitives property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img517.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img517.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30077,11 +30077,11 @@ Private collapsePrimitive1.Size = New System.Drawing.Size(40, 40)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img518.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img518.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img519.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img519.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30319,7 +30319,7 @@ Private Me.imagePrimitive4.PrimitiveBorderStyle = Syncfusion.Windows.Forms.Tools
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img520.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img520.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30455,7 +30455,7 @@ gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrim
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img521.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img521.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30497,7 +30497,7 @@ Background Properties
 
 BackColor represents the background color used to display the text or the graphics in the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img522.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img522.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30517,7 +30517,7 @@ Private gradientPanelExt1.BackColor = System.Drawing.Color.Transparent
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img523.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img523.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30563,7 +30563,7 @@ Specifies the background image for the control.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img524.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img524.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30593,7 +30593,7 @@ Private gradientPanelExt1.BackgroundColor = New                                 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img525.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img525.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30621,7 +30621,7 @@ Private Me.gradientPanelExt1.BackgroundImageLayout = System.Windows.Forms.ImageL
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img526.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img526.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30651,7 +30651,7 @@ Private Me.gradientPanelExt1.ForeColor = System.Drawing.Color.DarkGreen
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img527.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img527.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30691,7 +30691,7 @@ Private gradientPanelExt1.CornerRadius = 14
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img528.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img528.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30713,7 +30713,7 @@ Private gradientPanelExt1.CornerRadius = 0
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img529.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img529.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30753,7 +30753,7 @@ Private gradientPanelExt1.BorderGap = 40
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img530.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img530.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30829,7 +30829,7 @@ End Sub
 
 The SplitContainerAdv is a container that consists of two panels with a splitter between them. It allows the user to simply put other controls on these panels and drag the splitter vertically or horizontally to resize these panels. The user can add more SplitContainerAdv controls into any one of the panels in another SplitContainerAdv control and can change the orientation to have a customized look.
 
-{ ![](Tools-Controls_images/Tools-Controls_img531.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img531.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30863,14 +30863,14 @@ To create and customize the SplitContainerAdv through designer,
 * Open a new Visual C# or VB.NET application in Visual studio.
 * Drag-and-drop a SplitContainerAdv control object from the toolbox onto the form and resize it to the desired dimension.
 
-{ ![](Tools-Controls_images/Tools-Controls_img532.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img532.jpeg)' | markdownify }}
 {:.image }
 
 
 * Drag and drop the desired controls on to the panels.
 * Run the application. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img533.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img533.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30956,7 +30956,7 @@ Me.splitContainerAdv1.SplitterDistance = 47
 
 * Run the application. You will see the SplitContainerAdv with two panels in it as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img534.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img534.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -30970,7 +30970,7 @@ The below image illustrates the components of a SplitContainerAdv control. It ha
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img535.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img535.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31006,7 +31006,7 @@ Me.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img536.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img536.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31176,7 +31176,7 @@ Me.splitContainerAdv1.SplitterWidth = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img537.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img537.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31238,7 +31238,7 @@ Me.splitContainerAdv2.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawin
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img538.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img538.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31308,7 +31308,7 @@ Me.splitContainerAdv2.HotGripLight = New Syncfusion.Drawing.BrushInfo(System.Dra
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img539.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img539.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31344,7 +31344,7 @@ Sets the background color for the control.</td></tr>
 BackgroundColor</td><td>
 Sets the solid, gradient or pattern style background for the control. </td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img540.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img540.jpeg)' | markdownify }}
 {:.image }
  _Note: The above properties can be overridden by SplitContainerAdv.Panel properties._ 
 
@@ -31412,7 +31412,7 @@ Me.splitContainerAdv1.Panel1.ForeColor = System.Drawing.Color.Black
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img541.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img541.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31470,7 +31470,7 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Style.Office2007Bla
 
 
 
-{ ![C:/Users/Giftline/Desktop/ab.png](Tools-Controls_images/Tools-Controls_img542.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/ab.png](Tools-Controls_images/Tools-Controls_img542.png)' | markdownify }}
 {:.image }
 
 
@@ -31510,7 +31510,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img543.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img543.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31544,7 +31544,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img544.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img544.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31556,7 +31556,7 @@ This section discusses about the following DialogControl in detail.
 
 The Essential Tools FolderBrowser component provides a convenient and easy to use object oriented wrapper for the Win32 Shell Folder Browser API. This class completely abstracts the intricacies involved in using the various complex Shell API functions, structures and callback routines required for working with the Windows Folder Selection Dialog and allows Windows Forms developers to work with.NET-centric properties, events and methods.
 
-{ ![](Tools-Controls_images/Tools-Controls_img545.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img545.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31594,7 +31594,7 @@ The designer based approach for creating and initializing the FolderBrowser comp
 
 1. Select the FolderBrowser control from the Visual Studio .NET toolbox window and drop it onto the design form. An instance of the FolderBrowser component will be added to the design form's component tray.
 
-{ ![](Tools-Controls_images/Tools-Controls_img546.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img546.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31620,7 +31620,7 @@ Me.folderBrowser1.ShowDialog()
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img547.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img547.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31718,7 +31718,7 @@ Me.folderBrowser1.ShowDialog()
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img548.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img548.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31746,7 +31746,7 @@ Description</td></tr>
 <tr>
 <td>
 StartLocation</td><td>
-Specifies the location of the root folder from which to start browsing. It is the functional equivalent of setting the PIDL value.{{ '_Desktop,_' | markdownify }}{{ '_Internet,_' | markdownify }}{{ '_Programs,_' | markdownify }}{{ '_Controls,_' | markdownify }}{{ '_Printers,_' | markdownify }}{{ '_Personal,_' | markdownify }}{{ '_Favorites,_' | markdownify }}{{ '_Startup,_' | markdownify }}{{ '_Recent,_' | markdownify }}{{ '_SendTo,_' | markdownify }}{{ '_BitBucket,_' | markdownify }}{{ '_StartMenu,_' | markdownify }}{{ '_MyDocuments,_' | markdownify }}{{ '_MyMusic,_' | markdownify }}{{ '_MyVideo,_' | markdownify }}{{ '_DesktopDirectory,_' | markdownify }}{{ '_MyComputer,_' | markdownify }}{{ '_NetworkNeighborhood,_' | markdownify }}{{ '_NetHood,_' | markdownify }}{{ '_Fonts,_' | markdownify }}{{ '_Templates,_' | markdownify }}{{ '_MyPictures,_' | markdownify }}{{ '_CommonDocuments,_' | markdownify }}{{ '_CommonAdminTools,_' | markdownify }}{{ '_AdminTools,_' | markdownify }}{{ '_NetAndDialUpConnections,_' | markdownify }}{{ '_CommonMusic,_' | markdownify }}{{ '_CommonPictures,_' | markdownify }}{{ '_CommonVideo,_' | markdownify }}{{ '_Resources,_' | markdownify }}{{ '_ResourcesLocalized,_' | markdownify }}{{ '_CommonOemLinks,_' | markdownify }}{{ '_CDBurnArea,_' | markdownify }}{{ '_ComputersNearMe,_' | markdownify }}{{ '_CustomStartLocation,_' | markdownify }}{{ '_FlagPerUserInit,_' | markdownify }}{{ '_FlagNoAlias,_' | markdownify }}{{ '_FlagDontVerify,_' | markdownify }}{{ '_FlagCreate and_' | markdownify }}{{ '_FlagMask._' | markdownify }}</td></tr>
+Specifies the location of the root folder from which to start browsing. It is the functional equivalent of setting the PIDL value.{{{ ''_Desktop,_'' | markdownify }}}{{{ ''_Internet,_'' | markdownify }}}{{{ ''_Programs,_'' | markdownify }}}{{{ ''_Controls,_'' | markdownify }}}{{{ ''_Printers,_'' | markdownify }}}{{{ ''_Personal,_'' | markdownify }}}{{{ ''_Favorites,_'' | markdownify }}}{{{ ''_Startup,_'' | markdownify }}}{{{ ''_Recent,_'' | markdownify }}}{{{ ''_SendTo,_'' | markdownify }}}{{{ ''_BitBucket,_'' | markdownify }}}{{{ ''_StartMenu,_'' | markdownify }}}{{{ ''_MyDocuments,_'' | markdownify }}}{{{ ''_MyMusic,_'' | markdownify }}}{{{ ''_MyVideo,_'' | markdownify }}}{{{ ''_DesktopDirectory,_'' | markdownify }}}{{{ ''_MyComputer,_'' | markdownify }}}{{{ ''_NetworkNeighborhood,_'' | markdownify }}}{{{ ''_NetHood,_'' | markdownify }}}{{{ ''_Fonts,_'' | markdownify }}}{{{ ''_Templates,_'' | markdownify }}}{{{ ''_MyPictures,_'' | markdownify }}}{{{ ''_CommonDocuments,_'' | markdownify }}}{{{ ''_CommonAdminTools,_'' | markdownify }}}{{{ ''_AdminTools,_'' | markdownify }}}{{{ ''_NetAndDialUpConnections,_'' | markdownify }}}{{{ ''_CommonMusic,_'' | markdownify }}}{{{ ''_CommonPictures,_'' | markdownify }}}{{{ ''_CommonVideo,_'' | markdownify }}}{{{ ''_Resources,_'' | markdownify }}}{{{ ''_ResourcesLocalized,_'' | markdownify }}}{{{ ''_CommonOemLinks,_'' | markdownify }}}{{{ ''_CDBurnArea,_'' | markdownify }}}{{{ ''_ComputersNearMe,_'' | markdownify }}}{{{ ''_CustomStartLocation,_'' | markdownify }}}{{{ ''_FlagPerUserInit,_'' | markdownify }}}{{{ ''_FlagNoAlias,_'' | markdownify }}}{{{ ''_FlagDontVerify,_'' | markdownify }}}{{{ ''_FlagCreate and_'' | markdownify }}}{{{ ''_FlagMask._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 CustomStartLocation</td><td>
@@ -31760,7 +31760,7 @@ Gets / sets the selected location for showing the dialog.</td></tr>
 DirectoryPath</td><td>
 Retrieves the location of the selected folder.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img549.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img549.jpeg)' | markdownify }}
 {:.image }
  _Note: For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'._
 
@@ -31800,7 +31800,7 @@ Me.folderBrowser1.SelectLocation = "C:\\Program Files\\Syncfusion\\Essential Stu
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img550.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img550.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31822,7 +31822,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the options for the FolderBrowser Dialog.The options included are as follows.{{ '_RestrictToFilesystem,_' | markdownify }}{{ '_RestrictToSubfolders,_' | markdownify }}{{ '_RestrictToDomain,_' | markdownify }}{{ '_BrowseForComputer,_' | markdownify }}{{ '_BrowseForEverything,_' | markdownify }}{{ '_BrowseForPrinter,_' | markdownify }}{{ '_NewDialogStyle,_' | markdownify }}{{ '_AllowUrls,_' | markdownify }}{{ '_ShowAdministrativeShares,_' | markdownify }}{{ '_ShowShares,_' | markdownify }}{{ '_ShowTextBox,_' | markdownify }}{{ '_StatusText,_' | markdownify }}{{ '_UAHint and_' | markdownify }}{{ '_Validate._' | markdownify }}</td></tr>
+Specifies the options for the FolderBrowser Dialog.The options included are as follows.{{{ ''_RestrictToFilesystem,_'' | markdownify }}}{{{ ''_RestrictToSubfolders,_'' | markdownify }}}{{{ ''_RestrictToDomain,_'' | markdownify }}}{{{ ''_BrowseForComputer,_'' | markdownify }}}{{{ ''_BrowseForEverything,_'' | markdownify }}}{{{ ''_BrowseForPrinter,_'' | markdownify }}}{{{ ''_NewDialogStyle,_'' | markdownify }}}{{{ ''_AllowUrls,_'' | markdownify }}}{{{ ''_ShowAdministrativeShares,_'' | markdownify }}}{{{ ''_ShowShares,_'' | markdownify }}}{{{ ''_ShowTextBox,_'' | markdownify }}}{{{ ''_StatusText,_'' | markdownify }}}{{{ ''_UAHint and_'' | markdownify }}}{{{ ''_Validate._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -31859,7 +31859,7 @@ Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextB
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img551.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img551.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -31905,7 +31905,7 @@ Me.folderBrowser1.Description = "Recent Documents"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img552.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img552.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -32005,7 +32005,7 @@ Me.label1.Text = String.Format("Event: {0}, Path: {1}", e.FolderBrowserMessage, 
 
 If e.FolderBrowserMessage = FolderBrowserMessage.ValidateFailed Then
 
-e.Dismiss = e.Path &lt;&gt; "NONE"
+e.Dismiss = e.Path <> "NONE"
 
 End If
 
@@ -32047,7 +32047,7 @@ The following are the rich edit controls supported by Syncfusion.
 
 CurrencyEdit embeds a CurrencyTextBox control and a button to provide a drop-down calculator to enable calculations with the contents of the CurrencyTextBox. The CurrencyEdit control provides an easy way to collect and display the currency data.
 
-{ ![](Tools-Controls_images/Tools-Controls_img553.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img553.png)' | markdownify }}
 {:.image }
 
 
@@ -32065,7 +32065,7 @@ The features of Currency Edit control is listed below.
 
 To use a CurrencyEdit control in your application, all you need to do is drag and drop the CurrencyEdit control from the controls toolbox onto your form. You can then set any of its properties through the property grid.
 
-{ ![](Tools-Controls_images/Tools-Controls_img554.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img554.png)' | markdownify }}
 {:.image }
 
 
@@ -32119,7 +32119,7 @@ Me.Controls.Add(Me.currencyEdit1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img555.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img555.png)' | markdownify }}
 {:.image }
 
 
@@ -32131,7 +32131,7 @@ Calculator Settings
 
 A CurrencyEdit control has a text field and a Calculator button, pressing which will open a Calculator control. The below image illustrates the same.
 
-{ ![](Tools-Controls_images/Tools-Controls_img556.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img556.png)' | markdownify }}
 {:.image }
 
 
@@ -32153,19 +32153,19 @@ Specifies whether calculator button is to be displayed. By default it is True.</
 <tr>
 <td>
 CalculatorButton</td><td>
-Provides properties to customize the calculator button. { [See ButtonEdit](http://172.168.111.149/UG_82/WindowsFormsUI_Tools/ButtonEdit.html) | markdownify } control user guide to know about the settings.</td></tr>
+Provides properties to customize the calculator button. {{ '[See ButtonEdit](http://172.168.111.149/UG_82/WindowsFormsUI_Tools/ButtonEdit.html)' | markdownify }} control user guide to know about the settings.</td></tr>
 <tr>
 <td>
 CalculatorLayoutType</td><td>
-Specifies the LayoutType for the Calculator control. The layout types are,{{ '_Financial (default) and_' | markdownify }}{{ '_WindowStandard._' | markdownify }}</td></tr>
+Specifies the LayoutType for the Calculator control. The layout types are,{{{ ''_Financial (default) and_'' | markdownify }}}{{{ ''_WindowStandard._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 PopupCalculatorAlignment</td><td>
-It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,{{ '_Right(default) and_' | markdownify }}{{ '_Left._' | markdownify }}</td></tr>
+It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,{{{ ''_Right(default) and_'' | markdownify }}}{{{ ''_Left._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 CloseAction</td><td>
-Specifies the action that will close the popup calculator. After performing calculations in the popup calculator, we may press '=' to close the popup calculator. This is called closed action. We can select any operator instead of '=' to close the popup calculator. The options are,{{ '_Calcdigit0...Calcdigit9,_' | markdownify }}{{ '_CalcOperatorNone,_' | markdownify }}{{ '_CalcOperatorMultiply,_' | markdownify }}{{ '_CalcOperatorPlus,_' | markdownify }}{{ '_CalcOperatorMinus,_' | markdownify }}{{ '_CalcOperatorDivide,_' | markdownify }}{{ '_CalcOperatorPercent,_' | markdownify }}{{ '_CalcOperatorEquals (default),_' | markdownify }}{{ '_CalcOperatorSqrt,_' | markdownify }}{{ '_CalcOperatorSign,_' | markdownify }}{{ '_CalcOperatorMemoryClear,_' | markdownify }}{{ '_CalcOperatorMemoryRecall,_' | markdownify }}{{ '_CalcOperatorMemoryStore,_' | markdownify }}{{ '_CalcOperatorMemoryPlus,_' | markdownify }}{{ '_CalcSpecialClear,_' | markdownify }}{{ '_CalcSpecialClearEntry,_' | markdownify }}{{ '_CalcSpecialDecimal and_' | markdownify }}{{ '_CalcSpecialBackspace._' | markdownify }}</td></tr>
+Specifies the action that will close the popup calculator. After performing calculations in the popup calculator, we may press '=' to close the popup calculator. This is called closed action. We can select any operator instead of '=' to close the popup calculator. The options are,{{{ ''_Calcdigit0...Calcdigit9,_'' | markdownify }}}{{{ ''_CalcOperatorNone,_'' | markdownify }}}{{{ ''_CalcOperatorMultiply,_'' | markdownify }}}{{{ ''_CalcOperatorPlus,_'' | markdownify }}}{{{ ''_CalcOperatorMinus,_'' | markdownify }}}{{{ ''_CalcOperatorDivide,_'' | markdownify }}}{{{ ''_CalcOperatorPercent,_'' | markdownify }}}{{{ ''_CalcOperatorEquals (default),_'' | markdownify }}}{{{ ''_CalcOperatorSqrt,_'' | markdownify }}}{{{ ''_CalcOperatorSign,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryClear,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryRecall,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryStore,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryPlus,_'' | markdownify }}}{{{ ''_CalcSpecialClear,_'' | markdownify }}}{{{ ''_CalcSpecialClearEntry,_'' | markdownify }}}{{{ ''_CalcSpecialDecimal and_'' | markdownify }}}{{{ ''_CalcSpecialBackspace._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -32283,11 +32283,11 @@ Me.currencyEdit1.TextBox.DecimalValue = New Decimal(New Integer() {40000, 0, 
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyEdit_Text.png](Tools-Controls_images/Tools-Controls_img557.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyEdit_Text.png](Tools-Controls_images/Tools-Controls_img557.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img558.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img558.png)' | markdownify }}
 {:.image }
  _Note: Enabling ButtonEdit.UseVisualStyle property and by setting visual style for control using ButtonEdit.ButtonStyle property, we can change the appearance of the calculator button._
 
@@ -32425,7 +32425,7 @@ End Sub
 
 DomainUpDownExt is an advanced version of the standard windows DomainUpDown control. Syncfusion DomainUpDownExt supports themes and comes with Office2007 look and feel. It also provides options to apply custom colors to the control. It enables spin button orientation and alignment.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DomainUpDownExt_1.png](Tools-Controls_images/Tools-Controls_img559.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DomainUpDownExt_1.png](Tools-Controls_images/Tools-Controls_img559.png)' | markdownify }}
 {:.image }
 
 
@@ -32443,13 +32443,13 @@ DomainUpDownExt is an advanced version of the standard windows DomainUpDown con
 
 To use a DomainUpDownExt control in your application, all you need to do is drag and drop the DomainUpDownExt control from the controls toolbox onto your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img560.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img560.png)' | markdownify }}
 {:.image }
 
 
 You can add items in the String Collection Editor of DomainUpDownExt control and Click Ok.
 
-{ ![](Tools-Controls_images/Tools-Controls_img561.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img561.png)' | markdownify }}
 {:.image }
 
 
@@ -32531,7 +32531,7 @@ Me.Controls.Add(Me.domainUpDownExt1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img562.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img562.png)' | markdownify }}
 {:.image }
 
 
@@ -32587,7 +32587,7 @@ Me.domainUpDownExt2.MaxLength = 32768
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Text.png](Tools-Controls_images/Tools-Controls_img563.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Text.png](Tools-Controls_images/Tools-Controls_img563.png)' | markdownify }}
 {:.image }
 
 
@@ -32595,7 +32595,7 @@ SpinButton
 
 This section will discuss the properties which controls the alignment and orientation of the spin button in a DomainUpDownExt control.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Spin.png](Tools-Controls_images/Tools-Controls_img564.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Spin.png](Tools-Controls_images/Tools-Controls_img564.png)' | markdownify }}
 {:.image }
 
 
@@ -32631,7 +32631,7 @@ Me.domainUpDownExt1.SpinOrientation = Orientation.Vertical
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownSpin.png](Tools-Controls_images/Tools-Controls_img565.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownSpin.png](Tools-Controls_images/Tools-Controls_img565.png)' | markdownify }}
 {:.image }
 
 
@@ -32655,7 +32655,7 @@ Me.domainUpDownExt1.UpDownAlign = LeftRightAlignment.Left
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Align.png](Tools-Controls_images/Tools-Controls_img566.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Align.png](Tools-Controls_images/Tools-Controls_img566.png)' | markdownify }}
 {:.image }
 
 
@@ -32739,7 +32739,7 @@ Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownOffice.png](Tools-Controls_images/Tools-Controls_img567.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownOffice.png](Tools-Controls_images/Tools-Controls_img567.png)' | markdownify }}
 {:.image }
 
 
@@ -32765,11 +32765,11 @@ Me.domainUpDownExt1.ThemesEnabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownDefault.png](Tools-Controls_images/Tools-Controls_img568.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownDefault.png](Tools-Controls_images/Tools-Controls_img568.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownVista.png](Tools-Controls_images/Tools-Controls_img569.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownVista.png](Tools-Controls_images/Tools-Controls_img569.png)' | markdownify }}
 {:.image }
 
 
@@ -32797,7 +32797,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDown_CustomColors.png](Tools-Controls_images/Tools-Controls_img570.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDown_CustomColors.png](Tools-Controls_images/Tools-Controls_img570.png)' | markdownify }}
 {:.image }
 
 
@@ -32873,11 +32873,11 @@ Me.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DomainUp_border.png](Tools-Controls_images/Tools-Controls_img571.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DomainUp_border.png](Tools-Controls_images/Tools-Controls_img571.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Create2.png](Tools-Controls_images/Tools-Controls_img572.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Create2.png](Tools-Controls_images/Tools-Controls_img572.png)' | markdownify }}
 {:.image }
 
 
@@ -32993,7 +32993,7 @@ The DoubleTextBox is a text box-derived control that can display double data t
 
 The DoubleTextBox is derived from Windows Forms framework text box control. The DoubleTextBox supports display and collection of double values. It handles user keyboard input and double formatting and uses the globalization features of the .NET platform to provide locale specific formatting.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DoubleTB_1.png](Tools-Controls_images/Tools-Controls_img573.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DoubleTB_1.png](Tools-Controls_images/Tools-Controls_img573.png)' | markdownify }}
 {:.image }
 
 
@@ -33010,7 +33010,7 @@ DoubleTextBoxis used to display collection of double values.
 
 To use a DoubleTextBox control in your application, all you need to do is drag and drop the DoubleTextBox control from the controls toolbox onto your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img574.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img574.png)' | markdownify }}
 {:.image }
 
 
@@ -33056,7 +33056,7 @@ Me.Controls.Add(Me.doubleTextBox1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img575.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img575.png)' | markdownify }}
 {:.image }
 
 
@@ -33208,7 +33208,7 @@ Me.doubleTextBox1.Text = ""
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DoubleTextBox_BannerText.png](Tools-Controls_images/Tools-Controls_img576.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DoubleTextBox_BannerText.png](Tools-Controls_images/Tools-Controls_img576.png)' | markdownify }}
 {:.image }
 
 
@@ -33370,7 +33370,7 @@ End Class
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img577.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img577.png)' | markdownify }}
 {:.image }
 
 
@@ -33470,7 +33470,7 @@ End Sub
 
 The IntegerTextBox is derived from the Windows Forms framework TextBox control and can display integer data type values. It exhibits properties similar to that of the CurrencyTextBox.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Create4.png](Tools-Controls_images/Tools-Controls_img578.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Create4.png](Tools-Controls_images/Tools-Controls_img578.png)' | markdownify }}
 {:.image }
 
 
@@ -33541,13 +33541,13 @@ Through Designer
 1. Create or open a Windows Forms project.
 2. Click on the IntegerTextBox Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img579.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img579.png)' | markdownify }}
 {:.image }
 
 
 3. Run the application. The IntegerTextBox that allows you to enter only integer values, will be displayed as given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img580.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img580.png)' | markdownify }}
 {:.image }
 
 
@@ -33639,7 +33639,7 @@ Me.Controls.Add(Me.integerTextBox1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img581.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img581.png)' | markdownify }}
 {:.image }
 
 
@@ -33709,7 +33709,7 @@ Me.integerTextBox1.NegativeSign = "-"
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_GroupSize1.png](Tools-Controls_images/Tools-Controls_img582.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_GroupSize1.png](Tools-Controls_images/Tools-Controls_img582.png)' | markdownify }}
 {:.image }
 
 
@@ -33767,7 +33767,7 @@ Me.integerTextBox1.BindableValue = 777
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features2.png](Tools-Controls_images/Tools-Controls_img583.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features2.png](Tools-Controls_images/Tools-Controls_img583.png)' | markdownify }}
 {:.image }
 
 
@@ -33821,7 +33821,7 @@ Me.integerTextBox1. AllowNull = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features1.png](Tools-Controls_images/Tools-Controls_img584.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features1.png](Tools-Controls_images/Tools-Controls_img584.png)' | markdownify }}
 {:.image }
 
 
@@ -33887,7 +33887,7 @@ Indicates whether the Culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture,_'' | markdownify }}}{{{ ''_UICulture and_'' | markdownify }}}{{{ ''_InstalledCulture._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -33923,11 +33923,11 @@ Me.integerTextBox1.UseUserOverride = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features5.png](Tools-Controls_images/Tools-Controls_img585.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features5.png](Tools-Controls_images/Tools-Controls_img585.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img586.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img586.png)' | markdownify }}
 {:.image }
  _Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings._
 
@@ -33999,11 +33999,11 @@ Me.integerTextBox1.ClipText = "12"
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features15.png](Tools-Controls_images/Tools-Controls_img587.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features15.png](Tools-Controls_images/Tools-Controls_img587.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features7.png](Tools-Controls_images/Tools-Controls_img588.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features7.png](Tools-Controls_images/Tools-Controls_img588.png)' | markdownify }}
 {:.image }
 
 
@@ -34055,7 +34055,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options:{{ '_IncludeFormatting and_' | markdownify }}{{ '_ExcludeFormatting._' | markdownify }}</td></tr>
+Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options:{{{ ''_IncludeFormatting and_'' | markdownify }}}{{{ ''_ExcludeFormatting._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -34123,7 +34123,7 @@ Indicates whether the component should draw right-to-left for RTL languages. The
 </table>
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img589.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img589.png)' | markdownify }}
 {:.image }
  _Note: The RightToLeft property will be automatically set to 'True' for RTL languages._
 
@@ -34143,11 +34143,11 @@ Me.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features9.png](Tools-Controls_images/Tools-Controls_img590.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features9.png](Tools-Controls_images/Tools-Controls_img590.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img591.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img591.png)' | markdownify }}
 {:.image }
  _Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
 
@@ -34199,7 +34199,7 @@ Me.integerTextBox1.ShowOverflowIndicatorToolTip = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features13.png](Tools-Controls_images/Tools-Controls_img592.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features13.png](Tools-Controls_images/Tools-Controls_img592.png)' | markdownify }}
 {:.image }
 
 
@@ -34289,15 +34289,15 @@ Me.integerTextBox1.ReadOnly = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features4.png](Tools-Controls_images/Tools-Controls_img593.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features4.png](Tools-Controls_images/Tools-Controls_img593.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features5.png](Tools-Controls_images/Tools-Controls_img594.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features5.png](Tools-Controls_images/Tools-Controls_img594.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img595.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img595.png)' | markdownify }}
 {:.image }
  _Note: The ReadOnly property must be set to 'True' for the above setting to take effect._
 
@@ -34373,7 +34373,7 @@ Me.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features10.png](Tools-Controls_images/Tools-Controls_img596.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features10.png](Tools-Controls_images/Tools-Controls_img596.png)' | markdownify }}
 {:.image }
 
 
@@ -34503,7 +34503,7 @@ Me.integerTextBox1.AllowLeadingZeros = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features11.png](Tools-Controls_images/Tools-Controls_img597.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features11.png](Tools-Controls_images/Tools-Controls_img597.png)' | markdownify }}
 {:.image }
 
 
@@ -34521,7 +34521,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -34529,11 +34529,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options are as follows.{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options are as follows.{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -34565,7 +34565,7 @@ Me.integerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features12.png](Tools-Controls_images/Tools-Controls_img598.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features12.png](Tools-Controls_images/Tools-Controls_img598.png)' | markdownify }}
 {:.image }
 
 
@@ -34725,7 +34725,7 @@ Description</td></tr>
 ThemesEnabled</td><td>
 Specifies whether or not to use XP themes, when BorderStyle property is set to 'Fixed3D'.</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img599.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img599.png)' | markdownify }}
 {:.image }
  _Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderSettings13.html) _topic to know about the BorderStyle property._
 
@@ -34745,7 +34745,7 @@ Me.integerTextBox1.ThemesEnabled = true
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features14.png](Tools-Controls_images/Tools-Controls_img600.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features14.png](Tools-Controls_images/Tools-Controls_img600.png)' | markdownify }}
 {:.image }
 
 
@@ -35043,7 +35043,7 @@ Me.integerTextBox1.DataBindings.Add("BindableValue", boundView, "IntegerField")
 
 The PercentTextBox is a textbox-derived control that can display double data type values in percentage form.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Intro.png](Tools-Controls_images/Tools-Controls_img601.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Intro.png](Tools-Controls_images/Tools-Controls_img601.png)' | markdownify }}
 {:.image }
 
 
@@ -35121,13 +35121,13 @@ Through Designer
 1. Create or open a Windows Forms project.
 2. Click on the PercentTextBox Control in the toolbox and add it to the form by dragging-and-dropping it onto the form or double-clicking the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img602.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img602.png)' | markdownify }}
 {:.image }
 
 
 3. Run the application. The PercentTextBox will allow you to enter the percent value, which will be displayed as given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img603.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img603.png)' | markdownify }}
 {:.image }
 
 
@@ -35219,7 +35219,7 @@ Me.Controls.Add(Me.percentTextBox1)
 
 5. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img604.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img604.png)' | markdownify }}
 {:.image }
 
 
@@ -35323,7 +35323,7 @@ Me.percentTextBox1.PercentSymbol = "%"
 
 The following screen shot illustrates the above settings.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features2.png](Tools-Controls_images/Tools-Controls_img605.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features2.png](Tools-Controls_images/Tools-Controls_img605.png)' | markdownify }}
 {:.image }
 
 
@@ -35397,7 +35397,7 @@ Me.percentTextBox1.DoubleValue = 0.05
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features4.png](Tools-Controls_images/Tools-Controls_img606.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features4.png](Tools-Controls_images/Tools-Controls_img606.png)' | markdownify }}
 {:.image }
 
 
@@ -35447,7 +35447,7 @@ Me.percentTextBox1.AllowNull = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features3.png](Tools-Controls_images/Tools-Controls_img607.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features3.png](Tools-Controls_images/Tools-Controls_img607.png)' | markdownify }}
 {:.image }
 
 
@@ -35541,7 +35541,7 @@ Indicates whether the Culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture,_'' | markdownify }}}{{{ ''_UICulture and_'' | markdownify }}}{{{ ''_InstalledCulture._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -35577,11 +35577,11 @@ Me.percentTextBox1.UseUserOverride = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features5.png](Tools-Controls_images/Tools-Controls_img608.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features5.png](Tools-Controls_images/Tools-Controls_img608.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img609.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img609.png)' | markdownify }}
 {:.image }
  _Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings._
 
@@ -35609,7 +35609,7 @@ Specifies the text associated with the control.</td></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options.{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
+Gets / sets the case of character as they are typed.It includes the below given options.{{{ ''_Normal,_'' | markdownify }}}{{{ ''_Upper and_'' | markdownify }}}{{{ ''_Lower._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -35685,15 +35685,15 @@ Me.percentTextBox1.DrawActiveWhenDisabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features13.png](Tools-Controls_images/Tools-Controls_img610.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features13.png](Tools-Controls_images/Tools-Controls_img610.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features6.png](Tools-Controls_images/Tools-Controls_img611.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features6.png](Tools-Controls_images/Tools-Controls_img611.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features7.png](Tools-Controls_images/Tools-Controls_img612.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features7.png](Tools-Controls_images/Tools-Controls_img612.png)' | markdownify }}
 {:.image }
 
 
@@ -35769,7 +35769,7 @@ Indicates if lines are automatically word-wrapped for multiline edit controls.</
 <tr>
 <td>
 ScrollBars</td><td>
-Indicates, for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
+Indicates, for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_Horizontal,_'' | markdownify }}}{{{ ''_Vertical and_'' | markdownify }}}{{{ ''_Both._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -35797,15 +35797,15 @@ Me.percentTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features15.png](Tools-Controls_images/Tools-Controls_img613.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features15.png](Tools-Controls_images/Tools-Controls_img613.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features16.png](Tools-Controls_images/Tools-Controls_img614.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features16.png](Tools-Controls_images/Tools-Controls_img614.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features17.png](Tools-Controls_images/Tools-Controls_img615.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features17.png](Tools-Controls_images/Tools-Controls_img615.png)' | markdownify }}
 {:.image }
 
 
@@ -35825,7 +35825,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options.{{ '_IncludeFormatting and_' | markdownify }}{{ '_ExcludeFormatting._' | markdownify }}</td></tr>
+Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options.{{{ ''_IncludeFormatting and_'' | markdownify }}}{{{ ''_ExcludeFormatting._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -35891,7 +35891,7 @@ Description</td></tr>
 RightToLeft</td><td>
 Indicates whether the component should draw right-to-left for RTL languages. The default value is set to 'False'.</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img616.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img616.png)' | markdownify }}
 {:.image }
  _Note: The RightToLeft property will be automatically set to 'True' for RTL languages._
 
@@ -35911,11 +35911,11 @@ Me.percentTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features8.png](Tools-Controls_images/Tools-Controls_img617.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features8.png](Tools-Controls_images/Tools-Controls_img617.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img618.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img618.png)' | markdownify }}
 {:.image }
  _Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
 
@@ -35969,7 +35969,7 @@ Me.percentTextBox1.ShowOverflowIndicatorToolTip = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features9.png](Tools-Controls_images/Tools-Controls_img619.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features9.png](Tools-Controls_images/Tools-Controls_img619.png)' | markdownify }}
 {:.image }
 
 
@@ -36061,17 +36061,17 @@ Me.percentTextBox1.ReadOnlyBackColor = System.Drawing.Color.Pink
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features11.png](Tools-Controls_images/Tools-Controls_img620.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features11.png](Tools-Controls_images/Tools-Controls_img620.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features12.png](Tools-Controls_images/Tools-Controls_img621.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features12.png](Tools-Controls_images/Tools-Controls_img621.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img622.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img622.png)' | markdownify }}
 {:.image }
  _Note: The ReadOnly property must be set to 'True' for the above setting to take effect._
 
@@ -36147,7 +36147,7 @@ Me.percentTextBox1.ZeroColor = System.Drawing.Color.Orchid
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features10.png](Tools-Controls_images/Tools-Controls_img623.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features10.png](Tools-Controls_images/Tools-Controls_img623.png)' | markdownify }}
 {:.image }
 
 
@@ -36249,7 +36249,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -36257,11 +36257,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,'_ | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,'_' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below.{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -36293,7 +36293,7 @@ Me.percentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features1.png](Tools-Controls_images/Tools-Controls_img624.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features1.png](Tools-Controls_images/Tools-Controls_img624.png)' | markdownify }}
 {:.image }
 
 
@@ -36343,7 +36343,7 @@ Me.percentTextBox1.MinimumSize = New System.Drawing.Size(100, 25)
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features18.png](Tools-Controls_images/Tools-Controls_img625.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features18.png](Tools-Controls_images/Tools-Controls_img625.png)' | markdownify }}
 {:.image }
 
 
@@ -36499,7 +36499,7 @@ Description</td></tr>
 ThemesEnabled</td><td>
 Specifies whether or not to use XP themes when BorderStyle  property is set to 'Fixed3D'.</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img626.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img626.png)' | markdownify }}
 {:.image }
  _Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderSettings13.html) _topic to know about the BorderStyle property._
 
@@ -36519,7 +36519,7 @@ Me.percentTextBox1.ThemesEnabled = true
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features19.png](Tools-Controls_images/Tools-Controls_img627.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features19.png](Tools-Controls_images/Tools-Controls_img627.png)' | markdownify }}
 {:.image }
 
 
@@ -37231,7 +37231,7 @@ End Sub
 
 Essential Tools provides the CurrencyTextBox control for currency specific behavior in edit controls. CurrencyTextBox is derived from System.Windows.Forms.TextBox and implements all the functionality needed for formatting currency input and validation.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Tools-Controls_images/Tools-Controls_img628.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Tools-Controls_images/Tools-Controls_img628.png)' | markdownify }}
 {:.image }
 
 
@@ -37257,7 +37257,7 @@ Currency TextBox is used to display currency values and contains following featu
 
 CurrencyTextBox provides full support for the windows forms designer. Just drag and drop CurrencyTextBox from the toolbox, onto the form.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTB_Icon.png](Tools-Controls_images/Tools-Controls_img629.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTB_Icon.png](Tools-Controls_images/Tools-Controls_img629.png)' | markdownify }}
 {:.image }
 
 
@@ -37319,7 +37319,7 @@ The following Editors controls (DoubleTextBox, IntegerTextBox, PercentTextBox, a
 
 The text field of a CurrencyTextBox control can be customized using the properties available. The below image illustrates the various sections of the control.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField.png](Tools-Controls_images/Tools-Controls_img630.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField.png](Tools-Controls_images/Tools-Controls_img630.png)' | markdownify }}
 {:.image }
 
 
@@ -37347,7 +37347,7 @@ Me.currencyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField1.png](Tools-Controls_images/Tools-Controls_img631.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField1.png](Tools-Controls_images/Tools-Controls_img631.png)' | markdownify }}
 {:.image }
 
 
@@ -37405,15 +37405,15 @@ Me.currencyTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Multiline.png](Tools-Controls_images/Tools-Controls_img632.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Multiline.png](Tools-Controls_images/Tools-Controls_img632.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img633.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img633.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTExtBox_Scroll.png](Tools-Controls_images/Tools-Controls_img634.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTExtBox_Scroll.png](Tools-Controls_images/Tools-Controls_img634.png)' | markdownify }}
 {:.image }
 
 
@@ -37441,7 +37441,7 @@ Me.currencyTextBox1.PasswordChar = '*'
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Password.png](Tools-Controls_images/Tools-Controls_img635.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Password.png](Tools-Controls_images/Tools-Controls_img635.png)' | markdownify }}
 {:.image }
 
 
@@ -37475,7 +37475,7 @@ Me.currencyTextBox1.Text = ""
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_BannerText.png](Tools-Controls_images/Tools-Controls_img636.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_BannerText.png](Tools-Controls_images/Tools-Controls_img636.png)' | markdownify }}
 {:.image }
 
 
@@ -37569,7 +37569,7 @@ Specifies whether to remove last decimal zeros in the currency value.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img637.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img637.png)' | markdownify }}
 {:.image }
 
 
@@ -37605,11 +37605,11 @@ Me.currencyTextBox1.RemoveDecimalZeros = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Tools-Controls_images/Tools-Controls_img638.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Tools-Controls_images/Tools-Controls_img638.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_RemoveLastDecimal.png](Tools-Controls_images/Tools-Controls_img639.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_RemoveLastDecimal.png](Tools-Controls_images/Tools-Controls_img639.png)' | markdownify }}
 {:.image }
 
 
@@ -37729,7 +37729,7 @@ Me.currencyTextBox1.AllowNull = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_NullString.png](Tools-Controls_images/Tools-Controls_img640.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_NullString.png](Tools-Controls_images/Tools-Controls_img640.png)' | markdownify }}
 {:.image }
 
 
@@ -37801,7 +37801,7 @@ Me.currencyTextBox1.ThemesEnabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrText_themes.png](Tools-Controls_images/Tools-Controls_img641.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrText_themes.png](Tools-Controls_images/Tools-Controls_img641.png)' | markdownify }}
 {:.image }
 
 
@@ -37823,11 +37823,11 @@ Sets the style of the border. The options includes:FixedSingle,Fixed3D andNone (
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
+Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Sunken (default),_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the border sides. The options includes{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
+Specifies the border sides. The options includes{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All (default)._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -37863,7 +37863,7 @@ Me.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Border.png](Tools-Controls_images/Tools-Controls_img642.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Border.png](Tools-Controls_images/Tools-Controls_img642.png)' | markdownify }}
 {:.image }
 
 
@@ -37925,7 +37925,7 @@ Me.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Color.png](Tools-Controls_images/Tools-Controls_img643.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Color.png](Tools-Controls_images/Tools-Controls_img643.png)' | markdownify }}
 {:.image }
 
 
@@ -37945,7 +37945,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ '_ExcludeFormatting and_' | markdownify }}{{ '_IncludeFormatting._' | markdownify }}</td></tr>
+Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{{ ''_ExcludeFormatting and_'' | markdownify }}}{{{ ''_IncludeFormatting._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -37965,7 +37965,7 @@ Me.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img644.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img644.png)' | markdownify }}
 {:.image }
 
 
@@ -37997,7 +37997,7 @@ Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Overflow.png](Tools-Controls_images/Tools-Controls_img645.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Overflow.png](Tools-Controls_images/Tools-Controls_img645.png)' | markdownify }}
 {:.image }
 
 
@@ -38023,11 +38023,11 @@ Specifies whether the culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{ '_None,_' | markdownify }}{{ '_CurrentCulture (default),_' | markdownify }}{{ '_InstalledCulture,_' | markdownify }}{{ '_UICulture._' | markdownify }}</td></tr>
+It sets the mode for the cultures. The options includes:{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture (default),_'' | markdownify }}}{{{ ''_InstalledCulture,_'' | markdownify }}}{{{ ''_UICulture._'' | markdownify }}}</td></tr>
 </table>
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Culture.png](Tools-Controls_images/Tools-Controls_img646.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Culture.png](Tools-Controls_images/Tools-Controls_img646.png)' | markdownify }}
 {:.image }
 
 
@@ -38101,15 +38101,15 @@ Description</td></tr>
 <tr>
 <td>
 DisplayName</td><td>
-Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in the language of the localized version of the .NET framework.</td></tr>
+Gets the culture name in the format "<language full>(<country/region full>)" in the language of the localized version of the .NET framework.</td></tr>
 <tr>
 <td>
 EnglishName</td><td>
-Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in english.</td></tr>
+Gets the culture name in the format "<language full>(<country/region full>)" in english.</td></tr>
 <tr>
 <td>
 NativeName</td><td>
-Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in the language that the culture is set to display.</td></tr>
+Gets the culture name in the format "<language full>(<country/region full>)" in the language that the culture is set to display.</td></tr>
 <tr>
 <td>
 ThreeLetterWindowsLanguageName</td><td>
@@ -38147,7 +38147,7 @@ Me.label14.Text = Me.currencyTextBox1.Culture.ThreeLetterWindowsLanguageName
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Globalization.png](Tools-Controls_images/Tools-Controls_img647.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Globalization.png](Tools-Controls_images/Tools-Controls_img647.png)' | markdownify }}
 {:.image }
 
 
@@ -38292,7 +38292,7 @@ Me.errorProvider1.SetError(CType(sender, Control), eventlogmessage)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img648.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img648.png)' | markdownify }}
 {:.image }
 
 
@@ -38316,7 +38316,7 @@ Specifies whether the text should be drawn active even when the control is disab
 
 The following figure illustrates this.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Active.png](Tools-Controls_images/Tools-Controls_img649.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Active.png](Tools-Controls_images/Tools-Controls_img649.png)' | markdownify }}
 {:.image }
 
 
@@ -38326,7 +38326,7 @@ How to make the text active when the control is disabled
 
 The EditableList control provides an editable Windows Forms list box with a Windows Forms text box and button on the current row to facilitate in-place editing. The events present in the Textbox, Button and ListBox are applicable for EditableList control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img650.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img650.png)' | markdownify }}
 {:.image }
 
 
@@ -38341,7 +38341,7 @@ EditableList displays a list control that allows in place editing when the user 
 
 To use an EditableList control in your application, all you need to do is drag-and-drop the EditableList control from the controls toolbox onto your form. To add items, expand ListBox node and open String Collection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img651.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img651.png)' | markdownify }}
 {:.image }
 
 
@@ -38449,7 +38449,7 @@ To populate through DataSource.
 
 // Specifies the DataSource.
 
-editableList1.ListBox.DataSource=&lt;DataSource&gt;;
+editableList1.ListBox.DataSource=<DataSource>;
 
 
 
@@ -38459,7 +38459,7 @@ editableList1.ListBox.DataSource=&lt;DataSource&gt;;
 
 ' Specifies the DataSource.
 
-editableList1.ListBox.DataSource=&lt;DataSource&gt;
+editableList1.ListBox.DataSource=<DataSource>
 
 
 
@@ -38473,7 +38473,7 @@ The List can be edited in the following way during runtime:
 2.  Click again. There appears a TextBox. Now edit the text.
 3.  After editing change the focus, the list will get updated.
 
-{ ![](Tools-Controls_images/Tools-Controls_img652.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img652.png)' | markdownify }}
 {:.image }
 
 
@@ -38573,7 +38573,7 @@ Gets the dock padding for all edges of the control.</td></tr>
 
 The following image displays the EditableList control with the dock padding for all the edges set to 5.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_Dock.png](Tools-Controls_images/Tools-Controls_img653.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_Dock.png](Tools-Controls_images/Tools-Controls_img653.png)' | markdownify }}
 {:.image }
 
 
@@ -38609,7 +38609,7 @@ Specifies whether to show button to the right while editing.</td></tr>
 </table>
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_wantbutton.png](Tools-Controls_images/Tools-Controls_img654.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_wantbutton.png](Tools-Controls_images/Tools-Controls_img654.png)' | markdownify }}
 {:.image }
 
 
@@ -38672,7 +38672,7 @@ End Sub
 
 The data source may vary according to your choice.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/image1861354887.png](Tools-Controls_images/Tools-Controls_img655.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/image1861354887.png](Tools-Controls_images/Tools-Controls_img655.png)' | markdownify }}
 {:.image }
 
 
@@ -38701,7 +38701,7 @@ Me.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img656.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img656.png)' | markdownify }}
 {:.image }
 
 
@@ -38815,7 +38815,7 @@ End Sub
 
 The MaskedEditBox control is an edit control that provides an easy and reliable way of collecting user input and displaying standard data in specific formats from any data source. Some of the common uses of the MaskedEditBox controls are IP Addressedit control, Phone Number edit control and Social Security edit control.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features4.png](Tools-Controls_images/Tools-Controls_img657.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features4.png](Tools-Controls_images/Tools-Controls_img657.png)' | markdownify }}
 {:.image }
 
 
@@ -38889,13 +38889,13 @@ The MaskedEditBox control provides full support for the Windows Forms designer. 
 
 1. Drag and drop the MaskedEditBox control onto your form from the controls toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img658.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img658.png)' | markdownify }}
 {:.image }
 
 
 2. Set the MaskedEditBox.Mask property for the control. This property controls the behavior of the control at run time. If no mask is specified, the control will behave the same as a standard Windows Forms TextBox control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img659.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img659.png)' | markdownify }}
 {:.image }
 
 
@@ -39017,7 +39017,7 @@ Me.Controls.Add(Me.maskedEditBox1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img660.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img660.png)' | markdownify }}
 {:.image }
 
 
@@ -39139,7 +39139,7 @@ Me.maskedEditBox1.Mask = "##-##-####"
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features3.png](Tools-Controls_images/Tools-Controls_img661.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features3.png](Tools-Controls_images/Tools-Controls_img661.png)' | markdownify }}
 {:.image }
 
 
@@ -39163,11 +39163,11 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
+Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{{ ''_IncludeLiterals and_'' | markdownify }}}{{{ ''_ExcludeLiterals._'' | markdownify }}}The default value is 'IncludeLiterals'.</td></tr>
 <tr>
 <td>
 InputMode</td><td>
-Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'OvertypeOnly'.</td></tr>
+Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{{ ''_OvertypeOnly and_'' | markdownify }}}{{{ ''_Normal._'' | markdownify }}}The default value is 'OvertypeOnly'.</td></tr>
 <tr>
 <td>
 UsageMode</td><td>
@@ -39293,19 +39293,19 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features5.png](Tools-Controls_images/Tools-Controls_img662.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features5.png](Tools-Controls_images/Tools-Controls_img662.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features6.png](Tools-Controls_images/Tools-Controls_img663.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features6.png](Tools-Controls_images/Tools-Controls_img663.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features7.png](Tools-Controls_images/Tools-Controls_img664.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features7.png](Tools-Controls_images/Tools-Controls_img664.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features8.png](Tools-Controls_images/Tools-Controls_img665.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features8.png](Tools-Controls_images/Tools-Controls_img665.png)' | markdownify }}
 {:.image }
 
 
@@ -39323,7 +39323,7 @@ Description</td></tr>
 <tr>
 <td>
 PositionAt</td><td>
-Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{ '_Decimal_' | markdownify }}{{ '_FirstPosition and_' | markdownify }}{{ '_FirstMaskPosition._' | markdownify }}The default value is 'FirstPosition'.</td></tr>
+Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{{ ''_Decimal_'' | markdownify }}}{{{ ''_FirstPosition and_'' | markdownify }}}{{{ ''_FirstMaskPosition._'' | markdownify }}}The default value is 'FirstPosition'.</td></tr>
 <tr>
 <td>
 PositionAtDecimal</td><td>
@@ -39523,7 +39523,7 @@ End Sub
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features9.png](Tools-Controls_images/Tools-Controls_img666.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features9.png](Tools-Controls_images/Tools-Controls_img666.png)' | markdownify }}
 {:.image }
 
 
@@ -39549,7 +39549,7 @@ Gets / sets the culture that is to be used for formatting the numeric display.</
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options:{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options:{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture,_'' | markdownify }}}{{{ ''_UICulture and_'' | markdownify }}}{{{ ''_InstalledCulture._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -39581,7 +39581,7 @@ Me.maskedEditBox1.UseUserOverride = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features10.png](Tools-Controls_images/Tools-Controls_img667.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features10.png](Tools-Controls_images/Tools-Controls_img667.png)' | markdownify }}
 {:.image }
 
 
@@ -39601,7 +39601,7 @@ Description</td></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
+Gets / sets the case of character as they are typed.It includes the below given options:{{{ ''_Normal,_'' | markdownify }}}{{{ ''_Upper and_'' | markdownify }}}{{{ ''_Lower._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -39661,11 +39661,11 @@ Me.maskedEditBox1.DrawActiveWhenDisabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features11.png](Tools-Controls_images/Tools-Controls_img668.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features11.png](Tools-Controls_images/Tools-Controls_img668.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features12.png](Tools-Controls_images/Tools-Controls_img669.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features12.png](Tools-Controls_images/Tools-Controls_img669.png)' | markdownify }}
 {:.image }
 
 
@@ -39717,7 +39717,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}</td></tr>
+Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{{ ''_IncludeLiterals and_'' | markdownify }}}{{{ ''_ExcludeLiterals._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -39785,7 +39785,7 @@ Me.maskedEditBox1.ShowOverflowIndicatorToolTip = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features13.png](Tools-Controls_images/Tools-Controls_img670.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features13.png](Tools-Controls_images/Tools-Controls_img670.png)' | markdownify }}
 {:.image }
 
 
@@ -39877,7 +39877,7 @@ Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features14.png](Tools-Controls_images/Tools-Controls_img671.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features14.png](Tools-Controls_images/Tools-Controls_img671.png)' | markdownify }}
 {:.image }
 
 
@@ -39939,7 +39939,7 @@ Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features15.png](Tools-Controls_images/Tools-Controls_img672.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features15.png](Tools-Controls_images/Tools-Controls_img672.png)' | markdownify }}
 {:.image }
 
 
@@ -40019,7 +40019,7 @@ Me.maskedEditBox1.PromptCharacterInt = 37
 
 Me.maskedEditBox1.PassivePromptCharacterInt = 47
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img673.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img673.png)' | markdownify }}
 {:.image }
  _Note: We can trim the additional spaces present in the mask by setting the PaddingCharacterInt property to '0'._
 
@@ -40105,7 +40105,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -40113,11 +40113,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -40149,7 +40149,7 @@ Me.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features1.png](Tools-Controls_images/Tools-Controls_img674.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features1.png](Tools-Controls_images/Tools-Controls_img674.png)' | markdownify }}
 {:.image }
 
 
@@ -40201,7 +40201,7 @@ Me.maskedEditBox1.MinimumSize = New System.Drawing.Size(150, 20)
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features16.png](Tools-Controls_images/Tools-Controls_img675.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features16.png](Tools-Controls_images/Tools-Controls_img675.png)' | markdownify }}
 {:.image }
 
 
@@ -40221,7 +40221,7 @@ Description</td></tr>
 ThemesEnabled</td><td>
 Specifies whether or not to use XP themes when BorderStyle property is set to 'Fixed3D'.</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img676.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img676.png)' | markdownify }}
 {:.image }
  _Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderStyles5.html) _topic to know about the BorderStyle property._
 
@@ -40241,7 +40241,7 @@ Me.maskedEditBox1.ThemesEnabled = true
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features17.png](Tools-Controls_images/Tools-Controls_img677.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features17.png](Tools-Controls_images/Tools-Controls_img677.png)' | markdownify }}
 {:.image }
 
 
@@ -40767,7 +40767,7 @@ End Sub
 
 The NumericUpDownExt control enables XP Themes look and feel for the UpDown controls that are missing in the corresponding .NET control.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features14.png](Tools-Controls_images/Tools-Controls_img678.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features14.png](Tools-Controls_images/Tools-Controls_img678.png)' | markdownify }}
 {:.image }
 
 
@@ -40839,13 +40839,13 @@ Through Designer
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img679.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img679.png)' | markdownify }}
 {:.image }
 
 
 3. Run the application. The NumericUpDownExt will allow you to display numeric values by clicking on the up and down buttons.
 
-{ ![](Tools-Controls_images/Tools-Controls_img680.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img680.png)' | markdownify }}
 {:.image }
 
 
@@ -40933,7 +40933,7 @@ Me.Controls.Add(Me.numericUpDownExt1)
 
 5. Run the application. You will be able to see the NumericUpDownExt control in your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img681.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img681.png)' | markdownify }}
 {:.image }
 
 
@@ -41067,7 +41067,7 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features11.png](Tools-Controls_images/Tools-Controls_img682.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features11.png](Tools-Controls_images/Tools-Controls_img682.png)' | markdownify }}
 {:.image }
 
 
@@ -41111,7 +41111,7 @@ Me.numericUpDownExt1.BackColor = System.Drawing.Color.Aquamarine
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features3.png](Tools-Controls_images/Tools-Controls_img683.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features3.png](Tools-Controls_images/Tools-Controls_img683.png)' | markdownify }}
 {:.image }
 
 
@@ -41153,7 +41153,7 @@ Me.numericUpDownExt1.ForeColor = System.Drawing.Color.DodgerBlue
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features4.png](Tools-Controls_images/Tools-Controls_img684.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features4.png](Tools-Controls_images/Tools-Controls_img684.png)' | markdownify }}
 {:.image }
 
 
@@ -41161,7 +41161,7 @@ Applying Foreground Color to Negative Values
 
 It is a good behavior in a NumericUpDownExt control to indicate negative values using a separate color. The IntegerTextBox and DoubleTextBox controls also exhibit the same behavior.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features5.png](Tools-Controls_images/Tools-Controls_img685.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features5.png](Tools-Controls_images/Tools-Controls_img685.png)' | markdownify }}
 {:.image }
 
 
@@ -41507,7 +41507,7 @@ Me.numericUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features12.png](Tools-Controls_images/Tools-Controls_img686.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features12.png](Tools-Controls_images/Tools-Controls_img686.png)' | markdownify }}
 {:.image }
 
 
@@ -41525,7 +41525,7 @@ Description</td></tr>
 <tr>
 <td>
 UpDownAlign</td><td>
-Gets / sets the alignment of the up and down buttons. The default value is set to 'Right'.It includes the below given options.{{ '_Left and_' | markdownify }}{{ '_Right._' | markdownify }}</td></tr>
+Gets / sets the alignment of the up and down buttons. The default value is set to 'Right'.It includes the below given options.{{{ ''_Left and_'' | markdownify }}}{{{ ''_Right._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -41559,7 +41559,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -41567,11 +41567,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -41603,7 +41603,7 @@ Me.numericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features1.png](Tools-Controls_images/Tools-Controls_img687.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features1.png](Tools-Controls_images/Tools-Controls_img687.png)' | markdownify }}
 {:.image }
 
 
@@ -41621,7 +41621,7 @@ Description</td></tr>
 ThemedBorder</td><td>
 Specifies whether or not you want themed border around the control when themes are enabled.The ThemesEnabled property must be set to 'True'.</td></tr>
 </table>
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img688.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img688.png)' | markdownify }}
 {:.image }
  _Note: Refer_ [Themes and Visual Styles](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/VisualStyles5.html) _topic to know about the ThemesEnabled property._
 
@@ -41645,7 +41645,7 @@ Me.numericUpDownExt1.ThemesEnabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features2.png](Tools-Controls_images/Tools-Controls_img689.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features2.png](Tools-Controls_images/Tools-Controls_img689.png)' | markdownify }}
 {:.image }
 
 
@@ -41697,7 +41697,7 @@ Me.numericUpDownExt1.MinimumSize = New System.Drawing.Size(60, 50)
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features10.png](Tools-Controls_images/Tools-Controls_img690.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features10.png](Tools-Controls_images/Tools-Controls_img690.png)' | markdownify }}
 {:.image }
 
 
@@ -41813,7 +41813,7 @@ Me.numericUpDownExt1.ThemesEnabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features9.png](Tools-Controls_images/Tools-Controls_img691.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features9.png](Tools-Controls_images/Tools-Controls_img691.png)' | markdownify }}
 {:.image }
 
 
@@ -41859,11 +41859,11 @@ Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features7.png](Tools-Controls_images/Tools-Controls_img692.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features7.png](Tools-Controls_images/Tools-Controls_img692.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features6.png](Tools-Controls_images/Tools-Controls_img693.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features6.png](Tools-Controls_images/Tools-Controls_img693.png)' | markdownify }}
 {:.image }
 
 
@@ -41895,11 +41895,11 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features8.png](Tools-Controls_images/Tools-Controls_img694.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features8.png](Tools-Controls_images/Tools-Controls_img694.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img695.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img695.png)' | markdownify }}
 {:.image }
  _Note: The ThemesEnabled property should be set to 'True' for the above settings to take effect._
 
@@ -42161,7 +42161,7 @@ End Sub
 
 TextBoxExt is a textbox derived control that can display different border colors and styles.
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Intro.png](Tools-Controls_images/Tools-Controls_img696.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Intro.png](Tools-Controls_images/Tools-Controls_img696.png)' | markdownify }}
 {:.image }
 
 
@@ -42216,13 +42216,13 @@ Through Designer
 1. Create or open a Windows Forms project.
 2. Click on the TextBoxExt Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img697.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img697.png)' | markdownify }}
 {:.image }
 
 
 3. Run the application. The TextBoxExt displayed will allow you to enter text.
 
-{ ![](Tools-Controls_images/Tools-Controls_img698.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img698.png)' | markdownify }}
 {:.image }
 
 
@@ -42284,7 +42284,7 @@ Me.Controls.Add(Me.textBoxExt1)
 
 4. Run the application. You will be able to see the TextBoxExt control in your form. After creating the TextBoxExt you can use it just like using the Windows Forms' TextBox control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img699.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img699.png)' | markdownify }}
 {:.image }
 
 
@@ -42370,19 +42370,19 @@ Me.textBoxExt1.DrawActiveWhenDisabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features4.png](Tools-Controls_images/Tools-Controls_img700.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features4.png](Tools-Controls_images/Tools-Controls_img700.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features12.png](Tools-Controls_images/Tools-Controls_img701.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features12.png](Tools-Controls_images/Tools-Controls_img701.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features11.png](Tools-Controls_images/Tools-Controls_img702.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features11.png](Tools-Controls_images/Tools-Controls_img702.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_styles1.png](Tools-Controls_images/Tools-Controls_img703.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_styles1.png](Tools-Controls_images/Tools-Controls_img703.png)' | markdownify }}
 {:.image }
 
 
@@ -42458,7 +42458,7 @@ Indicates if lines are automatically word-wrapped for multiline edit controls.</
 <tr>
 <td>
 ScrollBars</td><td>
-Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
+Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_Horizontal,_'' | markdownify }}}{{{ ''_Vertical and_'' | markdownify }}}{{{ ''_Both._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -42486,19 +42486,19 @@ Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features6.png](Tools-Controls_images/Tools-Controls_img704.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features6.png](Tools-Controls_images/Tools-Controls_img704.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features7.png](Tools-Controls_images/Tools-Controls_img705.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features7.png](Tools-Controls_images/Tools-Controls_img705.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features8.png](Tools-Controls_images/Tools-Controls_img706.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features8.png](Tools-Controls_images/Tools-Controls_img706.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img707.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img707.png)' | markdownify }}
 {:.image }
  _Note: The ScrollToCaret() method can be used to scroll the contents of the control to the current caret position._
 
@@ -42552,11 +42552,11 @@ Me.textBoxExt1.OverflowIndicatorToolTipText = "Overflow"
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features2.png](Tools-Controls_images/Tools-Controls_img708.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features2.png](Tools-Controls_images/Tools-Controls_img708.png)' | markdownify }}
 {:.image }
 
 
-> { ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img709.png) | markdownify }
+> {{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Tools-Controls_images/Tools-Controls_img709.png)' | markdownify }}
 {:.image }
  _Note: If there is no value set for the OverflowIndicatorToolTipText property, then the value set for the Text property of the TextBoxExt will be displayed as the tooltip._
 
@@ -42604,7 +42604,7 @@ Me.textBoxExt1.BackColor = System.Drawing.Color.Moccasin
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features9.png](Tools-Controls_images/Tools-Controls_img710.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features9.png](Tools-Controls_images/Tools-Controls_img710.png)' | markdownify }}
 {:.image }
 
 
@@ -42646,7 +42646,7 @@ Me.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features10.png](Tools-Controls_images/Tools-Controls_img711.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features10.png](Tools-Controls_images/Tools-Controls_img711.png)' | markdownify }}
 {:.image }
 
 
@@ -42740,7 +42740,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -42748,11 +42748,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -42784,7 +42784,7 @@ Me.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features1.png](Tools-Controls_images/Tools-Controls_img712.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features1.png](Tools-Controls_images/Tools-Controls_img712.png)' | markdownify }}
 {:.image }
 
 
@@ -42836,7 +42836,7 @@ Me.textBoxExt1.MinimumSize = New System.Drawing.Size(150, 20)
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features3.png](Tools-Controls_images/Tools-Controls_img713.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features3.png](Tools-Controls_images/Tools-Controls_img713.png)' | markdownify }}
 {:.image }
 
 
@@ -42874,7 +42874,7 @@ Me.textBoxExt1.ThemesEnabled = True
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_themesNew.png](Tools-Controls_images/Tools-Controls_img714.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_themesNew.png](Tools-Controls_images/Tools-Controls_img714.png)' | markdownify }}
 {:.image }
 
 
@@ -43405,7 +43405,7 @@ NullString</td><td>
 Cannot be a Numeric Value that could break the MinValue or MaxValue constraints.</td><td>
 Ex: MinValue 10, MaxValue 100 and NullString as “111” will break the Min Max Values.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img715.png) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img715.png)' | markdownify }}
 {:.image }
 _Note:_
 
@@ -43422,7 +43422,7 @@ The Font controls of Essential Tools are listed below.
 
 The FontListBox is a list box derived control that are automatically populated with the fonts installed on the user's system. It provide an easy way to fill a list box with system fonts. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img716.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img716.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43448,7 +43448,7 @@ Concepts and Features
 
 To use a FontListBox control in your application, all you need to do is drag and drop the FontListBox control from the toolbox onto your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img717.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img717.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43506,7 +43506,7 @@ Me.Controls.Add(Me.fontListBox1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img718.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img718.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43540,7 +43540,7 @@ Me.fontListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img719.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img719.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43590,7 +43590,7 @@ Me.fontListBox1.HorizontalScrollbar = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img720.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img720.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43620,7 +43620,7 @@ Me.fontListBox1.ItemHeight = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img721.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img721.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43716,7 +43716,7 @@ End Sub
 
 The FontComboBox is a combo box-derived controls that are automatically populated with the fonts installed on the user's system. It provide an easy way to fill a combo box with system fonts.
 
-{ ![](Tools-Controls_images/Tools-Controls_img722.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img722.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43743,7 +43743,7 @@ Concepts and Features
 
 To use a FontComboBox control in your application, all you need to do is drag and drop the FontComboBox control from the controls toolbox onto your form. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img723.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img723.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43805,7 +43805,7 @@ Me.Controls.Add(Me.fontComboBox1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img724.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img724.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43871,7 +43871,7 @@ Me.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.Cu
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img725.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img725.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43893,7 +43893,7 @@ Description</td></tr>
 <tr>
 <td>
 DropDownStyle</td><td>
-Specifies the style of the dropdown. The options are,{{ '_DropDownList_' | markdownify }} - The user cannot directly edit the text portion. The user must click the arrow button to display the list portion,{{ '_DropDown (default)_' | markdownify }} - The user can directly edit the text portion. The user must click the arrow button to display the list portion,{{ '_Simple_' | markdownify }} - The text portion is editable. The list portion is always visible.</td></tr>
+Specifies the style of the dropdown. The options are,{{{ ''_DropDownList_'' | markdownify }}} - The user cannot directly edit the text portion. The user must click the arrow button to display the list portion,{{{ ''_DropDown (default)_'' | markdownify }}} - The user can directly edit the text portion. The user must click the arrow button to display the list portion,{{{ ''_Simple_'' | markdownify }}} - The text portion is editable. The list portion is always visible.</td></tr>
 <tr>
 <td>
 DropDownHeight</td><td>
@@ -43999,7 +43999,7 @@ Me.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img726.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img726.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44027,7 +44027,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img727.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img727.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44135,7 +44135,7 @@ The following are the advanced versions of Windows Label controls.
 
 The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel will be automatically repositioned as the labeled control's position changes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img728.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img728.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44182,14 +44182,14 @@ The following steps illustrate how to create an AutoLabel control through design
 * Create or open a Windows Forms project.
 * Add an AutoLabel Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img729.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img729.jpeg)' | markdownify }}
 {:.image }
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img730.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img730.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44305,7 +44305,7 @@ Me.Controls.Add(Me.autoLabel1)
 
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img731.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img731.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44323,7 +44323,7 @@ The following steps allows you to label a control.
 * Go to the Property grid and select the LabeledControl property.
 * Select the control to be labeled (TextBox) from the dropdown box as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img732.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img732.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44361,7 +44361,7 @@ Me.Controls.Add(Me.autoLabel1)
 
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img733.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img733.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44415,7 +44415,7 @@ Me.autoLabel1.Gap = 10
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img734.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img734.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44433,7 +44433,7 @@ Description</td></tr>
 <tr>
 <td>
 Position</td><td>
-Specifies the relative position of the control and the AutoLabel.The options included are as follows.{{ '_Custom,_' | markdownify }}{{ '_Left,_' | markdownify }}{{ '_Left and_' | markdownify }}{{ '_Top._' | markdownify }}</td></tr>
+Specifies the relative position of the control and the AutoLabel.The options included are as follows.{{{ ''_Custom,_'' | markdownify }}}{{{ ''_Left,_'' | markdownify }}}{{{ ''_Left and_'' | markdownify }}}{{{ ''_Top._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -44455,11 +44455,11 @@ Me.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Top
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img735.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img735.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img736.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img736.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44481,7 +44481,7 @@ Description</td></tr>
 AutoSize</td><td>
 Enables automatic resizing based on font size.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img737.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img737.jpeg)' | markdownify }}
 {:.image }
  _Note: This is valid only for label controls that do not wrap text._
 
@@ -44553,13 +44553,13 @@ The GradientLabel class is fully compatible with the Windows Forms label that it
 
 The GradientLabel.Border3DStyle is another property that can specify the look and feel of the GradientLabel.
 
-{ ![](Tools-Controls_images/Tools-Controls_img738.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img738.jpeg)' | markdownify }}
 {:.image }
 
 
 The .NET framework provides a label control typically used to provide descriptive text for a control. The Essential Tools' GradientLabel control provides an easy way to display labels with attractive shades and backgrounds.
 
-> { ![](Tools-Controls_images/Tools-Controls_img739.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img739.jpeg)' | markdownify }}
 {:.image }
  _Note: All the other functions of the GradientLabel is the same as the System.Windows.Forms.Label control in the Windows Forms library._ 
 
@@ -44602,14 +44602,14 @@ To create a GradientLabel control through designer,
 * Create or open a Windows Forms project.
 * Add a GradientLabel Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img740.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img740.jpeg)' | markdownify }}
 {:.image }
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img741.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img741.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44717,7 +44717,7 @@ Me.Controls.Add(Me.gradientLabel1)
 
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img742.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img742.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44741,11 +44741,11 @@ Description</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the sides of the GradientLabel that will have a border.  The options included are as follows.{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}The default value is set to 'All'.</td></tr>
+Specifies the sides of the GradientLabel that will have a border.  The options included are as follows.{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}The default value is set to 'All'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies the 3D border style for the GradientLabel.The options included are as follows.{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Specifies the 3D border style for the GradientLabel.The options included are as follows.{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -44783,7 +44783,7 @@ Me.gradientLabel1.BorderColor = Color.Red
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img743.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img743.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44843,7 +44843,7 @@ Gets / sets the background color and other styles.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style.{{ '_Solid,_' | markdownify }}{{ '_Pattern and_' | markdownify }}{{ '_Gradient._' | markdownify }}The default value is set to 'Gradient'.</td></tr>
+Specifies the brush style.{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Pattern and_'' | markdownify }}}{{{ ''_Gradient._'' | markdownify }}}The default value is set to 'Gradient'.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -44859,7 +44859,7 @@ Specifies the pattern style of the control.</td></tr>
 <tr>
 <td>
 GradientStyle</td><td>
-Specifies the gradient style of the background.{{ '_ForwardDiagonal,_' | markdownify }}{{ '_BackwardDiagonal,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical,_' | markdownify }}{{ '_PathRectangle and_' | markdownify }}{{ '_PathEllipse._' | markdownify }}The default value is set to 'Vertical'.</td></tr>
+Specifies the gradient style of the background.{{{ ''_ForwardDiagonal,_'' | markdownify }}}{{{ ''_BackwardDiagonal,_'' | markdownify }}}{{{ ''_Horizontal,_'' | markdownify }}}{{{ ''_Vertical,_'' | markdownify }}}{{{ ''_PathRectangle and_'' | markdownify }}}{{{ ''_PathEllipse._'' | markdownify }}}The default value is set to 'Vertical'.</td></tr>
 <tr>
 <td>
 GradientColors</td><td>
@@ -44883,7 +44883,7 @@ Me.gradientLabel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img744.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img744.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44973,7 +44973,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img745.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img745.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -44985,7 +44985,7 @@ The advanced versions of Windows Forms CheckBox and Radio Button controls are di
 
 The CheckBoxAdv is an advanced CheckBox control that supports themes, gradient colors, border settings and shadow text with various alignment options for both the text and checkbox. It provides options to display images and gradient backgrounds.
 
-{ ![](Tools-Controls_images/Tools-Controls_img746.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img746.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45060,14 +45060,14 @@ The following steps illustrate how to create a CheckBoxAdv control through desig
 * Create or open a Windows Forms project.
 * Add a CheckBoxAdv Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img747.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img747.jpeg)' | markdownify }}
 {:.image }
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img748.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img748.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45163,7 +45163,7 @@ Me.Controls.Add(Me.radioButtonAdv1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img749.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img749.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45195,7 +45195,7 @@ Description</td></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets / sets the check state of the CheckBox.It includes the below given options.{{ '_Unchecked,_' | markdownify }}{{ '_Checked and_' | markdownify }}{{ '_Indeterminate._' | markdownify }}</td></tr>
+Gets / sets the check state of the CheckBox.It includes the below given options.{{{ ''_Unchecked,_'' | markdownify }}}{{{ ''_Checked and_'' | markdownify }}}{{{ ''_Indeterminate._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -45223,11 +45223,11 @@ Me.checkBoxAdv1.Checked = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img750.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img750.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img751.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img751.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45397,11 +45397,11 @@ Me.checkBoxAdv1.WrapText = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img752.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img752.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img753.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img753.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45523,7 +45523,7 @@ Description</td></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
 </table>
 
 
@@ -45543,7 +45543,7 @@ Me.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCen
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img754.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img754.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45561,7 +45561,7 @@ Description</td></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -45581,7 +45581,7 @@ Me.checkBoxAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img755.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img755.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45609,7 +45609,7 @@ Description</td></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the CheckBoxAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
+Sets the background style of the CheckBoxAdv.The options included are as follows.{{{ ''_HorizontalGradient,_'' | markdownify }}}{{{ ''_VerticalGradient and_'' | markdownify }}}{{{ ''_Default._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -45645,11 +45645,11 @@ Me.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img756.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img756.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img757.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img757.jpeg)' | markdownify }}
 {:.image }
  _Note: Gradient background cannot be applied to the CheckBoxAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings._
 
@@ -45671,7 +45671,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat_' | markdownify }}.The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows.{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat_'' | markdownify }}}.The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -45679,11 +45679,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset and_' | markdownify }}{{ '_None._' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options included are as follows.{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the panel should have a border. The options included are given below.{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>
@@ -45731,11 +45731,11 @@ Me.checkBoxAdv1.HotBorderColor = System.Drawing.Color.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img758.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img758.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img759.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img759.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45785,7 +45785,7 @@ Gets / sets the image used to draw the CheckBox when disabled.</td></tr>
 StretchImage</td><td>
 Indicates whether the state images of the CheckBox are stretched.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img760.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img760.jpeg)' | markdownify }}
 {:.image }
  _Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'._
 
@@ -45829,7 +45829,7 @@ Me.checkBoxAdv1.StretchImage = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img761.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img761.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45883,7 +45883,7 @@ Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAd
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img762.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img762.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45929,7 +45929,7 @@ Me.checkBoxAdv1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img763.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img763.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -45947,11 +45947,11 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.{{{ ''_Default and_'' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{{ ''_Managed,_'' | markdownify }}}{{{ ''_Blue,_'' | markdownify }}}{{{ ''_Silver and_'' | markdownify }}}{{{ ''_Black._'' | markdownify }}}The Style property should be set to "Office2007".</td></tr>
 </table>
 
 
@@ -45975,11 +45975,11 @@ Me.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img764.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img764.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img765.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img765.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46011,7 +46011,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Pink)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img766.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img766.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46197,7 +46197,7 @@ Me.checkBoxAdv1.DataBindings.Add("BoolValue", Me.dataSet11.Table1, "CheckValue")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img767.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img767.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46205,7 +46205,7 @@ Me.checkBoxAdv1.DataBindings.Add("BoolValue", Me.dataSet11.Table1, "CheckValue")
 
 RadioButtonAdv functions similar to the Windows standard RadioButton but it has some additional enhancements. It helps to provide a great look and feel to the RadioButtons. It supports themes, gradient colors, images and shadow text.
 
-{ ![](Tools-Controls_images/Tools-Controls_img768.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img768.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46272,14 +46272,14 @@ The following steps illustrate how to create a RadioButtonAdv control through de
 * Create or open a Windows Forms project.
 * Add a RadioButtonAdv Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img769.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img769.jpeg)' | markdownify }}
 {:.image }
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img770.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img770.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46375,7 +46375,7 @@ Me.Controls.Add(Me.radioButtonAdv1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img771.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img771.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46427,7 +46427,7 @@ Me.radioButtonAdv1.Checked = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img772.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img772.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46561,7 +46561,7 @@ Me.radioButtonAdv1.ShadowOffset = New System.Drawing.Point(8, 8)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img773.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img773.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46695,7 +46695,7 @@ Description</td></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
 </table>
 
 
@@ -46715,7 +46715,7 @@ Me.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.Middle
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img774.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img774.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46733,7 +46733,7 @@ Description</td></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -46753,7 +46753,7 @@ Me.radioButtonAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img775.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img775.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46781,7 +46781,7 @@ Description</td></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
+Sets the background style of the RadioButtonAdv.The options included are as follows.{{{ ''_HorizontalGradient,_'' | markdownify }}}{{{ ''_VerticalGradient and_'' | markdownify }}}{{{ ''_Default._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -46817,11 +46817,11 @@ Me.radioButtonAdv1.GradientEnd = System.Drawing.Color.DarkSalmon
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img776.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img776.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img777.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img777.jpeg)' | markdownify }}
 {:.image }
  _Note: Gradient background cannot be applied to the RadioButtonAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings._
 
@@ -46843,7 +46843,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows.{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -46851,11 +46851,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset and_' | markdownify }}{{ '_None._' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options included are as follows.{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the panel should have a border. The options included are given below.{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>
@@ -46903,11 +46903,11 @@ Me.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img778.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img778.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img779.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img779.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46953,7 +46953,7 @@ Gets / sets the image used to draw the RadioButton when disabled.</td></tr>
 StretchImage</td><td>
 Indicates whether the state images of the RadioButton are stretched.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img780.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img780.jpeg)' | markdownify }}
 {:.image }
  _Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'._
 
@@ -46993,7 +46993,7 @@ Me.radioButtonAdv1.StretchImage = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img781.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img781.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47039,7 +47039,7 @@ Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAd
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img782.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img782.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47085,7 +47085,7 @@ Me.radioButtonAdv1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img783.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img783.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47103,11 +47103,11 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{{ ''_Default and_'' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{{ ''_Managed,_'' | markdownify }}}{{{ ''_Blue,_'' | markdownify }}}{{{ ''_Silver and_'' | markdownify }}}{{{ ''_Black._'' | markdownify }}}The Style property should be set to "Office2007".</td></tr>
 </table>
 
 
@@ -47131,11 +47131,11 @@ Me.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Th
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img784.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img784.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img785.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img785.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47167,7 +47167,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img786.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img786.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47320,25 +47320,25 @@ All these options are customizable at runtime as well.
 
 Drag and drop the SpellChecker from the tool box to the form. SpellChecker will be added to the component tray of the form the control is hosted in.
 
-{ ![G:/UG SpellChecker/Snaps/ToolBox.png](Tools-Controls_images/Tools-Controls_img787.png) | markdownify }
+{{ '![G:/UG SpellChecker/Snaps/ToolBox.png](Tools-Controls_images/Tools-Controls_img787.png)' | markdownify }}
 {:.image }
 
 
-{ ![G:/UG SpellChecker/Snaps/Designer.png](Tools-Controls_images/Tools-Controls_img788.png) | markdownify }
+{{ '![G:/UG SpellChecker/Snaps/Designer.png](Tools-Controls_images/Tools-Controls_img788.png)' | markdownify }}
 {:.image }
 
 
 ###### Appearance and Structure of the Control
 
-{ ![](Tools-Controls_images/Tools-Controls_img789.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img789.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img790.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img790.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img791.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img791.png)' | markdownify }}
 {:.image }
 
 
@@ -47805,7 +47805,7 @@ GridBagLayout
 
 This Layout Manager will layout the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns / rows can be varied and the children may span more than one cell.
 
-{ ![](Tools-Controls_images/Tools-Controls_img792.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img792.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47821,7 +47821,7 @@ Child controls can be added to the Container control by just dragging and droppi
 
 The Layout Managers can be associated with any Container control property. The Layout Managers will then automatically layout their Child controls based on specific constraints. They can also be used to layout the non-control-based components that are derived from a specific interface (LayoutItemBase) drawn within the Container.
 
-> { ![](Tools-Controls_images/Tools-Controls_img793.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img793.jpeg)' | markdownify }}
 {:.image }
  _Note: The Container control will be referred by its property name as ContainerControl and it's children referred to as Child components (emphasizing the fact that the children need not be a control-derived class) in this document._
 
@@ -47845,7 +47845,7 @@ Adding Child Controls
 
 * Populate the form with the necessary Child controls (here, we are using Buttons), by dragging and dropping them from the toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img794.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img794.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47857,7 +47857,7 @@ The Layout Manager can be added before or after adding the Child controls to the
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img795.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img795.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47866,7 +47866,7 @@ Setting Container Control
 * You can optionally drop the Child controls onto the Container control that you want to layout and the design time will automatically set the ContainerControl property in the Layout Manager.
 * Form, Panel or any control that inherits the Container control can be set as a Container control for the Child controls that are added (here, form is set as the Container control).
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img796.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img796.jpeg)' | markdownify }}
 {:.image }
  _Note: The FlowLayout, CardLayout and GridLayout controls automatically arrange the Child controls of the Container control in a specific manner. When new controls are added, the Layout Manager will ensure that the old layout is not broken and that the existing controls are not messed up._
 
@@ -47874,7 +47874,7 @@ Configuring Child Controls
 
 For BorderLayout and GridBagLayout, it is necessary to configure the Child controls by changing their extended properties via the property grid in the designer so that the Child controls can be aligned properly.
 
-{ ![](Tools-Controls_images/Tools-Controls_img797.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img797.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48150,7 +48150,7 @@ Me.brd.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Center)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img798.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img798.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48216,7 +48216,7 @@ Me.borderLayout1.AutoLayout = True
 
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img799.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img799.jpeg)' | markdownify }}
 {:.image }
  _Note: The above process can be prevented by setting the AutoLayout property to 'False' and invoking the layout explicitly through a call to the LayoutContainer() method._
 
@@ -48286,11 +48286,11 @@ Me.borderLayout1.CustomLayoutBounds = New System.Drawing.Rectangle(0, 0, 0, 0)
 
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img800.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img800.jpeg)' | markdownify }}
 {:.image }
  _Note: When you specify the custom layout bounds and the Container is resizable, you should also set the AutoLayout property to 'False' and set a new custom layout bounds when the Container resizes._
 
-> { ![](Tools-Controls_images/Tools-Controls_img801.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img801.jpeg)' | markdownify }}
 {:.image }
  _Note: The layout is done within the Container's client rectangle, even if the Container has a scrollable display rectangle._
 
@@ -48354,7 +48354,7 @@ Me.borderLayout1.BottomMargin = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img802.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img802.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48452,15 +48452,15 @@ You can also dynamically provide preferred and minimum size information for a Ch
 * If the above step fails, the Layout Manager fires the ProvideLayoutInformation event, requesting the size information required. If the event is handled and the information provided, that size will be used.
 * If the above step fails, the Layout Manager checks if a preferred size was provided statically during design time using the extended PreferredSize property or in code using the SetPreferredSize() method. If so, that size is used. If not, the current size of the Child control is made the preferred size and that size will be used.
 
-{ ![](Tools-Controls_images/Tools-Controls_img803.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img803.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img804.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img804.jpeg)' | markdownify }}
 {:.image }
  _Note: The same steps are used to determine the minimum size, if required, for a Child control._
 
-> { ![](Tools-Controls_images/Tools-Controls_img805.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img805.jpeg)' | markdownify }}
 {:.image }
  _Note: The above properties are available as the extended properties for the Child controls of CardLayout, FlowLayout and GridBagLayout only._
 
@@ -48472,11 +48472,11 @@ BorderLayout – Configuring Child Control, CardLayout - Configuring Child Contr
 
 BorderLayout is a Layout Manager which allows the user to arrange and layout the Child controls along the borders and at the center, just like the .NET framework's built-in docking support.
 
-{ ![](Tools-Controls_images/Tools-Controls_img806.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img806.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img807.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img807.jpeg)' | markdownify }}
 {:.image }
  _Note: BorderLayout does not arrange the Child components automatically like the other Layout Managers._
 
@@ -48534,7 +48534,7 @@ Me.borderLayout1.VGap = 10
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img808.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img808.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48558,7 +48558,7 @@ Description</td></tr>
 Position on borderLayout</td><td>
 Gets / sets the border position for a Child component.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img809.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img809.jpeg)' | markdownify }}
 {:.image }
  _Note: This property is added as an extended property in the properties window of the Child control added to the BorderLayout._
 
@@ -48578,15 +48578,15 @@ Me.borderLayout1.SetPosition(Me.btnNorth, Syncfusion.Windows.Forms.Tools.BorderP
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img810.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img810.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img811.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img811.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img812.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img812.jpeg)' | markdownify }}
 {:.image }
  _Note: BorderLayout allows only one control to be aligned along a particular layout position, unlike the .NET framework support._
 
@@ -48600,13 +48600,13 @@ A CardLayout is a Layout Manager that is applied to a Container, and components 
 
 The Child component / card can either be made to fill or simply centered within the Container. Some common uses of a CardLayout are to create WizardControls and property pages.
 
-> { ![](Tools-Controls_images/Tools-Controls_img813.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img813.jpeg)' | markdownify }}
 {:.image }
  _Note: The WizardControl uses the CardLayout component internally in it's implementation._
 
 In it's simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img814.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img814.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48656,7 +48656,7 @@ Me.cardLayout1.SetCardName(Me.label1, "Card1")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img815.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img815.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48690,7 +48690,7 @@ Generates a new unique name for the card that could be added to this CardLayout.
 SetCardName</td><td>
 Sets the card name for a Child component.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img816.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img816.jpeg)' | markdownify }}
 {:.image }
  _Note: This property is added as an extended property in the properties window of the Child control added to the CardLayout._
 
@@ -48778,7 +48778,7 @@ For example, when the CardLayout is added to a form, and a Panel control is adde
 
 In the following screen shot, Panel control acts as the Container control and Label control acts as a card.
 
-{ ![](Tools-Controls_images/Tools-Controls_img817.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img817.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48816,7 +48816,7 @@ Me.label1.Image = DirectCast((resources.GetObject("label1.Image")), System.Drawi
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img818.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img818.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48862,7 +48862,7 @@ Me.cardLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.CardLayoutMode.Fill
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img819.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img819.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48908,7 +48908,7 @@ Me.cardLayout1.SelectedCard = "Card1"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img820.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img820.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48938,7 +48938,7 @@ Show the previous card in the list.</td></tr>
 Last</td><td>
 Show the last card in the list.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img821.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img821.jpeg)' | markdownify }}
 {:.image }
  _Note: The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the CardLayout._
 
@@ -48990,13 +48990,13 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img822.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img822.jpeg)' | markdownify }}
 {:.image }
 
 
 At run time, cards can be selected using the items in the ComboBox or by Button clicks.
 
-{ ![](Tools-Controls_images/Tools-Controls_img823.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img823.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49010,7 +49010,7 @@ FlowLayout is a Layout Manager which allows us to arrange the Child components h
 
 In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img824.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img824.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49048,7 +49048,7 @@ Description</td></tr>
 <tr>
 <td>
 LayoutMode</td><td>
-Specifies the layout mode of the Child controls. The default value is set to 'Horizontal'.The options included are as follows.{{ '_Horizontal and_' | markdownify }}{{ '_Vertical._' | markdownify }}</td></tr>
+Specifies the layout mode of the Child controls. The default value is set to 'Horizontal'.The options included are as follows.{{{ ''_Horizontal and_'' | markdownify }}}{{{ ''_Vertical._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -49068,7 +49068,7 @@ Me.flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Vertic
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img825.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img825.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49152,7 +49152,7 @@ Me.flowLayout1.VGap = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img826.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img826.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49222,7 +49222,7 @@ Me.flowLayout1.ReverseRows = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img827.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img827.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49230,7 +49230,7 @@ Alignment
 
 The Alignment property is where you specify whether the current layout logic should be simple or constraint-based. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img828.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img828.jpeg)' | markdownify }}
 {:.image }
  _Note: Alignment is applied only along the direction of flow. For example, if the LayoutMode property is set to 'Horizontal' and the Alignment property is set to 'Center', then the rows will be centered horizontally._
 
@@ -49262,7 +49262,7 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Near
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img829.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img829.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49298,11 +49298,11 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildCon
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img830.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img830.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img831.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img831.jpeg)' | markdownify }}
 {:.image }
  _Note: Refer_ FlowLayout - Configuring Child Controls _topic to know about HAlign, VAlign and other options provided by the Constraints on flowLayout property._
 
@@ -49332,25 +49332,25 @@ Description</td></tr>
 <tr>
 <td>
 HAlign</td><td>
-Specifies the mode in which the Child control should be laid out within a row. The options includes are as follows.{{ '_Left,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Center and_' | markdownify }}{{ '_Justify._' | markdownify }}</td></tr>
+Specifies the mode in which the Child control should be laid out within a row. The options includes are as follows.{{{ ''_Left,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Center and_'' | markdownify }}}{{{ ''_Justify._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 VAlign</td><td>
-Specifies the mode in which the Child control should be laid out within a column. The options includes are as follows.{{ '_Top,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Center and_' | markdownify }}{{ '_Justify._' | markdownify }}</td></tr>
+Specifies the mode in which the Child control should be laid out within a column. The options includes are as follows.{{{ ''_Top,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Center and_'' | markdownify }}}{{{ ''_Justify._'' | markdownify }}}</td></tr>
 </table>
 
 
 When the alignment is set to 'Justify', any extra space will be equally distributed across the other Child controls that have been justified differently within that same row. However, when there is a lack of sufficient space, the justified Child controls are shrunk proportionally based on their minimum size and preferred size settings (specifically, the difference between the two sizes).
 
-> { ![](Tools-Controls_images/Tools-Controls_img832.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img832.jpeg)' | markdownify }}
 {:.image }
  _Note: The Alignment property should be set to 'True' for the above properties to take effect._
 
-{ ![](Tools-Controls_images/Tools-Controls_img833.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img833.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img834.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img834.jpeg)' | markdownify }}
 {:.image }
  _Note: In the figure above, the textboxes have autolabels associated with them._
 
@@ -49408,7 +49408,7 @@ Specifies if proportional row heights should be used in the horizontal layout. T
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img835.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img835.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49464,7 +49464,7 @@ Configuring FlowLayout, Centering the Child Controls Horizontally and Vertically
 
 This topic illustrates how to center the Child controls both vertically and horizontally using the Child constraints. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img836.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img836.jpeg)' | markdownify }}
 {:.image }
  _Note: Constraints need to be used because the Child controls will otherwise be centered either vertically or horizontally based on whether the layout mode is 'Vertical' or 'Horizontal'._
 
@@ -49486,7 +49486,7 @@ Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.Fl
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img837.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img837.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49494,7 +49494,7 @@ When the ProportionalRowHeight propertyis set to 'True', any extra space at the 
 
 When resized to a smaller width, two rows are created resulting in the layout shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img838.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img838.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49788,7 +49788,7 @@ Me.autoLabel6.Text = "Zip"
 
 3. Now add theFlowLayout component and set the panel to be its Container control. The FlowLayout will layout the controls in the order in which they were added to the panel. Use the Bring To Front and Send To Back design time verbs to move the controls to the front or back of the layout order. 
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img839.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img839.jpeg)' | markdownify }}
 {:.image }
  _Note: The FlowLayout will treat each control and it's autolabel pair as a single unit during layout._
 
@@ -49903,15 +49903,15 @@ this.flowLayout1.AutoHeight = true;
 
 Me.flowLayout1.AutoHeight = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img840.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img840.jpeg)' | markdownify }}
 {:.image }
  _Note: During run time, the input controls get resized and repositioned appropriately based on the constraints provided._
 
-{ ![](Tools-Controls_images/Tools-Controls_img841.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img841.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img842.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img842.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49919,7 +49919,7 @@ AutoLabel Control
 
 The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel will be automatically repositioned as the labeled control's position changes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img843.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img843.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49927,7 +49927,7 @@ The AutoLabel control can be positioned relative to the top, left, bottom or rig
 
 The FlowLayout will always treat the 'AutoLabel-LabeledControl' pair as a unit. You can use AutoLabels and FlowLayout together to implement complex and powerful form layouts.
 
-> { ![](Tools-Controls_images/Tools-Controls_img844.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img844.jpeg)' | markdownify }}
 {:.image }
  _Note: Refer to AutoLabel under Editors Package for more details._
 
@@ -49943,13 +49943,13 @@ Through Designer
 
 * You can rearrange the controls laid out by FlowLayout by right clicking the control and selecting the Bring To Front or Send To Back verbs in the designer.
 
-{ ![](Tools-Controls_images/Tools-Controls_img845.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img845.jpeg)' | markdownify }}
 {:.image }
 
 
 * Rearranging of Child controls of the FlowLayout can also be done by dragging and dropping them at design time.
 
-{ ![](Tools-Controls_images/Tools-Controls_img846.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img846.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49961,13 +49961,13 @@ We can also programmatically change the order of the controls laid out by the Fl
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img847.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img847.jpeg)' | markdownify }}
 {:.image }
 
 
 * Drag another three Panels onto the Panel1. The FlowLayout automatically arranges the Child controls as given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img848.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img848.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50051,13 +50051,13 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img849.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img849.jpeg)' | markdownify }}
 {:.image }
 
 
 * At run time when you click the Reorder button, the Panels 2, 3 and 4 will be rearranged in a different order.
 
-{ ![](Tools-Controls_images/Tools-Controls_img850.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img850.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50069,7 +50069,7 @@ Rearranging the Controls laid out by GridLayout, Rearranging the Controls laid o
 
 GridLayout is a Layout Manager that allows us to arrange the Child controls as in a grid containing rows and columns. Deriving from the Layout Manager base, the GridLayout inherits all the functionality that the Layout Manager type exposes. In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as illustrated below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img851.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img851.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50169,11 +50169,11 @@ Me.gridLayout1.VGap=10
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img852.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img852.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img853.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img853.jpeg)' | markdownify }}
 {:.image }
  _Note: To include some margin space along the borders, refer_ Margin Settings_._
 
@@ -50247,7 +50247,7 @@ Configuring GridLayout, Rearranging the Controls laid out by GridLayout, GridLay
 
 The Child controls of the GridLayout can be rearranged by dragging-and-dropping them at design time.
 
-{ ![](Tools-Controls_images/Tools-Controls_img854.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img854.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50259,7 +50259,7 @@ Rearranging the Controls laid out by FlowLayout, Rearranging the Controls laid o
 
 GridBagLayout is a Layout Manager which allows us to arrange the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns / rows can vary and the Child controls may span more than one cell.
 
-{ ![](Tools-Controls_images/Tools-Controls_img855.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img855.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50288,7 +50288,7 @@ GridPosX and GridPosY
 
 The primary objective in setting the constraint for a Child control is usually to determine in which cell it should be laid out. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img856.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img856.jpeg)' | markdownify }}
 {:.image }
  _Note: Multiple Child controls can occupy the same cell potentially overlapping each other._
 
@@ -50310,7 +50310,7 @@ Specifies the row in the virtual grid, where the component's layout bounds begin
 
 The following screen shot shows four buttons with non-zero weights with the GridPosX and GridPosY setting as follows: (0, 0), (0, 1), (1 ,0), (1, 1), resulting in a 2 x 2 virtual grid.
 
-{ ![](Tools-Controls_images/Tools-Controls_img857.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img857.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50338,7 +50338,7 @@ Specifies the weight of this component in containing the extra vertical space. T
 
 By default, the weights are set to 'Null', in which case, the available space is not distributed to the rows and columns at all. The virtual grid will simply be centered to the Container's client area, as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img858.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img858.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50346,11 +50346,11 @@ Following is another setting when the weights are different (the Child controls 
 
 In this screen shot, the WeightX and WeightY of button1 is (2, 1), button2 is (1, 2), button3 is (1, 1) and button4 is (1, 1). Based on these settings, the horizontal space is distributed between the 1st and 2nd column in the ratio 2:1 and the vertical space is distributed between the 2 rows in the ratio 2:1.
 
-{ ![](Tools-Controls_images/Tools-Controls_img859.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img859.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img860.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img860.jpeg)' | markdownify }}
 {:.image }
  _Note: The GetLayoutWeights() method returns the row and column weights of the current layout._
 
@@ -50378,7 +50378,7 @@ Specifies the number of rows this component should span in the virtual grid. The
 
 The below screen shot shows button1 spanning 2 columns (CellSpanX = 2 and Fill = Horizontal). This also results in button1 overlapping button3, which also occupies the (1, 0) cell.
 
-{ ![](Tools-Controls_images/Tools-Controls_img861.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img861.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50396,17 +50396,17 @@ Description</td></tr>
 <tr>
 <td>
 Anchor</td><td>
-Specifies the justification of a component within it's available layout bounds (a cell in the virtual grid). The default value is set to 'Center'. The options includes are as follows.{{ '_Center,_' | markdownify }}{{ '_North,_' | markdownify }}{{ '_NorthEast,_' | markdownify }}{{ '_East,_' | markdownify }}{{ '_SouthEast,_' | markdownify }}{{ '_South,_' | markdownify }}{{ '_SouthWest,_' | markdownify }}{{ '_West and_' | markdownify }}{{ '_NorthWest._' | markdownify }}</td></tr>
+Specifies the justification of a component within it's available layout bounds (a cell in the virtual grid). The default value is set to 'Center'. The options includes are as follows.{{{ ''_Center,_'' | markdownify }}}{{{ ''_North,_'' | markdownify }}}{{{ ''_NorthEast,_'' | markdownify }}}{{{ ''_East,_'' | markdownify }}}{{{ ''_SouthEast,_'' | markdownify }}}{{{ ''_South,_'' | markdownify }}}{{{ ''_SouthWest,_'' | markdownify }}}{{{ ''_West and_'' | markdownify }}}{{{ ''_NorthWest._'' | markdownify }}}</td></tr>
 </table>
 
 
 The following screen shot shows the same four buttons with different anchor settings. Button1 is set to 'NorthEast', button2 is set to 'South', button3 is set to 'East', and button4 is set to 'NorthWest'.
 
-{ ![](Tools-Controls_images/Tools-Controls_img862.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img862.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img863.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img863.jpeg)' | markdownify }}
 {:.image }
  _Note: Anchoring is done within the Child control's layout area._
 
@@ -50424,13 +50424,13 @@ Description</td></tr>
 <tr>
 <td>
 Fill</td><td>
-Specifies whether to resize a component when the component's layout bounds are larger than it's preferred size. The options included are as follows.{{ '_None,_' | markdownify }}{{ '_Both,_' | markdownify }}{{ '_Horizontal and_' | markdownify }}{{ '_Vertical._' | markdownify }}</td></tr>
+Specifies whether to resize a component when the component's layout bounds are larger than it's preferred size. The options included are as follows.{{{ ''_None,_'' | markdownify }}}{{{ ''_Both,_'' | markdownify }}}{{{ ''_Horizontal and_'' | markdownify }}}{{{ ''_Vertical._'' | markdownify }}}</td></tr>
 </table>
 
 
 The following screen shot shows the four buttons with different fill settings. In the following screen shot, button1 is set to 'Horizontal', button2 is set to 'Vertical' (with the Anchor property set to East), button3 is set to 'Both', and button4 is set to 'None'.
 
-{ ![](Tools-Controls_images/Tools-Controls_img864.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img864.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50478,7 +50478,7 @@ Specifies the extra space that the manager adds around a component's preferred b
 
 The buttons below are all of equal non-zero weights and set to Fill.Both. However, they have an Insets property of (5,5,5,5), giving it a padding of 5 pixels on all sides.
 
-{ ![](Tools-Controls_images/Tools-Controls_img865.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img865.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -50536,7 +50536,7 @@ Rearranging the Controls laid out by GridBagLayout, Child Control Settings
 
 Similar to the FlowLayout and GridLayout Managers, the Child controls of the GridBagLayout can also be rearranged by dragging and dropping them at design time.
 
-{ ![](Tools-Controls_images/Tools-Controls_img866.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img866.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51092,7 +51092,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img867.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img867.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51102,7 +51102,7 @@ It is possible to layout the Child controls programmatically using Multiple Layo
 
 * Set up a form with Buttons and Panels as shown in the below screen shot.
 
-{ ![](Tools-Controls_images/Tools-Controls_img868.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img868.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51250,7 +51250,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img869.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img869.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51264,37 +51264,37 @@ It is very simple to use more than one Layout Manager in a single form.
 
 * Drag-and-drop the FlowLayout Manager from the toolbox onto the form setting it as the Container control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img870.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img870.jpeg)' | markdownify }}
 {:.image }
 
 
 * Add Panels as Child controls onto the form. The FlowLayout Manager will automatically layout the Child components as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img871.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img871.jpeg)' | markdownify }}
 {:.image }
 
 
 * Drag and drop the GridLayout Manager onto the Panel1 and add Button controls as Child controls. This will be arranged as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img872.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img872.jpeg)' | markdownify }}
 {:.image }
 
 
 * We can also make Panel2 as the Container control for GridBagLayout Manager. This will arrange it's Child controls (Buttons) in a single row as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img873.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img873.jpeg)' | markdownify }}
 {:.image }
 
 
 * Finally make Panel3 as the Container control for the BorderLayout Manager which will arrange the Child controls (Buttons) as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img874.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img874.jpeg)' | markdownify }}
 {:.image }
 
 
 * The final output of the application with all the Layout Managers arranged in the above said fashion is shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img875.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img875.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51314,7 +51314,7 @@ Users may create full-fledged VS .NET and Office-like applications using the men
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-{ ![](Tools-Controls_images/Tools-Controls_img876.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img876.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51326,7 +51326,7 @@ Key Features
 
 * Custom Colors can be applied for Menus. See Visual Styles topic.
 
-{ ![](Tools-Controls_images/Tools-Controls_img877.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img877.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51338,7 +51338,7 @@ Toolbar
 * It allows the user to add toolbars, bar items onto the form without adding a single line of code.
 * Provides ability to customize the toolbars and menus at run time easily as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img878.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img878.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51412,7 +51412,7 @@ Miscellaneous Features
 * Localization support.
 * Provides full range of events that signal your application when any toolbar or menu activity occurs. 
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img879.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img879.jpeg)' | markdownify }}
 {:.image }
  _Note: SDI (Single Document Interface) is a Windows function that allows an application to display only one document at a time. SDI requires the user to load another instance of the application to work with two or more documents._ 
 
@@ -51436,11 +51436,11 @@ The section gives you an overview of the XPMenus Framework.
 
 The following screen shot displays the menus controls in toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img880.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img880.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img881.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img881.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51456,7 +51456,7 @@ BarItem
 
 A BarItem is a data structure that represents a clickable item that can be used in toolbars, drop-down menus and context menus. This is analogous to a MenuItem in the .NET framework. To learn more about BarItems, click here.
 
-{ ![](Tools-Controls_images/Tools-Controls_img882.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img882.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51491,45 +51491,45 @@ To add BarItems (menu items) to the menu Bar (note that this step will NOT autom
 * Drag-and-drop one of the BarManagers, MainFrameBarManager (if this is the top-level form) or a ChildFrameBarManager if this is an MDIChild form, onto the form, which will be added to the component tray.
 * To invoke the Customize dialog, right click the component and select the Customize... option, or choose the 'Customize...' option from the smart tag.
 
-{ ![](Tools-Controls_images/Tools-Controls_img883.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img883.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img884.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img884.jpeg)' | markdownify }}
 {:.image }
 
 
 * In the customization dialog, go to the Commands tab.
 * To add new categories, right click on the Categories' area and select Add.
 
-{ ![](Tools-Controls_images/Tools-Controls_img885.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img885.jpeg)' | markdownify }}
 {:.image }
 
 
 * This will open up a dialog where you can enter the name of a new category. The category name should be unique within this BarManager. 
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img886.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img886.jpeg)' | markdownify }}
 {:.image }
  _Note: The categories do not correspond to any menu entries in the main menu or toolbars, they just provide you a logical grouping of different BarItems._
 
-{ ![](Tools-Controls_images/Tools-Controls_img887.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img887.jpeg)' | markdownify }}
 {:.image }
 
 
 * Now to add bar items into this category, select the category and click the Modify... button (top right corner of the Commands tab) select Add to invoke the Add New BarItem dialog.
 * Select the type of BarItem you would like to add, from the list and name it (the BarItem's text property). Take a look at the topic Bar Items for more information on the different types of BarItems.
 
-{ ![](Tools-Controls_images/Tools-Controls_img888.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img888.jpeg)' | markdownify }}
 {:.image }
 
 
 * Once you insert the BarItems, you can select them in the Commands list and modify their properties in the VS .NET design-time property grid.
 
-{ ![](Tools-Controls_images/Tools-Controls_img889.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img889.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img890.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img890.jpeg)' | markdownify }}
 {:.image }
  _Note: Remember that you haven't filled your menus and toolbars yet. To display the items refer to_ Adding Toolbars_._
 
@@ -51539,37 +51539,37 @@ To add a toolbar and populate it with the bar items follow the below steps.
 
 * To create a new toolbar, go to the Toolbars tab in the Customize dialog, select New and specify a name (Ex: MainMenu) for the toolbar.
 
-{ ![](Tools-Controls_images/Tools-Controls_img891.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img891.jpeg)' | markdownify }}
 {:.image }
 
 
 * This will create a new bar component in the designer as shown in the image below. Name this component as 'MainMenu'. This will also make a corresponding entry in the Toolbars list.
 
-{ ![](Tools-Controls_images/Tools-Controls_img892.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img892.jpeg)' | markdownify }}
 {:.image }
 
 
 * Set the toolbar as a main menu, by selecting the IsMainMenu option in the BarStyle property of the mainMenuBar component.
 
-{ ![](Tools-Controls_images/Tools-Controls_img893.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img893.png)' | markdownify }}
 {:.image }
 
 
 * Fill your toolbars with items by simply dragging-and-dropping the items from the Command tab into the toolbars and submenus. To fill the sub menu of the parent bar items, again drag the required bar items inside it.
 
-{ ![](Tools-Controls_images/Tools-Controls_img894.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img894.jpeg)' | markdownify }}
 {:.image }
 
 
 * You can drag and dock the toolbars on all four sides of the designer by dragging through the gripper on the left of the toolbar and moving them to any desired position. The toolbars can also be floated. See Toolbar Properties for more details.
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img895.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img895.jpeg)' | markdownify }}
 {:.image }
  _Note: If a toolbar from the mainFrameBarManager and one (or more) from the child forms gets merged (the rules for merging are discussed in the_ MDI Merging _topic), the BarItems in the toolbar will be ordered based on their MergeOrder property._
 
 If this is a ChildFrameBarManager, all the toolbars (including the main menu) will be floating at design-time. This is because the child toolbars will be docked to the main form rather than to your child form during run-time, and hence, floating avoids polluting your child forms during design-time.
 
-{ ![](Tools-Controls_images/Tools-Controls_img896.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img896.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51813,7 +51813,7 @@ Me.bar1.BarStyle = (CType((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.All
 
 The resulting form will look like the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img897.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img897.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51839,7 +51839,7 @@ This is a horizontal menu that appears on top of a window. By default, each opti
 
 For MainMenuBars, BarStyles IsMainMenuBar option will have to be checked. There can be only one menu bar at the top of the screen. The MainMenuBar is always visible and it fills the entire dock area row on which it appears.
 
-{ ![](Tools-Controls_images/Tools-Controls_img898.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img898.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51847,7 +51847,7 @@ Standard Bar
 
 This is a horizontal menu that appears on top of a window with BarStyle 'IsMainMenu' option Unchecked. It does not fill the entire dock area row on which it appears. Other toolbars can also be docked on the same row. It gives 'Customize toolbar' options.
 
-{ ![](Tools-Controls_images/Tools-Controls_img899.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img899.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51855,7 +51855,7 @@ Status Bar
 
 This is a horizontal menu that appears on the bottom of a window and has the BarStyle 'IsStatusBar' checked. Any number of static bar items can be added to it.
 
-{ ![](Tools-Controls_images/Tools-Controls_img900.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img900.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51897,7 +51897,7 @@ Specifies if the toolbar can be hidden by the user at run time. By default this 
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img901.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img901.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51921,7 +51921,7 @@ Specifies whether to allow resizing of the toolbar when the toolbar is floating.
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img902.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img902.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51943,7 +51943,7 @@ Caption for the toolbar which is displayed in floating mode.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img903.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img903.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51965,31 +51965,31 @@ Customize Dialog
 
 The Customize Dialog can be accessed at design time and also at runtime. It lets the end users to add and customize menus, toolbars and layout items during design time. This can be invoked at design time, by right-clicking the mainFrameBarManager and selecting the Customize option in the designer.
 
-{ ![](Tools-Controls_images/Tools-Controls_img904.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img904.png)' | markdownify }}
 {:.image }
 
 
 At run time, Customize dialog can be accessed by right-clicking on the Bar and clicking the Customize option. This dialog lets you control the layout of items in a toolbar.
 
-{ ![](Tools-Controls_images/Tools-Controls_img905.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img905.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img906.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img906.png)' | markdownify }}
 {:.image }
 
 
 (BarStyle=IsMainMenu Unchecked)
 
-> { ![](Tools-Controls_images/Tools-Controls_img907.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img907.jpeg)' | markdownify }}
 {:.image }
  _Note: To avoid displaying the bar items in Customize dialog at run time, set BarManager.ShowItemsInCustomizationDialog property to false._
 
-{ ![](Tools-Controls_images/Tools-Controls_img908.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img908.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img909.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img909.jpeg)' | markdownify }}
 {:.image }
  _Note: If you want to disable Customizing option for the users at run time, set BarManager.EnableCustomizing property to false. This will not provide option to open the Customize dialog at run time._
 
@@ -52007,7 +52007,7 @@ BarItem
 
 A BarItem is a simple child bar item which can be dragged and dropped to a ParentBarItem. By selecting the Type as BarItem and giving the name, in the Add New BarItem dialog, we can create a new BarItem. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img910.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img910.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52079,7 +52079,7 @@ For changing the Paint Style, see PaintStyle topic.
 
 Appearance of the Text can be customized. See Foreground Settings for details.
 
-{ ![](Tools-Controls_images/Tools-Controls_img911.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img911.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52091,7 +52091,7 @@ ParentBarItem
 
 A ParentBarItem represents a submenu (drop-down menu) which can display one or more child BarItems on drop-down. A ParentBarItem can be placed inside a toolbar and it can contain another ParentBarItem as its child bar item. ParentBarItem comes with properties to control its appearance and behavior.
 
-{ ![](Tools-Controls_images/Tools-Controls_img912.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img912.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52177,7 +52177,7 @@ Merges BarItems of one ParentBarItem with another ParentBarItem. Two ParentBarIt
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img913.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img913.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52213,7 +52213,7 @@ Me.parentBarItem1.MergeItems(parentBarItem3)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img914.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img914.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52221,7 +52221,7 @@ Parent Style
 
 The following figures display the parent styles.
 
-{ ![](Tools-Controls_images/Tools-Controls_img915.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img915.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52249,11 +52249,11 @@ Enables or disables partial menus mode in submenus.</td></tr>
 PartialMenusResetDelay</td><td>
 Specifies the delay in days after an item's recently used setting will be replaced.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img916.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img916.jpeg)' | markdownify }}
 {:.image }
  _Note: To know all the properties of BarManager, click here._
 
-{ ![](Tools-Controls_images/Tools-Controls_img917.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img917.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52311,7 +52311,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img918.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img918.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52339,13 +52339,13 @@ DropDownBarItem
 
 A DropDownBarItem is a BarItem that gets drawn with an arrow button to its right, which when clicked, will pop-up a window (note: not a menu) represented by a PopupControlContainer. This is identical to the Undo menu item in VS .NET code editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img919.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img919.jpeg)' | markdownify }}
 {:.image }
 
 
 The type should be selected as DropDownBarItem in the Add New BarItem dialog.
 
-{ ![](Tools-Controls_images/Tools-Controls_img920.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img920.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52353,7 +52353,7 @@ Displaying the Popup Menu
 
 We need to associate a PopupControlContainer for showing the popup. Drag-and-drop a PopupControlContainer component and associate it with the DropDownBarItem using PopupControlContainer property of DropDownBarItem.
 
-{ ![](Tools-Controls_images/Tools-Controls_img921.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img921.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52375,7 +52375,7 @@ Me.dropDownBarItem1.PopupControlContainer = Me.popupControlContainer1
 
 We can add controls like ColorPickerUI control to this container and customize the popup for the DropDownBarItem.
 
-{ ![](Tools-Controls_images/Tools-Controls_img922.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img922.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52405,7 +52405,7 @@ ComboBoxBarItem
 
 A ComboBoxBarItem is a BarItem that provides combobox-like behavior with an optional editable mode. This is identical to the VS.NET Find combo box in the code editor. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img923.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img923.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52513,15 +52513,15 @@ Me.comboBoxBarItem1.Focus
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img924.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img924.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img925.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img925.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img926.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img926.jpeg)' | markdownify }}
 {:.image }
  _Note: Editable property should be set to true for displaying the FontListControl in this case and_ PaintStyle _should be ImageAndText for displaying the ComboBoxBarItem text._
 
@@ -52541,7 +52541,7 @@ Appearance of the Text can be customized. See Foreground Settings for details.
 
 We can set banner text for the ComboBoxBarItem. Refer BannerTextProvider Component topic for more details.
 
-{ ![](Tools-Controls_images/Tools-Controls_img927.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img927.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52551,13 +52551,13 @@ PersistAutoAppendList property is added to ComboBoxBarItem.
 
 When this property is set to false and AutoAppend is set to true, the item added to the ComboBoxBarItem will be added to the dropdown but it will not be saved.
 
-{ ![](Tools-Controls_images/Tools-Controls_img928.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img928.jpeg)' | markdownify }}
 {:.image }
 
 
 The following code illustrates how to include PersistAutoAppendList.
 
-> { ![](Tools-Controls_images/Tools-Controls_img929.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img929.jpeg)' | markdownify }}
 {:.image }
 _Note: This can be used when the AutoAppend is set to true._
 
@@ -52587,7 +52587,7 @@ ListBarItem
 
 A ListBarItem is a BarItem which, when added to a ParentBarItem will expand itself into an ordered list of BarItems represented by the string list in its ChildCaptions property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img930.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img930.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52615,7 +52615,7 @@ It specifies whether or not to use numbers in the expanded list.</td></tr>
 Customizable</td><td>
 Specifies whether the bar item is involved in the customization.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img931.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img931.jpeg)' | markdownify }}
 {:.image }
  _Note: The BarItem should not be in User Customization mode / Customizable property should be set to false, to effect these settings._
 
@@ -52643,7 +52643,7 @@ Me.listBarItem1.UseNumberedList = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img932.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img932.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52673,7 +52673,7 @@ MDIListBarItem
 
 An MDIListBarItem is a ListBarItem that will expand itself to show a list of MDIChild windows in the form, when placed in a ParentBarItem. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img933.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img933.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52697,7 +52697,7 @@ It specifies whether or not to use numbers in the expanded list.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img934.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img934.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52733,7 +52733,7 @@ A StaticBarItem is a BarItem that provides users a label-like behavior to show p
 
 The user cannot click or interact with this type of BarItem. It is typically used in the status bar-type toolbar. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img935.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img935.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52769,7 +52769,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img936.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img936.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52801,7 +52801,7 @@ Relative Position of the bar item when it is merged with another.</td></tr>
 <tr>
 <td>
 MergeType</td><td>
-Sets behavior of the bar item when its bar is merged with another. The options are,{{ '_Add_' | markdownify }} - Adds to the existing menu items. (Default){{ '_Replace_' | markdownify }} - Replaces an existing menu items at the same position in a merged menu.{{ '_MergeItems_' | markdownify }} - Merged with an existing menu items at the same position in a merged menu.{{ '_Remove_' | markdownify }} - Menu item will not be included in the merged menu.</td></tr>
+Sets behavior of the bar item when its bar is merged with another. The options are,{{{ ''_Add_'' | markdownify }}} - Adds to the existing menu items. (Default){{{ ''_Replace_'' | markdownify }}} - Replaces an existing menu items at the same position in a merged menu.{{{ ''_MergeItems_'' | markdownify }}} - Merged with an existing menu items at the same position in a merged menu.{{{ ''_Remove_'' | markdownify }}} - Menu item will not be included in the merged menu.</td></tr>
 <tr>
 <td>
 Customizable</td><td>
@@ -52835,11 +52835,11 @@ ToolBarListBarItem
 
 A ToolbarListBarItem is a ListBarItem that expands during runtime to automatically show the list of toolbars currently used in the application. The user can click on this list to show / hide the toolbars. A ToolBarListBarItem can be added to a ParentBarItem by a simple drag-and-drop similar to other bar items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img937.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img937.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img938.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img938.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52869,11 +52869,11 @@ TextBoxBarItem
 
 A TextBoxBarItem behaves like a normal windows textbox. It lets the end users to enter text in the text area at run time. You can also specify the text in TextBoxValue property. A TextBoxBarItem can be added to a ParentBarItem by a simple drag and drop similar to other bar items. Width of the TextBoxBarItem can be controlled using MinWidth property. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img939.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img939.jpeg)' | markdownify }}
 {:.image }
  _Note:_ Paint Style _should be "ImageAndText" for the TextBoxBarItem to display TextBoxBarItem.Text._
 
-{ ![](Tools-Controls_images/Tools-Controls_img940.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img940.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52905,7 +52905,7 @@ Me.textBoxBarItem1.TextBoxValue = "Essential Chart";
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img941.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img941.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52945,7 +52945,7 @@ Paint Style
 
 The MenuItem can be displayed as a TextOnly, ImageOnly or Image and Text using PaintStyle property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img942.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img942.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52959,7 +52959,7 @@ Description</td></tr>
 <tr>
 <td>
 PaintStyle</td><td>
-Indicates the painting style of the bar item.{{ '_Default_' | markdownify }} - Displays the style of it parents. In case of MainMenu, only text will be drawn, in other toolbars only image and in Dropdown menu, image and text will be drawn.{{ '_TextOnly_' | markdownify }} - Displays only Text.{{ '_TextOnlyInMenus_' | markdownify }} - Image will be ignored when the BarItem is in a drop down menu.{{ '_ImageAndText_' | markdownify }} - Both Image and Text will be drawn.</td></tr>
+Indicates the painting style of the bar item.{{{ ''_Default_'' | markdownify }}} - Displays the style of it parents. In case of MainMenu, only text will be drawn, in other toolbars only image and in Dropdown menu, image and text will be drawn.{{{ ''_TextOnly_'' | markdownify }}} - Displays only Text.{{{ ''_TextOnlyInMenus_'' | markdownify }}} - Image will be ignored when the BarItem is in a drop down menu.{{{ ''_ImageAndText_'' | markdownify }}} - Both Image and Text will be drawn.</td></tr>
 </table>
 
 
@@ -52979,11 +52979,11 @@ Me.barItem4.PaintStyle = PaintStyle.ImageAndText
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img943.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img943.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img944.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img944.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52995,7 +52995,7 @@ Keyboard Shortcut
 
 Keyboard support can be assigned for each BarItem using BarItem.Shortcut property of the particular bar item. A customized text can be specified in the place of shortcut key using ShortcutText property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img945.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img945.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53019,7 +53019,7 @@ this.dropDownBarItem2.ShortcutText = "Cut";
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img946.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img946.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53129,11 +53129,11 @@ ImageList for the highlighted bar item when BarManager is in LargeIcons mode.</t
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img947.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img947.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img948.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img948.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53141,7 +53141,7 @@ Setting images for bar items when it is pressed
 
 You can set the image for the bar item when it is pressed. You need to associate the corresponding ImageList to the PressedImageList property of bar item and you can set the image index using PressedImageIndex property. Similarly you can associate ImageListAdv with PressedImageListAdv property.
 
-> { ![](Tools-Controls_images/Tools-Controls_img949.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img949.jpeg)' | markdownify }}
 {:.image }
  _Note: It is required to set image to Baritem before it is pressed._
 
@@ -53197,7 +53197,7 @@ Sets text for the Bar item.</td></tr>
 <tr>
 <td>
 TextAlignment</td><td>
-Sets the text alignment. Options are,{{ '_Near, (Default)_' | markdownify }}{{ '_Far,_' | markdownify }}{{ '_Center_' | markdownify }}</td></tr>
+Sets the text alignment. Options are,{{{ ''_Near, (Default)_'' | markdownify }}}{{{ ''_Far,_'' | markdownify }}}{{{ ''_Center_'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -53221,11 +53221,11 @@ Me.barItem2.TextAlignment = Syncfusion.Windows.Forms.Tools.XPMenus.TextAlignment
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img950.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img950.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img951.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img951.jpeg)' | markdownify }}
 {:.image }
  _Note: We can also change the text color for the Baritems using_ MenuColors.SelTextColor _property._
 
@@ -53295,7 +53295,7 @@ Me.barItem5.CustomTextFont = New System.Drawing.Font("Verdana", 8.25F, System.Dr
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img952.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img952.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53329,11 +53329,11 @@ Me.dropDownBarItem2.Tooltip = "Pick a color"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img953.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img953.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img954.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img954.jpeg)' | markdownify }}
 {:.image }
  _Note: We can control the display of tooltips for the bar items, only when the form is active, using the below BarManager property._
 
@@ -53376,7 +53376,7 @@ The ChildFrameBarManager should be associated with a MDIChild in the MDI scenari
 
 These two classes are derived from the BarManager and hence will be referred as such when discussing features common to both these classes. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img955.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img955.jpeg)' | markdownify }}
 {:.image }
  _Note: At run-time, a ChildFrameBarManager does not show the menus and toolbars inside a child form. It is merely a place holder for the menus and toolbars during design-time, which will be merged into the main form's menus during run-time._
 
@@ -53384,11 +53384,11 @@ BarManagers come with full design-time support and lets users add menus and tool
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img956.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img956.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img957.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img957.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53520,13 +53520,13 @@ Indicates whether to show shadow for BarItem's images.</td></tr>
 ShowShadow</td><td>
 Indicates whether to show shadows for popups.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img958.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img958.jpeg)' | markdownify }}
 {:.image }
  _Note: The properties related to the partial menus concept is discussed in_ ParentBarItem_._
 
 Tooltip Settings
 
-> { ![](Tools-Controls_images/Tools-Controls_img959.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img959.jpeg)' | markdownify }}
 {:.image }
  _Note: We can control the display of tooltips for the bar items, only when the form is active, using the below_ BarManager.BarItemActiveFormCheckOverride _property._
 
@@ -53636,11 +53636,11 @@ BarItem Context Menu
 
 On right clicking any of the bar items at design time or at run time, displays a context menu. The below image illustrates the various options in the context menu.
 
-> { ![](Tools-Controls_images/Tools-Controls_img960.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img960.jpeg)' | markdownify }}
 {:.image }
  _Note: At runtime, the context menu will be invoked, only with the customize dialog open._
 
-{ ![](Tools-Controls_images/Tools-Controls_img961.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img961.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53649,11 +53649,11 @@ On right clicking any of the bar items at design time or at run time, displays a
 * Select Paint Styles.
 * Begin a Group.
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img962.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img962.jpeg)' | markdownify }}
 {:.image }
  _Note: The editing option for the bar item text at run time can be disabled by setting BarManager.AllowUserRenaming property to false._
 
-{ ![](Tools-Controls_images/Tools-Controls_img963.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img963.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53663,17 +53663,17 @@ ChangeImage option is added in CustomizingPopupMenu. Baritem’s image can be ch
 
 1.  Right click at the baritem during runtime customization.
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img964.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img964.jpeg)' | markdownify }}
 {:.image }
 _Note:  CustomizingPopupMenu appears._
 
-{ ![](Tools-Controls_images/Tools-Controls_img965.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img965.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Click ChangeImage 
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img966.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img966.jpeg)' | markdownify }}
 {:.image }
 _Note: File Dialog Opens._
 
@@ -53685,7 +53685,7 @@ Design Time
 
 In the designer, right click on the bar item which you want to delete and select "Delete" option from the Context Menu.
 
-{ ![](Tools-Controls_images/Tools-Controls_img967.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img967.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53701,11 +53701,11 @@ Description</td></tr>
 <tr>
 <td>
 Remove</td><td>
-Removes the first occurrence of the specific object.{{ '_obj_'  | markdownify }}- System.object to remove from System.Collections.Arraylist.</td></tr>
+Removes the first occurrence of the specific object.{{{ ''_obj_' ' | markdownify }}}- System.object to remove from System.Collections.Arraylist.</td></tr>
 <tr>
 <td>
 RemoveAt</td><td>
-Removes the bar item from the ParentBarItems Collection based on the Bar item index(index). The parameter is,{{ '_index_' | markdownify }} - Index of the bar item.</td></tr>
+Removes the bar item from the ParentBarItems Collection based on the Bar item index(index). The parameter is,{{{ ''_index_'' | markdownify }}} - Index of the bar item.</td></tr>
 </table>
 
 
@@ -53737,7 +53737,7 @@ Me.parentBarItem1.Items.RemoveAt(1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img968.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img968.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53745,7 +53745,7 @@ RunTime
 
 This option is available for the end users at run time also. Right-clicking on a bar item at run time invokes the context menu similar to that in the Designer.
 
-{ ![](Tools-Controls_images/Tools-Controls_img969.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img969.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53755,17 +53755,17 @@ Design Time
 
 XPMenus lets you group certain bar items using Begin a Group option in the designer, code and programmatically also. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img970.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img970.jpeg)' | markdownify }}
 {:.image }
 
 
 Select a bar item in the dropdown from which you want to start a group, right click on it and select "Begin A Group" option from the Context Menu. This inserts a separator from the bar item selected and starts a group.
 
-{ ![](Tools-Controls_images/Tools-Controls_img971.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img971.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img972.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img972.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53811,11 +53811,11 @@ RunTime
 
 This option is available for the end users at run time also. Right clicking on a bar item at run time, invokes the context menu similar to that in the designer. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img973.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img973.jpeg)' | markdownify }}
 {:.image }
  _Note: Context menu will be invoked at run time, only with the customize dialog open._
 
-{ ![](Tools-Controls_images/Tools-Controls_img974.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img974.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53827,7 +53827,7 @@ Separators for menu items in ParentBarItem Through Designer
 
 To add separators between the menu items under a ParentBarItem, invoke Int32 Collection Editor using ParentBarItem.SeparatorIndices property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img975.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img975.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53879,7 +53879,7 @@ parentBarItem1.SeparatorIndices.Clear()
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img976.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img976.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53895,28 +53895,28 @@ Through Designer
 
 Right click on the MainFrameBarManager in the designer and choose the "Add Detached CommandBar" option, to add a detached commandbar. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img977.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img977.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img978.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img978.jpeg)' | markdownify }}
 {:.image }
  _Note: Command Bar can also be added by clicking the command in the properties window._
 
-{ ![](Tools-Controls_images/Tools-Controls_img979.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img979.jpeg)' | markdownify }}
 {:.image }
 
 
 The following screen shot shows the CommandBar in the designer.
 
-{ ![](Tools-Controls_images/Tools-Controls_img980.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img980.jpeg)' | markdownify }}
 {:.image }
 
 
 * Drag and drop XPToolBar control on to the CommandBar and add bar items to the XPToolBar through BarItem Collection Editor. 
 * The following screen shot shows the XPToolBar with bar items hosted on CommandBar. This command Bar can be hosted to any target within the form by just dragging and dropping.
 
-{ ![](Tools-Controls_images/Tools-Controls_img981.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img981.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53966,7 +53966,7 @@ Me.commandBar2.Controls.Add(Me.trackBarEx1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img982.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img982.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54016,7 +54016,7 @@ Sets the control's text.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img983.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img983.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54094,7 +54094,7 @@ Shows / Hides the drag gripper.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img984.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img984.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54122,7 +54122,7 @@ ControlBars inEssential Tools XP Menus framework enables application developers 
 
 A ControlBar is a full-featured docking container that can host any control and be docked along the border of the host form or floated as a top-level window. ControlBars, however, differ from traditional docking windows by adopting the characteristic layout behavior of a toolbar rather than that of a classic dockable control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img985.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img985.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54139,11 +54139,11 @@ A ControlBar is capable of hosting two controls.
 
 While just about any System.Windows.Forms.Control instance can be used as the ControlBar's main client, the caption control position is normally occupied by single line controls such as a toolbar, text box or combo box. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img986.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img986.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img987.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img987.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54305,21 +54305,21 @@ The MainFrameBarManager's Add Detached ControlBar design-time verb, available th
 
 Follow the steps below to add different pages to the control bar.
 
-{ ![](Tools-Controls_images/Tools-Controls_img988.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img988.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img989.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img989.jpeg)' | markdownify }}
 {:.image }
  _Note: Control Bar can also be added by clicking the verb in the properties window._
 
-{ ![](Tools-Controls_images/Tools-Controls_img990.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img990.jpeg)' | markdownify }}
 {:.image }
 
 
  The resulted screen shot displays controlbar in the designer.
 
-{ ![](Tools-Controls_images/Tools-Controls_img991.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img991.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54329,32 +54329,32 @@ Follow the steps below to add different pages to the control bar.
 
 While dropping out CardLayout onto the panel, the layout designer window will open, asking whether to make panel1 as container control. Click 'Yes' and continue.
 
-{ ![](Tools-Controls_images/Tools-Controls_img992.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img992.jpeg)' | markdownify }}
 {:.image }
 
 
 * You can add multiple panels to the control bar.
 * Select the card using the SelectedCard property in the CardLayout Property window.
 
-{ ![](Tools-Controls_images/Tools-Controls_img993.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img993.jpeg)' | markdownify }}
 {:.image }
 
 
 * In the selected card, add XPTaskBar to the control bar and right-click it to add XPTaskBarBox to add Items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img994.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img994.jpeg)' | markdownify }}
 {:.image }
 
 
 The resultant form is as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img995.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img995.jpeg)' | markdownify }}
 {:.image }
 
 
 * Inside XPTaskbarBox, you can insert link labels, ComboBoxAdv controls like in the following screen shot.
 
-{ ![](Tools-Controls_images/Tools-Controls_img996.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img996.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54394,7 +54394,7 @@ How to dock the ControlBars to any edge of the host form
 
 An XP Toolbar is a toolbar-like control with look-and-feel of the XP Menus toolbar. It supports a list of BarItems which can be added to it. It is a stand-alone control that can also be used in the absence of a BarManager also. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img997.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img997.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54424,7 +54424,7 @@ Filling the XP Toolbar with Items from the BarManager
 
 You can drag-and-drop items from the Customize dialog of the BarManager into the XP Toolbar, in the same way you filled the menus and toolbars.
 
-{ ![](Tools-Controls_images/Tools-Controls_img998.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img998.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54448,15 +54448,15 @@ Indicates bar items collections.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img999.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img999.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1000.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1000.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1001.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1001.jpeg)' | markdownify }}
 {:.image }
  _Note: This control is not normally used to create toolbars in the XP Menus. This is meant to be used within the form as a stand-alone control._
 
@@ -54512,7 +54512,7 @@ Me.xpToolBar1.SeparatorIndices.AddRange(New Integer() {1, 2})
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1002.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1002.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54624,7 +54624,7 @@ See Also
 
 A PopupMenu represents a context menu for XPMenus, that can be shown over any control, when the user right clicks, anywhere in an application. It must be associated with a ParentBarItem whose contents will be displayed in the popup menu. Similar to the .NET Context menus, a popup menu can be displayed. PopupMenusManager class should be added to the designer to display the PopUp menu.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1003.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1003.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54636,7 +54636,7 @@ Adding a PopupMenu
 
 Drag and drop a PopupMenu from the toolbox onto the designer form. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1004.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1004.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54646,17 +54646,17 @@ In the Absence of a BarManager
 
 A PopupMenu needs to be associated with a ParentBarItem in order to fill it with menu items. Right click the PopupMenu and select "Add Default ParentBarItem" if there is no ParentBarItem added for the Menus before.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1005.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1005.jpeg)' | markdownify }}
 {:.image }
 
 
 In the absence of a BarManager, use the PopupMenu.ParentBarItem.Items property's collection editor to add items to the popup menu. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1006.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1006.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1007.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1007.jpeg)' | markdownify }}
 {:.image }
  _Note: With such a custom ParentBarItem associated with the popup menu, you cannot add items using drag-and-drop from the BarManager._
 
@@ -54664,17 +54664,17 @@ In the Presence of the BarManager
 
 You can also reuse the ParentBarItem that you have already created for your menu structure using BarManager to fill the Popup menu. To do so, set the ParentBarItem property of the Popup menu to one of the available ParentBarItems. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1008.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1008.jpeg)' | markdownify }}
 {:.image }
 
 
 In the presence of a BarManager, the user can just drag BarItems into the popup menu. Right-click on the popupMenu1 and select Customize to invoke this dialog and drag the required menu items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1009.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1009.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1010.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1010.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also display the popup menu programmatically by calling PopupMenu.Show method. See_ How to programmatically show a Popup Menu
 
@@ -54692,11 +54692,11 @@ In the previous topic, we saw how to add and fill a popup menu with menu items. 
 
 Drag and Drop a PopupMenusManager control onto the form. Also add a RichTextBox control. When PopupMenusManager class is dragged onto the design surface, it will provide an extended property, XPContextMenu on popupMenusManager1 for all the controls in the form, letting the users to easily associate a popup menu with a control. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1011.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1011.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1012.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1012.jpeg)' | markdownify }}
 {:.image }
  _Note: A single PopupMenu can be associated with multiple controls._
 
@@ -54760,11 +54760,11 @@ Me.popupMenusManager.SetXPContextMenu(Me.richTextBox1, Me.popupMenu1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1013.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1013.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1014.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1014.jpeg)' | markdownify }}
 {:.image }
  _Note: We can even show the popup menu without implementing the PopupMenusManager class by calling PopupMenu.Show method. Click here for more details._
 
@@ -54780,17 +54780,17 @@ This topic will guide on how to group the menu items by inserting separator(s), 
 
 If the ParentBarItem associated with the popup menu is contained within a BarManager, drop-down the popup menu from the Popup Form, right click on an item and select Begin A Group from the context menu.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1015.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1015.jpeg)' | markdownify }}
 {:.image }
 
 
 If the ParentBarItem is not contained within a BarManager, edit the SeparatorIndices property of the ParentBarItem indicating the item indices in the items list where you want the separators to be introduced. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1016.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1016.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1017.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1017.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54823,7 +54823,7 @@ Me.popupMenu1.ParentBarItem.Style = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1018.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1018.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54842,19 +54842,19 @@ Creating MDI ParentForm
 1. Set up an MDIParent form by setting Form.IsMdiContainer property to true.
 2. Add bar items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. Refer to Creating Menus.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1019.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1019.jpeg)' | markdownify }}
 {:.image }
 
 
 3. Create a new form named TextEditor, with the controls FontListBox and ColorUIControl. We will consider this form as the MDIChildForm.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1020.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1020.jpeg)' | markdownify }}
 {:.image }
 
 
 4. Drag-and-Drop ChildFrameBarManager to the child form and add necessary Bar items. Adding bar items using ChildFrameBarManager is similar to MainFrameBarManager.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1021.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1021.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -54917,7 +54917,7 @@ The following applies to the explicit merging scenario only:
 
 _Warning_ Explicit merging imposes the requirement that the child form types should have a public default constructor (constructor with no arguments). 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1022.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1022.jpeg)' | markdownify }}
 {:.image }
  _Note: During explicit merging, a new 'dummy' instance of the child forms (one for each type) will be created by the framework in the background. However, these child forms will never be made visible._
 
@@ -55011,7 +55011,7 @@ You can choose anyone of the following for MDI merging.
 * Explicit merging is recommended for better performance, usability and for VS.NET like behavior.
 * Explicit merging is performed by calling the RegisterMDIChildTypes method with appropriate parameters (see the above section reference for example). 
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img1023.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1023.jpeg)' | markdownify }}
 {:.image }
  _Note: This step is relevant only if your form is an MDI container. [IsMDIContainer = True]_
 
@@ -55029,7 +55029,7 @@ In the Appearance section, you can select the required Visual Styles, imageList 
 
 Toolbar Persistence can be enabled using AutoLoadToolBarPositions and AutoPersistCustomization options.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1024.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1024.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55037,7 +55037,7 @@ ChildFrameBarManager
 
 The ChildFrameBarManager's Tasks Window gives the below Misc and Appearance options.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1025.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1025.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55057,13 +55057,13 @@ To associate a SuperTooltip to the BarItem (Menu Items), Drag and drop a SuperTo
 
 In the properties window, of the BarItem, we can see an extender property ToolTip on superToolTip. Click this to open the Tooltip Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1026.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1026.jpeg)' | markdownify }}
 {:.image }
 
 
 Customize the Tooltip using the Tooltip Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1027.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1027.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55087,7 +55087,7 @@ Me.superToolTip1.SetToolTip(Me.barItem2, toolTipInfo1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1028.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1028.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55119,7 +55119,7 @@ Description</td></tr>
 <tr>
 <td>
 AllowQuickCustomizing</td><td>
-This will draw an arrow button to the right side of the toolbar that will allow the user to drop down a menu from which they can select hidden items, add or remove buttons and invoke Customize dialog. {{ '_Note:_' | markdownify }} This is effective only with IsMainMenu unchecked.</td></tr>
+This will draw an arrow button to the right side of the toolbar that will allow the user to drop down a menu from which they can select hidden items, add or remove buttons and invoke Customize dialog. {{{ ''_Note:_'' | markdownify }}} This is effective only with IsMainMenu unchecked.</td></tr>
 <tr>
 <td>
 DrawDragBorder</td><td>
@@ -55131,7 +55131,7 @@ Wraps the bar into multiple rows when there is not enough space in a row while d
 <tr>
 <td>
 IsMainMenu</td><td>
-When this option is checked, it treats the bar as the main menu and forces the bar to occupy the whole row irrespective of multiline settings. > {{ '_Note: If this option is selected for more one bar, the first setting will be effective and the rest will be ignored._' | markdownify }}</td></tr>
+When this option is checked, it treats the bar as the main menu and forces the bar to occupy the whole row irrespective of multiline settings. > {{{ ''_Note: If this option is selected for more one bar, the first setting will be effective and the rest will be ignored._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 RotateWhenVertical</td><td>
@@ -55151,7 +55151,7 @@ Hides / shows a bar.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1029.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1029.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55301,7 +55301,7 @@ Private MenuColors.DropDownBorderColor = Color.Aqua
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1030.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1030.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55821,11 +55821,11 @@ The Visual appearance of the menus can be defined by using various Visual Styles
 
 Themes define the look and feel of the whole menu and it also changes the behavior of the menu. Themes can be enabled by setting ThemesEnabled property of mainFrameBarManager to true.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1031.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1031.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1032.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1032.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55835,31 +55835,31 @@ The supported Visual styles are:
 
 * Office 2003 look: This can enabled by setting Style to Office2003.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1033.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1033.jpeg)' | markdownify }}
 {:.image }
 
 
 * OfficeXP look: This can enabled by setting Style to OfficeXP.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1034.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1034.jpeg)' | markdownify }}
 {:.image }
 
 
 * VS2005 look: This can enabled by setting Style to VS2005.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1035.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1035.jpeg)' | markdownify }}
 {:.image }
 
 
 * Office 2007 look:This can enabled by setting Style to Office2007.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1036.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1036.jpeg)' | markdownify }}
 {:.image }
 
 
 * Office 2007 Outlook:This can enabled by setting Style to Office2007Outlook.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1037.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1037.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55881,7 +55881,7 @@ Office 2007 Themes
 
 You can also specify the color schemes for Office 2007 visual styles. They can be blue, silver and black.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1038.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1038.jpeg)' | markdownify }}
 {:.image }
 _Note: The property ThemesEnabled must be set to true and the property Style must be set to either Office2007 or Office2007Outlook._
 
@@ -55905,15 +55905,15 @@ Me.mainFrameBarManager1.Office2007Theme = Office2007ColorScheme.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1039.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1039.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1040.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1040.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1041.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1041.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55941,7 +55941,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Crimson)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1042.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1042.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55995,7 +55995,7 @@ mainFrameBarManager1.CustomizationDialog.Font = New Font("Arial", 8, System.Draw
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1043.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1043.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -56071,7 +56071,7 @@ The following code example illustrates how to set MultiLine property in C# and V
 
 The following screenshot shows how the ParentBarItem is displayed in Multiline.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1044.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1044.png)' | markdownify }}
 {:.image }
 
 
@@ -56083,11 +56083,11 @@ Horizontal Alignment:
 
 The following image illustrates how the parent bar items are displayed in horizontal alignment.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1045.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1045.png)' | markdownify }}
 {:.image }
 
 
-{ ![Horizontal](Tools-Controls_images/Tools-Controls_img1046.png) | markdownify }
+{{ '![Horizontal](Tools-Controls_images/Tools-Controls_img1046.png)' | markdownify }}
 {:.image }
 
 
@@ -56095,7 +56095,7 @@ Vertical Alignment:
 
 The following image illustrates how the parent bar items are displayed in vertical alignment.
 
-{ ![office2003](Tools-Controls_images/Tools-Controls_img1047.png) | markdownify }
+{{ '![office2003](Tools-Controls_images/Tools-Controls_img1047.png)' | markdownify }}
 {:.image }
 
 
@@ -56164,7 +56164,7 @@ Toolbar state can be saved in two ways.
 
 If this is a MainFrameBarManager, the toolbar's positions will be retained during run-time. If it is a ChildFrameBarManager, then the toolbar's positions will be docked to the top border of the main frame.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1048.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1048.jpeg)' | markdownify }}
 {:.image }
  _Note: This is true, only when your application is run for the first time and subsequent invocations will use the user's latest settings, if the persisting toolbar position is turned on._
 
@@ -56172,19 +56172,19 @@ The position of the toolbar and the customization applied by the user are stored
 
 You can turn on/off default persistence through the BarManager's AutoLoadToolbarPositions and EnableCustomizing properties. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1049.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1049.jpeg)' | markdownify }}
 {:.image }
 
 
 We can customize the toolbar at run time and it can be stored by setting AutoLoadToolBarPositions property to true. The following screen shot displays the Toolbar customization at run time where BarItem "Open" is removed.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1050.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1050.jpeg)' | markdownify }}
 {:.image }
 
 
 Close the application and again run the same application. The removed MenuBarItem "Open" is sustained. The following screen shot illustrates this.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1051.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1051.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -56637,7 +56637,7 @@ Me.popupMenu1.ParentBarItem.BeginGroupAt(Me.barItem1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1052.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1052.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -57093,7 +57093,7 @@ Me.mainFrameBarManager1.GetCommandBarManager().RecalcLayout()
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1053.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1053.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -57101,7 +57101,7 @@ The position of toolbar1 is moved to second row as follows.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1054.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1054.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -57315,7 +57315,7 @@ End Sub
 
 UpdateUI event is handled when the mouse moves over the bar item or before it gets shown in a dropdown.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1055.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1055.jpeg)' | markdownify }}
 {:.image }
  _Note: This event will be handled only when BarManager.UpdateUIMFCStyle property or BarItem.UpdateUIOnAppIdle is enabled. These properties decides whether to handle this event or not._
 
@@ -57349,7 +57349,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1056.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1056.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58001,7 +58001,7 @@ MultiColumnTreeView is an advanced treeview control with multiple columns. This 
 
 MultiColumnTreeView comes with complete design-time support. The Styles Architecture for the control lets the users to define styles for nodes at different levels of the tree and columns style for individual columns.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1057.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1057.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58044,7 +58044,7 @@ To create a MultiColumnTreeView control, follow the steps that are given below.
 
 1. Open your form in the designer. Add the Syncfusion controls to your VS .NET toolbox if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
 
-{ ![](Tools-Controls_images/Tools-Controls_img1058.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1058.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58055,7 +58055,7 @@ To create a MultiColumnTreeView control, follow the steps that are given below.
 6. Appearance and behavior related aspects can be controlled by setting the appropriate properties through the property grid of the MultiColumnTreeView control. 
 7. A simple MultiColumnTreeView with three columns is displayed below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1059.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1059.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58104,7 +58104,7 @@ Adding Multiple Columns
 
 MultiColumnTreeView control lets you add multiple columns easily using Columns Editor. The SubItems can be added using the SubItems Collection Editor. There are also properties to modify the appearance of the columns.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1060.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1060.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58218,7 +58218,7 @@ Sets the padding of the right image.</td></tr>
 RightImage</td><td>
 Sets the right image for the column.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1061.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1061.jpeg)' | markdownify }}
 {:.image }
  _Note: The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers._
 
@@ -58282,11 +58282,11 @@ treeColumnAdv3.Background = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1062.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1062.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1063.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1063.jpeg)' | markdownify }}
 {:.image }
  _Note: The appearance of the columns can also be controlled using the standard column styles settings._ _This overrides the above settings._
 
@@ -58296,11 +58296,11 @@ Adding SubItems
 
 You can add SubItems for the nodes using the SubItems Collection available in Nodes Collection Editor. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1064.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1064.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1065.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1065.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58368,7 +58368,7 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 
 The below image displays subitems with similar settings in the property grid above.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1066.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1066.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58392,7 +58392,7 @@ This section discusses the following topics.
 * Image Overlaying - This feature can be only applicable for the first column or the tree structure. 
 * Plus Sign On ExpandMode
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img1067.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1067.jpeg)' | markdownify }}
 {:.image }
  _Note: The below properties can be applied only to the first column among the multiple columns._ 
 
@@ -58446,7 +58446,7 @@ treeNodeAdv1.Text = "ICC \n World \n Cup \n 2007"
 
 The below image displays a node with multiline property set.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1068.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1068.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58454,7 +58454,7 @@ The below image displays a node with multiline property set.
 
 MultiColumnTreeView control also supports drag drop operation which lets you drag a complete row with multiple columns to the desired position.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1069.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1069.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58476,7 +58476,7 @@ This section will walk you through the following runtime features of MultiColumn
 
 Refer TreeView Package > RunTime Features
 
-> { ![](Tools-Controls_images/Tools-Controls_img1070.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1070.jpeg)' | markdownify }}
 {:.image }
  _Note: Context Menu, Hot Tracking and Tooltip features can be applied only to the nodes in the first column._
 
@@ -58486,7 +58486,7 @@ MultiColumnTreeView provides the shortcuts to access various properties.
 
 TaskWindow can be accessed using smart tag as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1071.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1071.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58502,7 +58502,7 @@ You can access the below options using this context menu at the design time.
 * Styles Editor, opens the BaseStyles Collection Editor.
 * Add Node, lets you add new nodes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1072.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1072.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58515,7 +58515,7 @@ TreeViewAdv NodeCollection Editor
 This editor lets you add nodes, SubItems for the nodes and customize them using various property settings.
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1073.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1073.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58526,7 +58526,7 @@ This editor can be accessed using the below options.
 * Using MultiColumnTreeView.Nodes property in the property Grid.
 * Command at the bottom of the property grid.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1074.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1074.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58534,7 +58534,7 @@ Columns Editor
 
 This lets you add columns and customize those columns appearance with style settings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1075.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1075.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58548,7 +58548,7 @@ TreeNodeAdvSubItems Collection Editor
 
 This editor lets you add subitems to the nodes and customize the subitems using the property settings. It can be accessed through Node Collection Editor and selecting the SubItems Collection property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1076.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1076.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58556,7 +58556,7 @@ Styles Editor
 
 This editor comes with default styles and also lets you add new style and apply to the nodes, subitems, and so on. The property settings are discussed in Styles Architecture.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1077.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1077.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58640,7 +58640,7 @@ treeNodeAdvSubItem2.TextColor = System.Drawing.Color.Navy
 
 A MultiColumnTreeView with above settings is displayed below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1078.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1078.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58650,11 +58650,11 @@ The appearance of different columns can be customized through Column Styles sett
 
 MultiColumnTreeView.ColumnHeaderBackground property sets the background column headers for the control. These settings are overridden by above ColumnStyles settings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1079.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1079.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1080.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1080.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58676,7 +58676,7 @@ Me.treeColumnAdv1.HighlightBorderColor = Color.Brown;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1081.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1081.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58741,7 +58741,7 @@ Indicates the style that all the subitems will inherit from.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1082.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1082.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58777,13 +58777,13 @@ Setting a Common Style for all the Nodes in the TreeViewAdv
 
 We can modify the background for all the children of a parent node by editing the StandardStyle property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1083.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1083.jpeg)' | markdownify }}
 {:.image }
 
 
 The below image displays a gradient style for all the columns of the MultiColumnTreeView control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1084.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1084.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58949,19 +58949,19 @@ Make a Node's Style Inherit from Another Base Style
 
 Apart from the default style (Standard Style), we can also create custom Base styles using the BaseStyles Collection Editor. Select the Base Style option, then click Add Style.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1085.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1085.jpeg)' | markdownify }}
 {:.image }
 
 
 This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1086.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1086.jpeg)' | markdownify }}
 {:.image }
 
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1087.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1087.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59127,7 +59127,7 @@ Setting a Common Style for all the Nodes in a Level
 
 TreeView lets you add node level styles using the BaseStyles Collection Editor. By default this style will be applied to all the nodes in the Level1 for NodeLevel1 style, Level2 for NodeLevel2 style and so on.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1088.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1088.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59209,13 +59209,13 @@ Adding ColumnStyle
 
 The editor also lets you add user defined column styles like other styles as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1089.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1089.jpeg)' | markdownify }}
 {:.image }
 
 
 The user-defined column style can be applied to any of the columns, using Columns Editor. This setting overrides the default settings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1090.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1090.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59279,7 +59279,7 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 
 User can add and define a SubItem style using the BaseStyles Collection Editor as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1091.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1091.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59291,7 +59291,7 @@ Adding Multiple Columns and SubItems
 
 Navigation package is a combination of controls designed to help navigation through various types of UI tasks, tools and more. The controls can be combined together to mimic popular user interface trends. Using Navigation package you can create toolboxes, categorized lists and view switchers.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1092.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1092.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59317,7 +59317,7 @@ The GroupBar class implements a tab-type container control similar to the Window
 
 The GroupBar may be used in combination with the GroupView control to implement clones of some of the popular UI components such as the Microsoft OutlookBar and the Visual Studio .NET toolbox window.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1093.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1093.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59333,7 +59333,7 @@ Features
 
 * Custom Colors can be applied for GroupBar control. See Visual Styles topic.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1094.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1094.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59389,7 +59389,7 @@ Serialization allows the user to save and restore the State information of the G
 
 The various sections of GroupBar and their description are given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1095.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1095.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59415,29 +59415,29 @@ To create a GroupBar through designer,
 
 * Drag-and-drop a GroupBar object from the controls toolbox onto your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1096.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1096.jpeg)' | markdownify }}
 {:.image }
 
 
 * To add a GroupBar Item using design-time verbs, follow the procedure given below.
 * To add a GroupBar Item using the design-time verbs, right-click on the GroupBar and select the Add Group option. This adds a GroupBar Item to the GroupBar control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1097.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1097.jpeg)' | markdownify }}
 {:.image }
 
 
 * To add a GroupBar Item using the property browser, follow the procedure given below.
 * In the Properties window, select the GroupBarItems property. The GroupBarItem Collection Editor will be opened. Click Add, a GroupBar Item will be added to the GroupBar control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1098.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1098.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1099.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1099.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1100.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1100.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59557,7 +59557,7 @@ Me.groupBarItem3.Text = "GroupBarItem2"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1101.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1101.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59607,7 +59607,7 @@ Me.groupBar1.IntegratedScrolling = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1102.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1102.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59671,17 +59671,17 @@ Me.groupBarItem1.NavigationPaneImage = DirectCast((Resources.GetObject("groupBar
 
 If you want to display an icon or image for the GroupBar Item displayed in the GroupBar's navigation pane, set theInNavigationPane property to 'True' and associate icons or images with the NavigationPaneIcon and NavigationPaneImage properties respectively.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1103.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1103.jpeg)' | markdownify }}
 {:.image }
 
 
 Stacked GroupBar Item automatically shows the Chevron, which can be made invisible by setting the ShowChevron property to 'False'.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1104.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1104.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1105.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1105.jpeg)' | markdownify }}
 {:.image }
  _Note : You should set LargeImageMode of GroupBarItem to 'True' to display the item images in the GroupBar's navigation pane._
 
@@ -59733,7 +59733,7 @@ Me.groupBar1.NavigationPaneHeight = 35
 
 The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's height and width can be adjusted by setting the NavigationPaneButtonWidth and NavigationPaneHeight properties to integer values.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1106.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1106.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59741,7 +59741,7 @@ Collapse / Expand Settings
 
 This section discusses settings of a groupbar in its collapsed state. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1107.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1107.jpeg)' | markdownify }}
 {:.image }
  _Note: AllowCollapse property should be set to true to effect the below settings._
 
@@ -59845,7 +59845,7 @@ Through Designer
 
 The TextAlign property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left and Right. The default alignment is set to Center.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1108.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1108.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59947,7 +59947,7 @@ Me.groupBarItem1.Image = (CType(resources.GetObject("groupBarItem1.Image"), Syst
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1109.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1109.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59971,7 +59971,7 @@ Me.groupBar1.ShowItemImageInHeader = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1110.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1110.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60019,13 +60019,13 @@ Me.groupBar1.FlatLook = True
 
 The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the BarHighlight propertyto 'True'.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1111.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1111.jpeg)' | markdownify }}
 {:.image }
 
 
 The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by setting the FlatLook propertyto 'True'. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1112.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1112.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60107,11 +60107,11 @@ Me.treeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {treeNode2})
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1113.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1113.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1114.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1114.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60187,7 +60187,7 @@ Me.groupView1.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupVi
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1115.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1115.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60200,25 +60200,25 @@ The following step-by-step procedure helps you to create Nested GroupBars.
 1. Drag and drop the GroupBar1 control from the toolbox onto the form, add GroupBar Items using the GroupBar Item Collection Editor, drag and drop the GroupView control and add GroupView Items using the GroupView Item Collection Editor. Associate the GroupView control inside the client area of the GroupBar Item.
 2. The below screen shot shows the GroupBar with four GroupBar Items named as Windows Forms, Components, General and Nested GroupBar.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1116.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1116.jpeg)' | markdownify }}
 {:.image }
 
 
 3. Drag and drop another GroupBar2 control from the toolbox and add the GroupBar Items (Personal, Work and Contacts) using the GroupBar Item Collection Editor and add the GroupView control with GroupView Items (Vendors, Metrics, Trend, Sales and Sales 2 for the GroupBar Item Work) to each GroupBar Item using the GroupView Item Collection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1117.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1117.jpeg)' | markdownify }}
 {:.image }
 
 
 4. Add GroupBar2 as child control to the GroupBar1 by doing a drag and drop operation.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1118.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1118.jpeg)' | markdownify }}
 {:.image }
 
 
 The following screen shot shows the Nested GroupBars.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1119.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1119.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60416,11 +60416,11 @@ Me.groupBar1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontSt
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1120.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1120.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1121.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1121.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60466,7 +60466,7 @@ Me.groupBar1.HeaderForeColor = System.Drawing.Color.Maroon
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1122.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1122.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60616,7 +60616,7 @@ Me.groupBar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1123.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1123.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60662,7 +60662,7 @@ Me.groupBarItem2.ClientBorderColors = New Syncfusion.Windows.Forms.Tools.BorderC
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1124.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1124.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60702,7 +60702,7 @@ Me.groupBar1.Cursor = System.Windows.Forms.Cursors.Cross
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1125.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1125.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60740,11 +60740,11 @@ Me.groupBar1.GroupBarItemCursor = System.Windows.Forms.Cursors.Hand
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1126.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1126.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1127.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1127.jpeg)' | markdownify }}
 {:.image }
  _Note : The ResetGroupBarItemCursor() method can be used to reset the cursor when it is displayed over a GroupBar Item._ 
 
@@ -60768,7 +60768,7 @@ Me.groupBar1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1128.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1128.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60792,7 +60792,7 @@ Me.groupBar1.AnimatedSelection = true
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1129.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1129.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60852,7 +60852,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1130.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1130.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60876,11 +60876,11 @@ Me.groupBar1.Office2007Theme = Office2007Theme.Black
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1131.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1131.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1132.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1132.jpeg)' | markdownify }}
 {:.image }
  _Note : The Visual Style property must be set to Office2007 to enable the color themes._
 
@@ -60908,7 +60908,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.CadetBlue)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1133.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1133.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60946,7 +60946,7 @@ Imports Syncfusion.Runtime.Serialization
 
 2. Drag and drop a GroupBar control from the toolbox onto the form, add GroupBar Items using the GroupBar Item CollectionEditor and add two buttons to the form for 'Load' and 'Save' as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1134.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1134.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -61130,7 +61130,7 @@ Again open the same application. You can see the persisted layout state of Group
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1135.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1135.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -61159,7 +61159,7 @@ Me.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1136.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1136.png)' | markdownify }}
 {:.image }
 
 
@@ -61745,11 +61745,11 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White
 
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1137.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1137.jpeg)' | markdownify }}
 {:.image }
 _Note : In GroupBar, StackedMode property should be enabled to customize the appearace of the GroupBar header._
 
-{ ![](Tools-Controls_images/Tools-Controls_img1138.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1138.png)' | markdownify }}
 {:.image }
 
 
@@ -61924,7 +61924,7 @@ Me.groupBar1.EnableSplittercolorCustomization = True
 
 The following image shows the customized splitter.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1139.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1139.png)' | markdownify }}
 {:.image }
 
 
@@ -61936,7 +61936,7 @@ The GroupView control's appearance and behavior attributes are extensively custo
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1140.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1140.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -61992,7 +61992,7 @@ Using the ThemesEnabled property, themed appearance can be provided for the Grou
 
 The various sections of GroupView and their description are given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1141.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1141.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62020,7 +62020,7 @@ To create a GroupView control and add GroupView Items to it,
 
 1. Drag-and-drop a GroupView control from the VS.NET toolbox onto the form. This will create an instance of the GroupView control on the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1142.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1142.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62028,15 +62028,15 @@ To create a GroupView control and add GroupView Items to it,
 
 The text of the GroupView Items is also set using the Collection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1143.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1143.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1144.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1144.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1145.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1145.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62148,7 +62148,7 @@ Me.Controls.Add(Me.groupView1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1146.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1146.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62207,13 +62207,13 @@ Me.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook propertyto 'True'. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1147.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1147.jpeg)' | markdownify }}
 {:.image }
 
 
 We can specify the border style for the GroupView control using the BorderStyle property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1148.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1148.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62303,7 +62303,7 @@ Me.groupView1.ItemYSpacing = 10
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1149.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1149.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62341,7 +62341,7 @@ Me.groupView1.IntegratedScrolling = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1150.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1150.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62375,7 +62375,7 @@ Me.groupView1.HighlightText = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1151.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1151.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62407,7 +62407,7 @@ Sets the text offset for the GroupView Item being selected.</td></tr>
 SelectedTextOffset</td><td>
 Sets the text offset for the selected GroupView Item.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1152.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1152.jpeg)' | markdownify }}
 {:.image }
  _Note: HighlightText property must be set to 'True' in all the cases._
 
@@ -62439,19 +62439,19 @@ Me.groupView1.SelectingTextOffset = New System.Drawing.Point(40, 8)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1153.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1153.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1154.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1154.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1155.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1155.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1156.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1156.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62507,11 +62507,11 @@ Specifies whether the GroupView Item's text should be wrapped when the control w
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1157.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1157.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1158.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1158.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62595,7 +62595,7 @@ Specifies the color for highlighting the GroupView Items when the mouse is moved
 HighlightTextColor</td><td>
 Specifies the color for highlighting the text of the GroupView Items when the mouse is moved over it.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1159.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1159.jpeg)' | markdownify }}
 {:.image }
 _Note: HighlightText property must be set to 'True' in both the cases._
 
@@ -62619,7 +62619,7 @@ Me.groupView1.HighlightTextColor = System.Drawing.Color.Purple
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1160.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1160.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62677,7 +62677,7 @@ Specifies the color used to draw the background of the GroupView Item being sele
 SelectingTextColor</td><td>
 Specifies the color used to draw the text of the GroupView Item being selected.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1161.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1161.jpeg)' | markdownify }}
 {:.image }
  _Note: HighlightText property must be set to 'True' in all the cases._
 
@@ -62717,15 +62717,15 @@ Me.groupView1.SelectingTextColor = System.Drawing.Color.Red
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1162.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1162.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1163.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1163.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1164.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1164.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62827,17 +62827,17 @@ The GroupView Items in the GroupView control can be arranged in the horizontal a
 
 If you want to show the GroupView Item's text in the FlowView mode then set the ShowFlowViewItemText property to 'True'. You can also control the length of the GroupView Item's text in the FlowView mode using the FlowViewItemTextLength property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1165.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1165.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1166.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1166.jpeg)' | markdownify }}
 {:.image }
 
 
 The Orientation property determines the direction of display for the GroupView Items. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1167.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1167.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62847,7 +62847,7 @@ This section describes the image options available for GroupView.
 
 To add images to the GroupView, ImageListcontrol must be added to the form with images. ImageList control containing large or small images can be set using the properties given below.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1168.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1168.jpeg)' | markdownify }}
 {:.image }
  _Note: If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list._
 
@@ -62893,15 +62893,15 @@ Me.groupView1.SmallImageView = True
 
 Me.groupView1.SmallImageList = Me.imageList1
 
-> { ![](Tools-Controls_images/Tools-Controls_img1169.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1169.jpeg)' | markdownify }}
 {:.image }
  _Note : Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1170.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1170.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1171.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1171.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62925,7 +62925,7 @@ Me.groupView1.HighLightImage = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1172.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1172.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62957,7 +62957,7 @@ Gets / sets the image offset when the mouse is moved over the selected GroupView
 HighlightImageOffset</td><td>
 Gets / sets the image offset for the highlighted GroupView Item. </td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1173.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1173.jpeg)' | markdownify }}
 {:.image }
  _Note: HighlightImage property must be set to 'True' in all the cases._
 
@@ -63039,7 +63039,7 @@ Me.groupView1.ImageSpacing = 7
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1174.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1174.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -63063,7 +63063,7 @@ Me.groupView1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1175.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1175.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -63113,7 +63113,7 @@ Me.groupView1.ClipSelectionBounds = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1176.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1176.png)' | markdownify }}
 {:.image }
 
 
@@ -63163,7 +63163,7 @@ Me.groupView1.ShowToolTips = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1177.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1177.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -63243,7 +63243,7 @@ Me.groupViewItem3.Text = "Desktop"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1178.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1178.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -63327,7 +63327,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1179.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1179.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -63585,7 +63585,7 @@ menu.ParentBarItem.Items.Add(deletetab)
 
 ' If the mouse click occurred over a GroupBarItem then get that item's client control and update the menu with client specific menu items.
 
-If Me.grpBar.ContextMenuItem &lt;&gt; -1 Then
+If Me.grpBar.ContextMenuItem <> -1 Then
 
 Dim grpvwctrl As GroupView =  Me.grpBar.GroupBarItems(Me.grpBar.ContextMenuItem).Client as GroupView 
 
@@ -63699,7 +63699,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1180.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1180.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64031,7 +64031,7 @@ You can then add one or more XPTaskBar Items to the boxes using their Items prop
 
 The following screen shot illustrates the XPTaskBar and it's elements.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1181.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1181.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64048,7 +64048,7 @@ Features
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1182.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1182.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64106,7 +64106,7 @@ ToolTips can be provided for XPTaskBar Items.
 
 The various sections of XPTaskBar and their descriptions are given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1183.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1183.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64138,46 +64138,46 @@ In this tutorial, we will create a simple XPTaskBar.
 
 1. Add an XPTaskBar control from the toolbox onto your form and a new instance will be placed on your form. Dock the control to the left of the form. Set the DockPadding.All property to '5' on the XPTaskBar so that there will be some space between the XPTaskBar Box children and the XPTaskBar. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1184.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1184.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1185.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1185.jpeg)' | markdownify }}
 {:.image }
 
 
 2. To add an XPTaskBar Box, right click on the XPTaskBar control and select the Add Task Box verb. This will add an empty XPTaskBar Box instance. You can change it's Header Text property to change the text of the header.
 3. You can also add an XPTaskBar Box using the Add Task Box command in the Property Grid. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1186.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1186.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1187.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1187.jpeg)' | markdownify }}
 {:.image }
 
 
 4. Select the newly added XPTaskBar Box and open it's XPTaskBarItem Collection Editor. There you can add one or more XPTaskBar Items specifying the text, image (using the ImageIndex property), etc. for each item. To distinguish one item from the other, you can specify a unique Tag property for each item.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1188.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1188.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1189.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1189.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1190.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1190.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1191.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1191.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1192.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1192.jpeg)' | markdownify }}
 {:.image }
  _Note: The XPTaskBar Boxes can also host a Panel control within it. During design time, users can simply drag and drop the panel on the box. In code, users can do this  by adding the panel to the Controls collection of XPTaskBarBox. The panel's width will be resized to fit, whereas it's height will be based on the PreferredChildPanelHeight property setting._ 
 
@@ -64416,7 +64416,7 @@ Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox2)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1193.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1193.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64513,11 +64513,11 @@ Me.xpTaskBar1.VerticalLayout = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1194.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1194.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1195.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1195.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64575,7 +64575,7 @@ Me.xpTaskBar1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
 
 The following screen shot illustrates the above settings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1196.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1196.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64627,7 +64627,7 @@ Gets / sets a value indicating whether the header text should be clipped.</td></
 
 The following screen shot illustrates the above settings.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1197.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1197.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64723,7 +64723,7 @@ Me.xpTaskBarBox1.ToggleByButton = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1198.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1198.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64795,7 +64795,7 @@ Me.xpTaskBarBox1.UseAdditionalAnimation = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1199.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1199.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64875,7 +64875,7 @@ Me.xpTaskBarBox1.PreferredChildPanelHeight = 35
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1200.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1200.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64927,7 +64927,7 @@ Me.xpTaskBarBox1.ShowToolTip = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1201.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1201.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64979,7 +64979,7 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.B
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1202.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1202.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65007,7 +65007,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1203.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1203.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65105,7 +65105,7 @@ Me.xpTaskBar1.VerticalPadding = 3
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1204.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1204.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65155,7 +65155,7 @@ The following figure displays the XPTaskBar Box with padding settings.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1205.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1205.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65211,7 +65211,7 @@ Me.xpTaskBarBox1.HeaderImageIndex = 0
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1206.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1206.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65267,7 +65267,7 @@ Me.xpTaskBarBox1.Items(2)ImageIndex = 2
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1207.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1207.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65647,7 +65647,7 @@ Private Sub taskMenuBox_ProvideHeaderBackgroundBrush(sender As Object, args As S
 
 If Not XPThemes.IsThemedOS And Not XPThemes.IsThemeActive And Not Me.xpTaskBar1.ThemesEnabled Then
 
-If args.Bounds.Width &lt;&gt; 0 And args.Bounds.Height &lt;&gt; 0 Then
+If args.Bounds.Width <> 0 And args.Bounds.Height <> 0 Then
 
 ' Blend settings.
 
@@ -65769,7 +65769,7 @@ You can right-click on the XPTaskBar Box in the designer and select the "Bring T
 
 You can also drag one box over the other to change the order during designtime. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1208.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1208.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66038,13 +66038,13 @@ To create a NavigationView control, follow the steps given below.
 
 1. Drag the NavigationView control from the controls toolbox onto your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1209.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1209.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Add Parent Bars and Child Bars to the NavigationView control using the BarCollection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1210.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1210.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66198,7 +66198,7 @@ Me.Controls.Add(navigationView4)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1211.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1211.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66212,7 +66212,7 @@ NavigationView control provides drop-down selection support.
 
 Each folder that is navigated through, is shown in the Address Bar, separated by a Forward Arrow. Clicking on this arrow, will show a drop-down list, displaying all the folders directly below the one you have opened.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1212.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1212.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66250,7 +66250,7 @@ ChildBar2.ImageIndex = 1
 
 The following illustration shows the NavigationView with Bar Images.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1213.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1213.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66260,7 +66260,7 @@ You can trace the previously selected locations by clicking on the Drop-Down but
 
 The following illustration shows the NavigationView displaying Previously Selected Items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1214.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1214.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66274,7 +66274,7 @@ You can add custom buttons to the NavigationView using the CustomButton Collecti
 
 The following illustration shows the CustomButton Collection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1215.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1215.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66320,7 +66320,7 @@ navigationView4.Controls.Add(customButton)
 
 The following illustration shows the NavigationView with Custom Button.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1216.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1216.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66328,7 +66328,7 @@ The following illustration shows the NavigationView with Custom Button.
 
 NavigationView aligns the embedded child controls and images from right to left on setting the RightToLeft property to True.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1217.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1217.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66336,11 +66336,11 @@ NavigationView aligns the embedded child controls and images from right to left 
 
 Visual Styles enhance the appearance of the NavigationView control. NavigationView supports the following visual styles: Office 2007 and Vista.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1218.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1218.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1219.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1219.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66348,7 +66348,7 @@ Edit Mode Support
 
 You can switch to an editable NavigationView path, allowing the user to quickly reach a location, by clicking on the text area of the NavigationView and typing the path.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1220.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1220.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66430,7 +66430,7 @@ The Notification Package provides users with several useful controls which are l
 
 ProgressBars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing. It also lets users know the time remaining to complete a lengthy operation. When an application is performing a lengthy task in the background, users may not be sure if the application is still working. A ProgressBar can be used to provide a visual cue that the application is indeed working and the task is being completed. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1221.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1221.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66490,7 +66490,7 @@ We can create a ProgressBarAdv through designer using the steps given below.
 
 * The ProgressBarAdv control provides full support for the Windows Forms designer. Drag and drop the ProgressBarAdv control from the toolbox onto your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1222.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1222.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66498,7 +66498,7 @@ We can create a ProgressBarAdv through designer using the steps given below.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1223.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1223.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66597,7 +66597,7 @@ Me.ResumeLayout(False)
 
 * Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1224.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1224.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66613,7 +66613,7 @@ This section explains the concepts and features of the ProgressBarAdvcontrol whi
 
 The various sections of ProgressBarAdv and their descriptions are given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1225.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1225.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66681,11 +66681,11 @@ Me.progressBarAdv1.BackgroundFallbackStyle = Syncfusion.Windows.Forms.Tools.Prog
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1226.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1226.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1227.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1227.jpeg)' | markdownify }}
 {:.image }
  _Note: To display the above styles in different colors the BackGradientStartColor and BackGradientEndColor properties can be used._
 
@@ -66723,7 +66723,7 @@ Me.progressBarAdv1.BackSegments = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1228.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1228.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66773,7 +66773,7 @@ Me.progressBarAdv1.BackGradientStartColor = System.Drawing.Color.IndianRed
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1229.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1229.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66809,7 +66809,7 @@ Me.progressBarAdv1.BackMultipleColors = New System.Drawing.Color[] {System.Drawi
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1230.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1230.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66855,7 +66855,7 @@ Me.progressBarAdv1.BackTubeStartColor = System.Drawing.Color.Yellow
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1231.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1231.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66903,7 +66903,7 @@ Me.progressBarAdv1.ForeSegments = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1232.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1232.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66941,7 +66941,7 @@ Me.progressBarAdv1.SegmentWidth = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1233.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1233.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -66995,7 +66995,7 @@ Me.progressBarAdv1.ForeColor = System.Drawing.Color.Turquoise
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1234.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1234.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67041,7 +67041,7 @@ Me.progressBarAdv1.GradientStartColor = System.Drawing.Color.OrangeRed
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1235.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1235.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67089,7 +67089,7 @@ Me.progressBarAdv1.StretchMultGrad = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1236.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1236.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67135,7 +67135,7 @@ Me.progressBarAdv1.TubeStartColor = System.Drawing.Color.Red
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1237.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1237.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67187,7 +67187,7 @@ Me.progressBarAdv1.StretchImage = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1238.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1238.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67233,7 +67233,7 @@ Me.progressBarAdv1.ProgressFallbackStyle = Syncfusion.Windows.Forms.Tools.Progre
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1239.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1239.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67297,7 +67297,7 @@ Me.progressBarAdv1.ForeColor = System.Drawing.Color.Crimson
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1240.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1240.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67343,7 +67343,7 @@ Me.progressBarAdv1.ProgressOrientation = System.Windows.Forms.Orientation.Vertic
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1241.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1241.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67409,7 +67409,7 @@ Me.progressBarAdv1.Value = 100
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1242.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1242.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67445,7 +67445,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Determines the style of the 3D border. It includes the following options.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_'  | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
+Determines the style of the 3D border. It includes the following options.{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_' ' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -67489,7 +67489,7 @@ Me.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1243.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1243.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67559,7 +67559,7 @@ Me.progressBarAdv1.TextVisible = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1244.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1244.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67583,11 +67583,11 @@ Me.progressBarAdv1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1245.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1245.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1246.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1246.jpeg)' | markdownify }}
 {:.image }
  _Note: Refer to the_ Foreground Style Settings _topic for more information on ProgressStyle property._
 
@@ -67716,7 +67716,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 1. Drag and drop a ProgressBarAdv onto your form.
 2. Add a Timer and a Button to the form. By default, the Timer will be disabled.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1247.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1247.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67792,7 +67792,7 @@ End Sub
 
 5. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1248.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1248.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67981,7 +67981,7 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1249.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1249.png)' | markdownify }}
 {:.image }
 
 
@@ -67989,7 +67989,7 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
 
 The SplashControl provides an easy way to use classes that can be used to display splash screens. The SplashControl can be dragged and dropped onto your form from the controls toolbox. The SplashControl is implemented as a component that is not visible at run time. It is visible in the component area of your form where you can select it and set it's properties.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1250.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1250.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68043,7 +68043,7 @@ The SplashControl provides full support for the Windows Forms designer.
 
 1. Drag and drop the SplashControl from the toolbox onto the form. The SplashControl will be created in the components area of the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1251.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1251.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68051,7 +68051,7 @@ The SplashControl provides full support for the Windows Forms designer.
 3. Set the AutoMode property. This property controls how the SplashControl will be invoked. If the AutoMode property is set to 'True', the SplashControl will automatically launch itself during the parent form's load event.
 4. The SplashPanel can also be viewed at design time using the Preview Splash option by clicking the smart tag as shown below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1252.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1252.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68059,7 +68059,7 @@ The SplashControl provides full support for the Windows Forms designer.
 6. If the AutoMode property is set to 'False', the splash screen will have to be invoked explicitly by calling the ShowSplash() method.
 7. Handle the SplashClosed event to do your processing after the splash screen is closed.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1253.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1253.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68137,7 +68137,7 @@ Me.SplashControl1.TimerInterval = 3000
 
 5. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1254.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1254.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68157,7 +68157,7 @@ The following topics are discussed in detail.
 
 The various sections of SplashControl and their descriptions are given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1255.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1255.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68417,7 +68417,7 @@ Me.splashControl1.FormIcon = DirectCast((resources.GetObject("splashControl1.For
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1256.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1256.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68633,7 +68633,7 @@ Me.Controls.Add(Me.SplashPanel1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1257.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1257.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68675,7 +68675,7 @@ Me.SplashControl1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignm
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1258.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1258.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68717,7 +68717,7 @@ Me.splashControl1.SplashImage = CType((resources.GetObject("splashControl1.Splas
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1259.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1259.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69026,7 +69026,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1260.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1260.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69092,7 +69092,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1261.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1261.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69158,7 +69158,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1262.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1262.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69224,7 +69224,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1263.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1263.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69272,13 +69272,13 @@ Me.splashControl1.SplashControlPanel.BackgroundColor = New Syncfusion.Drawing.Br
 
 The SplashPanel is a System.Windows.Forms panel-derived class that allows users to design custom splash screens within the form's designer. The SplashPanel can take multiple child controls that can be used to display information or collect information from the user.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1264.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1264.jpeg)' | markdownify }}
 {:.image }
 
 
 The SplashPanel class is a panel class that can be used beyond the typical splash screen. It can be used to create non-obtrusive message boxes such as in the Microsoft MSN messenger (as of MSN Messenger version 3.0), a message window that informs a user that a new mail message has arrived. These kinds of message boxes are very easy to create and use with the SplashPanel class. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1265.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1265.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69336,7 +69336,7 @@ The SplashPanel control provides full support for the Windows Forms designer.
 
 1. Drag-and-drop the SplashPanel control from the toolbox onto the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1266.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1266.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69345,7 +69345,7 @@ The SplashPanel control provides full support for the Windows Forms designer.
 4. Launch the SplashPanel control by calling the ShowSplash() method.
 5. You can cancel the SplashPanel by calling the HideSplash() method.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1267.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1267.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69625,7 +69625,7 @@ End Sub
 
 8. Run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1268.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1268.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69663,7 +69663,7 @@ Displays the SplashPanel as a modal dialog.</td></tr>
 IsShowing</td><td>
 Indicates whether the splash is currently displayed.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1269.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1269.jpeg)' | markdownify }}
 {:.image }
  _Note: The time interval for which the SplashPanel is displayed can be customized using the Time Interval settings provided in the SplashPanel control._
 
@@ -69939,7 +69939,7 @@ Me.splashPanel1.Text = "Splash Panel"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1270.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1270.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -70085,7 +70085,7 @@ Indicates whether the SplashPanel should not be closed when the mouse is over it
 
 Thisproperty which is available in SplashPanel, when enabled, will close the SplashPanel at run time before the specified time interval ends, when the mouse is moved over it. By default this will be set to 'False'.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1271.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1271.jpeg)' | markdownify }}
 {:.image }
  _Note: The CloseOnClick property can also be used to close the SplashPanel by a single mouse click._
 
@@ -70255,15 +70255,15 @@ Me.splashPanel1.TransparentColor = System.Drawing.Color.White
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1272.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1272.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1273.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1273.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1274.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1274.jpeg)' | markdownify }}
 {:.image }
  _Note: The RefreshRegionFromImage() method can be used to refresh the region from the background image._
 
@@ -70297,7 +70297,7 @@ When the AllowMove property is setto 'True', the user will be allowed to click w
 
 When the AllowResize property is set to 'True', resize handles will be displayed when the user moves the mouse near the border of the SplashPanel.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1275.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1275.jpeg)' | markdownify }}
 {:.image }
  _Note: In the above cases, the splash panel will not be closed, until the host form is closed._
 
@@ -70367,7 +70367,7 @@ Me.splashPanel1.BorderType = Syncfusion.Windows.Forms.Tools.SplashBorderType.Bor
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1276.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1276.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -70405,7 +70405,7 @@ Me.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignmen
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1277.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1277.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -70449,7 +70449,7 @@ Me.toolTip1.SetToolTip(this.splashPanel1, "Splash Panel Tooltip")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1278.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1278.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -71668,7 +71668,7 @@ The StatusBarAdv is an advanced StatusBar control that can display StatusBarPane
 
 Below image shows a StatusBarAdv with controls added to it.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1279.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1279.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -71738,7 +71738,7 @@ To create a StatusBarAdv control through designer,
 
 1.  Drag and drop a StatusBarAdv control from the toolbox onto the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1280.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1280.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -71746,7 +71746,7 @@ To create a StatusBarAdv control through designer,
 3. Drag and drop controls onto the StatusBarAdv control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
 4. Build and run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1281.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1281.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -71892,7 +71892,7 @@ Me.Controls.Add(Me.statusBarAdv1)
 
 6. Run the application. You will see the StatusBarAdv control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1282.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1282.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -71906,7 +71906,7 @@ The following are the topics discussed.
 
 The various sections of StatusBarAdv and their descriptions are given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1283.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1283.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -72034,11 +72034,11 @@ Gets or sets whether to set MetroColor as its Border color.</td></tr>
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1284.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1284.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1285.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1285.png)' | markdownify }}
 {:.image }
 
 
@@ -72078,7 +72078,7 @@ Me.statusBarAdv1.SizingGrip = True
 
 SizingGrip property when set will display a grip at the bottom right of the control as displayed in the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1286.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1286.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -72220,7 +72220,7 @@ Indicates the border sides of the control. The options included are given below.
 BorderStyle</td><td>
 Indicates whether the panel should have a border. The options included are given below.FixedSingle,Fixed3D andNone.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1287.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1287.jpeg)' | markdownify }}
 {:.image }
  _Note: The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'._
 
@@ -72256,11 +72256,11 @@ Me.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1288.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1288.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1289.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1289.jpeg)' | markdownify }}
 {:.image }
  _Note: The border of the StatusBarAdvPanels can also be set to enhance the look and feel of the panels. See Border Settings topic under StatusBarAdvPanel._
 
@@ -72282,7 +72282,7 @@ Indicates the StatusBarAdvPanel controls contained in the StatusBarAdv.</td></tr
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1290.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1290.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -72320,7 +72320,7 @@ Me.statusBarAdv1.Spacing = New System.Drawing.Size(5, 5)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1291.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1291.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -72360,7 +72360,7 @@ Me.statusBarAdv1.CustomLayoutBounds = New System.Drawing.Rectangle(5, 2, 100, 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1292.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1292.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -72398,7 +72398,7 @@ Me.statusBarAdv1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Center
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1293.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1293.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -72466,11 +72466,11 @@ Me.statusBarAdv1.SetHAlign(Me.statusBarAdvPanel1, Syncfusion.Windows.Forms.Tools
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1294.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1294.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1295.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1295.jpeg)' | markdownify }}
 {:.image }
  _Note: The panels can be aligned using the HAlign property of the StatusBarAdvPanel control. See Alignment Settings topic under StatusBarAdvPanel._
 
@@ -72516,7 +72516,7 @@ Me.statusBarAdv1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1296.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1296.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -72543,7 +72543,7 @@ Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1297.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1297.png)' | markdownify }}
 {:.image }
 
 
@@ -72589,7 +72589,7 @@ Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1298.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1298.png)' | markdownify }}
 {:.image }
 
 
@@ -73087,7 +73087,7 @@ End Sub
 
 The StatusBarAdvPanel is a panel-derived class that can display StatusBar information such as the time and key state with several appearance enhancements, both within a StatusBarAdv control and also on a form. Customizing the look and feel can be done by setting the desired properties through the property window and usually there is no need to write any code.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1299.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1299.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73157,7 +73157,7 @@ To create a StatusBarAdvPanel control through designer,
 
 * Drag-and-drop a StatusBarAdvPanel control from the toolbox onto the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1300.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1300.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73166,7 +73166,7 @@ To create a StatusBarAdvPanel control through designer,
 * You can set the StatusBarAdvPanel to have a custom border color by setting the value of the BorderColor property.
 * Build and run the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1301.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1301.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73260,7 +73260,7 @@ Me.statusBarAdvPanel1.Size = New System.Drawing.Size(216, 48)
 
 * Run the application. You will see the StatusBarAdvPanel with the date text displayed at the bottom right of the application.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1302.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1302.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73290,7 +73290,7 @@ Gets / sets the background gradient and other styles.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style.{{ '_Solid,_' | markdownify }}{{ '_Pattern and_' | markdownify }}{{ '_Gradient._' | markdownify }}</td></tr>
+Specifies the brush style.{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Pattern and_'' | markdownify }}}{{{ ''_Gradient._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -73334,7 +73334,7 @@ Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1303.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1303.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73372,7 +73372,7 @@ Me.Icon = DirectCast((resources.GetObject("$this.Icon")), System.Drawing.Icon)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1304.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1304.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73398,7 +73398,7 @@ Indicates the type of the panel.</td></tr>
 
 The PanelType property can be used to display predefined text representing key states, date / time or culture information.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1305.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1305.jpeg)' | markdownify }}
 {:.image }
  _Note: Users can also specify their own text to be displayed in the control by setting the PanelType property to 'Custom'. The text to be displayed is set using the Text property of the StatusBarAdvPanel._
 
@@ -73418,7 +73418,7 @@ Me.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPan
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1306.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1306.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73502,7 +73502,7 @@ Indicates the border sides of the control. The options included are given below.
 BorderStyle</td><td>
 Indicates whether the panel should have a border. The options included are given below.FixedSingle,Fixed3D andNone.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1307.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1307.jpeg)' | markdownify }}
 {:.image }
  _Note: The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'._
 
@@ -73540,7 +73540,7 @@ Me.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 User can also set the other options available to the properties and monitor the difference in appearance.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1308.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1308.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73582,7 +73582,7 @@ Me.statusBarAdvPanel1.Text = "StatusBarAdvPanel"
 
 The method associated with the above property is given below.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1309.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1309.jpeg)' | markdownify }}
 {:.image }
  _Note: The GetText() method returns text according to the key state._
 
@@ -73646,7 +73646,7 @@ Indicates the animation speed of the marquee style.</td></tr>
 AnimationStyle</td><td>
 Specifies the style of animation for the marquee style. The options included are as follows.Scroll,Slide andAlternate.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1310.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1310.jpeg)' | markdownify }}
 {:.image }
  _Note: The IsMarquee property must be set to 'True' for the animation settings to be visible._
 
@@ -73786,7 +73786,7 @@ Me.statusBarAdvPanel1.Alignment = System.Windows.Forms.HorizontalAlignment.Left
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1311.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1311.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73824,7 +73824,7 @@ Me.statusBarAdvPanel1.HAlign = Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Left
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1312.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1312.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73864,7 +73864,7 @@ Me.statusBarAdvPanel1.ToolTip = "Tooltip for StatusBarAdvPanel"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1313.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1313.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -75360,7 +75360,7 @@ Follow the steps given below to add the Clock control to an application through 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1314.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1314.png)' | markdownify }}
 {:.image }
 
 
@@ -75455,7 +75455,7 @@ Me.clock1.StartGradientBackColor
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1315.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1315.png)' | markdownify }}
 {:.image }
 
 
@@ -75493,7 +75493,7 @@ Me.clock1.MinuteThickness = 4
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1316.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1316.png)' | markdownify }}
 {:.image }
 
 
@@ -75527,7 +75527,7 @@ Me.clock1.ShowSecondHand = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1317.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1317.png)' | markdownify }}
 {:.image }
 
 
@@ -75549,7 +75549,7 @@ Me.clock1.IsTransparent = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1318.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1318.png)' | markdownify }}
 {:.image }
 
 
@@ -75765,7 +75765,7 @@ End If
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1319.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1319.png)' | markdownify }}
 {:.image }
 
 
@@ -75818,7 +75818,7 @@ Rectangular frame
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1320.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1320.png)' | markdownify }}
 {:.image }
 
 
@@ -75845,7 +75845,7 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1321.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1321.png)' | markdownify }}
 {:.image }
 
 
@@ -75868,7 +75868,7 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1322.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1322.png)' | markdownify }}
 {:.image }
 
 
@@ -75899,7 +75899,7 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1323.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1323.png)' | markdownify }}
 {:.image }
 
 
@@ -75920,7 +75920,7 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockShapes.CircularFram
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1324.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1324.png)' | markdownify }}
 {:.image }
 
 
@@ -75943,7 +75943,7 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1325.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1325.png)' | markdownify }}
 {:.image }
 
 
@@ -75964,7 +75964,7 @@ Square shape
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square
 
-{ ![](Tools-Controls_images/Tools-Controls_img1326.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1326.png)' | markdownify }}
 {:.image }
 
 
@@ -75985,7 +75985,7 @@ RoundedSquare shape
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare
 
-{ ![](Tools-Controls_images/Tools-Controls_img1327.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1327.png)' | markdownify }}
 {:.image }
 
 
@@ -76009,7 +76009,7 @@ The foreground color for the DigitalClock can be changed using the ForeColor pro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1328.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1328.png)' | markdownify }}
 {:.image }
 
 
@@ -76037,7 +76037,7 @@ The background color for the DigitalClock can be changed using the BackgroundCol
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1329.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1329.png)' | markdownify }}
 {:.image }
 
 
@@ -76071,7 +76071,7 @@ The border color for the control will be reflected only when the control is assi
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1330.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1330.png)' | markdownify }}
 {:.image }
 
 
@@ -76099,11 +76099,11 @@ To display or hide the week days and current date in the DigitalClock, the Displ
 
 The following images illustrate the DigitalClock with and without the week days and dates:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1331.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1331.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1332.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1332.png)' | markdownify }}
 {:.image }
 
 
@@ -76129,11 +76129,11 @@ To display or hide the hour designator (AM and PM) in the DigitalClock, the Show
 
 The following images illustrate the DigitalClock with and without the hour designator:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1333.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1333.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1334.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1334.png)' | markdownify }}
 {:.image }
 
 
@@ -76169,7 +76169,7 @@ To enable the custom time, the clock control should be enabled with the ShowCust
 
 The following image illustrates the DigitalClock with a custom date and time.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1335.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1335.png)' | markdownify }}
 {:.image }
 
 
@@ -76224,7 +76224,7 @@ End Class
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1336.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1336.png)' | markdownify }}
 {:.image }
 
 
@@ -76247,7 +76247,7 @@ RibbonControlAdv
 
 The TabItems in the RibbonPanel can auto align the controls when width of the RibbonControl is reduced.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1337.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1337.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76257,27 +76257,27 @@ The TabItems in the RibbonPanel can auto align the controls when width of the Ri
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1338.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1338.jpeg)' | markdownify }}
 {:.image }
 
 
 * GalleryItem - Essential Tools RibbonControlAdv provides options to add a collection of items and store them into a gallery. The GalleryItem comes with a standard and a Compact scrollbars type. It supports all the three color schemes (Blue, Silver and Black).
 * Option to merge RibbonPanel of child form with the RibbonPanel in parent form RibbonControlAdv. See Ribbon Merging.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1339.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1339.jpeg)' | markdownify }}
 {:.image }
 
 
 * Super accelerator support for Office Menu button. This is discussed in Customization topic.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1340.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1340.jpeg)' | markdownify }}
 {:.image }
 
 
 * Multiline text support for all Text and ToolTip properties.
 * Support to display the gallery items one row at a time when it was invoked by the collapsed ToolStripEx.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1341.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1341.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76311,7 +76311,7 @@ It can be docked to the bottom of the Form. It can hold controls like TrackBarEx
 
 Custom colors can be applied to StatusStripEx. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1342.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1342.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76323,7 +76323,7 @@ Custom colors can be applied to ScrollerFrame.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1343.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1343.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76356,7 +76356,7 @@ Quick Access Toolbar
 
 Office2007 form look and feel for QAT dialog.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1344.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1344.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76364,7 +76364,7 @@ Office2007 form look and feel for QAT dialog.
 
 Office2007 Form which does not have any dependency in RibbonControlAdv is now available in Essential suite. It supports all three color schemes, help button, Right To left feature everything similar to the normal form with the Office2007 look and feel.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1345.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1345.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76414,7 +76414,7 @@ Partial Public Class Form1 Inherits Office2007Form
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1346.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1346.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76422,7 +76422,7 @@ Partial Public Class Form1 Inherits Office2007Form
 
 Office2007 Form supports all the three office color schemes which can be edited through ColorSchemes property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1347.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1347.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76446,7 +76446,7 @@ Me.ColorScheme = Office2007Theme.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1348.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1348.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76470,7 +76470,7 @@ Me.UseOffice2007SchemeBackColor = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1349.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1349.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76478,7 +76478,7 @@ Vista Aero Theme
 
 Vista Aero theme support is available for Office Form when used in Vista machine.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1350.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1350.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76528,7 +76528,7 @@ Me.CaptionFont = New System.Drawing.Font("Arial", 12.25F, System.Drawing.FontSty
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1351.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1351.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76592,7 +76592,7 @@ public partial class Form1 : Office2010Form
 
 Partial Public Class Form1 Inherits Office2010Form
 
-{ ![C:/Users/paulanderson/Pictures/fcc.png](Tools-Controls_images/Tools-Controls_img1352.png) | markdownify }
+{{ '![C:/Users/paulanderson/Pictures/fcc.png](Tools-Controls_images/Tools-Controls_img1352.png)' | markdownify }}
 {:.image }
 
 
@@ -76750,7 +76750,7 @@ Me.CaptionImages.Add(captionImage1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1353.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1353.png)' | markdownify }}
 {:.image }
 
 
@@ -76913,7 +76913,7 @@ RibbonControlAdv added to the Office2007 now comes with a couple of features and
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1354.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1354.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76921,7 +76921,7 @@ RibbonControlAdv added to the Office2007 now comes with a couple of features and
 
 This section gives you an overview of the components of a RibbonControlAdv.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1355.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1355.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76947,7 +76947,7 @@ Creating Ribbon Form
 
 1. Drag and drop the RibbonControlAdv on to the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1356.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1356.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -76977,7 +76977,7 @@ Inherits RibbonForm
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1357.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1357.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77065,11 +77065,11 @@ Me.ribbonControlAdv1.EnableHighContrastTheme = true
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Capture.PNG](Tools-Controls_images/Tools-Controls_img1358.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Capture.PNG](Tools-Controls_images/Tools-Controls_img1358.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Capture 1.PNG](Tools-Controls_images/Tools-Controls_img1359.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Capture 1.PNG](Tools-Controls_images/Tools-Controls_img1359.png)' | markdownify }}
 {:.image }
 
 
@@ -77077,7 +77077,7 @@ Vista Aero Theme
 
 Vista Aero theme support is available for Ribbon Form when used in Vista machine.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1360.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1360.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77115,7 +77115,7 @@ Me.Borders = New System.Windows.Forms.Padding(10)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1361.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1361.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77140,7 +77140,7 @@ Me.TopLeftRadius = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1362.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1362.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77152,7 +77152,7 @@ Office Menu Button
 
 The RibbonControlAdv has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer without a single piece of code.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1363.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1363.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77170,7 +77170,7 @@ The panels are:
 * Main Panel
 * System Panel
 
-{ ![](Tools-Controls_images/Tools-Controls_img1364.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1364.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77192,7 +77192,7 @@ Lets you open Items Collection Editor using which you can add items to the panel
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1365.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1365.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77360,7 +77360,7 @@ Me.ribbonControlAdv1.MenuButtonDropDown = dropDown
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1366.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1366.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77384,7 +77384,7 @@ Me.ribbonControlAdv1.MenuButtonDropDown = Me.contextMenuStripEx1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1367.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1367.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77491,7 +77491,7 @@ The ToolStrip Items which can be added to the Menu Panels, using the Panel's Ite
 * PanelItem - Adds panel items.
 * Gallery – Add Gallery item.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1368.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1368.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77501,7 +77501,7 @@ OfficeButton Properties
 
 This section discusses the properties of Office button toolstrip items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1369.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1369.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77533,7 +77533,7 @@ Represents image and text relation.</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Sets the display style of the item. The options are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and the text in the office button.</td></tr>
+Sets the display style of the item. The options are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and the text in the office button.</td></tr>
 <tr>
 <td>
 Font</td><td>
@@ -77565,7 +77565,7 @@ Sets the visibility of the toolstrip item.</td></tr>
 <tr>
 <td>
 AutoTooltip</td><td>
-Lets you to specify whether the tooltip text is taken from the Text property or the ToolTipText property. {{ '_True_' | markdownify }} - Tooltip text is taken from the Text property,{{ '_False_'  | markdownify }}- Tooltip text is taken from the ToolTipText property.OfficeMenu.ShowItemToolTips should be true for this setting to be effective.</td></tr>
+Lets you to specify whether the tooltip text is taken from the Text property or the ToolTipText property. {{{ ''_True_'' | markdownify }}} - Tooltip text is taken from the Text property,{{{ ''_False_' ' | markdownify }}}- Tooltip text is taken from the ToolTipText property.OfficeMenu.ShowItemToolTips should be true for this setting to be effective.</td></tr>
 <tr>
 <td>
 ToolTipText</td><td>
@@ -77633,7 +77633,7 @@ Shows / hides the dropdown arrow.</td></tr>
 
 In OfficeSplitButton, the image and the text together will look split from the arrow as shown in the image below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1370.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1370.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77667,7 +77667,7 @@ Shows / hides the dropdown arrow.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1371.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1371.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77675,11 +77675,11 @@ Tooltips
 
 OfficeMenuButton can show a SuperToolTip at run time. It can be added using RibbonControlAdv.MenuButtonToolTip on SuperToolTip1 property through Designer or by calling the SetMenuButtonToolTip method of the SuperToolTip control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1372.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1372.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1373.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1373.jpeg)' | markdownify }}
 {:.image }
  _Note: The above extended property will be available only when your application has a SuperToolTip control._
 
@@ -77699,7 +77699,7 @@ Me.superToolTip1.SetMenuButtonToolTip(Me.ribbonControlAdv1, toolTipInfo1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1374.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1374.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77741,7 +77741,7 @@ Me.toolStripButton1.ToolTipText = "Open"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1375.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1375.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77823,7 +77823,7 @@ Me.ribbonControlAdv1.MenuButtonWidth = 50
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1376.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1376.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77849,7 +77849,7 @@ Me.superAccelerator1.SetMenuButtonAccelerator(Me.ribbonControlAdv1, "F")
 
 At run time when you press Alt key, the menu button will display "F" key as shown in the image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1377.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1377.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77865,13 +77865,13 @@ Through Designer
 
 To add the SuperAccelerator key to the RibbonControlAdv, the control must be wired with a SuperAccelerator component as shown in the following image:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1378.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1378.png)' | markdownify }}
 {:.image }
 
 
 The SuperAccelerator key value for a RibbonControlAdv child element can be assigned from the form designer as shown in the following image:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1379.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1379.png)' | markdownify }}
 {:.image }
 
 
@@ -77909,7 +77909,7 @@ this.superAccelerator1.SetAccelerator(this.Home, "A");
 
 The following image shows SuperAccelerator key visibility in the RibbonControlAdv:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1380.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1380.png)' | markdownify }}
 {:.image }
 
 
@@ -77919,13 +77919,13 @@ Like in RibbonControlAdv, SuperAccelerators has been implemented in BackStageVie
 
 Through Designer
 
-{ ![](Tools-Controls_images/Tools-Controls_img1381.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1381.png)' | markdownify }}
 {:.image }
 
 
 The following image demonstrates how SuperAccelerator key values can be assigned to BackStage child elements:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1382.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1382.png)' | markdownify }}
 {:.image }
 
 
@@ -77959,13 +77959,13 @@ SuperAccelerator in BackStageView
 
 The following image visualizes the SuperAccelerarator in BackStage:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1383.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1383.png)' | markdownify }}
 {:.image }
 
 
 The following image visualizes the SuperAccelerator in BackStageTab child elements:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1384.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1384.png)' | markdownify }}
 {:.image }
 
 
@@ -78026,7 +78026,7 @@ Me.backStageSeparator1.Text = "backStageSeparator1"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1385.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1385.png)' | markdownify }}
 {:.image }
 
 
@@ -78034,7 +78034,7 @@ ToolStripTabItem
 
 RibbonControlAdv lets you to create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1386.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1386.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78108,15 +78108,15 @@ Text for the ToolStripTabItem.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Alignment of the text in a ToolStripTabItem. The different content alignments are,{{ '_BottomCenter_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at center.{{ '_BottomLeft_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at left.{{ '_BottomRight_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at Right.{{ '_MiddleCenter_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Center. (Default){{ '_MiddleLeft_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Left.{{ '_MiddleRight_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Right.{{ '_TopCenter_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Center.{{ '_TopLeft_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Left.{{ '_TopRight_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Right.</td></tr>
+Alignment of the text in a ToolStripTabItem. The different content alignments are,{{{ ''_BottomCenter_'' | markdownify }}} - Vertically aligned at bottom, horizontally aligned at center.{{{ ''_BottomLeft_'' | markdownify }}} - Vertically aligned at bottom, horizontally aligned at left.{{{ ''_BottomRight_'' | markdownify }}} - Vertically aligned at bottom, horizontally aligned at Right.{{{ ''_MiddleCenter_'' | markdownify }}} - Vertically aligned at Middle, horizontally aligned at Center. (Default){{{ ''_MiddleLeft_'' | markdownify }}} - Vertically aligned at Middle, horizontally aligned at Left.{{{ ''_MiddleRight_'' | markdownify }}} - Vertically aligned at Middle, horizontally aligned at Right.{{{ ''_TopCenter_'' | markdownify }}} - Vertically aligned at Top, horizontally aligned at Center.{{{ ''_TopLeft_'' | markdownify }}} - Vertically aligned at Top, horizontally aligned at Left.{{{ ''_TopRight_'' | markdownify }}} - Vertically aligned at Top, horizontally aligned at Right.</td></tr>
 <tr>
 <td>
 TextDirection</td><td>
-Direction of drawing the text. {{ '_Horizontal_' | markdownify }} - specifies horizontal text orientation; (Default){{ '_Inherit_' | markdownify }} - specifies that the text direction is inherited from the parent control; {{ '_Vertical270_' | markdownify }} - specifies that the text is rotated 270 degrees; {{ '_Vertical90_' | markdownify }} - specifies that the text is rotated 90 degrees.</td></tr>
+Direction of drawing the text. {{{ ''_Horizontal_'' | markdownify }}} - specifies horizontal text orientation; (Default){{{ ''_Inherit_'' | markdownify }}} - specifies that the text direction is inherited from the parent control; {{{ ''_Vertical270_'' | markdownify }}} - specifies that the text is rotated 270 degrees; {{{ ''_Vertical90_'' | markdownify }}} - specifies that the text is rotated 90 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Relative location of the image to the text in the ToolStripTabItem. See Image Settings.The various options available are,{{ '_Overlay,_'  | markdownify }}{{ '_ImageAboveText, (Default)_' | markdownify }}{{ '_TextAboveImage,_'  | markdownify }}{{ '_ImageBeforeText and_'  | markdownify }}{{ '_TextBeforeImage._' | markdownify }}</td></tr>
+Relative location of the image to the text in the ToolStripTabItem. See Image Settings.The various options available are,{{{ ''_Overlay,_' ' | markdownify }}}{{{ ''_ImageAboveText, (Default)_'' | markdownify }}}{{{ ''_TextAboveImage,_' ' | markdownify }}}{{{ ''_ImageBeforeText and_' ' | markdownify }}}{{{ ''_TextBeforeImage._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
@@ -78196,7 +78196,7 @@ Me.toolStripTabItem1.ForeColor = System.Drawing.Color.SteelBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1387.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1387.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78270,11 +78270,11 @@ Me.toolStripTabItem1.ImageTransparentColor = System.Drawing.Color.FloralWhite
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1388.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1388.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1389.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1389.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78310,7 +78310,7 @@ Me.toolStripTabItem2.Padding = New System.Windows.Forms.Padding(4)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1390.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1390.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78366,7 +78366,7 @@ Ribbon Panel
 
 A ribbon panel is automatically added when you add a ToolStripTabItem. ToolStripEx can be added to the Ribbon panel using its smart tag.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1391.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1391.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78394,7 +78394,7 @@ Me.toolStripTabItem2.Panel.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.To
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1392.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1392.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78424,15 +78424,15 @@ The following code sample illustrates how to set the DarkGray theme for the Offi
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1393.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1393.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1394.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1394.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1395.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1395.png)' | markdownify }}
 {:.image }
 
 
@@ -78474,7 +78474,7 @@ Me.ribbonControlAdv1. RibbonTouchModeEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1396.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1396.png)' | markdownify }}
 {:.image }
 
 
@@ -78558,7 +78558,7 @@ Sets the border style for the ToolStripEx. The options are,None,StaticEdge andEt
 LauncherStyle</td><td>
 Sets the style of the Launcher button. The options are,Office2007 andOffice12.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1397.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1397.jpeg)' | markdownify }}
 {:.image }
  _Note: These caption and style settings can be overridden by the individual ToolStripEx's_ caption _and_ style settings.
 
@@ -78580,11 +78580,11 @@ Description</td></tr>
 <tr>
 <td>
 SetShortcut</td><td>
-Sets shortcut key. The parameters are,{{ '_Component_' | markdownify }} - Component of the RibbonForm.{{ '_Value_' | markdownify }} - Represents the shortcut key for the component specified.</td></tr>
+Sets shortcut key. The parameters are,{{{ ''_Component_'' | markdownify }}} - Component of the RibbonForm.{{{ ''_Value_'' | markdownify }}} - Represents the shortcut key for the component specified.</td></tr>
 <tr>
 <td>
 GetShortcut</td><td>
-Gets shortcut key. The parameter is,{{ '_Component_' | markdownify }} - Component of the RibbonForm.</td></tr>
+Gets shortcut key. The parameter is,{{{ ''_Component_'' | markdownify }}} - Component of the RibbonForm.</td></tr>
 </table>
 
 
@@ -78624,15 +78624,15 @@ The ToolStrip family of controls provides common interfaces for producing user i
 
 Using the smart tag of the Ribbon panel or using "Add ToolStrip" verb in the property grid, we can add ToolStripEx controls. ToolStrip items can be added to this ToolStripEx easily.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1398.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1398.jpeg)' | markdownify }}
 {:.image }
  _Note: It is also possible to add ToolStripEx directly from the toolbox as it is also an individual control._
 
-{ ![](Tools-Controls_images/Tools-Controls_img1399.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1399.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1400.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1400.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78640,17 +78640,17 @@ Adding Controls to ToolStripEx
 
 To add controls to the ToolStripEx, click the icon in it, as in the image below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1401.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1401.jpeg)' | markdownify }}
 {:.image }
 
 
 You can also add the items through Items Collection Editor using the Edit Items verb in the properties grid or in the context menu of the control at design time or using Items Property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1402.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1402.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1403.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1403.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78658,15 +78658,15 @@ Adding Standard Items
 
 ToolStripEx comes with standard toolstrip items that can be added to the control through "Insert Standard Items" option in the smart tag. You can even add the items through context menu at design time.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1404.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1404.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1405.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1405.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1406.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1406.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78774,7 +78774,7 @@ Me.toolStripTabItem1.Panel.Controls.Add(paraToolStrip)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1407.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1407.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78788,7 +78788,7 @@ ToolStripPanelItem provides support for aligning the controls in multiple lines.
 
 Using the RowCount property of ToolStripPanelItem, controls can be arranged in any number of rows inside a ToolStripPanelItem.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1408.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1408.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78796,7 +78796,7 @@ Adding Controls to Panel Item
 
 Accessing ToolStripPanelItem.Items property, Items Collection Editor dialog pops-up. The item can be added and customized using this dialog.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1409.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1409.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78836,7 +78836,7 @@ Me.toolStripPanelItem1.RowCount = 3
 
 A complex arrangement of controls like in the below image, can be achieved using the ToolStripPanelItem.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1410.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1410.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78888,7 +78888,7 @@ Me.toolStripPanelItem12.ForeColor = System.Drawing.Color.Crimson
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1411.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1411.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78940,7 +78940,7 @@ Me.toolStripPanelItem1.ToolTipText = "New tooltip"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1412.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1412.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -78960,7 +78960,7 @@ Sets the alignment of the Panel item. The options are,Left andRight.</td></tr>
 <tr>
 <td>
 LayoutStyle</td><td>
-Sets the layout style for the items. The options are,{{ '_Flow_' | markdownify }} - Items flow horizontally or vertically as necessary.{{ '_HorizontalStackWithOverflow_' | markdownify }} - Items are laid out horizontally and overflow as necessary.{{ '_StackWithOverFlow_' | markdownify }} - Items are laid out automatically.{{ '_Table_' | markdownify }} - Items are laid out flush left.{{ '_VerticalStackWithOverflow_' | markdownify }} - Items are laid out vertically and overflow as necessary.</td></tr>
+Sets the layout style for the items. The options are,{{{ ''_Flow_'' | markdownify }}} - Items flow horizontally or vertically as necessary.{{{ ''_HorizontalStackWithOverflow_'' | markdownify }}} - Items are laid out horizontally and overflow as necessary.{{{ ''_StackWithOverFlow_'' | markdownify }}} - Items are laid out automatically.{{{ ''_Table_'' | markdownify }}} - Items are laid out flush left.{{{ ''_VerticalStackWithOverflow_'' | markdownify }}} - Items are laid out vertically and overflow as necessary.</td></tr>
 </table>
 Border Settings
 
@@ -78998,7 +78998,7 @@ Gallery
 
 Essential Tools RibbonControlAdv provides options to add a collection of items and store them into a gallery. A gallery can be added to a ToolStripTabItem using Items Collection Editor. Select the Gallery item in the dropdown and add it to the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1413.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1413.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79112,11 +79112,11 @@ Sets the scroller type for the Gallery. The types available are,StandardType and
 
 The below image displays a gallery item display with both types of ScrollerType and with Caption text, BackColor, ItemDisplayStyle properties set.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1414.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1414.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1415.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1415.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79324,7 +79324,7 @@ Me.toolStripGallery1.ToolTipText = "New ToolStrip text"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1416.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1416.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79438,7 +79438,7 @@ ToolStripSplitButtonEx can be added to a ToolStripEx directly or through a panel
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1417.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1417.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79478,7 +79478,7 @@ ComboBoxEx
 
 ToolStripComboBoxEx can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1418.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1418.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79518,7 +79518,7 @@ DropDown Features at run time
 
 The ComboBoxEx item by default comes with Office2007 look and feel. The items can be added to the dropdown popup using Items property similar to Windows ComboBox control. We can adjust the height of the dropdown at run time, by just moving the adjustable bar at the bottom of the popup. Automatic scrollbars will appear if all the dropdown items are not visible.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1419.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1419.jpeg)' | markdownify }}
 {:.image }
  _Note: We can set banner text for the ComboBoxEx control. Refer_ BannerTextProvider Component _topic for more details._
 
@@ -79526,7 +79526,7 @@ Button
 
 ToolStripButton can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1420.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1420.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79560,11 +79560,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft,TopCent
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -79604,7 +79604,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -79674,7 +79674,7 @@ Label
 
 ToolStripLabel can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1421.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1421.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79708,11 +79708,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -79774,7 +79774,7 @@ Sets the color of the link that is visited.</td></tr>
 <tr>
 <td>
 LinkBehavior</td><td>
-Specifies the underlining behavior of the link. The options are,{{ '_SystemDefault_' | markdownify }} - Based on the system settings for the links,{{ '_AlwaysUnderline_' | markdownify }} - Underlines the link always,{{ '_HoverUnderline_' | markdownify }} - Underlines the link when hovering over it and{{ '_NeverUnderline_' | markdownify }} - Never underlines the links.</td></tr>
+Specifies the underlining behavior of the link. The options are,{{{ ''_SystemDefault_'' | markdownify }}} - Based on the system settings for the links,{{{ ''_AlwaysUnderline_'' | markdownify }}} - Underlines the link always,{{{ ''_HoverUnderline_'' | markdownify }}} - Underlines the link when hovering over it and{{{ ''_NeverUnderline_'' | markdownify }}} - Never underlines the links.</td></tr>
 </table>
 
 
@@ -79802,7 +79802,7 @@ Me.toolStripLabel26.LinkColor = Color.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1422.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1422.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79818,7 +79818,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -79878,7 +79878,7 @@ Split Button
 
 ToolStripSplitButton can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1423.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1423.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79940,11 +79940,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -79984,7 +79984,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -80064,7 +80064,7 @@ DropDownButton
 
 ToolStripDropDownButton can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1424.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1424.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80098,11 +80098,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td colspan = "2">
-Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td colspan = "2">
 TextImageRelation</td><td colspan = "2">
-Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -80142,7 +80142,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -80222,7 +80222,7 @@ ComboBox
 
 ToolStripComboBox can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1425.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1425.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80368,13 +80368,13 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{{ ''_Suggest_'' | markdownify }}} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{{ ''_Append_'' | markdownify }}} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{{ ''_SuggestAppend_'' | markdownify }}} - Displays the drop down, also appends the highlighted string.</td></tr>
 <tr>
 <td>
 ShortCut on Form1</td><td>
 Specifies the Keyboard shortcut to be used at run time to access this combobox.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1426.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1426.jpeg)' | markdownify }}
 {:.image }
  _Note: We can set banner text for the ComboBox control. Refer_ BannerTextProvider Component _topic for more details._
 
@@ -80382,7 +80382,7 @@ TextBox
 
 ToolStripTextBox item can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1427.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1427.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80546,9 +80546,9 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td colspan = "2">
-Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{{ ''_Suggest_'' | markdownify }}} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{{ ''_Append_'' | markdownify }}} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{{ ''_SuggestAppend_'' | markdownify }}} - Displays the drop down, also appends the highlighted string.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1428.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1428.jpeg)' | markdownify }}
 {:.image }
  _Note: We can set banner text for the TextBox control. Refer_ BannerTextProvider Component _topic for more details._
 
@@ -80556,7 +80556,7 @@ ProgressBar
 
 ToolStripProgressBar item can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1429.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1429.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80682,7 +80682,7 @@ CheckBox
 
 ToolStripCheckBox can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1430.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1430.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80788,7 +80788,7 @@ Radio Button
 
 ToolStripRadioButton can be added to a ToolStripEx directly or through a panel. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1431.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1431.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80922,7 +80922,7 @@ Me.toolStripEx1.BorderStyle = ToolStripBorderStyle.Etched
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1432.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1432.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80968,7 +80968,7 @@ Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1433.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1433.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81014,7 +81014,7 @@ Me.toolStripEx1.GripMargin = new System.Windows.Forms.Padding(5)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1434.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1434.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81052,7 +81052,7 @@ When set to true, Office12Mode will be applied to the control.When set to false,
 RenderMode</td><td>
 Specifies the painting style of the ToolStripEx. Options are,System,Professional andManagerRenderMode.(Default)</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1435.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1435.jpeg)' | markdownify }}
 {:.image }
  _Note: These properties can be easily set through Smart tag of the ToolStripEx. See SmartTag Options in DesignTime Features._
 
@@ -81076,7 +81076,7 @@ Me.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRen
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1436.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1436.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81096,7 +81096,7 @@ Description</td></tr>
 OfficeColorScheme</td><td>
 Sets the office color schemes for the control. Blue, Black and Silver schemes can be applied. </td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1437.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1437.jpeg)' | markdownify }}
 {:.image }
  _Note: This settings will overwrite the Panel.OfficeColorScheme property._
 
@@ -81116,7 +81116,7 @@ Me.toolStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.C
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1438.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1438.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81222,9 +81222,9 @@ this.toolStripEx2.ShowItemToolTips = true;
 
 Me.toolStripEx2.ShowItemToolTips = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img1439.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1439.jpeg)' | markdownify }}
 {:.image }
- _Note: ToolTip text for the ToolStrip items can be specified using the respective &lt;Control&gt;.TooltipText properties. Ex, toolStripGallery1.ToolTipText property sets the tooltip for gallery item._ 
+ _Note: ToolTip text for the ToolStrip items can be specified using the respective <Control>.TooltipText properties. Ex, toolStripGallery1.ToolTipText property sets the tooltip for gallery item._ 
 
 See Also
 
@@ -81236,7 +81236,7 @@ Smart Tag
 
 Smart Tag of the ToolStripEx opens the Task Windows which lets you to set some important properties easily.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1440.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1440.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81252,7 +81252,7 @@ Context Menu
 
 The context menu on a toolstrip item provides advanced options which minimizes your time in customizing the ToolStrip container.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1441.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1441.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81262,14 +81262,14 @@ The context menu on a toolstrip item provides advanced options which minimizes y
 * DisplayStyle - Specifies the display style, whether None, Image, Text or ImageAndText.
 * ConvertTo - Provides options to convert the select item to another item.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1442.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1442.jpeg)' | markdownify }}
 {:.image }
 
 
 * Insert - Lets you to insert ToolStripItems.
 * Select - Facilitates you to select a particular control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1443.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1443.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81297,7 +81297,7 @@ Me.toolStripEx1.Text = "Standard Items"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1444.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1444.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81367,7 +81367,7 @@ Me.ribbonControlAdv1.CaptionMinHeight = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1445.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1445.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81397,7 +81397,7 @@ Me.toolStripEx1.GroupedButtons = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1446.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1446.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81405,7 +81405,7 @@ Collapsed State Settings
 
 When the ToolStripEx is collapsed at run time, it will collapse all the items and display a dropdown button like the image given below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1447.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1447.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81453,7 +81453,7 @@ Me.toolStripEx1.CollapsedDropDownButtonText = "Clipboard Items"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1448.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1448.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81493,7 +81493,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1449.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1449.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81525,19 +81525,19 @@ Items / controls can be added to the QuickAccessToolbar by clicking on the Edit 
 
 The dialog comes with Office2007 look and feel.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1450.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1450.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1451.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1451.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1452.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1452.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer._
 
-> { ![](Tools-Controls_images/Tools-Controls_img1453.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1453.jpeg)' | markdownify }}
 {:.image }
  _Note: Ribbon provides option to edit the items at run time also. See_ RunTime Customization _for more details._
 
@@ -81633,11 +81633,11 @@ this.ribbonControlAdv1.SetUseInCustomQuickAccessDialog(this.toolStripTabItem1, f
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1454.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1454.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1455.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1455.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81645,7 +81645,7 @@ Localization support for labels in the QuickAccess Toolbar
 
 In the Quick Access Toolbar, the labels present in a customized Quick Access Toolbar dialog box can be localized to a user-defined language. These labels can be localized by using the appropriate localizer keywords. In the below code snippets the return value of the switch case is the localized text for the labels.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1456.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1456.jpeg)' | markdownify }}
 {:.image }
 _Note: The following changes must be done within a localizer class used for the application which is inherited from the IlocalizationProvider._
 
@@ -81703,7 +81703,7 @@ By default Quick panel is placed at the top of the control. It can also be place
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1457.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1457.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81729,7 +81729,7 @@ RunTime
 
 You can also align the QAT, above or below the ribbon using the options provided at run time.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1458.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1458.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81793,7 +81793,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1459.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1459.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81863,7 +81863,7 @@ Enable/Disable Gallery Item
 
 Enable/disable gallery item, by using the following code.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1460.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1460.jpeg)' | markdownify }}
 {:.image }
 _Note: Third item in the gallery is disabled in this example._ 
 
@@ -81883,7 +81883,7 @@ toolStripGalleryItem3.Enabled = False
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1461.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1461.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81937,15 +81937,15 @@ Me.ribbonControlAdv1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStri
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1462.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1462.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1463.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1463.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1464.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1464.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81981,7 +81981,7 @@ Office12ColorTable.ApplyManagedColors(Me, Color.Red)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1465.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1465.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81989,7 +81989,7 @@ Caption ForeColor
 
 Title color of the RibbonControlAdv can be set with the TitleColor property.
 
-{ ![Description: RibbonTitleColor.png](Tools-Controls_images/Tools-Controls_img1466.png) | markdownify }
+{{ '![Description: RibbonTitleColor.png](Tools-Controls_images/Tools-Controls_img1466.png)' | markdownify }}
 {:.image }
 
 
@@ -82017,7 +82017,7 @@ In a Ribbonform, add a RibbonControlAdv control and the required ToolStripTabIte
 
 From the ToolBox, add a RibbonPanelMergeContainer to the ChildForm. ToolStripEx can be added into this by right Clicking on it. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1467.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1467.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -82045,17 +82045,17 @@ frm.MdiParent = Me
 
 frm.Show()
 
-> { ![](Tools-Controls_images/Tools-Controls_img1468.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1468.jpeg)' | markdownify }}
 {:.image }
  _Note: The form's IsMDIContainer property must be set as true. Also the MDIParent Ribbonform should host a RibbonControlAdv to get the ChildForm's panels to be merged._
 
-{ ![](Tools-Controls_images/Tools-Controls_img1469.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1469.jpeg)' | markdownify }}
 {:.image }
 
 
 Run the sample to view the ChildForm and the RibbonPanel merged with the RibbonControlAdv in the ParentForm.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1470.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1470.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -82069,20 +82069,20 @@ Through Designer
 
 1. Clicking the TabGroup property will pop up a window like the one below and using this, number of groups can be added and customized using the Color, Name and Visible properties provided to the right of the window.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1471.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1471.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Now create a ToolStripTabItem using the smart tag of the Ribbon.
 3. Switch to the properties grid of the ToolStripTabItem, and select the tabgroup you have added through TabGroup property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1472.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1472.jpeg)' | markdownify }}
 {:.image }
 
 
 4. This will display the tab items in the RibbonControlAdv as shown in the image below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1473.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1473.png)' | markdownify }}
 {:.image }
 
 
@@ -82166,7 +82166,7 @@ Me.ribbonControlAdv1.IsFormManager = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1474.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1474.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -82425,11 +82425,11 @@ End Sub
 
 Essential Tools comes with MiniToolBar control with similar look and feel of MS Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focussed on it, it will be prominent to the users. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1475.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1475.jpeg)' | markdownify }}
 {:.image }
  _Note: MiniToolBar control uses a ToolStripPanelItem to hold its options._
 
-{ ![](Tools-Controls_images/Tools-Controls_img1476.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1476.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -82455,15 +82455,15 @@ Me.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorSch
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1477.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1477.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1478.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1478.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1479.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1479.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -82477,36 +82477,36 @@ To add a MiniToolBar to the form, follow the below given steps.
 
 * Drag and drop a MiniToolBar from the toolbox. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1480.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1480.jpeg)' | markdownify }}
 {:.image }
 
 
 * Open the Items Collection Editor of the MiniToolBar.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1481.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1481.jpeg)' | markdownify }}
 {:.image }
 
 
 * Add the required items into the MiniToolBar from the Items collection Editor and click Ok. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1482.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1482.jpeg)' | markdownify }}
 {:.image }
 
 
 * Now, drag and drop the control with which the MiniToolBar is to be associated, for eg. a RichTextBox.
 * Set the MiniToolBar's AssociatedControl property to the control to which this is to be associated.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1483.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1483.jpeg)' | markdownify }}
 {:.image }
 
 
 * Run the sample and right-click on the RichTextBox to view the MiniToolBar. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1484.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1484.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1485.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1485.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also show a MiniToolBar by just selecting the text, as in MSOffice2007, using MouseUp event of the particular control._
 
@@ -82710,7 +82710,7 @@ Me.MiniToolBar.AssociatedControl = Me.richTextBox1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1486.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1486.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83016,7 +83016,7 @@ End Sub
 
 Essential Tools has come up with StatusStripEx control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1487.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1487.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83026,13 +83026,13 @@ Through Designer
 
 The StatusStripEx can be added to the form by dragging a StatusStripEx control from the Toolbox. It can be docked to the bottom of the RibbonControlAdv. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1488.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1488.jpeg)' | markdownify }}
 {:.image }
 
 
 Dock the StatusStripEx control to the bottom using Dock property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1489.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1489.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83040,11 +83040,11 @@ Adding Items to the StatusStripEx
 
 Access the Items property of the control, to open the Items Collection Editor. Use this editor to add customized StatusControl items. The Editor will let you modify the look and feel of the items using the properties provided on it right side.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1490.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1490.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1491.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1491.jpeg)' | markdownify }}
 {:.image }
  _Note: A shortcut to add the ToolStripStatus Items is through Tasks Window. See Smart Tag options to know more._
 
@@ -83140,7 +83140,7 @@ Clicking the Smart Tag of the StatusStripEx, displays the below Tasks window. Th
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1492.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1492.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83231,15 +83231,15 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1493.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1493.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1494.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1494.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1495.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1495.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83267,7 +83267,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1496.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1496.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83309,7 +83309,7 @@ Me.statusStripLabel1.StatusString = "1/1"
 
 The ScrollersFrame control attaches Office2007 Style scrollbars to any scrollable control or container. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1497.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1497.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83317,7 +83317,7 @@ Attaching Scrollbar to a Control
 
 To the Windows form, add a control, which should be attached with the Office2007Style scrollbars. Select the control in the ScrollersFrame.AttachedTo property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1498.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1498.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83339,7 +83339,7 @@ this.scrollersFrame1.AttachedTo = this.treeViewAdv1;
 
 Me.scrollersFrame1.AttachedTo = Me.treeViewAdv1
 
-> { ![](Tools-Controls_images/Tools-Controls_img1499.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1499.jpeg)' | markdownify }}
 {:.image }
  _Note: This property lists all the controls that are added to the form. User can the select any one control, for which scrolls needs to be attached._ 
 
@@ -83377,7 +83377,7 @@ Me.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv2)
 
 The below images illustrates the controls that are added, before and after the scrolls.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1500.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1500.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83461,7 +83461,7 @@ this.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawS
 
 Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007
 
-{ ![](Tools-Controls_images/Tools-Controls_img1501.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1501.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83481,11 +83481,11 @@ Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorS
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1502.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1502.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1503.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1503.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83513,7 +83513,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightSkyBlue)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1504.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1504.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83525,7 +83525,7 @@ Adding Controls to the ScrollBar
 
 ContextMenuStripEx is a separate control in Essential Tools with advanced features embedded in it. It can be dragged and dropped from the toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1505.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1505.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83535,17 +83535,17 @@ Through Designer
 
 Drag and drop a ContextMenuStripEx to the form. Click "Type Here" to add the items. This displays a collection of menu items, using which user can add the menu items. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1506.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1506.jpeg)' | markdownify }}
 {:.image }
 
 
 Items can also be added using ContextMenuStripEx.Items property or Edit Items... command in the property grid.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1507.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1507.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1508.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1508.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83633,7 +83633,7 @@ This can be easily done by assigning the ContextMenuStripEx to the Control.Conte
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1509.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1509.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83655,7 +83655,7 @@ Me.richTextBox1.ContextMenuStrip = Me.contextMenuStripEx1
 
 At Run time, when the user right clicks the control, menu items will be displayed like the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1510.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1510.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83746,7 +83746,7 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12Colo
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1511.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1511.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83784,7 +83784,7 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Pro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1512.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1512.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83810,7 +83810,7 @@ Me.ContextMenuStripEx.Text = "Context Menu Items"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1513.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1513.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83834,11 +83834,11 @@ Me.contextMenuStripEx1.Font = New System.Drawing.Font("Courier New", 9F, System.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1514.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1514.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1515.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1515.jpeg)' | markdownify }}
 {:.image }
  _Note: The font face of the Caption alone changes based on this Font property._
 
@@ -83880,7 +83880,7 @@ Me.contextMenuStripEx1.DropShadowEnabled = True
 
 The below image displays a shadow for the context menu strip.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1516.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1516.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83930,15 +83930,15 @@ Me.contextMenuStripEx1.ShowImageMargin = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1517.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1517.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1518.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1518.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1519.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1519.jpeg)' | markdownify }}
 {:.image }
  _Note: The check functionality can be enabled using the Checked property and check state can be provided using CheckedState property available for individual menu item, through Items Collection Editor._
 
@@ -83964,7 +83964,7 @@ Me.contextMenuStripEx1.ShowItemToolTips = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1520.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1520.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -83982,7 +83982,7 @@ Description</td></tr>
 <tr>
 <td>
 AutoClose</td><td>
-Specifies whether the context menu closes for any user actions at runtime.{{ '_True_' | markdownify }} - Closes the context menu dropdown, when the user selects or clicks any item.{{ '_False_' | markdownify }} - The context menu drop down will not be closed for any user actions.</td></tr>
+Specifies whether the context menu closes for any user actions at runtime.{{{ ''_True_'' | markdownify }}} - Closes the context menu dropdown, when the user selects or clicks any item.{{{ ''_False_'' | markdownify }}} - The context menu drop down will not be closed for any user actions.</td></tr>
 </table>
 
 
@@ -84022,7 +84022,7 @@ Me.contextMenuStripEx1.RightToLeft = Yes
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1521.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1521.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84120,7 +84120,7 @@ Me.hyperlinkToolStripMenuItem.ShortcutKeys = DirectCast(((System.Windows.Forms.K
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1522.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1522.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84178,7 +84178,7 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{{ ''_Suggest_'' | markdownify }}} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{{ ''_Append_'' | markdownify }}} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{{ ''_SuggestAppend_'' | markdownify }}} - Displays the drop down, also appends the highlighted string.</td></tr>
 </table>
 AutoComplete Feature
 
@@ -84206,7 +84206,7 @@ Me.toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSour
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1523.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1523.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84296,11 +84296,11 @@ The TrackBarEx is a new Office2007 control, which has a track bar or a pointer w
 
 A TrackBarEx can be added to your form by simply dragging-and-dropping the control from the toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1524.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1524.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1525.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1525.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84418,11 +84418,11 @@ Me.trackBarEx1.PushedButtonEndColor = System.Drawing.Color.OrangeRed
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1526.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1526.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1527.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1527.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84432,7 +84432,7 @@ FocusRectangle
 
 A focus rectangle for the TrackBarEx control can be shown or hidden using ShowFocusRect property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1528.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1528.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84460,7 +84460,7 @@ Me.trackBarEx1.TrackBarGradientStart = System.Drawing.Color.MintCream
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1529.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1529.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84482,7 +84482,7 @@ Me.trackBarEx1.Transparent = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1530.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1530.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84518,7 +84518,7 @@ Me.trackBarEx1.Orientation = Orientation.Horizontal
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1531.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1531.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84652,7 +84652,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1532.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1532.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84684,7 +84684,7 @@ The TrackBarEx control appearance can be customized as like in Win 8 application
 
 
 
-{ ![C:/Users/ashwini/Desktop/Untitled1.png](Tools-Controls_images/Tools-Controls_img1533.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/Untitled1.png](Tools-Controls_images/Tools-Controls_img1533.png)' | markdownify }}
 {:.image }
 
 
@@ -84692,7 +84692,7 @@ The TrackBarEx control appearance can be customized as like in Win 8 application
 
 In Office 2007, Microsoft has introduced a SuperToolTip control to display the tooltip. Essential Tools has also come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1534.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1534.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84705,17 +84705,17 @@ Creating SuperToolTip Through Designer
 1. Drag and drop the SuperToolTip on your form.
 2. When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the toolstrip or tabitem in the RibbonControlAdv.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1535.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1535.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1536.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1536.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also get or set a tooltip programmatically. It is discussed here._
 
 3. Clicking the … ellipse button will show the ToolTip Editor Dialog Box. This editor lets you customize the ToolTip items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1537.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1537.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84805,7 +84805,7 @@ Shows or hides a separator between the Body and the Footer tooltip items.</td></
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1538.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1538.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84837,7 +84837,7 @@ toolTipInfo2.Separator = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1539.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1539.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84919,7 +84919,7 @@ Style property is added to set Balloon style for SuperTooltip.  SuperToolTipStyl
 
 Set Style property to Balloon to change the SuperToolTip appearance as balloon.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1540.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1540.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84943,7 +84943,7 @@ Me.superToolTip1.Style = Syncfusion.Windows.Forms.Tools.SuperToolTip.SuperToolTi
 
 This section discusses the customization properties for the ToolTipItems.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1541.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1541.jpeg)' | markdownify }}
 {:.image }
  _Note: All these properties are applicable to all the three ToolTipItems._
 
@@ -85001,7 +85001,7 @@ toolTipInfo1.Footer.ImageScalingSize = New System.Drawing.Size(16, 16)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1542.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1542.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -85107,11 +85107,11 @@ toolTipInfo1.Header.TextMargin = New System.Windows.Forms.Padding(1, 1, 1, 1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1543.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1543.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1544.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1544.jpeg)' | markdownify }}
 {:.image }
  _Note: A SuperToolTip (Body, Header and Footer) can be hidden by calling the SuperToolTip.Hide() method._
 
@@ -85123,7 +85123,7 @@ Size property sets the size of header, body and footer Item. Size property will 
 
 CSS properties and all the text formatting HTML tags are supported.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1545.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1545.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -85137,7 +85137,7 @@ toolTipInfo2.Footer.Size = new System.Drawing.Size(200, 50);
 
  toolTipInfo2.Footer.RenderHtml = true;
 
- toolTipInfo2.Footer.Text = "&lt;ul&gt;<li>List Item</li>&lt;/ul&gt;";
+ toolTipInfo2.Footer.Text = "<ul><li>List Item</li></ul>";
 
 
 
@@ -85149,7 +85149,7 @@ Me. toolTipInfo2.Footer.Size= New System.Drawing.Size(200,50)
 
 Me.toolTipInfo2.Footer.RenderHtml = true
 
-Me.toolTipInfo2.Footer.Text = "&lt;ul&gt;<li>List Item</li>&lt;/ul&gt;"
+Me.toolTipInfo2.Footer.Text = "<ul><li>List Item</li></ul>"
 
 ###### SuperToolTip Events
 
@@ -85235,7 +85235,7 @@ Private Sub superToolTip1_PopupToolTip(ByVal component As Component, ByRef rc As
 
 End Sub 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1546.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1546.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also use show method to display a SuperToolTip at a specified location._
 
@@ -85273,7 +85273,7 @@ Private Sub superToolTip1_UpdateToolTip(ByVal component As Component, ByRef info
 
 End Sub
 
-> { ![](Tools-Controls_images/Tools-Controls_img1547.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1547.jpeg)' | markdownify }}
 {:.image }
  _Note: You also set tooltip using SetToolTip Method._
 
@@ -85281,11 +85281,11 @@ End Sub
 
 SupperTooltip can be displayed in the User Control embedded in the MFC Dialog.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1548.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1548.jpeg)' | markdownify }}
 {:.image }
 _Note: Support has been given in source level._
 
-{ ![](Tools-Controls_images/Tools-Controls_img1549.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1549.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -85295,26 +85295,26 @@ SuperAccelerator is a component that is used to accelerate the click event of it
 
 1.   Drag-and-drop the SuperAccelerator on your form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1550.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1550.jpeg)' | markdownify }}
 {:.image }
 
 
 2. When the SuperAccelerator component is added to a form, an extended property will be added to the properties of every item in the toolstrip or tabitem in the RibbonControlAdv.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1551.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1551.jpeg)' | markdownify }}
 {:.image }
 
 
 3. In the appropriate item, use the Accelerator on SuperAccelerator property to set the string value.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1552.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1552.jpeg)' | markdownify }}
 {:.image }
 
 
 4. To accelerate the item's click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items. 
 5. Press the string in the keyboard and the corresponding item's click event will be triggered. (Eg. If the accelerator string of Cut is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Cut item event will be triggered.)
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img1553.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1553.jpeg)' | markdownify }}
 {:.image }
  _Note: We can make the Accelerator feature to be active or inactive using SuperAccelerator.Active property._
 
@@ -85372,7 +85372,7 @@ Me.superAccelerator.ForeColor = System.Drawing.Color.Maroon
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1554.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1554.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -85401,7 +85401,7 @@ Me.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1555.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1555.png)' | markdownify }}
 {:.image }
 
 
@@ -85443,7 +85443,7 @@ MessageBoxAdv.Show(" Office 2007 Style with Black Color Scheme  ", "MessageBox A
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1556.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1556.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -85497,7 +85497,7 @@ In MessageBoxAdv, MetroColorTable is implemented for color customization of butt
 
 
 
-{ ![C:/Users/ashwini/Desktop/messagebox3.PNG](Tools-Controls_images/Tools-Controls_img1557.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/messagebox3.PNG](Tools-Controls_images/Tools-Controls_img1557.png)' | markdownify }}
 {:.image }
 
 
@@ -85513,7 +85513,7 @@ This feature provides Office 2010 like theme for your ribbon. You can give Offic
 
 Essential Tools also enables you to create a BackStageView. You can open the BackStageView by clicking the File tab. This enables you to use the features that fall outside the Ribbon. Ribbon enables you to work in the document and Backstage enables you to work with the document. Using this you can alter contents and provide end-user options that are related to specific solution requirements.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1558.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1558.jpeg)' | markdownify }}
 {:.image }
 _Note: Backstageview can be accessed only when Ribbon style is set to Office 2010._
 
@@ -85531,19 +85531,19 @@ The following are steps to apply Office 2010 style for the Ribbon:
 1. Create a Windows Form application in Visual Studio. 
 2. Drag and drop the RibbonControlAdv from the Toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1559.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1559.png)' | markdownify }}
 {:.image }
 
 
 3. In the Property grid, set RibbonStyle to Office2010.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1560.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1560.png)' | markdownify }}
 {:.image }
 
 
 4. Office 2010 Ribbon will be applied for Ribbon.
 
-{ ![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/ribbon without back stage.png](Tools-Controls_images/Tools-Controls_img1561.png) | markdownify }
+{{ '![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/ribbon without back stage.png](Tools-Controls_images/Tools-Controls_img1561.png)' | markdownify }}
 {:.image }
 
 
@@ -85553,43 +85553,43 @@ The following are steps to create a BackStageView:
 
 1. Drag and drop the BackStageView from the Toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1562.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1562.png)' | markdownify }}
 {:.image }
 
 
 2. In the Property grid, click the ShowBackstage.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1563.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1563.png)' | markdownify }}
 {:.image }
 
 
 3. Empty BackStage will be displayed.
 
-{ ![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/Empty Back Stage.png](Tools-Controls_images/Tools-Controls_img1564.png) | markdownify }
+{{ '![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/Empty Back Stage.png](Tools-Controls_images/Tools-Controls_img1564.png)' | markdownify }}
 {:.image }
 
 
 4. To add a BackStageButton, click the Add BackStage Button.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1565.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1565.png)' | markdownify }}
 {:.image }
 
 
 5. To add BackStageTab, click the Add BackStage Tab.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1566.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1566.png)' | markdownify }}
 {:.image }
 
 
 6. Set BackStageView to RibbonControlAdv.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1567.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1567.png)' | markdownify }}
 {:.image }
 
 
 7. Back Stage will be created with a BackStage Button and a BackStage Tab
 
-{ ![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/backstage with button and tab.png](Tools-Controls_images/Tools-Controls_img1568.png) | markdownify }
+{{ '![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/backstage with button and tab.png](Tools-Controls_images/Tools-Controls_img1568.png)' | markdownify }}
 {:.image }
 
 
@@ -85785,7 +85785,7 @@ this.ribbonControlAdv1.SetUseInQuickAccessMenu(this.toolStripDropDownButton1, tr
 
 Me.ribbonControlAdv1.SetUseInQuickAccessMenu(Me.toolStripDropDownButton1, True)
 
-> { ![](Tools-Controls_images/Tools-Controls_img1569.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1569.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also identify whether a particular item is added to the Quick Access Toolbar or not, using the GetUseInQuickAccessMenu method, by passing the item as the parameter._
 
@@ -85843,7 +85843,7 @@ Me.ribbonControlAdv1.SetDescription(Me.toolStripTabItem1, "This is a drop down b
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1570.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1570.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -85919,7 +85919,7 @@ Dim pt1 As System.Drawing.Point = New System.Drawing.Point(Me.button1.Location.X
 
 Me.s1.Show(t1, Me.PointToScreen(pt1), 500)
 
-> { ![](Tools-Controls_images/Tools-Controls_img1571.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1571.jpeg)' | markdownify }}
 {:.image }
  _Note: A SuperToolTip can be hidden by calling the SuperToolTip.Hide() method._
 
@@ -85991,15 +85991,15 @@ Me.superToolTip1.SetToolTip(Me.textBox1, "ToolTipText")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1572.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1572.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1573.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1573.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1574.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1574.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also set tooltip using_ UpdateToolTip Event_._
 
@@ -86035,7 +86035,7 @@ Me.superAccelerator1.GetAccelerator(Me.toolStripTabItem1)
 
 Me.superAccelerator1.SetAccelerator(Me.toolStripTabItem1, "C") 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1575.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1575.jpeg)' | markdownify }}
 {:.image }
  _Note: GetMenuButtonAccelerator and SetMenuButtonAccelerator methods gets or sets the OfficeMenuButton accelerator key. See Menu_Button Settings _for details._
 
@@ -86066,7 +86066,7 @@ Me.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Adva
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1576.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1576.png)' | markdownify }}
 {:.image }
 
 
@@ -86074,7 +86074,7 @@ Me.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Adva
 
 You can set the accelerator position of the SuperAccelerator by using its Alignment property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1577.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1577.png)' | markdownify }}
 {:.image }
 
 
@@ -86101,7 +86101,7 @@ Default
 
 It allows to set the SuperAccelerator alignment on default position of the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1578.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1578.png)' | markdownify }}
 {:.image }
 
 
@@ -86109,7 +86109,7 @@ Top Left
 
 To display SuperAccelerator at the TopLeft position of Ribbon items.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1579.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1579.png)' | markdownify }}
 {:.image }
 
 
@@ -86117,7 +86117,7 @@ Top Center
 
 It enables to set the SuperAccelerator alignment on TopCenter of the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1580.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1580.png)' | markdownify }}
 {:.image }
 
 
@@ -86125,7 +86125,7 @@ Top Right
 
 It enables to set the SuperAccelerator alignment on TopRight of the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1581.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1581.png)' | markdownify }}
 {:.image }
 
 
@@ -86133,7 +86133,7 @@ Middle Left
 
 It enables to set the SuperAccelerator alignment on MiddleLeft of the control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1582.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1582.png)' | markdownify }}
 {:.image }
 
 
@@ -86141,7 +86141,7 @@ Middle Center
 
 It enables to set the SuperAccelerator alignment on MiddleCenter of the control
 
-{ ![](Tools-Controls_images/Tools-Controls_img1583.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1583.png)' | markdownify }}
 {:.image }
 
 
@@ -86149,7 +86149,7 @@ Middle Right
 
 It enables to set the SuperAccelerator alignment on MiddleRight of the control
 
-{ ![](Tools-Controls_images/Tools-Controls_img1584.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1584.png)' | markdownify }}
 {:.image }
 
 
@@ -86157,7 +86157,7 @@ Bottom Left
 
 It enables to set the SuperAccelerator alignment on BottomLeft of the control
 
-{ ![](Tools-Controls_images/Tools-Controls_img1585.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1585.png)' | markdownify }}
 {:.image }
 
 
@@ -86165,7 +86165,7 @@ Bottom Center
 
 It enables to set the SuperAccelerator alignment on BottomCenter of the control
 
-{ ![](Tools-Controls_images/Tools-Controls_img1586.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1586.png)' | markdownify }}
 {:.image }
 
 
@@ -86173,7 +86173,7 @@ Bottom Right
 
 It enables to set the SuperAccelerator alignment on BottomRight of the control
 
-{ ![](Tools-Controls_images/Tools-Controls_img1587.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1587.png)' | markdownify }}
 {:.image }
 
 
@@ -86380,11 +86380,11 @@ Yes, the RibbonControlAdv is DPI-aware. The controls within the RibbonControlAdv
 
 The following images illustrate the scaling in RibbonControlAdv for 100 and 150 DPI.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1588.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1588.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1589.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1589.png)' | markdownify }}
 {:.image }
 
 
@@ -86430,11 +86430,11 @@ Me.backStageView1.BackStageViewNavigationButtonImage = BackStageCustomization.Pr
 
 The following screenshot displays the customized menu button in BackStageView.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1590.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1590.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1591.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1591.jpeg)' | markdownify }}
 {:.image }
 _Note : BackStageViewNavigationButtonImage property is only applicable when Ribbon Style is set as Office2013 and TouchStyle._
 
@@ -86464,17 +86464,17 @@ In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShad
 
 
 
-{ ![C:/Users/giftline.jebamani/Desktop/img.jpg](Tools-Controls_images/Tools-Controls_img1592.jpeg) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/img.jpg](Tools-Controls_images/Tools-Controls_img1592.jpeg)' | markdownify }}
 {:.image }
  _Note: The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect._
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1593.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1593.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1594.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1594.png)' | markdownify }}
 {:.image }
 
 
@@ -86488,7 +86488,7 @@ The Radial Slider is an advanced control that is capable of calculating the seq
 
 The following image highlights the different sections of the Range Slider:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1595.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1595.png)' | markdownify }}
 {:.image }
 
 
@@ -86524,7 +86524,7 @@ The following steps illustrate the creation of Radial Slider.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1596.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1596.png)' | markdownify }}
 {:.image }
 
 
@@ -86548,11 +86548,11 @@ Default Slider Style
 
 Default slider style will render the slider control with two hollow circles and a small circle as center, with its dividend ticks available as shown in the following image:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1597.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1597.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1598.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1598.png)' | markdownify }}
 {:.image }
 
 
@@ -86576,7 +86576,7 @@ Frame style
 
 This style will paint the background of the slider control with an HQ frame as shown in the following image:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1599.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1599.png)' | markdownify }}
 {:.image }
 
 
@@ -86616,7 +86616,7 @@ The slider initial value depends on its minimum value, and the default minimum v
 
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1600.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1600.jpeg)' | markdownify }}
 {:.image }
 _Note: The Slider’s maximum value should be greater than its minimum value._
 
@@ -86640,7 +86640,7 @@ Slider divisions for the radial slider can be customized using the properties sh
 
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1601.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1601.jpeg)' | markdownify }}
 {:.image }
 _Note: This property will applicable only for default slider._
 
@@ -86664,7 +86664,7 @@ The background color for the radial slider can be customized using the Backgroun
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1602.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1602.png)' | markdownify }}
 {:.image }
 
 
@@ -86689,7 +86689,7 @@ Circle colors of the radial slider can be customized using the properties InnerC
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1603.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1603.png)' | markdownify }}
 {:.image }
 
 
@@ -86713,7 +86713,7 @@ The needle color for the Radial slider can be customized using SliderNeedleColor
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1604.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1604.png)' | markdownify }}
 {:.image }
 
 
@@ -86737,7 +86737,7 @@ Me.radialSlider1.ForeColor = System.Drawing.Color.BlueViolet
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1605.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1605.png)' | markdownify }}
 {:.image }
 
 
@@ -86762,7 +86762,7 @@ The needle type for the radial slider can be customized using the NeedleType enu
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1606.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1606.png)' | markdownify }}
 {:.image }
 
 
@@ -86835,7 +86835,7 @@ This section guides you on getting started with Range Slider. It covers informat
 
 The following image highlights the different sections of the Range Slider.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1607.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1607.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86883,7 +86883,7 @@ Run the code.
 
 Output
 
-{ ![](Tools-Controls_images/Tools-Controls_img1608.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1608.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86893,13 +86893,13 @@ The following steps illustrate the creation of RangeSlider.
 
 1. Select RangeSlider from the toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1609.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1609.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Drag the RangeSlider from the toolbox to the form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1610.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1610.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86942,13 +86942,13 @@ rangeSlider.ChannelColor = Color.DarkGray;
 
 Output
 
-{ ![](Tools-Controls_images/Tools-Controls_img1611.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1611.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1612.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1612.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86968,10 +86968,10 @@ rangeSlider.ChannelHeight = 4;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1613.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1613.jpeg)' | markdownify }}
 {:.image }
 
-{ ![](Tools-Controls_images/Tools-Controls_img1614.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1614.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86987,11 +86987,11 @@ rangeSlider.ChannelHeight = 6;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1615.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1615.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1616.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1616.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87009,11 +87009,11 @@ rangeSlider.RangeColor = Color.DarkGreen;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1617.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1617.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1618.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1618.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87031,11 +87031,11 @@ rangeSlider.RightToLeft=RightToLeft.No;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1619.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1619.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1620.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1620.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87051,11 +87051,11 @@ rangeSlider.RightToLeft=RightToLeft.Yes;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1621.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1621.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1622.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1622.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87075,11 +87075,11 @@ rangeSlider.SliderSize = new Size(11,14);
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1623.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1623.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1624.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1624.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87093,11 +87093,11 @@ rangeSlider.SliderSize = new Size(11,18);
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1625.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1625.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1626.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1626.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87117,11 +87117,11 @@ rangeSlider.ThumbColor = Color.Teal;
 
 Background Settings
 
-{ ![](Tools-Controls_images/Tools-Controls_img1627.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1627.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1628.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1628.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87141,11 +87141,11 @@ rangeSlider.ShowTicks = True;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1629.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1629.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1630.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1630.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87161,11 +87161,11 @@ rangeSlider.ShowTicks = False;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1631.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1631.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1632.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1632.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87183,11 +87183,11 @@ rangeSlider.TickFrequency = 3;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1633.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1633.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1634.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1634.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87205,11 +87205,11 @@ rangeSlider.Orientation=Orientation.Horizontal;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1635.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1635.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1636.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1636.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87225,11 +87225,11 @@ rangeSlider.Orientation=Orientation.Vertical;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1637.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1637.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1638.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1638.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87249,11 +87249,11 @@ rangeSlider.SliderMin = 2;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1639.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1639.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1640.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1640.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87273,11 +87273,11 @@ rangeSlider.Minimum = 0;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1641.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1641.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1642.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1642.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87363,7 +87363,7 @@ The RangeSlider control appearance can be customized as like in Win 8 applicatio
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1643.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1643.png)' | markdownify }}
 {:.image }
 
 
@@ -87445,7 +87445,7 @@ The following are steps to add the Skin Manager control to an application throug
 
 1. Drag the Skin Manager from the Toolbox tab to the designer.
 
-{ ![D:/Task Doc/UG/10.1/UI/WF/Tools/Skin Mananger/SkinManager/SkinManager/toolbox.png](Tools-Controls_images/Tools-Controls_img1644.png) | markdownify }
+{{ '![D:/Task Doc/UG/10.1/UI/WF/Tools/Skin Mananger/SkinManager/SkinManager/toolbox.png](Tools-Controls_images/Tools-Controls_img1644.png)' | markdownify }}
 {:.image }
 
 
@@ -87474,7 +87474,7 @@ SkinManager.SetVisualStyle(Me.buttonAdv1, VisualTheme.Office2007Blue)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1645.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1645.png)' | markdownify }}
 {:.image }
 
 
@@ -87494,7 +87494,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1646.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1646.png)' | markdownify }}
 {:.image }
 
 
@@ -87507,11 +87507,11 @@ The following are the steps to apply the required skin to the form through desig
 1. Open the Properties Window.
 2. In the Controls field assign the root control for which you want to apply the theme. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1647.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1647.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1648.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1648.png)' | markdownify }}
 {:.image }
 
 
@@ -87521,11 +87521,11 @@ Once the SkinManager is applied to a parent form or container, the new controls 
 
 The following images describe the same in applying the Office2007Black theme to the newly added control [ButtonAdv] after the theme is applied to the form through the SkinManager.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1649.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1649.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1650.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1650.png)' | markdownify }}
 {:.image }
 
 
@@ -87551,7 +87551,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1651.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1651.png)' | markdownify }}
 {:.image }
 
 
@@ -87575,7 +87575,7 @@ Office12ColorTable.ApplyManagedColors(Me.buttonAdv1,Color.Orange )
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1652.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1652.png)' | markdownify }}
 {:.image }
 
 
@@ -87605,7 +87605,7 @@ The following are steps to add the SplitButton control to an Application through
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1653.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1653.png)' | markdownify }}
 {:.image }
 
 
@@ -87652,7 +87652,7 @@ Me.Controls.Add(splitButton)
 
 ##### Appearance and Structure of the Control
 
-{ ![](Tools-Controls_images/Tools-Controls_img1654.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1654.png)' | markdownify }}
 {:.image }
 
 
@@ -87752,7 +87752,7 @@ splitButton1.Text = "Click"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1655.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1655.png)' | markdownify }}
 {:.image }
 
 
@@ -87782,7 +87782,7 @@ End Sub
 
 
 
-{ ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/captionitem.png](Tools-Controls_images/Tools-Controls_img1656.png) | markdownify }
+{{ '![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/captionitem.png](Tools-Controls_images/Tools-Controls_img1656.png)' | markdownify }}
 {:.image }
 
 
@@ -87812,7 +87812,7 @@ Me.splitButton1.DropDownItems.Add("Item 2")
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1657.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1657.png)' | markdownify }}
 {:.image }
 
 
@@ -87832,7 +87832,7 @@ Me.splitButton1.DropDownItems.RemoveAt(1);
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1658.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1658.png)' | markdownify }}
 {:.image }
 
 
@@ -88345,7 +88345,7 @@ End Property
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1659.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1659.png)' | markdownify }}
 {:.image }
 
 
@@ -88557,19 +88557,19 @@ End Class
 
 
 
-{ ![C:/Users/giftline.jebamani/Desktop/img.jpg](Tools-Controls_images/Tools-Controls_img1660.jpeg) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/img.jpg](Tools-Controls_images/Tools-Controls_img1660.jpeg)' | markdownify }}
 {:.image }
 _Note: The CustomRenderer class can be inherited from any type of System.Windows.Forms.ToolStripRenderer class._
 
 
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Tools-Controls_images/Tools-Controls_img1661.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Tools-Controls_images/Tools-Controls_img1661.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1662.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1662.png)' | markdownify }}
 {:.image }
 
 
@@ -88581,7 +88581,7 @@ _Figure_ _1386_: After customizing the DropDown of the SplitButton._
 
 XP Tabs is a 100% native .NET TabControl implementation that comes with a lot more configuration and customization capabilities than the Legacy Wrapper that the .NET framework comes with. It provides all the basic functionalities of a standard TabControl and much more. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1663.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1663.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -88595,7 +88595,7 @@ The TabControlAdv and the TabPageAdv controls come with full design-time support
 
 The Tabs framework contains the TabControlAdv with a full set of features to support efficient tab usage to create rich user applications.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1664.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1664.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -88615,13 +88615,13 @@ Features
 * Themes Support - TabControlAdv provides complete theme support. Using the ThemesEnabled property, XP themes can be enabled for this control.
 * TabPersistence - Complete persistence support is now available for TabControlAdv using the PersistTabState property.
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img1665.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1665.jpeg)' | markdownify }}
 {:.image }
  _Note: TabState has been saved at the following location: C:\Documents and Settings\Username*\Local Settings\Application Data\IsolatedStorage._
 
 * Close button can be added for each TabPage like IE7 to close the tabpage.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1666.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1666.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -88640,13 +88640,13 @@ TabControlAdv in Toolbox
 
 TabControlAdv is a control in the Tabs Package that manages a set of TabPages and provides options to customize the TabPages according to the needs of the user. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1667.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1667.jpeg)' | markdownify }}
 {:.image }
 
 
 The TabControlAdv automatically adds pages to every tabitem being added to the application with uniform dimensions for all the pages. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1668.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1668.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -88680,21 +88680,21 @@ To create a TabControlAdv through designer,
 2. Add TabPages to the control in the designer in the following ways.
 3. Right click on the TabControlAdv and select the Add Tab option. This adds a tabpage to the TabControlAdv.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1669.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1669.jpeg)' | markdownify }}
 {:.image }
 
 
 4. In the Properties window, select the TabPages property. The TabPageAdv Collection Editor will be opened. Click Add, a tabpage will be added to the TabControlAdv.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1670.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1670.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1671.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1671.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1672.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1672.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -88890,7 +88890,7 @@ To bring the text of the tabitem to the edit mode, the following can be done.
 1. Select the text of the tabitem to be edited and right-click on the tab to bring the text to edit mode. The text can now be edited and it  can be saved by pressing the Return key.
 2. Also, double-clicking on a tab makes the text change to edit mode.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1673.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1673.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -88916,7 +88916,7 @@ this.tabControlAdv.LabelEdit = true;
 
 Me.tabControlAdv.LabelEdit = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img1674.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1674.jpeg)' | markdownify }}
 {:.image }
  _Note: The visibility of the tab items can be set through TabVisible property. It can be enabled / disabled using TabEnabled property._
 
@@ -88964,11 +88964,11 @@ Me.tabControlAdv1.Padding = New Point(12, 12)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1675.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1675.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1676.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1676.jpeg)' | markdownify }}
 {:.image }
  _Note: The TabControlAdv.OnTabPanelBoundsAffected() method forces the TabControlAdv to re-layout it's elements._
 
@@ -89020,7 +89020,7 @@ Me.tabControlAdv1.KeepSelectedTabInFrontRow = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1677.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1677.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89048,13 +89048,13 @@ TabPages
 
 On Clicking the TabPages property in the Properties grid, the TabPageAdv Collection Editor will be opened. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1678.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1678.jpeg)' | markdownify }}
 {:.image }
 
 
 The TabPageAdv Collection Editor can be used to add TabPages to the TabControlAdv and customize the TabPages according to needs of the user. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1679.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1679.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89082,7 +89082,7 @@ Gets / sets the border styles for the tabpages. It includes the following styles
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1680.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1680.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89104,11 +89104,11 @@ Gets / sets a color for the border of the TabPage in the TabControlAdv when the 
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1681.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1681.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1682.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1682.jpeg)' | markdownify }}
 {:.image }
  _Note: The TabControlAdv.ResetFixedSingleBorderColor() method resets the border color of the TabPage to the default value._
 
@@ -89123,7 +89123,7 @@ There are two major properties which come into picture:
 * Image
 * Image size
 
-{ ![](Tools-Controls_images/Tools-Controls_img1683.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1683.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89172,7 +89172,7 @@ this.tabPageAdv.Image = Image.FromFile(“sample.gif”);
 
 this.tabPageAdv.ImageSize = new System.Drawing.Size(16,16);
 
-> { ![](Tools-Controls_images/Tools-Controls_img1684.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1684.jpeg)' | markdownify }}
 {:.image }
 _Note: Only when the ImageIndex property is -1, Image from the Image property will be displayed or else Image from ImageList will be displayed._
 
@@ -89238,11 +89238,11 @@ The various TabPrimitives are,
 * Close - This button is used to close the TabControlAdv. It can be set to appear for the whole control or individual tabpages. 
 * Custom - User can add more buttons through Custom TabPrimitive. This helps the user to create / add more buttons and handle their own click events.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1685.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1685.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1686.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1686.jpeg)' | markdownify }}
 {:.image }
  _Note: The TabControlAdv.HitTestTabs() method can be used to return the tab at the specified location._ 
 
@@ -89250,11 +89250,11 @@ TabPrimitives Features
 
 Apart from doing the defined task of Navigation, TabPrimitivesHost comes with options for adding Images, ToolTips and enabling the Visible property for each TabPrimitive.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1687.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1687.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1688.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1688.jpeg)' | markdownify }}
 {:.image }
  _Note: You can set the other properties for adding Images and ToolTips for the TabPrimitives using the TabPrimitives Collection Editor._ 
 
@@ -89268,19 +89268,19 @@ To create Tab Primitives through designer, follow the steps given below.
 
 1. After adding a TabControlAdv with a set of TabPages in it, select the TabPrimitivesHost.TabPrimitives property in the Properties window.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1689.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1689.jpeg)' | markdownify }}
 {:.image }
 
 
 2. ATabPrimitives Collection Editor will be opened. Click the Add option in the Editor to add a TabPrimitive.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1690.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1690.jpeg)' | markdownify }}
 {:.image }
 
 
 3. Set the TabPrimitiveType as required and click Ok.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1691.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1691.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89336,7 +89336,7 @@ Me.tabControlAdv1.TabPrimitivesHost.TabPrimitives.Add(New Syncfusion.Windows.For
 
 Private Me.tabControlAdv1.TabPrimitivesHost.Visible = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img1692.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1692.jpeg)' | markdownify }}
 {:.image }
  _Note: After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True. Now the TabPrimitives added will be visible in the TabControlAdv._
 
@@ -89352,7 +89352,7 @@ SwitchPagesForDialogKeys property available for the TabControlAdv specifies if t
 
 The TabPrimitiveHost property allows to customize the navigation and close buttons by defining it through the TabPrimitives Property Collection. The tabprimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First / Previous / Next / LastTab, Next / PreviousPage and Close / DropDown options.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1693.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1693.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89368,11 +89368,11 @@ ITabRenderer interface (or derive from TabRendererBase, a base implementation of
 
 The Renderer property returns the current Syncfusion.Windows.Forms.Tools.ITabRenderer used by the TabControl to render the TabPanel.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1694.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1694.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1695.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1695.jpeg)' | markdownify }}
 {:.image }
  _Note: Refer to CustomTabControl sample which demonstrates this feature._ 
 
@@ -89380,13 +89380,13 @@ Once you have a Custom ITabRenderer implementation, you can, if necessary, make 
 
 1. First select the Add Custom Tabs entry in the drop-down list that pops-up from the TabStyle property editor. This will insert a new DesignTimeTabTypeLoader component into your forms designer. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1696.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1696.jpeg)' | markdownify }}
 {:.image }
 
 
 2. Insert the fully qualified type name of your Custom TabRenderer class (for example: Syncfusion.Samples.Tools.TabRendererNotched) to the DesignTimeTabTypeLoader's TypesToLoadList. This will try to load your class into the DesignTimeTabTypeLoader's TypesToLoadList, assuming the type is in the same project as the designer or the assembly in which this type resides is referenced. You will now find an entry in the TabControlAdv.TabStyle editor list corresponding to your Custom TabRenderer. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1697.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1697.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89428,7 +89428,7 @@ Gets / sets the distance, in pixels, between the right edge of the control and t
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1698.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1698.png)' | markdownify }}
 {:.image }
 
 
@@ -89547,7 +89547,7 @@ Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillToRi
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1699.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1699.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89605,11 +89605,11 @@ Me.tabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererW
 
 Given below are the various TabStyles along with the Office 2007 Style supporting all the three color schemes (Blue, Silver and Black).
 
-{ ![](Tools-Controls_images/Tools-Controls_img1700.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1700.png)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1701.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1701.jpeg)' | markdownify }}
 {:.image }
  _Note: We can apply border styles when TabStyle is set to VS2008Style. Refer_ Border for TabControlAdv _topic to know more._
 
@@ -89649,7 +89649,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1702.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1702.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89661,7 +89661,7 @@ A sample which illustrates CustomTab control and Flat Tabs is available in the b
 * TabControlAdv’s TabStyle can be changed to VS2010 style. 
 * VS2010Style is added to the TabStyle’s collection.  
 
-{ ![](Tools-Controls_images/Tools-Controls_img1703.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1703.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89703,7 +89703,7 @@ Images in TabItems
 
 To set images to the TabItems, add an ImageListControl and populate it with the required images. Then set the ImageIndex property of the TabPage to one of the indices, to display the corresponding image to the left of the text by default.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1704.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1704.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89749,7 +89749,7 @@ Images outside the TabBounds
 
 TabControlAdv can have images set outside the TabBounds.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1705.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1705.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89931,11 +89931,11 @@ Private Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1706.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1706.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1707.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1707.png)' | markdownify }}
 {:.image }
 
 
@@ -90019,7 +90019,7 @@ Me.tabPageAdv1.TabFont = New System.Drawing.Font("Trebuchet MS", 8.25F, System.D
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1708.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1708.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90061,7 +90061,7 @@ Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1709.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1709.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90085,7 +90085,7 @@ Me.tabControlAdv1.BorderVisible = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1710.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1710.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90107,11 +90107,11 @@ Me.tabControlAdv1.BorderWidth = 10
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1711.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1711.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1712.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1712.jpeg)' | markdownify }}
 {:.image }
  _Note: These border properties are especially implemented for "VS2008Style"_ TabStyles.
 
@@ -90119,7 +90119,7 @@ Me.tabControlAdv1.BorderWidth = 10
 
 The TabControlAdv can be themed by enabling the ThemesEnabled property.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1713.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1713.jpeg)' | markdownify }}
 {:.image }
  _Note: On setting this property, all the tabpages will be themed. This can be disabled or enabled for individual pages using the TabPageAdv.ThemesEnabled property._
 
@@ -90139,7 +90139,7 @@ Me.tabControlAdv1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1714.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1714.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90153,7 +90153,7 @@ It includes the below topics
 
 TabControl can have CloseButtons for all the TabPages as in Internet Explorer 7 to close the corresponding TabPages irrespective of the Style set.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1715.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1715.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90193,11 +90193,11 @@ Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1716.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1716.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1717.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1717.jpeg)' | markdownify }}
 {:.image }
  _Note: Close Button can be set for the whole TabControlAdv by using_ TabPrimitives_._
 
@@ -90225,7 +90225,7 @@ Me.tabPageAdv1.ToolTipText = "Tooltips for tab page 1"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1718.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1718.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90309,7 +90309,7 @@ Description</td></tr>
 RightToLeft</td><td>
 Specifies to draw the tabs and the text from right to left. The default value is No.</td></tr>
 </table>
-{ ![](Tools-Controls_images/Tools-Controls_img1719.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1719.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90333,7 +90333,7 @@ Gets / sets the value that decides whether the tabs can be rotated, when the Rig
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1720.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1720.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90355,7 +90355,7 @@ Me.tabControlAdv1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 Me.tabControlAdv1.RotateTabsWhenRTL = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img1721.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1721.jpeg)' | markdownify }}
 {:.image }
  _Note: Only VS2005Style, OneNoteStyle and DockingWhidbeyStyle support RotateTabsWhenRTL property._
 
@@ -90377,7 +90377,7 @@ Specifies to rotate the text along with the tab to draw the text horizontally.</
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1722.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1722.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -90421,13 +90421,13 @@ Specifies whether to show the scrollbutton.</td></tr>
 
 By default, scrollbuttons are set to 2D, 3D and Workbook tabstyles.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1723.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1723.png)' | markdownify }}
 {:.image }
 
 
 For all other styles, scrollbuttons are set to normal button-look.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1724.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1724.png)' | markdownify }}
 {:.image }
 
 
@@ -90479,11 +90479,11 @@ Specifies the size of the tabpage, which if exceeded, would  enable scrollbars t
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1725.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1725.png)' | markdownify }}
 {:.image }
 
 
-> { ![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1726.png) | markdownify }
+> {{ '![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1726.png)' | markdownify }}
 {:.image }
 _Note: The TabControlAdv.BringSelectedTabToView() method is used to bring the selected tab to view, if scrolled out of view._
 
@@ -90921,7 +90921,7 @@ Description</td></tr>
 Control</td><td>
 Gets the control object used by this event.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1727.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1727.jpeg)' | markdownify }}
 {:.image }
  _Note: The TabControlAdv.RemoveAll() method removes all the TabPages and additional controls from the TabControlAdv._
 
@@ -91013,7 +91013,7 @@ Gets / sets the state of the item that is being drawn.</td></tr>
 TextBrush</td><td>
 Gets / sets the text brush to draw text in the tabs.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1728.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1728.jpeg)' | markdownify }}
 {:.image }
  _Note: The TabControlAdv.OnDrawItem() method raises the DrawItem event._  
 
@@ -91581,7 +91581,7 @@ Private Sub tabControlAdv1_TabsOrderChanged(ByVal sender As Object, ByVal e As E
 
 End Sub
 
-> { ![](Tools-Controls_images/Tools-Controls_img1729.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1729.jpeg)' | markdownify }}
 {:.image }
  _Note: The TabControlAdv.OnTabsOrderChanged() method raises the OnTabsOrderChanged event._
 
@@ -91655,7 +91655,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1730.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1730.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -91701,7 +91701,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1731.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1731.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -91747,7 +91747,7 @@ Me.tabPageAdv2.ToolTipText="Tab" & Constants.vbLf & "Page" & Constants.vbLf & "A
 
 The simplest way to customize TabDrawing is to handle the DrawItem event. A departure from the normal is the TabControlAdv's ability to let you selectively draw portions of the tab. For this purpose, TabDrawing is classified into three portions:Background,Border and Interior (text and image). The event args lets you delegate drawing of one or more portions of the tab to the default drawing code while custom drawing the other portions of the tab. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1732.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1732.jpeg)' | markdownify }}
 {:.image }
  _Note: The following code provides a sample discussion of the Custom TabControls._ 
 
@@ -91947,7 +91947,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1733.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1733.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -91987,7 +91987,7 @@ Me.tabControlAdv1.ReservedSpace = 25
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1734.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1734.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92189,7 +92189,7 @@ this.tabControlAdv1.FocusOnTabClick = false;
 
 Me.tabControlAdv1.FocusOnTabClick = False
 
-> { ![](Tools-Controls_images/Tools-Controls_img1735.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1735.jpeg)' | markdownify }}
 {:.image }
  _Note: The TabControlAdv.GetTabRect() method is used to get the Rectangle region of a Tab in client co-ordinates, given it's TabIndex._
 
@@ -92417,7 +92417,7 @@ End Sub
 
 The TabbedMDI package provides a new TabbedMDI layout mode (as an alternative to the default Cascade and Tiled modes), popularized by Visual Studio .NET. This framework was built with great consideration for ease of use, to avoid having to modify an existing MDI application in any way to enable the TabbedMDI mode. With a single method call, you can switch between TabbedMDI and RegularMDI layout modes. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1736.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1736.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92497,11 +92497,11 @@ frm.Show()
 
 4. Run the application. You will see Form2 tabbed inside Form1.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1737.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1737.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1738.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1738.jpeg)' | markdownify }}
 {:.image }
  _Note: The DetachFromMdiContainer method is used to detach an MDIParent from the TabbedMDIManager._
 
@@ -92627,7 +92627,7 @@ frm.Show()
 
 9. Run the application. You will see Form2 tabbed inside Form1.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1739.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1739.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92685,7 +92685,7 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 The various tab styles are listed in the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1740.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1740.png)' | markdownify }}
 {:.image }
 
 
@@ -92693,7 +92693,7 @@ The various tab styles are listed in the below image.
 
 The windows in the TabbedMDI framework can be arranged in four different styles. To set the styles of the windows, the MDIParent form should be detached from the TabbedMDIManager.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1741.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1741.jpeg)' | markdownify }}
 {:.image }
  _Note: The DetachFromMdiContainer method is used to detach an MDIParent from the TabbedMDIManager._ 
 
@@ -92741,7 +92741,7 @@ Me.LayoutMdi(MdiLayout.TileHorizontal)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1742.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1742.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92813,7 +92813,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1743.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1743.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92871,7 +92871,7 @@ Me.tabbedMDIManager.ShowCloseButton = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1744.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1744.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92895,7 +92895,7 @@ Me.tabbedMDIManager.CloseButtonColor = Color.Red
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1745.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1745.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93024,7 +93024,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1746.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1746.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93036,7 +93036,7 @@ MDI List
 
 TabbedMDIManager supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the TabbedMDI application. The MDI Children can arranged horizontally or vertically. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1747.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1747.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93251,7 +93251,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1748.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1748.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93317,7 +93317,7 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Green
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1749.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1749.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93361,7 +93361,7 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Black
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1750.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1750.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93437,7 +93437,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1751.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1751.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93507,7 +93507,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1752.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1752.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93517,7 +93517,7 @@ When using XP Menus in Essential Tools as the MDIContainer's Main Menu, this pro
 
 The XP Menus framework automatically handles the case when the MDIChild windows layout is managed by the TabbedMDIManager.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1753.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1753.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93567,7 +93567,7 @@ Me.dockingManager1.SetAsMDIChild(Uc, True)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1754.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1754.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93645,7 +93645,7 @@ Me.TabbedMDIManager1.ImageSize = New System.Drawing.Size(20, 20)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1755.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1755.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93669,7 +93669,7 @@ Me.tabbedMDIManager1.ThemesEnabled = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1756.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1756.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93695,7 +93695,7 @@ Description</td></tr>
 <tr>
 <td>
 GetTooltip</td><td>
-Gets the tooltips for the tabs associated with a form.{{ '_mdiChild_' | markdownify }} - indicates the MDIChild form to which the tooltip should be added.{{ '_tooltip_' | markdownify }} - indicates that the tooltip to be added is of type string.</td></tr>
+Gets the tooltips for the tabs associated with a form.{{{ ''_mdiChild_'' | markdownify }}} - indicates the MDIChild form to which the tooltip should be added.{{{ ''_tooltip_'' | markdownify }}} - indicates that the tooltip to be added is of type string.</td></tr>
 <tr>
 <td>
 SetTooltip</td><td>
@@ -93719,7 +93719,7 @@ Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1757.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1757.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93735,7 +93735,7 @@ The ContextMenuItem property is used to select the context menu that should be u
 
 Below image will reproduce the Context Menu feature available in an MDI application in TabbedMDI mode.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1758.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1758.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93847,11 +93847,11 @@ tabbedMDIManager.ContextMenuItem = contextMenuItem
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1759.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1759.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1760.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1760.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -93897,7 +93897,7 @@ Clears the state of the saved tab group.</td></tr>
 
 Make sure to call PersistNow method when you are done with writing into the serializer.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1761.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1761.jpeg)' | markdownify }}
 {:.image }
  _Note: The LoadTabGroupStates and SaveTabGroupStates methods get called automatically when you enable / disable TabbedMDI._
 
@@ -94710,7 +94710,7 @@ Dim ico As Icon = mdiChildForm.Icon
 
 ' Get the image with the preferred size.
 
-If ico.Size &lt;&gt; mdiTabPanel.ImageList.ImageSize Then
+If ico.Size <> mdiTabPanel.ImageList.ImageSize Then
 
 ' This will try to retrieve an image of the preferred size, if not found, it will create a zoomed version.
 
@@ -94856,7 +94856,7 @@ Private Sub tabbedMDIManager_TabControlAdded(ByVal sender As Object, ByVal args 
 
 End Sub
 
-> { ![](Tools-Controls_images/Tools-Controls_img1762.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1762.jpeg)' | markdownify }}
 {:.image }
 _Note: ActiveTabColor property work only for 2D, 3D, Workbook Mode, OneNoteStyle and not for other tabStyles._
 
@@ -95014,7 +95014,7 @@ End Sub
 
 The height between the Tab and the Control can be set using the BottomBorderHeight property of the TabHost. This property can be accessed by overriding the TabbdedMDIManager as shown in the code snippet.
 
-{ ![Description: Description: C:/Users/vallarasus/Desktop/CustomTabbedMDIManager.png](Tools-Controls_images/Tools-Controls_img1763.png) | markdownify }
+{{ '![Description: Description: C:/Users/vallarasus/Desktop/CustomTabbedMDIManager.png](Tools-Controls_images/Tools-Controls_img1763.png)' | markdownify }}
 {:.image }
 
 
@@ -95130,7 +95130,7 @@ End Class
 
 Essential Tools TabSplitterContainer control is a VS 2008 control which can have multiple tab pages grouped under primary or secondary pages, in a container, separated by a splitter. The splitter comes with advanced options like swapping of splitter pages, adjustable splitter position, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter. This user guide will easily guide you with the features of TabSplitterContainer control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1764.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1764.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95152,13 +95152,13 @@ Concepts and Features
 
 TabSplitterContainer control can be easily created through designer by just dragging and dropping onto the form. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1765.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1765.jpeg)' | markdownify }}
 {:.image }
 
 
 We can add primary or secondary pages using the below properties.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1766.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1766.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95304,7 +95304,7 @@ Me.Controls.Add(Me.tabSplitterContainer2)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1767.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1767.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95320,7 +95320,7 @@ This section will walk you through the core concepts of the TabSplitterContainer
 
 The splitter in the TabSplitterContainer control has in-built options for changing the orientation of the splitter and also to collapse or expand the splitter panes. Those options are illustrated below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1768.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1768.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95417,7 +95417,7 @@ Me.tabSplitterPage1.Visible = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1769.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1769.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95441,7 +95441,7 @@ Me.tabSplitterContainer1.SplitterPosition = 95
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1770.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1770.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95465,7 +95465,7 @@ Me.tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1771.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1771.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95587,7 +95587,7 @@ Me.tabSplitterContainer1.Collapsed = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1772.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1772.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95633,33 +95633,33 @@ To create TileLayout through designer:
 
 1. Drag and drop a TileLayout object from the controls toolbox into your form.
 
-{ ![C:/Users/aruna/Desktop/Pic5.png](Tools-Controls_images/Tools-Controls_img1773.png) | markdownify }
+{{ '![C:/Users/aruna/Desktop/Pic5.png](Tools-Controls_images/Tools-Controls_img1773.png)' | markdownify }}
 {:.image }
 
 
 2. Add LayoutGroup to the control in the designer as shown below.
 
-{ ![C:/Users/aruna/Desktop/Pic3.png](Tools-Controls_images/Tools-Controls_img1774.png) | markdownify }
+{{ '![C:/Users/aruna/Desktop/Pic3.png](Tools-Controls_images/Tools-Controls_img1774.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/aruna/Desktop/PIC1.png](Tools-Controls_images/Tools-Controls_img1775.png) | markdownify }
+{{ '![C:/Users/aruna/Desktop/PIC1.png](Tools-Controls_images/Tools-Controls_img1775.png)' | markdownify }}
 {:.image }
 
 
 3. Add ImageStreamer to the control in the designer as shown below.
 
-{ ![C:/Users/aruna/Desktop/Pic6.png](Tools-Controls_images/Tools-Controls_img1776.png) | markdownify }
+{{ '![C:/Users/aruna/Desktop/Pic6.png](Tools-Controls_images/Tools-Controls_img1776.png)' | markdownify }}
 {:.image }
 
 
 4. Change ImageStreamer’s back color.
 
-{ ![C:/Users/aruna/Desktop/Pic7.png](Tools-Controls_images/Tools-Controls_img1777.png) | markdownify }
+{{ '![C:/Users/aruna/Desktop/Pic7.png](Tools-Controls_images/Tools-Controls_img1777.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/diana/Desktop/AddImagesInImageStreamer.jpg](Tools-Controls_images/Tools-Controls_img1778.jpeg) | markdownify }
+{{ '![C:/Users/diana/Desktop/AddImagesInImageStreamer.jpg](Tools-Controls_images/Tools-Controls_img1778.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95933,7 +95933,7 @@ Code Sample
 
 
 
-> { ![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1779.png) | markdownify }
+> {{ '![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1779.png)' | markdownify }}
 {:.image }
 _Note: The specified field must be available in every subclass (object) defined in the hierarchical (nested) data collection._
 
@@ -95953,7 +95953,7 @@ Code Sample
 
 
 
-> { ![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1780.png) | markdownify }
+> {{ '![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1780.png)' | markdownify }}
 {:.image }
 _Note: The specified field must be available in every subclass (object) defined in the hierarchical (nested) data collection._
 
@@ -96189,7 +96189,7 @@ Code Sample
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1781.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1781.png)' | markdownify }}
 {:.image }
 
 
@@ -96239,7 +96239,7 @@ Code Sample
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1782.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1782.png)' | markdownify }}
 {:.image }
 
 
@@ -96287,7 +96287,7 @@ Code Sample
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Tools-Controls_images/Tools-Controls_img1783.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Tools-Controls_images/Tools-Controls_img1783.png)' | markdownify }}
 {:.image }
 
 
@@ -96333,7 +96333,7 @@ Code Sample
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1784.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1784.png)' | markdownify }}
 {:.image }
 
 
@@ -96430,7 +96430,7 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1786.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1786.png)' | markdownify }}
 {:.image }
 
 
@@ -96564,7 +96564,7 @@ Code Sample
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1790.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1790.png)' | markdownify }}
 {:.image }
 
 
@@ -96578,7 +96578,7 @@ Code Sample
 
   ToolTipInfo itemInfoHead = new ToolTipInfo();
 
-            itemInfoHead.ToolTipHeaderPattern = "&lt;b&gt;{Label}&lt;/b&gt;";
+            itemInfoHead.ToolTipHeaderPattern = "<b>{Label}</b>";
 
             itemInfoHead.ToolTipContentPattern = "Growth \t  :  {Growth} % ";
 
@@ -96586,7 +96586,7 @@ Code Sample
 
             ToolTipInfo itemInfo = new ToolTipInfo();
 
-            itemInfo.ToolTipHeaderPattern = "&lt;b&gt;{Country}&lt;/b&gt;";
+            itemInfo.ToolTipHeaderPattern = "<b>{Country}</b>";
 
             itemInfo.ToolTipContentPattern = "Growth \t      :  {Growth} %  \nPopulation   :  {StrPopulation}  ";
 
@@ -96596,7 +96596,7 @@ Code Sample
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1791.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1791.png)' | markdownify }}
 {:.image }
 
 
@@ -96798,7 +96798,7 @@ void treeMap_LeafItemDrawing(object sender, LeafItemDrawingEventArgs e)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1792.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1792.png)' | markdownify }}
 {:.image }
 
 
@@ -96810,7 +96810,7 @@ The Essential Tools' TreeViewAdv control implements a classical tree structure w
 * The top level nodes and the children nodes of the TreeNodeAdv can be accessed through the node's properties.
 * While the TreeViewAdv exposes some global styles that are to be applied for all the nodes, the TreeNodeAdv lets the users to specify styles for a specific node. The Styles Architecture which will be discussed later in this section, lets the users to define styles for nodes at different levels of the tree. This allows the users to specify styles for a class of nodes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1793.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1793.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -96861,7 +96861,7 @@ Office2007ScrollBars
 
 TreeViewAdv provides support for Office2007Scrollbars with all the three color schemes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1794.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1794.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -96902,14 +96902,14 @@ Tree nodes can be added to the control at design time as follows.
 3. Select the TreeViewAdv control in the form. In theproperties, click the ellipsis button of the Nodes property to open the NodeCollection Editor. You can also open this editor using task window or by right clicking the control and selecting Node Editor.
 4. This TreeViewAdv NodeCollection Editor can also be invoked by clicking the Node Editor option, which appears when the TreeViewAdv control is right clicked at the design time. User can also add top level nodes by clicking the Add Node option. The below image illustrates the same. The nodes added can be customized using the NodeCollection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1795.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1795.jpeg)' | markdownify }}
 {:.image }
 
 
 5. Click "Add Node". This will add a new top-level node.
 6. The node's properties will be displayed in the property grid to the right. Specify a custom label for the node by changing its text property as shown in the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1796.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1796.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97041,7 +97041,7 @@ node.Nodes.Add(New TreeNodeAdv("Child 1"))
 8. Run the application.
 9. The resulting form is shown in the below image.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1797.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1797.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97067,7 +97067,7 @@ This section discusses the following topics.
 
 The TreeViewAdv control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the TreeViewAdv controls. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1798.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1798.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97157,7 +97157,7 @@ It is the space provided between the RightImage of the node and node.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1799.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1799.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97193,7 +97193,7 @@ It is the StateImageList index value of the image that is displayed, when a tree
 StateImageList</td><td>
 This indicates the imagelist that holds the images to be drawn based on the state of the Node.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1800.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1800.jpeg)' | markdownify }}
 {:.image }
  _Note: The above properties can also be set for individual nodes._
 
@@ -97251,7 +97251,7 @@ Me.stateImageList.ImageSize = New System.Drawing.Size(15, 15)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1801.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1801.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97316,15 +97316,15 @@ It is the imageindex for expand button.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1802.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1802.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1803.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1803.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1804.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1804.jpeg)' | markdownify }}
 {:.image }
  _Note: You can customize the background of the plusminus control. Click here to know more about this._
 
@@ -97406,7 +97406,7 @@ Me.treeViewAdv1.ShowPlusMinus = True
 
 Me.treeViewAdv1.ShowRootLines = True
 
-> { ![](Tools-Controls_images/Tools-Controls_img1805.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1805.jpeg)' | markdownify }}
 {:.image }
  _Note: ShowPlusMinus properties can also be set for individual nodes._
 
@@ -97473,7 +97473,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1806.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1806.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97549,7 +97549,7 @@ End Sub
 
 Given below is a screen shot of this.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1807.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1807.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97593,7 +97593,7 @@ Indicates if the checkbox of the node is visible.</td></tr>
 InteractiveCheckBox</td><td>
 Indicates if the node will have an interactive checkbox.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1808.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1808.jpeg)' | markdownify }}
 {:.image }
  _Note: On Changing the checkstate of the checkbox, AfterInteractiveChecks event will be triggered._
 
@@ -97661,7 +97661,7 @@ TreeNodeAdv8.Checked = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1809.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1809.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97723,7 +97723,7 @@ treeNodeAdv8.OptionButtonColor = System.Drawing.Color.MediumAquamarine
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1810.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1810.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97745,7 +97745,7 @@ Indicates if the buttons that are displayed, are enabled for the particular node
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1811.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1811.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -97755,13 +97755,13 @@ Tree Nodes can hold controls using this Custom Controls feature. This widens the
 
 Any custom control can be dragged and dropped to the form and selected using TreeNodeAdv.CustomControls property
 
-{ ![](Tools-Controls_images/Tools-Controls_img1812.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1812.jpeg)' | markdownify }}
 {:.image }
 
 
 We can also add functionality based on the changes made to the CustomControls.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1813.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1813.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -98269,11 +98269,11 @@ End Sub
 
 The below image indicates dragging of "Brazil" node.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1814.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1814.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1815.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1815.jpeg)' | markdownify }}
 {:.image }
  _Note: You can also display a highlighted line while dragging which has unique functionalities like keeping track of the drag drop operation. Click here to know more about this feature._
 
@@ -98313,7 +98313,7 @@ Specifies whether a semitransparent image of the selected node is drawn besides 
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1816.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1816.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -98385,7 +98385,7 @@ Me.treeViewAdv1.GetHeightOfRows(1, 2)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1817.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1817.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -98543,11 +98543,11 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1818.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1818.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1819.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1819.jpeg)' | markdownify }}
 {:.image }
  _Note: We can also prevent drawing highlight for some nodes using QueryAllowedPositionForNode event._
 
@@ -98611,7 +98611,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1820.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1820.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -98659,7 +98659,7 @@ Me.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectSameLevel
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1821.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1821.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -98683,7 +98683,7 @@ Extends the selection of the node to a specified node.SelNode - Represents a tre
 ExtendSelectionTo (Overloaded)</td><td>
 SelNode - Represents a treeNodeAdv.removeCurrentMultipleSelection - Indicates whether or not any current selection should be removed.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1822.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1822.jpeg)' | markdownify }}
 {:.image }
  _Note : This method will be effective only when the SelectionMode is MultiSelectSameLevel or MultiSelectAll._
 
@@ -98973,7 +98973,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1823.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1823.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99125,7 +99125,7 @@ Me.treeViewAdv1.ScrollTipFormat = "Position {0}"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1824.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1824.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99175,11 +99175,11 @@ Description</td></tr>
 <tr>
 <td>
 SizeGripStyle</td><td>
-Specifies if the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. The options are,{{ '_Show_' | markdownify }} - shows the sizing grip.{{ '_Auto_' | markdownify }} - shows the sizing grip whenever needed.{{ '_Hide_' | markdownify }} - Hides the sizing grip.</td></tr>
+Specifies if the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. The options are,{{{ ''_Show_'' | markdownify }}} - shows the sizing grip.{{{ ''_Auto_'' | markdownify }}} - shows the sizing grip whenever needed.{{{ ''_Hide_'' | markdownify }}} - Hides the sizing grip.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1825.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1825.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99187,7 +99187,7 @@ Office2007 Look and Feel for ScrollBars
 
 TreeViewAdv provides support for Office2007Scrollbars with all three color schemes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1826.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1826.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99240,7 +99240,7 @@ Enabling the HotTracking property to true and when the mouse hovers over any nod
 * The forecolor will change to blue and the text will be underlined with blue color, giving the node label a hyperlink appearance.
 * In the below image the node "France" is given a link approach by setting the HotTracking property to true and by moving the mouse over the node.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1827.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1827.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99286,7 +99286,7 @@ TreeView provides the shortcuts to access various properties of the control.
 
 TaskWindow can be accessed using smart tag.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1828.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1828.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99298,7 +99298,7 @@ It provides shortcuts to access the NodeCollection Editor using the context menu
 
 You can also add nodes using the "Add Node" option in the context menu.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1829.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1829.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99330,7 +99330,7 @@ Indicates the background color of the control. It provides options to set style,
 BackColor</td><td>
 Indicates the background color of the text and the graphics of the control.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1830.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1830.jpeg)' | markdownify }}
 {:.image }
  _Note: The Background property is available for individual nodes also._
 
@@ -99388,7 +99388,7 @@ Me.treeViewAdv1.TransparentControls = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1831.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1831.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99498,7 +99498,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1832.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1832.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99506,7 +99506,7 @@ Painting the active and inactive nodes
 
 Background for the selected node can be set using SelectedNodeBackground property. The selection rectangle gets grayed out when the TreeViewAdv loses focus. If the user still wishes to maintain the node's active colors, then the InactiveSelectedNodeBackground and InactiveSelectedNodeForeColor properties can be set. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1833.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1833.jpeg)' | markdownify }}
 {:.image }
  _Note: HideSelection property should be set to false to effect this setting._
 
@@ -99550,7 +99550,7 @@ Me.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1834.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1834.png)' | markdownify }}
 {:.image }
 
 
@@ -99562,7 +99562,7 @@ Using the Text and TextColor property, individual node's text can be edited and 
 
 Using the Font and the ForeColor properties of the control, the text and text color of the nodes can be set for all the nodes in the TreeView control.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1835.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1835.jpeg)' | markdownify }}
 {:.image }
  _Note: The font style for individual nodes, can be set using the Font property available for individual nodes using NodeCollection Editor._
 
@@ -99598,11 +99598,11 @@ Sets text for the node.</td></tr>
 TextColor</td><td>
 Sets the color for the specific node text.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1836.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1836.jpeg)' | markdownify }}
 {:.image }
  _Note: When you set the ForeColor property for TreeViewAdv control, it will get reflected in the Node's TextColor property. User can change the color for specific nodes using TreeNodeAdv.TextColor property._
 
-{ ![](Tools-Controls_images/Tools-Controls_img1837.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1837.png)' | markdownify }}
 {:.image }
 
 
@@ -99624,7 +99624,7 @@ Description</td></tr>
 BeforeNodePaint</td><td>
 Handled before a node is being painted.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1838.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1838.jpeg)' | markdownify }}
 {:.image }
  _Note: OwnerDrawNodes property should be set to true while handling this event._
 
@@ -99684,7 +99684,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1839.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1839.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99756,7 +99756,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the border style for the Treeview control.{{ '_FixedSingle_' | markdownify }} - a normal border,{{ '_Fixed3D_' | markdownify }} - 3D appearance.</td></tr>
+Sets the border style for the Treeview control.{{{ ''_FixedSingle_'' | markdownify }}} - a normal border,{{{ ''_Fixed3D_'' | markdownify }}} - 3D appearance.</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
@@ -99764,7 +99764,7 @@ Indicates the style of the 3D border when BorderStyle is set to Fixed3D.RaisedOu
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1840.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1840.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99772,7 +99772,7 @@ Indicates the style of the 3D border when BorderStyle is set to Fixed3D.RaisedOu
 
 The following properties let you set customized 2D border.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1841.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1841.jpeg)' | markdownify }}
 {:.image }
  _Note: The settings will effect only when TreeViewAdv.BorderStyle property is set to FixedSingle._
 
@@ -99820,7 +99820,7 @@ Me.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1842.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1842.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99866,7 +99866,7 @@ Me.treeViewAdv1.Indent = 21
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1843.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1843.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99876,7 +99876,7 @@ The tree control employs an extensive Styles Architecture, that let users specif
 
 As illustrated below, implicit style inheritance is enforced by the framework while explicit style inheritance can be setup by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1844.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1844.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99911,7 +99911,7 @@ Indicates the base style of the nodes.</td></tr>
 
 StandardStyle is the default style for the nodes. It can be edited using StandardStyle property. It can also be edited through BaseStyles Collection Editor dialog.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1845.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1845.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99921,13 +99921,13 @@ Setting a Common Style for All the Nodes in the TreeViewAdv
 
 We can modify the background for all the children of a parent node by editing the StandardStyle property. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1846.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1846.jpeg)' | markdownify }}
 {:.image }
 
 
 The below image displays a gradient style for all the nodes of the TreeView control.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1847.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1847.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99937,19 +99937,19 @@ Make a Node's Style Inherit from Another Base Style
 
  Apart from the default style (Standard Style),we can also create custom Base styles using the Base Styles Collection Editor. Clicking the Add Base Style button, will add a new BaseStyle whose properties can be edited.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1848.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1848.jpeg)' | markdownify }}
 {:.image }
 
 
 This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1849.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1849.jpeg)' | markdownify }}
 {:.image }
 
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1850.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1850.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99961,11 +99961,11 @@ This topic illustrates how the appearance of all the children of a particular no
 
 In the Node Collection Editor, modify the settings in the TreeNodeAdv.ChildStyle property. These changes will be reflected in the child node of this node.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1851.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1851.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1852.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1852.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -99975,19 +99975,19 @@ Setting a Common Style for all the Nodes in a Level
 
 TreeView lets you add node level styles using the BaseStyles Collection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1853.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1853.jpeg)' | markdownify }}
 {:.image }
 
 
 By default this style will be applied to the first level nodes as shown in the image below.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1854.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1854.jpeg)' | markdownify }}
 {:.image }
 
 
 You can also apply this style to any of the node by using TreeNodeAdv.BaseStyle property for a particular node.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1855.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1855.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -100183,7 +100183,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1856.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1856.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -100627,7 +100627,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1857.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1857.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -100716,7 +100716,7 @@ TreeNodeAdv9.Comparer = Null
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1858.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1858.png)' | markdownify }}
 {:.image }
 
 
@@ -100760,7 +100760,7 @@ Calling this method will stop the redraws of the control and makes the node addi
 EndUpdate</td><td>
 Resumes the painting of the control suspended by BeginUpdate method.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1859.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1859.jpeg)' | markdownify }}
 {:.image }
  _Note: While adding more than one node to the treeViewAdv control, calling the BeginUpdate and EndUpdate method will improve performance of the control._
 
@@ -101208,7 +101208,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1860.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1860.png)' | markdownify }}
 {:.image }
 
 
@@ -101477,7 +101477,7 @@ End Sub
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1861.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1861.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -102143,7 +102143,7 @@ Console.Write("TreeNodeAdv :" + e.Node.ToString())
 
 End Sub
 
-> { ![](Tools-Controls_images/Tools-Controls_img1862.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1862.jpeg)' | markdownify }}
 {:.image }
  _Note: Another use case illustrating this event -_ How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit? 
 
@@ -102300,11 +102300,11 @@ End Sub
 
 The following figure shows the color change for some of the nodes of the user that indicates the canceled Read/Write property for that node.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1863.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1863.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1864.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1864.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -103771,7 +103771,7 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1865.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1865.jpeg)' | markdownify }}
 {:.image }
  _Note: Nodes can also be added using Nodes.Add method._
 
@@ -105293,7 +105293,7 @@ Next node
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1866.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1866.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -105465,7 +105465,7 @@ End Sub
 
 Given below is a screen shot of sorting the nodes in ascending order.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1867.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1867.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -105563,7 +105563,7 @@ Given below are screen shots depicting this process.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1868.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1868.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -105761,7 +105761,7 @@ Me.treeViewAdv1.Nodes(1).CustomControlLocation = New Point(60, 15)
 
 The TreeNavigator control provides an interface that allows you to navigate through hierarchical information without using excessive screen space. Items in the control are expanded or collapsed, and you can drill down to sub-items by simply clicking on items in the TreeNavigator. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1869.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1869.png)' | markdownify }}
 {:.image }
 
 
@@ -105785,7 +105785,7 @@ This section briefly describes how to design a TreeNavigator Control in a Window
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1870.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1870.png)' | markdownify }}
 {:.image }
 
 
@@ -105793,7 +105793,7 @@ This section briefly describes how to design a TreeNavigator Control in a Window
 
 The most commonly used settings of the TreeNavigator control are configured either through Designer using the Smart tag or through the Properties window or through code.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1871.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1871.png)' | markdownify }}
 {:.image }
 
 
@@ -105887,7 +105887,7 @@ Me.treeNavigator.Items.Add(Me.treeMenuItem1)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1872.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1872.png)' | markdownify }}
 {:.image }
 
 
@@ -105902,7 +105902,7 @@ Me.treeNavigator.Items.Add(Me.treeMenuItem1)
 
 In this Default mode, the header of current hierarchy level item is displayed at the top of the TreeNavigator with the back button. This back button is used to navigate towards the root from the current level. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1873.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1873.png)' | markdownify }}
 {:.image }
 
 
@@ -105928,7 +105928,7 @@ Me.treeNavigator1.NavigationMode = NavigationMode.Default
 
 In the Extended mode, header of each level from the root to current level stacked one by one at the top of the TreeNavigator.  When you click on any of that header it take you to the corresponding level. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1874.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1874.png)' | markdownify }}
 {:.image }
 
 
@@ -106253,7 +106253,7 @@ Me.TreeMenuItem1.ItemBackColor = Color.FromArgb(243, 241, 243)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1875.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1875.png)' | markdownify }}
 {:.image }
 
 
@@ -106281,7 +106281,7 @@ Me.TreeNavigator1.BorderThickness = 5
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1876.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1876.png)' | markdownify }}
 {:.image }
 
 
@@ -106300,7 +106300,7 @@ It consists of two controls.
 
 The WizardControl can display a set of wizard pages in the given order. It also provides the user, the ability to browse between these pages using the 'browsing' buttons. The WizardControl implements the classic Wizard interface used in many windows applications. It also contains inbuilt child controls like labels, picturebox and gradient panel to let the user customize it effectively.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1877.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1877.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106320,7 +106320,7 @@ This section discusses the Features of Wizard control.
 
 Components of a Wizard Control
 
-{ ![](Tools-Controls_images/Tools-Controls_img1878.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1878.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106345,13 +106345,13 @@ To create a basic wizard, follow the below steps.
 
 * Add the WizardControl from the Toolbox to the form, in the designer.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1879.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1879.jpeg)' | markdownify }}
 {:.image }
 
 
 * Set the WizardControl.Dock property to Fill.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1880.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1880.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106364,7 +106364,7 @@ See Options to Add Page, Remove Page, Previous page and Next Page topic for more
 
 * Accessing WizardControl.WizardPages property will invoke WizardControlPage Collection Editor which also lets you add or remove pages.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1881.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1881.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106394,13 +106394,13 @@ Me.wizardControl1.SelectedWizardPage = Me.wizardControlPage2
 
 * Wizard Control comes with properties which controls its appearance and behavior. Set FullPage property of WizardControlPage1 to True if you wish to hide the header portion in the first page. Put a label control on this wizard page with introductory text. Also set BackVisible property of wizard page to False to hide the back button since this is the first page. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1882.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1882.jpeg)' | markdownify }}
 {:.image }
 
 
 * The output will be as follows.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1883.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1883.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106436,7 +106436,7 @@ Sets the label that can describe the current page.</td></tr>
 Title</td><td>
 Sets the title of the current page.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1884.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1884.jpeg)' | markdownify }}
 {:.image }
  _Note: The Title and Description settings can be set for individual Wizard Pages using WizardPage.Title and WizardPage.Description properties respectively. See_ Wizard Page Settings_._
 
@@ -106476,11 +106476,11 @@ Me.gradientPanel1.Controls.Add(Me.label2)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1885.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1885.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1886.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1886.jpeg)' | markdownify }}
 {:.image }
  _Note: The appearance of a Banner panel can be customized using the properties of the gradient panel. See_ Border styles _for border settings of a Banner Panel._
 
@@ -106562,7 +106562,7 @@ Sets the forecolor for the Page Title in the Wizard Control.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1887.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1887.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106590,7 +106590,7 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1888.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1888.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106616,7 +106616,7 @@ Sets the forecolor for the Page description in the Wizard Control.</td></tr>
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1889.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1889.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106644,11 +106644,11 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1890.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1890.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1891.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1891.jpeg)' | markdownify }}
 {:.image }
  _Note: A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using WizardPage.Title and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page._
 
@@ -106700,7 +106700,7 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1892.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1892.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106726,7 +106726,7 @@ The individual Wizard page is identified using its LayoutName in the SelectedWiz
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1893.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1893.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106762,7 +106762,7 @@ Me.wizardControlPage1.FullPage = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1894.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1894.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106786,13 +106786,13 @@ By default, the WizardControl will use the order in which the pages are added to
 
 * Select the WizardControl and choose WizardPages property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1895.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1895.jpeg)' | markdownify }}
 {:.image }
 
 
 * In the designer, right click on a page and choose 'Bring To Front' or 'Send To Back' options which will move the page to the beginning or to the end of the collection, respectively.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1896.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1896.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106846,7 +106846,7 @@ How to Programmatically control the Page Sequence?
 
 The default buttons which are available for the Wizard control are Back, Next, Cancel and Help. The Next and the Back buttons facilitates users to navigate between wizard pages. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1897.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1897.jpeg)' | markdownify }}
 {:.image }
  _Note: You can navigate between the pages at Design Time also. See Page Navigation at Design time topic for more details._
 
@@ -106882,7 +106882,7 @@ Specifies whether to display the 'Help' button.</td></tr>
 NextVisible</td><td>
 Specifies whether to display the 'Next' button.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1898.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1898.jpeg)' | markdownify }}
 {:.image }
  _Note: When you use more than one wizard page, you may set the BackVisible property of the first page to true to hide the back button._
 
@@ -107026,7 +107026,7 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1899.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1899.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107034,7 +107034,7 @@ Reordering the Button Sequence
 
 In order to change the position of the buttons, user should handle the GridPosX property and change the position programmatically.
 
-> { ![](Tools-Controls_images/Tools-Controls_img1900.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1900.jpeg)' | markdownify }}
 {:.image }
  _Note: Wizard control automatically sets position for some buttons after page change. Setting the position for controls manually, is not supported in those cases._
 
@@ -107074,7 +107074,7 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.HelpButton).
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1901.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1901.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107172,15 +107172,15 @@ this.wizardControl1.CancelButton.FlatAppearance.MouseOverBackColor = System.Draw
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1902.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1902.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1903.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1903.jpeg)' | markdownify }}
 {:.image }
  _Note: You can access the properties of CancelButton, FinishButton, HelpButton and NextButton using WizardControl.CancelButton, WizardControl.FinishButton, WizardControl.HelpButton and WizardControl.NextButton properties respectively._
 
-{ ![](Tools-Controls_images/Tools-Controls_img1904.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1904.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107194,25 +107194,25 @@ This section will guide you with various options available in the designer to ad
 
 Using Property Grid
 
-{ ![](Tools-Controls_images/Tools-Controls_img1905.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1905.jpeg)' | markdownify }}
 {:.image }
 
 
 Using Smart Tag
 
-{ ![](Tools-Controls_images/Tools-Controls_img1906.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1906.jpeg)' | markdownify }}
 {:.image }
 
 
 Using Context menu
 
-{ ![](Tools-Controls_images/Tools-Controls_img1907.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1907.jpeg)' | markdownify }}
 {:.image }
 
 
 Property Grid Commands
 
-{ ![](Tools-Controls_images/Tools-Controls_img1908.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1908.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107222,7 +107222,7 @@ This section will guide you with page selection options at design time.
 
 * We can easily navigate between the Wizard pages using the Next and Back buttons in the designer. These buttons are selectable at design time. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1909.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1909.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107230,7 +107230,7 @@ This section will guide you with page selection options at design time.
 * See Options to Add Page, Remove Page, Previous page and Next Page topic, to see the Next page and Previous page options in smart tag and context menu.
 * You can also do the page selection using SelectedWizardPage or CardLayout property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1910.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1910.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107264,7 +107264,7 @@ Sets the font style for the display text in the wizard control.</td></tr>
 ForeColor</td><td>
 Sets the fore color for the display text in the control.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1911.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1911.jpeg)' | markdownify }}
 {:.image }
  _Note: These WizardControl.Font property will be applied only to the Description text and the Button texts of the Wizard Page. WizardControl.ForeColor property will be applied to the Page Title and description text alone. To set Font style for Title and description, see Title and Description Settings topic._
 
@@ -107292,11 +107292,11 @@ Me.wizardControl1.ForeColor = System.Drawing.Color.DarkBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1912.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1912.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1913.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1913.jpeg)' | markdownify }}
 {:.image }
  _Note: These settings can be overridden by the individual WizardPage.Font and WizardPage.ForeColor settings._ 
 
@@ -107344,7 +107344,7 @@ Me.wizardControl1.ForeColor = System.Drawing.Color.Black
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1914.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1914.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107392,11 +107392,11 @@ Me.wizardControl1.BackColor = System.Drawing.Color.LightSteelBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1915.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1915.jpeg)' | markdownify }}
 {:.image }
 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1916.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1916.jpeg)' | markdownify }}
 {:.image }
  _Note: By default the background settings of the Wizard control will be overridden by the Wizard Container background settings._
 
@@ -107446,7 +107446,7 @@ Me.gradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1917.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1917.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107496,7 +107496,7 @@ Me.wizardControlPage2.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1918.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1918.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107526,7 +107526,7 @@ Me.wizardControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1919.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1919.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107545,7 +107545,7 @@ Banner Panel is a simple gradient panel whose 3D border styles are as follows.
 * Adjust
 * Flat
 > 
-{ ![](Tools-Controls_images/Tools-Controls_img1920.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1920.jpeg)' | markdownify }}
 {:.image }
  _Note: The GradientPanel.BorderStyle property should be set to "Fixed3D" to make this setting effective._
 
@@ -107569,7 +107569,7 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1921.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1921.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107849,7 +107849,7 @@ Me.textBox1.Focus()
 
 
 
-Else If Me.textBox1.Text &lt;&gt; "Next" Then
+Else If Me.textBox1.Text <> "Next" Then
 
 MessageBox.Show("Correct Value needed.","Incorrect value",MessageBoxButtons.OK,MessageBoxIcon.Warning)
 
@@ -107903,7 +107903,7 @@ NewPage.Description = "Give a Finish Text"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1922.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1922.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108158,7 +108158,7 @@ The XPTaskPane is a container control that can host a number of XP TaskPage, whi
 
 The XPTaskPane control was inspired by the Office XP taskpane feature. The control internally uses a CardLayout to show one page at a time. The header panel allows the user to select one page at a time. The control comes with complete design-time support.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1923.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1923.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108174,7 +108174,7 @@ This section covers the features of XPTaskPane control.
 * Visual styles - XPTaskPane supports visual styles Office XP and Office 2007 with all three color schemes that defines the look and feel of the application.
 * Custom Colors can be applied for XPTaskPane control. See Visual Styles topic.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1924.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1924.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108189,7 +108189,7 @@ Segments of an XPTaskPane Control
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1925.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1925.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108197,36 +108197,36 @@ Segments of an XPTaskPane Control
 
 This section demonstrates how to create a simple XPTaskPane.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1926.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1926.jpeg)' | markdownify }}
 {:.image }
 
 
 * Add the XPTaskPane control to your empty form in the designer and set its Dock property to right. 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1927.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1927.jpeg)' | markdownify }}
 {:.image }
 
 
 * Add pages to the TaskPane using: "Add Page" option in the smart tag.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1928.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1928.jpeg)' | markdownify }}
 {:.image }
 
 
 * Add Page option in context menu of the Header.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1929.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1929.jpeg)' | markdownify }}
 {:.image }
 
 
 * "Add Page" command in Property grid.
 * XPTaskPage Collection Editor which can be opened by accessing TaskPages property of the control. You can use Remove page option to remove a page.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1930.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1930.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1931.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1931.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108271,7 +108271,7 @@ Me.xpTaskPage1.Title = "Document"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1932.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1932.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108335,7 +108335,7 @@ Me.xpTaskPage1.LayoutName = "Card1"
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1933.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1933.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108393,7 +108393,7 @@ Me.xpTaskPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1934.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1934.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108421,7 +108421,7 @@ Me.xpTaskPage1.ForeColor = System.Drawing.Color.SteelBlue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1935.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1935.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108431,13 +108431,13 @@ When the end user adds a page to the XPTaskPane control, the order of the page i
 
 * Through XPTaskPage Collection Editor.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1936.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1936.jpeg)' | markdownify }}
 {:.image }
 
 
 * Select a page in the designer and choose the 'Bring To Front' or 'Send To Back' verb which will move the page to the beginning of the collection or to the end of the collection, respectively.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1937.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1937.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108445,7 +108445,7 @@ Going to Next Page or Previous Page
 
 * Right Click a page in the designer and choose the 'Previous Page' or 'Next Page' verb which will show you the page, which is before the current page or the page which is after the current page. These options can also be accessed through smart tag and property grid commands.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1938.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1938.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108469,7 +108469,7 @@ It sets the next page for XP TaskPane.</td></tr>
 PreviousPage</td><td>
 It sets the previous page for XP TaskPane.</td></tr>
 </table>
-> { ![](Tools-Controls_images/Tools-Controls_img1939.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1939.jpeg)' | markdownify }}
 {:.image }
  _Note: The TaskPane follows this order at run time._
 
@@ -108501,7 +108501,7 @@ XPTaskPane Foreground
 
 Font style and fore color of the Task pages can be set using XPTaskPane.Font and XPTaskPane.ForeColor properties. 
 
-> { ![](Tools-Controls_images/Tools-Controls_img1940.jpeg) | markdownify }
+> {{ '![](Tools-Controls_images/Tools-Controls_img1940.jpeg)' | markdownify }}
 {:.image }
  _Note: These settings can be overridden by individual XPTaskPage.Font and XPTaskPage.ForeColor properties._
 
@@ -108547,7 +108547,7 @@ Me.xpTaskPane1.HeaderLabel.ForeColor = System.Drawing.Color.Navy
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1941.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1941.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108575,7 +108575,7 @@ Me.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1942.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1942.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108619,7 +108619,7 @@ Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1943.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1943.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108647,7 +108647,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Lime)
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1944.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1944.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108659,7 +108659,7 @@ The header section by default has four toolbar items. Left and right navigating 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1945.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1945.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108669,7 +108669,7 @@ The header section by default has four toolbar items. Left and right navigating 
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1946.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1946.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108767,7 +108767,7 @@ Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1947.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1947.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108813,7 +108813,7 @@ Me.xpTaskPane1.HeaderMenuItem.ImageIndex = 1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1948.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1948.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -108859,7 +108859,7 @@ Me.xpTaskPane1.VerticalScroll = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1949.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1949.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -109136,11 +109136,11 @@ LocalizationProvider.Provider = New Localizer()
 
 
 
-{ ![Localization.png](Tools-Controls_images/Tools-Controls_img1950.png) | markdownify }
+{{ '![Localization.png](Tools-Controls_images/Tools-Controls_img1950.png)' | markdownify }}
 {:.image }
 
 
-> { ![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1951.png) | markdownify }
+> {{ '![C:/Users/ApoorvahR/Desktop/Note.png](Tools-Controls_images/Tools-Controls_img1951.png)' | markdownify }}
 {:.image }
  _Note: This localization procedure is applicable only for the UI’s specific to the Syncfusion.Tools.Windows and Syncfusion.Shared.Base assemblies._ 
 
@@ -109382,7 +109382,7 @@ Public Function GetLocalizedString(ByVal culture As System.Globalization.Culture
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1952.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1952.png)' | markdownify }}
 {:.image }
 
 
@@ -109409,28 +109409,28 @@ Syncfusion components have their own neutral resources, and these resources can 
 
 Tools.Windows:
 
-C:\Program Files\Syncfusion\Essential Studio\&lt;version&gt;\Windows\Tools.Windows\Localization\
+C:\Program Files\Syncfusion\Essential Studio\<version>\Windows\Tools.Windows\Localization\
 
 Shared.Base:
 
-C:\Program Files\Syncfusion\Essential Studio\&lt;version&gt;\Base\Shared.Base\Localization
+C:\Program Files\Syncfusion\Essential Studio\<version>\Base\Shared.Base\Localization
 
 1. Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English (default and neutral) culture.
 2. Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows you to construct resource files containing bitmaps, icons, and strings.
 3. Compile the source code using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1953.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1953.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1954.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1954.png)' | markdownify }}
 {:.image }
 
 
 4. Using the Resource Editor, open the resource file named Syncfusion.Windows.Forms.Tools.SR.resources present in the NeutralResources folder. The previous figure shows all string resources displayed in the tool.
 5. Now the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language will be used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ende”.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1955.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1955.png)' | markdownify }}
 {:.image }
 
 
@@ -109439,7 +109439,7 @@ C:\Program Files\Syncfusion\Essential Studio\&lt;version&gt;\Base\Shared.Base\Lo
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1956.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1956.png)' | markdownify }}
 {:.image }
 
 
@@ -109473,7 +109473,7 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 
 15. Now run your application containing the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog will appear in German, as shown in the following figure:
 
-{ ![](Tools-Controls_images/Tools-Controls_img1957.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1957.png)' | markdownify }}
 {:.image }
 
 
@@ -109483,7 +109483,7 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 
 HubTile is a content control that functions as live tiles in an application for user interface. Its content updates are shown by a variety of animations, similar to the live tile updates of Windows 8 and Windows Phone. The control provides notifications by various transition effects. A HubTile can have an image, title, body and footer for updation in the tile.
 
-{ ![loadimage](Tools-Controls_images/Tools-Controls_img1958.png) | markdownify }
+{{ '![loadimage](Tools-Controls_images/Tools-Controls_img1958.png)' | markdownify }}
 {:.image }
 
 
@@ -109505,7 +109505,7 @@ This section briefly describes how to design a HubTile control in a Windows Form
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drop a HubTile control on the Form.
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1959.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1959.png)' | markdownify }}
 {:.image }
 
 
@@ -109515,11 +109515,11 @@ The most commonly used settings of the HubTile control can be configured either 
 
 
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1960.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1960.png)' | markdownify }}
 {:.image }
 
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1961.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1961.png)' | markdownify }}
 {:.image }
 
 
@@ -109571,7 +109571,7 @@ Me.HubTile1.ImageSource  = Me.ImageListAdv1.Images(0)
 
 
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1962.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1962.png)' | markdownify }}
 {:.image }
 
 
@@ -109616,7 +109616,7 @@ Me.HubTile1.SlideTransition = TransitionDirection.LeftToRight
 
 
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1963.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1963.png)' | markdownify }}
 {:.image }
 
 
@@ -109640,7 +109640,7 @@ Me.HubTile1.ImageTransitionSpeed = 3
 
 This Tile type resembles the Music and Video HubTile in Windows Phone. The image content of HubTile can be zoomed in and out randomly. 
 
-{ ![zoomtile](Tools-Controls_images/Tools-Controls_img1964.png) | markdownify }
+{{ '![zoomtile](Tools-Controls_images/Tools-Controls_img1964.png)' | markdownify }}
 {:.image }
 
 
@@ -109724,7 +109724,7 @@ Horizontal Transition
 
 Tile is rotated horizontally. The following image illustrates Horizontal rotation.
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1965.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1965.png)' | markdownify }}
 {:.image }
 
 
@@ -109746,7 +109746,7 @@ Vertical Transition
 
 Tile gets rotated vertically. The following image illustrates the Verticalrotation.
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1966.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1966.png)' | markdownify }}
 {:.image }
 
 
@@ -109804,7 +109804,7 @@ Banner Visibility
 
 HubTile provides support to render Banner similar to Windows 8 live tiles. 
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1967.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1967.png)' | markdownify }}
 {:.image }
 
 
@@ -109820,7 +109820,7 @@ this.HubTile1.ShowBanner = true;
 
 Me.HubTile1.ShowBanner = True
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1968.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1968.jpeg)' | markdownify }}
 {:.image }
 _Note: Banner visibility customization is applicable only for DefaultTile type._
 
@@ -109848,7 +109848,7 @@ Me.HubTile1.Banner.TextColor  = Color.White
 
 
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1969.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1969.jpeg)' | markdownify }}
 {:.image }
 _Note: Banner Text properties are applicable only for DefaultTile and RotateTile types._
 
@@ -109856,7 +109856,7 @@ Banner Icon
 
 In Banner, icons can be added, like the following image. Use the following code example to create a Banner icon.
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1970.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1970.png)' | markdownify }}
 {:.image }
 
 
@@ -109876,7 +109876,7 @@ Me.HubTile1.BannerIcon = Me.ImageListAdv1.Images[0]
 
 
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1971.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1971.jpeg)' | markdownify }}
 {:.image }
 _Note: Banner Icon customization is applicable only for DefaultTile type._
 
@@ -109884,7 +109884,7 @@ Banner Color
 
 HubTileBanner color can be changed using the BannerColor property. 
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1972.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1972.png)' | markdownify }}
 {:.image }
 
 
@@ -109902,7 +109902,7 @@ Me.HubTile1.BannerColor= Color.Green
 
 
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1973.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1973.jpeg)' | markdownify }}
 {:.image }
 _Note: BannerColor is applicable only for DefaultTile and RotateTile types._
 
@@ -109910,7 +109910,7 @@ Selection Marker
 
 HubTile provides selection marker support similar to Windows 8 Start screen tile. 
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1974.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1974.png)' | markdownify }}
 {:.image }
 
 
@@ -109926,7 +109926,7 @@ this.HubTile1.IsSelectionMarked = true;
 
 Me.HubTile1.IsSelectionMarked = True
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1975.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1975.jpeg)' | markdownify }}
 {:.image }
 _Note: Selection Marker is applicable only for DefaultTile type._
 
@@ -109956,7 +109956,7 @@ Me.HubTile1.SelectionArrowColor = Color.White
 
 
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1976.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1976.jpeg)' | markdownify }}
 {:.image }
 _Note: SelectionArrowColor is applicable only for DefaultTile type._
 
@@ -109984,7 +109984,7 @@ Me.HubTile1.SelectionMarkerColor = Color.Blue
 
 
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1977.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1977.jpeg)' | markdownify }}
 {:.image }
 _Note: SelectionMarkerColor is applicable only for DefaultTile type._
 
@@ -110040,7 +110040,7 @@ Me.HubTile1.ExpandOnHover= True
 
 
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1978.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1978.jpeg)' | markdownify }}
 {:.image }
 _Note: ExpandOnHover is applicable only for DefaultTile type._
 
@@ -110062,11 +110062,11 @@ Me.HubTile1.EnableTileSlideEffect = True
 
 
 
-> { ![note](Tools-Controls_images/Tools-Controls_img1979.jpeg) | markdownify }
+> {{ '![note](Tools-Controls_images/Tools-Controls_img1979.jpeg)' | markdownify }}
 {:.image }
 _Note: EnableTileSlideEffect is applicable only for DefaultTile and PulsingTile types._
 
-{ ![hub](Tools-Controls_images/Tools-Controls_img1980.png) | markdownify }
+{{ '![hub](Tools-Controls_images/Tools-Controls_img1980.png)' | markdownify }}
 {:.image }
 
 
@@ -110410,13 +110410,13 @@ Through Designer
 
 The following screenshot displays the ImageListAdv property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1981.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1981.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot displays the ImageList property.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1982.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1982.png)' | markdownify }}
 {:.image }
 
 
@@ -110728,7 +110728,7 @@ Me.RotateTile.TileType = HubTileType.DefaultTile
 
 The Radial Menu comprises a hierarchical menu in a circular layout. It is used as a context menu and configured with familiar items for quick access.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1983.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1983.png)' | markdownify }}
 {:.image }
 
 
@@ -110750,7 +110750,7 @@ This section briefly describes how to design a Radial Menu control in a Windows 
 1. Create a new Windows Forms Application Project in VS IDE through New ProjectWizard.
 2. Drop a Radial Menu Control in the Form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1984.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1984.png)' | markdownify }}
 {:.image }
 
 
@@ -110760,7 +110760,7 @@ The most commonly used settings of the Radial Menu Control are configured either
 
 The following screenshot displays the Radial Menu Control customization through smart tag.
 
-{ ![C:/Users/ashwini/Desktop/50x50/image5.png](Tools-Controls_images/Tools-Controls_img1985.png) | markdownify }
+{{ '![C:/Users/ashwini/Desktop/50x50/image5.png](Tools-Controls_images/Tools-Controls_img1985.png)' | markdownify }}
 {:.image }
 
 
@@ -110909,7 +110909,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1986.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1986.png)' | markdownify }}
 {:.image }
 
 
@@ -110917,7 +110917,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 Radial Color Palette is formed in Radial Menu with the Radial Color Items and it is used to update the color.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1987.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1987.png)' | markdownify }}
 {:.image }
 
 
@@ -110925,7 +110925,7 @@ Radial Color Palette is formed in Radial Menu with the Radial Color Items and it
 
 Radial Font List Box is formed in Radial Menu with installed font family and it is used to update the font style.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1988.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1988.png)' | markdownify }}
 {:.image }
 
 
@@ -110933,7 +110933,7 @@ Radial Font List Box is formed in Radial Menu with installed font family and it 
 
 Radial Menu Slider is formed in Radial Menu with minimum and maximum value and it is used to update the size.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1989.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1989.png)' | markdownify }}
 {:.image }
 
 
@@ -110941,7 +110941,7 @@ Radial Menu Slider is formed in Radial Menu with minimum and maximum value and i
 
 The Icon property of Radial Menu is used to customize the icon displayed in the center of Radial Menu circle. Icon is not displayed if it is not loaded.
 
-{ ![](Tools-Controls_images/Tools-Controls_img1990.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1990.png)' | markdownify }}
 {:.image }
 
 
@@ -110949,7 +110949,7 @@ The Icon property of Radial Menu is used to customize the icon displayed in the 
 
 ###### Drill Region
 
-{ ![](Tools-Controls_images/Tools-Controls_img1991.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1991.png)' | markdownify }}
 {:.image }
 
 
@@ -110967,7 +110967,7 @@ OuterArcColor is used to fill the drilldown region in the normal state.
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1992.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1992.png)' | markdownify }}
 {:.image }
 
 
@@ -110983,7 +110983,7 @@ OuterArcHighLightedColor property is used to fill the drilldown region while hov
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1993.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1993.png)' | markdownify }}
 {:.image }
 
 
@@ -111017,7 +111017,7 @@ this.radialMenu1.RimBackground = Color.Blue;
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1994.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1994.png)' | markdownify }}
 {:.image }
 
 
@@ -111045,7 +111045,7 @@ Me.RadialMenu1.OuterRimThickness = 20
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1995.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1995.png)' | markdownify }}
 {:.image }
 
 
@@ -111079,7 +111079,7 @@ Me.RadialMenu1.OuterArcGap = 50
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1996.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1996.png)' | markdownify }}
 {:.image }
 
 
@@ -111109,7 +111109,7 @@ Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. Image
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1997.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1997.png)' | markdownify }}
 {:.image }
 
 
@@ -111143,7 +111143,7 @@ Me.radialMenu1.WedgeCount = 8
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1998.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1998.png)' | markdownify }}
 {:.image }
 
 
@@ -111161,7 +111161,7 @@ Menu View is enabled by default on load using the following code example.
 </table>
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img1999.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img1999.png)' | markdownify }}
 {:.image }
 
 
@@ -111235,7 +111235,7 @@ Me.radialMenu1.UseIndexBasedOrder= true
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2000.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2000.png)' | markdownify }}
 {:.image }
 
 
@@ -111299,7 +111299,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 
 
-{ ![C:/Users/labuser/Desktop/a.png](Tools-Controls_images/Tools-Controls_img2001.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/a.png](Tools-Controls_images/Tools-Controls_img2001.png)' | markdownify }}
 {:.image }
 
 
@@ -111361,7 +111361,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2002.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2002.png)' | markdownify }}
 {:.image }
 
 
@@ -111431,7 +111431,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2003.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2003.png)' | markdownify }}
 {:.image }
 
 
@@ -111441,7 +111441,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 The following code examples illustrate you how to display the RadialMenu at defined location.
 
-* ShowRadialMenu(&lt;point&gt;) method displays the RadialMenu at defined location.
+* ShowRadialMenu(<point>) method displays the RadialMenu at defined location.
 
 
 
@@ -111572,7 +111572,7 @@ The following code example illustrates you how to add the menus to RadialMenu us
 
 The following screenshot renders the output of the above the codes.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2004.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2004.png)' | markdownify }}
 {:.image }
 
 
@@ -111605,7 +111605,7 @@ VB
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2005.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2005.png)' | markdownify }}
 {:.image }
 
 
@@ -111699,7 +111699,7 @@ this.radialMenuItem1.MouseUp += new MouseEventHandler(radialMenuItem1_MouseUp);
 
 Essential Tools Rating control for Windows Forms provides an intuitive rating experience that allows the end-user to select a number of stars that represent a rating. Rating control allows users to rate items based on a specified list of options.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2006.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2006.png)' | markdownify }}
 {:.image }
 
 
@@ -111722,11 +111722,11 @@ This section briefly describes how to design a Rating control in a Windows Forms
 1. Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 2. Drop a RatingControl on the Form.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2007.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2007.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2008.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2008.png)' | markdownify }}
 {:.image }
 
 
@@ -111734,11 +111734,11 @@ This section briefly describes how to design a Rating control in a Windows Forms
 
 The most commonly used settings of Rating Control can be configured either by a Designer using the Smart tag or by the Properties window or by code.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2009.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2009.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2010.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2010.png)' | markdownify }}
 {:.image }
 
 
@@ -111777,7 +111777,7 @@ Me.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.Heart
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2011.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2011.png)' | markdownify }}
 {:.image }
 
 
@@ -111829,7 +111829,7 @@ this.ratingControl1.Orientation = Syncfusion.Windows.Forms.Tools.Orientationmode
 
 Me.ratingControl1.Orientation = Syncfusion.Windows.Forms.Tools.Orientationmode.Vertical
 
-{ ![](Tools-Controls_images/Tools-Controls_img2012.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2012.png)' | markdownify }}
 {:.image }
 
 
@@ -111847,7 +111847,7 @@ this.ratingControl1.Precision = Syncfusion.Windows.Forms.Tools.PrecisionMode.Hal
 
 Me.ratingControl1.Precision = Syncfusion.Windows.Forms.Tools.PrecisionMode.Half
 
-{ ![](Tools-Controls_images/Tools-Controls_img2013.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2013.png)' | markdownify }}
 {:.image }
 
 
@@ -111855,7 +111855,7 @@ Me.ratingControl1.Precision = Syncfusion.Windows.Forms.Tools.PrecisionMode.Half
 
 By enabling this property, Tooltip is set to Rating control. The Tooltip appearance can be customized at the end-user level.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2014.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2014.png)' | markdownify }}
 {:.image }
 
 
@@ -111899,7 +111899,7 @@ Me.ratingControl1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.OfficeColor
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2015.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2015.png)' | markdownify }}
 {:.image }
 
 
@@ -111947,7 +111947,7 @@ Me.ratingControl1.ApplyGradientColors = True
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2016.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2016.png)' | markdownify }}
 {:.image }
 
 
@@ -112053,7 +112053,7 @@ End Sub
 
 Toggle Button control for Windows Forms allows you to toggle between two states (Active and Inactive) that are opposite to each other in terms of behavior.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2017.jpeg) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2017.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -112074,7 +112074,7 @@ This section briefly describes how to design a Toggle Button in a .NET applicati
 1. Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 2. Drag & Drop a Toggle Button Control in the Form from Toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2018.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2018.png)' | markdownify }}
 {:.image }
 
 
@@ -112084,7 +112084,7 @@ The most commonly used settings of the Toggle Button Control is configured eithe
 
 The following screenshot illustrates the Toggle Button Control customization through smart tag.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2019.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2019.png)' | markdownify }}
 {:.image }
 
 
@@ -112135,7 +112135,7 @@ Me.Controls.Add(togglebutton1)
 
 Toggle Button is configured with two states (Active and Inactive) contrasting each other. Toggling can be handled at runtime either through mouse click or through space key.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2020.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2020.png)' | markdownify }}
 {:.image }
 
 
@@ -112201,7 +112201,7 @@ Me.ToggleButton1.ActiveState.HoverColor = Color.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2021.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2021.png)' | markdownify }}
 {:.image }
 
 
@@ -112241,7 +112241,7 @@ Me.ToggleButton1.InactiveState.HoverColor = Color.Blue
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2022.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2022.png)' | markdownify }}
 {:.image }
 
 
@@ -112277,7 +112277,7 @@ DisplayType.Text
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2023.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2023.png)' | markdownify }}
 {:.image }
 
 
@@ -112317,7 +112317,7 @@ Me.ToggleButton1.Slider.Width = 30
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2024.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2024.png)' | markdownify }}
 {:.image }
 
 
@@ -112352,7 +112352,7 @@ toggleButton1.Renderer = renderer
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2025.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2025.png)' | markdownify }}
 {:.image }
 
 
@@ -112748,7 +112748,7 @@ Public Class StyledRenderer
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2026.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2026.png)' | markdownify }}
 {:.image }
 
 
@@ -112871,7 +112871,7 @@ Me.toggleButton1.Slider.Image = Global.ToggleButtonDemo2010.Properties.Resources
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2027.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2027.png)' | markdownify }}
 {:.image }
 
 
@@ -112913,7 +112913,7 @@ End Sub
 
 SplitterControl is a container control that enables end user to embed Grid and show multiple views of the same grid by using its Splitter. This enables viewing more than one copy of a worksheet and scrolling through each pane of the worksheet independently. The Splitter can be scrolled by placing the mouse pointer over it, holding down the left mouse button, and dragging it to the required position. It can be split horizontally and vertically.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2028.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2028.png)' | markdownify }}
 {:.image }
 
 
@@ -112933,7 +112933,7 @@ This section briefly describes how to design the SplitterControl in the WindowsF
 1. Create a new Windows Forms Application Project in VS IDE through the New Project Wizard.
 2. Drag and drop the SplitterControl in the Form from the Toolbox.
 
-{ ![](Tools-Controls_images/Tools-Controls_img2029.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2029.png)' | markdownify }}
 {:.image }
 
 
@@ -113120,7 +113120,7 @@ Me.splitterControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
 
 
-{ ![](Tools-Controls_images/Tools-Controls_img2030.png) | markdownify }
+{{ '![](Tools-Controls_images/Tools-Controls_img2030.png)' | markdownify }}
 {:.image }
 
 

@@ -33,11 +33,11 @@ To view the samples:
 
 
 
-1. Click Start -> All Programs-> Syncfusion -> Essential Studio &lt;x.x.x.x&gt; -> Dashboard -> Reporting. 
+1. Click Start -> All Programs-> Syncfusion -> Essential Studio <x.x.x.x> -> Dashboard -> Reporting. 
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -65,7 +65,7 @@ Windows Forms
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ Windows Forms
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 

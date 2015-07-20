@@ -32,7 +32,7 @@ If you have an algebraic expression that just contains constants and function li
 
 
 
-{ ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img1.png) | markdownify }
+{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -140,7 +140,7 @@ Me.calculator("height") = 2.5
 
 
 
-{ ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img2.jpeg) | markdownify }
+{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -185,7 +185,7 @@ By default, CalcQuickBase does not try to track any dependencies among the varia
 
 In practice, some additional work needs to be done. When a variable is auto-changed, nothing will actually happen until you try to use it. For example, assume that you have a series of text boxes on a form with some of the text boxes holding numerical values and some text boxes holding formulas that reference these values through variables that you have registered with a CalcQuickBase object.
 
-{ ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img3.png) | markdownify }
+{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -631,7 +631,7 @@ Samples Installation Location:
 
 CalcQuick WF samples are installed under the following location:
 
-C:\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Windows\Calculate.Windows\Samples \2.0\Working With CalcQuick Demo
+C:\Syncfusion\EssentialStudio\<Version Number>\Windows\Calculate.Windows\Samples \2.0\Working With CalcQuick Demo
 
 Viewing Samples:
 
@@ -639,13 +639,13 @@ Viewing Samples:
 
 
 
-{ ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img4.png) | markdownify }
+{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img4.png)' | markdownify }}
 {:.image }
 
 
 2. Select Working With CalcQuick Demo from the samples provided and browse through the features.
 
-{ ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img5.png) | markdownify }
+{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -686,7 +686,7 @@ A Windows Forms Data Grid is a rectangular container that holds data in cells. S
 
 The following is a discussion of using Essential Calculate with a Data Grid as an ICalcData object is based on the Essential Studio\Windows\Calculation.Windows\Samples\DataGridCalculator sample that ships with the product. The sample has a derived DataGrid class that implements ICalcData. Below is a screen shot of a sample screen. The sample sets the column header text to A, B, and so on, and places 1, 2, and so on, in the first column along with random integers in the other columns. This is done to remind you of the Excel-like cell notation of A1, A2, B2, and so on. This is the notation supported by Essential Calculate formulas using ICalcData objects.
 
-{ ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img7.jpeg) | markdownify }
+{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -835,7 +835,7 @@ The following is an explanation of the preceding code.
 
 Essential Calculate supports cross-references among several ICalcData objects. This support allows you to have a workbook of CalcDataGrids by using a Windows Forms Tab control. The following discussion is based on the Calculation\Samples\DataGridCalculator sample that ships with the product.
 
-{ ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img8.png) | markdownify }
+{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img8.png)' | markdownify }}
 {:.image }
 
 

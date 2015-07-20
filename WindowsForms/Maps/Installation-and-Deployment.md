@@ -37,13 +37,13 @@ Use the following steps to view the samples:
 
 
 
-1. 1.   Click Start > All Programs > Syncfusion > Essential Studio &lt;version number&gt; >Dashboard
+1. 1.   Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard
 
 
 
 The Essential Studio Enterprise Edition window will be displayed.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -67,7 +67,7 @@ _The User Interface Edition panel is displayed by default._
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -83,7 +83,7 @@ __
 
 
 
-__{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+__{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 

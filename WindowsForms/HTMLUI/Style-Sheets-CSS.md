@@ -29,25 +29,25 @@ The following HTML code illustrates the above concepts.
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;link type="text/css" rel="stylesheet" href="ExternalCSS.CSS"&gt;&lt;/link&gt;
+<link type="text/css" rel="stylesheet" href="ExternalCSS.CSS"></link>
 
-&lt;style&gt;.div{"background-color: #dae5f5;"}&lt;/style&gt;
+<style>.div{"background-color: #dae5f5;"}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-&lt;p style="background-color: #ffffff;"&gt; This is an inline styled element &lt;/p&gt;
+<p style="background-color: #ffffff;"> This is an inline styled element </p>
 
-&lt;div class="div"&gt; The Internal style sheet is applied for this element &lt;/div&gt;
+<div class="div"> The Internal style sheet is applied for this element </div>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -101,19 +101,19 @@ The following snippet shows an inline style, which is applied as an attribute in
 
 File name and location: C:\MyProjects\StyleSheets\inline.html
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;p style="background-color: #dae5f5;"&gt;
+<p style="background-color: #dae5f5;">
 
 Inline style applied to a paragraph.
 
-&lt;/p&gt; 
+</p> 
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -145,31 +145,31 @@ The Internal style sheet is used to define the same styles to all the occurrence
 
 File name and location: C:\MyProjects\StyleSheets\internal.html
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
         p {color: blue}
 
         div{color: red}
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt; 
+</head> 
 
-&lt;body&gt;
+<body>
 
-<p>This is a paragraph.&lt;/p&gt; 
+<p>This is a paragraph.</p> 
 
-<div>This is a division.&lt;/div&gt;
+<div>This is a division.</div>
 
-<p>This is a new paragraph.&lt;/p&gt;
+<p>This is a new paragraph.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -243,23 +243,23 @@ File name and location: C:\MyProjects\StyleSheets\external.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-        &lt;link rel=Stylesheet type="text/css" href="C:\MyProjects\StyleSheets\styleSheet.css" /&gt;
+        <link rel=Stylesheet type="text/css" href="C:\MyProjects\StyleSheets\styleSheet.css" />
 
-&lt;/head&gt; 
+</head> 
 
-&lt;body&gt;
+<body>
 
-<p>Green color for paragraph.&lt;/p&gt; 
+<p>Green color for paragraph.</p> 
 
 <div>Blue color for division</div>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -337,29 +337,29 @@ File name and location: C:\MyProjects\StyleSheets\NameClass.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-  &lt;style&gt;
+  <style>
 
     .red {color: red} 
 
     .blue {color: blue}
 
-  &lt;/style&gt;
+  </style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
     <h1 class="red">Red Heading</h1>
 
-    <p class="blue">Blue colored paragraph.&lt;/p&gt;
+    <p class="blue">Blue colored paragraph.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -393,29 +393,29 @@ File name and location: C:\MyProjects\StyleSheets\idClass.html
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-  &lt;style&gt;
+  <style>
 
      #red {color: red} 
 
      #blue {color: blue} 
 
-  &lt;/style&gt;
+  </style>
 
-&lt;/head&gt; 
+</head> 
 
-&lt;body&gt;
+<body>
 
   <h1 id="red">Red Heading</h1>
 
-  <p id="blue">Blue colored paragraph.&lt;/p&gt;  
+  <p id="blue">Blue colored paragraph.</p>  
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -479,27 +479,27 @@ The background-image property is used to set an image as the background of the H
 
 
 
-&lt;html&gt;
+<html>
 
-    &lt;head&gt;
+    <head>
 
-      &lt;style type="text/css"&gt;
+      <style type="text/css">
 
           /*The url attribute gets the image from the specified location*/
 
           body{background-image: url(stars.gif);}
 
-      &lt;/style&gt;
+      </style>
 
-    &lt;/head&gt;
+    </head>
 
-    &lt;body&gt;
+    <body>
 
-      <p>Image in the background.&lt;/p&gt;
+      <p>Image in the background.</p>
 
-    &lt;/body&gt;
+    </body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -513,27 +513,27 @@ The background-color property is used to set a background color for a HTML eleme
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 /*A background color is specified for the document*/
 
         body{background-color: #dae5f5;}
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>Back ground color set to the body element.&lt;/p&gt;
+<p>Back ground color set to the body element.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -554,27 +554,27 @@ The background-repeat property repeats the background that is set for the HTML e
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 /*A background image is repeated horizontally.*/
 
 body{background-image: url(sync.gif); background-repeat: repeat-x;}
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>Back ground image for the document repeated horizontally.&lt;/p&gt;
+<p>Back ground image for the document repeated horizontally.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -592,27 +592,27 @@ The color attribute is used to apply a specific color to the rendered text.
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 h1 {color: #00ff00}
 
 p {color: blue}
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
 <h1>Text - HTMLUI - CSS</h1>
 
 <p>This is a paragraph</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -626,21 +626,21 @@ The text-align attribute is used to align the text inside an element to the spec
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-<style type="text/css">p{ text-align: center}&lt;/style&gt;
+<style type="text/css">p{ text-align: center}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
 <p>Center aligned paragraph</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -654,17 +654,17 @@ The text-decoration attribute is used to decorate a text. The HTMLUI control sup
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-&lt;style type="text/css"&gt;.five:hover {text-decoration: underline} &lt;/style&gt;
+<style type="text/css">.five:hover {text-decoration: underline} </style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>Mouse over the links to see them change layout.&lt;/p&gt;
+<p>Mouse over the links to see them change layout.</p>
 
-&lt;/body&gt;&lt;/html&gt;
+</body></html>
 
 
 
@@ -684,19 +684,19 @@ The font-family attribute is used to specify a font for the text that is to be d
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-<style>p {font-family: Courier New}&lt;/style&gt;
+<style>p {font-family: Courier New}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>This paragraph is given a font through styles.&lt;/p&gt;
+<p>This paragraph is given a font through styles.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 #### Font Size
 
@@ -708,19 +708,19 @@ The font-size attribute is used to specify a size for the rendered text that is 
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-<style>p {font-size: 15}&lt;/style&gt;
+<style>p {font-size: 15}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>A font size applied to the paragraph element.&lt;/p&gt;
+<p>A font size applied to the paragraph element.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -734,19 +734,19 @@ The font-style attribute is used to format the specified text with the given sty
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-<style>p {font-style: italic}&lt;/style&gt;
+<style>p {font-style: italic}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p>Italic style applied to the formatted text.&lt;/p&gt;
+<p>Italic style applied to the formatted text.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 #### Font Weight
 
@@ -758,17 +758,17 @@ The font-weight attribute is used to specify the thickness or boldness of the re
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-<style>p{font-weight: bold}&lt;/style&gt;
+<style>p{font-weight: bold}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-<p >Bold font applied to paragraph.&lt;/p&gt;
+<p >Bold font applied to paragraph.</p>
 
-&lt;/body&gt;&lt;/html&gt;
+</body></html>
 
 
 
@@ -792,25 +792,25 @@ The border attribute is used to specify the border properties for the rendered t
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-&lt;style&gt;
+<style>
 
 .table {  border-color: blue }
 
 table{ border-left-color: blue;  border-right-color: green; border-top-color: red; border-bottom-color: black }
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-&lt;table border=1&gt;&lt;tr&gt;<td>This is a table.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;
+<table border=1><tr><td>This is a table.</td></tr></table><br/>
 
-&lt;table class="table" border=1&gt;&lt;tr&gt;<td>This is another table.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+<table class="table" border=1><tr><td>This is another table.</td></tr></table>
 
-&lt;/body&gt;&lt;/html&gt;
+</body></html>
 
 
 
@@ -830,25 +830,25 @@ table{ border-left-color: blue;  border-right-color: green; border-top-color: re
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-&lt;style&gt;
+<style>
 
 .table {  border-width: 5 }
 
 table{border-left-width: 3;  border-right-width: 5; border-top-width: 6; border-bottom-width: 8}
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-&lt;table border=1&gt;&lt;tr&gt;<td>This is a table.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;
+<table border=1><tr><td>This is a table.</td></tr></table><br/>
 
-&lt;table class="table" border=1&gt;&lt;tr&gt;<td>This is another table.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+<table class="table" border=1><tr><td>This is another table.</td></tr></table>
 
-&lt;/body&gt;&lt;/html&gt;
+</body></html>
 
 
 
@@ -862,27 +862,27 @@ The CSS padding attribute in HTMLUI is used to define a fixed space between the 
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-&lt;style&gt;
+<style>
 
 .table {  padding: 5 }
 
 table{padding-left: 25;  padding-right: 50; padding-top: 25; padding-bottom: 50}
 
-&lt;/style&gt;
+</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-&lt;table border=1&gt;&lt;tr&gt;<td>This is a table.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;
+<table border=1><tr><td>This is a table.</td></tr></table><br/>
 
-&lt;table class="table" border=1&gt;&lt;tr&gt;<td>This is another table.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+<table class="table" border=1><tr><td>This is another table.</td></tr></table>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -925,21 +925,21 @@ The width of an element in HTMLUI can be mentioned in terms of units.
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-<style type="text/css">p { height: 25%; width:200;} table{height: 100%;}&lt;/style&gt;
+<style type="text/css">p { height: 25%; width:200;} table{height: 100%;}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body&gt;
+<body>
 
-&lt;table border=1&gt;&lt;tr&gt;&lt;td&gt;<p>NewSample</td>&lt;/tr&gt;&lt;/table&gt;
+<table border=1><tr><td><p>NewSample</td></tr></table>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -957,17 +957,17 @@ The CSS Classification properties determine the display of an element in the HTM
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;<style>p{cursor: cross}&lt;/style&gt;&lt;/head&gt;
+<head><style>p{cursor: cross}</style></head>
 
-&lt;body&gt;
+<body>
 
-<p>The HTMLUI Editor helps you to edit your HTML document.&lt;/p&gt;
+<p>The HTMLUI Editor helps you to edit your HTML document.</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -983,17 +983,17 @@ The positioning attribute is used to determine the position of the HTML element 
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-<style type="text/css">td{vertical-align: bottom}&lt;/style&gt;&lt;/head&gt;
+<style type="text/css">td{vertical-align: bottom}</style></head>
 
-&lt;body&gt;
+<body>
 
-&lt;table border=1 height="100%"&gt;&lt;tr&gt;<td>Bottom Aligned table cell.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+<table border=1 height="100%"><tr><td>Bottom Aligned table cell.</td></tr></table>
 
-&lt;/body&gt;&lt;/html&gt;
+</body></html>
 
 
 
@@ -1018,9 +1018,9 @@ The following sample shows how different properties can be set for the hyperlink
 
 
 
-&lt;html&gt;&lt;head&gt;
+<html><head>
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 .ChangeColor:link {color: #ff0000}
 
@@ -1044,27 +1044,27 @@ The following sample shows how different properties can be set for the hyperlink
 
 .ChangeTextDec:hover {text-decoration: underline}
 
-&lt;/style&gt;&lt;/head&gt;
+</style></head>
 
-&lt;body&gt;
+<body>
 
-<a class="ChangeColor" href="none.htm" target="_blank">This link changes color</a>&lt;br/&gt;
+<a class="ChangeColor" href="none.htm" target="_blank">This link changes color</a><br/>
 
-<a class="ChangeFont" href="none.htm" target="_blank">This link changes font</a>&lt;br/&gt;
+<a class="ChangeFont" href="none.htm" target="_blank">This link changes font</a><br/>
 
-<a class="ChangeBgcolor" href="none.htm" target="_blank">This link changes background-color</a>&lt;br/&gt;
+<a class="ChangeBgcolor" href="none.htm" target="_blank">This link changes background-color</a><br/>
 
-<a class="ChangeTextDec" href="none.htm" target="_blank">This link changes text-decoration</a>&lt;br/&gt;
+<a class="ChangeTextDec" href="none.htm" target="_blank">This link changes text-decoration</a><br/>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 ##  HTMLUIUseCSS Sample
 
 This sample demonstrates the implementation of External Style Sheets in HTMLUI.
 
-{ ![](Style-Sheets-CSS_images/Style-Sheets-CSS_img1.png) | markdownify }
+{{ '![](Style-Sheets-CSS_images/Style-Sheets-CSS_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -1078,7 +1078,7 @@ By default, this sample can be found under the following location:
 
 This sample demonstrates the implementation of Internal Style Sheets on HTML Elements.
 
-{ ![](Style-Sheets-CSS_images/Style-Sheets-CSS_img2.jpeg) | markdownify }
+{{ '![](Style-Sheets-CSS_images/Style-Sheets-CSS_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1111,23 +1111,23 @@ The following HTML coding shows the different methods of changing the background
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;head&gt;
+<head>
 
-&lt;link type="text/css" rel="stylesheet" href="backgroundColor.CSS"&gt;&lt;/link&gt;
+<link type="text/css" rel="stylesheet" href="backgroundColor.CSS"></link>
 
-&lt;style&gt;.div{"background-color: #ffffcc;"}&lt;/style&gt;
+<style>.div{"background-color: #ffffcc;"}</style>
 
-&lt;/head&gt;
+</head>
 
-&lt;body bgcolor="#dae5f5"&gt;
+<body bgcolor="#dae5f5">
 
 <p style="background-color: #ffffff;">Background color changed through the style attribute</p>
 
-&lt;/body&gt;
+</body>
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -1135,7 +1135,7 @@ The following figure shows the backcolor of the HTML document customized by usin
 
 
 
-{ ![](Style-Sheets-CSS_images/Style-Sheets-CSS_img3.png) | markdownify }
+{{ '![](Style-Sheets-CSS_images/Style-Sheets-CSS_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -1147,7 +1147,7 @@ This sample illustrates the customization of HTMLUI Appearance.
 
 
 
-{ ![](Style-Sheets-CSS_images/Style-Sheets-CSS_img4.jpeg) | markdownify }
+{{ '![](Style-Sheets-CSS_images/Style-Sheets-CSS_img4.jpeg)' | markdownify }}
 {:.image }
 
 

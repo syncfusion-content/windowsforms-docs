@@ -25,7 +25,7 @@ Essential QuickTest Professional contains custom libraries, which help HP QuickT
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

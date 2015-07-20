@@ -61,7 +61,7 @@ Clipboard.SetDataObject(text);
 
 Private text As String = Me.htmluiControl.SelectedText.ToString()
 
-If text &lt;&gt; "" Then
+If text <> "" Then
 
 
 
@@ -79,7 +79,7 @@ This sample demonstrates the support for Text Selection in HTMLUI.
 
 
 
-{ ![](Text-Selection_images/Text-Selection_img1.jpeg) | markdownify }
+{{ '![](Text-Selection_images/Text-Selection_img1.jpeg)' | markdownify }}
 {:.image }
 
 

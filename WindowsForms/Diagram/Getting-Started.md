@@ -32,7 +32,7 @@ The model contains the data (node/connector) portion of a diagram. The view is r
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -42,7 +42,7 @@ The Overview control provides a perspective view of a diagram model and allows u
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -52,7 +52,7 @@ The PaletteGroupBar control provides a way for users to drag symbols onto a diag
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -68,7 +68,7 @@ The PropertyEditor control displays and edits the properties of diagram models, 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -78,7 +78,7 @@ The DocumentExplorer control allows you to visualize the details of the various 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -100,7 +100,7 @@ To create a Diagram control using the designer:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -108,7 +108,7 @@ The Diagram control will be added to the designer and its dependent assemblies w
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -260,7 +260,7 @@ To create a Diagram control using code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -392,7 +392,7 @@ The following code creates a rectangular node and adds it to the model.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -712,7 +712,7 @@ The following code illustrates how to connect a process node to a decision node 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -730,7 +730,7 @@ To create a PaletteGroupBar control through the designer:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -740,7 +740,7 @@ The PaletteGroupBar control will be added to the designer and its dependent asse
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -848,7 +848,7 @@ To create a PaletteGroupBar control using code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -866,7 +866,7 @@ To create a PaletteGroupView control using the designer:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -876,7 +876,7 @@ The PaletteGroupView control will be added to the designer and its dependent ass
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -976,7 +976,7 @@ To create a PaletteGroupView control using code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -994,7 +994,7 @@ To create an Overview control using the designer:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img17.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1004,7 +1004,7 @@ The Overview control will be added to the designer and its dependent assemblies 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1084,7 +1084,7 @@ To create an Overview control using code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img19.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1102,7 +1102,7 @@ To create a PropertyEditor control using code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img20.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -1112,7 +1112,7 @@ The PropertyEditor control will be added to the designer and its dependent assem
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img21.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -1196,7 +1196,7 @@ To create a PropertyEditor control using code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img22.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -1214,7 +1214,7 @@ To create a DocumentExplorer control using the designer:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img23.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1224,7 +1224,7 @@ The DocumentExplorer control will be added to the designer and its dependent ass
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img24.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -1304,7 +1304,7 @@ To create a DocumentExplorer control using code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img25.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -1319,7 +1319,7 @@ The main difference between the diagram builder and symbol palette is as follows
 
 Software Path
 
-[drive:]\Program Files\Syncfusion\Essential Studio\&lt;Version Number&gt;\Utilities\Diagram\Windows Forms\DiagramBuilder
+[drive:]\Program Files\Syncfusion\Essential Studio\<Version Number>\Utilities\Diagram\Windows Forms\DiagramBuilder
 
 1. Overview Control
 
@@ -1383,7 +1383,7 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img26.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1421,7 +1421,7 @@ The diagram1.SaveBinary() method saves the diagram file in the given filename.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img27.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1465,7 +1465,7 @@ using (PageSetupDialog dlgPageSetup = new
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img28.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1511,7 +1511,7 @@ if (diagram1 != null && diagram1.Model != null)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img29.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1559,7 +1559,7 @@ if (diagram1 != null && diagram1.Model != null)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img30.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1613,7 +1613,7 @@ if (diagram1 != null)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img31.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img31.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1716,7 +1716,7 @@ The following screenshot illustrates the pan and zoomtools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img32.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1794,7 +1794,7 @@ The following screen shot illustrates the Alignmenttools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img33.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1849,7 +1849,7 @@ The following screen shot illustrates the Rotatetools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img34.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img34.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1896,7 +1896,7 @@ The following screen shot illustrates the Resizetools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img35.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img35.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1948,7 +1948,7 @@ The following screen shot illustrates the Nudgetools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img36.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1995,7 +1995,7 @@ The following screen shot illustrates the Text Formattingtools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img37.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img37.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2092,7 +2092,7 @@ The following screen shot illustrates the Group and Ordertools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img38.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img38.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2149,7 +2149,7 @@ The following screen shot illustrates the drawingtools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img39.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -2254,7 +2254,7 @@ The following screen shot illustrates the Diagram Connectortools.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img40.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img40.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2511,7 +2511,7 @@ To create your own diagram in the diagram builder, follow the below given proced
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img41.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img41.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2526,7 +2526,7 @@ _Figure_ _44__: Diagram Builder_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img42.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img42.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2539,7 +2539,7 @@ A diagram is created using the Diagram Builder. You can use this diagram (.edd) 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img43.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img43.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2549,7 +2549,7 @@ Symbol Designer application allows you to create new palettes with symbols, and 
 
 Software Path
 
-[drive:]\Program Files\Syncfusion\Essential Studio\&lt;Version Number&gt;\Utilities\Diagram\Windows Forms\ Symbol Designer
+[drive:]\Program Files\Syncfusion\Essential Studio\<Version Number>\Utilities\Diagram\Windows Forms\ Symbol Designer
 
 Creating EDP File
 
@@ -2564,7 +2564,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img44.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img44.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2574,7 +2574,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img45.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img45.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2584,7 +2584,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img46.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -2594,13 +2594,13 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img47.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img47.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img48.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img48.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2610,7 +2610,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img49.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img49.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2621,7 +2621,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img50.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img50.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2630,7 +2630,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 * Repeat the steps 3 to 7 for creating more symbols.
 * If you create symbols using more than one shapes, you need to group all the shapes into single symbol using the Group option in symbol designer.
 
-__{ ![](Getting-Started_images/Getting-Started_img51.png) | markdownify }
+__{{ '![](Getting-Started_images/Getting-Started_img51.png)' | markdownify }}
 {:.image }
  _Figure_ _54__: Different Symbols_
 
@@ -2640,7 +2640,7 @@ __{ ![](Getting-Started_images/Getting-Started_img51.png) | markdownify }
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img52.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img52.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2657,7 +2657,7 @@ __{ ![](Getting-Started_images/Getting-Started_img51.png) | markdownify }
 
 Drag and Drop the Diagram control from the toolbox into the designer form to create a diagram using Designer.  
 
-{ ![C:/Users/Ashok/Desktop/fdgh.PNG](Getting-Started_images/Getting-Started_img53.png) | markdownify }
+{{ '![C:/Users/Ashok/Desktop/fdgh.PNG](Getting-Started_images/Getting-Started_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -2840,7 +2840,7 @@ The following screenshot displays the organizational flow of diagram.
 
 
 
-{ ![C:/Users/Ashok/Desktop/IMG_12032015_143452.png](Getting-Started_images/Getting-Started_img54.png) | markdownify }
+{{ '![C:/Users/Ashok/Desktop/IMG_12032015_143452.png](Getting-Started_images/Getting-Started_img54.png)' | markdownify }}
 {:.image }
 
 

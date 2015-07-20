@@ -66,7 +66,7 @@ Console.WriteLine(document.DocumentInformation.Creator)
 
 Console.WriteLine(document.DocumentInformation.Producer)
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Document-Settings_images/Document-Settings_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Document-Settings_images/Document-Settings_img1.png)' | markdownify }}
 {:.image }
 _Note: You can write the document information with the newly created document._
 
@@ -170,11 +170,11 @@ document.Close(True)
 
 The Document settings help in storing information about the document. It can also control the way they are displayed when they are open in the viewer.
 
-{ ![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img2.png) | markdownify }
+{{ '![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](Document-Settings_images/Document-Settings_img3.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](Document-Settings_images/Document-Settings_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: You cannot overwrite the existing metadata information._
 
@@ -331,7 +331,7 @@ document.Save("Sample.pdf")
 
 document.Close(True)
 
-{ ![](Document-Settings_images/Document-Settings_img4.png) | markdownify }
+{{ '![](Document-Settings_images/Document-Settings_img4.png)' | markdownify }}
 {:.image }
 
 

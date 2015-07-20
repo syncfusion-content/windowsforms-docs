@@ -23,27 +23,27 @@ An HTML document containing custom controls is shown below.
 
 
 
-&lt;html&gt;
+<html>
 
-&lt;body&gt;
+<body>
 
-&lt;div&gt;
+<div>
 
-CheckBoxAdv:&lt;CUSTOM class="Syncfusion.Windows.Forms.Tools.CheckBoxAdv" assembly="Syncfusion.tools.windows"&gt;
+CheckBoxAdv:<CUSTOM class="Syncfusion.Windows.Forms.Tools.CheckBoxAdv" assembly="Syncfusion.tools.windows">
 
-&lt;/CUSTOM&gt;
+</CUSTOM>
 
-&lt;/div&gt; 
+</div> 
 
-&lt;div&gt;
+<div>
 
-NumericUpDown:&lt;CUSTOM class="NumericUpDown" assembly="System.Windows.Forms"&gt;&lt;/CUSTOM&gt;
+NumericUpDown:<CUSTOM class="NumericUpDown" assembly="System.Windows.Forms"></CUSTOM>
 
-&lt;/div&gt; 
+</div> 
 
-&lt;/body&gt; 
+</body> 
 
-&lt;/html&gt;
+</html>
 
 
 
@@ -121,7 +121,7 @@ The following image illustrates three custom controls created using HTMLUI.
 
 
 
-{ ![](Custom-Controls_images/Custom-Controls_img1.png) | markdownify }
+{{ '![](Custom-Controls_images/Custom-Controls_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -129,7 +129,7 @@ The following image illustrates three custom controls created using HTMLUI.
 
 This sample demonstrates the implementation of Custom Controls by using HTMLUI.
 
-{ ![](Custom-Controls_images/Custom-Controls_img2.jpeg) | markdownify }
+{{ '![](Custom-Controls_images/Custom-Controls_img2.jpeg)' | markdownify }}
 {:.image }
 
 

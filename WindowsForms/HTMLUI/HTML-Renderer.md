@@ -53,11 +53,11 @@ Also the ability of the HTMLUI control to load from strings can be used in creat
 
 // Load HTML Document from String.
 
-string htmlString = "&lt;HTML&gt;
+string htmlString = "<HTML>
 
-&lt;BODY&gt; Document loaded through the LoadFromString method &lt;/BODY&gt; 
+<BODY> Document loaded through the LoadFromString method </BODY> 
 
-&lt;/HTML&gt;"; 
+</HTML>"; 
 
 this.htmluiControl1.LoadFromString(htmlString);
 
@@ -67,11 +67,11 @@ this.htmluiControl1.LoadFromString(htmlString);
 
 
 
-Private htmlString As String = "&lt;HTML&gt;"
+Private htmlString As String = "<HTML>"
 
 <BODY>Document loaded through the LoadFromString method</BODY> 
 
-&lt;/HTML&gt;" 
+</HTML>" 
 
 Me.HtmluiControl1.LoadFromString(htmlString)
 
@@ -81,7 +81,7 @@ The following figure shows an HTML Editor rendered using HTMLUI.
 
 
 
-{ ![](HTML-Renderer_images/HTML-Renderer_img1.png) | markdownify }
+{{ '![](HTML-Renderer_images/HTML-Renderer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ This sample demonstrates the implementation of a Web Browser in HTMLUI.
 
 
 
-{ ![](HTML-Renderer_images/HTML-Renderer_img2.jpeg) | markdownify }
+{{ '![](HTML-Renderer_images/HTML-Renderer_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -109,7 +109,7 @@ This sample demonstrates the implementation of HTML Editors in HTMLUI.
 
 
 
-{ ![](HTML-Renderer_images/HTML-Renderer_img3.jpeg) | markdownify }
+{{ '![](HTML-Renderer_images/HTML-Renderer_img3.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -74,7 +74,7 @@ Type</th></tr>
 <th>
 ChangeValue</th><th>
 Triggered when changing a cell’s value. Using this event we can alter the PivotCellInfo.</th><th>
-&lt;object&gt; oldValue, <object >newValue, &lt;int&gt; row1, &lt;int&gt; col1, <PivotCellInfo >pi</th><th>
+<object> oldValue, <object >newValue, <int> row1, <int> col1, <PivotCellInfo >pi</th><th>
 Event</th></tr>
 </table>
 
@@ -113,7 +113,7 @@ Sample Link
 
 A sample of this feature can be found in the following location:
 
-&lt;InstalledLocation&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;InstalledVersion&gt;\Windows\PivotGrid.Windows\Samples\Interactive Features\Editing Demo\CS
+<InstalledLocation>\AppData\Local\Syncfusion\EssentialStudio\<InstalledVersion>\Windows\PivotGrid.Windows\Samples\Interactive Features\Editing Demo\CS
 
 
 

@@ -108,7 +108,7 @@ Gets or sets the regular text format.  </td></tr>
 
 WCheckBox class represents a check box form field in a Word document. To add a check box to a Word document, click Check BoxForm Field on the Forms toolbar.
 
-{ ![](Working-with-Form-Fields_images/Working-with-Form-Fields_img1.png) | markdownify }
+{{ '![](Working-with-Form-Fields_images/Working-with-Form-Fields_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -204,7 +204,7 @@ The following code example illustrates the usage of the WCheckBox class.
 
 WDropDownFormField class represents a drop-down form field in a Word document. To add a drop-down form field to a Word document, click DropDown Form Field on the Forms toolbar.
 
-{ ![](Working-with-Form-Fields_images/Working-with-Form-Fields_img2.png) | markdownify }
+{{ '![](Working-with-Form-Fields_images/Working-with-Form-Fields_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -284,7 +284,7 @@ Gets or sets the selected drop-down index.</td></tr>
 
 WTextFormField class represents a text form field in a Word document. To add a text form field to the Word document, click Text Form Field on the Forms toolbar.
 
-{ ![](Working-with-Form-Fields_images/Working-with-Form-Fields_img3.png) | markdownify }
+{{ '![](Working-with-Form-Fields_images/Working-with-Form-Fields_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -294,7 +294,7 @@ To set the format of the DocIO text directly from the field, you can use the Str
 
 
 
-> { ![](Working-with-Form-Fields_images/Working-with-Form-Fields_img4.jpeg) | markdownify }
+> {{ '![](Working-with-Form-Fields_images/Working-with-Form-Fields_img4.jpeg)' | markdownify }}
 {:.image }
 _Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value._
 

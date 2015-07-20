@@ -103,7 +103,7 @@ Shows open file dialog to the user and opens the selected file.</td></tr>
 </table>
 
 
-> { ![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img1.jpeg) | markdownify }
+> {{ '![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img1.jpeg)' | markdownify }}
 {:.image }
 _Note: The character encoding for the text can also be specified while loading the file._
 
@@ -547,7 +547,7 @@ Me.editControl1.SaveOnClose = False
 
 
 
-{ ![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg) | markdownify }
+{{ '![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -693,7 +693,7 @@ End Sub
 
 
 
-> { ![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img3.jpeg) | markdownify }
+> {{ '![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img3.jpeg)' | markdownify }}
 {:.image }
 _Note: The default value of e.Action is SaveChangesAction.ShowDialog._
 

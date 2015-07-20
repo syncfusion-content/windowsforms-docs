@@ -73,8 +73,8 @@ Description</td></tr>
 Note</td><td>
 > ![](Overview_images/Overview_img1.jpeg)
 {:.image }
-{{ '_Note:_' | markdownify }}</td><td>
-{{ '_Represents important information_' | markdownify }}</td></tr>
+{{{ ''_Note:_'' | markdownify }}}</td><td>
+{{{ ''_Represents important information_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 Example</td><td>

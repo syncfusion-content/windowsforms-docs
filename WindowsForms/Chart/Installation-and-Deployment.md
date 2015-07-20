@@ -37,11 +37,11 @@ Viewing Samples
 
 To view the samples, follow the steps below
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard.
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard.
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ _Figure_ _2__: Syncfusion Essential Studio Dashboard_
 
 
 
-> { ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg) | markdownify }
+> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the following three ways:_
 
@@ -63,7 +63,7 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ _Figure_ _3__: User Interface Edition Windows Forms Sample Browser_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 

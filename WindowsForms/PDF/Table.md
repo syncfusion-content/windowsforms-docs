@@ -563,7 +563,7 @@ Data to PdfLightTable can also be set using the following three events:
 
 • QueryNextRow – Sets data to the PdfLightTable.
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img1.png)' | markdownify }}
 {:.image }
 _Note: These events acts only when the DataSource property is not set._
 
@@ -854,7 +854,7 @@ Customizing BorderOverlapStyle
 BorderOverlapStyle decides whether the cell border overlaps the neighboring cells or if it should be drawn inside the cell.
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img2.png)' | markdownify }}
 {:.image }
 _Note: This property applies for all cells in the PdfLightTable. You need to be careful when using overlapping borders, because they can produce bad results if they are not the same width and color._
 
@@ -1570,7 +1570,7 @@ doc.Close(True)
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img3.png)' | markdownify }}
 {:.image }
 _Note: The unit of the Width property is always in points, and PDF units can be set only as points.  You can also use the PdfUnitConvertor class to convert the other units to points._
 
@@ -2273,7 +2273,7 @@ This event is raised after the element is printed on the page.(Inherited from Pd
 </table>
 ### Creating a grid
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img4.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img4.png)' | markdownify }}
 {:.image }
 _Note: You must add Syncfusion.Pdf.Grid namespace to work with PdfGrid._
 
@@ -2869,7 +2869,7 @@ pdfDocument.Close(True)
 
 This section explains you the direct options available to format PdfGrid. The PdfGridStyle class, accessible through Style property of PdfGrid provides options to format entire PdfGrid or parts of it. Formatting applicable for the entire PdfGrid using PdfGridStyle class is discussed here. Header, Row, Column, and Cell are discussed in the following sections.
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img5.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img5.png)' | markdownify }}
 {:.image }
  _Note: If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes the precedence. Following is an example for the exact order of precedence._
 
@@ -2962,7 +2962,7 @@ Header is a set of rows that can be optionally repeated on each page and has its
 •By using Add method of the PdfGridHeaderCollection class.
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img6.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img6.png)' | markdownify }}
 {:.image }
 Note: When you bind data source to PdfGrid, column captions will be automatically added to header collection. It can be removed at any time using Clear method of PdfGridHeaderCollection.
 
@@ -3440,7 +3440,7 @@ pdfDocument.Close(True)
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img7.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img7.png)' | markdownify }}
 {:.image }
 _Note: Styles for each PdfGridRow in Header can be individually applied using PdfGridRowStyle class_.
 
@@ -3588,7 +3588,7 @@ pdfDocument.Close(True)
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img8.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img8.png)' | markdownify }}
 {:.image }
 _Note: The unit of the Height property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points._
 
@@ -3727,7 +3727,7 @@ Style
 The PdfGridRowStyle class, accessed through Style property of PdfGridRow class is used to specify the row style for the PdfGrid rows.
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img9.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img9.png)' | markdownify }}
 {:.image }
 _Note: If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes over the precedence. Following is an example for the exact order of precedence._
 
@@ -4331,7 +4331,7 @@ pdfDocument.Close(True)
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img10.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Table_images/Table_img10.png)' | markdownify }}
 {:.image }
 _Note: The unit of the Width property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points._
 
@@ -4479,7 +4479,7 @@ Description</td><td>
 Data Type</td></tr>
 <tr>
 <td>
-{ [ColumnSpan](http://help.syncfusion.com/ug/windows%20forms/documents/column2.htm) | markdownify }</td><td>
+{{ '[ColumnSpan](http://help.syncfusion.com/ug/windows%20forms/documents/column2.htm)' | markdownify }}</td><td>
 Gets or set the column span.</td><td>
 Integer</td></tr>
 <tr>
@@ -4494,12 +4494,12 @@ Gets or sets the image alignment type of the background image.</td><td>
 PdfGridImagePosition</td></tr>
 <tr>
 <td>
-{ [RowSpan](http://help.syncfusion.com/ug/windows%20forms/documents/row2.htm) | markdownify }</td><td>
+{{ '[RowSpan](http://help.syncfusion.com/ug/windows%20forms/documents/row2.htm)' | markdownify }}</td><td>
 Gets or sets the row span</td><td>
 Integer</td></tr>
 <tr>
 <td>
-{ [StringFormat](http://help.syncfusion.com/ug/windows%20forms/documents/drawingtext.htm) | markdownify }</td><td>
+{{ '[StringFormat](http://help.syncfusion.com/ug/windows%20forms/documents/drawingtext.htm)' | markdownify }}</td><td>
 Gets or sets the string format.</td><td>
 PdfStringFormat</td></tr>
 <tr>

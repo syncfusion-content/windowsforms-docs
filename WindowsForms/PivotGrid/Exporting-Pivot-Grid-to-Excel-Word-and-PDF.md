@@ -54,7 +54,7 @@ The following image shows the cell-by-cell export:
 
 
 
-{ ![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img1.png) | markdownify }
+{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -72,7 +72,7 @@ The following image depicts the exported PivotTable:
 
 
 
-{ ![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img2.png) | markdownify }
+{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -116,7 +116,7 @@ The below image depicts the conversion of PivotGrid content to a Word file:
 
 
 
-{ ![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img3.png) | markdownify }
+{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -146,7 +146,7 @@ The below image depicts the conversion of PivotGrid content to a PDF file:
 
 
 
-{ ![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img4.png) | markdownify }
+{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -156,7 +156,7 @@ Sample Location
 
 A sample is placed in the following location:
 
-&lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Exporting\Export Demo
+<InstalledLocation>\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Exporting\Export Demo
 
 
 

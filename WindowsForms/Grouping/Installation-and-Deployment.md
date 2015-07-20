@@ -41,13 +41,13 @@ Viewing Samples
 
 To view the samples: 
 
-1. Click Start All Programs  Syncfusion  Essential Studio &lt;version number&gt;  Dashboard. 
+1. Click Start All Programs  Syncfusion  Essential Studio <version number>  Dashboard. 
 
 The UI Edition samples are displayed by default.
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -55,7 +55,7 @@ The UI Edition samples are displayed by default.
 
 2. Select Reporting Edition.
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ Windows
 
 1. In the Dashboard window, click Run Samples for Windows Forms under Reporting Edition panel. The Windows Forms Sample Browser window is displayed.
 > 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the following three ways:_
 
@@ -79,7 +79,7 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -87,7 +87,7 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -103,11 +103,11 @@ ASP.NET
 
 1. In the Dashboard window, click Run Samples for ASP.NET under Reporting Edition panel. The ASP.NET Sample Browser window is displayed.
 > 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Installation-and-Deployment_images/Installation-and-Deployment_img6.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)' | markdownify }}
 {:.image }
 _Note: You can view the samples in any of the three ways displayed:_
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -115,7 +115,7 @@ _Note: You can view the samples in any of the three ways displayed:_
 
 
 
-{ ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png) | markdownify }
+{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)' | markdownify }}
 {:.image }
 
 
