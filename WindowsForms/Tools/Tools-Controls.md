@@ -133,7 +133,7 @@ Sets the font style for the banner text.</td></tr>
 <tr>
 <td>
 Mode</td><td>
-Specifies the rendering mode of the banner text. The modes are,* {{{ ''_FocusMode_'' | markdownify }}} - The banner text disappears when the control gets focus.* {{{ ''_EditMode_'' | markdownify }}} - The banner text will only disappears when the control is in Edit Mode or the associated textbox is not empty.</td></tr>
+Specifies the rendering mode of the banner text. The modes are,* {{ '_FocusMode_' | markdownify }} - The banner text disappears when the control gets focus.* {{ '_EditMode_' | markdownify }} - The banner text will only disappears when the control is in Edit Mode or the associated textbox is not empty.</td></tr>
 </table>
 
 
@@ -6926,7 +6926,7 @@ End Sub
 
 
 
-''Overloaded
+'Overloaded
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles button1.Click
 
@@ -9315,7 +9315,7 @@ Description</td></tr>
 <tr>
 <td>
 ActivateControl</td><td>
-Activates the docked control which is passed as a parameter to this method. This method will be effective only when the control is tabbed to other control or controls. This method can be called from a handler for DockingManager.NewDockStateEndLoad Event. The parameter is,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docking window.</td></tr>
+Activates the docked control which is passed as a parameter to this method. This method will be effective only when the control is tabbed to other control or controls. This method can be called from a handler for DockingManager.NewDockStateEndLoad Event. The parameter is,{{ '_Ctrl_' | markdownify }} - Indicates the docking window.</td></tr>
 </table>
 
 
@@ -9369,7 +9369,7 @@ Description</td></tr>
 <tr>
 <td>
 GetDockingStyle</td><td>
-Returns the current docking style of the control. The return value for this method would be docking style value, that specifies the dock type / position. The docked control for which the dock style is to be identified should be passed as a parameter to this method. The parameter is,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control for which the DockStyle needs to be retrieved.</td></tr>
+Returns the current docking style of the control. The return value for this method would be docking style value, that specifies the dock type / position. The docked control for which the dock style is to be identified should be passed as a parameter to this method. The parameter is,{{ '_Ctrl_' | markdownify }} - Indicates the docked control for which the DockStyle needs to be retrieved.</td></tr>
 </table>
 
 
@@ -9927,11 +9927,11 @@ Description</td></tr>
 <tr>
 <td>
 GetDockAbility</td><td>
-Retrieves the dock ability of the control. The parameter is,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control for which DockAbility has to be obtained.</td></tr>
+Retrieves the dock ability of the control. The parameter is,{{ '_Ctrl_' | markdownify }} - Indicates the docked control for which DockAbility has to be obtained.</td></tr>
 <tr>
 <td>
 SetDockAbility</td><td>
-Sets the dock ability of the control.{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control for which DockAbility need to be set.</td></tr>
+Sets the dock ability of the control.{{ '_Ctrl_' | markdownify }} - Indicates the docked control for which DockAbility need to be set.</td></tr>
 </table>
 
 
@@ -9979,11 +9979,11 @@ Description</td></tr>
 <tr>
 <td>
 GetControlSize</td><td>
-Gets the size of the docked or the floating control, by passing the control as a parameter to this method. The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docking window.</td></tr>
+Gets the size of the docked or the floating control, by passing the control as a parameter to this method. The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the docking window.</td></tr>
 <tr>
 <td>
 SetControlSize</td><td>
-Sets the new size (width, Height) for the docked or the floating control, by passing the control as a parameter to this method. The default value of size is Empty. The parameters are,{{{ ''_Ctrl_'' ' | markdownify }}}- Indicates the docking window.{{{ ''_Size_'' | markdownify }}} - Specifies the new size for the control.</td></tr>
+Sets the new size (width, Height) for the docked or the floating control, by passing the control as a parameter to this method. The default value of size is Empty. The parameters are,{{ '_Ctrl_' ' | markdownify }}- Indicates the docking window.{{ '_Size_' | markdownify }} - Specifies the new size for the control.</td></tr>
 </table>
 
 
@@ -10684,7 +10684,7 @@ Description</td></tr>
 <tr>
 <td>
 ShowMenu</td><td>
-Show's the docking caption context menu at the specified point (Pt). The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the control for which dock / floating state is been queried.{{{ ''_Pt_'' | markdownify }}} - Indicates the location of the menu to be displayed.</td></tr>
+Show's the docking caption context menu at the specified point (Pt). The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the control for which dock / floating state is been queried.{{ '_Pt_' | markdownify }} - Indicates the location of the menu to be displayed.</td></tr>
 </table>
 
 
@@ -10732,7 +10732,7 @@ Description</td></tr>
 <tr>
 <td>
 IsFloating</td><td>
-Gets the value indicating whether the docked control is floating or not.{{{ ''_Ctrl_'' | markdownify }}} - Indicates the control for which dock / floating state is been queried.</td></tr>
+Gets the value indicating whether the docked control is floating or not.{{ '_Ctrl_' | markdownify }} - Indicates the control for which dock / floating state is been queried.</td></tr>
 </table>
 
 
@@ -10855,7 +10855,7 @@ Description</td></tr>
 <tr>
 <td>
 SetFloatOnly</td><td>
-Make the docked control a float only control.{{{ ''_Ctrl_'' | markdownify }}} - The control for which docking is enabled.{{' _bFloating_' | markdownify }} - Represents a boolean value, TRUE, to disabled docking.</td></tr>
+Make the docked control a float only control.{{ '_Ctrl_' | markdownify }} - The control for which docking is enabled.{{' _bFloating_' | markdownify }} - Represents a boolean value, TRUE, to disabled docking.</td></tr>
 </table>
 
 
@@ -10897,7 +10897,7 @@ Description</td></tr>
 <tr>
 <td>
 SetAutoHideOnLoad</td><td>
-AutoHides the docked control when the application loads. The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control.{{{ ''_bautohide_'' | markdownify }}} - Value indicating true or false.</td></tr>
+AutoHides the docked control when the application loads. The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the docked control.{{ '_bautohide_' | markdownify }} - Value indicating true or false.</td></tr>
 </table>
 
 
@@ -10985,7 +10985,7 @@ Description</td></tr>
 <tr>
 <td>
 SetHiddenOnLoad</td><td>
-Hides the docked control when the application loads. The parameters are,{{{ ''_Ctrl_'' | markdownify }}} - Indicates the docked control.{{{ ''_bhidden_'' | markdownify }}} - Value indicating true or false.</td></tr>
+Hides the docked control when the application loads. The parameters are,{{ '_Ctrl_' | markdownify }} - Indicates the docked control.{{ '_bhidden_' | markdownify }} - Value indicating true or false.</td></tr>
 </table>
 
 
@@ -12113,7 +12113,7 @@ Description</td></tr>
 <tr>
 <td>
 AutoCompleteSource</td><td>
-Auto completion source for the control. The different sources are,{{{ ''_FileSystem_'' | markdownify }}} - Files system as source,{{{ ''_HistoryList_'' | markdownify }}} - Includes all the URLs in the history list,{{{ ''_RecentlyUsedList_'' | markdownify }}} - Includes the list of most recently used URLs,{{{ ''_AllUrl_'' | markdownify }}} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{{ ''_AllSystemSources_'' | markdownify }}} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompletMode is set to values other than default value),{{{ ''_ListItems_'' | markdownify }}} - Specifies the items in the control, {{{ ''_FileSystemDirectories_'' | markdownify }}} - Specifies directory names alone without file names,{{{ ''_CustomSource_'' | markdownify }}} - Uses the string values entered in AutoCompleteCustomSource property and{{{ ''_None_'' | markdownify }}} - There will not be any source for the auto completion.</td></tr>
+Auto completion source for the control. The different sources are,{{ '_FileSystem_' | markdownify }} - Files system as source,{{ '_HistoryList_' | markdownify }} - Includes all the URLs in the history list,{{ '_RecentlyUsedList_' | markdownify }} - Includes the list of most recently used URLs,{{ '_AllUrl_' | markdownify }} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{ '_AllSystemSources_' | markdownify }} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompletMode is set to values other than default value),{{ '_ListItems_' | markdownify }} - Specifies the items in the control, {{ '_FileSystemDirectories_' | markdownify }} - Specifies directory names alone without file names,{{ '_CustomSource_' | markdownify }} - Uses the string values entered in AutoCompleteCustomSource property and{{ '_None_' | markdownify }} - There will not be any source for the auto completion.</td></tr>
 </table>
 
 
@@ -12197,7 +12197,7 @@ Description</td></tr>
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Gets or sets an option that controls how automatic completion, works for the control. The available modes are,{{{ ''_None_'' | markdownify }}} - No autocompletion will be provided for this target edit control,{{{ ''_Suggest_'' | markdownify }}} - The autocompletion will be presented as a list of probable matches in the form of a drop-down window,{{{ ''_Append_'' | markdownify }}} - The closest match will be added to the partial string in the edit control and{{{ ''_SuggestAppend_'' | markdownify }}} - A list of probable matches will be displayed as well as the entry will be completed in the edit control with the closest match.</td></tr>
+Gets or sets an option that controls how automatic completion, works for the control. The available modes are,{{ '_None_' | markdownify }} - No autocompletion will be provided for this target edit control,{{ '_Suggest_' | markdownify }} - The autocompletion will be presented as a list of probable matches in the form of a drop-down window,{{ '_Append_' | markdownify }} - The closest match will be added to the partial string in the edit control and{{ '_SuggestAppend_' | markdownify }} - A list of probable matches will be displayed as well as the entry will be completed in the edit control with the closest match.</td></tr>
 </table>
 
 
@@ -12326,7 +12326,7 @@ Specifies the collection of columns in the auto complete dropdown, when AutoComp
 <tr>
 <td>
 MatchMode</td><td>
-Specifies the modes in which the AutoCompleteControl fills the history list for the current text in the current edit control.The values are, {{{ ''_Manual and_' ' | markdownify }}}{{{ ''_Automatic (default)._'' | markdownify }}}</td></tr>
+Specifies the modes in which the AutoCompleteControl fills the history list for the current text in the current edit control.The values are, {{ '_Manual and_' ' | markdownify }}{{ '_Automatic (default)._' | markdownify }}</td></tr>
 </table>
 
 
@@ -12440,7 +12440,7 @@ Description</td></tr>
 <tr>
 <td>
 AddHistoryItem</td><td>
-Adds item to the internal history of the AutoComplete control. The parameters are,{{{ ''_newItemText_'' | markdownify }}} - Text for the dropdown item.{{{ ''_ImageIndexValue_'' | markdownify }}} - Index of the image for the particular item.</td></tr>
+Adds item to the internal history of the AutoComplete control. The parameters are,{{ '_newItemText_' | markdownify }} - Text for the dropdown item.{{ '_ImageIndexValue_' | markdownify }} - Index of the image for the particular item.</td></tr>
 </table>
 
 
@@ -13949,7 +13949,7 @@ Description</td></tr>
 <tr>
 <td>
 SetAutoAppend</td><td>
-Sets AutoAppend behavior for the control specified. The parameters are,{{{ ''_control_'' | markdownify }}} - control to which auto append class has to be associated.{{{ ''_autoAppendInfo_'' | markdownify }}} - Initializes an AutoAppendInfo class which  has three parameters - {{{ ''_AutoAppend_'' | markdownify }}} - specifies whether autoappend is enabled or not (true or false){{{ ''_categoryName_'' | markdownify }}} - category to which contents in this control belong to.{{{ ''_items_'' | markdownify }}} - Reference to an item list.{{{ ''_maxItems_'' | markdownify }}} - specifies maximum number of items.</td></tr>
+Sets AutoAppend behavior for the control specified. The parameters are,{{ '_control_' | markdownify }} - control to which auto append class has to be associated.{{ '_autoAppendInfo_' | markdownify }} - Initializes an AutoAppendInfo class which  has three parameters - {{ '_AutoAppend_' | markdownify }} - specifies whether autoappend is enabled or not (true or false){{ '_categoryName_' | markdownify }} - category to which contents in this control belong to.{{ '_items_' | markdownify }} - Reference to an item list.{{ '_maxItems_' | markdownify }} - specifies maximum number of items.</td></tr>
 <tr>ss
 <td>
 GetAutoAppend</td><td>
@@ -14106,7 +14106,7 @@ Description</td></tr>
 <tr>
 <td>
 ButtonType</td><td>
-Specifies the button type to be used in the ButtonAdv control. The options are as follows.{{{ ''_Normal_'' | markdownify }}} - Normal button. (user can specify the image with this ButtonType).{{{ ''_Calculator_'' | markdownify }}} - Calculator image is used.{{{ ''_Currency_'' | markdownify }}} - Currency image is used.{{{ ''_Down_'' | markdownify }}} - Down image is used.{{{ ''_ComboXPDown_'' | markdownify }}} - Down image like in a Windows XP combo box.{{{ ''_Up_'' | markdownify }}} - Up image is used.{{{ ''_Left_'' | markdownify }}} - Left image is used.{{{ ''_Right_'' | markdownify }}} - Right image is used.{{{ ''_Redo_'' | markdownify }}} - Redo image is used.{{{ ''_Undo_'' | markdownify }}} - Undo image is used.{{{ ''_Check_'' | markdownify }}} - Check image is used.{{{ ''_Browse_'' | markdownify }}} - Browse image is used.{{{ ''_LeftEnd_'' | markdownify }}} - Left end image is used.{{{ ''_RightEnd_'' | markdownify }}} - Right end image is used.</td></tr>
+Specifies the button type to be used in the ButtonAdv control. The options are as follows.{{ '_Normal_' | markdownify }} - Normal button. (user can specify the image with this ButtonType).{{ '_Calculator_' | markdownify }} - Calculator image is used.{{ '_Currency_' | markdownify }} - Currency image is used.{{ '_Down_' | markdownify }} - Down image is used.{{ '_ComboXPDown_' | markdownify }} - Down image like in a Windows XP combo box.{{ '_Up_' | markdownify }} - Up image is used.{{ '_Left_' | markdownify }} - Left image is used.{{ '_Right_' | markdownify }} - Right image is used.{{ '_Redo_' | markdownify }} - Redo image is used.{{ '_Undo_' | markdownify }} - Undo image is used.{{ '_Check_' | markdownify }} - Check image is used.{{ '_Browse_' | markdownify }} - Browse image is used.{{ '_LeftEnd_' | markdownify }} - Left end image is used.{{ '_RightEnd_' | markdownify }} - Right end image is used.</td></tr>
 </table>
 > {{ '![](Tools-Controls_images/Tools-Controls_img199.jpeg)' | markdownify }}
 {:.image }
@@ -14160,7 +14160,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyleAdv</td><td>
-Specifies the border style for ButtonAdv control. The styles are,{{{ ''_None,_'' | markdownify }}}{{{ ''_Default,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Flat,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_SunkenInner and_'' | markdownify }}}{{{ ''_SunkenOuter._'' | markdownify }}}</td></tr>
+Specifies the border style for ButtonAdv control. The styles are,{{ '_None,_' | markdownify }}{{ '_Default,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Dotted,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenInner and_' | markdownify }}{{ '_SunkenOuter._' | markdownify }}</td></tr>
 </table>
 > {{ '![](Tools-Controls_images/Tools-Controls_img203.jpeg)' | markdownify }}
 {:.image }
@@ -14208,7 +14208,7 @@ Description</td></tr>
 <tr>
 <td>
 Appearance</td><td>
-Sets the visual styles for the control when UseVisualStyle property is true. The styles are,{{{ ''_Classic,_'' | markdownify }}}{{{ ''_Office2000,_'' | markdownify }}}{{{ ''_WindowsXP,_'' | markdownify }}}{{{ ''_OfficeXP,_'' | markdownify }}}{{{ ''_Office2003 and_' ' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
+Sets the visual styles for the control when UseVisualStyle property is true. The styles are,{{ '_Classic,_' | markdownify }}{{ '_Office2000,_' | markdownify }}{{ '_WindowsXP,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003 and_' ' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 </table>
 
 
@@ -14322,11 +14322,11 @@ Sets the text for the ButtonAdv control.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Sets the alignment of the text in the control.  The options are,{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_' ' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'  ' | markdownify }}}{{{ ''_MiddleCenter,_' ' | markdownify }}}{{{ ''_MiddleRight,_' ' | markdownify }}}{{{ ''_BottomLeft,_' ' | markdownify }}}{{{ ''_BottomCenter and_' ' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
+Sets the alignment of the text in the control.  The options are,{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' ' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_'  ' | markdownify }}{{ '_MiddleCenter,_' ' | markdownify }}{{ '_MiddleRight,_' ' | markdownify }}{{ '_BottomLeft,_' ' | markdownify }}{{ '_BottomCenter and_' ' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Sets the relative location of the image to the text. The options are,{{{ ''_Overlay,_'' | markdownify }}}{{{ ''_ImageBeforeText,_'' | markdownify }}}{{{ ''_TextBeforeImage,_'' | markdownify }}}{{{ ''_ImageAboveText and_' ' | markdownify }}}{{{ ''_TextAboveImage._'' | markdownify }}}</td></tr>
+Sets the relative location of the image to the text. The options are,{{ '_Overlay,_' | markdownify }}{{ '_ImageBeforeText,_' | markdownify }}{{ '_TextBeforeImage,_' | markdownify }}{{ '_ImageAboveText and_' ' | markdownify }}{{ '_TextAboveImage._' | markdownify }}</td></tr>
 <tr>
 <td>
 Font</td><td>
@@ -14440,7 +14440,7 @@ Sets the imagelist used for this control.</td></tr>
 <tr>
 <td>
 ImageAlign</td><td>
-Sets the alignment of the image inside the control. The options are,{{{ ''_TopLeft,_' ' | markdownify }}}{{{ ''_TopCenter,_' ' | markdownify }}}{{{ ''_TopRight_'' | markdownify }}}{{{ ''_MiddleLeft,_'  ' | markdownify }}}{{{ ''_MiddleCenter,_' ' | markdownify }}}{{{ ''_MiddleRight,_' ' | markdownify }}}{{{ ''_BottomLeft,_' ' | markdownify }}}{{{ ''_BottomCenter and_' ' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
+Sets the alignment of the image inside the control. The options are,{{ '_TopLeft,_' ' | markdownify }}{{ '_TopCenter,_' ' | markdownify }}{{ '_TopRight_' | markdownify }}{{ '_MiddleLeft,_'  ' | markdownify }}{{ '_MiddleCenter,_' ' | markdownify }}{{ '_MiddleRight,_' ' | markdownify }}{{ '_BottomLeft,_' ' | markdownify }}{{ '_BottomCenter and_' ' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 <tr>
 <td>
 ImageIndex</td><td>
@@ -14452,11 +14452,11 @@ Sets the text for the ButtonAdv.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Sets the alignment of the text in the control.  The options are,{{{ ''_TopLeft,_' ' | markdownify }}}{{{ ''_TopCenter,_' ' | markdownify }}}{{{ ''_TopRight_'' | markdownify }}}{{{ ''_MiddleLeft,_' ' | markdownify }}}{{{ ''_MiddleCenter,_' ' | markdownify }}}{{{ ''_MiddleRight,_' ' | markdownify }}}{{{ ''_BottomLeft,_' ' | markdownify }}}{{{ ''_BottomCenter and_' ' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
+Sets the alignment of the text in the control.  The options are,{{ '_TopLeft,_' ' | markdownify }}{{ '_TopCenter,_' ' | markdownify }}{{ '_TopRight_' | markdownify }}{{ '_MiddleLeft,_' ' | markdownify }}{{ '_MiddleCenter,_' ' | markdownify }}{{ '_MiddleRight,_' ' | markdownify }}{{ '_BottomLeft,_' ' | markdownify }}{{ '_BottomCenter and_' ' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Sets the relative location of the image to the text. The options are,{{{ ''_Overlay,_'' | markdownify }}}{{{ ''_ImageBeforeText,_'' | markdownify }}}{{{ ''_TextBeforeImage,_'' | markdownify }}}{{{ ''_ImageAboveText and_' ' | markdownify }}}{{{ ''_TextAboveImage._'' | markdownify }}}</td></tr>
+Sets the relative location of the image to the text. The options are,{{ '_Overlay,_' | markdownify }}{{ '_ImageBeforeText,_' | markdownify }}{{ '_TextBeforeImage,_' | markdownify }}{{ '_ImageAboveText and_' ' | markdownify }}{{ '_TextAboveImage._' | markdownify }}</td></tr>
 </table>
 
 
@@ -14899,7 +14899,7 @@ Description</td></tr>
 <tr>
 <td>
 ButtonStyle</td><td>
-Specifies the button style for the control. The styles are,{{{ ''_Classic,_'' | markdownify }}}{{{ ''_Office2000,_'' | markdownify }}}{{{ ''_WindowsXP,_'' | markdownify }}}{{{ ''_OfficeXP,_'' | markdownify }}}{{{ ''_Office2003 and_' ' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
+Specifies the button style for the control. The styles are,{{ '_Classic,_' | markdownify }}{{ '_Office2000,_' | markdownify }}{{ '_WindowsXP,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003 and_' ' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseVisualStyle</td><td>
@@ -14987,7 +14987,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets the 3D border style for the control. The options are,{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Flat,_'' | markdownify }}}{{{ ''_Adjust and_' ' | markdownify }}}{{{ ''_Bump._'' | markdownify }}}</td></tr>
+Sets the 3D border style for the control. The options are,{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Adjust and_' ' | markdownify }}{{ '_Bump._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
@@ -15149,7 +15149,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyleAdv</td><td>
-Specifies the border style for child buttons of the ButtonEdit control. The styles are,{{{ ''_None,_'' | markdownify }}}{{{ ''_Default,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Flat,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_SunkenInner and_'' | markdownify }}}{{{ ''_SunkenOuter._'' | markdownify }}}</td></tr>
+Specifies the border style for child buttons of the ButtonEdit control. The styles are,{{ '_None,_' | markdownify }}{{ '_Default,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Dotted,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenInner and_' | markdownify }}{{ '_SunkenOuter._' | markdownify }}</td></tr>
 </table>
 > {{ '![](Tools-Controls_images/Tools-Controls_img234.jpeg)' | markdownify }}
 {:.image }
@@ -15803,7 +15803,7 @@ Description</td></tr>
 <tr>
 <td>
 HideButton</td><td>
-Indicates whether a child button is hidden or visible. The parameters are,{{{ ''_btnIndex_'' | markdownify }}} - Specifies the index of the button.{{{ ''_visible_'' | markdownify }}} - Specifies the visibility of the button. It can be true or false. If true, the button will be visible and if false, the button will not be visible.</td></tr>
+Indicates whether a child button is hidden or visible. The parameters are,{{ '_btnIndex_' | markdownify }} - Specifies the index of the button.{{ '_visible_' | markdownify }} - Specifies the visibility of the button. It can be true or false. If true, the button will be visible and if false, the button will not be visible.</td></tr>
 </table>
 
 
@@ -16238,7 +16238,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies the 3D border style for the control. The options are,* {{{ ''_RaisedOuter_'' | markdownify }}}* {{{ ''_RaisedInner_'' | markdownify }}}* {{{ ''_SunkenOuter_'' | markdownify }}}* {{{ ''_SunkenInner_'' | markdownify }}}* {{{ ''_Raised_'' | markdownify }}}* {{{ ''_Sunken_'' | markdownify }}}* {{{ ''_Etched_'' | markdownify }}}* {{{ ''_Flat_'' | markdownify }}}* {{{ ''_Adjust_' ' | markdownify }}}* {{{ ''_Bump_'' | markdownify }}}</td></tr>
+Specifies the 3D border style for the control. The options are,* {{ '_RaisedOuter_' | markdownify }}* {{ '_RaisedInner_' | markdownify }}* {{ '_SunkenOuter_' | markdownify }}* {{ '_SunkenInner_' | markdownify }}* {{ '_Raised_' | markdownify }}* {{ '_Sunken_' | markdownify }}* {{ '_Etched_' | markdownify }}* {{ '_Flat_' | markdownify }}* {{ '_Adjust_' ' | markdownify }}* {{ '_Bump_' | markdownify }}</td></tr>
 </table>
 
 
@@ -16331,11 +16331,11 @@ Description</td></tr>
 <tr>
 <td>
 SetButtonColor</td><td>
-Sets text color for the calculator button. The parameters are,{{{ ''_caCalcButton_'' | markdownify }}} - The calculator button,{{{ ''_color_'' | markdownify }}} - The color to set for the button text.</td></tr>
+Sets text color for the calculator button. The parameters are,{{ '_caCalcButton_' | markdownify }} - The calculator button,{{ '_color_' | markdownify }} - The color to set for the button text.</td></tr>
 <tr>
 <td>
 SetButtonFont</td><td>
-Sets the font style for the text in the calculator button. The parameters are, {{{ ''_caCalcButton_'' | markdownify }}} - The calculator button,{{{ ''_font_'' | markdownify }}} - The font style for the button text.</td></tr>
+Sets the font style for the text in the calculator button. The parameters are, {{ '_caCalcButton_' | markdownify }} - The calculator button,{{ '_font_' | markdownify }} - The font style for the button text.</td></tr>
 </table>
 
 
@@ -17175,15 +17175,15 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies whether the control should have a 2D or a 3D border. The options are,{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None (default)._'' | markdownify }}}</td></tr>
+Specifies whether the control should have a 2D or a 3D border. The options are,{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style for the MonthCalendarAdv control, when the BorderStyle=Fixed3D. The styles are,{{{ ''_Raised,_' ' | markdownify }}}{{{ ''_RaisedOuter,_' ' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Sunken (default),_' ' | markdownify }}}{{{ ''_SunkenOuter,_' ' | markdownify }}}{{{ ''_SunkenInner,_' ' | markdownify }}}{{{ ''_Etched,_' ' | markdownify }}}{{{ ''_Bump,_' ' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}</td></tr>
+Sets 3D border style for the MonthCalendarAdv control, when the BorderStyle=Fixed3D. The styles are,{{ '_Raised,_' ' | markdownify }}{{ '_RaisedOuter,_' ' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_' ' | markdownify }}{{ '_SunkenOuter,_' ' | markdownify }}{{ '_SunkenInner,_' ' | markdownify }}{{ '_Etched,_' ' | markdownify }}{{ '_Bump,_' ' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the sides of the control which can have a border. The sides options are,{{{ ''_Left,_' ' | markdownify }}}{{{ ''_Top,_' ' | markdownify }}}{{{ ''_Right,_' ' | markdownify }}}{{{ ''_Bottom,_' ' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All (default)._'' | markdownify }}}</td></tr>
+Specifies the sides of the control which can have a border. The sides options are,{{ '_Left,_' ' | markdownify }}{{ '_Top,_' ' | markdownify }}{{ '_Right,_' ' | markdownify }}{{ '_Bottom,_' ' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -17367,7 +17367,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets or Sets the visual style of the MonthCalendarAdv. The options are {{{ ''_Default_'' | markdownify }}}{{{ ''_OfficeXP_'' | markdownify }}}{{{ ''_Office2003_'' | markdownify }}}{{{ ''_VS2005_'' | markdownify }}}{{{ ''_Office2007_'' | markdownify }}}The default value is 'Default'.</td></tr>
+Gets or Sets the visual style of the MonthCalendarAdv. The options are {{ '_Default_' | markdownify }}{{ '_OfficeXP_' | markdownify }}{{ '_Office2003_' | markdownify }}{{ '_VS2005_' | markdownify }}{{ '_Office2007_' | markdownify }}The default value is 'Default'.</td></tr>
 </table>
 
 
@@ -17487,7 +17487,7 @@ Gets or Sets the back color of the Grid.</td></tr>
 <tr>
 <td>
 GridLines</td><td>
-Gets or Sets the style of the Grid lines. The options are* {{{ ''_NotSet_'' | markdownify }}}* {{{ ''_None_'' | markdownify }}}* {{{ ''_Dashed_'' | markdownify }}}* {{{ ''_Dotted_'' | markdownify }}}* {{{ ''_DashDot_'' | markdownify }}}* {{{ ''_DashDotDot_'' | markdownify }}}* {{{ ''_Solid_'' | markdownify }}}* {{{ ''_Standard_'' | markdownify }}}<br>The default value is 'Dotted'.</td></tr>
+Gets or Sets the style of the Grid lines. The options are* {{ '_NotSet_' | markdownify }}* {{ '_None_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_DashDot_' | markdownify }}* {{ '_DashDotDot_' | markdownify }}* {{ '_Solid_' | markdownify }}* {{ '_Standard_' | markdownify }}<br>The default value is 'Dotted'.</td></tr>
 </table>
 
 
@@ -17965,11 +17965,11 @@ Description</td></tr>
 <tr>
 <td>
 HorizontalAlignment</td><td>
-Specifies the horizontal alignment of the dates inside a grid cell. The options are,{{{ ''_Left,_'' | markdownify }}}{{{ ''_Center and_' ' | markdownify }}}{{{ ''_Right._'' | markdownify }}}</td></tr>
+Specifies the horizontal alignment of the dates inside a grid cell. The options are,{{ '_Left,_' | markdownify }}{{ '_Center and_' ' | markdownify }}{{ '_Right._' | markdownify }}</td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
-Specifies the vertical alignment of the dates inside a grid cell. The options are,{{{ ''_Top,_' ' | markdownify }}}{{{ ''_Middle and_' ' | markdownify }}}{{{ ''_Bottom._'' | markdownify }}}</td></tr>
+Specifies the vertical alignment of the dates inside a grid cell. The options are,{{ '_Top,_' ' | markdownify }}{{ '_Middle and_' ' | markdownify }}{{ '_Bottom._' | markdownify }}</td></tr>
 <tr>
 <td>
 WrapText</td><td>
@@ -19674,7 +19674,7 @@ Description</td></tr>
 <tr>
 <td>
 Format </td><td>
-Gets or Sets the format of the picker. The options are,{{{ ''_Long(default),_' ' | markdownify }}}{{{ ''_Short,_' ' | markdownify }}}{{{ ''_Time and_'' | markdownify }}}{{{ ''_Custom._'' | markdownify }}}</td></tr>
+Gets or Sets the format of the picker. The options are,{{ '_Long(default),_' ' | markdownify }}{{ '_Short,_' ' | markdownify }}{{ '_Time and_' | markdownify }}{{ '_Custom._' | markdownify }}</td></tr>
 <tr>
 <td>
 CustomFormat</td><td>
@@ -19798,7 +19798,7 @@ Description</td></tr>
 <tr>
 <td>
 EnableNullDate</td><td>
-Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text fielddisplays the selected date even when {{{ ''_None_'' | markdownify }}} button is selected. By default it is true.</td></tr>
+Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text fielddisplays the selected date even when {{ '_None_' | markdownify }} button is selected. By default it is true.</td></tr>
 <tr>
 <td>
 EnableNullKeys</td><td>
@@ -19810,11 +19810,11 @@ Specifies the text visible when there is no date selected.  EnableNullDate must 
 <tr>
 <td>
 NullModeKeyReset</td><td>
-Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{{ ''_ArrowKeys (default),_'' | markdownify }}}{{{ ''_NumericKeys and_' ' | markdownify }}}{{{ ''_Any._'' | markdownify }}}EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ '_ArrowKeys (default),_' | markdownify }}{{ '_NumericKeys and_' ' | markdownify }}{{ '_Any._' | markdownify }}EnableNullDate must be set to true to make this setting effective.</td></tr>
 <tr>
 <td>
 IsNullDate</td><td>
-Set this to true, if you want to display null value ({{{ ''_String specified in NullString_'' | markdownify }}}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
+Set this to true, if you want to display null value ({{ '_String specified in NullString_' | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
 </table>
 
 
@@ -20238,19 +20238,19 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are,* {{{ ''_None_'' | markdownify }}}* {{{ ''_FixedSingle_' ' | markdownify }}}* {{{ ''_Fixed3D(Default)_'' | markdownify }}}</td></tr>
+Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are,* {{ '_None_' | markdownify }}* {{ '_FixedSingle_' ' | markdownify }}* {{ '_Fixed3D(Default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>Border3DStyle</td><td>
-Specifies the 3D border style of the DateTimePickerAdv.The options are,* {{{ ''_Raised_'' | markdownify }}}* {{{ ''_RaisedOuter_' ' | markdownify }}}* {{{ ''_RaisedInner_' ' | markdownify }}}* {{{ ''_Sunken(Default)_'' | markdownify }}}* {{{ ''_SunkenOuter_' ' | markdownify }}}* {{{ ''_SunkenInner_' ' | markdownify }}}* {{{ ''_Etched_' ' | markdownify }}}* {{{ ''_Bump_' ' | markdownify }}}* {{{ ''_Adjust_' ' | markdownify }}}* {{{ ''_Flat_'' | markdownify }}}</td></tr>
+Specifies the 3D border style of the DateTimePickerAdv.The options are,* {{ '_Raised_' | markdownify }}* {{ '_RaisedOuter_' ' | markdownify }}* {{ '_RaisedInner_' ' | markdownify }}* {{ '_Sunken(Default)_' | markdownify }}* {{ '_SunkenOuter_' ' | markdownify }}* {{ '_SunkenInner_' ' | markdownify }}* {{ '_Etched_' ' | markdownify }}* {{ '_Bump_' ' | markdownify }}* {{ '_Adjust_' ' | markdownify }}* {{ '_Flat_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderSingle</td><td>
-Specifies the 2D border style of the DateTimePickerAdv. The options are,* {{{ ''_None_'' | markdownify }}}* {{{ ''_Dotted_'' | markdownify }}}* {{{ ''_Dashed_'' | markdownify }}}* {{{ ''_Solid (default)_'' | markdownify }}}* {{{ ''_Inset_' ' | markdownify }}}* {{{ ''_Outset_'' | markdownify }}}</td></tr>
+Specifies the 2D border style of the DateTimePickerAdv. The options are,* {{ '_None_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Solid (default)_' | markdownify }}* {{ '_Inset_' ' | markdownify }}* {{ '_Outset_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderSides</td><td>
-Specifies the sides of the control which should have a border. The sides are,* {{{ ''_Left_'' | markdownify }}}* {{{ ''_Top_'' | markdownify }}}* {{{ ''_Right_' ' | markdownify }}}* {{{ ''_Bottom_'' | markdownify }}}* {{{ ''_Middle_' ' | markdownify }}}* {{{ ''_All (Default)_'' | markdownify }}}</td></tr>
+Specifies the sides of the control which should have a border. The sides are,* {{ '_Left_' | markdownify }}* {{ '_Top_' | markdownify }}* {{ '_Right_' ' | markdownify }}* {{ '_Bottom_' | markdownify }}* {{ '_Middle_' ' | markdownify }}* {{ '_All (Default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderColor</td><td>
@@ -20429,7 +20429,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipboardFormat</td><td>
-While doing copy / paste operation, we can specify the format of the value of the DateTimePickerAdv control that is copied, by using ClipBoardFormat property. The formats are, * {{{ ''_Long(default)_'' | markdownify }}}* {{{ ''_Short_' ' | markdownify }}}* {{{ ''_Time_' ' | markdownify }}}* {{{ ''_Custom_'' | markdownify }}}</td></tr>
+While doing copy / paste operation, we can specify the format of the value of the DateTimePickerAdv control that is copied, by using ClipBoardFormat property. The formats are, * {{ '_Long(default)_' | markdownify }}* {{ '_Short_' ' | markdownify }}* {{ '_Time_' ' | markdownify }}* {{ '_Custom_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>CopyFieldsOnly</td><td>
@@ -20589,7 +20589,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the Office style of the picker. The options are :* {{{ ''_OfficeXP_' ' | markdownify }}}* {{{ ''_Office2003_' ' | markdownify }}}* {{{ ''_VS2005_'' | markdownify }}}* {{{ ''_Office2007_' ' | markdownify }}}* {{{ ''_Default (default)_'' | markdownify }}}</td></tr>
+Specifies the Office style of the picker. The options are :* {{ '_OfficeXP_' ' | markdownify }}* {{ '_Office2003_' ' | markdownify }}* {{ '_VS2005_' | markdownify }}* {{ '_Office2007_' ' | markdownify }}* {{ '_Default (default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>Office2007Theme</td><td>
@@ -20884,11 +20884,11 @@ Boolean value indicating if the DateTimePickerAdv should consider the interface 
 <tr>
 <td>
 Appearance properties (CalendarFont, CalendarForeColor, CalendarMonthBackground, TitleBackColor, TitleForeColor and TrailingForeColor)</td><td>
-{{{ ''_CalendarFont_'' | markdownify }}} - Gets / sets the font used to draw the calendar that implements the interface, {{{ ''_CalendarForeColor_'' | markdownify }}} - Gets / sets the color used to draw the foreground of calendar that implements the interface, {{{ ''_CalendarMonthBackground_'' | markdownify }}} - Gets / sets the color used to draw the month background of calendar that implements the interface, {{{ ''_TitleBackColor_'' | markdownify }}} - Gets / sets the color used to draw the title background of calendar that implements the interface,{{{ ''_TitleForeColor_'' | markdownify }}} - Gets / sets the color used to draw the foreground of the title of calendar that implements the interface, {{{ ''_TrailingForeColor_'' | markdownify }}} - Gets / sets the color used to draw the trailing foreground of calendar that implements the interface.</td></tr>
+{{ '_CalendarFont_' | markdownify }} - Gets / sets the font used to draw the calendar that implements the interface, {{ '_CalendarForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of calendar that implements the interface, {{ '_CalendarMonthBackground_' | markdownify }} - Gets / sets the color used to draw the month background of calendar that implements the interface, {{ '_TitleBackColor_' | markdownify }} - Gets / sets the color used to draw the title background of calendar that implements the interface,{{ '_TitleForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of the title of calendar that implements the interface, {{ '_TrailingForeColor_' | markdownify }} - Gets / sets the color used to draw the trailing foreground of calendar that implements the interface.</td></tr>
 <tr>
 <td>
 Value properties (MinDate, MaxDate, Value)</td><td>
-{{{ ''_MinDate_'' | markdownify }}} - Gets / sets the minimum date of the calendar that implements the interface,{{{ ''_MaxDate_'' | markdownify }}} - Gets / sets the maximum date of the calendar that implements the interface and{{{ ''_Value_'' | markdownify }}} - Gets / sets the date of the calendar that implements the interface.</td></tr>
+{{ '_MinDate_' | markdownify }} - Gets / sets the minimum date of the calendar that implements the interface,{{ '_MaxDate_' | markdownify }} - Gets / sets the maximum date of the calendar that implements the interface and{{ '_Value_' | markdownify }} - Gets / sets the date of the calendar that implements the interface.</td></tr>
 <tr>
 <td>
 Culture</td><td>
@@ -21925,7 +21925,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets border style for the control. The options are,{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D (default) and_' ' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Sets border style for the control. The options are,{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D (default) and_' ' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
@@ -23299,7 +23299,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets the 3D border style for the control. The options are,* {{{ ''_RaisedOuter_'' | markdownify }}}* {{{ ''_RaisedInner_'' | markdownify }}}* {{{ ''_SunkenOuter_'' | markdownify }}}* {{{ ''_SunkenInner_'' | markdownify }}}* {{{ ''_Raised_'' | markdownify }}}* {{{ ''_Sunken_'' | markdownify }}}* {{{ ''_Etched_'' | markdownify }}}* {{{ ''_Flat_'' | markdownify }}}* {{{ ''_Adjust_' ' | markdownify }}}* {{{ ''_Bump_'' | markdownify }}}<br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
+Sets the 3D border style for the control. The options are,* {{ '_RaisedOuter_' | markdownify }}* {{ '_RaisedInner_' | markdownify }}* {{ '_SunkenOuter_' | markdownify }}* {{ '_SunkenInner_' | markdownify }}* {{ '_Raised_' | markdownify }}* {{ '_Sunken_' | markdownify }}* {{ '_Etched_' | markdownify }}* {{ '_Flat_' | markdownify }}* {{ '_Adjust_' ' | markdownify }}* {{ '_Bump_' | markdownify }}<br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
@@ -23361,7 +23361,7 @@ Specifies whether the control will ignore the theme's background color and draw 
 <tr>
 <td>
 Style</td><td>
-Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,{{{ ''_Default,_'' | markdownify }}}{{{ ''_OfficeXP,_'' | markdownify }}}{{{ ''_Office2003,_'' | markdownify }}}{{{ ''_VS2005 and_'' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
+Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,{{ '_Default,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003,_' | markdownify }}{{ '_VS2005 and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 </table>
 
 
@@ -24816,7 +24816,7 @@ Specifies the BorderSides of the control.The options are, * Left,* Top,* Right,
 <tr>
 <td>
 <br>FlatStyle</td><td>
-Specifies the Flat Style. The options are* {{{ ''_Flat,_'' | markdownify }}}* {{{ ''_Standard (Default) and_'' | markdownify }}}* {{{ ''_System._'' | markdownify }}}</td></tr>
+Specifies the Flat Style. The options are* {{ '_Flat,_' | markdownify }}* {{ '_Standard (Default) and_' | markdownify }}* {{ '_System._' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>FlatBorderColor</td><td>
@@ -31746,7 +31746,7 @@ Description</td></tr>
 <tr>
 <td>
 StartLocation</td><td>
-Specifies the location of the root folder from which to start browsing. It is the functional equivalent of setting the PIDL value.{{{ ''_Desktop,_'' | markdownify }}}{{{ ''_Internet,_'' | markdownify }}}{{{ ''_Programs,_'' | markdownify }}}{{{ ''_Controls,_'' | markdownify }}}{{{ ''_Printers,_'' | markdownify }}}{{{ ''_Personal,_'' | markdownify }}}{{{ ''_Favorites,_'' | markdownify }}}{{{ ''_Startup,_'' | markdownify }}}{{{ ''_Recent,_'' | markdownify }}}{{{ ''_SendTo,_'' | markdownify }}}{{{ ''_BitBucket,_'' | markdownify }}}{{{ ''_StartMenu,_'' | markdownify }}}{{{ ''_MyDocuments,_'' | markdownify }}}{{{ ''_MyMusic,_'' | markdownify }}}{{{ ''_MyVideo,_'' | markdownify }}}{{{ ''_DesktopDirectory,_'' | markdownify }}}{{{ ''_MyComputer,_'' | markdownify }}}{{{ ''_NetworkNeighborhood,_'' | markdownify }}}{{{ ''_NetHood,_'' | markdownify }}}{{{ ''_Fonts,_'' | markdownify }}}{{{ ''_Templates,_'' | markdownify }}}{{{ ''_MyPictures,_'' | markdownify }}}{{{ ''_CommonDocuments,_'' | markdownify }}}{{{ ''_CommonAdminTools,_'' | markdownify }}}{{{ ''_AdminTools,_'' | markdownify }}}{{{ ''_NetAndDialUpConnections,_'' | markdownify }}}{{{ ''_CommonMusic,_'' | markdownify }}}{{{ ''_CommonPictures,_'' | markdownify }}}{{{ ''_CommonVideo,_'' | markdownify }}}{{{ ''_Resources,_'' | markdownify }}}{{{ ''_ResourcesLocalized,_'' | markdownify }}}{{{ ''_CommonOemLinks,_'' | markdownify }}}{{{ ''_CDBurnArea,_'' | markdownify }}}{{{ ''_ComputersNearMe,_'' | markdownify }}}{{{ ''_CustomStartLocation,_'' | markdownify }}}{{{ ''_FlagPerUserInit,_'' | markdownify }}}{{{ ''_FlagNoAlias,_'' | markdownify }}}{{{ ''_FlagDontVerify,_'' | markdownify }}}{{{ ''_FlagCreate and_'' | markdownify }}}{{{ ''_FlagMask._'' | markdownify }}}</td></tr>
+Specifies the location of the root folder from which to start browsing. It is the functional equivalent of setting the PIDL value.{{ '_Desktop,_' | markdownify }}{{ '_Internet,_' | markdownify }}{{ '_Programs,_' | markdownify }}{{ '_Controls,_' | markdownify }}{{ '_Printers,_' | markdownify }}{{ '_Personal,_' | markdownify }}{{ '_Favorites,_' | markdownify }}{{ '_Startup,_' | markdownify }}{{ '_Recent,_' | markdownify }}{{ '_SendTo,_' | markdownify }}{{ '_BitBucket,_' | markdownify }}{{ '_StartMenu,_' | markdownify }}{{ '_MyDocuments,_' | markdownify }}{{ '_MyMusic,_' | markdownify }}{{ '_MyVideo,_' | markdownify }}{{ '_DesktopDirectory,_' | markdownify }}{{ '_MyComputer,_' | markdownify }}{{ '_NetworkNeighborhood,_' | markdownify }}{{ '_NetHood,_' | markdownify }}{{ '_Fonts,_' | markdownify }}{{ '_Templates,_' | markdownify }}{{ '_MyPictures,_' | markdownify }}{{ '_CommonDocuments,_' | markdownify }}{{ '_CommonAdminTools,_' | markdownify }}{{ '_AdminTools,_' | markdownify }}{{ '_NetAndDialUpConnections,_' | markdownify }}{{ '_CommonMusic,_' | markdownify }}{{ '_CommonPictures,_' | markdownify }}{{ '_CommonVideo,_' | markdownify }}{{ '_Resources,_' | markdownify }}{{ '_ResourcesLocalized,_' | markdownify }}{{ '_CommonOemLinks,_' | markdownify }}{{ '_CDBurnArea,_' | markdownify }}{{ '_ComputersNearMe,_' | markdownify }}{{ '_CustomStartLocation,_' | markdownify }}{{ '_FlagPerUserInit,_' | markdownify }}{{ '_FlagNoAlias,_' | markdownify }}{{ '_FlagDontVerify,_' | markdownify }}{{ '_FlagCreate and_' | markdownify }}{{ '_FlagMask._' | markdownify }}</td></tr>
 <tr>
 <td>
 CustomStartLocation</td><td>
@@ -31822,7 +31822,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the options for the FolderBrowser Dialog.The options included are as follows.{{{ ''_RestrictToFilesystem,_'' | markdownify }}}{{{ ''_RestrictToSubfolders,_'' | markdownify }}}{{{ ''_RestrictToDomain,_'' | markdownify }}}{{{ ''_BrowseForComputer,_'' | markdownify }}}{{{ ''_BrowseForEverything,_'' | markdownify }}}{{{ ''_BrowseForPrinter,_'' | markdownify }}}{{{ ''_NewDialogStyle,_'' | markdownify }}}{{{ ''_AllowUrls,_'' | markdownify }}}{{{ ''_ShowAdministrativeShares,_'' | markdownify }}}{{{ ''_ShowShares,_'' | markdownify }}}{{{ ''_ShowTextBox,_'' | markdownify }}}{{{ ''_StatusText,_'' | markdownify }}}{{{ ''_UAHint and_'' | markdownify }}}{{{ ''_Validate._'' | markdownify }}}</td></tr>
+Specifies the options for the FolderBrowser Dialog.The options included are as follows.{{ '_RestrictToFilesystem,_' | markdownify }}{{ '_RestrictToSubfolders,_' | markdownify }}{{ '_RestrictToDomain,_' | markdownify }}{{ '_BrowseForComputer,_' | markdownify }}{{ '_BrowseForEverything,_' | markdownify }}{{ '_BrowseForPrinter,_' | markdownify }}{{ '_NewDialogStyle,_' | markdownify }}{{ '_AllowUrls,_' | markdownify }}{{ '_ShowAdministrativeShares,_' | markdownify }}{{ '_ShowShares,_' | markdownify }}{{ '_ShowTextBox,_' | markdownify }}{{ '_StatusText,_' | markdownify }}{{ '_UAHint and_' | markdownify }}{{ '_Validate._' | markdownify }}</td></tr>
 </table>
 
 
@@ -32157,15 +32157,15 @@ Provides properties to customize the calculator button. {{ '[See ButtonEdit](htt
 <tr>
 <td>
 CalculatorLayoutType</td><td>
-Specifies the LayoutType for the Calculator control. The layout types are,{{{ ''_Financial (default) and_'' | markdownify }}}{{{ ''_WindowStandard._'' | markdownify }}}</td></tr>
+Specifies the LayoutType for the Calculator control. The layout types are,{{ '_Financial (default) and_' | markdownify }}{{ '_WindowStandard._' | markdownify }}</td></tr>
 <tr>
 <td>
 PopupCalculatorAlignment</td><td>
-It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,{{{ ''_Right(default) and_'' | markdownify }}}{{{ ''_Left._'' | markdownify }}}</td></tr>
+It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,{{ '_Right(default) and_' | markdownify }}{{ '_Left._' | markdownify }}</td></tr>
 <tr>
 <td>
 CloseAction</td><td>
-Specifies the action that will close the popup calculator. After performing calculations in the popup calculator, we may press '=' to close the popup calculator. This is called closed action. We can select any operator instead of '=' to close the popup calculator. The options are,{{{ ''_Calcdigit0...Calcdigit9,_'' | markdownify }}}{{{ ''_CalcOperatorNone,_'' | markdownify }}}{{{ ''_CalcOperatorMultiply,_'' | markdownify }}}{{{ ''_CalcOperatorPlus,_'' | markdownify }}}{{{ ''_CalcOperatorMinus,_'' | markdownify }}}{{{ ''_CalcOperatorDivide,_'' | markdownify }}}{{{ ''_CalcOperatorPercent,_'' | markdownify }}}{{{ ''_CalcOperatorEquals (default),_'' | markdownify }}}{{{ ''_CalcOperatorSqrt,_'' | markdownify }}}{{{ ''_CalcOperatorSign,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryClear,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryRecall,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryStore,_'' | markdownify }}}{{{ ''_CalcOperatorMemoryPlus,_'' | markdownify }}}{{{ ''_CalcSpecialClear,_'' | markdownify }}}{{{ ''_CalcSpecialClearEntry,_'' | markdownify }}}{{{ ''_CalcSpecialDecimal and_'' | markdownify }}}{{{ ''_CalcSpecialBackspace._'' | markdownify }}}</td></tr>
+Specifies the action that will close the popup calculator. After performing calculations in the popup calculator, we may press '=' to close the popup calculator. This is called closed action. We can select any operator instead of '=' to close the popup calculator. The options are,{{ '_Calcdigit0...Calcdigit9,_' | markdownify }}{{ '_CalcOperatorNone,_' | markdownify }}{{ '_CalcOperatorMultiply,_' | markdownify }}{{ '_CalcOperatorPlus,_' | markdownify }}{{ '_CalcOperatorMinus,_' | markdownify }}{{ '_CalcOperatorDivide,_' | markdownify }}{{ '_CalcOperatorPercent,_' | markdownify }}{{ '_CalcOperatorEquals (default),_' | markdownify }}{{ '_CalcOperatorSqrt,_' | markdownify }}{{ '_CalcOperatorSign,_' | markdownify }}{{ '_CalcOperatorMemoryClear,_' | markdownify }}{{ '_CalcOperatorMemoryRecall,_' | markdownify }}{{ '_CalcOperatorMemoryStore,_' | markdownify }}{{ '_CalcOperatorMemoryPlus,_' | markdownify }}{{ '_CalcSpecialClear,_' | markdownify }}{{ '_CalcSpecialClearEntry,_' | markdownify }}{{ '_CalcSpecialDecimal and_' | markdownify }}{{ '_CalcSpecialBackspace._' | markdownify }}</td></tr>
 </table>
 
 
@@ -33887,7 +33887,7 @@ Indicates whether the Culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture,_'' | markdownify }}}{{{ ''_UICulture and_'' | markdownify }}}{{{ ''_InstalledCulture._'' | markdownify }}}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -34055,7 +34055,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options:{{{ ''_IncludeFormatting and_'' | markdownify }}}{{{ ''_ExcludeFormatting._'' | markdownify }}}</td></tr>
+Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options:{{ '_IncludeFormatting and_' | markdownify }}{{ '_ExcludeFormatting._' | markdownify }}</td></tr>
 </table>
 
 
@@ -34521,7 +34521,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -34529,11 +34529,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options are as follows.{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
+Indicates the border sides of the panel. The options are as follows.{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
@@ -35541,7 +35541,7 @@ Indicates whether the Culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture,_'' | markdownify }}}{{{ ''_UICulture and_'' | markdownify }}}{{{ ''_InstalledCulture._'' | markdownify }}}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -35609,7 +35609,7 @@ Specifies the text associated with the control.</td></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options.{{{ ''_Normal,_'' | markdownify }}}{{{ ''_Upper and_'' | markdownify }}}{{{ ''_Lower._'' | markdownify }}}</td></tr>
+Gets / sets the case of character as they are typed.It includes the below given options.{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -35769,7 +35769,7 @@ Indicates if lines are automatically word-wrapped for multiline edit controls.</
 <tr>
 <td>
 ScrollBars</td><td>
-Indicates, for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_Horizontal,_'' | markdownify }}}{{{ ''_Vertical and_'' | markdownify }}}{{{ ''_Both._'' | markdownify }}}</td></tr>
+Indicates, for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
 </table>
 
 
@@ -35825,7 +35825,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options.{{{ ''_IncludeFormatting and_'' | markdownify }}}{{{ ''_ExcludeFormatting._'' | markdownify }}}</td></tr>
+Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options.{{ '_IncludeFormatting and_' | markdownify }}{{ '_ExcludeFormatting._' | markdownify }}</td></tr>
 </table>
 
 
@@ -36249,7 +36249,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -36257,11 +36257,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,'_' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,'_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below.{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
@@ -37823,11 +37823,11 @@ Sets the style of the border. The options includes:FixedSingle,Fixed3D andNone (
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Sunken (default),_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}</td></tr>
+Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the border sides. The options includes{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All (default)._'' | markdownify }}}</td></tr>
+Specifies the border sides. The options includes{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -37945,7 +37945,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{{ ''_ExcludeFormatting and_'' | markdownify }}}{{{ ''_IncludeFormatting._'' | markdownify }}}</td></tr>
+Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ '_ExcludeFormatting and_' | markdownify }}{{ '_IncludeFormatting._' | markdownify }}</td></tr>
 </table>
 
 
@@ -38023,7 +38023,7 @@ Specifies whether the culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture (default),_'' | markdownify }}}{{{ ''_InstalledCulture,_'' | markdownify }}}{{{ ''_UICulture._'' | markdownify }}}</td></tr>
+It sets the mode for the cultures. The options includes:{{ '_None,_' | markdownify }}{{ '_CurrentCulture (default),_' | markdownify }}{{ '_InstalledCulture,_' | markdownify }}{{ '_UICulture._' | markdownify }}</td></tr>
 </table>
 
 
@@ -39163,11 +39163,11 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{{ ''_IncludeLiterals and_'' | markdownify }}}{{{ ''_ExcludeLiterals._'' | markdownify }}}The default value is 'IncludeLiterals'.</td></tr>
+Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
 <tr>
 <td>
 InputMode</td><td>
-Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{{ ''_OvertypeOnly and_'' | markdownify }}}{{{ ''_Normal._'' | markdownify }}}The default value is 'OvertypeOnly'.</td></tr>
+Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'OvertypeOnly'.</td></tr>
 <tr>
 <td>
 UsageMode</td><td>
@@ -39323,7 +39323,7 @@ Description</td></tr>
 <tr>
 <td>
 PositionAt</td><td>
-Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{{ ''_Decimal_'' | markdownify }}}{{{ ''_FirstPosition and_'' | markdownify }}}{{{ ''_FirstMaskPosition._'' | markdownify }}}The default value is 'FirstPosition'.</td></tr>
+Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{ '_Decimal_' | markdownify }}{{ '_FirstPosition and_' | markdownify }}{{ '_FirstMaskPosition._' | markdownify }}The default value is 'FirstPosition'.</td></tr>
 <tr>
 <td>
 PositionAtDecimal</td><td>
@@ -39549,7 +39549,7 @@ Gets / sets the culture that is to be used for formatting the numeric display.</
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options:{{{ ''_None,_'' | markdownify }}}{{{ ''_CurrentCulture,_'' | markdownify }}}{{{ ''_UICulture and_'' | markdownify }}}{{{ ''_InstalledCulture._'' | markdownify }}}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options:{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -39601,7 +39601,7 @@ Description</td></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options:{{{ ''_Normal,_'' | markdownify }}}{{{ ''_Upper and_'' | markdownify }}}{{{ ''_Lower._'' | markdownify }}}</td></tr>
+Gets / sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -39717,7 +39717,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{{ ''_IncludeLiterals and_'' | markdownify }}}{{{ ''_ExcludeLiterals._'' | markdownify }}}</td></tr>
+Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}</td></tr>
 </table>
 
 
@@ -40105,7 +40105,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -40113,11 +40113,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
@@ -41525,7 +41525,7 @@ Description</td></tr>
 <tr>
 <td>
 UpDownAlign</td><td>
-Gets / sets the alignment of the up and down buttons. The default value is set to 'Right'.It includes the below given options.{{{ ''_Left and_'' | markdownify }}}{{{ ''_Right._'' | markdownify }}}</td></tr>
+Gets / sets the alignment of the up and down buttons. The default value is set to 'Right'.It includes the below given options.{{ '_Left and_' | markdownify }}{{ '_Right._' | markdownify }}</td></tr>
 </table>
 
 
@@ -41559,7 +41559,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -41567,11 +41567,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
@@ -42458,7 +42458,7 @@ Indicates if lines are automatically word-wrapped for multiline edit controls.</
 <tr>
 <td>
 ScrollBars</td><td>
-Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{{ ''_None,_'' | markdownify }}}{{{ ''_Horizontal,_'' | markdownify }}}{{{ ''_Vertical and_'' | markdownify }}}{{{ ''_Both._'' | markdownify }}}</td></tr>
+Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
 </table>
 
 
@@ -42740,7 +42740,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -42748,11 +42748,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
@@ -43893,7 +43893,7 @@ Description</td></tr>
 <tr>
 <td>
 DropDownStyle</td><td>
-Specifies the style of the dropdown. The options are,{{{ ''_DropDownList_'' | markdownify }}} - The user cannot directly edit the text portion. The user must click the arrow button to display the list portion,{{{ ''_DropDown (default)_'' | markdownify }}} - The user can directly edit the text portion. The user must click the arrow button to display the list portion,{{{ ''_Simple_'' | markdownify }}} - The text portion is editable. The list portion is always visible.</td></tr>
+Specifies the style of the dropdown. The options are,{{ '_DropDownList_' | markdownify }} - The user cannot directly edit the text portion. The user must click the arrow button to display the list portion,{{ '_DropDown (default)_' | markdownify }} - The user can directly edit the text portion. The user must click the arrow button to display the list portion,{{ '_Simple_' | markdownify }} - The text portion is editable. The list portion is always visible.</td></tr>
 <tr>
 <td>
 DropDownHeight</td><td>
@@ -44433,7 +44433,7 @@ Description</td></tr>
 <tr>
 <td>
 Position</td><td>
-Specifies the relative position of the control and the AutoLabel.The options included are as follows.{{{ ''_Custom,_'' | markdownify }}}{{{ ''_Left,_'' | markdownify }}}{{{ ''_Left and_'' | markdownify }}}{{{ ''_Top._'' | markdownify }}}</td></tr>
+Specifies the relative position of the control and the AutoLabel.The options included are as follows.{{ '_Custom,_' | markdownify }}{{ '_Left,_' | markdownify }}{{ '_Left and_' | markdownify }}{{ '_Top._' | markdownify }}</td></tr>
 </table>
 
 
@@ -44741,11 +44741,11 @@ Description</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the sides of the GradientLabel that will have a border.  The options included are as follows.{{{ ''_Left,_'' | markdownify }}}{{{ ''_Top,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Middle and_'' | markdownify }}}{{{ ''_All._'' | markdownify }}}The default value is set to 'All'.</td></tr>
+Specifies the sides of the GradientLabel that will have a border.  The options included are as follows.{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}The default value is set to 'All'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies the 3D border style for the GradientLabel.The options included are as follows.{{{ ''_Raised,_'' | markdownify }}}{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
+Specifies the 3D border style for the GradientLabel.The options included are as follows.{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -44843,7 +44843,7 @@ Gets / sets the background color and other styles.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style.{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Pattern and_'' | markdownify }}}{{{ ''_Gradient._'' | markdownify }}}The default value is set to 'Gradient'.</td></tr>
+Specifies the brush style.{{ '_Solid,_' | markdownify }}{{ '_Pattern and_' | markdownify }}{{ '_Gradient._' | markdownify }}The default value is set to 'Gradient'.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -44859,7 +44859,7 @@ Specifies the pattern style of the control.</td></tr>
 <tr>
 <td>
 GradientStyle</td><td>
-Specifies the gradient style of the background.{{{ ''_ForwardDiagonal,_'' | markdownify }}}{{{ ''_BackwardDiagonal,_'' | markdownify }}}{{{ ''_Horizontal,_'' | markdownify }}}{{{ ''_Vertical,_'' | markdownify }}}{{{ ''_PathRectangle and_'' | markdownify }}}{{{ ''_PathEllipse._'' | markdownify }}}The default value is set to 'Vertical'.</td></tr>
+Specifies the gradient style of the background.{{ '_ForwardDiagonal,_' | markdownify }}{{ '_BackwardDiagonal,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical,_' | markdownify }}{{ '_PathRectangle and_' | markdownify }}{{ '_PathEllipse._' | markdownify }}The default value is set to 'Vertical'.</td></tr>
 <tr>
 <td>
 GradientColors</td><td>
@@ -45195,7 +45195,7 @@ Description</td></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets / sets the check state of the CheckBox.It includes the below given options.{{{ ''_Unchecked,_'' | markdownify }}}{{{ ''_Checked and_'' | markdownify }}}{{{ ''_Indeterminate._'' | markdownify }}}</td></tr>
+Gets / sets the check state of the CheckBox.It includes the below given options.{{ '_Unchecked,_' | markdownify }}{{ '_Checked and_' | markdownify }}{{ '_Indeterminate._' | markdownify }}</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -45523,7 +45523,7 @@ Description</td></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
 </table>
 
 
@@ -45561,7 +45561,7 @@ Description</td></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
+Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 </table>
 
 
@@ -45609,7 +45609,7 @@ Description</td></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the CheckBoxAdv.The options included are as follows.{{{ ''_HorizontalGradient,_'' | markdownify }}}{{{ ''_VerticalGradient and_'' | markdownify }}}{{{ ''_Default._'' | markdownify }}}</td></tr>
+Sets the background style of the CheckBoxAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -45671,7 +45671,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat_'' | markdownify }}}.The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat_' | markdownify }}.The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -45679,11 +45679,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset and_' | markdownify }}{{ '_None._' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>
@@ -45947,11 +45947,11 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.{{{ ''_Default and_'' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
+Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{{ ''_Managed,_'' | markdownify }}}{{{ ''_Blue,_'' | markdownify }}}{{{ ''_Silver and_'' | markdownify }}}{{{ ''_Black._'' | markdownify }}}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
 </table>
 
 
@@ -46695,7 +46695,7 @@ Description</td></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
 </table>
 
 
@@ -46733,7 +46733,7 @@ Description</td></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{{ ''_TopLeft,_'' | markdownify }}}{{{ ''_TopCenter,_'' | markdownify }}}{{{ ''_TopRight,_'' | markdownify }}}{{{ ''_MiddleLeft,_'' | markdownify }}}{{{ ''_MiddleCenter,_'' | markdownify }}}{{{ ''_MiddleRight,_'' | markdownify }}}{{{ ''_BottomLeft,_'' | markdownify }}}{{{ ''_BottomCenter and_'' | markdownify }}}{{{ ''_BottomRight._'' | markdownify }}}</td></tr>
+Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 </table>
 
 
@@ -46781,7 +46781,7 @@ Description</td></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the RadioButtonAdv.The options included are as follows.{{{ ''_HorizontalGradient,_'' | markdownify }}}{{{ ''_VerticalGradient and_'' | markdownify }}}{{{ ''_Default._'' | markdownify }}}</td></tr>
+Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -46843,7 +46843,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_'' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -46851,11 +46851,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{{ ''_Dotted,_'' | markdownify }}}{{{ ''_Dashed,_'' | markdownify }}}{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Inset,_'' | markdownify }}}{{{ ''_Outset and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset and_' | markdownify }}{{ '_None._' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{{ ''_FixedSingle,_'' | markdownify }}}{{{ ''_Fixed3D and_'' | markdownify }}}{{{ ''_None._'' | markdownify }}}</td></tr>
+Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>
@@ -47103,11 +47103,11 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{{ ''_Default and_'' | markdownify }}}{{{ ''_Office2007._'' | markdownify }}}</td></tr>
+Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{{ ''_Managed,_'' | markdownify }}}{{{ ''_Blue,_'' | markdownify }}}{{{ ''_Silver and_'' | markdownify }}}{{{ ''_Black._'' | markdownify }}}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
 </table>
 
 
@@ -49048,7 +49048,7 @@ Description</td></tr>
 <tr>
 <td>
 LayoutMode</td><td>
-Specifies the layout mode of the Child controls. The default value is set to 'Horizontal'.The options included are as follows.{{{ ''_Horizontal and_'' | markdownify }}}{{{ ''_Vertical._'' | markdownify }}}</td></tr>
+Specifies the layout mode of the Child controls. The default value is set to 'Horizontal'.The options included are as follows.{{ '_Horizontal and_' | markdownify }}{{ '_Vertical._' | markdownify }}</td></tr>
 </table>
 
 
@@ -49332,11 +49332,11 @@ Description</td></tr>
 <tr>
 <td>
 HAlign</td><td>
-Specifies the mode in which the Child control should be laid out within a row. The options includes are as follows.{{{ ''_Left,_'' | markdownify }}}{{{ ''_Right,_'' | markdownify }}}{{{ ''_Center and_'' | markdownify }}}{{{ ''_Justify._'' | markdownify }}}</td></tr>
+Specifies the mode in which the Child control should be laid out within a row. The options includes are as follows.{{ '_Left,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Center and_' | markdownify }}{{ '_Justify._' | markdownify }}</td></tr>
 <tr>
 <td>
 VAlign</td><td>
-Specifies the mode in which the Child control should be laid out within a column. The options includes are as follows.{{{ ''_Top,_'' | markdownify }}}{{{ ''_Bottom,_'' | markdownify }}}{{{ ''_Center and_'' | markdownify }}}{{{ ''_Justify._'' | markdownify }}}</td></tr>
+Specifies the mode in which the Child control should be laid out within a column. The options includes are as follows.{{ '_Top,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Center and_' | markdownify }}{{ '_Justify._' | markdownify }}</td></tr>
 </table>
 
 
@@ -50396,7 +50396,7 @@ Description</td></tr>
 <tr>
 <td>
 Anchor</td><td>
-Specifies the justification of a component within it's available layout bounds (a cell in the virtual grid). The default value is set to 'Center'. The options includes are as follows.{{{ ''_Center,_'' | markdownify }}}{{{ ''_North,_'' | markdownify }}}{{{ ''_NorthEast,_'' | markdownify }}}{{{ ''_East,_'' | markdownify }}}{{{ ''_SouthEast,_'' | markdownify }}}{{{ ''_South,_'' | markdownify }}}{{{ ''_SouthWest,_'' | markdownify }}}{{{ ''_West and_'' | markdownify }}}{{{ ''_NorthWest._'' | markdownify }}}</td></tr>
+Specifies the justification of a component within it's available layout bounds (a cell in the virtual grid). The default value is set to 'Center'. The options includes are as follows.{{ '_Center,_' | markdownify }}{{ '_North,_' | markdownify }}{{ '_NorthEast,_' | markdownify }}{{ '_East,_' | markdownify }}{{ '_SouthEast,_' | markdownify }}{{ '_South,_' | markdownify }}{{ '_SouthWest,_' | markdownify }}{{ '_West and_' | markdownify }}{{ '_NorthWest._' | markdownify }}</td></tr>
 </table>
 
 
@@ -50424,7 +50424,7 @@ Description</td></tr>
 <tr>
 <td>
 Fill</td><td>
-Specifies whether to resize a component when the component's layout bounds are larger than it's preferred size. The options included are as follows.{{{ ''_None,_'' | markdownify }}}{{{ ''_Both,_'' | markdownify }}}{{{ ''_Horizontal and_'' | markdownify }}}{{{ ''_Vertical._'' | markdownify }}}</td></tr>
+Specifies whether to resize a component when the component's layout bounds are larger than it's preferred size. The options included are as follows.{{ '_None,_' | markdownify }}{{ '_Both,_' | markdownify }}{{ '_Horizontal and_' | markdownify }}{{ '_Vertical._' | markdownify }}</td></tr>
 </table>
 
 
@@ -52801,7 +52801,7 @@ Relative Position of the bar item when it is merged with another.</td></tr>
 <tr>
 <td>
 MergeType</td><td>
-Sets behavior of the bar item when its bar is merged with another. The options are,{{{ ''_Add_'' | markdownify }}} - Adds to the existing menu items. (Default){{{ ''_Replace_'' | markdownify }}} - Replaces an existing menu items at the same position in a merged menu.{{{ ''_MergeItems_'' | markdownify }}} - Merged with an existing menu items at the same position in a merged menu.{{{ ''_Remove_'' | markdownify }}} - Menu item will not be included in the merged menu.</td></tr>
+Sets behavior of the bar item when its bar is merged with another. The options are,{{ '_Add_' | markdownify }} - Adds to the existing menu items. (Default){{ '_Replace_' | markdownify }} - Replaces an existing menu items at the same position in a merged menu.{{ '_MergeItems_' | markdownify }} - Merged with an existing menu items at the same position in a merged menu.{{ '_Remove_' | markdownify }} - Menu item will not be included in the merged menu.</td></tr>
 <tr>
 <td>
 Customizable</td><td>
@@ -52959,7 +52959,7 @@ Description</td></tr>
 <tr>
 <td>
 PaintStyle</td><td>
-Indicates the painting style of the bar item.{{{ ''_Default_'' | markdownify }}} - Displays the style of it parents. In case of MainMenu, only text will be drawn, in other toolbars only image and in Dropdown menu, image and text will be drawn.{{{ ''_TextOnly_'' | markdownify }}} - Displays only Text.{{{ ''_TextOnlyInMenus_'' | markdownify }}} - Image will be ignored when the BarItem is in a drop down menu.{{{ ''_ImageAndText_'' | markdownify }}} - Both Image and Text will be drawn.</td></tr>
+Indicates the painting style of the bar item.{{ '_Default_' | markdownify }} - Displays the style of it parents. In case of MainMenu, only text will be drawn, in other toolbars only image and in Dropdown menu, image and text will be drawn.{{ '_TextOnly_' | markdownify }} - Displays only Text.{{ '_TextOnlyInMenus_' | markdownify }} - Image will be ignored when the BarItem is in a drop down menu.{{ '_ImageAndText_' | markdownify }} - Both Image and Text will be drawn.</td></tr>
 </table>
 
 
@@ -53197,7 +53197,7 @@ Sets text for the Bar item.</td></tr>
 <tr>
 <td>
 TextAlignment</td><td>
-Sets the text alignment. Options are,{{{ ''_Near, (Default)_'' | markdownify }}}{{{ ''_Far,_'' | markdownify }}}{{{ ''_Center_'' | markdownify }}}</td></tr>
+Sets the text alignment. Options are,{{ '_Near, (Default)_' | markdownify }}{{ '_Far,_' | markdownify }}{{ '_Center_' | markdownify }}</td></tr>
 </table>
 
 
@@ -53701,11 +53701,11 @@ Description</td></tr>
 <tr>
 <td>
 Remove</td><td>
-Removes the first occurrence of the specific object.{{{ ''_obj_' ' | markdownify }}}- System.object to remove from System.Collections.Arraylist.</td></tr>
+Removes the first occurrence of the specific object.{{ '_obj_' ' | markdownify }}- System.object to remove from System.Collections.Arraylist.</td></tr>
 <tr>
 <td>
 RemoveAt</td><td>
-Removes the bar item from the ParentBarItems Collection based on the Bar item index(index). The parameter is,{{{ ''_index_'' | markdownify }}} - Index of the bar item.</td></tr>
+Removes the bar item from the ParentBarItems Collection based on the Bar item index(index). The parameter is,{{ '_index_' | markdownify }} - Index of the bar item.</td></tr>
 </table>
 
 
@@ -55119,7 +55119,7 @@ Description</td></tr>
 <tr>
 <td>
 AllowQuickCustomizing</td><td>
-This will draw an arrow button to the right side of the toolbar that will allow the user to drop down a menu from which they can select hidden items, add or remove buttons and invoke Customize dialog. {{{ ''_Note:_'' | markdownify }}} This is effective only with IsMainMenu unchecked.</td></tr>
+This will draw an arrow button to the right side of the toolbar that will allow the user to drop down a menu from which they can select hidden items, add or remove buttons and invoke Customize dialog. {{ '_Note:_' | markdownify }} This is effective only with IsMainMenu unchecked.</td></tr>
 <tr>
 <td>
 DrawDragBorder</td><td>
@@ -55131,7 +55131,7 @@ Wraps the bar into multiple rows when there is not enough space in a row while d
 <tr>
 <td>
 IsMainMenu</td><td>
-When this option is checked, it treats the bar as the main menu and forces the bar to occupy the whole row irrespective of multiline settings. > {{{ ''_Note: If this option is selected for more one bar, the first setting will be effective and the rest will be ignored._'' | markdownify }}}</td></tr>
+When this option is checked, it treats the bar as the main menu and forces the bar to occupy the whole row irrespective of multiline settings. > {{ '_Note: If this option is selected for more one bar, the first setting will be effective and the rest will be ignored._' | markdownify }}</td></tr>
 <tr>
 <td>
 RotateWhenVertical</td><td>
@@ -67445,7 +67445,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Determines the style of the 3D border. It includes the following options.{{{ ''_RaisedOuter,_'' | markdownify }}}{{{ ''_SunkenOuter,_'' | markdownify }}}{{{ ''_RaisedInner,_'' | markdownify }}}{{{ ''_Raised,_'' | markdownify }}}{{{ ''_Etched,_'' | markdownify }}}{{{ ''_SunkenInner,_'' | markdownify }}}{{{ ''_Bump,_'' | markdownify }}}{{{ ''_Sunken,_'' | markdownify }}}{{{ ''_Adjust and_' ' | markdownify }}}{{{ ''_Flat._'' | markdownify }}}</td></tr>
+Determines the style of the 3D border. It includes the following options.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' ' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -73290,7 +73290,7 @@ Gets / sets the background gradient and other styles.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style.{{{ ''_Solid,_'' | markdownify }}}{{{ ''_Pattern and_'' | markdownify }}}{{{ ''_Gradient._'' | markdownify }}}</td></tr>
+Specifies the brush style.{{ '_Solid,_' | markdownify }}{{ '_Pattern and_' | markdownify }}{{ '_Gradient._' | markdownify }}</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -77533,7 +77533,7 @@ Represents image and text relation.</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Sets the display style of the item. The options are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and the text in the office button.</td></tr>
+Sets the display style of the item. The options are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and the text in the office button.</td></tr>
 <tr>
 <td>
 Font</td><td>
@@ -77565,7 +77565,7 @@ Sets the visibility of the toolstrip item.</td></tr>
 <tr>
 <td>
 AutoTooltip</td><td>
-Lets you to specify whether the tooltip text is taken from the Text property or the ToolTipText property. {{{ ''_True_'' | markdownify }}} - Tooltip text is taken from the Text property,{{{ ''_False_' ' | markdownify }}}- Tooltip text is taken from the ToolTipText property.OfficeMenu.ShowItemToolTips should be true for this setting to be effective.</td></tr>
+Lets you to specify whether the tooltip text is taken from the Text property or the ToolTipText property. {{ '_True_' | markdownify }} - Tooltip text is taken from the Text property,{{ '_False_' ' | markdownify }}- Tooltip text is taken from the ToolTipText property.OfficeMenu.ShowItemToolTips should be true for this setting to be effective.</td></tr>
 <tr>
 <td>
 ToolTipText</td><td>
@@ -78108,15 +78108,15 @@ Text for the ToolStripTabItem.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Alignment of the text in a ToolStripTabItem. The different content alignments are,{{{ ''_BottomCenter_'' | markdownify }}} - Vertically aligned at bottom, horizontally aligned at center.{{{ ''_BottomLeft_'' | markdownify }}} - Vertically aligned at bottom, horizontally aligned at left.{{{ ''_BottomRight_'' | markdownify }}} - Vertically aligned at bottom, horizontally aligned at Right.{{{ ''_MiddleCenter_'' | markdownify }}} - Vertically aligned at Middle, horizontally aligned at Center. (Default){{{ ''_MiddleLeft_'' | markdownify }}} - Vertically aligned at Middle, horizontally aligned at Left.{{{ ''_MiddleRight_'' | markdownify }}} - Vertically aligned at Middle, horizontally aligned at Right.{{{ ''_TopCenter_'' | markdownify }}} - Vertically aligned at Top, horizontally aligned at Center.{{{ ''_TopLeft_'' | markdownify }}} - Vertically aligned at Top, horizontally aligned at Left.{{{ ''_TopRight_'' | markdownify }}} - Vertically aligned at Top, horizontally aligned at Right.</td></tr>
+Alignment of the text in a ToolStripTabItem. The different content alignments are,{{ '_BottomCenter_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at center.{{ '_BottomLeft_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at left.{{ '_BottomRight_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at Right.{{ '_MiddleCenter_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Center. (Default){{ '_MiddleLeft_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Left.{{ '_MiddleRight_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Right.{{ '_TopCenter_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Center.{{ '_TopLeft_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Left.{{ '_TopRight_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Right.</td></tr>
 <tr>
 <td>
 TextDirection</td><td>
-Direction of drawing the text. {{{ ''_Horizontal_'' | markdownify }}} - specifies horizontal text orientation; (Default){{{ ''_Inherit_'' | markdownify }}} - specifies that the text direction is inherited from the parent control; {{{ ''_Vertical270_'' | markdownify }}} - specifies that the text is rotated 270 degrees; {{{ ''_Vertical90_'' | markdownify }}} - specifies that the text is rotated 90 degrees.</td></tr>
+Direction of drawing the text. {{ '_Horizontal_' | markdownify }} - specifies horizontal text orientation; (Default){{ '_Inherit_' | markdownify }} - specifies that the text direction is inherited from the parent control; {{ '_Vertical270_' | markdownify }} - specifies that the text is rotated 270 degrees; {{ '_Vertical90_' | markdownify }} - specifies that the text is rotated 90 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Relative location of the image to the text in the ToolStripTabItem. See Image Settings.The various options available are,{{{ ''_Overlay,_' ' | markdownify }}}{{{ ''_ImageAboveText, (Default)_'' | markdownify }}}{{{ ''_TextAboveImage,_' ' | markdownify }}}{{{ ''_ImageBeforeText and_' ' | markdownify }}}{{{ ''_TextBeforeImage._'' | markdownify }}}</td></tr>
+Relative location of the image to the text in the ToolStripTabItem. See Image Settings.The various options available are,{{ '_Overlay,_' ' | markdownify }}{{ '_ImageAboveText, (Default)_' | markdownify }}{{ '_TextAboveImage,_' ' | markdownify }}{{ '_ImageBeforeText and_' ' | markdownify }}{{ '_TextBeforeImage._' | markdownify }}</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
@@ -78580,11 +78580,11 @@ Description</td></tr>
 <tr>
 <td>
 SetShortcut</td><td>
-Sets shortcut key. The parameters are,{{{ ''_Component_'' | markdownify }}} - Component of the RibbonForm.{{{ ''_Value_'' | markdownify }}} - Represents the shortcut key for the component specified.</td></tr>
+Sets shortcut key. The parameters are,{{ '_Component_' | markdownify }} - Component of the RibbonForm.{{ '_Value_' | markdownify }} - Represents the shortcut key for the component specified.</td></tr>
 <tr>
 <td>
 GetShortcut</td><td>
-Gets shortcut key. The parameter is,{{{ ''_Component_'' | markdownify }}} - Component of the RibbonForm.</td></tr>
+Gets shortcut key. The parameter is,{{ '_Component_' | markdownify }} - Component of the RibbonForm.</td></tr>
 </table>
 
 
@@ -78960,7 +78960,7 @@ Sets the alignment of the Panel item. The options are,Left andRight.</td></tr>
 <tr>
 <td>
 LayoutStyle</td><td>
-Sets the layout style for the items. The options are,{{{ ''_Flow_'' | markdownify }}} - Items flow horizontally or vertically as necessary.{{{ ''_HorizontalStackWithOverflow_'' | markdownify }}} - Items are laid out horizontally and overflow as necessary.{{{ ''_StackWithOverFlow_'' | markdownify }}} - Items are laid out automatically.{{{ ''_Table_'' | markdownify }}} - Items are laid out flush left.{{{ ''_VerticalStackWithOverflow_'' | markdownify }}} - Items are laid out vertically and overflow as necessary.</td></tr>
+Sets the layout style for the items. The options are,{{ '_Flow_' | markdownify }} - Items flow horizontally or vertically as necessary.{{ '_HorizontalStackWithOverflow_' | markdownify }} - Items are laid out horizontally and overflow as necessary.{{ '_StackWithOverFlow_' | markdownify }} - Items are laid out automatically.{{ '_Table_' | markdownify }} - Items are laid out flush left.{{ '_VerticalStackWithOverflow_' | markdownify }} - Items are laid out vertically and overflow as necessary.</td></tr>
 </table>
 Border Settings
 
@@ -79560,11 +79560,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft,TopCent
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -79604,7 +79604,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -79708,11 +79708,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -79774,7 +79774,7 @@ Sets the color of the link that is visited.</td></tr>
 <tr>
 <td>
 LinkBehavior</td><td>
-Specifies the underlining behavior of the link. The options are,{{{ ''_SystemDefault_'' | markdownify }}} - Based on the system settings for the links,{{{ ''_AlwaysUnderline_'' | markdownify }}} - Underlines the link always,{{{ ''_HoverUnderline_'' | markdownify }}} - Underlines the link when hovering over it and{{{ ''_NeverUnderline_'' | markdownify }}} - Never underlines the links.</td></tr>
+Specifies the underlining behavior of the link. The options are,{{ '_SystemDefault_' | markdownify }} - Based on the system settings for the links,{{ '_AlwaysUnderline_' | markdownify }} - Underlines the link always,{{ '_HoverUnderline_' | markdownify }} - Underlines the link when hovering over it and{{ '_NeverUnderline_' | markdownify }} - Never underlines the links.</td></tr>
 </table>
 
 
@@ -79818,7 +79818,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -79940,11 +79940,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -79984,7 +79984,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -80098,11 +80098,11 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td colspan = "2">
-Specifies the direction of drawing the text. The direction are,{{{ ''_Horizontal_'' | markdownify }}} - Text is placed horizontally,{{{ ''_Vertical90_'' | markdownify }}} - Text is placed vertically and {{{ ''_Vertical270_'' | markdownify }}} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td colspan = "2">
 TextImageRelation</td><td colspan = "2">
-Specifies the relative location of the image to the text on the item. The options are,{{{ ''_Overlay_'' | markdownify }}} - Image and text shares the same space in the control,{{{ ''_ImageAboveText_'' | markdownify }}} - Image will be placed above the text,{{{ ''_TextAboveImage_'' | markdownify }}} - Text will be placed above the image,{{{ ''_ImageBeforeText_'' | markdownify }}} - Image will be placed before the text and {{{ ''_TextBeforeImage_'' | markdownify }}} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
@@ -80142,7 +80142,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{{ ''_Text_'' | markdownify }}} - Displays only text,{{{ ''_Image_'' | markdownify }}} - Displays only image,{{{ ''_ImageAndText_'' | markdownify }}} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -80368,7 +80368,7 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Indicates text completion behavior of the combo box. The modes are,{{{ ''_Suggest_'' | markdownify }}} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{{ ''_Append_'' | markdownify }}} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{{ ''_SuggestAppend_'' | markdownify }}} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
 <tr>
 <td>
 ShortCut on Form1</td><td>
@@ -80546,7 +80546,7 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td colspan = "2">
-Indicates text completion behavior of the combo box. The modes are,{{{ ''_Suggest_'' | markdownify }}} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{{ ''_Append_'' | markdownify }}} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{{ ''_SuggestAppend_'' | markdownify }}} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
 </table>
 > {{ '![](Tools-Controls_images/Tools-Controls_img1428.jpeg)' | markdownify }}
 {:.image }
@@ -83982,7 +83982,7 @@ Description</td></tr>
 <tr>
 <td>
 AutoClose</td><td>
-Specifies whether the context menu closes for any user actions at runtime.{{{ ''_True_'' | markdownify }}} - Closes the context menu dropdown, when the user selects or clicks any item.{{{ ''_False_'' | markdownify }}} - The context menu drop down will not be closed for any user actions.</td></tr>
+Specifies whether the context menu closes for any user actions at runtime.{{ '_True_' | markdownify }} - Closes the context menu dropdown, when the user selects or clicks any item.{{ '_False_' | markdownify }} - The context menu drop down will not be closed for any user actions.</td></tr>
 </table>
 
 
@@ -84178,7 +84178,7 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Indicates text completion behavior of the combo box. The modes are,{{{ ''_Suggest_'' | markdownify }}} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{{ ''_Append_'' | markdownify }}} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{{ ''_SuggestAppend_'' | markdownify }}} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
 </table>
 AutoComplete Feature
 
@@ -93695,7 +93695,7 @@ Description</td></tr>
 <tr>
 <td>
 GetTooltip</td><td>
-Gets the tooltips for the tabs associated with a form.{{{ ''_mdiChild_'' | markdownify }}} - indicates the MDIChild form to which the tooltip should be added.{{{ ''_tooltip_'' | markdownify }}} - indicates that the tooltip to be added is of type string.</td></tr>
+Gets the tooltips for the tabs associated with a form.{{ '_mdiChild_' | markdownify }} - indicates the MDIChild form to which the tooltip should be added.{{ '_tooltip_' | markdownify }} - indicates that the tooltip to be added is of type string.</td></tr>
 <tr>
 <td>
 SetTooltip</td><td>
@@ -99175,7 +99175,7 @@ Description</td></tr>
 <tr>
 <td>
 SizeGripStyle</td><td>
-Specifies if the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. The options are,{{{ ''_Show_'' | markdownify }}} - shows the sizing grip.{{{ ''_Auto_'' | markdownify }}} - shows the sizing grip whenever needed.{{{ ''_Hide_'' | markdownify }}} - Hides the sizing grip.</td></tr>
+Specifies if the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. The options are,{{ '_Show_' | markdownify }} - shows the sizing grip.{{ '_Auto_' | markdownify }} - shows the sizing grip whenever needed.{{ '_Hide_' | markdownify }} - Hides the sizing grip.</td></tr>
 </table>
 
 
@@ -99756,7 +99756,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the border style for the Treeview control.{{{ ''_FixedSingle_'' | markdownify }}} - a normal border,{{{ ''_Fixed3D_'' | markdownify }}} - 3D appearance.</td></tr>
+Sets the border style for the Treeview control.{{ '_FixedSingle_' | markdownify }} - a normal border,{{ '_Fixed3D_' | markdownify }} - 3D appearance.</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>

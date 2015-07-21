@@ -31,31 +31,31 @@ Description</td></tr>
 <tr>
 <td>
 AllowChangeHeight </td><td>
-Specifies whether or not to allow the height to be changed. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to allow the height to be changed. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowChangeWidth </td><td>
-Specifies whether or not to allow the width to be changed. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to allow the width to be changed. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowDelete  </td><td>
-Specifies whether or not to allow the node to be deleted on clicking the DELETE key. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to allow the node to be deleted on clicking the DELETE key. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowMoveX</td><td>
-Specifies whether or not to allow the node to be moved along the x-axis. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to allow the node to be moved along the x-axis. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowMoveY</td><td>
-Specifies whether or not to allow the node to be moved along the y-axis. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to allow the node to be moved along the y-axis. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowRotate</td><td>
-Specifies whether or not to rotate the node using the PinPoint. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to rotate the node using the PinPoint. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowSelect</td><td>
-Specifies whether or not to select the node on mouse click. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to select the node on mouse click. Default value is {{ '_True_' | markdownify }}.</td></tr>
 </table>
 
 
@@ -127,19 +127,19 @@ Specifies the mode in which the node should be handled. The default value for li
 <tr>
 <td>
 Enabled</td><td>
-Specifies whether the node is enabled. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether the node is enabled. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowVertexEdit</td><td>
-Specifies whether or not to edit the vertex. Default value is {{{ ''_True_'' | markdownify }}}.</td></tr>
+Specifies whether or not to edit the vertex. Default value is {{ '_True_' | markdownify }}.</td></tr>
 <tr>
 <td>
 HidePinPoint</td><td>
-Specifies whether to show or hide the PinPoint. Default value is {{{ ''_False_'' | markdownify }}}.</td></tr>
+Specifies whether to show or hide the PinPoint. Default value is {{ '_False_' | markdownify }}.</td></tr>
 <tr>
 <td>
 HideRotationHandle</td><td>
-Specifies whether to show or hide the RotationHandle in order to control the rotation of the node. Default value is {{{ ''_False_'' | markdownify }}}.</td></tr>
+Specifies whether to show or hide the RotationHandle in order to control the rotation of the node. Default value is {{ '_False_' | markdownify }}.</td></tr>
 </table>
 
 
@@ -4621,7 +4621,7 @@ Gets or sets the visual style for Diagram Guides.</td></tr>
 <tr>
 <td>
 Type</td><td>
-Specifies the Guide Type for nodes. The options included are as follows:{{{ ''_Boundary_'' | markdownify }}}{{{ ''_Center_'' | markdownify }}}{{{ ''_Margin_'' | markdownify }}}{{{ ''_All_'' | markdownify }}}</td></tr>
+Specifies the Guide Type for nodes. The options included are as follows:{{ '_Boundary_' | markdownify }}{{ '_Center_' | markdownify }}{{ '_Margin_' | markdownify }}{{ '_All_' | markdownify }}</td></tr>
 <tr>
 <td>
 Margin</td><td>

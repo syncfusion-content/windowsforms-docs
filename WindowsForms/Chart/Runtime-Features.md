@@ -129,7 +129,7 @@ Description</td></tr>
 <tr>
 <td>
 ZoomActions</td><td>
-Specifies the zoom action on the corresponding axis. The options are,{{{ ''_Panning_'' | markdownify }}} - Enables panning in the zoomed chart.{{{ ''_None_'' | markdownify }}} - Disables panning in the zoomed chart.</td></tr>
+Specifies the zoom action on the corresponding axis. The options are,{{ '_Panning_' | markdownify }} - Enables panning in the zoomed chart.{{ '_None_' | markdownify }} - Disables panning in the zoomed chart.</td></tr>
 </table>
 
 
@@ -767,7 +767,7 @@ Controls the transparency of the non-highlighted series. While mouse hovering on
 <tr>
 <td>
 SeriesHighlightIndex</td><td>
-If you want to highlight only a particular series alone, you need to set the index value for this property. The default value is {{{ ''_-1_'' | markdownify }}}.</td></tr>
+If you want to highlight only a particular series alone, you need to set the index value for this property. The default value is {{ '_-1_' | markdownify }}.</td></tr>
 </table>
 
 

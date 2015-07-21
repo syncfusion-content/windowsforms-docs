@@ -681,7 +681,7 @@ Type Name</td><td>
 Control Name</td></tr>
 <tr>
 <td>
-Diagram{{{ ''_._'' | markdownify }}}dll</td><td>
+Diagram{{ '_._' | markdownify }}dll</td><td>
 Syncfusion.TestStudio.Diagram.Diagram</td><td>
 Syncfusion.Windows.Forms.Diagram.Controls.Diagram</td></tr>
 </table>

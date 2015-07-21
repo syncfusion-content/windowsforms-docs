@@ -987,7 +987,7 @@ StringCollection holding the strings for the drop down.</td></tr>
 <tr>
 <td>
 ExclusiveChoiceList</td><td>
-{{{ ''_True_'' | markdownify }}} if you want to list the items in the drop-down, {{{ ''_false_'' | markdownify }}} otherwise.</td></tr>
+{{ '_True_' | markdownify }} if you want to list the items in the drop-down, {{ '_false_' | markdownify }} otherwise.</td></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -31100,7 +31100,7 @@ RETURN TYPE </th><th>
 REFERENCE LINKS </th></tr>
 <tr>
 <th>
-{{{ ''_Grouping_'' | markdownify }}}GridFormatCellDialog ()</th><th>
+{{ '_Grouping_' | markdownify }}GridFormatCellDialog ()</th><th>
 Uses to wire the Grid with FormatCell Dialog</th><th>
 GridGoupingControl </th><th>
 Method (Constructor)</th><th>
@@ -39952,14 +39952,14 @@ TYPE </th><th>
 REFERENCE LINKS </th></tr>
 <tr>
 <th>
-{{{ ''_FilterBarSelectedItemChanging_'' | markdownify }}}</th><th>
+{{ '_FilterBarSelectedItemChanging_' | markdownify }}</th><th>
 This event will be triggered while filtering a column.  This can be canceled. Selected index or selected text can be modified as required.  </th><th>
  public FilterBarSelectedItemChangingEventArgs( GridColumnDescriptor column, int selectedIndex, string selectedText)</th><th>
 Event</th><th>
 NA </th></tr>
 <tr>
 <th>
-{{{ ''_FilterBarSelectedItemChanged_'' | markdownify }}}</th><th>
+{{ '_FilterBarSelectedItemChanged_' | markdownify }}</th><th>
 This event will be triggered after a column is filtered.    Selected column, selected index, and selected text can be retrieved with this event.</th><th>
         public FilterBarSelectedItemChangedEventArgs(GridColumnDescriptor column, int selectedIndex, string selectedText)</th><th>
 Event </th><th>
@@ -42654,7 +42654,7 @@ REFERENCE LINKS </th></tr>
 <tr>
 <th>
 WireGrid </th><th>
-Used to wire the {{{ ''_FieldChooser._'' | markdownify }}}</th><th>
+Used to wire the {{ '_FieldChooser._' | markdownify }}</th><th>
 Overloads:  ( Arg1) </th><th>
 In GridWindowsForm </th><th>
 Example: GridDataboundGrid1.WireGrid(GridDataboundGrid). </th><th>

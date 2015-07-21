@@ -825,7 +825,7 @@ The following screen shot shows a Slice-and-dice treemap in horizontal layout.
 <td>
 ![](Features_images/Features_img6.png)
 {:.image }
-{{{ ''_Figure_' ' | markdownify }}}{{{ ''_3_'' | markdownify }}}{{{ ''_: Slice-and-dice treemap in horizontal layout_'' | markdownify }}}</td></tr>
+{{ '_Figure_' | markdownify }}{{ '_3_' | markdownify }}{{ '_: Slice-and-dice treemap in horizontal layout_' | markdownify }}</td></tr>
 <tr>
 <td>
 </td></tr>

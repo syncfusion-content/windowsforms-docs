@@ -30,7 +30,7 @@ Using this support small amount of data is evaluated easily.</td></tr>
 <tr>
 <td>
 For evaluating data in the form of rows and columns.</td><td>
-Using this support the PivotItems is evaluated in the form of Grid.<br>({{{ ''_Rows and columns calculation_'' | markdownify }}})<br></td></tr>
+Using this support the PivotItems is evaluated in the form of Grid.<br>({{ '_Rows and columns calculation_' | markdownify }})<br></td></tr>
 <tr>
 <td>
 Filtering and sorting support for the PivotCalculation.</td><td>

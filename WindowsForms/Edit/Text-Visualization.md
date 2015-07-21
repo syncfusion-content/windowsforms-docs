@@ -1713,7 +1713,7 @@ Description</td></tr>
 <tr>
 <td>
 LineNumbersAlignment</td><td>
-Specifies the alignment of line numbers. The options provided are{{{ ''_Left_'' | markdownify }}}{{{ ''_Right_'' | markdownify }}}</td></tr>
+Specifies the alignment of line numbers. The options provided are{{ '_Left_' | markdownify }}}{{ '_Right_' | markdownify }}</td></tr>
 <tr>
 <td>
 LineNumbersColor</td><td>
@@ -3187,7 +3187,7 @@ Gets / sets state of the word wrapping mode.</td></tr>
 <tr>
 <td>
 WordWrapType</td><td>
-Gets / sets type of word wrapping. The options provided are* {{{ ''_WrapByChar_'' | markdownify }}} - wraps the text by individual characters* {{{ ''_WrapByWord_'' | markdownify }}} - wraps the text by individual words<br>The default value is WrapByWord.</td></tr>
+Gets / sets type of word wrapping. The options provided are* {{ '_WrapByChar_' | markdownify }} - wraps the text by individual characters* {{ '_WrapByWord_' | markdownify }} - wraps the text by individual words<br>The default value is WrapByWord.</td></tr>
 </table>
 
 
@@ -3237,7 +3237,7 @@ Description</td></tr>
 <tr>
 <td>
 WordWrapMode</td><td>
-Gets / sets state of the word wrapping mode. The options provided are{{{ ''_WordWrapMargin_' ' | markdownify }}}- wraps text at the boundary between text area and wordwrap margin of the Edit ControlThe area beyond the text area in the Edit Control is referred to asthe wordwrap margin. Hence, the width of the wordwrap margin is the difference between Edit Control's width and the TextArea width.{{{ ''_Control_' ' | markdownify }}}- wraps the text at the edge of the Edit Control{{{ ''_SpecifiedColumn -_'' | markdownify }}} wraps the text at the specified column that is specified in WordWrapColumn propertyThe default value is set to Control.</td></tr>
+Gets / sets state of the word wrapping mode. The options provided are{{ ''_WordWrapMargin_'  | markdownify }}- wraps text at the boundary between text area and wordwrap margin of the Edit ControlThe area beyond the text area in the Edit Control is referred to asthe wordwrap margin. Hence, the width of the wordwrap margin is the difference between Edit Control's width and the TextArea width.{{ '_Control_'  | markdownify }}- wraps the text at the edge of the Edit Control{{ '_SpecifiedColumn -_' | markdownify }} wraps the text at the specified column that is specified in WordWrapColumn propertyThe default value is set to Control.</td></tr>
 <tr>
 <td>
 WordWrapColumnMeasuringFont</td><td>
@@ -3363,7 +3363,7 @@ Gets / sets value indicating whether the wordwrap margin should be visible.</td>
 <tr>
 <td>
 WordWrapMarginLineStyle</td><td>
-Specifies style of line that is drawn at the border of the wordwrap margin. The options provided are* Solid* Dash* Dot* DashDot* DashDotDot* Custom<br>The default value is {{{ ''_Solid_'' | markdownify }}}.</td></tr>
+Specifies style of line that is drawn at the border of the wordwrap margin. The options provided are* Solid* Dash* Dot* DashDot* DashDotDot* Custom<br>The default value is {{ '_Solid_' | markdownify }}.</td></tr>
 <tr>
 <td>
 WordWrapMarginLineColor</td><td>

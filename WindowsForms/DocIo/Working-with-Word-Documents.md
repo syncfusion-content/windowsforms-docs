@@ -1057,7 +1057,7 @@ Gets or sets picture scaling (in percent).</td></tr>
 <tr>
 <td>
 Washout</td><td>
-Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{ '_true_' | markdownify }}.</td></tr>
 </table>
 
 
@@ -1097,7 +1097,7 @@ The following code example illustrates the usage of the UpdateParagraphAlignment
 [C#] ///Updates Paragraph Horizontal alignment.private void UpdateParagraphAlignment(TextBodyItem textBodyItem){    if (textBodyItem is WParagraph)    {        (textBodyItem as WParagraph).ParagraphFormat.HorizontalAlignment = Syncfusion.DocIO.DLS.HorizontalAlignment.Right;            }    if (textBodyItem is WTable)    {        WTable table = textBodyItem as WTable;        foreach (WTableRow row in table.Rows)        {           foreach (WTableCell cell in row.Cells)            {                 foreach (TextBodyItem item in cell.ChildEntities)                 {                    UpdateParagraphAlignment(item);               }            }         }     }}</td></tr>
 <tr>
 <td>
-[VB.NET] ''‘Updates Paragraph Horizontal alignment.Private Sub UpdateParagraphAlignment(textBodyItem As TextBodyItem)    If TypeOf textBodyItem Is WParagraph Then        TryCast(textBodyItem, WParagraph).ParagraphFormat.HorizontalAlignment = Syncfusion.DocIO.DLS.HorizontalAlignment.Right    End If   If TypeOf textBodyItem Is WTable Then        Dim table As WTable = TryCast(textBodyItem, WTable)        For Each row As WTableRow In table.Rows            For Each cell As WTableCell In row.Cells                For Each item As TextBodyItem In cell.ChildEntities                    UpdateParagraphAlignment(item)                Next            Next        Next    End IfEnd Sub</td></tr>
+[VB.NET] '‘Updates Paragraph Horizontal alignment.Private Sub UpdateParagraphAlignment(textBodyItem As TextBodyItem)    If TypeOf textBodyItem Is WParagraph Then        TryCast(textBodyItem, WParagraph).ParagraphFormat.HorizontalAlignment = Syncfusion.DocIO.DLS.HorizontalAlignment.Right    End If   If TypeOf textBodyItem Is WTable Then        Dim table As WTable = TryCast(textBodyItem, WTable)        For Each row As WTableRow In table.Rows            For Each cell As WTableCell In row.Cells                For Each item As TextBodyItem In cell.ChildEntities                    UpdateParagraphAlignment(item)                Next            Next        Next    End IfEnd Sub</td></tr>
 </table>
 
 

@@ -144,7 +144,7 @@ Description</td></tr>
 <td>
 DeferLayoutUpdate</td><td>
 bool</td><td>
-Gets or sets a value to specify whether the layout should be updated immediately after updating the pivoting info, or if it should wait for a {{{ ''_Refresh()_'' | markdownify }}} call.</td></tr>
+Gets or sets a value to specify whether the layout should be updated immediately after updating the pivoting info, or if it should wait for a {{ '_Refresh()_' | markdownify }} call.</td></tr>
 <tr>
 <td>
 FreezeHeaders</td><td>

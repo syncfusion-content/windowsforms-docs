@@ -661,7 +661,7 @@ Specifies background fill style and color.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style. The options provided are as follows:{{{ ''_Solid_'' | markdownify }}}{{{ ''_Pattern_'' | markdownify }}}{{{ ''_Gradient_'' | markdownify }}}</td></tr>
+Specifies the brush style. The options provided are as follows:{{ '_Solid_' | markdownify }}{{ '_Pattern_' | markdownify }}{{ '_Gradient_' | markdownify }}</td></tr>
 <tr>
 <td>
 BackColor</td><td>

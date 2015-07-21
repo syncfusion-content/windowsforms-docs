@@ -48,7 +48,7 @@ Description</td></tr>
 Note</td><td>
 > ![](Overview_images/Overview_img1.jpeg)
 {:.image }
-{{{ ''_Note:_'' | markdownify }}}</td><td>
+{{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>
@@ -139,11 +139,11 @@ Release Notes</td><td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the Maps for Windows Forms User Guide.)> ![](Overview_images/Overview_img4.jpeg)
 {:.image }
-{{{ ''_Note: Click Download as PDF to access a PDF version._'' | markdownify }}}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{{ ''_Maps_'' | markdownify }}} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Maps_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

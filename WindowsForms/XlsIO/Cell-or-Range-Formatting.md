@@ -523,7 +523,7 @@ This code displays the text.</td></tr>
 *</td><td>
 This code repeats the next character in the format to fill the column width.<br><br>![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img6.jpeg)
 {:.image }
-{{{ ''_Note: Only one asterisk per section of a format is allowed._'' | markdownify }}}</td></tr>
+{{ '_Note: Only one asterisk per section of a format is allowed._' | markdownify }}</td></tr>
 <tr>
 <td>
 _ (underscore)</td><td>
