@@ -21,7 +21,7 @@ The mode of the INSERT key can also be toggled by using the ToggleInsertMode met
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35,9 +35,9 @@ this.editControl1.InsertMode = true;
 
 this.editControl1.ToggleInsertMode();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -51,7 +51,7 @@ Me.editControl1.InsertMode = True
 
 Me.editControl1.ToggleInsertMode()
 
-
+{% endhighlight %}
 
 ## Keyboard Shortcuts 
 
@@ -222,13 +222,14 @@ CTRL+SHIFT+SPACEBAR</td></tr>
 Show context choice</td><td>
 CTRL+SPACEBAR</td></tr>
 </table>
+
 ## Bitmap Generation
 
 The Edit Control has the ability to generate a bitmap image of itself. The bitmap image looks exactly like an actual snapshot of a live instance of Edit Control. This is achieved through the use of the CreateBitmap method.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -236,9 +237,9 @@ The Edit Control has the ability to generate a bitmap image of itself. The bitma
 
 Bitmap bmp = this.editControl1.CreateBitmap();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -246,13 +247,13 @@ Bitmap bmp = this.editControl1.CreateBitmap();
 
 Dim bmp as Bitmap = Me.editControl1.CreateBitmap()
 
+{% endhighlight %}
+
+![](Runtime-Features_images/Runtime-Features_img1.jpeg)
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img1.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _45__: Bitmap of a Live Instance of Edit Control_
+_Figure_ _45_: Bitmap of a Live Instance of Edit Control
 
 ## Find, Replace and Goto
 
@@ -296,7 +297,7 @@ Replaces all occurrences of the search text with the replacement text as per the
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -340,9 +341,9 @@ this.editControl1.FindNext();
 
 this.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -386,41 +387,41 @@ Me.editControl1.FindNext()
 
 Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
+{% endhighlight %}
 
-
-{{ '![](Runtime-Features_images/Runtime-Features_img2.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _46__: "FindText" method_
+![](Runtime-Features_images/Runtime-Features_img2.png)
 
 
 
-Find and Replace Dialog Boxes
+_Figure_ _46_: "FindText" method
+
+
+
+### Find and Replace Dialog Boxes
 
 Edit Control also supports advanced and customizable Find and Replace dialog boxes. The Find dialog box is invoked by using the ShowFindDialog method. The keyboard shortcut to this dialog box is Ctrl+F.
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img3.jpeg)
 
 
-_Figure_ _47__: Find Dialog Box_
+
+_Figure_ _47_: Find Dialog Box
 
 
 
 The Replace dialog box is invoked by using the ShowReplaceDialog method. The keyboard shortcut to this dialog box is Ctrl+H. The Replace dialog box also allows you to find and replace words within the selected text.
 
-{{ '![](Runtime-Features_images/Runtime-Features_img4.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _48__: Replace Dialog Box_
+![](Runtime-Features_images/Runtime-Features_img4.jpeg)
 
 
 
-[C#]
+_Figure_ _48_: Replace Dialog Box
+
+
+
+{% highlight c# %}
 
 
 
@@ -434,9 +435,9 @@ this.editControl1.ShowFindDialog();
 
 this.editControl1.ShowReplaceDialog();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -450,7 +451,7 @@ Me.editControl1.ShowFindDialog()
 
 Me.editControl1.ShowReplaceDialog()
 
-
+{% endhighlight %}
 
 Positioning Mouse Cursor on a Specified line
 
@@ -458,7 +459,7 @@ The Edit Control supports the "GoTo" functionality both through the use of a run
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -468,9 +469,9 @@ this.editControl1.GoTo(lineNumber);
 
 this.editControl1.GoTo(lineNumber, linesAbove);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -480,13 +481,13 @@ Me.editControl1.GoTo(lineNumber)
 
 Me.editControl1.GoTo(lineNumber, linesAbove);
 
-
+{% endhighlight %}
 
 The CurrentLine property explained in the Positions and Offsets section, also does the same task as the GoTo method. The Goto dialog box is invoked using the ShowGoToDialog method. The keyboard shortcut to this dialog box is Ctrl+G.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -494,9 +495,9 @@ The CurrentLine property explained in the Positions and Offsets section, also do
 
 this.editControl1.ShowGoToDialog();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -504,13 +505,13 @@ this.editControl1.ShowGoToDialog();
 
 Me.editControl1.ShowGoToDialog()
 
+{% endhighlight %}
+
+![](Runtime-Features_images/Runtime-Features_img5.jpeg)
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img5.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _49__: GoTo Dialog Box_
+_Figure_ _49_: GoTo Dialog Box
 
 
 
@@ -518,7 +519,7 @@ Default key bindings to these dialogs can be changed as explained in the Keystro
 
 
 
-History Properties
+### History Properties
 
 The FindHistory property is used to add/remove items from the find history in the Find dialog box. The ReplaceHistory property is used to add/remove items from the replace history in the Replace dialog box. Similarly, the ReplaceSearchHistory property is used to add / remove items from the find history in the Replace dialog box.
 
@@ -572,7 +573,7 @@ Clears all the items in the FindHistory.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -584,9 +585,9 @@ this.editControl1.FindHistory.Sort();
 
 this.editControl1.FindHistory.Clear();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -598,11 +599,9 @@ Me.editControl1.FindHistory.Sort()
 
 Me.editControl1.FindHistory.Clear()
 
+{% endhighlight %}
 
-
-> {{ '![](Runtime-Features_images/Runtime-Features_img6.jpeg)' | markdownify }}
-{:.image }
-_Note: The above methods can also be set for the ReplaceHistory and ReplaceSearchHistory properties._
+> Note: The above methods can also be set for the ReplaceHistory and ReplaceSearchHistory properties.
 
 
 
@@ -619,18 +618,15 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 Essential Edit control Find Dialog is now enhanced with an alert message box. This displays the alert message box when find reaches the starting point of the search again.
 
 
-
-> {{ '![](Runtime-Features_images/Runtime-Features_img7.jpeg)' | markdownify }}
-{:.image }
-_Note: In search option Current Selection, click OK in alert message box, then the search area is selected again automatically as in VS editor._
+> Note: In search option Current Selection, click OK in alert message box, then the search area is selected again automatically as in VS editor.
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img8.jpeg)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img8.jpeg)
 
 
-_Figure_ _50__: Alert Message Box_
+
+_Figure_ _50_: Alert Message Box
 
 ## Scrolling Support
 
@@ -660,7 +656,7 @@ Gets / sets value indicating whether scrollers should be always visible.</td></t
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -678,9 +674,9 @@ this.editControl1.ShowVerticalScroller = true;
 
 this.editControl1.AlwaysShowScrollers = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -698,21 +694,21 @@ Me.editControl1.ShowVerticalScroller = True
 
 Me.editControl1.AlwaysShowScrollers = True
 
-
+{% endhighlight %}
 
 The Edit Control supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple Edit Controls.
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img9.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _51__: Scrolling support in Edit Control_
+![](Runtime-Features_images/Runtime-Features_img9.jpeg)
 
 
 
-Scroll Bar Buttons
+_Figure_ _51_: Scrolling support in Edit Control
+
+
+
+### Scroll Bar Buttons
 
 Buttons can be displayed at the top, bottom, left or right of the scroll bars by using the below given properties.
 
@@ -742,7 +738,7 @@ Gets buttons at the top of vertical scrollbar.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -754,9 +750,9 @@ this.editControl1.ScrollbarRightButtons.AddRange(new System.Windows.Forms.Contro
 
 this.editControl1.ScrollbarTopButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton4 });
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -768,9 +764,9 @@ Me.editControl1.ScrollbarRightButtons.AddRange(New System.Windows.Forms.Control(
 
 Me.editControl1.ScrollbarTopButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton4}) 
 
+{% endhighlight %}
 
-
-Scroll Position and Offsets
+### Scroll Position and Offsets
 
 The scroll position and offsets of the Edit Control are set by using the below given properties.
 
@@ -804,7 +800,7 @@ Gets / sets the top scroll offset.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -820,9 +816,9 @@ this.editControl1.ScrollOffsetTop = 5;
 
 this.editControl1.ScrollOffsetTop = 10;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -838,7 +834,7 @@ Me.editControl1.ScrollOffsetTop = 5
 
 Me.editControl1.ScrollOffsetTop = 10 
 
-
+{% endhighlight %}
 
 
 
@@ -862,12 +858,17 @@ Specifies the visual style of the scroll bar.</td></tr>
 <tr>
 <td>
 ScrollColorScheme</td><td>
-Specifies the scroll bar color scheme when Office2007 or Office2007Generic Style is set. The options provided are* Black* Blue* Silver* Managed</td></tr>
+Specifies the scroll bar color scheme when Office2007 or Office2007Generic Style is set. The options provided are
+<ul>
+<li> Black</li>
+<li> Blue</li>
+<li> Silver</li>
+<li> Managed</li></ul></td></tr>
 </table>
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -883,9 +884,9 @@ this.editControl1.ScrollColorScheme = Office2007ColorScheme.Managed;
 
 Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Green);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -901,21 +902,21 @@ Me.editControl1.ScrollColorScheme = Office2007ColorScheme.Managed
 
 Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
-
+{% endhighlight %}
 
 The following illustration shows the Edit Control with custom color (green) set for the scroll bars.
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img10.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _52__: Edit Control with ScrollColorScheme property = "Managed"_
+![](Runtime-Features_images/Runtime-Features_img10.jpeg)
 
 
 
-#### ToolTip
+_Figure_ _52_: Edit Control with ScrollColorScheme property = "Managed"
+
+
+
+## ToolTip
 
 Essential Edit supports ToolTip feature for various functionalities which are discussed in this section.
 
@@ -936,17 +937,17 @@ The context menu has the standard VS.NET-like appearance, and can optionally be 
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img11.png)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img11.png)
 
 
-_Figure_ _53__: Edit Control's Context Menu in Office2003 Style_
+
+_Figure_ _53_: Edit Control's Context Menu in Office2003 Style
 
 
 
 Set the appearance of the context menu by specifying the desired ContextMenuProvider.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -961,10 +962,10 @@ this.editControl1.ContextMenuManager.ContextMenuProvider = new Syncfusion.Window
 this.editControl1.ContextMenuManager.ContextMenuProvider = new Syncfusion.Windows.Forms.StandardMenusProvider();
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -984,9 +985,9 @@ Adding Customized Menu Items
 
 You can handle the MenuFill event to add Menu Items to the context menu. This is illustrated in the below code snippet. 
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -1066,9 +1067,10 @@ this.editControl1.ShowGoToDialog();
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1138,10 +1140,10 @@ Me.editControl1.GoToDialog()
 
 End Sub
 
+{% endhighlight %}
 
+![](Runtime-Features_images/Runtime-Features_img12.jpeg)
 
-{{ '![](Runtime-Features_images/Runtime-Features_img12.jpeg)' | markdownify }}
-{:.image }
 
 
 Assembly Dependency
@@ -1150,9 +1152,7 @@ If the Syncfusion.Tools.Windows assembly is loaded before the instantiation of t
 
 
 
-> {{ '![](Runtime-Features_images/Runtime-Features_img13.jpeg)' | markdownify }}
-{:.image }
-_Note: You must have reference to the Syncfusion.Tools.Windows assembly in your project._
+> Note: You must have reference to the Syncfusion.Tools.Windows assembly in your project.
 
 
 
@@ -1164,13 +1164,13 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 
 
 
-#### IntelliPrompt Features
+### IntelliPrompt Features
 
 This section covers the following topics:
 
 
 
-##### Code Snippets
+#### Code Snippets
 
 Essential Edit supports an advanced feature of VS 2005 like Code Snippets. It is also used to load / save VS.NET 2005-compatible XML snippets.
 
@@ -1186,11 +1186,11 @@ Code Snippets are inserted into the Edit Control by following the procedure give
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img14.jpeg)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img14.jpeg)
 
 
-_Figure_ _55__: Inserting Code Snippets into the Edit Control_
+
+_Figure_ _55_: Inserting Code Snippets into the Edit Control
 
 
 
@@ -1207,21 +1207,21 @@ This is illustrated in the code given below.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 CodeSnippetsExtractor.Extract(csharpsnippetsPath, editControl1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 CodeSnippetsExtractor.Extract(vbsnippetsPath, editControl1)
 
-
+{% endhighlight %}
 
 Code Snippets are added to the current language of the Edit Control by using the below given method.
 
@@ -1239,27 +1239,27 @@ Adds new code snippet to current language.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.AddCodeSnippet(string title, ArrayList literals, string code);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.AddCodeSnippet(String title, ArrayList literals, String code)
 
-
+{% endhighlight %}
 
 The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static Extract method of the CodeSnippetsExtractor class is used to extract and fill the container object. The container object can be added to the SnippetsContainer of the Edit Control by using the AddContainer method. This is illustrated in the code given below.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1271,9 +1271,9 @@ container.Name = "Loops";
 
 this.editControl1.Language.SnippetsContainer.AddContainer(container);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1335,7 +1335,7 @@ Code snippets can also be created by using the configuration file. For example, 
 
 </CodeSnippetsContainer>
 
-
+{% endhighlight %}
 
 The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. For example, literal strings, numeric values, and some variable names should be declared as literals. The symbol $ is placed at the beginning and end of the literal ID element value. For example, if a literal has an ID element that contains the value MyID, you must reference that literal in the code element as $MyID$. All code snippets must be placed between <![CDATA[ and ]]> brackets.
 
@@ -1347,45 +1347,45 @@ You can programmatically show the choice list of code snippets by calling ShowCo
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 // Shows the code snippets' choice list.
 this.editControl1.ShowCodeSnippets();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 ' Shows the code snippets' choice list.
 Me.editControl1.ShowCodeSnippets()
 
+{% endhighlight %}
 
-
-Border Settings
+### Border Settings
 
 Border can be set for the active code snippets by using the DrawCodeSnippetBorder property of the Edit Control.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.DrawCodeSnippetBorder = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.DrawCodeSnippetBorder = True
 
-
+{% endhighlight %}
 
 A sample demonstrating the above feature is available in the following sample installation path.
 
@@ -1393,14 +1393,14 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 
 
 
-##### Context Choice
+#### Context Choice
 
 The Context Choice support allows you to create pop-ups for displaying a list of options that are used to complete what the user is typing. This feature is modeled on the List Members intellisense feature of Visual Studio, and is very convenient when editing programming languages. For example, in C# or VB.NET, when the . (period) character is typed after a class instance, a pop-up containing all the members of the class gets displayed. As you type in the editor, the list automatically changes selection to synchronize with the text that has been entered. You can also autocomplete the word by using the UP/DOWN ARROW keys to choose the Context Choice item and pressing theTAB key. The Context Choice pop-up can be dismissed by pressing the ESC key.
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img15.jpeg)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img15.jpeg)
+
 
 
 _Figure_ _56__: Context Choice List_
@@ -1411,7 +1411,7 @@ The Context Choice displaying characters are specified in the configuration file
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
@@ -1419,35 +1419,35 @@ The Context Choice displaying characters are specified in the configuration file
 
 <lexem BeginBlock="," Type="Operator" DropContextChoiceList="true"/>
 
-
+{% endhighlight %}
 
 The preceding code has to be placed within the <lexems> section of the configuration file.
 
 
 
-AutoCompleteSingleLexem
+#### AutoCompleteSingleLexem
 
 The AutoCompleteSingleLexem property indicates whether the Context Choice list gets autocompleted when a single lexem remains in the list.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.AutoCompleteSingleLexem = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.AutoCompleteSingleLexem = True
 
+{% endhighlight %}
 
-
-Populating the Context Choice List Items
+#### Populating the Context Choice List Items
 
 The Context Choice list is populated by handling the ContextChoiceOpen event of the Edit Control, and adding items to the Items collection associated with the IContextChoiceController object.
 
@@ -1465,7 +1465,7 @@ This event occurs when the Context Choice window has been opened.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1489,9 +1489,9 @@ controller.Items.Add("Event", "Event", this.editControl1.ContextChoiceController
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1513,14 +1513,15 @@ controller.Items.Add("Event", "Event", Me.editControl1.ContextChoiceController.I
 
 End Sub
 
+{% endhighlight %}
 
-Adding Custom Images to List Items
+#### Adding Custom Images to List Items
 
 Custom images can also be added to the Context Choice list items by indexing them into the Images collection of the IContextChoiceController object associated with the Edit Control. The Images collection of the IContextChoiceController can be populated by using the code given below.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1538,9 +1539,9 @@ index++;
 
 }     
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1558,15 +1559,15 @@ index += 1
 
 Next img
 
+{% endhighlight %}
 
-
-List Item ToolTip
+#### List Item ToolTip
 
 ToolTip text is specified for each Context Choice list item while adding the items to the IContextChoiceController, as shown in the following code snippet.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1574,9 +1575,9 @@ ToolTip text is specified for each Context Choice list item while adding the ite
 
 controller.Items.Add("LoadFile", "Use this method to open a file in EditControl.", this.editControl1.ContextChoiceController.Images["Image3"]);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1584,11 +1585,11 @@ controller.Items.Add("LoadFile", "Use this method to open a file in EditControl.
 
 controller.Items.Add("LoadFile", "Use this method to open a file in EditControl.", Me.editControl1.ContextChoiceController.Images["Image3"])
 
+{% endhighlight %}
 
+### Customization
 
-Customization
-
-Border Settings
+#### Border Settings
 
 The border color of the Context Choice form is set by using the ContextChoiceBorderColor property.
 
@@ -1606,45 +1607,45 @@ Specifies the color of the Context Choice form border. Used when UseXPStyle prop
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.ContextChoiceBorderColor = System.Drawing.Color.Red;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.ContextChoiceBorderColor = System.Drawing.Color.Red
 
+{% endhighlight %}
 
-
-Size Settings
+#### Size Settings
 
 The size of the Context Choice form can be set by using the ContextChoiceSize property.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.ContextChoiceSize = new System.Drawing.Size(100, 50);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 50)
 
+{% endhighlight %}
 
-
-Context Choice Operations
+#### Context Choice Operations
 
 The Edit Control provides the following set of events for performing Context Choice operations.
 
@@ -1662,7 +1663,7 @@ This event occurs when the Context Choice window is about to open.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1688,9 +1689,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1716,7 +1717,7 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 <table>
 <tr>
@@ -1730,7 +1731,7 @@ This event occurs when the Context Choice window has been closed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1744,9 +1745,9 @@ this.editControl1.ContextChoiceController.Items.Clear();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1758,7 +1759,7 @@ Me.editControl1.ContextChoiceController.Items.Clear()
 
 End Sub
 
-
+{% endhighlight %}
 
 <table>
 <tr>
@@ -1776,7 +1777,7 @@ This event is raised when the editor is about to insert selected Context Choice 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1792,9 +1793,9 @@ string selectedItemText = e.SelectedItem.Text;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1808,9 +1809,9 @@ Dim selectedItemText As String = e.SelectedItem.Text
 
 End Sub
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -1840,9 +1841,9 @@ string selectedItemText = e.SelectedItem.Text;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1870,9 +1871,9 @@ Dim selectedItemText As String = e.SelectedItem.Text
 
 End Sub 'editControl1_ContextChoiceSelectedTextInsert
 
+{% endhighlight %}
 
-
-Filtering AutoComplete Items
+#### Filtering AutoComplete Items
 
 Edit Control provides options to filter items in AutoComplete. This can be done by using the FilterAutoCompleteItems property.
 
@@ -1894,15 +1895,15 @@ FilterAutoCompleteItems property when set to True, filters the item in the AutoC
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img16.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _57__: Filtering Items in AutoComplete Context Choice_
+![](Runtime-Features_images/Runtime-Features_img16.jpeg)
 
 
 
-Showing / Hiding Context Choice Pop-up
+_Figure_ _57_: Filtering Items in AutoComplete Context Choice
+
+
+
+#### Showing / Hiding Context Choice Pop-up
 
 You can also programmatically show / hide the Context Choice pop-up by calling the ShowContextChoice and
 
@@ -1910,7 +1911,7 @@ CloseContextChoice methods.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1922,9 +1923,9 @@ this.editControl1.ShowContextChoice();
 // Closes the ContextChoice pop-up window.
 this.editControl1.CloseContextChoice();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1936,7 +1937,7 @@ Me.editControl1.ShowContextChoice()
 ' Closes the ContextChoice pop-up window.
 Me.editControl1.CloseContextChoice()
 
-
+{% endhighlight %}
 
 A sample demonstrating the Context Choice feature is available in the below sample installation path.
 
@@ -1952,17 +1953,17 @@ Context Prompt
 
 
 
-##### Context Prompt
+#### Context Prompt
 
 The Context Prompt feature allows you to create pop-ups for displaying variations of syntax for the text input by using the Context Choice. This feature is modeled on the Parameter Info intellisense feature of Visual Studio. Each of the context prompt items can have a syntax specifier string and text message providing additional information on each item. The user is able to scroll through the syntax variations either by using the UP/DOWN ARROW keys or clicking on the UP/DOWN buttons on the pop-up.
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img17.png)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img17.png)
 
 
-_Figure_ _58__: Context Prompt Pop-Up_
+
+_Figure_ _58_: Context Prompt Pop-Up
 
 
 
@@ -1970,19 +1971,19 @@ The Context Prompt displaying characters are specified in the configuration file
 
 
 
-[XML]
+{% highlight xml %}
 
 <lexem BeginBlock="(" Type="Operator" IsComplex="true" DropContextPrompt="true" />
 
 <lexem BeginBlock="{" Type="Operator" IsComplex="true" DropContextPrompt="true"/>
 
-
+{% endhighlight %}
 
 The preceding code has to be placed within the <lexems> section of the configuration file. 
 
 
 
-Populating Context Prompt Popup
+#### Populating Context Prompt Popup
 
 The Context Prompt is populated by handling the ContextPromptOpen event of Edit Control, and adding new prompts using the AddPrompt method.
 
@@ -2000,7 +2001,7 @@ This event occurs when the Context Prompt has been opened.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2018,9 +2019,9 @@ e.AddPrompt( "Control.Items.Add(string text, string tooltipText)", "Specify the 
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2036,33 +2037,33 @@ e.AddPrompt("Control.Items.Add(string text, string tooltipText)", "Specify the t
 
 End Sub
 
+{% endhighlight %}
 
+### Customization
 
-Customization
-
-Background Brush
+#### Background Brush
 
 The brush for the Context Prompt background is set by using the ContextPromptBackgroundBrush property of the Edit Control.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.ContextPromptBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.LemonChiffon);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.ContextPromptBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.LemonChiffon)
 
+{% endhighlight %}
 
-
-Border Settings
+#### Border Settings
 
 The border color of the Context Prompt form is set by using the ContextPromptBorderColor property.
 
@@ -2080,23 +2081,23 @@ Specifies the color of the Context Choice form border. Used when UseXPStyle prop
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
 
+{% endhighlight %}
 
-
-Size Settings
+#### Size Settings
 
 The size of the Context Prompt form can be set by using the below given properties.
 
@@ -2118,9 +2119,7 @@ Gets / sets a value indicating whether custom Context Prompt size should be used
 </table>
 
 
-
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -2128,9 +2127,9 @@ this.editControl1.ContextPromptSize = new System.Drawing.Size(125, 75);
 
 this.editControl1.UseCustomSizeContextPrompt = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2138,9 +2137,9 @@ Me.editControl1.ContextPromptSize = New System.Drawing.Size(125, 75)
 
 Me.editControl1.UseCustomSizeContextPrompt = True
 
+{% endhighlight %}
 
-
-Context Prompt Operations
+#### Context Prompt Operations
 
 The Edit Control provides the following set of events for performing Context Prompt operations.
 
@@ -2166,7 +2165,7 @@ This event occurs when a Context Prompt item has been selected.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2236,9 +2235,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2300,9 +2299,9 @@ End If
 
 End Sub
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -2316,9 +2315,9 @@ this.contextPromptLexem = "";
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2330,9 +2329,9 @@ Me.contextPromptLexem = ""
 
 End Sub
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -2348,9 +2347,9 @@ Console.WriteLine("ContextPromptSelectionChanged");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2364,9 +2363,9 @@ Console.WriteLine("ContextPromptSelectionChanged")
 
 End Sub
 
+{% endhighlight %}
 
-
-Advanced Customization
+#### Advanced Customization
 
 If you wish to do some advanced customization in the Context Prompt feature, like highlighting the current parameter to be input in bold, you can use the ContextPromptOpen and ContextPromptUpdate events.
 
@@ -2374,7 +2373,7 @@ For example, add the bolded items in the ContextPromptOpen event handler. The in
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2426,9 +2425,9 @@ item.BoldedItems.Add( 31, 18, "Text of the tooltip" );
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2472,11 +2471,11 @@ item.BoldedItems.Add(51, 14, "Zero-based index of the image or -1 if no image sh
 
 item = e.AddPrompt("Control.Items.Add(string text, string tooltipText)", "Specify the•_
 
-
+{% endhighlight %}
 
 Select the items that should be bolded in the ContextPromptUpdate event handler. The following code snippet illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2528,9 +2527,9 @@ e.List.SelectedItem.BoldedItems.SelectedItem = e.List.SelectedItem.BoldedItems[i
 
 }         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2588,15 +2587,15 @@ End If
 
 End Sub
 
+{% endhighlight %}
 
-
-Showing / Hiding Context Prompt Pop-up
+#### Showing / Hiding Context Prompt Pop-up
 
 You can also programmatically show / hide the Context Prompt pop-up using the ShowContextPrompt and CloseContextPrompt methods.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2608,9 +2607,9 @@ this.editControl1.ShowContextPrompt();
 // Closes the Context Prompt pop-up window.
 this.editControl1.CloseContextPrompt();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2622,7 +2621,7 @@ Me.editControl1.ShowContextPrompt()
 ' Closes the Context Prompt pop-up window.
 Me.editControl1.CloseContextPrompt();
 
-
+{% endhighlight %}
 
 A sample demonstrating the Context Prompt feature is available in the below sample installation path.
 
@@ -2632,17 +2631,17 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 
 
 
-Context ToolTip
+#### Context ToolTip
 
 The Context ToolTip displays helpful tooltips when the mouse is hovered over a lexem in the Edit Control. This feature is modeled on the Quick Info intellisense feature of Visual Studio. Whenever the mouse hovers over a token, the UpdateContextTooltip event is fired for quick information on the lexem. If some text information is provided, it is displayed in a tooltip.
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img18.jpeg)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img18.jpeg)
 
 
-_Figure_ _59__: Context ToolTip_
+
+_Figure_ _59_: Context ToolTip
 
 
 
@@ -2650,7 +2649,7 @@ The Context ToolTip can be populated with additional information on the correspo
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2698,9 +2697,9 @@ private void editControl1_UpdateContextToolTip(object sender, Syncfusion.Windows
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2744,31 +2743,31 @@ Private Sub editControl1_UpdateContextToolTip(ByVal sender As Object, ByVal e As
 
 End Sub
 
+{% endhighlight %}
 
+### Customization
 
-Customization
-
-Background Brush
+#### Background Brush
 
 The brush for the Context ToolTip background can be set by using the ContextTooltipBackgroundBrush property.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.ContextTooltipBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.ContextTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki)
 
+{% endhighlight %}
 
-
-Border Settings
+#### Border Settings
 
 The border color of the Context ToolTip form is set by using the ContextTooltipBorderColor property.
 
@@ -2786,38 +2785,38 @@ Specifies the color of the Context Tooltip form border. Used when UseXPStyle pro
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange
 
+{% endhighlight %}
 
-
-Showing the ToolTip
+#### Showing the ToolTip
 
 The Context ToolTip window can be shown by setting the ShowContextTooltip property to True.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 // Shows the Context ToolTip pop-up window.
 this.editControl1.ShowContextTooltip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2825,15 +2824,15 @@ this.editControl1.ShowContextTooltip = true;
 
 Me.editControl1.ShowContextTooltip = True
 
+{% endhighlight %}
 
-
-ToolTip Delay
+#### ToolTip Delay
 
 It is also possible to specify the time delay after which the tooltip should be displayed by using the ToolTipDelay property.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2841,9 +2840,9 @@ It is also possible to specify the time delay after which the tooltip should be 
 
 this.editControl1.ToolTipDelay = 1000;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2851,31 +2850,31 @@ this.editControl1.ToolTipDelay = 1000;
 
 Me.edtiControl1.ToolTipDelay = 1000
 
+{% endhighlight %}
 
-
-Closing the ToolTip
+#### Closing the ToolTip
 
 The Context ToolTip window is closed by using the CloseContextTooltip method.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 // Closes the Context ToolTip pop-up window.
 this.editControl1.CloseContextTooltip();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 ' Closes the Context ToolTip pop-up window.
 Me.editControl1.CloseContextTooltip();
 
-
+{% endhighlight %}
 
 A sample demonstrating the Context Tooltip feature is available in the below sample installation path.
 
@@ -2899,12 +2898,41 @@ Description</td></tr>
 <tr>
 <td>
 Cursor</td><td>
-Sets the cursor that is displayed when the mouse pointer is over the control. The options provided are* AppStarting* Arrow* Cross* Default* Hand* Help* HSplit* IBeam* No* NoMove2D* NoMoveHoriz* NoMoveVert* PanEast* PanNE* PanNorth* PanNW* PanSE* PanSouth* PanSW* PanWest* SizeAll* SizeNESW* SizeNS* SizeNWSE* SizeWE* UpArrow* VSplit* WaitCursor</td></tr>
+Sets the cursor that is displayed when the mouse pointer is over the control. The options provided are
+<ul>
+<li> AppStarting</li>
+<li> Arrow</li>
+<li> Cross</li>
+<li> Default</li>
+<li> Hand</li>
+<li> Help</li>
+<li> HSplit</li>
+<li> IBeam</li>
+<li> No</li>
+<li> NoMove2D</li>
+<li> NoMoveHoriz</li>
+<li> NoMoveVert</li>
+<li> PanEast</li>
+<li> PanNE</li>
+<li> PanNorth</li>
+<li> PanNW</li>
+<li> PanSE</li>
+<li> PanSouth</li>
+<li> PanSW</li>
+<li> PanWest</li>
+<li> SizeAll</li>
+<li> SizeNESW</li>
+<li> SizeNS</li>
+<li> SizeNWSE</li>
+<li> SizeWE</li>
+<li> UpArrow</li>
+<li> VSplit</li>
+<li> WaitCursor</li></ul></td></tr>
 </table>
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2912,9 +2940,9 @@ Sets the cursor that is displayed when the mouse pointer is over the control. Th
 
 this.editControl1.Cursor = System.Windows.Forms.Cursors.Hand;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2922,13 +2950,13 @@ this.editControl1.Cursor = System.Windows.Forms.Cursors.Hand;
 
 Me.editControl1.Cursor = System.Windows.Forms.Cursors.Hand
 
+{% endhighlight %}
 
-
-Showing / Hiding Cursor Caret
+#### Showing / Hiding Cursor Caret
 
 The ShowCaret and HideCaret methods are used to either show / hide the cursor caret.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2943,10 +2971,10 @@ this.editControl1.ShowCaret();
 this.editControl1.HideCaret();
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2960,7 +2988,7 @@ Me.editControl1.ShowCaret()
 
 Me.editControl1.HideCaret()
 
-
+{% endhighlight %}
 
 A sample demonstrating the Custom Cursor feature is available in the below sample installation path.
 
@@ -2974,11 +3002,11 @@ Essential Edit provides excellent support for viewport navigation including inte
 
 
 
-{{ '![](Runtime-Features_images/Runtime-Features_img19.jpeg)' | markdownify }}
-{:.image }
+![](Runtime-Features_images/Runtime-Features_img19.jpeg)
 
 
-_Figure_ _60__: Preview of Intellimouse in Edit Control_
+
+_Figure_ _60_: Preview of Intellimouse in Edit Control
 
 
 
@@ -3000,7 +3028,7 @@ Make sure to set the AllowDrop property of the Edit Control to True for this pur
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3008,9 +3036,9 @@ Make sure to set the AllowDrop property of the Edit Control to True for this pur
 
 this.editControl1.AllowDrop = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3018,5 +3046,5 @@ this.editControl1.AllowDrop = true;
 
 Me.editControl1.AllowDrop = True
 
-
+{% endhighlight %}
 

@@ -22,6 +22,7 @@ For licensing, patches and information on adding or removing selective component
 * Licensing
 * Patches
 * Add / Remove Components
+
 ### Sample And Location
 
 
@@ -31,7 +32,11 @@ Sample Installation Location
 
 The Essential Diagram Windows Forms samples are installed in the following location.
 
+{% highlight text %}
+
 ...\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Diagram.Windows\Samples\2.0
+
+{% endhighlight %}
 
 Viewing Samples
 
@@ -41,30 +46,27 @@ To view the samples, follow the steps below:
 
 
 
-{{ '![](Installation-And-Deployment_images/Installation-And-Deployment_img1.png)' | markdownify }}
-{:.image }
+![](Installation-And-Deployment_images/Installation-And-Deployment_img1.png)
 
 
-_Figure_ _2__: Essential Studio Dashboard_
+
+_Figure_ _2_: Essential Studio Dashboard
 
 
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Form Sample Browser window is displayed.
 
 
-
-> {{ '![](Installation-And-Deployment_images/Installation-And-Deployment_img2.jpeg)' | markdownify }}
-{:.image }
-_Note: You can view the samples in any of the following three ways:_
-
-> 1. _Run Samples - Click to view the locally installed samples_
-> 2. _Online Samples - Click to view online samples_
-> 3. _Explore Samples - Explore BI Web samples on disk_
+> Note: You can view the samples in any of the following three ways:
+>
+> 1. Run Samples - Click to view the locally installed samples
+> 2. Online Samples - Click to view online samples
+> 3. Explore Samples - Explore BI Web samples on disk
 
 
 
-{{ '![](Installation-And-Deployment_images/Installation-And-Deployment_img3.png)' | markdownify }}
-{:.image }
+![](Installation-And-Deployment_images/Installation-And-Deployment_img3.png)
+
 
 
 
@@ -73,8 +75,8 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{{ '![](Installation-And-Deployment_images/Installation-And-Deployment_img4.png)' | markdownify }}
-{:.image }
+![](Installation-And-Deployment_images/Installation-And-Deployment_img4.png)
+
 
 
 
@@ -96,6 +98,7 @@ This section provides deployment requirements for using Essential Diagram under 
 Essential Diagram places the following controls into your Visual Studio .NET toolbox from where you can drag each control onto a form and start working with it.
 
 * Diagram
+
 #### DLLs
 
 

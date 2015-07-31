@@ -19,13 +19,13 @@ The following screen shot illustrates the structure of the Edit Control.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
 
-_Figure_ _5__: Structure of EditControl_
+
+_Figure_ _5_: Structure of EditControl
 
 
 
@@ -49,11 +49,11 @@ The following image shows Edit Control in the toolbox.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-_Figure_ _6__: Edit Control in Toolbox_
+
+_Figure_ _6_: Edit Control in Toolbox
 
 
 
@@ -66,11 +66,11 @@ The following illustration shows Edit Control created through designer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
-_Figure_ _7__: Edit Control created Through Designer_
+
+_Figure_ _7_: Edit Control created Through Designer
 
 
 
@@ -88,133 +88,109 @@ The following steps illustrate how to create an Edit Control programmatically.
 
 1. Import the Edit Control package in your application for easier coding experience.
 
+   ~~~ cs
+
+		using Syncfusion.Windows.Forms.Edit;
+
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
 
+		Imports Syncfusion.Windows.Forms.Edit
 
-
-[C#]
-
-
-
-using Syncfusion.Windows.Forms.Edit;
-
-
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Edit
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create an instance of the Edit Control.
 
+   ~~~ cs
 
+		private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
 
-[C#]
+		editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
 
+   ~~~ 
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
+		Private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
 
-private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+		editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
 
-editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
-
-
-
-[VB.NET]
-
-
-
-Private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
-
-editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Set an appropriate size for the Edit Control.
 
+   ~~~ cs
 
+		editControl1.Size = new Size(50, 50);
 
-[C#]
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
+		editControl1.Size = New Size(50, 50)
 
-
-editControl1.Size = new Size(50, 50);
-
-
-
-[VB.NET]
-
-
-
-editControl1.Size = New Size(50, 50)
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Set the Dock property to the appropriate DockStyle enumeration value if desired.
 
+   ~~~ cs
 
+		editControl1.Dock = DockStyle.Fill;
 
-[C#]
+   ~~~ 
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-
-editControl1.Dock = DockStyle.Fill;
-
-
-
-[VB.NET]
-
-
-
-editControl1.Dock = DockStyle.Fill
-
+		editControl1.Dock = DockStyle.Fill
+   ~~~
+   {:.prettyprint }
 
 
 5. Set an appropriate BorderStyle to the Edit Control instance.
 
 
+   ~~~ cs
 
-[C#]
+		editControl1.BorderStyle = BorderStyle.Fixed3D;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-editControl1.BorderStyle = BorderStyle.Fixed3D;
+		editControl1.BorderStyle = BorderStyle.Fixed3D
 
-
-
-[VB.NET]
-
-
-
-editControl1.BorderStyle = BorderStyle.Fixed3D
-
-
+   ~~~
+   {:.prettyprint }
 
 6. Add this instance of the Edit Control to the Host Form or an UserControl.
 
+   ~~~ cs
 
+		// Adding instance of the EditControl to the Host Form.
 
-[C#]
+		this.Controls.Add(editControl1);
 
+   ~~~
+   {:.prettyprint }  
 
+   ~~~ vbnet
 
-// Adding instance of the EditControl to the Host Form.
+		' Adding instance of the EditControl to the Host Form.
 
-this.Controls.Add(editControl1);
+		Me.Controls.Add(editControl1)
 
-
-
-[VB.NET]
-
-
-
-' Adding instance of the EditControl to the Host Form.
-
-Me.Controls.Add(editControl1)
-
-
+   ~~~
+   {:.prettyprint }
 
 7. Run the application.
 
@@ -224,11 +200,11 @@ The following illustration shows Edit Control created through code.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
-_Figure_ _8__: Edit Control created Through Code_
+
+_Figure_ _8_: Edit Control created Through Code
 
 
 

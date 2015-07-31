@@ -15,13 +15,13 @@ The controls associated with the Diagram control are illustrated in the followin
 
 
 
-{{ '![](Supported-Controls_images/Supported-Controls_img1.png)' | markdownify }}
-{:.image }
+![](Supported-Controls_images/Supported-Controls_img1.png)
 
 
 
 
-_Figure_ _58__: Diagram With Supported Controls_
+
+_Figure_ _58_: Diagram With Supported Controls
 
 ## Overview Control 
 
@@ -31,7 +31,7 @@ The important property of the Overview Control is the Diagram property. The foll
 
 
 
-_Table_ _17__: Overview Control_
+_Table_ _17_: Overview Control
 
 <table>
 <tr>
@@ -81,7 +81,7 @@ The important events of Overview Control are listed below with their correspondi
 
 
 
-_Table_ _18__: Important events of Overview Control_
+_Table_ _18_: Important events of Overview Control
 
 <table>
 <tr>
@@ -111,7 +111,7 @@ Programmatically, the properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -132,8 +132,8 @@ overviewControl1.Size = new System.Drawing.Size(200, 100);
 overviewControl1.TabIndex = 1;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -153,15 +153,15 @@ overviewControl1.Size = New System.Drawing.Size(200, 100)
 
 overviewControl1.TabIndex = 1
 
+{% endhighlight %}
+
+![](Supported-Controls_images/Supported-Controls_img2.jpeg)
 
 
-{{ '![](Supported-Controls_images/Supported-Controls_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _59__: Overview Control_
+_Figure_ _59_: Overview Control
 
 ## Palette Groupbar And GroupView
 
@@ -173,7 +173,7 @@ The properties of the PaletteGroupBar and GroupView with their descriptions are 
 
 
 
-_Table_ _19__: PaletteGroupBar and GroupView_
+_Table_ _19_: PaletteGroupBar and GroupView
 
 <table>
 <tr>
@@ -331,7 +331,7 @@ Indicates the loaded palette is in palette view.</td></tr>
 </table>
 
 
-_Table_ _20__: PaletteGroupBar and GroupView_
+_Table_ _20_: PaletteGroupBar and GroupView
 
 <table>
 <tr>
@@ -349,7 +349,7 @@ The important events of the PaletteGroupBar and GroupView with their description
 
 
 
-_Table_ _21__: Important events of the PaletteGroupBar and GroupView_
+_Table_ _21_: Important events of the PaletteGroupBar and GroupView
 
 <table>
 <tr>
@@ -391,7 +391,7 @@ Programmatically, the properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -456,14 +456,13 @@ paletteGroupView1.LoadPalette
 
 
 
-
 paletteGroupView2.LoadPalette
 
 (@"..\..\..\..\..\..\..\..\..\Common\Data\Diagram\ElectricalSymbols.edp");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -529,9 +528,9 @@ paletteGroupView1.LoadPalette("..\..\..\..\..\..\..\..\..\Common\Data\Diagram\Ba
 
 paletteGroupView2.LoadPalette("..\..\..\..\..\..\..\..\..\Common\Data\Diagram\ElectricalSymbols.edp")
 
+{% endhighlight %}
 
-
-Dynamically add Symbol Palette into PaletteGroupBar 
+### Dynamically add Symbol Palette into PaletteGroupBar 
 
 You can add Symbol Palettes into PaletteGroupBar by means of deserializing the palette (*.edp) file dynamically. The PaletteGroupBar control supports PaletteGroupBar1.AddPalette() method in order to add a palette into the PaletteGroupBar.
 
@@ -544,7 +543,7 @@ Follow the steps given below for adding symbol palette into PaletteGroupBar:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -624,9 +623,9 @@ if (openPaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 }
 
+{% endhighlight %}
 
-
-Saving the active Palette
+### Saving the active Palette
 
 You can save the current active palette of PaletteGroupBar window by means of serializing the palette (.edp) file. The PaletteGroupBar.CurrentSymbolPalette property returns the currently selected symbol palette.
 
@@ -641,7 +640,7 @@ Follow the steps given below for saving current symbol palette.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -671,15 +670,15 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 }
 
+{% endhighlight %}
+
+![](Supported-Controls_images/Supported-Controls_img3.jpeg)
 
 
-{{ '![](Supported-Controls_images/Supported-Controls_img3.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _60__: Palette GroupBar and Palette GroupView_
+_Figure_ _60_: Palette GroupBar and Palette GroupView
 
 ## Document Explorer
 
@@ -687,7 +686,7 @@ Document Explorer allows you to visualize the details of various objects that ar
 
 The properties of the Document Explorer are listed below with their respective descriptions.
 
-_Table_ _22__: Document Explorer_
+_Table_ _22_: Document Explorer
 
 <table>
 <tr>
@@ -797,7 +796,7 @@ Sets visibility of the control.</td></tr>
 </table>
 
 
-_Table_ _23__: Document Explorer_
+_Table_ _23_: Document Explorer
 
 <table>
 <tr>
@@ -815,7 +814,7 @@ The important events of Document Explorer are as follows,
 
 
 
-_Table_ _24__: important events of Document Explorer_
+_Table_ _24_: important events of Document Explorer
 
 <table>
 <tr>
@@ -889,7 +888,7 @@ Programmatically, the properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -907,9 +906,9 @@ documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
 documentExplorer1.ShowNodeToolTips = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -927,10 +926,10 @@ documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 documentExplorer1.ShowNodeToolTips = True
 
+{% endhighlight %}
 
+![](Supported-Controls_images/Supported-Controls_img4.jpeg)
 
-{{ '![](Supported-Controls_images/Supported-Controls_img4.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -939,7 +938,7 @@ Sample code snippet for documentExplorer1.AfterSelect Event
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -987,10 +986,10 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 }
 
+{% endhighlight %}
 
+![](Supported-Controls_images/Supported-Controls_img5.jpeg)
 
-{{ '![](Supported-Controls_images/Supported-Controls_img5.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Property Editor
@@ -1001,7 +1000,7 @@ The following table lists the properties of the Property Editor. The important p
 
 
 
-_Table_ _25__: Property Editor_
+_Table_ _25_: Property Editor
 
 <table>
 <tr>
@@ -1035,7 +1034,7 @@ Programmatically, the properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1061,15 +1060,15 @@ this.propertyEditor.ShowCombo = true;
 
 this.propertyEditor.Diagram = diagram1;
 
+{% endhighlight %}
+
+![](Supported-Controls_images/Supported-Controls_img6.jpeg)
 
 
-{{ '![](Supported-Controls_images/Supported-Controls_img6.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _63__: Property Editor_
+_Figure_ _63_: Property Editor
 
 ## Diagram Grid
 
@@ -1085,7 +1084,7 @@ It is a property of Diagram.View class and its return type is _Syncfusion.Window
 
 
 
-_Table_ _26__: Diagram Grid Properties_
+_Table_ _26_: Diagram Grid Properties
 
 <table>
 <tr>
@@ -1137,7 +1136,7 @@ Specifies whether the grid is visible. It accepts Boolean value (true or false).
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1155,9 +1154,9 @@ diagram1.View.Grid.Visible = false;
 
 diagram1.View.Grid.SnapToGrid = true;
 
+{% endhighlight %}
 
+![](Supported-Controls_images/Supported-Controls_img7.jpeg)
 
-{{ '![](Supported-Controls_images/Supported-Controls_img7.jpeg)' | markdownify }}
-{:.image }
 
 

@@ -15,19 +15,19 @@ The following images shows how the Find dialog in Edit Control is localized to F
 
 
 
-{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img1.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _80__: Find dialog localized to French_
+![](Localization-and-Globalization_images/Localization-and-Globalization_img1.jpeg)
 
 
 
-{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img2.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _80_: Find dialog localized to French
 
 
-_Figure_ _81__: Find dialog localized to Spanish_
+
+![](Localization-and-Globalization_images/Localization-and-Globalization_img2.jpeg)
+
+
+
+_Figure_ _81_: Find dialog localized to Spanish
 
 
 
@@ -67,11 +67,11 @@ For example, the following figure shows the Syncfusion.Windows.Forms.Edit.Dialog
 
 
 
-{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img3.jpeg)' | markdownify }}
-{:.image }
+![](Localization-and-Globalization_images/Localization-and-Globalization_img3.jpeg)
 
 
-_Figure_ _82__: Replacing strings in English to German by using the WinRes Utility_
+
+_Figure_ _82_: Replacing strings in English to German by using the WinRes Utility
 
 
 
@@ -127,11 +127,11 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalizatio
 
 
 
-{{ '![](Localization-and-Globalization_images/Localization-and-Globalization_img4.jpeg)' | markdownify }}
-{:.image }
+![](Localization-and-Globalization_images/Localization-and-Globalization_img4.jpeg)
 
 
-_Figure_ _83__: Find dialog box localized to German_
+
+_Figure_ _83_: Find dialog box localized to German
 
 
 

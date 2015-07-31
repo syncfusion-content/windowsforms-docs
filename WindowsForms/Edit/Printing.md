@@ -39,7 +39,7 @@ You can invoke the Print dialog box by using the Print method of the Edit Contro
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -47,9 +47,9 @@ You can invoke the Print dialog box by using the Print method of the Edit Contro
 
 this.editControl1.Print();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -57,13 +57,13 @@ this.editControl1.Print();
 
 Me.editControl1.Print()
 
+{% endhighlight %}
+
+![](Printing_images/Printing_img1.jpeg)
 
 
-{{ '![](Printing_images/Printing_img1.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _77__: Print Dialog Box_
+_Figure_ _77_: Print Dialog Box
 
 
 
@@ -71,7 +71,7 @@ Use the PrintPreview method to view the contents of the Edit Control before they
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -79,9 +79,9 @@ Use the PrintPreview method to view the contents of the Edit Control before they
 
 this.editControl1.PrintPreview();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -89,17 +89,17 @@ this.editControl1.PrintPreview();
 
 Me.editControl1.PrintPreview()
 
+{% endhighlight %}
 
-
-{{ '![](Printing_images/Printing_img2.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _78__: Print Preview_
+![](Printing_images/Printing_img2.jpeg)
 
 
 
-Specifying Printing Options
+_Figure_ _78_: Print Preview
+
+
+
+### Specifying Printing Options
 
 The following methods allow you to specify the options for printing.
 
@@ -129,7 +129,7 @@ Prints the pages in the specified range.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -155,9 +155,9 @@ this.editControl1.PrintPages(1, 10);
 
 this.editControl1.PrintSelection();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -183,9 +183,9 @@ Me.editControl1.PrintPages(1, 10)
 
 Me.editControl1.PrintSelection()
 
+{% endhighlight %}
 
-
-Customized Header Footer
+### Customized Header Footer
 
 Header and Footer can be shown / hidden while printing the document by using the PageHeaderAndFooterVisible property. 
 
@@ -235,7 +235,7 @@ Occurs when page footer is printed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -261,9 +261,9 @@ e.Text = "This is the footer";
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -285,17 +285,17 @@ e.Text = "This is the footer"
 
 End Sub
 
-
+{% endhighlight %}
 
 The following image shows a typical page with a header and footer in Print Preview mode.
 
 
 
-{{ '![](Printing_images/Printing_img3.jpeg)' | markdownify }}
-{:.image }
+![](Printing_images/Printing_img3.jpeg)
 
 
-_Figure_ _79__: Preview of Header and Footer_
+
+_Figure_ _79_: Preview of Header and Footer
 
 
 
@@ -323,7 +323,7 @@ Removes border drawing in page preview.</td></tr>
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -337,9 +337,9 @@ this.editControl1.SetPageBorder(Syncfusion.Windows.Forms.Edit.Enums.FrameBorderS
 
 this.editControl1.RemovePageBorder();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -353,7 +353,7 @@ Me.editControl1.SetPageBorder(Syncfusion.Windows.Forms.Edit.Enums.FrameBorderSty
 
 Me.editControl1.RemovePageBorder()
 
-
+{% endhighlight %}
 
 Refer to the Printing Demo sample for more information in this regard.
 

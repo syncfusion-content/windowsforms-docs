@@ -17,14 +17,14 @@ This section illustrates the step-by-step procedure to create the following plat
 
 
 
-Creating a Windows Application
+### Creating a Windows Application
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Windows Forms Application template, name the project and click OK. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 
 
@@ -35,7 +35,7 @@ A windows application is created.
 
 
 
-Creating an ASP.NET Application
+### Creating an ASP.NET Application
 
 To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ section in the Getting Started guide of our Essential Studio documentation. 
 
@@ -43,29 +43,21 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
-
-A web application is created.
+   A web application is created.
 
 2. Now you need to deploy Essential Grouping into this ASP.NET application. Refer ASP.NET topic for detailed info.
 
 
 
-Creating a WPF Application
+### Creating a WPF Application
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select WPF Application template, name the project and click OK. 
 
-
-
-{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 2. A WPF application is created.
 3. Now you need to deploy Essential Grouping into this WPF application. Refer Windows / WPF topic for detailed info.
@@ -82,6 +74,7 @@ We have now created a platform application in the previous topic (Creating Platf
 
 * Windows / WPF-Step-by-step procedure to deploy Grouping in Windows / WPF applications
 * ASP.NET-Step-by-step procedure to deploy Grouping in web application
+
 ### Windows / WPF
 
 
@@ -89,7 +82,7 @@ Now, you have created a Windows / WPF application (refer Creating Platform Appli
 
 
 
-Deploying Essential Grouping in a Windows / WPF Application
+#### Deploying Essential Grouping in a Windows / WPF Application
 
 The following steps will guide you to deploy Essential Grouping:
 
@@ -98,10 +91,8 @@ The following steps will guide you to deploy Essential Grouping:
 3. Check whether the licenses.licx file listed in the project has its Build Action property to be Embedded Resource.
 4. Now you may see that the Syncfusion assemblies referenced in the project are copied to the output directory along with the application executable (bin/debug/).
 5. Deploy the exe along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application exe in the target machine.
-> 
-{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
-{:.image }
-_Note: For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._ 
+ 
+> Note: For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._
 
 Dlls needed for deployment
 
@@ -121,14 +112,12 @@ The following steps will guide you to deploy Essential Grouping in an ASP.NET ap
 
 1. Marking the Application directory-The appropriate directory, usually where the aspx files are stored, must be marked as Application in IIS.
 2. Syncfusion Assemblies-The Syncfusion assemblies need to be in the bin folder that is beside the aspx files.
-> 
-{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
-{:.image }
-_Note: They can also be in the GAC, in which case, they should be referenced in Web.config file._
+ 
+> Note: They can also be in the GAC, in which case, they should be referenced in Web.config file.
 
 
 
-[Web.config]
+{% highlight html %}
 
 
 
@@ -151,10 +140,9 @@ _Note: They can also be in the GAC, in which case, they should be referenced in 
 </configuration>
 
 
+{% endhighlight %}
 
-> {{ '![](Getting-Started_images/Getting-Started_img6.jpeg)' | markdownify }}
-{:.image }
-_Note: The version numbers in the above references will vary depending on the version you are linking to._
+> Note: The version numbers in the above references will vary depending on the version you are linking to.
 
 Data Files-If you have .xml, .mdb, or other data files, ensure that they have sufficient security permission. Authenticated Users should have full control over the files and the directories in order to give ASP.NET code, enough permissions to open the file during runtime.
 
@@ -162,9 +150,7 @@ Refer to the document in the following path, for step by step process of Syncfus
 
 [http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
 
-> {{ '![](Getting-Started_images/Getting-Started_img7.jpeg)' | markdownify }}
-{:.image }
-_Note: Application with Essential Grouping needs the following dependent assemblies for deployment._
+> Note: Application with Essential Grouping needs the following dependent assemblies for deployment.
 
 * Syncfusion.Shared.Base.dll
 * Syncfusion.Shared.Web.dll

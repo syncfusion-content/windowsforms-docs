@@ -44,7 +44,7 @@ The Diagram control supports different kinds of nodes. The following are the nod
 * Link
 * PolyLineConnector
 
-Creating a Node in the Diagram Control at Run Time
+### Creating a Node in the Diagram Control at Run Time
 
 To create a node in the Diagram control:
 
@@ -53,7 +53,7 @@ To create a node in the Diagram control:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -67,9 +67,9 @@ private void Form1_Load(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -81,21 +81,21 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
+{% endhighlight %}
+
+![](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg)
 
 
-{{ '![](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Node Property Settings
+### Node Property Settings
 
 The following code example demonstrates how to apply node property settings.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -144,8 +144,8 @@ private void Form1_Load(object sender, EventArgs e)
 }
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -191,21 +191,21 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
+{% endhighlight %}
+
+![](Nodes-or-Shapes_images/Nodes-or-Shapes_img2.jpeg)
 
 
-{{ '![](Nodes-or-Shapes_images/Nodes-or-Shapes_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Creating Nodes and Links
+### Creating Nodes and Links
 
 The following code example illustrates how to create nodes and links.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -227,9 +227,9 @@ protected void Page_Load(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -249,9 +249,9 @@ Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
+{% endhighlight %}
 
+![](Nodes-or-Shapes_images/Nodes-or-Shapes_img3.jpeg)
 
-{{ '![](Nodes-or-Shapes_images/Nodes-or-Shapes_img3.jpeg)' | markdownify }}
-{:.image }
 
 

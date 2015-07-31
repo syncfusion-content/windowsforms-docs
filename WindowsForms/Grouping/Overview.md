@@ -19,13 +19,13 @@ Syncfusion Essential Grouping is a data technology that allows you to easily acc
 
 
 
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.jpeg)
 
 
 
 
-Key Features
+
+### Key Features
 
 Some of the key features of Essential Grouping are listed below:
 
@@ -37,7 +37,7 @@ Some of the key features of Essential Grouping are listed below:
 
 
 
-User Guide Organization
+### User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of Essential Grouping. It is organized into the following sections:
 
@@ -49,11 +49,11 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-Document Conventions
+#### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
-_Table_ _1_: Document Conventions_
+_Table_ _1_: Document Conventions
 
 <table>
 <tr>
@@ -64,8 +64,8 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-![](Overview_images/Overview_img2.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+
 Note:</td><td>
 Represents important information</td></tr>
 <tr>
@@ -76,61 +76,81 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img4.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img4.jpeg)' | markdownify }}
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
+
 ## Prerequisites and Compatibility
 
 This section covers the requirements mandatory for using Essential Grouping. It also lists operating systems and browsers compatible with the product.
 
 
 
-Prerequisites
+#### Prerequisites
 
 The prerequisites details are listed below:
 
-_Table_ _2_: Prerequisites_
+_Table_ _2_: Prerequisites
 
 <table>
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2012 (Ultimate, Premium, Professional, and Express)* Visual Studio 2010 (Ultimate, Premium, Professional, and Express)* Visual Studio 2008 (Team System, Professional, Standard & Express)* Visual Studio 2005 (Professional, Standard & Express)</td></tr>
+<ul>
+<li> Visual Studio 2012 (Ultimate, Premium, Professional, and Express)</li>
+<li> Visual Studio 2010 (Ultimate, Premium, Professional, and Express)</li>
+<li> Visual Studio 2008 (Team System, Professional, Standard & Express)</li>
+<li> Visual Studio 2005 (Professional, Standard & Express)</li></ul></td></tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5* .NET 4.0* .NET 3.5 * .NET 2.0</td></tr>
+<ul>
+<li> .NET 4.5.1</li>
+<li> .NET 4.5</li>
+<li> .NET 4.0</li>
+<li> .NET 3.5 </li>
+<li> .NET 2.0</li></ul></td></tr>
 </table>
 
 
 
-Compatibility
+#### Compatibility
 
 The compatibility details are listed below:
 
-_Table_ _3_: Compatibility_
+_Table_ _3_: Compatibility
 
 <table>
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2013 (32 bit and 64 bit)* Windows Server 2012(32bit and 64 bit* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows Server 2003 (32 bit and 64 bit) * Windows XP</td></tr>
+<ul>
+<li> Windows 8.1 (32 bit and 64 bit)</li>
+<li> Windows 8 (32 bit and 64 bit)</li>
+<li> Windows Server 2013 (32 bit and 64 bit)</li>
+<li> Windows Server 2012(32bit and 64 bit</li>
+<li> Windows Server 2008 (32 bit and 64 bit)</li>
+<li> Windows 7 (32 bit and 64 bit)</li>
+<li> Windows Vista (32 bit and 64 bit)</li>
+<li> Windows Server 2003 (32 bit and 64 bit)</li>
+<li> Windows XP</li></ul></td></tr>
 </table>
+
 ## Documentation
 
 
 Syncfusion provides the following documentation segments to provide all necessary information for using Essential Grouping in different platform applications in an efficient manner.
 
-_Table_ _4_: Documentation_
+_Table_ _4_: Documentation
 
 <table>
 <tr>
@@ -149,7 +169,7 @@ Release Notes</td><td>
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the Grouping User Guide.)![](Overview_images/Overview_img5.jpeg)
-{:.image }
+
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>

@@ -21,47 +21,50 @@ This section discusses the size settings of the Edit Control.
 
 
 
-AutoSize
+#### AutoSize
 
 The Edit Control can be autoresized by setting the AutoSize property to True.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.AutoSize = true;
 
 
+{% endhighlight %}
 
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.AutoSize = True
 
 
+{% endhighlight %}
 
-Minimum Size
+#### Minimum Size
 
 The MinimumSize property gets / sets the minimum size of the control in autosize mode.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.MinimumSize = new System.Drawing.Size(10, 10);
 
 
+{% endhighlight %}
 
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.MinimumSize = New System.Drawing.Size(10, 10)
 
-
+{% endhighlight %}
 
 ### Split Views
 
@@ -107,7 +110,7 @@ Splits the Edit Control into two equal vertical halves.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -121,9 +124,9 @@ this.editControl1.SplitHorizontally();
 
 this.editControl1.SplitVertically();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -137,9 +140,9 @@ Me.editControl1.SplitHorizontally()
 
 Me.editControl1.SplitVertically()
 
+{% endhighlight %}
 
-
-Positioning
+#### Positioning
 
 The following properties can be used to position the horizontal and vertical splitters in the Edit Control.
 
@@ -165,7 +168,7 @@ Gets / sets position of the bottom vertical splitter.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -175,9 +178,9 @@ this.editControl1.TopVerticalSplitterPosition = 260;
 
 this.editControl1.BottomVerticalSplitterPosition = 260;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -187,35 +190,35 @@ Me.editControl1.TopVerticalSplitterPosition = 260
 
 Me.editControl1.BottomVerticalSplitterPosition = 260
 
+{% endhighlight %}
 
-
-SplitFourQuadrants Method
+#### SplitFourQuadrants Method
 
 The SplitFourQuadrants method is used to split the Edit Control into four equal parts.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.SplitFourQuadrants();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.SplitFourQuadrants()
 
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img1.jpeg)
 
 
-{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _63_: Edit Control Split into Four Quadrants_
+_Figure_ _63_: Edit Control Split into Four Quadrants
 
 
 
@@ -229,7 +232,7 @@ See Also
 
 
 
-Scrolling Support
+## Scrolling Support
 
 
 
@@ -241,27 +244,27 @@ The themed appearance can be provided for the Edit Control by setting the UseXPS
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.UseXPStyle = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.UseXPStyle = True
 
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img2.jpeg)
 
 
-{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _64_: Edit Control using Windows XP Themes_
+_Figure_ _64_: Edit Control using Windows XP Themes
 
 
 
@@ -290,19 +293,21 @@ Gets/sets the border style of the control. The options provided are as follows:*
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+
+{% endhighlight %}
 
 ### Graphics Customization Settings
 
@@ -318,24 +323,56 @@ Description</td></tr>
 <tr>
 <td>
 GraphicsCompositingQuality</td><td>
-Specifies image composition quality. The options provided are as follows:* Invalid* Default* HighSpeed* HighQuality* GammaCorrected* AssumeLinear</td></tr>
+Specifies image composition quality. The options provided are as follows:
+<ul>
+<li> Invalid</li>
+<li>Default</li>
+<li>HighSpeed</li>
+<li>HighQuality</li>
+<li>GammaCorrected</li>
+<li>AssumeLinear</li>
+</ul></td></tr>
 <tr>
 <td>
 <br>GraphicsInterpolationMode</td><td>
-Specifies the interpolation mode. The options provided are as follows:* Invalid* Default* Low* High* Bilinear* Bicubic* NearestNeighbor* HighQualityBilinear* HighQualityBicubic</td></tr>
+Specifies the interpolation mode. The options provided are as follows:
+<ul>
+<li> Invalid</li>
+<li> Default</li>
+<li> Low</li>
+<li> High</li>
+<li> Bilinear</li>
+<li> Bicubic</li>
+<li> NearestNeighbor</li>
+<li> HighQualityBilinear</li>
+<li> HighQualityBicubic</li></ul></td></tr>
 <tr>
 <td>
 <br>GraphicsSmoothingMode</td><td>
-Specifies the smoothing mode. The options provided are as follows:* Invalid* Default* HighSpeed* HighQuality* None* AntiAlias</td></tr>
+Specifies the smoothing mode. The options provided are as follows:
+<ul>
+<li> Invalid</li>
+<li> Default</li>
+<li> HighSpeed</li>
+<li> HighQuality</li>
+<li> None</li>
+<li> AntiAlias</li></ul></td></tr>
 <tr>
 <td>
 <br>GraphicsTextRenderingHint</td><td>
-Specifies the text hinting mode. The options provided are as follows:* SystemDefault* SingleBitPerPixelGridFit* SingleBitPerPixel* AntiAliasGridFit* AntiAlias* ClearTypeGridFit</td></tr>
+Specifies the text hinting mode. The options provided are as follows:
+<ul>
+<li> SystemDefault</li>
+<li> SingleBitPerPixelGridFit</li>
+<li> SingleBitPerPixel</li>
+<li> AntiAliasGridFit</li>
+<li> AntiAlias</li>
+<li> ClearTypeGridFit</li></ul></td></tr>
 </table>
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -347,9 +384,9 @@ this.editControl1.GraphicsSmoothingMode = System.Drawing.Drawing2D.SmoothingMode
 
 this.editControl1.GraphicsTextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -361,7 +398,7 @@ Me.editControl1.GraphicsSmoothingMode = System.Drawing.Drawing2D.SmoothingMode.H
 
 Me.editControl1.GraphicsTextRenderingHint = System.Drawing.Text.TextRenderingHInteger.SingleBitPerPixelGridFit
 
-
+{% endhighlight %}
 
 ## Margins
 
@@ -395,7 +432,7 @@ Sets the width of the selection margin.</td></tr>
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -405,9 +442,9 @@ this.editControl1.SelectionMarginBackgroundColor = Color.IndianRed;
 
 this.editControl1.SelectionMarginWidth = 100;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -417,17 +454,17 @@ Me.editControl1.SelectionMarginBackgroundColor = Color.IndianRed
 
 Me.editControl1.SelectionMarginWidth = 100
 
+{% endhighlight %}
 
-
-{{ '![](Appearance_images/Appearance_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _65_: Selection Margin Set_
+![](Appearance_images/Appearance_img3.jpeg)
 
 
 
-Differentiating the Lines based on Actions
+_Figure_ _65_: Selection Margin Set
+
+
+
+#### Differentiating the Lines based on Actions
 
 Edit Control supports marking the changed lines and the saved lines with different colors.
 
@@ -437,27 +474,27 @@ The changed lines marking feature can be enabled by setting the MarkChangedLines
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.MarkChangedLines = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.MarkChangedLines = True
 
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img4.jpeg)
 
 
-{{ '![](Appearance_images/Appearance_img4.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _66_: Saved Changes in Green and Unsaved Changes in Yellow_
+_Figure_ _66_: Saved Changes in Green and Unsaved Changes in Yellow
 
 
 
@@ -489,7 +526,7 @@ Specifies placement of user margin.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -501,9 +538,9 @@ this.editControl1.UserMarginWidth = 100;
 
 this.editControl1.UserMarginPlacement = Syncfusion.Windows.Forms.Edit.Enums.MarginPlacement.Left;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -515,9 +552,9 @@ Me.editControl1.UserMarginWidth = 100
 
 Me.editControl1.UserMarginPlacement = Syncfusion.Windows.Forms.Edit.Enums.MarginPlacement.Left
 
+{% endhighlight %}
 
-
-Color Settings
+#### Color Settings
 
 The following properties can be used to set the background color, text color and border color of the user margin in the Edit Control.
 
@@ -543,7 +580,7 @@ Specifies color of the user margin border.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -553,9 +590,9 @@ this.editControl1.UserMarginBorderColor = Color.IndianRed;
 
 this.editControl1.UserMarginTextColor = Color.Green;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -565,10 +602,10 @@ Me.editControl1.UserMarginBorderColor = Color.IndianRed
 
 Me.editControl1.UserMarginTextColor = Color.Green
 
+{% endhighlight %}
 
+![](Appearance_images/Appearance_img5.jpeg)
 
-{{ '![](Appearance_images/Appearance_img5.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -577,7 +614,7 @@ It is possible to set custom text in the User Margin on a line-by-line basis by 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -605,9 +642,9 @@ private void editControl1_DrawUserMarginText(object sender, Syncfusion.Windows.F
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -633,7 +670,7 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 Refer to the User Margin Demo sample in the following sample installation location for more information in this regard.
 
@@ -673,37 +710,99 @@ Specifies the forecolor of the control.</td></tr>
 <tr>
 <td>
 PatternStyle</td><td>
-Specifies the pattern style. The options provided are as folows:* Horizontal* Vertical* ForwardDiagonal* BackwardDiagonal* Cross* DiagonalCross* Percent05* Percent10* Percent20* Percent25* Percent30* Percent40* Percent50* Percent60* Percent70* Percent75* Percent80* Percent90* LightDownwardDiagonal* LightUpwardDiagonal* DarkDownwardDiagonal* DarkUpwardDiagonal* WideDownwardDiagonal* WideUpwardDiagonal* LightVertical* LightHorizontal* NarrowVertical* NarrowHorizontal* DarkVertical* DarkHorizontal* DashedDownwardDiagonal* DashedUpwardDiagonal* DashedHorizontal* DashedVertical* SmallConfetti* LargeConfetti* ZigZag* Wave* DiagonalBrick* HorizontalBrick* Weave* Plaid* Divot* DottedGrid* DottedDiamond* Shingle* Trellis* Sphere* SmallGrid* SmallCheckerBoard* LargeCheckerBoard* OutlinedDiamond* SolidDiamond* None</td></tr>
+Specifies the pattern style. The options provided are as folows:
+<ul>
+<li> Horizontal</li>
+<li> Vertical</li>
+<li> ForwardDiagonal</li>
+<li> BackwardDiagonal</li>
+<li> Cross</li>
+<li> DiagonalCross</li>
+<li> Percent05</li>
+<li> Percent10</li>
+<li> Percent20</li>
+<li> Percent25</li>
+<li> Percent30</li>
+<li> Percent40</li>
+<li> Percent50</li>
+<li> Percent60</li>
+<li> Percent70</li>
+<li> Percent75</li>
+<li> Percent80</li>
+<li> Percent90</li>
+<li> LightDownwardDiagonal</li>
+<li> LightUpwardDiagonal</li>
+<li> DarkDownwardDiagonal</li>
+<li> DarkUpwardDiagonal</li>
+<li> WideDownwardDiagonal</li>
+<li> WideUpwardDiagonal</li>
+<li> LightVertical</li>
+<li> LightHorizontal</li>
+<li> NarrowVertical</li>
+<li> NarrowHorizontal</li>
+<li> DarkVertical</li>
+<li> DarkHorizontal</li>
+<li> DashedDownwardDiagonal</li>
+<li> DashedUpwardDiagonal</li>
+<li> DashedHorizontal</li>
+<li> DashedVertical</li>
+<li> SmallConfetti</li>
+<li> LargeConfetti</li>
+<li> ZigZag</li>
+<li> Wave</li>
+<li> DiagonalBrick</li>
+<li> HorizontalBrick</li>
+<li> Weave</li>
+<li> Plaid</li>
+<li> Divot</li>
+<li> DottedGrid</li>
+<li> DottedDiamond</li>
+<li> Shingle</li>
+<li> Trellis</li>
+<li> Sphere</li>
+<li> SmallGrid</li>
+<li> SmallCheckerBoard</li>
+<li> LargeCheckerBoard</li>
+<li> OutlinedDiamond</li>
+<li> SolidDiamond</li>
+<li> None</li></ul></td></tr>
 <tr>
 <td>
-<br>GradientColors</td><td>
-Specifies the gradient colors. The options provided are as follows:* ForwardDiagonal* BackwardDiagonal* Horizontal* Vertical* PathRectangle* PathEllipse<br>The first entry in this list will be the same as the backcolor property, and the last entry will be the same as the forecolor property.</td></tr>
+<br/>GradientColors</td><td>
+Specifies the gradient colors. The options provided are as follows:
+<ul>
+<li> ForwardDiagonal</li>
+<li> BackwardDiagonal</li>
+<li> Horizontal</li>
+<li> Vertical</li>
+<li> PathRectangle</li>
+<li> PathEllipse</li></ul><br/>The first entry in this list will be the same as the backcolor property, and the last entry will be the same as the forecolor property.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, new System.Drawing.Color[] {System.Drawing.Color.LavenderBlush, System.Drawing.Color.AliceBlue, System.Drawing.Color.BlanchedAlmond});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, New System.Drawing.Color() {System.Drawing.Color.LavenderBlush, System.Drawing.Color.AliceBlue, System.Drawing.Color.BlanchedAlmond})
 
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img6.jpeg)
 
 
-{{ '![](Appearance_images/Appearance_img6.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _68_: Edit Control with Gradient Background_
+_Figure_ _68_: Edit Control with Gradient Background
 
 
 
@@ -719,21 +818,21 @@ The SetBackgroundColor method is used to set the background color for a specifie
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.SetBackgroundColor(new Point(1, 1), new Point(9, 9), Color.AliceBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
 Me.editControl1.SetBackgroundColor(New Point(1, 1), New Point(9, 9), Color.AliceBlue)
 
-
+{% endhighlight %}
 
 Setting Background Color for Individual Lines or Selected Blocks of Text
 
@@ -749,7 +848,7 @@ You can set any desired background to a particular line or block of selection, a
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -769,9 +868,9 @@ this.editControl1.SetLineBackColor(editControl1.CurrentLine, true, format);
 
 this.editControl1.SetSelectionBackColor(format);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -791,19 +890,16 @@ Me.editControl1.SetLineBackColor(editControl1.CurrentLine, true, format)
 
 Me.editControl1.SetSelectionBackColor(format)
 
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img7.jpeg)
 
 
-{{ '![](Appearance_images/Appearance_img7.jpeg)' | markdownify }}
-{:.image }
+
+_Figure_ _69_: Background Color and Border set for Text
 
 
-_Figure_ _69_: Background Color and Border set for Text_
-
-> 
-
-> {{ '![](Appearance_images/Appearance_img8.jpeg)' | markdownify }}
-{:.image }
-_Note: Refer the_ Text Border _topic to know how to set the border for the text._
+> Note: Refer the_ Text Border _topic to know how to set the border for the text.
 
 
 
@@ -829,7 +925,7 @@ Removes background coloring from the selected text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -843,9 +939,9 @@ this.editControl1.RemoveLineBackColor(4);
 
 this.editControl1.RemoveSelectionBackColor();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -859,7 +955,7 @@ Me.editControl1.RemoveLineBackColor(4)
 
 Me.editControl1.RemoveSelectionBackColor()
 
-
+{% endhighlight %}
 
 A sample which demonstrates Text Highlighting is available in the following sample location.
 
@@ -883,7 +979,7 @@ The Edit Control supports customization of fonts through the configuration file,
 
 
 
-[XML]
+{%highlight xml %}
 
 
 
@@ -899,13 +995,13 @@ The Edit Control supports customization of fonts through the configuration file,
 
 <format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" /> 
 
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img9.jpeg)
 
 
-{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _70_: Formats Editor_
+_Figure_ _70_: Formats Editor
 
 
 
@@ -913,7 +1009,7 @@ The Edit Control supports font customization at run time through the use of the 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -933,9 +1029,9 @@ this.controlFormatsSettings1.FormatsSelector = this.controlFormatsList1;
 
 this.editControl1.ShowFormatsCustomizationDialog();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -955,7 +1051,7 @@ Me.controlFormatsSettings1.FormatsSelector = Me.controlFormatsList1
 
 this.editControl1.ShowFormatsCustomizationDialog();
 
-
+{% endhighlight %}
 
 Refer to the Font Customization Demo sample for more information in this regard.
 
@@ -969,17 +1065,15 @@ You can turn on the single line mode of the Edit Control by setting the SingleLi
 
 
 
-> {{ '![](Appearance_images/Appearance_img10.jpeg)' | markdownify }}
-{:.image }
-_Note: The SingleLineMode is intended for use, only when the Edit Control contains small amounts of text data in it. Using it in a scenario where the Edit Control has a huge file loaded into it, may lead to poor performance._
+> Note: The SingleLineMode is intended for use, only when the Edit Control contains small amounts of text data in it. Using it in a scenario where the Edit Control has a huge file loaded into it, may lead to poor performance.
 
 
 
-{{ '![](Appearance_images/Appearance_img11.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img11.jpeg)
 
 
-_Figure_ _71_: Edit Control with SingleLineMode Turned On_
+
+_Figure_ _71_: Edit Control with SingleLineMode Turned On
 
 
 
@@ -1003,7 +1097,7 @@ The following code illustrates this.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1011,9 +1105,9 @@ The following code illustrates this.
 
 public class FindDialogExt : Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -1025,9 +1119,9 @@ Inherits Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog
 
 End Class
 
+{% endhighlight %}
 
-
-FindComplete Event
+#### FindComplete Event
 
 This event occurs in FindNext() when search reaches the starting point of the search before the message box displays.
 
@@ -1035,7 +1129,7 @@ The event handler receives an argument of FindCompleteEventArgs . This argument 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1063,9 +1157,9 @@ The event handler receives an argument of FindCompleteEventArgs . This argument 
 
         }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{%highlight vbnet %}
 
 
 
@@ -1098,14 +1192,14 @@ End If
 End Sub
 
 
+{% endhighlight %}
+
+
+![](Appearance_images/Appearance_img12.jpeg)
 
 
 
-{{ '![](Appearance_images/Appearance_img12.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _72_: Customized  Find Dialog_
+_Figure_ _72_: Customized  Find Dialog
 
 
 

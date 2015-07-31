@@ -22,14 +22,12 @@ The computations are performed as listed below, with level one operations done f
 * <, >, =, <=, >=, <>: less than, greater than, equal, less than or equal, greater than or equal, not equal
 * match, like, in, between 
 * or, and, or
-> 
-{{ '![](Algebra-Supported-In-Expressions--Filters_images/Algebra-Supported-In-Expressions--Filters_img1.jpeg)' | markdownify }}
-{:.image }
-_Note:_
 
-> _1. Alpha constants used with match and like should be enclosed in apostrophes (')._ 
-
-> _2. Logical operators return "1", if the logical expression is True and return "0", if the logical expression is False._ 
+> Note:
+>
+> 1. Alpha constants used with match and like should be enclosed in apostrophes (').
+>
+> 2. Logical operators return "1", if the logical expression is True and return "0", if the logical expression is False.
 
 
 
@@ -61,8 +59,6 @@ Example
 
 
 
-{{ '![](Algebra-Supported-In-Expressions--Filters_images/Algebra-Supported-In-Expressions--Filters_img2.jpeg)' | markdownify }}
-{:.image }
  Note that spaces that are significant in the list, i.e. {RTR,MAS} is not the same as {RTR, MAS}. 
 
 
@@ -77,7 +73,7 @@ Example
 
 
 
-Custom Functions
+### Custom Functions
 
 Essential Grouping lets you add custom functions to your code that can then be used in expressions. 
 

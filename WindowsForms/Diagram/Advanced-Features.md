@@ -21,7 +21,7 @@ A node's behavior can be customized and modified using the EditStyle collection 
 
 
 
-_Table_ _41_: Node Selections_
+_Table_ _41_: Node Selections
 
 <table>
 <tr>
@@ -63,7 +63,7 @@ Programmatically, the properties can be set as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -81,9 +81,9 @@ rect.EditStyle.AllowRotate = true;
 
 rect.EditStyle.AllowSelect = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -101,7 +101,7 @@ rect.EditStyle.AllowRotate = True
 
 rect.EditStyle.AllowSelect = True
 
-
+{% endhighlight %}
 
 In the above code snippets, the properties are set to the Rectangular node (rect) created through the code.
 
@@ -109,7 +109,7 @@ Behavior Settings
 
 
 
-_Table_ _42_: Properties_
+_Table_ _42_: Properties
 
 <table>
 <tr>
@@ -147,7 +147,7 @@ Programmatically these properties can be set as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -165,9 +165,9 @@ rect.EditStyle.HidePinPoint = true;
 
 rect.EditStyle.HideRotationHandle = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -185,30 +185,30 @@ rect.EditStyle.HidePinPoint = True
 
 rect.EditStyle.HideRotationHandle = True
 
-
+{% endhighlight %}
 
 In the above code snippets, the properties are set to the Rectangular node (rect) created through the code.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img1.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img1.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img2.jpeg)' | markdownify }}
-{:.image }
 
-
-{{ '![](Advanced-Features_images/Advanced-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img2.jpeg)
 
 
 
+![](Advanced-Features_images/Advanced-Features_img3.jpeg)
 
-{{ '![](Advanced-Features_images/Advanced-Features_img4.jpeg)' | markdownify }}
-{:.image }
+
+
+
+
+![](Advanced-Features_images/Advanced-Features_img4.jpeg)
+
 
 
 ## Ports And Connections
@@ -217,13 +217,13 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 Port is an object used to establish a connection between the node and the link.
 
-Central Port
+#### Central Port
 
 By default, the central port for a diagram is enabled using the EnableCentralPort property available for the node. 
 
 
 
-_Table_ _43_: Port Properties_
+_Table_ _43_: Port Properties
 
 <table>
 <tr>
@@ -241,7 +241,7 @@ The central port for a diagram node can be enabled by using the following code s
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -249,9 +249,9 @@ Ellipse ellips = new Ellipse(100, 100, 200, 100);
 
 ellips.EnableCentralPort = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -259,7 +259,7 @@ Dim ellips As New Ellipse(100, 100, 200, 100)
 
 ellips.EnableCentralPort = True
 
-
+{% endhighlight %}
 
 In the above code snippets, the Central Port is enabled for an Ellipse node.
 
@@ -267,25 +267,23 @@ Sample diagram is as follows:
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img5.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img5.jpeg)
 
 
 
 
-_Figure_ _97_: Central Port_
+
+_Figure_ _97_: Central Port
 
 
 
-Custom ports
+#### Custom ports
 
 Custom ports can be defined at any position of the diagram node, thus allowing the creation of any number of connection ports at any position on the node. All the connections can be defined from the required point or port. Unlike the default port, the custom port when set, will be visible. The DrawPorts property must be enabled for custom ports to be created.
 
 
 
-> {{ '![](Advanced-Features_images/Advanced-Features_img6.jpeg)' | markdownify }}
-{:.image }
-_Note: When a link is drawn to a node or another link and when the EnableCentralPort is set to True, the links cannot be connected to the custom port. Hence make sure to disable that property for the links and the nodes to connect the links to the custom ports._
+> Note: When a link is drawn to a node or another link and when the EnableCentralPort is set to True, the links cannot be connected to the custom port. Hence make sure to disable that property for the links and the nodes to connect the links to the custom ports.
 
 <table>
 <tr>
@@ -305,7 +303,7 @@ The following code snippet illustrate the Custom Ports,
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -317,9 +315,9 @@ Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.For
 
 rect.Ports.Add(cp);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -331,25 +329,25 @@ Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
 
 rect.Ports.Add(cp)
 
-
+{% endhighlight %}
 
 Sample diagram is as follows.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img7.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img7.jpeg)
 
 
 
 
-Port Shapes
+
+#### Port Shapes
 
 The VisualType property available for the port can be used for customizing the shape of the port. There are several types of ports available for customizing the port's shape, each of which differs depending on how they are positioned within the symbol and how they are rendered. For example, a CirclePort can be positioned anywhere within the bounds of a symbol and renders itself as a circle containing cross hairs. Another example is a CenterPort, which always positions itself in the center of the symbol and has no visual representation.
 
 
 
-_Table_ _45_: Port Shapes_
+_Table_ _45_: Port Shapes
 
 <table>
 <tr>
@@ -368,33 +366,33 @@ The visual types for a port can be defined using the following code snippet.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 port.VisualType = PortVisualType.RhombPort;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
 port.VisualType = PortVisualType.RhombPort
 
-
+{% endhighlight %}
 
 Sample diagram is as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img8.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img8.jpeg)
 
 
 
 
-_Figure_ _99_: Different Port Shapes_
+
+_Figure_ _99_: Different Port Shapes
 
 ### Connection Point Properties
 
@@ -404,7 +402,7 @@ The ConnectionPointType and ConnectionsLimit properties are available for the po
 
 
 
-_Table_ _46_: ConnectionPointType_
+_Table_ _46_: ConnectionPointType
 
 <table>
 <tr>
@@ -426,7 +424,7 @@ The following code snippet demonstrates their usage.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -436,10 +434,9 @@ cp.ConnectionPointType = ConnectionPointType.Incoming;
 
 cp.ConnectionsLimit = 12;
 
+{% endhighlight %}
 
-
-[VB]
-
+{% highlight vbnet %}
 
 
 Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
@@ -448,15 +445,15 @@ cp.ConnectionPointType = ConnectionPointType.Incoming
 
 cp.ConnectionsLimit = 12
 
+{% endhighlight %}
+
+![](Advanced-Features_images/Advanced-Features_img9.jpeg)
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img9.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _100_: ConnectionPoint Collection Editor_
+_Figure_ _100_: ConnectionPoint Collection Editor
 
 
 
@@ -464,25 +461,25 @@ Sample diagram  is as follows:
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img10.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img10.jpeg)
 
 
 
 
-_Figure_ _101_: Rectangle with ConnectionPoint_
+
+_Figure_ _101_: Rectangle with ConnectionPoint
 
 
 
 Some important properties are discussed below:
 
-FillStyle
+#### FillStyle
 
 FillStyle property is used to create brushes for filling the interior region of the Connection Points.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -494,9 +491,10 @@ m_styleFill.Type = FillStyleType.Solid;
 
 m_styleFill.ColorAlphaFactor = 60;
 
+{% endhighlight %}
 
 
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -508,29 +506,29 @@ m_styleFill.Type = FillStyleType.Solid
 
 m_styleFill.ColorAlphaFactor = 60
 
-
+{% endhighlight %}
 
 The following image illustrates the above settings.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img11.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img11.jpeg)
 
 
-LineStyle
+
+#### LineStyle
 
 This property inturn has customization properties to set the style for the Connection Point Lines, similar to the other line types.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img12.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img12.jpeg)
 
 
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -543,8 +541,8 @@ m_styleLine.LineWidth = 0;
 m_styleLine.DashStyle = DashStyle.Dash;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet%}
 
 
 
@@ -556,19 +554,19 @@ m_styleLine.LineWidth = 0
 
 m_styleLine.DashStyle = DashStyle.Dash
 
-
+{% endhighlight %}
 
 The below images illustrates the above settings.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img13.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img13.jpeg)
 
 
 
 
-ConnectionPointSize
+
+#### ConnectionPointSize
 
 This property allows us to set the size of the Ports for current ConnectionPoint. This property accepts a ConnectionPointSize enumerator which has three predefined sizes as follows.
 
@@ -580,7 +578,7 @@ The point at which the connection should be established can be easily customized
 
 
 
-_Table_ _47_: Properties_
+_Table_ _47_: Properties
 
 <table>
 <tr>
@@ -606,7 +604,7 @@ The following code snippet defines the setting of the position values for a node
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -618,9 +616,9 @@ cp.OffsetX = 50;
 
 cp.OffsetY = 10;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -632,49 +630,49 @@ cp.OffsetX = 50
 
 cp.OffsetY = 10
 
-
+{% endhighlight %}
 
 Sample diagram is as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img14.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img14.jpeg)
 
 
 
 
-_Figure_ _105_: BottomLeft ConnectionPoint_
+
+_Figure_ _105_: BottomLeft ConnectionPoint
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img15.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _106_: TopCenter ConnectionPoint_
-
-
-
-{{ '![](Advanced-Features_images/Advanced-Features_img16.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img15.jpeg)
 
 
 
 
-_Figure_ _107_: MiddleRight ConnectionPoint_
+
+_Figure_ _106_: TopCenter ConnectionPoint
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img17.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img16.jpeg)
 
 
 
 
-_Figure_ _108_: ConnectionPoint in Specified X & Y Offset_
+
+_Figure_ _107_: MiddleRight ConnectionPoint
+
+
+
+![](Advanced-Features_images/Advanced-Features_img17.jpeg)
+
+
+
+
+
+_Figure_ _108_: ConnectionPoint in Specified X & Y Offset
 
 #### Reject Connections
 
@@ -684,7 +682,7 @@ The following code sample illustrates how to reject the incoming and outgoing co
 
 
 
-[C#]
+{% highlight c# %}
 
 ConnectionPoint port = new ConnectionPoint();
 
@@ -696,9 +694,9 @@ port.ConnectionPointType = ConnectionPointType.Reject;
 
 rect1.Ports.Add(port);  
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim port As New ConnectionPoint()
 
@@ -710,17 +708,17 @@ port.ConnectionPointType = ConnectionPointType.Reject
 
 rect1.Ports.Add(port)
 
+{% endhighlight %}
+
+
+
+![](Advanced-Features_images/Advanced-Features_img18.png)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img18.png)' | markdownify }}
-{:.image }
 
-
-
-
-_Figure_ _109_: Rejected Connection_
+_Figure_ _109_: Rejected Connection
 
 ## Undo / Redo
 
@@ -758,7 +756,7 @@ Programmatically, it is implemented as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -770,9 +768,9 @@ this.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action");
 
 this.diagram1.Model.HistoryManager.EndAtomicAction();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -784,19 +782,21 @@ Me.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action")
 
 Me.diagram1.Model.HistoryManager.EndAtomicAction()
 
+{% endhighlight %}
+
 ## Layers
 
 Layers are transparent sheets that can be added to the model and the objects are added to it. Layers allow to categorically arrange a set of nodes onto the diagram.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img19.png)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img19.png)
 
 
 
 
-_Figure_ _110_: Model Layers_
+
+_Figure_ _110_: Model Layers
 
 Sample Layers
 
@@ -810,7 +810,7 @@ Programmatically layers can be implemented as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -866,9 +866,9 @@ bc.Layers.Add(layer3);
 
 sp.Layers.Add(layer3);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -922,15 +922,15 @@ bc.Layers.Add(layer3)
 
 sp.Layers.Add(layer3)
 
+{% endhighlight %}
+
+![](Advanced-Features_images/Advanced-Features_img20.jpeg)
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img20.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _111_: Diagram with Three Layers_
+_Figure_ _111_: Diagram with Three Layers
 
 
 
@@ -940,7 +940,7 @@ Layers can be added to the model through LayersCollectionEditor, which can be op
 
 
 
-_Table_ _49_: Layers_
+_Table_ _49_: Layers
 
 <table>
 <tr>
@@ -962,7 +962,7 @@ Indicates whether the objects on the layer should be visible.</td></tr>
 </table>
 
 
-Adding Objects to a Layer
+### Adding Objects to a Layer
 
 To add objects to a layer, that layer must be active. If an object is added to the model, it will be automatically added to that active layer. The layer can be made active only on setting the Enabled property of that layer. 
 
@@ -972,13 +972,13 @@ To add an object only to a single layer, make sure that only a single layer is e
 
 
 
-Object Visibility 
+### Object Visibility 
 
 The visibility of the layer can be handled to control the visibility of all the objects on that layer.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -992,9 +992,9 @@ layer0.Visible = true;
 
 layer1.Visible = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1008,13 +1008,15 @@ layer0.Visible = True
 
 layer1.Visible = True
 
+{% endhighlight %}
+
 ## Rulers
 
 Rulers can be enabled by setting the ShowRulers property for the diagram control. The rulers will automatically inherit the MeasurementUnit set for the diagram model and get converted accordingly.
 
 The height of the ruler can be set through RulersHeight property.
 
-_Table_ _50_: RulersHeight_
+_Table_ _50_: RulersHeight
 
 <table>
 <tr>
@@ -1036,7 +1038,7 @@ Programmatically the ruler properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1044,9 +1046,9 @@ this.diagram1.ShowRulers = true;
 
 this.diagram1.RulersHeight = 25;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1054,19 +1056,19 @@ Me.diagram1.ShowRulers = True
 
 Me.diagram1.RulersHeight = 25
 
-
+{% endhighlight %}
 
 Sample diagram is as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img21.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img21.jpeg)
 
 
 
 
-_Figure_ _112_: Diagram with Rulers_
+
+_Figure_ _112_: Diagram with Rulers
 
 
 
@@ -1076,7 +1078,7 @@ Horizontal and vertical rulers can be displayed by setting the ShowRulers proper
 
 
 
-_Table_ _51_: Diagram With Rulers_
+_Table_ _51_: Diagram With Rulers
 
 <table>
 <tr>
@@ -1112,7 +1114,7 @@ Programmatically the properties can be set as follows for vertical lines.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1142,9 +1144,9 @@ this.diagram1.VerticalRuler.TextStyle.Underline = true;
 
 this.diagram1.VerticalRuler.TextStyle.Unit = MeasureUnits.Point;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1174,19 +1176,19 @@ Me.diagram1.VerticalRuler.TextStyle.Underline = True
 
 Me.diagram1.VerticalRuler.TextStyle.Unit = MeasureUnits.Point
 
-
+{% endhighlight %}
 
 Sample diagram is as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img22.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img22.jpeg)
 
 
 
 
-_Figure_ _113_: Vertical ruler Property Settings_
+
+_Figure_ _113_: Vertical ruler Property Settings
 
 
 
@@ -1194,7 +1196,7 @@ These properties can be set separately for the horizontal ruler by using Horizon
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1225,8 +1227,9 @@ this.diagram1.HorizontalRuler.TextStyle.Underline = true;
 this.diagram1.HorizontalRuler.TextStyle.Unit = MeasureUnits.Point;
 
 
+{% endhighlight %}
 
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1256,14 +1259,14 @@ Me.diagram1.HorizontalRuler.TextStyle.Underline = True
 
 Me.diagram1.HorizontalRuler.TextStyle.Unit = MeasureUnits.Point
 
-
+{% endhighlight %}
 
 Sample diagram is as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img23.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img23.jpeg)
+
 
 
 ## Grouping
@@ -1276,7 +1279,7 @@ There are two ways available to add a Group in diagram control:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1328,13 +1331,13 @@ grp.AppendChild(nodeRect1);
 
 this.DiagramWebControl1.Model.AppendChild(grp);
 
-
+{% endhighlight %}
 
 2. Diagram control support two direct methods for Grouping and UnGrouping as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1349,8 +1352,8 @@ How to access the child nodes in a Group, and how to delete / remove the node?
 The first step is to check whether the node is a Group.
 
 
-
-[C#]
+{% endhighlight %}
+{% highlight c# %}
 
 
 
@@ -1362,13 +1365,13 @@ if (node is Group)
 
 }
 
-
+{% endhighlight %}
 
 If the node is a Group, then following are some special methods.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1384,13 +1387,13 @@ public bool RemoveChild(Node nodeToRemove);
 
 public void InsertChild(Node child, int childIndex);
 
-
+{% endhighlight %}
 
 Also, Group has an int ChildCount property, which returns the child count in a Group. To delete the first element in a Group, use the below code.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1420,25 +1423,25 @@ foreach (Node node in Diagram1.Model.Nodes)
 
 }
 
+{% endhighlight %}
 
+![](Advanced-Features_images/Advanced-Features_img24.jpeg)
 
-{{ '![](Advanced-Features_images/Advanced-Features_img24.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Positioning nodes in Group
 
-Positioning support
+#### Positioning support
 
 Diagram Group node supports absolute and relative positioning.
 
-Positioning Group node’s Child
+#### Positioning Group node’s Child
 
 Group Node has an enum property called GroupNodePosition of type GroupNodePositions to position its child nodes. GroupNodePositions has two values Absolute and Relative. The Absolute will place the nodes inside a group based on their actual pinpoint whereas the Relative will place the nodes based on their default pinpoint. Default value is _Relative_.
 
 
 
-[C#]
+{% highlight c# %}
 
 //Group
 
@@ -1448,9 +1451,9 @@ Group group = new Group();
 
 group.GroupNodePosition = GroupNodePositions.Absolute;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 'Group
 
@@ -1460,21 +1463,21 @@ Dim group As Group = New Group ()
 
 group.GroupNodePosition = GroupNodePositions.Absolute
 
+{% endhighlight %}
 
-
-{{ '![C:/Users/pandimurugana/Desktop/Image.PNG](Advanced-Features_images/Advanced-Features_img25.png)' | markdownify }}
-{:.image }
-
-
-
-
-{{ '![C:/Users/pandimurugana/Desktop/Image1.PNG](Advanced-Features_images/Advanced-Features_img26.png)' | markdownify }}
-{:.image }
+![C:/Users/pandimurugana/Desktop/Image.PNG](Advanced-Features_images/Advanced-Features_img25.png)
 
 
 
 
-_Table_ _52_: Properties_
+
+![C:/Users/pandimurugana/Desktop/Image1.PNG](Advanced-Features_images/Advanced-Features_img26.png)
+
+
+
+
+
+_Table_ _52_: Properties
 
 <table>
 <tr>
@@ -1494,6 +1497,7 @@ Relative</th><th>
 Absolute,Relative</th><th>
 GroupNodePosition</th></tr>
 </table>
+
 ## Scrolling, Zooming And Panning Support
 
 The interactive features like scrolling, zooming and panning support are discussed in this section:
@@ -1502,7 +1506,7 @@ The interactive features like scrolling, zooming and panning support are discuss
 
 The horizontal and vertical scrollbars can be displayed or hidden by handling the HScroll and VScroll properties.
 
-_Table_ _53_: Scroll Support_
+_Table_ _53_: Scroll Support
 
 <table>
 <tr>
@@ -1524,7 +1528,7 @@ Programmatically, these properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1533,8 +1537,9 @@ this.diagram1.HScroll = true;
 this.diagram1.VScroll = true;
 
 
+{% endhighlight %}
 
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1542,19 +1547,19 @@ Me.diagram1.HScroll = True
 
 Me.diagram1.VScroll = True
 
-
+{% endhighlight %}
 
 Sample diagram is as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img27.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img27.jpeg)
 
 
 
 
-_Figure_ _118_: Diagram With Scroll Settings_
+
+_Figure_ _118_: Diagram With Scroll Settings
 
 ScrollGranularity determines the level of granularity for scrolling. The value of this property must be greater than 0. This value is multiplied by virtual size of the view in order to get the scroll range. For example, if the virtual size of the view is 100x50 and this property is set to 0.5f, then the horizontal scroll range is set to 0.50 and the vertical scroll range is set to 0.25.
 
@@ -1562,7 +1567,7 @@ SmoothMouseWheelScrolling specifies whether the control should perform one scrol
 
 
 
-_Table_ _54_: Properties_
+_Table_ _54_: Properties
 
 <table>
 <tr>
@@ -1592,7 +1597,7 @@ Programmatically these properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1604,9 +1609,9 @@ this.diagram1.SmoothMouseWheelScrolling = false;
 
 this.diagram1.HScrollBar.SmallChange = 200;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1618,49 +1623,49 @@ Me.diagram1.SmoothMouseWheelScrolling = False
 
 Me.diagram1.HScrollBar.SmallChange = 200
 
+{% endhighlight %}
+
+![](Advanced-Features_images/Advanced-Features_img28.jpeg)
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img28.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Scrollable Area
+#### Scrollable Area
 
 Diagram has ScrollVirtualBounds property, which determines the bounds of the scrollable area. This sets the Diagram control's virtual space i.e, gray area around the control. Sometimes, we may need to remove that area and use Diagram control area alone.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
  this.diagram1.ScrollVirtualBounds = new RectangleF(0, 0, 0, 0);
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
 Me.diagram1.ScrollVirtualBounds = New RectangleF(0, 0, 0, 0)
 
+{% endhighlight %}
+
+![](Advanced-Features_images/Advanced-Features_img29.jpeg)
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img29.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Scroll Behavior
+#### Scroll Behavior
 
 Scrolling behavior can be controlled by setting the AccelerateScrolling property.
 
 
 
-_Table_ _55_: Scroll Behavior_
+_Table_ _55_: Scroll Behavior
 
 <table>
 <tr>
@@ -1682,7 +1687,7 @@ Here, setting the AccelerateScrolling to Fast, will increase the scroll speed wh
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1690,9 +1695,9 @@ this.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrolling
 
 this.diagram1.AllowIncreaseSmallChange = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1700,13 +1705,13 @@ Me.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrollingBe
 
 Me.diagram1.AllowIncreaseSmallChange = True
 
+{% endhighlight %}
 
-
-ThumbTrack
+#### ThumbTrack
 
 The HorizontalThumbTrack and VerticalThumbTrack properties allows to handle whether the scroll bar thumb should be used for scrolling.
 
-_Table_ _56_: ThumbTrack_
+_Table_ _56_: ThumbTrack
 
 <table>
 <tr>
@@ -1728,7 +1733,7 @@ Programmatically, these properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1736,9 +1741,9 @@ this.diagram1.HorizontalThumbTrack = true;
 
 this.diagram1.VerticalThumbTrack = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1746,9 +1751,9 @@ Me.diagram1.HorizontalThumbTrack = True
 
 Me.diagram1.VerticalThumbTrack = True
 
+{% endhighlight %}
 
-
-ScrollTips
+#### ScrollTips
 
 ScrollTips can be enabled or disabled for horizontal and vertical scroll bars individually by setting the HorizontalScrollTips and VerticalScrollTips properties.
 
@@ -1756,7 +1761,7 @@ The format in which the scrolltip should be displayed can be specified using the
 
 
 
-_Table_ _57_: ScrollTips_
+_Table_ _57_: ScrollTips
 
 <table>
 <tr>
@@ -1782,7 +1787,7 @@ Programmatically these properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1792,9 +1797,9 @@ this.diagram1.VerticalScrollTips = true;
 
 this.diagram1.ScrollTipFormat = "Offset{0}";
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1804,13 +1809,13 @@ Me.diagram1.VerticalScrollTips = True
 
 Me.diagram1.ScrollTipFormat = "Offset{0}"
 
+{% endhighlight %}
 
-
-Using Splitter control
+#### Using Splitter control
 
 When splitter control is used and one or more diagram controls are added, setting the FillSplitterPane docks the diagram control inside the splitter control and fills the entire space.
 
-_Table_ _58_: Splitter_
+_Table_ _58_: Splitter
 
 <table>
 <tr>
@@ -1828,29 +1833,29 @@ Programmatically these properties can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.diagram1.FillSplitterPane = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
 Me.diagram1.FillSplitterPane = True
 
+{% endhighlight %}
+
+![](Advanced-Features_images/Advanced-Features_img30.png)
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img30.png)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _121_: Scroll With Splitter Control_
+_Figure_ _121_: Scroll With Splitter Control
 
 ### Zoom Support
 
@@ -1860,11 +1865,11 @@ One of the interactive features of Essential Diagram is its zooming capabilities
 * Zoom to the top left of the diagram.
 * Zoom to the pointer position using Ctrl and the mouse wheel.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 Users can zoom in and out of diagram content based on their requirements.
 
-_Table_ _59_: Properties_
+_Table_ _59_: Properties
 
 <table>
 <tr>
@@ -1885,7 +1890,7 @@ float</td></tr>
 </table>
 
 
-_Table_ _60_: Methods_
+_Table_ _60_: Methods
 
 <table>
 <tr>
@@ -1919,6 +1924,7 @@ Zoom the document to its actual size.</th><th>
 NA</th><th>
 void</th></tr>
 </table>
+
 #### ZoomIn, ZoomOut, ZoomToActual, ZoomToSelection
 
 The diagram document can be zoomed in, zoomed out, zoomed to its original size, and zoomed to a selected area based on the ZoomIncrement. You can use the following methods to zoom in the diagram document.
@@ -1932,7 +1938,7 @@ The following code samples explain how to use the zoom methods to zoom in the di
 
 
 
-[C#]
+{% highlight c# %}
 
 //Sets the zoom increment value.
 
@@ -1954,9 +1960,9 @@ this.diagram1.View.ZoomToActual();
 
 this.diagram1.View.ZoomToSelection(new RectangleF(100,100,100,100));   
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ‘Sets the zoom increment value.
 
@@ -1978,30 +1984,32 @@ Me.diagram1.View.ZoomToActual()
 
 Me.diagram1.View.ZoomToSelection(New RectangleF(100,100,100,100))
 
+{% endhighlight %}
+
 #### Zooming to the Center of the Diagram
 
 The diagram document can be zoomed to the center of the current viewport by setting the ZoomType as Center. The default value of ZoomType is Center. 
 
 The following code sample demonstrates how to use the zoom to center feature in a diagram:
 
-[C#]
+{% highlight c# %}
 
 // Sets the ZoomType as ‘center’. 
 
 this.diagram1.View.ZoomType = ZoomType.Center;  
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 'Sets the ZoomType as ‘center’. 
 
 Me.diagram1.View.ZoomType = ZoomType.Center
 
+{% endhighlight %}
 
+![C:/Users/amsathm/Desktop/diagram_centerzoom.png](Advanced-Features_images/Advanced-Features_img31.png)
 
-{{ '![C:/Users/amsathm/Desktop/diagram_centerzoom.png](Advanced-Features_images/Advanced-Features_img31.png)' | markdownify }}
-{:.image }
 
 
 #### Zooming to the Top-Left of the Diagram
@@ -2012,24 +2020,24 @@ The following code shows how to use the zoom to top-left feature:
 
 
 
-[C#]
+{% highlight c# %}
 
 // Sets the ZoomType as TopLeft. 
 
 this.diagram1.View.ZoomType = ZoomType.TopLeft;  
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ' Sets the ZoomType as TopLeft. 
 
 Me.diagram1.View.ZoomType = ZoomType.TopLeft
 
+{% endhighlight %}
 
+![C:/Users/amsathm/Desktop/diagram_leftzoom.png](Advanced-Features_images/Advanced-Features_img32.png)
 
-{{ '![C:/Users/amsathm/Desktop/diagram_leftzoom.png](Advanced-Features_images/Advanced-Features_img32.png)' | markdownify }}
-{:.image }
 
 
 #### Zooming to the Pointer Position
@@ -2038,15 +2046,15 @@ Essential Diagram supports zooming the diagram document to the pointer position 
 
 
 
-{{ '![C:/Users/amsathm/Desktop/diagram_mousezoom.png](Advanced-Features_images/Advanced-Features_img33.png)' | markdownify }}
-{:.image }
+![C:/Users/amsathm/Desktop/diagram_mousezoom.png](Advanced-Features_images/Advanced-Features_img33.png)
+
 
 
 #### ZoomTool
 
 Essential Diagram supports a UI tool called ZoomTool which is used to zoom and select the diagram document interactively. Users can use the ZoomTool’s MaximumMagnification and MinimumMagnification properties to restrict the document’s maximum or minimum zoom levels and use the ZoomIncrement property to specify the amount to zoom each time the diagram is zoomed in or out.
 
-_Table_ _61_: Zoom Tool Properties_
+_Table_ _61_: Zoom Tool Properties
 
 <table>
 <tr>
@@ -2076,7 +2084,7 @@ The following code demonstrates how to activate the zoom tool:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2090,9 +2098,9 @@ zoomTool.MinimumMagnification = 50;
 
 zoomTool.ZoomIncrement = 10;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2107,17 +2115,17 @@ zoomTool.MinimumMagnification = 50
 zoomTool.ZoomIncrement = 10
 
 
+{% endhighlight %}
+
+
+![C:/Users/amsathm/Desktop/IMG_05122012_062203.png](Advanced-Features_images/Advanced-Features_img34.png)
 
 
 
-{{ '![C:/Users/amsathm/Desktop/IMG_05122012_062203.png](Advanced-Features_images/Advanced-Features_img34.png)' | markdownify }}
-{:.image }
 
 
+![C:/Users/amsathm/Desktop/IMG_05122012_062341.png](Advanced-Features_images/Advanced-Features_img35.png)
 
-
-{{ '![C:/Users/amsathm/Desktop/IMG_05122012_062341.png](Advanced-Features_images/Advanced-Features_img35.png)' | markdownify }}
-{:.image }
 
 
 ### Pan Support
@@ -2128,33 +2136,33 @@ Programmatically, it is implemented as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.diagram1.Controller.ActivateTool("PanTool");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
 Me.diagram1.Controller.ActivateTool("PanTool")
 
-
+{% endhighlight %}
 
 Sample diagram is as follows.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img36.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img36.jpeg)
 
 
 
 
-_Figure_ _127_: Diagram With Pan Tool_
+
+_Figure_ _127_: Diagram With Pan Tool
 
 ## Event Handlers
 
@@ -2170,7 +2178,7 @@ This topic discusses the events that are fired while adding or removing the node
 
 
 
-_Table_ _62_: Node Collection Events_
+_Table_ _62_: Node Collection Events
 
 <table>
 <tr>
@@ -2192,7 +2200,7 @@ EventArgs members can be accessed using the following members.
 
 
 
-_Table_ _63_: Properties_
+_Table_ _63_: Properties
 
 <table>
 <tr>
@@ -2230,7 +2238,7 @@ Inside the NodeCollectionChanged event handler, user can identify whether a node
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2272,9 +2280,9 @@ private void Form1_NodeCollectionChanging(CollectionExEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2312,20 +2320,20 @@ Private Sub Form1_NodeCollectionChanging(ByVal e As CollectionExEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img37.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img37.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img38.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img38.jpeg)
+
 
 
 #### Tool Events
@@ -2336,7 +2344,7 @@ The below table shows all the Tool Events.
 
 
 
-_Table_ _64_: Tool Events_
+_Table_ _64_: Tool Events
 
 <table>
 <tr>
@@ -2358,7 +2366,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _65_: Members_
+_Table_ _65_: Members
 
 <table>
 <tr>
@@ -2374,7 +2382,7 @@ In the below code sample, when a tool is activated or deactivated the correspond
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2416,9 +2424,9 @@ private void DiagramForm_ToolActivated(ToolEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2454,20 +2462,20 @@ Private Sub DiagramForm_ToolActivated(ByVal e As ToolEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img39.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img39.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img40.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img40.jpeg)
+
 
 
 #### Origin Events
@@ -2478,7 +2486,7 @@ Origin events are as follows,
 
 
 
-_Table_ _66_: Origin Events_
+_Table_ _66_: Origin Events
 
 <table>
 <tr>
@@ -2496,7 +2504,7 @@ Data can be retrieved or set by using the following members.
 
 
 
-_Table_ _67_: Members_
+_Table_ _67_: Members
 
 <table>
 <tr>
@@ -2522,7 +2530,7 @@ In the following code sample, when the OriginChanged event is handled, the vario
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2604,9 +2612,9 @@ private void Form1_OriginChanged(ViewOriginEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2684,29 +2692,29 @@ Private Sub Form1_OriginChanged(ByVal e As ViewOriginEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img41.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img41.jpeg)
 
 
 
 
-_Figure_ _132_: Origin Initial Stage_
+
+_Figure_ _132_: Origin Initial Stage
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img42.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img42.jpeg)
 
 
 
 
-_Figure_ _133_: Origin Changed Stage_
+
+_Figure_ _133_: Origin Changed Stage
 
 #### Magnification Event 
 
@@ -2714,7 +2722,7 @@ When the control is zoomed in or out, the magnification events will be fired dis
 
 Magnification Events are as follows,
 
-_Table_ _68_: Magnification Events_
+_Table_ _68_: Magnification Events
 
 <table>
 <tr>
@@ -2732,7 +2740,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _69_: Member properties_
+_Table_ _69_: Member properties
 
 <table>
 <tr>
@@ -2750,7 +2758,7 @@ Returns the old magnification value before the event occurred.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2774,9 +2782,9 @@ private void Form1_MagnificationChanged(ViewMagnificationEventArgs evtArgs)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2787,7 +2795,6 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 
 
-
 <EventHandlerPriorityAttribute(True)> _
 
 Private Sub Form1_MagnificationChanged(ByVal evtArgs As ViewMagnificationEventArgs)
@@ -2796,20 +2803,20 @@ Private Sub Form1_MagnificationChanged(ByVal evtArgs As ViewMagnificationEventAr
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img43.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img43.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img44.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img44.jpeg)
+
 
 
 #### Editor Events
@@ -2818,7 +2825,7 @@ Diagram control provides support to notify users when the text in the Text Edito
 
 
 
-_Table_ _70_: Editor Events_
+_Table_ _70_: Editor Events
 
 <table>
 <tr>
@@ -2840,7 +2847,7 @@ The following code example illustrates how the TextChanged and LabelTextChanged 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2874,9 +2881,9 @@ void InPlaceEditor_LabelTextChanged(object sender, EventArgs e)
 
 }  
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2904,7 +2911,7 @@ Private Sub InPlaceEditor_LabelTextChanged(sender As Object, e As EventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 ### Model Events
 
@@ -2914,7 +2921,7 @@ DocumentEventSink class contains the events specific to the document. The variou
 
 Vertex Events are as follows,
 
-_Table_ _71_: Vertex Events_
+_Table_ _71_: Vertex Events
 
 <table>
 <tr>
@@ -2936,7 +2943,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _72_: Description_
+_Table_ _72_: Description
 
 <table>
 <tr>
@@ -2974,7 +2981,7 @@ Programmatically the events are written as follows,
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3029,8 +3036,8 @@ private void Form1_VertexChanged(VertexChangedEventArgs vertexChange)
 }
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -3078,20 +3085,20 @@ Private Sub Form1_VertexChanged(ByVal vertexChange As VertexChangedEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img45.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img45.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img46.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img46.jpeg)
+
 
 
 #### PinPoint Events
@@ -3100,7 +3107,7 @@ Sample diagrams are as follows,
 
 
 
-_Table_ _73_: Pinpoint Events_
+_Table_ _73_: Pinpoint Events
 
 <table>
 <tr>
@@ -3130,7 +3137,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _74_: Members_
+_Table_ _74_: Members
 
 <table>
 <tr>
@@ -3156,7 +3163,7 @@ Programmatically the events are written as follows,
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3232,9 +3239,9 @@ void Form1_PinOffsetChanged(PinOffsetChangedEventArgs evtArgs)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3300,20 +3307,20 @@ Private Sub Form1_PinOffsetChanged(ByVal evtArgs As PinOffsetChangedEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img47.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img47.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img48.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img48.jpeg)
+
 
 
 #### Rotation Events
@@ -3324,7 +3331,7 @@ The below table discusses the available rotation events with descriptions.
 
 
 
-_Table_ _75_: Rotation Events_
+_Table_ _75_: Rotation Events
 
 <table>
 <tr>
@@ -3354,7 +3361,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _76_: Members_
+_Table_ _76_: Members
 
 <table>
 <tr>
@@ -3372,7 +3379,7 @@ Returns the angle by which the node was rotated.</td></tr>
 </table>
 
 
-_Table_ _77_: Flip EventArgs Member_
+_Table_ _77_: Flip EventArgs Member
 
 <table>
 <tr>
@@ -3402,7 +3409,7 @@ Programmatically, the events are written as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3462,9 +3469,9 @@ void Form1_FlipChanged(FlipChangedEventArgs evtArgs)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3516,32 +3523,32 @@ Private Sub Form1_FlipChanged(ByVal evtArgs As FlipChangedEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows:
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img49.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img49.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img50.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img50.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img51.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img51.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img52.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img52.jpeg)
+
 
 
 #### Z-Order Events
@@ -3550,7 +3557,7 @@ When the node order is changed from front-to-back or back-to-front, the Z-Order 
 
 
 
-_Table_ _78_: ZOrder events_
+_Table_ _78_: ZOrder events
 
 <table>
 <tr>
@@ -3572,7 +3579,7 @@ Data can be retrieved / set by using the following members.
 
 
 
-_Table_ _79_: Members_
+_Table_ _79_: Members
 
 <table>
 <tr>
@@ -3602,7 +3609,7 @@ Programmatically, the events are written as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3637,8 +3644,8 @@ void Form1_ZOrderChanged(ZOrderChangedEventArgs evtArgs)
 }
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -3668,20 +3675,20 @@ Private Sub Form1_ZOrderChanged(ByVal evtArgs As ZOrderChangedEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagram are as follows:
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img53.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img53.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img54.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img54.jpeg)
+
 
 
 #### Connections And Ports Events
@@ -3692,7 +3699,7 @@ The below table explains the Connections and Ports events.
 
 
 
-_Table_ _80_: Connections and Ports Events_
+_Table_ _80_: Connections and Ports Events
 
 <table>
 <tr>
@@ -3714,7 +3721,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _81_: Members_
+_Table_ _81_: Members
 
 <table>
 <tr>
@@ -3756,7 +3763,7 @@ Programmatically, the Connection Event is handled as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3786,9 +3793,9 @@ void Form1_ConnectionsChanged(CollectionExEventArgs evtArgs)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3812,14 +3819,14 @@ Private Sub Form1_ConnectionsChanged(ByVal evtArgs As CollectionExEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagram is as follows.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img55.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img55.jpeg)
+
 
 
 
@@ -3830,7 +3837,7 @@ Programmatically, the events are handled as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3854,9 +3861,9 @@ void Form1_PortsChanged(CollectionExEventArgs evtArgs)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3876,14 +3883,14 @@ Private Sub Form1_PortsChanged(ByVal evtArgs As CollectionExEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagram is as follows.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img56.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img56.jpeg)
+
 
 
 #### Property Events
@@ -3894,7 +3901,7 @@ Property Events are as follows.
 
 
 
-_Table_ _82_: Property Events_
+_Table_ _82_: Property Events
 
 <table>
 <tr>
@@ -3916,7 +3923,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _83_: Members_
+_Table_ _83_: Members
 
 <table>
 <tr>
@@ -3942,7 +3949,7 @@ Returns name of the property whose value is changed.</td></tr>
 </table>
 
 
-_Table_ _84_: Members_
+_Table_ _84_: Members
 
 <table>
 <tr>
@@ -3964,7 +3971,7 @@ Programmatically the events are written as follows,
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3996,9 +4003,9 @@ private void Form1_PropertyChanging(Syncfusion.Windows.Forms.Diagram.PropertyCha
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -4022,20 +4029,20 @@ Private Sub Form1_PropertyChanging(ByVal eprop As Syncfusion.Windows.Forms.Diagr
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows.
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img57.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img57.jpeg)
 
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img58.jpeg)' | markdownify }}
-{:.image }
+
+![](Advanced-Features_images/Advanced-Features_img58.jpeg)
+
 
 
 #### Labels And Layers Events
@@ -4046,7 +4053,7 @@ The following table shows the label events:
 
 
 
-_Table_ _85_: Labels And Layers Events_
+_Table_ _85_: Labels And Layers Events
 
 <table>
 <tr>
@@ -4106,7 +4113,7 @@ Programmatically, the events are written as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4128,9 +4135,9 @@ void Form1_LabelsChanged(CollectionExEventArgs evtArgs)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -4148,16 +4155,14 @@ Private Sub Form1_LabelsChanged(ByVal evtArgs As CollectionExEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Layers Events
 
 Programmatically, the events are written as follows:
 
 
-
-[C#]
-
+{% highlight c# %}
 
 
 public void Form1_Load(object sender, EventArgs e)
@@ -4187,8 +4192,8 @@ void Form1_LayersChanged(CollectionExEventArgs evtArgs)
 }
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -4214,14 +4219,14 @@ Private Sub Form1_LayersChanged(ByVal evtArgs As CollectionExEventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Sample diagram is as follows,
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img59.jpeg)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img59.jpeg)
+
 
 
 ## Built-In Context Menu
@@ -4262,7 +4267,7 @@ The following code illustrates how to enable the default context menu:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4271,8 +4276,8 @@ The following code illustrates how to enable the default context menu:
             diagram1.DefaultContextMenuEnabled = true;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 'show default context menu
 
@@ -4280,15 +4285,15 @@ The following code illustrates how to enable the default context menu:
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img60.png)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img60.png)
+
 
 
 The following code illustrates how to disable the default context menu:
 
 
-
-[C#]
+{% endhighlight %}
+{% highlight c# %}
 
 
 
@@ -4297,8 +4302,8 @@ The following code illustrates how to disable the default context menu:
             diagram1.DefaultContextMenuEnabled = false;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -4306,7 +4311,7 @@ The following code illustrates how to disable the default context menu:
 
             diagram1.DefaultContextMenuEnabled = False
 
-
+{% endhighlight %}
 
 Sample Link
 
@@ -4320,7 +4325,7 @@ To view a sample:
 
 Essential Diagram enables you to draw the selected node by clicking the Diagram page instead of dragging from the Symbol Palette. 
 
-_Table_ _87_: Property Table_
+_Table_ _87_: Property Table
 
 <table>
 <tr>
@@ -4346,7 +4351,7 @@ You can enable drawing shapes by clicking the diagram page using the _Diagram_ p
 
 
 
-[C#]
+{% highlight c# %}
 
 //Palette group view
 
@@ -4359,8 +4364,8 @@ paletteGroupBar1.Diagram = diagram1;
 
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -4372,17 +4377,12 @@ paletteGroupView1.Diagram = diagram1;
 
 paletteGroupBar1.Diagram = diagram1;
 
+{% endhighlight %}
+
+![](Advanced-Features_images/Advanced-Features_img61.png)
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img61.png)' | markdownify }}
-{:.image }
-
-
-
-
-> {{ '![](Advanced-Features_images/Advanced-Features_img62.jpeg)' | markdownify }}
-{:.image }
-_Note: Click the Diagram page to add the selected node. Click and drag to get the required size._ 
+> Note: Click the Diagram page to add the selected node. Click and drag to get the required size._ 
 
 Sample Link
 
@@ -4398,11 +4398,11 @@ To view a sample:
 
 Essential Diagram for Windows Forms provides preview support for Symbol Palette. When you drag an item from Symbol Palette to Diagram View, Preview of the dragged item will be displayed. You can enable or disable the preview support. 
 
-Use Case Scenario
+### Use Case Scenario
 
 This feature displays a preview of the item you drag from Symbol Palette, thus enables you to identify the item you are dragging from the symbol palette to Diagram view.
 
-_Table_ _88_: Property Table_
+_Table_ _88_: Property Table
 
 <table>
 <tr>
@@ -4429,7 +4429,7 @@ NA</td></tr>
 </table>
 
 
-Enabling Preview Support
+### Enabling Preview Support
 
 To enable preview for the dragged item from Symbol Palette, set the _DragNodeCueEnabled_ property of _PalatteGroupBar/PaletteGroupView_ to true. To disable preview set this to false. By default this is set to true.  
 
@@ -4437,7 +4437,7 @@ Following code example illustrates how to enable preview support:
 
 
 
-[C#]
+{% highlight c# %}
 
       //enable dragged node cue
 
@@ -4458,8 +4458,8 @@ Following code example illustrates how to enable preview support:
             paletteGroupView1.ShowDragNodeCue = true;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
   //enable dragged node cue
 
@@ -4477,9 +4477,9 @@ Following code example illustrates how to enable preview support:
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img63.png)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img63.png)
 
+{% endhighlight %}
 
 
 
@@ -4487,7 +4487,7 @@ The following code illustrates how to disable preview support:
 
 
 
-[C#]
+{% highlight c# %}
 
       //hide dragged node cue
 
@@ -4496,8 +4496,8 @@ The following code illustrates how to disable preview support:
             paletteGroupView1.ShowDragNodeCue = false;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
               //hide dragged node cue
 
@@ -4505,7 +4505,7 @@ The following code illustrates how to disable preview support:
 
       paletteGroupView1.ShowDragNodeCue = False;
 
-
+{% endhighlight %}
 
 Sample Link
 
@@ -4519,7 +4519,7 @@ To view a sample:
 
 Essential Diagram for Windows Forms provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles provide better visual effects for your diagram and increase the performance speed of the diagram while dragging, rotating, or resizing nodes.
 
-_Table_ _89_: Properties Table_
+_Table_ _89_: Properties Table
 
 <table>
 <tr>
@@ -4549,13 +4549,13 @@ RenderingHelperStyle</td></tr>
 </table>
 
 
-Applying Styles to Rendering Helper
+### Applying Styles to Rendering Helper
 
 The following code example illustrates how to apply styles to the rendering helper while resizing, dragging, and rotating nodes.
 
 
 
-[C#]
+{% highlight c# %}
 
   //Specify dragging, resizing, and rotation styles to the rendering helper
 
@@ -4566,10 +4566,10 @@ The following code example illustrates how to apply styles to the rendering help
             diagram1.Controller.RotatingStyle = RenderingHelperStyle.DashedOutline;
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
   'Specify dragging, resizing, and rotation styles to the rendering helper
 
@@ -4579,12 +4579,12 @@ diagram1.Controller.ResizingStyle = RenderingHelperStyle.GhostCopy
 
 diagram1.Controller.RotatingStyle = RenderingHelperStyle.DashedOutline
 
+{% endhighlight %}
 
 
 
+![](Advanced-Features_images/Advanced-Features_img64.png)
 
-{{ '![](Advanced-Features_images/Advanced-Features_img64.png)' | markdownify }}
-{:.image }
 
 
 ## Guides
@@ -4593,13 +4593,13 @@ Guides for the Diagram control are viewable, nonprinting guidelines used to alig
 
 You can also change the visual style of Guides by using its LineStyle property.
 
-Properties
+### Properties
 
 The following table describes the various properties associated with Diagram Guides.
 
 
 
-_Table_ _90_: Guides Properties_
+_Table_ _90_: Guides Properties
 
 <table>
 <tr>
@@ -4633,7 +4633,7 @@ The following code example illustrates how to turn on Guides for Diagram Nodes w
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4659,9 +4659,9 @@ diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51);
 
 diagram1.Controller.Guides.Margin = 50;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -4689,23 +4689,23 @@ diagram1.Controller.Guides.Margin = 50
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img65.png)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img65.png)
 
 
+{% endhighlight %}
 
 
 ## Touch Support
 
 Touch support for Diagram control helps to create sophisticated diagrams quickly and easily by interacting with Diagram nodes through touch gestures such as Tap, Double Tap, Long Press, Pinch, and more. These touch gestures help you perform actions such as select, label text editing, open the context menu, zoom in, and zoom out.
 
-Properties
+### Properties
 
 The following table describes the property associated with turning on/off touch support in Diagram control.
 
 
 
-_Table_ _91_: Touch support Properties_
+_Table_ _91_: Touch support Properties
 
 <table>
 <tr>
@@ -4723,7 +4723,7 @@ The following code example illustrates how to turn on touch support for Diagram 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4732,8 +4732,8 @@ The following code example illustrates how to turn on touch support for Diagram 
 diagram1.TouchMode = true;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -4741,23 +4741,23 @@ diagram1.TouchMode = true;
 
 diagram1.TouchMode = True
 
+{% endhighlight %}
 
+![](Advanced-Features_images/Advanced-Features_img66.png)
 
-{{ '![](Advanced-Features_images/Advanced-Features_img66.png)' | markdownify }}
-{:.image }
 
 
 _Figure_ _156_: Touch Support in Diagram Control_
 
 
 
-{{ '![](Advanced-Features_images/Advanced-Features_img67.png)' | markdownify }}
-{:.image }
+![](Advanced-Features_images/Advanced-Features_img67.png)
 
 
 
 
-_Figure_ _157_: Touch Support in Diagram Control_
+
+_Figure_ _157_: Touch Support in Diagram Control
 
 ## Dynamic Properties
 
@@ -4773,7 +4773,7 @@ It is used to store additional data to the nodes or connectors as needed.
 
 
 
-_Table_ _92_: Properties_
+_Table_ _92_: Properties
 
 <table>
 <tr>
@@ -4793,7 +4793,7 @@ The following code shows how to add additional data to a node by using the Prope
 
 
 
-[C#]
+{% highlight c# %}
 
 node.PropertyBag.Add("Name", emply.EmployeeName);
 
@@ -4801,9 +4801,9 @@ node.PropertyBag.Add("ID", emply.EmployeeID);
 
 node.PropertyBag.Add("Designation", emply.Designation);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 node.PropertyBag.Add("Name", emply.EmployeeName)
 
@@ -4811,11 +4811,12 @@ node.PropertyBag.Add("ID", emply.EmployeeID)
 
 node.PropertyBag.Add("Designation", emply.Designation)
 
+{% endhighlight %}
 
 
-{{ '![C:/Users/amsathm/Desktop/dynamic - Copy.png](Advanced-Features_images/Advanced-Features_img68.png)' | markdownify }}
-{:.image }
+![C:/Users/amsathm/Desktop/dynamic - Copy.png](Advanced-Features_images/Advanced-Features_img68.png)
 
 
-_Figure_ _158_: Dynamic Properties in a Diagram_
+
+_Figure_ _158_: Dynamic Properties in a Diagram
 

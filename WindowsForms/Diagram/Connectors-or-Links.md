@@ -38,13 +38,13 @@ Connectors and lines have the following decorators:
 
 
 
-Connecting Two Nodes with Line Connector
+## Connecting Two Nodes with Line Connector
 
 The following code example illustrates how to create links between two nodes.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -70,9 +70,9 @@ protected void Page_Load(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -98,10 +98,10 @@ Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
+{% endhighlight %}
 
+![](Connectors-or-Links_images/Connectors-or-Links_img1.jpeg)
 
-{{ '![](Connectors-or-Links_images/Connectors-or-Links_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -110,7 +110,7 @@ You can change the appearance of the connectors using its properties through cod
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -147,8 +147,8 @@ protected void Page_Load(object sender, EventArgs e)
 }
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -182,10 +182,10 @@ Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
+{% endhighlight %}
 
+![](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg)
 
-{{ '![](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Rounded Corner
@@ -194,13 +194,13 @@ You can now change the look of connectors (Orthogonal, Org line, Polyline) by pr
 
 The EnableRoundedCorner is used to to enable rounded corner for a connector, and the CurveRadius connector property is used and set the radius for the rounded corner curve respectively.
 
-Use Case Scenario
+### Use Case Scenario
 
 This is used to change the visual style of connectors.
 
 
 
-_Table_ _27__: Rounded Corner Properties_
+_Table_ _27_: Rounded Corner Properties
 
 <table>
 <tr>
@@ -225,7 +225,7 @@ The following code illustrates how to change the look of a connector by using th
 
 
 
-[C#]
+{% highlight c# %}
 
 OrthogonalConnector orthogonal = new OrthogonalConnector(new PointF(100, 100), new PointF(300, 300));
 
@@ -239,9 +239,9 @@ orthogonal.CurveRadius = 10;
 
 diagram1.Model.AppendChild(orthogonal);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim orthogonal As New OrthogonalConnector(New PointF(100, 100), New PointF(300, 300))
 
@@ -255,19 +255,20 @@ orthogonal.CurveRadius = 10
 
 diagram1.Model.AppendChild(orthogonal)
 
+{% endhighlight %}
 
 
-{{ '![](Connectors-or-Links_images/Connectors-or-Links_img3.png)' | markdownify }}
-{:.image }
+![](Connectors-or-Links_images/Connectors-or-Links_img3.png)
 
 
-_Figure_ _70__: Connectors with Rounded Corners_
+
+_Figure_ _70_: Connectors with Rounded Corners
 
 ## Drawing Tool
 
 Diagram control now provides a drawing tool to draw the Org line connector dynamically during run time.
 
-Use Case Scenario
+### Use Case Scenario
 
 The OrgLineConnectorTool is used to draw the Org line connector dynamically.
 
@@ -275,25 +276,25 @@ The following code illustrates how to activate the Org line connector tool:
 
 
 
-[C#]
+{% highlight c# %}
 
 // Activates the Org line connector tool.
 
 diagram1.Controller.ActivateTool("OrgLineConnectorTool");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 'Activates the Org line connector tool.
 
 diagram1.Controller.ActivateTool("OrgLineConnectorTool")
 
+{% endhighlight %}
+
+![](Connectors-or-Links_images/Connectors-or-Links_img4.png)
 
 
-{{ '![](Connectors-or-Links_images/Connectors-or-Links_img4.png)' | markdownify }}
-{:.image }
 
-
-_Figure_ _71__: Org line Connector_
+_Figure_ _71_: Org line Connector
 

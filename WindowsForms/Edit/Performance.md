@@ -13,7 +13,7 @@ This section discusses the fast load mode of the Edit Control.
 
 
 
-Quick File Loading
+## Quick File Loading
 
 The Edit Control loads files extremely quick, and hence its performance is unmatched by any of our competitors or the Visual Studio.NET IDE. 
 
@@ -21,7 +21,7 @@ The ConvertOnLoad property of the Edit Control should be set to False to enable 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29,9 +29,9 @@ The ConvertOnLoad property of the Edit Control should be set to False to enable 
 
 this.editControl1.ConvertOnLoad = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -39,7 +39,7 @@ this.editControl1.ConvertOnLoad = false;
 
 Me.editControl1.ConvertOnLoad = False
 
-
+{% endhighlight %}
 
 
 

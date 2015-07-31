@@ -17,8 +17,8 @@ The following image shows the converted DICOM Image using Essential DICOM.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 
@@ -32,12 +32,12 @@ This section illustrates the step-by-step procedure to create the following plat
 
 
 
-Windows Application
+### Windows Application
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select Windows Forms Application template, name the project and click OK. 
 
-{{ '![http://help.syncfusion.com/ug_93/Reporting/XlsIO/ASP.NET/ImagesExt/image9_16.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_93/Reporting/XlsIO/ASP.NET/ImagesExt/image9_16.png](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 
@@ -51,14 +51,14 @@ A windows application is created.
 
 
 
-WPF Application
+### WPF Application
 
 
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-{{ '![http://help.syncfusion.com/ug_93/Reporting/XlsIO/ASP.NET/ImagesExt/image9_18.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_93/Reporting/XlsIO/ASP.NET/ImagesExt/image9_18.png](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 

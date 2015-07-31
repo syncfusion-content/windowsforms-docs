@@ -39,7 +39,7 @@ Export the Edit Control's contents into HTML format and save it into any desired
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -59,9 +59,9 @@ this.editControl1.SaveAsRTF("testRTF.rtf");
 
 this.editControl1.SaveAsHTML("testHTML.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -81,7 +81,7 @@ Me.editControl1.SaveAsRTF("testRTF.rtf")
 
 Me.editControl1.SaveAsHTML("testHTML.html")
 
-
+{% endhighlight %}
 
 Edit Control is also capable of providing XML, RTF and HTML source code for generating documents in the corresponding formats by using the following methods.
 
@@ -107,7 +107,7 @@ Gets the source code to generate HTML document for the text in the Edit Control.
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -121,9 +121,9 @@ this.editControl1.GetTextAsXML();
 
 this.editControl1.GetTextAsXML(coordinatePoint1, coordinatePoint2);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -137,6 +137,7 @@ Me.editControl1.GetTextAsXML()
 
 Me.editControl1.GetTextAsXML(coordinatePoint1, coordinatePoint2)
 
+{% endhighlight %}
 
 
 A sample demonstrating the above feature is available in the below sample installation path.
@@ -151,11 +152,11 @@ Essential Edit now comes with an XML Schema Definition (XSD) file that provides 
 
 
 
-{{ '![](Text-Export_images/Text-Export_img1.png)' | markdownify }}
-{:.image }
+![](Text-Export_images/Text-Export_img1.png)
 
 
-_Figure_ _61__: XML Schema Definition File_
+
+_Figure_ _61_: XML Schema Definition File
 
 
 

@@ -19,7 +19,7 @@ The following code snippet illustrates a sample XML-based configuration file.
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
@@ -81,7 +81,7 @@ The following code snippet illustrates a sample XML-based configuration file.
 
 </ArrayOfConfigLanguage>
 
-
+{% endhighlight %}
 
 From the code given above, the configuration file contains a set of language configurations. Every configuration file must have configuration for the language named default_language, which is used as a default configuration. 
 
@@ -139,13 +139,13 @@ The simplest case of lexem definition looks like the following:
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
 <lexem BeginBlock="public" Type="KeyWord" />
 
-
+{% endhighlight %}
 
 It means that the word public will be drawn using the KeyWord format setting. For non-complex lexems, you can specify ContinueBlock and EndBlock attributes. 
 
@@ -166,13 +166,13 @@ Example
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
 <lexem BeginBlock="$" EndBlock="^[0-9a-fA-F]+$" IsEndRegex="true" Type="Number" />
 
-
+{% endhighlight %}
 
 In Delphi file parsing, numbers in hexadecimal format like $54df54af will be treated as one word.
 
@@ -186,7 +186,7 @@ To parse a C# string, a typical lexem would be as shown below:
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
@@ -200,13 +200,13 @@ To parse a C# string, a typical lexem would be as shown below:
 
 </lexem>
 
-
+{% endhighlight %}
 
 To collapse complex lexems, set IsCollapsible to 'True'. CollapseName property specifies the text to be set instead of the collapsed construction. To make the C# string collapsible, you should use the following code:
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
@@ -226,23 +226,23 @@ Loading a Config File
 
 To load a Config file to the Edit Control, use the following code snippet.
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.Configurator.Open(string fileName);
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 Me.editControl1.Configurator.Open(String fileName)
 
-
+{% endhighlight %}
 
 See Also
 
@@ -260,211 +260,193 @@ Edit Control offers rich set of APIs to create configuration settings in code. T
 
 1. A new configuration language can be added to the Edit Control by using the CreateLanguageConfiguration method. Once the new configuration language is created, apply it to the contents of the Edit Control by using the ApplyConfiguration method.
 
+   ~~~ cs
 
+		// Create a new configuration language and apply the same to the contents of the Edit Control.
 
-[C#]
+		IConfigLanguage currentConfigLanguage = this.editControl1.Configurator.CreateLanguageConfiguration(newConfigLanguage);
 
+		this.editControl1.ApplyConfiguration(currentConfigLanguage);
 
+   ~~~
+   {:.prettyprint }
 
-// Create a new configuration language and apply the same to the contents of the Edit Control.
+   ~~~ vbnet
 
-IConfigLanguage currentConfigLanguage = this.editControl1.Configurator.CreateLanguageConfiguration(newConfigLanguage);
+		' Create a new configuration language and apply the same to the contents of the Edit Control.
 
-this.editControl1.ApplyConfiguration(currentConfigLanguage);
+		Dim currentConfigLanguage As IConfigLanguage = Me.editControl1.Configurator.CreateLanguageConfiguration(NewConfigLanguage)
 
+		Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
-
-[VB.NET]
-
-
-
-' Create a new configuration language and apply the same to the contents of the Edit Control.
-
-Dim currentConfigLanguage As IConfigLanguage = Me.editControl1.Configurator.CreateLanguageConfiguration(NewConfigLanguage)
-
-Me.editControl1.ApplyConfiguration(currentConfigLanguage)
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create a custom format object by using the Language.Add method of the Edit Control and define its attributes.
 
 
+   ~~~ cs
+		// Creating a custom format object.
 
-[C#]
-
-
-
-// Creating a custom format object.
-
-ISnippetFormat formatMethod = this.editControl1.Language.Add("CodeBehind");
+		ISnippetFormat formatMethod = this.editControl1.Language.Add("CodeBehind");
 
 
 
-// Defining its attributes.
+		// Defining its attributes.
 
-formatMethod.FontColor = Color.IndianRed;
+		formatMethod.FontColor = Color.IndianRed;
 
-formatMethod.Font = new Font("Garamond", 12);
+		formatMethod.Font = new Font("Garamond", 12);
 
-formatMethod.BackColor = Color.Yellow;
+		formatMethod.BackColor = Color.Yellow;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		' Creating a custom format object.
 
-
-
-' Creating a custom format object.
-
-Dim formatMethod As ISnippetFormat = Me.EditControl1.Language.Add("CodeBehind")
-
+		Dim formatMethod As ISnippetFormat = Me.EditControl1.Language.Add("CodeBehind")
 
 
-' Defining its attributes.
 
-formatMethod.FontColor = Color.IndianRed
+		' Defining its attributes.
 
-formatMethod.Font = New Font("Garamond", 12)
+		formatMethod.FontColor = Color.IndianRed
 
-formatMethod.BackColor = Color.Yellow
+		formatMethod.Font = New Font("Garamond", 12)
 
+		formatMethod.BackColor = Color.Yellow
 
+   ~~~
+   {:.prettyprint }
 
 3. Create a ConfigLexem object that belongs to the above defined format and define its attributes.
 
+   ~~~ cs
 
+		// Creating a ConfigLexem object that belongs to the above defined format.
 
-[C#]
-
-
-
-// Creating a ConfigLexem object that belongs to the above defined format.
-
-ConfigLexem configLex = new ConfigLexem("<%@", "%>", FormatType.Custom, false);
+		ConfigLexem configLex = new ConfigLexem("<%@", "%>", FormatType.Custom, false);
 
 
 
-// Defining its attributes.
+		// Defining its attributes.
 
-configLex.IsBeginRegex = false;
+		configLex.IsBeginRegex = false;
 
-configLex.IsEndRegex = false;
+		configLex.IsEndRegex = false;
 
-configLex.ContinueBlock = ".+";
+		configLex.ContinueBlock = ".+";
 
-configLex.IsContinueRegex = true;
+		configLex.IsContinueRegex = true;
 
-configLex.FormatName = "CodeBehind";
+		configLex.FormatName = "CodeBehind";
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		// Creating a ConfigLexem object that belongs to the above defined format.
 
-
-
-// Creating a ConfigLexem object that belongs to the above defined format.
-
-Dim configLex As ConfigLexem = New ConfigLexem("<%", "%>", FormatType.Custom, False)
-
+		Dim configLex As ConfigLexem = New ConfigLexem("<%", "%>", FormatType.Custom, False)
 
 
-' Defining its attributes.
 
-configLex.IsBeginRegex = False
+		' Defining its attributes.
 
-configLex.IsEndRegex = False
+		configLex.IsBeginRegex = False
 
-configLex.ContinueBlock = ".+"
+		configLex.IsEndRegex = False
 
-configLex.IsContinueRegex = True
+		configLex.ContinueBlock = ".+"
 
-configLex.FormatName = "CodeBehind"
+		configLex.IsContinueRegex = True
 
+		configLex.FormatName = "CodeBehind"
 
+   ~~~
+   {:.prettyprint }
 
 4. Add the ConfigLexem object to the Lexems collection of the current language.
+ 
+   ~~~ cs
+		this.editControl1.Language.Lexems.Add(configLex);
 
+   ~~~ 
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[C#]
+	Me.editControl1.Language.Lexems.Add(configLex)
 
-
-
-this.editControl1.Language.Lexems.Add(configLex);
-
-
-
-[VB.NET]
-
-
-
-Me.editControl1.Language.Lexems.Add(configLex)
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Add the appropriate splits and extensions to the Language.Splits and Language.Extensions collections.
+   
+   ~~~ cs
+
+
+		// Adding the necessary split definitions to the current language's Splits collection.
+
+		this.editControl1.Language.Splits.Add("<%@");
+
+		this.editControl1.Language.Splits.Add("%>");
 
 
 
-[C#]
+		// Adding the necessary extension definitions to the current language's Extensions collection.
+
+		this.editControl1.Language.Extensions.Add("aspx");
+
+   ~~~ 
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		' Adding the necessary split definitions to the current language's Splits collection.
+
+		Me.EditControl1.Language.Splits.Add("<%")
+
+		Me.EditControl1.Language.Splits.Add("%>")
 
 
 
-// Adding the necessary split definitions to the current language's Splits collection.
+		' Adding the necessary extension definitions to the current language's Extensions collection.
 
-this.editControl1.Language.Splits.Add("<%@");
+		Me.EditControl1.Language.Extensions.Add("aspx")
 
-this.editControl1.Language.Splits.Add("%>");
-
-
-
-// Adding the necessary extension definitions to the current language's Extensions collection.
-
-this.editControl1.Language.Extensions.Add("aspx");
-
-
-
-[VB.NET]
-
-
-
-' Adding the necessary split definitions to the current language's Splits collection.
-
-Me.EditControl1.Language.Splits.Add("<%")
-
-Me.EditControl1.Language.Splits.Add("%>")
-
-
-
-' Adding the necessary extension definitions to the current language's Extensions collection.
-
-Me.EditControl1.Language.Extensions.Add("aspx")
-
-
+   ~~~
+   {:.prettyprint }
 
 6. Invoke the ResetCaches method to apply these newly added configuration settings.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-// Reset the current configuration language cache to reflect these changes.
+		// Reset the current configuration language cache to reflect these changes.
 
-this.editControl1.Language.ResetCaches();
+		this.editControl1.Language.ResetCaches();
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-' Reset the current configuration language cache to reflect these changes.
-
-Me.editControl1.Language.ResetCaches()
+   ~~~ vbnet
 
 
+
+		' Reset the current configuration language cache to reflect these changes.
+
+		Me.editControl1.Language.ResetCaches()
+
+   ~~~
+   {:.prettyprint }
 
 See Also
 
