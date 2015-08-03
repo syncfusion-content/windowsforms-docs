@@ -15,7 +15,7 @@ Calendar class is used to create calendars and add them to the project. Using th
 
 ### Constructors
 
-_Table_ _16__: Calendar Constructors_
+_Table_ _16_: _Calendar Constructors_
 
 <table>
 <tr>
@@ -31,9 +31,10 @@ Initializes a new instance of Calendar class.</td></tr>
 Calendar.Calendar(string calendarName)</td><td>
 Initializes a new instance of Calendar class with the calendar name.</td></tr>
 </table>
+
 ### Properties
 
-_Table_ _17__: Calendar Properties_
+_Table_ _17_: _Calendar Properties_
 
 <table>
 <tr>
@@ -73,9 +74,10 @@ Gets or sets the collection of exceptions that is associated with the calendar.<
 WorkWeeks</td><td>
 Gets or sets the collection of effective work weeks associated with the calendar.</td></tr>
 </table>
+
 ### Methods
 
-_Table_ _18__: Calendar Methods_
+_Table_ _18_: _Calendar Methods_
 
 <table>
 <tr>
@@ -83,30 +85,31 @@ _Table_ _18__: Calendar Methods_
 Method </th><th>
 Description </th></tr>
 <tr>
-<th>
-Equals</th><th>
-Returns a value indicating whether this instance is equal to a specified object</th></tr>
+<td>
+Equals</td><td>
+Returns a value indicating whether this instance is equal to a specified object</td></tr>
 <tr>
-<th>
-GetHashCode</th><th>
-Serves as a hash function for Calendar type</th></tr>
+<td>
+GetHashCode</td><td>
+Serves as a hash function for Calendar type</td></tr>
 <tr>
-<th>
-GetType</th><th>
-Gets the type of the current instance</th></tr>
+<td>
+GetType</td><td>
+Gets the type of the current instance</td></tr>
 <tr>
-<th>
-ToString</th><th>
-Returns a string that represents the current object</th></tr>
+<td>
+ToString</td><td>
+Returns a string that represents the current object</td></tr>
 <tr>
-<th>
-Calendar.StandardCalendar()</th><th>
-Creates a standard calendar</th></tr>
+<td>
+Calendar.StandardCalendar()</td><td>
+Creates a standard calendar</td></tr>
 <tr>
-<th>
-Calendar.StandardCalendar(string calendarName)</th><th>
-Creates a standard calendar</th></tr>
+<td>
+Calendar.StandardCalendar(string calendarName)</td><td>
+Creates a standard calendar</td></tr>
 </table>
+
 ## Creating a Standard Calendar
 
 The static method StandardCalendar is used to create a standard calendar and add it to the project. 
@@ -118,9 +121,8 @@ This method contains two overloads namely:
 
 The following code snippet shows how to make use of this method:
 
-[C#]
 
-
+{% highlight c# %}
 
 // Creating a standard calendar
 
@@ -132,11 +134,9 @@ Calendar calendar = Calendar.StandardCalendar();
 
 Calendar calendar1 = Calendar.StandardCalendar("Standard");
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 ' Creating a standard calendar
 
@@ -148,5 +148,4 @@ Dim calendar As Calendar = Calendar.StandardCalendar()
 
 Dim calendar1 As Calendar = Calendar.StandardCalendar("Standard")
 
-
-
+{% endhighlight %}

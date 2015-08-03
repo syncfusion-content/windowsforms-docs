@@ -16,19 +16,19 @@ The pivot schema designer for Windows Forms can be supported in PivotGrid sample
 
 
 
-{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img1.png)' | markdownify }}
-{:.image }
+![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img1.png)
 
 
 
 
-Fields Section
+
+### Fields Section
 
 The Fields section consists of the list of fields present in the PivotGrid, including Row, Column, and Summary elements. A field will be added to the PivotGrid if it is checked, and will be removed from the PivotGrid if it is unchecked. By default, fields will be added to the row label if checked, and added to the column label by simply dragging the field and dropping it onto the column label area.
 
 
 
-Layout Section
+### Layout Section
 
 The layout section is used to rearrange and reposition the fields in a PivotGrid. It includes the following areas:
 
@@ -37,58 +37,58 @@ The layout section is used to rearrange and reposition the fields in a PivotGrid
 * Row Label
 * Values
 
-Report Filter
+### Report Filter
 
 The report filter is used to filter the entire report based on the selected item in the report filter. The report filter pop-up window can be launched by clicking on the expander icon available in the right corner of each filter item.
 
-{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img2.png)' | markdownify }}
-{:.image }
+![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img2.png)
 
 
 
 
-Column Label
+
+### Column Label
 
 The column label is used to display fields as columns at the top of a report. A column lower in position is nested within another column immediately above it in the PivotGrid.
 
 
 
-Row Label
+### Row Label
 
 The row label is used to display fields as rows at the top of a report. A row lower in position is nested within another row immediately above it in the PivotGrid
 
 
 
-Values
+### Values
 
 Values are used to display summary values.
 
 
 
-Pivot Computation Information window
+## Pivot Computation Information window
 
 The Pivot Computation Information window is used to change or edit value format and summary type.
 
-{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img3.png)' | markdownify }}
-{:.image }
+![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img3.png)
 
 
 
 
-Properties
+
+###Properties
 
 
 
-_Table_ _12__: Property Table_
+_Table_ _12_: _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 ShowPivotTableFieldList</td><td>
@@ -99,9 +99,9 @@ Boolean</td><td>
 </table>
 
 
-Sample Link
+### Sample Link
 
-<InstalledLocation>\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Product ShowCase\Pivot Customization Demo
+&lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Product ShowCase\Pivot Customization Demo
 
 
 
@@ -109,21 +109,13 @@ Sample Link
 
 The PivotSchemaDesigner is a built-in control associated with the PivotGridControl in Windows Forms. Users can enable or disable the schema designer through the Boolean property “ShowPivotTableFieldList.”
 
-
-
 The following code can be used to enable the schema designer in PivotGridControl:
 
-
+{% highlight c# %}
 
 this.pivotGridControl1.ShowPivotTableFieldList = true;
 
 
+{% endhighlight %}
 
-
-
-{{ '![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img4.png)' | markdownify }}
-{:.image }
-
-
-
-
+![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img4.png)

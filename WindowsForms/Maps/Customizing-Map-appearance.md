@@ -13,7 +13,7 @@ The Rangecolormapping is used to differentiate the shape’s fill, based on its 
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -41,11 +41,11 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
 
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -105,29 +105,8 @@ public partial class Form1 : Form
 
      }       
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% endhighlight %}
 
 Screenshot:
 
-
-
-
-
-{{ '![](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png)' | markdownify }}
-{:.image }
-
-
+![](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png)

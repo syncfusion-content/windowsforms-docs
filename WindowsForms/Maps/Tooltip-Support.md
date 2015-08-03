@@ -17,7 +17,7 @@ Tooltip is shown only when “ShowToolTip” set to true in the shape file layer
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -45,9 +45,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -107,11 +107,8 @@ shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
      }       
 
-
+{% endhighlight %}
 
 Screenshot:
 
-{{ '![](Tooltip-Support_images/Tooltip-Support_img1.png)' | markdownify }}
-{:.image }
-
-
+![](Tooltip-Support_images/Tooltip-Support_img1.png)

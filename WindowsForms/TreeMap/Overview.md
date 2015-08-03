@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMaps are ideal for visualizing large amounts of data. The visualization space is split up into rectangles that are sized and colored based on the quantitative variables. The levels in the hierarchy of the tree map are visualized as rectangles containing other rectangles.
 
-Use Cases
+### Use Cases
 
 Tree maps are used to represent large or complex data sets in various applications such as,
 
@@ -22,7 +22,7 @@ Tree maps are used to represent large or complex data sets in various applicatio
 
 
 
-User Guide Structure
+### User Guide Structure
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the TreeMap control. It is organized into the following sections:
 
@@ -36,7 +36,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-Document Conventions
+### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
@@ -44,15 +44,15 @@ The conventions listed below will help you to quickly identify the important sec
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-ICON</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+ICON</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-> ![](Overview_images/Overview_img1.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
+
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
@@ -63,15 +63,15 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img2.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Important Note</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
@@ -85,7 +85,7 @@ This section covers the requirements mandatory for using EssentialTreeMap contro
 
 
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed in the following table.
 
@@ -93,15 +93,28 @@ The prerequisites details are listed in the following table.
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 (Ultimate and Express)* Visual Studio 2008 (Team, Professional, Standard, and Express)* Borland Delphi for .NET* SharpCode</td></tr>
+<ul>
+<li>Visual Studio 2013</li>
+<li>Visual Studio 2012</li>
+<li>Visual Studio 2010 (Ultimate and Express)</li>
+<li>Visual Studio 2008 (Team, Professional, Standard, and Express)</li>
+<li>Borland Delphi for .NET</li>
+<li>SharpCode</li></ul>
+</td></tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5 * .NET 4.0* .NET 3.5<br></td></tr>
+<ul>
+<li>.NET 4.5.1</li>
+<li>.NET 4.5 </li>
+<li>.NET 4.0</li>
+<li>.NET 3.5</li>
+</ul>
+<br></td></tr>
 </table>
 
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed in the following table.
 
@@ -109,9 +122,16 @@ The compatibility details are listed in the following table.
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<ul>
+<li>Windows 8.1 (32 bit and 64 bit)</li>
+<li>Windows Server 2008 (32 bit and 64 bit)</li>
+<li>Windows 7 (32 bit and 64 bit)</li>
+<li>Windows Vista (32 bit and 64 bit)</li>
+<li>Windows XP</li>
+<li>Windows 2003</li>
+</ul>
+</td></tr>
 </table>
-
 
 
 ## Documentation
@@ -124,9 +144,9 @@ Syncfusion provides the following documentation segments to provide all necessar
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -139,16 +159,10 @@ Release Notes</td><td>
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the TreeMap for Windows Forms User Guide.)> ![](Overview_images/Overview_img4.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
 Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_TreeMap_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
-
-
-
-
-
-

@@ -17,15 +17,15 @@ The following table narrates the minimum and maximum number of series and number
 
 
 
-_Table_ _5__: Chart Types_
+_Table_ _5_: _Chart Types_
 
 <table>
 <tr>
-<td>
-Chart Type</td><td>
-Minimum Number of Series</td><td>
-Maximum Number of Series</td><td>
-Number of Y Values Required</td></tr>
+<th>
+Chart Type</th><th>
+Minimum Number of Series</th><th>
+Maximum Number of Series</th><th>
+Number of Y Values Required</th></tr>
 <tr>
 <td>
 Area Charts</td><td>
@@ -219,6 +219,7 @@ Tornado Charts</td><td>
 Unlimited</td><td>
 2</td></tr>
 </table>
+
 ## Line Charts
 
 Line charts typically use a line to connect the different data points in a series. Such lines are straight, splines or steps. Line charts are simpler and hence also let you visualize multiple series without overlapping like in a bar chart.
@@ -235,17 +236,13 @@ The appearance of the lines and the points can be configured with options such a
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img1.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img1.jpeg)
+
+_Figure_ _50_: _Chart displaying Line Series in 3D Mode_
 
 
 
-
-
-_Figure_ _50__: Chart displaying Line Series in 3D Mode_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -257,11 +254,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Line series can be added to the chart using the following code. 
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -281,13 +274,9 @@ series.Points.Add(4, new double[] { 40, 10, 10 });
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -307,6 +296,9 @@ series.Points.Add(4, new double[] { 40, 10, 10 })
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
+
+
 ### Spline Chart
 
 Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines.
@@ -317,17 +309,17 @@ The appearance of the lines and the points can be configured with options such a
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img2.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img2.jpeg)
 
 
 
 
 
-_Figure_ _51__: Chart displaying a Spline Series_
+_Figure_ _51_: _Chart displaying a Spline Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -338,10 +330,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 Spline series can be added to the chart using the following code.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -363,13 +352,11 @@ series.Points.Add(5, 1);
 
 // Add the series to the chart series collection.
 
-this.chartControl1.Series.Add (series); 
+this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.   
 
@@ -393,14 +380,15 @@ series.Points.Add(5, 1)
 
 Me.chartControl1.Series.Add (series)
 
+{% endhighlight %}
+ 
 
-
-Customization Options
+### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images, Rotate
 * Spacing Between Series, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
-### Rotated Spline Chart
+#### Rotated Spline Chart
 
 
 A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
@@ -409,17 +397,14 @@ The following image shows a sample Rotated Spline Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img3.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img3.jpeg)
+
+
+_Figure_ _52_: _Chart displaying a Rotated Spline Series_
 
 
 
-
-
-_Figure_ _52__: Chart displaying a Rotated Spline Series_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -429,11 +414,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Rotated Spline series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -455,11 +436,9 @@ series1.Points.Add(4, 482);
 
 this.chartControl1.Series.Add(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -481,9 +460,9 @@ series1.Points.Add(4, 482)
 
 Me.chartControl1.Series.Add(series1)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images, Spacing Between Series
 * ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
@@ -493,15 +472,12 @@ Customization Options
 
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression.
 
-{{ '![](Chart-Types_images/Chart-Types_img4.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img4.jpeg)
 
 
+_Figure_ _53_: _Chart displaying Step Line Series_
 
-
-
-_Figure_ _53__: Chart displaying Step Line Series_
-
-Chart Details
+### Chart Details
 
 Number of Y values per point – 1.
 
@@ -511,11 +487,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Step Line series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -535,11 +507,9 @@ series.Points.Add (3, 2);
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -559,13 +529,14 @@ series.Points.Add (3, 2)
 
 Me.chartControl1.Series.Add (series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, HitTestRadius, ImageIndex, Images, Rotate
 * Spacing Between Series, ShadowInterior, ShadowOffset, StepItem.Inverted, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ## Bar Charts
 
 
@@ -585,15 +556,12 @@ The following image shows a multi series Bar Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img5.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img5.jpeg)
 
 
+_Figure_ _54_: _Chart displaying Bar Series_
 
-
-
-_Figure_ _54__: Chart displaying Bar Series_
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -603,11 +571,7 @@ Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
 
 Bar series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -625,11 +589,9 @@ series.Points.Add(2, 4);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data point into it.
 
@@ -647,9 +609,9 @@ series.Points.Add(2, 4)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 Border, ColumnDrawMode, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images
 
@@ -657,7 +619,7 @@ LightAngle, LightColor, PhongAlpha, Rotate, Spacing, Spacing Between Series, Sha
 
 
 
-See Also
+### See Also
 
 Column Chart
 
@@ -667,17 +629,13 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 
 The following image shows a sample Stacking Bar Chart.
 
-{{ '![](Chart-Types_images/Chart-Types_img6.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img6.jpeg)
+
+_Figure_ _55_: _Chart displaying Stacking Bar Series_
 
 
 
-
-
-_Figure_ _55__: Chart displaying Stacking Bar Series_
-
-
-
-Chart Details
+### Chart Details
 
 Number of Y values per point – 1.
 
@@ -687,11 +645,7 @@ Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
 
 Stacking bar series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -721,11 +675,9 @@ this.chartControl1.Series.Add(series);
 
 this.chartControl1.Series.Add(series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -755,14 +707,14 @@ Me.chartControl1.Series.Add(series)
 
 Me.chartControl1.Series.Add(series2)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * Border, ColumnDrawMode, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+### See Also
 
 Stacking Area Chart, Stacking Column Chart
 
@@ -772,15 +724,12 @@ This chart type displays multiple series of data as stacked Bars ensuring that t
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img7.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img7.jpeg)
 
 
+_Figure_ _56_: _A 100% StackedBar Chart_
 
-
-
-_Figure_ _56__: A 100% StackedBar Chart_
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -790,11 +739,7 @@ SupportMarker - No.
 
 Cannot be Combined with - Any other chart types.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("chart", ChartSeriesType.StackingBar100);
 
@@ -812,11 +757,9 @@ series1.Points.Add(5, 216.1);
 
 this.chartControl1.Series.Add(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series1 As New ChartSeries("chart", ChartSeriesType.StackingBar100)
 
@@ -834,18 +777,19 @@ series1.Points.Add(5,216.1)
 
 Me.chartControl1.Series.Add(series1)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 * Border, ColumnDrawMode, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+### See Also
 
 StackedArea100 Chart, StackedColumn100 Chart
 
-### Gantt Chart
+## Gantt Chart
 
 A Gantt chart is a graphical representation of the duration of tasks against the progression of time. In a Gantt chart, each task takes up one row. The expected time for each task is represented by a horizontal bar whose left end marks the expected beginning of the task and whose right end marks the expected completion of the task. Tasks may run sequentially, in parallel or overlapping. 
 
@@ -853,17 +797,13 @@ You could then use another series to represent the completed portion of the diff
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img8.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img8.jpeg)
+
+_Figure_ _57_: _Chart displaying Gantt Series_
 
 
 
-
-
-_Figure_ _57__: Chart displaying Gantt Series_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2 (1st is beginning value and the 2nd is the ending value).
 
@@ -873,11 +813,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 Gantt series can be added to the chart using the following code. 
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -895,11 +831,9 @@ series.Points.Add(2, 4, 8);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 // Create chart series and add data points into it.
 
@@ -913,9 +847,9 @@ series.Points.Add(2, 4, 8)
 
 Me.ChartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 Border, ColumnDrawMode, DisplayShadow, DisplayText, ElementBorders, GanttDrawMode, HighlightInterior, ImageIndex, Images
 
@@ -937,17 +871,12 @@ Histograms are useful data summaries that convey the following information:
 
 The shape of the distribution conveys important information such as the probability distribution of the data. 
 
+![](Chart-Types_images/Chart-Types_img9.jpeg)
 
 
-{{ '![](Chart-Types_images/Chart-Types_img9.jpeg)' | markdownify }}
+_Figure_ _58_: _Chart displaying a Histogram Series_
 
-
-
-
-
-_Figure_ _58__: Chart displaying a Histogram Series_
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -955,11 +884,7 @@ Number of Series - One or more.
 
 Cannot be Combined with - Pie, Bar, Polar, Radar.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -991,11 +916,9 @@ series.Points.Add( 23, 605 );
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -1027,12 +950,13 @@ series.Points.Add(23, 1000)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * Border, DisplayShadow, DisplayText, DrawHistogramNormalDistribution, LightAngle, LightColor, NumberOfHistogramIntervals, , PhongAlpha
 * Rotate, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ShowHistogramDataPoints, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Tornado Chart
 
 
@@ -1040,15 +964,15 @@ The Tornado chart is a bar chart which shows the variability of an output to sev
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img10.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img10.jpeg)
 
 
 
 
 
-_Figure_ _59__: Chart displaying a Tornado Chart_
+_Figure_ _59_: _Chart displaying a Tornado Chart_
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2.
 
@@ -1058,11 +982,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 The Tornado series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1106,11 +1026,9 @@ series2.Points.Add(5, 0, -11);
 
 this.chartControl1.Series.Add(series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -1156,13 +1074,14 @@ series2.Points.Add(5, 0, -11)
 
 Me.chartControl1.Series.Add(series2)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * Border, DisplayShadow, DisplayText, ElementBorders, HighlightInterior, ImageIndex, Images, LightAngle, LightColor, PhongAlpha
 * Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ## Column Charts
 
 
@@ -1184,15 +1103,15 @@ The following image shows a multi series Column Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img11.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img11.jpeg)
 
 
 
 
 
-_Figure_ _60__: Chart displaying Column Series_
+_Figure_ _60_: _Chart displaying Column Series_
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1202,11 +1121,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Column series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1224,13 +1139,9 @@ series.Points.Add(2, 4);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -1248,14 +1159,15 @@ series.Points.Add(2, 4)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * Border, ColumnDrawMode, ColumnWidthMode, ColumnFixedWidth, DisplayShadow, DisplayText, DrawColumnSeparatingLines, ColumnType, DrawErrorBars
 * DrawSeriesNameInDepth, ElementBorders, ErrorBarsSymbolShape, HighlightInterior, ImageIndex, Images, LightAngle, LightColor, PhongAlpha, Rotate
 * Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Column Range Chart
 
 
@@ -1265,17 +1177,13 @@ The following figure shows a Column Range Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img12.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img12.jpeg)
+
+_Figure_ _61_: _Chart displaying Column Range Series_
 
 
 
-
-
-_Figure_ _61__: Chart displaying Column Range Series_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2.
 
@@ -1285,11 +1193,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code snippet illustrates this.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1309,11 +1213,9 @@ series.Text = series.Name;
 
 this.ChartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data point into it.
 
@@ -1333,12 +1235,13 @@ series.Text = series.Name
 
 Me.ChartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * Border, ColumnDrawMode, ColumnWidthMode, ColumnFixedWidth, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Stacking Column Chart
 
 
@@ -1346,17 +1249,12 @@ Stacking Column Charts are similar to regular column charts except that the y va
 
 The following image shows a sample Stacking Column Chart.
 
+![](Chart-Types_images/Chart-Types_img13.jpeg)
 
 
-{{ '![](Chart-Types_images/Chart-Types_img13.jpeg)' | markdownify }}
+_Figure_ _62_: _Chart displaying Stacking Column Series_
 
-
-
-
-
-_Figure_ _62__: Chart displaying Stacking Column Series_
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1366,13 +1264,9 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Stacking column series can be added to the chart using the following code. 
 
+{% highlight c# %}
 
-
-[C#]
-
-
-
- // Create chart series and add data points into it.
+// Create chart series and add data points into it.
 
 ChartSeries series = new ChartSeries("Series Name",ChartSeriesType.StackingColumn);
 
@@ -1400,11 +1294,9 @@ this.chartControl1.Series.Add(series);
 
 this.chartControl1.Series.Add(series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Create chart series and add data points into it.
 
@@ -1434,9 +1326,10 @@ Me.chartControl1.Series.Add(series)
 
 Me.chartControl1.Series.Add(series2)
 
+{% endhighlight %}
+ 
 
-
-Customization Options
+### Customization Options
 
 * Border, ColumnWidthMode, ColumnFixedWidth, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
@@ -1451,15 +1344,15 @@ This chart type displays multiple series of data as stacked Columns ensuring tha
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img14.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img14.jpeg)
 
 
 
 
 
-_Figure_ _63__: A 100 percent StackedColumn Chart_
+_Figure_ _63_: _A 100 percent StackedColumn Chart_
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1469,11 +1362,7 @@ SupportMarker – No.
 
 Cannot be Combined with - Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Series 1", ChartSeriesType.StackingColumn100);
 
@@ -1491,11 +1380,9 @@ series1.Points.Add(5, 216.1);
 
 this.chartControl1.Series.Add(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series1 As New ChartSeries(" Series", ChartSeriesType.StackingColumn100)
 
@@ -1513,9 +1400,9 @@ series1.Points.Add(5,216.1)
 
 Me.chartControl1.Series.Add(series1)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * Border, ColumnWidthMode, ColumnFixedWidth, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
@@ -1540,17 +1427,14 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Area Chart.
 
-{{ '![](Chart-Types_images/Chart-Types_img15.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img15.jpeg)
+
+
+_Figure_ _64_: _Chart displaying Area Series in 3D View_
 
 
 
-
-
-_Figure_ _64__: Chart displaying Area Series in 3D View_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1560,11 +1444,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
 
 An Area series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create a chart series and add data points into it.
 
@@ -1584,11 +1464,9 @@ series.Points.Add(3, 3);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create a chart series and add data points into it.
 
@@ -1610,13 +1488,15 @@ series.Points.Add(3, 3)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 * Border, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Rotate, SeriesToolTipFormat
 * Spacing Between Series, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Spline Area Chart
 
 
@@ -1628,17 +1508,17 @@ The following image shows a multi series Spline Area Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img16.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img16.jpeg)
 
 
 
 
 
-_Figure_ _65__: Chart displaying Spline Area Series in 3D Mode_
+_Figure_ _65_: _Chart displaying Spline Area Series in 3D Mode_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1648,11 +1528,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Spline area series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create a chart series and add data points into it.
 
@@ -1674,11 +1550,9 @@ series.Points.Add(3, 3);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create a chart series and add data points into it.
 
@@ -1700,9 +1574,9 @@ series.Points.Add(3, 3)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Rotate, SeriesToolTipFormat, Spacing Between Series, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
@@ -1714,17 +1588,13 @@ The following image shows a sample Stacking Area Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img17.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img17.jpeg)
+
+_Figure_ _66_: _Chart displaying Stacking Area Series in 3D_
 
 
 
-
-
-_Figure_ _66__: Chart displaying Stacking Area Series in 3D_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1734,11 +1604,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Stacking area series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1768,11 +1634,9 @@ this.chartControl1.Series.Add(series);
 
 this.chartControl1.Series.Add(series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -1802,9 +1666,9 @@ Me.chartControl1.Series.Add(series)
 
 Me.chartControl1.Series.Add(series2)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Rotate, SeriesToolTipFormat, Spacing Between Series,
 
@@ -1821,16 +1685,12 @@ Stacking Bar Chart, Stacking Column Chart
 This chart type displays multiple series of data as stacked areas ensuring that the cumulative proportion of each stacked element always totals 100 percent. The y axis will hence always be rendered with the range 0 - 100.
 
 
-
-{{ '![](Chart-Types_images/Chart-Types_img18.jpeg)' | markdownify }}
-
+![](Chart-Types_images/Chart-Types_img18.jpeg)
 
 
+_Figure_ _67_: _A 100 percent StackedArea Chart_
 
-
-_Figure_ _67__: A 100 percent StackedArea Chart_
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1840,11 +1700,7 @@ SupportMarker – No.
 
 Cannot be Combined with - Any other chart types.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series1=chartControl1.Model.NewSeries("Series1",ChartSeriesType.StackingArea100);
 
@@ -1892,11 +1748,9 @@ series3.Points.Add(5,20);
 
 this.chartControl1.Series.Add(series3);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series1 As ChartSeries = chartControl1.Model.NewSeries("Series1", ChartSeriesType.StackingArea100)
 
@@ -1944,9 +1798,10 @@ series3.Points.Add(4, 20)
 
 Me.chartControl1.Series.Add(series3)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Rotate, SeriesToolTipFormat, Spacing Between Series
 
@@ -1966,17 +1821,14 @@ The following image shows a sample Step Area Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img19.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img19.jpeg)
+
+
+_Figure_ _68_: _Chart displaying Step Area Series_
 
 
 
-
-
-_Figure_ _68__: Chart displaying Step Area Series_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -1986,11 +1838,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Step Area series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2012,11 +1860,9 @@ series.Points.Add(4, 3);
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -2038,13 +1884,14 @@ series.Points.Add(4, 3)
 
 Me.chartControl1.Series.Add (series)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Rotate, SeriesToolTipFormat, Spacing Between Series, StepItem.Inverted, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-### Range Area Chart
+## Range Area Chart
 
 RangeArea chart is similar to the Area charts; the only difference is, we need to give two y values (Start & End). RangeArea chart will be rendered from the start value of the x axis(Lower bounds), to end value of the y axis(upper bounds) above, on the corresponding x axis values. 
 
@@ -2052,15 +1899,13 @@ This chart type gives a clear look and it may be used in cases, where we have to
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img20.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img20.jpeg)
+
+_Figure_ _69_: _RangeArea Chart_
 
 
 
-_Figure_ _69__: RangeArea Chart_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2.
 
@@ -2070,11 +1915,7 @@ Minimum Number of Series – 1.
 
 Step Area series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Profit Range", ChartSeriesType.RangeArea);
 
@@ -2096,11 +1937,9 @@ series1.Points.Add(7, 19, 52);
 
 this.chartControl1.Series.Add(series1); 
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series1 As New ChartSeries ("Profit Range", ChartSeriesType.RangeArea)
 
@@ -2124,9 +1963,10 @@ series1.Points.Add(7, 19, 52)
 
 Me.chartControl1.Series.Add (series1)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 Border, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Rotate, SeriesToolTipFormat
 
@@ -2148,45 +1988,42 @@ The following images are some sample Funnel Charts.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img21.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img21.jpeg)
 
 
 
 
 
-_Figure_ _70__: 2DFunnelChart_
+_Figure_ _70_: _2DFunnelChart_
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img22.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img22.jpeg)
+
+
+_Figure_ _71_: _3D Funnel-FigureBase-Circle Chart_
 
 
 
-
-
-_Figure_ _71__: 3D Funnel-FigureBase-Circle Chart_
-
-
-
-{{ '![](Chart-Types_images/Chart-Types_img23.jpeg)' | markdownify }}
-
-
-
-
-
-_Figure_ _72__: 3D Funnel-FigureBase-Square Chart_
-
-
-
-{{ '![](Chart-Types_images/Chart-Types_img24.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img23.jpeg)
 
 
 
 
 
-_Figure_ _73__: 3D Funnel Chart with Gap ratio 0.1_
+_Figure_ _72_: _3D Funnel-FigureBase-Square Chart_
 
-Chart Details
+
+
+![](Chart-Types_images/Chart-Types_img24.jpeg)
+
+
+
+
+
+_Figure_ _73_: _3D Funnel Chart with Gap ratio 0.1_
+
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -2194,9 +2031,7 @@ Number of Series - One.
 
 Cannot be Combined with - Any other chart types.
 
- [C#]
-
-
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Funnel chart", ChartSeriesType.Funnel);
 
@@ -2214,11 +2049,9 @@ series1.Points.Add(5, 216.1);
 
 this.chartControl1.Series.Add(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series1 As New ChartSeries("Funnel chart", ChartSeriesType.Funnel)
 
@@ -2236,9 +2069,9 @@ series1.Points.Add(5,216.1)
 
 Me.chartControl1.Series.Add(series1)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, FigureBase, FunnelMode, GapRatio, HighlightInterior, LabelPlacement, LabelStyle, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, ShowDataBindLabels
 
@@ -2250,47 +2083,47 @@ The following images are some sample Pyramid Charts.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img25.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img25.jpeg)
 
 
 
 
 
-_Figure_ _74__: 2DPyramid Chart_
+_Figure_ _74_: _2DPyramid Chart_
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img26.jpeg)' | markdownify }}
-
-
-
-
-
-_Figure_ _75__: 3D Pyramid-FigureBase-Circle Chart_
-
-
-
-{{ '![](Chart-Types_images/Chart-Types_img27.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img26.jpeg)
 
 
 
 
 
-_Figure_ _76__: 3D Pyramid-FigureBase-Square Chart_
+_Figure_ _75_: _3D Pyramid-FigureBase-Circle Chart_
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img28.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img27.jpeg)
 
 
 
 
 
-_Figure_ _77__: 3D Pyramid Chart with Gap ratio 0.1_
+_Figure_ _76_: _3D Pyramid-FigureBase-Square Chart_
 
 
 
-Chart Details
+![](Chart-Types_images/Chart-Types_img28.jpeg)
+
+
+
+
+
+_Figure_ _77_: _3D Pyramid Chart with Gap ratio 0.1_
+
+
+
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -2298,11 +2131,7 @@ Number of Series - One.
 
 Cannot be Combined with - Any other chart types.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Pyramid chart", ChartSeriesType.Pyramid);
 
@@ -2320,11 +2149,9 @@ series1.Points.Add(5, 216.1);
 
 this.chartControl1.Series.Add(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series1 As New ChartSeries("Pyramid chart", ChartSeriesType.Pyramid)
 
@@ -2342,9 +2169,10 @@ series1.Points.Add(5,216.1)
 
 Me.chartControl1.Series.Add(series1)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, FigureBase, GapRatio, HighlightInterior, LabelPlacement, LabelStyle, PyramidMode, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, ShowDataBindLabels
 
@@ -2366,17 +2194,17 @@ The following image shows a multi series Scatter Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img29.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img29.jpeg)
 
 
 
 
 
-_Figure_ _78__: Chart Displaying Scatter Series_
+_Figure_ _78_: _Chart Displaying Scatter Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -2386,11 +2214,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Scatter series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2408,11 +2232,9 @@ series.Points.Add (2, 4);
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -2430,15 +2252,11 @@ series.Points.Add (2, 4)
 
 Me.chartControl1.Series.Add (series)
 
-
+{% endhighlight %}
 
 The symbols can be configured using the ChartSeries.Styles[i].Symbol property as in the following example.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Specify the symbol info required for the Scatter chart.
 
@@ -2464,11 +2282,9 @@ series.Styles [2].Symbol.Color = Color.Blue;
 
 series.Styles [2].Symbol.Shape = ChartSymbolShape.Cross;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Specify the symbol info required for the Scatter chart.
 
@@ -2494,9 +2310,11 @@ series.Styles (2).Symbol.Color = Color.Blue
 
 series.Styles (2).Symbol.Shape = ChartSymbolShape.Cross 
 
+{% endhighlight %}
 
 
-Customization Options
+
+### Customization Options
 
 DisplayText, DrawSeriesNameInDepth, LightAngle, LightColor, PhongAlpha, ScatterConnectType, ScatterSplineTension, ToolTip, ToolTipFormat, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
@@ -2514,17 +2332,17 @@ The following image shows a multi series Bubble Chart.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img30.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img30.jpeg)
 
 
 
 
 
-_Figure_ _79__: Chart Displaying 3 Bubble Series_
+_Figure_ _79_: _Chart Displaying 3 Bubble Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2 (optional second value defines the size of the shape).
 
@@ -2534,11 +2352,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Bubble series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2558,11 +2372,9 @@ series.Points.Add (2, 4, 9);
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data point into it.
 
@@ -2582,9 +2394,10 @@ series.Points.Add (2, 4, 9)
 
 Me.chartControl1.Series.Add (series) 
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 Border, BubbleType, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, EnablePhongStyle, HighlightInterior, ImageIndex
 
@@ -2612,17 +2425,17 @@ The following image shows a CandleChart displaying a single series.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img31.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img31.jpeg)
 
 
 
 
 
-_Figure_ _80__: Chart displaying Candle Series_
+_Figure_ _80_: _Chart displaying Candle Series_
 
 
 
-Chart Details
+### Chart Details
 
 Number of Y values per point – 4 (High, Low, Open and Close respectively).
 
@@ -2632,11 +2445,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Candle series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -2656,11 +2465,9 @@ series.Points.Add(2, 8, 4, 5, 6);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data point into it.
 
@@ -2680,9 +2487,10 @@ series.Points.Add(2, 8, 4, 5, 6)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 Border, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ImageIndex, Images, PhongAlpha, Rotate, Spacing Between Series
 
@@ -2698,17 +2506,17 @@ The Hi Lo Chart expects two y values to be specified in the series. One value sh
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img32.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img32.jpeg)
 
 
 
 
 
-_Figure_ _81__: Chart displaying Hi Lo Series_
+_Figure_ _81_: _Chart displaying Hi Lo Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2.
 
@@ -2718,11 +2526,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Hi Lo series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2740,11 +2544,9 @@ series.Points.Add(2, 4, 8);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -2762,9 +2564,9 @@ series.Points.Add(2, 4, 8)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 DisplayText, DrawErrorBars, DrawSeriesNameInDepth, ErrorBarsSymbolShape, PhongAlpha, Rotate, Spacing Between Series, ShadingMode, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
@@ -2772,17 +2574,17 @@ DisplayText, DrawErrorBars, DrawSeriesNameInDepth, ErrorBarsSymbolShape, PhongAl
 
 Hi Lo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects four y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
-{{ '![](Chart-Types_images/Chart-Types_img33.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img33.jpeg)
 
 
 
 
 
-_Figure_ _82__: Chart displaying Hi Lo Open Close Series_
+_Figure_ _82_: _Chart displaying Hi Lo Open Close Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 4.
 
@@ -2792,11 +2594,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Hi Lo Open Close series can be added to the chart using the following code. 
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -2816,11 +2614,9 @@ series.Points.Add(2, 8, 4, 5, 6);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data point into it.
 
@@ -2840,9 +2636,10 @@ series.Points.Add(2, 8, 4, 5, 6)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 DisplayText, DrawSeriesNameInDepth, OpenCloseDrawMode, PhongAlpha, Rotate, Spacing Between Series, ShadingMode, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
@@ -2854,17 +2651,17 @@ The penetration of a prior column's high or low, by the latest closing price, al
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img34.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img34.jpeg)
 
 
 
 
 
-_Figure_ _83__: Chart displaying Kagi Series_
+_Figure_ _83_: _Chart displaying Kagi Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -2874,11 +2671,7 @@ Cannot be Combined with - Pie, Bar.
 
 Kagi series can be added to the chart using the following code. 
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -2920,11 +2713,9 @@ series.PriceDownColor = Color.Red;
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -2966,27 +2757,27 @@ series.PriceDownColor = Color.Red
 
 Me.chartControl1.Series.Add (series)
 
-
+{% endhighlight %}
 
 If the ReversalAmount is 0.0 instead of 1.0 which is the default value, then the Kagi chart will look like the below image.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img35.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img35.jpeg)
 
 
 
 
-
-_Figure_ _84__: Kagi Chart with ReversalAmount set to 0.0_
-
+_Figure_ _84_: _Kagi Chart with ReversalAmount set to 0.0_
 
 
-Customization Options
+
+### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, PriceDownColor, PriceUpColor, ReversalAmount, Rotate, Spacing Between Series
 * ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Point and Figure Chart
 
 
@@ -2998,17 +2789,17 @@ This chart requires two y values, the high value and the low value for the speci
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img36.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img36.jpeg)
 
 
 
 
 
-_Figure_ _85__: Chart displaying Point And Figure Series_
+_Figure_ _85_: _Chart displaying Point And Figure Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2.
 
@@ -3018,11 +2809,7 @@ Cannot be Combined with - Pie, Bar.
 
 Point and Figure series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3044,11 +2831,9 @@ series.ReversalAmount = 1.0;
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.   
 
@@ -3070,9 +2855,9 @@ series.ReversalAmount = 1.0
 
 Me.chartControl1.Series.Add (series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, HeightBox, PriceDownColor, PriceUpColor, ReversalAmount, Spacing Between Series
 * ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
@@ -3088,17 +2873,14 @@ Since a Renko chart isolates the underlying trends by filtering out the minor up
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img37.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img37.jpeg)
+
+
+_Figure_ _86_: _Chart displaying Renko Series_
 
 
 
-
-
-_Figure_ _86__: Chart displaying Renko Series_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -3108,11 +2890,7 @@ Cannot be Combined with - Pie, Bar.
 
 Renko series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -3132,11 +2910,9 @@ series.ReversalAmount = 1.0;
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -3156,9 +2932,10 @@ series.ReversalAmount = 1.0
 
 Me.chartControl1.Series.Add (series)
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 * Border, ColorsMode, DarkLightPower, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, PriceDownColor
 * PriceUpColor, ReversalAmount, Spacing Between Series, ShadowInterior, ShadowOffset, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormatSmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
@@ -3173,17 +2950,17 @@ The ReversalAmount specifies the threshold amount by which the price should chan
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img38.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img38.jpeg)
 
 
 
 
 
-_Figure_ _87__: Chart displaying Three Line Break Series_
+_Figure_ _87_: _Chart displaying Three Line Break Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -3193,11 +2970,7 @@ Cannot be Combined with - Pie, Bar.
 
 Three Line Break series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -3215,11 +2988,9 @@ series.Points.Add (2, 4);
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.   
 
@@ -3237,17 +3008,17 @@ series.Points.Add (2, 4)
 
 Me.chartControl1.Series.Add (series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, PriceDownColor, PriceUpColor, Spacing Between Series
 * ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
-### Box And Whisker Chart
+  ### Box And Whisker Chart
 
 
-In 1977, John Tukey published an efficient method for displaying a five-number data summary. The graph is called a Box and Whisker plot (also known as BoxPlot) and summarizes the following statistical measures.
+  In 1977, John Tukey published an efficient method for displaying a five-number data summary. The graph is called a Box and Whisker plot (also known as BoxPlot) and summarizes the following statistical measures.
 
 * median
 * upper and lower quartiles (75 percentile to 25 percentile)
@@ -3257,13 +3028,10 @@ The following is an example of a Box and Whisker plot.
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img39.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img39.jpeg)
 
 
-
-
-
-_Figure_ _88__: BoxAndWhisker Chart_
+_Figure_ _88_: _BoxAndWhisker Chart_
 
 
 
@@ -3276,30 +3044,19 @@ The Box and Whisker plot is interpreted as follows.
 * In Percentile Mode: [Set Series1.ConfigItems.BoxAndWhiskerItem.PercentileMode property to _true_], the ends of the vertical lines or "whiskers" will be decided by the Series1.ConfigItems.BoxAndWhiskerItem.Percentile property value. For example, if the 'Percentile' value is 0.15, then the minimum value will be the 15th percentile of the overall data set and the maximum value will be 85th percentile of the overall data set.
 
 
-
-> {{ '![](Chart-Types_images/Chart-Types_img40.jpeg)' | markdownify }}
-
-_Note:_ 
-
-> _1. The percentile value should lie between 0.0 and 0.25._  
-
-> _2. It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value._
-
->  _For example: Percentile = 0.15_
-
-> _Upper Percentile = 1 - Percentile = 0.85._
-
-> _In Normal mode, Outliers are present in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range. But in Percentile mode, Outliers will be calculated based on the Percentile value._
-
-> _For example: Percentile = 0.15_
-
-> _Outliers are present in which case the whiskers extend to minimum and maximum of 15th and 85th percentile of overall data set, respectively. If 'Percentile' value is Zero, then, there is no outliers in the Chart._
-
-> _3. The width of the Outliers can be adjusted by using this 'Series1.ConfigItems.BoxAndWhiskerItem.OutLierWidth' property. If it is zero, the width of the outlier will be calculated based on the data points range._
+> Note:
+> 1. The percentile value should lie between 0.0 and 0.25.  
+> 2. It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value.
+>  For example: Percentile = 0.15
+> Upper Percentile = 1 - Percentile = 0.85.
+> In Normal mode, Outliers are present in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range. But in Percentile mode, Outliers will be calculated based on the Percentile value.
+> For example: Percentile = 0.15
+> Outliers are present in which case the whiskers extend to minimum and maximum of 15th and 85th percentile of overall data set, respectively. If 'Percentile' value is Zero, then, there is no outliers in the Chart.
+> 3. The width of the Outliers can be adjusted by using this 'Series1.ConfigItems.BoxAndWhiskerItem.OutLierWidth' property. If it is zero, the width of the outlier will be calculated based on the data points range.
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 5 (minimum, lower quartile, median, upper quartile, maximum).
 
@@ -3309,11 +3066,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 Box and Whisker series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3343,11 +3096,9 @@ this.chartControl1.Series.Add(series1);
 
 this.chartControl1.Series.Add(series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -3377,9 +3128,9 @@ Me.chartControl1.Series.Add(series1)
 
 Me.chartControl1.Series.Add(series2)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 Border, ColumnDrawMode, DisplayShadow, DisplayText, ElementBorders, HighlightInterior, ImageIndex, Images, LightAngle, LightColor, PhongAlpha, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 
@@ -3391,17 +3142,13 @@ A Pie Chart renders y values as slices in a pie. These slices are rendered in pr
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img41.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img41.jpeg)
+
+_Figure_ _89_: _Chart displaying Pie Series_
 
 
 
-
-
-_Figure_ _89__: Chart displaying Pie Series_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -3411,11 +3158,7 @@ Cannot be Combined with - Any other chart types.
 
 Pie series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3433,11 +3176,9 @@ series.Points.Add(2, 4);
 
 this.chartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -3455,9 +3196,9 @@ series.Points.Add(2, 4)
 
 Me.chartControl1.Series.Add(series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 * AngleOffset, Border, DisplayShadow, DisplayText, DoughnutCoeficient, DrawSeriesNameInDepth, ElementBorders, ExplodedAll, ExplodedIndex, ExplosionOffset
 * FillMode, Gradient, HeightByAreaDepth, HeightCoeficient, HighlightInterior, InSideRadius, OptimizePiePointPositions, PieType, ShadowInterior, ShadowOffset
@@ -3466,75 +3207,56 @@ Customization Options
 ### Doughnut Chart
 
 
-DoughnutCoeficient
+#### DoughnutCoeficient
 
 PieCharts specified with a DoughnutCoeficient will be rendered as the Doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie. The DoughnutCoeficient property specifies the fraction of radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient=0.5f;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient=0.5f
 
+{% endhighlight %}
 
+![](Chart-Types_images/Chart-Types_img42.jpeg)
 
-{{ '![](Chart-Types_images/Chart-Types_img42.jpeg)' | markdownify }}
-
-
-
-
-
-_Figure_ _90__: Pie Chart with DoughnutCoeficient Property Set_
+_Figure_ _90_: _Pie Chart with DoughnutCoeficient Property Set_
 
 
 
-HeightCoeficient
+#### HeightCoeficient
 
 When in 3D mode, the relative height of the pie chart can be specified via the HeightCoeficient property. Note that the HeightByAreaDepth property should be set as false for this to take effect. The valid values are 0.1f to 0.5f. This property is set to 0.2f by default.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.HeightByAreaDepth = false;
 
 this.chartControl1.Series[0].ConfigItems.PieItem.HeightCoeficient = 0.1f;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.Series(0).ConfigItems.PieItem.HeightByAreaDepth = False
 
 Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
 
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img43.jpeg)
 
 
-{{ '![](Chart-Types_images/Chart-Types_img43.jpeg)' | markdownify }}
-
-
-
-
-
-_Figure_ _91__: Pie Chart with HeightCoeficient Property Set_
+_Figure_ _91_: _Pie Chart with HeightCoeficient Property Set_
 
 
 
-Customization Options
+### Customization Options
 
 AngleOffset, Border, DisplayShadow, DisplayText, DoughnutCoeficient, DrawSeriesNameInDepth, ElementBorders, ExplodedAll, ExplodedIndex, ExplosionOffset
 
@@ -3558,17 +3280,14 @@ Polar charts supports plotting the axis values in the reverse direction / clockw
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img44.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img44.jpeg)
+
+
+_Figure_ _92_: _Chart displaying Polar Series_
 
 
 
-
-
-_Figure_ _92__: Chart displaying Polar Series_
-
-
-
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -3576,11 +3295,7 @@ Number of Series - One.
 
 Cannot be Combined with - Any other chart types.Polar series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3598,11 +3313,9 @@ series.Points.Add (2, 4);
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -3620,9 +3333,9 @@ series.Points.Add (2, 4)
 
 Me.chartControl1.Series.Add (series)
 
+{% endhighlight %}
 
-
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, LightAngle, LightColor, Radar Type, Rotate
 
@@ -3643,17 +3356,16 @@ Some scenarios where this chart type could be used
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img45.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img45.jpeg)
 
 
 
 
-
-_Figure_ _93__: Chart displaying Radar Series_
-
+_Figure_ _93_: _Chart displaying Radar Series_
 
 
-Chart Details
+
+#### Chart Details
 
 Number of Y values per point – 1.
 
@@ -3663,11 +3375,7 @@ Cannot be Combined with - Any other chart types.
 
 Radar series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3689,11 +3397,9 @@ series.Points.Add(5, 42);
 
 this.chartControl1.Series.Add (series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Create chart series and add data points into it.
 
@@ -3716,8 +3422,9 @@ series.Points.Add(5, 42)
 Me.chartControl1.Series.Add (series)
 
 
+{% endhighlight %}
 
-Customization Options
+### Customization Options
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, LightAngle, LightColor, PhongAlpha, Radar Type, RadarStyle
 
@@ -3735,17 +3442,17 @@ One can change an existing chart to a combination chart by selecting the data se
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img46.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img46.jpeg)
 
 
 
 
 
-_Figure_ _94__: Chart displaying Line and Column Chart_
+_Figure_ _94_: _Chart displaying Line and Column Chart_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Series - One or More.
 
@@ -3753,11 +3460,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 Combination series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series = new ChartSeries ("Series Name",ChartSeriesType.Line);
 
@@ -3787,11 +3490,9 @@ this.chartControl1.Series.Add (series);
 
 this.chartControl1.Series.Add (series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series As New ChartSeries ("Series Name", ChartSeriesType.Line)
 
@@ -3821,9 +3522,10 @@ Me.chartControl1.Series.Add (series)
 
 Me.chartControl1.Series.Add (series2) 
 
+{% endhighlight %}
 
 
-Customization Options
+### Customization Options
 
 Border, DisplayShadow, DisplayText, DrawColumnSeparatingLines, ElementBorders, ImageIndex, Images, LightAngle, LightColor, PhongAlpha, Spacing Between Series, ShadowInterior ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
@@ -3833,17 +3535,17 @@ A heat map chart is a graphical representation of data where the values taken by
 
 
 
-{{ '![](Chart-Types_images/Chart-Types_img47.jpeg)' | markdownify }}
+![](Chart-Types_images/Chart-Types_img47.jpeg)
 
 
 
 
 
-_Figure_ _95__: Chart displaying Heat Map Series_
+_Figure_ _95_: _Chart displaying Heat Map Series_
 
 
 
-Chart Details
+#### Chart Details
 
 Number of Y values per point – 2. 
 
@@ -3853,11 +3555,7 @@ Cannot be Combined with - Any other chart types.
 
 Combination series can be added to the chart using the following code.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries Stocks = new ChartSeries("Stocks", ChartSeriesType.HeatMap);
 
@@ -3877,11 +3575,9 @@ Stocks.Points.Add(1,1, 2799);
 
 this.chartControl1.Series.Add(Stocks);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim Stocks As New ChartSeries ("Stocks", ChartSeriesType.Line)
 
@@ -3905,21 +3601,21 @@ Stocks.Points.Add(1,1, 2799)
 
 Me.chartControl1.Series.Add (Stocks)
 
+{% endhighlight %}
 
-
-Features
+### Features
 
 The following table lists the properties of heat map chart with descriptions.
 
 
 
-_Table_ _6__: Features_
+_Table_ _6_: _Features_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeatMapStyle</td><td>
@@ -3958,10 +3654,7 @@ LabelMargin</td><td>
 Sets the margin for the left and right side labels.</td></tr>
 </table>
 
-
-[C#]
-
-
+{% highlight c# %}
 
 //Sets the Heat map style.
 
@@ -3993,11 +3686,9 @@ this.chartControl1.Series[0].ConfigItems.HeatMapItem.MiddleValueColor = Color.Ye
 
 this.chartControl1.Series[0].ConfigItems.HeatMapItem.LabelMargins = 15;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Sets the Heat map style.
 
@@ -4029,6 +3720,8 @@ series.ConfigItems.HeatMapItem.MiddleValueColor = Color.Gold
 
 series.ConfigItems.HeatMapItem.LabelMargins = 15
 
+{% endhighlight %}
+
 ## Stacking Charts
 
 Stacking Charts are similar to regular charts except that the y values stack on top of each other in the specified series order. Stacking charts help visualize data that is a sum of parts, each of which is in a series.
@@ -4041,6 +3734,7 @@ There are different types of stacking charts:
 * StackedArea100 Chart
 * StackedBar100 Chart
 * StackedColumn100 Chart
+
 ## Step Charts
 
 

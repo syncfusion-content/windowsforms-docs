@@ -13,7 +13,7 @@ PivotItem is an item in a PivotTable field. It provides the information needed t
 
 
 
-_Table_ _6__: Properties Table for PivotItem_
+_Table_ _6_: _Properties Table for PivotItem_
 
 <table>
 <tr>
@@ -65,14 +65,22 @@ string</td><td>
 
 The PivotItem can be defined in code-behind. The following code example illustrates this.
 
-<table>
-<tr>
-<td>
-[C#]// Defining PivotItemPivotItem m_PivotItem = new PivotItem() { FieldHeader="Product", FieldMappingName ="Product", TotalHeader ="Total" };            // Adding PivotItem to PivotRowsthis.PivotGridControl1.PivotRows.Add(m_PivotItem);</td></tr>
-<tr>
-<td>
- [VB]' Defining PivotItemDim m_PivotItem As PivotItem = New PivotItem() With {.FieldHeader="Product", .FieldMappingName ="Product", .TotalHeader ="Total"}' Adding PivotItem to PivotRowsMe.PivotGridControl1.PivotRows.Add(m_PivotItem)</td></tr>
-</table>
+{% highlight c# %}
+// Defining PivotItemPivotItem m_PivotItem = new PivotItem() 
+{ FieldHeader="Product", FieldMappingName ="Product", TotalHeader ="Total" };  
+// Adding PivotItem to PivotRows
+this.PivotGridControl1.PivotRows.Add(m_PivotItem);{% endhighlight %}
+
+{% highlight vbnet %}
+
+' Defining PivotItem
+Dim m_PivotItem As PivotItem = New PivotItem() 
+With {.FieldHeader="Product", .FieldMappingName ="Product", .TotalHeader ="Total"}
+' Adding PivotItem to PivotRows
+Me.PivotGridControl1.PivotRows.Add(m_PivotItem)
+
+{% endhighlight %}
+
 
 
 ## Sorting using PivotItem
@@ -80,14 +88,50 @@ The PivotItem can be defined in code-behind. The following code example illustra
 By default, the PivotGrid sorts data in ascending order. The sorting order can be changed using the Comparer field of PivotItem.
 
 
+{% highlight c# %}
 
-<table>
-<tr>
-<td>
-[C#]// Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparerthis.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total", Comparer = new ReverseOrderComparer() });/// <summary>/// Reverse Order Comparer for sorting data in Descending order/// </summary>public class ReverseOrderComparer : IComparer{   #region IComparer Members   public int Compare(object x, object y)   {      if (x == null && y == null)        return 0;      else if (y == null)        return 1;      else if (x == null)        return -1;      else        return -x.ToString().CompareTo(y.ToString());   }   #endregion  }</td></tr>
-<tr>
-<td>
- [VB]' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and ComparerMe.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total", .Comparer = New ReverseOrderComparer()})''' <summary>''' Reverse Order Comparer for sorting data in Descending order''' </summary>public class ReverseOrderComparer : IComparer'   #Region "IComparer Members"   public Integer Compare(Object x, Object y)If x Is Nothing AndAlso y Is Nothing ThenReturn 0ElseIf y Is Nothing ThenReturn 1ElseIf x Is Nothing ThenReturn -1ElseReturn -x.ToString().CompareTo(y.ToString())End If'   #End Region  </td></tr>
-</table>
+// Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
+this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total", Comparer = new ReverseOrderComparer() });
+/// <summary>
+/// Reverse Order Comparer for sorting data in Descending order
+/// </summary>
+public class ReverseOrderComparer : IComparer{  
+#region IComparer Members   
+public int Compare(object x, object y)   
+{      
+if (x == null && y == null)        
+return 0;      
+else if (y == null)        
+return 1;      
+else if (x == null)        
+return -1;      
+else        
+return -x.ToString().CompareTo(y.ToString());   
+}   
+#endregion  
+}
 
+{% endhighlight %}
 
+{% highlight vbnet %}
+
+' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
+Me.PivotGridControl1.PivotRows.Add(New PivotItem
+With {.FieldMappingName = "Product", .TotalHeader = "Total", .Comparer = New ReverseOrderComparer()})
+''' <summary>
+''' Reverse Order Comparer for sorting data in Descending order
+''' </summary>
+public class ReverseOrderComparer : IComparer
+'#Region "IComparer Members"   
+public Integer Compare(Object x, Object y)
+If x Is Nothing AndAlso y Is Nothing 
+ThenReturn 0ElseIf y Is Nothing Then
+Return 1
+ElseIf x Is Nothing Then
+Return -1
+Else
+Return -x.ToString().CompareTo(y.ToString())
+End If
+'   #End Region  
+
+{% endhighlight %}

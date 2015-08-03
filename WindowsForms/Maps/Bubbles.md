@@ -17,10 +17,10 @@ The following properties are available in BubbleSetting:
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoFillColor</td><td>
@@ -54,7 +54,7 @@ Gets or sets the name of the under-bound property in ItemsSource.</td></tr>
 <tr>
 <td>
 ColorMapping</td><td>
-ObservableCollection<RangeColorMapping></td><td>
+ObservableCollection &lt;RangeColorMapping&gt;</td><td>
 Gets or sets the tree map colors.</td></tr>
 <tr>
 <td>
@@ -76,7 +76,7 @@ When the under-bound value is below any of the given sorted range or above the s
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -104,9 +104,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -180,32 +180,12 @@ public partial class Form1 : Form
 
      }       
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% endhighlight %}
 
 Screenshot:
 
-{{ '![](Bubbles_images/Bubbles_img1.png)' | markdownify }}
-{:.image }
+![](Bubbles_images/Bubbles_img1.png)
+
 
 
 ## RangeColorMapping
@@ -216,10 +196,10 @@ Range color mapping is one of the feature used to differentiate the bubble fill,
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 (From and To)</td><td>
@@ -237,7 +217,7 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -267,9 +247,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -347,13 +327,8 @@ public partial class Form1 : Form
 
      }       
 
+{% endhighlight %}
 
+Screenshot: 
 
-Screenshot:
-
-{{ '![](Bubbles_images/Bubbles_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
+![](Bubbles_images/Bubbles_img2.png)

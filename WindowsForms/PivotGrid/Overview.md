@@ -17,13 +17,13 @@ Essential PivotGrid for Windows Forms is a powerful cell-oriented, extensible gr
 
 
 
-{{ '![C:/Users/dwarageshmb/Desktop/Doc Images/PivotGrid WPF/1.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/dwarageshmb/Desktop/Doc Images/PivotGrid WPF/1.png](Overview_images/Overview_img1.png)
 
 
 
 
-Key Features
+
+### Key Features
 
 Important features of the PivotGrid control are listed below:
 
@@ -38,7 +38,7 @@ Important features of the PivotGrid control are listed below:
 
 
 
-User Guide Organization
+### User Guide Organization
 
 This product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the PivotGrid control. It is organized into the following sections:
 
@@ -51,25 +51,25 @@ This product comes with numerous samples as well as an extensive documentation t
 
 
 
-Document Conventions
+### Document Conventions
 
 The following conventions will help you quickly identify the important sections of information while using the content.
 
 
 
-_Table_ _1_: Conventions Table_
+_Table_ _1_: _Conventions Table_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-> ![](Overview_images/Overview_img2.jpeg)
-{:.image }
+> {{' ![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information.</td></tr>
 <tr>
@@ -80,18 +80,19 @@ Represents an example.</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![C:/Users/Hari/Pictures/OlapClient/Tip.png](Overview_images/Overview_img3.png)
-{:.image }
+{{' ![C:/Users/Hari/Pictures/OlapClient/Tip.png](Overview_images/Overview_img3.png)' | markdownify }}
+
 </td><td>
 Represents useful hints that will help you in using the controls/features.</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![C:/Users/Hari/Pictures/OlapClient/Information.png](Overview_images/Overview_img4.png)
-{:.image }
+{{' ![C:/Users/Hari/Pictures/OlapClient/Information.png](Overview_images/Overview_img4.png)' | markdownify }}
+
 </td><td>
 Represents additional information on the topic.</td></tr>
 </table>
+
 ##  IT Scenarios
 
 The Essential PivotGrid for Windows Forms finds its main application in the financial domain, where it is used to organize and analyze business data.
@@ -102,40 +103,61 @@ This section covers the requirements mandatory for using the PivotGrid control. 
 
 
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed below:
 
 
 
-_Table_ _2_: Prerequisites Table_
+_Table_ _2_: _Prerequisites Table_
 
 <table>
+<ul>
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2013* Visual Studio 2012 (Ultimate, Premium, Professional and Express)* Visual Studio 2010 (Ultimate, Premium, Professional and Express)* Visual Studio 2008 with SP1 (Team, Professional, Standard and Express)<br></td></tr>
+<li>Visual Studio 2013</li>
+<li>Visual Studio 2012 (Ultimate, Premium, Professional and Express)</li>
+<li>Visual Studio 2010 (Ultimate, Premium, Professional and Express)</li>
+<li>Visual Studio 2008 with SP1 (Team, Professional, Standard and Express)</li>
+<br></td></tr>
 <tr>
 <td>
 .NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5* .NET 4.0* .NET 3.5* .NET 2.0</td></tr>
+<li>.NET 4.5.1</li>
+<li>.NET 4.5 </li>
+<li>.NET 4.0</li>
+<li>.NET 3.5</li>
+<li>.NET 2.0</li>
+</td></tr>
+</ul>
 </table>
 
 
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed below:
 
 
 
-_Table_ _3_: Compatibility Table_
+_Table_ _3_: _Compatibility Table_
 
 <table>
+<ul>
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2013 (32 bit and 64 bit)* Windows Server 2012(32bit and 64 bit* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows Server 2003 (32 bit and 64 bit) * Windows XP</td></tr>
+<li>Windows 8.1 (32 bit and 64 bit)</li>
+<li>Windows 8 (32 bit and 64 bit)</li>
+<li>Windows Server 2013 (32 bit and 64 bit)</li>
+<li>Windows Server 2012(32bit and 64 bit</li>
+<li>Windows Server 2008 (32 bit and 64 bit)</li>
+<li>Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit</li>
+<li>Windows Server 2003 (32 bit and 64 bit)</li>
+<li>Windows XP</li>
+</td></tr>
+</ul>
 </table>
 
 
@@ -146,31 +168,29 @@ Syncfusion provides the following documentation sections to provide all the nece
 
 
 
-_Table_ _4_: Documentation Table_
+_Table_ _4_: _Documentation Table_
 
 <table>
 <tr>
-<td>
-Type of Documentation</td><td>
-Location</td></tr>
+<th>
+Type of Documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Read Me</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\<version number>\Infrastructure\Read Me\UI_Windows.html</td></tr>
+[drive:]\Program Files\Syncfusion\Essential Studio\&lt;version number&gt;\Infrastructure\Read Me\UI_Windows.html</td></tr>
 <tr>
 <td>
 Release Notes</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\<version number>\Infrastructure\Release Notes\UI.html</td></tr>
+[drive:]\Program Files\Syncfusion\Essential Studio\&lt;version number&gt;\Infrastructure\Release Notes\UI.html</td></tr>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the Pivot Grid for Windows Forms User Guide.)![](Overview_images/Overview_img5.jpeg)
-{:.image }
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/) (Navigate to the Pivot Grid for Windows Forms User Guide.)![](Overview_images/Overview_img5.jpeg)' | markdownify }}
+
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select Pivot Analysis - Pivot Grid, and then click the Class Reference link found in the upper right section of the page)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/) ' | markdownify }} Navigate to the Windows Forms User Guide. Select Pivot Analysis - Pivot Grid, and then click the Class Reference link found in the upper right section of the page)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
-
-

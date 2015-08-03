@@ -23,9 +23,9 @@ _Table_ _150_: _BasicStatisticalFormulas_
 
 <table>
 <tr>
-<td>
-Statistical Formulas</td><td>
-Description</td></tr>
+<th>
+Statistical Formulas</th><th>
+Description</th></tr>
 <tr>
 <td>
 Anova Test</td><td>
@@ -75,6 +75,7 @@ This formula returns the variance within a group of data. </td></tr>
 Z Test</td><td>
 This formula performs a Z Test using Normal distribution.</td></tr>
 </table>
+
 ### Anova Test
 
 Anova stands for Analysis Of Variance. It is a technique to test the hypothesis that the means among two or more groups of data are equal and thereby, testing the differences between their variances, under the assumption that the sampled groups are normally distributed. 
@@ -97,101 +98,61 @@ The following assumptions must be satisfied before performing the test.
 
 1. Calculate the Sum of Squares for total, between and within variations.
 
-Total Variation
+   #### Total Variation
+   ![](Statistical-Formulas_images/Statistical-Formulas_img1.jpeg)
 
+   #### Between Variation
+   ![](Statistical-Formulas_images/Statistical-Formulas_img2.jpeg)
 
+   Where,
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img1.jpeg)' | markdownify }}
+   y is the individual y points of the series,
 
+   r is the number of series present,
 
+   N is the total number of y points for all the series and
 
+   n is the number of y points in each series.
 
+   Within Variation
 
-Between Variation
-
-
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img2.jpeg)' | markdownify }}
-
-
-
-
-
-Where,
-
-y is the individual y points of the series,
-
-r is the number of series present,
-
-N is the total number of y points for all the series and
-
-n is the number of y points in each series.
-
-Within Variation
-
-_SSwithin = SStotal - SSamong_
-
-
+   _SSwithin = SStotal - SSamong_
 
 2. Using the above quantities, calculate the degrees of freedom(_df_) for these variations.
 
+   #### Between Variation
 
+   _dfamong = r-1_
 
-Between Variation
+   #### Within Variation
 
-_dfamong = r-1_
+   _dfwithin = N-r_
 
+   Where,
 
+   r is the number of series present and
 
-Within Variation
-
-_dfwithin = N-r_
-
-
-
-Where,
-
-r is the number of series present and
-
-N is the total number of Y points for all the series.
+   N is the total number of Y points for all the series.
 
 3. As the next step, calculate the Mean Squares of these variations. The mean square for a variation can be calculated simply by dividing its sum of square by its degrees of freedom.
 
-Between Variation
+   #### Between Variation
 
+   ![](Statistical-Formulas_images/Statistical-Formulas_img3.png)
 
+   #### Within Variation
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img3.png)' | markdownify }}
-
-
-
-
-
-Within Variation
-
-
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img4.png)' | markdownify }}
-
-
-
-
+   ![](Statistical-Formulas_images/Statistical-Formulas_img4.png)
 
 4. Finally, calculate F Ratio as below and get the F Critical Value.
 
-
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img5.png)' | markdownify }}
-
-
-
-
+   ![](Statistical-Formulas_images/Statistical-Formulas_img5.png)
 
 5. Make your decision as below.
-* If the between variance is smaller than the within variance, then the means are really close to each other and you will fail to reject the null hypothesis.
-* If the F ratio is greater than the F critical value, then the decision will be to reject the null hypothesis and thereby conclude that at least one of the means is different.
+   * If the between variance is smaller than the within variance, then the means are really close to each other and you will fail to reject the null hypothesis.
+   * If the F ratio is greater than the F critical value, then the decision will be to reject the null hypothesis and thereby conclude that at least one of the means is different.
 
-APIs Used
+#### APIs Used
 
 EssentialChart provides support to perform Anova Test by implementing a method named Anova in the BasicStatisticalFormulas class. This method does the above described calculations and returns the test results as an instance of AnovaResult class. The AnovaResult is a class implemented to store the anova test results such as sum of squares, degrees of freedom and mean squares for different variations and also stores the FRatio and FCriticalValue of the test. Below is a detailed table for the Anova method.
 
@@ -201,13 +162,14 @@ _Table_ _151_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Values</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Values</th></tr>
 <tr>
 <td>
 Anova</td><td>
+
 1. Probability: the alpha value (probability). 2. InputSeries: references to two or more input series. Each series must exist in the series collection at the time of the method call, and have the same number of data points. </td><td>
 An Anova has the following members:* DegreeOfFreedomBetweenGroups * DegreeOfFreedomTotal * DegreeOfFreedomWithinGroups * FCriticalValue * FRatio * MeanSquareVarianceBetweenGroups * MeanSquareVarianceWithinGroups * SumOfSquaresBetweenGroups * SumOfSquaresTotal * SumOfSquaresWithinGroups </td></tr>
 </table>
@@ -218,31 +180,22 @@ Here is a sample code snippet to simulate an Anova test.
 
 
 
-[C#]
+{% highlight c# %}
 
+AnovaResult ar = BasicStatisticalFormulas.Anova(confidenceLevel,new ChartSeries[]{ series1, series2, series3} );
 
+{% endhighlight %}
 
-AnovaResult ar = BasicStatisticalFormulas.Anova(confidenceLevel,
-
-new ChartSeries[]{ series1, series2, series3} );
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim ar As AnovaResult = BasicStatisticalFormulas.Anova(confidenceLevel, New ChartSeries(){ series1, series2, series3})
 
+{% endhighlight %}
 
 
 The following image displays the results of an ANOVA test.
 
-
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg)' | markdownify }}
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg)
 
 
 
@@ -260,7 +213,7 @@ When the measured correlation coefficient is positive, the series values would b
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img7.jpeg)' | markdownify }}
+![](Statistical-Formulas_images/Statistical-Formulas_img7.jpeg)
 
 
 
@@ -270,7 +223,7 @@ x is the y value of first series and
 
 y is the y value of second series.
 
-Using the Formula
+#### Using the Formula
 
 The Correlation Coefficient can easily be calculated by using the Correlation method available with the BasicStatisticalFormulas class. The following table describes the details of this method. This method returns the covariance of the datasets divided by the product of their standard deviations.
 
@@ -280,10 +233,10 @@ _Table_ _152_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 Correlation</td><td>
@@ -296,11 +249,7 @@ Example
 
 The below code snippet demonstrates how to get the correlation coefficient between two groups of data (Series1 and Series2) using the in-built formula.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -308,11 +257,9 @@ using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double Correlation1= BasicStatisticalFormulas.Correlation(series1,series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
@@ -322,11 +269,10 @@ Dim Correlation1 As Double
 
 Correlation1=BasicStatisticalFormulas.Correlation(series,series1)
 
+{% endhighlight %}
 
 
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img8.jpeg)' | markdownify }}
-
-_Note: For further details, refer to this Browser Sample:_
+> Note: For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\ Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -348,7 +294,7 @@ _Cov(x,y) = {xy} - {x}{y}_
 
 
 
-Using the Formula
+#### Using the Formula
 
 The Covariance can easily be calculated by using the Covariance method available with the BasicStatisticalFormulas class. The following table describes the details of this method.
 
@@ -358,10 +304,10 @@ _Table_ _153_: _Property_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 Covariance</td><td>
@@ -374,11 +320,7 @@ Example
 
 Here is the code snippet that demonstrates the usage of this method.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -386,11 +328,9 @@ using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double Covariance1= Statistics.BasicStatisticalFormulas.Covariance(series1,series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
@@ -400,11 +340,9 @@ Dim Covariance1 As Double
 
 Covariance1=BasicStatisticalFormulas.Covariance (series,series1)
 
+{% endhighlight %}
 
-
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img9.jpeg)' | markdownify }}
-
-_Note: For further details, refer to this Browser Sample:_
+> Note: For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -412,7 +350,7 @@ _Note: For further details, refer to this Browser Sample:_
 
 The F-Test is a statistical test, which is carried out to find out whether two series have the same standard deviation with the specified confidence level. It is achieved by comparing the variances of the series values and thereby comparing their standard deviations. Here, the null hypothesis is that the two variances are equal. All hypothesis testing is done under the assumption that the null hypothesis is true.
 
-Steps to perform F-Test
+#### Steps to perform F-Test
 
 1. Calculate the variances of both the series.
 2. Calculate F Ratio as given below.
@@ -431,10 +369,10 @@ _Table_ _154_: _F-Test_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Returns</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Returns</th></tr>
 <tr>
 <td>
 FTest</td><td>
@@ -448,26 +386,21 @@ Example
 Here is a code snippet that shows a sample usage.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 FTestResult ttr = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.FTest(confidenceLevel,series1,series2);
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim ttr As FTestResult = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.FTest(confidenceLevel,series1,series2)
 
 
+{% endhighlight %}
 
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img10.jpeg)' | markdownify }}
-
-_Note: For further details, refer to this Browser Sample:_
+> Note: For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -481,10 +414,10 @@ _Table_ _155_: _Mean_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameter</td><td>
-Return value</td></tr>
+<th>
+Method Name</th><th>
+Parameter</th><th>
+Return value</th></tr>
 <tr>
 <td>
 Mean</td><td>
@@ -498,10 +431,7 @@ Example
 Here is a code snippet that shows a sample usage.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -509,11 +439,9 @@ using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double calculatedMean = BasicStatisticalFormulas.Mean(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
@@ -523,11 +451,9 @@ Dim calculatedMean As Double
 
 calculatedMean = BasicStatisticalFormulas.Mean(series1)
 
+{% endhighlight %}
 
-
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img11.jpeg)' | markdownify }}
-
-_Note: For further details, refer to this Browser Sample:_
+> Note: For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -543,10 +469,10 @@ _Table_ _156_: _Median_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameter</td><td>
-Return value</td></tr>
+<th>
+Method Name</th><th>
+Parameter</th><th>
+Return value</th></tr>
 <tr>
 <td>
 Median</td><td>
@@ -559,11 +485,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -571,11 +493,9 @@ using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double calculatedMedian = Statistics.BasicStatisticalFormulas.Median(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
@@ -585,11 +505,9 @@ Dim Median1 As Double
 
 calculatedMedian = BasicStatisticalFormulas.Median(series1)
 
+{% endhighlight %}
 
-
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img12.jpeg)' | markdownify }}
-
-_Note: For further details, refer to this Browser Sample:_
+> Note: For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -607,10 +525,10 @@ _Table_ _157_: _StandardDeviation_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 StandardDeviation</td><td>
@@ -623,11 +541,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -635,11 +549,9 @@ using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double Deviation1 = BasicStatisticalFormulas.StandartDeviation(series1,false);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
@@ -649,11 +561,9 @@ Dim Deviation1 As Double
 
 Deviation1 = BasicStatisticalFormulas. StandartDeviation  (series1,false)
 
+{% endhighlight %}
 
-
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img13.jpeg)' | markdownify }}
-
-_Note: For further details, refer to this Browser Sample:_
+> Note: For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -663,13 +573,13 @@ T-Test is a statistical formula that is used to measure the equality between the
 
 It is a statistical test used to test the null hypothesis that the means of two normally distributed populations are equal. This test can be performed on two given samples (series), each characterized by its mean, standard deviation and number of data points, to determine whether the means are distinct based on the assumption that the underlying distributions are normal.
 
-Different T-Tests
+#### Different T-Tests
 
 There are different versions of T tests depending on whether the samples are:
 
 * independent of each other, (where the series are random with no relationship between each other)
 
-_OR_
+  _OR_
 
 * paired, (where every data point in one series will have a relationship with a particular point of another series).
 
@@ -693,9 +603,7 @@ This formula performs a T-test for two groups of data and assumes unequal varian
 
 This analysis tool is referred to as a heteroscedastic t-test and can be used when the groups that are under study are distinct. Use a paired test when there is one group before and after a treatment.
 
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img14.jpeg)' | markdownify }}
-
-_Note: For programming example, refer to the following Browser Sample:_
+> Note: For programming example, refer to the following Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -707,14 +615,14 @@ Steps to perform the test
 
 1. Specify the null hypothesis and alternate hypothesis.
 
-* Null Hypothesis - Difference between the two means is zero.
-* Alternate Hypothesis - Difference between the two means is not zero.
+   * Null Hypothesis - Difference between the two means is zero.
+   * Alternate Hypothesis - Difference between the two means is not zero.
 
 2. Calculate the means of the two input series (µ1 and µ2)and calculate their difference (Md).
 
 
 
-_Md = µ1 - µ2_
+   _Md = µ1 - µ2_
 
 3. Calculate the variances of the two input series (s1 and s2).
 4. Let n1 and n2 be the number of data points in first and second series respectively.
@@ -722,25 +630,25 @@ _Md = µ1 - µ2_
 
 
 
-_D = n1 + n2 - 2_
+   _D = n1 + n2 - 2_
 
 6. As a next step, calculate the Pooled Estimator as below.
 
 
 
-_Sp = (n1 - 1) * s1 + (n2 - 1) * s2_
+   _Sp = (n1 - 1) * s1 + (n2 - 1) * s2_
 
 7. Calculate the T-statistic as given below.
 
 
 
-_t = (µ1  - µ2 - Md) / Sqrt(Sp/n1 + Sp/n2)_
+   _t = (µ1  - µ2 - Md) / Sqrt(Sp/n1 + Sp/n2)_
 
 8. Construct a t-table at (n1+n2-2) degrees of freedom.
 9. Choose a level of significance(probability), say p = 0.05 and read the tabulated value.
 10. If the calculated tvalue exceeds the tabulated value we can say that the means are significantly different at that level of probability.
 
-Using the Formula 
+#### Using the Formula 
 
 The TTest formula for equal variances can be calculated by using the TTestEqualVariances method of the BasicStatisticalFormulas class. The following table presents the details of this method. This method returns an instance of TTestResult class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, number of points in every series, T critical value and confidence level(probability).
 
@@ -750,10 +658,10 @@ _Table_ _158_: _Property_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 TTestEqualVariances</td><td>
@@ -767,25 +675,23 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 TTestResult ttr = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, series1, series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim ttr As TTestResult = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, series1, series2)
+
+{% endhighlight %}
+
+
 
 #### T-Test with UnEqual Variance
 
@@ -794,13 +700,13 @@ If the assumption of 'equal variances' is violated, then we have to compute the 
 Steps to perform the test
 
 1. Specify the null hypothesis and alternate hypothesis.
-* Null Hypothesis - Difference between the two means is zero.
-* Alternate Hypothesis - Difference between the two means is not zero.
+   * Null Hypothesis - Difference between the two means is zero.
+   * Alternate Hypothesis - Difference between the two means is not zero.
 2. Calculate the means of the two input series (µ1 and µ2)and calculate their difference (Md).
 
 
 
-_Md = µ1 - µ2_
+   _Md = µ1 - µ2_
 
 3. Calculate the variances of the two input series (s1 and s2).
 4. Let n1 and n2 be the number of data points in first and second series respectively.
@@ -808,7 +714,7 @@ _Md = µ1 - µ2_
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img15.png)' | markdownify }}
+   ![](Statistical-Formulas_images/Statistical-Formulas_img15.png)
 
 
 
@@ -818,12 +724,12 @@ _Md = µ1 - µ2_
 
 
 
-_t = (µ1  - µ2 - Md) / Sqrt( s1/n1 + s2/n2 )_
+   _t = (µ1  - µ2 - Md) / Sqrt( s1/n1 + s2/n2 )_
 
 7. Choose a level of significance (probability), say p = 0.05 and read the tabulated value.
 8. If the calculated tvalue exceeds the tabulated value we can say that the means are significantly different at that level of probability.
 
-Using the Formula 
+#### Using the Formula 
 
 The TTest formula for unequal variances can be calculated by using the TTestUnEqualVariances method of the BasicStatisticalFormulas class. The following table presents the details of this method. This method returns an instance of TTestResult class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, number of points in every series, T critical value and confidence level (probability).
 
@@ -833,10 +739,10 @@ _Table_ _159_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 TTestUnEqualVariances</td><td>
@@ -849,21 +755,17 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 TTestResult ttr = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05,series1,series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim ttr As TTestResult = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05, series1, series2)
+
+{% endhighlight %}
 
 #### TTest Paired
 
@@ -872,28 +774,27 @@ This formula is used when there is a dependency between the samples. The two pos
 Steps to perform the test
 
 1. Specify the null hypothesis and alternate hypothesis.
-* Null Hypothesis: Difference between the two means is zero.
-* Alternate Hypothesis: Difference between the two means is not zero.
+   * Null Hypothesis: Difference between the two means is zero.
+   * Alternate Hypothesis: Difference between the two means is not zero.
 2. Calculate the difference between two series on each pair of values. Calculate the mean difference ( Mdiff ), ie., mean of the new series values.
 3. Calculate the Standard Deviation of the differences( _Sd_ ).
 4. Get the degrees of freedom.
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img16.png)' | markdownify }}
-
+   ![](Statistical-Formulas_images/Statistical-Formulas_img16.png)
 
 
 5. Compute the t-statistic as given below.
 
-_t = ( Mdiff - Md ) / [Sd * Sqrt( 1/n1 )]_
+   _t = ( Mdiff - Md ) / [Sd * Sqrt( 1/n1 )]_
 
 
 
 6. Construct a t-table at (n1 - 1) degrees of freedom and get the tabulated value for a given level of significance (probability).
 7. If the calculated tvalue exceeds the tabulated value we can say that the means are significantly different at that level of probability.
 
-Using the Formula
+#### Using the Formula
 
 The TTest formula for dependent samples can be calculated by using the TTestPaired method of the BasicStatisticalFormulas class. The following table presents the details of this method. This method returns an instance of TTestResult class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, and number of points in every series, T critical value and confidence level (probability).
 
@@ -903,10 +804,10 @@ _Table_ _160_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 TTestPaired</td><td>
@@ -920,35 +821,28 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
-
-
 TTestResult ttr = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
-
-
 Dim ttr As TTestResult = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, series2)
+
+{% endhighlight %}
+
 
 ### Variance
 
 Variance is a statistical formula that calculates the variance of series y values. A Variance can be defined as the square of the standard deviation of a sample.
 
-Using the Formula
+#### Using the Formula
 
 The variance can be computed for any series by using the method Variance of BasicStatisticalFormulas class. Below table shows the details of this method.
 
@@ -958,10 +852,10 @@ _Table_ _161_: _Variance_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 Variance</td><td>
@@ -974,11 +868,7 @@ Example
 
 Variance is the square of the standard deviation for the given data.   
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -986,18 +876,18 @@ using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double Variance1= BasicStatisticalFormulas.Variance(series1,false);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 .............
 
 Dim Variance1 As Double
-Variance1=BasicStatisticalFormulas.Variance (series1,false)          
+Variance1=BasicStatisticalFormulas.Variance (series1,false) 
+
+{% endhighlight %}
 
 ### Z-Test
 
@@ -1015,7 +905,7 @@ This test requires the sample to be random and is taken from a population that i
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img17.jpeg)' | markdownify }}
+   ![](Statistical-Formulas_images/Statistical-Formulas_img17.jpeg)
 
 
 
@@ -1025,7 +915,7 @@ This test requires the sample to be random and is taken from a population that i
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img18.jpeg)' | markdownify }}
+   ![](Statistical-Formulas_images/Statistical-Formulas_img18.jpeg)
 
 
 
@@ -1033,7 +923,7 @@ This test requires the sample to be random and is taken from a population that i
 
 3. Finally, the z score is compared to a Z table which contains the percent of area under the normal curve between the mean and the z score. Using this table will indicate whether the calculated z score is within the realm of chance or it is so different from the mean that the sample mean is unlikely to have happened by chance.
 
-Using the Formula
+   #### Using the Formula
 
 The Z-test can be carried out on any two series values by using the ZTest method of BasicStatisticalFormuals class. Below table gives the detailed description of this method. The method returns an instance of ZTestResult object that saves the intermediate results and also the final z score of the test.
 
@@ -1043,10 +933,10 @@ _Table_ _162_: _Z Test Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 ZTest</td><td>
@@ -1060,11 +950,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ZTestResult ztr = BasicStatisticalFormulas.ZTest( Convert.ToDouble(TextBox6.Text.ToString()), 
 
@@ -1072,23 +958,20 @@ sqrtVarianceOfFirstSeries*sqrtVarianceOfFirstSeries,
 
 sqrtVarianceOfSecondSeries* sqrtVarianceOfSecondSeries,0.05,series1,series2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim ztr As ZTestResult = BasicStatisticalFormulas.ZTest(Convert.ToDouble(TextBox6.Text.ToString()), sqrtVarianceOfFirstSeries*sqrtVarianceOfFirstSeries, sqrtVarianceOfSecondSeries*sqrtVarianceOfSecondSeries, 0.05, series1, series2)
 
 
+{% endhighlight %}
 
-> {{ '![](Statistical-Formulas_images/Statistical-Formulas_img19.jpeg)' | markdownify }}
-
-_Note: For programming example, refer to the following Sample:_
+> Note: For programming example, refer to the following Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
-## Utility Functions
+### Utility Functions
 
 Listed below are some common statistical formulas that are implemented in the Utilities type.
 
@@ -1098,9 +981,9 @@ _Table_ _163_: _Utilities_
 
 <table>
 <tr>
-<td>
-Statistical Formulas</td><td>
-Description</td></tr>
+<th>
+Statistical Formulas</th><th>
+Description</th></tr>
 <tr>
 <td>
 Beta Function</td><td>
@@ -1166,21 +1049,18 @@ The Erf method returns the Error Function for a given Value.</td></tr>
 Inverse Error Function</td><td>
 The Inverse Erf method returns the Inverse Error Function for a given Value.</td></tr>
 </table>
+
 ### Beta Function 
 
 There are two widely used utility functions, the Gamma and Beta functions, which are used in statistics to calculate distribution values. These functions always return a double value and use two double values for input. The beta function was studied by Euler and Legendre and was named by Jacques Binet. In mathematics, the beta function (occasionally written as Beta function) which, is also called the Euler integral of the first kind, is a special function defined by:
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img20.jpeg)' | markdownify }}
-
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img20.jpeg)
 
 where G(x) is the gamma function.
 
-Using the Formula
+#### Using the Formula
 
 The Beta method of the UtilityFunctions class calculates the beta function for given two values. 
 
@@ -1190,10 +1070,10 @@ _Table_ _164_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 Beta</td><td>
@@ -1206,35 +1086,33 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double result = UtilityFunctions.Beta(a,b);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim double as result = UtilityFunctions.Beta(a,b);
 
-### Beta Cumulative Distribution
+{% endhighlight %}
+
+
+#### Beta Cumulative Distribution
 
 The Beta Distribution can be defined as a family of probability distributions differing in the values of α and β. The Cumulative distribution function is given below.
 
 
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg)' | markdownify }}
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg)
 
 where Bx(a,ß) is the incomplete beta function and Ix(a,ß) is the regularized incomplete beta function.
 
-Using the Formula
+#### Using the Formula
 
 The BetaCumulativeDistribution method of the UtilityFunctions class returns the cumulative beta distribution for x>=0, a >0, b>0.
 
@@ -1244,10 +1122,10 @@ _Table_ _165_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 BetaCumulativeDistribution</td><td>
@@ -1260,11 +1138,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series = new ChartSeries("a=b=0.5");
 
@@ -1284,11 +1158,9 @@ series.Tex = series.Name;
 
 this.ChartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Calculate Beta cumulative function for a points and plot the points in chart control.
 
@@ -1306,23 +1178,21 @@ series.Text = series.Name
 
 Me.ChartControl1.Series.Add(series)
 
+{% endhighlight %}
+
 ### Binomial Coefficient 
 
 Binomial Coefficient is an utility function used in statistical calculations. This function is used to determine the possible number of combinations of 'k' items that can be selected from a set of 'n' items. The binomial coefficient formula can be explicitly stated as given below.
 
 
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img22.jpeg)' | markdownify }}
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img22.jpeg)
 
 
 where n! denotes the factorial of n. 
 
 An alternative name for the binomial coefficient is choose function; the binomial coefficient of n and k is often read as "n choose k". Alternative notations include C(n, k), nCk (C for combination). These numbers are called binomial coefficients because they are coefficients in binomial theorem.
 
-Using the formula
+#### Using the formula
 
 The Binomial method of the UtilityFunctions class returns the binomial coefficient for given n and k values.
 
@@ -1332,10 +1202,10 @@ _Table_ _166_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 Binomial</td><td>
@@ -1348,27 +1218,27 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 int result = UtilityFunctions.Binomial(n, k);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim int as result = UtilityFunctions.Binomial(n, k)
 
+{% endhighlight %}
+
 ### Inverse Beta Cumulative Distribution
 
 This formula returns the inverse of Beta Cumulative Distribution.
 
-Using the formula
+#### Using the formula
 
 The InverseBetaCumulativeDistribution method of the UtilityFunctions class returns the inverse of beta cumulative distribution ( for 1 >= p >= 0 , a > 0, b > 0 ).
 
@@ -1378,10 +1248,10 @@ _Table_ _167_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 InverseBetaCumulativeDistribution</td><td>
@@ -1392,48 +1262,37 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double result = UtilityFunctions.InverseBetaCumulativeDistribution (a, b, p);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim double as result = UtilityFunctions.InverseBetaCumulativeDistribution (a, b, p)
+
+{% endhighlight %}
 
 ### Error Function
 
 The Error function, denoted as Erf(x), gives the probability that a measurement under the influence of accidental errors has a distance less than x from the average value at the center. It is the integral of Gauss curve, that is usually normalized to one with a factor of 2/Öp. It is otherwise called as integrated Gauss function or Gauss Error function.
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img23.jpeg)' | markdownify }}
-
-
-
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img23.jpeg)
 
 Here is the plot of error function.
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img24.jpeg)' | markdownify }}
+![](Statistical-Formulas_images/Statistical-Formulas_img24.jpeg)
 
 
-
-Using the formula
+#### Using the formula
 
 The Erf method of the UtilityFunctions class returns integral of the Gauss curve for x > 0.
 
@@ -1443,10 +1302,10 @@ _Table_ _168_: _Utility Functions_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 Erf</td><td>
@@ -1457,25 +1316,21 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 int double = UtilityFunctions.Erf(x);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim double as result = UtilityFunctions.Erf(x)
+
+{% endhighlight %}
 
 ### Factorial
 
@@ -1485,17 +1340,13 @@ The factorial function is defined by the following expression.
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img25.jpeg)' | markdownify }}
-
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img25.jpeg)
 
 which is equivalent to n! = n . (n-1) . ..... . 2 . 1.
 
 The above definition incorporates the convention that the product of no numbers at all is 1, i.e., 0! = 1.
 
-Using the formula
+#### Using the formula
 
 The Factorial method of the UtilityFunctions class returns the factorial value for any positive integer.
 
@@ -1505,10 +1356,10 @@ _Table_ _169_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Example</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Example</th></tr>
 <tr>
 <td>
 Factorial</td><td>
@@ -1521,35 +1372,29 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 int result = UtilityFunctions.Factorial(int n);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim int as result = UtilityFunctions.Factorial(int n)
+
+{% endhighlight %}
+
 
 ### F Cumulative Distribution
 
 This formula returns cumulative F Distribution which can be defined as the ratio of two chi-square distributions. The formula can be expressed as given below.
 
 
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img26.jpeg)' | markdownify }}
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img26.jpeg)
 
 where,
 
@@ -1559,7 +1404,7 @@ U1 is the first chi square distribution with d1 degrees of freedom and
 
 U2 is the second chi square distribution with d2 degrees of freedom.
 
-Using the Formula 
+#### Using the Formula 
 
 FCumulativeDistribution is calculated using the Statistics.UtilityFunctions class. The following table describes the F Cumulative distribution method.
 
@@ -1569,10 +1414,10 @@ _Table_ _170_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 FCumulativeDistribution</td><td>
@@ -1585,25 +1430,21 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double x = Statistics.UtilityFunctions. FCumulativelDistribution( fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom );
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 double x = Statistics.UtilityFunctions. FCumulativelDistribution(fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom)
+
+{% endhighlight %}
 
 ### Gamma Function
 
@@ -1611,11 +1452,7 @@ The Gamma Function is an attempt to generalize the factorial function to real an
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img27.png)' | markdownify }}
-
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img27.png)
 
 The Gamma Function
 
@@ -1623,7 +1460,7 @@ For a complex number x with a positive real part, the function can be given by
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img28.jpeg)' | markdownify }}
+![](Statistical-Formulas_images/Statistical-Formulas_img28.jpeg)
 
 
 
@@ -1631,11 +1468,9 @@ For a complex number x with a positive real part, the function can be given by
 
 Special Values of gamma function
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img29.jpeg)' | markdownify }}
+![](Statistical-Formulas_images/Statistical-Formulas_img29.jpeg)
 
-
-
-Using the Formula
+#### Using the Formula
 
 The Gamma function is calculated using the Statistics.UtilityFunctions class. The following table describes the parameters and the return value of the gamma function.
 
@@ -1645,10 +1480,10 @@ _Table_ _171_: _Statistics.UtilityFunctions_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 Gamma</td><td>
@@ -1659,55 +1494,42 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double x = Statistics.UtilityFunctions.Gamma( p );
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 double x = Statistics.UtilityFunctions.Gamma( p )
+
+{% endhighlight %}
+
 
 ### Gamma Cumulative Distribution
 
 The formula for the cumulative distribution function for the gamma distribution is,
 
 
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img30.jpeg)' | markdownify }}
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img30.jpeg)
 
 
 where is the gamma function defined above and is the incomplete gamma function. The incomplete gamma function has the formula.
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img31.jpeg)' | markdownify }}
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img31.jpeg)
 
 Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartSeries series=new ChartSeries("a=2");
 
@@ -1727,11 +1549,9 @@ series.Text=series.Name;
 
 this.ChartControl1.Series.Add(series);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim series As ChartSeries=Me.ChartControl1.Model.NewSeries("a=2")
 
@@ -1751,11 +1571,14 @@ series.Text=series.Name
 
 Me.ChartControl1.Series.Add(series)
 
+{% endhighlight %}
+
+
 ### Inverse Error Function
 
 The Inverse Error function, which is a rational approximation of the error function, gives the element-by-element inverse of the error function. The absolute value of the relative error is less than 1.15 -10.9 in the entire region.
 
-Using the formula
+#### Using the formula
 
 The below table describes this function in detail.
 
@@ -1765,10 +1588,10 @@ _Table_ _172_: _Inverse Error Function_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 InverseErrorFunction</td><td>
@@ -1781,31 +1604,27 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 int double = UtilityFunctions.InverseErf(x);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim double as result = UtilityFunctions.InverseErf(x)
 
+{% endhighlight %}
+
 ### Inverse F Cumulative Distribution
 
 This formula returns the inverse of the F cumulative distribution.
 
-Using the Formula 
+#### Using the Formula 
 
 InverseFCumulativeDistribution is calculated using the Statistics.UtilityFunctions class. The following table describes its parameters and its values.
 
@@ -1815,10 +1634,10 @@ _Table_ _173_: _Statistics.UtilityFunctions_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 InverseFCumulativeDistribution</td><td>
@@ -1832,29 +1651,28 @@ Example
 Here is a code snippet that shows a sample usage.
 
 
-
-[C#]
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double x= Statistics.UtilityFunctions. InverseFCumulativelDistribution( fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom );
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 double x= Statistics.UtilityFunctions. InverseFCumulativelDistribution(fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom)
 
+{% endhighlight %}
+
+
 ### Inverse Normal Distribution
 
 This formula returns an approximation of the inverse of the standard normal cumulative distribution. That is, for a given P, it returns an approximation to the x satisfying P=Pr {z is smaller than x} where z is a random variable from the standard normal distribution.
 
-Using the Formula
+#### Using the Formula
 
 InverseNormalDistribution is calculated using the Statistics.UtilityFunctions class. The following table describes its parameters and its values.
 
@@ -1864,10 +1682,10 @@ _Table_ _174_: _Statistics.UtilityFunctions_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Example</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Example</th></tr>
 <tr>
 <td>
 InverseNormalDistribution</td><td>
@@ -1882,25 +1700,21 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double x = Statistics.UtilityFunctions.InverseNormalDistribution( p );
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 double x = Statistics.UtilityFunctions.InverseNormalDistribution( p )
+
+{% endhighlight %}
 
 ### Normal Distribution
 
@@ -1910,17 +1724,10 @@ The normal density function is given by,
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img32.jpeg)' | markdownify }}
+![](Statistical-Formulas_images/Statistical-Formulas_img32.jpeg)
 
 
-
-
-
-
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg)' | markdownify }}
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg)
 
 _Figure_ _349_: _Normal Density Function_
 
@@ -1932,7 +1739,7 @@ Different values of __ and  yield different normal density curves and henc
 
 Thus, for a normal distribution, almost all values lie within three standard deviations of the mean.
 
-Using the Formula 
+#### Using the Formula 
 
 NormalDistribution is calculated using the Statistics.UtilityFunctions class. The following table describes this formula's parameters and its values.
 
@@ -1942,10 +1749,10 @@ _Table_ _175_: _NormalDistribution_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 NormalDistribution</td><td>
@@ -1956,27 +1763,21 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double x = Statistics.UtilityFunctions.NormalDistribution( p );
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 double x = Statistics.UtilityFunctions.NormalDistribution( p )
 
-
+{% endhighlight %}
 
 ### Normal Distribution Density
 
@@ -1990,37 +1791,28 @@ The log-normal distribution has a probability density function (pdf),
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img34.jpeg)' | markdownify }}
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img34.jpeg)
 
 
 for x > 0, where µ and s are the median and standard deviation of the variable's logarithm. The expected value is,
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img35.jpeg)' | markdownify }}
-
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img35.jpeg)
 
 
 and the variance is,
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img36.jpeg)' | markdownify }}
+![](Statistical-Formulas_images/Statistical-Formulas_img36.jpeg)
+
+
+![](Statistical-Formulas_images/Statistical-Formulas_img37.jpeg)
 
 
 
-
-
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img37.jpeg)' | markdownify }}
-
-
-
-Using the formula
+#### Using the formula
 
 
 
@@ -2028,10 +1820,10 @@ _Table_ _176_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 NormalDistributionDensity</td><td>
@@ -2044,31 +1836,28 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double result = UtilityFunctions.NormalDistributionDensity(x, m ,sigma);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 Dim double as result = UtilityFunctions.NormalDistributionDensity(x, m ,sigma)
 
+{% endhighlight %}
+
+
 ### Inverse T Cumulative Distribution
 
 This formula computes the inverse of the cumulative distribution for T-statistic.
 
-Using the Formula 
+#### Using the Formula 
 
 InverseTCumulativeDistribution is calculated using the Statistics.UtilityFunctions class. The following table describes this function's parameters and its values.
 
@@ -2078,10 +1867,10 @@ _Table_ _177_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 InverseTCumulativeDistribution</td><td>
@@ -2094,25 +1883,21 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degreeOfFreedom,OneTail );
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degreeOfFreedom,OneTail )
+
+{% endhighlight %}
 
 ### TCumulative Distribution
 
@@ -2124,15 +1909,13 @@ For a sample with size n drawn from a normal population with mean  and standa
 
 
 
-{{ '![](Statistical-Formulas_images/Statistical-Formulas_img39.jpeg)' | markdownify }}
-
-
+![](Statistical-Formulas_images/Statistical-Formulas_img39.jpeg)
 
 
 
 gives the t-distribution for n-1 degrees of freedom.
 
-Using the Formula
+#### Using the Formula
 
 TCumulativeDistribution is calculated using the Statistics.UtilityFunctions class. The following table describes this function's parameters and its values.
 
@@ -2142,10 +1925,10 @@ _Table_ _178_: _Properties_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Parameters</td><td>
-Return Value</td></tr>
+<th>
+Method Name</th><th>
+Parameters</th><th>
+Return Value</th></tr>
 <tr>
 <td>
 TCumulativeDistribution</td><td>
@@ -2158,25 +1941,18 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
 double x= Statistics.UtilityFunctions.TCumulativelDistribution(tvalue, degreeOfFreedom,OneTail );
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
 double x= Statistics.UtilityFunctions.TCumulativelDistribution(tvalue, degreeOfFreedom,OneTail )
 
-
-
+{% endhighlight %}

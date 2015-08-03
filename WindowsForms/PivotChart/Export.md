@@ -11,22 +11,20 @@ documentation: ug
 
 You can export pivot data to excel. The exported pivot data has interaction enabled in excel.
 
-[C#]
-
+{% highlight c# %}
 
 ExcelExport excelExport = new ExcelExport(this.pivotChart1, Syncfusion.XlsIO.ExcelVersion.Excel2010, Syncfusion.XlsIO.ExcelChartType.Column_Clustered);
 
             excelExport.Export(savedialog.FileName);
 
+{% endhighlight %}
 
-
-[VB]
-
+{% highlight vbnet %}
 
 Dim excelExport As New ExcelExport(Me.pivotChart1, Syncfusion.XlsIO.ExcelVersion.Excel2010, Syncfusion.XlsIO.ExcelChartType.Column_Clustered)
 
 excelExport.Export(savedialog.FileName)
 
+{% endhighlight %}
 
-Sample: <InstalledLocation>\Syncfusion\EssentialStudio\<InstalledVersion>\Windows\PivotChart.Windows\Samples\Exporting\PivotChartExport Demo\CS
-
+Sample: &lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\<InstalledVersion>\Windows\PivotChart.Windows\Samples\Exporting\PivotChartExport Demo\CS

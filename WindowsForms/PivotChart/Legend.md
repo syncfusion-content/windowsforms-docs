@@ -11,58 +11,59 @@ documentation: ug
 
 PivotChart, by default, displays a Legend with information on each series that has been plotted on the chart. Legend is a color code that helps differentiate between chart items. Legend also has labels beside each color to indicate that it applies to information from Series 1, Series 2, and so on. Legend is made visible in PivotChart by using the property ShowLegend.
 
-[C#]
-
+{% highlight c# %}
 
 
 this.pivotChart1.ShowLegend = true; 
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.pivotChart1.ShowLegend = True 
 
+{% endhighlight %}
+
+
 The Legends have integral floating support and can be placed anywhere in the chart area as per your requirements.
 
+{% highlight c# %}
 
-
-[C#]
 
 this.pivotChart1.LegendPosition = Syncfusion.Windows.Forms.Chart.ChartDock.Floating;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.pivotChart1.LegendPosition = Syncfusion.Windows.Forms.Chart.ChartDock.Floating
 
+{% endhighlight %}
+
 The Legend alignment can be marked within the ChartArea by using the LegendAlignment enumeration.
 
-[C#]
-
+{% highlight c# %}
 
 this.pivotChart1.LegendAlignment = Syncfusion.Windows.Forms.Chart.ChartAlignment.Center;
 
 
+{% endhighlight %}
 
-[VB]
-
+{% highlight vbnet %}
 
 Me.pivotChart1.LegendAlignment = Syncfusion.Windows.Forms.Chart.ChartAlignment.Center
 
+{% endhighlight %}
 
 The legend positioning can be affected in the following ways.
 
-_Table_ _3__: Legend positioning_
+_Table_ _3_: _Legend positioning_
 
 <table>
 <tr>
-<td>
-Chart Legend Properties</td><td>
-Description</td></tr>
+<th>
+Chart Legend Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Position</td><td>
@@ -72,5 +73,3 @@ Specifies the position relative to the chart where to render the legend.* Top-ab
 LegendAlignment</td><td>
 When docked to a side, this property specifies how the legend should be aligned with respect to the chart boundaries.</td></tr>
 </table>
-
-

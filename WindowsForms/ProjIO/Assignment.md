@@ -15,21 +15,22 @@ Assignment class is used to bind resources to tasks. It can also be used to retr
 
 ### Constructors
 
-_Table_ _13__: Assignment Constructor_
+_Table_ _13_: _Assignment Constructor_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Assignment.Assignment()</td><td>
 Initializes a new instance of Assignment class.</td></tr>
 </table>
+
 ### Properties
 
-_Table_ _14__: Assignment Properties_
+_Table_ _14_: _Assignment Properties_
 
 <table>
 <tr>
@@ -301,9 +302,10 @@ Gets or sets Project 2010 assignment enterprise custom field elements.</td></tr>
 TimePhasedData</td><td>
 Gets or sets the time phased data associated with the assignment.</td></tr>
 </table>
+
 ### Methods
 
-_Table_ _15__: Assignment Methods_
+_Table_ _15_: _Assignment Methods_
 
 <table>
 <tr>
@@ -311,29 +313,30 @@ _Table_ _15__: Assignment Methods_
 Method </th><th>
 Description </th></tr>
 <tr>
-<th>
-Equals</th><th>
-Returns a value indicating whether this instance is equal to a specified object</th></tr>
+<td>
+Equals</td><td>
+Returns a value indicating whether this instance is equal to a specified object</td></tr>
 <tr>
-<th>
-GetHashCode</th><th>
-Serves as a hash function for Assignment type</th></tr>
+<td>
+GetHashCode</td><td>
+Serves as a hash function for Assignment type</td></tr>
 <tr>
-<th>
-GetType</th><th>
-Gets the type of the current instance</th></tr>
+<td>
+GetType</td><td>
+Gets the type of the current instance</td></tr>
 <tr>
-<th>
-ToString</th><th>
-Returns a string that represents the current object</th></tr>
+<td>
+ToString</td><td>
+Returns a string that represents the current object</td></tr>
 </table>
+
 ## Adding Assignments to a Project
 
 Assignments are used to bind the task and resources. Project class exposes Assignments collection that represents the list of all the Assignment objects in a project. This property can be used to add assignment. 
 
 The code below shows adding assignments to a project:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -403,11 +406,9 @@ assignment.Resource = resource;
 
 project.Resources.Add(resource);
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 ' Creating an instance of Project
 
@@ -475,9 +476,8 @@ assignment.Resource = resource
 
 project.Assignments.Add(assignment)
 
+{% endhighlight %}
+
 The project created using the above code will look as shown in the following Microsoft Project screenshot.
 
-{{ '![](Assignment_images/Assignment_img1.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Assignment_images/Assignment_img1.jpeg)

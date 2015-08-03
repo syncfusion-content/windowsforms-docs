@@ -27,6 +27,8 @@ The ShapeFileLayers is the core layer of the map. Multiple layers can be added i
 
 The ItemSource property accepts collection values as input. For example, the list of objects can be provided as input.
 
+{% highlight c# %}
+
 partial class Form1
 
     {
@@ -53,9 +55,13 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
 
-[FORM1.CS]
+
+
+
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -95,9 +101,9 @@ public partial class Form1 : Form
 
      }       
 
+{% endhighlight %}
 
-
- [VIEWMODEL.CS]
+{% highlight c# %}
 
 public class MapViewModel
 
@@ -201,13 +207,13 @@ public class Country : INotifyPropertyChanged
 
     }
 
-
+{% endhighlight %}
 
 ## ShapeIDPath
 
 ShapeIDPath is the string type property that is used to refer to the ID of a shape from the ItemSource. The ItemSource property must have a property with name of the ShapeIDPath. The ShapeIDPath and the ShapeIDTableField properties are related to each other (refer to ShapeIDTableField for more details).
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -235,9 +241,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -277,7 +283,7 @@ public partial class Form1 : Form
 
      }       
 
-
+{% endhighlight %}
 
 ## ShapeIDTableField
 
@@ -287,7 +293,7 @@ The ShapeIDTableField property is similar to the ShapeIDPath. It is a string t
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -315,9 +321,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -352,16 +358,9 @@ public partial class Form1 : Form
             shapeLayer.ShapeIDTableField = "NAME";
 
             this.mapsControl1.Layers.Add(shapeLayer); 
-
-
-
         }
 
+     }  
 
 
-     }       
-
-
-
-
-
+{% endhighlight %}

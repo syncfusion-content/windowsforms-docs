@@ -13,17 +13,17 @@ Conditional formatting changes the appearance of a specified cell range or pivot
 
 
 
-Properties
+### Properties
 
-_Table_ _15__: Conditional Formatting Property Table_
+_Table_ _15_: _Conditional Formatting Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 FormatStyle</td><td>
@@ -81,26 +81,42 @@ Color</td></tr>
 </table>
 
 
-Sample Location
+### Sample Location
 
 {Installedpath}\Syncfusion\EssentialStudio\{Version}\Windows\PivotGrid.Windows\Samples\Product Showcase\Conditional Format Demo
 
-{{ '![](Conditional-Formatting_images/Conditional-Formatting_img1.png)' | markdownify }}
-{:.image }
+![](Conditional-Formatting_images/Conditional-Formatting_img1.png)
+
 
 
 ## Adding Conditional Formatting
 
 Conditional formatting can be added to the PivotGrid as shown in the following code:
 
-<table>
-<tr>
-<td>
-[C#]            NewRuleConditionalFormat newRule1 = new NewRuleConditionalFormat();            newRule1.FormatStyle = FormatStyle.IconSets;            newRule1.SummaryElement = "Quantity";                        newRule1.Image = BitMapImageName.FourArrowsGray;                        newRule1.RuleType = RuleType.FormatAllCellsBasedOnTheirValues;                        PivotGridNewRuleConditionalFormat newRuleFormat1 = new PivotGridNewRuleConditionalFormat();            newRuleFormat1.NewRuleCollections.Add(newRule1); this.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1); </td></tr>
-<tr>
-<td>
- [VB]       Dim newRule1 As New NewRuleConditionalFormat()       newRule1.FormatStyle = FormatStyle.IconSets       newRule1.SummaryElement = "Quantity"       newRule1.Image = BitMapImageName.FourArrowsGray       newRule1.RuleType = RuleType.FormatAllCellsBasedOnTheirValues       Dim newRuleFormat1 As New PivotGridNewRuleConditionalFormat()       newRuleFormat1.NewRuleCollections.Add(newRule1)  Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)</td></tr>
-</table>
+{% highlight c# %} 
+
+NewRuleConditionalFormat newRule1 = new NewRuleConditionalFormat();            
+newRule1.FormatStyle = FormatStyle.IconSets;            
+newRule1.SummaryElement = "Quantity";                        
+newRule1.Image = BitMapImageName.FourArrowsGray;                        
+newRule1.RuleType = RuleType.FormatAllCellsBasedOnTheirValues;                        
+PivotGridNewRuleConditionalFormat newRuleFormat1 = new PivotGridNewRuleConditionalFormat();            
+newRuleFormat1.NewRuleCollections.Add(newRule1); 
+this.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1); 
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+Dim newRule1 As New NewRuleConditionalFormat()       
+newRule1.FormatStyle = FormatStyle.IconSets       
+newRule1.SummaryElement = "Quantity"       
+newRule1.Image = BitMapImageName.FourArrowsGray       
+newRule1.RuleType = RuleType.FormatAllCellsBasedOnTheirValues       
+Dim newRuleFormat1 As New PivotGridNewRuleConditionalFormat()       
+newRuleFormat1.NewRuleCollections.Add(newRule1)  
+Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)
+
+{% endhighlight %} 
 
 
 The following rule types are supported for applying conditional formats across value cell ranges and summary elements:
@@ -111,10 +127,7 @@ The following rule types are supported for applying conditional formats across v
 * Format Only Values That Are Above Or Below Average
 * Format Only Unique Or Duplicate Values
 
-{{ '![](Conditional-Formatting_images/Conditional-Formatting_img2.png)' | markdownify }}
-{:.image }
-
-
+![](Conditional-Formatting_images/Conditional-Formatting_img2.png)
 
 
 Format All Cells Based On Their Values: Classifies data into three, four, or five groups, each represented by a threshold value that expresses the range. Users define an icon set, and each icon represents a particular range. The icons are applied to value cells in their corresponding range. 
@@ -126,4 +139,3 @@ Format Top Or Bottom Ranked Values: Applies formatting to the highest or lowest 
 Format Only Values That Are Above or Below Average: Applies formatting to value cells whose values are more or less than an average or standard values in a range or summary element.
 
 Format Only Unique Or Duplicate Values: Applies formatting to value cells whose values are either identical or different from the other values in a range or summary element.
-

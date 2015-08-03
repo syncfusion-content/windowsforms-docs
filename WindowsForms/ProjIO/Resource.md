@@ -15,21 +15,22 @@ Resources class can be used to create resources and add them to Projects. Howeve
 
 ### Constructors
 
-_Table_ _10__: Resource Constructor_
+_Table_ _10_: _Resource Constructor_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Resource.Resource()</td><td>
 Initializes a new instance of the Resource class.</td></tr>
 </table>
+
 ### Properties
 
-_Table_ _11__: Resource Properties_
+_Table_ _11_: _Resource Properties_
 
 <table>
 <tr>
@@ -321,9 +322,10 @@ Gets or sets the collection of periods and the rates associated with each one.</
 TimePhasedData</td><td>
 Gets or sets the time phased data.</td></tr>
 </table>
+
 ### Methods
 
-_Table_ _12__: Resource Methods_
+_Table_ _12_: _Resource Methods_
 
 <table>
 <tr>
@@ -331,43 +333,58 @@ _Table_ _12__: Resource Methods_
 Method </th><th>
 Description </th></tr>
 <tr>
-<th>
-Equals</th><th>
-Returns a value indicating whether this instance is equal to a specified object.</th></tr>
+<td>
+Equals</td><td>
+Returns a value indicating whether this instance is equal to a specified object.</td></tr>
 <tr>
-<th>
-GetHashCode</th><th>
-Serves as a hash function for Resource type.</th></tr>
+<td>
+GetHashCode</td><td>
+Serves as a hash function for Resource type.</td></tr>
 <tr>
-<th>
-GetType</th><th>
-Gets the type of the current instance.</th></tr>
+<td>
+GetType</td><td>
+Gets the type of the current instance.</td></tr>
 <tr>
-<th>
-ToString</th><th>
-Returns a string that represents the current object.</th></tr>
+<td>
+ToString</td><td>
+Returns a string that represents the current object.</td></tr>
 </table>
+
 ## Adding Resources to a Project
 
 Resources property exposed by Project class represents the list of all the Resource objects in a project. This property can be used to add resources.
 
 The following code snippet illustrates adding resources to a project.
 
-<table>
-<tr>
-<td>
-[C#]// Creating an instance of the ProjectProject project = new Project();// Creating resourceResource resource = new Resource();resource.Name = "Resource1";// Adding resource to projectproject.Resources.Add(resource);</td></tr>
-<tr>
-<td>
-[VB]' Creating an instance of the ProjectDim project As Project = New Project()' Creating resourceDim resource As Resource = New Resource()resource.Name = "Resource1"' Adding resource to Projectproject.Resources.Add(resource)</td></tr>
-</table>
+{% highlight c# %}
+// Creating an instance of the Project
+Project project = new Project();
+// Creating resource
+Resource resource = new Resource();
+resource.Name = "Resource1";
+// Adding resource to project
+project.Resources.Add(resource);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+'Creating an instance of the Project
+Dim project As Project = New Project()
+' Creating resource
+Dim resource As Resource = New Resource()
+resource.Name = "Resource1"
+' Adding resource to Project
+project.Resources.Add(resource)
+
+{% endhighlight %}
+
 ## Writing Resources to a Project
 
 Resources property exposed by Project class represents the list of all the Resource objects in a project. This property can be used to update resources in a project.
 
 The following code shows how to write resources to a project.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -401,9 +418,9 @@ project.CalculateResourceIDs();
 
 project.Save("Project With Resources.xml");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ' Creating an instance of the Project
 
@@ -435,5 +452,4 @@ project.CalculateResourceIDs()
 
 project.Save(@"D:\Project With Resources.xml")
 
-
-
+{% endhighlight %}

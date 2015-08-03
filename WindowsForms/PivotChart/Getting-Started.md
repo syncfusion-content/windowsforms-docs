@@ -19,27 +19,23 @@ This section guides you on how to configure the PivotCharts for your business 
 
 To create the PivotChart through Visual Studio
 
-1.  Create a new Windows Forms Application Project in VS IDE through New ProjectWizard.
+1. Create a new Windows Forms Application Project in VS IDE through New ProjectWizard.
 2. On the File menu, click New Project. The New Project dialog box appears as follows.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image51_8.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
-
-
+   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image51_8.png](Getting-Started_images/Getting-Started_img1.png)
+   
 3. Select Windows Forms Application, and then click OK.
 4. Drag the PivotChart control from the Toolbox to the Design page.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ### Configuring PivotChart Control through code
 
 To add PivotChart control to a Windows Forms Application through code, include the following code example to your application.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Creates a PivotChart control.
 
@@ -72,11 +68,9 @@ this.pivotChart1.PivotLegend.Add(new PivotItem { FieldMappingName = "Date", Tota
 
 this.pivotChart1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 'Creates a PivotChart control.
 
@@ -144,5 +138,4 @@ Key .Format = "#,##0" _
 
 })
 
-
-
+{% endhighlight %}

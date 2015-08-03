@@ -17,7 +17,7 @@ ShapeFill property will fill the Shape with the respective color. ShapeStroke pr
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -45,9 +45,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
- [FORM1.CS]
+ {% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -83,31 +83,8 @@ public partial class Form1 : Form
 
      }       
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% endhighlight %}
 
 Screenshot:
 
-{{ '![](Map-Shape-Customization_images/Map-Shape-Customization_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
+![](Map-Shape-Customization_images/Map-Shape-Customization_img1.png)

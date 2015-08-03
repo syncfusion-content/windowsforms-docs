@@ -13,7 +13,7 @@ This feature enables you to apply new Metro styles for the PivotGrid control.
 
 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 The Metro theme support is useful for commercial applications in order to attract end users with inspiring UI look and feel.
 
@@ -21,13 +21,13 @@ The Metro theme support is useful for commercial applications in order to attrac
 
 
 
-Properties
+### Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 GridVisualStyle</td><td>
@@ -35,14 +35,14 @@ This is an enumeration type property. It is used to get or set the visual styles
 </table>
 
 
-Events
+### Events
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 ThemeChanged</td><td>
@@ -56,24 +56,21 @@ Occurs when the ThemesEnabled property is changed.</td></tr>
 You can apply the Metro theme to the PivotGrid control by setting the GridVisualStyles property as Metro. The following code example illustrates this.
 
 
+{% highlight c# %}
 
-<table>
-<tr>
-<td>
-[C#]this.pivotGridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro;</td></tr>
-<tr>
-<td>
- [VB]Me.pivotGridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles. </td></tr>
-</table>
+this.pivotGridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.pivotGridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles. 
+
+{% endhighlight %}
 
 
 The following screenshot is a sample output for the previous code.
 
 
 
-{{ '![](Metro-Theme-for-PivotGrid-Control_images/Metro-Theme-for-PivotGrid-Control_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
+![](Metro-Theme-for-PivotGrid-Control_images/Metro-Theme-for-PivotGrid-Control_img1.png)

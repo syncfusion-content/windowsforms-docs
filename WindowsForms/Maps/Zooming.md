@@ -13,6 +13,7 @@ There are two ways to zoom the Maps. They are:
 
 * ZoomFactor
 * ZoomLevel
+
 ## Zoom with ZoomFactor 
 
 
@@ -20,7 +21,7 @@ By changing the ZoomFactor value it is possible to Zoom the Map. If ZoomFactor v
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -48,9 +49,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -99,14 +100,12 @@ public partial class Form1 : Form
         }
 
      }       
+	 
+{% endhighlight %}
 
 Screenshot:
 
-{{ '![](Zooming_images/Zooming_img1.png)' | markdownify }}
-{:.image }
-
-
-
+![](Zooming_images/Zooming_img1.png)
 
 ## Zoom with ZoomLevel 
 
@@ -114,7 +113,7 @@ When changing the ZoomLevel it will automatically change the ZoomFactor value, s
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -142,9 +141,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -190,11 +189,7 @@ public partial class Form1 : Form
 
      }       
 
+{% endhighlight %}
 
-
-Screenshot:{{ '![](Zooming_images/Zooming_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
+Screenshot:
+![](Zooming_images/Zooming_img2.png)
