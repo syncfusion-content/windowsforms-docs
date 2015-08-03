@@ -21,11 +21,11 @@ Chart is used as a means to show the graphical representation of two values. For
 
 
 
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.jpeg)
 
 
-Key Features
+
+### Key Features
 
 Some of the key features of Essential Chart are listed below.
 
@@ -40,7 +40,7 @@ Some of the key features of Essential Chart are listed below.
 * Multiple Chart Titles and Multiple Legends can be provided with abilities to format the Title text. 
 * Chart Breaks are introduced in this version. Breaks are very useful when you use series points with large difference. 
 
-User Guide Structure
+### User Guide Structure
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Tools controls. It is organized into the following sections:
 
@@ -50,25 +50,25 @@ The product comes with numerous samples as well as an extensive documentation to
 * Getting Started - This section guides you on getting started with Windows application, controls etc.
 * Concepts and Features - The features of Essential Chart are illustrated with use case scenarios, code examples and screen shots under this section.
 
-Document Conventions
+### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
 
 
-_Table_ _1_: Conventions_
+_Table_ _1_: _Conventions_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-ICON</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+ICON</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
 ![](Overview_images/Overview_img2.jpeg)
-{:.image }
+
 Note:</td><td>
 Represents important information</td></tr>
 <tr>
@@ -80,54 +80,76 @@ Represents an example</td></tr>
 <td>
 Tip</td><td>
 ![](Overview_images/Overview_img3.jpeg)
-{:.image }
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Important Note</td><td>
 ![](Overview_images/Overview_img4.jpeg)
-{:.image }
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
+
 ## Prerequisites and Compatibility
 
 This section covers the requirements mandatory for using EssentialChart control. It also lists operating systems and browsers compatible with the product.
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed in the following table.
 
 
 
-_Table_ _2_: Prerequisites_
+_Table_ _2_: _Prerequisites_
 
 <table>
 <tr>
-<td>
-Development Environments</td><td>
-.NET Framework versions</td></tr>
+<th>
+Development Environments</th><th>
+.NET Framework versions</th></tr>
 <tr>
 <td>
-* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 (Ultimate and Express)* Visual Studio 2008 (Team, Professional, Standard, and Express)* Visual Studio 2005 (Team, Professional, Standard, and Express)* Borland Delphi for .NET* SharpCode</td><td>
-* .NET 4.5 RTM* .NET 4.0* .NET 3.5* .NET 2.0</td></tr>
+<ul>
+<li>
+Visual Studio 2013</li>
+<li>Visual Studio 2012</li>
+<li>Visual Studio 2010 (Ultimate and Express)</li>
+<li>Visual Studio 2008 (Team, Professional, Standard, and Express)</li>
+<li>Visual Studio 2005 (Team, Professional, Standard, and Express)</li>
+<li>Borland Delphi for .NET</li>
+<li>SharpCode</li></td><td>
+<li>.NET 4.5 RTM</li>
+<li>.NET 4.0</li>
+<li>.NET 3.5</li>
+<li>.NET 2.0</li></td></tr>
+</ul>
 </table>
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed in the following table.
 
-_Table_ _3_: Compatibility_
+_Table_ _3_: _Compatibility_
 
 <table>
 <tr>
-<td>
-Operating Systems</td></tr>
+<th>
+Operating Systems</th></tr>
 <tr>
 <td>
-* Windows 8.1 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<ul>
+<li> Windows 8.1 (32 bit and 64 bit)</li>
+<li> Windows Server 2008 (32 bit and 64 bit)</li>
+<li> Windows 7 (32 bit and 64 bit)</li>
+<li> Windows Vista (32 bit and 64 bit)</li>
+<li> Windows XP</li>
+<li> Windows 2003</li>
+</ul>
+</td></tr>
 </table>
+
 ## Documentation
 
 
@@ -137,9 +159,9 @@ Syncfusion provides the following documentation segments to provide all necessar
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -152,12 +174,10 @@ Release Notes</td><td>
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the Chart for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
 Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Chart_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
-
-

@@ -19,7 +19,7 @@ Some commonly used statistical formulas that you can apply on the series points 
 
 
 
-_Table_ _150__: BasicStatisticalFormulas_
+_Table_ _150_: _BasicStatisticalFormulas_
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ Total Variation
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img1.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -112,7 +112,7 @@ Between Variation
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img2.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -162,7 +162,7 @@ Between Variation
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img3.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -172,7 +172,7 @@ Within Variation
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img4.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -182,7 +182,7 @@ Within Variation
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img5.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -197,7 +197,7 @@ EssentialChart provides support to perform Anova Test by implementing a method n
 
 
 
-_Table_ _151__: Properties_
+_Table_ _151_: _Properties_
 
 <table>
 <tr>
@@ -241,12 +241,12 @@ The following image displays the results of an ANOVA test.
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg)' | markdownify }}
-{:.image }
 
 
 
 
-_Figure_ _347__: Anova Test_
+
+_Figure_ _347_: _Anova Test_
 
 ### Correlation
 
@@ -261,7 +261,7 @@ When the measured correlation coefficient is positive, the series values would b
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img7.jpeg)' | markdownify }}
-{:.image }
+
 
 
 where,
@@ -276,7 +276,7 @@ The Correlation Coefficient can easily be calculated by using the Correlation me
 
 
 
-_Table_ _152__: Properties_
+_Table_ _152_: _Properties_
 
 <table>
 <tr>
@@ -325,7 +325,7 @@ Correlation1=BasicStatisticalFormulas.Correlation(series,series1)
 
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img8.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For further details, refer to this Browser Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\ Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -354,7 +354,7 @@ The Covariance can easily be calculated by using the Covariance method available
 
 
 
-_Table_ _153__: Property_
+_Table_ _153_: _Property_
 
 <table>
 <tr>
@@ -403,7 +403,7 @@ Covariance1=BasicStatisticalFormulas.Covariance (series,series1)
 
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img9.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For further details, refer to this Browser Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -427,7 +427,7 @@ F-Test can be easily performed by using the FTest method of BasicStatisticalForm
 
 
 
-_Table_ _154__: F-Test_
+_Table_ _154_: _F-Test_
 
 <table>
 <tr>
@@ -466,7 +466,7 @@ Dim ttr As FTestResult = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisti
 
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img10.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For further details, refer to this Browser Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -477,7 +477,7 @@ Mean is statistical formula that returns the arithmetic average of series y valu
 
 
 
-_Table_ _155__: Mean_
+_Table_ _155_: _Mean_
 
 <table>
 <tr>
@@ -526,7 +526,7 @@ calculatedMean = BasicStatisticalFormulas.Mean(series1)
 
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img11.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For further details, refer to this Browser Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -539,7 +539,7 @@ Median can be found out for any series by using the Median method of BasicStatis
 
 
 
-_Table_ _156__: Median_
+_Table_ _156_: _Median_
 
 <table>
 <tr>
@@ -588,7 +588,7 @@ calculatedMedian = BasicStatisticalFormulas.Median(series1)
 
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img12.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For further details, refer to this Browser Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -603,7 +603,7 @@ The Standard Deviation can be calculated for any series by using the StandardDev
 
 
 
-_Table_ _157__: StandardDeviation_
+_Table_ _157_: _StandardDeviation_
 
 <table>
 <tr>
@@ -652,7 +652,7 @@ Deviation1 = BasicStatisticalFormulas. StandartDeviation  (series1,false)
 
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img13.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For further details, refer to this Browser Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -694,7 +694,7 @@ This formula performs a T-test for two groups of data and assumes unequal varian
 This analysis tool is referred to as a heteroscedastic t-test and can be used when the groups that are under study are distinct. Use a paired test when there is one group before and after a treatment.
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img14.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For programming example, refer to the following Browser Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -746,7 +746,7 @@ The TTest formula for equal variances can be calculated by using the TTestEqualV
 
 
 
-_Table_ _158__: Property_
+_Table_ _158_: _Property_
 
 <table>
 <tr>
@@ -809,7 +809,7 @@ _Md = µ1 - µ2_
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img15.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -829,7 +829,7 @@ The TTest formula for unequal variances can be calculated by using the TTestUnEq
 
 
 
-_Table_ _159__: Properties_
+_Table_ _159_: _Properties_
 
 <table>
 <tr>
@@ -881,7 +881,7 @@ Steps to perform the test
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img16.png)' | markdownify }}
-{:.image }
+
 
 
 5. Compute the t-statistic as given below.
@@ -899,7 +899,7 @@ The TTest formula for dependent samples can be calculated by using the TTestPair
 
 
 
-_Table_ _160__: Properties_
+_Table_ _160_: _Properties_
 
 <table>
 <tr>
@@ -954,7 +954,7 @@ The variance can be computed for any series by using the method Variance of Basi
 
 
 
-_Table_ _161__: Variance_
+_Table_ _161_: _Variance_
 
 <table>
 <tr>
@@ -1016,7 +1016,7 @@ This test requires the sample to be random and is taken from a population that i
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img17.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1026,7 +1026,7 @@ This test requires the sample to be random and is taken from a population that i
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img18.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1039,7 +1039,7 @@ The Z-test can be carried out on any two series values by using the ZTest method
 
 
 
-_Table_ _162__: Z Test Properties_
+_Table_ _162_: _Z Test Properties_
 
 <table>
 <tr>
@@ -1083,7 +1083,7 @@ Dim ztr As ZTestResult = BasicStatisticalFormulas.ZTest(Convert.ToDouble(TextBox
 
 
 > {{ '![](Statistical-Formulas_images/Statistical-Formulas_img19.jpeg)' | markdownify }}
-{:.image }
+
 _Note: For programming example, refer to the following Sample:_
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
@@ -1094,7 +1094,7 @@ Listed below are some common statistical formulas that are implemented in the Ut
 
 
 
-_Table_ _163__: Utilities_
+_Table_ _163_: _Utilities_
 
 <table>
 <tr>
@@ -1173,7 +1173,7 @@ There are two widely used utility functions, the Gamma and Beta functions, which
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img20.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1186,7 +1186,7 @@ The Beta method of the UtilityFunctions class calculates the beta function for 
 
 
 
-_Table_ _164__: Properties_
+_Table_ _164_: _Properties_
 
 <table>
 <tr>
@@ -1229,7 +1229,7 @@ The Beta Distribution can be defined as a family of probability distributions di
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg)' | markdownify }}
-{:.image }
+
 
 
 where Bx(a,ß) is the incomplete beta function and Ix(a,ß) is the regularized incomplete beta function.
@@ -1240,7 +1240,7 @@ The BetaCumulativeDistribution method of the UtilityFunctions class returns the 
 
 
 
-_Table_ _165__: Properties_
+_Table_ _165_: _Properties_
 
 <table>
 <tr>
@@ -1313,7 +1313,7 @@ Binomial Coefficient is an utility function used in statistical calculations. Th
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img22.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1328,7 +1328,7 @@ The Binomial method of the UtilityFunctions class returns the binomial coefficie
 
 
 
-_Table_ _166__: Properties_
+_Table_ _166_: _Properties_
 
 <table>
 <tr>
@@ -1374,7 +1374,7 @@ The InverseBetaCumulativeDistribution method of the UtilityFunctions class retur
 
 
 
-_Table_ _167__: Properties_
+_Table_ _167_: _Properties_
 
 <table>
 <tr>
@@ -1418,7 +1418,7 @@ The Error function, denoted as Erf(x), gives the probability that a measurement 
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img23.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1430,7 +1430,7 @@ Here is the plot of error function.
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img24.jpeg)' | markdownify }}
-{:.image }
+
 
 
 Using the formula
@@ -1439,7 +1439,7 @@ The Erf method of the UtilityFunctions class returns integral of the Gauss curve
 
 
 
-_Table_ _168__: Utility Functions_
+_Table_ _168_: _Utility Functions_
 
 <table>
 <tr>
@@ -1486,7 +1486,7 @@ The factorial function is defined by the following expression.
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img25.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1501,7 +1501,7 @@ The Factorial method of the UtilityFunctions class returns the factorial value f
 
 
 
-_Table_ _169__: Properties_
+_Table_ _169_: _Properties_
 
 <table>
 <tr>
@@ -1548,7 +1548,7 @@ This formula returns cumulative F Distribution which can be defined as the ratio
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img26.jpeg)' | markdownify }}
-{:.image }
+
 
 
 where,
@@ -1565,7 +1565,7 @@ FCumulativeDistribution is calculated using the Statistics.UtilityFunctions clas
 
 
 
-_Table_ _170__: Properties_
+_Table_ _170_: _Properties_
 
 <table>
 <tr>
@@ -1612,7 +1612,7 @@ The Gamma Function is an attempt to generalize the factorial function to real an
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img27.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1624,7 +1624,7 @@ For a complex number x with a positive real part, the function can be given by
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img28.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1632,7 +1632,7 @@ For a complex number x with a positive real part, the function can be given by
 Special Values of gamma function
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img29.jpeg)' | markdownify }}
-{:.image }
+
 
 
 Using the Formula
@@ -1641,7 +1641,7 @@ The Gamma function is calculated using the Statistics.UtilityFunctions class. Th
 
 
 
-_Table_ _171__: Statistics.UtilityFunctions_
+_Table_ _171_: _Statistics.UtilityFunctions_
 
 <table>
 <tr>
@@ -1686,7 +1686,7 @@ The formula for the cumulative distribution function for the gamma distribution 
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img30.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1696,7 +1696,7 @@ where is the gamma function defined above and is the incomplete gamma function. 
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img31.jpeg)' | markdownify }}
-{:.image }
+
 
 
 Example
@@ -1761,7 +1761,7 @@ The below table describes this function in detail.
 
 
 
-_Table_ _172__: Inverse Error Function_
+_Table_ _172_: _Inverse Error Function_
 
 <table>
 <tr>
@@ -1811,7 +1811,7 @@ InverseFCumulativeDistribution is calculated using the Statistics.UtilityFunctio
 
 
 
-_Table_ _173__: Statistics.UtilityFunctions_
+_Table_ _173_: _Statistics.UtilityFunctions_
 
 <table>
 <tr>
@@ -1860,7 +1860,7 @@ InverseNormalDistribution is calculated using the Statistics.UtilityFunctions cl
 
 
 
-_Table_ _174__: Statistics.UtilityFunctions_
+_Table_ _174_: _Statistics.UtilityFunctions_
 
 <table>
 <tr>
@@ -1911,7 +1911,7 @@ The normal density function is given by,
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img32.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1919,10 +1919,10 @@ The normal density function is given by,
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg)' | markdownify }}
-{:.image }
 
 
-_Figure_ _349__: Normal Density Function_
+
+_Figure_ _349_: _Normal Density Function_
 
 Different values of __ and  yield different normal density curves and hence different normal distributions.  All normal density curves satisfy the following property which is often referred to as the__Empirical Rule.
 
@@ -1938,7 +1938,7 @@ NormalDistribution is calculated using the Statistics.UtilityFunctions class. Th
 
 
 
-_Table_ _175__: NormalDistribution_
+_Table_ _175_: _NormalDistribution_
 
 <table>
 <tr>
@@ -1991,7 +1991,7 @@ The log-normal distribution has a probability density function (pdf),
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img34.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2001,7 +2001,7 @@ for x > 0, where µ and s are the median and standard deviation of the variable'
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img35.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2011,20 +2011,20 @@ and the variance is,
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img36.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img37.jpeg)' | markdownify }}
-{:.image }
+
 
 
 Using the formula
 
 
 
-_Table_ _176__: Properties_
+_Table_ _176_: _Properties_
 
 <table>
 <tr>
@@ -2074,7 +2074,7 @@ InverseTCumulativeDistribution is calculated using the Statistics.UtilityFunctio
 
 
 
-_Table_ _177__: Properties_
+_Table_ _177_: _Properties_
 
 <table>
 <tr>
@@ -2119,13 +2119,13 @@ double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degree
 This formula will return the T cumulative distribution (student's t-distribution) for a degree of freedom > 0. When there is a need to estimate the mean of a normally distributed population for a given sample, the t-distribution comes into action. It is the basis of the popular t-tests to find out the difference between two sample means.
 
 For a sample with size n drawn from a normal population with mean  and standard deviation . Let {{ '![](Statistical-Formulas_images/Statistical-Formulas_img38.png)' | markdownify }}
-{:.image }
+
  and _s_  denote the sample mean and sample standard deviation respectively. Then the quantity 
 
 
 
 {{ '![](Statistical-Formulas_images/Statistical-Formulas_img39.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2138,7 +2138,7 @@ TCumulativeDistribution is calculated using the Statistics.UtilityFunctions clas
 
 
 
-_Table_ _178__: Properties_
+_Table_ _178_: _Properties_
 
 <table>
 <tr>

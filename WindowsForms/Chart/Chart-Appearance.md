@@ -15,113 +15,84 @@ The following topics under this section discusses about various properties that 
 
 EssentialChart lets you customize the background colors of different portions of the chart.
 
-Outside the Chart Area
+### Outside the Chart Area
 
 Use the BackInterior property of the chart to customize the background of the chart that is outside the chart area. This is usually where the legend and the chart title get rendered. By default it is set to White color.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.LightBlue);
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.LightBlue)
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img1.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img1.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _317_: _BackInterior = "LightBlue"_
 
-
-
-
-_Figure_ _317__: BackInterior = "LightBlue"_
-
-
-
-Inside the Plot Area
+### Inside the Plot Area
 
 Use the ChartArea.BackInterior to customize the background of the rectangular region where the points are plotted.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartArea.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.SkyBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.ChartArea.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.SkyBlue)
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img2.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img2.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _318_: _ChartArea.BackInterior = "SkyBlue"_ 
 
-
-_Figure_ _318__: ChartArea.BackInterior = "SkyBlue"_ 
-
-
-
-Inside the Chart Area
+### Inside the Chart Area
 
 Use the ChartInterior property of the chart to customize the background of the chart area. By default it is set to White color.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartInterior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.PaleTurquoise, System.Drawing.Color.LightBlue);
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 this.chartControl1.ChartInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.PaleTurquoise, System.Drawing.Color.LightBlue)
 
+{% endhighlight %}
 
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img3.jpeg)' | markdownify }}
-{:.image }
+![](Chart-Appearance_images/Chart-Appearance_img3.jpeg)
 
-
-
-
-_Figure_ _319__: ChartInterior = "LightBlue"_
+_Figure_ _319_: _ChartInterior = "LightBlue"_
 
 ## Background Image
 
-Chart Settings
+### Chart Settings
 
 In Windows Forms, use the BackgroundImage property to specify a custom image as the background of the chart. The image layout can also be specified using the property below.
 
 
 
-_Table_ _138__: Chart Settings_
+_Table_ _138_: _Chart Settings_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackgroundImage</td><td>
@@ -133,45 +104,37 @@ Indicates the background image layout used for the component. Possible values ar
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chartControl1.BackgroundImage")));
 
 this.chartControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ChartControl1.BackgroundImage = CType((Resources.GetObject("chartControl1.BackgroundImage")), System.Drawing.Image)
 
 Me.ChartControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img4.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img4.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _320_: _Background Image set for the Chart_
 
-
-_Figure_ _320__: Background Image set for the Chart_
-
-ChartArea Background Image
+### ChartArea Background Image
 
 The chart area can also be rendered with a custom background image and this can be set using the ChartAreaBackImage property. 
 
-
-
-_Table_ _139__: ChartAreaBackImage_
+_Table_ _139_: _ChartAreaBackImage_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ChartAreaBackImage</td><td>
@@ -179,77 +142,55 @@ Specifies the image to be used as the background in the chart area.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartAreaBackImage = myCustomImage;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ChartControl1.ChartAreaBackImage = myCustomImage
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img5.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img5.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _321_: _Background Image set for the Chart Area_ 
 
-
-
-
-_Figure_ _321__: Background Image set for the Chart Area_ 
-
-
-
-Chart Interior Background Image
+### Chart Interior Background Image
 
 Chart Interior can be rendered with a custom background image using the ChartInteriorBackImage property.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartInteriorBackImage = myCustomImage;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ChartControl1.ChartInteriorBackImage = myCustomImage
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img6.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img6.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _322__: Background Image set for the Chart Interior_
+_Figure_ _322_: _Background Image set for the Chart Interior_
 
 ## Border and Margins
 
-Chart Area Border
+### Chart Area Border
 
 Borders of the chart area can be customized using the below border properties.
 
-
-
-_Table_ _140__: Chart Area Border Properties_
+_Table_ _140_: _Chart Area Border Properties_
 
 <table>
 <tr>
-<td>
-ChartArea Property</td><td>
-Description</td></tr>
+<th>
+ChartArea Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -265,13 +206,13 @@ Specifies the width of the border.</td></tr>
 </table>
 
 
-_Table_ _141__: BorderAppearance_
+_Table_ _141_: _BorderAppearance_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td></tr>
+<th>
+Property</th><th>
+Description </th></tr>
 <tr>
 <td>
 BaseColor</td><td>
@@ -290,12 +231,7 @@ SkinStyle</td><td>
 Specifies the border skin style.</td></tr>
 </table>
 
-
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartArea.BorderColor = System.Drawing.Color.Goldenrod;
 
@@ -317,11 +253,9 @@ this.chartControl1.BorderAppearance.Interior.ForeColor = System.Drawing.Color.Ma
 
 this.chartControl1.BorderAppearance.SkinStyle = Syncfusion.Windows.Forms.Chart.ChartBorderSkinStyle.Raised;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ChartControl1.ChartArea.BorderColor = System.Drawing.Color.Goldenrod
 
@@ -343,21 +277,21 @@ Me.chartControl1.BorderAppearance.Interior.ForeColor = System.Drawing.Color.Maro
 
 Me.chartControl1.BorderAppearance.SkinStyle = Syncfusion.Windows.Forms.Chart.ChartBorderSkinStyle.Raised 
 
+{% endhighlight %}
 
-
-Chart Area Shadow
+### Chart Area Shadow
 
 The chart area can also be rendered with a shadow. Turn this feature on, by enabling the ChartAreaShadow property. 
 
 
 
-_Table_ _142__: Properties_
+_Table_ _142_: _Properties_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ChartAreaShadow</td><td>
@@ -372,11 +306,7 @@ ShadowWidth</td><td>
 Specifies the width of the shadow.</td></tr>
 </table>
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartAreaShadow = true;
 
@@ -384,11 +314,9 @@ this.chartControl1.ShadowColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Dra
 
 this.chartControl1.ShadowWidth = 7;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ChartControl1.ChartAreaShadow = True
 
@@ -396,65 +324,56 @@ Me.ChartControl1.ShadowColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawi
 
 Me.chartControl1.ShadowWidth = 7
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img7.png)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img7.png)' | markdownify }}
-{:.image }
+_Figure_ _323_: _ChartAreaShadow = "True"_
 
-
-
-
-_Figure_ _323__: ChartAreaShadow = "True"_
-
-Chart Area Margins
+### Chart Area Margins
 
 Margin for the chart area can be controlled using ChartAreaMargins property. It indicates the margin that will be deduced from Chart Area's representation rectangle.
 
 
 
-_Table_ _143__: Chart Area Margins_
+_Table_ _143_: _Chart Area Margins_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ChartAreaMargins</td><td>
 Specifies the amount of pixels between the chart area border and the chart plot area. Default is {10, 10, 10, 10}.</td></tr>
 </table>
 
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartAreaMargins = new Syncfusion.Windows.Forms.Chart.ChartMargins(10, 10, 10, 20);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ChartControl1.ChartAreaMargins = New Syncfusion.Windows.Forms.Chart.ChartMargins(10, 10, 10, 20)
 
+{% endhighlight %}
 
-
-ChartPlot Area Margins
+### ChartPlot Area Margins
 
 The margins for ChartPlotArea is specified in ChartPlotAreaMargins property. 
 
 
 
-_Table_ _144__: ChartPlot Area Margins_
+_Table_ _144_: _ChartPlot Area Margins_
 
 <table>
 <tr>
-<td>
-ChartControl Property</td><td>
-Description</td></tr>
+<th>
+ChartControl Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ChartPlotAreaMargins</td><td>
@@ -470,9 +389,7 @@ Gets or sets the edge labels drawing mode.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.PrimaryYAxis.EdgeLabelsDrawingMode = Syncfusion.Windows.Forms.Chart.ChartAxisEdgeLabelsDrawingMode.Shift;
 
@@ -480,11 +397,9 @@ this.chartControl1.ChartArea.AdjustPlotAreaMargins = Syncfusion.Windows.Forms.Ch
 
 this.chartControl1.ChartArea.ChartPlotAreaMargins.Left = 200;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.PrimaryYAxis.EdgeLabelsDrawingMode = Syncfusion.Windows.Forms.Chart.ChartAxisEdgeLabelsDrawingMode.Shift
 
@@ -492,29 +407,30 @@ Me.chartControl1.ChartArea.AdjustPlotAreaMargins = Syncfusion.Windows.Forms.Char
 
 Me.chartControl1.ChartArea.ChartPlotAreaMargins.Left = 200
 
+{% endhighlight %}
 
-
-Spacing between elements
+### Spacing between elements
 
 The spacing between elements in the chart is specified using the ElementsSpacing property. For example, the space between the chart right border and legend right border if LegendPosition is set to Right.
 
 
 
-_Table_ _145__: Properties_
+_Table_ _145_: _Properties_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ElementsSpacing</td><td>
 Specifies the spacing between the elements in the chart. Default is 20.</td></tr>
 </table>
+
 ## Foreground Settings
 
-Chart Title
+### Chart Title
 
 The ChartControl provides properties to customize and align the text within the control. Below are the text properties.
 
@@ -524,13 +440,13 @@ Here are some properties that affect the title text in the chart.
 
 
 
-_Table_ _146__: Chart Title_
+_Table_ _146_: _Chart Title_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Text</td><td>
@@ -554,9 +470,7 @@ Indicates the foreground color of the title.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.Text = "Illustrates Foreground Settings";
 
@@ -566,11 +480,9 @@ this.chartControl1.ForeColor = System.Drawing.Color.Bisque;
 
 this.chartControl1.TextPosition = ChartTextPosition.Top;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ChartControl1.Text = "Illustrates Foreground Settings"
 
@@ -580,15 +492,11 @@ Me.chartControl1.ForeColor = System.Drawing.Color.Bisque
 
 Me.chartControl1.TextPosition = ChartTextPosition.Top
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img8.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img8.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _324__: Illustrates changes affecting the Title Text_
+_Figure_ _324_: _Illustrates changes affecting the Title Text_
 
 General Text Related settings
 
@@ -596,13 +504,13 @@ The following text related properties affect all the text rendered in the chart.
 
 
 
-_Table_ _147__: Properties_
+_Table_ _147_: _Properties_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 TextRenderingHint</td><td>
@@ -615,7 +523,7 @@ Specifies how chart elements should be rendered. Possible values:* AntiAlias * H
 
 
 
-See Also
+### See Also
 
 Axis Label Text Formatting, Appearance and Positioning, (for info on changing axis label text settings)
 
@@ -627,15 +535,11 @@ Chart Legend (for info on changing legend text settings)
 
 ## Multiple Chart Titles
 
-Default Title
+### Default Title
 
 EssentialChart'sTitle property lets you edit the default title for a chart as follows. We can set font style for the title using Title.Font property. The default value is Verdana, 14, Regular.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 //Default title
 
@@ -643,11 +547,9 @@ chartControl1.Title.Text = "Essential Chart";
 
 this.chartControl1.Title.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Default title
 
@@ -655,37 +557,31 @@ chartControl1.Title.Text = "Essential Chart"
 
 chartControl1.Title.Font = New System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold)
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img9.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img9.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _325__: Chart Title Set_
+_Figure_ _325_: _Chart Title Set_
 
 The above default chart title is simply the first in the list of titles that can be specified for the Chart.
 
-Multiple Titles
+### Multiple Titles
 
 * Multiple custom Chart Titles can be added to Chart.Titles Collection.
 * Supports numerous docking styles (Floating, Left, Right, Bottom or Top) for each title.
 * Each of the custom Titles can be aligned to any position as required.
 
-Titles Positioning
+### Titles Positioning
 
 Below listed properties will help you to modify the positioning of the Chart Title.
 
-
-
-_Table_ _148__: Titles Positioning_
+_Table_ _148_: _Titles Positioning_
 
 <table>
 <tr>
-<td>
-ChartTitle Property</td><td>
-Description</td></tr>
+<th>
+ChartTitle Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Position</td><td>
@@ -700,29 +596,17 @@ When docked to a side, this property specifies how the title panel should be ali
 Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.* Movable - It is movable.* All - It is movable and dockable.* None - It is neither movable nor dockable.</td></tr>
 </table>
 
-
-
-Title Look and Feel
+### Title Look and Feel
 
 There are several appearance options that can be applied on the ChartTitle instance as illustrated in this ChartTitle Collection Editor.
 
+'![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)
 
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _326__: ChartTitle Collection Editor_
+_Figure_ _326_: _ChartTitle Collection Editor_
 
 In code, you can add more titles to this list as follows.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 //Default title (the first entry in the Titles list)
 
@@ -738,11 +622,9 @@ title.Text = "Custom Chart Title";
 
 this.chartControl1.Titles.Add(title);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Default title (the first entry in the Titles list)
 
@@ -758,29 +640,19 @@ title.Text = "Custom Chart Title"
 
 Me.ChartControl1.Titles.Add(title)
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img11.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img11.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _327_: _Chart with Multiple Chart Titles_
 
-
-
-
-_Figure_ _327__: Chart with Multiple Chart Titles_
-
-Multiline Chart Title
+### Multiline Chart Title
 
 You can now wrap the Chart titles and display them as multiline text. Set multiline title text in ChartTitle.Text property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
 
+![](Chart-Appearance_images/Chart-Appearance_img12.jpeg)
 
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img12.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _328__: Multiline Title for Essential Chart_
+_Figure_ _328_: _Multiline Title for Essential Chart_
 
 ## Custom Drawing
 
@@ -788,11 +660,7 @@ Essential Chart lets you render any data on the chart area. If the built-in feat
 
 You can do so by listening to the ChartAreaPaint event. This event is raised both when a chart is painted as well as when the chart is exported to other image formats, SVG, etc. Remember to do your custom drawing in this event instead of in the Paint event (which will not be called during chart export).
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 private void chartControl1_ChartAreaPaint(object sender, PaintEventArgs e)
 
@@ -844,11 +712,9 @@ private void chartControl1_ChartAreaPaint(object sender, PaintEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As PaintEventArgs)
 
@@ -898,19 +764,15 @@ Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As Pain
 
 End Sub
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img13.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img13.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _329_: _Chart with Custom Drawing - Arrows at the end of the Axes and a Diagonal Line_
 
+### See Also
 
-
-
-_Figure_ _329__: Chart with Custom Drawing - Arrows at the end of the Axes and a Diagonal Line_
-
-See Also
-
-Chart Area Bounds
+#### Chart Area Bounds
 
 ## Watermark Support
 
@@ -920,13 +782,13 @@ Below are the WaterMark properties with descriptions.
 
 
 
-_Table_ _149__: Watermark Properties_
+_Table_ _149_: _Watermark Properties_
 
 <table>
 <tr>
-<td>
-ChartAxis Property</td><td>
-Description</td></tr>
+<th>
+ChartAxis Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Text</td><td>
@@ -954,9 +816,7 @@ Used to specify whether watermark should be shown on top of the chart.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartArea.WaterMark.Text="Syncfusion Chart";
 
@@ -969,11 +829,9 @@ this.chartControl1.ChartArea.Watermark.VerticalAlignment=ChartAlignment.Near;
 
 this.chartControl1.ChartArea.Watermark.ZOrder=ChartWaterMarkOrder.Behind;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.ChartArea.WaterMark.Text="Syncfusion Chart"
 
@@ -986,23 +844,17 @@ Me.chartControl1.ChartArea.Watermark.VerticalAlignment=ChartAlignment.Near
 
 Me.chartControl1.ChartArea.Watermark.ZOrder=ChartWaterMarkOrder.Behind;
 
+{% endhighlight %}
 
+![](Chart-Appearance_images/Chart-Appearance_img14.jpeg)
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img14.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _330__: "Image" displayed as Watermark; Opacity = "60"; HorizontalAlignment = "Near"; VerticalAlignment = "Near"; ZOrder = "Behind"_
+_Figure_ _330_: _"Image" displayed as Watermark; Opacity = "60"; HorizontalAlignment = "Near"; VerticalAlignment = "Near"; ZOrder = "Behind"_
 
 ## Interlaced Grid Background
 
 Chart supports interlaced grid which draws alternative grid background in x-axis and y-axis. The color is also customizable.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.InterlacedGrid = true;
 this.chartControl1.PrimaryXAxis.InterlacedGridInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(166, 184, 200);
@@ -1011,10 +863,9 @@ this.chartControl1.PrimaryYAxis.InterlacedGrid = True;
 this.chartControl1.PrimaryYAxis.InterlacedGridInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(124, 144, 179));
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.PrimaryXAxis.InterlacedGrid = True
 Me.chartControl1.PrimaryXAxis.InterlacedGridInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(166, 184, 200)
@@ -1023,28 +874,23 @@ Me.chartControl1.PrimaryYAxis.InterlacedGrid = True
 Me.chartControl1.PrimaryYAxis.InterlacedGridInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(124, 144, 179))
 
 
+{% endhighlight %}
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img15.jpeg)' | markdownify }}
-{:.image }
+![](Chart-Appearance_images/Chart-Appearance_img15.jpeg)
 
-
-_Figure_ _331__: Interlaced Grid_
+_Figure_ _331_: _Interlaced Grid_
 
 The preceding image illustrates interlaced grid background for the chart.
 
 A sample which illustrates the Interlaced Grid for the Chart is available in the below sample installation location.
 
-<Sample location>\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Interlaced Grid
+&lt;Sample location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Interlaced Grid
 
 ## Minor Grid Lines
 
 Chart comes with minor lines support which will draw lines along the intervals provided. The appearance of these line is also customizable similar to the major grid lines. 
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.DrawMinorGrid = true;
 
@@ -1056,11 +902,9 @@ this.chartControl1.PrimaryXAxis.MinorGridLineType.ForeColor = Color.Red;
 
 chartControl1.PrimaryXAxis.SmallTicksPerInterval = 1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.PrimaryXAxis.DrawMinorGrid = True
 
@@ -1072,21 +916,9 @@ Me.chartControl1.PrimaryXAxis.MinorGridLineType.ForeColor = Color.Red
 
 chartControl1.PrimaryXAxis.SmallTicksPerInterval = 1
 
+{% endhighlight %}
 
-
-> {{ '![](Chart-Appearance_images/Chart-Appearance_img16.jpeg)' | markdownify }}
-{:.image }
-_Note: In the above code we have specified value for SmallTicksPerInterval property. No of minor grids lines depends on the value of this property of Chart Axis. Default value is 0; So, MinorGridLines will not appear in the chart by default. To see the minor grid lines in the chart, set SmallTicksPerInterval property to 1 or greater that 1._
-
-
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img17.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _332__: Custom minor grid lines on x-axis._
+_Figure_ _332_: _Custom minor grid lines on x-axis._
 
 ## Chart Skins 
 
@@ -1109,129 +941,84 @@ Some of the available skins are:
 * Vista
 * VS2010
 
-
-
-[C#]
+{% highlight c# %}
 
 this.chartControl1.Skins = Skins.Office2007Blue;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.chartControl1.Skins = Skins.Office2007Blue
 
-
+{% endhighlight %}
 
 The following output is displayed when the Skins value is set to Office2007 Black.
 
+![](Chart-Appearance_images/Chart-Appearance_img18.png)
 
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img18.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _333__: Office2007 Black_
+_Figure_ _333_: _Office2007 Black_
 
 The following output is displayed when the Skins value is set to Office2007 Blue.
 
+![](Chart-Appearance_images/Chart-Appearance_img19.png)
 
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img19.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _334__: Office2007 Blue_
+_Figure_ _334_: _Office2007 Blue_
 
 The following output is displayed when the Skins value is set to Office2007 Silver.
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img20.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img20.png)
 
 The following output is displayed when the Skins value is set to Almond.
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img21.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img21.png)
 
 The following output is displayed when the Skins value is set to Blend.
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img22.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img22.png)
 
 The following output is displayed when the Skins value is set to Blueberry.
 
-
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img23.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img23.png)
 
 The following output is displayed when the Skins value is set to Marble.
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img24.png)' | markdownify }}
-{:.image }
+![](Chart-Appearance_images/Chart-Appearance_img24.png)
 
-
-_Figure_ _339__: Marble_
+_Figure_ _339_: _Marble_
 
 The following output is displayed when the Skins value is set to Midnight.
 
-
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img25.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img25.png)
 
 The following output is displayed when the Skins value is set to Monochrome.
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img26.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img26.png)
 
 The following output is displayed when the Skins value is set to Olive.
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img27.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img27.png)
 
 The following output is displayed when the Skins value is set to Sandune.
 
-
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img28.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img28.png)
 
 The following output is displayed when the Skins value is set to Turquoise.
 
-{{ '![](Chart-Appearance_images/Chart-Appearance_img29.png)' | markdownify }}
-{:.image }
-
+![](Chart-Appearance_images/Chart-Appearance_img29.png)
 
 The following output is displayed when the Skins value is set to Vista.
 
+![](Chart-Appearance_images/Chart-Appearance_img30.png)
 
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img30.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _345__: Vista_
+_Figure_ _345_: _Vista_
 
 The following output is displayed when the Skins value is set to VS2010.
 
+![](Chart-Appearance_images/Chart-Appearance_img31.png)
 
-
-{{ '![](Chart-Appearance_images/Chart-Appearance_img31.png)' | markdownify }}
-{:.image }
-
-
-
-
-[C#]
+{% highlight c# %}
 
 ChartSeries ser1 = new ChartSeries("Series 1");
 
@@ -1257,9 +1044,9 @@ ser3.Type = ChartSeriesType.StackingColumn;
 
 ser3.StackingGroup = "FirstGroup";
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim ser1 As New ChartSeries("Series 1")
 
@@ -1285,5 +1072,4 @@ ser3.Type = ChartSeriesType.StackingColumn
 
 ser3.StackingGroup = "FirstGroup"
 
-
-
+{% endhighlight %}

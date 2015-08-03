@@ -19,55 +19,55 @@ This section gives you an idea of the different sections of a Chart control. Bel
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
 
-_Figure_ _5__: Chart Components_
+
+_Figure_ _5_: _Chart Components_
 
 
 
-Chart Title
+### Chart Title
 
 The Charttitle is the area at the top of the Chart control that displays the text of the ChartControl.
 
-Chart Legend 
+### Chart Legend 
 
 The Chartlegend is the portion of the display showing an entry for each of the data series added to the ChartControl. The Chart legend is positioned in line within the ChartControl (but outside the ChartArea) by default. However, if the chart legend is set to floating mode, the Chart legend can be positioned any where inside the Chart control.
 
 The legend can also contain custom items with custom image and text.
 
-Chart Area 
+### Chart Area 
 
 This is the section that holds the plots / graphs that are defined in the Chart. The Chart Area also includes the Chart axes that are defined. A primary X axis and primary Y axis are defined by default.
 
-Chart control
+### Chart control
 
 The ChartControl is the complete visible display for the Control. All other sections will be inside the ChartControl. 
 
-Chart Series
+### Chart Series
 
 Chart Series are the elements present inside the chart area.
 
-Series Symbol
+### Series Symbol
 
 Symbol that can be placed on the series points.
 
-Chart Shadow
+### Chart Shadow
 
 Chart Area Shadow indicates the shadow of the chart area.
 
-Chart Interior
+### Chart Interior
 
 This section is the interior part of the chart control, within the chart area, which contains the data points plotted against X-axis and Y-axis.
 
-Chart Label
+### Chart Label
 
 Represents the label texts on the axes data points in a Chart.
 
-Axis Title
+### Axis Title
 
 Indicates the title for individual axis.
 
@@ -83,13 +83,13 @@ To create a simple chart control and populate it with simple data, follow the st
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
 
-_Figure_ _6__: ChartControl in Toolbox_
+
+   _Figure_ _6_: _ChartControl in Toolbox_
 
 
 
@@ -98,148 +98,139 @@ _Figure_ _6__: ChartControl in Toolbox_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img3.jpeg) 
 
 
 
 
-_Figure_ _7__: Setting Legend Position Property_
+
+   _Figure_ _7_: _Setting Legend Position Property_
 
 
 
 4. The data for the Chart can be added through code. Switch to code view in VS.NET and add the method shown below.
 
+   ~~~ cs
 
+		using Syncfusion.Windows;
 
-[C#]
+		using Syncfusion.Windows.Forms.Chart;
 
 
 
-using Syncfusion.Windows;
+		// Create a new ChartSeries. The string specified is the name of the series.
 
-using Syncfusion.Windows.Forms.Chart;
+		ChartSeries series = new ChartSeries ("Series");
 
 
 
-// Create a new ChartSeries. The string specified is the name of the series.
+		// Set the Text property of the series. This will be used by the legend to display a descriptive name.
 
-ChartSeries series = new ChartSeries ("Series");
+		series.Text = series.Name;
 
 
 
-// Set the Text property of the series. This will be used by the legend to display a descriptive name.
+		// Add points to the series.
 
-series.Text = series.Name;
+		// format (x, y)
 
+		series.Points.Add(1, 400);
 
+		series.Points.Add(2, 385);
 
-// Add points to the series.
+		series.Points.Add(3, 412);
 
-// format (x, y)
+		series.Points.Add(4, 467);
 
-series.Points.Add(1, 400);
+		series.Points.Add(5, 478);
 
-series.Points.Add(2, 385);
+		series.Points.Add(6, 397);
 
-series.Points.Add(3, 412);
+		series.Points.Add(7, 355);
 
-series.Points.Add(4, 467);
+		series.Points.Add(8, 456);
 
-series.Points.Add(5, 478);
+		series.Points.Add(9, 409);
 
-series.Points.Add(6, 397);
 
-series.Points.Add(7, 355);
 
-series.Points.Add(8, 456);
+		// Set the type of Chart.
 
-series.Points.Add(9, 409);
+		series.Type = ChartSeriesType.Column;    
 
 
 
-// Set the type of Chart.
+		// Add the series to the Chart.
 
-series.Type = ChartSeriesType.Column;    
+		this.chartControl1.Series.Add(series);
 
+   ~~~
+   {:.prettyprint }
+         
 
+   ~~~ vbnet
 
-// Add the series to the Chart.
+		Imports Syncfusion.Windows
 
-this.chartControl1.Series.Add(series);         
+		Imports Syncfusion.Windows.Forms.Chart
 
 
 
-[VB.NET]
+		' Create a new ChartSeries. The string specified is the name of the series.
 
+		Dim series As New ChartSeries("Series")
 
 
-Imports Syncfusion.Windows
 
-Imports Syncfusion.Windows.Forms.Chart
+		' Set the Text property of the series. This will be used by the legend.
 
+		series.Text = series.Name
 
 
-' Create a new ChartSeries. The string specified is the name of the series.
 
-Dim series As New ChartSeries("Series")
+		' Add points to the series.
 
+		series.Points.Add(1, 400)
 
+		series.Points.Add(2, 385)
 
-' Set the Text property of the series. This will be used by the legend.
+		series.Points.Add(3, 412)
 
-series.Text = series.Name
+		series.Points.Add(4, 467)
 
+		series.Points.Add(5, 478)
 
+		series.Points.Add(6, 397)
 
-' Add points to the series.
+		series.Points.Add(7, 355)
 
-series.Points.Add(1, 400)
+		series.Points.Add(8, 456)
 
-series.Points.Add(2, 385)
+		series.Points.Add(9, 409)
 
-series.Points.Add(3, 412)
 
-series.Points.Add(4, 467)
 
-series.Points.Add(5, 478)
+		' Set the type of Chart.
 
-series.Points.Add(6, 397)
+		series.Type = ChartSeriesType.Column
 
-series.Points.Add(7, 355)
 
-series.Points.Add(8, 456)
 
-series.Points.Add(9, 409)
+		' Add the series to the Chart.
 
+		Me.chartControl1.Series.Add(series)
 
-
-' Set the type of Chart.
-
-series.Type = ChartSeriesType.Column
-
-
-
-' Add the series to the Chart.
-
-Me.chartControl1.Series.Add(series)
-
-
-
+   ~~~
+   {:.prettyprint }
+   
 5. Now try running the project by selecting the Debug  Start Debugging. The chart will appear as shown below.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _8__: Chart control_
-
-
-
+   ![](Getting-Started_images/Getting-Started_img4.jpeg)
+   
+   _Figure_ _8_: _Chart control_
+   
 See Also
 
 Binding a DataSet to a Chart, Tasks Window

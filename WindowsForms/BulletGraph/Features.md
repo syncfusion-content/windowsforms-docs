@@ -7,15 +7,15 @@ control: Bullet Graph
 documentation: ug
 ---
 
-## Features
+# Features
 
-### Orientation
+## Orientation
 
 The view of the Bullet Graph is changed by setting the Orientation property. Quantitative scale contains two major components: Ticks and Labels. The length of the quantitative scale is customized by using the QuantitativeScaleLength property. The direction of the quantitative scale is personalized by making use of the FlowDirection property it’s either Forward or Backward.
 
-[C#]
+{% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+			BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;
 
@@ -31,25 +31,26 @@ BulletGraph bulletgraph = new BulletGraph();
 
             this.Controls.Add(bulletgraph);
 
-
+{% endhighlight %}
 
 <table>
 <tr>
 <td>
-![D:/Help UGs/BulletGraph/WF/BG_Ver.bmp](Features_images/Features_img1.png)
-{:.image }
+{{' ![D:/Help UGs/BulletGraph/WF/BG_Ver.bmp](Features_images/Features_img1.png)' | markdownify }}
+
 </td><td>
-![D:/Help UGs/BulletGraph/WF/BG_Hor.bmp](Features_images/Features_img2.png)
-{:.image }
+{{' ![D:/Help UGs/BulletGraph/WF/BG_Hor.bmp](Features_images/Features_img2.png)' | markdownify }}
+
 </td></tr>
 </table>
-### Caption Settings
+
+## Caption Settings
 
 The Caption for a Bullet Graph specifies a unique label describing the value represented in the BulletGraph. 
 
-[C#]
+{% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+			BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;
 
@@ -63,20 +64,18 @@ BulletGraph bulletgraph = new BulletGraph();
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
 
+![D:/Help UGs/BulletGraph/WF/BG_Caption.bmp](Features_images/Features_img3.png)
 
-{{ '![D:/Help UGs/BulletGraph/WF/BG_Caption.bmp](Features_images/Features_img3.png)' | markdownify }}
-{:.image }
-
-
-Caption Position
+### Caption Position
 
 The caption in the Bullet Graph is placed at the start or end of the quantitative scale by choosing from one of the two options available in the CaptionPosition property. They are:
 
 * Near (Default)
 * Far
 
- [C#]
+{% highlight c# %}
 
             BulletGraph bulletgraph = new BulletGraph();
 
@@ -92,25 +91,24 @@ The caption in the Bullet Graph is placed at the start or end of the quantitativ
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
+
+![D:/Help UGs/BulletGraph/WF/BG_Caption_Far.bmp](Features_images/Features_img4.png)
 
 
-{{ '![D:/Help UGs/BulletGraph/WF/BG_Caption_Far.bmp](Features_images/Features_img4.png)' | markdownify }}
-{:.image }
 
+## Measure Settings (Featured / Comparative Measure)
 
-### Measure Settings (Featured / Comparative Measure)
-
-Featured Measure:
+### Featured Measure:
 
 Featured Measure displays the primary data, or the current value of the data that you are measuring. It should usually be encoded as a bar, like the bar on a bar graph, and be prominent.
 
-Customizing Featured Measure:
+#### Customizing Featured Measure:
 
 The value of the Featured Measure of the BulletGraph is set by the FeaturedMeasure property. By setting the FeaturedMeasureBarStroke property, the stroke of the FeatureMeasure bar is customized. The thickness of the Featured Measure bar is modified by using FeaturedMeasureBarStrokeThickness.
 
 
-
-[C#]
+{% highlight c# %}
 
             BulletGraph bulletgraph = new BulletGraph();
 
@@ -128,25 +126,19 @@ The value of the Featured Measure of the BulletGraph is set by the FeaturedMeasu
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
 
+![D:/Help UGs/BulletGraph/WF/BG_FM.bmp](Features_images/Features_img5.png)
 
-
-
-{{ '![D:/Help UGs/BulletGraph/WF/BG_FM.bmp](Features_images/Features_img5.png)' | markdownify }}
-{:.image }
-
-
-Comparative Measure:
+### Comparative Measure:
 
 Comparative Measure should be less visually dominant than the Featured Measure. It should always be encoded as a short line that runs perpendicular to the orientation of the graph. A good example is a target for YTD revenue. Whenever the Featured Measure intersects a Comparative Measure, the Comparative Measure appears behind the Featured Measure.
 
-Customizing Comparative Measure:
+#### Customizing Comparative Measure:
 
 The value of the Comparative Measure is set by using the ComparativeMeasure property. By setting the ComparativeMeasureSymbolStroke property, the stroke of the Comparative Measure symbol is customized. The thickness of the Comparative Measure symbol is modified by using ComparativeMeasureSymbolStrokeThickness.
 
-
-
-[C#]
+{% highlight c# %}
 
             BulletGraph bulletgraph = new BulletGraph();
 
@@ -164,23 +156,19 @@ The value of the Comparative Measure is set by using the ComparativeMeasure prop
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
 
+![D:/Help UGs/BulletGraph/WF/BG_CM.bmp](Features_images/Features_img6.png)
 
-
-
-{{ '![D:/Help UGs/BulletGraph/WF/BG_CM.bmp](Features_images/Features_img6.png)' | markdownify }}
-{:.image }
-
-
-### Range Settings 
+## Range Settings 
 
 Ranges for a Bullet Graph are a collection of qualitative ranges. A qualitative range is a visual element that ends at a specified RangeEnd at the start of the previous range’s RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 
-Customizing Range:
+### Customizing Range:
 
 The width of the ranges are customized by setting the QualitativeRangesSize property. By changing RangeStroke of the qualitative range, the stroke of the range is personalized. By setting the RangeOpacity of the qualitative range, the opacity of the range is modified.
 
-[C#]
+{% highlight c# %}
 
             BulletGraph bulletgraph = new BulletGraph();
 
@@ -200,17 +188,15 @@ The width of the ranges are customized by setting the QualitativeRangesSize prop
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
 
+![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Features_images/Features_img7.png)
 
-{{ '![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Features_images/Features_img7.png)' | markdownify }}
-{:.image }
-
-
-Binding RangeStroke to Ticks and Labels:
+### Binding RangeStroke to Ticks and Labels:
 
 By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related to the stroke of the specified ranges. Similarly, by setting BindWithRangeStrokeToTicks, the stroke of the ticks is set related to the stroke of the specified ranges.
 
-[C#]
+{% highlight c# %}
 
             BulletGraph bulletgraph = new BulletGraph();
 
@@ -230,21 +216,17 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 
             bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });  
 
-bulletgraph.BindRangeStrokeToTicks = true;
+			bulletgraph.BindRangeStrokeToTicks = true;
 
             bulletgraph.BindRangeStrokeToLabels = true;          
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
 
+![D:/Help UGs/BulletGraph/WF/BG_BindRangeStrokeToTicksLabels.png](Features_images/Features_img8.png)
 
-
-
-{{ '![D:/Help UGs/BulletGraph/WF/BG_BindRangeStrokeToTicksLabels.png](Features_images/Features_img8.png)' | markdownify }}
-{:.image }
-
-
-### Scale Tick Mark Settings
+## Scale Tick Mark Settings
 
 Quantitative scale is displayed with two types of ticks: 
 
@@ -252,13 +234,13 @@ Major ticks, the primary scale indicators.
 
 Minor ticks, the secondary scale indicators that fall in between the major ticks.
 
-Customizing Ticks:
+### Customizing Ticks:
 
 The stroke of the major and minor ticks is customized by setting the MajorTickStroke and MinorTickStroke properties. The size is modified by using the MajorTickSize and MinorTickSize properties. By setting MajorTickStrokeThickness and MinorTickStrokeThickness, the stroke’s thickness is customized.
 
-[C#]
+{% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+			BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;            
 
@@ -286,15 +268,11 @@ BulletGraph bulletgraph = new BulletGraph();
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
 
+![D:/Help UGs/BulletGraph/WF/BG_Tick.png](Features_images/Features_img9.png)
 
-
-
-{{ '![D:/Help UGs/BulletGraph/WF/BG_Tick.png](Features_images/Features_img9.png)' | markdownify }}
-{:.image }
-
-
-TickPosition:
+### TickPosition:
 
 The ticks in the scale are placed above or below the ranges of the quantitative scale by choosing the options available in the TickPosition property. 
 
@@ -304,9 +282,9 @@ They are:
 * Above
 * Cross
 
-[C#]
+{% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+			BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;
 
@@ -328,25 +306,23 @@ BulletGraph bulletgraph = new BulletGraph();
 
             this.Controls.Add(bulletgraph);
 
+{% endhighlight %}
 
+![D:/Help UGs/BulletGraph/WF/BG_TickPos.bmp](Features_images/Features_img10.png)
 
-{{ '![D:/Help UGs/BulletGraph/WF/BG_TickPos.bmp](Features_images/Features_img10.png)' | markdownify }}
-{:.image }
+## Scale Label settings
 
-
-### Scale Label settings
-
-Labels:
+### Labels:
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 
-Customizing Labels:
+### Customizing Labels:
 
 The label’s offset is changed by using the LabelOffset property. The foreground of the label is customized by setting LabelStroke. By setting LabelSize, the font size of the labels is modified. 
 
-[C#]
+{% highlight c# %}
 
-         BulletGraph bulletgraph = new BulletGraph();
+			BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;
 
@@ -370,24 +346,22 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
             bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
 
-            this.Controls.Add(bulletgraph);  
+            this.Controls.Add(bulletgraph); 
 
+{% endhighlight %} 
 
+![D:/Help UGs/BulletGraph/WF/BG_Label.bmp](Features_images/Features_img11.png)
 
-{{ '![D:/Help UGs/BulletGraph/WF/BG_Label.bmp](Features_images/Features_img11.png)' | markdownify }}
-{:.image }
-
-
-Label Position
+### Label Position
 
 The labels in the scale are placed above or below the qualitative ranges by choosing the following options available in the LabelPosition property. 
 
 * Below (Default)
 * Above
 
-[C#]
+{% highlight c# %}
 
-         BulletGraph bulletgraph = new BulletGraph();
+			BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;
 
@@ -407,11 +381,6 @@ The labels in the scale are placed above or below the qualitative ranges by choo
 
             this.Controls.Add(bulletgraph);   
 
+{% endhighlight %}
 
-
-
-
-{{ '![D:/Help UGs/BulletGraph/WF/BG_LabelPos.bmp](Features_images/Features_img12.png)' | markdownify }}
-{:.image }
-
-
+![D:/Help UGs/BulletGraph/WF/BG_LabelPos.bmp](Features_images/Features_img12.png)

@@ -236,7 +236,7 @@ The appearance of the lines and the points can be configured with options such a
 
 
 {{ '![](Chart-Types_images/Chart-Types_img1.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -318,7 +318,7 @@ The appearance of the lines and the points can be configured with options such a
 
 
 {{ '![](Chart-Types_images/Chart-Types_img2.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -410,7 +410,7 @@ The following image shows a sample Rotated Spline Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img3.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -494,7 +494,7 @@ Customization Options
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression.
 
 {{ '![](Chart-Types_images/Chart-Types_img4.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -586,7 +586,7 @@ The following image shows a multi series Bar Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img5.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -668,7 +668,7 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 The following image shows a sample Stacking Bar Chart.
 
 {{ '![](Chart-Types_images/Chart-Types_img6.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -773,7 +773,7 @@ This chart type displays multiple series of data as stacked Bars ensuring that t
 
 
 {{ '![](Chart-Types_images/Chart-Types_img7.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -854,7 +854,7 @@ You could then use another series to represent the completed portion of the diff
 
 
 {{ '![](Chart-Types_images/Chart-Types_img8.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -940,7 +940,7 @@ The shape of the distribution conveys important information such as the probabil
 
 
 {{ '![](Chart-Types_images/Chart-Types_img9.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1041,7 +1041,7 @@ The Tornado chart is a bar chart which shows the variability of an output to sev
 
 
 {{ '![](Chart-Types_images/Chart-Types_img10.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1185,7 +1185,7 @@ The following image shows a multi series Column Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img11.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1266,7 +1266,7 @@ The following figure shows a Column Range Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img12.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1349,7 +1349,7 @@ The following image shows a sample Stacking Column Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img13.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1452,7 +1452,7 @@ This chart type displays multiple series of data as stacked Columns ensuring tha
 
 
 {{ '![](Chart-Types_images/Chart-Types_img14.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1541,7 +1541,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 The following image shows a multi series Area Chart.
 
 {{ '![](Chart-Types_images/Chart-Types_img15.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1629,7 +1629,7 @@ The following image shows a multi series Spline Area Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img16.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1715,7 +1715,7 @@ The following image shows a sample Stacking Area Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img17.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1823,7 +1823,7 @@ This chart type displays multiple series of data as stacked areas ensuring that 
 
 
 {{ '![](Chart-Types_images/Chart-Types_img18.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1967,7 +1967,7 @@ The following image shows a sample Step Area Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img19.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2053,7 +2053,7 @@ This chart type gives a clear look and it may be used in cases, where we have to
 
 
 {{ '![](Chart-Types_images/Chart-Types_img20.jpeg)' | markdownify }}
-{:.image }
+
 
 
 _Figure_ _69__: RangeArea Chart_
@@ -2149,7 +2149,7 @@ The following images are some sample Funnel Charts.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img21.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2159,7 +2159,7 @@ _Figure_ _70__: 2DFunnelChart_
 
 
 {{ '![](Chart-Types_images/Chart-Types_img22.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2169,7 +2169,7 @@ _Figure_ _71__: 3D Funnel-FigureBase-Circle Chart_
 
 
 {{ '![](Chart-Types_images/Chart-Types_img23.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2179,7 +2179,7 @@ _Figure_ _72__: 3D Funnel-FigureBase-Square Chart_
 
 
 {{ '![](Chart-Types_images/Chart-Types_img24.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2251,7 +2251,7 @@ The following images are some sample Pyramid Charts.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img25.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2261,7 +2261,7 @@ _Figure_ _74__: 2DPyramid Chart_
 
 
 {{ '![](Chart-Types_images/Chart-Types_img26.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2271,7 +2271,7 @@ _Figure_ _75__: 3D Pyramid-FigureBase-Circle Chart_
 
 
 {{ '![](Chart-Types_images/Chart-Types_img27.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2281,7 +2281,7 @@ _Figure_ _76__: 3D Pyramid-FigureBase-Square Chart_
 
 
 {{ '![](Chart-Types_images/Chart-Types_img28.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2367,7 +2367,7 @@ The following image shows a multi series Scatter Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img29.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2515,7 +2515,7 @@ The following image shows a multi series Bubble Chart.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img30.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2613,7 +2613,7 @@ The following image shows a CandleChart displaying a single series.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img31.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2699,7 +2699,7 @@ The Hi Lo Chart expects two y values to be specified in the series. One value sh
 
 
 {{ '![](Chart-Types_images/Chart-Types_img32.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2773,7 +2773,7 @@ DisplayText, DrawErrorBars, DrawSeriesNameInDepth, ErrorBarsSymbolShape, PhongAl
 Hi Lo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects four y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
 {{ '![](Chart-Types_images/Chart-Types_img33.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2855,7 +2855,7 @@ The penetration of a prior column's high or low, by the latest closing price, al
 
 
 {{ '![](Chart-Types_images/Chart-Types_img34.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2973,7 +2973,7 @@ If the ReversalAmount is 0.0 instead of 1.0 which is the default value, then the
 
 
 {{ '![](Chart-Types_images/Chart-Types_img35.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2999,7 +2999,7 @@ This chart requires two y values, the high value and the low value for the speci
 
 
 {{ '![](Chart-Types_images/Chart-Types_img36.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3089,7 +3089,7 @@ Since a Renko chart isolates the underlying trends by filtering out the minor up
 
 
 {{ '![](Chart-Types_images/Chart-Types_img37.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3174,7 +3174,7 @@ The ReversalAmount specifies the threshold amount by which the price should chan
 
 
 {{ '![](Chart-Types_images/Chart-Types_img38.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3258,7 +3258,7 @@ The following is an example of a Box and Whisker plot.
 
 
 {{ '![](Chart-Types_images/Chart-Types_img39.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3278,7 +3278,7 @@ The Box and Whisker plot is interpreted as follows.
 
 
 > {{ '![](Chart-Types_images/Chart-Types_img40.jpeg)' | markdownify }}
-{:.image }
+
 _Note:_ 
 
 > _1. The percentile value should lie between 0.0 and 0.25._  
@@ -3392,7 +3392,7 @@ A Pie Chart renders y values as slices in a pie. These slices are rendered in pr
 
 
 {{ '![](Chart-Types_images/Chart-Types_img41.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3489,7 +3489,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient=0.5f
 
 
 {{ '![](Chart-Types_images/Chart-Types_img42.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3525,7 +3525,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
 
 
 {{ '![](Chart-Types_images/Chart-Types_img43.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3559,7 +3559,7 @@ Polar charts supports plotting the axis values in the reverse direction / clockw
 
 
 {{ '![](Chart-Types_images/Chart-Types_img44.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3644,7 +3644,7 @@ Some scenarios where this chart type could be used
 
 
 {{ '![](Chart-Types_images/Chart-Types_img45.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3736,7 +3736,7 @@ One can change an existing chart to a combination chart by selecting the data se
 
 
 {{ '![](Chart-Types_images/Chart-Types_img46.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3834,7 +3834,7 @@ A heat map chart is a graphical representation of data where the values taken by
 
 
 {{ '![](Chart-Types_images/Chart-Types_img47.jpeg)' | markdownify }}
-{:.image }
+
 
 
 

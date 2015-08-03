@@ -13,7 +13,7 @@ The Chart Wizard is a very convenient tool to setup the Chart during design-time
 
 The Wizard neatly categorizes the different portions of the Chart, and lets you customize the most common properties of these different portions easily.
 
-Key features of the Chart wizard
+### Key features of the Chart wizard
 
 1. Can create various types of chart.
 2. Add series dynamically when the application is running.
@@ -29,15 +29,15 @@ This section describes about the functionality of the chart wizard.
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img1.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img1.png)
 
 
 
 
-_Figure_ _9__: Chart Wizard (Windows)_
 
-Design Time
+_Figure_ _9_: _Chart Wizard (Windows)_
+
+### Design Time
 
 To display the chart wizard at design-time, follow the below steps.
 
@@ -45,27 +45,22 @@ To display the chart wizard at design-time, follow the below steps.
 2. Right-click anywhere in the chart to see a context menu.
 3. Select the chart wizard item from the context menu.
 
-At Run Time
+### At Run Time
 
 Optionally, you can also let your users to invoke this Wizard during run-time to let them customize the Chart's look and feel. To invoke the Chart wizard at runtime, use the below code.
 
+{% highlight c# %}
 
+this.chartControl1.DisplayWizard();
 
-[C#]
+{% endhighlight %}
 
-
-
-this.chartControl1.DisplayWizard();  
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.chartControl1.DisplayWizard()
 
-
+{% endhighlight %}
+  
 
 The wizard provides six different categories whose settings can be customized.
 
@@ -89,13 +84,13 @@ In this view, you can visually see the different chart types that could be used 
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img2.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img2.png)
 
 
 
 
-_Figure_ _10__: Chart Type button selected in Chart Wizard_
+
+_Figure_ _10_: _Chart Type button selected in Chart Wizard_
 
 
 
@@ -111,13 +106,13 @@ A Chart can display multiple series. Properties such as Name, Data source, Serie
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img3.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img3.png)
 
 
 
 
-_Figure_ _11__: Series button selected in Chart Wizard_
+
+_Figure_ _11_: _Series button selected in Chart Wizard_
 
 
 
@@ -129,29 +124,15 @@ Below are the three tabs in the Wizard for Series.
 4. This tab provides options to select any chart type using the Type combobox and series name using Series Name textbox.
 5. Clicking the Edit points button, opens the ChartPoint Collection Editor.
 
-
-
-{{ '![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _12__: ChartPoint Collection Editor_
-
-
+   ![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)
+   
+   _Figure_ _12_: _ChartPoint Collection Editor_
 
 6. Click Add to add points to the series. Give X and Y values. Click Ok.
 
+   ![](Chart-Wizard_images/Chart-Wizard_img5.png)
 
-
-{{ '![](Chart-Wizard_images/Chart-Wizard_img5.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _13__: Adding Points to Series_
+   _Figure_ _13_: _Adding Points to Series_
 
 
 
@@ -163,13 +144,13 @@ Select one column for XValue and another for YValue, between which you wanted to
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img6.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img6.png)
 
 
 
 
-_Figure_ _14__: Setting the Chart Type_
+
+_Figure_ _14_: _Setting the Chart Type_
 
 
 
@@ -189,15 +170,9 @@ There are three tabs available in the wizard, for appearance settings.
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img7.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img7.png)
 
-
-
-
-_Figure_ _15__: Appearance button selected in Chart Wizard_
-
-
+_Figure_ _15_: _Appearance button selected in Chart Wizard_
 
 See Also
 
@@ -218,13 +193,13 @@ The below properties can be set separately for x-axis and y-axis.
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img8.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img8.png)
 
 
 
 
-_Figure_ _16__: Axes button selected in Chart Wizard_
+
+_Figure_ _16_: _Axes button selected in Chart Wizard_
 
 
 
@@ -232,13 +207,13 @@ _Figure_ _16__: Axes button selected in Chart Wizard_
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img9.jpeg)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img9.jpeg)
 
 
 
 
-_Figure_ _17__: ChartAxisLabel Collection Editor_
+
+_Figure_ _17_: _ChartAxisLabel Collection Editor_
 
 
 
@@ -258,13 +233,13 @@ This particular section in the wizard comes with the below options. It lets you 
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img10.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img10.png)
 
 
 
 
-_Figure_ _18__: Points button selected in Chart Wizard_
+
+_Figure_ _18_: _Points button selected in Chart Wizard_
 
 ## Toolbar
 
@@ -276,13 +251,13 @@ Under this tab, the user can customize the toolbar's back color, button style as
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img11.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img11.png)
 
 
 
 
-_Figure_ _19__: ToolBar button selected in ChartWizard_
+
+_Figure_ _19_: _ToolBar button selected in ChartWizard_
 
 
 
@@ -292,13 +267,13 @@ Clicking the Edit Items button will invoke the below editor. It provides options
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img12.jpeg)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img12.jpeg)
 
 
 
 
-_Figure_ _20__: Editing ToolBar Items_
+
+_Figure_ _20_: _Editing ToolBar Items_
 
 
 
@@ -308,13 +283,13 @@ Toolbar's border, border style, border width and border color can be set through
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img13.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img13.png)
 
 
 
 
-_Figure_ _21__: Customizing the Border Appearance of the ToolBar_
+
+_Figure_ _21_: _Customizing the Border Appearance of the ToolBar_
 
 
 
@@ -332,13 +307,13 @@ The various properties of the chart legend such as position, alignment, orientat
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img14.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img14.png)
 
 
 
 
-_Figure_ _22__: Legend button selected in Chart Wizard_
+
+_Figure_ _22_: _Legend button selected in Chart Wizard_
 
 
 
@@ -346,13 +321,13 @@ _Figure_ _22__: Legend button selected in Chart Wizard_
 
 
 
-{{ '![](Chart-Wizard_images/Chart-Wizard_img15.png)' | markdownify }}
-{:.image }
+![](Chart-Wizard_images/Chart-Wizard_img15.png)
 
 
 
 
-_Figure_ _23__: Customizing the Border Appearance of the Legend_
+
+_Figure_ _23_: _Customizing the Border Appearance of the Legend_
 
 
 
