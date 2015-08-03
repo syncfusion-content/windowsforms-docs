@@ -14,7 +14,7 @@ Essential HTMLUI supports formatting of not only the entire HTML document as a w
 
 The following snippet shows how a text content can be replaced with an image in a text sequence. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42,9 +42,10 @@ this.htmluiControl1.Refresh();
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -72,12 +73,12 @@ Me.htmluiControl1.Refresh()
 
 End Sub
 
-
+{% endhighlight %}
 
 The following image shows the text element Time replaced by an image while displayed using HTMLUI.
 
-{{ '![](Element-Format_images/Element-Format_img1.png)' | markdownify }}
-{:.image }
+![](Element-Format_images/Element-Format_img1.png)
+
 
 
 ## ElementFormat Sample
@@ -86,7 +87,7 @@ This sample illustrates Element Formatting in HTMLUI.
 
 
 
-{{ '![](Element-Format_images/Element-Format_img2.jpeg)' | markdownify }}
-{:.image }
+![](Element-Format_images/Element-Format_img2.jpeg)
+
 
 

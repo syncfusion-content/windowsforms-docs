@@ -19,15 +19,15 @@ HTMLUI is helpful in creating cool UI applications like Chat windows. It can be 
 
 
 
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.jpeg)
+
 
 
 _Figure_ _1_: Essential HTML UI_
 
 
 
-Key Features
+### Key Features
 
 Some of the key features of Essential HTMLUI are listed below:
 
@@ -66,9 +66,9 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-> ![](Overview_images/Overview_img2.jpeg)
-{:.image }
-{{ '_Note:_' | markdownify }}</td><td>
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify}}
+
+{{ '_Note:_' | markdownify}}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>
@@ -78,15 +78,15 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify}}
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img4.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img4.jpeg)' | markdownify}}
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
@@ -98,7 +98,7 @@ This section covers the requirements that are mandatory for using Essential HTML
 
 
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed below:
 
@@ -108,18 +108,30 @@ The prerequisites details are listed below:
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 (Ultimate and Express)* Visual Studio 2008 (Team, Professional, Standard and Express)* Visual Studio 2005 (Team, Professional, Standard and Express)* Borland Delphi for .NET* SharpCode </td></tr>
+<ul>
+<li> Visual Studio 2013</li>
+<li> Visual Studio 2012</li>
+<li> Visual Studio 2010 (Ultimate and Express)</li>
+<li> Visual Studio 2008 (Team, Professional, Standard and Express)</li>
+<li> Visual Studio 2005 (Team, Professional, Standard and Express)</li>
+<li> Borland Delphi for .NET</li>
+<li> SharpCode</li></ul> </td></tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5* .NET 4.0* .NET 3.5* .NET 2.0</td></tr>
+<ul>
+<li> .NET 4.5.1</li>
+<li> .NET 4.5</li>
+<li> .NET 4.0</li>
+<li> .NET 3.5</li>
+<li> .NET 2.0</li></ul></td></tr>
 </table>
 
 
 
 
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed below:
 
@@ -127,7 +139,14 @@ The compatibility details are listed below:
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2013 (32 bit and 64 bit)* Windows Server 2012 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)</td></tr>
+<ul>
+<li> Windows 8.1 (32 bit and 64 bit)</li>
+<li> Windows 8 (32 bit and 64 bit)</li>
+<li> Windows Server 2013 (32 bit and 64 bit)</li>
+<li> Windows Server 2012 (32 bit and 64 bit)</li>
+<li> Windows Server 2008 (32 bit and 64 bit)</li>
+<li> Windows 7 (32 bit and 64 bit)</li>
+<li> Windows Vista (32 bit and 64 bit)</li></ul></td></tr>
 </table>
 
 
@@ -152,13 +171,13 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the HTMLUI for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
-{:.image }
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }}  (Navigate to the HTMLUI for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+
+{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }} Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}  (Navigate to the Windows Forms User Guide. Select {{ '_HTMLUI_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)  (Navigate to the Windows Forms User Guide. Select {{ '_HTMLUI_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

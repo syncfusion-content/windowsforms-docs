@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-##  Frequently Asked Questions
+#  Frequently Asked Questions
 
 This section discusses various frequently asked questions with their answers, examples and code snippets.
 
@@ -18,10 +18,7 @@ The IHTMLElement.Children property of any IHTMLElement, collects all the child e
 The following code snippet illustrates how the child elements of the Body element in the given HTML document are searched to access elements containing the OnClick attribute and how a Click event is attached to those elements.
 
 
-
-[HTML]
-
-
+{% highlight html %}
 
 <html>
 
@@ -45,9 +42,9 @@ The following code snippet illustrates how the child elements of the Body elemen
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -115,9 +112,9 @@ this.htmluiControl1.ScrollToElement(elem);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -185,6 +182,8 @@ End If
 
 End Sub
 
+{% endhighlight %}
+
 ### How To Access the HTML Elements Loaded Into the Control?
 
 The HTML elements are accessed in HTMLUI for developing advanced UIs. The HTML elements are collected in a collection class. When the Hashtable is used as a collection class, it stores the HTML elements with a key, specific for each element.
@@ -195,7 +194,7 @@ The following HTML document shows an input tag textbox element with an id as the
 
 
 
-[HTML]
+{% highlight html%} 
 
 
 
@@ -209,13 +208,13 @@ The following HTML document shows an input tag textbox element with an id as the
 
 </html>
 
-
+{% endhighlight %}
 
 The following code snippet illustrates accessing the HTML elements from the above document.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -244,8 +243,9 @@ this.text = htmlelements["txt"] as INPUTElementImpl;
 this.text.UserControl.CustomControl.Text = "HTML Elements in HTMLUI";
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -273,7 +273,7 @@ Me.Text = CType(IIf(TypeOf htmlelements("txt") Is INPUTElementImpl, htmlelements
 
 Me.Text.UserControl.CustomControl.Text = "HTML Elements in HTMLUI"
 
-
+{% endhighlight %}
 
 ### How To Access the Inner HTML Text Of the Current HTML Element In the HTMLUI Control?
 
@@ -281,10 +281,7 @@ You can access the inner HTML text of the current HTML element in the HTMLUI con
 
 The following HTML document contains a div element. The code snippet shows how the inner text of the element is accessed and displayed in the output at run time.
 
-
-
-[HTML]
-
+{% highlight html %}
 
 
 <!-- HTML Document -->
@@ -305,9 +302,9 @@ system - Direct-Trac.
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -317,9 +314,9 @@ DIVElementImpl div1 = this.htmlelements["div1"] as DIVElementImpl;
 
 MessageBox.Show(div1.InnerHTML.ToString());
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -331,7 +328,7 @@ Me.htmlelements("div1"), Nothing), DIVElementImpl)
 
 MessageBox.Show(div1.InnerHTML.ToString())
 
-
+{% endhighlight %}
 
 ### How To Access the Name Of an HTML Element At Run-time?
 
@@ -341,7 +338,7 @@ The following HTML document illustrates how an input element with a name is decl
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -359,9 +356,9 @@ The following HTML document illustrates how an input element with a name is decl
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -387,9 +384,9 @@ Console.WriteLine("Tag Name of TextBox1:\n"+ textBox1.Name.ToString());
 
 Console.WriteLine("Name given for TextBox1:\n"+ textBox1.Attributes["name"].Value);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -423,9 +420,9 @@ Console.WriteLine("Name given for TextBox1:" & Constants.vbLf+ textBox1.Attribut
 
 You can add an attribute to an HTML element using the Add method of the Attributes property, as shown in the following code snippet.
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -435,9 +432,9 @@ if(this.textBox.Attributes.Contains("style") == false)
 
 this.textBox.Attributes.Add("style");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -449,13 +446,13 @@ Me.textBox.Attributes.Add("style")
 
 End If
 
-
+{% endhighlight %}
 
 You can change the value of an element's attribute at run time by using the Value property of that particular attribute, as shown in the below code snippet.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -463,9 +460,9 @@ You can change the value of an element's attribute at run time by using the Valu
 
 this.textBox.Attributes["style"].Value = "background-color:red";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -473,7 +470,7 @@ this.textBox.Attributes["style"].Value = "background-color:red";
 
 Private Me.textBox.Attributes("style").Value = "background-color:red"
 
-
+{% endhighlight %}
 
 ### How To Change a Characteristic Of an HTML Element Before It Is Displayed?
 
@@ -482,10 +479,7 @@ The characteristic of an element can be easily changed in the PreRenderDocument 
 The PreRenderDocument event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
 
 
-
-[HTML]
-
-
+{% highlight html %}
 
 <html>
 
@@ -511,12 +505,13 @@ Essential Studio includes ten component libraries in one great package. Each of 
 
 </html>
 
+{% endhighlight %}
 
 The following snippet shows how an image reference is changed for a page in the HTMLUI at run time, by using the PrerenderDocument event. 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -566,9 +561,9 @@ Console.WriteLine(elem.Attributes["src"].Value);
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -616,14 +611,14 @@ Next elem
 
 End Sub
 
-
+{% endhighlight %}
 
 The following figure illustrates this behavior where the oldImage has been replaced by newImage.
 
 
 
-{{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img1.jpeg)' | markdownify }}
-{:.image }
+![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img1.jpeg)
+
 
 
 ### How To Change the Default Font Used For Rendering the HTML Document In the HTMLUI Control?
@@ -632,7 +627,7 @@ HTMLUI uses a default font to render the text from the HTML document, in cases w
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -640,9 +635,9 @@ htmluiControl1 = new Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl();
 
 htmluiControl1.DefaultFormat.Font = new Font("Pristina",16);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -650,7 +645,7 @@ Private htmluiControl1 = New Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl()
 
 Private htmluiControl1.DefaultFormat.Font = New Font("Pristina",16)
 
-
+{% endhighlight %}
 
 ### How To Delete an HTML Element From a Document Loaded Into the HTMLUI Control At Run-time?
 
@@ -660,9 +655,7 @@ The following HTML document contains a textbox and a button element. The followi
 
 
 
-[HTML]
-
-
+{% highlight html %}
 
 <!-- HTML document -->
 
@@ -686,9 +679,9 @@ The following HTML document contains a textbox and a button element. The followi
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -730,9 +723,9 @@ this.htmluiControl1.Refresh();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -770,7 +763,7 @@ Me.htmluiControl1.Refresh()
 
 End Sub
 
-
+{% endhighlight %}
 
 ### How To Enable the HTMLUI Control To Load HTML Documents That Have Been Dragged Onto the Control?
 
@@ -780,7 +773,7 @@ During the drag-and-drop operation, the file name of the document along with the
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -836,9 +829,9 @@ this.htmluiControl1.LoadHTML(fileName);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -890,7 +883,7 @@ Next fileName
 
 End Sub
 
-
+{% endhighlight %}
 
 ### How To Enable User Interaction With the HTML Elements
 
@@ -902,7 +895,7 @@ The following snippet shows how the elements interact with each other on the exe
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -924,9 +917,9 @@ The following snippet shows how the elements interact with each other on the exe
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -994,9 +987,9 @@ this.div.Children.Parent.Parent.InnerHTML = this.div.OuterHTML + "<p/><img src='
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1058,14 +1051,14 @@ Me.div.Children.Parent.Parent.InnerHTML = Me.div.OuterHTML & "<p/><img src='HTML
 
 End Sub
 
-
+{% endhighlight %}
 
 The button and the div elements are obtained. Events are declared for both the elements, and on clicking the button, the text inside the div element changes. When the text inside the div element is changed, an image element is appended to the div element. This shows how interactivity can be handled in HTMLUI.
 
 
 
-{{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img2.jpeg)' | markdownify }}
-{:.image }
+![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img2.jpeg)
+
 
 
 ### How To Get an Object For the Control Present In an HTML Element In the HTMLUI Control?
@@ -1074,7 +1067,7 @@ You can make use of the GetControlByElement() method of the InputHTML Interface 
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1088,9 +1081,9 @@ You can make use of the GetControlByElement() method of the InputHTML Interface 
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -1120,9 +1113,9 @@ htmlRadioButton = (RadioButton) this.htmluiControl1.Document.GetControlByElement
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1150,7 +1143,7 @@ htmlRadioButton = CType(Me.htmluiControl1.Document.GetControlByElement(radioElem
 
 End Sub
 
-
+{% endhighlight %}
 
 ### How To Load Custom Controls As Part Of the HTML Layout?
 
@@ -1158,7 +1151,7 @@ An HTML document containing custom controls is shown below.
 
 
 
-[HTML]
+{% highlight html%}
 
 
 
@@ -1230,13 +1223,13 @@ An HTML document containing custom controls is shown below.
 
 </HTML>
 
-
+{% endhighlight %}
 
 The CustomControlBase implements the base functionality of the Windows forms control on the HTML tag element and loads the custom controls with its respective functionalities into the HTMLUI.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1288,9 +1281,9 @@ new CustomControlBase( dataGridElement1, this.dataGrid1  );
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1320,17 +1313,13 @@ Dim oTemp3 As CustomControlBase = New CustomControlBase(dataGridElement1, Me.dat
 
 End Sub
 
-
+{% endhighlight %}
 
 ###  How To Load HTML Into the HTMLUI Control?
 
 You can make use of the GetControlByElement() method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
 
-
-
-[HTML]
-
-
+{% highlight html %}
 
 <html>
 
@@ -1342,9 +1331,9 @@ You can make use of the GetControlByElement() method of the InputHTML Interface 
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -1374,9 +1363,9 @@ htmlRadioButton = (RadioButton) this.htmluiControl1.Document.GetControlByElement
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1404,7 +1393,7 @@ htmlRadioButton = CType(Me.htmluiControl1.Document.GetControlByElement(radioElem
 
 End Sub
 
-
+{% endhighlight %}
 
 #### Loading As Startup Document
 
@@ -1417,8 +1406,8 @@ An HTML document can be loaded at startup by two ways:
 
 Using the Properties window, involves specifying the location of the startup HTML file by using the StartupDocument property of the HTMLUI control. The link shown at the bottom of the Properties window can also be used for the same purpose.
 
-{{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img3.jpeg)' | markdownify }}
-{:.image }
+![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img3.jpeg)
+
 
 
 
@@ -1427,7 +1416,7 @@ While using code for the Startup Document, it should be written in the Form_Load
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1441,9 +1430,9 @@ this.htmluiControl1.StartupDocument = @"C:\MyProjects\Startup\startup_page.htm";
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1455,7 +1444,7 @@ Me.htmluiControl1.StartupDocument = "C:\MyProjects\Startup\startup_page.htm"
 
 End Sub
 
-
+{% endhighlight %}
 
 #### Loading At Run Time
 
@@ -1467,7 +1456,7 @@ To load the file from disk into the HTMLUI, the following code snippet can be us
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1477,9 +1466,9 @@ string filepath = @"C:\MyProjects\LoadHTML\FromDisk.htm";
 
 this.htmluiControl1.LoadHTML(filePath);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1489,7 +1478,7 @@ Private filepath As String = "C:\MyProjects\LoadHTML\FromDisk.htm"
 
 Me.HtmluiControl1.LoadHTML(filepath)
 
-
+{% endhighlight %}
 
 The above snippet can also be used to load HTML documents which are linked to the specified HTML documents, as links are easily invoked in HTMLUI.
 
@@ -1497,7 +1486,7 @@ To load a file from the URI, the following code snippet can be used.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1509,9 +1498,9 @@ Uri uri = new Uri( "http://www.syncfusion.com");
 
 htmluiControl1.LoadHTML( uri );
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1523,13 +1512,13 @@ Private uri As Uri = New Uri("http://www.syncfusion.com")
 
 HtmluiControl1.LoadHTML(uri)
 
-
+{% endhighlight %}
 
 Loading HTML in the form of a string can be done as shown below.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1539,9 +1528,9 @@ string htmlCode ="<HTML><HEAD><TITLE>HI</TITLE></HEAD>
 
 this.htmluiControl1.LoadFromString(htmlCode);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1551,7 +1540,7 @@ Private htmlCode As String = "<HTML><HEAD><TITLE>HI</TITLE></HEAD>"
 
 Me.HtmluiControl1.LoadFromString(htmlCode)
 
-
+{% endhighlight %}
 
 To load a HTML file as an embedded resource:
 
@@ -1561,7 +1550,7 @@ To load a HTML file as an embedded resource:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1571,9 +1560,9 @@ Stream htmlStream = (Stream)Assembly.GetExecutingAssembly().GetManifestResourceS
 
 this.htmluiControl1.LoadHTML(htmlStream);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1581,11 +1570,9 @@ Private htmlStream As Stream = CType(System.Reflection.Assembly.GetExecutingAsse
 
 Me.HtmluiControl1.LoadHTML(htmlStream)
 
+{% endhighlight %}
 
-
-> {{ '![](Frequently-Asked-Questions_images/Frequently-Asked-Questions_img4.jpeg)' | markdownify }}
-{:.image }
-_Note: The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users._
+> Note: The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 
 ### How To Print the Contents Of the HTMLUI Control?
 
@@ -1593,7 +1580,7 @@ The document available in the HTMLUI control can be printed with the help of the
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1609,9 +1596,9 @@ pd = new HTMLUIPrintDocument(this.htmluiControl1.Document);
 
 pd.Print();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1627,7 +1614,7 @@ Private pd = New HTMLUIPrintDocument(Me.HtmluiControl1.Document)
 
 pd.Print()
 
-
+{% endhighlight %}
 
 ### How To Specify a CSS File For HTML Content?
 
@@ -1645,7 +1632,7 @@ The HTMLUI control supports formatting the HTML document with style sheets at ru
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1655,9 +1642,9 @@ The HTMLUI control supports formatting the HTML document with style sheets at ru
 
 this.htmluiControl1.LoadCSS(@"C:\MyProjects\LoadCSS\style.css");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1667,7 +1654,7 @@ this.htmluiControl1.LoadCSS(@"C:\MyProjects\LoadCSS\style.css");
 
 Me.HtmluiControl1.LoadCSS("C:\MyProjects\LoadCSS\style.css")
 
-
+{% endhighlight %}
 
 ### How To Toggle the Visibility Of an HTML Element In the HTMLUI control At Run-time?
 
@@ -1676,10 +1663,7 @@ Each HTML element in the HTMLUI has an xVisible attribute by default that helps 
 The following code snippet shows how the visibility of an element is toggled on the execution of an event.
 
 
-
-[HTML]
-
-
+{% highlight html %}
 
 <html>
 
@@ -1711,9 +1695,9 @@ The following code snippet shows how the visibility of an element is toggled on 
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -1759,9 +1743,9 @@ this.htmluiControl1.Refresh();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1807,5 +1791,5 @@ Me.htmluiControl1.Refresh()
 
 End Sub
 
-
+{% endhighlight %}
 

@@ -7,81 +7,61 @@ control: QTP
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
 This section covers information on the install location, samples, licensing, and uninstallation of the recent version of Essential QuickTest Professional.
 
 
 
-### Installation and Configuration
+## Installation and Configuration
 
 This topic explains the installation process for Syncfusion Essential QuickTest professional and the configuration details about the swfconfig file.
 
-#### Installation
+### Installation
 
 This section provides specifics on installation of Syncfusion Essential QuickTest professional.
 
 To install Essential Test Studio:
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: The Installation procedures are the same for every Essential Test Studio setup, regardless of the volume of the Test setup._
+> Note: The Installation procedures are the same for every Essential Test Studio setup, regardless of the volume of the Test setup.
 
 1. Double-click the Syncfusion Essential Test Studio Setup file.
-> 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)' | markdownify }}
-{:.image }
-_Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens._
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
-{:.image }
+   > Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens.
+
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
-_Figure_ _1_: Setup - Essential QuickTest Professional Welcome screen_
+
+   _Figure_ _1_: Setup - Essential QuickTest Professional Welcome screen_
 
 
 
 2. Click Next. The User Information screen opens. 
 
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _2_: User Information screen_
+   _Figure_ _2_: User Information screen_
 
 
 
 3. Enter your name, organization and enter the license key in the corresponding text boxes provided.
 
-
-
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)' | markdownify }}
-{:.image }
-_Note: Use Essential Studio Unlock Key as the Unlock Key for Essential Testing Studio. For version previous to 6.3.0.6, use “Syncfusion199“ as the Unlock Key._ 
+   > Note: Use Essential Studio Unlock Key as the Unlock Key for Essential Testing Studio. For version previous to 6.3.0.6, use “Syncfusion199“ as the Unlock Key.
 
 4. Click Next. The unlock key will be validated.
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _3_: Select Destination Location_
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)
+   
+    _Figure_ _3_: Select Destination Location
 
 
 
 5. Click Next. The Select the installation folder window opens.
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _4_: Select Installation Folder_
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
+   
+   _Figure_ _4_: Select Installation Folder
 
 
 
@@ -93,17 +73,17 @@ _Figure_ _4_: Select Installation Folder_
 
 
 
-* Typical - Installs most common program features.
-* Custom - Allows you to choose the program to be installed and where it should be installed.
-* Complete - Installs all of the feature programs.
+	* Typical - Installs most common program features.
+	* Custom - Allows you to choose the program to be installed and where it should be installed.
+	* Complete - Installs all of the feature programs.
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)' | markdownify }}
-{:.image }
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
 
 
-_Figure_ _5_: Installing options Screen_
+
+   _Figure_ _5_: Installing options Screen_
 
 
 
@@ -111,11 +91,11 @@ _Figure_ _5_: Installing options Screen_
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img9.png)' | markdownify }}
-{:.image }
+	![](Installation-and-Deployment_images/Installation-and-Deployment_img9.png)
 
 
-_Figure_ _6_: Ready to Install Screen_
+
+	_Figure_ _6_: Ready to Install Screen_
 
 
 
@@ -123,21 +103,21 @@ _Figure_ _6_: Ready to Install Screen_
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img10.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _7_: Installing Screen_
+	![](Installation-and-Deployment_images/Installation-and-Deployment_img10.png)
 
 
 
-The following screen is displayed once the installation is completed.
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img11.png)' | markdownify }}
-{:.image }
+	_Figure_ _7_: Installing Screen_
 
 
-_Figure_ _8_: Installation Completed_
+
+	The following screen is displayed once the installation is completed.
+
+	![](Installation-and-Deployment_images/Installation-and-Deployment_img11.png)
+
+
+
+	_Figure_ _8_: Installation Completed_
 
 #### Configuration
 
@@ -145,9 +125,7 @@ An XML file in QTP called swfconfig is the configuration file located at _(Insta
 
 
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img12.jpeg)' | markdownify }}
-{:.image }
-_Note: The fully qualified name is the name of the file mentioned with its complete path._
+> Note: The fully qualified name is the name of the file mentioned with its complete path.
 
 Any event that is triggered while working with a Syncfusion control, either by the user or the program activity, will be handled by the corresponding method in the custom library (DLL) given as the <DllName> tag under the <Control> tag.
 
@@ -155,11 +133,11 @@ An XML file can be configured in one of two ways, automatically or manually.
 
 
 
-##### Automatic Configuration
+#### Automatic Configuration
 
 This section provides the details about the configuration of the swfconfig file using the SwfConfigUtility. Refer to the Utility section of this document.
 
-##### Manual Configuration
+#### Manual Configuration
 
 This section provides details about the manual configuration of the swfconfig file.
 
@@ -171,122 +149,117 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 1. Navigate to the following path:
 
-_(Installed location of Essential QuickTest Professional)\Config_
+	_(Installed location of Essential QuickTest Professional)\Config_
 
 
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img13.jpeg)' | markdownify }}
-{:.image }
-_Note: You will find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively._
+	> Note: You will find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively.
 
 2. Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The sample code below maps the grid control to its corresponding DLL.
 
 
 
-[XML]
+   ~~~ xml
 
 
 
-<CC <Control Type="Syncfusion.Windows.Forms.Grid.GridControl">
+		<CC <Control Type="Syncfusion.Windows.Forms.Grid.GridControl">
 
-<CustomRecord>
+		<CustomRecord>
 
-<Component>
+		<Component>
 
-<Context>AUT</Context>
+		<Context>AUT</Context>
 
-<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version Number>\Bin\2.0\GridControl.dll</DllName> 
+		<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version Number>\Bin\2.0\GridControl.dll</DllName> 
 
-<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
+		<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
 
-</Component>
+		</Component>
 
-</CustomRecord>
+		</CustomRecord>
 
-<CustomReplay>
+		<CustomReplay>
 
-<Component>
+		<Component>
 
-<Context>AUT</Context>
+		<Context>AUT</Context>
 
-<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version number>\Bin\2.0\GridControl.dll</DllName>
+		<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version number>\Bin\2.0\GridControl.dll</DllName>
 
-<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
+		<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
 
-</Component>
+		</Component>
 
-</CustomReplay>
+		</CustomReplay>
 
-</Control>
+		</Control>
 
+   ~~~
+   {:.prettyprint }
 
+   > Note: In the preceding code, the fully qualified name of the DLL given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
+   >
+   > C:\Program Files\Syncfusion\Essential QuickTest Professional\<Version number>\
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img14.jpeg)' | markdownify }}
-{:.image }
-_Note: In the preceding code, the fully qualified name of the DLL given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
-
-> _C:\Program Files\Syncfusion\Essential QuickTest Professional\<Version number>\_
-
-If you have installed Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, if Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
-
-
-
-[XML]
+   If you have installed Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, if Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
 
 
 
-<CC <Control Type="Syncfusion.Windows.Forms.Grid.GridControl">
-
-<CustomRecord>
-
-<Component>
-
-<Context>AUT</Context>
-
-<DllName>D:\Essential TestStudio\<Version Number>\Bin\2.0\GridControl.dll</DllName>
-
-<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
-
-</Component>
-
-</CustomRecord>
-
-<CustomReplay>
-
-<Component>
-
-<Context>AUT</Context>
-
-<DllName>D:\Essential TestStudio\<Version number>\Bin\2.0\GridControl.dll</DllName>
-
-<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
-
-</Component>
-
-</CustomReplay>
-
-</Control>
+   ~~~ xml
 
 
+
+		<CC <Control Type="Syncfusion.Windows.Forms.Grid.GridControl">
+
+		<CustomRecord>
+
+		<Component>
+
+		<Context>AUT</Context>
+
+		<DllName>D:\Essential TestStudio\<Version Number>\Bin\2.0\GridControl.dll</DllName>
+
+		<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
+
+		</Component>
+
+		</CustomRecord>
+
+		<CustomReplay>
+
+		<Component>
+
+		<Context>AUT</Context>
+
+		<DllName>D:\Essential TestStudio\<Version number>\Bin\2.0\GridControl.dll</DllName>
+
+		<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
+
+		</Component>
+
+		</CustomReplay>
+
+		</Control>
+
+   ~~~
+   {:.prettyprint }
 
 3. Select the segment of the code containing the controls to be tested.
 4. On the Edit menu, click Copy.
-> 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img15.jpeg)' | markdownify }}
-{:.image }
-_Note: While selecting the code for copying, exclude the following lines of code._
 
-[XML]
+   > Note: While selecting the code for copying, exclude the following lines of code.
 
+   ~~~ xml
+ 
+      <CC <?xml version="1.0" encoding="UTF-8" ?>
 
-
-<CC <?xml version="1.0" encoding="UTF-8" ?>
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Open the SwfConfig.xml file located under the following location:
 
-<QuickTest Professional Installation Path>\dat\SwfConfig.xml
+   <QuickTest Professional Installation Path>\dat\SwfConfig.xml
 
 
 
@@ -294,59 +267,56 @@ _Note: While selecting the code for copying, exclude the following lines of code
 
 
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img16.jpeg)' | markdownify }}
-{:.image }
-_Note: The SwfConfig.xml file will look like the following:_
+   > Note: The SwfConfig.xml file will look like the following:
 
-[XML]
+   ~~~ xml
 
 
 
-<?xml version="1.0" encoding="UTF-8" ?>
+		<?xml version="1.0" encoding="UTF-8" ?>
 
-<Controls>
+		<Controls>
 
-<CC   <Control Type="Syncfusion.Windows.Forms.Grid.GridControl">
+		<CC   <Control Type="Syncfusion.Windows.Forms.Grid.GridControl">
 
-<CustomRecord>
+		<CustomRecord>
 
-<Component>
+		<Component>
 
-<Context>AUT</Context>
+		<Context>AUT</Context>
 
-<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version Number>\Bin\2.0\GridControl.dll</DllName>
+		<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version Number>\Bin\2.0\GridControl.dll</DllName>
 
-<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
+		<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
 
-</Component>
+		</Component>
 
-</CustomRecord>
+		</CustomRecord>
 
-<CustomReplay>
+		<CustomReplay>
 
-<Component>
+		<Component>
 
-<Context>AUT</Context>
+		<Context>AUT</Context>
 
-<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version number>\Bin\2.0\GridControl.dll</DllName>
+		<DllName>C:\Program files\Syncfusion\Essential TestStudio\<Version number>\Bin\2.0\GridControl.dll</DllName>
 
-<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
+		<TypeName>Syncfusion.TestStudio.Grid.GridControl</TypeName>
 
-</Component>
+		</Component>
 
-</CustomReplay>
+		</CustomReplay>
 
-</Control>
+		</Control>
 
-      ..........
+			  ..........
 
-</Controls>
+		</Controls>
 
+   ~~~
+   {:.prettyprint }
 
-
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img17.jpeg)' | markdownify }}
-{:.image }
-_Note: Ensure that the element <DllName> contains the correct path to the corresponding DLL._ 
+   > Note: Ensure that the element <DllName> contains the correct path to the corresponding DLL.
 
 7. Save the SwfConfig.xml file. 
 
@@ -356,9 +326,7 @@ _Note: Ensure that the element <DllName> contains the correct path to the corres
 
 
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img18.jpeg)' | markdownify }}
-{:.image }
-_Note: Mapping for the required controls can be done in a similar manner._
+   > Note: Mapping for the required controls can be done in a similar manner.
 
 ### Sample and Location
 
@@ -368,7 +336,7 @@ This section contains the location of the samples, source code and assemblies.
 
 
 
-Samples Location 
+#### Samples Location 
 
 
 
@@ -381,10 +349,8 @@ The samples for Essential QuickTest Professional are available at the following 
 * Chart samples- (installed location of the product)\Examples\Samples\Chart\
 * Schedule samples- (installed location of the product)\Examples\Samples\Schedule\
 * Diagram samples- (installed location of the product)\Examples\Samples\Diagram\
-> 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img19.jpeg)' | markdownify }}
-{:.image }
-_Note: By default, the installed location of the product corresponds to- <Drive>:\Program Files\Syncfusion\Essential QuickTest Professional\<version number>\_
+
+> Note: By default, the installed location of the product corresponds to- <Drive>:\Program Files\Syncfusion\Essential QuickTest Professional\<version number>\
 
 The executable files for the samples are available under the following location:
 
@@ -392,13 +358,11 @@ The executable files for the samples are available under the following location:
 
 
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img20.jpeg)' | markdownify }}
-{:.image }
-_Note: There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location._
+> Note: There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location.
 
 
 
-Source CodeLocation
+#### Source CodeLocation
 
 
 
@@ -408,13 +372,14 @@ The source code for Essential QuickTest Professional is available at the followi
 
 
 
-Assemblies Location
+#### Assemblies Location
 
 
 
 The assemblies are available under the following location:
 
 * (Installed location of the product)\Bin\
+
 ### Licensing, Patches and Uninstallation
 
 
@@ -422,7 +387,7 @@ This section deals with license keys, patches and the uninstallation process.
 
 
 
-Licensing
+#### Licensing
 
 
 
@@ -430,7 +395,7 @@ Essentialqtpaddonsetup is the setup file for Essential QuickTest Professional, w
 
 
 
-Patches
+#### Patches
 
 
 
@@ -440,7 +405,7 @@ _(Installed location of the product)\Bin\_
 
 
 
-Uninstallation
+#### Uninstallation
 
 
 

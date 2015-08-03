@@ -15,7 +15,7 @@ HTMLUI supports the usage of the simple MHTML files. The HTMLUI control allows t
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26,10 +26,10 @@ HTMLUI supports the usage of the simple MHTML files. The HTMLUI control allows t
 this.htmluiControl.LoadHTML(@"C:\MyProjects\MHTSupport\sample.mht"); 
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -39,5 +39,5 @@ this.htmluiControl.LoadHTML(@"C:\MyProjects\MHTSupport\sample.mht");
 
 Me.htmluiControl.LoadHTML("C:\MyProjects\MHTSupport\sample.mht")
 
-
+{% endhighlight %}
 

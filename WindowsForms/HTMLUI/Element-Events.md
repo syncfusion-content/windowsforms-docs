@@ -13,7 +13,7 @@ Each HTML element in an HTML document is made to support events, such asClick, D
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -27,11 +27,9 @@ Each HTML element in an HTML document is made to support events, such asClick, D
 
 </html>
 
+{% endhighlight %}
 
-
-
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -93,9 +91,9 @@ Console.WriteLine("MouseDown Event Handled");
 
 }  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -149,13 +147,13 @@ Console.WriteLine("MouseDown Event Handled")
 
 End Sub
 
-
+{% endhighlight %}
 
 Another important feature of the HTMLUI is its Bubbling Event architecture. With this architecture, a single common event handler defined for a particular event of the parent can be used for all the Child Elements bound to that parent while executing the same event.
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -173,9 +171,9 @@ Another important feature of the HTMLUI is its Bubbling Event architecture. With
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -233,9 +231,9 @@ else if(elem.ID == "button2")
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -281,14 +279,14 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ## HTMLUI Bubbling Events Sample
 
 This sample demonstrates the implementation of Bubbling Event architecture in HTMLUI.
 
-{{ '![](Element-Events_images/Element-Events_img1.jpeg)' | markdownify }}
-{:.image }
+![](Element-Events_images/Element-Events_img1.jpeg)
+
 
 
 
@@ -305,8 +303,8 @@ This sample shows how element events are handled for creating effective user int
 
 
 
-{{ '![](Element-Events_images/Element-Events_img2.jpeg)' | markdownify }}
-{:.image }
+![](Element-Events_images/Element-Events_img2.jpeg)
+
 
 
 

@@ -11,9 +11,7 @@ documentation: ug
 
 Forms are the containers for placing the elements in a HTML document. HTMLUI supports the usage of forms for developing advanced and decorative pages in the user's application. 
 
-[HTML]
-
-
+{% highlight html %}
 
 <html>
 
@@ -33,14 +31,14 @@ Forms are the containers for placing the elements in a HTML document. HTMLUI sup
 
 </html>
 
-
+{% endhighlight %}
 
 Loading the above HTML document into HTMLUI creates a Form with the three controls specified as shown below.
 
 
 
-{{ '![](HTML-Forms_images/HTML-Forms_img1.png)' | markdownify }}
-{:.image }
+![](HTML-Forms_images/HTML-Forms_img1.png)
+
 
 
 ## HTMLUIForms Sample
@@ -49,7 +47,7 @@ This sample illustrates the implementation of Forms by using HTMLUI.
 
 
 
-{{ '![](HTML-Forms_images/HTML-Forms_img2.jpeg)' | markdownify }}
-{:.image }
+![](HTML-Forms_images/HTML-Forms_img2.jpeg)
+
 
 

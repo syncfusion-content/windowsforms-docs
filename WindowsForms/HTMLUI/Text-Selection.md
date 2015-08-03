@@ -13,7 +13,7 @@ An interesting feature of the HTMLUI control is its ability to access the select
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21,9 +21,9 @@ An interesting feature of the HTMLUI control is its ability to access the select
 
 this.label1.Text = this.htmluiControl1.SelectedText;  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31,13 +31,13 @@ this.label1.Text = this.htmluiControl1.SelectedText;
 
 Me.label1.Text = Me.HtmluiControl1.SelectedText
 
+{% endhighlight %}
 
-
-CopyTextToClipBoard
+### CopyTextToClipBoard
 
 The HTMLUI control allows the user to copy the text selected in the HTMLUI control to the Clipboard, and paste it in other applications. The following code snippet shows how this feature is implemented with the HTMLUI control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -53,9 +53,9 @@ Clipboard.SetDataObject(text);
 
 }  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -71,7 +71,7 @@ Clipboard.SetDataObject(text)
 
 End If
 
-
+{% endhighlight %}
 
 ## HTMLUITextSelection Sample
 
@@ -79,8 +79,8 @@ This sample demonstrates the support for Text Selection in HTMLUI.
 
 
 
-{{ '![](Text-Selection_images/Text-Selection_img1.jpeg)' | markdownify }}
-{:.image }
+![](Text-Selection_images/Text-Selection_img1.jpeg)
+
 
 
 

@@ -15,13 +15,13 @@ The property SupportedEvents and the method MergeSupportedEvents are common to m
 
 
 
-SupportedEvents
+## SupportedEvents
 
 This property returns an array of events supporting the element.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33,9 +33,9 @@ BRElementImpl br = htmlelements["br"] as BRElementImpl;
 
 this.label1.Text = this.br.SupportedEvents.Length.ToString(); 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -53,9 +53,9 @@ MergeSupportedEvents
 
 The MergeSupportedEvents method is used to merge the standard and special events.
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -77,9 +77,9 @@ this.txt.MergeSupportedEvents(specialEvents);
 
 MessageBox.Show("After Merging:" + this.txt.SupportedEvents.Length.ToString());
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -100,6 +100,8 @@ MessageBox.Show("Before Merging:" + Me.txt.SupportedEvents.Length.ToString())
 Me.txt.MergeSupportedEvents(specialEvents)
 
 MessageBox.Show("After Merging:" + Me.txt.SupportedEvents.Length.ToString())
+
+{% endhighlight %}
 
 ## Element Types
 
@@ -162,7 +164,7 @@ The A element is used in creating links to another document or in creating bookm
 
 
 
-Properties
+#### Properties
 
 * IsVisited:Gets a bool value (either true / false) indicating whether the link is visited or not. This may be used in changing the color of the links visited.
 * HoverFormat:Gets the format of the A element when the user hovers the mouse pointer over the link.
@@ -170,7 +172,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -184,9 +186,9 @@ AElementImpl a = htmlelements["a"] as AElementImpl;
 
 this.label1.Text = "\nA(IsVisited and VisitedFormat):" + this.a.IsVisited.ToString() + "," + this.a.VisitedFormat.BackgroundColor.Name.ToString(); 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -204,9 +206,9 @@ Private a As AElementImpl = CType(IIf(TypeOf htmlelements("a") Is AElementImpl, 
 
 Private Me.label1.Text=Constants.vbLf & "A(IsVisited and VisitedFormat):" & Me.a.IsVisited.ToString()+","+Me.a.VisitedFormat.BackgroundColor.Name.ToString()
 
+{% endhighlight %}
 
-
-Methods
+#### Methods
 
 * ResetVisited: Excludes the element from the list containing the visited links.
 
@@ -226,13 +228,13 @@ The BR element is used for inserting a line break after a particular line. This 
 
 
 
-Properties
+#### Properties
 
 * IsVisible: Gets / sets a Boolean value to indicate whether the control is shown / hidden.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -244,9 +246,9 @@ BRElementImpl br = htmlelements["br"] as BRElementImpl;
 
 this.label1.Text = "\nBR(IsVisible):" + this.br.IsVisible.ToString(); 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -257,6 +259,8 @@ Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUser
 Private br As BRElementImpl = CType(IIf(TypeOf htmlelements("br") Is BRElementImpl, htmlelements("br"), Nothing), BRElementImpl)
 
 Me.label1.Text = Constants.vbLf & "BR(IsVisible):" & Me.br.IsVisible.ToString()
+
+{% endhighlight %}
 
 ## CODE Element
 
@@ -338,7 +342,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -354,9 +358,9 @@ IMGElementImpl img = htmlelements["img"] as IMGElementImpl;
 
 this.label1.Text ="\nIMG(Image)" + this.img.Image.PhysicalDimension.ToString();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -368,7 +372,7 @@ Private img As IMGElementImpl = CType(IIf(TypeOf htmlelements("img") Is  IMGElem
 
 Me.label1.Text =Constants.vbLf & "IMG(Image)" & Me.img.Image.PhysicalDimension.ToString()
 
-
+{% endhighlight %}
 
 ## INPUT Element
 
@@ -376,13 +380,13 @@ The INPUT element is used for getting input from the user. It can be a text box,
 
 
 
-Properties
+#### Properties
 
 * UserControl: Gets / sets the user control instance for the particular input element declared by the user
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -394,9 +398,9 @@ INPUTElementImpl txt = htmlelements["txt"] as INPUTElementImpl;
 
 this.txt.UserControl.CustomControl.Text = "This is a textBox";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -408,9 +412,9 @@ Private txt As INPUTElementImpl = CType(IIf(TypeOf htmlelements("txt") Is INPUTE
 
 Me.txt.UserControl.CustomControl.Text = "This is a textBox"
 
+{% endhighlight %}
 
-
-Methods
+#### Methods
 
 * InfillFromXMLElement: Detects the type of control from the type attribute and creates that control
 
@@ -433,7 +437,7 @@ The LINK element is used to define links to other documents, style sheets, and s
 
 
 
-Properties
+#### Properties
 
 
 
@@ -441,7 +445,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -453,11 +457,9 @@ LinkElementImpl link = htmlelements["link"] as LinkElementImpl;
 
 this.label1.Text = "\nLink(IsVisible):" + this.link.IsVisible.ToString();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ‘Get the value indicating whether the link is visible or not.
 
@@ -467,9 +469,9 @@ Private link As LinkElementImpl = CType(IIf(TypeOf HtmlElement("link") Is LinkEl
 
 Me.label1.Text = Constants.vbLf & "Link(IsVisible):" & Me.link.IsVisible.ToString()
 
+{% endhighlight %}
 
-
-Methods
+#### Methods
 
 
 
@@ -505,7 +507,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -517,9 +519,9 @@ this.script = htmlelements["script"] as SCRIPTElementImpl;
 
 this.label1.Text = "\nScript(IsVisible):" + this.script.IsVisible.ToString();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -531,9 +533,9 @@ Private Me.script = Ctype(IIf(TypeOf htmlelements("script") Is SCRIPTElementImpl
 
 Private Me.label1.Text = Constants.vbLf & "Script(IsVisible):" & Me.script.IsVisible.ToString()  
 
+{% endhighlight %}
 
-
-Methods
+#### Methods
 
 
 
@@ -541,21 +543,21 @@ Methods
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 MessageBox.Show("ScriptCode:\n" + this.script.GetScriptCode().ToString());
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 MessageBox.Show("ScriptCode:" & Constants.vbLf+Me.script.GetScriptCode().ToString())   
 
-
+{% endhighlight %}
 
 ## SELECT Element
 
@@ -563,7 +565,7 @@ The SELECT element is used to define a drop-down list. The user can specify the 
 
 
 
-Properties
+#### Properties
 
 
 
@@ -571,7 +573,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -583,9 +585,9 @@ this.select = htmlelements["select"] as SELECTElementImpl;
 
 this.label1.Text = "\nSelect(UserControl):" + this.UserControl.DefaultSize.ToString();                      
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -597,9 +599,9 @@ Me.Select = CType(IIf(TypeOf htmlelements("select") Is SELECTElementImpl, htmlel
 
 Me.label1.Text = Constants.vbLf & "Select(UserControl):" & Me.Select.UserControl.DefaultSize.ToString()
 
+{% endhighlight %}
 
-
-Methods
+#### Methods
 
 * InfillFromXMLElement: Detects the type of control and creates the particular control
 
@@ -619,7 +621,7 @@ The STYLE element is used to implement custom style in a document. It occurs ins
 
 
 
-Properties
+#### Properties
 
 
 
@@ -627,7 +629,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -639,9 +641,9 @@ StyleElementImpl link = htmlelements["style"] as StyleElementImpl;
 
 this.label1.Text = "\nLink(IsVisible):" + link.IsVisible.ToString();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -653,9 +655,9 @@ Private link As StyleElementImpl = CType(IIf(TypeOf htmlelements("style") Is Sty
 
 Private Me.label1.Text = Constants.vbLf & "Link(IsVisible):" &  link.IsVisible.ToString()
 
+{% endhighlight %}
 
-
-Methods
+#### Methods
 
 
 
@@ -669,14 +671,14 @@ The TABLE element is used to create tables in a document. The table element cont
 
 
 
-Properties
+#### Properties
 
 * ColsCount: Gets / sets the number of columns present in the table
 * RowsCount: Gets / sets the number of rows present in the table
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -689,10 +691,10 @@ TABLEElementImpl table = htmlelements["table"] as TABLEElementImpl;
 this.label1.Text = "\nTable(ColsCount and RowsCount):" + table.ColsCount.ToString() + "," + table.RowsCount.ToString();
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -704,7 +706,7 @@ Private table As TABLEElementImpl = CType(IIf(TypeOf htmlelements("table") Is TA
 
 Private Me.label1.Text = Constants.vbLf & "Table(ColsCount and RowsCount):" & table.ColsCount.ToString()+","+table.RowsCount.ToString()
 
-
+{% endhighlight %}
 
 ## TD - Table cell Element
 
@@ -716,7 +718,7 @@ The TEXTAREA element is used to define a multiline textbox, allowing the user to
 
 
 
-Properties
+#### Properties
 
 
 
@@ -724,7 +726,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -736,13 +738,9 @@ TEXTAREAElementImpl txt = htmlelements["txt"] as TEXTAREAElementImpl;
 
 this.txt.UserControl.CustomControl.Text = "This is a multiline textBox";
 
+{% endhighlight %}
 
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ‘UserControl property gets the user control instance for the particular input element declared by the      '  user.
 
@@ -752,7 +750,7 @@ Private txt As TEXTAREAElementImpl = CType(IIf(TypeOf htmlelements("txt") Is TEX
 
 Private Me.txt.UserControl.CustomControl.Text= "This is a multiline textBox"
 
-
+{% endhighlight %}
 
 ## TH - Table Head Element
 
@@ -764,7 +762,7 @@ The TR element is used to create rows inside a table. The TRElementImpl class co
 
 
 
-Properties
+#### Properties
 
 
 
@@ -773,7 +771,7 @@ Properties
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -785,9 +783,9 @@ TRElementImpl tr = htmlelements["tr"] as TRElementImpl;
 
 this.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.ToString()+","+ tr.VirtualCellsCount.ToString();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -798,6 +796,8 @@ Private htmlelements As Hashtable = Me.htmluiControl1.Document.GetElementsByUser
 Private tr As TRElementImpl = Ctype(IIf(TypeOf htmlelements("tr") Is TRElementImpl, htmlelements("tr"), Nothing), TRElementImpl)
 
 Private Me.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.ToString()+","+ tr.VirtualCellsCount.ToString()
+
+{% endhighlight %}
 
 ## UL - Unordered List Element
 

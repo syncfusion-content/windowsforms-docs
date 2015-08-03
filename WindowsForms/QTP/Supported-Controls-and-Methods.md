@@ -7,7 +7,7 @@ control: QTP
 documentation: ug
 ---
 
-## Supported Controls and Methods
+# Supported Controls and Methods
 
 The following controls are supported by Essential QuickTest Professional:
 
@@ -21,7 +21,7 @@ The following controls are supported by Essential QuickTest Professional:
 
 By supported methods, we mean those methods that are recorded in QTP. 
 
-### Essential Grid
+## Essential Grid
 
 Essential Grid supports the following controls:
 
@@ -35,7 +35,7 @@ Essential Grid supports the following controls:
 
 The following are the recorded methods and their corresponding descriptions for Essential Grid:
 
-Grid Control
+### Grid Control
 
 
 
@@ -194,7 +194,7 @@ Gets the name of the Grid control object.</td></tr>
 </table>
 
 
-GridDataBoundGrid
+### GridDataBoundGrid
 
 
 
@@ -369,7 +369,7 @@ Gets the name of the Grid DataBoundGrid object</td></tr>
 </table>
 
 
-GridGroupingControl
+### GridGroupingControl
 
 
 
@@ -585,7 +585,7 @@ Gets the name of the Grid control object.</td></tr>
 </table>
 
 
-GridListControl
+### GridListControl
 
 
 
@@ -613,7 +613,7 @@ Gets the name of the GridListControl object</td></tr>
 </table>
 
 
-TabBarSplitterControl
+### TabBarSplitterControl
 
 
 
@@ -689,7 +689,7 @@ The following are the recorded methods and their corresponding descriptions for 
 
 
 
-ButtonAdv
+#### ButtonAdv
 
 
 
@@ -705,7 +705,7 @@ Performs click action on the ButtonAdv control.</td></tr>
 </table>
 
 
-CalculatorControl
+#### CalculatorControl
 
 
 
@@ -733,7 +733,7 @@ Sets the value in the text area as specified in the argument.</td></tr>
 </table>
 
 
-CheckBoxAdv
+#### CheckBoxAdv
 
 
 
@@ -756,7 +756,7 @@ Gets the CheckState of the CheckBoxAdv.</td></tr>
 </table>
 
 
-ColorPickerUIAdv
+#### ColorPickerUIAdv
 
 
 
@@ -772,7 +772,7 @@ The color that has to be selected.</td></tr>
 </table>
 
 
-ComboBoxAutoComplete
+#### ComboBoxAutoComplete
 
 
 
@@ -788,7 +788,7 @@ Shows the drop-down list.</td></tr>
 </table>
 
 
-ComboDropDown
+#### ComboDropDown
 
 
 
@@ -808,7 +808,7 @@ Selects the item in the list.</td></tr>
 </table>
 
 
-CommandBar
+#### CommandBar
 
 
 
@@ -832,7 +832,7 @@ Sets the CommandBar to float.</td></tr>
 </table>
 
 
-DataListView
+#### DataListView
 
 
 
@@ -852,7 +852,7 @@ Performs click on the focused item.</td></tr>
 </table>
 
 
-DateTimePickerAdv
+#### DateTimePickerAdv
 
 
 
@@ -900,7 +900,7 @@ Returns the current value in the DateTimePickerAdv control.</td></tr>
 </table>
 
 
-DockingManager
+#### DockingManager
 
 
 
@@ -928,7 +928,7 @@ Changes the state of the docking window into a floating state with the specified
 </table>
 
 
-GroupBar
+#### GroupBar
 
 
 
@@ -948,7 +948,7 @@ Simulates click in the Navigation pane drop-down button.</td></tr>
 </table>
 
 
-GroupView
+#### GroupView
 
 
 
@@ -968,7 +968,7 @@ Drag and drop the GroupView item.</td></tr>
 </table>
 
 
-MultiColumnComboBox
+#### MultiColumnComboBox
 
 
 
@@ -988,7 +988,7 @@ Selects the given index.</td></tr>
 </table>
 
 
-PopupMenu
+#### PopupMenu
 
 
 
@@ -1004,7 +1004,7 @@ Selects the item from the pop-up menu.</td></tr>
 </table>
 
 
-ProgressBarAdv
+#### ProgressBarAdv
 
 
 
@@ -1024,7 +1024,7 @@ Gets the current value of the ProgressBar.</td></tr>
 </table>
 
 
-RadioButtonAdv
+#### RadioButtonAdv
 
 
 
@@ -1044,7 +1044,7 @@ Shows whether the RadioButtonAdv is set.</td></tr>
 </table>
 
 
-RibbonControlAdv
+#### RibbonControlAdv
 
 
 
@@ -1096,7 +1096,7 @@ Maximizes the Ribbon Tab panel.</td></tr>
 </table>
 
 
-ScrollerFrame
+#### ScrollerFrame
 
 
 
@@ -1112,7 +1112,7 @@ The position of the scroll to be specified.</td></tr>
 </table>
 
 
-TabbedMDIManager
+#### TabbedMDIManager
 
 
 
@@ -1134,7 +1134,7 @@ Selects the specified tab page.</td></tr>
 
 
 
-TabControlAdv
+#### TabControlAdv
 
 
 
@@ -1158,7 +1158,7 @@ Closes the tab page in the TabPageAdv control.</td></tr>
 </table>
 
 
-XPTaskBar
+#### XPTaskBar
 
 
 
@@ -1213,7 +1213,7 @@ Helps to find an item’s existence.</td></tr>
 </table>
 
 
-TextBoxExt
+#### TextBoxExt
 
 
 
@@ -1233,7 +1233,7 @@ Select the text in the TextBoxExt.</td></tr>
 </table>
 
 
-ThemedCheckButton
+#### ThemedCheckButton
 
 
 
@@ -1253,7 +1253,7 @@ Gets the CheckState of the CheckBox in the DateTimeAdv</td></tr>
 </table>
 
 
-TreeViewAdv
+#### TreeViewAdv
 
 
 
@@ -1321,7 +1321,7 @@ Right-clicks the specified node.</td></tr>
 </table>
 
 
-XPMenus
+#### XPMenus
 
 
 
@@ -1345,7 +1345,7 @@ For the given text of the required menu, MenuItemPos will return the position of
 </table>
 
 
-XPToolBar
+#### XPToolBar
 
 
 
@@ -1365,7 +1365,7 @@ Shows the popup of the parent bar item.</td></tr>
 </table>
 
 
-XPTaskBar
+#### XPTaskBar
 
 
 
@@ -1420,7 +1420,7 @@ Helps to find if an item exists.</td></tr>
 </table>
 
 
-SplitContainerAdv
+#### SplitContainerAdv
 
 
 
@@ -1440,7 +1440,7 @@ Collapses the panel.</td></tr>
 </table>
 
 
-TabSplitterContainer
+#### TabSplitterContainer
 
 
 
@@ -1476,7 +1476,7 @@ Selects the secondary tab page based on the given index.</td></tr>
 </table>
 
 
-TrackBarEx
+#### TrackBarEx
 
 
 
@@ -1492,7 +1492,7 @@ Sets the value.</td></tr>
 </table>
 
 
-RangeSlider
+#### RangeSlider
 
 
 
@@ -1508,7 +1508,7 @@ Sets the values.</td></tr>
 </table>
 
 
-NavigationView
+#### NavigationView
 
 
 
@@ -1528,7 +1528,7 @@ Selects the bar based on the given name.</td></tr>
 </table>
 
 
-TabBarSplitterControl
+#### TabBarSplitterControl
 
 
 
@@ -1552,7 +1552,7 @@ The label in the tab page can be found by passing the index.</td></tr>
 </table>
 
 
-### Essential Chart
+#### Essential Chart
 
 
 
@@ -1656,7 +1656,7 @@ The following are the recorded methods and their corresponding descriptions for 
 
 
 
-Schedule Control
+#### Schedule Control
 
 
 
@@ -1686,6 +1686,7 @@ Move appointment to some other timeline.</td></tr>
 Scroll(int value)</td><td>
 Scroll the schedule control.</td></tr>
 </table>
+
 ### Essential Diagram
 
 
@@ -1694,7 +1695,7 @@ The following are the recorded methods and their corresponding descriptions for 
 
 
 
-Diagram Control
+#### Diagram Control
 
 
 

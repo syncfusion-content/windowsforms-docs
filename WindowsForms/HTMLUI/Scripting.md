@@ -13,7 +13,7 @@ Essential HTMLUI has extensive support to Scripts. Scripting involves creating s
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -97,14 +97,14 @@ scripttext.UserControl.CustomControl.Text = "This is a sample for scripting";
 
 </html>
 
-
+{% endhighlight %}
 
 ## HTMLUIScripting Sample
 
 This sample illustrates the support of self-contained HTML documents in HTMLUI.
 
-{{ '![](Scripting_images/Scripting_img1.jpeg)' | markdownify }}
-{:.image }
+![](Scripting_images/Scripting_img1.jpeg)
+
 
 
 

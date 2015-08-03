@@ -13,7 +13,7 @@ Essential HTMLUI supports the export of HTML documents. These documents that are
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -75,9 +75,9 @@ return bmp;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -133,13 +133,13 @@ Return bmp
 
 End Function
 
-
+{% endhighlight %}
 
 ## HTMLUIExporting Sample
 
 This sample illustrates the export of HTML documents loaded into the HTMLUI to images.
 
-{{ '![](Exporting_images/Exporting_img1.jpeg)' | markdownify }}
-{:.image }
+![](Exporting_images/Exporting_img1.jpeg)
+
 
 

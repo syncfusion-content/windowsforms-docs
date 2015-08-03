@@ -13,7 +13,7 @@ As the HTMLUI control supports rendering of web pages, it can be used like a lig
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25,11 +25,9 @@ Uri uri = new Uri(path);
 
 htmluiControl1.LoadHTML(uri);
 
+{% endhighlight %}
 
-
-
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -41,13 +39,13 @@ Private uri As Uri = New Uri(path)
 
 HtmluiControl1.LoadHTML(uri)
 
-
+{% endhighlight %}
 
 Also the ability of the HTMLUI control to load from strings can be used in creating HTML editors for tutorial applications.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -61,9 +59,9 @@ string htmlString = "<HTML>
 
 this.htmluiControl1.LoadFromString(htmlString);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -75,14 +73,14 @@ Private htmlString As String = "<HTML>"
 
 Me.HtmluiControl1.LoadFromString(htmlString)
 
-
+{% endhighlight %}
 
 The following figure shows an HTML Editor rendered using HTMLUI.
 
 
 
-{{ '![](HTML-Renderer_images/HTML-Renderer_img1.png)' | markdownify }}
-{:.image }
+![](HTML-Renderer_images/HTML-Renderer_img1.png)
+
 
 
 ## HTMLUI Browser Sample
@@ -91,8 +89,8 @@ This sample demonstrates the implementation of a Web Browser in HTMLUI.
 
 
 
-{{ '![](HTML-Renderer_images/HTML-Renderer_img2.jpeg)' | markdownify }}
-{:.image }
+![](HTML-Renderer_images/HTML-Renderer_img2.jpeg)
+
 
 
 
@@ -109,8 +107,8 @@ This sample demonstrates the implementation of HTML Editors in HTMLUI.
 
 
 
-{{ '![](HTML-Renderer_images/HTML-Renderer_img3.jpeg)' | markdownify }}
-{:.image }
+![](HTML-Renderer_images/HTML-Renderer_img3.jpeg)
+
 
 
 
