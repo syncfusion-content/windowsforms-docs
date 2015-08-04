@@ -11,13 +11,11 @@ documentation: ug
 
 You can use the Microsoft Excel to design spreadsheets that can be used on systems where MS Excel is not installed. This can be done by using a combination of Essential XlsIO and Essential Calculate, where the former can be used to read and write the spreadsheet and later to actually do the computation as values in the spreadsheet are modified. 
 
-Example
+#### Example
 
 To illustrate this process, consider a sample project, Essential Studio\x.x.x.x\Windows\Calculation.Windows\Samples\2.0\XlsFileUsingExcelRW. 
 
-> {{ '![C:/Documents and Settings/jananit/Desktop/Dataicon.jpg](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg)' | markdownify }}
-{:.image }
- _Note: This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required._
+> Note: This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required.
 
 The spreadsheet you are using is a car insurance calculator. It uses Names to manage variable values and has the following four sheets.
 
@@ -26,34 +24,34 @@ The spreadsheet you are using is a car insurance calculator. It uses Names to ma
 * Calculate-Does the actual calculations. Based on the input values from the input sheet, formulas in this sheet, look up appropriate weights from the LookUps sheet, and compute the car insurance cost depending upon these weights.
 * Outputs-Contains the computed results obtained from the Calculate sheet.
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg)
 
 
 
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg)' | markdownify }}
-{:.image }
+
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg)
 
 
 
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg)' | markdownify }}
-{:.image }
+
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg)
 
 
 
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg)' | markdownify }}
-{:.image }
+
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg)
+
 
 
 This layout represents a general calculation design process which you can use for batch processing of information. The idea is that you change the inputs (all on a single sheet) and then return the outputs (all from a single sheet). There may be a web service or a server application that will allow clients to upload inputs and then download outputs. Or it could just be a batch processing calculation engine. Using this technique, you can use Excel to design complex calculations and then have a simple application that runs on systems without Excel, to input new values and retrieve computed results.
 
 For example, consider the below form which accepts input values from the user. Once the values are set, the user clicks a button on the form that puts these values into the inputs sheet and then retrieves the insurance costs from the Outputs sheet and displays it on the form.
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img6.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img6.jpeg)
+
 
 
 Before learning about the actual code used in this sample to access XLS files, you need to know about a couple of classes in Essential Calculate as well as the role that Essential XlsIO will play.
@@ -68,11 +66,7 @@ In the Adding Calculation Support section, you would have learnt how to support 
 * The CalcWorkbookclass is a collection of CalcSheets. 
 * You can use these classes to manage the support for working with Excel spreadsheets.
 
-
-
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img7.jpeg)' | markdownify }}
-{:.image }
- For more detailed information on these classes, check out the class reference.
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img7.jpeg) For more detailed information on these classes, check out the class reference.
 
 
 
@@ -84,9 +78,7 @@ Limitation-You cannot perform actual computations on the contents of the XLS fil
 
 A sample which illustrates the usage of Essential XlsIO with Essential Calculate is available in the following sample installation location:
 
-_<Install Location>\Windows\Calculate.Windows\Samples\2.0\Xls File Using CalcEngine Demo\cs_ 
-
-
+&lt;Install Location&gt;\Windows\Calculate.Windows\Samples\2.0\Xls File Using CalcEngine Demo\cs
 
 In this sample, the following two classes are used: 
 
@@ -102,10 +94,7 @@ The following sample code snippet creates an XlsIO workbook from the Excel sprea
 Given below is the code from the Form.Load event handler.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 private ExcelRWCalcWorkbook calcWB;
 
@@ -145,11 +134,9 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Private calcWB As ExcelRWCalcWorkbook
 
@@ -187,6 +174,7 @@ Private Sub Form1_Load(sender As Object, e As System.EventArgs)
 
 End Sub 
 
+{% endhighlight %}
 
 
 The following is an explanation of the preceding code.
@@ -195,200 +183,193 @@ The following is an explanation of the preceding code.
 2. A call to CalculateAll is made so that all dependencies can be properly set within the underlying CalcEngine. By default, dependent management is locked in these classes. So, you will have to toggle LockDependencies to allow the engine to track them. It works this way for this sample, as you are not changing any relations among the values like adding or editing actual formulas, so the dependency relations among the values do not change. Thus, these dependencies only need to be done once and not continually updated as values change. The sample requests the calculated values to be refreshed from the beginning and does not rely on auto-calculations. There is another property setting that is commented out, i.e., setting CalculatingSuspended to True tells the engine to skip any calculations that might be triggered by changing values. This will postpone calculations until the property is reset to False. At that point, you will have to do a RecalculateAll call or use an explicit PullUpdatedValue call to ensure that the computed values are current. Suspending calculations makes sense if you are updating many entries and do not need intermediate values calculated.
 3. Sets initial values for the combo boxes on the form. This next set of code shows what will happen when you click the button. At this point, the values need to be moved from the controls on the form into the ExcelRWCalcWorkbook object and the newly computed result is retrieved.
 
+   ~~~ cs
 
+		private void button1_Click(object sender, System.EventArgs e)
 
-[C#]
-
-
-
-private void button1_Click(object sender, System.EventArgs e)
-
-{
-
-
-
-        // 1) Moves input values from the form into the calcsheet.
-
-        SetSheetInputs();
+		{
+			// 1) Moves input values from the form into the calcsheet.
+			SetSheetInputs();
 
 
 
-       // 2) Calculations are not suspended, so just getting the value triggers the calculation. So these two lines are not needed.....              
+			// 2) Calculations are not suspended, so just getting the value triggers the calculation. So these two lines are not needed.....              
 
-       // this.calcWB.Engine.UpdateCalcID();
+			// this.calcWB.Engine.UpdateCalcID();
 
-       // this.calcWB.Engine.PullUpdatedValue(this.calcWB.GetSheetID("Outputs"), 1, 1);
+			// this.calcWB.Engine.PullUpdatedValue(this.calcWB.GetSheetID("Outputs"), 1, 1);
 
 
 
-        // 3) Get the value from cell 1,1 on the output sheet.
+			// 3) Get the value from cell 1,1 on the output sheet.
 
-        double d;
+			double d;
 
-        if(double.TryParse(calcWB["Outputs"][1,1].ToString(),NumberStyles.Any,null,out d))
+			if(double.TryParse(calcWB["Outputs"][1,1].ToString(),NumberStyles.Any,null,out d))
 
-        {
+			{
 
                 // Cell 1,1 on the outputs sheet has the result.
 
                 this.labelPrice.Text = string.Format("{0:C2}", d); 
 
-        }
+			}
 
-        else
+			else
 
                 this.labelPrice.Text = "---";
 
-}
+		}
 
 
 
-private int ageRow = 3;
+		private int ageRow = 3;
 
-private int sexRow = 4;
+		private int sexRow = 4;
 
-private int stateRow = 5;
+		private int stateRow = 5;
 
-private int pointsRow = 6;
+		private int pointsRow = 6;
 
-private int modelRow = 7;
+		private int modelRow = 7;
 
-private int modelYearRow = 8;
+		private int modelYearRow = 8;
 
-private int multipleDiscountRow = 9;
+		private int multipleDiscountRow = 9;
 
 
 
-// 4) Set the input values into the CalcSheets.
+		// 4) Set the input values into the CalcSheets.
 
-private void SetSheetInputs()
+		private void SetSheetInputs()
 
-{
+		{
 
-        CalcSheet inputSheet = this.calcWB["Inputs"];
+			CalcSheet inputSheet = this.calcWB["Inputs"];
 
-        inputSheet[ageRow,2] = this.numericUpDownAge.Value.ToString();
+			inputSheet[ageRow,2] = this.numericUpDownAge.Value.ToString();
 
-        inputSheet[sexRow,2] = this.comboBoxSex.Text[0].ToString();
+			inputSheet[sexRow,2] = this.comboBoxSex.Text[0].ToString();
 
-        inputSheet[stateRow,2] = this.comboBoxState.Text;
+			inputSheet[stateRow,2] = this.comboBoxState.Text;
 
-        inputSheet[pointsRow,2] = this.numericUpDownPoints.Value.ToString();
+			inputSheet[pointsRow,2] = this.numericUpDownPoints.Value.ToString();
 
-        inputSheet[modelRow,2] = this.comboBoxModel.Text;
+			inputSheet[modelRow,2] = this.comboBoxModel.Text;
 
-        inputSheet[modelYearRow,2] = numericUpDownModelYear.Value.ToString();
+			inputSheet[modelYearRow,2] = numericUpDownModelYear.Value.ToString();
 
-        inputSheet[multipleDiscountRow,2] = checkBoxMCars.Checked ? "Yes" : "No";
+			inputSheet[multipleDiscountRow,2] = checkBoxMCars.Checked ? "Yes" : "No";
 
-        inputSheet[3, 5] = this.textBoxBaseAmount.Text;
+			inputSheet[3, 5] = this.textBoxBaseAmount.Text;
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+			Private Sub button1_Click(sender As Object, e As System.EventArgs)
 
 
 
-Private Sub button1_Click(sender As Object, e As System.EventArgs)
+			' 1) Moves input values from the form into the CalcSheet.
 
+			SetSheetInputs()
 
 
-        ' 1) Moves input values from the form into the CalcSheet.
 
-        SetSheetInputs()
+			' 2) Calculations not suspended, so just getting the value triggers the computation. So these two lines are not needed.....
 
+			' Me.calcWB.Engine.UpdateCalcID()
 
+			' Me.calcWB.Engine.PullUpdatedValue(this.calcWB.GetSheetID("Outputs"), 1, 1)
 
-        ' 2) Calculations not suspended, so just getting the value triggers the computation. So these two lines are not needed.....
 
-        ' Me.calcWB.Engine.UpdateCalcID()
 
-        ' Me.calcWB.Engine.PullUpdatedValue(this.calcWB.GetSheetID("Outputs"), 1, 1)
+			' 3) Get the value from cell 1,1 on the output sheet.
 
+			Dim d As Double
 
+			If Double.TryParse(calcWB("Outputs")(1, 1).ToString(), NumberStyles.Any, Nothing, d) Then
 
-        ' 3) Get the value from cell 1,1 on the output sheet.
 
-        Dim d As Double
 
-        If Double.TryParse(calcWB("Outputs")(1, 1).ToString(), NumberStyles.Any, Nothing, d) Then
+				' Cell 1,1 on the outputs sheet has the result.
 
+				Me.labelPrice.Text = String.Format("{0:C2}", d)
 
+			Else
 
-          ' Cell 1,1 on the outputs sheet has the result.
+				Me.labelPrice.Text = "---"
 
-            Me.labelPrice.Text = String.Format("{0:C2}", d)
+			End If
 
-        Else
 
-            Me.labelPrice.Text = "---"
 
-        End If
+			' Button1_Click 
 
+			End Sub 
 
 
-' Button1_Click 
 
-End Sub 
+			Private ageRow As Integer = 3
 
+			Private sexRow As Integer = 4
 
+			Private stateRow As Integer = 5
 
-Private ageRow As Integer = 3
+			Private pointsRow As Integer = 6
 
-Private sexRow As Integer = 4
+			Private modelRow As Integer = 7
 
-Private stateRow As Integer = 5
+			Private modelYearRow As Integer = 8
 
-Private pointsRow As Integer = 6
+			Private multipleDiscountRow As Integer = 9
 
-Private modelRow As Integer = 7
 
-Private modelYearRow As Integer = 8
 
-Private multipleDiscountRow As Integer = 9
 
 
+			' 4) Set the input values into the CalcSheets.
 
+			Private Sub SetSheetInputs()
 
+			Dim inputSheet As CalcSheet = Me.calcWB("Inputs")
 
-' 4) Set the input values into the CalcSheets.
+			inputSheet(ageRow, 2) = Me.numericUpDownAge.Value.ToString()
 
-Private Sub SetSheetInputs()
+			inputSheet(sexRow, 2) = Me.comboBoxSex.Text(0).ToString()
 
-        Dim inputSheet As CalcSheet = Me.calcWB("Inputs")
+			inputSheet(stateRow, 2) = Me.comboBoxState.Text
 
-        inputSheet(ageRow, 2) = Me.numericUpDownAge.Value.ToString()
+			inputSheet(pointsRow, 2) = Me.numericUpDownPoints.Value.ToString()
 
-        inputSheet(sexRow, 2) = Me.comboBoxSex.Text(0).ToString()
+			inputSheet(modelRow, 2) = Me.comboBoxModel.Text
 
-        inputSheet(stateRow, 2) = Me.comboBoxState.Text
+			inputSheet(modelYearRow, 2) = Me.numericUpDownModelYear.Value.ToString()
 
-        inputSheet(pointsRow, 2) = Me.numericUpDownPoints.Value.ToString()
+			If Me.checkBoxMultipleCars.Checked Then
 
-        inputSheet(modelRow, 2) = Me.comboBoxModel.Text
+				inputSheet(multipleDiscountRow, 2) = "Yes"
 
-        inputSheet(modelYearRow, 2) = Me.numericUpDownModelYear.Value.ToString()
+			Else
 
-        If Me.checkBoxMultipleCars.Checked Then
+				inputSheet(multipleDiscountRow, 2) = "No"
 
-            inputSheet(multipleDiscountRow, 2) = "Yes"
+			End If
 
-        Else
+			inputSheet(3, 5) = Me.textBoxBaseAmount.Text
 
-            inputSheet(multipleDiscountRow, 2) = "No"
 
-        End If
 
-        inputSheet(3, 5) = Me.textBoxBaseAmount.Text
+			' SetSheetInputs
 
+			End Sub 
 
-
-' SetSheetInputs
-
-End Sub 
-
+   ~~~
+   {:.prettyprint }
 
 
 The following is an explanation of the preceding code.
@@ -400,11 +381,7 @@ The following is an explanation of the preceding code.
 
 The last set of code you look at will show you how to handle a batch processing requirement, looping through setting Inputs and retrieving the Output value. In this code, you will have to set CalculatingSuspended to True; so, you are setting multiple values in a manner that does not trigger any intermediate calculations. Doing so increases performance about 10% in this sample, with only eight inputs. If you had hundreds of inputs, the increased performance will be more significant.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 private void button2_Click(object sender, System.EventArgs e)
 
@@ -496,11 +473,9 @@ private void button2_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Private Sub button2_Click(sender As Object, e As System.EventArgs)
 
@@ -610,7 +585,7 @@ Private Sub button2_Click(sender As Object, e As System.EventArgs)
 
 End Sub 
 
-
+{% endhighlight %}
 
 The following is an explanation of the preceding code.
 

@@ -13,13 +13,11 @@ Syncfusion Essential studio makes use of the class named ScriptResourceAttribute
 
 Then the resource files which are all used in the Syncfusion controls are gzipped and served over the network. The following screen shot shows this.
 
-{{ '![](Web-Control-Performance_images/Web-Control-Performance_img1.jpeg)' | markdownify }}
-{:.image }
-
+![](Web-Control-Performance_images/Web-Control-Performance_img1.jpeg)
 
 In order to achieve this, you need to set the following attributes in the project's web.config file.
 
-
+{% highlight html %}
 
 <configuration system.web.extensions/>
 . . .
@@ -29,7 +27,7 @@ In order to achieve this, you need to set the following attributes in the projec
 . . .
 </system.web.extensions>
 
-
+{% endhighlight %}
 
 As the resource files get gzipped
 

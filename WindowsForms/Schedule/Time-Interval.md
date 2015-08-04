@@ -21,10 +21,10 @@ The RecurrenceRule is a string value that contains the details of the recurrence
 
 <table>
 <tr>
-<td>
-S.No</td><td>
-Rule Name</td><td>
-Purpose</td></tr>
+<th>
+S.No</th><th>
+Rule Name</th><th>
+Purpose</th></tr>
 <tr>
 <td>
 1.</td><td>
@@ -82,20 +82,19 @@ Maintains the repeat type value for every year.Syntax:{StartDate};{EndDate};Ever
 
 The Schedule control, by default, allows you to set the time interval for scheduling appointments only in hours and minutes format. Now, you can also include seconds in the time interval by enabling the AllowSecondsInAppointment property.
 
-[C#]
+{% highlight c# %}
 
 this.scheduleControl1.AllowSecondsInAppointment = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.scheduleControl1.AllowSecondsInAppointment = True
 
+{% endhighlight %}
 
-
-{{ '![](Time-Interval_images/Time-Interval_img1.png)' | markdownify }}
-{:.image }
+![](Time-Interval_images/Time-Interval_img1.png)
 
 
 ## Setting the Recurrence Appointments in Seconds
@@ -110,25 +109,17 @@ Recurrence Appointments can be added by using the appointment recurrence dialog 
 2. Uncheck the All Day event.
 3. Enter the Start Time and End Time values.
 
-{{ '![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^D7E225994120331E40BD64E3029818F53B14DCAF00CBEDA431^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img2.png)' | markdownify }}
-{:.image }
-
-
-
+   ![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^D7E225994120331E40BD64E3029818F53B14DCAF00CBEDA431^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img2.png)
 
 4. Now click the Make Recurring button to open the Appointment Recurrence Dialog.
 
-{{ '![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^B7E1DA37FC59D3BB6D6C41CD1E63B09765AB4C992B642D7F30^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-
+   ![C:/Users/Usha Clementine/AppData/Roaming/Skype/ushah_1933/media_messaging/media_cache/^B7E1DA37FC59D3BB6D6C41CD1E63B09765AB4C992B642D7F30^pimgpsh_fullsize_distr.jpg](Time-Interval_images/Time-Interval_img3.jpeg)
 
 5. The highlighted area above is the newly implemented recurrence settings.
 6. Choose the desired option to make the recurrence appointment in the schedule control and press OK.
 7. Now Save and Close. 
-### Adding recurrence by using the RecurrenceRule property
 
+### Adding recurrence by using the RecurrenceRule property
 
 Recurrence appointments can also be added by using the RecurrenceRule property. The RecurrenceRule is a string value that contains the details of the recurrence appointment with repeated rule types like daily, monthly, yearly, every second, every minute, every hour, how many days it needs to render or count, what is the interval, the time period to render the appointment, etc. The rules that are available in the Recurrence Rule property are listed in the following link.
 
@@ -136,9 +127,7 @@ Recurrence appointments can also be added by using the RecurrenceRule property. 
 
 In order to use the recurring appointments data provider of the Schedule control, the IRecurringScheduleAppointment interface should be implemented. Refer to the following code to achieve this.
 
-[C#]
-
-
+{% highlight c# %}
 
 IRecurringScheduleDataProvider dp = scheduleProvider as IRecurringScheduleDataProvider;
 
@@ -163,12 +152,9 @@ dp.AddNewRecurringAppointments(item, new DateTime(2015, 09, 09));
 }
 
 
+{% endhighlight %}
 
-
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Dim dp As IRecurringScheduleDataProvider = TryCast(scheduleProvider, IRecurringScheduleDataProvider)
 
@@ -190,11 +176,8 @@ dp.AddNewRecurringAppointments(item, New DateTime(2015, 09, 09))
 
 End If
 
-
+{% endhighlight %}
 
 The following screenshot displays appointments shown in the day view every 10 minutes from 1:00 AM to 2:00 AM.
 
-{{ '![](Time-Interval_images/Time-Interval_img4.png)' | markdownify }}
-{:.image }
-
-
+![](Time-Interval_images/Time-Interval_img4.png)

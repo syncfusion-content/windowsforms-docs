@@ -15,7 +15,7 @@ This section discusses the library functions that are shipped in the Essential C
 
 Returns the absolute value of a number. The absolute value of a non-negative number is the number itself. Theabsolute value of a negative number is -1 times the number.
 
-Syntax
+#### Syntax:
 
 ABS(number)
 
@@ -27,7 +27,7 @@ number is the real number for which you want the absolute value.
 
 Returns the inverse cosine of a number. Inverse cosine is also referred to as arccosine. The arccosine is the angle whose cosine is the given number. The returned angle is given in radians in the range of 0 to pi.
 
-Syntax
+#### Syntax:
 
 ACOS(number)
 
@@ -39,7 +39,7 @@ number is the cosine of the angle that you want and must be between -1 and 1.
 
 Returns the inverse hyperbolic cosine of a number. The number must be greater than or equal to 1. The inverse hyperbolic cosine is the value whose hyperbolic cosine is the given number.
 
-Syntax
+#### Syntax:
 
 ACOSH(number)
 
@@ -51,7 +51,7 @@ number is any real number that is greater than or equal to 1.
 
 Returns True if all the arguments have a logical value of True and returns False if at least one argument is False.
 
-Syntax
+#### Syntax:
 
 AND(logical1, logical2, ...)
 
@@ -59,17 +59,18 @@ where:
 
 logical1, logical2, ... are multiple conditions you want to test for True or False.
 
-Remarks
+#### Remarks:
 
 * The arguments must evaluate to logical values (True or False).
 * If an argument does not evaluate to True or False, those values are ignored. 
 * There must be at least one value in the argument list.
+
 ## ASIN
 
 
 Returns the inverse sine of a number. Inverse sine is also referred to as arcsine. The arcsine is the angle whose sine is the given number. The returned angle is given in radians in the range from -pi/2 to +pi/2.
 
-Syntax
+#### Syntax:
 
 ASIN(number)
 
@@ -81,7 +82,7 @@ number is the sine of the angle that you want and must be between -1 and 1.
 
 Returns the inverse hyperbolic sine of a number. The inverse hyperbolic sine is the value whose hyperbolic sine is the given number, so ASINH(SINH(number)) equals number.
 
-Syntax
+#### Syntax:
 
 ASINH(number)
 
@@ -93,7 +94,7 @@ number is any real number.
 
 Returns the inverse tangent of a number. Inverse tangent is also known as arctangent. The arctangent is the angle whose tangent is a number. The returned angle is given in radians in the range from -pi/2 to +pi/2.
 
-Syntax
+#### Syntax:
 
 ATAN(number)
 
@@ -105,7 +106,7 @@ number is the tangent of the angle that you want.
 
 Returns the inverse tangent of the specified x and y co-ordinates. The arctangent is the angle from the x-axis to a line containing the origin (0, 0) and the point (x_num, y_num). The angle is given in radians between -pi and pi, excluding -pi.
 
-Syntax
+#### Syntax:
 
 ATAN2(x_num,y_num)
 
@@ -115,16 +116,17 @@ x_num is the X coordinate of the point.
 
 y_num is the Y coordinate of the point.
 
-Remarks
+#### Remarks:
 
 * A positive result represents a counterclockwise angle from the x-axis; a negative result represents a clockwise angle. 
 * ATAN2(a,b) equals ATAN(b/a), except that a can equal 0 in ATAN2.
+
 ## ATANH
 
 
 Returns the inverse hyperbolic tangent of a number. Number must be strictly between -1 and 1. The inverse hyperbolic tangent is the value whose hyperbolic tangent is number, so ATANH(TANH(number)) equals the given number.
 
-Syntax
+#### Syntax:
 
 ATANH(number)
 
@@ -136,7 +138,7 @@ number is any real number that is between 1 and -1.
 
 Returns the average of the absolute mean deviations of data points. AVEDEV is a measure of the variability in a data set.
 
-Syntax
+#### Syntax:
 
 AVEDEV(number1, number2, ...)
 
@@ -144,14 +146,14 @@ where:
 
 number1, number2, ... are arguments for which you want the average of the absolute deviations. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
-Remarks
+#### Remarks:
 
 * The arguments must either be numbers or names, arrays or references that contain numbers. 
 * If an array or reference argument contains text, logical values or empty cells, those values are ignored; however, cells with the a zero value are included. 
 * The equation for average deviation is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img1.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img1.png)
+
 
 
 where:
@@ -162,7 +164,7 @@ x-bar is the arithmetic mean of the data.
 
 Returns the average (arithmetic mean) of the arguments.
 
-Syntax
+#### Syntax:
 
 AVERAGE(number1, number2, ...)
 
@@ -170,16 +172,17 @@ where:
 
 number1, number2, ... are numeric arguments for which you want the average.
 
-Remarks
+#### Remarks:
 
 * The arguments must either be numbers or names, arrays or references that contain numbers. 
 * If an array or reference argument contains text, logical values or empty cells, those values are ignored; however, cells with a zero value are included.
+
 ## AVERAGEA
 
 
 Calculates the average (arithmetic mean) of the values in the list of arguments. In addition to numbers and text  logical values such as True and False are also included in the calculation.
 
-Syntax
+#### Syntax:
 
 AVERAGEA(value1, value2,...)
 
@@ -187,17 +190,18 @@ where:
 
 value1, value2, ... are cells, ranges of cells, or values for which you want the average.
 
-Remarks
+#### Remarks:
 
 * The arguments must be numbers, names, arrays, or references. 
 * Array or reference arguments that contain text evaluate as 0 (zero). If the calculation should not include text values in the average, then use the AVERAGE function. 
 * Arguments that contain True evaluate as 1; arguments that contain False evaluate as 0 (zero).
+
 ## AVG
 
 
 Returns the average (arithmetic mean) of the arguments.
 
-Syntax
+#### Syntax:
 
 AVG(number1, number2,...)
 
@@ -205,15 +209,16 @@ where:
 
 number1, number2, ... are numeric arguments for which you want the average.
 
-Remarks
+#### Remarks:
 
 * This method is the same as AVERAGE and is included for compatibility purposes.
+
 ## BINOMDIST
 
 
 Returns the individual term binomial distribution probability. 
 
-Syntax
+#### Syntax:
 
 BINOMDIST(number_s, trials, probability_s, cumulative)
 
@@ -227,7 +232,7 @@ probability_s  is the probability of success on each trial.
 
 Cumulative is a logical value that determines the form of the function. If cumulative is True, thenBINOMDIST returns the cumulative distribution which, is the probability that there are at most number_s successes; if False, it returns the probability that there are exactly number_s successes.
 
-Remarks
+#### Remarks:
 
 * Number_s and trials are truncated to integers.
 * Number_s should be >= 0 and <= trials.
@@ -236,16 +241,16 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img2.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img2.png)
+
 
 
 
 
 where:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img3.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img3.png)
+
  is COMBIN(n,x).    
 
 
@@ -254,15 +259,15 @@ where:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img4.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img4.png)
+
 
 
 ## CEILING
 
 Returns number rounded up, away from zero, to the nearest multiple of significance. For example, if you want to avoid using pennies in your prices and your product is priced at $4.82, use the formula =CEILING(4.82,0.05) to round prices up to the nearest nickel.
 
-Syntax
+#### Syntax:
 
 CEILING(number, significance)
 
@@ -272,16 +277,17 @@ number is the value you want to round off.
 
 significance is the multiple to which you want to round.
 
-Remarks
+#### Remarks:
 
 * Both values must be numeric. 
 * Regardless of the sign of a number, a value is rounded up when adjusted away from zero. If the number is an exact multiple of significance, no rounding occurs.
+
 ## Char
 
 
 The Char function returns the character whose number code is defined in the parameter.
 
-Syntax:
+#### Syntax:
 
 Char(number)
 
@@ -295,7 +301,7 @@ where,
 
 Returns the one-tailed probability of the chi-squared ( ) distribution. The  distribution is associated with a  test. 
 
-Syntax
+#### Syntax:
 
 CHIDIST(x, degrees_freedom)
 
@@ -305,7 +311,7 @@ x is the value at which you want to evaluate the distribution.
 
 degrees_freedom is the number of degrees of freedom.
 
-Remarks
+#### Remarks:
 
 * Both arguments should be numeric.
 * degrees_freedom  >= 1 and < 10^10.
@@ -323,7 +329,7 @@ X is a  random variable.
 
 Returns the inverse of the one-tailed probability of the chi-squared () distribution. If probability = CHIDIST(x,...), then CHIINV(probability,...) = x. Use this function to compare observed results with expected ones in order to decide whether your original hypothesis is valid.
 
-Syntax
+#### Syntax:
 
 CHIINV(probability, degrees_freedom)
 
@@ -333,7 +339,7 @@ probability is a probability associated with the chi-squared distribution.
 
 degrees_freedom is the number of degrees of freedom.
 
-Remarks
+#### Remarks:
 
 * Probability must be >= 0 and <= 1.
 * degrees_freedom >=1 and  = 10^10.
@@ -344,7 +350,7 @@ Given a value for probability, CHIINV seeks the value x such that CHIDIST(x, deg
 
 Returns the test for independence. CHITEST returns the value from the chi-squared (c2) distribution for the statistic and the appropriate degrees of freedom. 
 
-Syntax
+#### Syntax:
 
 CHITEST(actual_range, expected_range)
 
@@ -354,7 +360,7 @@ actual_range is the range of data that contains observations to test against exp
 
 expected_range is the range of data that contains the ratio of the product of row totals and column totals to the grand total.
 
-Remarks
+#### Remarks:
 
 
 
@@ -362,8 +368,8 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img5.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img5.png)
+
 
 
 
@@ -384,7 +390,7 @@ A low value of  is an indicator of independence. The use of CHITEST is mos
 
 The Choose function returns the value from a range of values on a specific index.
 
-Syntax:
+#### Syntax:
 
 Choose(index, valuearray)
 
@@ -392,24 +398,26 @@ where,
 
 * index is to specify the index from where you want to retrive the value.
 * valuearray is the array of value from where you want to take the value.
+
 ## Column
 
 
 The Column function returns the column index of the provided column in range. 
 
-Syntax:
+#### Syntax:
 
 Column(range)
 
 where,
 
 * range is to provide the column in range.
+
 ## COMBIN
 
 
 Returns the number of combinations for a given number of items. Use COMBIN to determine the total possible number of groups for a given number of items.
 
-Syntax
+#### Syntax:
 
 COMBIN(number, number_chosen)
 
@@ -419,14 +427,14 @@ number is the number of items.
 
 number_chosen is the number of items in each combination.
 
-Remarks
+#### Remarks:
 
 * Numeric arguments are truncated to integers. 
 * A combination is any set or subset of items, regardless of their internal order. Combinations are distinct from permutations where the internal order is significant. 
 * The number of combinations is as follows, where number = n and number_chosen = k: 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img6.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img6.png)
+
 
 
 
@@ -435,15 +443,15 @@ where:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img7.jpeg)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img7.jpeg)
+
 
 
 ## CONCATENATE
 
 Joins several text strings into one text string.
 
-Syntax
+#### Syntax:
 
 CONCATENATE (text1, text2,...)
 
@@ -451,15 +459,16 @@ where:
 
 text1, text2, ... are text items to be joined into a single text item. The text items can be text strings, numbers, or single-cell references.
 
-Remarks
+#### Remarks:
 
 * The "&" operator can be used instead of CONCATENATE to join text items.
+
 ## CONFIDENCE
 
 
 Returns a value that you can use to construct a confidence interval about a population mean. The confidence interval is a range of values. In your sample, mean x is at the center of this range and the range is x ± CONFIDENCE. For example, if x is the sample mean of delivery times for products ordered through the mail, x ± CONFIDENCE is a range of population means. 
 
-Syntax
+#### Syntax:
 
 CONFIDENCE(alpha, standard_dev,size)
 
@@ -471,18 +480,19 @@ standard_dev is the population standard deviation for the data range and is assu
 
 size is the sample size.
 
-Remarks
+#### Remarks:
 
 * All arguments must be non-numeric. 
 * Alpha must be > 0 and < 1. 
 * Standard_dev must be > 0. 
 * Size must be >= 1.
+
 ## CORREL
 
 
 Returns the correlation coefficient of the array1 and array2 cell ranges. 
 
-Syntax
+#### Syntax:
 
 CORREL(array1, array2)
 
@@ -494,15 +504,15 @@ array2 is the second cell range of values.
 
 
 
-Remarks
+#### Remarks:
 
 * array1 and array2 must have the same number of data points.
 * The equation for the correlation coefficient is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img8.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img8.png)
+
 
 
 where:
@@ -513,7 +523,7 @@ x-bar and y-bar are the sample means AVERAGE(array1) and AVERAGE(array2).
 
 Returns the cosine of the given angle.
 
-Syntax
+#### Syntax:
 
 COS(number)
 
@@ -525,7 +535,7 @@ number is the angle in radians for which you want the cosine.
 
 Returns the hyperbolic cosine of a number.
 
-Syntax
+#### Syntax:
 
 COSH(number)
 
@@ -533,21 +543,21 @@ where:
 
 number is any real number for which you want to find the hyperbolic cosine.
 
-Remarks
+#### Remarks:
 
 * The formula for the hyperbolic cosine is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img9.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img9.png)
+
 
 
 ## COUNT
 
 Counts the number of items in a list that contains numbers. 
 
-Syntax
+#### Syntax:
 
 COUNT(value1, value2,...)
 
@@ -555,7 +565,7 @@ where:
 
 value1, value2, ... are arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
 
-Remarks
+#### Remarks:
 
 * Arguments that are numbers, dates or text representations of numbers are counted; arguments that are error values or text that cannot be translated into numbers are ignored. 
 * If an argument is an array or reference, only numbers in that array or reference are counted. Empty cells, logical values, text or error values in the array or reference are ignored.
@@ -566,7 +576,7 @@ Remarks
 
 Counts the number of cells that are not empty.
 
-Syntax
+#### Syntax:
 
 COUNTA(value1, value2,...)
 
@@ -578,7 +588,7 @@ value1, value2, ... are arguments representing the values you want to count. In
 
 Counts empty cells in a specified range of cells.
 
-Syntax
+#### Syntax:
 
 COUNTBLANK(range)
 
@@ -586,15 +596,16 @@ where:
 
 range is the range from which you want to count the blank cells.
 
-Remarks
+#### Remarks:
 
 * Cells with formulas that return "" (empty text) are also counted. Cells with zero values are not counted.
+
 ## COUNTIF
 
 
 Counts the number of cells within a range that meet the given criteria.
 
-Syntax
+#### Syntax:
 
 COUNTIF(range, criteria)
 
@@ -604,15 +615,16 @@ range is the range of cells from which you want to count cells.
 
 criteria is the criteria in the form of a number, expression or text that defines which cells will be counted. For example, the criteria can be expressed as ">32".
 
-Remarks
+#### Remarks:
 
 * If and Sumif are other library functions that can be used to conditionally compute values.
+
 ## COVAR
 
 
 Returns covariance, the average of the products of deviations for each data point pair. 
 
-Syntax
+#### Syntax:
 
 COVAR(array1, array2)
 
@@ -622,14 +634,14 @@ array1 is the first cell range of numbers.
 
 array2 is the second cell range of numbers.
 
-Remarks
+#### Remarks:
 
 * The arguments must either be numbers or be names, arrays or references that contain numbers. 
 * array1 and array2 must have the same number of data points. 
 * The covariance is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img10.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img10.png)
+
 
 
 
@@ -648,7 +660,7 @@ n is the sample size.
 
 Returns the smallest value for which, the cumulative binomial distribution is greater than or equal to a criterion value.
 
-Syntax
+#### Syntax:
 
 CRITBINOM(trials, probability_s, alpha)
 
@@ -660,17 +672,18 @@ probability_s is the probability of a success on each trial.
 
 alpha is the criterion value.
 
-Remarks
+#### Remarks:
 
 * Trials must be >= 0.
 * Probability_s must be >=0 and <= 1.
 * Alpha must be >= 0 and <= 1.
+
 ## DATE
 
 
 Returns the sequential serial number that represents a particular date. 
 
-Syntax
+#### Syntax:
 
 DATE(year, month, day)
 
@@ -685,15 +698,16 @@ month is a number representing the month of the year.
 
 day is a number representing the day of the month.
 
-Remarks
+#### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and November 12, 2002 is serial number 37572 because it is 37572 days after January 1, 1900.
+
 ## DATEVALUE
 
 
 Returns the serial number of the date represented by the date_text. 
 
-Syntax
+#### Syntax:
 
 DATEVALUE(date_text)
 
@@ -701,16 +715,17 @@ where:
 
 date_text is the text that represents a date as a formatted string. For example, "11/12/2002" or "12-Nov-2002" are text strings within quotation marks that represent dates. If the year portion of the date_text is omitted, DATEVALUE uses the current year from your computer's built-in clock. The time information in the date_text is ignored.
 
-Remarks
+#### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1, and November 12, 2002 is serial number 37572 because it is 37572 days after January 1, 1900. 
 * Most functions automatically convert date values to serial numbers.
+
 ## DAY
 
 
 Returns the day of a date, represented by a serial number. The day is given as an integer ranging from 1 to 31.
 
-Syntax
+#### Syntax:
 
 DAY(serial_number)
 
@@ -722,7 +737,7 @@ serial_number is the date of the day you are trying to find. Dates should be ent
 
 Returns the number of days between two dates based on a 360-day year (twelve 30-day months) which, is used in some accounting calculations. 
 
-Syntax
+#### Syntax:
 
 DAYS360(start_date, end_date, method)
 
@@ -734,12 +749,13 @@ method is a logical value that specifies whether to use the U.S. or European met
 
 * False or omitted – The calculation uses the U.S. (NASD) method. If the starting date is the 31st of a month, it becomes equal to the 30th of the same month. If the ending date is the 31st of a month and the starting date is earlier than the 30th of a month, the ending date becomes equal to the 1st of the next month; otherwise the ending date becomes equal to the 30th of the same month.
 * True – The calculation uses the European method. Starting dates and ending dates that occur on the 31st of a month become equal to the 30th of the same month.
+
 ## DB
 
 
 Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
 
-Syntax
+#### Syntax:
 
 DB(cost, salvage, life, period, month)
 
@@ -755,7 +771,7 @@ period is the period for which, you want to calculate the depreciation. Period m
 
 month is the number of months in the first year. If month is omitted, it is assumed to be 12.
 
-Remarks
+#### Remarks:
 
 * The fixed-declining balance method computes the depreciation at a fixed rate. DB uses the following formulas to calculate the depreciation for a period:
 
@@ -783,7 +799,7 @@ cost * rate * month / 12
 
 Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.
 
-Syntax
+#### Syntax:
 
 DDB(cost, salvage, life, period, factor)
 
@@ -799,13 +815,10 @@ period is the period for which, you want to calculate the depreciation. Period 
 
 factor is the rate at which, the balance declines. If factor is omitted, it is assumed to be 2 (the double-declining balance method).
 
-> {{ '![](Function-Reference-Section_images/Function-Reference-Section_img11.jpeg)' | markdownify }}
-{:.image }
-_Note: All five arguments must be positive numbers._
+> Note: All five arguments must be positive numbers.
 
 
-
-Remarks
+#### Remarks:
 
 * The double-declining balance method computes the depreciation at an accelerated rate. Depreciation is highest in the first period and decreases in successive periods. DDB uses the following formula to calculate depreciation for a period:
 
@@ -817,7 +830,7 @@ Remarks
 
 Converts radians into degrees.
 
-Syntax
+#### Syntax:
 
 DEGREES(angle)
 
@@ -831,7 +844,7 @@ Returns the sum of squares of deviations of data points from their sample mean.
 
 
 
-Syntax
+#### Syntax:
 
 DEVSQ(number1, number2,...)
 
@@ -841,15 +854,15 @@ number1, number2, ... are arguments for which, you want to calculate the sum of
 
 
 
-Remarks
+#### Remarks:
 
 * The arguments must be numbers or names, arrays or references that contain numbers. 
 * The equation for the sum of squared deviations is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img12.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img12.png)
+
 
 
 ## Dollar
@@ -858,7 +871,7 @@ The Dollar function converts a number to text, using a currency format.
 
 The format used is $#,##0.00_);($#,##0.00). 
 
-Syntax:
+#### Syntax:
 
 Dollar (number, decimal_places)
 
@@ -866,12 +879,13 @@ where,
 
 * number is the number you want to convert to text.
 * decimal_places is the number of digits in decimal places you want to display. The value will be rounded accordingly.
+
 ## EVEN
 
 
 Returns the numberrounded upto thenearest even integer.
 
-Syntax
+#### Syntax:
 
 EVEN(number)
 
@@ -883,15 +897,16 @@ number is the value that is to be rounded.
 
 
 
-Remarks
+#### Remarks:
 
 * Regardless of the sign of the number a value is rounded up when adjusted away from zero. If the number is an even integer no rounding occurs. 
+
 ## Exact
 
 
 The Exact function compares two values ignoring the styles and returns the boolean value as true or false.
 
-Syntax:
+#### Syntax:
 
 Exact(value1, value2)
 
@@ -899,12 +914,13 @@ where,
 
 * value1 is the first value you want to compare .
 * value2 is the second value you want to compare.
+
 ## EXP
 
 
 Returns e raised to the power of the given number.
 
-Syntax
+#### Syntax:
 
 EXP(number)
 
@@ -916,7 +932,7 @@ number is the exponent applied to the base e.
 
 Returns the exponential distribution. 
 
-Syntax
+#### Syntax:
 
 EXPONDIST(x, lambda, cumulative)
 
@@ -930,25 +946,25 @@ cumulative is a logical value that indicates which, form of the exponential fun
 
 
 
-Remarks
+#### Remarks:
 
 * The equation for the probability density function is: 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img13.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img13.png)
+
 
 
 * The equation for the cumulative distribution function is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img14.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img14.png)
+
 
 
 ## FACT
 
 Returns the factorial of a number. The factorial of a number is the product of all positive integers <= the given number.
 
-Syntax
+#### Syntax:
 
 FACT(number)
 
@@ -960,13 +976,14 @@ number is the non-negative number for which you want the factorial of. If the n
 
 The False function returns the logical value for the false.
 
-Syntax:
+#### Syntax:
 
 False(stringvalue)
 
 where:
 
 * stringvalue is toprovide an empty string.
+
 ## FDIST
 
 
@@ -974,7 +991,7 @@ Returns theF probability distribution.
 
 
 
-Syntax
+#### Syntax:
 
 FDIST(x, degrees_freedom1, degrees_freedom2)
 
@@ -986,7 +1003,7 @@ degrees_freedom1 is the numerator degrees of freedom.
 
 degrees_freedom2 is the denominator degrees of freedom.
 
-Remarks
+#### Remarks:
 
 * All arguments must be numeric.
 * X must be >= 0.
@@ -1005,7 +1022,7 @@ F is a random variable that has an F distribution with degrees_freedom1 and degr
 
 The Find finction finds  a portion of a string from a particular text and returns the location of the string.
 
-Syntax:
+#### Syntax:
 
 Find(lookfor, lookin, start)
 
@@ -1021,11 +1038,11 @@ where,
 
 Using F distribution, you can compare the degree of variability for two data sets. 
 
-Syntax:
+#### Syntax:
 
 FINV(probability,deg_freedom1,deg_freedom2)
 
-The FINV function syntax has the following three arguments (Argument is a value that provides information to an action, an event, a method, a property, a function, or a procedure):
+The FINV function Syntax: has the following three arguments (Argument is a value that provides information to an action, an event, a method, a property, a function, or a procedure):
 
 * Probability is a probability associated with the F cumulative distribution.
 * Deg_freedom1 is the numerator degrees of freedom.
@@ -1035,7 +1052,7 @@ The FINV function syntax has the following three arguments (Argument is a value 
 
 Returns the Fisher transformation at x. This transformation produces a function that is normally distributed rather than skewed. 
 
-Syntax
+#### Syntax:
 
 FISHER(x)
 
@@ -1045,7 +1062,7 @@ where:
 
 x is a numeric value for which you want the transformation.
 
-Remarks
+#### Remarks:
 
 
 
@@ -1054,8 +1071,8 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img15.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img15.png)
+
 
 
 
@@ -1064,7 +1081,7 @@ Remarks
 
 Returns the inverse of the Fisher transformation. If y = FISHER(x), then FISHERINV(y) = x.
 
-Syntax
+#### Syntax:
 
 FISHERINV(y)
 
@@ -1072,21 +1089,21 @@ where:
 
 y is the value for which you want to perform the inverse of the transformation.
 
-Remarks
+#### Remarks:
 
 * The equation for the inverse of the Fisher transformation is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img16.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img16.png)
+
 
 
 ## Fixed
 
 The Fixed function rounds off to a specified number of decimal places and returns the value in text format.
 
-Syntax: 
+#### Syntax: 
 
 Fixed ( number, decimal_places, no_commas )
 
@@ -1095,12 +1112,13 @@ where,
 * number is the number you want to round.
 * decimal_places is the number of decimal places you want to display in the result.
 * no_commas is a logical value. This displays commas when it is set to FALSE, do not display commas when it is set to TRUE.
+
 ## FLOOR
 
 
 Rounds off the given number down, toward zero, to the nearest multiple of significance.
 
-Syntax
+#### Syntax:
 
 FLOOR(number, significance)
 
@@ -1112,7 +1130,7 @@ significance is the multiple to which, you want to round the number off.
 
 
 
-Remarks
+#### Remarks:
 
 * Number and significance must have the same sign. 
 * Regardless of the sign of the number, a value is rounded down when adjusted away from zero. If a number is an exact multiple of significance, no rounding occurs.
@@ -1121,7 +1139,7 @@ Remarks
 
 Calculates a future value by using existing values using a linear regression. The predicted value is a y-value for a given x-value. 
 
-Syntax
+#### Syntax:
 
 FORECAST(x, known_ys, known_xs)
 
@@ -1135,7 +1153,7 @@ known_xs is the independent array or range of data.
 
 
 
-Remarks
+#### Remarks:
 
 * The equation for FORECAST is:
 
@@ -1143,12 +1161,12 @@ a+bx
 
 where:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img17.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img17.png)
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img18.png)' | markdownify }}
-{:.image }
+
+![](Function-Reference-Section_images/Function-Reference-Section_img18.png)
+
 
 
 x-bar and y-bar are the sample means AVERAGE(known_xs) and AVERAGE(known_ys).
@@ -1157,7 +1175,7 @@ x-bar and y-bar are the sample means AVERAGE(known_xs) and AVERAGE(known_ys).
 
 The FV function returns the future value of an investment, based on an interest rate and a constant payment schedule.
 
-Syntax:
+#### Syntax:
 
 FV( interest_rate, number_payments, payment, PV, Type )
 
@@ -1177,7 +1195,7 @@ This is optional. The FV function assumes Type value as 0, when this parameter i
 
 Returns thegamma distribution. 
 
-Syntax
+#### Syntax:
 
 GAMMADIST(x, alpha,beta, cumulative)
 
@@ -1195,35 +1213,35 @@ cumulative is a logical value that determines the form of the function. If cumul
 
 
 
-Remarks
+#### Remarks:
 
 * X must be >=  0. 
 * Alpha and beta must be > 0. 
 * The equation for the gamma probability density function is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img19.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img19.png)
+
 
 
 * The standard gamma probability density function is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img20.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img20.png)
+
 
 
 * When alpha = 1, GAMMADIST returns the exponential distribution with:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img21.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img21.png)
+
 
 
 ## Gammainv
 
 The Gammainv function returns the inverse function for the GAMMADIST function. 
 
-Syntax:
+#### Syntax:
 
 Gammainv(p, alpha, beta)
 
@@ -1239,7 +1257,7 @@ where,
 
 Returns the inverse of the gamma cumulative distribution. If p = GAMMADIST(x,...), then GAMMAINV(p,...) = x.
 
-Syntax
+#### Syntax:
 
 GAMMAINV(probability, alpha, beta)
 
@@ -1253,7 +1271,7 @@ beta is a parameter to the distribution.
 
 
 
-Remarks
+#### Remarks:
 
 * Probability must be >= 0 and <= 1. 
 * Alpha and beta must be positive. 
@@ -1264,7 +1282,7 @@ Given a value for probability, GAMMAINV seeks value x such that GAMMADIST(x, alp
 
 Returns the geometric mean of an array or range of positive data. 
 
-Syntax
+#### Syntax:
 
 GEOMEAN(number1, number2,...)
 
@@ -1274,21 +1292,21 @@ number1, number2, ... are arguments for which you want to calculate the mean.
 
 
 
-Remarks
+#### Remarks:
 
 * The arguments must be either numbers or names, arrays or references that contain numbers. 
 * All values must be positive. 
 * The equation for the geometric mean is: 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img22.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img22.png)
+
 
 
 ## GROWTH
 
 This feature enables you to calculate predicted exponential growth using existing data.  This calculates and returns an array of values used for the regression analysis. Growth enables you to perform a regression analysis.
 
-_Table_ _14__: Method Table_
+_Table_ _14_: _Method Table_
 
 <table>
 <tr>
@@ -1300,19 +1318,19 @@ Type </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-Growth() </th><th>
-Calculates the Growth for an array of cells.</th><th>
-Known y’s, Known x’s, new_x's</th><th>
-Method </th><th>
-String </th><th>
-N/A </th></tr>
+<td>
+Growth() </td><td>
+Calculates the Growth for an array of cells.</td><td>
+Known y’s, Known x’s, new_x's</td><td>
+Method </td><td>
+String </td><td>
+N/A </td></tr>
 </table>
 
 
 The following is the formula to calculate Growth for an array of cells in a column:
 
-[Syntax]
+#### Syntax:
 
 =GROWTH(known_y's, [known_x's], [new_x's], 
 
@@ -1332,7 +1350,7 @@ New_x's: New x-values for which you want GROWTH to return corresponding y-values
 
 Returns the harmonic mean of a data set. The harmonic mean is the reciprocal of the arithmetic mean of reciprocals.
 
-Syntax
+#### Syntax:
 
 HARMEAN(number1, number2,...)
 
@@ -1340,7 +1358,7 @@ number1, number2, ... are arguments for which you want to calculate the mean.
 
 
 
-Remarks
+#### Remarks:
 
 * The arguments must be either numbers or names, arrays or references that contain numbers. 
 * All data values must be positive. 
@@ -1348,15 +1366,15 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img23.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img23.png)
+
 
 
 ## HLOOKUP
 
 Searches for a value in the top row of the array of values and then returns a value in the same column from a row you specify in the array. Use HLOOKUP when your comparison values are located in a row across the top of a table of data and you want to look down a specified number of rows. Use VLOOKUP when your comparison values are located in a column to the left of the data you want to find.
 
-Syntax
+#### Syntax:
 
 HLOOKUP(lookup_value, table_array, row_index_num, range_lookup)
 
@@ -1374,7 +1392,7 @@ range_lookup is a logical value that specifies whether you want HLOOKUP to find 
 
 Returns the hour of a time value. The hour is given as an integer, ranging from 0 (12:00 A.M.) to 23 (11:00 P.M.).
 
-Syntax
+#### Syntax:
 
 HOUR(serial_number)
 
@@ -1386,7 +1404,7 @@ serial_number is the time that contains the hour you want to find. Times may be 
 
 The Hypgeomdist function returns the hypergeometric distribution.
 
-Syntax:
+#### Syntax:
 
 Hypgeomdist(sample, numberofsample, population, numberofpopulation)
 
@@ -1401,7 +1419,7 @@ where,
 
 Returns the hypergeometric distribution. HYPGEOMDIST returns the probability of a given number of sample successes, given the sample size, population successes and population size. 
 
-Syntax
+#### Syntax:
 
 HYPGEOMDIST(sample_s, number_sample, population_s, number_population)
 
@@ -1417,7 +1435,7 @@ number_population is the population size.
 
 
 
-Remarks
+#### Remarks:
 
 * All arguments are truncated to integers. 
 * sample_s must be >= 0 less than both  number_sample and population_s. 
@@ -1428,8 +1446,8 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img24.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img24.png)
+
 
 
 
@@ -1452,7 +1470,7 @@ Returns one value if a condition you specify evaluates to True and another value
 
 Use IF to conduct conditional tests on values and formulas.
 
-Syntax
+#### Syntax:
 
 IF(logical_test, value_if_true, value_if_false)
 
@@ -1466,7 +1484,7 @@ value_if_false is the value that is returned if a logical_test is False.
 
 
 
-Remarks
+#### Remarks:
 
 * Countif and Sumif are additional methods that provide conditional calculations.
 ## Index
@@ -1474,7 +1492,7 @@ Remarks
 
 The Index function returns the exact value from the provided row index and column index from a specific range.
 
-Syntax:
+#### Syntax:
 
 Index(range,row,col)
 
@@ -1488,7 +1506,7 @@ where,
 
 The Indirect function returns the reference as a string instead of providing the content or range within it.
 
-Syntax:
+#### Syntax:
 
 Indirect(content)
 
@@ -1500,7 +1518,7 @@ where,
 
 Rounds a number down to the nearest integer.
 
-Syntax
+#### Syntax:
 
 INT(number)
 
@@ -1512,7 +1530,7 @@ number is the real number that you want to round down to an integer.
 
 Calculates the point at which, the least squares fit line will intersect the y-axis. 
 
-Syntax
+#### Syntax:
 
 INTERCEPT(known_y's, known_x's)
 
@@ -1524,18 +1542,18 @@ known_x's is the independent set of observations or data.
 
 
 
-Remarks
+#### Remarks:
 
 * The equation for the intercept of the regression line, a, is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img25.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img25.png)
+
 
 
 where:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img26.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img26.png)
+
 
 
 x-bar and y-bar are the sample means AVERAGE(known_x's) and AVERAGE(known_y's).
@@ -1544,7 +1562,7 @@ x-bar and y-bar are the sample means AVERAGE(known_x's) and AVERAGE(known_y's).
 
 Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate. 
 
-Syntax
+#### Syntax:
 
 IPMT(rate, per, nper, pv, fv, type)
 
@@ -1564,7 +1582,7 @@ type is the number 0 or 1 and indicates when payments are due. If type is omitt
 
 
 
-Remarks
+#### Remarks:
 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
 ## IRR
@@ -1572,7 +1590,7 @@ Remarks
 
 Returns the internal rate of return for a series of cash flows represented by the numbers in values. The cash flows must occur at regular intervals such as monthly or annually. 
 
-Syntax
+#### Syntax:
 
 IRR(values, guess)
 
@@ -1586,7 +1604,7 @@ guess is a number that you guess is close to the result of IRR. An iterative tec
 
 The IsBlank function checks for blank or null values.
 
-Syntax:
+#### Syntax:
 
 IsBlank( value )
 
@@ -1598,7 +1616,7 @@ value is the value that you want to test. If the value is blank, this function w
 
 The IsErr function checks  whether a value is an error.
 
-Syntax:
+#### Syntax:
 
 IsErr( value )
 
@@ -1610,7 +1628,7 @@ value is the value that you want to test. If the value is an error value (except
 
 Returns True if the value is a string that starts with a #.
 
-Syntax
+#### Syntax:
 
 ISERROR(value)
 
@@ -1622,7 +1640,7 @@ value is the value that is to be tested.
 
 The IsLogiacl function checks whether a value is a logical value and returns a  TRUE or FALSE.
 
-Syntax:
+#### Syntax:
 
 IsLogical( value )
 
@@ -1634,7 +1652,7 @@ This value is the value that you want to test. If the value is a TRUE or FALSE v
 
 The IsNA function returns a boolean value after determining that the provided value is a  #NA error value.
 
-Syntax:
+#### Syntax:
 
 IsNA(value)
 
@@ -1646,7 +1664,7 @@ where,
 
 The IsNonText function returns the boolean value after determining that the provided value is not a string.
 
-Syntax:
+#### Syntax:
 
 IsNonText(text)
 
@@ -1660,7 +1678,7 @@ where,
 
 Returns True if the value parses as a numeric value.
 
-Syntax
+#### Syntax:
 ISNUMBER(value)
 
 where:
@@ -1671,7 +1689,7 @@ value is the value that is to be tested.
 
 Calculates the interest paid during a specific period of an investment. 
 
-Syntax
+#### Syntax:
 
 ISPMT(rate, per, nper, pv)
 
@@ -1687,7 +1705,7 @@ pv is the present value of the investment. For a loan, pv is the loan amount.
 
 
 
-Remarks
+#### Remarks:
 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
 
@@ -1697,7 +1715,7 @@ Remarks
 
 The IsText function returns a boolean value after determining that the provided value is a string.
 
-Syntax:
+#### Syntax:
 
 IsText(text)
 
@@ -1709,7 +1727,7 @@ where,
 
 Returns the kurtosis of a data set. Kurtosis characterizes the relative peakedness or flatness of a distribution compared with the normal distribution. Positive kurtosis indicates a relatively peaked distribution. Negative kurtosis indicates a relatively flat distribution.
 
-Syntax
+#### Syntax:
 
 KURT(number1, number2, ...)
 
@@ -1719,7 +1737,7 @@ number1, number2, ... are arguments for which you want to calculate kurtosis. Y
 
 
 
-Remarks
+#### Remarks:
 
 * The arguments must be either numbers or names, arrays or references that contain numbers. 
 * If an array or reference argument contains text, logical values or empty cells, those values are ignored; however, cells with the value zero are included. 
@@ -1728,8 +1746,8 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img27.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img27.png)
+
 
 
 where:
@@ -1740,7 +1758,7 @@ s is the sample standard deviation.
 
 Returns the k-th largest value in a data set. 
 
-Syntax
+#### Syntax:
 
 LARGE(array, k)
 
@@ -1752,7 +1770,7 @@ k is the position (from the largest) in the array or cell range of data to retu
 
 
 
-Remarks
+#### Remarks:
 
 * If n is the number of data points in a range, then LARGE(array,1) returns the largest value, and LARGE(array,n) returns the smallest value.
 ## LEFT
@@ -1760,7 +1778,7 @@ Remarks
 
 LEFT returns the first character or characters in a text string, based on the number of characters you specify.
 
-Syntax
+#### Syntax:
 
 LEFT(text, num_chars)
 
@@ -1772,7 +1790,7 @@ num_chars specifies the number of characters which, you want LEFT to extract.
 
 
 
-Remarks
+#### Remarks:
 
 * Num_chars must be greater than or equal to zero.
 * If num_chars is greater than the length of text, LEFT returns all the text.
@@ -1782,7 +1800,7 @@ Remarks
 
 Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.718281828459...).      
 
-Syntax
+#### Syntax:
 
 LN(number)
 
@@ -1791,7 +1809,7 @@ where:
 number is the positive real number for which, you want the natural logarithm.
 
 
-Remarks
+#### Remarks:
 
 * LN is the inverse of the EXP function.
 ## LEN
@@ -1799,7 +1817,7 @@ Remarks
 
 LEN returns the length of a text string, including spaces.
 
-Syntax
+#### Syntax:
 
 Len(text)
 
@@ -1811,7 +1829,7 @@ text is the text string whose length is to be determined.
 
 Returns the logarithm of a number to the base that you specify.
 
-Syntax
+#### Syntax:
 
 LOG(number, base)
 
@@ -1825,7 +1843,7 @@ base is the base of the logarithm. If base is omitted, it is assumed to be 10.
 
 Returns the base-10 logarithm of a number.
 
-Syntax
+#### Syntax:
 
 LOG10(number)
 
@@ -1837,7 +1855,7 @@ number is the positive real number for which, you want the base-10 logarithm.
 
 This feature enables you to calculate predicted exponential growth using existing data.  This calculates and returns an array of values used for the regression analysis. Logest calculates and returns an array of values that is used in regression analysis.
 
-_Table_ _15__: Method Table_
+_Table_ _15_: _Method Table_
 
 <table>
 <tr>
@@ -1849,19 +1867,19 @@ Type </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-Logest() </th><th>
-Calculates Logest for an array of cells.</th><th>
-known_y's, known_x's, const, stats</th><th>
-Method</th><th>
-String </th><th>
-N/A </th></tr>
+<td>
+Logest() </td><td>
+Calculates Logest for an array of cells.</td><td>
+known_y's, known_x's, const, stats</td><td>
+Method</td><td>
+String </td><td>
+N/A </td></tr>
 </table>
 
 
 The following is the formula to calculate Logest for an array of cells in a column:
 
-[Syntax]
+[Syntax:]
 
 =LOGEST(known_y's, [known_x's], [const], [stats])
 
@@ -1883,7 +1901,7 @@ Stats  : A logical value specifying whether to return additional regression stat
 
 Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters mean and standard_dev. If p = LOGNORMDIST(x,...), then LOGINV(p,...) = x.
 
-Syntax
+#### Syntax:
 
 LOGINV(probability, mean, standard_dev)
 
@@ -1897,7 +1915,7 @@ standard_dev is the standard deviation of ln(x).
 
 
 
-Remarks
+#### Remarks:
 
 * Probability must be >= 0 and < 1. 
 * Standard_dev must be positive. 
@@ -1905,15 +1923,15 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img28.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img28.png)
+
 
 
 ## LOGNORMDIST
 
 Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters mean and standard_dev.
 
-Syntax
+#### Syntax:
 
 LOGNORMDIST(x, mean, standard_dev)
 
@@ -1927,32 +1945,33 @@ standard_dev is the standard deviation of ln(x).
 
 
 
-Remarks
+#### Remarks:
 
 * Both x and standard_dev must be positive. 
 * The equation for the lognormal cumulative distribution function is: 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img29.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img29.png)
+
 
 
 ## Lower
 
 The Lower function converts all characters in the specified text string to lowercase. Characters in the string that are not letters, are not changed.
 
-Syntax:
+#### Syntax:
 
 Lower( text )
 
 where,
 
 * text is the string you want to convert to lowercase.
+
 ## Match 
 
 
 The Match function searches for a specified value in an array and returns the relative position of that item.
 
-Syntax:
+#### Syntax:
 
 Match( value, array, match_type )
 
@@ -1987,7 +2006,7 @@ Where,
 
 Returns the largest value in a set of values.
 
-Syntax
+#### Syntax:
 
 MAX(number1, number2, ...)
 
@@ -1999,7 +2018,7 @@ number1, number2, ... are numbers for which you want to find the maximum value.
 
 Returns the largest value in a list of arguments. Text and logical values such as True and False are compared as well as numbers.
 
-Syntax
+#### Syntax:
 
 MAXA(value1, value2, ...)
 
@@ -2009,7 +2028,7 @@ value1, value2, ... are values for which you want to find the largest value.
 
 
 
-Remarks
+#### Remarks:
 
 * You can specify arguments that are numbers, empty cells, logical values or text representations of numbers. Arguments that are error values cause errors. If the calculation does not include text or logical values, use the MAX worksheet function instead.
 * If an argument is an array or reference, only values in that array or reference are used. Empty cells and text values in the array or reference are ignored.
@@ -2020,7 +2039,7 @@ Remarks
 
 Returns the median of the given numbers. The median is the number in the middle of a set of numbers; that is, half the numbers have values that are greater than the median and half have values that are less.
 
-Syntax
+#### Syntax:
 
 MEDIAN(number1, number2, ...)
 
@@ -2030,7 +2049,7 @@ number1, number2, ... are numbers for which you want the median.
 
 
 
-Remarks
+#### Remarks:
 
 * If there is an even number of numbers in the set, then MEDIAN calculates the average of the two numbers in the middle.
 ## MID
@@ -2038,7 +2057,7 @@ Remarks
 
 MID returns a text segment of a character string. The parameters specify the starting position and the number of characters.
 
-Syntax
+#### Syntax:
 
 MID(text, start_position, num_chars)
 
@@ -2054,7 +2073,7 @@ number specifies the number of characters in the part of the text.
 
 Returns the smallest number in a set of values.
 
-Syntax
+#### Syntax:
 
 MIN(number1, number2, ...)
 
@@ -2064,7 +2083,7 @@ number1, number2, ... are  numbers for which you want to find the minimum value
 
 
 
-Remarks
+#### Remarks:
 
 * If an argument is an array or reference, only numbers in that array or reference are used. Empty cells, logical values or text in the array or reference are ignored. If logical values and text should not be ignored, use MINA.
 ## MINA
@@ -2072,7 +2091,7 @@ Remarks
 
 Returns the smallest value in the list of arguments. Text and logical values such as True and False are compared as well as numbers.
 
-Syntax
+#### Syntax:
 
 MINA(value1, value2, ...)
 
@@ -2082,7 +2101,7 @@ value1, value2, ... are values for which, you want to find the smallest value.
 
 
 
-Remarks
+#### Remarks:
 
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero).
 
@@ -2092,7 +2111,7 @@ Remarks
 
 Returns theminutes of a time value. The minute is given as an integer, ranging from 0 to 59.
 
-Syntax
+#### Syntax:
 
 MINUTE(serial_number)
 
@@ -2102,7 +2121,7 @@ serial_number is the time that contains the minute you want to find. Times may 
 
 
 
-Remarks
+#### Remarks:
 
 * Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5).
 ## MIRR
@@ -2110,7 +2129,7 @@ Remarks
 
 Returns the modified internal rate of return for a series of periodic cash flows. 
 
-Syntax
+#### Syntax:
 
 MIRR(values, finance_rate, reinvest_rate)
 
@@ -2124,20 +2143,20 @@ reinvest_rate is the interest rate you receive on the cash flows as you reinvest
 
 
 
-Remarks
+#### Remarks:
 
 * MIRR uses the order of values to interpret the order of cash flows. Be sure to enter your payment and income values in the sequence you want and with the correct signs (positive values for cash received, negative values for cash paid). 
 * If n is the number of cash flows in values, frate is the finance_rate, and rrate is the reinvest_rate, then the formula for MIRR is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img30.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img30.png)
+
 
 
 ## MOD
 
 Returns the remainder after the number is divided by a divisor. The result has the same sign as the divisor.
 
-Syntax
+#### Syntax:
 
 MOD(number, divisor)
 
@@ -2149,7 +2168,7 @@ divisor is the value by which, you want to divide the number.
 
 
 
-Remarks
+#### Remarks:
 
 * The MOD function can be expressed in terms of the INT function:
 
@@ -2161,7 +2180,7 @@ MOD(n, d) = n – d * INT(n/d)
 
 Returns the most frequently occurring or repetitive, value in an array or range of data. 
 
-Syntax
+#### Syntax:
 
 MODE(number1, number2, ...)
 
@@ -2171,7 +2190,7 @@ number1, number2, ... are arguments for which you want to calculate the mode.
 
 
 
-Remarks
+#### Remarks:
 
 * In a set of values, the mode is the most frequently occurring value.
 ## MONTH
@@ -2179,7 +2198,7 @@ Remarks
 
 Returns the month of a date represented by a serial number. The month is given as an integer, ranging from 1 (January) to 12 (December).
 
-Syntax
+#### Syntax:
 
 MONTH(serial_number)
 
@@ -2189,7 +2208,7 @@ serial_number is the date of the month you are trying to find. Dates should be e
 
 
 
-Remarks
+#### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
 ## NEGBINOMDIST
@@ -2197,7 +2216,7 @@ Remarks
 
 Returns the negative binomial distribution. NEGBINOMDIST returns the probability that there will be number_f failures before the number_s-th success, when the constant probability of a success is probability_s. 
 
-Syntax
+#### Syntax:
 
 NEGBINOMDIST(number_f, number_s, probability_s)
 
@@ -2211,15 +2230,15 @@ probability_s is the probability of a success.
 
 
 
-Remarks
+#### Remarks:
 
 * number_s  must be >= 1.
 * probability_s must be >= 0 and <= 1. 
 * number_f  must be >= 0. 
 * The equation for the negative binomial distribution is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img31.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img31.png)
+
 
 
 where:
@@ -2234,7 +2253,7 @@ p is probability_s
 
 Returns the normal distribution for the specified mean and standard deviation. 
 
-Syntax
+#### Syntax:
 
 NORMDIST(x, mean, standard_dev, cumulative)
 
@@ -2250,15 +2269,15 @@ cumulative is a logical value that determines the form of the function. If cumul
 
 
 
-Remarks
+#### Remarks:
 
 * Standard_dev must be > 0. 
 * The equation for the normal density function (cumulative = False) is: 
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img32.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img32.png)
+
 
 
 * When cumulative = True, the formula is the integral from negative infinity to x of the given formula.
@@ -2267,7 +2286,7 @@ Remarks
 
 Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
 
-Syntax
+#### Syntax:
 
 NORMINV(probability, mean, standard_dev)
 
@@ -2281,7 +2300,7 @@ standard_dev is the standard deviation of the distribution.
 
 
 
-Remarks
+#### Remarks:
 
 * Probability must be >= 0 and <= 1. 
 * standard_dev must be > 0. 
@@ -2292,7 +2311,7 @@ Given a value for probability, NORMINV seeks value x such that NORMDIST(x, mean,
 
 The NormsDist function returns the probability that the observed value of a standard normal random variable will be less than or equal to the parameter.
 
-Syntax: 
+#### Syntax: 
 
 NormsDist(value)
 
@@ -2304,7 +2323,7 @@ where,
 
 The NormsInv function returns the standard normal random variable that has _Mean_ 0 and _Standard Deviation_ 1
 
-Syntax:
+#### Syntax:
 
 NormsDist(value)
 
@@ -2316,7 +2335,7 @@ where,
 
 Reverses the value of its argument. 
 
-Syntax
+#### Syntax:
 
 NOT(logical)
 
@@ -2328,13 +2347,13 @@ logical is a value or expression that can be evaluated to True or False.
 
 Returns the serial number of the current date and time. 
 
-Syntax
+#### Syntax:
 
 NOW( )
 
 
 
-Remarks
+#### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900 
 * Numbers to the right of the decimal point in the serial number represent the time; numbers to the left represent the date. For example, the serial number .5 represents the time 12:00 noon.
@@ -2343,7 +2362,7 @@ Remarks
 
 Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
 
-Syntax
+#### Syntax:
 
 NPER(rate, pmt, pv, fv, type)
 
@@ -2366,7 +2385,7 @@ type is the number 0 or 1 and indicates when payments are due. If type equals:
 
 Calculates the net present value of an investment by using a discount rate and a series of future payments (negative values) and income (positive values).
 
-Syntax
+#### Syntax:
 
 NPV(rate, value1, value2, ...)
 
@@ -2378,22 +2397,22 @@ value1, value2, ... are arguments representing the payments and income. Value1,
 
 
 
-Remarks
+#### Remarks:
 
 * The NPV investment begins one period before the date of the value1 cash flow and ends with the last cash flow in the list. The NPV calculation is based on future cash flows. If your first cash flow occurs at the beginning of the first period, the first value must be added to the NPV result, not included in the value arguments. 
 * If n is the number of cash flows in the list of values, the formula for NPV is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img33.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img33.png)
+
 
 
 ## ODD
 
 Returns the number rounded up to the nearest odd integer.
 
-Syntax
+#### Syntax:
 
 ODD(number)
 
@@ -2403,7 +2422,7 @@ number is the value to be rounded off.
 
 
 
-Remarks
+#### Remarks:
 
 * Regardless of the sign of a number, a value is rounded up when adjusted away from zero. If the number is an odd integer, no rounding occurs.
 ## Offset
@@ -2411,7 +2430,7 @@ Remarks
 
 The Offset function returns a reference to a range that is offset a number of rows and columns from any given range or cell.
 
-Syntax:
+#### Syntax:
 
 Offset( range, rows, columns, height, width )
 
@@ -2427,7 +2446,7 @@ where,
 
 Returns True if any argument is True; returns False if all arguments are False.
 
-Syntax
+#### Syntax:
 
 OR(logical1, logical2, ...)
 
@@ -2437,7 +2456,7 @@ logical1, logical2, ... are conditions you want to test that can be either True
 
 
 
-Remarks
+#### Remarks:
 
 * The arguments must evaluate to logical values such as True or False or in arrays or references that contain logical values.
 ## PEARSON
@@ -2445,7 +2464,7 @@ Remarks
 
 Returns the Pearson product moment correlation coefficient, r, a dimensionless index that ranges from -1.0 to 1.0 inclusive and reflects the extent of a linear relationship between two data sets.
 
-Syntax
+#### Syntax:
 
 PEARSON(array1, array2)
 
@@ -2457,15 +2476,15 @@ array2 is a set of dependent values.
 
 
 
-Remarks
+#### Remarks:
 
 * The arguments must be either numbers or names, array constants or references that contain numbers. 
 * The formula for the Pearson product moment correlation coefficient, r, is: 
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img34.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img34.png)
+
 
 
 where:
@@ -2476,7 +2495,7 @@ x-bar and y-bar are the sample means AVERAGE(array1) and AVERAGE(array2).
 
 Returns the k-th percentile of values in a range. 
 
-Syntax
+#### Syntax:
 
 PERCENTILE(array, k)
 
@@ -2488,7 +2507,7 @@ k is the percentile value in the range 0..1, inclusive.
 
 
 
-Remarks
+#### Remarks:
 
 * k must be >=10 and <= 1. 
 * If k is not a multiple of 1/(n - 1), PERCENTILE interpolates to determine the value at the k-th percentile.
@@ -2497,7 +2516,7 @@ Remarks
 
 Returns the rank of a value in a data set as a percentage of the data set. 
 
-Syntax
+#### Syntax:
 
 PERCENTRANK(array, x, significance)
 
@@ -2511,7 +2530,7 @@ significance is an optional value that identifies the number of significant digi
 
 
 
-Remarks
+#### Remarks:
 
 * Significance must be >= 1. 
 * If x does not match one of the values in the array, PERCENTRANK interpolates to return the correct percentage rank. 
@@ -2524,7 +2543,7 @@ Remarks
 
 The Permut function returns the number of permutations of n items taken at k time.
 
-Syntax:
+#### Syntax:
 
 Permut(n, k)
 
@@ -2537,7 +2556,7 @@ where,
 
 Returns the number 3.14159265358979, themathematical constant pi, accurate to 15 digits.
 
-Syntax
+#### Syntax:
 
 PI( )
 
@@ -2545,7 +2564,7 @@ PI( )
 
 Calculates the payment for a loan based on constant payments and a constant interest rate.
 
-Syntax
+#### Syntax:
 
 PMT(rate, nper, pv, fv, type)
 
@@ -2566,7 +2585,7 @@ type is the number 0 (zero) or 1 and indicates when payments are due. If type eq
 
 
 
-Remarks 
+#### Remarks: 
 
 * The payment returned by PMT includes principal and interest but no taxes, reserve payments or fees sometimes associated with loans. 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12 percent for rate and 4 for nper. 
@@ -2575,7 +2594,7 @@ Remarks
 
 Returns the Poisson distribution. 
 
-Syntax
+#### Syntax:
 
 POISSON(x, mean, cumulative)
 
@@ -2589,7 +2608,7 @@ cumulative is a logical value that determines the form of the probability distri
 
 
 
-Remarks
+#### Remarks:
 
 * X must be >= 0. 
 * Mean must be > 0. 
@@ -2597,21 +2616,21 @@ Remarks
 
 For cumulative = False:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img35.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img35.png)
+
 
 
 For cumulative = True:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img36.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img36.png)
+
 
 
 ## Pow
 
 The Pow function returns the result of a number raised to a power.
 
-Syntax:
+#### Syntax:
 
 POW(number, power)
 
@@ -2624,7 +2643,7 @@ where,
 
 Returns the result of a number raised to a power.
 
-Syntax
+#### Syntax:
 
 POWER(number, power)
 
@@ -2638,7 +2657,7 @@ power is the exponent to which, the base number is raised.
 
 Returns the payment on the principal for a given period, for an investment based on periodic, constant payments and a constant interest rate.
 
-Syntax
+#### Syntax:
 
 PPMT(rate, per, nper, pv, fv, type)
 
@@ -2661,7 +2680,7 @@ type is the number 0 or 1 and indicates when payments are due. If type equals:
 
 
 
-Remarks
+#### Remarks:
 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
 ## PROB
@@ -2669,7 +2688,7 @@ Remarks
 
 Returns the probability whose values are in a range that is between two limits. If upper_limit is not supplied, returns the probability that values in x_range are equal to lower_limit.
 
-Syntax
+#### Syntax:
 
 PROB(x_range, prob_range, lower_limit, upper_limit)
 
@@ -2685,7 +2704,7 @@ upper_limit is the optional upper bound on the value for which, you want a proba
 
 
 
-Remarks
+#### Remarks:
 
 * Any value in prob_range must be > 0 and < 1.
 * If upper_limit is omitted, PROB returns the probability of being equal to lower_limit.
@@ -2694,7 +2713,7 @@ Remarks
 
 Multiplies all the numbers given as arguments and returns the product.
 
-Syntax
+#### Syntax:
 
 PRODUCT(number1, number2, ...)
 
@@ -2706,7 +2725,7 @@ number1, number2, ... are numbers that you want to multiply.
 
 Returns the present value of an investment. The present value is the total amount that a series of future payments is worth now.
 
-Syntax
+#### Syntax:
 
 PV(rate, nper, pmt, fv, type)
 
@@ -2726,7 +2745,7 @@ type is the number 0 or 1 and indicates when payments are due. If type equals:
 * 1 - Payments are due at the beginning of the period.
 
 
-Remarks 
+#### Remarks: 
 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper. 
 * In annuity functions, the cash you pay out such as a deposit to savings is represented by a negative number; the cash you receive such as a dividend check is represented by a positive number.
@@ -2734,8 +2753,8 @@ Remarks
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img37.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img37.png)
+
 
 
 If rate is 0:
@@ -2746,7 +2765,7 @@ If rate is 0:
 
 Returns the quartile of a data set. 
 
-Syntax
+#### Syntax:
 
 QUARTILE(array, quart)
 
@@ -2774,7 +2793,7 @@ If quartile equals:           Value returned:
 
 Converts degrees to radians.
 
-Syntax
+#### Syntax:
 
 RADIANS(angle)
 
@@ -2788,7 +2807,7 @@ angle is an angle in degrees that you want to convert.
 
 Returns an evenly distributed random number greater than or equal to 0 and less than 1.
 
-Syntax
+#### Syntax:
 
 RAND( )
 
@@ -2796,7 +2815,7 @@ RAND( )
 
 Returns the rank of a number in a list of numbers. The rank of a number is its size relative to other values in a list. (If you were to sort the list, the rank of the number would be its position.)
 
-Syntax
+#### Syntax:
 
 RANK(number, ref, order)
 
@@ -2821,7 +2840,7 @@ Remark
 
 Returns the interest rate per period of an annuity. RATE is calculated by iteration and may not converge to a unique solution. 
 
-Syntax
+#### Syntax:
 
 RATE(nper, pmt, pv, fv, type, guess)
 
@@ -2848,7 +2867,7 @@ guess is your guess for what the rate will be. If you omit guess, it is assumed 
 
 RIGHT returns the last character or characters in a text string, based on the number of characters you specify.
 
-Syntax
+#### Syntax:
 
 RIGHT(text, num_chars)
 
@@ -2862,7 +2881,7 @@ num_chars specifies the number of characters you want RIGHT to extract.
 
 
 
-Remarks
+#### Remarks:
 
 * Num_chars must be greater than or equal to zero. 
 * If num_chars is greater than the length of text, RIGHT returns all the text. 
@@ -2872,7 +2891,7 @@ Remarks
 
 Rounds a number to a specified number of digits.
 
-Syntax
+#### Syntax:
 
 ROUND(number, num_digits)
 
@@ -2884,7 +2903,7 @@ num_digits specifies the number of digits you want to round off.
 
 
 
-Remarks
+#### Remarks:
 
 * If num_digits > 0, then number is rounded off to the specified number of decimal places. 
 * If num_digits = 0, then number is rounded off to the nearest integer. 
@@ -2894,7 +2913,7 @@ Remarks
 
 Rounds a number down towards zero.
 
-Syntax
+#### Syntax:
 
 ROUNDDOWN(number, num_digits)
 
@@ -2914,7 +2933,7 @@ Remark
 
 Rounds a number up away from 0 (zero).
 
-Syntax
+#### Syntax:
 
 ROUNDUP(number, num_digits)
 
@@ -2928,7 +2947,7 @@ num_digits is the number of digits to which you want to round a number.
 
 
 
-Remarks
+#### Remarks:
 
 * ROUNDUP behaves like ROUND, except that it always rounds a number up.
 ## RSQ
@@ -2936,7 +2955,7 @@ Remarks
 
 Returns the square of the Pearson product moment correlation coefficient through data points in known_y's and known_x's. 
 
-Syntax
+#### Syntax:
 
 RSQ(known_y's, known_x's)
 
@@ -2948,12 +2967,12 @@ known_x's is an array or range of data points.
 
 
 
-Remarks
+#### Remarks:
 
 The equation for the Pearson product moment correlation coefficient, r, is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img38.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img38.png)
+
 
 
 where:
@@ -2966,7 +2985,7 @@ RSQ returns r2, which is the square of this correlation coefficient.
 
 Returns the seconds of a time value. The second is given as an integer in the range 0 (zero) to 59.
 
-Syntax
+#### Syntax:
 
 SECOND(serial_number)
 
@@ -2976,7 +2995,7 @@ serial_number is the time that contains the seconds you want to find.
 
 
 
-Remarks
+#### Remarks:
 
 * Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5 because it is half of a day).
 ## SIGN
@@ -2984,7 +3003,7 @@ Remarks
 
 Determines the sign of a number. Returns 1 if the number is positive, zero (0) if the number is 0 and -1 if the number is negative.
 
-Syntax
+#### Syntax:
 
 SIGN(number)
 
@@ -2996,7 +3015,7 @@ number is any real number.
 
 Returns the sine of the given angle.
 
-Syntax
+#### Syntax:
 
 SIN(number)
 
@@ -3007,7 +3026,7 @@ number is the angle in radians for which you want the sine.
 SINH
 Returns the hyperbolic sine of a number.
 
-Syntax
+#### Syntax:
 
 SINH(number)
 
@@ -3017,21 +3036,21 @@ number is any real number.
 
 
 
-Remarks
+#### Remarks:
 
 * The formula for the hyperbolic sine is,
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img39.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img39.png)
+
 
 
 ## SinH
 
 The SinH function computes the hyperbolic sine of the argument.
 
-Syntax:
+#### Syntax:
 
 SinH(value)
 
@@ -3043,7 +3062,7 @@ where,
 
 Returns the skewness of a distribution. Skewness characterizes the degree of asymmetry of a distribution around its mean. 
 
-Syntax
+#### Syntax:
 
 SKEW(number1, number2, ...)
 
@@ -3053,21 +3072,21 @@ number1, number2 ... are arguments for which you want to calculate the skewness
 
 
 
-Remarks
+#### Remarks:
 
 The equation for skewness is defined as:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img40.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img40.png)
+
 
 
 ## SLN
 
 Returns the straight-line depreciation of an asset for one period.
 
-Syntax
+#### Syntax:
 
 SLN(cost, salvage, life)
 
@@ -3083,7 +3102,7 @@ life is the number of periods over-which the asset is depreciated (the useful li
 
 Returns the slope of the linear regression line through data points in known_y's and known_x's. The slope is the rate of change along the regression line.
 
-Syntax
+#### Syntax:
 
 SLOPE(known_y's, known_x's)
 
@@ -3095,14 +3114,14 @@ known_x's is the set of independent data points.
 
 
 
-Remarks
+#### Remarks:
 
 * The equation for the slope of the regression line is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img41.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img41.png)
+
 
 
 where:
@@ -3113,7 +3132,7 @@ x-bar and y-bar are the sample means AVERAGE(known_x’s) and AVERAGE(known_y’
 
 Returns the k-th smallest value in a data set. 
 
-Syntax
+#### Syntax:
 
 SMALL(array, k)
 
@@ -3129,7 +3148,7 @@ Returns a positive square root.
 
 
 
-Syntax
+#### Syntax:
 
 SQRT(number)
 
@@ -3139,7 +3158,7 @@ number is the number for which you want the square root.
 
 
 
-Remarks
+#### Remarks:
 
 * Number must be >= 0.
 
@@ -3149,7 +3168,7 @@ Remarks
 
 Returns a normalized value from a distribution characterized by mean and standard_dev.
 
-Syntax
+#### Syntax:
 
 STANDARDIZE(x, mean, standard_dev)
 
@@ -3161,22 +3180,22 @@ mean is the arithmetic mean of the distribution.
 
 standard_dev is the standard deviation of the distribution.
 
-Remarks
+#### Remarks:
 
 * standard_dev must be > 0. 
 * The equation for the normalized value is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img42.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img42.png)
+
 
 
 ## STDEV
 
 Estimates the standard deviation based on a sample. The standard deviation is a measure of how widely values are dispersed from the average value (the mean).
 
-Syntax
+#### Syntax:
 
 STDEV(number1, number2, ...)
 
@@ -3184,15 +3203,15 @@ where:
 
 number1, number2, ... are number arguments corresponding to a sample of a population. 
 
-Remarks
+#### Remarks:
 
 * STDEV assumes that its arguments are a sample of the population. If your data represents the entire population, then compute the standard deviation using STDEVP.
 * STDEV uses the following formula:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img43.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img43.png)
+
 
 
 where:
@@ -3205,7 +3224,7 @@ n is the sample size.
 
 Estimates standard deviation based on a sample. The standard deviation is a measure of how widely values are dispersed from the average value (the mean). Text and logical values such as True and False are also included in the calculation.
 
-Syntax
+#### Syntax:
 
 STDEVA(value1, value2 , ...)
 
@@ -3213,15 +3232,15 @@ where:
 
 value1, value2, ... are values corresponding to a sample of a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
-Remarks
+#### Remarks:
 
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero). 
 * STDEVA uses the following formula:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img44.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img44.png)
+
 
 
 where:
@@ -3234,7 +3253,7 @@ n is the sample size.
 
 Calculates standard deviation based on the entire population given as arguments. 
 
-Syntax
+#### Syntax:
 
 STDEVP(number1, number2, ...)
 
@@ -3244,15 +3263,15 @@ number1, number2, ... are 1 to 30 number arguments corresponding to a populatio
 
 
 
-Remarks
+#### Remarks:
 
 * STDEVP assumes that its arguments are the entire population. If your data represents a sample of the population, then compute the standard deviation using STDEV. 
 * STDEVP uses the following formula:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img45.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img45.png)
+
 
 
 
@@ -3269,7 +3288,7 @@ n is the sample size.
 
 Calculates the standard deviation based on the entire population given as arguments, including text and logical values.
 
-Syntax
+#### Syntax:
 
 STDEVPA(value1, value2, ...)
 
@@ -3279,15 +3298,15 @@ value1, value2, ... are values corresponding to a population. You can also use 
 
 
 
-Remarks
+#### Remarks:
 
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero).
 * STDEVPA uses the following formula: 
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img46.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img46.png)
+
 
 
 where:
@@ -3300,7 +3319,7 @@ n is the sample size.
 
 Returns the standard error of the predicted y-value for each x in the regression. 
 
-Syntax
+#### Syntax:
 
 STEYX(known_y's, known_x's)
 
@@ -3312,14 +3331,14 @@ known_x's is an array or range of independent data points.
 
 
 
-Remarks
+#### Remarks:
 
 * The equation for the standard error of the predicted y is: 
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img47.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img47.png)
+
 
 
 where:
@@ -3334,7 +3353,7 @@ Substitutes new_text for old_text in a text string. Use SUBSTITUTE when you want
 
 
 
-Syntax
+#### Syntax:
 
 SUBSTITUTE(text, old_text, new_text, instance_num)
 
@@ -3405,7 +3424,7 @@ Substitutes third instance of "1" with "2" (Quarter 1, 2012)</td></tr>
 
 The Sum function adds all numbers in a range of cells and returns the result.
 
-Syntax:
+#### Syntax:
 
 Sum( number1, number2, ... number_n )
 
@@ -3417,7 +3436,7 @@ number1 is the first number, number2 is the second and number_n is the nth numbe
 
 SumIf function adds the specified range of cells by a given criteria.
 
-Syntax: 
+#### Syntax:
 
 SumIf( range, criteria, sum_range )
 
@@ -3431,7 +3450,7 @@ where,
 
 Multiplies corresponding components in the given arrays and returns the sum of those products.
 
-Syntax
+#### Syntax:
 
 SUMPRODUCT(array1, array2, array3, ...)
 
@@ -3441,7 +3460,7 @@ array1, array2, array3, ... are 2 to 30 arrays whose components you will want t
 
 
 
-Remarks
+#### Remarks:
 
 * The array arguments must have the same dimensions. 
 * SUMPRODUCT treats array entries that are not numeric as if they were zeros.
@@ -3450,7 +3469,7 @@ Remarks
 
 Returns the sum of the squares of the arguments.
 
-Syntax
+#### Syntax:
 
 SUMSQ(number1, number2, ...)
 
@@ -3462,7 +3481,7 @@ number1, number2, ... are arguments for which you want the sum of the squares. 
 
 The SumXmY2 function calculates the sum of the squares of the differences between the corresponding items in the arrays and returns the sum as results.
 
-Syntax:
+#### Syntax:
 
 SumXmY2( array1, array2 )
 
@@ -3474,7 +3493,7 @@ array1 and array are two ranges or arrays.
 
 Returns the sum of the difference of squares of corresponding values in two arrays.
 
-Syntax
+#### Syntax:
 
 SUMX2MY2(array_x, array_y)
 
@@ -3486,22 +3505,22 @@ array_y is the second array or range of values.
 
 
 
-Remarks
+#### Remarks:
 
 * If an array or reference argument contains text, logical values or empty cells, those values are ignored; however, cells with the value zero are included. 
 * The equation for the sum of the difference of squares is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img48.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img48.png)
+
 
 
 ## SUMX2PY2
 
 Returns the sum of the sum of squares of corresponding values in two arrays. The sum of the sum of squares is a common term in many statistical calculations.
 
-Syntax
+#### Syntax:
 
 SUMX2PY2(array_x, array_y)
 
@@ -3513,22 +3532,22 @@ array_y is the second array or range of values.
 
 
 
-Remarks
+#### Remarks:
 
 * If an array or reference argument contains text, logical values or empty cells, those values are ignored; however, cells with the value zero are included. 
 * The equation for the sum of the sum of squares is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img49.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img49.png)
+
 
 
 ## SYD
 
 Returns the sum-of-years' digits depreciation of an asset for a specified period.
 
-Syntax
+#### Syntax:
 
 SYD(cost, salvage, life, per)
 
@@ -3544,21 +3563,21 @@ per is the period and must use the same units as life.
 
 
 
-Remarks
+#### Remarks:
 
 * SYD is calculated as follows:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img50.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img50.png)
+
 
 
 ## TAN
 
 Returns the tangent of a number.
 
-Syntax
+#### Syntax:
 
 TAN(number)
 
@@ -3572,7 +3591,7 @@ Returns the hyperbolic tangent of a number.
 
 
 
-Syntax
+#### Syntax:
 
 TANH(number)
 
@@ -3580,21 +3599,21 @@ where:
 
 number is any real number.
 
-Remarks
+#### Remarks:
 
 * The formula for the hyperbolic tangent is:
 
 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img51.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img51.png)
+
 
 
 ## TEXT
 
 Converts a value to text in a specific number format.
 
-Syntax
+#### Syntax:
 
 TEXT(value, format_text)
 
@@ -3610,7 +3629,7 @@ Returns the decimal number for a particular time.
 
 The decimal number returned by TIME is a value ranging from 0 (zero) to 0.99999999, representing the times from 0:00:00 (12:00:00 A.M.) to 23:59:59 (11:59:59 P.M.).
 
-Syntax
+#### Syntax:
 
 TIME(hour, minute, second)
 
@@ -3626,7 +3645,7 @@ second is a number from 0 to 59 representing the second.
 
 Returns the decimal number of the time represented by a text string. The decimal number is a value ranging from 0 (zero) to 0.99999999, representing the times from 0:00:00 (12:00:00 A.M.) to 23:59:59 (11:59:59 P.M.).
 
-Syntax
+#### Syntax:
 
 TIMEVALUE(time_text)
 
@@ -3636,7 +3655,7 @@ time_text is a text string that represents a time as a formatted string; for ex
 
 
 
-Remarks
+#### Remarks:
 
 Date information in time_text is ignored.
 
@@ -3644,21 +3663,22 @@ Date information in time_text is ignored.
 
 Returns the serial number of the current date. The serial number is the number of days since Jan 1, 1900.
 
-Syntax
+#### Syntax:
 
 TODAY( )
 
 
 
-Remarks
+#### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900. 
+
 ## Trim
 
 
 The Trim function returns a text value with the leading and trailing spaces removed.
 
-Syntax:
+#### Syntax:
 
 Trim( text )
 
@@ -3670,7 +3690,7 @@ where,
 
 Returns the mean of the interior of a data set. TRIMMEAN calculates the mean taken by excluding a percentage of data points from the top and bottom tails of a data set.
 
-Syntax
+#### Syntax:
 
 TRIMMEAN(array, percent)
 
@@ -3682,16 +3702,17 @@ percent is the fractional number of data points to exclude from the calculation
 
 
 
-Remarks
+#### Remarks:
 
 * Percent must be >= 0 and <= 1.
 * TRIMMEAN rounds off the number of excluded data points down to the nearest multiple of 2. If percent = 0.1, 10 percent of 30 data points equals 3 points. For symmetry, TRIMMEAN excludes a single value from the top and bottom of the data set.
+
 ## True
 
 
 The True function returns the logical value for  True.
 
-Syntax:
+#### Syntax:
 
 True(stringvalue)
 
@@ -3703,7 +3724,7 @@ where,
 
 Truncates a number to an integer by removing the fractional part of the number.
 
-Syntax
+#### Syntax:
 
 TRUNC(number, num_digits)
 
@@ -3715,7 +3736,7 @@ num_digits is a number specifying the precision of the truncation. The default 
 
 
 
-Remarks
+#### Remarks:
 
 * TRUNC and INT are similar in that both return integers. TRUNC removes the fractional part of the number. INT rounds numbers down to the nearest integer based on the value of the fractional part of the number. INT and TRUNC are different only when using negative numbers: TRUNC(-4.3) returns -4 but, INT(-4.3) returns -5 because -5 is the lower number.
 ## Upper
@@ -3723,7 +3744,7 @@ Remarks
 
 The Upper function converts all characters in a text string to uppercase.
 
-Syntax:
+#### Syntax:
 
 Upper( text )
 
@@ -3735,19 +3756,20 @@ where,
 
 The Value function computes the date or a string that contains the number, and converts it into number format.
 
-Syntax:
+#### Syntax:
 
 Value(range)
 
 where,
 
 * range is the string that contains the date or a number.
+
 ## Var
 
 
 The Var function returns the variance of a population based on sample of numbers.
 
-Syntax: 
+#### Syntax:
 
 Var( number1, number2, ... number_n )
 
@@ -3759,7 +3781,7 @@ number1, number2, ... number_n are the sample numbers. 30 numbers can be entered
 
 The VarA function returns the variance of a population based on a sample of numbers, text, and logical values (ie: TRUE or FALSE). 
 
-Syntax: 
+#### Syntax: 
 
 VarA( value1, value2, ... value_n )
 
@@ -3771,7 +3793,7 @@ value1, value2, ... value_n are the sample values. They can be numbers, text, an
 
 The VarP function returns population variance of the listed values.
 
-Syntax:
+#### Syntax:
 
 VarP(listofvalues)
 
@@ -3783,7 +3805,7 @@ where,
 
 Calculates variance based on the entire population. In addition to numbers and text, logical values such as True and False are also included in the calculation.
 
-Syntax
+#### Syntax:
 
 VARPA(value1, value2, ...)
 
@@ -3791,14 +3813,14 @@ value1, value2, ... are arguments corresponding to a population.
 
 
 
-Remarks
+#### Remarks:
 
 * VARPA assumes that its arguments are the entire population. If your data represents a sample of the population, you must compute the variance using VARA. 
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero). If the calculation does not include text or logical values, use the VARP worksheet function instead. 
 * The equation for VARPA is:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img52.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img52.png)
+
 
 
 where:
@@ -3811,7 +3833,7 @@ n is the sample size.
 
 Returns the depreciation of an asset for any period you specify, including partial periods, using the double-declining balance method or some other method you specify. VDB stands for variable declining balance.
 
-Syntax
+#### Syntax:
 
 VDB(cost, salvage, life, start_period, end_period, factor, no_switch)
 
@@ -3844,7 +3866,7 @@ Searches for a value in the left most column of a table and then returns a value
 
 The V in VLOOKUP stands for "Vertical."
 
-Syntax
+#### Syntax:
 
 VLOOKUP(lookup_value, table_array, col_index_num, range_lookup)
 
@@ -3864,7 +3886,7 @@ range_lookup is a logical value that specifies whether you want VLOOKUP to find
 
 
 
-Remarks
+#### Remarks:
 
 * If VLOOKUP can't find a lookup_value and the range_lookup is True, it uses the largest value that is less than or equal to the lookup_value.
 ## WEEKDAY
@@ -3872,7 +3894,7 @@ Remarks
 
 Returns the day of the week corresponding to a date. The day is given as an integer, ranging from 1 (Sunday) to 7 (Saturday) by default.
 
-Syntax
+#### Syntax:
 
 WEEKDAY(serial_number,return_type)
 
@@ -3893,7 +3915,7 @@ If Return_type is:                 Number returned:
         3                                  Numbers 0 (Monday) through 6 (Sunday).
 
 
-Remarks
+#### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900 
 ## Weibull
@@ -3901,7 +3923,7 @@ Remarks
 
 The Weibull function  returns the Weibull distribution. This distribution is used in reliability analysis, such as calculating a device's mean time to failure.
 
-Syntax:
+#### Syntax:
 
 WEIBULL(x,alpha,beta,cumulative)
 
@@ -3914,7 +3936,7 @@ where,
 
 
 
-Remarks
+#### Remarks:
 
 * If x, alpha, or beta is nonnumeric, WEIBULL returns the #VALUE! error value.
 * If x < 0, WEIBULL returns the #NUM! error value.
@@ -3926,7 +3948,7 @@ Remarks
 
 The Xirr function computes the internal rate of return for a schedule of possibly non-periodic cash flows.
 
-Syntax: 
+#### Syntax:
 
 Xirr(cashflow, datelist, value)
 
@@ -3935,12 +3957,13 @@ where,
 * cashflow is the range of cash flow.
 * datelist is the list of corresponding date serial number values.
 * value is an initial guess at the return value.
+
 ## YEAR
 
 
 Returns the year corresponding to a date. The year is returned as an integer in the range 1900-9999.
 
-Syntax
+#### Syntax:
 
 YEAR(serial_number)
 
@@ -3948,7 +3971,7 @@ where:
 
 serial_number is the date of the year you want to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2002,11,12) for the 12th day of November 2002. 
 
-Remarks
+#### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
 
@@ -3960,7 +3983,7 @@ Remarks
 
 Returns the one-tailed probability-value of a z-test. 
 
-Syntax
+#### Syntax:
 
 ZTEST(array, u0, sigma)
 
@@ -3974,18 +3997,18 @@ sigma is the population (known) standard deviation. If omitted, the sample stand
 
 
 
-Remarks
+#### Remarks:
 
 * ZTEST is calculated as follows when sigma is not omitted: 
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img53.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img53.png)
+
 
 
 or when sigma is omitted:
 
-{{ '![](Function-Reference-Section_images/Function-Reference-Section_img54.png)' | markdownify }}
-{:.image }
+![](Function-Reference-Section_images/Function-Reference-Section_img54.png)
+
 
 
 where:

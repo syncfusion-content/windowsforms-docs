@@ -17,12 +17,12 @@ The following table describes the appearance options available in the ScheduleCo
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
-<td colspan = "2">
-Border</td></tr>
+<th colspan = "2">
+Border</th></tr>
 <tr>
 <td>
 ClickItemBorderColor</td><td>
@@ -36,8 +36,8 @@ Gets or sets the color of the item that is dragged.</td></tr>
 SolidBorderColor</td><td>
 Gets or sets the color of the solid lines in the calendar.</td></tr>
 <tr>
-<td colspan = "2">
-Caption</td></tr>
+<th colspan = "2">
+Caption</th></tr>
 <tr>
 <td>
 CaptionBackColor</td><td>
@@ -51,8 +51,8 @@ Specifies whether the caption panel above the calendar is visible.</td></tr>
 ShowCaptionButtons</td><td>
 Specifies whether the navigation buttons are shown on the caption panel.</td></tr>
 <tr>
-<td colspan = "2">
-DisplayItemFormat</td></tr>
+<th colspan = "2">
+DisplayItemFormat</th></tr>
 <tr>
 <td>
 AllDayItemFormat</td><td>
@@ -114,8 +114,8 @@ Specifies the display format of a schedule item shown in a week or month view.</
 WorkWeekHeaderFormat</td><td>
 Determines the display format of the header of a day in a workweek view.</td></tr>
 <tr>
-<td colspan = "2">
-Header</td></tr>
+<th colspan = "2">
+Header</th></tr>
 <tr>
 <td>
 AllDayBackColor</td><td>
@@ -137,8 +137,8 @@ Specifies the back color of header cells in a workweek view.</td></tr>
 WorkWeekHeaderForeColor</td><td>
 Specifies the fore color of header cells in a workweek view.</td></tr>
 <tr>
-<td colspan = "2">
-Navigation Calendar</td></tr>
+<th colspan = "2">
+Navigation Calendar</th></tr>
 <tr>
 <td>
 NavigationCalendarArrowColor</td><td>
@@ -176,8 +176,8 @@ Specifies the color of today's text in the navigation calendar.</td></tr>
 NavigationCalendarWeekNumberColor</td><td>
 Specifies the color of week numbers in the navigation calendar.</td></tr>
 <tr>
-<td colspan = "2">
-Prime Time</td></tr>
+<th colspan = "2">
+Prime Time</th></tr>
 <tr>
 <td>
 NonPrimeTimeCellColor</td><td>
@@ -195,8 +195,8 @@ Specifies the time when the prime time color stops being used in the display.</t
 PrimeTimeStart</td><td>
 Specifies the time when the prime time color starts being used in the display.</td></tr>
 <tr>
-<td colspan = "2">
-Time Column</td></tr>
+<th colspan = "2">
+Time Column</th></tr>
 <tr>
 <td>
 Hours24</td><td>
@@ -229,8 +229,8 @@ Specifies the color of text in the time column.</td></tr>
 <td colspan = "2">
 Visual Style</td></tr>
 <tr>
-<td>
-VisualStyle</td><td>
+<th>
+VisualStyle</th><td>
 Specifies the visual style for the ScheduleControl.</td></tr>
 <tr>
 <td>
@@ -277,5 +277,3 @@ Specifies whether the themes are enabled.</td></tr>
 WeekCalendarStartDayOfWeek</td><td>
 Specifies the DayOfWeek that is shown in the first column of the week calendar.</td></tr>
 </table>
-
-

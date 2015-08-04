@@ -7,11 +7,11 @@ control: Calculate
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following subsections:
 
-### Installation
+## Installation
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
@@ -22,16 +22,17 @@ For licensing, patches and information on adding or removing selective component
 * Licensing
 * Patches
 * Add/Remove Components
-### Samples and Installation
+
+## Samples and Installation
 
 
-Where to Find Samples?
+### Where to Find Samples?
 
 This section covers the location of the installed samples and describes the procedure to run the samples through the sample browser and online. It also lists the location of utilities, assemblies, and source code.
 
 
 
-Sample Installation Location
+### Sample Installation Location
 
 The Windows Forms Calculate samples are installed in the following location, locally on the disk:
 
@@ -45,101 +46,66 @@ The Calculate Web samples are installed in the following location, locally on th
 
 
 
-Viewing Samples
+### Viewing Samples
 
 To view the samples: 
 
 1. Click StartAll ProgramsSyncfusionEssential Studio <version number>Dashboard.
-
-
-
-Essential Studio UI Edition Samples are listed by default.
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
-{:.image }
-
+   
+   Essential Studio UI Edition Samples are listed by default.
+   
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 2. Select Reporting edition.
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
-{:.image }
-
-
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
 3. The steps to view the Calculate samples in various platforms are discussed below:
 
 
 
-Windows Forms
+### Windows Forms
 
 1. In the Dashboard window, click Run Samples for Windows Forms under Reporting Edition panel. 
-> 
-
-
-> {{ '![C:/Documents and Settings/jananit/Desktop/Dataicon.jpg](Installation-and-Deployment_images/Installation-and-Deployment_img3.jpeg)' | markdownify }}
-{:.image }
- _Note: You can view the samples in any of the following three ways:_
-
-* Run Samples – Click to view the locally installed samples.
-* Online Samples – Click to view online samples.
-* Explore Samples – Explore Windows Forms samples on disk.
-
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
-{:.image }
-
-
-The Windows Forms Sample Browser window is displayed.
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)' | markdownify }}
-{:.image }
-
+   > Note: You can view the samples in any of the following three ways:
+   >
+   > * Run Samples – Click to view the locally installed samples.
+   > * Online Samples – Click to view online samples.
+   > * Explore Samples – Explore Windows Forms samples on disk.
+   
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+   
+   The Windows Forms Sample Browser window is displayed.
+   
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)
 
 2. Click Calculate in the Contents tab on the bottom-left pane.  The Calculate samples are displayed.
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)' | markdownify }}
-{:.image }
-
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)
+   
 3. Select any sample and browse through the features.
 
 
 
 
 
-ASP.NET
+### ASP.NET
 
 1. In the Dashboard window, click Run Samples for ASP.NET under Reporting Edition panel. The ASP.NET Sample Browser window is displayed.
-> 
-{{ '![C:/Documents and Settings/jananit/Desktop/Dataicon.jpg](Installation-and-Deployment_images/Installation-and-Deployment_img7.jpeg)' | markdownify }}
-{:.image }
- _Note: You can view the samples in any of the three options displayed._
+   
+   > Note: You can view the samples in any of the three options displayed.
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)' | markdownify }}
-{:.image }
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
 
 2. Click Calculate from the bottom-left pane. The Calculate samples are displayed.
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img9.png)' | markdownify }}
-{:.image }
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img9.png)
 
 3. Select any sample and browse through the features.
 
+### Source Code Location
 
-
-Source Code Location
-
-Windows Forms Source Code
+#### Windows Forms Source Code
 
 The default location of the Windows Forms Calculate source code is:
 
@@ -147,17 +113,17 @@ The default location of the Windows Forms Calculate source code is:
 
 
 
-ASP.NET Source Code
+#### ASP.NET Source Code
 
 The default location of the ASP.NET Calculate source code is:
 
 [System Drive]:\Program Files\Syncfusion\Essential Studio\[Version Number]\Web\Calculate.Web\Src
 
-### Deployment Requirements
+## Deployment Requirements
 
 This section elaborates on the deployment requirements for using Essential Calculate in various applications. It comprises the following topics:
 
-#### DLLs
+### DLLs
 
 The following dlls need to be referenced in your application for the usage of Essential Calculate.
 
@@ -166,6 +132,7 @@ The following dlls need to be referenced in your application for the usage of Es
 * Syncfusion.Calculate.Windows.dll
 * Syncfusion.Shared.Base.dll
 * Syncfusion.Shared.Web.dll
+
 #### Web Application Deployment
 
 
@@ -175,11 +142,11 @@ Deploying in Medium Trust or Partial Trust Scenarios
 
 There are two such scenarios in which Syncfusion assemblies might be deployed.
 
-Example 1
+#### Example 1
 
 If the Syncfusion Assemblies are in GAC (Global Assembly Cache), and the Web Application is running in _medium_ trust, then the Syncfusion assemblies actually runs in full trust. Hence this scenario is fully supported and there are no additional steps necessary for deployment.
 
-Example 2
+#### Example 2
 
 Say, the Syncfusion Assemblies are present in the application's bin folder and the Web Application is running in _medium_ trust, then the Syncfusion assemblies will run in medium trust. 
 

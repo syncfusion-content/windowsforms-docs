@@ -17,15 +17,11 @@ Syncfusion Essential Schedule is a Windows Forms class library built around the 
 
 The data displayed in the Schedule control is provided through any object that implements the IScheduleDataProvider interface that is defined in the library. Included in the library is one concrete implementation based on the ArrayList that uses disk files to persist the data. With this implementation, you can easily have several schedule files that can either be treated as individual schedules or merged to be treated as a single schedule.
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
-
-
-
+![](Overview_images/Overview_img1.png)
 
 The Scheduler control finds a wide variety of applications such as Time Tables, Calendars, Event Scheduling, Sequences, Activities, Project Management, Reservations, Resource Usage Planners, and so on.
 
-Key Features
+### Key Features
 
 Some of the key features of the Schedule control are listed below:
 
@@ -44,7 +40,7 @@ The product comes with numerous samples as well as an extensive documentation to
 * Concepts and Features-The features of the Schedule control are illustrated with use case scenarios, code examples and screen shots under this section.
 * Frequently Asked Questions-This section discusses various frequently asked questions with their answers with examples and code snippets.
 
-Document Conventions
+### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
@@ -52,15 +48,15 @@ The conventions listed below will help you to quickly identify the important sec
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-ICON</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+ICON</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-![](Overview_images/Overview_img2.jpeg)
-{:.image }
+{{' ![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+
 Note:</td><td>
 Represents important information</td></tr>
 <tr>
@@ -71,55 +67,91 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{' ![](Overview_images/Overview_img3.jpeg)' | markdownify }}
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Important Note</td><td>
-![](Overview_images/Overview_img4.jpeg)
-{:.image }
+{{' ![](Overview_images/Overview_img4.jpeg)' | markdownify }}
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
+
 ## Prerequisites and Compatibility
 
 This section covers the requirements mandatory for using Essential Schedule control. It also lists operating systems and browsers compatible with the product.
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed below:
 
 
 
 <table>
+<ul>
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2013* Visual Studio 2012 (Ultimate, Premium, Professional and Express)* Visual Studio 2010 (Ultimate, Premium, Professional and Express)* Visual Studio 2008 (Team, Professional, Standard and Express)* Visual Studio 2005 (Team, Professional, Standard and Express)* Borland Delphi for .NET* SharpCode</td></tr>
+<li>Visual Studio 2013</li>
+<li>Visual Studio 2012 (Ultimate, Premium, Professional and Express)</li>
+<li>Visual Studio 2010 (Ultimate, Premium, Professional and Express)</li>
+<li>Visual Studio 2008 (Team, Professional, Standard and Express)</li>
+<li>Visual Studio 2005 (Team, Professional, Standard and Express)</li>
+<li>Borland Delphi for .NET</li>
+<li>SharpCode</li>
+</td>
+</tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5* .NET 4.0* .NET 3.5* .NET 2.0</td></tr>
+<li>.NET 4.5.1</li>
+<li>.NET 4.5</li>
+<li>.NET 4.0</li>
+<li>.NET 3.5</li>
+<li>.NET 2.0</li>
+</td>
+</tr>
 <tr>
 <td>
 <br>Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2013 (32 bit and 64 bit)* Windows Server 2012(32bit and 64 bit* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows Server 2003 (32 bit and 64 bit) * Windows XP</td></tr>
+<li>Windows 8.1 (32 bit and 64 bit)</li>
+<li>Windows 8 (32 bit and 64 bit)</li>
+<li>Windows Server 2013 (32 bit and 64 bit)</li>
+<li>Windows Server 2012(32bit and 64 bit</li>
+<li>Windows Server 2008 (32 bit and 64 bit)</li>
+<li>Windows 7 (32 bit and 64 bit)</li>
+<li>Windows Vista (32 bit and 64 bit)</li>
+<li>Windows Server 2003 (32 bit and 64 bit)</li>
+<li>Windows XP</li>
+</td></tr>
+</ul>
 </table>
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed below:
 
 
 
 <table>
+<ul>
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows Server 2012 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<li>Windows 8.1 (32 bit and 64 bit)</li>
+<li>Windows Server 2012 (32 bit and 64 bit)</li>
+<li>Windows 7 (32 bit and 64 bit)</li>
+<li>Windows Server 2008 (32 bit and 64 bit)</li>
+<li>Windows Vista (32 bit and 64 bit)</li>
+<li>Windows XP</li>
+<li>Windows 2003</li>
+</td></tr>
+</ul>
 </table>
+
 ## Documentation
 
 
@@ -129,9 +161,9 @@ Syncfusion provides the following documentation segments to provide all necessar
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -144,12 +176,10 @@ Release Notes</td><td>
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the Schedule for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
 Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}{{ '[http://help.syncfusion.com/resources](http://help.syncfusion.com/resources)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Schedule_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
-
-
