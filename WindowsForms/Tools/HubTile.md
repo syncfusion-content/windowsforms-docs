@@ -2,8 +2,8 @@
 layout: post
 title: HubTile
 description: hubtile
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 

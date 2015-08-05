@@ -2,12 +2,12 @@
 layout: post
 title: Skin-Manager
 description: skin manager 
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Skin Manager 
+# Skin Manager 
 
 Essential Tools for Windows Forms provides support to apply Office2007 Style for an application with its child controls. This feature enables you to easily apply uniform style for all the child controls in the application.
 
@@ -18,15 +18,15 @@ The Skin Manager provides support for the following themes:
 * Office 2007 Silver
 * Managed
 
-IT Scenarios
+### IT Scenarios
 
 When you create an application with multiple controls, you can apply uniform color for the entire form using this feature. 
 
 Properties and Methods Tables for Skin Manager 
 
-Properties
+### Properties
 
-_Table_ _799__: Property Table_
+_Table_ _799_: Property Table
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ NA</td></tr>
 </table>
 Methods
 
-_Table_ _800__: Methods Table_
+_Table_ _800_: Methods Table
 
 <table>
 <tr>
@@ -73,9 +73,10 @@ NA </th><th>
 Void </th><th>
 NA </th></tr>
 </table>
-#### Adding Skin Manager Component to a Windows Forms Application
 
-##### Through Visual Studio
+## Adding Skin Manager Component to a Windows Forms Application
+
+### Through Visual Studio
 
 The following are steps to add the Skin Manager control to an application through Visual Studio:
 
@@ -83,11 +84,11 @@ The following are steps to add the Skin Manager control to an application throug
 
 1. Drag the Skin Manager from the Toolbox tab to the designer.
 
-![D:/Task Doc/UG/10.1/UI/WF/Tools/Skin Mananger/SkinManager/SkinManager/toolbox.png](Skin-Manager_images/Skin-Manager_img1.png)
-{:.image }
+   ![D:/Task Doc/UG/10.1/UI/WF/Tools/Skin Mananger/SkinManager/SkinManager/toolbox.png](Skin-Manager_images/Skin-Manager_img1.png)
 
 
-2. __Skin Manager is added.  
+
+2. Skin Manager is added.  
 3. Open the Properties Window to assign parent control and apply skin. 
 ##### Through Code
 
@@ -96,49 +97,47 @@ You can add Skin Manager to one of the controls in your form or to the entire co
 
 To add Skin Manager to one of the controls, specify the control as root control. The following code illustrates this: 
 
-[C#]
-
-
+{% highlight c# %}
 
 SkinManager.SetVisualStyle(this.buttonAdv1
 
 , VisualTheme.Office2007Blue );
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 SkinManager.SetVisualStyle(Me.buttonAdv1, VisualTheme.Office2007Blue)
 
-
+{% endhighlight %}
 
 ![](Skin-Manager_images/Skin-Manager_img2.png)
-{:.image }
+
 
 
 
 
 To add Skin Manager to the entire form, specify the form as root control. The following code illustrates this: 
 
-[C#]
+{% highlight c# %}
 
             SkinManager.SetVisualStyle(this, VisualTheme.Office2007Blue );
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
 
-
+{% endhighlight %}
 
 ![](Skin-Manager_images/Skin-Manager_img3.png)
-{:.image }
 
 
-#### Applying Theme 
 
-##### Through Designer
+## Applying Theme 
+
+### Through Designer
 
 The following are the steps to apply the required skin to the form through designer: 
 
@@ -146,74 +145,67 @@ The following are the steps to apply the required skin to the form through desig
 2. In the Controls field assign the root control for which you want to apply the theme. 
 
 ![](Skin-Manager_images/Skin-Manager_img4.png)
-{:.image }
+
 
 
 ![](Skin-Manager_images/Skin-Manager_img5.png)
-{:.image }
 
 
-###### Adding themes to Controls with Skin Manager at Designer Time
+
+#### Adding themes to Controls with Skin Manager at Designer Time
 
 Once the SkinManager is applied to a parent form or container, the new controls being added to it will also be updated with the theme applied in the SkinManager.
 
 The following images describe the same in applying the Office2007Black theme to the newly added control [ButtonAdv] after the theme is applied to the form through the SkinManager.
 
 ![](Skin-Manager_images/Skin-Manager_img6.png)
-{:.image }
+
 
 
 ![](Skin-Manager_images/Skin-Manager_img7.png)
-{:.image }
 
 
-##### Through Code
+
+### Through Code
 
 You can apply the required skin to the form using the _VisualTheme_ property. 
 
 The following code illustrates how to apply Office 2007 theme:
 
-[C#]
+{% highlight c# %}
 
             SkinManager.SetVisualStyle(this, VisualTheme.Office2007Blue );
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
 
-
+{% endhighlight %}
 
 
 
 ![](Skin-Manager_images/Skin-Manager_img8.png)
-{:.image }
-
-
 
 
 The following code illustrates how to apply Managed themes:
 
-[C#]
+{% highlight c# %}
 
 Office12ColorTable.ApplyManagedColors(this.buttonAdv1
 
 ,Color. Orange);
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Office12ColorTable.ApplyManagedColors(Me.buttonAdv1,Color.Orange )
 
-
+{% endhighlight %}
 
 ![](Skin-Manager_images/Skin-Manager_img9.png)
-{:.image }
+
 
 

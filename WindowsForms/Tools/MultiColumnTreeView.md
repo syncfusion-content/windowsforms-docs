@@ -2,26 +2,26 @@
 layout: post
 title: MultiColumnTreeView
 description: multicolumntreeview
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## MultiColumnTreeView
+# MultiColumnTreeView
 
 MultiColumnTreeView is an advanced treeview control with multiple columns. This control displays the contents in the form of tree with additional columns displaying related data for the tree nodes. With its robust features, it gives a visually appealing tree structure. It supports almost all the features of the treeview control like settings images, check box and option buttons, help text capabilities, Gutter space, Indent Space, advanced drag-and-drop UI support, context-menu association, gradient backgrounds and multiple border styles, etc., 
 
 MultiColumnTreeView comes with complete design-time support. The Styles Architecture for the control lets the users to define styles for nodes at different levels of the tree and columns style for individual columns.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img1.jpeg)
-{:.image }
 
 
-#### Features Overview
+
+## Features Overview
 
 MultiColumnTreeView control has the below features.
 
-Features
+### Features
 
 * Styles Architecture - Supports a flexible style architecture to let users define the styles for nodes at different levels of the Tree. It helps the users to specify the styles for a specific node or for a class of nodes.
 * Columns - Lets you add multiple columns and subitems.
@@ -50,14 +50,14 @@ See Also
 
 Concepts and Features
 
-#### Creating a MultiColumnTreeView
+## Creating a MultiColumnTreeView
 
 To create a MultiColumnTreeView control, follow the steps that are given below.
 
 1. Open your form in the designer. Add the Syncfusion controls to your VS .NET toolbox if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
 
-![](MultiColumnTreeView_images/MultiColumnTreeView_img2.jpeg)
-{:.image }
+   ![](MultiColumnTreeView_images/MultiColumnTreeView_img2.jpeg)
+
 
 
 2. Drag and drop the MultiColumnTreeView control on to the form.
@@ -67,25 +67,23 @@ To create a MultiColumnTreeView control, follow the steps that are given below.
 6. Appearance and behavior related aspects can be controlled by setting the appropriate properties through the property grid of the MultiColumnTreeView control. 
 7. A simple MultiColumnTreeView with three columns is displayed below.
 
-![](MultiColumnTreeView_images/MultiColumnTreeView_img3.jpeg)
-{:.image }
+   ![](MultiColumnTreeView_images/MultiColumnTreeView_img3.jpeg)
+
 
 
 8. Namespace to be added while creating programmatically.
 
-[C#]
+{% highlight c# %}
 
+		using Syncfusion.Windows.Forms.Tools.MultiColumnTreeView;
 
+{% endhighlight %}
 
-using Syncfusion.Windows.Forms.Tools.MultiColumnTreeView;
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Tools.MultiColumnTreeView
+
+{% endhighlight %}
 
 See Also
 
@@ -93,7 +91,7 @@ Adding Multiple Columns and SubItems
 
 Concepts and Features
 
-#### Concepts and Features
+## Concepts and Features
 
 This section discusses the features of the MultiColumnTreeView Control. Following are the topics covered.
 
@@ -105,19 +103,20 @@ This section discusses the features of the MultiColumnTreeView Control. Followin
 * LoadOnDemand - Describes the load on demand concepts.
 * Sorting - Guides you to sort unlimited number of columns in a MultiColumnTreeView.
 * Performance - Gives the properties and methods which can improve the performance of the control.
-##### Adding Multiple Columns and SubItems
+
+### Adding Multiple Columns and SubItems
 
 
 This section will guide you in adding multiple columns and sub items in a MultiColumnTreeView control.
 
-###### Multiple Columns
+#### Multiple Columns
 
-Adding Multiple Columns
+##### Adding Multiple Columns
 
 MultiColumnTreeView control lets you add multiple columns easily using Columns Editor. The SubItems can be added using the SubItems Collection Editor. There are also properties to modify the appearance of the columns.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img4.jpeg)
-{:.image }
+
 
 
 This dialog can be accessed using the context menu of the control or the command available at the bottom of the property grid. The context menu also lets you add columns directly using "Add Column".
@@ -126,7 +125,7 @@ Customizing the columns using Columns Editor
 
 The below properties can be used to customize the columns.
 
-_Table_ _520__: Property Table_
+_Table_ _520_: Property Table
 
 <table>
 <tr>
@@ -230,13 +229,12 @@ Sets the padding of the right image.</td></tr>
 RightImage</td><td>
 Sets the right image for the column.</td></tr>
 </table>
-> ![](MultiColumnTreeView_images/MultiColumnTreeView_img5.jpeg)
-{:.image }
- _Note: The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers._
+
+> Note: The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers.
 
 Painting the Column Area
 
-_Table_ _521__: Property Table_
+_Table_ _521_: Property Table
 
 <table>
 <tr>
@@ -250,7 +248,7 @@ Gets / sets the background for the column area.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -270,9 +268,9 @@ treeColumnAdv3.AreaBackground = new Syncfusion.Drawing.BrushInfo(System.Drawing.
 
 treeColumnAdv3.Background = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -292,35 +290,33 @@ treeColumnAdv3.AreaBackground = New Syncfusion.Drawing.BrushInfo(System.Drawing.
 
 treeColumnAdv3.Background = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure) 
 
-
+{% endhighlight %}
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img6.jpeg)
-{:.image }
 
 
-> ![](MultiColumnTreeView_images/MultiColumnTreeView_img7.jpeg)
-{:.image }
- _Note: The appearance of the columns can also be controlled using the standard column styles settings._ _This overrides the above settings._
 
-###### SubItems
+> Note: The appearance of the columns can also be controlled using the standard column styles settings._ _This overrides the above settings.
 
-Adding SubItems
+#### SubItems
+
+##### Adding SubItems
 
 You can add SubItems for the nodes using the SubItems Collection available in Nodes Collection Editor. 
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img8.jpeg)
-{:.image }
+
 
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img9.jpeg)
-{:.image }
+
 
 
 Properties for Customizing the SubItems
 
 The below properties lets you customize the subitems using the SubItems Collection dialog.
 
-_Table_ _522__: Property Table_
+_Table_ _522_: Property Table
 
 <table>
 <tr>
@@ -381,7 +377,7 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 The below image displays subitems with similar settings in the property grid above.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img10.jpeg)
-{:.image }
+
 
 
 StyleSettings for all the sub Items can be specified using TreeNodeAdvSubItemStyleInfo class. It is a default base style which can be accessed in the BaseStyles Collection Editor. See SubItem Styles.
@@ -392,7 +388,7 @@ Column Styles
 
 MultiColumnTreeView Appearance
 
-##### TreeNode Features
+### TreeNode Features
 
 This section discusses the following topics.
 
@@ -403,20 +399,19 @@ This section discusses the following topics.
 * Line Images
 * Image Overlaying - This feature can be only applicable for the first column or the tree structure. 
 * Plus Sign On ExpandMode
-> 
-![](MultiColumnTreeView_images/MultiColumnTreeView_img11.jpeg)
-{:.image }
- _Note: The below properties can be applied only to the first column among the multiple columns._ 
+
+> Note: The below properties can be applied only to the first column among the multiple columns.
 
 * Checkbox and Option buttons - This section illustrates how to set the checkbox and option buttons for the tree nodes. 
 * Multiline Support - This section discusses about the multiline support to the nodes. 
 * Custom Controls - Illustrates the addition of CustomControls to the nodes in the control. 
-###### MultiLine Support
+
+#### MultiLine Support
 
 
 TreeNodeAdv has multiline text option for each node by using the Multiline property. This can be set through NodeCollection Editor. We need to adjust the default Node height value to make it effective.
 
-_Table_ _523__: Property Table_
+_Table_ _523_: Property Table
 
 <table>
 <tr>
@@ -432,7 +427,7 @@ Specifies if the node text is drawn as multiple text or single line.</td></tr>
 
 The node text should be provided through code as shown in the code snippet below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -442,9 +437,9 @@ treeNodeAdv1.Height = 100;
 
 treeNodeAdv1.Text = "ICC \n World \n Cup \n 2007";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -454,20 +449,20 @@ treeNodeAdv1.Height = 100
 
 treeNodeAdv1.Text = "ICC \n World \n Cup \n 2007"
 
-
+{% endhighlight %}
 
 The below image displays a node with multiline property set.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img12.jpeg)
-{:.image }
 
 
-##### Drag and Drop
+
+### Drag and Drop
 
 MultiColumnTreeView control also supports drag drop operation which lets you drag a complete row with multiple columns to the desired position.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img13.jpeg)
-{:.image }
+
 
 
 This can be done similar to that of the treeview control. The only difference is that, in MultiColumnTreeView, we need to use the MultiColumnTreeView class instead of the TreeView class.
@@ -482,29 +477,27 @@ Mouse and Keyboard Based Selection
 
 Drag and Drop Events
 
-##### RunTime Features
+### RunTime Features
 
 This section will walk you through the following runtime features of MultiColumnTreeViewAdv Control.
 
 Refer TreeView Package > RunTime Features
 
-> ![](MultiColumnTreeView_images/MultiColumnTreeView_img14.jpeg)
-{:.image }
- _Note: Context Menu, Hot Tracking and Tooltip features can be applied only to the nodes in the first column._
+> Note: Context Menu, Hot Tracking and Tooltip features can be applied only to the nodes in the first column.
 
-##### DesignTime Features
+### DesignTime Features
 
 MultiColumnTreeView provides the shortcuts to access various properties.
 
 TaskWindow can be accessed using smart tag as follows.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img15.jpeg)
-{:.image }
+
 
 
 The above window lets you open the NodeCollection Editor, modify the appearance settings, assign imagelists, enable options like editing the node text, load on demand, owner draw nodes and HotTracking properties. It also lets you set the layout settings for the control.
 
-###### Context Menu at DesignTime
+#### Context Menu at DesignTime
 
 You can access the below options using this context menu at the design time.
 
@@ -515,10 +508,10 @@ You can access the below options using this context menu at the design time.
 * Add Node, lets you add new nodes.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img16.jpeg)
-{:.image }
 
 
-###### Editors for the MultiColumnTreeView
+
+#### Editors for the MultiColumnTreeView
 
 The following Editors are available for changing the appearance and behavior of the MultiColumnTreeView control.
 
@@ -528,7 +521,7 @@ This editor lets you add nodes, SubItems for the nodes and customize them using 
 
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img17.jpeg)
-{:.image }
+
 
 
 This editor can be accessed using the below options.
@@ -539,15 +532,15 @@ This editor can be accessed using the below options.
 * Command at the bottom of the property grid.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img18.jpeg)
-{:.image }
 
 
-Columns Editor
+
+##### Columns Editor
 
 This lets you add columns and customize those columns appearance with style settings.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img19.jpeg)
-{:.image }
+
 
 
 This editor can be accessed using the following options.
@@ -561,15 +554,15 @@ TreeNodeAdvSubItems Collection Editor
 This editor lets you add subitems to the nodes and customize the subitems using the property settings. It can be accessed through Node Collection Editor and selecting the SubItems Collection property.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img20.jpeg)
-{:.image }
 
 
-Styles Editor
+
+##### Styles Editor
 
 This editor comes with default styles and also lets you add new style and apply to the nodes, subitems, and so on. The property settings are discussed in Styles Architecture.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img21.jpeg)
-{:.image }
+
 
 
 This editor can be accessed using the below options.
@@ -577,7 +570,8 @@ This editor can be accessed using the below options.
 * Through the Context Menu of the control during designtime.
 * Using MultiColumnTreeView.BaseStyles property in the property Grid.
 * Command at the bottom of the property grid.
-##### MultiColumnTreeView Appearance
+
+### MultiColumnTreeView Appearance
 
 
 The appearance of the MultiColumnTreeView can be customized using background, foreground, border and spacing properties similar to TreeView control. The below topics are covered in this section.
@@ -586,7 +580,7 @@ SubItem Appearance
 
 The background, foreground and border settings of a subitem can be specified using SubItem Style Editor. Refer to SubItem Styles for all the style settings.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -616,9 +610,9 @@ treeNodeAdvSubItem2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 treeNodeAdvSubItem2.TextColor = System.Drawing.Color.Navy;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -648,26 +642,26 @@ treeNodeAdvSubItem2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 treeNodeAdvSubItem2.TextColor = System.Drawing.Color.Navy 
 
-
+{% endhighlight %}
 
 A MultiColumnTreeView with above settings is displayed below.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img22.jpeg)
-{:.image }
 
 
-###### Column Appearance
+
+#### Column Appearance
 
 The appearance of different columns can be customized through Column Styles settings. 
 
 MultiColumnTreeView.ColumnHeaderBackground property sets the background column headers for the control. These settings are overridden by above ColumnStyles settings.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img23.jpeg)
-{:.image }
+
 
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img24.jpeg)
-{:.image }
+
 
 
 Adding HighlightBorderColor property
@@ -676,29 +670,29 @@ Essential tool is now enhanced with HighlightBorderColor property to set the hig
 
 The following code illustrates how to set HighlightBorderColor property.
 
-[C#]
+{% highlight c# %}
 
 this.treeColumnAdv1.HighlightBorderColor = Color.Brown;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.treeColumnAdv1.HighlightBorderColor = Color.Brown;
 
-
+{% endhighlight %}
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img25.jpeg)
-{:.image }
 
 
-##### Styles Architecture
+
+### Styles Architecture
 
 The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a MultiColumnTreeView.TreeNodeAdvStyleInfo. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hatch table.
 
 As illustrated below, implicit style inheritance is enforced by the framework while explicit style inheritance can be setup by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
-Implicit Style Inheritance
+#### Implicit Style Inheritance
 
 When a style is not set in a style info object, it inherits the style from the previous level and so on until it reaches the default global style on top of the hierarchy. This is called implicit style inheritance and is illustrated below.
 
@@ -709,11 +703,11 @@ When a style is not set in a style info object, it inherits the style from the p
 * Column Style : This lets you specify the styles for the columns.
 * SubItem Style : This lets you specify the styles for the Sub Items of the nodes.
 
-Explicit Style Inheritance
+#### Explicit Style Inheritance
 
 Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 
-_Table_ _524__: Property Table_
+_Table_ _524_: Property Table
 
 <table>
 <tr>
@@ -731,7 +725,7 @@ StandardStyle is the default style for the nodes. It can be edited using MultiCo
 
 The TreeViewAdv control provides the below default styles which can be edited through BaseStyles Collection Editor also. In BaseStyle Collection Editor, StandardColumnStyle represents Standard - Column, StandardStyle represents Standard Styles and StandardSubItemStyle represents Standard - SubItem. User can customize these styles and apply to specific nodes through Nodes Collection Editor.
 
-_Table_ _525__: Property Table_
+_Table_ _525_: Property Table
 
 <table>
 <tr>
@@ -754,12 +748,12 @@ Indicates the style that all the subitems will inherit from.</td></tr>
 
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img26.jpeg)
-{:.image }
+
 
 
 User can also add their own styles using this BaseStyles Collection Editor. The styles which can be added by the users are as follows.
 
-_Table_ _526__: Styles Table_
+_Table_ _526_: Styles Table
 
 <table>
 <tr>
@@ -783,27 +777,28 @@ Indicates the default styles that all the columns will inherit.</td></tr>
 NodeSubItemStyle</td><td>
 Indicates the style that all the subitems will inherit from.</td></tr>
 </table>
-###### Standard Style
+
+#### Standard Style
 
 Setting a Common Style for all the Nodes in the TreeViewAdv
 
 We can modify the background for all the children of a parent node by editing the StandardStyle property. 
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img27.jpeg)
-{:.image }
+
 
 
 The below image displays a gradient style for all the columns of the MultiColumnTreeView control.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img28.jpeg)
-{:.image }
+
 
 
 StandardStyle Settings
 
 The below properties lets you customize the standard style settings.
 
-_Table_ _527__: Styles Table_
+_Table_ _527_: Styles Table
 
 <table>
 <tr>
@@ -955,33 +950,34 @@ Specifies the sort order of the node.</td></tr>
 SortType</td><td>
 Specifies the sort type of the node.</td></tr>
 </table>
-###### Node Specific Style
+
+#### Node Specific Style
 
 Make a Node's Style Inherit from Another Base Style
 
 Apart from the default style (Standard Style), we can also create custom Base styles using the BaseStyles Collection Editor. Select the Base Style option, then click Add Style.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img29.jpeg)
-{:.image }
+
 
 
 This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img30.jpeg)
-{:.image }
+
 
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img31.jpeg)
-{:.image }
+
 
 
 Style Settings
 
 The below properties lets you customize the Base style settings.
 
-_Table_ _528__: Property Table_
+_Table_ _528_: Property Table
 
 <table>
 <tr>
@@ -1133,19 +1129,20 @@ Specifies the sort order of the node.</td></tr>
 SortType</td><td>
 Specifies the sort type of the node.</td></tr>
 </table>
-###### Node Level Style
+
+#### Node Level Style
 
 Setting a Common Style for all the Nodes in a Level
 
 TreeView lets you add node level styles using the BaseStyles Collection Editor. By default this style will be applied to all the nodes in the Level1 for NodeLevel1 style, Level2 for NodeLevel2 style and so on.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img32.jpeg)
-{:.image }
+
 
 
 You can apply this style to any of the node by using TreeNodeAdv.BaseStyle property for a particular node. Refer to Style Settings table in Node Specific Style.
 
-###### Column Styles
+#### Column Styles
 
 Standard - Column style is default style that will applied for all the columns of the MultiColumnTreeView control. The style settings can be edited by the user.
 
@@ -1153,7 +1150,7 @@ Column Style Properties
 
 The below properties controls the appearance of the columns.
 
-_Table_ _529__: Property Table_
+_Table_ _529_: Property Table
 
 <table>
 <tr>
@@ -1222,24 +1219,24 @@ Adding ColumnStyle
 The editor also lets you add user defined column styles like other styles as follows.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img33.jpeg)
-{:.image }
+
 
 
 The user-defined column style can be applied to any of the columns, using Columns Editor. This setting overrides the default settings.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img34.jpeg)
-{:.image }
 
 
-###### SubItem Styles
+
+#### SubItem Styles
 
 Standard - SubItem style in the BaseStyles Collection Editor will be applied by default to all the subitems that are added to the tree nodes. User can also edit the default style settings.
 
-Properties
+##### Properties
 
 The below properties lets you customize the subitems using the Styles editor.
 
-_Table_ _530__: Property Table_
+_Table_ _530_: Property Table
 
 <table>
 <tr>
@@ -1292,7 +1289,7 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 User can add and define a SubItem style using the BaseStyles Collection Editor as follows.
 
 ![](MultiColumnTreeView_images/MultiColumnTreeView_img35.jpeg)
-{:.image }
+
 
 
 See Also

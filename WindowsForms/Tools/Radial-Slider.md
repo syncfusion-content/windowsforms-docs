@@ -2,28 +2,28 @@
 layout: post
 title: Radial-Slider
 description: radial slider
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Radial Slider
+# Radial Slider
 
 The Radial Slider is an advanced control that is capable of calculating the sequence value with the sequence circle sector. It contains additional features like different visual styles, and support to modify minimum and maximum values.
 
-#### Structure of the Control
+## Structure of the Control
 
 The following image highlights the different sections of the Range Slider:
 
 ![](Radial-Slider_images/Radial-Slider_img1.png)
-{:.image }
 
 
-#### Creating Radial Slider
 
-##### Through Code
+## Creating Radial Slider
 
+### Through Code
 
+{% highlight c# %}
 
 RadialSlider radialSlider = new RadialSlider();
 
@@ -39,7 +39,7 @@ radialSlider.SliderDivision = 10;
 
 this.Controls.Add(radialSlider);
 
-
+{% endhighlight %}
 
 ##### Through Designer
 
@@ -52,10 +52,10 @@ The following steps illustrate the creation of Radial Slider.
 
 
 ![](Radial-Slider_images/Radial-Slider_img2.png)
-{:.image }
 
 
-#### Interactive Features
+
+## Interactive Features
 
 The RadialSlidercontrol lets the users to customize it through the following options:
 
@@ -63,7 +63,8 @@ The RadialSlidercontrol lets the users to customize it through the following opt
 * Minimum Value–Initial value for the radial slider.
 * Maximum Value–End value for the radial slider.
 * Slider Divisions–Dividend value used to split the slider from minimum to maximum value.
-##### Slider style
+
+### Slider style
 
 
 Radial Slider supports two different visual styles for its appearance through the enumeration SliderStyle: 
@@ -71,32 +72,32 @@ Radial Slider supports two different visual styles for its appearance through th
 * Default
 * Frame
 
-Default Slider Style
+#### Default Slider Style
 
 Default slider style will render the slider control with two hollow circles and a small circle as center, with its dividend ticks available as shown in the following image:
 
 ![](Radial-Slider_images/Radial-Slider_img3.png)
-{:.image }
+
 
 
 ![](Radial-Slider_images/Radial-Slider_img4.png)
-{:.image }
+
 
 
 Code sample:
 
-[C#]
+{% highlight c# %}
 
 this.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Default;
 
+{% endhighlight %}
 
 
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Default
 
+{% endhighlight %}
 
 
 Frame style
@@ -104,202 +105,186 @@ Frame style
 This style will paint the background of the slider control with an HQ frame as shown in the following image:
 
 ![](Radial-Slider_images/Radial-Slider_img5.png)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
    this.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame;
 
 
+{% endhighlight %}
 
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
  Me.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame
 
+{% endhighlight %}
 
+### Slider value
 
-##### Slider value
-
-###### Minimum Value
+#### Minimum Value
 
 The slider initial value depends on its minimum value, and the default minimum value is ‘0’. The minimum value can be changed by using the MinimumValue API in the control.
 
-[C#]
+{% highlight c# %}
 
         this.radialSlider1.MinimumValue = 100;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
          Me.radialSlider1.MinimumValue = 100
 
+{% endhighlight %}
 
+> Note: The Slider’s maximum value should be greater than its minimum value.
 
-> ![](Radial-Slider_images/Radial-Slider_img6.jpeg)
-{:.image }
-_Note: The Slider’s maximum value should be greater than its minimum value._
-
-###### Slider divisions
+#### Slider divisions
 
 Slider divisions for the radial slider can be customized using the properties shown in the following code samples. The default slider division is 10.
 
-[C#]
+{% highlight c# %}
 
             this.radialSlider1.SliderDivision = 20;
 
+{% endhighlight %}
 
-
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
              Me.radialSlider1.SliderDivision = 20
 
+{% endhighlight %}
 
+> Note: This property will applicable only for default slider.
 
-> ![](Radial-Slider_images/Radial-Slider_img7.jpeg)
-{:.image }
-_Note: This property will applicable only for default slider._
+### Slider customization
 
-##### Slider customization
-
-###### Slider background color
+#### Slider background color
 
 The background color for the radial slider can be customized using the BackgroundColor.
 
-[C#]
+{% highlight c# %}
 
   this.radialSlider1.BackgroundColor = System.Drawing.SystemColors.Control;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
  Me.radialSlider1.BackgroundColor = System.Drawing.SystemColors.Control
 
-
+{% endhighlight %}
 
 ![](Radial-Slider_images/Radial-Slider_img8.png)
-{:.image }
 
 
-###### Circle Color
+
+##### Circle Color
 
 Circle colors of the radial slider can be customized using the properties InnerCircleColor and OuterCircleColor.
 
-[C#]
+{% highlight c# %}
 
     this.radialSlider1.InnerCircleColor = System.Drawing.Color.Pink;
 
     this.radialSlider1.OuterCircleColor = System.Drawing.Color.Pink;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
    Me.radialSlider1.InnerCircleColor = System.Drawing.Color.Pink
    Me.radialSlider1.OuterCircleColor = System.Drawing.Color.Pink
 
-
-
-
+{% endhighlight %}
 
 ![](Radial-Slider_images/Radial-Slider_img9.png)
-{:.image }
 
 
-###### Needle color
+
+#### Needle color
 
 The needle color for the Radial slider can be customized using SliderNeedleColor.
 
-[C#]
+{% highlight c# %}
 
          this.radialSlider1.SliderNeedleColor = System.Drawing.Color.Pink;
 
+{% endhighlight %}
 
-
-> 
-
-[VB]
+{% highlight vbnet %}
 
          Me.radialSlider1.SliderNeedleColor = System.Drawing.Color.Pink
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Slider_images/Radial-Slider_img10.png)
-{:.image }
 
 
-###### Fore color
+
+#### Fore color
 
 The foreground color for the Radial slider can be customized using ForeColor.
 
-[C#]
+{% highlight c# %}
 
 this.radialSlider1.ForeColor = System.Drawing.Color.BlueViolet;
 
+{% endhighlight %}
 
-
-> 
-
-[VB]
+{% highlight vbnet %}
 
 Me.radialSlider1.ForeColor = System.Drawing.Color.BlueViolet
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Slider_images/Radial-Slider_img11.png)
-{:.image }
 
 
-###### Needle type
+
+#### Needle type
 
 The needle type for the radial slider can be customized using the NeedleType enumeration. Available needle types in the RadialSlider are:
 
 * Straight Line (Default)
 * Dotted Line
 
-[C#]
+{% highlight c# %}
 
    this.radialSlider1.NeedleType = Syncfusion.Windows.Forms.Tools.SliderNeedleType.DottedLine;
 
+{% endhighlight %}
 
-
-> 
-
-[VB]
+{% highlight vbnet %}
 
    Me.radialSlider1.NeedleType = Syncfusion.Windows.Forms.Tools.SliderNeedleType.DottedLine
 
-
+{% endhighlight %}
 
 ![](Radial-Slider_images/Radial-Slider_img12.png)
-{:.image }
 
 
-##### Slider Value changed event
 
-###### Slider current value
+### Slider Value changed event
+
+#### Slider current value
 
 We can get the current slider value by using the value changed event.
 
-[C#]
+{% highlight c# %}
 
     this.radialSlider1.ValueChanged += new Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventHandler(radialSlider1_ValueChanged);
 
@@ -317,9 +302,9 @@ We can get the current slider value by using the value changed event.
 
                }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 AddHandler Me.radialSlider1.ValueChanged, AddressOf Me.radialSlider1_ValueChanged
 
@@ -329,7 +314,6 @@ AddHandler Me.radialSlider1.ValueChanged, AddressOf Me.radialSlider1_ValueCha
         Me.Refresh
     End Sub
 
-
-
+{% endhighlight %}
 
 

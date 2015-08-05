@@ -2,104 +2,117 @@
 layout: post
 title: Toggle-Button
 description: toggle button
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Toggle Button
+# Toggle Button
 
-#### Overview
+## Overview
 
 Toggle Button control for Windows Forms allows you to toggle between two states (Active and Inactive) that are opposite to each other in terms of behavior.
 
 ![](Toggle-Button_images/Toggle-Button_img1.jpeg)
-{:.image }
 
 
-Key Features
+
+### Key Features
 
 * Configurable Toggle States – Two states with contrasting behavior are configured as required like IN/OUT, ON/OFF, etc. 
 * Display Mode – Supported to display either text or image over buttons to represent the states.
 * Custom Renderer - Allows the end-user to apply custom styles at application level.
-#### Getting Started 
+
+## Getting Started 
 
 
 This section briefly describes how to design a Toggle Button in a .NET application.
 
 * Adding a Toggle Button control.
 * Configuring the Toggle Button control.
-##### Add a ToggleButton Control
+
+### Add a ToggleButton Control
 
 1. Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 2. Drag & Drop a Toggle Button Control in the Form from Toolbox.
 
 ![](Toggle-Button_images/Toggle-Button_img2.png)
-{:.image }
 
 
-##### Configuring the ToggleButton
+
+### Configuring the ToggleButton
 
 The most commonly used settings of the Toggle Button Control is configured either through Designer using the Smart tag or through the Properties window or through code behind.
 
 The following screenshot illustrates the Toggle Button Control customization through smart tag.
 
 ![](Toggle-Button_images/Toggle-Button_img3.png)
-{:.image }
+
 
 
 To add Toggle Button control to a Windows Forms Application through code behind,
 
 1. Include Syncfusion.Windows.Forms.Tools namespace.
 
-[C#]
+   ~~~ cs
 
-using Syncfusion.Windows.Forms;
+		using Syncfusion.Windows.Forms;
+
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-[VB]
+		Imports Syncfusion.Windows.Forms.Tools
 
-Imports Syncfusion.Windows.Forms.Tools
-
+   ~~~
+   {:.prettyprint }
 
 
 2. Create an instance of the Toggle Button control and add it to the Form.
 
-[C#]
+   ~~~ cs
 
-ToggleButton togglebutton1;
+		ToggleButton togglebutton1;
 
-this.togglebutton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+		this.togglebutton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
 
-this.Controls.Add(togglebutton1);
+		this.Controls.Add(togglebutton1);
+
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-[VB]
+		Dim togglebutton1 As Syncfusion.Windows.Forms.Tools.ToggleButton
 
-Dim togglebutton1 As Syncfusion.Windows.Forms.Tools.ToggleButton
+		Me.ToggleButton1 = New Syncfusion.Windows.Forms.Tools.ToggleButton()
 
-Me.ToggleButton1 = New Syncfusion.Windows.Forms.Tools.ToggleButton()
+		Me.Controls.Add(togglebutton1)
 
-Me.Controls.Add(togglebutton1)
+   ~~~
+   {:.prettyprint }
 
-#### Concepts and Features
+
+## Concepts and Features
 
 * Toggle State Configuration.
 * Display Mode Configuaration.
 * Slider Customization.
 * Custom Styling.
-##### Toggle State Configuration
+
+### Toggle State Configuration
 
 
 Toggle Button is configured with two states (Active and Inactive) contrasting each other. Toggling can be handled at runtime either through mouse click or through space key.
 
 ![](Toggle-Button_images/Toggle-Button_img4.png)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 this.toggleButton1.ToggleState = 
 
@@ -110,10 +123,10 @@ ToggleButtonState.Active;
 //ToggleButtonState.Inactive, for inactive state          
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.ToggleButton1.ToggleState = 
 
@@ -123,13 +136,13 @@ ToggleButtonState.Active
 
 'ToggleButtonState.Inactive , for inactive state
 
-
+{% endhighlight %}
 
 Active State
 
 In the Toggle Button, active state is represented uniquely through its styling properties: BackColor, BorderColor, ForeColor, and HoverColor.
 
-[C#]
+{% highlight c# %}
 
 this.toggleButton1.ActiveState.Text = "ON";
 
@@ -141,11 +154,11 @@ this.toggleButton1.ActiveState.ForeColor = Color.Black;
 
 this.toggleButton1.ActiveState.HoverColor = Color.Blue;   
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.ToggleButton1.ActiveState.Text = "ON"
 
@@ -157,19 +170,19 @@ Me.ToggleButton1.ActiveState.ForeColor = Color.Black
 
 Me.ToggleButton1.ActiveState.HoverColor = Color.Blue
 
-
+{% endhighlight %}
 
 
 
 ![](Toggle-Button_images/Toggle-Button_img5.png)
-{:.image }
+
 
 
 Inactive State
 
 Similar to the active state, inactive state is represented uniquely through its styling properties: BackColor, BorderColor, ForeColor, and HoverColor.
 
-[C#]
+{% highlight c# %}
 
 this.toggleButton1.InactiveState.Text = "OFF";
 
@@ -181,11 +194,11 @@ this.toggleButton1.InactiveState.ForeColor = Color.Blue;
 
 this.toggleButton1.InactiveState.HoverColor = Color.Blue;                 
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.ToggleButton1.InactiveState.Text = "OFF"
 
@@ -197,19 +210,19 @@ Me.ToggleButton1.InactiveState.ForeColor = Color.Blue
 
 Me.ToggleButton1.InactiveState.HoverColor = Color.Blue
 
-
+{% endhighlight %}
 
 
 
 ![](Toggle-Button_images/Toggle-Button_img6.png)
-{:.image }
 
 
-##### Display Mode Configuration
+
+### Display Mode Configuration
 
 Toggle Button is set to display either text or image through its DisplayMode property.
 
-[C#]
+{% highlight c# %}
 
 this.toggleButton1.DisplayMode = 
 
@@ -220,10 +233,10 @@ DisplayType.Text;
 // DisplayType.Image ,for displaying image
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.ToggleButton1.DisplayMode = 
 
@@ -233,19 +246,19 @@ DisplayType.Text
 
 'DisplayType.Image for displaying image
 
-
+{% endhighlight %}
 
 
 
 ![](Toggle-Button_images/Toggle-Button_img7.png)
-{:.image }
 
 
-##### Slider Customization
+
+### Slider Customization
 
 In the Toggle Button, the Slider is used to switch between two different states. It can be customized with different colors by using the Color property. The height of the Slider is calculated based on the Control’s Height. The Slider Width is customized by using the Slider.Width property that should not exceed the control’s width.
 
-[C#] 
+{% highlight c# %} 
 
 this.toggleButton1.Slider.BorderColor = Color.Black;
 
@@ -257,11 +270,11 @@ this.toggleButton1.Slider.BackColor = Color.Gray;
 
 this.toggleButton1.Slider.Width = 30;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.ToggleButton1.Slider.BorderColor = Color.Black
 
@@ -273,15 +286,15 @@ Me.ToggleButton1.Slider.BackColor = Color.Gray
 
 Me.ToggleButton1.Slider.Width = 30        
 
-
+{% endhighlight %}
 
 
 
 ![](Toggle-Button_images/Toggle-Button_img8.png)
-{:.image }
 
 
-##### Custom Styling
+
+### Custom Styling
 
 The appearance of the Toggle Button is customized by using the IToggleButtonRenderer. This interface provides few methods to control painting borders, arrow, and so on. 
 
@@ -290,39 +303,36 @@ To customize the appearance,
 1. Create a new custom renderer class and implement each of the members defined in IToggleButtonRenderer. 
 2. Assign instance of your custom renderer to the Renderer property of ToggleButton. By default, ToggleButton is painted by using its default renderer.
 
-[C#]
+{% highlight c# %}
 
 CustomRenderer renderer = new CustomRenderer();
 
 toggleButton1.Renderer = renderer;
 
+{% endhighlight %}
 
 
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Dim renderer As New CustomRenderer()
 
 toggleButton1.Renderer = renderer
 
-
+{% endhighlight %}
 
 
 
 ![](Toggle-Button_images/Toggle-Button_img9.png)
-{:.image }
 
 
-#### Frequently Asked Questions
 
-##### How to customize Toggle Button styling?
+## Frequently Asked Questions
+
+### How to customize Toggle Button styling?
 
 You can customize the appearance of the Toggle Button by using the IToggleButtonRenderer. The following code example illustrates how to achieve iOS platform look-alike Toggle Button.
 
-[C#]
+{% highlight c# %}
 
     StyledRenderer styleRenderer1 = new StyledRenderer();
 
@@ -522,9 +532,9 @@ You can customize the appearance of the Toggle Button by using the IToggleButton
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -706,13 +716,13 @@ Public Class StyledRenderer
 
         End Sub
 
-
+{% endhighlight %}
 
 ![](Toggle-Button_images/Toggle-Button_img10.png)
-{:.image }
 
 
-##### What are the events available in ToggleButton
+
+### What are the events available in ToggleButton
 
 The following listed events are available in Toggle Button.
 
@@ -725,7 +735,7 @@ This event is triggered in Toggle Button when its state is changing.
 
 Event Data
 
-_Table_ _976__: Member Table_
+_Table_ _976_: Member Table
 
 <table>
 <tr>
@@ -739,7 +749,7 @@ Gets or sets the value indicating whether the state change should be cancelled o
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 void toggleButton1_ToggleStateChanging(object sender, CancelEventArgs e)
 
@@ -749,9 +759,9 @@ void toggleButton1_ToggleStateChanging(object sender, CancelEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -761,13 +771,15 @@ Private Sub toggleButton1_ToggleStateChanging(ByVal sender As Object, ByVal e As
 
 End Sub
 
-###### ToggleStateChanged 
+{% endhighlight %}
+
+#### ToggleStateChanged 
 
 This event is triggered in Toggle Button after its value is changed. 
 
 Event Data
 
-_Table_ _977__: Member Table_
+_Table_ _977_: Member Table
 
 <table>
 <tr>
@@ -781,7 +793,7 @@ Returns the current state of the ToggleButton.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -797,9 +809,9 @@ void toggleButton1_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.To
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -811,35 +823,33 @@ Private Sub toggleButton1_ToggleStateChanged(ByVal sender As Object, ByVal e As 
 
 End Sub
 
-##### How to set image for Slider in Toggle Button
+{% endhighlight %}
+
+### How to set image for Slider in Toggle Button
 
 You can set the image through the Image property. Following code example illustrates the same.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toggleButton1.Slider.Image = global::ToggleButtonDemo2010.Properties.Resources.big_tick;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toggleButton1.Slider.Image = Global.ToggleButtonDemo2010.Properties.Resources.big_tick
 
-
+{% endhighlight %}
 
 ![](Toggle-Button_images/Toggle-Button_img11.png)
-{:.image }
 
 
-##### How to prevent the Toggle Button from changing between active and inactive states?
+
+### How to prevent the Toggle Button from changing between active and inactive states?
 
 You have to subscribe to the ToggleStateChanging event and cancel the change. The following code example explains the same.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -851,15 +861,11 @@ private void toggleButton1_ToggleStateChanging(object sender, CancelEventArgs e)
 
 }
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
-
-
-
-
+{% highlight vbnet %}
 
 Private Sub ToggleButton1_ToggleStateChanging(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles ToggleButton1.ToggleStateChanging
 
@@ -868,6 +874,6 @@ Private Sub ToggleButton1_ToggleStateChanging(sender As System.Object, e As Syst
 End Sub
 
 
-
+{% endhighlight %}
 
 

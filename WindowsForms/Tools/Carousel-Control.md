@@ -2,8 +2,8 @@
 layout: post
 title: Carousel-Control
 description: carousel control
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 

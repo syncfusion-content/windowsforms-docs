@@ -2,33 +2,35 @@
 layout: post
 title: TreeNavigator
 description: treenavigator
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## TreeNavigator
+# TreeNavigator
 
 The TreeNavigator control provides an interface that allows you to navigate through hierarchical information without using excessive screen space. Items in the control are expanded or collapsed, and you can drill down to sub-items by simply clicking on items in the TreeNavigator. 
 
 ![](TreeNavigator_images/TreeNavigator_img1.png)
-{:.image }
 
 
-Key Features
+
+### Key Features
 
     Navigation Modes - There are two modes of Navigation
 
 * Default
 * Extended
-#### Getting Started
+
+## Getting Started
 
 
 This section briefly describes how to design a TreeNavigator Control in a WindowsForms Application.
 
 * Adding a TreeNavigator Control 
 * Configuring the TreeNavigator Control
-##### Add a TreeNavigator Control
+
+### Add a TreeNavigator Control
 
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drag and Drop TreeNavigator control in the Form from Toolbox.
@@ -36,84 +38,82 @@ This section briefly describes how to design a TreeNavigator Control in a Window
 
 
 ![](TreeNavigator_images/TreeNavigator_img2.png)
-{:.image }
 
 
-##### Configure the TreeNavigator Control
+
+### Configure the TreeNavigator Control
 
 The most commonly used settings of the TreeNavigator control are configured either through Designer using the Smart tag or through the Properties window or through code.
 
 ![](TreeNavigator_images/TreeNavigator_img3.png)
-{:.image }
+
 
 
 To add TreeNavigator Control to a Windows Forms Application through code behind.
 
 1. Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools.
 
+   ~~~ cs
 
+		//Namespaces.
 
-[C#]
+		using Syncfusion.Windows.Forms.Tools;
 
+		using Syncfusion.Windows.Forms;
 
+   ~~~
+   {:.prettyprint }
 
-//Namespaces.
+   ~~~ vbnet
 
-using Syncfusion.Windows.Forms.Tools;
+		‘Namespaces.
 
-using Syncfusion.Windows.Forms;
+		Imports Syncfusion.Windows.Forms
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB]
-
-
-
-‘Namespaces.
-
-Imports Syncfusion.Windows.Forms
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create an instance of the TreeNavigator control and add it to the Form.
 
-[C#]
+   ~~~ cs
 
 
 
-//Creates the Treenavigator instance.
+		//Creates the Treenavigator instance.
 
-TreeNavigator treeNavigator = new TreeNavigator();
-
-
-
-this.Controls.Add(treeNavigator);
+		TreeNavigator treeNavigator = new TreeNavigator();
 
 
 
- [VB]
+		this.Controls.Add(treeNavigator);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-‘Creates the TreeNavigator instance.
+		‘Creates the TreeNavigator instance.
 
-Dim treeNavigator As New TreeNavigator()
+		Dim treeNavigator As New TreeNavigator()
 
+		Me.Controls.Add(treeNavigator)
 
+   ~~~
+   {:.prettyprint }
+   
+## Concept and Features
 
-Me.Controls.Add(treeNavigator)
-
-#### Concept and Features
-
-##### Populating Items
+### Populating Items
 
 The TreeNavigator is populated with the collection of TreeMenuItem using the Items property.
 
 The following code example allows you to add TreeMenuItem to the TreeNavigator.
 
-[C#]
+{% highlight c# %}
 
 //Adds items to the TreeNavigator.
 
@@ -123,9 +123,9 @@ The following code example allows you to add TreeMenuItem to the TreeNavigator.
 
  this.treeNavigator.Items.Add(this.treeMenuItem1);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ‘Adds items to the TreeNavigator.
 
@@ -133,80 +133,75 @@ Dim treeMenuItem1 As New TreeMenuItem()
 
 Me.treeNavigator.Items.Add(Me.treeMenuItem1)
 
-
+{% endhighlight %}
 
 
 
 ![](TreeNavigator_images/TreeNavigator_img4.png)
-{:.image }
 
 
-##### Navigation Mode
+
+### Navigation Mode
 
  There are two modes of Navigation in this control.
 
 * Default Mode
 * Extended Mode
-###### Default Mode
+
+#### Default Mode
 
 
 In this Default mode, the header of current hierarchy level item is displayed at the top of the TreeNavigator with the back button. This back button is used to navigate towards the root from the current level. 
 
 ![](TreeNavigator_images/TreeNavigator_img5.png)
-{:.image }
+
 
 
 The following code examples allow you to choose the navigation mode.
 
-[C#]
+{% highlight c# %}
 
 this.treeNavigator.NavigationMode = NavigationMode.Default;
 
+{% endhighlight %}
 
-
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.treeNavigator1.NavigationMode = NavigationMode.Default
 
+{% endhighlight %}
 
-
-###### Extended Mode
+#### Extended Mode
 
 In the Extended mode, header of each level from the root to current level stacked one by one at the top of the TreeNavigator.  When you click on any of that header it take you to the corresponding level. 
 
 ![](TreeNavigator_images/TreeNavigator_img6.png)
-{:.image }
+
 
 
 The following code examples allow you to choose the Navigation mode.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.treeNavigator.NavigationMode = NavigationMode.Extended;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.TreeNavigator1.NavigationMode = NavigationMode.Extended
 
+{% endhighlight %}
 
-
-##### Header Customization
+### Header Customization
 
 The height, Text, Back color, and Text color of the header are customized by using the Header property.
 
 The following code example allows you to customize the header.
 
-[C#]
+{% highlight c# %}
 
 //Customizes the Header area
 
@@ -218,17 +213,14 @@ this.treeNavigator1.Header.HeaderBackColor = Color.White;
 
 this.treeNavigator1.Header.HeaderForeColor = Color.Black;
 
-
-
 //Show/hide the Header area
 
 this.treeNavigator1.ShowHeader = false;
 
 
+{% endhighlight %}
 
-
-
-[VB]
+{% highlight vbnet %}
 
 'Customizes the Header area
 
@@ -240,41 +232,37 @@ Me.TreeNavigator1.Header.HeaderBackColor = Color.White
 
 Me.TreeNavigator1.Header.HeaderForeColor = Color.Black
 
-
-
 'Show/hide the Header area
 
 Me.TreeNavigator1.ShowHeader = False
 
+{% endhighlight %}
 
-
-##### Item Selection
+### Item Selection
 
 The selected item of the current hierarchy level is get/set through SelectedItem property.
 
 The following code examples allow you to set the SelectedItem.
 
-[C#]
-
-
+{% highlight c# %}
 
  this.treeNavigator1.SelectedItem = treeMenuItem1;
 
+{% endhighlight %}
 
-
- [VB]
-
-
+ {% highlight vbnet %}
 
 Me.treeNavigator1.SelectedItem = treeMenuItem1
 
-##### Text Alignment
+{% endhighlight %}
+
+### Text Alignment
 
 This property is used to set the Text Alignment for the TreeMenuItem. There are three alignments, Left, Right, and Center.
 
 The following code examples allow you to set the alignment for the text in the TreeMenuItem.
 
-[C#]
+{% highlight c# %}
 
 this.treeNavigator.TextAlign = TextAlignment.Left;
 
@@ -282,11 +270,9 @@ this.treeNavigator.TextAlign = TextAlignment.Right;
 
 this.treeNavigator.TextAlign = TextAlignment.Center;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.TreeNavigator1.TextAlign = TextAlignment.Center
 
@@ -294,26 +280,26 @@ Me.TreeNavigator1.TextAlign = TextAlignment.Left
 
 Me.TreeNavigator1.TextAlign = TextAlignment.Right
 
+{% endhighlight %}
 
+## Frequently Asked Questions
 
-#### Frequently Asked Questions
-
-##### What are the events implemented in the TreeNavigator?
+### What are the events implemented in the TreeNavigator?
 
 Following listed events are available in TreeNavigator for use.
 
 * SelectionChanging
 * SelectionChanged
 
-SelectionChanging Event
+#### SelectionChanging Event
 
 This event is triggered before the TreeMenuItem selection.
 
-Event Data
+##### Event Data
 
 SelectionStateChangingEventArgs contains the following members that provide information specific to this event.
 
- _Table_ _937__: Selection Changing Event_
+ _Table_ _937_: Selection Changing Event
 
 <table>
 <tr>
@@ -339,7 +325,7 @@ This property enables you to avoid particular item from Selection.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -357,17 +343,13 @@ void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateCha
 
    }
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 
 
 Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args As SelectionStateChangingEventArgs)
-
-
 
         args.Cancel = True
 
@@ -381,19 +363,19 @@ Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args 
 
 End Sub
 
+{% endhighlight %}
 
 
 
-
-SelectionChanged Event
+#### SelectionChanged Event
 
 This event triggers after the selection of the TreeMenuItem.
 
-Event Data
+##### Event Data
 
 SelectionStateChangedEventArgs contains the following members that provide information specific to this event.
 
-_Table_ _938__: Selection Changed Event_
+_Table_ _938_: Selection Changed Event
 
 <table>
 <tr>
@@ -411,9 +393,7 @@ This property returns true when the selected item is expanded.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 void treeNavigator1_SelectionChanged(TreeNavigator sender, SelectionStateChangedEventArgs e)
 
@@ -425,9 +405,9 @@ void treeNavigator1_SelectionChanged(TreeNavigator sender, SelectionStateChang
 
     }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -443,15 +423,13 @@ Private Sub treeNavigator1_SelectionChanged(sender As TreeNavigator, e As 
 
 End Sub
 
+{% endhighlight %}
 
-
-##### How to prevent a TreeMenuItem from being selected?
+### How to prevent a TreeMenuItem from being selected?
 
 You can use the following code examples to prevent an item from selecting a TreeMenuItem.
 
-[C#]
-
-
+{% highlight c# %}
 
 void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateChangingEventArgs args)
 
@@ -463,9 +441,9 @@ void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateCha
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -479,59 +457,59 @@ Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args 
 
 End Sub
 
+{% endhighlight %}
 
 
 
-
-##### How to set ItemBackColor for individual TreeMenuItem?
+### How to set ItemBackColor for individual TreeMenuItem?
 
 The TreeMenuItem back color is customized individually by using ItemBackColor property. 
 
 The following code examples allow you to set back color for the individual TreeMenuItem. 
 
-[C#]
+{% highlight c# %}
 
 this.treeMenuItem1.ItemBackColor = Color.FromArgb(243,241,243);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.TreeMenuItem1.ItemBackColor = Color.FromArgb(243, 241, 243)
 
-
+{% endhighlight %}
 
 
 
 ![](TreeNavigator_images/TreeNavigator_img7.png)
-{:.image }
 
 
-##### How to set Border color and Border thickness for the TreeNavigator control?
+
+### How to set Border color and Border thickness for the TreeNavigator control?
 
 The border thickness and border color of the TreeNavigator are changed by using the BorderColor and BorderThickness properties.
 
 The following code examples allow you to change the BorderColor and BorderThickness.
 
-[C#]
+{% highlight c# %}
 
 this.treeNavigator1.BorderColor = System.Drawing.Color.Blue;
 
 this.treeNavigator1.BorderThickness = 5;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.TreeNavigator1.BorderColor = Color.Blue
 
 Me.TreeNavigator1.BorderThickness = 5
 
-
+{% endhighlight %}
 
 
 
 ![](TreeNavigator_images/TreeNavigator_img8.png)
-{:.image }
+
 
 

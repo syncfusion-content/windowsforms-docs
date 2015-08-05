@@ -2,17 +2,17 @@
 layout: post
 title: Tabs-Package
 description: tabs package
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Tabs Package
+# Tabs Package
 
 XP Tabs is a 100% native .NET TabControl implementation that comes with a lot more configuration and customization capabilities than the Legacy Wrapper that the .NET framework comes with. It provides all the basic functionalities of a standard TabControl and much more. 
 
 ![](Tabs-Package_images/Tabs-Package_img1.jpeg)
-{:.image }
+
 
 
 The XP Tabs (TabControlAdv) feature provided as part of this package is an advanced TabControl with plenty of appearance styles and configuration capabilities. It makes the creation of custom tabs with custom shapes and styles a snap.
@@ -21,15 +21,15 @@ Resembling the class names in the framework, the TabControlAdv and TabPageAdv cl
 
 The TabControlAdv and the TabPageAdv controls come with full design-time support.
 
-#### Features Overview
+## Features Overview
 
 The Tabs framework contains the TabControlAdv with a full set of features to support efficient tab usage to create rich user applications.
 
 ![](Tabs-Package_images/Tabs-Package_img2.jpeg)
-{:.image }
 
 
-Features
+
+### Features
 
 * TabStyles - Tabs framework provides a number of pre-defined TabStyles and also allows to apply custom - style settings to the control.
 * Appearance settings - The Tab appearance can be easily customized by stating the style definitions for the TabItems, TabPages and TabPanels individually.
@@ -44,15 +44,13 @@ Features
 * Color Properties - TabControlAdv allows the user to set different colors for active and inactive tabs using ActiveTabColor, InactiveTabcolor, TabBackColor, TabForeColor and TabPanelBackColor properties.
 * Themes Support - TabControlAdv provides complete theme support. Using the ThemesEnabled property, XP themes can be enabled for this control.
 * TabPersistence - Complete persistence support is now available for TabControlAdv using the PersistTabState property.
-> 
-![](Tabs-Package_images/Tabs-Package_img3.jpeg)
-{:.image }
- _Note: TabState has been saved at the following location: C:\Documents and Settings\Username*\Local Settings\Application Data\IsolatedStorage._
+
+> Note: TabState has been saved at the following location: C:\Documents and Settings\Username*\Local Settings\Application Data\IsolatedStorage._
 
 * Close button can be added for each TabPage like IE7 to close the tabpage.
 
 ![](Tabs-Package_images/Tabs-Package_img4.jpeg)
-{:.image }
+
 
 
 * Lets you set tooltips for every TabPrimitives.
@@ -62,33 +60,33 @@ Features
 
 A sample which illustrates the features of TabControlAdv is available in the following sample installation location.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
-#### TabControlAdv
+## TabControlAdv
 
 TabControlAdv in Toolbox
 
 TabControlAdv is a control in the Tabs Package that manages a set of TabPages and provides options to customize the TabPages according to the needs of the user. 
 
 ![](Tabs-Package_images/Tabs-Package_img5.jpeg)
-{:.image }
+
 
 
 The TabControlAdv automatically adds pages to every tabitem being added to the application with uniform dimensions for all the pages. 
 
 ![](Tabs-Package_images/Tabs-Package_img6.jpeg)
-{:.image }
 
 
-TabPanels
+
+### TabPanels
 
 TabPanels are used to switch between the various tab pages / tab items in the TabControlAdv.
 
-TabItems
+### TabItems
 
 TabItems are items added to the TabControlAdv by default when a tabpage is added. Unlike the usual items, the tabitems when clicked, provide access to the respective tabpages and does not contain any event to hold the user written code.
 
-TabPages
+### TabPages
 
 TabPages are the pages included in the TabControl. The TabPages are laid one above the other and only a single tabpage can be viewed at a time. Each page acts as a ContainerControl and can host ChildControls within it using the TabPageAdv panel-derived class.
 
@@ -98,11 +96,11 @@ Creating a TabControlAdv Through Designer
 
 Creating a TabControlAdv Programmatically
 
-#### Creating TabControlAdv
+## Creating TabControlAdv
 
 This tutorial will show you how the TabControlAdv is created through designer and code which are discussed in the below topics.
 
-##### Through Designer
+### Through Designer
 
 To create a TabControlAdv through designer,
 
@@ -110,190 +108,192 @@ To create a TabControlAdv through designer,
 2. Add TabPages to the control in the designer in the following ways.
 3. Right click on the TabControlAdv and select the Add Tab option. This adds a tabpage to the TabControlAdv.
 
-![](Tabs-Package_images/Tabs-Package_img7.jpeg)
-{:.image }
+   ![](Tabs-Package_images/Tabs-Package_img7.jpeg)
+
 
 
 4. In the Properties window, select the TabPages property. The TabPageAdv Collection Editor will be opened. Click Add, a tabpage will be added to the TabControlAdv.
 
-![](Tabs-Package_images/Tabs-Package_img8.jpeg)
-{:.image }
+   ![](Tabs-Package_images/Tabs-Package_img8.jpeg)
 
 
-![](Tabs-Package_images/Tabs-Package_img9.jpeg)
-{:.image }
+
+    ![](Tabs-Package_images/Tabs-Package_img9.jpeg)
 
 
-![](Tabs-Package_images/Tabs-Package_img10.jpeg)
-{:.image }
+
+     ![](Tabs-Package_images/Tabs-Package_img10.jpeg)
 
 
-##### Through Code
+
+### Through Code
 
 To create a TabControlAdv programmatically,
 
 1. Add the Syncfusion assembly Tools.Windows to your application.
 2. Add the namespace Syncfusion.Windows.Forms.Tools.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+   ~~~ vbnet
 
+	Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
+   ~~~
+   {:.prettyprint }
 
 
 3. Declare the TabControlAdv and TabPageAdv.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv1;
+		private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv1;
 
-private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv1;
+		private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv1;
 
-private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv2;
+		private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv2;
 
-private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv3;
+		private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv3;
 
+   ~~~
+   {:.prettyprint } 
 
+   ~~~ vbnet
 
-[VB.NET]
+		Private tabControlAdv1 As Syncfusion.Windows.Forms.Tools.TabControlAdv
 
+		Private tabPageAdv1 As Syncfusion.Windows.Forms.Tools.TabPageAdv
 
+		Private tabPageAdv2 As Syncfusion.Windows.Forms.Tools.TabPageAdv
 
-Private tabControlAdv1 As Syncfusion.Windows.Forms.Tools.TabControlAdv
+		Private tabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
 
-Private tabPageAdv1 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-
-Private tabPageAdv2 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-
-Private tabPageAdv3 As Syncfusion.Windows.Forms.Tools.TabPageAdv
-
-
+   ~~~
+   {:.prettyprint }
 
 4. The following code creates a TabControlAdv with three tabpages.
 
-[C#]
+   ~~~ cs
 
 
 
-private void Form1_Load(object sender, System.EventArgs e)
+		private void Form1_Load(object sender, System.EventArgs e)
 
-{
+		{
 
-    //Initialize the tabControlAdv and tabPageAdv
+			//Initialize the tabControlAdv and tabPageAdv
 
-    this.tabControlAdv1 = new TabControlAdv();
+			this.tabControlAdv1 = new TabControlAdv();
 
-    this.tabPageAdv1 = new TabPageAdv();
+			this.tabPageAdv1 = new TabPageAdv();
 
-    this.tabPageAdv2 = new TabPageAdv();
+			this.tabPageAdv2 = new TabPageAdv();
 
-    this.tabPageAdv3 = new TabPageAdv();
+			this.tabPageAdv3 = new TabPageAdv();
 
 
 
 
 
-    //Add the TabPageAdv to the TabControlAdv.
+			//Add the TabPageAdv to the TabControlAdv.
 
-    this.tabControlAdv1.Controls.AddRange(new Control[]{this.tabPageAdv1, this.tabPageAdv2, this.tabPageAdv3});
+			this.tabControlAdv1.Controls.AddRange(new Control[]{this.tabPageAdv1, this.tabPageAdv2, this.tabPageAdv3});
 
 
 
-    //Set the location of the TabContolAdv
+			//Set the location of the TabContolAdv
 
-    this.tabControlAdv1.Location = new Point(16, 24);
+			this.tabControlAdv1.Location = new Point(16, 24);
 
 
 
-    //Set the text of the TabPageAdv
+			//Set the text of the TabPageAdv
 
-    this.tabPageAdv1.Text = "Tab1";
+			this.tabPageAdv1.Text = "Tab1";
 
-    this.tabPageAdv2.Text = "Tab2";
+			this.tabPageAdv2.Text = "Tab2";
 
-    this.tabPageAdv3.Text = "Tab3";
+			this.tabPageAdv3.Text = "Tab3";
 
 
 
-    //Add the TabControlAdv to your form                
+			//Add the TabControlAdv to your form                
 
-    this.Controls.AddRange(new Control[] { this.tabControlAdv1});
+			this.Controls.AddRange(new Control[] { this.tabControlAdv1});
 
-}
+		}
 
 
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
+			'Initialize the tabControlAdv and tabPageAdv
 
-    'Initialize the tabControlAdv and tabPageAdv
+			Me.tabControlAdv1 = New TabControlAdv()
 
-    Me.tabControlAdv1 = New TabControlAdv()
+			Me.tabPageAdv1 = New TabPageAdv()
 
-    Me.tabPageAdv1 = New TabPageAdv()
+			Me.tabPageAdv2 = New TabPageAdv()
 
-    Me.tabPageAdv2 = New TabPageAdv()
+			Me.tabPageAdv3 = New TabPageAdv()
 
-    Me.tabPageAdv3 = New TabPageAdv()
 
 
+			'Add the TabPageAdv to the TabControlAdv.
 
-    'Add the TabPageAdv to the TabControlAdv.
+			Me.tabControlAdv1.Controls.AddRange(New Control() {Me.tabPageAdv1, Me.tabPageAdv2, Me.tabPageAdv3})
 
-    Me.tabControlAdv1.Controls.AddRange(New Control() {Me.tabPageAdv1, Me.tabPageAdv2, Me.tabPageAdv3})
 
 
+			'Set the location of the TabContolAdv
 
-    'Set the location of the TabContolAdv
+			Me.tabControlAdv1.Location = New Point(16, 24)
 
-    Me.tabControlAdv1.Location = New Point(16, 24)
 
 
+			'Set the text of the TabPageAdv
 
-    'Set the text of the TabPageAdv
+			Me.tabPageAdv1.Text = "Tab1"
 
-    Me.tabPageAdv1.Text = "Tab1"
+			Me.tabPageAdv2.Text = "Tab2"
 
-    Me.tabPageAdv2.Text = "Tab2"
+			Me.tabPageAdv3.Text = "Tab3"
 
-    Me.tabPageAdv3.Text = "Tab3"
 
 
+			'Add the TabControlAdv to your form                
 
-    'Add the TabControlAdv to your form                
+			Me.Controls.AddRange(New Control() {Me.tabControlAdv1})
 
-    Me.Controls.AddRange(New Control() {Me.tabControlAdv1})
-
-
-
-End Sub
-
-#### Concepts and Features
+		End Sub
+		
+   ~~~
+   {:.prettyprint }
+
+## Concepts and Features
 
 This section discusses the following topics which describe the concepts and features of TabControlAdv.
 
-##### TabControlAdv
+### TabControlAdv
 
 The look and feel of the TabControlAdv can be controlled through the appearance properties of the control. These properties are discussed in detail in the below topics.
 
-###### TabItems Customization
+#### TabItems Customization
 
 TabItems can be customized using the properties given below.
 
@@ -301,7 +301,7 @@ Renaming TabItems
 
 TabControlAdv comes with the renaming functionality similar to MS Excel. Users can edit TabControlAdv's text at run-time using the LabelEdit property which has to be set to True. 
 
-_Table_ _803__: Property Table_
+_Table_ _803_: Property Table
 
 <table>
 <tr>
@@ -321,14 +321,14 @@ To bring the text of the tabitem to the edit mode, the following can be done.
 2. Also, double-clicking on a tab makes the text change to edit mode.
 
 ![](Tabs-Package_images/Tabs-Package_img11.jpeg)
-{:.image }
+
 
 
 After editing the text, to come out of the edit mode, press the Enter key or click the Left Mouse button.
 
 3. Programmatically the LabelEdit property can be set as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -336,37 +336,33 @@ After editing the text, to come out of the edit mode, press the Enter key or cli
 
 this.tabControlAdv.LabelEdit = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Renaming TabControlAdv’s Text.
 
 Me.tabControlAdv.LabelEdit = True
 
-> ![](Tabs-Package_images/Tabs-Package_img12.jpeg)
-{:.image }
- _Note: The visibility of the tab items can be set through TabVisible property. It can be enabled / disabled using TabEnabled property._
+{% endhighlight %}
+
+> Note: The visibility of the tab items can be set through TabVisible property. It can be enabled / disabled using TabEnabled property.
 
 Moving TabItems
 
 The order of the tabs within the TabControlAdv can be changed at design-time and also at run-time by simply dragging-and-dropping the tabs in the required places. This can be enabled using the UserMoveTabs property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.UserMoveTabs = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.UserMoveTabs = True
+
+{% endhighlight %}
 
 Padding
 
@@ -374,17 +370,15 @@ Using the Padding property, the space around the text / image of the tabitems ca
 
 Code snippets to set the Padding
 
-[C#]
-
-
+{% highlight c# %}
 
 // Setting the Padding for TabControlAdv through Coding. 
 
 this.tabControlAdv1.Padding = new Point(12, 12); 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -392,23 +386,21 @@ this.tabControlAdv1.Padding = new Point(12, 12);
 
 Me.tabControlAdv1.Padding = New Point(12, 12)
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img13.jpeg)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img14.jpeg)
-{:.image }
- _Note: The TabControlAdv.OnTabPanelBoundsAffected() method forces the TabControlAdv to re-layout it's elements._
 
-###### Multiline Support
+> Note: The TabControlAdv.OnTabPanelBoundsAffected() method forces the TabControlAdv to re-layout it's elements.
+
+#### Multiline Support
 
 Multiple level of tabs can be created by setting the Multiline property of the TabControl to true, which places the tabs in more than one line. This allows the tabs to be arranged in multiple lines when the tabs exceed the width of the control, with all the tabitems in view.
 
 The tabitem's text can be placed in more than one line by setting the MultilineText property.
 
-_Table_ _804__: Property Table_
+_Table_ _804_: Property Table
 
 <table>
 <tr>
@@ -426,7 +418,7 @@ Allows the tabitem's text to be placed in more than one line.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -436,9 +428,9 @@ this.tabControlAdv1.MultilineText = true;
 
 this.tabControlAdv1.KeepSelectedTabInFrontRow = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -448,10 +440,10 @@ Me.tabControlAdv1.MultilineText = True
 
 Me.tabControlAdv1.KeepSelectedTabInFrontRow = True
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img15.jpeg)
-{:.image }
+
 
 
 The KeepSelectedTabInFrontRow property will bring the selected tab to the front row (applicable only in the case of Multiline Tabs).
@@ -460,7 +452,7 @@ UseMnemonic
 
 This property specifies whether the TabControlAdv interprets the Ampersand character (&) to be an Access key prefix character or not. The default value is set to False.
 
-_Table_ _805__: Property Table_
+_Table_ _805_: Property Table
 
 <table>
 <tr>
@@ -472,20 +464,21 @@ Description</td></tr>
 UseMnemonic</td><td>
 Gets / sets the value which determines whether the TabControlAdv should interpret the Ampersand character (&) to be an Access key prefix character or not.</td></tr>
 </table>
-###### TabPages
+
+#### TabPages
 
 TabPages
 
 On Clicking the TabPages property in the Properties grid, the TabPageAdv Collection Editor will be opened. 
 
 ![](Tabs-Package_images/Tabs-Package_img16.jpeg)
-{:.image }
+
 
 
 The TabPageAdv Collection Editor can be used to add TabPages to the TabControlAdv and customize the TabPages according to needs of the user. 
 
 ![](Tabs-Package_images/Tabs-Package_img17.jpeg)
-{:.image }
+
 
 
 Border Settings
@@ -498,7 +491,7 @@ The three types of border styles are given below.
 * Fixed 3D
 * None
 
-_Table_ _806__: Property Table_
+_Table_ _806_: Property Table
 
 <table>
 <tr>
@@ -513,14 +506,14 @@ Gets / sets the border styles for the tabpages. It includes the following styles
 
 
 ![](Tabs-Package_images/Tabs-Package_img18.jpeg)
-{:.image }
+
 
 
 FixedSingleBorderColor
 
 The FixedSingleBorderColor property is used to set a color for the border of the TabPage in the TabControlAdv when the BorderStyle is set to FixedSingle.
 
-_Table_ _807__: Property Table_
+_Table_ _807_: Property Table
 
 <table>
 <tr>
@@ -535,14 +528,12 @@ Gets / sets a color for the border of the TabPage in the TabControlAdv when the 
 
 
 ![](Tabs-Package_images/Tabs-Package_img19.jpeg)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img20.jpeg)
-{:.image }
- _Note: The TabControlAdv.ResetFixedSingleBorderColor() method resets the border color of the TabPage to the default value._
 
-###### Other Settings
+> Note: The TabControlAdv.ResetFixedSingleBorderColor() method resets the border color of the TabPage to the default value.
+
+#### Other Settings
 
 TabControlAdv now supports animation on tab pages. Animated image in GIF can be inserted in a tab page. The format supports up to 8 bits per pixel with a palette of up to 256 distinct colors chosen from the 24-bit RGB color space. Both 3D and 2D formats are supported.
 
@@ -554,12 +545,12 @@ There are two major properties which come into picture:
 * Image size
 
 ![](Tabs-Package_images/Tabs-Package_img21.jpeg)
-{:.image }
+
 
 
 The following table lists the properties of the GIF image:
 
-_Table_ _808__: Property Table_
+_Table_ _808_: Property Table
 
 <table>
 <tr>
@@ -582,7 +573,7 @@ Inserting GIF Image
 
 The code should be in the following format:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -590,29 +581,27 @@ this.tabPageAdv.Image = Image.FromFile(imagepath);
 
 this.tabPageAdv.ImageSize = new System.Drawing.Size(height,width);
 
-
+{% endhighlight %}
 
 The following code illustrates insertion of the required GIF image.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabPageAdv.Image = Image.FromFile(“sample.gif”);
 
 this.tabPageAdv.ImageSize = new System.Drawing.Size(16,16);
 
-> ![](Tabs-Package_images/Tabs-Package_img22.jpeg)
-{:.image }
-_Note: Only when the ImageIndex property is -1, Image from the Image property will be displayed or else Image from ImageList will be displayed._
+{% endhighlight %}
+
+> Note: Only when the ImageIndex property is -1, Image from the Image property will be displayed or else Image from ImageList will be displayed.
 
 Run the code. The required image is displayed.
 
-###### Prevent moving a specific Tab in TabControlAdv 
+#### Prevent moving a specific Tab in TabControlAdv 
 
 TabControlAdv now allows to prevent a specific tab control from being moved on a TabControlAdv. This is achieved with the newly added API TabMoving.
 
-[C#]
+{% highlight c# %}
 
 // Prevents moving the tab.
 
@@ -632,9 +621,9 @@ void tabControlAdv1_TabMoving(object sender, Syncfusion.Windows.Forms.Tools.TabM
 
         }     
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Prevents moving the tab.
 
@@ -652,7 +641,9 @@ End If
 
 End Sub
 
-#### TabPrimitives
+{% endhighlight %}
+
+## TabPrimitives
 
 TabPrimitives is a collection of NavigationControls used to navigate through the TabPages of the TabControlAdv. 
 
@@ -669,28 +660,24 @@ The various TabPrimitives are,
 * Custom - User can add more buttons through Custom TabPrimitive. This helps the user to create / add more buttons and handle their own click events.
 
 ![](Tabs-Package_images/Tabs-Package_img23.jpeg)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img24.jpeg)
-{:.image }
- _Note: The TabControlAdv.HitTestTabs() method can be used to return the tab at the specified location._ 
+
+> Note: The TabControlAdv.HitTestTabs() method can be used to return the tab at the specified location.
 
 TabPrimitives Features
 
 Apart from doing the defined task of Navigation, TabPrimitivesHost comes with options for adding Images, ToolTips and enabling the Visible property for each TabPrimitive.
 
 ![](Tabs-Package_images/Tabs-Package_img25.jpeg)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img26.jpeg)
-{:.image }
- _Note: You can set the other properties for adding Images and ToolTips for the TabPrimitives using the TabPrimitives Collection Editor._ 
+
+> Note: You can set the other properties for adding Images and ToolTips for the TabPrimitives using the TabPrimitives Collection Editor.
 
 ToolTips feature is available for TabPrimitives.
 
-##### Creating TabPrimitives
+### Creating TabPrimitives
 
 Creating TabPrimitives Through Designer
 
@@ -698,25 +685,25 @@ To create Tab Primitives through designer, follow the steps given below.
 
 1. After adding a TabControlAdv with a set of TabPages in it, select the TabPrimitivesHost.TabPrimitives property in the Properties window.
 
-![](Tabs-Package_images/Tabs-Package_img27.jpeg)
-{:.image }
+   ![](Tabs-Package_images/Tabs-Package_img27.jpeg)
+
 
 
 2. ATabPrimitives Collection Editor will be opened. Click the Add option in the Editor to add a TabPrimitive.
 
-![](Tabs-Package_images/Tabs-Package_img28.jpeg)
-{:.image }
+   ![](Tabs-Package_images/Tabs-Package_img28.jpeg)
+
 
 
 3. Set the TabPrimitiveType as required and click Ok.
 
-![](Tabs-Package_images/Tabs-Package_img29.jpeg)
-{:.image }
+   ![](Tabs-Package_images/Tabs-Package_img29.jpeg)
+
 
 
 Code snippets to add TabPrimitives programmatically
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -740,9 +727,9 @@ this.tabControlAdv1.TabPrimitivesHost.TabPrimitives.Add(new Syncfusion.Windows.F
 
 this.tabControlAdv1.TabPrimitivesHost.Visible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -766,11 +753,11 @@ Me.tabControlAdv1.TabPrimitivesHost.TabPrimitives.Add(New Syncfusion.Windows.For
 
 Private Me.tabControlAdv1.TabPrimitivesHost.Visible = True
 
-> ![](Tabs-Package_images/Tabs-Package_img30.jpeg)
-{:.image }
- _Note: After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True. Now the TabPrimitives added will be visible in the TabControlAdv._
+{% endhighlight %}
 
-#### TabNavigation
+> Note: After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True. Now the TabPrimitives added will be visible in the TabControlAdv.
+
+## TabNavigation
 
 TabControlAdv provides an easy way to navigate through tabs. Setting TabPrimitives (previously, NavigationControl) allows the users to move to the next or previous tab / page and easily traverse to the first / last tab.
 
@@ -783,52 +770,50 @@ SwitchPagesForDialogKeys property available for the TabControlAdv specifies if t
 The TabPrimitiveHost property allows to customize the navigation and close buttons by defining it through the TabPrimitives Property Collection. The tabprimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First / Previous / Next / LastTab, Next / PreviousPage and Close / DropDown options.
 
 ![](Tabs-Package_images/Tabs-Package_img31.jpeg)
-{:.image }
 
 
-#### Styles Settings
+
+## Styles Settings
 
 This section discusses the various Style Settings available in TabControlAdv.
 
 The topics discussed are given below.
 
-##### ITabRenderer
+### ITabRenderer
 
 ITabRenderer interface (or derive from TabRendererBase, a base implementation of ITabRenderer), could be implemented to gain more control over the display of tabs. 
 
 The Renderer property returns the current Syncfusion.Windows.Forms.Tools.ITabRenderer used by the TabControl to render the TabPanel.
 
 ![](Tabs-Package_images/Tabs-Package_img32.jpeg)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img33.jpeg)
-{:.image }
- _Note: Refer to CustomTabControl sample which demonstrates this feature._ 
+
+> Note: Refer to CustomTabControl sample which demonstrates this feature.
 
 Once you have a Custom ITabRenderer implementation, you can, if necessary, make it available to the TabControlAdv at design-time. To do so, 
 
 1. First select the Add Custom Tabs entry in the drop-down list that pops-up from the TabStyle property editor. This will insert a new DesignTimeTabTypeLoader component into your forms designer. 
 
-![](Tabs-Package_images/Tabs-Package_img34.jpeg)
-{:.image }
+   ![](Tabs-Package_images/Tabs-Package_img34.jpeg)
+
 
 
 2. Insert the fully qualified type name of your Custom TabRenderer class (for example: Syncfusion.Samples.Tools.TabRendererNotched) to the DesignTimeTabTypeLoader's TypesToLoadList. This will try to load your class into the DesignTimeTabTypeLoader's TypesToLoadList, assuming the type is in the same project as the designer or the assembly in which this type resides is referenced. You will now find an entry in the TabControlAdv.TabStyle editor list corresponding to your Custom TabRenderer. 
 
-![](Tabs-Package_images/Tabs-Package_img35.jpeg)
-{:.image }
+   ![](Tabs-Package_images/Tabs-Package_img35.jpeg)
+
 
 
 See Also
 
 TabStyles
 
-###### TabAlignment
+#### TabAlignment
 
 Alignment of the Tabs can be set through the below properties.
 
-_Table_ _809__: Property Table_
+_Table_ _809_: Property Table
 
 <table>
 <tr>
@@ -859,10 +844,10 @@ Gets / sets the distance, in pixels, between the right edge of the control and t
 
 
 ![](Tabs-Package_images/Tabs-Package_img36.png)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -870,9 +855,9 @@ this.tabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left;
 
 this.tabControlAdv1.TabGap = 2;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -880,15 +865,17 @@ Me.tabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left
 
 Me.tabControlAdv1.TabGap = 2
 
+{% endhighlight %}
+
 See Also
 
 TabStyles
 
-##### Text Alignment
+### Text Alignment
 
 The below properties deals with alignment of the text in the TabControlAdv.
 
-_Table_ _810__: Property Table_
+_Table_ _810_: Property Table
 
 <table>
 <tr>
@@ -906,7 +893,7 @@ Specifies vertical alignment for the text of the tabitem.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -914,9 +901,9 @@ this.tabControlAdv1.TextAlignment = System.Drawing.StringAlignment.Far;
 
 this.tabControlAdv1.TextLineAlignment = System.Drawing.StringAlignment.Near;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -924,13 +911,15 @@ Me.tabControlAdv1.TextAlignment = System.Drawing.StringAlignment.Far
 
 Me.tabControlAdv1.TextLineAlignment = System.Drawing.StringAlignment.Near
 
-##### TabSize Settings
+{% endhighlight %}
+
+### TabSize Settings
 
 SizeMode
 
 The SizeMode of the tabstrip allows to position the tabitems according to the selected options.
 
-_Table_ _811__: Property Table_
+_Table_ _811_: Property Table
 
 <table>
 <tr>
@@ -949,7 +938,7 @@ Specifies how the tabs should be sized and aligned. The options include:Normal,F
 * In ShrinkToFit mode, the width of each tab is shrunk so that all the tabs are visible (this is only applicable to the tabcontrols in the single-line mode). 
 * In FillToRight mode, the width of each tab is sized so that each row of tabs occupies the entire width of the ContainerControl (this is only applicable to tabcontrols with more than one row).
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -961,9 +950,9 @@ this.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.Shrink
 
 this.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillToRight;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -975,15 +964,15 @@ Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.ShrinkTo
 
 Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillToRight
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img37.jpeg)
-{:.image }
+
 
 
  The below methods are raised when the tabcontroladv is resized.
 
-_Table_ _812__: Methods Table_
+_Table_ _812_: Methods Table
 
 <table>
 <tr>
@@ -999,11 +988,12 @@ Specifies whether a control should automatically resize itself to fit it's conte
 AutoSizeMode</td><td>
 Specifies the mode by which the user interface element automatically resizes itself. The options include:GrowOnly - This is used only when the controls have to be expanded.GrowAndShrink - This is used when the controls have to be expanded and shrunk. </td></tr>
 </table>
-##### TabStyles
+
+### TabStyles
 
 TabControl provides options to customize the TabStyle settings. Styles can be set through TabStyle property.
 
-_Table_ _813__: Property Table_
+_Table_ _813_: Property Table
 
 <table>
 <tr>
@@ -1017,37 +1007,35 @@ Specifies the look and feel of the Tabcontrol. The options include,2D,3D,Workboo
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.tabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode)
 
-
+{% endhighlight %}
 
 Given below are the various TabStyles along with the Office 2007 Style supporting all the three color schemes (Blue, Silver and Black).
 
 ![](Tabs-Package_images/Tabs-Package_img38.png)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img39.jpeg)
-{:.image }
- _Note: We can apply border styles when TabStyle is set to VS2008Style. Refer_ Border for TabControlAdv _topic to know more._
+
+> Note: We can apply border styles when TabStyle is set to VS2008Style. Refer_ Border for TabControlAdv _topic to know more.
 
 Custom Color Schemes
 
 Custom colors can also be applied to the TabControlAdv. Use the below code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1057,13 +1045,11 @@ this.FormTabControl.TabStyle = typeof(TabRendererOffice2007);
 
 this.FormTabControl.Office2007ColorScheme = Office2007Theme.Managed;
 
-
-
 Office2007Colors.ApplyManagedColors(this, Color.Green);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1073,14 +1059,12 @@ Me.FormTabControl.TabStyle = GetType(TabRendererOffice2007)
 
 Me.FormTabControl.Office2007ColorScheme = Office2007Theme.Managed
 
-
-
 Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img40.jpeg)
-{:.image }
+
 
 
 A sample which illustrates CustomTab control and Flat Tabs is available in the below sample location.
@@ -1092,34 +1076,36 @@ A sample which illustrates CustomTab control and Flat Tabs is available in the b
 * VS2010Style is added to the TabStyle’s collection.  
 
 ![](Tabs-Package_images/Tabs-Package_img41.jpeg)
-{:.image }
+
 
 
 Add VS 2010 Style for TabControlAdv, by using the following code. 
 
-[C# .Net]
+{% highlight c# %}
 
   this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererVS2010)
 
+{% endhighlight %}
 
-
-[VB .Net]
+{% highlight c# %}
 
 Me. tabControlAdv1.TabStyle= GetType(Syncfusion.Windows.Forms.Tools.TabRendererVS2010)
 
-#### Appearance Settings
+{% endhighlight %}
+
+## Appearance Settings
 
 The various appearance settings for TabControlAdv are discussed in this section. 
 
 It includes the below topics.
 
-##### Background Settings
+### Background Settings
 
 This section discusses the various Background Settings available in TabControlAdv.
 
 It includes the below topics.
 
-###### BackgroundImage Settings
+#### BackgroundImage Settings
 
 Essential Tabs provide a set of options to customize the TabControlAdv with images. 
 
@@ -1134,12 +1120,12 @@ Images in TabItems
 To set images to the TabItems, add an ImageListControl and populate it with the required images. Then set the ImageIndex property of the TabPage to one of the indices, to display the corresponding image to the left of the text by default.
 
 ![](Tabs-Package_images/Tabs-Package_img42.jpeg)
-{:.image }
+
 
 
 ImageAlignmentR of the TabControlAdv allows you to set the tab's text and image. By default the image appears to the left and the text appears to the right. This setting can be changed using one of the below given options.
 
-_Table_ _814__: Property Table_
+_Table_ _814_: Property Table
 
 <table>
 <tr>
@@ -1157,7 +1143,7 @@ Gets / sets the image for the tabitem.</td></tr>
 </table>
 Code snippets showing the Image Settings
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1165,9 +1151,9 @@ this.tabControlAdv1.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeIma
 
 this.tabPageAdv1.ImageIndex = 0;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1175,17 +1161,19 @@ Me.tabControlAdv1.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeImage
 
 Me.tabPageAdv1.ImageIndex = 0
 
+{% endhighlight %}
+
 Images outside the TabBounds
 
 TabControlAdv can have images set outside the TabBounds.
 
 ![](Tabs-Package_images/Tabs-Package_img43.jpeg)
-{:.image }
+
 
 
 To move the image outside the TabBounds, set the below given properties.
 
-_Table_ _815__: Property Table_
+_Table_ _815_: Property Table
 
 <table>
 <tr>
@@ -1213,7 +1201,7 @@ Background Image for TabPages
 
 The below properties sets the background image for the pages.
 
-_Table_ _816__: Property Table_
+_Table_ _816_: Property Table
 
 <table>
 <tr>
@@ -1231,7 +1219,7 @@ Specifies the layout for the background image when set. The options include:None
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1239,9 +1227,9 @@ this.tabPageAdv1.BackgroundImage = imageList1.Images[0];
 
 this.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Right;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1249,11 +1237,13 @@ Private Me.tabPageAdv1.BackgroundImage = imageList1.Images(0)
 
 Private Me.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Right
 
+{% endhighlight %}
+
 DisableInactivePageImage
 
 The DisableInactivePageImage property specifies the value which determines whether the image should be disabled when the TabPage is not selected. The default value is set to True.
 
-_Table_ _817__: Property Table_
+_Table_ _817_: Property Table
 
 <table>
 <tr>
@@ -1267,27 +1257,26 @@ Gets / sets the value which determines whether the image should be disabled when
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabPageAdv1.DisableInactivePageImage = imageList1.Images[0];
 
+{% endhighlight %}
 
 
-[VB]
-
-
+{% highlight vbnet %}
 
 Private Me.tabPageAdv1.DisableInactivePageImage = imageList1.Images(0)
 
-###### BackColor Settings
+{% endhighlight %}
+
+#### BackColor Settings
 
 BackColor Settings for the TabControl
 
 The look and feel of the tabcontrols can be customized using the below Tab and Panel properties. 
 
-_Table_ _818__: Property Table_
+_Table_ _818_: Property Table
 
 <table>
 <tr>
@@ -1315,7 +1304,7 @@ BackColor Settings for the TabItems
 
 The backcolor of the individual tabitems can be customized by setting the TabBackColor property of the corresponding tabpages.
 
-_Table_ _819__: Property Table_
+_Table_ _819_: Property Table
 
 <table>
 <tr>
@@ -1329,7 +1318,7 @@ Specifies the backcolor for the tabitem.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1343,9 +1332,9 @@ this.tabControlAdv1.BackColor = System.Drawing.Color.Yellow;
 
 this.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1359,29 +1348,29 @@ Private Me.tabControlAdv1.BackColor = System.Drawing.Color.Yellow
 
 Private Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img44.jpeg)
-{:.image }
+
 
 
 ![](Tabs-Package_images/Tabs-Package_img45.png)
-{:.image }
 
 
-##### Foreground Settings
+
+### Foreground Settings
 
 This section discusses the various Foreground Settings available in TabControlAdv.
 
 It includes the below topics.
 
-###### Font Settings
+#### Font Settings
 
 Font Settings for the TabControl
 
 The font settings for the TabControlAdv can be controlled through Font and ActiveTabFont properties.
 
-_Table_ _820__: Property Table_
+_Table_ _820_: Property Table
 
 <table>
 <tr>
@@ -1399,7 +1388,7 @@ Specifies the font for all the tabitems' text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1407,9 +1396,9 @@ this.tabControlAdv1.ActiveTabFont = new System.Drawing.Font("Verdana", 8.25F, Sy
 
 this.tabControlAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1417,9 +1406,11 @@ Private Me.tabControlAdv1.ActiveTabFont = New System.Drawing.Font("Verdana", 8.2
 
 Private Me.tabControlAdv1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
 
+{% endhighlight %}
+
 Font Settings for the TabItems
 
-_Table_ _821__: Property Table_
+_Table_ _821_: Property Table
 
 <table>
 <tr>
@@ -1433,35 +1424,31 @@ Specifies the font for the tabitem.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabPageAdv1.TabFont = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabPageAdv1.TabFont = New System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType((0), Byte))
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img46.jpeg)
-{:.image }
+
 
 
 To set image for tab items, see BackgroundImage Settings.
 
-###### ForeColor Settings
+#### ForeColor Settings
 
 ForeColor Settings for the TabItems
 
 The text color of the tabitems can be customized by setting the TabForeColor property of the corresponding tabpages.
 
-_Table_ _822__: Property Table_
+_Table_ _822_: Property Table
 
 <table>
 <tr>
@@ -1475,223 +1462,188 @@ Specifies the color for the text of the tabitem.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img47.jpeg)
-{:.image }
 
 
-##### Border for TabControlAdv
+
+### Border for TabControlAdv
 
 This section discusses the border settings available for the TabControlAdv when TabStyles is set to VS2008Style. Set TabControlAdv.BorderVisible property to true to display the control border. By default it is false.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.BorderVisible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.BorderVisible = True
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img48.jpeg)
-{:.image }
+
 
 
 We can set width for the border using BorderWidth property. Default value is 5.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.BorderWidth = 10;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.BorderWidth = 10
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img49.jpeg)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img50.jpeg)
-{:.image }
- _Note: These border properties are especially implemented for "VS2008Style"_ TabStyles.
 
-#### Applying Themes
+> Note: These border properties are especially implemented for "VS2008Style"_ TabStyles
+
+## Applying Themes
 
 The TabControlAdv can be themed by enabling the ThemesEnabled property.
 
-> ![](Tabs-Package_images/Tabs-Package_img51.jpeg)
-{:.image }
- _Note: On setting this property, all the tabpages will be themed. This can be disabled or enabled for individual pages using the TabPageAdv.ThemesEnabled property._
+> Note: On setting this property, all the tabpages will be themed. This can be disabled or enabled for individual pages using the TabPageAdv.ThemesEnabled property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img52.jpeg)
-{:.image }
 
 
-##### Interactive Features
+
+### Interactive Features
 
 This section discusses the CloseButton features of TabControlAdv.
 
 It includes the below topics
 
-###### CloseButton Settings
+#### CloseButton Settings
 
 TabControl can have CloseButtons for all the TabPages as in Internet Explorer 7 to close the corresponding TabPages irrespective of the Style set.
 
 ![](Tabs-Package_images/Tabs-Package_img53.jpeg)
-{:.image }
+
 
 
 Close Button on all the TabItems can be made visible by setting the ShowTabCloseButton property to True.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.ShowTabCloseButton = true;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.ShowTabCloseButton = True
 
-
+{% endhighlight %}
 
 Also the Tab Close Button can be restricted to be shown only for Active TabPages. This can be done by setting the ShowCloseButtonForActiveTabOnly property to True.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.ShowCloseButtonForActiveTabOnly = true;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img54.jpeg)
-{:.image }
 
 
-> ![](Tabs-Package_images/Tabs-Package_img55.jpeg)
-{:.image }
- _Note: Close Button can be set for the whole TabControlAdv by using_ TabPrimitives_._
 
-###### ToolTip Support
+> Note: Close Button can be set for the whole TabControlAdv by using_ TabPrimitives_.
+
+#### ToolTip Support
 
 ToolTips for the TabControlAdv can be enabled using the ShowToolTip property and the tooltip text for the tabpages can be specified using the ToolTipText property of individual pages which allows to provide a unique tip for each page.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.ShowToolTips = true;
 
 this.tabPageAdv1.ToolTipText = "Tooltips for tab page 1";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.ShowToolTips = True
 
 Me.tabPageAdv1.ToolTipText = "Tooltips for tab page 1"
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img56.jpeg)
-{:.image }
+
 
 
 SuperTooltip Support
 
 TabControlAdv can now display supertooltip on the tabs when mouse hovered on the tabs.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.ShowSuperToolTips  = true;
 
 this.tabPageAdv1.SuperToolTips  = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Me.tabControlAdv1.ShowSuperToolTips  = True
 
 Me.tabPageAdv1.SuperToolTips  = True
 
-##### Advanced Settings
+{% endhighlight %}
+
+### Advanced Settings
 
 This section discusses the Advanced Settings of TabControlAdv that enhances the appearance and usage of the control.
 
 It includes the below topics.
 
-###### Persistence Support
+#### Persistence Support
 
 The PersistTabState property specifies the value which determines whether the TabState (ActivePage, TabOrder and Text) should be automatically persisted or not. The default value is set to False.
 
-_Table_ _823__: Property Table_
+_Table_ _823_: Property Table
 
 <table>
 <tr>
@@ -1703,7 +1655,8 @@ Description</td></tr>
 PersistTabState</td><td>
 Gets / sets the value which determines whether the TabState should be automatically persisted or not.</td></tr>
 </table>
-_Table_ _824__:Methods Table_
+
+_Table_ _824_:Methods Table
 
 <table>
 <tr>
@@ -1719,7 +1672,8 @@ Persists the TabState (ActivePage, TabOrder and Text).</td></tr>
 TabControlAdv.LoadState()</td><td>
 Gets / sets the previously serialized TabState using the AppStateSerializer object. </td></tr>
 </table>
-###### RTL Support
+
+#### RTL Support
 
 RightToLeft
 
@@ -1727,7 +1681,7 @@ Tabs framework allows the tabitems in the TabControlAdv to be drawn from right t
 
 This property aligns the tabs and the text from right to left which proves to be helpful for the Right-To-Left languages.
 
-_Table_ _825__: Property Table_
+_Table_ _825_: Property Table
 
 <table>
 <tr>
@@ -1740,7 +1694,7 @@ RightToLeft</td><td>
 Specifies to draw the tabs and the text from right to left. The default value is No.</td></tr>
 </table>
 ![](Tabs-Package_images/Tabs-Package_img57.jpeg)
-{:.image }
+
 
 
 Rotating Tabs
@@ -1749,7 +1703,7 @@ RotateTabsWhenRTL property can be used to rotate the tabs of the tabcontroladv t
 
 When the RightToLeft mode is activated and RotateTabsWhenRTLproperty is enabled, tab rotation is allowed.
 
-_Table_ _826__: Property Table_
+_Table_ _826_: Property Table
 
 <table>
 <tr>
@@ -1764,10 +1718,10 @@ Gets / sets the value that decides whether the tabs can be rotated, when the Rig
 
 
 ![](Tabs-Package_images/Tabs-Package_img58.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -1775,9 +1729,9 @@ this.tabControlAdv1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
 this.tabControlAdv1.RotateTabsWhenRTL = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1785,15 +1739,15 @@ Me.tabControlAdv1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 Me.tabControlAdv1.RotateTabsWhenRTL = True
 
-> ![](Tabs-Package_images/Tabs-Package_img59.jpeg)
-{:.image }
- _Note: Only VS2005Style, OneNoteStyle and DockingWhidbeyStyle support RotateTabsWhenRTL property._
+{% endhighlight %}
 
-###### Rotating Text
+> Note: Only VS2005Style, OneNoteStyle and DockingWhidbeyStyle support RotateTabsWhenRTL property.
+
+#### Rotating Text
 
 RotateTextWhenVertical property can be used to rotate the text of the tabitems that are aligned to the left and right of the pages. This displays the tabs horizontally and provides better user readability by displaying the tabitems' text in a horizontal fashion.
 
-_Table_ _827__: Property Table_
+_Table_ _827_: Property Table
 
 <table>
 <tr>
@@ -1808,26 +1762,22 @@ Specifies to rotate the text along with the tab to draw the text horizontally.</
 
 
 ![](Tabs-Package_images/Tabs-Package_img60.jpeg)
-{:.image }
 
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.RotateTextWhenVertical = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.RotateTextWhenVertical = True
 
-###### Scroll Settings
+{% endhighlight %}
+
+#### Scroll Settings
 
 This section discusses about the Scrolling Properties available for the TabControlAdv.
 
@@ -1835,7 +1785,7 @@ ScrollButton
 
 TabControlAdv has the ability to add scrollbuttons on the TabPanel when the number of Tab items increase. These scrollbuttons allow the user to navigate through the tabpages in the front and back. For this, the ShowScroll property of the TabControl must be set.
 
-_Table_ _828__: Property Table_
+_Table_ _828_: Property Table
 
 <table>
 <tr>
@@ -1852,34 +1802,32 @@ Specifies whether to show the scrollbutton.</td></tr>
 By default, scrollbuttons are set to 2D, 3D and Workbook tabstyles.
 
 ![](Tabs-Package_images/Tabs-Package_img61.png)
-{:.image }
+
 
 
 For all other styles, scrollbuttons are set to normal button-look.
 
 ![](Tabs-Package_images/Tabs-Package_img62.png)
-{:.image }
+
 
 
 ScrollButtons can have a VS .NET - TabbedMDI scrollbutton-look, when the VSLikeScrollButton property is set to true.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.ShowScroll = true;
 
 this.tabControlAdv1.VSLikeScrollButton = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.ShowScroll = True
 
 Me.tabControlAdv1.VSLikeScrollButton = True
+
+{% endhighlight %}
 
 ScrollBars
 
@@ -1887,7 +1835,7 @@ ScrollBars can be set for the tabpages for which the AutoScroll property has to 
 
 ScrollIncrement property is used to specify whether to scroll through tabs or pages.
 
-_Table_ _829__: Property Table_
+_Table_ _829_: Property Table
 
 <table>
 <tr>
@@ -1910,14 +1858,12 @@ Specifies the size of the tabpage, which if exceeded, would  enable scrollbars t
 
 
 ![](Tabs-Package_images/Tabs-Package_img63.png)
-{:.image }
 
 
-> ![C:/Users/ApoorvahR/Desktop/Note.png](Tabs-Package_images/Tabs-Package_img64.png)
-{:.image }
-_Note: The TabControlAdv.BringSelectedTabToView() method is used to bring the selected tab to view, if scrolled out of view._
 
-[C#]
+> Note: The TabControlAdv.BringSelectedTabToView() method is used to bring the selected tab to view, if scrolled out of view.
+
+{% highlight c# %}
 
 
 
@@ -1929,9 +1875,9 @@ this.tabPageAdv1.AutoScrollMinSize = new System.Drawing.Size(50, 50);
 
 this.tabControlAdv1.ScrollIncrement = Syncfusion.Windows.Forms.Tools.ScrollIncrement.Page;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1943,11 +1889,13 @@ Private Me.tabPageAdv1.AutoScrollMinSize = New System.Drawing.Size(50, 50)
 
 Private Me.tabControlAdv1.ScrollIncrement = Syncfusion.Windows.Forms.Tools.ScrollIncrement.Page
 
-#### TabControlAdv Events
+{% endhighlight %}
+
+## TabControlAdv Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _830__: Events Table_
+_Table_ _830_: Events Table
 
 <table>
 <tr>
@@ -2035,7 +1983,9 @@ Handled when the tabpage is closed.</td></tr>
 TabPageAdv.Closing</td><td>
 Handled when the tabpage is closing.</td></tr>
 </table>
-##### AfterEdit Event
+
+
+### AfterEdit Event
 
 This event occurs after text editing is complete. It is fired even if no changes are made.
 
@@ -2043,7 +1993,7 @@ Event Data
 
 The Edit Event Handler receives an argument of type EditEventArgs containing data related to this event. The following EditEventArgs property provides information specific to this event.
 
-_Table_ _831__: Member Table_
+_Table_ _831_: Member Table
 
 <table>
 <tr>
@@ -2057,7 +2007,7 @@ Gets the edited text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2075,9 +2025,9 @@ Console.Write("Edit text :" + e.EditText.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2093,7 +2043,9 @@ Console.Write("Edit text :" + e.EditText.ToString())
 
 End Sub
 
-##### BeforeEdit Event
+{% endhighlight %}
+
+### BeforeEdit Event
 
 This event occurs when the text enters into Edit mode.
 
@@ -2101,7 +2053,7 @@ Event Data
 
 This Event Handler receives an argument of type EditEventArgs containing data related to this event. The following EditEventArgs property provides information specific to this event.
 
-_Table_ _832__: Member Table_
+_Table_ _832_: Member Table
 
 <table>
 <tr>
@@ -2115,7 +2067,7 @@ Gets the edited text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2133,9 +2085,9 @@ Console.Write("Edit text :" + e.EditText.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2151,11 +2103,13 @@ Console.Write("Edit text :" + e.EditText.ToString())
 
 End Sub
 
-##### BackgroundImageChanged Event
+{% endhighlight %}
+
+### BackgroundImageChanged Event
 
 This event is fired when the value of the BackgroundImage property is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2169,9 +2123,9 @@ Console.Write("Background Image event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2183,11 +2137,13 @@ Console.Write("Background Image event is raised")
 
 End Sub
 
-##### BackgroundImageLayoutChanged Event
+{% endhighlight %}
+
+### BackgroundImageLayoutChanged Event
 
 This event is fired when the value of the BackgroundImageLayout property is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2201,9 +2157,9 @@ Console.Write("BackgroundImageLayoutChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2215,11 +2171,13 @@ Console.Write("BackgroundImageLayoutChanged event is raised")
 
 End Sub
 
-##### BackColorChanged Event
+{% endhighlight %}
+
+### BackColorChanged Event
 
 This event is fired when the value of the BackColor property is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2247,9 +2205,9 @@ Console.Write("BackColorChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2273,7 +2231,9 @@ Private Sub tabControlAdv1_BackColorChanged(ByVal sender As Object, ByVal e As E
 
 End Sub
 
-##### ControlAdded Event
+{% endhighlight %}
+
+### ControlAdded Event
 
 This event occurs when a new control is added to the TabControlAdv.
 
@@ -2281,7 +2241,7 @@ Event Data
 
 This Event Handler receives an argument of type ControlEventArgs containing data related to this event. The following ControlEventArgs property provides information specific to this event.
 
-_Table_ _833__: Member Table_
+_Table_ _833_: Member Table
 
 <table>
 <tr>
@@ -2295,7 +2255,7 @@ Gets the control object used by this event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2313,9 +2273,9 @@ Console.Write("Control Name :" + e.Control.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2331,7 +2291,9 @@ Console.Write("Control Name :" + e.Control.ToString())
 
 End Sub
 
-##### ControlRemoved Event
+{% endhighlight %}
+
+### ControlRemoved Event
 
 This event occurs when a new control is removed from this TabControlAdv.
 
@@ -2339,7 +2301,7 @@ Event Data
 
 This Event Handler receives an argument of type ControlEventArgs containing data related to this event. The following ControlEventArgs property provides information specific to this event.
 
-_Table_ _834__: Member Table_
+_Table_ _834_: Member Table
 
 <table>
 <tr>
@@ -2351,11 +2313,10 @@ Description</td></tr>
 Control</td><td>
 Gets the control object used by this event.</td></tr>
 </table>
-> ![](Tabs-Package_images/Tabs-Package_img65.jpeg)
-{:.image }
- _Note: The TabControlAdv.RemoveAll() method removes all the TabPages and additional controls from the TabControlAdv._
 
-[C#]
+> Note: The TabControlAdv.RemoveAll() method removes all the TabPages and additional controls from the TabControlAdv.
+
+{% highlight c# %}
 
 
 
@@ -2373,9 +2334,9 @@ Console.Write("Control Name :" + e.Control.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2391,7 +2352,9 @@ Console.Write("Control Name :" + e.Control.ToString())
 
 End Sub
 
-##### DrawItem Event
+{% endhighlight %}
+
+### DrawItem Event
 
 This event is triggered whenever a particular item or area needs to be painted. Below is an example which draws the background and the interior by handling this event.
 
@@ -2399,7 +2362,7 @@ Event Data
 
 This Event Handler receives an argument of type DrawTabEventArgs containing data related to this event. The following DrawTabEventArgs properties provide information specific to this event.
 
-_Table_ _835__: Members Table_
+_Table_ _835_: Members Table
 
 <table>
 <tr>
@@ -2443,11 +2406,10 @@ Gets / sets the state of the item that is being drawn.</td></tr>
 TextBrush</td><td>
 Gets / sets the text brush to draw text in the tabs.</td></tr>
 </table>
-> ![](Tabs-Package_images/Tabs-Package_img66.jpeg)
-{:.image }
- _Note: The TabControlAdv.OnDrawItem() method raises the DrawItem event._  
 
-[C#]
+> Note: The TabControlAdv.OnDrawItem() method raises the DrawItem event.
+
+{% highlight c# %}
 
 
 
@@ -2475,9 +2437,9 @@ break;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2505,11 +2467,13 @@ End Select
 
 End Sub
 
-##### ForeColorChanged Event
+{% endhighlight %}
+
+### ForeColorChanged Event
 
 This event is raised when the value of the ForeColor property is changed on the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2523,9 +2487,9 @@ Console.Write("ForeColor Changed event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2537,11 +2501,13 @@ Console.Write("ForeColor Changed event is raised")
 
 End Sub
 
-##### LabelEditChanged Event
+{% endhighlight %}
+
+### LabelEditChanged Event
 
 This event is triggered when the LabelEdit property is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2565,9 +2531,9 @@ Console.Write("LabelEditChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2589,11 +2555,13 @@ Private Sub tabControlAdv1_LabelEditChanged(ByVal sender As Object, ByVal e As E
 
 End Sub
 
-##### LabelEditTextChanged Event
+{% endhighlight %}
+
+### LabelEditTextChanged Event
 
 This event is triggered when the original text of the tab is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2627,9 +2595,9 @@ Console.Write("LabelEditTextChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2661,11 +2629,13 @@ Private Sub tabControlAdv1_LabelEditTextChanged(ByVal sender As Object, ByVal e 
 
 End Sub
 
-##### PaddingChanged Event
+{% endhighlight %}
+
+### PaddingChanged Event
 
 This event occurs when the Padding property is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2679,9 +2649,9 @@ Console.Write("Padding Changed event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2693,7 +2663,9 @@ Console.Write("Padding Changed event is raised")
 
 End Sub
 
-##### Paint Event
+{% endhighlight %}
+
+### Paint Event
 
 This event occurs when a TabControlAdv needs re-painting.
 
@@ -2701,7 +2673,7 @@ Event Data
 
 This Event Handler receives an argument of type EditEventArgs containing data related to this event. The following EditEventArgs property provides information specific to this event.
 
-_Table_ _836__: Members Table_
+_Table_ _836_: Members Table
 
 <table>
 <tr>
@@ -2719,9 +2691,7 @@ Gets the graphics used to paint.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 private void tabControlAdv1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
 
@@ -2739,11 +2709,9 @@ e.Graphics.FillRectangle(lgb, this.ClientRectangle);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub tabControlAdv1_Paint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
@@ -2757,7 +2725,9 @@ End If
 
 End Sub
 
-##### PreviewKeyDown Event
+{% endhighlight %}
+
+### PreviewKeyDown Event
 
 This event occurs before the KeyDown event when a key is pressed, while focus is on the TabControlAdv.
 
@@ -2765,7 +2735,7 @@ Event Data
 
 This Event Handler receives an argument of type EditEventArgs containing data related to this event. The following EditEventArgs properties provide information specific to this event.
 
-_Table_ _837__: Members Table_
+_Table_ _837_: Members Table
 
 <table>
 <tr>
@@ -2807,9 +2777,7 @@ Gets a value indicating whether SHIFT key was pressed.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 private void tabControlAdv1_PreviewKeyDown(object sender, System.Windows.Forms.PreviewKeyDownEventArgs e)
 
@@ -2825,9 +2793,9 @@ Console.Write("Key code :" + e.KeyCode.ToString() + "\n" + "Key Value :" + e.Key
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2843,11 +2811,13 @@ Console.Write("Key code :" + e.KeyCode.ToString() + "\n" + "Key Value :" + e.Key
 
 End Sub
 
-##### RegionChanged Event
+{% endhighlight %}
+
+### RegionChanged Event
 
 This event is raised when the value of the Region property is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2861,9 +2831,9 @@ Console.Write("Region Changed event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2875,7 +2845,9 @@ Console.Write("Region Changed event is raised")
 
 End Sub
 
-##### TabPrimitiveClick Event
+{% endhighlight %}
+
+### TabPrimitiveClick Event
 
 This event occurs before the NavigationButton click.
 
@@ -2883,7 +2855,7 @@ Event Data
 
 This Event Handler receives an argument of type TabPrimitiveClickEventArgs containing data related to this event. The following TabPrimitiveClickEventArgs properties provide information specific to this event.
 
-_Table_ _838__: Members Table_
+_Table_ _838_: Members Table
 
 <table>
 <tr>
@@ -2901,7 +2873,7 @@ Gets the primitive that gets clicked.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2929,9 +2901,9 @@ Console.Write("TabPrimitiveClick:" + e.TabPrimitive.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2955,11 +2927,13 @@ Console.Write("TabPrimitiveClick:" + e.TabPrimitive.ToString())
 
 End Sub
 
-##### TabsOrderChanged Event
+{% endhighlight %}
+
+### TabsOrderChanged Event
 
 This event occurs when the order of the tabs is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2987,9 +2961,9 @@ Console.Write("TabsOrderChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3011,15 +2985,15 @@ Private Sub tabControlAdv1_TabsOrderChanged(ByVal sender As Object, ByVal e As E
 
 End Sub
 
-> ![](Tabs-Package_images/Tabs-Package_img67.jpeg)
-{:.image }
- _Note: The TabControlAdv.OnTabsOrderChanged() method raises the OnTabsOrderChanged event._
+{% endhighlight %}
 
-##### TextChanged Event
+> Note: The TabControlAdv.OnTabsOrderChanged() method raises the OnTabsOrderChanged event.
+
+### TextChanged Event
 
 This event occurs when value of the Text property is changed in the TabControlAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3033,9 +3007,9 @@ Console.Write("TextChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3047,11 +3021,13 @@ Console.Write("TextChanged event is raised")
 
 End Sub
 
-##### Closed Event
+{% endhighlight %}
+
+### Closed Event
 
 The TabPageAdv.Closed event is raised when a TapPage is closed using close button.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3067,9 +3043,9 @@ private void tabPageAdv1_Closed(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3083,17 +3059,17 @@ Me.tabControlAdv1.TabPages.Add(Me.tabPageAdv5)
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img68.jpeg)
-{:.image }
 
 
-##### Closing Event
+
+### Closing Event
 
 The TabPageAdv.Closing event is raised when a Tabpage is closing.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3111,11 +3087,9 @@ private void tabPageAdv1_Closing(object sender, TabPageAdvClosingEventArgs args)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub tabPageAdv1_Closing(ByVal sender As Object, ByVal args As TabPageAdvClosingEventArgs)
 
@@ -3129,21 +3103,21 @@ Private Sub tabPageAdv1_Closing(ByVal sender As Object, ByVal args As TabPageAdv
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img69.jpeg)
-{:.image }
 
 
-#### Frequently Asked Questions
+
+## Frequently Asked Questions
 
 This section will help you become more familiar in using the Tabs Package.
 
-##### How to create MultilineText in TabPages' ToolTipText
+### How to create MultilineText in TabPages' ToolTipText
 
 Setting the ShowToolTipText property of TabControlAdv to 'True' will wrap the text when using the new line character (\n) in the ToolTipText property of TabPageAdv. The new line character (\n) is not supported at design-time.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3157,9 +3131,9 @@ this.tabPageAdv1.ToolTipText="Tab\nPageAdv1";
 
 this.tabPageAdv1.ToolTipText="Tab\nPage\nAdv2";
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3173,17 +3147,17 @@ Me.tabPageAdv1.ToolTipText="Tab" & Constants.vbLf & "PagAdv1"
 
 Me.tabPageAdv2.ToolTipText="Tab" & Constants.vbLf & "Page" & Constants.vbLf & "Adv2"
 
-##### How to Customize TabRendering
+{% endhighlight %}
+
+### How to Customize TabRendering
 
 The simplest way to customize TabDrawing is to handle the DrawItem event. A departure from the normal is the TabControlAdv's ability to let you selectively draw portions of the tab. For this purpose, TabDrawing is classified into three portions:Background,Border and Interior (text and image). The event args lets you delegate drawing of one or more portions of the tab to the default drawing code while custom drawing the other portions of the tab. 
 
-> ![](Tabs-Package_images/Tabs-Package_img70.jpeg)
-{:.image }
- _Note: The following code provides a sample discussion of the Custom TabControls._ 
+> Note: The following code provides a sample discussion of the Custom TabControls.
 
 * The following code sample demonstrates how to create Yahoo Messenger-like tabs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3215,9 +3189,9 @@ drawItemInfo.DrawBorders();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3243,13 +3217,13 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 * The following code sample demonstrates how to create MSN Messenger-like tabs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3317,9 +3291,9 @@ g.FillPath(new SolidBrush(Color.FromArgb(128, this.tabControlExt1.ActiveTabColor
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3375,17 +3349,17 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img71.jpeg)
-{:.image }
 
 
-##### How to Display TabStrip when there are no TabPages
+
+### How to Display TabStrip when there are no TabPages
 
 The TabStrip can be made visible even if there are no TabPages added. The TabControlAdv has a ReserveTabSpace property which makes the tabstrip visible when set to True and ReservedSpace property that is used to specify the height of the tabstrip when the above bool property is enabled.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3399,9 +3373,9 @@ this.tabControlAdv1.ReserveTabSpace = true;
 
 this.tabControlAdv1.ReservedSpace = 25;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3415,10 +3389,10 @@ Me.tabControlAdv1.ReserveTabSpace =  True
 
 Me.tabControlAdv1.ReservedSpace = 25
 
-
+{% endhighlight %}
 
 ![](Tabs-Package_images/Tabs-Package_img72.jpeg)
-{:.image }
+
 
 
 ##### How to draw Gradient Tabs
@@ -3427,7 +3401,7 @@ You can handle the DrawItem Event of TabControlAdv and then set the gradient by 
 
 This can be done programmatically using the code snippet given below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3545,11 +3519,13 @@ private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Too
 
 }
 
-##### How to dynamically create a Form and add it to a Tab
+{% endhighlight %}
+
+### How to dynamically create a Form and add it to a Tab
 
 Here is a code sample which demonstrates how you could dynamically create a Form and add that form to a new Tab.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3573,9 +3549,9 @@ frm2.Visible = true;
 
 frm2.Dock = DockStyle.Fill;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3601,53 +3577,49 @@ frm2.Visible = True
 
 frm2.Dock = DockStyle.Fill
 
-##### How to hide the Focus Rectangle which gets displayed on the selected Tab
+{% endhighlight %}
+
+### How to hide the Focus Rectangle which gets displayed on the selected Tab
 
 The focus rectangle can be hidden by setting the FocusOnTabClick property to False. This can be done programmatically using the code snippet given below.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.FocusOnTabClick = false;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.FocusOnTabClick = False
 
-> ![](Tabs-Package_images/Tabs-Package_img73.jpeg)
-{:.image }
- _Note: The TabControlAdv.GetTabRect() method is used to get the Rectangle region of a Tab in client co-ordinates, given it's TabIndex._
+{% endhighlight %}
+
+> Note: The TabControlAdv.GetTabRect() method is used to get the Rectangle region of a Tab in client co-ordinates, given it's TabIndex.
 
 ##### How to highlight the TabPage text using HotTrack property
 
 The TabPage text can be highlighted using the HotTrack property of the TabControlAdv when the mouse hovers over it. This can be enabled programmatically using the code snippet given below.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabControlAdv1.HotTrack = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabControlAdv1.HotTrack = True
 
-##### How to prevent Tabs from getting realigned when in Multiline mode
+{% endhighlight %}
+
+### How to prevent Tabs from getting realigned when in Multiline mode
 
 We will be making this a property based feature in a future version. For now, derive from our base TabControlExt class and do the following. 
 
 This code will not move the selected Tab to the front row when in Multiline mode.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3707,9 +3679,9 @@ protected override void ValidateSelectedTabsPosition()
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3755,11 +3727,13 @@ End Sub 'ValidateSelectedTabsPosition
 
 End Class 'MyMultilineTabPanelRenderer ’ Don’t call the base class method which will try to move the selected tab.
 
-##### How to prevent the Focus Rectangle from being drawn in the Tabs
+{% endhighlight %}
+
+### How to prevent the Focus Rectangle from being drawn in the Tabs
 
 You can easily do this by handling the DrawItem event, adjusting the DrawTabEventArgs and delegating drawing to the default drawing logic.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3783,9 +3757,9 @@ drawItemInfo.DrawBorders();
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3805,11 +3779,13 @@ drawItemInfo.DrawBorders()
 
 End Sub
 
-##### How to programmatically select a Tab
+{% endhighlight %}
+
+### How to programmatically select a Tab
 
 The following code snippet illustrates the ways to select a Tab programmatically.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3823,9 +3799,9 @@ or
 
 this.tabControlAdv1.SelectedIndex= 1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3843,5 +3819,5 @@ Me.tabControlAdv1.SelectedIndex = 1
 
 End Sub
 
-
+{% endhighlight %}
 

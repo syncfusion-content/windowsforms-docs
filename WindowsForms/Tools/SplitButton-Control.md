@@ -2,28 +2,29 @@
 layout: post
 title: SplitButton-Control
 description: splitbutton control
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## SplitButton Control
+# SplitButton Control
 
 New SplitButton control allows you to create a drop-down button-like interface that is a combination of a regular button and a drop-down list. You can use this control to create a button with options. Once the required option is selected the specified button command will be executed. 
 
-IT Scenarios
+### IT Scenarios
 
 You can use this control when you need a single control with a multiple options. For example you can use this control to create a button to set the font and list the available font family in the drop-down list. 
 
-Feature Summary
+### Feature Summary
 
 * Button Mode – Provides Normal and Toggle mode
 * Customization Support -  Customize the appearance of the SplitButton.
-#### Getting Started
 
-##### Adding SplitButton to an Application
+## Getting Started
 
-###### Adding through Visual Studio 
+### Adding SplitButton to an Application
+
+#### Adding through Visual Studio 
 
 
 The following are steps to add the SplitButton control to an Application through Visual Studio:
@@ -31,36 +32,35 @@ The following are steps to add the SplitButton control to an Application through
 1. Create a new Windows Form application in Visual Studio. 
 2. Drag SplitButton from the Toolbox tab to the designer.
 
-
-
-![](SplitButton-Control_images/SplitButton-Control_img1.png)
-{:.image }
-
+   ![](SplitButton-Control_images/SplitButton-Control_img1.png)
 
 3. SplitButton control is added.
 4. Now customize the properties of SplitButton in the Properties Window. 
-######  Through Code
+
+####  Through Code
 
 
 Following are the steps to add the SplitButton control to an application through code:
 
 1. Include the Tools Windows namespace as given in the following code:
 
-[C#]
+   ~~~ cs
 
      using Syncfusion.Windows.Forms.Tools;
+	 
+   ~~~
+   {:.prettyprint }
 
-
-
-[VB]
+   ~~~ vbnet
 
     Imports Syncfusion.Windows.Forms.Tools
 
-
+   ~~~
+   {:.prettyprint }
 
 2. Create an instance of  SplitButton  control and add it to the form as given in the following code:
 
- [C#]
+   ~~~ cs
 
      Syncfusion.Windows.Forms.Tools.SplitButton splitButton;
 
@@ -68,27 +68,31 @@ Following are the steps to add the SplitButton control to an application through
 
      this.Controls.Add(splitButton);
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB]
+   ~~~ vbnet
 
       Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton
 
       Me.splitButton = New Syncfusion.Windows.Forms.Tools.SplitButton()
 
-Me.Controls.Add(splitButton)
+      Me.Controls.Add(splitButton)
 
-##### Appearance and Structure of the Control
+   ~~~
+   {:.prettyprint }
+
+### Appearance and Structure of the Control
 
 ![](SplitButton-Control_images/SplitButton-Control_img2.png)
-{:.image }
 
 
-#### Properties and Events Tables for SplitButton Control
 
-###### Properties
+## Properties and Events Tables for SplitButton Control
 
-_Table_ _801__: Property Table_
+### Properties
+
+_Table_ _801_: Property Table
 
 <table>
 <tr>
@@ -120,9 +124,10 @@ Normal</td><td>
 ToolStripItemCollection</td><td>
 Adding Items to Drop-Down</td></tr>
 </table>
-###### Events
 
-_Table_ _802__: Events Table_
+### Events
+
+_Table_ _802_: Events Table
 
 <table>
 <tr>
@@ -154,39 +159,38 @@ EventArgs</th><th>
 NA </th><th>
 NA </th></tr>
 </table>
-#### Concepts and Features
 
-##### Button Caption
+## Concepts and Features
+
+### Button Caption
 
 This feature enables you to name your SplitButton as needed.
 
-Adding Caption to the SplitButton  
+#### Adding Caption to the SplitButton  
 
 You can add a button caption to the SplitButton or set the selected item as the caption.  
 
 The following code illustrates how to add a caption for the button:
 
-[C#]
+{% highlight c# %}
 
 splitButton1.Text = "Click";   
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 splitButton1.Text = "Click"
 
-
+{% endhighlight %}
 
 ![](SplitButton-Control_images/SplitButton-Control_img3.png)
-{:.image }
+
 
 
 The following code illustrates how to set the selected item from the dropdown as the caption:
 
-[C#]
+{% highlight c# %}
 
  private void splitButton1_DropDowItemClicked(object sender, ToolStripItemClickedEventArgs e)
 
@@ -196,9 +200,9 @@ The following code illustrates how to set the selected item from the dropdown as
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Private Sub splitButton1_DropDowItemClicked(ByVal sender As Object, ByVal e As ToolStripItemClickedEventArgs)
 
@@ -207,64 +211,64 @@ splitButton1.Text = e.ClickedItem.Text
 End Sub
 
 
-
+{% endhighlight %}
 
 
 ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/captionitem.png](SplitButton-Control_images/SplitButton-Control_img4.png)
-{:.image }
 
 
-##### Adding Item to Drop-down
+
+### Adding Item to Drop-down
 
 This feature enables you to add items to the SplitButton drop-down list. 
 
 You can add item using the _DropDownItems_ property. The following code illustrates how to add items to the drop-down list:
 
-[C#]
+{% highlight c# %}
 
             this.splitButton1.DropDownItems.Add("Item 1");
 
             this.splitButton1.DropDownItems.Add("Item 2");
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.splitButton1.DropDownItems.Add("Item 1")
 
 Me.splitButton1.DropDownItems.Add("Item 2")
 
-
+{% endhighlight %}
 
 
 
 ![](SplitButton-Control_images/SplitButton-Control_img5.png)
-{:.image }
 
 
-Removing Item from Drop-Down List
+
+### Removing Item from Drop-Down List
 
 You can also remove the added items if required. The following code illustrates how to remove items form drop-down list:
 
-[C#]
+{% highlight c# %}
 
             this.splitButton1.DropDownItems.RemoveAt(1);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.splitButton1.DropDownItems.RemoveAt(1);
 
-
+{% endhighlight %}
 
 ![](SplitButton-Control_images/SplitButton-Control_img6.png)
-{:.image }
 
 
-##### Button Mode
+
+### Button Mode
 
 This feature enables you to set the button in normal or toggle mode.
 
@@ -277,29 +281,29 @@ You can set the button mode using the _ButtonMode_ property.
 
 The following code illustrates how to set the button in normal mode:
 
-[C#]
+{% highlight c# %}
 
 this.splitButton1.ButtonMode = Syncfusion.Windows.Forms.Tools.ButtonMode.Normal;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.splitButton1.ButtonMode = Syncfusion.Windows.Forms.Tools.ButtonMode.Normal
 
-
+{% endhighlight %}
 
 The following code illustrates how to set the button in toggle mode:
 
-[C#]
+{% highlight c# %}
 
 this.splitButton1.ButtonMode = Syncfusion.Windows.Forms.Tools.ButtonMode.Toggle;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -311,31 +315,35 @@ You can set the button state using the _IsButtonChecked_ property. When this is 
 
 The following code illustrates how to set the button in checked state:
 
-[C#]
+{% endhighlight %}
+
+{% highlight c# %}
 
                 splitButton1.isButtonChecked = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
                 splitButton1.isButtonChecked = True
 
-
+{% endhighlight %}
 
 The following code illustrates how to set the button in unchecked state:
 
- [C#]
+ {% highlight c# %}
 
                 splitButton1.isButtonChecked = false;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
                 splitButton1.isButtonChecked = False
+				
+{% endhighlight %}
 
-##### Appearance Customization
+### Appearance Customization
 
 * Customization of SplitButton
 
@@ -345,29 +353,19 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
 
 
-[C#]
+{% highlight c# %}
 
   public class CustomRenderer : ISplitButtonRenderer
 
         {
 
             private SplitButton splitButton;
-
-
-
+			
             #region ISplitButtonRenderer Members
-
-
-
-
-
-
 
              public void DrawText(PaintEventArgs e, string text, Font font, Color color, int totalwidth, int totalheight, int splitwidth)
 
             {
-
-
 
                 SolidBrush brush = new SolidBrush(color);
 
@@ -394,15 +392,6 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
                 brush.Dispose();
 
             }
-
-
-
-
-
-
-
-
-
 
 
             public void DrawBorder(PaintEventArgs e, int width, int height, int splitwidth, Color outerColor, Color innerColor, Color arrowOuter, Color arrowInner, Color buttonInner)
@@ -478,9 +467,6 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
                 e.Graphics.DrawLine(outercolor, new Point(1, 0), new Point(1, 1));
 
 
-
-
-
                 buttoninner.Dispose();
 
                 innercolor.Dispose();
@@ -491,18 +477,7 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
                 outercolor.Dispose();
 
-
-
             }
-
-
-
-
-
-
-
-
-
 
 
             public void DrawArrow(int left, int top, int width, int height, PaintEventArgs e, Color ArrowColor)
@@ -517,19 +492,11 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
                 e.Graphics.DrawImage(arrowImage, imageRect);
 
-
-
             }
-
-
 
             #endregion
 
-
-
             #region ISplitButtonRenderer Members
-
-
 
             public SplitButton SplitButton
 
@@ -559,25 +526,15 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
         }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
   Public Class CustomRenderer
 
 Implements ISplitButtonRenderer
 
 Private splitButton_Renamed As SplitButton
-
-
-
-
-
-
-
-
-
-
 
 Public Sub DrawText(ByVal e As PaintEventArgs, ByVal text As String, ByVal font As Font, ByVal color As Color, ByVal totalwidth As Integer, ByVal totalheight As Integer, ByVal splitwidth As Integer)
 
@@ -608,15 +565,6 @@ e.Graphics.DrawImage(img, imageRect)
 brush.Dispose()
 
 End Sub
-
-
-
-
-
-
-
-
-
 
 
 Public Sub DrawBorder(ByVal e As PaintEventArgs, ByVal width As Integer, ByVal height As Integer, ByVal splitwidth As Integer, ByVal outerColor As Color, ByVal innerColor As Color, ByVal arrowOuter As Color, ByVal arrowInner As Color, ByVal buttonInner As Color)
@@ -687,10 +635,6 @@ e.Graphics.DrawLine(outercolor_Renamed, New Point(0, 1), New Point(0, height - 2
 
 e.Graphics.DrawLine(outercolor_Renamed, New Point(1, 0), New Point(1, 1))
 
-
-
-
-
 buttoninner_Renamed.Dispose()
 
 innercolor_Renamed.Dispose()
@@ -704,16 +648,6 @@ outercolor_Renamed.Dispose()
 
 
 End Sub
-
-
-
-
-
-
-
-
-
-
 
 Public Sub DrawArrow(ByVal left As Integer, ByVal top As Integer, ByVal width As Integer, ByVal height As Integer, ByVal e As PaintEventArgs, ByVal ArrowColor As Color)
 
@@ -733,18 +667,7 @@ End Sub
 
 #End Region
 
-
-
-
-
-
-
-
-
-
-
 #Region "ISplitButtonRenderer Members"
-
 
 
 Public Property SplitButton() As SplitButton
@@ -765,16 +688,14 @@ End Property
 
 #End Region
 
-
-
   End Class
 
-
+{% endhighlight %}
 
 
 
 ![](SplitButton-Control_images/SplitButton-Control_img7.png)
-{:.image }
+
 
 
 * Customizing the SplitButton DropDownItems appearance
@@ -785,7 +706,7 @@ You can customize the appearance of the SplitButton DropDown Items by using the 
 
 Refer the following code examples.
 
-C#
+{% highlight c# %}
 
 //To assign custom renderer to DropDownRenderer of the SplitButton.
 
@@ -887,9 +808,9 @@ public class CustomRender : ToolStripProfessionalRenderer
 
 }
 
+{% endhighlight %}
 
-
-VB
+{% highlight vbnet %}
 
 'To assign custom renderer to DropDownRenderer of the SplitButton.
 
@@ -983,25 +904,23 @@ End Sub
 
 End Class
 
+{% endhighlight %}
 
-
-![C:/Users/giftline.jebamani/Desktop/img.jpg](SplitButton-Control_images/SplitButton-Control_img8.jpeg)
-{:.image }
-_Note: The CustomRenderer class can be inherited from any type of System.Windows.Forms.ToolStripRenderer class._
+> Note: The CustomRenderer class can be inherited from any type of System.Windows.Forms.ToolStripRenderer class.
 
 
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](SplitButton-Control_images/SplitButton-Control_img9.png)
-{:.image }
+
 
 
 
 
 ![](SplitButton-Control_images/SplitButton-Control_img10.png)
-{:.image }
 
 
 
 
-_Figure_ _1386__: After customizing the DropDown of the SplitButton._
+
+_Figure_ _1386_: After customizing the DropDown of the SplitButton.
 

@@ -2,22 +2,22 @@
 layout: post
 title: TileLayout-Control-for-Windows-Forms
 description: tilelayout control for windows forms
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+Tools
 documentation: ug
 ---
 
-## TileLayout Control for Windows Forms
+# TileLayout Control for Windows Forms
 
 Essential Tools for Windows Forms enables you to use the TileLayout control in an application. This feature has similar look as that of the Windows 8 Tiles.  
 
-Use Case Scenarios
+### Use Case Scenarios
 
 This feature can be used in any kind of application that is used to showcase items.
 
-Properties
+### Properties
 
-_Table_ _852__: Property Table_
+_Table_ _852_: Property Table
 
 <table>
 <tr>
@@ -41,88 +41,93 @@ ShowItemPreview</td><td>
 Shows item preview.</td><td>
 Bool</td></tr>
 </table>
-#### Adding TileLayout to an Application
 
-Through Designer 
+## Adding TileLayout to an Application
+
+### Through Designer 
 
 To create TileLayout through designer:
 
 1. Drag and drop a TileLayout object from the controls toolbox into your form.
 
-![C:/Users/aruna/Desktop/Pic5.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img1.png)
-{:.image }
+   ![C:/Users/aruna/Desktop/Pic5.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img1.png)
+
 
 
 2. Add LayoutGroup to the control in the designer as shown below.
 
-![C:/Users/aruna/Desktop/Pic3.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img2.png)
-{:.image }
+   ![C:/Users/aruna/Desktop/Pic3.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img2.png)
 
 
-![C:/Users/aruna/Desktop/PIC1.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img3.png)
-{:.image }
+
+   ![C:/Users/aruna/Desktop/PIC1.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img3.png)
+
 
 
 3. Add ImageStreamer to the control in the designer as shown below.
 
-![C:/Users/aruna/Desktop/Pic6.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img4.png)
-{:.image }
+   ![C:/Users/aruna/Desktop/Pic6.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img4.png)
+
 
 
 4. Change ImageStreamer’s back color.
 
-![C:/Users/aruna/Desktop/Pic7.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img5.png)
-{:.image }
+   ![C:/Users/aruna/Desktop/Pic7.png](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img5.png)
 
 
-![C:/Users/diana/Desktop/AddImagesInImageStreamer.jpg](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img6.jpeg)
-{:.image }
+
+   ![C:/Users/diana/Desktop/AddImagesInImageStreamer.jpg](TileLayout-Control-for-Windows-Forms_images/TileLayout-Control-for-Windows-Forms_img6.jpeg)
 
 
-Through Code
+
+### Through Code
 
  To create TileLayout programmatically: 
 
 1. Add the Syncfusion assembly Tools.Windows to your application. 
 2. Add the namespace Syncfusion.Windows.Forms.Tools.
 
-[C#] 
+   ~~~ cs
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET] 
+		Imports Syncfusion.Windows.Forms.Tools
 
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 3.  Declare the TileLayout,LayoutGroup and ImageStreamer.
 
-[C#]
+    ~~~ cs
 
-private Syncfusion.Windows.Forms.Tools.TileLayout tileLayout1;
+		private Syncfusion.Windows.Forms.Tools.TileLayout tileLayout1;
 
-private Syncfusion.Windows.Forms.Tools.LayoutGroup layoutGroup1;
+		private Syncfusion.Windows.Forms.Tools.LayoutGroup layoutGroup1;
 
-private Syncfusion.Windows.Forms.Tools.ImageStreamer imageStreamer1;
+		private Syncfusion.Windows.Forms.Tools.ImageStreamer imageStreamer1;
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
+		private tileLayout1 As Syncfusion.Windows.Forms.Tools.TileLayout
 
-private tileLayout1 As Syncfusion.Windows.Forms.Tools.TileLayout
+		private layoutGroup1 As Syncfusion.Windows.Forms.Tools.LayoutGroup
 
-private layoutGroup1 As Syncfusion.Windows.Forms.Tools.LayoutGroup
+		private imageStreamer1 As Syncfusion.Windows.Forms.Tools.ImageStreamer
 
-private imageStreamer1 As Syncfusion.Windows.Forms.Tools.ImageStreamer
-
-
+    ~~~
+    {:.prettyprint }
 
 The following code creates a TileLayout and LayoutGroup.
 
-[C#]
+{% highlight c# %}
 
  private void Form1_Load(object sender, System.EventArgs e)
 
@@ -200,9 +205,9 @@ The following code creates a TileLayout and LayoutGroup.
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -270,9 +275,11 @@ Me.imageStreamer1.Text = "imageStreamer1"
 
 End Sub
 
+{% endhighlight %}
+
  Properties
 
-_Table_ _853__: Property Table_
+_Table_ _853_: Property Table
 
 <table>
 <tr>

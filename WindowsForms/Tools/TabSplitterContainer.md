@@ -2,20 +2,20 @@
 layout: post
 title: TabSplitterContainer
 description: tabsplittercontainer
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## TabSplitterContainer
+# TabSplitterContainer
 
 Essential Tools TabSplitterContainer control is a VS 2008 control which can have multiple tab pages grouped under primary or secondary pages, in a container, separated by a splitter. The splitter comes with advanced options like swapping of splitter pages, adjustable splitter position, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter. This user guide will easily guide you with the features of TabSplitterContainer control.
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img1.jpeg)
-{:.image }
 
 
-#### Features Overview
+
+## Features Overview
 
 The features of the TabSplitterContainer control are listed below.
 
@@ -29,18 +29,18 @@ See Also
 
 Concepts and Features
 
-#### Creating TabSplitterContainer Control
+## Creating TabSplitterContainer Control
 
 TabSplitterContainer control can be easily created through designer by just dragging and dropping onto the form. 
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img2.jpeg)
-{:.image }
+
 
 
 We can add primary or secondary pages using the below properties.
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img3.jpeg)
-{:.image }
+
 
 
 It can be created programmatically using the below steps.
@@ -49,160 +49,159 @@ It can be created programmatically using the below steps.
 2. Add Syncfusion's Tools.Windows and Shared.Base assemblies to the application.
 3. Add the Syncfusion.Windows.Forms.Tools namespace.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+   ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools 
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools 
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Create and initialize the TabSplitterContainer control and TabSplitterPages.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.TabSplitterPage tabSplitterPage1;
+		private Syncfusion.Windows.Forms.Tools.TabSplitterPage tabSplitterPage1;
 
-private Syncfusion.Windows.Forms.Tools.TabSplitterPage tabSplitterPage2;
+		private Syncfusion.Windows.Forms.Tools.TabSplitterPage tabSplitterPage2;
 
-private Syncfusion.Windows.Forms.Tools.TabSplitterContainer tabSplitterContainer1;
-
-
-
-this.tabSplitterPage1 = new Syncfusion.Windows.Forms.Tools.TabSplitterPage();
-
-this.tabSplitterPage2 = new Syncfusion.Windows.Forms.Tools.TabSplitterPage();
-
-this.tabSplitterContainer1 = new Syncfusion.Windows.Forms.Tools.TabSplitterContainer();
+		private Syncfusion.Windows.Forms.Tools.TabSplitterContainer tabSplitterContainer1;
 
 
 
-[VB.NET]
+		this.tabSplitterPage1 = new Syncfusion.Windows.Forms.Tools.TabSplitterPage();
+
+		this.tabSplitterPage2 = new Syncfusion.Windows.Forms.Tools.TabSplitterPage();
+
+		this.tabSplitterContainer1 = new Syncfusion.Windows.Forms.Tools.TabSplitterContainer();
+
+   ~~~
+   {:.prettyprint }
+ 
+   ~~~ vbnet
+
+
+		Private tabSplitterPage1 As Syncfusion.Windows.Forms.Tools.TabSplitterPage
+
+		Private tabSplitterPage2 As Syncfusion.Windows.Forms.Tools.TabSplitterPage
+
+		Private tabSplitterContainer1 As Syncfusion.Windows.Forms.Tools.TabSplitterContainer
 
 
 
-Private tabSplitterPage1 As Syncfusion.Windows.Forms.Tools.TabSplitterPage
+		Me.tabSplitterPage1 = New Syncfusion.Windows.Forms.Tools.TabSplitterPage() 
 
-Private tabSplitterPage2 As Syncfusion.Windows.Forms.Tools.TabSplitterPage
+		Me.tabSplitterPage2 = New Syncfusion.Windows.Forms.Tools.TabSplitterPage() 
 
-Private tabSplitterContainer1 As Syncfusion.Windows.Forms.Tools.TabSplitterContainer
+		Me.tabSplitterContainer1 = New Syncfusion.Windows.Forms.Tools.TabSplitterContainer()
 
-
-
-Me.tabSplitterPage1 = New Syncfusion.Windows.Forms.Tools.TabSplitterPage() 
-
-Me.tabSplitterPage2 = New Syncfusion.Windows.Forms.Tools.TabSplitterPage() 
-
-Me.tabSplitterContainer1 = New Syncfusion.Windows.Forms.Tools.TabSplitterContainer()
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Add Splitter pages to the TabSplitterContainer.
 
-[C#]
+   ~~~ cs
 
 
 
-this.tabSplitterContainer1.PrimaryPages.AddRange(new Syncfusion.Windows.Forms.Tools.TabSplitterPage[] {this.tabSplitterPage1});
+		this.tabSplitterContainer1.PrimaryPages.AddRange(new Syncfusion.Windows.Forms.Tools.TabSplitterPage[] {this.tabSplitterPage1});
 
-this.tabSplitterContainer1.SecondaryPages.AddRange(new Syncfusion.Windows.Forms.Tools.TabSplitterPage[] {this.tabSplitterPage2});
+		this.tabSplitterContainer1.SecondaryPages.AddRange(new Syncfusion.Windows.Forms.Tools.TabSplitterPage[] {this.tabSplitterPage2});
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.tabSplitterContainer1.PrimaryPages.AddRange(New Syncfusion.Windows.Forms.Tools.TabSplitterPage() {Me.tabSplitterPage1}) 
-
-Me.tabSplitterContainer1.SecondaryPages.AddRange(New Syncfusion.Windows.Forms.Tools.TabSplitterPage() {Me.tabSplitterPage2}) 
+   ~~~ vbnet
 
 
+
+		Me.tabSplitterContainer1.PrimaryPages.AddRange(New Syncfusion.Windows.Forms.Tools.TabSplitterPage() {Me.tabSplitterPage1}) 
+
+		Me.tabSplitterContainer1.SecondaryPages.AddRange(New Syncfusion.Windows.Forms.Tools.TabSplitterPage() {Me.tabSplitterPage2}) 
+
+   ~~~
+   {:.prettyprint }
 
 6. Set the size and location of the control.
 
-[C#]
+   ~~~ cs
 
 
 
-this.tabSplitterContainer2.Location = new System.Drawing.Point(195, 29);
+		this.tabSplitterContainer2.Location = new System.Drawing.Point(195, 29);
 
-this.tabSplitterContainer2.Name = "tabSplitterContainer1";
+		this.tabSplitterContainer2.Name = "tabSplitterContainer1";
 
-this.tabSplitterContainer2.Size = new System.Drawing.Size(300, 250);
+		this.tabSplitterContainer2.Size = new System.Drawing.Size(300, 250);
 
-this.tabSplitterContainer2.SplitterPosition = 50;
+		this.tabSplitterContainer2.SplitterPosition = 50;
 
-this.tabSplitterPage3.Text = "Code";
+		this.tabSplitterPage3.Text = "Code";
 
-this.tabSplitterPage4.Text = "Design";
+		this.tabSplitterPage4.Text = "Design";
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Me.tabSplitterContainer2.Location = New System.Drawing.Point(195, 29) 
 
+		Me.tabSplitterContainer2.Name = "tabSplitterContainer1" 
 
+		Me.tabSplitterContainer2.Size = New System.Drawing.Size(300, 250) 
 
-Me.tabSplitterContainer2.Location = New System.Drawing.Point(195, 29) 
+		Me.tabSplitterContainer2.SplitterPosition = 50 
 
-Me.tabSplitterContainer2.Name = "tabSplitterContainer1" 
+		Me.tabSplitterPage3.Text = "Code" 
 
-Me.tabSplitterContainer2.Size = New System.Drawing.Size(300, 250) 
+		Me.tabSplitterPage4.Text = "Design"
 
-Me.tabSplitterContainer2.SplitterPosition = 50 
-
-Me.tabSplitterPage3.Text = "Code" 
-
-Me.tabSplitterPage4.Text = "Design"
-
-
+   ~~~
+   {:.prettyprint }
 
 7. Add the control to the form.
 
-[C#]
+   ~~~ cs
 
+		this.Controls.Add(this.tabSplitterContainer2);
 
+   ~~~
+   {:.prettyprint }
 
-this.Controls.Add(this.tabSplitterContainer2);
+   ~~~ vbnet
 
+		Me.Controls.Add(Me.tabSplitterContainer2)
 
-
-[VB.NET]
-
-
-
-Me.Controls.Add(Me.tabSplitterContainer2)
-
-
+   ~~~
+   {:.prettyprint }
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img4.jpeg)
-{:.image }
+
 
 
 See Also
 
 Concepts and Features
 
-#### Concepts and Features
+## Concepts and Features
 
 This section will walk you through the core concepts of the TabSplitterContainer control. It includes the below topics.
 
-##### Splitter Components
+### Splitter Components
 
 The splitter in the TabSplitterContainer control has in-built options for changing the orientation of the splitter and also to collapse or expand the splitter panes. Those options are illustrated below.
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img5.jpeg)
-{:.image }
+
 
 
 * Primary Page - We can add primary pages using PrimaryPages property. It invokes TabSplitterPage Collection Editor and lets you add primary pages.
@@ -211,12 +210,13 @@ The splitter in the TabSplitterContainer control has in-built options for changi
 * Vertical Orientation - Sets the orientation of the splitter to be vertical.
 * Horizontal Orientation - Sets the orientation of the splitter to be horizontal.
 * Expand / Collapse Button - Clicking this button can collapse the secondary pane and place at the bottom of the control. Clicking this button again will expand the pane and place in its original position. 
-###### SplitterPage
+
+#### SplitterPage
 
 
 The properties which customizes the Splitter page are as follows.
 
-_Table_ _851__: Property Table_
+_Table_ _851_: Property Table
 
 <table>
 <tr>
@@ -258,7 +258,7 @@ Sets the visibility of the tab.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -276,9 +276,9 @@ this.tabSplitterPage1.Tooltip = "Designer";
 
 this.tabSplitterPage1.Visible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -296,89 +296,82 @@ Me.tabSplitterPage1.Tooltip = "Designer"
 
 Me.tabSplitterPage1.Visible = True 
 
+{% endhighlight %}
 
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img6.jpeg)
-{:.image }
 
 
-##### Splitter Position
+
+### Splitter Position
 
 The splitter position can be adjusted manually within the TabSplitterContainer control at design time and also at run time. To specify the position programmatically, use the SplitterPosition property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabSplitterContainer1.SplitterPosition = 95;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabSplitterContainer1.SplitterPosition = 95
 
-
+{% endhighlight %}
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img7.jpeg)
-{:.image }
 
 
-##### Orientation
+
+### Orientation
 
 Orientation of the splitter in the TabSplitterContainer control is set using Orientation property. Default value is horizontal.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 
-
+{% endhighlight %}
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img8.jpeg)
-{:.image }
 
 
-##### Customizable Splitter Back Color 
+
+### Customizable Splitter Back Color 
 
 TabSplitterContainer now supports customizing the back color of the Splitter to match the theme of the application using the newly added property SplitterBackColor. Earlier this was not made possible.
 
-[C#]
+{% highlight c# %}
 
 // Set Custom Color to The TabSplitterContainer.
 
 this.tabSplitterContainer1.SplitterBackColor = Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Set Custom Color to The TabSplitterContainer.
 
 Me.tabSplitterContainer1.SplitterBackColor = Color.Blue
 
-#### Events
+{% endhighlight %}
+
+## Events
 
 This section comprises the below events:
 
-##### PrimaryPages.SelectedIndexChanged Event
+### PrimaryPages.SelectedIndexChanged Event
 
 This event is handled whenever primary page selection is changed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabSplitterContainer1.PrimaryPages.SelectedIndex = 1;
 
@@ -392,9 +385,9 @@ private void PrimaryPages_SelectedIndexChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -408,11 +401,13 @@ Private Sub PrimaryPages_SelectedIndexChanged(ByVal sender As Object, ByVal e As
 
 End Sub
 
-##### SecondaryPages.SelectedIndexChanged Event
+{% endhighlight %}
+
+### SecondaryPages.SelectedIndexChanged Event
 
 This event is handled whenever secondary page selection is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -428,9 +423,9 @@ private void SecondaryPages_SelectedIndexChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -444,31 +439,29 @@ Private Sub SecondaryPages_SelectedIndexChanged(ByVal sender As Object, ByVal e 
 
 End Sub
 
-#### Frequently Asked Questions
+{% endhighlight %}
+
+## Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-##### How to collapse the splitter pane programmatically
+### How to collapse the splitter pane programmatically
 
 This can be done programmatically using Collapsed property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.tabSplitterContainer1.Collapsed = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.tabSplitterContainer1.Collapsed = True
 
-
+{% endhighlight %}
 
 ![](TabSplitterContainer_images/TabSplitterContainer_img9.jpeg)
-{:.image }
+
 
 

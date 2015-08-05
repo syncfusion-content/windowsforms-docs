@@ -2,8 +2,8 @@
 layout: post
 title: BannerTextProviderComponent
 description: bannertextprovidercomponent
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 

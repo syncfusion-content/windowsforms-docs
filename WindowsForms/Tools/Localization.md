@@ -2,12 +2,12 @@
 layout: post
 title: Localization
 description: localization
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 Localization is the process of customizing the application to culture-specific resources such as language translation and information formatting for date, time and currency.
 
@@ -15,35 +15,38 @@ Syncfusion components support localizing and have their own neutral resources. T
 
 Localization is made easy with the latest version of Essential Studio (Volume - 2 2011). Earlier versions of the products have a different localization procedure (for the documentation refer [v8.4.0.10](http://help.syncfusion.com/ug_84/User%20Interface/Windows%20Forms/Tools/default.htm?turl=Documents/localizationoftools.htm)). Syncfusion components will continue to support both the procedures.
 
-Use Case Scenarios
+### Use Case Scenarios
 
 Localization helps in transforming the application to be culture-specific. This enables you to customize the application according to the requirements of global customers.
 
-Adding Localization to an Application 
+### Adding Localization to an Application 
 
 Follow the below procedure to localize Quick Access ToolBar Customization dialog of RibbonControlAdv:
 
 1. Include the required namespaces at the beginning of the source file.
 
-[C#]
+   ~~~ cs
 
-using Syncfusion.Windows.Forms;
+		using Syncfusion.Windows.Forms;
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		Imports Syncfusion.Windows.Forms
 
-Imports Syncfusion.Windows.Forms
+		Imports Syncfusion.Windows.Forms.Tools
 
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
+   
 
 2. Create a class that implements ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
 
-[C#]
+   ~~~ cs
 
     class Localizer : ILocalizationProvider
 
@@ -61,41 +64,41 @@ Imports Syncfusion.Windows.Forms.Tools
 
         }
 
-
-
         #endregion
 
     }
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		Friend Class Localizer
 
-Friend Class Localizer
+		Implements ILocalizationProvider
 
-Implements ILocalizationProvider
-
-#Region "ILocalizationProvider Members"
-
-
-
-Public Function GetLocalizedString(ByVal culture As CultureInfo, ByVal name As String) As String
-
-Return String.Empty
-
-End Function
+		#Region "ILocalizationProvider Members"
 
 
 
-#End Region
+		Public Function GetLocalizedString(ByVal culture As CultureInfo, ByVal name As String) As String
 
-End Class
+		Return String.Empty
+
+		End Function
 
 
+
+		#End Region
+
+		End Class
+
+   ~~~
+   {:.prettyprint }
 
 3. Return the localized versions of the strings corresponding to  the string identifiers.
 
-[C#]
+   ~~~ cs
 
       switch (name)
 
@@ -113,182 +116,185 @@ End Class
 
 
 
-[VB]
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
-Select Case name
+		Select Case name
 
-Case ToolsResourceIdentifiers.QuickAccessCustomizeCaption
+		Case ToolsResourceIdentifiers.QuickAccessCustomizeCaption
 
-Return "Personnaliser Quick Access ToolBar"
+		Return "Personnaliser Quick Access ToolBar"
 
-Case Else
+		Case Else
 
-Return String.Empty
+		Return String.Empty
 
-End Select
+		End Select
 
-
+   ~~~
+   {:.prettyprint }
 
 4. String identfiers are defined in the ResourceIdentifiers and the ToolsResourceIdentifiers classes in Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies respectively.
 
-[C#/VB]
+   ~~~ cs
 
-Syncfusion.Windows.Forms.Tools.ToolsResourceIdentifiers
+		Syncfusion.Windows.Forms.Tools.ToolsResourceIdentifiers
 
-Syncfusion.Windows.Forms.ResourceIdentifiers
+		Syncfusion.Windows.Forms.ResourceIdentifiers
 
-
+   ~~~
+   {:.prettyprint }
 
 5. Leave empty string for the rest of the identifiers that arenot involed in the localization. These identifiers will be loaded with default value.
 6. Assign this instance to the Provider property of the LocalizationProvider class, before the InitializeComponent call in the constructor of the Application.
 
-[C#]
+   ~~~ cs
 
-LocalizationProvider.Provider = new Localizer();
+		LocalizationProvider.Provider = new Localizer();
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		LocalizationProvider.Provider = New Localizer()
 
-LocalizationProvider.Provider = New Localizer()
-
-
+   ~~~
+   {:.prettyprint }
 
 7. You will get the following code snippet as the result.
 
-[C#]
+   ~~~ cs
 
-  class Localizer : ILocalizationProvider
+	  class Localizer : ILocalizationProvider
 
-    {
+		{
 
-        #region ILocalizationProvider Members
+			#region ILocalizationProvider Members
 
-        public string GetLocalizedString(CultureInfo culture, string name)
+			public string GetLocalizedString(CultureInfo culture, string name)
 
-        {
+			{
 
-            switch (name)
+				switch (name)
 
-            {
+				{
 
-                case ToolsResourceIdentifiers.QuickAccessCustomizeCaption:
+					case ToolsResourceIdentifiers.QuickAccessCustomizeCaption:
 
-                    return "Personnaliser Quick Access ToolBar";
+						return "Personnaliser Quick Access ToolBar";
 
-                case ToolsResourceIdentifiers.QuickAccessDialogCommands:
+					case ToolsResourceIdentifiers.QuickAccessDialogCommands:
 
-                    return "Choisir les commandes:";
+						return "Choisir les commandes:";
 
-                case ToolsResourceIdentifiers.QuickAccessDialogButtonAdd:
+					case ToolsResourceIdentifiers.QuickAccessDialogButtonAdd:
 
-                    return "Ajouter>>";
+						return "Ajouter>>";
 
-                case ToolsResourceIdentifiers.QuickAccessDialogButtonRemove:
+					case ToolsResourceIdentifiers.QuickAccessDialogButtonRemove:
 
-                    return "<<Supprimer";
+						return "<<Supprimer";
 
-                case ToolsResourceIdentifiers.QuickAccessDialogButtonReset:
+					case ToolsResourceIdentifiers.QuickAccessDialogButtonReset:
 
-                    return "Reset";
+						return "Reset";
 
-                case ToolsResourceIdentifiers.QuickAccessDialogButtonOk:
+					case ToolsResourceIdentifiers.QuickAccessDialogButtonOk:
 
-                    return "OK";
+						return "OK";
 
-                case ToolsResourceIdentifiers.QuickAccessDialogButtonCancel:
+					case ToolsResourceIdentifiers.QuickAccessDialogButtonCancel:
 
-                    return "Annuler";
+						return "Annuler";
 
-                default:
+					default:
 
-                    return string.Empty;
+						return string.Empty;
 
-            }
+				}
 
-        }
+			}
 
-        #endregion
+			#endregion
 
-    }
+		}
 
-// Place this line before the InitalizeComponent call in constructor.
+		// Place this line before the InitalizeComponent call in constructor.
 
-LocalizationProvider.Provider = new Localizer();
+		LocalizationProvider.Provider = new Localizer();
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		Friend Class Localizer
 
+		Implements ILocalizationProvider
 
-[VB]
+		#Region "ILocalizationProvider Members"
 
-Friend Class Localizer
+		Public Function GetLocalizedString(ByVal culture As CultureInfo, ByVal name As String) As String
 
-Implements ILocalizationProvider
+		Select Case name
 
-#Region "ILocalizationProvider Members"
+		Case ToolsResourceIdentifiers.QuickAccessCustomizeCaption
 
-Public Function GetLocalizedString(ByVal culture As CultureInfo, ByVal name As String) As String
+		Return "Personnaliser Quick Access ToolBar"
 
-Select Case name
+		Case ToolsResourceIdentifiers.QuickAccessDialogCommands
 
-Case ToolsResourceIdentifiers.QuickAccessCustomizeCaption
+		Return "Choisir les commandes:"
 
-Return "Personnaliser Quick Access ToolBar"
+		Case ToolsResourceIdentifiers.QuickAccessDialogButtonAdd
 
-Case ToolsResourceIdentifiers.QuickAccessDialogCommands
+		Return "Ajouter>>"
 
-Return "Choisir les commandes:"
+		Case ToolsResourceIdentifiers.QuickAccessDialogButtonRemove
 
-Case ToolsResourceIdentifiers.QuickAccessDialogButtonAdd
+		Return "<<Supprimer"
 
-Return "Ajouter>>"
+		Case ToolsResourceIdentifiers.QuickAccessDialogButtonReset
 
-Case ToolsResourceIdentifiers.QuickAccessDialogButtonRemove
+		Return "Reset"
 
-Return "<<Supprimer"
+		Case ToolsResourceIdentifiers.QuickAccessDialogButtonOk
 
-Case ToolsResourceIdentifiers.QuickAccessDialogButtonReset
+		Return "OK"
 
-Return "Reset"
+		Case ToolsResourceIdentifiers.QuickAccessDialogButtonCancel
 
-Case ToolsResourceIdentifiers.QuickAccessDialogButtonOk
+		Return "Annuler"
 
-Return "OK"
+		Case Else
 
-Case ToolsResourceIdentifiers.QuickAccessDialogButtonCancel
+		Return String.Empty
 
-Return "Annuler"
+		End Select
 
-Case Else
+		End Function
 
-Return String.Empty
+		#End Region
 
-End Select
+		End Class
 
-End Function
+		' Place this line before the InitalizeComponent call in constructor.
 
-#End Region
+		LocalizationProvider.Provider = New Localizer()
 
-End Class
-
-' Place this line before the InitalizeComponent call in constructor.
-
-LocalizationProvider.Provider = New Localizer()
-
-
-
-
+   ~~~
+   {:.prettyprint }
 
 ![Localization.png](Localization_images/Localization_img1.png)
-{:.image }
 
 
-> ![C:/Users/ApoorvahR/Desktop/Note.png](Localization_images/Localization_img2.png)
-{:.image }
- _Note: This localization procedure is applicable only for the UI’s specific to the Syncfusion.Tools.Windows and Syncfusion.Shared.Base assemblies._ 
 
-> _*The German translation in the illustration was done with the help of Google translate._
+> Note: This localization procedure is applicable only for the UI’s specific to the Syncfusion.Tools.Windows and Syncfusion.Shared.Base assemblies.
+>
+> *The German translation in the illustration was done with the help of Google translate.
 
 Sample Link
 
@@ -296,44 +302,36 @@ To view samples:
 
 1. Open the Windows Sample Browser
 2. Navigate to Tools Samples > Localization Samples > New Localization Procedure
-#### Using ILocalization Provider
 
-##### Use Case Scenarios
+## Using ILocalization Provider
 
+### Use Case Scenarios
 
 Localization helps in transforming the application to be culture-specific. This enables you to customize the application according to the requirements of global customers. 
 
-##### Adding Localization to an Application
+### Adding Localization to an Application
 
 Use the following procedure to localize the FindDialogBox in the Edit control:
 
 1. Include the required namespaces at the beginning of the source file.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms;
 
+		using Syncfusion.Windows.Forms.Edit; 
 
-using Syncfusion.Windows.Forms;
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms
 
-using Syncfusion.Windows.Forms.Edit; 
+		Imports Syncfusion.Windows.Forms.Edit
 
-
-
-
-
-[VB]
-
-
-
-Imports Syncfusion.Windows.Forms
-
-
-
-Imports Syncfusion.Windows.Forms.Edit
-
-
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -341,196 +339,199 @@ Imports Syncfusion.Windows.Forms.Edit
 3. Return the localized versions of the strings corresponding to the string identifiers.
 4. String identifiers are defined in the ResourceIdentifiers and the EditResourceIdentifiers classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
-[C#/VB]
+   ~~~ cs
 
-Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers Syncfusion.Windows.Forms.ResourceIdentifiers
+		Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers Syncfusion.Windows.Forms.ResourceIdentifiers
 
-
+   ~~~
+   {:.prettyprint }
 
 5. Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers will be loaded with a default value.
 6. Assign this instance to the Provider property of the LocalizationProvider class, before the InitializeComponent call in the constructor of the application.
 
-[C#]
+   ~~~ cs
 
-LocalizationProvider.Provider = new Localizer();
+		LocalizationProvider.Provider = new Localizer();
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		LocalizationProvider.Provider = New Localizer()
 
-LocalizationProvider.Provider = New Localizer()
-
-
+   ~~~
+   {:.prettyprint }
 
 7. The following code sample is the result:
 
-[C#]
+   ~~~ cs
 
-public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
+		public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
 
-        {
+				{
 
-            switch (name)
+					switch (name)
 
-            {
+					{
 
-                #region Find Dialog
+						#region Find Dialog
 
-                case Localizer.EditResourceIdentifiers.FDbtnClose:
+						case Localizer.EditResourceIdentifiers.FDbtnClose:
 
-                    return "schließen";
+							return "schließen";
 
-                case Localizer.EditResourceIdentifiers.FDbtnFind:
+						case Localizer.EditResourceIdentifiers.FDbtnFind:
 
-                    return "finden";
+							return "finden";
 
-                case Localizer.EditResourceIdentifiers.FDbtnMarkAll:
+						case Localizer.EditResourceIdentifiers.FDbtnMarkAll:
 
-                    return "markieren Sie alle";               
+							return "markieren Sie alle";               
 
-                case Localizer.EditResourceIdentifiers.FDchkCase:
+						case Localizer.EditResourceIdentifiers.FDchkCase:
 
-                    return "übereinstimmen Fall";                
+							return "übereinstimmen Fall";                
 
-                case Localizer.EditResourceIdentifiers.FDchkHidden:
+						case Localizer.EditResourceIdentifiers.FDchkHidden:
 
-                    return "Suche hidden";
+							return "Suche hidden";
 
-                case Localizer.EditResourceIdentifiers.FDchkRegular:
+						case Localizer.EditResourceIdentifiers.FDchkRegular:
 
-                    return "Suche regelmäßige";
+							return "Suche regelmäßige";
 
-                case Localizer.EditResourceIdentifiers.FDchkUp:
+						case Localizer.EditResourceIdentifiers.FDchkUp:
 
-                    return "Suche Up";
+							return "Suche Up";
 
-                case Localizer.EditResourceIdentifiers.FDchkWholeWord:
+						case Localizer.EditResourceIdentifiers.FDchkWholeWord:
 
-                    return "Ganzes Wort";
+							return "Ganzes Wort";
 
-                case Localizer.EditResourceIdentifiers.FDchkWrap:
+						case Localizer.EditResourceIdentifiers.FDchkWrap:
 
-                    return "Zeilenumbruch";
+							return "Zeilenumbruch";
 
-                case Localizer.EditResourceIdentifiers.FDGroupTitle:
+						case Localizer.EditResourceIdentifiers.FDGroupTitle:
 
-                    return "Suchen";
+							return "Suchen";
 
-                case Localizer.EditResourceIdentifiers.FDMain:
+						case Localizer.EditResourceIdentifiers.FDMain:
 
-                    return "Startseite";
+							return "Startseite";
 
-                case Localizer.EditResourceIdentifiers.FDrdbDocument:
+						case Localizer.EditResourceIdentifiers.FDrdbDocument:
 
-                    return "Document";
+							return "Document";
 
-                case Localizer.EditResourceIdentifiers.FDrdbSelection:
+						case Localizer.EditResourceIdentifiers.FDrdbSelection:
 
-                    return "Auswahl";
+							return "Auswahl";
 
-                case Localizer.EditResourceIdentifiers.FDTitle:
+						case Localizer.EditResourceIdentifiers.FDTitle:
 
-                    return "Kommentar";
+							return "Kommentar";
 
-                #endregion              
+						#endregion              
 
 
 
-                default:
+						default:
 
-                    return string.Empty;
+							return string.Empty;
 
-            }
+					}
 
-        }
+				}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String
 
+				Select Case name
 
+					'#Region "Find Dialog"
 
-Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String
+					Case Localizer.EditResourceIdentifiers.FDbtnClose
 
-        Select Case name
+						Return "schließen"
 
-            '#Region "Find Dialog"
+					Case Localizer.EditResourceIdentifiers.FDbtnFind
 
-            Case Localizer.EditResourceIdentifiers.FDbtnClose
+						Return "finden"
 
-                Return "schließen"
+					Case Localizer.EditResourceIdentifiers.FDbtnMarkAll
 
-            Case Localizer.EditResourceIdentifiers.FDbtnFind
+						Return "markieren Sie alle"
 
-                Return "finden"
+					Case Localizer.EditResourceIdentifiers.FDchkCase
 
-            Case Localizer.EditResourceIdentifiers.FDbtnMarkAll
+						Return "übereinstimmen Fall"
 
-                Return "markieren Sie alle"
+					Case Localizer.EditResourceIdentifiers.FDchkHidden
 
-            Case Localizer.EditResourceIdentifiers.FDchkCase
+						Return "Suche hidden"
 
-                Return "übereinstimmen Fall"
+					Case Localizer.EditResourceIdentifiers.FDchkRegular
 
-            Case Localizer.EditResourceIdentifiers.FDchkHidden
+						Return "Suche regelmäßige"
 
-                Return "Suche hidden"
+					Case Localizer.EditResourceIdentifiers.FDchkUp
 
-            Case Localizer.EditResourceIdentifiers.FDchkRegular
+						Return "Suche Up"
 
-                Return "Suche regelmäßige"
+					Case Localizer.EditResourceIdentifiers.FDchkWholeWord
 
-            Case Localizer.EditResourceIdentifiers.FDchkUp
+						Return "Ganzes Wort"
 
-                Return "Suche Up"
+					Case Localizer.EditResourceIdentifiers.FDchkWrap
 
-            Case Localizer.EditResourceIdentifiers.FDchkWholeWord
+						Return "Zeilenumbruch"
 
-                Return "Ganzes Wort"
+					Case Localizer.EditResourceIdentifiers.FDGroupTitle
 
-            Case Localizer.EditResourceIdentifiers.FDchkWrap
+						Return "Suchen"
 
-                Return "Zeilenumbruch"
+					Case Localizer.EditResourceIdentifiers.FDMain
 
-            Case Localizer.EditResourceIdentifiers.FDGroupTitle
+						Return "Startseite"
 
-                Return "Suchen"
+					Case Localizer.EditResourceIdentifiers.FDrdbDocument
 
-            Case Localizer.EditResourceIdentifiers.FDMain
+						Return "Document"
 
-                Return "Startseite"
+					Case Localizer.EditResourceIdentifiers.FDrdbSelection
 
-            Case Localizer.EditResourceIdentifiers.FDrdbDocument
+						Return "Auswahl"
 
-                Return "Document"
+					Case Localizer.EditResourceIdentifiers.FDTitle
 
-            Case Localizer.EditResourceIdentifiers.FDrdbSelection
+						Return "Kommentar"
 
-                Return "Auswahl"
+					Case Else
 
-            Case Localizer.EditResourceIdentifiers.FDTitle
+						'#End Region
 
-                Return "Kommentar"
 
-            Case Else
 
-                '#End Region
+						Return String.Empty
 
+				End Select
 
+			End Function
 
-                Return String.Empty
-
-        End Select
-
-    End Function
-
-
+   ~~~
+   {:.prettyprint }
 
 ![](Localization_images/Localization_img3.png)
-{:.image }
 
 
-#### Using Satellite Assemblies
+
+## Using Satellite Assemblies
 
 Localization is a key feature for providing solutions to global customers. This is true for a desktop applications as well as Syncfusion components. Resources are important for localizing an application; they contain the necessary settings for different languages and cultures. 
 
@@ -544,7 +545,8 @@ There are three types of cultures:
 * Invariant: An invariant culture is always culture-insensitive, primarily used as a “default” culture. You can specify the invariant culture by name using an empty string (""). It is associated with the English language but not with any particular country or region.
 * Neutral: A neutral culture is a culture that is associated with a language but not with a country or region. 
 * Specific: A specific culture is a culture that is associated with a language and a country or region (e.g., “fr-CA” and “fr-FR”). For example, "fr" is a neutral culture and "fr-FR" is a specific culture. Note that "zh-CHS" (simplified Chinese) and "zh-CHT" (traditional Chinese) are neutral cultures.
-##### Steps to Localize Syncfusion Components
+
+### Steps to Localize Syncfusion Components
 
 
 Syncfusion components have their own neutral resources, and these resources can be localized as per the needs of the customer. Now, we will examine the steps for localizing the Syncfusion Menu Package.
@@ -563,19 +565,19 @@ C:\Program Files\Syncfusion\Essential Studio\&lt;version&gt;\Base\Shared.Base\Lo
 2. Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows you to construct resource files containing bitmaps, icons, and strings.
 3. Compile the source code using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.
 
-![](Localization_images/Localization_img4.png)
-{:.image }
+   ![](Localization_images/Localization_img4.png)
 
 
-![](Localization_images/Localization_img5.png)
-{:.image }
+
+   ![](Localization_images/Localization_img5.png)
+
 
 
 4. Using the Resource Editor, open the resource file named Syncfusion.Windows.Forms.Tools.SR.resources present in the NeutralResources folder. The previous figure shows all string resources displayed in the tool.
 5. Now the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language will be used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ende”.
 
-![](Localization_images/Localization_img6.png)
-{:.image }
+   ![](Localization_images/Localization_img6.png)
+
 
 
 6. Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool can’t be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.
@@ -583,41 +585,55 @@ C:\Program Files\Syncfusion\Essential Studio\&lt;version&gt;\Base\Shared.Base\Lo
 
 
 
-![](Localization_images/Localization_img7.png)
-{:.image }
+   ![](Localization_images/Localization_img7.png)
+
 
 
 8. Click File > Save As and select the culture to be localized (in this case, German-Germany). Now a new resource file with the name Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources will be added to the source path.
 9. Repeat the process for other resources and save it. Now in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the sf.publicsnk file from the Localization folder.
 
-Tools.Windows
+   Tools.Windows
+   
+   ~~~ text
 
-al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources /embed:Syncfusion.Windows.Forms.MdiWindowDialog.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.SR.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.XPMenus.BarCustomizationDialog.de-DE.resources
+		al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources /embed:Syncfusion.Windows.Forms.MdiWindowDialog.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.SR.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.XPMenus.BarCustomizationDialog.de-DE.resources
 
-Shared.Base
+   ~~~
+   {:.prettyprint }
+   
+   Shared.Base
+   
+   ~~~ text
 
-al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE
+		al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE
 
-
+   ~~~
+   {:.prettyprint }
 
 10. The version you specify for these DLLs in the _al_ command should be based on the SatelliteContractVersionAttribute setting in the product AssemblyInfo. This also means that when a new version of the product is released (with a newer assembly version), you will have to recreate (adding new resources, if any and if necessary) and recompile your resource DLLs with a new version (if the SatelliteContractVersionAttribute has changed). 
 11. On successful execution, an assembly file named Syncfusion.Tools.Windows.resources.dll will be created.
 12. Finally, mark this satellite DLL for verification skipping (since it’s not signed with the same strong-name as the product assembly), as follows:
 
-sn –Vr Syncfusion.Tools.Windows.resources.dll
+    ~~~ text
+	
+		sn –Vr Syncfusion.Tools.Windows.resources.dll
 
-
+    ~~~
+    {:.prettyprint }
 
 13. Drop this DLL into an appropriate sub-directory under your .EXE’s directory (bin\Debug\), based on the naming conventions enforced in .NET. You should put it in the de-DE sub-directory if this DLL contains resources from the German (Germany) culture.
 14. Finally, you should make your application fetch the German resources during run time. The following sample code does that. To change the UI culture of the current thread, add this code in the Forms constructor before the InitializeComponent().
+    
+	~~~ text
+	
+		Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
 
-  Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
-
-
+    ~~~
+   {:.prettyprint }
 
 15. Now run your application containing the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog will appear in German, as shown in the following figure:
 
 ![](Localization_images/Localization_img8.png)
-{:.image }
+
 
 

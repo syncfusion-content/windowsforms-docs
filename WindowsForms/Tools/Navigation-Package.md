@@ -2,17 +2,17 @@
 layout: post
 title: Navigation-Package
 description: navigation package
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Navigation Package
+# Navigation Package
 
 Navigation package is a combination of controls designed to help navigation through various types of UI tasks, tools and more. The controls can be combined together to mimic popular user interface trends. Using Navigation package you can create toolboxes, categorized lists and view switchers.
 
 ![](Navigation-Package_images/Navigation-Package_img1.jpeg)
-{:.image }
+
 
 
 The following are the navigation controls that are primarily used for implementing command lists, where each command is represented by an image and / or text. 
@@ -28,7 +28,8 @@ General features of Navigation Package
 * Used in any Operating system.
 * Provides look and feel.
 * Simplifies navigation options.
-#### GroupBar
+
+## GroupBar
 
 
 The GroupBar and GroupView controls abide by the container-client model and are designed to work in perfect synchronization with each other.
@@ -38,23 +39,23 @@ The GroupBar class implements a tab-type container control similar to the Window
 The GroupBar may be used in combination with the GroupView control to implement clones of some of the popular UI components such as the Microsoft OutlookBar and the Visual Studio .NET toolbox window.
 
 ![](Navigation-Package_images/Navigation-Package_img2.jpeg)
-{:.image }
+
 
 
 The Essential ToolsGroupBar control displays multiple groups or tabs, each of which represents a client control that is hosted within the GroupBar. 
 
 The primary function of the GroupBar is to serve as a container for a group of functionally related controls while allowing only one selected control to be visible at any given time. Groups are implemented as instances of the GroupBarItem class and the collection can be accessed through the GroupBar.GroupBarItems property. 
 
-##### Features Overview
+### Features Overview
 
 This section discusses the features of the GroupBar control of the Navigation Package.
 
-Features
+#### Features
 
 * Custom Colors can be applied for GroupBar control. See Visual Styles topic.
 
 ![](Navigation-Package_images/Navigation-Package_img3.jpeg)
-{:.image }
+
 
 
 * Appearance and Behavior Settings
@@ -89,8 +90,7 @@ Ability to display the selected GroupBar Item's image on the header of the Stack
 
 * Nested GroupBar
 
-          A GroupBar Control can be added as a Child control to another GroupBar Control.
-
+A GroupBar Control can be added as a Child control to another GroupBar Control.
 In fact any .NET control can be hosted in a GroupBar for maximum flexibility. Thus the GroupBar control can be deployed as a Generic Control Container. 
 
 * Visual Styles
@@ -105,12 +105,12 @@ Using the ThemesEnabled property, themed appearance can be provided for the Grou
 
 Serialization allows the user to save and restore the State information of the GroupBar Items when a GroupBar is in the Stacked Mode. 
 
-##### Control Overview
+### Control Overview
 
 The various sections of GroupBar and their description are given below.
 
 ![](Navigation-Package_images/Navigation-Package_img4.jpeg)
-{:.image }
+
 
 
 GroupBar Items
@@ -123,11 +123,11 @@ GroupBar Item Client Area
 
 This is the area in which all the contents of the GroupBar Items are displayed. Borders can be set for the client area and the color of the borders can also be set.
 
-##### Creating GroupBar
+### Creating GroupBar
 
 This tutorial will show you how a GroupBar is created through the following ways.
 
-###### Through Designer
+#### Through Designer
 
 The GroupBar's designer allows you to add new groups using it's design-time verbs or the property browser, while adding a Child control to a group involves merely activating the particular group and dropping the control onto the GroupBar. 
 
@@ -136,29 +136,29 @@ To create a GroupBar through designer,
 * Drag-and-drop a GroupBar object from the controls toolbox onto your form.
 
 ![](Navigation-Package_images/Navigation-Package_img5.jpeg)
-{:.image }
+
 
 
 * To add a GroupBar Item using design-time verbs, follow the procedure given below.
 * To add a GroupBar Item using the design-time verbs, right-click on the GroupBar and select the Add Group option. This adds a GroupBar Item to the GroupBar control.
 
 ![](Navigation-Package_images/Navigation-Package_img6.jpeg)
-{:.image }
+
 
 
 * To add a GroupBar Item using the property browser, follow the procedure given below.
 * In the Properties window, select the GroupBarItems property. The GroupBarItem Collection Editor will be opened. Click Add, a GroupBar Item will be added to the GroupBar control.
 
 ![](Navigation-Package_images/Navigation-Package_img7.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img8.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img9.jpeg)
-{:.image }
+
 
 
 You can also add child controls to the GroupBar. Refer Integrating Child Controls to the GroupBarItem topic, for information on this topic.
@@ -167,129 +167,128 @@ See also
 
 Concepts and Features
 
-###### Through Code
+#### Through Code
 
 The following code shows how to create a GroupBar control and add GroupBar Items to the control.
 
 1. Include the required namespace.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
+		
+   ~~~
+   {:.prettyprint }		
 
+   ~~~ vbnet
 
-using Syncfusion.Windows.Forms.Tools;
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create instances of GroupBar and GroupBar Items.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.GroupBar groupBar1;
+		private Syncfusion.Windows.Forms.Tools.GroupBar groupBar1;
 
-private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem1;
+		private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem1;
 
-private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem2;
+		private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem2;
 
-private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem3;
-
-
-
-this.groupBar1 = new GroupBar();
-
-this.groupBarItem1 = new GroupBarItem();
-
-this.groupBarItem2 = new GroupBarItem();
-
-this.groupBarItem3 = new GroupBarItem();
+		private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem3;
 
 
 
-[VB.NET]
+		this.groupBar1 = new GroupBar();
+
+		this.groupBarItem1 = new GroupBarItem();
+
+		this.groupBarItem2 = new GroupBarItem();
+
+		this.groupBarItem3 = new GroupBarItem();
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ cs
+
+		Private groupBar1 As Syncfusion.Windows.Forms.Tools.GroupBar
+
+		Private groupBarItem1 As Syncfusion.Windows.Forms.Tools.GroupBarItem
+
+		Private groupBarItem2 As Syncfusion.Windows.Forms.Tools.GroupBarItem
+
+		Private groupBarItem3 As Syncfusion.Windows.Forms.Tools.GroupBarItem
 
 
+		Me.groupBar1 = New GroupBar()
 
-Private groupBar1 As Syncfusion.Windows.Forms.Tools.GroupBar
+		Me.groupBarItem1 = New GroupBarItem()
 
-Private groupBarItem1 As Syncfusion.Windows.Forms.Tools.GroupBarItem
+		Me.groupBarItem2 = New GroupBarItem()
 
-Private groupBarItem2 As Syncfusion.Windows.Forms.Tools.GroupBarItem
+		Me.groupBarItem3 = New GroupBarItem()
 
-Private groupBarItem3 As Syncfusion.Windows.Forms.Tools.GroupBarItem
-
-
-
-Me.groupBar1 = New GroupBar()
-
-Me.groupBarItem1 = New GroupBarItem()
-
-Me.groupBarItem2 = New GroupBarItem()
-
-Me.groupBarItem3 = New GroupBarItem()
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Add GroupBar Items to the GroupBar and specify the size of the GroupBar. Finally add a GroupBar control to the Form.
 
-[C#]
+   ~~~ cs
 
 
 
-this.groupBar1.GroupBarItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupBarItem[]{this.groupBarItem1, this.groupBarItem2, this.groupBarItem3});
+		this.groupBar1.GroupBarItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupBarItem[]{this.groupBarItem1, this.groupBarItem2, this.groupBarItem3});
 
-this.groupBar1.Size = new System.Drawing.Size(192, 120);
+		this.groupBar1.Size = new System.Drawing.Size(192, 120);
 
-this.Controls.Add(this.groupBar1);
+		this.Controls.Add(this.groupBar1);
 
-this.groupBarItem1.Text = "GroupBarItem0";
+		this.groupBarItem1.Text = "GroupBarItem0";
 
-this.groupBarItem2.Text = "GroupBarItem1";
+		this.groupBarItem2.Text = "GroupBarItem1";
 
-this.groupBarItem3.Text = "GroupBarItem2";
+		this.groupBarItem3.Text = "GroupBarItem2";
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.groupBar1.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarItem(){Me.groupBarItem1, Me.groupBarItem2, Me.groupBarItem3})
-
-Me.groupBar1.Size = New System.Drawing.Size(192, 120)
-
-Me.Controls.Add(Me.groupBar1)
-
-Me.groupBarItem1.Text = "GroupBarItem0"
-
-Me.groupBarItem2.Text = "GroupBarItem1"
-
-Me.groupBarItem3.Text = "GroupBarItem2"
+   ~~~ cs
 
 
+
+		Me.groupBar1.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarItem(){Me.groupBarItem1, Me.groupBarItem2, Me.groupBarItem3})
+
+		Me.groupBar1.Size = New System.Drawing.Size(192, 120)
+
+		Me.Controls.Add(Me.groupBar1)
+
+		Me.groupBarItem1.Text = "GroupBarItem0"
+
+		Me.groupBarItem2.Text = "GroupBarItem1"
+
+		Me.groupBarItem3.Text = "GroupBarItem2"
+
+   ~~~
+   {:.prettyprint }
 
 ![](Navigation-Package_images/Navigation-Package_img10.jpeg)
-{:.image }
+
 
 
 See also
 
 Concepts and Features
 
-##### Concepts and Features
+### Concepts and Features
 
 The following topics will help you become more familiar in using the GroupBar control.
 
-###### GroupBar Settings
+#### GroupBar Settings
 
 The look and feel of the GroupBar can be controlled through the appearance properties of the control. These properties are discussed in detail in the below topics.
 
@@ -297,7 +296,7 @@ Integrated Scrolling
 
 Scroll buttons can be included for the client controls in the GroupBar by setting the IntegratedScrolling propertyto 'True'.
 
-_Table_ _531__: Property Table_
+_Table_ _531_: Property Table
 
 <table>
 <tr>
@@ -311,31 +310,33 @@ Draws a set of scroll thumbs on the GroupBar. This mode is used for creating a V
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.groupBar1.IntegratedScrolling = true;
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.groupBar1.IntegratedScrolling = True 
 
+{% endhighlight %}
 
 
 ![](Navigation-Package_images/Navigation-Package_img11.jpeg)
-{:.image }
+
 
 
 StackedGroupBar 
 
 The following are the properties available for GroupBar Items when the GroupBar is in the Stacked Mode. The Stacked Mode can be enabled by setting the StackedMode property to 'True'.
 
-_Table_ _532__: Property Table_
+_Table_ _532_: Property Table
 
 <table>
 <tr>
@@ -361,7 +362,7 @@ Gets / sets the value indicating whether the chevron button on the navigation pa
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -373,9 +374,10 @@ this.groupBarItem1.NavigationPaneIcon = ((System.Drawing.Icon)(resources.GetObje
 
 this.groupBarItem1.NavigationPaneImage = ((System.Drawing.Image)(resources.GetObject("groupBarItem1.NavigationPaneImage")));
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -387,29 +389,28 @@ Me.groupBarItem1.NavigationPaneIcon = DirectCast((Resources.GetObject("groupBarI
 
 Me.groupBarItem1.NavigationPaneImage = DirectCast((Resources.GetObject("groupBarItem1.NavigationPaneImage")), System.Drawing.Image)
 
+{% endhighlight %}
 
 
 If you want to display an icon or image for the GroupBar Item displayed in the GroupBar's navigation pane, set theInNavigationPane property to 'True' and associate icons or images with the NavigationPaneIcon and NavigationPaneImage properties respectively.
 
 ![](Navigation-Package_images/Navigation-Package_img12.jpeg)
-{:.image }
+
 
 
 Stacked GroupBar Item automatically shows the Chevron, which can be made invisible by setting the ShowChevron property to 'False'.
 
 ![](Navigation-Package_images/Navigation-Package_img13.jpeg)
-{:.image }
 
 
-> ![](Navigation-Package_images/Navigation-Package_img14.jpeg)
-{:.image }
- _Note : You should set LargeImageMode of GroupBarItem to 'True' to display the item images in the GroupBar's navigation pane._
+
+> Note : You should set LargeImageMode of GroupBarItem to 'True' to display the item images in the GroupBar's navigation pane.
 
 Navigation Pane
 
 The following table lists the properties related to the Navigation Pane.
 
-_Table_ _533__: Property Table_
+_Table_ _533_: Property Table
 
 <table>
 <tr>
@@ -427,7 +428,7 @@ Specifies the height of the GroupBar Navigation pane. This property will be avai
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -437,9 +438,9 @@ this.groupBar1.NavigationPaneButtonWidth = 25;
 
 this.groupBar1.NavigationPaneHeight = 35;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -449,21 +450,19 @@ Me.groupBar1.NavigationPaneButtonWidth = 25
 
 Me.groupBar1.NavigationPaneHeight = 35
 
-
+{% endhighlight %}
 
 The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's height and width can be adjusted by setting the NavigationPaneButtonWidth and NavigationPaneHeight properties to integer values.
 
 ![](Navigation-Package_images/Navigation-Package_img15.jpeg)
-{:.image }
+
 
 
 Collapse / Expand Settings
 
 This section discusses settings of a groupbar in its collapsed state. 
 
-> ![](Navigation-Package_images/Navigation-Package_img16.jpeg)
-{:.image }
- _Note: AllowCollapse property should be set to true to effect the below settings._
+> Note: AllowCollapse property should be set to true to effect the below settings.
 
 <table>
 <tr>
@@ -485,7 +484,7 @@ Indicates the width of the collapsed GroupBar.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -497,9 +496,9 @@ this.groupBar1.CollapsedText = "Navigation Pane";
 
 this.groupBar1.CollapsedWidth = 45;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -511,11 +510,13 @@ Me.groupBar1.CollapsedText = "Navigation Pane"
 
 this.groupBar1.CollapsedWidth = 45;
 
+{% endhighlight %}
+
 Image for collapse / Expand States
 
 The below properties set images for the collapse button based on the button states.
 
-_Table_ _535__: Property Table_
+_Table_ _535_: Property Table
 
 <table>
 <tr>
@@ -533,7 +534,7 @@ Gets or sets the image of the collapse button.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -541,17 +542,19 @@ this.groupBar1.CollapseImage = ((System.Drawing.Image)(resources.GetObject("grou
 
 this.groupBar1.ExpandImage = ((System.Drawing.Image)(resources.GetObject("groupBar1.ExpandImage")));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.groupBar1.CollapseImage = DirectCast((resources.GetObject("groupBar1.CollapseImage")), System.Drawing.Image) 
 
-Me.groupBar1.ExpandImage = DirectCast((resources.GetObject("groupBar1.ExpandImage")), System.Drawing.Image) 
+Me.groupBar1.ExpandImage = DirectCast((resources.GetObject("groupBar1.ExpandImage")), System.Drawing.Image)
 
-###### GroupBar Items Settings
+{% endhighlight %} 
+
+#### GroupBar Items Settings
 
 This section discusses the various settings that can be applied to the GroupBar Items of the GroupBar control. 
 
@@ -566,30 +569,32 @@ Through Designer
 The TextAlign property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left and Right. The default alignment is set to Center.
 
 ![](Navigation-Package_images/Navigation-Package_img17.jpeg)
-{:.image }
+
 
 
 Through Code
 
-[C#]
+{% highlight c# %}
 
 
 
 this.groupBar1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.groupBar1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
 
+{% endhighlight %}
+
 In-Place Renaming
 
 Users are allowed to rename GroupBar Items at run-time using the code snippet given below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -597,9 +602,9 @@ Users are allowed to rename GroupBar Items at run-time using the code snippet gi
 
 this.groupBar1.InplaceRenameItem(index);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -607,11 +612,11 @@ this.groupBar1.InplaceRenameItem(index);
 
 Me.groupBar1.InplaceRenameItem(index)
 
-
+{% endhighlight %}
 
 The method associated with this property is given below.
 
-_Table_ _536__: Method Table_
+_Table_ _536_: Method Table
 
 <table>
 <tr>
@@ -629,7 +634,7 @@ This section describes the image settings available for GroupBar Items.
 
 Large images can be set for GroupBar Items using the following properties.
 
-_Table_ _537__: Property Table_
+_Table_ _537_: Property Table
 
 <table>
 <tr>
@@ -647,7 +652,7 @@ Specifies the image for the GroupBar Item's client control. </td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -655,9 +660,9 @@ this.groupBarItem1.LargeImageMode = true;
 
 this.groupBarItem1.Image = ((System.Drawing.Image)(resources.GetObject("groupBarItem1.Image")));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -665,41 +670,37 @@ Me.groupBarItem1.LargeImageMode = True
 
 Me.groupBarItem1.Image = (CType(resources.GetObject("groupBarItem1.Image"), System.Drawing.Image))
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img18.jpeg)
-{:.image }
+
 
 
 Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by setting the ShowItemImageInHeader propertyto 'True'. 
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.ShowItemImageInHeader = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.ShowItemImageInHeader = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img19.jpeg)
-{:.image }
+
 
 
 GroupBar Items Customization
 
 The following table lists the properties related to the GroupBar Items.
 
-_Table_ _538__: Property Table_
+_Table_ _538_: Property Table
 
 <table>
 <tr>
@@ -717,36 +718,32 @@ Specifies whether to draw GroupBar Items with the control's borders without a 3-
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.BarHighlight = true;
 
 this.groupBar1.FlatLook = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.BarHighlight = True
 
 Me.groupBar1.FlatLook = True
 
-
+{% endhighlight %}
 
 The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the BarHighlight propertyto 'True'.
 
 ![](Navigation-Package_images/Navigation-Package_img20.jpeg)
-{:.image }
+
 
 
 The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by setting the FlatLook propertyto 'True'. 
 
 ![](Navigation-Package_images/Navigation-Package_img21.jpeg)
-{:.image }
+
 
 
 Integrating Child Controls to the GroupBar Items 
@@ -763,7 +760,7 @@ Individual GroupBar Item properties such as Text, Image and ForeColor can be set
 
 The default GroupBar properties will display the control in the regular mode using the standard visual style. You can now use the property browser to set the appropriate Appearance and Behavior settings to tailor the GroupBar's interface to suit the application's requirement. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -793,9 +790,9 @@ this.groupBarItem2.Client = this.treeView1;
 
 this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[]{treeNode2});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -825,21 +822,21 @@ Me.groupBarItem2.Client = Me.treeView1
 
 Me.treeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {treeNode2})
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img22.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img23.jpeg)
-{:.image }
+
 
 
 GroupView as Child Control 
 
 GroupView control can be added as a Child control to the GroupBar Item by dragging-and-dropping the control onto the GroupBar's client region and adding GroupView Items using the GroupView Item Collection Editor. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -873,9 +870,9 @@ new Syncfusion.Windows.Forms.Tools.GroupViewItem("GroupViewItem0", -1, true, nul
 
 new Syncfusion.Windows.Forms.Tools.GroupViewItem("GroupViewItem1", -1, true, null, "GroupViewItem1")});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -905,10 +902,10 @@ Me.groupBarItem2.Client = Me.groupView1
 
 Me.groupView1.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupViewItem() {New Syncfusion.Windows.Forms.Tools.GroupViewItem("GroupViewItem0", -1, True, Nothing, "GroupViewItem0"), New Syncfusion.Windows.Forms.Tools.GroupViewItem("GroupViewItem1", -1, True, Nothing, "GroupViewItem1")})
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img24.jpeg)
-{:.image }
+
 
 
 GroupBar as Child Control
@@ -920,29 +917,29 @@ The following step-by-step procedure helps you to create Nested GroupBars.
 1. Drag and drop the GroupBar1 control from the toolbox onto the form, add GroupBar Items using the GroupBar Item Collection Editor, drag and drop the GroupView control and add GroupView Items using the GroupView Item Collection Editor. Associate the GroupView control inside the client area of the GroupBar Item.
 2. The below screen shot shows the GroupBar with four GroupBar Items named as Windows Forms, Components, General and Nested GroupBar.
 
-![](Navigation-Package_images/Navigation-Package_img25.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img25.jpeg)
+
 
 
 3. Drag and drop another GroupBar2 control from the toolbox and add the GroupBar Items (Personal, Work and Contacts) using the GroupBar Item Collection Editor and add the GroupView control with GroupView Items (Vendors, Metrics, Trend, Sales and Sales 2 for the GroupBar Item Work) to each GroupBar Item using the GroupView Item Collection Editor.
 
-![](Navigation-Package_images/Navigation-Package_img26.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img26.jpeg)
+
 
 
 4. Add GroupBar2 as child control to the GroupBar1 by doing a drag and drop operation.
 
-![](Navigation-Package_images/Navigation-Package_img27.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img27.jpeg)
 
 
-The following screen shot shows the Nested GroupBars.
 
-![](Navigation-Package_images/Navigation-Package_img28.jpeg)
-{:.image }
+   The following screen shot shows the Nested GroupBars.
+
+   ![](Navigation-Package_images/Navigation-Package_img28.jpeg)
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -980,9 +977,9 @@ this.groupBarItem3,
 
 this.groupBarItem4});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1016,11 +1013,13 @@ Me.groupBarItem2.Client = Me.groupBar2
 
 Me.groupBar2.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarItem() {Me.groupBarItem3, Me.groupBarItem4})
 
+{% endhighlight %}
+
 GroupBarItem Popup
 
 The below properties controls the appearance and behavior of the GroupBarItem popup.
 
-_Table_ _539__: Property Table_
+_Table_ _539_: Property Table
 
 <table>
 <tr>
@@ -1044,7 +1043,9 @@ Gets or sets the popup's resize mode. It can be horizontal, vertical, Both or No
 ShowPopupGripper</td><td>
 Specifies whether to show or hide the popup gripper.</td></tr>
 </table>
-_Table_ _540__: Property Table_
+
+_Table_ _540_: Property Table
+
 
 <table>
 <tr>
@@ -1058,7 +1059,7 @@ Calling this method will hide the popup.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1074,11 +1075,9 @@ this.groupBar1.ShowPopupGripper = true;
 
 this.groupBar1.HidePopup();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.PopupClientSize = New System.Drawing.Size(5, 6) 
 
@@ -1088,17 +1087,17 @@ Me.groupBar1.PopupAutoClose = True
 
 Me.groupBar1.ShowPopupGripper = True 
 
-
-
 Me.groupBar1.HidePopup()
 
-###### Header Customization Settings
+{% endhighlight %}
+
+#### Header Customization Settings
 
 Header Height and Font Settings
 
 The following properties can be used to change the height and font of the header of the GroupBar Items.
 
-_Table_ _541__: Property Table_
+_Table_ _541_: Property Table
 
 <table>
 <tr>
@@ -1116,7 +1115,7 @@ Specifies the font of the text displayed in the GroupBar header.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1124,9 +1123,9 @@ this.groupBar1.GroupBarItemHeight = 30;
 
 this.groupBar1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1134,21 +1133,21 @@ Me.groupBar1.GroupBarItemHeight = 30
 
 Me.groupBar1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CByte((0))) 
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img29.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img30.jpeg)
-{:.image }
+
 
 
 Header BackColor and ForeColor Settings
 
 Different colors can be applied to the header and header text of the GroupBar Items. This can be done using the below given properties.
 
-_Table_ _542__: Property Table_
+_Table_ _542_: Property Table
 
 <table>
 <tr>
@@ -1166,7 +1165,7 @@ Specifies the Foreground color for the GroupBar Item.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1174,9 +1173,9 @@ this.groupBar1.HeaderBackColor = System.Drawing.Color.LavendarBlush;
 
 this.groupBar1.HeaderForeColor = System.Drawing.Color.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1184,15 +1183,15 @@ Me.groupBar1.HeaderBackColor = System.Drawing.Color.Red
 
 Me.groupBar1.HeaderForeColor = System.Drawing.Color.Maroon
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img31.jpeg)
-{:.image }
+
 
 
 The methods given below are used to reset the above properties.
 
-_Table_ _543__: Property Table_
+_Table_ _543_: Property Table
 
 <table>
 <tr>
@@ -1212,11 +1211,12 @@ Resets the HeaderBackColor property to it's default value.</td></tr>
 ResetHeaderForeColor</td><td>
 Resets the HeaderForeColor property to it's default value.</td></tr>
 </table>
-###### StackedGroupBar
+
+#### StackedGroupBar
 
 When the GroupBar is in StackedMode, its header height can be controlled by HeaderHeight property.
 
-_Table_ _544__: Property Table_
+_Table_ _544_: Property Table
 
 <table>
 <tr>
@@ -1230,7 +1230,7 @@ Specifies the height of the GroupBar Header.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1240,9 +1240,9 @@ this.groupBar1.StackedMode = true;
 
 this.groupBar1.HeaderHeight = 0;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1252,11 +1252,13 @@ Me.groupBar1.StackedMode = True
 
 Me.groupBar1.HeaderHeight = 0
 
-###### Tooltip Settings 
+{% endhighlight %}
+
+#### Tooltip Settings 
 
 The tooltips for the buttons and the navigation pane are set through the below properties.
 
-_Table_ _545__: Property Table_
+_Table_ _545_: Property Table
 
 <table>
 <tr>
@@ -1278,7 +1280,7 @@ Gets or sets the navigation pane tooltip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1288,9 +1290,9 @@ this.groupBar1.NavigationPaneTooltip = "Expand Navigation Pane";
 
 this.groupBar1.MinimizeButtonToolTip = "Minimize Navigation Pane";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1300,13 +1302,15 @@ Me.groupBar1.NavigationPaneTooltip = "Expand Navigation Pane"
 
 Me.groupBar1.MinimizeButtonToolTip = "Minimize Navigation Pane"
 
-###### Border Settings 
+{% endhighlight %}
+
+#### Border Settings 
 
 GroupBar Settings
 
 The border style of the GroupBar can be set using the below given property.
 
-_Table_ _546__: Property Table_
+_Table_ _546_: Property Table
 
 <table>
 <tr>
@@ -1320,31 +1324,27 @@ Gets / sets the border style of the GroupBar control.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D 
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img32.jpeg)
-{:.image }
+
 
 
 GroupBar Item Client Area Border Settings
 
 The border of the GroupBar Item client area can be set and customized using the following properties.
 
-_Table_ _547__: Property Table_
+_Table_ _547_: Property Table
 
 <table>
 <tr>
@@ -1362,37 +1362,34 @@ Specifies the value which determines whether the border for the client area of t
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.DrawClientBorder = true;
 
 this.groupBarItem2.ClientBorderColors = new Syncfusion.Windows.Forms.Tools.BorderColors(System.Drawing.Color.Red, System.Drawing.Color.Aqua, System.Drawing.Color.Lime, System.Drawing.Color.Magenta);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Me.groupBar1.DrawClientBorder = True
 
 Me.groupBarItem2.ClientBorderColors = New Syncfusion.Windows.Forms.Tools.BorderColors(System.Drawing.Color.Red, System.Drawing.Color.Aqua, System.Drawing.Color.Lime, System.Drawing.Color.Magenta)
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img33.jpeg)
-{:.image }
 
 
-###### Cursor Settings 
+
+#### Cursor Settings 
 
 Cursor Settings for GroupBar
 
 The cursor settings of the GroupBar control can be changed using the below given properties.
 
-_Table_ _548__: Property Table_
+_Table_ _548_: Property Table
 
 <table>
 <tr>
@@ -1406,31 +1403,27 @@ Gets / sets the cursor that is displayed when the mouse pointer is over the cont
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.Cursor = System.Windows.Forms.Cursors.Cross;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.Cursor = System.Windows.Forms.Cursors.Cross
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img34.jpeg)
-{:.image }
+
 
 
 Cursor Settings for GroupBar Items
 
 Different types of cursors can be set when the mouse pointer is over the GroupBar Items. The cursors available are Mouse, Cross, Help, Hand and so on. The default cursor is 'Arrow'.
 
-_Table_ _549__: Property Table_
+_Table_ _549_: Property Table
 
 <table>
 <tr>
@@ -1444,79 +1437,65 @@ Specifies the type of cursor that is displayed when the mouse pointer is over th
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.GroupBarItemCursor = System.Windows.Forms.Cursors.Hand;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.GroupBarItemCursor = System.Windows.Forms.Cursors.Hand
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img35.jpeg)
-{:.image }
 
 
-> ![](Navigation-Package_images/Navigation-Package_img36.jpeg)
-{:.image }
- _Note : The ResetGroupBarItemCursor() method can be used to reset the cursor when it is displayed over a GroupBar Item._ 
 
-###### Themes and Animation Settings
+> Note : The ResetGroupBarItemCursor() method can be used to reset the cursor when it is displayed over a GroupBar Item.
+
+#### Themes and Animation Settings
 
 Themes define the look and feel of the whole GroupBar. It also changes the behavior of the GroupBar completely. Themes can be enabled by setting the ThemesEnabled property of GroupBar to True.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img37.jpeg)
-{:.image }
+
 
 
 Animation Settings
 
 Switching between the different GroupBar Items can be animated by setting the AnimatedSelection property to True.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBar1.AnimatedSelection = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupBar1.AnimatedSelection = true
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img38.jpeg)
-{:.image }
 
 
-###### Visual Styles
+
+#### Visual Styles
 
 Visual Styles
 
@@ -1528,7 +1507,7 @@ The Visual Styles supported are given below.
 * Office 2003 Style - It specifies the Office 2003 look and it can enabled by setting the Visual Style to Office2003 and ThemesEnabled property to 'False'.
 * Office 2007 Style - It specifies the new Office 2007 look and it can enabled by setting the Visual Style to Office2007 and ThemesEnabled property to 'False'.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1548,9 +1527,9 @@ this.groupBar1.ThemesEnabled = false;
 
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1570,45 +1549,43 @@ Me.groupBar1.ThemesEnabled = False
 
 Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img39.jpeg)
-{:.image }
+
 
 
 GroupBar control supports Office 2007 Style with the color themes Blue, Black and Silver which gives the application a perfect look and feel. This can be set using the Office2007Theme property.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.groupBar1.Office2007Theme = Office2007Theme.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.groupBar1.Office2007Theme = Office2007Theme.Black
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img40.jpeg)
-{:.image }
 
 
-> ![](Navigation-Package_images/Navigation-Package_img41.jpeg)
-{:.image }
- _Note : The Visual Style property must be set to Office2007 to enable the color themes._
+
+> Note : The Visual Style property must be set to Office2007 to enable the color themes.
 
 Custom Colors
 
 We can also apply custom colors to the GroupBar control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1616,9 +1593,9 @@ this.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Manage
 
 Office2007Colors.ApplyManagedColors(this, Color.CadetBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1626,13 +1603,13 @@ Me.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 
 Office2007Colors.ApplyManagedColors(Me, Color.CadetBlue)
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img42.jpeg)
-{:.image }
 
 
-###### Serialization of Layout State 
+
+#### Serialization of Layout State 
 
 The Layout state of GroupBar can be saved and loaded using the AppStateSerializer class.
 
@@ -1640,205 +1617,210 @@ The following step-by-step procedure helps you to achieve the same.
 
 1. Include the required namespaces.
 
-[C#]
+   ~~~ cs
+
+		using Syncfusion.Windows.Forms;
+
+		using Syncfusion.Windows.Forms.Tools;
+
+		using Syncfusion.Runtime.Serialization;
 
 
+   ~~~
+   {:.prettyprint }
 
-using Syncfusion.Windows.Forms;
+   ~~~ vbnet
 
-using Syncfusion.Windows.Forms.Tools;
+		Imports Syncfusion.Windows.Forms
 
-using Syncfusion.Runtime.Serialization;
+		Imports Syncfusion.Windows.Forms.Tools
 
+		Imports Syncfusion.Runtime.Serialization
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms
-
-Imports Syncfusion.Windows.Forms.Tools
-
-Imports Syncfusion.Runtime.Serialization
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Drag and drop a GroupBar control from the toolbox onto the form, add GroupBar Items using the GroupBar Item CollectionEditor and add two buttons to the form for 'Load' and 'Save' as shown below.
 
-![](Navigation-Package_images/Navigation-Package_img43.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img43.jpeg)
+
 
 
 3. Store the layout information of the selected GroupBar Item in an XML file using the AppStateSerializer class. In the Form_Closing and Save_Button click, call the following method,
 
-[C#]
+   ~~~ cs
 
 
 
-private void SaveState ()
+		private void SaveState ()
 
-{
+		{
 
-// Create a temporary storage.
+		// Create a temporary storage.
 
-ArrayList temp = new ArrayList();
+		ArrayList temp = new ArrayList();
 
-foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
+		foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
 
-{
+		{
 
-// Store the index of each GroupBar Item in the Navigation Pane.
+		// Store the index of each GroupBar Item in the Navigation Pane.
 
-if (gbi.InNavigationPane == true)
+		if (gbi.InNavigationPane == true)
 
-temp.Add(this.groupBar1.GroupBarItems.IndexOf(gbi));
+		temp.Add(this.groupBar1.GroupBarItems.IndexOf(gbi));
 
-}
+		}
 
-// Store the index of the selected GroupBar Item.
+		// Store the index of the selected GroupBar Item.
 
-temp.Add(this.groupBar1.SelectedItem);
+		temp.Add(this.groupBar1.SelectedItem);
 
-// Persist this information to an XML file using the AppStateSerializer class.
+		// Persist this information to an XML file using the AppStateSerializer class.
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
+		AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
 
-aser.SerializeObject("StackedModeState", temp);
+		aser.SerializeObject("StackedModeState", temp);
 
-aser.PersistNow();
+		aser.PersistNow();
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private Sub SaveState()
-
-' Create a temporary storage.
-
-Dim temp As ArrayList = New ArrayList()
-
-For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
-
-' Store the index of each GroupBar Item in the Navigation Pane.
-
-If gbi.InNavigationPane = True Then
-
-temp.Add(Me.groupBar1.GroupBarItems.IndexOf(gbi))
-
-End If
-
-Next gbi
-
-' Store the index of the selected GroupBar Item.
-
-temp.Add(Me.groupBar1.SelectedItem)
-
-' Persist this information to an XML file using the AppStateSerializer class.
-
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
-
-aser.SerializeObject("StackedModeState", temp)
-
-aser.PersistNow()
-
-End Sub
+   ~~~ vbnet
 
 
+
+		Private Sub SaveState()
+
+		' Create a temporary storage.
+
+		Dim temp As ArrayList = New ArrayList()
+
+		For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
+
+		' Store the index of each GroupBar Item in the Navigation Pane.
+
+		If gbi.InNavigationPane = True Then
+
+		temp.Add(Me.groupBar1.GroupBarItems.IndexOf(gbi))
+
+		End If
+
+		Next gbi
+
+		' Store the index of the selected GroupBar Item.
+
+		temp.Add(Me.groupBar1.SelectedItem)
+
+		' Persist this information to an XML file using the AppStateSerializer class.
+
+		Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
+
+		aser.SerializeObject("StackedModeState", temp)
+
+		aser.PersistNow()
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 4. Retrieve the persisted layout information from the XML file using the AppStateSerializer class. In the Form_Load event and Load_Button click, call the following method,
 
-[C#]
+   ~~~ cs
 
 
 
-private void LoadState ()
+		private void LoadState ()
 
-{
+		{
 
-// De-Persist this information from the XML file using the AppStateSerializer class.
+		// De-Persist this information from the XML file using the AppStateSerializer class.
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
+		AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
 
-ArrayList temp = aser.DeserializeObject("StackedModeState") as ArrayList;
+		ArrayList temp = aser.DeserializeObject("StackedModeState") as ArrayList;
 
-// Reset the InNavigationPane for all GroupBar Items.
+		// Reset the InNavigationPane for all GroupBar Items.
 
-foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
+		foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
 
-{
+		{
 
-gbi.InNavigationPane = false;
+		gbi.InNavigationPane = false;
 
-}
+		}
 
-// Restore the saved state by setting the appropriate InNavigationPane entries.
+		// Restore the saved state by setting the appropriate InNavigationPane entries.
 
-int index;
+		int index;
 
-for(int i=0; i<temp.Count-1; i++)
+		for(int i=0; i<temp.Count-1; i++)
 
-{
+		{
 
-index = (int)temp[i];
+		index = (int)temp[i];
 
-this.groupBar1.GroupBarItems[index].InNavigationPane = true;
+		this.groupBar1.GroupBarItems[index].InNavigationPane = true;
 
-}
+		}
 
-// Restore the selected GroupBar Item.
+		// Restore the selected GroupBar Item.
 
-this.groupBar1.SelectedItem = (int)temp[temp.Count-1];
+		this.groupBar1.SelectedItem = (int)temp[temp.Count-1];
 
-}
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Private Sub LoadState()
 
+		' De-Persist this information from the XML file using the AppStateSerializer class.
 
+		Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
 
-Private Sub LoadState()
+		Dim temp As ArrayList = CType(IIf(TypeOf aser.DeserializeObject("StackedModeState") Is ArrayList,                        aser.DeserializeObject("StackedModeState"), Nothing), ArrayList)
 
-' De-Persist this information from the XML file using the AppStateSerializer class.
+		' Reset the InNavigationPane for all GroupBar Items.
 
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
+		For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
 
-Dim temp As ArrayList = CType(IIf(TypeOf aser.DeserializeObject("StackedModeState") Is ArrayList,                        aser.DeserializeObject("StackedModeState"), Nothing), ArrayList)
+		gbi.InNavigationPane = False
 
-' Reset the InNavigationPane for all GroupBar Items.
+		Next gbi
 
-For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
+		' Restore the saved state by setting the appropriate InNavigationPane entries.
 
-gbi.InNavigationPane = False
+		Dim index As Integer
 
-Next gbi
+		Dim i As Integer = 0
 
-' Restore the saved state by setting the appropriate InNavigationPane entries.
+		Do While i < temp.Count - 1
 
-Dim index As Integer
+		index = CInt(temp(i))
 
-Dim i As Integer = 0
+		Me.groupBar1.GroupBarItems(index).InNavigationPane = True
 
-Do While i < temp.Count - 1
+		i += 1
 
-index = CInt(temp(i))
+		Loop
 
-Me.groupBar1.GroupBarItems(index).InNavigationPane = True
+		' Restore the selected GroupBar Item.
 
-i += 1
+		Me.groupBar1.SelectedItem = CInt(temp(temp.Count - 1))
 
-Loop
+		End Sub
 
-' Restore the selected GroupBar Item.
-
-Me.groupBar1.SelectedItem = CInt(temp(temp.Count - 1))
-
-End Sub
+   ~~~
+   {:.prettyprint }
 
 Output
 
@@ -1851,10 +1833,10 @@ Again open the same application. You can see the persisted layout state of Group
 
 
 ![](Navigation-Package_images/Navigation-Package_img44.jpeg)
-{:.image }
 
 
-###### Style 
+
+#### Style 
 
 GroupView supports visual styles such as Default, Metro. The style can be set using Style property. 
 
@@ -1863,31 +1845,29 @@ GroupView supports visual styles such as Default, Metro. The style can be set us
 
 The following code example allows you to set the style for the GroupView.
 
-[C#]
+{% highlight c# %}
 
 this.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Metro;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
-
+{% endhighlight %}
 
 
 
 ![](Navigation-Package_images/Navigation-Package_img45.png)
-{:.image }
 
 
-##### GroupBar Events
+
+### GroupBar Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _550__: Events Table_
+_Table_ _550_: Events Table
 
 <table>
 <tr>
@@ -1927,13 +1907,14 @@ This event occurs when the user clicks on the GroupBar control's Navigation Pane
 ProvideGroupBarItemBrush</td><td>
 This event occurs when a GroupBar Item is about to be drawn.</td></tr>
 </table>
-###### GroupBarItemAdded Event
+
+#### GroupBarItemAdded Event
 
 This event is handled after a GroupBar Item is added to the GroupBar Items Collection. It is handled to create client controls when new GroupBar Items are added at runtime.
 
 The event handler of this event receives an argument of type GroupBarItemEventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1949,9 +1930,9 @@ this.listView1.Items.Add(listViewItem1);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1965,13 +1946,15 @@ Me.listView1.Items.Add(listViewItem1)
 
 End Sub
 
-###### GroupBarItemRemoved Event
+{% endhighlight %}
+
+#### GroupBarItemRemoved Event
 
 This event is handled after a GroupBar Item is removed from the GroupBar Items Collection. It is handled to dispose client controls when GroupBar Items are removed at runtime.
 
 The event handler of this event receives an argument of type GroupBarItemEventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1987,9 +1970,9 @@ this.listView1.Items.Add(listViewItem1);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2003,13 +1986,15 @@ Me.listView1.Items.Add(listViewItem1)
 
 End Sub
 
-###### GroupBarItemRenamed Event
+{% endhighlight %}
+
+#### GroupBarItemRenamed Event
 
 This event is handled after a GroupBar Item is renamed by an inplace edit operation. It is handled when a GroupBar Item is renamed at runtime.
 
 The event handler of this event receives an argument of type GroupItemRenamedEventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2025,9 +2010,9 @@ this.listView1.Items.Add(listViewItem1);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2041,13 +2026,15 @@ Me.listView1.Items.Add(listViewItem1)
 
 End Sub
 
-###### GroupBarItemSelectionChanging Event
+{% endhighlight %}
+
+#### GroupBarItemSelectionChanging Event
 
 This event occurs when a GroupBar Item is selected in the GroupBar control. It is handled when a GroupBar Item is selected at runtime.
 
 The event handler of this event receives an argument of type GroupItemSelectionChangingEventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2063,9 +2050,9 @@ this.listView1.Items.Add(listViewItem1);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2079,13 +2066,15 @@ Me.listView1.Items.Add(listViewItem1)
 
 End Sub
 
-###### GroupBarItemSelected Event
+{% endhighlight %}
+
+#### GroupBarItemSelected Event
 
 It occurs when a GroupBar Item of the GroupBar control is selected. Accessing the GroupBar.SelectedItem property from within the GroupBarItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked. 
 
 The event handler of this event receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2105,9 +2094,9 @@ Trace.WriteLine(String.Concat("Selected Item = ", this.groupBar1.GroupBarItems[t
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2125,13 +2114,15 @@ Trace.WriteLine(String.Concat("Selected Item = ", Me.groupBar1.GroupBarItems(Me.
 
 End Sub
 
-###### ShowContextMenu Event
+{% endhighlight %}
+
+#### ShowContextMenu Event
 
 It occurs on right-clicking the mouse button over the GroupBar control. It is handled when the mouse is right-clicked over the GroupBar control at runtime.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2145,9 +2136,9 @@ Console.Write(" ShowContextMenu Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2159,13 +2150,15 @@ Console.Write(" ShowContextMenu Event is raised ")
 
 End Sub
 
-###### NavigationPaneDropDownClick Event
+{% endhighlight %}
+
+#### NavigationPaneDropDownClick Event
 
 It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to True. The event handler receives an argument of type NavigationPaneDropDownClickEventArgs containing data related to this event.
 
 The following event property is associated with the NavigationPaneDropDownClickEventArgs.
 
-_Table_ _551__: Member Table_
+_Table_ _551_: Member Table
 
 <table>
 <tr>
@@ -2179,7 +2172,7 @@ Returns the menu provider object used by the GroupBar for creating it's context 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2197,9 +2190,9 @@ Console.Write("ContextMenuProvider :" + e.ContextMenuProvider.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2215,13 +2208,15 @@ Console.Write("ContextMenuProvider :" + e.ContextMenuProvider.ToString())
 
 End Sub
 
-###### ProvideGroupBarItemBrush Event
+{% endhighlight %}
+
+#### ProvideGroupBarItemBrush Event
 
 It occurs when a GroupBar Item is about to be drawn. The event handler receives an argument of type ProvideGroupBarItemBrushEventArgs. 
 
 The event properties associated with the ProvideGroupBarItemBrushEventArgs are given below.
 
-_Table_ _552__: Members Table_
+_Table_ _552_: Members Table
 
 <table>
 <tr>
@@ -2243,7 +2238,7 @@ Returns the index of the GroupBar Item being drawn.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2271,9 +2266,9 @@ args.BackgroundBrush = lgbrush;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2299,21 +2294,21 @@ args.BackgroundBrush = lgbrush
 
 End Sub
 
-
+{% endhighlight %}
 
 Refer How to apply Gradient Rendering for the GroupBar? for further information on this event.
 
-##### Frequently Asked Questions
+### Frequently Asked Questions
 
 This section will help you become more familiar in using the GroupBar control.
 
-###### How to apply Gradient Rendering for the GroupBar
+#### How to apply Gradient Rendering for the GroupBar
 
 The correct way to apply gradient rendering for the GroupBar is to handle the ProvideGroupBarItemBrush Event of GroupBar.
 
 The following code snippet illustrate this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2349,9 +2344,9 @@ args.BackgroundBrush = lgbrush;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2385,13 +2380,15 @@ args.BackgroundBrush = lgbrush
 
 End Sub
 
-###### How to assign the currently selected GroupBar Item to the GroupBar's Tag property
+{% endhighlight %}
+
+#### How to assign the currently selected GroupBar Item to the GroupBar's Tag property
 
 You could do so by handling the GroupBar’s GroupBarItemSelected event. Within this event handler, index into the GroupBar Items Collection using the GroupBar's SelectedItem property value, to get the currently selected GroupBar Item, and then assign it to the GroupBar’s Tag property. 
 
 The following code sample shows how this can be done.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2407,9 +2404,9 @@ this.groupBar1.Tag = this.groupBar1.GroupBarItems[this.groupBar1.SelectedItem];
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2423,11 +2420,13 @@ Me.groupBar1.Tag = Me.groupBar1.GroupBarItems(Me.groupBar1.SelectedItem)
 
 End Sub
 
-###### How to change the Header BackColor of a Stacked GroupBar when it is in Office 2003 Visual Style
+{% endhighlight %}
+
+#### How to change the Header BackColor of a Stacked GroupBar when it is in Office 2003 Visual Style
 
 The following code examples are used to change the GroupBar Item's Header BackColor.
 
-[C#]
+{% highlight c# %}
 
 //To set the Office2003 visual style
 
@@ -2443,9 +2442,9 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorDark = Color.Red;
 
 Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'To set the Office2003 visual style
 
@@ -2462,22 +2461,20 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorDark = Color.Red
 Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White
 
 
+{% endhighlight %}
 
 
-
-> ![](Navigation-Package_images/Navigation-Package_img46.jpeg)
-{:.image }
-_Note : In GroupBar, StackedMode property should be enabled to customize the appearace of the GroupBar header._
+> Note : In GroupBar, StackedMode property should be enabled to customize the appearace of the GroupBar header.
 
 ![](Navigation-Package_images/Navigation-Package_img47.png)
-{:.image }
 
 
-###### How to dynamically embed any control via Templates inside the GroupBar
+
+#### How to dynamically embed any control via Templates inside the GroupBar
 
 The following code snippet shows how to dynamically add a Label control to the Groupbar Item using Templates.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2503,9 +2500,9 @@ GroupBarItem item = (GroupBarItem)Groupbar1.FindGroupItemByID("child1");
 
 item.TemplateID="templateId"; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2531,33 +2528,33 @@ Private item As GroupBarItem = CType(Groupbar1.FindGroupItemByID("child1"), Grou
 
 Private item.TemplateID="templateId" 
 
-###### How to save and restore the State information of a Stacked Mode GroupBar
+{% endhighlight %}
+
+#### How to save and restore the State information of a Stacked Mode GroupBar
 
 You could save and restore the State information of the GroupBar Items in a Stacked Mode GroupBar by using the AppStateSerializer's SerializeObject and DeserializeObject methods.
 
-###### How to give the space between text and Icon in the GroupBarItem
+#### How to give the space between text and Icon in the GroupBarItem
 
 The Padding property of GroupBarItem provides spacing between Icons and text in the GroupBarItems.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupBarItem1.Padding = 10; 
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB.NET]
+Me.groupBarItem1.Padding = 10
 
+{% endhighlight %} 
 
-
-Me.groupBarItem1.Padding = 10 
-
-###### How do I paint the GroupBarItem image without scaling the image?
+#### How do I paint the GroupBarItem image without scaling the image?
 
 You can draw the image of GroupBarItem (without scaling it), by overriding the DrawGroupBarImage method of the GroupBar. 
 
-[C#]
+{% highlight c# %}
 
 // For this callback to occur LargeImageMode must be set to true.
  this.groupBarItem1.LargeImageMode = true;
@@ -2568,9 +2565,9 @@ Point location = new Point(rcbar.X + 20, rcbar.Y);
 gph.DrawImage(this.VisibleGroupBarItems[nindex].Image, new Rectangle(location, new Size(20, 20)));
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ' For this callback to occur LargeImageMode must be set to true.
 
@@ -2586,7 +2583,9 @@ gph.DrawImage(Me.VisibleGroupBarItems(nindex).Image, New Rectangle(location, New
 
 End Sub
 
-###### How to customize the Splitter color in the GroupBar
+{% endhighlight %}
+
+#### How to customize the Splitter color in the GroupBar
 
 Appearance Settings
 
@@ -2612,7 +2611,7 @@ Enable to change the color of the splitter in stacked mode</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
  this.groupBar1.StackedMode = true;
 
@@ -2625,10 +2624,10 @@ this.groupBar1.Splittercolor = Color.Red;
 this.groupBar1.EnableSplittercolorCustomization = true;
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
  Me.groupBar1.StackedMode = True
 
@@ -2640,15 +2639,15 @@ Me.groupBar1.Splittercolor = Color.Red
 
 Me.groupBar1.EnableSplittercolorCustomization = True
 
-
+{% endhighlight %}
 
 The following image shows the customized splitter.
 
 ![](Navigation-Package_images/Navigation-Package_img48.png)
-{:.image }
 
 
-#### GroupView
+
+## GroupView
 
 The GroupView control implements a selectable list that can display a collection of items, where each item is represented by an image and a descriptor.
 
@@ -2657,14 +2656,14 @@ The GroupView control's appearance and behavior attributes are extensively custo
 
 
 ![](Navigation-Package_images/Navigation-Package_img49.jpeg)
-{:.image }
 
 
-##### Features Overview
+
+### Features Overview
 
 This section discusses the feature list of GroupView.
 
-Features
+#### Features
 
 * Appearance and Behavior Settings
 
@@ -2708,15 +2707,15 @@ The context menu can be easily associated with GroupView controls.
 
 Using the ThemesEnabled property, themed appearance can be provided for the GroupView control. 
 
-##### Control Overview
+### Control Overview
 
 The various sections of GroupView and their description are given below.
 
 ![](Navigation-Package_images/Navigation-Package_img50.jpeg)
-{:.image }
 
 
-GroupView Control
+
+##### GroupView Control
 
 The GroupView control is a List-type control that can display a list of items.
 
@@ -2730,18 +2729,18 @@ See Also
 
 Concepts and Features
 
-##### Creating GroupView
+### Creating GroupView
 
 This section provides a step-by-step procedure to create a GroupView control through designer and through programmatical approach in a .NET application. 
 
-###### Through Designer
+#### Through Designer
 
 To create a GroupView control and add GroupView Items to it,
 
 1. Drag-and-drop a GroupView control from the VS.NET toolbox onto the form. This will create an instance of the GroupView control on the form.
 
-![](Navigation-Package_images/Navigation-Package_img51.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img51.jpeg)
+
 
 
 2. In the Properties window, select the GroupViewItems property. The GroupViewItemCollectionEditor will be opened. Click Add, a GroupView Item will be added to the GroupView control.
@@ -2749,134 +2748,138 @@ To create a GroupView control and add GroupView Items to it,
 The text of the GroupView Items is also set using the Collection Editor.
 
 ![](Navigation-Package_images/Navigation-Package_img52.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img53.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img54.jpeg)
-{:.image }
 
 
-###### Through Code
+
+#### Through Code
 
 GroupView control can be created using the GroupView class. GroupView Items can be added to the GroupView control using the GroupView.GroupViewItems collection property. 
 
 1. Include the required namespace.
 
-[C#]
+   ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create instances of the GroupView control and GroupView Items.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.GroupView groupView1;
+		private Syncfusion.Windows.Forms.Tools.GroupView groupView1;
 
 
 
-private Syncfusion.Windows.Forms.Tools.GroupViewItem groupViewItem1;
+		private Syncfusion.Windows.Forms.Tools.GroupViewItem groupViewItem1;
 
-private Syncfusion.Windows.Forms.Tools.GroupViewItem groupViewItem2;
+		private Syncfusion.Windows.Forms.Tools.GroupViewItem groupViewItem2;
 
-private Syncfusion.Windows.Forms.Tools.GroupViewItem groupViewItem3;
-
-
-
-this.groupView1=new GroupView();
-
-this.groupViewItem1=new GroupViewItem();
-
-this.groupViewItem2=new GroupViewItem();
-
-this.groupViewItem3=new GroupViewItem();
+		private Syncfusion.Windows.Forms.Tools.GroupViewItem groupViewItem3;
 
 
 
-[VB.NET]
+		this.groupView1=new GroupView();
+
+		this.groupViewItem1=new GroupViewItem();
+
+		this.groupViewItem2=new GroupViewItem();
+
+		this.groupViewItem3=new GroupViewItem();
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-Private groupView1 As Syncfusion.Windows.Forms.Tools.GroupView
+		Private groupView1 As Syncfusion.Windows.Forms.Tools.GroupView
 
 
 
-Private groupViewItem1 As Syncfusion.Windows.Forms.Tools.GroupViewItem
+		Private groupViewItem1 As Syncfusion.Windows.Forms.Tools.GroupViewItem
 
-Private groupViewItem2 As Syncfusion.Windows.Forms.Tools.GroupViewItem
+		Private groupViewItem2 As Syncfusion.Windows.Forms.Tools.GroupViewItem
 
-Private groupViewItem3 As Syncfusion.Windows.Forms.Tools.GroupViewItem
-
-
-
-Me.groupView1 = New GroupView()
-
-Me.groupViewItem1 = New GroupViewItem()
-
-Me.groupViewItem2 = New GroupViewItem()
-
-Me.groupViewItem3 = New GroupViewItem()
+		Private groupViewItem3 As Syncfusion.Windows.Forms.Tools.GroupViewItem
 
 
+
+		Me.groupView1 = New GroupView()
+
+		Me.groupViewItem1 = New GroupViewItem()
+
+		Me.groupViewItem2 = New GroupViewItem()
+
+		Me.groupViewItem3 = New GroupViewItem()
+
+   ~~~
+   {:.prettyprint }
 
 3. Add GroupView Items to the GroupView control and specify the size of the GroupView control. Finally add a GroupView control to the Form.
 
-[C#]
+   ~~~ cs
 
 
 
-this.groupView2.GroupViewItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupViewItem[] {
+		this.groupView2.GroupViewItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupViewItem[] {
 
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Windows Forms", 0, true, null, "GroupViewItem0"),
+		new Syncfusion.Windows.Forms.Tools.GroupViewItem("Windows Forms", 0, true, null, "GroupViewItem0"),
 
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Components", 1, true, null, "GroupViewItem1"),
+		new Syncfusion.Windows.Forms.Tools.GroupViewItem("Components", 1, true, null, "GroupViewItem1"),
 
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("General", 2, true, null, "GroupViewItem2")});
+		new Syncfusion.Windows.Forms.Tools.GroupViewItem("General", 2, true, null, "GroupViewItem2")});
 
-this.groupView1.Size=new Size(192,120);
+		this.groupView1.Size=new Size(192,120);
 
-this.Controls.Add(this.groupView1);
+		this.Controls.Add(this.groupView1);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Me.groupView2.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupViewItem() {New Syncfusion.Windows.Forms.Tools.GroupViewItem("Windows Forms", 0, True, Nothing, "GroupViewItem0"), New Syncfusion.Windows.Forms.Tools.GroupViewItem("Components", 1, True, Nothing, "GroupViewItem1"), New Syncfusion.Windows.Forms.Tools.GroupViewItem("General", 2, True, Nothing, "GroupViewItem2")})
 
+		Me.groupView1.Size = New Size(192,120)
 
+		Me.Controls.Add(Me.groupView1)
 
-Me.groupView2.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupViewItem() {New Syncfusion.Windows.Forms.Tools.GroupViewItem("Windows Forms", 0, True, Nothing, "GroupViewItem0"), New Syncfusion.Windows.Forms.Tools.GroupViewItem("Components", 1, True, Nothing, "GroupViewItem1"), New Syncfusion.Windows.Forms.Tools.GroupViewItem("General", 2, True, Nothing, "GroupViewItem2")})
-
-Me.groupView1.Size = New Size(192,120)
-
-Me.Controls.Add(Me.groupView1)
-
-
+   ~~~
+   {:.prettyprint }
 
 ![](Navigation-Package_images/Navigation-Package_img55.jpeg)
-{:.image }
 
 
-##### Concepts and Features
+
+### Concepts and Features
 
 The following topics will help you become more familiar in using the GroupView control.
 
-###### GroupView Settings
+#### GroupView Settings
 
 This section discusses the various settings that can be applied to define the look and behavior of the GroupView control.
 
@@ -2886,7 +2889,7 @@ Appearance Settings
 
 The following table describes the properties that enhance the appearance of the GroupView control.
 
-_Table_ _553__: Property Table_
+_Table_ _553_: Property Table
 
 <table>
 <tr>
@@ -2905,7 +2908,7 @@ Gets / sets the border style for the GroupView control. It includes the followin
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2913,9 +2916,9 @@ this.groupView1.FlatLook = true;
 
 this.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2923,18 +2926,18 @@ Me.groupView1.FlatLook = True
 
 Me.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle 
 
-
+{% endhighlight %}
 
 The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook propertyto 'True'. 
 
 ![](Navigation-Package_images/Navigation-Package_img56.jpeg)
-{:.image }
+
 
 
 We can specify the border style for the GroupView control using the BorderStyle property.
 
 ![](Navigation-Package_images/Navigation-Package_img57.jpeg)
-{:.image }
+
 
 
 Behavior Settings 
@@ -2945,7 +2948,7 @@ Drag-and-Drop Effect
 
 This explains the drag-and-drop settings supported by the GroupView control.
 
-_Table_ _554__: Property Table_
+_Table_ _554_: Property Table
 
 <table>
 <tr>
@@ -2963,7 +2966,7 @@ Setting this property permits the user to drag any object inside the GroupView c
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2971,9 +2974,9 @@ this.groupView1.AllowDragDrop = true;
 
 this.groupView1.AllowDragAnyObject = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2981,11 +2984,13 @@ Me.groupView1.AllowDragDrop = True
 
 Me.groupView1.AllowDragAnyObject = True
 
+{% endhighlight %}
+
 Spacing
 
 Spacing can be provided between the GroupView Items, and between the GroupView control's left border and the GroupView Items using the properties given below.
 
-_Table_ _555__: Property Table_
+_Table_ _555_: Property Table
 
 <table>
 <tr>
@@ -3003,7 +3008,7 @@ It sets the height between adjacent GroupView Items.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3011,9 +3016,9 @@ this.groupView1.ItemXSpacing = 5;
 
 this.groupView1.ItemYSpacing = 10;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3021,17 +3026,17 @@ Me.groupView1.ItemXSpacing = 5
 
 Me.groupView1.ItemYSpacing = 10
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img58.jpeg)
-{:.image }
+
 
 
 Scroll Settings
 
 We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling propertyto 'True'.
 
-_Table_ _556__: Property Table_
+_Table_ _556_: Property Table
 
 <table>
 <tr>
@@ -3045,27 +3050,23 @@ Setting this property will delegate the GroupView's scrolling to the Parent Grou
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupView2.IntegratedScrolling = False;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.IntegratedScrolling = False
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img59.jpeg)
-{:.image }
 
 
-###### GroupView Items Settings
+
+#### GroupView Items Settings
 
 This section discusses the various settings that can be applied to the GroupView Items of the GroupView control. 
 
@@ -3079,31 +3080,27 @@ Text Highlighting
 
 The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the HighlightText property to 'True'.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupView1.HighlightText = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.HighlightText = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img60.jpeg)
-{:.image }
+
 
 
 Text Offset
 
 The following properties are used to set the text offset for the GroupView Items.
 
-_Table_ _557__: Property Table_
+_Table_ _557_: Property Table
 
 <table>
 <tr>
@@ -3127,11 +3124,10 @@ Sets the text offset for the GroupView Item being selected.</td></tr>
 SelectedTextOffset</td><td>
 Sets the text offset for the selected GroupView Item.</td></tr>
 </table>
-> ![](Navigation-Package_images/Navigation-Package_img61.jpeg)
-{:.image }
- _Note: HighlightText property must be set to 'True' in all the cases._
 
-[C#]
+> Note: HighlightText property must be set to 'True' in all the cases.
+
+{% highlight c# %}
 
 
 
@@ -3143,9 +3139,9 @@ this.groupView1.SelectedTextOffset = new System.Drawing.Point(30, 7);
 
 this.groupView1.SelectingTextOffset = new System.Drawing.Point(40, 8);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3157,27 +3153,27 @@ Me.groupView1.SelectedTextOffset = New System.Drawing.Point(30, 7)
 
 Me.groupView1.SelectingTextOffset = New System.Drawing.Point(40, 8)
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img62.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img63.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img64.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img65.jpeg)
-{:.image }
+
 
 
 The methods associated with these properties are given below.
 
-_Table_ _558__: Methods Table_
+_Table_ _558_: Methods Table
 
 <table>
 <tr>
@@ -3201,11 +3197,12 @@ Resets the SelectingTextOffset property to it's default value.</td></tr>
 ResetSelectedTextOffset</td><td>
 Resets the SelectedTextOffset property to it's default value.</td></tr>
 </table>
+
 Text Formatting
 
 The following table lists the text formatting properties of GroupView Control.
 
-_Table_ _559__: Property Table_
+_Table_ _559_: Property Table
 
 <table>
 <tr>
@@ -3228,14 +3225,14 @@ Specifies whether the GroupView Item's text should be wrapped when the control w
 
 
 ![](Navigation-Package_images/Navigation-Package_img66.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img67.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -3245,9 +3242,9 @@ this.groupView1.TextUnderline = true;
 
 this.groupView1.TextWrap = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3257,11 +3254,13 @@ Me.groupView1.TextUnderline = True
 
 Me.groupView1.TextWrap = True
 
+{% endhighlight %}
+
 In-Place Renaming
 
 It is possible to rename the specified GroupView Item at run-time using the InplaceRenameItem() method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3269,9 +3268,9 @@ It is possible to rename the specified GroupView Item at run-time using the Inpl
 
 this.groupView1.InplaceRenameItem(index);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3279,7 +3278,9 @@ this.groupView1.InplaceRenameItem(index);
 
 Me.groupView1.InplaceRenameItem(index)
 
-_Table_ _560__: Method Table_
+{% endhighlight %}
+
+_Table_ _560_: Method Table
 
 <table>
 <tr>
@@ -3299,7 +3300,7 @@ Highlighting Items and Text
 
 The color for highlighting Items and text during mouse hover can be specified using the properties given below.
 
-_Table_ _561__: Property Table_
+_Table_ _561_: Property Table
 
 <table>
 <tr>
@@ -3315,37 +3316,32 @@ Specifies the color for highlighting the GroupView Items when the mouse is moved
 HighlightTextColor</td><td>
 Specifies the color for highlighting the text of the GroupView Items when the mouse is moved over it.</td></tr>
 </table>
-> ![](Navigation-Package_images/Navigation-Package_img68.jpeg)
-{:.image }
-_Note: HighlightText property must be set to 'True' in both the cases._
 
-[C#]
+> Note: HighlightText property must be set to 'True' in both the cases.
 
-
+{% highlight c# %}
 
 this.groupView1.HighlightItemColor = System.Drawing.Color.LavendarBlush;
 
 this.groupView1.HighlightTextColor = System.Drawing.Color.Purple;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.HighlightItemColor = System.Drawing.Color.LavendarBlush
 
 Me.groupView1.HighlightTextColor = System.Drawing.Color.Purple
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img69.jpeg)
-{:.image }
+
 
 
 The following table lists the methods related to the above properties.
 
-_Table_ _562__: Methods Table_
+_Table_ _562_: Methods Table
 
 <table>
 <tr>
@@ -3365,7 +3361,7 @@ Highlighting Selected Items and Text
 
 The color for highlighting selected Items and text can be specified using the properties given below.
 
-_Table_ _563__: Property Table_
+_Table_ _563_: Property Table
 
 <table>
 <tr>
@@ -3397,11 +3393,10 @@ Specifies the color used to draw the background of the GroupView Item being sele
 SelectingTextColor</td><td>
 Specifies the color used to draw the text of the GroupView Item being selected.</td></tr>
 </table>
-> ![](Navigation-Package_images/Navigation-Package_img70.jpeg)
-{:.image }
- _Note: HighlightText property must be set to 'True' in all the cases._
 
-[C#]
+> Note: HighlightText property must be set to 'True' in all the cases.
+
+{% highlight c# %}
 
 
 
@@ -3417,11 +3412,9 @@ this.groupView1.SelectingItemColor = System.Drawing.Color.PeachPuff;
 
 this.groupView1.SelectingTextColor = System.Drawing.Color.Red;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.SelectedHighlightItemColor = System.Drawing.Color.LightBlue
 
@@ -3435,23 +3428,23 @@ Me.groupView1.SelectingItemColor = System.Drawing.Color.PeachPuff
 
 Me.groupView1.SelectingTextColor = System.Drawing.Color.Red
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img71.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img72.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img73.jpeg)
-{:.image }
+
 
 
 The following table lists the methods related to the above properties.
 
-_Table_ _564__: Property Table_
+_Table_ _564_: Property Table
 
 <table>
 <tr>
@@ -3489,7 +3482,7 @@ Orientation Settings for GroupView Item
 
 The following table lists the properties related to the orientation of GroupView Items.
 
-_Table_ _565__: Property Table_
+_Table_ _565_: Property Table
 
 <table>
 <tr>
@@ -3515,7 +3508,7 @@ Specifies the orientation for the GroupView Items. The options included are as f
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3527,9 +3520,9 @@ this.groupView1.ShowFlowViewItemText = true;
 
 this.groupView1.Orientation = Syncfusion.Windows.Forms.Tools.GroupViewOrientation.Horizontal;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3541,35 +3534,33 @@ Me.groupView1.ShowFlowViewItemText = True
 
 Me.groupView1.Orientation = Syncfusion.Windows.Forms.Tools.GroupViewOrientation.Horizontal
 
-
+{% endhighlight %}
 
 The GroupView Items in the GroupView control can be arranged in the horizontal and vertical direction, with or without displaying text. FlowView property displays the GroupView Items with images and without text. 
 
 If you want to show the GroupView Item's text in the FlowView mode then set the ShowFlowViewItemText property to 'True'. You can also control the length of the GroupView Item's text in the FlowView mode using the FlowViewItemTextLength property.
 
 ![](Navigation-Package_images/Navigation-Package_img74.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img75.jpeg)
-{:.image }
+
 
 
 The Orientation property determines the direction of display for the GroupView Items. 
 
 ![](Navigation-Package_images/Navigation-Package_img76.jpeg)
-{:.image }
 
 
-###### Image Settings of GroupView 
+
+#### Image Settings of GroupView 
 
 This section describes the image options available for GroupView.
 
 To add images to the GroupView, ImageListcontrol must be added to the form with images. ImageList control containing large or small images can be set using the properties given below.
 
-> ![](Navigation-Package_images/Navigation-Package_img77.jpeg)
-{:.image }
- _Note: If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list._
+> Note: If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list.
 
 <table>
 <tr>
@@ -3591,7 +3582,7 @@ It contains small images (16*16) to associate with the control. SmallImageView m
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3601,9 +3592,9 @@ this.groupView1.SmallImageView = true;
 
 this.groupView1.SmallImageList = this.imageList1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3613,47 +3604,45 @@ Me.groupView1.SmallImageView = True
 
 Me.groupView1.SmallImageList = Me.imageList1
 
-> ![](Navigation-Package_images/Navigation-Package_img78.jpeg)
-{:.image }
- _Note : Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
+{% endhighlight %}
+
+> Note : Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor.
 
 ![](Navigation-Package_images/Navigation-Package_img79.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img80.jpeg)
-{:.image }
+
 
 
 Highlighting Images 
 
 We can highlight the image of the GroupView Item when the mouse is moved over it by setting the HighlightImage property to 'True'.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupView1.HighLightImage = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.groupView1.HighLightImage = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img81.jpeg)
-{:.image }
+
 
 
 Image Offset Settings
 
 The following properties are used to set the image offset for the GroupView Items.
 
-_Table_ _567__: Property Table_
+_Table_ _567_: Property Table
 
 <table>
 <tr>
@@ -3677,11 +3666,10 @@ Gets / sets the image offset when the mouse is moved over the selected GroupView
 HighlightImageOffset</td><td>
 Gets / sets the image offset for the highlighted GroupView Item. </td></tr>
 </table>
-> ![](Navigation-Package_images/Navigation-Package_img82.jpeg)
-{:.image }
- _Note: HighlightImage property must be set to 'True' in all the cases._
 
-[C#]
+> Note: HighlightImage property must be set to 'True' in all the cases.
+
+{% highlight c# %}
 
 
 
@@ -3693,9 +3681,9 @@ this.groupView1.HighlightImageOffset = new System.Drawing.Point(5, 5);
 
 this.groupView1.SelectedHighlightImageOffset = new System.Drawing.Point(5, 5);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3707,11 +3695,11 @@ Me.groupView1.HighlightImageOffset = New System.Drawing.Point(5, 5)
 
 Me.groupView1.SelectedHighlightImageOffset = New System.Drawing.Point(5, 5)
 
-
+{% endhighlight %}
 
 The following table lists the methods related to the above properties.
 
-_Table_ _568__: Property Table_
+_Table_ _568_: Property Table
 
 <table>
 <tr>
@@ -3735,6 +3723,7 @@ Resets the SelectedHighlightImageOffset property to it's default value.</td></tr
 ResetHighlightImageOffset</td><td>
 Resets the HighlightImageOffset property to it's default value.</td></tr>
 </table>
+
 Image Spacing
 
 We can provide spacing between the highlighted edge of a GroupView Item and the image by setting the ImageSpacing property to integer values. 
@@ -3743,59 +3732,51 @@ HighlightImage propertymust be set to 'True'.
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupView1.ImageSpacing = 7;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.ImageSpacing = 7
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img83.jpeg)
-{:.image }
 
 
-###### Applying Themes
+
+#### Applying Themes
 
 The Themes Enabled property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by setting the ThemesEnabled property of GroupView to 'True'. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupView1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img84.jpeg)
-{:.image }
+
 
 
 Refer to Interactive Features topic for information on Button View.
 
-###### Interactive Features
+#### Interactive Features
 
 User can determine whether the particular GroupView Item is selected or not using the ButtonView and ClipSelectionBounds properties. ButtonView displays the selected GroupView Item in the pressed state.
 
 ButtonView can be enabled in the GroupView control at design-time by setting the SelectedItem property to integer values which in turn represents the GroupView Item. ClipSelectionBounds displays a white border around the selected GroupView Item.
 
-_Table_ _569__: Property Table_
+_Table_ _569_: Property Table
 
 <table>
 <tr>
@@ -3813,35 +3794,31 @@ Specifies whether the selection bounds of the GroupView Item are clipped around 
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.groupView1.ButtonView = true;
 
 this.groupView1.ClipSelectionBounds = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.groupView1.ButtonView = True
 
 Me.groupView1.ClipSelectionBounds = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img85.png)
-{:.image }
+
 
 
 ToolTips
 
 The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips property must be set to 'True' in order to make the tooltip visible.
 
-_Table_ _570__: Property Table_
+_Table_ _570_: Property Table
 
 <table>
 <tr>
@@ -3859,7 +3836,7 @@ Sets the visibility of the tooltip. The default value is set to 'False'.</td></t
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3869,9 +3846,9 @@ this.groupView1.GroupViewItems[0].ToolTipText = "GroupViewItem1";
 
 this.groupView1.ShowToolTips = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3881,17 +3858,17 @@ Me.groupView1.GroupViewItems(0).ToolTipText = "GroupViewItem1"
 
 Me.groupView1.ShowToolTips = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img86.jpeg)
-{:.image }
 
 
-###### Adding GroupView to GroupBar
+
+#### Adding GroupView to GroupBar
 
 GroupView controls can be created for each of the groups in the GroupBar and initialized with the appropriate set of property values that endow the control with the VS.NET toolbox list type of interface. The GroupView control can be added to the GroupBar by activating each GroupBar Item in turn and dropping the GroupView onto the GroupBar Item's client surface. This will add the GroupView control to the GroupBar Parent and associate it with the particular GroupBar Item. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3927,9 +3904,9 @@ this.groupViewItem3.Text = "CD Drive";
 
 this.groupViewItem3.Text = "Desktop";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3961,17 +3938,17 @@ Me.groupViewItem3.Text = "CD Drive"
 
 Me.groupViewItem3.Text = "Desktop"
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img87.jpeg)
-{:.image }
 
 
-###### GroupView Events
+
+#### GroupView Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _571__: Events Table_
+_Table_ _571_: Events Table
 
 <table>
 <tr>
@@ -4005,7 +3982,7 @@ It occurs when a GroupView Item in the GroupView control is highlighted.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4025,9 +4002,9 @@ this.groupView1.HighlightItemColor = System.Drawing.Color.AliceBlue;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4045,10 +4022,10 @@ Private Sub groupView1_GroupViewItemHighlighted(ByVal sender As Object, ByVal e 
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img88.jpeg)
-{:.image }
+
 
 
 GroupViewItemRenamed Event
@@ -4057,7 +4034,7 @@ It occurs when a GroupView Item has been renamed by an inplace edit operation.
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. The event properties associated with the GroupItemRenamedEventArgs are as follows.
 
-_Table_ _572__: Members Table_
+_Table_ _572_: Members Table
 
 <table>
 <tr>
@@ -4079,7 +4056,7 @@ Returns the index of the GroupBar Item being drawn.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4095,9 +4072,9 @@ this.listView1.Items.Add(listViewItem1);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4111,6 +4088,8 @@ Me.ListView1.Items.Add(listViewItem1)
 
 End Sub
 
+{% endhighlight %}
+
 GroupViewItemSelected Event
 
 It occurs when a GroupView Item in the GroupView control is selected.
@@ -4119,7 +4098,7 @@ Accessing the GroupView.SelectedItem property from within the GroupViewItemSelec
 
 The GroupView.SelectedItem property is accessed from within the handler to determine the selected item. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4139,9 +4118,9 @@ Trace.WriteLine(String.Concat("Selected Item = ", this.gvcWinForms.GroupViewItem
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4159,13 +4138,15 @@ MessageBox.Show([String].Concat("Selected Item Index = ", Me.groupView1.Selected
 
 End Sub 
 
+{% endhighlight %}
+
 GroupViewItemReordered Event
 
 It occurs when a GroupView Item in the GroupView control is reordered.
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4181,9 +4162,9 @@ this.listView1.Items.Add(listViewItem1);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4197,13 +4178,15 @@ Me.ListView1.Items.Add(listViewItem1)
 
 End Sub
 
+{% endhighlight %}
+
 ShowContextMenu Event
 
 The GroupBar and the GroupView control implement a ShowContextMenu event that is generated when the user right-clicks on the control. Applications can handle this event to create and display a Context Menu for the control. Both controls provide a ContextMenuItem property that returns the index of the GroupBar Item or the GroupView Item over which the mouse click occurred and this can be used to populate the menu with accurate item-specific contextual information. 
 
 The following code from the GroupBar Demo shows a sample handler for the GroupBar.ShowContextMenu event that uses the EssentialToolsXPMenus.PopupMenu class for the context menu. The handler accesses the control's GroupBar.ContextMenuItem property to ascertain whether the mouse click occurred over a GroupBar Item, and if so, to determine the identity of the particular item.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4265,9 +4248,9 @@ menu.Show(this.grpBar, this.grpBar.PointToClient(Cursor.Position));
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4325,11 +4308,11 @@ menu.Show(Me.grpBar, Me.grpBar.PointToClient(Cursor.Position))
 
 End Sub
 
-
+{% endhighlight %}
 
 The following code from the GroupView Demo shows a sample handler for the GroupView.ShowContextMenu event. The handler accesses the GroupView.HighlightedItem property to ascertain whether the mouse click occurred over a GroupView Item and populates the menu accordingly.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4371,9 +4354,9 @@ menu.Show(this.gvcWinForms, this.gvcWinForms.PointToClient(Cursor.Position));
 
 }   
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4417,25 +4400,23 @@ menu.Show(Me.gvcWinForms, Me.gvcWinForms.PointToClient(Cursor.Position))
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img89.jpeg)
-{:.image }
 
 
-##### Frequently Asked Questions
+
+### Frequently Asked Questions
 
 This section will help you become more familiar in using the GroupView control.
 
-###### How to drag-and-drop a GroupView Item into any other control (ListView control)
+#### How to drag-and-drop a GroupView Item into any other control (ListView control)
 
 You can handle the GroupView's DragOver Event to get the selected GroupView Item and then handle the ListView control's DragEnter and DragDrop events to drop the selected GroupView Item as a ListView item in the ListView control.
 
 The following code sample shows how this can be done.
 
-[C#]
-
-
+{% highlight c# %}
 
 private String str = String.Empty; 
 
@@ -4509,9 +4490,9 @@ this.listView1.Items.Add(item);
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4585,13 +4566,13 @@ Me.listView1.Items.Add(item)
 
 End Sub
 
-###### How to perform text drag-and-drop operation between a GroupView and a TextEditor control
+{% endhighlight %}
+
+#### How to perform text drag-and-drop operation between a GroupView and a TextEditor control
 
 You could perform text drag-and-drop operation between a TextEditor control like RichTextBox and GroupView by handling the GroupView's DragEnter and DragLeave events as shown below.
 
-[C#]
-
-
+{% highlight c# %}
 
 string draggedtext = "";
 
@@ -4635,9 +4616,9 @@ this.draggedtext = "";
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4675,15 +4656,15 @@ Me.draggedtext = ""
 
 End Sub
 
-###### How to set the GroupView control with no Items selected when the Button View is set to True
+{% endhighlight %}
+
+#### How to set the GroupView control with no Items selected when the Button View is set to True
 
 When ButtonView is set to 'True', the user cannot set the selected index to -1 to make it as not selected. As an alternative, set the Button View to 'False' as a default and in the GroupView's MouseDown event or GroupViewItemSelected event, set the Button View to 'True'.
 
 The following code snippet illustrates this.
 
-[C#]
-
-
+{% highlight c# %}
 
 // Set Button View in the MouseDown event.
 
@@ -4695,9 +4676,9 @@ this.groupView1.ButtonView = true;
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4709,17 +4690,16 @@ Me.groupView1.ButtonView = True
 
 End Sub
 
+{% endhighlight %}
 
 
-
-
-###### How to view the hidden Items in a GroupView programmatically
+#### How to view the hidden Items in a GroupView programmatically
 
 GroupView's BringItemIntoView method can be used to scroll down to a hidden item and bring that item into view.
 
 The following code snippet illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4729,9 +4709,9 @@ this.groupView1.SelectedItem = 20;
 
 this.groupView1.BringItemIntoView(20);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4741,7 +4721,9 @@ Me.groupView1.SelectedItem = 20
 
 Me.groupView1.BringItemIntoView(20)
 
-#### XPTaskBar
+{% endhighlight %}
+
+## XPTaskBar
 
 The XPTaskBar control simulates the new TaskBar feature popularized in Windows XP. The XPTaskBar is the encompassing control that can show one or more XPTaskBar Boxes. Each Box can in turn show user clickable command items represented by the XPTaskBar Item type. The box can also take a single child panel inside which you can drop any custom control. It also provides keyboard navigational support.
 
@@ -4752,16 +4734,14 @@ You can then add one or more XPTaskBar Items to the boxes using their Items prop
 The following screen shot illustrates the XPTaskBar and it's elements.
 
 ![](Navigation-Package_images/Navigation-Package_img90.jpeg)
-{:.image }
 
 
-See Also
 
-##### Features Overview
+### Features Overview
 
 This section lists the features of XPTaskBar.
 
-Features
+#### Features
 
 * Office2007 style for XPTaskBarBox in the XPTaskBar control.
 * Custom Colors can be applied for XPTaskBar control. See Visual Style topic.
@@ -4769,7 +4749,7 @@ Features
 
 
 ![](Navigation-Package_images/Navigation-Package_img91.jpeg)
-{:.image }
+
 
 
 * Behavior Settings
@@ -4822,12 +4802,12 @@ They can also be disabled by setting the Enabled property to 'False'.
 
 ToolTips can be provided for XPTaskBar Items.
 
-##### Control Overview
+### Control Overview
 
 The various sections of XPTaskBar and their descriptions are given below.
 
 ![](Navigation-Package_images/Navigation-Package_img92.jpeg)
-{:.image }
+
 
 
 XPTaskBar
@@ -4848,305 +4828,302 @@ See Also
 
 Concepts and Features
 
-##### Creating an XPTaskBar
+### Creating an XPTaskBar
 
 This tutorial will show you how a XPTaskBar is created through the following ways.
 
-###### Through Designer
+#### Through Designer
 
 In this tutorial, we will create a simple XPTaskBar.
 
 1. Add an XPTaskBar control from the toolbox onto your form and a new instance will be placed on your form. Dock the control to the left of the form. Set the DockPadding.All property to '5' on the XPTaskBar so that there will be some space between the XPTaskBar Box children and the XPTaskBar. 
 
-![](Navigation-Package_images/Navigation-Package_img93.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img93.jpeg)
 
 
 
 
-![](Navigation-Package_images/Navigation-Package_img94.jpeg)
-{:.image }
+
+   ![](Navigation-Package_images/Navigation-Package_img94.jpeg)
+
 
 
 2. To add an XPTaskBar Box, right click on the XPTaskBar control and select the Add Task Box verb. This will add an empty XPTaskBar Box instance. You can change it's Header Text property to change the text of the header.
 3. You can also add an XPTaskBar Box using the Add Task Box command in the Property Grid. 
 
-![](Navigation-Package_images/Navigation-Package_img95.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img95.jpeg)
 
 
-![](Navigation-Package_images/Navigation-Package_img96.jpeg)
-{:.image }
+
+   ![](Navigation-Package_images/Navigation-Package_img96.jpeg)
+
 
 
 4. Select the newly added XPTaskBar Box and open it's XPTaskBarItem Collection Editor. There you can add one or more XPTaskBar Items specifying the text, image (using the ImageIndex property), etc. for each item. To distinguish one item from the other, you can specify a unique Tag property for each item.
 
-![](Navigation-Package_images/Navigation-Package_img97.jpeg)
-{:.image }
+   ![](Navigation-Package_images/Navigation-Package_img97.jpeg)
 
 
-![](Navigation-Package_images/Navigation-Package_img98.jpeg)
-{:.image }
+
+   ![](Navigation-Package_images/Navigation-Package_img98.jpeg)
 
 
-![](Navigation-Package_images/Navigation-Package_img99.jpeg)
-{:.image }
+
+   ![](Navigation-Package_images/Navigation-Package_img99.jpeg)
 
 
-![](Navigation-Package_images/Navigation-Package_img100.jpeg)
-{:.image }
+
+   ![](Navigation-Package_images/Navigation-Package_img100.jpeg)
 
 
-> ![](Navigation-Package_images/Navigation-Package_img101.jpeg)
-{:.image }
- _Note: The XPTaskBar Boxes can also host a Panel control within it. During design time, users can simply drag and drop the panel on the box. In code, users can do this  by adding the panel to the Controls collection of XPTaskBarBox. The panel's width will be resized to fit, whereas it's height will be based on the PreferredChildPanelHeight property setting._ 
 
-###### Through Code
+> Note: The XPTaskBar Boxes can also host a Panel control within it. During design time, users can simply drag and drop the panel on the box. In code, users can do this  by adding the panel to the Controls collection of XPTaskBarBox. The panel's width will be resized to fit, whereas it's height will be based on the PreferredChildPanelHeight property setting._
+
+#### Through Code
 
 The following step by step procedure helps you to create XPTaskBar programmatically.
 
 1. Add the namespace Syncfusion.Windows.Forms.Tools.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+   ~~~ vbnet
 
+       Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Drag and drop an ImageList control onto the form and add images into it through the Images Collection Editor.
 3. Create instances for XPTaskBar control, XPTaskBar Box1, XPTaskBar Box2 and ImageList control.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.XPTaskBar xpTaskBar1;
+		private Syncfusion.Windows.Forms.Tools.XPTaskBar xpTaskBar1;
 
-private System.Windows.Forms.ImageList imageList1;
+		private System.Windows.Forms.ImageList imageList1;
 
-private Syncfusion.Windows.Forms.Tools.XPTaskBarBox xpTaskBarBox1;
+		private Syncfusion.Windows.Forms.Tools.XPTaskBarBox xpTaskBarBox1;
 
-private Syncfusion.Windows.Forms.Tools.XPTaskBarBox xpTaskBarBox2;
-
-
-
-this.xpTaskBar1 = new Syncfusion.Windows.Forms.Tools.XPTaskBar();
-
-this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-
-this.xpTaskBarBox1 = new Syncfusion.Windows.Forms.Tools.XPTaskBarBox();
-
-this.xpTaskBarBox2 = new Syncfusion.Windows.Forms.Tools.XPTaskBarBox();
+		private Syncfusion.Windows.Forms.Tools.XPTaskBarBox xpTaskBarBox2;
 
 
 
-[VB.NET]
+		this.xpTaskBar1 = new Syncfusion.Windows.Forms.Tools.XPTaskBar();
+
+		this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+
+		this.xpTaskBarBox1 = new Syncfusion.Windows.Forms.Tools.XPTaskBarBox();
+
+		this.xpTaskBarBox2 = new Syncfusion.Windows.Forms.Tools.XPTaskBarBox();
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		Private xpTaskBar1 As Syncfusion.Windows.Forms.Tools.XPTaskBar = New XPTaskBar()
+
+		Private imageList1 As System.Windows.Forms.ImageList 
+
+		Private xpTaskBarBox1 As Syncfusion.Windows.Forms.Tools.XPTaskBarBox
+
+		Private xpTaskBarBox2 As Syncfusion.Windows.Forms.Tools.XPTaskBarBox
 
 
+		Me.xpTaskBar1 = New Syncfusion.Windows.Forms.Tools.XPTaskBar() 
 
-Private xpTaskBar1 As Syncfusion.Windows.Forms.Tools.XPTaskBar = New XPTaskBar()
+		Me.imageList1 = New System.Windows.Forms.ImageList(Me.components) 
 
-Private imageList1 As System.Windows.Forms.ImageList 
+		Me.xpTaskBarBox1 = New Syncfusion.Windows.Forms.Tools.XPTaskBarBox() 
 
-Private xpTaskBarBox1 As Syncfusion.Windows.Forms.Tools.XPTaskBarBox
+		Me.xpTaskBarBox2 = New Syncfusion.Windows.Forms.Tools.XPTaskBarBox()
 
-Private xpTaskBarBox2 As Syncfusion.Windows.Forms.Tools.XPTaskBarBox
-
-
-
-Me.xpTaskBar1 = New Syncfusion.Windows.Forms.Tools.XPTaskBar() 
-
-Me.imageList1 = New System.Windows.Forms.ImageList(Me.components) 
-
-Me.xpTaskBarBox1 = New Syncfusion.Windows.Forms.Tools.XPTaskBarBox() 
-
-Me.xpTaskBarBox2 = New Syncfusion.Windows.Forms.Tools.XPTaskBarBox()
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Add XPTaskBar to the control collection.
 
-[C#]
+   ~~~ cs
 
 
 
-this.Controls.Add(this.xpTaskBar1);
+		this.Controls.Add(this.xpTaskBar1);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
+   
+		Me.Controls.Add(Me.xpTaskBar1)
 
-[VB.NET]
-
-
-
-Me.Controls.Add(Me.xpTaskBar1)
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Set the ImageList to XPTaskBar Box1 and XPTaskBar Box2.
 
-[C#]
+   ~~~ cs
+
+		this.xpTaskBarBox1.ImageList = this.imageList1;
+
+		this.xpTaskBarBox2.ImageList = this.imageList1;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-this.xpTaskBarBox1.ImageList = this.imageList1;
+		Me.xpTaskBarBox1.ImageList = Me.imageList1 
 
-this.xpTaskBarBox2.ImageList = this.imageList1;
+		Me.xpTaskBarBox2.ImageList = Me.imageList1
 
-
-
-[VB.NET]
-
-
-
-Me.xpTaskBarBox1.ImageList = Me.imageList1 
-
-Me.xpTaskBarBox2.ImageList = Me.imageList1
-
-
+   ~~~
+   {:.prettyprint }
 
 6. Set Header BackColor, Text and Item BackColor for XPTaskBar Box1 and XPTaskBar Box2.
 
-[C#]
+   ~~~ cs
 
 
 
-this.xpTaskBarBox1.HeaderBackColor = Color.Yellow;
+		this.xpTaskBarBox1.HeaderBackColor = Color.Yellow;
 
-this.xpTaskBarBox1.Text = "Header Text";
+		this.xpTaskBarBox1.Text = "Header Text";
 
-this.xpTaskBarBox1.ItemBackColor = Color.WhiteSmoke;
-
-
-
-this.xpTaskBarBox2.HeaderBackColor = Color.Pink;
-
-this.xpTaskBarBox2.Text = "Another Header Text";
-
-this.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke;
+		this.xpTaskBarBox1.ItemBackColor = Color.WhiteSmoke;
 
 
 
-[VB.NET]
+		this.xpTaskBarBox2.HeaderBackColor = Color.Pink;
+
+		this.xpTaskBarBox2.Text = "Another Header Text";
+
+		this.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ cs
 
 
 
-Me.xpTaskBarBox1.HeaderBackColor = Color.Yellow 
+		Me.xpTaskBarBox1.HeaderBackColor = Color.Yellow 
 
-Me.xpTaskBarBox1.Text = "Header Text" 
+		Me.xpTaskBarBox1.Text = "Header Text" 
 
-Me.xpTaskBarBox1.ItemBackColor = Color.WhiteSmoke 
-
-
-
-Me.xpTaskBarBox2.HeaderBackColor = Color.Pink 
-
-Me.xpTaskBarBox2.Text = "Another Header Text" 
-
-Me.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke
+		Me.xpTaskBarBox1.ItemBackColor = Color.WhiteSmoke 
 
 
+
+		Me.xpTaskBarBox2.HeaderBackColor = Color.Pink 
+
+		Me.xpTaskBarBox2.Text = "Another Header Text" 
+
+		Me.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke
+
+   ~~~
+   {:.prettyprint }
 
 7. Add XPTaskBar Items to the XPTaskBar Box1 and XPTaskBar Box2.
 
-[C#]
+   ~~~ cs
+
+		this.xpTaskBarBox1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
+
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, null, "", true, true, "XPTaskBarItem0", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
+
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, null, "", true, true, "XPTaskBarItem1", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
+
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, null, "", true, true, "XPTaskBarItem2", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
+
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, null, "", true, true, "XPTaskBarItem3", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)});
 
 
 
-this.xpTaskBarBox1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
+		this.xpTaskBarBox2.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
 
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, null, "", true, true, "XPTaskBarItem0", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, null, "", true, true, "XPTaskBarItem4", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
 
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, null, "", true, true, "XPTaskBarItem1", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, null, "", true, true, "XPTaskBarItem5", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
 
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, null, "", true, true, "XPTaskBarItem2", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, null, "", true, true, "XPTaskBarItem6", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
 
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, null, "", true, true, "XPTaskBarItem3", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)});
+					new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, null, "", true, true, "XPTaskBarItem7", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)});
 
+   ~~~
+   {:.prettyprint }
 
-
-this.xpTaskBarBox2.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, null, "", true, true, "XPTaskBarItem4", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, null, "", true, true, "XPTaskBarItem5", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, null, "", true, true, "XPTaskBarItem6", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, null, "", true, true, "XPTaskBarItem7", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)});
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.xpTaskBarBox1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
+
+		True, "XPTaskBarItem0", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, Nothing, "", True, _ 
+
+		True, "XPTaskBarItem1", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, Nothing, "", True, _ 
+
+		True, "XPTaskBarItem2", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, Nothing, "", True, _ 
+
+		True, "XPTaskBarItem3", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)}) 
 
 
 
-Me.xpTaskBarBox1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
+		Me.xpTaskBarBox2.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
 
-True, "XPTaskBarItem0", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, Nothing, "", True, _ 
+		True, "XPTaskBarItem4", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, Nothing, "", True, _ 
 
-True, "XPTaskBarItem1", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, Nothing, "", True, _ 
+		True, "XPTaskBarItem5", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, Nothing, "", True, _ 
 
-True, "XPTaskBarItem2", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, Nothing, "", True, _ 
+		True, "XPTaskBarItem6", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, Nothing, "", True, _ 
 
-True, "XPTaskBarItem3", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)}) 
+		True, "XPTaskBarItem7", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)}) 
 
-
-
-Me.xpTaskBarBox2.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
-
-True, "XPTaskBarItem4", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, Nothing, "", True, _ 
-
-True, "XPTaskBarItem5", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, Nothing, "", True, _ 
-
-True, "XPTaskBarItem6", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, Nothing, "", True, _ 
-
-True, "XPTaskBarItem7", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)}) 
-
-
+   ~~~
+   {:.prettyprint }
 
 8. Finally add the created XPTaskBar Boxes to the XPTaskBar control.
 
-[C#]
+   ~~~ cs  
 
 
 
-this.xpTaskBar1.Controls.Add(this.xpTaskBarBox1);
+		this.xpTaskBar1.Controls.Add(this.xpTaskBarBox1);
 
-this.xpTaskBar1.Controls.Add(this.xpTaskBarBox2);
+		this.xpTaskBar1.Controls.Add(this.xpTaskBarBox2);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox1)
 
+		Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox2)
 
-
-Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox1)
-
-Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox2)
-
-
+   ~~~
+   {:.prettyprint }
 
 ![](Navigation-Package_images/Navigation-Package_img102.jpeg)
-{:.image }
 
 
-##### Concepts and Features
+
+### Concepts and Features
 
 This section describes the fundamentals and core concepts of XPTaskBar control.
 
 It includes the below given topics.
 
-###### XPTaskBar Settings 
+#### XPTaskBar Settings 
 
 The behavior of the XPTaskBar can be controlled using the properties given below.
 
@@ -5154,7 +5131,7 @@ Behavior Settings
 
 This section discusses the behavior settings of the XPTaskBar.
 
-_Table_ _573__: Property Table_
+_Table_ _573_: Property Table
 
 <table>
 <tr>
@@ -5205,7 +5182,7 @@ Yes. Set this property as false to make changes on Horizontal alignment. this.xp
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5217,9 +5194,9 @@ this.xpTaskBar1.ColWidthOnHorizontalAlignment = 100;
 
 this.xpTaskBar1.VerticalLayout = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5231,14 +5208,14 @@ Me.xpTaskBar1.ColWidthOnHorizontalAlignment = 100
 
 Me.xpTaskBar1.VerticalLayout = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img103.jpeg)
-{:.image }
+
 
 
 ![](Navigation-Package_images/Navigation-Package_img104.jpeg)
-{:.image }
+
 
 
 Scroll Settings 
@@ -5247,7 +5224,7 @@ Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBar
 
 In the Horizontal Layout mode, the horizontal scrollbar appears on setting the ColWidthOnHorizontalLayout property to large values.
 
-_Table_ _574__: Property Table_
+_Table_ _574_: Property Table
 
 <table>
 <tr>
@@ -5269,7 +5246,7 @@ Gets /sets the minimum size of the AutoScroll.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5279,9 +5256,9 @@ this.xpTaskBar1.AutoScrollMargin = new System.Drawing.Size(5, 5);
 
 this.xpTaskBar1.AutoScrollMinSize = new System.Drawing.Size(3, 3);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5296,10 +5273,10 @@ Me.xpTaskBar1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
 The following screen shot illustrates the above settings.
 
 ![](Navigation-Package_images/Navigation-Package_img105.jpeg)
-{:.image }
 
+{% endhighlight %}
 
-###### XPTaskBar Box Settings 
+#### XPTaskBar Box Settings 
 
 This section discusses the appearance and behavior settings of the XPTaskBar Box.
 
@@ -5311,7 +5288,7 @@ This section lists the properties used for customizing the header of the XPTaskB
 
 The Header of the XPTaskBar Box contains the Collapse button and text. The header text can be changed using the Text property of the XPTaskBar Box. The other properties are discussed below.
 
-_Table_ _575__: Property Table_
+_Table_ _575_: Property Table
 
 <table>
 <tr>
@@ -5348,12 +5325,12 @@ Gets / sets a value indicating whether the header text should be clipped.</td></
 The following screen shot illustrates the above settings.
 
 ![](Navigation-Package_images/Navigation-Package_img106.jpeg)
-{:.image }
 
 
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -5369,9 +5346,9 @@ this.xpTaskBarBox1.HeaderTextAlign = System.Drawing.StringAlignment.Center;
 
 this.xpTaskBarBox1.ClipHeaderText = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5387,6 +5364,8 @@ Me.xpTaskBarBox1.HeaderTextAlign = System.Drawing.StringAlignment.Center
 
 Me.xpTaskBarBox1.ClipHeaderText = True
 
+{% endhighlight %}
+
 See Also
 
 Image Settings
@@ -5397,7 +5376,7 @@ This section discusses the button settings of the XPTaskBar Box.
 
 The collapsed button is used to expand or collapse the XPTaskBar Items. The following table lists the properties associated with collapsing or expanding the XPTaskBar Box.
 
-_Table_ _576__: Property Table_
+_Table_ _576_: Property Table
 
 <table>
 <tr>
@@ -5419,7 +5398,7 @@ Specifies whether the XPTaskBar Box should expand or collapse only when the coll
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5429,9 +5408,9 @@ this.xpTaskBarBox1.ShowCollapseButton = true;
 
 this.xpTaskBarBox1.ToggleByButton = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5441,15 +5420,15 @@ Me.xpTaskBarBox1.ShowCollapseButton = True
 
 Me.xpTaskBarBox1.ToggleByButton = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img107.jpeg)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _577__: Methods Table_
+_Table_ _577_: Methods Table
 
 <table>
 <tr>
@@ -5469,7 +5448,7 @@ Animation Settings
 
 Animation during expanding / collapsing of the Taskbar items in an XPTaskBar can be controlled using the following properties. Animation can also be enabled while adding or removing any TaskBar items.
 
-_Table_ _578__: Property Table_
+_Table_ _578_: Property Table
 
 <table>
 <tr>
@@ -5491,7 +5470,7 @@ It indicates whether animation is enabled when items are added / removed.</td></
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5501,9 +5480,9 @@ this.xpTaskBarBox1.AnimationPositionsCount = 20;
 
 this.xpTaskBarBox1.UseAdditionalAnimation = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5513,10 +5492,10 @@ Me.xpTaskBarBox1.AnimationPositionsCount = 20
 
 Me.xpTaskBarBox1.UseAdditionalAnimation = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img108.jpeg)
-{:.image }
+
 
 
 Mouse Hover Settings 
@@ -5525,7 +5504,7 @@ This section discusses the mouse hover settings of the XPTaskBar control.
 
 The position of the mouse with respect to the control can be known using the properties given below.
 
-_Table_ _579__: Property Table_
+_Table_ _579_: Property Table
 
 <table>
 <tr>
@@ -5543,7 +5522,7 @@ Indicates whether the mouse is currently over the header portion.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5551,9 +5530,9 @@ this.xpTaskBarBox1.HitTaskBoxArea= true;
 
 this.xpTaskBarBox1.HeaderHit= true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5561,11 +5540,13 @@ Me.xpTaskBarBox1.HitTaskBoxArea = True
 
 Me.xpTaskBarBox1.HeaderHit = True
 
+{% endhighlight %}
+
 Integrating Child Controls to the XPTaskBar Box 
 
 To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the PreferredChildPanelHeight property.
 
-_Table_ _580__: Property Table_
+_Table_ _580_: Property Table
 
 <table>
 <tr>
@@ -5579,24 +5560,24 @@ It sets the height of the panel hosted inside the XPTaskBar Boxes.  </td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.xpTaskBarBox1.PreferredChildPanelHeight = 35;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.xpTaskBarBox1.PreferredChildPanelHeight = 35
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img109.jpeg)
-{:.image }
+
 
 
 XPTaskBar- ToolTips
@@ -5605,7 +5586,7 @@ ToolTips can be provided for the TaskBar Items of the XPTaskBar Box. The interes
 
 The ToolTipText property of the XPTaskBar control can be used to set the text of the tooltip, while the tooltip can be displayed using the ShowToolTip property.
 
-_Table_ _581__: Property Table_
+_Table_ _581_: Property Table
 
 <table>
 <tr>
@@ -5623,7 +5604,7 @@ Sets the visibility of the tooltip. The default value is set to 'False'.</td></t
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5633,9 +5614,9 @@ this.xpTaskBarBox1.Items[1].ToolTipText = "Header Image, Gradient Header Brush";
 
 this.xpTaskBarBox1.ShowToolTip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5645,23 +5626,19 @@ Me.xpTaskBarBox1.Items(1).ToolTipText = "Header Image, Gradient Header Brush"
 
 Me.xpTaskBarBox1.ShowToolTip = True
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img110.jpeg)
-{:.image }
 
 
-###### Visual Style
+
+#### Visual Style
 
 We can give Office2007 look and feel for the XPTaskBarBox control using Style property. It supports all the three Office2007 Color Schemes. Specify the color schemes in Office2007ColorScheme property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Office2007;
-
-
 
 //Sets the Blue Color Scheme
 
@@ -5675,9 +5652,9 @@ this.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme
 
 this.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5697,17 +5674,17 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.S
 
 Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img111.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the XPTaskBar control by setting Office2007ColorScheme to "_Managed_", and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5715,9 +5692,9 @@ this.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme
 
 Office2007Colors.ApplyManagedColors(this, Color.DarkGreen);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5725,17 +5702,17 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.M
 
 Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img112.jpeg)
-{:.image }
 
 
-###### XPTaskBar Events
+
+#### XPTaskBar Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _582__: Events Table_
+_Table_ _582_: Events Table
 
 <table>
 <tr>
@@ -5771,7 +5748,8 @@ This event occurs when the header portion of the XPTaskBar Box gets drawn.</td><
 ProvideItemsBackgroundBrush</td><td>
 This event occurs when the Items portion of the XPTaskBar Box gets drawn.</td></tr>
 </table>
-###### Padding
+
+#### Padding
 
 Padding Settings for XPTaskBar
 
@@ -5779,7 +5757,7 @@ The interior spacing of the XPTaskBar control can be specified by setting the Do
 
 The horizontal and vertical padding can be specified using the HorizontalPadding and VerticalPadding properties. The default value of the both is 'Zero'.
 
-_Table_ _583__: Property Table_
+_Table_ _583_: Property Table
 
 <table>
 <tr>
@@ -5801,7 +5779,7 @@ Specifies vertical spacing between the layout taskbar.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5811,9 +5789,9 @@ this.xpTaskBar1.HorizontalPadding = 3;
 
 this.xpTaskBar1.VerticalPadding = 3;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5823,17 +5801,17 @@ Me.xpTaskBar1.HorizontalPadding = 3
 
 Me.xpTaskBar1.VerticalPadding = 3
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img113.jpeg)
-{:.image }
+
 
 
 Padding Settings for XPTaskBar Box Header
 
 Padding provides spacing between the text of the header and it's borders. Horizontal and vertical padding can be set using the PADX and PADY properties.
 
-_Table_ _584__: Property Table_
+_Table_ _584_: Property Table
 
 <table>
 <tr>
@@ -5851,7 +5829,7 @@ It sets vertical padding provided in pixels between the text of the header and h
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5859,9 +5837,9 @@ this.xpTaskBarBox1.PADX = 7;
 
 this.xpTaskBarBox1.PADY = 7;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5869,17 +5847,17 @@ Me.xpTaskBarBox1.PADX = 7
 
 Me.xpTaskBarBox1.PADY = 7
 
-
+{% endhighlight %}
 
 The following figure displays the XPTaskBar Box with padding settings.
 
 
 
 ![](Navigation-Package_images/Navigation-Package_img114.jpeg)
-{:.image }
 
 
-###### XPTaskBar- Image Settings 
+
+#### XPTaskBar- Image Settings 
 
 This section discusses the image settings available in XPTaskBar. 
 
@@ -5887,7 +5865,7 @@ Adding Images to the XPTaskBar Box Header
 
 We can add images to the header of the XPTaskBar Box using the ImageList control and some properties that are discussed below.
 
-_Table_ _585__: Property Table_
+_Table_ _585_: Property Table
 
 <table>
 <tr>
@@ -5907,7 +5885,7 @@ Gets / sets the index into the HeaderImageList.</td></tr>
 
 Drag and drop the ImageList control onto the form and add images to it using the Image Collection Editor. To include an image in the header, set the HeaderImageList property to an ImageList containing the image and also set the HeaderImageIndex property to refer to a specific image within the above list.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5917,9 +5895,9 @@ this.xpTaskBarBox1.HeaderImageList = this.imageList2;
 
 this.xpTaskBarBox1.HeaderImageIndex = 0;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5929,17 +5907,17 @@ Me.xpTaskBarBox1.HeaderImageList = Me.imageList2
 
 Me.xpTaskBarBox1.HeaderImageIndex = 0
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img115.jpeg)
-{:.image }
+
 
 
 Adding Images to XPTaskBar Items
 
 Images can be easily associated with the ImageIndex property of the XPTaskBar Items.
 
-_Table_ _586__: Property Table_
+_Table_ _586_: Property Table
 
 <table>
 <tr>
@@ -5959,7 +5937,7 @@ It sets the image index into the ImageList that contains images for the TaskBar 
 
 The ImageIndex of the XPTaskBar Items can be specified in the XPTaskBarItem Collection Editor.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5971,9 +5949,9 @@ this.xpTaskBarBox1.Items[1].ImageIndex = 1;
 
 this.xpTaskBarBox1.Items[2].ImageIndex = 2;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5985,17 +5963,17 @@ Me.xpTaskBarBox1.Items(1)ImageIndex = 1
 
 Me.xpTaskBarBox1.Items(2)ImageIndex = 2
 
-
+{% endhighlight %}
 
 ![](Navigation-Package_images/Navigation-Package_img116.jpeg)
-{:.image }
 
 
-##### XPTaskBar Events
+
+### XPTaskBar Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _587__: Property Table_
+_Table_ _587_: Property Table
 
 <table>
 <tr>
@@ -6031,13 +6009,14 @@ This event occurs when the header portion of the XPTaskBar Box gets drawn.</td><
 ProvideItemsBackgroundBrush</td><td>
 This event occurs when the Items portion of the XPTaskBar Box gets drawn.</td></tr>
 </table>
-###### AfterAnimation Event
+
+#### AfterAnimation Event
 
 This event gets called after the XPTaskBar Box box expands or collapses.
 
 The event handler receives an argument of the type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6053,9 +6032,9 @@ this.listView1.Items.Add(listViewItem);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6069,13 +6048,15 @@ Me.listView1.Items.Add(listViewItem)
 
 End Sub
 
-###### BeforeAnimation Event
+{% endhighlight %}
+
+#### BeforeAnimation Event
 
 This event gets called before the XPTaskBar Box expands or collapses.
 
 The event handler receives an argument of the type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6091,9 +6072,9 @@ this.listView1.Items.Add(listViewItem);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6107,13 +6088,15 @@ Me.listView1.Items.Add(listViewItem)
 
 End Sub
 
-###### CollapsedStateChanged Event
+{% endhighlight %}
+
+#### CollapsedStateChanged Event
 
 This event occurs after the XPTaskBar Box has been collapsed or expanded.
 
 The event handler receives an argument of the type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6129,9 +6112,9 @@ this.listView1.Items.Add(listViewItem);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6145,13 +6128,15 @@ Me.listView1.Items.Add(listViewItem)
 
 End Sub
 
-###### ItemClick Event
+{% endhighlight %}
+
+#### ItemClick Event
 
 The XPTaskBar Box uses this event to make an XPTaskBar Item do some task when the user clicks on it. For this event, the user should set unique names for the XPTaskBar Items through the Tag property in the Items Collection Editor.
 
 The event handler receives an argument of the type XPTaskBarItemClickArgs. The event property associated with the XPTaskBarItemClickArgs is as follows.
 
-_Table_ _588__: Member Table_
+_Table_ _588_: Member Table
 
 <table>
 <tr>
@@ -6165,7 +6150,7 @@ Returns the item that was clicked.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6193,9 +6178,9 @@ break;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6215,13 +6200,15 @@ End Select
 
 End Sub
 
-###### MinimumSizeChanged Event
+{% endhighlight %}
+
+#### MinimumSizeChanged Event
 
 This event occurs when the MinimumSize property is changed. The MinimumSize property specifies the minimum size with which  the XPTaskBar is to be created.
 
 The event handler receives an argument of type EventArgs. The event properties associated with the EventArgs are as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6247,9 +6234,9 @@ Console.WriteLine(" MinimumSizeChanged Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6273,15 +6260,15 @@ Private Sub xpTaskBar1_MinimumSizeChanged(ByVal sender As Object, ByVal e As Eve
 
 End Sub
 
+{% endhighlight %}
 
-
-###### ProvideHeaderBackgroundBrush Event
+#### ProvideHeaderBackgroundBrush Event
 
 This event occurs when the header portion of the XPTaskBar Box gets drawn. Users may custom draw the header portion of the XPTaskBar Box with different colors.
 
 The event handler receives an argument of type ProvideBrushEventArgs. The event properties associated with the ProvideBrushEventArgs are as follows.
 
-_Table_ _589__: Members Table_
+_Table_ _589_: Members Table
 
 <table>
 <tr>
@@ -6305,7 +6292,7 @@ Returns the Graphics Path for which a brush is requested.</td></tr>
 
 The following example handles the ProvideBrushEventHandler event of a XPTaskBar Box and performs custom background drawing.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6353,9 +6340,9 @@ args.Brush = lgBrush;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6397,7 +6384,9 @@ End If
 
 End Sub 
 
-###### ProvideItemsBackgroundBrush Event
+{% endhighlight %}
+
+#### ProvideItemsBackgroundBrush Event
 
 This event occurs when the Items portion of the XPTaskBar Box gets drawn. Users may custom draw the Items portion of the XPTaskBar Box with different colors.
 
@@ -6405,7 +6394,7 @@ The event handler receives an argument of type ProvideBrushEventArgs.
 
 The following example handles the ProvideBrushEventHandler event of a XPTaskBar Box and performs custom background drawing.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6433,9 +6422,9 @@ args.Brush = lgbrush;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6461,45 +6450,43 @@ args.Brush = lgbrush
 
 End Sub
 
-##### Frequently Asked Questions
+{% endhighlight %}
+
+### Frequently Asked Questions
 
 This section will help you become more familiar in using the XPTaskBar control.
 
-###### Is it possible to sort the XPTaskBarItems of an XPTaskBarBox?
+#### Is it possible to sort the XPTaskBarItems of an XPTaskBarBox?
 
 Yes. It is possible to sort the XPTaskBarItems of an XPTaskBarBox control, by calling the Sort() method as follows. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.xpTaskBarBox1.Items.Sort();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.xpTaskBarBox1.Items.Sort()
 
-###### How to change the order of the XPTaskBar Boxes in the designer after creating them
+{% endhighlight %}
+
+#### How to change the order of the XPTaskBar Boxes in the designer after creating them
 
 You can right-click on the XPTaskBar Box in the designer and select the "Bring To Front" or "Send To Back" verbs to reorder them. In code this will just change the order in which the XPTaskBar Boxes are added to the parent XPTaskBar, which in turn will affect the order in which they are shown.
 
 You can also drag one box over the other to change the order during designtime. 
 
 ![](Navigation-Package_images/Navigation-Package_img117.jpeg)
-{:.image }
 
 
-###### How to custom paint the XPTaskBar background to have a gradient look and feel
+
+#### How to custom paint the XPTaskBar background to have a gradient look and feel
 
 The XPTaskBar's Paint event can be handled to custom draw the background using the LinearGradientBrush as given below.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void xpTaskBar1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
 
@@ -6537,9 +6524,9 @@ lgb.Dispose();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6577,31 +6564,29 @@ lgb.Dispose()
 
 End Sub
 
-###### How to set the focus rectangle for XPTaskBarItem after selection
+{% endhighlight %}
+
+#### How to set the focus rectangle for XPTaskBarItem after selection
 
 This can be achieved by setting DrawFocusRect property to _true_. The following code snippet illustrates this.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.xpTaskBarBox1.DrawFocusRect = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.xpTaskBarBox1.DrawFocusRect = True
+
+{% endhighlight %}
 
 ###### How to remove the header of XPTaskBarBox in an XPTaskBar
 
 For this, you need to derive XPTaskBarBox class, and override DetermineHeaderHeight method as follows.
 
-[C#]
-
-
+{% highlight c# %}
 
 public class CustomTaskBarbox : XPTaskBarBox
 
@@ -6613,11 +6598,7 @@ public class CustomTaskBarbox : XPTaskBarBox
 
     {
 
-
-
     }
-
-
 
     protected override int DetermineHeaderHeight(Graphics g)
 
@@ -6627,13 +6608,11 @@ public class CustomTaskBarbox : XPTaskBarBox
 
     }
 
-
-
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6655,39 +6634,35 @@ Public Class CustomTaskBarbox : Inherits XPTaskBarBox
 
 End Class
 
-###### How to align the XPTaskBarItems in XPTaskBar
+{% endhighlight %}
+
+#### How to align the XPTaskBarItems in XPTaskBar
 
 We can arrange the XPTaskBarItems horizontally or vertically using BoxItemsAlignment property. The following code snippet can be used.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.xpTaskBar1.BoxItemsAlignment = Syncfusion.Windows.Forms.Tools.XPTaskBar.ItemsAlignment.Horizontal;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.xpTaskBar1.BoxItemsAlignment = Syncfusion.Windows.Forms.Tools.XPTaskBar.ItemsAlignment.Horizontal
 
-###### How to drag and drop a node from TreeViewAdv to XPTaskBar?
+{% endhighlight %}
+
+#### How to drag and drop a node from TreeViewAdv to XPTaskBar?
 
 This can be achieved by handling the ItemDrag event of TreeViewAdv and DragDrop event of the XPTaskBar.
 
 The following code snippet illustrates this.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void treeViewAdv1_ItemDrag(object sender, System.Windows.Forms.ItemDragEventArgs e)
 
 {
-
-
 
     TreeViewAdv treeViewAdv = (TreeViewAdv)sender;
 
@@ -6731,5 +6706,5 @@ private void xPTaskBar1_DragDrop(object sender, System.Windows.Forms.DragEventAr
 
 } 
 
-
+{% endhighlight %}
 

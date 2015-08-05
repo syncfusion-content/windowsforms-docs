@@ -2,12 +2,12 @@
 layout: post
 title: Wizard-Package
 description: wizard package
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Wizard Package
+# Wizard Package
 
 Wizard Package enables to build a rich interactive and customizable interface that holds many pages together that helps to break up a complex task and guides the end user through a set of simple procedures to perform or to obtain data that are categorically divided in every page.
 
@@ -17,16 +17,17 @@ It consists of two controls.
 
 * Wizard Control - It provides a quick and easy way to create such applications.
 * XPTaskPane - It provides a different view to wizards as seen in the Task Pane feature in Office XP.
-#### WizardControl
+
+## WizardControl
 
 
 The WizardControl can display a set of wizard pages in the given order. It also provides the user, the ability to browse between these pages using the 'browsing' buttons. The WizardControl implements the classic Wizard interface used in many windows applications. It also contains inbuilt child controls like labels, picturebox and gradient panel to let the user customize it effectively.
 
 ![](Wizard-Package_images/Wizard-Package_img1.jpeg)
-{:.image }
 
 
-##### Features
+
+### Features
 
 This section discusses the Features of Wizard control.
 
@@ -37,13 +38,14 @@ This section discusses the Features of Wizard control.
 * Show / Hide Button state - The Wizard control allows the user to show / hide / enable / disable the different buttons when a wizard page is activated.
 * Event handling - We can handle events at the general Wizard level or at the Wizard Page-specific level. Global renderer child controls that appears on all the different pages of the Wizard control.
 * Page validation - WizardControl Pages can be validated when the browsing button is clicked or when the page is selected.
-##### Overview
+
+### Overview
 
 
 Components of a Wizard Control
 
 ![](Wizard-Package_images/Wizard-Package_img2.jpeg)
-{:.image }
+
 
 
 * The Banner Panel is a GradientPanel control that is docked on top of the WizardControl and hosts the title, description and banner picture box. This control is selectable during design-time, where you can change its properties. This control will be hidden when a wizard control page's FullPage property is set to True. 
@@ -59,7 +61,7 @@ Creating a Basic Wizard
 
 Concepts and Features
 
-##### Creating a Basic Wizard
+### Creating a Basic Wizard
 
 This section will guide you to create a basic wizard using the Wizard control.
 
@@ -68,13 +70,13 @@ To create a basic wizard, follow the below steps.
 * Add the WizardControl from the Toolbox to the form, in the designer.
 
 ![](Wizard-Package_images/Wizard-Package_img3.jpeg)
-{:.image }
+
 
 
 * Set the WizardControl.Dock property to Fill.
 
 ![](Wizard-Package_images/Wizard-Package_img4.jpeg)
-{:.image }
+
 
 
 * Wizard Control lets you add multiple pages in a single wizard. You can add pages to the wizard container by four different ways. They are, 
@@ -87,12 +89,12 @@ See Options to Add Page, Remove Page, Previous page and Next Page topic for more
 * Accessing WizardControl.WizardPages property will invoke WizardControlPage Collection Editor which also lets you add or remove pages.
 
 ![](Wizard-Package_images/Wizard-Package_img5.jpeg)
-{:.image }
+
 
 
 Programmatically, the pages can be added to the wizard container as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -102,9 +104,9 @@ this.wizardControlPage2,this.wizardControlPage3};
 
 this.wizardControl1.SelectedWizardPage = this.wizardControlPage2;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -112,25 +114,25 @@ Me.wizardControl1.WizardPages = New Syncfusion.Windows.Forms.Tools.WizardControl
 
 Me.wizardControl1.SelectedWizardPage = Me.wizardControlPage2
 
-
+{% endhighlight %}
 
 * Wizard Control comes with properties which controls its appearance and behavior. Set FullPage property of WizardControlPage1 to True if you wish to hide the header portion in the first page. Put a label control on this wizard page with introductory text. Also set BackVisible property of wizard page to False to hide the back button since this is the first page. 
 
 ![](Wizard-Package_images/Wizard-Package_img6.jpeg)
-{:.image }
+
 
 
 * The output will be as follows.
 
 ![](Wizard-Package_images/Wizard-Package_img7.jpeg)
-{:.image }
 
 
-##### Concepts and Features
+
+### Concepts and Features
 
 This section discusses the concepts of Wizard Package in detail, in the following topics.
 
-###### Banner Settings
+#### Banner Settings
 
 The controls inside the Banner Control include Banner Panel, Title, description and a picture box. The section will walk you through the properties which customizes these controls.
 
@@ -138,7 +140,7 @@ Banner Panel
 
 A Banner Panel is a simple gradient panel which holds a Title label, a Description label and a Picture box controls. 
 
-_Table_ _939__: Property Table_
+_Table_ _939_: Property Table
 
 <table>
 <tr>
@@ -158,11 +160,10 @@ Sets the label that can describe the current page.</td></tr>
 Title</td><td>
 Sets the title of the current page.</td></tr>
 </table>
-> ![](Wizard-Package_images/Wizard-Package_img8.jpeg)
-{:.image }
- _Note: The Title and Description settings can be set for individual Wizard Pages using WizardPage.Title and WizardPage.Description properties respectively. See_ Wizard Page Settings_._
 
-[C#]
+> Note: The Title and Description settings can be set for individual Wizard Pages using WizardPage.Title and WizardPage.Description properties respectively. See _Wizard Page Settings_.
+
+{% highlight c# %}
 
 
 
@@ -178,9 +179,9 @@ this.gradientPanel1.Controls.Add(this.label1);
 
 this.gradientPanel1.Controls.Add(this.label2);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -196,21 +197,19 @@ Me.gradientPanel1.Controls.Add(Me.label1)
 
 Me.gradientPanel1.Controls.Add(Me.label2)
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img9.jpeg)
-{:.image }
 
 
-> ![](Wizard-Package_images/Wizard-Package_img10.jpeg)
-{:.image }
- _Note: The appearance of a Banner panel can be customized using the properties of the gradient panel. See_ Border styles _for border settings of a Banner Panel._
+
+> Note: The appearance of a Banner panel can be customized using the properties of the gradient panel. See_ Border styles _for border settings of a Banner Panel.
 
 Layout of the Banner Controls
 
 The below properties controls the layout of the respective banner controls.
 
-_Table_ _940__: Property Table_
+_Table_ _940_: Property Table
 
 <table>
 <tr>
@@ -232,7 +231,7 @@ When set to true, the title will be automatically laid out at a specific positio
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -242,9 +241,9 @@ this.wizardControl1.AutoLayoutDescription = true;
 
 this.wizardControl1.AutoLayoutTitle = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -253,6 +252,8 @@ Me.wizardControl1.AutoLayoutBanner = True
 Me.wizardControl1.AutoLayoutDescription = True
 
 Me.wizardControl1.AutoLayoutTitle = True
+
+{% endhighlight %}
 
 See Also
 
@@ -266,7 +267,7 @@ Title Text
 
 The font style and the fore color for the Title text can be edited through Label.Font and Label.Font property.
 
-_Table_ _941__: Property Table_
+_Table_ _941_: Property Table
 
 <table>
 <tr>
@@ -285,10 +286,10 @@ Sets the forecolor for the Page Title in the Wizard Control.</td></tr>
 
 
 ![](Wizard-Package_images/Wizard-Package_img11.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -298,9 +299,9 @@ this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontSty
 
 this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -310,17 +311,17 @@ Me.label1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle
 
 this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img12.jpeg)
-{:.image }
+
 
 
 Description Text
 
 The appearance of the description text for a wizard control can be edited using the description label properties.
 
-_Table_ _942__: Property Table_
+_Table_ _942_: Property Table
 
 <table>
 <tr>
@@ -339,10 +340,10 @@ Sets the forecolor for the Page description in the Wizard Control.</td></tr>
 
 
 ![](Wizard-Package_images/Wizard-Package_img13.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -352,9 +353,9 @@ this.label1.Font = new System.Drawing.Font("Verdana", 8F);
 
 this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -364,17 +365,16 @@ Me.label1.Font = New System.Drawing.Font("Verdana", 8F)
 
 this.label1.ForeColor = System.Drawing.Color.DarkBlue
 
+{% endhighlight %}
 
 
 ![](Wizard-Package_images/Wizard-Package_img14.jpeg)
-{:.image }
 
 
-> ![](Wizard-Package_images/Wizard-Package_img15.jpeg)
-{:.image }
- _Note: A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using WizardPage.Title and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page._
 
-###### Wizard Page Settings 
+> Note: A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using WizardPage.Title and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page.
+
+#### Wizard Page Settings 
 
 A Wizard Page can include a collection of controls implementing an interactive Wizard interface. The Wizard pages are added to the Wizard Container. You can drag and drop any control into a wizard page. Wizard Control lets you to customize the individual Wizard pages to give a unique functionality for each page. 
 
@@ -384,7 +384,7 @@ Setting Title and Description
 
 You can specify the title and description in the Banner Panel, for a particular Wizard Page using the WizardPage.Title and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. See Title and Description Settings for details.
 
-_Table_ _943__: Property Table_
+_Table_ _943_: Property Table
 
 <table>
 <tr>
@@ -402,7 +402,7 @@ Specifies the description for the page.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -410,9 +410,9 @@ this.wizardControlPage1.Title = "Registration Details";
 
 this.wizardControlPage1.Description = "Please enter your Details:";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -420,17 +420,17 @@ Me.wizardControlPage1.Title = "Registration Details"
 
 Me.wizardControlPage1.Description = "Please enter your Details:"
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img16.jpeg)
-{:.image }
+
 
 
 Accessing Wizard Pages
 
 We can also access the properties of a Wizard Page using SelectedWizardPage property of the WizardControl in the Designer.
 
-_Table_ _944__: Property Table_
+_Table_ _944_: Property Table
 
 <table>
 <tr>
@@ -449,12 +449,12 @@ The individual Wizard page is identified using its LayoutName in the SelectedWiz
 
 
 ![](Wizard-Package_images/Wizard-Package_img17.jpeg)
-{:.image }
+
 
 
 The header section (GradientPanel and its child controls) can be hidden by setting FullPage property to true. This makes the page occupy the entire space without the header.
 
-_Table_ _945__: Property Table_
+_Table_ _945_: Property Table
 
 <table>
 <tr>
@@ -468,24 +468,20 @@ Gets/sets the boolean value whether the Banner Panel should  be shown for that p
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.wizardControlPage1.FullPage = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.wizardControlPage1.FullPage = True
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img18.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates a Wizard Control with interactive Wizard pages is available in the below location.
@@ -509,18 +505,18 @@ By default, the WizardControl will use the order in which the pages are added to
 * Select the WizardControl and choose WizardPages property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys. 
 
 ![](Wizard-Package_images/Wizard-Package_img19.jpeg)
-{:.image }
+
 
 
 * In the designer, right click on a page and choose 'Bring To Front' or 'Send To Back' options which will move the page to the beginning or to the end of the collection, respectively.
 
 ![](Wizard-Package_images/Wizard-Package_img20.jpeg)
-{:.image }
+
 
 
 * The WizardControlPage has the NextPage and PreviousPage properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
 
-_Table_ _946__: Property Table_
+_Table_ _946_: Property Table
 
 <table>
 <tr>
@@ -538,7 +534,7 @@ It sets the previous page of the wizard.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -546,15 +542,18 @@ this.wizardControlPage2.NextPage = this.wizardControlPage3;
 
 this.wizardControlPage2.PreviousPage = this.wizardControlPage1;
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.wizardControlPage2.NextPage = Me.wizardControlPage3
 
 Me.wizardControlPage2.PreviousPage = Me.wizardControlPage1
+
+{% endhighlight %}
 
 See Also
 
@@ -564,19 +563,17 @@ ValidatePage Event
 
 How to Programmatically control the Page Sequence?
 
-###### Browse Buttons
+#### Browse Buttons
 
 The default buttons which are available for the Wizard control are Back, Next, Cancel and Help. The Next and the Back buttons facilitates users to navigate between wizard pages. 
 
-> ![](Wizard-Package_images/Wizard-Package_img21.jpeg)
-{:.image }
- _Note: You can navigate between the pages at Design Time also. See Page Navigation at Design time topic for more details._
+> Note: You can navigate between the pages at Design Time also. See Page Navigation at Design time topic for more details.
 
 Button Visibility
 
 By default, all the buttons are visible for all the Wizard pages. To change their visibility, use the below properties in individual pages.
 
-_Table_ _947__: Property Table_
+_Table_ _947_: Property Table
 
 <table>
 <tr>
@@ -604,11 +601,10 @@ Specifies whether to display the 'Help' button.</td></tr>
 NextVisible</td><td>
 Specifies whether to display the 'Next' button.</td></tr>
 </table>
-> ![](Wizard-Package_images/Wizard-Package_img22.jpeg)
-{:.image }
- _Note: When you use more than one wizard page, you may set the BackVisible property of the first page to true to hide the back button._
 
-[C#]
+> Note: When you use more than one wizard page, you may set the BackVisible property of the first page to true to hide the back button.
+
+{% highlight c# %}
 
 
 
@@ -622,9 +618,9 @@ this.wizardControlPage1.HelpVisible = true;
 
 this.wizardControlPage1.FinishVisible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -638,11 +634,11 @@ Me.wizardControlPage1.HelpVisible = true
 
 Me.wizardControlPage1.FinishVisible = True
 
-
+{% endhighlight %}
 
 You can enable or disable the buttons using the respective button enabled properties.
 
-_Table_ _948__: Property Table_
+_Table_ _948_: Property Table
 
 <table>
 <tr>
@@ -674,21 +670,17 @@ Adding Finish Button
 
 In order to display the 'Finish' button in the last wizard page, user should set CancelOverFinish property in the WizardControlPage Collection Editor to false. This property determines if the Cancel button is positioned over the Finish button. If this property is set to true, it will override the FinishVisible property. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.finishPage.CancelOverFinish = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.finishPage.CancelOverFinish = False
 
-
+{% endhighlight %}
 
 A sample which includes button settings is available in the below sample installation location.
 
@@ -704,7 +696,7 @@ Adding new Button to a Page
 
 The following code snippet shows how to add a button to the wizard control browse buttons.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -724,9 +716,9 @@ this.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosX = 6;
 
 this.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -746,21 +738,19 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosX = 6
 
 Me.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img23.jpeg)
-{:.image }
 
 
-Reordering the Button Sequence
+
+##### Reordering the Button Sequence
 
 In order to change the position of the buttons, user should handle the GridPosX property and change the position programmatically.
 
-> ![](Wizard-Package_images/Wizard-Package_img24.jpeg)
-{:.image }
- _Note: Wizard control automatically sets position for some buttons after page change. Setting the position for controls manually, is not supported in those cases._
+> Note: Wizard control automatically sets position for some buttons after page change. Setting the position for controls manually, is not supported in those cases.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -776,9 +766,9 @@ this.wizardControl1.GridBagLayout.GetConstraintsRef(this.wizardControl1.FinishBu
 
 this.wizardControl1.GridBagLayout.GetConstraintsRef(this.wizardControl1.HelpButton).GridPosX = 2; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -794,17 +784,17 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.FinishButton
 
 Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.HelpButton).GridPosX = 2
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img25.jpeg)
-{:.image }
 
 
-Button Appearance
+
+##### Button Appearance
 
 The default browse buttons are the normal windows button controls. Appearance of the buttons can be controlled using the properties available. Some appearance properties are listed below.
 
-_Table_ _949__: Property Table_
+_Table_ _949_: Property Table
 
 <table>
 <tr>
@@ -858,7 +848,7 @@ Specifies the relative location of the image to the text on the button.</td></tr
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -874,9 +864,9 @@ this.wizardControl1.CancelButton.FlatAppearance.BorderColor = System.Drawing.Col
 
 this.wizardControl1.CancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -892,21 +882,19 @@ this.wizardControl1.CancelButton.FlatAppearance.BorderColor = System.Drawing.Col
 
 this.wizardControl1.CancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img26.jpeg)
-{:.image }
 
 
-> ![](Wizard-Package_images/Wizard-Package_img27.jpeg)
-{:.image }
- _Note: You can access the properties of CancelButton, FinishButton, HelpButton and NextButton using WizardControl.CancelButton, WizardControl.FinishButton, WizardControl.HelpButton and WizardControl.NextButton properties respectively._
+
+> Note: You can access the properties of CancelButton, FinishButton, HelpButton and NextButton using WizardControl.CancelButton, WizardControl.FinishButton, WizardControl.HelpButton and WizardControl.NextButton properties respectively.
 
 ![](Wizard-Package_images/Wizard-Package_img28.jpeg)
-{:.image }
 
 
-###### DesignTime Features
+
+#### DesignTime Features
 
 The below topics are discussed in this particular section.
 
@@ -917,25 +905,25 @@ This section will guide you with various options available in the designer to ad
 Using Property Grid
 
 ![](Wizard-Package_images/Wizard-Package_img29.jpeg)
-{:.image }
+
 
 
 Using Smart Tag
 
 ![](Wizard-Package_images/Wizard-Package_img30.jpeg)
-{:.image }
+
 
 
 Using Context menu
 
 ![](Wizard-Package_images/Wizard-Package_img31.jpeg)
-{:.image }
+
 
 
 Property Grid Commands
 
 ![](Wizard-Package_images/Wizard-Package_img32.jpeg)
-{:.image }
+
 
 
 Page Selection at Design time
@@ -945,7 +933,7 @@ This section will guide you with page selection options at design time.
 * We can easily navigate between the Wizard pages using the Next and Back buttons in the designer. These buttons are selectable at design time. 
 
 ![](Wizard-Package_images/Wizard-Package_img33.jpeg)
-{:.image }
+
 
 
 * Another way to navigate is to access the Next Page or Previous Page option in the context menu or Smart Tag of the Wizard control.
@@ -953,14 +941,14 @@ This section will guide you with page selection options at design time.
 * You can also do the page selection using SelectedWizardPage or CardLayout property.
 
 ![](Wizard-Package_images/Wizard-Package_img34.jpeg)
-{:.image }
+
 
 
 See Also
 
 Wizard Page Settings
 
-###### Wizard Control Appearance
+#### Wizard Control Appearance
 
 This section discusses the various appearance settings of the Wizard controls.
 
@@ -970,7 +958,7 @@ Wizard Control Foreground
 
 The appearance of the text in the Wizard control can be controlled using the Font and ForeColor properties. 
 
-_Table_ _950__: Property Table_
+_Table_ _950_: Property Table
 
 <table>
 <tr>
@@ -986,11 +974,10 @@ Sets the font style for the display text in the wizard control.</td></tr>
 ForeColor</td><td>
 Sets the fore color for the display text in the control.</td></tr>
 </table>
-> ![](Wizard-Package_images/Wizard-Package_img35.jpeg)
-{:.image }
- _Note: These WizardControl.Font property will be applied only to the Description text and the Button texts of the Wizard Page. WizardControl.ForeColor property will be applied to the Page Title and description text alone. To set Font style for Title and description, see Title and Description Settings topic._
 
-[C#]
+> Note: These WizardControl.Font property will be applied only to the Description text and the Button texts of the Wizard Page. WizardControl.ForeColor property will be applied to the Page Title and description text alone. To set Font style for Title and description, see Title and Description Settings topic.
+
+{% highlight c# %}
 
 
 
@@ -1000,9 +987,9 @@ this.wizardControl1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Draw
 
 this.wizardControl1.ForeColor = System.Drawing.Color.DarkBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1012,15 +999,13 @@ Me.wizardControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawin
 
 Me.wizardControl1.ForeColor = System.Drawing.Color.DarkBlue
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img36.jpeg)
-{:.image }
 
 
-> ![](Wizard-Package_images/Wizard-Package_img37.jpeg)
-{:.image }
- _Note: These settings can be overridden by the individual WizardPage.Font and WizardPage.ForeColor settings._ 
+
+> Note: These settings can be overridden by the individual WizardPage.Font and WizardPage.ForeColor settings.
 
 The foreground settings for the Button text can be overridden by the WizardPage.Button.Font and WizardPage.Button.ForeColor settings also. See Button Appearance topic.
 
@@ -1028,7 +1013,7 @@ Wizard Page Foreground
 
 The font and fore color for the display text in a Wizard page can be controlled through below properties.
 
-_Table_ _951__: Property Table_
+_Table_ _951_: Property Table
 
 <table>
 <tr>
@@ -1046,7 +1031,7 @@ Sets the fore color for the display text in the wizard page.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1054,9 +1039,9 @@ this.wizardControl1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Draw
 
 this.wizardControl1.ForeColor = System.Drawing.Color.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1064,10 +1049,10 @@ Me.wizardControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawin
 
 Me.wizardControl1.ForeColor = System.Drawing.Color.Black
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img38.jpeg)
-{:.image }
+
 
 
 Background Settings
@@ -1076,7 +1061,7 @@ Wizard Control Background
 
 The background of the Wizard control can be customized through the below properties.
 
-_Table_ _952__: Property Table_
+_Table_ _952_: Property Table
 
 <table>
 <tr>
@@ -1098,35 +1083,29 @@ Sets the layout for the background image in the Wizard Control.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.wizardControl1.BackColor = System.Drawing.Color.LightSteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.wizardControl1.BackColor = System.Drawing.Color.LightSteelBlue
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img39.jpeg)
-{:.image }
 
 
-> ![](Wizard-Package_images/Wizard-Package_img40.jpeg)
-{:.image }
- _Note: By default the background settings of the Wizard control will be overridden by the Wizard Container background settings._
+
+> Note: By default the background settings of the Wizard control will be overridden by the Wizard Container background settings.
 
 Banner Panel Background
 
 The below properties lets you customize the banner panel in a Wizard Control.
 
-_Table_ _953__: Property Table_
+_Table_ _953_: Property Table
 
 <table>
 <tr>
@@ -1152,31 +1131,27 @@ Sets the layout for the background image in the banner panel.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gradientPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.AliceBlue, System.Drawing.Color.LightSteelBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.AliceBlue, System.Drawing.Color.LightSteelBlue) 
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img41.jpeg)
-{:.image }
+
 
 
 Wizard Page Background
 
 The below properties lets you customize the Wizard page in a Wizard Control.
 
-_Table_ _954__: Property Table_
+_Table_ _954_: Property Table
 
 <table>
 <tr>
@@ -1202,24 +1177,20 @@ Sets the layout for the background image in the banner panel.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.wizardControlPage2.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.AliceBlue, System.Drawing.Color.LightSteelBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.wizardControlPage2.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.AliceBlue, System.Drawing.Color.LightSteelBlue) 
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img42.jpeg)
-{:.image }
+
 
 
 Border Styles 
@@ -1232,24 +1203,20 @@ The various border styles for a Wizard control are as follows.
 * FixedSingle and 
 * Fixed3D
 
-[C#]
-
-
+{% highlight c# %}
 
 this.wizardControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.wizardControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img43.jpeg)
-{:.image }
+
 
 
 Banner Panel
@@ -1266,12 +1233,10 @@ Banner Panel is a simple gradient panel whose 3D border styles are as follows.
 * Sunken
 * Adjust
 * Flat
-> 
-![](Wizard-Package_images/Wizard-Package_img44.jpeg)
-{:.image }
- _Note: The GradientPanel.BorderStyle property should be set to "Fixed3D" to make this setting effective._
 
-[C#]
+> Note: The GradientPanel.BorderStyle property should be set to "Fixed3D" to make this setting effective.
+
+{% highlight c# %}
 
 
 
@@ -1279,9 +1244,9 @@ this.gradientPanel1.Border3DStyle = System.Windows.Forms.Border3DStyle.Sunken;
 
 this.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1289,15 +1254,15 @@ Me.gradientPanel1.Border3DStyle = System.Windows.Forms.Border3DStyle.Sunken
 
 Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img45.jpeg)
-{:.image }
+
 
 
 You can use the below properties to set 2D border style for the Banner Control when GradientPanel.BorderStyle property is set to "FixedSingle".
 
-_Table_ _955__: Property Table_
+_Table_ _955_: Property Table
 
 <table>
 <tr>
@@ -1321,7 +1286,7 @@ Wizard Page Border
 
 The below properties controls the border settings for a Wizard control page.
 
-_Table_ _956__: Property Table_
+_Table_ _956_: Property Table
 
 <table>
 <tr>
@@ -1349,15 +1314,16 @@ Specifies the sides of the control which should have border.</td></tr>
 BorderSingle</td><td>
 Specifies the 2D Border style for the Wizard page when BorderStyle property is set to FixedSingle. The available styles are,Dotted,Dashed,Solid,Inset and Outset.</td></tr>
 </table>
-##### Event Handling 
+
+### Event Handling 
 
 This section comprises the below events:
 
-###### Wizard Control Events
+#### Wizard Control Events
 
 The events available for Wizard control and the methods which raises these events are listed in the below tables.
 
-_Table_ _957__: Events Table_
+_Table_ _957_: Events Table
 
 <table>
 <tr>
@@ -1405,7 +1371,8 @@ Handled before the finish button is clicked.</td></tr>
 BeforeNext</td><td>
 Handled before the Next button is clicked.</td></tr>
 </table>
-_Table_ _958__: Methods Table_
+
+_Table_ _958_: Methods Table
 
 <table>
 <tr>
@@ -1425,11 +1392,11 @@ BannerControlLocationChanging Event
 
 This event is discussed in How to Cancel the AutoLayout of the Banner panel controls.
 
-###### Wizard Page Events
+#### Wizard Page Events
 
 The events available for the Wizard Page and the methods which raises these events are listed in the below tables.
 
-_Table_ _959__: Events Table_
+_Table_ _959_: Events Table
 
 <table>
 <tr>
@@ -1469,7 +1436,8 @@ Handled to validate a page before a new page is selected. It can be raised by ca
 SettingChanged</td><td>
 Handled when the title and description of a page is changed.</td></tr>
 </table>
-_Table_ _960__: Methods Table_
+
+_Table_ _960_: Methods Table
 
 <table>
 <tr>
@@ -1511,7 +1479,7 @@ WizardControl Pages can be validated using ValidatePage event. In this event, da
 
 If the user does not want to validate a page while moving back (pressing BackButton), then it can be done by setting BackButtonCausesValidation property to false.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1551,9 +1519,9 @@ this.textBox1.Focus();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1585,15 +1553,17 @@ End If
 
 End Sub
 
-##### Frequently Asked Questions
+{% endhighlight %}
+
+### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-###### How to add a wizard page to the Wizard Control programmatically?
+#### How to add a wizard page to the Wizard Control programmatically?
 
 You can add a Wizard page to the Wizard Control using AddPage Method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1607,9 +1577,9 @@ NewPage.Title = "Finishing Page";
 
 NewPage.Description = "Give a Finish Text";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1623,17 +1593,17 @@ NewPage.Title = "Finishing Page"
 
 NewPage.Description = "Give a Finish Text" 
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img46.jpeg)
-{:.image }
 
 
-###### How to Cancel the AutoLayout of the Banner panel controls
+
+#### How to Cancel the AutoLayout of the Banner panel controls
 
 Wizard Control automatically repositions child controls parts by itself. The AutoLayout of controls in the banner (gradient panel) can be canceled using BannerControlLocationChanging event. You could change the title and description label control to a desired location and handle this event to cancel the auto layout of those controls as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1649,9 +1619,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1665,7 +1635,9 @@ Private Sub wizardControl1_BannerControlLocationChanging(ByVal sender As Object,
 
 End Sub
 
-###### How to Programmatically control the Page Sequence?
+{% endhighlight %}
+
+#### How to Programmatically control the Page Sequence?
 
 In many cases, the user will need to customize the order in which pages display. The Wizard control provides events for doing this.
 
@@ -1679,7 +1651,7 @@ Controlling Page Sequence with the Wizard Control
 
 * In the BeforeNext event handler, implement the below code, which will control the page sequence with the wizard control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1705,9 +1677,10 @@ private void wizardControl1_BeforeNext(object sender, CancelEventArgs e)
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1725,11 +1698,11 @@ Private Sub wizardControl1_BeforeNext(ByVal sender As Object, ByVal e As CancelE
 
 End Sub
 
-
+{% endhighlight %}
 
 * In the Back button click event handler, implement this code. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1743,9 +1716,9 @@ this.wizardControl1.SelectedPage.NextPage=this.wizardControlPage1;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1759,7 +1732,7 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 With those two events in place on the wizard, the wizard can now skip the middle page based on whether the checkbox is checked. 
 
@@ -1770,7 +1743,7 @@ Page sequencing may also be controlled in the NextClick and BackClick events of 
 * When one of the above events is implemented for a Wizard Control Page, the associated event in the Wizard control will not fire if the WizardPage is currently selected. 
 * In the NextClick event handler, you implement this code:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1788,9 +1761,9 @@ this.wizardControlPage1.NextPage=this.wizardControlPage3;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1804,11 +1777,11 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 * In the BackClick event handler, implement this code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1826,9 +1799,9 @@ private void wizardControlPage3_BackClick(object sender, System.EventArgs e)
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1842,17 +1815,17 @@ Private Sub wizardControlPage3_BackClick(ByVal sender As Object, ByVal e As Syst
 
 End Sub
 
-
+{% endhighlight %}
 
 With those two events in place on the wizard page, the wizard can now skip the middle page based on whether the checkbox is checked.
 
-###### How to set spacing between the browsing buttons?
+#### How to set spacing between the browsing buttons?
 
 The WizardControl internally uses the GridBagLayout to arrange the navigation buttons.
 
 You could insert spaces around the buttons using the Insets property. The GridBagLayout.GetConstraintsRef returns the object containing the constraints for that particular control. Specifying an Insets value as shown below to this, would create padding around this control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1862,9 +1835,9 @@ this.wizardControl1.GridBagLayout.GetConstraintsRef(this.wizardControl1.BackButt
 
 this.wizardControl1.GridBagLayout.GetConstraintsRef(this.wizardControl1.CancelButton).Insets = new Insets(0, 5, 5, 5);  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1874,17 +1847,19 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.BackButton).
 
 Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.CancelButton).Insets = New Insets(0, 5, 5, 5)
 
-#### XPTaskPane
+{% endhighlight %}
+
+## XPTaskPane
 
 The XPTaskPane is a container control that can host a number of XP TaskPage, which the user can browse using a dropdown menu and the arrow buttons in taskpane's header portion. This resembles the taskpane in Office XP 2002. 
 
 The XPTaskPane control was inspired by the Office XP taskpane feature. The control internally uses a CardLayout to show one page at a time. The header panel allows the user to select one page at a time. The control comes with complete design-time support.
 
 ![](Wizard-Package_images/Wizard-Package_img47.jpeg)
-{:.image }
 
 
-##### Features
+
+### Features
 
 This section covers the features of XPTaskPane control.
 
@@ -1897,10 +1872,10 @@ This section covers the features of XPTaskPane control.
 * Custom Colors can be applied for XPTaskPane control. See Visual Styles topic.
 
 ![](Wizard-Package_images/Wizard-Package_img48.jpeg)
-{:.image }
 
 
-##### XPTaskPane
+
+### XPTaskPane
 
 Segments of an XPTaskPane Control
 
@@ -1912,81 +1887,73 @@ Segments of an XPTaskPane Control
 
 
 ![](Wizard-Package_images/Wizard-Package_img49.jpeg)
-{:.image }
 
 
-##### Creating a Simple XPTaskPane
+
+### Creating a Simple XPTaskPane
 
 This section demonstrates how to create a simple XPTaskPane.
 
 ![](Wizard-Package_images/Wizard-Package_img50.jpeg)
-{:.image }
+
 
 
 * Add the XPTaskPane control to your empty form in the designer and set its Dock property to right. 
 
 ![](Wizard-Package_images/Wizard-Package_img51.jpeg)
-{:.image }
+
 
 
 * Add pages to the TaskPane using: "Add Page" option in the smart tag.
 
 ![](Wizard-Package_images/Wizard-Package_img52.jpeg)
-{:.image }
+
 
 
 * Add Page option in context menu of the Header.
 
 ![](Wizard-Package_images/Wizard-Package_img53.jpeg)
-{:.image }
+
 
 
 * "Add Page" command in Property grid.
 * XPTaskPage Collection Editor which can be opened by accessing TaskPages property of the control. You can use Remove page option to remove a page.
 
 ![](Wizard-Package_images/Wizard-Package_img54.jpeg)
-{:.image }
+
 
 
 ![](Wizard-Package_images/Wizard-Package_img55.jpeg)
-{:.image }
+
 
 
 * The pages can be added programmatically as follows.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.xpTaskPane1.TaskPages = new Syncfusion.Windows.Forms.Tools.XPTaskPage[] {this.xpTaskPage1,this.xpTaskPage2, this.xpTaskPage3};
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.xpTaskPane1.TaskPages = New Syncfusion.Windows.Forms.Tools.XPTaskPage() {Me.xpTaskPage1,Me.xpTaskPage2, Me.xpTaskPage3}
 
-
+{% endhighlight %}
 
 * XPTaskPane control has properties which controls the appearance and behavior of the Task pane sections. You can set Header text for individual pages using XPTaskPage1.Title property of the task page.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.xpTaskPage1.Title = "Document";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.xpTaskPage1.Title = "Document"
 
-
+{% endhighlight %}
 
 * Change the LayoutName property of a task page to a custom name. This name can be used in the SelectedPage property of the task pane to refer to a particular page. See XPTaskPage topic.
 * Add one or more controls to the task page. 
@@ -1994,7 +1961,7 @@ Me.xpTaskPage1.Title = "Document"
 
 
 ![](Wizard-Package_images/Wizard-Package_img56.jpeg)
-{:.image }
+
 
 
 * Invoke the Add Page verb again in the task pane to add more pages. Repeat the steps above to customize the newly added tab page.
@@ -2003,11 +1970,11 @@ See Also
 
 Concepts and Features
 
-##### Concepts and Features
+### Concepts and Features
 
 This section discusses the concepts of XP TaskPane Control in the below topics.
 
-###### XPTaskPane
+#### XPTaskPane
 
 XPTaskPane has a TaskPanePageContainer which hosts the Task pages. Any number of controls can added to the Task pages and can be customized. Properties which controls the appearance of the Task pages are discussed in this section.
 
@@ -2015,7 +1982,7 @@ Page Title and Layout Name
 
 The title text for an XPTaskPage can be edited using XPTaskPage.Title property.
 
-_Table_ _961__: Property Table_
+_Table_ _961_: Property Table
 
 <table>
 <tr>
@@ -2037,7 +2004,7 @@ The individual Task page is identified using its LayoutName in the SelectedPage 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2045,9 +2012,9 @@ this.xpTaskPage1.Title = "XPTaskPane Header";
 
 this.xpTaskPage1.LayoutName = "Card1";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2055,17 +2022,17 @@ Me.xpTaskPage1.Title = "XPTaskPane Header"
 
 Me.xpTaskPage1.LayoutName = "Card1"
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img57.jpeg)
-{:.image }
+
 
 
 TaskPage Border
 
 The below properties controls the border settings for a Task page.
 
-_Table_ _962__: Property Table_
+_Table_ _962_: Property Table
 
 <table>
 <tr>
@@ -2095,7 +2062,7 @@ Specifies the 2D Border style for the Task page when BorderStyle property is set
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2103,9 +2070,9 @@ this.xpTaskPage1.BorderColor = System.Drawing.Color.SteelBlue
 
 this.xpTaskPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2113,17 +2080,17 @@ Me.xpTaskPage1.BorderColor = System.Drawing.Color.SteelBlue
 
 Me.xpTaskPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img58.jpeg)
-{:.image }
+
 
 
 XPTaskPage Foreground
 
 Font style and fore color of the Task pages can be set using XPTaskPage.Font and XPTaskPage.ForeColor properties. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2131,9 +2098,9 @@ this.xpTaskPage1.Font = new System.Drawing.Font("Arial", 8.25F);
 
 this.xpTaskPage1.ForeColor = System.Drawing.Color.SteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2141,10 +2108,10 @@ Me.xpTaskPage1.Font = New System.Drawing.Font("Arial", 8.25F)
 
 Me.xpTaskPage1.ForeColor = System.Drawing.Color.SteelBlue
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img59.jpeg)
-{:.image }
+
 
 
 Reordering XPTaskPage
@@ -2154,13 +2121,13 @@ When the end user adds a page to the XPTaskPane control, the order of the page i
 * Through XPTaskPage Collection Editor.
 
 ![](Wizard-Package_images/Wizard-Package_img60.jpeg)
-{:.image }
+
 
 
 * Select a page in the designer and choose the 'Bring To Front' or 'Send To Back' verb which will move the page to the beginning of the collection or to the end of the collection, respectively.
 
 ![](Wizard-Package_images/Wizard-Package_img61.jpeg)
-{:.image }
+
 
 
 Going to Next Page or Previous Page
@@ -2168,14 +2135,14 @@ Going to Next Page or Previous Page
 * Right Click a page in the designer and choose the 'Previous Page' or 'Next Page' verb which will show you the page, which is before the current page or the page which is after the current page. These options can also be accessed through smart tag and property grid commands.
 
 ![](Wizard-Package_images/Wizard-Package_img62.jpeg)
-{:.image }
+
 
 
 Page Order at RunTime
 
 XPTaskPage allows you to set the next or the previous page to the currently selected page through the NextPage and PreviousPage properties.
 
-_Table_ _963__: Property Table_
+_Table_ _963_: Property Table
 
 <table>
 <tr>
@@ -2191,11 +2158,10 @@ It sets the next page for XP TaskPane.</td></tr>
 PreviousPage</td><td>
 It sets the previous page for XP TaskPane.</td></tr>
 </table>
-> ![](Wizard-Package_images/Wizard-Package_img63.jpeg)
-{:.image }
- _Note: The TaskPane follows this order at run time._
 
-[C#]
+> Note: The TaskPane follows this order at run time.
+
+{% highlight c# %}
 
 
 
@@ -2203,9 +2169,9 @@ this.xpTaskPage2.NextPage = this.xpTaskPage3;
 
 this.xpTaskPage2.PreviousPage = this.xpTaskPage1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2213,7 +2179,9 @@ Me.xpTaskPage2.NextPage = Me.xpTaskPage3
 
 Me.xpTaskPage2.PreviousPage = Me.xpTaskPage1
 
-###### XPTaskPane Appearance
+{% endhighlight %}
+
+#### XPTaskPane Appearance
 
 This section comprises the below topics:
 
@@ -2223,11 +2191,9 @@ XPTaskPane Foreground
 
 Font style and fore color of the Task pages can be set using XPTaskPane.Font and XPTaskPane.ForeColor properties. 
 
-> ![](Wizard-Package_images/Wizard-Package_img64.jpeg)
-{:.image }
- _Note: These settings can be overridden by individual XPTaskPage.Font and XPTaskPage.ForeColor properties._
+> Note: These settings can be overridden by individual XPTaskPage.Font and XPTaskPage.ForeColor properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2235,9 +2201,9 @@ this.xpTaskPane1.Font = new System.Drawing.Font("Verdana", 8.25F);
 
 this.xpTaskPane1.ForeColor = System.Drawing.Color.SteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2245,11 +2211,13 @@ Me.xpTaskPane1.Font = New System.Drawing.Font("Verdana", 8.25F)
 
 Me.xpTaskPane1.ForeColor = System.Drawing.Color.SteelBlue
 
+{% endhighlight %}
+
 Header Foreground
 
 The font style and forecolor for the Header text is controlled through HeaderLabel.Font and HeaderLabel.ForeColor properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2257,9 +2225,9 @@ this.xpTaskPane1.HeaderLabel.Font = new System.Drawing.Font("Verdana", 9.75F, Sy
 
 this.xpTaskPane1.HeaderLabel.ForeColor = System.Drawing.Color.Navy;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2267,17 +2235,17 @@ Me.xpTaskPane1.HeaderLabel.Font = New System.Drawing.Font("Verdana", 9.75F, Syst
 
 Me.xpTaskPane1.HeaderLabel.ForeColor = System.Drawing.Color.Navy
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img65.jpeg)
-{:.image }
+
 
 
 Visual Styles
 
 The Visual appearance of XP Task Pane can be defined by the XPTaskPane.VisualStyle property. It supports _OfficeXP_ and new _Office2007_ styles which provides you a more polished user interface. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2285,9 +2253,9 @@ this.xpTaskPane1.VisualStyle = VisualStyle.Office2007;
 
 this.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2295,17 +2263,17 @@ Me.xpTaskPane1.VisualStyle = VisualStyle.Office2007
 
 Me.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img66.jpeg)
-{:.image }
+
 
 
 Office Color Schemes
 
 XPTaskPane supports all the three office color schemes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2321,9 +2289,9 @@ this.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Them
 
 this.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2339,17 +2307,17 @@ Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img67.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the XPTaskPane by setting Office2007ColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2357,9 +2325,9 @@ this.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Them
 
 Office2007Colors.ApplyManagedColors(this, Color.Lime);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2367,13 +2335,13 @@ Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 Office2007Colors.ApplyManagedColors(Me, Color.Lime)
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img68.jpeg)
-{:.image }
 
 
-###### Header Settings
+
+#### Header Settings
 
 Setting Visibility of the ToolBar Items
 
@@ -2382,7 +2350,7 @@ The header section by default has four toolbar items. Left and right navigating 
 
 
 ![](Wizard-Package_images/Wizard-Package_img69.jpeg)
-{:.image }
+
 
 
 * HeaderLeftToolbar.Items[0] - Indicates Left navigating button, lets you navigate to the previous page.
@@ -2392,14 +2360,14 @@ The header section by default has four toolbar items. Left and right navigating 
 
 
 ![](Wizard-Package_images/Wizard-Package_img70.jpeg)
-{:.image }
+
 
 
 * HeaderRightToolbar.Items[1] - Indicates Close button, using which we can close the Task Pane.
 
 The visibility of these items can be controlled using the below code snippets.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2421,9 +2389,9 @@ this.xpTaskPane1.HeaderRightToolbar.Items[0].Visible = true;
 
 this.xpTaskPane1.HeaderRightToolbar.Items[1].Visible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2445,11 +2413,13 @@ Me.xpTaskPane1.HeaderRightToolbar.Items[0].Visible = True
 
 Me.xpTaskPane1.HeaderRightToolbar.Items[1].Visible = True
 
+{% endhighlight %}
+
 Images for Toolbar items
 
 We can change the existing image for the toolbar items using the below code snippets.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2467,9 +2437,9 @@ this.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageList = this.imageList1;
 
 this.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2487,17 +2457,17 @@ Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageList = Me.imageList1
 
 Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img71.jpeg)
-{:.image }
+
 
 
 Customizing Header Menu Item Image
 
 The Header Menu Item image can be changed through ImageIndex property which lists a set of pre-defined images, else set the Image property to the custom image you want to set for the dropdown image.
 
-_Table_ _964__: Property Table_
+_Table_ _964_: Property Table
 
 <table>
 <tr>
@@ -2515,7 +2485,7 @@ Sets the image to be displayed in DropDownMenu item.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2523,9 +2493,9 @@ Sets the image to be displayed in DropDownMenu item.</td></tr>
 
 this.xpTaskPane1.HeaderMenuItem.ImageIndex = 1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2533,17 +2503,17 @@ this.xpTaskPane1.HeaderMenuItem.ImageIndex = 1;
 
 Me.xpTaskPane1.HeaderMenuItem.ImageIndex = 1
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img72.jpeg)
-{:.image }
 
 
-###### Scroll Settings
+
+#### Scroll Settings
 
 XPTaskPane Enables vertical scrolling for the pages using VerticalScroll property. On mouse hovering over the scroll bar, the taskpage automatically moves and show the hidden contents. Scrolling speed can be fixed using ScrollSpeed property.
 
-_Table_ _965__: Property Table_
+_Table_ _965_: Property Table
 
 <table>
 <tr>
@@ -2561,7 +2531,7 @@ Enables scroll buttons that occupy vertical space instead of default horizontal 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2569,9 +2539,9 @@ this.xpTaskPane1.ScrollSpeed= 20;
 
 this.xpTaskPane1.VerticalScroll = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2579,9 +2549,9 @@ Me.xpTaskPane1.ScrollSpeed = 20
 
 Me.xpTaskPane1.VerticalScroll = True
 
-
+{% endhighlight %}
 
 ![](Wizard-Package_images/Wizard-Package_img73.jpeg)
-{:.image }
+
 
 

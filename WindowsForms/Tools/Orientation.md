@@ -2,14 +2,14 @@
 layout: post
 title: Orientation
 description: orientation	
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Orientation	
+# Orientation	
 
-#### Toolbar State Persistence
+### Toolbar State Persistence
 
 Toolbar state can be saved in two ways.
 
@@ -18,35 +18,33 @@ Toolbar state can be saved in two ways.
 
 If this is a MainFrameBarManager, the toolbar's positions will be retained during run-time. If it is a ChildFrameBarManager, then the toolbar's positions will be docked to the top border of the main frame.
 
-> ![](Orientation_images/Orientation_img1.jpeg)
-{:.image }
- _Note: This is true, only when your application is run for the first time and subsequent invocations will use the user's latest settings, if the persisting toolbar position is turned on._
+> Note: This is true, only when your application is run for the first time and subsequent invocations will use the user's latest settings, if the persisting toolbar position is turned on.
 
 The position of the toolbar and the customization applied by the user are stored in the user system's Isolated Storage.
 
 You can turn on/off default persistence through the BarManager's AutoLoadToolbarPositions and EnableCustomizing properties. 
 
 ![](Orientation_images/Orientation_img2.jpeg)
-{:.image }
+
 
 
 We can customize the toolbar at run time and it can be stored by setting AutoLoadToolBarPositions property to true. The following screen shot displays the Toolbar customization at run time where BarItem "Open" is removed.
 
 ![](Orientation_images/Orientation_img3.jpeg)
-{:.image }
+
 
 
 Close the application and again run the same application. The removed MenuBarItem "Open" is sustained. The following screen shot illustrates this.
 
 ![](Orientation_images/Orientation_img4.jpeg)
-{:.image }
 
 
-##### Save / Load the Bar Information
+
+### Save / Load the Bar Information
 
 ToolBar Persistence can be done by using the below given properties and methods.
 
-_Table_ _510__: Property Table_
+_Table_ _510_: Property Table
 
 <table>
 <tr>
@@ -70,7 +68,8 @@ Gets or Sets a value indicating whether to automatically save user's customizati
 AutoLoadCustomData</td><td>
 Gets or Sets a value indicating whether to automatically load user's customization data (new Bars/BarItems added/removed at runtime), when customization target form is activating. </td></tr>
 </table>
-_Table_ _511__: Methods Table_
+
+_Table_ _511_: Methods Table
 
 <table>
 <tr>
@@ -108,11 +107,11 @@ The Bar States can be serialized in the following formats.
 * Isolated Storage and
 * WindowsRegistry
 
-Persisting Bar state in Binary Format
+#### Persisting Bar state in Binary Format
 
 To serialize in Binary Format, use the following code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -140,11 +139,11 @@ AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.
 
 this.mainFrameBarManager1.LoadBarState(app);
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -172,13 +171,15 @@ Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Se
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
-Persisting Bar State in Memory Stream
+{% endhighlight %}
+
+#### Persisting Bar State in Memory Stream
 
 To persist the information in a database, we need to serialize the state into a memory stream. After which the stream is written into the database. The field to where the bar state is saved is binary.
 
 Storing State
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -192,9 +193,9 @@ this.mainFrameBarManager1.SaveBarState(aser);
 
 aser.PersistNow();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -208,11 +209,13 @@ Me.mainFrameBarManager1.SaveBarState(aser)
 
 aser.PersistNow() 
 
-Persisting Bar state in XML Format
+{% endhighlight %}
+
+#### Persisting Bar state in XML Format
 
 By default, the bar state will be stored into the default persistence medium, 'IsolatedStorage'. To store the dock state to some other medium like XML, it could be done as follows:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -240,9 +243,9 @@ AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.
 
 this.mainFrameBarManager1.LoadBarState(app);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -270,13 +273,13 @@ Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Se
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
+{% endhighlight %}
 
-
-Persisting Bar state in Isolated Storage
+#### Persisting Bar state in Isolated Storage
 
 To serialize in Isolated Storage medium, use the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -300,9 +303,9 @@ AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.
 
 this.mainFrameBarManager1.LoadBarState(app);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -326,11 +329,13 @@ Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Se
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
-Persisting Bar state in WindowsRegistry
+{% endhighlight %}
+
+#### Persisting Bar state in WindowsRegistry
 
 To serialize in the WindowsRegistry, using the below code snippets.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -354,9 +359,9 @@ AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.
 
 this.mainFrameBarManager1.LoadBarState(app);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -380,7 +385,9 @@ Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Se
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
-#### Visual Inheritance Support
+{% endhighlight %}
+
+## Visual Inheritance Support
 
 XP Menus supports Visual Inheritance during design-time, which means you can set up XP Menus in a form and also continue to set up in the form derived from it. The corresponding components like the BarManager and toolbar should however be protected or public for this to be supported. In the derived form's designer, you can add new bar items to the bar manager and then add these items to the toolbar, submenu etc.
 
@@ -394,7 +401,8 @@ These are the limitations of Visual Inheritance mode.
 
 * Cannot add menu items created in a base form to any bars/submenus in a derived form.
 * When the items in a base form's toolbar/submenu are repositioned, any previous repositioning that occurred in the derived form will be lost and the results may be unpredictable.
-#### UI Command Update Patterns
+
+## UI Command Update Patterns
 
 
 The UI Command Update mechanism can be defined as the way in which, an application updates the state of the UI elements (BarItems in this case), as the state of the application changes.
@@ -413,51 +421,48 @@ This approach can be difficult, as it is sometimes cumbersome to keep track of s
 
 So, the framework provides two other alternative ways to update the BarItem states.
 
-Fast Updates 
+### Fast Updates 
 
 If updating the BarItem states is a trivial operation, use this approach, which is also how MFC does it. In this approach, the UpdateUI event will be called when the ParentBarItem hosting this BarItem is dropped-down, when the BarItem is hosted in a toolbar and when the application goes into an idle state or when a shortcut corresponding to this item is about to be processed. You can turn on this behavior throughout the menu structure by setting the BarManager.UpdateUIMFCStyle to True. For XPToolbars and ParentBarItems that are outside the scope of a BarManager, set the UpdateUIMFCStyle property in those instances explicitly. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.mainFrameBarManager1.UpdateUIMFCStyle = true;
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.mainFrameBarManager1.UpdateUIMFCStyle  = True
 
-Slow Updates 
+{% endhighlight %}
+
+### Slow Updates 
 
 If updating the BarItem states is not a trivial operation, then use this approach. In this approach, turn on the UpdateUIOnAppIdle property of the BarItem whose state has changed one or more times and the framework will then initiate its UpdateUI event the next time the application goes into an idle state.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.barItem1.UpdateUIOnAppIdle = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.barItem1.UpdateUIOnAppIdle = True
+
+{% endhighlight %}
 
 See Also
 
 UpdateUI Event
 
-#### Frequently Asked Questions
+## Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-##### Popup Menu
+### Popup Menu
 
 This section guides you with more tasks that can be performed with popup menu.
 
@@ -465,67 +470,55 @@ This section guides you with more tasks that can be performed with popup menu.
 
 Refer to PopUp Menu.
 
-###### How to programmatically begin a group or remove an existing group in a popup menu
+#### How to programmatically begin a group or remove an existing group in a popup menu
 
 You can easily group the menu items or remove the existing group, within a ParentBarItem using the below two methods respectively.
 
 The below code snippet draws a separator just before bar item 2.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Adds a separator before the specified BarItem, if any
 
 this.popupMenu1.ParentBarItem.BeginGroupAt(this.barItem2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Adds a separator before the specified BarItem, if any 
 
 Me.popupMenu1.ParentBarItem.BeginGroupAt(Me.barItem1)
 
-
+{% endhighlight %}
 
 ![](Orientation_images/Orientation_img5.jpeg)
-{:.image }
 
-
-
-
-[C#]
-
-
+{% highlight c# %}
 
 //Removes the separator before the specified BarItem, if any
 
 this.popupMenu1.ParentBarItem.RemoveGroupAt(this.barItem2);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Removes the separator before the specified BarItem, if any
 
 Me.popupMenu1.ParentBarItem.RemoveGroupAt(Me.barItem2)
 
+{% endhighlight %}
+
 See Also
 
 Grouping Items in a Popup Menu
 
-###### How to programmatically show a Popup Menu
+#### How to programmatically show a Popup Menu
 
 Listen to the control's MouseUp event and call the PopupMenu's Show method in the handler as follows. The popup menu will be displayed with a single click, at run time.
 
-[C#]
-
-
+{% highlight c# %}
 
 // Associating a Popup Menu with a RichTextBox Control.
 
@@ -537,10 +530,9 @@ private void richTextBox1_MouseUp(object sender, System.Windows.Forms.MouseEvent
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 ' Associating a Popup Menu with a RichTextBox Control.
@@ -551,15 +543,17 @@ Private Sub richTextBox1_MouseUp(ByVal sender As Object, ByVal e As System.Windo
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 Popup Menu
 
-###### How to cancel a context menu
+#### How to cancel a context menu
 
 We can cancel the context menu from being shown by handling the ParentBarItem.BeforePopup menu.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -577,9 +571,9 @@ arg.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -591,41 +585,42 @@ Private Sub PopupMenu_BeforePopup(ByVal sender As Object, ByVal arg As CancelEve
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 Events of ParentBarItem
 
-###### How to determine on which control a context menu was shown
+#### How to determine on which control a context menu was shown
 
 We can identify the control on which the context menu was shown by using the below code.
 
-[C#]
-
-
+{% highlight c# %}
 
 // The PopupMenu's SourceControl specifies its target control
 
 Control srcControl = this.popupMenu1.SourceControl;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 ' The PopupMenu's SourceControl specifies its target control 
 
 Dim srcControl As Control = Me.popupMenu1.SourceControl
 
-##### ComboBoxBarItems
+{% endhighlight %}
+
+### ComboBoxBarItems
 
 This section deals with the below topics.
 
-###### How to handle KeyDown event in ComboBoxBarItem
+#### How to handle KeyDown event in ComboBoxBarItem
 
 This can be done as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -647,9 +642,9 @@ private void TextBox_KeyDown(object sender, KeyEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -667,55 +662,55 @@ Private Sub TextBox_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 ComboBoxBarItem
 
-###### How to prevent the ComboBoxBarItem's dropdown from being closed after clicking a ChoiseList Item
+#### How to prevent the ComboBoxBarItem's dropdown from being closed after clicking a ChoiseList Item
 
 By setting the CloseOnClick property to false, we can prevent the dropdown from closing, when an item is clicked in the choice list.
 
-[C#]
+{% highlight c# %}
 
 
 
 comboBoxBarItem1.CloseOnClick = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 comboBoxBarItem1.CloseOnClick = False
 
-###### How to prevent editing the textbox value of ComboBoxBarItem
+{% endhighlight %}
+
+#### How to prevent editing the textbox value of ComboBoxBarItem
 
 To prevent the user from editing the textbox value of ComboBoxBarItem, set Editable property to false.
 
-[C#]
-
-
+{% highlight c# %}
 
 comboBoxBarItem1.Editable = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 comboBoxBarItem1.Editable = False
 
-##### ControlBar
+{% endhighlight %}
+
+### ControlBar
 
 This section comprises the below topic:
 
-###### How to dock the ControlBars to any edge of the host form
+#### How to dock the ControlBars to any edge of the host form
 
 It can be done using the DockState property of the control bar. The options are Right, Left, Top and Bottom.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -723,9 +718,9 @@ It can be done using the DockState property of the control bar. The options are 
 
 this.controlBar1.DockState = CommandBarDockState.Right;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -733,15 +728,17 @@ this.controlBar1.DockState = CommandBarDockState.Right;
 
 Me.controlBar1.DockState = CommandBarDockState.Right
 
+{% endhighlight %}
+
 See Also
 
 Detached ControlBars
 
-###### How to change the bar item text color, when mouse hovers over it
+#### How to change the bar item text color, when mouse hovers over it
 
 Bar item text color can be changed at run time, when the mouse hovers over it, with the help of MenuColors class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -749,9 +746,9 @@ Bar item text color can be changed at run time, when the mouse hovers over it, w
 
 Syncfusion.Windows.Forms.MenuColors.SelTextColor = Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -759,17 +756,17 @@ Syncfusion.Windows.Forms.MenuColors.SelTextColor = Color.Blue;
 
 Syncfusion.Windows.Forms.MenuColors.SelTextColor = Color.Blue
 
+{% endhighlight %}
+
 See Also
 
 BarItem Text
 
-###### How to dock the bar items in a bar
+#### How to dock the bar items in a bar
 
 We can dock the baritems in a bar using XPMenus CommandBarExt class as follows.
 
-[C#]
-
-
+{% highlight c# %}
 
 CommandBarExt cbe = this.mainFrameBarManager1.GetBarControl(this.bar1) as CommandBarExt;
 
@@ -777,10 +774,9 @@ CommandBarExt cbe = this.mainFrameBarManager1.GetBarControl(this.bar1) as Comman
 
 cbe.BarControl.Dock = System.Windows.Forms.DockStyle.Right;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Dim cbe As CommandBarExt = TryCast(Me.mainFrameBarManager1.GetBarControl(Me.bar1), CommandBarExt)
@@ -789,109 +785,97 @@ Dim cbe As CommandBarExt = TryCast(Me.mainFrameBarManager1.GetBarControl(Me.bar1
 
 cbe.BarControl.Dock = System.Windows.Forms.DockStyle.Right
 
-###### How To Reset Bar Customization
+{% endhighlight %}
+
+#### How To Reset Bar Customization
 
 This can be done by calling ResetContainer method.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Reset the Bar customization
 
 this.mainFrameBarManager1.ResetContainer(this.bar1)
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Reset the Bar customization
 
 Me.mainFrameBarManager1.ResetContainer(Me.bar1)
 
-###### How to Reset a Bar To The Designer State
+{% endhighlight %}
+
+#### How to Reset a Bar To The Designer State
 
 At run time, user can change the Bar settings like arranging the bar items within the bar etc., The bar can also be reset to the designer state by a simple method call.
 
-[C#]
-
-
+{% highlight c# %}
 
 //LoadDesignerBarState Method Of MainFrameBarManager
 
 mainFrameBarManager1.LoadDesignerBarState();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'LoadDesignerBarState Method Of MainFrameBarManager
 
 mainFrameBarManager1.LoadDesignerBarState()
 
-###### How to set a bar's visibility programmatically
+{% endhighlight %}
+
+#### How to set a bar's visibility programmatically
 
 A bar's visibility can be controlled using the below code.
 
-[C#]
-
-
+{% highlight c# %}
 
 mainFrameBarManager1.GetBarControl(bar1).Visible = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 mainFrameBarManager1.GetBarControl(bar1).Visible = False
 
-###### How to set RightToLeft property for XPMenus
+{% endhighlight %}
+
+#### How to set RightToLeft property for XPMenus
 
 RightToLeft can be enabled for XPMenus using the below code.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.RightToLeft = RightToLeft.Yes;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.RightToLeft = RightToLeft.Yes
 
-###### How to show / hide close and dropdown buttons of a floating bar in XPMenus
+{% endhighlight %}
+
+#### How to show / hide close and dropdown buttons of a floating bar in XPMenus
 
 This can be done by using HideCloseButton and HideDropDownButton properties.
 
-[C#]
-
-
+{% highlight c# %}
 
 //to hide close button
 
 this.mainFrameBarManager1.GetBarControl(this.bar1).HideCloseButton = true;
 
-
-
 //to hide dropdown button
 
 this.mainFrameBarManager1.GetBarControl(this.bar1).HideDropDownButton = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'to hide close button
 
@@ -903,15 +887,17 @@ Me.mainFrameBarManager1.GetBarControl(Me.bar1).HideCloseButton = True
 
 Me.mainFrameBarManager1.GetBarControl(Me.bar1).HideDropDownButton = True
 
+{% endhighlight %}
+
 See Also
 
 Toolbar Properties
 
-###### How to change the position of toolbars at runtime?
+#### How to change the position of toolbars at runtime?
 
 We can change the position of toolbars at runtime using RowIndex and RowOffset properties of MainFrameBarManager as follows. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -927,9 +913,9 @@ this.mainFrameBarManager1.GetBarControl(bar1).RowOffset = 1;
 
 this.mainFrameBarManager1.GetCommandBarManager().RecalcLayout();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -945,10 +931,11 @@ Me.mainFrameBarManager1.GetBarControl(bar1).RowOffset = 0
 
 Me.mainFrameBarManager1.GetCommandBarManager().RecalcLayout()
 
+{% endhighlight %}
 
 
 ![](Orientation_images/Orientation_img6.jpeg)
-{:.image }
+
 
 
 The position of toolbar1 is moved to second row as follows.
@@ -956,20 +943,20 @@ The position of toolbar1 is moved to second row as follows.
 
 
 ![](Orientation_images/Orientation_img7.jpeg)
-{:.image }
 
 
-#### Event Handling
+
+## Event Handling
 
 The following topics provide information about the events triggered in the menus package.
 
-##### Events of BarManager
+### Events of BarManager
 
 This section discusses the events of BarManager.
 
 The event handler of the following events receives an argument of type EventArgs.
 
-_Table_ _512__: Events Table_
+_Table_ _512_: Events Table
 
 <table>
 <tr>
@@ -987,7 +974,7 @@ It triggers when the customization dialog has been closed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1013,9 +1000,9 @@ Console.WriteLine("CustomizationDone occurred");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1037,11 +1024,13 @@ Private Sub Customization_Done(ByVal sender As Object, ByVal e As System.EventAr
 
 End Sub
 
-##### Events of BarItem
+{% endhighlight %}
+
+### Events of BarItem
 
 This section discusses the events of bar item. 
 
-_Table_ _513__: Events Table_
+_Table_ _513_: Events Table_
 
 <table>
 <tr>
@@ -1067,7 +1056,7 @@ It is handled when the bar item has been unselected during menu navigation using
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1119,9 +1108,9 @@ Console.WriteLine(barItem.Text + " Unselected.");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1165,15 +1154,15 @@ Private Sub barItem1_Unselected(ByVal sender As Object, ByVal e As System.EventA
 
 End Sub
 
-###### UpdateUI Event
+{% endhighlight %}
+
+#### UpdateUI Event
 
 UpdateUI event is handled when the mouse moves over the bar item or before it gets shown in a dropdown.
 
-> ![](Orientation_images/Orientation_img8.jpeg)
-{:.image }
- _Note: This event will be handled only when BarManager.UpdateUIMFCStyle property or BarItem.UpdateUIOnAppIdle is enabled. These properties decides whether to handle this event or not._
+> Note: This event will be handled only when BarManager.UpdateUIMFCStyle property or BarItem.UpdateUIOnAppIdle is enabled. These properties decides whether to handle this event or not.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1187,9 +1176,9 @@ MenuColors.DropDownBorderColor = Color.Red;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1201,21 +1190,21 @@ MenuColors.DropDownBorderColor = Color.Red
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Orientation_images/Orientation_img9.jpeg)
-{:.image }
+
 
 
 See Also
 
 UpdateUIMFCStyle and UpdateUIOnAppIdle properties in UI Command Update Patterns topic.
 
-##### Events of ParentBarItem
+### Events of ParentBarItem
 
 ParentBarItem includes events of BarItem and also contains events discussed in this section. 
 
-_Table_ _514__: Events Table_
+_Table_ _514_: Events Table_
 
 <table>
 <tr>
@@ -1245,7 +1234,7 @@ It is handled when the user selects a BarItem during menu navigation using mouse
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1323,9 +1312,9 @@ Console.WriteLine("Unknown Item Selected.");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1387,11 +1376,13 @@ Private Sub parentBarItem_Selected(ByVal sender As Object, ByVal e As System.Eve
 
 End Sub
 
-##### ComboBoxBarItem Events
+{% endhighlight %}
+
+### ComboBoxBarItem Events
 
 ComboBoxBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _515__: Events Table_
+_Table_ _515_: Events Table
 
 <table>
 <tr>
@@ -1417,7 +1408,7 @@ This event is handled when the ComboBoxBarItem's value is changed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1473,9 +1464,9 @@ private void comboBoxBarItem1_TextBoxValueChange(object sender, Syncfusion.Windo
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1525,11 +1516,13 @@ Private Sub comboBoxBarItem1_TextBoxValueChange(ByVal sender As Object, ByVal ar
 
 End Sub
 
-##### MDIListBarItem Events
+{% endhighlight %}
+
+### MDIListBarItem Events
 
 MDIListBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _516__: Events Table_
+_Table_ _516_: Events Table
 
 <table>
 <tr>
@@ -1547,7 +1540,7 @@ Triggers when the MdiListBarItem is displayed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1573,9 +1566,9 @@ private void mdiListBarItem1_BeforeExpand(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1597,11 +1590,13 @@ Private Sub mdiListBarItem1_BeforeExpand(ByVal sender As Object, ByVal e As Even
 
 End Sub
 
-##### ToolbarListBarItem Events
+{% endhighlight %}
+
+### ToolbarListBarItem Events
 
 ToolbarListBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _517__: Events Table_
+_Table_ _517_: Events Table
 
 <table>
 <tr>
@@ -1627,7 +1622,7 @@ Triggers before the Pop-up closes</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1675,9 +1670,9 @@ private void toolbarListBarItem1_PopupClosing(object sender, CancelEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1717,11 +1712,13 @@ Private Sub toolbarListBarItem1_PopupClosing(ByVal sender As Object, ByVal e As 
 
 End Sub
 
-##### ListBarItem Events
+{% endhighlight %}
+
+### ListBarItem Events
 
 ListBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _518__: Events Table_
+_Table_ _518_: Events Table
 
 <table>
 <tr>
@@ -1739,7 +1736,7 @@ Triggers when the ListBarItem is displayed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1765,9 +1762,9 @@ private void listBarItem1_BeforeExpand(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1789,11 +1786,13 @@ Private Sub listBarItem1_BeforeExpand(ByVal sender As Object, ByVal e As EventAr
 
 End Sub
 
+{% endhighlight %}
+
 ##### TextBarItem Events
 
  TextBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _519__: Events Table_
+_Table_ _519_: Events Table
 
 <table>
 <tr>
@@ -1807,7 +1806,7 @@ Triggers when embedding the internal text box control with the BarItem</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1825,9 +1824,9 @@ private void textBoxBarItem1_TextBoxItemBound(object sender, Syncfusion.Windows.
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1843,9 +1842,7 @@ Private Sub textBoxBarItem1_TextBoxItemBound(ByVal sender As Object, ByVal args 
 
     tbox = CType(args.TextBox, TextBox)
 
-
-
 End Sub
 
-
+{% endhighlight %}
 

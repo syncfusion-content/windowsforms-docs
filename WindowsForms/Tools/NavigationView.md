@@ -2,16 +2,16 @@
 layout: post
 title: NavigationView
 description: navigationview
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## NavigationView
+# NavigationView
 
 Breadcrumbs or breadcrumb trails is a navigation technique used in user interfaces. Its enables users to keep track of their location within programs or documents. Breadcrumbs provides a trail for the user to get back to the starting / entry point of a folder. Essential Tools provides the NavigationView control that uses the Breadcrumbs technique to keep track of locations and folders.
 
-Features
+### Features
 
 The following are the features supported by the NavigationView control.
 
@@ -23,200 +23,197 @@ The following are the features supported by the NavigationView control.
 * Supports Right-To-Left alignment.
 * Supports Custom Button control.
 * Supports Edit Mode for quick navigation.
-#### Creating NavigationView
+
+## Creating NavigationView
 
 
 Navigation View can be created in the following ways:
 
-##### Through Designer
+### Through Designer
 
 To create a NavigationView control, follow the steps given below.
 
 1. Drag the NavigationView control from the controls toolbox onto your form.
 
-![](NavigationView_images/NavigationView_img1.jpeg)
-{:.image }
+   ![](NavigationView_images/NavigationView_img1.jpeg)
+
 
 
 2. Add Parent Bars and Child Bars to the NavigationView control using the BarCollection Editor.
 
-![](NavigationView_images/NavigationView_img2.jpeg)
-{:.image }
+   ![](NavigationView_images/NavigationView_img2.jpeg)
 
 
-##### Through Code
 
-To create a NavigationView control programmatically, follow the below given steps.
+   ### Through Code
+
+   To create a NavigationView control programmatically, follow the below given steps.
 
 3. Include the Tools Windows namespace to the .cs / .vb file.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+   ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Create an instance of the NavigationView control and add Parent Bars and Child Bars to it.
 
-[C#]
+   ~~~ cs
 
+		//Creating instance of NavigationView
 
+		NavigationView navigationView4 = new NavigationView();
 
-//Creating instance of NavigationView
+		// Creating instance of Bars 
 
-NavigationView navigationView4 = new NavigationView();
+		Syncfusion.Windows.Forms.Tools.Navigation.Bar Rootbar = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
 
-// Creating instance of Bars 
+		Syncfusion.Windows.Forms.Tools.Navigation.Bar ChildBar1 = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
 
-Syncfusion.Windows.Forms.Tools.Navigation.Bar Rootbar = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
+		Syncfusion.Windows.Forms.Tools.Navigation.Bar ChildBar2 = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
 
-Syncfusion.Windows.Forms.Tools.Navigation.Bar ChildBar1 = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
+		Rootbar.ImageIndex = 0;
 
-Syncfusion.Windows.Forms.Tools.Navigation.Bar ChildBar2 = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
+		Rootbar.Text = "MyComputer";
 
-Rootbar.ImageIndex = 0;
+		ChildBar1.ImageIndex = 1;
 
-Rootbar.Text = "MyComputer";
+		ChildBar1.Text = "LocalDisk : C";
 
-ChildBar1.ImageIndex = 1;
+		ChildBar2.ImageIndex = 1;
 
-ChildBar1.Text = "LocalDisk : C";
+		ChildBar2.Text = "Program Files";
 
-ChildBar2.ImageIndex = 1;
+		// Adding child bars into Rootbar
 
-ChildBar2.Text = "Program Files";
+		ChildBar1.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
 
-// Adding child bars into Rootbar
+		ChildBar2});
 
-ChildBar1.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
+		Rootbar.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
 
-ChildBar2});
+		ChildBar1});
 
-Rootbar.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
+		// Adding the rootbar into NavigationView
 
-ChildBar1});
+		navigationView4.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
 
-// Adding the rootbar into NavigationView
+		Rootbar});
 
-navigationView4.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
+		navigationView4.ImageList = this.imageList1;
 
-Rootbar});
+		navigationView4.Location = new System.Drawing.Point(250, 300);
 
-navigationView4.ImageList = this.imageList1;
+		navigationView4.Name = "navigationView";
 
-navigationView4.Location = new System.Drawing.Point(250, 300);
+		navigationView4.Size = new System.Drawing.Size(343, 21);
 
-navigationView4.Name = "navigationView";
+		navigationView4.TabIndex = 0;
 
-navigationView4.Size = new System.Drawing.Size(343, 21);
+		navigationView4.Text = "navigationView";
 
-navigationView4.TabIndex = 0;
+		// Setting the Visual Style into Vista
 
-navigationView4.Text = "navigationView";
+		navigationView4.VisualStyle = Syncfusion.Windows.Forms.Tools.Navigation.VisualStyles.Vista;
 
-// Setting the Visual Style into Vista
+		this.Controls.Add(navigationView4);
 
-navigationView4.VisualStyle = Syncfusion.Windows.Forms.Tools.Navigation.VisualStyles.Vista;
+   ~~~
+   {:.prettyprint }
 
-this.Controls.Add(navigationView4);
+   ~~~ vbnet
 
+		'Creating instance of NavigationView
 
 
-[VB.NET]
 
+		Dim navigationView4 As NavigationView = New NavigationView()
 
+		' Creating instance of Bars 
 
-'Creating instance of NavigationView
+		Dim Rootbar As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
 
+		Dim ChildBar1 As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
 
+		Dim ChildBar2 As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
 
-Dim navigationView4 As NavigationView = New NavigationView()
+		Rootbar.ImageIndex = 0
 
-' Creating instance of Bars 
+		Rootbar.Text = "MyComputer"
 
-Dim Rootbar As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
+		ChildBar1.ImageIndex = 1
 
-Dim ChildBar1 As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
+		ChildBar1.Text = "LocalDisk : C"
 
-Dim ChildBar2 As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
+		ChildBar2.ImageIndex = 1
 
-Rootbar.ImageIndex = 0
+		ChildBar2.Text = "Program Files"
 
-Rootbar.Text = "MyComputer"
+		' Adding child bars into Rootbar
 
-ChildBar1.ImageIndex = 1
+		ChildBar1.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { ChildBar2})
 
-ChildBar1.Text = "LocalDisk : C"
+		Rootbar.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { ChildBar1})
 
-ChildBar2.ImageIndex = 1
 
-ChildBar2.Text = "Program Files"
 
-' Adding child bars into Rootbar
+		' Adding the rootbar into NavigationView
 
-ChildBar1.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { ChildBar2})
+		navigationView4.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { Rootbar})
 
-Rootbar.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { ChildBar1})
+		navigationView4.ImageList = Me.imageList1
 
+		navigationView4.Location = New System.Drawing.Point(250, 300)
 
+		navigationView4.Name = "navigationView"
 
-' Adding the rootbar into NavigationView
+		navigationView4.Size = New System.Drawing.Size(343, 21)
 
-navigationView4.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { Rootbar})
+		navigationView4.TabIndex = 0
 
-navigationView4.ImageList = Me.imageList1
+		navigationView4.Text = "navigationView"
 
-navigationView4.Location = New System.Drawing.Point(250, 300)
+		' Setting the Visual Style into Vista
 
-navigationView4.Name = "navigationView"
+		navigationView4.VisualStyle = Syncfusion.Windows.Forms.Tools.Navigation.VisualStyles.Vista
 
-navigationView4.Size = New System.Drawing.Size(343, 21)
+		Me.Controls.Add(navigationView4)
 
-navigationView4.TabIndex = 0
-
-navigationView4.Text = "navigationView"
-
-' Setting the Visual Style into Vista
-
-navigationView4.VisualStyle = Syncfusion.Windows.Forms.Tools.Navigation.VisualStyles.Vista
-
-Me.Controls.Add(navigationView4)
-
-
+   ~~~
+   {:.prettyprint }
 
 ![](NavigationView_images/NavigationView_img3.jpeg)
-{:.image }
 
 
-#### Concepts and Features
+
+## Concepts and Features
 
 This section discusses the concepts and features of the control under the following topics:
 
-##### Drop-Down Selection
+### Drop-Down Selection
 
 NavigationView control provides drop-down selection support.
 
 Each folder that is navigated through, is shown in the Address Bar, separated by a Forward Arrow. Clicking on this arrow, will show a drop-down list, displaying all the folders directly below the one you have opened.
 
 ![](NavigationView_images/NavigationView_img4.jpeg)
-{:.image }
 
 
-Images Support
+
+#### Images Support
 
 NavigationView control provides support for adding images to both Parent Bars and Child Bars. It displays the image of the Selected Bar to the left of the control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -228,9 +225,9 @@ ChildBar1.ImageIndex = 1;
 
 ChildBar2.ImageIndex = 1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -242,12 +239,12 @@ ChildBar1.ImageIndex = 1
 
 ChildBar2.ImageIndex = 1
 
-
+{% endhighlight %}
 
 The following illustration shows the NavigationView with Bar Images.
 
 ![](NavigationView_images/NavigationView_img5.jpeg)
-{:.image }
+
 
 
 Tracking the Previously Selected Items using DropDown Button
@@ -257,7 +254,7 @@ You can trace the previously selected locations by clicking on the Drop-Down but
 The following illustration shows the NavigationView displaying Previously Selected Items.
 
 ![](NavigationView_images/NavigationView_img6.jpeg)
-{:.image }
+
 
 
 Custom Button Collection
@@ -271,14 +268,14 @@ You can add custom buttons to the NavigationView using the CustomButton Collecti
 The following illustration shows the CustomButton Collection Editor.
 
 ![](NavigationView_images/NavigationView_img7.jpeg)
-{:.image }
+
 
 
 * Adding Custom Button Through Code
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -294,9 +291,9 @@ customButton.Image = img;
 
 navigationView4.Controls.Add(customButton);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -312,47 +309,47 @@ customButton.Image = img
 
 navigationView4.Controls.Add(customButton)
 
-
+{% endhighlight %}
 
 The following illustration shows the NavigationView with Custom Button.
 
 ![](NavigationView_images/NavigationView_img8.jpeg)
-{:.image }
 
 
-##### Right-To-Left Support
+
+### Right-To-Left Support
 
 NavigationView aligns the embedded child controls and images from right to left on setting the RightToLeft property to True.
 
 ![](NavigationView_images/NavigationView_img9.jpeg)
-{:.image }
 
 
-##### Visual Styles
+
+### Visual Styles
 
 Visual Styles enhance the appearance of the NavigationView control. NavigationView supports the following visual styles: Office 2007 and Vista.
 
 ![](NavigationView_images/NavigationView_img10.jpeg)
-{:.image }
+
 
 
 ![](NavigationView_images/NavigationView_img11.jpeg)
-{:.image }
 
 
-Edit Mode Support
+
+#### Edit Mode Support
 
 You can switch to an editable NavigationView path, allowing the user to quickly reach a location, by clicking on the text area of the NavigationView and typing the path.
 
 ![](NavigationView_images/NavigationView_img12.jpeg)
-{:.image }
 
 
-##### Customizable number of items on Popup
+
+### Customizable number of items on Popup
 
 Navigation View now allows setting the maximum number of items to be displayed on its popup and has an option to cancel the popup. BarPopUp event can be used to achieve this.
 
-[C#]
+{% highlight c# %}
 
 // Sets the maximum items to be displayed.
 
@@ -388,9 +385,9 @@ e.MaximumItemsToDisplay = 5;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Sets the maximum Items to be displayed.
 
@@ -416,5 +413,5 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 

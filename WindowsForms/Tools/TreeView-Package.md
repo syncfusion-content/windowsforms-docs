@@ -2,12 +2,12 @@
 layout: post
 title: TreeView-Package
 description: treeview package
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## TreeView Package
+# TreeView Package
 
 The Essential Tools' TreeViewAdv control implements a classical tree structure with support for left, right and state images, check box and option buttons, tooltips and help text capabilities. It has special features to give the TreeViewAdv control a neat look, like Gutter space, Indent Space, changing color of the lines connecting the nodes, color options for the check boxes. It provides advanced drag-and-drop UI support, context-menu association, gradient backgrounds and multiple border styles, unlimited number of controls for each nodes. The control comes with complete design-time support.
 
@@ -16,10 +16,10 @@ The Essential Tools' TreeViewAdv control implements a classical tree structure w
 * While the TreeViewAdv exposes some global styles that are to be applied for all the nodes, the TreeNodeAdv lets the users to specify styles for a specific node. The Styles Architecture which will be discussed later in this section, lets the users to define styles for nodes at different levels of the tree. This allows the users to specify styles for a class of nodes.
 
 ![](TreeView-Package_images/TreeView-Package_img1.jpeg)
-{:.image }
 
 
-#### Features Overview
+
+## Features Overview
 
 The TreeView package provides an advanced TreeViewAdv control with numerous styles and extensive customization capabilities. The features of the control are  listed below.
 
@@ -67,7 +67,7 @@ Office2007ScrollBars
 TreeViewAdv provides support for Office2007Scrollbars with all the three color schemes.
 
 ![](TreeView-Package_images/TreeView-Package_img2.jpeg)
-{:.image }
+
 
 
 ToolTip 
@@ -94,11 +94,11 @@ See Also
 
 Concepts and Features
 
-#### Creating TreeViewAdv
+## Creating TreeViewAdv
 
 This section will provide a step-by-step procedure to design a TreeViewAdv control by using designer and through programmatical approach in .NET application.
 
-##### Through Designer
+### Through Designer
 
 Tree nodes can be added to the control at design time as follows.
 
@@ -107,15 +107,15 @@ Tree nodes can be added to the control at design time as follows.
 3. Select the TreeViewAdv control in the form. In theproperties, click the ellipsis button of the Nodes property to open the NodeCollection Editor. You can also open this editor using task window or by right clicking the control and selecting Node Editor.
 4. This TreeViewAdv NodeCollection Editor can also be invoked by clicking the Node Editor option, which appears when the TreeViewAdv control is right clicked at the design time. User can also add top level nodes by clicking the Add Node option. The below image illustrates the same. The nodes added can be customized using the NodeCollection Editor.
 
-![](TreeView-Package_images/TreeView-Package_img3.jpeg)
-{:.image }
+   ![](TreeView-Package_images/TreeView-Package_img3.jpeg)
+
 
 
 5. Click "Add Node". This will add a new top-level node.
 6. The node's properties will be displayed in the property grid to the right. Specify a custom label for the node by changing its text property as shown in the below image.
 
-![](TreeView-Package_images/TreeView-Package_img4.jpeg)
-{:.image }
+   ![](TreeView-Package_images/TreeView-Package_img4.jpeg)
+
 
 
 7. Click "Add Node" to add another sibling to the selected node.
@@ -124,133 +124,133 @@ Tree nodes can be added to the control at design time as follows.
 10. Click "Remove" to delete a selected node.
 11. To move a node to a different parent, just drag-and-drop that node over the parent or besides the desired sibling.
 12. Click "OK" to save changes.
-##### Through Code
+
+### Through Code
 
 
 Tree nodes can be added to the control programmatically as follows.
 
 1. Add the namespace Syncfusion.Windows.Forms.Tools in your project.
 
-[C#]
+   ~~~ cs
+
+		using Syncfusion.Windows.Forms.Tools;
+
+   ~~~
+   {:.prettyprint }   
 
 
+   ~~~ vbnet
+   
+		Imports Syncfusion.Windows.Forms.Tools
 
-using Syncfusion.Windows.Forms.Tools;
-
-
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Add theTreeViewAdvcontrol to your form in the designer.
 3. A TreeViewAdv control can be created programmatically using the below code snippet.
 
-[C#]
+   ~~~ cs
 
+		private Syncfusion.Windows.Forms.Tools.TreeViewAdv treeViewAdv1;
 
+		treeViewAdv1 = new Syncfusion.Windows.Forms.Tools.TreeViewAdv();
 
-private Syncfusion.Windows.Forms.Tools.TreeViewAdv treeViewAdv1;
+		treeViewAdv1.Name = "NewTreeViewAdv";
 
-treeViewAdv1 = new Syncfusion.Windows.Forms.Tools.TreeViewAdv();
+		this.Controls.Add(this.treeViewAdv1);
 
-treeViewAdv1.Name = "NewTreeViewAdv";
+   ~~~
+   {:.prettyprint }
 
-this.Controls.Add(this.treeViewAdv1);
+   ~~~ vbnet
 
+		Private treeViewAdv1 As Syncfusion.Windows.Forms.Tools.TreeViewAdv
 
+		treeViewAdv1 = New Syncfusion.Windows.Forms.Tools.TreeViewAdv 
 
-[VB.NET]
+		treeViewAdv1.Name = "NewTreeViewAdv" 
 
+		Me.Controls.Add(Me.treeViewAdv1)
 
-
-Private treeViewAdv1 As Syncfusion.Windows.Forms.Tools.TreeViewAdv
-
-treeViewAdv1 = New Syncfusion.Windows.Forms.Tools.TreeViewAdv 
-
-treeViewAdv1.Name = "NewTreeViewAdv" 
-
-Me.Controls.Add(Me.treeViewAdv1)
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Create a new instance of a node.
 
-[C#]
+   ~~~ cs
 
 
 
-//Creating new instance of node.
+		//Creating new instance of node.
 
-TreeNodeAdv node = new TreeNodeAdv("Top1");
+		TreeNodeAdv node = new TreeNodeAdv("Top1");
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		'Creating new instance of node.
 
+		Dim node As New TreeNodeAdv("Top1")
 
-
-'Creating new instance of node.
-
-Dim node As New TreeNodeAdv("Top1")
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Add the created node to the tree control. This will add as a top-level node.
 
-[C#]
+   ~~~ cs
 
 
 
-//Add the created nodes to the TreeViewAdv.
+		//Add the created nodes to the TreeViewAdv.
 
-this.treeViewAdv1.Nodes.Add(node);
+		this.treeViewAdv1.Nodes.Add(node);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		'Add the created nodes to the TreeViewAdv.
 
-'Add the created nodes to the TreeViewAdv.
+		Me.TreeViewAdv1.Nodes.Add(node)
 
-Me.TreeViewAdv1.Nodes.Add(node)
-
-
+   ~~~
+   {:.prettyprint }
 
 6. If you want to add a node to an existing node, use the code snippet shown below.
 
-[C#]
+   ~~~ cs
+
+		//Add nodes to the existing nodes.
+
+		node.Nodes.Add(new TreeNodeAdv("Child 1"));
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-//Add nodes to the existing nodes.
+		'Add nodes to the existing nodes.
 
-node.Nodes.Add(new TreeNodeAdv("Child 1"));
+		node.Nodes.Add(New TreeNodeAdv("Child 1"))
 
-
-
-[VB.NET]
-
-
-
-'Add nodes to the existing nodes.
-
-node.Nodes.Add(New TreeNodeAdv("Child 1"))
-
-
+   ~~~
+   {:.prettyprint }
 
 7. Repeat steps 3 to 5 to continue adding more top-level nodes and child nodes.
 8. Run the application.
 9. The resulting form is shown in the below image.
 
 ![](TreeView-Package_images/TreeView-Package_img5.jpeg)
-{:.image }
 
 
-#### Concepts and  Features
+
+### Concepts and  Features
 
 This section provides some tips and ideas on how to implement TreeView technology into your projects, to improve customization and increase efficiency. The important concepts to be dealt with, in this package are listed below.
 
@@ -263,17 +263,18 @@ This section provides some tips and ideas on how to implement TreeView technolog
 * DataBinding - Illustrates databinding concepts.
 * Sorting - Guides you to sort the nodes.
 * Performance - Gives the properties and methods which can improve the performance of the control.
-##### TreeNode Features
+
+#### TreeNode Features
 
 
 This section discusses the following topics.
 
-###### Primitives
+##### Primitives
 
 The TreeViewAdv control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the TreeViewAdv controls. 
 
 ![](TreeView-Package_images/TreeView-Package_img6.jpeg)
-{:.image }
+
 
 
 The types of primitives available are LabelPrimitive, LeftImagePrimitive, RightImagePrimitive, CheckBoxPrimitive, OptionButtonPrimitive and CustomControlPrimitive.
@@ -296,7 +297,7 @@ Checkbox and Option Buttons
 
 CustomControls
 
-###### Node Images
+#### Node Images
 
 TreeViewAdv control can be customized with images for each of its actions for example collapse / expand state, plus / minus of the tree etc., This section discusses about the below topics.
 
@@ -320,7 +321,7 @@ The tree nodes can be set with left / right images using LeftImageList and Right
 
 The nodes with the images can be given an enhanced appearance using LeftImagePadding and RightImagePadding.
 
-_Table_ _854__: Property Table_
+_Table_ _854_:Property Table
 
 <table>
 <tr>
@@ -336,7 +337,8 @@ Indicates the imagelist that holds the images to be drawn on the left of the Nod
 RightImageList</td><td>
 This indicates the imagelist that holds the images to be drawn on the right of the Node.</td></tr>
 </table>
-_Table_ _855__: Property Table_
+
+_Table_ _855_:Property Table
 
 <table>
 <tr>
@@ -363,14 +365,14 @@ It is the space provided between the RightImage of the node and node.</td></tr>
 
 
 ![](TreeView-Package_images/TreeView-Package_img7.jpeg)
-{:.image }
+
 
 
 Setting State Images
 
 Different images can be set for expand / collapse states of the node, using StateImageList property. To apply the left open and close images, set the ClosedImgIndex and the OpenImgIndex to the indices that points to the images in the StateImageList respectively. Nodes without child can be set with a separate image using NoChildrenImageIndex.
 
-_Table_ _856__: Property Table_
+_Table_ _856_:Property Table
 
 <table>
 <tr>
@@ -398,9 +400,8 @@ It is the StateImageList index value of the image that is displayed, when a tree
 StateImageList</td><td>
 This indicates the imagelist that holds the images to be drawn based on the state of the Node.</td></tr>
 </table>
-> ![](TreeView-Package_images/TreeView-Package_img8.jpeg)
-{:.image }
- _Note: The above properties can also be set for individual nodes._
+
+> Note: The above properties can also be set for individual nodes.
 
 <table>
 <tr>
@@ -432,7 +433,7 @@ Customizing the Image Size
 
 The ImageSize property let you enhance the image size for a TreeNodeAdv. By default, the TreeViewAdv control displays the image size depending on the size of the image that is set in the image list.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -442,9 +443,9 @@ this.rightImageList.ImageSize = new System.Drawing.Size(16, 16);
 
 this.stateImageList.ImageSize = new System.Drawing.Size(16, 16);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -454,10 +455,10 @@ Me.rightImageList.ImageSize = New System.Drawing.Size(16, 16)
 
 Me.stateImageList.ImageSize = New System.Drawing.Size(15, 15)
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img9.jpeg)
-{:.image }
+
 
 
 See Also
@@ -475,7 +476,7 @@ When child nodes are added to a node, automatically the expand / collapse (+/-) 
 * Images to be displayed for the expanded and collapsed nodes can be specified in the DefaultExandImageIndex and DefaultCollapseImageIndex properties respectively.
 * Images for individual nodes can be specified in treeNodeAdv.ExpandImageIndex / treeNodeAdv.CollapseImageIndex properties. Setting these properties will override the expand / collapse image settings that is applied for the control.
 
-_Table_ _858__: Property Table_
+_Table_ _858_:Property Table
 
 <table>
 <tr>
@@ -503,7 +504,7 @@ Indicates the imagelist with images that are displayed instead of expand / colla
 
 These properties can be set at the node level using the below properties.
 
-_Table_ _859__: Property Table_
+_Table_ _859_:Property Table
 
 <table>
 <tr>
@@ -522,16 +523,14 @@ It is the imageindex for expand button.</td></tr>
 
 
 ![](TreeView-Package_images/TreeView-Package_img10.jpeg)
-{:.image }
+
 
 
 ![](TreeView-Package_images/TreeView-Package_img11.jpeg)
-{:.image }
 
 
-> ![](TreeView-Package_images/TreeView-Package_img12.jpeg)
-{:.image }
- _Note: You can customize the background of the plusminus control. Click here to know more about this._
+
+> Note: You can customize the background of the plusminus control. Click here to know more about this.
 
 See Also
 
@@ -551,7 +550,7 @@ The standard +/- signs for the expand/collapse buttons in the TreeViewAdv can be
 
 ShowPlusMinus when disabled, does not display the plus / minus images for the parent nodes, i.e., the expand/collapse images will not be displayed.
 
-_Table_ _860__: Property Table_
+_Table_ _860_:Property Table
 
 <table>
 <tr>
@@ -581,7 +580,7 @@ Indicates whether lines are displayed between root nodes.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -595,9 +594,9 @@ this.treeViewAdv1.ShowPlusMinus = true;
 
 this.treeViewAdv1.ShowRootLines = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -611,9 +610,9 @@ Me.treeViewAdv1.ShowPlusMinus = True
 
 Me.treeViewAdv1.ShowRootLines = True
 
-> ![](TreeView-Package_images/TreeView-Package_img13.jpeg)
-{:.image }
- _Note: ShowPlusMinus properties can also be set for individual nodes._
+{% endhighlight %}
+
+> Note: ShowPlusMinus properties can also be set for individual nodes.
 
 <table>
 <tr>
@@ -632,7 +631,7 @@ The steps below will show how you could draw overlay images on the images associ
 * Set the TreeViewAdv's OwnerDrawNodes property to true.
 * Handle the TreeViewAdv's AfterNodePaint event as shown in code below to perform overlaying of images. The below code snippet shows overlaying LeftImages. The same code snippet can be used for overlaying RightImages and StateImages also by replacing LeftImagesX with RightImagesX and StateImagesX respectively.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -654,9 +653,9 @@ e.Graphics.DrawImage(overlayImage, point);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -676,10 +675,11 @@ e.Graphics.DrawImage(overlayImage, point)
 
 End Sub 
 
+{% endhighlight %}
 
 
 ![](TreeView-Package_images/TreeView-Package_img14.jpeg)
-{:.image }
+
 
 
 A sample demonstrating this feature is available in the below sample installation location.
@@ -694,7 +694,7 @@ LoadOnDemand property should be set to true for this feature to be effected.
 
 The BeforeExpand event will be raised when the plus is clicked again and when in expanded mode so that you can check the datasource for changes. 
 
-_Table_ _862__: Property Table_
+_Table_ _862_:Property Table
 
 <table>
 <tr>
@@ -710,7 +710,7 @@ Indicates if the plus minus of the node is visible.</td></tr>
 
 This will effect only if the LoadOnDemand property is set to true.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -730,9 +730,9 @@ private void button1_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -750,15 +750,15 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Given below is a screen shot of this.
 
 ![](TreeView-Package_images/TreeView-Package_img15.jpeg)
-{:.image }
 
 
-###### Checkbox and Option buttons
+
+##### Checkbox and Option buttons
 
 Adding Checkbox to the Nodes
 
@@ -766,7 +766,7 @@ The ShowCheckBoxes property when set will display check box for all the nodes. T
 
 The InteractiveCheckBoxes indicates whether the state of the parent node's checkbox is based on the checkstate of it's child nodes checkboxes. To set this for individual nodes set the InteractiveCheckBox property of the TreeNodeAdv.
 
-_Table_ _863__: Property Table_
+_Table_ _863_:Property Table
 
 <table>
 <tr>
@@ -782,7 +782,8 @@ Indicates if the checkbox will be shown for the nodes.</td></tr>
 InteractiveCheckBoxes</td><td>
 Indicates if the state of the node's checkbox indicates the checkstate of the child node's checkboxes.</td></tr>
 </table>
-_Table_ _864__: Property Table_
+
+_Table_ _864_:Property Table
 
 <table>
 <tr>
@@ -798,9 +799,8 @@ Indicates if the checkbox of the node is visible.</td></tr>
 InteractiveCheckBox</td><td>
 Indicates if the node will have an interactive checkbox.</td></tr>
 </table>
-> ![](TreeView-Package_images/TreeView-Package_img16.jpeg)
-{:.image }
- _Note: On Changing the checkstate of the checkbox, AfterInteractiveChecks event will be triggered._
+
+> Note: On Changing the checkstate of the checkbox, AfterInteractiveChecks event will be triggered.
 
 Tristate CheckBox Settings
 
@@ -808,7 +808,7 @@ In the TreeViewAdv, the partial checking of the child nodes are supported. They 
 
 The CheckColor and CheckState property is used to set the color and the state of the check mark of the particular selected node. The options for the CheckState property are Checked, Unchecked and Indeterminate.
 
-_Table_ _865__: Property Table_
+_Table_ _865_:Property Table
 
 <table>
 <tr>
@@ -838,7 +838,7 @@ This specifies if at least one child of the parent node should be selected at al
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -850,9 +850,9 @@ treeNodeAdv8.EnsureDefaultOptionedChild =  true;
 
 treeNodeAdv8.Checked = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -864,17 +864,17 @@ TreeNodeAdv8.EnsureDefaultOptionedChild = True
 
 TreeNodeAdv8.Checked = True
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img17.jpeg)
-{:.image }
+
 
 
 Adding Option Buttons
 
 ShowOptionButtons property, when set, will add option buttons to all the nodes which can be applied for the required nodes alone, by setting the property for the respective nodes in the NodeCollection Editor.
 
-_Table_ _866__: Property Table_
+_Table_ _866_:Property Table
 
 <table>
 <tr>
@@ -900,7 +900,7 @@ This indicates if the node's option button is checked.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -912,9 +912,9 @@ treeNodeAdv6.OptionButtonColor = System.Drawing.Color.PowderBlue;
 
 treeNodeAdv8.OptionButtonColor = System.Drawing.Color.MediumAquamarine;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -926,17 +926,17 @@ treeNodeAdv6.OptionButtonColor = System.Drawing.Color.PowderBlue
 
 treeNodeAdv8.OptionButtonColor = System.Drawing.Color.MediumAquamarine
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img18.jpeg)
-{:.image }
+
 
 
 Disabling a node's Checkbox or Option button
 
 The user can disable the checkbox or the option button of a node and can still select and deselect the node by setting the EnabledButtons property to false of the respective TreeNodeAdv.
 
-_Table_ _867__: Property Table_
+_Table_ _867_:Property Table
 
 <table>
 <tr>
@@ -951,34 +951,34 @@ Indicates if the buttons that are displayed, are enabled for the particular node
 
 
 ![](TreeView-Package_images/TreeView-Package_img19.jpeg)
-{:.image }
 
 
-###### Custom Controls
+
+##### Custom Controls
 
 Tree Nodes can hold controls using this Custom Controls feature. This widens the functionality and view of the Tree nodes. With this feature, the nodes can hold controls like combo box, Calendar, Chart etc.,
 
 Any custom control can be dragged and dropped to the form and selected using TreeNodeAdv.CustomControls property
 
 ![](TreeView-Package_images/TreeView-Package_img20.jpeg)
-{:.image }
+
 
 
 We can also add functionality based on the changes made to the CustomControls.
 
 ![](TreeView-Package_images/TreeView-Package_img21.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates Custom Controls feature is available in the below sample installation location. This sample illustrates adding functionality based on the changes to the custom controls.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### Enabling the control
+##### Enabling the control
 
 The TreeView control can be enabled using the below properties.
 
-_Table_ _868__: Property Table_
+_Table_ _868_:Property Table
 
 <table>
 <tr>
@@ -990,7 +990,7 @@ Description</td></tr>
 Enabled</td><td>
 Indicates whether the control is enabled and can respond to user interactions.</td></tr>
 </table>
-_Table_ _869__: Property Table_
+_Table_ _869_:Property Table
 
 <table>
 <tr>
@@ -1002,11 +1002,12 @@ Description</td></tr>
 Enabled</td><td>
 Indicates whether a particular node is enabled.</td></tr>
 </table>
-##### Drag And Drop
+
+#### Drag And Drop
 
 The drag and drop functionality is fully supported through the various drag drop events.
 
-_Table_ _870__: Events Table_
+_Table_ _870_:Events Table
 
 <table>
 <tr>
@@ -1046,7 +1047,7 @@ Specifies the function to be triggered when an item is being dragged.</td></tr>
 
 The drag and drop functionality can be implemented by using the below code snippets.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1270,9 +1271,9 @@ MyNoDropCursor.Dispose();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1471,16 +1472,14 @@ MyNoDropCursor = New Cursor("3dwno.cur")
 End Sub
 
 
-
+{% endhighlight %}
 The below image indicates dragging of "Brazil" node.
 
 ![](TreeView-Package_images/TreeView-Package_img22.jpeg)
-{:.image }
 
 
-> ![](TreeView-Package_images/TreeView-Package_img23.jpeg)
-{:.image }
- _Note: You can also display a highlighted line while dragging which has unique functionalities like keeping track of the drag drop operation. Click here to know more about this feature._
+
+> Note: You can also display a highlighted line while dragging which has unique functionalities like keeping track of the drag drop operation. Click here to know more about this feature.
 
 See Also
 
@@ -1488,7 +1487,7 @@ How to return the node at a specified location?
 
 Drag and Drop Events
 
-###### Selection Settings While Drag Drop
+##### Selection Settings While Drag Drop
 
 While performing a drag and drop operation, when a node is selected and dragged, the node will be drawn with a dotted rectangle, when it loses focus. This feature is enabled by setting the KeepDottedSelection property of the TreeViewAdv to true.
 
@@ -1496,7 +1495,7 @@ The semi-transparent image which is drawn besides the cursor, during the drag an
 
 The semi-transparent image that is drawn, can be hidden or shown using the ShowDragNodeCue property. 
 
-_Table_ _871__: Property Table_
+_Table_ _871_:Property Table
 
 <table>
 <tr>
@@ -1519,12 +1518,12 @@ Specifies whether a semitransparent image of the selected node is drawn besides 
 
 
 ![](TreeView-Package_images/TreeView-Package_img24.jpeg)
-{:.image }
+
 
 
 To cancel the selection or editing, use CancelMode and CancelEditMode methods.
 
-_Table_ _872__: Methods Table_
+_Table_ _872_:Methods Table
 
 <table>
 <tr>
@@ -1548,7 +1547,7 @@ Row Selection
 
 The FullRowSelect property allows you to specify if the entire row of the selected item is highlighted and clicking anywhere on an item's row causes it to be selected.
 
-_Table_ _873__: Property Table_
+_Table_ _873_:Property Table
 
 <table>
 <tr>
@@ -1560,7 +1559,7 @@ Description</td></tr>
 FullRowSelect</td><td>
 Specifies whether the whole row of a treeview needs to be selected on selecting a node of that row.</td></tr>
 </table>
-_Table_ _874__: Method Table_
+_Table_ _874_:Method Table
 
 <table>
 <tr>
@@ -1574,31 +1573,31 @@ To get the height of the rows of a tree from the start point to the end point. T
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
+{% endhighlight %}
 this.treeViewAdv1.GetHeightOfRows(1, 2);
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.treeViewAdv1.GetHeightOfRows(1, 2)
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img25.jpeg)
-{:.image }
 
 
-###### Highlighting Drag and Drop
+
+##### Highlighting Drag and Drop
 
 Drag drop operation in the TreeView can display a highlighted line during dragging. TreeView uses a helper class, i.e., TreeViewAdvDragHighlightTracker for this purpose. This keeps track of the highlighted node and also provides the destination where the user had decided to drop. It also allows validation whether to drag / drop a node to another node or not. We need to use the tracker class for this purpose.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1678,9 +1677,9 @@ treeView.SelectedNode = sourceNode;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1746,21 +1745,20 @@ treeView.SelectedNode = sourceNode
 
 End Sub
 
+{% endhighlight %}
 
 
 ![](TreeView-Package_images/TreeView-Package_img26.jpeg)
-{:.image }
 
 
-> ![](TreeView-Package_images/TreeView-Package_img27.jpeg)
-{:.image }
- _Note: We can also prevent drawing highlight for some nodes using QueryAllowedPositionForNode event._
+
+> Note: We can also prevent drawing highlight for some nodes using QueryAllowedPositionForNode event.
 
 Painting the HighlightTracker Pen
 
 This can be done using TreeViewAdvDragHighlightTracker.QueryDragInsertInfo event.
 
-_Table_ _875__: Property Table_
+_Table_ _875_:Property Table
 
 <table>
 <tr>
@@ -1774,7 +1772,7 @@ Occurs before drawing a drag insert position.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1796,9 +1794,9 @@ args.DragInsertColor=Color.Orange;
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1814,10 +1812,10 @@ args.DragInsertColor = Color.Orange
 
 End Sub  
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img28.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the highlight tracker feature is available in the follow path.
@@ -1830,11 +1828,11 @@ How to prevent drawing highlight for some nodes?
 
 Drag Drop Events
 
-###### Node Selection
+##### Node Selection
 
 During drag and drop operation of the tree nodes, a single node or same level nodes or multi level nodes can be selected and dragged based on the selection mode set for the treeview control. SelectionMode property is used for this purpose.
 
-_Table_ _876__: Property Table_
+_Table_ _876_:Property Table
 
 <table>
 <tr>
@@ -1848,31 +1846,31 @@ Specifies the selection mode of the treeview. Options are,Single - The user can 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectSameLevel;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectSameLevel
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img29.jpeg)
-{:.image }
+
 
 
 Extending the Selection
 
 We can extend the selection of the nodes using ExtendSelectionTo method. 
 
-_Table_ _877__: Methods Table_
+_Table_ _877_:Methods Table
 
 <table>
 <tr>
@@ -1888,11 +1886,10 @@ Extends the selection of the node to a specified node.SelNode - Represents a tre
 ExtendSelectionTo (Overloaded)</td><td>
 SelNode - Represents a treeNodeAdv.removeCurrentMultipleSelection - Indicates whether or not any current selection should be removed.</td></tr>
 </table>
-> ![](TreeView-Package_images/TreeView-Package_img30.jpeg)
-{:.image }
- _Note : This method will be effective only when the SelectionMode is MultiSelectSameLevel or MultiSelectAll._
 
-[C#]
+> Note : This method will be effective only when the SelectionMode is MultiSelectSameLevel or MultiSelectAll.
+
+{% highlight c# %}
 
 
 
@@ -1904,9 +1901,9 @@ this.treeViewAdv1.ExtendSelectionTo(this.treenode1);
 
 this.treeViewAdv1.ExtendSelectionTo(this.treenode1, false);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1918,9 +1915,11 @@ Me.treeViewAdv1.ExtendSelectionTo(Me.treenode1)
 
 Me.treeViewAdv1.ExtendSelectionTo(Me.treenode1, False)
 
+{% endhighlight %}
+
 On Focus / Off Focus
 
-_Table_ _878__: Property Table_
+_Table_ _878_:Property Table
 
 <table>
 <tr>
@@ -1946,7 +1945,7 @@ Setting AllowKeyboardSearch property of the treeview to true, will allow the use
 
 By setting the AllowMouseBasedSelection property to true, multiple nodes can be selected with mouse down and these selected nodes can be dragged.
 
-_Table_ _879__: Property Table_
+_Table_ _879_:Property Table
 
 <table>
 <tr>
@@ -1964,7 +1963,7 @@ Indicates if multiple nodes can be selected with mouse down and drag.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1972,9 +1971,9 @@ this.treeViewAdv1.AllowKeyboardSearch = false;
 
 this.treeViewAdv1.AllowMouseBasedSelection = true; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1982,211 +1981,214 @@ Me.treeViewAdv1.AllowKeyboardSearch = False
 
 Me.treeViewAdv1.AllowMouseBasedSelection = True
 
-##### RunTime Features
+{% endhighlight %}
+
+#### RunTime Features
 
 This section will walk you through the following runtime features of TreeViewAdv Control.
 
-###### Context Menu
+##### Context Menu
 
 TreeViewAdv control provides option for displaying context menu on right clicking on any node in the TreeViewAdv control. It also let users add custom menu items.
 
 Adding Custom Menu Items
 
-1.   Declare and initialize a context menu.
+1.  Declare and initialize a context menu.
 
-[C#]
-
-
-
-// Create and initialize a context Menu required
-
-private System.Windows.Forms.ContextMenu contextMenu1;
-
-this.contextMenu1 = new System.Windows.Forms.ContextMenu();
+    ~~~ cs
 
 
 
-//Associate the context menu with the TreeView control
+		// Create and initialize a context Menu required
 
-this.treeViewAdv1.ContextMenu = this.contextMenu1;
+		private System.Windows.Forms.ContextMenu contextMenu1;
 
-
-
-[VB.NET]
+		this.contextMenu1 = new System.Windows.Forms.ContextMenu();
 
 
 
-' Create and initialize a context Menu required
+		//Associate the context menu with the TreeView control
 
-Private WithEvents contextMenu1 As System.Windows.Forms.ContextMenu
+		this.treeViewAdv1.ContextMenu = this.contextMenu1;
 
-Me.contextMenu1 = New System.Windows.Forms.ContextMenu()
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
+
+		' Create and initialize a context Menu required
+
+		Private WithEvents contextMenu1 As System.Windows.Forms.ContextMenu
+
+		Me.contextMenu1 = New System.Windows.Forms.ContextMenu()
 
 
 
-'Associate the context menu with the TreeView control
+		'Associate the context menu with the TreeView control
 
-Me.treeViewAdv1.ContextMenu = Me.contextMenu1
+		Me.treeViewAdv1.ContextMenu = Me.contextMenu1
 
-
+    ~~~
+    {:.prettyprint }
 
 2. Add the context menu items.
 
-[C#]
+   ~~~ cs
+
+		private System.Windows.Forms.MenuItem editItem;
+
+		this.editItem = new System.Windows.Forms.MenuItem();
 
 
 
-private System.Windows.Forms.MenuItem editItem;
+		//Add context Menu items
 
-this.editItem = new System.Windows.Forms.MenuItem();
-
-
-
-//Add context Menu items
-
-this.contextMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.editItem});
+		this.contextMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.editItem});
 
 
 
-//Pop the context Menu
+		//Pop the context Menu
 
-this.contextMenu1.Popup += new System.EventHandler(this.contextMenu1_Popup);
-
-
-
-//Set the context menu items
-
-this.editItem.Index = 0;
-
-this.editItem.Text = "&Edit";
-
-this.editItem.Click += new System.EventHandler(this.editItem_Click);
+		this.contextMenu1.Popup += new System.EventHandler(this.contextMenu1_Popup);
 
 
 
-[VB.NET]
+		//Set the context menu items
+
+		this.editItem.Index = 0;
+
+		this.editItem.Text = "&Edit";
+
+		this.editItem.Click += new System.EventHandler(this.editItem_Click);
+
+   ~~~
+   {:.prettyprint }
+ 
+   ~~~ vbnet
+
+
+		Private WithEvents editItem As System.Windows.Forms.MenuItem
+
+		Me.editItem = New System.Windows.Forms.MenuItem()
 
 
 
-Private WithEvents editItem As System.Windows.Forms.MenuItem
+		'Add context Menu items
 
-Me.editItem = New System.Windows.Forms.MenuItem()
-
-
-
-'Add context Menu items
-
-Me.contextMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.editItem})
+		Me.contextMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.editItem})
 
 
 
-'Set the context Menu items
+		'Set the context Menu items
 
-Me.editItem.Index = 0
+		Me.editItem.Index = 0
 
-Me.editItem.Text = "&Edit"
+		Me.editItem.Text = "&Edit"
 
-
+   ~~~
+   {:.prettyprint }
 
 3. Defining context menu pop-up.
 
-[C#]
+   ~~~ cs
 
 
 
-// Declared to NULL if the right click is outside the node area .
+		// Declared to NULL if the right click is outside the node area .
 
-private TreeNodeAdv rightMouseDownNodeCached = null;
-
-
-
-// Context menu pop up
-
-private void contextMenu1_Popup(object sender, System.EventArgs e)
-
-{
-
-this.rightMouseDownNodeCached = this.treeViewAdv1.RMouseDownNode;
-
-// This will be null if the user clicked in the empty portion of the tree.
-
-if(this.treeViewAdv1.RMouseDownNode == null)
-
-{
-
-this.copyItem.Visible = false;
-
-this.cutItem.Visible = false;
-
-this.editItem.Visible = false;
-
-}
-
-else
-
-{
-
-this.copyItem.Visible = true;
-
-this.cutItem.Visible = true;
-
-this.editItem.Visible = true;
-
-}
-
-}
+		private TreeNodeAdv rightMouseDownNodeCached = null;
 
 
 
-[VB.NET]
+		// Context menu pop up
+
+		private void contextMenu1_Popup(object sender, System.EventArgs e)
+
+		{
+
+		this.rightMouseDownNodeCached = this.treeViewAdv1.RMouseDownNode;
+
+		// This will be null if the user clicked in the empty portion of the tree.
+
+		if(this.treeViewAdv1.RMouseDownNode == null)
+
+		{
+
+		this.copyItem.Visible = false;
+
+		this.cutItem.Visible = false;
+
+		this.editItem.Visible = false;
+
+		}
+
+		else
+
+		{
+
+		this.copyItem.Visible = true;
+
+		this.cutItem.Visible = true;
+
+		this.editItem.Visible = true;
+
+		}
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-' Declared to NULL if the right click is outside the node area .
+		' Declared to NULL if the right click is outside the node area .
 
-Private rightMouseDownNodeCached As TreeNodeAdv =  Nothing
-
-
-
-' Context menu Popup
-
-Private Sub contextMenu1_Popup(ByVal sender As Object, ByVal e As System.EventArgs) Handles contextMenu1.Popup
-
-Me.rightMouseDownNodeCached = Me.treeViewAdv1.RMouseDownNode
-
-' This will be null if the user clicked in the empty portion of the tree.
-
-If Me.treeViewAdv1.RMouseDownNode Is Nothing Then
-
-Me.copyItem.Visible = False
-
-Me.cutItem.Visible = False
-
-Me.editItem.Visible = False
-
-Else
-
-Me.copyItem.Visible = True
-
-Me.cutItem.Visible = True
-
-Me.editItem.Visible = True
-
-End If
-
-End Sub
+		Private rightMouseDownNodeCached As TreeNodeAdv =  Nothing
 
 
+
+		' Context menu Popup
+
+		Private Sub contextMenu1_Popup(ByVal sender As Object, ByVal e As System.EventArgs) Handles contextMenu1.Popup
+
+		Me.rightMouseDownNodeCached = Me.treeViewAdv1.RMouseDownNode
+
+		' This will be null if the user clicked in the empty portion of the tree.
+
+		If Me.treeViewAdv1.RMouseDownNode Is Nothing Then
+
+		Me.copyItem.Visible = False
+
+		Me.cutItem.Visible = False
+
+		Me.editItem.Visible = False
+
+		Else
+
+		Me.copyItem.Visible = True
+
+		Me.cutItem.Visible = True
+
+		Me.editItem.Visible = True
+
+		End If
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 ![](TreeView-Package_images/TreeView-Package_img31.jpeg)
-{:.image }
+
 
 
 Editing the nodes using "Edit" Menu Item
 
 We can include editing functionality when you click the Edit menu item using the EditItem_Click event. In the below example, it calls the BeginEdit method and begins editing the node that is selected.
 
-_Table_ _880__: Methods Table_
+_Table_ _880_:Methods Table
 
 <table>
 <tr>
@@ -2208,7 +2210,7 @@ Forces to end the editing of the selected node. It saves or cancels the editing 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2238,9 +2240,9 @@ this.treeViewAdv1.BeginEdit(this.rightMouseDownNodeCached);
 
 this.treeViewAdv1.EndEdit(false);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2269,8 +2271,7 @@ End Sub
 
 
 Me.treeViewAdv1.EndEdit(False)
-
-
+{% endhighlight %}
 
 A sample which includes the Context Menu feature is available in the below installation path.
 
@@ -2280,7 +2281,7 @@ See Also
 
 Node Editing Events
 
-###### Scrolling
+##### Scrolling
 
 TreeViewAdv control provides scrollbar support to show additional content that is available but not visible by default. The following properties are supported by treeview scrolling.
 
@@ -2288,7 +2289,7 @@ Displaying ScrollTips
 
 The text of the ScrollTip can be set through ScrollTipFormat property. It lets you identify the scroll position.
 
-_Table_ _881__: Property Table_
+_Table_ _881_:Property Table
 
 <table>
 <tr>
@@ -2314,31 +2315,27 @@ Specifies if the control should scroll together with the scrollbar, when the use
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.treeViewAdv1.ScrollTipFormat = "Position {0}";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.treeViewAdv1.ScrollTipFormat = "Position {0}"
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img32.jpeg)
-{:.image }
+
 
 
 Scrolling using Mouse
 
 The following properties support scrolling using mouse wheel.
 
-_Table_ _882__: Property Table_
+_Table_ _882_:Property Table
 
 <table>
 <tr>
@@ -2370,7 +2367,7 @@ Sizing Grip for the Scrollbars
 
 Setting the value for the SizeGripStyle property, will display a sizing grip at the bottom right corner of the control when both the scrollbars are visible. The options available are Show, which will show the sizing grip; Auto, which will automatically show the sizing grip whenever needed; Hide, which will hide the sizing grip.
 
-_Table_ _883__: Property Table_
+_Table_ _883_:Property Table
 
 <table>
 <tr>
@@ -2380,12 +2377,12 @@ Description</td></tr>
 <tr>
 <td>
 SizeGripStyle</td><td>
-Specifies if the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. The options are,{{ _Show_ | markdownify }} - shows the sizing grip.{{ _Auto_ | markdownify }} - shows the sizing grip whenever needed.{{ _Hide_ | markdownify }} - Hides the sizing grip.</td></tr>
+Specifies if the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. The options are,{{ '_Show_' | markdownify }} - shows the sizing grip.{{ '_Auto_' | markdownify }} - shows the sizing grip whenever needed.{{ '_Hide_' | markdownify }} - Hides the sizing grip.</td></tr>
 </table>
 
 
 ![](TreeView-Package_images/TreeView-Package_img33.jpeg)
-{:.image }
+
 
 
 Office2007 Look and Feel for ScrollBars
@@ -2393,14 +2390,14 @@ Office2007 Look and Feel for ScrollBars
 TreeViewAdv provides support for Office2007Scrollbars with all three color schemes.
 
 ![](TreeView-Package_images/TreeView-Package_img34.jpeg)
-{:.image }
+
 
 
 Color schemes can be selected using Office2007ScrollBarsColorScheme property.
 
 When the control is been used under a splitter window and if it is sharing the scrollbars with the parent control or the parent window, then setting FillSplitterPane property to true, will toggle support for doing that.
 
-_Table_ _884__: Property Table_
+_Table_ _884_:Property Table
 
 <table>
 <tr>
@@ -2414,29 +2411,27 @@ Provides support for using the control inside dynamic splitter window and sharin
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.treeViewAdv1.AllowIncreaseSmallChange = true;
 
 this.treeViewAdv1.FillSplitterPane = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.treeViewAdv1.AllowIncreaseSmallChange = True
 
 Me.treeViewAdv1.FillSplitterPane = True
 
+{% endhighlight %}
+
 See Also
 
 Scrolling Events
 
-###### Hot Tracking
+##### Hot Tracking
 
 Hot Tracking is a feature available for nodes of the TreeViewAdv control. This gives a hot tracked appearance to the nodes when the mouse cursor is hovering over a corresponding node.
 
@@ -2446,14 +2441,13 @@ Enabling the HotTracking property to true and when the mouse hovers over any nod
 * In the below image the node "France" is given a link approach by setting the HotTracking property to true and by moving the mouse over the node.
 
 ![](TreeView-Package_images/TreeView-Package_img35.jpeg)
-{:.image }
 
 
-###### Tooltip
+##### Tooltip
 
 The TreeView control can display help text for individual nodes, when the mouse is moved over a node, by setting the HelpText property of the nodes. 
 
-_Table_ _885__: Property Table_
+_Table_ _885_:Property Table
 
 <table>
 <tr>
@@ -2467,32 +2461,28 @@ Indicates the help text of the node.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 treeNodeAdv9.HelpText = "ToolTip for TreeView";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 TreeNodeAdv9.HelpText = "ToolTip for TreeView"
 
-
+{% endhighlight %}
 
 We can display scroll tips for the scrollbars.
 
-##### DesignTime Features
+#### DesignTime Features
 
 TreeView provides the shortcuts to access various properties of the control.
 
 TaskWindow can be accessed using smart tag.
 
 ![](TreeView-Package_images/TreeView-Package_img36.jpeg)
-{:.image }
+
 
 
 The above window lets you open the NodeCollection Editor, modify the appearance settings, assign imagelists, enable options like editing the node text, load on demand, owner draw nodes and HotTracking properties. It also lets you set the layout settings for the control.
@@ -2504,14 +2494,14 @@ It provides shortcuts to access the NodeCollection Editor using the context menu
 You can also add nodes using the "Add Node" option in the context menu.
 
 ![](TreeView-Package_images/TreeView-Package_img37.jpeg)
-{:.image }
 
 
-##### TreeView Appearance
+
+#### TreeView Appearance
 
 This section provides options to the customize the tree structure and the nodes.
 
-###### Background Settings
+##### Background Settings
 
 TreeView control lets you customize its background with colors and image.
 
@@ -2519,7 +2509,7 @@ Background Colors
 
 The below properties sets the background color for the treeview and also the node text.
 
-_Table_ _886__: Property Table_
+_Table_ _886_:Property Table
 
 <table>
 <tr>
@@ -2535,15 +2525,14 @@ Indicates the background color of the control. It provides options to set style,
 BackColor</td><td>
 Indicates the background color of the text and the graphics of the control.</td></tr>
 </table>
-> ![](TreeView-Package_images/TreeView-Package_img38.jpeg)
-{:.image }
- _Note: The Background property is available for individual nodes also._
+
+> Note: The Background property is available for individual nodes also.
 
 Background Image
 
 Use the BackgroundImage property to specify a custom image as the background of the chart. The image layout can also be specified using the properties below.
 
-_Table_ _887__: Property Table_
+_Table_ _887_:Property Table
 
 <table>
 <tr>
@@ -2563,7 +2552,7 @@ More Customization for PlusMinus Controls
 
 The controls in the TreeViewAdv like PlusMinus control will have a transparent background, if the TransparentControls property is set to true.
 
-_Table_ _888__: Property Table_
+_Table_ _888_:Property Table
 
 <table>
 <tr>
@@ -2577,31 +2566,27 @@ Indicates if the control will have a transparent background.</td></tr>
 </table>
 
 
- [C#]
-
-
+{% highlight c# %}
 
 this.treeViewAdv1.TransparentControls = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.treeViewAdv1.TransparentControls = True
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img39.jpeg)
-{:.image }
+
 
 
 Themed TreeView Control
 
 Themes can be enabled for the control by enabling ThemesEnabled property. This can also be enabled for individual nodes also by using the TreeNodeAdv.ThemesEnabled property.
 
-_Table_ _889__: Property Table_
+_Table_ _889_:Property Table
 
 <table>
 <tr>
@@ -2613,7 +2598,8 @@ Description</td></tr>
 ThemesEnabled</td><td>
 Indicates if the control is drawn themed.</td></tr>
 </table>
-_Table_ _890__: Property Table_
+
+_Table_ _890_:Property Table
 
 <table>
 <tr>
@@ -2629,7 +2615,7 @@ Drawing Node Background
 
 To draw the node's background, users need to turn on OwnerDrawnNodesBackground property, in theTreeViewAdv and then listen to the tree's NodeBackgroundPaint event which will be called for each node. This can be implemented by using the following code snippet.
 
-_Table_ _891__: Property Table_
+_Table_ _891_:Property Table
 
 <table>
 <tr>
@@ -2641,7 +2627,8 @@ Description</td></tr>
 OwnerDrawnNodesBackground</td><td>
 Indicates if the NodeBackgroundPaint event will be fired before drawing a node's background.</td></tr>
 </table>
-_Table_ _892__: Event Table_
+
+_Table_ _892_:Event Table
 
 <table>
 <tr>
@@ -2655,7 +2642,7 @@ This event when fired, paints the background of the node, when OwnerDrawNodes pr
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2679,9 +2666,9 @@ private void treeViewAdv1_NodeBackgroundPaint(object sender, TreeNodeAdvPaintBac
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2701,19 +2688,17 @@ e.BrushInfo = br
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img40.jpeg)
-{:.image }
+
 
 
 Painting the active and inactive nodes
 
 Background for the selected node can be set using SelectedNodeBackground property. The selection rectangle gets grayed out when the TreeViewAdv loses focus. If the user still wishes to maintain the node's active colors, then the InactiveSelectedNodeBackground and InactiveSelectedNodeForeColor properties can be set. 
 
-> ![](TreeView-Package_images/TreeView-Package_img41.jpeg)
-{:.image }
- _Note: HideSelection property should be set to false to effect this setting._
+> Note: HideSelection property should be set to false to effect this setting.
 
 <table>
 <tr>
@@ -2735,7 +2720,7 @@ Indicates the text color of the selected node when not focussed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2743,9 +2728,9 @@ this.treeViewAdv1.InactiveSelectedNodeBackground = new Syncfusion.Drawing.BrushI
 
 this.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2753,13 +2738,14 @@ Me.treeViewAdv1.InactiveSelectedNodeBackground = New Syncfusion.Drawing.BrushInf
 
 Me.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue
 
+{% endhighlight %}
 
 
 ![](TreeView-Package_images/TreeView-Package_img42.png)
-{:.image }
 
 
-###### Foreground Settings
+
+##### Foreground Settings
 
 Foreground Settings for the tree node text
 
@@ -2767,9 +2753,7 @@ Using the Text and TextColor property, individual node's text can be edited and 
 
 Using the Font and the ForeColor properties of the control, the text and text color of the nodes can be set for all the nodes in the TreeView control.
 
-> ![](TreeView-Package_images/TreeView-Package_img43.jpeg)
-{:.image }
- _Note: The font style for individual nodes, can be set using the Font property available for individual nodes using NodeCollection Editor._
+> Note: The font style for individual nodes, can be set using the Font property available for individual nodes using NodeCollection Editor.
 
 <table>
 <tr>
@@ -2787,7 +2771,7 @@ Specifies the text color of the nodes.</td></tr>
 </table>
 
 
-_Table_ _895__: Property Table_
+_Table_ _895_:Property Table
 
 <table>
 <tr>
@@ -2803,12 +2787,11 @@ Sets text for the node.</td></tr>
 TextColor</td><td>
 Sets the color for the specific node text.</td></tr>
 </table>
-> ![](TreeView-Package_images/TreeView-Package_img44.jpeg)
-{:.image }
- _Note: When you set the ForeColor property for TreeViewAdv control, it will get reflected in the Node's TextColor property. User can change the color for specific nodes using TreeNodeAdv.TextColor property._
+
+> Note: When you set the ForeColor property for TreeViewAdv control, it will get reflected in the Node's TextColor property. User can change the color for specific nodes using TreeNodeAdv.TextColor property.
 
 ![](TreeView-Package_images/TreeView-Package_img45.png)
-{:.image }
+
 
 
 Drawing Selected Node Foreground
@@ -2817,7 +2800,7 @@ Painting the foreground of the Specified Nodes
 
 User can paint specific nodes using the BeforeNodePaint event.
 
-_Table_ _896__: Event Table_
+_Table_ _896_:Event Table
 
 <table>
 <tr>
@@ -2829,9 +2812,8 @@ Description</td></tr>
 BeforeNodePaint</td><td>
 Handled before a node is being painted.</td></tr>
 </table>
-> ![](TreeView-Package_images/TreeView-Package_img46.jpeg)
-{:.image }
- _Note: OwnerDrawNodes property should be set to true while handling this event._
+
+> Note: OwnerDrawNodes property should be set to true while handling this event.
 
 <table>
 <tr>
@@ -2845,7 +2827,7 @@ Indicates if the BeforeNodePaint event will be fired before drawing a node.</td>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2867,9 +2849,9 @@ private void treeViewAdv1_BeforeNodePaint(object sender, TreeNodeAdvPaintEventAr
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2887,17 +2869,17 @@ Private Sub treeViewAdv1_BeforeNodePaint(ByVal sender As Object, ByVal e As Tree
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img47.jpeg)
-{:.image }
+
 
 
 Active Node Foreground Settings
 
 SelectedNodeForeColor property lets you paint the selected node.
 
-_Table_ _898__: Property Table_
+_Table_ _898_:Property Table
 
 <table>
 <tr>
@@ -2911,25 +2893,23 @@ Indicates the forecolor of the node that is selected.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.treeViewAdv1.SelectedNodeForeColor = System.Drawing.Color.Gray;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.treeViewAdv1.SelectedNodeForeColor = System.Drawing.Color.Gray
+
+{% endhighlight %}
 
 Post Default Drawing
 
 Users can also draw on the node, after the default drawing routines have rendered the node appropriately. Users can do so by first turning on OwnerDrawnNodes in the tree and listening to the AfterNodePaint event.
 
-_Table_ _899__: Event Table_
+_Table_ _899_:Event Table
 
 <table>
 <tr>
@@ -2945,13 +2925,13 @@ See Also
 
 Image Overlaying
 
-###### Border Settings
+##### Border Settings
 
 3D Border for TreeView 
 
 The following properties sets 3D border for the treeview.
 
-_Table_ _900__: Property Table_
+_Table_ _900_:Property Table
 
 <table>
 <tr>
@@ -2961,7 +2941,7 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the border style for the Treeview control.{{ _FixedSingle_ | markdownify }} - a normal border,{{ _Fixed3D_ | markdownify }} - 3D appearance.</td></tr>
+Sets the border style for the Treeview control.{{ '_FixedSingle_' | markdownify }} - a normal border,{{ '_Fixed3D_' | markdownify }} - 3D appearance.</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
@@ -2970,16 +2950,14 @@ Indicates the style of the 3D border when BorderStyle is set to Fixed3D.RaisedOu
 
 
 ![](TreeView-Package_images/TreeView-Package_img48.jpeg)
-{:.image }
+
 
 
 2D Border for TreeView
 
 The following properties let you set customized 2D border.
 
-> ![](TreeView-Package_images/TreeView-Package_img49.jpeg)
-{:.image }
- _Note: The settings will effect only when TreeViewAdv.BorderStyle property is set to FixedSingle._
+> Note: The settings will effect only when TreeViewAdv.BorderStyle property is set to FixedSingle.
 
 <table>
 <tr>
@@ -3001,7 +2979,7 @@ Indicates the 2D border style. The options are,Solid (Default),Dotted,Dashed,Ins
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3011,9 +2989,9 @@ this.treeViewAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed;
 
 this.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3023,13 +3001,13 @@ Me.treeViewAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed
 
 Me.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img50.jpeg)
-{:.image }
 
 
-###### Spacing
+
+##### Spacing
 
 TreeViewAdv architecture gives a neat look by using the gutter space and indentation features.
 
@@ -3037,52 +3015,46 @@ GutterSpace
 
 The space on the left side of a TreeViewAdv control is the gutter space which acts as a left margin to the control. It can be modified using GutterSpace property. By default it is 3.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.treeViewAdv1.GutterSpace = 7;
 
+{% endhighlight %}
 
-
- [VB.NET]
-
-
+ {% highlight vbnet %}
 
 Me.treeViewAdv1.GutterSpace = 5
+
+{% endhighlight %}
 
 Indentation
 
 The space between the parent node and the child node is the Indentation. It indicates the indent of the child nodes from the parent node. By providing value to the Indent property of the TreeViewAdv control, Indentation can be altered. Default value is 19.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.treeViewAdv1.Indent = 21
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.treeViewAdv1.Indent = 21
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img51.jpeg)
-{:.image }
 
 
-##### Styles Architecture
+
+#### Styles Architecture
 
 The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a TreeNodeAdvStyleInfo. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hatch table. 
 
 As illustrated below, implicit style inheritance is enforced by the framework while explicit style inheritance can be setup by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
 ![](TreeView-Package_images/TreeView-Package_img52.jpeg)
-{:.image }
+
 
 
 Implicit Style Inheritance
@@ -3100,7 +3072,7 @@ Explicit Style Inheritance
 
 Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 
-_Table_ _902__: Property Table_
+_Table_ _902_:Property Table
 
 <table>
 <tr>
@@ -3117,48 +3089,48 @@ Indicates the base style of the nodes.</td></tr>
 StandardStyle is the default style for the nodes. It can be edited using StandardStyle property. It can also be edited through BaseStyles Collection Editor dialog.
 
 ![](TreeView-Package_images/TreeView-Package_img53.jpeg)
-{:.image }
 
 
-###### Standard Style
+
+##### Standard Style
 
 Setting a Common Style for All the Nodes in the TreeViewAdv
 
 We can modify the background for all the children of a parent node by editing the StandardStyle property. 
 
 ![](TreeView-Package_images/TreeView-Package_img54.jpeg)
-{:.image }
+
 
 
 The below image displays a gradient style for all the nodes of the TreeView control.
 
 ![](TreeView-Package_images/TreeView-Package_img55.jpeg)
-{:.image }
 
 
-###### Node Specific Style
+
+##### Node Specific Style
 
 Make a Node's Style Inherit from Another Base Style
 
  Apart from the default style (Standard Style),we can also create custom Base styles using the Base Styles Collection Editor. Clicking the Add Base Style button, will add a new BaseStyle whose properties can be edited.
 
 ![](TreeView-Package_images/TreeView-Package_img56.jpeg)
-{:.image }
+
 
 
 This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
 ![](TreeView-Package_images/TreeView-Package_img57.jpeg)
-{:.image }
+
 
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
 
 ![](TreeView-Package_images/TreeView-Package_img58.jpeg)
-{:.image }
 
 
-###### Child Style
+
+##### Child Style
 
 Setting a Common Style for All the Children of a Parent Node
 
@@ -3167,42 +3139,42 @@ This topic illustrates how the appearance of all the children of a particular no
 In the Node Collection Editor, modify the settings in the TreeNodeAdv.ChildStyle property. These changes will be reflected in the child node of this node.
 
 ![](TreeView-Package_images/TreeView-Package_img59.jpeg)
-{:.image }
+
 
 
 ![](TreeView-Package_images/TreeView-Package_img60.jpeg)
-{:.image }
 
 
-###### Node Level Style
+
+##### Node Level Style
 
 Setting a Common Style for all the Nodes in a Level
 
 TreeView lets you add node level styles using the BaseStyles Collection Editor.
 
 ![](TreeView-Package_images/TreeView-Package_img61.jpeg)
-{:.image }
+
 
 
 By default this style will be applied to the first level nodes as shown in the image below.
 
 ![](TreeView-Package_images/TreeView-Package_img62.jpeg)
-{:.image }
+
 
 
 You can also apply this style to any of the node by using TreeNodeAdv.BaseStyle property for a particular node.
 
 ![](TreeView-Package_images/TreeView-Package_img63.jpeg)
-{:.image }
 
 
-##### LoadOnDemand
+
+#### LoadOnDemand
 
 LoadOnDemand feature is to give a delay in loading a node in a Tree, before the user initiates a node to expand.
 
 By setting LoadOnDemand property to true, the plus(+) and minus(-) of all the nodes will be visible in the beginning. By handling the BeforeExpand event of the nodes, subnodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether or not the children are added.
 
-_Table_ _903__: Property Table_
+_Table_ _903_:Property Table
 
 <table>
 <tr>
@@ -3218,7 +3190,7 @@ Specifies if the tree should follow the LoadOnDemand paradigm.</td></tr>
 AddSeparatorAtEnd</td><td>
 Indicates if the TreeNodeAdv.GetPath method adds a separator at the end of the path string returned.</td></tr>
 </table>
-_Table_ _904__: Methods Table_
+_Table_ _904_:Methods Table
 
 <table>
 <tr>
@@ -3238,7 +3210,7 @@ The vital thing in this sample is that the TreeViewAdv.AddSeparatorAtEnd propert
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3310,9 +3282,9 @@ catch{}	// Exception will be thrown in the user renamed the dirs and then select
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3386,10 +3358,10 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img64.jpeg)
-{:.image }
+
 
 
 A sample demonstrating the LoadOnDemand feature in available in the below sample installation path.
@@ -3400,13 +3372,13 @@ See Also
 
 Plus Sign On ExpandMode
 
-##### Data Binding
+#### Data Binding
 
 TreeViewAdv control supports databindingwith hierarchical data source like xml and displays the information.
 
 The TreeViewAdv architecture provides a way to consume information from an external XML file, DataSet objects etc and allows the user to convert the Tree to XML structure and vice versa. To implement this databinding concept in TreeViewAdv, the user should drag and drop a TreeViewAdv control, RichTextBox control and MainFrameBarManager to the form. Create bar items and handle the below click events accordingly.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3638,9 +3610,9 @@ this.Close();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3830,19 +3802,19 @@ Me.Close()
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img65.jpeg)
-{:.image }
 
 
-##### Sorting
+
+#### Sorting
 
 Sorting can be performed on the tree nodes using the Sort function and specifying the function to be performed on either the checkbox or tag or text values in ascending or descending order.
 
 The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the SortWithChildNode property should be set to true. The sort function can be done based on the value type which can be specified using SortType to either the option of Checkbox or Tag or Text. The order in which the sort function has to be performed can be specified using the SortOrder that holds the values of Ascending or Descending.
 
-_Table_ _905__: Property Table_
+_Table_ _905_:Property Table
 
 <table>
 <tr>
@@ -3860,7 +3832,7 @@ The SortType property indicates the field. Nodes will be sorted based on the typ
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3868,9 +3840,9 @@ treeNodeAdv9.SortOrder = System.Windows.Forms.SortOrder.Ascending;
 
 treeNodeAdv9.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3878,12 +3850,14 @@ TreeNodeAdv9.SortOrder = System.Windows.Forms.SortOrder.Ascending
 
 TreeNodeAdv9.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
 
+{% endhighlight %}
+
 Comparing Options for Sorting
 
 * The CompareOptions property gives additional options of comparing the texts of the nodes.
 * The Comparer property is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the subnodes. 
 
-_Table_ _906__: Property Table_
+_Table_ _906_:Property Table
 
 <table>
 <tr>
@@ -3901,7 +3875,7 @@ Indicates the  object which compares two nodes.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3909,9 +3883,9 @@ treeNodeAdv9.CompareOptions = System.Globalization.CompareOptions.IgnoreCase;
 
 treeNodeAdv9.Comparer = null;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3919,21 +3893,21 @@ TreeNodeAdv9.CompareOptions = System.Globalization.CompareOptions.IgnoreCase;
 
 TreeNodeAdv9.Comparer = Null
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img66.png)
-{:.image }
+
 
 
 See Also
 
 How to Sort all the nodes in the TreeViewAdv control?
 
-##### Performance
+#### Performance
 
 The TreeViewAdv performance can be improved by the following properties and methods.
 
-_Table_ _907__: Property Table_
+_Table_ _907_:Property Table
 
 <table>
 <tr>
@@ -3949,7 +3923,7 @@ Improves performance of the TreeViewAdv with large number of nodes. Generally th
 RecalculateExpansion</td><td>
 Indicates if node dimension calculation should be done on load. By default it is true. This property when set to false, greatly improves the performance of the tree nodes on load.</td></tr>
 </table>
-_Table_ _908__: Methods Table_
+_Table_ _908_:Methods Table
 
 <table>
 <tr>
@@ -3965,11 +3939,10 @@ Calling this method will stop the redraws of the control and makes the node addi
 EndUpdate</td><td>
 Resumes the painting of the control suspended by BeginUpdate method.</td></tr>
 </table>
-> ![](TreeView-Package_images/TreeView-Package_img67.jpeg)
-{:.image }
- _Note: While adding more than one node to the treeViewAdv control, calling the BeginUpdate and EndUpdate method will improve performance of the control._
 
-[C#]
+> Note: While adding more than one node to the treeViewAdv control, calling the BeginUpdate and EndUpdate method will improve performance of the control.
+
+{% highlight c# %}
 
 
 
@@ -3985,9 +3958,9 @@ this.treeViewAdv1.BeginUpdate();
 
 this.treeViewAdv1.EndUpdate();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4003,7 +3976,9 @@ Me.treeViewAdv1.BeginUpdate()
 
 Me.treeViewAdv1.EndUpdate()
 
-##### Search Functionality
+{% endhighlight %}
+
+#### Search Functionality
 
 Description
 
@@ -4045,7 +4020,7 @@ Child Node: Specifies whether the search can be performed only on the child node
 
 The find and replace feature can be enabled for the TreeViewAdv control by using the following code:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4067,9 +4042,9 @@ The find and replace feature can be enabled for the TreeViewAdv control by using
 
  dialog.ReplaceAll ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Dim dialog As New TreeViewAdvFindReplaceDialog(Me.TreeView)
 
@@ -4089,7 +4064,9 @@ dialog.Replace ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRang
 
 dialog.ReplaceAll ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
-###### Events
+{% endhighlight %}
+
+##### Events
 
 OnNodeBeforeFind Event
 
@@ -4099,7 +4076,7 @@ Event Data
 
 TreeNodeAdvBeforeFindArgs contains the following members that provide information specific to this event:
 
-_Table_ _909__: Members Table_
+_Table_ _909_:Members Table
 
 <table>
 <tr>
@@ -4121,7 +4098,7 @@ This enables users to disable highlighting matched TreeNodeAdv.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4143,9 +4120,9 @@ This enables users to disable highlighting matched TreeNodeAdv.</td></tr>
 
         }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4165,7 +4142,7 @@ Dim cancelFind As Boolean = e.Cancel
 
 End Sub
 
-
+{% endhighlight %}
 
 OnNodeAfterFound Event
 
@@ -4175,7 +4152,7 @@ Event Data
 
 TreeNodeAdvAfterFindArgs contains the following members that provide information specific to this event:
 
-_Table_ _910__: Members Table_
+_Table_ _910_:Members Table
 
 <table>
 <tr>
@@ -4193,7 +4170,7 @@ This will return the search string to be highlighted in TreeNodeAdv.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
  void treeViewAdv1_OnNodeAfterFound(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs e)
 
@@ -4210,10 +4187,10 @@ This will return the search string to be highlighted in TreeNodeAdv.</td></tr>
         }
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4229,6 +4206,8 @@ Dim searchedString As string = e.SearchText
 
 End Sub
 
+{% endhighlight %}
+
 OnNodeReplacing Event
 
 This event will be triggered before replacing the matched tree node text in the TreeViewAdv control. 
@@ -4237,7 +4216,7 @@ Event Data
 
 TreeNodeAdvOnReplacingArgs contains the following members that provide information specific to this event:
 
-_Table_ _911__: Members Table_
+_Table_ _911_:Members Table
 
 <table>
 <tr>
@@ -4271,7 +4250,7 @@ This will enable users to disable replacing matched TreeNodeAdv text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 void treeViewAdv1_OnNodeReplacing(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs e)
 
@@ -4303,9 +4282,9 @@ void treeViewAdv1_OnNodeReplacing(object sender, Syncfusion.Windows.Forms.Tools.
 
         }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Private Sub treeViewAdv1_OnNodeReplacing(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacingArgs)
 
@@ -4335,7 +4314,7 @@ Dim cancelReplace As Boolean = e.Cancel
 
 End Sub
 
-
+{% endhighlight %}
 
 OnNodeReplaced Event
 
@@ -4345,7 +4324,7 @@ Event Data
 
 The TreeViewOnReplacedArgs contains the following members that provide information specific to this event:
 
-_Table_ _912__: Members Table_
+_Table_ _912_:Members Table
 
 <table>
 <tr>
@@ -4367,7 +4346,7 @@ This will return TreeNodeAdv text that has been replaced.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4389,11 +4368,11 @@ This will return TreeNodeAdv text that has been replaced.</td></tr>
 
         }
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
  Private Sub treeViewAdv1_OnNodeReplaced(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacedArgs)
 
@@ -4411,25 +4390,25 @@ Dim ReplacedString As String = e.ReplaceText
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img68.png)
-{:.image }
 
 
-#### TreeViewAdv Events
+
+### TreeViewAdv Events
 
 This section covers the events related to the below concepts.
 
-##### Node Painting Events
+#### Node Painting Events
 
 This section discusses the below node painting events.
 
-###### AfterNodePaint Event
+##### AfterNodePaint Event
 
 This event is discussed here.
 
-###### BeforeNodePaint
+##### BeforeNodePaint
 
 This event is discussed in Drawing Selected Node Foreground.
 
@@ -4437,7 +4416,7 @@ This event is discussed in Drawing Selected Node Foreground.
 
 This section discusses AfterInteractiveChecks Event.
 
-###### AfterInteractiveChecks Event
+##### AfterInteractiveChecks Event
 
 InteractiveCheckBox settings available for the treeNodeAdv indicates whether the node will have an interactive checkbox. This AfterInteractiveChecks event will be triggered when the checked state of one or more nodes of a TreeViewAdv has changed due to this InteractiveCheckbox setting.
 
@@ -4445,7 +4424,7 @@ Event Data
 
 The TreeNodeAdvEventHandler receives an argument of type TreeNodeAdvEventArgs containing data related to this event. The following TreeNodeAdvEventArgs members provide information specific to this event.
 
-_Table_ _913__: Members Table_
+_Table_ _913_:Members Table
 
 <table>
 <tr>
@@ -4463,7 +4442,7 @@ Gets or sets the Syncfusion.Windows.Forms.Tools.TreeNodeAdv associated with the 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4483,9 +4462,9 @@ Console.Write("TreeNodeAdv :" + e.Node.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4503,23 +4482,25 @@ Console.Write("TreeNodeAdv :" + e.Node.ToString())
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 Checkbox and Option buttons
 
-##### General Events
+#### General Events
 
 This section discusses the following general events.
 
-###### BeforeExpand Event
+##### BeforeExpand Event
 
 BeforeExpand event occurs before a node is expanded. It is illustrated in the LoadOnDemand topic.
 
-###### Deactivated Event
+##### Deactivated Event
 
 The Deactivated event is triggered when the TreeViewAdv control is deactivated or lost focus.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4533,9 +4514,9 @@ Console.Write("Deactivated Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4547,11 +4528,13 @@ Console.Write("Deactivated Event is raised ")
 
 End Sub
 
-###### FillSplitterPaneChanged Event
+{% endhighlight %}
+
+##### FillSplitterPaneChanged Event
 
 The FillSplitterPane property of a TreeViewAdv control is the one that toggles support for using the control inside a dynamic splitter window and sharing scrollbars with the parent window. The FillSplitterPaneChanged event will be raised when this property is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4565,9 +4548,9 @@ Console.Write("FillSplitterPaneChanged Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4579,7 +4562,9 @@ Console.Write("FillSplitterPaneChanged Event is raised ")
 
 End Sub
 
-###### KeyDown Event
+{% endhighlight %}
+
+#### KeyDown Event
 
 This event is triggered when the key is first pressed. An example which uses the KeyDown event is as follows.
 
@@ -4587,7 +4572,7 @@ Event Data
 
 The KeyEventHandler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs members provide information specific to this event.
 
-_Table_ _914__: Members Table_
+_Table_ _914_:Members Table
 
 <table>
 <tr>
@@ -4635,7 +4620,7 @@ Adding nodes into the TreeViewAdv using KeyBoard
 
 The nodes can be added to the TreeViewAdv when any key is pressed, whereby the text of the node reflects the key that has been used for adding the node, by using the following code in the TreeViewAdv KeyDown event handler.
 
-Border Settings[C#]
+Border Settings{% highlight c# %}
 
 
 
@@ -4656,9 +4641,9 @@ private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventAr
      Console.WriteLine("The "+node.Text+" "+"is added"); 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4680,13 +4665,13 @@ Private Sub treeViewAdv1_KeyDown(ByVal sender As Object, ByVal e As System.Windo
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img69.jpeg)
-{:.image }
 
 
-###### BeforeCheck Event
+
+#### BeforeCheck Event
 
 This event is triggered when the checkbox is checked in the control. Below is an example which handles this event.
 
@@ -4694,7 +4679,7 @@ Event Data
 
 The TreeNodeAdvBeforeCheckEventHandler receives an argument of type TreeNodeAdvBeforeCheckEventArgs containing data related to this event. The following  TreeNodeAdvBeforeCheckEventArgs' members provide information specific to this event.
 
-_Table_ _915__: Members Table_
+_Table_ _915_:Members Table
 
 <table>
 <tr>
@@ -4718,7 +4703,7 @@ Check or uncheck TreeNodeAdvs using the Mouse
 
 This can be done by handling the TreeViewAdv's BeforeCheck event as shown below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4742,9 +4727,9 @@ private void treeViewAdv1_BeforeCheck(object sender, Syncfusion.Windows.Forms.To
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4768,7 +4753,9 @@ Private Sub treeViewAdv1_BeforeCheck(ByVal sender As Object, ByVal e As Syncfusi
 
 End Sub
 
-###### Leave Event
+{% endhighlight %}
+
+##### Leave Event
 
 This event is triggered when the control is no longer the active control of the form. An example which uses the Leaveevent is as follows.
 
@@ -4780,7 +4767,7 @@ After editing the node by pressing F2, if the Delete key is pressed, to avoid th
 
 Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the TreeViewAdv's BeforeEdit event, setting the baritem's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4812,9 +4799,9 @@ this.barItem1.Shortcut = Shortcut.Del;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4840,15 +4827,17 @@ Me.barItem1.Shortcut = Shortcut.Del
 
 End Sub
 
-##### Node Images Events
+{% endhighlight %}
+
+#### Node Images Events
 
 This section illustrates the events related to the node images.
 
-###### DefaultCollapseImageIndexChanged Event
+##### DefaultCollapseImageIndexChanged Event
 
 DefaultCollapseImageIndex property of the TreeViewAdv sets the index of the default image for collapse button. This event is triggered when this property is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4862,9 +4851,9 @@ Console.Write("DefaultCollapseImageIndexChanged Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4876,11 +4865,13 @@ Console.Write("DefaultCollapseImageIndexChanged Event is raised ")
 
 End Sub
 
-###### DefaultExpandImageIndexChanged Event
+{% endhighlight %}
+
+##### DefaultExpandImageIndexChanged Event
 
 DefaultExpandImageIndex property of the TreeViewAdv sets the index of the default image for Expand button. The DefaultExpandImageIndexChanged event is triggered when this property is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4894,9 +4885,9 @@ Console.Write("DefaultExpandImageIndexChanged Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4908,11 +4899,13 @@ Console.Write("DefaultExpandImageIndexChanged Event is raised ")
 
 End Sub
 
-###### NodeStateImageListChanged Event
+{% endhighlight %}
+
+##### NodeStateImageListChanged Event
 
 NodeStateImageList holds the state images for the nodes. When this image list is changed then, the NodeStateImageListChanged event will be triggered.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4926,9 +4919,9 @@ Console.Write("NodeStateImageListChanged Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4940,11 +4933,13 @@ Console.Write("NodeStateImageListChanged Event is raised ")
 
 End Sub
 
-##### Node Collections
+{% endhighlight %}
+
+#### Node Collections
 
 TreeViewAdv has properties that specifies the collection of expanded nodes, collapsed nodes, checked nodes and selected nodes.
 
-_Table_ _916__: Property Table_
+_Table_ _916_:Property Table
 
 <table>
 <tr>
@@ -4968,15 +4963,16 @@ Specifies the collection of checked nodes.</td></tr>
 SelectedNodes</td><td colspan = "2">
 Specifies the collection of selected nodes.</td></tr>
 </table>
-##### Appearance Events
+
+#### Appearance Events
 
 This section discusses those events that are handled on changing some appearance related properties. They are as follows.
 
-###### GradientBackgroundChanged Event
+##### GradientBackgroundChanged Event
 
 This event occurs when the GradientBackground of the tree changes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4990,9 +4986,9 @@ Console.Write("Gradient Background Changed Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5004,15 +5000,17 @@ Console.Write("Gradient Background Changed Event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 Background Settings
 
-###### GradientColorsChanged Event
+##### GradientColorsChanged Event
 
 This event occurs when the GradientColors of the tree changes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5026,9 +5024,9 @@ Console.Write("Gradient Colors Changed Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5040,15 +5038,17 @@ Console.Write("Gradient Colors Changed Event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 Background Settings
 
-###### VerticalGradientChanged Event
+##### VerticalGradientChanged Event
 
 This event occurs when the tree's VerticalGradient is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5062,9 +5062,9 @@ Console.Write("Vertical GradientChanged Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5076,11 +5076,13 @@ Console.Write("Vertical GradientChanged Event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 Background Settings
 
-##### Node Editing Events
+#### Node Editing Events
 
 This section will walk through the following node editing events.
 
@@ -5088,7 +5090,7 @@ See Also
 
 Context Menu
 
-###### NodeEditorValidating Event
+##### NodeEditorValidating Event
 
 This event is used to validate a new node label entered by the user.
 
@@ -5096,7 +5098,7 @@ Event Data
 
 The TreeNodeAdvCancelableEditEventHandler receives an argument of type TreeNodeAdvCancelableEditEventArgs containing data related to this event. The following TreeNodeAdvCancelableEditEventArgs members provide information specific to this event.
 
-_Table_ _917__: Members Table_
+_Table_ _917_:Members Table
 
 <table>
 <tr>
@@ -5124,7 +5126,7 @@ How To Validate Node Label Text
 
 This topic shows how you can validate the text of the label of a node in the TreeViewAdv control. You need to listen to the NodeEditorValidating event of the TreeViewAdv control to validate the node's label text entered by the user. The code sample below demonstrates how you can prevent blank labels in a node. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5148,9 +5150,9 @@ private void treeViewAdv1_NodeEditorValidating(object sender, Syncfusion.Windows
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5174,7 +5176,9 @@ End If
 
 End Sub
 
-###### NodeEditorValidated Event
+{% endhighlight %}
+
+##### NodeEditorValidated Event
 
 This event is raised after the newly entered text in the Node editor gets stored.
 
@@ -5182,7 +5186,7 @@ Event Data
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _918__: Members Table_
+_Table_ _918_:Members Table
 
 <table>
 <tr>
@@ -5200,7 +5204,7 @@ Returns the TreeNodeAdv that is currently being edited.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5220,9 +5224,9 @@ Console.Write("TreeNodeAdv :" + e.Node.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5240,7 +5244,9 @@ Console.Write("TreeNodeAdv :" + e.Node.ToString())
 
 End Sub
 
-###### NodeEditorValidateString Event
+{% endhighlight %}
+
+##### NodeEditorValidateString Event
 
 This event is triggered when the text entered by the user changes in the Node editor control. 
 
@@ -5248,7 +5254,7 @@ Event Data
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _919__: Members Table_
+_Table_ _919_:Members Table
 
 <table>
 <tr>
@@ -5274,7 +5280,7 @@ Returns the TreeNodeAdv that is currently being edited.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5310,9 +5316,9 @@ Console.Write("TreeNodeAdv :" + e.Node.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5348,11 +5354,11 @@ Console.Write("TreeNodeAdv :" + e.Node.ToString())
 
 End Sub
 
-> ![](TreeView-Package_images/TreeView-Package_img70.jpeg)
-{:.image }
- _Note: Another use case illustrating this event -_ How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit? 
+{% endhighlight %}
 
-###### BeforeEdit Event
+> Note: Another use case illustrating this event - How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit?
+
+##### BeforeEdit Event
 
 This event is raised before the node goes into edit mode. Below are examples which handles the BeforeEdit event.
 
@@ -5360,7 +5366,7 @@ Event Data
 
 The TreeNodeAdvBeforeEditEventHandler receives an argument of type TreeNodeAdvBeforeEditEventArgs containing data related to this event. The following  TreeNodeAdvBeforeEditEventArgs' members provide information specific to this event.
 
-_Table_ _920__: Members Table_
+_Table_ _920_:Members Table
 
 <table>
 <tr>
@@ -5391,7 +5397,7 @@ BeforeEdit event can be used for this purpose. In this example, the Parent Nodes
 
 The desired condition is checked on that node and based on the result, the TreeNodeAdvBeforeEditEventArgs.Cancel property is set appropriately.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5411,9 +5417,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Private Sub treeViewAdv1_BeforeEdit(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs)
 
@@ -5429,11 +5435,13 @@ End If
 
 End Sub
 
+{% endhighlight %}
+
 Cancel Read / Write property for particular user nodes
 
 By cancelling the BeforeEdit event for particular nodes of particular users, the Read/Write property can be canceled. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5469,9 +5477,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5501,25 +5509,25 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 The following figure shows the color change for some of the nodes of the user that indicates the canceled Read/Write property for that node.
 
 ![](TreeView-Package_images/TreeView-Package_img71.jpeg)
-{:.image }
+
 
 
 ![](TreeView-Package_images/TreeView-Package_img72.jpeg)
-{:.image }
 
 
-##### Node Selection
 
-###### BeforeSelect Event
+#### Node Selection
+
+##### BeforeSelect Event
 
 This event occurs before a node is selected. This event is illustrated in “How to prevent a node from being selected?” topic.
 
-###### HotTracking Events in TreeViewAdv
+##### HotTracking Events in TreeViewAdv
 
 Description
 
@@ -5531,7 +5539,7 @@ If a user needs to get a particular node’s details as it is being tracked by t
 
 Event Table
 
-_Table_ _921__: Events Table_
+_Table_ _921_:Events Table
 
 <table>
 <tr>
@@ -5547,7 +5555,7 @@ This event will be triggered when mouse hover occurs in TreeViewAdv nodes it wil
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 // Enable hot tracking.
 this.treeViewAdv1.HotTracking = true;
@@ -5561,9 +5569,9 @@ this.treeViewAdv1.NodeHotTrackChanged += new System.EventHandler(this.treeVie
         this.textBox1.Text = e.Node.Text;
     }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ' Enable hot tracking.
 Me.treeViewAdv1.HotTracking = true
@@ -5576,11 +5584,13 @@ AddHandler Me.treeViewAdv1.NodeHotTrackChanged, AddressOf Me.treeViewAdv1_Nod
         Me.textBox1.Text = e.Node.Text
     End Sub
 
-##### Mouse Events
+{% endhighlight %}
+
+#### Mouse Events
 
 The following mouse events and Mouse related events are discussed in this section.
 
-###### Mouse Events
+##### Mouse Events
 
 MouseDown and MouseUp Event
 
@@ -5590,7 +5600,7 @@ Event Data
 
 The MouseEventHandler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _922__: Members Table_
+_Table_ _922_:Members Table
 
 <table>
 <tr>
@@ -5626,7 +5636,7 @@ Hide Context Menu When user clicks on an Empty Space on the TreeViewAdv
 
 If the user clicks on an empty space on the TreeViewAdv, the appearance of the context menu can be avoided by handling MouseDown and MouseUp event handlers. With the help of this, the user will be able to know which node is being edited currently. Here the Selected node is set to RMouseDownNode. The RMouseDownNode gets / sets the node on which, the user had done a Right-MouseDown.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5670,9 +5680,9 @@ private void treeViewAdv1_MouseUp(object sender, MouseEventArgs e)
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5712,7 +5722,9 @@ Me.treeViewAdv1.EndUpdate(True)
 
 End Sub
 
-###### MouseWheelZoom Event
+{% endhighlight %}
+
+##### MouseWheelZoom Event
 
 MouseWheelZoom event occurs when the user holds the Control Key and rolls the mouse wheel.
 
@@ -5720,7 +5732,7 @@ Event Data
 
 The event handler receives an argument of type MouseWheelZoomEventArgs containing data related to this event. The following MouseWheelZoomEventArgs member provide information specific to this event.
 
-_Table_ _923__: Members Table_
+_Table_ _923_:Members Table
 
 <table>
 <tr>
@@ -5734,7 +5746,7 @@ Returns the number of rows or columns to scroll.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5750,9 +5762,9 @@ Console.Write("Delta Value :" + e.Delta.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5766,7 +5778,9 @@ Console.Write("Delta Value :" + e.Delta.ToString())
 
 End Sub
 
-###### IntelliMouseDragScrolling Event
+{% endhighlight %}
+
+##### IntelliMouseDragScrolling Event
 
 This event is triggered when the user presses the mouse wheel and drags the mouse. 
 
@@ -5774,7 +5788,7 @@ Event Data
 
 The event handler receives an argument of type IntelliMouseDragScrollEventArgs containing data related to this event. The following IntelliMouseDragScrollEventArgs members provide information specific to this event.
 
-_Table_ _924__: Members Table_
+_Table_ _924_:Members Table
 
 <table>
 <tr>
@@ -5800,7 +5814,7 @@ When set to true, indicates you have scrolled and do not want the default scroll
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5836,9 +5850,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5874,7 +5888,9 @@ e.Cancel = True
 
 End Sub
 
-###### Mouse Selection Events in TreeViewAdv and MultiColumnTreeView
+{% endhighlight %}
+
+##### Mouse Selection Events in TreeViewAdv and MultiColumnTreeView
 
 Description
 
@@ -5884,7 +5900,7 @@ Event Data
 
 The TreeViewAdvMouseClickEventArgs contain the following members to provide information specific to this event.
 
-_Table_ _925__: Members Table_
+_Table_ _925_:Members Table
 
 <table>
 <tr>
@@ -5922,7 +5938,7 @@ Gets the y-coordinate of the mouse during the generating mouse event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5988,11 +6004,11 @@ void treeViewAdv1_NodeMouseDoubleClick(object sender, TreeViewAdvMouseClickEvent
 
 }
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6025,9 +6041,6 @@ Dim clickedNode As TreeNodeAdv = e.Node
 End Sub
 
 
-
-
-
 Private Sub treeViewAdv1_NodeMouseDoubleClick(sender As Object, e As TreeViewAdvMouseClickEventArgs)
 
 'Gets the number of times the mouse button was pressed and released.
@@ -6056,9 +6069,9 @@ Dim clickedNode As TreeNodeAdv = e.Node
 
 End Sub
 
+{% endhighlight %}
 
-
-##### Drag and Drop Events
+#### Drag and Drop Events
 
 Events that are handled during drag and drop operation, using highlight tracker functionality are as follows.
 
@@ -6066,7 +6079,7 @@ See Also
 
 Drag and Drop
 
-###### QueryDragInsertInfo
+##### QueryDragInsertInfo
 
 This event is discussed in Highlighting Drag and Drop topic.
 
@@ -6081,20 +6094,21 @@ The drag drop events given below are discussed here.
 * DragDrop
 * GiveFeedback
 * QueryContinueDrag
-###### QueryAllowedPositionForNode
+
+##### QueryAllowedPositionForNode
 
 
 This event is discussed here.
 
-##### Scrolling Events
+#### Scrolling Events
 
 This section discusses about the events during scrolling operation.
 
-###### ScrollbarsVisibleChanged Event
+##### ScrollbarsVisibleChanged Event
 
 This event is triggered when the scrollbars are hidden or shown.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6108,9 +6122,9 @@ Console.Write("ScrollbarsVisibleChanged Event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6122,7 +6136,9 @@ Console.Write("ScrollbarsVisibleChanged Event is raised ")
 
 End Sub
 
-###### ScrollControlHandledMouseDown Event
+{% endhighlight %}
+
+##### ScrollControlHandledMouseDown Event
 
 The event, MouseDown is raised when the mouse pointer is over the control and a mouse button is pressed. Once this event is raised, ScrollControlHandledMouseDown event will also be raised.
 
@@ -6130,7 +6146,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _926__: Members Table_
+_Table_ _926_:Members Table
 
 <table>
 <tr>
@@ -6164,7 +6180,7 @@ Gets the Y-coordinates of the mouse during generating mouse events.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6208,9 +6224,9 @@ Console.Write("Y coordinate :" + e.Y.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6254,7 +6270,9 @@ Console.Write("Y coordinate :" + e.Y.ToString())
 
 End Sub
 
-###### ScrollControlHandledMouseMove Event
+{% endhighlight %}
+
+##### ScrollControlHandledMouseMove Event
 
 The event, MouseMove is raised when the mouse pointer is moved over the control. After AutoScrolling and once this event is raised, ScrollControlHandledMouseMove event will also be triggered.
 
@@ -6262,7 +6280,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _927__: Members Table_
+_Table_ _927_:Members Table
 
 <table>
 <tr>
@@ -6296,7 +6314,7 @@ Gets the Y-coordinates of the mouse during generating mouse events.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6340,9 +6358,9 @@ Console.Write("Y coordinate :" + e.Y.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6386,7 +6404,9 @@ Console.Write("Y coordinate :" + e.Y.ToString())
 
 End Sub
 
-###### ScrollControlHandledMouseUp Event
+{% endhighlight %}
+
+##### ScrollControlHandledMouseUp Event
 
 The event, MouseUp is raised when the mouse pointer is over the control and a mouse button is released. Once this event is raised, ScrollControlHandledMouseUp event will also be triggered.
 
@@ -6394,7 +6414,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _928__: Members Table_
+_Table_ _928_:Members Table
 
 <table>
 <tr>
@@ -6428,7 +6448,7 @@ Gets the Y-coordinates of the mouse during generating mouse events.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6472,9 +6492,9 @@ Console.Write("Y coordinate :" + e.Y.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6518,7 +6538,9 @@ Console.Write("Y coordinate :" + e.Y.ToString())
 
 End Sub
 
-###### ScrollControlMouseDown Event
+{% endhighlight %}
+
+##### ScrollControlMouseDown Event
 
 The event, MouseDown is raised when the mouse pointer is over the control and a mouse button is pressed. The ScrollControlMouseDown event will be raised before a MouseDown is raised and allows you to cancel the mouse event.
 
@@ -6526,7 +6548,7 @@ Event Data
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _929__: Members Table_
+_Table_ _929_:Members Table
 
 <table>
 <tr>
@@ -6544,7 +6566,7 @@ Indicates the MouseEventArgs data for this event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6562,9 +6584,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6580,7 +6602,9 @@ e.Cancel = True
 
 End Sub
 
-###### ScrollControlMouseMove Event
+{% endhighlight %}
+
+##### ScrollControlMouseMove Event
 
 The event, MouseMove is raised when the mouse pointer is moved over the control. ScrollControlMouseMove event occurs before a MouseMove event is raised and allows you to cancel the mouse event.
 
@@ -6588,7 +6612,7 @@ Event Data
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _930__: Members Table_
+_Table_ _930_:Members Table
 
 <table>
 <tr>
@@ -6606,7 +6630,7 @@ Indicates the MouseEventArgs data for this event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6624,9 +6648,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6642,7 +6666,9 @@ e.Cancel = True
 
 End Sub
 
-###### ScrollControlMouseUp Event
+{% endhighlight %}
+
+##### ScrollControlMouseUp Event
 
 The event, MouseUp is raised when the mouse pointer is over the control and a mouse button is released. ScrollControlMouseUp event occurs before a MouseUp event is raised and allows you to cancel the mouse event.
 
@@ -6650,7 +6676,7 @@ Event Data
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _931__: Members Table_
+_Table_ _931_:Members Table
 
 <table>
 <tr>
@@ -6668,7 +6694,7 @@ Indicates the MouseEventArgs data for this event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6688,9 +6714,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6708,7 +6734,9 @@ e.Cancel = True
 
 End Sub
 
-###### ScrollTipFeedback Event
+{% endhighlight %}
+
+##### ScrollTipFeedback Event
 
 This event is triggered when the user is dragging the scrollbar thumb.
 
@@ -6716,7 +6744,7 @@ Event Data
 
 The event handler receives an argument of type ScrollTipFeedbackEventArgs containing data related to this event. The following ScrollTipFeedbackEventArgs members provide information specific to this event.
 
-_Table_ _932__: Members Table_
+_Table_ _932_:Members Table
 
 <table>
 <tr>
@@ -6770,7 +6798,7 @@ Returns the new scroll position.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6844,9 +6872,9 @@ Console.Write("Scroll position:" + e.Value.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6920,11 +6948,13 @@ Console.Write("Scroll position:" + e.Value.ToString())
 
 End Sub
 
-#### Frequenty Asked Questions
+{% endhighlight %}
+
+### Frequenty Asked Questions
 
 The items in this section will help you become more familiar in using the TreeView Package.
 
-##### How to Add / Remove a Node to the TreeViewAdv
+#### How to Add / Remove a Node to the TreeViewAdv
 
 Nodes in the TreeViewAdv can be added by specifying the index and also they can be added using the Keyboard. The following section briefs both the scenario.
 
@@ -6932,7 +6962,7 @@ Adding nodes into the TreeViewAdv at a specific index
 
 By declaring the new node object outside the control and by using the Insert method, a node can be added to the TreeViewAdv at the specific index.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6954,9 +6984,9 @@ private void button1_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6976,15 +7006,15 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub 
 
-> ![](TreeView-Package_images/TreeView-Package_img73.jpeg)
-{:.image }
- _Note: Nodes can also be added using Nodes.Add method._
+{% endhighlight %}
+
+> Note: Nodes can also be added using Nodes.Add method.
 
 Removing a node from the TreeView
 
 Specific nodes can be removed using Nodes.Remove method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6998,9 +7028,9 @@ private void button3_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7012,17 +7042,19 @@ Private Sub button3_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 KeyDownEvent
 
-##### How to use .NET tooltip control to show tooltip text for nodes in TreeViewAdv
+#### How to use .NET tooltip control to show tooltip text for nodes in TreeViewAdv
 
 This can be achieved by using SetToolTip method in MouseHover event of the TreeViewAdv. 
 
 Here is the code snippet that illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7054,9 +7086,9 @@ private void treeViewAdv1_MouseHover(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7080,11 +7112,13 @@ Private Sub treeViewAdv1_MouseHover(ByVal sender As Object, ByVal e As EventArgs
 
 End Sub
 
-##### How to fire click event, when a child node is selected
+{% endhighlight %}
+
+#### How to fire click event, when a child node is selected
 
 Whenever a TreeViewAdv is selected, AfterSelect event will be raised. You can raise a Click event when a child node is selected, inside this handler using the following code snippet. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7158,9 +7192,9 @@ private void CheckForChildern(TreeNodeAdv node)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7220,31 +7254,29 @@ Private Sub CheckForChildern(ByVal node As TreeNodeAdv)
 
 End Sub
 
-##### How to keep highlighting the selected node when TreeViewAdv loses focus
+{% endhighlight %}
+
+#### How to keep highlighting the selected node when TreeViewAdv loses focus
 
 We can set HideSelection property to _false_, to ensure that the node remains selected even when the TreeViewAdv control does not have focus. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.treeViewAdv1.HideSelection = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.treeViewAdv1.HideSelection = False
 
-##### How to Count all the Nodes of the TreeViewAdv
+{% endhighlight %}
+
+#### How to Count all the Nodes of the TreeViewAdv
 
 The user can get the total number of nodes by calling the GetNodeCount method with the bool argument, which indicates whether the count includes the sub trees or not. If the value passed is true, then it will count the nodes with the sub trees also.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void button1_Click(object sender, System.EventArgs e) 
 
@@ -7260,11 +7292,9 @@ private void button1_Click(object sender, System.EventArgs e)
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) 
 
@@ -7276,15 +7306,15 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
      MessageBox.Show("Total nodes in tree = " & TotalNodesInTree.ToString()) 
 
-End Sub 
+End Sub
 
-##### How to customize the Context Menu to display the name of the selected node when right clicked on it
+{% endhighlight %}
+
+#### How to customize the Context Menu to display the name of the selected node when right clicked on it
 
 The user could customize the context menu to display the name of the selected node when right-clicked on the SelectedNode by handling the MouseDown Event handler in the following way. The user have to get the right click point of the SelectedNode. Then if the SelectedNode is not equal to null, then a new menu item is created and added, such that the item displays the SelectedNode's text name. For displaying only the SelectedNode text at a time when right clicked, the menu items must be cleared.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void treeViewAdv1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 
@@ -7318,11 +7348,9 @@ private void treeViewAdv1_MouseDown(object sender, System.Windows.Forms.MouseEve
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub treeViewAdv1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
 
@@ -7350,7 +7378,9 @@ Private Sub treeViewAdv1_MouseDown(ByVal sender As Object, ByVal e As System.Win
 
 End Sub
 
-##### How to disable Tooltip for particular nodes of the TreeNodeAdv
+{% endhighlight %}
+
+#### How to disable Tooltip for particular nodes of the TreeNodeAdv
 
 The TreeViewAdv control provides an option to disable tooltips for particular nodes. 
 
@@ -7360,9 +7390,7 @@ Thetooltip for some of the nodes, which have a HelpText can be disabled by handl
 
 Here in the TreeViewAdv, for some of the nodes, the e.Cancel property is set to true by getting the node's position in the ToolTipControl's BeforePopup event handler where the tooltips for the respective nodes are disabled. The tooltips for the same nodes can be enabled by setting the e.Cancel = false in the tooltip control's BeforePopup Event.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void ToolTipControl_BeforePopup(object sender, CancelEventArgs e) 
 
@@ -7392,9 +7420,9 @@ private void ToolTipControl_BeforePopup(object sender, CancelEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7420,11 +7448,13 @@ Private Sub ToolTipControl_BeforePopup(ByVal sender As Object, ByVal e As Cancel
 
 End Sub
 
-##### How to expand or collapse all the child nodes of a particular node
+{% endhighlight %}
+
+#### How to expand or collapse all the child nodes of a particular node
 
 All the treeview nodes can be collapsed by calling the TreeViewAdv.CollapseAll method. For individual nodes, call Node.Collapse method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7472,9 +7502,9 @@ private void button4_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7520,11 +7550,13 @@ Private Sub button4_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub
 
-##### How to find the way for the disappearance of the focus rectangle if the focus is lost in the treeViewAdv
+{% endhighlight %}
+
+#### How to find the way for the disappearance of the focus rectangle if the focus is lost in the treeViewAdv
 
 This can be done by setting e.Active to false in BeforeNodePaint Event Handler.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7548,9 +7580,9 @@ e.Active = false;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7570,11 +7602,13 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub 
 
-##### How to force a treeNodeAdv to stay in edit mode until user enters an unique name
+{% endhighlight %}
+
+#### How to force a treeNodeAdv to stay in edit mode until user enters an unique name
 
 This can be done using the below code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7618,9 +7652,9 @@ private void treeViewAdv1_NodeEditorValidating_1(object sender, Syncfusion.Windo
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7656,11 +7690,13 @@ Private Sub treeViewAdv1_NodeEditorValidating_1(ByVal sender As Object, ByVal e 
 
 End Sub
 
-##### How to know whether the image on the left side / Right side of the node's text was clicked
+{% endhighlight %}
+
+#### How to know whether the image on the left side / Right side of the node's text was clicked
 
 This can be done using the below code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7728,9 +7764,9 @@ private void treeViewAdv1_MouseUp(object sender, System.Windows.Forms.MouseEvent
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7790,11 +7826,13 @@ Private Sub treeViewAdv1_MouseUp(ByVal sender As Object, ByVal e As System.Windo
 
 End Sub
 
-##### How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit
+{% endhighlight %}
+
+#### How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit
 
 This can be done using the below code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7820,9 +7858,9 @@ private void treeViewAdv1_NodeEditorValidateString(object sender, Syncfusion.Win
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7848,11 +7886,13 @@ Private Sub treeViewAdv1_NodeEditorValidateString(ByVal sender As Object, ByVal 
 
 End Sub
 
-##### How to Populate the ParentNode and ChildNode for the Selected Node Programmatically
+{% endhighlight %}
+
+#### How to Populate the ParentNode and ChildNode for the Selected Node Programmatically
 
 This can be done through code as shown below, by setting the selected node to be the present node and then if the present node is equal to null, the new ChildNode is created and added.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7890,9 +7930,9 @@ private void button2_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7926,11 +7966,13 @@ Private Sub button2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub 
 
-##### How to prevent a node from being selected
+{% endhighlight %}
+
+#### How to prevent a node from being selected
 
 This can be done using BeforeSelect event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7956,9 +7998,9 @@ private void treeViewAdv1_BeforeSelect(object sender, Syncfusion.Windows.Forms.T
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7984,11 +8026,13 @@ OrElse args.SelectedNodes(0).Text="Node7" OrElse args.SelectedNodes(0).Text="Nod
 
 End Sub
 
-##### How to prevent drawing highlight for some nodes
+{% endhighlight %}
+
+#### How to prevent drawing highlight for some nodes
 
 QueryAllowedPositionForNode - An event which will be executed to prevent drawing highlight for some nodes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8054,9 +8098,9 @@ this.CanDrop(this.currentSourceNode, e.HighlightNode)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8114,11 +8158,13 @@ End If
 
 End Sub
 
-##### How to prevent the expansion of the collapsed nodes when it is been double clicked
+{% endhighlight %}
+
+#### How to prevent the expansion of the collapsed nodes when it is been double clicked
 
 BeforeExpand event should be handled to prevent the expansion of the collapsed nodes when it is double-clicked.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8152,9 +8198,9 @@ private void treeViewAdv1_BeforeExpand(object sender, Syncfusion.Windows.Forms.T
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8180,11 +8226,13 @@ Private Sub treeViewAdv1_BeforeExpand(ByVal sender As Object, ByVal e As Syncfus
 
 End If
 
-##### How to programmatically select a node in a TreeViewAdv control
+{% endhighlight %}
+
+#### How to programmatically select a node in a TreeViewAdv control
 
 Set the HideSelectionproperty of the TreeViewAdv control to false and use the code snippet shown below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8192,9 +8240,9 @@ Set the HideSelectionproperty of the TreeViewAdv control to false and use the co
 
 this.treeViewAdv1.SelectedNode = this.treeViewAdv1.Nodes[1];
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8202,15 +8250,15 @@ this.treeViewAdv1.SelectedNode = this.treeViewAdv1.Nodes[1];
 
 Me.treeViewAdv1.SelectedNode = Me.treeViewAdv1.Nodes(1)
 
-
+{% endhighlight %}
 
 Setting the HideSelection property to false, ensures that the node remains selected, even when the TreeViewAdv control loses focus or does not have focus. 
 
-##### How to return the node at a specified location
+#### How to return the node at a specified location
 
 GetNodeAtPoint method will get or returns the node at the specified location. There are three overloads for this method. This method can be called inside DragOver event. The parameters are as follows. To return the node at the specified point, GetNodeAtPointEx method can be called.
 
-_Table_ _933__: Parameter Table_
+_Table_ _933_:Parameter Table
 
 <table>
 <tr>
@@ -8232,7 +8280,7 @@ Indicates whether testing will be done using the bounds of image and text and no
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8258,9 +8306,9 @@ this.treeViewAdv1.GetNodeAtPoint(ptInTree, true, true);
 
 this.treeViewAdv1.GetNodeAtPointEx(ptInTree);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8286,15 +8334,17 @@ Gets the node point at the specified Point
 
 Me.treeViewAdv1.GetNodeAtPointEx(ptInTree)
 
+{% endhighlight %}
+
 See Also
 
 Drag and Drop
 
-##### How to Scroll A Node Into View
+#### How to Scroll A Node Into View
 
 This section illustrates how a particular node can be scrolled into view if it is hidden because its parent is hidden or because the scrollbar has scrolled it out of view.
 
-_Table_ _934__: Methods Table_
+_Table_ _934_:Methods Table
 
 <table>
 <tr>
@@ -8316,7 +8366,7 @@ To bring an already visible node into viewable area when scrolled, and also make
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8330,9 +8380,9 @@ this.treeViewAdv1.EnsureVisible(treeNodeAdv);
 
 this.treeViewAdv1.EnsureVisible(treeNodeAdv, true);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8346,11 +8396,13 @@ Me.TreeViewAdv1.EnsureVisible(treeNodeAdv)
 
 Me.TreeViewAdv1.EnsureVisible(treeNodeAdv, True)
 
-##### How to scroll through the TreeViewAdv control using up / down arrow keys while in edit mode
+{% endhighlight %}
+
+#### How to scroll through the TreeViewAdv control using up / down arrow keys while in edit mode
 
 The user could navigate through the nodes in the TreeViewAdv control using the keyboard while in editing mode, by using the following code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8396,9 +8448,9 @@ private void t_KeyDown(object sender, KeyEventArgs e)
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8436,11 +8488,13 @@ Private Sub t_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 
 End Sub
 
-##### How to select all the nodes in a TreeViewAdv Control
+{% endhighlight %}
+
+#### How to select all the nodes in a TreeViewAdv Control
 
 You could select all the nodes in the TreeViewAdv control by recursively traversing through all the child nodes under each of the parent nodes at the top level as shown in the code below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8468,9 +8522,9 @@ lastNode = lastNode.LastNode;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8496,17 +8550,17 @@ For Each node In  Me.treeViewAdv1.Root.Nodes
 
 Next node
 
-
+{% endhighlight %}
 
 ![](TreeView-Package_images/TreeView-Package_img74.jpeg)
-{:.image }
 
 
-##### How to select a particular node as a first visible node
+
+#### How to select a particular node as a first visible node
 
 This can be done by using the code snippet given below. This will allow the user to make a particular node as the first visible node. The EnsureVisibleSelectedNode property will help the user to bring the invisible node into a visible state by scrolling the ScrollBar to the SelectedNode, if necessary.
 
-_Table_ _935__: Property Table_
+_Table_ _935_:Property Table
 
 <table>
 <tr>
@@ -8520,7 +8574,7 @@ Indicates if the selected node will be brought to view by scrolling if necessary
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8538,9 +8592,9 @@ this.treeViewAdv1.EnsureVisibleSelectedNode=true;
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8556,11 +8610,13 @@ Me.treeViewAdv1.EnsureVisibleSelectedNode=True
 
 End Sub 
 
-##### How to Set AutoScrolling In TreeViewAdv During DragDrop
+{% endhighlight %}
+
+#### How to Set AutoScrolling In TreeViewAdv During DragDrop
 
 The user can make the TreeViewAdv scroll, when an item is dragged from out of the current view, to the top. AutoScroll property when set, allows scrolling in TreeView, even when the item is dragged to the top of the control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8568,9 +8624,9 @@ The user can make the TreeViewAdv scroll, when an item is dragged from out of th
 
 this.treeViewAdv1.AutoScrolling=ScrollBars.Both; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8578,21 +8634,23 @@ this.treeViewAdv1.AutoScrolling=ScrollBars.Both;
 
 Me.treeViewAdv1.AutoScrolling=ScrollBars.Both 
 
+{% endhighlight %}
+
 See Also
 
 Drag and Drop
 
 Scrolling
 
-##### How to show custom help text for each TreeViewAdv node
+#### How to show custom help text for each TreeViewAdv node
 
 Custom help text can be shown using TreeNodeAdv.HelpText property.
 
-##### How to Sort all the nodes in the TreeViewAdv control
+#### How to Sort all the nodes in the TreeViewAdv control
 
 This can be done by setting the SortWithChildNodes property to true.
 
-_Table_ _936__: Property Table_
+_Table_ _936_:Property Table
 
 <table>
 <tr>
@@ -8608,7 +8666,7 @@ This indicates the sorting of all nodes including child nodes.</td></tr>
 
 If the SortWithChildNodes property is set to true, the user can sort all the nodes including the child nodes in the TreeViewAdv. The SortOrder should be specified for the sorting of all the nodes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8638,9 +8696,9 @@ private void button2_Click_1(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8666,23 +8724,23 @@ Private Sub button2_Click_1(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Given below is a screen shot of sorting the nodes in ascending order.
 
 ![](TreeView-Package_images/TreeView-Package_img75.jpeg)
-{:.image }
+
 
 
 See Also
 
 Sorting
 
-##### How to Swap Nodes from one ParentNode to another ParentNode
+#### How to Swap Nodes from one ParentNode to another ParentNode
 
 This can be done by using the following code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8724,9 +8782,9 @@ private void button1_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8762,21 +8820,21 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub  
 
-
+{% endhighlight %}
 
 Given below are screen shots depicting this process.
 
 
 
 ![](TreeView-Package_images/TreeView-Package_img76.jpeg)
-{:.image }
 
 
-##### How to Synchronize a Button Click event and Cursor Position on a Node in TreeViewAdv
+
+#### How to Synchronize a Button Click event and Cursor Position on a Node in TreeViewAdv
 
 When the button is clicked, the mouse cursor can be positioned appropriately on the respective node by getting the coordinates of the TreeNodeAdv and using the PointToScreen method of TreeViewAdv.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8805,8 +8863,9 @@ private void button1_Click(object sender, System.EventArgs e)
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8830,11 +8889,13 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) H
 
 End Sub
 
-##### What is the use of Undo/ Redo functionality in TreeViewAdv using HistoryManager property?
+{% endhighlight %}
+
+#### What is the use of Undo/ Redo functionality in TreeViewAdv using HistoryManager property?
 
 The undo / redo functionality of a tree node lets you delete a node, add a node, edit a node's text and drag / drop a node using the HistoryManager.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8888,9 +8949,9 @@ private void barItem2_Click(object sender, System.EventArgs e)
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8936,13 +8997,13 @@ Private Sub barItem2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub
 
+{% endhighlight %}
 
-
-##### How to customize the location of Custom controls added in the TreeNodeAdv?
+#### How to customize the location of Custom controls added in the TreeNodeAdv?
 
 TreeNodesAdv hold controls like combo box, Calendar, Chart etc.,by using its Custom Controls feature. In the TreeNodeAdv, this custom control location can be customized by using its CustomControlLocation property. Refer to the following code examples.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8950,9 +9011,9 @@ TreeNodesAdv hold controls like combo box, Calendar, Chart etc.,by using its Cus
 
 this.treeViewAdv1.Nodes[1].CustomControlLocation = new Point(60, 15);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8960,5 +9021,5 @@ this.treeViewAdv1.Nodes[1].CustomControlLocation = new Point(60, 15);
 
 Me.treeViewAdv1.Nodes(1).CustomControlLocation = New Point(60, 15)
 
-
+{% endhighlight %}
 

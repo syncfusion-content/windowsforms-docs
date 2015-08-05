@@ -2,8 +2,8 @@
 layout: post
 title: CommandBars-Package
 description: commandbars package
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 

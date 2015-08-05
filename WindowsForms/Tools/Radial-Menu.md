@@ -2,66 +2,69 @@
 layout: post
 title: Radial-Menu
 description: radial menu
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Radial Menu
+# Radial Menu
 
 The Radial Menu comprises a hierarchical menu in a circular layout. It is used as a context menu and configured with familiar items for quick access.
 
 ![](Radial-Menu_images/Radial-Menu_img1.png)
-{:.image }
 
 
-Key Features
+
+### Key Features
 
 * Configurable Menu Items
 * Radial Menu Slider
 * Radial Color Palette
 * Radial Font List Box
-#### Getting Started
+
+## Getting Started
 
 
 This section briefly describes how to design a Radial Menu control in a Windows Forms application.
 
 * Adding a Radial Menu Control
 * Configuring the Radial Menu Control
-##### Adding a Radial Menu Control
+
+### Adding a Radial Menu Control
 
 1. Create a new Windows Forms Application Project in VS IDE through New ProjectWizard.
 2. Drop a Radial Menu Control in the Form.
 
 ![](Radial-Menu_images/Radial-Menu_img2.png)
-{:.image }
 
 
-##### 1.1.2 Configuring the Radial Menu Control
+
+### 1.1.2 Configuring the Radial Menu Control
 
 The most commonly used settings of the Radial Menu Control are configured either through Designer using the Smart tag or through the Properties window or through code.
 
 The following screenshot displays the Radial Menu Control customization through smart tag.
 
 ![C:/Users/ashwini/Desktop/50x50/image5.png](Radial-Menu_images/Radial-Menu_img3.png)
-{:.image }
+
 
 
 To add Radial Menu control to a Windows Forms Application through code, you can include the following Windows Forms Tools namespace:
 
-<table>
-<tr>
-<td>
-[C#]using Syncfusion.Windows.Forms.Tools; </td></tr>
-<tr>
-<td>
-[VB]Imports Syncfusion.Windows.Forms.Tools</td></tr>
-</table>
+{% highlight c# %}
 
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
 
 Create an instance of the Radial Menu control and add it to the form as given in the following code:
 
- [C#]
+ {% highlight c# %}
 
 Syncfusion.Windows.Forms.Tools.RadialMenu radialMenu1;
 
@@ -69,23 +72,17 @@ this.radialMenu1= new Syncfusion.Windows.Forms.Tools.RadialMenu();
 
 this.Controls.Add(radialMenu1);
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Dim radialMenu1 As Syncfusion.Windows.Forms.Tools.RadialMenu
 
-
-
 radialMenu1 = New Syncfusion.Windows.Forms.Tools.RadialMenu()
-
-
 
 Me.Controls.Add(radialMenu1)
 
-
+{% endhighlight %}
 
 #### Concepts and features
 
@@ -130,26 +127,28 @@ Me.Controls.Add(radialMenu1)
 * Populating Color Palette
 * Populating Font List Box
 * Populating Radial Menu Slider
-##### Menu Elements 
 
-###### Radial Menu Items
+### Menu Elements 
+
+#### Radial Menu Items
 
 
 Radial Menu items are populated with the business object collection. Each menu item can be checked.
 
-Check Mode
+##### Check Mode
 
 The CheckMode of a Radial Menu Item is defined with the following options: 
 
 * None - When the CheckMode is set to None, item can not be checked. 
 * CheckBox - When the CheckMode is set to CheckBox, you can check more than one item in the same level. 
 * RadioButton - When the CheckMode is set to RadioButton, you can check only one item in the same level. 
-Grouping 
+
+##### Grouping 
 
 
 Using Grouping functionality, you can group multiple items in the same level. This property is used when the CheckMode property is set to Option. 
 
-[C#]
+{% highlight c# %}
 
 this.radialMenuItem1.CheckMode = CheckMode.Check;
 
@@ -167,9 +166,9 @@ this.radialMenuItem3.GroupName = "group1";
 
 this.radialMenuItem3.CheckMode = CheckMode.Option;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -187,90 +186,96 @@ Me.radialMenuItem3.GroupName "group1"
 Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 
-
-
-
-
+{% endhighlight %}
 
 ![](Radial-Menu_images/Radial-Menu_img4.png)
-{:.image }
 
-
-###### Radial Color Palette
+#### Radial Color Palette
 
 Radial Color Palette is formed in Radial Menu with the Radial Color Items and it is used to update the color.
 
 ![](Radial-Menu_images/Radial-Menu_img5.png)
-{:.image }
 
 
-###### Radial Font List Box
+
+#### Radial Font List Box
 
 Radial Font List Box is formed in Radial Menu with installed font family and it is used to update the font style.
 
 ![](Radial-Menu_images/Radial-Menu_img6.png)
-{:.image }
 
 
-###### Radial Menu Slider
+
+#### Radial Menu Slider
 
 Radial Menu Slider is formed in Radial Menu with minimum and maximum value and it is used to update the size.
 
 ![](Radial-Menu_images/Radial-Menu_img7.png)
-{:.image }
 
 
-###### Icon
+
+#### Icon
 
 The Icon property of Radial Menu is used to customize the icon displayed in the center of Radial Menu circle. Icon is not displayed if it is not loaded.
 
 ![](Radial-Menu_images/Radial-Menu_img8.png)
-{:.image }
 
 
-##### Styling and Customization
 
-###### Drill Region
+### Styling and Customization
+
+#### Drill Region
 
 ![](Radial-Menu_images/Radial-Menu_img9.png)
-{:.image }
 
 
-Default State
+
+##### Default State
 
 OuterArcColor is used to fill the drilldown region in the normal state.
 
-<table>
-<tr>
-<td>
-[C#]// DrillDown colorthis.radialMenu1.OuterArcColor= Color.Black; </td></tr>
-<tr>
-<td>
-[VB]' DrillDown colorMe.RadialMenu1.OuterArcColor = Color.Black</td></tr>
-</table>
+
+{% highlight c# %}
+
+// DrillDown 
+colorthis.radialMenu1.OuterArcColor= Color.Black; 
+
+{% endhighlight %} 
+
+{% highlight vbnet %}
+
+' DrillDown 
+colorMe.RadialMenu1.OuterArcColor = Color.Black
+
+{% endhighlight %}
+
 
 
 ![](Radial-Menu_images/Radial-Menu_img10.png)
-{:.image }
+
 
 
 OuterArcHighLightedColor property is used to fill the drilldown region while hovering.
 
-<table>
-<tr>
-<td>
-[C#]// DrillDown hover colorthis.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));</td></tr>
-<tr>
-<td>
-[VB]' DrillDown hover colorMe.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))))</td></tr>
-</table>
+{% highlight c# %}
 
+// DrillDown hover color
+this.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));</td></tr>
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+' DrillDown hover color
+Me.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))))
+
+{% endhighlight %}
 
 ![](Radial-Menu_images/Radial-Menu_img11.png)
-{:.image }
 
 
-###### Outer Rim (Static Region)
+
+#### Outer Rim (Static Region)
 
 Outer edge is customized by using the RimBackground and OuterRimThickness properties.
 
@@ -278,95 +283,85 @@ Background
 
 Outer Edge Background is customized using the following code example.
 
-[C#]
-
-
+{% highlight c# %}
 
 // OuterRim color
 
 this.radialMenu1.RimBackground = Color.Blue;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 ' OuterRim color
 
  Me.radialMenu1.RimBackground = Color.Blue
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img12.png)
-{:.image }
 
 
-###### Thickness
+
+#### Thickness
 
 The Thickness of the outer edge is set using the following code example.
 
-[C#]
+{% highlight c# %}
 
 // Rim thickness
 
 this.radialMenu1.OuterRimThickness = 20;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 ' Rim thickness
 
 Me.RadialMenu1.OuterRimThickness = 20
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img13.png)
-{:.image }
 
 
-###### Arc Gap
+
+#### Arc Gap
 
 The gap between highlighted Arc and Drilldown region is defined using the following code example.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Gap between OuterRim and HoverArc
 
 this.radialMenu1.OuterArcGap = 50;
 
+{% endhighlight %}
 
 
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 ' Gap between OuterRim and HoverArc
 
-
-
 Me.RadialMenu1.OuterArcGap = 50
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img14.png)
-{:.image }
 
 
-###### Display Style
+
+#### Display Style
 
 The Display style of Radial Menu items is customized using different options. They are
 
@@ -374,31 +369,31 @@ The Display style of Radial Menu items is customized using different options. Th
 * text below the image
 * text or image only 
 
-[C#]
+{% highlight c# %}
 
 // Display style of the text and image.
 
   this.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle.ImageAboveText;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 'Display style of the text and image.
 
 Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. ImageAboveText
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img15.png)
-{:.image }
 
 
-##### Element Binding
 
-###### Menu Items
+### Element Binding
+
+#### Menu Items
 
 Radial Menu Items is populated with the business object collection. This section explains how to create a Radial Menu that shows the list of Application commands.
 
@@ -406,15 +401,15 @@ Slice Count
 
 Slice Count functionality is used to define the maximum number of menu items (slices) that is made visible by default in the Radial Menu.
 
-[C#]
+{% highlight c# %}
 
 // Allocate space for number of items
 
 this.radialMenu1.WedgeCount = 8; 
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -422,51 +417,55 @@ this.radialMenu1.WedgeCount = 8;
 
 Me.radialMenu1.WedgeCount = 8
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img16.png)
-{:.image }
+
 
 
 Menu View Visibility
 
 Menu View is enabled by default on load using the following code example. 
 
-<table>
-<tr>
-<td>
-[C#]// Display Menus initially.this.radialMenu1.MenuVisibility = true;</td></tr>
-<tr>
-<td>
-[VB]‘Display Menus initially.Me.RadialMenu1.MenuVisibility = True</td></tr>
-</table>
+{% highlight c# %}
 
+// Display Menus initially.
+this.radialMenu1.MenuVisibility = true;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+‘Display Menus initially.
+Me.RadialMenu1.MenuVisibility = True
+
+{% endhighlight %}
 
 ![](Radial-Menu_images/Radial-Menu_img17.png)
-{:.image }
+
 
 
 The current state of the menu displayed is maintained and restored back when the menu is initialized back dynamically.
 
 Following code example illustrates the State Persistence.
 
-[C#]
+{% highlight c# %}
 
 // Retain the old state of the Radial Menu while loading.
 
 this.radialMenu1.PersistPreviousState = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ‘Retain the old state of the Radial Menu while loading.
 
 Me.radialMenu1.PersistPreviousState = True
 
-
+{% endhighlight %}
 
 Custom Images
 
@@ -474,59 +473,53 @@ A custom set of images are configured to the Menu using ImageListAdv in the Radi
 
 Following code example illustrates the Custom Images.
 
-[C#]
+{% highlight c# %}
 
 // Custom images configured to Radial Menu.
 
   this.radialMenu1.ImageList = this.imageListAdv1;
 
+{% endhighlight %}
 
-
-
-
-[VB]
-
-
+{% highlight vbnet %}
 
 ‘Custom images configured to Radial Menu.
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 
-
+{% endhighlight %}
 
 Index Based Ordering
 
 Menu items in Radial Menu are arranged based on their respective indices. You can arrange the items in index-based order or in a sequential order by enabling this functionality.
 
-[C#]
+{% highlight c# %}
 
 // Menu Items will be arranged in Index based.
 
 this.radialMenu1.UseIndexBasedOrder= true; 
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 ‘Menu Items will be arranged in Index based.
 
 Me.radialMenu1.UseIndexBasedOrder= true
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img18.png)
-{:.image }
 
 
-###### Populating Color Palette
+
+#### Populating Color Palette
 
 Radial Color Palette is configured with the set of colors in Radial Menu using the following code example.
 
-[C#]
+{% highlight c# %}
 
 //Creates RadialColorPalette
 
@@ -548,11 +541,9 @@ this.radialColorPalette1.Text = "Color";
 
   this.radialMenu1.ImageList = this.imageListAdv1;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 ‘ Creates Radial Color Palette
 
@@ -560,14 +551,9 @@ Dim radialColorPalette1 As Syncfusion.Windows.Forms.Tools.RadialColorPalette
 
 Me.radialColorPalette1 = New Syncfusion.Windows.Forms.Tools.RadialColorPalette
 
-
-
 ‘Image index
 
-
-
 Me.radialColorPalette1.ImageIndex = 0
-
 
 
 Me.radialColorPalette1.Text = "Color"  
@@ -576,21 +562,21 @@ Me.radialColorPalette1.Text = "Color"
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 
-
+{% endhighlight %}
 
 
 
 
 
 ![C:/Users/labuser/Desktop/a.png](Radial-Menu_images/Radial-Menu_img19.png)
-{:.image }
 
 
-###### Populating Font List Box
+
+#### Populating Font List Box
 
 Radial Font List Box is configured in Radial Menu with installed font family using the following code example.
 
-[C#]
+{% highlight c# %}
 
 // Creates RadialFontListBox
 
@@ -608,13 +594,9 @@ this.radialFontListBox1.Text = "Font";
 
   this.radialMenu1.ImageList = this.imageListAdv1;
 
+{% endhighlight %}
 
-
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
 ‘ Creates Radial Font List Box
 
@@ -638,21 +620,21 @@ Me.radialFontListBox1.Text = "Font"
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 
-
+{% endhighlight %}
 
 
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img20.png)
-{:.image }
 
 
-###### Populating Radial Menu Slider
+
+#### Populating Radial Menu Slider
 
 Radial Menu Slider is configured in Radial Menu with minimum and maximum value. The following code example illustrates the Radial Menu Slider.
 
-[C#]
+{% highlight c# %}
 
 //Creates Radial Menu Slider
 
@@ -676,13 +658,9 @@ this.radialMenuSlider1.Text = "Size";
 
   this.radialMenu1.ImageList = this.imageListAdv1;
 
+{% endhighlight %}
 
-
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
 ‘Creates Radial Menu Slider
 
@@ -710,17 +688,17 @@ Me.radialMenuSlider1.Text = "Size"
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 
-
+{% endhighlight %}
 
 
 
 ![](Radial-Menu_images/Radial-Menu_img21.png)
-{:.image }
 
 
-#### Frequently Asked Question
 
-##### How to display the RadialMenu at defined location
+## Frequently Asked Question
+
+### How to display the RadialMenu at defined location
 
 The following code examples illustrate you how to display the RadialMenu at defined location.
 
@@ -742,13 +720,13 @@ this.radialMenu1.ShowRadialMenu();
 
 
 
-##### How to change the menu order in RadialMenu
+### How to change the menu order in RadialMenu
 
 The following code example illustrates how you can change the menu order in RadialMenu.
 
 Index property is used to set the position of the menus in RadialMenu.
 
-[C#]
+{% highlight c# %}
 
             this.radialMenu1.UseIndexBasedOrder = true;
 
@@ -757,20 +735,23 @@ Index property is used to set the position of the menus in RadialMenu.
             this.radialMenuItem2.Index = 3;
 
             this.radialMenuItem3.Index = 5;
+			
+{% endhighlight %}
 
-[VB]
+{% highlight vbnet %}
 
                          Me.radialMenu1.UseIndexBasedOrder = true
                          Me.radialMenuItem1.Index = 0
                          Me.radialMenuItem2.Index = 3
                          Me.radialMenuItem3.Index = 5
 
+{% endhighlight %}
 
-##### How to add the menus in RadialMenu through code
+### How to add the menus in RadialMenu through code
 
 The following code example illustrates you how to add the menus to RadialMenu using code.
 
-[C#]
+{% highlight c# %}
 
             this.radialMenu1.UseIndexBasedOrder = false;
 
@@ -820,9 +801,9 @@ The following code example illustrates you how to add the menus to RadialMenu us
 
             this.radialMenu1.ShowRadialMenu(new Point(300, 300));
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
                           Me.radialMenu1.UseIndexBasedOrder = false
                           radialMenu1.Items.Clear
@@ -849,17 +830,16 @@ The following code example illustrates you how to add the menus to RadialMenu us
 
                          Me.radialMenu1.ShowRadialMenu(New Point(300, 300))
 
-
-
+{% endhighlight %}
 
 
 The following screenshot renders the output of the above the codes.
 
 ![](Radial-Menu_images/Radial-Menu_img22.png)
-{:.image }
 
 
-##### How to set the Minimum and Maximum value for RadialSlider in RadialMenu?
+
+### How to set the Minimum and Maximum value for RadialSlider in RadialMenu?
 
 The following code snippet illustrates how you can set the Minimum and Maximum value for RadialSlider in RadialMenu. 
 
@@ -869,36 +849,34 @@ The RadialMenuSlider value is initiated from MinimumValue, and ends with Maximum
 
 The MinimumValue and MaximumValue can be set by using the following code.
 
-C#
-
-
+{% highlight c# %}
 
             this.radialMenuSlider1.MinimumValue = 8;
 
             this.radialMenuSlider1.MaximumValue = 88;
 
+{% endhighlight %}
 
 
 
-
-VB
+{% highlight vbnet %}
 
             Me.radialMenuSlider1.MinimumValue = 8
                          Me.radialMenuSlider1.MaximumValue = 88
 
-
+{% endhighlight %}
 
 ![](Radial-Menu_images/Radial-Menu_img23.png)
-{:.image }
 
 
-##### How to get the mouse events for the menus of the RadialMenu 
+
+### How to get the mouse events for the menus of the RadialMenu 
 
 The following code examples illustrate how to get the mouse events for the menus of the RadialMenu. 
 
-Mouse Enter
+#### Mouse Enter
 
-
+{% highlight c# %}
 
  this.radialMenuItem1.MouseEnter += new EventHandler(radialMenuItem1_MouseEnter);
 
@@ -911,10 +889,13 @@ void radialMenuItem1_MouseEnter(object sender, EventArgs e)
             Console.WriteLine("Mouse enter event has been triggered");
 
         }
+		
+{% endhighlight %}
 
-Mouse Move
+#### Mouse Move
 
 
+{% highlight c# %}
 
  this.radialMenuItem1.MouseMove += new MouseEventHandler(radialMenuItem1_MouseMove);
 
@@ -927,10 +908,13 @@ void radialMenuItem1_MouseMove(object sender, MouseEventArgs e)
             Console.WriteLine("Mouse move event has been triggered");
 
         }
+		
+{% endhighlight %}
 
-Mouse Leave
+#### Mouse Leave
 
 
+{% highlight c# %}
 
 this.radialMenuItem1.MouseLeave += new EventHandler(radialMenuItem1_MouseLeave);
 
@@ -944,9 +928,11 @@ void radialMenuItem1_MouseLeave(object sender, EventArgs e)
 
         }
 
-Mouse Down
+{% endhighlight %}
+		
+#### Mouse Down
 
-
+{% highlight c# %}
 
 this.radialMenuItem1.MouseDown += new MouseEventHandler(radialMenuItem1_MouseDown);
 
@@ -959,10 +945,12 @@ void radialMenuItem1_MouseDown(object sender, MouseEventArgs e)
             Console.WriteLine("Mouse down event has been triggered ");
 
         }
+		
+{% endhighlight %}
 
-Mouse Up
+#### Mouse Up
 
-
+{% highlight c# %}
 
 this.radialMenuItem1.MouseUp += new MouseEventHandler(radialMenuItem1_MouseUp);
 
@@ -976,5 +964,5 @@ this.radialMenuItem1.MouseUp += new MouseEventHandler(radialMenuItem1_MouseUp);
 
         }
 
-
+{% endhighlight %}
 

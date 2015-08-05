@@ -2,8 +2,8 @@
 layout: post
 title: Layout-Managers-Package
 description: layout managers package
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
