@@ -3,16 +3,16 @@ layout: post
 title: Editors-Package
 description: editors package
 platform: WindowsForms
-control: Control Name undefined
+control: Tools
 documentation: ug
 ---
 
-## Editors Package
+# Editors Package
 
 The Editors package is a comprehensive collection of controls most commonly used in creating data entry forms. All the editor controls architectures with a view to providing simple and powerful means for capturing data input, validating the data and displaying the data with the appropriate formatting. They also offer complete support for data binding, inter nationalization and localization.
 
 ![](Editors-Package_images/Editors-Package_img1.png)
-{:.image }
+
 
 
 The Editors Package provides several controls that can be used in displaying, collecting and validating user input. The different controls that are included in the Editors Package have been listed and discussed below:
@@ -230,13 +230,13 @@ Features
 
 
 ![](Editors-Package_images/Editors-Package_img2.jpeg)
-{:.image }
+
 
 
 * Office2007Style - Added ability to set all the three color schemes, Blue, Silver and Black for Office2007 style.
 
 ![](Editors-Package_images/Editors-Package_img3.jpeg)
-{:.image }
+
 
 
 Double TextBox
@@ -391,25 +391,26 @@ Features
 * The control provides different 2D and 3D border styles for a regular text box.
 * Offers Themes support and flow indicators.
 * Custom Colors can be applied for the following controls. ComboBoxAdv, ComboDropDown, ComboBoxAutoComplete and TextBoxExt. See Visual Styles topic.
-### AutoComplete Controls
+
+## AutoComplete Controls
 
 
 AutoComplete functionality is discussed in the following controls.
 
-#### AutoComplete
+### AutoComplete
 
 The AutoComplete control is an extender control that provides AutoCompletion services to any edit control on the same form as the AutoComplete control.
 
 AutoCompletion can be defined as prompting the user with probable matches during data entry. This feature is similar to the AutoCompletion of the web addresses in the Internet Explorer address box.
 
 ![](Editors-Package_images/Editors-Package_img4.png)
-{:.image }
+
 
 
 AutoCompletion is a feature enhancement for edit controls. It expands strings that have been partially entered in an edit control into complete strings based on a list of previously specified strings.
 
 ![](Editors-Package_images/Editors-Package_img5.png)
-{:.image }
+
 
 
 For example, when a user starts to enter an URL in theAddress edit control that is embedded in the Microsoft Internet Explorer navigation toolbar, autocompletion expands the string into one or more complete URLs that are consistent with the existing partial string. A partial URL string such as "sync" might be expanded to "http://www.syncfusion.com" or "http://www.syncfusion.com/faq/winforms". This feature will be useful in windows applications that require collecting frequently repeated input from the user. 
@@ -422,7 +423,7 @@ See Also
 
 ComboBoxAutoComplete, Auto Append
 
-##### Features
+#### Features
 
 AutoComplete expands strings that have been partially entered in an edit control into complete strings based on a list of previously specified strings. It has following features.
 
@@ -443,182 +444,173 @@ See Also
 
 Concepts and Features
 
-##### Creating AutoComplete Control
+#### Creating AutoComplete Control
 
 This section will guide you to implement a simple AutoComplete control with a TextBox via designer and programmatically.
 
-###### Through Designer
+##### Through Designer
 
 This tutorial illustrates the usage of the AutoComplete control for TextBox, without any external data source. 
 
 1. Create a new Windows Forms application and open the main form for the application in the designer. Add the Syncfusion controls to the VS .NET toolbox, if you have not done so already. Drag-and-drop an AutoComplete control onto the form.
 
-![](Editors-Package_images/Editors-Package_img6.jpeg)
-{:.image }
+   ![](Editors-Package_images/Editors-Package_img6.jpeg)
+
 
 
 2. The AutoComplete control will appear as a component in the component tray of the design environment. Similarly add aText box, two labels and a button to make the form interactive. 
 
-![](Editors-Package_images/Editors-Package_img7.jpeg)
-{:.image }
+   ![](Editors-Package_images/Editors-Package_img7.jpeg)
+
 
 
 3. When the AutoComplete control is added to the form, the AutoComplete on autocomplete property is added to the text box control properties. This property specifies the type of autocompletion to be provided by the autoComplete1 control for the comboBox1 control. The default value for AutoComplete on autoComplete1 will be set to AutoCompleteModes.Disabled. Use the drop-down box provided in the property grid to change it to the mode of autocompletion toAutoSuggest. The different modes of autocompletion are detailed in AutoComplete Modes topic. 
 
-![](Editors-Package_images/Editors-Package_img8.jpeg)
-{:.image }
+   ![](Editors-Package_images/Editors-Package_img8.jpeg)
+
 
 
 4. Set AutoComplete.AutoAddItem property to true. Run the application, type any text in the textbox and hit Enter to save the entry. Select the text, delete it and then retype the first letter of the text you saved. You should see autocompletion of the letter, as shown below.
-> 
-![](Editors-Package_images/Editors-Package_img9.jpeg)
-{:.image }
- _Note: The text entered can be saved only when AutoAddItem property is set to True._
+
+> Note: The text entered can be saved only when AutoAddItem property is set to True.
 
 ![](Editors-Package_images/Editors-Package_img10.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img11.jpeg)
-{:.image }
- _Note: We can also add a list of autocomplete items through designer, which can used as a source for AutoComplete control. SeeSee_ Source for AutoComplete Control _topic for details._
+
+> Note: We can also add a list of autocomplete items through designer, which can used as a source for AutoComplete control. SeeSee_ Source for AutoComplete Control _topic for details.
 
 See also
 
 Concepts and Features
 
-###### Through Code
+##### Through Code
 
  This section will guide you, to programmatically add, and associate an AutoComplete control to a textbox.
 
 5. Include the required namespace.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+   ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 6. Create an instances of AutoComplete and TextBox controls.
 
-[C#]
+   ~~~ cs
+
+		private Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1;
+
+		private System.Windows.Forms.TextBox textBox1;
 
 
 
-private Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1;
+		this.textBox1=new TextBox();
 
-private System.Windows.Forms.TextBox textBox1;
+		this.autoComplete1=new AutoComplete();
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-this.textBox1=new TextBox();
+		Private autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete
 
-this.autoComplete1=new AutoComplete();
+		Private textBox1 As System.Windows.Forms.TextBox
 
+		
+		Me.textBox1 = New TextBox()
 
+		Me.autoComplete1 = New AutoComplete()
 
-[VB.NET]
-
-
-
-Private autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete
-
-Private textBox1 As System.Windows.Forms.TextBox
-
-
-
-Me.textBox1 = New TextBox()
-
-Me.autoComplete1 = New AutoComplete()
-
-
+   ~~~
+   {:.prettyprint }
 
 7. Associate AutoComplete with TextBox using SetAutoComplete() method.
 
-[C#]
+   ~~~ cs
 
 
 
-this.autoComplete1.SetAutoComplete(this.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
+		this.autoComplete1.SetAutoComplete(this.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.autoComplete1.SetAutoComplete(Me.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest)
 
-
-
-Me.autoComplete1.SetAutoComplete(Me.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest)
-
-
+   ~~~
+   {:.prettyprint }
 
 8. Specify its properties.
 
-[C#]
+   ~~~ cs
 
+    	this.autoComplete1.AutoAddItem=true;
 
+		this.autoComplete1.AutoSerialize=true;
 
-this.autoComplete1.AutoAddItem=true;
+   ~~~
+   {:.prettyprint }
 
-this.autoComplete1.AutoSerialize=true;
+   ~~~ vbnet
 
+		Me.autoComplete1.AutoAddItem=True
 
+		Me.autoComplete1.AutoSerialize=True
 
-[VB.NET]
-
-
-
-Me.autoComplete1.AutoAddItem=True
-
-Me.autoComplete1.AutoSerialize=True
-
-
+   ~~~
+   {:.prettyprint }
 
 9. Finally add textBox to the Form.
 
-[C#]
+   ~~~ cs
 
 
 
-this.Controls.Add(this.textBox1);
+		this.Controls.Add(this.textBox1);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ cs
 
-[VB.NET]
+		Me.Controls.Add(Me.textBox1)
 
-
-
-Me.Controls.Add(Me.textBox1)
-
-
+   ~~~
+   {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img12.jpeg)
-{:.image }
+
 
 
 See also
 
 Through Designer, Concepts and Features
 
-##### Concepts and Features
+#### Concepts and Features
 
 The following topics will help you become more familiar in using the AutoComplete control.
 
-###### AutoComplete Popup
+##### AutoComplete Popup
 
 When a control is associated with an AutoComplete control, a popup will be displayed, based on the source. This section illustrates various components of the AutoComplete Popup with their properties which can control the appearance and behavior of the components.
 
 ![](Editors-Package_images/Editors-Package_img13.png)
-{:.image }
+
 
 
 This section will discuss various components in the AutoComplete popup.
@@ -629,7 +621,7 @@ Header Settings
 
 DropDown item can have a header which is enabled using AutoComplete.ShowColumnHeader property. AutoAddItem property should be set to true.
 
-_Table_ _109__: Property Table_
+_Table_ _109_: Property Table
 
 <table>
 <tr>
@@ -641,11 +633,10 @@ Description</td></tr>
 AutoAddItem</td><td>
 Specifies whether the current item in the target control is to be automatically added during validation, when the ENTER key is pressed.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img14.jpeg)
-{:.image }
- _Note: The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None._
 
-[C#]
+> Note: The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
+
+{% highlight c# %}
 
 
 
@@ -655,9 +646,9 @@ this.autoComplete2.ShowColumnHeader = true;
 
 this.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -667,21 +658,19 @@ Me.autoComplete2.ShowColumnHeader = True
 
 Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img15.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img16.jpeg)
-{:.image }
- _Note: You can also set multiple columns. Refer_ Multiple Columns _to know more._
+
+> Note: You can also set multiple columns. Refer_ Multiple Columns _to know more.
 
 Close Button and Gripper Settings
 
 Visibility of close button and the gripper in the popup can be determined by ShowCloseButton and ShowGripper properties.
 
-_Table_ _110__: Property Table_
+_Table_ _110_: Property Table
 
 <table>
 <tr>
@@ -697,11 +686,10 @@ Specifies whether to show the CloseButton at the bottom right of the DropDownCon
 ShowGripper</td><td>
 Specifies whether to show gripper at the bottom right of a DropDownContainer. By default it is true.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img17.jpeg)
-{:.image }
- _Note: The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method._
 
-[C#]
+> Note: The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
+
+{% highlight c# %}
 
 
 
@@ -709,15 +697,15 @@ this.autoComplete1.ShowCloseButton = true;
 
 this.autoComplete1.ShowGripper = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoComplete1.ShowCloseButton = True
 
 Me.autoComplete1.ShowGripper = True
+
+{% endhighlight %}
 
 ###### Behavior Settings
 
@@ -725,7 +713,7 @@ Case Sensitivity
 
 At run time, the string entered in a textbox, for example, can be made case sensitive using the following properties.
 
-_Table_ _111__: Properties_
+_Table_ _111_: Properties
 
 <table>
 <tr>
@@ -743,7 +731,7 @@ Specifies whether the replacement of the matching entry is to be case sensitive.
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -751,11 +739,11 @@ this.autoComplete1.IgnoreCase = false;
 
 this.autoComplete1.CaseSensitive = true;
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -763,12 +751,12 @@ Me.autoComplete1.IgnoreCase = False
 
 Me.autoComplete1.CaseSensitive = True
 
-
+{% endhighlight %}
 
 
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image130_129.jpg](Editors-Package_images/Editors-Package_img18.jpeg)
-{:.image }
+
 
 
 Overriding Combo
@@ -777,29 +765,30 @@ The Combobox drop down can be suppressed and overridden by the AutoComplete cont
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.autoComplete1.OverrideCombo = true;
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.autoComplete1.OverrideCombo = True
 
 
+{% endhighlight %}
 
 Sorting
 
 The items in the list can be sorted automatically by setting AutoSortList to True.
 
-_Table_ _112__: Sorting Properties_
+_Table_ _112_: Sorting Properties
 
 <table>
 <tr>
@@ -813,23 +802,17 @@ Specifies whether default sorting is to be performed.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoComplete1.AutoSortList = true;
 
+{% endhighlight %}
 
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoComplete1.AutoSortList = True
 
-
+{% endhighlight %}
 
 Duplicate values
 
@@ -837,7 +820,7 @@ The duplicate values can be used in AutoComplete DataSource by setting EnableDup
 
 
 
-_Table_ _113__: Properties_
+_Table_ _113_: Properties
 
 <table>
 <tr>
@@ -851,7 +834,7 @@ Gets or sets whether to allow duplicate values in AutoComplete DataSource</td></
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -859,11 +842,11 @@ Gets or sets whether to allow duplicate values in AutoComplete DataSource</td></
 
 this.autoComplete1.EnableDuplicateValues = true;
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -871,7 +854,7 @@ this.autoComplete1.EnableDuplicateValues = true;
 
 Me.autoComplete1.EnableDuplicateValues = True
 
-
+{% endhighlight %}
 
 See Also
 
@@ -881,7 +864,7 @@ See Also
 
 The properties which can control the height and width of the AutoCompletePopup are as follows.
 
-_Table_ _114__: Property Table_
+_Table_ _114_: Property Table
 
 <table>
 <tr>
@@ -907,7 +890,7 @@ Specifies preferred width for the drop down displayed by the AutoComplete contro
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -919,9 +902,9 @@ this.autoComplete1.PreferredHeight = 100;
 
 this.autoComplete1.PreferredWidth = 300;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -933,21 +916,21 @@ Me.autoComplete1.PreferredHeight = 100
 
 Me.autoComplete1.PreferredWidth = 300
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img19.jpeg)
-{:.image }
 
 
-###### DataSource
+
+##### DataSource
 
 This section will discuss the data settings for the AutoComplete control, in the below topics.
 
-Data Settings
+###### Data Settings
 
 The data for the autocompletion will be maintained by the AutoComplete control itself. This is referred to as a History Data List mode. The below properties deals with data settings.
 
-_Table_ _115__: Property Table_
+_Table_ _115_: Property Table
 
 <table>
 <tr>
@@ -965,7 +948,7 @@ Sets the Datasource to the Autocomplete control. The AutoComplete control automa
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -973,9 +956,9 @@ this.autoComplete1.CategoryName = "FTP";
 
 this.autoComplete1.DataSource = DataTable1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -983,15 +966,15 @@ Me.autoComplete1.CategoryName = "FTP"
 
 Me.autoComplete1.DataSource = DataTable1
 
-> ![](Editors-Package_images/Editors-Package_img20.jpeg)
-{:.image }
- _Note: We can set External datasource for the autocompletion. See_ External DataSource _topic._
+{% endhighlight %}
+
+> Note: We can set External datasource for the autocompletion. See_ External DataSource _topic.
 
 See Also
 
 How to delete the items in the list at run time?
 
-Source for AutoComplete Control
+###### Source for AutoComplete Control
 
 Dynamic Source at RunTime
 
@@ -1001,7 +984,7 @@ Setting AutoCompletion Source Through Designer
 
 The different sources available for auto completion are specified using Control.AutoCompleteSource property. When the end user enters a letter in the TextBox for example, the letter will be matched with the source available and displays the dropdown item accordingly.
 
-_Table_ _116__: Property Table_
+_Table_ _116_: Property Table
 
 <table>
 <tr>
@@ -1011,28 +994,24 @@ Description</td></tr>
 <tr>
 <td>
 AutoCompleteSource</td><td>
-Auto completion source for the control. The different sources are,{{ _FileSystem_ | markdownify }} - Files system as source,{{ _HistoryList_ | markdownify }} - Includes all the URLs in the history list,{{ _RecentlyUsedList_ | markdownify }} - Includes the list of most recently used URLs,{{ _AllUrl_ | markdownify }} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{ _AllSystemSources_ | markdownify }} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompletMode is set to values other than default value),{{ _ListItems_ | markdownify }} - Specifies the items in the control, {{ _FileSystemDirectories_ | markdownify }} - Specifies directory names alone without file names,{{ _CustomSource_ | markdownify }} - Uses the string values entered in AutoCompleteCustomSource property and{{ _None_ | markdownify }} - There will not be any source for the auto completion.</td></tr>
+Auto completion source for the control. The different sources are,{{ '_FileSystem_' | markdownify }} - Files system as source,{{ '_HistoryList_' | markdownify }} - Includes all the URLs in the history list,{{ '_RecentlyUsedList_' | markdownify }} - Includes the list of most recently used URLs,{{ '_AllUrl_' | markdownify }} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{ '_AllSystemSources_' | markdownify }} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompletMode is set to values other than default value),{{ '_ListItems_' | markdownify }} - Specifies the items in the control, {{ '_FileSystemDirectories_' | markdownify }} - Specifies directory names alone without file names,{{ '_CustomSource_' | markdownify }} - Uses the string values entered in AutoCompleteCustomSource property and{{ '_None_' | markdownify }} - There will not be any source for the auto completion.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img21.jpeg)
-{:.image }
+
 
 
 Custom Source
@@ -1040,16 +1019,14 @@ Custom Source
 AutoComplete control lets you to specify a set of auto completion text using String Collection Editor. This editor is invoked using Control.AutoCompleteCustomSource property. 
 
 ![](Editors-Package_images/Editors-Package_img22.jpeg)
-{:.image }
+
 
 
 At run time when the user types the first letter, it will automatically display the auto completion list added through this editor.
 
-> ![](Editors-Package_images/Editors-Package_img23.jpeg)
-{:.image }
- _Note: Control.AutoCompleteSource property should be set to "CustomSource" for this setting to be effective._
+> Note: Control.AutoCompleteSource property should be set to "CustomSource" for this setting to be effective.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1061,9 +1038,9 @@ this.textBox1.AutoCompleteCustomSource.AddRange(new string[] {"Customization Set
 
 "Customizing the items", "Custom Collections"});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1075,17 +1052,17 @@ Me.textBox1.AutoCompleteCustomSource.AddRange(New String[] {"Customization Setti
 
 "Customizing the items", "Custom Collections"})
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img24.jpeg)
-{:.image }
+
 
 
 Mode of AutoCompletion
 
 AutoCompletion modes can be specified using AutoCompleteMode property.
 
-_Table_ _117__: Property Table_
+_Table_ _117_: Property Table
 
 <table>
 <tr>
@@ -1095,122 +1072,120 @@ Description</td></tr>
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Gets or sets an option that controls how automatic completion, works for the control. The available modes are,{{ _None_ | markdownify }} - No autocompletion will be provided for this target edit control,{{ _Suggest_ | markdownify }} - The autocompletion will be presented as a list of probable matches in the form of a drop-down window,{{ _Append_ | markdownify }} - The closest match will be added to the partial string in the edit control and{{ _SuggestAppend_ | markdownify }} - A list of probable matches will be displayed as well as the entry will be completed in the edit control with the closest match.</td></tr>
+Gets or sets an option that controls how automatic completion, works for the control. The available modes are,{{ '_None_' | markdownify }} - No autocompletion will be provided for this target edit control,{{ '_Suggest_' | markdownify }} - The autocompletion will be presented as a list of probable matches in the form of a drop-down window,{{ '_Append_' | markdownify }} - The closest match will be added to the partial string in the edit control and{{ '_SuggestAppend_' | markdownify }} - A list of probable matches will be displayed as well as the entry will be completed in the edit control with the closest match.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img25.jpeg)
-{:.image }
+
 
 
 See Also
 
 Multiple Columns, External Datasource
 
-External Datasource
+###### External Datasource
 
 You can specify an external datasource for the AutoComplete control to use as the history list. This can be specified through the AutoComplete.DataSource property. The object specified for this property can be any object that implements IList or IListSource. 
 
 10. Set AutoComplete mode to AutoSuggest.
 11. Set the DataSource in the form's Load event as follows.
 
-[C#]
+    ~~~ cs
+
+		private void Form1_Load(object sender, System.EventArgs e)
+
+		{
+
+			// Set up the datasource on the Autocomplete control. 
+
+		this.oleDbDataAdapter1.Fill(this.dataSet11.organisation);
+
+		this.autoComplete1.DataSource = this.dataSet11.organisation;
+
+		}
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-private void Form1_Load(object sender, System.EventArgs e)
-
-{
-
-    // Set up the datasource on the Autocomplete control. 
-
-this.oleDbDataAdapter1.Fill(this.dataSet11.organisation);
-
-this.autoComplete1.DataSource = this.dataSet11.organisation;
-
-}
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
 
 
-[VB.NET]
+			 ' Set up the datasource on the Autocomplete control  .
 
+		Me.oleDbDataAdapter1.Fill(Me.dataSet11.organisation)
 
+		Me.autoComplete1.DataSource = Me.dataSet11.organisation
 
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+		End Sub
 
-
-
-     ' Set up the datasource on the Autocomplete control  .
-
-Me.oleDbDataAdapter1.Fill(Me.dataSet11.organisation)
-
-Me.autoComplete1.DataSource = Me.dataSet11.organisation
-
-End Sub
-
-
+    ~~~
+    {:.prettyprint }
 
 12. AutoCompleteItemSelected event is raised when a new item has been selected by the user when the AutoComplete drop down list is displayed. In this event, for the tutorial purpose, the code to display corresponding OrgID of the OrganisationName on the label is included. The below code retrieves the corresponding item from the datasource, for the selected item in the AutoComplete control.
 
-[C#]
+    ~~~ cs
 
 
 
-private void autoComplete1_AutoCompleteItemSelected(object sender,Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs args)
+		private void autoComplete1_AutoCompleteItemSelected(object sender,Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs args)
 
-{
+		{
 
-  // Displays corresponding OrgID of the OrganisationName on the label.
+		  // Displays corresponding OrgID of the OrganisationName on the label.
 
-this.label1.Text = args.ItemArray[0].ToString();
+		this.label1.Text = args.ItemArray[0].ToString();
 
-}
+		}
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private Sub autoComplete1_AutoCompleteItemSelected(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs)
+    ~~~ vbnet
 
 
 
-  ' Displays corresponding OrgID of the OrganisationName on the label.
-
-Me.label1.Text = args.ItemArray(0).ToString()
-
-End Sub
+		Private Sub autoComplete1_AutoCompleteItemSelected(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs)
 
 
+
+		  ' Displays corresponding OrgID of the OrganisationName on the label.
+
+		Me.label1.Text = args.ItemArray(0).ToString()
+
+		End Sub
+
+    ~~~
+    {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img26.jpeg)
-{:.image }
+
 
 
 Refer to Multiple Columns section for more information on configuring data sources with multiple columns.
 
-###### Multiple Columns
+##### Multiple Columns
 
 The AutoComplete control allows users to display multiple columns of information for each matching entry in the AutoSuggest mode of operation. Columns can be configured through AutoComplete.Columns property. 
 
-_Table_ _118__: Property Table_
+_Table_ _118_: Property Table
 
 <table>
 <tr>
@@ -1224,15 +1199,15 @@ Specifies the collection of columns in the auto complete dropdown, when AutoComp
 <tr>
 <td>
 MatchMode</td><td>
-Specifies the modes in which the AutoCompleteControl fills the history list for the current text in the current edit control.The values are, {{ _Manual and_  | markdownify }}{{ _Automatic (default)._ | markdownify }}</td></tr>
+Specifies the modes in which the AutoCompleteControl fills the history list for the current text in the current edit control.The values are, {{ '_Manual and_'  | markdownify}}{{ '_Automatic (default)._' | markdownify }}</td></tr>
 </table>
 
 
 ![](Editors-Package_images/Editors-Package_img27.jpeg)
-{:.image }
 
 
-_Table_ _119__: Property Table_
+
+_Table_ _119_: Property Table
 
 <table>
 <tr>
@@ -1262,7 +1237,7 @@ Shows or hides the column at runtime.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1282,9 +1257,9 @@ this.autoCompleteDataColumnInfo1.MatchingColumn = true;
 
 this.autoCompleteDataColumnInfo1.Visible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1304,10 +1279,10 @@ Me.autoCompleteDataColumnInfo1.MatchingColumn = True
 
 Me.autoCompleteDataColumnInfo1.Visible = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img28.jpeg)
-{:.image }
+
 
 
 Column can be added matched using external sources also. A sample which demonstrates this feature is available in the below location.
@@ -1316,19 +1291,17 @@ Column can be added matched using external sources also. A sample which demonstr
 
 While using an external datasource, the Columns property can be initially refreshed by clicking on the RefreshColumns verb visible in the designer.
 
-> ![](Editors-Package_images/Editors-Package_img29.jpeg)
-{:.image }
- _Note: We can also add images to the dropdown items using internal source and external source. See_ Image Settings _for details._
+> Note: We can also add images to the dropdown items using internal source and external source. See_ Image Settings _for details.
 
 See Also
 
 Source for AutoComplete Control, How to match items in all the columns using AutoCompleteControl?
 
-###### Image Settings
+##### Image Settings
 
 We can add a dropdown item with image to the AutoComplete popup, through the AutoComplete.AddHistoryItem method. An imagelist should be associated with AutoComplete control for this purpose. Specify the item text and the image index in this method.
 
-_Table_ _120__: Method Table_
+_Table_ _120_: Method Table
 
 <table>
 <tr>
@@ -1338,11 +1311,11 @@ Description</td></tr>
 <tr>
 <td>
 AddHistoryItem</td><td>
-Adds item to the internal history of the AutoComplete control. The parameters are,{{ _newItemText_ | markdownify }} - Text for the dropdown item.{{ _ImageIndexValue_ | markdownify }} - Index of the image for the particular item.</td></tr>
+Adds item to the internal history of the AutoComplete control. The parameters are,{{ '_newItemText_' | markdownify }} - Text for the dropdown item.{{ '_ImageIndexValue_' | markdownify }} - Index of the image for the particular item.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1370,9 +1343,9 @@ this.autoComplete1.AddHistoryItem("User Guide", 3);
 
 this.autoComplete1.AddHistoryItem("User Item", 2);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1400,10 +1373,10 @@ Me.autoComplete1.AddHistoryItem("User Guide", 3)
 
 Me.autoComplete1.AddHistoryItem("User Item", 2)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img30.jpeg)
-{:.image }
+
 
 
 Items with Images Through External DataSource
@@ -1418,7 +1391,7 @@ See Also
 
 Multiple Columns
 
-###### Persistence
+##### Persistence
 
 The history list of AutoComplete control can be saved in the following formats.
 
@@ -1434,7 +1407,7 @@ Persisting AutoComplete's data in default storage
 
 The data of AutoComplete's control can be persisted by setting the AutoSerialize property to true. This information is stored in the Isolated storage.
 
-_Table_ _121__: Property Table_
+_Table_ _121_: Property Table
 
 <table>
 <tr>
@@ -1448,21 +1421,21 @@ Specifies whether AutoComplete control can persist its data.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.autoComplete1.AutoSerialize = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.autoComplete1.AutoSerialize = True
 
-
+{% endhighlight %}
 
 The AutoComplete control has built-in support for serialization that can be enabled or disabled using the AutoSerialize property. 
 
@@ -1472,7 +1445,7 @@ Persisting in XML file
 
 To save and load the AutoComplete data in a XML,
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1494,9 +1467,9 @@ AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, @"C:\inf
 
 this.autoComplete1.LoadCurrentState(aser);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1520,13 +1493,15 @@ Me.autoComplete1.LoadCurrentState(aser)
 
 End Sub()
 
+{% endhighlight %}
+
 Persisting in Memory Stream
 
 To serialize the data into a memory stream,
 
 Storing State
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1538,9 +1513,9 @@ this.autoComplete1.SaveCurrentState(aser);
 
 aser.PersistNow();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1552,9 +1527,11 @@ Me.autoComplete1.SaveCurrentState(aser)
 
 aser.PersistNow()
 
+{% endhighlight %}
+
 Retrieving State
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1568,9 +1545,9 @@ AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, 
 
 this.autoComplete1.LoadCurrentState(aser);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1584,11 +1561,11 @@ Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtS
 
 this.autoComplete1.LoadCurrentState(aser);
 
-
+{% endhighlight %}
 
 To serialize in Binary Format, use the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1608,9 +1585,9 @@ AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFile,"myfil
 
 this.autoComplete1.LoadCurrentState(aser);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1630,11 +1607,11 @@ Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.Binary
 
 Me.autoComplete1.LoadCurrentState(aser)
 
-
+{% endhighlight %}
 
 To serialize in Isolated Storage medium, use the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1654,9 +1631,9 @@ AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedSto
 
 this.autoComplete1.LoadCurrentState(aser);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1676,7 +1653,9 @@ Private serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.
 
 Me.autoComplete1.LoadCurrentState(aser)
 
-###### Support to Set Maximum Limit for Suggestion List 
+{% endhighlight %}
+
+##### Support to Set Maximum Limit for Suggestion List 
 
 The AutoComplete control displays a filtered suggestion list from a mapped data source in a drop-down as the user types text into the text box. This feature provides support to set the maximum number for the filtered suggestion. 
 
@@ -1686,7 +1665,7 @@ When you want to narrow down the filtering and get more accurate data, you can u
 
 Properties
 
-_Table_ _122__: Property Table_
+_Table_ _122_: Property Table
 
 <table>
 <tr>
@@ -1717,21 +1696,23 @@ Maximum Number of Suggestion
 
 You can set the maximum number of suggestions to be displayed in the AutoComplete using the MaxNumberofSuggestion property: The following code illustrates this: 
 
-[C#]
+{% highlight c# %}
 
 this.autoComplete1.MaxNumberofSuggestion = 5; 
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.autoComplete1.MaxNumberofSuggestion = 5
 
-##### AutoComplete Events
+{% endhighlight %}
+
+#### AutoComplete Events
 
 The events of the AutoComplete control are as follows.
 
-_Table_ _123__: Events Table_
+_Table_ _123_: Events Table
 
 <table>
 <tr>
@@ -1775,17 +1756,18 @@ Handled before the AutoComplete control performs a matching operation for the cu
 TargetChanging</td><td>
 Occurs when the target control of the AutoComplete control changes.</td></tr>
 </table>
-###### AutoCompleteItemSelected Event
+
+##### AutoCompleteItemSelected Event
 
 AutoCompleteItemSelected Event is raised, when a new item has been selected by the user when the AutoComplete mode is set to AutoSuggest.
 
 This event is discussed in External DataSource topic.
 
-###### BeforeAddItem Event
+##### BeforeAddItem Event
 
 This event will be raised when new item is about to be added. New items can be added by calling AutoComplete.AddHistoryItem() method. The event handler receives an argument of type AutoCompleteAddItemCancelEventArgs containing data related to this event. The following are the properties associated with AutoCompleteAddItemCancelEventArgs argument.
 
-_Table_ _124__: Members Table_
+_Table_ _124_: Members Table
 
 <table>
 <tr>
@@ -1807,7 +1789,7 @@ It is the System.Data.DataRow object that contains the value that is to be added
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1821,9 +1803,9 @@ private void autoComplete1_BeforeAddItem(object sender, AutoCompleteAddItemCance
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1835,11 +1817,13 @@ Private Sub autoComplete1_BeforeAddItem(ByVal sender As Object, ByVal e As AutoC
 
 End Sub
 
-###### AutoCompleteItemBrowsed Event
+{% endhighlight %}
+
+##### AutoCompleteItemBrowsed Event
 
 This event will be raised when the user selects an item from the list of possible matches when the AutoComplete is set to AutoSuggest. The event handler receives an argument of type AutoCompleteItemEventArgs. The event properties associated with the AutoCompleteItemEventArgs are as follows.
 
-_Table_ _125__: Members Table_
+_Table_ _125_: Members Table
 
 <table>
 <tr>
@@ -1867,7 +1851,7 @@ Returns the index of the item that was used for matching.</td></tr>
 
 When the user selects an item from the list of possible matches when the AutoComplete is set to AutoSuggest, we can display the selected URL in separate TextBox. The following code illustrate this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1883,9 +1867,9 @@ textBox1.Text = textBox1.Text + eventlogmessage;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1899,11 +1883,13 @@ Private Sub autoComplete1_AutoCompleteItemBrowsed(ByVal sender As Object, ByVal 
 
 End Sub
 
-###### MatchItem Event
+{% endhighlight %}
+
+##### MatchItem Event
 
 We can override the default matching of the current content of the target edit control using this event. The event handler receives an argument of type AutoCompleteMatchItemEventArgs. The following are the properties associated with AutoCompleteMatchItemEventArgs argument.
 
-_Table_ _126__: Members Table_
+_Table_ _126_: Members Table
 
 <table>
 <tr>
@@ -1925,7 +1911,7 @@ Returns the possible match value that needs to be compared against AutoCompleteM
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1939,9 +1925,9 @@ private void autoComplete1_MatchItem(object sender, AutoCompleteMatchItemEventAr
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1953,15 +1939,17 @@ Private Sub autoComplete1_MatchItem(ByVal sender As Object, ByVal args As AutoCo
 
 End Sub
 
-##### Frequently Asked Questions
+{% endhighlight %}
+
+#### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-###### How to add a new data row to the Data table at run time?
+##### How to add a new data row to the Data table at run time?
 
 This is achieved by calling the SetTableData() method as follows. This method sets internal table data based on AutoComplete.DataSource property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2011,9 +1999,9 @@ private void button1_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2057,11 +2045,13 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 End Sub
 
-###### How to Programmatically display the autocomplete popup when a text box is enabled with autocomplete feature?
+{% endhighlight %}
+
+##### How to Programmatically display the autocomplete popup when a text box is enabled with autocomplete feature?
 
 You can show the autocomplete popup programmatically using the following code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2069,21 +2059,21 @@ this.autoComplete1.AutoCompletePopup.ParentControl = this.textBox1;
 
 this.autoComplete1.AutoCompletePopup.ShowPopup(Point.Empty);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoComplete1.AutoCompletePopup.ParentControl = Me.textBox1
 
 Me.autoComplete1.AutoCompletePopup.ShowPopup(Point.Empty)
 
-###### How to remove default selection from autocomplete drop-down?
+{% endhighlight %}
+
+##### How to remove default selection from autocomplete drop-down?
 
 To remove the default selection in autocomplete drop-down, set SelectedIndex property to _-1_ inside DropdownDisplayed event of the autocomplete control as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2095,9 +2085,9 @@ private void autoComplete1_DropDownDisplayed(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2107,47 +2097,45 @@ Private Sub autoComplete1_DropDownDisplayed(ByVal sender As Object, ByVal e As E
 
 End Sub
 
-###### How to delete the items in the list at run time?
+{% endhighlight %}
+
+##### How to delete the items in the list at run time?
 
 You can delete items in the list at run time by pressing the Delete Key, by enabling AllowListDelete property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoComplete1.AllowListDelete = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoComplete1.AllowListDelete = True
 
-###### How to delete the history items persisted by an AutoComplete control?
+{% endhighlight %}
+
+##### How to delete the history items persisted by an AutoComplete control?
 
 We can delete the history items persisted by an AutoCompleteControl by calling AutoComplete.ResetHistory() method.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoComplete1.ResetHistory();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoComplete1.ResetHistory()
 
-###### How to implement an AutoComplete Control in an User Control?
+{% endhighlight %}
+
+##### How to implement an AutoComplete Control in an User Control?
 
 AutoComplete control can be used in an UserControl by setting the parent form of the User Control to the parent form property of the AutoComplete Control. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2161,9 +2149,9 @@ this.autoComplete1.DataSource = this.items;
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2175,204 +2163,208 @@ Private Sub UserControl1_Load(ByVal sender As Object, ByVal e As System.EventArg
 
 End Sub
 
-###### How to implement AutoComplete with RichTextBox control?
+{% endhighlight %}
+
+##### How to implement AutoComplete with RichTextBox control?
 
 Follow the below steps to implement AutoComplete feature with RichTextBox control.
 
 17. Implement the IEditControlsEmbed interface in a RichTextBox class which, will enable the AutoComplete functionality for the RichTextBox control.
 
-[C#]
+    ~~~ cs
 
 
 
-public class MyRichTextBox : System.Windows.Forms.RichTextBox, IEditControlsEmbed
+		public class MyRichTextBox : System.Windows.Forms.RichTextBox, IEditControlsEmbed
 
-{
+		{
 
-      // Returns the active RichTextBox control.
+			  // Returns the active RichTextBox control.
 
-       public Control GetActiveEditControl(IEditControlsEmbedListener listener)
+			   public Control GetActiveEditControl(IEditControlsEmbedListener listener)
 
-       {
+			   {
 
-                  return (Control)this;
+						  return (Control)this;
 
-       }
-
-
-
-}
+			   }
 
 
 
-[VB.NET]
+		}
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-Public Class MyRichTextBox Inherits System.Windows.Forms.RichTextBox Implements IEditControlsEmbed
+		Public Class MyRichTextBox Inherits System.Windows.Forms.RichTextBox Implements IEditControlsEmbed
 
 
 
-    ' Returns the active RichTextBox control.
+		' Returns the active RichTextBox control.
 
 
 
-    Public Function GetActiveEditControl(ByVal listener As IEditControlsEmbedListener) As Control
+		Public Function GetActiveEditControl(ByVal listener As IEditControlsEmbedListener) As Control
 
 
 
-        Return CType(Me, Control)
+			Return CType(Me, Control)
 
 
 
-    End Function
+		End Function
 
 
 
-End Class
+		End Class
 
+    ~~~
+    {:.prettyprint }
 
 
 18. Drag and drop the RichTextBox control and the AutoComplete control to a form.
 
-[C#]
+    ~~~ cs
 
 
 
-// Initialization
+		// Initialization
 
-Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1= new Syncfusion.Windows.Forms.Tools.AutoComplete();;
+		Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1= new Syncfusion.Windows.Forms.Tools.AutoComplete();;
 
-MyRichTextBox richTextBox1= new MyRichTextBox();
+		MyRichTextBox richTextBox1= new MyRichTextBox();
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-' Initialization
-
-Dim autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete = New Syncfusion.Windows.Forms.Tools.AutoComplete 
-Dim richTextBox1 As MyRichTextBox = New MyRichTextBox
+    ~~~ vbnet
 
 
+
+		' Initialization
+
+		Dim autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete = New Syncfusion.Windows.Forms.Tools.AutoComplete 
+		Dim richTextBox1 As MyRichTextBox = New MyRichTextBox
+
+    ~~~
+    {:.prettyprint }
 
 19. The AutoComplete control can take an external data source (any data source that implements IList or IListSource) for its history list. Here we have set a StringCollection as the DataSource.
 20. When this property is set, the AutoComplete control will initialize itself with the data source and use that as the basis for its matching routines. For example, if you have a DataSet with a list of names of the States in the US and if you specify that as the DataSource, then the AutoComplete control will display all the matches from within these names when the user types in the target edit control.
 
-[C#]
+    ~~~ cs
 
 
 
-// Sets the DataSource.
+		// Sets the DataSource.
 
-StringCollection liste = new StringCollection();
+		StringCollection liste = new StringCollection();
 
-    liste.Add("New Jersey");
+			liste.Add("New Jersey");
 
-    liste.Add("North Carolina");
+			liste.Add("North Carolina");
 
-    liste.Add("North Dakota");
+			liste.Add("North Dakota");
 
-    liste.Add("New York");
+			liste.Add("New York");
 
-    liste.Add("New Mexico");
+			liste.Add("New Mexico");
 
-    autoComplete1.DataSource = liste;
+			autoComplete1.DataSource = liste;
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
+		' Sets the DataSource. 
 
+		Dim liste As StringCollection = New StringCollection 
+				liste.Add("New Jersey") 
+				liste.Add("North Carolina") 
+				liste.Add("North Dakota") 
+				liste.Add("New York") 
+				liste.Add("New Mexico") 
+				autoComplete1.DataSource = liste
 
-
-' Sets the DataSource. 
-
-Dim liste As StringCollection = New StringCollection 
-        liste.Add("New Jersey") 
-        liste.Add("North Carolina") 
-        liste.Add("North Dakota") 
-        liste.Add("New York") 
-        liste.Add("New Mexico") 
-        autoComplete1.DataSource = liste
-
-
+    ~~~
+    {:.prettyprint }
 
 21. Set the AutoCompleteonautoComplete1 property in the properties page to either AutoSuggest, AutoAppend or Both. 
 22. SetAutoComplete is the extended property for the AutoComplete property which, will be called by the framework when the AutoComplete property is set on any control. When using the AutoComplete control programmatically, you need to use this method to add and remove auto completion for the RichTextBox control.
 
-[C#]
+    ~~~ cs
 
 
 
-this.autoComplete1.SetAutoComplete(this.richTextBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
+		this.autoComplete1.SetAutoComplete(this.richTextBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.autoComplete1.SetAutoComplete(Me.richTextBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest)
 
-
-
-Me.autoComplete1.SetAutoComplete(Me.richTextBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest)
-
-
+    ~~~
+    {:.prettyprint }
 
 23. The RichTextBox will be enabled with the AutoComplete functionality.
-###### How to match items in all the columns using AutoCompleteControl
+
+##### How to match items in all the columns using AutoCompleteControl
 
 
 Matching items in multiple columns is possible using the AutoComplete control. We need to set the AutoCompleteModes to MultiSuggest or MultiExtended mode for this.
 
 MultiSuggest - Possible matches from Multiple columns for the current content of the Active edit control, will be presented in a form of a popup window with a selectable list of matches. MultiSuggest mode is an extended mode of AutoSuggest. On selecting this mode, user  will be able to get the matching items in the active edit control from all the columns. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoComplete1.SetAutoComplete(this.textBoxExt1 , Syncfusion.Windows.Forms.Tools.AutoCompleteModes.MultiSuggest);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoComplete1.SetAutoComplete(Me.textBoxExt1 , Syncfusion.Windows.Forms.Tools.AutoCompleteModes.MultiSuggest)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img31.jpeg)
-{:.image }
+
 
 
 MultiSuggestExtended - This mode highlights all possible matches from Multiple columns, for the current content of the Active edit control, presented in the form of a popup window, with a selectable list of matches.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoComplete1.SetAutoComplete(this.textBoxExt1 , Syncfusion.Windows.Forms.Tools.AutoCompleteModes.MultiSuggestExtended);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.autoComplete1.SetAutoComplete(Me.textBoxExt1 , Syncfusion.Windows.Forms.Tools.AutoCompleteModes.MultiSuggestExtended)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img32.jpeg)
-{:.image }
+
 
 
 ###### How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete Control?
 
 This can be done using AutoCompleteItemSelected Event which is discussed in External Datasource topic.
 
-#### ComboBoxAutoComplete
+### ComboBoxAutoComplete
 
 The ComboBoxAutoComplete control combines a combo box control with an AutoComplete control to provide autocompletion for that instance of the combo box. 
 
@@ -2380,43 +2372,42 @@ The ComboBoxAutoComplete control can be used on a form to provide autocompletion
 
 The ComboBoxAutoComplete control fulfills this need. It derives from the windows forms combo box control and holds its own AutoComplete control that provides autocompletion for the combo box. 
 
-##### Features
+#### Features
 
 ComboBoxAutoComplete combines a ComboBox control with an AutoComplete control to provide Auto completion for that instance of the ComboBox and contains following features.
 
 * AutoComplete: ComboBoxAutoComplete control provides AutoComplete behavior.
 * Columns: We can use more than one column in the ComboBoxAutoComplete control.
 * Datasource: We can also specify the external datasource for ComboBoxAutoComplete control.
-##### Creating ComboBoxAutoComplete
+
+#### Creating ComboBoxAutoComplete
 
 
 Implementing a simple ComboBoxAutoComplete can be done in the following ways.
 
-###### Through Designer	
+##### Through Designer	
 
  This tutorial illustrates the usage of the ComboBoxAutoComplete control without any external datasource.
 
-> ![](Editors-Package_images/Editors-Package_img33.jpeg)
-{:.image }
- _Note : This is applicable only for VS2005._
+> Note : This is applicable only for VS2005.
 
 24. Drag-and-drop a ComboBoxAutoComplete control from the toolbox onto the form.
 
-![](Editors-Package_images/Editors-Package_img34.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img34.jpeg)
+
 
 
 25. Add items to ComboBoxAutoComplete using AutoCompleteCustomSource collection editor as shown below.
 
-![](Editors-Package_images/Editors-Package_img35.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img35.jpeg)
+
 
 
 26. Specify the text completion behavior of the control using ComboBoxAutoComplete.AutoCompleteMode. The value of AutoCompleteMode should not be none in this case. SeeSee Source for AutoComplete Control to know the different AutoCompleteModes. 
 27. Set AutoCompleteSource to CustomSource as shown below. SeeSee Source for AutoComplete Control to know the different AutoComplete sources.
 
-![](Editors-Package_images/Editors-Package_img36.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img36.jpeg)
+
 
 
 Output
@@ -2424,108 +2415,114 @@ Output
 At runtime, type 'C' in the display area of ComboBoxAutoComplete, you will see the autocompletion behavior as shown below.
 
 ![](Editors-Package_images/Editors-Package_img37.jpeg)
-{:.image }
 
 
-###### Through Code
+
+##### Through Code
 
 The embedded AutoComplete control in a ComboBoxAutoComplete control is exposed through the AutoCompleteControl property. The Datasource property of the AutoCompleteControl specifies the data that will be used for the auto completion of the combo box. It can be created programmatically as follows.
 
 28. Include the required namespace.
 
-[C#]
+    ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+    ~~~
+    {:.prettyprint }
 
 29. Create an instance of the ComboBoxAutoComplete control class.
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete comboBoxAutoComplete1;
+		private Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete comboBoxAutoComplete1;
 
-this.comboBoxAutoComplete1=new Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete();
+		this.comboBoxAutoComplete1=new Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete();
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private comboBoxAutoComplete1 As Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete
-
-Me.comboBoxAutoComplete1 = New Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete()
+    ~~~ vbnet
 
 
+
+		Private comboBoxAutoComplete1 As Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete
+
+		Me.comboBoxAutoComplete1 = New Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete()
+
+    ~~~
+    {:.prettyprint }
 
 30. Set data source and add the control to the form.
 
-[C#]
+    ~~~ cs
 
 
 
-this.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(new string[] { "Custom", "Customizing", "Customizable"});
+		this.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(new string[] { "Custom", "Customizing", "Customizable"});
 
-this.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+		this.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
 
-this.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-
-
-
-this.Controls.Add(this.comboBoxAutoComplete1);
+		this.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 
 
 
-[VB.NET]
+		this.Controls.Add(this.comboBoxAutoComplete1);
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-Me.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(New String() {"Custom", "Customizing", "Customizable"}) 
+		Me.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(New String() {"Custom", "Customizing", "Customizable"}) 
 
-Me.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend 
+		Me.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend 
 
-Me.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource 
-
-
-
-Me.Controls.Add(Me.comboBoxAutoComplete1)
+		Me.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource 
 
 
+
+		Me.Controls.Add(Me.comboBoxAutoComplete1)
+
+    ~~~
+    {:.prettyprint }
 
 31. Run the application.
 
 ![](Editors-Package_images/Editors-Package_img38.jpeg)
-{:.image }
+
 
 
 See Also
 
 Concepts and Features
 
-##### Concepts and Features
+#### Concepts and Features
 
 This section contains information about using the ComboBoxAutoComplete control in some commonly used scenarios.
 
-###### Behavior Settings
+##### Behavior Settings
 
 The behavior settings of a ComboBoxAutoComplete control includes the below properties.
 
 
 
-_Table_ _127__: Property Table_
+_Table_ _127_: Property Table
 
 <table>
 <tr>
@@ -2547,7 +2544,7 @@ UpdateComboSelectionProperties set to true means the Property SelectedItem will 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2557,9 +2554,9 @@ this.comboBoxAutoComplete1.ReadOnly = true;
 
 this.comboBoxAutoComplete1.UpdateComboSelectionProperties = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2569,12 +2566,14 @@ Me.comboBoxAutoComplete1.ReadOnly = True
 
 Me.comboBoxAutoComplete1.UpdateComboSelectionProperties = False
 
+{% endhighlight %}
+
 Refreshing the Columns 
 
 When the datasource of the AutoComplete control is set to a valid datasource through the designer, the "Refresh Columns" verb can be clicked to automatically populate the Columns collection. This option is available in the context menu of the ComboBoxAutoComplete control and also as property grid command.
 
 ![](Editors-Package_images/Editors-Package_img39.jpeg)
-{:.image }
+
 
 
 Banner Text Support
@@ -2582,22 +2581,22 @@ Banner Text Support
 We can set banner text for the ComboBoxAutoComplete control. Refer BannerTextProvider Component topic for more details.
 
 ![](Editors-Package_images/Editors-Package_img40.jpeg)
-{:.image }
 
 
-###### Multi Columns
+
+##### Multi Columns
 
 We can use multiples columns in the ComboBoxAutoComplete control. In this case, we need to specify which column is to be used as the matching column using the ComboBoxAutoComplete.AutoCompleteControl.Columns properties. Adding multiple columns is discussed Multiple Columns topic in AutoCompleteControl UG. 
 
 ![](Editors-Package_images/Editors-Package_img41.jpeg)
-{:.image }
+
 
 
 See Also
 
 DataSource
 
-###### Datasource
+##### Datasource
 
 The following steps sets a DataView as the DataSource of ComboBoxAutoComplete.
 
@@ -2609,10 +2608,10 @@ The following steps sets a DataView as the DataSource of ComboBoxAutoComplete.
 37. Enter the following code in the Load event of your form to fill the DataSet with data from the database.
 
 ![](Editors-Package_images/Editors-Package_img42.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -2620,9 +2619,9 @@ The following steps sets a DataView as the DataSource of ComboBoxAutoComplete.
 
 this.oleDbDataAdapter1.Fill(this.dataSet11);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2630,17 +2629,19 @@ this.oleDbDataAdapter1.Fill(this.dataSet11);
 
 Me.oleDbDataAdapter1.Fill(Me.dataSet11);
 
+{% endhighlight %}
+
 Adding Columns to the Popup and setting the matching column
 
 Add columns through designer using ComboBoxAutoComplete.AutoCompleteControl.Columns property. Set the first column as the matching column.
 
 ![](Editors-Package_images/Editors-Package_img43.jpeg)
-{:.image }
+
 
 
 Using the below code, assign the dataset as the data source for the ComboBoxAutoComplete control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2666,9 +2667,9 @@ this.autoCompleteDataColumnInfo1.MatchingColumn = true;
 
 this.autoCompleteDataColumnInfo2.ColumnHeaderText = "ID";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2694,20 +2695,20 @@ Me.autoCompleteDataColumnInfo1.MatchingColumn = True
 
 Me.autoCompleteDataColumnInfo2.ColumnHeaderText = "ID"
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img44.jpeg)
-{:.image }
 
 
-###### Visual Styles
+
+##### Visual Styles
 
 Visual Styles for the ComboBoxAutoComplete control can be set using VisualStyle property. The styles are,
 
 * Default and 
 * Office2007. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2715,9 +2716,9 @@ this.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedCo
 
 this.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2725,21 +2726,19 @@ Me.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComb
 
 Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img45.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img46.jpeg)
-{:.image }
- _Note: The control supports all the three office color schemes._
+
+> Note: The control supports all the three office color schemes.
 
 Custom Colors
 
 We can also apply custom colors to the ComboBoxAutoComplete control by setting Office2007ColorTheme to "_Managed_" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2747,9 +2746,9 @@ this.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Offic
 
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2757,13 +2756,13 @@ Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2
 
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img47.jpeg)
-{:.image }
 
 
-##### AutoAppend
+
+#### AutoAppend
 
 Combo box controls are commonly used to select from a particular value from a list of items. In several instances, the developer is not aware of the contents of the combo box before the application is being used. 
 
@@ -2776,68 +2775,69 @@ The AutoAppend class provides this service for any combo box control without the
 The following screen shot illustrates the usage of the AutoAppend class to persist items previously entered in a combo box and add them to the items collection of the combo box.
 
 ![](Editors-Package_images/Editors-Package_img48.jpeg)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 AutoAppend provides an auto persisting of previously entered items in a Windows Forms combo box based on a category keyword and also populates the combo box control's items collection with the persisted list. It has following features.
 
 * New entries can be added to control's AutoAppend list programmatically.
 * It can be used with AutoComplete control.
-###### Associating AutoAppend with a control
+
+##### Associating AutoAppend with a control
 
 
 We can associate AutoAppend class to a ComboBox control by following the below steps. 
 
 38. Open a Visual Studio project and include the required namespace. 
 
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 39. Drag and drop a ComboBox control from the Toolbox onto the form. 
 40. Create and instance of the AutoAppend class as follows.
 
-[C#]
+    ~~~ cs
 
 
 
-// Creating an instance of the AutoAppend Class.
+		// Creating an instance of the AutoAppend Class.
 
-private AutoAppend autoAppend1;
+		private AutoAppend autoAppend1;
 
-autoappend1 = new AutoAppend();
+		autoappend1 = new AutoAppend();
 
-
-
-[VB.NET]
-
+    ~~~
+    {:.prettyprint }
 
 
-' Creating an instance of the AutoAppend Class.
+    ~~~ vbnet
 
-Private autoAppend1 As AutoAppend
 
-Private autoappend1 = New AutoAppend()
 
+		' Creating an instance of the AutoAppend Class.
+
+		Private autoAppend1 As AutoAppend
+
+		Private autoappend1 = New AutoAppend()
+
+    ~~~
+    {:.prettyprint }
 
 
 41. After creating the AutoAppend instance we need to associate it with an edit control. To achieve this use the AutoAppend.SetAutoAppend method. This method takes an object of AutoAppendInfo class which is used to hold the details of the data associated. 
 
-_Table_ _128__: Methods Table_
+_Table_ _128_: Methods Table
 
 <table>
 <tr>
@@ -2847,7 +2847,7 @@ Description</td></tr>
 <tr>
 <td>
 SetAutoAppend</td><td>
-Sets AutoAppend behavior for the control specified. The parameters are,{{ _control_ | markdownify }} - control to which auto append class has to be associated.{{ _autoAppendInfo_ | markdownify }} - Initializes an AutoAppendInfo class which  has three parameters - {{ _AutoAppend_ | markdownify }} - specifies whether autoappend is enabled or not (true or false){{ _categoryName_ | markdownify }} - category to which contents in this control belong to.{{ _items_ | markdownify }} - Reference to an item list.{{ _maxItems_ | markdownify }} - specifies maximum number of items.</td></tr>
+Sets AutoAppend behavior for the control specified. The parameters are,{{ '_control_' | markdownify }} - control to which auto append class has to be associated.{{ '_autoAppendInfo_' | markdownify }} - Initializes an AutoAppendInfo class which  has three parameters - {{ '_AutoAppend_' | markdownify }} - specifies whether autoappend is enabled or not (true or false){{ '_categoryName_' | markdownify }} - category to which contents in this control belong to.{{ '_items_' | markdownify }} - Reference to an item list.{{ '_maxItems_' | markdownify }} - specifies maximum number of items.</td></tr>
 <tr>
 <td>
 GetAutoAppend</td><td>
@@ -2855,7 +2855,7 @@ Returns the AutoAppend info associated with the control. The parameter is contro
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2863,9 +2863,9 @@ Returns the AutoAppend info associated with the control. The parameter is contro
 
 autoappend1.SetAutoAppend(cmbBox,new AutoAppendInfo(true,"category name", al, 10)); //al is an IList object
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2873,48 +2873,52 @@ autoappend1.SetAutoAppend(cmbBox,new AutoAppendInfo(true,"category name", al, 10
 
 autoappend1.SetAutoAppend(cmbBox,New AutoAppendInfo(True, "category name", al, 10)) ' al is an IList object
 
+{% endhighlight %}
+
 See Also
 
 Adding New Entries Programmatically
 
-###### Adding New Entries Programmatically
+##### Adding New Entries Programmatically
 
 42. To add or move an item to the top of controls' AutoAppend list, call the method InsertOrMoveToTop. If the item is already present, it will be moved to the first place otherwise it will be added.
 43. It takes 2 arguments. First one is the associated control and the second is the value in string.
 
-[C#]
+    ~~~ cs
+
+		this.autoAppend1.InsertOrMoveToTop(this.comboBox1,"www.syncfusion.com");
+
+    ~~~
+    {:.prettyprint }
+
+
+    ~~~ vbnet
 
 
 
-this.autoAppend1.InsertOrMoveToTop(this.comboBox1,"www.syncfusion.com");
+		Me.autoAppend1.InsertOrMoveToTop(Me.comboBox1,"www.syncfusion.com")
 
-
-
-[VB.NET]
-
-
-
-Me.autoAppend1.InsertOrMoveToTop(Me.comboBox1,"www.syncfusion.com")
-
+    ~~~
+    {:.prettyprint }
 
 
 ![](Editors-Package_images/Editors-Package_img49.jpeg)
-{:.image }
 
 
-### Button Controls
+
+## Button Controls
 
 Essential Tools Button controls are as follows. Detailed user guides are available for these control.
 
-#### ButtonAdv
+### ButtonAdv
 
 ButtonAdv is an advanced button control capable of displaying  images with different alignments and various border styles. It contains some additional feature to the standard Windows Forms Button. It can be configured into any of the predefined ButtonTypes such as Calculator, Up, Down, and so on. Also it can afford the XP or Office styles.
 
 ![](Editors-Package_images/Editors-Package_img50.jpeg)
-{:.image }
 
 
-##### Features
+
+#### Features
 
 ButtonAdvcontrol has the following features.
 
@@ -2925,76 +2929,85 @@ ButtonAdvcontrol has the following features.
 * Image Settings - The Images can be easily associated and it can be aligned anywhere on the ButtonAdv.
 * Easy Customization of the control through designer without a single piece of code.
 * Smart Tag - Has advanced smart tag options which lets you to set the properties easily.
-##### Creating  ButtonAdv
+
+#### Creating  ButtonAdv
 
 
 The ButtonAdv control can be made available through designer by just dragging and dropping the control from the toolbox onto the form. 
 
 ![](Editors-Package_images/Editors-Package_img51.jpeg)
-{:.image }
+
 
 
 It can be created programmatically by following the below steps.
 
 44. Include the Tools Windows namespace to cs / vb file.
 
-[C#]
+    ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+    ~~~
+    {:.prettyprint }
 
 
+    ~~~ vbnet
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
+    ~~~
+    {:.prettyprint }
 
 
 45. Create an instance of ButtonAdv control and add it to the form.
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
+		private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
 
-this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
+		this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
 
-this.Controls.Add(this.buttonAdv1);
+		this.Controls.Add(this.buttonAdv1);
 
-
-
-[VB.NET]
-
+    ~~~
+    {:.prettyprint }
 
 
-Private buttonAdv1 As Syncfusion.Windows.Forms.ButtonAdv
+    ~~~ vbnet
 
-Me.buttonAdv1 = New Syncfusion.Windows.Forms.ButtonAdv 
 
-Me.Controls.Add(Me.buttonAdv1)
+
+		Private buttonAdv1 As Syncfusion.Windows.Forms.ButtonAdv
+
+		Me.buttonAdv1 = New Syncfusion.Windows.Forms.ButtonAdv 
+
+		Me.Controls.Add(Me.buttonAdv1)
+		
+    ~~~
+    {:.prettyprint }
+
 
 See Also
 
 Concepts and Features
 
-##### Concepts and Features
+#### Concepts and Features
 
 The following topics will help you become more familiar in using the ButtonAdv control.
 
-###### ButtonAdv Appearance
+##### ButtonAdv Appearance
 
 This section will walk you through the below topics which discusses the properties that controls the appearance of the ButtonAdv.
 
-Button Types
+###### Button Types
 
 ButtonAdv control supports different button types in terms of its appearance. It is specified using the ButtonType property.
 
-_Table_ _129__: Property Table_
+_Table_ _129_: Property Table
 
 <table>
 <tr>
@@ -3004,13 +3017,12 @@ Description</td></tr>
 <tr>
 <td>
 ButtonType</td><td>
-Specifies the button type to be used in the ButtonAdv control. The options are as follows.{{ _Normal_ | markdownify }} - Normal button. (user can specify the image with this ButtonType).{{ _Calculator_ | markdownify }} - Calculator image is used.{{ _Currency_ | markdownify }} - Currency image is used.{{ _Down_ | markdownify }} - Down image is used.{{ _ComboXPDown_ | markdownify }} - Down image like in a Windows XP combo box.{{ _Up_ | markdownify }} - Up image is used.{{ _Left_ | markdownify }} - Left image is used.{{ _Right_ | markdownify }} - Right image is used.{{ _Redo_ | markdownify }} - Redo image is used.{{ _Undo_ | markdownify }} - Undo image is used.{{ _Check_ | markdownify }} - Check image is used.{{ _Browse_ | markdownify }} - Browse image is used.{{ _LeftEnd_ | markdownify }} - Left end image is used.{{ _RightEnd_ | markdownify }} - Right end image is used.</td></tr>
+Specifies the button type to be used in the ButtonAdv control. The options are as follows.{{ '_Normal_' | markdownify }} - Normal button. (user can specify the image with this ButtonType).{{ '_Calculator_' | markdownify }} - Calculator image is used.{{ '_Currency_' | markdownify }} - Currency image is used.{{ '_Down_' | markdownify }} - Down image is used.{{ '_ComboXPDown_' | markdownify }} - Down image like in a Windows XP combo box.{{ '_Up_' | markdownify }} - Up image is used.{{ '_Left_' | markdownify }} - Left image is used.{{ '_Right_' | markdownify }} - Right image is used.{{ '_Redo_' | markdownify }} - Redo image is used.{{ '_Undo_' | markdownify }} - Undo image is used.{{ '_Check_' | markdownify }} - Check image is used.{{ '_Browse_' | markdownify }} - Browse image is used.{{ '_LeftEnd_' | markdownify }} - Left end image is used.{{ '_RightEnd_' | markdownify }} - Right end image is used.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img52.jpeg)
-{:.image }
- _Note: You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See_ Image Settings _to know more._
 
-[C#]
+> Note: You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See_ Image Settings _to know more._
+
+{% highlight c# %}
 
 
 
@@ -3018,9 +3030,9 @@ Specifies the button type to be used in the ButtonAdv control. The options are a
 
 this.ButtonAdvControl.ButtonType=Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3028,27 +3040,25 @@ this.ButtonAdvControl.ButtonType=Syncfusion.Windows.Forms.Tools.ButtonTypes.Calc
 
 Me.ButtonAdvControl.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img53.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img54.jpeg)
-{:.image }
- _Note: The ButtonTypes are only provided for ease of use and do not in any way change the functionality of the buttons._
+
+> Note: The ButtonTypes are only provided for ease of use and do not in any way change the functionality of the buttons._
 
 Example - A sample image which uses most of the button types in a single application is as follows. User will have to add respective functionalities for each button type.
 
 ![](Editors-Package_images/Editors-Package_img55.jpeg)
-{:.image }
 
 
-Border Styles
+
+###### Border Styles
 
 Border style for the ButtonAdv control is specified in the below property.
 
-_Table_ _130__: Property Table_
+_Table_ _130_: Property Table
 
 <table>
 <tr>
@@ -3058,13 +3068,12 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyleAdv</td><td>
-Specifies the border style for ButtonAdv control. The styles are,{{ _None,_ | markdownify }}{{ _Default,_ | markdownify }}{{ _Dashed,_ | markdownify }}{{ _Dotted,_ | markdownify }}{{ _Inset,_ | markdownify }}{{ _Outset,_ | markdownify }}{{ _Solid,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Flat,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _RaisedOuter,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _SunkenInner and_ | markdownify }}{{ _SunkenOuter._ | markdownify }}</td></tr>
+Specifies the border style for ButtonAdv control. The styles are,{{ '_None,_' | markdownify }}{{ '_Default,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Dotted,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenInner and_' | markdownify }}{{ '_SunkenOuter._' | markdownify }}</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img56.jpeg)
-{:.image }
- _Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See_ Visual Styles_._ 
 
-[C#]
+> Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See_ Visual Styles_.
+
+{% highlight c# %}
 
 
 
@@ -3072,9 +3081,9 @@ Specifies the border style for ButtonAdv control. The styles are,{{ _None,_ | ma
 
 this.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.SunkenOuter;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3082,21 +3091,21 @@ this.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.
 
 Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.SunkenOuter
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img57.jpeg)
-{:.image }
+
 
 
 See Also
 
 Visual Styles, Button Types
 
-Visual Styles
+###### Visual Styles
 
 Visual Styles for the ButtonAdv control can be enabled using UseVisualStyle property. The different visual style are specified through Appearance.
 
-_Table_ _131__: Property Table_
+_Table_ _131_: Property Table
 
 <table>
 <tr>
@@ -3106,11 +3115,11 @@ Description</td></tr>
 <tr>
 <td>
 Appearance</td><td>
-Sets the visual styles for the control when UseVisualStyle property is true. The styles are,{{ _Classic,_ | markdownify }}{{ _Office2000,_ | markdownify }}{{ _WindowsXP,_ | markdownify }}{{ _OfficeXP,_ | markdownify }}{{ _Office2003 and_  | markdownify }}{{ _Office2007._ | markdownify }}</td></tr>
+Sets the visual styles for the control when UseVisualStyle property is true. The styles are,{{ '_Classic,_' | markdownify }}{{ '_Office2000,_' | markdownify }}{{ '_WindowsXP,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003 and_'  | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3120,9 +3129,9 @@ this.buttonAdv1.UseVisualStyle = Syncfusion.Windows.Forms.UseStyle.True;
 
 this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.OfficeXP;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3132,21 +3141,20 @@ Me.buttonAdv1.UseVisualStyle = Syncfusion.Windows.Forms.UseStyle.True
 
 Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.OfficeXP
 
+{% endhighlight %}
 
 
 ![](Editors-Package_images/Editors-Package_img58.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img59.jpeg)
-{:.image }
- _Note: While mouse hovering over the OfficeXP, Office2003 and WindowsXP at run time, the button will be painted with some standard colors. This is an inbuilt feature in the ButtonControlAdv._
+
+> Note: While mouse hovering over the OfficeXP, Office2003 and WindowsXP at run time, the button will be painted with some standard colors. This is an inbuilt feature in the ButtonControlAdv.
 
 Office Color Themes
 
 ButtonControlAdv supports all the three OfficeColor Schemes when ButtonAdv.Appearance is set to Office2007. Similarly you can set Blue and Black color schemes also. Default value is Blue.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3154,9 +3162,9 @@ ButtonControlAdv supports all the three OfficeColor Schemes when ButtonAdv.Appea
 
 this.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3164,17 +3172,17 @@ this.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme
 
 Me.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img60.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the ButtonAdv control by setting Office2007ColorScheme to "_Managed"_ and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3182,9 +3190,9 @@ this.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme
 
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3192,21 +3200,21 @@ Me.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.M
 
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img61.jpeg)
-{:.image }
+
 
 
 See Also
 
 Button Types, Image Settings
 
-Foreground Settings
+###### Foreground Settings
 
 Text for the ButtonAdv can be customized using the below properties.
 
-_Table_ _132__: Property Table_
+_Table_ _132_: Property Table
 
 <table>
 <tr>
@@ -3220,11 +3228,11 @@ Sets the text for the ButtonAdv control.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Sets the alignment of the text in the control.  The options are,{{ _TopLeft,_ | markdownify }}{{ _TopCenter,_  | markdownify }}{{ _TopRight,_ | markdownify }}{{ _MiddleLeft,_   | markdownify }}{{ _MiddleCenter,_  | markdownify }}{{ _MiddleRight,_  | markdownify }}{{ _BottomLeft,_  | markdownify }}{{ _BottomCenter and_  | markdownify }}{{ _BottomRight._ | markdownify }}</td></tr>
+Sets the alignment of the text in the control.  The options are,{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_'  | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_'   | markdownify }}{{ '_MiddleCenter,_'  | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_'  | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Sets the relative location of the image to the text. The options are,{{ _Overlay,_ | markdownify }}{{ _ImageBeforeText,_ | markdownify }}{{ _TextBeforeImage,_ | markdownify }}{{ _ImageAboveText and_  | markdownify }}{{ _TextAboveImage._ | markdownify }}</td></tr>
+Sets the relative location of the image to the text. The options are,{{ '_Overlay,_' | markdownify }}{{ '_ImageBeforeText,_' | markdownify }}{{ '_TextBeforeImage,_' | markdownify }}{{ '_ImageAboveText and_'  | markdownify }}{{ '_TextAboveImage._' | markdownify }}</td></tr>
 <tr>
 <td>
 Font</td><td>
@@ -3236,7 +3244,7 @@ Sets the fore color for the control's text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3252,9 +3260,9 @@ this.buttonAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.
 
 this.buttonAdv1.ForeColor = System.Drawing.Color.White;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3270,20 +3278,20 @@ Me.buttonAdv1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.Fo
 
 Me.buttonAdv1.ForeColor = System.Drawing.Color.White
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img62.jpeg)
-{:.image }
 
 
-###### Design Time Features
+
+##### Design Time Features
 
 ButtonAdv control has Smart Tag, which lets you set the properties easily.
 
 Smart Tag Options
 
 ![](Editors-Package_images/Editors-Package_img63.jpeg)
-{:.image }
+
 
 
 The various settings through this window is as follows.
@@ -3298,7 +3306,8 @@ The various settings through this window is as follows.
 * ImageAlign - Sets the image alignment within the control.
 * Text - Sets the text for button.
 * Text Alignment - Sets the alignment of the text.
-###### Image Settings
+
+##### Image Settings
 
 
 ButtonAdv supports two types of images. They are,
@@ -3311,7 +3320,7 @@ BackgroundImage
 BackgroundImage is the image used as the Background for the control, which is set using the BackgroundImage property. This BackgroundImage can be laid in various manner with the BackgroundImageLayout property.
 
 ![](Editors-Package_images/Editors-Package_img64.jpeg)
-{:.image }
+
 
 
 Image
@@ -3319,12 +3328,12 @@ Image
 Image that will be displayed on the control.
 
 ![](Editors-Package_images/Editors-Package_img65.jpeg)
-{:.image }
+
 
 
 The Images can be added to the ButtonAdv control in two ways. Either Image property can be used or the below properties.
 
-_Table_ _133__: Property Table_
+_Table_ _133_: Property Table
 
 <table>
 <tr>
@@ -3338,7 +3347,7 @@ Sets the imagelist used for this control.</td></tr>
 <tr>
 <td>
 ImageAlign</td><td>
-Sets the alignment of the image inside the control. The options are,{{ _TopLeft,_  | markdownify }}{{ _TopCenter,_  | markdownify }}{{ _TopRight_ | markdownify }}{{ _MiddleLeft,_   | markdownify }}{{ _MiddleCenter,_  | markdownify }}{{ _MiddleRight,_  | markdownify }}{{ _BottomLeft,_  | markdownify }}{{ _BottomCenter and_  | markdownify }}{{ _BottomRight._ | markdownify }}</td></tr>
+Sets the alignment of the image inside the control. The options are,{{ '_TopLeft,_'  | markdownify}}{{ '_TopCenter,_'  | markdownify}}{{ '_TopRight_' | markdownify }}{{ '_MiddleLeft,_'   | markdownify }}{{ '_MiddleCenter,_'  | markdownify}}{{ '_MiddleRight,_'  | markdownify }}{{ '_BottomLeft,_'  | markdownify}}{{ '_BottomCenter and_'  | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 <tr>
 <td>
 ImageIndex</td><td>
@@ -3350,23 +3359,21 @@ Sets the text for the ButtonAdv.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Sets the alignment of the text in the control.  The options are,{{ _TopLeft,_  | markdownify }}{{ _TopCenter,_  | markdownify }}{{ _TopRight_ | markdownify }}{{ _MiddleLeft,_  | markdownify }}{{ _MiddleCenter,_  | markdownify }}{{ _MiddleRight,_  | markdownify }}{{ _BottomLeft,_  | markdownify }}{{ _BottomCenter and_  | markdownify }}{{ _BottomRight._ | markdownify }}</td></tr>
+Sets the alignment of the text in the control.  The options are,{{ '_TopLeft,_'  | markdownify }}{{ '_TopCenter,_'  | markdownify }}{{ '_TopRight_' | markdownify }}{{ '_MiddleLeft,_'  | markdownify }}{{ '_MiddleCenter,_'  | markdownify }}{{ '_MiddleRight,_'  | markdownify }}{{ '_BottomLeft,_'  | markdownify }}{{ '_BottomCenter and_'  | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Sets the relative location of the image to the text. The options are,{{ _Overlay,_ | markdownify }}{{ _ImageBeforeText,_ | markdownify }}{{ _TextBeforeImage,_ | markdownify }}{{ _ImageAboveText and_  | markdownify }}{{ _TextAboveImage._ | markdownify }}</td></tr>
+Sets the relative location of the image to the text. The options are,{{ '_Overlay,_' | markdownify }}{{ '_ImageBeforeText,_' | markdownify }}{{ '_TextBeforeImage,_' | markdownify }}{{ '_ImageAboveText and_'  | markdownify }}{{ '_TextAboveImage._' | markdownify }}</td></tr>
 </table>
 
 
 ![](Editors-Package_images/Editors-Package_img66.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img67.jpeg)
-{:.image }
- _Note: The Image settings will be effective only when_ ButtonType _is set to Normal._
 
-[C#]
+> Note: The Image settings will be effective only when_ ButtonType _is set to Normal._
+
+{% highlight c# %}
 
 
 
@@ -3378,9 +3385,10 @@ this.btnAlignment.ImageIndex = 3;
 
 this.btnAlignment.ImageList = this.imageList1;
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3392,21 +3400,21 @@ Me.btnAlignment.ImageIndex = 3
 
 Me.btnAlignment.ImageList = Me.imageList1
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img68.jpeg)
-{:.image }
 
 
-##### Frequently Asked Questions
+
+#### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-###### How to draw or hide focus rectangle for the ButtonAdv control
+##### How to draw or hide focus rectangle for the ButtonAdv control
 
 ButtonControl shows some special features which the user interacts with the control. Those properties are discussed in this section.
 
-_Table_ _134__: Property Table_
+_Table_ _134_: Property Table
 
 <table>
 <tr>
@@ -3420,31 +3428,31 @@ Specifies whether rectangle will be drawn around the control when it is focussed
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.buttonAdv1.KeepFocusRectangle = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.buttonAdv1.KeepFocusRectangle = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img69.jpeg)
-{:.image }
 
 
-###### How to identify whether a ButtonAdv control is in pressed state or not
+
+##### How to identify whether a ButtonAdv control is in pressed state or not
 
 When ButtonAdv.PushButton property is enabled, the button will remain in its pressed state, when clicked. The state of the button will be present in the property State. So by examining the state property, we can conclude whether the button is in the Pressed state or not. Using the Office2007 visual styles will help better understanding of this feature.
 
-_Table_ _135__: Property Table_
+_Table_ _135_: Property Table
 
 <table>
 <tr>
@@ -3458,7 +3466,7 @@ Specifies the state of the control. By default it is set to false. Set this to t
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3476,9 +3484,9 @@ MessageBox.Show("Button is in normal state");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3494,27 +3502,27 @@ MessageBox.Show("Button is in normal state")
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img70.jpeg)
-{:.image }
 
 
-#### ButtonEdit
+
+### ButtonEdit
 
 The ButtonEdit control embeds a text box control with a collection of button controls that can be customized to create many commonly used interfaces such as a file / folder browser or a drop-down text control. We can implement a file picker and folder browser using the ButtonEdit control. Drop-down popup controls can also be shown using the ButtonEdit control and the PopupContainerControl.
 
 The edit control with a browse button extends a regular edit control by adding a button which can display an user-defined "browse" dialog. The ButtonEdit control provides an easy way to create controls with an edit control and any number of associated buttons. 
 
 ![](Editors-Package_images/Editors-Package_img71.jpeg)
-{:.image }
+
 
 
 The ButtonEdit control derives from Syncfusion.Windows.Forms.ContainerControl and embeds one or more ButtonEditChildButton controls. The ButtonEditChildButton controls derive from Syncfusion.Windows.Forms.Button class and expose the functionality of buttons. 
 
 Using an edit control alongside one or more button controls is a very common requirement in graphical user interface programming. Some of the common examples are browse edit controls and drop-down controls. 
 
-##### Features
+#### Features
 
 ButtonEdit is a composite control that combines buttons with a Text Box. The Button Edit control can be used for a variety of purposes that require a Text Box placed alongside one or more buttons. It has following features.
 
@@ -3531,245 +3539,237 @@ See Also
 
 Concepts and Features
 
-##### Creating ButtonEdit
+#### Creating ButtonEdit
 
 This section will help you to get started with the ButtonEdit control. The below topics will guide you to create ButtonEdit control through designer and programmatically.
 
-###### Through Designer
+##### Through Designer
 
 The ButtonEdit control can be used in situations where a set of buttons are needed alongside an edit control, such as in a browser for files dialog. This tutorial shows how to use the ButtonEdit control, set the Button properties and handle the events.
 
 46. Create a new Windows Forms application and open the main form in the designer. Drag and drop ButtonEdit control from the toolbox to the form.  
 
-![](Editors-Package_images/Editors-Package_img72.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img72.jpeg)
+
 
 
 47. When the control is initially added to the form, it appears like an edit control with no buttons.
 
-![](Editors-Package_images/Editors-Package_img73.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img73.jpeg)
+
 
 
 48. We can add buttons to the control using ButtonEditChildButton Collection Editor which is invoked by ButtonEdit.Buttons property. Editor can also be accessed using Smart Tag option.
 
-![](Editors-Package_images/Editors-Package_img74.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img74.jpeg)
+
 
 
 49. Set properties for buttons using the Editor. You can specify the attributes for any of the child buttons through the collection editor or by clicking any button and then selecting the properties in theproperty grid, that display the properties for the selected button.
 
-![](Editors-Package_images/Editors-Package_img75.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img75.jpeg)
 
 
-> ![](Editors-Package_images/Editors-Package_img76.jpeg)
-{:.image }
- _Note: You can also add or remove buttons to the ButtonEdit.Buttons collection through the Add Button and Remove Button verbs provided._
+
+> Note: You can also add or remove buttons to the ButtonEdit.Buttons collection through the Add Button and Remove Button verbs provided.
 
 50. Run the application. You can specify handlers for these child buttons also.
 
-![](Editors-Package_images/Editors-Package_img77.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img77.jpeg)
+
 
 
 See Also
 
 Concepts and Features
 
-###### Through Code
+##### Through Code
 
 To create a ButtonEdit control programmatically, follow the below steps.
 
 51. Include the required namespace.
 
-[C#]
+    ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+    ~~~
+    {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+    ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+    ~~~
+    {:.prettyprint }
 
 52. Create an instances of ButtonEdit, TextBox and three ButtonEditChildButtons.
 
-[C#]
+    ~~~ cs
+
+		private Syncfusion.Windows.Forms.Tools.ButtonEdit buttonEdit1;
+
+		private System.Windows.Forms.TextBox textBox1;
+
+		private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton1;
+
+		private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton2;
+
+		private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton3;
 
 
 
-private Syncfusion.Windows.Forms.Tools.ButtonEdit buttonEdit1;
+		this.buttonEdit1=new Syncfusion.Windows.Forms.Tools.ButtonEdit();
 
-private System.Windows.Forms.TextBox textBox1;
+		this.textBox1=new TextBox();
 
-private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton1;
+		this.buttonEditChildButton1=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
 
-private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton2;
+		this.buttonEditChildButton2=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
 
-private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton3;
+		this.buttonEditChildButton3=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
 
+    ~~~
+    {:.prettyprint }
 
-
-this.buttonEdit1=new Syncfusion.Windows.Forms.Tools.ButtonEdit();
-
-this.textBox1=new TextBox();
-
-this.buttonEditChildButton1=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
-
-this.buttonEditChildButton2=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
-
-this.buttonEditChildButton3=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
+    ~~~ vbnet
 
 
 
-[VB.NET]
+		Private buttonEdit1 As Syncfusion.Windows.Forms.Tools.ButtonEdit
+
+		Private textBox1 As System.Windows.Forms.TextBox
+
+		Private buttonEditChildButton1 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+
+		Private buttonEditChildButton2 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+
+		Private buttonEditChildButton3 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
 
 
 
-Private buttonEdit1 As Syncfusion.Windows.Forms.Tools.ButtonEdit
+		Me.buttonEdit1 = New Syncfusion.Windows.Forms.Tools.ButtonEdit()
 
-Private textBox1 As System.Windows.Forms.TextBox
+		Me.textBox1 = New TextBox()
 
-Private buttonEditChildButton1 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+		Me.buttonEditChildButton1 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
 
-Private buttonEditChildButton2 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+		Me.buttonEditChildButton2 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
 
-Private buttonEditChildButton3 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+		Me.buttonEditChildButton3 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
 
-
-
-Me.buttonEdit1 = New Syncfusion.Windows.Forms.Tools.ButtonEdit()
-
-Me.textBox1 = New TextBox()
-
-Me.buttonEditChildButton1 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
-
-Me.buttonEditChildButton2 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
-
-Me.buttonEditChildButton3 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
-
-
+    ~~~
+    {:.prettyprint }
 
 53. Embed the TextBox1 to the textBox of ButtonEdit.
 
-[C#]
+    ~~~ cs
 
+		//Associating the TextBoxExt control.
 
+		this.buttonEdit1.TextBox=this.textBox1;
 
-//Associating the TextBoxExt control.
+    ~~~
+    {:.prettyprint }
 
-this.buttonEdit1.TextBox=this.textBox1;
+    ~~~ vbnet
 
+		'Associating the TextBoxExt control.
 
+		Me.buttonEdit1.TextBox=Me.textBox1
 
-[VB.NET]
-
-
-
-'Associating the TextBoxExt control.
-
-Me.buttonEdit1.TextBox=Me.textBox1
-
-
-
+    ~~~
+    {:.prettyprint }
+ 
 54. Set the alignment and text for the buttons.
 
-[C#]
+    ~~~ cs
 
+		//Setting Button alignment for Child Button 1
 
+		//By default the alignment for other buttons will be right
 
-//Setting Button alignment for Child Button 1
+		this.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left;
 
-//By default the alignment for other buttons will be right
+		//Setting text for child Buttons.
 
-this.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left;
+		this.buttonEditChildButton1.Text = "L";
 
-//Setting text for child Buttons.
+		this.buttonEditChildButton2.Text = "R";
 
-this.buttonEditChildButton1.Text = "L";
+		this.buttonEditChildButton3.Text = "E";
 
-this.buttonEditChildButton2.Text = "R";
+    ~~~
+    {:.prettyprint }
 
-this.buttonEditChildButton3.Text = "E";
+    ~~~ vbnet
 
+		'Setting Button alignment for Child Button 1. 
 
+		'By default the alignment for other buttons will be right
 
-[VB.NET]
+		Me.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left
 
+		'Setting text for child Buttons
 
+		Me.buttonEditChildButton1.Text = "L"
 
-'Setting Button alignment for Child Button 1. 
+		Me.buttonEditChildButton2.Text = "R"
 
-'By default the alignment for other buttons will be right
+		Me.buttonEditChildButton3.Text = "E"
 
-Me.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left
-
-'Setting text for child Buttons
-
-Me.buttonEditChildButton1.Text = "L"
-
-Me.buttonEditChildButton2.Text = "R"
-
-Me.buttonEditChildButton3.Text = "E"
-
-
+    ~~~
+    {:.prettyprint }
 
 55. Add ButtonEditChildButtons to the ButtonEdit which then add it to the form.
 
-[C#]
+    ~~~ cs
 
 
 
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton1);
+		this.buttonEdit1.Buttons.Add(this.buttonEditChildButton1);
 
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton2);
+		this.buttonEdit1.Buttons.Add(this.buttonEditChildButton2);
 
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton3);
+		this.buttonEdit1.Buttons.Add(this.buttonEditChildButton3);
 
+		this.Controls.Add(this.buttonEdit1);
 
+    ~~~
+    {:.prettyprint }
 
-this.Controls.Add(this.buttonEdit1);
-
-
-
-[VB.NET]
-
-
-
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton1)
-
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton2)
-
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton3)
+    ~~~ vbnet
 
 
 
-Me.Controls.Add(Me.buttonEdit1)
+		Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton1)
+
+		Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton2)
+
+		Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton3)
 
 
+
+		Me.Controls.Add(Me.buttonEdit1)
+
+    ~~~
+    {:.prettyprint }
 
 56. Run the application. The output will be like below.
 
 ![](Editors-Package_images/Editors-Package_img78.jpeg)
-{:.image }
+
 
 
 See Also
 
 Concepts and Features
 
-##### Concepts and Features
+#### Concepts and Features
 
 The following topics will help you become more familiar in using the ButtonEdit control.
 
-###### ButtonEdit Appearance
+##### ButtonEdit Appearance
 
 A ButtonEdit control is a combination of controls with textbox and buttons. The buttons are normal windows buttons which supports all their properties and events. The ButtonEdit control itself supports properties which controls the appearance and behavior of the control. This section will discuss those properties in the below topics.
 
@@ -3787,7 +3787,7 @@ Button Styles
 
 Styles for the ButtonEdit control is specified using ButtonStyle property.
 
-_Table_ _136__: Property Table_
+_Table_ _136_: Property Table
 
 <table>
 <tr>
@@ -3797,7 +3797,7 @@ Description</td></tr>
 <tr>
 <td>
 ButtonStyle</td><td>
-Specifies the button style for the control. The styles are,{{ _Classic,_ | markdownify }}{{ _Office2000,_ | markdownify }}{{ _WindowsXP,_ | markdownify }}{{ _OfficeXP,_ | markdownify }}{{ _Office2003 and_  | markdownify }}{{ _Office2007._ | markdownify }}</td></tr>
+Specifies the button style for the control. The styles are,{{ '_Classic,_' | markdownify }}{{ '_Office2000,_' | markdownify }}{{ '_WindowsXP,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003 and_'  | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseVisualStyle</td><td>
@@ -3805,7 +3805,7 @@ Specifies whether the visual styles can be applied using ButtonStyle property or
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3813,9 +3813,9 @@ this.buttonEdit3.UseVisualStyle = true;
 
 this.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Classic;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3823,15 +3823,13 @@ Me.buttonEdit3.UseVisualStyle = True
 
 Me.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Classic
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img79.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img80.jpeg)
-{:.image }
- _Note: ButtonEdit control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this._
+
+> Note: ButtonEdit control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this.
 
 Custom Colors
 
@@ -3839,7 +3837,7 @@ We can also apply custom colors to the ButtonEditControl by setting Office2007Co
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3851,9 +3849,9 @@ this.buttonEditChildButton3.Office2007ColorScheme = Syncfusion.Windows.Forms.Off
 
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3865,17 +3863,17 @@ Me.buttonEditChildButton3.Office2007ColorScheme = Syncfusion.Windows.Forms.Offic
 
 Office2007Colors.ApplyManagedColors(Me, Color.LightGreen)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img81.jpeg)
-{:.image }
+
 
 
 Border Styles
 
 The border styles for the ButtonEdit can be controlled using the below properties.
 
-_Table_ _137__: Property Table_
+_Table_ _137_: Property Table
 
 <table>
 <tr>
@@ -3885,7 +3883,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets the 3D border style for the control. The options are,{{ _RaisedOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Flat,_ | markdownify }}{{ _Adjust and_  | markdownify }}{{ _Bump._ | markdownify }}</td></tr>
+Sets the 3D border style for the control. The options are,{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Adjust and_'  | markdownify }}{{ '_Bump._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
@@ -3901,7 +3899,7 @@ Specifies the border color for the control, when FlatStyle is set to "Flat". Thi
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3911,9 +3909,9 @@ this.buttonEdit3.FlatBorderColor = System.Drawing.Color.Red;
 
 this.buttonEdit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3923,21 +3921,19 @@ this.buttonEdit3.FlatBorderColor = System.Drawing.Color.Red;
 
 this.buttonEdit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img82.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img83.jpeg)
-{:.image }
- _Note: The Border styles of the child buttons can be controlled using ButtonEditChildButton.BorderStyleAdv property. SeeSee_ Button Types and Border Styles _topic for details._
+
+> Note: The Border styles of the child buttons can be controlled using ButtonEditChildButton.BorderStyleAdv property. SeeSee_ Button Types and Border Styles _topic for details._
 
 Size Settings
 
 We can specify the maximum and minimum size for the ButtonEdit control using MaximumSize and MinimumSize properties.
 
-_Table_ _138__: Property Table_
+_Table_ _138_: Property Table
 
 <table>
 <tr>
@@ -3965,7 +3961,7 @@ Font and ForeColor
 
 The font style and the forecolor for the ButtonEdit text can be set using Font and ForeColor properties. These property settings can be overridden by TextBox.Font and TextBox.ForeColor respectively.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3973,9 +3969,9 @@ this.buttonEdit3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing
 
 this.buttonEdit3.ForeColor = Color.SteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3983,19 +3979,19 @@ Me.buttonEdit3.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.F
 
 Me.buttonEdit3.ForeColor = Color.SteelBlue
 
-> ![](Editors-Package_images/Editors-Package_img84.jpeg)
-{:.image }
- _Note: Foreground settings for the child buttons can be specified using ButtonEditChildButton.Font and ButtonEditChildButton.ForeColor properties._
+{% endhighlight %}
+
+> Note: Foreground settings for the child buttons can be specified using ButtonEditChildButton.Font and ButtonEditChildButton.ForeColor properties.
 
 ![](Editors-Package_images/Editors-Package_img85.jpeg)
-{:.image }
+
 
 
 Case Settings
 
 Using ButtonEdit.CharacterCasing property, we can specify whether the case of the character can be modified as they are typed. The values are Upper, Lower and Normal.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4003,9 +3999,9 @@ this.buttonEdit3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing
 
 this.buttonEdit3.ForeColor = Color.SteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4013,15 +4009,15 @@ Me.buttonEdit3.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.F
 
 Me.buttonEdit3.ForeColor = Color.SteelBlue
 
-> ![](Editors-Package_images/Editors-Package_img86.jpeg)
-{:.image }
- _Note: This case setting can be overridden by TextBox.CharacterCasing property._
+{% endhighlight %}
+
+> Note: This case setting can be overridden by TextBox.CharacterCasing property.
 
 See Also
 
 TextBox Settings for ButtonEdit
 
-###### Child Button Customization
+##### Child Button Customization
 
 The child buttons in a ButtonEdit control are normal windows button, but supports additional features within our ButtonEdit control. Those features are discussed in the below topics.
 
@@ -4037,7 +4033,7 @@ Border Styles
 
 The border styles for the child buttons can be set through BorderStyleAdv property.
 
-_Table_ _139__: Property Table_
+_Table_ _139_: Property Table
 
 <table>
 <tr>
@@ -4047,13 +4043,12 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyleAdv</td><td>
-Specifies the border style for child buttons of the ButtonEdit control. The styles are,{{ _None,_ | markdownify }}{{ _Default,_ | markdownify }}{{ _Dashed,_ | markdownify }}{{ _Dotted,_ | markdownify }}{{ _Inset,_ | markdownify }}{{ _Outset,_ | markdownify }}{{ _Solid,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Flat,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _RaisedOuter,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _SunkenInner and_ | markdownify }}{{ _SunkenOuter._ | markdownify }}</td></tr>
+Specifies the border style for child buttons of the ButtonEdit control. The styles are,{{ '_None,_' | markdownify }}{{ '_Default,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Dotted,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Flat,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenInner and_' | markdownify }}{{ '_SunkenOuter._' | markdownify }}</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img87.jpeg)
-{:.image }
- _Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonEdit.ButtonStyle property. See Style Settings. We can also set border style for ButtonEdit controls without enabling visual styles._
 
-[C#]
+> Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonEdit.ButtonStyle property. See Style Settings. We can also set border style for ButtonEdit controls without enabling visual styles.
+
+{% highlight c# %}
 
 
 
@@ -4061,9 +4056,9 @@ Specifies the border style for child buttons of the ButtonEdit control. The styl
 
 this.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4071,10 +4066,11 @@ this.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvB
 
 Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump
 
+{% endhighlight %}
 
 
 ![](Editors-Package_images/Editors-Package_img88.jpeg)
-{:.image }
+
 
 
 See Also
@@ -4089,7 +4085,7 @@ Button Alignment
 
 Placement of the child buttons inside the ButtonEdit control is set through below property.
 
-_Table_ _140__: Property Table_
+_Table_ _140_: Property Table
 
 <table>
 <tr>
@@ -4103,35 +4099,29 @@ Specifies whether the child button should be aligned to left or right of the But
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img89.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img90.jpeg)
-{:.image }
- _Note: There is no support for placing more than one buttons on the same side. We need to add the buttons in the order we require._
+
+> Note: There is no support for placing more than one buttons on the same side. We need to add the buttons in the order we require.
 
 Image Settings
 
 The below properties can be used to set text and image for the child buttons.
 
-_Table_ _141__: Property Table_
+_Table_ _141_: Property Table
 
 <table>
 <tr>
@@ -4173,7 +4163,7 @@ Sets the relative location of the image to the text in the button.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4189,9 +4179,9 @@ this.buttonEditChildButton2.TextImageRelation = System.Windows.Forms.TextImageRe
 
 this.buttonEditChildButton2.PreferredWidth = 64;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4207,15 +4197,15 @@ Me.buttonEditChildButton2.TextImageRelation = System.Windows.Forms.TextImageRela
 
 Me.buttonEditChildButton2.PreferredWidth = 64
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img91.jpeg)
-{:.image }
+
 
 
 Flat Style for the Buttons
 
-_Table_ _142__: Property Table_
+_Table_ _142_: Property Table
 
 <table>
 <tr>
@@ -4233,7 +4223,7 @@ Specifies the flat style for the button. The options are Flat, Popup, Standard a
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4243,9 +4233,9 @@ this.buttonEditChildButton5.FlatAppearance.BorderColor = System.Drawing.Color.Cr
 
 this.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4255,15 +4245,15 @@ Me.buttonEditChildButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crim
 
 Me.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img92.jpeg)
-{:.image }
+
 
 
 Style Settings
 
-_Table_ _143__: Property Table_
+_Table_ _143_: Property Table
 
 <table>
 <tr>
@@ -4279,43 +4269,43 @@ Determines whether the background of child button is drawn using visual style if
 Office2007ColorScheme</td><td>
 Specifies the office color scheme.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img93.jpeg)
-{:.image }
- _Note: Visual style of a child buttons is inherited from the visual style of it's parent (ButtonEdit) control. See_ Style Settings _topic. You can override those settings using the above properties._
+
+> Note: Visual style of a child buttons is inherited from the visual style of it's parent (ButtonEdit) control. See_ Style Settings _topic. You can override those settings using the above properties.
 
 Focusing the Child Button at Runtime
 
 The Child buttons can be focussed based on the order of the ChildButton.TabIndex set for individual buttons. ChildButton.TabStop property should be set to true to make this effective. While focusing the button, we can either display or don't display a focus rectangle, by using the  ButtonEdit.KeepFocusRectangle property. 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.buttonEditChildButton3.KeepFocusRectangle = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.buttonEditChildButton3.KeepFocusRectangle = True
 
+{% endhighlight %}
 
 
 ![](Editors-Package_images/Editors-Package_img94.jpeg)
-{:.image }
+
 
 
 See Also
 
 How to hide a child button of a ButtonEdit control?
 
-###### TextBox Settings For ButtonEdit
+##### TextBox Settings For ButtonEdit
 
 The default textbox within the ButtonEdit control can be replaced with any custom textbox like PercentTextBox, IntegerTextBox, and so on. The properties of Embedded textbox of a ButtonEdit control are discussed below.
 
-_Table_ _144__: Property Table_
+_Table_ _144_: Property Table
 
 <table>
 <tr>
@@ -4337,7 +4327,7 @@ Sets the SelectionStart property of the ButtonEdit control which is same as the 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4347,9 +4337,9 @@ this.buttonEdit1.SelectionStart = 3;
 
 this.buttonEdit1.ShowTexBox = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4359,18 +4349,18 @@ Me.buttonEdit1.SelectionStart = 3
 
 Me.buttonEdit1.ShowTexBox = True
 
-> ![](Editors-Package_images/Editors-Package_img95.jpeg)
-{:.image }
- _Note: To increase the height of the ButtonEdit control, make the text as multiline textbox._
+{% endhighlight %}
 
-###### Design Time Features
+> Note: To increase the height of the ButtonEdit control, make the text as multiline textbox._
+
+##### Design Time Features
 
 ButtonEdit control has Smart Tag, which lets you set the properties easily.
 
 Smart Tag Options
 
 ![](Editors-Package_images/Editors-Package_img96.jpeg)
-{:.image }
+
 
 
 The Options are as follows.
@@ -4382,18 +4372,19 @@ The Options are as follows.
 * Character Casing - Set the case settings for the text in the textbox.
 * ButtonCollection - Opens Button Collection Editor.
 * Name - Sets the name of the ButtonEdit control.
-##### ButtonEdit Events
+
+#### ButtonEdit Events
 
 
  The below events are discussed in the event section.
 
-###### ButtonClicked Event
+##### ButtonClicked Event
 
 This event is handled whenever a child button of a ButtonEdit control is clicked. It gives _ClickedButton_ member which lets you customize the button that is clicked. 
 
 The below code changes the alignment of the button that is clicked at runtime.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4409,9 +4400,9 @@ private void buttonEdit2_ButtonClicked(object sender, ButtonClickedEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4425,11 +4416,13 @@ Private Sub buttonEdit2_ButtonClicked(ByVal sender As Object, ByVal e As ButtonC
 
 End Sub
 
-###### Border Events
+{% endhighlight %}
+
+##### Border Events
 
 The below table list the events that are raised for border changes.
 
-_Table_ _145__: Property Table_
+_Table_ _145_: Property Table
 
 <table>
 <tr>
@@ -4447,7 +4440,7 @@ Raised when BorderSides property of ButtonEdit control is changed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4469,9 +4462,9 @@ private void buttonEdit1_BorderSidesChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4489,11 +4482,13 @@ Private Sub buttonEdit1_BorderSidesChanged(ByVal sender As Object, ByVal e As Ev
 
 End Sub
 
-###### ButtonEditChildButton Events
+{% endhighlight %}
+
+##### ButtonEditChildButton Events
 
 The below table list the events that are available for the ButtonEdit Child Buttons control.
 
-_Table_ _146__: Events Table_
+_Table_ _146_: Events Table
 
 <table>
 <tr>
@@ -4533,6 +4528,7 @@ Raised when the mouse pointer rests the control. This event calls HandleChildBut
 BackColorChanged</td><td>
 Raised when BackColor property of the ButtonEdit control is changed. This event calls HandleChildButtonBackColorChanged method. Using this method, we can access the corresponding control and customize it.</td></tr>
 </table>
+
 Click Event
 
 Displaying a Calendar Popup in a ButtonEdit Control
@@ -4543,155 +4539,161 @@ Using CalendarPopup
 
 57. Create an instance of CalendarPopup control.
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.CalendarPopup calendarPop1;
+		private Syncfusion.Windows.Forms.Tools.CalendarPopup calendarPop1;
 
-calendarPop1=new Syncfusion.Windows.Forms.Tools.CalendarPopup ();
+		calendarPop1=new Syncfusion.Windows.Forms.Tools.CalendarPopup ();
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private calendarPop1 As Syncfusion.Windows.Forms.Tools.CalendarPopup
-
-Private calendarPop1 = New Syncfusion.Windows.Forms.Tools.CalendarPopup()
+    ~~~ vbnet
 
 
+
+		Private calendarPop1 As Syncfusion.Windows.Forms.Tools.CalendarPopup
+
+		Private calendarPop1 = New Syncfusion.Windows.Forms.Tools.CalendarPopup()
+
+    ~~~
+    {:.prettyprint }
 
 58. Declare an instance of MonthCalendarAdv control and add it to the CalendarPopup.
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv MonthCal;
+		private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv MonthCal;
 
-MonthCal=new Syncfusion.Windows.Forms.Tools.MonthCalendarAdv();
+		MonthCal=new Syncfusion.Windows.Forms.Tools.MonthCalendarAdv();
 
-this.MonthCal.AutoSize = false;
+		this.MonthCal.AutoSize = false;
 
-calendarPop1.AutoSize = false;
+		calendarPop1.AutoSize = false;
 
-calendarPop1.Size = new Size(200, 200);
+		calendarPop1.Size = new Size(200, 200);
 
-this.MonthCal.Size = new Size(200, 200);
-
-
-
-this.calendarPop1.Controls.Add(MonthCal);
+		this.MonthCal.Size = new Size(200, 200);
 
 
 
-[VB.NET]
+		this.calendarPop1.Controls.Add(MonthCal);
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-Private MonthCal As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
+		Private MonthCal As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
 
-Private MonthCal = New Syncfusion.Windows.Forms.Tools.MonthCalendarAdv()
+		Private MonthCal = New Syncfusion.Windows.Forms.Tools.MonthCalendarAdv()
 
-Me.MonthCal.AutoSize = False
+		Me.MonthCal.AutoSize = False
 
-calendarPop1.AutoSize = False
+		calendarPop1.AutoSize = False
 
-calendarPop1.Size = New Size(200, 200)
+		calendarPop1.Size = New Size(200, 200)
 
-Me.MonthCal.Size = New Size(200, 200)
-
-
-
-Me.calendarPop1.Controls.Add(MonthCal)
+		Me.MonthCal.Size = New Size(200, 200)
 
 
+
+		Me.calendarPop1.Controls.Add(MonthCal)
+
+    ~~~
+    {:.prettyprint }
 
 59. Handle the Click event of buttonEditChildButton1 to display the Calendar as follows.
 
 
 
-[C#]
+    ~~~ cs
 
 
 
-private void buttonEditChildButton1_Click(object sender, System.EventArgs e)
+		private void buttonEditChildButton1_Click(object sender, System.EventArgs e)
 
-{
+		{
 
-this.calendarPop1.Visible =true;
+		this.calendarPop1.Visible =true;
 
-this.calendarPop1.ShowPopup (new Point(200,200));
+		this.calendarPop1.ShowPopup (new Point(200,200));
 
-}
+		}
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
+		Private Sub buttonEditChildButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
+			Me.calendarPop1.Visible = True
 
+			Me.calendarPop1.ShowPopup(New Point(200, 200))
 
-Private Sub buttonEditChildButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+		End Sub
 
-    Me.calendarPop1.Visible = True
-
-    Me.calendarPop1.ShowPopup(New Point(200, 200))
-
-End Sub
-
-
+    ~~~
+    {:.prettyprint }
 
 60. The event DateSelected can also be handled to display the selected date in the textbox of ButtonEdit control.
 
-[C#]
+    ~~~ cs
 
 
 
-this.MonthCal.DateSelected+=new EventHandler(MonthCal_DateSelected);
+		this.MonthCal.DateSelected+=new EventHandler(MonthCal_DateSelected);
 
 
 
-private void MonthCal_DateSelected(object sender,System.EventArgs e)
+		private void MonthCal_DateSelected(object sender,System.EventArgs e)
 
-{
+		{
 
-this.buttonEdit1.TextBox.Text= this.MonthCal.Value.ToString();
+		this.buttonEdit1.TextBox.Text= this.MonthCal.Value.ToString();
 
-}
+		}
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private Me.MonthCal.DateSelected+= New EventHandler(MonthCal_DateSelected)
+    ~~~ vbnet
 
 
 
-Private Sub MonthCal_DateSelected(ByVal sender As Object, ByVal e As System.EventArgs)
-
-    Me.buttonEdit1.TextBox.Text = Me.MonthCal.Value.ToString()
-
-End Sub
+		Private Me.MonthCal.DateSelected+= New EventHandler(MonthCal_DateSelected)
 
 
+
+		Private Sub MonthCal_DateSelected(ByVal sender As Object, ByVal e As System.EventArgs)
+
+			Me.buttonEdit1.TextBox.Text = Me.MonthCal.Value.ToString()
+
+		End Sub
+
+    ~~~
+    {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img97.jpeg)
-{:.image }
 
 
-##### Frequently Asked Questions
+
+#### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-###### How to hide a child button of a ButtonEdit control?
+##### How to hide a child button of a ButtonEdit control?
 
 By calling the ButtonEdit.HideButton method, we can hide a child button. 
 
-_Table_ _147__: Methods Table_
+_Table_ _147_: Methods Table
 
 <table>
 <tr>
@@ -4701,85 +4703,79 @@ Description</td></tr>
 <tr>
 <td>
 HideButton</td><td>
-Indicates whether a child button is hidden or visible. The parameters are,{{ _btnIndex_ | markdownify }} - Specifies the index of the button.{{ _visible_ | markdownify }} - Specifies the visibility of the button. It can be true or false. If true, the button will be visible and if false, the button will not be visible.</td></tr>
+Indicates whether a child button is hidden or visible. The parameters are,{{ '_btnIndex_' | markdownify }} - Specifies the index of the button.{{ '_visible_' | markdownify }} - Specifies the visibility of the button. It can be true or false. If true, the button will be visible and if false, the button will not be visible.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.buttonEdit1.HideButton(0, false);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.buttonEdit1.HideButton(0, False)
 
-###### How to replace the default TextBox in a ButtonEdit control?
+{% endhighlight %}
+
+##### How to replace the default TextBox in a ButtonEdit control?
 
 We can replace the default TextBox of the ButtonEdit control with other TextBox by doing the following steps.
 
 61. Drag a ButtonEdit control and a PercentTextBox control that you would like to replace with the default TextBox of the ButtonEdit control.
 
-![](Editors-Package_images/Editors-Package_img98.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img98.jpeg)
+
 
 
 62. From the property window of ButtonEdit, select the PercentTextBox to be the TextBox control of the ButtonEdit control as shown below. 
 
-![](Editors-Package_images/Editors-Package_img99.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img99.jpeg)
+
 
 
 63. From the same properties window, you can set the percent properties for the ButtonEdit control.
 
-![](Editors-Package_images/Editors-Package_img100.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img100.jpeg)
 
 
-###### How to set tooltip for ButtonEdit Child buttons?
+
+##### How to set tooltip for ButtonEdit Child buttons?
 
  To set tooltip for a child button in a ButtonEdit control, drag and drop a ToolTip control from the toolbox. Text for tooltip is set using the extender property of the particular child button.
 
 ![](Editors-Package_images/Editors-Package_img101.jpeg)
-{:.image }
+
 
 
 We can also set the Tooltip for ButtonEdit control programmatically using its SetToolTip() method.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolTip1.SetToolTip(this.buttonEdit1, "Click here to search");
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolTip1.SetToolTip(Me.buttonEdit1, "Click here to search")
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img102.jpeg)
-{:.image }
 
 
-#### CalculatorControl
+
+### CalculatorControl
 
 The Essential Tools CalculatorControl encapsulates the functionality of a standard calculator. It provides an easy way to implement a complete calculator in your applications. The value of the CalculatorControl in the form is maintained internally and also provides the value in the format required. The CalculatorValue class provides methods to get the value of the CalculatorControl as a String or as a Double Value. It supports Office2007 color schemes.
 
 ![](Editors-Package_images/Editors-Package_img103.png)
-{:.image }
 
 
-##### Features
+
+#### Features
 
 CalculatorControl implements common arithmetic operations and contains following features.
 
@@ -4795,92 +4791,88 @@ See Also
 
 Concepts and Features
 
-###### Creating Calculator control
+##### Creating Calculator control
 
 The Calculator control can be available to the designer by just dragging-and-dropping the Calculator control from the toolbox onto the form. 
 
 ![](Editors-Package_images/Editors-Package_img104.jpeg)
-{:.image }
+
 
 
 It can be created programmatically using the below steps.
 
 64. Include the required namespace.
 
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 65. Declare and create an instance of the Calculator control class.
 
-[C#]
+    ~~~ cs
+
+		private Syncfusion.Windows.Forms.Tools.CalculatorControl calculatorControl1;
 
 
 
-private Syncfusion.Windows.Forms.Tools.CalculatorControl calculatorControl1;
+		// Create an instance of the Calculator control
+
+		this.calculatorControl1 = new CalculatorControl();
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
+
+		Private calculatorControl1 As Syncfusion.Windows.Forms.Tools.CalculatorControl
 
 
 
-// Create an instance of the Calculator control
+		' Create an instance of the Calculator control
 
-this.calculatorControl1 = new CalculatorControl();
+		Me.calculatorControl1 = New CalculatorControl()
 
-
-
-[VB.NET]
-
-
-
-Private calculatorControl1 As Syncfusion.Windows.Forms.Tools.CalculatorControl
-
-
-
-' Create an instance of the Calculator control
-
-Me.calculatorControl1 = New CalculatorControl()
-
-
+    ~~~
+    {:.prettyprint }
 
 66. As the final step, add the Calculator control to the form as follows.
 
-[C#]
+    ~~~ cs
 
 
 
-// Add the CalculatorControl control to the form.
+		// Add the CalculatorControl control to the form.
 
-this.Controls.Add(this.calculatorControl1);
+		this.Controls.Add(this.calculatorControl1);
 
-this.calculatorControl1.Visible=true;
+		this.calculatorControl1.Visible=true;
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-' Add the CalculatorControl control to the form.
-
-Me.Controls.Add(Me.calculatorControl1)
-
-Me.calculatorControl1.Visible=True
+    ~~~ vbnet
 
 
+
+		' Add the CalculatorControl control to the form.
+
+		Me.Controls.Add(Me.calculatorControl1)
+
+		Me.calculatorControl1.Visible=True
+
+    ~~~
+    {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img105.jpeg)
-{:.image }
+
 
 
 See Also
@@ -4889,17 +4881,17 @@ Concepts and Features
 
 
 
-##### Concepts and Features
+#### Concepts and Features
 
 The following topics will help you become more familiar in using the Calculator control. 
 
-###### Display TextBox
+##### Display TextBox
 
 The Calculator control has a display text area on its top corner, which displays all the digits and the calculations performed on the calculator. This display area is displayed by default. To hide this display area, set the ShowDisplayArea property to false. 
 
 The below properties controls the behavior of the display area.
 
-_Table_ _148__: Property Table_
+_Table_ _148_: Property Table
 
 <table>
 <tr>
@@ -4921,7 +4913,7 @@ Sets the value of the Calculator control as double value. The default value is z
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4931,9 +4923,9 @@ this.calculatorControl1.DoubleValue = 5;
 
 this.calculatorControl1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4943,17 +4935,17 @@ Me.calculatorControl1.DoubleValue = 5
 
 Me.calculatorControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img106.jpeg)
-{:.image }
+
 
 
 TextBox Value
 
 The behavior of the TextBox value can be controlled using the below properties.
 
-_Table_ _149__: Property Table_
+_Table_ _149_: Property Table
 
 <table>
 <tr>
@@ -4975,7 +4967,7 @@ Indicates whether the NumberFormatInfo used for formatting will use UseUserOverr
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4985,9 +4977,9 @@ this.calculatorControl1.RepeatAssignAction = true;
 
 this.calculatorControl1.UseUserOverride = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4996,6 +4988,8 @@ Me.calculatorControl1.Culture = New System.Globalization.CultureInfo("en-US")
 Me.calculatorControl1.RepeatAssignAction = True
 
 Me.calculatorControl1.UseUserOverride = True
+
+{% endhighlight %}
 
 See Also
 
@@ -5020,29 +5014,23 @@ The Calculator control can be laid out in the following modes.
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.calculatorControl1.LayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayoutTypes.Financial;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.calculatorControl1.LayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayoutTypes.Financial
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img107.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img108.jpeg)
-{:.image }
- _Note: We can set different button styles for the Calculator control, using CalculatorControl.ButtonStyle property. Refer_ Themes and Button Styles _topic to know more. ButtonStyles can be applied to both the layout modes._
+
+> Note: We can set different button styles for the Calculator control, using CalculatorControl.ButtonStyle property. Refer_ Themes and Button Styles _topic to know more. ButtonStyles can be applied to both the layout modes.
 
 Background Settings
 
@@ -5052,7 +5040,7 @@ Background Color
 
 The background of the Calculator can be painted using the below properties.
 
-_Table_ _150__: Property Table_
+_Table_ _150_: Property Table
 
 <table>
 <tr>
@@ -5070,7 +5058,7 @@ Sets the gradient background for the control. This setting overrides the BackCol
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5078,9 +5066,9 @@ this.calculatorControl1.BackColor = System.Drawing.Color.WhiteSmoke;
 
 this.calculatorControl1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.WhiteSmoke, System.Drawing.Color.SlateGray);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5088,17 +5076,17 @@ Me.calculatorControl1.BackColor = System.Drawing.Color.WhiteSmoke
 
 Me.calculatorControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.WhiteSmoke, System.Drawing.Color.SlateGray)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img109.jpeg)
-{:.image }
+
 
 
 Background Image
 
 The background of the Calculator control can be filled with an image using BackgroundImage property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5106,9 +5094,9 @@ this.calculatorControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetO
 
 this.calculatorControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5116,17 +5104,17 @@ Me.calculatorControl1.BackgroundImage = DirectCast((resources.GetObject("calcula
 
 Me.calculatorControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img110.jpeg)
-{:.image }
+
 
 
 Border Styles
 
 The below property will let you specify the border style for the Calculator control.
 
-_Table_ _151__: Property Table_
+_Table_ _151_: Property Table
 
 <table>
 <tr>
@@ -5136,36 +5124,32 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies the 3D border style for the control. The options are,* {{ _RaisedOuter_ | markdownify }}* {{ _RaisedInner_ | markdownify }}* {{ _SunkenOuter_ | markdownify }}* {{ _SunkenInner_ | markdownify }}* {{ _Raised_ | markdownify }}* {{ _Sunken_ | markdownify }}* {{ _Etched_ | markdownify }}* {{ _Flat_ | markdownify }}* {{ _Adjust_  | markdownify }}* {{ _Bump_ | markdownify }}</td></tr>
+Specifies the 3D border style for the control. The options are,* {{ '_RaisedOuter_' | markdownify }}* {{ '_RaisedInner_' | markdownify }}* {{ '_SunkenOuter_' | markdownify }}* {{ '_SunkenInner_' | markdownify }}* {{ '_Raised_' | markdownify }}* {{ '_Sunken_' | markdownify }}* {{ '_Etched_' | markdownify }}* {{ '_Flat_' | markdownify }}* {{ '_Adjust_'  | markdownify }}* {{ '_Bump_' | markdownify }}</td></tr>
 </table>
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.calculatorControl1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 this.calculatorControl1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img111.jpeg)
-{:.image }
+
 
 
 Button Spacing
 
 The default spacing between the Calculator buttons can be modified by enabling _UseVerticalAndHorizontalSpacing_ property. The below properties controls the horizontal and vertical spacing.
 
-_Table_ _152__: Property Table_
+_Table_ _152_: Property Table
 
 <table>
 <tr>
@@ -5187,7 +5171,7 @@ Sets vertical spacing between buttons. The default value is 10. UseVerticalAndHo
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5197,9 +5181,9 @@ this.calculatorControl1.HorizontalSpacing = 5;
 
 this.calculatorControl1.VerticalSpacing = 5;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5209,17 +5193,17 @@ Me.calculatorControl1.HorizontalSpacing = 5
 
 Me.calculatorControl1.VerticalSpacing = 5
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img112.jpeg)
-{:.image }
+
 
 
 Button Foreground
 
 Using SetButtonFont and SetButtonColor properties, we can set the font style and color for the button text. The button can be identified using CalcActions enumerator.
 
-_Table_ _153__: Methods Table_
+_Table_ _153_: Methods Table
 
 <table>
 <tr>
@@ -5229,15 +5213,15 @@ Description</td></tr>
 <tr>
 <td>
 SetButtonColor</td><td>
-Sets text color for the calculator button. The parameters are,{{ _caCalcButton_ | markdownify }} - The calculator button,{{ _color_ | markdownify }} - The color to set for the button text.</td></tr>
+Sets text color for the calculator button. The parameters are,{{ '_caCalcButton_' | markdownify }} - The calculator button,{{ '_color_' | markdownify }} - The color to set for the button text.</td></tr>
 <tr>
 <td>
 SetButtonFont</td><td>
-Sets the font style for the text in the calculator button. The parameters are, {{ _caCalcButton_ | markdownify }} - The calculator button,{{ _font_ | markdownify }} - The font style for the button text.</td></tr>
+Sets the font style for the text in the calculator button. The parameters are, {{ '_caCalcButton_' | markdownify }} - The calculator button,{{ '_font_' | markdownify }} - The font style for the button text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5245,9 +5229,9 @@ this.calculatorControl1.SetButtonColor(CalcActions.CalcSpecialBackspace, Color.B
 
 this.calculatorControl1.SetButtonFont(CalcActions.CalcSpecialBackspace, new Font("Arial", 9, FontStyle.Bold));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5255,10 +5239,10 @@ Me.calculatorControl1.SetButtonColor(CalcActions.CalcSpecialBackspace, Color.Bla
 
 Me.calculatorControl1.SetButtonFont(CalcActions.CalcSpecialBackspace, New Font("Arial", 9, FontStyle.Bold))
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img113.jpeg)
-{:.image }
+
 
 
 Runtime Features
@@ -5269,7 +5253,7 @@ Keyboard Support
 
 Essential Tools Calculator control does the functionality of a normal calculator, using the Mouse or Keyboard, at run time. The control provides Keyboard equivalents for the Calculator buttons. They are listed in the below table.
 
-_Table_ _154__: Keyboard Support Table_
+_Table_ _154_: Keyboard Support Table
 
 <table>
 <tr>
@@ -5416,24 +5400,20 @@ Button Flat Styles
 
 The flat styles for the button objects in a Calculator control is set using CalculatorControl.FlatStyle property. The styles are Flat, Popup, Standard (default) and System.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img114.jpeg)
-{:.image }
+
 
 
 Themes and Button Styles
@@ -5442,24 +5422,20 @@ Themes for the Calculator control
 
 Essential Tools Calculator control is themed by default. To disable, set ThemesEnabled property to false.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.calculatorControl1.ThemesEnabled = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.calculatorControl1.ThemesEnabled = False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img115.jpeg)
-{:.image }
+
 
 
 Button Styles
@@ -5475,7 +5451,7 @@ The Calculator control supports the below button styles. UseVisualStyle property
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5485,11 +5461,9 @@ this.calculatorControl1.UseVisualStyle = true;
 
 this.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2007;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.calculatorControl1.UseVisualStyle = True
 
@@ -5497,62 +5471,54 @@ Me.calculatorControl1.UseVisualStyle = True
 
 this.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2007;
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img116.jpeg)
-{:.image }
+
 
 
 OfficeColor Schemes
 
 Essential Tools Calculator control supports all the three OfficeColorSchemes. When the ButtonStyle is set to Office2007 style, the color schemes will be blue by default. It can be modified using Office2007Theme property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img117.png)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the Calculator control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 
 Office2007Colors.ApplyManagedColors(this, Color.Navy);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 
 Office2007Colors.ApplyManagedColors(Me, Color.Navy)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img118.jpeg)
-{:.image }
+
 
 
 Popup CalculatorControl
@@ -5561,9 +5527,7 @@ The PopupCalculator class can be used to display a popup Calculator control. Thi
 
 The PopupCalculator control lets you embed a Calculator control object to a button for example. Drop the button onto the form and add the following code snippet.
 
-[C#]
-
-
+{% highlight c# %}
 
 private Syncfusion.Windows.Forms.Tools.PopupCalculator popupCalculator1;
 
@@ -5603,9 +5567,9 @@ private void buttonAdv1_Click(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5645,13 +5609,13 @@ Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img119.jpeg)
-{:.image }
 
 
-###### Calculator Events
+
+##### Calculator Events
 
 The event for Calculator control and PopupCalculator control are discussed in this section.
 
@@ -5661,7 +5625,7 @@ The ValueCalculated event fires each time the value of the CalculatorControl is 
 
 The event  handler receives an argument of type CalculatorValueCalculatedEventArgs. To get the final result, use LastAction property of the CalculatorValueCalculatedEventArgs in the ValueCalculated event. 
 
-_Table_ _155__: Methods Table_
+_Table_ _155_: Methods Table_
 
 <table>
 <tr>
@@ -5693,7 +5657,7 @@ Gets/Sets the CalculatorValue object that contains the value of the Calculator c
 
 We can retrieve the value of the Calculator control after '=' button is pressed using the following code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5709,9 +5673,9 @@ MessageBox.Show(calcctrl.Value.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5729,10 +5693,10 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img120.jpeg)
-{:.image }
+
 
 
 Closing Event
@@ -5741,7 +5705,7 @@ Closing Event of the PopupCalculator control
 
 This will be raised by popupCalculator when closing after "=" button was clicked. We can implement this event to display the final value of the Calculator control as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5763,9 +5727,9 @@ Console.WriteLine(eventlogmessage);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5785,13 +5749,14 @@ Public Sub HandlePopupCalculatorClosingEvent(ByVal sender As Object, ByVal args 
 
 End Sub
 
+{% endhighlight %}
 
 
 ![](Editors-Package_images/Editors-Package_img121.jpeg)
-{:.image }
 
 
-###### Frequently Asked Questions
+
+##### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
@@ -5800,12 +5765,12 @@ How to customize the calculator display text area to use NumberGroupSeparator?
 The calculator control by default does not allow the use of NumberGroupSeparator like in DoubleTextBox. 
 
 ![](Editors-Package_images/Editors-Package_img122.jpeg)
-{:.image }
+
 
 
 So to achieve this we need to derive the CalculatorControl and override the CreateCalculatorDisplayBox() method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5841,9 +5806,9 @@ public class CalculatorAdv : Syncfusion.Windows.Forms.Tools.CalculatorControl
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5877,17 +5842,17 @@ Public Class CalculatorAdv
 
 End Class
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img123.jpeg)
-{:.image }
+
 
 
 How to Simulate a Particular button in the Calculator?
 
 We can use Calculator.ButtonAction() method for this. When the user clicks the button, the ButtonAction method of the Calculator control will call back the action of the particular button (in this example it is "=" button) and displays the result in the textbox area, using CalcActions Enumerator. This enumerator has all the actions that can be assigned to the calculator buttons including digits and arithmetic operators also.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5901,9 +5866,9 @@ private void buttonAdv1_Click(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5917,19 +5882,21 @@ Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As System.EventArgs
 
 End Sub
 
-### CalendarDateTime Controls
+{% endhighlight %}
+
+## CalendarDateTime Controls
 
 Syncfusion CalendarDateTime controls are discussed below.
 
-##### MonthCalendarAdv
+### MonthCalendarAdv
 
 The Essential Tools MonthCalendarAdvcontrol is an advanced calendar control that can display all the month of the year with the appropriate culture information for the months and days of the week. A wide variety of visual styles can be applied to the MonthCalendarAdv, to enhance the appearance of the control. This also includes the new Microsoft Office 2007 Style for all the child controls of the MonthCalendarAdv, such as the UpDown Spin Button, DropDown button of DateTimePickerAdv, ScrollButton, TodayButton and None button. 
 
 ![](Editors-Package_images/Editors-Package_img124.jpeg)
-{:.image }
 
 
-###### Features
+
+#### Features
 
 The features of MonthCalendarAdv control are as follows.
 
@@ -5945,14 +5912,14 @@ See Also
 
 Concepts and Features
 
-###### MonthCalendarAdv
+#### MonthCalendarAdv
 
 Sections of MonthCalendarAdv control
 
 The following figure displays the sections of MonthCalendarAdv control.
 
 ![](Editors-Package_images/Editors-Package_img125.jpeg)
-{:.image }
+
 
 
 * Calendar Header - Header for the MonthCalendarAdv. See Header Settings.
@@ -5969,101 +5936,105 @@ See Also
 
 Concepts and Features
 
-###### Creating MonthCalendarAdv
+#### Creating MonthCalendarAdv
 
 We can just drag and drop the MonthCalendarAdv onto the form through designer and can access their properties through the property grid. 
 
 ![](Editors-Package_images/Editors-Package_img126.jpeg)
-{:.image }
+
 
 
 To create the control programmatically, follow the below steps.
 
 67. Include the required namespace.
 
-[C#]
+    ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
 
 
-[VB.NET]
+    ~~~
+    {:.prettyprint }
+   
+    ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+    ~~~
+    {:.prettyprint }
 
 68. Create an instance of the MonthCalendarAdv control. 
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv monthCalendarAdv1;
+		private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv monthCalendarAdv1;
 
-this.monthCalendarAdv1=new MonthCalendarAdv();
+		this.monthCalendarAdv1=new MonthCalendarAdv();
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private monthCalendarAdv1 As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
-
-Me.monthCalendarAdv1 = New MonthCalendarAdv()
+    ~~~ vbnet
 
 
+
+		Private monthCalendarAdv1 As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
+
+		Me.monthCalendarAdv1 = New MonthCalendarAdv()
+
+    ~~~
+    {:.prettyprint }
 
 69. Set the visual style for the control. Add that instance to the Form.
 
-[C#]
+    ~~~ cs
 
 
 
-this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+		this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
-this.Controls.Add(this.monthCalendarAdv1);
+		this.Controls.Add(this.monthCalendarAdv1);
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
+		Me.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
+		Me.Controls.Add(Me.monthCalendarAdv1)
 
-
-Me.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
-
-Me.Controls.Add(Me.monthCalendarAdv1)
-
-
+    ~~~
+    {:.prettyprint }
 
 70. Run the application.
 
 ![](Editors-Package_images/Editors-Package_img127.jpeg)
-{:.image }
+
 
 
 See Also
 
 Concepts and Features
 
-###### Concepts and Features
+#### Concepts and Features
 
 This section discusses the concepts of MonthCalendarAdv in some commonly used scenarios.
 
-Calendar Appearance
+##### Calendar Appearance
 
 This section comprises the appearance settings under the following topics:
 
-Border Styles
+###### Border Styles
 
 Border for a MonthCalendarAdv control can be in 2D or 3D modes. The below properties controls the border settings for the MonthCalendarAdv control. 
 
-_Table_ _156__: Property Table_
+_Table_ _156_: Property Table
 
 <table>
 <tr>
@@ -6073,15 +6044,15 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies whether the control should have a 2D or a 3D border. The options are,{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None (default)._ | markdownify }}</td></tr>
+Specifies whether the control should have a 2D or a 3D border. The options are,{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style for the MonthCalendarAdv control, when the BorderStyle=Fixed3D. The styles are,{{ _Raised,_  | markdownify }}{{ _RaisedOuter,_  | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _Sunken (default),_  | markdownify }}{{ _SunkenOuter,_  | markdownify }}{{ _SunkenInner,_  | markdownify }}{{ _Etched,_  | markdownify }}{{ _Bump,_  | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}</td></tr>
+Sets 3D border style for the MonthCalendarAdv control, when the BorderStyle=Fixed3D. The styles are,{{ '_Raised,_'  | markdownify}}{{ '_RaisedOuter,_'  | markdownify}}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_'   | markdownify }}{{ '_SunkenOuter,_'  | markdownify}}{{ '_SunkenInner,_'   | markdownify }}{{ '_Etched,_'  | markdownify}}{{ '_Bump,_'   | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the sides of the control which can have a border. The sides options are,{{ _Left,_  | markdownify }}{{ _Top,_  | markdownify }}{{ _Right,_  | markdownify }}{{ _Bottom,_  | markdownify }}{{ _Middle and_ | markdownify }}{{ _All (default)._ | markdownify }}</td></tr>
+Specifies the sides of the control which can have a border. The sides options are,{{ '_Left,_'  | markdownify }}{{ '_Top,_'  | markdownify }}{{ '_Right,_'  | markdownify }}{{ '_Bottom,_'  | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -6089,289 +6060,21 @@ Specifies the 2D border color when BorderStyle="FixedSingle".</td></tr>
 </table>
 
 
-[C#]
-
-
-
-//Setting 3D border style 
-
-this.monthCalendarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-
-//Setting "SunkenInner" 3D border style
-
-this.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
-
-
-
-[VB.NET]
-
-
-
-'Setting 3D border style 
-
-Me.monthCalendarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-
-'Setting "SunkenInner" 3D border style
-
-Me.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner
-
-
-
-![](Editors-Package_images/Editors-Package_img128.jpeg)
-{:.image }
-
-
-> ![](Editors-Package_images/Editors-Package_img129.jpeg)
-{:.image }
- _Note: MonthCalendarAdv.ThemedBorder property should be set to false to make the 3D border setting effective. Refer_ Visual Settings.
-
-> 
-
-[C#]
-
-
-
-//Setting border to "All" sides
-
-this.monthCalendarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All;
-
-//Setting color for 2D border
-
-this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue;
-
-
-
-[VB.NET]
-
-
-
-'Setting border to "All" sides
-
-Me.monthCalendarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
-
-'Setting color for 2D border
-
-this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue
-
-
-
-![](Editors-Package_images/Editors-Package_img130.jpeg)
-{:.image }
-
-
-See Also
-
-Background Settings, Visual Settings
-
-Background Settings
-
-Background image for the MonthCalendarAdv is specified in BackgroundImage property.
-
-[C#]
-
-
-
-this.monthCalendarAdv1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("monthCalendarAdv1.BackgroundImage")));
-
-this.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-
-
-
-[VB.NET]
-
-
-
-Me.monthCalendarAdv1.BackgroundImage = DirectCast((resources.GetObject("monthCalendarAdv1.BackgroundImage")), System.Drawing.Image) 
-
-Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch 
-
-
-
-![](Editors-Package_images/Editors-Package_img131.jpeg)
-{:.image }
-
-
-See Also
-
-Border Styles, Visual Settings
-
-Visual Settings
-
-Themes for MonthCalendarAdv
-
-Some sections of the MonthCalendarAdv control are themed by default. The below table list the properties which controls the themed behavior border, grid and scroll buttons.
-
-_Table_ _157__: Property Table_
-
-<table>
-<tr>
-<td>
-MonthCalendarAdv Properties</td><td>
-Description</td></tr>
-<tr>
-<td>
-ThemedBorder</td><td>
-Specifies whether the border of the control is themed. By default it is true.</td></tr>
-<tr>
-<td>
-ThemedEnabledGrid</td><td>
-Specifies whether the grid holding the days is themed or not. By default it is false.</td></tr>
-<tr>
-<td>
-ThemedEnabledScrollButtons</td><td>
-Specifies whether the scroll buttons are themed. It is set to true by default.</td></tr>
-</table>
-
-
-[C#]
-
-
-
-this.monthCalendarAdv1.ThemedBorder = true;
-
-this.monthCalendarAdv1.ThemedEnabledGrid = true;
-
-this.monthCalendarAdv1.ThemedEnabledScrollButtons = true;
-
-
-
-[VB.NET]
-
-
-
-Me.monthCalendarAdv1.ThemedBorder = True
-
-Me.monthCalendarAdv1.ThemedEnabledGrid = True
-
-Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
-
-
-
-![](Editors-Package_images/Editors-Package_img132.jpeg)
-{:.image }
-
-
-Styles 
-
-MonthCalendarAdv supports the styles in the below table, which can be set through Style property.
-
-_Table_ _158__: Property Table_
-
-<table>
-<tr>
-<td>
-MonthCalendarAdv Property</td><td>
-Description</td></tr>
-<tr>
-<td>
-Style</td><td>
-Gets or Sets the visual style of the MonthCalendarAdv. The options are {{ _Default_ | markdownify }}{{ _OfficeXP_ | markdownify }}{{ _Office2003_ | markdownify }}{{ _VS2005_ | markdownify }}{{ _Office2007_ | markdownify }}The default value is 'Default'.</td></tr>
-</table>
-
-
-[C#]
-
-
-
-// Sample code for setting Office2003 style for MonthCalendarAdv
-
-this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003;
-
-
-
-[VB.NET]
-
-
-
-' Sample code for setting Office2003 style for MonthCalendarAdv
-
-Me.monthCalendarAdv1.Style  = Syncfusion.Windows.Forms.VisualStyle.Office2003
-
-
-
-![](Editors-Package_images/Editors-Package_img133.jpeg)
-{:.image }
-
-
-
-
-[C#]
-
-
-
-//Sets the Color scheme as Silver when the style is Office2007
-
-this.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-
-
-
-[VB.NET]
-
-
-
-'Sets the Color scheme as Silver when the style is Office2007
-
-Me.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
-
-
-
-![](Editors-Package_images/Editors-Package_img134.jpeg)
-{:.image }
-
-
-Custom Colors
-
-We can also apply custom colors to the MonthCalendarAdv control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
-
-[C#]
-
-
-
-this.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
-Office2007Colors.ApplyManagedColors(this, Color.Orange);
-
-
-
-[VB.NET]
-
-
-
-Me.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
-Office2007Colors.ApplyManagedColors(Me, Color.Orange)
-
-
-
-![](Editors-Package_images/Editors-Package_img135.jpeg)
-{:.image }
-
-
-> ![](Editors-Package_images/Editors-Package_img136.jpeg)
-{:.image }
- _Note: Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See_ Scroll Buttons.
-
-> Scroll Buttons.
-
-See Also
-
-Border Styles, Background Settings
-
-Customizing sections of Calendar
+##### Customizing sections of Calendar
 
 This section comprises the following:
 
-Grid Settings
+###### Grid Settings
 
 In the MonthCalendarAdv control, the dates of a month is placed inside a grid and the dates are separated using grid lines.
 
 ![](Editors-Package_images/Editors-Package_img137.jpeg)
-{:.image }
+
 
 
 The below properties lets you to change the default appearance of the grid in the MonthCalendarAdv.
 
-_Table_ _159__: Property Table_
+_Table_ _159_: Property Table
 
 <table>
 <tr>
@@ -6385,11 +6088,11 @@ Gets or Sets the back color of the Grid.</td></tr>
 <tr>
 <td>
 GridLines</td><td>
-Gets or Sets the style of the Grid lines. The options are* {{ _NotSet_ | markdownify }}* {{ _None_ | markdownify }}* {{ _Dashed_ | markdownify }}* {{ _Dotted_ | markdownify }}* {{ _DashDot_ | markdownify }}* {{ _DashDotDot_ | markdownify }}* {{ _Solid_ | markdownify }}* {{ _Standard_ | markdownify }}<br>The default value is 'Dotted'.</td></tr>
+Gets or Sets the style of the Grid lines. The options are* {{ '_NotSet_' | markdownify }}* {{ '_None_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_DashDot_' | markdownify }}* {{ '_DashDotDot_' | markdownify }}* {{ '_Solid_' | markdownify }}* {{ '_Standard_' | markdownify }}<br>The default value is 'Dotted'.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6397,9 +6100,9 @@ this.monthCalendarAdv1.GridBackColor = System.Drawing.Color.FloralWhite;
 
 this.monthCalendarAdv1.GridLines = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Dashed;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6407,10 +6110,10 @@ Me.monthCalendarAdv1.GridBackColor = System.Drawing.Color.FloralWhite
 
 Me.monthCalendarAdv1.GridLines = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Dashed
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img138.jpeg)
-{:.image }
+
 
 
 Header Settings
@@ -6421,7 +6124,7 @@ Gradient Background
 
 Gradient background can be set for the header using the below properties.
 
-_Table_ _160__: Property Table_
+_Table_ _160_: Property Table
 
 <table>
 <tr>
@@ -6447,7 +6150,7 @@ When HeadGradient property is set to true, vertical gradient style will be appli
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6459,9 +6162,9 @@ this.monthCalendarAdv1.HeaderEndColor = System.Drawing.Color.SteelBlue;
 
 this.monthCalendarAdv1.HeaderStartColor = System.Drawing.Color.AliceBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6473,17 +6176,17 @@ Me.monthCalendarAdv1.HeaderEndColor = System.Drawing.Color.SteelBlue
 
 Me.monthCalendarAdv1.HeaderStartColor = System.Drawing.Color.AliceBlue
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img139.jpeg)
-{:.image }
+
 
 
 Foreground Settings
 
 The font style and fore color of the header text can be specified through HeaderFont and HeadForeColor properties.
 
-_Table_ _161__: Property Table_
+_Table_ _161_: Property Table
 
 <table>
 <tr>
@@ -6501,7 +6204,7 @@ Specifies the fore color of the header.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6509,9 +6212,9 @@ this.monthCalendarAdv1.HeaderFont = new System.Drawing.Font("Arial", 9F, System.
 
 this.monthCalendarAdv1.HeadForeColor = System.Drawing.Color.Navy;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6519,17 +6222,17 @@ Me.monthCalendarAdv1.HeaderFont = New System.Drawing.Font("Arial", 9F, System.Dr
 
 Me.monthCalendarAdv1.HeadForeColor = System.Drawing.Color.Navy
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img140.jpeg)
-{:.image }
+
 
 
 Height and Image for Header
 
 The height of the header can be increased or decreased using HeaderHeight property. Header can also host an image in its background using HeaderImage property.
 
-_Table_ _162__: Property Table_
+_Table_ _162_: Property Table
 
 <table>
 <tr>
@@ -6547,7 +6250,7 @@ Specifies the image of the header.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6555,9 +6258,9 @@ this.monthCalendarAdv1.HeaderImage = ((System.Drawing.Image)(resources.GetObject
 
 this.monthCalendarAdv1.HeaderHeight = 30;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6565,13 +6268,13 @@ Me.monthCalendarAdv1.HeaderImage = DirectCast((resources.GetObject("monthCalenda
 
 Me.monthCalendarAdv1.HeaderHeight = 30
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img141.jpeg)
-{:.image }
 
 
-Week Numbers
+
+###### Week Numbers
 
 MonthCalendarAdv control can display unique week numbers for all the weeks in a year. This section discusses the properties which can customize the appearance of the week numbers.
 
@@ -6579,7 +6282,7 @@ Foreground Settings
 
 By default, week numbers will not be shown in the calendar. ShowWeekNumbers property should be set to true to display the week numbers. The font and fore color can be set using the below properties.
 
-_Table_ _163__: Property Table_
+_Table_ _163_: Property Table
 
 <table>
 <tr>
@@ -6597,7 +6300,7 @@ Gets or sets the text color for week numbers column.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6607,9 +6310,9 @@ this.monthCalendarAdv1.WeekFont = new System.Drawing.Font("Courier New", 9F, Sys
 
 this.monthCalendarAdv1.WeekTextColor = System.Drawing.Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6619,10 +6322,10 @@ Me.monthCalendarAdv1.WeekFont = New System.Drawing.Font("Courier New", 9F, Syste
 
 Me.monthCalendarAdv1.WeekTextColor = System.Drawing.Color.Blue 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img142.jpeg)
-{:.image }
+
 
 
 Gradient Background
@@ -6631,27 +6334,27 @@ By default the week numbers column has a gradient background. To customize the b
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.monthCalendarAdv1.WeekInterior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.AliceBlue, System.Drawing.Color.LightSteelBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.monthCalendarAdv1.WeekInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.AliceBlue, System.Drawing.Color.LightSteelBlue) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img143.jpeg)
-{:.image }
 
 
-Day Settings
+
+###### Day Settings
 
 MonthCalendarAdv has properties to customize the days displayed in the calendar. This section discusses those properties.
 
@@ -6659,7 +6362,7 @@ Foreground Settings
 
 The below properties deals with the foreground appearance of the dates.
 
-_Table_ _164__: Property Table_
+_Table_ _164_: Property Table
 
 <table>
 <tr>
@@ -6685,7 +6388,7 @@ Specifies the fore color of the day names.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6697,9 +6400,9 @@ this.monthCalendarAdv1.DaysColor = System.Drawing.SystemColors.HotTrack;
 
 this.monthCalendarAdv1.DaysFont = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6711,17 +6414,17 @@ Me.monthCalendarAdv1.DaysColor = System.Drawing.SystemColors.HotTrack
 
 Me.monthCalendarAdv1.DaysFont = New System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img144.jpeg)
-{:.image }
+
 
 
 Height and Day Names Format
 
 The height of the day header and the day name formats are specified using below properties.
 
-_Table_ _165__: Property Table_
+_Table_ _165_: Property Table
 
 <table>
 <tr>
@@ -6739,7 +6442,7 @@ Specifies whether shortest day names are used or not. by default it is true.</td
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6747,9 +6450,9 @@ this.monthCalendarAdv1.DayNamesHeight = 22;
 
 this.monthCalendarAdv1.UseShortestDayNames = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6757,60 +6460,52 @@ Me.monthCalendarAdv1.DayNamesHeight = 22
 
 Me.monthCalendarAdv1.UseShortestDayNames = False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img145.jpeg)
-{:.image }
+
 
 
 Gradient Background for Day Header
 
 By default the day's header has a gradient background. We can change the default background style using DaysHeaderInterior property. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.monthCalendarAdv1.DaysHeaderInterior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.AntiqueWhite, System.Drawing.Color.SandyBrown);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.monthCalendarAdv1.DaysHeaderInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.AntiqueWhite, System.Drawing.Color.SandyBrown)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img146.jpeg)
-{:.image }
+
 
 
 Today's Date 
 
 The fore color for Today's date is set using TodayFontColor property. Using Today button at the bottom of the control, today's date can be focussed. See Buttons for details.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.monthCalendarAdv1.TodayFontColor = System.Drawing.Color.Crimson;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.monthCalendarAdv1.TodayFontColor = System.Drawing.Color.Crimson
 
-
+{% endhighlight %}
 
 The today's date for the below calendar image is "eighteenth".
 
 ![](Editors-Package_images/Editors-Package_img147.jpeg)
-{:.image }
+
 
 
 See Also 
@@ -6825,35 +6520,31 @@ Highlighting the dates
 
 We can highlight the selected date using HighlightColor property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.monthCalendarAdv1.HighlightColor = System.Drawing.Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.monthCalendarAdv1.HighlightColor = System.Drawing.Color.Blue
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img148.jpeg)
-{:.image }
 
 
 
 
-_Figure_ _232__: HighlightColor = "Blue"_
+
+_Figure_ _232_: HighlightColor = "Blue"
 
 Alignment and Wrapping of text
 
 The alignment and text wrapping of the dates inside the grid cells is controlled using the below properties.
 
-_Table_ _166__: Property Table_
+_Table_ _166_: Property Table
 
 <table>
 <tr>
@@ -6863,11 +6554,11 @@ Description</td></tr>
 <tr>
 <td>
 HorizontalAlignment</td><td>
-Specifies the horizontal alignment of the dates inside a grid cell. The options are,{{ _Left,_  | markdownify }}{{ _Center and_  | markdownify }}{{ _Right._ | markdownify }}</td></tr>
+Specifies the horizontal alignment of the dates inside a grid cell. The options are,{{ '_Left,_'  | markdownify }}{{ '_Center and_'  | markdownify }}{{ '_Right._' | markdownify }}</td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
-Specifies the vertical alignment of the dates inside a grid cell. The options are,{{ _Top,_  | markdownify }}{{ _Middle and_  | markdownify }}{{ _Bottom._ | markdownify }}</td></tr>
+Specifies the vertical alignment of the dates inside a grid cell. The options are,{{ '_Top,_'  | markdownify }}{{ '_Middle and_'  | markdownify }}{{ '_Bottom._' | markdownify }}</td></tr>
 <tr>
 <td>
 WrapText</td><td>
@@ -6875,7 +6566,7 @@ Indicates whether the grid can wrap the text inside grid cells. By default, it i
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6885,9 +6576,9 @@ this.monthCalendarAdv1.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVer
 
 this.monthCalendarAdv1.WrapText = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6897,17 +6588,17 @@ Me.monthCalendarAdv1.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerti
 
 Me.monthCalendarAdv1.WrapText = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img149.jpeg)
-{:.image }
+
 
 
 See Also
 
 Today's Date
 
-Buttons
+###### Buttons
 
 The MonthCalendarAdv control contains the below buttons. 
 
@@ -6920,7 +6611,7 @@ To know about the placement of these buttons in the control, refer MonthCalendar
 
 Today and None buttons are displayed at the bottom of the calendar and they can be customized to set background image and font styles. This section will discuss the properties which controls the appearance and behavior of the MonthCalendarAdv.
 
-_Table_ _167__: Property Table_
+_Table_ _167_: Property Table
 
 <table>
 <tr>
@@ -6945,10 +6636,10 @@ Customizing Today and None Buttons
 The "Today" and "None" buttons are like Essential Tools ButtonAdv controls and they support all the properties of ButtonAdv control. You can access those properties using MonthCalendarAdv.NoneButton.Visible which controls the visibility (for example).
 
 ![](Editors-Package_images/Editors-Package_img150.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -6958,9 +6649,9 @@ monthCalendarAdv1.TodayButton.Visible=false;
 
 monthCalendarAdv1.NoneButton.Visible=false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6970,10 +6661,10 @@ monthCalendarAdv1.TodayButton.Visible=False
 
 monthCalendarAdv1.NoneButton.Visible=False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img151.jpeg)
-{:.image }
+
 
 
 See Also
@@ -6986,7 +6677,7 @@ Scroll Button images
 
 The default scroll button images can be replaced with custom images using the LeftScrollButtonImage and RightScrollButtonImage properties. The properties related to scroll buttons are as follows.
 
-_Table_ _168__: Property Table_
+_Table_ _168_: Property Table
 
 <table>
 <tr>
@@ -7012,7 +6703,7 @@ Specifies the size of the scroll buttons.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7024,9 +6715,9 @@ this.monthCalendarAdv1.ScrollButtonSize = new System.Drawing.Size(30, 25);
 
 this.monthCalendarAdv1.StretchScrollImage = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7038,23 +6729,23 @@ Me.monthCalendarAdv1.ScrollButtonSize = New System.Drawing.Size(30, 25)
 
 Me.monthCalendarAdv1.StretchScrollImage = False 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img152.jpeg)
-{:.image }
 
 
-Runtime Features
+
+##### Runtime Features
 
 This section covers the below topics:
 
-Selecting a Date
+###### Selecting a Date
 
 Range of Selection
 
 The minimum and maximum date selectable by the calendar can be specified using MinValue and MaxValue properties. (This is similar to MinDate and MaxDate of windows MonthCalendar control).
 
-_Table_ _169__: Property Table_
+_Table_ _169_: Property Table
 
 <table>
 <tr>
@@ -7076,7 +6767,7 @@ Specifies the maximum value selectable by the calendar.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7086,9 +6777,9 @@ this.monthCalendarAdv1.MinValue = new System.DateTime(2000, 2, 21, 0, 0, 0, 0);
 
 this.monthCalendarAdv1.MaxValue = new System.DateTime(2008, 2, 21, 0, 0, 0, 0);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7098,23 +6789,21 @@ Me.monthCalendarAdv1.MinValue = New System.DateTime(2000, 2, 21, 0, 0, 0, 0)
 
 Me.monthCalendarAdv1.MaxValue = New System.DateTime(2008, 2, 21, 0, 0, 0, 0)
 
-
+{% endhighlight %}
 
 When we drag and drop a MonthCalendarAdv control, current system date, i.e, today's date will be selected by default. To change the selected date, DateTime Collection Editor is used, which is invoked using SelectedDates property. 
 
 ![](Editors-Package_images/Editors-Package_img153.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img154.jpeg)
-{:.image }
- _Note: It is possible to set color for the highlighted date. See_ Text Settings _topic for details._
+
+> Note: It is possible to set color for the highlighted date. See_ Text Settings _topic for details.
 
 Multiple Selection at run time
 
 It is possible to enable multiple selection of the dates at run time. The below properties enables multiple selection. 
 
-_Table_ _170__: Property Table_
+_Table_ _170_: Property Table
 
 <table>
 <tr>
@@ -7132,7 +6821,7 @@ Indicates whether selection of dates are allowed using mouse down and dragging a
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7140,9 +6829,9 @@ this.monthCalendarAdv1.AllowMultipleSelection = true;
 
 this.monthCalendarAdv1.MouseDragMultiselect = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7150,17 +6839,17 @@ this.monthCalendarAdv1.AllowMultipleSelection = True
 
 Me.monthCalendarAdv1.MouseDragMultiselect = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img155.jpeg)
-{:.image }
+
 
 
 Select Date Range Programmatically
 
 Using the SelectedDates property, range of dates can be selected in the MonthCalendarAdv control. The dates should be given in array format using the DateTime Array list. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7168,9 +6857,9 @@ DateTime[] dateTimes = new DateTime[] { new DateTime(2010, 11, 2), new DateTime(
 
 DateTime[] dateTotal = new DateTime[] { };
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7178,51 +6867,47 @@ Dim dateTimes As DateTime() = New DateTime() {New DateTime(2010, 11, 2), New Dat
 
 Me.monthCalendarAdv1.SelectedDates = dateTimes
 
+{% endhighlight %}
+
 Dates should be specified in the DataTime Array List. Then the DateTime Array list should be declared to the SelectedDates Property. This would select the dates that are in the DateTime Array list. 
 
 ![](Editors-Package_images/Editors-Package_img156.png)
-{:.image }
 
 
-> ![Description: http://help.syncfusion.com/ug_84/User%20Interface/Windows%20Forms/Tools/ImagesExt/image86_1.jpg](Editors-Package_images/Editors-Package_img157.jpeg)
-{:.image }
- _Note: Date range should be specified manually in the DateTime Array list._
 
-Month Settings
+> Note: Date range should be specified manually in the DateTime Array list.
+
+###### Month Settings
 
 Navigation at RunTime
 
 At run time, you have options to move to the next month or previous month using the left or right scroll buttons and also using the context menu displayed, when you click on the month of the calendar. To specify images for individual months in the menu, use MonthImageList property.
 
 ![](Editors-Package_images/Editors-Package_img158.jpeg)
-{:.image }
 
 
-[C#]
 
-
+{% highlight c# %}
 
 this.monthCalendarAdv1.MonthImageList = this.imageList1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.monthCalendarAdv1.MonthImageList = Me.imageList1
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img159.jpeg)
-{:.image }
+
 
 
 Foreground Color for Inactive Months
 
 The below property sets the color for the inactive months.
 
-_Table_ _171__: Property Table_
+_Table_ _171_: Property Table
 
 <table>
 <tr>
@@ -7236,51 +6921,43 @@ The previous or next month dates of the current month will be inactive in the Mo
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.monthCalendarAdv1.InactiveMonthColor = System.Drawing.Color.InactiveCaptionText;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.monthCalendarAdv1.InactiveMonthColor = System.Drawing.Color.InactiveCaptionText
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img160.jpeg)
-{:.image }
+
 
 
 First Day of the Week
 
 MonthCalendarAdv lets you specify the first day to be displayed in a week using FirstDayOfWeek property. Default will be Sunday.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.monthCalendarAdv1.FirstDayOfWeek = Day.Monday;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.monthCalendarAdv1.FirstDayOfWeek = Day.Monday
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img161.jpeg)
-{:.image }
 
 
-Interactive Features
+
+###### Interactive Features
 
 This section covers the below topics:
 
@@ -7289,14 +6966,14 @@ Context Menu
 This section deals with replacing MonthCalendarAdv 'Go to Today' ContextMenu with a Custom Context Menu. At run-time, you can right click any calendar date and go to the today date using 'Go to Today' ContextMenu.
 
 ![](Editors-Package_images/Editors-Package_img162.jpeg)
-{:.image }
+
 
 
 This is the default context menu. To replace this with a custom context menu, you need to derive a Custom MonthCalendarAdv from the existing one and override the InitializeGrid so that the GetInternalGridControl method can be used to access the ContextMenu and replace it with a custom contextMenu.
 
 It can be done programmatically using the below code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7380,9 +7057,9 @@ public class CustomMonthCalendarAdv : Syncfusion.Windows.Forms.Tools.MonthCalend
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7456,49 +7133,49 @@ Public Class CustomMonthCalendarAdv
 
 End Class
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img163.jpeg)
-{:.image }
+
 
 
 ToolTips
 
 Tooltips can be set using DateCellQueryInfo event.
 
-Globalization
+##### Globalization
 
 MonthCalendarAdv supports globalization through MonthCalendarAdv.Culture property.
 
 ![](Editors-Package_images/Editors-Package_img164.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
 this.monthCalendarAdv1.Culture = new System.Globalization.CultureInfo("fr-FR");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.monthCalendarAdv1.Culture = New System.Globalization.CultureInfo("fr-FR")
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img165.jpeg)
-{:.image }
 
 
-###### Event Handling
+
+#### Event Handling
 
 MonthCalendarAdv triggers events whenever the date is selected and changed. The most widely used events are discussed as follows.
 
-_Table_ _172__: Events Table_
+_Table_ _172_: Events Table
 
 <table>
 <tr>
@@ -7562,7 +7239,7 @@ DateCellQueryInfo Event
 
 This event is handled to provide custom formatting for calendar cells. 
 
-_Table_ _173__: Members Table_
+_Table_ _173_: Members Table_
 
 <table>
 <tr>
@@ -7606,7 +7283,7 @@ Example
 
 You can use this style parameter to set tooltips for MonthCalendarAdv control as follows. This example uses IsCurrentCell, IsOutsideRange, ColIndex and Handled members.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7662,9 +7339,9 @@ private void monthCalendarAdv1_DateCellQueryInfo(object sender,DateCellQueryI
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7714,24 +7391,22 @@ Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, By
 
 End Sub
 
+{% endhighlight %}
 
-
-> ![](Editors-Package_images/Editors-Package_img166.jpeg)
-{:.image }
- _Note:_ 
-
-*  In Fig 1, 18th is identified as the current cell and the tooltip is displayed. Also the background of the current cell is painted with LightSteelBlue.
-*  Edges of the 4th column cells (ColIndex=4), other than the current cell are set to "Raised" and hence shows a raised appearance.
-*  In Fig 2, user tries to query the cells outside the range, i.e inactive month dates and the respective tooltip is displayed.
+> Note: 
+>
+> *  In Fig 1, 18th is identified as the current cell and the tooltip is displayed. Also the background of the current cell is painted with LightSteelBlue.
+> *  Edges of the 4th column cells (ColIndex=4), other than the current cell are set to "Raised" and hence shows a raised appearance.
+> *  In Fig 2, user tries to query the cells outside the range, i.e inactive month dates and the respective tooltip is displayed.
 
 ![](Editors-Package_images/Editors-Package_img167.jpeg)
-{:.image }
+
 
 
 
 
 ![](Editors-Package_images/Editors-Package_img168.jpeg)
-{:.image }
+
 
 
 See Also
@@ -7742,7 +7417,7 @@ DateHover Event
 
 This event is handled when mouse hover on the calendar cells and to assign SuperToolTip for calender cells.
 
-_Table_ _174__: Members Table_
+_Table_ _174_: Members Table
 
 <table>
 <tr>
@@ -7784,7 +7459,7 @@ Gets the Calendar model.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7806,9 +7481,9 @@ void monthCalendarAdv1_DateHover(object sender, Syncfusion.Windows.Forms.Tools.D
 
 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7826,12 +7501,12 @@ e.ToolTipStyle = Syncfusion.Windows.Forms.Tools.ToolTipStyle.Ballon
 
 End Sub
 
-
+{% endhighlight %}
 
 The following screenshot illustrates the SuperToolTip when mouse hover on the respective date value by using DateHover event.
 
 ![](Editors-Package_images/Editors-Package_img169.png)
-{:.image }
+
 
 
 ###### Frequently Asked Questions
@@ -7842,25 +7517,27 @@ How to clear a date selection programmatically?
 
 This can be done by calling ClearSelection() method.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.monthCalendarAdv1.ClearSelection();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.monthCalendarAdv1.ClearSelection()
 
+{% endhighlight %}
+
 How to customize the appearance of the diagonal columns?
 
 The appearance of diagonal columns can be customized using the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7890,9 +7567,9 @@ monthCalendarAdv1.SetInfo(e.RowIndex,e.ColIndex,gsi);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7922,17 +7599,17 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img170.jpeg)
-{:.image }
+
 
 
 Setting Icons for the Data Cells
 
 Using DateCellQueryInfo event, we can add icons to the data cells.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7954,9 +7631,9 @@ if(e.RowIndex==3)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7980,17 +7657,17 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img171.jpeg)
-{:.image }
+
 
 
 How to identify the current selected date at run time?
 
 The MonthCalendarAdv gives an array of selected dates. So if u want to get only one date choose the first element from that array. Also set AllowMultipleSelection property to false. The DateSelected Event is fired after the user had completed the selection.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8004,9 +7681,9 @@ private void monthCalendarAdv1_DateSelected(object sender,EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8020,10 +7697,10 @@ MessageBox.Show("Selected Date: " + monthCalendarAdv1.SelectedDates[0].ToString(
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img172.jpeg)
-{:.image }
+
 
 
 Is it possible to restrict the dates that are selected?
@@ -8032,7 +7709,7 @@ Yes, we can restrict the dates that are selected. If you want to allow the user 
 
 The following code snippet can be used for this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8054,9 +7731,9 @@ void monthCalendarAdv1_DateCellQueryInfo(object sender, DateCellQueryInfoEventAr
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8074,13 +7751,15 @@ Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, ByVal e 
 
 End Sub
 
+{% endhighlight %}
+
 How to change the days displayed in the calendar
 
 To change the days displayed in the calendar, you need to handle the PrepareViewStyleInfo event of the Grid control, which is embedded in the MonthCalendarAdv control and change its cell value as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8126,9 +7805,9 @@ void grid_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs 
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8162,12 +7841,14 @@ Private Sub grid_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPre
 
 End Sub
 
+{% endhighlight %}
+
 ##### DateTimePickerAdv
 
 DateTimePickerAdvis an advanced DateTimePicker control. It provides an easy way to implement a culture-based DateTimePicker in an application. It has support for a string to be displayed when the user doesn't want a specific date selected. It also supports dropping down a custom window and interacts with its controls if a user chooses to implement the IDateTimePickerAdvCalendar interface. The control comes variety of visual style including Office2007 styles.
 
 ![](Editors-Package_images/Editors-Package_img173.jpeg)
-{:.image }
+
 
 
 See Also
@@ -8197,76 +7878,74 @@ Concepts and Features
 DateTimePickerAdv control provides full support for the Windows Forms designer. To use a DateTimePickerAdv control in your application, all you need to do is drag and drop a DateTimePickerAdv control from the controls toolbox onto your form. You can then set any of its properties through the property grid. 
 
 ![](Editors-Package_images/Editors-Package_img174.jpeg)
-{:.image }
+
 
 
 The DateTimePickerAdv can be created programmatically through code as detailed below.
 
 71. Include the required namespace.
 
-[C#]
+    ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+    ~~~
+    {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+    ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+    ~~~
+    {:.prettyprint }
 
 72. Create an instance of DateTimePickerAdv. Add that instance to the Form.
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.DateTimePickerAdv dateTimePickerAdv1;
+		private Syncfusion.Windows.Forms.Tools.DateTimePickerAdv dateTimePickerAdv1;
 
-this.dateTimePickerAdv1=new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
+		this.dateTimePickerAdv1=new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
 
-this.Controls.Add(this.dateTimePickerAdv1);
+		this.Controls.Add(this.dateTimePickerAdv1);
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
+		Private dateTimePickerAdv1 As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
 
+		Me.dateTimePickerAdv1 = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
 
+		Me.Controls.Add(Me.dateTimePickerAdv1)
 
-Private dateTimePickerAdv1 As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
-
-Me.dateTimePickerAdv1 = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
-
-Me.Controls.Add(Me.dateTimePickerAdv1)
-
-
+    ~~~
+    {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img175.jpeg)
-{:.image }
+
 
 
 See Also
 
 Concepts and Features
 
-###### Concepts and Features
+### Concepts and Features
 
 The following topics will help you become more familiar with using the DateTimePickerAdv control:
 
-Child Controls
+#### Child Controls
 
 DateTimePickerAdv has child controls like DropDown, Updown arrows, checkbox. This section discusses the properties which controls the appearance and behavior of these controls.
 
 ![](Editors-Package_images/Editors-Package_img176.jpeg)
-{:.image }
 
 
-UpDown and DropDown Buttons
+
+##### UpDown and DropDown Buttons
 
 This section discusses the properties of DateTimePickerAdv control which customizes the UpDown and DropDown buttons.
 
@@ -8274,7 +7953,7 @@ UpDown Buttons
 
 The below properties controls the appearance and behavior of the UpDown buttons.
 
-_Table_ _175__: Property Table_
+_Table_ _175_: Property Table
 
 <table>
 <tr>
@@ -8296,7 +7975,7 @@ Specifies whether the UpDown button will have VS-like look.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8304,9 +7983,9 @@ this.dateTimePickerAdv2.ShowUpDown = true;
 
 this.dateTimePickerAdv2.ShowUpDownOnFocus = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8314,20 +7993,20 @@ Me.dateTimePickerAdv2.ShowUpDown = True
 
 Me.dateTimePickerAdv2.ShowUpDownOnFocus = True
 
-
+{% endhighlight %}
 
 In the below image, when focus is on button control, the updown button is hidden. In the second image, DateTimePickerAdv is focussed and the UpDown button is shown.
 
 ![](Editors-Package_images/Editors-Package_img177.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img178.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img179.jpeg)
-{:.image }
+
 
 
 DropDown Button
@@ -8338,7 +8017,7 @@ Color Settings
 
 At run time, drop down button can be in normal mode, pressed mode or in selected mode. Different colors can be set for different modes.
 
-_Table_ _176__: Property Table_
+_Table_ _176_: Property Table
 
 <table>
 <tr>
@@ -8360,7 +8039,7 @@ Gets or Sets the dropdown backcolor in Selected mode, i.e, when a date is select
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8370,9 +8049,9 @@ this.dateTimePickerAdv2.DropDownPressedColor = System.Drawing.Color.Goldenrod;
 
 this.dateTimePickerAdv2.DropDownSelectedColor = System.Drawing.Color.SteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8382,69 +8061,63 @@ Me.dateTimePickerAdv2.DropDownPressedColor = System.Drawing.Color.Goldenrod
 
 Me.dateTimePickerAdv2.DropDownSelectedColor = System.Drawing.Color.SteelBlue
 
-> ![](Editors-Package_images/Editors-Package_img180.jpeg)
-{:.image }
- _Note: These settings will be effective only when DateTimePickerAdv.Style is Office2003, OfficeXP and VS2005._
+{% endhighlight %}
+
+> Note: These settings will be effective only when DateTimePickerAdv.Style is Office2003, OfficeXP and VS2005.
 
 ![](Editors-Package_images/Editors-Package_img181.jpeg)
-{:.image }
+
 
 
 Flat Appearance
 
 Dropdown can be given flat appearance using FlatDropDown property. By default it is false.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.dateTimePickerAdv2.FlatDropButton = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 this.dateTimePickerAdv2.FlatDropButton = true;
 
-> ![](Editors-Package_images/Editors-Package_img182.jpeg)
-{:.image }
- _Note: These setting will be effective only when DateTimePickerAdv.Style is Default._
+{% endhighlight %}
+
+> Note: These setting will be effective only when DateTimePickerAdv.Style is Default.
 
 ![](Editors-Package_images/Editors-Package_img183.jpeg)
-{:.image }
+
 
 
 Alignment of the DropDown
 
 When the dropdown button is clicked, the calendar pops up, based on the alignment specified in DropDownAlign property. Default value is Left.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img184.jpeg)
-{:.image }
+
 
 
 Image for DropDown
 
 The existing dropdown icon can be replaced with a custom image using the below properties.
 
-_Table_ _177__: Property Table_
+_Table_ _177_: Property Table
 
 <table>
 <tr>
@@ -8462,32 +8135,28 @@ Specifies whether the image of the dropdown is stretched.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.DropDownImage = ((System.Drawing.Image)(resources.GetObject("dateTimePickerAdv1.DropDownImage")));
 
 this.dateTimePickerAdv1.StretchDropDownImage = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.DropDownImage = DirectCast((resources.GetObject("dateTimePickerAdv1.DropDownImage")), System.Drawing.Image) 
 
 Me.dateTimePickerAdv1.StretchDropDownImage = True 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img185.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img186.jpeg)
-{:.image }
+
 
 
 See Also
@@ -8498,28 +8167,25 @@ CheckBox
 
 By default the DateTimePicker control has a checkbox in checked state. This checkbox can be hidden using ShowCheckBox property and the state can be unchecked through designer, using Checked property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.ShowCheckBox = false;
 
 this.dateTimePickerAdv5.Checked = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Me.dateTimePickerAdv1.ShowCheckBox = False
 
 Me.dateTimePickerAdv5.Checked = False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img187.jpeg)
-{:.image }
+
 
 
 See Also
@@ -8534,35 +8200,31 @@ CheckBox
 
 By default the DateTimePicker control has a checkbox in checked state. This checkbox can be hidden using ShowCheckBox property and the state can be unchecked through designer, using Checked property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.ShowCheckBox = false;
 
 this.dateTimePickerAdv5.Checked = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.ShowCheckBox = False
 
 Me.dateTimePickerAdv5.Checked = False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img188.jpeg)
-{:.image }
+
 
 
 Text Field Formatting
 
 Format and CustomFormat properties are used to format the text field. Below are the details
 
-_Table_ _178__: Property Table_
+_Table_ _178_: Property Table
 
 <table>
 <tr>
@@ -8572,7 +8234,7 @@ Description</td></tr>
 <tr>
 <td>
 Format </td><td>
-Gets or Sets the format of the picker. The options are,{{ _Long(default),_  | markdownify }}{{ _Short,_  | markdownify }}{{ _Time and_ | markdownify }}{{ _Custom._ | markdownify }}</td></tr>
+Gets or Sets the format of the picker. The options are,{{ '_Long(default),_'  | markdownify }}{{ '_Short,_'  | markdownify }}{{ '_Time and_' | markdownify }}{{ '_Custom._' | markdownify }}</td></tr>
 <tr>
 <td>
 CustomFormat</td><td>
@@ -8580,7 +8242,7 @@ Specifies the custom format, when the Format is set to 'Custom'.  For example, I
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8608,9 +8270,9 @@ this.dateTimePickerAdv5.Format = System.Windows.Forms.DateTimePickerFormat.Custo
 
 this.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8638,39 +8300,33 @@ Me.dateTimePickerAdv5.Format = System.Windows.Forms.DateTimePickerFormat.Custom
 
 Me.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy"
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img189.jpeg)
-{:.image }
+
 
 
 Spacing in TextField
 
 We can specify spacing for the text field in the control, (ex: between month, year and date) using Spacing property. Default value is 0.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.Spacing = 5;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.Spacing = 5
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img190.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img191.jpeg)
-{:.image }
- _Note: The text field can be refreshed programmatically by calling DateTimePickerAdv.RefreshFields() method._
+
+> Note: The text field can be refreshed programmatically by calling DateTimePickerAdv.RefreshFields() method.
 
 See Also
 
@@ -8681,12 +8337,12 @@ Null Value Settings
 At run time, on clicking the "None" button of the popup calendar, "No date is selected" string will be displayed in the text field like the below image. 
 
 ![](Editors-Package_images/Editors-Package_img192.jpeg)
-{:.image }
+
 
 
 This default string can be changed using NullString property. Below table describes the properties which controls the Null value behavior.
 
-_Table_ _179__: Property Table_
+_Table_ _179_: Property Table
 
 <table>
 <tr>
@@ -8696,7 +8352,7 @@ Description</td></tr>
 <tr>
 <td>
 EnableNullDate</td><td>
-Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text fielddisplays the selected date even when {{ _None_ | markdownify }} button is selected. By default it is true.</td></tr>
+Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text fielddisplays the selected date even when {{ '_None_' | markdownify }} button is selected. By default it is true.</td></tr>
 <tr>
 <td>
 EnableNullKeys</td><td>
@@ -8708,15 +8364,15 @@ Specifies the text visible when there is no date selected.  EnableNullDate must 
 <tr>
 <td>
 NullModeKeyReset</td><td>
-Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ _ArrowKeys (default),_ | markdownify }}{{ _NumericKeys and_  | markdownify }}{{ _Any._ | markdownify }}EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ '_ArrowKeys (default),_' | markdownify }}{{ '_NumericKeys and_'  | markdownify }}{{ '_Any._' | markdownify }}EnableNullDate must be set to true to make this setting effective.</td></tr>
 <tr>
 <td>
 IsNullDate</td><td>
-Set this to true, if you want to display null value ({{ _String specified in NullString_ | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
+Set this to true, if you want to display null value ({{ '_String specified in NullString_' | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8728,9 +8384,9 @@ this.dateTimePickerAdv1.NullString = "Null Value"
 
 this.dateTimePickerAdv1.NullModeKeyReset = Syncfusion.Windows.Forms.Tools.NullModeKeyReset.NumericKeys;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8742,10 +8398,10 @@ Me.dateTimePickerAdv1.NullString = "Null Value"
 
 Me.dateTimePickerAdv1.NullModeKeyReset = Syncfusion.Windows.Forms.Tools.NullModeKeyReset.NumericKeys
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img193.jpeg)
-{:.image }
+
 
 
 Calendar
@@ -8753,7 +8409,7 @@ Calendar
 DateTimePickerAdv control contains embedded calendar control which pops-up on clicking the dropdown button at the end of the control. The popup calendar is a MonthCalendarAdv control and hence supports all the properties of the MonthCalendarAdv control. These properties of the calendar can be accessed using DateTimePickerAdv.Calendar.TodayButton _(for example)_property. 
 
 ![](Editors-Package_images/Editors-Package_img194.jpeg)
-{:.image }
+
 
 
 
@@ -8764,41 +8420,35 @@ Day Names
 
 In the calendar, we can specify whether shortest day names can be used or not using UseShortestDayNames property. By default it is true.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.UseShortestDayNames = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.UseShortestDayNames = False
+
+{% endhighlight %}
 
 Buttons in Calendar
 
 We can specify the visibility of the None button using NoneButtonVisible property. Default value is true. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.NoneButtonVisible = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.NoneButtonVisible = False
 
-> ![](Editors-Package_images/Editors-Package_img195.jpeg)
-{:.image }
- _Note: None button will not be visible when EnableNullDate property is set to false. See_ Null Value Settings _to know about EnableNullDate property._
+{% endhighlight %}
+
+> Note: None button will not be visible when EnableNullDate property is set to false. See_ Null Value Settings _to know about EnableNullDate property.
 
 Customizing the Calendar
 
@@ -8808,7 +8458,7 @@ Background Settings
 
 The background of the Calendar can be customized using below properties.
 
-_Table_ _180__: Property Table_
+_Table_ _180_: Property Table
 
 <table>
 <tr>
@@ -8826,7 +8476,7 @@ Sets the background of the calendar header.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8834,9 +8484,9 @@ this.dateTimePickerAdv1.CalendarMonthBackground = System.Drawing.Color.OldLace;
 
 this.dateTimePickerAdv1.CalendarTitleBackColor = System.Drawing.Color.Wheat;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8844,17 +8494,17 @@ Me.dateTimePickerAdv1.CalendarMonthBackground = System.Drawing.Color.OldLace
 
 Me.dateTimePickerAdv1.CalendarTitleBackColor = System.Drawing.Color.Wheat
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img196.jpeg)
-{:.image }
+
 
 
 Foreground Settings
 
 The foreground appearance can be customized using the below properties.
 
-_Table_ _181__: Property Table_
+_Table_ _181_: Property Table
 
 <table>
 <tr>
@@ -8880,7 +8530,7 @@ Specifies the fore color of the inactive month date.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8892,9 +8542,9 @@ this.dateTimePickerAdv1.CalendarTitleForeColor = System.Drawing.Color.SaddleBrow
 
 this.dateTimePickerAdv1.CalendarTrailingForeColor = System.Drawing.Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8906,10 +8556,10 @@ Me.dateTimePickerAdv1.CalendarTitleForeColor = System.Drawing.Color.SaddleBrown
 
 Me.dateTimePickerAdv1.CalendarTrailingForeColor = System.Drawing.Color.Blue
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img197.jpeg)
-{:.image }
+
 
 
 _CalendarFont = "Italic"; TrailingForeColor = "Blue"_
@@ -8918,7 +8568,7 @@ Calendar Size
 
 The default size of the popup calendar can be changed using the below properties.
 
-_Table_ _182__: Property Table_
+_Table_ _182_: Property Table
 
 <table>
 <tr>
@@ -8936,7 +8586,7 @@ Indicates whether the calendar will size to fit according to the size of the day
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8944,9 +8594,9 @@ this.dateTimePickerAdv1.CalendarSize = new System.Drawing.Size(250, 200);
 
 this.dateTimePickerAdv1.CalendarSizeToFit = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8954,10 +8604,10 @@ Me.dateTimePickerAdv1.CalendarSize = New System.Drawing.Size(250, 200)
 
 Me.dateTimePickerAdv1.CalendarSizeToFit = False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img198.jpeg)
-{:.image }
+
 
 
 See Also
@@ -8968,7 +8618,7 @@ Calendar Value
 
 In the Popup calendar, today's date will be selected by default, at run time. This default date can be changed using Value property. You can also specify the range of values / dates that can be selected at run time. 
 
-_Table_ _183__: Property Table_
+_Table_ _183_: Property Table
 
 <table>
 <tr>
@@ -8986,7 +8636,7 @@ Specifies the minimum value that can be picked from the DateTimePickerAdv.</td><
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8996,9 +8646,9 @@ this.dateTimePickerAdv1.MaxValue = new System.DateTime(2008, 12, 31, 23, 59, 0, 
 
 this.dateTimePickerAdv1.MinValue = new System.DateTime(2007, 1, 1, 0, 0, 0, 0);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9007,6 +8657,8 @@ Me.dateTimePickerAdv1.Value = New System.DateTime(2008, 2, 23, 16, 15, 46, 0)
 Me.dateTimePickerAdv1.MaxValue = New System.DateTime(2008, 12, 31, 23, 59, 0, 0)
 
 Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 1, 1, 0, 0, 0, 0)
+
+{% endhighlight %}
 
 See Also
 
@@ -9019,7 +8671,7 @@ In the designer, DateTimePickerAdv control has shortcut for some property settin
 
 
 ![](Editors-Package_images/Editors-Package_img199.jpeg)
-{:.image }
+
 
 
 DateTimePickerAdv Appearance
@@ -9034,7 +8686,7 @@ Background Color
 
 The control's back color can be set using the below properties.
 
-_Table_ _184__: Property Table_
+_Table_ _184_: Property Table
 
 <table>
 <tr>
@@ -9052,7 +8704,7 @@ Sets Solid, Gradient or Pattern style of background for the control. This proper
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9060,9 +8712,9 @@ this.dateTimePickerAdv1.BackColor = System.Drawing.Color.Cornsilk;
 
 this.dateTimePickerAdv1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.Linen, System.Drawing.Color.BurlyWood);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9070,17 +8722,17 @@ Me.dateTimePickerAdv1.BackColor = System.Drawing.Color.Cornsilk
 
 Me.dateTimePickerAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.Linen, System.Drawing.Color.BurlyWood) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img200.jpeg)
-{:.image }
+
 
 
 Background Image
 
 Background image for the DateTimePickerAdv is set using the below property.
 
-_Table_ _185__: Property Table_
+_Table_ _185_: Property Table
 
 <table>
 <tr>
@@ -9098,24 +8750,24 @@ Sets the background image layout for the control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.dateTimePickerAdv2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dateTimePickerAdv2.BackgroundImage")));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.dateTimePickerAdv2.BackgroundImage = DirectCast((resources.GetObject("dateTimePickerAdv2.BackgroundImage")), System.Drawing.Image) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img201.jpeg)
-{:.image }
+
 
 
 See Also
@@ -9126,7 +8778,7 @@ Border Styles
 
 The wide variety of border options are available for DateTimePickerAdv control when they are in 2D or in 3D mode. The properties in the below table illustrates the border settings.
 
-_Table_ _186__: Property Table_
+_Table_ _186_: Property Table
 
 <table>
 <tr>
@@ -9136,19 +8788,19 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are,* {{ _None_ | markdownify }}* {{ _FixedSingle_  | markdownify }}* {{ _Fixed3D(Default)_ | markdownify }}</td></tr>
+Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are,* {{ '_None_' | markdownify }}* {{ '_FixedSingle_'  | markdownify }}* {{ '_Fixed3D(Default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>Border3DStyle</td><td>
-Specifies the 3D border style of the DateTimePickerAdv.The options are,* {{ _Raised_ | markdownify }}* {{ _RaisedOuter_  | markdownify }}* {{ _RaisedInner_  | markdownify }}* {{ _Sunken(Default)_ | markdownify }}* {{ _SunkenOuter_  | markdownify }}* {{ _SunkenInner_  | markdownify }}* {{ _Etched_  | markdownify }}* {{ _Bump_  | markdownify }}* {{ _Adjust_  | markdownify }}* {{ _Flat_ | markdownify }}</td></tr>
+Specifies the 3D border style of the DateTimePickerAdv.The options are,* {{ '_Raised_' | markdownify }}* {{ '_RaisedOuter_'  | markdownify }}* {{ '_RaisedInner_'  | markdownify }}* {{ '_Sunken(Default)_' | markdownify }}* {{ '_SunkenOuter_'  | markdownify }}* {{ '_SunkenInner_'  | markdownify }}* {{ '_Etched_'  | markdownify }}* {{ '_Bump_'  | markdownify }}* {{ '_Adjust_'  | markdownify }}* {{ '_Flat_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderSingle</td><td>
-Specifies the 2D border style of the DateTimePickerAdv. The options are,* {{ _None_ | markdownify }}* {{ _Dotted_ | markdownify }}* {{ _Dashed_ | markdownify }}* {{ _Solid (default)_ | markdownify }}* {{ _Inset_  | markdownify }}* {{ _Outset_ | markdownify }}</td></tr>
+Specifies the 2D border style of the DateTimePickerAdv. The options are,* {{ '_None_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Solid (default)_' | markdownify }}* {{ '_Inset_'  | markdownify }}* {{ '_Outset_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderSides</td><td>
-Specifies the sides of the control which should have a border. The sides are,* {{ _Left_ | markdownify }}* {{ _Top_ | markdownify }}* {{ _Right_  | markdownify }}* {{ _Bottom_ | markdownify }}* {{ _Middle_  | markdownify }}* {{ _All (Default)_ | markdownify }}</td></tr>
+Specifies the sides of the control which should have a border. The sides are,* {{ '_Left_' | markdownify }}* {{ '_Top_' | markdownify }}* {{ '_Right_'  | markdownify }}* {{ '_Bottom_' | markdownify }}* {{ '_Middle_'  | markdownify }}* {{ '_All (Default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderColor</td><td>
@@ -9156,7 +8808,7 @@ Specifies the color of the 2D border when BorderStyle is set FixedSingle.</td></
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9186,9 +8838,9 @@ this.dateTimePickerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
 this.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9218,10 +8870,10 @@ Me.dateTimePickerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 Me.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img202.jpeg)
-{:.image }
+
 
 
 See Also
@@ -9236,7 +8888,7 @@ Month Images
 
 We can set images for the popup menu of the Calendar using MonthImageList property of DateTimePickerAdv control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9252,9 +8904,9 @@ this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resource
 
 this.dateTimePickerAdv1.MonthImageList = this.imageList1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9270,10 +8922,10 @@ Me.imageList1.ImageStream= (CType(resources.GetObject("imageList1.ImageStream"),
 
 Me.dateTimePickerAdv1.MonthImageList = Me.imageList1
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img203.jpeg)
-{:.image }
+
 
 
 Context Menu
@@ -9281,29 +8933,25 @@ Context Menu
 When you right-click on a DateTimePickerAdv control at run time, a context menu will be displayed like the below image. 
 
 ![](Editors-Package_images/Editors-Package_img204.jpeg)
-{:.image }
+
 
 
 This default context menu can be replaced with Syncfusion XP Menu by setting UseEnhancedMenu property to true. By default it is set to false. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.UseEnhancedMenu = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.UseEnhancedMenu = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img205.jpeg)
-{:.image }
+
 
 
 Menu Options
@@ -9317,7 +8965,7 @@ The menu options are:
 
 We can set the text value format that is copied to the clipboard using ClipboardFormat property.
 
-_Table_ _187__: Property Table_
+_Table_ _187_: Property Table
 
 <table>
 <tr>
@@ -9327,7 +8975,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipboardFormat</td><td>
-While doing copy / paste operation, we can specify the format of the value of the DateTimePickerAdv control that is copied, by using ClipBoardFormat property. The formats are, * {{ _Long(default)_ | markdownify }}* {{ _Short_  | markdownify }}* {{ _Time_  | markdownify }}* {{ _Custom_ | markdownify }}</td></tr>
+While doing copy / paste operation, we can specify the format of the value of the DateTimePickerAdv control that is copied, by using ClipBoardFormat property. The formats are, * {{ '_Long(default)_' | markdownify }}* {{ '_Short_'  | markdownify }}* {{ '_Time_'  | markdownify }}* {{ '_Custom_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>CopyFieldsOnly</td><td>
@@ -9335,23 +8983,21 @@ Indicates whether only the selected field will be copied or the whole text field
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.CopyFieldsOnly = true;
 
 this.dateTimePickerAdv1.ClipboardFormat = System.Windows.Forms.DateTimePickerFormat.Short;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.CopyFieldsOnly = True
 
 Me.dateTimePickerAdv1.ClipboardFormat = System.Windows.Forms.DateTimePickerFormat.Short
+
+{% endhighlight %}
 
 See Also
 
@@ -9361,7 +9007,7 @@ Navigating between fields
 
 At run time, user can easily navigate between values in the text field like date, month, year, time using the TAB key. The below properties settings are necessary for tabbing between the fields.
 
-_Table_ _188__: Property Table_
+_Table_ _188_: Property Table
 
 <table>
 <tr>
@@ -9387,9 +9033,7 @@ Indicates whether the focus should be moved away from the control, when there is
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.TabForwarding = true;
 
@@ -9399,11 +9043,9 @@ this.dateTimePickerAdv1.TabLeave = true;
 
 this.dateTimePickerAdv1.TabStop = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.TabForwarding = True
 
@@ -9413,13 +9055,15 @@ Me.dateTimePickerAdv1.TabLeave = True
 
 Me.dateTimePickerAdv1.TabStop = True
 
+{% endhighlight %}
+
 Themes and Styles
 
 Themes
 
 We can apply themes for the DateTimePickerAdv and also the child controls using the below properties.
 
-_Table_ _189__: Property Table_
+_Table_ _189_: Property Table
 
 <table>
 <tr>
@@ -9437,17 +9081,15 @@ Setting ThemesEnabled to true will not enable themes for its child controls (Che
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.ThemesEnabled = true;
 
 this.dateTimePickerAdv1.ThemedChildControls = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9463,21 +9105,21 @@ Me.dateTimePickerAdv1.ReadOnly = True
 
 Me.dateTimePickerAdv1.IgnoreThemeBackground = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img206.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img207.jpeg)
-{:.image }
+
 
 
 Styles
 
 Visual Styles for the DateTimePickerAdv and its child controls can be applied using the Style property. 
 
-_Table_ _190__: Property Table_
+_Table_ _190_: Property Table
 
 <table>
 <tr>
@@ -9487,7 +9129,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the Office style of the picker. The options are :* {{ _OfficeXP_  | markdownify }}* {{ _Office2003_  | markdownify }}* {{ _VS2005_ | markdownify }}* {{ _Office2007_  | markdownify }}* {{ _Default (default)_ | markdownify }}</td></tr>
+Specifies the Office style of the picker. The options are :* {{ '_OfficeXP_'  | markdownify }}* {{ '_Office2003_'  | markdownify }}* {{ '_VS2005_' | markdownify }}* {{ '_Office2007_'  | markdownify }}* {{ '_Default (default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>Office2007Theme</td><td>
@@ -9495,17 +9137,15 @@ Indicates the office color scheme used, when Style is set to Office2007.</td></t
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 // Sample for setting Office2007 style for the control
 
 this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9513,15 +9153,12 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 Me.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img208.jpeg)
-{:.image }
 
 
-
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -9529,9 +9166,9 @@ Me.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 this.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9539,17 +9176,17 @@ this.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007The
 
 Me.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img209.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the DateTimePickerAdv control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9557,9 +9194,9 @@ this.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007The
 
 Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9567,10 +9204,10 @@ Me.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img210.jpeg)
-{:.image }
+
 
 
 Advanced Features
@@ -9581,135 +9218,133 @@ Data Binding
 
 Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and BindableValue property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
 
-> ![](Editors-Package_images/Editors-Package_img211.jpeg)
-{:.image }
-_Note: Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used._
+> Note: Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
 
 To bind a DateTimePickerAdv, perform the following steps.
 
 73. Add a DateTimePickerAdv and a DataGrid controls to the form.
 74. Create a daaset using the code below.
 
-[C#]
+    ~~~ cs
+
+		// Creating DataSet,Table and rows.
+
+		DataSet dataSet = null;
+
+		DataTable table = null;
 
 
 
-// Creating DataSet,Table and rows.
+		dataSet = new DataSet();
 
-DataSet dataSet = null;
-
-DataTable table = null;
+		table = dataSet.Tables.Add("Table");
 
 
 
-dataSet = new DataSet();
-
-table = dataSet.Tables.Add("Table");
+		table.Columns.Add("DateTimeColumn", typeof(DateTime));
 
 
 
-table.Columns.Add("DateTimeColumn", typeof(DateTime));
+		table.Columns[0].AllowDBNull = true;
 
 
 
-table.Columns[0].AllowDBNull = true;
+		table.Rows.Add(new object[]{DateTime.Now - TimeSpan.FromDays(60)});
+
+		table.Rows.Add(new object[]{DateTime.Now});
+
+		table.Rows.Add(new object[]{DBNull.Value});
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-table.Rows.Add(new object[]{DateTime.Now - TimeSpan.FromDays(60)});
+		' Creating DataSet,Table and rows.
 
-table.Rows.Add(new object[]{DateTime.Now});
+		Private dataSet As DataSet = Nothing
 
-table.Rows.Add(new object[]{DBNull.Value});
-
-
-
-[VB.NET]
+		Private table As DataTable = Nothing
 
 
 
-' Creating DataSet,Table and rows.
+		Private dataSet = New DataSet()
 
-Private dataSet As DataSet = Nothing
-
-Private table As DataTable = Nothing
+		Private table = dataSet.Tables.Add("Table")
 
 
 
-Private dataSet = New DataSet()
-
-Private table = dataSet.Tables.Add("Table")
+		table.Columns.Add("DateTimeColumn", GetType(DateTime))
 
 
 
-table.Columns.Add("DateTimeColumn", GetType(DateTime))
+		Private table.Columns(0).AllowDBNull = True
 
 
 
-Private table.Columns(0).AllowDBNull = True
+		table.Rows.Add(New Object(){DateTime.Now - TimeSpan.FromDays(60)})
 
+		table.Rows.Add(New Object(){DateTime.Now})
 
+		table.Rows.Add(New Object(){DBNull.Value})              
 
-table.Rows.Add(New Object(){DateTime.Now - TimeSpan.FromDays(60)})
-
-table.Rows.Add(New Object(){DateTime.Now})
-
-table.Rows.Add(New Object(){DBNull.Value})              
-
-
+    ~~~
+    {:.prettyprint }
 
 75. Assign the dataset to the DataGrid control using its DataSource property. Set the control's DataMember property to the member that must be bound.
 
-[C#]
+    ~~~ cs
 
 
 
-dataGrid1.DataSource = dataSet;
+		dataGrid1.DataSource = dataSet;
 
-dataGrid1.DataMember = "Table";
+		dataGrid1.DataMember = "Table";
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
+		Private dataGrid1.DataSource = dataSet
 
+		Private dataGrid1.DataMember = "Table"
 
-
-Private dataGrid1.DataSource = dataSet
-
-Private dataGrid1.DataMember = "Table"
-
-
+    ~~~
+    {:.prettyprint }
 
 76. Bind the datasource with the DateTimePickerAdv control.
 
-[C#]
+    ~~~ cs
+
+		// Setting the BindableValue property in order to Data Bind.
+
+		dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn");
+
+		dateTimePickerAdv1.Focus();
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-// Setting the BindableValue property in order to Data Bind.
+		' Setting the BindableValue property in order to Data Bind.
 
-dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn");
+		dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn")
 
-dateTimePickerAdv1.Focus();
+		dateTimePickerAdv1.Focus()                       
 
-
-
-[VB.NET]
-
-
-
-' Setting the BindableValue property in order to Data Bind.
-
-dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn")
-
-dateTimePickerAdv1.Focus()                       
-
-
+    ~~~
+    {:.prettyprint }
 
 77. Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
 
 ![](Editors-Package_images/Editors-Package_img212.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates this feature is available in the below sample installation path.
@@ -9720,7 +9355,7 @@ A sample which demonstrates this feature is available in the below sample instal
 
 DateTimePickerAdv supports globalization through DateTimePickerAdv.Culture property.
 
-_Table_ _191__: Property Table_
+_Table_ _191_: Property Table
 
 <table>
 <tr>
@@ -9738,7 +9373,7 @@ Specifies whether the current culture of the machine will be used. By default it
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9746,9 +9381,9 @@ this.dateTimePickerAdv1.UseCurrentCulture = false;
 
 this.dateTimePickerAdv1.Culture = new System.Globalization.CultureInfo("hi-IN");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9756,10 +9391,10 @@ Me.dateTimePickerAdv1.UseCurrentCulture = False
 
 Me.dateTimePickerAdv1.Culture = New System.Globalization.CultureInfo("hi-IN")
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img213.jpeg)
-{:.image }
+
 
 
 Custom PopupWindow
@@ -9768,7 +9403,7 @@ This section deals with creating a custom popup window for the DateTimePickerAdv
 
 IDateTimePickerAdvCalendar Interface Members
 
-_Table_ _192__: Member Table_
+_Table_ _192_: Member Table_
 
 <table>
 <tr>
@@ -9782,17 +9417,17 @@ Boolean value indicating if the DateTimePickerAdv should consider the interface 
 <tr>
 <td>
 Appearance properties (CalendarFont, CalendarForeColor, CalendarMonthBackground, TitleBackColor, TitleForeColor and TrailingForeColor)</td><td>
-{{ _CalendarFont_ | markdownify }} - Gets / sets the font used to draw the calendar that implements the interface, {{ _CalendarForeColor_ | markdownify }} - Gets / sets the color used to draw the foreground of calendar that implements the interface, {{ _CalendarMonthBackground_ | markdownify }} - Gets / sets the color used to draw the month background of calendar that implements the interface, {{ _TitleBackColor_ | markdownify }} - Gets / sets the color used to draw the title background of calendar that implements the interface,{{ _TitleForeColor_ | markdownify }} - Gets / sets the color used to draw the foreground of the title of calendar that implements the interface, {{ _TrailingForeColor_ | markdownify }} - Gets / sets the color used to draw the trailing foreground of calendar that implements the interface.</td></tr>
+{{ '_CalendarFont_' | markdownify }} - Gets / sets the font used to draw the calendar that implements the interface, {{ '_CalendarForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of calendar that implements the interface, {{ '_CalendarMonthBackground_' | markdownify }} - Gets / sets the color used to draw the month background of calendar that implements the interface, {{ '_TitleBackColor_' | markdownify }} - Gets / sets the color used to draw the title background of calendar that implements the interface,{{ '_TitleForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of the title of calendar that implements the interface, {{ '_TrailingForeColor_' | markdownify }} - Gets / sets the color used to draw the trailing foreground of calendar that implements the interface.</td></tr>
 <tr>
 <td>
 Value properties (MinDate, MaxDate, Value)</td><td>
-{{ _MinDate_ | markdownify }} - Gets / sets the minimum date of the calendar that implements the interface,{{ _MaxDate_ | markdownify }} - Gets / sets the maximum date of the calendar that implements the interface and{{ _Value_ | markdownify }} - Gets / sets the date of the calendar that implements the interface.</td></tr>
+{{ '_MinDate_' | markdownify }} - Gets / sets the minimum date of the calendar that implements the interface,{{ '_MaxDate_' | markdownify }} - Gets / sets the maximum date of the calendar that implements the interface and{{ '_Value_' | markdownify }} - Gets / sets the date of the calendar that implements the interface.</td></tr>
 <tr>
 <td>
 Culture</td><td>
 Gets or set the culture of the calendar that implements this interface.</td></tr>
 </table>
-_Table_ _193__: Events Table_
+_Table_ _193_: Events Table_
 
 <table>
 <tr>
@@ -9818,473 +9453,477 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
 
 78. Drag a DateTimePickerAdv, PopupControlContainer and a button onto the form designer from the toolbox. 
 
-![](Editors-Package_images/Editors-Package_img214.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img214.jpeg)
+
 
 
 79. Create a control that implements the IDateTimePickerAdvCalendar interface using the below code.
 
-[C#]
+    ~~~ cs
 
 
 
-//Creating Calendar which implements the IDateTimePickerAdvCalendar
+		//Creating Calendar which implements the IDateTimePickerAdvCalendar
 
-private MyCustomCalendar MonthCalendar;
+		private MyCustomCalendar MonthCalendar;
 
 
 
-//Initializing the Calendar 
+		//Initializing the Calendar 
 
-this.MonthCalendar = new MyCustomCalendar();
+		this.MonthCalendar = new MyCustomCalendar();
 
 
 
-//Defining the Calendar Class which implements IDateTimePickerAdvCalendar
+		//Defining the Calendar Class which implements IDateTimePickerAdvCalendar
 
-public class MyCustomCalendar : MonthCalendar, IDateTimePickerAdvCalendar
+		public class MyCustomCalendar : MonthCalendar, IDateTimePickerAdvCalendar
 
-{
+		{
 
-    private bool active;
+			private bool active;
 
 
 
-    public bool Active
+			public bool Active
 
-    {
+			{
 
-        get { return active; }
+				get { return active; }
 
-        set { active = value; }
+				set { active = value; }
 
-    }
+			}
 
 
 
-    public System.Drawing.Font CalendarFont
+			public System.Drawing.Font CalendarFont
 
-    {
+			{
 
-        get { return Font; }
+				get { return Font; }
 
-        set { Font = value; }
+				set { Font = value; }
 
-    }
+			}
 
 
 
-    public Color CalendarForeColor
+			public Color CalendarForeColor
 
-    {
+			{
 
-        get { return ForeColor; }
+				get { return ForeColor; }
 
-        set { ForeColor = value; }
+				set { ForeColor = value; }
 
-    }
+			}
 
 
 
-    public Color CalendarMonthBackground
+			public Color CalendarMonthBackground
 
-    {
+			{
 
-        get { return BackColor; }
+				get { return BackColor; }
 
-        set { BackColor = value; }
+				set { BackColor = value; }
 
-    }
+			}
 
 
 
-    public DateTime Value
+			public DateTime Value
 
-    {
+			{
 
-        get { return SelectionStart; }
+				get { return SelectionStart; }
 
-        set { SelectionStart = SelectionEnd = value; }
+				set { SelectionStart = SelectionEnd = value; }
 
-    }
+			}
 
 
 
-    public event DateTimePickerAdv.NullButtonEventHandler NullButtonDown;
+			public event DateTimePickerAdv.NullButtonEventHandler NullButtonDown;
 
-    public event DateTimePickerAdv.SelectDateEventHandler SelectDate;
+			public event DateTimePickerAdv.SelectDateEventHandler SelectDate;
 
-    public event DateTimePickerAdv.DateChangedEventHandler DateChange;
+			public event DateTimePickerAdv.DateChangedEventHandler DateChange;
 
 
 
-    public MyCustomCalendar()
+			public MyCustomCalendar()
 
-    {
+			{
 
-        this.DateSelected += new System.Windows.Forms.DateRangeEventHandler(OnDateSelected);
+				this.DateSelected += new System.Windows.Forms.DateRangeEventHandler(OnDateSelected);
 
-        this.DateChanged += new System.Windows.Forms.DateRangeEventHandler(OnDateChanged);
+				this.DateChanged += new System.Windows.Forms.DateRangeEventHandler(OnDateChanged);
 
-    }
+			}
 
 
 
-    protected void OnDateSelected(object sender, System.Windows.Forms.DateRangeEventArgs e)
+			protected void OnDateSelected(object sender, System.Windows.Forms.DateRangeEventArgs e)
 
-    {
+			{
 
-        if (SelectDate != null)
+				if (SelectDate != null)
 
-        {
+				{
 
-            SelectDate(this, new EventArgs());
+					SelectDate(this, new EventArgs());
 
-        }
+				}
 
-    }
+			}
 
-    protected void OnDateChanged(object sender, System.Windows.Forms.DateRangeEventArgs e)
+			protected void OnDateChanged(object sender, System.Windows.Forms.DateRangeEventArgs e)
 
-    {
+			{
 
-        if (DateChange != null)
+				if (DateChange != null)
 
-        {
+				{
 
-            DateChange(this, new EventArgs());
+					DateChange(this, new EventArgs());
 
-        }
+				}
 
-    }
+			}
 
 
 
-    public string Culture
+			public string Culture
 
-    {
+			{
 
-        get { return "Not Supported"; }
+				get { return "Not Supported"; }
 
-    }
+			}
 
 
 
-    public void FireNullEvent()
+			public void FireNullEvent()
 
-    {
+			{
 
-        if (NullButtonDown != null)
+				if (NullButtonDown != null)
 
-        {
+				{
 
-            NullButtonDown(this, new EventArgs());
+					NullButtonDown(this, new EventArgs());
 
-        }
+				}
 
-    }
+			}
 
 
 
-    CultureInfo IDateTimePickerAdvCalendar.Culture
+			CultureInfo IDateTimePickerAdvCalendar.Culture
 
-    {
+			{
 
-        get { throw new Exception("The method or operation is not implemented."); }
+				get { throw new Exception("The method or operation is not implemented."); }
 
-        set { throw new Exception("The method or operation is not implemented."); }
+				set { throw new Exception("The method or operation is not implemented."); }
 
-    }           
+			}           
 
-}
+		}
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
 
 
+		 'Creating Calendar which implements the IDateTimePickerAdvCalendar 
 
- 'Creating Calendar which implements the IDateTimePickerAdvCalendar 
+		Private MonthCalendar As MyCustomCalendar
 
-Private MonthCalendar As MyCustomCalendar
 
 
+		'Initializing the Calendar 
 
-'Initializing the Calendar 
+		Me.MonthCalendar = New MyCustomCalendar()
 
-Me.MonthCalendar = New MyCustomCalendar()
 
 
+		'Defining the Calendar Class which implements IDateTimePickerAdvCalendar 
 
-'Defining the Calendar Class which implements IDateTimePickerAdvCalendar 
+		Public Class MyCustomCalendar
 
-Public Class MyCustomCalendar
+			Inherits MonthCalendar
 
-    Inherits MonthCalendar
+			Implements IDateTimePickerAdvCalendar
 
-    Implements IDateTimePickerAdvCalendar
 
 
 
 
+			Private m_active As Boolean
 
-    Private m_active As Boolean
 
 
+			Public Property Active() As Boolean
 
-    Public Property Active() As Boolean
+				Get
 
-        Get
+					Return m_active
 
-            Return m_active
+				End Get
 
-        End Get
+				Set(ByVal value As Boolean)
 
-        Set(ByVal value As Boolean)
+					m_active = value
 
-            m_active = value
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property CalendarFont() As System.Drawing.Font
 
-    Public Property CalendarFont() As System.Drawing.Font
+				Get
 
-        Get
+					Return Font
 
-            Return Font
+				End Get
 
-        End Get
+				Set(ByVal value As System.Drawing.Font)
 
-        Set(ByVal value As System.Drawing.Font)
+					Font = value
 
-            Font = value
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property CalendarForeColor() As Color
 
-    Public Property CalendarForeColor() As Color
+				Get
 
-        Get
+					Return ForeColor
 
-            Return ForeColor
+				End Get
 
-        End Get
+				Set(ByVal value As Color)
 
-        Set(ByVal value As Color)
+					ForeColor = value
 
-            ForeColor = value
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property CalendarMonthBackground() As Color
 
-    Public Property CalendarMonthBackground() As Color
+				Get
 
-        Get
+					Return BackColor
 
-            Return BackColor
+				End Get
 
-        End Get
+				Set(ByVal value As Color)
 
-        Set(ByVal value As Color)
+					BackColor = value
 
-            BackColor = value
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property Value() As DateTime
 
-    Public Property Value() As DateTime
+				Get
 
-        Get
+					Return SelectionStart
 
-            Return SelectionStart
+				End Get
 
-        End Get
+				Set(ByVal value As DateTime)
 
-        Set(ByVal value As DateTime)
+					SelectionStart = SelectionEnd = value
 
-            SelectionStart = SelectionEnd = value
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Event NullButtonDown As DateTimePickerAdv.NullButtonEventHandler
 
-    Public Event NullButtonDown As DateTimePickerAdv.NullButtonEventHandler
+			Public Event SelectDate As DateTimePickerAdv.SelectDateEventHandler
 
-    Public Event SelectDate As DateTimePickerAdv.SelectDateEventHandler
+			Public Event DateChange As DateTimePickerAdv.DateChangedEventHandler
 
-    Public Event DateChange As DateTimePickerAdv.DateChangedEventHandler
 
 
+			Public Sub New()
 
-    Public Sub New()
+				AddHandler Me.DateSelected, AddressOf OnDateSelected
 
-        AddHandler Me.DateSelected, AddressOf OnDateSelected
+				AddHandler Me.DateChanged, AddressOf OnDateChanged
 
-        AddHandler Me.DateChanged, AddressOf OnDateChanged
+			End Sub
 
-    End Sub
 
 
+			Protected Sub OnDateSelected(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
 
-    Protected Sub OnDateSelected(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
+				RaiseEvent SelectDate(Me, New EventArgs())
 
-        RaiseEvent SelectDate(Me, New EventArgs())
+			End Sub
 
-    End Sub
+			Protected Sub OnDateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
 
-    Protected Sub OnDateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
+				RaiseEvent DateChange(Me, New EventArgs())
 
-        RaiseEvent DateChange(Me, New EventArgs())
+			End Sub
 
-    End Sub
 
 
+			Public ReadOnly Property Culture() As String
 
-    Public ReadOnly Property Culture() As String
+				Get
 
-        Get
+					Return "Not Supported"
 
-            Return "Not Supported"
+				End Get
 
-        End Get
+			End Property
 
-    End Property
 
 
+			Public Sub FireNullEvent()
 
-    Public Sub FireNullEvent()
+				RaiseEvent NullButtonDown(Me, New EventArgs())
 
-        RaiseEvent NullButtonDown(Me, New EventArgs())
+			End Sub
 
-    End Sub
 
 
+			Private Property Culture() As CultureInfo Implements IDateTimePickerAdvCalendar.Culture
 
-    Private Property Culture() As CultureInfo Implements IDateTimePickerAdvCalendar.Culture
+				Get
 
-        Get
+					Throw New Exception("The method or operation is not implemented.")
 
-            Throw New Exception("The method or operation is not implemented.")
+				End Get
 
-        End Get
+				Set(ByVal value As CultureInfo)
 
-        Set(ByVal value As CultureInfo)
+					Throw New Exception("The method or operation is not implemented.")
 
-            Throw New Exception("The method or operation is not implemented.")
+				End Set
 
-        End Set
+			End Property
 
-    End Property
+		End Class
 
-End Class
-
-
+    ~~~
+    {:.prettyprint }
 
 80. Set theActive property of the MonthCalendar to True. Set the DateTimePickerAdv's CustomPopupWindow property to the PopupControlContainer control. Set the DateTimePickerAdv's CustomDrop property to theTrue. 
 
-[C#]
+    ~~~ cs
+
+		this.dateTimePickerAdv1.CustomDrop = true;
+
+		this.dateTimePickerAdv1.CustomPopupWindow = this.popupControlContainer1;
+
+		//Setting the DateTimePickerAdv control to consider the interface events by enabling Active property
+
+		this.MonthCalendar.Active = true;
+
+		//Adding Calendar to the Popup Control Container
+
+		this.popupControlContainer1.Controls.Add(this.MonthCalendar);
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-this.dateTimePickerAdv1.CustomDrop = true;
+		Me.dateTimePickerAdv1.CustomDrop = True 
 
-this.dateTimePickerAdv1.CustomPopupWindow = this.popupControlContainer1;
+		Me.dateTimePickerAdv1.CustomPopupWindow = Me.popupControlContainer1 
 
-//Setting the DateTimePickerAdv control to consider the interface events by enabling Active property
+		'Setting the DateTimePickerAdv control to consider the interface events by enabling Active property 
 
-this.MonthCalendar.Active = true;
+		Me.MonthCalendar.Active = True 
 
-//Adding Calendar to the Popup Control Container
+		'Adding Calendar to the Popup Control Container 
 
-this.popupControlContainer1.Controls.Add(this.MonthCalendar);
+		Me.popupControlContainer1.Controls.Add(Me.MonthCalendar)
 
-
-
-[VB.NET]
-
-
-
-Me.dateTimePickerAdv1.CustomDrop = True 
-
-Me.dateTimePickerAdv1.CustomPopupWindow = Me.popupControlContainer1 
-
-'Setting the DateTimePickerAdv control to consider the interface events by enabling Active property 
-
-Me.MonthCalendar.Active = True 
-
-'Adding Calendar to the Popup Control Container 
-
-Me.popupControlContainer1.Controls.Add(Me.MonthCalendar)
-
-
+    ~~~
+    {:.prettyprint }
 
 81. In the button click event, call the MyCustomCalendar's FireNullEvent method. 
 
-[C#]
+    ~~~ cs
 
 
 
-private void buttonAdv1_Click(object sender, EventArgs e)
+		private void buttonAdv1_Click(object sender, EventArgs e)
 
-{
+		{
 
-    //Calling the below method to fire the Null Event of the Calendar control created
+			//Calling the below method to fire the Null Event of the Calendar control created
 
-    MonthCalendar.FireNullEvent();
+			MonthCalendar.FireNullEvent();
 
-}
+		}
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs)
-
-    'Calling the below method to fire the Null Event of the Calendar control created 
-
-    MonthCalendar.FireNullEvent()
-
-End Sub
+    ~~~ vbnet
 
 
+
+		Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs)
+
+			'Calling the below method to fire the Null Event of the Calendar control created 
+
+			MonthCalendar.FireNullEvent()
+
+		End Sub
+
+    ~~~
+    {:.prettyprint }
 
 82. Run the application and click the dropdown button of the DateTimePickerAdv control to display the custom popup. 
 
-![](Editors-Package_images/Editors-Package_img215.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img215.jpeg)
+
 
 
 83. When you click the button, the DateTimePickerAdv will display the NullString specified in NullString property.
 
-![](Editors-Package_images/Editors-Package_img216.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img216.jpeg)
+
 
 
 A sample which demonstrates adding a MonthCalendarAdv itself as a custom popup calendar to the DateTimePickerAdv control is available in the below sample installation location.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### DateTimePicker Events
+##### DateTimePicker Events
 
 Following are the events of DateTimePickerAdv control.
 
-_Table_ _194__: Property Table_
+_Table_ _194_: Property Table
 
 <table>
 <tr>
@@ -10324,7 +9963,7 @@ PopupClosed Event
 
 This event is handled when the popup is closed. Using the PopupCloseType member of the PopupClosedEventHandler, we can identify the type of closing.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10342,9 +9981,9 @@ private void dateTimePickerAdv1_PopupClosed(object sender, PopupClosedEventArgs 
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10360,7 +9999,9 @@ Private Sub dateTimePickerAdv1_PopupClosed(ByVal sender As Object, ByVal e As Po
 
 End Sub
 
-###### Frequently Asked Questions
+{% endhighlight %}
+
+##### Frequently Asked Questions
 
  This section illustrates the solutions for various task-based queries about the control.
 
@@ -10368,7 +10009,7 @@ How to change the date in a DateTimePickerAdv control, when it is ReadOnly?
 
 We can make the control read only by setting ReadOnly property to true. DateTimePickerAdv control have an option to change the date, even in ReadOnly mode using Arrow keys. Set ReadOnlyValueChange property to true to effect this setting.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10376,9 +10017,9 @@ this.dateTimePickerAdv1.ReadOnly = true;
 
 this.dateTimePickerAdv1.ReadOnlyValueChange = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10386,17 +10027,17 @@ Me.dateTimePickerAdv1.ReadOnly = True
 
 Me.dateTimePickerAdv1.ReadOnlyValueChange = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img217.jpeg)
-{:.image }
+
 
 
 How to display DateTimePickerAdv control programmatically?
 
 We can display the Calendar programmatically on a button click. The DisplayCalendar method should be called from the click event handler in order to show the control. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10410,9 +10051,9 @@ this.dateTimePickerAdv1.DisplayCalendar();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10426,11 +10067,13 @@ Me.dateTimePickerAdv1.DisplayCalendar()
 
 End Sub
 
+{% endhighlight %}
+
 Which event will raise when the date in the DateTimePickerAdv is changed?
 
 CalendarDateChanged event is raised when a date in the DateTimePickerAdv is changed using the keys, or using the mouse.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10446,9 +10089,9 @@ Console.WriteLine("Date Changed");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10462,11 +10105,13 @@ Private Sub Calendar_DateChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
+{% endhighlight %}
+
 Which event will raise when the month is changed using arrow button?
 
  When the month in the DateTimePickerAdv is changed using Arrow button, ValueChanged event is raised.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10488,9 +10133,9 @@ private void dateTimePickerAdv1_ValueChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10508,11 +10153,13 @@ Private Sub dateTimePickerAdv1_ValueChanged(ByVal sender As Object, ByVal e As E
 
 End Sub
 
+{% endhighlight %}
+
 How to close the DateTimePickerAdv's Drop-Down by hitting ENTER key or ESC key
 
 If you want to close the DateTimePickerAdv's drop-down, when you hit the ENTER key or the ESC key, you need to set DateTimePickerAdv.WantEnterKey property to _false_.
 
-_Table_ _195__: Property Table_
+_Table_ _195_: Property Table
 
 <table>
 <tr>
@@ -10526,19 +10173,276 @@ True – Drop-down is not closed when hitting the Enter key or Esc keyFalse – 
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.dateTimePickerAdv1.Calendar.WantEnterKey = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.dateTimePickerAdv1.Calendar.WantEnterKey = False
+
+
+//Setting 3D border style 
+
+this.monthCalendarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+//Setting "SunkenInner" 3D border style
+
+this.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+'Setting 3D border style 
+
+Me.monthCalendarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+
+'Setting "SunkenInner" 3D border style
+
+Me.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner
+
+{% endhighlight %}
+
+![](Editors-Package_images/Editors-Package_img128.jpeg)
+
+
+
+> Note: MonthCalendarAdv.ThemedBorder property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
+
+
+{% highlight c# %}
+
+
+
+//Setting border to "All" sides
+
+this.monthCalendarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All;
+
+//Setting color for 2D border
+
+this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+'Setting border to "All" sides
+
+Me.monthCalendarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
+
+'Setting color for 2D border
+
+this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue
+{% endhighlight %}
+
+
+![](Editors-Package_images/Editors-Package_img130.jpeg)
+
+
+
+See Also
+
+Background Settings, Visual Settings
+
+###### Background Settings
+
+Background image for the MonthCalendarAdv is specified in BackgroundImage property.
+
+{% highlight c# %}
+
+
+
+this.monthCalendarAdv1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("monthCalendarAdv1.BackgroundImage")));
+
+this.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+Me.monthCalendarAdv1.BackgroundImage = DirectCast((resources.GetObject("monthCalendarAdv1.BackgroundImage")), System.Drawing.Image) 
+
+Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch 
+
+{% endhighlight %}
+
+![](Editors-Package_images/Editors-Package_img131.jpeg)
+
+
+
+See Also
+
+Border Styles, Visual Settings
+
+###### Visual Settings
+
+Themes for MonthCalendarAdv
+
+Some sections of the MonthCalendarAdv control are themed by default. The below table list the properties which controls the themed behavior border, grid and scroll buttons.
+
+_Table_ _157_: Property Table
+
+<table>
+<tr>
+<td>
+MonthCalendarAdv Properties</td><td>
+Description</td></tr>
+<tr>
+<td>
+ThemedBorder</td><td>
+Specifies whether the border of the control is themed. By default it is true.</td></tr>
+<tr>
+<td>
+ThemedEnabledGrid</td><td>
+Specifies whether the grid holding the days is themed or not. By default it is false.</td></tr>
+<tr>
+<td>
+ThemedEnabledScrollButtons</td><td>
+Specifies whether the scroll buttons are themed. It is set to true by default.</td></tr>
+</table>
+
+
+{% highlight c# %}
+
+
+
+this.monthCalendarAdv1.ThemedBorder = true;
+
+this.monthCalendarAdv1.ThemedEnabledGrid = true;
+
+this.monthCalendarAdv1.ThemedEnabledScrollButtons = true;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+Me.monthCalendarAdv1.ThemedBorder = True
+
+Me.monthCalendarAdv1.ThemedEnabledGrid = True
+
+Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
+
+{% endhighlight %}
+
+
+![](Editors-Package_images/Editors-Package_img132.jpeg)
+
+
+
+Styles 
+
+MonthCalendarAdv supports the styles in the below table, which can be set through Style property.
+
+_Table_ _158_: Property Table
+
+<table>
+<tr>
+<td>
+MonthCalendarAdv Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+Style</td><td>
+Gets or Sets the visual style of the MonthCalendarAdv. The options are {{ '_Default_' | markdownify }}{{ '_OfficeXP_' | markdownify }}{{ '_Office2003_' | markdownify }}{{ '_VS2005_' | markdownify }}{{ '_Office2007_' | markdownify }}The default value is 'Default'.</td></tr>
+</table>
+
+
+{% highlight c# %}
+
+
+
+// Sample code for setting Office2003 style for MonthCalendarAdv
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+' Sample code for setting Office2003 style for MonthCalendarAdv
+
+Me.monthCalendarAdv1.Style  = Syncfusion.Windows.Forms.VisualStyle.Office2003
+
+{% endhighlight %}
+
+![](Editors-Package_images/Editors-Package_img133.jpeg)
+
+
+
+
+
+{% highlight c# %}
+
+
+
+//Sets the Color scheme as Silver when the style is Office2007
+
+this.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+'Sets the Color scheme as Silver when the style is Office2007
+
+Me.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
+
+{% endhighlight %}
+
+![](Editors-Package_images/Editors-Package_img134.jpeg)
+
+
+
+Custom Colors
+
+We can also apply custom colors to the MonthCalendarAdv control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+
+{% highlight c# %}
+
+
+
+this.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+
+Office2007Colors.ApplyManagedColors(this, Color.Orange);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+Me.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+
+Office2007Colors.ApplyManagedColors(Me, Color.Orange)
+
+{% endhighlight %}
+
+![](Editors-Package_images/Editors-Package_img135.jpeg)
+
+
+
+> Note: Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See_ Scroll Buttons
+>
+> Scroll Buttons.
+
+See Also
+
+Border Styles, Background Settings
 
 ### ColorUI Controls
 
@@ -10549,7 +10453,7 @@ The following advanced ColorUI Controls are discussed below.
 The Essential Tools ColorUIControl allows .NET developers to provide a standard user-interface which, is similar to the Visual Studio .NET color picker drop-down, for selecting colors in their Windows Forms applications. The ColorUIControl implements a palette type visual interface comprising of the System, Standard, Custom and UserColor color groups. The control can be used either as a regular control that is hosted within a parent container or as a drop-down. Refer ColorPickerButton to use ColorUIControl as drop down.
 
 ![](Editors-Package_images/Editors-Package_img218.jpeg)
-{:.image }
+
 
 
 The .NET framework provides a color dialog control which, allows applications to collect color information from users. However, the color dialog control does not provide any way to place a control within the layout of the application in order to collect color information. The Essential Tools ColorUIControl provides an easy to use color palette control that can be placed inline in applications.  
@@ -10584,86 +10488,88 @@ Concepts and Features
 ColorUIControl can be added through designer by just dragging-and-dropping it from thetoolbox onto the Windows Form Designer. 
 
 ![](Editors-Package_images/Editors-Package_img219.jpeg)
-{:.image }
+
 
 
 It can also be created programmatically as discussed below.
 
 84. Include the required namespace.
 
-[C#]
+    ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
+    ~~~
+    {:.prettyprint }
 
+    ~~~ vbnet
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+    ~~~
+    {:.prettyprint }
 
 85. Create an instance of the ColorUIControl control class. Specify its size and add it to the form.
 
-[C#]
+    ~~~ cs
 
 
 
-// Declaring and Initializing the control
+		// Declaring and Initializing the control
 
-private Syncfusion.Windows.Forms.ColorUIControl colorUIControl1;
+		private Syncfusion.Windows.Forms.ColorUIControl colorUIControl1;
 
-this.colorUIControl1=new Syncfusion.Windows.Forms.ColorUIControl();
+		this.colorUIControl1=new Syncfusion.Windows.Forms.ColorUIControl();
 
-//Specify the size for the control
+		//Specify the size for the control
 
-this.colorUIControl1.Size = new System.Drawing.Size(200, 136);
-
-
-
-Adding ColorUIControl to the form
-
-this.Controls.Add(this.colorUIControl1);
+		this.colorUIControl1.Size = new System.Drawing.Size(200, 136);
 
 
 
-[VB.NET]
+		Adding ColorUIControl to the form
+
+		this.Controls.Add(this.colorUIControl1);
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-' Declaring and Initializing the control
+		' Declaring and Initializing the control
 
-Private colorUIControl1 As Syncfusion.Windows.Forms.ColorUIControl
+		Private colorUIControl1 As Syncfusion.Windows.Forms.ColorUIControl
 
-Me.colorUIControl1 = New Syncfusion.Windows.Forms.ColorUIControl()
-
-
-
-'Specify the size for the control
-
-Me.colorUIControl1.Size = New System.Drawing.Size(200, 136)
+		Me.colorUIControl1 = New Syncfusion.Windows.Forms.ColorUIControl()
 
 
 
-' Adding ColorUIControl to the form
+		'Specify the size for the control
 
-Me.Controls.Add(Me.colorUIControl1)
+		Me.colorUIControl1.Size = New System.Drawing.Size(200, 136)
 
 
+
+		' Adding ColorUIControl to the form
+
+		Me.Controls.Add(Me.colorUIControl1)
+
+    ~~~
+    {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img220.jpeg)
-{:.image }
+
 
 
 See also
 
 Concepts and Features
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the ColorUI control.
 
@@ -10672,7 +10578,7 @@ Color Groups
 ColorUI control has three in-built color groups which are CustomColors, StandardColor, and SystemColors. This section gives you an idea of the color groups available.
 
 ![](Editors-Package_images/Editors-Package_img221.jpeg)
-{:.image }
+
 
 
 Displaying the Color Groups
@@ -10680,60 +10586,56 @@ Displaying the Color Groups
 We can control the display of the color groups using ColorGroups property. 
 
 ![](Editors-Package_images/Editors-Package_img222.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
 this.colorUIControl1.ColorGroups = ((Syncfusion.Windows.Forms.ColorUIGroups)((Syncfusion.Windows.Forms.ColorUIGroups.CustomColors | Syncfusion.Windows.Forms.ColorUIGroups.StandardColors)));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.colorUIControl1.ColorGroups = DirectCast(((Syncfusion.Windows.Forms.ColorUIGroups.CustomColors Or Syncfusion.Windows.Forms.ColorUIGroups.StandardColors)), Syncfusion.Windows.Forms.ColorUIGroups) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img223.jpeg)
-{:.image }
+
 
 
 User Groups
 
 ColorGroups property also let you add user groups in addition to the standard groups. The color palette for the UserGroups will be CustomColors, by default.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.colorUIControl1.ColorGroups = ((Syncfusion.Windows.Forms.ColorUIGroups)(((Syncfusion.Windows.Forms.ColorUIGroups.CustomColors | Syncfusion.Windows.Forms.ColorUIGroups.StandardColors)| Syncfusion.Windows.Forms.ColorUIGroups.UserColors)));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.colorUIControl1.ColorGroups = DirectCast((((Syncfusion.Windows.Forms.ColorUIGroups.CustomColors Or  Syncfusion.Windows.Forms.ColorUIGroups.StandardColors) Or Syncfusion.Windows.Forms.ColorUIGroups.UserColors)),  Syncfusion.Windows.Forms.ColorUIGroups) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img224.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img225.jpeg)
-{:.image }
- _Note: We can add custom text for the tabs of the Color groups. See_ Tab Text _for details._
 
-> ![](Editors-Package_images/Editors-Package_img226.jpeg)
-{:.image }
- _Note: The Custom Color Panels and User Color Panels can be stretched according to the size of the control. Refer_ ColorUIControl Appearance _for details._
+> Note: We can add custom text for the tabs of the Color groups. See_ Tab Text _for details.
+
+> Note: The Custom Color Panels and User Color Panels can be stretched according to the size of the control. Refer_ ColorUIControl Appearance _for details.
 
 See Also
 
@@ -10743,7 +10645,7 @@ Tab Text
 
 The default tab text of the ColorGroups can be set using the below properties.
 
-_Table_ _196__: Property Table_
+_Table_ _196_: Property Table
 
 <table>
 <tr>
@@ -10769,7 +10671,7 @@ Set the text displayed on the User colors tab.The tab name can be reset using Re
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10781,9 +10683,9 @@ this.colorUIControl1.UserTabName = "User Defined";
 
 this.colorUIControl1.CustomTabName = "Palettes";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10795,17 +10697,15 @@ Me.colorUIControl1.UserTabName = "User Defined"
 
 Me.colorUIControl1.CustomTabName = "Palettes"
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img227.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img228.jpeg)
-{:.image }
- _Note: We can also change the font style of the tab text using ColorUIControl.Font property._
 
-###### ColorUIControl Appearance
+> Note: We can also change the font style of the tab text using ColorUIControl.Font property.
+
+##### ColorUIControl Appearance
 
 This section discusses the appearance, border styles and size settings of the ColorUIControl.
 
@@ -10813,7 +10713,7 @@ Border Styles
 
 The border styles for the ColorUIControl can be set through BorderStyle property.
 
-_Table_ _197__: Property Table_
+_Table_ _197_: Property Table
 
 <table>
 <tr>
@@ -10823,35 +10723,32 @@ Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets border style for the control. The options are,{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D (default) and_  | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Sets border style for the control. The options are,{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D (default) and_'  | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.colorUIControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.colorUIControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img229.jpeg)
-{:.image }
+
 
 
 Panel Sizing
 
 The Custom and User color panels can be stretched according to the size of the control using the below properties respectively.
 
-_Table_ _198__: Property Table_
+_Table_ _198_: Property Table
 
 <table>
 <tr>
@@ -10869,7 +10766,7 @@ Gets or Sets enable stretch User colors panel on resize.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10877,9 +10774,9 @@ this.colorUIControl1.CustomColorsStretchOnResize = true;
 
 this.colorUIControl1.UserColorsStretchOnResize = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10887,10 +10784,10 @@ Me.colorUIControl1.CustomColorsStretchOnResize = True
 
 Me.colorUIControl1.UserColorsStretchOnResize = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img230.jpeg)
-{:.image }
+
 
 
 ###### Runtime Settings
@@ -10907,7 +10804,7 @@ The options are as follows.
 
 Use SelectedColor property to specify the initially selected color. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10915,9 +10812,9 @@ this.colorUIControl1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelect
 
 this.colorUIControl1.SelectedColor = System.Drawing.Color.OrangeRed;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10925,15 +10822,13 @@ Me.colorUIControl1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelected
 
 Me.colorUIControl1.SelectedColor = System.Drawing.Color.OrangeRed;
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img231.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img232.jpeg)
-{:.image }
- _Note: These property settings can be reset using ResetSelectedColorGroup() and ResetSelectedColor() methods._
+
+> Note: These property settings can be reset using ResetSelectedColorGroup() and ResetSelectedColor() methods.
 
 See Also
 
@@ -10949,7 +10844,7 @@ This event is handled when a color of a Color Group is selected. The below examp
 
 In the ColorSelected event, the following coding ensures that the popupControlContainer containing the ColorUI Control closes a color is selected.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10967,9 +10862,10 @@ pcc.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done);
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10987,34 +10883,36 @@ pcc.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done)
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 How to add a ColorUI Control to a Popup Menu?
 
-##### Frequently Asked Questions
+#### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-###### How to add a ColorUI Control to a Popup Menu
+##### How to add a ColorUI Control to a Popup Menu
 
 To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlContainer. Follow the below steps to add a ColorUIControl to a popup menu.
 
 86. Drag and drop a ColorUIControl, a PopupMenu control, a PopupControlContainer control, a label control and a Panel control onto the form. Place the ColorUIControl inside the PopupControlContainer and the label inside the panel control.
 87. Right click PopupMenu and select 'Add Default ParentBarItem" from the verbs. 
 
-![](Editors-Package_images/Editors-Package_img233.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img233.jpeg)
+
 
 
 88. In the property grid of PopupMenu, expand ParentBarItem, then add a DropDownBarItem to the ParentBarItem using BarItem Collection Editor. Also set the PopupControlContainer as the DropDownBarItem's PopupControlContainer as shown in the image below.
 
-![](Editors-Package_images/Editors-Package_img234.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img234.jpeg)
+
 
 
 89. In the MouseUp event of the Panel control call the PopupMenu.Show method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -11026,9 +10924,9 @@ private void panel1_MouseUp(object sender, MouseEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11038,21 +10936,19 @@ Private Sub panel1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.For
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img235.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img236.jpeg)
-{:.image }
- _Note: You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event._ 
 
-###### How to customize the color cells of the UserColors group
+> Note: You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event.
+
+##### How to customize the color cells of the UserColors group
 
 Color cells of the UserGroup panel in a ColorUIControl, can be customized using the below code. We can use UserColors and UserCustomColor for this purpose.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -11082,9 +10978,9 @@ this.colorUIControl1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelect
 
 this.colorUIControl1.UserColorsStretchOnResize = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11109,132 +11005,137 @@ Next
     ' Resize of ColorCells can be done using property UserColorsStretchOnResize.
 
      Me.colorUIControl1.UserColorsStretchOnResize = True
+	 
+{% endhighlight %}
 
-> ![](Editors-Package_images/Editors-Package_img237.jpeg)
-{:.image }
- _Note : UserGroups should be selected in ColorGroups property to effect the above settings._
+> Note : UserGroups should be selected in ColorGroups property to effect the above settings.
 
 ![](Editors-Package_images/Editors-Package_img238.jpeg)
-{:.image }
 
 
-##### ColorPickerButton
+
+#### ColorPickerButton
 
 The Essential Tools ColorPickerButton allows.NET developers to provide a standard user interface similar to the Visual Studio .NET color picker dropdown, for selecting colors in Windows Forms applications. The ColorPickerButton displays the ColorUIControl as a drop-down in combination with a button. The .NET framework provides a color dialog control to allow applications to collect color information from users. However, the color dialog control does not provide any way to place a control within the layout of the application to collect color information. The Essential Tools ColorUIControl provides an easy to use color palette control that can be placed inline in your applications. 
 
 ![](Editors-Package_images/Editors-Package_img239.jpeg)
-{:.image }
+
 
 
 See also
 
 ColorUIControl
 
-###### Features
+##### Features
 
 ColorPickerButtondrops down a ColorUIControl and provides a standard user interface for selecting colors. 
 
 * ColorPicker button can be created programmatically.
 * The ColorPickerButton allows us to set the ColorGroups from which the color can be selected.
 * The selected color of ColorPickerButton can be set as Button's backcolor and Button's Text value.
-###### Creating ColorPickerButton
+
+##### Creating ColorPickerButton
 
 
 ColorPickerButton is available to the designer by just dragging-and-dropping the ColorPickerButton from the toolbox onto the form. 
 
 ![](Editors-Package_images/Editors-Package_img240.jpeg)
-{:.image }
+
 
 
 It can be created programmatically as discussed below. 
 
 90. Include the required namespace.
 
-[C#]
+    ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+    ~~~
+    {:.prettyprint }
 
 91. Create an instance of the ColorPickerButton control class and add it to the form.
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.ColorPickerButton colorPickerButton1;
+		private Syncfusion.Windows.Forms.ColorPickerButton colorPickerButton1;
 
-this.colorPickerButton2 = new Syncfusion.Windows.Forms.ColorPickerButton();
+		this.colorPickerButton2 = new Syncfusion.Windows.Forms.ColorPickerButton();
 
-this.colorPickerButton1.Text = "Select a Color";
+		this.colorPickerButton1.Text = "Select a Color";
 
-this.Controls.Add(this.colorPickerButton1);
+		this.Controls.Add(this.colorPickerButton1);
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private colorPickerButton1 As Syncfusion.Windows.Forms.ColorPickerButton
-
-Me.colorPickerButton2 = New Syncfusion.Windows.Forms.ColorPickerButton()
-
-Me.colorPickerButton1.Text = "Select a Color"
-
-Me.Controls.Add(Me.colorPickerButton1)
+    ~~~ vbnet
 
 
+
+		Private colorPickerButton1 As Syncfusion.Windows.Forms.ColorPickerButton
+
+		Me.colorPickerButton2 = New Syncfusion.Windows.Forms.ColorPickerButton()
+
+		Me.colorPickerButton1.Text = "Select a Color"
+
+		Me.Controls.Add(Me.colorPickerButton1)
+
+    ~~~
+    {:.prettyprint }
 
 92. Clicking this button at runtime will display the ColorUIControl.
 
 ![](Editors-Package_images/Editors-Package_img241.jpeg)
-{:.image }
+
 
 
 See Also
 
 Appearance and Behavior Settings
 
-###### Customization Settings
+##### Customization Settings
 
 ColorPickerButton displays the ColorUIControl as its dropdown. ColorPickerButton has properties to customize the ColorUIControl. Refer the User Guide for ColorUIControl. The size for the dropdown, i.e, ColorUIControl can be set using ColorUISize property.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.colorPickerButton1.ColorUISize = new System.Drawing.Size(250, 280);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.colorPickerButton1.ColorUISize = New System.Drawing.Size(250, 280)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img242.jpeg)
-{:.image }
+
 
 
 ColorPicker Appearance
 
 The appearance and behavior of the ColorPickerButton can be controlled using the below properties.
 
-_Table_ _199__: Property Table_
+_Table_ _199_: Property Table
 
 <table>
 <tr>
@@ -11252,7 +11153,7 @@ Specifies whether ColorPickerButton.SelectedColor is set as the button text valu
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -11260,9 +11161,9 @@ this.colorPickerButton1.SelectedAsBackcolor = true;
 
 this.colorPickerButton1.SelectedAsText = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11270,27 +11171,27 @@ Me.colorPickerButton1.SelectedAsBackcolor = True
 
 Me.colorPickerButton1.SelectedAsText = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img243.jpeg)
-{:.image }
+
 
 
 See Also
 
 Color Groups,Tab Text, ColorUIControlAppearance, Runtime Settings of ColorUIControl.
 
-##### ColorPickerUIAdv
+#### ColorPickerUIAdv
 
 The Essential Tools ColorPickerUIAdv allows.NET developers to provide Microsoft Word 2007 ColorCells for selecting colors in their applications. The ColorPickerUIAdv comprises of a panel displaying themed colors and standard colors. The ColorPickerUIAdv also comes with a More Colors option, in a color dialog, displaying more sub colors for the base colors in the control. 
 
 ![](Editors-Package_images/Editors-Package_img244.jpeg)
-{:.image }
+
 
 
 The.NET framework provides a color dialog control to allow applications to collect color information from users. However, the color dialog control does not provide any way to place a control within the layout of the application to collect color information. The Essential Tools ColorPickerUIAdv provides an easy to use color palette control that can be placed inline in your applications. 
 
-###### Features
+##### Features
 
 ColorPickerUIAdvprovides a color palette displaying standard and themed colors, that could be applied in Office2007 applications.
 
@@ -11303,71 +11204,75 @@ See Also
 
 Concepts and Features
 
-###### Creating ColorPickerUI Adv
+##### Creating ColorPickerUI Adv
 
 This section will help you to get started with using the ColorPickerUIAdv control.
 
 The ColorPickerUIAdv can be easily created in the designer, by dragging-and-dropping from the toolbox on to the windows application form.
 
 ![](Editors-Package_images/Editors-Package_img245.jpeg)
-{:.image }
+
 
 
 It can be added programmatically by performing the following steps.
 
 93. Include the namespace for the Tools Package.
 
-[C#]
+    ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+    ~~~
+    {:.prettyprint }
+
+    ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+    ~~~
+    {:.prettyprint }
 
 94. Create an instance of ColorPickerUIAdv and add it to the Windows Form.
 
-[C#]
+    ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv colorPickerUIAdv1;
+		private Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv colorPickerUIAdv1;
 
-ColorPickerUIAdv cpa = new ColorPickerUIAdv();
+		ColorPickerUIAdv cpa = new ColorPickerUIAdv();
 
-cpa.Size = new Size(200, 180);
+		cpa.Size = new Size(200, 180);
 
-this.Controls.Add(cpa);
+		this.Controls.Add(cpa);
 
+    ~~~
+    {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private colorPickerUIAdv1 As Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv 
-
-Private cpa As ColorPickerUIadv = New ColorPickerUIadv()
-
-Private cpa.Size = New Size(200, 180)
-
-Me.Controls.Add(cpa)
+    ~~~ vbnet
 
 
+
+		Private colorPickerUIAdv1 As Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv 
+
+		Private cpa As ColorPickerUIadv = New ColorPickerUIadv()
+
+		Private cpa.Size = New Size(200, 180)
+
+		Me.Controls.Add(cpa)
+
+    ~~~
+    {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img246.jpeg)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 The following aspects of the ColorPickerUIAdv have been discussed in this section.
 
@@ -11375,7 +11280,7 @@ Color Groups
 
 The default color groups available for ColorPickerUIAdv control are listed in the below table.
 
-_Table_ _200__: List of Groups_
+_Table_ _200_: List of Groups
 
 <table>
 <tr>
@@ -11395,20 +11300,19 @@ Represents the group of standard colors.</td></tr>
 ThemeGroup</td><td>
 Represents the group of theme colors.</td></tr>
 </table>
+
 ![](Editors-Package_images/Editors-Package_img247.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img248.jpeg)
-{:.image }
- _Note: You can also add custom ColorGroups apart from the above default groups. Refer Custom ColorGroups topic to know more._
+
+> Note: You can also add custom ColorGroups apart from the above default groups. Refer Custom ColorGroups topic to know more._
 
 Sections of Color Groups 
 
 The sections of a color group is illustrated in the below image.
 
 ![](Editors-Package_images/Editors-Package_img249.jpeg)
-{:.image }
+
 
 
 See Also
@@ -11420,34 +11324,31 @@ Custom Color Groups
 Custom Color Groups can be added to ColorPickerUIAdv control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
 
 ![](Editors-Package_images/Editors-Package_img250.jpeg)
-{:.image }
+
+
+{% highlight c# %}
 
 
 
+		Syncfusion.Windows.Forms.Tools.GroupColorItem groupColorItem1 = new Syncfusion.Windows.Forms.Tools.GroupColorItem(colorUIAdvGroup1, System.Drawing.Color.Crimson);
 
-[C#]
+		groupColorItem1.Color = System.Drawing.Color.Crimson;
 
+		groupColorItem1.Index = 0;
 
+		groupColorItem1.SubItems.Add(new Syncfusion.Windows.Forms.Tools.ColorItem(groupColorItem1, System.Drawing.Color.LightPink));
 
-Syncfusion.Windows.Forms.Tools.GroupColorItem groupColorItem1 = new Syncfusion.Windows.Forms.Tools.GroupColorItem(colorUIAdvGroup1, System.Drawing.Color.Crimson);
+		colorUIAdvGroup1.Items.Add(groupColorItem1);
 
-groupColorItem1.Color = System.Drawing.Color.Crimson;
+		colorUIAdvGroup1.Name = "Custom User Colors";
 
-groupColorItem1.Index = 0;
+		colorUIAdvGroup1.SubItemsDepth = 1;
 
-groupColorItem1.SubItems.Add(new Syncfusion.Windows.Forms.Tools.ColorItem(groupColorItem1, System.Drawing.Color.LightPink));
+		this.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1);
 
-colorUIAdvGroup1.Items.Add(groupColorItem1);
+{% endhighlight %}
 
-colorUIAdvGroup1.Name = "Custom User Colors";
-
-colorUIAdvGroup1.SubItemsDepth = 1;
-
-this.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1);
-
-
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11467,15 +11368,13 @@ colorUIAdvGroup1.SubItemsDepth = 1
 
 Me.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img251.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img252.jpeg)
-{:.image }
- _Note: The properties to customize the color groups are similar to default color groups. See how to Customize the Color Groups in_ Customizing the Color Groups _topic._
+
+> Note: The properties to customize the color groups are similar to default color groups. See how to Customize the Color Groups in_ Customizing the Color Groups _topic.
 
 Customizing the Color Groups
 
@@ -11485,7 +11384,7 @@ Adding Color Items and sub items to Color Groups
 
 The below properties lets you add color items and sub items.
 
-_Table_ _201__: Property Table_
+_Table_ _201_: Property Table
 
 <table>
 <tr>
@@ -11510,22 +11409,22 @@ Specifies the depth of the sub items, i.e the number of sub items that can be ad
 * Opening ColorItem Collection Editor using Items property.
 
 ![](Editors-Package_images/Editors-Package_img253.jpeg)
-{:.image }
+
 
 
 * Adding GroupColor items.
 
 ![](Editors-Package_images/Editors-Package_img254.jpeg)
-{:.image }
+
 
 
 * Adding color / sub items to the GroupColor items.
 
 ![](Editors-Package_images/Editors-Package_img255.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -11535,9 +11434,9 @@ this.colorPickerUIAdv1.RecentGroup.IsSubItemsVisible = true;
 
 this.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11547,15 +11446,13 @@ Me.colorPickerUIAdv1.RecentGroup.IsSubItemsVisible = True
 
 Me.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img256.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img257.jpeg)
-{:.image }
- _Note: To know how to customize a color item, refer_ Color Items _topic._
+
+> Note: To know how to customize a color item, refer_ Color Items _topic.
 
 Color Items
 
@@ -11563,60 +11460,50 @@ Customizing Color Items
 
 Size of the color items can be set through ColorItemSize property. Default width is 13 and height is 13.
 
-> ![](Editors-Package_images/Editors-Package_img258.jpeg)
-{:.image }
- _Note: The colors within the groups are clickable at design time and you can change the color using property grid as in the below image._
+> Note: The colors within the groups are clickable at design time and you can change the color using property grid as in the below image.
 
 ![](Editors-Package_images/Editors-Package_img259.jpeg)
-{:.image }
 
 
-[C#]
 
-
+{% highlight c# %}
 
 this.colorPickerUIAdv1.ColorItemSize = new System.Drawing.Size(20, 20);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.colorPickerUIAdv1.ColorItemSize = New System.Drawing.Size(20, 20)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img260.jpeg)
-{:.image }
+
 
 
 Spacing Between Color Items
 
 HorizontalItemsSpacing and VerticalItemsSpacing properties of ColorPickerUIAdv control can be used to set the horizontal and vertical spacing between the color items respectively. Default value of these properties are 4 and 0 respectively.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.colorPickerUIAdv1.HorizontalItemsSpacing = 15;
 
 this.colorPickerUIAdv1.VerticalItemsSpacing = 15;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.colorPickerUIAdv1.HorizontalItemsSpacing = 15
 
 Me.colorPickerUIAdv1.VerticalItemsSpacing = 15
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img261.jpeg)
-{:.image }
+
 
 
 See Also
@@ -11627,7 +11514,7 @@ Header Settings
 
 The below properties are used to change the default appearance of the color group headers.
 
-_Table_ _202__: Property Table_
+_Table_ _202_: Property Table
 
 <table>
 <tr>
@@ -11643,7 +11530,8 @@ Sets the height for the color group header. Default value is 20.</td></tr>
 Name</td><td>
 Sets the name of the color group, i.e, the header text.</td></tr>
 </table>
-_Table_ _203__: Property Table_
+
+_Table_ _203_: Property Table
 
 <table>
 <tr>
@@ -11661,7 +11549,7 @@ Sets the font for the header text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -11681,9 +11569,9 @@ this.colorPickerUIAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
 this.colorPickerUIAdv1.Font = new System.Drawing.Font("Microsoft Sans Serif",9F, System.Drawing.FontStyle.Bold);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11703,10 +11591,10 @@ Me.colorPickerUIAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
 Me.colorPickerUIAdv1.Font = New System.Drawing.Font("Microsoft Sans Serif",9F, System.Drawing.FontStyle.Bold)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img262.jpeg)
-{:.image }
+
 
 
 ColorPickerUIAdv Appearance
@@ -11717,24 +11605,20 @@ Border Styles
 
 Border for ColorPickerUIAdv control can be Fixed Single, Fixed3D or None, which is set using BorderStyle property. By default the border style is None.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img263.jpeg)
-{:.image }
+
 
 
 See Also
@@ -11747,7 +11631,7 @@ The appearance and behavior settings, available for the ColorPickerUIAdv are dis
 
 By default ColorPickerUIAdv control has Office2007 look and feel. 
 
-_Table_ _204__: Property Table_
+_Table_ _204_: Property Table
 
 <table>
 <tr>
@@ -11765,9 +11649,7 @@ Sets the color scheme for the Office2007 Style.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 colorPickerUIAdv1.UseOffice2007Style = true;
 
@@ -11777,37 +11659,33 @@ colorPickerUIAdv1.UseOffice2007Style = true;
 
 colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 colorPickerUIAdv1.UseOffice2007Style = True
-
-
 
 'Sets Office2007 Black color Theme
 
 Private colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img264.jpeg)
-{:.image }
+
 
 
 The Office2007 Visual Styles can be turned off by setting the UseOffice2007Style property to false.
 
 ![](Editors-Package_images/Editors-Package_img265.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the ColorPickerUIAdv control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -11815,9 +11693,9 @@ this.colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Them
 
 Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11825,10 +11703,10 @@ Me.colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.
 
 Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img266.jpeg)
-{:.image }
+
 
 
 Runtime Selection
@@ -11836,42 +11714,38 @@ Runtime Selection
 The ColorPickerUIAdv control at run time provides a Color dialog, using which we can select and add colors to the color groups.
 
 ![](Editors-Package_images/Editors-Package_img267.jpeg)
-{:.image }
+
 
 
 Color Selection at run time
 
 Automatic color that has to be selected, when Automatic button is clicked at run time, is set through AutomaticColor property. Default color is black.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.colorPickerUIAdv1.AutomaticColor = System.Drawing.Color.OrangeRed;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.colorPickerUIAdv1.AutomaticColor = System.Drawing.Color.OrangeRed
 
+{% endhighlight %}
+
 ![](Editors-Package_images/Editors-Package_img268.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img269.jpeg)
-{:.image }
- _Note: Height of this Automatic button can be specified in ColorPickerUIAdv.ButtonHeight property. Default value is 23._
 
-###### Events
+> Note: Height of this Automatic button can be specified in ColorPickerUIAdv.ButtonHeight property. Default value is 23.
+
+##### Events
 
 Picked Event
 
 This event is raised every time a color is picked in the ColorPickerUIAdv control. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
 
-_Table_ _205__: Member Table_
+_Table_ _205_: Member Table
 
 <table>
 <tr>
@@ -11885,7 +11759,7 @@ Specifies System.Drawing.Color structure.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -11897,9 +11771,9 @@ private void colorPickerUIAdv1_Picked(object sender, ColorPickerUIAdv.ColorPicke
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11908,12 +11782,14 @@ Private Sub colorPickerUIAdv1_Picked(ByVal sender As Object, ByVal args As Color
 BackColor = colorPickerUIAdv1.SelectedItem.Color
 
  End Sub
+ 
+ {% endhighlight %}
 
 Item Selection 
 
 When mouse is hovered over a particular color item, ItemSelection event will be raised. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
 
-_Table_ _206__: Member Table_
+_Table_ _206_: Member Table
 
 <table>
 <tr>
@@ -11927,7 +11803,7 @@ Specifies System.Drawing.Color structure.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -11941,9 +11817,9 @@ Console.WriteLine("Color Name is " + e.Color.Name.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -11955,7 +11831,9 @@ Private Sub colorPickerUIAdv1_ItemSelection(ByVal sender As Object, ByVal args A
 
 End Sub
 
-###### Frequently Asked Questions
+{% endhighlight %}
+
+##### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
@@ -11967,17 +11845,17 @@ This is discussed in How to add a ColorUI Control to a Popup Menu? topic in Colo
 
 ComboBoxControls with multiple functionalities are listed below.
 
-##### ComboDropDown
+#### ComboDropDown
 
 The ComboDropDown control is a lightweight, combo box-like control that can host any control in the dropdown area. This control can be used to create a combo box that shows, for example, a TreeView or a ListView with multiple columns or any other control that helps in displaying the data appropriately. The control is used to host any control where ComboBoxBase hosts only ListBox derived controls. This flexible combo box control provides a standard combo box look-and-feel with the ability to host any control in the dropdown.
 
 Once a control is associated with the ComboDropDown to be displayed in the drop-down area, the developer is responsible for handling the data interaction between the combo's edit portion and the control in the drop-down. For example, if the ComboDropDown is used with a TreeView control in a dropdown, the developer has to provide the code to transfer the selected item from the TreeView control to the combo box and also from the combo box to the TreeView. You should also determine when the dropdown should close. In this case, the dropdown could close when the user double-clicks on a node.
 
 ![](Editors-Package_images/Editors-Package_img270.jpeg)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 ComboDropDown control lets users easily associate any control derived class in the DropDown region and contains following features.
 
@@ -11989,7 +11867,7 @@ See Also
 
 Concepts and Features
 
-###### Creating ComboDropDown
+##### Creating ComboDropDown
 
 In this section, ComboDropDown is used to host TreeView control and this can be achieved in the following ways.
 
@@ -12001,31 +11879,29 @@ The below steps will guide you with this.
 
 95. Create a new Visual C# application or VB.NET application in Visual Studio .NET. 
 
-![](Editors-Package_images/Editors-Package_img271.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img271.jpeg)
+
 
 
 96. Drag and drop a ComboDropDown control, TreeView control from the toolbox onto the form.
 
-![](Editors-Package_images/Editors-Package_img272.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img272.jpeg)
+
 
 
 97. Add nodes to the TreeView control and set HideSelection property to false. The HideSelection property specifies whether the selected tree node remains highlighted even when the tree view has lost the focus.
 
-![](Editors-Package_images/Editors-Package_img273.jpeg)
-{:.image }
+    ![](Editors-Package_images/Editors-Package_img273.jpeg)
+
 
 
 98.  Now set the ComboDropDown's PopupControl property to be the above TreeView instance. 
 
-![](Editors-Package_images/Editors-Package_img274.jpeg)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img274.jpeg)
 
 
-> ![](Editors-Package_images/Editors-Package_img275.jpeg)
-{:.image }
- _Note: We can also include code to set up the interaction between the combo and the treeview control. Refer_ Setting Interaction between ComboDropDown and TreeView.
+
+> Note: We can also include code to set up the interaction between the combo and the treeview control. Refer_ Setting Interaction between ComboDropDown and TreeView
 
 See also 
 
@@ -12037,73 +11913,84 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
 
 99. Include the required namespace.
 
-[C#]
+    ~~~ cs
+
+
+		using Syncfusion.Windows.Forms.Tools;
+
+    ~~~
+    {:.prettyprint }
+
+
+    ~~~ vbnet
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
+    ~~~
+    {:.prettyprint }
 
 
 100. Create an instance of the ComboDropDown control class.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.ComboDropDown comboDropDown1;
+		private Syncfusion.Windows.Forms.Tools.ComboDropDown comboDropDown1;
 
-this.comboDropDown1=new Syncfusion.Windows.Forms.Tools.ComboDropDown();
+		this.comboDropDown1=new Syncfusion.Windows.Forms.Tools.ComboDropDown();
 
-
-
-[VB.NET]
-
+     ~~~
+     {:.prettyprint }
 
 
-Private comboDropDown1 As Syncfusion.Windows.Forms.Tools.ComboDropDown
+     ~~~ vbnet
 
-Me.comboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
 
+
+		Private comboDropDown1 As Syncfusion.Windows.Forms.Tools.ComboDropDown
+
+		Me.comboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
+
+     ~~~
+     {:.prettyprint }
 
 
 101. Add TreeView in the drop-down portion of ComboDropDown. Finally add ComboDropDown to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-this.comboDropDown1.PopupControl=this.treeView1;
+		this.comboDropDown1.PopupControl=this.treeView1;
 
-this.Controls.Add(this.comboDropDown1);
+		this.Controls.Add(this.comboDropDown1);
 
-
-
-[VB.NET]
-
+     ~~~
+     {:.prettyprint }
 
 
-Me.comboDropDown1.PopupControl=Me.treeView1
+     ~~~ vbnet
 
-Me.Controls.Add(Me.comboDropDown1)
 
-> ![](Editors-Package_images/Editors-Package_img276.jpeg)
-{:.image }
- _Note:_ Refer Setting Interaction between ComboDropDown and TreeView _to set the interaction between the ComboDropDown and Treeview._
+
+		Me.comboDropDown1.PopupControl=Me.treeView1
+
+		Me.Controls.Add(Me.comboDropDown1)
+
+     ~~~
+     {:.prettyprint }
+
+		
+> Note:_ Refer Setting Interaction between ComboDropDown and TreeView _to set the interaction between the ComboDropDown and Treeview.
 
 See also
 
 Concepts and Features
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the ComboDropDown control.
 
@@ -12112,10 +11999,10 @@ ComboDropDown Text
 ComboDropDown control supports the properties which can change the appearance and behavior of the control's edit portion.
 
 ![](Editors-Package_images/Editors-Package_img277.jpeg)
-{:.image }
 
 
-_Table_ _207__: Property Table_
+
+_Table_ _207_: Property Table
 
 <table>
 <tr>
@@ -12137,7 +12024,7 @@ Specifies whether the text in the edit portion of ComboDropDown should be set to
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -12153,9 +12040,10 @@ this.comboDropDown1.CaseSensitiveAutocomplete = false;
 
 this.comboDropDown1.MatchFirstCharacterOnly = false;
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -12171,12 +12059,14 @@ Me.comboDropDown1.CaseSensitiveAutocomplete = False
 
 Me.comboDropDown1.MatchFirstCharacterOnly = False
 
+{% endhighlight %}
+
 Banner Text Support
 
 We can set banner text for the ComboBoxDropDown control. Refer BannerTextProvider Component topic for more details.
 
 ![](Editors-Package_images/Editors-Package_img278.jpeg)
-{:.image }
+
 
 
 ComboDropDown Appearance
@@ -12187,7 +12077,7 @@ Border Styles
 
 The below properties lets you set 3D border style for the control. 
 
-_Table_ _208__: Property Table_
+_Table_ _208_: Property Table
 
 <table>
 <tr>
@@ -12197,7 +12087,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets the 3D border style for the control. The options are,* {{ _RaisedOuter_ | markdownify }}* {{ _RaisedInner_ | markdownify }}* {{ _SunkenOuter_ | markdownify }}* {{ _SunkenInner_ | markdownify }}* {{ _Raised_ | markdownify }}* {{ _Sunken_ | markdownify }}* {{ _Etched_ | markdownify }}* {{ _Flat_ | markdownify }}* {{ _Adjust_  | markdownify }}* {{ _Bump_ | markdownify }}<br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
+Sets the 3D border style for the control. The options are,* {{ '_RaisedOuter_' | markdownify }}* {{ '_RaisedInner_' | markdownify }}* {{ '_SunkenOuter_' | markdownify }}* {{ '_SunkenInner_' | markdownify }}* {{ '_Raised_' | markdownify }}* {{ '_Sunken_' | markdownify }}* {{ '_Etched_' | markdownify }}* {{ '_Flat_' | markdownify }}* {{ '_Adjust_' | markdownify }}* {{ '_Bump_' | markdownify }}<br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
@@ -12213,7 +12103,7 @@ Specifies the border color for the control, when FlatStyle is set to "Flat". </t
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -12221,9 +12111,9 @@ this.comboDropDown1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInn
 
 this.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -12231,21 +12121,19 @@ Me.comboDropDown1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner
 
 Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img279.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img280.jpeg)
-{:.image }
- _Note: ComboDropDown.Style property should be set to Default to effect the above settings. See_ Themes and Styles _topic._
+
+> Note: ComboDropDown.Style property should be set to Default to effect the above settings. See_ Themes and Styles _topic.
 
 Themes And Styles
 
 The below given properties enhances the look and feel of the ComboDropDown.
 
-_Table_ _209__: Property Table_
+_Table_ _209_: Property Table
 
 <table>
 <tr>
@@ -12259,11 +12147,11 @@ Specifies whether the control will ignore the theme's background color and draw 
 <tr>
 <td>
 Style</td><td>
-Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,{{ _Default,_ | markdownify }}{{ _OfficeXP,_ | markdownify }}{{ _Office2003,_ | markdownify }}{{ _VS2005 and_ | markdownify }}{{ _Office2007._ | markdownify }}</td></tr>
+Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,{{ '_Default,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003,_' | markdownify }}{{ '_VS2005 and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -12291,9 +12179,9 @@ this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005;
 
 this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;          
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -12321,17 +12209,17 @@ Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005
 
 Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img281.jpeg)
-{:.image }
+
 
 
 Office Color Schemes
 
 The ComboDropDown control supports blue, silver and black office colors scheme. It is set using Office2007ColorTheme property. Style property should be set to Office2007.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -12347,9 +12235,9 @@ this.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Th
 
 this.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black;                
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -12365,17 +12253,17 @@ Me.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
 
 Me.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img282.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the ComboDropDown control by setting Office2007ColorTheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -12383,9 +12271,9 @@ this.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Th
 
 Office2007Colors.ApplyManagedColors(this, Color.Orchid);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -12393,13 +12281,13 @@ Me.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
 
 Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img283.jpeg)
-{:.image }
 
 
-###### Event Handling
+
+##### Event Handling
 
 Events of ComboDropDown
 
@@ -12423,194 +12311,198 @@ Setting Interaction between ComboDrop-Down and TreeView
 
 102. Create a handler for the ComboDrop-Down's Drop-Down event and the TreeView's DoubleClick event. In the DoubleClick event, set the combo's text based on the selected node as follows.
 
-[C#]
+     ~~~ cs
 
 
 
-private void treeView1_DoubleClick(object sender, System.EventArgs e)
+		private void treeView1_DoubleClick(object sender, System.EventArgs e)
 
-{
+		{
 
-if(this.treeView1.SelectedNode != null)
-
-
-
-// Set the combodropdown's text to be the TreeNode's text.
-
-this.comboDropDown1.Text = this.treeView1.SelectedNode.Text;
-
-else
-
-this.comboDropDown1.Text = String.Empty;
+		if(this.treeView1.SelectedNode != null)
 
 
 
-// Close the combodropdown.
+		// Set the combodropdown's text to be the TreeNode's text.
 
-this.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done);
+		this.comboDropDown1.Text = this.treeView1.SelectedNode.Text;
 
-}
+		else
 
-
-
-[VB.NET]
+		this.comboDropDown1.Text = String.Empty;
 
 
 
-Private Sub treeView1_DoubleClick(sender As Object, e As System.EventArgs) Handles treeView1.DoubleClick
+		// Close the combodropdown.
 
-If Not (Me.treeView1.SelectedNode Is Nothing) Then
+		this.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done);
 
+		}
 
+     ~~~
+     {:.prettyprint }
 
-' Set the combodropdown's text to be the TreeNode's text.
-
-Me.comboDropDown1.Text = Me.treeView1.SelectedNode.Text
-
-Else
-
-Me.comboDropDown1.Text = String.Empty
-
-End If
+     ~~~ vbnet
 
 
 
-' Close the combodropdown.
+		Private Sub treeView1_DoubleClick(sender As Object, e As System.EventArgs) Handles treeView1.DoubleClick
 
-Me.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done)
-
-End Sub 
+		If Not (Me.treeView1.SelectedNode Is Nothing) Then
 
 
+
+		' Set the combodropdown's text to be the TreeNode's text.
+
+		Me.comboDropDown1.Text = Me.treeView1.SelectedNode.Text
+
+		Else
+
+		Me.comboDropDown1.Text = String.Empty
+
+		End If
+
+
+
+		' Close the combodropdown.
+
+		Me.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done)
+
+		End Sub 
+
+     ~~~
+     {:.prettyprint }
 
 103. Simply traverses the tree structure recursively to find the matching node using the FindNode method discussed below.
 
-[C#]
+     ~~~ cs
 
 
 
-private TreeNode FindNode(TreeNodeCollection nodes, string text)
+		private TreeNode FindNode(TreeNodeCollection nodes, string text)
 
-{
+		{
 
-foreach(TreeNode child in nodes)
+		foreach(TreeNode child in nodes)
 
-if(child.Text == text)
+		if(child.Text == text)
 
-return child;
+		return child;
 
-foreach(TreeNode child in nodes)
+		foreach(TreeNode child in nodes)
 
-{
+		{
 
-TreeNode matched = this.FindNode(child.Nodes, text);
+		TreeNode matched = this.FindNode(child.Nodes, text);
 
-if(matched != null)
+		if(matched != null)
 
-return matched;
+		return matched;
 
-       }
+			   }
 
-return null;
+		return null;
 
-}
+		}
+ 
+     ~~~
+     {:.prettyprint }
 
-
-
-[VB.NET]
-
-
-
-Private Function FindNode(ByVal nodes As TreeNodeCollection, ByVal text As String) As TreeNode
-
-    For Each child As TreeNode In nodes
-
-        If child.Text = text Then
-
-            Return child
-
-        End If
-
-    Next child
-
-    For Each child As TreeNode In nodes
-
-        Dim matched As TreeNode = Me.FindNode(child.Nodes, text)
-
-        If Not matched Is Nothing Then
-
-            Return matched
-
-        End If
-
-    Next child
-
-    Return Nothing
-
-End Function
+     ~~~ vbnet
 
 
+
+		Private Function FindNode(ByVal nodes As TreeNodeCollection, ByVal text As String) As TreeNode
+
+			For Each child As TreeNode In nodes
+
+				If child.Text = text Then
+
+					Return child
+
+				End If
+
+			Next child
+
+			For Each child As TreeNode In nodes
+
+				Dim matched As TreeNode = Me.FindNode(child.Nodes, text)
+
+				If Not matched Is Nothing Then
+
+					Return matched
+
+				End If
+
+			Next child
+
+			Return Nothing
+
+		End Function
+
+     ~~~
+     {:.prettyprint }
 
 104. In the drop-down event, find the node whose text matches the text in the combo and make that the selected node, using the following code.
 
-[C#]
+     ~~~ cs
 
 
 
-private void comboDropDown1_DropDown(object sender, System.EventArgs e)
+		private void comboDropDown1_DropDown(object sender, System.EventArgs e)
 
-{
-
-
-
-// Before the drop-down is shown, select a TreeNode based on the text in the combo.
-
-if(this.comboDropDown1.Text != String.Empty)
-
-{
-
-TreeNode matchedNode = this.FindNode(this.treeView1.Nodes, this.comboDropDown1.Text);
-
-this.treeView1.SelectedNode = matchedNode;
-
-}
-
-}
+		{
 
 
 
-[VB.NET]
+		// Before the drop-down is shown, select a TreeNode based on the text in the combo.
+
+		if(this.comboDropDown1.Text != String.Empty)
+
+		{
+
+		TreeNode matchedNode = this.FindNode(this.treeView1.Nodes, this.comboDropDown1.Text);
+
+		this.treeView1.SelectedNode = matchedNode;
+
+		}
+
+		}
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-Private Sub comboDropDown1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs) Handles comboDropDown1.DropDown
+		Private Sub comboDropDown1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs) Handles comboDropDown1.DropDown
 
 
 
-' Before the drop-down is shown, select a TreeNode based on the text in the combo.
+		' Before the drop-down is shown, select a TreeNode based on the text in the combo.
 
-If Me.comboDropDown1.Text &lt;&gt; String.Empty Then
+		If Me.comboDropDown1.Text &lt;&gt; String.Empty Then
 
-Dim matchedNode As TreeNode = Me.FindNode(Me.treeView1.Nodes, Me.comboDropDown1.Text)
+		Dim matchedNode As TreeNode = Me.FindNode(Me.treeView1.Nodes, Me.comboDropDown1.Text)
 
-Me.treeView1.SelectedNode = matchedNode
+		Me.treeView1.SelectedNode = matchedNode
 
-End If
+		End If
 
-End Sub 
+		End Sub 
 
-
+     ~~~
+     {:.prettyprint }
 
 105. At run time, when the user double on a node, the node text will appears in the ComboDropDown. 
 106. Also when the user edits the text, the corresponding node will be selected in the tree in the drop down. 
 
-![](Editors-Package_images/Editors-Package_img284.jpeg)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img284.jpeg)
 
 
-> ![](Editors-Package_images/Editors-Package_img285.jpeg)
-{:.image }
- _Note: We can also suppress the dropdown event from firing by setting SuppressDropDownEvent property to true._
+
+> Note: We can also suppress the dropdown event from firing by setting SuppressDropDownEvent property to true._
 
 We can also associate a GridList control with the ComboDropDown and make it interactive. A sample which demonstrates this feature is available in the below sample installation location.
 
@@ -12626,7 +12518,7 @@ Drag the ComboDropDown and TreeView control onto the Form. Then add TreeView wit
 
 Listen to the ComboDrop-Down's PopupContainer's Popup event. This event will be fired after the drop-down is shown. In this event, call the drop-down control's Focus method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -12644,9 +12536,9 @@ this.treeView1.Focus();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -12662,13 +12554,13 @@ Private Sub AfterDropDownPopup(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img286.jpeg)
-{:.image }
 
 
-###### Frequently Asked Questions
+
+#### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
@@ -12684,99 +12576,102 @@ The steps are as follows.
 110. Set the PopupControl property of the ComboDropDown to the same Panel.
 111. To avoid closing the ComboDropDown after selecting the item in ComboBox, handle the SelectedIndexChanged event of both ComboBoxes and keep the DropDown showing.
 
-[C#]
+     ~~~ cs
 
 
 
-//Indicates whether the combo box is displaying its drop-down portion. 
+		//Indicates whether the combo box is displaying its drop-down portion. 
 
-private void comboBox1_SelectedIndexChanged(object sender,EventArgs e)
+		private void comboBox1_SelectedIndexChanged(object sender,EventArgs e)
 
-{
+		{
 
-comboDropDown1.DroppedDown=true;
+		comboDropDown1.DroppedDown=true;
 
-}
-
-
-
-private void comboBox2_SelectedIndexChanged(object sender,EventArgs e)
-
-{
-
-comboDropDown1.DroppedDown=true;
-
-}
+		}
 
 
 
-[VB.NET]
+		private void comboBox2_SelectedIndexChanged(object sender,EventArgs e)
+
+		{
+
+		comboDropDown1.DroppedDown=true;
+
+		}
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-'Indicates whether the combo box is displaying its drop-down portion. 
+		'Indicates whether the combo box is displaying its drop-down portion. 
 
-Private  Sub comboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+		Private  Sub comboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-comboDropDown1.DroppedDown=True
+		comboDropDown1.DroppedDown=True
 
-End Sub
-
-
-
-Private  Sub comboBox2_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-comboDropDown1.DroppedDown=True
-
-End Sub
+		End Sub
 
 
+
+		Private  Sub comboBox2_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+
+		comboDropDown1.DroppedDown=True
+
+		End Sub
+
+     ~~~
+     {:.prettyprint }
 
 112. In the button click event of the Button inside the panel, insert these codes to close DropDown and to change text of ComboDropDown.
-
-[C#]
-
-
-
-// Closes the dropdown and changes the text.
-
-private void button1_Click(object sender,EventArgs e) 
-
-{
-
-comboDropDown.Text=comboBox1.Text+ “ “ + comboBox2.Text;
-
-comboDropDown1.DroppedDown=false;
-
-} 
+ 
+     ~~~ cs
 
 
+		// Closes the dropdown and changes the text.
 
-[VB.NET]
+		private void button1_Click(object sender,EventArgs e) 
+
+		{
+
+		comboDropDown.Text=comboBox1.Text+ “ “ + comboBox2.Text;
+
+		comboDropDown1.DroppedDown=false;
+
+		} 
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-' Closes the dropdown and changes the text.
+		' Closes the dropdown and changes the text.
 
-Private  Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
+		Private  Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
-comboDropDown.Text=comboBox1.Text+ " works in" + comboBox2.Text
+		comboDropDown.Text=comboBox1.Text+ " works in" + comboBox2.Text
 
-comboDropDown1.DroppedDown=False
+		comboDropDown1.DroppedDown=False
 
-End Sub
+		End Sub
 
-
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img287.jpeg)
-{:.image }
+
 
 
 How to remove the current selection in ComboDropDown control?
 
 We can derive custom ComboDropDown control and override DrawListModeEditPortion property to remove the selection as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -12808,9 +12703,9 @@ public class CustomComboDropDown : ComboDropDown
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -12836,7 +12731,9 @@ Public Class CustomComboDropDown : Inherits ComboDropDown
 
 End Class
 
-##### ComboBoxAdv
+{% endhighlight %}
+
+#### ComboBoxAdv
 
 ComboBoxAdv is an advanced combo box control that provides a similar object model as the framework of the ComboBox control, with a lot of additional features. ComboBoxAdv is inherited from ComboBoxBaseDataBound, derived from [ComboBoxBase](http://help.syncfusion.com/ug/windows%20forms/documents/howtochangethebackco6.htm) control.
 
@@ -12845,7 +12742,7 @@ Based on the ComboBoxBase control, the ComboBoxAdv pre-binds a list box in its d
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdvControl.png](Editors-Package_images/Editors-Package_img288.png)
-{:.image }
+
 
 
 Key Features
@@ -12857,7 +12754,8 @@ ComboBoxAdv is an advanced ComboBox control that contains the following feature
 * [AutoComplete](http://help.syncfusion.com/ug/windows%20forms/documents/autocompletesupport1.htm) functionality can be provided.
 * You can bind the ComboBoxAdv to any external datasource. See [DataBinding.](http://help.syncfusion.com/ug/windows%20forms/documents/databinding8.htm)
 * You can set visual styles to enrich your application.
-###### Getting Started
+
+##### Getting Started
 
 
 This section briefly describes how to design a ComboBoxAdv Control in a WindowsForms Application.
@@ -12875,7 +12773,7 @@ Adding a ComboBoxAdv control
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv in toolbox.png](Editors-Package_images/Editors-Package_img289.png)
-{:.image }
+
 
 
 Configuring the ComboBoxAdv control
@@ -12885,7 +12783,7 @@ The most commonly used settings of the TreeNavigator control can be configured e
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv smart tag.png](Editors-Package_images/Editors-Package_img290.png)
-{:.image }
+
 
 
 To add ComboBoxAdv Control to a Windows Forms Application through code behind, follow the given steps.
@@ -12894,145 +12792,117 @@ To add ComboBoxAdv Control to a Windows Forms Application through code behind, f
 
 
 
- [C#]
+     ~~~ cs
+
+		//Namespaces.
+
+		using Syncfusion.Windows.Forms.Tools;
+
+		using Syncfusion.Windows.Forms;
+
+
+     ~~~
+     {:.prettyprint }
+
+
+     ~~~ vbnet
 
 
 
-//Namespaces.
+		‘Namespaces.
 
-using Syncfusion.Windows.Forms.Tools;
+		Imports Syncfusion.Windows.Forms
 
-using Syncfusion.Windows.Forms;
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-
-
-[VB]
-
-
-
-‘Namespaces.
-
-Imports Syncfusion.Windows.Forms
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 114. Create an instance of the TreeNavigator control and add it to the Form.
 
 
+     ~~~ cs
+
+		//Creates ComboBoxAdv instance.
+
+		private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboBoxAdv1;
+
+		this.comboBoxAdv1 = new ComboBoxAdv();
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-//Creates ComboBoxAdv instance.
+		'Creates ComboBoxAdv instance.
 
 
 
-private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboBoxAdv1;
+		 Private comboBoxAdv1 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
 
 
 
-this.comboBoxAdv1 = new ComboBoxAdv();
+		 Me.comboBoxAdv1 = New ComboBoxAdv()
 
-
-
- [VB]
-
-
-
-'Creates ComboBoxAdv instance.
-
-
-
- Private comboBoxAdv1 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
-
-
-
- Me.comboBoxAdv1 = New ComboBoxAdv()
-
-
+     ~~~
+     {:.prettyprint }
 
 
 
 115. Items can be added to ComboBoxAdv through String Collection Editor as it was done in Windows ComboBox control.
 
+     ~~~ cs
+
+		 //Adding items to ComboBoxAdv
+
+		 this.comboBoxAdv1.Items.Add(100);
+
+		 this.comboBoxAdv1.Items.Add(200);
+
+		 this.comboBoxAdv1.Items.Add(300);
+
+
+		'Adding items to ComboBoxAdv
+
+		 Me.comboBoxAdv1.Items.Add(100)
+
+		 Me.comboBoxAdv1.Items.Add(200)
+
+		 Me.comboBoxAdv1.Items.Add(300)
+
+     ~~~
+     {:.prettyprint }
+
+116. Finally add ComboBoxAdv to the form.
+
+
+     ~~~ cs
+		//Adding ComboBoxAdv to form
 
 
 
-
- //Adding items to ComboBoxAdv
-
-
-
- this.comboBoxAdv1.Items.Add(100);
+		this.Controls.Add(this.comboBoxAdv1);
 
 
 
- this.comboBoxAdv1.Items.Add(200);
+		'Adding ComboBoxAdv to form
 
 
 
- this.comboBoxAdv1.Items.Add(300);
+		 Me.Controls.Add(Me.comboBoxAdv1)
 
-
-
-
-
-
-
-'Adding items to ComboBoxAdv
-
-
-
- Me.comboBoxAdv1.Items.Add(100)
-
-
-
- Me.comboBoxAdv1.Items.Add(200)
-
-
-
- Me.comboBoxAdv1.Items.Add(300)
-
-
-
-116.  Finally add ComboBoxAdv to the form.
-
-
-
-
-
-
-
-//Adding ComboBoxAdv to form
-
-
-
-this.Controls.Add(this.comboBoxAdv1);
-
-
-
-
-
-
-
-'Adding ComboBoxAdv to form
-
-
-
- Me.Controls.Add(Me.comboBoxAdv1)
-
-
+     ~~~
+     {:.prettyprint }
 
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv items.png](Editors-Package_images/Editors-Package_img291.png)
-{:.image }
 
 
-###### Concepts and features
+
+##### Concepts and features
 
 ComboBoxAdv
 
@@ -13046,7 +12916,7 @@ Text Appearance
 
 The following properties customize the text in the ComboBoxAdv control.
 
-_Table_ _210__: Properties_
+_Table_ _210_: Properties
 
 <table>
 <tr>
@@ -13068,7 +12938,7 @@ Sets the fore color for the text entered in the edit portion of the control.</td
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13087,10 +12957,10 @@ Sets the fore color for the text entered in the edit portion of the control.</td
   this.comboBoxAdv1.TextBox.ForeColor = Color.Red;
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13108,13 +12978,13 @@ Sets the fore color for the text entered in the edit portion of the control.</td
 
  Me.comboBoxAdv1.TextBox.ForeColor = Color.Red
 
-
+{% endhighlight %}
 
 Text selection
 
 The selection of text during runtime can be controlled through the following properties.
 
-_Table_ _211__: Properties_
+_Table_ _211_: Properties
 
 <table>
 <tr>
@@ -13136,7 +13006,7 @@ Sets the starting point of the text selection.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13154,9 +13024,9 @@ Sets the starting point of the text selection.</td></tr>
 
  this.comboBoxAdv1.TextBox.SelectionStart = 2;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13174,13 +13044,13 @@ Sets the starting point of the text selection.</td></tr>
 
  Me.comboBoxAdv1.TextBox.SelectionStart = 2
 
-
+{% endhighlight %}
 
 ReadOnly Settings
 
 The following properties deal with read-only settings for the ComboBoxAdv control. 
 
-_Table_ _212__: Properties_
+_Table_ _212_: Properties
 
 <table>
 <tr>
@@ -13198,7 +13068,7 @@ Specifies the dropdown style of the ComboBoxAdv control. Based on its options, i
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13212,9 +13082,9 @@ this.comboBoxAdv1.ReadOnly = true;
 
 this.comboBoxAdv1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13228,11 +13098,13 @@ Me.comboBoxAdv1.ReadOnly = True
 
 Me.comboBoxAdv1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple
 
+{% endhighlight %}
+
 Behavior Settings
 
 The following properties control the behavior of the text typed in the Textbox. 
 
-_Table_ _213__: Properties_
+_Table_ _213_: Properties_
 
 <table>
 <tr>
@@ -13266,7 +13138,7 @@ Specifies the maximum number of characters allowed in the edit portion of the Co
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13297,10 +13169,10 @@ this.comboBoxAdv1.AllowNewText = true;
 this.comboBoxAdv1.MaxLength = 32766;
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13330,6 +13202,8 @@ Me.comboBoxAdv1.AllowNewText = True
 
 Me.comboBoxAdv1.MaxLength = 32766
 
+{% endhighlight %}
+
 Banner Text Support
 
 You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvider Component](http://help.syncfusion.com/ug/windows%20forms/documents/bannertextsupport.htm) topic for more details.
@@ -13337,14 +13211,14 @@ You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvid
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/BannerText.png](Editors-Package_images/Editors-Package_img292.png)
-{:.image }
+
 
 
 DropDown Settings
 
 Dropdown for the ComboBoxAdv control can be customized using the folllowing properties.
 
-_Table_ _214__: Properties_
+_Table_ _214_: Properties
 
 <table>
 <tr>
@@ -13370,7 +13244,7 @@ When set to true, it sorts the dropdown items in the alphabetical order.</td></t
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13393,10 +13267,10 @@ this.comboBoxAdv1.MaxDropDownItems = 5;
 this.comboBoxAdv1.Sorted = true;
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13419,16 +13293,14 @@ this.comboBoxAdv1.Sorted = true;
  Me.comboBoxAdv1.Sorted = True
 
 
-
+{% endhighlight %}
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/DropDown settings.png](Editors-Package_images/Editors-Package_img293.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_1.jpg](Editors-Package_images/Editors-Package_img294.jpeg)
-{:.image }
- _Note: Data for the dropdown can be set using Items property. Refer_[Data Settings](http://help.syncfusion.com/ug/windows%20forms/documents/datasettings1.htm) _for details. To know about different dropdown styles available for the control, see ReadOnly Settings section in_ [TextBox](http://help.syncfusion.com/ug/windows%20forms/documents/textbox2.htm)_topic._
+
+> Note: Data for the dropdown can be set using Items property. Refer_[Data Settings](http://help.syncfusion.com/ug/windows%20forms/documents/datasettings1.htm) _for details. To know about different dropdown styles available for the control, see ReadOnly Settings section in_ [TextBox](http://help.syncfusion.com/ug/windows%20forms/documents/textbox2.htm)_topic.
 
 See Also 
 
@@ -13439,12 +13311,12 @@ Data Settings
 Data for the ComboBoxAdv is added through String Collection Editor, invoked through the ComboBoxAdv.Items property.
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Items collection.png](Editors-Package_images/Editors-Package_img295.png)
-{:.image }
 
 
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -13454,9 +13326,9 @@ Data for the ComboBoxAdv is added through String Collection Editor, invoked thro
 
  this.comboBoxAdv1.Items.AddRange(new object[] { "Currency", "DateTimePicker", "ComboBoxAdv", "AutoComplete", "ListBox", "ContextMenu", "CurrencyEdit" });
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13468,17 +13340,15 @@ Data for the ComboBoxAdv is added through String Collection Editor, invoked thro
 
 "CurrencyEdit"})
 
-
+{% endhighlight %}
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Items collectionimage.png](Editors-Package_images/Editors-Package_img296.png)
-{:.image }
 
 
 
 
-> ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_1.jpg](Editors-Package_images/Editors-Package_img297.jpeg)
-{:.image }
- _Note: ComboBoxAdv can also be bound to an external Data source like Data Table. Refer_ [Databinding](http://help.syncfusion.com/ug/windows%20forms/documents/databinding8.htm) _topic. To set image for dropdown items refer_ [Image settings](http://help.syncfusion.com/ug/windows%20forms/documents/imagesettings2.htm)_._
+
+> Note: ComboBoxAdv can also be bound to an external Data source like Data Table. Refer_ [Databinding](http://help.syncfusion.com/ug/windows%20forms/documents/databinding8.htm) _topic. To set image for dropdown items refer_ [Image settings](http://help.syncfusion.com/ug/windows%20forms/documents/imagesettings2.htm)_.
 
 Advanced Features
 
@@ -13488,7 +13358,7 @@ AutoComplete Support
 
 ComboBoxAdv has in-built support of auto-completion of the text entered in the control. This feature is automatically enabled for the control. To disable, set ComboBoxAdv.AutoComplete property to false. 
 
-_Table_ _215__: Properties_
+_Table_ _215_: Properties
 
 <table>
 <tr>
@@ -13506,7 +13376,7 @@ It specifies the AutoComplete behavior in the dropdown mode. When set to true, i
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13524,9 +13394,9 @@ this.comboBoxAdv1.CaseSensitiveAutocomplete = true;
 
 this.comboBoxAdv1.MatchFirstCharacterOnly = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13544,10 +13414,10 @@ this.comboBoxAdv1.MatchFirstCharacterOnly = true;
 
  Me.comboBoxAdv1.MatchFirstCharacterOnly = True
 
-
+{% endhighlight %}
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Autocomplete true.png](Editors-Package_images/Editors-Package_img298.png)
-{:.image }
+
 
 
 Data Binding
@@ -13568,7 +13438,7 @@ ComboBoxAdv can be bound to DataView using the following code example.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13624,9 +13494,9 @@ ComboBoxAdv can be bound to DataView using the following code example.
 
             this.comboBoxAdv1.DisplayMember = "place";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13682,10 +13552,10 @@ ComboBoxAdv can be bound to DataView using the following code example.
 
             Me.comboBoxAdv1.DisplayMember = "place"
 
-
+{% endhighlight %}
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxDataTable.png](Editors-Package_images/Editors-Package_img299.png)
-{:.image }
+
 
 
 ComboBoxAdv appearance
@@ -13696,7 +13566,7 @@ Border Styles
 
 This section discusses the border settings for the ComboBoxAdv control. 
 
-_Table_ _216__: Properties_
+_Table_ _216_: Properties
 
 <table>
 <tr>
@@ -13714,7 +13584,7 @@ Specifies the BorderSides of the control.The options are, * Left,* Top,* Right,
 <tr>
 <td>
 <br>FlatStyle</td><td>
-Specifies the Flat Style. The options are* {{ _Flat,_ | markdownify }}* {{ _Standard (Default) and_ | markdownify }}* {{ _System._ | markdownify }}</td></tr>
+Specifies the Flat Style. The options are* {{ '_Flat,_' | markdownify }}* {{ '_Standard (Default) and_' | markdownify }}* {{ '_System._' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>FlatBorderColor</td><td>
@@ -13722,7 +13592,7 @@ Specifies the color with which flat border should be drawn. FlatStyle must be se
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13736,9 +13606,9 @@ this.comboBoxAdv1.FlatStyle = Syncfusion.Windows.Forms.Tools.ComboFlatStyle.Flat
 
 this.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13752,10 +13622,10 @@ this.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue;
 
   Me.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_360.jpg](Editors-Package_images/Editors-Package_img300.jpeg)
-{:.image }
+
 
 
 Visual Styles
@@ -13764,7 +13634,7 @@ ComboBoxAdv supports visual styles such as Default, OfficeXP, Office2003, Office
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13804,9 +13674,9 @@ ComboBoxAdv supports visual styles such as Default, OfficeXP, Office2003, Office
 
             this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -13846,17 +13716,17 @@ ComboBoxAdv supports visual styles such as Default, OfficeXP, Office2003, Office
 
             Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
 
-
+{% endhighlight %}
 
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/VisualStyle.png](Editors-Package_images/Editors-Package_img301.png)
-{:.image }
 
 
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -13877,14 +13747,11 @@ this.comboBoxAdv3.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
   this.comboBoxAdv9.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
 
+{% endhighlight %}
 
 
 
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -13905,11 +13772,11 @@ Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.
 Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
 
-
+{% endhighlight %}
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Office color schemes.png](Editors-Package_images/Editors-Package_img302.png)
-{:.image }
+
 
 
 Custom Colors
@@ -13918,7 +13785,7 @@ You can also apply custom colors to the ComboBoxAdv control by setting Office200
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -13926,9 +13793,9 @@ this.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
 
 Office2007Colors.ApplyManagedColors(this, Color.Orchid);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -13936,10 +13803,10 @@ Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.
 
  Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
-
+{% endhighlight %}
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Customcolorarchid.PNG](Editors-Package_images/Editors-Package_img303.png)
-{:.image }
+
 
 
 Background Settings
@@ -13948,7 +13815,7 @@ When ComboBoxAdv control is set with some style, theme background is drawn. You 
 
 
 
-[C#]
+{% highlight c# %}
 
  //Background settings
 
@@ -13956,9 +13823,9 @@ When ComboBoxAdv control is set with some style, theme background is drawn. You 
 
  this.comboBoxAdv1.IgnoreThemeBackground = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
  'Background settings
 
@@ -13966,17 +13833,17 @@ When ComboBoxAdv control is set with some style, theme background is drawn. You 
 
  Me.comboBoxAdv1.IgnoreThemeBackground = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_362.jpg](Editors-Package_images/Editors-Package_img304.jpeg)
-{:.image }
+
 
 
 Image Settings
 
 Images can be easily associated with the items of the ComboBoxAdv control using the following properties. 
 
-_Table_ _217__: Properties_
+_Table_ _217_: Properties
 
 <table>
 <tr>
@@ -13998,7 +13865,7 @@ Invokes an editor and lets you to set image index for individual dropdown items.
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14008,9 +13875,9 @@ Invokes an editor and lets you to set image index for individual dropdown items.
 
  this.comboBoxAdv1.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.comboBoxAdv1, "Pointer", 0));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14020,13 +13887,15 @@ Invokes an editor and lets you to set image index for individual dropdown items.
 
   Me.comboBoxAdv1.ItemsImageIndexes.Add(New Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(Me.comboBoxAdv1, "Pointer", 0))
 
+  {% endhighlight %}
+  
 Image in TextBox
 
 The following code example is used to show the images together with the selected text in the TextArea of the ComboBoxAdv control.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14034,9 +13903,9 @@ The following code example is used to show the images together with the selected
 
  this.comboBoxAdv1.ShowImageInTextBox = true
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14044,45 +13913,42 @@ The following code example is used to show the images together with the selected
 
 Me.comboBoxAdv1.ShowImageInTextBox = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_363.jpg](Editors-Package_images/Editors-Package_img305.jpeg)
-{:.image }
+
 
 
 Customizable ComboBoxAdv height
-
-
-
-
-
 
 
 ComboBoxAdv allows you to customize the height of the Display area, making more space to display larger images and text items by setting the TextBoxHeight property of the ComboBox.
 
 
 
-[C#]
+{% highlight c# %}
 
 // Sets the height of the ComboBox.
 
 this.comboBoxAdv1.TextBoxHeight = 80;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Sets the height of the ComboBox.
 
 Me.comboBoxAdv1.TextBoxHeight = 80
 
-######  Event handling
+{% endhighlight %}
+
+#####  Event handling
 
 Selection Events
 
 The events present in the ComboxBox can be applied for ComboxBoxAdv control. 
 
-_Table_ _218__: Properties_
+_Table_ _218_: Properties
 
 <table>
 <tr>
@@ -14114,7 +13980,7 @@ Handled before the dropdown is shown.</td></tr>
 
 The ComboBoxAdv handles different events for the different user interaction scenarios. The occurrence and order of the events are tabulated as follows. 
 
-_Table_ _219__: Events Table_
+_Table_ _219_: Events Table
 
 <table>
 <tr>
@@ -14192,7 +14058,7 @@ No</td></tr>
 
 The events present in the ComboxBox can be applied for ComboxBoxAdv control. 
 
-_Table_ _220__: Properties_
+_Table_ _220_: Properties
 
 <table>
 <tr>
@@ -14224,7 +14090,7 @@ Handled before the dropdown is shown.</td></tr>
 
 The ComboBoxAdv handles different events for the different user interaction scenarios. The occurrence and order of the events are tabulated as follows. 
 
-_Table_ _221__: Properties_
+_Table_ _221_: Properties
 
 <table>
 <tr>
@@ -14308,7 +14174,7 @@ To populate the ComboBoxAdv containing the predefined percent values with othe
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14348,9 +14214,9 @@ public new Syncfusion.Windows.Forms.Tools.PercentTextBox TextBox
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14382,13 +14248,13 @@ End Property
 
 End Class
 
-
+{% endhighlight %}
 
 *   Create an instance for the derived class and initialize.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14404,9 +14270,9 @@ this.Controls.Add(this.PercentComboBoxAdv1);
 
 this.PercentComboBoxAdv1 .SelectedValueChanged+= newSystem.EventHandler(this.PercentComboBoxAdv1_SelectedValueChanged);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14422,13 +14288,13 @@ Me.Controls.Add(Me.PercentComboBoxAdv1)
 
 Me.PercentComboBoxAdv1.SelectedValueChanged+= NewSystem.EventHandler(Me.PercentComboBoxAdv1_SelectedValueChanged)
 
-
+{% endhighlight %}
 
 *       You can populate the derived control with values using Items property.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14452,9 +14318,9 @@ this.PercentComboBoxAdv1.Items.Add (56.8);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14480,13 +14346,13 @@ Me.PercentComboBoxAdv1.Items.Add (56.8)
 
 End Sub
 
-
+{% endhighlight %}
 
 * In the SelectedValueChanged event, you can display the corresponding selected value in Percent Format.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14500,9 +14366,9 @@ this.PercentComboBoxAdv1.TextBox.PercentValue = Double.Parse (this.PercentCombo
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14516,13 +14382,13 @@ Me.PercentComboBoxAdv1.TextBox.PercentValue = Double.Parse (Me.PercentComboBoxA
 
 End Sub
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image14_364.jpg](Editors-Package_images/Editors-Package_img306.jpeg)
-{:.image }
 
 
-###### Frequently Asked Questions
+
+##### Frequently Asked Questions
 
 
 
@@ -14534,7 +14400,7 @@ You can handle the DropDown event of the ComboBoxAdv control and set it as shown
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14548,9 +14414,9 @@ You can handle the DropDown event of the ComboBoxAdv control and set it as shown
 
         }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14563,7 +14429,7 @@ You can handle the DropDown event of the ComboBoxAdv control and set it as shown
         End Sub
 
 
-
+{% endhighlight %}
 
 
 How to select multiple items in the dropdown?
@@ -14572,7 +14438,7 @@ In order to perform multiple selection, you can use the ComboxAdv or MultiColumn
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -14582,9 +14448,9 @@ this.comboBoxAdv1.ListBox.SelectionMode = SelectionMode.MultiExtended;
 
 this.multiColumnComboBox1.ListBox.SelectionMode = SelectionMode.MultiExtended;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14600,9 +14466,9 @@ Previously, once the ComboBoxAdv control was disabled, the BackColor property 
 
 Now, you can set the BackColor for the ComboBoxAdv control even in its disabled state by using the UseBackColor property.
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 //To change the backcolor of disabled ComboBoxAdv
 
@@ -14613,10 +14479,10 @@ this.comboBoxAdv1.UseBackColor = true;
 this.comboBoxAdv1.BackColor = Color.Red;
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -14625,8 +14491,10 @@ this.comboBoxAdv1.BackColor = Color.Red;
  Me.comboBoxAdv1.UseBackColor = True
 
  Me.comboBoxAdv1.BackColor = Color.Red
+ 
+ {% endhighlight %}
 
-#####  ComboBoxBase
+####  ComboBoxBase
 
 The flexible ComboBoxBase control is an alternative to the standard combo box control. It separates the edit portion from the drop-down list portion thereby making this architecture powerful and flexible. However, due to this separation, the object model of this control is different from that of the combo box. 
 
@@ -14635,7 +14503,7 @@ There is however, a ComboBoxAdv, which is based on the ComboBoxBase and provides
 Note that Essential Grid comes with a ListControl-derived GridListControl, which you can place in the drop-down area to get a multi-column drop-down combo.
 
 ![](Editors-Package_images/Editors-Package_img307.jpeg)
-{:.image }
+
 
 
 With the ComboBoxBase, you can plug in any ListControl-derived class as the list for the list portion of the combo box using the ListControl property.
@@ -14646,7 +14514,7 @@ See also
 
 ComboBoxAdv
 
-###### Features
+##### Features
 
 ComboBoxBase is an advanced ComboBox control that provides many improvements over the standard ComboBox control and contains following features.
 
@@ -14654,179 +14522,187 @@ ComboBoxBase is an advanced ComboBox control that provides many improvements ove
 * Supports AutoComplete.
 * We can specify the external datasource for ComboBoxBase control.
 * It provides a FlatStyle mode that lets users draw the control flat or use XP Themes.
+
 ###### Creating ComboBoxBase
 
 
 ComboBoxBase can be created easily through designer, by just dragging and dropping the ComboBoxBase control from the Toolbox.
 
 ![](Editors-Package_images/Editors-Package_img308.png)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img309.png)
-{:.image }
+
 
 
 To add data for the popup, add a listbox control to the form and select it in ListControl property.
 
 ![](Editors-Package_images/Editors-Package_img310.png)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img311.png)
-{:.image }
+
 
 
 It can be created through code by following the below steps.
 
 117. Added Shared.Base to the reference folder through solution explorer and include the below namespace in the code.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
 
 
-[VB.NET]
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
+	 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-Imports Syncfusion.Windows.Forms.Tools
-
+     ~~~
+     {:.prettyprint }	
 
 
 118. Create an instance of the ComboBoxBase control and ListBox.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
+		private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
 
-private System.Windows.Forms.ListBox listBox1;
-
-
-
-this.comboBoxBase1=new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
-
-this.listBox1=new ListBox();
+		private System.Windows.Forms.ListBox listBox1;
 
 
 
-[VB.NET]
+		this.comboBoxBase1=new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
+
+		this.listBox1=new ListBox();
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
+
+		Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
+
+		Private listBox1 As System.Windows.Forms.ListBox
 
 
 
-Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
+		Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
 
-Private listBox1 As System.Windows.Forms.ListBox
+		Me.listBox1 = New ListBox()
 
-
-
-Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
-
-Me.listBox1 = New ListBox()
-
-
+     ~~~
+     {:.prettyprint }
 
 119. Set the ListControl that will be used in the dropdown portion of ComboBoxBase and specify the size of ComboBoxBase. 
 
-[C#]
+     ~~~ cs
 
 
 
-this.comboBoxBase1.ListControl=this.listBox1;
+		this.comboBoxBase1.ListControl=this.listBox1;
 
-this.comboBoxBase1.Size=new Size(120,20);
+		this.comboBoxBase1.Size=new Size(120,20);
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.comboBoxBase1.ListControl=Me.listBox1
-
-Me.comboBoxBase1.Size = New Size(120,20)
+     ~~~ vbnet
 
 
+
+		Me.comboBoxBase1.ListControl=Me.listBox1
+
+		Me.comboBoxBase1.Size = New Size(120,20)
+
+     ~~~
+     {:.prettyprint }
 
 120. Specify the datasource. 
 
-[C#]
+     ~~~ cs
+
+		// Sets the datasource.
+
+		ArrayList USStates = new ArrayList(); 
+
+
+		USStates.Add(new USState("Washington", "WA")); 
+		USStates.Add(new USState("West Virginia", "WV")); 
+		USStates.Add(new USState("Wisconsin", "WI")); 
+		USStates.Add(new USState("Wyoming", "WY")); 
+
+
+		ListBox1.DataSource = USStates; 
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-// Sets the datasource.
+		' Sets the datasource.
 
-ArrayList USStates = new ArrayList(); 
-
-
-USStates.Add(new USState("Washington", "WA")); 
-USStates.Add(new USState("West Virginia", "WV")); 
-USStates.Add(new USState("Wisconsin", "WI")); 
-USStates.Add(new USState("Wyoming", "WY")); 
-
-
-ListBox1.DataSource = USStates; 
+		Dim USStates As ArrayList = New ArrayList()
 
 
 
-[VB.NET]
+		USStates.Add(New USState("Washington", "WA"))
+
+		USStates.Add(New USState("West Virginia", "WV"))
+
+		USStates.Add(New USState("Wisconsin", "WI"))
+
+		USStates.Add(New USState("Wyoming", "WY"))
 
 
 
-' Sets the datasource.
+		ListBox1.DataSource = USStates
 
-Dim USStates As ArrayList = New ArrayList()
-
-
-
-USStates.Add(New USState("Washington", "WA"))
-
-USStates.Add(New USState("West Virginia", "WV"))
-
-USStates.Add(New USState("Wisconsin", "WI"))
-
-USStates.Add(New USState("Wyoming", "WY"))
-
-
-
-ListBox1.DataSource = USStates
-
-
+     ~~~
+     {:.prettyprint }
 
 121. Finally add ComboBoxBase and Listbox to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-this.Controls.Add(this.listBox1);
+		this.Controls.Add(this.listBox1);
 
-this.Controls.Add(this.comboBoxBase1);
+		this.Controls.Add(this.comboBoxBase1);
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.Controls.Add(Me.listBox1)
-
-Me.Controls.Add(Me.comboBoxBase1)
+     ~~~ vbnet
 
 
+
+		Me.Controls.Add(Me.listBox1)
+
+		Me.Controls.Add(Me.comboBoxBase1)
+
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img312.png)
-{:.image }
+
 
 
 Refer Creating ListControl-Derived Controls about ListControl-Derived controls in detail.
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the ComboBoxBase control.
 
@@ -14850,7 +14726,7 @@ The BeginUpdate and EndUpdate methods enable you to add a large number of items 
 
 The Items, SelectedItem and SelectedIndices properties provide access to the three collections that are used by the ListBox.
 
-_Table_ _222__: Class Table_
+_Table_ _222_: Class Table
 
 <table>
 <tr>
@@ -14874,13 +14750,13 @@ Contains a collection of the selected indexes, which is a subset of the indexes 
 
 You should always implement an Items property and optionally implement an IndexFromPoint method and a TopIndex property. Implementing IndexFromPoint and TopIndex will enable QuickSelection capability for the combo box, wherein the user can click on the drop down button and start selecting items in the list, all this without releasing the mouse. You can find more information regarding these requirements in the class reference.
 
-###### Event Handling
+##### Event Handling
 
 Selection Events
 
 The ComboBoxBase fires different events for the different user interaction scenarios. The occurrence and order of the events are tabulated below.
 
-_Table_ _223__: Events Table_
+_Table_ _223_: Events Table
 
 <table>
 <tr>
@@ -14960,101 +14836,104 @@ This section deals with associating a CheckedListBox and handling the events. Af
 
 122. Create a CheckedListBox and populate it.
 
-![](Editors-Package_images/Editors-Package_img313.jpeg)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img313.jpeg)
+
 
 
 123. Associate it with the ComboBoxBase control.
 
-![](Editors-Package_images/Editors-Package_img314.jpeg)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img314.jpeg)
+
 
 
 124. To avoid the closing of dropdown when we are in checking the items, handle the DropDownCloseOnClick event and set args.Cancel=true.
 
-[C#]
+     ~~~ cs
 
 
 
-// Avoids the closing of dropdown.
+		// Avoids the closing of dropdown.
 
-private void comboBoxBase1_DropDownCloseOnClick(object sender, Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs args) 
+		private void comboBoxBase1_DropDownCloseOnClick(object sender, Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs args) 
 
-{
+		{
 
-args.Cancel=true;
+		args.Cancel=true;
 
-}
-
-
-
-[VB.NET]
+		}
 
 
-
-' Avoids the closing of dropdown.
-
-Private  Sub comboBoxBase1_DropDownCloseOnClick(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs)
-
-args.Cancel=True
-
-End Sub
+     ~~~
+     {:.prettyprint }
+	
+	 ~~~ vbnet
 
 
+
+		' Avoids the closing of dropdown.
+
+		Private  Sub comboBoxBase1_DropDownCloseOnClick(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs)
+
+		args.Cancel=True
+
+		End Sub
+
+     ~~~
+     {:.prettyprint }
 
 125. Handle SelectedIndexChanged event of the CheckedListBox and add the following code.
 
-[C#]
+     ~~~ cs  
 
 
 
-// Sets the corresponding selected text in the ComboBoxBase TextBox.
+		// Sets the corresponding selected text in the ComboBoxBase TextBox.
 
-private void checkedListBox1_SelectedIndexChanged(object sender, System.EventArgs e) 
+		private void checkedListBox1_SelectedIndexChanged(object sender, System.EventArgs e) 
 
-{
+		{
 
-comboBoxBase1.TextBox.Text="";
+		comboBoxBase1.TextBox.Text="";
 
-foreach(object s in checkedListBox1.CheckedItems ) 
+		foreach(object s in checkedListBox1.CheckedItems ) 
 
-comboBoxBase1.TextBox.Text  += s.ToString();
+		comboBoxBase1.TextBox.Text  += s.ToString();
 
-}
+		}
 
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
 
-[VB.NET]
+		' Sets the corresponding selected text in the ComboBoxBase TextBox.
 
+		Private  Sub checkedListBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
 
+		comboBoxBase1.TextBox.Text=""
 
-' Sets the corresponding selected text in the ComboBoxBase TextBox.
+		Dim s As Object
 
-Private  Sub checkedListBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
+		For Each s In checkedListBox1.CheckedItems
 
-comboBoxBase1.TextBox.Text=""
+		comboBoxBase1.TextBox.Text  += s.ToString()
 
-Dim s As Object
+		Next
 
-For Each s In checkedListBox1.CheckedItems
+		End Sub
 
-comboBoxBase1.TextBox.Text  += s.ToString()
-
-Next
-
-End Sub
-
-
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img315.jpeg)
-{:.image }
+
 
 
 DropDown Event
 
 In order to place ComboBoxBase within a PopupControlContainer, derive from our PopupControlContainer, override the OnPopup method and set the focus to the derived control. This ensures that the derived PopupControlContainer does not lose focus and close prematurely.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15091,9 +14970,9 @@ this.Focus();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15120,14 +14999,13 @@ MyBase.OnPopup(args)
 Me.Focus()
 End Sub
 
-
 End Class
 
-
+{% endhighlight %}
 
 Here the specification of the parent-child relationship between the ComboBoxBase's popup and the PopupControlContainer is explained with the help of coding.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15144,9 +15022,9 @@ this.popupControlContainer1.CurrentPopupChild = this.comboBoxBase1.PopupContaine
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15161,7 +15039,9 @@ Me.popupControlContainer1.CurrentPopupChild = Me.comboBoxBase1.PopupContainer
 
 End Sub
 
-##### MultiColumnComboBox
+{% endhighlight %}
+
+#### MultiColumnComboBox
 
 Based on our ComboBoxBase control, the MultiColumnComboBox is an advanced combo box control that has the capability to show multiple columns in the drop-down list. Also, since the drop-down list is bound virtually to the datasource, data binding to a very large datasource is instantaneous. 
 
@@ -15172,10 +15052,10 @@ This combo box automatically shows all the fields in the datasource. You can dat
 
 
 ![](Editors-Package_images/Editors-Package_img316.jpeg)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 MultiColumnComboBoxis an advanced combo box control that has the capability to show multiple columns in the drop-down list. It contains following features.
 
@@ -15187,63 +15067,63 @@ See Also
 
 Concepts and features
 
-###### Creating MultiColumnComboBox
+##### Creating MultiColumnComboBox
 
 The MultiColumnComboBox control provides full support for the Windows Forms designer. To use a MultiColumnComboBox control in your application, all you need to do is drag-and-drop the MultiColumnComboBox control from the toolbox onto your form. You can then set any of its properties through the property grid. 
 
 ![](Editors-Package_images/Editors-Package_img317.jpeg)
-{:.image }
+
 
 
 The MultiColumnComboBox can be created programmatically through code as detailed below.
 
 126. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 127. Create an instance of MultiColumnComboBox. Add that instance to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
+		private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
 
-this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
-
-
-
-this.Controls.Add(this.multiColumnComboBox1);
+		this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
 
 
 
-[VB.NET]
+		this.Controls.Add(this.multiColumnComboBox1);
 
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
 
-Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
+		Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
 
-Me.multiColumnComboBox1 = New Syncfusion.Windows.Forms.Tools.MultiColumnComboBox()
+		Me.multiColumnComboBox1 = New Syncfusion.Windows.Forms.Tools.MultiColumnComboBox()
 
+		Me.Controls.Add(Me.multiColumnComboBox1)
 
-
-Me.Controls.Add(Me.multiColumnComboBox1)
-
-
+     ~~~
+     {:.prettyprint }
 
 After creating MultiColumnComboBox, you can bound them using data source. Refer Databinding.
 
@@ -15251,7 +15131,7 @@ See also
 
 Concepts and Features
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar with using the MultiColumnComboBox control.
 
@@ -15260,7 +15140,7 @@ Multiple Columns
 MultiColumnComboBox control is a ComboBoxAdv control with multiple columns. Multiple columns will be enabled by default. To disable this, set MultiColumn property to false. We can display the headers for the columns using ShowColumnHeader property. 
 
 ![](Editors-Package_images/Editors-Package_img318.jpeg)
-{:.image }
+
 
 
 We can bind external data to the MultiColumnComboBox control. Refer DataBinding topic to know more.
@@ -15269,7 +15149,7 @@ Selection Color
 
 We can specify the color for the alpha blended selections using AlphaBlendSelectionColor property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15279,9 +15159,9 @@ this.multiColumnBoundCombo.ShowColumnHeader = true;
 
 this.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15290,6 +15170,8 @@ Me.multiColumnBoundCombo.MultiColumn = True
 Me.multiColumnBoundCombo.ShowColumnHeader = True
 
 Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
+
+{% endhighlight %}
 
 See Also
 
@@ -15303,7 +15185,7 @@ DataView as Data Source
 
 We can use the DataView as the data source for MultiColumnComboBox control. It can be done using the below code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15361,9 +15243,9 @@ this.MultiColumnComboBox1.ValueMember = "LastName";
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15421,10 +15303,10 @@ Me.MultiColumnComboBox1.ValueMember = "LastName"
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img319.jpeg)
-{:.image }
+
 
 
 Using Data Adapter
@@ -15436,7 +15318,7 @@ This section deals with data binding in MultiColumnComboBox using OleDBDataAdapt
 * Set the combobox's datasource, DisplayMember and ValueMember properties. 
 * Alternatively, you can set up the databinding in code, in the form's load event handler as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15462,9 +15344,9 @@ this.multiColumnComboBox1.ValueMember = "CompanyName";
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15488,7 +15370,7 @@ Me.multiColumnComboBox1.ValueMember = "CompanyName"
 
 End Sub 
 
-
+{% endhighlight %}
 
 A sample which demonstrates the OleDbDataAdapter databinding is available in the below sample installation location.
 
@@ -15503,249 +15385,252 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 130. Select DataSet from templates pane, give the name (Say newdataset.xsd) and click Open. This will add file by name newdataset.xsd to the solution. 
 131. Add the XML Schema as shown below. 
 
-[XML]
+     ~~~ xml
 
 
 
-&lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False"&gt;
+		&lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False"&gt;
 
-&lt;xs:complexType&gt;
+		&lt;xs:complexType&gt;
 
-&lt;xs:choice maxOccurs="unbounded"&gt;
+		&lt;xs:choice maxOccurs="unbounded"&gt;
 
-&lt;xs:element name="roster"&gt;
+		&lt;xs:element name="roster"&gt;
 
-&lt;xs:complexType&gt;
+		&lt;xs:complexType&gt;
 
-&lt;xs:sequence&gt;
+		&lt;xs:sequence&gt;
 
-&lt;xs:element name="PositionID" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="PositionID" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="EmployeeID" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="EmployeeID" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="PersonID" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="PersonID" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="FirstName" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="FirstName" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="LastName" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="LastName" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="BizUnitName" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="BizUnitName" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="Title" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="Title" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="FunctionalTitle" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="FunctionalTitle" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="CorporateID" type="xs:string" minOccurs="0" /&gt;
+		&lt;xs:element name="CorporateID" type="xs:string" minOccurs="0" /&gt;
 
-&lt;xs:element name="UserID" type="xs:int" minOccurs="0" /&gt;
+		&lt;xs:element name="UserID" type="xs:int" minOccurs="0" /&gt;
 
-&lt;/xs:sequence&gt;
+		&lt;/xs:sequence&gt;
 
-&lt;/xs:complexType&gt;
+		&lt;/xs:complexType&gt;
 
-&lt;/xs:element&gt;
+		&lt;/xs:element&gt;
 
-&lt;/xs:choice&gt;
+		&lt;/xs:choice&gt;
 
-&lt;/xs:complexType&gt;
+		&lt;/xs:complexType&gt;
 
-&lt;/xs:element&gt;
+		&lt;/xs:element&gt;
 
-
+     ~~~
+     {:.prettyprint }
 
 132. Validate the written Schema. 
 133. Add an XML file (Say newdataset.xml) with the following data. 
 
-[XML]
+     ~~~ xml
 
 
+		&lt;?xml version="1.0" standalone="yes" ?&gt;
 
-&lt;?xml version="1.0" standalone="yes" ?&gt;
+		&lt;NewDataSet xmlns="http://tempuri.org/NewDataSet.xsd"&gt;
 
-&lt;NewDataSet xmlns="http://tempuri.org/NewDataSet.xsd"&gt;
+		&lt;roster&gt;
 
-&lt;roster&gt;
+		<PositionID>12345</PositionID>
 
-<PositionID>12345</PositionID>
+		<EmployeeID>1000</EmployeeID>
 
-<EmployeeID>1000</EmployeeID>
+		<PersonID>01</PersonID>
 
-<PersonID>01</PersonID>
+		<FirstName>Mary</FirstName>
 
-<FirstName>Mary</FirstName>
+		<LastName>Elsa</LastName>
 
-<LastName>Elsa</LastName>
+		<BizUnitName>Software</BizUnitName>
 
-<BizUnitName>Software</BizUnitName>
+		<Title>Partner</Title>
 
-<Title>Partner</Title>
+		<FunctionalTitle>Microsoft</FunctionalTitle>
 
-<FunctionalTitle>Microsoft</FunctionalTitle>
+		<CorporateID>23</CorporateID>
 
-<CorporateID>23</CorporateID>
+		<UserID>11</UserID>
 
-<UserID>11</UserID>
+		&lt;/roster&gt;
 
-&lt;/roster&gt;
+		&lt;roster&gt;
 
-&lt;roster&gt;
+		<PositionID>345667</PositionID>
 
-<PositionID>345667</PositionID>
+		<EmployeeID>1001</EmployeeID>
 
-<EmployeeID>1001</EmployeeID>
+		<PersonID>02</PersonID>
 
-<PersonID>02</PersonID>
+		<FirstName>Anu</FirstName>
 
-<FirstName>Anu</FirstName>
+		<LastName>Roy</LastName>
 
-<LastName>Roy</LastName>
+		<BizUnitName>Software1</BizUnitName>
 
-<BizUnitName>Software1</BizUnitName>
+		<Title>Partner</Title>
 
-<Title>Partner</Title>
+		<FunctionalTitle>xx</FunctionalTitle>
 
-<FunctionalTitle>xx</FunctionalTitle>
+		<CorporateID>56</CorporateID>
 
-<CorporateID>56</CorporateID>
+		<UserID>12</UserID>
 
-<UserID>12</UserID>
+		&lt;/roster&gt;
 
-&lt;/roster&gt;
+		&lt;roster&gt;
 
-&lt;roster&gt;
+		<PositionID>4655</PositionID>
 
-<PositionID>4655</PositionID>
+		<EmployeeID>65</EmployeeID>
 
-<EmployeeID>65</EmployeeID>
+		<PersonID>542</PersonID>
 
-<PersonID>542</PersonID>
+		<FirstName>Sam</FirstName>
 
-<FirstName>Sam</FirstName>
+		<LastName>George</LastName>
 
-<LastName>George</LastName>
+		<BizUnitName>HR</BizUnitName>
 
-<BizUnitName>HR</BizUnitName>
+		<Title>partner</Title>
 
-<Title>partner</Title>
+		<FunctionalTitle>yy</FunctionalTitle>
 
-<FunctionalTitle>yy</FunctionalTitle>
+		<CorporateID>345</CorporateID>
 
-<CorporateID>345</CorporateID>
+		<UserID>55</UserID>
 
-<UserID>55</UserID>
+		&lt;/roster&gt;
 
-&lt;/roster&gt;
+		&lt;/NewDataSet&gt;
 
-&lt;/NewDataSet&gt;
-
-
+     ~~~
+     {:.prettyprint }
 
 134. Write a method to load data from XML file. 
 
-[C#]
+     ~~~ cs
 
 
 
-// Loads data from XML file.
+		// Loads data from XML file.
 
-private void LoadFromFile(string fileName)
+		private void LoadFromFile(string fileName)
 
-{
+		{
 
-string remString = "\\bin\\debug";
+		string remString = "\\bin\\debug";
 
-string path = Application.StartupPath.Remove(Application.StartupPath.Length - remString.Length, remString.Length)+ "\\" + fileName;
-
-
-
-NewDataSet newDataSet1 = new NewDataSet();
-
-newDataSet1.ReadXml(path);
-
-userCmbBox.DataSource =  newDataSet1.Tables [0];
-
-serCmbBox.DisplayMember = newDataSet1.roster.LastNameColumn.ColumnName;
-
-userCmbBox.ValueMember = newDataSet1.roster.EmployeeIDColumn.ColumnName;
-
-this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.PersonIDColumn.ColumnName] = true;
-
-this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.UserIDColumn.ColumnName] = true;
-
-this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.EmployeeIDColumn.ColumnName] = true;
-
-this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.PositionIDColumn.ColumnName] = true;
-
-}
+		string path = Application.StartupPath.Remove(Application.StartupPath.Length - remString.Length, remString.Length)+ "\\" + fileName;
 
 
 
-[VB.NET]
+		NewDataSet newDataSet1 = new NewDataSet();
+
+		newDataSet1.ReadXml(path);
+
+		userCmbBox.DataSource =  newDataSet1.Tables [0];
+
+		serCmbBox.DisplayMember = newDataSet1.roster.LastNameColumn.ColumnName;
+
+		userCmbBox.ValueMember = newDataSet1.roster.EmployeeIDColumn.ColumnName;
+
+		this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.PersonIDColumn.ColumnName] = true;
+
+		this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.UserIDColumn.ColumnName] = true;
+
+		this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.EmployeeIDColumn.ColumnName] = true;
+
+		this.userCmbBox.ListBox.Grid.Model.Cols.Hidden[newDataSet1.roster.PositionIDColumn.ColumnName] = true;
+
+		}
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-'Loads data from XML file.
+		'Loads data from XML file.
 
-Private Sub LoadFromFile(ByVal fileName As String)
+		Private Sub LoadFromFile(ByVal fileName As String)
 
-Dim remString As String = "\bin\debug"
+		Dim remString As String = "\bin\debug"
 
-Dim path As String = Application.StartupPath.Remove(Application.StartupPath.Length - remString.Length, remString.Length)+ "\" & fileName
-
-
-
-Dim newDataSet1 As NewDataSet = New NewDataSet()
-
-newDataSet1.ReadXml(path)
-
-userCmbBox.DataSource = newDataSet1.Tables(0)
-
-serCmbBox.DisplayMember =newDataSet1.roster.LastNameColumn.ColumnName
-
-userCmbBox.ValueMember =newDataSet1.roster.EmployeeIDColumn.ColumnName
-
-Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.PersonIDColumn.ColumnName) = True
-
-Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.UserIDColumn.ColumnName) = True
-
-Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.EmployeeIDColumn.ColumnName) = True
-
-Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.PositionIDColumn.ColumnName) = True
-
-End Sub
+		Dim path As String = Application.StartupPath.Remove(Application.StartupPath.Length - remString.Length, remString.Length)+ "\" & fileName
 
 
+
+		Dim newDataSet1 As NewDataSet = New NewDataSet()
+
+		newDataSet1.ReadXml(path)
+
+		userCmbBox.DataSource = newDataSet1.Tables(0)
+
+		serCmbBox.DisplayMember =newDataSet1.roster.LastNameColumn.ColumnName
+
+		userCmbBox.ValueMember =newDataSet1.roster.EmployeeIDColumn.ColumnName
+
+		Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.PersonIDColumn.ColumnName) = True
+
+		Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.UserIDColumn.ColumnName) = True
+
+		Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.EmployeeIDColumn.ColumnName) = True
+
+		Me.userCmbBox.ListBox.Grid.Model.Cols.Hidden(newDataSet1.roster.PositionIDColumn.ColumnName) = True
+
+		End Sub
+
+     ~~~
+     {:.prettyprint }
 
 135. Load the values in the Form's Load event.
 
-[C#]
+     ~~~ cs
 
 
 
-private void Form1_Load(object sender, System.EventArgs e)
+		private void Form1_Load(object sender, System.EventArgs e)
 
-{
+		{
 
-LoadFromFile("newdataset.xml");
+		LoadFromFile("newdataset.xml");
 
-}
+		}
 
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
 
-[VB.NET]
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
+		LoadFromFile("newdataset.xml")
 
+		End Sub
 
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
-
-LoadFromFile("newdataset.xml")
-
-End Sub
-
-
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img320.jpeg)
-{:.image }
+
 
 
 Appearance
@@ -15757,7 +15642,7 @@ Visual styles for the MultiColumnComboBox control can be specified using MultiCo
 * VS2005
 * Office2007 (with all the three color schemes).
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15765,9 +15650,9 @@ this.multiColumnComboBox1.Style = Syncfusion.Windows.Forms.VisualStyle.Office200
 
 this.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15775,21 +15660,21 @@ Me.multiColumnComboBox1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 Me.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img321.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img322.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the MultiColumnComboBox control by setting Office2007ColorTheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15797,9 +15682,9 @@ this.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office
 
 Office2007Colors.ApplyManagedColors(this, Color.Orchid);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15807,13 +15692,13 @@ Me.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office20
 
 Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img323.jpeg)
-{:.image }
 
 
-###### Event Handling
+
+##### Event Handling
 
 The events of ComboBoxAdv present in the MultiColumnComboBox.
 
@@ -15821,7 +15706,7 @@ Selection Events
 
 The MultiColumnComboBox fires different events for the different user interaction scenarios. The occurrence and order of the events are tabulated below: 
 
-_Table_ _224__: Events Table_
+_Table_ _224_: Events Table
 
 <table>
 <tr>
@@ -15910,7 +15795,7 @@ Setting Text According to Selection
 
 The process of accessing the selected item is a complex one. We need to access DataRowView from the control and then to get the values. Include the below code in the SelectedValueChanged event handler to set the text of MultiColumnComboBox to the text in the first column of the selected row.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15934,9 +15819,9 @@ if (c.SelectedIndex!=-1)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15958,17 +15843,17 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img324.jpeg)
-{:.image }
+
 
 
 SelectedIndexChanged Event
 
 This event is illustrated in How to retrieve the columns other than Display and Value members in a MultiColumnComboBox? topic.
 
-###### Frequently Asked Questions
+##### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
@@ -15978,212 +15863,214 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 
 136. Initialization of the MultiColumnComboBox.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
+		private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
 
 
 
-// Set a boolean flag. 
+		// Set a boolean flag. 
 
-bool afterDropDown = false;        
+		bool afterDropDown = false;        
 
-this.multiColumnComboBox1.SelectedValue = null;
+		this.multiColumnComboBox1.SelectedValue = null;
 
-this.multiColumnComboBox1.SelectedIndex = -1;
+		this.multiColumnComboBox1.SelectedIndex = -1;
 
-this.multiColumnComboBox1.Text = ""; 
+		this.multiColumnComboBox1.Text = ""; 
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
+     ~~~ vbnet
 
 
 
-' Set a boolean flag. 
-
-Private afterDropDown As Boolean = False
-
-Me.multiColumnComboBox1.SelectedValue = Nothing
-
-Me.multiColumnComboBox1.SelectedIndex = -1
-
-Me.multiColumnComboBox1.Text = ""
+		Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
 
 
+
+		' Set a boolean flag. 
+
+		Private afterDropDown As Boolean = False
+
+		Me.multiColumnComboBox1.SelectedValue = Nothing
+
+		Me.multiColumnComboBox1.SelectedIndex = -1
+
+		Me.multiColumnComboBox1.Text = ""
+
+     ~~~
+     {:.prettyprint }
 
 137. Populate the MultiColumnComboBox with data. Refer Databinding topic.
 
-[C#]
+     ~~~ cs
+
+		private void multiColumnComboBox1_DropDown(object sender, System.EventArgs e)
+
+		{
+
+		// Hide a column.
+
+		this.multiColumnComboBox1.ListBox.Grid.Model.Cols.Hidden[1] = true;
 
 
 
-private void multiColumnComboBox1_DropDown(object sender, System.EventArgs e)
+		this.multiColumnComboBox1.ListBox.Grid.Model.ColWidths[3] = this.multiColumnComboBox1.Bounds.Width/2;
 
-{
-
-// Hide a column.
-
-this.multiColumnComboBox1.ListBox.Grid.Model.Cols.Hidden[1] = true;
+		this.multiColumnComboBox1.ListBox.Grid.Model.ColWidths[4] = this.multiColumnComboBox1.Bounds.Width/2;
 
 
 
-this.multiColumnComboBox1.ListBox.Grid.Model.ColWidths[3] = this.multiColumnComboBox1.Bounds.Width/2;
+		this.afterDropDown = true;
 
-this.multiColumnComboBox1.ListBox.Grid.Model.ColWidths[4] = this.multiColumnComboBox1.Bounds.Width/2;
-
-
-
-this.afterDropDown = true;
-
-}
+		}
 
 
 
-string str = "";
+		string str = "";
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
+
+		Private Sub multiColumnComboBox1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
+
+		' Hide a column.
+
+		Me.multiColumnComboBox1.ListBox.Grid.Model.Cols.Hidden(1) = True
 
 
 
-[VB.NET]
+		Me.multiColumnComboBox1.ListBox.Grid.Model.ColWidths(3) = Me.multiColumnComboBox1.Bounds.Width/2
+
+		Me.multiColumnComboBox1.ListBox.Grid.Model.ColWidths(4) = Me.multiColumnComboBox1.Bounds.Width/2
 
 
 
-Private Sub multiColumnComboBox1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
+		Me.afterDropDown = True
 
-' Hide a column.
-
-Me.multiColumnComboBox1.ListBox.Grid.Model.Cols.Hidden(1) = True
+		End Sub
 
 
 
-Me.multiColumnComboBox1.ListBox.Grid.Model.ColWidths(3) = Me.multiColumnComboBox1.Bounds.Width/2
+		Private str As String = ""
 
-Me.multiColumnComboBox1.ListBox.Grid.Model.ColWidths(4) = Me.multiColumnComboBox1.Bounds.Width/2
-
-
-
-Me.afterDropDown = True
-
-End Sub
-
-
-
-Private str As String = ""
-
-
+     ~~~
+     {:.prettyprint }
 
 138. In order to display the contents of the entire row in the GridListControl in the MultiColumnComboBox instead of just the DisplayMember, you can handle the MultiColumnComboBox's SelectedIndexChanged event as shown below.
 
-[C#]
+     ~~~ cs
 
 
 
-private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+		private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
 
-{
+		{
 
-if (this.afterDropDown == true)
+		if (this.afterDropDown == true)
 
-{
+		{
 
-         for(int i =1; i<=this.multiColumnComboBox1.ListBox.Grid.ColCount; i++)
+				 for(int i =1; i<=this.multiColumnComboBox1.ListBox.Grid.ColCount; i++)
 
-         {
-
-
-
-               if(i==1)
-
-               {
-
-                   // do nothing for the hidden columns
-
-               }
-
-               else
-
-               {
-
-               str += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
-
-               }
-
-         }
+				 {
 
 
 
-         Console.WriteLine(str);
+					   if(i==1)
 
-         this.multiColumnComboBox1.Text = str;
+					   {
 
-  }
+						   // do nothing for the hidden columns
 
+					   }
 
+					   else
 
-  this.afterDropDown = false;
+					   {
 
-  str = "";
+					   str += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
 
-}
+					   }
 
-
-
-[VB.NET]
-
-
-
-Private Sub multiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
-
-If Me.afterDropDown = True Then
-
-       Dim i As Integer =1
+				 }
 
 
 
-       Do While i<=Me.multiColumnComboBox1.ListBox.Grid.ColCount
+				 Console.WriteLine(str);
+
+				 this.multiColumnComboBox1.Text = str;
+
+		  }
 
 
 
-          If i=1 Then
+		  this.afterDropDown = false;
 
-                ' do nothing for the hidden columns
+		  str = "";
 
-          Else
+		}
 
-                 str += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex+1, i).Text & " "
+     ~~~
+     {:.prettyprint }
 
-          End If
-
-          i += 1
-
-       Loop
+     ~~~ vbnet
 
 
 
-       Console.WriteLine(str)
+		Private Sub multiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
 
-       Me.multiColumnComboBox1.Text = str
+		If Me.afterDropDown = True Then
 
-End If
-
-
-
-Me.afterDropDown = False
-
-   str = ""
-
-End Sub
+			   Dim i As Integer =1
 
 
+
+			   Do While i<=Me.multiColumnComboBox1.ListBox.Grid.ColCount
+
+
+
+				  If i=1 Then
+
+						' do nothing for the hidden columns
+
+				  Else
+
+						 str += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex+1, i).Text & " "
+
+				  End If
+
+				  i += 1
+
+			   Loop
+
+
+
+			   Console.WriteLine(str)
+
+			   Me.multiColumnComboBox1.Text = str
+
+		End If
+
+
+
+		Me.afterDropDown = False
+
+		   str = ""
+
+		End Sub
+
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img325.jpeg)
-{:.image }
+
 
 
 How to display single column in a ListBox?
@@ -16192,33 +16079,34 @@ To turn off showing multiple columns in a ListBox, follow the below given steps.
 
 139. Access the GridListControl and set its MultiColumn property to False.
 
-[C#]
+     ~~~ cs
+
+		// Turns off  multiple columns display.
+
+		this.multiColumnBoundCombo.ListBox.MultiColumn = false;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-// Turns off  multiple columns display.
+		' Turns off  multiple columns display.
 
-this.multiColumnBoundCombo.ListBox.MultiColumn = false;
+		Me.multiColumnBoundCombo.ListBox.MultiColumn = False
 
-
-
-[VB.NET]
-
-
-
-' Turns off  multiple columns display.
-
-Me.multiColumnBoundCombo.ListBox.MultiColumn = False
-
-
+     ~~~
+     {:.prettyprint }
 
 140. The dropdown will then simply show the first column in the bound datasource (the combo's DisplayMember property will not be consulted here). Make sure that in your SQL query, the desired column to be shown in the drop-down is the first one.
-###### How to hide an unnecessary column from the multiple columns
+
+##### How to hide an unnecessary column from the multiple columns
 
 
 MultiColumComboBox allows us to hide unnecessary columns. If you want to hide a particular column, follow this method anywhere in code but before displaying the dropdown.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16226,9 +16114,10 @@ Syncfusion.Windows.Forms.Grid.GridColHidden gch=new Syncfusion.Windows.Forms.Gri
 
 multiColumnComboBox1.ListBox.Grid.ColHiddenEntries.Add(gch);
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16236,6 +16125,7 @@ Dim gch As Syncfusion.Windows.Forms.Grid.GridColHidden = New Syncfusion.Windows.
 
 multiColumnComboBox1.ListBox.Grid.ColHiddenEntries.Add(gch)
 
+{% endhighlight %}
 
 
 This will hide the 3rd column. If you want to disable more columns repeat this step by the respective column number.
@@ -16244,7 +16134,7 @@ How to retrieve the columns other than Display and Value members in a MultiColum
 
 Handle the SelectedIndexChanged Event of MultiColumnComboBox as shown below in order to retrieve respective column values.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16272,9 +16162,9 @@ textBox1.Text = this.MultiColumnComboBox1.ListBox.Grid.Model[this.MultiColumnCom
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16308,17 +16198,17 @@ Private Sub MultiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, By
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img326.jpeg)
-{:.image }
+
 
 
 How to change the back color and text color of the selected item?
 
 Using PrepareViewStyleInfo event of the Grid that is embedded in the MultiColumnComboBox, you can change the back color and text color of the selected item. This is illustrated in the following code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16346,9 +16236,9 @@ void gc_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16374,17 +16264,19 @@ Private Sub gc_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepa
 
 End Sub
 
-### MultiSelectionComboBox
+{% endhighlight %}
 
-##### Overview
+## MultiSelectionComboBox
+
+#### Overview
 
 The MultiSelectionComboBox is a type of ComboBox Control with multiple item selection and auto suggestion capabilities. When you type a character into the text area, the control performs a search operation and suggest a list of possible matching results to select.
 
 ![1](Editors-Package_images/Editors-Package_img327.png)
-{:.image }
 
 
-_Figure_ _384__: MultiSelectionComboBox_
+
+_Figure_ _384_: MultiSelectionComboBox
 
 Key Features
 
@@ -16392,44 +16284,46 @@ Key Features
 * Visual Item: Each selected value is displayed in separate box with close button.
 * Delimiter Mode: Multiple values are separated using comma.
 * eenshotNormal Mode: Only one value can be selected from dropdown list and displayed. 
-* Auto Suggestion: The control performs a search operation and provides a suggestion list of matched items in its dropdown window upon your input.
+* Auto Suggestion: The control performs a search operation and provides a suggestion list of matched items in its dropdown window upon your input.
 * Customizable Elements: Supports styling and customization of the text block and drop down boxes.
 * Keyboard Navigation: Supports using the keyboard to focus on the control, navigate through the suggestion results, and select a value.
 * Grouping Support: Supports to group its Drop Down items based on its initial character.
 * Multi-Selection: Supports to perform multiple items selection through drop down items, each represented with a checkbox.
-##### Getting Started
+
+#### Getting Started
 
 
 This section briefly describes you on how to design a MultiSelectionComboBox control in a Windows Forms Application.
 
 * Adding a MultiSelectionComboBox Control
 * Configuring the MultiSelectionComboBox Control
-###### Adding a MultiSelectionComboBox Control
+
+##### Adding a MultiSelectionComboBox Control
 
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drop a MultiSelectionComboBox control on the Form. The MultiSelectionComboBox is loaded in the form as illustrated in the following screenshot.
 
 ![](Editors-Package_images/Editors-Package_img328.png)
-{:.image }
 
 
-_Figure_ _385__: MultiSelectionComboBox control in Toolbox_
 
-###### Configuring the MultiSelectionComboBox Control
+_Figure_ _385_: MultiSelectionComboBox control in Toolbox
+
+##### Configuring the MultiSelectionComboBox Control
 
 The commonly used settings of the MultiSelectionComboBox control can be configured either through Designer using the Smart tag or through the Properties window or through code. 
 
 ![1](Editors-Package_images/Editors-Package_img329.png)
-{:.image }
 
 
-_Figure_ _386__: MultiSelectionComboBox control customization through smart tag_
+
+_Figure_ _386_: MultiSelectionComboBox control customization through smart tag
 
 To add MultiSelectionComboBox control to a Windows Forms application through code behind,
 
 * Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
 
-[C#]
+{% highlight c# %}
 
 //namespaces
 
@@ -16437,9 +16331,9 @@ using Syncfusion.Windows.Forms.Tools;
 
 using Syncfusion.Windows.Forms;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ‘namespaces
 
@@ -16447,11 +16341,11 @@ Imports Syncfusion.Windows.Forms
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 * Create an instance of the MultiSelectionComboBox control and add it to the Form.
 
-[C#]
+{% highlight c# %}
 
 MultiSelectionComboBox MultiSelectionComboBox1 = new MultiSelectionComboBox();
 
@@ -16463,9 +16357,9 @@ this.MultiSelectionComboBox1.UseVisualStyle = true;
 
 this.Controls.Add(this.MultiSelectionComboBox1);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim MultiSelectionComboBox1 As MultiSelectionComboBox = New MultiSelectionComboBox()
 
@@ -16475,9 +16369,11 @@ Me.MultiSelectionComboBox1.Size = New System.Drawing.Size(217, 30)        Me.Mul
 
 Me.Controls.Add(Me.MultiSelectionComboBox1)
 
-##### Concepts and Features
+{% endhighlight %}
 
-###### Data Binding
+#### Concepts and Features
+
+##### Data Binding
 
 MultiSelectionComboBox control can be bound with external data source. Objects that can acts as Datasource to MultiSelectionComboBox are
 
@@ -16487,133 +16383,155 @@ MultiSelectionComboBox control can be bound with external data source. Objects t
 
 You can add objects to the MultiSelectionComboBox by using the Items method. You can also add objects to a MultiSelectionComboBox using the DataSource, DisplayMember and ValueMember properties to fill the ComboBox. When the DataSource property is set, you cannot modify the items collection. When the DataSource property setting causes the data source to change, the DataSourceChanged event is raised .When you set DataSource to a null, DisplayMember is set with an empty string ("").
 
-###### Display Mode Configuration
+##### Display Mode Configuration
 
 Visual Item
 
 Each selected item from its drop down list is displayed like a tag with remove button in text area.
 
 ![VisualItems](Editors-Package_images/Editors-Package_img330.png)
-{:.image }
 
 
-_Figure_ _387__: Display mode set as visual item_
+
+_Figure_ _387_: Display mode set as visual item
 
 The following code example illustrates you on how to set Display Mode as Visual Item.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.DisplayMode = DisplayMode.VisualItem;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.VisualItem
+
+{% endhighlight %}
 
 Delimiter Mode
 
 Selected items are displayed in text area each separated with delimiter character.
 
 ![DelimiterMode](Editors-Package_images/Editors-Package_img331.png)
-{:.image }
 
 
-_Figure_ _388__: Display mode set as Delimiter mode_
+
+_Figure_ _388_: Display mode set as Delimiter mode
 
 The following code example illustrates you on how to set Display Mode as Delimiter Mode.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.DisplayMode = DisplayMode.DelimiterMode;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.DelimiterMode
+
+{% endhighlight %}
 
 Normal Mode
 
 At a time, only one value can be selected from the drop down list and displayed in text area.
 
 ![2](Editors-Package_images/Editors-Package_img332.png)
-{:.image }
 
 
-_Figure_ _389__: Display mode set as Normal mode_
+
+_Figure_ _389_: Display mode set as Normal mode
 
 The following code sample illustrates you on how to set Display Mode as Normal Mode.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.DisplayMode = DisplayMode.NormalMode;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.NormalMode
 
-###### Automatic Control Sizing
+{% endhighlight %}
+
+##### Automatic Control Sizing
 
 Vertical
 
 The control size is increased with respect to its height upon adding Visual Item, from its dropdown list. 
 
 ![3](Editors-Package_images/Editors-Package_img333.png)
-{:.image }
 
 
-_Figure_ _390__: Auto Size Mode as Vertical_
+
+_Figure_ _390_: Auto Size Mode as Vertical
 
 The following code sample illustrates you on how to set AutoSizeMode as Vertical.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Vertical;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Vertical 
+
+{% endhighlight %}
 
 Horizontal
 
 The control size is increased with respect to its width upon adding Visual Item, from its dropdown list. 
 
 ![4](Editors-Package_images/Editors-Package_img334.png)
-{:.image }
 
 
-_Figure_ _391__: Auto Size Mode as Horizontal_
+
+_Figure_ _391_: Auto Size Mode as Horizontal
 
 The following code sample illustrates you on how to set AutoSizeMode as Horizontal.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Horizontal;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Horizontal
 
-
+{% endhighlight %}
 
 None
 
 The control size is only increased up to pre-defined size and once VisualItem size exceeds it, Scrollbar is displayed to navigate between its items.
 
-![5](Editors-Package_images/Editors-Package_img335.png)
-{:.image }
+![](Editors-Package_images/Editors-Package_img335.png)
 
 
-_Figure_ _392__: Auto Size Mode as None_
+
+_Figure_ _392_: Auto Size Mode as None
 
 The following code sample illustrates you on how to set AutoSizeMode as None.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSizeMode = AutoSizeMode.None;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeMode.None
 
-###### Advanced Features
+{% endhighlight %}
+
+##### Advanced Features
 
 Auto Suggestion
 
@@ -16623,13 +16541,17 @@ Enables to list out the most appropriate match for the current content of the Mu
 
 The following code sample illustrates you on how to set AutoSuggestMode as Begin.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSuggestMode = AutoSuggestMode.Begin;
 
- [VB]
+{% endhighlight %}
+
+ {% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.AutoSuggestMode = AutoSuggestMode.Begin
+
+{% endhighlight %}
 
 Match
 
@@ -16637,13 +16559,17 @@ Enables to list out all the possible matches for the current content of the Mult
 
 The following code sample illustrates you on how to set AutoSuggestMode as Match.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSuggestMode = AutoSuggestMode.Match;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.AutoSuggestMode = AutoSuggestMode.Match
+
+{% endhighlight %}
 
 Disabled
 
@@ -16651,37 +16577,43 @@ Disable the AutoComplete functionality of MultiSelectionComboBox by setting Auto
 
 The following code sample illustrates you on how to set AutoSuggestMode as Disabled.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoCompleteMatchMode = AutoCompleteMatchMode.Disabled;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.AutoCompleteMatchMode = AutoCompleteMatchMode.Disabled
+
+{% endhighlight %}
 
 Grouping
 
 MultiSelectionComboBox contains support to group its drop down items based on initial character. You can enable or disable this support using its ShowGroups property.
 
 ![6](Editors-Package_images/Editors-Package_img336.png)
-{:.image }
 
 
-_Figure_ _393__: Grouping_
+
+_Figure_ _393_: Grouping
 
 The following code sample illustrates you on how to enable Grouping in MultiSelectionComboBox Dropdown.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.ShowGroups = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.ShowGroups = True
 
-###### Styling and Customization
+{% endhighlight %}
+
+##### Styling and Customization
 
 Drop Down Styling
 
@@ -16690,86 +16622,94 @@ Check Box Selection
 Checkboxes in drop down list can be enabled for multiple items selection through the ShowCheckBox property. 
 
 ![7](Editors-Package_images/Editors-Package_img337.png)
-{:.image }
 
 
-_Figure_ _394__: Check Box Selection_
 
-[C#]
+_Figure_ _394_: Check Box Selection
+
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.ShowCheckBox = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.ShowCheckBox = True
+
+{% endhighlight %}
 
 Grouping Header Background
 
 Grouping Header background color can be customized using GroupHeaderBackColor property.
 
 ![8](Editors-Package_images/Editors-Package_img338.png)
-{:.image }
 
 
-_Figure_ _395__: Grouping Header background_
+
+_Figure_ _395_: Grouping Header background
 
 The following code sample illustrates you on how to customize Group Header background color.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.GroupHeaderBackColor = Color.White;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.GroupHeaderBackColor = Color.White
+
+{% endhighlight %}
 
 Grouping Header ForeColor
 
 Grouping Header text color can be customized using GroupHeaderForeColor property.
 
 ![9](Editors-Package_images/Editors-Package_img339.png)
-{:.image }
 
 
-_Figure_ _396__: GroupHeaderForeColor property_
+
+_Figure_ _396_: GroupHeaderForeColor property
 
 The following code sample illustrates you on how to customize Group Header ForeColor.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.GroupHeaderForeColor = Color.White;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.GroupHeaderForeColor = Color.White
+
+{% endhighlight %}
 
 Grouping Header Separator Color
 
 Grouping Header Separator Color can be customized using GroupHeaderSeperatorColor property.
 
 ![10](Editors-Package_images/Editors-Package_img340.png)
-{:.image }
 
 
-_Figure_ _397__: GroupHeaderSeperatorColor property_
+
+_Figure_ _397_: GroupHeaderSeperatorColor property
 
 The following code sample illustrates you on how to customize Group Header Separator Color.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.GroupHeaderSeperatorColor = Color.White;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.GroupHeaderSeperatorColor = Color.White
+
+{% endhighlight %}
 
 Item Height
 
@@ -16777,13 +16717,17 @@ Drop down item height can be customized by using ItemsHeight property.
 
 The following code sample illustrates you on how to customize drop down items height.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.ItemsHeight = 25;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.ItemsHeight = 25
+
+{% endhighlight %}
 
 Drop Down Height
 
@@ -16791,15 +16735,17 @@ Drop down window height can be customized by using DropDownHeight property.
 
 The following code sample illustrates you on how to customize drop down window height.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.DropDownHeight = 125;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.DropDownHeight = 125
+
+{% endhighlight %}
 
 Drop Down Width
 
@@ -16807,13 +16753,17 @@ Drop down window width can be customized by using DropDownWidth property.
 
 The following code sample illustrates you on how to customize drop down window width.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.DropDownWidth = 125;
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.DropDownWidth = 125
+
+{% endhighlight %}
 
 Maximum Number of Drop Down Items
 
@@ -16821,15 +16771,17 @@ Maximum number of drop down items to display can be customized by using MaxDropD
 
 The following code sample illustrates you on how to customize number of drop down items.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.MaxDropDownItems = 5;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.MaxDropDownItems = 5
+
+{% endhighlight %}
 
 Text Block Styling
 
@@ -16838,116 +16790,126 @@ Visual Item Back Color
 Visual Item background color can be customized using VisualItemBackColor property.
 
 ![11](Editors-Package_images/Editors-Package_img341.png)
-{:.image }
 
 
-_Figure_ _398__: VisualItemBackColor property_
+
+_Figure_ _398_: VisualItemBackColor property
 
 The following code sample illustrates you on how to customize Visual Item Back Color.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemBackColor = Color.White;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.VisualItemBackColor = Color.White
+
+{% endhighlight %}
 
 Visual Item Fore Color
 
 Visual Item Fore Color can be customized using VisualItemForeColor property.
 
 ![12](Editors-Package_images/Editors-Package_img342.png)
-{:.image }
 
 
-_Figure_ _399__: VisualItemForeColor property_
+
+_Figure_ _399_: VisualItemForeColor property
 
 The following code sample illustrates you on how to customize Visual Item Fore Color.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemForeColor = Color.Black;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.VisualItemForeColor = Color.Black
+
+{% endhighlight %}
 
 Visual Item Selection Color
 
 Visual Item Back Color upon selection can be customized using VisualItemSelectionColor property.
 
 ![13](Editors-Package_images/Editors-Package_img343.png)
-{:.image }
 
 
-_Figure_ _400__: VisualItemSelectionColor property_
+
+_Figure_ _400_: VisualItemSelectionColor property
 
 The following code sample illustrates you on how to customize Visual Item Back Color upon selection.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemForeColor = Color.Black;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.VisualItemForeColor = Color.Black
+
+{% endhighlight %}
 
 Visual Item Border Color
 
 Visual Item Border Color can be customized using VisualItemBorderColor property.
 
 ![14](Editors-Package_images/Editors-Package_img344.png)
-{:.image }
 
 
-_Figure_ _401__: VisualItemBorderColor property_
+
+_Figure_ _401_: VisualItemBorderColor property
 
 The following code sample illustrates you on how to customize Visual Item Border Color.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemBorderColor = Color.Black;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.VisualItemBorderColor = Color.Black
+
+{% endhighlight %}
 
 Delimiter Character
 
 Upon selecting multiple items from its drop down list, each selected item is separated by user defined delimiter character.
 
 ![15](Editors-Package_images/Editors-Package_img345.png)
-{:.image }
 
 
-_Figure_ _402__: Delimiter character_
+
+_Figure_ _402_: Delimiter character
 
 The following code sample illustrates you on how to set delimiter character.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.DelimiterChar = ",";
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.DelimiterChar = ","
 
-> ![Note](Editors-Package_images/Editors-Package_img346.png)
-{:.image }
- _Note: Delimiter character needs to be single special characters like “,” “.”_ 
+{% endhighlight %}
 
-##### Frequently Asked Questions
+> Note: Delimiter character needs to be single special characters like “,” “.”_
 
-###### What are the events implemented in MultiSelectionComboBox?
+#### Frequently Asked Questions
+
+##### What are the events implemented in MultiSelectionComboBox?
 
 SelectedItemCollectionChanged
 
@@ -16955,7 +16917,7 @@ This event is triggered once SelectedItems collection is modified in MultiSelect
 
 Event Arguments
 
-_Table_ _225__: Members Table_
+_Table_ _225_: Members Table
 
 <table>
 <tr>
@@ -16973,7 +16935,7 @@ Returns the VisualItem collection modified state detail.Added, once item was add
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 private void MultiSelectionComboBox1_SelectedItemCollectionChanged(object sender, SelectedItemCollectionChangedArgs e)
 
@@ -16991,9 +16953,9 @@ private void MultiSelectionComboBox1_SelectedItemCollectionChanged(object sender
 
         }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Private Sub MultiSelectionComboBox1_SelectedItemCollectionChanged(sender As Object, e As SelectedItemCollectionChangedArgs)
 
@@ -17007,13 +16969,15 @@ Private Sub MultiSelectionComboBox1_SelectedItemCollectionChanged(sender As Obje
 
 End Sub
 
+{% endhighlight %}
+
 VisualItemCollectionChanged
 
 This event is triggered once VisualItem collection is modified in MultiSelectionComboBox.
 
 Event Arguments
 
-_Table_ _226__: Members Table_
+_Table_ _226_: Members Table
 
 <table>
 <tr>
@@ -17031,7 +16995,7 @@ Returns the VisualItem collection modified state detail.Added, once item was add
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 private void MultiSelectionComboBox1_VisualItemsCollectionChanged(object sender, VisualItemCollectionChangedArgs e)
 
@@ -17049,9 +17013,9 @@ private void MultiSelectionComboBox1_VisualItemsCollectionChanged(object sender,
 
         }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -17066,6 +17030,8 @@ Private Sub MultiSelectionComboBox1_VisualItemsCollectionChanged(sender As Objec
             End If
 
  End Sub
+ 
+ {% endhighlight %}
 
 AutoSizeModeChanged
 
@@ -17073,7 +17039,7 @@ This event is triggered once AutoSizeMode is modified in MultiSelectionComboBox.
 
 Event Arguments
 
-_Table_ _227__: Members Table_
+_Table_ _227_: Members Table
 
 <table>
 <tr>
@@ -17087,7 +17053,7 @@ Returns AutoSizeMode of the MultiSelectionComboBox control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 void MultiSelectionComboBox1_AutoSizeStateChanged(object sender, AutoSizeModeEventArgs e)
 
@@ -17099,9 +17065,9 @@ void MultiSelectionComboBox1_AutoSizeStateChanged(object sender, AutoSizeModeEve
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Private Sub MultiSelectionComboBox1_AutoSizeStateChanged(sender As Object, e As AutoSizeModeEventArgs)
 
@@ -17111,11 +17077,13 @@ Private Sub MultiSelectionComboBox1_AutoSizeStateChanged(sender As Object, e As 
 
 End Sub
 
+{% endhighlight %}
+
 DataSourceChanged
 
 This event is triggered once MultiSelectionComboBox datasource is changed.
 
-[C#]
+{% highlight c# %}
 
 Private void MultiSelectionComboBox1_DataSourceChanged(object sender, EventArgs e)
 
@@ -17125,9 +17093,9 @@ Private void MultiSelectionComboBox1_DataSourceChanged(object sender, EventArgs 
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Private Sub MultiSelectionComboBox1_DataSourceChanged(sender As System.Object, e As System.EventArgs) Handles MultiSelectionComboBox1.DataSourceChanged
 
@@ -17135,11 +17103,13 @@ Private Sub MultiSelectionComboBox1_DataSourceChanged(sender As System.Object, e
 
 End Sub
 
+{% endhighlight %}
+
 DropDown
 
 This event is triggered once MultiSelectionComboBox DropDown visibility is changed.
 
-[C#]
+{% highlight c# %}
 
 private void MultiSelectionComboBox1_DropDown(object sender, DropDownStateEventArgs e)
 
@@ -17151,9 +17121,9 @@ private void MultiSelectionComboBox1_DropDown(object sender, DropDownStateEventA
 
         }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Private Sub MultiSelectionComboBox1_DropDown(sender As Object, e As DropDownStateEventArgs)
 
@@ -17162,12 +17132,14 @@ Private Sub MultiSelectionComboBox1_DropDown(sender As Object, e As DropDownStat
         Dim isDropDownOpened As Boolean = e.IsDropDown
 
     End Sub
+	
+{% endhighlight %}
 
-###### How to detect when VisualItemCollection is modified in MultiSelectionComboBox?
+##### How to detect when VisualItemCollection is modified in MultiSelectionComboBox?
 
 The following code explains you on how to detect the VisualItemCollection modification using VisualItemCollectionChanged event. This event is triggered once VisualItem collection is modified in MultiSelectionComboBox.
 
-[C#]
+{% highlight c# %}
 
 private void MultiSelectionComboBox1_VisualItemsCollectionChanged(object sender, VisualItemCollectionChangedArgs e)
 
@@ -17185,9 +17157,9 @@ private void MultiSelectionComboBox1_VisualItemsCollectionChanged(object sender,
 
         }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -17202,14 +17174,16 @@ Private Sub MultiSelectionComboBox1_VisualItemsCollectionChanged(sender As Objec
             End If
 
  End Sub
+ 
+ {% endhighlight %}
 
-###### How to bind a MultiSelectionComboBox with external data source?
+##### How to bind a MultiSelectionComboBox with external data source?
 
 You can achieve this by using DataSource and DisplayMember properties in MultiSelectionComboBox. 
 
 The following code sample defines how to bind MultiSelectionComboBox with datasource.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -17267,9 +17241,9 @@ this.comboBoxAdv1.DataSource = view;
 
 this.comboBoxAdv1.DisplayMember = "place";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17315,47 +17289,51 @@ Me.comboBoxAdv1.DataSource = view
 ' Set DisplayMember.
 Me.comboBoxAdv1.DisplayMember = "place"
 
-###### How to enable or disable Grouping in MultiSelectionComboBox at Runtime?
+{% endhighlight %}
+
+##### How to enable or disable Grouping in MultiSelectionComboBox at Runtime?
 
 In MultiSelectionComboBox, grouping based on initial character can be enabled or disabled at runtime using the following code sample.
 
 The following code sample illustrates you on how to enable Grouping in MultiSelectionComboBox Dropdown.
 
-[C#]
+{% highlight c# %}
 
 this.MultiSelectionComboBox1.ShowGroups = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.MultiSelectionComboBox1.ShowGroups = True
+
+{% endhighlight %}
 
 ### Container Control
 
 The control used to populate with child controls is referred to as a Container control. This section discusses the following Container controls.
 
-##### PopupControlContainer
+#### PopupControlContainer
 
 A PopupControlContainer is a panel-derived control that allows users to populate it with child controls in code or during design-time and then insert it in code with a call to PopupControlContainer.ShowPopup. It also provides various options with respect to its border alignment with a popup-parent. 
 
 The PopupControlContainer was implemented to support creating custom control-rich popups and show them beside a popup-parent, such as a context menu. 
 
 ![](Editors-Package_images/Editors-Package_img347.jpeg)
-{:.image }
+
 
 
 In code, call ShowPopup to show the popup anywhere in an application. It also allows you to align a popup beside a control (like in combo boxes) or popup at any given point (like in context menus). 
 
 ![](Editors-Package_images/Editors-Package_img348.jpeg)
-{:.image }
+
 
 
 The PopupControlContainer also exposes its top-level parent host (a form-derived class) that lets you configure the parent form (to make the parent's borders resizable, for example). 
 
 The Syncfusion XP Menus framework lets users associate a PopupControlContainer with a menu item and show it from within a menu or toolbar. The Syncfusion CommandBars also let you associate a PopupControlContainer with it to be shown when the user clicks on the command bar drop-down button.
 
-###### Features
+##### Features
 
 PopupControlContaineris used to create custom control-rich popups and show them besides a popup-parent, such as a context menu. It has following features.
 
@@ -17367,7 +17345,7 @@ See Also
 
 Concepts and Features
 
-###### Creating Simple Popup
+##### Creating Simple Popup
 
 This section deals with creating a simple popup with the help of PopupControlContainer control.
 
@@ -17376,7 +17354,7 @@ Creating PopupControlContainer
 The PopupControlContainer control provides full support for the Windows Forms designer. To use a PopupControlContainer control in your application, all you need to do is drag and drop the PopupControlContainer control from the controls toolbox onto your form. 
 
 ![](Editors-Package_images/Editors-Package_img349.jpeg)
-{:.image }
+
 
 
 The PopupControlContainer can be created programmatically as follows.
@@ -17384,29 +17362,30 @@ The PopupControlContainer can be created programmatically as follows.
 141. Include the Shared.Base assembly reference to Reference folder.
 142. Create an instance of PopupControlContainer and add to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.PopupControlContainer popupControlContainer1;
+		private Syncfusion.Windows.Forms.PopupControlContainer popupControlContainer1;
 
-this.popupControlContainer1=new Syncfusion.Windows.Forms.PopupControlContainer();
+		this.popupControlContainer1=new Syncfusion.Windows.Forms.PopupControlContainer();
 
-this.Controls.Add(this.popupControlContainer1);
+		this.Controls.Add(this.popupControlContainer1);
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
-
-Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer()
-
-Me.Controls.Add(Me.popupControlContainer1)
+     ~~~ vbnet
 
 
+		Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
+
+		Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer()
+
+		Me.Controls.Add(Me.popupControlContainer1)
+
+     ~~~
+     {:.prettyprint }
 
 143. We can add child controls to the PopupControlContainer and associate it as a popup for other controls like RichTextBox. Refer How to show PopupControlContainer as the popup for a RichTextBox control? topic.
 
@@ -17418,7 +17397,7 @@ See also
 
 Concepts and Features
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the PopupControlContainer control.
 
@@ -17426,7 +17405,7 @@ Scroll Support
 
 We can enable scrollbars automatically for the PopupContainer control, when its items are shown beyond its size by setting AutoScroll to true. When AutoScroll is enabled for the control, we can set the margin and logical size for the autoscroll region by AutoScrollMargin and AutoScrollMinSize properties.
 
-_Table_ _228__: Property Table_
+_Table_ _228_: Property Table
 
 <table>
 <tr>
@@ -17448,7 +17427,7 @@ It sets the minimum logical size for the AutoScroll region.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -17458,9 +17437,9 @@ this.popupControlContainer1.AutoScrollMargin = new System.Drawing.Size(2, 2);
 
 this.popupControlContainer1.AutoScrollMinSize = new System.Drawing.Size(3, 3);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17470,6 +17449,8 @@ Me.popupControlContainer1.AutoScrollMargin = New System.Drawing.Size(2, 2)
 
 Me.popupControlContainer1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
 
+{% endhighlight %}
+
 AutoClosing Behavior
 
 When a PopupControlContainer control is associated as the popup for a control, by default, the pop-up will hide when the user clicks anywhere outside the pop up besides the control (if any) that is specified in the "ParentControl" property. To control this default behavior, i.e, to display the popup even if there is any mouse actions, set IgnoreMouseMessages property to true.
@@ -17478,7 +17459,7 @@ Example
 
 The Popup of a textbox, on a button click should be closed only when the textbox is not empty. For this purpose, the popup should not be closed on any mouse action. So set IgnoreMouseMessages property to true for this property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -17502,9 +17483,9 @@ if(txtbox.Text!="")
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17522,7 +17503,7 @@ If Not txtbox.Text = "" Then
 
 End Sub
 
-
+{% endhighlight %}
 
 If you want more control over this behavior, then you will have to implement the IPopupParent interface and set the PopupParent property in the PopupControlContainer.
 
@@ -17531,26 +17512,24 @@ A sample which illustrates the IPopupParent interface is available in the below 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 ![](Editors-Package_images/Editors-Package_img350.jpeg)
-{:.image }
+
 
 
 Key navigation
 
 When the pop-up is visible, the PopupControlContainer will look for Alt, Enter, Tab, Esc, F4, and F2 keys and either cancel or close the pop-up. In order to navigate, the PopupControlContainer's IgnoreDialogKey property must be set to _true_. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.popupControlContainer1.IgnoreDialogKey = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.popupControlContainer1.IgnoreDialogKey = True
+
+{% endhighlight %}
 
 Hiding popup with PopupCloseType mode
 
@@ -17564,9 +17543,7 @@ We can place the ComboBoxBase control within PopupControlContainer such that the
 
 You can do this by deriving from the PopupControlContainer, overriding the OnPopup method, and setting the focus to the derived control. This will ensure that the derived PopupControlContainer does not lose focus and close prematurely. The customized PopupControlContainer code should be like the code snippet shown below.
 
-[C#]
-
-
+{% highlight c# %}
 
 public class CustomPopupControlContainer : Syncfusion.Windows.Forms.PopupControlContainer
 
@@ -17602,9 +17579,9 @@ public class CustomPopupControlContainer : Syncfusion.Windows.Forms.PopupControl
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17634,11 +17611,12 @@ Public Class CustomPopupControlContainer
 
 End Class
 
+{% endhighlight %}
 
 
 It is also necessary to specify the parent-child relationship between the ComboBoxBase’s pop-up and the PopupControlContainer. This can be done by handling the ComboBoxBase’s drop-down event as shown in the code sample below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -17661,8 +17639,9 @@ private void comboBoxBase1_DropDown(object sender, System.EventArgs e)
  }
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17680,11 +17659,13 @@ Private  Sub comboBoxBase1_DropDown(ByVal sender As Object, ByVal e As System.Ev
 
 End Sub
 
-###### Event Handling
+{% endhighlight %}
+
+##### Event Handling
 
 PopupControlContainer handles events before and after the Popup is shown. The most commonly used events are discussed below.
 
-_Table_ _229__: Events Table_
+_Table_ _229_: Events Table
 
 <table>
 <tr>
@@ -17716,7 +17697,7 @@ Mnemonic Support
 
 The controls that are placed within the PopupControlContainer do not respond to mnemonics. The reason for this behavior is that the main form gets focus immediately after the PopupControlContainer is displayed. However, the work around here would be to set the focus back to the PopupControlContainer in the PopupControlContainer's Popup event handler, so that the access keys will work fine.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -17728,9 +17709,9 @@ this.popupControlContainer1.Focus();
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17739,6 +17720,8 @@ Private Sub popupControlContainer1_Popup(ByVal sender As Object, ByVal e As Syst
    Me.popupControlContainer1.Focus()
 
 End Sub 
+
+{% endhighlight %}
 
 BeforePopup Event
 
@@ -17750,7 +17733,7 @@ Drag and drop the ParentControl say RichTextBox and PopupControlContainer onto t
 
 To make the Popup resizable, handle BeforePopup event of PopupControlContainer and give the following code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -17782,9 +17765,9 @@ this.popupControlContainer1.Dock= System.Windows.Forms.DockStyle.Fill;
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17816,10 +17799,10 @@ Private Sub popupControlContainer1_BeforePopup(ByVal sender As Object, ByVal e A
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img351.jpeg)
-{:.image }
+
 
 
 CloseUp Event
@@ -17828,165 +17811,176 @@ We can assign data from the Popup to the control on the Form. This is possible b
 
 144. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
 
 
-[VB.NET]
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
 
-
-Imports Syncfusion.Windows.Forms.Tools
-
+		Imports Syncfusion.Windows.Forms.Tools
+     ~~~
+     {:.prettyprint }
 
 
 145. Set up a Form with TextBox1 and Button1 added to the PopupControlContainer and RichTextBox as shown in the following figure.
 
-![](Editors-Package_images/Editors-Package_img352.jpeg)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img352.jpeg)
+
 
 
 146. Display the Popup on the RichTextBox using following code snippet.
 
-[C#]
+     ~~~ cs
 
 
 
-private void richTextBox1_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
+			private void richTextBox1_MouseUp(object sender, System.Windows.Forms.MouseEventArgs e)
 
-{
+			{
 
-this.popupControlContainer1.ShowPopup(Point.Empty);
+			this.popupControlContainer1.ShowPopup(Point.Empty);
 
-}
+			}
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private Sub richTextBox1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
-
-    Me.popupControlContainer1.ShowPopup(Point.Empty)
-
-End Sub
+     ~~~ vbnet
 
 
+
+		Private Sub richTextBox1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
+
+			Me.popupControlContainer1.ShowPopup(Point.Empty)
+
+		End Sub
+
+     ~~~
+     {:.prettyprint }
 
 147. Handle BeforePopup event.
 
-[C#]
+     ~~~ cs
 
 
 
-private void popupControlContainer1_BeforePopup(object sender, System.ComponentModel.CancelEventArgs e)
+		private void popupControlContainer1_BeforePopup(object sender, System.ComponentModel.CancelEventArgs e)
 
-{
+		{
 
-// Set the text of richTextBox to the textBox
+		// Set the text of richTextBox to the textBox
 
-this.textBox1.Text = this.richTextBox1.Text;
+		this.textBox1.Text = this.richTextBox1.Text;
 
-}
+		}
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private Sub popupControlContainer1_BeforePopup(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
-
-    ' Set the text of richTextBox to the textBox
-
-    Me.textBox1.Text = Me.richTextBox1.Text
-
-End Sub
+     ~~~ vbnet
 
 
+
+		Private Sub popupControlContainer1_BeforePopup(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
+
+			' Set the text of richTextBox to the textBox
+
+			Me.textBox1.Text = Me.richTextBox1.Text
+
+		End Sub
+
+     ~~~
+     {:.prettyprint }
 
 148. Handle CloseUp event to implement the data transfer from the Popup to the control on the form.
 
-[C#]
+     ~~~ cs
 
 
 
-private void popupControlContainer1_CloseUp(object sender, Syncfusion.Windows.Forms.PopupClosedEventArgs e)
+		private void popupControlContainer1_CloseUp(object sender, Syncfusion.Windows.Forms.PopupClosedEventArgs e)
 
-{
+		{
 
-if(e.PopupCloseType == Syncfusion.Windows.Forms.PopupCloseType.Done)
+		if(e.PopupCloseType == Syncfusion.Windows.Forms.PopupCloseType.Done)
 
-{
+		{
 
-this.richTextBox1.Text = this.textBox1.Text;
+		this.richTextBox1.Text = this.textBox1.Text;
 
-}
+		}
 
-// Set focus back to textbox.
+		// Set focus back to textbox.
 
-if(e.PopupCloseType == Syncfusion.Windows.Forms.PopupCloseType.Done|| e.PopupCloseType == Syncfusion.Windows.Forms.PopupCloseType.Canceled)
+		if(e.PopupCloseType == Syncfusion.Windows.Forms.PopupCloseType.Done|| e.PopupCloseType == Syncfusion.Windows.Forms.PopupCloseType.Canceled)
 
-this.richTextBox1.Focus();
+		this.richTextBox1.Focus();
 
-}
+		}
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private Sub popupControlContainer1_CloseUp(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.PopupClosedEventArgs)
-
-    If e.PopupCloseType = Syncfusion.Windows.Forms.PopupCloseType.Done Then
-
-        Me.richTextBox1.Text = Me.textBox1.Text
-
-    End If
-
-    ' Set focus back to textbox.
-
-    If e.PopupCloseType = Syncfusion.Windows.Forms.PopupCloseType.Done OrElse e.PopupCloseType = Syncfusion.Windows.Forms.PopupCloseType.Canceled Then
-
-        Me.richTextBox1.Focus()
-
-    End If
-
-End Sub
+     ~~~ vbnet
 
 
+
+		Private Sub popupControlContainer1_CloseUp(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.PopupClosedEventArgs)
+
+			If e.PopupCloseType = Syncfusion.Windows.Forms.PopupCloseType.Done Then
+
+				Me.richTextBox1.Text = Me.textBox1.Text
+
+			End If
+
+			' Set focus back to textbox.
+
+			If e.PopupCloseType = Syncfusion.Windows.Forms.PopupCloseType.Done OrElse e.PopupCloseType = Syncfusion.Windows.Forms.PopupCloseType.Canceled Then
+
+				Me.richTextBox1.Focus()
+
+			End If
+
+		End Sub
+
+     ~~~
+     {:.prettyprint }
 
 149. In Button_Click, hide the Popup as shown in the following code snippet.
 
-[C#]
+     ~~~ cs
 
 
 
-this.popupControlContainer1.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done);
+		this.popupControlContainer1.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done);
+
+
+     ~~~
+     {:.prettyprint }
+
+	 ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.popupControlContainer1.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done)
 
-
-
-Me.popupControlContainer1.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done)
-
-
+     ~~~
+     {:.prettyprint }
 
 At runtime, the Popup will be shown when the user right clicks on the RichTextBox. Type any text and close the Popup by clicking 'OK' button, you would see the text being assigned to the RichTextBox.
 
 ![](Editors-Package_images/Editors-Package_img353.jpeg)
-{:.image }
 
 
-###### Frequently Asked Questions
+
+##### Frequently Asked Questions
 
 This section discusses the following topics.
 
@@ -17994,7 +17988,7 @@ How to create a transparent popup?
 
 This can be done using the below code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18010,9 +18004,9 @@ this.popupControlContainer1.PopupHost.Opacity = 0.75;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18026,23 +18020,23 @@ Me.popupControlContainer1.PopupHost.Opacity = 0.75
 
 End Sub
 
+{% endhighlight %}
+
 How to identify whether the popup is currently dropped down
 
 PopupControlContainer.IsShowing() method returns whether the popup is currently dropped down or not.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.popupControlContainer1.IsShowing();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.popupControlContainer1.IsShowing()
+
+{% endhighlight %}
 
 How to show PopupControlContainer as the popup for a RichTextBox control
 
@@ -18051,27 +18045,21 @@ This is done by calling the ShowPopup method of PopupControlContainer control.
 * Add a RichTextBox control onto the form.
 * Associate it with the ParentControl property of PopupControlContainer as follows.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.popupControlContainer1.ParentControl = this.richTextBox1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.popupControlContainer1.ParentControl = Me.richTextBox1
 
-
+{% endhighlight %}
 
 * To display the Popup at a desired location, handle RichTextBox.MouseUp event and call ShowPopup() method of PopupControlContainer as follows. The below code displays the popup just below the RichTextBox control, when the user clicks. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.richTextBox1.MouseUp +=new MouseEventHandler(richTextBox_MouseUp);
 
@@ -18083,9 +18071,9 @@ this.popupControlContainer1.ShowPopup(Point.Empty);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18095,30 +18083,30 @@ Private Sub richTextBox1_MouseUp(ByVal sender As Object, ByVal e As System.Windo
 
 End Sub
 
-
+{% endhighlight %}
 
 We can also display the popup at particular location.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.popupControlContainer1.ShowPopup(new Point(100, 100));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.popupControlContainer1.ShowPopup(new Point(100, 100))
 
-
+{% endhighlight %}
 
 At run time, right click on RichTextBox, the popup will be shown below the RichTextBox as in the below image.
 
 ![](Editors-Package_images/Editors-Package_img354.jpeg)
-{:.image }
+
 
 
 When Two PopUpControl Containers are Opened at the Same Time Controls like the ComboDropDown Close by Itself.
@@ -18127,7 +18115,7 @@ How to Get Around this Behavior?
 
 In order to workaround this behavior, you can set a boolean flag and cancel the BeforeCloseUp event as shown below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18173,9 +18161,9 @@ bool1= false;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18215,19 +18203,19 @@ Private Sub Form1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub 
 
-
+{% endhighlight %}
 
 You can set the Boolean value to be false under the Form's Click event and Control's LostFocus event so that the DropDown closes for rest of the cases.
 
-##### GradientPanel
+#### GradientPanel
 
 GradientPanel is a panel-derived control that acts as a container for other controls. It is used to group a collection of controls and it has the ability to have a custom background gradient using an array of colors. 
 
 ![](Editors-Package_images/Editors-Package_img355.jpeg)
-{:.image }
 
 
-###### Features Overview
+
+##### Features Overview
 
 The basic functionality of a GradientPanel is to act as a container control. Apart from this, GradientPanel has properties to enhance the look and feel of the control.
 
@@ -18241,11 +18229,11 @@ See Also
 
 Concepts and Features
 
-###### Creating GradientPanel
+##### Creating GradientPanel
 
 This section will guide you to create a Gradient Panel through designer and also through programmatical approach.
 
-###### Through Designer
+##### Through Designer
 
 This section will guide you to create a GradientPanel control.
 
@@ -18253,19 +18241,19 @@ This section will guide you to create a GradientPanel control.
 151. Drag-and-drop a GradientPanel control object from the toolbox onto the form and resize it to the desired dimensions.
 
 ![](Editors-Package_images/Editors-Package_img356.jpeg)
-{:.image }
+
 
 
 152. Set background color for GradientPanel through property grid.
 
 ![](Editors-Package_images/Editors-Package_img357.jpeg)
-{:.image }
+
 
 
 153. Build and run the application.
 
 ![](Editors-Package_images/Editors-Package_img358.jpeg)
-{:.image }
+
 
 
 See Also
@@ -18280,101 +18268,102 @@ The following steps will guide you to create a gradient panel programmatically.
 155. Add the Syncfusion.Shared.Base and Syncfusion.Shared.Windows assembly references.
 156. Declare a gradient panel as below.
 
-[C#]
+     ~~~ cs
 
+		private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
 
+     ~~~
+     {:.prettyprint }
 
-private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
+     ~~~ vbnet
 
+		Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
 
-
-[VB.NET]
-
-
-
-Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
-
-
+     ~~~
+     {:.prettyprint }
 
 157. In the Initialize function, include the below code to initialize the gradient panel.
 
-[C#]
+     ~~~ cs
 
 
 
-this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
+		this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
 
-((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
+		((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.GradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel 
-
-CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
+     ~~~ vbnet
 
 
+
+		Me.GradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel 
+
+		CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
+
+     ~~~
+     {:.prettyprint }
 
 158. Set the properties as follows for the gradient panel and the form.
 
-[C#]
+     ~~~ cs
 
 
 
-// gradientPanel1
+		// gradientPanel1
 
-this.gradientPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightBlue, System.Drawing.SystemColors.InactiveCaption);
+		this.gradientPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightBlue, System.Drawing.SystemColors.InactiveCaption);
 
-this.gradientPanel1.BorderColor = System.Drawing.Color.White;
+		this.gradientPanel1.BorderColor = System.Drawing.Color.White;
 
-this.gradientPanel1.Location = new System.Drawing.Point(37, 32);
+		this.gradientPanel1.Location = new System.Drawing.Point(37, 32);
 
-this.gradientPanel1.Name = "gradientPanel1";
+		this.gradientPanel1.Name = "gradientPanel1";
 
-this.gradientPanel1.Size = new System.Drawing.Size(350, 202);
+		this.gradientPanel1.Size = new System.Drawing.Size(350, 202);
 
-this.gradientPanel1.TabIndex = 0;
+		this.gradientPanel1.TabIndex = 0;
 
-this.Controls.Add(this.gradientPanel1);
+		this.Controls.Add(this.gradientPanel1);
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-'GradientPanel1
-
-Me.GradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightSkyBlue, System.Drawing.SystemColors.Window)
-
-Me.GradientPanel1.BorderColor = System.Drawing.Color.Black
-
-Me.GradientPanel1.Location = New System.Drawing.Point(64, 48)
-
-Me.GradientPanel1.Name = "GradientPanel1"
-
-Me.GradientPanel1.Size = New System.Drawing.Size(296, 208)
-
-Me.GradientPanel1.TabIndex = 0
-
-Me.Controls.Add(Me.GradientPanel1)
+     ~~~ cs
 
 
+     	'GradientPanel1
+
+		Me.GradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightSkyBlue, System.Drawing.SystemColors.Window)
+
+		Me.GradientPanel1.BorderColor = System.Drawing.Color.Black
+
+		Me.GradientPanel1.Location = New System.Drawing.Point(64, 48)
+
+		Me.GradientPanel1.Name = "GradientPanel1"
+
+		Me.GradientPanel1.Size = New System.Drawing.Size(296, 208)
+
+		Me.GradientPanel1.TabIndex = 0
+
+		Me.Controls.Add(Me.GradientPanel1)
+
+     ~~~
+     {:.prettyprint }
 
 159. Run the application.
 
 ![](Editors-Package_images/Editors-Package_img359.jpeg)
-{:.image }
+
 
 
 See Also
 
 Concepts and Features
 
-###### Concepts and Features
+##### Concepts and Features
 
 This section will take you in detail about the concepts and features available for the gradient panel and guides you to customize the control using the features available.
 
@@ -18382,7 +18371,7 @@ GradientPanel Appearance
 
 The background of the GradientPanel can be customized using the below properties.
 
-_Table_ _230__: Property Table_
+_Table_ _230_: Property Table
 
 <table>
 <tr>
@@ -18400,7 +18389,7 @@ Sets a gradient style background for the control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18408,9 +18397,9 @@ this.gradientPanel1.BackColor = System.Drawing.Color.LightCoral;
 
 this.gradientPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.AliceBlue, System.Drawing.Color.SteelBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18418,17 +18407,17 @@ Me.gradientPanel1.BackColor = System.Drawing.Color.LightCoral
 
 Me.gradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.AliceBlue, System.Drawing.Color.SteelBlue) 
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img360.jpeg)
-{:.image }
+
 
 
 Foreground Settings
 
 The foreground text in the control can be customized using the below properties.
 
-_Table_ _231__: Property Table_
+_Table_ _231_: Property Table
 
 <table>
 <tr>
@@ -18446,7 +18435,7 @@ Indicates the color of the text and graphics in the control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18454,9 +18443,10 @@ this.gradientPanel1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Draw
 
 this.gradientPanel1.ForeColor = System.Drawing.Color.Blue;
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18464,17 +18454,17 @@ Me.GradientPanel1.Font = New System.Drawing.Font("Comic Sans MS", 9.75F, System.
 
 this.gradientPanel1.ForeColor = System.Drawing.Color.Blue;
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img361.jpeg)
-{:.image }
+
 
 
 Image Settings
 
 Background image for the GradientPanel control is set using below properties.
 
-_Table_ _232__: Property Table_
+_Table_ _232_: Property Table
 
 <table>
 <tr>
@@ -18492,7 +18482,7 @@ Specifies the layout of the image.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18500,9 +18490,9 @@ this.gradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObjec
 
 this.gradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18510,10 +18500,10 @@ Me.gradientPanel1.BackgroundImage = CType((resources.GetObject("gradientPanel1.B
 
 Me.gradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img362.jpeg)
-{:.image }
+
 
 
 See Also
@@ -18524,7 +18514,7 @@ Border Settings
 
 GradientPanel can have 2D and 3D borders. The properties which sets the border style are as follows.
 
-_Table_ _233__: Property Table_
+_Table_ _233_: Property Table
 
 <table>
 <tr>
@@ -18554,7 +18544,7 @@ Specifies the sides of the control which should have a border.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18574,9 +18564,9 @@ this.gradientPanel1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed
 
 this.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18596,14 +18586,14 @@ Me.gradientPanel1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed
 
 Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img363.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img364.jpeg)
-{:.image }
+
 
 
 See Also
@@ -18614,7 +18604,7 @@ Scroll Settings
 
 When the contents inside the gradient panel exceeds the visible area, the scroll bars appears. AutoScroll property should be set to true for this purpose. Margin width for the control during auto scroll is set through AutoScrollMargin property. The minimum logical size for the auto scroll region is specified using the AutoScrollMinSize.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18624,9 +18614,9 @@ this.gradientPanel1.AutoScrollMargin = new System.Drawing.Size(5, 5);
 
 this.gradientPanel1.AutoScrollMinSize = new System.Drawing.Size(20, 20);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18636,6 +18626,8 @@ Me.gradientPanel1.AutoScrollMargin = New System.Drawing.Size(5, 5)
 
 Me.gradientPanel1.AutoScrollMinSize = New System.Drawing.Size(20, 20)
 
+{% endhighlight %}
+
 Size properties
 
 The GradientPanel can automatically size itself based on the contents available in the control by enabling the AutoSize property. The mode of this resizing can be specified through AutoSizeMode property. There are two options provided for the AutoSizeMode.
@@ -18643,7 +18635,7 @@ The GradientPanel can automatically size itself based on the contents available 
 * GrowOnly - the control grows as much as necessary to fit its contents but doesn't shrink smaller than the value specified in Size property of the control.
 * GrowAndShrink - the control grows and shrinks to fit its contents to a size may be less than that specified in Size property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18651,9 +18643,9 @@ this.gradientPanel1.AutoSize = true;
 
 this.gradientPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18661,17 +18653,19 @@ Me.gradientPanel1.AutoSize = True
 
 Me.gradientPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly
 
-##### GradientPanelExt
+{% endhighlight %}
+
+#### GradientPanelExt
 
 The GradientPanelExt is an enhanced version of the GradientPanel control. The GradientPanelExt borders can be rounded to any extent as needed. The control also supports hosting of primitives, in any of the panel borders. These primitives cover a wide range from text to any .NET control. The gradient colors applied to the GradientPanelExt apply to the primitives as well. These are no limitations on the number of these primitives.
 
 ![](Editors-Package_images/Editors-Package_img365.jpeg)
-{:.image }
+
 
 
 See also
 
-###### Features Overview
+##### Features Overview
 
 The GradientPanelExt provides some unique features that makes it much more flexible than the GradientPanel Control. It offers all the features supported by the GradientPanel and additionally supports the following salient features as well:
 
@@ -18685,7 +18679,8 @@ Salient Features
 * Host Primitive - Any Windows Forms or custom .NET Control can be placed along the panel borders.
 * Primitive Border - The border in which the primitive should lie can be chosen from left, right, top and bottom.
 * Primitive Positioning - The primitives can be positioned on any point of the panel border.
-###### Creating GradientPanelExt
+
+##### Creating GradientPanelExt
 
 
 This section will guide you to create a GradientPanelExt through designer and also through programmatical approach.
@@ -18697,207 +18692,211 @@ The following steps are involved in creating the GradientPanelExt through the de
 160. Create a new Windows Application.
 161. Drag the GradientPanelExt from the toolbox on to the windows application form.
 
-![](Editors-Package_images/Editors-Package_img366.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img366.png)
+
 
 
 162. Gradient colors for the panel can be set by defining the gradient styles and colors, using the Color Collection Editor.
 163. Primitives can be added to GradientPanelExt 's border using the GradientPanelExt PrimitiveCollection Editor, that can be accessed using the Primitives property.
 
-![](Editors-Package_images/Editors-Package_img367.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img367.png)
+
 
 
 164. The primitive alignment and position can be defined here.
-> 
-![](Editors-Package_images/Editors-Package_img368.png)
-{:.image }
- _Note: The properties for the primitives can be set individually using the property grid as well._
+
+> Note: The properties for the primitives can be set individually using the property grid as well.
 
 165. Build and run the application.
 
-![](Editors-Package_images/Editors-Package_img369.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img369.png)
+
 
 
 Through Code
 
-The following steps will guide you to create a GradientPanelExt through code.
+    The following steps will guide you to create a GradientPanelExt through code.
 
 166. Create a C# or VB.NET application through Visual Studio and switch to the code view.
 167. Add the Syncfusion.Shared.Base, Syncfusion.Shared.Windows, Syncfusion.Tools.Base and Syncfusion.Tools.Windows assembly references.
 168. Include the namespace for the Tools Package.
 
-[C#]
+     ~~~ cs
+
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+
+     ~~~ vbnet
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
+     ~~~
+     {:.prettyprint }
 
 
 169. Create an instance GradientPanelExt and add it to the Windows Form, defining its various properties and primitives.
 
-[C#]
+     ~~~ cs
 
 
 
-//Adding the GradientPanelExt
+		//Adding the GradientPanelExt
 
-GradientPanelExt gpe = new GradientPanelExt();
+		GradientPanelExt gpe = new GradientPanelExt();
 
-gpe.Dock = DockStyle.Fill;
+		gpe.Dock = DockStyle.Fill;
 
-gradientPanelExt1.CornerRadius = 10;
+		gradientPanelExt1.CornerRadius = 10;
 
-this.Controls.Add(gpe);
+		this.Controls.Add(gpe);
 
 
 
-//Defining Gradient Colors
+		//Defining Gradient Colors
 
-gpe.BackColor = System.Drawing.Color.Transparent;
+		gpe.BackColor = System.Drawing.Color.Transparent;
 
-gpe.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new System.Drawing.Color[] {
+		gpe.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new System.Drawing.Color[] {
 
-  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon,System.Drawing.Color.LightCoral});
+		  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon,System.Drawing.Color.LightCoral});
 
 
 
-//button1
+		//button1
 
-Button button1 = new Button();
+		Button button1 = new Button();
 
-button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+		button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 
-button1.Text = "Button";
+		button1.Text = "Button";
 
 
 
-//hostPrimitive1
+		//hostPrimitive1
 
-HostPrimitive hostPrimitive1 = new HostPrimitive();
+		HostPrimitive hostPrimitive1 = new HostPrimitive();
 
-hostPrimitive1.HostControl = button1;
+		hostPrimitive1.HostControl = button1;
 
 
 
-//progressBarAdv1
+		//progressBarAdv1
 
-ProgressBarAdv progressBarAdv1= new ProgressBarAdv();
+		ProgressBarAdv progressBarAdv1= new ProgressBarAdv();
 
-progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube;
+		progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube;
 
 
 
-//textPrimitive1
+		//textPrimitive1
 
-TextPrimitive textPrimitive1= new TextPrimitive();
+		TextPrimitive textPrimitive1= new TextPrimitive();
 
-textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
+		textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
 
-textPrimitive1.Text = "ProgressbarAdv";
+		textPrimitive1.Text = "ProgressbarAdv";
 
 
 
-//textPrimitive2
+		//textPrimitive2
 
-TextPrimitive textPrimitive2 = new TextPrimitive();
+		TextPrimitive textPrimitive2 = new TextPrimitive();
 
-textPrimitive2.Text = "Windows Forms Button";
+		textPrimitive2.Text = "Windows Forms Button";
 
 
 
-//Adding Primitives
+		//Adding Primitives
 
-gpe.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] { hostPrimitive1, textPrimitive1,  textPrimitive2});
+		gpe.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] { hostPrimitive1, textPrimitive1,  textPrimitive2});
 
+     ~~~
+     {:.prettyprint }
 
 
-[VB.NET]
+     ~~~ vbnet
 
 
 
-'Adding the GradientPanelExt
+		'Adding the GradientPanelExt
 
-Private gpe As GradientPanelExt = New GradientPanelExt()
+		Private gpe As GradientPanelExt = New GradientPanelExt()
 
-Private gpe.Dock = DockStyle.Fill
+		Private gpe.Dock = DockStyle.Fill
 
-Private gradientPanelExt1.CornerRadius = 10
+		Private gradientPanelExt1.CornerRadius = 10
 
-Me.Controls.Add(gpe)
+		Me.Controls.Add(gpe)
 
 
 
-'Defining Gradient Colors
+		'Defining Gradient Colors
 
-Private gpe.BackColor = System.Drawing.Color.Transparent
+		Private gpe.BackColor = System.Drawing.Color.Transparent
 
-Private gpe.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New                           System.Drawing.Color() { System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
+		Private gpe.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New                           System.Drawing.Color() { System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
 
 
 
-'button1
+		'button1
 
-Private button1 As Button = New Button()
+		Private button1 As Button = New Button()
 
-Private button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+		Private button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
 
-Private button1.Text = "Button"
+		Private button1.Text = "Button"
 
 
 
-'hostPrimitive1
+		'hostPrimitive1
 
-Private hostPrimitive1 As HostPrimitive = New HostPrimitive()
+		Private hostPrimitive1 As HostPrimitive = New HostPrimitive()
 
-Private hostPrimitive1.HostControl = button1
+		Private hostPrimitive1.HostControl = button1
 
 
 
-'progressBarAdv1
+		'progressBarAdv1
 
-Private progressBarAdv1 As ProgressBarAdv = New ProgressBarAdv()
+		Private progressBarAdv1 As ProgressBarAdv = New ProgressBarAdv()
 
-Private progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
+		Private progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
 
 
 
-'textPrimitive1
+		'textPrimitive1
 
-Private textPrimitive1 As TextPrimitive = New TextPrimitive()
+		Private textPrimitive1 As TextPrimitive = New TextPrimitive()
 
-Private textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
+		Private textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
 
-Private textPrimitive1.Text = "ProgressbarAdv"
+		Private textPrimitive1.Text = "ProgressbarAdv"
 
 
 
-'textPrimitive2
+		'textPrimitive2
 
-Private textPrimitive2 As TextPrimitive = New TextPrimitive()
+		Private textPrimitive2 As TextPrimitive = New TextPrimitive()
 
-Private textPrimitive2.Text = "Windows Forms Button"
+		Private textPrimitive2.Text = "Windows Forms Button"
 
 
 
-'Adding Primitives
+		'Adding Primitives
 
-gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2, textPrimitive1,                      textPrimitive2})
+		gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2, textPrimitive1,textPrimitive2})
 
-
+     ~~~
+     {:.prettyprint }
 
 170. Run and build the application to view the output.
-###### Concepts and Features
+
+##### Concepts and Features
 
 
 A few important aspects of the GradientPanelExt have been discussed in this section.
@@ -18916,7 +18915,7 @@ The primitives that can be included in the GradientPanelExt are,
 The primitives for the GradientPanelExt can be included using the GradientPanelExt PrimitiveCollection Editor, which can be opened using the primitives property.
 
 ![](Editors-Package_images/Editors-Package_img370.jpeg)
-{:.image }
+
 
 
 The primitive type to be included should be chosen from the Types of Primitives available in the GradientPanelExt Collection Editor, and added to the control. The properties for the primitive can be set in the property grid available at the right side.
@@ -18931,7 +18930,7 @@ Including the Collapse primitive, provides option to expand and collapse the Gra
 * Close the GradientPanelExt Collection Editor. Build and run the application. 
 * Now clicking on the Collapse primitive, collapses the control. The control collapses and expands on alternate clicks.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18951,9 +18950,9 @@ collapsePrimitive1.Position = 130;
 
 collapsePrimitive1.Size = new System.Drawing.Size(40, 40);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18973,14 +18972,14 @@ Private collapsePrimitive1.Position = 130
 
 Private collapsePrimitive1.Size = New System.Drawing.Size(40, 40)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img371.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img372.jpeg)
-{:.image }
+
 
 
 See Also
@@ -18995,7 +18994,7 @@ The image to be included, should be referenced in the Image property available f
 
 The text for text primitive, can be specified using the Text property available for the primitive in the GradientPanelExt Collection Editor. The text font and color can also be defined for the text primitive, using the TextFont and TextColor properties, respectively.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19110,10 +19109,10 @@ this.imagePrimitive4.PrimitiveBorderStyle = Syncfusion.Windows.Forms.Tools.Primi
 this.imagePrimitive4.Size = new System.Drawing.Size(20, 20);
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19215,10 +19214,10 @@ Private Me.imagePrimitive4.Position = 256
 
 Private Me.imagePrimitive4.PrimitiveBorderStyle = Syncfusion.Windows.Forms.Tools.PrimitiveBorderStyle.None
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img373.jpeg)
-{:.image }
+
 
 
 See Also
@@ -19229,7 +19228,7 @@ Host Primitives
 
 Any .NET Windows Forms control or custom control can be included as a primitive in the GradientPanelExt. The host control should be referred in the HostControl property of the GradientPanelExt Collection Editor. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19291,9 +19290,9 @@ gpe.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] {
 
   hostPrimitive2});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19351,10 +19350,10 @@ Private hostPrimitive2.Size = New System.Drawing.Size(100, 20)
 
 gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2})
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img374.jpeg)
-{:.image }
+
 
 
 See Also
@@ -19365,7 +19364,7 @@ Collapse Expand Animation
 
 The collapse and expand operation in a GradientPanelExt control can be animated by setting Animated property to true. Delay in animation and the speed of animation is specified in AnimationDelay and AnimationSpeed properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19375,17 +19374,17 @@ this.gradientPanelExt1.AnimationDelay = 11;
 
 this.gradientPanelExt1.AnimationSpeed = 2;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 this.gradientPanelExt1.Animated = True
 
 this.gradientPanelExt1.AnimationDelay = 11
 
 this.gradientPanelExt1.AnimationSpeed = 2
+
+{% endhighlight %}
 
 Background and Foreground Settings
 
@@ -19396,27 +19395,23 @@ Background Properties
 BackColor represents the background color used to display the text or the graphics in the control.
 
 ![](Editors-Package_images/Editors-Package_img375.jpeg)
-{:.image }
 
 
-[C#]
 
-
+{% highlight c# %}
 
 gradientPanelExt1.BackColor = System.Drawing.Color.Transparent;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private gradientPanelExt1.BackColor = System.Drawing.Color.Transparent
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img376.jpeg)
-{:.image }
+
 
 
 The colors and styles of the GradientPanelExt control can be set using the BackgroundColor properties, which have been explained below:
@@ -19427,7 +19422,7 @@ The colors and styles of the GradientPanelExt control can be set using the Backg
 * PatternStyle - Provides the pattern styles available for the style selected.
 * GradientColors - This pops up the Color Collection Editor, which allows the user to add colors and get a combination of colors to display in the gradient panel with the specified style.
 
-_Table_ _234__: Property Table_
+_Table_ _234_: Property Table
 
 <table>
 <tr>
@@ -19462,12 +19457,12 @@ Specifies the background image for the control.</td></tr>
 
 
 ![](Editors-Package_images/Editors-Package_img377.jpeg)
-{:.image }
+
 
 
 Alternatively, the BackgroundColor for the control can also be set using the following code snippet.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19479,55 +19474,48 @@ gradientPanelExt1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.
 
   System.Drawing.Color.LightCoral});
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private gradientPanelExt1.BackgroundColor = New                                                                            Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New System.Drawing.Color() {                  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
 
-
-
+{% endhighlight %}
 
 
 ![](Editors-Package_images/Editors-Package_img378.jpeg)
-{:.image }
+
 
 
 Image Settings
 
 A background image can be set for the gradient panel using the BackgroundImage property. User can set the layout for the background image using the BackgroundImageLayout property. These properties can be set programmatically using the below code snippets.
 
-[C#]
-
-
+{% highlight c# %}
 
 gradientPanelExt1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gradientPanelExt1.BackgroundImage")));                
 
 gradientPanelExt1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Me.gradientPanelExt1.BackgroundImage = (CType(resources.GetObject("gradientPanelExt1.BackgroundImage"),System.Drawing.Image))   
 
 Private Me.gradientPanelExt1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img379.jpeg)
-{:.image }
+
 
 
 Foreground
 
 The control's text can be customized by altering its Font properties. The ForeColor property represents the GradientPanelExt's text color. Using the following code snippet customizes the foreground of the GradientPanelExt.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19537,9 +19525,9 @@ this.gradientPanelExt1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, ((
 
 this.gradientPanelExt1.ForeColor = System.Drawing.Color.DarkGreen;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19547,10 +19535,10 @@ Private Me.gradientPanelExt1.Font = New System.Drawing.Font("Comic Sans MS", 9.7
 
 Private Me.gradientPanelExt1.ForeColor = System.Drawing.Color.DarkGreen
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img380.jpeg)
-{:.image }
+
 
 
 Border Settings
@@ -19559,7 +19547,7 @@ Corner Radius
 
 The GradientPanelExt comes as a rounded rectangle by default. The rounded corners can be removed or their radius can be modified using the CornerRadius property.
 
-_Table_ _235__: Property Table_
+_Table_ _235_: Property Table
 
 <table>
 <tr>
@@ -19573,53 +19561,45 @@ Used to set or get the radius truncation for the control's corners.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 gradientPanelExt1.CornerRadius = 14;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private gradientPanelExt1.CornerRadius = 14
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img381.jpeg)
-{:.image }
+
 
 
 The CornerRadius can be turned off by giving a value of zero for it.
 
-[C#]
-
-
+{% highlight c# %}
 
 gradientPanelExt1.CornerRadius = 0;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private gradientPanelExt1.CornerRadius = 0
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img382.jpeg)
-{:.image }
+
 
 
 Border Gap
 
 The GradientPanelExt comes with a margin for all the four sides. The spacing between the margin and the control's border can be set using the BorderGap property.
 
-_Table_ _236__: Property Table_
+_Table_ _236_: Property Table
 
 <table>
 <tr>
@@ -19635,24 +19615,20 @@ Used to get or set the gap between the border and the margins.</td></tr>
 
 The border gap for the GradientPanelExt can be set programmatically as given below.
 
-[C#]
-
-
+{% highlight c# %}
 
 gradientPanelExt1.BorderGap = 40;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private gradientPanelExt1.BorderGap = 40
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img383.jpeg)
-{:.image }
+
 
 
 Scroll Settings
@@ -19663,7 +19639,7 @@ See Also
 
 Scroll Settings
 
-###### GradientPanelExt Events
+##### GradientPanelExt Events
 
 The GradientPanelExt offers the following unique events, to make it more flexible to work with.
 
@@ -19671,7 +19647,7 @@ CornerRadiusChanged Event
 
 This event is raised every time the Corner Radius value is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19683,9 +19659,9 @@ private void gradientPanelExt1_CornerRadiusChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19695,11 +19671,13 @@ imagePrimitive1.Position = 100
 
 End Sub
 
+{% endhighlight %}
+
  PrimitivesChanged Event
 
  This event is raised when the value of the primitives property is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19711,9 +19689,9 @@ private void gradientPanelExt1_PrimitivesChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19723,17 +19701,19 @@ MessageBox.Show("Primitive Value Changed")
 
 End Sub
 
-##### SplitContainerAdv
+{% endhighlight %}
+
+#### SplitContainerAdv
 
 The SplitContainerAdv is a container that consists of two panels with a splitter between them. It allows the user to simply put other controls on these panels and drag the splitter vertically or horizontally to resize these panels. The user can add more SplitContainerAdv controls into any one of the panels in another SplitContainerAdv control and can change the orientation to have a customized look.
 
 ![](Editors-Package_images/Editors-Package_img384.jpeg)
-{:.image }
+
 
 
 See Also
 
-###### Features Overview
+##### Features Overview
 
 The following are the features of SplitContainerAdv control.
 
@@ -19750,7 +19730,7 @@ See Also
 
 Concepts and Features
 
-###### Creating SplitContainerAdv
+##### Creating SplitContainerAdv
 
 This section will give a step-by-step procedure to design a SplitContainerAdv control through designer and also through programmatical approach.
 
@@ -19762,14 +19742,14 @@ To create and customize the SplitContainerAdv through designer,
 * Drag-and-drop a SplitContainerAdv control object from the toolbox onto the form and resize it to the desired dimension.
 
 ![](Editors-Package_images/Editors-Package_img385.jpeg)
-{:.image }
+
 
 
 * Drag and drop the desired controls on to the panels.
 * Run the application. 
 
 ![](Editors-Package_images/Editors-Package_img386.jpeg)
-{:.image }
+
 
 
 See Also
@@ -19784,25 +19764,21 @@ To create a SplitContainerAdv control programmatically,
 * Add the Syncfusion assemblies Shared.Base and Tool.Windows.
 * Declare the SplitContainerAdv control.
 
-[C#]
-
-
+{% highlight c# %}
 
 private Syncfusion.Windows.Forms.Tools.SplitContainerAdv splitContainerAdv1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private splitContainerAdv1 As Syncfusion.Windows.Forms.Tools.SplitContainerAdv
 
-
+{% endhighlight %}
 
 * Initialize the control and add it in your form.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19810,9 +19786,9 @@ this.splitContainerAdv1 = new Syncfusion.Windows.Forms.Tools.SplitContainerAdv()
 
 this.Controls.Add(this.splitContainerAdv1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19820,11 +19796,11 @@ Me.splitContainerAdv1 = New Syncfusion.Windows.Forms.Tools.SplitContainerAdv()
 
 Me.Controls.Add(Me.splitContainerAdv1)
 
-
+{% endhighlight %}
 
 * If required customize the control's look and feel.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19836,9 +19812,9 @@ this.splitContainerAdv1.Size = new System.Drawing.Size(224, 136);
 
 this.splitContainerAdv1.SplitterDistance = 47;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19850,15 +19826,15 @@ Me.splitContainerAdv1.Size = New System.Drawing.Size(224, 136)
 
 Me.splitContainerAdv1.SplitterDistance = 47
 
-
+{% endhighlight %}
 
 * Run the application. You will see the SplitContainerAdv with two panels in it as shown below.
 
 ![](Editors-Package_images/Editors-Package_img387.jpeg)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 This section will guide you in getting started with the SplitContainerAdv control. It explains all the concepts and features of the control in detail.
 
@@ -19869,7 +19845,7 @@ The below image illustrates the components of a SplitContainerAdv control. It ha
 
 
 ![](Editors-Package_images/Editors-Package_img388.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the SplitContainerAdv control is available in the below sample installation location.
@@ -19888,49 +19864,43 @@ The SplitContainerAdv Panels can be oriented horizontally or vertically using th
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img389.jpeg)
-{:.image }
+
 
 
 Resizing the Panels
 
 While resizing the control at design time or at run time, we can make one panel as fixed and resize the other panel alone. Select the panel which needs to be fixed, in FixedPanel property. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1
+
+{% endhighlight %}
 
 Collapsing a Panel
 
 We can make any of the panels to be collapsed at run time. The below properties helps you to do that.
 
-_Table_ _237__: Property Table_
+_Table_ _237_: Property Table
 
 <table>
 <tr>
@@ -19964,7 +19934,7 @@ A predefined event, which leads to collapsing of the panel specified in PanelToB
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19976,9 +19946,9 @@ this.splitContainerAdv1.PanelToBeCollapsed = Syncfusion.Windows.Forms.Tools.Coll
 
 this.splitContainerAdv1.TogglePanelOn = Syncfusion.Windows.Forms.Tools.TogglePanelOn.DoubleClick;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19990,11 +19960,13 @@ Me.splitContainerAdv1.PanelToBeCollapsed = Syncfusion.Windows.Forms.Tools.Collap
 
 Me.splitContainerAdv1.TogglePanelOn = Syncfusion.Windows.Forms.Tools.TogglePanelOn.DoubleClick
 
+{% endhighlight %}
+
 Panel Size 
 
 We can specify the minimum size for the Panel1 and Panel2 in Panel1MinSize and Panel2MinSize properties. Default value for both the properties is 25.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20002,15 +19974,17 @@ this.splitContainerAdv1.Panel1MinSize = 50;
 
 this.splitContainerAdv1.Panel2MinSize = 50;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.splitContainerAdv1.Panel1MinSize = 50
 
 Me.splitContainerAdv1.Panel2MinSize = 50
+
+{% endhighlight %}
 
 Splitter Settings
 
@@ -20020,7 +19994,7 @@ Splitter Settings
 
 The below table describes the properties to control the behavior of the splitter. 
 
-_Table_ _238__: Property Table_
+_Table_ _238_: Property Table
 
 <table>
 <tr>
@@ -20046,7 +20020,7 @@ Indicates the width of the splitter.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20058,9 +20032,9 @@ this.splitContainerAdv1.SplitterIncrement = 5
 
 this.splitContainerAdv1.SplitterWidth = 20
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20072,17 +20046,17 @@ Me.splitContainerAdv1.SplitterIncrement = 5
 
 Me.splitContainerAdv1.SplitterWidth = 20
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img390.jpeg)
-{:.image }
+
 
 
 Thumbnail Arrow and Grip Settings
 
 SplitContainerAdv control supports various appearance settings for the ThumbnailArrow in the control which are discussed in detail below. The properties which control the appearance of the splitter components are as follows.
 
-_Table_ _239__: Property Table_
+_Table_ _239_: Property Table
 
 <table>
 <tr>
@@ -20108,7 +20082,7 @@ Sets the shadow around the grip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20120,9 +20094,9 @@ this.splitContainerAdv2.GripDark = new Syncfusion.Drawing.BrushInfo(System.Drawi
 
 this.splitContainerAdv2.GripLight = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Crimson);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20134,17 +20108,17 @@ Me.splitContainerAdv2.GripDark = New Syncfusion.Drawing.BrushInfo(System.Drawing
 
 Me.splitContainerAdv2.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Crimson)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img391.jpeg)
-{:.image }
+
 
 
 RunTime Appearance
 
 The properties to control the appearance of the thumbnail arrows, and grip, while mouse hovering at runtime, are as follows.
 
-_Table_ _240__: Property Table_
+_Table_ _240_: Property Table
 
 <table>
 <tr>
@@ -20174,7 +20148,7 @@ Sets the shadow around the grip while under mouse cursor.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20188,9 +20162,9 @@ this.splitContainerAdv2.HotGripDark = new Syncfusion.Drawing.BrushInfo(System.Dr
 
 this.splitContainerAdv2.HotGripLight = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Purple);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20204,10 +20178,10 @@ Me.splitContainerAdv2.HotGripDark = New Syncfusion.Drawing.BrushInfo(System.Draw
 
 Me.splitContainerAdv2.HotGripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Purple)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img392.jpeg)
-{:.image }
+
 
 
 Appearance Settings
@@ -20218,7 +20192,7 @@ Background Settings
 
 The below table describes the background settings.
 
-_Table_ _241__: Property Table_
+_Table_ _241_: Property Table
 
 <table>
 <tr>
@@ -20242,11 +20216,10 @@ Sets the background color for the control.</td></tr>
 BackgroundColor</td><td>
 Sets the solid, gradient or pattern style background for the control. </td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img393.jpeg)
-{:.image }
- _Note: The above properties can be overridden by SplitContainerAdv.Panel properties._ 
 
-[C#]
+> Note: The above properties can be overridden by SplitContainerAdv.Panel properties.
+
+{% highlight c# %}
 
 
 
@@ -20256,9 +20229,9 @@ this.splitContainerAdv1.Panel1.BackgroundColor = new Syncfusion.Drawing.BrushInf
 
 this.splitContainerAdv1.Panel2.BackColor = System.Drawing.Color.AliceBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20268,11 +20241,13 @@ Me.splitContainerAdv1.Panel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(
 
 Me.splitContainerAdv1.Panel2.BackColor = System.Drawing.Color.AliceBlue
 
+{% endhighlight %}
+
 Foreground Settings
 
 The below table describes the foreground settings.
 
-_Table_ _242__: Property Table_
+_Table_ _242_: Property Table
 
 <table>
 <tr>
@@ -20290,7 +20265,7 @@ Sets the color for the display text in the control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20298,9 +20273,9 @@ this.splitContainerAdv1.Panel2.Font = new System.Drawing.Font("Arial", 8.25F, Sy
 
 this.splitContainerAdv1.Panel1.ForeColor = System.Drawing.Color.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20308,29 +20283,27 @@ Me.splitContainerAdv1.Panel2.Font = New System.Drawing.Font("Arial", 8.25F, Syst
 
 Me.splitContainerAdv1.Panel1.ForeColor = System.Drawing.Color.Black
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img394.jpeg)
-{:.image }
+
 
 
 Border Settings
 
 BorderStyle property sets 2D or 3D border for the SplitContainerAdv control. The options are FixedSingle or Fixed3D.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splitContainerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splitContainerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+
+{% endhighlight %}
 
 Styles
 
@@ -20348,41 +20321,37 @@ Visual Styles for the SplitContainerAdv control is set through Style property. T
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 //Sets Office2007 Black color scheme for the control.
 
 this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Style.Office2007Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Sets Office2007 Black color scheme for the control.
 
 Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Style.Office2007Black
 
-
+{% endhighlight %}
 
 ![C:/Users/Giftline/Desktop/ab.png](Editors-Package_images/Editors-Package_img395.png)
-{:.image }
+
 
 
 See Also
 
 Thumbnail Arrow Settings
 
-###### Events
+##### Events
 
 The events available for the SplitContainerAdv control are as follows.
 
 * SplitterMoved Event- This event is handled when the splitter is moved to a new position.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20394,9 +20363,9 @@ private void splitContainerAdv2_SplitterMoved(object sender, SplitterMoveEventAr
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20406,17 +20375,17 @@ Private Sub splitContainerAdv2_SplitterMoved(ByVal sender As Object, ByVal args 
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img396.jpeg)
-{:.image }
+
 
 
 * SplitterMoving Event - This event is handled while the splitter is moving.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20428,9 +20397,9 @@ private void splitContainerAdv2_SplitterMoving(object sender, SplitterMoveEventA
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20440,27 +20409,27 @@ Private Sub splitContainerAdv2_SplitterMoving(ByVal sender As Object, ByVal args
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img397.jpeg)
-{:.image }
+
 
 
 ### Dialog Control
 
 This section discusses about the following DialogControl in detail.
 
-##### FolderBrowser
+#### FolderBrowser
 
 The Essential Tools FolderBrowser component provides a convenient and easy to use object oriented wrapper for the Win32 Shell Folder Browser API. This class completely abstracts the intricacies involved in using the various complex Shell API functions, structures and callback routines required for working with the Windows Folder Selection Dialog and allows Windows Forms developers to work with.NET-centric properties, events and methods.
 
 ![](Editors-Package_images/Editors-Package_img398.jpeg)
-{:.image }
+
 
 
 See Also
 
-###### Features
+##### Features
 
 FolderBrowser implements a convenient and easy to use wrapper for the Win32 Shell Folder Browser API and contains the following features.
 
@@ -20482,7 +20451,7 @@ See Also
 
 Concepts and Features
 
-###### Creating FolderBrowser
+##### Creating FolderBrowser
 
 FolderBrowser control can be created in the following ways.
 
@@ -20492,8 +20461,8 @@ The designer based approach for creating and initializing the FolderBrowser comp
 
 171. Select the FolderBrowser control from the Visual Studio .NET toolbox window and drop it onto the design form. An instance of the FolderBrowser component will be added to the design form's component tray.
 
-![](Editors-Package_images/Editors-Package_img399.jpeg)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img399.jpeg)
+
 
 
 172. Select a suitable value for the FolderBrowser.StartLocation property from the enumerator list provided by the property grid. This specifies the location at which browsing should be started in the folder hierarchy. This property is the functional equivalent of the Win32 PIDL's.
@@ -20502,24 +20471,20 @@ The designer based approach for creating and initializing the FolderBrowser comp
 
 This method is a modal function and if the return code indicates success, the FolderBrowser.DirectoryPath property may be used to access the selected folder.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.folderBrowser1.ShowDialog();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.folderBrowser1.ShowDialog()
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img400.jpeg)
-{:.image }
+
 
 
 See Also
@@ -20532,99 +20497,106 @@ The programmatic approach for using the FolderBrowser component is shown below.
 
 175. Create an instance of the FolderBrowser component.
 
-[C#]
+     ~~~ cs
 
 
 
-// Declare the FolderBrowser component.
+		// Declare the FolderBrowser component.
 
-private Syncfusion.Windows.Forms.FolderBrowser folderBrowser1;
-
-
-
-// Create an instance of the FolderBrowser component.
-
-this.folderBrowser1 = new Syncfusion.Windows.Forms.FolderBrowser(this.components);
+		private Syncfusion.Windows.Forms.FolderBrowser folderBrowser1;
 
 
 
-[VB.NET]
+		// Create an instance of the FolderBrowser component.
+
+		this.folderBrowser1 = new Syncfusion.Windows.Forms.FolderBrowser(this.components);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-' Declare the FolderBrowser component.
+		' Declare the FolderBrowser component.
 
-Private folderBrowser1 As Syncfusion.Windows.Forms.FolderBrowser
+		Private folderBrowser1 As Syncfusion.Windows.Forms.FolderBrowser
 
 
 
-' Create an instance of the FolderBrowser component.
+		' Create an instance of the FolderBrowser component.
 
-Me.folderBrowser1 = New Syncfusion.Windows.Forms.FolderBrowser(Me.components)
+		Me.folderBrowser1 = New Syncfusion.Windows.Forms.FolderBrowser(Me.components)
+		
+     ~~~
+     {:.prettyprint }
 
 
 
 176. Set the FolderBrowser.StartLocation and FolderBrowser.Style property values.
 
-[C#]
+     ~~~ cs
 
 
 
-// Specify the Start location.
+		// Specify the Start location.
 
-this.folderBrowser1.StartLocation = Syncfusion.Windows.Forms.FolderBrowserFolder.MyComputer;
-
-
-
-// Specify the styles for the FolderBrowser Dialog.
-
-this.folderBrowser1.Style = (Syncfusion.Windows.Forms.FolderBrowserStyles.RestrictToFilesystem | Syncfusion.Windows.Forms.FolderBrowserStyles.BrowseForComputer);
+		this.folderBrowser1.StartLocation = Syncfusion.Windows.Forms.FolderBrowserFolder.MyComputer;
 
 
 
-[VB.NET]
+		// Specify the styles for the FolderBrowser Dialog.
+
+		this.folderBrowser1.Style = (Syncfusion.Windows.Forms.FolderBrowserStyles.RestrictToFilesystem | Syncfusion.Windows.Forms.FolderBrowserStyles.BrowseForComputer);
+
+	 ~~~
+     {:.prettyprint }
+
+
+     ~~~ vbnet
+
+		' Specify the Start location.
+
+		Me.folderBrowser1.StartLocation = Syncfusion.Windows.Forms.FolderBrowserFolder.MyComputer
 
 
 
-' Specify the Start location.
+		' Specify the styles for the FolderBrowser Dialog.
 
-Me.folderBrowser1.StartLocation = Syncfusion.Windows.Forms.FolderBrowserFolder.MyComputer
+		Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.RestrictToFilesystem Or Syncfusion.Windows.Forms.FolderBrowserStyles.BrowseForComputer
 
-
-
-' Specify the styles for the FolderBrowser Dialog.
-
-Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.RestrictToFilesystem Or Syncfusion.Windows.Forms.FolderBrowserStyles.BrowseForComputer
-
-
+     ~~~
+     {:.prettyprint }
 
 177. Invoke the FolderBrowser.ShowDialog() method to display the FolderBrowser Dialog.
 
-[C#]
+     ~~~ cs
 
 
 
-this.folderBrowser1.ShowDialog();
+		this.folderBrowser1.ShowDialog();
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.folderBrowser1.ShowDialog()
 
-
-
-Me.folderBrowser1.ShowDialog()
-
-
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img401.jpeg)
-{:.image }
+
 
 
 See Also
 
 Through Designer
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the FolderBrowser control.
 
@@ -20634,7 +20606,7 @@ This section deals with the location settings of the FolderBrowser control.
 
 The FolderBrowser allows the user to provide the location from which browsing should start. It also provides various options from which the root folder for browsing can be selected. The following properties illustrate this.
 
-_Table_ _243__: Property Table_
+_Table_ _243_: Property Table
 
 <table>
 <tr>
@@ -20644,7 +20616,7 @@ Description</td></tr>
 <tr>
 <td>
 StartLocation</td><td>
-Specifies the location of the root folder from which to start browsing. It is the functional equivalent of setting the PIDL value.{{ _Desktop,_ | markdownify }}{{ _Internet,_ | markdownify }}{{ _Programs,_ | markdownify }}{{ _Controls,_ | markdownify }}{{ _Printers,_ | markdownify }}{{ _Personal,_ | markdownify }}{{ _Favorites,_ | markdownify }}{{ _Startup,_ | markdownify }}{{ _Recent,_ | markdownify }}{{ _SendTo,_ | markdownify }}{{ _BitBucket,_ | markdownify }}{{ _StartMenu,_ | markdownify }}{{ _MyDocuments,_ | markdownify }}{{ _MyMusic,_ | markdownify }}{{ _MyVideo,_ | markdownify }}{{ _DesktopDirectory,_ | markdownify }}{{ _MyComputer,_ | markdownify }}{{ _NetworkNeighborhood,_ | markdownify }}{{ _NetHood,_ | markdownify }}{{ _Fonts,_ | markdownify }}{{ _Templates,_ | markdownify }}{{ _MyPictures,_ | markdownify }}{{ _CommonDocuments,_ | markdownify }}{{ _CommonAdminTools,_ | markdownify }}{{ _AdminTools,_ | markdownify }}{{ _NetAndDialUpConnections,_ | markdownify }}{{ _CommonMusic,_ | markdownify }}{{ _CommonPictures,_ | markdownify }}{{ _CommonVideo,_ | markdownify }}{{ _Resources,_ | markdownify }}{{ _ResourcesLocalized,_ | markdownify }}{{ _CommonOemLinks,_ | markdownify }}{{ _CDBurnArea,_ | markdownify }}{{ _ComputersNearMe,_ | markdownify }}{{ _CustomStartLocation,_ | markdownify }}{{ _FlagPerUserInit,_ | markdownify }}{{ _FlagNoAlias,_ | markdownify }}{{ _FlagDontVerify,_ | markdownify }}{{ _FlagCreate and_ | markdownify }}{{ _FlagMask._ | markdownify }}</td></tr>
+Specifies the location of the root folder from which to start browsing. It is the functional equivalent of setting the PIDL value.{{ '_Desktop,_' | markdownify }}{{ '_Internet,_' | markdownify }}{{ '_Programs,_' | markdownify }}{{ '_Controls,_' | markdownify }}{{ '_Printers,_' | markdownify }}{{ '_Personal,_' | markdownify }}{{ '_Favorites,_' | markdownify }}{{ '_Startup,_' | markdownify }}{{ '_Recent,_' | markdownify }}{{ '_SendTo,_' | markdownify }}{{ '_BitBucket,_' | markdownify }}{{ '_StartMenu,_' | markdownify }}{{ '_MyDocuments,_' | markdownify }}{{ '_MyMusic,_' | markdownify }}{{ '_MyVideo,_' | markdownify }}{{ '_DesktopDirectory,_' | markdownify }}{{ '_MyComputer,_' | markdownify }}{{ '_NetworkNeighborhood,_' | markdownify }}{{ '_NetHood,_' | markdownify }}{{ '_Fonts,_' | markdownify }}{{ '_Templates,_' | markdownify }}{{ '_MyPictures,_' | markdownify }}{{ '_CommonDocuments,_' | markdownify }}{{ '_CommonAdminTools,_' | markdownify }}{{ '_AdminTools,_' | markdownify }}{{ '_NetAndDialUpConnections,_' | markdownify }}{{ '_CommonMusic,_' | markdownify }}{{ '_CommonPictures,_' | markdownify }}{{ '_CommonVideo,_' | markdownify }}{{ '_Resources,_' | markdownify }}{{ '_ResourcesLocalized,_' | markdownify }}{{ '_CommonOemLinks,_' | markdownify }}{{ '_CDBurnArea,_' | markdownify }}{{ '_ComputersNearMe,_' | markdownify }}{{ '_CustomStartLocation,_' | markdownify }}{{ '_FlagPerUserInit,_' | markdownify }}{{ '_FlagNoAlias,_' | markdownify }}{{ '_FlagDontVerify,_' | markdownify }}{{ '_FlagCreate and_' | markdownify }}{{ '_FlagMask._' | markdownify }}</td></tr>
 <tr>
 <td>
 CustomStartLocation</td><td>
@@ -20658,11 +20630,10 @@ Gets / sets the selected location for showing the dialog.</td></tr>
 DirectoryPath</td><td>
 Retrieves the location of the selected folder.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img402.jpeg)
-{:.image }
- _Note: For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'._
 
-[C#]
+> Note: For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'._
+
+{% highlight c# %}
 
 
 
@@ -20678,9 +20649,9 @@ this.folderBrowser1.CustomStartLocation = "C:";
 
 this.folderBrowser1.SelectLocation = "C:\\Program Files\\Syncfusion\\Essential Studio";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20696,10 +20667,10 @@ Me.folderBrowser1.CustomStartLocation = "C:"
 
 Me.folderBrowser1.SelectLocation = "C:\\Program Files\\Syncfusion\\Essential Studio"
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img403.jpeg)
-{:.image }
+
 
 
 A Sample which demonstrates the Location Settings of FolderBrowser is available in the below sample installation path.
@@ -20710,7 +20681,7 @@ Style Settings
 
 The style settings that are available for the FolderBrowser Dialog are given below.
 
-_Table_ _244__: Property Table_
+_Table_ _244_: Property Table
 
 <table>
 <tr>
@@ -20720,7 +20691,7 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the options for the FolderBrowser Dialog.The options included are as follows.{{ _RestrictToFilesystem,_ | markdownify }}{{ _RestrictToSubfolders,_ | markdownify }}{{ _RestrictToDomain,_ | markdownify }}{{ _BrowseForComputer,_ | markdownify }}{{ _BrowseForEverything,_ | markdownify }}{{ _BrowseForPrinter,_ | markdownify }}{{ _NewDialogStyle,_ | markdownify }}{{ _AllowUrls,_ | markdownify }}{{ _ShowAdministrativeShares,_ | markdownify }}{{ _ShowShares,_ | markdownify }}{{ _ShowTextBox,_ | markdownify }}{{ _StatusText,_ | markdownify }}{{ _UAHint and_ | markdownify }}{{ _Validate._ | markdownify }}</td></tr>
+Specifies the options for the FolderBrowser Dialog.The options included are as follows.{{ '_RestrictToFilesystem,_' | markdownify }}{{ '_RestrictToSubfolders,_' | markdownify }}{{ '_RestrictToDomain,_' | markdownify }}{{ '_BrowseForComputer,_' | markdownify }}{{ '_BrowseForEverything,_' | markdownify }}{{ '_BrowseForPrinter,_' | markdownify }}{{ '_NewDialogStyle,_' | markdownify }}{{ '_AllowUrls,_' | markdownify }}{{ '_ShowAdministrativeShares,_' | markdownify }}{{ '_ShowShares,_' | markdownify }}{{ '_ShowTextBox,_' | markdownify }}{{ '_StatusText,_' | markdownify }}{{ '_UAHint and_' | markdownify }}{{ '_Validate._' | markdownify }}</td></tr>
 </table>
 
 
@@ -20741,24 +20712,22 @@ The various options of the Style property are described below.
 * UAHint - Adds an usage hint to the folder dialog. It can be applied only with 'NewDialogStyle'.
 * Validate - Typing invalid name in the textbox triggers FolderBrowserCallBack event.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextBox;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextBox
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img404.jpeg)
-{:.image }
+
 
 
 
@@ -20773,7 +20742,7 @@ The text settings of the FolderBrowser control are described below.
 
 The text for the FolderBrowser can be set using the below given property.
 
-_Table_ _245__: Property Table_
+_Table_ _245_: Property Table
 
 <table>
 <tr>
@@ -20787,31 +20756,27 @@ Gets / sets the text displayed above the tree control in the FolderBrowser Dialo
 </table>
 The Description property of the FolderBrowser supports the 'AutoComplete' feature that provides options that can be used to complete text even before it is entered.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.folderBrowser1.Description = "Recent Documents";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.folderBrowser1.Description = "Recent Documents"
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img405.jpeg)
-{:.image }
 
 
-###### FolderBrowser Event
+
+##### FolderBrowser Event
 
 A detailed explanation about the FolderBrowserCallback event is given in the following section.
 
-_Table_ _246__: Event Table_
+_Table_ _246_: Event Table
 
 <table>
 <tr>
@@ -20829,7 +20794,7 @@ The event occurs when an event within the folder browser dialog triggers a call 
 
 The following FolderBrowserCallbackEventArgs members provide information specific to this event.
 
-_Table_ _247__: Members Table_
+_Table_ _247_: Members Table
 
 <table>
 <tr>
@@ -20867,7 +20832,7 @@ It can be handled when browser validation is required.
 
 This handler is functionally equivalent to the Win32 BrowseCallbackProc callback function.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20889,9 +20854,9 @@ e.Dismiss = e.Path != "NONE";
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20909,7 +20874,9 @@ End If
 
 End Sub
 
-###### Frequently Asked Questions
+{% endhighlight %}
+
+##### Frequently Asked Questions
 
 This section will help you become more familiar in using the FolderBrowser control.
 
@@ -20919,37 +20886,35 @@ Flags can be used to set various styles for the FolderBrowser Dialog. Each style
 
 Look at the below given snippet to apply "RestrictToSubfolders" style and to remove the "ShowTextBox" style for the FolderBrowser Dialog.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.folderBrowser1.Style &= ~FolderBrowserStyles.RestrictToSubfolders;
 
 this.folderBrowser1.Style |= FolderBrowserStyles.ShowTextBox;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.folderBrowser1.Style = Me.folderBrowser1.Style And Not FolderBrowserStyles.RestrictToSubfolders
 
 Me.folderBrowser1.Style = Me.folderBrowser1.Style Or FolderBrowserStyles.ShowTextBox
 
+{% endhighlight %}
+
 ### Editor Controls
 
 The following are the rich edit controls supported by Syncfusion.
 
-##### CurrencyEdit
+#### CurrencyEdit
 
 CurrencyEdit embeds a CurrencyTextBox control and a button to provide a drop-down calculator to enable calculations with the contents of the CurrencyTextBox. The CurrencyEdit control provides an easy way to collect and display the currency data.
 
 ![](Editors-Package_images/Editors-Package_img406.png)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 The features of Currency Edit control is listed below.
 
@@ -20958,70 +20923,71 @@ The features of Currency Edit control is listed below.
 * The Currency value can be moved from a PopupCalculator to a CurrencyTextbox and vice versa.
 * The layout of the calculator control in the CurrencyEdit control can also be changed.
 * It is used to display dropdown Financial Calculator.
-###### Creating CurrencyEdit
+
+##### Creating CurrencyEdit
 
 
 To use a CurrencyEdit control in your application, all you need to do is drag and drop the CurrencyEdit control from the controls toolbox onto your form. You can then set any of its properties through the property grid.
 
 ![](Editors-Package_images/Editors-Package_img407.png)
-{:.image }
+
 
 
 It can be created programmatically as follows.
 
 178. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+     ~~~
+     {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+     ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 179. Create an instance of the CurrencyEdit. Add that instance to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit1;
+		private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit1;
 
-this.currencyEdit1=new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-
-
-
-this.Controls.Add(this.currencyEdit1);
+		this.currencyEdit1=new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
 
 
 
-[VB.NET]
+		this.Controls.Add(this.currencyEdit1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-Private currencyEdit1 As Syncfusion.Windows.Forms.Tools.CurrencyEdit
+		Private currencyEdit1 As Syncfusion.Windows.Forms.Tools.CurrencyEdit
 
-Me.currencyEdit1 = New Syncfusion.Windows.Forms.Tools.CurrencyEdit()
-
-
-
-Me.Controls.Add(Me.currencyEdit1)
+		Me.currencyEdit1 = New Syncfusion.Windows.Forms.Tools.CurrencyEdit()
 
 
+
+		Me.Controls.Add(Me.currencyEdit1)
+
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img408.png)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the CurrencyEdit control.
 
@@ -21030,14 +20996,14 @@ Calculator Settings
 A CurrencyEdit control has a text field and a Calculator button, pressing which will open a Calculator control. The below image illustrates the same.
 
 ![](Editors-Package_images/Editors-Package_img409.png)
-{:.image }
+
 
 
 The properties which controls the behavior of the Calculator button is as follows.
 
 
 
-_Table_ _248__: Property Table_
+_Table_ _248_: Property Table
 
 <table>
 <tr>
@@ -21055,19 +21021,19 @@ Provides properties to customize the calculator button. { [See ButtonEdit](http:
 <tr>
 <td>
 CalculatorLayoutType</td><td>
-Specifies the LayoutType for the Calculator control. The layout types are,{{ _Financial (default) and_ | markdownify }}{{ _WindowStandard._ | markdownify }}</td></tr>
+Specifies the LayoutType for the Calculator control. The layout types are,{{ '_Financial (default) and_' | markdownify }}{{ '_WindowStandard._' | markdownify }}</td></tr>
 <tr>
 <td>
 PopupCalculatorAlignment</td><td>
-It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,{{ _Right(default) and_ | markdownify }}{{ _Left._ | markdownify }}</td></tr>
+It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,{{ '_Right(default) and_' | markdownify }}{{ '_Left._' | markdownify }}</td></tr>
 <tr>
 <td>
 CloseAction</td><td>
-Specifies the action that will close the popup calculator. After performing calculations in the popup calculator, we may press '=' to close the popup calculator. This is called closed action. We can select any operator instead of '=' to close the popup calculator. The options are,{{ _Calcdigit0...Calcdigit9,_ | markdownify }}{{ _CalcOperatorNone,_ | markdownify }}{{ _CalcOperatorMultiply,_ | markdownify }}{{ _CalcOperatorPlus,_ | markdownify }}{{ _CalcOperatorMinus,_ | markdownify }}{{ _CalcOperatorDivide,_ | markdownify }}{{ _CalcOperatorPercent,_ | markdownify }}{{ _CalcOperatorEquals (default),_ | markdownify }}{{ _CalcOperatorSqrt,_ | markdownify }}{{ _CalcOperatorSign,_ | markdownify }}{{ _CalcOperatorMemoryClear,_ | markdownify }}{{ _CalcOperatorMemoryRecall,_ | markdownify }}{{ _CalcOperatorMemoryStore,_ | markdownify }}{{ _CalcOperatorMemoryPlus,_ | markdownify }}{{ _CalcSpecialClear,_ | markdownify }}{{ _CalcSpecialClearEntry,_ | markdownify }}{{ _CalcSpecialDecimal and_ | markdownify }}{{ _CalcSpecialBackspace._ | markdownify }}</td></tr>
+Specifies the action that will close the popup calculator. After performing calculations in the popup calculator, we may press '=' to close the popup calculator. This is called closed action. We can select any operator instead of '=' to close the popup calculator. The options are,{{ '_Calcdigit0...Calcdigit9,_' | markdownify }}{{ '_CalcOperatorNone,_' | markdownify }}{{ '_CalcOperatorMultiply,_' | markdownify }}{{ '_CalcOperatorPlus,_' | markdownify }}{{ '_CalcOperatorMinus,_' | markdownify }}{{ '_CalcOperatorDivide,_' | markdownify }}{{ '_CalcOperatorPercent,_' | markdownify }}{{ '_CalcOperatorEquals (default),_' | markdownify }}{{ '_CalcOperatorSqrt,_' | markdownify }}{{ '_CalcOperatorSign,_' | markdownify }}{{ '_CalcOperatorMemoryClear,_' | markdownify }}{{ '_CalcOperatorMemoryRecall,_' | markdownify }}{{ '_CalcOperatorMemoryStore,_' | markdownify }}{{ '_CalcOperatorMemoryPlus,_' | markdownify }}{{ '_CalcSpecialClear,_' | markdownify }}{{ '_CalcSpecialClearEntry,_' | markdownify }}{{ '_CalcSpecialDecimal and_' | markdownify }}{{ '_CalcSpecialBackspace._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21083,11 +21049,11 @@ this.currencyEdit1.TransferFromCalculator = true;
 
 this.currencyEdit1.TransferToCalculator = true;
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21103,11 +21069,13 @@ Me.currencyEdit1.TransferFromCalculator = True
 
 Me.currencyEdit1.TransferToCalculator = True
 
+{% endhighlight %}
+
 Text Settings
 
 The below properties will let you control the behavior of the text in the CurrencyEdit control.
 
-_Table_ _249__: Property Table_
+_Table_ _249_: Property Table
 
 <table>
 <tr>
@@ -21145,7 +21113,7 @@ Specifies the decimal value of the currency control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21161,9 +21129,9 @@ this.currencyEdit1.TransferToCalculator= false;
 
 this.currencyEdit1.TextBox.DecimalValue = new decimal(new int[] {40000, 0, 0, 131072});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21179,23 +21147,21 @@ Me.currencyEdit1.TransferToCalculator = False
 
 Me.currencyEdit1.TextBox.DecimalValue = New Decimal(New Integer() {40000, 0, 0, 131072})
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyEdit_Text.png](Editors-Package_images/Editors-Package_img410.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img411.png)
-{:.image }
- _Note: Enabling ButtonEdit.UseVisualStyle property and by setting visual style for control using ButtonEdit.ButtonStyle property, we can change the appearance of the calculator button._
 
-###### Frequently Asked Questions
+> Note: Enabling ButtonEdit.UseVisualStyle property and by setting visual style for control using ButtonEdit.ButtonStyle property, we can change the appearance of the calculator button.
+
+##### Frequently Asked Questions
 
 How to Change the Calculator layout using CalcPopup property
 
 Sometimes we may be in need of a calculator with Windows standard layout. By changing the CalcPopup property, we can do the same. Include this code fragment in the FormLoad event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21209,9 +21175,9 @@ pc.ParentControl=currencyEdit1;
 
 currencyEdit1.CalcPopup=pc;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21225,13 +21191,15 @@ pc.ParentControl=currencyEdit1
 
 currencyEdit1.CalcPopup=pc
 
-###### Events
+{% endhighlight %}
+
+##### Events
 
 CalculatorClosing Event
 
 CalculatorClosing event is handled when the calculator is closing after the specified button is clicked.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21245,9 +21213,9 @@ private void currencyEdit1_CalculatorClosing(object sender, CalculatorClosin
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21259,11 +21227,13 @@ Private Sub currencyEdit1_CalculatorClosing(ByVal sender As Object, ByVal�
 
 End Sub
 
+{% endhighlight %}
+
 CalculatorShowing Event
 
 This event is raised before the calculator popup is displayed. The Cancel property of this CancelEventArgs lets  you to cancel the popup display as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21277,9 +21247,9 @@ private void currencyEdit1_CalculatorShowing(object sender, CancelEventArgs�
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21291,11 +21261,13 @@ Private Sub currencyEdit1_CalculatorShowing(ByVal sender As Object, ByVal�
 
 End Sub
 
+{% endhighlight %}
+
 DecimalValueChanged Event
 
 This event is raised when DecimalValue property is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21307,9 +21279,9 @@ private void currencyEdit1_DecimalValueChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21319,15 +21291,17 @@ Private Sub currencyEdit1_DecimalValueChanged(ByVal sender As Object, ByVa
 
 End Sub
 
-##### DomainUpDownExt
+{% endhighlight %}
+
+#### DomainUpDownExt
 
 DomainUpDownExt is an advanced version of the standard windows DomainUpDown control. Syncfusion DomainUpDownExt supports themes and comes with Office2007 look and feel. It also provides options to apply custom colors to the control. It enables spin button orientation and alignment.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DomainUpDownExt_1.png](Editors-Package_images/Editors-Package_img412.png)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 DomainUpDownExt is an advanced version of the standard windows DomainUpDown control and contains following features.
 
@@ -21336,110 +21310,111 @@ DomainUpDownExt is an advanced version of the standard windows DomainUpDown con
 * Orientation of spin button to vertical and horizontal.
 * Provides option to set different visual styles including Office2007.
 * [Custom Colors](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/VisualStyles4.html) can be applied to the control.
-###### Creating DomainUpDownExt
+
+##### Creating DomainUpDownExt
 
 
 To use a DomainUpDownExt control in your application, all you need to do is drag and drop the DomainUpDownExt control from the controls toolbox onto your form.
 
 ![](Editors-Package_images/Editors-Package_img413.png)
-{:.image }
+
 
 
 You can add items in the String Collection Editor of DomainUpDownExt control and Click Ok.
 
 ![](Editors-Package_images/Editors-Package_img414.png)
-{:.image }
+
 
 
 It can be created programmatically as follows.
 
 180. Add Shared.Base, Shared.Windows, Tools.Base and Tools.Windows assembly references and include the required namespace.
 
-[C#]
+     ~~~ cs
 
+		using Syncfusion.Windows.Forms.Tools;
 
+     ~~~
+     {:.prettyprint }
 
-using Syncfusion.Windows.Forms.Tools;
+     ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 181. Create an instance of the DomainUpDownExt. Add that instance to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.DomainUpDownExt domainUpDownExt1;
+		private Syncfusion.Windows.Forms.Tools.DomainUpDownExt domainUpDownExt1;
 
-this.domainUpDownExt1=new Syncfusion.Windows.Forms.Tools.DomainUpDownExt();
-
-
-
-// Add items.
-
-this.domainUpDownExt1.Items.Add("One");
-
-this.domainUpDownExt1.Items.Add("Two");
-
-this.domainUpDownExt1.Items.Add("Three");
-
-this.domainUpDownExt1.Items.Add("Four");
-
-this.domainUpDownExt1.Items.Add("Five");
+		this.domainUpDownExt1=new Syncfusion.Windows.Forms.Tools.DomainUpDownExt();
 
 
 
-this.Controls.Add(this.domainUpDownExt1);
+		// Add items.
+
+		this.domainUpDownExt1.Items.Add("One");
+
+		this.domainUpDownExt1.Items.Add("Two");
+
+		this.domainUpDownExt1.Items.Add("Three");
+
+		this.domainUpDownExt1.Items.Add("Four");
+
+		this.domainUpDownExt1.Items.Add("Five");
 
 
 
-[VB.NET]
+		this.Controls.Add(this.domainUpDownExt1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-Private domainUpDownExt1 As Syncfusion.Windows.Forms.Tools.DomainUpDownExt
+		Private domainUpDownExt1 As Syncfusion.Windows.Forms.Tools.DomainUpDownExt
 
-Me.domainUpDownExt1 = New Syncfusion.Windows.Forms.Tools.DomainUpDownExt()
-
-
-
-' Add items.
-
-Me.domainUpDownExt1.Items.Add("One")
-
-Me.domainUpDownExt1.Items.Add("Two")
-
-Me.domainUpDownExt1.Items.Add("Three")
-
-Me.domainUpDownExt1.Items.Add("Four")
-
-Me.domainUpDownExt1.Items.Add("Five")
+		Me.domainUpDownExt1 = New Syncfusion.Windows.Forms.Tools.DomainUpDownExt()
 
 
 
-Me.Controls.Add(Me.domainUpDownExt1)
+		' Add items.
+
+		Me.domainUpDownExt1.Items.Add("One")
+
+		Me.domainUpDownExt1.Items.Add("Two")
+
+		Me.domainUpDownExt1.Items.Add("Three")
+
+		Me.domainUpDownExt1.Items.Add("Four")
+
+		Me.domainUpDownExt1.Items.Add("Five")
 
 
+
+		Me.Controls.Add(Me.domainUpDownExt1)
+
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img415.png)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 Text Settings
 
 The text for the DomainUpDownExt control can be specified in String Collection Editor. This section discusses the properties which deals with this text.
 
-_Table_ _250__: Property Table_
+_Table_ _250_: Property Table
 
 <table>
 <tr>
@@ -21461,7 +21436,7 @@ Indicates the maximum length of the text that can be entered into the editable p
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21471,9 +21446,9 @@ this.domainUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 this.domainUpDownExt2.MaxLength = 32768;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21483,10 +21458,10 @@ Me.domainUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 Me.domainUpDownExt2.MaxLength = 32768
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Text.png](Editors-Package_images/Editors-Package_img416.png)
-{:.image }
+
 
 
 SpinButton
@@ -21494,14 +21469,14 @@ SpinButton
 This section will discuss the properties which controls the alignment and orientation of the spin button in a DomainUpDownExt control.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Spin.png](Editors-Package_images/Editors-Package_img417.png)
-{:.image }
+
 
 
 Orientation
 
 The spin button orientation can be changed to vertical or horizontal using the SpinOrientation property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21513,9 +21488,9 @@ this.domainUpDownExt1.SpinOrientation = Orientation.Horizontal;
 
 this.domainUpDownExt1.SpinOrientation = Orientation.Vertical;           
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -21527,41 +21502,37 @@ Me.domainUpDownExt1.SpinOrientation = Orientation.Horizontal
 
 Me.domainUpDownExt1.SpinOrientation = Orientation.Vertical
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownSpin.png](Editors-Package_images/Editors-Package_img418.png)
-{:.image }
+
 
 
 Alignment
 
 The spin button alignment can be set through UpDownAlign property. By default it is set to right.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.domainUpDownExt1.UpDownAlign = LeftRightAlignment.Left;       
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.domainUpDownExt1.UpDownAlign = LeftRightAlignment.Left
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Align.png](Editors-Package_images/Editors-Package_img419.png)
-{:.image }
+
 
 
 Keyboard Support
 
 Using Up and Down arrow keys we can increment and decrement the value of DomainUpDownExt control by settingInterceptArrowKeys to true.
 
-_Table_ _251__: Property Table_
+_Table_ _251_: Property Table
 
 <table>
 <tr>
@@ -21575,25 +21546,23 @@ Specifies whether the up down control will increment and decrement when Up Arrow
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.domainUpDownExt1.InterceptArrowKeys = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Me.domainUpDownExt1.InterceptArrowKeys = True
+
+{% endhighlight %}
 
 Visual Styles
 
 DomainUpDownExt supports Office2007 visual style with all three color schemes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21613,9 +21582,9 @@ this.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Sil
 
 this.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;               
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -21635,15 +21604,15 @@ Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silve
 
 Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownOffice.png](Editors-Package_images/Editors-Package_img420.png)
-{:.image }
+
 
 
 It also provides support for XP Themes look and feel.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21651,9 +21620,9 @@ It also provides support for XP Themes look and feel.
 
 this.domainUpDownExt1.ThemesEnabled = true;                          
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -21661,21 +21630,21 @@ this.domainUpDownExt1.ThemesEnabled = true;                  
 
 Me.domainUpDownExt1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownDefault.png](Editors-Package_images/Editors-Package_img421.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownVista.png](Editors-Package_images/Editors-Package_img422.png)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the DomainUpDownExt control by setting ColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21683,9 +21652,9 @@ this.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Man
 
 Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21693,10 +21662,10 @@ Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Manag
 
 Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDown_CustomColors.png](Editors-Package_images/Editors-Package_img423.png)
-{:.image }
+
 
 
 Appearance Settings
@@ -21705,7 +21674,7 @@ This section discusses the border styles and back color that can be applied for 
 
 The below table lists the appearance properties of DomainUpDownExt control.
 
-_Table_ _252__: Property Table_
+_Table_ _252_: Property Table
 
 <table>
 <tr>
@@ -21739,7 +21708,7 @@ Specifies the back color for the control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21753,9 +21722,9 @@ this.domainUpDownExt1.BorderColor = System.Drawing.Color.DodgerBlue;        
 
 this.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21769,21 +21738,21 @@ Me.domainUpDownExt1.BorderColor = System.Drawing.Color.DodgerBlue
 
 Me.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DomainUp_border.png](Editors-Package_images/Editors-Package_img424.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Create2.png](Editors-Package_images/Editors-Package_img425.png)
-{:.image }
 
 
-###### DomainUpDownExt Events
+
+##### DomainUpDownExt Events
 
 This section describes the events of DomainUpDownExt control.
 
-_Table_ _253__: Property Table_
+_Table_ _253_: Property Table
 
 <table>
 <tr>
@@ -21811,13 +21780,14 @@ This event is handled when BorderColor is changed.</td></tr>
 Border3DStyleChanged</td><td>
 This event is handled when Border3DStyle is changed.</td></tr>
 </table>
-######  Frequently Asked Questions
+
+#####  Frequently Asked Questions
 
 How to add new items to the List when enter key is pressed
 
 To add the new items which are entered by the user at runtime after the user had pressed the enter key, we need to catch theKeyDown event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21833,9 +21803,9 @@ if(!domainUpDownExt1.Items.Contains ( domainUpDownExt1.Text ))  domainUpDownExt
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21855,11 +21825,13 @@ End If
 
 End Sub
 
+{% endhighlight %}
+
 How to programmatically browse through values in a DomainUpDownExt control
 
 We can programmatically browse through the previous and the next values, of the current value, by calling UpButton() and DownButton() methods.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21871,9 +21843,9 @@ this.domainUpDownExt1.UpButton();
 
 this.domainUpDownExt1.DownButton();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21885,17 +21857,19 @@ Me.domainUpDownExt1.UpButton()
 
 Me.domainUpDownExt1.DownButton()
 
-##### DoubleTextBox
+{% endhighlight %}
+
+#### DoubleTextBox
 
 The DoubleTextBox is a text box-derived control that can display double data type values.
 
 The DoubleTextBox is derived from Windows Forms framework text box control. The DoubleTextBox supports display and collection of double values. It handles user keyboard input and double formatting and uses the globalization features of the .NET platform to provide locale specific formatting.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DoubleTB_1.png](Editors-Package_images/Editors-Package_img426.png)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 DoubleTextBoxis used to display collection of double values.
 
@@ -21903,62 +21877,67 @@ DoubleTextBoxis used to display collection of double values.
 * It is fully compatible with the Windows Forms Text Box and uses the globalization features of the .NET platform to provide locale specific formatting.
 * The control supports values with a precision of 15 characters.
 * The DoubleTextBox control supports displaying negative values in a different color and also using different negative formats.
-###### Creating Double TextBox
+
+##### Creating Double TextBox
 
 
 To use a DoubleTextBox control in your application, all you need to do is drag and drop the DoubleTextBox control from the controls toolbox onto your form.
 
 ![](Editors-Package_images/Editors-Package_img427.png)
-{:.image }
+
 
 
 It can be created programmatically as follows.
 
 182. Add Shared.Base, Shared.Windows, Tools.Base and Tools.Windows assembly references and include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 183. Create an instance of the DoubleTextBox. Add that instance to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-this.doubleTextBox1=new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+		this.doubleTextBox1=new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
 
-this.Controls.Add(this.doubleTextBox1);
+		this.Controls.Add(this.doubleTextBox1);
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.doubleTextBox1 = New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
-
-Me.Controls.Add(Me.doubleTextBox1)
+     ~~~ vbnet
 
 
+
+		Me.doubleTextBox1 = New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
+
+		Me.Controls.Add(Me.doubleTextBox1)
+
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img428.png)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 The following Editors controls (DoubleTextBox, IntegerTextBox, PercentTextBox, and CurrencyTextBox) has been revamped, click here to see the details of revamping.
 
@@ -21966,7 +21945,7 @@ Number Settings
 
 The below table lists the properties which illustrates the number settings for the DoubleTextBox.
 
-_Table_ _254__: Property Table_
+_Table_ _254_: Property Table
 
 <table>
 <tr>
@@ -22000,7 +21979,7 @@ Gets or sets the pattern to use when the value is negative.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22014,9 +21993,9 @@ this.doubleTextBox1.NumberGroupSizes = new int[] {4};
 
 this.doubleTextBox1.NumberNegativePattern = 2;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22036,11 +22015,13 @@ Me.doubleTextBox1.CurrencyGroupSizes = New Integer() {3}
 
 Me.doubleTextBox1.NumberNegativePattern = 2
 
+{% endhighlight %}
+
 DoubleTextBox Value
 
 The maximum and minimum value of the editable field in DoubleTextBox control can be specified using the below properties.
 
-_Table_ _255__: Property Table_
+_Table_ _255_: Property Table
 
 <table>
 <tr>
@@ -22058,7 +22039,7 @@ Specifies the minimum value that can be set for the DoubleTextBox.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22066,9 +22047,9 @@ this.doubleTextBox1.MaxValue = 25;
 
 this.doubleTextBox1.MinValue = 4;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22076,13 +22057,15 @@ Me.doubleTextBox1.MaxValue = 25
 
 Me.doubleTextBox1.MinValue = 4
 
+{% endhighlight %}
+
 Banner Text Support
 
 We can set banner text for the DoubleTextBox control. Refer [BannerTextProvider Component](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BannerText.html) topic for more details.
 
 We need to do the below settings to make Banner text feature available for the control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22092,9 +22075,9 @@ this.doubleTextBox1.NullString = "";
 
 this.doubleTextBox1.Text = "";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22104,10 +22087,10 @@ Me.doubleTextBox1.NullString = ""
 
 Me.doubleTextBox1.Text = ""
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DoubleTextBox_BannerText.png](Editors-Package_images/Editors-Package_img429.png)
-{:.image }
+
 
 
 Appearance and Behavior Settings
@@ -22142,7 +22125,7 @@ Overriding the Behavior of certain KeyStrokes in a DoubleTextBox
 
 This can be done by overriding the HandleSubtractKey(). Given below is the code snippet which shows an example of how to clear the text when the NegativeSign is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22204,9 +22187,9 @@ public class DoubleTextBoxAdv : Syncfusion.Windows.Forms.Tools.DoubleTextBox
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22266,19 +22249,19 @@ Public Class DoubleTextBoxAdv
 
 End Class
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img430.png)
-{:.image }
 
 
-###### Event Handling
+
+##### Event Handling
 
 Enabling Fixed Change using Shortcut Keys
 
 Sometimes there may occur situations for incrementing or decrementing the value in DoubleTextBox. In such situations it is better to use shortcut keys. The following implementation will give you an idea on how to achieve this. Here the Up and Down keys are used for incrementing and decrementing respectively. We cannot use '-' because it is already reserved to enter the minus sign.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22306,9 +22289,9 @@ doubleTextBox1.DoubleValue=v;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22336,11 +22319,13 @@ doubleTextBox1.DoubleValue = v
 
 End Sub
 
+{% endhighlight %}
+
 DoubleValueChanged Event
 
 This event is handled when the double value in the text field is changed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22352,9 +22337,9 @@ private void doubleTextBox1_DoubleValueChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22364,15 +22349,17 @@ MessageBox.Show("Double Value is changed")
 
 End Sub
 
-##### IntegerTextBox
+{% endhighlight %}
+
+#### IntegerTextBox
 
 The IntegerTextBox is derived from the Windows Forms framework TextBox control and can display integer data type values. It exhibits properties similar to that of the CurrencyTextBox.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Create4.png](Editors-Package_images/Editors-Package_img431.png)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 IntegerTextBox is used to display Int64 values and contains the following features.
 
@@ -22429,7 +22416,8 @@ Key Features
 * The IntegerTextBox control handles user keyboard input and double formatting with no code required.
 * It is fully compatible with the Windows Forms TextBox and uses the globalization features of the .NET platform to provide locale specific formatting.
 * The IntegerTextBox control supports displaying negative values in a different color and also using different negative formats.
-###### Creating IntegerTextBox
+
+##### Creating IntegerTextBox
 
 
 This section will give a step by step procedure to design an IntegerTextBox control through designer and also through programmatical approach.
@@ -22439,14 +22427,14 @@ Through Designer
 184. Create or open a Windows Forms project.
 185. Click on the IntegerTextBox Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
 
-![](Editors-Package_images/Editors-Package_img432.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img432.png)
+
 
 
 186. Run the application. The IntegerTextBox that allows you to enter only integer values, will be displayed as given below.
 
-![](Editors-Package_images/Editors-Package_img433.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img433.png)
+
 
 
 Through Programmatical Approach
@@ -22455,93 +22443,101 @@ The IntegerTextBox control can be created programmatically through code as detai
 
 187. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 188. Create an instance of the IntegerTextBox control.
 
-[C#]
+     ~~~ cs
 
 
 
-// Create IntegerTextBox control.
+		// Create IntegerTextBox control.
 
-private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
+		private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
 
-this.integerTextBox1=new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
+		this.integerTextBox1=new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-' Create IntegerTextBox control.
-
-Private integerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
-
-Me.integerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+     ~~~ vbnet
 
 
+
+		' Create IntegerTextBox control.
+
+		Private integerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
+
+		Me.integerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+
+     ~~~
+     {:.prettyprint }
 
 189. Specify its value and size.
 
-[C#]
+     ~~~ cs
 
 
 
-this.integerTextBox1.IntegerValue = ((long)(7));
+		this.integerTextBox1.IntegerValue = ((long)(7));
 
-this.integerTextBox1.Size = new System.Drawing.Size(144, 20);
+		this.integerTextBox1.Size = new System.Drawing.Size(144, 20);
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.integerTextBox1.IntegerValue = (CLng(7))
-
-Me.integerTextBox1.Size = New System.Drawing.Size(144, 20)
+     ~~~ vbnet
 
 
+
+		Me.integerTextBox1.IntegerValue = (CLng(7))
+
+		Me.integerTextBox1.Size = New System.Drawing.Size(144, 20)
+
+     ~~~
+     {:.prettyprint }
 
 190. Add the IntegerTextBox control to the form.
 
-[C#]
+     ~~~ cs
 
 
 
-this.Controls.Add(this.integerTextBox1);
+		this.Controls.Add(this.integerTextBox1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.Controls.Add(Me.integerTextBox1)
 
-
-
-Me.Controls.Add(Me.integerTextBox1)
-
-
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img434.png)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 The following Editors controls (DoubleTextBox, IntegerTextBox, PercentTextBox, and CurrencyTextBox) have been revamped, click here to see the details of revamping.
 
@@ -22551,7 +22547,7 @@ This section discusses the display settings of the IntegerTextBox control.
 
 The IntegerTextBox provides a list of properties to set the display characteristics associated with the integer value.
 
-_Table_ _256__: Property Table_
+_Table_ _256_: Property Table
 
 <table>
 <tr>
@@ -22579,7 +22575,7 @@ Gets / sets the sign that is to be used to indicate a negative value.</td></tr>
 
 The grouping size of the number digits can be set using the Int32 Collection Editor which will be displayed on selecting theNumberGroupSizes property in the property grid.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22591,9 +22587,9 @@ this.integerTextBox1.NumberNegativePattern = 2;
 
 this.integerTextBox1.NegativeSign = "-";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22605,10 +22601,10 @@ Me.integerTextBox1.NumberNegativePattern = 2
 
 Me.integerTextBox1.NegativeSign = "-"
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_GroupSize1.png](Editors-Package_images/Editors-Package_img435.png)
-{:.image }
+
 
 
 A Sample which demonstrates the Display Settings of IntegerTextBox control is available in the below sample installation path.
@@ -22619,7 +22615,7 @@ A Sample which demonstrates the Display Settings of IntegerTextBox control is av
 
 The various values of the IntegerTextBox control and their settings are given below.
 
-_Table_ _257__: Property Table_
+_Table_ _257_: Property Table
 
 <table>
 <tr>
@@ -22641,7 +22637,7 @@ Wrapper property that indicates the value. This property can be used to set the
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22651,9 +22647,9 @@ this.integerTextBox1.DefaultValue = 0;
 
 this.integerTextBox1.BindableValue = 777;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22663,17 +22659,17 @@ Me.integerTextBox1.DefaultValue = 0
 
 Me.integerTextBox1.BindableValue = 777
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features2.png](Editors-Package_images/Editors-Package_img436.png)
-{:.image }
+
 
 
 Null Value Settings
 
 There are various settings that can be applied to the IntegerTextBox control when the value of the control is set to 'Null'. These settings are illustrated below.
 
-_Table_ _258__: Property Table_
+_Table_ _258_: Property Table
 
 <table>
 <tr>
@@ -22699,7 +22695,7 @@ Specifes whether the control can be Nulled,Null String will be set when the cont
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22707,9 +22703,9 @@ this.integerTextBox1.NullString = "Null Value";
 
 this.integerTextBox1. AllowNull = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22717,17 +22713,17 @@ Me.integerTextBox1.NullString = "Null Value"
 
 Me.integerTextBox1. AllowNull = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features1.png](Editors-Package_images/Editors-Package_img437.png)
-{:.image }
+
 
 
 Min and Max Value Settings
 
 The minimum and maximum values of the IntegerTextBox can be set using the below given properties.
 
-_Table_ _259__: Property Table_
+_Table_ _259_: Property Table
 
 <table>
 <tr>
@@ -22745,7 +22741,7 @@ Gets / sets the minimum value that can be set through the IntegerTextBox. The de
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22753,9 +22749,9 @@ this.integerTextBox1.MaxValue = 9223372036854775807;
 
 this.integerTextBox1.MinValue = -9223372036854775808;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22763,11 +22759,13 @@ Me.integerTextBox1.MaxValue = 9223372036854775807
 
 Me.integerTextBox1.MinValue = -9223372036854775808
 
+{% endhighlight %}
+
 Culture Settings
 
 This section discusses the culture settings of the IntegerTextBox control.
 
-_Table_ _260__: Property Table_
+_Table_ _260_: Property Table
 
 <table>
 <tr>
@@ -22785,7 +22783,7 @@ Indicates whether the Culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options.{{ _None,_ | markdownify }}{{ _CurrentCulture,_ | markdownify }}{{ _UICulture and_ | markdownify }}{{ _InstalledCulture._ | markdownify }}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -22793,7 +22791,7 @@ Specifies if the NumberFormatInfo used for formatting will use the User Override
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22805,9 +22803,9 @@ this.integerTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Specia
 
 this.integerTextBox1.UseUserOverride = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22819,15 +22817,13 @@ Me.integerTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialC
 
 Me.integerTextBox1.UseUserOverride = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features5.png](Editors-Package_images/Editors-Package_img438.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img439.png)
-{:.image }
- _Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings._
+
+> Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
 
 A Sample which demonstrates the Culture Settings of the IntegerTextBox control is available in the below sample installation path.
 
@@ -22839,7 +22835,7 @@ This section discusses the text settings of the IntegerTextBox control.
 
 The text associated with the IntegerTextBox control can be set and customized using the below given settings.
 
-_Table_ _261__: Property Table_
+_Table_ _261_: Property Table
 
 <table>
 <tr>
@@ -22869,7 +22865,7 @@ Returns the clipped text without the formatting.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -22881,9 +22877,9 @@ this.integerTextBox1.SelectAllOnFocus = true;
 
 this.integerTextBox1.ClipText = "12";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -22895,19 +22891,19 @@ Me.integerTextBox1.SelectAllOnFocus = true
 
 Me.integerTextBox1.ClipText = "12"
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features15.png](Editors-Package_images/Editors-Package_img440.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features7.png](Editors-Package_images/Editors-Package_img441.png)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _262__: Methods Table_
+_Table_ _262_: Methods Table
 
 <table>
 <tr>
@@ -22943,7 +22939,7 @@ Clip Mode
 
 The formatting for the text can be enabled or disabled by using the property given below.
 
-_Table_ _263__: Property Table_
+_Table_ _263_: Property Table
 
 <table>
 <tr>
@@ -22953,23 +22949,21 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options:{{ _IncludeFormatting and_ | markdownify }}{{ _ExcludeFormatting._ | markdownify }}</td></tr>
+Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options:{{ '_IncludeFormatting and_' | markdownify }}{{ '_ExcludeFormatting._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.integerTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.IncludeFormatting;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.integerTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.IncludeFormatting
+
+{% endhighlight %}
 
 Formatted Text
 
@@ -22989,25 +22983,23 @@ Returns the formatted text with the formatting.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.integerTextBox1.FormattedText = "Hello";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.integerTextBox1.FormattedText = "Hello"
+
+{% endhighlight %}
 
 RightToLeft
 
 The text can be displayed from right to left for RTL languages using this property.
 
-_Table_ _264__: Property Table_
+_Table_ _264_: Property Table
 
 <table>
 <tr>
@@ -23021,37 +23013,29 @@ Indicates whether the component should draw right-to-left for RTL languages. The
 </table>
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img442.png)
-{:.image }
- _Note: The RightToLeft property will be automatically set to 'True' for RTL languages._
+> Note: The RightToLeft property will be automatically set to 'True' for RTL languages._
 
-[C#]
-
-
+{% highlight c# %}
 
 this.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features9.png](Editors-Package_images/Editors-Package_img443.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img444.png)
-{:.image }
- _Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
+
+> Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value.
 
 OverflowIndicatorToolTipText
 
-_Table_ _265__: Property Table_
+_Table_ _265_: Property Table
 
 <table>
 <tr>
@@ -23073,7 +23057,7 @@ Indicates whether to show the overflow indicator tooltip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23083,9 +23067,9 @@ this.integerTextBox1.ShowOverflowIndicator = true;
 
 this.integerTextBox1.ShowOverflowIndicatorToolTip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23095,10 +23079,10 @@ Me.integerTextBox1.ShowOverflowIndicator = True
 
 Me.integerTextBox1.ShowOverflowIndicatorToolTip = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features13.png](Editors-Package_images/Editors-Package_img445.png)
-{:.image }
+
 
 
 A Sample which demonstrates the Text, Text Align and Overflow Indicator features of the IntegerTextBox control is available in the below sample installation path.
@@ -23109,7 +23093,7 @@ Banner Text Support
 
 The IntegerTextBox control can display banner text in the text field, at run time. A BannerTextProvider Component should be available for this purpose. Also, we need to set AllowNull, NullString and Text properties as below, to make this feature effective.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23119,9 +23103,9 @@ this.integerTextBox1.NullString = "";
 
 this.integerTextBox1.Text = "";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23130,6 +23114,8 @@ Me.integerTextBox1.AllowNull = True
 Me.integerTextBox1.NullString = ""
 
 Me.integerTextBox1.Text = ""
+
+{% endhighlight %}
 
 Appearance Settings
 
@@ -23141,7 +23127,7 @@ Background Color
 
 The background color of the control can be set using the properties given below.
 
-_Table_ _266__: Property Table_
+_Table_ _266_: Property Table
 
 <table>
 <tr>
@@ -23159,7 +23145,7 @@ Specifies the backcolor to be used when the control is in the ReadOnly mode.</td
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23171,9 +23157,9 @@ this.integerTextBox1.ReadOnly = true;
 
 this.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23185,23 +23171,21 @@ Me.integerTextBox1.ReadOnly = True
 
 =Me.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features4.png](Editors-Package_images/Editors-Package_img446.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features5.png](Editors-Package_images/Editors-Package_img447.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img448.png)
-{:.image }
- _Note: The ReadOnly property must be set to 'True' for the above setting to take effect._
+
+> Note: The ReadOnly property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
 
-_Table_ _267__: Methods Table_
+_Table_ _267_: Methods Table
 
 <table>
 <tr>
@@ -23225,7 +23209,7 @@ Foreground Color
 
 The foreground color of the control can be set using the properties given below.
 
-_Table_ _268__: Property Table_
+_Table_ _268_: Property Table
 
 <table>
 <tr>
@@ -23247,7 +23231,7 @@ Gets / sets the forecolor, when the current value is zero.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23257,9 +23241,9 @@ this.integerTextBox1.NegativeColor = System.Drawing.Color.SteelBlue;
 
 this.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23269,15 +23253,15 @@ Me.integerTextBox1.NegativeColor = System.Drawing.Color.SteelBlue
 
 Me.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features10.png](Editors-Package_images/Editors-Package_img449.png)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _269__: Methods Table_
+_Table_ _269_: Methods Table
 
 <table>
 <tr>
@@ -23331,7 +23315,7 @@ Negative Key Settings
 
 The integer value of the IntegerTextBox can be reset or changed to a negative value using the properties given below.
 
-_Table_ _270__: Property Table_
+_Table_ _270_: Property Table
 
 <table>
 <tr>
@@ -23349,7 +23333,7 @@ This property defines the behavior when the contents of the IntegerTextBox is fu
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23357,9 +23341,9 @@ this.integerTextBox1.DeleteSelectionOnNegative = true;
 
 this.integerTextBox1.NegativeInputPendingOnSelectAll = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23367,11 +23351,13 @@ Me.integerTextBox1.DeleteSelectionOnNegative = True
 
 Me.integerTextBox1.NegativeInputPendingOnSelectAll = True
 
+{% endhighlight %}
+
 AllowLeadingZeros
 
 This property can be used to include zeros before the beginning value of the integer value of the control.
 
-_Table_ _271__: Property Table_
+_Table_ _271_: Property Table
 
 <table>
 <tr>
@@ -23385,31 +23371,28 @@ Indicates whether to allow insets zero in the beginning value. The default value
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.integerTextBox1.AllowLeadingZeros = true;
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.integerTextBox1.AllowLeadingZeros = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features11.png](Editors-Package_images/Editors-Package_img450.png)
-{:.image }
+
 
 
 Border Settings
 
 Color and Styles can be applied to the border of the IntegerTextBox control as discussed below.
 
-_Table_ _272__: Property Table_
+_Table_ _272_: Property Table
 
 <table>
 <tr>
@@ -23419,7 +23402,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -23427,17 +23410,15 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options are as follows.{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All._ | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options are as follows.{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.integerTextBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump;
 
@@ -23447,9 +23428,9 @@ this.integerTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 this.integerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23461,10 +23442,10 @@ Me.integerTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 Me.integerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features12.png](Editors-Package_images/Editors-Package_img451.png)
-{:.image }
+
 
 
 A sample which demonstrates the Border Settings of IntegerTextBox control is available in the below sample installation path.
@@ -23477,7 +23458,7 @@ Sometimes there may be some situation for entering large values, like in Mega, K
 
 For example if the user wants to enter 32000, he just needs to enter 32 and then press the 'K'. The value will change to 32000 automatically. This is illustrated in the code snippet given below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23511,9 +23492,9 @@ integerTextBox.IntegerValue = v;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23543,13 +23524,15 @@ integerTextBox1.IntegerValue = v
 
 End Sub
 
+{% endhighlight %}
+
 Shortcut Keys
 
 Sometimes there may be some situations for incrementing or decrementing the value in the IntegerTextBox. In such situations, it is better to use shortcut keys.
 
 The following implementation will illustrate how this can be achieved. Here we are using Up and Down keys for incrementing and decrementing respectively. We cannot use the '-' key, because it is already reserved to enter the minus sign.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23579,9 +23562,9 @@ integerTextBox1.IntegerValue = v;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23607,11 +23590,13 @@ integerTextBox1.IntegerValue = v
 
 End Sub
 
+{% endhighlight %}
+
 Applying Themes
 
 Themes can be applied to the IntegerTextBox control using the property given below.
 
-_Table_ _273__: Property Table_
+_Table_ _273_: Property Table
 
 <table>
 <tr>
@@ -23623,39 +23608,34 @@ Description</td></tr>
 ThemesEnabled</td><td>
 Specifies whether or not to use XP themes, when BorderStyle property is set to 'Fixed3D'.</td></tr>
 </table>
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img452.png)
-{:.image }
- _Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderSettings13.html) _topic to know about the BorderStyle property._
 
-[C#]
+> Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderSettings13.html) _topic to know about the BorderStyle property.
 
-
+{% highlight c# %}
 
 this.integerTextBox1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.integerTextBox1.ThemesEnabled = true
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features14.png](Editors-Package_images/Editors-Package_img453.png)
-{:.image }
+
 
 
 A sample which demonstrates the ThemesEnabled property of the IntegerTextBox control is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### IntegerTextBox Events
+##### IntegerTextBox Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _274__: Events Table_
+_Table_ _274_: Events Table
 
 <table>
 <tr>
@@ -23693,7 +23673,7 @@ This event occurs when the BindableValue property is changed. The BindableValu
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23705,9 +23685,9 @@ Console.WriteLine(" BindableValueChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23717,13 +23697,15 @@ Console.WriteLine(" BindableValueChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ClipTextChanged
 
 This event occurs when the ClipText property is changed. The ClipText property returns the clipped text without the formatting.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23735,9 +23717,9 @@ Console.WriteLine(" ClipTextChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23747,13 +23729,15 @@ Console.WriteLine(" ClipTextChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 FormattedTextChanged
 
 This event occurs when the FormattedText property is changed. The FormattedText property returns the formatted text with the formatting.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23765,9 +23749,9 @@ Console.WriteLine(" FormattedTextChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23777,13 +23761,15 @@ Console.WriteLine(" FormattedTextChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 IntegerValueChanged
 
 This event occurs when the IntegerValue property is changed. The IntegerValue property specifies the integer value of the text.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23795,9 +23781,10 @@ Console.WriteLine(" IntegerValueChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23807,13 +23794,15 @@ Console.WriteLine(" IntegerValueChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 SetNull
 
 This event occurs when the NULL state is to be set based on a value.
 
 The event handler receives an argument of type SetNullEventArgs containing data related to this event. The following SetNullEventArgs members provide information specific to this event.
 
-_Table_ _275__: Members Table_
+_Table_ _275_: Members Table
 
 <table>
 <tr>
@@ -23831,7 +23820,7 @@ Returns the NULL value.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23843,9 +23832,9 @@ Console.WriteLine(" SetNull event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23855,13 +23844,15 @@ Console.WriteLine(" SetNull event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ValidationError
 
 This event occurs when the input text is invalid for the current state of the control.
 
 The event handler receives an argument of type ValidationErrorArgs containing data related to this event. The following ValidationErrorArgs members provide information specific to this event.
 
-_Table_ _276__: Members Table_
+_Table_ _276_: Members Table
 
 <table>
 <tr>
@@ -23883,7 +23874,7 @@ Returns the location of the invalid input in the invalid text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23895,9 +23886,9 @@ Console.WriteLine(" ValidationError event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23907,7 +23898,9 @@ Console.WriteLine(" ValidationError event is raised ")
 
 End Sub
 
-###### Frequently Asked Questions
+{% endhighlight %}
+
+##### Frequently Asked Questions
 
 How to display empty string in editor controls when databound value is null?
 
@@ -23915,7 +23908,7 @@ We can display empty string when data bound value is null. For this we need to b
 
 Find the code snippet below, which illustrates the same.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23925,9 +23918,9 @@ this.integerTextBox1.AllowNull = true;
 
 this.integerTextBox1.DataBindings.Add("BindableValue", boundView, "IntegerField");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23937,17 +23930,19 @@ Me.integerTextBox1. AllowNull = True
 
 Me.integerTextBox1.DataBindings.Add("BindableValue", boundView, "IntegerField")
 
-##### PercentTextBox
+{% endhighlight %}
+
+#### PercentTextBox
 
 The PercentTextBox is a textbox-derived control that can display double data type values in percentage form.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Intro.png](Editors-Package_images/Editors-Package_img454.png)
-{:.image }
+
 
 
 The PercentTextBox is derived from Windows Forms framework textbox control. The PercentTextBox supports display and collection of percentage values. It handles user keyboard input and percent formatting and uses the globalization features of the .NET platform to provide locale-specific formatting.
 
-###### Features
+##### Features
 
 PercentTextBox control is used to display percentage values. It has the following features.
 
@@ -24009,7 +24004,8 @@ Key Features
 * It is fully compatible with the Windows Forms TextBox and uses the globalization features of the .NET platform to provide locale specific formatting.
 * Supports different modes of editing percentage values: PercentMode and DoubleMode.
 * The PercentTextBox control supports displaying negative percentage values in a different color and also using different negative formats.
-###### Creating PercentTextBox
+
+##### Creating PercentTextBox
 
 
 This section will give a step-by-step procedure to design a PercentTextBox control through designer and also through programmatical approach.
@@ -24019,109 +24015,102 @@ Through Designer
 191. Create or open a Windows Forms project.
 192. Click on the PercentTextBox Control in the toolbox and add it to the form by dragging-and-dropping it onto the form or double-clicking the control.
 
-![](Editors-Package_images/Editors-Package_img455.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img455.png)
+
 
 
 193. Run the application. The PercentTextBox will allow you to enter the percent value, which will be displayed as given below.
 
-![](Editors-Package_images/Editors-Package_img456.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img456.png)
+
 
 
 Through Programmatical Approach
 
 194. Declare an instance of the PercentTextBox control.
 
-[C#]
+     ~~~ cs
 
+		private Syncfusion.Windows.Forms.Tools.PercentTextBox percentTextBox1;
 
+     ~~~ vbnet
 
-private Syncfusion.Windows.Forms.Tools.PercentTextBox percentTextBox1;
+		Private percentTextBox1 As Syncfusion.Windows.Forms.Tools.PercentTextBox
 
-
-
-[VB.NET]
-
-
-
-Private percentTextBox1 As Syncfusion.Windows.Forms.Tools.PercentTextBox
-
+     ~~~
+     {:.prettyprint }
 
 
 195. Initialize the control.
 
-[C#]
+     ~~~ cs
 
+		this.percentTextBox1 = new Syncfusion.Windows.Forms.Tools.PercentTextBox();
 
+     ~~~
+     {:.prettyprint }
 
-this.percentTextBox1 = new Syncfusion.Windows.Forms.Tools.PercentTextBox();
+     ~~~ vbnet
 
+		Me.percentTextBox1 = New Syncfusion.Windows.Forms.Tools.PercentTextBox()
 
-
-[VB.NET]
-
-
-
-Me.percentTextBox1 = New Syncfusion.Windows.Forms.Tools.PercentTextBox()
-
-
+     ~~~
+     {:.prettyprint }
 
 196. Set the properties of the PercentTextBox control.
 
-[C#]
+     ~~~ cs
 
+		this.percentTextBox1.Location = new System.Drawing.Point(65, 29);
 
+		this.percentTextBox1.Name = "percentTextBox1";
 
-this.percentTextBox1.Location = new System.Drawing.Point(65, 29);
+		this.percentTextBox1.Size = new System.Drawing.Size(84, 20);
 
-this.percentTextBox1.Name = "percentTextBox1";
+		this.percentTextBox1.PercentValue = 5;
 
-this.percentTextBox1.Size = new System.Drawing.Size(84, 20);
+     ~~~
+     {:.prettyprint }
 
-this.percentTextBox1.PercentValue = 5;
+     ~~~ vbnet
 
+		Me.percentTextBox1.Location = New System.Drawing.Point(65, 29)
 
+		Me.percentTextBox1.Name = "numericUpDownExt1"
 
-[VB.NET]
+		Me.percentTextBox1.Size = New System.Drawing.Size(84, 20)
 
+		Me.percentTextBox1.PercentValue = 5
 
-
-Me.percentTextBox1.Location = New System.Drawing.Point(65, 29)
-
-Me.percentTextBox1.Name = "numericUpDownExt1"
-
-Me.percentTextBox1.Size = New System.Drawing.Size(84, 20)
-
-Me.percentTextBox1.PercentValue = 5
-
-
+     ~~~
+     {:.prettyprint }
 
 197. Add the control to the form.
 
-[C#]
+     ~~~ cs
 
 
+		this.Controls.Add(this.percentTextBox1);
 
-this.Controls.Add(this.percentTextBox1);
-
-
-
-[VB.NET]
+     ~~~
+     {:.prettyprint }
 
 
+     ~~~ vbnet
 
-Me.Controls.Add(Me.percentTextBox1)
+		Me.Controls.Add(Me.percentTextBox1)
 
+     ~~~
+     {:.prettyprint }
 
 
 198. Run the application.
 
 ![](Editors-Package_images/Editors-Package_img457.png)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 The following Editors controls (DoubleTextBox, IntegerTextBox, PercentTextBox, and CurrencyTextBox) have been revamped, click here to see the details of revamping.
 
@@ -24131,7 +24120,7 @@ This section discusses the display settings of the PercentTextBox control.
 
 The PercentTextBox provides a list of properties to set the display characteristics of the percentage.
 
-_Table_ _277__: Property Table_
+_Table_ _277_: Property Table
 
 <table>
 <tr>
@@ -24175,7 +24164,7 @@ Gets / sets the percent symbol which represents the Percentage.</td></tr>
 
 The grouping size of the percent digits can be set using the Int32 Collection Editor which will be displayed on selecting thePercentGroupSizes property in the property grid.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24195,9 +24184,9 @@ this.percentTextBox1.PercentPositivePattern = 2;
 
 this.percentTextBox1.PercentSymbol = "%";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24217,12 +24206,12 @@ Me.percentTextBox1.PercentPositivePattern = 2
 
 Me.percentTextBox1.PercentSymbol = "%"
 
-
+{% endhighlight %}
 
 The following screen shot illustrates the above settings.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features2.png](Editors-Package_images/Editors-Package_img458.png)
-{:.image }
+
 
 
 A sample which demonstrates the Display Settings of PercentTextBox control is available in the below sample installation path.
@@ -24233,7 +24222,7 @@ Value Settings
 
 The various values of the PercentTextBox control and their settings are given below.
 
-_Table_ _278__: Property Table_
+_Table_ _278_: Property Table
 
 <table>
 <tr>
@@ -24263,7 +24252,7 @@ Gets / sets the double value of the control. This will be formatted and displaye
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24277,9 +24266,9 @@ this.percentTextBox1.BindablePercentValue = 5;
 
 this.percentTextBox1.DoubleValue = 0.05;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24293,17 +24282,17 @@ Me.percentTextBox1.BindablePercentValue = 5
 
 Me.percentTextBox1.DoubleValue = 0.05
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features4.png](Editors-Package_images/Editors-Package_img459.png)
-{:.image }
+
 
 
 Null Value Settings
 
 There are various settings that can be applied to the PercentTextBox control, when the value of the control is set to 'Null'. These settings are illustrated below.
 
-_Table_ _279__: Property Table_
+_Table_ _279_: Property Table
 
 <table>
 <tr>
@@ -24325,7 +24314,7 @@ Returns the NumberFormatInfo object for the null display.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24333,9 +24322,9 @@ this.percentTextBox1.NullString = "Null Value";
 
 this.percentTextBox1.AllowNull = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24343,17 +24332,17 @@ Me.percentTextBox1.NullString = "Null Value"
 
 Me.percentTextBox1.AllowNull = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features3.png](Editors-Package_images/Editors-Package_img460.png)
-{:.image }
+
 
 
 Min and Max Value Settings
 
 The minimum and maximum values of the IntegerTextBox can be set using the below given properties.
 
-_Table_ _280__: Property Table_
+_Table_ _280_: Property Table
 
 <table>
 <tr>
@@ -24375,9 +24364,7 @@ If the min and max values are not met, the Validating event will be handled and 
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.percentTextBox1.MaxValue = 6;
 
@@ -24385,10 +24372,9 @@ this.percentTextBox1.MinValue = -6;
 
 this.percentTextBox1.EnforceMinMaxDuringValidating = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Me.percentTextBox1.MaxValue = 6
@@ -24397,11 +24383,11 @@ Me.percentTextBox1.MinValue = -6
 
 Me.percentTextBox1.EnforceMinMaxDuringValidating = True
 
-
+{% endhighlight %}
 
 The methods associated with the above properties are given below.
 
-_Table_ _281__: Methods Table_
+_Table_ _281_: Methods Table
 
 <table>
 <tr>
@@ -24421,7 +24407,7 @@ Culture Settings
 
 This section discusses the Culture settings of the PercentTextBox control.
 
-_Table_ _282__: Property Table_
+_Table_ _282_: Property Table
 
 <table>
 <tr>
@@ -24439,7 +24425,7 @@ Indicates whether the Culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options.{{ _None,_ | markdownify }}{{ _CurrentCulture,_ | markdownify }}{{ _UICulture and_ | markdownify }}{{ _InstalledCulture._ | markdownify }}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -24447,7 +24433,7 @@ Specifies if the NumberFormatInfo used for formatting will use the User Override
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24459,9 +24445,9 @@ this.percentTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Specia
 
 this.percentTextBox1.UseUserOverride = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24473,15 +24459,13 @@ Me.percentTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialC
 
 Me.percentTextBox1.UseUserOverride = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features5.png](Editors-Package_images/Editors-Package_img461.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img462.png)
-{:.image }
- _Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings._
+
+> Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
 
 A sample which demonstrates the Culture Settings of the PercentTextBox control is available in the below sample installation path.
 
@@ -24493,7 +24477,7 @@ This section discusses the text settings of the PercentTextBox control.
 
 The text associated with the PercentTextBox control can be set and customized using the below given settings.
 
-_Table_ _283__: Property Table_
+_Table_ _283_: Property Table
 
 <table>
 <tr>
@@ -24507,7 +24491,7 @@ Specifies the text associated with the control.</td></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options.{{ _Normal,_ | markdownify }}{{ _Upper and_ | markdownify }}{{ _Lower._ | markdownify }}</td></tr>
+Gets / sets the case of character as they are typed.It includes the below given options.{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -24539,7 +24523,7 @@ Specifies if the text should be drawn active, even when disabled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24559,9 +24543,9 @@ this.percentTextBox1.ClipText = "34";
 
 this.percentTextBox1.DrawActiveWhenDisabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24581,23 +24565,23 @@ Me.percentTextBox1.ClipText = "34"
 
 Me.percentTextBox1.DrawActiveWhenDisabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features13.png](Editors-Package_images/Editors-Package_img463.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features6.png](Editors-Package_images/Editors-Package_img464.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features7.png](Editors-Package_images/Editors-Package_img465.png)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _284__: Methods Table_
+_Table_ _284_: Methods Table
 
 <table>
 <tr>
@@ -24645,7 +24629,7 @@ Multiline Text Settings
 
 The text settings of the PercentTextBox control can be customized to display multiline text using the below given properties.
 
-_Table_ _285__: Property Table_
+_Table_ _285_: Property Table
 
 <table>
 <tr>
@@ -24667,11 +24651,11 @@ Indicates if lines are automatically word-wrapped for multiline edit controls.</
 <tr>
 <td>
 ScrollBars</td><td>
-Indicates, for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ _None,_ | markdownify }}{{ _Horizontal,_ | markdownify }}{{ _Vertical and_ | markdownify }}{{ _Both._ | markdownify }}</td></tr>
+Indicates, for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24681,9 +24665,9 @@ this.percentTextBox1.WordWrap = true;
 
 this.percentTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24693,18 +24677,18 @@ Me.percentTextBox1.WordWrap = True
 
 Me.percentTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features15.png](Editors-Package_images/Editors-Package_img466.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features16.png](Editors-Package_images/Editors-Package_img467.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features17.png](Editors-Package_images/Editors-Package_img468.png)
-{:.image }
+
 
 
 Clip Mode
@@ -24713,7 +24697,7 @@ The formatting for the text can be enabled or disabled using the property given 
 
 
 
-_Table_ _286__: Property Table_
+_Table_ _286_: Property Table
 
 <table>
 <tr>
@@ -24723,29 +24707,31 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options.{{ _IncludeFormatting and_ | markdownify }}{{ _ExcludeFormatting._ | markdownify }}</td></tr>
+Determines whether to include or exclude the literal characters in the input mask when doing a copy command.It includes the below given options.{{ '_IncludeFormatting and_' | markdownify }}{{ '_ExcludeFormatting._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.percentTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.IncludeFormatting;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.percentTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.IncludeFormatting
 
+{% endhighlight %}
+
 Formatted Text
 
 Formatted text can be displayed using the below given property.
 
-_Table_ _287__: Property Table_
+_Table_ _287_: Property Table
 
 <table>
 <tr>
@@ -24759,25 +24745,26 @@ Returns the formatted text with the formatting.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.percentTextBox1.FormattedText = "Hello";
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.FormattedText = "Hello"
+
+{% endhighlight %}
 
 RightToLeft
 
 The text can be displayed from right to left for RTL languages using this property.
 
-_Table_ _288__: Property Table_
+_Table_ _288_: Property Table
 
 <table>
 <tr>
@@ -24789,39 +24776,32 @@ Description</td></tr>
 RightToLeft</td><td>
 Indicates whether the component should draw right-to-left for RTL languages. The default value is set to 'False'.</td></tr>
 </table>
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img469.png)
-{:.image }
- _Note: The RightToLeft property will be automatically set to 'True' for RTL languages._
 
-[C#]
+> Note: The RightToLeft property will be automatically set to 'True' for RTL languages.
 
-
+{% highlight c# %}
 
 this.percentTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features8.png](Editors-Package_images/Editors-Package_img470.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img471.png)
-{:.image }
- _Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
+
+> Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value.
 
 OverflowIndicatorToolTipText
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
 
-_Table_ _289__: Property Table_
+_Table_ _289_: Property Table
 
 <table>
 <tr>
@@ -24843,7 +24823,7 @@ Indicates whether to show the overflow indicator tooltip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24853,11 +24833,9 @@ this.percentTextBox1.ShowOverflowIndicator = true;
 
 this.percentTextBox1.ShowOverflowIndicatorToolTip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.OverflowIndicatorToolTipText = "Overflow"
 
@@ -24865,19 +24843,17 @@ Me.percentTextBox1.ShowOverflowIndicator = True
 
 Me.percentTextBox1.ShowOverflowIndicatorToolTip = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features9.png](Editors-Package_images/Editors-Package_img472.png)
-{:.image }
+
 
 
 Banner Text Support
 
 The PercentTextBox control can display banner text in the text field, at run time. A BannerTextProvider Component should be available for this purpose. Also, We need to set AllowNull, NullString and Text properties as below to make this feature effective.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.percentTextBox1.AllowNull = true;
 
@@ -24885,11 +24861,9 @@ this.percentTextBox1.NullString = "";
 
 this.percentTextBox1.Text = "";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.AllowNull = True
 
@@ -24897,7 +24871,7 @@ Me.percentTextBox1.NullString = ""
 
 Me.percentTextBox1.Text = ""
 
-
+{% endhighlight %}
 
 A sample which demonstrates the Text, Text Align and Overflow Indicator features of the PercentTextBox control is available in the below sample installation path.
 
@@ -24913,7 +24887,7 @@ Background Color
 
 The background color of the control can be set using the properties given below.
 
-_Table_ _290__: Property Table_
+_Table_ _290_: Property Table
 
 <table>
 <tr>
@@ -24931,7 +24905,7 @@ Specifies the backcolor to be used when the control is in the ReadOnly mode.</td
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24943,39 +24917,33 @@ this.percentTextBox1.ReadOnly = true;
 
 this.percentTextBox1.ReadOnlyBackColor = System.Drawing.Color.Pink;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.BackColor = System.Drawing.Color.LightCyan
-
-
 
 Me.percentTextBox1.[ReadOnly] = True
 
 Me.percentTextBox1.ReadOnlyBackColor = System.Drawing.Color.Pink
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features11.png](Editors-Package_images/Editors-Package_img473.png)
-{:.image }
+
 
 
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features12.png](Editors-Package_images/Editors-Package_img474.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img475.png)
-{:.image }
- _Note: The ReadOnly property must be set to 'True' for the above setting to take effect._
+
+> Note: The ReadOnly property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
 
-_Table_ _291__: Methods Table_
+_Table_ _291_: Methods Table
 
 <table>
 <tr>
@@ -24991,6 +24959,7 @@ Resets the BackColor property to it's default value.</td></tr>
 ResetReadOnlyBackColor</td><td>
 Resets the ReadOnlyBackColor property to it's default value.</td></tr>
 </table>
+
 Foreground Settings
 
 The Foreground settings of the PercentTextBox control are discussed below.
@@ -24999,7 +24968,7 @@ Foreground Color
 
 The foreground color of the control can be set using the properties given below.
 
-_Table_ _292__: Property Table_
+_Table_ _292_: Property Table
 
 <table>
 <tr>
@@ -25021,7 +24990,7 @@ Gets / sets the forecolor when the current value is zero.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25031,9 +25000,9 @@ this.percentTextBox1.NegativeColor = System.Drawing.Color.Orange;
 
 this.percentTextBox1.ZeroColor = System.Drawing.Color.Orchid;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25043,15 +25012,15 @@ Me.percentTextBox1.NegativeColor = System.Drawing.Color.Orange
 
 Me.percentTextBox1.ZeroColor = System.Drawing.Color.Orchid
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features10.png](Editors-Package_images/Editors-Package_img476.png)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _293__: Methods Table_
+_Table_ _293_: Methods Table
 
 <table>
 <tr>
@@ -25105,7 +25074,7 @@ NegativeInputPendingOnSelectAll
 
 The percent value of the PercentTextBox can be changed to a negative value using the properties given below.
 
-_Table_ _294__: Property Table_
+_Table_ _294_: Property Table
 
 <table>
 <tr>
@@ -25119,25 +25088,23 @@ This property defines the behavior when the contents of the IntegerTextBox is fu
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.percentTextBox1.NegativeInputPendingOnSelectAll = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.NegativeInputPendingOnSelectAll = True
+
+{% endhighlight %}
 
 Border Settings
 
 Color and Styles can be applied to the Border of the PercentTextBox control as discussed below.
 
-_Table_ _295__: Property Table_
+_Table_ _295_: Property Table
 
 <table>
 <tr>
@@ -25147,7 +25114,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -25155,15 +25122,15 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All._ | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below.{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25175,9 +25142,9 @@ this.percentTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 this.percentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25189,10 +25156,10 @@ Me.percentTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 Me.percentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features1.png](Editors-Package_images/Editors-Package_img477.png)
-{:.image }
+
 
 
 A Sample which demonstrates the Border Settings of PercentTextBox control is available in the below sample installation path.
@@ -25203,7 +25170,7 @@ Size Settings
 
 The size of the PercentTextBox control can be set according to the needs of the user using the properties discussed below.
 
-_Table_ _296__: Property Table_
+_Table_ _296_: Property Table
 
 <table>
 <tr>
@@ -25221,28 +25188,24 @@ Gets / sets the minimum size for the control.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.percentTextBox1.MaximumSize = new System.Drawing.Size(100, 25);
 
 this.percentTextBox1.MinimumSize = new System.Drawing.Size(100, 25);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.MaximumSize = New System.Drawing.Size(100, 25)
 
 Me.percentTextBox1.MinimumSize = New System.Drawing.Size(100, 25)
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features18.png](Editors-Package_images/Editors-Package_img478.png)
-{:.image }
+
 
 
 Key Settings
@@ -25251,9 +25214,7 @@ Sometimes there may occur some situations for entering large values, like in Meg
 
 For example if the user wants to enter 32000, he just needs to enter 32 and then press the 'K'. The value will change to 32000 automatically. This is illustrated in the code snippet given below.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
 
@@ -25285,9 +25246,9 @@ percentTextBox.PercentValue = v;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25317,13 +25278,15 @@ percentTextBox.PercentValue = v
 
 End Sub
 
+{% endhighlight %}
+
 Shortcut Keys
 
 Sometimes there may occur some situations for incrementing or decrementing the value in the PercentTextBox. In such situations it is better to use shortcut keys.
 
 The following implementation will illustrate how this can be achieved. Here we are using Up and Down keys for incrementing and decrementing respectively. We cannot use the '-' key because it is already reserved to enter the minus sign.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25353,9 +25316,9 @@ percentTextBox1.PercentValue = v;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25381,11 +25344,13 @@ percentTextBox1.PercentValue = v
 
 End Sub
 
+{% endhighlight %}
+
 Applying Themes
 
 Themes can be applied to the PercentTextBox control using the property given below.
 
-_Table_ _297__: Property Table_
+_Table_ _297_: Property Table
 
 <table>
 <tr>
@@ -25397,39 +25362,34 @@ Description</td></tr>
 ThemesEnabled</td><td>
 Specifies whether or not to use XP themes when BorderStyle  property is set to 'Fixed3D'.</td></tr>
 </table>
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img479.png)
-{:.image }
- _Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderSettings13.html) _topic to know about the BorderStyle property._
 
-[C#]
+> Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderSettings13.html) _topic to know about the BorderStyle property.
 
-
+{% highlight c# %}
 
 this.percentTextBox1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.percentTextBox1.ThemesEnabled = true
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features19.png](Editors-Package_images/Editors-Package_img480.png)
-{:.image }
+
 
 
 A Sample which demonstrates the ThemesEnabled property of the PercentTextBox control is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### PercentTextBox Events
+##### PercentTextBox Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _298__: Events Table_
+_Table_ _298_: Events Table
 
 <table>
 <tr>
@@ -25519,7 +25479,7 @@ This event occurs when the BindablePercentValue property is changed. The Binda
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25531,9 +25491,9 @@ Console.WriteLine(" BindablePercentValueChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25543,13 +25503,15 @@ Console.WriteLine(" BindablePercentValueChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
  BindableValueChanged 
 
 This event occurs when the BindableValue property is changed. The BindableValue property is a wrapper property that indicates the value. This property can be used to set the value of the control to 'Null'.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25561,9 +25523,9 @@ Console.WriteLine(" BindableValueChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25573,13 +25535,15 @@ Console.WriteLine(" BindableValueChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 Border3DStyleChanged
 
 This event occurs when the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25591,9 +25555,9 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25603,13 +25567,15 @@ Console.WriteLine(" Border3DStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderColorChanged 
 
 This event occurs when the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25621,9 +25587,9 @@ Console.WriteLine(" BorderColorChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25633,13 +25599,15 @@ Console.WriteLine(" BorderColorChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderSidesChanged 
 
 This event occurs when the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25651,9 +25619,9 @@ Console.WriteLine(" BorderSidesChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25663,13 +25631,15 @@ Console.WriteLine(" BorderSidesChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderStyleChanged 
 
 This event occurs when the BorderStyle property is changed. The BorderStyle property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25681,9 +25651,9 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25693,13 +25663,15 @@ Console.WriteLine(" BorderStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ClipTextChanged 
 
 This event occurs when the ClipText property is changed. The ClipText property returns the clipped text without the formatting.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25711,9 +25683,9 @@ Console.WriteLine(" ClipTextChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25723,15 +25695,15 @@ Console.WriteLine(" ClipTextChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 DoubleValueChanged
 
 This event occurs when the DoubleValue property is changed. The DoubleValue property specifies the double value of the PercentTextBox control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void percentTextBox1_FormattedTextChanged(object sender, EventArgs e)
 
@@ -25741,9 +25713,9 @@ Console.WriteLine(" DoubleValueChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25753,6 +25725,8 @@ Console.WriteLine(" DoubleValueChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 FormattedTextChanged
 
 This event occurs when the FormattedText property is changed. The FormattedText property returns the formatted text with the formatting.
@@ -25761,7 +25735,7 @@ This event occurs when the FormattedText property is changed. The FormattedTex
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25773,9 +25747,9 @@ Console.WriteLine(" FormattedTextChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25785,13 +25759,15 @@ Console.WriteLine(" FormattedTextChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 HideSelectionChanged 
 
 This event occurs when the HideSelection property is changed. The HideSelection property indicates that the selection should be hidden when the edit control loses focus.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25803,9 +25779,9 @@ Console.WriteLine(" HideSelectionChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25815,13 +25791,15 @@ Console.WriteLine(" HideSelectionChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MinimumSizeChanged 
 
 This event occurs when the MinimumSize property is changed. The MinimumSize property gets / sets the minimum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25833,9 +25811,9 @@ Console.WriteLine(" MinimumSizeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25845,13 +25823,15 @@ Console.WriteLine(" MinimumSizeChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MaximumSizeChanged 
 
 This event occurs when the MaximumSize property is changed. The MaximumSize property gets / sets the maximum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25863,9 +25843,9 @@ Console.WriteLine(" MaximumSizeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25875,13 +25855,15 @@ Console.WriteLine(" MaximumSizeChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MultilineChanged 
 
 This event occurs when the Multiline property is changed. The Multiline property controls whether the text of the edit control can span more than one line.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25893,9 +25875,9 @@ Console.WriteLine(" MultilineChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25905,13 +25887,15 @@ Console.WriteLine(" MultilineChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ReadOnlyChanged 
 
 This event occurs when the ReadOnly property is changed. The ReadOnly property controls whether the text in the edit control can be changed or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25923,9 +25907,9 @@ Console.WriteLine(" ReadOnlyChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25935,13 +25919,15 @@ Console.WriteLine(" ReadOnlyChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 RightToLeftChanged 
 
 This event occurs when the RightToLeft property is changed. The RightToLeft property indicates whether the components should be drawn right-to-left for RTL languages.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25953,9 +25939,9 @@ Console.WriteLine(" RightToLeftChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25965,13 +25951,15 @@ Console.WriteLine(" RightToLeftChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 SetNull 
 
 This event occurs when the NULL state is to be set based on a value.
 
 The event handler receives an argument of type SetNullEventArgs containing data related to this event. The following SetNullEventArgs members provide information specific to this event.
 
-_Table_ _299__: Members Table_
+_Table_ _299_: Members Table
 
 <table>
 <tr>
@@ -25989,7 +25977,7 @@ Returns the NULL value.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26001,9 +25989,9 @@ Console.WriteLine(" SetNull event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26013,13 +26001,15 @@ Console.WriteLine(" SetNull event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 TextAlignChanged 
 
 This event occurs when the TextAlign property is changed. The TextAlign property indicates how the text should be aligned for edit controls.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26031,9 +26021,10 @@ Console.WriteLine(" TextAlignChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26043,13 +26034,15 @@ Console.WriteLine(" TextAlignChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ThemesEnabledChanged 
 
 This event occurs when the ThemesEnabled property is changed. The ThemesEnabled property specifies whether or not to use XP Themes when the BorderStyle property is set to 'Fixed3D'.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26061,9 +26054,9 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26073,13 +26066,15 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ValidationError
 
 This event occurs when the input text is invalid for the current state of the control.
 
 The event handler receives an argument of type ValidationErrorArgs containing data related to this event. The following ValidationErrorArgs members provide information specific to this event.
 
-_Table_ _300__: Members Table_
+_Table_ _300_: Members Table
 
 <table>
 <tr>
@@ -26101,7 +26096,7 @@ Returns the location of the invalid input in the invalid text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26113,9 +26108,9 @@ Console.WriteLine(" ValidationError event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26125,12 +26120,14 @@ Console.WriteLine(" ValidationError event is raised ")
 
 End Sub
 
-##### CurrencyTextBox
+{% endhighlight %}
+
+#### CurrencyTextBox
 
 Essential Tools provides the CurrencyTextBox control for currency specific behavior in edit controls. CurrencyTextBox is derived from System.Windows.Forms.TextBox and implements all the functionality needed for formatting currency input and validation.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Editors-Package_images/Editors-Package_img481.png)
-{:.image }
+
 
 
 The text box control provided with Windows Forms is capable of displaying and editing string values. This control is generic in nature and some custom enhancements are needed to be able to effectively collect numeric data. For example, if you are   allowed to enter only currency values, the following enhancements will have to be added to the text box control.
@@ -26138,7 +26135,8 @@ The text box control provided with Windows Forms is capable of displaying and ed
 * Keyboard input validation - Intercept user's keyboard input and prevent entry of any keys that shouldn't be present in a currency value.
 * Data type - Provide the text contained in the text box as an appropriate data type (such as decimal) that can be used by the developer.
 * Culture formatting - Ensure that the formatting of the display is culture sensitive.
-###### Features
+
+##### Features
 
 
 Currency TextBox is used to display currency values and contains following features.
@@ -26150,82 +26148,86 @@ Currency TextBox is used to display currency values and contains following featu
 * Rich set of border styles can be provided.
 * You can make the control active, even when it is disabled.
 * The digits displayed after the decimal point can be modified and set to the user requirement.
-###### Creating Currency TextBox
+
+##### Creating Currency TextBox
 
 
 CurrencyTextBox provides full support for the windows forms designer. Just drag and drop CurrencyTextBox from the toolbox, onto the form.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTB_Icon.png](Editors-Package_images/Editors-Package_img482.png)
-{:.image }
+
 
 
 It can be created programmatically as follows.
 
 199. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 200. Create an instance of the CurrencyTextBox. Add that instance to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox1;
+		private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox1;
 
-this.currencyTextBox2=new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
-
-
-
-this.Controls.Add(this.currencyTextBox1);
+		this.currencyTextBox2=new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
 
 
 
-[VB.NET]
+		this.Controls.Add(this.currencyTextBox1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-Private currencyTextBox1 As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
+		Private currencyTextBox1 As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
 
-Me.currencyTextBox2 = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
+		Me.currencyTextBox2 = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
 
+		
+		Me.Controls.Add(Me.currencyTextBox1)
 
-
-Me.Controls.Add(Me.currencyTextBox1)
-
-###### Concepts and Features
+	 ~~~
+     {:.prettyprint }
+	 
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the CurrencyTextBox control.
 
 The following Editors controls (DoubleTextBox, IntegerTextBox, PercentTextBox, and CurrencyTextBox) have been revamped, click here to see the details of revamping.
 
-###### Text Field
+##### Text Field
 
 The text field of a CurrencyTextBox control can be customized using the properties available. The below image illustrates the various sections of the control.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField.png](Editors-Package_images/Editors-Package_img483.png)
-{:.image }
+
 
 
 Text
 
 The default text in the CurrencyTextBox can be edited through Text property. Default value is $2.00. The text can be aligned to Left, Right or Center using TextAlign property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26233,9 +26235,9 @@ this.currencyTextBox2.Text = "$25.00";
 
 this.currencyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26243,17 +26245,18 @@ Me.currencyTextBox2.Text = "$25.00"
 
 Me.currencyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
+{% endhighlight %}
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField1.png](Editors-Package_images/Editors-Package_img484.png)
-{:.image }
+
 
 
 Multiline Feature
 
 The CurrencyTextBox control can be made multiline by setting Multiline property to true. Using the below properties we can control the behavior of control. 
 
-_Table_ _301__: Property Table_
+_Table_ _301_: Property Table
 
 <table>
 <tr>
@@ -26275,7 +26278,7 @@ We can show scrollbars for the control when multiline feature is enabled. The di
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26287,9 +26290,9 @@ this.currencyTextBox2.WordWrap = "true"
 
 this.currencyTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26301,25 +26304,25 @@ Me.currencyTextBox2.WordWrap = True
 
 Me.currencyTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Multiline.png](Editors-Package_images/Editors-Package_img485.png)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img486.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTExtBox_Scroll.png](Editors-Package_images/Editors-Package_img487.png)
-{:.image }
+
 
 
 Password Character
 
 We can display password characters instead of the digits in the text field using PasswordChar property. To use the system password character in the text field, set UseSystemPasswordChar property to true.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26327,9 +26330,9 @@ this.currencyTextBox1.UseSystemPasswordChar = false;
 
 this.currencyTextBox1.PasswordChar = '*';
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26337,10 +26340,11 @@ Me.currencyTextBox1.UseSystemPasswordChar = False
 
 Me.currencyTextBox1.PasswordChar = '*'
 
+{% endhighlight %}
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Password.png](Editors-Package_images/Editors-Package_img488.png)
-{:.image }
+
 
 
 Banner Text Support
@@ -26349,7 +26353,7 @@ We can set banner text for the CurrencyTextBox control. Refer BannerTextProvide
 
 We need to do the below settings to make Banner text feature available for the control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26359,9 +26363,9 @@ this.currencyTextBox1.NullString = "";
 
 this.currencyTextBox1.Text = "";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26371,10 +26375,10 @@ Me.currencyTextBox1.NullString = ""
 
 Me.currencyTextBox1.Text = ""
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_BannerText.png](Editors-Package_images/Editors-Package_img489.png)
-{:.image }
+
 
 
 Number and Decimal Digits
@@ -26385,7 +26389,7 @@ Number part
 
 The below properties lets you decide the formatting of the number part of CurrencyTextBox control.
 
-_Table_ _302__: Property Table_
+_Table_ _302_: Property Table
 
 <table>
 <tr>
@@ -26407,7 +26411,7 @@ This property specifies the pattern to use when the value is negative. For examp
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26417,9 +26421,9 @@ this.currencyTextBox1.CurrencyPositivePattern = 1;
 
 this.currencyTextBox1.CurrencyNegativePattern = 2;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26429,11 +26433,13 @@ Me.currencyTextBox1.CurrencyPositivePattern = 1
 
 Me.currencyTextBox1.CurrencyNegativePattern = 2
 
+{% endhighlight %}
+
 Decimal Part
 
 The below properties lets you decide the formatting of the CurrencyTextBox control's number part.
 
-_Table_ _303__: Property Table_
+_Table_ _303_: Property Table
 
 <table>
 <tr>
@@ -26468,10 +26474,10 @@ Specifies whether to remove last decimal zeros in the currency value.</td></tr>
 
 
 ![](Editors-Package_images/Editors-Package_img490.png)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -26485,9 +26491,9 @@ this.currencyTextBox1.CurrencyGroupSizes = new int[] {3};
 
 this.currencyTextBox1.RemoveDecimalZeros = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26501,14 +26507,14 @@ Me.currencyTextBox1.CurrencyGroupSizes = New Integer() {3}
 
 Me.currencyTextBox1.RemoveDecimalZeros = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Editors-Package_images/Editors-Package_img491.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_RemoveLastDecimal.png](Editors-Package_images/Editors-Package_img492.png)
-{:.image }
+
 
 
 Negative Part
@@ -26519,7 +26525,7 @@ For example, if the current value of the TextBox is 1.00 with all the text being
 
 When it is set to false, the current value is changed to negative value immediately. For example, if the current value of the TextBox is 1.00 awith all the text being selected and when the user presses the negative key, the value is '-1'.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26527,9 +26533,9 @@ this.currencyTextBox1.NegativeSign = "-";
 
 this.currencyTextBox1.NegativeInputPendingOnSelectAll = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26537,11 +26543,13 @@ Me.currencyTextBox1.NegativeSign = "-"
 
 Me.currencyTextBox1.NegativeInputPendingOnSelectAll = True
 
+{% endhighlight %}
+
 Values
 
 The maximum and minimum value of the currency can be specified by MaxValue and MinValue properties.
 
-_Table_ _304__: Property Table_
+_Table_ _304_: Property Table
 
 <table>
 <tr>
@@ -26563,7 +26571,7 @@ If the minimum and maximum values are not met, the validating event will be hand
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26573,9 +26581,9 @@ this.currencyTextBox1.MinValue=0;
 
 this.currencyTextBox1.EnforceMinMaxDuringValidating= true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26585,11 +26593,13 @@ Me.currencyTextBox1.MinValue=0
 
 Me.currencyTextBox1.EnforceMinMaxDuringValidating = True;
 
+{% endhighlight %}
+
 Null String
 
 If you want to display null string instead of actual [decimal](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/DecimalSettings.html) values, you can set NullString property to any values. To display the null string set AllowNull to true.
 
-_Table_ _305__: Property Table_
+_Table_ _305_: Property Table
 
 <table>
 <tr>
@@ -26607,7 +26617,7 @@ Specifies if the NullString will be used when the value is Null.NullString must
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26615,9 +26625,9 @@ this.currencyTextBox1.NullString = "NULL";
 
 this.currencyTextBox1.AllowNull = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26625,17 +26635,17 @@ Me.currencyTextBox1.NullString = "NULL"
 
 Me.currencyTextBox1.AllowNull = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_NullString.png](Editors-Package_images/Editors-Package_img493.png)
-{:.image }
+
 
 
 Currency Symbol
 
 The currency symbol that will be used for formatting the display is specified by setting CurrencySymbol to any special characters.
 
-_Table_ _306__: Property Table_
+_Table_ _306_: Property Table
 
 <table>
 <tr>
@@ -26649,19 +26659,17 @@ This property specifies the currency symbol to be used in the CurrencyTextBox. T
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.currencyTextBox1.CurrencySymbol = "#";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.currencyTextBox1.CurrencySymbol = "#"
+
+{% endhighlight %}
 
 ###### Appearance
 
@@ -26669,7 +26677,7 @@ Themes
 
 CurrencyTextBox control can be themed by setting ThemesEnabled to true.
 
-_Table_ _307__: Property Table_
+_Table_ _307_: Property Table
 
 <table>
 <tr>
@@ -26683,31 +26691,28 @@ Specifies whether the CurrencyTextBox control uses XP themes, when BorderStyle i
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.currencyTextBox1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Me.currencyTextBox1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrText_themes.png](Editors-Package_images/Editors-Package_img494.png)
-{:.image }
+
 
 
 Border Styles
 
 The below properties describes various properties available to set border for the CurrencyTextBox control.
 
-_Table_ _308__: Property Table_
+_Table_ _308_: Property Table
 
 <table>
 <tr>
@@ -26721,11 +26726,11 @@ Sets the style of the border. The options includes:FixedSingle,Fixed3D andNone (
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ _Raised,_ | markdownify }}{{ _RaisedOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _Sunken (default),_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}</td></tr>
+Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the border sides. The options includes{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All (default)._ | markdownify }}</td></tr>
+Specifies the border sides. The options includes{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -26733,7 +26738,7 @@ Specifies the color of the border when BorderStyle is FixedSingle.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26745,9 +26750,9 @@ this.currencyTextBox1.BorderColor = System.Drawing.Color.Magenta;
 
 this.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26759,17 +26764,17 @@ Me.currencyTextBox1.BorderColor = System.Drawing.Color.Magenta
 
 Me.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Border.png](Editors-Package_images/Editors-Package_img495.png)
-{:.image }
+
 
 
 Color Settings
 
 We can set different colors for the different set of currency values i.e, Colors can be set for positive currency values, negative currency values and zero values by using the below properties. We can draw the background of Currency TextBox with colors when it is in read only mode by ReadOnlyBackColor.
 
-_Table_ _309__: Property Table_
+_Table_ _309_: Property Table
 
 <table>
 <tr>
@@ -26795,7 +26800,7 @@ Specifies Forecolor when the current value is Zero.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26807,9 +26812,9 @@ this.currencyTextBox1.ReadOnlyBackColor = System.Drawing.Color.Linen;
 
 this.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26821,19 +26826,19 @@ Me.currencyTextBox1.ReadOnlyBackColor = System.Drawing.Color.Linen
 
 Me.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Color.png](Editors-Package_images/Editors-Package_img496.png)
-{:.image }
 
 
-###### Advanced Features
+
+##### Advanced Features
 
 Clipboard Support
 
 The CurrencyTextBox control also provides support for clipboard operations that are compatible with currency data. TheClipMode property specifies if formatting characters are to be copied to the clipboard.
 
-_Table_ _310__: Property Table_
+_Table_ _310_: Property Table
 
 <table>
 <tr>
@@ -26843,37 +26848,31 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ _ExcludeFormatting and_ | markdownify }}{{ _IncludeFormatting._ | markdownify }}</td></tr>
+Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ '_ExcludeFormatting and_' | markdownify }}{{ '_IncludeFormatting._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.ExcludeFormatting;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.ExcludeFormatting
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img497.png)
-{:.image }
+
 
 
 Overflow Indicator
 
 You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in OverflowIndicatorToolTipText.Set ShowOverflowIndicatorproperty to true to enable this feature. Set ShowOverflowIndicatorToolTip property to true to display the tooltip text.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.currencyTextBox1.OverflowIndicatorToolTipText = "Overflow";
 
@@ -26881,11 +26880,9 @@ this.currencyTextBox1.ShowOverflowIndicator = true;
 
 this.currencyTextBox1.ShowOverflowIndicatorToolTip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.currencyTextBox1.OverflowIndicatorToolTipText = "Overflow"
 
@@ -26893,17 +26890,17 @@ Me.currencyTextBox1.ShowOverflowIndicator = True
 
 Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Overflow.png](Editors-Package_images/Editors-Package_img498.png)
-{:.image }
+
 
 
 Globalization
 
 The CurrencyTextBox class is globalization aware and uses System.Globalization.CultureInfo for locale-specific information. You can set the control's culture to any installed culture through its culture property.
 
-_Table_ _311__: Property Table_
+_Table_ _311_: Property Table
 
 <table>
 <tr>
@@ -26921,15 +26918,15 @@ Specifies whether the culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{ _None,_ | markdownify }}{{ _CurrentCulture (default),_ | markdownify }}{{ _InstalledCulture,_ | markdownify }}{{ _UICulture._ | markdownify }}</td></tr>
+It sets the mode for the cultures. The options includes:{{ '_None,_' | markdownify }}{{ '_CurrentCulture (default),_' | markdownify }}{{ '_InstalledCulture,_' | markdownify }}{{ '_UICulture._' | markdownify }}</td></tr>
 </table>
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Culture.png](Editors-Package_images/Editors-Package_img499.png)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -26939,9 +26936,9 @@ this.currencyTextBox1.CurrentCultureRefresh = true;
 
 this.currencyTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26951,9 +26948,11 @@ Me.currencyTextBox1.CurrentCultureRefresh = True
 
 Me.currencyTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None
 
+{% endhighlight %}
+
 User Override for Culture
 
-_Table_ _312__: Property Table_
+_Table_ _312_: Property Table
 
 <table>
 <tr>
@@ -26967,7 +26966,7 @@ Specifies if the NumberFormatInfo used for formatting will use the User override
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26975,9 +26974,9 @@ this.currencyTextBox1.UseUserOverride = false;
 
 this.currencyTextBox1.Culture = new CultureInfo(CultureInfo.CurrentUICulture.LCID,this.currencyTextBox1.UseUserOverride);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26985,11 +26984,13 @@ Me.currencyTextBox1.UseUserOverride = False
 
 Me.currencyTextBox1.Culture = New CultureInfo(CultureInfo.CurrentUICulture.LCID,Me.currencyTextBox1.UseUserOverride)
 
+{% endhighlight %}
+
 Culture name
 
 The culture name can be displayed in the different format according to the specified culture value. Refer the following table in detail.
 
-_Table_ _313__: Property Table_
+_Table_ _313_: Property Table
 
 <table>
 <tr>
@@ -27017,7 +27018,7 @@ Gets the three letter code for the language as specified in the windows API.</td
 
 The following figure illustrates this when the culture is 'en-US'.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27029,9 +27030,9 @@ this.label13.Text  = this.currencyTextBox1.Culture.NativeName;
 
 this.label14.Text  = this.currencyTextBox1.Culture.ThreeLetterWindowsLanguageName;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27043,13 +27044,13 @@ Me.label13.Text = Me.currencyTextBox1.Culture.NativeName
 
 Me.label14.Text = Me.currencyTextBox1.Culture.ThreeLetterWindowsLanguageName
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Globalization.png](Editors-Package_images/Editors-Package_img500.png)
-{:.image }
 
 
-###### Event Handling
+
+##### Event Handling
 
 CurrencyTextBox fires events when 3D border style is changed, border color is changed, border sides are changed, decimal value property is changed and when Themes enabled property is changed. Also fires event when the input text is invalid.
 
@@ -27059,7 +27060,7 @@ ValidationError: It occurs when an inappropriate character is encountered. The e
 
 The event properties associated with the ValidationErrorArgs are as follows.
 
-_Table_ _314__: Members Table_
+_Table_ _314_: Members Table
 
 <table>
 <tr>
@@ -27089,7 +27090,7 @@ Adding Key Support
 
 Sometimes there may occur situations for entering large values, like in Mega, Kilo etc., In such situations if we add some sort of keyboard support, it will be very much useful for the users. For example if we want to enter the value as multiples of thousand, we can use the following method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27117,9 +27118,9 @@ currencyTextBox1.DecimalValue=v;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27151,7 +27152,7 @@ currencyTextBox1.DecimalValue=v
 
 End Sub
 
-
+{% endhighlight %}
 
 So if the user wants to enter 32000, he just needs to enter 32 and then press  'K'. The value will change to 32000.
 
@@ -27162,7 +27163,7 @@ When invalid text is entered by the user, we can handle ValidationError eventt
 * Drag the CurrencyTextBox, ErrorProvider control and TextBox onto the form.
 * Handle ValidationError event of CurrencyTextBox.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27174,9 +27175,9 @@ textBox1.Text = textBox1.Text + eventlogmessage;
 
 this.errorProvider1.SetError((Control) sender, eventlogmessage);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27188,17 +27189,18 @@ Private textBox1.Text = textBox1.Text & eventlogmessage
 
 Me.errorProvider1.SetError(CType(sender, Control), eventlogmessage)
 
+{% endhighlight %}
 
 
 ![](Editors-Package_images/Editors-Package_img501.png)
-{:.image }
 
 
-###### Frequently Asked Questions
+
+##### Frequently Asked Questions
 
 When the control is set to disabled, we could not make any changes in it. But we can make the text active by setting DrawActiveWhenDisabled to True.
 
-_Table_ _315__: Property Table_
+_Table_ _315_: Property Table
 
 <table>
 <tr>
@@ -27215,123 +27217,134 @@ Specifies whether the text should be drawn active even when the control is disab
 The following figure illustrates this.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Active.png](Editors-Package_images/Editors-Package_img502.png)
-{:.image }
+
 
 
 How to make the text active when the control is disabled
 
-##### EditableList
+#### EditableList
 
 The EditableList control provides an editable Windows Forms list box with a Windows Forms text box and button on the current row to facilitate in-place editing. The events present in the Textbox, Button and ListBox are applicable for EditableList control.
 
 ![](Editors-Package_images/Editors-Package_img503.png)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 EditableList displays a list control that allows in place editing when the user double clicks on the list control and contains following features.
 
 * The EditableList listbox provides various appearance and behavior properties.
 * The EditableList supports AutoCompletion from the list.
-###### Creating Editable List
+
+##### Creating Editable List
 
 
 To use an EditableList control in your application, all you need to do is drag-and-drop the EditableList control from the controls toolbox onto your form. To add items, expand ListBox node and open String Collection Editor.
 
 ![](Editors-Package_images/Editors-Package_img504.png)
-{:.image }
+
 
 
 It can be created programmatically as follows.
 
 201. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 202. Declare and create an instance of EditableList control.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.EditableList editableList1;
+		private Syncfusion.Windows.Forms.Tools.EditableList editableList1;
 
-this.editableList1=new Syncfusion.Windows.Forms.Tools.EditableList();
+		this.editableList1=new Syncfusion.Windows.Forms.Tools.EditableList();
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private editableList1 As Syncfusion.Windows.Forms.Tools.EditableList
-
-Me.editableList1 = New Syncfusion.Windows.Forms.Tools.EditableList()
+     ~~~ vbnet
 
 
+
+		Private editableList1 As Syncfusion.Windows.Forms.Tools.EditableList
+
+		Me.editableList1 = New Syncfusion.Windows.Forms.Tools.EditableList()
+
+     ~~~
+     {:.prettyprint }
 
 203. Associate Button, TextBox and ListBox with the EditableList control.
 
-[C#]
+     ~~~ cs
 
 
 
-this.editableList1.Controls.Add(this.editableList1.Button);
+		this.editableList1.Controls.Add(this.editableList1.Button);
 
-this.editableList1.Controls.Add(this.editableList1.ListBox);
+		this.editableList1.Controls.Add(this.editableList1.ListBox);
 
-this.editableList1.Controls.Add(this.editableList1.TextBox);
+		this.editableList1.Controls.Add(this.editableList1.TextBox);
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.editableList1.Controls.Add(Me.editableList1.Button)
-
-Me.editableList1.Controls.Add(Me.editableList1.ListBox)
-
-Me.editableList1.Controls.Add(Me.editableList1.TextBox)
+     ~~~ vbnet
 
 
+
+		Me.editableList1.Controls.Add(Me.editableList1.Button)
+
+		Me.editableList1.Controls.Add(Me.editableList1.ListBox)
+
+		Me.editableList1.Controls.Add(Me.editableList1.TextBox)
+
+     ~~~
+     {:.prettyprint }
 
 204. Specify the size of EditableList control and add that instance to the Form.
 
-[C#]
+     ~~~ cs
 
 
 
-this.editableList1.Size = new System.Drawing.Size(144, 40);
+		this.editableList1.Size = new System.Drawing.Size(144, 40);
 
-this.Controls.Add(this.editableList1);
+		this.Controls.Add(this.editableList1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.editableList1.Size = New System.Drawing.Size(144, 40)
 
+		Me.Controls.Add(Me.editableList1)
+		
+     ~~~
+     {:.prettyprint }
 
-
-Me.editableList1.Size = New System.Drawing.Size(144, 40)
-
-Me.Controls.Add(Me.editableList1)
-
-###### Concepts and Features 
+##### Concepts and Features 
 
 Populating and Editing the List
 
@@ -27341,7 +27354,7 @@ The List can be populated in 2 ways. One is to specify the DataSource and anothe
 
 To populate through DataSource.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27349,9 +27362,9 @@ To populate through DataSource.
 
 editableList1.ListBox.DataSource=&lt;DataSource&gt;;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27359,7 +27372,7 @@ editableList1.ListBox.DataSource=&lt;DataSource&gt;;
 
 editableList1.ListBox.DataSource=&lt;DataSource&gt;
 
-
+{% endhighlight %}
 
 Otherwise go to the property editor, expand the ListBox property of the EditableList and then select Items. This Items property is editable like any other Items property.
 
@@ -27371,8 +27384,8 @@ The List can be edited in the following way during runtime:
 206.  Click again. There appears a TextBox. Now edit the text.
 207.  After editing change the focus, the list will get updated.
 
-![](Editors-Package_images/Editors-Package_img505.png)
-{:.image }
+      ![](Editors-Package_images/Editors-Package_img505.png)
+
 
 
 Appearance and Behavior Settings
@@ -27383,7 +27396,7 @@ Embedded controls
 
 EditableList control contains embedded controls such as Button, TextBox and ListBox.
 
-_Table_ _316__: List of controls_
+_Table_ _316_: List of controls
 
 <table>
 <tr>
@@ -27407,7 +27420,7 @@ Auto Scrolling
 
 You can enable scrollbars automatically for the EditableList control when its items are shown beyond its size by setting AutoScroll to true. When AutoScroll is enabled for the control, you can set the margin and logical size for the autoscroll region by AutoScrollMargin and AutoScrollMinSize properties.
 
-_Table_ _317__: Property Table_
+_Table_ _317_: Property Table
 
 <table>
 <tr>
@@ -27429,7 +27442,7 @@ It sets the minimum logical size for the AutoScroll region.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27439,9 +27452,9 @@ this.editableList1.AutoScrollMargin = new System.Drawing.Size(2, 2);
 
 this.editableList1.AutoScrollMinSize = new System.Drawing.Size(3, 3);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27451,11 +27464,13 @@ Me.editableList1.AutoScrollMargin = New System.Drawing.Size(2, 2)
 
 Me.editableList1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
 
+{% endhighlight %}
+
 Dock padding
 
 Dock padding determines the size of the border for the docked controls.
 
-_Table_ _318__: Property Table_
+_Table_ _318_: Property Table
 
 <table>
 <tr>
@@ -27472,28 +27487,26 @@ Gets the dock padding for all edges of the control.</td></tr>
 The following image displays the EditableList control with the dock padding for all the edges set to 5.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_Dock.png](Editors-Package_images/Editors-Package_img506.png)
-{:.image }
 
 
-[C#]
 
-
+{% highlight c# %}
 
 this.editableList1.DockPadding.All = 5;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.editableList1.DockPadding.All = 5
+
+{% endhighlight %}
 
 Want Button
 
 You can display the button to the right while editing the items in the EditableList control by setting WantButton to true.
 
-_Table_ _319__: Property Table_
+_Table_ _319_: Property Table
 
 <table>
 <tr>
@@ -27508,70 +27521,70 @@ Specifies whether to show button to the right while editing.</td></tr>
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_wantbutton.png](Editors-Package_images/Editors-Package_img507.png)
-{:.image }
 
 
 
 
-[C#]
 
-
+{% highlight c# %}
 
 this.editableList1.WantButton = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.editableList1..WantButton = True
+
+{% endhighlight %}
 
 Enabling AutoComplete in TextBoxArea
 
 We can associate an AutoComplete with the editing TextBox of the EditableList. The following steps help to achieve this.
 
 208. Create an instance of the AutoComplete.
-209.  In the Form load event, place this code.
+209. In the Form load event, place this code.
 
-[C#]
-
-
-
-private void form1_Load(object sender,EventArgs e)
-
-{
-
-  // Sets the AutoComplete.
-
-autoComplete1.DataSource=editableList1.ListBox.Items;
-
-autoComplete1.SetAutoComplete(editableList1.TextBox,AutoCompleteModes.Both);
-
-}
+     ~~~ cs
 
 
 
-[VB.NET]
+		private void form1_Load(object sender,EventArgs e)
+
+		{
+
+		  // Sets the AutoComplete.
+
+		autoComplete1.DataSource=editableList1.ListBox.Items;
+
+		autoComplete1.SetAutoComplete(editableList1.TextBox,AutoCompleteModes.Both);
+
+		}
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-Private  Sub form1_Load(ByVal sender As Object, ByVal e As EventArgs)
+		Private  Sub form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
-  ' Sets the AutoComplete.
+		  ' Sets the AutoComplete.
 
-autoComplete1.DataDource=editableList1.ListBox.Items
+		autoComplete1.DataDource=editableList1.ListBox.Items
 
-autoComplete1.SetAutoComplete(editableList1.TextBox,AutoCompleteModes.Both)
+		autoComplete1.SetAutoComplete(editableList1.TextBox,AutoCompleteModes.Both)
 
-End Sub
+		End Sub
 
-
+     ~~~
+     {:.prettyprint }
 
 The data source may vary according to your choice.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/image1861354887.png](Editors-Package_images/Editors-Package_img508.png)
-{:.image }
+
 
 
 Style   
@@ -27583,27 +27596,25 @@ EditableList supports visual styles such as Default, Metro. The style can be set
 
 The following code example allows you to set the style for the EditableList.
 
-[C#]
+{% highlight c# %}
 
 this.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Metro;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
-
+{% endhighlight %}
 
 
 
 ![](Editors-Package_images/Editors-Package_img509.png)
-{:.image }
 
 
-###### Event Handling
+
+##### Event Handling
 
 EditableList controls contains events present in the Windows Button, TextBox and ListBox.
 
@@ -27629,9 +27640,7 @@ DragDrop and DragEnter events can be handled to drag and drop the external ob
 
 DragEnter event can be handled to drag the file into the text area of EditableList control. The following code illustrates this.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void editableList1_DragEnter(object sender, System.Windows.Forms.DragEventArgs e)
 
@@ -27647,9 +27656,9 @@ e.Effect = DragDropEffects.None;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27667,11 +27676,11 @@ Private Sub editableList1_DragEnter(ByVal sender As Object, ByVal e AsSy
 
 End Sub
 
-
+{% endhighlight %}
 
 DragDrop event can be handled to drop the files at any location into the EditableList control. The following code illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27691,9 +27700,9 @@ foreach (string s in files)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27709,19 +27718,21 @@ Private Sub editableList1_DragDrop(ByVal sender As Object, ByVal e AsSys
 
 End Sub
 
-##### MaskedEditBox
+{% endhighlight %}
+
+#### MaskedEditBox
 
 The MaskedEditBox control is an edit control that provides an easy and reliable way of collecting user input and displaying standard data in specific formats from any data source. Some of the common uses of the MaskedEditBox controls are IP Addressedit control, Phone Number edit control and Social Security edit control.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features4.png](Editors-Package_images/Editors-Package_img510.png)
-{:.image }
+
 
 
 If you define an input mask using the Mask property, each character position in the MaskedEditBox control maps to either a placeholder of a specified type or a literal character. Literal characters, or literals, can give visual cues about the type of data being used. For example, the parentheses surrounding the area code of a telephone number are literals: (919).
 
 MaskedEditBox control exhibits the similar properties of CurrencyTextBox.
 
-###### Features
+##### Features
 
 IntegerTextBox is used to display Int64 values and contains the following features.
 
@@ -27778,7 +27789,8 @@ Key Features
 * The IntegerTextBox control handles user keyboard input and double formatting with no code required.
 * It is fully compatible with the Windows Forms TextBox and uses the globalization features of the .NET platform to provide locale specific formatting.
 * The IntegerTextBox control supports displaying negative values in a different color and also using different negative formats.
-###### Creating MaskedEditBox
+
+##### Creating MaskedEditBox
 
 Through Designer
 
@@ -27787,19 +27799,19 @@ The MaskedEditBox control provides full support for the Windows Forms designer. 
 
 210. Drag and drop the MaskedEditBox control onto your form from the controls toolbox.
 
-![](Editors-Package_images/Editors-Package_img511.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img511.png)
+
 
 
 211. Set the MaskedEditBox.Mask property for the control. This property controls the behavior of the control at run time. If no mask is specified, the control will behave the same as a standard Windows Forms TextBox control.
 
-![](Editors-Package_images/Editors-Package_img512.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img512.png)
+
 
 
 Examples of some common masks are,
 
-_Table_ _320__: Masks Table_
+_Table_ _320_: Masks Table
 
 <table>
 <tr>
@@ -27833,93 +27845,95 @@ The MaskedEditBox control can be used programmatically through code as detailed 
 
 212. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 213. Create an instance of the MaskedEditBox control.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.MaskedEditBox maskedEditBox1;
+		private Syncfusion.Windows.Forms.Tools.MaskedEditBox maskedEditBox1;
 
-this.maskedEditBox1=new MaskedEditBox();
+		this.maskedEditBox1=new MaskedEditBox();
 
+     ~~~
+     {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private maskedEditBox1 As Syncfusion.Windows.Forms.Tools.MaskedEditBox
-
-Me.maskedEditBox1 = New MaskedEditBox()
+     ~~~ vbnet
 
 
+
+		Private maskedEditBox1 As Syncfusion.Windows.Forms.Tools.MaskedEditBox
+
+		Me.maskedEditBox1 = New MaskedEditBox()
+
+     ~~~
+     {:.prettyprint }
 
 214. Set MaskedEditBox.Mask property.
 
-[C#]
+     ~~~ cs
 
 
 
-// The mask string.
+		// The mask string.
 
-this.maskedEditBox1.Mask = ">?<????????????";
+		this.maskedEditBox1.Mask = ">?<????????????";
 
-this.maskedEditBox1.Location = new System.Drawing.Point(70, 29);
+		this.maskedEditBox1.Location = new System.Drawing.Point(70, 29);
 
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
 
-[VB.NET]
+		' The mask string.
 
+		Me.maskedEditBox1.Mask = ">?<????????????"
 
+		Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
 
-' The mask string.
-
-Me.maskedEditBox1.Mask = ">?<????????????"
-
-Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
-
-
+     ~~~
+     {:.prettyprint }
 
 215. Add the MaskedEditBox control to the form.
 
-[C#]
+     ~~~ cs
 
+		this.Controls.Add(this.maskedEditBox1);
 
+     ~~~
+     {:.prettyprint }
 
-this.Controls.Add(this.maskedEditBox1);
+     ~~~ vbnet
 
+		Me.Controls.Add(Me.maskedEditBox1)
 
-
-[VB.NET]
-
-
-
-Me.Controls.Add(Me.maskedEditBox1)
-
-
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img513.png)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 Mask Settings
 
@@ -27927,7 +27941,7 @@ This section deals with the mask settings of MaskedEditBox control.
 
 The format / behavior for the MaskedEditBox control is defined through the property given below.
 
-_Table_ _321__: Property Table_
+_Table_ _321_: Property Table
 
 <table>
 <tr>
@@ -27951,7 +27965,7 @@ In the above Mask, all the non # characters are Literal characters and the #’s
 
 The MaskedEditBox control supports the following masks.
 
-_Table_ _322__: Mask Characters Table_
+_Table_ _322_: Mask Characters Table
 
 <table>
 <tr>
@@ -28021,24 +28035,22 @@ All other symbols are displayed as literals; that is, as themselves.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.maskedEditBox1.Mask = "##-##-####";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.maskedEditBox1.Mask = "##-##-####"
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features3.png](Editors-Package_images/Editors-Package_img514.png)
-{:.image }
+
 
 
 A Sample which demonstrates the Mask Settings of MaskedEditBox control is available in the below sample installation path.
@@ -28051,7 +28063,7 @@ This section discusses the mode settings of the MaskedEditBox control.
 
 MaskedEditBox control uses the following modes.
 
-_Table_ _323__: Property Table_
+_Table_ _323_: Property Table
 
 <table>
 <tr>
@@ -28061,11 +28073,11 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{ _IncludeLiterals and_ | markdownify }}{{ _ExcludeLiterals._ | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
+Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
 <tr>
 <td>
 InputMode</td><td>
-Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ _OvertypeOnly and_ | markdownify }}{{ _Normal._ | markdownify }}The default value is 'OvertypeOnly'.</td></tr>
+Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'OvertypeOnly'.</td></tr>
 <tr>
 <td>
 UsageMode</td><td>
@@ -28101,7 +28113,7 @@ The first group will contain the value for the first 3 ### characters of the mas
 
 The MaxValue and MinValue properties are enforced only when the UsageMode is set to 'Numeric'.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28111,9 +28123,9 @@ this.maskedEditBox1.InputMode = Syncfusion.Windows.Forms.Tools.MaskInputMode.Nor
 
 this.maskedEditBox1.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28123,6 +28135,8 @@ Me.maskedEditBox1.InputMode = Syncfusion.Windows.Forms.Tools.MaskInputMode.Norma
 
 Me.maskedEditBox1.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric
 
+{% endhighlight %}
+
 Display Settings
 
 This section discusses the display settings of the MaskedEditBox control.
@@ -28131,7 +28145,7 @@ Separators
 
 The user data can be displayed along with separators at run time for specifying date, time, decimals and thousands. It is not required to type separators at run time. Separators can be specified in the mask character itself.
 
-_Table_ _324__: Property Table_
+_Table_ _324_: Property Table
 
 <table>
 <tr>
@@ -28163,7 +28177,7 @@ We can change the default separators used. If you want to display the date time 
 
 Similarly other separators can be used.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28175,9 +28189,9 @@ this.maskedEditBox1.ThousandSeparator = ',';
 
 this.maskedEditBox1.TimeSeparator = ':';
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28189,29 +28203,29 @@ Me.maskedEditBox1.ThousandSeparator = ","C
 
 Me.maskedEditBox1.TimeSeparator = ":"C
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features5.png](Editors-Package_images/Editors-Package_img515.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features6.png](Editors-Package_images/Editors-Package_img516.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features7.png](Editors-Package_images/Editors-Package_img517.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features8.png](Editors-Package_images/Editors-Package_img518.png)
-{:.image }
+
 
 
 Cursor Position
 
 The cursor position of the MaskedEditBox control can be specified using the options provided by the following properties.
 
-_Table_ _325__: Property Table_
+_Table_ _325_: Property Table
 
 <table>
 <tr>
@@ -28221,7 +28235,7 @@ Description</td></tr>
 <tr>
 <td>
 PositionAt</td><td>
-Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{ _Decimal_ | markdownify }}{{ _FirstPosition and_ | markdownify }}{{ _FirstMaskPosition._ | markdownify }}The default value is 'FirstPosition'.</td></tr>
+Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{ '_Decimal_' | markdownify }}{{ '_FirstPosition and_' | markdownify }}{{ '_FirstMaskPosition._' | markdownify }}The default value is 'FirstPosition'.</td></tr>
 <tr>
 <td>
 PositionAtDecimal</td><td>
@@ -28229,7 +28243,7 @@ Indicates whether the cursor is to be positioned at the decimal separator (if an
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28237,9 +28251,9 @@ this.maskedEditBox1.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPos
 
 this.maskedEditBox1.PositionAtDecimal = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28247,11 +28261,13 @@ Me.maskedEditBox1.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosit
 
 Me.maskedEditBox1.PositionAtDecimal = true;
 
+{% endhighlight %}
+
 DataGroups
 
 Text can be split up and aligned using the options provided by the below given property.
 
-_Table_ _326__: Property Table_
+_Table_ _326_: Property Table
 
 <table>
 <tr>
@@ -28305,7 +28321,7 @@ The value of Group 1 will be the area code, Group 2 will be the phone number, an
 
 The following code snippet uses two groups.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28335,9 +28351,9 @@ this.maskedEditDataGroupInfo2.DataGroupName = "Two";
 
 this.maskedEditDataGroupInfo2.DataGroupSize = 4;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28367,11 +28383,13 @@ Me.maskedEditDataGroupInfo2.DataGroupName = "Two"
 
 Me.maskedEditDataGroupInfo2.DataGroupSize = 4
 
+{% endhighlight %}
+
 Displaying Characters as Substitutes for User Input
 
 We can display different characters as substitutes for the user input. This can be done using the below given properties.
 
-_Table_ _327__: Property Table_
+_Table_ _327_: Property Table
 
 <table>
 <tr>
@@ -28391,7 +28409,7 @@ Indicates the character to display for password input for single-line edit contr
 
 The MaskedEditBox.Sequentially property indicates whether the control can sequentially display mask characters. After setting the Sequentially property to 'True', you can use the PasswordChar property in order to set the character, that is to be displayed as a substitute for the user input.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28405,9 +28423,10 @@ this.maskedEditBox1.PasswordChar = '$';
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28419,10 +28438,10 @@ Me.maskedEditBox1.PasswordChar = "$"c
 
 End Sub
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features9.png](Editors-Package_images/Editors-Package_img519.png)
-{:.image }
+
 
 
 A Sample which demonstrates the PasswordChar property of MaskedEditBox control is available in the below sample installation path.
@@ -28433,7 +28452,7 @@ Culture Settings
 
 This section discusses the culture settings of the MaskedEditBox control.
 
-_Table_ _328__: Property Table_
+_Table_ _328_: Property Table
 
 <table>
 <tr>
@@ -28447,7 +28466,7 @@ Gets / sets the culture that is to be used for formatting the numeric display.</
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options:{{ _None,_ | markdownify }}{{ _CurrentCulture,_ | markdownify }}{{ _UICulture and_ | markdownify }}{{ _InstalledCulture._ | markdownify }}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options:{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -28455,7 +28474,7 @@ Specifies if the NumberFormatInfo used for formatting will use the User Override
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28465,9 +28484,9 @@ this.maskedEditBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Special
 
 this.maskedEditBox1.UseUserOverride = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28477,10 +28496,10 @@ Me.maskedEditBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCu
 
 Me.maskedEditBox1.UseUserOverride = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features10.png](Editors-Package_images/Editors-Package_img520.png)
-{:.image }
+
 
 
 Text Settings
@@ -28489,7 +28508,7 @@ This section discusses the text settings of the MaskedEditBox control.
 
 The text associated with the MaskedEditBox control can be set and customized using the below given settings.
 
-_Table_ _329__: Property Table_
+_Table_ _329_: Property Table
 
 <table>
 <tr>
@@ -28499,7 +28518,7 @@ Description</td></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options:{{ _Normal,_ | markdownify }}{{ _Upper and_ | markdownify }}{{ _Lower._ | markdownify }}</td></tr>
+Gets / sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -28523,7 +28542,7 @@ Specifies if the text should be drawn active, even when disabled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28539,9 +28558,9 @@ this.maskedEditBox1.ClipText = "34";
 
 this.maskedEditBox1.DrawActiveWhenDisabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28557,19 +28576,19 @@ Me.maskedEditBox1.ClipText = "34"
 
 Me.maskedEditBox1.DrawActiveWhenDisabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features11.png](Editors-Package_images/Editors-Package_img521.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features12.png](Editors-Package_images/Editors-Package_img522.png)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _330__: Methods Table_
+_Table_ _330_: Methods Table
 
 <table>
 <tr>
@@ -28605,7 +28624,7 @@ Clip Mode
 
 The formatting for the text can be enabled or disabled using the property given below.
 
-_Table_ _331__: Property Table_
+_Table_ _331_: Property Table
 
 <table>
 <tr>
@@ -28615,29 +28634,27 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{ _IncludeLiterals and_ | markdownify }}{{ _ExcludeLiterals._ | markdownify }}</td></tr>
+Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeLiterals;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeLiterals
+
+{% endhighlight %}
 
 OverflowIndicatorToolTipText
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
 
-_Table_ _332__: Property Table_
+_Table_ _332_: Property Table
 
 <table>
 <tr>
@@ -28659,7 +28676,7 @@ Gets / sets can show overflow indicator tooltip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28669,9 +28686,9 @@ this.maskedEditBox1.ShowOverflowIndicator = true;
 
 this.maskedEditBox1.ShowOverflowIndicatorToolTip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28681,10 +28698,10 @@ Me.maskedEditBox1.ShowOverflowIndicator = True
 
 Me.maskedEditBox1.ShowOverflowIndicatorToolTip = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features13.png](Editors-Package_images/Editors-Package_img523.png)
-{:.image }
+
 
 
 A Sample which demonstrates the Text Align and Character Casing features of MaskedEditBox control is available in the below sample installation path.
@@ -28699,7 +28716,7 @@ MinValue and MaxValue
 
 The minimum and maximum values of the MaskedEditBox control can be set using the below given properties.
 
-_Table_ _333__: Property Table_
+_Table_ _333_: Property Table
 
 <table>
 <tr>
@@ -28717,7 +28734,7 @@ Specifies the maximum value that can be set through the MaskedEditBox.The defaul
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28725,15 +28742,17 @@ this.maskedEditBox1.MinValue = new decimal(new int[] {50, 0, 0, 0});
 
 this.maskedEditBox1.MaxValue = new decimal(new int[] {100, 0, 0, 0});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.maskedEditBox1.MinValue = New Decimal(New Integer() {50, 0, 0, 0})
 
 Me.maskedEditBox1.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
+
+{% endhighlight %}
 
 Appearance Settings
 
@@ -28745,7 +28764,7 @@ Background Color
 
 The background color of the control can be set using the properties given below.
 
-_Table_ _334__: Property Table_
+_Table_ _334_: Property Table
 
 <table>
 <tr>
@@ -28759,29 +28778,25 @@ Specifies the background color of the component.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features14.png](Editors-Package_images/Editors-Package_img524.png)
-{:.image }
+
 
 
 The method associated with the above property is given below.
 
-_Table_ _335__: Property Table_
+_Table_ _335_: Property Table
 
 <table>
 <tr>
@@ -28807,7 +28822,7 @@ Foreground Color
 
 The foreground color of the control can be set using the properties given below.
 
-_Table_ _336__: Property Table_
+_Table_ _336_: Property Table
 
 <table>
 <tr>
@@ -28821,24 +28836,20 @@ Specifies the foreground color of this component, which is used to display text.
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features15.png](Editors-Package_images/Editors-Package_img525.png)
-{:.image }
+
 
 
 A Sample which demonstrates the Foreground Settings of MaskedEditBox control is available in the below sample installation path.
@@ -28853,7 +28864,7 @@ Prompt and Padding Character Settings
 
 MaskedEditBox control allows you to add prompt characters in the input.
 
-_Table_ _337__: Property Table_
+_Table_ _337_: Property Table
 
 <table>
 <tr>
@@ -28891,9 +28902,7 @@ Gets / sets the integer version of the PassivePromptCharacter.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.maskedEditBox1.AllowPrompt = true;
 
@@ -28903,11 +28912,9 @@ this.maskedEditBox1.PromptCharacterInt = 37;
 
 this.maskedEditBox1.PassivePromptCharacterInt = 47;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.maskedEditBox1.AllowPrompt = True
 
@@ -28917,9 +28924,9 @@ Me.maskedEditBox1.PromptCharacterInt = 37
 
 Me.maskedEditBox1.PassivePromptCharacterInt = 47
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img526.png)
-{:.image }
- _Note: We can trim the additional spaces present in the mask by setting the PaddingCharacterInt property to '0'._
+{% endhighlight %}
+
+> Note: We can trim the additional spaces present in the mask by setting the PaddingCharacterInt property to '0'.
 
 MaxLength
 
@@ -28927,7 +28934,7 @@ The maximum length of the text can be set using the property given below.
 
 
 
-_Table_ _338__: Property Table_
+_Table_ _338_: Property Table
 
 <table>
 <tr>
@@ -28941,25 +28948,23 @@ Specifies the maximum number of characters that can be entered into the edit con
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.maskedEditBox1.MaxLength = 32800;               
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.maskedEditBox1.MaxLength = 32800
+
+{% endhighlight %}
 
 ReadOnly
 
 The ReadOnly mode can be enabled for the MaskedEditBox control using the below given property.
 
-_Table_ _339__: Property Table_
+_Table_ _339_: Property Table
 
 <table>
 <tr>
@@ -28973,19 +28978,17 @@ Specifies whether the text in the edit control can be changed or not.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.maskedEditBox1.ReadOnly = true;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.maskedEditBox1.ReadOnly = True
+
+{% endhighlight %}
 
 Border Settings
 
@@ -28993,7 +28996,7 @@ The border settings of the MaskedEditBox control are discussed in this section.
 
 The wide variety of border options that are available for the MaskedEditBox control are given below.
 
-_Table_ _340__: Property Table_
+_Table_ _340_: Property Table
 
 <table>
 <tr>
@@ -29003,7 +29006,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -29011,15 +29014,15 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All._ | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29031,9 +29034,9 @@ this.maskedEditBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 this.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29045,10 +29048,11 @@ Me.maskedEditBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 Me.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
+{% endhighlight %}
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features1.png](Editors-Package_images/Editors-Package_img527.png)
-{:.image }
+
 
 
 A Sample which demonstrates the Border Settings of MaskedEditBox control is available in the below sample installation path.
@@ -29061,7 +29065,7 @@ The layout settings of the MaskedEditBox control are discussed in this section.
 
 The size of the MaskedEditBox control can be set according to the needs of the user using the properties discussed below.
 
-_Table_ _341__: Property Table_
+_Table_ _341_: Property Table
 
 <table>
 <tr>
@@ -29079,7 +29083,7 @@ Gets / sets the minimum size for the control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29087,9 +29091,9 @@ this.maskedEditBox1.MaximumSize = new System.Drawing.Size(150, 20);
 
 this.maskedEditBox1.MinimumSize = new System.Drawing.Size(150, 20);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29097,17 +29101,17 @@ Me.maskedEditBox1.MaximumSize = New System.Drawing.Size(150, 20)
 
 Me.maskedEditBox1.MinimumSize = New System.Drawing.Size(150, 20)
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features16.png](Editors-Package_images/Editors-Package_img528.png)
-{:.image }
+
 
 
 Applying Themes
 
 Themes can be applied to the MaskedEditBox control using the property given below.
 
-_Table_ _342__: Property Table_
+_Table_ _342_: Property Table
 
 <table>
 <tr>
@@ -29119,35 +29123,32 @@ Description</td></tr>
 ThemesEnabled</td><td>
 Specifies whether or not to use XP themes when BorderStyle property is set to 'Fixed3D'.</td></tr>
 </table>
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img529.png)
-{:.image }
- _Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderStyles5.html) _topic to know about the BorderStyle property._
 
-[C#]
+> Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderStyles5.html) _topic to know about the BorderStyle property.
+
+{% highlight c# %}
 
 
 
 this.maskedEditBox1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.maskedEditBox1.ThemesEnabled = true
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Tools_Editor_MaskEdit_Features17.png](Editors-Package_images/Editors-Package_img530.png)
-{:.image }
 
-
-###### MaskedEditBox Events
+##### MaskedEditBox Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _343__: Events Table_
+_Table_ _343_: Events Table
 
 <table>
 <tr>
@@ -29217,7 +29218,7 @@ This event occurs when the Border3DStyle property is changed. The Border3DStyl
 
 The event handler receives an argument of type EventArgs containing data related to this event. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29229,9 +29230,9 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29241,13 +29242,15 @@ Console.WriteLine(" Border3DStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderColorChanged
 
 This event occurs when the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29259,9 +29262,9 @@ Console.WriteLine(" BorderColorChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29271,13 +29274,15 @@ Console.WriteLine(" BorderColorChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderSidesChanged
 
 This event occurs when the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29289,9 +29294,9 @@ Console.WriteLine(" BorderSidesChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29301,13 +29306,15 @@ Console.WriteLine(" BorderSidesChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderStyleChanged
 
 This event occurs when the BorderStyle property is changed. The BorderStyle property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29319,9 +29326,9 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29331,13 +29338,15 @@ Console.WriteLine(" BorderStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 CharacterCasingChanged
 
 This event occurs when the CharacterCasing property is changed. The CharacterCasing property gets / sets the case of the characters as they are typed.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29349,9 +29358,9 @@ Console.WriteLine(" CharacterCasingChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29361,13 +29370,15 @@ Console.WriteLine(" CharacterCasingChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 HideSelectionChanged
 
 This event occurs when the HideSelection property is changed. The HideSelection property indicates that the selection should be hidden when the edit control loses focus.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29379,9 +29390,9 @@ Console.WriteLine(" HideSelectionChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29391,13 +29402,15 @@ Console.WriteLine(" HideSelectionChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MaskCustomValidate
 
 This event is handled to provide custom behavior to any mask characters.
 
 The event handler receives an argument of type MaskCustomValidateArgs containing data related to this event. The following MaskCustomValidateArgs members provide information specific to this event.
 
-_Table_ _344__: Members Table_
+_Table_ _344_: Members Table
 
 <table>
 <tr>
@@ -29427,7 +29440,7 @@ Indicates whether the event has been handled and no further processing of the ev
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29439,9 +29452,9 @@ Console.WriteLine(" MaskCustomValidate event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29451,13 +29464,15 @@ Console.WriteLine(" MaskCustomValidate event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MaskSatisfied
 
 This event is raised when the required fields in a mask have been satisfied after new text has been entered / the text changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29469,9 +29484,9 @@ Console.WriteLine(" MaskSatisfied event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29481,13 +29496,15 @@ Console.WriteLine(" MaskSatisfied event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MaximumSizeChanged
 
 This event occurs when the MaximumSize property is changed. The MaximumSize property gets / sets the maximum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29499,9 +29516,10 @@ Console.WriteLine(" MaximumSizeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29511,13 +29529,15 @@ Console.WriteLine(" MaximumSizeChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MinimumSizeChanged
 
 This event occurs when the MinimumSize property is changed. The MinimumSize property gets / sets the minimum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29529,9 +29549,9 @@ Console.WriteLine(" MinimumSizeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29541,13 +29561,15 @@ Console.WriteLine(" MinimumSizeChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MultilineChanged
 
 This event occurs when the Multiline property is changed. The Multiline property controls whether the text of the edit control can span more than one line or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29559,9 +29581,9 @@ Console.WriteLine(" MultilineChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29571,13 +29593,15 @@ Console.WriteLine(" MultilineChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ReadOnlyChanged
 
 This event occurs when the ReadOnly property is changed. The ReadOnly property controls whether the text in the edit control can be changed or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29589,9 +29613,9 @@ Console.WriteLine(" ReadOnlyChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29601,13 +29625,15 @@ Console.WriteLine(" ReadOnlyChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 TextAlignChanged
 
 This event occurs when the TextAlign property is changed. The TextAlign property indicates how the text should be aligned for edit controls.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29619,9 +29645,9 @@ Console.WriteLine(" TextAlignChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29631,13 +29657,15 @@ Console.WriteLine(" TextAlignChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ThemesEnabledChanged
 
 This event occurs when the ThemesEnabled property is changed. The ThemesEnabled property specifies whether or not to use XP Themes when the BorderStyle property is set to 'Fixed3D'.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29649,9 +29677,9 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29661,15 +29689,17 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ")
 
 End Sub
 
-##### NumericUpDownExt
+{% endhighlight %}
+
+#### NumericUpDownExt
 
 The NumericUpDownExt control enables XP Themes look and feel for the UpDown controls that are missing in the corresponding .NET control.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features14.png](Editors-Package_images/Editors-Package_img531.png)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 NumericUpDownExt is an advanced NumericUpdown control and has the following features.
 
@@ -29725,7 +29755,8 @@ Key Features
 * Provides themes border.
 * Provides options to show negative values in different color.
 * Provides option to set different visual styles including Office2007.
-###### Creating NumericUpDownExt
+
+##### Creating NumericUpDownExt
 
 
 This section will give a step-by-step procedure to design a NumericUpDownExt control through designer and also through programmatical approach.
@@ -29737,115 +29768,119 @@ Through Designer
 
 
 
-![](Editors-Package_images/Editors-Package_img532.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img532.png)
+
 
 
 218. Run the application. The NumericUpDownExt will allow you to display numeric values by clicking on the up and down buttons.
 
-![](Editors-Package_images/Editors-Package_img533.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img533.png)
 
 
-Through Programmatical Approach
+
+     Through Programmatical Approach
 
 219. Declare an instance of the NumericUpDownExt control.
 
-[C#]
+     ~~~ cs
 
+	    private Syncfusion.Windows.Forms.Tools.NumericUpDownExt numericUpDownExt1;
 
+     ~~~
+     {:.prettyprint }
 
-private Syncfusion.Windows.Forms.Tools.NumericUpDownExt numericUpDownExt1;
+     ~~~ vbnet
 
-
-
-[VB.NET]
-
-
-
-Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-
+	    Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
+		
+     ~~~
+     {:.prettyprint }
 
 
 220. Initialize the control.
 
-[C#]
+     ~~~ cs
+
+		this.numericUpDownExt1 = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-this.numericUpDownExt1 = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
+		Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
 
-
-
-[VB.NET]
-
-
-
-Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-
-
+     ~~~
+     {:.prettyprint }
 
 221. Set the properties of the NumericUpDownExt control.
 
-[C#]
+     ~~~ cs
 
 
 
-this.numericUpDownExt1.Location = new System.Drawing.Point(70, 29);
+		this.numericUpDownExt1.Location = new System.Drawing.Point(70, 29);
 
-this.numericUpDownExt1.Name = "numericUpDownExt1";
+		this.numericUpDownExt1.Name = "numericUpDownExt1";
 
-this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
+		this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.numericUpDownExt1.Location = New System.Drawing.Point(70, 29)
 
+		Me.numericUpDownExt1.Name = "numericUpDownExt1"
 
+		Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
 
-Me.numericUpDownExt1.Location = New System.Drawing.Point(70, 29)
-
-Me.numericUpDownExt1.Name = "numericUpDownExt1"
-
-Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
-
+	 ~~~
+     {:.prettyprint }
 
 
 222. Add the control to the form.
 
-[C#]
+     ~~~ cs
 
 
 
-this.Controls.Add(this.numericUpDownExt1);
+		this.Controls.Add(this.numericUpDownExt1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.Controls.Add(Me.numericUpDownExt1)
 
-
-
-Me.Controls.Add(Me.numericUpDownExt1)
-
-
+     ~~~
+     {:.prettyprint }
 
 223. Run the application. You will be able to see the NumericUpDownExt control in your form.
 
-![](Editors-Package_images/Editors-Package_img534.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img534.png)
 
 
 
 
-_Figure_ _574__: NumericUpDownExt created Through Code_
 
-###### Concepts and Features
+_Figure_ _574_: NumericUpDownExt created Through Code
+
+##### Concepts and Features
 
 Value Settings
 
 The various Values of the NumericUpDownExt control and their settings are given below.
 
-_Table_ _345__: Property Table_
+_Table_ _345_: Property Table
 
 <table>
 <tr>
@@ -29875,7 +29910,7 @@ Gets / sets the value to increment or decrement the spin box (also known as an u
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29887,9 +29922,9 @@ this.numericUpDownExt1.Minimum = new decimal(new int[] {50, 0, 0, 0});
 
 this.numericUpDownExt1.Increment = new decimal(new int[] {5, 0, 0, 0});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29901,11 +29936,11 @@ Me.numericUpDownExt1.Minimum = New Decimal(New Integer() {50, 0, 0, 0})
 
 Me.numericUpDownExt1.Increment = New Decimal(New Integer() {5, 0, 0, 0})
 
-
+{% endhighlight %}
 
 The methods associated with the above properties are given below.
 
-_Table_ _346__: Methods Table_
+_Table_ _346_: Methods Table
 
 <table>
 <tr>
@@ -29927,7 +29962,7 @@ This section discusses the Display settings of the NumericUpDownExt control.
 
 The NumericUpDownExt provides the following properties to set the display characteristics associated with the integer value.
 
-_Table_ _347__: Property Table_
+_Table_ _347_: Property Table
 
 <table>
 <tr>
@@ -29945,7 +29980,7 @@ Gets / sets a value indicating whether a thousand separator is displayed in the 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -29953,9 +29988,9 @@ this.numericUpDownExt1.DecimalPlaces = 2;
 
 this.numericUpDownExt1.ThousandsSeparator = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -29963,10 +29998,10 @@ Me.numericUpDownExt1.DecimalPlaces = 2
 
 Me.numericUpDownExt1.ThousandsSeparator = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features11.png](Editors-Package_images/Editors-Package_img535.png)
-{:.image }
+
 
 
 Appearance Settings
@@ -29979,7 +30014,7 @@ Background Color
 
 The background color of the control can be set using the properties given below.
 
-_Table_ _348__: Property Table_
+_Table_ _348_: Property Table
 
 <table>
 <tr>
@@ -29993,24 +30028,24 @@ Specifies the background color of the component.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.numericUpDownExt1.BackColor = System.Drawing.Color.Aquamarine;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.numericUpDownExt1.BackColor = System.Drawing.Color.Aquamarine
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features3.png](Editors-Package_images/Editors-Package_img536.png)
-{:.image }
+
 
 
 Foreground Settings
@@ -30021,7 +30056,7 @@ Foreground Color
 
 The foreground color of the control can be set using the properties given below.
 
-_Table_ _349__: Property Table_
+_Table_ _349_: Property Table
 
 <table>
 <tr>
@@ -30035,24 +30070,24 @@ Gets / sets the foreground color of the spin box (also known as an up-down contr
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.numericUpDownExt1.ForeColor = System.Drawing.Color.DodgerBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.numericUpDownExt1.ForeColor = System.Drawing.Color.DodgerBlue
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features4.png](Editors-Package_images/Editors-Package_img537.png)
-{:.image }
+
 
 
 Applying Foreground Color to Negative Values
@@ -30060,12 +30095,12 @@ Applying Foreground Color to Negative Values
 It is a good behavior in a NumericUpDownExt control to indicate negative values using a separate color. The IntegerTextBox and DoubleTextBox controls also exhibit the same behavior.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features5.png](Editors-Package_images/Editors-Package_img538.png)
-{:.image }
+
 
 
 To add this feature to the NumericUpdown control, we need to derive the control. For this, we need to include the below given code snippet in the derived class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30157,9 +30192,9 @@ itb.Text = Value.ToString();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30233,11 +30268,11 @@ End Sub
 
 End Class
 
-
+{% endhighlight %}
 
 After deriving the new class, create an object for that class and set the required properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30251,11 +30286,9 @@ ud.NegativeColor = Color.Red;
 
 Controls.Add(ud);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim ud As NumericupdownextDerived = New NumericupdownextDerived
 
@@ -30267,6 +30300,8 @@ ud.NegativeColor = Color.Red
 
 Controls.Add(ud)
 
+{% endhighlight %}
+
 Behavior Settings
 
 The behavior settings of the NumericUpDownExt control are discussed below.
@@ -30275,7 +30310,7 @@ Intercept Arrow Keys
 
 The arrow keys can be used to select values using the below given property.
 
-_Table_ _350__: Property Table_
+_Table_ _350_: Property Table
 
 <table>
 <tr>
@@ -30289,25 +30324,23 @@ Gets / sets a value indicating whether the user can use the UP and DOWN ARROW ke
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.InterceptArrowKeys = true;                     
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.InterceptArrowKeys = True
+
+{% endhighlight %}
 
 MaxLength
 
 The maximum length of the text can be set using the property given below.
 
-_Table_ _351__: Property Table_
+_Table_ _351_: Property Table
 
 <table>
 <tr>
@@ -30321,25 +30354,23 @@ Gets / sets the maximum length of the text that can be entered into the editable
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.MaxLength = 32800;               
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.MaxLength = 32800
+
+{% endhighlight %}
 
 ReadOnly
 
 The ReadOnly mode can be enabled for the NumericUpDownExt control using the below given property.
 
-_Table_ _352__: Property Table_
+_Table_ _352_: Property Table
 
 <table>
 <tr>
@@ -30353,19 +30384,17 @@ Gets / sets a value indicating whether the text can be changed by the use of the
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.ReadOnly = true;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.ReadOnly = True
+
+{% endhighlight %}
 
 Alignment Settings
 
@@ -30375,7 +30404,7 @@ Text Alignment
 
 The text of the NumericUpDownExt control can be aligned using the below given property.
 
-_Table_ _353__: Property Table_
+_Table_ _353_: Property Table
 
 <table>
 <tr>
@@ -30389,31 +30418,27 @@ Gets / sets the alignment of the text in the spin box (also known as an up-down 
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features12.png](Editors-Package_images/Editors-Package_img539.png)
-{:.image }
+
 
 
 UpDownAlign
 
 The alignment of the up and down buttons can be set using the property given below.
 
-_Table_ _354__: Property Table_
+_Table_ _354_: Property Table
 
 <table>
 <tr>
@@ -30423,23 +30448,21 @@ Description</td></tr>
 <tr>
 <td>
 UpDownAlign</td><td>
-Gets / sets the alignment of the up and down buttons. The default value is set to 'Right'.It includes the below given options.{{ _Left and_ | markdownify }}{{ _Right._ | markdownify }}</td></tr>
+Gets / sets the alignment of the up and down buttons. The default value is set to 'Right'.It includes the below given options.{{ '_Left and_' | markdownify }}{{ '_Right._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left
+
+{% endhighlight %}
 
 Border Settings
 
@@ -30447,7 +30470,7 @@ This section discusses the Border Settings of the NumericUpDownExt control.
 
 Color and Styles can be applied to the border of the NumericUpDownExt control as discussed below.
 
-_Table_ _355__: Property Table_
+_Table_ _355_: Property Table
 
 <table>
 <tr>
@@ -30457,7 +30480,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -30465,15 +30488,15 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All._ | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30485,9 +30508,9 @@ this.numericUpDownExt1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 this.numericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30499,15 +30522,15 @@ Me.numericUpDownExt1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 Me.numericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features1.png](Editors-Package_images/Editors-Package_img540.png)
-{:.image }
+
 
 
 We can display a themed border around the NumericUpDownExt control. This can be done using the property given below.
 
-_Table_ _356__: Property Table_
+_Table_ _356_: Property Table
 
 <table>
 <tr>
@@ -30519,11 +30542,10 @@ Description</td></tr>
 ThemedBorder</td><td>
 Specifies whether or not you want themed border around the control when themes are enabled.The ThemesEnabled property must be set to 'True'.</td></tr>
 </table>
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img541.png)
-{:.image }
- _Note: Refer_ [Themes and Visual Styles](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/VisualStyles5.html) _topic to know about the ThemesEnabled property._
 
-[C#]
+> Note: Refer_ [Themes and Visual Styles](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/VisualStyles5.html) _topic to know about the ThemesEnabled property.
+
+{% highlight c# %}
 
 
 
@@ -30531,9 +30553,9 @@ this.numericUpDownExt1.ThemedBorder = true;
 
 this.numericUpDownExt1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30541,10 +30563,10 @@ Me.numericUpDownExt1.ThemedBorder = True
 
 Me.numericUpDownExt1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features2.png](Editors-Package_images/Editors-Package_img542.png)
-{:.image }
+
 
 
 A sample which demonstrates the Border Settings of NumericUpDownExt control is available in the below sample installation path.
@@ -30557,7 +30579,7 @@ The layout settings of the NumericUpDownExt control are discussed in this sectio
 
 The size of the NumericUpDownExt control can be set according to the needs of the user using the properties discussed below.
 
-_Table_ _357__: Property Table_
+_Table_ _357_: Property Table
 
 <table>
 <tr>
@@ -30575,7 +30597,7 @@ Gets / sets the minimum size for the control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30583,9 +30605,9 @@ this.numericUpDownExt1.MaximumSize = new System.Drawing.Size(60, 50);
 
 this.numericUpDownExt1.MinimumSize = new System.Drawing.Size(60, 50);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30593,10 +30615,10 @@ Me.numericUpDownExt1.MaximumSize = New System.Drawing.Size(60, 50)
 
 Me.numericUpDownExt1.MinimumSize = New System.Drawing.Size(60, 50)
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features10.png](Editors-Package_images/Editors-Package_img543.png)
-{:.image }
+
 
 
 Key Support
@@ -30607,7 +30629,7 @@ For example if you want to enter 22000, you just need to enter 22 and then press
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30641,9 +30663,9 @@ integerTextBox.Value = v;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30673,6 +30695,8 @@ numericUpDownExt1.Value = v
 
 End Sub
 
+{% endhighlight %}
+
 Themes and Visual Styles
 
 This section discusses themes and visual styles settings of the NumericUpDownExt control.
@@ -30681,7 +30705,7 @@ Themes
 
 Themes define the look and feel of the NumericUpDownExt control. They can be set using the property given below.
 
-_Table_ _358__: Property Table_
+_Table_ _358_: Property Table
 
 <table>
 <tr>
@@ -30695,31 +30719,27 @@ Specifies whether XP Themes (visual styles) should be used for this control when
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.ThemesEnabled = true;                          
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features9.png](Editors-Package_images/Editors-Package_img544.png)
-{:.image }
+
 
 
 Visual Styles
 
 Visual Styles enhance the appearance of the NumericUpDownExt control and can be set using the property given below.
 
-_Table_ _359__: Property Table_
+_Table_ _359_: Property Table
 
 <table>
 <tr>
@@ -30737,41 +30757,35 @@ Gets / sets Office2007Theme for Office2007 style.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 this.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue;    
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features7.png](Editors-Package_images/Editors-Package_img545.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features6.png](Editors-Package_images/Editors-Package_img546.png)
-{:.image }
+
 
 
 When the ColorScheme property is set to 'Managed', the NumericUpDownExt control can be displayed using custom colors supported by the control.
 
 This can be done programmatically as follows.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
@@ -30779,11 +30793,9 @@ this.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Ma
 
 Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
@@ -30791,25 +30803,23 @@ Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Mana
 
 Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features8.png](Editors-Package_images/Editors-Package_img547.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img548.png)
-{:.image }
- _Note: The ThemesEnabled property should be set to 'True' for the above settings to take effect._
+
+> Note: The ThemesEnabled property should be set to 'True' for the above settings to take effect.
 
 A sample which demonstrates the ThemesEnabled property and Office 2007 Visual Styles of TextBoxExt control is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### NumericUpDownExt Events
+##### NumericUpDownExt Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _360__: Events Table_
+_Table_ _360_: Events Table
 
 <table>
 <tr>
@@ -30851,7 +30861,7 @@ This event occurs when the Border3DStyle property is changed. The Border3DStyl
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30863,9 +30873,9 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30875,13 +30885,15 @@ Console.WriteLine(" Border3DStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderColorChanged
 
 This event occurs when the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30893,9 +30905,9 @@ Console.WriteLine(" BorderColorChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30905,13 +30917,15 @@ Console.WriteLine(" BorderColorChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderSidesChanged
 
 This event occurs when the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30923,9 +30937,9 @@ Console.WriteLine(" BorderSidesChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30935,13 +30949,15 @@ Console.WriteLine(" BorderSidesChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderStyleChanged
 
 This event occurs when the BorderStyle property is changed. The BorderStyle property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30953,9 +30969,9 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30965,13 +30981,15 @@ Console.WriteLine(" BorderStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ReadOnlyChanged
 
 This event occurs when the ReadOnly property is changed. The ReadOnly property gets / sets a value indicating whether the text can be changed by the use of the up or down buttons only.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30983,9 +31001,9 @@ Console.WriteLine(" ReadOnlyChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30995,13 +31013,15 @@ Console.WriteLine(" ReadOnlyChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ThemeChanged
 
 This event occurs when the ThemesEnabled property is changed. The ThemesEnabled property indicates whether XP Themes (visual styles) should be used for this control when available.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31013,9 +31033,9 @@ Console.WriteLine(" ThemeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31025,13 +31045,15 @@ Console.WriteLine(" ThemeChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ValueChanged
 
 This event occurs when the Value property is changed. The Value property gets / sets the value assigned to the spin box (also known as an up-down control).
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31043,9 +31065,9 @@ Console.WriteLine(" ValueChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31055,15 +31077,17 @@ Console.WriteLine(" ValueChanged event is raised ")
 
 End Sub
 
-##### TextBoxExt
+{% endhighlight %}
+
+#### TextBoxExt
 
 TextBoxExt is a textbox derived control that can display different border colors and styles.
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Intro.png](Editors-Package_images/Editors-Package_img549.png)
-{:.image }
 
 
-###### Features
+
+##### Features
 
 TextBoxExt is an advanced TextBox control and has following features.
 
@@ -31104,7 +31128,8 @@ Key Features
 * Provides different border colors and styles.
 * Provides options to show text overflow indicators and overflow indicator tooltips.
 * Supports themes.
-###### Creating TextBoxExt
+
+##### Creating TextBoxExt
 
 
 This section will give a step-by-step procedure to design a TextBoxExt control through designer and also through programmatical approach.
@@ -31114,79 +31139,83 @@ Through Designer
 224. Create or open a Windows Forms project.
 225. Click on the TextBoxExt Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
 
-![](Editors-Package_images/Editors-Package_img550.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img550.png)
+
 
 
 226. Run the application. The TextBoxExt displayed will allow you to enter text.
 
-![](Editors-Package_images/Editors-Package_img551.png)
-{:.image }
+     ![](Editors-Package_images/Editors-Package_img551.png)
+
 
 
 Through Programmatical Approach
 
 227. Declare an instance of the TextBoxExt control.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
 
+     ~~~
+     {:.prettyprint }
 
+     ~~~ vbnet
 
-[VB.NET]
+		Private textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
 
-
-
-Private textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-
-
+     ~~~
+     {:.prettyprint }
 
 228. Initialize the control.
 
-[C#]
+     ~~~ cs
 
 
 
-this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+		this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+     ~~~
+     {:.prettyprint }
+
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
 
-
-
-Me.textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-
-
+     ~~~
+     {:.prettyprint }
 
 229. Add the control to the form.
 
-[C#]
+     ~~~ cs
 
 
 
-this.Controls.Add(this.textBoxExt1);
+		this.Controls.Add(this.textBoxExt1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.Controls.Add(Me.textBoxExt1)
 
-
-
-Me.Controls.Add(Me.textBoxExt1)
-
-
+     ~~~
+     {:.prettyprint }
 
 230. Run the application. You will be able to see the TextBoxExt control in your form. After creating the TextBoxExt you can use it just like using the Windows Forms' TextBox control.
 
 ![](Editors-Package_images/Editors-Package_img552.png)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 Text Settings
 
@@ -31194,7 +31223,7 @@ This section discusses the text settings of the TextBoxExt control.
 
 The text associated with the TextBoxExt control can be set and customized using the below given settings.
 
-_Table_ _361__: Property Table_
+_Table_ _361_: Property Table
 
 <table>
 <tr>
@@ -31232,7 +31261,7 @@ Specifies if the text should be drawn active, even when disabled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31248,9 +31277,9 @@ this.textBoxExt1.HideSelection = true;
 
 this.textBoxExt1.DrawActiveWhenDisabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31266,27 +31295,27 @@ Me.textBoxExt1.HideSelection = True
 
 Me.textBoxExt1.DrawActiveWhenDisabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features4.png](Editors-Package_images/Editors-Package_img553.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features12.png](Editors-Package_images/Editors-Package_img554.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features11.png](Editors-Package_images/Editors-Package_img555.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_styles1.png](Editors-Package_images/Editors-Package_img556.png)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _362__: Methods Table_
+_Table_ _362_: Methods Table_
 
 <table>
 <tr>
@@ -31334,7 +31363,7 @@ Multiline Text Settings
 
 The text settings of the TextBoxExt control can be customized to display multiline text using the below given properties.
 
-_Table_ _363__: Property Table_
+_Table_ _363_: Property Table
 
 <table>
 <tr>
@@ -31356,11 +31385,11 @@ Indicates if lines are automatically word-wrapped for multiline edit controls.</
 <tr>
 <td>
 ScrollBars</td><td>
-Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ _None,_ | markdownify }}{{ _Horizontal,_ | markdownify }}{{ _Vertical and_ | markdownify }}{{ _Both._ | markdownify }}</td></tr>
+Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31370,9 +31399,9 @@ this.textBoxExt1.WordWrap = true;
 
 this.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31382,29 +31411,27 @@ Me.textBoxExt1.WordWrap = True
 
 Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features6.png](Editors-Package_images/Editors-Package_img557.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features7.png](Editors-Package_images/Editors-Package_img558.png)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features8.png](Editors-Package_images/Editors-Package_img559.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img560.png)
-{:.image }
- _Note: The ScrollToCaret() method can be used to scroll the contents of the control to the current caret position._
+
+> Note: The ScrollToCaret() method can be used to scroll the contents of the control to the current caret position.
 
 OverflowIndicatorToolTipText
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
 
-_Table_ _364__: Property Table_
+_Table_ _364_: Property Table
 
 <table>
 <tr>
@@ -31426,7 +31453,7 @@ Indicates whether to show the overflow indicator tooltip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31436,9 +31463,9 @@ this.textBoxExt1.ShowOverflowIndicatorToolTip = true;
 
 this.textBoxExt1.OverflowIndicatorToolTipText = "Overflow";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31448,15 +31475,13 @@ Me.textBoxExt1.ShowOverflowIndicatorToolTip = True
 
 Me.textBoxExt1.OverflowIndicatorToolTipText = "Overflow"
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features2.png](Editors-Package_images/Editors-Package_img561.png)
-{:.image }
 
 
-> ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DataIcon.PNG](Editors-Package_images/Editors-Package_img562.png)
-{:.image }
- _Note: If there is no value set for the OverflowIndicatorToolTipText property, then the value set for the Text property of the TextBoxExt will be displayed as the tooltip._
+
+> Note: If there is no value set for the OverflowIndicatorToolTipText property, then the value set for the Text property of the TextBoxExt will be displayed as the tooltip.
 
 A sample which demonstrates the Text, Text Align, Character Casing, RightToLeft, Multiline, Word Wrap, ScrollBars and Overflow Indicator ToolTip features of TextBoxExt control is available in the below sample installation path.
 
@@ -31472,7 +31497,7 @@ Background Color
 
 The background color of the control can be set using the property given below.
 
-_Table_ _365__: Property Table_
+_Table_ _365_: Property Table
 
 <table>
 <tr>
@@ -31486,24 +31511,20 @@ Specifies the background color of the component.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBoxExt1.BackColor = System.Drawing.Color.Moccasin;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.textBoxExt1.BackColor = System.Drawing.Color.Moccasin
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features9.png](Editors-Package_images/Editors-Package_img563.png)
-{:.image }
+
 
 
 Foreground Settings
@@ -31514,7 +31535,7 @@ Foreground Color
 
 The foreground color of the control can be set using the property given below.
 
-_Table_ _366__: Property Table_
+_Table_ _366_: Property Table
 
 <table>
 <tr>
@@ -31528,24 +31549,20 @@ Gets / sets the foreground color of the spin box (also known as an up-down contr
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features10.png](Editors-Package_images/Editors-Package_img564.png)
-{:.image }
+
 
 
 Behavior Settings
@@ -31556,7 +31573,7 @@ MaxLength
 
 The maximum length of the text can be set using the property given below.
 
-_Table_ _367__: Property Table_
+_Table_ _367_: Property Table
 
 <table>
 <tr>
@@ -31570,25 +31587,23 @@ Specifies the maximum number of characters that can be entered into the edit con
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBoxExt1.MaxLength = 32800;               
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.textBoxExt1.MaxLength = 32800
+
+{% endhighlight %}
 
 ReadOnly
 
 The ReadOnly mode can be enabled for the TextBoxExt control using the below given property.
 
-_Table_ _368__: Property Table_
+_Table_ _368_: Property Table
 
 <table>
 <tr>
@@ -31602,21 +31617,17 @@ Specifies whether the text in the edit control can be changed or not.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBoxExt1.ReadOnly = true;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.textBoxExt1.ReadOnly = True
 
-
+{% endhighlight %}
 
 A sample which demonstrates the ReadOnly mode of TextBoxExt control is available in the below sample installation path.
 
@@ -31628,7 +31639,7 @@ The border settings of the TextBoxExt control are discussed in this section.
 
 Color and Styles can be applied to the border of the TextBoxExt control as discussed below.
 
-_Table_ _369__: Property Table_
+_Table_ _369_: Property Table
 
 <table>
 <tr>
@@ -31638,7 +31649,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -31646,15 +31657,15 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All._ | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31666,9 +31677,9 @@ this.textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 this.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31680,10 +31691,10 @@ Me.textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 Me.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features1.png](Editors-Package_images/Editors-Package_img565.png)
-{:.image }
+
 
 
 A sample which demonstrates the Border Settings of TextBoxExt control is available in the below sample installation path.
@@ -31696,7 +31707,7 @@ The layout settings of the TextBoxExt control are discussed in this section.
 
 The size of the TextBoxExt control can be set according to the needs of the user using the properties discussed below.
 
-_Table_ _370__: Property Table_
+_Table_ _370_: Property Table
 
 <table>
 <tr>
@@ -31714,35 +31725,32 @@ Gets / sets the minimum size for the control.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBoxExt1.MaximumSize = new System.Drawing.Size(150, 20);
 
 this.textBoxExt1.MinimumSize = new System.Drawing.Size(150, 20);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Me.textBoxExt1.MaximumSize = New System.Drawing.Size(150, 20)
 
 Me.textBoxExt1.MinimumSize = New System.Drawing.Size(150, 20)
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features3.png](Editors-Package_images/Editors-Package_img566.png)
-{:.image }
+
 
 
 Applying Themes
 
 Themes defines the look and feel of the control. This can be enabled using the below given property.
 
-_Table_ _371__: Property Table_
+_Table_ _371_: Property Table
 
 <table>
 <tr>
@@ -31756,31 +31764,27 @@ Specifies whether or not to use XP themes, when BorderStyle is set to 'Fixed3D'.
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.textBoxExt1.ThemesEnabled = true;                          
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.textBoxExt1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_themesNew.png](Editors-Package_images/Editors-Package_img567.png)
-{:.image }
 
 
-###### TextBoxExt Events 
+
+##### TextBoxExt Events 
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _372__: Events Table_
+_Table_ _372_: Events Table
 
 <table>
 <tr>
@@ -31842,8 +31846,7 @@ This event occurs when the Border3DStyle property is changed. The Border3DStyl
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
-
+{% highlight c# %}
 
 
 private void textBoxExt1_Border3DStyleChanged(object sender, EventArgs e)
@@ -31854,9 +31857,9 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31866,13 +31869,15 @@ Console.WriteLine(" Border3DStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderColorChanged
 
 This event occurs when the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31884,9 +31889,9 @@ Console.WriteLine(" BorderColorChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31896,13 +31901,15 @@ Console.WriteLine(" BorderColorChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderSidesChanged
 
 This event occurs when the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31914,9 +31921,9 @@ Console.WriteLine(" BorderSidesChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31926,13 +31933,15 @@ Console.WriteLine(" BorderSidesChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 BorderStyleChanged
 
 This event occurs when the BorderStyle property is changed. The BorderStyle property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31944,9 +31953,9 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31956,13 +31965,15 @@ Console.WriteLine(" BorderStyleChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 CharacterCasingChanged
 
 This event occurs when the CharacterCasing property is changed. The CharacterCasing property gets / sets the case of the characters as they are typed.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31974,9 +31985,9 @@ Console.WriteLine(" CharacterCasingChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -31986,13 +31997,15 @@ Console.WriteLine(" CharacterCasingChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 HideSelectionChanged
 
 This event occurs when the HideSelection property is changed. The HideSelection property indicates that the selection should be hidden when the edit control loses focus.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32004,9 +32017,9 @@ Console.WriteLine(" HideSelectionChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32016,13 +32029,15 @@ Console.WriteLine(" HideSelectionChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MaximumSizeChanged 
 
 This event occurs when the MaximumSize property is changed. The MaximumSize property gets / sets the maximum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32034,9 +32049,9 @@ Console.WriteLine(" MaximumSizeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32046,13 +32061,15 @@ Console.WriteLine(" MaximumSizeChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MinimumSizeChanged 
 
 This event occurs when the MinimumSize property is changed. The MinimumSize property gets / sets the minimum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32064,9 +32081,9 @@ Console.WriteLine(" MinimumSizeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32076,13 +32093,15 @@ Console.WriteLine(" MinimumSizeChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 MultilineChanged 
 
 This event occurs when the Multiline property is changed. The Multiline property controls whether the text of the edit control can span more than one line.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32094,9 +32113,9 @@ Console.WriteLine(" MultilineChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32106,13 +32125,15 @@ Console.WriteLine(" MultilineChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ReadOnlyChanged 
 
 This event occurs when the ReadOnly property is changed. The ReadOnly property controls whether the text in the edit control can be changed or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32124,9 +32145,9 @@ Console.WriteLine(" ReadOnlyChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32136,13 +32157,15 @@ Console.WriteLine(" ReadOnlyChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 TextAlignChanged 
 
 This event occurs when the TextAlign property is changed. The TextAlign property indicates how the text should be aligned for edit controls.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32154,9 +32177,9 @@ Console.WriteLine(" TextAlignChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32166,13 +32189,15 @@ Console.WriteLine(" TextAlignChanged event is raised ")
 
 End Sub
 
+{% endhighlight %}
+
 ThemesEnabledChanged
 
 This event occurs when the ThemesEnabled property is changed. The ThemesEnabled property specifies whether or not to use XP Themes when the BorderStyle property is set to 'Fixed3D'.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32184,9 +32209,9 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32196,13 +32221,15 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ")
 
 End Sub
 
-##### Revamping of Editors Controls
+{% endhighlight %}
+
+#### Revamping of Editors Controls
 
 DoubleTextBox, IntegerTextBox, PercentTextBox, and CurrencyTextBox has been revamped, details of the revamping and the Changes in the behavior and properties are described here.
 
-###### Properties Deprecated
+##### Properties Deprecated
 
-_Table_ _373__: Property Table_
+_Table_ _373_: Property Table
 
 <table>
 <tr>
@@ -32236,9 +32263,10 @@ EnforceMinMaxDuringValidating</td><td>
 OnValidationFailed.KeepFocus</td><td>
 No need for a separate propertyas MinMaxValidation already existsThe same behavior can be achieved with the alternative.</td></tr>
 </table>
-###### Newly Added API’S
 
-_Table_ _374__: Property Table_
+##### Newly Added API’S
+
+_Table_ _374_: Property Table
 
 <table>
 <tr>
@@ -32267,9 +32295,10 @@ AllowNull must be true to set this string . If it is false, zero or MinValue,  w
 Specifies the action to be performed while validation fails.</td><td>
 SetNullString,SeMinOrMax,KeepFocus.refer Notes column</td></tr>
 </table>
-###### Behavioral Changes
 
-_Table_ _375__: Property Table_
+##### Behavioral Changes
+
+_Table_ _375_: Property Table
 
 <table>
 <tr>
@@ -32303,14 +32332,14 @@ NullString</td><td>
 Cannot be a Numeric Value that could break the MinValue or MaxValue constraints.</td><td>
 Ex: MinValue 10, MaxValue 100 and NullString as “111” will break the Min Max Values.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img568.png)
-{:.image }
-_Note:_
 
-* With MinMaxValidation.OnKeyPress and MinValue as 10 set,
-* Each and every key press will be validated to meet the constraints, so this will not allow you to enter values less than 10, even if you try to enter 11 you cannot input value as every keypress is validated. This behavior is useful when MinValue is less than 10. 
-* With MinMaxValidation.OnLostFocus, user inputs will be validated only when the control loses its focus. Hence user can input any value.  OnValidationFailed will give you access to what action [SetNullString, SetMinorMax, KeepFocus] has to be done when Validation fails for the input.
-* With OnValidationFailed.SetNullString set and AllowNull is False,the control will keep its focus. 
+> Note:
+>
+> * With MinMaxValidation.OnKeyPress and MinValue as 10 set,
+> * Each and every key press will be validated to meet the constraints, so this will not allow you to enter values less than 10, even if you try to enter 11 you cannot input value as every keypress is validated. This behavior is useful when MinValue is less than 10. 
+> * With MinMaxValidation.OnLostFocus, user inputs will be validated only when the control loses its focus. Hence user can input any value.  OnValidationFailed will give you access to what action [SetNullString, SetMinorMax, KeepFocus] has to be done when Validation fails for the input.
+> * With OnValidationFailed.SetNullString set and AllowNull is False,the control will keep its focus. 
+
 ### Font Controls
 
 
@@ -32321,12 +32350,12 @@ The Font controls of Essential Tools are listed below.
 The FontListBox is a list box derived control that are automatically populated with the fonts installed on the user's system. It provide an easy way to fill a list box with system fonts. 
 
 ![](Editors-Package_images/Editors-Package_img569.jpeg)
-{:.image }
+
 
 
 See Also
 
-###### Features
+##### Features
 
 FontListBox displays and allow selection of fonts. It has following features.
 
@@ -32342,73 +32371,75 @@ See Also
 
 Concepts and Features
 
-###### Creating FontListBox
+##### Creating FontListBox
 
 To use a FontListBox control in your application, all you need to do is drag and drop the FontListBox control from the toolbox onto your form.
 
 ![](Editors-Package_images/Editors-Package_img570.jpeg)
-{:.image }
+
 
 
 It can be created programmatically as follows.
 
 231. Include the required namespace.
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 232. Create an instances of FontListBox control. Specify its size and finally add that instance to that Form.
 
-[C#]
+     ~~~ cd
 
 
 
-private Syncfusion.Windows.Forms.Tools.FontListBox fontListBox1;
+		private Syncfusion.Windows.Forms.Tools.FontListBox fontListBox1;
 
-this.fontListBox1=new Syncfusion.Windows.Forms.Tools.FontListBox();
+		this.fontListBox1=new Syncfusion.Windows.Forms.Tools.FontListBox();
 
-this.fontListBox1.Size = new System.Drawing.Size(152, 94);
+		this.fontListBox1.Size = new System.Drawing.Size(152, 94);
 
+		this.Controls.Add(this.fontListBox1);
 
+     ~~~
+     {:.prettyprint }
 
-this.Controls.Add(this.fontListBox1);
-
-
-
-[VB.NET]
-
-
-
-Private fontListBox1 As Syncfusion.Windows.Forms.Tools.FontListBox
-
-Me.fontListBox1 = New Syncfusion.Windows.Forms.Tools.FontListBox()
-
-Me.fontListBox1.Size = New System.Drawing.Size(152, 21)
+     ~~~ vbnet
 
 
 
-Me.Controls.Add(Me.fontListBox1)
+		Private fontListBox1 As Syncfusion.Windows.Forms.Tools.FontListBox
+
+		Me.fontListBox1 = New Syncfusion.Windows.Forms.Tools.FontListBox()
+
+		Me.fontListBox1.Size = New System.Drawing.Size(152, 21)
 
 
+
+		Me.Controls.Add(Me.fontListBox1)
+
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img571.jpeg)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 This section will discuss the concepts and features of the FontListBox control in the below topics.
 
@@ -32422,24 +32453,20 @@ The options are,
 * MultiSimple, and 
 * MultiExtended.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.fontListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.fontListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img572.jpeg)
-{:.image }
+
 
 
 ScrollBar Settings
@@ -32450,7 +32477,7 @@ Horizontal Scrollbar
 
 Horizontal scrollbar can be displayed if the items are beyond the right edge of the FontListBox. The below properties lets you do that.
 
-_Table_ _376__: Property Table_
+_Table_ _376_: Property Table
 
 <table>
 <tr>
@@ -32468,7 +32495,7 @@ Specifies the width of the control, when HorizontalScrollBar property is set to 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32476,9 +32503,9 @@ this.fontListBox1.HorizontalExtent = 150;
 
 this.fontListBox1.HorizontalScrollbar = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32486,10 +32513,10 @@ Me.fontListBox1.HorizontalExtent = 150
 
 Me.fontListBox1.HorizontalScrollbar = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img573.jpeg)
-{:.image }
+
 
 
 See Also
@@ -32502,91 +32529,82 @@ Height of the FontList Items
 
 We can set the height of the item inside the listbox through ItemHeight property. Default value is 15. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.fontListBox1.ItemHeight = 20;
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.fontListBox1.ItemHeight = 20
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img574.jpeg)
-{:.image }
+
 
 
 Sorting the Items
 
 Sorting of the items can be enabled using Sorted property. By default it is false.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.fontListBox1.Sorted = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.fontListBox1.Sorted = True
+
+{% endhighlight %}
 
 AutoCompleting the Items
 
 FontListBox control has the ability to auto complete the items as we type in the listbox. This feature is enabled using UseAutoComplete property to true.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.fontListBox1.UseAutoComplete = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.fontListBox1.UseAutoComplete = True
 
-###### Frequently Asked Questions
+{% endhighlight %}
+
+##### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-###### How to display the scrollbars always, irrespective of the number of items
+##### How to display the scrollbars always, irrespective of the number of items
 
 The scrollbar can be always made visible, irrespective of the number of items, present in it, by setting ScrollAlwaysVisible property to true. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.fontListBox1.ScrollAlwaysVisible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.fontListBox1.ScrollAlwaysVisible = True
 
-###### Events
+{% endhighlight %}
+
+##### Events
 
 SelectedIndexChanged event - This event is raised when the ListBox.SelectedIndex property is changed. 
 
 The below code snippet, lets you set the selected font style, for a label, on selecting through a FontListBox, using SelectedIndexChanged event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32598,9 +32616,9 @@ private void fontListBox1_SelectedIndexChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32610,17 +32628,19 @@ Private Sub fontListBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As
 
 End Sub
 
-##### FontComboBox
+{% endhighlight %}
+
+#### FontComboBox
 
 The FontComboBox is a combo box-derived controls that are automatically populated with the fonts installed on the user's system. It provide an easy way to fill a combo box with system fonts.
 
 ![](Editors-Package_images/Editors-Package_img575.jpeg)
-{:.image }
+
 
 
 See Also
 
-###### Features
+##### Features
 
 FontComboBox allows selection of fonts. It has following features.
 
@@ -32637,77 +32657,77 @@ See Also
 
 Concepts and Features
 
-###### Creating FontComboBox
+##### Creating FontComboBox
 
 To use a FontComboBox control in your application, all you need to do is drag and drop the FontComboBox control from the controls toolbox onto your form. 
 
 ![](Editors-Package_images/Editors-Package_img576.jpeg)
-{:.image }
+
 
 
 It can be created programmatically as follows.
 
 233. Include the required namespace. 
 
-[C#]
+     ~~~ cs
 
 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-
+     ~~~
+     {:.prettyprint }
 
 234. Create an instance of FontComboBox control. Specify its size and finally add that instance to that Form.
 
-[C#]
+     ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.FontComboBox fontComboBox1;
+		private Syncfusion.Windows.Forms.Tools.FontComboBox fontComboBox1;
 
 
 
-this.fontComboBox1=new Syncfusion.Windows.Forms.Tools.FontComboBox();
+		this.fontComboBox1=new Syncfusion.Windows.Forms.Tools.FontComboBox();
 
-this.fontComboBox1.Size = new System.Drawing.Size(152, 21);
-
-
-
-this.Controls.Add(this.fontComboBox1);
+		this.fontComboBox1.Size = new System.Drawing.Size(152, 21);
 
 
 
-[VB.NET]
+		this.Controls.Add(this.fontComboBox1);
+
+     ~~~
+     {:.prettyprint }
+
+     ~~~ vbnet
 
 
 
-Private fontComboBox1 As Syncfusion.Windows.Forms.Tools.FontComboBox
+		Private fontComboBox1 As Syncfusion.Windows.Forms.Tools.FontComboBox
 
+		Me.fontComboBox1 = New Syncfusion.Windows.Forms.Tools.FontComboBox()
 
+		Me.fontComboBox1.Size = New System.Drawing.Size(152, 21)
 
-Me.fontComboBox1 = New Syncfusion.Windows.Forms.Tools.FontComboBox()
+		Me.Controls.Add(Me.fontComboBox1)
 
-Me.fontComboBox1.Size = New System.Drawing.Size(152, 21)
-
-
-
-Me.Controls.Add(Me.fontComboBox1)
-
-
+     ~~~
+     {:.prettyprint }
 
 ![](Editors-Package_images/Editors-Package_img577.jpeg)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 The below topics are discussed in this section.
 
@@ -32715,7 +32735,7 @@ AutoComplete
 
 The AutoComplete feature of the FontComboBox can be turned on\off depending upon the type of behavior that is required for the FontComboBox control. The below properties enables the auto complete feature.
 
-_Table_ _377__: Property Table_
+_Table_ _377_: Property Table
 
 <table>
 <tr>
@@ -32737,7 +32757,7 @@ Represents the collection of string for the custom source, when AutoCompleteSour
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32751,9 +32771,9 @@ this.fontComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Sugg
 
 this.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32767,10 +32787,10 @@ Me.fontComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Sugges
 
 Me.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img578.jpeg)
-{:.image }
+
 
 
 See Also
@@ -32781,7 +32801,7 @@ DropDown Settings
 
 FontComboBox has properties to control the appearance and behavior of the dropdown.
 
-_Table_ _378__: Property Table_
+_Table_ _378_: Property Table
 
 <table>
 <tr>
@@ -32791,7 +32811,7 @@ Description</td></tr>
 <tr>
 <td>
 DropDownStyle</td><td>
-Specifies the style of the dropdown. The options are,{{ _DropDownList_ | markdownify }} - The user cannot directly edit the text portion. The user must click the arrow button to display the list portion,{{ _DropDown (default)_ | markdownify }} - The user can directly edit the text portion. The user must click the arrow button to display the list portion,{{ _Simple_ | markdownify }} - The text portion is editable. The list portion is always visible.</td></tr>
+Specifies the style of the dropdown. The options are,{{ '_DropDownList_' | markdownify }} - The user cannot directly edit the text portion. The user must click the arrow button to display the list portion,{{ '_DropDown (default)_' | markdownify }} - The user can directly edit the text portion. The user must click the arrow button to display the list portion,{{ '_Simple_' | markdownify }} - The text portion is editable. The list portion is always visible.</td></tr>
 <tr>
 <td>
 DropDownHeight</td><td>
@@ -32807,7 +32827,7 @@ Indicates the maximum number of entries to display in the drop down list.</td></
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32819,9 +32839,9 @@ this.fontComboBox2.DropDownWidth = 154;
 
 this.fontComboBox2.MaxDropDownItems = 10;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32833,11 +32853,13 @@ Me.fontComboBox2.DropDownWidth = 154
 
 Me.fontComboBox2.MaxDropDownItems = 10
 
+{% endhighlight %}
+
 Customizing DropDown Items
 
 The height of the FontComboBox items is specified in ItemHeight property and sorting of the items is enabled through Sorted property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32845,9 +32867,9 @@ this.fontComboBox2.ItemHeight = 17;
 
 this.fontComboBox2.Sorted = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32855,11 +32877,13 @@ Me.fontComboBox2.ItemHeight = 17
 
 Me.fontComboBox2.Sorted = True
 
+{% endhighlight %}
+
 Visual Styles
 
 The Office2007 visual style for the FontComboBox control can be enabled through below properties.
 
-_Table_ _379__: Property Table_
+_Table_ _379_: Property Table
 
 <table>
 <tr>
@@ -32877,7 +32901,7 @@ Specifies the office color schemes. The color schemes are,Blue,Silver and Black.
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32885,9 +32909,9 @@ this.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxSt
 
 this.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32895,17 +32919,17 @@ Me.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyl
 
 Me.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img579.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the FontComboBox control by setting Office2007ColorTheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32913,9 +32937,9 @@ this.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007The
 
 Office2007Colors.ApplyManagedColors(this, Color.Orchid);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32923,13 +32947,13 @@ Me.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme
 
 Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img580.jpeg)
-{:.image }
 
 
-###### Events
+
+##### Events
 
 This section comprises the below events:
 
@@ -32939,7 +32963,7 @@ SelectedIndexChanged event - This event is raised when the ComboBox.SelectedInde
 
 The below code snippet, lets you set the selected font style, for a label, on selecting through a FontComboBox, using SelectedIndexChanged event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32951,9 +32975,9 @@ private void fontComboBox2_SelectedIndexChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32963,13 +32987,15 @@ Private Sub fontComboBox2_SelectedIndexChanged(ByVal sender As Object, ByVal e A
 
 End Sub
 
+{% endhighlight %}
+
 FontSelected Event
 
 To add FontSelected event, derive the classes as shown below.
 
 235. Add an event in the derived class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -32977,9 +33003,9 @@ To add FontSelected event, derive the classes as shown below.
 
 public event System.EventHandler FontSelected;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -32987,11 +33013,11 @@ public event System.EventHandler FontSelected;
 
 Public Event FontSelected As System.EventHandler
 
-
+{% endhighlight %}
 
 236. Override the OnSelectedIndexChanged method and fire the event there.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33007,9 +33033,9 @@ base.OnSelectedIndexChanged (e);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33025,6 +33051,8 @@ MyBase.OnSelectedIndexChanged(e)
 
 End Sub
 
+{% endhighlight %}
+
 ### Label Controls
 
 The following are the advanced versions of Windows Label controls.
@@ -33034,7 +33062,7 @@ The following are the advanced versions of Windows Label controls.
 The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel will be automatically repositioned as the labeled control's position changes.
 
 ![](Editors-Package_images/Editors-Package_img581.jpeg)
-{:.image }
+
 
 
 The FlowLayout layout manager will always treat the AutoLabel-labeled control pair as a unit. You can use AutoLabels and FlowLayouts together to implement complex and powerful form layouts.
@@ -33043,7 +33071,7 @@ See Also
 
 Labeling a Control
 
-###### Features
+##### Features
 
 AutoLabel helps to label other controls. It has the following features.
 
@@ -33069,7 +33097,7 @@ See Also
 
 Concepts and Features
 
-###### Creating AutoLabel
+##### Creating AutoLabel
 
 The AutoLabel control can be created in the following ways.
 
@@ -33081,14 +33109,14 @@ The following steps illustrate how to create an AutoLabel control through design
 * Add an AutoLabel Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
 ![](Editors-Package_images/Editors-Package_img582.jpeg)
-{:.image }
+
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
 ![](Editors-Package_images/Editors-Package_img583.jpeg)
-{:.image }
+
 
 
 See Also
@@ -33103,63 +33131,50 @@ The following steps illustrate how to create an AutoLabel control programmatical
 * Add the required assembly references.
 * Include the required namespace.
 
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 * Declare the AutoLabel control.
 
-[C#]
-
-
+{% highlight c# %}
 
 private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private autoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
 
-
+{% endhighlight %}
 
 * Initialize the control.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
 
-
+{% endhighlight %}
 
 * Set the properties for the AutoLabel control and add it to your form.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoLabel1.Text = "autoLabel1";
 
@@ -33177,9 +33192,9 @@ this.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
 this.Controls.Add(this.autoLabel1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33199,15 +33214,13 @@ Me.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
 Me.Controls.Add(Me.autoLabel1)
 
-
+{% endhighlight %}
 
 * Run the application.
 
 ![](Editors-Package_images/Editors-Package_img584.jpeg)
-{:.image }
 
-
-###### Concepts and Features
+##### Concepts and Features
 
 This section explains the concepts and features of the AutoLabelcontrol which will help to understand the control better. The following are the features discussed.
 
@@ -33222,10 +33235,10 @@ The following steps allows you to label a control.
 * Select the control to be labeled (TextBox) from the dropdown box as shown below.
 
 ![](Editors-Package_images/Editors-Package_img585.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -33239,9 +33252,9 @@ this.autoLabel1.LabeledControl = this.textBox1;
 
 this.Controls.Add(this.autoLabel1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33255,19 +33268,19 @@ Me.autoLabel1.LabeledControl = Me.textBox1
 
 Me.Controls.Add(Me.autoLabel1)
 
-
+{% endhighlight %}
 
 * Run the application.
 
 ![](Editors-Package_images/Editors-Package_img586.jpeg)
-{:.image }
+
 
 
 Spacing
 
 The space between the AutoLabel control and the labeled control can be customized using the properties given below. When using relative positioning, you can also specify the gap between the label and the control.
 
-_Table_ _380__: Property Table_
+_Table_ _380_: Property Table
 
 <table>
 <tr>
@@ -33289,7 +33302,7 @@ Specifies the horizontal and vertical gap to use when computing the relative pos
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33299,9 +33312,9 @@ this.autoLabel1.DY = 3;
 
 this.autoLabel1.Gap = 10;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33311,17 +33324,17 @@ Me.autoLabel1.DY = 3
 
 Me.autoLabel1.Gap = 10
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img587.jpeg)
-{:.image }
+
 
 
 Position
 
 The AutoLabel control can be positioned relative to the top, left, bottom or right of the labeled control. You can do this using the below given property.
 
-_Table_ _381__: Property Table_
+_Table_ _381_: Property Table
 
 <table>
 <tr>
@@ -33331,34 +33344,30 @@ Description</td></tr>
 <tr>
 <td>
 Position</td><td>
-Specifies the relative position of the control and the AutoLabel.The options included are as follows.{{ _Custom,_ | markdownify }}{{ _Left,_ | markdownify }}{{ _Left and_ | markdownify }}{{ _Top._ | markdownify }}</td></tr>
+Specifies the relative position of the control and the AutoLabel.The options included are as follows.{{ '_Custom,_' | markdownify }}{{ '_Left,_' | markdownify }}{{ '_Left and_' | markdownify }}{{ '_Top._' | markdownify }}</td></tr>
 </table>
 
 
 When the Position property is set to 'Custom', you can drag the label to the required position using the mouse.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Top;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Top
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img588.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img589.jpeg)
-{:.image }
+
 
 
 Size
@@ -33367,7 +33376,7 @@ This section illustrates the size settings of the AutoLabel control.
 
 The AutoLabel control can be resized using the below given property.
 
-_Table_ _382__: Property Table_
+_Table_ _382_: Property Table
 
 <table>
 <tr>
@@ -33379,29 +33388,26 @@ Description</td></tr>
 AutoSize</td><td>
 Enables automatic resizing based on font size.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img590.jpeg)
-{:.image }
- _Note: This is valid only for label controls that do not wrap text._
 
-[C#]
+> Note: This is valid only for label controls that do not wrap text.
 
-
+{% highlight c# %}
 
 this.autoLabel1.AutoSize = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.autoLabel1.AutoSize = True
+
+{% endhighlight %}
 
 ###### AutoLabel Event
 
 A detailed explanation about the PropertyChanged event is given in the following section.
 
-_Table_ _383__: Event Table_
+_Table_ _383_: Event Table
 
 <table>
 <tr>
@@ -33419,7 +33425,7 @@ This event is fired when the LabeledControl, Gap or Position properties of this 
 
 The event handler receives an argument of type SyncfusionPropertyChangedEventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33431,9 +33437,9 @@ Console.WriteLine(" PropertyChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33442,6 +33448,8 @@ Private Sub autoLabel1_PropertyChanged(ByVal sender As Object, ByVal e As Syncfu
 Console.WriteLine(" PropertyChanged event is raised")
 
 End Sub
+
+{% endhighlight %}
 
 #### GradientLabel
 
@@ -33452,18 +33460,16 @@ The GradientLabel class is fully compatible with the Windows Forms label that it
 The GradientLabel.Border3DStyle is another property that can specify the look and feel of the GradientLabel.
 
 ![](Editors-Package_images/Editors-Package_img591.jpeg)
-{:.image }
+
 
 
 The .NET framework provides a label control typically used to provide descriptive text for a control. The Essential Tools' GradientLabel control provides an easy way to display labels with attractive shades and backgrounds.
 
-> ![](Editors-Package_images/Editors-Package_img592.jpeg)
-{:.image }
- _Note: All the other functions of the GradientLabel is the same as the System.Windows.Forms.Label control in the Windows Forms library._ 
+> Note: All the other functions of the GradientLabel is the same as the System.Windows.Forms.Label control in the Windows Forms library._
 
 See Also
 
-###### Features
+##### Features
 
 GradientLabelis a Label control that supports extensive background customization and contains the following features.
 
@@ -33489,7 +33495,7 @@ See Also
 
 Concepts and Features
 
-###### Creating GradientLabel
+##### Creating GradientLabel
 
 The GradientLabel control can be created in the following ways.
 
@@ -33501,14 +33507,14 @@ To create a GradientLabel control through designer,
 * Add a GradientLabel Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
 ![](Editors-Package_images/Editors-Package_img593.jpeg)
-{:.image }
+
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
 ![](Editors-Package_images/Editors-Package_img594.jpeg)
-{:.image }
+
 
 
 See Also
@@ -33523,61 +33529,60 @@ GradientLabel can be created programmatically as detailed below.
 * Add the required assembly references.
 * Include the required namespace.
 
-[C#]
+{% highlight c# %}
 
 
 
 using Syncfusion.Windows.Forms.Tools;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 * Declare the GradientLabel control.
 
-[C#]
+{% highlight c# %}
 
 
 
 private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private gradientLabel1 As Syncfusion.Windows.Forms.Tools.GradientLabel
 
+{% endhighlight %}
 
 
 * Initialize the control.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.gradientLabel1 = New Syncfusion.Windows.Forms.Tools.GradientLabel()
 
-
+{% endhighlight %}
 
 * Set the properties for the GradientLabel control and add it to your form.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33593,9 +33598,9 @@ this.gradientLabel1.Text = "Syncfusion Control";
 
 this.Controls.Add(this.gradientLabel1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33611,15 +33616,15 @@ Me.gradientLabel1.Text = "Syncfusion Control"
 
 Me.Controls.Add(Me.gradientLabel1)
 
-
+{% endhighlight %}
 
 * Run the application.
 
 ![](Editors-Package_images/Editors-Package_img595.jpeg)
-{:.image }
 
 
-###### Concepts and Features
+
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the GradientLabel control.
 
@@ -33629,7 +33634,7 @@ This section discusses the border settings of the GradientLabel control.
 
 The border style and sides of the GradientLabel can be customized using the properties given below.
 
-_Table_ _384__: Property Table_
+_Table_ _384_: Property Table
 
 <table>
 <tr>
@@ -33639,11 +33644,11 @@ Description</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the sides of the GradientLabel that will have a border.  The options included are as follows.{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All._ | markdownify }}The default value is set to 'All'.</td></tr>
+Specifies the sides of the GradientLabel that will have a border.  The options included are as follows.{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}The default value is set to 'All'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies the 3D border style for the GradientLabel.The options included are as follows.{{ _Raised,_ | markdownify }}{{ _RaisedOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Specifies the 3D border style for the GradientLabel.The options included are as follows.{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -33657,7 +33662,7 @@ The GradientLabel replaces the default border style provided for Label classes w
 
 In 3D mode, the border styles can be Raised, Sunken, Flat and so on. Setting the value to 'Adjust' shows no border.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33667,9 +33672,9 @@ this.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Flat;
 
 this.gradientLabel1.BorderColor = Color.Red;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33679,10 +33684,10 @@ Me.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Flat
 
 Me.gradientLabel1.BorderColor = Color.Red
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img596.jpeg)
-{:.image }
+
 
 
 Foreground Settings
@@ -33693,7 +33698,7 @@ DrawActiveWhenDisabled
 
 Disabled text can be drawn active using the below given property.
 
-_Table_ _385__: Property Table_
+_Table_ _385_: Property Table
 
 <table>
 <tr>
@@ -33707,19 +33712,21 @@ Gets / sets a value indicating whether the text should be drawn active when the 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gradientLabel1.DrawActiveWhenDisabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.gradientLabel1.DrawActiveWhenDisabled = True
+
+{% endhighlight %}
 
 Background Settings
 
@@ -33727,7 +33734,7 @@ This section illustrates the background settings of the GradientLabel control.
 
 The GradientLabel control's background can be customized using the various options provided by the BackgroundColor property given below.
 
-_Table_ _386__: Property Table_
+_Table_ _386_: Property Table
 
 <table>
 <tr>
@@ -33741,7 +33748,7 @@ Gets / sets the background color and other styles.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style.{{ _Solid,_ | markdownify }}{{ _Pattern and_ | markdownify }}{{ _Gradient._ | markdownify }}The default value is set to 'Gradient'.</td></tr>
+Specifies the brush style.{{ '_Solid,_' | markdownify }}{{ '_Pattern and_' | markdownify }}{{ '_Gradient._' | markdownify }}The default value is set to 'Gradient'.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -33757,7 +33764,7 @@ Specifies the pattern style of the control.</td></tr>
 <tr>
 <td>
 GradientStyle</td><td>
-Specifies the gradient style of the background.{{ _ForwardDiagonal,_ | markdownify }}{{ _BackwardDiagonal,_ | markdownify }}{{ _Horizontal,_ | markdownify }}{{ _Vertical,_ | markdownify }}{{ _PathRectangle and_ | markdownify }}{{ _PathEllipse._ | markdownify }}The default value is set to 'Vertical'.</td></tr>
+Specifies the gradient style of the background.{{ '_ForwardDiagonal,_' | markdownify }}{{ '_BackwardDiagonal,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical,_' | markdownify }}{{ '_PathRectangle and_' | markdownify }}{{ '_PathEllipse._' | markdownify }}The default value is set to 'Vertical'.</td></tr>
 <tr>
 <td>
 GradientColors</td><td>
@@ -33765,24 +33772,20 @@ Specifies the gradient colors.The first entry in this list will be the same as t
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, new System.Drawing.Color[] {System.Drawing.Color.LavenderBlush, System.Drawing.Color.LemonChiffon, System.Drawing.Color.DarkKhaki, System.Drawing.Color.SandyBrown, System.Drawing.Color.LightSeaGreen});
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gradientLabel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, New System.Drawing.Color() {System.Drawing.Color.LavenderBlush, System.Drawing.Color.LemonChiffon, System.Drawing.Color.DarkKhaki, System.Drawing.Color.SandyBrown, System.Drawing.Color.LightSeaGreen})
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img597.jpeg)
-{:.image }
+
 
 
 Serialization
@@ -33791,7 +33794,7 @@ We can save and load the background color information in an XML file to persist 
 
 * First include the required namespaces.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33803,9 +33806,9 @@ using System.Xml.Serialization;
 
 using System.IO;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33817,11 +33820,11 @@ Imports System.Xml.Serialization
 
 Imports System.IO
 
-
+{% endhighlight %}
 
 * The below code snippet saves the information in a file called the colorinfo.xml.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33845,9 +33848,9 @@ writer.Close();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33869,29 +33872,29 @@ writer.Close()
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img598.jpeg)
-{:.image }
+
 
 
 ### Select Option Controls
 
 The advanced versions of Windows Forms CheckBox and Radio Button controls are discussed below.
 
-##### CheckBoxAdv
+#### CheckBoxAdv
 
 The CheckBoxAdv is an advanced CheckBox control that supports themes, gradient colors, border settings and shadow text with various alignment options for both the text and checkbox. It provides options to display images and gradient backgrounds.
 
 ![](Editors-Package_images/Editors-Package_img599.jpeg)
-{:.image }
+
 
 
 CheckBoxAdv control can replace the CheckBox control provided in the Windows Forms. This type of control can be defined as consisting of a graphic and associated text that the user clicks to select or deselect an option. A check mark in the checkbox graphic indicates that the option is selected. In the CheckBoxAdv control, the graphic can be changed to an image that indicates a selected or deselected state.
 
 See Also
 
-###### Features	
+##### Features	
 
 CheckBoxAdv is an advanced CheckBox control and contains the following features.
 
@@ -33947,7 +33950,7 @@ See Also
 
 Concepts and Features
 
-###### Creating CheckBoxAdv
+##### Creating CheckBoxAdv
 
 The CheckBoxAdv control can be created in the following ways.
 
@@ -33959,14 +33962,14 @@ The following steps illustrate how to create a CheckBoxAdv control through desig
 * Add a CheckBoxAdv Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
 ![](Editors-Package_images/Editors-Package_img600.jpeg)
-{:.image }
+
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
 ![](Editors-Package_images/Editors-Package_img601.jpeg)
-{:.image }
+
 
 
 See Also
@@ -33981,49 +33984,39 @@ The CheckBoxAdv control can be created programmatically as detailed below:
 * Add the required assembly references.
 * Include the required namespace.
 
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 * Create an instance of the CheckBoxAdv control class.
 
-[C#]
-
-
+{% highlight c# %}
 
 private Syncfusion.Windows.Forms.Tools.CheckBoxAdv checkBoxAdv1;
 
 this.checkBoxAdv1 = new Syncfusion.Windows.Forms.Tools.CheckBoxAdv();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private checkBoxAdv1 As Syncfusion.Windows.Forms.Tools.CheckBoxAdv
 
 Me.checkBoxAdv1 = New Syncfusion.Windows.Forms.Tools.CheckBoxAdv()
 
-
+{% endhighlight %}
 
 * Set the properties and add the CheckBoxAdv control to the form.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.checkBoxAdv1.Text = "checkBoxAdv1";
 
@@ -34033,17 +34026,13 @@ this.checkBoxAdv1.ForeColor = System.Drawing.Color.OliveDrab;
 
 this.checkBoxAdv1.BackColor = System.Drawing.Color.Beige;
 
-
-
 // Add the CheckBoxAdv control to the Form.
 
 this.Controls.Add(this.radioButtonAdv1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.checkBoxAdv1.Text = "checkBoxAdv1"
 
@@ -34054,22 +34043,21 @@ Me.checkBoxAdv1.ForeColor = System.Drawing.Color.OliveDrab
 Me.checkBoxAdv1.BackColor = System.Drawing.Color.Beige
 
 
-
 // Add the CheckBoxAdv control to the Form.
 
 Me.Controls.Add(Me.radioButtonAdv1)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img602.jpeg)
-{:.image }
+
 
 
 See Also
 
 Through Designer
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the CheckBoxAdv control.
 
@@ -34083,7 +34071,7 @@ CheckBoxAdv States
 
 The CheckBoxAdv can be displayed in three different states which have been described below.
 
-_Table_ _387__: Property Table_
+_Table_ _387_: Property Table
 
 <table>
 <tr>
@@ -34093,7 +34081,7 @@ Description</td></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets / sets the check state of the CheckBox.It includes the below given options.{{ _Unchecked,_ | markdownify }}{{ _Checked and_ | markdownify }}{{ _Indeterminate._ | markdownify }}</td></tr>
+Gets / sets the check state of the CheckBox.It includes the below given options.{{ '_Unchecked,_' | markdownify }}{{ '_Checked and_' | markdownify }}{{ '_Indeterminate._' | markdownify }}</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -34101,7 +34089,7 @@ Gets / sets the checked state of the CheckBox.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34109,9 +34097,9 @@ this.checkBoxAdv1.CheckState = System.Windows.Forms.CheckState.Checked;
 
 this.checkBoxAdv1.Checked = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34119,14 +34107,14 @@ Me.checkBoxAdv1.CheckState = System.Windows.Forms.CheckState.Checked
 
 Me.checkBoxAdv1.Checked = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img603.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img604.jpeg)
-{:.image }
+
 
 
 See Also
@@ -34139,7 +34127,7 @@ This section discusses how values can be associated with the various check state
 
 Both integer and string values can be associated with the check states as follows.
 
-_Table_ _388__: Property Table_
+_Table_ _388_: Property Table
 
 <table>
 <tr>
@@ -34185,7 +34173,7 @@ Gets / sets the int value. Refer Frequently Asked Questions section.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34207,9 +34195,9 @@ this.checkBoxAdv1.IntValue = 5;
 
 this.checkBoxAdv1.BoolValue = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34231,6 +34219,8 @@ Me.checkBoxAdv1.IntValue = 5
 
 Me.checkBoxAdv1.BoolValue = True
 
+{% endhighlight %}
+
 See Also
 
 CheckBoxAdv States, Image Settings
@@ -34241,7 +34231,7 @@ This section discusses the text settings of the CheckBoxAdv.
 
 Text in the CheckBoxAdv can be shadowed and wrapped as illustrated below.
 
-_Table_ _389__: Property Table_
+_Table_ _389_: Property Table
 
 <table>
 <tr>
@@ -34267,7 +34257,7 @@ Determines if the text in the CheckBoxAdv is wrapped.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34279,9 +34269,9 @@ this.checkBoxAdv1.ShadowOffset = new System.Drawing.Point(8, 8);
 
 this.checkBoxAdv1.WrapText = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34293,14 +34283,14 @@ Me.checkBoxAdv1.ShadowOffset = New System.Drawing.Point(8, 8)
 
 Me.checkBoxAdv1.WrapText = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img605.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img606.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the TextShadow property of CheckBoxAdv is available in the below sample installation path.
@@ -34321,7 +34311,7 @@ DrawFocusRectangle
 
 The focus rectangle can be hidden or made visible using the below given property.
 
-_Table_ _390__: Property Table_
+_Table_ _390_: Property Table
 
 <table>
 <tr>
@@ -34335,25 +34325,27 @@ Determines if the focus rectangle is visible when it gets the focus. The default
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.checkBoxAdv1.DrawFocusRectangle = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.checkBoxAdv1.DrawFocusRectangle = True
 
+{% endhighlight %}
+
 Behavior Settings
 
 The behavior settings of the CheckBoxAdv can be customized using the properties given below.
 
-_Table_ _391__: Property Table_
+_Table_ _391_: Property Table
 
 <table>
 <tr>
@@ -34375,7 +34367,7 @@ Specifies whether the indeterminate state can be accessed through clicking.</td>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34385,9 +34377,9 @@ this.checkBoxAdv1.ReadOnlyMode = true;
 
 this.checkBoxAdv1.Tristate= false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34397,7 +34389,7 @@ Me.checkBoxAdv1.ReadOnlyMode = True
 
 Me.checkBoxAdv1.Tristate= False
 
-
+{% endhighlight %}
 
 A sample which demonstrates the ReadOnlyMode and Tristate properties of CheckBoxAdv is available in the below sample installation path.
 
@@ -34411,7 +34403,7 @@ Text Alignment
 
 Text in the CheckBoxAdv can be aligned to the desired location as given below.
 
-_Table_ _392__: Property Table_
+_Table_ _392_: Property Table
 
 <table>
 <tr>
@@ -34421,35 +34413,35 @@ Description</td></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ _TopLeft,_ | markdownify }}{{ _TopCenter,_ | markdownify }}{{ _TopRight,_ | markdownify }}{{ _MiddleLeft,_ | markdownify }}{{ _MiddleCenter,_ | markdownify }}{{ _MiddleRight,_ | markdownify }}{{ _BottomLeft,_ | markdownify }}{{ _BottomCenter and_ | markdownify }}{{ _BottomRight._ | markdownify }}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCenter
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img607.jpeg)
-{:.image }
+
 
 
 CheckBox Alignment
 
 The CheckBox itself can be aligned to any desired location that can be chosen from the options given in the following property.
 
-_Table_ _393__: Property Table_
+_Table_ _393_: Property Table
 
 <table>
 <tr>
@@ -34459,28 +34451,24 @@ Description</td></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{ _TopLeft,_ | markdownify }}{{ _TopCenter,_ | markdownify }}{{ _TopRight,_ | markdownify }}{{ _MiddleLeft,_ | markdownify }}{{ _MiddleCenter,_ | markdownify }}{{ _MiddleRight,_ | markdownify }}{{ _BottomLeft,_ | markdownify }}{{ _BottomCenter and_ | markdownify }}{{ _BottomRight._ | markdownify }}</td></tr>
+Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.checkBoxAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.checkBoxAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img608.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the Text and CheckBox Alignment features of CheckBoxAdv is available in the below sample installation path.
@@ -34497,7 +34485,7 @@ The background settings of the CheckBoxAdv are discussed below.
 
 The CheckBoxAdv can be provided with a gradient background using the properties given below.
 
-_Table_ _394__: Property Table_
+_Table_ _394_: Property Table
 
 <table>
 <tr>
@@ -34507,7 +34495,7 @@ Description</td></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the CheckBoxAdv.The options included are as follows.{{ _HorizontalGradient,_ | markdownify }}{{ _VerticalGradient and_ | markdownify }}{{ _Default._ | markdownify }}</td></tr>
+Sets the background style of the CheckBoxAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -34519,7 +34507,7 @@ Sets the end color of the gradient of the background of the CheckboxAdv.</td></t
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34529,9 +34517,9 @@ this.checkBoxAdv1.GradientStart = System.Drawing.Color.Aqua;
 
 this.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34541,15 +34529,13 @@ Me.checkBoxAdv1.GradientStart = System.Drawing.Color.Aqua
 
 Me.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img609.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img610.jpeg)
-{:.image }
- _Note: Gradient background cannot be applied to the CheckBoxAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings._
+
+> Note: Gradient background cannot be applied to the CheckBoxAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
 
 A sample which demonstrates the Background Settings of CheckBoxAdv is available in the below sample installation path.
 
@@ -34559,7 +34545,7 @@ Border Settings
 
 Color and Styles can be applied to the border of the CheckBoxAdv as discussed below.
 
-_Table_ _395__: Property Table_
+_Table_ _395_: Property Table
 
 <table>
 <tr>
@@ -34569,7 +34555,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat_ | markdownify }}.The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat_' | markdownify }}.The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -34577,11 +34563,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{ _Dotted,_ | markdownify }}{{ _Dashed,_ | markdownify }}{{ _Solid,_ | markdownify }}{{ _Inset,_ | markdownify }}{{ _Outset and_ | markdownify }}{{ _None._ | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset and_' | markdownify }}{{ '_None._' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>
@@ -34589,7 +34575,7 @@ Specifies the color of the FixedSingle border when MouseOver.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34607,9 +34593,9 @@ this.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 this.checkBoxAdv1.HotBorderColor = System.Drawing.Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34627,14 +34613,14 @@ Me.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 Me.checkBoxAdv1.HotBorderColor = System.Drawing.Color.Blue
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img611.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img612.jpeg)
-{:.image }
+
 
 
 A Sample which demonstrates the Border Settings of CheckBoxAdv is available in the below sample installation path.
@@ -34647,7 +34633,7 @@ The image settings of the CheckBoxAdv control has been discussed in this section
 
 Images can be set to the CheckBoxAdv when it is in the Checked, Unchecked or Indeterminate state. The CheckBoxAdv allows us to set the following properties in order to display images.
 
-_Table_ _396__: Property Table_
+_Table_ _396_: Property Table
 
 <table>
 <tr>
@@ -34683,11 +34669,10 @@ Gets / sets the image used to draw the CheckBox when disabled.</td></tr>
 StretchImage</td><td>
 Indicates whether the state images of the CheckBox are stretched.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img613.jpeg)
-{:.image }
- _Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'._
 
-[C#]
+> Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'.
+
+{% highlight c# %}
 
 
 
@@ -34705,9 +34690,9 @@ this.checkBoxAdv1.DisabledImage = ((System.Drawing.Image)(resources.GetObject("c
 
 this.checkBoxAdv1.StretchImage = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34725,17 +34710,17 @@ Me.checkBoxAdv1.DisabledImage = (CType(Resources.GetObject("checkBoxAdv1.Disable
 
 Me.checkBoxAdv1.StretchImage = False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img614.jpeg)
-{:.image }
+
 
 
 Images displayed during Mouse Hover
 
 Images can also be set when the mouse is hovered over the CheckBoxAdv control.
 
-_Table_ _397__: Property Table_
+_Table_ _397_: Property Table
 
 <table>
 <tr>
@@ -34757,7 +34742,7 @@ Gets / sets the image used to draw the CheckBox when unchecked and mouse over.</
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34767,9 +34752,9 @@ this.checkBoxAdv1.MouseOverIndetermImage = ((System.Drawing.Image)(resources.Get
 
 this.checkBoxAdv1.MouseOverUncheckedImage = ((System.Drawing.Image)(resources.GetObject("checkBoxAdv1.MouseOverUncheckedImage")));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -34779,10 +34764,10 @@ Me.checkBoxAdv1.MouseOverIndetermImage = (CType(Resources.GetObject("checkBoxAdv
 
 Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAdv1.MouseOverUncheckedImage"), System.Drawing.Image))
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img615.jpeg)
-{:.image }
+
 
 
 A Sample which demonstrates the ImageCheckBox property of CheckBoxAdv is available in the below sample installation path.
@@ -34797,7 +34782,7 @@ Themes
 
 The CheckBoxAdv can be provided with a themed appearance using the below given property.
 
-_Table_ _398__: Property Table_
+_Table_ _398_: Property Table
 
 <table>
 <tr>
@@ -34811,31 +34796,31 @@ Specifies whether themes are enabled for CheckBoxAdv.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.checkBoxAdv1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
 Me.checkBoxAdv1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img616.jpeg)
-{:.image }
+
 
 
 Visual Styles
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
 
-_Table_ _399__: Property Table_
+_Table_ _399_: Property Table
 
 <table>
 <tr>
@@ -34845,15 +34830,15 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.{{ _Default and_ | markdownify }}{{ _Office2007._ | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ _Managed,_ | markdownify }}{{ _Blue,_ | markdownify }}{{ _Silver and_ | markdownify }}{{ _Black._ | markdownify }}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34861,9 +34846,9 @@ this.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office
 
 this.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -34871,21 +34856,21 @@ Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office20
 
 Me.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img617.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img618.jpeg)
-{:.image }
+
 
 
 When the Office2007ColorScheme property is set to 'Managed', the CheckBox in the CheckBoxAdv can be displayed using custom colors supported by the control.
 
 This can be done programmatically as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34895,9 +34880,9 @@ this.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007The
 
 Office2007Colors.ApplyManagedColors(this, Color.Pink);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -34905,23 +34890,24 @@ Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office20
 
 Me.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
 
-Office2007Colors.ApplyManagedColors(Me, Color.Pink)
+Office2007Colors.ApplyManagedColors(Me, Color.Pink
 
+{% endhighlight %}
 
 
 ![](Editors-Package_images/Editors-Package_img619.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the Themes and Visual Styles of CheckBoxAdv is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### CheckBoxAdv Events
+##### CheckBoxAdv Events
 
 A detailed explanation about the CheckStateChanged event is given in the following section.
 
-_Table_ _400__: Events Table_
+_Table_ _400_: Events Table
 
 <table>
 <tr>
@@ -34943,9 +34929,7 @@ This event occurs when the CheckState property is changed.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void checkBoxAdv1_CheckStateChanged(object sender, EventArgs e)
 
@@ -34955,11 +34939,9 @@ Console.WriteLine(" CheckStateChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub checkBoxAdv1_CheckStateChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -34967,13 +34949,13 @@ Console.WriteLine(" CheckStateChanged event is raised")
 
 End Sub
 
+{% endhighlight %}
+
 CheckedChanged Event
 
 This event is raised when the Checked property is changed. Checked property changes automatically when the CheckedState property is changed. Refer to the following code.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void checkBoxAdv2_CheckedChanged(object sender, EventArgs e)
 
@@ -34989,11 +34971,9 @@ private void checkBoxAdv2_CheckedChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Private Sub checkBoxAdv2_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
        If Not checkBoxAdv2.Checked Then
@@ -35003,7 +34983,9 @@ Private Sub checkBoxAdv2_CheckedChanged(ByVal sender As Object, ByVal e 
        End If
    End Sub
 
-###### Frequently Asked Questions
+{% endhighlight %}
+
+##### Frequently Asked Questions
 
 This section will help you become more familiar in using the CheckBoxAdv control.
 
@@ -35011,7 +34993,7 @@ How to databind a CheckBoxAdv to an SQL database if the corresponding datatable 
 
 The CheckBoxAdv's IntValue property can be used to databind bit values as illustrated below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35025,13 +35007,11 @@ this.oleDbDataAdapter1.Fill(this.dataSet11.Table1);
 
 }
 
-
-
 this.checkBoxAdv1.DataBindings.Add("IntValue", this.dataSet11.Table1, "BitField");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35047,7 +35027,7 @@ End Sub
 
 Me.checkBoxAdv1.DataBindings.Add("IntValue", Me.dataSet11.Table1, "BitField")
 
-
+{% endhighlight %}
 
 A sample which demonstrates how bit values are used to set the state of the CheckBoxAdv is available in the below sample installation path.
 
@@ -35057,7 +35037,7 @@ How to databind a CheckBoxAdv to an SQL database if the corresponding datatable 
 
 The CheckBoxAdv's BoolValue property can be used to databind bool values as illustrated below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35075,9 +35055,9 @@ this.oleDbDataAdapter1.Fill(this.dataSet11.Table1);
 
 this.checkBoxAdv1.DataBindings.Add("BoolValue", this.dataSet11.Table1, "CheckValue");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35093,23 +35073,23 @@ End Sub
 
 Me.checkBoxAdv1.DataBindings.Add("BoolValue", Me.dataSet11.Table1, "CheckValue")
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img620.jpeg)
-{:.image }
 
 
-##### RadioButtonAdv
+
+#### RadioButtonAdv
 
 RadioButtonAdv functions similar to the Windows standard RadioButton but it has some additional enhancements. It helps to provide a great look and feel to the RadioButtons. It supports themes, gradient colors, images and shadow text.
 
 ![](Editors-Package_images/Editors-Package_img621.jpeg)
-{:.image }
+
 
 
 See Also
 
-###### Features
+##### Features
 
 RadioButtonAdv is an advanced RadioButton control and has the following features.
 
@@ -35159,7 +35139,7 @@ See Also
 
 Concepts and Features
 
-###### Creating RadioButtonAdv
+##### Creating RadioButtonAdv
 
 The RadioButtonAdv control can be created in the following ways.
 
@@ -35171,14 +35151,14 @@ The following steps illustrate how to create a RadioButtonAdv control through de
 * Add a RadioButtonAdv Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
 
 ![](Editors-Package_images/Editors-Package_img622.jpeg)
-{:.image }
+
 
 
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
 ![](Editors-Package_images/Editors-Package_img623.jpeg)
-{:.image }
+
 
 
 See Also
@@ -35193,25 +35173,23 @@ The RadioButtonAdv control can be created programmatically as detailed below:
 * Add the required assembly references.
 * Include the required namespace.
 
-[C#]
+{% highlight c# %}
 
 
 
 using Syncfusion.Windows.Forms.Tools;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 * Create an instance of the RadioButtonAdv control class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35219,9 +35197,9 @@ private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv1;
 
 this.radioButtonAdv1 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35229,11 +35207,11 @@ Private radioButtonAdv1 As Syncfusion.Windows.Forms.Tools.RadioButtonAdv
 
 Me.radioButtonAdv1 = New Syncfusion.Windows.Forms.Tools.RadioButtonAdv()
 
-
+{% endhighlight %}
 
 * Set the properties and add the RadioButtonAdv control to the form.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35251,9 +35229,9 @@ this.radioButtonAdv1.BackColor = System.Drawing.Color.RosyBrown;
 
 this.Controls.Add(this.radioButtonAdv1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35271,17 +35249,17 @@ Me.radioButtonAdv1.BackColor = System.Drawing.Color.RosyBrown
 
 Me.Controls.Add(Me.radioButtonAdv1)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img624.jpeg)
-{:.image }
+
 
 
 See Also
 
 Through Designer
 
-###### Concepts and Features
+##### Concepts and Features
 
 The following topics will help you become more familiar in using the RadioButtonAdv control.
 
@@ -35295,7 +35273,7 @@ RadioButtonAdv States
 
 The RadioButtonAdv can be displayed in two different states which have been described below.
 
-_Table_ _401__: Property Table_
+_Table_ _401_: Property Table
 
 <table>
 <tr>
@@ -35309,24 +35287,24 @@ Gets / sets the check state of the RadioButton.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.radioButtonAdv1.Checked = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.radioButtonAdv1.Checked = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img625.jpeg)
-{:.image }
+
 
 
 See Also
@@ -35339,7 +35317,7 @@ This section discusses how values can be associated with the various check state
 
 Both integer and string values can be associated with the check states as follows.
 
-_Table_ _402__: Property Table_
+_Table_ _402_: Property Table
 
 <table>
 <tr>
@@ -35369,7 +35347,7 @@ Gets / sets checked RadioButtonAdv in current container according to the TabInde
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35383,9 +35361,9 @@ this.radioButtonAdv1.UncheckedString = "RadioButtonAdv is Unchecked";
 
 this.radioButtonAdv1.IntValue = 5;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35399,6 +35377,8 @@ Me.radioButtonAdv1.UncheckedString = "RadioButtonAdv is Unchecked"
 
 Me.radioButtonAdv1.IntValue = 5
 
+{% endhighlight %}
+
 See Also
 
 RadioButtonAdv States, Image Settings
@@ -35409,7 +35389,7 @@ This section discusses the text settings of the RadioButtonAdv.
 
 Text in the RadioButtonAdv can be shadowed and wrapped as illustrated below.
 
-_Table_ _403__: Property Table_
+_Table_ _403_: Property Table
 
 <table>
 <tr>
@@ -35435,7 +35415,7 @@ Determines if the text in the CheckBoxAdv is wrapped.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35445,9 +35425,9 @@ this.radioButtonAdv1.ShadowColor = System.Drawing.Color.Gold;
 
 this.radioButtonAdv1.ShadowOffset = new System.Drawing.Point(8, 8);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35457,10 +35437,10 @@ Me.radioButtonAdv1.ShadowColor = System.Drawing.Color.Gold
 
 Me.radioButtonAdv1.ShadowOffset = New System.Drawing.Point(8, 8)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img626.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the TextShadow property of RadioButtonAdv is available in the below sample installation path.
@@ -35481,7 +35461,7 @@ DrawFocusRectangle
 
 The focus rectangle can be hidden or made visible using the below given property.
 
-_Table_ _404__: Property Table_
+_Table_ _404_: Property Table
 
 <table>
 <tr>
@@ -35495,19 +35475,17 @@ Determines if the focus rectangle is visible when it gets the focus. The default
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.radioButtonAdv1.DrawFocusRectangle = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.radioButtonAdv1.DrawFocusRectangle = True
+
+{% endhighlight %}
 
 Behavior Settings
 
@@ -35515,7 +35493,7 @@ AutoHeight
 
 The height of the RadioButtonAdv can be automatically set using the property given below.
 
-_Table_ _405__: Property Table_
+_Table_ _405_: Property Table
 
 <table>
 <tr>
@@ -35529,25 +35507,23 @@ Determines if the RadioButton will automatically calculate its height.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.radioButtonAdv1.AutoHeight = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.radioButtonAdv1.AutoHeight = True
+
+{% endhighlight %}
 
 RaiseEventOnClick
 
 The below given property can be used to fire the OnClick event of the RadioButtonAdv.
 
-_Table_ _406__: Property Table_
+_Table_ _406_: Property Table
 
 <table>
 <tr>
@@ -35561,19 +35537,21 @@ Specifies whether the OnClick event should be fired. The default value is set to
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.radioButtonAdv1.RaiseEventOnClick = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.radioButtonAdv1.RaiseEventOnClick = True
+
+{% endhighlight %}
 
 Alignment Settings
 
@@ -35583,7 +35561,7 @@ Text Alignment
 
 Text in the RadioButtonAdv can be aligned to the desired location as given below.
 
-_Table_ _407__: Property Table_
+_Table_ _407_: Property Table
 
 <table>
 <tr>
@@ -35593,35 +35571,32 @@ Description</td></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ _TopLeft,_ | markdownify }}{{ _TopCenter,_ | markdownify }}{{ _TopRight,_ | markdownify }}{{ _MiddleLeft,_ | markdownify }}{{ _MiddleCenter,_ | markdownify }}{{ _MiddleRight,_ | markdownify }}{{ _BottomLeft,_ | markdownify }}{{ _BottomCenter and_ | markdownify }}{{ _BottomRight._ | markdownify }}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCenter
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img627.jpeg)
-{:.image }
+
 
 
 RadioButton Alignment
 
 The RadioButton itself can be aligned to any desired location that can be chosen from the options given in the following property.
 
-_Table_ _408__: Property Table_
+_Table_ _408_: Property Table
 
 <table>
 <tr>
@@ -35631,28 +35606,24 @@ Description</td></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ _TopLeft,_ | markdownify }}{{ _TopCenter,_ | markdownify }}{{ _TopRight,_ | markdownify }}{{ _MiddleLeft,_ | markdownify }}{{ _MiddleCenter,_ | markdownify }}{{ _MiddleRight,_ | markdownify }}{{ _BottomLeft,_ | markdownify }}{{ _BottomCenter and_ | markdownify }}{{ _BottomRight._ | markdownify }}</td></tr>
+Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.radioButtonAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.radioButtonAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img628.jpeg)
-{:.image }
+
 
 
 A Sample which demonstrates the Text and RadioButton Alignment features of CheckBoxAdv is available in the below sample installation path.
@@ -35669,7 +35640,7 @@ The background settings of the RadioButtonAdv are discussed below.
 
 The RadioButtonAdv can be provided with a gradient background using the properties given below.
 
-_Table_ _409__: Property Table_
+_Table_ _409_: Property Table
 
 <table>
 <tr>
@@ -35679,7 +35650,7 @@ Description</td></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the RadioButtonAdv.The options included are as follows.{{ _HorizontalGradient,_ | markdownify }}{{ _VerticalGradient and_ | markdownify }}{{ _Default._ | markdownify }}</td></tr>
+Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -35691,7 +35662,7 @@ Sets the end color of the gradient of the background of the RadioButtonAdv.</td>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35701,9 +35672,9 @@ this.radioButtonAdv1.GradientStart = System.Drawing.Color.LightBlue;
 
 this.radioButtonAdv1.GradientEnd = System.Drawing.Color.DarkSalmon;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35713,15 +35684,13 @@ Me.radioButtonAdv1.GradientStart = System.Drawing.Color.LightBlue
 
 Me.radioButtonAdv1.GradientEnd = System.Drawing.Color.DarkSalmon
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img629.jpeg)
-{:.image }
 
 
-> ![](Editors-Package_images/Editors-Package_img630.jpeg)
-{:.image }
- _Note: Gradient background cannot be applied to the RadioButtonAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings._
+
+> Note: Gradient background cannot be applied to the RadioButtonAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
 
 A sample which demonstrates the Background Settings of RadioButtonAdv is available in the below sample installation path.
 
@@ -35731,7 +35700,7 @@ Border Settings
 
 Color and Styles can be applied to the border of the RadioButtonAdv as discussed below.
 
-_Table_ _410__: Property Table_
+_Table_ _410_: Property Table
 
 <table>
 <tr>
@@ -35741,7 +35710,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -35749,11 +35718,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{ _Dotted,_ | markdownify }}{{ _Dashed,_ | markdownify }}{{ _Solid,_ | markdownify }}{{ _Inset,_ | markdownify }}{{ _Outset and_ | markdownify }}{{ _None._ | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset and_' | markdownify }}{{ '_None._' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>
@@ -35761,7 +35730,7 @@ Specifies the color of the FixedSingle border when MouseOver.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35779,9 +35748,9 @@ this.radioButtonAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedIn
 
 this.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35799,14 +35768,14 @@ Me.radioButtonAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInne
 
 Me.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img631.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img632.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the Border Settings of RadioButtonAdv is available in the below sample installation path.
@@ -35819,7 +35788,7 @@ The image settings of the RadioButtonAdv control have been discussed in this sec
 
 Images can be set to the RadioButtonAdv when it is in the Checked, Unchecked or Indeterminate state. The RadioButtonAdv allows us to set the following properties in order to display images.
 
-_Table_ _411__: Property Table_
+_Table_ _411_: Property Table
 
 <table>
 <tr>
@@ -35851,11 +35820,10 @@ Gets / sets the image used to draw the RadioButton when disabled.</td></tr>
 StretchImage</td><td>
 Indicates whether the state images of the RadioButton are stretched.</td></tr>
 </table>
-> ![](Editors-Package_images/Editors-Package_img633.jpeg)
-{:.image }
- _Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'._
 
-[C#]
+> Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'.
+
+{% highlight c# %}
 
 
 
@@ -35871,9 +35839,9 @@ this.radioButtonAdv1.DisabledImage = ((System.Drawing.Image)(resources.GetObject
 
 this.radioButtonAdv1.StretchImage = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35889,17 +35857,17 @@ Me.radioButtonAdv1.DisabledImage = (CType(Resources.GetObject("checkBoxAdv1.Disa
 
 Me.radioButtonAdv1.StretchImage = False
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img634.jpeg)
-{:.image }
+
 
 
 Images displayed during Mouse Hover
 
 Images can also be set when the mouse is hovered over the RadioButtonAdv control.
 
-_Table_ _412__: Property Table_
+_Table_ _412_: Property Table
 
 <table>
 <tr>
@@ -35917,7 +35885,7 @@ Gets / sets the image used to draw the RadioButton when unchecked and mouse over
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -35925,9 +35893,9 @@ this.radioButtonAdv1.MouseOverCheckedImage = ((System.Drawing.Image)(resources.G
 
 this.radioButtonAdv1.MouseOverUncheckedImage = ((System.Drawing.Image)(resources.GetObject("checkBoxAdv1.MouseOverUncheckedImage")));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35935,10 +35903,10 @@ Me.checkBoxAdv1.MouseOverCheckedImage = (CType(Resources.GetObject("checkBoxAdv1
 
 Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAdv1.MouseOverUncheckedImage"), System.Drawing.Image))
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img635.jpeg)
-{:.image }
+
 
 
 A Sample which demonstrates the ImageCheckBox property of RadioButtonAdv is available in the below sample installation path.
@@ -35953,7 +35921,7 @@ Themes
 
 The RadioButtonAdv can be provided with a themed appearance using the below given property.
 
-_Table_ _413__: Property Table_
+_Table_ _413_: Property Table
 
 <table>
 <tr>
@@ -35967,31 +35935,31 @@ Specifies whether themes are enabled for RadioButtonAdv.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.radioButtonAdv1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
 Me.radioButtonAdv1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img636.jpeg)
-{:.image }
+
 
 
 Visual Styles
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
 
-_Table_ _414__: Property Table_
+_Table_ _414_: Property Table
 
 <table>
 <tr>
@@ -36001,15 +35969,15 @@ Description</td></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ _Default and_ | markdownify }}{{ _Office2007._ | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ _Managed,_ | markdownify }}{{ _Blue,_ | markdownify }}{{ _Silver and_ | markdownify }}{{ _Black._ | markdownify }}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -36017,9 +35985,9 @@ this.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.
 
 this.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -36027,21 +35995,21 @@ Me.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Of
 
 Me.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img637.jpeg)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img638.jpeg)
-{:.image }
+
 
 
 When the Office2007ColorScheme property is set to 'Managed', the RadioButton in the RadioButtonAdv can be displayed using custom colors supported by the control.
 
 This can be done programmatically as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -36051,9 +36019,9 @@ this.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007
 
 Office2007Colors.ApplyManagedColors(this, Color.Red);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -36063,21 +36031,21 @@ Me.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Th
 
 Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
-
+{% endhighlight %}
 
 ![](Editors-Package_images/Editors-Package_img639.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates the Themes and Visual Styles of RadioButtonAdv is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### RadioButtonAdv Events	
+##### RadioButtonAdv Events	
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _415__: Events Table_
+_Table_ _415_: Events Table
 
 <table>
 <tr>
@@ -36099,7 +36067,7 @@ This event is fired when the Checked property of the RadioButtonAdv changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -36111,9 +36079,9 @@ Console.WriteLine(" CheckChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -36123,13 +36091,15 @@ Console.WriteLine(" CheckChanged event is raised")
 
 End Sub
 
+{% endhighlight %}
+
 GroupCheckChanged Event
 
 This event is fired when the Checked property of the RadioButtonAdv in the group changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -36141,9 +36111,9 @@ Console.WriteLine(" GroupCheckChanged event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -36152,6 +36122,8 @@ Private Sub radioButtonAdv1_GroupCheckChanged(ByVal sender As Object, ByVal e As
 Console.WriteLine(" GroupCheckChanged event is raised")
 
 End Sub
+
+{% endhighlight %}
 
 ### SpellChecker
 
@@ -36163,7 +36135,7 @@ IT Scenarios
 
 SpellChecker would help in text processing application and data entry forms.
 
-##### Samples and Location
+#### Samples and Location
 
 Where to Find Samples?
 
@@ -36185,7 +36157,7 @@ Source Code Location
 
 {Installation Drive}: \Syncfusion\Essential Studio\{Version Number} \Base\Shared.Base\Src
 
-##### Deployment Procedures 
+#### Deployment Procedures 
 
 Deployment Requirements
 
@@ -36195,9 +36167,9 @@ Default Deployment Pattern
 
 Run the assembly manager in the Dash Board Chose the version and Framework of your interest and click ‘Perform Action’ to install the assemblies to GAC.
 
-##### Getting Started
+#### Getting Started
 
-###### Feature Summary
+##### Feature Summary
 
 SpellChecker comes with options to selectively ignore the following predefined patterns.
 
@@ -36214,39 +36186,39 @@ SpellChecker comes with options to selectively ignore the following predefined p
 
 All these options are customizable at runtime as well.
 
-###### Adding SpellChecker to an Application
+##### Adding SpellChecker to an Application
 
 Drag and drop the SpellChecker from the tool box to the form. SpellChecker will be added to the component tray of the form the control is hosted in.
 
 ![G:/UG SpellChecker/Snaps/ToolBox.png](Editors-Package_images/Editors-Package_img640.png)
-{:.image }
+
 
 
 ![G:/UG SpellChecker/Snaps/Designer.png](Editors-Package_images/Editors-Package_img641.png)
-{:.image }
 
 
-###### Appearance and Structure of the Control
+
+##### Appearance and Structure of the Control
 
 ![](Editors-Package_images/Editors-Package_img642.png)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img643.png)
-{:.image }
+
 
 
 ![](Editors-Package_images/Editors-Package_img644.png)
-{:.image }
 
 
-##### Concepts and Features
 
-###### SpellChecking Options
+#### Concepts and Features
+
+##### SpellChecking Options
 
 SpellChecker allows customizing the way the controls look for the misspelled words in the input text with the following APIs. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -36277,10 +36249,10 @@ spellChecker.ExcludeWordsInUpperCase = true;
 spellChecker.ExcludeWordsWithNumbers = true;
 
 
+{% endhighlight %}
 
 
-
-[VB NET]
+{% highlight vbnet %}
 
 
 
@@ -36310,6 +36282,8 @@ spellChecker.ExcludeWordsInUpperCase = True
 
 spellChecker.ExcludeWordsWithNumbers = True
 
+{% endhighlight %}
+
 These options are accessible at runtime through the Spell Checker Options dialog; this can be invoked by the Options button available in the SpellChecker dialog.
 
 Custom Dictionary:
@@ -36330,7 +36304,7 @@ Properties, Methods, and Events Tables for SpellChecker
 
 Properties
 
-_Table_ _416__: Property/Properties Table_
+_Table_ _416_: Property/Properties Table
 
 <table>
 <tr>
@@ -36441,7 +36415,7 @@ NA</td></tr>
 </table>
 Methods 
 
-_Table_ _417__: Method/s Table_
+_Table_ _417_: Method/s Table
 
 <table>
 <tr>
@@ -36479,7 +36453,7 @@ void</th><th>
 </table>
 Events
 
-_Table_ _418__: Event/sTable_
+_Table_ _418_: Event/sTable
 
 <table>
 <tr>
@@ -36501,7 +36475,7 @@ Adding SpellChecker to a RichTextbox
 
 Spellchecker can easily be associated with the controls of type TextBoxBase via the SpellEditorWrapper class. The following code snippet exhibits how spellchecker can be associated with RichTextBox.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -36515,12 +36489,9 @@ SpellChecker spellChecker = new SpellChecker();
 
 spellChecker.SpellCheck(new SpellEditorWrapper(this.richTextBox1));
 
+{% endhighlight %}
 
-
-
-
-[VB NET]
-
+{% highlight vbnet %}
 
 
 Imports Syncfusion.Text
@@ -36533,15 +36504,11 @@ Private spellChecker As New SpellChecker()
 
 spellChecker.SpellCheck(New SpellEditorWrapper(Me.richTextBox1))
 
-
+{% endhighlight %}
 
 Samples Link
 
 A sample demonstrating the use of SpellChecker is available in the sample browser shipped with the Essential Studio under Tools Samples. Navigate to the following path to access the sample.
 
 Essential Studio Samples > Tools Samples > Editors Package > Spell Checker Demo
-
-
-
-
 

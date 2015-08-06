@@ -2,18 +2,18 @@
 layout: post
 title: Office-Controls
 description: office controls
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Office Controls
+# Office Controls
 
 Microsoft has introduced a new control called Ribbon Control with its beta release of the Office 2007. Essential Tools has come up with the RibbonControlAdv, which exhibits the same functionalities of the Ribbon Control and a set of controls to design the applications with the same look and feel as the Office2007 UI.
 
 Office2007 Controls are as follows.
 
-#### Features
+## Features
 
 Office2007 Controls Features
 
@@ -27,7 +27,7 @@ RibbonControlAdv
 The TabItems in the RibbonPanel can auto align the controls when width of the RibbonControl is reduced.
 
 ![](Office-Controls_images/Office-Controls_img1.jpeg)
-{:.image }
+
 
 
 * RibbonForm - The RibbonForm is exclusively designed to be used as a Form that hosts RibbonControlAdv. This supports all three color schemes.
@@ -37,27 +37,27 @@ The TabItems in the RibbonPanel can auto align the controls when width of the Ri
 
 
 ![](Office-Controls_images/Office-Controls_img2.jpeg)
-{:.image }
+
 
 
 * GalleryItem - Essential Tools RibbonControlAdv provides options to add a collection of items and store them into a gallery. The GalleryItem comes with a standard and a Compact scrollbars type. It supports all the three color schemes (Blue, Silver and Black).
 * Option to merge RibbonPanel of child form with the RibbonPanel in parent form RibbonControlAdv. See Ribbon Merging.
 
 ![](Office-Controls_images/Office-Controls_img3.jpeg)
-{:.image }
+
 
 
 * Super accelerator support for Office Menu button. This is discussed in Customization topic.
 
 ![](Office-Controls_images/Office-Controls_img4.jpeg)
-{:.image }
+
 
 
 * Multiline text support for all Text and ToolTip properties.
 * Support to display the gallery items one row at a time when it was invoked by the collapsed ToolStripEx.
 
 ![](Office-Controls_images/Office-Controls_img5.jpeg)
-{:.image }
+
 
 
 * Collection related properties MainItems and QuickItems to the RibbonControlAdv Header to access items collection.
@@ -91,7 +91,7 @@ It can be docked to the bottom of the Form. It can hold controls like TrackBarEx
 Custom colors can be applied to StatusStripEx. 
 
 ![](Office-Controls_images/Office-Controls_img6.jpeg)
-{:.image }
+
 
 
 ScrollersFrame
@@ -103,7 +103,7 @@ Custom colors can be applied to ScrollerFrame.
 
 
 ![](Office-Controls_images/Office-Controls_img7.jpeg)
-{:.image }
+
 
 
 ContextMenuStripEx 
@@ -136,18 +136,18 @@ Quick Access Toolbar
 Office2007 form look and feel for QAT dialog.
 
 ![](Office-Controls_images/Office-Controls_img8.jpeg)
-{:.image }
 
 
-##### Office2007 Form
+
+### Office2007 Form
 
 Office2007 Form which does not have any dependency in RibbonControlAdv is now available in Essential suite. It supports all three color schemes, help button, Right To left feature everything similar to the normal form with the Office2007 look and feel.
 
 ![](Office-Controls_images/Office-Controls_img9.jpeg)
-{:.image }
 
 
-###### Creating Office2007Form
+
+#### Creating Office2007Form
 
 The default forms can be changed into the Office2007 Form by following the below given steps.
 
@@ -155,67 +155,58 @@ The default forms can be changed into the Office2007 Form by following the below
 2. Add the assembly Syncfusion.Shared.Base in the reference. (Right click the References in the Solution explorer and click Add Reference to add the assembly. 
 3. In the form's code Editor, add the namespace.
 
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms;
 
-[C#]
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms
 
-using Syncfusion.Windows.Forms;
-
-
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Now change your class to inherit the Office2007Form instead of the default Form as follows.
 
+   ~~~ cs
 
 
-[C#]
+		public partial class Form1 : Office2007Form 
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-public partial class Form1 : Office2007Form 
+		Partial Public Class Form1 Inherits Office2007Form
 
-
-
-[VB.NET]
-
-
-
-Partial Public Class Form1 Inherits Office2007Form
-
-
+   ~~~
+   {:.prettyprint }
 
 ![](Office-Controls_images/Office-Controls_img10.jpeg)
-{:.image }
 
 
-###### Color Schemes
+
+#### Color Schemes
 
 Office2007 Form supports all the three office color schemes which can be edited through ColorSchemes property.
 
 ![](Office-Controls_images/Office-Controls_img11.jpeg)
-{:.image }
 
 
-[C#]
 
-
+{% highlight c# %}
 
 //To set Blue color scheme
 
 this.ColorScheme = Office2007Theme.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -223,34 +214,30 @@ this.ColorScheme = Office2007Theme.Blue;
 
 Me.ColorScheme = Office2007Theme.Blue
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img12.jpeg)
-{:.image }
+
 
 
 Background Color for Office2007 Form
 
 The background of the Office2007 form can be same, as the color scheme applied to the form. Set UseOffice2007SchemeBackColor property to true to make this effective.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.UseOffice2007SchemeBackColor = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.UseOffice2007SchemeBackColor = True
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img13.jpeg)
-{:.image }
+
 
 
 Vista Aero Theme
@@ -258,7 +245,7 @@ Vista Aero Theme
 Vista Aero theme support is available for Office Form when used in Vista machine.
 
 ![](Office-Controls_images/Office-Controls_img14.jpeg)
-{:.image }
+
 
 
 Office2007Form Color Scheme Settings
@@ -269,25 +256,27 @@ AeroTheme support is available for Office2007Form when used in Vista machine. Ea
 
 The following code illustrates how ColorSchemes can be applied by disabling AeroTheme on Office2007Form.
 
-[C#]
+{% highlight c# %}
 
 // Disables Aero Theme on Office2007Form.
 
 this. ApplyAeroTheme = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Disables Aero Theme on Office2007Form.
 
 Me. ApplyAeroTheme = false;
 
-###### Caption Settings
+{% endhighlight %}
+
+#### Caption Settings
 
 The Office2007Form's caption can be aligned to left, right or center using CaptionAlign property. It font style can be specified in CaptionFont property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -295,9 +284,9 @@ this.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center;
 
 this.CaptionFont = new System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -305,33 +294,35 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 Me.CaptionFont = New System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0))) 
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img15.jpeg)
-{:.image }
 
 
-###### Caption Fore Color Settings 
+
+#### Caption Fore Color Settings 
 
 Office2007Form now allows changing its color of the text on the caption. This can be achieved by setting the CaptionForeColor property. The following code illustrates this:
 
-[C#]
+{% highlight c# %}
 
 // Applies to the Color of Caption Text.
 
 this.CaptionForeColor = Color.Green;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Applies to the Color of Caption Text.
 
 Me.CaptionForeColor = Color.Green
 
-##### Office2010 Form
+{% endhighlight %}
 
-###### Creating Office2010 Form
+### Office2010 Form
+
+#### Creating Office2010 Form
 
 The default forms can be changed to an Office 2010 form by following these steps:
 
@@ -339,57 +330,53 @@ The default forms can be changed to an Office 2010 form by following these steps
 2. Add the assembly Syncfusion.Shared.Base in the reference. (Right-click the References in the Solution Explorer and click Add Reference to add the assembly. 
 3. In the form's code editor, add the namespace.
 
-[C#]
+   ~~~ cs
 
+		using Syncfusion.Windows.Forms;
 
+   ~~~
+   {:.prettyprint }
 
-using Syncfusion.Windows.Forms;
+   ~~~ vbnet
 
+		Imports Syncfusion.Windows.Forms
 
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Now change your class to inherit the Office2010 Form instead of the default form as follows:
 
-[C#]
+   ~~~ cs
 
+		public partial class Form1 : Office2010Form 
 
+   ~~~
+   {:.prettyprint }
 
-public partial class Form1 : Office2010Form 
+   ~~~ vbnet
 
+		Partial Public Class Form1 Inherits Office2010Form
 
-
-[VB.NET]
-
-
-
-Partial Public Class Form1 Inherits Office2010Form
+   ~~~
+   {:.prettyprint }
 
 ![C:/Users/paulanderson/Pictures/fcc.png](Office-Controls_images/Office-Controls_img16.png)
-{:.image }
 
 
-###### Color Schemes
+
+#### Color Schemes
 
 The Office2010 Form supports three color schemes that can be edited through the ColorSchemes property. 
 
-[C#]
-
-
+{% highlight c# %}
 
 //To set Blue color scheme.
 
 this.ColorScheme = Office2010Theme.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -397,41 +384,41 @@ this.ColorScheme = Office2010Theme.Blue;
 
 Me.ColorScheme = Office2010Theme.Blue
 
+{% endhighlight %}
+
+
+
+_Figure_ _1142_: Office2010 Form with Blue Theme
+
+
+
+_Figure_ _1143_: Office2010 Form with Black Theme
 
 
 
 
-_Figure_ _1142__: Office2010 Form with Blue Theme_
 
+_Figure_ _1144_: Office2010 Form with Silver Theme
 
-
-_Figure_ _1143__: Office2010 Form with Black Theme_
-
-
-
-
-
-_Figure_ _1144__: Office2010 Form with Silver Theme_
-
-###### Background Color for Office2010 Form
+#### Background Color for Office2010 Form
 
 The background of the Office2010 form can be same as the color scheme applied to the form by setting the UseOffice2010SchemeBackColor property to true to make this effective.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.UseOffice2010SchemeBackColor = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.UseOffice2010SchemeBackColor = True
 
-###### Office2010 Form Color Scheme Settings
+{% endhighlight %}
+
+#### Office2010 Form Color Scheme Settings
 
 Office2010 Forms now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the ApplyAeroTheme property, and setting its value either to True or False.
 
@@ -439,25 +426,27 @@ Aero theme support is available for Office2010 Forms when used on Windows Vista 
 
 The following code illustrates how ColorSchemes can be applied by disabling AeroTheme on an Office2010 Form.
 
-[C#]
+{% highlight c# %}
 
 // Disables Aero Theme on Office2010 Form.
 
 this. ApplyAeroTheme = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Disables Aero Theme on Office2010 Form.
 
 Me. ApplyAeroTheme = false;
 
-###### Offcie2010 Form Caption Align
+{% endhighlight %}
+
+#### Offcie2010 Form Caption Align
 
 The Office2010 Form's caption can be aligned to the left, right, or center by using the CaptionAlign property. Its font style can be specified in the CaptionFont property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -465,9 +454,9 @@ this.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center;
 
 this.CaptionFont = new System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -475,31 +464,35 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 Me.CaptionFont = New System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0))) 
 
-###### Caption Fore Color Settings
+{% endhighlight %}
+
+#### Caption Fore Color Settings
 
 The Office2010 Form the color of the text in its caption to be changed. This can be achieved by setting the CaptionForeColor property. The following code illustrates this:
 
-[C#]
+{% highlight c# %}
 
 // Applies the color to caption text.
 
 this.CaptionForeColor = Color.Green;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Applies the color to caption text.
 
 Me.CaptionForeColor = Color.Green
 
-##### Metro Form
+{% endhighlight %}
 
-###### Place an Image in the Caption Bar
+### Metro Form
+
+#### Place an Image in the Caption Bar
 
 The following code sample shows how to add an image to the caption bar of the Metro form.
 
-[C#]
+{% highlight c# %}
 
 Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
 
@@ -515,9 +508,9 @@ captionImage1.Size = new System.Drawing.Size(50, 50);
 
 this.CaptionImages.Add(captionImage1);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim captionImage1 As Syncfusion.Windows.Forms.CaptionImage = New Syncfusion.Windows.Forms.CaptionImage
 captionImage1.BackColor = System.Drawing.Color.Transparent
@@ -527,10 +520,10 @@ captionImage1.Name = "CaptionImage1"
 captionImage1.Size = New System.Drawing.Size(50, 50)
 Me.CaptionImages.Add(captionImage1)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img17.png)
-{:.image }
+
 
 
 In order to change the position of the image, users should handle the image location property and change the position programmatically.
@@ -549,7 +542,7 @@ Event Data
 
 The MouseEventHandler receives an argument of type MouseEventArgs that contains data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _676__: Members Table_
+_Table_ _676_: Members Table
 
 <table>
 <tr>
@@ -594,6 +587,7 @@ Image</td><td>
 Getsor sets the image for the caption image.</td></tr>
 </table>
 
+{% highlight c# %}
 
 foreach (CaptionImage image in this.CaptionImages)
 
@@ -653,9 +647,9 @@ foreach (CaptionImage image in this.CaptionImages)
 
    }
 
+{% endhighlight %}
 
-
-
+{% highlight vbnet %}
 
 For Each image As CaptionImage In Me.CaptionImages
     image.ImageMouseUp = (image.ImageMouseUp + New CaptionImage.MouseUp(image_ImageMouseUp))
@@ -686,22 +680,24 @@ Next
         Console.WriteLine(Mouse, leave, event, has, been, raised)
     End Sub
 
-##### RibbonControlAdv 
+{% endhighlight %}
+
+### RibbonControlAdv 
 
 RibbonControlAdv added to the Office2007 now comes with a couple of features and customization properties which presents the control with a great look and feel like MS Office 2007. This user guide explains all the controls that can be added to the RibbonControlAdv in detail.
 
 
 
 ![](Office-Controls_images/Office-Controls_img18.jpeg)
-{:.image }
 
 
-###### Overview
+
+#### Overview
 
 This section gives you an overview of the components of a RibbonControlAdv.
 
 ![](Office-Controls_images/Office-Controls_img19.jpeg)
-{:.image }
+
 
 
 Components
@@ -718,7 +714,7 @@ See Also
 
 Ribbon Control Items
 
-###### Ribbon Form
+#### Ribbon Form
 
 EssentialStudio now gives a similar look and feel of MS Office 2007, to its Office 2007 controls, using RibbonControlAdv which comes with rounded corners. This section will guide you in creating a Ribbon form using RibbonControlAdv. 
 
@@ -726,15 +722,15 @@ Creating Ribbon Form
 
 1. Drag and drop the RibbonControlAdv on to the form.
 
-![](Office-Controls_images/Office-Controls_img20.jpeg)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img20.jpeg)
+
 
 
 2. To convert an ordinary form to Ribbon form, do the following.
 
 The forms in the application by default will extend to the Form class. Add the respective namespace and programmatically change it as RibbonForm class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -742,9 +738,9 @@ using Syncfusion.Windows.Forms.Tools;
 
 public partial class Form1 : RibbonForm 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -752,15 +748,17 @@ Imports Syncfusion.Windows.Forms.Tools
 
 Partial Public Class Form1
 
+{% endhighlight %}
+
 Inherits RibbonForm
 
 
 
 ![](Office-Controls_images/Office-Controls_img21.jpeg)
-{:.image }
 
 
-Appearance Settings
+
+##### Appearance Settings
 
 This section discusses various appearance and behavior settings of the Ribbon form.
 
@@ -768,7 +766,7 @@ Appearance Settings
 
 The appearance of the ribbon form can be controlled using the below properties.
 
-_Table_ _677__: Property Table_
+_Table_ _677_: Property Table
 
 <table>
 <tr>
@@ -794,7 +792,7 @@ Specifies whether to use default High Contrast theme color</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -820,9 +818,9 @@ this.EnableAeroTheme = false;
 
 this.ribbonControlAdv1.EnableHighContrastTheme = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -842,14 +840,14 @@ Me.EnableAeroTheme = false
 
 Me.ribbonControlAdv1.EnableHighContrastTheme = true
 
-
+{% endhighlight %}
 
 ![C:/Users/ApoorvahR/Desktop/Capture.PNG](Office-Controls_images/Office-Controls_img22.png)
-{:.image }
+
 
 
 ![C:/Users/ApoorvahR/Desktop/Capture 1.PNG](Office-Controls_images/Office-Controls_img23.png)
-{:.image }
+
 
 
 Vista Aero Theme
@@ -857,14 +855,14 @@ Vista Aero Theme
 Vista Aero theme support is available for Ribbon Form when used in Vista machine.
 
 ![](Office-Controls_images/Office-Controls_img24.jpeg)
-{:.image }
 
 
-Customization
+
+##### Customization
 
 The property which lets you set borders for the Office2007Style form is as follows.
 
-_Table_ _678__: Property Table_
+_Table_ _678_: Property Table
 
 <table>
 <tr>
@@ -878,24 +876,20 @@ Gets/sets the border values of an Office 2007 style form. Sets borders for Left,
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.Borders = new System.Windows.Forms.Padding(10);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.Borders = New System.Windows.Forms.Padding(10)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img25.jpeg)
-{:.image }
+
 
 
 
@@ -903,39 +897,35 @@ Customizing the Top Left Edge
 
 This TopLeftRadius property gets/sets the curved radius of the top left edge of the form. Default is 8.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.TopLeftRadius = 20;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.TopLeftRadius = 20
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img26.jpeg)
-{:.image }
 
 
-###### Ribbon Control Items
+
+#### Ribbon Control Items
 
 This section discusses the following Ribbon Control Items.
 
-Office Menu Button
+##### Office Menu Button
 
 The RibbonControlAdv has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer without a single piece of code.
 
 ![](Office-Controls_images/Office-Controls_img27.jpeg)
-{:.image }
 
 
-MenuButton Drop Down
+
+###### MenuButton Drop Down
 
 When the OfficeMenuButton is clicked, ToolStripDropDown is displayed. This dropdown can be customized through designer as well as through code. 
 
@@ -950,14 +940,14 @@ The panels are:
 * System Panel
 
 ![](Office-Controls_images/Office-Controls_img28.jpeg)
-{:.image }
+
 
 
 Adding ToolStrip Items to the Panels
 
 Each Panel has Items property which invokes the Items Collection Editor. Using this editor you can add the toolstrip items easily.
 
-_Table_ _679__: Property Table_
+_Table_ _679_: Property Table
 
 <table>
 <tr>
@@ -972,14 +962,14 @@ Lets you open Items Collection Editor using which you can add items to the panel
 
 
 ![](Office-Controls_images/Office-Controls_img29.jpeg)
-{:.image }
+
 
 
 Programmatically Adding a ToolStripDropDown
 
 ToolStripDropDown can be added programmatically using ToolStripDropDown class and then assigning it to the RibbonControlAdv.MenuDropDownButton property as follows.
 
-_Table_ _680__: Property Table_
+_Table_ _680_: Property Table
 
 <table>
 <tr>
@@ -993,7 +983,7 @@ Gets / Sets ToolStripDropDown to be displayed, when the OfficeMenuButton is clic
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1065,9 +1055,9 @@ dropDown.Items.Add(panel1);
 
 this.ribbonControlAdv1.MenuButtonDropDown = dropDown;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1137,34 +1127,30 @@ dropDown.Items.Add(panel1)
 
 Me.ribbonControlAdv1.MenuButtonDropDown = dropDown
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img30.jpeg)
-{:.image }
+
 
 
 Adding ContextMenuStripEx as OfficeMenuDropDown
 
 You can also display a ContextMenuStrip in the OfficeMenu button dropdown. This can be done by assigning a custom ContextMenuStrip to the RibbonControlAdv.MenuButtonDropDown property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.MenuButtonDropDown = this.contextMenuStripEx1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.MenuButtonDropDown = Me.contextMenuStripEx1
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img31.jpeg)
-{:.image }
+
 
 
 Properties
@@ -1173,7 +1159,7 @@ Panel Text
 
 Text for the MenuButtonDropDown panels and its font style can be specified using the below properties.
 
-_Table_ _681__: Property Table_
+_Table_ _681_: Property Table
 
 <table>
 <tr>
@@ -1191,17 +1177,15 @@ Sets the Font style for the text.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.OfficeMenu.AuxPanel.Text = "Recent Documents";
 
 this.ribbonControlAdv1.OfficeMenu.AuxPanel.Font = new System.Drawing.Font("Verdana", 8.25F);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1209,11 +1193,13 @@ Me.ribbonControlAdv1.OfficeMenu.AuxPanel.Text = "Recent Documents"
 
 Me.ribbonControlAdv1.OfficeMenu.AuxPanel.Font = New System.Drawing.Font("Verdana", 8.25F) 
 
+{% endhighlight %}
+
 Adding Separator and Minimum Size Settings
 
 The property which adds a line separator between the toolstrip items and the property which sets the minimum size for the panels is as follows.
 
-_Table_ _682__: Property Table_
+_Table_ _682_: Property Table
 
 <table>
 <tr>
@@ -1231,23 +1217,21 @@ Specifies minimum size for the panels.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.OfficeMenu.MainPanel.SeparatorIndent = 15;
 
 this.ribbonControlAdv1.OfficeMenu.AuxPanel.MinimumSize = new System.Drawing.Size(30, 30);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.OfficeMenu.MainPanel.SeparatorIndent = 15
 
 Me.ribbonControlAdv1.OfficeMenu.AuxPanel.MinimumSize = New System.Drawing.Size(30, 30)
+
+{% endhighlight %}
 
 Adding Items to the Dropdown
 
@@ -1271,7 +1255,7 @@ The ToolStrip Items which can be added to the Menu Panels, using the Panel's Ite
 * Gallery – Add Gallery item.
 
 ![](Office-Controls_images/Office-Controls_img32.jpeg)
-{:.image }
+
 
 
 The properties of ToolStripItems are available in Items Collection Editor which lets you customize the appearance of the items.
@@ -1281,12 +1265,12 @@ OfficeButton Properties
 This section discusses the properties of Office button toolstrip items.
 
 ![](Office-Controls_images/Office-Controls_img33.jpeg)
-{:.image }
+
 
 
 Common Properties for the Office buttons
 
-_Table_ _683__: Property Table_
+_Table_ _683_: Property Table
 
 <table>
 <tr>
@@ -1312,7 +1296,7 @@ Represents image and text relation.</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Sets the display style of the item. The options are,{{ _Text_ | markdownify }} - Displays only text,{{ _Image_ | markdownify }} - Displays only image,{{ _ImageAndText_ | markdownify }} - Displays image and the text in the office button.</td></tr>
+Sets the display style of the item. The options are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and the text in the office button.</td></tr>
 <tr>
 <td>
 Font</td><td>
@@ -1344,7 +1328,7 @@ Sets the visibility of the toolstrip item.</td></tr>
 <tr>
 <td>
 AutoTooltip</td><td>
-Lets you to specify whether the tooltip text is taken from the Text property or the ToolTipText property. {{ _True_ | markdownify }} - Tooltip text is taken from the Text property,{{ _False_  | markdownify }}- Tooltip text is taken from the ToolTipText property.OfficeMenu.ShowItemToolTips should be true for this setting to be effective.</td></tr>
+Lets you to specify whether the tooltip text is taken from the Text property or the ToolTipText property. {{ '_True_' | markdownify }} - Tooltip text is taken from the Text property,{{ '_False_'  | markdownify }}- Tooltip text is taken from the ToolTipText property.OfficeMenu.ShowItemToolTips should be true for this setting to be effective.</td></tr>
 <tr>
 <td>
 ToolTipText</td><td>
@@ -1360,7 +1344,7 @@ Sets the alignment for the ToolStrip item.</td></tr>
 </table>
 Office Button
 
-_Table_ _684__: Property Table_
+_Table_ _684_: Property Table
 
 <table>
 <tr>
@@ -1384,7 +1368,7 @@ OfficeSplitButton
 
 The following properties are specific to OfficeSplitButton.
 
-_Table_ _685__: Property Table_
+_Table_ _685_: Property Table
 
 <table>
 <tr>
@@ -1413,14 +1397,14 @@ Shows / hides the dropdown arrow.</td></tr>
 In OfficeSplitButton, the image and the text together will look split from the arrow as shown in the image below.
 
 ![](Office-Controls_images/Office-Controls_img34.jpeg)
-{:.image }
+
 
 
 OfficeDropDownButton
 
 The following properties are specific to OfficeDropDownButton.
 
-_Table_ _686__: Property Table_
+_Table_ _686_: Property Table
 
 <table>
 <tr>
@@ -1447,7 +1431,7 @@ Shows / hides the dropdown arrow.</td></tr>
 
 
 ![](Office-Controls_images/Office-Controls_img35.jpeg)
-{:.image }
+
 
 
 Tooltips
@@ -1455,31 +1439,25 @@ Tooltips
 OfficeMenuButton can show a SuperToolTip at run time. It can be added using RibbonControlAdv.MenuButtonToolTip on SuperToolTip1 property through Designer or by calling the SetMenuButtonToolTip method of the SuperToolTip control.
 
 ![](Office-Controls_images/Office-Controls_img36.jpeg)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img37.jpeg)
-{:.image }
- _Note: The above extended property will be available only when your application has a SuperToolTip control._
 
-[C#]
+> Note: The above extended property will be available only when your application has a SuperToolTip control.
 
-
+{% highlight c# %}
 
 this.superToolTip1.SetMenuButtonToolTip(this.ribbonControlAdv1, toolTipInfo1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.superToolTip1.SetMenuButtonToolTip(Me.ribbonControlAdv1, toolTipInfo1)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img38.jpeg)
-{:.image }
+
 
 
 ToolTips for ToolStrip Items in DropDown
@@ -1488,9 +1466,7 @@ Tooltips for the items can be enabled using ShowItemToolTips property.
 
 Text for the tooltips can be specified in ToolTipText property of the respective ToolStrip items.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Enabling Tooltips for the menu items
 
@@ -1502,9 +1478,9 @@ this.ribbonControlAdv1.OfficeMenu.ShowItemToolTips = true;
 
 this.toolStripButton1.ToolTipText = "Open";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1518,10 +1494,10 @@ Me.ribbonControlAdv1.OfficeMenu.ShowItemToolTips = True
 
 Me.toolStripButton1.ToolTipText = "Open"
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img39.jpeg)
-{:.image }
+
 
 
 See Also
@@ -1532,7 +1508,7 @@ MenuButton Settings
 
 The following properties controls the appearance of the Menu button.
 
-_Table_ _687__: Property Table_
+_Table_ _687_: Property Table
 
 <table>
 <tr>
@@ -1554,7 +1530,7 @@ Specifies the width of the menu button.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1576,9 +1552,9 @@ this.ribbonControlAdv1.MenuButtonImage = img;
 
 this.ribbonControlAdv1.MenuButtonWidth = 50;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1600,41 +1576,37 @@ Me.ribbonControlAdv1.MenuButtonImage = img
 
 Me.ribbonControlAdv1.MenuButtonWidth = 50
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img40.jpeg)
-{:.image }
+
 
 
 MenuButtonAccelerator
 
 When the SuperAccelerator component is added to the form, an extender property MenuButtonAccelerator on superAccelerator will be added to the RibbonControlAdv properties, where the user can add the key for MenuButton. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.superAccelerator1.SetMenuButtonAccelerator(this.ribbonControlAdv1, "F"); 
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.superAccelerator1.SetMenuButtonAccelerator(Me.ribbonControlAdv1, "F")
 
-
+{% endhighlight %}
 
 At run time when you press Alt key, the menu button will display "F" key as shown in the image.
 
 ![](Office-Controls_images/Office-Controls_img41.jpeg)
-{:.image }
 
 
-Office-Like Super Accelerator Support
 
-Description
+##### Office-Like Super Accelerator Support
+
+###### Description
 
 The RibbonControlAdv now supports the SuperAccelerator functionality. This allows the user to access the RibbonControlAdv and its components through the keyboard shortcuts as in MS Office.
 
@@ -1645,13 +1617,13 @@ Through Designer
 To add the SuperAccelerator key to the RibbonControlAdv, the control must be wired with a SuperAccelerator component as shown in the following image:
 
 ![](Office-Controls_images/Office-Controls_img42.png)
-{:.image }
+
 
 
 The SuperAccelerator key value for a RibbonControlAdv child element can be assigned from the form designer as shown in the following image:
 
 ![](Office-Controls_images/Office-Controls_img43.png)
-{:.image }
+
 
 
 Through Code
@@ -1660,7 +1632,7 @@ Using the following code, the SuperAccelerator can be assigned to the RibbonCont
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1668,7 +1640,7 @@ SuperAccelerator superAccelerator1 = new SuperAccelerator();
 
 this.ribbonControlAdv1.SuperAccelerator = this.superAccelerator1;
 
-
+{% endhighlight %}
 
 
 
@@ -1676,36 +1648,34 @@ With the following code sample, the SuperAccelerator key value can be assigned t
 
 Code Sample
 
-[C#]
-
-
+{% highlight c# %}
 
 this.superAccelerator1.SetAccelerator(this.Home, "A");
 
-
+{% endhighlight %}
 
 
 
 The following image shows SuperAccelerator key visibility in the RibbonControlAdv:
 
 ![](Office-Controls_images/Office-Controls_img44.png)
-{:.image }
 
 
-BackStageView
+
+###### BackStageView
 
 Like in RibbonControlAdv, SuperAccelerators has been implemented in BackStageView. Accelerators can be assigned to BackStageView as shown in following images:
 
 Through Designer
 
 ![](Office-Controls_images/Office-Controls_img45.png)
-{:.image }
+
 
 
 The following image demonstrates how SuperAccelerator key values can be assigned to BackStage child elements:
 
 ![](Office-Controls_images/Office-Controls_img46.png)
-{:.image }
+
 
 
 Through Code 
@@ -1714,41 +1684,37 @@ Using the following code sample, the SuperAccelerator can be assigned to BackSta
 
 Code Sample
 
-[C#]
-
-
+{% highlight c# %}
 
 this.backStage1.SuperAccelerator = this.superAccelerator1;
 
-
+{% endhighlight %}
 
 Using the following code sample, SuperAccelerator can be assigned to BackStage child elements through code.
 
 Code Sample
 
-[C#]
-
-
+{% highlight c# %}
 
 this.saveButton.Accelerator = "S";
 
-
+{% endhighlight %}
 
 SuperAccelerator in BackStageView
 
 The following image visualizes the SuperAccelerarator in BackStage:
 
 ![](Office-Controls_images/Office-Controls_img47.png)
-{:.image }
+
 
 
 The following image visualizes the SuperAccelerator in BackStageTab child elements:
 
 ![](Office-Controls_images/Office-Controls_img48.png)
-{:.image }
 
 
-Backstage Splitter for RibbonControlAdv 2013
+
+###### Backstage Splitter for RibbonControlAdv 2013
 
 Adding Separators
 
@@ -1758,7 +1724,7 @@ Separators for Backstage view Through Code
 
 Adding Separator Indices for BackStageView
 
-[C#]
+{% highlight c# %}
 
 private Syncfusion.Windows.Forms.BackStageSeparator backStageSeparator1;            
 
@@ -1784,9 +1750,9 @@ this.backStageSeparator1.TabIndex = 4;
 
 this.backStageSeparator1.Text = "backStageSeparator1";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1803,23 +1769,23 @@ Me.backStageSeparator1.Size = New System.Drawing.Size(100, 1)
 Me.backStageSeparator1.TabIndex = 4
 Me.backStageSeparator1.Text = "backStageSeparator1"
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img49.png)
-{:.image }
 
 
-ToolStripTabItem
+
+##### ToolStripTabItem
 
 RibbonControlAdv lets you to create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
 
 ![](Office-Controls_images/Office-Controls_img50.jpeg)
-{:.image }
+
 
 
 A new TabItem can be added to the RibbonControlAdv programmatically using the AddMainItem method. Create a ToolStripTabItem and then add it to the RibbonControlAdv using the below method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1837,9 +1803,9 @@ this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
 
 this.ribbonControlAdv1.Header.AddMainItem(this.toolStripTabItem1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1857,7 +1823,7 @@ Me.toolStripTabItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem
 
 Me.ribbonControlAdv1.Header.AddMainItem(Me.toolStripTabItem1)
 
-
+{% endhighlight %}
 
 The following sections discusses various appearance and behavior settings for the ToolStripTabItem. 
 
@@ -1873,7 +1839,7 @@ Text Settings
 
 The following properties lets you to edit and control the behavior of the text in the ToolStripTabItem.
 
-_Table_ _688__: Property Table_
+_Table_ _688_: Property Table
 
 <table>
 <tr>
@@ -1887,15 +1853,15 @@ Text for the ToolStripTabItem.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Alignment of the text in a ToolStripTabItem. The different content alignments are,{{ _BottomCenter_ | markdownify }} - Vertically aligned at bottom, horizontally aligned at center.{{ _BottomLeft_ | markdownify }} - Vertically aligned at bottom, horizontally aligned at left.{{ _BottomRight_ | markdownify }} - Vertically aligned at bottom, horizontally aligned at Right.{{ _MiddleCenter_ | markdownify }} - Vertically aligned at Middle, horizontally aligned at Center. (Default){{ _MiddleLeft_ | markdownify }} - Vertically aligned at Middle, horizontally aligned at Left.{{ _MiddleRight_ | markdownify }} - Vertically aligned at Middle, horizontally aligned at Right.{{ _TopCenter_ | markdownify }} - Vertically aligned at Top, horizontally aligned at Center.{{ _TopLeft_ | markdownify }} - Vertically aligned at Top, horizontally aligned at Left.{{ _TopRight_ | markdownify }} - Vertically aligned at Top, horizontally aligned at Right.</td></tr>
+Alignment of the text in a ToolStripTabItem. The different content alignments are,{{ '_BottomCenter_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at center.{{ '_BottomLeft_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at left.{{ '_BottomRight_' | markdownify }} - Vertically aligned at bottom, horizontally aligned at Right.{{ '_MiddleCenter_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Center. (Default){{ '_MiddleLeft_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Left.{{ '_MiddleRight_' | markdownify }} - Vertically aligned at Middle, horizontally aligned at Right.{{ '_TopCenter_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Center.{{ '_TopLeft_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Left.{{ '_TopRight_' | markdownify }} - Vertically aligned at Top, horizontally aligned at Right.</td></tr>
 <tr>
 <td>
 TextDirection</td><td>
-Direction of drawing the text. {{ _Horizontal_ | markdownify }} - specifies horizontal text orientation; (Default){{ _Inherit_ | markdownify }} - specifies that the text direction is inherited from the parent control; {{ _Vertical270_ | markdownify }} - specifies that the text is rotated 270 degrees; {{ _Vertical90_ | markdownify }} - specifies that the text is rotated 90 degrees.</td></tr>
+Direction of drawing the text. {{ '_Horizontal_' | markdownify }} - specifies horizontal text orientation; (Default){{ '_Inherit_' | markdownify }} - specifies that the text direction is inherited from the parent control; {{ '_Vertical270_' | markdownify }} - specifies that the text is rotated 270 degrees; {{ '_Vertical90_' | markdownify }} - specifies that the text is rotated 90 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Relative location of the image to the text in the ToolStripTabItem. See Image Settings.The various options available are,{{ _Overlay,_  | markdownify }}{{ _ImageAboveText, (Default)_ | markdownify }}{{ _TextAboveImage,_  | markdownify }}{{ _ImageBeforeText and_  | markdownify }}{{ _TextBeforeImage._ | markdownify }}</td></tr>
+Relative location of the image to the text in the ToolStripTabItem. See Image Settings.The various options available are,{{ '_Overlay,_'  | markdownify }}{{ '_ImageAboveText, (Default)_' | markdownify }}{{ '_TextAboveImage,_'  | markdownify }}{{ '_ImageBeforeText and_'  | markdownify }}{{ '_TextBeforeImage._' | markdownify }}</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
@@ -1903,7 +1869,7 @@ Specifies whether image and text are rendered. The options are,Text,Image and Im
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1917,9 +1883,9 @@ this.toolStripTabItem1.TextImageRelation = System.Windows.Forms.TextImageRelatio
 
 this.toolStripTabItem1.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1933,11 +1899,11 @@ Me.toolStripTabItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.
 
 Me.toolStripTabItem1.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText
 
-
+{% endhighlight %}
 
 The appearance of the text can be controlled using the below properties.
 
-_Table_ _689__: Property Table_
+_Table_ _689_: Property Table
 
 <table>
 <tr>
@@ -1955,7 +1921,7 @@ Sets fore color for the text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1963,9 +1929,9 @@ this.toolStripTabItem1.Font = new System.Drawing.Font("Verdana", 8.25F, System.D
 
 this.toolStripTabItem1.ForeColor = System.Drawing.Color.SteelBlue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1973,10 +1939,10 @@ Me.toolStripTabItem1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Dra
 
 Me.toolStripTabItem1.ForeColor = System.Drawing.Color.SteelBlue
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img51.jpeg)
-{:.image }
+
 
 
 See Also
@@ -1991,7 +1957,7 @@ Image Settings
 
 The below properties controls the image settings for the ToolStripTabItem.
 
-_Table_ _690__: Property Table_
+_Table_ _690_: Property Table
 
 <table>
 <tr>
@@ -2017,7 +1983,7 @@ Sets the transparent color on the items image.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2031,9 +1997,9 @@ this.toolStripTabItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageSca
 
 this.toolStripTabItem1.ImageTransparentColor = System.Drawing.Color.FloralWhite;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2047,14 +2013,15 @@ Me.toolStripTabItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScali
 
 Me.toolStripTabItem1.ImageTransparentColor = System.Drawing.Color.FloralWhite
 
+{% endhighlight %}
 
 
 ![](Office-Controls_images/Office-Controls_img52.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img53.jpeg)
-{:.image }
+
 
 
 See Also
@@ -2073,31 +2040,27 @@ Appearance Settings
 
 The Padding property specifies the internal padding within the ToolStripTabItem.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolStripTabItem2.Padding = new System.Windows.Forms.Padding(4);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolStripTabItem2.Padding = New System.Windows.Forms.Padding(4)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img54.jpeg)
-{:.image }
+
 
 
 Behavior Settings
 
 The below properties illustrates the behavior settings.
 
-_Table_ _691__: Property Table_
+_Table_ _691_: Property Table
 
 <table>
 <tr>
@@ -2125,7 +2088,7 @@ ToolTips
 
 AutoToolTip and ToolTipText properties are used for this purpose.
 
-_Table_ _692__: Property Table_
+_Table_ _692_: Property Table
 
 <table>
 <tr>
@@ -2141,12 +2104,13 @@ When set to false will display the text set in ToolTipText. When set to true wil
 ToolTipText</td><td>
 Sets the Tooltip text.</td></tr>
 </table>
-Ribbon Panel
+
+###### Ribbon Panel
 
 A ribbon panel is automatically added when you add a ToolStripTabItem. ToolStripEx can be added to the Ribbon panel using its smart tag.
 
 ![](Office-Controls_images/Office-Controls_img55.jpeg)
-{:.image }
+
 
 
 See Also 
@@ -2157,24 +2121,20 @@ OfficeColorScheme
 
 The ribbon panel supports all the three office color schemes. Blue, black and silver schemes.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolStripTabItem2.Panel.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolStripTabItem2.Panel.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Blue
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img56.jpeg)
-{:.image }
+
 
 
 Office 2013 Color Schemes
@@ -2185,34 +2145,30 @@ RibbonControlAdv now supports three themes: White, LightGray, and DarkGray. Thes
 
 The following code sample illustrates how to set the DarkGray theme for the Office 2013 style RibbonControl.
 
-[C#]
+{% highlight c# %}
+
+this.ribbonControlAdv1.Office2013ColorScheme = Office2013ColorScheme.DarkGray;
+
+{% endhighlight %}
 
 
 
-  this.ribbonControlAdv1.Office2013ColorScheme = Office2013ColorScheme.DarkGray;
+{% highlight vbnet %}
 
+Me.ribbonControlAdv1.Office2013ColorScheme = Office2013ColorScheme.DarkGray
 
-
-
-
-[VB.NET]
-
-
-
-  Me.ribbonControlAdv1.Office2013ColorScheme = Office2013ColorScheme.DarkGray
-
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img57.png)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img58.png)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img59.png)
-{:.image }
+
 
 
 Touch Mode behavior for RibbonControlAdv
@@ -2221,7 +2177,7 @@ Enabling Touch Mode
 
  You can control touch mode settings of RibbonControlAdv control using the following property.
 
-_Table_ _693__: Property Table_
+_Table_ _693_: Property Table
 
 <table>
 <tr>
@@ -2237,35 +2193,35 @@ Enabling the RibbonTouchModeEnabled property in RibbonContolAdv, increases the s
 </table>
 
 
-[C#]
+{% highlight c# %}
 
  //Enables touch mode for the RibbonControlAdv control
 
 this.ribbonControlAdv1. RibbonTouchModeEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
  'Enables touch mode for the RibbonControlAdv control
 
 Me.ribbonControlAdv1. RibbonTouchModeEnabled = True
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img60.png)
-{:.image }
 
 
-_Figure_ _1187__: RibbonControlAdv Style Demo_
 
-#### Designer Support
+_Figure_ _1187_: RibbonControlAdv Style Demo
+
+## Designer Support
 
 Designer property
 
 The Office2013ColorScheme Designer property enables the user to set the color schemes for the Ribbon2013 Style in the design view.
 
-_Table_ _694__: Property Table_
+_Table_ _694_: Property Table
 
 <table>
 <tr>
@@ -2283,7 +2239,7 @@ RibbonControl has the following properties which customizes the ToolStripEx adde
 
 Caption Settings
 
-_Table_ _695__: Property Table_
+_Table_ _695_: Property Table
 
 <table>
 <tr>
@@ -2317,7 +2273,7 @@ Sets the text style for caption. The options are:Plain ShadowEtched</td></tr>
 </table>
 Style Settings
 
-_Table_ _696__: Property Table_
+_Table_ _696_: Property Table
 
 <table>
 <tr>
@@ -2337,9 +2293,8 @@ Sets the border style for the ToolStripEx. The options are,None,StaticEdge andEt
 LauncherStyle</td><td>
 Sets the style of the Launcher button. The options are,Office2007 andOffice12.</td></tr>
 </table>
-> ![](Office-Controls_images/Office-Controls_img61.jpeg)
-{:.image }
- _Note: These caption and style settings can be overridden by the individual ToolStripEx's_ caption _and_ style settings.
+
+> Note: These caption and style settings can be overridden by the individual ToolStripEx's_ caption _and_ style settings
 
 See Also
 
@@ -2349,7 +2304,7 @@ KeyBoard Shortcut
 
 We can also set keyboard shortcut keys for RibbonControl components using SetShortcut method. To get the keyboard shortcut for a particular component, use GetShortcut method.
 
-_Table_ _697__: Property Table_
+_Table_ _697_: Property Table
 
 <table>
 <tr>
@@ -2359,15 +2314,15 @@ Description</td></tr>
 <tr>
 <td>
 SetShortcut</td><td>
-Sets shortcut key. The parameters are,{{ _Component_ | markdownify }} - Component of the RibbonForm.{{ _Value_ | markdownify }} - Represents the shortcut key for the component specified.</td></tr>
+Sets shortcut key. The parameters are,{{ '_Component_' | markdownify }} - Component of the RibbonForm.{{ '_Value_' | markdownify }} - Represents the shortcut key for the component specified.</td></tr>
 <tr>
 <td>
 GetShortcut</td><td>
-Gets shortcut key. The parameter is,{{ _Component_ | markdownify }} - Component of the RibbonForm.</td></tr>
+Gets shortcut key. The parameter is,{{ '_Component_' | markdownify }} - Component of the RibbonForm.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2381,9 +2336,9 @@ this.SetShortcut(this.toolStripTabItem1, Keys.T);
 
 this.GetShortcut(this.toolStripTabItem1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2397,40 +2352,40 @@ Me.SetShortcut(Me.toolStripTabItem1, Keys.T)
 
 Me.GetShortcut(Me.toolStripTabItem1)
 
-ToolStripEx
+{% endhighlight %}
+
+### ToolStripEx
 
 The ToolStrip family of controls provides common interfaces for producing user interface elements for Windows Forms. Essential Tools has come up with ToolStripEx which, exhibits advanced features.
 
 Using the smart tag of the Ribbon panel or using "Add ToolStrip" verb in the property grid, we can add ToolStripEx controls. ToolStrip items can be added to this ToolStripEx easily.
 
-> ![](Office-Controls_images/Office-Controls_img62.jpeg)
-{:.image }
- _Note: It is also possible to add ToolStripEx directly from the toolbox as it is also an individual control._
+> Note: It is also possible to add ToolStripEx directly from the toolbox as it is also an individual control.
 
 ![](Office-Controls_images/Office-Controls_img63.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img64.jpeg)
-{:.image }
 
 
-Adding Controls to ToolStripEx
+
+#### Adding Controls to ToolStripEx
 
 To add controls to the ToolStripEx, click the icon in it, as in the image below.
 
 ![](Office-Controls_images/Office-Controls_img65.jpeg)
-{:.image }
+
 
 
 You can also add the items through Items Collection Editor using the Edit Items verb in the properties grid or in the context menu of the control at design time or using Items Property.
 
 ![](Office-Controls_images/Office-Controls_img66.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img67.jpeg)
-{:.image }
+
 
 
 Adding Standard Items
@@ -2438,22 +2393,22 @@ Adding Standard Items
 ToolStripEx comes with standard toolstrip items that can be added to the control through "Insert Standard Items" option in the smart tag. You can even add the items through context menu at design time.
 
 ![](Office-Controls_images/Office-Controls_img68.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img69.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img70.jpeg)
-{:.image }
+
 
 
 Adding ToolStrip Items Programmatically
 
 The ToolStripEx allows you to add standard ToolStripItems and other user interface elements such as labels, splitbutton, dropdownbutton, separator, combobox, textbox, progressbar and PanelItem.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2501,9 +2456,9 @@ paraToolStrip.Text = "Paragraph";
 
 this.toolStripTabItem1.Panel.Controls.Add(paraToolStrip);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2551,10 +2506,10 @@ paraToolStrip.Text = "Paragraph"
 
 Me.toolStripTabItem1.Panel.Controls.Add(paraToolStrip)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img71.jpeg)
-{:.image }
+
 
 
 ToolStripItems
@@ -2568,7 +2523,7 @@ ToolStripPanelItem provides support for aligning the controls in multiple lines.
 Using the RowCount property of ToolStripPanelItem, controls can be arranged in any number of rows inside a ToolStripPanelItem.
 
 ![](Office-Controls_images/Office-Controls_img72.jpeg)
-{:.image }
+
 
 
 Adding Controls to Panel Item
@@ -2576,12 +2531,12 @@ Adding Controls to Panel Item
 Accessing ToolStripPanelItem.Items property, Items Collection Editor dialog pops-up. The item can be added and customized using this dialog.
 
 ![](Office-Controls_images/Office-Controls_img73.jpeg)
-{:.image }
+
 
 
 A simple code snippet which adds ToolStripItems in three rows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2595,9 +2550,9 @@ this.toolStripButton2});
 
 this.toolStripPanelItem1.RowCount = 3;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2611,12 +2566,12 @@ Me.toolStripButton2})
 
 Me.toolStripPanelItem1.RowCount = 3
 
-
+{% endhighlight %}
 
 A complex arrangement of controls like in the below image, can be achieved using the ToolStripPanelItem.
 
 ![](Office-Controls_images/Office-Controls_img74.jpeg)
-{:.image }
+
 
 
 See Also
@@ -2625,7 +2580,7 @@ Customizing Panel Item
 
 Foreground Settings
 
-_Table_ _698__: Property Table_
+_Table_ _698_: Property Table
 
 <table>
 <tr>
@@ -2647,7 +2602,7 @@ Sets the text for the ToolStripPanelItem.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2655,9 +2610,9 @@ this.toolStripPanelItem12.Font = new System.Drawing.Font("Verdana", 8.25F, Syste
 
 this.toolStripPanelItem12.ForeColor = System.Drawing.Color.Crimson;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2665,15 +2620,15 @@ Me.toolStripPanelItem12.Font = New System.Drawing.Font("Verdana", 8.25F, System.
 
 Me.toolStripPanelItem12.ForeColor = System.Drawing.Color.Crimson
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img75.jpeg)
-{:.image }
+
 
 
 Tooltip Settings
 
-_Table_ _699__: Property Table_
+_Table_ _699_: Property Table
 
 <table>
 <tr>
@@ -2695,7 +2650,7 @@ Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2705,9 +2660,9 @@ this.toolStripPanelItem1.AutoToolTip = true;
 
 this.toolStripPanelItem1.ToolTipText = "New tooltip";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2717,15 +2672,15 @@ Me.toolStripPanelItem1.AutoToolTip = True
 
 Me.toolStripPanelItem1.ToolTipText = "New tooltip"
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img76.jpeg)
-{:.image }
+
 
 
 Layout of the Panel items
 
-_Table_ _700__: Property Table_
+_Table_ _700_: Property Table
 
 <table>
 <tr>
@@ -2739,11 +2694,11 @@ Sets the alignment of the Panel item. The options are,Left andRight.</td></tr>
 <tr>
 <td>
 LayoutStyle</td><td>
-Sets the layout style for the items. The options are,{{ _Flow_ | markdownify }} - Items flow horizontally or vertically as necessary.{{ _HorizontalStackWithOverflow_ | markdownify }} - Items are laid out horizontally and overflow as necessary.{{ _StackWithOverFlow_ | markdownify }} - Items are laid out automatically.{{ _Table_ | markdownify }} - Items are laid out flush left.{{ _VerticalStackWithOverflow_ | markdownify }} - Items are laid out vertically and overflow as necessary.</td></tr>
+Sets the layout style for the items. The options are,{{ '_Flow_' | markdownify }} - Items flow horizontally or vertically as necessary.{{ '_HorizontalStackWithOverflow_' | markdownify }} - Items are laid out horizontally and overflow as necessary.{{ '_StackWithOverFlow_' | markdownify }} - Items are laid out automatically.{{ '_Table_' | markdownify }} - Items are laid out flush left.{{ '_VerticalStackWithOverflow_' | markdownify }} - Items are laid out vertically and overflow as necessary.</td></tr>
 </table>
 Border Settings
 
-_Table_ _701__: Property Table_
+_Table_ _701_: Property Table
 
 <table>
 <tr>
@@ -2757,7 +2712,7 @@ Sets the border style for the panel items.Etched andStaticEdge.</td></tr>
 </table>
 RTL Support
 
-_Table_ _702__: Property Table_
+_Table_ _702_: Property Table
 
 <table>
 <tr>
@@ -2778,14 +2733,14 @@ Gallery
 Essential Tools RibbonControlAdv provides options to add a collection of items and store them into a gallery. A gallery can be added to a ToolStripTabItem using Items Collection Editor. Select the Gallery item in the dropdown and add it to the control.
 
 ![](Office-Controls_images/Office-Controls_img77.jpeg)
-{:.image }
+
 
 
 Adding Controls to the Gallery
 
 Using the Gallery.Item property, Items Collection Editor opens, which lets you add items to the gallery.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2795,9 +2750,9 @@ this.toolStripGallery1.Items.Add(toolStripGalleryItem2);
 
 this.toolStripGallery1.Items.Add(toolStripGalleryItem3);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2807,27 +2762,29 @@ Me.toolStripGallery1.Items.Add(toolStripGalleryItem2)
 
 Me.toolStripGallery1.Items.Add(toolStripGalleryItem3)
 
+{% endhighlight %}
+
 Appearance Settings
 
 The ToolStripItems can be aligned to right or left using Alignment property.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.toolStripGallery1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolStripGallery1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
 
+{% endhighlight %}
+
 Border Settings
 
-_Table_ _703__: Property Table_
+_Table_ _703_: Property Table
 
 <table>
 <tr>
@@ -2841,23 +2798,21 @@ Sets the border style for the ToolStripGallery. The options are,None (default) a
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolStripGallery1.BorderStyle = Syncfusion.Windows.Forms.Tools.ToolstripGalleryBorderStyle.Single;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 this.toolStripGallery1.BorderStyle = Syncfusion.Windows.Forms.Tools.ToolstripGalleryBorderStyle.Single;
+
+{% endhighlight %}
 
 Foreground Settings
 
-_Table_ _704__: Property Table_
+_Table_ _704_: Property Table
 
 <table>
 <tr>
@@ -2873,9 +2828,10 @@ Sets the font style for the display text.</td></tr>
 ForeColor</td><td>
 Sets the fore color for the display text.</td></tr>
 </table>
+
 Scroller Settings
 
-_Table_ _705__: Property Table_
+_Table_ _705_: Property Table
 
 <table>
 <tr>
@@ -2892,16 +2848,16 @@ Sets the scroller type for the Gallery. The types available are,StandardType and
 The below image displays a gallery item display with both types of ScrollerType and with Caption text, BackColor, ItemDisplayStyle properties set.
 
 ![](Office-Controls_images/Office-Controls_img78.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img79.jpeg)
-{:.image }
+
 
 
 RTL Support
 
-_Table_ _706__: Property Table_
+_Table_ _706_: Property Table_
 
 <table>
 <tr>
@@ -2931,7 +2887,7 @@ Caption Settings
 
 Caption for a ToolStripGallery can be visible by settings the ShowCaption property to true.
 
-_Table_ _707__: Property Table_
+_Table_ _707_: Property Table
 
 <table>
 <tr>
@@ -2949,7 +2905,7 @@ Sets the caption text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2957,15 +2913,17 @@ this.toolStripGallery1.CaptionText = "Buttons Gallery";
 
 this.toolStripGallery1.ShowCaption = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.toolStripGallery1.CaptionText = "Buttons Gallery" 
 
 Me.toolStripGallery1.ShowCaption = True
+
+{% endhighlight %}
 
 See Also
 
@@ -2983,7 +2941,7 @@ ToolStripGallery lets you customize the ToolStrip items added to the Gallery usi
 
 Appearance Settings
 
-_Table_ _708__: Property Table_
+_Table_ _708_: Property Table
 
 <table>
 <tr>
@@ -2997,7 +2955,7 @@ Sets the back color for the items.</td></tr>
 </table>
 Style Settings
 
-_Table_ _709__: Property Table_
+_Table_ _709_: Property Table
 
 <table>
 <tr>
@@ -3031,7 +2989,7 @@ Sets the Item size.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3047,9 +3005,9 @@ this.toolStripGallery1.ItemPadding = new System.Windows.Forms.Padding(5);
 
 this.toolStripGallery1.ItemSize = new System.Drawing.Size(80, 46);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3065,6 +3023,8 @@ Me.toolStripGallery1.ItemPadding = New System.Windows.Forms.Padding(5)
 
 Me.toolStripGallery1.ItemSize = New System.Drawing.Size(80, 46)
 
+{% endhighlight %}
+
 See Also
 
 Appearance Settings
@@ -3079,7 +3039,7 @@ ToolTips
 
 The Gallery can display a tooltip when the mouse is moved over the Gallery at runtime. This is enabled through AutoToolTip property. A default text will be displayed, which can be modified by providing the text in ToolTipText property. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3089,9 +3049,9 @@ this.toolStripGallery1.AutoToolTip = true;
 
 this.toolStripGallery1.ToolTipText = "New ToolStrip text";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3101,10 +3061,10 @@ Me.toolStripGallery1.AutoToolTip = True
 
 Me.toolStripGallery1.ToolTipText = "New ToolStrip text"
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img80.jpeg)
-{:.image }
+
 
 
 See Also
@@ -3125,7 +3085,7 @@ Event Data
 
 The ToolStripGalleryItemEventHandler receives an argument of type ToolStripGalleryItemEventArgs containing data related to this event. The following ToolStripGalleryItemEventArgs member provide information specific to this event.
 
-_Table_ _710__: Member Table_
+_Table_ _710_: Member Table
 
 <table>
 <tr>
@@ -3139,7 +3099,7 @@ Indicates the gallery item.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3161,9 +3121,9 @@ Console.WriteLine("GalleryItem : " + arg.GalleryItem.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3179,6 +3139,8 @@ Console.WriteLine("GalleryItem : " + arg.GalleryItem.ToString)
 
 End Sub
 
+{% endhighlight %}
+
 See Also
 
 Appearance Settings
@@ -3193,7 +3155,7 @@ Show ToolTips for individual Gallery Items
 
 RibbonControlAdv now supports showing ToolTips for individual Gallery Item when moving the mouse over them. Earlier ToolTips were not supported for individual gallery items. Now you can specify the ToolTipText for individual Gallery Items on the ToolTipText property of the respective toolStripGallery Item.
 
-[C#]
+{% highlight c# %}
 
 //Add tooltip.
 
@@ -3201,15 +3163,17 @@ this.toolStripGallery1.Items[0].ToolTipText = "No spacing";
 
 this.toolStripGallery1.Items[1].ToolTipText = "Heading 1";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Add tooltip.
 
 Me.toolStripGallery1.Items(0).ToolTipText = "No spacing"
 
 Me.toolStripGallery1.Items(1).ToolTipText = "Heading 1"
+
+{% endhighlight %}
 
 SplitButtonEx
 
@@ -3218,12 +3182,12 @@ ToolStripSplitButtonEx can be added to a ToolStripEx directly or through a panel
 
 
 ![](Office-Controls_images/Office-Controls_img81.jpeg)
-{:.image }
+
 
 
 Programmatically, ToolStripSplitButtonEx can be added as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3235,9 +3199,9 @@ this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 
 this.toolStripSplitButtonEx1});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3249,7 +3213,7 @@ Me.toolStripSplitButtonEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripSplitBu
 
 Me.toolStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripSplitButtonEx1}) 
 
-
+{% endhighlight %}
 
 The properties of SplitButtonEx is similar to Split Button except DropDownButtonWidth property which is not available for SplitButtonEx control.
 
@@ -3258,12 +3222,12 @@ ComboBoxEx
 ToolStripComboBoxEx can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img82.jpeg)
-{:.image }
+
 
 
 Programmatically adding ToolStripComboBoxEx,
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3279,9 +3243,9 @@ this.toolStripEx2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 
 this.toolStripComboBoxEx2});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3293,27 +3257,27 @@ Me.toolStripComboBoxEx2.Items.AddRange(New Object() {"ComboBoxEx", "PanelItem", 
 
 Me.toolStripEx2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripComboBoxEx2}) 
 
+{% endhighlight %}
+
 DropDown Features at run time
 
 The ComboBoxEx item by default comes with Office2007 look and feel. The items can be added to the dropdown popup using Items property similar to Windows ComboBox control. We can adjust the height of the dropdown at run time, by just moving the adjustable bar at the bottom of the popup. Automatic scrollbars will appear if all the dropdown items are not visible.
 
-> ![](Office-Controls_images/Office-Controls_img83.jpeg)
-{:.image }
- _Note: We can set banner text for the ComboBoxEx control. Refer_ BannerTextProvider Component _topic for more details._
+> Note: We can set banner text for the ComboBoxEx control. Refer_ BannerTextProvider Component _topic for more details.
 
 Button
 
 ToolStripButton can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img84.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripButton.
 
 Foreground Settings
 
-_Table_ _711__: Property Table_
+_Table_ _711_: Property Table
 
 <table>
 <tr>
@@ -3339,15 +3303,15 @@ Specifies the alignment of the text in the item. The options are,TopLeft,TopCent
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{ _Horizontal_ | markdownify }} - Text is placed horizontally,{{ _Vertical90_ | markdownify }} - Text is placed vertically and {{ _Vertical270_ | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{ _Overlay_ | markdownify }} - Image and text shares the same space in the control,{{ _ImageAboveText_ | markdownify }} - Image will be placed above the text,{{ _TextAboveImage_ | markdownify }} - Text will be placed above the image,{{ _ImageBeforeText_ | markdownify }} - Image will be placed before the text and {{ _TextBeforeImage_ | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
 Image Settings
 
-_Table_ _712__: Property Table_
+_Table_ _712_: Property Table
 
 <table>
 <tr>
@@ -3371,9 +3335,10 @@ Specifies whether the image on the item will size to fit on the ToolStrip.</td><
 ImageTransparentColor</td><td>
 Sets the transparent color on the image, that supports transparency.</td></tr>
 </table>
+
 Style Settings
 
-_Table_ _713__: Property Table_
+_Table_ _713_: Property Table
 
 <table>
 <tr>
@@ -3383,7 +3348,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ _Text_ | markdownify }} - Displays only text,{{ _Image_ | markdownify }} - Displays only image,{{ _ImageAndText_ | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -3413,9 +3378,10 @@ Sets the alignment of the item within the ToolStripEx. They can be set to beginn
 AutoSize</td><td>
 Specifies whether the item should size itself based on its image and text.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _714__: Property Table_
+_Table_ _714_: Property Table
 
 <table>
 <tr>
@@ -3431,9 +3397,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _715__: Property Table_
+_Table_ _715_: Property Table
 
 <table>
 <tr>
@@ -3449,19 +3416,20 @@ Indicates whether the item should draw right to left for RTL languages.</td></tr
 RightToLeftAutoMirrorImage</td><td>
 Specifies whether image should mirror when RightToLeft is enabled for the item.</td></tr>
 </table>
+
 Label
 
 ToolStripLabel can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img85.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripLabel.
 
 Foreground Settings
 
-_Table_ _716__: Property Table_
+_Table_ _716_: Property Table
 
 <table>
 <tr>
@@ -3487,15 +3455,16 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{ _Horizontal_ | markdownify }} - Text is placed horizontally,{{ _Vertical90_ | markdownify }} - Text is placed vertically and {{ _Vertical270_ | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{ _Overlay_ | markdownify }} - Image and text shares the same space in the control,{{ _ImageAboveText_ | markdownify }} - Image will be placed above the text,{{ _TextAboveImage_ | markdownify }} - Text will be placed above the image,{{ _ImageBeforeText_ | markdownify }} - Image will be placed before the text and {{ _TextBeforeImage_ | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
+
 Image Settings
 
-_Table_ _717__: Property Table_
+_Table_ _717_: Property Table
 
 <table>
 <tr>
@@ -3519,11 +3488,12 @@ Specifies whether the image on the item will size to fit on the ToolStrip.</td><
 ImageTransparentColor</td><td>
 Sets the transparent color on the image, that supports transparency.</td></tr>
 </table>
+
 Link Settings
 
 A ToolStripLabel can behave as a link at run time. The below properties controls the appearance and behavior of the links.
 
-_Table_ _718__: Property Table_
+_Table_ _718_: Property Table
 
 <table>
 <tr>
@@ -3553,11 +3523,11 @@ Sets the color of the link that is visited.</td></tr>
 <tr>
 <td>
 LinkBehavior</td><td>
-Specifies the underlining behavior of the link. The options are,{{ _SystemDefault_ | markdownify }} - Based on the system settings for the links,{{ _AlwaysUnderline_ | markdownify }} - Underlines the link always,{{ _HoverUnderline_ | markdownify }} - Underlines the link when hovering over it and{{ _NeverUnderline_ | markdownify }} - Never underlines the links.</td></tr>
+Specifies the underlining behavior of the link. The options are,{{ '_SystemDefault_' | markdownify }} - Based on the system settings for the links,{{ '_AlwaysUnderline_' | markdownify }} - Underlines the link always,{{ '_HoverUnderline_' | markdownify }} - Underlines the link when hovering over it and{{ '_NeverUnderline_' | markdownify }} - Never underlines the links.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3567,9 +3537,9 @@ this.toolStripLabel26.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnde
 
 this.toolStripLabel26.LinkColor = Color.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3579,15 +3549,15 @@ Me.toolStripLabel26.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderl
 
 Me.toolStripLabel26.LinkColor = Color.Blue
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img86.jpeg)
-{:.image }
+
 
 
 Style Settings
 
-_Table_ _719__: Property Table_
+_Table_ _719_: Property Table
 
 <table>
 <tr>
@@ -3597,7 +3567,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ _Text_ | markdownify }} - Displays only text,{{ _Image_ | markdownify }} - Displays only image,{{ _ImageAndText_ | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -3615,11 +3585,12 @@ Sets the alignment of the item within the ToolStripEx. They can be set to beginn
 AutoSize</td><td>
 Specifies whether the item should size itself based on its image and text.</td></tr>
 </table>
+
 ToolTip Settings
 
 The TooStripLabel can show tooltips during runtime, using the below properties.
 
-_Table_ _720__: Property Table_
+_Table_ _720_: Property Table
 
 <table>
 <tr>
@@ -3637,7 +3608,7 @@ Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
 RTL Support
 
-_Table_ _721__: Property Table_
+_Table_ _721_: Property Table
 
 <table>
 <tr>
@@ -3653,17 +3624,18 @@ Indicates whether the item should draw right to left for RTL languages.</td></tr
 RightToLeftAutoMirrorImage</td><td>
 Specifies whether image should mirror when RightToLeft is enabled for the item.</td></tr>
 </table>
+
 Split Button
 
 ToolStripSplitButton can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img87.jpeg)
-{:.image }
+
 
 
 Programmatically adding ToolStripSplitButton to ToolStripEx control,
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3675,9 +3647,9 @@ this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 
 this.toolStripLabel1});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3687,13 +3659,13 @@ Me.toolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
 
 Me.toolStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripLabel1}) 
 
-
+{% endhighlight %}
 
 The below properties controls the appearance and behavior of the ToolStripSplitButton.
 
 Foreground Settings
 
-_Table_ _722__: Property Table_
+_Table_ _722_: Property Table
 
 <table>
 <tr>
@@ -3719,15 +3691,16 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td>
-Specifies the direction of drawing the text. The direction are,{{ _Horizontal_ | markdownify }} - Text is placed horizontally,{{ _Vertical90_ | markdownify }} - Text is placed vertically and {{ _Vertical270_ | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td>
 TextImageRelation</td><td>
-Specifies the relative location of the image to the text on the item. The options are,{{ _Overlay_ | markdownify }} - Image and text shares the same space in the control,{{ _ImageAboveText_ | markdownify }} - Image will be placed above the text,{{ _TextAboveImage_ | markdownify }} - Text will be placed above the image,{{ _ImageBeforeText_ | markdownify }} - Image will be placed before the text and {{ _TextBeforeImage_ | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
+
 Image Settings
 
-_Table_ _723__: Property Table_
+_Table_ _723_: Property Table
 
 <table>
 <tr>
@@ -3751,9 +3724,10 @@ Specifies whether the image on the item will size to fit on the ToolStrip.</td><
 ImageTransparentColor</td><td>
 Sets the transparent color on the image, that supports transparency.</td></tr>
 </table>
+
 Style Settings
 
-_Table_ _724__: Property Table_
+_Table_ _724_: Property Table
 
 <table>
 <tr>
@@ -3763,7 +3737,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ _Text_ | markdownify }} - Displays only text,{{ _Image_ | markdownify }} - Displays only image,{{ _ImageAndText_ | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -3781,9 +3755,10 @@ Sets the alignment of the item within the ToolStripEx. They can be set to beginn
 AutoSize</td><td>
 Specifies whether the item should size itself based on its image and text.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _725__: Property Table_
+_Table_ _725_: Property Table
 
 <table>
 <tr>
@@ -3799,9 +3774,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _726__: Property Table_
+_Table_ _726_: Property Table
 
 <table>
 <tr>
@@ -3817,9 +3793,10 @@ Indicates whether the item should draw right to left for RTL languages.</td></tr
 RightToLeftAutoMirrorImage</td><td>
 Specifies whether image should mirror when RightToLeft is enabled for the item.</td></tr>
 </table>
+
 DropDown settings
 
-_Table_ _727__: Property Table_
+_Table_ _727_: Property Table
 
 <table>
 <tr>
@@ -3839,19 +3816,20 @@ Invokes the Items Collection Editor and lets you add ToolStripItems to be displa
 DropDownButtonWidth</td><td>
 Specifies the width for the drop down.</td></tr>
 </table>
+
 DropDownButton
 
 ToolStripDropDownButton can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img88.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripDropDownButton.
 
 Foreground Settings
 
-_Table_ _728__: Property Table_
+_Table_ _728_: Property Table
 
 <table>
 <tr>
@@ -3877,15 +3855,16 @@ Specifies the alignment of the text in the item. The options are,TopLeft, TopCen
 <tr>
 <td>
 TextDirection</td><td colspan = "2">
-Specifies the direction of drawing the text. The direction are,{{ _Horizontal_ | markdownify }} - Text is placed horizontally,{{ _Vertical90_ | markdownify }} - Text is placed vertically and {{ _Vertical270_ | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
+Specifies the direction of drawing the text. The direction are,{{ '_Horizontal_' | markdownify }} - Text is placed horizontally,{{ '_Vertical90_' | markdownify }} - Text is placed vertically and {{ '_Vertical270_' | markdownify }} - Text is placed vertically at 270 degrees.</td></tr>
 <tr>
 <td colspan = "2">
 TextImageRelation</td><td colspan = "2">
-Specifies the relative location of the image to the text on the item. The options are,{{ _Overlay_ | markdownify }} - Image and text shares the same space in the control,{{ _ImageAboveText_ | markdownify }} - Image will be placed above the text,{{ _TextAboveImage_ | markdownify }} - Text will be placed above the image,{{ _ImageBeforeText_ | markdownify }} - Image will be placed before the text and {{ _TextBeforeImage_ | markdownify }} - Text will be placed before the image.</td></tr>
+Specifies the relative location of the image to the text on the item. The options are,{{ '_Overlay_' | markdownify }} - Image and text shares the same space in the control,{{ '_ImageAboveText_' | markdownify }} - Image will be placed above the text,{{ '_TextAboveImage_' | markdownify }} - Text will be placed above the image,{{ '_ImageBeforeText_' | markdownify }} - Image will be placed before the text and {{ '_TextBeforeImage_' | markdownify }} - Text will be placed before the image.</td></tr>
 </table>
+
 Image Settings
 
-_Table_ _729__: Property Table_
+_Table_ _729_: Property Table
 
 <table>
 <tr>
@@ -3909,9 +3888,10 @@ Specifies whether the image on the item will size to fit on the ToolStrip.</td><
 ImageTransparentColor</td><td>
 Sets the transparent color on the image, that supports transparency.</td></tr>
 </table>
+
 Style Settings
 
-_Table_ _730__: Property Table_
+_Table_ _730_: Property Table
 
 <table>
 <tr>
@@ -3921,7 +3901,7 @@ Description</td></tr>
 <tr>
 <td>
 DisplayStyle</td><td>
-Specifies how the image and text are rendered. The styles are,{{ _Text_ | markdownify }} - Displays only text,{{ _Image_ | markdownify }} - Displays only image,{{ _ImageAndText_ | markdownify }} - Displays image and text.</td></tr>
+Specifies how the image and text are rendered. The styles are,{{ '_Text_' | markdownify }} - Displays only text,{{ '_Image_' | markdownify }} - Displays only image,{{ '_ImageAndText_' | markdownify }} - Displays image and text.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -3939,9 +3919,10 @@ Sets the alignment of the item within the ToolStrip. They can be set to beginnin
 AutoSize</td><td>
 Specifies whether the item should size itself based on its image and text.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _731__: Property Table_
+_Table_ _731_: Property Table
 
 <table>
 <tr>
@@ -3957,9 +3938,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _732__: Property Table_
+_Table_ _732_: Property Table
 
 <table>
 <tr>
@@ -3975,9 +3957,10 @@ Indicates whether the item should draw right to left for RTL languages.</td></tr
 RightToLeftAutoMirrorImage</td><td>
 Specifies whether image should mirror when RightToLeft is enabled for the item.</td></tr>
 </table>
+
 DropDown settings
 
-_Table_ _733__: Property Table_
+_Table_ _733_: Property Table
 
 <table>
 <tr>
@@ -3997,19 +3980,20 @@ Invokes the Items Collection Editor and lets you add ToolStripItems to be displa
 ShowDropDownArrow</td><td>
 Specifies whether or not to show the drop down arrow on the ToolStripDropDown button.</td></tr>
 </table>
+
 ComboBox
 
 ToolStripComboBox can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img89.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripComboBox.
 
 Foreground Settings
 
-_Table_ _734__: Property Table_
+_Table_ _734_: Property Table
 
 <table>
 <tr>
@@ -4033,9 +4017,10 @@ Sets the fore color for the display text.</td></tr>
 Text</td><td>
 Sets the text for the ComboBox item.</td></tr>
 </table>
+
 Style Settings
 
-_Table_ _735__: Property Table_
+_Table_ _735_: Property Table
 
 <table>
 <tr>
@@ -4067,9 +4052,10 @@ Specifies the dropdown style. The styles are,Simple,DropDown and DropDownList.</
 FlatStyle</td><td>
 Sets the display style of the combobox. The styles are,Flat,Popup,Standard and System.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _736__: Property Table_
+_Table_ _736_: Property Table
 
 <table>
 <tr>
@@ -4085,9 +4071,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _737__: Property Table_
+_Table_ _737_: Property Table
 
 <table>
 <tr>
@@ -4099,9 +4086,10 @@ Description</td></tr>
 RightToLeft</td><td>
 Indicates whether the item should draw right to left for RTL languages.</td></tr>
 </table>
+
 DropDown settings
 
-_Table_ _738__: Property Table_
+_Table_ _738_: Property Table
 
 <table>
 <tr>
@@ -4147,29 +4135,28 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Indicates text completion behavior of the combo box. The modes are,{{ _Suggest_ | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ _Append_ | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ _SuggestAppend_ | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
 <tr>
 <td>
 ShortCut on Form1</td><td>
 Specifies the Keyboard shortcut to be used at run time to access this combobox.</td></tr>
 </table>
-> ![](Office-Controls_images/Office-Controls_img90.jpeg)
-{:.image }
- _Note: We can set banner text for the ComboBox control. Refer_ BannerTextProvider Component _topic for more details._
+
+> Note: We can set banner text for the ComboBox control. Refer_ BannerTextProvider Component _topic for more details.
 
 TextBox
 
 ToolStripTextBox item can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img91.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripTextBox Item.
 
 Foreground Settings
 
-_Table_ _739__: Property Table_
+_Table_ _739_: Property Table
 
 <table>
 <tr>
@@ -4205,9 +4192,10 @@ Sets the fore color for the display text.</td></tr>
 TextBoxTextAlign</td><td>
 Specifies the alignment of the text in the item. The options are,Left,Right and Center.</td></tr>
 </table>
+
 Style Settings
 
-_Table_ _740__: Property Table_
+_Table_ _740_: Property Table
 
 <table>
 <tr>
@@ -4231,9 +4219,10 @@ Sets the alignment of the item within the ToolStrip. They can be set to beginnin
 AutoSize</td><td>
 Specifies whether the item should size itself based on its image and text.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _741__: Property Table_
+_Table_ _741_: Property Table
 
 <table>
 <tr>
@@ -4249,9 +4238,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _742__: Property Table_
+_Table_ _742_: Property Table
 
 <table>
 <tr>
@@ -4263,9 +4253,10 @@ Description</td></tr>
 RightToLeft</td><td>
 Indicates whether the item should right to left for RTL languages.</td></tr>
 </table>
+
 Behavior Settings
 
-_Table_ _743__: Property Table_
+_Table_ _743_: Property Table
 
 <table>
 <tr>
@@ -4305,9 +4296,10 @@ Specifies whether the keyboard shortcut can be specified for this textbox item.<
 ShortCut on Form1</td><td>
 Specifies the Keyboard shortcut to be used at run time to access this combobox.</td></tr>
 </table>
+
 AutoComplete Settings
 
-_Table_ _744__: Property Table_
+_Table_ _744_: Property Table
 
 <table>
 <tr>
@@ -4325,25 +4317,24 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td colspan = "2">
-Indicates text completion behavior of the combo box. The modes are,{{ _Suggest_ | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ _Append_ | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ _SuggestAppend_ | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
 </table>
-> ![](Office-Controls_images/Office-Controls_img92.jpeg)
-{:.image }
- _Note: We can set banner text for the TextBox control. Refer_ BannerTextProvider Component _topic for more details._
+
+> Note: We can set banner text for the TextBox control. Refer_ BannerTextProvider Component _topic for more details.
 
 ProgressBar
 
 ToolStripProgressBar item can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img93.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripProgressBar Item.
 
 Foreground Settings
 
-_Table_ _745__: Property Table_
+_Table_ _745_: Property Table
 
 <table>
 <tr>
@@ -4361,7 +4352,7 @@ Sets the fore color for the display text.</td></tr>
 </table>
 Style Settings
 
-_Table_ _746__: Property Table_
+_Table_ _746_: Property Table
 
 <table>
 <tr>
@@ -4409,7 +4400,8 @@ The amount to increment the current value of the control when PerformStep() meth
 Value</td><td>
 The current value for the ProgressBar, in the range specified by the minimum and maximum properties. Default value is 0.</td></tr>
 </table>
-_Table_ _747__: Method Table_
+
+_Table_ _747_: Method Table
 
 <table>
 <tr>
@@ -4421,9 +4413,10 @@ Description</td></tr>
 PerformStep()</td><td>
 Advances the current position of the progressbar by the value specified in ToolStripProgressBar.Step property.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _748__: Property Table_
+_Table_ _748_: Property Table
 
 <table>
 <tr>
@@ -4439,9 +4432,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _749__: Property Table_
+_Table_ _749_: Property Table
 
 <table>
 <tr>
@@ -4457,19 +4451,20 @@ Indicates whether the item should draw right to left for RTL languages.</td></tr
 RightToLeftLayout</td><td>
 Indicates whether the control layout is right to left.</td></tr>
 </table>
+
 CheckBox
 
 ToolStripCheckBox can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img94.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripCheckBox item.
 
 Foreground Settings
 
-_Table_ _750__: Property Table_
+_Table_ _750_: Property Table
 
 <table>
 <tr>
@@ -4489,9 +4484,10 @@ Sets the Text for the ToolStrip item.</td></tr>
 TextAlign</td><td>
 Specifies the alignment of the text in the item. The options are,TopLeft, TopCenter, TopRight,MiddleLeft, MiddleCenter, MiddleRight,BottomLeft, BottomCenter andBottomRight.</td></tr>
 </table>
+
 Style Settings
 
-_Table_ _751__: Property Table_
+_Table_ _751_: Property Table
 
 <table>
 <tr>
@@ -4531,9 +4527,10 @@ Sets the alignment of the item within the ToolStripEx. They can be set to beginn
 AutoSize</td><td>
 Specifies whether the item should size itself based on its image and text.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _752__: Property Table_
+_Table_ _752_: Property Table
 
 <table>
 <tr>
@@ -4549,9 +4546,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _753__: Property Table_
+_Table_ _753_: Property Table
 
 <table>
 <tr>
@@ -4568,14 +4566,14 @@ Radio Button
 ToolStripRadioButton can be added to a ToolStripEx directly or through a panel. 
 
 ![](Office-Controls_images/Office-Controls_img95.jpeg)
-{:.image }
+
 
 
 The below properties controls the appearance and behavior of the ToolStripRadioButton item.
 
 Foreground Settings
 
-_Table_ _754__: Property Table_
+_Table_ _754_: Property Table
 
 <table>
 <tr>
@@ -4595,9 +4593,10 @@ Sets the Text for the ToolStripRadioButton item.</td></tr>
 TextAlign</td><td>
 Specifies the alignment of the text in the item. The options are,TopLeft, TopCenter, TopRight,MiddleLeft, MiddleCenter, MiddleRight,BottomLeft, BottomCenter andBottomRight.</td></tr>
 </table>
+
 Style Settings
 
-_Table_ _755__: Property Table_
+_Table_ _755_: Property Table
 
 <table>
 <tr>
@@ -4633,9 +4632,10 @@ Specifies whether the item should size itself based on its image and text.</td><
 GroupID</td><td>
 Gets or Sets Group indicator which is used to create groups of ToolStripRadioButton controls on the same parent.</td></tr>
 </table>
+
 ToolTip Settings
 
-_Table_ _756__: Property Table_
+_Table_ _756_: Property Table
 
 <table>
 <tr>
@@ -4651,9 +4651,10 @@ When set to true, will display the text set in the Text property as the item's t
 ToolTipText</td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
+
 RTL Support
 
-_Table_ _757__: Property Table_
+_Table_ _757_: Property Table
 
 <table>
 <tr>
@@ -4665,13 +4666,14 @@ Description</td></tr>
 RightToLeft</td><td>
 Indicates whether the item should draw right to left for RTL languages.</td></tr>
 </table>
-Style Settings
+
+#### Style Settings
 
 This section will discuss the style settings available for the ToolStripEx.
 
 Border Settings
 
-_Table_ _758__: Property Table_
+_Table_ _758_: Property Table
 
 <table>
 <tr>
@@ -4685,31 +4687,31 @@ Sets the border style for the control. The options are,None,Etched and StaticEdg
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.toolStripEx1.BorderStyle = ToolStripBorderStyle.Etched;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.toolStripEx1.BorderStyle = ToolStripBorderStyle.Etched
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img96.jpeg)
-{:.image }
+
 
 
 LauncherStyle
 
 The below properties deals with the launcher settings.
 
-_Table_ _759__: Property Table_
+_Table_ _759_: Property Table
 
 <table>
 <tr>
@@ -4727,7 +4729,7 @@ Sets the Style for the launcher. The styles are,Office12,Office2007</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4735,9 +4737,9 @@ this.toolStripEx1.ShowLauncher = true;
 
 this.toolStripEx1.LauncherStyle = LauncherStyle.Office2007;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4745,17 +4747,17 @@ Me.toolStripEx1.ShowLauncher = True
 
 Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img97.jpeg)
-{:.image }
+
 
 
 Grip Style
 
 The toolstrip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
 
-_Table_ _760__: Property Table_
+_Table_ _760_: Property Table
 
 <table>
 <tr>
@@ -4773,7 +4775,7 @@ Specifies the margin for the Gripper. Default is 2.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4781,9 +4783,9 @@ this.toolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
 
 this.toolStripEx1.GripMargin = new System.Windows.Forms.Padding(5);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4791,10 +4793,10 @@ Me.toolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
 
 Me.toolStripEx1.GripMargin = new System.Windows.Forms.Padding(5)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img98.jpeg)
-{:.image }
+
 
 
 See Also
@@ -4809,13 +4811,13 @@ Grouping Items
 
 Collapsed State Settings
 
-Appearance Settings 
+#### Appearance Settings 
 
 Office12Mode
 
 ToolStripEx now supports Office12 modes in Ribbon. The properties which applies this mode are as follows.
 
-_Table_ _761__: Property Table_
+_Table_ _761_: Property Table
 
 <table>
 <tr>
@@ -4831,11 +4833,10 @@ When set to true, Office12Mode will be applied to the control.When set to false,
 RenderMode</td><td>
 Specifies the painting style of the ToolStripEx. Options are,System,Professional andManagerRenderMode.(Default)</td></tr>
 </table>
-> ![](Office-Controls_images/Office-Controls_img99.jpeg)
-{:.image }
- _Note: These properties can be easily set through Smart tag of the ToolStripEx. See SmartTag Options in DesignTime Features._
 
-[C#]
+> Note: These properties can be easily set through Smart tag of the ToolStripEx. See SmartTag Options in DesignTime Features.
+
+{% highlight c# %}
 
 
 
@@ -4843,9 +4844,9 @@ this.toolStripEx1.Office12Mode = true;
 
 this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4853,17 +4854,17 @@ Me.toolStripEx1.Office12Mode = True
 
 Me.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img100.jpeg)
-{:.image }
+
 
 
 Office2007 Mode
 
 Disabling the Office12Mode property will automatically give the Ribbon control, Office2007 look and feel.
 
-_Table_ _762__: Property Table_
+_Table_ _762_: Property Table
 
 <table>
 <tr>
@@ -4875,35 +4876,36 @@ Description</td></tr>
 OfficeColorScheme</td><td>
 Sets the office color schemes for the control. Blue, Black and Silver schemes can be applied. </td></tr>
 </table>
-> ![](Office-Controls_images/Office-Controls_img101.jpeg)
-{:.image }
- _Note: This settings will overwrite the Panel.OfficeColorScheme property._
 
-[C#]
+> Note: This settings will overwrite the Panel.OfficeColorScheme property.
+
+{% highlight c# %}
 
 
 
 this.toolStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver;
 
+{% endhighlight %}
 
+Interactive Features
 
-Interactive Features[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.toolStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img102.jpeg)
-{:.image }
+
 
 
 AutoSizing of ToolStripEx
 
 By enabling the AutoSize property of ToolStripEx, the toolstrip width will be resized automatically while adding controls to the toolstrip in the designer.
 
-_Table_ _763__: Property Table_
+_Table_ _763_: Property Table
 
 <table>
 <tr>
@@ -4917,19 +4919,17 @@ Setting this to true, will automatically resize the toolstrip as the controls ge
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolStripEx1.AutoSize = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolStripEx1.AutoSize = True
+
+{% endhighlight %}
 
 See Also
 
@@ -4939,11 +4939,11 @@ Caption Settings
 
 Collapsed State Settings
 
-ToolStripEx Alignment
+#### ToolStripEx Alignment
 
 The ToolStripLayoutStyle property is used to specify the alignment for the ToolStripEx items. The following table lists the possible alignments.
 
-_Table_ _764__: Constraints Table_
+_Table_ _764_: Constraints Table
 
 <table>
 <tr>
@@ -4977,46 +4977,42 @@ The default value for ToolStripLayoutStyle property is _HorizontalStackWithOverf
 
 The following code sample illustrates how to use the ToolStripLayoutStyle property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolStripEx1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
 
-ToolTips 
+{% endhighlight %}
+
+#### ToolTips 
 
 We can show tooltips over the ToolStrip items, by enabling the ToolStripEx.ShowItemToolTips property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolStripEx2.ShowItemToolTips = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolStripEx2.ShowItemToolTips = True
 
-> ![](Office-Controls_images/Office-Controls_img103.jpeg)
-{:.image }
- _Note: ToolTip text for the ToolStrip items can be specified using the respective &lt;Control&gt;.TooltipText properties. Ex, toolStripGallery1.ToolTipText property sets the tooltip for gallery item._ 
+{% endhighlight %}
+
+> Note: ToolTip text for the ToolStrip items can be specified using the respective &lt;Control&gt;.TooltipText properties. Ex, toolStripGallery1.ToolTipText property sets the tooltip for gallery item._
 
 See Also
 
 ToolStripItems
 
-DesignTime Features 
+#### DesignTime Features 
 
 Smart Tag
 
 Smart Tag of the ToolStripEx opens the Task Windows which lets you to set some important properties easily.
 
 ![](Office-Controls_images/Office-Controls_img104.jpeg)
-{:.image }
+
 
 
 * Embed in ToolStripContainer - Lets you embed the ToolStrip in the ToolStripContainer.
@@ -5032,7 +5028,7 @@ Context Menu
 The context menu on a toolstrip item provides advanced options which minimizes your time in customizing the ToolStrip container.
 
 ![](Office-Controls_images/Office-Controls_img105.jpeg)
-{:.image }
+
 
 
 * Set Image - This options lets you to modify the image for the particular toolstrip item.
@@ -5042,31 +5038,29 @@ The context menu on a toolstrip item provides advanced options which minimizes y
 * ConvertTo - Provides options to convert the select item to another item.
 
 ![](Office-Controls_images/Office-Controls_img106.jpeg)
-{:.image }
+
 
 
 * Insert - Lets you to insert ToolStripItems.
 * Select - Facilitates you to select a particular control.
 
 ![](Office-Controls_images/Office-Controls_img107.jpeg)
-{:.image }
 
 
-Caption Settings 
+
+#### Caption Settings 
 
 Caption for a ToolStripEx can be enabled using ShowCaption property. Text for the Caption is set using Text property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolStripEx1.ShowCaption = true;
 
 this.toolStripEx1.Text = "Standard Items";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5074,17 +5068,17 @@ Me.toolStripEx1.ShowCaption = True
 
 Me.toolStripEx1.Text = "Standard Items"
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img108.jpeg)
-{:.image }
+
 
 
 Customizing the Caption
 
 The below properties lets you customize caption for the control.
 
-_Table_ _765__: Property Table_
+_Table_ _765_: Property Table
 
 <table>
 <tr>
@@ -5114,7 +5108,7 @@ Sets the minimum height for the caption.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5128,9 +5122,9 @@ this.toolStripEx1.CaptionStyle = CaptionStyle.Bottom;
 
 this.ribbonControlAdv1.CaptionMinHeight = 20;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5144,10 +5138,10 @@ Me.toolStripEx1.CaptionStyle = CaptionStyle.Bottom
 
 Me.ribbonControlAdv1.CaptionMinHeight = 20
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img109.jpeg)
-{:.image }
+
 
 
 See Also
@@ -5156,41 +5150,39 @@ Style Settings
 
 Appearance Settings
 
-Grouping Items
+#### Grouping Items
 
 ToolStripItems can be grouped inside a ToolStripEx using the GroupedButtons property.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.toolStripEx1.GroupedButtons = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolStripEx1.GroupedButtons = True
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img110.jpeg)
-{:.image }
 
 
-Collapsed State Settings 
+
+#### Collapsed State Settings 
 
 When the ToolStripEx is collapsed at run time, it will collapse all the items and display a dropdown button like the image given below.
 
 ![](Office-Controls_images/Office-Controls_img111.jpeg)
-{:.image }
+
 
 
 Instead of showing a blank ToolStripEx when collapsed, we can display a text and an image using the below properties.
 
-_Table_ _766__: Property Table_
+_Table_ _766_: Property Table
 
 <table>
 <tr>
@@ -5208,7 +5200,7 @@ Gets/sets the text of the collapsed state drop down button.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5218,9 +5210,9 @@ this.toolStripEx1.CollapsedDropDownButtonImage = img;
 
 this.toolStripEx1.CollapsedDropDownButtonText = "Clipboard Items";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5230,19 +5222,19 @@ Me.toolStripEx1.CollapsedDropDownButtonImage = img
 
 Me.toolStripEx1.CollapsedDropDownButtonText = "Clipboard Items"
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img112.jpeg)
-{:.image }
 
 
-Events
+
+#### Events
 
 LauncherClick
 
 This event is raised when the launcher button is clicked.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5256,9 +5248,9 @@ private void toolStripEx1_LauncherClick(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5270,33 +5262,31 @@ Private  Sub toolStripEx1_LauncherClick(ByVal sender As Object, ByVal e As Event
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img113.jpeg)
-{:.image }
+
 
 
 See Also
 
 ItemClicked Event
 
-Quick Access Toolbar
+### Quick Access Toolbar
 
 The quick access toolbar provides easy access to the controls that are used in the Office 2007 controls. The visibility of this toolbar can be controlled using RibbonControlAdv.QuickPanelVisible property. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.QuickPanelVisible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.QuickPanelVisible = True
+
+{% endhighlight %}
 
 Adding Controls to QuickAccessToolbar
 
@@ -5305,24 +5295,20 @@ Items / controls can be added to the QuickAccessToolbar by clicking on the Edit 
 The dialog comes with Office2007 look and feel.
 
 ![](Office-Controls_images/Office-Controls_img114.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img115.jpeg)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img116.jpeg)
-{:.image }
- _Note: You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer._
 
-> ![](Office-Controls_images/Office-Controls_img117.jpeg)
-{:.image }
- _Note: Ribbon provides option to edit the items at run time also. See_ RunTime Customization _for more details._
+> Note: You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer.
+
+> Note: Ribbon provides option to edit the items at run time also. See_ RunTime Customization _for more details.
 
 A sample code snippet which adds a ToolStripButton named "File" to the QuickAccessToolbar through code. To know about other controls, refer ToolStripItems topic.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5346,9 +5332,9 @@ this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplaySt
 
 this.ribbonControlAdv1.Header.AddQuickItem(this.toolStripButton1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5372,6 +5358,8 @@ Me.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyl
 
 Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 
+{% endhighlight %}
+
 See Also
 
 How to add a component in the QuickAccessMenu programmatically?
@@ -5380,7 +5368,7 @@ How to show a Customize Quick Access Toolbar programmatically at run time?
 
 How to set the description on RibbonControlAdv?
 
-RunTime Customization
+#### RunTime Customization
 
 At run time, when you click the drop-down button of the Quick Access Toolbar, "Customize Quick Access Toolbar" option will be displayed. 
 
@@ -5394,41 +5382,39 @@ Show/Hide ToolStrip Items from Custom Quick Access Toolbar Dialog
 
 The user can now show/hide ToolStrip Items on Quick Access Toolbar dialog. This can be achieved by setting RibbonControlAdv.SetUseInCustomQuickAccessDialog which allows user to show or hide the ToolStrip Item. It also allows show/hide Ribbon component from the Quick Access Toolbar dialog. By default, all the item values are set to true and will be displayed in the dialog.
 
-[C#]
+{% highlight c# %}
 
 
 
 RibbonControlAdv.SetUseInCustomQuickAccessDialog(Component, bool show);
 
-
+{% endhighlight %}
 
 The following code snippet illustrates the same.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.ribbonControlAdv1.SetUseInCustomQuickAccessDialog(this.toolStripTabItem1, false);
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img118.png)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img119.jpeg)
-{:.image }
 
 
-Localization support for labels in the QuickAccess Toolbar
+
+##### Localization support for labels in the QuickAccess Toolbar
 
 In the Quick Access Toolbar, the labels present in a customized Quick Access Toolbar dialog box can be localized to a user-defined language. These labels can be localized by using the appropriate localizer keywords. In the below code snippets the return value of the switch case is the localized text for the labels.
 
-> ![](Office-Controls_images/Office-Controls_img120.jpeg)
-{:.image }
-_Note: The following changes must be done within a localizer class used for the application which is inherited from the IlocalizationProvider._
+> Note: The following changes must be done within a localizer class used for the application which is inherited from the IlocalizationProvider.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5444,11 +5430,11 @@ case ToolsResourceIdentifiers.CustomizationLabel:
 
      return "Customization Label text";
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5464,6 +5450,8 @@ case ToolsResourceIdentifiers.CustomizationLabel:
 
      return "Customization Label text"
 
+{% endhighlight %}
+	 
 See Also
 
 Placing QAT
@@ -5474,7 +5462,7 @@ How to show a Customize Quick Access Toolbar programmatically at run time
 
 How to set the description on RibbonControlAdv
 
-Placing QAT
+#### Placing QAT
 
 DesignTime
 
@@ -5483,10 +5471,10 @@ By default Quick panel is placed at the top of the control. It can also be place
 
 
 ![](Office-Controls_images/Office-Controls_img121.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -5494,9 +5482,9 @@ this.ribbonControlAdv1.QuickPanelVisible = true;
 
 this.ribbonControlAdv1.ShowQuickPanelBelowRibbon = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5504,23 +5492,25 @@ Me.ribbonControlAdv1.QuickPanelVisible = True
 
 Me.ribbonControlAdv1.ShowQuickPanelBelowRibbon = True
 
+{% endhighlight %}
+
 RunTime
 
 You can also align the QAT, above or below the ribbon using the options provided at run time.
 
 ![](Office-Controls_images/Office-Controls_img122.jpeg)
-{:.image }
 
 
-QuickAccessToolBar Events
+
+### QuickAccessToolBar Events
 
 This section comprises the below events:
 
-BeforeAddItem and BeforeRemoveItem Events
+#### BeforeAddItem and BeforeRemoveItem Events
 
 BeforeAddItem event is handled, just before the item gets added to the Quick Access Toolbar. BeforeRemoveItem event is handled, just before an item is removed from the Quick Access Toolbar.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5546,9 +5536,9 @@ MessageBox.Show(e.Item.Text.ToString() + " Item is Removed");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5570,17 +5560,17 @@ Private Sub QuickItems_BeforeRemoveItem(ByVal sender As Object, ByVal e As Ribbo
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img123.jpeg)
-{:.image }
 
 
-QuickItemAdded and QuickItemRemoved Events
+
+#### QuickItemAdded and QuickItemRemoved Events
 
 When the QuickAccessToolBar items are added, RibbonControlAdv.Header.QuickItemAdded event will be handled. Similarly when the QuickAccessToolBar items are removed, RibbonControlAdv.Header.QuickItemRemoved event will be handled. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5606,9 +5596,9 @@ private void Header_QuickItemRemoved(object sender, ToolStripItemEventArgs e)
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5632,7 +5622,9 @@ Private Sub Header_QuickItemRemoved(ByVal sender As Object, ByVal e As ToolStrip
 
 End Sub
 
-Enable/Disable Gallery Item
+{% endhighlight %}
+
+### Enable/Disable Gallery Item
 
 This feature disables/ enables particular gallery item in the gallery. 
 
@@ -5642,35 +5634,33 @@ Enable/Disable Gallery Item
 
 Enable/disable gallery item, by using the following code.
 
-> ![](Office-Controls_images/Office-Controls_img124.jpeg)
-{:.image }
-_Note: Third item in the gallery is disabled in this example._ 
+> Note: Third item in the gallery is disabled in this example.
 
-[C#]
+{% highlight c# %}
 
 
 
 toolStripGalleryItem3.Enabled = false;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
 toolStripGalleryItem3.Enabled = False
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img125.jpeg)
-{:.image }
+
 
 
 Property Details
 
 The following table contains the property details.
 
-_Table_ _767__: Property Table_
+_Table_ _767_: Property Table
 
 <table>
 <tr>
@@ -5688,51 +5678,48 @@ Normal</td><td>
 Boolean</td><td>
 public bool Enabled</td></tr>
 </table>
-###### Concepts and Features
+
+### Concepts and Features
 
 This section comprises the below topics:
 
-Appearance Settings
+#### Appearance Settings
 
 The appearance settings of the RibbonControlAdv are discussed under the below sections:
 
-OfficeColorSchemes
+##### OfficeColorSchemes
 
 The Ribbon Control Adv has come up with the same visual style of Office 2007. The users can choose between three colors Blue, Silver and Black which, can be set through the OfficeColorScheme property of the RibbonControlAdv class.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Blue
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img126.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img127.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img128.jpeg)
-{:.image }
 
 
-Custom Color Scheme 
+
+##### Custom Color Scheme 
 
 To set custom colors, set the ColorScheme as Managed. Then set the desired color using the  Syncfusion.Windows.Forms.Tools.Office12ColorTable.ApplyManagedColors method. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5744,9 +5731,9 @@ this.ribbonControlAdv1.OfficeColorScheme = ToolStripEx.ColorScheme.Managed;
 
 Office12ColorTable.ApplyManagedColors(this, Color.Red);           
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -5758,33 +5745,33 @@ Me.ribbonControlAdv1.OfficeColorScheme = ToolStripEx.ColorScheme.Managed
 
 Office12ColorTable.ApplyManagedColors(Me, Color.Red)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img129.jpeg)
-{:.image }
 
 
-Caption ForeColor
+
+##### Caption ForeColor
 
 Title color of the RibbonControlAdv can be set with the TitleColor property.
 
 ![Description: RibbonTitleColor.png](Office-Controls_images/Office-Controls_img130.png)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 this.ribbonControlAdv1.TitleColor = Color.Green;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
   Me.ribbonControlAdv1.TitleColor = Color.Green;
 
+{% endhighlight %}
 
-
-Ribbon Merging
+#### Ribbon Merging
 
 RibbonControlAdv allows merging the RibbonPanel in a child form to the RibbonPanel in the parent form without a single line of code.
 
@@ -5797,12 +5784,12 @@ In a Ribbonform, add a RibbonControlAdv control and the required ToolStripTabIte
 From the ToolBox, add a RibbonPanelMergeContainer to the ChildForm. ToolStripEx can be added into this by right Clicking on it. 
 
 ![](Office-Controls_images/Office-Controls_img131.jpeg)
-{:.image }
+
 
 
 Now add this ChildForm to the RibbonForm that is the MDIParent of the ChildForm in the default manner.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5812,9 +5799,9 @@ frm.MdiParent = this;
 
 frm.Show();            
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -5824,21 +5811,21 @@ frm.MdiParent = Me
 
 frm.Show()
 
-> ![](Office-Controls_images/Office-Controls_img132.jpeg)
-{:.image }
- _Note: The form's IsMDIContainer property must be set as true. Also the MDIParent Ribbonform should host a RibbonControlAdv to get the ChildForm's panels to be merged._
+{% endhighlight %}
+
+> Note: The form's IsMDIContainer property must be set as true. Also the MDIParent Ribbonform should host a RibbonControlAdv to get the ChildForm's panels to be merged.
 
 ![](Office-Controls_images/Office-Controls_img133.jpeg)
-{:.image }
+
 
 
 Run the sample to view the ChildForm and the RibbonPanel merged with the RibbonControlAdv in the ParentForm.
 
 ![](Office-Controls_images/Office-Controls_img134.jpeg)
-{:.image }
 
 
-Tab Groups
+
+#### Tab Groups
 
 RibbonControlAdv allows to create TabGroups using the TabGroups property available for the RibbonControlAdv.
 
@@ -5848,26 +5835,26 @@ Through Designer
 
 1. Clicking the TabGroup property will pop up a window like the one below and using this, number of groups can be added and customized using the Color, Name and Visible properties provided to the right of the window.
 
-![](Office-Controls_images/Office-Controls_img135.jpeg)
-{:.image }
+  ![](Office-Controls_images/Office-Controls_img135.jpeg)
+
 
 
 2. Now create a ToolStripTabItem using the smart tag of the Ribbon.
 3. Switch to the properties grid of the ToolStripTabItem, and select the tabgroup you have added through TabGroup property.
 
-![](Office-Controls_images/Office-Controls_img136.jpeg)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img136.jpeg)
+
 
 
 4. This will display the tab items in the RibbonControlAdv as shown in the image below.
 
-![](Office-Controls_images/Office-Controls_img137.png)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img137.png)
+
 
 
 Through Code
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5879,9 +5866,9 @@ this.ribbonControlAdv1.TabGroups.Add(toolStripTabGroup3);
 
 this.ribbonControlAdv1.TabGroups.SetTabGroup(pageLayoutTabItem, toolStripTabGroup1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5893,13 +5880,15 @@ Me.ribbonControlAdv1.TabGroups.Add(toolStripTabGroup3)
 
 Me.ribbonControlAdv1.TabGroups.SetTabGroup(pageLayoutTabItem, toolStripTabGroup1)
 
+{% endhighlight %}
+
 Customization
 
 Using the Color property, the color for the tabs can be set. Text for the tabs can be specified through Name property and the tabs can be shown or hidden using Visible property.
 
 Programmatically these properties can be set using the below code snippets.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5909,9 +5898,9 @@ toolStripTabGroup3.Name = "New Group";
 
 toolStripTabGroup3.Visible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5921,7 +5910,9 @@ toolStripTabGroup3.Name = "New Group"
 
 toolStripTabGroup3.Visible = True
 
-Title Settings 
+{% endhighlight %}
+
+#### Title Settings 
 
 This section describes how to customize a normal windows form's title bar appearance using the RibbonControlAdv.
 
@@ -5929,31 +5920,30 @@ Form Title Bar Settings
 
 When an application is created, it is usually displayed with the form title bar. The RibbonControlAdv provides option to replace this title bar with the built-in RibbonControlAdv system buttons and this can be enabled by setting the IsFormManager property to true. 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.ribbonControlAdv1.IsFormManager = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.IsFormManager = True
 
+{% endhighlight %}
 
 
 ![](Office-Controls_images/Office-Controls_img138.jpeg)
-{:.image }
+
 
 
 Title Settings
 
 The below properties deals with Ribbon title settings.
 
-_Table_ _768__: Property Table_
+_Table_ _768_: Property Table
 
 <table>
 <tr>
@@ -5975,7 +5965,7 @@ Sets the font color of the title.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5985,9 +5975,9 @@ this.ribbonControlAdv1.TitleFont = new System.Drawing.Font("Arial", 9.75F);
 
 this.ribbonControlAdv1.TitleColor = Color.GreenYellow;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5997,7 +5987,9 @@ Me.ribbonControlAdv1.TitleFont = New System.Drawing.Font("Arial", 9.75F)
 
 Me.ribbonControlAdv1.TitleColor = Color.GreenYellow
 
- Persistence Support
+{% endhighlight %}
+
+#### Persistence Support
 
 RibbonControlAdv comes with persistence support. Using this we can restore the saved state of the ribbon control.
 
@@ -6007,14 +5999,15 @@ Persistence works for the following.
 * Items added through the context menu that appears while clicking the dropdown arrow to the right of the QuickAccessToolBar can be persisted.
 * The collapsed / expanded / floating state of the RibbonPanel can be persisted.
 * The position of the QuickAccessToolBar, either below or above the ribbon panel can be persisted.
-###### Events And Methods
+
+### Events And Methods
 
 
 RibbonControlAdv comes with various events and methods to make easy customization.
 
 Events
 
-_Table_ _769__: Events Table_
+_Table_ _769_: Events Table
 
 <table>
 <tr>
@@ -6084,7 +6077,7 @@ EventArgs</td></tr>
 </table>
 Methods
 
-_Table_ _770__: Methods Table_
+_Table_ _770_: Methods Table
 
 <table>
 <tr>
@@ -6118,11 +6111,12 @@ Adds ToolStripTabItems to the RibbonPanel.</td></tr>
 RibbonControlAdv1.Header.MainItems.RemoveAt</td><td>
 Removes the specified ToolStripTabItems from the QuickAccessPanel.</td></tr>
 </table>
-SelectedTabItemChanged Event
+
+#### SelectedTabItemChanged Event
 
 This event is handled when selected tab of the RibbonControlAdv is changed. With the SelectedTabChangedEventArgs of this event, we can retrieve the NewSelectedTab and PrevSelectedTab.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6134,9 +6128,9 @@ private void ribbonControlAdv1_SelectedTabItemChanged(object sender, SelectedTab
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6146,7 +6140,9 @@ Private Sub ribbonControlAdv1_SelectedTabItemChanged(ByVal sender As Object, ByV
 
 End Sub
 
-BeforeCustomizeDropDownPopup Event
+{% endhighlight %}
+
+#### BeforeCustomizeDropDownPopup Event
 
 RibbonControlAdv has two events BeforeCustomizeDropDownPopup and AfterCustomizeDropDownPopup events that are handled before and after the CustomizeDropDownPopup is activated.
 
@@ -6154,7 +6150,7 @@ Example
 
 The QAT context menu items can be accessed through the DropDownEventArgs of the BeforeCustomizeDropDownPopup event and the QAT context menu can be customized such as adding new items, accessing existing items and so on.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6178,9 +6174,9 @@ private void ribbonControlAdv1_BeforeCustomizeDropDownPopup(object sender, DropD
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6200,94 +6196,92 @@ Private Sub ribbonControlAdv1_BeforeCustomizeDropDownPopup(ByVal sender As Objec
 
 End Sub
 
-##### MiniToolBar
+{% endhighlight %}
+
+### MiniToolBar
 
 Essential Tools comes with MiniToolBar control with similar look and feel of MS Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focussed on it, it will be prominent to the users. 
 
-> ![](Office-Controls_images/Office-Controls_img139.jpeg)
-{:.image }
- _Note: MiniToolBar control uses a ToolStripPanelItem to hold its options._
+> Note: MiniToolBar control uses a ToolStripPanelItem to hold its options.
 
 ![](Office-Controls_images/Office-Controls_img140.jpeg)
-{:.image }
+
 
 
 See Also
 
-###### Color Schemes in MiniToolBar
+#### Color Schemes in MiniToolBar
 
 MiniToolbar supports all the three ColorSchemes of Office2007, which can be set using the ColorScheme property.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img141.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img142.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img143.jpeg)
-{:.image }
 
 
-###### Creating MiniToolBar
+
+#### Creating MiniToolBar
 
 The sub topics under this section will guide you to create a MiniToolBar control, add controls to it and then associate it with a control. The topics are as follows.
 
-Through Designer
+##### Through Designer
 
 To add a MiniToolBar to the form, follow the below given steps.
 
 * Drag and drop a MiniToolBar from the toolbox. 
 
 ![](Office-Controls_images/Office-Controls_img144.jpeg)
-{:.image }
+
 
 
 * Open the Items Collection Editor of the MiniToolBar.
 
 ![](Office-Controls_images/Office-Controls_img145.jpeg)
-{:.image }
+
 
 
 * Add the required items into the MiniToolBar from the Items collection Editor and click Ok. 
 
 ![](Office-Controls_images/Office-Controls_img146.jpeg)
-{:.image }
+
 
 
 * Now, drag and drop the control with which the MiniToolBar is to be associated, for eg. a RichTextBox.
 * Set the MiniToolBar's AssociatedControl property to the control to which this is to be associated.
 
 ![](Office-Controls_images/Office-Controls_img147.jpeg)
-{:.image }
+
 
 
 * Run the sample and right-click on the RichTextBox to view the MiniToolBar. 
 
 ![](Office-Controls_images/Office-Controls_img148.jpeg)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img149.jpeg)
-{:.image }
- _Note: You can also show a MiniToolBar by just selecting the text, as in MSOffice2007, using MouseUp event of the particular control._
+
+> Note: You can also show a MiniToolBar by just selecting the text, as in MSOffice2007, using MouseUp event of the particular control
 
 A sample which demonstrates this features is available in the below sample installation location.
 
@@ -6297,7 +6291,7 @@ See Also
 
 Creating MiniToolBar Through Code
 
-Through Code
+##### Through Code
 
 This section guides you with the steps to add a MiniToolbar and associating with a RichTextBox control programmatically.
 
@@ -6305,7 +6299,7 @@ This section guides you with the steps to add a MiniToolbar and associating with
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6313,9 +6307,9 @@ using Syncfusion.Windows.Forms;  
 
 using Syncfusion.Windows.Forms.Tools;   
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -6323,13 +6317,13 @@ Imports Syncfusion.Windows.Forms
 
 Imports Syncfusion.Windows.Forms.Tools
 
-
+{% endhighlight %}
 
 * Declare and initialize the MiniToolBar control. Also declare the controls to be added to the MiniToolBar, and also the control, in this case RichTextBow, to which MiniToolBar is to be associated.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6361,9 +6355,9 @@ this.PanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
 
 this.FontFaceCombo = new System.Windows.Forms.ToolStripComboBox();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -6395,13 +6389,13 @@ Me.PanelItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
 
 Me.FontFaceCombo = New System.Windows.Forms.ToolStripComboBox()
 
-
+{% endhighlight %}
 
 * Add the required items into the MiniToolBar.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6429,9 +6423,9 @@ this.PanelItem1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.F
 
 this.FontFaceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;     
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -6459,23 +6453,24 @@ Me.PanelItem1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FontF
 
 Me.FontFaceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 
-
+{% endhighlight %}
 
 * Set the MiniToolBar's AssociatedControl property to the RichTextBox to which this is to be associated.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 //Associates the MiniToolBar with the RichTextBox
 
-this.MiniToolBar.AssociatedControl = this.richTextBox1;         
+this.MiniToolBar.AssociatedControl = this.richTextBox1;   
+      
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -6483,25 +6478,25 @@ this.MiniToolBar.AssociatedControl = this.richTextBox1;         
 
 Me.MiniToolBar.AssociatedControl = Me.richTextBox1
 
-
+{% endhighlight %}
 
 * Right-click on the RichTextBox to view the MiniToolBar.
 
 
 
 ![](Office-Controls_images/Office-Controls_img150.jpeg)
-{:.image }
+
 
 
 A sample which demonstrates how to create and add controls to the MiniToolBar is available in the below sample installation location.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### MiniToolBar Events
+#### MiniToolBar Events
 
 This section discusses about various events that can be handled for the MiniToolBar control. Following are the events covered.
 
-ItemAdded Event
+##### ItemAdded Event
 
 This event is handled when a ToolStripItem has been added to the ToolStrip's Item collection.
 
@@ -6509,7 +6504,7 @@ Event Data
 
 The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArgs containing data related to this event. The following type ToolStripItemEventArgs member provide information specific to this event.
 
-_Table_ _771__: Member Table_
+_Table_ _771_: Member Table
 
 <table>
 <tr>
@@ -6523,7 +6518,7 @@ Gets a System.Windows.Forms.ToolStripItem for which to handle events.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6545,9 +6540,9 @@ Console.WriteLine("ToolStrip Item Name : " + arg.Item.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6567,7 +6562,9 @@ Console.Write("ToolStrip Item Name : " + arg.Item.ToString)
 
 End Sub
 
-ItemClicked Event
+{% endhighlight %}
+
+##### ItemClicked Event
 
 This event is handled when a ToolStripItem has been added to the ToolStrip's Item collection.
 
@@ -6575,7 +6572,7 @@ Event Data
 
 The ToolStripItemClickedEventHandler receives an argument of type ToolStripItemEventArgs containing data related to this event. The following type ToolStripItemEventArgs member provide information specific to this event.
 
-_Table_ _772__: Member Table_
+_Table_ _772_: Member Table
 
 <table>
 <tr>
@@ -6589,7 +6586,7 @@ Gets the item that is clicked on System.Windows.Forms.Toolstrip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6607,9 +6604,9 @@ Console.WriteLine("ToolStrip Item Name : " + arg.ClickedItem.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6625,7 +6622,9 @@ Console.Write("ToolStrip Item Name : " + arg.ClickedItem.ToString)
 
 End Sub
 
-ItemRemoved Event
+{% endhighlight %}
+
+##### ItemRemoved Event
 
 This event is handled when a ToolStripItem has been removed from the ToolStrip's Item collection.
 
@@ -6633,7 +6632,7 @@ Event Data
 
 The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArgs containing data related to this event. The following ToolStripItemEventArgs member provide information specific to this event.
 
-_Table_ _773__: Member Table_
+_Table_ _773_: Member Table
 
 <table>
 <tr>
@@ -6647,7 +6646,7 @@ Gets a System.Windows.Forms.ToolStripItem for which to handle events.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6659,9 +6658,9 @@ e.Item = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6671,11 +6670,13 @@ e.Item = True
 
 End Sub
 
-BeginDrag Event
+{% endhighlight %}
+
+##### BeginDrag Event
 
 This event is handled when the toolstrip has started to move with a ToolStripPanel.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6689,9 +6690,9 @@ Console.Write("BeginDrag Event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6703,9 +6704,9 @@ Console.Write("BeginDrag Event is raised");
 
 End Sub
 
+{% endhighlight %}
 
-
-Opening Event
+##### Opening Event
 
 This event occurs when the drop down is opening.
 
@@ -6713,7 +6714,7 @@ Event Data
 
 The CancelEventHandler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs members provide information specific to this event.
 
-_Table_ _774__: Member Table_
+_Table_ _774_: Member Table
 
 <table>
 <tr>
@@ -6727,7 +6728,7 @@ Gets or Sets a value indicating whether the event should be canceled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6743,9 +6744,9 @@ e.Cancel=true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6759,11 +6760,13 @@ e.Cancel=true;
 
 End Sub
 
-Opened Event
+{% endhighlight %}
+
+##### Opened Event
 
 This event occurs when the drop down has opened.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6777,9 +6780,9 @@ Console.Write(" Opened Event is raised");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6791,28 +6794,30 @@ Console.Write(" Opened Event is raised");
 
 End Sub
 
-##### StatusStripEx
+{% endhighlight %}
+
+### StatusStripEx
 
 Essential Tools has come up with StatusStripEx control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
 ![](Office-Controls_images/Office-Controls_img151.jpeg)
-{:.image }
 
 
-###### Creating a StatusStripEx
+
+#### Creating a StatusStripEx
 
 Through Designer
 
 The StatusStripEx can be added to the form by dragging a StatusStripEx control from the Toolbox. It can be docked to the bottom of the RibbonControlAdv. 
 
 ![](Office-Controls_images/Office-Controls_img152.jpeg)
-{:.image }
+
 
 
 Dock the StatusStripEx control to the bottom using Dock property.
 
 ![](Office-Controls_images/Office-Controls_img153.jpeg)
-{:.image }
+
 
 
 Adding Items to the StatusStripEx
@@ -6820,18 +6825,16 @@ Adding Items to the StatusStripEx
 Access the Items property of the control, to open the Items Collection Editor. Use this editor to add customized StatusControl items. The Editor will let you modify the look and feel of the items using the properties provided on it right side.
 
 ![](Office-Controls_images/Office-Controls_img154.png)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img155.jpeg)
-{:.image }
- _Note: A shortcut to add the ToolStripStatus Items is through Tasks Window. See Smart Tag options to know more._
+
+> Note: A shortcut to add the ToolStripStatus Items is through Tasks Window. See Smart Tag options to know more.
 
 Through Code
 
 StatusStripEx can be created programmatically using the code below. This code snippet adds a ToolStripStatus Label to the StatusStripEx control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6869,9 +6872,9 @@ this.Controls.Add(this.statusStripEx1);
 
 this.statusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6907,20 +6910,20 @@ Docking the StatusStripEx to Bottom'
 
 Me.statusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
 
-
+{% endhighlight %}
 
 A sample which demonstrates the creation of StatusStripEx control and adding ToolStripStatus Items are available in the below sample installation location.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### Smart Tag Options
+#### Smart Tag Options
 
 Clicking the Smart Tag of the StatusStripEx, displays the below Tasks window. This window lets you add ToolStripStatus Items.
 
 
 
 ![](Office-Controls_images/Office-Controls_img156.jpeg)
-{:.image }
+
 
 
 The options are,
@@ -6946,11 +6949,11 @@ Creating a StatusStripEx
 
 ColorSchemes for StatusStripEx
 
-###### SizingGrip Settings
+#### SizingGrip Settings
 
 The StatusStripEx control has a sizing grip at its bottom right corner. This sizing grip can be shown or hidden using SizingGrip property. The below properties controls the appearance of the sizing grip.
 
-_Table_ _775__: Property Table_
+_Table_ _775_: Property Table
 
 <table>
 <tr>
@@ -6968,7 +6971,7 @@ Gets or sets the margin for the sizing grip.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6978,9 +6981,9 @@ this.statusStripEx1.GripStyle = ToolStripGripStyle.Visible;
 
 this.statusStripEx1.GripMargin = new Padding(5);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6990,43 +6993,44 @@ Me.statusStripEx1.GripStyle = ToolStripGripStyle.Visible
 
 Me.statusStripEx1.GripMargin = New Padding(5)
 
-###### ColorSchemes for StatusStripEx
+{% endhighlight %}
+
+#### ColorSchemes for StatusStripEx
 
 StatusStripEx supports all the three color schemes, i.e., Silver, Blue and Black schemes of Office2007. It can be changed using OfficeColorScheme property.
 
-Tooltips[C#]
+Tooltips
 
+{% highlight c# %}
 
 
 this.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img157.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img158.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img159.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the StatusStripEx by setting OfficeColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7034,9 +7038,9 @@ this.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStrip
 
 Office2007Colors.ApplyManagedColors(this, Color.DarkGreen);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7044,10 +7048,10 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 
 Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img160.jpeg)
-{:.image }
+
 
 
 See Also
@@ -7058,11 +7062,11 @@ Smart Tag Options
 
 SizingGrip Settings
 
-###### Custom Context Menu
+#### Custom Context Menu
 
 It is possible to customize the statusbar context menu that displays in StatusStripEx, to look like Word2007. This can be done by setting StatusString property of NotificationItems like StatusStripButton, StatusStripLabel, so on.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7072,9 +7076,9 @@ this.statusStripLabel1.Text = "Pages";
 
 this.statusStripLabel1.StatusString = "1/1";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7084,12 +7088,14 @@ Me.statusStripLabel1.Text = "Pages"
 
 Me.statusStripLabel1.StatusString = "1/1"
 
-##### ScrollersFrame
+{% endhighlight %}
+
+### ScrollersFrame
 
 The ScrollersFrame control attaches Office2007 Style scrollbars to any scrollable control or container. 
 
 ![](Office-Controls_images/Office-Controls_img161.jpeg)
-{:.image }
+
 
 
 Attaching Scrollbar to a Control
@@ -7097,10 +7103,10 @@ Attaching Scrollbar to a Control
 To the Windows form, add a control, which should be attached with the Office2007Style scrollbars. Select the control in the ScrollersFrame.AttachedTo property.
 
 ![](Office-Controls_images/Office-Controls_img162.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -7108,9 +7114,9 @@ To the Windows form, add a control, which should be attached with the Office2007
 
 this.scrollersFrame1.AttachedTo = this.treeViewAdv1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7118,15 +7124,15 @@ this.scrollersFrame1.AttachedTo = this.treeViewAdv1;
 
 Me.scrollersFrame1.AttachedTo = Me.treeViewAdv1
 
-> ![](Office-Controls_images/Office-Controls_img163.jpeg)
-{:.image }
- _Note: This property lists all the controls that are added to the form. User can the select any one control, for which scrolls needs to be attached._ 
+{% endhighlight %}
 
-###### Adding Controls to the ScrollBar
+> Note: This property lists all the controls that are added to the form. User can the select any one control, for which scrolls needs to be attached.
+
+#### Adding Controls to the ScrollBar
 
 There are two collection properties available for the ScrollersFrame which lets you add controls before or after the scrollbars. They are ControlsAfter and ControlsBefore properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7138,9 +7144,9 @@ this.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv1);
 
 this.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv2);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7152,23 +7158,24 @@ Me.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv1)
 
 Me.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv2)
 
+{% endhighlight %}
 
 
 The below images illustrates the controls that are added, before and after the scrolls.
 
 ![](Office-Controls_images/Office-Controls_img164.jpeg)
-{:.image }
+
 
 
 See Also
 
 Visual Styles
 
-###### Scroll Settings in ScrollersFrame
+#### Scroll Settings in ScrollersFrame
 
 The horizontal and vertical scrollers has Value property, which represents the current position of the scrollbox on the scroll bar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
 
-_Table_ _776__: Property Table_
+_Table_ _776_: Property Table
 
 <table>
 <tr>
@@ -7186,7 +7193,7 @@ Gets / sets a value to be added or subtracted from the Value Property, when vert
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7194,9 +7201,9 @@ this.scrollersFrame2.VerticallSmallChange = 25;
 
 this.scrollersFrame2.HorizontalSmallChange = 25;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7204,11 +7211,13 @@ Me.scrollersFrame2.VerticallSmallChange = 25
 
 Me.scrollersFrame2.HorizontalSmallChange  = 25
 
-###### Visual Styles 
+{% endhighlight %}
+
+#### Visual Styles 
 
 Visual Styles for the ScrollersFrame Control can be edited through VisualStyle property.	
 
-_Table_ _777__: Property Table_
+_Table_ _777_: Property Table
 
 <table>
 <tr>
@@ -7226,53 +7235,49 @@ Sets the office color schemes for the scrollbars when VisualStyle is set to Offi
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007
 
+{% endhighlight %}
+
 ![](Office-Controls_images/Office-Controls_img165.jpeg)
-{:.image }
 
 
-[C#]
 
-
+{% highlight c# %}
 
 this.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img166.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img167.jpeg)
-{:.image }
+
 
 
 Custom Colors
 
 We can also apply custom colors to the ScrollersFrame by setting OfficeColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7280,9 +7285,9 @@ this.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007Colo
 
 Office2007Colors.ApplyManagedColors(this, Color.LightSkyBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7290,22 +7295,22 @@ Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorS
 
 Office2007Colors.ApplyManagedColors(Me, Color.LightSkyBlue)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img168.jpeg)
-{:.image }
+
 
 
 See Also
 
 Adding Controls to the ScrollBar
 
-##### ContextMenuStripEx
+### ContextMenuStripEx
 
 ContextMenuStripEx is a separate control in Essential Tools with advanced features embedded in it. It can be dragged and dropped from the toolbox.
 
 ![](Office-Controls_images/Office-Controls_img169.jpeg)
-{:.image }
+
 
 
 Creating ContextMenuStripEx
@@ -7315,24 +7320,24 @@ Through Designer
 Drag and drop a ContextMenuStripEx to the form. Click "Type Here" to add the items. This displays a collection of menu items, using which user can add the menu items. 
 
 ![](Office-Controls_images/Office-Controls_img170.jpeg)
-{:.image }
+
 
 
 Items can also be added using ContextMenuStripEx.Items property or Edit Items... command in the property grid.
 
 ![](Office-Controls_images/Office-Controls_img171.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img172.jpeg)
-{:.image }
+
 
 
 Through Code
 
 The below code snippets adds a ToolStripItem (Cut) to the menu list.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7368,9 +7373,9 @@ this.toolStripMenuItem1.Text = "Cu&t";
 
 this.EditorContextMenuStripEx.ResumeLayout(false);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7406,6 +7411,8 @@ Me.toolStripMenuItem1.Text = "Cu&t"
 
 Me.EditorContextMenuStripEx.ResumeLayout(False)
 
+{% endhighlight %}
+
 Associating the ContextMenuStrip to a control
 
 This can be easily done by assigning the ContextMenuStripEx to the Control.ContextMenuStrip property.
@@ -7413,29 +7420,29 @@ This can be easily done by assigning the ContextMenuStripEx to the Control.Conte
 
 
 ![](Office-Controls_images/Office-Controls_img173.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
 this.richTextBox1.ContextMenuStrip = this.contextMenuStripEx1;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.richTextBox1.ContextMenuStrip = Me.contextMenuStripEx1
 
-
+{% endhighlight %}
 
 At Run time, when the user right clicks the control, menu items will be displayed like the below image.
 
 ![](Office-Controls_images/Office-Controls_img174.jpeg)
-{:.image }
+
 
 
 Various Features and Customization options are discussed in the following topics.
@@ -7446,7 +7453,8 @@ Various Features and Customization options are discussed in the following topics
 * RunTime Features
 * RTL Support
 * ToolStripItems
-###### Style Settings
+
+#### Style Settings
 
 
 Office12ToolStripRenderer Class
@@ -7455,7 +7463,7 @@ Using the Office12ToolStripRenderer Class, the appearance of the ContextMenuStri
 
 Use the below code snippet for implementing this feature.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7469,9 +7477,9 @@ ct.UseSystemColors = false;
 
 m_Office12Renderer = new Syncfusion.Windows.Forms.Tools.Office12ToolStripRenderer(ct);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7485,11 +7493,11 @@ ct.UseSystemColors = False
 
 m_Office12Renderer = New Syncfusion.Windows.Forms.Tools.Office12ToolStripRenderer(ct)
 
-
+{% endhighlight %}
 
 In the form load event, add one of the below code to change the appearance.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7505,9 +7513,9 @@ this.contextMenuStripEx1.Renderer = new Office12ToolStripRenderer(new OfficeBlue
 
 this.contextMenuStripEx1.Renderer = new Office12ToolStripRenderer(new Office12ColorTable());
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7523,17 +7531,17 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New OfficeBlue)
 
 Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12ColorTable())
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img175.jpeg)
-{:.image }
+
 
 
 Rendering Mode
 
 Rendering mode of the ContextMenuStripEx can be controlled using the below property.
 
-_Table_ _778__: Property Table_
+_Table_ _778_: Property Table
 
 <table>
 <tr>
@@ -7547,87 +7555,81 @@ Represents the painting style applied to the control. The different styles suppo
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img176.jpeg)
-{:.image }
 
 
-###### Foreground Settings of ContextMenuStripEx
+
+#### Foreground Settings of ContextMenuStripEx
 
 Caption
 
 Caption for the context menu can be specified in Text property. 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ContextMenuStripEx.Text = "Context Menu Items";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.ContextMenuStripEx.Text = "Context Menu Items"
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img177.jpeg)
-{:.image }
+
 
 
 Menu Items
 
 The font style for the menu items can be controlled using Font property. 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.contextMenuStripEx2.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.contextMenuStripEx1.Font = New System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img178.jpeg)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img179.jpeg)
-{:.image }
- _Note: The font face of the Caption alone changes based on this Font property._
 
-###### Margin and Shadow Settings 
+> Note: The font face of the Caption alone changes based on this Font property.
+
+#### Margin and Shadow Settings 
 
 Shadow Settings
 
 Shadow for the context menu drop down is controlled using the below property.
 
-_Table_ _779__: Property Table_
+_Table_ _779_: Property Table_
 
 <table>
 <tr>
@@ -7641,33 +7643,29 @@ Shows or hides three dimensional shadow for the context menu.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.contextMenuStripEx1.DropShadowEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.contextMenuStripEx1.DropShadowEnabled = True
 
-
+{% endhighlight %}
 
 The below image displays a shadow for the context menu strip.
 
 ![](Office-Controls_images/Office-Controls_img180.jpeg)
-{:.image }
+
 
 
 Margin Settings
 
 We can set margins for the context menu using the below properties.
 
-_Table_ _780__: Property Table_
+_Table_ _780_: Property Table
 
 <table>
 <tr>
@@ -7689,7 +7687,7 @@ Sets the size of images on items.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7697,9 +7695,9 @@ this.contextMenuStripEx1.ShowCheckMargin = true;
 
 this.contextMenuStripEx1.ShowImageMargin = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7707,51 +7705,49 @@ Me.contextMenuStripEx1.ShowCheckMargin = True
 
 Me.contextMenuStripEx1.ShowImageMargin = True
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img181.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img182.jpeg)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img183.jpeg)
-{:.image }
- _Note: The check functionality can be enabled using the Checked property and check state can be provided using CheckedState property available for individual menu item, through Items Collection Editor._
 
-###### RunTime Features 
+> Note: The check functionality can be enabled using the Checked property and check state can be provided using CheckedState property available for individual menu item, through Items Collection Editor.
+
+#### RunTime Features 
 
 Menu Item Tooltips
 
 The menu items can display tooltips while mouse hovering, by enabling ShowItemToolTips property.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.contextMenuStripEx1.ShowItemToolTips = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.contextMenuStripEx1.ShowItemToolTips = True
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img184.jpeg)
-{:.image }
+
 
 
 Auto Closing At Runtime
 
 AutoClose property of the ContextMenuStrip control, when set to true, will close the context menu dropdown when the user clicks any item. If this is not enabled, the menu items will not be closed even after user actions.
 
-_Table_ _781__: Property Table_
+_Table_ _781_: Property Table
 
 <table>
 <tr>
@@ -7761,59 +7757,56 @@ Description</td></tr>
 <tr>
 <td>
 AutoClose</td><td>
-Specifies whether the context menu closes for any user actions at runtime.{{ _True_ | markdownify }} - Closes the context menu dropdown, when the user selects or clicks any item.{{ _False_ | markdownify }} - The context menu drop down will not be closed for any user actions.</td></tr>
+Specifies whether the context menu closes for any user actions at runtime.{{ '_True_' | markdownify }} - Closes the context menu dropdown, when the user selects or clicks any item.{{ '_False_'| markdownify }} - The context menu drop down will not be closed for any user actions.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.contextMenuStripEx1.AutoClose = true;
+{% endhighlight %}
 
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.contextMenuStripEx1.AutoClose = True
 
-###### RTL Support
+{% endhighlight %}
+
+#### RTL Support
 
 ContextMenuStripEx has RTL support which can be enabled using RightToLeft property.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.contextMenuStripEx1.RightToLeft = Yes;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.contextMenuStripEx1.RightToLeft = Yes
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img185.jpeg)
-{:.image }
 
 
-###### ToolStripItems
+
+#### ToolStripItems
 
 The following are the ToolStripItems which can be added as menu items to the ContextMenuStripEx control.
 
-ToolStripItem - MenuItem
+##### ToolStripItem - MenuItem
 
 The ToolStripMenuItem supports all the general properties of a ToolStripItems. This section will walk you through the unique properties with their description for the ToolStripMenuItem.
 
-_Table_ _782__: Property Table_
+_Table_ _782_: Property Table
 
 <table>
 <tr>
@@ -7863,7 +7856,7 @@ Invokes the Items Collection Editor and lets you add ToolStripItems to be displa
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7881,9 +7874,9 @@ this.toolStripMenuItem2});
 
 this.hyperlinkToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7897,17 +7890,17 @@ Me.fontToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStr
 
 Me.hyperlinkToolStripMenuItem.ShortcutKeys = DirectCast(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C)), System.Windows.Forms.Keys) 
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img186.jpeg)
-{:.image }
 
 
-ToolStripItem - ComboBox
+
+##### ToolStripItem - ComboBox
 
 This section lists the unique properties of a ToolStripComboBox item and their description.
 
-_Table_ _783__: Property Table_
+_Table_ _783_: Property Table
 
 <table>
 <tr>
@@ -7957,11 +7950,12 @@ Represents the source of strings used for autocompletion. The sources can be,Fil
 <tr>
 <td>
 AutoCompleteMode</td><td>
-Indicates text completion behavior of the combo box. The modes are,{{ _Suggest_ | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ _Append_ | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ _SuggestAppend_ | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
+Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,{{ '_Append_' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and {{ '_SuggestAppend_' | markdownify }} - Displays the drop down, also appends the highlighted string.</td></tr>
 </table>
+
 AutoComplete Feature
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7971,9 +7965,9 @@ this.toolStripComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode
 
 this.toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7983,17 +7977,17 @@ Me.toolStripComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.S
 
 Me.toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource 
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img187.jpeg)
-{:.image }
 
 
-Separator
+
+##### Separator
 
 This section lists the unique properties of a ToolStripSeparator and their description.
 
-_Table_ _784__: Property Table_
+_Table_ _784_: Property Table
 
 <table>
 <tr>
@@ -8017,11 +8011,12 @@ Determines whether the item should automatically size based on its image and tex
 Visible</td><td>
 Sets the visibility of the separator.</td></tr>
 </table>
-TextBox
+
+##### TextBox
 
 This section lists the unique properties of a ToolStripTextBox item and their description.
 
-_Table_ _785__: Property Table_
+_Table_ _785_: Property Table
 
 <table>
 <tr>
@@ -8069,23 +8064,24 @@ Maximum number of characters that can be entered into the control.</td></tr>
 ReadOnly</td><td>
 Indicates whether the text in the textbox is read-only.</td></tr>
 </table>
-##### TrackBarEx
+
+### TrackBarEx
 
 The TrackBarEx is a new Office2007 control, which has a track bar or a pointer which slides between the minimum value and maximum value specified. The user can drag the track bar along the line and also, the pointer can be placed at a particular point by clicking a position inside this TrackBar. 
 
 A TrackBarEx can be added to your form by simply dragging-and-dropping the control from the toolbox.
 
 ![](Office-Controls_images/Office-Controls_img188.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img189.jpeg)
-{:.image }
+
 
 
 It can be created programmatically using the below code snippets.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8095,9 +8091,9 @@ this.trackBarEx1 = new Syncfusion.Windows.Forms.Tools.TrackBarEx();
 
 this.Controls.Add(this.trackBarEx1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8107,15 +8103,15 @@ Me.trackBarEx1 = New Syncfusion.Windows.Forms.Tools.TrackBarEx
 
 Me.Controls.Add(Me.trackBarEx1)
 
-
+{% endhighlight %}
 
 Various Features and Customization options are discussed in the following topics.
 
-###### Button, Slider and Channel Settings 
+#### Button, Slider and Channel Settings 
 
 The properties which controls the size of various components of the TrackBarEx are as follows.
 
-_Table_ _786__: Property Table_
+_Table_ _786_: Property Table
 
 <table>
 <tr>
@@ -8143,7 +8139,7 @@ Button Appearance
 
 The below properties will let you control the appearance of the Increase, Decrease and slider buttons.
 
-_Table_ _787__: Property Table_
+_Table_ _787_: Property Table
 
 <table>
 <tr>
@@ -8169,7 +8165,7 @@ Sets the color of the buttons and the slider, when they are pushed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8181,9 +8177,9 @@ this.trackBarEx1.HighlightedButtonColor = System.Drawing.Color.AliceBlue;
 
 this.trackBarEx1.PushedButtonEndColor = System.Drawing.Color.OrangeRed;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8195,31 +8191,31 @@ Me.trackBarEx1.HighlightedButtonColor = System.Drawing.Color.AliceBlue
 
 Me.trackBarEx1.PushedButtonEndColor = System.Drawing.Color.OrangeRed
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img190.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img191.jpeg)
-{:.image }
 
 
-###### TrackBar Appearance
+
+#### TrackBar Appearance
 
 FocusRectangle
 
 A focus rectangle for the TrackBarEx control can be shown or hidden using ShowFocusRect property.
 
 ![](Office-Controls_images/Office-Controls_img192.jpeg)
-{:.image }
+
 
 
 Gradient Start and End Color
 
 By default, the TrackBarEx control has a gradient appearance. The start color and end color for this gradient appearance can be specified using TrackBarGradientStart and TrackBarGradientEnd properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8227,9 +8223,9 @@ this.trackBarEx1.TrackBarGradientEnd = System.Drawing.Color.CadetBlue;
 
 this.trackBarEx1.TrackBarGradientStart = System.Drawing.Color.MintCream;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8237,39 +8233,37 @@ Me.trackBarEx1.TrackBarGradientEnd = System.Drawing.Color.CadetBlue
 
 Me.trackBarEx1.TrackBarGradientStart = System.Drawing.Color.MintCream
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img193.jpeg)
-{:.image }
+
 
 
 The control can be given a transparent background by enabling the Transparent property.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.trackBarEx1.Transparent = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.trackBarEx1.Transparent = True
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img194.jpeg)
-{:.image }
+
 
 
 TrackBarEx Orientation
 
 This control has options for vertical and horizontal orientation.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8281,9 +8275,9 @@ this.trackBarEx1.Orientation = Orientation.Vertical;
 
 this.trackBarEx1.Orientation = Orientation.Horizontal;  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8295,17 +8289,17 @@ Me.trackBarEx1.Orientation = Orientation.Vertical
 
 Me.trackBarEx1.Orientation = Orientation.Horizontal
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img195.jpeg)
-{:.image }
 
 
-###### TrackBar Value
+
+#### TrackBar Value
 
 The TrackBarEx control slides between the minimum and maximum values, which are specified in Minimum and Maximum properties. The properties with description are listed in the below table.
 
-_Table_ _788__: Property Table_
+_Table_ _788_: Property Table
 
 <table>
 <tr>
@@ -8339,7 +8333,7 @@ Specifies the interval for the timer. Default is 100.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8355,9 +8349,9 @@ this.trackBarEx1.LargeChange = 15;
 
 this.trackBarEx1.TimerInterval = 50;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8373,11 +8367,11 @@ Me.trackBarEx1.LargeChange = 15
 
 Me.trackBarEx1.TimerInterval = 50
 
-
+{% endhighlight %}
 
 Following are the methods for the TrackBarEx control which gives the respective results based on SmallChange and LargeChange properties.
 
-_Table_ _789__: Property Table_
+_Table_ _789_: Property Table
 
 <table>
 <tr>
@@ -8401,11 +8395,12 @@ Decreases the value by small change specified in SmallChange property.</td></tr>
 SmallIncrease</td><td>
 Increases the value by small change specified in SmallChange property.</td></tr>
 </table>
-###### TrackBarEx Event
+
+#### TrackBarEx Event
 
 Scroll event of the TrackBarEx will be handled whenever the user moves the slider.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8417,9 +8412,9 @@ private void trackBarEx1_Scroll(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8429,21 +8424,21 @@ Private Sub trackBarEx1_Scroll(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img196.jpeg)
-{:.image }
 
 
-###### Frequently Asked Questions
 
-How to customize the appearance of TrackBarEx?
+#### Frequently Asked Questions
+
+##### How to customize the appearance of TrackBarEx?
 
 The TrackBarEx control appearance can be customized as like in Win 8 application. You can achieve this using the following code example.
 
 
 
-[C#]
+{% highlight c# %}
 
             this.trackBarEx1.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Metro;            
 
@@ -8451,9 +8446,9 @@ The TrackBarEx control appearance can be customized as like in Win 8 application
 
             this. trackBarEx1.SliderSize = new Size(12, 12);    
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
             Me.TrackBarEx1.Style = TrackBarEx.Theme.Metro           
 
@@ -8461,18 +8456,18 @@ The TrackBarEx control appearance can be customized as like in Win 8 application
 
             Me.TrackBarEx1.SliderSize = New Size(12, 12)    
 
-
+{% endhighlight %}
 
 ![C:/Users/ashwini/Desktop/Untitled1.png](Office-Controls_images/Office-Controls_img197.png)
-{:.image }
 
 
-##### SuperToolTip
+
+### SuperToolTip
 
 In Office 2007, Microsoft has introduced a SuperToolTip control to display the tooltip. Essential Tools has also come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
 
 ![](Office-Controls_images/Office-Controls_img198.jpeg)
-{:.image }
+
 
 
 * Header - The Header is used to display text which is used as a header for the tooltip.
@@ -8484,23 +8479,21 @@ Creating SuperToolTip Through Designer
 1. Drag and drop the SuperToolTip on your form.
 2. When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the toolstrip or tabitem in the RibbonControlAdv.
 
-![](Office-Controls_images/Office-Controls_img199.jpeg)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img199.jpeg)
 
 
-> ![](Office-Controls_images/Office-Controls_img200.jpeg)
-{:.image }
- _Note: You can also get or set a tooltip programmatically. It is discussed here._
+
+    > Note: You can also get or set a tooltip programmatically. It is discussed here.
 
 3. Clicking the … ellipse button will show the ToolTip Editor Dialog Box. This editor lets you customize the ToolTip items.
 
 ![](Office-Controls_images/Office-Controls_img201.jpeg)
-{:.image }
+
 
 
 Through Code
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8526,9 +8519,9 @@ toolTipInfo1.Header.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 
 this.superToolTip1.SetToolTip(this.toolStripTabItem1, toolTipInfo1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8552,13 +8545,15 @@ toolTipInfo1.Header.TextAlign = System.Drawing.ContentAlignment.TopCenter
 
 //Associating SuperToolTip for ToolStripTabItem
 
-Me.superToolTip1.SetToolTip(this.toolStripTabItem1, toolTipInfo1)
+Me.superToolTip1.SetToolTip(this.toolStripTabItem1, toolTipInfo1
 
-###### Appearance Settings 
+{% endhighlight %}
+
+#### Appearance Settings 
 
 The appearance of the Super ToolTip can be customized using the below properties. This properties can be edited during design time using ToolTip Editor.
 
-_Table_ _790__: Property Table_
+_Table_ _790_: Property Table
 
 <table>
 <tr>
@@ -8585,10 +8580,10 @@ Shows or hides a separator between the Body and the Footer tooltip items.</td></
 
 
 ![](Office-Controls_images/Office-Controls_img202.jpeg)
-{:.image }
 
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -8600,9 +8595,9 @@ toolTipInfo1.ForeColor = System.Drawing.SystemColors.ControlText;
 
 toolTipInfo2.Separator = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8614,17 +8609,17 @@ toolTipInfo1.ForeColor = System.Drawing.SystemColors.ControlText
 
 toolTipInfo2.Separator = True
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img203.jpeg)
-{:.image }
+
 
 
 Behavior Settings
 
 The following properties control the behavior of the SuperToolTip control.
 
-_Table_ _791__: Property Table_
+_Table_ _791_: Property Table
 
 <table>
 <tr>
@@ -8658,7 +8653,7 @@ Gets/Sets whether the ToolTip should be visible or not. Default value is true.De
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8674,9 +8669,9 @@ this.superToolTip1.RightToLeft = RightToLeft.Yes;
 
 this.treeViewAdv1.ShowToolTip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8692,6 +8687,8 @@ this.superToolTip1.RightToLeft = RightToLeft.Yes
 
 Me.treeViewAdv1.ShowToolTip = True
 
+{% endhighlight %}
+
 Balloon Style Appearance in SuperToolTip
 
 Style property is added to set Balloon style for SuperTooltip.  SuperToolTipStyle enumeration contains Balloon and Normal value. 
@@ -8699,36 +8696,32 @@ Style property is added to set Balloon style for SuperTooltip.  SuperToolTipStyl
 Set Style property to Balloon to change the SuperToolTip appearance as balloon.
 
 ![](Office-Controls_images/Office-Controls_img204.jpeg)
-{:.image }
+
 
 
 The following code illustrates how to set SuperToolTipStyle.
 
-[C# .Net]
-
-
+{% highlight c# %}
 
 this.superToolTip1.Style = Syncfusion.Windows.Forms.Tools.SuperToolTip.SuperToolTipStyle.Balloon;
 
+{% endhighlight %}
 
-
-[VB .Net]
-
-
+{% highlight vbnet%}
 
 Me.superToolTip1.Style = Syncfusion.Windows.Forms.Tools.SuperToolTip.SuperToolTipStyle.Balloon
 
-###### ToolTip Items Customization
+{% endhighlight %}
+
+#### ToolTip Items Customization
 
 This section discusses the customization properties for the ToolTipItems.
 
-> ![](Office-Controls_images/Office-Controls_img205.jpeg)
-{:.image }
- _Note: All these properties are applicable to all the three ToolTipItems._
+> Note: All these properties are applicable to all the three ToolTipItems.
 
 Image Settings
 
-_Table_ _792__: Property Table_
+_Table_ _792_: Property Table
 
 <table>
 <tr>
@@ -8756,7 +8749,7 @@ Sets the transparent color for the image.</td></tr>
 
 Images can be associated with the header, body and footer of the super tooltip using this property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8766,9 +8759,9 @@ toolTipInfo1.Footer.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
 toolTipInfo1.Footer.ImageScalingSize = new System.Drawing.Size(16, 16);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8778,15 +8771,15 @@ toolTipInfo1.Footer.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
 
 toolTipInfo1.Footer.ImageScalingSize = New System.Drawing.Size(16, 16)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img206.jpeg)
-{:.image }
+
 
 
 Foreground Settings
 
-_Table_ _793__: Property Table_
+_Table_ _793_: Property Table
 
 <table>
 <tr>
@@ -8804,7 +8797,7 @@ Sets the ForeColor for the item's text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8812,9 +8805,9 @@ toolTipInfo1.Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F
 
 toolTipInfo1.Header.ForeColor = System.Drawing.Color.Black;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8822,9 +8815,11 @@ toolTipInfo1.Header.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F
 
 toolTipInfo1.Header.ForeColor = System.Drawing.Color.Black 
 
+{% endhighlight %}
+
 Appearance and Text Settings
 
-_Table_ _794__: Property Table_
+_Table_ _794_: Property Table
 
 <table>
 <tr>
@@ -8854,7 +8849,7 @@ Sets the text margin for the Tooltip item.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8868,9 +8863,9 @@ toolTipInfo1.Header.TextImageRelation = Syncfusion.Windows.Forms.Tools.ToolTipTe
 
 toolTipInfo1.Header.TextMargin = new System.Windows.Forms.Padding(1, 1, 1, 1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8884,15 +8879,13 @@ toolTipInfo1.Header.TextImageRelation = Syncfusion.Windows.Forms.Tools.ToolTipTe
 
 toolTipInfo1.Header.TextMargin = New System.Windows.Forms.Padding(1, 1, 1, 1)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img207.jpeg)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img208.jpeg)
-{:.image }
- _Note: A SuperToolTip (Body, Header and Footer) can be hidden by calling the SuperToolTip.Hide() method._
+
+> Note: A SuperToolTip (Body, Header and Footer) can be hidden by calling the SuperToolTip.Hide() method.
 
 Adding  RenderHtml and Size Property to the SuperToolTip.
 
@@ -8903,12 +8896,12 @@ Size property sets the size of header, body and footer Item. Size property will 
 CSS properties and all the text formatting HTML tags are supported.
 
 ![](Office-Controls_images/Office-Controls_img209.jpeg)
-{:.image }
+
 
 
 The following code illustrates setting RenderHtml, Text, Size properties.
 
-[C# .Net]
+{% highlight c# %}
 
 
 
@@ -8918,9 +8911,9 @@ toolTipInfo2.Footer.Size = new System.Drawing.Size(200, 50);
 
  toolTipInfo2.Footer.Text = "&lt;ul&gt;<li>List Item</li>&lt;/ul&gt;";
 
+{% endhighlight %}
 
-
-[VB .Net]
+{% highlight vbnet %}
 
 
 
@@ -8930,7 +8923,9 @@ Me.toolTipInfo2.Footer.RenderHtml = true
 
 Me.toolTipInfo2.Footer.Text = "&lt;ul&gt;<li>List Item</li>&lt;/ul&gt;"
 
-###### SuperToolTip Events
+{% endhighlight %}
+
+#### SuperToolTip Events
 
 Below are the events for the SuperToolTip control.
 
@@ -8940,7 +8935,7 @@ PopupToolTip event of the SuperToolTip control can be handled to set the tooltip
 
 Here, the parameter "rc" will pass the (x, y) coordinates for each single object that has been specified through the parameter "component".
 
-_Table_ _795__: Property Table_
+_Table_ _795_: Property Table
 
 <table>
 <tr>
@@ -8954,7 +8949,7 @@ Stores a set of four integers that represents the location and size of a rectang
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8986,9 +8981,9 @@ private void superToolTip1_PopupToolTip(Component component, ref Rectangle rc)
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9014,15 +9009,15 @@ Private Sub superToolTip1_PopupToolTip(ByVal component As Component, ByRef rc As
 
 End Sub 
 
-> ![](Office-Controls_images/Office-Controls_img210.jpeg)
-{:.image }
- _Note: You can also use show method to display a SuperToolTip at a specified location._
+{% endhighlight %}
+
+> Note: You can also use show method to display a SuperToolTip at a specified location.
 
 UpdateToolTip
 
 UpdateToolTip event of the SuperToolTip control can be handled, to update the tooltip text.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9036,9 +9031,9 @@ private void superToolTip1_UpdateToolTip(Component component, ref ToolTipInfo in
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9052,60 +9047,56 @@ Private Sub superToolTip1_UpdateToolTip(ByVal component As Component, ByRef info
 
 End Sub
 
-> ![](Office-Controls_images/Office-Controls_img211.jpeg)
-{:.image }
- _Note: You also set tooltip using SetToolTip Method._
+{% endhighlight %}
 
-###### Supporting SuperTooltip for .NET Controls Embedded in MFC Containers
+> Note: You also set tooltip using SetToolTip Method.
+
+#### Supporting SuperTooltip for .NET Controls Embedded in MFC Containers
 
 SupperTooltip can be displayed in the User Control embedded in the MFC Dialog.
 
-> ![](Office-Controls_images/Office-Controls_img212.jpeg)
-{:.image }
-_Note: Support has been given in source level._
+> Note: Support has been given in source level.
 
 ![](Office-Controls_images/Office-Controls_img213.jpeg)
-{:.image }
 
 
-##### Super Accelerator
+
+### Super Accelerator
 
 SuperAccelerator is a component that is used to accelerate the click event of items by using a Single key stroke without mouse hovering on it.
 
-1.   Drag-and-drop the SuperAccelerator on your form.
+1. Drag-and-drop the SuperAccelerator on your form.
 
-![](Office-Controls_images/Office-Controls_img214.jpeg)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img214.jpeg)
+
 
 
 2. When the SuperAccelerator component is added to a form, an extended property will be added to the properties of every item in the toolstrip or tabitem in the RibbonControlAdv.
 
-![](Office-Controls_images/Office-Controls_img215.jpeg)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img215.jpeg)
+
 
 
 3. In the appropriate item, use the Accelerator on SuperAccelerator property to set the string value.
 
-![](Office-Controls_images/Office-Controls_img216.jpeg)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img216.jpeg)
+
 
 
 4. To accelerate the item's click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items. 
 5. Press the string in the keyboard and the corresponding item's click event will be triggered. (Eg. If the accelerator string of Cut is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Cut item event will be triggered.)
-> 
-![](Office-Controls_images/Office-Controls_img217.jpeg)
-{:.image }
- _Note: We can make the Accelerator feature to be active or inactive using SuperAccelerator.Active property._
+
+> Note: We can make the Accelerator feature to be active or inactive using SuperAccelerator.Active property.
 
 See Also
 
 How to get or set an accelerator key programmatically?
 
-###### Super Accelerator Appearance
+#### Super Accelerator Appearance
 
 This section discusses the appearance settings of a Super Accelerator.
 
-_Table_ _796__: Property Table_
+_Table_ _796_: Property Table
 
 <table>
 <tr>
@@ -9127,7 +9118,7 @@ Sets the ForeColor for the accelerator key.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9137,9 +9128,9 @@ this.superAccelerator.Font = new System.Drawing.Font("Arial", 8F, System.Drawing
 
 this.superAccelerator.ForeColor = System.Drawing.Color.Maroon;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9149,13 +9140,13 @@ Me.superAccelerator.Font = New System.Drawing.Font("Arial", 8F, System.Drawing.F
 
 Me.superAccelerator.ForeColor = System.Drawing.Color.Maroon
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img218.jpeg)
-{:.image }
 
 
-###### Style
+
+#### Style
 
 MiniToolBar supports visual styles such as Default, Metro. The style can be set using Style property. 
 
@@ -9164,41 +9155,40 @@ MiniToolBar supports visual styles such as Default, Metro. The style can be set 
 
 The following code example allows you to set the style for the MiniToolBar.
 
-[C#]
+{% highlight c# %}
 
 this.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro;
 
-[VB]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
 
-
-
+{% endhighlight %}
 
 
 
 
 ![](Office-Controls_images/Office-Controls_img219.png)
-{:.image }
 
 
-##### MessageBoxAdv
 
-###### Overview
+### MessageBoxAdv
+
+#### Overview
 
 Syncfusion MessageBoxAdv supports an application-defined message and title, plus any combination of predefined icons and buttons.
 
-###### Style
+#### Style
 
 MessageBoxAdv supports styles such as Default and Metro.
 
-Default
+##### Default
 
 Office2007 Style Message Box is available in Tools Windows. You can replace the .NET MessageBox with new MessageBoxAdv that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBoxAdv. To display the Message Box, call MessageBoxAdv.Show method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9208,9 +9198,9 @@ Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 MessageBoxAdv.Show(" Office 2007 Style with Black Color Scheme  ", "MessageBox Adv", MessageBoxButtons.OK);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9220,17 +9210,17 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 MessageBoxAdv.Show(" Office 2007 Style with Black Color Scheme  ", "MessageBox Adv", MessageBoxButtons.OK)
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img220.jpeg)
-{:.image }
 
 
-Metro
+
+##### Metro
 
 In MessageBoxAdv, MetroColorTable is implemented for color customization of buttons and caption of metro form. You can achieve this by using the following code example.
 
-[C#]
+{% highlight c# %}
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
 
@@ -9250,9 +9240,9 @@ In MessageBoxAdv, MetroColorTable is implemented for color customization of butt
 
                 MessageBoxAdv.MetroColorTable.ForeColor = Color.Black;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
                 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
 
@@ -9274,15 +9264,15 @@ In MessageBoxAdv, MetroColorTable is implemented for color customization of butt
 
                 MessageBoxAdv.MetroColorTable.OKButtonBackColor = Color.Red
 
-
+{% endhighlight %}
 
 ![C:/Users/ashwini/Desktop/messagebox3.PNG](Office-Controls_images/Office-Controls_img221.png)
-{:.image }
 
 
-_Figure_ _1322__: MessageBoxAdv with Metro style_
 
-##### Office 2010 Style Ribbon
+_Figure_ _1322_: MessageBoxAdv with Metro style
+
+### Office 2010 Style Ribbon
 
 This feature provides Office 2010 like theme for your ribbon. You can give Office 2010 like look and feel for your application. Essential Tools supports the three themes found in Office 2010. They are: 
 
@@ -9292,15 +9282,14 @@ This feature provides Office 2010 like theme for your ribbon. You can give Offic
 
 Essential Tools also enables you to create a BackStageView. You can open the BackStageView by clicking the File tab. This enables you to use the features that fall outside the Ribbon. Ribbon enables you to work in the document and Backstage enables you to work with the document. Using this you can alter contents and provide end-user options that are related to specific solution requirements.
 
-> ![](Office-Controls_images/Office-Controls_img222.jpeg)
-{:.image }
-_Note: Backstageview can be accessed only when Ribbon style is set to Office 2010._
+> Note: Backstageview can be accessed only when Ribbon style is set to Office 2010.
 
 You can apply Office 2010 Style Ribbon and create BackStageView in two methods. They are:
 
 * Through Designer
 * Programmatically
-###### Through Designer
+
+#### Through Designer
 
 
 Apply Theme for Ribbon
@@ -9310,20 +9299,20 @@ The following are steps to apply Office 2010 style for the Ribbon:
 1. Create a Windows Form application in Visual Studio. 
 2. Drag and drop the RibbonControlAdv from the Toolbox.
 
-![](Office-Controls_images/Office-Controls_img223.png)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img223.png)
+
 
 
 3. In the Property grid, set RibbonStyle to Office2010.
 
-![](Office-Controls_images/Office-Controls_img224.png)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img224.png)
+
 
 
 4. Office 2010 Ribbon will be applied for Ribbon.
 
-![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/ribbon without back stage.png](Office-Controls_images/Office-Controls_img225.png)
-{:.image }
+   ![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/ribbon without back stage.png](Office-Controls_images/Office-Controls_img225.png)
+
 
 
 Creating BackStageView
@@ -9332,67 +9321,69 @@ The following are steps to create a BackStageView:
 
 1. Drag and drop the BackStageView from the Toolbox.
 
-![](Office-Controls_images/Office-Controls_img226.png)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img226.png)
+
 
 
 2. In the Property grid, click the ShowBackstage.
 
-![](Office-Controls_images/Office-Controls_img227.png)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img227.png)
+
 
 
 3. Empty BackStage will be displayed.
 
-![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/Empty Back Stage.png](Office-Controls_images/Office-Controls_img228.png)
-{:.image }
+   ![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/Empty Back Stage.png](Office-Controls_images/Office-Controls_img228.png)
+
 
 
 4. To add a BackStageButton, click the Add BackStage Button.
 
-![](Office-Controls_images/Office-Controls_img229.png)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img229.png)
+
 
 
 5. To add BackStageTab, click the Add BackStage Tab.
 
-![](Office-Controls_images/Office-Controls_img230.png)
-{:.image }
+  ![](Office-Controls_images/Office-Controls_img230.png)
+
 
 
 6. Set BackStageView to RibbonControlAdv.
 
-![](Office-Controls_images/Office-Controls_img231.png)
-{:.image }
+   ![](Office-Controls_images/Office-Controls_img231.png)
+
 
 
 7. Back Stage will be created with a BackStage Button and a BackStage Tab
 
-![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/backstage with button and tab.png](Office-Controls_images/Office-Controls_img232.png)
-{:.image }
+   ![D:/Task Doc/UG/9.4/UI/WF/WF_Tools/Office 2010 Style Ribbon/image1/backstage with button and tab.png](Office-Controls_images/Office-Controls_img232.png)
 
 
-###### Programmatically 
+
+#### Programmatically 
 
 Apply Theme for Ribbon
 
 The following code illustrates how to apply the Office2010 theme to the ribbon:
 
-[C#]
+{% highlight c# %}
 
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2010;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2010
+
+{% endhighlight %}
 
 Creating BackStageView
 
 The following code illustrates how to create a backstage with a BackStageButtom and a BackStageTab:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9462,9 +9453,9 @@ this.Controls.Add(backStage1);
 
 	            this.Controls.Add(this.ribbonControlAdv1);        
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
                     Imports Syncfusion.Windows.Forms
 
@@ -9532,65 +9523,61 @@ Me.Controls.Add(backStage1)
 
 Me.Controls.Add(Me.ribbonControlAdv1)
 
-
+{% endhighlight %}
 
 Refer to:
 
 Appearance Setting
 
-#### Frequently Asked Questions
+## Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-##### Quick Access Toolbar
+### Quick Access Toolbar
 
 The following topics are discussed in this section:
 
-###### How to add a component in the QuickAccessMenu programmatically?
+#### How to add a component in the QuickAccessMenu programmatically?
 
 By calling the SetUseInQuickAccessMenu method, with the component passed as a parameter, we can include a component in the QuickAccessToolbar.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.SetUseInQuickAccessMenu(this.toolStripDropDownButton1, true);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.SetUseInQuickAccessMenu(Me.toolStripDropDownButton1, True)
 
-> ![](Office-Controls_images/Office-Controls_img233.jpeg)
-{:.image }
- _Note: You can also identify whether a particular item is added to the Quick Access Toolbar or not, using the GetUseInQuickAccessMenu method, by passing the item as the parameter._
+{% endhighlight %}
 
-###### How to remove items from the Quick Access Toolbar programmatically?
+> Note: You can also identify whether a particular item is added to the Quick Access Toolbar or not, using the GetUseInQuickAccessMenu method, by passing the item as the parameter.
+
+#### How to remove items from the Quick Access Toolbar programmatically?
 
 Call RibbonControlAdv.Header.QuickItem.RemoveAt method for this purpose. The parameter idx is a zero based index of the item, to remove.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.ribbonControlAdv1.Header.QuickItems.RemoveAt(1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.Header.QuickItems.RemoveAt(1)
 
-###### How to get or set the description on RibbonControlAdv?
+{% endhighlight %}
+
+#### How to get or set the description on RibbonControlAdv?
 
 The GetDescription or SetDescription methods of the RibbonControlAdv can be used to gets / sets the text that is displayed with the component in the quick panel customizing dialog. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9604,9 +9591,9 @@ this.ribbonControlAdv1.GetDescription(this.toolStripTabItem1);
 
 this.ribbonControlAdv1.SetDescription(this.toolStripTabItem1, "This is a drop down button");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9620,41 +9607,37 @@ this.ribbonControlAdv1.GetDescription(this.toolStripTabItem1);
 
 Me.ribbonControlAdv1.SetDescription(Me.toolStripTabItem1, "This is a drop down button")
 
-
+{% endhighlight %}
 
 ![](Office-Controls_images/Office-Controls_img234.jpeg)
-{:.image }
 
 
-###### How to show a Customize Quick Access Toolbar Dialog programmatically at run time?
+
+#### How to show a Customize Quick Access Toolbar Dialog programmatically at run time?
 
 The dialog can be shown programmatically by calling ShowCustomizeDialog() method.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.ShowCustomizeDialog();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.ShowCustomizeDialog()
 
-##### SuperToolTip
+{% endhighlight %}
+
+### SuperToolTip
 
 The following topics are discussed in this section:
 
-###### How to display a SuperToolTip at a specified location?
+#### How to display a SuperToolTip at a specified location?
 
 The Show method can be used if the ToolTip is to be displayed at a specified location and for a particular time.
 
-[C#]
-
-
+{% highlight c# %}
 
 Syncfusion.Windows.Forms.Tools.SuperToolTip s1;
 
@@ -9674,11 +9657,9 @@ System.Drawing.Point pt1 = new System.Drawing.Point(this.button1.Location.X + 20
 
 this.s1.Show(t1, this.PointToScreen(pt1), 500);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim s1 As Syncfusion.Windows.Forms.Tools.SuperToolTip
 
@@ -9698,19 +9679,19 @@ Dim pt1 As System.Drawing.Point = New System.Drawing.Point(Me.button1.Location.X
 
 Me.s1.Show(t1, Me.PointToScreen(pt1), 500)
 
-> ![](Office-Controls_images/Office-Controls_img235.jpeg)
-{:.image }
- _Note: A SuperToolTip can be hidden by calling the SuperToolTip.Hide() method._
+{% endhighlight %}
+
+> Note: A SuperToolTip can be hidden by calling the SuperToolTip.Hide() method.
 
 See Also
 
 PopupToolTip Event
 
-###### How to get or set a SuperToolTip programmatically?
+#### How to get or set a SuperToolTip programmatically?
 
 We can get or set the SuperToolTip programmatically using the below two methods.
 
-_Table_ _797__: Method Table_
+_Table_ _797_: Method Table
 
 <table>
 <tr>
@@ -9728,7 +9709,7 @@ Sets the ToolTipInfo for any control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9748,9 +9729,9 @@ private void buttonAdv1_Click(object sender, EventArgs e)
 
 this.superToolTip1.SetToolTip(this.textBox1, "ToolTipText"); 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9768,35 +9749,34 @@ End Sub
 
 Me.superToolTip1.SetToolTip(Me.textBox1, "ToolTipText")
 
+{% endhighlight %}
 
 
 ![](Office-Controls_images/Office-Controls_img236.jpeg)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img237.jpeg)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img238.jpeg)
-{:.image }
- _Note: You can also set tooltip using_ UpdateToolTip Event_._
 
-###### How to set SuperToolTip for MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl?
+> Note: You can also set tooltip using_ UpdateToolTip Event_.
+
+#### How to set SuperToolTip for MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl?
 
 Few Controls like MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl already have the feature of showing Tooltip. 
 
 To set the SuperToolTip for such controls, set their ShowItemToolTips property to false and then configure the SuperToolTip for those controls.
 
-##### Super Accelerator
+### Super Accelerator
 
 The following topic is discussed in this section:
 
-###### How to get or set an accelerator key programmatically?
+#### How to get or set an accelerator key programmatically?
 
 To get or set the accelerator key, call GetAccelerator and SetAccelerator methods respectively. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -9804,9 +9784,9 @@ this.superAccelerator1.GetAccelerator(this.toolStripTabItem1);
 
 this.superAccelerator1.SetAccelerator(this.toolStripTabItem1, "C");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -9814,11 +9794,11 @@ Me.superAccelerator1.GetAccelerator(Me.toolStripTabItem1)
 
 Me.superAccelerator1.SetAccelerator(Me.toolStripTabItem1, "C") 
 
-> ![](Office-Controls_images/Office-Controls_img239.jpeg)
-{:.image }
- _Note: GetMenuButtonAccelerator and SetMenuButtonAccelerator methods gets or sets the OfficeMenuButton accelerator key. See Menu_Button Settings _for details._
+{% endhighlight %}
 
-###### How to customize the look of SuperAccelerator as like in MS Office2013?
+> Note: GetMenuButtonAccelerator and SetMenuButtonAccelerator methods gets or sets the OfficeMenuButton accelerator key. See Menu_Button Settings _for details.
+
+#### How to customize the look of SuperAccelerator as like in MS Office2013?
 
 SuperAccelerator can now be customized as like in Office 2013. Appearance property in SuperAccelerator can be used to get the customized look. 
 
@@ -9829,32 +9809,30 @@ The appearance types of SuperAccelerator are as follows.
 
 The following code example allows you to customize the SuperAccelerator.
 
-[C#]
+{% highlight c# %}
 
 this.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Advanced;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Advanced
 
-
+{% endhighlight %}
 
 
 
 ![](Office-Controls_images/Office-Controls_img240.png)
-{:.image }
 
 
-###### How to set the SuperAccelerator Alignment?
+
+#### How to set the SuperAccelerator Alignment?
 
 You can set the accelerator position of the SuperAccelerator by using its Alignment property.
 
 ![](Office-Controls_images/Office-Controls_img241.png)
-{:.image }
+
 
 
 Alignment settings
@@ -9881,7 +9859,6 @@ Default
 It allows to set the SuperAccelerator alignment on default position of the control.
 
 ![](Office-Controls_images/Office-Controls_img242.png)
-{:.image }
 
 
 Top Left
@@ -9889,7 +9866,7 @@ Top Left
 To display SuperAccelerator at the TopLeft position of Ribbon items.
 
 ![](Office-Controls_images/Office-Controls_img243.png)
-{:.image }
+
 
 
 Top Center
@@ -9897,7 +9874,7 @@ Top Center
 It enables to set the SuperAccelerator alignment on TopCenter of the control.
 
 ![](Office-Controls_images/Office-Controls_img244.png)
-{:.image }
+
 
 
 Top Right
@@ -9905,7 +9882,7 @@ Top Right
 It enables to set the SuperAccelerator alignment on TopRight of the control.
 
 ![](Office-Controls_images/Office-Controls_img245.png)
-{:.image }
+
 
 
 Middle Left
@@ -9913,7 +9890,7 @@ Middle Left
 It enables to set the SuperAccelerator alignment on MiddleLeft of the control.
 
 ![](Office-Controls_images/Office-Controls_img246.png)
-{:.image }
+
 
 
 Middle Center
@@ -9921,7 +9898,7 @@ Middle Center
 It enables to set the SuperAccelerator alignment on MiddleCenter of the control
 
 ![](Office-Controls_images/Office-Controls_img247.png)
-{:.image }
+
 
 
 Middle Right
@@ -9929,7 +9906,7 @@ Middle Right
 It enables to set the SuperAccelerator alignment on MiddleRight of the control
 
 ![](Office-Controls_images/Office-Controls_img248.png)
-{:.image }
+
 
 
 Bottom Left
@@ -9937,7 +9914,7 @@ Bottom Left
 It enables to set the SuperAccelerator alignment on BottomLeft of the control
 
 ![](Office-Controls_images/Office-Controls_img249.png)
-{:.image }
+
 
 
 Bottom Center
@@ -9945,7 +9922,7 @@ Bottom Center
 It enables to set the SuperAccelerator alignment on BottomCenter of the control
 
 ![](Office-Controls_images/Office-Controls_img250.png)
-{:.image }
+
 
 
 Bottom Right 
@@ -9953,12 +9930,12 @@ Bottom Right
 It enables to set the SuperAccelerator alignment on BottomRight of the control
 
 ![](Office-Controls_images/Office-Controls_img251.png)
-{:.image }
+
 
 
 The following code example illustrates how to set the alignment property for SuperAccelerator.
 
-[C#]
+{% highlight c# %}
 
 //Set the default SuperAccelerator alignment
 
@@ -10000,11 +9977,11 @@ this.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAli
 
 this.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAlignment.BottomRight;
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10041,17 +10018,17 @@ Me.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAli
 'Set the SuperAccelerator alignment on BottomRight of the control
 Me.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAlignment.BottomRight
 
+{% endhighlight %}
 
-
-##### ToolStripEx
+### ToolStripEx
 
 The following topic is discussed in this section:
 
-###### How to assign task for ToolStrip item when it is clicked?
+#### How to assign task for ToolStrip item when it is clicked?
 
 This can be done by handling the ItemClicked event and assigning value for ClickedItem property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10083,9 +10060,9 @@ private void toolStripEx1_ItemClicked(object sender, ToolStripItemClickedEventAr
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10113,67 +10090,67 @@ Private Sub toolStripEx1_ItemClicked(ByVal sender As Object, ByVal e As ToolStri
 
 End Sub
 
-##### ToolStripTabItem
+{% endhighlight %}
 
-###### How to remove ToolStripTabItems from the RibbonControlAdv Programmatically?
+### ToolStripTabItem
+
+#### How to remove ToolStripTabItems from the RibbonControlAdv Programmatically?
 
 Call RibbonControlAdv.Header.MainItem.RemoveAt method for this purpose. The parameter idx is a zero based index of the item to remove.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.ribbonControlAdv1.Header.MainItems.RemoveAt(1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.Header.MainItems.RemoveAt(1)
 
-##### Ribbon Panel
+{% endhighlight %}
 
-###### How to prevent the RibbonPanel of the RibbonControlAdv from collapsing?
+### Ribbon Panel
+
+#### How to prevent the RibbonPanel of the RibbonControlAdv from collapsing?
 
 To prevent the RibbonPanels from collapsing, set the AllowCollapse property to false.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.ribbonControlAdv1.AllowCollapse = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.ribbonControlAdv1.AllowCollapse = False
 
-###### Is the RibbonControlAdv DPI aware?
+{% endhighlight %}
+
+#### Is the RibbonControlAdv DPI aware?
 
 Yes, the RibbonControlAdv is DPI-aware. The controls within the RibbonControlAdv will be scaled based on the selected DPI resolution by default.
 
 The following images illustrate the scaling in RibbonControlAdv for 100 and 150 DPI.
 
 ![](Office-Controls_images/Office-Controls_img252.png)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img253.png)
-{:.image }
 
 
-##### BackStage View
 
-###### How to set Menu button image in BackStageView?
+### BackStage View
+
+#### How to set Menu button image in BackStageView?
 
 You can change the BackStage menu button by using the BackStageViewNavigationButtonImage property in BackStageView.
 
-_Table_ _798__: Property Table_
+_Table_ _798_: Property Table
 
 <table>
 <tr>
@@ -10187,7 +10164,7 @@ Gets or sets the Menu button image for BackStageView.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -10195,9 +10172,9 @@ Gets or sets the Menu button image for BackStageView.</td></tr>
 
 this.backStageView1.BackStageViewNavigationButtonImage = global::BackStageCustomization.Properties.Resources.images;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -10205,21 +10182,19 @@ this.backStageView1.BackStageViewNavigationButtonImage = global::BackStageCustom
 
 Me.backStageView1.BackStageViewNavigationButtonImage = BackStageCustomization.Properties.Resources.images
 
-
+{% endhighlight %}
 
 The following screenshot displays the customized menu button in BackStageView.
 
 ![](Office-Controls_images/Office-Controls_img254.png)
-{:.image }
 
 
-> ![](Office-Controls_images/Office-Controls_img255.jpeg)
-{:.image }
-_Note : BackStageViewNavigationButtonImage property is only applicable when Ribbon Style is set as Office2013 and TouchStyle._
 
-##### MessageBoxAdv
+> Note : BackStageViewNavigationButtonImage property is only applicable when Ribbon Style is set as Office2013 and TouchStyle.
 
-###### How to apply the shadow effects for MessageBoxAdv?
+### MessageBoxAdv
+
+#### How to apply the shadow effects for MessageBoxAdv?
 
 
 
@@ -10227,34 +10202,31 @@ In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShad
 
 
 
-[C#]
+{% highlight c# %}
 
      //To set the shadow effect of the MessageBoxAdv
 
      MessageBoxAdv.DropShadow = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
      'To set the shadow effect of the MessageBoxAdv
 
      MessageBoxAdv.DropShadow = True
 
+{% endhighlight %}
 
-
-![C:/Users/giftline.jebamani/Desktop/img.jpg](Office-Controls_images/Office-Controls_img256.jpeg)
-{:.image }
- _Note: The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect._
+> Note: The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect.
 
 
 
 ![](Office-Controls_images/Office-Controls_img257.png)
-{:.image }
+
 
 
 ![](Office-Controls_images/Office-Controls_img258.png)
-{:.image }
 
 
 

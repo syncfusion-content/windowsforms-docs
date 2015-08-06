@@ -2,28 +2,28 @@
 layout: post
 title: Notification-Package
 description: notification package
-platform: common
-control: Control Name undefined
+platform: WindowsForms
+control: Tools
 documentation: ug
 ---
 
-## Notification Package
+# Notification Package
 
 The Notification package consists of controls commonly used to notify the user, the occurrence of an event in an application. Common applications of the notification package are enhanced progress bars, splash screens and customized message boxes with animation.
 
 The Notification Package provides users with several useful controls which are listed below.
 
-#### ProgressBarAdv
+## ProgressBarAdv
 
 ProgressBars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing. It also lets users know the time remaining to complete a lengthy operation. When an application is performing a lengthy task in the background, users may not be sure if the application is still working. A ProgressBar can be used to provide a visual cue that the application is indeed working and the task is being completed. 
 
 ![](Notification-Package_images/Notification-Package_img1.jpeg)
-{:.image }
+
 
 
 The ProgressBarAdv is an advanced progressbar with a wide array of properties that can be set using the properties window. It comes with many styles which can be set through the BackgroundStyle and ProgressStyle properties. The orientation of a ProgressBarAdv can be set to vertical or horizontal using the ProgressOrientation property.
 
-##### Features
+### Features
 
 The following are the features that are available for this control.
 
@@ -67,18 +67,18 @@ See Also
 
 Concepts and Features
 
-##### Creating ProgressBarAdv
+### Creating ProgressBarAdv
 
 This section will give a step-by-step procedure to design a ProgressBarAdv control through designer and also through programmatical approach.
 
-###### Through Designer
+#### Through Designer
 
 We can create a ProgressBarAdv through designer using the steps given below.
 
 * The ProgressBarAdv control provides full support for the Windows Forms designer. Drag and drop the ProgressBarAdv control from the toolbox onto your form.
 
 ![](Notification-Package_images/Notification-Package_img2.jpeg)
-{:.image }
+
 
 
 * Set the desired properties for the control through the Property grid. 
@@ -86,7 +86,7 @@ We can create a ProgressBarAdv through designer using the steps given below.
 
 
 ![](Notification-Package_images/Notification-Package_img3.jpeg)
-{:.image }
+
 
 
 * Activate the ProgressBarAdv in the desired place.
@@ -95,14 +95,14 @@ See Also
 
 Frequently Asked Questions
 
-###### Through Code
+#### Through Code
 
 This step-by-step procedure explains how to create the ProgressBarAdv control programmatically.
 
 * Create a C# or VB.NET application in Visual Studio. Switch to the code view.
 * Declare and initialize a ProgressBarAdv as below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -116,9 +116,9 @@ this.progressBarAdv1 = new Syncfusion.Windows.Forms.Tools.ProgressBarAdv();
 
 this.SuspendLayout();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -132,29 +132,29 @@ CType(Me.ProgressBarAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
 
 Me.SuspendLayout()
 
-
+{% endhighlight %}
 
 * Set the Location property of the control.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.progressBarAdv1.Location = new System.Drawing.Point(40, 48);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.ProgressBarAdv1.Location = New System.Drawing.Point(40, 48)
 
-
+{% endhighlight %}
 
 * Add the control to the form.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -166,9 +166,9 @@ this.Text = "ProgressBarAdv";
 
 this.ResumeLayout(false);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -180,28 +180,28 @@ CType(Me.ProgressBarAdv1, System.ComponentModel.ISupportInitialize).EndInit()
 
 Me.ResumeLayout(False)
 
-
+{% endhighlight %}
 
 * Run the application.
 
 ![](Notification-Package_images/Notification-Package_img4.jpeg)
-{:.image }
+
 
 
 See Also
 
 Frequently Asked Questions
 
-##### Concepts and Features
+### Concepts and Features
 
 This section explains the concepts and features of the ProgressBarAdvcontrol which will help to understand the control better. The following are the features discussed.
 
-###### ProgressBarAdv Overview
+#### ProgressBarAdv Overview
 
 The various sections of ProgressBarAdv and their descriptions are given below.
 
 ![](Notification-Package_images/Notification-Package_img5.jpeg)
-{:.image }
+
 
 
 ProgressBarAdv
@@ -222,7 +222,7 @@ Background Settings
 
 Foreground Settings
 
-###### Background Settings
+#### Background Settings
 
 The ProgressBarAdv control consists of various properties to customize the background. These properties and their description are given below.
 
@@ -230,7 +230,7 @@ Background Style
 
 The style of the background can be set using the properties given below.
 
-_Table_ _590__: Property Table_
+_Table_ _590_: Property Table
 
 <table>
 <tr>
@@ -248,7 +248,7 @@ Determines the style of the background when BackgroundStyle is set to 'System', 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -256,9 +256,9 @@ this.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBa
 
 this.progressBarAdv1.BackgroundFallbackStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.MultipleGradient;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -266,21 +266,19 @@ Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarB
 
 Me.progressBarAdv1.BackgroundFallbackStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.MultipleGradient
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img6.jpeg)
-{:.image }
 
 
-> ![](Notification-Package_images/Notification-Package_img7.jpeg)
-{:.image }
- _Note: To display the above styles in different colors the BackGradientStartColor and BackGradientEndColor properties can be used._
+
+> Note: To display the above styles in different colors the BackGradientStartColor and BackGradientEndColor properties can be used.
 
 Background Segments
 
 The background of the ProgressBarAdv can be displayed with a segmented appearance using the property given below.
 
-_Table_ _591__: Property Table_
+_Table_ _591_: Property Table
 
 <table>
 <tr>
@@ -294,24 +292,22 @@ Determines if the background is segmented.The BackgroundStyle property must be s
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.progressBarAdv1.BackSegments = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.progressBarAdv1.BackSegments = True
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img8.jpeg)
-{:.image }
+
 
 
 Background Color Settings
@@ -322,7 +318,7 @@ Gradient Color
 
 The color of the background gradient can be changed using the properties given below.
 
-_Table_ _592__: Property Table_
+_Table_ _592_: Property Table
 
 <table>
 <tr>
@@ -340,7 +336,7 @@ Specifies the end color of the background gradient.The BackgroundStyle property 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -348,9 +344,9 @@ this.progressBarAdv1.BackGradientEndColor = System.Drawing.Color.Aquamarine;
 
 this.progressBarAdv1.BackGradientStartColor = System.Drawing.Color.IndianRed;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -358,15 +354,15 @@ Me.progressBarAdv1.BackGradientEndColor = System.Drawing.Color.Aquamarine
 
 Me.progressBarAdv1.BackGradientStartColor = System.Drawing.Color.IndianRed
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img9.jpeg)
-{:.image }
+
 
 
 The background gradient can be displayed with multiple colors using the property given below.
 
-_Table_ _593__: Property Table_
+_Table_ _593_: Property Table
 
 <table>
 <tr>
@@ -380,31 +376,31 @@ Specifies the array of colors used to draw the multiple gradient of the backgrou
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.progressBarAdv1.BackMultipleColors = new System.Drawing.Color[] {System.Drawing.Color.Blue, System.Drawing.Color.Red, System.Drawing.Color.Green, System.Drawing.Color.Pink, System.Drawing.Color.Yellow};
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.progressBarAdv1.BackMultipleColors = New System.Drawing.Color[] {System.Drawing.Color.Blue, System.Drawing.Color.Red, System.Drawing.Color.Green, System.Drawing.Color.Pink, System.Drawing.Color.Yellow}
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img10.jpeg)
-{:.image }
+
 
 
 Tube Color
 
 Colors can be set for the background tube of the ProgressBarAdv.
 
-_Table_ _594__: Property Table_
+_Table_ _594_: Property Table
 
 <table>
 <tr>
@@ -422,7 +418,7 @@ Specifies the end color of the background tube.The BackgroundStyle property shou
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -430,9 +426,9 @@ this.progressBarAdv1.BackTubeEndColor = System.Drawing.Color.RosyBrown;
 
 this.progressBarAdv1.BackTubeStartColor = System.Drawing.Color.Yellow;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -440,13 +436,13 @@ Me.progressBarAdv1.BackTubeEndColor = System.Drawing.Color.RosyBrown
 
 Me.progressBarAdv1.BackTubeStartColor = System.Drawing.Color.Yellow
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img11.jpeg)
-{:.image }
 
 
-###### Foreground Settings
+
+#### Foreground Settings
 
 This section discusses the foreground settings of the ProgressBarAdv control.
 
@@ -458,7 +454,7 @@ The foreground segment settings available in the ProgressBarAdv control are expl
 
 The foreground of the ProgressBarAdv can be displayed with a segmented appearance using the property given below.
 
-_Table_ _595__: Property Table_
+_Table_ _595_: Property Table
 
 <table>
 <tr>
@@ -474,31 +470,31 @@ Determines if the foreground is segmented.</td></tr>
 
 By default this property will be set to 'True'. To set it to 'False', use the code snippet given below.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.progressBarAdv1.ForeSegments = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.progressBarAdv1.ForeSegments = False
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img12.jpeg)
-{:.image }
+
 
 
 Segment Width
 
 The foreground segments can be customized using the property given below.
 
-_Table_ _596__: Property Table_
+_Table_ _596_: Property Table
 
 <table>
 <tr>
@@ -512,24 +508,24 @@ Specifies the width of the segments.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.progressBarAdv1.SegmentWidth = 20;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.progressBarAdv1.SegmentWidth = 20
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img13.jpeg)
-{:.image }
+
 
 
 See Also
@@ -544,7 +540,7 @@ Font and Fore Color Settings
 
 The font color and the fore color can be set using the properties given below.
 
-_Table_ _597__: Property Table_
+_Table_ _597_: Property Table
 
 <table>
 <tr>
@@ -562,7 +558,7 @@ Specifies the color of the font used to draw the text of the ProgressBarAdv.</td
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -570,9 +566,9 @@ this.progressBarAdv1.FontColor = System.Drawing.Color.SteelBlue;
 
 this.progressBarAdv1.ForeColor = System.Drawing.Color.Turquoise;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -580,17 +576,17 @@ Me.progressBarAdv1.FontColor = System.Drawing.Color.SteelBlue
 
 Me.progressBarAdv1.ForeColor = System.Drawing.Color.Turquoise
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img14.jpeg)
-{:.image }
+
 
 
 Gradient Color Settings
 
 The color of the foreground gradient can be changed using the properties given below.
 
-_Table_ _598__: Property Table_
+_Table_ _598_: Property Table
 
 <table>
 <tr>
@@ -608,7 +604,7 @@ Specifies the start color of the foreground gradient.The ProgressStyle property 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -616,9 +612,9 @@ this.progressBarAdv1.GradientEndColor = System.Drawing.Color.Yellow;
 
 this.progressBarAdv1.GradientStartColor = System.Drawing.Color.OrangeRed;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -626,15 +622,15 @@ Me.progressBarAdv1.GradientEndColor = System.Drawing.Color.Yellow
 
 Me.progressBarAdv1.GradientStartColor = System.Drawing.Color.OrangeRed
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img15.jpeg)
-{:.image }
+
 
 
 The foreground can be displayed with multiple colors using the property given below.
 
-_Table_ _599__: Property Table_
+_Table_ _599_: Property Table
 
 <table>
 <tr>
@@ -652,7 +648,7 @@ Determines if the multiple gradient will be stretched.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -662,9 +658,9 @@ this.progressBarAdv1.MultipleColors = new System.Drawing.Color[] {System.Drawing
 
 this.progressBarAdv1.StretchMultGrad = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -674,17 +670,17 @@ Me.progressBarAdv1.MultipleColors = New System.Drawing.Color[] {System.Drawing.C
 
 Me.progressBarAdv1.StretchMultGrad = False
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img16.jpeg)
-{:.image }
+
 
 
 Tube Color Settings
 
 Colors can be set for the foreground tube of the ProgressBarAdv.
 
-_Table_ _600__: Property Table_
+_Table_ _600_: Property Table
 
 <table>
 <tr>
@@ -702,7 +698,7 @@ Specifies the start color of the foreground tube.The ProgressStyle property shou
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -710,9 +706,9 @@ this.progressBarAdv1.TubeEndColor = System.Drawing.Color.Black;
 
 this.progressBarAdv1.TubeStartColor = System.Drawing.Color.Red;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -720,10 +716,10 @@ Me.progressBarAdv1.TubeEndColor = System.Drawing.Color.Black
 
 Me.progressBarAdv1.TubeStartColor = System.Drawing.Color.Red
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img17.jpeg)
-{:.image }
+
 
 
 See Also
@@ -736,7 +732,7 @@ This section discusses the foreground image settings of ProgressBarAdv.
 
 When the BackgroundStyle and ProgressStyle are set to the 'Image' style, then the foreground image can be specified using the below given property.
 
-_Table_ _601__: Property Table_
+_Table_ _601_: Property Table
 
 <table>
 <tr>
@@ -754,7 +750,7 @@ Indicates whether the foreground image will be stretched.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -762,9 +758,9 @@ this.progressBarAdv1.ForegroundImage = ((System.Drawing.Image)(resources.GetObje
 
 this.progressBarAdv1.StretchImage = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -772,17 +768,17 @@ Me.progressBarAdv1.ForegroundImage = CType((resources.GetObject("clouds")), Syst
 
 Me.progressBarAdv1.StretchImage = True
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img18.jpeg)
-{:.image }
+
 
 
 Foreground Style Settings
 
 The progress style of the ProgressBarAdv control can be set using the properties given below.
 
-_Table_ _602__: Property Table_
+_Table_ _602_: Property Table
 
 <table>
 <tr>
@@ -800,7 +796,7 @@ Determines the foreground drawing style when the ProgressStyle is set to 'System
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -808,9 +804,9 @@ this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarS
 
 this.progressBarAdv1.ProgressFallbackStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.MultipleGradient;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -818,15 +814,15 @@ Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarSty
 
 Me.progressBarAdv1.ProgressFallbackStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.MultipleGradient;
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img19.jpeg)
-{:.image }
+
 
 
 The Waiting Gradient Style of the ProgressBarAdv consists of the following properties that can be used to change the appearance and behavior of the style.
 
-_Table_ _603__: Property Table_
+_Table_ _603_: Property Table
 
 <table>
 <tr>
@@ -852,7 +848,7 @@ Indicates whether the waiting gradient will be replaced by another custom waitin
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -867,8 +863,9 @@ this.progressBarAdv1.CustomWaitingRender = true;
 this.progressBarAdv1.ForeColor = System.Drawing.Color.Crimson;
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -882,21 +879,21 @@ Me.progressBarAdv1.CustomWaitingRender = True
 
 Me.progressBarAdv1.ForeColor = System.Drawing.Color.Crimson
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img20.jpeg)
-{:.image }
+
 
 
 See Also
 
 Background Settings
 
-###### Orientation Settings
+#### Orientation Settings
 
 The direction of display of the ProgressBarAdv control can be changed using the property given below.
 
-_Table_ _604__: Property Table_
+_Table_ _604_: Property Table
 
 <table>
 <tr>
@@ -910,7 +907,7 @@ Determines the horizontal or vertical style of the progress bar.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -918,9 +915,9 @@ this.progressBarAdv1.ProgressOrientation = System.Windows.Forms.Orientation.Hori
 
 this.progressBarAdv1.ProgressOrientation = System.Windows.Forms.Orientation.Vertical;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -928,19 +925,19 @@ Me.progressBarAdv1.ProgressOrientation = System.Windows.Forms.Orientation.Horizo
 
 Me.progressBarAdv1.ProgressOrientation = System.Windows.Forms.Orientation.Vertical
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img21.jpeg)
-{:.image }
 
 
-###### Boundary Value Settings
+
+#### Boundary Value Settings
 
 The ProgressBarAdv during it's progressive operation indicates a minimum value and a maximum value for the process.
 
 It provides the below properties to set the boundary values for the control and also the interval for the progression.
 
-_Table_ _605__: Property Table_
+_Table_ _605_: Property Table
 
 <table>
 <tr>
@@ -968,7 +965,7 @@ Determines the amount to increment or decrement the value of the ProgressBarAdv 
 
 Create a ProgressBarAdv and set the below properties to see the changes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -980,9 +977,9 @@ this.progressBarAdv1.Step = 50;
 
 this.progressBarAdv1.Value = 100;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -994,15 +991,16 @@ Me.progressBarAdv1.Step = 50
 
 Me.progressBarAdv1.Value = 100
 
+{% endhighlight %}
 
 
 ![](Notification-Package_images/Notification-Package_img22.jpeg)
-{:.image }
+
 
 
 The methods associated with the above properties are given below.
 
-_Table_ _606__: Methods Table_
+_Table_ _606_: Methods Table
 
 <table>
 <tr>
@@ -1018,11 +1016,12 @@ Increments the Value property associated with the Step value.</td></tr>
 Decrement</td><td>
 Decrements the Value property associated with the Step value.</td></tr>
 </table>
-###### Border Settings
+
+#### Border Settings
 
 This section discusses the border settings of the ProgressBarAdv control.
 
-_Table_ _607__: Property Table_
+_Table_ _607_: Property Table
 
 <table>
 <tr>
@@ -1032,7 +1031,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Determines the style of the 3D border. It includes the following options.{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_  | markdownify }}{{ _Flat._ | markdownify }}</td></tr>
+Determines the style of the 3D border. It includes the following options.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_'  | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -1048,7 +1047,7 @@ Determines the style of the border. It includes the following options.FixedSingl
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1060,9 +1059,9 @@ this.progressBarAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashe
 
 this.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1074,17 +1073,18 @@ Me.progressBarAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed
 
 Me.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle 
 
+{% endhighlight %}
 
 
 ![](Notification-Package_images/Notification-Package_img23.jpeg)
-{:.image }
 
 
-###### Text Settings
+
+#### Text Settings
 
 The below are ProgressBarAdv properties to customize the text and its alignment.
 
-_Table_ _608__: Property Table_
+_Table_ _608_: Property Table
 
 <table>
 <tr>
@@ -1114,7 +1114,7 @@ Determines if the text of the ProgressBarAdv is visible.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1128,9 +1128,9 @@ this.progressBarAdv1.TextShadow = false;
 
 this.progressBarAdv1.TextVisible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1144,45 +1144,39 @@ Me.progressBarAdv1.TextShadow = False
 
 Me.progressBarAdv1.TextVisible = True
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img24.jpeg)
-{:.image }
 
 
-###### Applying Themes
+
+#### Applying Themes
 
 The ProgressBarAdv control can now be themed by enabling the ThemesEnabled property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.progressBarAdv1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.progressBarAdv1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img25.jpeg)
-{:.image }
 
 
-> ![](Notification-Package_images/Notification-Package_img26.jpeg)
-{:.image }
- _Note: Refer to the_ Foreground Style Settings _topic for more information on ProgressStyle property._
 
-##### ProgressBarAdv Events
+> Note: Refer to the_ Foreground Style Settings _topic for more information on ProgressStyle property.
+
+### ProgressBarAdv Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _609__: Events Table_
+_Table_ _609_: Events Table
 
 <table>
 <tr>
@@ -1198,7 +1192,8 @@ This event can be handled to draw a custom waiting render. WaitingCustomRender m
 ValueChanged</td><td>
 This event is handled to set the text of the ProgressBarAdv when the value changes.The TextStyle property should be set to 'Custom'.</td></tr>
 </table>
-###### DrawWaitingCustomRender Event
+
+#### DrawWaitingCustomRender Event
 
 The CustomWaitingRender property indicates whether the waiting gradient will be replaced by another custom waiting render which is defaulted to segments. When this property is set to 'True', it enables the custom waiting render behavior which will fire this DrawWaitingCustomRender event.
 
@@ -1208,7 +1203,7 @@ Event Data
 
 The event handler receives an argument of the type ProgressBarAdvDrawEventArgs containing data related to this event. The following ProgressBarAdvDrawEventArgs members provide information specific to this event.
 
-_Table_ _610__: Memb Table_
+_Table_ _610_: Memb Table
 
 <table>
 <tr>
@@ -1230,7 +1225,7 @@ Gets the bounding rectangle.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1258,9 +1253,9 @@ e.Rectangle.ToString();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1288,102 +1283,106 @@ e.Rectangle.ToString();
 
 End Sub
 
-###### ValueChanged Event
+{% endhighlight %}
+
+#### ValueChanged Event
 
 For information about this event, refer to the How to display custom text on the ProgressBarAdv to indicate the status of the task instead of the percentage completed? topic under the Frequently Asked Questions section.
 
-##### Frequently Asked Questions
+### Frequently Asked Questions
 
 This section will help you become more familiar in using the ProgressBarAdv control.
 
-###### How to activate a ProgressBarAdv
+#### How to activate a ProgressBarAdv
 
 This section will give you a brief description on how to use the ProgressBarAdv control.
 
 1. Drag and drop a ProgressBarAdv onto your form.
 2. Add a Timer and a Button to the form. By default, the Timer will be disabled.
 
-![](Notification-Package_images/Notification-Package_img27.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img27.jpeg)
+
 
 
 3. Double-click the timer and add the below given code in the timer_Tick event.
 
-[C#]
+   ~~~ cs
 
 
 
-private void timer1_Tick(object sender, EventArgs e)
+		private void timer1_Tick(object sender, EventArgs e)
 
-{
+		{
 
-if (this.progressBarAdv1.Value < 100)
+		if (this.progressBarAdv1.Value < 100)
 
-this.progressBarAdv1.Value++;
+		this.progressBarAdv1.Value++;
 
-else
+		else
 
-this.progressBarAdv1.Value = 0;
+		this.progressBarAdv1.Value = 0;
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
 
+		If Me.progressBarAdv1.Value < 100 Then
 
+		Me.progressBarAdv1.Value += 1
 
-Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
+		Else
 
-If Me.progressBarAdv1.Value < 100 Then
+		Me.progressBarAdv1.Value = 0
 
-Me.progressBarAdv1.Value += 1
+		End If
 
-Else
+		End Sub
 
-Me.progressBarAdv1.Value = 0
-
-End If
-
-End Sub
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Enable the timer in the button_Click event.
 
-[C#]
+   ~~~ cs
 
 
 
-private void button1_Click(object sender, EventArgs e)
+		private void button1_Click(object sender, EventArgs e)
 
-{
+		{
 
-this.timer1.Enabled = true;
+		this.timer1.Enabled = true;
 
-}
-
-
-
-[VB.NET]
+		}
+   ~~~
+   {:.prettyprint }
 
 
-
-Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
-
-Me.timer1.Enabled = True
-
-End Sub
+   ~~~ vbnet
 
 
+
+		Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
+
+		Me.timer1.Enabled = True
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 5. Run the application.
 
 ![](Notification-Package_images/Notification-Package_img28.jpeg)
-{:.image }
 
 
-###### How to display custom text on the ProgressBarAdv to indicate the status of the task instead of the percentage completed
+
+#### How to display custom text on the ProgressBarAdv to indicate the status of the task instead of the percentage completed
 
 This can be done using the steps given below.
 
@@ -1392,7 +1391,7 @@ This can be done using the steps given below.
 
 The following code demonstrates the above steps.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1458,9 +1457,9 @@ e.Handled = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1524,11 +1523,13 @@ e.Handled = True
 
 End Sub
 
-###### How to customize the appearance of ProgressBarAdv?
+{% endhighlight %}
+
+#### How to customize the appearance of ProgressBarAdv?
 
 The ProgressBarAdv control appearance can be customized as like in Win 8 application. You can achieve this using the following code example.
 
-[C#]
+{% highlight c# %}
 
             this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Metro;
 
@@ -1543,12 +1544,9 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
             this.progressBarAdv1.BorderColor = Color.FromArgb(206, 206, 208);
 
 
+{% endhighlight %}
 
-
-
-
-
- [VB]   
+{% highlight vbnet %}   
 
 
 
@@ -1564,23 +1562,23 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
 
              Me.ProgressBarAdv1.Size = New Size(400, 10)
 
-
+{% endhighlight %}
 
 
 
 ![](Notification-Package_images/Notification-Package_img29.png)
-{:.image }
 
 
-#### SplashControl
+
+## SplashControl
 
 The SplashControl provides an easy way to use classes that can be used to display splash screens. The SplashControl can be dragged and dropped onto your form from the controls toolbox. The SplashControl is implemented as a component that is not visible at run time. It is visible in the component area of your form where you can select it and set it's properties.
 
 ![](Notification-Package_images/Notification-Package_img30.jpeg)
-{:.image }
 
 
-##### Features
+
+### Features
 
 The features of the SplashControl are given below.
 
@@ -1620,34 +1618,34 @@ Concepts and Features
 
 
 
-##### Creating SplashControl
+### Creating SplashControl
 
 This section will give a step by step procedure to design a SplashControl through designer and also through programmatical approach.
 
-###### Through Designer
+#### Through Designer
 
 The SplashControl provides full support for the Windows Forms designer.
 
 1. Drag and drop the SplashControl from the toolbox onto the form. The SplashControl will be created in the components area of the form.
 
-![](Notification-Package_images/Notification-Package_img31.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img31.jpeg)
+
 
 
 2. Set the SplashImage and the TimerInterval properties through the property grid.
 3. Set the AutoMode property. This property controls how the SplashControl will be invoked. If the AutoMode property is set to 'True', the SplashControl will automatically launch itself during the parent form's load event.
 4. The SplashPanel can also be viewed at design time using the Preview Splash option by clicking the smart tag as shown below.
 
-![](Notification-Package_images/Notification-Package_img32.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img32.jpeg)
+
 
 
 5. Now run the application.
 6. If the AutoMode property is set to 'False', the splash screen will have to be invoked explicitly by calling the ShowSplash() method.
 7. Handle the SplashClosed event to do your processing after the splash screen is closed.
 
-![](Notification-Package_images/Notification-Package_img33.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img33.jpeg)
+
 
 
 8. You can cancel the SplashControl while it is displaying the splash screen by calling the HideSplash() method.
@@ -1656,7 +1654,7 @@ See Also
 
 SplashScreen Settings 
 
-###### Through Code
+#### Through Code
 
 A SplashControl can be created through code by following the below steps.
 
@@ -1664,68 +1662,72 @@ A SplashControl can be created through code by following the below steps.
 2. Add the required assembly references.
 3. Declare and initialize a SplashControl using the below code.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.SplashControl splashControl1;
+	private Syncfusion.Windows.Forms.Tools.SplashControl splashControl1;
 
 
 
-this.splashControl1 = new Syncfusion.Windows.Forms.Tools.SplashControl();
+	this.splashControl1 = new Syncfusion.Windows.Forms.Tools.SplashControl();
 
-this.SuspendLayout();
+	this.SuspendLayout();
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Friend WithEvents SplashControl1 As Syncfusion.Windows.Forms.Tools.SplashControl
+   ~~~ vbnet
 
 
 
-Me.splashControl1 = New Syncfusion.Windows.Forms.Tools.SplashControl() 
-
-Me.SuspendLayout()
+		Friend WithEvents SplashControl1 As Syncfusion.Windows.Forms.Tools.SplashControl
 
 
+
+		Me.splashControl1 = New Syncfusion.Windows.Forms.Tools.SplashControl() 
+
+		Me.SuspendLayout()
+
+   ~~~
+   {:.prettyprint }
 
 4. Set the following properties.
 
-[C#]
+   ~~~ cs
 
 
 
-this.splashControl1.CustomSplashPanel = null;
+		this.splashControl1.CustomSplashPanel = null;
 
-this.splashControl1.HostForm = this;
+		this.splashControl1.HostForm = this;
 
-this.splashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal;
+		this.splashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal;
 
-this.splashControl1.TimerInterval = 3000;
+		this.splashControl1.TimerInterval = 3000;
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Me.SplashControl1.CustomSplashPanel = Nothing
-
-Me.SplashControl1.HostForm = Me
-
-Me.SplashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal
-
-Me.SplashControl1.TimerInterval = 3000
+   ~~~ vbnet
 
 
+
+		Me.SplashControl1.CustomSplashPanel = Nothing
+
+		Me.SplashControl1.HostForm = Me
+
+		Me.SplashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal
+
+		Me.SplashControl1.TimerInterval = 3000
+
+   ~~~
+   {:.prettyprint }
 
 5. Run the application.
 
-![](Notification-Package_images/Notification-Package_img34.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img34.jpeg)
+
 
 
 See Also
@@ -1734,18 +1736,18 @@ Through Designer
 
 SplashScreen Settings 
 
-#####  Concepts and Features
+###  Concepts and Features
 
 This section contains information on getting started with SplashControl and discusses all the concepts and features of the control. 
 
 The following topics are discussed in detail.
 
-###### SplashControl Overview
+#### SplashControl Overview
 
 The various sections of SplashControl and their descriptions are given below.
 
 ![](Notification-Package_images/Notification-Package_img35.jpeg)
-{:.image }
+
 
 
 SplashControl
@@ -1762,7 +1764,7 @@ SplashScreen Settings
 
 Image and Animation Settings
 
-###### SplashScreen Settings
+#### SplashScreen Settings
 
 The following are the splash settings available for the SplashControl.
 
@@ -1770,7 +1772,7 @@ Automatic Launching
 
 The properties given below describe the AutoMode features of the SplashControl.
 
-_Table_ _611__: Property Table_
+_Table_ _611_: Property Table
 
 <table>
 <tr>
@@ -1796,7 +1798,7 @@ A splash image is displayed when an application is run, and only when AutoMode p
 
 If the AutoModeDisableOwner property is set to 'True', the splash screen displays modally. The splash screen stops the user from interacting with the rest of the application until it gets hidden. Once the splash screen disappears, the user will be able to interact with the form.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1804,9 +1806,9 @@ this.SplashControl1.AutoMode = true;
 
 this.splashControl1.AutoModeDisableOwner = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1814,11 +1816,11 @@ Me.SplashControl1.AutoMode = True
 
 Me.splashControl1.AutoModeDisableOwner = True
 
-
+{% endhighlight %}
 
 The methods given below can also be used to show / hide the splash screen at run time. 
 
-_Table_ _612__: Methods Table_
+_Table_ _612_: Methods Table
 
 <table>
 <tr>
@@ -1840,7 +1842,7 @@ This method will display the splash screen as a modal dialog.It includes the fol
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1866,9 +1868,9 @@ this.splashControl1.ShowDialogSplash(new Point(700,700),new Form1());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1892,11 +1894,11 @@ Me.splashControl1.ShowDialogSplash(New Point(700, 700), New Form1())
 
 End Sub
 
-
+{% endhighlight %}
 
 The below example uses a button click event to call this method. This method is overloaded. The overloaded method passes the owner form as a parameter to this method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1908,9 +1910,9 @@ this.splashControl1.ShowDialogSplash(new Form1());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1920,11 +1922,13 @@ Me.splashControl1.ShowDialogSplash(New Form1())
 
 End Sub
 
+{% endhighlight %}
+
 Time Interval Settings
 
 The SplashControl is, by default, a timed display splash screen. The splash screen will be displayed for a specific time period and will then be closed. By default, the value will be set as 5000. User can change this value, run the application and see the difference.
 
-_Table_ _613__: Property Table_
+_Table_ _613_: Property Table
 
 <table>
 <tr>
@@ -1938,31 +1942,33 @@ The time interval for which the splash screen is to be displayed (in millisecond
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.splashControl1.TimerInterval = 3000;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.splashControl1.TimerInterval = 3000
 
+{% endhighlight %}
+
 See Also
 
 SplashControl Events
 
-###### SplashPanel Settings
+#### SplashPanel Settings
 
 This section discusses how a SplashPanel control can be displayed as a SplashScreen for the SplashControl.
 
 The SplashControl allows the user to display a SplashPanel control as the splash screen. The following settings can be changed to customize the SplashPanel in the SplashControl.
 
-_Table_ _614__: Property Table_
+_Table_ _614_: Property Table
 
 <table>
 <tr>
@@ -1984,7 +1990,7 @@ Gets / sets the icon for the SplashPanel. </td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1992,9 +1998,9 @@ this.splashControl1.ShowInTaskbar = true;
 
 this.splashControl1.FormIcon = ((System.Drawing.Icon)(resources.GetObject("splashControl1.FormIcon")));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2002,10 +2008,10 @@ Me.splashControl1.ShowInTaskbar = True
 
 Me.splashControl1.FormIcon = DirectCast((resources.GetObject("splashControl1.FormIcon")), System.Drawing.Icon)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img36.jpeg)
-{:.image }
+
 
 
 See Also
@@ -2024,7 +2030,7 @@ A SplashControl allows the user to add an image that is to be displayed in the s
 6. The SplashControl uses the SplashPanel only if the UseCustomSplashPanel property is set to 'True'.
 7. Create a SplashControl and add the below code to the form to customize the SplashPanel and display the SplashPanel as the splash image.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2122,9 +2128,9 @@ this.label1.Text = "Splash Panel";
 
 this.Controls.Add(this.splashPanel1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2218,19 +2224,19 @@ Me.label1.Text = "Splash Panel"
 
 Me.Controls.Add(Me.SplashPanel1)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img37.jpeg)
-{:.image }
 
 
-###### Alignment Settings
+
+#### Alignment Settings
 
 This section discusses the alignment settings available in SplashControl.
 
 SplashControl provides options to customize the alignment of the splash image in the desktop. The property that is related to this feature is given below.
 
-_Table_ _615__: Property Table_
+_Table_ _615_: Property Table
 
 <table>
 <tr>
@@ -2246,27 +2252,27 @@ Specifies the desktop alignment of the splash image. It includes the following o
 
 This can be done through code using the code snippet below.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.splashControl1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.SystemTray;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.SplashControl1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.SystemTray
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img38.jpeg)
-{:.image }
 
 
-###### Image and Animation Settings
+
+#### Image and Animation Settings
 
 This section demonstrates how to set a splash image and how to display it with animation.
 
@@ -2274,7 +2280,7 @@ Splash Image
 
 The splash image can be displayed by setting the property given below.
 
-_Table_ _616__: Property Table_
+_Table_ _616_: Property Table
 
 <table>
 <tr>
@@ -2288,31 +2294,27 @@ The image for displaying as the background of the default splash screen.</td></t
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashControl1.SplashImage = ((System.Drawing.Image)(resources.GetObject("splashControl1.SplashImage")));
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashControl1.SplashImage = CType((resources.GetObject("splashControl1.SplashImage")), System.Drawing.Image)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img39.jpeg)
-{:.image }
+
 
 
 Animation
 
 When animation is set for the splash image, by default, the splash image will be drawn from left to right.
 
-_Table_ _617__: Property Table_
+_Table_ _617_: Property Table
 
 <table>
 <tr>
@@ -2338,7 +2340,7 @@ Gets / sets the color to be used to make the splash image transparent.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2350,9 +2352,9 @@ this.splashControl1.SplashImage = ((System.Drawing.Image)(resources.GetObject("s
 
 this.splashControl1.TransparentColor = System.Drawing.Color.White;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2364,11 +2366,13 @@ Me.splashControl1.SplashImage = CType((resources.GetObject("splashControl1.Splas
 
 Me.splashControl1.TransparentColor = System.Drawing.Color.White
 
-###### Host Form Settings
+{% endhighlight %}
+
+#### Host Form Settings
 
 The host form of a SplashControl application can be hidden or shown, when the splash image is displayed. The properties given below illustrate this.
 
-_Table_ _618__: Property Table_
+_Table_ _618_: Property Table
 
 <table>
 <tr>
@@ -2390,7 +2394,7 @@ Specifies whether the host form should be displayed as normal or minimized or ma
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2400,9 +2404,9 @@ this.splashControl1.HideHostForm = true;
 
 this.splashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2412,11 +2416,13 @@ Me.SplashControl1.HideHostForm = True
 
 Me.SplashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal
 
-##### SplashControl Events
+{% endhighlight %}
+
+### SplashControl Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _619__: Events Table_
+_Table_ _619_: Events Table
 
 <table>
 <tr>
@@ -2447,97 +2453,101 @@ Follow the below steps and use the corresponding events to get the results.
 1. Create a SplashControl and a TextBox in a form.
 2. Set the textbox properties and add the textbox to the form as given below.
 
-[C#]
+   ~~~ cs
 
 
 
-// Declare the controls.
+		// Declare the controls.
 
-private Syncfusion.Windows.Forms.Tools.SplashControl splashControl1;
+		private Syncfusion.Windows.Forms.Tools.SplashControl splashControl1;
 
-private System.Windows.Forms.TextBox textBox1;
-
-
-
-// Initialize the controls.
-
-this.splashControl1 = new Syncfusion.Windows.Forms.Tools.SplashControl();
-
-this.textBox1 = new System.Windows.Forms.TextBox();
+		private System.Windows.Forms.TextBox textBox1;
 
 
 
-// Set the properties for the textbox.
+		// Initialize the controls.
 
-this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+		this.splashControl1 = new Syncfusion.Windows.Forms.Tools.SplashControl();
 
-this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((System.Byte)(103)), ((System.Byte)(110)), ((System.Byte)(154)));
-
-this.textBox1.Location = new System.Drawing.Point(0, 0);
-
-this.textBox1.Multiline = true;
-
-this.textBox1.Name = "textBox1";
-
-this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-
-this.textBox1.Size = new System.Drawing.Size(248, 206);
-
-this.textBox1.TabIndex = 4;
-
-this.textBox1.Text = "";
+		this.textBox1 = new System.Windows.Forms.TextBox();
 
 
 
-// Add the textbox to the form.
+		// Set the properties for the textbox.
 
-this.Controls.Add(Me.textBox1)
+		this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
 
+		this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((System.Byte)(103)), ((System.Byte)(110)), ((System.Byte)(154)));
 
+		this.textBox1.Location = new System.Drawing.Point(0, 0);
 
-[VB.NET]
+		this.textBox1.Multiline = true;
 
+		this.textBox1.Name = "textBox1";
 
+		this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 
-' Declare the textbox.
+		this.textBox1.Size = new System.Drawing.Size(248, 206);
 
-Friend WithEvents textBox1 As System.Windows.Forms.TextBox
+		this.textBox1.TabIndex = 4;
 
-
-
-' Initialize the textbox.
-
-Me.textBox1 = New System.Windows.Forms.TextBox
-
-
-
-' Set the properties for the textbox.
-
-Me.textBox1.Dock = System.Windows.Forms.DockStyle.Fill
-
-Me.textBox1.ForeColor = System.Drawing.Color.FromArgb(CType(103, Byte), CType(110, Byte), CType(154, Byte))
-
-Me.textBox1.Location = New System.Drawing.Point(0, 0)
-
-Me.textBox1.Multiline = True
-
-Me.textBox1.Name = "textBox1"
-
-Me.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-
-Me.textBox1.Size = New System.Drawing.Size(292, 266)
-
-Me.textBox1.TabIndex = 5
-
-Me.textBox1.Text = ""
+		this.textBox1.Text = "";
 
 
 
-' Add the textbox to the form.
+		// Add the textbox to the form.
 
-Me.Controls.Add(this.textBox1);
+		this.Controls.Add(Me.textBox1)
 
-###### BeforeSplash Event
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+
+
+		' Declare the textbox.
+
+		Friend WithEvents textBox1 As System.Windows.Forms.TextBox
+
+
+
+		' Initialize the textbox.
+
+		Me.textBox1 = New System.Windows.Forms.TextBox
+
+
+
+		' Set the properties for the textbox.
+		
+		Me.textBox1.Dock = System.Windows.Forms.DockStyle.Fill
+
+		Me.textBox1.ForeColor = System.Drawing.Color.FromArgb(CType(103, Byte), CType(110, Byte), CType(154, Byte))
+
+		Me.textBox1.Location = New System.Drawing.Point(0, 0)
+
+		Me.textBox1.Multiline = True
+
+		Me.textBox1.Name = "textBox1"
+
+		Me.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+
+		Me.textBox1.Size = New System.Drawing.Size(292, 266)
+
+		Me.textBox1.TabIndex = 5
+
+		Me.textBox1.Text = ""
+
+
+
+		' Add the textbox to the form.
+
+		Me.Controls.Add(this.textBox1);
+
+   ~~~
+   {:.prettyprint }
+
+#### BeforeSplash Event
 
 You can handle the BeforeSplash event to process any code just before the splash screen is displayed. For example in the below code, the event logs are recorded and displayed in the textbox.
 
@@ -2545,7 +2555,7 @@ Event Data
 
 The event handler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs member provides information specific to this event.
 
-_Table_ _620__: Member Table_
+_Table_ _620_: Member Table
 
 <table>
 <tr>
@@ -2559,7 +2569,7 @@ Indicates whether the event should be canceled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2585,9 +2595,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2610,34 +2620,32 @@ textBox1.Text = textBox1.Text & eventlogmessage
 e.Cancel = True
 
 End Sub
-
+{% endhighlight %}
 
 
 ![](Notification-Package_images/Notification-Package_img40.jpeg)
-{:.image }
+
 
 
 BeforeSplashevent is raised when the BeforeSplashNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm before the splash window is displayed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.BeforeSplashNotify();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.BeforeSplashNotify()
 
-###### SplashDisplayed Event
+{% endhighlight %}
+
+#### SplashDisplayed Event
 
 The SplashDisplayed event is raised after the splash screen is displayed on the screen. For example in the below code, the event logs are recorded and displayed in a textbox.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2657,9 +2665,9 @@ textBox1.Text = textBox1.Text + eventlogmessage;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2677,33 +2685,31 @@ textBox1.Text = textBox1.Text & eventlogmessage
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img41.jpeg)
-{:.image }
+
 
 
 SplashDisplayedevent will be triggered when the SplashDisplayedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is displayed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.SplashDisplayedNotify();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.SplashDisplayedNotify()
 
-###### SplashClosing Event
+{% endhighlight %}
+
+#### SplashClosing Event
 
 The SplashClosing event is raised when the splash screen is closing. For example in the below code, the event logs are recorded and displayed in a textbox.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2723,9 +2729,9 @@ textBox1.Text = textBox1.Text + eventlogmessage;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2743,33 +2749,31 @@ textBox1.Text = textBox1.Text & eventlogmessage
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img42.jpeg)
-{:.image }
+
 
 
 SplashClosingevent is raised when the SplashClosingNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closing.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashControl1.SplashClosingNotify();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashControl1.SplashClosingNotify()
 
-###### SplashClosed Event
+{% endhighlight %}
+
+#### SplashClosed Event
 
 The SplashClosed event is raised after the splash screen is closed. For example in the below code, the event logs are recorded and displayed in a textbox.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2789,9 +2793,9 @@ textBox1.Text = textBox1.Text + eventlogmessage;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2809,67 +2813,63 @@ textBox1.Text = textBox1.Text & eventlogmessage
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img43.jpeg)
-{:.image }
+
 
 
 SplashClosedevent is raised when the SplashClosedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.SplashClosedNotify();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.SplashClosedNotify()
 
-##### Frequently Asked Questions
+{% endhighlight %}
+
+### Frequently Asked Questions
 
 This section will help you become more familiar in using the SplashControl.
 
-###### How to access the default panel of a SplashControl
+#### How to access the default panel of a SplashControl
 
 The default panel of a SplashControl can be accessed through the SplashControlPanel property.
 
 The example given below illustrates how the background color of a SplashControl's internal panel can be changed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashControl1.SplashControlPanel.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.RosyBrown, System.Drawing.SystemColors.ControlLight);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashControl1.SplashControlPanel.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.RosyBrown, System.Drawing.SystemColors.ControlLight)
 
-#### SplashPanel
+{% endhighlight %}
+
+## SplashPanel
 
 The SplashPanel is a System.Windows.Forms panel-derived class that allows users to design custom splash screens within the form's designer. The SplashPanel can take multiple child controls that can be used to display information or collect information from the user.
 
 ![](Notification-Package_images/Notification-Package_img44.jpeg)
-{:.image }
+
 
 
 The SplashPanel class is a panel class that can be used beyond the typical splash screen. It can be used to create non-obtrusive message boxes such as in the Microsoft MSN messenger (as of MSN Messenger version 3.0), a message window that informs a user that a new mail message has arrived. These kinds of message boxes are very easy to create and use with the SplashPanel class. 
 
 ![](Notification-Package_images/Notification-Package_img45.jpeg)
-{:.image }
 
 
-##### Features
+
+### Features
 
 The features of the SplashPanel control are given below.
 
@@ -2913,18 +2913,18 @@ See Also
 
 Concepts and Features
 
-##### Creating SplashPanel
+### Creating SplashPanel
 
 This section will give a step by step procedure to design a SplashPanel through designer and also through programmatical approach.
 
-###### Through Designer
+#### Through Designer
 
 The SplashPanel control provides full support for the Windows Forms designer.
 
 1. Drag-and-drop the SplashPanel control from the toolbox onto the form.
 
-![](Notification-Package_images/Notification-Package_img46.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img46.jpeg)
+
 
 
 2. Set the properties for the SplashPanel control and also drag and drop any child controls you want to add to the panel. Set the TimerInterval property to specify the period of time, the SplashPanel needs to be visible.
@@ -2932,8 +2932,8 @@ The SplashPanel control provides full support for the Windows Forms designer.
 4. Launch the SplashPanel control by calling the ShowSplash() method.
 5. You can cancel the SplashPanel by calling the HideSplash() method.
 
-![](Notification-Package_images/Notification-Package_img47.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img47.jpeg)
+
 
 
 ###### Through Code
@@ -2944,289 +2944,290 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 2. Add the Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies to your application.
 3. Add the namespaces given below to your form.
 
-[C#]
+   ~~~ cs
+
+		using Syncfusion.Windows.Forms.Tools;
+
+		using Syncfusion.Drawing;
+
+		using Syncfusion.Windows.Forms.Tools;
+
+		using Syncfusion.Drawing;
+
+		using System.Reflection;
 
 
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
-using Syncfusion.Windows.Forms.Tools;
+		Imports Syncfusion.Windows.Forms.Tools
 
-using Syncfusion.Drawing;
+		Imports Syncfusion.Drawing
 
-using Syncfusion.Windows.Forms.Tools;
+		Imports Syncfusion.Windows.Forms.Tools
 
-using Syncfusion.Drawing;
+		Imports Syncfusion.Drawing
 
-using System.Reflection;
+		Imports System.Reflection
 
-
-
-[VB.NET]
-
-
-
-Imports Syncfusion.Windows.Forms.Tools
-
-Imports Syncfusion.Drawing
-
-Imports Syncfusion.Windows.Forms.Tools
-
-Imports Syncfusion.Drawing
-
-Imports System.Reflection
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Declare the SplashPanel and Button control.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+		private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
 
-private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button1;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Friend WithEvents splashPanel1 As Syncfusion.Windows.Forms.Tools.SplashPanel
 
+		Friend WithEvents button1 As System.Windows.Forms.Button
 
-
-Friend WithEvents splashPanel1 As Syncfusion.Windows.Forms.Tools.SplashPanel
-
-Friend WithEvents button1 As System.Windows.Forms.Button
-
-
+   ~~~
+   {:.prettyprint }
+		
 
 5. Initialize the controls and make it visible.
 
-[C#]
+   ~~~ cs
+
+
+		this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+
+		this.button1 = new System.Windows.Forms.Button();
+
+		this.splashPanel1.SuspendLayout();
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+		Me.splashPanel1 = New Syncfusion.Windows.Forms.Tools.SplashPanel
 
-this.button1 = new System.Windows.Forms.Button();
+		Me.button1 = New System.Windows.Forms.Button
 
-this.splashPanel1.SuspendLayout();
+		Me.splashPanel1.SuspendLayout()
 
-
-
-[VB.NET]
-
-
-
-Me.splashPanel1 = New Syncfusion.Windows.Forms.Tools.SplashPanel
-
-Me.button1 = New System.Windows.Forms.Button
-
-Me.splashPanel1.SuspendLayout()
-
-
+   ~~~
+   {:.prettyprint }
 
 6. Set the properties for the SplashPanel and Button control.
 
-[C#]
+   ~~~ cs
+
+		// Set the properties for SplashPanel.
+
+		this.splashPanel1.AnimationSpeed = 10;
+
+		this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.SystemColors.Highlight, System.Drawing.SystemColors.HighlightText);
+
+		this.splashPanel1.Controls.Add(this.button1);
+
+		this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.Center;
+
+		this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+
+		this.splashPanel1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+
+		this.splashPanel1.ForeColor = System.Drawing.Color.Pink;
+
+		this.splashPanel1.Location = new System.Drawing.Point(16, 16);
+
+		this.splashPanel1.Name = "splashPanel1";
+
+		this.splashPanel1.ShowAnimation = true;
+
+		this.splashPanel1.SuspendAutoCloseWhenMouseOver = false;
+
+		this.splashPanel1.TabIndex = 0;
+
+		this.splashPanel1.TimerInterval = 5000;
 
 
 
-// Set the properties for SplashPanel.
+		// Set the properties for Button control.
 
-this.splashPanel1.AnimationSpeed = 10;
+		this.button1.BackColor = System.Drawing.Color.DimGray;
 
-this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.SystemColors.Highlight, System.Drawing.SystemColors.HighlightText);
+		this.button1.Location = new System.Drawing.Point(56, 40);
 
-this.splashPanel1.Controls.Add(this.button1);
+		this.button1.Name = "button1";
 
-this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.Center;
+		this.button1.Size = new System.Drawing.Size(96, 23);
 
-this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+		this.button1.TabIndex = 0;
 
-this.splashPanel1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-
-this.splashPanel1.ForeColor = System.Drawing.Color.Pink;
-
-this.splashPanel1.Location = new System.Drawing.Point(16, 16);
-
-this.splashPanel1.Name = "splashPanel1";
-
-this.splashPanel1.ShowAnimation = true;
-
-this.splashPanel1.SuspendAutoCloseWhenMouseOver = false;
-
-this.splashPanel1.TabIndex = 0;
-
-this.splashPanel1.TimerInterval = 5000;
+		this.button1.Text = "SplashPanel";
 
 
 
-// Set the properties for Button control.
+		// Add the SplashPanel to the Form.
 
-this.button1.BackColor = System.Drawing.Color.DimGray;
+		this.Controls.Add(this.splashPanel1);
 
-this.button1.Location = new System.Drawing.Point(56, 40);
+   ~~~
+   {:.prettyprint }
 
-this.button1.Name = "button1";
-
-this.button1.Size = new System.Drawing.Size(96, 23);
-
-this.button1.TabIndex = 0;
-
-this.button1.Text = "SplashPanel";
+   ~~~ vbnet
 
 
 
-// Add the SplashPanel to the Form.
+		// Set the properties for SplashPanel.
 
-this.Controls.Add(this.splashPanel1);
+		this.splashPanel1.AnimationSpeed = 10;
 
+		this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.SystemColors.Highlight, System.Drawing.SystemColors.HighlightText);
 
+		this.splashPanel1.Controls.Add(this.button1);
 
-[VB.NET]
+		this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.Center;
 
+		this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
 
+		this.splashPanel1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
 
-// Set the properties for SplashPanel.
+		this.splashPanel1.ForeColor = System.Drawing.Color.Pink;
 
-this.splashPanel1.AnimationSpeed = 10;
+		this.splashPanel1.Location = new System.Drawing.Point(16, 16);
 
-this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.SystemColors.Highlight, System.Drawing.SystemColors.HighlightText);
+		this.splashPanel1.Name = "splashPanel1";
 
-this.splashPanel1.Controls.Add(this.button1);
+		this.splashPanel1.ShowAnimation = true;
 
-this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.Center;
+		this.splashPanel1.SuspendAutoCloseWhenMouseOver = false;
 
-this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+		this.splashPanel1.TabIndex = 0;
 
-this.splashPanel1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-
-this.splashPanel1.ForeColor = System.Drawing.Color.Pink;
-
-this.splashPanel1.Location = new System.Drawing.Point(16, 16);
-
-this.splashPanel1.Name = "splashPanel1";
-
-this.splashPanel1.ShowAnimation = true;
-
-this.splashPanel1.SuspendAutoCloseWhenMouseOver = false;
-
-this.splashPanel1.TabIndex = 0;
-
-this.splashPanel1.TimerInterval = 5000;
+		this.splashPanel1.TimerInterval = 5000;
 
 
 
-// Set the properties for Button control.
+		// Set the properties for Button control.
 
-this.button1.BackColor = System.Drawing.Color.DimGray;
+		this.button1.BackColor = System.Drawing.Color.DimGray;
 
-this.button1.Location = new System.Drawing.Point(56, 40);
+		this.button1.Location = new System.Drawing.Point(56, 40);
 
-this.button1.Name = "button1";
+		this.button1.Name = "button1";
 
-this.button1.Size = new System.Drawing.Size(96, 23);
+		this.button1.Size = new System.Drawing.Size(96, 23);
 
-this.button1.TabIndex = 0;
+		this.button1.TabIndex = 0;
 
-this.button1.Text = "SplashPanel";
-
-
-
-// Add the SplashPanel to the Form.
-
-this.Controls.Add(this.splashPanel1);
+		this.button1.Text = "SplashPanel";
 
 
+
+		// Add the SplashPanel to the Form.
+
+		this.Controls.Add(this.splashPanel1);
+
+   ~~~
+   {:.prettyprint }
 
 7. Call and define the ShowSplash() method as follows.
 
-[C#]
+   ~~~ cs
 
 
 
-// In the Form properties, add the below code before resuming the layout.
+		// In the Form properties, add the below code before resuming the layout.
 
-this.ShowSplash(false);
-
-
-
-// Define the ShowSplash() method.
-
-private void ShowSplash(bool isModal)
-
-{
-
-Point pt = Point.Empty;
-
-SplashPanel currentPanel = this.splashPanel1;
-
-int interval = 5000;
-
-currentPanel = this.splashPanel1;
-
-if(currentPanel.DesktopAlignment == SplashAlignment.Custom)
-
-pt = Control.MousePosition;
-
-currentPanel.ShowSplash(pt, this, isModal);
-
-}
+		this.ShowSplash(false);
 
 
 
-[VB.NET]
+		// Define the ShowSplash() method.
+
+		private void ShowSplash(bool isModal)
+
+		{
+
+		Point pt = Point.Empty;
+
+		SplashPanel currentPanel = this.splashPanel1;
+
+		int interval = 5000;
+
+		currentPanel = this.splashPanel1;
+
+		if(currentPanel.DesktopAlignment == SplashAlignment.Custom)
+
+		pt = Control.MousePosition;
+
+		currentPanel.ShowSplash(pt, this, isModal);
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		' In the Form properties, add the below code before resuming the layout.
+
+		Me.ShowSplash(False)
 
 
 
-' In the Form properties, add the below code before resuming the layout.
+		' Define the ShowSplash() method.
 
-Me.ShowSplash(False)
+		Private Sub ShowSplash(ByVal isModal As Boolean)
 
+		Dim pt As Point = Point.Empty
 
+		Dim currentPanel As SplashPanel = Me.SplashPanel1
 
-' Define the ShowSplash() method.
+		Dim interval As Integer = 5000
 
-Private Sub ShowSplash(ByVal isModal As Boolean)
+		currentPanel = Me.SplashPanel1
 
-Dim pt As Point = Point.Empty
+		currentPanel.TimerInterval = interval
 
-Dim currentPanel As SplashPanel = Me.SplashPanel1
+		If currentPanel.DesktopAlignment = SplashAlignment.Custom Then
 
-Dim interval As Integer = 5000
+		pt = Control.MousePosition
 
-currentPanel = Me.SplashPanel1
+		End If
 
-currentPanel.TimerInterval = interval
+		currentPanel.ShowSplash(pt, Me, isModal)
 
-If currentPanel.DesktopAlignment = SplashAlignment.Custom Then
+		End Sub
 
-pt = Control.MousePosition
-
-End If
-
-currentPanel.ShowSplash(pt, Me, isModal)
-
-End Sub
-
-
+   ~~~
+   {:.prettyprint }
 
 8. Run the application.
 
-![](Notification-Package_images/Notification-Package_img48.jpeg)
-{:.image }
+   ![](Notification-Package_images/Notification-Package_img48.jpeg)
 
 
-##### Concepts and Features
+
+### Concepts and Features
 
 This section provides information on getting started with SplashPanel control, which discusses all the concepts and features of the control. The following concepts are discussed in detail.
 
-###### Display Settings
+#### Display Settings
 
 The section illustrates the display settings available for the SplashPanel control.
 
 The SplashPanel can be displayed or hidden according to the needs of the user. It can be displayed at any specified location. The display settings of the SplashPanel control are illustrated through the following methods.
 
-_Table_ _621__: Methods Table_
+_Table_ _621_: Methods Table
 
 <table>
 <tr>
@@ -3250,9 +3251,8 @@ Displays the SplashPanel as a modal dialog.</td></tr>
 IsShowing</td><td>
 Indicates whether the splash is currently displayed.</td></tr>
 </table>
-> ![](Notification-Package_images/Notification-Package_img49.jpeg)
-{:.image }
- _Note: The time interval for which the SplashPanel is displayed can be customized using the Time Interval settings provided in the SplashPanel control._
+
+> Note: The time interval for which the SplashPanel is displayed can be customized using the Time Interval settings provided in the SplashPanel control.
 
 The above methods are explained below in detail.
 
@@ -3260,7 +3260,7 @@ ShowSplash() - This method is used to display the SplashPanel at run time.
 
 The parameters discussed for the ShowSplash() method are as follows.
 
-_Table_ _622__: Parameters Table_
+_Table_ _622_: Parameters Table
 
 <table>
 <tr>
@@ -3286,7 +3286,7 @@ When the SplashPanel is getting displayed, the owner form will be disabled when 
 
 The below code snippet will display the SplashPanel at the specified location with the owner form being disabled. The location will be effective only when the DesktopAlignment property is set as 'Custom'.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3298,9 +3298,9 @@ Form2 f2 = new Form2();
 
 this.splashPanel1.ShowSplash(new Point(100, 100), f2, true);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3312,11 +3312,11 @@ Private f2 As Form2 = New Form2
 
 Me.splashPanel1.ShowSplash(New Point(100,100), f2, True)
 
-
+{% endhighlight %}
 
 * HideSplash() - The SplashPanel can be hidden by calling this method at run time.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3324,9 +3324,9 @@ Me.splashPanel1.ShowSplash(New Point(100,100), f2, True)
 
 this.splashPanel1.HideSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3334,7 +3334,7 @@ this.splashPanel1.HideSplash();
 
 Me.splashPanel1.HideSplash()
 
-
+{% endhighlight %}
 
 * ShowSplashDialog() -The method is used to display the SplashPanel as a modal dialog during run time. 
 
@@ -3342,7 +3342,7 @@ When this method is called, the user will not be able to interact with the appli
 
 The parameters discussed for the method are as follows.
 
-_Table_ _623__: Parameters Table_
+_Table_ _623_: Parameters Table
 
 <table>
 <tr>
@@ -3364,7 +3364,7 @@ The SplashPanel will be displayed at the position / location specified in this m
 
 The below example uses a button click event to call this method. This method is overloaded.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3376,9 +3376,9 @@ this.splashPanel1.ShowDialogSplash(new Point(700, 700), new Form1());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3388,11 +3388,11 @@ Me.splashPanel1.ShowDialogSplash(New Point(700, 700), New Form1())
 
 End Sub
 
-
+{% endhighlight %}
 
 This overloaded method passes the owner form as a parameter to this method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3404,9 +3404,9 @@ this.splashPanel1.ShowDialogSplash(new Form1());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3416,13 +3416,13 @@ Me.splashPanel1.ShowDialogSplash(New Form1())
 
 End Sub
 
-
+{% endhighlight %}
 
 * IsShowing() - This method will tell you whether the SplashPanel is currently displayed or not. This method returns 'True' if the SplashPanel is displayed and 'False' if it is not displayed.
 
 You can call this method in a button click event and view the result in the output window as given below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3438,9 +3438,9 @@ Console.Write(this.splashPanel1.IsShowing());
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3454,11 +3454,13 @@ Console.Write(Me.splashPanel1.IsShowing())
 
 End Sub
 
+{% endhighlight %}
+
 Location
 
 The location for displaying the splash window is specified using the property given below.
 
-_Table_ _624__: Property Table_
+_Table_ _624_: Property Table
 
 <table>
 <tr>
@@ -3480,7 +3482,7 @@ SplashPanel in TaskBar
 
 The SplashPanel can be displayed in the taskbar and it's appearance can be customized using the properties given below.
 
-_Table_ _625__: Property Table_
+_Table_ _625_: Property Table
 
 <table>
 <tr>
@@ -3502,7 +3504,7 @@ Specifies the text when displayed in the taskbar.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3512,9 +3514,9 @@ this.splashControl1.FormIcon = ((System.Drawing.Icon)(resources.GetObject("splas
 
 this.splashPanel1.Text = "Splash Panel";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3524,17 +3526,17 @@ Me.splashControl1.FormIcon = DirectCast((resources.GetObject("splashControl1.For
 
 Me.splashPanel1.Text = "Splash Panel"
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img50.jpeg)
-{:.image }
+
 
 
 Time Interval
 
 The SplashPanel is, by default, a timed display splash screen. The SplashPanel uses internally, a System.Windows.Forms.Timer, to automatically close the splash screen after the set interval is elapsed. This behavior can be changed by setting the TimerInterval property to -1. 
 
-_Table_ _626__: Property Table_
+_Table_ _626_: Property Table
 
 <table>
 <tr>
@@ -3550,27 +3552,25 @@ The time interval for which the splash screen should be displayed (in millisecon
 
 The splash screen will be displayed for a specific time period and will then be closed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.TimerInterval = 7000;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.TimerInterval = 7000
 
-###### Animation Settings
+{% endhighlight %}
+
+#### Animation Settings
 
 This section demonstrates how to display a splash image with animation.
 
 When animation is set for the splash image, by default, the splash image will be drawn from left to right. 
 
-_Table_ _627__: Property Table_
+_Table_ _627_: Property Table
 
 <table>
 <tr>
@@ -3594,7 +3594,7 @@ Specifies if the SplashPanel is to be displayed as a topmost window.</td></tr>
 
 This can be achieved through code also. Create a SplashPanel and set the below properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3604,11 +3604,9 @@ this.splashPanel1.ShowAnimation = true;
 
 this.splashPanel1.ShowAsTopMost = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.AnimationSpeed = 30
 
@@ -3616,11 +3614,13 @@ Me.splashPanel1.ShowAnimation = True
 
 Me.splashPanel1.ShowAsTopMost = True
 
+{% endhighlight %}
+
 Sliding Style
 
 The splash image, can not only be displayed from left to right, but can be displayed in different styles using the property given below.
 
-_Table_ _628__: Property Table_
+_Table_ _628_: Property Table
 
 <table>
 <tr>
@@ -3634,19 +3634,17 @@ Gets / sets the slide style for the SplashPanel. The options included are as fol
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.SlideStyle = Syncfusion.Windows.Forms.Tools.SlideStyle.FadeIn;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.SlideStyle = Syncfusion.Windows.Forms.Tools.SlideStyle.FadeIn
+
+{% endhighlight %}
 
 AutoClose
 
@@ -3656,7 +3654,7 @@ AutoClose
 
 Auto closing of the SplashPanel can be accomplished using the property given below.
 
-_Table_ _629__: Property Table_
+_Table_ _629_: Property Table
 
 <table>
 <tr>
@@ -3672,29 +3670,23 @@ Indicates whether the SplashPanel should not be closed when the mouse is over it
 
 Thisproperty which is available in SplashPanel, when enabled, will close the SplashPanel at run time before the specified time interval ends, when the mouse is moved over it. By default this will be set to 'False'.
 
-> ![](Notification-Package_images/Notification-Package_img51.jpeg)
-{:.image }
- _Note: The CloseOnClick property can also be used to close the SplashPanel by a single mouse click._
+> Note: The CloseOnClick property can also be used to close the SplashPanel by a single mouse click.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.SuspendAutoCloseWhenMouseOver = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.SuspendAutoCloseWhenMouseOver = True
 
-
+{% endhighlight %}
 
 AutoClose mode of the splash screen can be suspended or restored using the below methods.
 
-_Table_ _630__: Methods Table_
+_Table_ _630_: Methods Table
 
 <table>
 <tr>
@@ -3716,7 +3708,7 @@ Restores the auto closing of the SplashPanel.</td></tr>
 
 On calling this method, the splash screen will be displayed till the application is closed or the RestoreAutoCloseMode() method is called. You can use the below code snippet to call this method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3728,9 +3720,9 @@ this.splashPanel1.SuspendAutoCloseMode();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3740,11 +3732,11 @@ Me.splashPanel1.SuspendAutoCloseMode()
 
 End Sub
 
-
+{% endhighlight %}
 
 * RestoreAutoCloseMode() - This method will restore the auto closing of the splash screen which was suspended by calling the SuspendAutoCloseMode() method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3756,9 +3748,9 @@ this.splashPanel1.RestoreAutoCloseMode();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3768,6 +3760,8 @@ Me.splashPanel1.RestoreAutoCloseMode()
 
 End Sub
 
+{% endhighlight %}
+
 Appearance Settings
 
 The SplashPanel allows the user to customize the appearance of the panel using the below given properties.
@@ -3776,7 +3770,7 @@ Background Settings
 
 The background of the SplashPanel can be customized using the properties given below.
 
-_Table_ _631__: Property Table_
+_Table_ _631_: Property Table
 
 <table>
 <tr>
@@ -3818,7 +3812,7 @@ Specifies the transparent color for the background.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3828,9 +3822,9 @@ this.splashPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject(
 
 this.splashPanel1.TransparentColor = System.Drawing.Color.White;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3840,25 +3834,23 @@ Me.splashPanel1.BackgroundImage = CType((resources.GetObject("blue hills")), Sys
 
 Me.splashPanel1.TransparentColor = System.Drawing.Color.White
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img52.jpeg)
-{:.image }
+
 
 
 ![](Notification-Package_images/Notification-Package_img53.jpeg)
-{:.image }
 
 
-> ![](Notification-Package_images/Notification-Package_img54.jpeg)
-{:.image }
- _Note: The RefreshRegionFromImage() method can be used to refresh the region from the background image._
+
+> Note: The RefreshRegionFromImage() method can be used to refresh the region from the background image.
 
 Behavior Settings
 
 The user will not be able to close or resize the splash image, which is displayed during run time, normally. But by setting certain properties of the SplashPanel, the user can alter the SplashPanel. These properties are explained below in detail.
 
-_Table_ _632__: Property Table_
+_Table_ _632_: Property Table
 
 <table>
 <tr>
@@ -3884,13 +3876,11 @@ When the AllowMove property is setto 'True', the user will be allowed to click w
 
 When the AllowResize property is set to 'True', resize handles will be displayed when the user moves the mouse near the border of the SplashPanel.
 
-> ![](Notification-Package_images/Notification-Package_img55.jpeg)
-{:.image }
- _Note: In the above cases, the splash panel will not be closed, until the host form is closed._
+> Note: In the above cases, the splash panel will not be closed, until the host form is closed.
 
 The user can also close the SplashPanel by a single mouse click. This feature can be enabled by setting the CloseOnClick property to 'True'.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3900,9 +3890,9 @@ this.splashPanel1.AllowResize = true;
 
 this.splashPanel1.CloseOnClick = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3912,11 +3902,13 @@ Me.splashPanel1.AllowResize = True
 
 Me.splashPanel1.CloseOnClick = True
 
+{% endhighlight %}
+
 Border Settings
 
  The border settings of the SplashPanel control can be customized to provide a 3D look for the border.
 
-_Table_ _633__: Property Table_
+_Table_ _633_: Property Table
 
 <table>
 <tr>
@@ -3934,7 +3926,7 @@ Specifies the type of border. The options included are as follows.Border3D andNo
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3942,9 +3934,9 @@ this.splashPanel1.BorderStyle = System.Windows.Forms.Border3DStyle.Flat;
 
 this.splashPanel1.BorderType = Syncfusion.Windows.Forms.Tools.SplashBorderType.Border3D;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3952,17 +3944,17 @@ Me.splashPanel1.BorderStyle = System.Windows.Forms.Border3DStyle.Flat
 
 Me.splashPanel1.BorderType = Syncfusion.Windows.Forms.Tools.SplashBorderType.Border3D;
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img56.jpeg)
-{:.image }
+
 
 
 Alignment Settings
 
 The position of the SplashPanel in the desktop can be changed according to the needs of the user using the property given below.
 
-_Table_ _634__: Property Table_
+_Table_ _634_: Property Table
 
 <table>
 <tr>
@@ -3976,35 +3968,31 @@ Specifies the desktop alignment of the splash image. It includes the following o
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.SystemTray;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.SystemTray
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img57.jpeg)
-{:.image }
+
 
 
 A Sample which demonstrates theDesktop Alignment options is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 ToolTip
 
 ToolTip can be displayed for the SplashPanel when the mouse is moved over the control. This can be done using the following property.
 
-_Table_ _635__: Property Table_
+_Table_ _635_: Property Table
 
 <table>
 <tr>
@@ -4020,27 +4008,23 @@ Determines the ToolTip shown when the mouse hovers over the control.The ToolTip 
 
 ToolTip can also be set through the code given below.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.toolTip1.SetToolTip(this.splashPanel1, "Splash Panel Tooltip");
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.toolTip1.SetToolTip(this.splashPanel1, "Splash Panel Tooltip")
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img58.jpeg)
-{:.image }
 
 
-###### Slide Direction
+
+#### Slide Direction
 
 Transition Settings
 
@@ -4061,7 +4045,7 @@ Default
 
 If the animation direction is set as Default, the transition of the panel occurs from the bottom to the top for the LeftBottom or RightBottom DesktopAlignment.
 
-_Table_ _636__: Property Table_
+_Table_ _636_: Property Table
 
 <table>
 <tr>
@@ -4075,7 +4059,7 @@ Gets or sets the slide animation direction.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Set panel slide style.
 
@@ -4099,9 +4083,9 @@ this.splashPanel1.AnimationDirection = AnimationDirection.Default;
 
 this.splashPanel1.ShowSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.Slide
@@ -4118,11 +4102,13 @@ Me.splashPanel1.AnimationDirection = AnimationDirection.Default
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
+{% endhighlight %}
+
 Left to Right
 
 If the splash panel DesktopAlignment is set to BottomLeft or TopLeft, support can also be enabled for a left-to-right slide transition using the sample code that follows.
 
-_Table_ _637__: Property Table_
+_Table_ _637_: Property Table
 
 <table>
 <tr>
@@ -4136,7 +4122,7 @@ Gets or sets the slide animation direction.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Set panel slide style.
 
@@ -4160,9 +4146,9 @@ this.splashPanel1.AnimationDirection = AnimationDirection.LeftToRight;
 
 this.splashPanel1.ShowSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.Slide
@@ -4178,11 +4164,13 @@ Me.splashPanel1.AnimationDirection = AnimationDirection.LeftToRight
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
+{% endhighlight %}
+
 Right to Left
 
 If the splash panel DesktopAlignment is set to BottomRight or TopRight, support can also be enabled for a right-to-left slide transition using the sample code that follows.
 
-_Table_ _638__: Property Table_
+_Table_ _638_: Property Table
 
 <table>
 <tr>
@@ -4196,7 +4184,7 @@ Gets or sets the slide animation direction.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Set panel slide style.
 
@@ -4220,9 +4208,9 @@ this.splashPanel1.AnimationDirection = AnimationDirection.RightToLeft;
 
 this.splashPanel1.ShowSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.Slide
@@ -4239,6 +4227,8 @@ Me.splashPanel1.AnimationDirection = AnimationDirection.RightToLeft
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
+{% endhighlight %}
+
 Marquee Transition
 
 The splash panel supports the following marquee transitions:
@@ -4252,7 +4242,7 @@ Left to Right
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as LeftToRight, the marquee will traverse the screen from left to right.
 
-_Table_ _639__: Property Table_
+_Table_ _639_: Property Table
 
 <table>
 <tr>
@@ -4266,7 +4256,7 @@ Gets or sets the marquee direction.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Set panel slide style.
 
@@ -4290,9 +4280,9 @@ this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
 this.splashPanel1.ShowSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
@@ -4309,11 +4299,13 @@ Me.splashPanel1.MarqueeDirection = MarqueeDirection.LeftToRight
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
+{% endhighlight %}
+
 Right to Left
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as RightToLeft, the marquee will traverse the screen from right to left.
 
-_Table_ _640__: Property Table_
+_Table_ _640_: Property Table
 
 <table>
 <tr>
@@ -4327,7 +4319,7 @@ Gets or sets the marquee direction.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Set panel slide style.
 
@@ -4351,9 +4343,9 @@ this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
 this.splashPanel1.ShowSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
@@ -4370,11 +4362,13 @@ Me.splashPanel1.MarqueeDirection = MarqueeDirection.RightToLeft
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
+{% endhighlight %}
+
 Bottom to Top
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as BottomToTop, the marquee will traverse the screen from the bottom to the top.
 
-[C#]
+{% highlight c# %}
 
 //Set panel slide style.
 
@@ -4398,9 +4392,9 @@ this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
 this.splashPanel1.ShowSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
@@ -4417,11 +4411,13 @@ Me.splashPanel1.MarqueeDirection = MarqueeDirection.BottomToTop
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
+{% endhighlight %}
+
 Top to Bottom
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as TopToBottom, the marquee will traverse the screen from the top to the bottom.
 
-[C#]
+{% highlight c# %}
 
 //Set panel slide style.
 
@@ -4445,9 +4441,9 @@ this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
 this.splashPanel1.ShowSplash();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
@@ -4464,11 +4460,13 @@ Me.splashPanel1.MarqueeDirection = MarqueeDirection.TopToBottom
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
-##### SplashPanel Events
+{% endhighlight %}
+
+### SplashPanel Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _641__: Events Table_
+_Table_ _641_: Events Table
 
 <table>
 <tr>
@@ -4507,7 +4505,7 @@ Follow the below steps and use the corresponding events to get the results.
 1. Create a SplashPanel and a TextBox in a form.
 2. Set the textbox properties and add the textbox to the form as given below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4567,9 +4565,9 @@ textBox1.Text = textBox1.Text + text;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4627,7 +4625,9 @@ textBox1.Text = textBox1.Text & text
 
 End Sub
 
-###### BeforeSplash Event
+{% endhighlight %}
+
+#### BeforeSplash Event
 
 When the application is loaded and before the splash screen is displayed, the BeforeSplash event will be triggered.
 
@@ -4635,7 +4635,7 @@ Event Data
 
 The event handler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs member provides information specific to this event.
 
-_Table_ _642__: Member Table_
+_Table_ _642_: Member Table
 
 <table>
 <tr>
@@ -4651,7 +4651,7 @@ Indicates whether the event should be canceled.</td></tr>
 
 You can handle this event by including the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4677,9 +4677,9 @@ args.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4711,13 +4711,15 @@ args.Cancel = True
 
 End Sub
 
-###### SplashDisplayed Event
+{% endhighlight %}
+
+#### SplashDisplayed Event
 
 When the application is loaded and when the SplashPanel is displayed, the SplashDisplayed event will be raised. The event handler receives an argument of type EventArgs containing data related to this event.
 
 You can handle this event by including the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4751,9 +4753,9 @@ textBox1.Text = textBox1.Text + eventlogmessage;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4781,25 +4783,23 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 SplashClosedevent is raised when the SplashFormDisplayedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is displayed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.SplashFormDisplayedNotify();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.SplashFormDisplayedNotify()
 
-###### SplashClosing Event
+{% endhighlight %}
+
+##### SplashClosing Event
 
 At run time, after the splash screen is displayed for a specified time and when it is closing, the SplashClosing event will be triggered.
 
@@ -4807,7 +4807,7 @@ Event Data
 
 The event handler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs member provides information specific to this event.
 
-_Table_ _643__: Member Table_
+_Table_ _643_: Member Table
 
 <table>
 <tr>
@@ -4823,7 +4823,7 @@ Indicates whether the event should be canceled.</td></tr>
 
 You can handle this event by including the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4865,9 +4865,9 @@ this.splashPanel1.Visible = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4903,7 +4903,9 @@ Me.splashPanel1.Visible = True
 
 End Sub
 
-###### SplashClosed Event
+{% endhighlight %}
+
+#### SplashClosed Event
 
 At run time, after the splash screen is displayed for a specified time and when it is closed, the SplashClosed event will be triggered.
 
@@ -4911,7 +4913,7 @@ Event Data
 
 The event handler receives an argument of type SplashClosedEventArgs containing data related to this event. The following SplashClosedEventArgs member provides information specific to this event.
 
-_Table_ _644__: Member Table_
+_Table_ _644_: Member Table
 
 <table>
 <tr>
@@ -4927,7 +4929,7 @@ Returns the value which indicates the way in which the splash was closed.</td></
 
 You can handle this event by including the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4975,9 +4977,9 @@ args.SplashCloseType.ToString();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5019,25 +5021,23 @@ args.SplashCloseType.ToString()
 
 End Sub
 
-
+{% endhighlight %}
 
 SplashClosedevent is raised when the SplashFormClosedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closed.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.splashPanel1.SplashFormClosedNotify();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.splashPanel1.SplashFormClosedNotify()
 
-###### SplashMouseEnter Event
+{% endhighlight %}
+
+#### SplashMouseEnter Event
 
 When an application with SplashPanel is loaded, the splash screen will be displayed based on the alignment that is set. At this time, when the mouse is moved over the SplashPanel that is visible in the application, the SplashMouseEnter event will be raised. This event will not be triggered after the splash screen is closed.
 
@@ -5047,7 +5047,7 @@ You can handle this event by including the below code.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5081,9 +5081,9 @@ OutputText(eventlogmessage);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5109,7 +5109,9 @@ End If
 
 End Sub
 
-###### SplashMouseLeave Event
+{% endhighlight %}
+
+#### SplashMouseLeave Event
 
 When an application with SplashPanel is loaded, the splash screen will be displayed based on the alignment that is set. At this time, when the mouse moves over the SplashPanel and then leaves the SplashPanel, the SplashMouseLeave event will be raised. This event will not be triggered after the splash screen is closed.
 
@@ -5117,7 +5119,7 @@ The event handler receives an argument of type EventArgs containing data related
 
 You can handle this event by including the below code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5153,9 +5155,9 @@ textBox1.Text = textBox1.Text + text;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5183,17 +5185,19 @@ End If
 
 End Sub
 
-##### Frequently Asked Questions
+{% endhighlight %}
+
+### Frequently Asked Questions
 
 This section illustrates the solutions for various task-based queries about the control.
 
-###### The property CloseOnClick is used but SplashPanel is not closing when clicking on child control. How to close the splash panel
+#### The property CloseOnClick is used but SplashPanel is not closing when clicking on child control. How to close the splash panel
 
 When CloseOnClick property is set to _true_, the Splash Panel closes when clicked. But this is not applicable for the child controls inside the Splash Panel. To enable this feature, you need to call the HideSplash method inside the click event of the particular control.
 
 For example, if you want to close SplashPanel when clicking its child control say, Label1, handle its click event as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5205,9 +5209,9 @@ private void label1_Click(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5217,11 +5221,13 @@ Private Sub label1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
-###### How to display the SplashPanel along with the mouse pointer
+{% endhighlight %}
+
+#### How to display the SplashPanel along with the mouse pointer
 
 Set the DesktopAlignment property of the SplashPanel to _Custom_, and call the ShowSplash method, by passing the pointer position as the parameter as follows. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5233,9 +5239,9 @@ pt = Control.MousePosition;
 
 SplashPanel1 .ShowSplash(pt, this, true);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5249,17 +5255,19 @@ SplashPanel1.ShowSplash(pt, Me, True)
 
 End If
 
-#### StatusBarAdv
+{% endhighlight %}
+
+## StatusBarAdv
 
 The StatusBarAdv is an advanced StatusBar control that can display StatusBarPanels with enhanced backgrounds and appearances. The StatusBarAdv control can be dragged and dropped from the toolbox onto a form during design time. Users can then drag and drop controls onto the StatusBarAdv control.
 
 Below image shows a StatusBarAdv with controls added to it.
 
 ![](Notification-Package_images/Notification-Package_img59.jpeg)
-{:.image }
 
 
-##### Features
+
+### Features
 
 The features of the StatusBarAdv control which enhance the look and feel of the control have been listed below.
 
@@ -5315,18 +5323,18 @@ See Also
 
 Concepts and Features
 
-##### Creating StatusBarAdv
+### Creating StatusBarAdv
 
 This section will give a step-by-step procedure to design a StatusBarAdv control through designer and also through programmatical approach.
 
-###### Through Designer
+#### Through Designer
 
 To create a StatusBarAdv control through designer,
 
 1.  Drag and drop a StatusBarAdv control from the toolbox onto the form.
 
-![](Notification-Package_images/Notification-Package_img60.jpeg)
-{:.image }
+    ![](Notification-Package_images/Notification-Package_img60.jpeg)
+
 
 
 2. Set the desired background for the StatusBarAdv control by setting the desired values for properties that control the background in the properties window.
@@ -5334,10 +5342,10 @@ To create a StatusBarAdv control through designer,
 4. Build and run the application.
 
 ![](Notification-Package_images/Notification-Package_img61.jpeg)
-{:.image }
 
 
-###### Through Code
+
+#### Through Code
 
 To create a StatusBarAdv control programmatically,
 
@@ -5345,156 +5353,160 @@ To create a StatusBarAdv control programmatically,
 2. Add the Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies to your application.
 3. Declare the StatusBarAdv and StatusBarAdvPanel controls.
 
-[C#]
+   ~~~ cs
+
+		private Syncfusion.Windows.Forms.Tools.StatusBarAdv statusBarAdv1;
+
+		private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel1;
+
+		private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel2;
+
+		private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel3;
+
+   ~~~
+   {:.prettyprint }
+
+
+   ~~~ vbnet
 
 
 
-private Syncfusion.Windows.Forms.Tools.StatusBarAdv statusBarAdv1;
+		Private statusBarAdv1 As Syncfusion.Windows.Forms.Tools.StatusBarAdv
 
-private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel1;
+		Private statusBarAdvPanel1 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
-private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel2;
+		Private statusBarAdvPanel2 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
-private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel3;
+		Private statusBarAdvPanel3 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
-
-
-[VB.NET]
-
-
-
-Private statusBarAdv1 As Syncfusion.Windows.Forms.Tools.StatusBarAdv
-
-Private statusBarAdvPanel1 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
-
-Private statusBarAdvPanel2 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
-
-Private statusBarAdvPanel3 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
-
+   ~~~
+   {:.prettyprint }
 
 
 4. Initialize the controls.
 
-[C#]
+   ~~~ cs
+
+		this.statusBarAdv1 = new Syncfusion.Windows.Forms.Tools.StatusBarAdv();
+
+		this.statusBarAdvPanel1 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
+
+		this.statusBarAdvPanel2 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
+
+		this.statusBarAdvPanel3 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
+
+   ~~~
+   {:.prettyprint }
 
 
-
-this.statusBarAdv1 = new Syncfusion.Windows.Forms.Tools.StatusBarAdv();
-
-this.statusBarAdvPanel1 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
-
-this.statusBarAdvPanel2 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
-
-this.statusBarAdvPanel3 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
+   ~~~ vbnet
 
 
+		Me.statusBarAdv1 = New Syncfusion.Windows.Forms.Tools.StatusBarAdv() 
 
-[VB.NET]
+		Me.statusBarAdvPanel1 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel() 
 
+		Me.statusBarAdvPanel2 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel() 
 
+		Me.statusBarAdvPanel3 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel() 
 
-Me.statusBarAdv1 = New Syncfusion.Windows.Forms.Tools.StatusBarAdv() 
-
-Me.statusBarAdvPanel1 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel() 
-
-Me.statusBarAdvPanel2 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel() 
-
-Me.statusBarAdvPanel3 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel() 
-
+   ~~~
+   {:.prettyprint }
 
 
 5. Set the properties to customize the control's appearance, and add the control to the form.
 
-[C#]
+   ~~~ cs
+
+		this.statusBarAdv1.BackColor = System.Drawing.Color.LightSteelBlue;
+
+		this.statusBarAdv1.BorderColor = System.Drawing.Color.Black;
+
+		this.statusBarAdv1.Dock = System.Windows.Forms.DockStyle.Bottom;
+
+		this.statusBarAdv1.Name = "statusBarAdv1";
+
+		this.statusBarAdv1.Controls.Add(this.statusBarAdvPanel1);
+
+		this.statusBarAdv1.Controls.Add(this.statusBarAdvPanel2);
+
+		this.statusBarAdv1.Controls.Add(this.statusBarAdvPanel3);
+
+		this.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.CurrentCulture;
+
+		this.statusBarAdvPanel2.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortDate;
+
+		this.statusBarAdvPanel3.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortTime;
+
+		this.statusBarAdvPanel1.Size = new System.Drawing.Size(100, 27);
+
+		this.statusBarAdvPanel2.Size = new System.Drawing.Size(100, 27);
+
+		this.statusBarAdvPanel3.Size = new System.Drawing.Size(100, 27);
 
 
 
-this.statusBarAdv1.BackColor = System.Drawing.Color.LightSteelBlue;
+		this.Controls.Add(this.statusBarAdv1);
 
-this.statusBarAdv1.BorderColor = System.Drawing.Color.Black;
+   ~~~
+   {:.prettyprint }
 
-this.statusBarAdv1.Dock = System.Windows.Forms.DockStyle.Bottom;
 
-this.statusBarAdv1.Name = "statusBarAdv1";
-
-this.statusBarAdv1.Controls.Add(this.statusBarAdvPanel1);
-
-this.statusBarAdv1.Controls.Add(this.statusBarAdvPanel2);
-
-this.statusBarAdv1.Controls.Add(this.statusBarAdvPanel3);
-
-this.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.CurrentCulture;
-
-this.statusBarAdvPanel2.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortDate;
-
-this.statusBarAdvPanel3.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortTime;
-
-this.statusBarAdvPanel1.Size = new System.Drawing.Size(100, 27);
-
-this.statusBarAdvPanel2.Size = new System.Drawing.Size(100, 27);
-
-this.statusBarAdvPanel3.Size = new System.Drawing.Size(100, 27);
+   ~~~ vbnet
 
 
 
-this.Controls.Add(this.statusBarAdv1);
+		Me.statusBarAdv1.BackColor = System.Drawing.Color.LightSteelBlue
+
+		Me.statusBarAdv1.BorderColor = System.Drawing.Color.Black
+
+		Me.statusBarAdv1.Dock = System.Windows.Forms.DockStyle.Bottom
+
+		Me.statusBarAdv1.Name = "statusBarAdv1"
+
+		Me.statusBarAdv1.Controls.Add(Me.statusBarAdvPanel1)
+
+		Me.statusBarAdv1.Controls.Add(Me.statusBarAdvPanel2)
+
+		Me.statusBarAdv1.Controls.Add(Me.statusBarAdvPanel3)
+
+		Me.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.CurrentCulture
+
+		Me.statusBarAdvPanel2.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortDate
+
+		Me.statusBarAdvPanel3.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortTime
+
+		Me.statusBarAdvPanel1.Size = New System.Drawing.Size(100, 27)
+
+		Me.statusBarAdvPanel2.Size = New System.Drawing.Size(100, 27)
+
+		Me.statusBarAdvPanel3.Size = New System.Drawing.Size(100, 27)
 
 
+		Me.Controls.Add(Me.statusBarAdv1)
 
-[VB.NET]
-
-
-
-Me.statusBarAdv1.BackColor = System.Drawing.Color.LightSteelBlue
-
-Me.statusBarAdv1.BorderColor = System.Drawing.Color.Black
-
-Me.statusBarAdv1.Dock = System.Windows.Forms.DockStyle.Bottom
-
-Me.statusBarAdv1.Name = "statusBarAdv1"
-
-Me.statusBarAdv1.Controls.Add(Me.statusBarAdvPanel1)
-
-Me.statusBarAdv1.Controls.Add(Me.statusBarAdvPanel2)
-
-Me.statusBarAdv1.Controls.Add(Me.statusBarAdvPanel3)
-
-Me.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.CurrentCulture
-
-Me.statusBarAdvPanel2.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortDate
-
-Me.statusBarAdvPanel3.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.ShortTime
-
-Me.statusBarAdvPanel1.Size = New System.Drawing.Size(100, 27)
-
-Me.statusBarAdvPanel2.Size = New System.Drawing.Size(100, 27)
-
-Me.statusBarAdvPanel3.Size = New System.Drawing.Size(100, 27)
-
-
-
-Me.Controls.Add(Me.statusBarAdv1)
-
+   ~~~
+   {:.prettyprint }
 
 
 6. Run the application. You will see the StatusBarAdv control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
 ![](Notification-Package_images/Notification-Package_img62.jpeg)
-{:.image }
 
 
-##### Concepts and Features
+
+### Concepts and Features
 
 This section helps to get started with the StatusBarAdv control. It explains all the concepts and features of the control in detail.
 
 The following are the topics discussed.
 
-###### StatusBarAdv Overview
+#### StatusBarAdv Overview
 
 The various sections of StatusBarAdv and their descriptions are given below.
 
 ![](Notification-Package_images/Notification-Package_img63.jpeg)
-{:.image }
+
 
 
 StatusBarAdv Control
@@ -5519,7 +5531,7 @@ Border Settings
 
 StatusBarAdvPanel
 
-###### Appearance Settings
+#### Appearance Settings
 
 You can enhance the appearance of the StatusBarAdv control by using the following properties.
 
@@ -5527,7 +5539,7 @@ Background Settings
 
 You can customize the StatusBarAdv control's background by using the various options provided in the BackgroundColor property as follows.
 
-_Table_ _645__: Property Table_
+_Table_ _645_: Property Table
 
 <table>
 <tr>
@@ -5581,7 +5593,7 @@ Gets or sets whether to set MetroColor as its Border color.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -5598,10 +5610,10 @@ Gets or sets whether to set MetroColor as its Border color.</td></tr>
    this.statusBarAdv1.UseMetroColorAsBorder = true;
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5618,22 +5630,22 @@ Gets or sets whether to set MetroColor as its Border color.</td></tr>
    Me.statusBarAdv1.UseMetroColorAsBorder = True
 
 
-
+{% endhighlight %}
 
 
 ![](Notification-Package_images/Notification-Package_img64.jpeg)
-{:.image }
+
 
 
 ![](Notification-Package_images/Notification-Package_img65.png)
-{:.image }
+
 
 
 Sizing Grip
 
 A sizing grip can be displayed for the StatusBarAdv control using the property given below.
 
-_Table_ _646__: Property Table_
+_Table_ _646_: Property Table
 
 <table>
 <tr>
@@ -5647,29 +5659,26 @@ Indicates if the sizing grip is visible.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdv1.SizingGrip = true;
 
+{% endhighlight %}
 
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.SizingGrip = True
 
-
+{% endhighlight %}
 
 SizingGrip property when set will display a grip at the bottom right of the control as displayed in the below image.
 
 ![](Notification-Package_images/Notification-Package_img66.jpeg)
-{:.image }
 
 
-###### StatusBarAdv - Behavior Settings
+
+#### StatusBarAdv - Behavior Settings
 
 This section discusses the properties that determine the behavior of the StatusBarAdv control.
 
@@ -5677,7 +5686,7 @@ AutoSize Settings
 
 This includes the properties that enable auto sizing of the StatusBarAdv control.
 
-_Table_ _647__: Property Table_
+_Table_ _647_: Property Table
 
 <table>
 <tr>
@@ -5699,9 +5708,7 @@ If the 'GrowAndShrink' option is selected, then the control grows and shrinks to
 
 If the 'GrowOnly' option is selected, the control grows as much as necessary to fit it's contents, but doesn't shrink smaller than the value specified in the Size property of the control.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdv1.AutoSize = true;
 
@@ -5709,11 +5716,9 @@ this.statusBarAdv1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
 
 this.statusBarAdv1.AutoHeightControls = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.AutoSize = True
 
@@ -5721,11 +5726,13 @@ Me.statusBarAdv1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly
 
 Me.statusBarAdv1.AutoHeightControls = True
 
+{% endhighlight %}
+
 AutoHeight Settings
 
 The height of the panels can be made to change automatically when the height of the StatusBarAdv control changes. This can be accomplished using the property given below.
 
-_Table_ _648__: Property Table_
+_Table_ _648_: Property Table
 
 <table>
 <tr>
@@ -5739,25 +5746,21 @@ Determines if the StatusBarAdv will resize the height of the panels according to
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdv1.AutoHeightControls = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.AutoHeightControls = True
 
-
+{% endhighlight %}
 
 The methods associated with the above properties are given below.
 
-_Table_ _649__: Methods Table_
+_Table_ _649_: Methods Table
 
 <table>
 <tr>
@@ -5773,13 +5776,14 @@ Returns the preferred size of the specified control.</td></tr>
 SetPreferredSize</td><td>
 Sets the preferred size in the layout of the specified control.</td></tr>
 </table>
-###### Border Settings
+
+#### Border Settings
 
 This section illustrates the border settings available for the StatusBarAdv control.
 
 The border settings for the StatusBarAdv control can be set through the properties listed below.
 
-_Table_ _650__: Property Table_
+_Table_ _650_: Property Table
 
 <table>
 <tr>
@@ -5807,11 +5811,10 @@ Indicates the border sides of the control. The options included are given below.
 BorderStyle</td><td>
 Indicates whether the panel should have a border. The options included are given below.FixedSingle,Fixed3D andNone.</td></tr>
 </table>
-> ![](Notification-Package_images/Notification-Package_img67.jpeg)
-{:.image }
- _Note: The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'._
 
-[C#]
+> Note: The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'.
+
+{% highlight c# %}
 
 
 
@@ -5825,9 +5828,9 @@ this.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 this.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -5841,21 +5844,19 @@ Me.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 Me.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img68.jpeg)
-{:.image }
 
 
-> ![](Notification-Package_images/Notification-Package_img69.jpeg)
-{:.image }
- _Note: The border of the StatusBarAdvPanels can also be set to enhance the look and feel of the panels. See Border Settings topic under StatusBarAdvPanel._
 
-###### StatusBarAdvPanel
+> Note: The border of the StatusBarAdvPanels can also be set to enhance the look and feel of the panels. See Border Settings topic under StatusBarAdvPanel.
+
+#### StatusBarAdvPanel
 
 StatusBarAdvPanels can also be added to the StatusBarAdv control using the Panels property. On clicking the Panels property, the StatusBarAdvPanel Collection Editor pops up. Using this window, the user can add any number of panels to the control and customize them according to their requirements.
 
-_Table_ _651__: Property Table_
+_Table_ _651_: Property Table
 
 <table>
 <tr>
@@ -5870,14 +5871,14 @@ Indicates the StatusBarAdvPanel controls contained in the StatusBarAdv.</td></tr
 
 
 ![](Notification-Package_images/Notification-Package_img70.jpeg)
-{:.image }
+
 
 
 Spacing
 
 The space between the panels can be set using the property given below.
 
-_Table_ _652__: Property Table_
+_Table_ _652_: Property Table
 
 <table>
 <tr>
@@ -5891,31 +5892,27 @@ Gets / sets the spacing between the panels.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdv1.Spacing = new System.Drawing.Size(5, 5);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.Spacing = New System.Drawing.Size(5, 5)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img71.jpeg)
-{:.image }
+
 
 
 Panel Size
 
 The rectangle that is used to display the panels can be customized using the property given below.
 
-_Table_ _653__: Property Table_
+_Table_ _653_: Property Table
 
 <table>
 <tr>
@@ -5931,31 +5928,27 @@ Indicates a custom rectangle that the layout will use to display the panels.</td
 
 It can be set programmatically through the below code snippet.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdv1.CustomLayoutBounds = new System.Drawing.Rectangle(5, 2, 100, 20);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.CustomLayoutBounds = New System.Drawing.Rectangle(5, 2, 100, 20)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img72.jpeg)
-{:.image }
 
 
-###### Alignment Settings
+
+#### Alignment Settings
 
 The panels and child controls that are added to the StatusBarAdv control can be aligned according to the needs of the user using the property given below.
 
-_Table_ _654__: Property Table_
+_Table_ _654_: Property Table
 
 <table>
 <tr>
@@ -5969,29 +5962,25 @@ Determines the alignment of the panels. The options included are given below.Cen
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdv1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Center;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Center
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img73.jpeg)
-{:.image }
+
 
 
 If the Alignment property is set to 'ChildConstraints', the positioning and resizing of the panels and child controls can be set by calling the SetHAlign() method.
 
-_Table_ _655__: Method Table_
+_Table_ _655_: Method Table
 
 <table>
 <tr>
@@ -6007,7 +5996,7 @@ Sets the horizontal alignment options for the control.</td></tr>
 
 The parameters discussed for the SetHAlign() method are as follows.
 
-_Table_ _656__: Parameter Table_
+_Table_ _656_: Parameter Table
 
 <table>
 <tr>
@@ -6025,7 +6014,7 @@ Represents the alignment option to be set for the specified control. It includes
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6037,35 +6026,29 @@ this.statusBarAdv1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Chil
 
 this.statusBarAdv1.SetHAlign(this.statusBarAdvPanel1, Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Justify);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildConstraints
-
-
 
 ' Sets the horizontal alignment using the SetHAlign() method.
 
 Me.statusBarAdv1.SetHAlign(Me.statusBarAdvPanel1, Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Justify)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img74.jpeg)
-{:.image }
 
 
-> ![](Notification-Package_images/Notification-Package_img75.jpeg)
-{:.image }
- _Note: The panels can be aligned using the HAlign property of the StatusBarAdvPanel control. See Alignment Settings topic under StatusBarAdvPanel._
 
-###### Applying Themes
+> Note: The panels can be aligned using the HAlign property of the StatusBarAdvPanel control. See Alignment Settings topic under StatusBarAdvPanel.
+
+#### Applying Themes
 
 The StatusBarAdv control can be provided with a themed look and feel using the properties given below.
 
-_Table_ _657__: Property Table_
+_Table_ _657_: Property Table
 
 <table>
 <tr>
@@ -6083,31 +6066,27 @@ Indicates whether the control will ignore the theme's background color and draw 
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdv1.IgnoreThemeBackground = true;
 
 this.statusBarAdv1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.IgnoreThemeBackground = True
 
 Me.statusBarAdv1.ThemesEnabled = True
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img76.jpeg)
-{:.image }
 
 
-###### Style
+
+#### Style
 
 StatusBarAdv supports visual styles such as Default, Metro. The style can be set using Style property. 
 
@@ -6116,31 +6095,32 @@ StatusBarAdv supports visual styles such as Default, Metro. The style can be set
 
 The following code example allows you to set the style for the StatusBarAdv.
 
-[C#]
+{% highlight c# %}
 
 this.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro;
 
+{% endhighlight %}
 
 
-[VB]
+{% highlight vbnet %}
 
 Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro
 
-
+{% endhighlight %}
 
 
 
 ![](Notification-Package_images/Notification-Package_img77.png)
-{:.image }
 
 
-##### FAQ
 
-###### How to customize the appearance of StatusBarAdv in MetroTheme?
+### FAQ
+
+#### How to customize the appearance of StatusBarAdv in MetroTheme?
 
 In MetroStyle, the back color and border color of StatusBarAdv can be changed by using its properties named “MetroColor” and “UseMetroColorAsBorder”.The following code example is to demonstrate the same.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6156,9 +6136,9 @@ this.statusBarAdv1.UseMetroColorAsBorder = true;
 
 this.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6174,17 +6154,17 @@ Me.statusBarAdv1.UseMetroColorAsBorder = True
 
 Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img78.png)
-{:.image }
 
 
-##### StatusBarAdv Events
+
+### StatusBarAdv Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _658__: Events Table_
+_Table_ _658_: Events Table
 
 <table>
 <tr>
@@ -6228,13 +6208,14 @@ This event occurs when the value of the ThemesEnabled property is changed.</td><
 VerticalGradientChanged</td><td>
 This event occurs when the value of the VerticalGradient property is changed.</td></tr>
 </table>
-###### BorderSidesChanged Event
+
+#### BorderSidesChanged Event
 
 This event is fired when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6260,9 +6241,9 @@ Console.WriteLine(" BorderSidesChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6282,13 +6263,15 @@ Private Sub statusBarAdv1_BorderSidesChanged(ByVal sender As Object, ByVal e As 
 
 End Sub
 
-###### BorderColorChanged Event
+{% endhighlight %}
+
+#### BorderColorChanged Event
 
 This event is fired when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6316,9 +6299,9 @@ Console.WriteLine(" BorderColorChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6344,13 +6327,15 @@ Private Sub statusBarAdv1_BorderColorChanged(ByVal sender As Object, ByVal e As 
 
 End Sub
 
+{% endhighlight %}
+
 ###### BorderSingleChanged Event
 
 This event is handled, when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6380,9 +6365,9 @@ Console.WriteLine(" BorderSingleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6410,13 +6395,15 @@ Private Sub statusBarAdv1_BorderSingleChanged(ByVal sender As Object, ByVal e As
 
 End Sub
 
-###### BorderStyleChanged Event
+{% endhighlight %}
+
+#### BorderStyleChanged Event
 
 This event is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6442,9 +6429,9 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6468,13 +6455,15 @@ Private Sub statusBarAdv1_BorderStyleChanged(ByVal sender As Object, ByVal e As 
 
 End Sub
 
-###### Border3DStyleChanged Event
+{% endhighlight %}
+
+#### Border3DStyleChanged Event
 
 This event is handled when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6504,9 +6493,9 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6534,13 +6523,15 @@ Private Sub statusBarAdv1_Border3DStyleChanged(ByVal sender As Object, ByVal e A
 
 End Sub
 
-###### GradientBackgroundChanged Event
+{% endhighlight %}
+
+#### GradientBackgroundChanged Event
 
 This event is fired when the value of the GradientBackground property is changed. The GradientBackground property indicates whether the background will be drawn with the gradient.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6554,9 +6545,9 @@ Console.WriteLine(" GradientBackgroundChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6568,13 +6559,15 @@ Console.WriteLine(" GradientBackgroundChanged event is raised ")
 
 End Sub
 
-###### GradientColorsChanged Event
+{% endhighlight %}
+
+#### GradientColorsChanged Event
 
 This event is fired when the value of the GradientColors property is changed. The GradientColors property specifies the color array that defines the gradient.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6588,9 +6581,9 @@ Console.WriteLine(" GradientColorsChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6602,13 +6595,15 @@ Console.WriteLine(" GradientColorsChanged event is raised ")
 
 End Sub
 
-###### ThemeChanged Event
+{% endhighlight %}
+
+#### ThemeChanged Event
 
 This event is fired when the value of the ThemesEnabled property is changed. The ThemesEnabled property indicates if the StatusBar will draw a themed background ( Indicated Settings: BorderStyle = None ).
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6622,9 +6617,9 @@ Console.WriteLine(" ThemeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6636,13 +6631,15 @@ Console.WriteLine(" ThemeChanged event is raised ")
 
 End Sub
 
-###### VerticalGradientChanged Event
+{% endhighlight %}
+
+#### VerticalGradientChanged Event
 
 This event is fired when the value of the VerticalGradient property is changed. The VerticalGradient property indicates whether the gradient is vertical.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -6656,9 +6653,9 @@ Console.WriteLine(" VerticalGradientChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -6670,17 +6667,19 @@ Console.WriteLine(" VerticalGradientChanged event is raised ")
 
 End Sub
 
-#### StatusBarAdvPanel
+{% endhighlight %}
+
+## StatusBarAdvPanel
 
 The StatusBarAdvPanel is a panel-derived class that can display StatusBar information such as the time and key state with several appearance enhancements, both within a StatusBarAdv control and also on a form. Customizing the look and feel can be done by setting the desired properties through the property window and usually there is no need to write any code.
 
 ![](Notification-Package_images/Notification-Package_img79.jpeg)
-{:.image }
+
 
 
 See Also
 
-##### Features
+### Features
 
 The features of the StatusBarAdv control which enhance the look and feel of the control have been listed below.
 
@@ -6734,18 +6733,18 @@ See Also
 
 Concepts and Features
 
-##### Creating StatusBarAdvPanel
+### Creating StatusBarAdvPanel
 
 This section will give a step by step procedure to design a StatusBarAdvPanel control through designer and also through programmatical approach.
 
-###### Through Designer
+#### Through Designer
 
 To create a StatusBarAdvPanel control through designer,
 
 * Drag-and-drop a StatusBarAdvPanel control from the toolbox onto the form.
 
 ![](Notification-Package_images/Notification-Package_img80.jpeg)
-{:.image }
+
 
 
 * Set the desired background in the properties window.
@@ -6754,10 +6753,10 @@ To create a StatusBarAdvPanel control through designer,
 * Build and run the application.
 
 ![](Notification-Package_images/Notification-Package_img81.jpeg)
-{:.image }
 
 
-###### Through Code
+
+#### Through Code
 
 To create a StatusBarAdvPanel programmatically,
 
@@ -6765,27 +6764,21 @@ To create a StatusBarAdvPanel programmatically,
 * Add the Syncfusion assemblies Shared.Base and Tool.Windows to your application.
 * Declare the StatusBarAdvPanel control.
 
-[C#]
-
-
+{% highlight c# %}
 
 private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel1;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private statusBarAdvPanel1 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
-
+{% endhighlight %}
 
 * Initialize the control and add it to your form.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
 
@@ -6793,11 +6786,9 @@ this.statusBarAdvPanel1.Location = new System.Drawing.Point(48, 128);
 
 this.Controls.Add(this.statusBarAdvPanel1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel()
 
@@ -6805,13 +6796,11 @@ Me.statusBarAdvPanel1.Location = New System.Drawing.Point(48, 128)
 
 Me.Controls.Add(Me.statusBarAdvPanel1)
 
-
+{% endhighlight %}
 
 * Customize the control's look and feel using the properties given below.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PaleVioletRed, System.Drawing.Color.PeachPuff);
 
@@ -6825,11 +6814,9 @@ this.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvP
 
 this.statusBarAdvPanel1.Size = new System.Drawing.Size(216, 48);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PaleVioletRed, System.Drawing.Color.PeachPuff)
 
@@ -6843,19 +6830,19 @@ Me.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPan
 
 Me.statusBarAdvPanel1.Size = New System.Drawing.Size(216, 48)
 
-
+{% endhighlight %}
 
 * Run the application. You will see the StatusBarAdvPanel with the date text displayed at the bottom right of the application.
 
 ![](Notification-Package_images/Notification-Package_img82.jpeg)
-{:.image }
 
 
-##### Concepts and Features
+
+### Concepts and Features
 
 This section discusses about the concepts and features of the StatusBarAdvPanel control. The below topics will guide you to get started with the control.
 
-###### Appearance Settings
+#### Appearance Settings
 
 The appearance of the StatusBarAdvPanel control can be enhanced using the properties given below.
 
@@ -6863,7 +6850,7 @@ Background Settings
 
 The StatusBarAdvPanel control's background can be customized using the various options provided in the BackgroundColor property given below.
 
-_Table_ _659__: Property Table_
+_Table_ _659_: Property Table
 
 <table>
 <tr>
@@ -6877,7 +6864,7 @@ Gets / sets the background gradient and other styles.</td></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the brush style.{{ _Solid,_ | markdownify }}{{ _Pattern and_ | markdownify }}{{ _Gradient._ | markdownify }}</td></tr>
+Specifies the brush style.{{ '_Solid,_' | markdownify }}{{ '_Pattern and_' | markdownify }}{{ '_Gradient._' | markdownify }}</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -6905,31 +6892,27 @@ Specifies the gradient colors.The first entry in this list will be the same as t
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.LavenderBlush, System.Drawing.Color.RosyBrown);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.LavenderBlush, System.Drawing.Color.RosyBrown)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img83.jpeg)
-{:.image }
+
 
 
 Icon Settings
 
 Icons can be added to the StatusBarAdvPanels using the property given below.
 
-_Table_ _660__: Property Table_
+_Table_ _660_: Property Table
 
 <table>
 <tr>
@@ -6943,33 +6926,29 @@ Indicates the icon of the panel.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.Icon = DirectCast((resources.GetObject("$this.Icon")), System.Drawing.Icon)
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img84.jpeg)
-{:.image }
 
 
-###### Behavior Settings
+
+#### Behavior Settings
 
 Panel Types
 
 The format of the data in the panel can be set using the property given below.
 
-_Table_ _661__: Property Table_
+_Table_ _661_: Property Table
 
 <table>
 <tr>
@@ -6985,35 +6964,29 @@ Indicates the type of the panel.</td></tr>
 
 The PanelType property can be used to display predefined text representing key states, date / time or culture information.
 
-> ![](Notification-Package_images/Notification-Package_img85.jpeg)
-{:.image }
- _Note: Users can also specify their own text to be displayed in the control by setting the PanelType property to 'Custom'. The text to be displayed is set using the Text property of the StatusBarAdvPanel._
+> Note: Users can also specify their own text to be displayed in the control by setting the PanelType property to 'Custom'. The text to be displayed is set using the Text property of the StatusBarAdvPanel._
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.NumLockState;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.NumLockState
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img86.jpeg)
-{:.image }
+
 
 
 Panel Size
 
 The StatusBarAdvPanel can be automatically resized using the property given below.
 
-_Table_ _662__: Property Table_
+_Table_ _662_: Property Table
 
 <table>
 <tr>
@@ -7031,37 +7004,33 @@ Gets / sets the preferred size of the panel in the FlowLayout.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.SizeToContent = true;
 
 this.statusBarAdvPanel1.PreferredSize = new System.Drawing.Size(99, 21);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.SizeToContent = True
 
 Me.statusBarAdvPanel1.PreferredSize = New System.Drawing.Size(99, 21)
 
-
+{% endhighlight %}
 
 A Sample which demonstrates the Panel Types of the StatusBarAdvPanel is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-###### Border Settings
+#### Border Settings
 
 This section illustrates the border settings available for the StatusBarAdvPanel control.
 
 The border settings for the StatusBarAdvPanel control can be set through the properties listed below.
 
-_Table_ _663__: Property Table_
+_Table_ _663_: Property Table
 
 <table>
 <tr>
@@ -7089,13 +7058,10 @@ Indicates the border sides of the control. The options included are given below.
 BorderStyle</td><td>
 Indicates whether the panel should have a border. The options included are given below.FixedSingle,Fixed3D andNone.</td></tr>
 </table>
-> ![](Notification-Package_images/Notification-Package_img87.jpeg)
-{:.image }
- _Note: The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'._
 
-[C#]
+> Note: The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'.
 
-
+{% highlight c# %}
 
 this.statusBarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
 
@@ -7107,11 +7073,9 @@ this.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 this.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner
 
@@ -7123,21 +7087,21 @@ Me.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 Me.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
 
-
+{% endhighlight %}
 
 User can also set the other options available to the properties and monitor the difference in appearance.
 
 ![](Notification-Package_images/Notification-Package_img88.jpeg)
-{:.image }
 
 
-###### Text Settings
+
+#### Text Settings
 
 StatusBarAdvPanel has several text settings which will be discussed in this section.
 
 The text for the StatusBarAdvPanel can be set through the following property.
 
-_Table_ _664__: Property Table_
+_Table_ _664_: Property Table
 
 <table>
 <tr>
@@ -7151,33 +7115,27 @@ Gets / sets the text of the panel.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.Text = "StatusBarAdvPanel";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.Text = "StatusBarAdvPanel"
 
-
+{% endhighlight %}
 
 The method associated with the above property is given below.
 
-> ![](Notification-Package_images/Notification-Package_img89.jpeg)
-{:.image }
- _Note: The GetText() method returns text according to the key state._
+> Note: The GetText() method returns text according to the key state.
 
 Marquee Settings
 
 The text inside the control can be made to float in the marquee style by enabling the property given below.
 
-_Table_ _665__: Property Table_
+_Table_ _665_: Property Table
 
 <table>
 <tr>
@@ -7191,25 +7149,23 @@ Indicates whether the control uses the marquee style for the displayed text.</td
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.IsMarquee = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.IsMarquee = True
+
+{% endhighlight %}
 
 Animation Settings
 
 The animation that has been applied to the text of the StatusBarAdvPanel control can be customized using the properties given below.
 
-_Table_ _666__: Property Table_
+_Table_ _666_: Property Table
 
 <table>
 <tr>
@@ -7233,13 +7189,10 @@ Indicates the animation speed of the marquee style.</td></tr>
 AnimationStyle</td><td>
 Specifies the style of animation for the marquee style. The options included are as follows.Scroll,Slide andAlternate.</td></tr>
 </table>
-> ![](Notification-Package_images/Notification-Package_img90.jpeg)
-{:.image }
- _Note: The IsMarquee property must be set to 'True' for the animation settings to be visible._
 
-[C#]
+> Note: The IsMarquee property must be set to 'True' for the animation settings to be visible.
 
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.AnimationDelay = 2;
 
@@ -7249,11 +7202,9 @@ this.statusBarAdvPanel1.AnimationSpeed = 6;
 
 this.statusBarAdvPanel1.AnimationStyle = Syncfusion.Windows.Forms.Tools.MarqueeStyle.Alternate;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.AnimationDelay = 2
 
@@ -7263,11 +7214,11 @@ Me.statusBarAdvPanel1.AnimationSpeed = 6
 
 Me.statusBarAdvPanel1.AnimationStyle = Syncfusion.Windows.Forms.Tools.MarqueeStyle.Alternate
 
-
+{% endhighlight %}
 
 The animation for the text can be enabled and disabled using the methods associated with the above properties. These methods are given below.
 
-_Table_ _667__: Methods Table_
+_Table_ _667_: Methods Table
 
 <table>
 <tr>
@@ -7287,7 +7238,7 @@ Stops the animation for the marquee style. This will restore the text to it's or
 
 These methods can be called within the below events as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7313,9 +7264,9 @@ this.statusBarAdvPanel1.StopAnimation();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7337,13 +7288,15 @@ Me.statusBarAdvPanel1.StopAnimation()
 
 End Sub
 
-###### Alignment Settings
+{% endhighlight %}
+
+#### Alignment Settings
 
 This section discusses the alignment settings of the StatusBarAdvPanel control.
 
 The contents of the StatusBarAdvPanel can be aligned using the property given below.
 
-_Table_ _668__: Property Table_
+_Table_ _668_: Property Table
 
 <table>
 <tr>
@@ -7357,31 +7310,27 @@ Indicates the alignment type of the text and icon of the panel. The options incl
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.Alignment = System.Windows.Forms.HorizontalAlignment.Left
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img91.jpeg)
-{:.image }
+
 
 
 HAlign
 
 The horizontal alignment of the StatusBarAdvPanels in the StatusBarAdv control can be customized using the property given below.
 
-_Table_ _669__: Property Table_
+_Table_ _669_: Property Table
 
 <table>
 <tr>
@@ -7395,31 +7344,27 @@ Indicates the horizontal alignment in the FlowLayout. It includes the options gi
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.HAlign = Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Left;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.HAlign = Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Left;
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img92.jpeg)
-{:.image }
 
 
-###### ToolTip
+
+#### ToolTip
 
 ToolTip can be set for the StatusBarAdvPanel using the property given below.
 
-_Table_ _670__: Property Table_
+_Table_ _670_: Property Table
 
 <table>
 <tr>
@@ -7435,31 +7380,27 @@ Indicates the tooltip of the panel.The text to be displayed in the tooltip can b
 
 This can be done through code as follows.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.statusBarAdvPanel1.ToolTip = "Tooltip for StatusBarAdvPanel";
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.ToolTip = "Tooltip for StatusBarAdvPanel"
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img93.jpeg)
-{:.image }
 
 
-###### Themes
+
+#### Themes
 
 The StatusBarAdvPanel control can be provided with a themed look and feel using the properties given below.
 
-_Table_ _671__: Property Table_
+_Table_ _671_: Property Table
 
 <table>
 <tr>
@@ -7477,29 +7418,28 @@ Indicates whether the control will ignore the theme's background color and draw 
 </table>
 
 
-[C#]
-
+{% highlight c# %}
 
 
 this.statusBarAdvPanel1.IgnoreThemeBackground = true;
 
 this.statusBarAdvPanel1.ThemesEnabled = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.statusBarAdvPanel1.IgnoreThemeBackground = True
 
 Me.statusBarAdvPanel1.ThemesEnabled = True
 
-##### StatusBarAdvPanel Events
+{% endhighlight %}
+
+### StatusBarAdvPanel Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _672__: Events Table_
+_Table_ _672_: Events Table
 
 <table>
 <tr>
@@ -7579,13 +7519,14 @@ This event occurs when the value of the ThemesEnabled property is changed.</td><
 TypeChanged</td><td>
 This event is fired when the value of the PanelType property is changed.</td></tr>
 </table>
-###### AlignChanged Event
+
+#### AlignChanged Event
 
 This event is fired when the value of the Alignment property is changed. The Alignment property indicates the alignment type of the text and icon of the panel.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7611,9 +7552,9 @@ Console.WriteLine(" AlignChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7637,13 +7578,15 @@ Private Sub statusBarAdvPanel1_AlignChanged(ByVal sender As Object, ByVal e As E
 
 End Sub
 
-###### AnimationDelayChanged Event
+{% endhighlight %}
+
+#### AnimationDelayChanged Event
 
 This event is fired when the value of the AnimationDelay property is changed. The AnimationDelay property indicates the delay for the animation of marquee style.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7699,9 +7642,9 @@ Console.WriteLine(" AnimationDelayChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7747,13 +7690,15 @@ Private Sub statusBarAdvPanel1_AnimationDelayChanged(ByVal sender As Object, ByV
 
 End Sub
 
-###### AnimationDirectionChanged Event
+{% endhighlight %}
+
+#### AnimationDirectionChanged Event
 
 This event is fired when the value of the AnimationDirection property is changed. The AnimationDirection property specifies the direction of animation for the marquee style.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7807,9 +7752,9 @@ Console.WriteLine(" AnimationDirectionChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7857,13 +7802,15 @@ Private Sub statusBarAdvPanel1_AnimationDirectionChanged(ByVal sender As Object,
 
 End Sub
 
-###### AnimationSpeedChanged Event
+{% endhighlight %}
+
+#### AnimationSpeedChanged Event
 
 This event is fired when the value of the AnimationSpeed property is changed. The AnimationSpeed property indicates the animation speed of the marquee style.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -7917,9 +7864,9 @@ Console.WriteLine(" AnimationSpeedChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -7969,13 +7916,15 @@ Private Sub statusBarAdvPanel1_AnimationSpeedChanged(ByVal sender As Object, ByV
 
 End Sub
 
-###### AnimationStyleChanged Event
+{% endhighlight %}
+
+#### AnimationStyleChanged Event
 
 This event is fired when the value of the AnimationStyle property is changed. The AnimationStyle property specifies the style of animation for the marquee style.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8029,9 +7978,9 @@ Console.WriteLine(" AnimationStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8081,13 +8030,15 @@ Private Sub statusBarAdvPanel1_AnimationStyleChanged(ByVal sender As Object, ByV
 
 End Sub
 
-###### BorderSidesChanged Event
+{% endhighlight %}
+
+#### BorderSidesChanged Event
 
 This event is fired, when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8113,9 +8064,9 @@ Console.WriteLine(" BorderSidesChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8139,13 +8090,15 @@ Private Sub statusBarAdvPanel1_BorderSidesChanged(ByVal sender As Object, ByVal 
 
 End Sub
 
-###### BorderColorChanged Event
+{% endhighlight %}
+
+#### BorderColorChanged Event
 
 This event is fired when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8175,9 +8128,9 @@ Console.WriteLine(" BorderColorChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8205,13 +8158,15 @@ Console.WriteLine(" BorderColorChanged event is raised ")
 
 End Sub
 
-###### BorderSingleChanged Event
+{% endhighlight %}
+
+#### BorderSingleChanged Event
 
 This event is fired when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8241,9 +8196,9 @@ Console.WriteLine(" BorderSingleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8271,13 +8226,15 @@ Private Sub statusBarAdvPanel1_BorderSingleChanged(ByVal sender As Object, ByVal
 
 End Sub
 
-###### BorderStyleChanged Event
+{% endhighlight %}
+
+#### BorderStyleChanged Event
 
 This event is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8303,9 +8260,9 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8329,13 +8286,15 @@ Private Sub statusBarAdvPanel1_BorderStyleChanged(ByVal sender As Object, ByVal 
 
 End Sub
 
-###### Border3DStyleChanged Event
+{% endhighlight %}
+
+#### Border3DStyleChanged Event
 
 This event is fired when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8365,9 +8324,9 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8396,16 +8355,16 @@ Private Sub statusBarAdvPanel1_Border3DStyleChanged(ByVal sender As Object, ByVa
 End Sub
 
 
+{% endhighlight %}
 
 
-
-###### ConstraintsChanged Event
+#### ConstraintsChanged Event
 
 This event is fired when changes are made in the list of constraints.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8419,9 +8378,9 @@ Console.WriteLine(" ConstraintsChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8433,13 +8392,15 @@ Console.WriteLine(" ConstraintsChanged event is raised ")
 
 End Sub
 
-###### GradientBackgroundChanged Event
+{% endhighlight %}
+
+#### GradientBackgroundChanged Event
 
 This event is fired when the value of the GradientBackground property is changed. The GradientBackground property indicates whether the background will be drawn with the gradient.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8453,9 +8414,9 @@ Console.WriteLine(" GradientBackgroundChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8467,13 +8428,15 @@ Console.WriteLine(" GradientBackgroundChanged event is raised ")
 
 End Sub
 
-###### GradientColorsChanged Event
+{% endhighlight %}
+
+#### GradientColorsChanged Event
 
 This event is fired when the value of the GradientColors property is changed. The GradientColors property specifies the color array that defines the gradient.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8487,9 +8450,9 @@ Console.WriteLine(" GradientColorsChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8501,13 +8464,15 @@ Console.WriteLine(" GradientColorsChanged event is raised ")
 
 End Sub
 
-###### IconChanged Event
+{% endhighlight %}
+
+#### IconChanged Event
 
 This event is fired when the value of the Icon property is changed. The Icon property indicates the icon of the panel.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8521,9 +8486,9 @@ Console.WriteLine(" IconChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8535,13 +8500,15 @@ Console.WriteLine(" IconChanged event is raised ")
 
 End Sub
 
-###### IsMarqueeChanged Event
+{% endhighlight %}
+
+#### IsMarqueeChanged Event
 
 This event is fired when the value of the IsMarquee property is changed. The IsMarquee property indicates whether the control uses the marquee style for the displayed text.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8591,9 +8558,9 @@ Console.WriteLine(" IsMarqueeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8635,13 +8602,15 @@ Private Sub statusBarAdvPanel1_IsMarqueeChanged(ByVal sender As Object, ByVal e 
 
 End Sub
 
-###### PreferredSizeChanged Event
+{% endhighlight %}
+
+#### PreferredSizeChanged Event
 
 This event is fired when the value of the PreferredSize property is changed. The PreferredSize property specifies the preferred size of the panel in the FlowLayout.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8675,9 +8644,9 @@ Console.WriteLine(" PreferredSizeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8709,13 +8678,15 @@ Private Sub statusBarAdvPanel1_PreferredSizeChanged(ByVal sender As Object, ByVa
 
 End Sub
 
-###### ThemeChanged Event
+{% endhighlight %}
+
+#### ThemeChanged Event
 
 This event is fired when the value of the ThemesEnabled property is changed. The ThemesEnabled property indicates if the background color will be set to 'Transparent' ( Indicated Settings: BorderSides = Right, BorderStyle = Fixed3D, Border3DStyle = Etched).
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8729,9 +8700,9 @@ Console.WriteLine(" ThemeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8743,13 +8714,15 @@ Console.WriteLine(" ThemeChanged event is raised ")
 
 End Sub
 
-###### TypeChanged Event
+{% endhighlight %}
+
+#### TypeChanged Event
 
 This event is fired when the value of the PanelType property is changed. The PanelType property indicates the type of the panel.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -8775,9 +8748,9 @@ Console.WriteLine(" TypeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -8799,7 +8772,9 @@ Private Sub statusBarAdvPanel1_TypeChanged(ByVal sender As Object, ByVal e As Ev
 
 End Sub
 
-#### Clock Control for Windows Forms
+{% endhighlight %}
+
+## Clock Control for Windows Forms
 
 Essential Tools for Windows Forms supports Clock control in an application. This feature enables you to add customizable analog clocks in the application.  
 
@@ -8811,7 +8786,7 @@ Tables for Properties, Methods, and Events
 
 Properties
 
-_Table_ _673__: Property Table_
+_Table_ _673_: Property Table
 
 <table>
 <tr>
@@ -8917,7 +8892,7 @@ enum</td></tr>
 </table>
 Events
 
-_Table_ _674__: Events Table_
+_Table_ _674_: Events Table
 
 <table>
 <tr>
@@ -8936,7 +8911,8 @@ Ticks </th><th>
 Triggers at every tick. </th><th>
 Event handler </th></tr>
 </table>
-##### Adding Clock to an Application
+
+### Adding Clock to an Application
 
 Adding Through visual studio
 
@@ -8948,7 +8924,7 @@ Follow the steps given below to add the Clock control to an application through 
 
 
 ![](Notification-Package_images/Notification-Package_img94.png)
-{:.image }
+
 
 
 
@@ -8962,39 +8938,45 @@ Follow the steps given below to add the Clock control to an application through 
 
 1. Include the Tools Windows namespace as given in the following code:
 
-[C#]
+   ~~~ cs
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		Imports Syncfusion.Windows.Forms.Tools
 
-Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create an instance of Clock control and add it to the form as given in the following code:
 
-[C#]
+   ~~~ cs
 
- Syncfusion.Windows.Forms.Tools.Clock clock1;
+		 Syncfusion.Windows.Forms.Tools.Clock clock1;
 
- this.clock1 = new Syncfusion.Windows.Forms.Tools.Clock();
+		 this.clock1 = new Syncfusion.Windows.Forms.Tools.Clock();
 
- this.Controls.Add(clock1);
+		 this.Controls.Add(clock1);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		Dim clock1 As Syncfusion.Windows.Forms.Tools.clock
 
-Dim clock1 As Syncfusion.Windows.Forms.Tools.clock
+		Me.clock1 = New Syncfusion.Windows.Forms.Tools.clock()
 
-Me.clock1 = New Syncfusion.Windows.Forms.Tools.clock()
+		Me.Controls.Add(clock1)
 
-Me.Controls.Add(clock1)
+   ~~~
+   {:.prettyprint }
 
-#####  Appearance and Structure of the Clock Control
+###  Appearance and Structure of the Clock Control
 
 Color setting
 
@@ -9006,7 +8988,7 @@ Clock control has individual property to set color for gradient back color, hand
 
 The following code illustrates how to apply color to Clock control:
 
-[C#]
+{% highlight c# %}
 
 this.clock1.BorderColor = Color.Violet;
 
@@ -9022,9 +9004,9 @@ this.clock1.SecondHandColor = Color.LightSteelBlue;
 
 this.clock1.StartGradientBackColor = Color.Black;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.BorderColor = Color.Violet
 
@@ -9040,10 +9022,10 @@ Me.clock1.SecondHandColor = Color.LightSteelBlue
 
 Me.clock1.StartGradientBackColor
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img95.png)
-{:.image }
+
 
 
 Appearance setting
@@ -9056,7 +9038,7 @@ Clock control allows you to adjust the thickness of hands and minute line.
 
 The following code illustrates how to adjust the thickness of the hands and minute line:
 
-[C#]
+{% highlight c# %}
 
 this.clock1.HourHandThickness = 7;
 
@@ -9066,9 +9048,9 @@ this.clock1.SecondHandThickness = 2;
 
 this.clock1.MinuteThickness = 4;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.HourHandThickness = 7
 
@@ -9078,10 +9060,10 @@ Me.clock1.SecondHandThickness = 2
 
 Me.clock1.MinuteThickness = 4
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img96.png)
-{:.image }
+
 
 
 Enable and Disable properties
@@ -9090,7 +9072,7 @@ Clock control allows you to enable or disable AM/PM, second hand, minute line an
 
 The following code illustrates how to enable AM/PM and or disable second hand, minute line and border:
 
-[C#]
+{% highlight c# %}
 
 this.clock1.ShowAMorPM = true;
 
@@ -9100,9 +9082,9 @@ this.clock1.ShowMinute = false;
 
 this.clock1.ShowSecondHand = false;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ShowAMorPM = True
 
@@ -9112,10 +9094,10 @@ Me.clock1.ShowMinute = False
 
 Me.clock1.ShowSecondHand = False
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img97.png)
-{:.image }
+
 
 
 Transparent support
@@ -9124,27 +9106,27 @@ Clock control supports transparent back ground.
 
 The following code illustrates how to apply transparent back ground:
 
-[C#]
+{% highlight c# %}
 
 this.clock1.IsTransparent = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.IsTransparent = True
-
+{% endhighlight %}
 
 
 ![](Notification-Package_images/Notification-Package_img98.png)
-{:.image }
+
 
 
 How to show a fixed time in the Clock control
 
 The Clock control usually displays the current time on the machine where it is hosted. To freeze the clock to display a fixed time, the Boolean property StopTimer can be used. Then, using the Clock control’s Now property, the desired time can be displayed or the default time will be displayed.
 
-_Table_ _675__: Property Table_
+_Table_ _675_: Property Table
 
 <table>
 <tr>
@@ -9158,21 +9140,23 @@ Gets or sets the value to freeze or unfreeze time in the clock.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Gets or sets the value to freeze or unfreeze time in the clock.
 
 this.clock1.StopTimer = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 //Gets or sets the value to freeze or unfreeze time in the clock.
 
 Me.clock1.StopTimer = True
 
-##### Applying Custom Renderer to the Clock Control
+{% endhighlight %}
+
+### Applying Custom Renderer to the Clock Control
 
 Customization of rendering by overriding the method
 
@@ -9180,7 +9164,7 @@ Clock control enables you to customize the Clock control by applying the custom 
 
 The following code illustrates how to customize the clock:
 
- [C#]
+ {% highlight c# %}
 
                 CustomRenderer renderer = new CustomRenderer();
 
@@ -9276,9 +9260,9 @@ public class CustomRenderer : ClockRenderer
 
     }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Private renderer As New CustomRenderer()
 
@@ -9350,33 +9334,31 @@ p.Dispose()
 
 End If
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img99.png)
-{:.image }
 
 
-##### Digital Clock
+
+### Digital Clock
 
 The DigitalClock is implemented as an extension to the existing Clock control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 
 You can use the DigitalClock in your application by simply switching the ClockType of the existing ClockControl as described in the following sample code:
 
-[C#]
+{% highlight c# %}
 
 this.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital
 
+{% endhighlight %}
 
-
-###### Appearance
+#### Appearance
 
 The DigitalClock offers a wide range of options to customize its appearance. It provides three built-in frames and five background shapes. Users can also use their own frames for the DigitalClock through the renderer.
 
@@ -9388,75 +9370,65 @@ To enable the background frames, the DigitalClock should be enabled with the pro
 
 Rectangular frame
 
-[C#]
+{% highlight c# %}
 
     this.clock1.ShowClockFrame = true;
 
     this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame;
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
     Me.clock1.ShowClockFrame = true
     Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img100.png)
-{:.image }
+
 
 
 Circular frame
 
-[C#]
+{% highlight c# %}
 
     this.clock1.ShowClockFrame = true;
 
     this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame;
 
+{% endhighlight %}
 
-
-
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.clock1.ShowClockFrame = true
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame
 
-
-
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img101.png)
-{:.image }
-
 
 Square frame
 
-[C#]
+{% highlight c# %}
 
     this.clock1.ShowClockFrame = true;
 
     this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ShowClockFrame = true
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img102.png)
-{:.image }
+
 
 
 Shapes
@@ -9465,115 +9437,116 @@ To enable background shapes in the Clock control, the “ShowClockFrame” prope
 
 Rectangular shape
 
-[C#]
+{% highlight c# %}
 
     this.clock1.ShowClockFrame = false;
 
     this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle;
 
+{% endhighlight %}
 
-
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ShowClockFrame = False
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame
 
-
+{% endhighlight %}
 
 
 
 ![](Notification-Package_images/Notification-Package_img103.png)
-{:.image }
+
 
 
 RoundedRectangular shape
 
-[C#]
+{% highlight c# %}
 
     this.clock1.ShowClockFrame = false;
 
     this.clock2.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ShowClockFrame = False
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockShapes.CircularFrame
 
+{% endhighlight %}
 
 
 ![](Notification-Package_images/Notification-Package_img104.png)
-{:.image }
+
 
 
 Circular shape
 
-[C#]
+{% highlight c# %}
 
   this.clock1.ShowClockFrame = false;
 
   this.clock2.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img105.png)
-{:.image }
+
 
 
 Square shape
 
-[C#]
+{% highlight c# %}
 
   this.clock1.ShowClockFrame = false;
 
   this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square
 
+{% endhighlight %}
+
 ![](Notification-Package_images/Notification-Package_img106.png)
-{:.image }
+
 
 
 RoundedSquare shape
 
-[C#]
+{% highlight c# %}
 
   this.clock1.ShowClockFrame = false;
 
   this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare
 
+{% endhighlight %}
+
 ![](Notification-Package_images/Notification-Package_img107.png)
-{:.image }
+
 
 
 Color customizations
@@ -9582,29 +9555,27 @@ Foreground color
 
 The foreground color for the DigitalClock can be changed using the ForeColor property. This color will be reflected in the text of the control.
 
-[C#]              
+{% highlight c# %}              
 
     this.clock1.ForeColor = System.Drawing.Color.Yellow;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
    Me.clock1.ForeColor = System.Drawing.Color.Yellow
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img108.png)
-{:.image }
+
 
 
 Background color
 
 The background color for the DigitalClock can be changed using the BackgroundColor property. This color will be reflected in the background of the control.
 
-[C#]         
+{% highlight c# %}         
 
 
 
@@ -9612,27 +9583,27 @@ The background color for the DigitalClock can be changed using the BackgroundCol
 
     this.clock1.ForeColor = System.Drawing.Color.Yellow;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
    Me.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
 
    Me.clock1.ForeColor = System.Drawing.Color.Yellow
 
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img109.png)
-{:.image }
+
 
 
 Border color
 
 The border color for the control will be reflected only when the control is assigned with the background shapes as follows:
 
-[C#]      
+{% highlight c# %}      
 
 
 
@@ -9642,11 +9613,11 @@ The border color for the control will be reflected only when the control is assi
 
     this.clock1.ForeColor = System.Drawing.Color.Yellow;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
    Me.clock1.BorderColor = System.Drawing.Color.Yellow
 
@@ -9654,74 +9625,66 @@ The border color for the control will be reflected only when the control is assi
 
    Me.clock1.ForeColor = System.Drawing.Color.Yellow
 
-
-
-
+{% endhighlight %}
 
 ![](Notification-Package_images/Notification-Package_img110.png)
-{:.image }
 
 
-###### Behavior
+
+#### Behavior
 
 Show or hide days of the week
 
 To display or hide the week days and current date in the DigitalClock, the DisplayDates property can be used.
 
- [C#]          
+ {% highlight c# %}          
 
           this.clock1.DisplayDates = true;
 
+{% endhighlight %}
 
-
-
-
- [VB]            
+ {% highlight vbnet %}            
 
         Me.clock1.DisplayDates = True
 
-
+{% endhighlight %}
 
 
 
 The following images illustrate the DigitalClock with and without the week days and dates:
 
 ![](Notification-Package_images/Notification-Package_img111.png)
-{:.image }
+
 
 
 ![](Notification-Package_images/Notification-Package_img112.png)
-{:.image }
+
 
 
 Show or hide the hour designator
 
 To display or hide the hour designator (AM and PM) in the DigitalClock, the ShowHourDesignator property can be used.
 
-[C#]         
+{% highlight c# %}         
 
           this.clock1.ShowHourDesignator = false;
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
           Me.clock1.ShowHourDesignator = false
 
-
-
-
+{% endhighlight %}
 
 The following images illustrate the DigitalClock with and without the hour designator:
 
 ![](Notification-Package_images/Notification-Package_img113.png)
-{:.image }
+
 
 
 ![](Notification-Package_images/Notification-Package_img114.png)
-{:.image }
+
 
 
 Custom Time Clock
@@ -9732,39 +9695,35 @@ Input Formats
 
 To enable the custom time, the clock control should be enabled with the ShowCustomTimeClock property set as true, and the custom time should be in DateTime format.
 
-[C#]            
+{% highlight c# %}            
 
           this.clock1.ShowCustomTimeClock = true;
 
           this.clock1.CustomTime = new System.DateTime(2013, 9, 14, 10, 10, 15, 0);
 
+{% endhighlight %}
 
-
-
-
-
-
-[VB]
+{% highlight vbnet %}
 
           Me.clock1.ShowCustomTimeClock = true
 
                    Me.clock1.CustomTime = New Date(2013, 9, 14, 10, 10, 15, 0)
 
-
+{% endhighlight %}
 
 
 
 The following image illustrates the DigitalClock with a custom date and time.
 
 ![](Notification-Package_images/Notification-Package_img115.png)
-{:.image }
 
 
-###### Applying Custom Renderer to the DigitalClock Control
+
+#### Applying Custom Renderer to the DigitalClock Control
 
 The following code sample can be utilized for applying a custom renderer to the DigitalClock.
 
-[C#]  
+{% highlight c# %}  
 
   DigitalRenderer render = new DigitalRenderer();
 
@@ -9790,11 +9749,9 @@ The following code sample can be utilized for applying a custom renderer to the 
 
     }
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Dim render As DigitalRenderer = New DigitalRenderer
 Me.clock1.DigitalRenderer = render
@@ -9807,11 +9764,11 @@ Public Class DigitalRenderer
     End Sub
 End Class
 
-
+{% endhighlight %}
 
 
 
 ![](Notification-Package_images/Notification-Package_img116.png)
-{:.image }
+
 
 
