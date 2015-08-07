@@ -55,8 +55,8 @@ Lesson 1 assumes the sample data file, ACC.mdb, that we ship as part of our samp
 
 Lesson 2 assumes that you have previously installed the QuickStart samples that are part of the .NET framework installation. In particular, we will use the NorthWind MSDE database that is part of those samples.
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 
 Depending on the specifications of your computer (resolution, color, size of monitor), the illustrations and code in this tutorial may vary slightly from what will appear on your screen. Contact technical support if you have any questions.
@@ -76,102 +76,102 @@ The steps in this lesson are to be used with Visual Studio 2005 and .NET 2.0. Yo
 1. From the Syncfusion tab in the toolbox, drag a Grid Grouping control onto your form.
 2. In the Grid Grouping control smart tag, click the Choose Data Source drop down. Then click the Add Project Data Source link in the drop down.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 
 
 In the Data Source Configuration Wizard that appears, select DataBase and click Next.
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 
 
 Click New Connection. Add Connection dialog box will be displayed.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 
 
 In the Add Connection dialog box, click Change button. This opens the Change Data Source dialog box.
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 
 
 In the Change Source dialog box, select the Microsoft Access DataBase File option, and then click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 
 
 The Add Connection dialog box will be opened without the DataBase file name entry set. Click Browse button and browse to the following path: _C:\Syncfusion\EssentialStudio\[Version Number]\Windows\Data\NWIND.mdb_ (this path will vary according to your installation location). Click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
 
 Click New Connection to choose your data connection. Click Next.
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 
 
 Click No to indicate that you do not want to save the MDB in the project.
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 
 
 The following screen appears.
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
 
 
 Click Next to choose your Database Objects. Select the Tables that you want. Click Finish.
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 
 
 The columns in the Grid Grouping control will now get populated as depicted in the following screen shot.
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
+
 
 
 Finally, set the Anchor property of the Grid Grouping control to _All_, so that the Grid Grouping control can be easily sized with the form.
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img13.png)
+
 
 
 
 
 To allow grouping at run time, the Grid Grouping control displays a drop panel that the user can drag columns to be grouped. To display this drop panel, you need to set ShowGroupDropArea property to _true_.
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 
@@ -180,8 +180,8 @@ Run the application to see the Grid Grouping control display the data from the M
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 
@@ -190,21 +190,19 @@ To group by CompanyName, click on the CompanyName column header and drag it to t
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
+
 
 
 
 
 Notice that each set of grouped values has its own "Caption" row and its own "AddNew" row (*). Each group has its own PlusMinus cell that will let you expand/collapse the group.
 
-{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img17.png)
 
 
-> {{ '![](Getting-Started_images/Getting-Started_img18.jpeg)' | markdownify }}
-{:.image }
-_Note: For more details, refer the following browser sample: C:\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\GettingStarted\Data Binding VS 2005 Demo_
+
+> Note: For more details, refer the following browser sample: C:\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\GettingStarted\Data Binding VS 2005 Demo
 
 ##### By using VS 2008
 
@@ -218,8 +216,8 @@ The steps in this lesson are to be used with Visual Studio 2008 and .NET 3.5. Sm
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img19.png)
+
 
 
 
@@ -228,8 +226,8 @@ The steps in this lesson are to be used with Visual Studio 2008 and .NET 3.5. Sm
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img20.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img20.png)
+
 
 
 
@@ -238,8 +236,8 @@ The steps in this lesson are to be used with Visual Studio 2008 and .NET 3.5. Sm
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img21.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img21.png)
+
 
 
 
@@ -248,8 +246,8 @@ The ChooseData Source dialog box appears.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img22.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img22.png)
+
 
 
 
@@ -258,8 +256,8 @@ The ChooseData Source dialog box appears.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img23.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img23.png)
+
 
 
 The Add Connection dialog box appears without the Database file name entry set.
@@ -273,8 +271,8 @@ The Add Connection dialog box appears without the Database file name entry set
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img24.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img24.png)
+
 
 
 The connection string is displayed in the Data Source Configuration Wizard dialog box.
@@ -285,16 +283,16 @@ The connection string is displayed in the Data Source Configuration Wizard dialo
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img25.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img25.png)
+
 
 
 8. In the Microsoft Visual Studio message box that opens, click No to indicate that you do not want to save the MDB in the project.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img26.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img26.png)
+
 
 
 
@@ -303,8 +301,8 @@ The Save the Connection String to the Application Configuration File window open
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img27.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img27.png)
+
 
 
 9. Click Next.
@@ -312,8 +310,8 @@ The Save the Connection String to the Application Configuration File window open
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img28.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img28.png)
+
 
 
 11. Click Finish.
@@ -324,8 +322,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img29.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img29.png)
+
 
 
 
@@ -334,8 +332,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img30.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img30.png)
+
 
 
 
@@ -344,8 +342,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img31.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img31.png)
+
 
 
 
@@ -354,8 +352,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img32.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img32.png)
+
 
 
 ##### By using VS 2010
@@ -368,16 +366,16 @@ The steps in this lesson are for use with Visual Studio 2010 and .NET 4.0. You c
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img33.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img33.png)
+
 
 
 2. In the Choose a Data Source Type window, click Database, and then click Next.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img34.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img34.png)
+
 
 
 
@@ -386,34 +384,34 @@ The steps in this lesson are for use with Visual Studio 2010 and .NET 4.0. You c
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img35.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img35.png)
+
 
 
 4. In the Choose Your Data Connection window, click New Connection.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img36.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img36.png)
+
 
 
 
 
 The ChooseData Source dialog box appears.
 
-{{ '![](Getting-Started_images/Getting-Started_img37.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img37.png)
 
 
-_Figure_ _43__: Choose Data Source dialog box_
+
+_Figure43: Choose Data Source dialog box_
 
 5. Click Microsoft Access Database File, and then click Continue.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img38.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img38.png)
+
 
 
 The Add Connection dialog box appears without the Database file name entry set.
@@ -425,8 +423,8 @@ The Add Connection dialog box appears without the Database file name entry set
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img39.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img39.png)
+
 
 
 
@@ -439,8 +437,8 @@ The connection string is displayed in the Data Source Configuration Wizard dialo
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img40.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img40.png)
+
 
 
 
@@ -449,8 +447,8 @@ The connection string is displayed in the Data Source Configuration Wizard dialo
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img41.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img41.png)
+
 
 
 
@@ -459,8 +457,8 @@ The Save the Connection String to the Application Configuration File window open
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img42.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img42.png)
+
 
 
 
@@ -470,8 +468,8 @@ The Save the Connection String to the Application Configuration File window open
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img43.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img43.png)
+
 
 
 
@@ -482,8 +480,8 @@ The Save the Connection String to the Application Configuration File window open
 
 The columns in the Grid Grouping control will get populated as shown in the following window shot.
 
-{{ '![](Getting-Started_images/Getting-Started_img44.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img44.png)
+
 
 
 
@@ -492,8 +490,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img45.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img45.png)
+
 
 
 
@@ -502,8 +500,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img46.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img46.png)
+
 
 
 
@@ -512,8 +510,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img47.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img47.png)
+
 
 
 ##### By using VS 2012
@@ -523,40 +521,40 @@ The following steps are intended for use with Visual Studio 2012 and .NET 4.5. Y
 1. From the Syncfusion tab in the toolbox, drag a Grid Grouping control onto your form.
 2. In the Grid Grouping control smart tag, click Choose Data Source drop-down list. Then click Add Project Data Source link.
 
-{{ '![](Getting-Started_images/Getting-Started_img48.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img48.png)
+
 
 
 
 
 In the Data Source Configuration Wizard that appears, select Database and click Next.
 
-{{ '![](Getting-Started_images/Getting-Started_img49.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img49.png)
+
 
 
 
 
 Select Dataset from Data Source Configuration Wizard dialog and click Next.
 
-{{ '![](Getting-Started_images/Getting-Started_img50.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img50.png)
+
 
 
 
 
 The following screen will appear:
 
-{{ '![](Getting-Started_images/Getting-Started_img51.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img51.png)
+
 
 
 
 
 Click New Connection. ChooseData Source dialog box will be displayed.
 
-{{ '![](Getting-Started_images/Getting-Started_img52.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img52.png)
+
 
 
 
@@ -565,8 +563,8 @@ Click New Connection. ChooseData Source dialog box will be displayed.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img53.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img53.png)
+
 
 
 
@@ -575,16 +573,16 @@ Click New Connection. ChooseData Source dialog box will be displayed.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img54.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img54.png)
+
 
 
 
 
 Now the Data Source Configuration Wizard will open, along with the connection string also shown in this dialog. Click Next.
 
-{{ '![](Getting-Started_images/Getting-Started_img55.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img55.png)
+
 
 
 
@@ -593,56 +591,56 @@ Click No to indicate that you do not want to save the MDB in the project.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img56.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img56.png)
+
 
 
 
 
 The following screen will appear:
 
-{{ '![](Getting-Started_images/Getting-Started_img57.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img57.png)
+
 
 
 
 
 5. Click Next to choose your Database Objects. Select the tables that you want. Click Finish.
 
-{{ '![](Getting-Started_images/Getting-Started_img58.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img58.png)
+
 
 
 
 
 The columns in the Grid Grouping control will now be populated as depicted in the following screenshot:
 
-{{ '![](Getting-Started_images/Getting-Started_img59.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img59.png)
+
 
 
 
 
 Finally, set the Anchor property of the Grid Grouping control to All, so that the Grid Grouping control can be easily sized with the form.
 
-{{ '![](Getting-Started_images/Getting-Started_img60.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img60.png)
+
 
 
 
 
 To allow grouping at run time, the Grid Grouping control displays a drop panel onto which the user can drag columns to be grouped. To display this drop panel, set the ShowGroupDropArea property to true as shown in the following screenshot:
 
-{{ '![](Getting-Started_images/Getting-Started_img61.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img61.png)
+
 
 
 
 
 Run the application to see the Grid Grouping control display the data from the MDB file without having written a single line of code. Your form should look similar to the one in the following screenshot:
 
-{{ '![](Getting-Started_images/Getting-Started_img62.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img62.png)
+
 
 
 ##### By using VS 2013
@@ -655,8 +653,8 @@ The steps in this lesson are for use with Visual Studio 2013 and .NET 4.5.1. You
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img63.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img63.png)
+
 
 
 
@@ -665,8 +663,8 @@ The steps in this lesson are for use with Visual Studio 2013 and .NET 4.5.1. You
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img64.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img64.png)
+
 
 
 
@@ -675,8 +673,8 @@ The steps in this lesson are for use with Visual Studio 2013 and .NET 4.5.1. You
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img65.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img65.png)
+
 
 
 
@@ -685,8 +683,8 @@ The steps in this lesson are for use with Visual Studio 2013 and .NET 4.5.1. You
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img66.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img66.png)
+
 
 
 
@@ -695,8 +693,8 @@ ChooseData Source dialog box appears.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img67.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img67.png)
+
 
 
 
@@ -705,8 +703,8 @@ ChooseData Source dialog box appears.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img68.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img68.png)
+
 
 
 
@@ -720,8 +718,8 @@ The Add Connection dialog box appears without the Database file name entry set
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img69.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img69.png)
+
 
 
 The connection string is displayed in the Data Source Configuration Wizard dialog box.
@@ -732,8 +730,8 @@ The connection string is displayed in the Data Source Configuration Wizard dialo
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img70.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img70.png)
+
 
 
 
@@ -742,8 +740,8 @@ The connection string is displayed in the Data Source Configuration Wizard dialo
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img71.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img71.png)
+
 
 
 
@@ -752,8 +750,8 @@ The Save the Connection String to the Application Configuration File window open
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img72.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img72.png)
+
 
 
 
@@ -763,8 +761,8 @@ The Save the Connection String to the Application Configuration File window open
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img73.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img73.png)
+
 
 
 
@@ -777,8 +775,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img74.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img74.png)
+
 
 
 
@@ -787,8 +785,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img75.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img75.png)
+
 
 
 
@@ -797,8 +795,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img76.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img76.png)
+
 
 
 
@@ -807,8 +805,8 @@ The columns in the Grid Grouping control will get populated as shown in the foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img77.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img77.png)
+
 
 
 
@@ -824,8 +822,8 @@ The steps in this lesson are for use with Visual Studio 2005 and .NET 2.0. You c
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_15.jpg](Getting-Started_images/Getting-Started_img78.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_15.jpg](Getting-Started_images/Getting-Started_img78.jpeg)
+
 
 
 
@@ -834,19 +832,19 @@ The steps in this lesson are for use with Visual Studio 2005 and .NET 2.0. You c
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_16.jpg](Getting-Started_images/Getting-Started_img79.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_16.jpg](Getting-Started_images/Getting-Started_img79.jpeg)
+
 
 
 4. Click New Connection. The Add Connection dialog box will be displayed.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Getting-Started_images/Getting-Started_img80.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Getting-Started_images/Getting-Started_img80.jpeg)
 
 
-_Figure_ _86__:_ Select the Data Connection
+
+_Figure86: Select the Data Connection
 
 
 
@@ -854,13 +852,13 @@ The ChooseData Source dialog box appears.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_49.jpg](Getting-Started_images/Getting-Started_img81.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_49.jpg](Getting-Started_images/Getting-Started_img81.jpeg)
 
 
 
 
-_Figure_ _87__: Choose Data Source dialog box_
+
+_Figure87: Choose Data Source dialog box_
 
 
 
@@ -870,13 +868,13 @@ _Figure_ _87__: Choose Data Source dialog box_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img82.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img82.png)
 
 
 
 
-_Figure_ _88__: Choose Data Source dialog box_
+
+_Figure88: Choose Data Source dialog box_
 
 
 
@@ -888,11 +886,11 @@ _Figure_ _88__: Choose Data Source dialog box_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img83.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img83.png)
 
 
-_Figure_ _89__:_ Selecting the SQL Server Database
+
+_Figure89:Selecting the SQL Server Database
 
 
 
@@ -904,33 +902,33 @@ _Figure_ _89__:_ Selecting the SQL Server Database
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img84.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img84.png)
 
 
-_Figure_ _90__:Choosing a Data Connection_
+
+_Figure90:Choosing a Data Connection_
 
 10. Click Next.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img85.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img85.png)
 
 
 
 
-_Figure_ _91__: Saving Connection String_
+
+_Figure91: Saving Connection String_
 
 
 
 11. Select the DataBaseObject file from the listed database files.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_54.jpg](Getting-Started_images/Getting-Started_img86.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_54.jpg](Getting-Started_images/Getting-Started_img86.jpeg)
 
 
-_Figure_ _92__:_ Choosing Database Objects
+
+_Figure92: Choosing Database Objects
 
 
 
@@ -938,44 +936,44 @@ The columns in Grid Grouping control get populated, as depicted in the following
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_25.jpg](Getting-Started_images/Getting-Started_img87.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_25.jpg](Getting-Started_images/Getting-Started_img87.jpeg)
+
 
 
 12. Finally, set the Anchor property of Grid Grouping control to All, so that the control can be sized easily with the form. This is depicted in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_26.jpg](Getting-Started_images/Getting-Started_img88.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_26.jpg](Getting-Started_images/Getting-Started_img88.jpeg)
+
 
 
 13. To allow grouping at run time, the user can drag columns to be grouped onto a drop panel that the Grid Grouping control displays. To display this drop panel, set the ShowGroupDropArea property to “True” as shown in the following screenshot.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_27.jpg](Getting-Started_images/Getting-Started_img89.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_27.jpg](Getting-Started_images/Getting-Started_img89.jpeg)
+
 
 
 14. Run the application to see the Grid Grouping control display the data from the SQL Server database. Your form should look similar to the one in the following screenshot.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_28.jpg](Getting-Started_images/Getting-Started_img90.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_28.jpg](Getting-Started_images/Getting-Started_img90.jpeg)
+
 
 
 15. To group by CompanyName, click on the CompanyName column header and drag it to the drop area as illustrated in the following screenshot
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_29.jpg](Getting-Started_images/Getting-Started_img91.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_29.jpg](Getting-Started_images/Getting-Started_img91.jpeg)
+
 
 
 Notice that each set of grouped values has its own "Caption" row and its own "AddNew" row, denoted by the * symbol. Each group has its own PlusMinus cell that allows you to expand or collapse the group. 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_30.jpg](Getting-Started_images/Getting-Started_img92.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_30.jpg](Getting-Started_images/Getting-Started_img92.jpeg)
+
 
 
 ##### By using VS 2008
@@ -988,34 +986,34 @@ In the Grid Grouping control smart tag, click Choose DataSource list, and then 
 
 The Data Source Configuration Wizard dialog box appears.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_31.jpg](Getting-Started_images/Getting-Started_img93.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_31.jpg](Getting-Started_images/Getting-Started_img93.jpeg)
+
 
 
 2. In the Choose a Data Source Type window, click Database, and then click Next.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_32.jpg](Getting-Started_images/Getting-Started_img94.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_32.jpg](Getting-Started_images/Getting-Started_img94.jpeg)
+
 
 
 3. In the Choose Your Data Connection window, click New Connection.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Getting-Started_images/Getting-Started_img95.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Getting-Started_images/Getting-Started_img95.jpeg)
+
 
 
 The ChooseData Source dialog box appears.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_49.jpg](Getting-Started_images/Getting-Started_img96.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_49.jpg](Getting-Started_images/Getting-Started_img96.jpeg)
+
 
 
 4. Click Microsoft SQL Server, and then click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img97.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img97.png)
+
 
 
  The Add Connection dialog box appears without the Database file name entry set.
@@ -1029,8 +1027,8 @@ This path varies according to your installation location.
 
 7. Select either the Windows Authentication option or the SQL Server Authentication option. If you want to authenticate SQL server, give your credentials for the SQL server.
 
-{{ '![](Getting-Started_images/Getting-Started_img98.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img98.png)
+
 
 
 8. Click OK.
@@ -1043,46 +1041,46 @@ This path varies according to your installation location.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img99.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img99.png)
+
 
 
 9. Click Next.
 
-{{ '![](Getting-Started_images/Getting-Started_img100.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img100.png)
+
 
 
 10. Select DataBaseObject file from listed database files.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_54.jpg](Getting-Started_images/Getting-Started_img101.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_54.jpg](Getting-Started_images/Getting-Started_img101.jpeg)
+
 
 
 11. Click Finish.
 
 The columns in the Grid Grouping control get populated as shown in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_41.jpg](Getting-Started_images/Getting-Started_img102.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_41.jpg](Getting-Started_images/Getting-Started_img102.jpeg)
+
 
 
 12. Finally, set the Anchor property of the Grid Grouping control to All, so that the control can be sized easily with the form, as shown in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_42.jpg](Getting-Started_images/Getting-Started_img103.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_42.jpg](Getting-Started_images/Getting-Started_img103.jpeg)
+
 
 
 13. You can group columns at run time by dragging the column headers of the columns to be grouped to the GroupDropArea of the Grid Grouping control. To display the GroupDropArea of the Grid Grouping control, set the ShowGroupDropArea property to “True”, as shown in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_43.jpg](Getting-Started_images/Getting-Started_img104.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_43.jpg](Getting-Started_images/Getting-Started_img104.jpeg)
+
 
 
 14. Run the application to view the SQL Server Database data displayed by the GridGrouping control. Your form should look similar to the one in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_44.jpg](Getting-Started_images/Getting-Started_img105.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_44.jpg](Getting-Started_images/Getting-Started_img105.jpeg)
+
 
 
 ##### By using VS 2010
@@ -1095,13 +1093,13 @@ In the Grid Grouping control smart tag, click Choose DataSource list, and then 
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_45.jpg](Getting-Started_images/Getting-Started_img106.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_45.jpg](Getting-Started_images/Getting-Started_img106.jpeg)
 
 
 
 
-_Figure_ _112__: Add a Project Data Source_
+
+_Figure112: Add a Project Data Source_
 
 
 
@@ -1109,13 +1107,13 @@ _Figure_ _112__: Add a Project Data Source_
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_46.jpg](Getting-Started_images/Getting-Started_img107.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_46.jpg](Getting-Started_images/Getting-Started_img107.jpeg)
 
 
 
 
-_Figure_ _113__: Select Database_
+
+_Figure113: Select Database_
 
 
 
@@ -1123,13 +1121,13 @@ _Figure_ _113__: Select Database_
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_47.jpg](Getting-Started_images/Getting-Started_img108.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_47.jpg](Getting-Started_images/Getting-Started_img108.jpeg)
 
 
 
 
-_Figure_ _114__: Select Dataset_
+
+_Figure114: Select Dataset_
 
 
 
@@ -1137,8 +1135,8 @@ _Figure_ _114__: Select Dataset_
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Getting-Started_images/Getting-Started_img109.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Getting-Started_images/Getting-Started_img109.jpeg)
+
 
 
 
@@ -1147,13 +1145,13 @@ The ChooseData Source dialog box appears.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_49.jpg](Getting-Started_images/Getting-Started_img110.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_49.jpg](Getting-Started_images/Getting-Started_img110.jpeg)
 
 
 
 
-_Figure_ _116__: Choose Data Source dialog box_
+
+_Figure116: Choose Data Source dialog box_
 
 
 
@@ -1161,11 +1159,11 @@ _Figure_ _116__: Choose Data Source dialog box_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img111.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img111.png)
 
 
-_Figure_ _117__: Choose Data Source dialog box_
+
+_Figure117: Choose Data Source dialog box_
 
 
 
@@ -1178,11 +1176,11 @@ This path varies according to your installation location.
 
 8. Select either the Windows Authentication option or the SQL server authentication option. If you want to authenticate with SQL server, give your SQL server credentials.
 
-{{ '![](Getting-Started_images/Getting-Started_img112.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img112.png)
 
 
-_Figure_ _118__: Selecting the SQL Server Database_
+
+_Figure118: Selecting the SQL Server Database_
 
 
 
@@ -1190,13 +1188,13 @@ _Figure_ _118__: Selecting the SQL Server Database_
 
  The connection string is displayed in the Data Source Configuration Wizard dialog box.
 
-{{ '![](Getting-Started_images/Getting-Started_img113.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img113.png)
 
 
 
 
-_Figure_ _119__: Choosing a Data Connection_
+
+_Figure119: Choosing a Data Connection_
 
 
 
@@ -1204,23 +1202,23 @@ _Figure_ _119__: Choosing a Data Connection_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img114.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img114.png)
 
 
 
 
-_Figure_ _120__: Saving Connection String_
+
+_Figure120: Saving Connection String_
 
 
 
 11. Select DataBaseObject file from listed database files.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_54.jpg](Getting-Started_images/Getting-Started_img115.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_54.jpg](Getting-Started_images/Getting-Started_img115.jpeg)
 
 
-_Figure_ _121__:_ : _Choosing Database Objects_
+
+_Figure121:Choosing Database Objects_
 
 
 
@@ -1230,13 +1228,13 @@ The columns in the Grid Grouping control get populated, as shown in the followin
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_55.jpg](Getting-Started_images/Getting-Started_img116.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_55.jpg](Getting-Started_images/Getting-Started_img116.jpeg)
 
 
 
 
-_Figure_ _122__: Grid Grouping Control_
+
+_Figure122: Grid Grouping Control_
 
 
 
@@ -1244,8 +1242,8 @@ _Figure_ _122__: Grid Grouping Control_
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_56.jpg](Getting-Started_images/Getting-Started_img117.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_56.jpg](Getting-Started_images/Getting-Started_img117.jpeg)
+
 
 
 
@@ -1254,16 +1252,16 @@ _Figure_ _122__: Grid Grouping Control_
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_57.jpg](Getting-Started_images/Getting-Started_img118.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_57.jpg](Getting-Started_images/Getting-Started_img118.jpeg)
+
 
 
 
 
 15. Run the application to view the SQL Server Database data, displayed by the Grid Grouping control. Your form should look similar to the one in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_58.jpg](Getting-Started_images/Getting-Started_img119.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_58.jpg](Getting-Started_images/Getting-Started_img119.jpeg)
+
 
 
 ##### By using VS 2012
@@ -1273,42 +1271,42 @@ The following steps are intended for use with Visual Studio 2012 and .NET 4.5. Y
 1. From the Syncfusion tab in the Toolbox, drag a Grid Grouping control onto your form. 
 2. In the Grid Grouping control smart tag, click the Choose Data Source drop-down list. Then click the Add Project Data Source link.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_59.png](Getting-Started_images/Getting-Started_img120.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_59.png](Getting-Started_images/Getting-Started_img120.png)
+
 
 
 3. In the Data Source Configuration Wizard that appears, select Database and click Next.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_60.png](Getting-Started_images/Getting-Started_img121.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_60.png](Getting-Started_images/Getting-Started_img121.png)
+
 
 
 4. Select Dataset from Data Source Configuration Wizard dialog and click Next.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_61.png](Getting-Started_images/Getting-Started_img122.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_61.png](Getting-Started_images/Getting-Started_img122.png)
+
 
 
 
 
 The following screen appears:
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_62.png](Getting-Started_images/Getting-Started_img123.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_62.png](Getting-Started_images/Getting-Started_img123.png)
+
 
 
 5. Click New Connection. The ChooseData Source dialog box is displayed.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_63.png](Getting-Started_images/Getting-Started_img124.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_63.png](Getting-Started_images/Getting-Started_img124.png)
+
 
 
 6. In the Change Data Source dialog box, select the SQL Server option, and then click Continue. The Add Connection dialog box is displayed.
 
-{{ '![](Getting-Started_images/Getting-Started_img125.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img125.png)
+
 
 
 7. Choose Server Name.
@@ -1318,11 +1316,11 @@ This path varies according to your installation location.
 
 9. Select either the Windows Authentication option or the SQL Server Authentication option. If you want to authenticate with SQL server, give your SQL server credentials.   
 
-{{ '![](Getting-Started_images/Getting-Started_img126.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img126.png)
 
 
-_Figure_ _132__:Selecting the SQL Server Database_
+
+_Figure132:Selecting the SQL Server Database_
 
 
 
@@ -1334,13 +1332,13 @@ _Figure_ _132__:Selecting the SQL Server Database_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img127.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img127.png)
 
 
 
 
-_Figure_ _133__: Choosing a Data Connection_ 
+
+_Figure133: Choosing a Data Connection_ 
 
 
 
@@ -1348,46 +1346,46 @@ _Figure_ _133__: Choosing a Data Connection_ 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img128.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img128.png)
 
 
-_Figure_ _134__: Saving Connection String_
+
+_Figure134: Saving Connection String_
 
 12. Select DataBase Object file from listed database files.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_69.png](Getting-Started_images/Getting-Started_img129.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_69.png](Getting-Started_images/Getting-Started_img129.png)
 
 
-_Figure_ _135__:Choosing Database Objects_
+
+_Figure135:Choosing Database Objects_
 
 13. Click Finish.
 
 The columns in the Grid Grouping control get populated, as depicted in the following screenshot:
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_70.png](Getting-Started_images/Getting-Started_img130.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_70.png](Getting-Started_images/Getting-Started_img130.png)
+
 
 
 14. Finally, set the Anchor property of the Grid Grouping control to All, so that the Grid Grouping control can be sized easily with the form. This is depicted in the following screenshot:
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_71.png](Getting-Started_images/Getting-Started_img131.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_71.png](Getting-Started_images/Getting-Started_img131.png)
+
 
 
 15. You can group columns at run time by dragging the columns headers of the columns to be grouped to the GroupDropArea of the Grid Grouping control. To display this drop panel, set the ShowGroupDropArea property to “True”, as shown in the following screenshot:
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_72.png](Getting-Started_images/Getting-Started_img132.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_72.png](Getting-Started_images/Getting-Started_img132.png)
+
 
 
 16. Run the application to see the Grid Grouping control display the data from the SQL Server Database, without having written a single line of code. Your form should look similar to the one in the following screenshot:
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_73.png](Getting-Started_images/Getting-Started_img133.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_73.png](Getting-Started_images/Getting-Started_img133.png)
+
 
 
 ##### By using VS 2013
@@ -1400,44 +1398,44 @@ In the Grid Grouping control smart tag, click Choose DataSource list, and then 
 
 The Data Source Configuration Wizard dialog box appears.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_74.jpg](Getting-Started_images/Getting-Started_img134.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_74.jpg](Getting-Started_images/Getting-Started_img134.jpeg)
+
 
 
 2. In the Choose a Data Source Type window, click Database, and then click Next.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_75.jpg](Getting-Started_images/Getting-Started_img135.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_75.jpg](Getting-Started_images/Getting-Started_img135.jpeg)
+
 
 
 3. Then, in the Choose a Database Model window, click Dataset, and then click Next.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_76.jpg](Getting-Started_images/Getting-Started_img136.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_76.jpg](Getting-Started_images/Getting-Started_img136.jpeg)
+
 
 
 4. In the Choose Your Data Connection window, click New Connection.
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_77.jpg](Getting-Started_images/Getting-Started_img137.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_77.jpg](Getting-Started_images/Getting-Started_img137.jpeg)
+
 
 
 
 
 The ChooseData Source dialog box appears.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_78.jpg](Getting-Started_images/Getting-Started_img138.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_78.jpg](Getting-Started_images/Getting-Started_img138.jpeg)
+
 
 
 5. In the Change Data Source dialog box, select the SQL Server option, and then click Continue. The Add Connection dialog box is displayed.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img139.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img139.png)
+
 
 
 6. Choose Server Name.
@@ -1451,11 +1449,11 @@ This path varies according to your installation location.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img140.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img140.png)
 
 
-_Figure_ _146__:Selecting the SQL Server Database_
+
+_Figure146:Selecting the SQL Server Database_
 
 9. Click OK.
 
@@ -1463,52 +1461,52 @@ _Figure_ _146__:Selecting the SQL Server Database_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img141.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img141.png)
 
 
-_Figure_ _147__:Choosing a Data Connection_
+
+_Figure147:Choosing a Data Connection_
 
 10. Click Next.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img142.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img142.png)
+
 
 
 11. In the Choose your Database Objects window that opens, select the required tables.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_83.jpg](Getting-Started_images/Getting-Started_img143.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_83.jpg](Getting-Started_images/Getting-Started_img143.jpeg)
+
 
 
 12. Click Finish.
 
 The columns in the Grid Grouping control get populated, as shown in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_84.jpg](Getting-Started_images/Getting-Started_img144.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_84.jpg](Getting-Started_images/Getting-Started_img144.jpeg)
+
 
 
 
 
 13. Finally, set the Anchor property of the Grid Grouping control to All, so that the Grid Grouping control can be easily sized with the form as shown in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_85.jpg](Getting-Started_images/Getting-Started_img145.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_85.jpg](Getting-Started_images/Getting-Started_img145.jpeg)
+
 
 
 14. You can group columns at run time by dragging columns headers of the columns to be grouped to the GroupDropArea of the Grid Grouping control. To display the GroupDropArea of the Grid Grouping control, set the ShowGroupDropArea property to “True”, as shown in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_86.jpg](Getting-Started_images/Getting-Started_img146.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_86.jpg](Getting-Started_images/Getting-Started_img146.jpeg)
+
 
 
 15. Run the application to view the SQL Server database data displayed by the GridGrouping control. Your form should look similar to the one in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_87.jpg](Getting-Started_images/Getting-Started_img147.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_87.jpg](Getting-Started_images/Getting-Started_img147.jpeg)
+
 
 
 ### Lesson 2: Grid Control Designer
@@ -1529,32 +1527,32 @@ Following step-by-step procedure illustrates how to add a simple grid control to
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img148.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img148.png)
+
 
 
 To edit the cell level properties of the grid (and also general Grid control properties), right-click on the Grid control and select Edit from the context menu.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img149.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img149.png)
+
 
 
 
 
 GridControl Designer window is displayed. By using GridControl Designer, cell contents/styles and general grid properties can be modified.
 
-{{ '![](Getting-Started_images/Getting-Started_img150.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img150.png)
+
 
 
 Single cells can be modified along with a selection of ranges. To do this, select a range of cells and switch to the Selected Range tab to view property grid to select.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img151.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img151.png)
+
 
 
 GridControl Designer also lets you save/load xml formatted files and Soap templates.
@@ -1571,8 +1569,8 @@ In this part, you will learn how to use the designer to place DataBound Grid on 
 
 1. In Visual Studio .NET, use the File -> Menu option to create a new Windows Application project, naming it DBGridTutorial.
 
-{{ '![](Getting-Started_images/Getting-Started_img152.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img152.jpeg)
+
 
 
 You now have an empty form on the design surface. Open the Data section of your toolbox and drag a SQLDataAdapter onto your form. This will open a Data Adapter Wizard.
@@ -1581,62 +1579,62 @@ Use the wizard to create a connection to the NorthWind database. This DataBase i
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img153.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img153.jpeg)
+
 
 
 
 
 Select use SQL statements.
 
-{{ '![](Getting-Started_images/Getting-Started_img154.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img154.jpeg)
+
 
 
 
 
 To generate SQL statement, click Query Builder button.
 
-{{ '![](Getting-Started_images/Getting-Started_img155.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img155.jpeg)
+
 
 
 
 
 In the Add Table dialog, select Products table and click Add, then Close.
 
-{{ '![](Getting-Started_images/Getting-Started_img156.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img156.jpeg)
+
 
 
 
 
 In this Query Build window, select ProductName, ProductID, QuantityPerUnit and UnitPrice. Then press OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img157.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img157.jpeg)
+
 
 
 
 
 Click Next to confirm the Query you selected.
 
-{{ '![](Getting-Started_images/Getting-Started_img158.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img158.jpeg)
+
 
 
 
 
 Click Finish. Your design surface will look similar to this.
 
-{{ '![](Getting-Started_images/Getting-Started_img159.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img159.jpeg)
+
 
 
 Next you will need to generate a dataset from the SQLDataAdapter. Right-click sqlDataAdapter1 under the design surface and select Generate DataSet. You will then see this window.
 
-{{ '![](Getting-Started_images/Getting-Started_img160.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img160.jpeg)
+
 
 
 
@@ -1645,8 +1643,8 @@ Press OK to add DataSet11 object next to sqlConnection1 under the design surface
 
 From the toolbox, drag Grid Data Bound Grid control to your form. Size and position it and add a button labeled Update to your form.
 
-{{ '![](Getting-Started_images/Getting-Started_img161.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img161.jpeg)
+
 
 
 
@@ -1668,7 +1666,7 @@ DisplayMember</td><td>
 Products</td></tr>
 </table>
 Double click the form on the design surface (not one of the controls, but the form itself) to add a load event handler. In this handler, add the single statement given below.
-
+{% highlight c# %}
 [C#]
 
 
@@ -1677,7 +1675,8 @@ Double click the form on the design surface (not one of the controls, but the fo
 
 this.sqlDataAdapter1.Fill(this.dataSet11);
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -1687,11 +1686,11 @@ this.sqlDataAdapter1.Fill(this.dataSet11);
 
 Me.sqlDataAdapter1.Fill(Me.dataSet11)
 
-
+{% endhighlight  %}
 
 To support updating data in your database, you will need to call Update command on the SQLDataAdapter. Double click Update button on the design surface to add a Click Handler. Then add this single line of code to the handler.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1701,7 +1700,8 @@ To support updating data in your database, you will need to call Update command 
 
 this.sqlDataAdapter1.Update(this.dataSet11);
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -1711,7 +1711,7 @@ this.sqlDataAdapter1.Update(this.dataSet11);
 
 Me.sqlDataAdapter1.Update(Me.dataSet11);
 
-
+{% endhighlight %}
 
 Now when you click Update button, it will post the changes made back to your database.
 
@@ -1719,8 +1719,8 @@ Now when you click Update button, it will post the changes made back to your dat
 
 GridBoundColumn collection property of DataBound Grid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
 
-{{ '![](Getting-Started_images/Getting-Started_img162.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img162.jpeg)
+
 
 
 
@@ -1731,30 +1731,30 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
 Click Add button to add a grid bound column, and then set MappingName property of that grid bound column to _ProductName_.
 
-{{ '![](Getting-Started_images/Getting-Started_img163.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img163.jpeg)
+
 
 
 
 
 Select StyleInfo property and set BackColor for the column as shown in the following screen shot.
 
-{{ '![](Getting-Started_images/Getting-Started_img164.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img164.jpeg)
+
 
 
 
 
 Repeat the above steps to add Grid Bound Columns for 'UnitPrice' and 'UnitsInStock'. For the 'UnitPrice' Grid Bound Column, set StyleInfo.Format to _C_.
 
-{{ '![](Getting-Started_images/Getting-Started_img165.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img165.jpeg)
+
 
 
 Compile and run the project to see formatted Grid Data Bound Grid. In the following screen shot, you will be able to see the grid with columns specified and in the order that you specified them. Notice that the 'UnitPrice' column shows the price in specified currency format.
 
-{{ '![](Getting-Started_images/Getting-Started_img166.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img166.jpeg)
+
 
 
 
@@ -1771,8 +1771,8 @@ In this section, you will learn how to set up an external data source, and then 
 
 1. In Visual Studio .NET, open File menu and select New Project. Then using either VB.NET or C#, select Windows Application project template to create a new Windows Forms project, naming it VirtualGridTutorial.
 
-{{ '![](Getting-Started_images/Getting-Started_img167.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img167.jpeg)
+
 
 
 
@@ -1785,7 +1785,7 @@ The external data source will be a class with two public properties (RowCount an
 
 Copy the following code into this file. Notice that the constructor accepts row and column count, and then populates an integer array. You can modify this class in any way you like as long as you define the class indexer and RowCount and ColCount properties, so that the virtual grid can access the data when needed. 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1867,7 +1867,8 @@ public class ExternalData
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -1978,6 +1979,7 @@ End Set
 End Property
 
 End Class
+{% endhighlight %}
 
 #### Adding Virtual Grid
 
@@ -1986,18 +1988,16 @@ To add a Virtual Grid to your application:
 
 
 1. Select the form, open the toolbox and drag a Grid control onto your form.
-> 
-{{ '![](Getting-Started_images/Getting-Started_img168.jpeg)' | markdownify }}
-{:.image }
-_Note: Do not change the values of the RowCount or ColCount properties for the grid. Let the default values remain as it is. These values will be provided dynamically as part of the virtual grid implementation._
+> Note: Do not change the values of the RowCount or ColCount properties for the grid. Let the default values remain as it is. These values will be provided dynamically as part of the virtual grid implementation.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img169.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img169.jpeg)
+
 
 
 2. Customize the other properties such as BorderStyle, etc.
+
 #### Initializing the Virtual Grid
 
 
@@ -2006,7 +2006,7 @@ To initialize the Virtual Grid added to your application
 1. Double-click the form's background so that a handler for the form's load event is added to your code.
 2. Add an ExternalData member to your form with the code given below.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -2015,7 +2015,8 @@ To initialize the Virtual Grid added to your application
 //Adds an external data member.
 
 private ExternalData _extData;
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 [VB.NET]
@@ -2026,12 +2027,12 @@ private ExternalData _extData;
 
 Private _extData as ExternalData
 
-
+{% endhighlight %}
 
 3. Then in your Form1_Load handler, add the following code to initialize the external data source and hook up the Grid control events so that the grid can use external data source to get data in demand. The events of interest are GridControl.QueryRowCount, GridControl.QueryColCount and GridControl.QueryCellInfo. The call to ResetVolatileData tells the grid that it needs to reset properties like RowCount and ColCount the next time they are needed. This will allow the event handlers to set these values.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2063,7 +2064,8 @@ private void Form1_Load(object sender, System.EventArgs e)
 }
 
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2095,12 +2097,13 @@ AddHandler gridControl1.QueryRowCount, New _GridRowColCountEventHandler(AddressO
 AddHandler gridControl1.QueryColCount, New _GridRowColCountEventHandler(AddressOf GridQueryColCount)
 
 End Sub
+{% endhighlight  %}
 
 #### Style Properties
 
 In your GridQueryCellInfo handler, it is possible to set style properties other than CellValue. For example, the code that follows will color any value that is divisible by three. To set properties other than the CellValue, change your QueryCellInfo event handler as shown below.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -2131,7 +2134,8 @@ void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
     }
 
 }
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 [VB.NET]
@@ -2165,9 +2169,10 @@ End If
 End Sub
 
 
+{% endhighlight  %}
 
-{{ '![](Getting-Started_images/Getting-Started_img170.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img170.jpeg)
+
 
 
 #### Handling Events to Retrieve Data for Virtual Grid
@@ -2178,7 +2183,7 @@ To retrieve data for the Virtual Grid from the external data source,
 
 GridQueryRowCount and GridQueryColCount provide the number of rows and columns from the external data source. Thus, the implementation code will access public properties of our external data object to get these values.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -2210,7 +2215,8 @@ void GridQueryColCount(object sender, GridRowColCountEventArgs e)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -2238,12 +2244,12 @@ e.Handled = True
 
 End Sub
 
-
+{% endhighlight %}
 
 2. Add QueryCellInfo event handler.
 3. GridQueryCellInfo is the event handler where the grid expects external data source to provide cell values that are in demand. Here is how it can be implemented with external data source. Recall that row 0 and column 0 are usually the header columns in a grid. In the GridQueryCellInfo, do not provide these values and use the default headers. If you need to provide special header values, you can do so.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -2265,8 +2271,8 @@ void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 }
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2282,15 +2288,15 @@ e.Handled = True
 End If
 
 End Sub
-
+{% endhighlight %}
 Notice that all the three handlers set Handled property on EventArgs when a value is provided. This informs the grid that no further processing is needed. Do not forget this or you will lose some of the benefits of using a virtual grid. 
 
 
 
 4. Compile and run the project. You will see something similar to the screen shot below. The point is that the grid itself does not hold any data. All the information is provided on demand through the three events that you have added.
 
-{{ '![](Getting-Started_images/Getting-Started_img171.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img171.jpeg)
+
 
 
 #### Saving Edited Values
@@ -2298,7 +2304,7 @@ Notice that all the three handlers set Handled property on EventArgs when a valu
 While working on Virtual Grid, you will see that the changes do not stay around after you leave the current cell, i.e., if you over type a cell entry, when you move off the cell, the old value is restored. The reason is that currently, there is no way for the changed value to be moved back to the external data source. So, as you move off the cell, when the grid redraws the old cell, it will query the external data source (through GridQueryCellInfo), get the original value and display it. The value you had typed will be lost. In order to edit and save values in the Virtual Grid, you must get the changed value back to the external data source. This is accomplished through GridControl.SaveCellInfo event. You must add a handler for this event and in this handler, you must save the changed value back to the external data source.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2359,8 +2365,8 @@ void GridSaveCellInfo(object sender, GridSaveCellInfoEventArgs e)
 
 }
 
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2423,10 +2429,10 @@ e.Handled = True
 
 End Sub
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img172.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img172.jpeg)' | markdownify }}
-{:.image }
 
 
 #### Setting Properties in a Virtual Grid
@@ -2440,7 +2446,7 @@ Here is a list of the other events that will allow virtual access to an Essentia
 * QueryCoveredRange-This event allows you to dynamically provide covered cell ranges.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2523,7 +2529,8 @@ void GridQueryCoveredRange(object sender, GridQueryCellRangeEventArgs e)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -2591,16 +2598,16 @@ End If
 
 End Sub
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img173.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img173.jpeg)' | markdownify }}
-{:.image }
 
 
 #### Type Conversions
 
 You will notice that in GridSaveCellInfo method, you had used int.Parse method to convert string value in the GridStyleInfo object to the integer you needed for the external data source. You can instead make use of the more general Convert class provided by Essential Grid to handle conversions between various data types. This class, for example, can convert the value in CellValue property to DataTime object or to Color object, depending upon the need. The following code example illustrates how to use this Convert class.
-
+{% highlight c# %}
 [C#]
 
 
@@ -2609,7 +2616,8 @@ You will notice that in GridSaveCellInfo method, you had used int.Parse method t
 
 this._extData[e.RowIndex - 1, e.ColIndex - 1] = (int)GridCellValueConvert.ChangeType(e.Style.CellValue, typeof(int), null);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -2618,10 +2626,9 @@ this._extData[e.RowIndex - 1, e.ColIndex - 1] = (int)GridCellValueConvert.Change
 'Converts a value in CellValue property to 'int' (as required by our data source) by using Convert class.
 
 Me._extData(e.RowIndex - 1, e.ColIndex - 1) = CInt(GridCellValueConvert.ChangeType(e.Style.CellValue, GetType(Integer), Nothing))
+{% endhighlight %}
 
-> {{ '![](Getting-Started_images/Getting-Started_img174.jpeg)' | markdownify }}
-{:.image }
-_Note: This conversion problem may occur when the value that is stored in the style object is a string. This happens when the CellValueType property is not explicitly set on the style object in your GridQueryCellInfo method. But when this is set to "int", then you can cast the CellValue in SaveCellInfo to an int, and do not have to worry about conversions._
+> Note: This conversion problem may occur when the value that is stored in the style object is a string. This happens when the CellValueType property is not explicitly set on the style object in your GridQueryCellInfo method. But when this is set to "int", then you can cast the CellValue in SaveCellInfo to an int, and do not have to worry about conversions.
 
 ### Lesson 5: Excel Export
 
@@ -2632,7 +2639,7 @@ Export to Excel is one of the most common functionalities required in the .NET w
 GridExcelConverter class provides support for exporting data from a Grid control or DataBound Grid into an Excel spreadsheet for verification and/or computation. This control automatically copies the Grid's styles and formats to Excel. GridExcelConverter control is derived from GridExcelConverterBase. The XlsIO libraries support the conversion of Grid content to Excel.
 
 To make use of GridExcelConverter class, the following assemblies should be added along with default assemblies present in the References folder of your application: Syncfusion.GridConverter.Base and Syncfusion.XlsIO.Base. GridToExcel method is used to export the grid to an Excel sheet. The following code example illustrates how to convert the Grid content to Excel.
-
+{% highlight c# %}
 [C#]
 
 
@@ -2642,7 +2649,8 @@ Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.Gr
 gecc.GridToExcel(this.gridControl1.Model, @"C:\MyGC.xls");
 
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2650,11 +2658,11 @@ gecc.GridToExcel(this.gridControl1.Model, @"C:\MyGC.xls");
 Dim gecc As Syncfusion.GridExcelConverter.GridExcelConverterControl = New Syncfusion.GridExcelConverter.GridExcelConverterControl()
 
 gecc.GridToExcel(Me.gridControl1.Model, "C:\MyGC.xls")
-
+{% endhighlight  %}
 
 
 The following code example illustrates how to convert the Grid Data Bound Grid content to Excel.
-
+{% highlight c# %}
 [C#]
 
 
@@ -2664,7 +2672,8 @@ Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.Gr
 gecc.GridToExcel(this.gridDataBoundGrid1.Model, @"C:\MyGC.xls");
 
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2672,6 +2681,8 @@ gecc.GridToExcel(this.gridDataBoundGrid1.Model, @"C:\MyGC.xls");
 Dim gecc As Syncfusion.GridExcelConverter.GridExcelConverterControl = New Syncfusion.GridExcelConverter.GridExcelConverterControl()
 
 gecc.GridToExcel(Me.gridDataBoundGrid1.Model, "C:\MyGC.xls")
+{% endhighlight %}
+
 
 ##### GridControl to Excel Conversion Process
 
@@ -2682,16 +2693,19 @@ The conversion of Grid to Excel is done cell by cell. Each cell is converted wit
 ##### If format specified
 
 The cell is checked whether it is a Currency cell type by using CellType property. If it is a Currency Cell type, then the CellValue will be converted into Double and saved in Range’s Number property. NumberFormatInformation is extracted from NumberFormatInfoObject and the number is converted to string by using extracted format. FormatString is created and saved in Range’s NumberFormat property. The following is a sample code to set the format of the Currency cell:
-
+{% highlight c# %}
 [C#]
 
 this.gridControl1[row,col].Format = "C";
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
 Me.gridControl1(row,col).Format = "C"
+{% endhighlight  %}
+
 
 ##### If format is not specified
 
@@ -2702,16 +2716,19 @@ The cell is checked whether it is a Currency cell type by using the CellType pro
 ##### If format is specified
 
 The cell is checked whether it is a Number cell type by using CellType property. If it is a Number Cell type then the cell value is assigned to Range’s Value2 property. Since the format is specified, the Value2’s value is converted to its respective type and set to Number format. The following is a sample code to set the format of Currency cell:
-
+{% highlight c# %}
 [C#]
 
 this.gridControl1[row,col].Format = "N";
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 [VB]
 
 Me.gridControl1(row,col).Format = "N"
+{% endhighlight %}
+
 
 ##### If format is not specified
 
@@ -2776,7 +2793,7 @@ If formula is not specified for the cell, then the formula is set to Excel sheet
 #### Import an Excel Sheet into Essential Grid
 
 An Excel sheet can also be imported to the Grid control or DataBound Grid. This can be done by using ExcelToGrid method in the GridExcelConverterControl class. The following code example illustrates how to transfer Excel content to the Grid control.
-
+{% highlight c# %}
 [C#]
 
 
@@ -2785,8 +2802,8 @@ Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.Gr
 
 gecc.ExcelToGrid(@"C:\MyGC.xls", this.gridControl1.Model);
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2795,10 +2812,10 @@ Dim gecc As Syncfusion.GridExcelConverter.GridExcelConverterControl = New Syncfu
 
 gecc.ExcelToGrid("C:\MyGC.xls", Me.gridControl1.Model)
 
-
+{% endhighlight  %}
 
 The following code example illustrates how to transfer Excel content to DataBound Grid.
-
+{% highlight c# %}
 [C#]
 
 
@@ -2806,7 +2823,8 @@ The following code example illustrates how to transfer Excel content to DataBoun
 Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
 
 gecc.ExcelToGrid(@"C:\MyGC.xls", this.gridDataBoundGrid1.Model);
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 [VB.NET]
@@ -2816,31 +2834,34 @@ gecc.ExcelToGrid(@"C:\MyGC.xls", this.gridDataBoundGrid1.Model);
 Dim gecc As Syncfusion.GridExcelConverter.GridExcelConverterControl = New Syncfusion.GridExcelConverter.GridExcelConverterControl()
 
 gecc.ExcelToGrid("C:\MyGC.xls", Me.gridDataBoundGrid1.Model)
+{% endhighlight  %}
 
 #### Excel Converter Options
 
 GridExcelConverter class enables you to export specific grid elements like column headers, row headers, and so on. By default, GridExcelConverterControl exports all elements in the grid. The following code example illustrates how to include both row and column headers during the export.
-
+{% highlight c# %}
 [C#]
 
 
 
 gecc.GridToExcel(this.grid.Model, @"C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.RowHeaders | Syncfusion.GridExcelConverter.ConverterOptions.ColumnHeaders);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB.NET]
 
 
 
 gecc.GridToExcel(Me.grid.Model, "C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.RowHeaders|Syncfusion.GridExcelConverter.ConverterOptions.ColumnHeaders)
+{% endhighlight %}
 
 #### Exporting Grid Grouping Data To Excel
 
 GroupingGridExcelConverter class provides support for exporting data from Grouping Grid control into an Excel spreadsheet for verification and/or computation. This control automatically copies Grid's styles, formats, groups, summary rows and expression fields to Excel. It is derived from GridExcelConverterBase. The XlsIO libraries support the conversion of Grid content to Excel.
 
 To make use of the GroupingGridExcelConverter class, the following assemblies must be added along with default assemblies present in the References folder of your application: Syncfusion.XlsIO.Base and Syncfusion.GridConverter.Windows. The content of Grid Grouping control can be transferred to Excel by using GroupingGridToExcel method in GroupingGridExcelConverterControl class. There are two export options provided by the Grid Grouping control: first option converts the entire content of the grid to Excel, and the second option converts only the visible content of the grid to Excel. The following code example illustrates how to convert the entire Grid content to Excel.
-
+{% highlight c# %}
 [C#]
 
 
@@ -2849,7 +2870,8 @@ Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl converte
 
 converter.GroupingGridToExcel(this.gridGroupingControl1, @"C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.Default); 
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -2859,28 +2881,30 @@ Dim converter As Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverte
 
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.Default);
 
-
+{% endhighlight %}
 
 You can export the visible or expanded records or groups alone by using the following code.
-
+{% highlight c# %}
 [C#]
 
 
 
 converter.GroupingGridToExcel(this.gridGroupingControl1, @"C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.Visible); 
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
 
 
 converter.GroupingGridToExcel(this.gridGroupingControl1, "C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.Visible);
+{% endhighlight  %}
 
 #### Exporting Multiple Grids
 
 It is possible to save multiple grids to a single XLS file as worksheet. The following code example illustrates how to do this.
-
+{% highlight c# %}
 [C#]
 
 
@@ -2927,7 +2951,8 @@ private void buttonExport_Click(object sender, System.EventArgs e)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -2968,13 +2993,14 @@ ExcelUtils.ThrowNotSavedOnDestroy = False
 End If
 
 End Sub
+{% endhighlight %}
 
 #### Exporting Grid Data to Excel 2010
 
 You can export Grid data to Excel 2010. To do this, you must explicitly set the Excel version by creating an XlsIO application, and then export the Grid data to the Excel worksheet. You can set DefaultVersion to _Excel2010_ to export to this version by default. Similarly, you can also export Grid data to other versions of Excel. The following code example illustrates this.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -3051,7 +3077,8 @@ proc.Start();
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -3092,14 +3119,13 @@ proc.Start()
   End If
 
 End If
+{% endhighlight  %}
 
-> {{ '![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Getting-Started_images/Getting-Started_img175.png)' | markdownify }}
-{:.image }
-_Note: This is applicable to all Grid controls in Essential Grid._
+> Note: This is applicable to all Grid controls in Essential Grid.
 
 #### Lesson 6: Accessibility Information for Grid Windows Forms
 
-Technical Standards
+##### Technical Standards
 
 Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
 
@@ -3256,7 +3282,7 @@ For more information on accessibility features of Syncfusion products, visit Syn
 
 #### List of Controls
 
-Essential Grid provides the following controls.
+##### Essential Grid provides the following controls.
 
 * Grid Control-This class is derived from GridControlBase. It is the primary class that encapsulates both state persistence (including data persistence) and rendering of the grid. Unless you are using one of the special grids (DataBound Grid, Grid Grouping control, or Grid List control), GridControl is the class you will use. This is a cell-oriented grid which will easily allow you to set both row and column properties as well as set cell specific properties for the grid to hold data. It can also be used in a virtual mode where data is provided on demand or the Grid control can physically hold the data for you.
 * DataBound Grid-This class is also derived from GridControlBase. This control is more column-oriented than the Grid control. It is primarily used as grid bound to data source that supports either IList or IListSource. Classes such as ArrayList, DataTable, and DataView are included in this collection of possible data sources. Grid Data Bound Grid has a collection property called GridBoundColumns that maintains the column properties similar to the System.Windows.Forms.DataGridColumnStyle class. It is this property that allows DataBound Grid to be described as a column-oriented grid. 
