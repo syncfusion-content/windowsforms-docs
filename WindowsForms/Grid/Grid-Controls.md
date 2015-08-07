@@ -15400,7 +15400,8 @@ End Sub
 
 End Class
 {% endhighlight  %}
-##### Floating Cells
+
+#### Floating Cells
 
 Floating cells are those cells whose content floats over empty, adjacent cells. You can enable floating cells at the grid level by setting GridControl.FloatCellsMode. Setting this property to GridFloatCellsMode.BeforeDisplayCalculation will force the floating cells to always be calculated just prior to being displayed. Setting the property to GridFloatCellsMode.OnDemandCalculation will calculate the floating cells only if the cell contents or size changes. This latter option is more efficient. 
 
@@ -15408,7 +15409,7 @@ Floating cells are those cells whose content floats over empty, adjacent cells. 
 
 You can control a cell whether or not it floats over adjacent cells through FloatCell property in the cell's GridStyleInfo object. You can also prevent a cell from being flooded by using its GridStyleInfo.FloodCell property. In the code given below, all three lines (1, 3, 5) hold the same text in column one. But, the floating cells in lines three and five are stopped short; line three by an occupied cell and line five by a FloodCell false settings.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15434,9 +15435,9 @@ this.gridControl1[3, 3].Text = "3.14159";
 
 this.gridControl1[5, 2].FloodCell = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15464,17 +15465,17 @@ Me.gridControl1(5, 2).FloodCell = False
 
 Me.gridControl1(2, 2).Font.Bold = True
 
-
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img214.jpeg)
 
 
 
-##### TabBarSplitterControl
+#### TabBarSplitterControl
 
 TabBarSplitterControl enables users to create Tab Pages with dynamic splitters; when used with a grid control, it gives a workbook like appearance. It comes with Office 2007 Style by default, and supports all the three color schemes.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15482,15 +15483,17 @@ this.tabBarSplitterControl.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.
 
 this.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.tabBarSplitterControl.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007
 
 Me.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
+
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img215.jpeg)
 
@@ -15504,7 +15507,7 @@ We can apply custom colors to the TabBarSplitterControl by setting Office2007Col
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15512,9 +15515,9 @@ this.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Offi
 
 Office2007Colors.ApplyManagedColors(this, Color.PowderBlue);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15522,7 +15525,7 @@ Me.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Office
 
 Office2007Colors.ApplyManagedColors(Me, Color.PowderBlue)
 
-
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img216.jpeg)
 
@@ -15530,9 +15533,9 @@ Office2007Colors.ApplyManagedColors(Me, Color.PowderBlue)
 
 
 
-_Figure_ _306_: Custom Color of Tab Bar Splitter Control set to "PowderBlue"_
+_Figure_ _306_: Custom Color of Tab Bar Splitter Control set to "PowderBlue"
 
-##### PrepareViewStyleInfo Event
+#### PrepareViewStyleInfo Event
 
 PrepareViewStyleInfo event is raised to allow custom formatting of a cell by changing its style object just before it is drawn. This allows formatting based on the current view state, e.g. current cell context, focused control, and so on. For example, if you want draw the current row with a bold text, you can use PrepareViewStyleInfo to accomplish this task. The idea is to change the style to bold font for any cell in the current one. Given below are the steps that you can follow in order to implement this functionality.
 
@@ -15542,11 +15545,11 @@ PrepareViewStyleInfo event is raised to allow custom formatting of a cell by cha
 
 To see a full working sample, check the HighlightCurrent sample that is shipped with Essential Grid. Notice that the work is done just by refreshing the grid (redraw) row. During refresh, PrepareViewStyleInfo is selected and the style is modified to be bold if the row is current. This means that no bold style information is saved anywhere. GridStyleInfo object is just temporarily modified immediately before it is used in the drawing.
 
-##### Print Preview and Printing
+#### Print Preview and Printing
 
 Essential Grid directly supports printing and print previews through the .NET Framework classes Systems.Windows.Forms.PrintPreviewDialog and Systems.Windows.Forms.PrintDialog. A derived PrintDocument, GridPrintDocument is passed to these classes. This GridPrintDocument implements the printing logic that is needed to print multi-page grids. Following code example illustrates how to enable print previewing.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15626,9 +15629,9 @@ private void Print_Click(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
- [VB.NET]
+ {% highlight vbnet %}
 
 
 
@@ -15710,7 +15713,7 @@ Private Sub Print_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
-
+{% endhighlight %}
 
 Grid Helper Features
 
@@ -15734,7 +15737,7 @@ Following code example illustrates Advanced Printing in Grid.
 
 
 
- [C#]
+ {% highlight c# %}
 
 
 
@@ -15760,9 +15763,9 @@ previewDialog.Document = pd;
 
 previewDialog.Show();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15788,7 +15791,7 @@ previewDialog.Document = pd
 
 previewDialog.Show()
 
-
+{% endhighlight %}
 
 Following screen shot illustrates Advanced Printing functionality provided by the GridPrintDocumentAdv class.
 
@@ -15804,7 +15807,7 @@ The print Page Layout feature helps view the printing layout for the grid by dis
 
 
 
- [C#]
+ {% highlight c# %}
 
 
 
@@ -15816,9 +15819,9 @@ layoutHelper.LineColor = Color.Blue;
 
 layoutHelper.TextColor = Color.Green;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15830,7 +15833,7 @@ layoutHelper.LineColor = Color.Blue
 
 layoutHelper.TextColor = Color.Green
 
-
+{% endhighlight %}
 
 Following screen shot shows the page layout of the grid, with the segment line and page number.
 
@@ -15838,15 +15841,13 @@ Following screen shot shows the page layout of the grid, with the segment line a
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img219.jpeg)
-
-_Note: The functionality mentioned above can also be achieved on UI by selecting Show Page Layout check box on the UI, which allows the user to view the page layout._
+> Note: The functionality mentioned above can also be achieved on UI by selecting Show Page Layout check box on the UI, which allows the user to view the page layout.
 
 Print To Fit
 
 An entire grid can be printed on a single page by deriving GridPrintDocument class to handle the printing of entire grid on a single page. The class achieves this by drawing full-size grid to a large bitmap and then scaling the same to fit the output page. Following code example illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15860,9 +15861,9 @@ if (dlg.ShowDialog() == DialogResult.OK)
 
 pd.Print();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -15876,7 +15877,7 @@ pd.Print()
 
 End If
 
-
+{% endhighlight %}
 
 Following screen shot illustrates the Grid's Print To Fit feature.
 
@@ -15888,7 +15889,7 @@ Following screen shot illustrates the Grid's Print To Fit feature.
 
 This functionality can also be achieved by clicking PrintToFit button on UI. Refer Figure 3 on this page.
 
-##### Multiple Grid Printing
+#### Multiple Grid Printing
 
 Multiple grids can be printed across various pages using helper class MultipleGridPrintDocument. This is achieved by drawing full-size grid to a large bitmap and then scaling this bitmap to fit the output page.
 
@@ -15943,16 +15944,16 @@ Multiple grid columns are scaled to fit the printed page.</td></tr>
 
 Sample Link
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing_
 
-###### Adding Multi-Grid Printing to an Application
+#### Adding Multi-Grid Printing to an Application
 
 * The Print Preview can be enabled by using MultipleGridPrintDocument class or by clicking Print Preview button under Grid Printing Options in UI.
 * Headers and footers can be added by using DrawGridPrintHeader and DrawGridPrintFooter events or by selecting Show Header and Footer check box under Grid Printing Options in UI.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -15984,9 +15985,9 @@ printDialog.Document = pd;
 
 printDialog.ShowDialog();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -16016,7 +16017,7 @@ printDialog.Document = pd
 
 printDialog.ShowDialog()
 
-
+{% endhighlight %}
 
 The following screen shot illustrates the advanced printing functionality provided by MultipleGridPrintDocument class:
 
@@ -16024,13 +16025,13 @@ The following screen shot illustrates the advanced printing functionality provid
 
 
 
-##### Drag Column Header
+#### Drag Column Header
 
 In Grid control, column header can be dragged to a new position by clicking on it, similar to how the fields in Microsoft Outlook are dragged without selecting the columns. This feature can be enabled in Grid control by adding DragColumnHeader option under ControllerOptions property. The event QueryAllowDragColumnHeader can be handled, while performing the drag operation.
 
 The following code examples illustrate this feature.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16046,9 +16047,9 @@ System.Diagnostics.Debug.WriteLine("gridControl1_QueryAllowDragColumnHeader: " +
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16064,7 +16065,7 @@ Private Sub gridControl1_QueryAllowDragColumnHeader(ByVal sender As Object, ByVa
 
 End Sub
 
-
+{% endhighlight %}
 
  The following screen shot illustrates how to drag the column header.
 
@@ -16072,7 +16073,7 @@ End Sub
 
 
 
-##### OLE Drag-and-Drop
+#### OLE Drag-and-Drop
 
 Essential Grid offers support functionality like Object Linking and Embedding (OLE) Drag-and-Drop. A range in one grid can be selected and dragged to another grid or into a Rich Edit Box. The following screen shot shows selected region of grid that has been dragged and dropped into another grid:
 
@@ -16084,7 +16085,7 @@ Essential Grid offers support functionality like Object Linking and Embedding (O
 
 The following code example illustrates this feature.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16112,9 +16113,9 @@ private void gridControl2_DragOver(object sender, DragEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16134,9 +16135,9 @@ private void gridControl2_DragOver(Object sender, DragEventArgs e)
 
 e.Effect = DragDropEffects.Copy
 
+{% endhighlight %}
 
-
-##### Selection Modes
+#### Selection Modes
 
 
 
@@ -16165,21 +16166,19 @@ Setting Specific Selection Mode
 
 Specific selection modes can be set by using the following code examples:
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.AllowSelection = GridSelectionFlags.Row;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.AllowSelection = GridSelectionFlags.Row
 
-##### Banner Cells
+{% endhighlight %}
+
+#### Banner Cells
 
 Banner cells are multiple cells spanning a single background image. An image to be displayed in the cell can be loaded on disk, by changing the BackgroundImage property for a cell in Property Grid and applying a Banner for the cell area, displaying the image. For a cell background color, Gradient style can be set. Custom cell backgrounds can be drawn by handling DrawCellBackground event. Banner cells can also be defined through a recurring pattern by handling QueryBanneredRange event.
 
@@ -16195,9 +16194,7 @@ Displaying Image using Banner Cells
 
 The following code example illustrates how to display images by using banner cells:
 
- [C#]
-
-
+ {% highlight c# %}
 
 GridStyleInfo style;
 
@@ -16213,9 +16210,9 @@ style.TextColor = Color.Red;
 
 style.BackgroundImageMode = GridBackgroundImageMode.StretchImage;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16233,57 +16230,57 @@ style.TextColor = Color.Red
 
 style.BackgroundImageMode = GridBackgroundImageMode.StretchImage
 
-##### Merge Cells Feature
+{% endhighlight %}
+
+#### Merge Cells Feature
 
 Merge Cells feature merges two or more adjacent cells with the same value into one cell and displays the content in the merged cell. A single cell is created by combining two or more selected cells.
 
-> ![](Grid-Controls_images/Grid-Controls_img226.jpeg)
-
-_Note: The data in the merged cells will be displayed on the first cell of the merged range._
+> Note: The data in the merged cells will be displayed on the first cell of the merged range.
 
 To use merge cells, you need to set Model.Options.MergeCellsMode and MergeCell properties of the cells to select the required merge behavior for cells.
 
 1. The GridMergeCellsMode enumeration specifies behavior of the merged cells in a grid. Following is the list of options under this enumeration:
-* None-
+	* None-
 
-Merge cells behavior is disabled.
+	Merge cells behavior is disabled.
 
-* OnDemandCalculation-
+	* OnDemandCalculation-
 
-The number of cells to be merged are calculated before the merged cells are displayed and the results are saved. Floating cells will only be recalculated if the width or content of the cells change.
+	The number of cells to be merged are calculated before the merged cells are displayed and the results are saved. Floating cells will only be recalculated if the width or content of the cells change.
 
-* BeforeDisplayCalculation-
+	* BeforeDisplayCalculation-
 
-The number of cells to be merged are always calculated before cells are displayed.
+	The number of cells to be merged are always calculated before cells are displayed.
 
-* MergeRowsInColumn-
+	* MergeRowsInColumn-
 
-Enables merging of neighboring cells among rows in the same column.
+	Enables merging of neighboring cells among rows in the same column.
 
-* MergeColumnsInRow-
+	* MergeColumnsInRow-
 
-Enables merging of neighboring cells among columns in the same row.
+	Enables merging of neighboring cells among columns in the same row.
 
-* SkipHiddenCells-
+	* SkipHiddenCells-
 
-Skips hidden rows and columns while merging the cells. This means that the hidden rows or columns in the grid are not considered during the merge process.
+	Skips hidden rows and columns while merging the cells. This means that the hidden rows or columns in the grid are not considered during the merge process.
 
 2. GridMergeCellDirection enumeration specifies the merge behavior for an individual cell when merging cells feature has been enabled. Here is the list of options offered:
-* None-
+	* None-
 
-Merging cells is disabled.
+	Merging cells is disabled.
 
-* ColumnsInRow-
+	* ColumnsInRow-
 
-Merges with neighboring columns in the same row.
+	Merges with neighboring columns in the same row.
 
-* RowsInColumn-
+	* RowsInColumn-
 
-Merges with neighboring rows in the same column.
+	Merges with neighboring rows in the same column.
 
 The following code examples illustrate how to set the MergeCellsMode and MergeCell properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16295,9 +16292,9 @@ this.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalc
 
 this.gridControl1.ColStyles[2].MergeCell = GridMergeCellDirection.RowsInColumn;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16308,6 +16305,8 @@ Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalcul
 'Merges cells in column 2.
 
 Me.gridControl1.ColStyles(2).MergeCell = GridMergeCellDirection.RowsInColumn
+
+{% endhighlight %}
 
 The following screen shots illustrate the merge cells feature in Essential Grid.
 
@@ -16321,11 +16320,11 @@ The following screen shots illustrate the merge cells feature in Essential Grid.
 
 
 
-##### Real-time Applications
+#### Real-time Applications
 
 This section provides information on the real-time applications of Essential Grid. It includes the following topics.
 
-###### Gaming Applications
+#### Gaming Applications
 
 Essential Grid is used to implement gaming applications.
 
@@ -16339,9 +16338,9 @@ Let us consider the Tetris game application, which is implemented by using Essen
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Essential Blocks Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Essential Blocks Demo_
 
-###### MS Excel 2007-like UI
+#### MS Excel 2007-like UI
 
 Essential Grid control provides support to implement Microsoft Excel 2007-like User Interface (UI). It contains Name Box that shows the current selection range and Formula Bar, which supports the formula cells. The row and column headers of the selected range are highlighted on the UI. This feature is similar to Excel.
 
@@ -16353,9 +16352,9 @@ Essential Grid control provides support to implement Microsoft Excel 2007-like U
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo_
 
-###### Grid Folder Browser
+#### Grid Folder Browser
 
 Essential Grid can be used to develop a powerful TreeView control owing to its flexibility. The tree nodes can be created through custom TreeCell cell type. GridStaticCellModel class is inherited to create this cell type. The plus/minus buttons of the tree nodes are selected by using ImageIndex property. 
 
@@ -16363,13 +16362,13 @@ Example
 
 Let us consider the Grid Folder Browser sample which is available under the following installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo_
 
 This sample operates grid in virtual mode in order to populate the data dynamically on demand, i.e., when the tree is expanded. QueryCellInfo, QueryColCount and QueryRowCount events must be handled in order to implement virtual grid. These events provide basic information about the number of rows and columns and the values of the data.
 
 The following code example illustrates how to set the data from the data source.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16401,9 +16400,9 @@ e.Handled = true;
 
 }
 
+{% endhighlight %}
 
-
- [VB.NET]
+ {% highlight vbnet %}
 
 
 
@@ -16429,7 +16428,7 @@ e.Handled = True
 
 End Sub
 
-
+{% endhighlight %}
 
 The implementation uses CollapsibleDataSource class. This class makes use of custom collection to hold a list of SampleData objects. (Consider each of these objects as a row in the underlying grid). Each row carries information on a specific folder. Each SampleData object has IndentValue property, ExpandState property, and Items string array that holds the different column values for this row. The column values display folder details like the name of the folder, folder size and so on. This class also contains InsertData method, which retrieves data of inner subtree and inserts data into the collection when a node is expanded.
 
@@ -16437,7 +16436,7 @@ The implementation uses CollapsibleDataSource class. This class makes use of cus
 
 
 
-##### Multiple Document Interface (MDI) Support
+#### Multiple Document Interface (MDI) Support
 
 Essential Grid supports Multiple Document Interface (MDI) by enabling users to work with multiple grid controls simultaneously. Here, multiple windows reside under a single parent window.
 
@@ -16447,13 +16446,13 @@ Essential Grid supports Multiple Document Interface (MDI) by enabling users to w
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Pad Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Pad Demo_
 
-##### Clipboard Support
+#### Clipboard Support
 
 This section discusses clipboard support provided by Essential Grid. It includes the following topics.
 
-###### Managing Clipboard Operations with GridModelCutPaste
+#### Managing Clipboard Operations with GridModelCutPaste
 
 GridModelCutPaste class manages Cut, Copy and Paste operations for a grid. You can access this class from a grid with the Grid.Model.CutPaste property. This class provides many properties and functions.
 
@@ -16463,27 +16462,21 @@ Here is the list of properties and methods:
 
 The following code examples illustrate how to set ClipboardFlags by using the GridDragDropFlags.Styles property:
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.Model.CutPaste.ClipboardFlags = GridDragDropFlags.Styles;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.ClipboardFlags = GridDragDropFlags.Styles
 
-
+{% endhighlight %}
 
 * CanCopy - This method checks whether there are selected ranges of cells that can be copied to clipboard or if the current cell's contents can be copied. The return type of this method is Boolean. If it returns true, it indicates that the selected range of cells or the current cell's contents can be copied to the clipboard. If it is false, it indicates that the selected range of cells or the current cell's contents cannot be copied to the clipboard.
-> 
-![](Grid-Controls_images/Grid-Controls_img233.jpeg)
 
-_Note: Any content copied is pasted to the Clipboard by default._
+> Note: Any content copied is pasted to the Clipboard by default.
 
 
 
@@ -16491,39 +16484,37 @@ The following code example is used to call CanCopy method:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridControl1.Model.CutPaste.CanCopy();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.gridControl1.Model.CutPaste.CanCopy()
 
+{% endhighlight %}
+
 * Copy - This method copies the contents of selected cells and the current cell's contents to the clipboard.
 
 The following code example is used to call the Copy method:
 
- [C#]
-
-
+ {% highlight c# %}
 
 this.gridControl1.Model.CutPaste.Copy();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.Copy()
 
-
+{% endhighlight %}
 
 * CopyRange(GridRangeInfo range) - This method copies the contents of a specified range of cells to the clipboard. The range of cells to be copied is given to the method as a parameter. For example, if the range is specified to be (2,2), the selection is restricted to the cell with row index 2 and column index 2 of the grid.
 
@@ -16531,21 +16522,17 @@ The following code example shows how to call this method:
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.Model.CutPaste.CopyRange(GridRangeInfo.Cell(2, 2));
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.CopyRange(GridRangeInfo.Cell(2, 2))
 
-
+{% endhighlight %}
 
 * CopyTextToClipboard(GridRangeInfo range) - This method copies the formatted text of a specified range of cells to clipboard. The range of cells to be copied is given to the method as a parameter. For example, if the range is specified to be (1,2,1,4), the selection starts from the cell (1,2) – with row index 1 and column index 2 to the cell (1,4) – with row index 1 and column index 4 of the grid.
 
@@ -16553,21 +16540,17 @@ The following code example shows how to call this method:
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.Model.CutPaste.CopyTextToClipboard(GridRangeInfo.Cells(1, 2, 1, 4));
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.CopyTextToClipboard(GridRangeInfo.Cells(1, 2, 1, 4))
 
-
+{% endhighlight %}
 
 * CopyCellsToClipboard(GridRangeInfoList list, bool bLoadBaseStyles) - This method copies the style information of a specified range of cells to clipboard. The range of cells to be copied is given to the method as the first parameter. The second parameter represents a Boolean value. The base style will be copied along with default settings, if it is set to true. Only the default settings that were initialized to the cell are copied if it is set to false.
 
@@ -16577,9 +16560,7 @@ The following code example shows how to call this method:
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 GridRangeInfoList list = new GridRangeInfoList();
 
@@ -16587,11 +16568,9 @@ list.Add(GridRangeInfo.Cell(2, 2));
 
 this.gridControl1.Model.CutPaste.CopyCellsToClipboard(list, true);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim list As New GridRangeInfoList()
 
@@ -16599,29 +16578,25 @@ list.Add(GridRangeInfo.Cell(2, 2))
 
 Me.gridControl1.Model.CutPaste.CopyCellsToClipboard(list, True)
 
-
+{% endhighlight %}
 
 * CanCut-This method checks if there are selected ranges that can be cut or if the current cell's contents can be cut. The return type of this method is Boolean. If it returns true, it indicates that the content in the selected range of cells or the current cell's content can be cut. This method returns false, when no selected range is available to cut.
-> 
-![](Grid-Controls_images/Grid-Controls_img234.jpeg)
 
-_Note: Any content cut is pasted to the clipboard by default._
+> Note: Any content cut is pasted to the clipboard by default.
 
 The following code example shows how to call this method:
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.Model.CutPaste.CanCut();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.CanCut()
+
+{% endhighlight %}
 
 * Cut - This method cuts the content of the selected cells and the current cell, and pastes them to the clipboard.
 
@@ -16629,87 +16604,73 @@ The following code example shows how to call this method:
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.Model.CutPaste.Cut();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.Cut()
 
-
+{% endhighlight %}
 
 * CutRange(GridRangeInfo rangelist) - This method cuts the content of a specified range of cells and pastes it to the clipboard. The range of cells to be cut is specified as a parameter. 
 
 The following code examples show how to call this method:
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.Model.CutPaste.CutRange(GridRangeInfo.Row(4), false);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.CutRange(GridRangeInfo.Row(4), False)
 
-
+{% endhighlight %}
 
 * CanPaste - This method checks for the most recent content in the clipboard that can be pasted in the grid. The return type of this method is Boolean. If it returns true, it indicates that the contents in the clipboard can be pasted into the grid. If there is no content available in the clipboard to paste, this method returns false.
 
 The following code example shows how to call this method:
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridControl1.Model.CutPaste.CanPaste();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.CanPaste()
 
-
+{% endhighlight %}
 
 * Paste-This method pastes the content from the clipboard into the grid at the current selected range or current cell.
-> 
-![](Grid-Controls_images/Grid-Controls_img235.jpeg)
 
-_Note: It is not mandatory to call this method after CanPaste method. If there is no content in the clipboard to be pasted, this method will not respond._
+> Note: It is not mandatory to call this method after CanPaste method. If there is no content in the clipboard to be pasted, this method will not respond.
 
 The following code examples show how to call this method:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridControl1.Model.CutPaste.Paste();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridControl1.Model.CutPaste.Paste()
 
-###### Clipboard Events
+{% endhighlight %}
+
+#### Clipboard Events
 
 Essential Grid exposes various events to manage the clipboard content while performing cut, paste and copy operations. Following is the list of clipboard events:
 
@@ -16720,12 +16681,13 @@ Essential Grid exposes various events to manage the clipboard content while perf
 * ClipboardCut - This event is to be handled when the Cut method of grid is called.
 * ClipboardPaste - This event is to be handled when the Paste method of grid is called.
 * ClipboardPasted - This event is to be handled after a paste operation.
-##### Performance
+
+#### Performance
 
 
 Essential Grid control has an extremely high performance standard. It can handle high frequency updates and work with large amounts of data without its performance being affected.
 
-###### High Frequency Real Time Updates
+#### High Frequency Real Time Updates
 
 Essential Grid supports frequent updates that occur in random cells across the grid while keeping CPU usage to a minimum level.
 
@@ -16741,9 +16703,9 @@ In this example, a timer changes the cell in short intervals, inserts and remove
 
 A sample demonstrating this feature is available under the following sample installation path:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
 
-###### Data Handling
+#### Data Handling
 
 Essential Grid control supports large amount of data without a performance hit.
 
@@ -16759,55 +16721,56 @@ You can specify the size of the grid that is to be populated while running the s
 
 2. Using Indexer
 
-This technique loops through the cells and uses an indexer on the Grid control to set values.
-
-[C#]
-
-
-
-for (int i = 0; i < this.numArrayRows; ++i)
-
-    for (int j = 0; j < this.numArrayCols; ++j)
-
-        this.gridControl1[i + 1, j + 1].CellValue = this.intArray[i, j]; 
+	This technique loops through the cells and uses an indexer on the Grid control to set values.
+  
+   ~~~ cs
 
 
 
-[VB.NET]
+		for (int i = 0; i < this.numArrayRows; ++i)
+
+			for (int j = 0; j < this.numArrayCols; ++j)
+
+				this.gridControl1[i + 1, j + 1].CellValue = this.intArray[i, j]; 
+
+   ~~~
+   {:.prettyprint }
+
+
+   ~~~ vbnet
 
 
 
-For i As Integer = 0 To Me.numArrayRows - 1
+		For i As Integer = 0 To Me.numArrayRows - 1
 
-For j As Integer = 0 To Me.numArrayCols - 1
+		For j As Integer = 0 To Me.numArrayCols - 1
 
-Me.gridControl1(i + 1, j + 1).CellValue = Me.intArray(i, j)
+		Me.gridControl1(i + 1, j + 1).CellValue = Me.intArray(i, j)
 
-Next j
+		Next j
 
-Next i
+		Next i
 
+   ~~~
+   {:.prettyprint }
 
 
 3. Populating Values
 4. PopulateValues method is used to move values from a given data source into the specified grid range. The first parameter specifies range of destination cells where data is to be copied and the second parameter specifies data source to the destination cells.
 
+   ~~~ cs
 
+		gridControl1.Model.PopulateValues(GridRangeInfo.Cells(top, left, bottom, right), this.intArray);
 
-[C#]
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right), Me.intArray)
 
-gridControl1.Model.PopulateValues(GridRangeInfo.Cells(top, left, bottom, right), this.intArray);
-
-
-
-[VB.NET]
-
-
-
-gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right), Me.intArray)
-
+   ~~~
+   {:.prettyprint }
 
 
 5. Implementing Virtual Mode
@@ -16816,7 +16779,7 @@ gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right)
 * Determine number of columns
 * Pass value to a cell from a data source.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -16874,9 +16837,9 @@ private void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -16932,7 +16895,7 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img237.jpeg)
 
@@ -16942,13 +16905,13 @@ End Sub
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
 
-##### Zooming options
+#### Zooming options
 
 This section discusses the following zooming options:
 
-###### Cell-level and grid-level
+#### Cell-level and grid-level
 
 We can implement zooming functionality in Essential Grid to show a magnified image of the Grid for better visualization. A method named ZoomGrid is used for this purpose. It accepts the percentage of zoom as the parameter and then uses this value to set the font size and cell size for the grid. Zooming can be implemented at cell-level and at grid-level.
 
@@ -16974,105 +16937,103 @@ This example implements zooming functionality for Essential Grid at cell-level. 
 
 1. Call the ZoomGrid method by passing the percentage of zoom as the parameter. The below code illustrates this.
 
-[C#]
+   ~~~ cs
+
+		private void zoomGrid(float percent)
+
+		{
+
+			this.gridControl1.BeginUpdate();
+
+			currentPercent = percent;
+
+			for (int i = 0; i <= gridControl1.ColCount; i++)
+
+			{
+
+				for (int j = 0; j <= gridControl1.RowCount; j++)
+
+				this.gridControl1[j, i].Font.Size = fontSize * currentPercent;
+
+				this.gridControl1.Model.ColWidths[i] = (int)(percent * defColWidth);
+
+			}
 
 
 
-private void zoomGrid(float percent)
+			this.gridControl1.ColWidths[0] = (int)(percent * headerColWd);
 
-{
+			this.gridControl1.DefaultColWidth = (int)(percent * defColWidth);
 
-    this.gridControl1.BeginUpdate();
+			this.gridControl1.DefaultRowHeight = (int)(percent * defRowHeight);
 
-    currentPercent = percent;
+			this.gridControl1.RowHeights[0] = (int)(percent * headerRowHt);
 
-    for (int i = 0; i <= gridControl1.ColCount; i++)
+			this.gridControl1.EndUpdate();
 
-    {
+			this.gridControl1.Refresh();
 
-        for (int j = 0; j <= gridControl1.RowCount; j++)
+		}
 
-        this.gridControl1[j, i].Font.Size = fontSize * currentPercent;
+   ~~~
+   {:.prettyprint }
 
-        this.gridControl1.Model.ColWidths[i] = (int)(percent * defColWidth);
-
-    }
-
-
-
-    this.gridControl1.ColWidths[0] = (int)(percent * headerColWd);
-
-    this.gridControl1.DefaultColWidth = (int)(percent * defColWidth);
-
-    this.gridControl1.DefaultRowHeight = (int)(percent * defRowHeight);
-
-    this.gridControl1.RowHeights[0] = (int)(percent * headerRowHt);
-
-    this.gridControl1.EndUpdate();
-
-    this.gridControl1.Refresh();
-
-}
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Private Sub zoomGrid(ByVal percent As Single)
+
+			Me.label1.Text = Me.trackBar1.Value.ToString() & "%"
+
+			Me.label1.Refresh()
 
 
 
-Private Sub zoomGrid(ByVal percent As Single)
+			Me.gridControl1.BeginUpdate()
 
-    Me.label1.Text = Me.trackBar1.Value.ToString() & "%"
+			currentPercent = percent
 
-    Me.label1.Refresh()
+			For i As Integer = 0 To gridControl1.ColCount
 
+				For j As Integer = 0 To gridControl1.RowCount
 
+					Me.gridControl1(j, i).Font.Size = fontSize * currentPercent
 
-    Me.gridControl1.BeginUpdate()
+				Next j
 
-    currentPercent = percent
+				Me.gridControl1.Model.ColWidths(i) = CInt(Fix(percent * defColWidth))
 
-    For i As Integer = 0 To gridControl1.ColCount
-
-        For j As Integer = 0 To gridControl1.RowCount
-
-            Me.gridControl1(j, i).Font.Size = fontSize * currentPercent
-
-        Next j
-
-        Me.gridControl1.Model.ColWidths(i) = CInt(Fix(percent * defColWidth))
-
-    Next i
+			Next i
 
 
 
-    Me.gridControl1.ColWidths(0) = CInt(Fix(percent * headerColWd))
+			Me.gridControl1.ColWidths(0) = CInt(Fix(percent * headerColWd))
 
-    Me.gridControl1.DefaultColWidth = CInt(Fix(percent * defColWidth))
+			Me.gridControl1.DefaultColWidth = CInt(Fix(percent * defColWidth))
 
-    Me.gridControl1.DefaultRowHeight = CInt(Fix(percent * defRowHeight))
+			Me.gridControl1.DefaultRowHeight = CInt(Fix(percent * defRowHeight))
 
-    Me.gridControl1.RowHeights(0) = CInt(Fix(percent * headerRowHt))
+			Me.gridControl1.RowHeights(0) = CInt(Fix(percent * headerRowHt))
 
-    Me.gridControl1.EndUpdate()
+			Me.gridControl1.EndUpdate()
 
-    Me.gridControl1.Refresh()
+			Me.gridControl1.Refresh()
 
-End Sub
+		End Sub
 
+   ~~~
+   {:.prettyprint }
 
-
-The preceding code sets the font and cell size using the percent parameter.
+	The preceding code sets the font and cell size using the percent parameter.
 
 
 
 2. When the cell to be zoomed is clicked, handle CellClick event to display it as a zoomed cell. Here we use a PictureBox to show the magnified view of the cell content. 
-> 
-![](Grid-Controls_images/Grid-Controls_img240.jpeg)
 
-_Note: A PictureBox is a Microsoft’s .NET Control used to display an image._
+> Note: A PictureBox is a Microsoft’s .NET Control used to display an image.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -17158,9 +17119,9 @@ private void gridControl1_CellClick(object sender, GridCellClickEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -17240,32 +17201,32 @@ Private Sub gridControl1_CellClick(ByVal sender As Object, ByVal e As GridCellCl
 
 End Sub
 
-
+{% endhighlight %}
 
 Now when you click any cell, it displays a picture box over the cell showing cell content in a magnified manner.
 
-> ![](Grid-Controls_images/Grid-Controls_img241.jpeg)
+> Note: For more details on this feature, refer the following browser sample:
 
-_Note: For more details on this feature, refer the following browser sample:_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
-
-##### Tile Image In Grid Cell 
+#### Tile Image In Grid Cell 
 
 Essential GridControl supports Tile Image feature in Grid cell. Set BackgroundImageMode property to GridBackgroundImageMode.TileImage to add title image in grid cell.
 
 The following code illustrates how to add Tile Image feature in Grid cell.
 
-[C#]
+{% highlight c# %}
 
 this.gridControl1[2, 2].BackgroundImageMode = GridBackgroundImageMode.TileImage;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
   Me.gridControl1(2, 2).BackgroundImageMode = GridBackgroundImageMode.TileImage
 
+{% endhighlight %}
+  
 When the code runs, the following image is displayed.
 
 ![](Grid-Controls_images/Grid-Controls_img242.jpeg)
@@ -17280,165 +17241,164 @@ Grid Grouping control supports grouping with summaries, filters, and expression 
 
 This section will provide step-by-step procedure to create Grid Grouping control through designer and through programmatical approach in a .NET application.
 
-##### Through Designer
+#### Through Designer
 
 For details, see Tutorials Lesson 1: Grid Grouping Control Designer.
 
-##### Through Code
+#### Through Code
 
 This section will give you a step by step tutorial on creating Grid Grouping control through code. You can bind Grid Grouping control either to an MDB file or to data source that has been created manually.
 
 In this lesson, you will learn about the following topics.
 
-###### Binding a Grid Grouping Control to an MDB File
+#### Binding a Grid Grouping Control to an MDB File
 
 This example illustrates how to bind Grid Grouping control to an MDB file at run time. It uses OleDbConnection and OleDbAdapter objects to get connected to data source that exposes OLE DB interface. Try a similar approach to connect to a database from MS SQL Server.
 
 1. Include the required namespace.
 
-[C#]
+   ~~~ cs
 
 
 
-using Synctusion.Windows.Forms.Grid.Grouping;
+		using Synctusion.Windows.Forms.Grid.Grouping;
 
-using System.Data.OleDb;
+		using System.Data.OleDb;
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Imports Synctusion.Windows.Forms.Grid.Grouping
-
-Imports System.Data.OleDb
+   ~~~ vbnet
 
 
+
+		Imports Synctusion.Windows.Forms.Grid.Grouping
+
+		Imports System.Data.OleDb
+
+   ~~~
+   {:.prettyprint }
 
 2. Create an instance of Grid Grouping control and specify its size.
 
 
 
-[C#]
+   ~~~ cs
 
 
+		private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
 
-private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
+		this.gridGroupingControl1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
 
+		this.gridGroupingControl1.Size = new System.Drawing.Size(160, 200 );
 
+   ~~~
+   {:.prettyprint }
 
-this.gridGroupingControl1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
+   ~~~ cs
 
-this.gridGroupingControl1.Size = new System.Drawing.Size(160, 200 );
+		Private gridGroupingControl1 As Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl
 
+		Me.gridGroupingControl1 = New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
 
+		Me.gridGroupingControl1.Size = New System.Drawing.Size(160, 200 )
 
-[VB.NET]
-
-
-
-Private gridGroupingControl1 As Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl
-
-
-
-Me.gridGroupingControl1 = New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
-
-Me.gridGroupingControl1.Size = New System.Drawing.Size(160, 200 )
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Set up Data Source.
 
 
 
-[C#]
+   ~~~ cs
+
+		//Creates Connection Object. 
+
+		OleDbConnection connection = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Data\\NWIND.MDB");
 
 
 
-//Creates Connection Object. 
+		//Creates Data Adapter. 
 
-OleDbConnection connection = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Data\\NWIND.MDB");
-
-
-
-//Creates Data Adapter. 
-
-OleDbDataAdapter adapter = new OleDbDataAdapter("SELECT * FROM Customers", connection);
+		OleDbDataAdapter adapter = new OleDbDataAdapter("SELECT * FROM Customers", connection);
 
 
 
-// Creates and fills Data Set. 
+		// Creates and fills Data Set. 
 
-DataSet dtSet = new DataSet();
+		DataSet dtSet = new DataSet();
 
-adapter.Fill(dtSet);
+		adapter.Fill(dtSet);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		'Creates Connection Object. 
 
-
-
-'Creates Connection Object. 
-
-Dim Connection As OleDbConnection = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Data\\NWIND.MDB")
-
-
-
-'Creates Data Adapter. 
-
-Dim Adapter As OleDbDataAdapter = New OleDbDataAdapter("SELECT * FROM Customers", Connection)
+		Dim Connection As OleDbConnection = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Data\\NWIND.MDB")
 
 
 
-'Creates and fills Data Set.
+		'Creates Data Adapter. 
 
-Dim dtSet As DataSet = New DataSet()
-
-Adapter.Fill(dtSet)
+		Dim Adapter As OleDbDataAdapter = New OleDbDataAdapter("SELECT * FROM Customers", Connection)
 
 
+
+		'Creates and fills Data Set.
+
+		Dim dtSet As DataSet = New DataSet()
+
+		Adapter.Fill(dtSet)
+
+   ~~~
+   {:.prettyprint }
 
 4. Bind the grid grouping control to this data table by setting its DataSource property.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.DataSource = dtSet.Tables[0]; 
+		this.gridGroupingControl1.DataSource = dtSet.Tables[0]; 
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.GridGroupingControl1.DataSource = dtSet.Tables(0)
 
-
-
-Me.GridGroupingControl1.DataSource = dtSet.Tables(0)
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Finally add the grid grouping control to the form.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.Controls.Add(this.gridGroupingControl1); 
+		this.Controls.Add(this.gridGroupingControl1); 
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.Controls.Add(Me.GridGroupingControl1)
 
-
-
-Me.Controls.Add(Me.GridGroupingControl1)
-
-
+   ~~~
+   {:.prettyprint }
 
 6. When you run the application, the grid will look like the following image.
 
@@ -17446,7 +17406,7 @@ Me.Controls.Add(Me.GridGroupingControl1)
 
 
 
-###### Bind a Grid Grouping Control to a Manual Data Source
+#### Bind a Grid Grouping Control to a Manual Data Source
 
 Here are some code samples that will create DataTable and bind it to Grid Grouping control. Once you have DataTable object populated, you can use GridGroupingControl.DataSource property to implement the binding.
 
@@ -17454,212 +17414,219 @@ Here are some code samples that will create DataTable and bind it to Grid Groupi
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-using Synctusion.Windows.Forms.Grid.Grouping;
+		using Synctusion.Windows.Forms.Grid.Grouping;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Imports Synctusion.Windows.Forms.Grid.Grouping
 
-
-
-Imports Synctusion.Windows.Forms.Grid.Grouping
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create an instance of Grid Grouping control and specify its size.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
+		private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
 
 
 
-this.gridGroupingControl1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
+		this.gridGroupingControl1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
 
-this.gridGroupingControl1.Size = new System.Drawing.Size(160, 200 );
+		this.gridGroupingControl1.Size = new System.Drawing.Size(160, 200 );
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Private gridGroupingControl1 As Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl
+   ~~~ vbnet
 
 
 
-Me.gridGroupingControl1 = New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
-
-Me.gridGroupingControl1.Size = New System.Drawing.Size(160, 200 )
+		Private gridGroupingControl1 As Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl
 
 
+
+		Me.gridGroupingControl1 = New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
+
+		Me.gridGroupingControl1.Size = New System.Drawing.Size(160, 200 )
+
+   ~~~
+   {:.prettyprint }
 
 3. Set up the Data Source.
 
 
 
-[C#]
+   ~~~ cs
 
+		DataTable myDataTable = new DataTable("MyDataTable");
 
 
-DataTable myDataTable = new DataTable("MyDataTable");
 
+		//Declares Data Column and Data Row variables.
 
+		DataColumn myDataColumn;
 
-//Declares Data Column and Data Row variables.
+		DataRow myDataRow;
 
-DataColumn myDataColumn;
 
-DataRow myDataRow;
 
+		//Creates new Data Column, sets Data Type and Column Name and adds to the Data Table.   
 
+		myDataColumn = new DataColumn();
 
-//Creates new Data Column, sets Data Type and Column Name and adds to the Data Table.   
+		myDataColumn.DataType = System.Type.GetType("System.Int32");
 
-myDataColumn = new DataColumn();
+		myDataColumn.ColumnName = "id";
 
-myDataColumn.DataType = System.Type.GetType("System.Int32");
+		myDataTable.Columns.Add(myDataColumn);
 
-myDataColumn.ColumnName = "id";
 
-myDataTable.Columns.Add(myDataColumn);
 
+		//Creates a second column.
 
+		myDataColumn = new DataColumn();
 
-//Creates a second column.
+		myDataColumn.DataType = Type.GetType("System.String");
 
-myDataColumn = new DataColumn();
+		myDataColumn.ColumnName = "item";
 
-myDataColumn.DataType = Type.GetType("System.String");
+		myDataTable.Columns.Add(myDataColumn);
 
-myDataColumn.ColumnName = "item";
 
-myDataTable.Columns.Add(myDataColumn);
 
+		//Creates new Data Row objects and adds to the Data Table.    
 
+		for (int i = 0; i <= 10; i++)
 
-//Creates new Data Row objects and adds to the Data Table.    
+		{
 
-for (int i = 0; i <= 10; i++)
+			myDataRow = myDataTable.NewRow();
 
-{
+			myDataRow["id"] = i;
 
-    myDataRow = myDataTable.NewRow();
+			myDataRow["item"] = "item " + i.ToString();
 
-    myDataRow["id"] = i;
+			myDataTable.Rows.Add(myDataRow);
 
-    myDataRow["item"] = "item " + i.ToString();
+		}
 
-    myDataTable.Rows.Add(myDataRow);
+   ~~~
+   {:.prettyprint }
 
-}
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Dim myDataTable As DataTable = New DataTable("MyDataTable")
 
 
 
-Dim myDataTable As DataTable = New DataTable("MyDataTable")
+		'Declares Data Column and Data Row variables.
 
+		Dim myDataColumn As DataColumn
 
+		Dim myDataRow As DataRow
 
-'Declares Data Column and Data Row variables.
 
-Dim myDataColumn As DataColumn
 
-Dim myDataRow As DataRow
+		'Creates a new Data Column, sets the Data Type and Column Name and adds to the Data Table. 
 
+		myDataColumn = New DataColumn()
 
+		myDataColumn.DataType = System.Type.GetType("System.Int32")
 
-'Creates a new Data Column, sets the Data Type and Column Name and adds to the Data Table. 
+		myDataColumn.ColumnName = "id"
 
-myDataColumn = New DataColumn()
+		myDataTable.Columns.Add(myDataColumn)
 
-myDataColumn.DataType = System.Type.GetType("System.Int32")
 
-myDataColumn.ColumnName = "id"
 
-myDataTable.Columns.Add(myDataColumn)
+		'Creates a second column.
 
+		myDataColumn = New DataColumn()
 
+		myDataColumn.DataType = Type.GetType("System.String")
 
-'Creates a second column.
+		myDataColumn.ColumnName = "item"
 
-myDataColumn = New DataColumn()
+		myDataTable.Columns.Add(myDataColumn)
 
-myDataColumn.DataType = Type.GetType("System.String")
 
-myDataColumn.ColumnName = "item"
 
-myDataTable.Columns.Add(myDataColumn)
+		'Creates new Data Row objects and adds to the Data Table.    
 
+		Dim i As Integer
 
+		For i = 0 To 10
 
-'Creates new Data Row objects and adds to the Data Table.    
+		myDataRow = myDataTable.NewRow
 
-Dim i As Integer
+		myDataRow("id") = i
 
-For i = 0 To 10
+		myDataRow("item") = "item " & i
 
-myDataRow = myDataTable.NewRow
+		myDataTable.Rows.Add(myDataRow)
 
-myDataRow("id") = i
+		Next i
 
-myDataRow("item") = "item " & i
-
-myDataTable.Rows.Add(myDataRow)
-
-Next i
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Bind the grid grouping control to this data table by setting its DataSource property.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.DataSource = myDataTable; 
+		this.gridGroupingControl1.DataSource = myDataTable; 
 
 
 
-[VB.NET]
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		Me.GridGroupingControl1.DataSource = myDataTable
 
-Me.GridGroupingControl1.DataSource = myDataTable
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Finally, add the grid grouping control to the form.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.Controls.Add(this.gridGroupingControl1); 
+		this.Controls.Add(this.gridGroupingControl1); 
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet   
 
-[VB.NET]
-
-
-
-Me.Controls.Add(Me.GridGroupingControl1)
-
+		Me.Controls.Add(Me.GridGroupingControl1)
+   
+   ~~~
+   {:.prettyprint }
 
 
 6. When you run the application, the grid will look like the following image. You will be able to sort data by clicking the header of the column you want to sort.
@@ -17862,7 +17829,7 @@ This section provides basic insight into the grid grouping control architecture 
 
 Here you will learn about the following concepts, which will help you to get familiar with Grid Grouping control.
 
-##### Performance
+#### Performance
 
 Grid Grouping control has an extremelyhigh performance standard. It can handle very high frequency updates and refresh scenarios. It also offers complete support for Virtual Mode wherein data will be loaded only on demand. By simply setting few properties, you can have the grid work with large amounts of data without a performance hit.
 
@@ -17946,7 +17913,7 @@ Grid Grouping control has in-built support for highlighting cells for a short pe
 
 See Also
 
-###### Memory Performance - Engine Optimizations
+#### Memory Performance - Engine Optimizations
 
 This section discusses the various optimizations that GroupingEngine provides. EngineOptimizations will greatly help improve MemoryPerformance. Triggering these optimizations selectively will help in reducing memory footprint. Engine optimizations can be enabled by setting AllowOptimizations to some value other than None. To optimize memory usage, CounterLogic property needs to be assigned with a proper value. 
 
@@ -18008,9 +17975,7 @@ All counters are supported: visible elements, filtered records, YAmount, hidden 
 
 footprint.
 
-> ![](Grid-Controls_images/Grid-Controls_img265.jpeg)
-
-_Note: Allowing certain optimizations does not mean that the optimization is necessarily used. Optimizations will only be used when applicable. Take for example the optimization. If you allow this optimization, the engine will check schema settings when loading the table. If there are no SortedColumns, RecordFilters, GroupedColumns, or nested relations for a table, then virtual mode can be used and no records need to be loaded into memory. If the user later sorts by one column, the virtual mode cannot be used any more. Records will need to be iterated through and sorted and tree structures will be built that allow quick access to records and IndexOf operations. When initializing table, the engine will check if criteria for DisableCounters optimization are met._
+> Note: Allowing certain optimizations does not mean that the optimization is necessarily used. Optimizations will only be used when applicable. Take for example the optimization. If you allow this optimization, the engine will check schema settings when loading the table. If there are no SortedColumns, RecordFilters, GroupedColumns, or nested relations for a table, then virtual mode can be used and no records need to be loaded into memory. If the user later sorts by one column, the virtual mode cannot be used any more. Records will need to be iterated through and sorted and tree structures will be built that allow quick access to records and IndexOf operations. When initializing table, the engine will check if criteria for DisableCounters optimization are met.
 
 Example
 
@@ -18019,14 +17984,9 @@ This example illustrates Virtual Mode and WithoutCounter optimizations having Vi
 All the optimizations are enabled by setting AllowedOptimizations to All. As said earlier, optimizations specified will not be applied at all times. They will only be used when applicable, that is, when the criteria for those optimizations are met. This example best illustrates this process. On every property change, the log window displays the list of optimizations applied to the grid at that instance. When you run the sample, you can track optimizations applied in different engine states like with or without grouping, with or without sorting, etc.
 
 
+> Note: For more details, refer to the following Browser Sample:
 
-
-
-> ![](Grid-Controls_images/Grid-Controls_img266.jpeg)
-
-_Note: For more details, refer to the following Browser Sample:_ 
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Engine Optimization Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Engine Optimization Demo_
 
 Implementation
 
@@ -18034,427 +17994,430 @@ Follow the steps below to experiment different engine optimizations.
 
 1. Create a class (VirtualItem) that represents the record structure. Its data members form the record fields.
 
-[C#]
+   ~~~ cs
 
 
+			public class VirtualItem
 
-public class VirtualItem
+			{
 
-{
+				int index;
 
-int index;
+				string name;
 
-string name;
+				double someValue;
 
-double someValue;
+				double otherValue;
 
-double otherValue;
 
 
+				public int Index
 
-public int Index
+				{
 
-{
+					get
 
-get
+					{
 
-{
+						return index;
 
-return index;
+					}
 
-}
+					set
 
-set
+					{
 
-{
+						index = value;
 
-index = value;
+					}
 
-}
+				}
 
-}
+				public string Name
 
-public string Name
+				{
 
-{
+					get
 
-get
+					{
 
-{
+						return name;
 
-return name;
+					}
 
-}
+					set
 
-set
+					{
 
-{
+						name = value;
 
-name = value;
+					}
 
-}
+				}
 
-}
+				public double SomeValue
 
-public double SomeValue
+				{
 
-{
+					get
+	
+					{
 
-get
+						return someValue;
 
-{
+					}
 
-return someValue;
+					set
 
-}
+					{
 
-set
+						someValue = value;
 
-{
+					}
 
-someValue = value;
+				}
 
-}
+				public double OtherValue
 
-}
+				{
 
-public double OtherValue
+					get
 
-{
+					{
 
-get
+						return otherValue;
 
-{
+					}
 
-return otherValue;
+					set
 
-}
+					{
 
-set
+						otherValue = value;
 
-{
+					}
 
-otherValue = value;
+				}
 
-}
+			}
 
-}
+   ~~~
+   {:.prettyprint }
 
-}
+   ~~~ vbnet
 
 
 
-[VB]
+			Public Class VirtualItem
 
+			Private index_Renamed As Integer
 
+			Private name_Renamed As String
 
-Public Class VirtualItem
+			Private someValue_Renamed As Double
 
-Private index_Renamed As Integer
+			Private otherValue_Renamed As Double
 
-Private name_Renamed As String
 
-Private someValue_Renamed As Double
 
-Private otherValue_Renamed As Double
+			Public Property Index() As Integer
 
+			Get
 
+			Return index_Renamed
 
-Public Property Index() As Integer
+			End Get
 
-Get
+			Set
 
-Return index_Renamed
+			index_Renamed = Value
 
-End Get
+			End Set
 
-Set
+			End Property
 
-index_Renamed = Value
+			Public Property Name() As String
 
-End Set
+			Get
 
-End Property
+			Return name_Renamed
 
-Public Property Name() As String
+			End Get
 
-Get
+			Set
 
-Return name_Renamed
+			name_Renamed = Value
 
-End Get
+			End Set
 
-Set
+			End Property
 
-name_Renamed = Value
+			Public Property SomeValue() As Double
 
-End Set
+			Get
 
-End Property
+			Return someValue_Renamed
 
-Public Property SomeValue() As Double
+			End Get
 
-Get
+			Set
 
-Return someValue_Renamed
+			someValue_Renamed = Value
 
-End Get
+			End Set
 
-Set
+			End Property
 
-someValue_Renamed = Value
+			Public Property OtherValue() As Double
 
-End Set
+			Get
 
-End Property
+			Return otherValue_Renamed
 
-Public Property OtherValue() As Double
+			End Get
 
-Get
+			Set
 
-Return otherValue_Renamed
+			otherValue_Renamed = Value
 
-End Get
+			End Set
 
-Set
+			End Property
 
-otherValue_Renamed = Value
+			End Class
 
-End Set
-
-End Property
-
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create another class(VirtualList) by implementing IList and ITypedList interfaces. This class represents your collection that serves as data source for grid grouping control. Refer to CustomCollections to know how to implement these interfaces.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-public class VirtualList : IList, ITypedList
+		public class VirtualList : IList, ITypedList
 
-{
+		{
 
-int virtualCount;
+			int virtualCount;
 
-public VirtualList(int count)
+			public VirtualList(int count)
 
-{
+			{
 
-virtualCount = count;
+				virtualCount = count;
 
-}
+			}
 
 
 
-//IList Members.
+			//IList Members.
 
-public bool IsReadOnly
+			public bool IsReadOnly
 
-{
+			{
 
-get
+				get
 
-{
+				{
 
-return true;
+					return true;
 
-}
+				}
 
-}
+			}
 
 
 
-public object this[int index]
+			public object this[int index]
 
-{
+			{
 
-get
+				get
 
-{
+				{
 
-VirtualItem item = new VirtualItem();
+					VirtualItem item = new VirtualItem();
 
-item.Index = index;
+					item.Index = index;
 
-item.Name = "Name" + index.ToString("000000000");
+					item.Name = "Name" + index.ToString("000000000");
 
-item.SomeValue = index*0.873332f;
+					item.SomeValue = index*0.873332f;
 
-item.OtherValue = (293023033-index)/8;
+					item.OtherValue = (293023033-index)/8;
 
 
 
-return item;
+					return item;
 
-}
+				}
 
-set{}
+				set{}
 
-}
+			}
 
 
 
-//Other IList members.
+			//Other IList members.
 
-............
+			............
 
-............
+			............
 
 
 
-//ICollection Members.
+			//ICollection Members.
 
-............
+			............
 
-............
+			............
 
 
 
-//IEnumerator Members.
+			//IEnumerator Members.
 
-............
+			............
 
-............
+			............
 
 
 
-// ITypedList Members.
+			// ITypedList Members.
 
-public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
+			public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
 
-{
+			{
 
-PropertyDescriptorCollection pds = TypeDescriptor.GetProperties(typeof(VirtualItem));
+				PropertyDescriptorCollection pds = TypeDescriptor.GetProperties(typeof(VirtualItem));
 
-string[] atts = new string[]{"Index", "Name", "SomeValue", "OtherValue"};
+				string[] atts = new string[]{"Index", "Name", "SomeValue", "OtherValue"};
 
-return pds.Sort(atts);
+				return pds.Sort(atts);
 
-}
+			}
 
 
 
-public string GetListName(PropertyDescriptor[] listAccessors)
+			public string GetListName(PropertyDescriptor[] listAccessors)
 
-{
+			{
 
-return "VirtualList";
+				return "VirtualList";
 
-}
+			}
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB]
+		Public Class VirtualList : Implements IList, ITypedList
 
-Public Class VirtualList : Implements IList, ITypedList
+		Private virtualCount As Integer
 
-Private virtualCount As Integer
 
 
+		Public Sub New(ByVal count_Renamed As Integer)
 
-Public Sub New(ByVal count_Renamed As Integer)
+		virtualCount = count_Renamed
 
-virtualCount = count_Renamed
+		End Sub
 
-End Sub
 
 
+		'IList Members.
 
-'IList Members.
+		Public ReadOnly Property IsReadOnly() As Boolean Implements IList.IsReadOnly
 
-Public ReadOnly Property IsReadOnly() As Boolean Implements IList.IsReadOnly
+		Get
 
-Get
+		Return True
 
-Return True
+		End Get
 
-End Get
+		End Property
 
-End Property
 
 
+		Public Default Property Item(ByVal index As Integer) As Object
 
-Public Default Property Item(ByVal index As Integer) As Object
+		Get
 
-Get
+		Dim item As VirtualItem = New VirtualItem()
 
-Dim item As VirtualItem = New VirtualItem()
+		item.Index = index
 
-item.Index = index
+		item.Name = "Name" & index.ToString("000000000")
 
-item.Name = "Name" & index.ToString("000000000")
+		item.SomeValue = index*0.873332f
 
-item.SomeValue = index*0.873332f
+		item.OtherValue = (293023033-index)/8
 
-item.OtherValue = (293023033-index)/8
+		Return item
 
-Return item
+		End Get
 
-End Get
+		Set
 
-Set
+		End Set
 
-End Set
+		End Property
 
-End Property
 
 
+		'Other IList Members.
 
-'Other IList Members.
+		............
 
-............
+		............
 
-............
 
 
+		'ICollection Members.
 
-'ICollection Members.
+		............
 
-............
+		............
 
-............
 
 
+		'IEnumerable Members.
 
-'IEnumerable Members.
+		............
 
-............
+		............
 
-............
 
 
+		'ITypedList Members.
 
-'ITypedList Members.
+		Public Function GetItemProperties(ByVal listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection Implements ITypedList.GetItemProperties
 
-Public Function GetItemProperties(ByVal listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection Implements ITypedList.GetItemProperties
+		Dim pds As PropertyDescriptorCollection = TypeDescriptor.GetProperties(GetType(VirtualItem))
 
-Dim pds As PropertyDescriptorCollection = TypeDescriptor.GetProperties(GetType(VirtualItem))
+		Dim atts As String() = New String() {"Index", "Name", "SomeValue", "OtherValue"}
 
-Dim atts As String() = New String() {"Index", "Name", "SomeValue", "OtherValue"}
+		Return pds.Sort(atts)
 
-Return pds.Sort(atts)
+		End Function
 
-End Function
 
 
+		Public Function GetListName(ByVal listAccessors As PropertyDescriptor()) As String Implements ITypedList.GetListName
 
-Public Function GetListName(ByVal listAccessors As PropertyDescriptor()) As String Implements ITypedList.GetListName
+		Return "VirtualList"
 
-Return "VirtualList"
+		End Function
 
-End Function
+		End Class
 
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Add a button and listbox to the main form. Clicking the button will create a grid grouping control and load it with Virtual List. ListBox serves as Log Window wherein you will display the log messages like time elapsed for loading the grid, list of optimizations applied, and so on. Your form will look like the one below at design time.
 
@@ -18466,173 +18429,173 @@ End Class
 
 4. Set up a new engine and specify the optimizations settings required.
 
-
-
-[C#]
-
-
-
-GridEngine schema = new GridEngine();
-
-schema.InvalidateAllWhenListChanged = false;
-
-schema.AllowedOptimizations = EngineOptimizations.All;
-
-schema.CounterLogic = EngineCounters.YAmount;
+   ~~~ cs
 
 
 
-//Also dependant on CounterLogic = EngineCounters.YAmount.
+		GridEngine schema = new GridEngine();
 
-schema.TableOptions.VerticalPixelScroll = true;
+		schema.InvalidateAllWhenListChanged = false;
 
-schema.TableOptions.ColumnsMaxLengthStrategy = GridColumnsMaxLengthStrategy.FirstNRecords;
+		schema.AllowedOptimizations = EngineOptimizations.All;
 
-schema.TableOptions.ColumnsMaxLengthFirstNRecords = 100;
-
-schema.TableOptions.AllowSortColumns = true;
-
-schema.TableDescriptor.AllowEdit = false;
-
-schema.DataSource = new VirtualList(100000);
-
-schema.Reset();
-
-schema.TableDescriptor.Columns["Index"].MaxLength = 10;
+		schema.CounterLogic = EngineCounters.YAmount;
 
 
 
-[VB]
+		//Also dependant on CounterLogic = EngineCounters.YAmount.
+
+		schema.TableOptions.VerticalPixelScroll = true;
+
+		schema.TableOptions.ColumnsMaxLengthStrategy = GridColumnsMaxLengthStrategy.FirstNRecords;
+
+		schema.TableOptions.ColumnsMaxLengthFirstNRecords = 100;
+
+		schema.TableOptions.AllowSortColumns = true;
+
+		schema.TableDescriptor.AllowEdit = false;
+
+		schema.DataSource = new VirtualList(100000);
+
+		schema.Reset();
+
+		schema.TableDescriptor.Columns["Index"].MaxLength = 10;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-Dim schema As GridEngine = New GridEngine()
+		Dim schema As GridEngine = New GridEngine()
 
-schema.InvalidateAllWhenListChanged = False
+		schema.InvalidateAllWhenListChanged = False
 
-schema.AllowedOptimizations = EngineOptimizations.All
+		schema.AllowedOptimizations = EngineOptimizations.All
 
-schema.CounterLogic = EngineCounters.YAmount
-
-
-
-'Also dependant on CounterLogic = EngineCounters.YAmount.
-
-schema.TableOptions.VerticalPixelScroll = True   
-
-schema.TableOptions.ColumnsMaxLengthStrategy = GridColumnsMaxLengthStrategy.FirstNRecords
-
-schema.TableOptions.ColumnsMaxLengthFirstNRecords = 100
-
-schema.TableOptions.AllowSortColumns = True
-
-schema.TableDescriptor.AllowEdit = False
-
-schema.DataSource = New VirtualList(100000)
-
-schema.Reset()
-
-schema.TableDescriptor.Columns["Index"].MaxLength = 10
+		schema.CounterLogic = EngineCounters.YAmount
 
 
+
+		'Also dependant on CounterLogic = EngineCounters.YAmount.
+
+		schema.TableOptions.VerticalPixelScroll = True   
+
+		schema.TableOptions.ColumnsMaxLengthStrategy = GridColumnsMaxLengthStrategy.FirstNRecords
+
+		schema.TableOptions.ColumnsMaxLengthFirstNRecords = 100
+
+		schema.TableOptions.AllowSortColumns = True
+
+		schema.TableDescriptor.AllowEdit = False
+
+		schema.DataSource = New VirtualList(100000)
+
+		schema.Reset()
+
+		schema.TableDescriptor.Columns["Index"].MaxLength = 10
+
+   ~~~
+   {:.prettyprint }
 
 5. Define a method LogMemoryUsage that calculates the amount of memory consumed and displays various optimizations applied to the grouping engine.
 
-
-
-[C#]
-
-
-
-void LogMemoryUsage()
-
-{
-
-//Forces garbage collection and gets used memory size.
-
-    GC.Collect();
-
-    System.Threading.Thread.Sleep(10);
-
-    GC.Collect();
-
-    System.Threading.Thread.Sleep(100);
-
-    GC.Collect();
-
-    LogWindow.Items.Add(string.Format("Optimizations for {0}: ", this.gridGroupingControl1.TableDescriptor.Name));
-
-    LogWindow.Items.Add(string.Format("VirtualMode: {0}, ", this.gridGroupingControl1.Table.VirtualMode));
-
-    LogWindow.Items.Add(string.Format("WithoutCounter: {0}, ", this.gridGroupingControl1.Table.WithoutCounter));
-
-    LogWindow.Items.Add(string.Format("RecordsAsDisplayElements: {0}, ", gridGroupingControl1.Table.RecordsAsDisplayElements));
+   ~~~ cs
 
 
 
-    Process myProcess = Process.GetCurrentProcess();
+		void LogMemoryUsage()
 
-    double workingSetSizeinKiloBytes = myProcess.WorkingSet64 / 1000;
+		{
 
-    string s = "Process's physical memory usage: " + workingSetSizeinKiloBytes.ToString() + " kb";
+		//Forces garbage collection and gets used memory size.
 
-    LogWindow.Items.Add(s);
+			GC.Collect();
 
-    LogWindow.Items.Add("");
+			System.Threading.Thread.Sleep(10);
 
-}
+			GC.Collect();
 
+			System.Threading.Thread.Sleep(100);
 
+			GC.Collect();
 
-[VB.NET]
+			LogWindow.Items.Add(string.Format("Optimizations for {0}: ", this.gridGroupingControl1.TableDescriptor.Name));
 
+			LogWindow.Items.Add(string.Format("VirtualMode: {0}, ", this.gridGroupingControl1.Table.VirtualMode));
 
+			LogWindow.Items.Add(string.Format("WithoutCounter: {0}, ", this.gridGroupingControl1.Table.WithoutCounter));
 
-Private Sub LogMemoryUsage()
-
-
-
-'Forces garbage collection and gets used memory size.
-
-GC.Collect()
-
-System.Threading.Thread.Sleep(10)
-
-GC.Collect()
-
-System.Threading.Thread.Sleep(100)
-
-GC.Collect()
-
-LogWindow.Items.Add(String.Format("Optimizations for {0}: ", Me.gridGroupingControl1.TableDescriptor.Name))
-
-LogWindow.Items.Add(String.Format("VirtualMode: {0}, ", Me.gridGroupingControl1.Table.VirtualMode))
-
-LogWindow.Items.Add(String.Format("WithoutCounter: {0}, ", Me.gridGroupingControl1.Table.WithoutCounter))
-
-LogWindow.Items.Add(String.Format("RecordsAsDisplayElements: {0}, ", gridGroupingControl1.Table.RecordsAsDisplayElements))
+			LogWindow.Items.Add(string.Format("RecordsAsDisplayElements: {0}, ", gridGroupingControl1.Table.RecordsAsDisplayElements));
 
 
 
-Dim myProcess As Process = Process.GetCurrentProcess()
+			Process myProcess = Process.GetCurrentProcess();
 
-Dim workingSetSizeinKiloBytes As Double = myProcess.WorkingSet64 / 1000
+			double workingSetSizeinKiloBytes = myProcess.WorkingSet64 / 1000;
 
-Dim s As String = "Process's physical memory usage: " & workingSetSizeinKiloBytes.ToString() & " kb"
+			string s = "Process's physical memory usage: " + workingSetSizeinKiloBytes.ToString() + " kb";
 
-LogWindow.Items.Add(s)
+			LogWindow.Items.Add(s);
 
-LogWindow.Items.Add("")
+			LogWindow.Items.Add("");
 
-End Sub
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
+
+		Private Sub LogMemoryUsage()
+
+
+
+		'Forces garbage collection and gets used memory size.
+
+		GC.Collect()
+
+		System.Threading.Thread.Sleep(10)
+
+		GC.Collect()
+
+		System.Threading.Thread.Sleep(100)
+
+		GC.Collect()
+
+		LogWindow.Items.Add(String.Format("Optimizations for {0}: ", Me.gridGroupingControl1.TableDescriptor.Name))
+
+		LogWindow.Items.Add(String.Format("VirtualMode: {0}, ", Me.gridGroupingControl1.Table.VirtualMode))
+
+		LogWindow.Items.Add(String.Format("WithoutCounter: {0}, ", Me.gridGroupingControl1.Table.WithoutCounter))
+
+		LogWindow.Items.Add(String.Format("RecordsAsDisplayElements: {0}, ", gridGroupingControl1.Table.RecordsAsDisplayElements))
+
+
+
+		Dim myProcess As Process = Process.GetCurrentProcess()
+
+		Dim workingSetSizeinKiloBytes As Double = myProcess.WorkingSet64 / 1000
+
+		Dim s As String = "Process's physical memory usage: " & workingSetSizeinKiloBytes.ToString() & " kb"
+
+		LogWindow.Items.Add(s)
+
+		LogWindow.Items.Add("")
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 Handle the ButtonClick event in order to populate the grid when the button is clicked. It also calls LogMemoryUsage method to display initial optimization settings for the grid - the optimizations for an ungrouped and unsorted grid.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18702,9 +18665,9 @@ private void button1_Click(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18768,13 +18731,13 @@ LogMemoryUsage()
 
 End Sub
 
-
+{% endhighlight %}
 
 Handle PropertyChanging event to display log for every property that is being changed in the grid. This will be raised when you group or sort the grid grouping control and hence you could track the results of these operations (especially the current optimizations) here.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -18826,9 +18789,9 @@ private void t_Tick(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -18874,7 +18837,7 @@ Me.LogMemoryUsage()
 
 End Sub
 
-
+{% endhighlight %}
 
 Here are the screen shots that show the optimizations applied at different engine states.
 
@@ -18900,7 +18863,7 @@ Here are the screen shots that show the optimizations applied at different engin
 
 _(Both Virtual Mode and WithoutCounter optimizations disabled)_
 
-###### ListChanged Performance
+#### ListChanged Performance
 
 When ListChange is detected, the grouping engine has to update the grid records accordingly. Every record change may affect its sort position, group dependency, and summaries. The engine should take care of all these things and should also invalidate counters that are being affected with respect to ListChange. The easiest way to accomplish this would be invalidating the whole display and repainting all the rows. But this will have a big impact on grid performance in worst cases. For example, in case only one record is really changed and this change does not affect sort order and summaries, it requires to repaint only one record. Instead the engine will repaint the whole display.
 
@@ -18936,11 +18899,9 @@ ScrollWithImmediateUpdate
 
 It will keep engine in synchronization and use ScrollWindow to scroll window contents or adjust top row index if changes occurred before current visible row.
 
-> ![](Grid-Controls_images/Grid-Controls_img272.jpeg)
-
-_Note: For Complete Code for this example, refer the following Browser sample:_ 
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
+> Note: For Complete Code for this example, refer the following Browser sample:
+>
+>_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
 
 Implementation
 
@@ -18948,7 +18909,7 @@ Implementation
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19126,9 +19087,9 @@ public class ManualTotalSummary
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19278,13 +19239,13 @@ End Sub
 
 End Class
 
-
+{% endhighlight %}
 
 * ManualTotalSummary class makes use of ManualTotalSummaryTable class, which derives GridTable to calculate the new total. ManualTotalSummaryTable class overrides OnRecordChanged event in order to track record changes and keeps track of old and new values of the ChangedField. For each entry in ManualTotalSummaryTable.TotalSummaries, a ManualTotalSummary will be created. 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19370,9 +19331,9 @@ public class ManualTotalSummaryTable : GridTable
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19446,13 +19407,13 @@ End Sub
 
 End Class
 
-
+{% endhighlight %}
 
 * A Grid Grouping control is setup with options to display the summary cells in caption and enable the optimizations required. Use InvalidateAll option for InsertRemoveBehavior and SortPositionChangedBehavior properties when many records change sort position for a short time. Use ScrollWithImmediateUpdate if ScrollWindow should be called to minimize painting when sort position of limited number of records is changed. Grid Grouping control will be detached from Currency Manager, and then access the list directly to solely rely on ListChanged events.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19490,9 +19451,9 @@ gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = true;
 
 gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "Caption";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19530,13 +19491,13 @@ gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = True
 
 gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "Caption"
 
-
+{% endhighlight %}
 
 * Setup ManualTotalSummary for the columns Freight and EmployeeID. The ManualTotalSummary.Total value will be retrieved and displayed in summary or caption cell in QueryCellStyleInfo event handler. It tracks the changes in sort positions of columns Freight and EmployeeID by handling PropertyChanged event.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19644,9 +19605,9 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCel
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19750,13 +19711,13 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
 
 End Sub
 
-
+{% endhighlight %}
 
 * Enable highlighting the cells changed in all the columns.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19767,8 +19728,9 @@ this.gridGroupingControl1.TableDescriptor.Columns[c].AllowBlink = true;
 this.gridGroupingControl1.BlinkTime = 100;
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -19782,11 +19744,11 @@ Loop
 
 Me.gridGroupingControl1.BlinkTime = 100
 
-
+{% endhighlight %}
 
 * To optimize performance, grid is updated manually (UpdateDisplayFrequency = 0) at regular intervals. A timer is used to keep track of the duration of time periods. The code to track the changes in Freight and EmployeeID columns and to update the grid rows is written inside the timer_tick event handler where the update is done manually by making a call to gridGroupingControl.Update method. Timer Interval is set to 100, which means that there would be a update for every 100 ms. This implementation pushes in the pending updates every 100 ms and updates 1000 records each time.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -19950,9 +19912,9 @@ void timer_tick(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20130,11 +20092,13 @@ End Try
 
 End Sub
 
+{% endhighlight %}
+
 * It should also take care of UnboundFields whose values are usually dependent on changes to other fields. If unbound fields are used, you can tell the engine the fields that the unbound field is dependent on, by setting the ReferencedFields property. When ReferencedFields is set and the engine detects changes to the unbound field, it will then automatically also mark the field as changed. This subsequently can affect sort order, group attachment, and so on.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -20148,9 +20112,9 @@ gridGroupingControl1.TableDescriptor.UnboundFields.Add("ShipVia_CompanyName");
 
 gridGroupingControl1.TableDescriptor.UnboundFields["ShipVia_CompanyName"].ReferencedFields = "ShipVia";           
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -20164,7 +20128,7 @@ gridGroupingControl1.TableDescriptor.UnboundFields.Add("ShipVia_CompanyName")
 
 gridGroupingControl1.TableDescriptor.UnboundFields("ShipVia_CompanyName").ReferencedFields = "ShipVia"
 
-
+{% endhighlight %}
 
 Here is a sample screen shot.
 
@@ -20172,7 +20136,7 @@ Here is a sample screen shot.
 
 
 
-###### High Frequency Updates
+#### High Frequency Updates
 
 This section discusses an example that lets you make high frequency updates in an efficient manner. It shows sort position changes, inserting and removing of records from a timer event. At start up, the grid grouping control is sorted by Column "1" and changes to fields in that column affects the sort position of a record. The background colors of the cells in records are also dependant on the value in column "1". This dependency is specified with ReferencedFields property. The changes are highlighted for a short period of time after a change is detected.
 
@@ -20182,11 +20146,9 @@ ReferencedFields property, as the name implies, saves a list of field names refe
 
 ReferencedFields property is very user interactive option and provides options to test the performance of the grid by enabling or disabling grouping, sorting, and filtering in the midst of heavy updates. It also allows you to change the timer frequency that controls the throughput i.e., the number of updates per unit time. At run time, you can also vary the amount of time the changes are highlighted.
 
-> ![](Grid-Controls_images/Grid-Controls_img274.jpeg)
+> Note: For Complete Code for this example, refer to the following Browser sample:
 
-_Note: For Complete Code for this example, refer to the following Browser sample:_
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo_
 
 Implementation
 
@@ -20196,121 +20158,123 @@ This example demonstrates the frequent updates that occur in random cells across
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-GridGroupingControl gridGroupingControl1 = new GridGroupingControl();
+		GridGroupingControl gridGroupingControl1 = new GridGroupingControl();
 
-gridGroupingControl1.VerticalThumbTrack = true;
+		gridGroupingControl1.VerticalThumbTrack = true;
 
-gridGroupingControl1.HorizontalThumbTrack = true;
+		gridGroupingControl1.HorizontalThumbTrack = true;
 
-gridGroupingControl1.TableOptions.VerticalPixelScroll = true;
+		gridGroupingControl1.TableOptions.VerticalPixelScroll = true;
 
-gridGroupingControl1.DataSource = GetRandomDataTable();
+		gridGroupingControl1.DataSource = GetRandomDataTable();
 
-this.gridGroupingControl1.ShowGroupDropArea = true;
+		this.gridGroupingControl1.ShowGroupDropArea = true;
 
 
 
-//Uses less memory for internal binary tree structures.
+		//Uses less memory for internal binary tree structures.
 
-gridGroupingControl1.CounterLogic = EngineCounters.YAmount;
+		gridGroupingControl1.CounterLogic = EngineCounters.YAmount;
 
-gridGroupingControl1.AllowedOptimizations = EngineOptimizations.DisableCounters | EngineOptimizations.RecordsAsDisplayElements;
+		gridGroupingControl1.AllowedOptimizations = EngineOptimizations.DisableCounters | EngineOptimizations.RecordsAsDisplayElements;
 
 
 
-//Uses faster GDI drawing.
+		//Uses faster GDI drawing.
 
-gridGroupingControl1.UseDefaultsForFasterDrawing = true;
+		gridGroupingControl1.UseDefaultsForFasterDrawing = true;
 
 
 
-//Skips Currency Manager.
+		//Skips Currency Manager.
 
-gridGroupingControl1.BindToCurrencyManager = false;
+		gridGroupingControl1.BindToCurrencyManager = false;
 
 
 
-//Immediately updates after each ListChanged event.
+		//Immediately updates after each ListChanged event.
 
-gridGroupingControl1.UpdateDisplayFrequency = 1;
+		gridGroupingControl1.UpdateDisplayFrequency = 1;
 
 
 
-//Scroll Window will cause immediate update.
+		//Scroll Window will cause immediate update.
 
-gridGroupingControl1.InsertRemoveBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate;
+		gridGroupingControl1.InsertRemoveBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate;
 
-gridGroupingControl1.SortPositionChangedBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate;
+		gridGroupingControl1.SortPositionChangedBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate;
 
 
 
-//Insert RemoveBehavior or SortPositionChangedBehavior takes effect only when InvalidateAll is set to false.
+		//Insert RemoveBehavior or SortPositionChangedBehavior takes effect only when InvalidateAll is set to false.
 
-gridGroupingControl1.InvalidateAllWhenListChanged = false;
+		gridGroupingControl1.InvalidateAllWhenListChanged = false;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Dim gridGroupingControl1 As New GridGroupingControl()
 
-Dim gridGroupingControl1 As New GridGroupingControl()
+		gridGroupingControl1.VerticalThumbTrack = True
 
-gridGroupingControl1.VerticalThumbTrack = True
+		gridGroupingControl1.HorizontalThumbTrack = True
 
-gridGroupingControl1.HorizontalThumbTrack = True
+		gridGroupingControl1.TableOptions.VerticalPixelScroll = True
 
-gridGroupingControl1.TableOptions.VerticalPixelScroll = True
+		gridGroupingControl1.DataSource = GetRandomDataTable()
 
-gridGroupingControl1.DataSource = GetRandomDataTable()
+		Me.gridGroupingControl1.ShowGroupDropArea = True
 
-Me.gridGroupingControl1.ShowGroupDropArea = True
 
 
+		'Uses less memory for internal binary tree structures.
 
-'Uses less memory for internal binary tree structures.
+		gridGroupingControl1.CounterLogic = EngineCounters.YAmount
 
-gridGroupingControl1.CounterLogic = EngineCounters.YAmount
+		gridGroupingControl1.AllowedOptimizations = EngineOptimizations.DisableCounters Or EngineOptimizations.RecordsAsDisplayElements
 
-gridGroupingControl1.AllowedOptimizations = EngineOptimizations.DisableCounters Or EngineOptimizations.RecordsAsDisplayElements
 
 
+		'Uses faster GDI drawing.
 
-'Uses faster GDI drawing.
+		gridGroupingControl1.UseDefaultsForFasterDrawing = True
 
-gridGroupingControl1.UseDefaultsForFasterDrawing = True
 
 
+		'Skips Currency Manager.
 
-'Skips Currency Manager.
+		gridGroupingControl1.BindToCurrencyManager = False
 
-gridGroupingControl1.BindToCurrencyManager = False
 
 
+		'Immediately updates after each ListChanged event.
 
-'Immediately updates after each ListChanged event.
+		gridGroupingControl1.UpdateDisplayFrequency = 1
 
-gridGroupingControl1.UpdateDisplayFrequency = 1
 
 
+		'Scroll Window will cause immediate update.
 
-'Scroll Window will cause immediate update.
+		gridGroupingControl1.InsertRemoveBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate
 
-gridGroupingControl1.InsertRemoveBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate
+		gridGroupingControl1.SortPositionChangedBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate
 
-gridGroupingControl1.SortPositionChangedBehavior = GridListChangedInsertRemoveBehavior.ScrollWithImmediateUpdate
 
 
+		'InsertRemoveBehaior or SortPositionChangedBehavior takes effect only when InvalidateAll is set to false.
 
-'InsertRemoveBehaior or SortPositionChangedBehavior takes effect only when InvalidateAll is set to false.
+		gridGroupingControl1.InvalidateAllWhenListChanged = False
 
-gridGroupingControl1.InvalidateAllWhenListChanged = False
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Set AllowBlink to true for all the columns in order to enable highlighting cells for a short period of time when a change is detected. Engine.AddBaseStylesForBlinking method is used to add base styles for customization of the appearance of blink cells. Initialize base styles for various blink states. PrepareViewStyleInfo is handled to set custom base style for a newly added record. A cell change is highlighted by checking its BlinkState. BlinkState indicates whether the cell's value is increased or reduced or if the record has been recently added. If its state is either Increased or Reduced, its back color and text colors are changed.
 
@@ -20318,839 +20282,848 @@ gridGroupingControl1.InvalidateAllWhenListChanged = False
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-//Allows Blinking for all the columns.
+		//Allows Blinking for all the columns.
 
-//Highlights up and down ticks.
+		//Highlights up and down ticks.
 
-gridGroupingControl1.BlinkTime = 700;
+		gridGroupingControl1.BlinkTime = 700;
 
-for (int i = 1; i <= 20; i++)
+		for (int i = 1; i <= 20; i++)
 
-gridGroupingControl1.TableDescriptor.Columns[i.ToString()].AllowBlink = true;
+		gridGroupingControl1.TableDescriptor.Columns[i.ToString()].AllowBlink = true;
 
-gridGroupingControl1.Engine.AddBaseStylesForBlinking();
+		gridGroupingControl1.Engine.AddBaseStylesForBlinking();
 
-gridGroupingControl1.BaseStyles[GridEngine.BlinkIncreased].StyleInfo.TextColor = Color.White;
+		gridGroupingControl1.BaseStyles[GridEngine.BlinkIncreased].StyleInfo.TextColor = Color.White;
 
-gridGroupingControl1.BaseStyles[GridEngine.BlinkReduced].StyleInfo.TextColor = Color.White;
-
-
-
-gridGroupingControl1.Engine.BaseStyles.Add("CustomStyle");
-
-gridGroupingControl1.BaseStyles["CustomStyle"].StyleInfo.TextColor = Color.Black;
-
-gridGroupingControl1.BaseStyles["CustomStyle"].StyleInfo.BackColor = Color.White;
+		gridGroupingControl1.BaseStyles[GridEngine.BlinkReduced].StyleInfo.TextColor = Color.White;
 
 
 
-//PrepareViewStyleInfo.
+		gridGroupingControl1.Engine.BaseStyles.Add("CustomStyle");
 
-void gridGroupingControl1_TableControlPrepareViewStyleInfo(object sender, GridTableControlPrepareViewStyleInfoEventArgs e)
+		gridGroupingControl1.BaseStyles["CustomStyle"].StyleInfo.TextColor = Color.Black;
 
-{
-
-    GridTableCellStyleInfo style = (GridTableCellStyleInfo)e.Inner.Style;
-
-    BlinkState bs = gridGroupingControl1.GetBlinkState(style.TableCellIdentity);
-
-    if (bs != BlinkState.None)
-
-    {
-
-        if (bs == BlinkState.NewRecord)
-
-        {
-
-            e.Inner.Style.BaseStyle = "CustomStyle";
-
-        }
-
-    }
-
-}
+		gridGroupingControl1.BaseStyles["CustomStyle"].StyleInfo.BackColor = Color.White;
 
 
 
-[VB.NET]
+		//PrepareViewStyleInfo.
+
+		void gridGroupingControl1_TableControlPrepareViewStyleInfo(object sender, GridTableControlPrepareViewStyleInfoEventArgs e)
+
+		{
+
+			GridTableCellStyleInfo style = (GridTableCellStyleInfo)e.Inner.Style;
+
+			BlinkState bs = gridGroupingControl1.GetBlinkState(style.TableCellIdentity);
+
+			if (bs != BlinkState.None)
+
+			{
+
+				if (bs == BlinkState.NewRecord)
+
+				{
+
+					e.Inner.Style.BaseStyle = "CustomStyle";
+
+				}
+
+			}
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-'Allows Blinking for all the columns.
+		'Allows Blinking for all the columns.
 
-'Highlights up and downticks.
+		'Highlights up and downticks.
 
-gridGroupingControl1.BlinkTime = 700
+		gridGroupingControl1.BlinkTime = 700
 
-For i As Integer = 1 To 20
+		For i As Integer = 1 To 20
 
-gridGroupingControl1.TableDescriptor.Columns(i.ToString()).AllowBlink = True
+		gridGroupingControl1.TableDescriptor.Columns(i.ToString()).AllowBlink = True
 
-Next i
+		Next i
 
-gridGroupingControl1.Engine.AddBaseStylesForBlinking()
+		gridGroupingControl1.Engine.AddBaseStylesForBlinking()
 
-gridGroupingControl1.BaseStyles(GridEngine.BlinkIncreased).StyleInfo.TextColor = Color.White
+		gridGroupingControl1.BaseStyles(GridEngine.BlinkIncreased).StyleInfo.TextColor = Color.White
 
-gridGroupingControl1.BaseStyles(GridEngine.BlinkReduced).StyleInfo.TextColor = Color.White
-
-
-
-gridGroupingControl1.Engine.BaseStyles.Add("CustomStyle")
-
-gridGroupingControl1.BaseStyles("CustomStyle").StyleInfo.TextColor = Color.Black
-
-gridGroupingControl1.BaseStyles("CustomStyle").StyleInfo.BackColor = Color.White
+		gridGroupingControl1.BaseStyles(GridEngine.BlinkReduced).StyleInfo.TextColor = Color.White
 
 
 
-'PrepareViewStyleInfo.
+		gridGroupingControl1.Engine.BaseStyles.Add("CustomStyle")
 
-Private Sub gridGroupingControl1_TableControlPrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridTableControlPrepareViewStyleInfoEventArgs)
+		gridGroupingControl1.BaseStyles("CustomStyle").StyleInfo.TextColor = Color.Black
 
-Dim style As GridTableCellStyleInfo = CType(e.Inner.Style, GridTableCellStyleInfo)
-
-Dim bs As BlinkState = gridGroupingControl1.GetBlinkState(style.TableCellIdentity)
-
-If bs <> BlinkState.None Then
-
-If bs = BlinkState.NewRecord Then
-
-e.Inner.Style.BaseStyle = "CustomStyle"
-
-End If
-
-End If
-
-End Sub
+		gridGroupingControl1.BaseStyles("CustomStyle").StyleInfo.BackColor = Color.White
 
 
+
+		'PrepareViewStyleInfo.
+
+		Private Sub gridGroupingControl1_TableControlPrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridTableControlPrepareViewStyleInfoEventArgs)
+
+		Dim style As GridTableCellStyleInfo = CType(e.Inner.Style, GridTableCellStyleInfo)
+
+		Dim bs As BlinkState = gridGroupingControl1.GetBlinkState(style.TableCellIdentity)
+
+		If bs <> BlinkState.None Then
+
+		If bs = BlinkState.NewRecord Then
+
+		e.Inner.Style.BaseStyle = "CustomStyle"
+
+		End If
+
+		End If
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 3. A timer event is handled to insert and remove the records. This results in frequent list changes at regular intervals.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-bool skipTimer = false;
+		bool skipTimer = false;
 
-private void timer_Tick(object sender, EventArgs e)
+		private void timer_Tick(object sender, EventArgs e)
 
-{
+		{
 
-    if (skipTimer)
+			if (skipTimer)
 
-    return;
+			return;
 
-    timerCount++;
+			timerCount++;
 
-    try
+			try
 
-    {
+			{
 
-        for (int i = 0; i < m_numUpdatesPerTick; i++)
+				for (int i = 0; i < m_numUpdatesPerTick; i++)
 
-        {
+				{
 
-//Application.DoEvents();
+		//Application.DoEvents();
 
-            int recNum = rand.Next(table.Rows.Count - 1);
+					int recNum = rand.Next(table.Rows.Count - 1);
 
-            int rowNum = recNum + 1;
+					int rowNum = recNum + 1;
 
-            int col = rand.Next(16) + 1;
+					int col = rand.Next(16) + 1;
 
-            int colNum = col + 1;
+					int colNum = col + 1;
 
-            DataRow drow = table.Rows[recNum];
+					DataRow drow = table.Rows[recNum];
 
-            if (!(drow[col] is DBNull))
+					if (!(drow[col] is DBNull))
 
-            drow[col] = (int) (Convert.ToDouble(drow[col]) * (rand.Next(50) / 100.0f + 0.8));
+					drow[col] = (int) (Convert.ToDouble(drow[col]) * (rand.Next(50) / 100.0f + 0.8));
 
-        }
+				}
 
 
 
-//Inserts or removes a row.
+		//Inserts or removes a row.
 
-        if (insertRemoveCount == 0)
+				if (insertRemoveCount == 0)
 
-        return;
+				return;
 
-        if (toggleInsertRemove > 0 && (timerCount % insertRemoveModulus) == 0)
+				if (toggleInsertRemove > 0 && (timerCount % insertRemoveModulus) == 0)
 
-        {
+				{
 
-            icount = ++icount % (toggleInsertRemove * 2);
+					icount = ++icount % (toggleInsertRemove * 2);
 
-            shouldInsert = icount < toggleInsertRemove;
+					shouldInsert = icount < toggleInsertRemove;
 
-            if (shouldInsert)
+					if (shouldInsert)
 
-            {
+					{
 
-                for (int ri = 0; ri < insertRemoveCount; ri++)
+						for (int ri = 0; ri < insertRemoveCount; ri++)
 
-                {
+						{
 
-                    int recNum = 5;
+							int recNum = 5;
 
-                    int next = rand.Next(100);
+							int next = rand.Next(100);
 
-                    object[] row = new object[]{"H"+ti.ToString("00000"),next+1,next+2,next+3,next+4,next+5,next+6,next+7,next+8,next+9,next+10,next+11,next+12,next+13,next+14,next+15,next+16,next+17,next+18,next+19,next+20};
+							object[] row = new object[]{"H"+ti.ToString("00000"),next+1,next+2,next+3,next+4,next+5,next+6,next+7,next+8,next+9,next+10,next+11,next+12,next+13,next+14,next+15,next+16,next+17,next+18,next+19,next+20};
 
-                    ti++;
+							ti++;
 
-                    DataRow drow = table.NewRow();
+							DataRow drow = table.NewRow();
 
-                    drow.ItemArray = row;
+							drow.ItemArray = row;
 
-                    table.Rows.InsertAt(drow, recNum);
+							table.Rows.InsertAt(drow, recNum);
 
-                }
+						}
 
-            }
+					}
 
-            else
+					else
 
-            {
+					{
 
-                for (int ri = 0; ri < insertRemoveCount; ri++)
+						for (int ri = 0; ri < insertRemoveCount; ri++)
 
-                {
+						{
 
-                int recNum = 5; 
+						int recNum = 5; 
 
-                int rowNum = recNum + 1;
+						int rowNum = recNum + 1;
 
 
 
-//Underlying data structure (this could be a data table or whatever structure
+		//Underlying data structure (this could be a data table or whatever structure
 
-you use behind a virtual grid).
+		you use behind a virtual grid).
 
-                if (table.Rows.Count > 10)
+						if (table.Rows.Count > 10)
 
-                table.Rows.RemoveAt(recNum);
+						table.Rows.RemoveAt(recNum);
 
-                }
+						}
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
-    finally
+			finally
 
-    {
+			{
 
-    }
+			}
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Private skipTimer As Boolean = False
 
-Private skipTimer As Boolean = False
 
 
+		Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
 
-Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
+		If skipTimer Then
 
-If skipTimer Then
+		Return
 
-Return
+		End If
 
-End If
 
 
+		timerCount += 1
 
-timerCount += 1
 
 
+		Try
 
-Try
+		Dim i As Integer = 0
 
-Dim i As Integer = 0
+		Do While i < m_numUpdatesPerTick
 
-Do While i < m_numUpdatesPerTick
 
 
+		'Application.DoEvents();
 
-'Application.DoEvents();
+		Dim recNum As Integer = rand.Next(table.Rows.Count - 1)
 
-Dim recNum As Integer = rand.Next(table.Rows.Count - 1)
+		Dim rowNum As Integer = recNum + 1
 
-Dim rowNum As Integer = recNum + 1
+		Dim col As Integer = rand.Next(16) + 1
 
-Dim col As Integer = rand.Next(16) + 1
+		Dim colNum As Integer = col + 1
 
-Dim colNum As Integer = col + 1
+		Dim drow As DataRow = table.Rows(recNum)
 
-Dim drow As DataRow = table.Rows(recNum)
+		If Not(TypeOf drow(col) Is DBNull) Then
 
-If Not(TypeOf drow(col) Is DBNull) Then
+		drow(col) = CInt(Convert.ToDouble(drow(col)) * (rand.Next(50) / 100.0f + 0.8))
 
-drow(col) = CInt(Convert.ToDouble(drow(col)) * (rand.Next(50) / 100.0f + 0.8))
+		End If
 
-End If
+		i += 1
 
-i += 1
+		Loop
 
-Loop
 
 
+		'Inserts or removes a row.
 
-'Inserts or removes a row.
+		If insertRemoveCount = 0 Then
 
-If insertRemoveCount = 0 Then
+		Return
 
-Return
+		End If
 
-End If
 
 
+		If toggleInsertRemove > 0 AndAlso (timerCount Mod insertRemoveModulus) = 0 Then
 
-If toggleInsertRemove > 0 AndAlso (timerCount Mod insertRemoveModulus) = 0 Then
+		icount += 1
 
-icount += 1
+		icount = icount Mod (toggleInsertRemove * 2)
 
-icount = icount Mod (toggleInsertRemove * 2)
+		shouldInsert = icount < toggleInsertRemove
 
-shouldInsert = icount < toggleInsertRemove
 
 
+		If shouldInsert Then
 
-If shouldInsert Then
+		Dim ri As Integer = 0
 
-Dim ri As Integer = 0
 
 
+		Do While ri < insertRemoveCount
 
-Do While ri < insertRemoveCount
+		Dim recNum As Integer = 5 
 
-Dim recNum As Integer = 5 
 
 
+		Dim next_Renamed As Integer = rand.[next](100)
 
-Dim next_Renamed As Integer = rand.[next](100)
+		Dim row As Object() = New Object(){{"H"+ti.ToString("00000"),next_Renamed+1,next_Renamed+2,next_Renamed+3, next_Renamed+4, next_Renamed+5,next_Renamed+6, next_Renamed+7,next_Renamed+8,next_Renamed+9,next_Renamed+10, next_Renamed+11,next_Renamed+12,next_Renamed+13,next_Renamed+14, next_Renamed+15,next_Renamed+16,next_Renamed+17, next_Renamed+18,next_Renamed+19,next_Renamed+20}}
 
-Dim row As Object() = New Object(){{"H"+ti.ToString("00000"),next_Renamed+1,next_Renamed+2,next_Renamed+3, next_Renamed+4, next_Renamed+5,next_Renamed+6, next_Renamed+7,next_Renamed+8,next_Renamed+9,next_Renamed+10, next_Renamed+11,next_Renamed+12,next_Renamed+13,next_Renamed+14, next_Renamed+15,next_Renamed+16,next_Renamed+17, next_Renamed+18,next_Renamed+19,next_Renamed+20}}
+		ti += 1
 
-ti += 1
+		Dim drow As DataRow = table.NewRow()
 
-Dim drow As DataRow = table.NewRow()
+		drow.ItemArray = row
 
-drow.ItemArray = row
+		table.Rows.InsertAt(drow, recNum)
 
-table.Rows.InsertAt(drow, recNum)
+		ri += 1
 
-ri += 1
+		Loop
 
-Loop
+		Else
 
-Else
+		Dim ri As Integer = 0
 
-Dim ri As Integer = 0
+		Do While ri < insertRemoveCount
 
-Do While ri < insertRemoveCount
+		Dim recNum As Integer = 5 
 
-Dim recNum As Integer = 5 
+		Dim rowNum As Integer = recNum + 1
 
-Dim rowNum As Integer = recNum + 1
 
 
+		'Underlying data structure (this could be a data table or whatever structure
 
-'Underlying data structure (this could be a data table or whatever structure
+		 you use behind a virtual grid).
 
- you use behind a virtual grid).
 
 
+		If table.Rows.Count > 10 Then
 
-If table.Rows.Count > 10 Then
+		table.Rows.RemoveAt(recNum)
 
-table.Rows.RemoveAt(recNum)
+		End If
 
-End If
+		ri += 1
 
-ri += 1
+		Loop
 
-Loop
+		End If
 
-End If
+		End If
 
-End If
 
 
+		Finally
 
-Finally
+		End Try
 
-End Try
+		End Sub
 
-End Sub
-
-
+   ~~~
+   {:.prettyprint }
 
 4. QueryCellStyleInfo is handled to enable coloring of the cells. The background colors of the cells in the records are dependent on the column "1" values. This dependency is specified using Referenced Fields property. To make it user friendly, you can use CheckBox control to enable or disable this coloring. Hook this event if the checked state of the CheckBox is true; unhook otherwise.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-Color[] colors = new Color[] { Color.FromArgb( 0x85, 0xbf, 0x75 ), Color.FromArgb( 0xb4, 0xe7, 0xf2 ),
+		Color[] colors = new Color[] { Color.FromArgb( 0x85, 0xbf, 0x75 ), Color.FromArgb( 0xb4, 0xe7, 0xf2 ),
 
-Color.FromArgb( 0xff, 0xbf, 0x34 ), Color.FromArgb( 0x82, 0x2e, 0x1b ), Color.FromArgb( 0x3a, 0x86, 0x7e ),};
+		Color.FromArgb( 0xff, 0xbf, 0x34 ), Color.FromArgb( 0x82, 0x2e, 0x1b ), Color.FromArgb( 0x3a, 0x86, 0x7e ),};
 
 
 
-void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
+		void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 
-{
+		{
 
-    GridTableCellStyleInfo style = (GridTableCellStyleInfo)e.Style;
+			GridTableCellStyleInfo style = (GridTableCellStyleInfo)e.Style;
 
-    if (e.TableCellIdentity.TableCellType == GridTableCellType.RecordFieldCell
+			if (e.TableCellIdentity.TableCellType == GridTableCellType.RecordFieldCell
 
-    || e.TableCellIdentity.TableCellType == GridTableCellType.AlternateRecordFieldCell)
+			|| e.TableCellIdentity.TableCellType == GridTableCellType.AlternateRecordFieldCell)
 
-    {
+			{
 
-        if (e.TableCellIdentity.Column.FieldDescriptor.FieldPropertyType == typeof(string))
+				if (e.TableCellIdentity.Column.FieldDescriptor.FieldPropertyType == typeof(string))
 
-        return;
+				return;
 
-//Gets the value from column 1 and colors all cells in record based on this value.
+		//Gets the value from column 1 and colors all cells in record based on this value.
 
-        Record r = e.Style.TableCellIdentity.DisplayElement.GetRecord();
+				Record r = e.Style.TableCellIdentity.DisplayElement.GetRecord();
 
-        object value = r.GetValue("1");
+				object value = r.GetValue("1");
 
-        int v = Convert.ToInt32(value) % colors.Length;
+				int v = Convert.ToInt32(value) % colors.Length;
 
-        e.Style.BackColor = colors[v];
+				e.Style.BackColor = colors[v];
 
-    }
+			}
 
-}
+		}
 
 
 
-//CheckBox event to enable or disable cell coloring.
+		//CheckBox event to enable or disable cell coloring.
 
-private void checkBoxColor_CheckedChanged(object sender, System.EventArgs e)
+		private void checkBoxColor_CheckedChanged(object sender, System.EventArgs e)
 
-{
+		{
 
-if (this.checkBoxColor.Checked)
+		if (this.checkBoxColor.Checked)
 
-    {
+			{
 
-//Callback for dynamically coloring cells.
+		//Callback for dynamically coloring cells.
 
-    gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
+			gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 
 
 
-//The color of these cells depends on value of cell 1. If engines ListChanged handler detects a change to column 1, it should also automatically repaint the dependant columns.
+		//The color of these cells depends on value of cell 1. If engines ListChanged handler detects a change to column 1, it should also automatically repaint the dependant columns.
 
-    for (int i = 2; i <= 20; i++)
+			for (int i = 2; i <= 20; i++)
 
-    gridGroupingControl1.TableDescriptor.Fields[i.ToString()].ReferencedFields = "1";
+			gridGroupingControl1.TableDescriptor.Fields[i.ToString()].ReferencedFields = "1";
 
-}
+		}
 
-else
+		else
 
-{
+		{
 
-    gridGroupingControl1.QueryCellStyleInfo -= new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
+			gridGroupingControl1.QueryCellStyleInfo -= new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 
-    gridGroupingControl1.TableDescriptor.Fields.LoadDefault();
+			gridGroupingControl1.TableDescriptor.Fields.LoadDefault();
 
-}
+		}
 
-this.gridGroupingControl1.Refresh();
+		this.gridGroupingControl1.Refresh();
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Private colors As Color() = New Color() {Color.FromArgb(&H85, &HBF, &H75), Color.FromArgb(&HB4, &HE7, &HF2), Color.FromArgb(&HFF, &HBF, &H34), Color.FromArgb(&H82, &H2E, &H1B), Color.FromArgb(&H3A, &H86, &H7E)}
 
-Private colors As Color() = New Color() {Color.FromArgb(&H85, &HBF, &H75), Color.FromArgb(&HB4, &HE7, &HF2), Color.FromArgb(&HFF, &HBF, &H34), Color.FromArgb(&H82, &H2E, &H1B), Color.FromArgb(&H3A, &H86, &H7E)}
 
 
+		Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
 
-Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+		Dim style As GridTableCellStyleInfo = CType(e.Style, GridTableCellStyleInfo)
 
-Dim style As GridTableCellStyleInfo = CType(e.Style, GridTableCellStyleInfo)
+		If e.TableCellIdentity.TableCellType = GridTableCellType.RecordFieldCell OrElse e.TableCellIdentity.TableCellType = GridTableCellType.AlternateRecordFieldCell Then
 
-If e.TableCellIdentity.TableCellType = GridTableCellType.RecordFieldCell OrElse e.TableCellIdentity.TableCellType = GridTableCellType.AlternateRecordFieldCell Then
+		If e.TableCellIdentity.Column.FieldDescriptor.FieldPropertyType Is GetType(String) Then
 
-If e.TableCellIdentity.Column.FieldDescriptor.FieldPropertyType Is GetType(String) Then
+		Return
 
-Return
+		End If
 
-End If
 
 
+		'Gets the value from column 1 and color all cells in record based on this value.
 
-'Gets the value from column 1 and color all cells in record based on this value.
+		Dim r As Record = e.Style.TableCellIdentity.DisplayElement.GetRecord()
 
-Dim r As Record = e.Style.TableCellIdentity.DisplayElement.GetRecord()
+		Dim value As Object = r.GetValue("1")
 
-Dim value As Object = r.GetValue("1")
+		Dim v As Integer = Convert.ToInt32(value) Mod colors.Length
 
-Dim v As Integer = Convert.ToInt32(value) Mod colors.Length
+		e.Style.BackColor = colors(v)
 
-e.Style.BackColor = colors(v)
+		End If
 
-End If
+		End Sub
 
-End Sub
 
 
+		Private Sub checkBoxColor_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxColor.CheckedChanged
 
-Private Sub checkBoxColor_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxColor.CheckedChanged
+		If Me.checkBoxColor.Checked Then
 
-If Me.checkBoxColor.Checked Then
 
 
+		'Callback for dynamically coloring cells.
 
-'Callback for dynamically coloring cells.
+		AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
-AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 
+		'The color of these cells depends on value of cell 1. If engines ListChanged handler detects a change to column 1, it should also automatically repaint the dependant columns.
 
-'The color of these cells depends on value of cell 1. If engines ListChanged handler detects a change to column 1, it should also automatically repaint the dependant columns.
+		For i As Integer = 2 To 20
 
-For i As Integer = 2 To 20
+		gridGroupingControl1.TableDescriptor.Fields(i.ToString()).ReferencedFields = "1"
 
-gridGroupingControl1.TableDescriptor.Fields(i.ToString()).ReferencedFields = "1"
+		Next i
 
-Next i
+		Else
 
-Else
+		RemoveHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
-RemoveHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
+		gridGroupingControl1.TableDescriptor.Fields.LoadDefault()
 
-gridGroupingControl1.TableDescriptor.Fields.LoadDefault()
+		End If
 
-End If
+		Me.gridGroupingControl1.Refresh()
 
-Me.gridGroupingControl1.Refresh()
+		End Sub
 
-End Sub
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Add three more CheckBoxes to include options to enable or disable Grouping, Sorting, and Filtering at runtime. Handle their CheckedChanged events to add the code for adding and removing groups, sorted columns and record filters. For example, if the checked state of groupCheckBox is true, group the table against a column. When its checked state is turned to false, simply ungroup the table.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-//Sorts Option.
+		//Sorts Option.
 
-private void checkBoxSorting_CheckedChanged(object sender, System.EventArgs e)
+		private void checkBoxSorting_CheckedChanged(object sender, System.EventArgs e)
 
-{
+		{
 
-    if (this.checkBoxSorting.Checked)
+			if (this.checkBoxSorting.Checked)
 
-    {
+			{
 
-        gridGroupingControl1.TableDescriptor.SortedColumns.Clear();
+				gridGroupingControl1.TableDescriptor.SortedColumns.Clear();
 
-        gridGroupingControl1.TableDescriptor.SortedColumns.Add("1");
+				gridGroupingControl1.TableDescriptor.SortedColumns.Add("1");
 
-        gridGroupingControl1.TableDescriptor.SortedColumns.Add("2");
+				gridGroupingControl1.TableDescriptor.SortedColumns.Add("2");
 
-    }
+			}
 
-    else
+			else
 
-    {
+			{
 
-        gridGroupingControl1.TableDescriptor.SortedColumns.Clear();
+				gridGroupingControl1.TableDescriptor.SortedColumns.Clear();
 
-    }
+			}
 
-    this.gridGroupingControl1.Refresh();
+			this.gridGroupingControl1.Refresh();
 
-}
+		}
 
 
 
-//Groups Option.
+		//Groups Option.
 
-private void checkBoxGrouping_CheckedChanged(object sender, System.EventArgs e)
+		private void checkBoxGrouping_CheckedChanged(object sender, System.EventArgs e)
 
-{
+		{
 
-    if (this.checkBoxGrouping.Checked)
+			if (this.checkBoxGrouping.Checked)
 
-    {
+			{
 
-        gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
+				gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
 
-        gridGroupingControl1.TableDescriptor.GroupedColumns.Add("1");
+				gridGroupingControl1.TableDescriptor.GroupedColumns.Add("1");
 
-        this.gridGroupingControl1.Table.ExpandAllGroups();
+				this.gridGroupingControl1.Table.ExpandAllGroups();
 
-    }
+			}
 
-    else
+			else
 
-    {
+			{
 
-        gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
+				gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
 
-    }
+			}
 
-    this.gridGroupingControl1.Refresh();
+			this.gridGroupingControl1.Refresh();
 
-}
+		}
 
 
 
-// Filters Option.
+		// Filters Option.
 
-private void checkBoxFilter_CheckedChanged(object sender, System.EventArgs e)
+		private void checkBoxFilter_CheckedChanged(object sender, System.EventArgs e)
 
-{
+		{
 
-    if (this.checkBoxFilter.Checked)
+			if (this.checkBoxFilter.Checked)
 
-    {
+			{
 
-        gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
+				gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
 
 
 
-//Gets the filter expression from a Text Box.
+		//Gets the filter expression from a Text Box.
 
-        gridGroupingControl1.TableDescriptor.RecordFilters.Add(this.textBoxFilter.Text);
+				gridGroupingControl1.TableDescriptor.RecordFilters.Add(this.textBoxFilter.Text);
 
-    }
+			}
 
-    else
+			else
 
-    {
+			{
 
-        gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
+				gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
 
-    }
+			}
 
-    this.gridGroupingControl1.Refresh();
+			this.gridGroupingControl1.Refresh();
 
-}
+		}
 
 
 
-[VB.NET.NET]
+		[VB.NET.NET]
 
 
 
-'Sorts Option.
+		'Sorts Option.
 
-Private Sub checkBoxSorting_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxSorting.CheckedChanged
+		Private Sub checkBoxSorting_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxSorting.CheckedChanged
 
-If Me.checkBoxSorting.Checked Then
+		If Me.checkBoxSorting.Checked Then
 
-gridGroupingControl1.TableDescriptor.SortedColumns.Clear()
+		gridGroupingControl1.TableDescriptor.SortedColumns.Clear()
 
-gridGroupingControl1.TableDescriptor.SortedColumns.Add("1")
+		gridGroupingControl1.TableDescriptor.SortedColumns.Add("1")
 
-gridGroupingControl1.TableDescriptor.SortedColumns.Add("2")
+		gridGroupingControl1.TableDescriptor.SortedColumns.Add("2")
 
-Else
+		Else
 
-gridGroupingControl1.TableDescriptor.SortedColumns.Clear()
+		gridGroupingControl1.TableDescriptor.SortedColumns.Clear()
 
-End If
+		End If
 
-Me.gridGroupingControl1.Refresh()
+		Me.gridGroupingControl1.Refresh()
 
-End Sub
+		End Sub
 
 
 
-'Groups Option.
+		'Groups Option.
 
-Private Sub checkBoxGrouping_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxGrouping.CheckedChanged
+		Private Sub checkBoxGrouping_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxGrouping.CheckedChanged
 
-If Me.checkBoxGrouping.Checked Then
+		If Me.checkBoxGrouping.Checked Then
 
-gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
+		gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
 
-gridGroupingControl1.TableDescriptor.GroupedColumns.Add("1")
+		gridGroupingControl1.TableDescriptor.GroupedColumns.Add("1")
 
-gridGroupingControl1.Table.ExpandAllGroups()
+		gridGroupingControl1.Table.ExpandAllGroups()
 
-Else
+		Else
 
-gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
+		gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
 
-End If
+		End If
 
-Me.gridGroupingControl1.Refresh()
+		Me.gridGroupingControl1.Refresh()
 
-End Sub
+		End Sub
 
 
 
-'Filters Option.
+		'Filters Option.
 
-Private Sub checkBoxFilter_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxFilter.CheckedChanged
+		Private Sub checkBoxFilter_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBoxFilter.CheckedChanged
 
-If Me.checkBoxFilter.Checked Then
+		If Me.checkBoxFilter.Checked Then
 
-gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
+		gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 
-gridGroupingControl1.TableDescriptor.RecordFilters.Add(Me.textBoxFilter.Text)
+		gridGroupingControl1.TableDescriptor.RecordFilters.Add(Me.textBoxFilter.Text)
 
-Else
+		Else
 
-gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
+		gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 
-End If
+		End If
 
-Me.gridGroupingControl1.Refresh()
+		Me.gridGroupingControl1.Refresh()
 
-End Sub
+		End Sub
 
-
+   ~~~
+   {:.prettyprint }
 
 6. Two TrackBar controls are used to change the frequencies of the Timer and BlinkTime. The frequencies that are set by the end user are integrated into the grid grouping control in their respective TrackBarScroll event handlers.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-//Changes the Blink Time Frequency.
+		//Changes the Blink Time Frequency.
 
-private void trackBarBlinkFrequency_Scroll(object sender, System.EventArgs e)
+		private void trackBarBlinkFrequency_Scroll(object sender, System.EventArgs e)
 
-{
+		{
 
-    this.gridGroupingControl1.BlinkTime = this.trackBarBlinkFrequency.Value*100;
+			this.gridGroupingControl1.BlinkTime = this.trackBarBlinkFrequency.Value*100;
 
-    if (this.gridGroupingControl1.BlinkTime == 0)
+			if (this.gridGroupingControl1.BlinkTime == 0)
 
-    this.labelBlinkTime.Text = String.Format("Disabled.");
+			this.labelBlinkTime.Text = String.Format("Disabled.");
 
-    else
+			else
 
-    this.labelBlinkTime.Text = String.Format("{0} milliseconds.", gridGroupingControl1.BlinkTime);
+			this.labelBlinkTime.Text = String.Format("{0} milliseconds.", gridGroupingControl1.BlinkTime);
 
-    this.gridGroupingControl1.Refresh();
+			this.gridGroupingControl1.Refresh();
 
-}
-
-
-
-//Changes the Timer Frequency.
-
-private void trackBarTimer_Scroll(object sender, System.EventArgs e)
-
-{
-
-    if (this.trackBarTimer.Value == 0)
-
-    {
-
-        timer.Enabled = false;
-
-        this.labelTimerInterval.Text = String.Format("Timer disabled.");
-
-    }
-
-    else
-
-    {
-
-        timer.Interval = 1000/(this.trackBarTimer.Value*trackBarTimer.Value);
-
-        timer.Enabled = true;
-
-        this.labelTimerInterval.Text = String.Format("Every {0} milliseconds.", timer.Interval);
-
-    }
-
-}
+		}
 
 
 
-[VB.NET]
+		//Changes the Timer Frequency.
+
+		private void trackBarTimer_Scroll(object sender, System.EventArgs e)
+
+		{
+
+			if (this.trackBarTimer.Value == 0)
+
+			{
+
+				timer.Enabled = false;
+
+				this.labelTimerInterval.Text = String.Format("Timer disabled.");
+
+			}
+
+			else
+
+			{
+
+				timer.Interval = 1000/(this.trackBarTimer.Value*trackBarTimer.Value);
+
+				timer.Enabled = true;
+
+				this.labelTimerInterval.Text = String.Format("Every {0} milliseconds.", timer.Interval);
+
+			}
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-'Changes the Blink Time Frequency.
+		'Changes the Blink Time Frequency.
 
-Private Sub trackBarBlinkFrequency_Scroll(ByVal sender As Object, ByVal e As System.EventArgs) Handles trackBarBlinkFrequency.Scroll
+		Private Sub trackBarBlinkFrequency_Scroll(ByVal sender As Object, ByVal e As System.EventArgs) Handles trackBarBlinkFrequency.Scroll
 
-Me.gridGroupingControl1.BlinkTime = Me.trackBarBlinkFrequency.Value * 100
+		Me.gridGroupingControl1.BlinkTime = Me.trackBarBlinkFrequency.Value * 100
 
-If Me.gridGroupingControl1.BlinkTime = 0 Then
+		If Me.gridGroupingControl1.BlinkTime = 0 Then
 
-Me.labelBlinkTime.Text = String.Format("Disabled.")
+		Me.labelBlinkTime.Text = String.Format("Disabled.")
 
-Else
+		Else
 
-Me.labelBlinkTime.Text = String.Format("{0} milliseconds.", gridGroupingControl1.BlinkTime)
+		Me.labelBlinkTime.Text = String.Format("{0} milliseconds.", gridGroupingControl1.BlinkTime)
 
-End If
+		End If
 
-Me.gridGroupingControl1.Refresh()
+		Me.gridGroupingControl1.Refresh()
 
-End Sub
-
-
-
-'Change the Timer Frequency.
-
-Private Sub trackBarTimer_Scroll(ByVal sender As Object, ByVal e As System.EventArgs) Handles trackBarTimer.Scroll
-
-If Me.trackBarTimer.Value = 0 Then
-
-timer.Enabled = False
-
-Me.labelTimerInterval.Text = String.Format("Timer disabled.")
-
-Else
-
-timer.Interval = 1000 / (Me.trackBarTimer.Value * trackBarTimer.Value)
-
-timer.Enabled = True
-
-Me.labelTimerInterval.Text = String.Format("Every {0} milliseconds.", timer.Interval)
-
-End If
-
-End Sub
+		End Sub
 
 
+
+		'Change the Timer Frequency.
+
+		Private Sub trackBarTimer_Scroll(ByVal sender As Object, ByVal e As System.EventArgs) Handles trackBarTimer.Scroll
+
+		If Me.trackBarTimer.Value = 0 Then
+
+		timer.Enabled = False
+
+		Me.labelTimerInterval.Text = String.Format("Timer disabled.")
+
+		Else
+
+		timer.Interval = 1000 / (Me.trackBarTimer.Value * trackBarTimer.Value)
+
+		timer.Enabled = True
+
+		Me.labelTimerInterval.Text = String.Format("Every {0} milliseconds.", timer.Interval)
+
+		End If
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 7. Given below is a sample screen shot. While running the sample, apply grouping, sorting and filtering, and then check for the CPU time usage in TaskManager to detect grid performance.
 
@@ -21158,15 +21131,13 @@ End Sub
 
 
 
-###### Grouping Performance
+#### Grouping Performance
 
 This section focuses on a sample that lets you check the performance of the grid grouping control by toggling various options that can affect the speed of the grid. The different options include Sort and Categorize the records, Calculating MaximumColumnWidth, CustomSorting and MultiThreading (in case if a multiprocessor system is available). 
 
-> ![](Grid-Controls_images/Grid-Controls_img276.jpeg)
+> Note: For Code, refer to the following Browser sample:
 
-_Note: For Code, refer to the following Browser sample:_
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Performance Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Performance Demo_
 
 The following is the list of the options used.
 
@@ -21206,13 +21177,13 @@ Given below is a sample screen shot.
 
 
 
-###### IList Grouping Performance
+#### IList Grouping Performance
 
 The IList bound to GridGroupingControl has been implemented with an optimization process for grouping columns to improve performance. Grouping a column that has Ilist bound reduces the time taken to refresh the control after grouping. The grouping performance will improve with huge data loaded
 
 Set OptimizeIListGroupingPerformance to true to enable grouping optimization over the Ilist data source. The following code illustrates how to enable grouping optimization.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21224,9 +21195,9 @@ Set OptimizeIListGroupingPerformance to true to enable grouping optimization ove
 
         }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -21235,6 +21206,8 @@ Set OptimizeIListGroupingPerformance to true to enable grouping optimization ove
             GridGroupingControl1.OptimizedListGrouping = true
 
        End Sub
+	   
+{% endhighlight %}
 
 Enable Real Time Updates
 
@@ -21242,7 +21215,7 @@ The OptimizeIListGroupingPerformance method has to be called to enable real time
 
 The following code illustrates how to enable real time updates.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21255,10 +21228,10 @@ The following code illustrates how to enable real time updates.
         }
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -21268,7 +21241,7 @@ The following code illustrates how to enable real time updates.
 
        End Sub
 
-
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img278.jpeg)
 
@@ -21278,13 +21251,13 @@ The following code illustrates how to enable real time updates.
 
         _Figure_ _357_: Time Taken to Group the Records_
 
-##### Data Binding
+#### Data Binding
 
 To display data, grid grouping control must be bound to data source. The grid grouping control supports variety of data sources such as DataTables, DataSets, or any component that implements interface IList, IBindingList, ITypedList, or IListSource. The data source can have multiple nested tables, which will be displayed hierarchically by grid grouping control.
 
 This section deals with different types of data binding mechanisms, supported by grid grouping control, which are listed below.
 
-###### Data Binding using ADO.NET
+#### Data Binding using ADO.NET
 
 ADO.NET is an object-oriented set of libraries that allows you to interact with different types of data sources and different types of databases. It comes in different sets of libraries. These libraries are called DataProviders and they allow a common way to interact with specific data sources or protocols. The following table lists the data providers that are widely used.
 
@@ -21343,7 +21316,8 @@ To bind grid to a database, you can use any one of the following methods.
 2. Binding At Run Time
 * Binding to an MDB file at run time
 * Binding to a manually created datasource
-###### Binding to XML Data
+
+#### Binding to XML Data
 
 
 Grid Grouping Control can be bound to data from XML files. To do this, DataSet object is required which provides the necessary methods that will let you read XML data into dataset. After loading the data, you can bind the grouping grid to this dataset by setting data binding properties, DataSource and DataMember to dataset and table name respectively. It is also possible to save the changes back to XML file.
@@ -21378,7 +21352,7 @@ Writes dataset structure as an XML schema into the specified file.</td></tr>
 
 The following code example illustrates the binding process.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -21400,9 +21374,9 @@ gridGroupingControl1.DataSource = XmlData;
 
 gridGroupingControl1.DataMember = XmlData.Tables[0];
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -21424,7 +21398,9 @@ gridGroupingControl1.DataSource = XmlData
 
 gridGroupingControl1.DataMember = XmlData.Tables(0)
 
-###### Binding to Custom Collections
+{% endhighlight %}
+
+#### Binding to Custom Collections
 
 Custom Collections provide a way to store arbitrary objects in a structured fashion that can be bound to grouping grid. All the data binding is based on a set of interfaces that defines different capabilities of objects and collections within the context of accessing and navigating through data. These interfaces set up a two-way communication between bound grid and objects collection used by the same grid. Those collections may be custom business objects collection or may be the one provided by .NET Framework itself like DataView.
 
@@ -21450,7 +21426,7 @@ IBindingList interface overcomes shortcomings of other interfaces by declaring L
 
 The chapters in this section will demonstrate how to create such collections by implementing collection interfaces and how to bind grouping grid to these collections. 
 
-IList
+#### IList
 
 This section demonstrates implementation of a collection using ArrayList and shows how to bind this collection to a grouping grid. ArrayList is an implementation of IList that could be best defined as a hybrid of normal array and collection. It holds items in the order they were added. The items can be retrieved in any order via their index. As elements are added, the capacity of the ArrayList increases automatically. It allows null references and duplicate elements. Objects implementing IList interface should have at least one record for data rows to be created. Data rows correspond to data objects in the collection and the data columns represents properties of data.
 
@@ -21462,273 +21438,279 @@ Follow these steps to bind an array of custom objects to a grouping grid.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-public class Data
+		public class Data
 
-{
+		{
 
-    public Data() : this("", "", "")
+			public Data() : this("", "", "")
 
-    {
+			{
 
-    }
+			}
 
-    public Data(string cat_Id, string cat_Name, string desc)
+			public Data(string cat_Id, string cat_Name, string desc)
 
-    {
+			{
 
-this.cat_Id = cat_Id;
+		this.cat_Id = cat_Id;
 
-this.cat_Name = cat_Name;
+		this.cat_Name = cat_Name;
 
-this.desc = desc;
+		this.desc = desc;
 
-    }
+			}
 
-    private string cat_Name;
+			private string cat_Name;
 
-    public string CategoryName
+			public string CategoryName
 
-    {
+			{
 
-get
+		get
 
-{
+		{
 
-return this.cat_Name;
+		return this.cat_Name;
 
-}
+		}
 
-set
+		set
 
-{
+		{
 
-this.cat_Name = value;
+		this.cat_Name = value;
 
-}
+		}
 
-    }
+			}
 
-    private string desc;
+			private string desc;
 
-    public string Description
+			public string Description
 
-    {
+			{
 
-get
+		get
 
-{
+		{
 
-return this.desc;
+		return this.desc;
 
-}
+		}
 
-set
+		set
 
-{
+		{
 
-this.desc = value;
+		this.desc = value;
 
-}
+		}
 
-    }
+			}
 
-    private string cat_Id;
+			private string cat_Id;
 
-    public string CategoryID
+			public string CategoryID
 
-    {
+			{
 
-        get
+				get
 
-        {
+				{
 
-return this.cat_Id;
+		return this.cat_Id;
 
-        }
+				}
 
-        set
+				set
 
-        {
+				{
 
-this.cat_Id = value;
+		this.cat_Id = value;
 
-        }
+				}
 
-    }
+			}
 
-}
+		}
 
 
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Public Class Data
 
-Public Class Data
+		Public Sub New()
 
-Public Sub New()
+		Me.New("", "", "")
 
-Me.New("", "", "")
+		End Sub
 
-End Sub
 
 
+		Public Sub New(ByVal cat_Id As String, ByVal cat_Name As String, ByVal desc As String)
 
-Public Sub New(ByVal cat_Id As String, ByVal cat_Name As String, ByVal desc As String)
+		Me.cat_Id = cat_Id
 
-Me.cat_Id = cat_Id
+		Me.cat_Name = cat_Name
 
-Me.cat_Name = cat_Name
+		Me.desc = desc
 
-Me.desc = desc
+		End Sub
 
-End Sub
 
 
+		Private cat_Name As String
 
-Private cat_Name As String
+		Public Property CategoryName() As String
 
-Public Property CategoryName() As String
+		Get
 
-Get
+		Return Me.cat_Name
 
-Return Me.cat_Name
+		End Get
 
-End Get
+		Set(ByVal value As String)
 
-Set(ByVal value As String)
+		Me.cat_Name = Value
 
-Me.cat_Name = Value
+		End Set
 
-End Set
+		End Property
 
-End Property
 
 
+		Private desc As String
 
-Private desc As String
+		Public Property Description() As String
 
-Public Property Description() As String
+		Get
 
-Get
+		Return Me.desc
 
-Return Me.desc
+		End Get
 
-End Get
+		Set(ByVal value As String)
 
-Set(ByVal value As String)
+		Me.desc = Value
 
-Me.desc = Value
+		End Set
 
-End Set
+		End Property
 
-End Property
 
 
+		Private cat_Id As String
 
-Private cat_Id As String
+		Public Property CategoryID() As String
 
-Public Property CategoryID() As String
+		Get
 
-Get
+		Return Me.cat_Id
 
-Return Me.cat_Id
+		End Get
 
-End Get
+		Set(ByVal value As String)
 
-Set(ByVal value As String)
+		Me.cat_Id = Value
 
-Me.cat_Id = Value
+		End Set
 
-End Set
+		End Property
 
-End Property
+		End Class
 
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create an instance of ArrayList and add a list of Data type objects into it. This represents collection.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-using System;
+		using System;
 
-using System.Collections;
-
-
-
-ArrayList al = new ArrayList();
-
-al.Add(new Data("Condiments", "Charlotte Cooper","Bigfoot Breweries"));
-
-al.Add(new Data("Confections","Regina Murphy","Grandma Kelly's Homestead"));
-
-al.Add(new Data("Grains/Cereals","Jean-Guy Lauzon","Ma Maison"));
-
-al.Add(new Data("Meat/Poultry","Shelley Burke","New Orleans Cajun Delights"));
-
-al.Add(new Data("Produce", "Mayumi Ohno", "Mayumi's"));
-
-al.Add(new Data("Seafood", "Robb Merchant", "New England Seafood Cannery"));
+		using System.Collections;
 
 
 
-[VB.NET]
+		ArrayList al = new ArrayList();
+
+		al.Add(new Data("Condiments", "Charlotte Cooper","Bigfoot Breweries"));
+
+		al.Add(new Data("Confections","Regina Murphy","Grandma Kelly's Homestead"));
+
+		al.Add(new Data("Grains/Cereals","Jean-Guy Lauzon","Ma Maison"));
+
+		al.Add(new Data("Meat/Poultry","Shelley Burke","New Orleans Cajun Delights"));
+
+		al.Add(new Data("Produce", "Mayumi Ohno", "Mayumi's"));
+
+		al.Add(new Data("Seafood", "Robb Merchant", "New England Seafood Cannery"));
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-Imports System
+		Imports System
 
-Imports System.Collections
-
-
-
-Dim al As ArrayList = New ArrayList()
-
-al.Add(New Data("Condiments", "Charlotte Cooper", "Bigfoot Breweries"))
-
-al.Add(New Data("Confections", "Regina Murphy", "Grandma Kelly's Homestead"))
-
-al.Add(New Data("Grains/Cereals", "Jean-Guy Lauzon", "Ma Maison"))
-
-al.Add(New Data("Meat/Poultry", "Shelley Burke", "New Orleans Cajun Delights"))
-
-al.Add(New Data("Produce", "Mayumi Ohno", "Mayumi's"))
-
-al.Add(New Data("Seafood", "Robb Merchant", "New England Seafood Cannery"))
+		Imports System.Collections
 
 
+
+		Dim al As ArrayList = New ArrayList()
+
+		al.Add(New Data("Condiments", "Charlotte Cooper", "Bigfoot Breweries"))
+
+		al.Add(New Data("Confections", "Regina Murphy", "Grandma Kelly's Homestead"))
+
+		al.Add(New Data("Grains/Cereals", "Jean-Guy Lauzon", "Ma Maison"))
+
+		al.Add(New Data("Meat/Poultry", "Shelley Burke", "New Orleans Cajun Delights"))
+
+		al.Add(New Data("Produce", "Mayumi Ohno", "Mayumi's"))
+
+		al.Add(New Data("Seafood", "Robb Merchant", "New England Seafood Cannery"))
+
+   ~~~
+   {:.prettyprint }
 
 3. Assign this array list to the grouping grid's DataSource.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.DataSource = al;
+		this.gridGroupingControl1.DataSource = al;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.gridGroupingControl1.DataSource = al
 
-
-
-Me.gridGroupingControl1.DataSource = al
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Run the sample. Your grid will look similar to the one below.
 
@@ -21736,13 +21718,11 @@ Me.gridGroupingControl1.DataSource = al
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img281.jpeg)
+> Note: For more details, refer to the following browser sample:
 
-_Note: For more details, refer to the following browser sample:_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
-
-IBindingList
+#### IBindingList
 
 This section demonstrates implementation of IBindingList and how to bind this list to Grid Grouping control. As IBindingList derives from IList, it requires the implementation of all the members of the IList, ICollection and IEnumerable interfaces.
 
@@ -21760,14 +21740,12 @@ Follow these steps to create your own collection that implements IBindingList an
 4. Raise ListChanged event once the list is modified. 
 5. Make SupportChangeNotifications property to return true.
 6. Create an instance of Class2 and add a list of records into it. Then assign this list to DataSource of grouping grid.
-> 
-![](Grid-Controls_images/Grid-Controls_img282.jpeg)
 
-_Note: For the complete code refer the sample:_
+> Note: For the complete code refer the sample:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\IBindingList Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\IBindingList Demo_
 
-ITypedList
+#### ITypedList
 
 This section demonstrates implementation of ITypedList, which will be used for complex data binding. It is best to use this interface where you want a type to explicitly specify properties it exposes instead of letting TypeDescriptor to find out using reflection. The interface contains two methods: GetItemProperties and GetListName.
 
@@ -21781,239 +21759,242 @@ Follow the steps below to create a collection (Books Collection) that implements
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-class Book
+		class Book
 
-{
+		{
 
-    public Book(string bname, string author)
+			public Book(string bname, string author)
 
-    {
+			{
 
-        this.bookName = bname;
+				this.bookName = bname;
 
-        this.author = author;
+				this.author = author;
 
-    }
+			}
 
-    private string bookName;
+			private string bookName;
 
-    public string BookName
+			public string BookName
 
-    {
+			{
 
-        get
+				get
 
-        {
+				{
 
-            return this.bookName;
+					return this.bookName;
 
-        }
+				}
 
-        set
+				set
 
-        {
+				{
 
-            this.bookName = value;
+					this.bookName = value;
 
-        }
+				}
 
-    }
+			}
 
-    private string author;
+			private string author;
 
-    public string Author
+			public string Author
 
-    {
+			{
 
-        get
+				get
 
-        {
+				{
 
-            return this.author;
+					return this.author;
 
-        }
+				}
 
-        set
+				set
 
-        {
+				{
 
-            this.author = value;
+					this.author = value;
 
-        }
+				}
 
-    }
+			}
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Public Class Book
 
+		Public Sub New(ByVal bname As String, ByVal auth As String)
 
+		Me.bName = bname
 
-Public Class Book
+		Me.authr = auth
 
-Public Sub New(ByVal bname As String, ByVal auth As String)
+		End Sub
 
-Me.bName = bname
+		Private bname As String
 
-Me.authr = auth
+		Public Property BookName() As String
 
-End Sub
+		Get
 
-Private bname As String
+		Return Me.bname
 
-Public Property BookName() As String
+		End Get
 
-Get
+		Set
 
-Return Me.bname
+		Me.bname = Value
 
-End Get
+		End Set
 
-Set
+		End Property
 
-Me.bname = Value
+		Private authr As String
 
-End Set
+		Public Property Author() As String
 
-End Property
+		Get
 
-Private authr As String
+		Return Me.authr
 
-Public Property Author() As String
+		End Get
 
-Get
+		Set
 
-Return Me.authr
+		Me.authr = Value
 
-End Get
+		End Set
 
-Set
+		End Property
 
-Me.authr = Value
+		End Class
 
-End Set
-
-End Property
-
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create another class Books that inherits ArrayList class and implements ITypedList. A list of its instances will act as data store for grouping grid. Implement GetItemProperties and GetListName methods.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-public class Books : ArrayList, ITypedList
+		public class Books : ArrayList, ITypedList
 
-{
+		{
 
-    public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
+			public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
 
-    {
+			{
 
-        return TypeDescriptor.GetProperties(typeof(Book));
+				return TypeDescriptor.GetProperties(typeof(Book));
 
-    }
-
-
-
-    public string GetListName(PropertyDescriptor[] listAccessors)
-
-    {
-
-        return "Book";
-
-    }
-
-}
+			}
 
 
 
-[VB.NET]
+			public string GetListName(PropertyDescriptor[] listAccessors)
+
+			{
+
+				return "Book";
+
+			}
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-Public Class Books : Inherits ArrayList : Implements ITypedList
+		Public Class Books : Inherits ArrayList : Implements ITypedList
 
-Public Function GetItemProperties(ByVal listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection Implements ITypedList.GetItemProperties
+		Public Function GetItemProperties(ByVal listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection Implements ITypedList.GetItemProperties
 
-Return TypeDescriptor.GetProperties(GetType(Book))
+		Return TypeDescriptor.GetProperties(GetType(Book))
 
-End Function
-
-
-
-Public Function GetListName(ByVal listAccessors As PropertyDescriptor()) As String Implements ITypedList.GetListName
-
-Return "Book"
-
-End Function
-
-End Class
+		End Function
 
 
+
+		Public Function GetListName(ByVal listAccessors As PropertyDescriptor()) As String Implements ITypedList.GetListName
+
+		Return "Book"
+
+		End Function
+
+		End Class
+
+   ~~~
+   {:.prettyprint }
 
 3. Create an instance of Books and add a few records into it.
 
 
-
-[C#]
-
-
-
-Books MyBooks = new Books();
-
-MyBooks.Add(new Book("Computer Networks", "Tanenbaum"));
-
-MyBooks.Add(new Book("Data Structures", "Tremblay and Sorenson"));
-
-MyBooks.Add(new Book("Database Management", "Alexis Leon"));
+   ~~~ cs
 
 
 
-[VB.NET]
+		Books MyBooks = new Books();
+
+		MyBooks.Add(new Book("Computer Networks", "Tanenbaum"));
+
+		MyBooks.Add(new Book("Data Structures", "Tremblay and Sorenson"));
+
+		MyBooks.Add(new Book("Database Management", "Alexis Leon"));
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-Dim MyBooks As Books = New Books()
+		Dim MyBooks As Books = New Books()
 
-MyBooks.Add(New Book("Computer Networks", "Tanenbaum"))
+		MyBooks.Add(New Book("Computer Networks", "Tanenbaum"))
 
-MyBooks.Add(New Book("Data Structures", "Tremblay and Sorenson"))
+		MyBooks.Add(New Book("Data Structures", "Tremblay and Sorenson"))
 
-MyBooks.Add(New Book("Database Management", "Alexis Leon"))
+		MyBooks.Add(New Book("Database Management", "Alexis Leon"))
 
-
+   ~~~
+   {:.prettyprint }
 
 4. Assign this list to the grouping grid's DataSource.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.DataSource = MyBooks;
+		this.gridGroupingControl1.DataSource = MyBooks;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Me.GridGroupingControl1.DataSource = MyProducts
 
-
-
-Me.GridGroupingControl1.DataSource = MyProducts
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Run the sample. Given below is a sample screenshot.
 
@@ -22021,13 +22002,11 @@ Me.GridGroupingControl1.DataSource = MyProducts
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img284.jpeg)
+> Note: For more details, refer to the following browser sample:
 
-_Note: For more details, refer to the following browser sample:_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo_
-
-Strongly Typed Collections
+#### Strongly Typed Collections
 
 Grid Grouping control can be bound to a Strongly Typed Collection. Strongly Typed Collection is a collection that stores a Known Type. It can be viewed as an array of specific object. For example, suppose your application needs to store information about products in a factory, you could create a Strongly Typed collection of Product objects. 
 
@@ -22035,7 +22014,8 @@ Benefits
 
 * Since the collection knows the type of object, it does not need to type cast items between the type you are really storing and a generic object type stored in a collection.
 * If you are writing the code to manage collection items, then you can perform any other operation on the items that are being written into and read from the collection.
-Collection Base
+
+#### Collection Base
 
 
 This section demonstrates how to build a Strongly Typed Collection using CollectionBase class. Strongly Typed collection can be created by inheriting from the System.Collections.CollectionBase class. CollectionBase class implements IList, IListSource, and IEnumerable. These interfaces enable the users to implement methods and properties that support binding, enumerating, and looping using ForEach construct. The result is that your strongly typed collections can be bound directly to our grid grouping control as datasource.
@@ -22044,281 +22024,273 @@ This section demonstrates how to build a Strongly Typed Collection using Collect
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-class Product
+		class Product
 
-{
+		{
 
-    string productName, qtyPerUnit;
+			string productName, qtyPerUnit;
 
 
 
-    public Product(string name, string qty)
+			public Product(string name, string qty)
 
-    {
+			{
 
-        this.productName = name;
+				this.productName = name;
 
-        this.qtyPerUnit = qty;
+				this.qtyPerUnit = qty;
 
-    }
+			}
 
 
 
-    public string ProductName
+			public string ProductName
 
-    {
+			{
 
-        get
+				get
 
-        {
+				{
 
-            return productName;
+					return productName;
 
-        }
+				}
 
-        set
+				set
 
-        {
+				{
 
-            productName = value;
+					productName = value;
 
-        }
+				}
 
-    }
+			}
 
-    public string QuantityPerUnit
+			public string QuantityPerUnit
 
-    {
+			{
 
-        get
+				get
 
-        {
+				{
 
-            return qtyPerUnit;
+					return qtyPerUnit;
 
-        }
+				}
 
-        set
+				set
 
-        {
+				{
 
-            qtyPerUnit = value;
+					qtyPerUnit = value;
 
-        }
+				}
 
-    }
+			}
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		Class Product
 
+		Private ProdName As String 
 
+		Private QtyPerUnit As String
 
 
-[VB.NET]
 
+		Public Sub New(ByVal name As String, ByVal qty As String)
 
+		ProdName = name
 
-Class Product
+		QtyPerUnit = qty
 
-Private ProdName As String 
+		End Sub 
 
-Private QtyPerUnit As String
+		Public Property ProductName() As String 
 
+		Get
 
+		Return ProdName 
 
-Public Sub New(ByVal name As String, ByVal qty As String)
+		End Get 
 
-ProdName = name
+		Set(ByVal Value As String) 
 
-QtyPerUnit = qty
+		ProdName = Value
 
-End Sub 
+		End Set 
 
-Public Property ProductName() As String 
+		End Property     
 
-Get
+		Public Property QuantityPerUnit() As String 
 
-Return ProdName 
+		Get
 
-End Get 
+		Return QtyPerUnit 
 
-Set(ByVal Value As String) 
+		End Get 
 
-ProdName = Value
+		Set(ByVal Value As String) 
 
-End Set 
+		QtyPerUnit = Value
 
-End Property     
+		End Set 
 
-Public Property QuantityPerUnit() As String 
+		End Property  
 
-Get
+		End Class
 
-Return QtyPerUnit 
-
-End Get 
-
-Set(ByVal Value As String) 
-
-QtyPerUnit = Value
-
-End Set 
-
-End Property  
-
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create another class Product that derives the CollectionBase class. To make it Strongly Typed, add a default property that will return a typed object. Also, implement an ADD method.
 
 
 
-[C#]
+   ~~~ cs
+
+		using System;
+
+		using System.Collections;
+
+		class Products : CollectionBase
+
+		{
+
+		//Default Property.
+
+			public Product this[int index]
+
+			{
+
+				get { return (Product)List[index]; }
+
+				set { List[index] = (Product)value; }
+
+			}
 
 
 
-using System;
+			public int Add(Product item)
 
-using System.Collections;
+			{
 
-class Products : CollectionBase
+				return List.Add(item);
 
-{
+			}
 
-//Default Property.
+		}
 
-    public Product this[int index]
+   ~~~
+   {:.prettyprint }
 
-    {
+   ~~~ vbnet
 
-        get { return (Product)List[index]; }
+		Imports System
 
-        set { List[index] = (Product)value; }
-
-    }
-
-
-
-    public int Add(Product item)
-
-    {
-
-        return List.Add(item);
-
-    }
-
-}
+		Imports System.Collections
 
 
 
-[VB.NET]
+		Public Class Products
+
+		Inherits CollectionBase
 
 
 
-Imports System
+		//Using Default Property Indexer.
 
-Imports System.Collections
+		Default Public Property Item(ByVal Index As Integer) As Product 
 
+		Get 
 
+		Return CType(List.Item(Index), Product) 
 
-Public Class Products
+		End Get 
 
-Inherits CollectionBase
+		Set(ByVal Value As Product) 
 
+		List.Item(Index) = Value 
 
+		End Set 
 
-//Using Default Property Indexer.
-
-Default Public Property Item(ByVal Index As Integer) As Product 
-
-Get 
-
-Return CType(List.Item(Index), Product) 
-
-End Get 
-
-Set(ByVal Value As Product) 
-
-List.Item(Index) = Value 
-
-End Set 
-
-End Property 
+		End Property 
 
 
 
-Public Function Add(ByVal Item As Product) As Integer 
+		Public Function Add(ByVal Item As Product) As Integer 
 
-Return List.Add(Item) 
+		Return List.Add(Item) 
 
-End Function 
+		End Function 
 
-End Class 
+		End Class 
 
-
+   ~~~
+   {:.prettyprint }
 
 3. Create Products Collection by instantiating Products class and adding few records to it.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-Products MyProducts = new Products();
+		Products MyProducts = new Products();
 
-MyProducts.Add(new Product("Chai", "10 boxes x 20 bags"));
+		MyProducts.Add(new Product("Chai", "10 boxes x 20 bags"));
 
-MyProducts.Add(new Product("Aniseed Syrup", "12 - 550 ml bottles"));
+		MyProducts.Add(new Product("Aniseed Syrup", "12 - 550 ml bottles"));
 
-MyProducts.Add(new Product("Sir Rodney's Marmalade", "30 gift boxes"));
+		MyProducts.Add(new Product("Sir Rodney's Marmalade", "30 gift boxes"));
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Dim MyProducts As Products = New Products()
-
-MyProducts.Add(New Product("Chai", "10 boxes x 20 bags"))
-
-MyProducts.Add(New Product("Aniseed Syrup", "12 - 550 ml bottles"))
-
-MyProducts.Add(New Product("Sir Rodney's Marmalade", "30 gift boxes"))
+   ~~~ vbnet
 
 
+
+		Dim MyProducts As Products = New Products()
+
+		MyProducts.Add(New Product("Chai", "10 boxes x 20 bags"))
+
+		MyProducts.Add(New Product("Aniseed Syrup", "12 - 550 ml bottles"))
+
+		MyProducts.Add(New Product("Sir Rodney's Marmalade", "30 gift boxes"))
+
+   ~~~
+   {:.prettyprint }
 
 4. Finally assign this collection to the grouping grid's DataSource.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.DataSource = MyProducts;
+		this.gridGroupingControl1.DataSource = MyProducts;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		Me.GridGroupingControl1.DataSource = MyProducts
 
-
-
-
-[VB.NET]
-
-
-
-Me.GridGroupingControl1.DataSource = MyProducts
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Run the sample. Here is a sample screen shot.
 
@@ -22326,13 +22298,11 @@ Me.GridGroupingControl1.DataSource = MyProducts
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img286.jpeg)
+> Note: For more details, refer the following browser sample:
 
-_Note: For more details, refer the following browser sample:_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Collection Base Demo_
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Collection Base Demo_
-
-Generic Collection
+#### Generic Collection
 
 This section deals with implementation of Generic Collection. Generics refer to those classes, structure, methods, and interfaces that have place holders for the types they can contain or use. A generic collection class uses type parameters as place holders for the type of objects it stores, for the type of its fields, and the parameter types for its methods. The actual types are assigned to these place holders while creating the instances.
 
@@ -22354,423 +22324,425 @@ Follow the steps below to implement generic collection and bind it to our groupi
 
 1. Create a class (CustomClass) whose objects represent records, and properties represent the record fields. This class implements INotifyPropertyChanged interface in order to trigger the grid to react to changes in the list.
 
-[C#]
+   ~~~ cs
 
 
 
-public class CustomClass : INotifyPropertyChanged
+		public class CustomClass : INotifyPropertyChanged
 
-{
+		{
 
-    int id;
+			int id;
 
-    string first_name;
+			string first_name;
 
-    string last_name;
+			string last_name;
 
-    string address;
+			string address;
 
-    string city;
+			string city;
 
 
 
-    public CustomClass(int id,string fname,string lname,string addr,string city)
+			public CustomClass(int id,string fname,string lname,string addr,string city)
 
-    {
+			{
 
-        this.id = id;
+				this.id = id;
 
-        first_name = fname;
+				first_name = fname;
 
-        last_name = lname;
+				last_name = lname;
 
-        address = addr;
+				address = addr;
 
-        this.city = city;
+				this.city = city;
 
-    }
+			}
 
 
 
-    public int ID
+			public int ID
 
-    {
+			{
 
-        get { return id; }
+				get { return id; }
 
-        set 
+				set 
 
-        {
+				{
 
-            if (id != value)
+					if (id != value)
 
-            {
+					{
 
-                id = value;
+						id = value;
 
-                RaisePropertyChanged("ID");                   
+						RaisePropertyChanged("ID");                   
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
 
 
-    public string FirstName
+			public string FirstName
 
-    {
+			{
 
-        get { return first_name; }
+				get { return first_name; }
 
-        set 
+				set 
 
-        {
+				{
 
-            if (first_name != value)
+					if (first_name != value)
 
-            {
+					{
 
-                first_name = value;
+						first_name = value;
 
-                RaisePropertyChanged("FirstName"); 
+						RaisePropertyChanged("FirstName"); 
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
 
 
-    public string LastName
+			public string LastName
 
-    {
+			{
 
-        get { return last_name; }
+				get { return last_name; }
 
-        set 
+				set 
 
-        {
+				{
 
-            if (last_name != value)
+					if (last_name != value)
 
-            {
+					{
 
-                last_name = value;
+						last_name = value;
 
-                RaisePropertyChanged("LastName");
+						RaisePropertyChanged("LastName");
 
-            }
+					}
 
-            last_name = value; 
+					last_name = value; 
 
-        }
+				}
 
-    }
+			}
 
 
 
-    public string Address
+			public string Address
 
-    {
+			{
 
-        get { return address; }
+				get { return address; }
 
-        set 
+				set 
 
-        {
+				{
 
-            if (address != value)
+					if (address != value)
 
-            {
+					{
 
-                address = value;
+						address = value;
 
-                RaisePropertyChanged("Address");
+						RaisePropertyChanged("Address");
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
 
 
-    public string City
+			public string City
 
-    {
+			{
 
-        get { return city; }
+				get { return city; }
 
-        set 
+				set 
 
-        {
+				{
 
-            if (city != value)
+					if (city != value)
 
-            {
+					{
 
-                city = value;
+						city = value;
 
-                RaisePropertyChanged("City");
+						RaisePropertyChanged("City");
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
 
 
-    void RaisePropertyChanged(string name)
+			void RaisePropertyChanged(string name)
 
-    {
+			{
 
-        if (PropertyChanged != null)
+				if (PropertyChanged != null)
 
-        PropertyChanged(this, new PropertyChangedEventArgs(name));
+				PropertyChanged(this, new PropertyChangedEventArgs(name));
 
-    }
+			}
 
 
 
-//INotifyPropertyChanged Members.
+		//INotifyPropertyChanged Members.
 
-    public event PropertyChangedEventHandler PropertyChanged;
+			public event PropertyChangedEventHandler PropertyChanged;
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Public Class CustomClass : Implements INotifyPropertyChanged
 
-Public Class CustomClass : Implements INotifyPropertyChanged
+			Dim cusid As Integer
 
-    Dim cusid As Integer
+			Dim first_name As String, last_name As String, addr As String, cityname As String
 
-    Dim first_name As String, last_name As String, addr As String, cityname As String
 
 
+			Public Sub New(ByVal id As Integer, ByVal fname As String, ByVal lname As String, ByVal addr As String, ByVal city As String)
 
-    Public Sub New(ByVal id As Integer, ByVal fname As String, ByVal lname As String, ByVal addr As String, ByVal city As String)
+				Me.cusid = id
 
-        Me.cusid = id
+				Me.first_name = fname
 
-        Me.first_name = fname
+				Me.last_name = lname
 
-        Me.last_name = lname
+				Me.addr = addr
 
-        Me.addr = addr
+				Me.cityname = city
 
-        Me.cityname = city
+			End Sub
 
-    End Sub
 
 
+			Public Property ID() As Integer
 
-    Public Property ID() As Integer
+				Get
 
-        Get
+					Return cusid
 
-            Return cusid
+				End Get
 
-        End Get
+				Set(ByVal value As Integer)
 
-        Set(ByVal value As Integer)
+					If cusid <> value Then
 
-            If cusid <> value Then
+						cusid = value
 
-                cusid = value
+						RaisePropertyChanged("ID")
 
-                RaisePropertyChanged("ID")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property FirstName() As String
 
-    Public Property FirstName() As String
+				Get
 
-        Get
+					Return first_name
 
-            Return first_name
+				End Get
 
-        End Get
+				Set(ByVal value As String)
 
-        Set(ByVal value As String)
+					If first_name <> value Then
 
-            If first_name <> value Then
+						first_name = value
 
-                first_name = value
+						RaisePropertyChanged("FirstName")
 
-                RaisePropertyChanged("FirstName")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property LastName() As String
 
-    Public Property LastName() As String
+				Get
 
-        Get
+					Return last_name
 
-            Return last_name
+				End Get
 
-        End Get
+				Set(ByVal value As String)
 
-        Set(ByVal value As String)
+					If last_name <> value Then
 
-            If last_name <> value Then
+						last_name = value
 
-                last_name = value
+						RaisePropertyChanged("LastName")
 
-                RaisePropertyChanged("LastName")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property Address() As String
 
-    Public Property Address() As String
+				Get
 
-        Get
+					Return addr
 
-            Return addr
+				End Get
 
-        End Get
+				Set(ByVal value As String)
 
-        Set(ByVal value As String)
+					If addr <> value Then
 
-            If addr <> value Then
+						addr = value
 
-                addr = value
+						RaisePropertyChanged("Address")
 
-                RaisePropertyChanged("Address")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Public Property city() As String
 
-    Public Property city() As String
+				Get
 
-        Get
+					Return cityname
 
-            Return cityname
+				End Get
 
-        End Get
+				Set(ByVal value As String)
 
-        Set(ByVal value As String)
+					If cityname <> value Then
 
-            If cityname <> value Then
+						cityname = value
 
-                cityname = value
+						RaisePropertyChanged("City")
 
-                RaisePropertyChanged("City")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+		Sub RaisePropertyChanged(ByVal name As String)
 
-Sub RaisePropertyChanged(ByVal name As String)
+		RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
 
-RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
+		End Sub
 
-End Sub
 
 
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 
-Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 
 
+		End Class
 
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Instantiate BindingList <T> class by specifying the type of collection as CustomClass and add few records to it. This will create a collection of CustomClass type objects.
 
-[C#]
+   ~~~ cs
 
 
 
-using System.Collections.Generic;
+		using System.Collections.Generic;
 
 
 
-BindingList<CustomClass> bl = new BindingList<CustomClass>();
+		BindingList<CustomClass> bl = new BindingList<CustomClass>();
 
-bl.Add(new CustomClass(0101, "Charlotte", "Cooper", "49 Gilbert St.", "London"));
+		bl.Add(new CustomClass(0101, "Charlotte", "Cooper", "49 Gilbert St.", "London"));
 
-bl.Add(new CustomClass(0102, "Shelley", "Burke", "P.O. Box 78934", "New Orleans"));
+		bl.Add(new CustomClass(0102, "Shelley", "Burke", "P.O. Box 78934", "New Orleans"));
 
-bl.Add(new CustomClass(0103, "Regina", "Murphy", "707 Oxford Rd.", "Ann Arbor"));
+		bl.Add(new CustomClass(0103, "Regina", "Murphy", "707 Oxford Rd.", "Ann Arbor"));
 
-bl.Add(new CustomClass(0104, "Yoshi", "Nagase", "9-8 Sekimai Musashino-shi", "Tokyo"));
+		bl.Add(new CustomClass(0104, "Yoshi", "Nagase", "9-8 Sekimai Musashino-shi", "Tokyo"));
 
-bl.Add(new CustomClass(0105, "Mayumi", "Ohno", "Calle del Rosal 4", "Oviedo"));
+		bl.Add(new CustomClass(0105, "Mayumi", "Ohno", "Calle del Rosal 4", "Oviedo"));
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Imports System.Collections.Generic
 
+		Dim bl As BindingList(Of CustomClass) = New BindingList(Of CustomClass)()
 
+		bl.Add(New CustomClass(101, "Charlotte", "Cooper", "49 Gilbert St.", "London"))
 
-Imports System.Collections.Generic
+		bl.Add(New CustomClass(102, "Shelley", "Burke", "P.O. Box 78934", "New Orleans"))
 
+		bl.Add(New CustomClass(103, "Regina", "Murphy", "707 Oxford Rd.", "Ann Arbor"))
 
+		bl.Add(New CustomClass(104, "Yoshi", "Nagase", "9-8 Sekimai Musashino-shi", "Tokyo"))
 
-Dim bl As BindingList(Of CustomClass) = New BindingList(Of CustomClass)()
+		bl.Add(New CustomClass(105, "Mayumi", "Ohno", "Calle del Rosal 4", "Oviedo"))
 
-bl.Add(New CustomClass(101, "Charlotte", "Cooper", "49 Gilbert St.", "London"))
-
-bl.Add(New CustomClass(102, "Shelley", "Burke", "P.O. Box 78934", "New Orleans"))
-
-bl.Add(New CustomClass(103, "Regina", "Murphy", "707 Oxford Rd.", "Ann Arbor"))
-
-bl.Add(New CustomClass(104, "Yoshi", "Nagase", "9-8 Sekimai Musashino-shi", "Tokyo"))
-
-bl.Add(New CustomClass(105, "Mayumi", "Ohno", "Calle del Rosal 4", "Oviedo"))
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Assign this list to the grouping grid's DataSource.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.DataSource = bl;
+		this.gridGroupingControl1.DataSource = bl;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Me.GridGroupingControl1.DataSource = bl
 
-
-
-Me.GridGroupingControl1.DataSource = bl
+   ~~~
+   {:.prettyprint }
 
 4. Finally, run the sample. Your grid will look like this.
 
@@ -22778,13 +22750,11 @@ Me.GridGroupingControl1.DataSource = bl
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img288.jpeg)
+> Note: For more details, refer the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo_
 
-_Note: For more details, refer the following browser sample:_
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo_
-
-###### Unbound Mode
+#### Unbound Mode
 
 Grid Grouping control can be operated in Unbound Mode. In unbound mode, you can add your own columns to the grouping grid along with other bound columns.
 
@@ -22796,349 +22766,355 @@ The values must be saved somewhere because the grouping grid does not maintain a
 
 1. Create a Grid Grouping control and bind it to data store.
 
-[C#]
+   ~~~ cs
 
 
 
-private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
+		private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
 
 
 
-//Defines Grouping Grid.
+		//Defines Grouping Grid.
 
-this.gridGroupingControl1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
+		this.gridGroupingControl1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
 
-this.gridGroupingControl1.Size = new System.Drawing.Size(160,200 );
+		this.gridGroupingControl1.Size = new System.Drawing.Size(160,200 );
 
 
 
-//Creates Data Store.
+		//Creates Data Store.
 
-DataTable dt = new DataTable("MyTable");
+		DataTable dt = new DataTable("MyTable");
 
-int nCols = 2;
+		int nCols = 2;
 
-int nRows = 5;
+		int nRows = 5;
 
-for(int i = 0; i < nCols; i++)
+		for(int i = 0; i < nCols; i++)
 
-dt.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
+		dt.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
 
-for(int i = 0; i < nRows; ++i)
+		for(int i = 0; i < nRows; ++i)
 
-{
+		{
 
-DataRow dr = dt.NewRow();
+		DataRow dr = dt.NewRow();
 
-for(int j = 0; j < nCols; j++)
+		for(int j = 0; j < nCols; j++)
 
-dr[j] = string.Format("row{0} col{1}", i, j);
+		dr[j] = string.Format("row{0} col{1}", i, j);
 
-dt.Rows.Add(dr);
+		dt.Rows.Add(dr);
 
-}
+		}
 
 
 
-//Binds data source to grouping grid.
+		//Binds data source to grouping grid.
 
-this.gridGroupingControl1.DataSource = dt;
+		this.gridGroupingControl1.DataSource = dt;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		'Defines Grouping Grid.
 
-'Defines Grouping Grid.
+		Private gridGroupingControl1 
 
-Private gridGroupingControl1 
+		As Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl
 
-As Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl
 
 
+		Me.gridGroupingControl1 = 
 
-Me.gridGroupingControl1 = 
+		New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
 
-New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
+		Me.gridGroupingControl1.Size = New System.Drawing.Size(160,200 )
 
-Me.gridGroupingControl1.Size = New System.Drawing.Size(160,200 )
 
 
+		'Creates Data Store.
 
-'Creates Data Store.
+		Dim dt As DataTable = New DataTable("MyTable")
 
-Dim dt As DataTable = New DataTable("MyTable")
 
 
+		Dim nCols As Integer = 2
 
-Dim nCols As Integer = 2
+		Dim nRows As Integer = 5
 
-Dim nRows As Integer = 5
 
 
+		Dim i As Integer = 0
 
-Dim i As Integer = 0
+		Do While i < nCols
 
-Do While i < nCols
+		dt.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
 
-dt.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
+		i += 1
 
-i += 1
+		Loop
 
-Loop
 
 
+		i = 0
 
-i = 0
+		Do While i < nRows
 
-Do While i < nRows
+		Dim dr As DataRow = dt.NewRow()
 
-Dim dr As DataRow = dt.NewRow()
+		Dim j As Integer = 0
 
-Dim j As Integer = 0
+		Do While j < nCols
 
-Do While j < nCols
+		dr(j) = String.Format("row{0} col{1}", i, j)
 
-dr(j) = String.Format("row{0} col{1}", i, j)
+		j += 1
 
-j += 1
+		Loop
 
-Loop
+		dt.Rows.Add(dr)
 
-dt.Rows.Add(dr)
+		i += 1
 
-i += 1
+		Loop
 
-Loop
 
 
+		' Binds data source to grouping grid.
 
-' Binds data source to grouping grid.
+		Me.GridGroupingControl1.DataSource = dt
 
-Me.GridGroupingControl1.DataSource = dt
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create FieldDescriptor that well describes your custom column and adds it to UnboundFieldDescriptor collection of grouping grid.
 
-[C#]
+   ~~~ cs
 
 
 
-FieldDescriptor unboundField = new FieldDescriptor("CheckboxCol", "", false, "");
+		FieldDescriptor unboundField = new FieldDescriptor("CheckboxCol", "", false, "");
 
-unboundField.ReadOnly = false;
+		unboundField.ReadOnly = false;
 
-this.gridGroupingControl1.TableDescriptor.UnboundFields.Add(unboundField);
+		this.gridGroupingControl1.TableDescriptor.UnboundFields.Add(unboundField);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Dim unboundField As FieldDescriptor = New FieldDescriptor("CheckboxCol", "", False, "")
 
+		unboundField.ReadOnly = False
 
-
-Dim unboundField As FieldDescriptor = New FieldDescriptor("CheckboxCol", "", False, "")
-
-unboundField.ReadOnly = False
-
-Me.gridGroupingControl1.TableDescriptor.UnboundFields.Add(unboundField)
+		Me.gridGroupingControl1.TableDescriptor.UnboundFields.Add(unboundField)
+		
+   ~~~
+   {:.prettyprint }
 
 3. Setup check boxes in the unbound column. You can also customize unbound cells through Appearance property.
 
-[C#]
+   ~~~ cs
 
+		gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.CellType = "CheckBox";
 
+		gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.CheckedValue = "True";
 
-gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.CellType = "CheckBox";
+		gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.UncheckedValue = "False";
 
-gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.CheckedValue = "True";
+		gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center;
 
-gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.UncheckedValue = "False";
+		gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.VerticalAlignment = GridVerticalAlignment.Middle;
 
-gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center;
+   ~~~
+   {:.prettyprint }
 
-gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.VerticalAlignment = GridVerticalAlignment.Middle;
+   ~~~ vbnet
 
+		gridGroupingControl1.TableDescriptor.Columns("CheckboxCol").Appearance.AnyRecordFieldCell.CellType = "CheckBox"
 
+		gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.CheckedValue = "True"
 
-[VB.NET]
+		gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.UncheckedValue = "False"
 
+		gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center
 
+		gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.VerticalAlignment = GridVerticalAlignment.Middle
 
-gridGroupingControl1.TableDescriptor.Columns("CheckboxCol").Appearance.AnyRecordFieldCell.CellType = "CheckBox"
-
-gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.CheckedValue = "True"
-
-gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.CheckBoxOptions.UncheckedValue = "False"
-
-gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center
-
-gridGroupingControl1.TableDescriptor.Columns("CheckboxCol"].Appearance.AnyRecordFieldCell.VerticalAlignment = GridVerticalAlignment.Middle
-
+   ~~~
+   {:.prettyprint }
+   
 4. Handle QueryValue and SaveValue events to set and save the unbound values. Define a HashTable to store unbound values.
 
-[C#]
+   ~~~ cs
+
+		Hashtable unboundValues = new Hashtable();
 
 
 
-Hashtable unboundValues = new Hashtable();
+		private void gridGroupingControl1_QueryValue(object sender, FieldValueEventArgs e)
+
+		{
+
+			if (e.Field.Name == "CheckboxCol")
+
+			{
+
+				string key = e.Record.GetValue("Col1").ToString();
+
+				if (key != null)
+
+				{
+
+					object val = unboundValues[key];
+
+					e.Value = val;
+
+				}
+
+			}
+
+		}
 
 
 
-private void gridGroupingControl1_QueryValue(object sender, FieldValueEventArgs e)
+		private void gridGroupingControl1_SaveValue(object sender, FieldValueEventArgs e)
 
-{
+		{
 
-    if (e.Field.Name == "CheckboxCol")
+			if (e.Field.Name == "CheckboxCol")
 
-    {
+			{
 
-        string key = e.Record.GetValue("Col1").ToString();
+				string key = e.Record.GetValue("Col1").ToString();
 
-        if (key != null)
+				if (key != null)
 
-        {
+				{
 
-            object val = unboundValues[key];
+					object val = e.Value;
 
-            e.Value = val;
+					unboundValues[key] = val;
 
-        }
+				}
 
-    }
+			}
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
-
-private void gridGroupingControl1_SaveValue(object sender, FieldValueEventArgs e)
-
-{
-
-    if (e.Field.Name == "CheckboxCol")
-
-    {
-
-        string key = e.Record.GetValue("Col1").ToString();
-
-        if (key != null)
-
-        {
-
-            object val = e.Value;
-
-            unboundValues[key] = val;
-
-        }
-
-    }
-
-}
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Hashtable(unboundValues = New Hashtable())
 
 
 
-Hashtable(unboundValues = New Hashtable())
+		Private Sub gridGroupingControl1_QueryValue(ByVal sender As Object, ByVal e As FieldValueEventArgs) Handles gridGroupingControl1.QueryValue
+
+		If e.Field.Name = "CheckboxCol" Then
+
+		Dim key As String = e.Record.GetValue("Col1").ToString()
+
+		If Not key Is Nothing Then
+
+		Dim val As Object = unboundValues(key)
+
+		e.Value = val
+
+		End If
+
+		End If
+
+		End Sub
 
 
 
-Private Sub gridGroupingControl1_QueryValue(ByVal sender As Object, ByVal e As FieldValueEventArgs) Handles gridGroupingControl1.QueryValue
+		Private Sub gridGroupingControl1_SaveValue(ByVal sender As Object, ByVal e As FieldValueEventArgs) Handles gridGroupingControl1.SaveValue
 
-If e.Field.Name = "CheckboxCol" Then
+		If e.Field.Name = "CheckboxCol" Then
 
-Dim key As String = e.Record.GetValue("Col1").ToString()
+		Dim key As String = e.Record.GetValue("Col1").ToString()
 
-If Not key Is Nothing Then
+		If Not key Is Nothing Then
 
-Dim val As Object = unboundValues(key)
+		Dim val As Object = e.Value
 
-e.Value = val
+		unboundValues(key) = val
 
-End If
+		End If
 
-End If
+		End If
 
-End Sub
-
-
-
-Private Sub gridGroupingControl1_SaveValue(ByVal sender As Object, ByVal e As FieldValueEventArgs) Handles gridGroupingControl1.SaveValue
-
-If e.Field.Name = "CheckboxCol" Then
-
-Dim key As String = e.Record.GetValue("Col1").ToString()
-
-If Not key Is Nothing Then
-
-Dim val As Object = e.Value
-
-unboundValues(key) = val
-
-End If
-
-End If
-
-End Sub
+		End Sub
+		
+   ~~~
+   {:.prettyprint }
 
 5. Customize the unbound cells by handling the QueryCellStyleInfo event.
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.QueryCellStyleInfo += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(this.gridGroupingControl1_QueryCellStyleInfo);
+		this.gridGroupingControl1.QueryCellStyleInfo += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(this.gridGroupingControl1_QueryCellStyleInfo);
 
 
 
-private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
+		private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 
-{
+		{
 
-    if (e.TableCellIdentity.ColIndex == 3 && e.TableCellIdentity.RowIndex > 2)
+			if (e.TableCellIdentity.ColIndex == 3 && e.TableCellIdentity.RowIndex > 2)
 
-    {
+			{
 
-        if (e.TableCellIdentity.RowIndex % 4 == 0)
+				if (e.TableCellIdentity.RowIndex % 4 == 0)
 
-        e.Style.CellValue = false;
+				e.Style.CellValue = false;
 
-        else
+				else
 
-        e.Style.CellValue = true;
+				e.Style.CellValue = true;
 
-    }
+			}
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs) Handles gridGroupingControl1.QueryCellStyleInfo
 
+		If e.TableCellIdentity.ColIndex = 3 AndAlso e.TableCellIdentity.RowIndex > 2 Then
 
+		If e.TableCellIdentity.RowIndex Mod 4 = 0 Then
 
-Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs) Handles gridGroupingControl1.QueryCellStyleInfo
+		e.Style.CellValue = False
 
-If e.TableCellIdentity.ColIndex = 3 AndAlso e.TableCellIdentity.RowIndex > 2 Then
+		Else
 
-If e.TableCellIdentity.RowIndex Mod 4 = 0 Then
+		e.Style.CellValue = True
 
-e.Style.CellValue = False
+		End If
 
-Else
+		End If
 
-e.Style.CellValue = True
+		End Sub
 
-End If
-
-End If
-
-End Sub
-
-
+   ~~~
+   {:.prettyprint }
 
 6. Run the sample. Here is a sample screenshot.
 
@@ -23146,11 +23122,11 @@ End Sub
 
 
 
-##### Data Representation
+#### Data Representation
 
 This section deals with different layouts supported by grid grouping control. These layouts help grouping grid to organize data display. For example, if you want to view the data arranged based on values of a specific field, then you can group data columns by the required field.
 
-###### Grouping
+#### Grouping
 
 A Group represents a collection of records that belong to a category. Grid Grouping control allows the user to group data by one or more columns. When grouping is applied, data will be organized into a hierarchical structure based on the matching field values. Records having identical values in grouped column will be combined to form a group. Each group is identified by its GroupCaptionSection that can be expanded to bring underlying records into view. GroupCaptionSection carries information about a particular group like group name, number of items(records) in the group, etc. It also contains plus and minus buttons that allow the user to expand or collapse groups individually. By default, a grid table has one group.
 
@@ -23168,21 +23144,21 @@ The data can be grouped by adding the column name to TableDesriptor.GroupedColum
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title")
 
-
+{% endhighlight %}
 
 The grid below displays data columns from the Employees Table grouped by the values of Title field.
 
@@ -23194,21 +23170,17 @@ The grid below displays data columns from the Employees Table grouped by the val
 
 By default, the grouping of a column sorts records in the ascending order of their GroupedColumn values. It is possible to specify the sort order while grouping. The code below arranges the data in the descending order of their Title field values.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDirection.Descending);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDirection.Descending)
 
-
+{% endhighlight %}
 
 The screenshot below reflects this process.
 
@@ -23224,25 +23196,21 @@ GroupedColumns property of the desired ChildTableDescriptor. The code below show
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridGroupingControl1.TableDescriptor.Relations[0].ChildTableDescriptor.GroupedColumns.Add("CategoryName", ListSortDirection.Descending);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.TableDescriptor.Relations(0).ChildTableDescriptor.GroupedColumns.Add("CategoryName", ListSortDirection.Descending)
 
-> ![](Grid-Controls_images/Grid-Controls_img292.jpeg)
+{% endhighlight %}
 
-_Note: For more details, refer to the following browser sample:_
+> Note: For more details, refer to the following browser sample:
 
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
 
 Multi Column Grouping
 
@@ -23252,11 +23220,9 @@ Grid Grouping control provides inbuilt support to group the data by more than on
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img294.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Multi Column Grouping Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Multi Column Grouping Demo_
 
 Grouping Through Designer
 
@@ -23278,45 +23244,39 @@ Preventing a Column from Grouping
 
 To disallow a column being grouped, AllowGroupByColumn property should be set to False for that column. This property determines whether the grid can be grouped by a column when the user drags the column to GroupDropArea.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridGroupingControl1.TableDescriptor.Columns[0].AllowGroupByColumn = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.TableDescriptor.Columns(0).AllowGroupByColumn = False
+
+{% endhighlight %}
 
 Clearing Groups
 
 GroupedColumns.Clear() method will remove all the elements from GroupedColumns Collection and hence the data will get ungrouped.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
+
+{% endhighlight %}
 
 Removing a given Group
 
 GroupedColumns property provide two methods to remove a specific group from the collection. Remove() method deletes the column with a given name from GroupedColumns collection. As a result, the table data is ungrouped by that column. RemoveAt() method deletes the element at the specified index from the collection.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Removes the first element.
 
@@ -23328,10 +23288,9 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.RemoveAt(0);
 
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Remove("Title");
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 'Removes the first element.
@@ -23344,27 +23303,25 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.RemoveAt(0)
 
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Remove("Title")
 
-GroupDropArea
+{% endhighlight %}
+
+#### GroupDropArea
 
 GroupDropArea provides drop panel onto which the user can drag and drop the column headers to group table data by those columns. Its visibility can be controlled by ShowGroupDropArea property. Once it is set to true, a Drop Panel will be added at the top of the grouping grid.
 
 Following code example illustrates how to enable Group Drop Area.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridGroupingControl1.ShowGroupDropArea = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.ShowGroupDropArea = True
 
-
+{% endhighlight %}
 
 Here are runtime screens showing the effect of setting ShowGroupDropArea property.
 
@@ -23402,7 +23359,7 @@ ShowGroupDropArea property will enable GroupDropArea only for the table at the t
 
 In this example, the grid is bound to a hierarchical dataset containing three tables Categories, Products, and OrderDetails. The following code example illustrates how to add the group drop area for the child tables Products and OrderDetails.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23418,9 +23375,9 @@ this.groupingGrid1.AddGroupDropArea("Products");
 
 this.groupingGrid1.AddGroupDropArea("OrderDetails");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -23436,7 +23393,7 @@ Me.gridGroupingControl1.AddGroupDropArea("Products")
 
 Me.gridGroupingControl1.AddGroupDropArea("OrderDetails")
 
-
+{% endhighlight %}
 
 Given below is a sample screenshot.
 
@@ -23478,365 +23435,365 @@ In this example, grouping grid is built with hierarchical dataset created at run
 
 7. Formatting Splitter and GroupDropPanel.
 
-[C#]
+   ~~~ cs
+
+		//Splitter Color.
+
+		this.gridGroupingControl1.Splitter.BackColor = Color.Red;
 
 
 
-//Splitter Color.
+		//Panel Color.
 
-this.gridGroupingControl1.Splitter.BackColor = Color.Red;
+		this.gridGroupingControl1.GroupDropPanel.BackColor = Color.YellowGreen;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-//Panel Color.
+		'Splitter Color.
 
-this.gridGroupingControl1.GroupDropPanel.BackColor = Color.YellowGreen;
-
-
-
-[VB.NET]
-
-
-
-'Splitter Color.
-
-Private Me.gridGroupingControl1.Splitter.BackColor = Color.Red
+		Private Me.gridGroupingControl1.Splitter.BackColor = Color.Red
 
 
 
-'Panel Color.
+		'Panel Color.
 
-Private Me.gridGroupingControl1.GroupDropPanel.BackColor = Color.YellowGreen
-
+		Private Me.gridGroupingControl1.GroupDropPanel.BackColor = Color.YellowGreen
+   ~~~
+   {:.prettyprint }
 
 
 8. PrepareViewStyleInfo event for each of the grids can be hooked by looping through controls in the panel.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-foreach (Control ctl in this.gridGroupingControl1.GroupDropPanel.Controls)
+		foreach (Control ctl in this.gridGroupingControl1.GroupDropPanel.Controls)
 
-{
+		{
 
-    GridGroupDropArea groupDropArea = ctl as GridGroupDropArea;
-
-
-
-    switch (groupDropArea.Model.Table.TableDescriptor.Name)
-
-    {
-
-        case "ParentTable":
-
-        groupDropArea.Model.ColCount = 80;
-
-        groupDropArea.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(ParentTable_PrepareViewStyleInfo);
-
-        break;
+			GridGroupDropArea groupDropArea = ctl as GridGroupDropArea;
 
 
 
-        case "ChildTable":
+			switch (groupDropArea.Model.Table.TableDescriptor.Name)
 
-        groupDropArea.Model.ColCount = 80;
+			{
 
-        groupDropArea.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(ChildTable_PrepareViewStyleInfo);
+				case "ParentTable":
 
-        break;
+				groupDropArea.Model.ColCount = 80;
 
-    }
+				groupDropArea.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(ParentTable_PrepareViewStyleInfo);
 
-}
-
-
-
-[VB.NET]
+				break;
 
 
 
-Dim ctl As Control
+				case "ChildTable":
 
-For Each ctl In Me.gridGroupingControl1.GroupDropPanel.Controls
+				groupDropArea.Model.ColCount = 80;
 
-Dim groupDropArea As GridGroupDropArea = ctl
+				groupDropArea.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(ChildTable_PrepareViewStyleInfo);
 
-Select Case groupDropArea.Model.Table.TableDescriptor.Name
+				break;
 
-Case "ParentTable"
+			}
 
-groupDropArea.Model.ColCount = 80
+		}
 
-AddHandler groupDropArea.PrepareViewStyleInfo, AddressOf ParentTable_PrepareViewStyleInfo
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		Dim ctl As Control
+
+		For Each ctl In Me.gridGroupingControl1.GroupDropPanel.Controls
+
+		Dim groupDropArea As GridGroupDropArea = ctl
+
+		Select Case groupDropArea.Model.Table.TableDescriptor.Name
+
+		Case "ParentTable"
+
+		groupDropArea.Model.ColCount = 80
+
+		AddHandler groupDropArea.PrepareViewStyleInfo, AddressOf ParentTable_PrepareViewStyleInfo
 
 
 
-Case "ChildTable"
+		Case "ChildTable"
 
-groupDropArea.Model.ColCount = 80
+		groupDropArea.Model.ColCount = 80
 
-AddHandler groupDropArea.PrepareViewStyleInfo, AddressOf ChildTable_PrepareViewStyleInfo
+		AddHandler groupDropArea.PrepareViewStyleInfo, AddressOf ChildTable_PrepareViewStyleInfo
 
-End Select
+		End Select
 
-Next ctl
+		Next ctl
 
-
+   ~~~
+   {:.prettyprint }
 
 9. Setting the style properties in PrepareViewStyleInfo event.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-private void ParentTable_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
+		private void ParentTable_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
 
-{
+		{
 
-//Sets color to the text displaying table name.
+		//Sets color to the text displaying table name.
 
-    if (e.ColIndex == 2 && e.RowIndex == 2)
+			if (e.ColIndex == 2 && e.RowIndex == 2)
 
-    {
+			{
 
-        e.Style.Text = "ParentTable";
+				e.Style.Text = "ParentTable";
 
-        e.Style.Font.Bold = true;
+				e.Style.Font.Bold = true;
 
-        e.Style.BackColor = Color.YellowGreen;
+				e.Style.BackColor = Color.YellowGreen;
 
-        e.Style.TextColor = Color.Blue;			
+				e.Style.TextColor = Color.Blue;			
 
-        e.Style.CellType = "Static";
+				e.Style.CellType = "Static";
 
-        e.Style.HorizontalAlignment = GridHorizontalAlignment.Left;				
+				e.Style.HorizontalAlignment = GridHorizontalAlignment.Left;				
 
-        e.Style.Enabled = false;
+				e.Style.Enabled = false;
 
-    }
+			}
 
-//Sets color to the drop area.
+		//Sets color to the drop area.
 
-    else if (e.Style.Text.StartsWith("Drag a"))
+			else if (e.Style.Text.StartsWith("Drag a"))
 
-    {
+			{
 
-        e.Style.Text = "Drag and Drop Parent Table Column headers";
+				e.Style.Text = "Drag and Drop Parent Table Column headers";
 
-        e.Style.BackColor = Color.White;
+				e.Style.BackColor = Color.White;
 
-    }		
+			}		
 
-//Sets color to the dropped columns.
+		//Sets color to the dropped columns.
 
-    else if (e.Style.Text.StartsWith("Par"))
+			else if (e.Style.Text.StartsWith("Par"))
 
-    {
+			{
 
-        e.Style.BackColor = Color.Tomato;				
+				e.Style.BackColor = Color.Tomato;				
 
-        e.Style.Themed = false;
+				e.Style.Themed = false;
 
-    }
+			}
 
-//Sets color to the remaining part.
+		//Sets color to the remaining part.
 
-    else
+			else
 
-    e.Style.BackColor = Color.YellowGreen;			
+			e.Style.BackColor = Color.YellowGreen;			
 
-}
+		}
 
 
 
-private void ChildTable_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
+		private void ChildTable_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
 
-{
+		{
 
-//Sets color to the text displaying table name.
+		//Sets color to the text displaying table name.
 
-    if (e.ColIndex == 2 && e.RowIndex == 2)
+			if (e.ColIndex == 2 && e.RowIndex == 2)
 
-    {
+			{
 
-        e.Style.Text = "ChildTable ";
+				e.Style.Text = "ChildTable ";
 
-        e.Style.Font.Bold = true;
+				e.Style.Font.Bold = true;
 
-        e.Style.BackColor = Color.YellowGreen;
+				e.Style.BackColor = Color.YellowGreen;
 
-        e.Style.TextColor = Color.Yellow;	
+				e.Style.TextColor = Color.Yellow;	
 
-        e.Style.CellType = "Static";
+				e.Style.CellType = "Static";
 
-        e.Style.HorizontalAlignment = GridHorizontalAlignment.Left;				
+				e.Style.HorizontalAlignment = GridHorizontalAlignment.Left;				
 
-        e.Style.Enabled = false;
+				e.Style.Enabled = false;
 
-    }
+			}
 
-//Sets color to the drop area.
+		//Sets color to the drop area.
 
-    else if (e.Style.Text.StartsWith("Drag a"))
+			else if (e.Style.Text.StartsWith("Drag a"))
 
-    {
+			{
 
-        e.Style.Text = "Drag and Drop Parent Table Column headers";
+				e.Style.Text = "Drag and Drop Parent Table Column headers";
 
-        e.Style.BackColor = Color.Orange;
+				e.Style.BackColor = Color.Orange;
 
-        e.Style.TextColor = Color.White;
+				e.Style.TextColor = Color.White;
 
-    }
+			}
 
-//Sets color to the dropped columns.
+		//Sets color to the dropped columns.
 
-    else if (e.Style.Text.StartsWith("Child"))
+			else if (e.Style.Text.StartsWith("Child"))
 
-    {
+			{
 
-        e.Style.BackColor = Color.Orange;
+				e.Style.BackColor = Color.Orange;
 
-        e.Style.TextColor = Color.White;
+				e.Style.TextColor = Color.White;
 
-        e.Style.Themed = false;
+				e.Style.Themed = false;
 
-    }
+			}
 
-//Sets color to the remaining part.
+		//Sets color to the remaining part.
 
-    else
+			else
 
-    e.Style.BackColor = Color.YellowGreen;			
+			e.Style.BackColor = Color.YellowGreen;			
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Private Sub ParentTable_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
 
-Private Sub ParentTable_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
 
 
+		'Sets color to the text displaying table name.
 
-'Sets color to the text displaying table name.
+		If e.ColIndex = 2 AndAlso e.RowIndex = 2 Then
 
-If e.ColIndex = 2 AndAlso e.RowIndex = 2 Then
+		e.Style.Text = "ParentTable"
 
-e.Style.Text = "ParentTable"
+		e.Style.Font.Bold = True
 
-e.Style.Font.Bold = True
+		e.Style.BackColor = Color.YellowGreen
 
-e.Style.BackColor = Color.YellowGreen
+		e.Style.TextColor = Color.Blue
 
-e.Style.TextColor = Color.Blue
+		e.Style.CellType = "Static"
 
-e.Style.CellType = "Static"
+		e.Style.HorizontalAlignment = GridHorizontalAlignment.Left
 
-e.Style.HorizontalAlignment = GridHorizontalAlignment.Left
+		e.Style.Enabled = False
 
-e.Style.Enabled = False
 
 
+		'Sets color to the drop area.
 
-'Sets color to the drop area.
+		ElseIf e.Style.Text.StartsWith("Drag a") Then
 
-ElseIf e.Style.Text.StartsWith("Drag a") Then
+		e.Style.Text = "Drag and Drop Parent Table Column headers"
 
-e.Style.Text = "Drag and Drop Parent Table Column headers"
+		e.Style.BackColor = Color.White
 
-e.Style.BackColor = Color.White
 
 
+		'Sets color to the dropped columns.
 
-'Sets color to the dropped columns.
+		ElseIf e.Style.Text.StartsWith("Par") Then
 
-ElseIf e.Style.Text.StartsWith("Par") Then
+		e.Style.BackColor = Color.Tomato
 
-e.Style.BackColor = Color.Tomato
+		e.Style.Themed = False
 
-e.Style.Themed = False
 
 
+		'Sets color to the remaining part.
 
-'Sets color to the remaining part.
+		Else
 
-Else
+		e.Style.BackColor = Color.YellowGreen
 
-e.Style.BackColor = Color.YellowGreen
+		End If
 
-End If
+		End Sub
 
-End Sub
 
 
+		Private Sub ChildTable_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
 
-Private Sub ChildTable_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
 
 
+		'Sets color to the text displaying table name.
 
-'Sets color to the text displaying table name.
+		If e.ColIndex = 2 AndAlso e.RowIndex = 2 Then
 
-If e.ColIndex = 2 AndAlso e.RowIndex = 2 Then
+		e.Style.Text = "ChildTable "
 
-e.Style.Text = "ChildTable "
+		e.Style.Font.Bold = True
 
-e.Style.Font.Bold = True
+		e.Style.BackColor = Color.YellowGreen
 
-e.Style.BackColor = Color.YellowGreen
+		e.Style.TextColor = Color.Yellow
 
-e.Style.TextColor = Color.Yellow
+		e.Style.CellType = "Static"
 
-e.Style.CellType = "Static"
+		e.Style.HorizontalAlignment = GridHorizontalAlignment.Left
 
-e.Style.HorizontalAlignment = GridHorizontalAlignment.Left
+		e.Style.Enabled = False
 
-e.Style.Enabled = False
 
 
+		'Sets color to the drop area.
 
-'Sets color to the drop area.
+		ElseIf e.Style.Text.StartsWith("Drag a") Then
 
-ElseIf e.Style.Text.StartsWith("Drag a") Then
+		e.Style.Text = "Drag and Drop Parent Table Column headers"
 
-e.Style.Text = "Drag and Drop Parent Table Column headers"
+		e.Style.BackColor = Color.Orange
 
-e.Style.BackColor = Color.Orange
+		e.Style.TextColor = Color.White
 
-e.Style.TextColor = Color.White
 
 
+		'Sets color to the dropped columns.
 
-'Sets color to the dropped columns.
+		ElseIf e.Style.Text.StartsWith("Child") Then
 
-ElseIf e.Style.Text.StartsWith("Child") Then
+		e.Style.BackColor = Color.Orange
 
-e.Style.BackColor = Color.Orange
+		e.Style.TextColor = Color.White
 
-e.Style.TextColor = Color.White
+		e.Style.Themed = False
 
-e.Style.Themed = False
 
 
+		'Sets color to the remaining part.
 
-'Sets color to the remaining part.
+		Else
 
-Else
+		e.Style.BackColor = Color.YellowGreen
 
-e.Style.BackColor = Color.YellowGreen
+		End If
 
-End If
+		End Sub
 
-End Sub
-
-
+   ~~~
+   {:.prettyprint }
 
 10. Here is a sample output.
 
@@ -23903,21 +23860,24 @@ Adding Hierarchical GroupDropArea to an Application
 
 To enable this feature, HierarchicalGroupDropArea property must be set to true.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridGroupingControl1.HierarchicalGroupDropArea = true;   
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.HierarchicalGroupDropArea = True
 
+{% endhighlight %}
+
 To enable other features supported within hierarchical GroupDropArea, the following properties can be used:
 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -23937,9 +23897,9 @@ this.gridGroupingControl1.GridGroupDropArea.DynamicResizing = true;
 
 this_.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red;_   
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -23959,7 +23919,7 @@ Me.gridGroupingControl1.GridGroupDropArea.DynamicResizing = True
 
 Me.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red 
 
-
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img303.png)
 
@@ -23971,13 +23931,11 @@ By default, GroupDropArea is displayed at the top of the Grid Grouping control. 
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img304.jpeg)
-
-_Note: For GroupDropAreaAlignment property to take effect, HierarchicalGroupDropArea property must be set to false._
+> Note: For GroupDropAreaAlignment property to take effect, HierarchicalGroupDropArea property must be set to false.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24003,9 +23961,9 @@ this.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Bo
 
 this.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Right;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24031,7 +23989,7 @@ Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Bott
 
 Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Right;
 
-
+{% endhighlight %}
 
 The following screen shot shows GroupDropArea postioned at the top of Grid Grouping control.
 
@@ -24043,7 +24001,7 @@ The following screen shot shows GroupDropArea postioned at the left of Grid Grou
 
 ![](Grid-Controls_images/Grid-Controls_img306.png)
 
-_Figure_ _376_: GroupDropArea aligned at the Left_
+_Figure_ _376_: GroupDropArea aligned at the Left
 
 
 
@@ -24061,11 +24019,11 @@ The following screen shot shows GroupDropArea postioned at the right of Grid Gro
 
 For more information on setting the alignment of GroupDropArea, see 
 
-<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\
+_&lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Grouping.Windows\_
 
 Samples\Grouping\Grouping Demo.
 
-GroupByOptions
+#### GroupByOptions
 
 Grid Grouping control provides a number of options that allows you to control the look and behavior of the groups. You can control the caption text, where and if AddNew row will be displayed and whether captions, headers, footers, preview rows and summaries will be displayed.
 
@@ -24171,9 +24129,10 @@ Indicates whether to treat all indent cells for a group as a single covered cell
 ShowCaptionSummaryCells</td><td>
 Indicates whether a group caption should display summaries in columns instead of only one large caption bar.</td></tr>
 </table>
+
 Next chapter in this section discuss these properties in detail with a suitable example.
 
-Working with Group Elements
+####  Working with Group Elements
 
 This section explores various properties that can be used to manipulate different group elements.
 
@@ -24181,10 +24140,10 @@ Group Headers and Footers
 
 The headers and footers of a group can be used to display any information that is common to all elements of that group. You can toggle the display of these headers and footers by using the boolean properties given below.
 
-* <GroupOptions>.ShowGroupHeader
-* <GroupOptions>.ShowGroupFooter
+* &lt;GroupOptions&gt;.ShowGroupHeader
+* &lt;GroupOptions&gt;.ShowGroupFooter
 
-where <GroupOptions> can be any one of the following: TopLevelGroupOptions to affect only the top most group, ChildGroupOptions to affect the child groups, or NestedTableGroupOptions to affect the groups in nested tables.
+where GroupOptions can be any one of the following: TopLevelGroupOptions to affect only the top most group, ChildGroupOptions to affect the child groups, or NestedTableGroupOptions to affect the groups in nested tables.
 
 You can also set header and footer attributes such as HeaderSectionHeight and FooterSectionHeight by using the properties given below.
 
@@ -24199,7 +24158,7 @@ Group headers and footers can be populated by handling QueryCellStyleInfo event 
 
 GroupPreviewRows
 
-GroupPreviewSection is the suitable place when you want to display memo fields or add custom notes for a given group. It can be enabled by setting <GroupOptions>.ShowGroupPreview property to True. You can adjust the size of preview row through TableOptions.GroupPreviewSectionHeight property. QueryCellStyleInfo event can be used to populate preview rows.
+GroupPreviewSection is the suitable place when you want to display memo fields or add custom notes for a given group. It can be enabled by setting &lt;GroupOptions&gt;.ShowGroupPreview property to True. You can adjust the size of preview row through TableOptions.GroupPreviewSectionHeight property. QueryCellStyleInfo event can be used to populate preview rows.
 
 ![](Grid-Controls_images/Grid-Controls_img310.jpeg)
 
@@ -24209,8 +24168,8 @@ AddNew Records
 
 Each group can optionally have an AddNew row where you can provide the values for a new record. Once a new record is entered, the record will be sorted into the existing record set and will be assigned a group's category automatically. The visibility of the AddNewRecord can be controlled through the following two boolean properties.
 
-* <GroupOptions>.ShowAddNewRecordBeforeDetails - adds the AddNew row at the top of a group.
-* <GroupOptions>.ShowAddNewRecordAfterDetails - adds the AddNew row at the bottom of a group.
+* &lt;GroupOptions&gt;.ShowAddNewRecordBeforeDetails - adds the AddNew row at the top of a group.
+* &lt;GroupOptions&gt;.ShowAddNewRecordAfterDetails - adds the AddNew row at the bottom of a group.
 
 ![](Grid-Controls_images/Grid-Controls_img311.jpeg)
 
@@ -24220,8 +24179,8 @@ GroupCaptionSection
 
 This is the first section within a group that provides a caption bar above column headers. GroupCaptionRows are unbound rows that are created only to combine records into a group. By default, they display group category and the number of items in that group. The following properties can be used to control CaptionSection display.
 
-* <GroupOptions>.ShowCaption - enables the display of caption section; True by default. 
-* <GroupOptions>.CaptionText - used to get and set caption text.
+* &lt;GroupOptions&gt;.ShowCaption - enables the display of caption section; True by default. 
+* &lt;GroupOptions&gt;.CaptionText - used to get and set caption text.
 
 ![](Grid-Controls_images/Grid-Controls_img312.jpeg)
 
@@ -24276,201 +24235,199 @@ Here is a sample implementation that illustrates usage of the above properties.
 1. Set up a Grid Grouping control and bind a data source into it.
 2. Setup the necessary Group Options as required.
 
-
-
-[C#]
-
-
-
-//Group Options Setting.
-
-this.gridGroupingControl1.ShowGroupDropArea = true;
-
-this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupHeader = true;
-
-this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupFooter = true;
-
-this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true;
-
-this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupPreview = true;
-
-this.gridGroupingControl1.ChildGroupOptions.ShowGroupPreview = true;
-
-this.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 30;
-
-this.gridGroupingControl1.TableOptions.GroupHeaderSectionHeight = 30;
-
-this.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 25;
-
-this.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordBeforeDetails = true;
-
-this.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordAfterDetails = true;
-
-this.gridGroupingControl1.ChildGroupOptions.CaptionText = "There are {RecordCount} items under {CategoryName} : {Category}";
+   ~~~ cs
 
 
 
-[VB.NET]
+		//Group Options Setting.
 
+		this.gridGroupingControl1.ShowGroupDropArea = true;
 
+		this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupHeader = true;
 
-'Group Options Setting.
+		this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupFooter = true;
 
-Me.gridGroupingControl1.ShowGroupDropArea = True
+		this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true;
 
-Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupHeader = True
+		this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupPreview = true;
 
-Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupFooter = True
+		this.gridGroupingControl1.ChildGroupOptions.ShowGroupPreview = true;
 
-Me.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = True
+		this.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 30;
 
-Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupPreview = True
+		this.gridGroupingControl1.TableOptions.GroupHeaderSectionHeight = 30;
 
-Me.gridGroupingControl1.ChildGroupOptions.ShowGroupPreview = True
+		this.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 25;
 
-Me.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 30
+		this.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordBeforeDetails = true;
 
-Me.gridGroupingControl1.TableOptions.GroupHeaderSectionHeight = 30
+		this.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordAfterDetails = true;
 
-Me.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 25
+		this.gridGroupingControl1.ChildGroupOptions.CaptionText = "There are {RecordCount} items under {CategoryName} : {Category}";
 
-Me.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordBeforeDetails = True
+   ~~~
+   {:.prettyprint }
 
-Me.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordAfterDetails = True
+   ~~~ vbnet
 
-Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "There are {RecordCount} items under {CategoryName} : {Category}"
+		'Group Options Setting.
 
+		Me.gridGroupingControl1.ShowGroupDropArea = True
 
+		Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupHeader = True
+
+		Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupFooter = True
+
+		Me.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = True
+
+		Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupPreview = True
+
+		Me.gridGroupingControl1.ChildGroupOptions.ShowGroupPreview = True
+
+		Me.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 30
+
+		Me.gridGroupingControl1.TableOptions.GroupHeaderSectionHeight = 30
+
+		Me.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 25
+
+		Me.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordBeforeDetails = True
+
+		Me.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordAfterDetails = True
+
+		Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "There are {RecordCount} items under {CategoryName} : {Category}"
+
+   ~~~
+   {:.prettyprint }
 
 3. Handle the QueryCellStyleInfo event to manipulate the group elements.
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
+		this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 
 
 
-void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
+		void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 
-{
+		{
 
-    if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupFooterSectionCell || e.TableCellIdentity.TableCellType == GridTableCellType.GroupHeaderSectionCell)
+			if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupFooterSectionCell || e.TableCellIdentity.TableCellType == GridTableCellType.GroupHeaderSectionCell)
 
-    {
+			{
 
-        e.Style.Enabled = false;
+				e.Style.Enabled = false;
 
-        if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupFooterSectionCell)
+				if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupFooterSectionCell)
 
-        e.Style.Text = "The details in the footer can be placed by enabling ShowGroupFooter and handling QueryCellStyleInfo";
+				e.Style.Text = "The details in the footer can be placed by enabling ShowGroupFooter and handling QueryCellStyleInfo";
 
-        if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupHeaderSectionCell)
+				if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupHeaderSectionCell)
 
-        e.Style.Text = "The details in the header can be placed by enabling ShowGroupHeader and handling QueryCellStyleInfo";
+				e.Style.Text = "The details in the header can be placed by enabling ShowGroupHeader and handling QueryCellStyleInfo";
 
-    }
-
-
-
-    if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupPreviewCell)
-
-    {
-
-        Element el = e.TableCellIdentity.DisplayElement;
-
-        e.Style.CellValue = "Preview notes for Group (" + el.ParentGroup.Name + ": " + el.ParentGroup.Category.ToString() + ")";
-
-    }
-
-}
+			}
 
 
 
-[VB.NET]
+			if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupPreviewCell)
+
+			{
+
+				Element el = e.TableCellIdentity.DisplayElement;
+
+				e.Style.CellValue = "Preview notes for Group (" + el.ParentGroup.Name + ": " + el.ParentGroup.Category.ToString() + ")";
+
+			}
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs) Handles gridGroupingControl1.QueryCellStyleInfo
+		Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs) Handles gridGroupingControl1.QueryCellStyleInfo
 
 
 
-If e.TableCellIdentity.TableCellType = GridTableCellType.GroupFooterSectionCell OrElse e.TableCellIdentity.TableCellType = GridTableCellType.GroupHeaderSectionCell Then
+		If e.TableCellIdentity.TableCellType = GridTableCellType.GroupFooterSectionCell OrElse e.TableCellIdentity.TableCellType = GridTableCellType.GroupHeaderSectionCell Then
 
-e.Style.Enabled = False
+		e.Style.Enabled = False
 
-If e.TableCellIdentity.TableCellType = GridTableCellType.GroupFooterSectionCell Then
+		If e.TableCellIdentity.TableCellType = GridTableCellType.GroupFooterSectionCell Then
 
-e.Style.Text = "The details in the footer can be placed by enabling ShowGroupFooter and handling QueryCellStyleInfo"
+		e.Style.Text = "The details in the footer can be placed by enabling ShowGroupFooter and handling QueryCellStyleInfo"
 
-End If
+		End If
 
-If e.TableCellIdentity.TableCellType = GridTableCellType.GroupHeaderSectionCell Then
+		If e.TableCellIdentity.TableCellType = GridTableCellType.GroupHeaderSectionCell Then
 
-e.Style.Text = "The details in the header can be placed by enabling ShowGroupHeader and handling QueryCellStyleInfo"
+		e.Style.Text = "The details in the header can be placed by enabling ShowGroupHeader and handling QueryCellStyleInfo"
 
-End If
+		End If
 
-End If
-
-
-
-If e.TableCellIdentity.TableCellType = GridTableCellType.GroupPreviewCell Then
-
-Dim el As Element = e.TableCellIdentity.DisplayElement
-
-e.Style.CellValue = "Preview notes for Group (" & el.ParentGroup.Name & ": " & el.ParentGroup.Category.ToString() & ")"
-
-End If
-
-End Sub
+		End If
 
 
+
+		If e.TableCellIdentity.TableCellType = GridTableCellType.GroupPreviewCell Then
+
+		Dim el As Element = e.TableCellIdentity.DisplayElement
+
+		e.Style.CellValue = "Preview notes for Group (" & el.ParentGroup.Name & ": " & el.ParentGroup.Category.ToString() & ")"
+
+		End If
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 4. You can control the appearance of different group elements by using Appearance property.
 
-
-
-[C#]
-
-
-
-this.gridGroupingControl1.Appearance.AddNewRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(255, 255, 192));
-
-this.gridGroupingControl1.Appearance.GroupCaptionCell.Interior = new BrushInfo(SystemColors.Control);
-
-this.gridGroupingControl1.Appearance.GroupCaptionCell.TextColor = Color.FromArgb(192, 64, 0);
-
-this.gridGroupingControl1.Appearance.GroupFooterSectionCell.Interior = new BrushInfo(Color.Pink);
-
-this.gridGroupingControl1.Appearance.GroupHeaderSectionCell.Interior = new BrushInfo(Color.Pink);
-
-this.gridGroupingControl1.Appearance.GroupIndentCell.Interior = new BrushInfo(Color.FromArgb(192, 192, 255));
-
-this.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 192));
+   ~~~ cs
 
 
 
-[VB.NET]
+		this.gridGroupingControl1.Appearance.AddNewRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(255, 255, 192));
 
+		this.gridGroupingControl1.Appearance.GroupCaptionCell.Interior = new BrushInfo(SystemColors.Control);
 
+		this.gridGroupingControl1.Appearance.GroupCaptionCell.TextColor = Color.FromArgb(192, 64, 0);
 
-Me.gridGroupingControl1.Appearance.AddNewRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(255, 255, 192))
+		this.gridGroupingControl1.Appearance.GroupFooterSectionCell.Interior = new BrushInfo(Color.Pink);
 
-Me.gridGroupingControl1.Appearance.GroupCaptionCell.Interior = New BrushInfo(SystemColors.Control)
+		this.gridGroupingControl1.Appearance.GroupHeaderSectionCell.Interior = new BrushInfo(Color.Pink);
 
-Me.gridGroupingControl1.Appearance.GroupCaptionCell.TextColor = Color.FromArgb(192, 64, 0)
+		this.gridGroupingControl1.Appearance.GroupIndentCell.Interior = new BrushInfo(Color.FromArgb(192, 192, 255));
 
-Me.gridGroupingControl1.Appearance.GroupFooterSectionCell.Interior = New BrushInfo(Color.Pink)
+		this.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 192));
 
-Me.gridGroupingControl1.Appearance.GroupHeaderSectionCell.Interior = New BrushInfo(Color.Pink)
+   ~~~
+   {:.prettyprint }
 
-Me.gridGroupingControl1.Appearance.GroupIndentCell.Interior = New BrushInfo(Color.FromArgb(192, 192, 255))
+   ~~~ vbnet
 
-Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 192))
+		Me.gridGroupingControl1.Appearance.AddNewRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(255, 255, 192))
 
+		Me.gridGroupingControl1.Appearance.GroupCaptionCell.Interior = New BrushInfo(SystemColors.Control)
 
+		Me.gridGroupingControl1.Appearance.GroupCaptionCell.TextColor = Color.FromArgb(192, 64, 0)
+
+		Me.gridGroupingControl1.Appearance.GroupFooterSectionCell.Interior = New BrushInfo(Color.Pink)
+
+		Me.gridGroupingControl1.Appearance.GroupHeaderSectionCell.Interior = New BrushInfo(Color.Pink)
+
+		Me.gridGroupingControl1.Appearance.GroupIndentCell.Interior = New BrushInfo(Color.FromArgb(192, 192, 255))
+
+		Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 192))
+
+   ~~~
+   {:.prettyprint }
 
 5. Run the sample and group the table against any data column. Here is a sample screen shot that shows the grouped grid against 'Sport' column.
 
@@ -24480,14 +24437,13 @@ Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Col
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img314.jpeg)
+> Note: For more details, refer to the following browser samples:
+>
+> * &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Top-Level-Group Options Demo
+> * &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Child-Group Options Demo
+> * &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Nested-Table Group Options Demo
 
-_Note: For more details, refer to the following browser samples:_
-
-* _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Top-Level-Group Options Demo_
-* _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Child-Group Options Demo_
-* _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Nested-Table Group Options Demo_
-Working with Groups
+#### Working with Groups
 
 
 This section best demonstrates how to work with group rows and also shows how the groups are organized into a grouping grid. Grouping Grid architecture can be viewed as a binary where different grid elements like group rows, summary rows, filter rows, etc. form the nodes of the tree having data records at the bottom as leaf nodes. A group can be a final node with records or it can be a node with nested groups rooting a sub tree.
@@ -24498,7 +24454,7 @@ Expanding or Collapsing Groups
 
 All the groups can be expanded as well as collapsed at once by calling the respective methods, Table.ExpandAllGroups and Table.CollapseAllGroups. To expand or collapse a specific group, set Group.IsExpanded property to true or false respectively. Following code example illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24524,12 +24480,9 @@ this.gridGroupingControl1.Table.TopLevelGroup.Groups[3].IsExpanded = true;
 
 this.gridGroupingControl1.Table.TopLevelGroup.Groups[4].IsExpanded = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
-
+{% highlight vbnet %}
 
 
 'Expands all groups.
@@ -24554,7 +24507,7 @@ Me.gridGroupingControl1.Table.TopLevelGroup.Groups(3).IsExpanded = True
 
 Me.gridGroupingControl1.Table.TopLevelGroup.Groups(4).IsExpanded = False
 
-
+{% endhighlight %}
 
 Accessing a Given Group
 
@@ -24564,7 +24517,7 @@ Accessing all the groups
 
 Table.TopLevelGroup is the topmost group in a grouping grid. It forms the root node of the group hierarchy where its categorized records and nested groups form the child nodes. To access all the groups, you can make use of the same IterateThrough method by passing TopLevelGroup as the method parameter. Then this method will loop through categorized records and nested groups of the top level group and will print details of all the groups.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24612,9 +24565,9 @@ public void IterateThrough(Group g)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24656,27 +24609,27 @@ Next gr
 
 End Sub
 
-
+{% endhighlight %}
 
 Accessing the group for a given record
 
 It is the grid.Table object that provides access to the records and the grouped elements. The Table.Records collection returns a read only collection of the data records. The following code can be used to get access to the group for a particular record. Record.ParentGroup property is used to obtain the group that a record belongs to.
 
-[C#]
+{% highlight c# %}
 
 
 
 System.Diagnostics.Trace.WriteLine(this.gridGroupingControl1.Table.Records[3].ParentGroup.Info);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 System.Diagnostics.Trace.WriteLine(Me.gridGroupingControl1.Table.Records(3).ParentGroup.Info)
 
-Events
+{% endhighlight %}
+
+#### Events
 
 This section discusses some of the important events that could be handled to catch grouping actions. Below is a list of such events.
 
@@ -24727,7 +24680,8 @@ Example
 The GroupedColumns Changing/Changed events get fired when the list is modified i.e. when any item is added, removed, or modified. It accepts an argument of type ListPropertyChangedEventArgs that lets you check the reason for a list change. The reason could be ItemAdded, ItemInserted, ItemRemoved, ItemModified, ItemMoved, ItemPropertyChanged, or the whole collection is modified.
 
 The following code examples show you how to capture the events. 
-[C#]
+
+{% highlight c# %}
 
 
 
@@ -24771,9 +24725,9 @@ Console.WriteLine("Column Removed - {0}", scd.Name);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24815,7 +24769,7 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 GroupExpanding/GroupExpanded and GroupCollapsing/GroupCollapsed event handlers are best to use when you want to do some actions as a result of the group operations, GroupExpand, and GroupCollapse.
 
@@ -24827,7 +24781,7 @@ It is possible to get notified of the changes in table descriptors other than th
 
 Following code example illustrates the usage of this method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -24897,9 +24851,9 @@ base.Engine_PropertyChanging (sender, e);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -24955,27 +24909,25 @@ MyBase.Engine_PropertyChanging(sender, e)
 
 End Sub
 
-Freezing the Caption Row
+{% endhighlight %}
+
+#### Freezing the Caption Row
 
 Grid Grouping control provides support to freeze Caption Row to make sure it stays visible while scrolling content to the left or right. With FreezeCaption property, you can freeze or unfreeze the Caption Row in the Grid Grouping control. A frozen Caption Cell belongs to the GroupCaptionCell Cell Type. Visual Style of the Caption Cell Type is based on Visual Style of Grid Grouping control. Caption Cell text can be changed according to user requirements.
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridgroupingcontrol.FreezeCaption = true
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridgroupingcontrol.FreezeCaption = True
 
-
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img315.png)
 
@@ -24989,11 +24941,11 @@ Me.gridgroupingcontrol.FreezeCaption = True
 
 
 
-To view a sample on Freezing the Caption Row, see <Installed Location>\Syncfusion\EssentialStudio
+To view a sample on Freezing the Caption Row, see &lt;Installed Location&gt;\Syncfusion\EssentialStudio
 
-\<Version>\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Demo
+\&lt;Version&gt;\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Demo
 
-###### Sorting
+#### Sorting
 
 Grid Grouping control allows you to sort table data against one or more columns. The number of columns by which data can be sorted is unlimited. When sorting is applied, grid will rearrange data to match the current sort criteria.
 
@@ -25012,36 +24964,33 @@ At design time, data can be sorted by accessing SortedColumns property under Tab
 ![](Grid-Controls_images/Grid-Controls_img317.jpeg)
 
 
-
-
-
 Programmatic Sorting
 
 Sorting can be applied to the grid data by specifying the desired field name to the TableDescriptor.SortedColumns.Add() method.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridGroupingControl1.TableDescriptor.SortedColumns.Add("ProductName");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("ProductName")
 
-
+{% endhighlight %}
 
 Multicolumn Sorting can be achieved by adding field names into SortedColumns property and optionally specifying sort direction. The following code example sorts data by ProductName and UnitPrice in ascending Order and by column Quantity in descending Order.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25051,9 +25000,9 @@ this.gridGroupingControl1.TableDescriptor.SortedColumns.Add("QuantityPerUnit", L
 
 this.gridGroupingControl1.TableDescriptor.SortedColumns.Add("UnitPrice", ListSortDirection.Ascending);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25063,7 +25012,7 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("QuantityPerUnit", Lis
 
 Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("UnitPrice", ListSortDirection.Ascending)
 
-
+{% endhighlight %}
 
 Here is a sample output. To indicate sort direction, a sort icon will be displayed in the column headers. When multicolumn sorting is applied, an index number will be displayed in the column headers along with sort icon that facilitates sort order. In the example below, the order of sorting would be ProductName(0), Quantity(1) and then UnitPrice(2). 
 
@@ -25071,19 +25020,15 @@ Here is a sample output. To indicate sort direction, a sort icon will be display
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img319.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Multi Column Sorting Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Multi Column Sorting Demo_
 
 Sorting By Display Member
 
 Grid Grouping control sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foriegn-key reference relation between related tables. 
 
-> ![](Grid-Controls_images/Grid-Controls_img320.jpeg)
-
-_Note: A foreign-key reference relation allows the user to look up values in a related table using an id column in the main table._
+> Note: A foreign-key reference relation allows the user to look up values in a related table using an id column in the main table.
 
 The following code example illustrates the usage of foreign-key relation:
 
@@ -25091,159 +25036,155 @@ The following code example illustrates the usage of foreign-key relation:
 
 
 
-[C#]
+   ~~~ cs
+
+		GridTableDescriptor td = this.gridGroupingControl1.TableDescriptor; td.VisibleColumns.LoadDefault();
+
+		int lookUpIndex = td.VisibleColumns.IndexOf("Customer");
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-GridTableDescriptor td = this.gridGroupingControl1.TableDescriptor; td.VisibleColumns.LoadDefault();
+		Dim td As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
 
-int lookUpIndex = td.VisibleColumns.IndexOf("Customer");
+		td.VisibleColumns.LoadDefault()
 
+		Dim lookUpIndex As Integer = td.VisibleColumns.IndexOf("Customer")
 
-
-[VB.NET]
-
-
-
-Dim td As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
-
-td.VisibleColumns.LoadDefault()
-
-Dim lookUpIndex As Integer = td.VisibleColumns.IndexOf("Customer")
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Add foreign table to the Engine's source list.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView);
+		this.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView)
 
-
-
-Me.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView)
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Create and setup RelationKind.ForeignKeyReference relation. 
 
 
 
-[C#]
+   ~~~ cs
 
+		GridRelationDescriptor rd = new GridRelationDescriptor();
 
+		rd.Name = "CustomerColDisplay";
 
-GridRelationDescriptor rd = new GridRelationDescriptor();
+		rd.RelationKind = RelationKind.ForeignKeyReference;
 
-rd.Name = "CustomerColDisplay";
+		rd.ChildTableName = ForeignTableName;
 
-rd.RelationKind = RelationKind.ForeignKeyReference;
+   ~~~
+   {:.prettyprint }
 
-rd.ChildTableName = ForeignTableName;
+   ~~~ vbnet
 
+		Dim rd As GridRelationDescriptor = New GridRelationDescriptor()
 
+		rd.Name = "CustomerColDisplay"
 
-[VB.NET]
+		rd.RelationKind = RelationKind.ForeignKeyReference
 
+		rd.ChildTableName = ForeignTableName
 
-
-Dim rd As GridRelationDescriptor = New GridRelationDescriptor()
-
-rd.Name = "CustomerColDisplay"
-
-rd.RelationKind = RelationKind.ForeignKeyReference
-
-rd.ChildTableName = ForeignTableName
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Set any optional properties on the relation. 
 
 
 
-[C#]
+   ~~~ cs
+
+		//Displays column.     
+
+		rd.ChildTableDescriptor.VisibleColumns.Add("CustomerName");
 
 
 
-//Displays column.     
+		//Sorts it for dropdown display.
 
-rd.ChildTableDescriptor.VisibleColumns.Add("CustomerName");
+		rd.ChildTableDescriptor.SortedColumns.Add("CustomerName");
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-//Sorts it for dropdown display.
+		'Displays column.    
 
-rd.ChildTableDescriptor.SortedColumns.Add("CustomerName");
-
-
-
-[VB.NET]
-
-
-
-'Displays column.    
-
-rd.ChildTableDescriptor.VisibleColumns.Add("CustomerName")
+		rd.ChildTableDescriptor.VisibleColumns.Add("CustomerName")
 
 
 
-'Sorts it for dropdown display. 
+		'Sorts it for dropdown display. 
 
-rd.ChildTableDescriptor.SortedColumns.Add("CustomerName")
+		rd.ChildTableDescriptor.SortedColumns.Add("CustomerName")
 
-
+   ~~~
+   {:.prettyprint }
 
 5. Add relation descriptor to MainTableDescriptor. 
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-td.Relations.Add(rd); 
+		td.Relations.Add(rd); 
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		td.Relations.Add(rd)
 
-
-
-td.Relations.Add(rd)
-
-
+   ~~~
+   {:.prettyprint }
 
 6. Replace mainTable.Customer with foreignTable.CustomerName.    
 
 
 
-[C#]
+   ~~~ cs
 
+		string foreignCustomerColInMainTable = rd.Name + "_" + "CustomerName"; 
 
+		td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable);
 
-string foreignCustomerColInMainTable = rd.Name + "_" + "CustomerName"; 
+   ~~~
+   {:.prettyprint }
 
-td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable);
+   ~~~ vbnet
 
+		Dim foreignCustomerColInMainTable As String = rd.Name & "_" & "CustomerName"
 
+		td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 
-[VB.NET]
-
-
-
-Dim foreignCustomerColInMainTable As String = rd.Name & "_" & "CustomerName"
-
-td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
-
-
+   ~~~
+   {:.prettyprint }
 
 7. Run the application. The following output is generated.
 
@@ -25253,11 +25194,9 @@ td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 
 In the figure above, CustomerName column is displayed in Foreign Table whereas a column named Customer is located in the Main Table. Customer column holds key values that match the values in a column named CustomerID in the Foreign Table.
 
-> ![](Grid-Controls_images/Grid-Controls_img322.jpeg)
+> Note: For more details, refer to the following browser sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sort By Display Member Demo
 
-_Note: For more details, refer to the following browser sample: <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sort By Display Member Demo_
-
-Enable or Disable Sorting
+#### Enable or Disable Sorting
 
 By default, Grouping Grid supports automatic sorting. When you want to disable this automatic sorting, you can use the following methods to prevent sorting on specific columns. 
 
@@ -25275,7 +25214,7 @@ Sorting specified columns can also be controlled by handling TableControlQueryAl
 
 The following code example prevents sorting on CompanyName field.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25297,9 +25236,9 @@ private void gridGroupingControl1_TableControlQueryAllowSortColumn(object sender
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25315,15 +25254,13 @@ End If
 
 End Sub
 
+{% endhighlight %}
 
+> Note: For more details, refer to the following browser sample:_
+>
+>_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
 
-> ![](Grid-Controls_images/Grid-Controls_img324.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
-
-###### Summaries
+#### Summaries
 
 Grid Grouping control allows you to display summaries for each group. Summaries lets you derive additional information from your data like averages, maximums, summations, count, and so on. For instance, you can get number of records, maximum value, etc. They display calculation results in separate display rows. The calculation of summary values is very fast with only O(log2 n) operations (n being the number of records in the table), because of highly optimized balanced tree structures used in the grouping engine.
 
@@ -25363,89 +25300,87 @@ This example shows a grouping grid bound with Statistics table whose columns are
 
 
 
-[C#]
+   ~~~ cs
 
+		GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor();
 
+		scd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 162));
 
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor();
+		scd.DataMember = "wins";
 
-scd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 162));
+		scd.Format = "{Sum}";
 
-scd.DataMember = "wins";
+		scd.Name = "TotalWins";
 
-scd.Format = "{Sum}";
+		scd.SummaryType = SummaryType.Int32Aggregate;
 
-scd.Name = "TotalWins";
+   ~~~
+   {:.prettyprint }
 
-scd.SummaryType = SummaryType.Int32Aggregate;
+   ~~~ vbnet
 
+		Dim scd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor()
 
+		scd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 162))
 
-[VB.NET]
+		scd.DataMember = "wins"
 
+		scd.Format = "{Sum}"
 
+		scd.Name = "TotalWins"
 
-Dim scd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor()
+		scd.SummaryType = SummaryType.Int32Aggregate
 
-scd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 162))
-
-scd.DataMember = "wins"
-
-scd.Format = "{Sum}"
-
-scd.Name = "TotalWins"
-
-scd.SummaryType = SummaryType.Int32Aggregate
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Define a SummaryRow and add SummaryColumn into it.
 
 
 
-[C#]
+   ~~~ cs
 
+		GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor();
 
+		srd.SummaryColumns.Add(scd);
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor();
+		srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
 
-srd.SummaryColumns.Add(scd);
+   ~~~
+   {:.prettyprint }
 
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
+   ~~~ vbnet
 
+		Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor()
 
+		srd.SummaryColumns.Add(scd)
 
-[VB.NET]
+		srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162))
 
-
-
-Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor()
-
-srd.SummaryColumns.Add(scd)
-
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162))
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Finally add Summary Row into the grouping grid.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+		this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-[VB.NET]
+		Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
 
-
-
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Run the sample. The grid will look like this.
 
@@ -25453,13 +25388,11 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img327.jpeg)
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Getting Started_
 
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Getting Started_
-
-Exploring Summaries
+#### Exploring Summaries
 
 In the previous chapter, you learnt how to create simple summaries for a grid table. This chapter will explore the different forms of summaries. It is possible to have multiple summary rows for a single data table. We can define summary for each group and also for each table when nested tables are used.
 
@@ -25467,7 +25400,7 @@ Multicolumn Summaries
 
 A Summary Row can have any number of summary columns. To display summaries for more than one field, you must first create summary columns for the desired fields. Then add those summary columns into a summary row. The code given below illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25493,9 +25426,9 @@ srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 
 
 this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25521,19 +25454,21 @@ srd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 
 
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
 
+{% endhighlight %}
+
 Here is a sample screenshot displaying the summaries for the columns wins and losses.
 
 ![](Grid-Controls_images/Grid-Controls_img328.jpeg)
 
 
 
-MultiRow Summaries
+#### MultiRow Summaries
 
 Grouping Grid allows you to have summaries for more than one row. It is achieved by defining the required number of summary row descriptors. Each of the summary rows can have its own format for calculating summaries. Here is an example that shows how to add two different summary rows for a grid table.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25567,9 +25502,9 @@ srd2.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231,
 
 this.gridGroupingControl1.TableDescriptor.SummaryRows.AddRange(new GridSummaryRowDescriptor[] { srd1, srd2 });
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25603,7 +25538,7 @@ srd2.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231,
 
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.AddRange(New GridSummaryRowDescriptor() {srd1, srd2})
 
-
+{% endhighlight %}
 
 Given below is a sample screenshot.
 
@@ -25617,7 +25552,7 @@ Summaries for Nested Tables and Groups
 
 For example, if your datasource has two tables nested, Orders and Order Details, with summaries for the parent table. The summaries that are set for the top level table are sufficient enough for the groups. You need to define summary rows only for child tables. It can be achieved by creating summaries through ChildTableDescriptor. The following code illustrates this process.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25647,9 +25582,9 @@ srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162);
 
 this.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(srd);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -25679,7 +25614,7 @@ srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162)
 
 Me.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(srd)
 
-
+{% endhighlight %}
 
 Here is a sample screen shot.
 
@@ -25687,11 +25622,9 @@ Here is a sample screen shot.
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img331.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Nested-Table and Group Summary Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Nested-Table and Group Summary Demo_
 
 Summary In Caption
 
@@ -25731,291 +25664,299 @@ Steps to create Caption Summaries
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-//Adds Summaries.
+		//Adds Summaries.
 
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
+		GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Sum", "$", scd);
+		GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Sum", "$", scd);
 
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+		srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
 
-srd.Appearance.AnyCell.BackColor = Color.Cornsilk;
+		srd.Appearance.AnyCell.BackColor = Color.Cornsilk;
 
-this.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(srd);
-
-
-
-this.gridGroupingControl1.ShowGroupDropArea = true;
-
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("RequiredDate");
+		this.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(srd);
 
 
 
-[VB.NET]
+		this.gridGroupingControl1.ShowGroupDropArea = true;
+
+		this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("RequiredDate");
+
+   ~~~
+   {:.prettyprint }
+
+
+   ~~~ vbnet
+
+		'Adds Summaries.
+
+		Dim scd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
+
+		Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor("Sum", "$", scd)
+
+		srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
+
+		srd.Appearance.AnyCell.BackColor = Color.Cornsilk
+
+		Me.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(srd)
 
 
 
-'Adds Summaries.
+		Me.gridGroupingControl1.ShowGroupDropArea = True
 
-Dim scd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
+		Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("RequiredDate")
 
-Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor("Sum", "$", scd)
-
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
-
-srd.Appearance.AnyCell.BackColor = Color.Cornsilk
-
-Me.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(srd)
-
-
-
-Me.gridGroupingControl1.ShowGroupDropArea = True
-
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("RequiredDate")
-
+   ~~~
+   {:.prettyprint }
 
 
 2. Enable Caption Summaries by setting ShowCaptionSummaryCells to True and by turning off ShowSummaries property that will disable creation of additional summary rows.
 
-
-
-[C#]
-
-
-
-//Creates summaries in caption.
-
-this.gridGroupingControl1.ChildGroupOptions.ShowCaptionSummaryCells = true;
-
-this.gridGroupingControl1.ChildGroupOptions.ShowSummaries = false;
+   ~~~ cs
 
 
 
-[VB.NET]
+		//Creates summaries in caption.
+
+		this.gridGroupingControl1.ChildGroupOptions.ShowCaptionSummaryCells = true;
+
+		this.gridGroupingControl1.ChildGroupOptions.ShowSummaries = false;
+
+   ~~~
+   {:.prettyprint }
+
+
+   ~~~ cs
 
 
 
-'Creates summaries in caption.
+		'Creates summaries in caption.
 
-Me.gridGroupingControl1.ChildGroupOptions.ShowCaptionSummaryCells = True
+		Me.gridGroupingControl1.ChildGroupOptions.ShowCaptionSummaryCells = True
 
-Me.gridGroupingControl1.ChildGroupOptions.ShowSummaries = False
+		Me.gridGroupingControl1.ChildGroupOptions.ShowSummaries = False
 
+   ~~~
+   {:.prettyprint }
 
 
 3. Once caption summaries are enabled, your next step is to specify a summary to be displayed in the Caption Rows. This is done by assigning summary name to CaptionSummaryRow property. Optionally you can customize caption text in the way you need.
 
 
 
-[C#]
+   ~~~ cs
+
+		this.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum";
+
+		this.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items";
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
+		Me.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum"
 
-this.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum";
+		Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items"
+		
+   ~~~
+   {:.prettyprint }
 
-this.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items";
-
-
-
-[VB.NET]
-
-
-
-Me.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum"
-
-Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items"
 
 4. Finally, format the caption rows to improve the look and feel.
 
-[C#]
+   ~~~ cs
 
 
 
-//Provides a good look and enables Caption Summary Cells as Record Field Cells.
+		//Provides a good look and enables Caption Summary Cells as Record Field Cells.
 
-this.gridGroupingControl1.Appearance.GroupCaptionCell.BackColor = this.gridGroupingControl1.Appearance.RecordFieldCell.BackColor;
+		this.gridGroupingControl1.Appearance.GroupCaptionCell.BackColor = this.gridGroupingControl1.Appearance.RecordFieldCell.BackColor;
 
-this.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Top = new GridBorder(GridBorderStyle.Standard);
+		this.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Top = new GridBorder(GridBorderStyle.Standard);
 
-this.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static";
+		this.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static";
 
-
-
-[VB.NET]
-
+   ~~~
+   {:.prettyprint }
 
 
-'Provides a good look and enables Caption Summary Cells as Record Field Cells.
+   ~~~ vbnet
 
-Me.gridGroupingControl1.Appearance.GroupCaptionCell.BackColor = Me.gridGroupingControl1.Appearance.RecordFieldCell.BackColor
 
-Me.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Top = New GridBorder(GridBorderStyle.Standard)
 
-Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
+		'Provides a good look and enables Caption Summary Cells as Record Field Cells.
 
+		Me.gridGroupingControl1.Appearance.GroupCaptionCell.BackColor = Me.gridGroupingControl1.Appearance.RecordFieldCell.BackColor
+
+		Me.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Top = New GridBorder(GridBorderStyle.Standard)
+
+		Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
+
+   ~~~
+   {:.prettyprint }
 
 
 5. When you run the sample, your grid will look similar to this.
 
-![](Grid-Controls_images/Grid-Controls_img332.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img332.jpeg)
 
 
 
 
 
-Here is another screenshot that shows the grouping grid with Caption Summaries disabled.
+	Here is another screenshot that shows the grouping grid with Caption Summaries disabled.
 
-![](Grid-Controls_images/Grid-Controls_img333.jpeg)
+	![](Grid-Controls_images/Grid-Controls_img333.jpeg)
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img334.jpeg)
+	> Note: For more details, refer to the following browser sample:
+	>
+	> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Caption Summary Demo_
 
-_Note: For more details, refer to the following browser sample:_
+   #### Sort By Summary In Caption
 
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Caption Summary Demo_
+	This section illustrates how to sort groups by values of the summary. By default, when grouping is applied, it sorts records by the values of grouped column. When you want to change this default group and make grouping sort records by the values of group summaries, thre are a couple of ways to achieve this. You can use your own custom comparer to define the sort order. An alternate solution is to make use of built-in method, that is specially designed to use in this scenario, named SetGroupSummaryOrder. 
 
-Sort By Summary In Caption
+	SetGroupSummaryOrder Method
 
-This section illustrates how to sort groups by values of the summary. By default, when grouping is applied, it sorts records by the values of grouped column. When you want to change this default group and make grouping sort records by the values of group summaries, thre are a couple of ways to achieve this. You can use your own custom comparer to define the sort order. An alternate solution is to make use of built-in method, that is specially designed to use in this scenario, named SetGroupSummaryOrder. 
+	This method will set up a custom comparer for sorting groups to enable groups to be sorted in a different order. It can be defined for a given column say, Col1 by passing the summary name, property in the summary and optionally sort direction as parameters. It makes use of these parameters to retrieve summary values and then pass these values to a custom comparer, which sets up a sort order based on these summary values. When the grid is grouped against column Col1, then groups are sorted in the order specified by the custom comparer instead of sorting by default order.
 
-SetGroupSummaryOrder Method
+	Example
 
-This method will set up a custom comparer for sorting groups to enable groups to be sorted in a different order. It can be defined for a given column say, Col1 by passing the summary name, property in the summary and optionally sort direction as parameters. It makes use of these parameters to retrieve summary values and then pass these values to a custom comparer, which sets up a sort order based on these summary values. When the grid is grouped against column Col1, then groups are sorted in the order specified by the custom comparer instead of sorting by default order.
+	This example uses an Orders Table bound to a grouping grid. Summaries are created for the column Freight. The group caption cells are made to display group summaries for Freight column. Now, our goal is to sort the table against ShipCountry field with data records arranged based on caption summaries i.e. groups are sorted against the summary values rather than the category.
 
-Example
-
-This example uses an Orders Table bound to a grouping grid. Summaries are created for the column Freight. The group caption cells are made to display group summaries for Freight column. Now, our goal is to sort the table against ShipCountry field with data records arranged based on caption summaries i.e. groups are sorted against the summary values rather than the category.
-
-Follow these steps to sort groups by summary values.
+	Follow these steps to sort groups by summary values.
 
 6. Define Summary Column Descriptor for column Freight and add it to SummaryRow of Orders table.
 
+   ~~~ cs
+
+		GridSummaryColumnDescriptor summaryColumn1 = new GridSummaryColumnDescriptor("FreightAverage", SummaryType.DoubleAggregate, "Freight", "{Average:###.00}");
+
+		GridSummaryRowDescriptor summaryRow1 = new GridSummaryRowDescriptor();
+
+		summaryRow1.Name = "Caption";
+
+		summaryRow1.SummaryColumns.Add(summaryColumn1);
+
+		this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1);
+
+   ~~~
+   {:.prettyprint }
 
 
-[C#]
+   ~~~ vbnet
 
+		Dim summaryColumn1 As New GridSummaryColumnDescriptor("FreightAverage", SummaryType.DoubleAggregate, "Freight", "{Average:###.00}")
 
+		Dim summaryRow1 As New GridSummaryRowDescriptor()
 
-GridSummaryColumnDescriptor summaryColumn1 = new GridSummaryColumnDescriptor("FreightAverage", SummaryType.DoubleAggregate, "Freight", "{Average:###.00}");
+		summaryRow1.Name = "Caption"
 
-GridSummaryRowDescriptor summaryRow1 = new GridSummaryRowDescriptor();
+		summaryRow1.SummaryColumns.Add(summaryColumn1)
 
-summaryRow1.Name = "Caption";
+		Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1)
+		
+   ~~~
+   {:.prettyprint }
 
-summaryRow1.SummaryColumns.Add(summaryColumn1);
-
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1);
-
-
-
-[VB.NET]
-
-
-
-Dim summaryColumn1 As New GridSummaryColumnDescriptor("FreightAverage", SummaryType.DoubleAggregate, "Freight", "{Average:###.00}")
-
-Dim summaryRow1 As New GridSummaryRowDescriptor()
-
-summaryRow1.Name = "Caption"
-
-summaryRow1.SummaryColumns.Add(summaryColumn1)
-
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1)
 
 7. Trigger caption summaries by setting appropriate properties.
 
-[C#]
+   ~~~ cs
+
+		this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowCaptionSummaryCells = true;
+
+		this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "Caption";
+
+		this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = false;
+
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowCaptionSummaryCells = true;
+		Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowCaptionSummaryCells = True
 
-this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "Caption";
+		Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "Caption"
 
-this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = false;
+		Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
+		
+   ~~~
+   {:.prettyprint }
 
-
-
-[VB.NET]
-
-
-
-Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowCaptionSummaryCells = True
-
-Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "Caption"
-
-Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 
 8. Create SortColumnDescriptor for the field ShipCountry. Change default group order by using SetGroupSummaryOrder method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
 
-[C#]
+   ~~~ cs
 
 
 
-//Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
+		//Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
 
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
+		this.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
 
-SortColumnDescriptor gsd = new SortColumnDescriptor("ShipCountry");
-
-
-
-//Specifies a summary name and the property (values will be determined using reflection).
-
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
+		SortColumnDescriptor gsd = new SortColumnDescriptor("ShipCountry");
 
 
 
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd);
+		//Specifies a summary name and the property (values will be determined using reflection).
+
+		gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
 
 
 
-[VB.NET]
+		this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd);
+
+   ~~~
+   {:.prettyprint }
+
+
+   ~~~ vbnet
+
+		'Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns
+
+		Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
+
+		Dim gsd As New SortColumnDescriptor("ShipCountry")
 
 
 
-'Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns
+		'Specifies a summary name and property (values will be determined using reflection)
 
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
-
-Dim gsd As New SortColumnDescriptor("ShipCountry")
+		gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
 
 
 
-'Specifies a summary name and property (values will be determined using reflection)
+		Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd)
 
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
-
-
-
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd)
-
+   ~~~
+   {:.prettyprint }
 
 
 9. When you run the sample, you will see the groups sorted against summary values of Freight. Here is a sample screen shot.
 
 ![](Grid-Controls_images/Grid-Controls_img335.jpeg)
 
+> Note: For more details, refer the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Sort by Summary Demo_
 
-
-> ![](Grid-Controls_images/Grid-Controls_img336.jpeg)
-
-_Note: For more details, refer the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Sort by Summary Demo_
-
-###### Filters and Expressions
+#### Filters and Expressions
 
 Grouping Grid supports record filters and expression fields. Record Filters let you display subset of records that meets a given filter criteria. Expression Fields are unbound fields added to the grouping grid that can be used to display any calculation results based on other fields in the same record.
 
 Further topics in this section discusses these concepts in detail with suitable examples.
 
-Expression Fields
+#### Expression Fields
 
 Expression Fields will allow you to add a column that holds calculated values based on other fields in the same record. These expression columns can be visible or invisible, used in grouping and sorting, and may be employed as summary fields for summary rows. As with adding Summary Rows and Summary Columns, you can use collection editors to add Expression Fields. 
 
@@ -26069,7 +26010,7 @@ Programmatically
 
 Expression Fields can also be set through code. The following code example adds two expression fields to the Statistics table.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26085,9 +26026,9 @@ ExpressionFieldDescriptor exp1 = new ExpressionFieldDescriptor("Loosing %", "([l
 
 this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new Syncfusion.Grouping.ExpressionFieldDescriptor[] { exp1, exp2 });
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26103,17 +26044,15 @@ Dim exp2 As ExpressionFieldDescriptor = New ExpressionFieldDescriptor("Loosing %
 
 this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Syncfusion.Grouping.ExpressionFieldDescriptor() {exp1, exp2})
 
+{% endhighlight %}
+
 The screen shot given below highlights these expression fields.
 
 ![](Grid-Controls_images/Grid-Controls_img338.jpeg)
 
-
-
-> ![](Grid-Controls_images/Grid-Controls_img339.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Expression Field Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Expression Field Demo_
 
 See Also
 
@@ -26131,7 +26070,7 @@ Sample Code
 
 The following code example is used to create nested expression fields.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26155,9 +26094,9 @@ this.gridGroupingControl1.TableDescriptor.Columns["ExpCol1"].Appearance.AnyRecor
 
 this.gridGroupingControl1.TableDescriptor.Columns["ExpCol2"].Appearance.AnyRecordFieldCell.BackColor = Color.Cornsilk;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26181,7 +26120,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ExpCol1").Appearance.AnyRecordF
 
 Me.gridGroupingControl1.TableDescriptor.Columns("ExpCol2").Appearance.AnyRecordFieldCell.BackColor = Color.Cornsilk
 
-
+{% endhighlight %}
 
 Here is a sample screen shot showing two expression fields ExpCol1 and ExpCol2 where ExpCol2 is referencing ExpCol1.
 
@@ -26305,7 +26244,8 @@ betweentime</td><td>
 Checks if a time in the date field value between the two values is listed in the right-hand operand. For example, [time] between {04:00:00 PM, 05:00:00 PM} returns 1 for any record whose date field is greater than or equal to 04:00 and less than 05:00. The time will be calculated along with date for betweentime.</td><td>
 [OrderDate] between {“04/17/2008 9:00:00 PM”, “04/21/2008 07:00:00 AM”}</td></tr>
 </table>
-RecordFilters
+
+#### RecordFilters
 
 RecordFilters otherwise known as RowFilters will allow you to restrict displayed records to those that satisfy logical condition you specify with FilterRowDescriptor. You have the option of typing an expression (similar to an Expression Field) or entering a condition using editor dialog.
 
@@ -26318,8 +26258,6 @@ Adding Filters Through Designer
 Record Filters can easily be added through the designer. Opening TableDescriptor.RecordFilters property in the property window will display RecordFilterDescriptor Collection Editor that allows you to define record filters. The designer settings shown in the image below will setup a record filter for the field 'wins', to display only records with wins > 20.
 
 ![](Grid-Controls_images/Grid-Controls_img341.jpeg)
-
-
 
 
 
@@ -26355,7 +26293,7 @@ To add record filter, you must create RecordFilterDescriptor by specifying field
 
 Following code example illustrates how to add a record filter for the column "wins" to display only the records with wins > 20.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26365,9 +26303,9 @@ RecordFilterDescriptor filter = new RecordFilterDescriptor("wins", cond);
 
 this.gridGroupingControl1.TableDescriptor.RecordFilters.Add(filter);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26377,7 +26315,7 @@ Dim filter As RecordFilterDescriptor = New RecordFilterDescriptor("wins", cond)
 
 Me.gridGroupingControl1.TableDescriptor.RecordFilters.Add(filter)
 
-
+{% endhighlight %}
 
 Given below is a sample screen shot showing the grid filtered with wins > 20.
 
@@ -26385,15 +26323,13 @@ Given below is a sample screen shot showing the grid filtered with wins > 20.
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img343.jpeg)
-
-_Note: Filter Expressions share the same format as in expression fields. For a list of valid expressions, refer to_ List of Filter Expressions.
+> Note: Filter Expressions share the same format as in expression fields. For a list of valid expressions, refer to_ List of Filter Expressions
 
 Nested Tables
 
 Record Filters can also be set to nested tables by accessing RecordFilters collection of the ChildTableDescriptor.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26403,9 +26339,9 @@ RecordFilterDescriptor filter = new RecordFilterDescriptor("OrderID", cond);
 
 this.gridGroupingControl1.GetTableDescriptor("Orders").RecordFilters.Add(filter);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26415,13 +26351,15 @@ Dim filter As RecordFilterDescriptor = New RecordFilterDescriptor("OrderID", con
 
 Me.gridGroupingControl1.GetTableDescriptor("Orders").RecordFilters.Add(filter)
 
+{% endhighlight %}
+
 Special Characters in Filter Values
 
 To match the special characters like left bracket ([), question mark (?), number sign (#) and asterisk (*), enclose them in square brackets (like [#] for # and  [*] for * etc.,). The right bracket (]) cannot be used within a group to match itself, but it can be used outside a group as an individual character. 
 
 This is illustrated in the example below with our Grid Grouping control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26497,9 +26435,9 @@ return pattern;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26571,35 +26509,29 @@ Return pattern
 
 End Function
 
-> ![](Grid-Controls_images/Grid-Controls_img344.jpeg)
+{% endhighlight %}
 
-_Note: The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx for detailed information._
+> Note: The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx for detailed information.
 
 Clearing Filters
 
 Row Filters that are added for a table can be cleared by calling Clear() method of RecordFilters property.
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 
+{% endhighlight %}
 
-
-> ![](Grid-Controls_images/Grid-Controls_img345.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Getting Started_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Getting Started_
 
 Filter Bar
 
@@ -26613,7 +26545,7 @@ The Filter Bar can be enabled by setting ShowFilterBar and AllowFilter propertie
 
 Given below is the code to set the filter for all the columns in the main table.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26635,9 +26567,9 @@ for (int i = 0; i < gridGroupingControl1.TableDescriptor.Columns.Count; i++)
 
 gridGroupingControl1.TableDescriptor.Columns[i].AllowFilter = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26665,7 +26597,7 @@ i += 1
 
 Loop
 
-
+{% endhighlight %}
 
 Through Designer
 
@@ -26703,7 +26635,7 @@ AutoFilterRow can also be added to the nested tables and groups. To turn on the 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26717,9 +26649,9 @@ this.gridGroupingControl1.NestedTableGroupOptions.ShowFilterBar = true;
 
 this.gridGroupingControl1.ChildGroupOptions.ShowFilterBar = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26733,11 +26665,11 @@ Me.gridGroupingControl1.NestedTableGroupOptions.ShowFilterBar = True
 
 Me.gridGroupingControl1.ChildGroupOptions.ShowFilterBar = True
 
-> ![](Grid-Controls_images/Grid-Controls_img350.jpeg)
+{% endhighlight %}
 
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter Bar Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter Bar Demo_
 
 Dynamic Filter
 
@@ -26749,7 +26681,7 @@ Set up Dynamic Filter
 
 The dynamic filter is defined in the GridDynamicFilter class, which exposes two public methods, WireGrid and UnwireGrid, in order to hook up and unhook the dynamic filter with the desired grid.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26767,9 +26699,9 @@ else
 
 f.UnWireGrid(gridGroupingControl1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -26785,6 +26717,8 @@ f.UnWireGrid(gridGroupingControl1)
 
 End If
 
+{% endhighlight %}
+
 Sample Output
 
 Below image illustrates a sample output.
@@ -26793,11 +26727,9 @@ Below image illustrates a sample output.
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img352.jpeg)
-
-_Note: For more details, refer the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
+> Note: For more details, refer the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
 Localization Support for CompareOperatorListBox 
 
@@ -26811,13 +26743,13 @@ Sample Link
 
 A demo of this feature is available in the following location:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
 Adding Localization Support for CompareOperatorListBox 
 
 To localize the content, create a class file and add an interface as _ILocalizationProvider_. Assign the required content to be displayed to the _DynamicFilterResourceIdentifiers_ of the _GetLocalizedString_ method as illustrated in the following code:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -26960,10 +26892,10 @@ public string GetLocalizedString(System.Globalization.CultureInfo culture, strin
         }
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -27093,7 +27025,7 @@ End If
 
 End Function
 
-
+{% endhighlight %}
 
 
 
@@ -27109,7 +27041,7 @@ Accessing FilteredRecords
 
 If you want to work with the subset of records being filtered from a grid table, then you can use FilteredRecords collection for that table. This is a read-only collection that manages the subset of records that has been filtered against a filter criteria.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27123,9 +27055,9 @@ Console.WriteLine("Record Info : " + frec);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27137,11 +27069,13 @@ Console.WriteLine("Record Info : " & frec)
 
 Next frec
 
+{% endhighlight %}
+
 Accessing the FilterBarString
 
 To get access to the FilteredString, you can use GetFilterBarText of FilterBarCellRenderer. Following code example illustrates how to print the filter bar string for a given column.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27200,12 +27134,9 @@ private void GetFilterBarString()
 }
 
 
+{% endhighlight %}
 
-
-
-
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27257,6 +27188,8 @@ End If
 
 End Sub
 
+{% endhighlight %}
+
 Filter By DisplayMember
 
 Grid Grouping control filters data records by the value member of the columns by default. This behavior can be customized to get filters work with display member of the columns. This is accomplished in the Filter By DisplayMember feature.
@@ -27271,7 +27204,7 @@ Implementation includes the following classes.
 
 Following code example illustrates how to enable or disable this custom filter.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -27287,9 +27220,9 @@ gGCFilter.WireGrid(gridGroupingControl1);
 
 gGCFilter.UnwireGrid(gridGroupingControl1);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -27305,17 +27238,15 @@ gGCFilter.WireGrid(gridGroupingControl1)
 
 gGCFilter.UnwireGrid(gridGroupingControl1)
 
-
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img354.jpeg)
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img355.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo_
 
 List of Filter Expressions
 
@@ -27422,7 +27353,8 @@ IN</td><td>
 [columnname] IN 'val1,val2,..,valn'</td><td>
 Filters grid displaying records whose specified column hold the values mentioned.</td></tr>
 </table>
-###### Relations and Hierarchy
+
+#### Relations and Hierarchy
 
 Grid Grouping control can display nested tables in a hierarchy using master-detail configuration. In an hierarchical view, all the tables in the data source are inter-connected via relations. Generally a relation between any two tables can take any of the following forms: 1:1, 1:n, n:1 or n:n.
 
@@ -27448,7 +27380,7 @@ After binding an hierarchical dataset to the grouping grid, you could find Table
 
 
 
-_Figure_ _410_: Setting Up Relations by using GridRelationDescriptor Collection Editor_
+_Figure_ _410_: Setting Up Relations by using GridRelationDescriptor Collection Editor
 
 
 
@@ -27526,7 +27458,7 @@ The image below shows the state after clicking Edit button.
 
 
 
-Related Master Details Relation
+#### Related Master Details Relation
 
 RelatedMasterDetails is a Master-Details relation where matching keys in columns in the parent and child tables define a relationship between two tables. This a 1:n relation where each record in the child table can only belong to one parent record.
 
@@ -27536,369 +27468,378 @@ Steps to setup RelatedMasterDetails relation
 
 1. Setup three datatables that have primary and foreign key columns in common.
 
-[C#]
+   ~~~ cs
 
+		private int numberParentRows = 5;
 
+		private int numberChildRows = 20;
 
-private int numberParentRows = 5;
+		private int numberGrandChildRows = 50;
 
-private int numberChildRows = 20;
 
-private int numberGrandChildRows = 50;
 
+		//Creates Parent Table.
 
+		private DataTable GetParentTable()
 
-//Creates Parent Table.
+		{
 
-private DataTable GetParentTable()
+			DataTable dt = new DataTable("ParentTable");
 
-{
 
-    DataTable dt = new DataTable("ParentTable");
 
+			dt.Columns.Add(new DataColumn("parentID"));
 
+			dt.Columns.Add(new DataColumn("ParentName"));
 
-    dt.Columns.Add(new DataColumn("parentID"));
+			dt.Columns.Add(new DataColumn("ParentDec"));
 
-    dt.Columns.Add(new DataColumn("ParentName"));
 
-    dt.Columns.Add(new DataColumn("ParentDec"));
 
+			for(int i = 0; i < numberParentRows; i++)
 
+			{
 
-    for(int i = 0; i < numberParentRows; i++)
+				DataRow dr = dt.NewRow();
 
-    {
 
-        DataRow dr = dt.NewRow();
 
+				dr[0] = i;
 
+				dr[1] = string.Format("parentName{0}", i);
 
-        dr[0] = i;
+				dr[1] = string.Format("parentName{0}", i);
 
-        dr[1] = string.Format("parentName{0}", i);
+				dt.Rows.Add(dr);
 
-        dr[1] = string.Format("parentName{0}", i);
+			}
 
-        dt.Rows.Add(dr);
+			return dt;
 
-    }
+		}
 
-    return dt;
 
-}
 
+		//Creates Child Table.
 
+		private DataTable GetChildTable()
 
-//Creates Child Table.
+		{
 
-private DataTable GetChildTable()
+			DataTable dt = new DataTable("ChildTable");
 
-{
 
-    DataTable dt = new DataTable("ChildTable");
 
+			dt.Columns.Add(new DataColumn("childID"));
 
+			dt.Columns.Add(new DataColumn("Name"));
 
-    dt.Columns.Add(new DataColumn("childID"));
+			dt.Columns.Add(new DataColumn("ParentID"));
 
-    dt.Columns.Add(new DataColumn("Name"));
 
-    dt.Columns.Add(new DataColumn("ParentID"));
 
+			for(int i = 0; i < numberChildRows; i++)
 
+			{
 
-    for(int i = 0; i < numberChildRows; i++)
+				DataRow dr = dt.NewRow();
 
-    {
+				dr[0] = i.ToString();
 
-        DataRow dr = dt.NewRow();
+				dr[1] = string.Format("ChildName{0}",i);
 
-        dr[0] = i.ToString();
+				dr[2] = (i % numberParentRows).ToString();
 
-        dr[1] = string.Format("ChildName{0}",i);
+				dt.Rows.Add(dr);
 
-        dr[2] = (i % numberParentRows).ToString();
+			}
 
-        dt.Rows.Add(dr);
+			return dt;
 
-    }
+		}
 
-    return dt;
 
-}
 
+		//Creates Grand Child Table.
 
+		private DataTable GetGrandChildTable()
 
-//Creates Grand Child Table.
+		{
 
-private DataTable GetGrandChildTable()
+			DataTable dt = new DataTable("GrandChildTable");
 
-{
 
-    DataTable dt = new DataTable("GrandChildTable");
 
+			dt.Columns.Add(new DataColumn("GrandChildID"));
 
+			dt.Columns.Add(new DataColumn("Name"));
 
-    dt.Columns.Add(new DataColumn("GrandChildID"));
+			dt.Columns.Add(new DataColumn("ChildID"));
 
-    dt.Columns.Add(new DataColumn("Name"));
 
-    dt.Columns.Add(new DataColumn("ChildID"));
 
+			for(int i = 0; i < numberGrandChildRows; i++)
 
+			{
 
-    for(int i = 0; i < numberGrandChildRows; i++)
+				DataRow dr = dt.NewRow();
 
-    {
+				dr[0] = i.ToString();
 
-        DataRow dr = dt.NewRow();
+				dr[1] = string.Format("GrandChildName{0}",i);
 
-        dr[0] = i.ToString();
+				dr[2] = (i % numberChildRows).ToString();
 
-        dr[1] = string.Format("GrandChildName{0}",i);
+				dt.Rows.Add(dr);
 
-        dr[2] = (i % numberChildRows).ToString();
+			}
 
-        dt.Rows.Add(dr);
+			return dt;
 
-    }
+		}
 
-    return dt;
+   ~~~
+   {:.prettyprint }
 
-}
+   ~~~ vbnet
 
+		Private numberParentRows As Integer = 5
 
+		Private numberChildRows As Integer = 20
 
-[VB.NET]
+		Private numberGrandChildRows As Integer = 50
 
 
 
-Private numberParentRows As Integer = 5
+		'Creates Parent Table.
 
-Private numberChildRows As Integer = 20
+		Private Function GetParentTable() As DataTable
 
-Private numberGrandChildRows As Integer = 50
+		Dim dt As New DataTable("ParentTable")
 
 
 
-'Creates Parent Table.
+		dt.Columns.Add(New DataColumn("parentID"))
 
-Private Function GetParentTable() As DataTable
+		dt.Columns.Add(New DataColumn("ParentName"))
 
-Dim dt As New DataTable("ParentTable")
+		dt.Columns.Add(New DataColumn("ParentDec"))
 
 
 
-dt.Columns.Add(New DataColumn("parentID"))
+		Dim i As Integer
 
-dt.Columns.Add(New DataColumn("ParentName"))
+		For i = 0 To numberParentRows - 1
 
-dt.Columns.Add(New DataColumn("ParentDec"))
+		Dim dr As DataRow = dt.NewRow()
 
+		dr(0) = i
 
+		dr(1) = String.Format("parentName{0}", i)
 
-Dim i As Integer
+		dr(1) = String.Format("parentName{0}", i)
 
-For i = 0 To numberParentRows - 1
+		dt.Rows.Add(dr)
 
-Dim dr As DataRow = dt.NewRow()
+		Next i
 
-dr(0) = i
 
-dr(1) = String.Format("parentName{0}", i)
 
-dr(1) = String.Format("parentName{0}", i)
+		Return dt
 
-dt.Rows.Add(dr)
+		End Function
 
-Next i
 
 
+		'Creates Child Table.
 
-Return dt
+		Private Function GetChildTable() As DataTable
 
-End Function
+		Dim dt As New DataTable("ChildTable")
 
 
 
-'Creates Child Table.
+		dt.Columns.Add(New DataColumn("childID"))
 
-Private Function GetChildTable() As DataTable
+		dt.Columns.Add(New DataColumn("Name"))
 
-Dim dt As New DataTable("ChildTable")
+		dt.Columns.Add(New DataColumn("ParentID"))
 
+		Dim i As Integer
 
+		For i = 0 To numberChildRows - 1
 
-dt.Columns.Add(New DataColumn("childID"))
+		Dim dr As DataRow = dt.NewRow()
 
-dt.Columns.Add(New DataColumn("Name"))
+		dr(0) = i.ToString()
 
-dt.Columns.Add(New DataColumn("ParentID"))
+		dr(1) = String.Format("ChildName{0}", i)
 
-Dim i As Integer
+		dr(2) = (i Mod numberParentRows).ToString()
 
-For i = 0 To numberChildRows - 1
+		dt.Rows.Add(dr)
 
-Dim dr As DataRow = dt.NewRow()
+		Next i
 
-dr(0) = i.ToString()
 
-dr(1) = String.Format("ChildName{0}", i)
 
-dr(2) = (i Mod numberParentRows).ToString()
+		Return dt
 
-dt.Rows.Add(dr)
+		End Function
 
-Next i
 
 
+		'Creates Grand Child Table.
 
-Return dt
+		Private Function GetGrandChildTable() As DataTable
 
-End Function
+		Dim dt As New DataTable("GrandChildTable")
 
 
 
-'Creates Grand Child Table.
+		dt.Columns.Add(New DataColumn("GrandChildID"))
 
-Private Function GetGrandChildTable() As DataTable
+		dt.Columns.Add(New DataColumn("Name"))
 
-Dim dt As New DataTable("GrandChildTable")
+		dt.Columns.Add(New DataColumn("ChildID"))
 
+		Dim i As Integer
 
+		For i = 0 To numberGrandChildRows - 1
 
-dt.Columns.Add(New DataColumn("GrandChildID"))
+		Dim dr As DataRow = dt.NewRow()
 
-dt.Columns.Add(New DataColumn("Name"))
+		dr(0) = i.ToString()
 
-dt.Columns.Add(New DataColumn("ChildID"))
+		dr(1) = String.Format("GrandChildName{0}", i)
 
-Dim i As Integer
+		dr(2) = (i Mod numberChildRows).ToString()
 
-For i = 0 To numberGrandChildRows - 1
+		dt.Rows.Add(dr)
 
-Dim dr As DataRow = dt.NewRow()
+		Next i
 
-dr(0) = i.ToString()
 
-dr(1) = String.Format("GrandChildName{0}", i)
 
-dr(2) = (i Mod numberChildRows).ToString()
+		Return dt
 
-dt.Rows.Add(dr)
-
-Next i
-
-
-
-Return dt
-
-End Function
+		End Function
+		
+   ~~~
+   {:.prettyprint }
 
 2. Manually set up relationships between tables and add relation to the parent and child tables.
 
-[C#]
+   ~~~ cs
 
 
 
-GridRelationDescriptor parentToChildRelationDescriptor = new GridRelationDescriptor();
+		GridRelationDescriptor parentToChildRelationDescriptor = new GridRelationDescriptor();
 
 
 
-//Same as SourceListSetEntry.Name for Child Table.
+		//Same as SourceListSetEntry.Name for Child Table.
 
-parentToChildRelationDescriptor.ChildTableName = "MyChildTable";
+		parentToChildRelationDescriptor.ChildTableName = "MyChildTable";
 
-parentToChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails;
+		parentToChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails;
 
-parentToChildRelationDescriptor.RelationKeys.Add("parentID", "ParentID");
+		parentToChildRelationDescriptor.RelationKeys.Add("parentID", "ParentID");
 
-//Adds relation to Parent Table.
+		//Adds relation to Parent Table.
 
-gridGroupingControl1.TableDescriptor.Relations.Add(parentToChildRelationDescriptor);
+		gridGroupingControl1.TableDescriptor.Relations.Add(parentToChildRelationDescriptor);
 
-GridRelationDescriptor childToGrandChildRelationDescriptor = new GridRelationDescriptor();
+		GridRelationDescriptor childToGrandChildRelationDescriptor = new GridRelationDescriptor();
 
-//Same as SourceListSetEntry.Name for Grand Child Table.
+		//Same as SourceListSetEntry.Name for Grand Child Table.
 
-childToGrandChildRelationDescriptor.ChildTableName = "MyGrandChildTable";
+		childToGrandChildRelationDescriptor.ChildTableName = "MyGrandChildTable";
 
-childToGrandChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails;
+		childToGrandChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails;
 
-childToGrandChildRelationDescriptor.RelationKeys.Add("childID", "ChildID");
+		childToGrandChildRelationDescriptor.RelationKeys.Add("childID", "ChildID");
 
-//Adds relation to Child Table.
+		//Adds relation to Child Table.
 
-parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandChildRelationDescriptor);
+		parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandChildRelationDescriptor);
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Dim parentToChildRelationDescriptor As New GridRelationDescriptor()
+   ~~~ vbnet
 
 
 
-'Same as SourceListSetEntry.Name for Child Table.
-
-parentToChildRelationDescriptor.ChildTableName = "MyChildTable"
-
-parentToChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails
-
-parentToChildRelationDescriptor.RelationKeys.Add("parentID", "ParentID")
-
-'Adds relation to Parent Table.
-
-gridGroupingControl1.TableDescriptor.Relations.Add(parentToChildRelationDescriptor)
-
-Dim childToGrandChildRelationDescriptor As New GridRelationDescriptor()
-
-'Same as SourceListSetEntry.Name for Grand Child Table.
-
-childToGrandChildRelationDescriptor.ChildTableName = "MyGrandChildTable"
-
-childToGrandChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails
-
-childToGrandChildRelationDescriptor.RelationKeys.Add("childID", "ChildID")
-
-'Adds relation to Child Table.
-
-parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandChildRelationDescriptor)
+		Dim parentToChildRelationDescriptor As New GridRelationDescriptor()
 
 
+
+		'Same as SourceListSetEntry.Name for Child Table.
+
+		parentToChildRelationDescriptor.ChildTableName = "MyChildTable"
+
+		parentToChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails
+
+		parentToChildRelationDescriptor.RelationKeys.Add("parentID", "ParentID")
+
+		'Adds relation to Parent Table.
+
+		gridGroupingControl1.TableDescriptor.Relations.Add(parentToChildRelationDescriptor)
+
+		Dim childToGrandChildRelationDescriptor As New GridRelationDescriptor()
+
+		'Same as SourceListSetEntry.Name for Grand Child Table.
+
+		childToGrandChildRelationDescriptor.ChildTableName = "MyGrandChildTable"
+
+		childToGrandChildRelationDescriptor.RelationKind = RelationKind.RelatedMasterDetails
+
+		childToGrandChildRelationDescriptor.RelationKeys.Add("childID", "ChildID")
+
+		'Adds relation to Child Table.
+
+		parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandChildRelationDescriptor)
+
+   ~~~
+   {:.prettyprint }
 
 3. Register the datatables with Engine.SourceListSet so that RelationDescriptor can resolve the name.
 
+   ~~~ cs
+   
+		 this.gridGroupingControl1.Engine.SourceListSet.Add("MyParentTable", parentTable);
+		 this.gridGroupingControl1.Engine.SourceListSet.Add("MyChildTable", childTable);
+		 this.gridGroupingControl1.Engine.SourceListSet.Add("MyGrandChildTable", grandChildTable);
+   ~~~
+   {:.prettyprint }
+		
+   ~~~ vbnet
+   
+		Me.gridGroupingControl1.Engine.SourceListSet.Add("MyParentTable", parentTable)
+		Me.gridGroupingControl1.Engine.SourceListSet.Add("MyChildTable", ChildTable)
+		Me.gridGroupingControl1.Engine.SourceListSet.Add("MyGrandChildTable", grandChildTable)
+		
+   ~~~
+   {:.prettyprint }
 
-
-<table>
-<tr>
-<td>
-[C#]this.gridGroupingControl1.Engine.SourceListSet.Add("MyParentTable", parentTable);this.gridGroupingControl1.Engine.SourceListSet.Add("MyChildTable", childTable);this.gridGroupingControl1.Engine.SourceListSet.Add("MyGrandChildTable", grandChildTable);</td></tr>
-<tr>
-<td>
-[VB.NET]Me.gridGroupingControl1.Engine.SourceListSet.Add("MyParentTable", parentTable)Me.gridGroupingControl1.Engine.SourceListSet.Add("MyChildTable", ChildTable)Me.gridGroupingControl1.Engine.SourceListSet.Add("MyGrandChildTable", grandChildTable)</td></tr>
-</table>
 4. Finally, bind hierarchical data source, which has been created through the above steps to a grouping grid by assigning parent table to the datasource.
 
 
 
-[C#]
+   ~~~ cs
 
+		this.gridGroupingControl1.DataSource = parentTable;
 
+   ~~~
+   {:.prettyprint }
 
-this.gridGroupingControl1.DataSource = parentTable;
+   ~~~ vbnet
 
+		Me.gridGroupingControl1.DataSource = parentTable
 
-
-[VB.NET]
-
-
-
-Me.gridGroupingControl1.DataSource = parentTable
+   ~~~
+   {:.prettyprint }
 
 5. When you run the sample, you could find the tables connected with Master-Details relation.
 
@@ -27906,13 +27847,11 @@ Me.gridGroupingControl1.DataSource = parentTable
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img360.jpeg)
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Related Master Details Demo_
 
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Related Master Details Demo_
-
-Foreign Key Reference Relation
+#### Foreign Key Reference Relation
 
 ForeignKeyReference is a foreign-key relation for looking up values where an id column in the main table can be used to look up a record in a related table. This is an n:1 relation where multiple records in the parent table can reference the same record in the related table. Fields in the related table can be referenced using a '.' dot in the FieldDescriptor.MappingName of the main table.
 
@@ -27926,595 +27865,588 @@ The following steps demonstrate this process.
 
 1. Create a collection named USStates in which each entry stores USState object.
 
+   ~~~ cs
 
+		//US States Collection.
 
-[C#]
+		[Serializable]
 
+		public class USStatesCollection : ArrayList
 
+		{
 
-//US States Collection.
+			public new USState this[int index]
 
-[Serializable]
+			{
 
-public class USStatesCollection : ArrayList
+				get
 
-{
+				{
 
-    public new USState this[int index]
+					return (USState) base[index];
 
-    {
+				}
 
-        get
+				set
 
-        {
+				{
 
-            return (USState) base[index];
+					base[index] = value;
 
-        }
+				}
 
-        set
+			}
 
-        {
 
-            base[index] = value;
 
-        }
+			public static USStatesCollection CreateDefaultCollection()
 
-    }
+			{
 
+				USStatesCollection states = new USStatesCollection();
 
+				states.Add(new USState("AL", "Alabama"));
 
-    public static USStatesCollection CreateDefaultCollection()
+				states.Add(new USState("AK", "Alaska"));
 
-    {
+				states.Add(new USState("CA", "California"));
 
-        USStatesCollection states = new USStatesCollection();
+				states.Add(new USState("FL", "Florida"));
 
-        states.Add(new USState("AL", "Alabama"));
+				states.Add(new USState("GA", "Georgia"));
 
-        states.Add(new USState("AK", "Alaska"));
+				states.Add(new USState("IN", "Indiana"));
 
-        states.Add(new USState("CA", "California"));
+				states.Add(new USState("MS", "Mississippi"));
 
-        states.Add(new USState("FL", "Florida"));
+				states.Add(new USState("NJ", "New Jersey"));
 
-        states.Add(new USState("GA", "Georgia"));
+				states.Add(new USState("NM", "New Mexico"));
 
-        states.Add(new USState("IN", "Indiana"));
+				states.Add(new USState("NY", "New York"));
 
-        states.Add(new USState("MS", "Mississippi"));
+				states.Add(new USState("TX", "Texas"));
 
-        states.Add(new USState("NJ", "New Jersey"));
+				states.Add(new USState("WA", "Washington"));
 
-        states.Add(new USState("NM", "New Mexico"));
+				states.Add(new USState("PE", "Prince Edward Island"));
 
-        states.Add(new USState("NY", "New York"));
+				states.Add(new USState("YT", "Yukon Territories"));
 
-        states.Add(new USState("TX", "Texas"));
+				return states;
 
-        states.Add(new USState("WA", "Washington"));
+			}
 
-        states.Add(new USState("PE", "Prince Edward Island"));
 
-        states.Add(new USState("YT", "Yukon Territories"));
 
-        return states;
+			public override bool IsReadOnly
 
-    }
+			{
 
+				get
 
+				{
 
-    public override bool IsReadOnly
+					return true;
 
-    {
+				}
 
-        get
+			}
 
-        {
 
-            return true;
 
-        }
+			public override bool IsFixedSize
 
-    }
+			{
 
+				get
 
+				{
 
-    public override bool IsFixedSize
+					return true;
 
-    {
+				}
 
-        get
+			}
 
-        {
 
-            return true;
 
-        }
+		}
 
-    }
 
 
+		//US State Class.
 
-}
+		[Serializable]
 
+		public class USState
 
+		{
 
-//US State Class.
+			private string _code;
 
-[Serializable]
+			private string _name;
 
-public class USState
 
-{
 
-    private string _code;
+			public  USState()
 
-    private string _name;
+			{
 
+			}
 
 
-    public  USState()
 
-    {
+			public  USState(string key, string name)
 
-    }
+			{
 
+				this._code = key;
 
+				this._name = name;
 
-    public  USState(string key, string name)
+			}
 
-    {
 
-        this._code = key;
 
-        this._name = name;
+			[Browsable(true)]
 
-    }
+			public string Key
 
+			{
 
+				get
 
-    [Browsable(true)]
+				{
 
-    public string Key
+					return _code;
 
-    {
+				}
 
-        get
+				set
 
-        {
+				{
 
-            return _code;
+					_code = value;
 
-        }
+				}
 
-        set
+			}
 
-        {
 
-            _code = value;
 
-        }
+			[Browsable(true)]
 
-    }
+			public string Name
 
+			{
 
+				  get
 
-    [Browsable(true)]
+				{
 
-    public string Name
+					return _name ;
 
-    {
+				}
 
-          get
+				set
 
-        {
+				{
 
-            return _name ;
+					_name = value;
 
-        }
+				}
 
-        set
+			}
 
-        {
 
-            _name = value;
 
-        }
+			public override string ToString()
 
-    }
+			{
 
+				return this._name + "(" + this._code + ")";
 
+			}
 
-    public override string ToString()
+		}
+   ~~~
+   {:.prettyprint }
 
-    {
 
-        return this._name + "(" + this._code + ")";
+   ~~~ vbnet
 
-    }
 
-}
 
+		'US States Collection.
 
+		<Serializable()>  _
 
-[VB.NET]
+		Public Class USStatesCollection
 
+		Inherits ArrayList
 
 
-'US States Collection.
 
-<Serializable()>  _
+		Default Public Shadows Property Item(index As Integer) As USState
 
-Public Class USStatesCollection
+		Get
 
-Inherits ArrayList
+		Return CType(MyBase.Item(index), USState)
 
+		End Get
 
+		Set
 
-Default Public Shadows Property Item(index As Integer) As USState
+		MyBase.Item(index) = Value
 
-Get
+		End Set
 
-Return CType(MyBase.Item(index), USState)
+		End Property        
 
-End Get
 
-Set
 
-MyBase.Item(index) = Value
+		Public Shared Function CreateDefaultCollection() As USStatesCollection
 
-End Set
+			  Dim states As New USStatesCollection()
 
-End Property        
+			  states.Add(New USState("AL", "Alabama"))
 
+			  states.Add(New USState("AK", "Alaska"))
 
+			  states.Add(New USState("CA", "California"))
 
-Public Shared Function CreateDefaultCollection() As USStatesCollection
+			  states.Add(New USState("FL", "Florida"))
 
-      Dim states As New USStatesCollection()
+			  states.Add(New USState("GA", "Georgia"))
 
-      states.Add(New USState("AL", "Alabama"))
+			  states.Add(New USState("IN", "Indiana"))
 
-      states.Add(New USState("AK", "Alaska"))
+			  states.Add(New USState("MS", "Mississippi"))
 
-      states.Add(New USState("CA", "California"))
+			  states.Add(New USState("NJ", "New Jersey"))
 
-      states.Add(New USState("FL", "Florida"))
+			  states.Add(New USState("NM", "New Mexico"))
 
-      states.Add(New USState("GA", "Georgia"))
+			  states.Add(New USState("NY", "New York"))
 
-      states.Add(New USState("IN", "Indiana"))
+			  states.Add(New USState("TX", "Texas"))
 
-      states.Add(New USState("MS", "Mississippi"))
+			  states.Add(New USState("WA", "Washington"))
 
-      states.Add(New USState("NJ", "New Jersey"))
+			  states.Add(New USState("PE", "Prince Edward Island"))
 
-      states.Add(New USState("NM", "New Mexico"))
+			  states.Add(New USState("YT", "Yukon Territories"))
 
-      states.Add(New USState("NY", "New York"))
+			  Return states
 
-      states.Add(New USState("TX", "Texas"))
+		End Function
 
-      states.Add(New USState("WA", "Washington"))
 
-      states.Add(New USState("PE", "Prince Edward Island"))
 
-      states.Add(New USState("YT", "Yukon Territories"))
+		Public Overrides ReadOnly Property IsReadOnly() As Boolean
 
-      Return states
+		Get
 
-End Function
+		Return True
 
+		End Get
 
+		End Property
 
-Public Overrides ReadOnly Property IsReadOnly() As Boolean
 
-Get
 
-Return True
+		Public Overrides ReadOnly Property IsFixedSize() As Boolean
 
-End Get
+		Get
 
-End Property
+		Return True
 
+		End Get
 
+		End Property
 
-Public Overrides ReadOnly Property IsFixedSize() As Boolean
+		End Class
 
-Get
 
-Return True
 
-End Get
+		'US State Class.
 
-End Property
+		<Serializable()>  _
 
-End Class
+		Public Class USState
 
+		Private _code As String
 
+		Private _name As String
 
-'US State Class.
 
-<Serializable()>  _
 
-Public Class USState
+		Public Sub New()
 
-Private _code As String
+		End Sub
 
-Private _name As String
 
 
+		Public Sub New(key As String, name As String)
 
-Public Sub New()
+		Me._code = key
 
-End Sub
+		Me._name = name
 
+		End Sub
 
 
-Public Sub New(key As String, name As String)
 
-Me._code = key
+		<Browsable(True)>  _
 
-Me._name = name
+		Public Property Key() As String
 
-End Sub
+		Get
 
+		Return _code
 
+		End Get
 
-<Browsable(True)>  _
+		Set
 
-Public Property Key() As String
+		_code = value
 
-Get
+		End Set
 
-Return _code
+		End Property
 
-End Get
 
-Set
 
-_code = value
+		<Browsable(True)>  _
 
-End Set
+		Public Property Name() As String
 
-End Property
+		Get
 
+		Return _name
 
+		End Get
 
-<Browsable(True)>  _
+		Set
 
-Public Property Name() As String
+		_name = value
 
-Get
+		End Set
 
-Return _name
+		End Property
 
-End Get
 
-Set
 
-_name = value
+		Public Overrides Function ToString() As String
 
-End Set
+		Return Me._name + "(" + Me._code + ")"
 
-End Property
+		End Function
 
+		End Class
 
-
-Public Overrides Function ToString() As String
-
-Return Me._name + "(" + Me._code + ")"
-
-End Function
-
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create an object of USStates and add this object into the SourceListSet with a lookup name.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-USStatesCollection usStates = USStatesCollection.CreateDefaultCollection();
+		USStatesCollection usStates = USStatesCollection.CreateDefaultCollection();
 
-this.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates);
+		this.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates);
 
+   ~~~
+   {:.prettyprint }
 
-
-[VB.NET]
-
-
-
-Dim usStates As USStatesCollection = USStatesCollection.CreateDefaultCollection()
-
-Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
+   ~~~ vbnet
 
 
+
+		Dim usStates As USStatesCollection = USStatesCollection.CreateDefaultCollection()
+
+		Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
+
+   ~~~
+   {:.prettyprint }
 
 3. Creates a datatable with the Key from USState as one of the columns.
 
+   ~~~ cs
 
 
-[C#]
+		DataTable table = new DataTable();
 
+		table.Columns.Add("Id", typeof(string));
 
-
-DataTable table = new DataTable();
-
-table.Columns.Add("Id", typeof(string));
-
-table.Columns.Add("State", typeof(string));
+		table.Columns.Add("State", typeof(string));
 
 
 
-//Adds rows.
+		//Adds rows.
 
-for (int i = 0; i < 25; i++)
+		for (int i = 0; i < 25; i++)
 
-{
+		{
 
-    table.Rows.Add(table.NewRow());
+			table.Rows.Add(table.NewRow());
 
-    table.Rows[i][0] = i;
+			table.Rows[i][0] = i;
 
-    table.Rows[i][1] = usStates[i % 8].Key;
+			table.Rows[i][1] = usStates[i % 8].Key;
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		Dim table As New DataTable()
 
+		table.Columns.Add("Id", GetType(String))
 
-
-Dim table As New DataTable()
-
-table.Columns.Add("Id", GetType(String))
-
-table.Columns.Add("State", GetType(String))
-
+		table.Columns.Add("State", GetType(String))
 
 
-'Adds rows.
 
-Dim i As Integer
+		'Adds rows.
 
-For i = 0 To 24
+		Dim i As Integer
 
-table.Rows.Add(table.NewRow())
+		For i = 0 To 24
 
-table.Rows(i)(0) = i
+		table.Rows.Add(table.NewRow())
 
-table.Rows(i)(1) = usStates((i Mod 8)).Key
+		table.Rows(i)(0) = i
 
-Next i
+		table.Rows(i)(1) = usStates((i Mod 8)).Key
 
+		Next i
 
+   ~~~
+   {:.prettyprint }
 
 4. Establish ForeignKeyReference relationship.
 
+   ~~~ cs
 
+		GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
 
-[C#]
 
 
+		GridRelationDescriptor usStatesRd = new GridRelationDescriptor();
 
-GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
+		usStatesRd.Name = "State";
 
+		usStatesRd.RelationKind = RelationKind.ForeignKeyReference;
 
 
-GridRelationDescriptor usStatesRd = new GridRelationDescriptor();
 
-usStatesRd.Name = "State";
+		//SourceListSet name for look up.
 
-usStatesRd.RelationKind = RelationKind.ForeignKeyReference;
+		usStatesRd.ChildTableName = "USStates";  
 
+		usStatesRd.RelationKeys.Add("State", "Key");
 
 
-//SourceListSet name for look up.
 
-usStatesRd.ChildTableName = "USStates";  
+		//Formats ChildList.
 
-usStatesRd.RelationKeys.Add("State", "Key");
+		usStatesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227);
 
 
 
-//Formats ChildList.
+		//Hides the Key column.
 
-usStatesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227);
+		usStatesRd.ChildTableDescriptor.VisibleColumns.Add("Name");
 
+		usStatesRd.ChildTableDescriptor.SortedColumns.Add("Name");
 
+		usStatesRd.ChildTableDescriptor.AllowEdit = false;
 
-//Hides the Key column.
 
-usStatesRd.ChildTableDescriptor.VisibleColumns.Add("Name");
 
-usStatesRd.ChildTableDescriptor.SortedColumns.Add("Name");
+		//Disallows users to modify states.
 
-usStatesRd.ChildTableDescriptor.AllowEdit = false;
+		usStatesRd.ChildTableDescriptor.AllowNew = false;
 
 
 
-//Disallows users to modify states.
+		mainTd.Relations.Add(usStatesRd);
 
-usStatesRd.ChildTableDescriptor.AllowNew = false;
 
 
+		//Assigns data source.
 
-mainTd.Relations.Add(usStatesRd);
+		this.gridGroupingControl1.DataSource = table;
 
+		mainTd.Name = "ForeignKeyReference";
 
+   ~~~
+   {:.prettyprint }
 
-//Assigns data source.
+   ~~~ vbnet
 
-this.gridGroupingControl1.DataSource = table;
+		Dim mainTd As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
 
-mainTd.Name = "ForeignKeyReference";
 
 
+		Dim usStatesRd As New GridRelationDescriptor()
 
-[VB.NET]
+		usStatesRd.Name = "State"
 
+		usStatesRd.RelationKind = RelationKind.ForeignKeyReference
 
 
-Dim mainTd As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
 
+		'SourceListSet name for look up.
 
+		usStatesRd.ChildTableName = "USStates"
 
-Dim usStatesRd As New GridRelationDescriptor()
+		usStatesRd.RelationKeys.Add("State", "Key")
 
-usStatesRd.Name = "State"
 
-usStatesRd.RelationKind = RelationKind.ForeignKeyReference
 
+		'Formats ChildList.
 
+		usStatesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227)
 
-'SourceListSet name for look up.
 
-usStatesRd.ChildTableName = "USStates"
 
-usStatesRd.RelationKeys.Add("State", "Key")
+		'Hides Key Column.
 
+		usStatesRd.ChildTableDescriptor.VisibleColumns.Add("Name")
 
+		usStatesRd.ChildTableDescriptor.SortedColumns.Add("Name")
 
-'Formats ChildList.
+		usStatesRd.ChildTableDescriptor.AllowEdit = False
 
-usStatesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227)
 
 
+		'Disallows users to modify states.
 
-'Hides Key Column.
+		usStatesRd.ChildTableDescriptor.AllowNew = False
 
-usStatesRd.ChildTableDescriptor.VisibleColumns.Add("Name")
 
-usStatesRd.ChildTableDescriptor.SortedColumns.Add("Name")
 
-usStatesRd.ChildTableDescriptor.AllowEdit = False
+		mainTd.Relations.Add(usStatesRd)
 
 
 
-'Disallows users to modify states.
+		'Assigns data source.
 
-usStatesRd.ChildTableDescriptor.AllowNew = False
+		Me.gridGroupingControl1.DataSource = table
 
+		mainTd.Name = "ForeignKeyReference"
 
-
-mainTd.Relations.Add(usStatesRd)
-
-
-
-'Assigns data source.
-
-Me.gridGroupingControl1.DataSource = table
-
-mainTd.Name = "ForeignKeyReference"
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Here is a sample output that displays a look up child list for data column State with value Georgia.
 
@@ -28522,11 +28454,9 @@ mainTd.Name = "ForeignKeyReference"
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img362.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo_
 
 GridForeignKeyHelper
 
@@ -28534,7 +28464,7 @@ GridForeignKeyHelper is a helper class that makes it easy for the users to use f
 
 The GridForeignKeyHelper class exposes a static method called SetupForeignTableLookUp that accepts grouping grid, main table, foreign table, main table column, foreign table value column and foreign table display column and sets up the Foreign Key relation using these parameter values.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -28542,9 +28472,10 @@ string valueColInMainTable = "Country", valueColInForeignTable = "CountryCode", 
 
 GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, valueColInMainTable, countries, valueColInForeignTable, displayColInForeignTable);
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -28552,9 +28483,12 @@ Dim valueColInMainTable As String = "Country", valueColInForeignTable As String 
 
 displayColInForeignTable As String = "CountryName"
 
+{% endhighlight %}
+
+
 GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, valueColInMainTable, countries, valueColInForeignTable, displayColInForeignTable)
 
-Foreign Key KeyWords Relation
+#### Foreign Key KeyWords Relation
 
 ForeignKeyKeyWords is a unique relation kind offered by the grouping engine. It is a foreign key relation where matching keys in the columns of the parent and child table define a relationship between two tables. This is an m:n relation. Field summaries of the related child table can be referenced using a ‘.’ dot in the FieldDescriptor.MappingName of the main table. This relation kind allows you to have multi-valued columns in the grid.
 
@@ -28566,297 +28500,288 @@ The following example illustrates creation of ForeignKeyKeyWords relation.
 
 1. Create two data tables, Customers and Items, and add a list of records into them.
 
+   ~~~ cs
 
+		private int numberParentRows = 6;
 
-[C#]
+		private int numberChildRows = 20;
 
 
 
-private int numberParentRows = 6;
+		private DataTable GetParentTable()
 
-private int numberChildRows = 20;
+		{
 
+			DataTable dt = new DataTable("Customers");
 
 
-private DataTable GetParentTable()
 
-{
+			dt.Columns.Add(new DataColumn("customerID"));
 
-    DataTable dt = new DataTable("Customers");
+			dt.Columns.Add(new DataColumn("CustomerName"));
 
+			dt.Columns.Add(new DataColumn("Address"));
 
 
-    dt.Columns.Add(new DataColumn("customerID"));
 
-    dt.Columns.Add(new DataColumn("CustomerName"));
+			for(int i = 0; i < numberParentRows; ++i)
 
-    dt.Columns.Add(new DataColumn("Address"));
+			{
 
+				DataRow dr = dt.NewRow();
 
+				dr[0] = i;
 
-    for(int i = 0; i < numberParentRows; ++i)
+				dr[1] = string.Format("CustomerName{0}", i);
 
-    {
+				dr[2] = string.Format("Address{0}", i);
 
-        DataRow dr = dt.NewRow();
+				dt.Rows.Add(dr);
 
-        dr[0] = i;
+			}
 
-        dr[1] = string.Format("CustomerName{0}", i);
 
-        dr[2] = string.Format("Address{0}", i);
 
-        dt.Rows.Add(dr);
+			return dt;
 
-    }
+		}
 
 
 
-    return dt;
+		private DataTable GetChildTable()
 
-}
+		{
 
+			DataTable dt = new DataTable("Items");
 
 
-private DataTable GetChildTable()
 
-{
+			dt.Columns.Add(new DataColumn("ItemID")); 
 
-    DataTable dt = new DataTable("Items");
+			dt.Columns.Add(new DataColumn("ItemName"));
 
+			dt.Columns.Add(new DataColumn("CustomerID"));
 
+			dt.Columns.Add(new DataColumn("Price")); 
 
-    dt.Columns.Add(new DataColumn("ItemID")); 
+			Random rand = new Random();
 
-    dt.Columns.Add(new DataColumn("ItemName"));
+			for(int i = 0; i < numberChildRows; ++i)
 
-    dt.Columns.Add(new DataColumn("CustomerID"));
+			{
 
-    dt.Columns.Add(new DataColumn("Price")); 
+				DataRow dr = dt.NewRow();
 
-    Random rand = new Random();
+				dr[0] = i.ToString();
 
-    for(int i = 0; i < numberChildRows; ++i)
+				dr[1] = string.Format("ItemName{0}",i);
 
-    {
+				dr[2] = (i % numberParentRows).ToString();
 
-        DataRow dr = dt.NewRow();
+				dr[3] = rand.Next(500).ToString();
 
-        dr[0] = i.ToString();
+				dt.Rows.Add(dr);
 
-        dr[1] = string.Format("ItemName{0}",i);
+			}
 
-        dr[2] = (i % numberParentRows).ToString();
 
-        dr[3] = rand.Next(500).ToString();
 
-        dt.Rows.Add(dr);
+			return dt;
 
-    }
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-    return dt;
+		Private numberParentRows As Integer = 6
 
-}
+		Private numberChildRows As Integer = 20
 
 
 
-[VB.NET]
+		Private Function GetParentTable() As DataTable
 
+		Dim dt As DataTable = New DataTable("Customers")
 
 
-Private numberParentRows As Integer = 6
 
-Private numberChildRows As Integer = 20
+		dt.Columns.Add(New DataColumn("customerID"))
 
+		dt.Columns.Add(New DataColumn("CustomerName"))
 
+		dt.Columns.Add(New DataColumn("Address"))
 
-Private Function GetParentTable() As DataTable
 
-Dim dt As DataTable = New DataTable("Customers")
 
+		Dim i As Integer = 0
 
 
-dt.Columns.Add(New DataColumn("customerID"))
 
-dt.Columns.Add(New DataColumn("CustomerName"))
+		Do While i < numberParentRows
 
-dt.Columns.Add(New DataColumn("Address"))
+		Dim dr As DataRow = dt.NewRow()
 
+		dr(0) = i
 
+		dr(1) = String.Format("CustomerName{0}", i)
 
-Dim i As Integer = 0
+		dr(2) = String.Format("Address{0}", i)
 
+		dt.Rows.Add(dr)
 
+		i += 1
 
-Do While i < numberParentRows
+		Loop
 
-Dim dr As DataRow = dt.NewRow()
+		Return dt
 
-dr(0) = i
+		End Function
 
-dr(1) = String.Format("CustomerName{0}", i)
 
-dr(2) = String.Format("Address{0}", i)
 
-dt.Rows.Add(dr)
+		Private Function GetChildTable() As DataTable
 
-i += 1
+		Dim dt As DataTable = New DataTable("Items")
 
-Loop
 
-Return dt
 
-End Function
+		dt.Columns.Add(New DataColumn("ItemID"))
 
+		dt.Columns.Add(New DataColumn("ItemName"))
 
+		dt.Columns.Add(New DataColumn("CustomerID"))
 
-Private Function GetChildTable() As DataTable
+		dt.Columns.Add(New DataColumn("Price"))
 
-Dim dt As DataTable = New DataTable("Items")
+		Dim rand As Random = New Random()
 
+		Dim i As Integer = 0
 
+		Do While i < numberChildRows
 
-dt.Columns.Add(New DataColumn("ItemID"))
+		Dim dr As DataRow = dt.NewRow()
 
-dt.Columns.Add(New DataColumn("ItemName"))
+		dr(0) = i.ToString()
 
-dt.Columns.Add(New DataColumn("CustomerID"))
+		dr(1) = String.Format("ItemName{0}", i)
 
-dt.Columns.Add(New DataColumn("Price"))
+		dr(2) = (i Mod numberParentRows).ToString()
 
-Dim rand As Random = New Random()
+		dr(3) = rand.Next(500).ToString()
 
-Dim i As Integer = 0
+		dt.Rows.Add(dr)
 
-Do While i < numberChildRows
+		i += 1
 
-Dim dr As DataRow = dt.NewRow()
+		Loop
 
-dr(0) = i.ToString()
+		Return dt
 
-dr(1) = String.Format("ItemName{0}", i)
+		End Function
 
-dr(2) = (i Mod numberParentRows).ToString()
-
-dr(3) = rand.Next(500).ToString()
-
-dt.Rows.Add(dr)
-
-i += 1
-
-Loop
-
-Return dt
-
-End Function
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Register the child table (Items) into the SourceListSet of the grouping engine.
 
 
 
-[C#]
+   ~~~ cs
+
+		DataTable parentTable = GetParentTable();
+
+		DataTable childTable = GetChildTable();
 
 
 
-DataTable parentTable = GetParentTable();
+		this.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable);
 
-DataTable childTable = GetChildTable();
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		Dim parentTable As DataTable = GetParentTable()
 
-this.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable);
-
-
-
-[VB.NET]
-
-
-
-Dim parentTable As DataTable = GetParentTable()
-
-Dim childTable As DataTable = GetChildTable()
+		Dim childTable As DataTable = GetChildTable()
 
 
 
-Me.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable)
+		Me.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable)
 
-
+   ~~~
+   {:.prettyprint }
 
 3. Assign the datasource to the grid.
 
 
 
-[C#]
+   ~~~ cs
+
+		this.gridGroupingControl1.DataSource = parentTable;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
+		Me.gridGroupingControl1.DataSource = parentTable
 
-this.gridGroupingControl1.DataSource = parentTable;
-
-
-
-[VB.NET]
-
-
-
-Me.gridGroupingControl1.DataSource = parentTable
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Establish ForeignKeyKeyWords relationship between the tables.
 
-
-
-[C#]
-
-
-
-GridRelationDescriptor childRelation = new GridRelationDescriptor();
-
-childRelation.RelationKind = RelationKind.ForeignKeyKeyWords;
+   ~~~ cs
 
 
 
-//SourceListSet name for look up.
+		GridRelationDescriptor childRelation = new GridRelationDescriptor();
 
-childRelation.ChildTableName = "Items"; 
-
-childRelation.RelationKeys.Add("customerID", "CustomerID");
-
-childRelation.ChildTableDescriptor.AllowEdit = true;
-
-childRelation.ChildTableDescriptor.AllowNew = true;
-
-this.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation);
+		childRelation.RelationKind = RelationKind.ForeignKeyKeyWords;
 
 
 
-[VB.NET]
+		//SourceListSet name for look up.
+
+		childRelation.ChildTableName = "Items"; 
+
+		childRelation.RelationKeys.Add("customerID", "CustomerID");
+
+		childRelation.ChildTableDescriptor.AllowEdit = true;
+
+		childRelation.ChildTableDescriptor.AllowNew = true;
+
+		this.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		Dim childRelation As GridRelationDescriptor = New GridRelationDescriptor()
+
+		childRelation.RelationKind = RelationKind.ForeignKeyKeyWords
 
 
 
-Dim childRelation As GridRelationDescriptor = New GridRelationDescriptor()
+		'SourceListSet name for look up.
 
-childRelation.RelationKind = RelationKind.ForeignKeyKeyWords
+		childRelation.ChildTableName = "Items"
 
+		childRelation.RelationKeys.Add("customerID", "CustomerID")
 
+		childRelation.ChildTableDescriptor.AllowEdit = True;
 
-'SourceListSet name for look up.
+		childRelation.ChildTableDescriptor.AllowNew = True;
 
-childRelation.ChildTableName = "Items"
+		Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 
-childRelation.RelationKeys.Add("customerID", "CustomerID")
-
-childRelation.ChildTableDescriptor.AllowEdit = True;
-
-childRelation.ChildTableDescriptor.AllowNew = True;
-
-Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Here is a sample output.
 
@@ -28864,13 +28789,11 @@ Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img364.jpeg)
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Employee Territory Order Demo\_
 
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Employee Territory Order Demo\_
-
-ListItem Reference Relation
+#### ListItem Reference Relation
 
 ListItemReference is an object reference relation for looking up values from a strong typed collection. Like ForeignKeyReference, it is also an n:1 relation where multiple records in the parent table can reference the same record in the related table. One difference between the ForeignKeyReference and ListItemReference is that the former uses a key to look up the values whereas the latter uses an object to look up the values in a nested collection.
 
@@ -28886,603 +28809,601 @@ The following steps demonstrate this process.
 
 
 
-[C#]
+   ~~~ cs
 
 
+		//Countries Collection.
 
-//Countries Collection.
+		[Serializable]
 
-[Serializable]
+		public class CountriesCollection : ArrayList
 
-public class CountriesCollection : ArrayList
+		{
 
-{
+			public new Country this[int index]
 
-    public new Country this[int index]
+			{
 
-    {
+				get
 
-        get
+				{
 
-        {
+					return (Country) base[index];
 
-            return (Country) base[index];
+				}
 
-        }
+				set
 
-        set
+				{
 
-        {
+					base[index] = value;
 
-            base[index] = value;
+				}
 
-        }
+			}
 
-    }
 
 
+			public static CountriesCollection CreateDefaultCollection()
 
-    public static CountriesCollection CreateDefaultCollection()
+			{
 
-    {
+				CountriesCollection countries = new CountriesCollection();
 
-        CountriesCollection countries = new CountriesCollection();
+				countries.Add(new Country("US", "United States"));
 
-        countries.Add(new Country("US", "United States"));
+				countries.Add(new Country("CA", "Canada"));
 
-        countries.Add(new Country("CA", "Canada"));
+				countries.Add(new Country("AU", "Australia"));
 
-        countries.Add(new Country("AU", "Australia"));
+				countries.Add(new Country("BR", "Brazil"));
 
-        countries.Add(new Country("BR", "Brazil"));
+				countries.Add(new Country("IO", "British Indian Ocean Territory"));
 
-        countries.Add(new Country("IO", "British Indian Ocean Territory"));
+				countries.Add(new Country("CN", "China"));
 
-        countries.Add(new Country("CN", "China"));
+				countries.Add(new Country("FI", "Finland"));
 
-        countries.Add(new Country("FI", "Finland"));
+				countries.Add(new Country("FR", "France"));
 
-        countries.Add(new Country("FR", "France"));
+				countries.Add(new Country("DE", "Germany"));
 
-        countries.Add(new Country("DE", "Germany"));
+				countries.Add(new Country("HK", "Hong Kong"));
 
-        countries.Add(new Country("HK", "Hong Kong"));
+				countries.Add(new Country("HU", "Hungary"));
 
-        countries.Add(new Country("HU", "Hungary"));
+				countries.Add(new Country("IS", "Iceland"));
 
-        countries.Add(new Country("IS", "Iceland"));
+				countries.Add(new Country("IN", "India"));
 
-        countries.Add(new Country("IN", "India"));
+				countries.Add(new Country("JP", "Japan"));
 
-        countries.Add(new Country("JP", "Japan"));
+				countries.Add(new Country("MY", "Malaysia"));
 
-        countries.Add(new Country("MY", "Malaysia"));
+				countries.Add(new Country("SG", "Singapore"));
 
-        countries.Add(new Country("SG", "Singapore"));
+				countries.Add(new Country("CH", "Switzerland"));
 
-        countries.Add(new Country("CH", "Switzerland"));
+				return countries;
 
-        return countries;
+			}
 
-    }
 
 
+			public override bool IsReadOnly
 
-    public override bool IsReadOnly
+			{
 
-    {
+				get
 
-        get
+				{
 
-        {
+					return true;
 
-            return true;
+				}
 
-        }
+			}
 
-    }
 
 
+			public override bool IsFixedSize
 
-    public override bool IsFixedSize
+			{
 
-    {
+				get
 
-        get
+				{
 
-        {
+					return true;
 
-            return true;
+				}
 
-        }
+			}
 
-    }
 
 
+		}
 
-}
 
 
+		//Country Class.
 
-//Country Class.
+		[Serializable]
 
-[Serializable]
+		public class Country
 
-public class Country
+		{
 
-{
+			private string _code;
 
-    private string _code;
+			private string _name;
 
-    private string _name;
 
 
+			public  Country()
 
-    public  Country()
+			{
 
-    {
+			}
 
-    }
 
 
+			public  Country(string strCode, string strName)
 
-    public  Country(string strCode, string strName)
+			{
 
-    {
+				this._code = strCode;
 
-        this._code = strCode;
+				this._name = strName;
 
-        this._name = strName;
+			}
 
-    }
 
 
+			[Browsable(true)]
 
-    [Browsable(true)]
+			public string CountryCode
 
-    public string CountryCode
+			{
 
-    {
+				get
 
-        get
+				{
 
-        {
+					return _code;
 
-            return _code;
+				}
 
-        }
+				set
 
-        set
+				{
 
-        {
+					_code = value;
 
-            _code = value;
+				}
 
-        }
+			}
 
-    }
 
 
+			[Browsable(true)]
 
-    [Browsable(true)]
+			public string Name
 
-    public string Name
+			{
 
-    {
+				get
 
-        get
+				{
 
-        {
+					return _name ;
 
-            return _name ;
+				}
 
-        }
+				set
 
-        set
+				{
 
-        {
+					_name = value;
 
-            _name = value;
+				}
 
-        }
+			}
 
-    }
 
 
+			public override string ToString()
 
-    public override string ToString()
+			{
 
-    {
+				return this._name + "(" + this._code + ")";
 
-        return this._name + "(" + this._code + ")";
+			}
 
-    }
+		}
 
-}
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
 
-[VB.NET]
 
+		'Countries Collection
 
+		<Serializable()>  _
 
-'Countries Collection
+		Public Class CountriesCollection
 
-<Serializable()>  _
+		Inherits ArrayList
 
-Public Class CountriesCollection
 
-Inherits ArrayList
 
+		Default Public Shadows Property Item(index As Integer) As Country
 
+		Get
 
-Default Public Shadows Property Item(index As Integer) As Country
+		Return CType(MyBase.Item(index), Country)
 
-Get
+		End Get
 
-Return CType(MyBase.Item(index), Country)
+		Set
 
-End Get
+		MyBase.Item(index) = Value
 
-Set
+		End Set
 
-MyBase.Item(index) = Value
+		End Property        
 
-End Set
 
-End Property        
 
+		Public Shared Function CreateDefaultCollection() As CountriesCollection
 
+			  Dim countries As New CountriesCollection()
 
-Public Shared Function CreateDefaultCollection() As CountriesCollection
+			  countries.Add(New Country("US", "United States"))
 
-      Dim countries As New CountriesCollection()
+			  countries.Add(New Country("CA", "Canada"))
 
-      countries.Add(New Country("US", "United States"))
+			  countries.Add(New Country("AU", "Australia"))
 
-      countries.Add(New Country("CA", "Canada"))
+			  countries.Add(New Country("BR", "Brazil"))
 
-      countries.Add(New Country("AU", "Australia"))
+			  countries.Add(New Country("IO", "British Indian Ocean Territory"))
 
-      countries.Add(New Country("BR", "Brazil"))
+			  countries.Add(New Country("CN", "China"))
 
-      countries.Add(New Country("IO", "British Indian Ocean Territory"))
+			  countries.Add(New Country("FI", "Finland"))
 
-      countries.Add(New Country("CN", "China"))
+			  countries.Add(New Country("FR", "France"))
 
-      countries.Add(New Country("FI", "Finland"))
+			  countries.Add(New Country("DE", "Germany"))
 
-      countries.Add(New Country("FR", "France"))
+			  countries.Add(New Country("HK", "Hong Kong"))
 
-      countries.Add(New Country("DE", "Germany"))
+			  countries.Add(New Country("HU", "Hungary"))
 
-      countries.Add(New Country("HK", "Hong Kong"))
+			  countries.Add(New Country("IS", "Iceland"))
 
-      countries.Add(New Country("HU", "Hungary"))
+			  countries.Add(New Country("IN", "India"))
 
-      countries.Add(New Country("IS", "Iceland"))
+			  countries.Add(New Country("JP", "Japan"))
 
-      countries.Add(New Country("IN", "India"))
+			  countries.Add(New Country("MY", "Malaysia"))
 
-      countries.Add(New Country("JP", "Japan"))
+			  countries.Add(New Country("SG", "Singapore"))
 
-      countries.Add(New Country("MY", "Malaysia"))
+			  countries.Add(New Country("CH", "Switzerland"))
 
-      countries.Add(New Country("SG", "Singapore"))
+			  Return countries
 
-      countries.Add(New Country("CH", "Switzerland"))
+		End Function
 
-      Return countries
 
-End Function
 
+		Public Overrides ReadOnly Property IsReadOnly() As Boolean
 
+		Get
 
-Public Overrides ReadOnly Property IsReadOnly() As Boolean
+		Return True
 
-Get
+		End Get
 
-Return True
+		End Property
 
-End Get
 
-End Property
 
 
 
+		Public Overrides ReadOnly Property IsFixedSize() As Boolean
 
+		Get
 
-Public Overrides ReadOnly Property IsFixedSize() As Boolean
+		Return True
 
-Get
+		End Get
 
-Return True
+		End Property
 
-End Get
+		End Class
 
-End Property
 
-End Class
 
+		'Country Class.
 
+		<Serializable()>  _
 
-'Country Class.
+		Public Class Country
 
-<Serializable()>  _
+		Private _code As String
 
-Public Class Country
+		Private _name As String
 
-Private _code As String
 
-Private _name As String
 
+		Public Sub New()
 
+		End Sub
 
-Public Sub New()
 
-End Sub
 
+		Public Sub New(strCode As String, strName As String)
 
+		Me._code = strCode
 
-Public Sub New(strCode As String, strName As String)
+		Me._name = strName
 
-Me._code = strCode
+		End Sub    
 
-Me._name = strName
+		<Browsable(True)>  _
 
-End Sub    
+		Public Property CountryCode() As String
 
-<Browsable(True)>  _
+		Get
 
-Public Property CountryCode() As String
+		Return _code
 
-Get
+		End Get
 
-Return _code
+		Set
 
-End Get
+		_code = value
 
-Set
+		End Set
 
-_code = value
+		End Property
 
-End Set
 
-End Property
 
+		<Browsable(True)>  _
 
+		Public Property Name() As String
 
-<Browsable(True)>  _
+		Get
 
-Public Property Name() As String
+		Return _name
 
-Get
+		End Get
 
-Return _name
+		Set
 
-End Get
+		_name = value
 
-Set
+		End Set
 
-_name = value
+		End Property
 
-End Set
 
-End Property
 
+		Public Overrides Function ToString() As String
 
+		Return Me._name + "(" + Me._code + ")"
 
-Public Overrides Function ToString() As String
+		End Function
 
-Return Me._name + "(" + Me._code + ")"
+		End Class
+		
+   ~~~
+   {:.prettyprint }
 
-End Function
+2. Create an object of USStates and add this object into the SourceListSet with a lookup name.
 
-End Class
 
-6. 2. Create an object of USStates and add this object into the SourceListSet with a lookup name.
 
+   ~~~ cs
 
 
-[C#]
 
+		CountriesCollection countries = CountriesCollection.CreateDefaultCollection();
 
+		this.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries);
 
-CountriesCollection countries = CountriesCollection.CreateDefaultCollection();
 
-this.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries);
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
 
-[VB.NET]
+		Dim countries As CountriesCollection = CountriesCollection.CreateDefaultCollection()
 
+		Me.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries)
 
-
-Dim countries As CountriesCollection = CountriesCollection.CreateDefaultCollection()
-
-Me.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries)
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Create a datatable with one of the columns type as Country.
 
+   ~~~ cs
 
+		DataTable table = new DataTable();
 
-[C#]
+		table.Columns.Add("Id", typeof(string));
 
-
-
-DataTable table = new DataTable();
-
-table.Columns.Add("Id", typeof(string));
-
-table.Columns.Add("Country", typeof(Country));
+		table.Columns.Add("Country", typeof(Country));
 
 
 
-//Adds Rows.
+		//Adds Rows.
 
-for (int i = 0; i < 25; i++)
+		for (int i = 0; i < 25; i++)
 
-{
+		{
 
-    table.Rows.Add(table.NewRow());
+			table.Rows.Add(table.NewRow());
 
-    table.Rows[i][0] = i;
+			table.Rows[i][0] = i;
 
-    table.Rows[i][1] = countries[i % 8];
+			table.Rows[i][1] = countries[i % 8];
 
-}
+		}
 
-
-
-[VB.NET]
-
+   ~~~
+   {:.prettyprint }
 
 
-Dim table As New DataTable()
+   ~~~ vbnet
+   
+		Dim table As New DataTable()
 
-table.Columns.Add("Id", GetType(String))
+		table.Columns.Add("Id", GetType(String))
 
-table.Columns.Add("Country", GetType(Country))
-
-
-
-'Adds Rows.
-
-Dim i As Integer
-
-For i = 0 To 24
-
-table.Rows.Add(table.NewRow())
-
-table.Rows(i)(0) = i
-
-table.Rows(i)(1) = countries((i Mod 8))
-
-Next i
+		table.Columns.Add("Country", GetType(Country))
 
 
+
+		'Adds Rows.
+
+		Dim i As Integer
+
+		For i = 0 To 24
+
+		table.Rows.Add(table.NewRow())
+
+		table.Rows(i)(0) = i
+
+		table.Rows(i)(1) = countries((i Mod 8))
+
+		Next i
+
+   ~~~
+   {:.prettyprint }
 
 4. Establish the ForeignKeyReference relationship.
 
+   ~~~ cs
 
+		GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
 
-[C#]
 
 
+		GridRelationDescriptor countriesRd = new GridRelationDescriptor();
 
-GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
+		countriesRd.Name = "Country";
 
+		countriesRd.MappingName = "Country";
 
+		countriesRd.RelationKind = RelationKind.ListItemReference;
 
-GridRelationDescriptor countriesRd = new GridRelationDescriptor();
 
-countriesRd.Name = "Country";
 
-countriesRd.MappingName = "Country";
+		//SourceListSet name for look up.
 
-countriesRd.RelationKind = RelationKind.ListItemReference;
+		countriesRd.ChildTableName = "Countries";  
 
 
 
-//SourceListSet name for look up.
+		//Formats ChildList.
 
-countriesRd.ChildTableName = "Countries";  
+		countriesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227);
 
 
 
-//Formats ChildList.
+		//Hides Key column.
 
-countriesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227);
+		countriesRd.ChildTableDescriptor.VisibleColumns.Add("Name");
 
+		countriesRd.ChildTableDescriptor.SortedColumns.Add("Name");
 
+		countriesRd.ChildTableDescriptor.AllowEdit = true;
 
-//Hides Key column.
 
-countriesRd.ChildTableDescriptor.VisibleColumns.Add("Name");
 
-countriesRd.ChildTableDescriptor.SortedColumns.Add("Name");
+		//Disallows users to modify states.
 
-countriesRd.ChildTableDescriptor.AllowEdit = true;
+		countriesRd.ChildTableDescriptor.AllowNew = true;
 
 
 
-//Disallows users to modify states.
+		mainTd.Relations.Add(countriesRd);
 
-countriesRd.ChildTableDescriptor.AllowNew = true;
 
 
+		//Assigns data source.
 
-mainTd.Relations.Add(countriesRd);
+		this.gridGroupingControl1.DataSource = table;
 
+		mainTd.Name = "ListItemReference";
 
+   ~~~
+   {:.prettyprint }
 
-//Assigns data source.
+   ~~~ vbnet
 
-this.gridGroupingControl1.DataSource = table;
+		Dim mainTd As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
 
-mainTd.Name = "ListItemReference";
 
 
+		Dim countriesRd As New GridRelationDescriptor()
 
-[VB.NET]
+		countriesRd.Name = "Country"
 
+		countriesRd.MappingName = "Country"
 
+		countriesRd.RelationKind = RelationKind.ListItemReference
 
-Dim mainTd As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
 
 
+		'SourceListSet name for look up.
 
-Dim countriesRd As New GridRelationDescriptor()
+		countriesRd.ChildTableName = "Countries" 
 
-countriesRd.Name = "Country"
 
-countriesRd.MappingName = "Country"
 
-countriesRd.RelationKind = RelationKind.ListItemReference
+		'Formats ChildList.
 
+		countriesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227)
 
 
-'SourceListSet name for look up.
 
-countriesRd.ChildTableName = "Countries" 
+		' Hides Key Column.
 
+		countriesRd.ChildTableDescriptor.VisibleColumns.Add("Name")
 
+		countriesRd.ChildTableDescriptor.SortedColumns.Add("Name")
 
-'Formats ChildList.
+		countriesRd.ChildTableDescriptor.AllowEdit = True
 
-countriesRd.ChildTableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 245, 227)
 
 
+		'Disallows users to modify states.
 
-' Hides Key Column.
+		countriesRd.ChildTableDescriptor.AllowNew = True
 
-countriesRd.ChildTableDescriptor.VisibleColumns.Add("Name")
 
-countriesRd.ChildTableDescriptor.SortedColumns.Add("Name")
 
-countriesRd.ChildTableDescriptor.AllowEdit = True
+		mainTd.Relations.Add(countriesRd)
 
 
 
-'Disallows users to modify states.
+		'Assigns data source.
 
-countriesRd.ChildTableDescriptor.AllowNew = True
+		Me.gridGroupingControl1.DataSource = Table
 
+		mainTd.Name = “ListItemReference”
 
-
-mainTd.Relations.Add(countriesRd)
-
-
-
-'Assigns data source.
-
-Me.gridGroupingControl1.DataSource = Table
-
-mainTd.Name = “ListItemReference”
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Here is a sample output that displays a look up child list for the data column Country with value Brazil.
 
@@ -29492,13 +29413,11 @@ mainTd.Name = “ListItemReference”
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img366.jpeg)
+> Note: For more details, refer the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\List Item Reference Demo_
 
-_Note: For more details, refer the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\List Item Reference Demo_
-
-Uniform Child List Relation
+#### Uniform Child List Relation
 
 UniformChildList relation can be used to map nested strong typed collection inside a parent collection. If a public property is an object, then it will be displayed in a Nested Table. The collection in the below example consists of two kinds of objects, ParentObj and ChildObj, where every ParentObj is associated with a collection of ChildObjs and is represented by the public property named 'Child'. Hence, a nested table is always created to display associated children for a given parent.
 
@@ -29508,671 +29427,667 @@ Example
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-public class ChildObj : INotifyPropertyChanged
+		public class ChildObj : INotifyPropertyChanged
 
-{
+		{
 
-    private string f1, f2;
+			private string f1, f2;
 
-    private int f3;
+			private int f3;
 
 
 
-    public ChildObj(string f1, string f2, int f3) {
+			public ChildObj(string f1, string f2, int f3) {
 
-        this.f1 = f1;
+				this.f1 = f1;
 
-        this.f2 = f2;
+				this.f2 = f2;
 
-        this.f3 = f3;
+				this.f3 = f3;
 
-    }
+			}
 
 
 
-    public string Field1
+			public string Field1
 
-    {
+			{
 
-        get { return f1; }
+				get { return f1; }
 
-        set
+				set
 
-        {
+				{
 
-            if (f1 != value)
+					if (f1 != value)
 
-            {
+					{
 
-                f1 = value;
+						f1 = value;
 
-                RaisePropertyChanged("Field1");
+						RaisePropertyChanged("Field1");
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
 
 
-    public string Field2
+			public string Field2
 
-    {
+			{
 
-        get { return f2; }
+				get { return f2; }
 
-        set
+				set
 
-        {
+				{
 
-            if (f2 != value)
+					if (f2 != value)
 
-            {
+					{
 
-                f2 = value;
+						f2 = value;
 
-                RaisePropertyChanged("Field2");
+						RaisePropertyChanged("Field2");
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
 
 
-    public int Field3
+			public int Field3
 
-    {
+			{
 
-        get { return f3; }
+				get { return f3; }
 
-        set
+				set
 
-        {
+				{
 
-            if (f3 != value)
+					if (f3 != value)
 
-            {
+					{
 
-                f3 = value;
+						f3 = value;
 
-                RaisePropertyChanged("Field3");
+						RaisePropertyChanged("Field3");
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
 
 
-    void RaisePropertyChanged(string name)
+			void RaisePropertyChanged(string name)
 
-    {
+			{
 
-        if (PropertyChanged != null)
+				if (PropertyChanged != null)
 
-            PropertyChanged(this, new PropertyChangedEventArgs(name));
+					PropertyChanged(this, new PropertyChangedEventArgs(name));
 
-    }
+			}
 
 
 
-    public event PropertyChangedEventHandler PropertyChanged;
+			public event PropertyChangedEventHandler PropertyChanged;
 
-}
+		}
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
 
 
+		Public Class ChildObj : Implements INotifyPropertyChanged
 
-Public Class ChildObj : Implements INotifyPropertyChanged
 
 
+			Private f1, f2 As String
 
-    Private f1, f2 As String
+			Private f3 As Integer
 
-    Private f3 As Integer
 
 
+			Public Sub New(ByVal f1 As String, ByVal f2 As String, ByVal f3 As Integer)
 
-    Public Sub New(ByVal f1 As String, ByVal f2 As String, ByVal f3 As Integer)
+				Me.f1 = f1
 
-        Me.f1 = f1
+				Me.f2 = f2
 
-        Me.f2 = f2
+				Me.f3 = f3
 
-        Me.f3 = f3
+			End Sub
 
-    End Sub
 
 
+			Public Property Field1() As String
 
-    Public Property Field1() As String
+				Get
 
-        Get
+					Return f1
 
-            Return f1
+				End Get
 
-        End Get
+				Set(ByVal value As String)
 
-        Set(ByVal value As String)
+					If f1 <> value Then
 
-            If f1 <> value Then
+						f1 = value
 
-                f1 = value
+						RaisePropertyChanged("Field1")
 
-                RaisePropertyChanged("Field1")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
 
 
+			Public Property Field2() As String
 
-    Public Property Field2() As String
+				Get
 
-        Get
+					Return f2
 
-            Return f2
+				End Get
 
-        End Get
+				Set(ByVal value As String)
 
-        Set(ByVal value As String)
+					If f2 <> value Then
 
-            If f2 <> value Then
+						f2 = value
 
-                f2 = value
+						RaisePropertyChanged("Field2")
 
-                RaisePropertyChanged("Field2")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
 
 
+			Public Property Field3() As Integer
 
-    Public Property Field3() As Integer
+				Get
 
-        Get
+					Return f3
 
-            Return f3
+				End Get
 
-        End Get
+				Set(ByVal value As Integer)
 
-        Set(ByVal value As Integer)
+					If f3 <> value Then
 
-            If f3 <> value Then
+						f3 = value
 
-                f3 = value
+						RaisePropertyChanged("Field3")
 
-                RaisePropertyChanged("Field3")
+					End If
 
-            End If
+				End Set
 
-        End Set
+			End Property
 
-    End Property
 
 
+			Sub RaisePropertyChanged(ByVal name As String)
 
-    Sub RaisePropertyChanged(ByVal name As String)
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
 
-        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
+			End Sub
 
-    End Sub
 
 
+			Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 
-    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 
 
+		End Class
 
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Create another class(ParentObj) that contains a reference to the above class (ChildObj). The instances of this class make the parent records. Both the classes implement INotifyPropertyChanged interface in order to get notified of any property changes.
 
 
 
-[C#]
+   ~~~ cs
 
+		public class ParentObj : INotifyPropertyChanged
 
+		{
 
-public class ParentObj : INotifyPropertyChanged
+			private string f1, f2;
 
-{
+			private int f3;
 
-    private string f1, f2;
+			private BindingList<ChildObj> childObj = new BindingList<ChildObj>();
 
-    private int f3;
 
-    private BindingList<ChildObj> childObj = new BindingList<ChildObj>();
 
+			public ParentObj(string f1, string f2, int f3, params ChildObj[] c)
 
+			{
 
-    public ParentObj(string f1, string f2, int f3, params ChildObj[] c)
+				this.f1 = f1;
 
-    {
+				this.f2 = f2;
 
-        this.f1 = f1;
+				this.f3 = f3;
 
-        this.f2 = f2;
+				foreach(ChildObj i in c)
 
-        this.f3 = f3;
+					childObj.Add(i);
 
-        foreach(ChildObj i in c)
+			}
 
-            childObj.Add(i);
 
-    }
 
+			public string Field1
 
+			{
 
-    public string Field1
+				get { return f1; }
 
-    {
+				set
 
-        get { return f1; }
+				{
 
-        set
+					if (f1 != value) 
 
-        {
+					{ 
 
-            if (f1 != value) 
+						f1 = value; 
 
-            { 
+						RaisePropertyChanged("Field1"); 
 
-                f1 = value; 
+					}
 
-                RaisePropertyChanged("Field1"); 
+				}
 
-            }
+			}
 
-        }
 
-    }
 
+			public string Field2
 
+			{
 
-    public string Field2
+				get { return f2; }
 
-    {
+				set
 
-        get { return f2; }
+				{
 
-        set
+					if (f2 != value)
 
-        {
+					{
 
-            if (f2 != value)
+						f2 = value;
 
-            {
+						RaisePropertyChanged("Field2");
 
-                f2 = value;
+					}
 
-                RaisePropertyChanged("Field2");
+				}
 
-            }
+			}
 
-        }
 
-    }
 
+			public int Field3 {
 
+				get { return f3; }
 
-    public int Field3 {
+				set
 
-        get { return f3; }
+				{
 
-        set
+					if (f3 != value)
 
-        {
+					{
 
-            if (f3 != value)
+						f3 = value;
 
-            {
+						RaisePropertyChanged("Field3");
 
-                f3 = value;
+					}
 
-                RaisePropertyChanged("Field3");
+				}
 
-            }
+			}
 
-        }
 
-    }
 
+			public BindingList<ChildObj> Child {
 
+				get { return childObj;  }
 
-    public BindingList<ChildObj> Child {
+			}
 
-        get { return childObj;  }
 
-    }
 
+			void RaisePropertyChanged(string name)
 
+			{
 
-    void RaisePropertyChanged(string name)
+				if (PropertyChanged != null)
 
-    {
+					PropertyChanged(this, new PropertyChangedEventArgs(name));
 
-        if (PropertyChanged != null)
+			}
 
-            PropertyChanged(this, new PropertyChangedEventArgs(name));
 
-    }
 
+			public event PropertyChangedEventHandler PropertyChanged;
 
+		}
 
-    public event PropertyChangedEventHandler PropertyChanged;
+   ~~~
+   {:.prettyprint }
 
-}
+   ~~~ vbnet
 
+		Public Class ParentObj : Implements INotifyPropertyChanged
 
 
-[VB.NET]
 
+			Private f1, f2 As String
 
+			Private f3 As Integer
 
-Public Class ParentObj : Implements INotifyPropertyChanged
+			Private childObj As BindingList(Of ChildObj) = New BindingList(Of ChildObj)()
 
 
 
-    Private f1, f2 As String
+			Public Sub New(ByVal f1 As String, ByVal f2 As String, ByVal f3 As Integer, ByVal ParamArray c As ChildObj())
 
-    Private f3 As Integer
+				Me.f1 = f1
 
-    Private childObj As BindingList(Of ChildObj) = New BindingList(Of ChildObj)()
+				Me.f2 = f2
 
+				Me.f3 = f3
 
+				For Each i As ChildObj In c
 
-    Public Sub New(ByVal f1 As String, ByVal f2 As String, ByVal f3 As Integer, ByVal ParamArray c As ChildObj())
+					childObj.Add(i)
 
-        Me.f1 = f1
+				Next i
 
-        Me.f2 = f2
+			End Sub
 
-        Me.f3 = f3
 
-        For Each i As ChildObj In c
 
-            childObj.Add(i)
+			Public Property Field1() As String
 
-        Next i
+				Get
 
-    End Sub
+					Return f1
 
+				End Get
 
+				Set(ByVal value As String)
 
-    Public Property Field1() As String
+					If f1 <> value Then
 
-        Get
+						f1 = value
 
-            Return f1
+						RaisePropertyChanged("Field1")
 
-        End Get
+					End If
 
-        Set(ByVal value As String)
+				End Set
 
-            If f1 <> value Then
+			End Property
 
-                f1 = value
 
-                RaisePropertyChanged("Field1")
 
-            End If
+			Public Property Field2() As String
 
-        End Set
+				Get
 
-    End Property
+					Return f2
 
+				End Get
 
+				Set(ByVal value As String)
 
-    Public Property Field2() As String
+					If f2 <> value Then
 
-        Get
+						f2 = value
 
-            Return f2
+						RaisePropertyChanged("Field2")
 
-        End Get
+					End If
 
-        Set(ByVal value As String)
+				End Set
 
-            If f2 <> value Then
+			End Property
 
-                f2 = value
 
-                RaisePropertyChanged("Field2")
 
-            End If
+			Public Property Field3() As Integer
 
-        End Set
+				Get
 
-    End Property
+					Return f3
 
+				End Get
 
+				Set(ByVal value As Integer)
 
-    Public Property Field3() As Integer
+					If f3 <> value Then
 
-        Get
+						f3 = value
 
-            Return f3
+						RaisePropertyChanged("Field3")
 
-        End Get
+					End If
 
-        Set(ByVal value As Integer)
+				End Set
 
-            If f3 <> value Then
+			End Property
 
-                f3 = value
 
-                RaisePropertyChanged("Field3")
 
-            End If
+			Public ReadOnly Property Child() As BindingList(Of ChildObj)
 
-        End Set
+				Get
 
-    End Property
+					Return childObj
 
+				End Get
 
+			End Property
 
-    Public ReadOnly Property Child() As BindingList(Of ChildObj)
 
-        Get
 
-            Return childObj
+			Sub RaisePropertyChanged(ByVal name As String)
 
-        End Get
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
 
-    End Property
+			End Sub
 
 
 
-    Sub RaisePropertyChanged(ByVal name As String)
+			Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 
-        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
+		End Class
 
-    End Sub
-
-
-
-    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-
-End Class
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Generate the collection using BindingList class, which implements ListChanged events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-BindingList<ParentObj> topList = new BindingList<ParentObj>();
+		BindingList<ParentObj> topList = new BindingList<ParentObj>();
 
-BindingList<ChildObj> childList = new BindingList<ChildObj>();
-
-
-
-Random r = new Random();
-
-for (int i = 0; i < 30; i++)
-
-childList.Add(new ChildObj(string.Format("Name{0}", r.Next(10)), string.Format("Desc{0}", r.Next(20)), r.Next(30)));
+		BindingList<ChildObj> childList = new BindingList<ChildObj>();
 
 
 
-for (int i = 0; i < 5; i++)
+		Random r = new Random();
 
-{
+		for (int i = 0; i < 30; i++)
 
-topList.Add(new ParentObj(string.Format("Name{0}", r.Next(5)), string.Format("Desc{0}", r.Next(15)), r.Next(20)));
-
-for (int j = i * 5; j < (i * 5) + 5; j++)
-
-topList[i].Child.Add(childList[j]);
-
-}
+		childList.Add(new ChildObj(string.Format("Name{0}", r.Next(10)), string.Format("Desc{0}", r.Next(20)), r.Next(30)));
 
 
 
-[VB.NET]
+		for (int i = 0; i < 5; i++)
+
+		{
+
+		topList.Add(new ParentObj(string.Format("Name{0}", r.Next(5)), string.Format("Desc{0}", r.Next(15)), r.Next(20)));
+
+		for (int j = i * 5; j < (i * 5) + 5; j++)
+
+		topList[i].Child.Add(childList[j]);
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		Private topList As BindingList(Of UniformChildList_2005.ParentObj) = New BindingList(Of UniformChildList_2005.ParentObj)()
+
+		Private childList As BindingList(Of UniformChildList_2005.ChildObj) = New BindingList(Of UniformChildList_2005.ChildObj)()
 
 
 
-Private topList As BindingList(Of UniformChildList_2005.ParentObj) = New BindingList(Of UniformChildList_2005.ParentObj)()
+		Private r As Random = New Random()
 
-Private childList As BindingList(Of UniformChildList_2005.ChildObj) = New BindingList(Of UniformChildList_2005.ChildObj)()
+		For i As Integer = 0 To 29
 
+		childList.Add(New UniformChildList_2005.ChildObj(String.Format("Name{0}", r.Next(10)), String.Format("Desc{0}", r.Next(20)), r.Next(30)))
 
-
-Private r As Random = New Random()
-
-For i As Integer = 0 To 29
-
-childList.Add(New UniformChildList_2005.ChildObj(String.Format("Name{0}", r.Next(10)), String.Format("Desc{0}", r.Next(20)), r.Next(30)))
-
-Next i
+		Next i
 
 
 
-For i As Integer = 0 To 4
+		For i As Integer = 0 To 4
 
-topList.Add(New UniformChildList_2005.ParentObj(String.Format("Name{0}", r.Next(5)), String.Format("Desc{0}", r.Next(15)), r.Next(20)))
+		topList.Add(New UniformChildList_2005.ParentObj(String.Format("Name{0}", r.Next(5)), String.Format("Desc{0}", r.Next(15)), r.Next(20)))
 
-Dim j As Integer = i * 5
+		Dim j As Integer = i * 5
 
-Do While j < (i * 5) + 5
+		Do While j < (i * 5) + 5
 
-topList(i).Child.Add(childList(j))
+		topList(i).Child.Add(childList(j))
 
-j += 1
+		j += 1
 
-Loop
+		Loop
 
-Next i
+		Next i
 
-
+   ~~~
+   {:.prettyprint }
 
 4. Assign the above collection to the datasource of grouping grid.
 
-
-
-[C#]
-
-
-
-gridGroupingControl1.DataSource = topList;
+   ~~~ cs
 
 
 
-[VB.NET]
+		gridGroupingControl1.DataSource = topList;
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-GridGroupingControl1.DataSource = topList
+		GridGroupingControl1.DataSource = topList
 
-
+   ~~~
+   {:.prettyprint }
 
 5. Establish UniformChildList relation kind.
 
 
 
-[C#]
+   ~~~ cs
+
+		GridRelationDescriptor relation = new GridRelationDescriptor();
+
+		relation.RelationKind = RelationKind.UniformChildList;
+
+		relation.MappingName = "Child";
+
+		relation.Name = "Child";
+
+		relation.ChildTableName = "ChildTable";
+
+		gridGroupingControl1.TableDescriptor.Relations.Add(relation);
 
 
 
-GridRelationDescriptor relation = new GridRelationDescriptor();
+		this.gridGroupingControl1.ShowGroupDropArea = true;
 
-relation.RelationKind = RelationKind.UniformChildList;
+		GridTable chiltTable = gridGroupingControl1.GetTable("ChildTable");
 
-relation.MappingName = "Child";
+		this.gridGroupingControl1.AddGroupDropArea(chiltTable);
 
-relation.Name = "Child";
+		chiltTable.TableDescriptor.GroupedColumns.Add("Field1");
 
-relation.ChildTableName = "ChildTable";
+   ~~~
+   {:.prettyprint }
 
-gridGroupingControl1.TableDescriptor.Relations.Add(relation);
+   ~~~ vbnet
 
+		Dim relation As GridRelationDescriptor = New GridRelationDescriptor()
 
+		relation.RelationKind = RelationKind.UniformChildList
 
-this.gridGroupingControl1.ShowGroupDropArea = true;
+		relation.MappingName = "Child"
 
-GridTable chiltTable = gridGroupingControl1.GetTable("ChildTable");
+		relation.Name = "Child"
 
-this.gridGroupingControl1.AddGroupDropArea(chiltTable);
+		relation.ChildTableName = "ChildTable"
 
-chiltTable.TableDescriptor.GroupedColumns.Add("Field1");
-
-
-
-[VB.NET]
-
-
-
-Dim relation As GridRelationDescriptor = New GridRelationDescriptor()
-
-relation.RelationKind = RelationKind.UniformChildList
-
-relation.MappingName = "Child"
-
-relation.Name = "Child"
-
-relation.ChildTableName = "ChildTable"
-
-gridGroupingControl1.TableDescriptor.Relations.Add(relation)
+		gridGroupingControl1.TableDescriptor.Relations.Add(relation)
 
 
 
-Me.gridGroupingControl1.ShowGroupDropArea = True
+		Me.gridGroupingControl1.ShowGroupDropArea = True
 
-Dim chiltTable As GridTable = gridGroupingControl1.GetTable("ChildTable")
+		Dim chiltTable As GridTable = gridGroupingControl1.GetTable("ChildTable")
 
-Me.gridGroupingControl1.AddGroupDropArea(chiltTable)
+		Me.gridGroupingControl1.AddGroupDropArea(chiltTable)
 
-chiltTable.TableDescriptor.GroupedColumns.Add("Field1")
+		chiltTable.TableDescriptor.GroupedColumns.Add("Field1")
 
-
+   ~~~
+   {:.prettyprint }
 
 6. Here is a sample output.
 
@@ -30180,11 +30095,9 @@ chiltTable.TableDescriptor.GroupedColumns.Add("Field1")
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img368.jpeg)
-
-_Note: For more details, refer to the following browser sample:_
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Uniform Child List Demo_
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Uniform Child List Demo_
 
 Working with Relations
 
@@ -30194,21 +30107,19 @@ AutoPopulateRelations Property
 
 It specifies if the relations should be automatically generated when you assign DataSource with a DataTable with constraints or a DataSet with relations defined. It is true by default.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridGroupingControl1.AutoPopulateRelations = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.AutoPopulateRelations = False
 
-
+{% endhighlight %}
 
 ShowRelationFields Property
 
@@ -30235,41 +30146,39 @@ Default value is ShowDisplayFieldsOnly.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridGroupingControl1.ShowRelationFields = ShowRelationFields.ShowAllRelatedFields;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.gridGroupingControl1.ShowRelationFields = ShowRelationFields.ShowAllRelatedFields;
 
-
+{% endhighlight %}
 
 MaxNestedCollectionRecursionLevel Property
 
 When nested collection is used, this property specifies the number of levels of recursion allowed when self-relations are detected. The settings below lets the grid to loop through up to four recursion levels.
 
-[C#]
+{% highlight c# %}
 
 
 
 this.gridGroupingControl1.Engine.MaxNestedCollectionRecurseLevel = 4;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.Engine.MaxNestedCollectionRecurseLevel = 4
 
-
+{% endhighlight %}
 
 QueryShowRelationDisplayFields Event
 
@@ -30277,13 +30186,9 @@ It is raised for every foreign-key relation. At runtime, it allows you to contro
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridGroupingControl1.Engine.QueryShowRelationDisplayFields += new QueryShowRelationFieldsEventHandler(Engine_QueryShowRelationDisplayFields);
-
-
 
 void Engine_QueryShowRelationDisplayFields(object sender, QueryShowRelationFieldsEventArgs e)
 
@@ -30299,9 +30204,9 @@ e.ShowRelationFields = ShowRelationFields.Hide;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30319,7 +30224,7 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 QueryShowField Event
 
@@ -30327,7 +30232,7 @@ It gets fired for every field in the Field Descriptor Collection of individual t
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30345,9 +30250,9 @@ void Engine_QueryShowField(object sender, QueryShowFieldEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30365,13 +30270,13 @@ End If
 
 End Sub
 
-
+{% endhighlight %}
 
 QueryAddRelation Event
 
 It is invoked for every relation that is being added to the RelationDescriptorCollection. By setting e.Cancel to true, you can avoid specific relations being added.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30387,9 +30292,9 @@ void Engine_QueryAddRelation(object sender, QueryAddRelationEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30403,13 +30308,15 @@ Console.WriteLine(e.Relation.Name)
 
 End Sub
 
+{% endhighlight %}
+
 QueryShowNestedPropertiesFields Event
 
 It is called when there exists nested properties in the bound datasource. With the help of this event, you can determine if the individual fields in the nested property should be displayed.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -30427,9 +30334,9 @@ void Engine_QueryShowNestedPropertiesFields(object sender, QueryShowNestedProper
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -30446,6 +30353,8 @@ e.Cancel = True
 End If
 
 End Sub
+
+{% endhighlight %}
 
 #### Paging Support in GridGrouping Control
 
@@ -38207,7 +38116,8 @@ Private Sub gridGroupingControl1_CurrentRecordContextChange(ByVal sender As Obje
 
 End Sub
 {% endhighlight  %}
-GroupAdded Event
+
+#### GroupAdded Event
 
 This event occurs when a new group is added to the table after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
@@ -38215,9 +38125,9 @@ _Table 111: Group add event_
 
 <table>
 <tr>
-<td>
-PROPERTY</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTY</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38231,9 +38141,7 @@ Gets the affected group.</td></tr>
 
 You can handle this event to make the child groups that were not initially expanded. The following code example illustrates this.
 
-[C#]
-
-
+{% highlight c# %}
 
 private void gridGroupingControl1_GroupAdded(object sender, GroupEventArgs e)
 
@@ -38243,15 +38151,9 @@ private void gridGroupingControl1_GroupAdded(object sender, GroupEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub gridGroupingControl1_GroupAdded(ByVal sender As Object, ByVal e As GroupEventArgs)
 
@@ -38259,7 +38161,10 @@ e.Group.IsExpanded = False
 
 End Sub
 
-GroupCollapsing Event
+{% endhighlight %}
+
+
+#### GroupCollapsing Event
 
 This occurs before a group is collapsed. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
@@ -38281,7 +38186,7 @@ Gets the affected group.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38299,9 +38204,9 @@ private void gridGroupingControl1_GroupCollapsing(object sender, GroupEventArgs 
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -38319,9 +38224,9 @@ Next r
 
 End Sub
 
+{% endhighlight %}
 
-
-GroupCollapsed Event
+#### GroupCollapsed Event
 
 This occurs when a group is collapsed. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
@@ -38329,9 +38234,9 @@ _Table 113: Group collapsed event_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38343,7 +38248,7 @@ Gets the affected group.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38361,11 +38266,9 @@ private void gridGroupingControl1_GroupCollapsed(object sender, GroupEventArgs e
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 AddHandler gridGroupingControl1.GroupCollapsed, AddressOf gridGroupingControl1_GroupCollapsed
 
@@ -38381,7 +38284,14 @@ Next r
 
 End Sub
 
-GroupExpanding Event
+{% endhighlight %}
+
+
+
+
+
+
+#### GroupExpanding Event
 
 This occurs before a group is expanded. The event handler receives an argument of type GroupEventArgs containing the data related to this event.
 
@@ -38389,9 +38299,9 @@ _Table 114: Group expanding event_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38403,7 +38313,7 @@ Gets the affected group.</td></tr>
 </table>
 You can allow the user to expand the group by clicking the plus OR minus button. The following code example illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38426,10 +38336,9 @@ private void gridGroupingControl1_GroupExpanding(object sender, GroupEventArgs e
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private IsClickExpand As Boolean = False
 
@@ -38449,7 +38358,14 @@ Private Sub gridGroupingControl1_GroupExpanding(ByVal sender As Object, ByVal e 
 
 End Sub
 
-GroupExpanded Event
+{% endhighlight %}
+
+
+
+
+
+
+#### GroupExpanded Event
 
 This occurs when a group is expanded.The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
@@ -38457,9 +38373,9 @@ _Table 115: Group expanded event_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38471,7 +38387,7 @@ Gets the affected group.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38490,10 +38406,9 @@ Console.WriteLine("Expanded event "+ r.Info);
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 AddHandler gridGroupingControl1.GroupExpanded, AddressOf gridGroupingControl1_GroupExpanded
 
@@ -38509,7 +38424,14 @@ Next r
 
 End Sub
 
-GroupRemoving Event
+{% endhighlight %}
+
+
+
+
+
+
+#### GroupRemoving Event
 
 This event occurs before a group is removed after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
@@ -38517,9 +38439,9 @@ _Table 116: Group removing event_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38531,7 +38453,7 @@ Gets the affected group.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38551,9 +38473,9 @@ private void gridGroupingControl1_GroupExpanded(object sender, GroupEventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 AddHandler gridGroupingControl1.GroupRemoving, AddressOf gridGroupingControl1_GroupRemoving
 
@@ -38569,7 +38491,14 @@ Next r
 
 End Sub
 
-GroupSummaryInvalidated Event
+{% endhighlight %}
+
+
+
+
+
+
+#### GroupSummaryInvalidated Event
 
 This occurs when a summary has been marked dirty. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
@@ -38577,9 +38506,9 @@ _Table 117: Invalidated event_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38593,7 +38522,7 @@ You can handle this event to get updated summary value in a grid. The following 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38618,10 +38547,9 @@ private void gridGroupingControl1_GroupSummaryInvalidated(object sender, GroupEv
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub gridGroupingControl1_GroupSummaryInvalidated(ByVal sender As Object, ByVal e As GroupEventArgs)
 
@@ -38641,7 +38569,14 @@ Private Sub gridGroupingControl1_GroupSummaryInvalidated(ByVal sender As Object,
 
 End Sub
 
-RecordExpanding Event
+{% endhighlight %}
+
+
+
+
+
+
+#### RecordExpanding Event
 
 This occurs before a record with nested table is expanded. The event handler receives an argument of type RecordEventArgs containing data related to this event.
 
@@ -38649,9 +38584,9 @@ _Table 118: Properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38667,7 +38602,7 @@ The parent records that have no child record can be prevented from expanding by 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38683,9 +38618,9 @@ private void Table_RecordExpanding(object sender, RecordEventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Table_RecordExpanding(ByVal sender As Object, ByVal e As RecordEventArgs)
 
@@ -38697,7 +38632,14 @@ Private Sub Table_RecordExpanding(ByVal sender As Object, ByVal e As RecordEvent
 
 End Sub
 
-RecordValueChanging Event
+{% endhighlight %}
+
+
+
+
+
+
+#### RecordValueChanging Event
 
 This occurs when RecordFieldCell cell's value is changed and before Record.SetValue is returned. The event handler receives an argument of type RecordValueChangingEventArgs containing data related to this event.
 
@@ -38705,9 +38647,9 @@ _Table 119: Record value changing event properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38733,7 +38675,7 @@ Specifies the record.</td></tr>
 
 You can handle this event to compare the old and new values of the cell when cursor leaves the cell. The following code example illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38748,10 +38690,9 @@ private void gridGroupingControl1_RecordValueChanging(object sender, RecordValue
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private Sub gridGroupingControl1_RecordValueChanging(ByVal sender As Object, ByVal e As RecordValueChangingEventArgs)
 
@@ -38761,7 +38702,14 @@ Private Sub gridGroupingControl1_RecordValueChanging(ByVal sender As Object, ByV
 
 End Sub
 
-RecordValueChanged Event
+
+{% endhighlight %}
+
+
+
+
+
+#### RecordValueChanged Event
 
 This occurs when RecordFieldCell cell's value is changed and after Record.SetValue is returned. The event handler receives an argument of type RecordValueChangedEventArgs containing data related to this event.
 
@@ -38769,9 +38717,9 @@ _Table 120: Record value changed properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Action</td><td>
@@ -38799,7 +38747,7 @@ You can handle this event to save the current record value. The following code e
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38817,9 +38765,9 @@ private void gridGroupingControl1_RecordValueChanged(object sender, RecordValueC
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub gridGroupingControl1_RecordValueChanged(ByVal sender As Object, ByVal e As RecordValueChangedEventArgs)
 
@@ -38833,7 +38781,14 @@ Private Sub gridGroupingControl1_RecordValueChanged(ByVal sender As Object, ByVa
 
 End Sub
 
-SortingItemsInGroup Event
+{% endhighlight %}
+
+
+
+
+
+
+#### SortingItemsInGroup Event
 
 This occurs before the records for a group is sorted. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
@@ -38841,9 +38796,9 @@ _Table 121: Sorting properties_
 
 <table>
 <tr>
-<td>
- PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+ PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38855,7 +38810,7 @@ Gets the affected group.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38869,9 +38824,9 @@ Console.WriteLine("Before Sorting the records in the group: "+ e.Group.Info);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Table_SortingItemsInGroup(ByVal sender As Object, ByVal e As GroupEventArgs)
 
@@ -38879,7 +38834,14 @@ Console.WriteLine("Before Sorting the records in the group: "+ e.Group.Info)
 
 End Sub
 
-SortedItemsInGroup Event
+{% endhighlight %}
+
+
+
+
+
+
+#### SortedItemsInGroup Event
 
 This occurs after the records for a group is sorted. The event handler receives an argument of type  GroupEventArgs containing data related to this event.
 
@@ -38887,9 +38849,9 @@ _Table 122: Properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -38901,7 +38863,7 @@ Gets the affected group.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -38915,9 +38877,9 @@ Console.WriteLine("After Sorting the records in the group: "+ e.Group.Info);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Table_SortedItemsInGroup(ByVal sender As Object, ByVal e As GroupEventArgs)
 
@@ -38925,7 +38887,14 @@ Console.WriteLine("After Sorting the records in the group: "+ e.Group.Info)
 
 End Sub
 
-SourceListListChanged Event
+{% endhighlight %}
+
+
+
+
+
+
+#### SourceListListChanged Event
 
 This occurs before the table processes System.ComponentModel.IBindingList.ListChanged event of attached source list. The event handler receives an argument of type TableListChangedEventArgs containing data related to this event.
 
@@ -38933,9 +38902,9 @@ _Table 123: Source list changed properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 ListChangedType</td><td>
@@ -38989,7 +38958,7 @@ Specifies whether current record should be reset when ItemChanged notification i
 
 You can handle this event to retrieve the ListChangedType. The following code example illustrates this.
 
-[C#]
+{% highlight c# %}
 
 private void gridGroupingControl1_SourceListListChanged(object sender, TableListChangedEventArgs e)
 
@@ -39001,9 +38970,9 @@ Console.WriteLine("ListChangedType :" +e.ListChangedType.ToString() );
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub gridGroupingControl1_SourceListListChanged(ByVal sender As Object, ByVal e As TableListChangedEventArgs)
 
@@ -39011,110 +38980,116 @@ Private Sub gridGroupingControl1_SourceListListChanged(ByVal sender As Object, B
 
 End Sub
 
+{% endhighlight %}
 
 
-###### Cell Events
+
+
+
+
+
+
+#### Cell Events
 
 The Cell events are as follows:
 
 1. CellButtonClicked - Occurs when the user clicked on a child button element inside the cell renderer.
 
 
+   ~~~ cs
 
-[C#]
-
-
-
-this.groupingEngine.TableControl.CellButtonClicked+=new Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventHandler(TableControl_CellButtonClicked);
+		this.groupingEngine.TableControl.CellButtonClicked+=new Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventHandler(TableControl_CellButtonClicked);
 
 
 
-[VB.NET]
+   ~~~
+   {:.prettyprint }
 
 
 
-AddHandler groupingEngine.TableControl.CellButtonClicked, AddressOf TableControl_CellButtonClicked
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.CellButtonClicked, AddressOf TableControl_CellButtonClicked
 
+   ~~~
+   {:.prettyprint }
 
-The event handler receives an argument of type GridCellButtonClickedEventArgs containing data related to this event.
+   The event handler receives an argument of type GridCellButtonClickedEventArgs containing data related to this event.
 
-The following GridCellButtonClickedEventArgs properties provide information specific to this event.
+   The following GridCellButtonClickedEventArgs properties provide information specific to this event.
 
-* RowIndex - Gets the row index.
-* ColIndex - Gets the column index.
-* ButtonIndex - The index of the clicked cell button element.
-
-
+   * RowIndex - Gets the row index.
+   * ColIndex - Gets the column index.
+   * ButtonIndex - The index of the clicked cell button element.
 
 2. CellClick - Occurs when the user clicks inside a cell.
 
-[C#]
+   ~~~ cs
+
+		this.groupingEngine.TableControl.CellClick+=new Syncfusion.Windows.Forms.Grid.GridCellClickEventHandler(TableControl_CellClick);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		AddHandler groupingEngine.TableControl.CellClick, AddressOf TableControl_CellClick
+
+   ~~~
+   {:.prettyprint }
 
 
+   The event handler receives an argument of type GridCellClickEventArgs containing data related to this event.
 
-this.groupingEngine.TableControl.CellClick+=new Syncfusion.Windows.Forms.Grid.GridCellClickEventHandler(TableControl_CellClick);
+   The following GridCellClickEventArgs properties provide information specific to this event.
 
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.CellClick, AddressOf TableControl_CellClick
-
-The event handler receives an argument of type GridCellClickEventArgs containing data related to this event.
-
-The following GridCellClickEventArgs properties provide information specific to this event.
-
-* RowIndex - Gets the row index.        
-* ColIndex - Gets the column index.
-* MouseEventArgs - The System.Windows.Forms.MouseEventArgs originating this event.
-* IsOverImage - Indicates if the mouse was over an image in static cell when the mouse was released.
-
-
+   * RowIndex - Gets the row index.        
+   * ColIndex - Gets the column index.
+   * MouseEventArgs - The System.Windows.Forms.MouseEventArgs originating this event.
+   * IsOverImage - Indicates if the mouse was over an image in static cell when the mouse was released.
 
 3. CellDoubleClick - Occurs when the user double-clicks inside a cell.
 
-[C#]
+   ~~~ cs
+
+		this.groupingEngine.TableControl.CellDoubleClick+=new Syncfusion.Windows.Forms.Grid.GridCellClickEventHandler(TableControl_CellDoubleClick);
 
 
+   ~~~
+   {:.prettyprint }
 
-this.groupingEngine.TableControl.CellDoubleClick+=new Syncfusion.Windows.Forms.Grid.GridCellClickEventHandler(TableControl_CellDoubleClick);
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.CellDoubleClick, AddressOf TableControl_CellDoubleClick
 
+   ~~~
+   {:.prettyprint }
 
-[VB.NET]
+   The event handler receives an argument of type GridCellClickEventArgs containing data related to this event.
 
+   The following GridCellClickEventArgs properties provide information specific to this event.
 
-
-AddHandler groupingEngine.TableControl.CellDoubleClick, AddressOf TableControl_CellDoubleClick
-
-The event handler receives an argument of type GridCellClickEventArgs containing data related to this event.
-
-The following GridCellClickEventArgs properties provide information specific to this event.
-
-* RowIndex - Gets the row index.        
-* ColIndex - Gets the column index.
-* MouseEventArgs - The System.Windows.Forms.MouseEventArgs originating this event.
-* IsOverImage - Indicates if the mouse was over an image in static cell when the mouse was released.
+   * RowIndex - Gets the row index.        
+   * ColIndex - Gets the column index.
+   * MouseEventArgs - The System.Windows.Forms.MouseEventArgs originating this event.
+   * IsOverImage - Indicates if the mouse was over an image in static cell when the mouse was released.
+   
 4. CellDrawn - Occurs for every cell after the grid has drawn the specified cell. 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.groupingEngine.TableControl.CellDrawn+=new Syncfusion.Windows.Forms.Grid.GridDrawCellEventHandler(TableControl_CellDrawn);
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 AddHandler groupingEngine.TableControl.CellDrawn, AddressOf TableControl_CellDrawn
 
-
+{% endhighlight %}
 
 The event handler receives an argument of type GridDrawCellEventArgs containing data related to this event.
 
@@ -39127,12 +39102,13 @@ The following GridDrawCellEventArgs properties provide information specific to t
 * ColIndex-The column index.
 * Style-The Syncfusion.Windows.Forms.Grid.GridStyleInfo object that holds cell information.
 * IsBackgroundErased-True if the cell background has already been drawn with the interior as specified in the style object.
-CellButtonClicked Event
+
+#### CellButtonClicked Event
 
 
 This occurs when a user clicks on a child button element inside the cell renderer. The event handler receives an argument of type GridCellButtonClickedEventArgs containing data related to this event. This event can be invoked as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39140,11 +39116,17 @@ this.gridGroupingControl1.TableControlCellButtonClicked+=new GridCellButtonClick
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 AddHandler Me.gridGroupingControl1.TableControlCellButtonClicked, AddressOf TableControl_CellButtonClicked
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -39154,9 +39136,9 @@ _Table 124: Cell button clicked properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Button</td><td>
@@ -39178,7 +39160,7 @@ Specifies the row index of the cell.</td></tr>
 
 Example
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39192,9 +39174,9 @@ Console.Writeline("CellButtonClicked");
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub TableControl_CellButtonClicked(ByVal sender As Object, ByVal e As GridCellButtonClickedEventArgs)
 
@@ -39202,11 +39184,17 @@ Console.Writeline("CellButtonClicked")
 
 End Sub
 
-CellClick Event
+{% endhighlight %}
+
+
+
+
+
+#### CellClick Event
 
 This occurs when the user clicks inside a cell. The event handler receives an argument of type GridCellClickEventArgs containing data related to this event. This event can be invoked as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39214,11 +39202,17 @@ this.gridGroupingControl1.TableControlCellClick+=new Syncfusion.Windows.Forms.Gr
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 AddHandler Me.gridGroupingControl1.TableControlCellClick, AddressOf TableControl_CellClick
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -39228,9 +39222,9 @@ _Table 125: Grid cell click properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 IsOverImage</td><td>
@@ -39258,7 +39252,7 @@ Example
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39272,9 +39266,9 @@ Console.Writeline("CellClicked");
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub TableControl_CellClick(ByVal sender As Object, ByVal e As GridCellClickEventArgs)
 
@@ -39282,11 +39276,17 @@ Console.Writeline("CellClicked")
 
 End Sub
 
-CellDrawn Event
+
+{% endhighlight %}
+
+
+
+
+#### CellDrawn Event
 
 This occurs for every cell after the grid has drawn the specified cell. The event handler receives an argument of type GridDrawCellEventArgs containing data related to this event. This event can be invoked as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39294,11 +39294,17 @@ this.gridGroupingControl1.TableControlCellDrawn+=new Syncfusion.Windows.Forms.Gr
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 AddHandler Me.gridGroupingControl1.TableControlCellDrawn, AddressOf TableControl_CellDrawn
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -39308,9 +39314,9 @@ _Table 126: Grid table control properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Bounds</td><td>
@@ -39346,7 +39352,7 @@ You can handle TableControlCellDrawn to draw error icon in an invalid cell as fo
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39360,9 +39366,9 @@ Console.Writeline("Cell Drawn");
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub TableControl_CellDrawn(ByVal sender As Object, ByVal e As GridDrawCellEventArgs)
 
@@ -39370,11 +39376,17 @@ Console.Writeline("Cell Drawn")
 
 End Sub
 
-CellDoubleClick Event
+{% endhighlight %}
+
+
+
+
+
+#### CellDoubleClick Event
 
 This occurs when the user double-clicks inside a cell. The event handler receives an argument of type GridCellClickEventArgs containing data related to this event. This event can be invoked as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39382,11 +39394,17 @@ this.gridGroupingControl1.TableControlCellDoubleClick+=new Syncfusion.Windows.Fo
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 AddHandler Me.gridGroupingControl1.TableControlCellDoubleClick, AddressOf TableControl_CellDoubleClick
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -39396,9 +39414,9 @@ _Table 127: Click event properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 IsOverImage</td><td>
@@ -39422,7 +39440,7 @@ Specifies a value to indicate if this event should be canceled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39436,9 +39454,9 @@ Console.Writeline("Cell DoubleClicked");
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub TableControl_CellDoubleClick(ByVal sender As Object, ByVal e As GridCellClickEventArgs)
 
@@ -39446,380 +39464,364 @@ Console.Writeline("Cell DoubleClicked")
 
 End Sub
 
+{% endhighlight %}
 
 
-###### Current Cell Events
+
+
+
+
+
+#### Current Cell Events
 
 Current Cell events are as follows:
 
 1. CurrentCellActivated - Occurs after the grid activates the specified cell as current cell. 
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.CurrentCellActivated+=new EventHandler(TableControl_CurrentCellActivated);
 
-[C#]
+   ~~~
+   {:.prettyprint }
+   
+   
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.CurrentCellActivated, AddressOf TableControl_CurrentCellActivated
 
+   ~~~
+   {:.prettyprint }
 
-this.groupingEngine.TableControl.CurrentCellActivated+=new EventHandler(TableControl_CurrentCellActivated);
+2. CurrentCellChanged - Occurs when the user changes contents of the current cell. 
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.CurrentCellChanged+=new EventHandler(TableControl_CurrentCellChanged);
 
-[VB.NET]
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-AddHandler groupingEngine.TableControl.CurrentCellActivated, AddressOf TableControl_CurrentCellActivated
+		AddHandler groupingEngine.TableControl.CurrentCellChanged, AddressOf TableControl_CurrentCellChanged
 
+   ~~~
+   {:.prettyprint }
 
 
-7. CurrentCellChanged - Occurs when the user changes contents of the current cell. 
 
 
 
-[C#]
+3. CurrentCellControlGotFocus - Occurs when the current cell switches to in-place editing and the control associated with the current cell receives the focus. 
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.CurrentCellControlGotFocus+=new ControlEventHandler(TableControl_CurrentCellControlGotFocus);
 
-this.groupingEngine.TableControl.CurrentCellChanged+=new EventHandler(TableControl_CurrentCellChanged);
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.CurrentCellControlGotFocus, AddressOf TableControl_CurrentCellControlGotFocus
 
-[VB.NET]
+   ~~~
+   {:.prettyprint }
 
-AddHandler groupingEngine.TableControl.CurrentCellChanged, AddressOf TableControl_CurrentCellChanged
 
-8. CurrentCellControlGotFocus - Occurs when the current cell switches to in-place editing and the control associated with the current cell receives the focus. 
+   The event handler receives an argument of type ControlEventArgs containing data related to this event.
 
-[C#]
+   The following ControlEventArgs properties provide information specific to this event.
 
+   * Control - Gets the control object used by this event.
+   
+4. CurrentCellControlLostFocus - Occurs when the current cell is in in-place editing mode and the control associated with the current cell has lost the focus. 
 
+   ~~~ cs
 
-this.groupingEngine.TableControl.CurrentCellControlGotFocus+=new ControlEventHandler(TableControl_CurrentCellControlGotFocus);
+		this.groupingEngine.TableControl.CurrentCellControlLostFocus+=new ControlEventHandler(TableControl_CurrentCellControlLostFocus);
+		
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		AddHandler groupingEngine.TableControl.CurrentCellControlLostFocus, AddressOf TableControl_CurrentCellControlLostFocus
 
+   ~~~
+   {:.prettyprint }
 
+   The event handler receives an argument of type ControlEventArgs containing data related to this event.
 
-AddHandler groupingEngine.TableControl.CurrentCellControlGotFocus, AddressOf TableControl_CurrentCellControlGotFocus
+   The following ControlEventArgs properties provide information specific to this event.
 
+   * Control - Gets the control object used by this event.
+5. CurrentCellDeactivated - Occurs after the grid deactivates current cell. 
 
 
-The event handler receives an argument of type ControlEventArgs containing data related to this event.
 
-The following ControlEventArgs properties provide information specific to this event.
+   ~~~ cs
 
-* Control - Gets the control object used by this event.
-9. CurrentCellControlLostFocus - Occurs when the current cell is in in-place editing mode and the control associated with the current cell has lost the focus. 
+		this.groupingEngine.TableControl.CurrentCellDeactivated+=new Syncfusion.Windows.Forms.Grid.GridCurrentCellDeactivatedEventHandler(TableControl_CurrentCellDeactivated);
 
-[C#]
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-this.groupingEngine.TableControl.CurrentCellControlLostFocus+=new ControlEventHandler(TableControl_CurrentCellControlLostFocus);
+		AddHandler groupingEngine.TableControl.CurrentCellDeactivated, AddressOf TableControl_CurrentCellDeactivated
 
+   ~~~
+   {:.prettyprint }
 
+   The event handler receives an argument of type GridCurrentCellDeactivatedEventArgs containing data related to this event.
 
-[VB.NET]
+   The following GridCurrentCellDeactivatedEventArgs properties provide information specific to this event.
 
+   * RowIndex - Gets the row index.
+   * ColIndex - Gets thecolumn index.
+   
+6. CurrentCellStartEditing - Occurs before the current cell switches into editing mode.
 
+   ~~~ cs
 
-AddHandler groupingEngine.TableControl.CurrentCellControlLostFocus, AddressOf TableControl_CurrentCellControlLostFocus
+		this.groupingEngine.TableControl.CurrentCellStartEditing+=new CancelEventHandler(TableControl_CurrentCellStartEditing);
 
 
+   ~~~
+   {:.prettyprint }
 
-The event handler receives an argument of type ControlEventArgs containing data related to this event.
+   ~~~ vbnet
 
-The following ControlEventArgs properties provide information specific to this event.
+		AddHandler groupingEngine.TableControl.CurrentCellStartEditing, AddressOf TableControl_CurrentCellStartEditing
 
-* Control - Gets the control object used by this event.
-10. CurrentCellDeactivated - Occurs after the grid deactivates current cell. 
+   ~~~
+   {:.prettyprint }
 
 
+   The event handler receives an argument of type CancelEventArgs containing data related to this event.
 
-[C#]
+   The following CancelEventArgs properties provide information specific to this event.
 
+   * Cancel - Gets or sets a value indicating whether the event should be canceled.
 
 
-this.groupingEngine.TableControl.CurrentCellDeactivated+=new Syncfusion.Windows.Forms.Grid.GridCurrentCellDeactivatedEventHandler(TableControl_CurrentCellDeactivated);
 
+7. CurrentCellValidated - Occurs when the grid has successfully validated the contents of the active current cell. 
 
+   ~~~ cs
 
-[VB.NET]
+		this.groupingEngine.TableControl.CurrentCellValidated+=new EventHandler(TableControl_CurrentCellValidated);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-AddHandler groupingEngine.TableControl.CurrentCellDeactivated, AddressOf TableControl_CurrentCellDeactivated
+		AddHandler groupingEngine.TableControl.CurrentCellValidated, AddressOf TableControl_CurrentCellValidated
 
+   ~~~
+   {:.prettyprint }
 
-
-The event handler receives an argument of type GridCurrentCellDeactivatedEventArgs containing data related to this event.
-
-The following GridCurrentCellDeactivatedEventArgs properties provide information specific to this event.
-
-* RowIndex - Gets the row index.
-* ColIndex - Gets thecolumn index.
-11. CurrentCellStartEditing - Occurs before the current cell switches into editing mode.
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.CurrentCellStartEditing+=new CancelEventHandler(TableControl_CurrentCellStartEditing);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.CurrentCellStartEditing, AddressOf TableControl_CurrentCellStartEditing
-
-
-
-The event handler receives an argument of type CancelEventArgs containing data related to this event.
-
-The following CancelEventArgs properties provide information specific to this event.
-
-* Cancel - Gets or sets a value indicating whether the event should be canceled.
-
-
-
-12. CurrentCellValidated - Occurs when the grid has successfully validated the contents of the active current cell. 
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.CurrentCellValidated+=new EventHandler(TableControl_CurrentCellValidated);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.CurrentCellValidated, AddressOf TableControl_CurrentCellValidated
-
-###### Control Events
+#### Control Events
 
 Following are the control events:
 
 1. Click - Occurs when control is clicked.
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.Click+=new EventHandler(TableControl_Click);
 
-[C#]
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.Click, AddressOf TableControl_Click
 
-this.groupingEngine.TableControl.Click+=new EventHandler(TableControl_Click);
+   ~~~
+   {:.prettyprint }
 
+2. DoubleClick - Occurs when control is double clicked.
 
+   ~~~ cs
 
-[VB.NET]
+		this.groupingEngine.TableControl.DoubleClick+=new EventHandler(TableControl_DoubleClick);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-AddHandler groupingEngine.TableControl.Click, AddressOf TableControl_Click
+		AddHandler groupingEngine.TableControl.DoubleClick, AddressOf TableControl_DoubleClick
 
+   ~~~
+   {:.prettyprint }
 
+3. DragDrop - Occurs when a drag and drop operation is completed.
 
-13. DoubleClick - Occurs when control is double clicked.
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.DragDrop+=new DragEventHandler(TableControl_DragDrop);
 
-[C#]
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
 
-this.groupingEngine.TableControl.DoubleClick+=new EventHandler(TableControl_DoubleClick);
+		AddHandler groupingEngine.TableControl.DragDrop, AddressOf TableControl_DragDrop
 
+   ~~~
+   {:.prettyprint }
 
 
-[VB.NET]
+4. GotFocus - Occurs when the control receives focus.
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.GotFocus+=new EventHandler(TableControl_GotFocus);
 
-AddHandler groupingEngine.TableControl.DoubleClick, AddressOf TableControl_DoubleClick
+   ~~~{:.prettyprint }
 
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.GotFocus, AddressOf TableControl_GotFocus
 
-14. DragDrop - Occurs when a drag and drop operation is completed.
+   ~~~
+   {:.prettyprint }
 
 
+5. GridControlMouseDown - Occurs before a MouseDown is raised and allows you to cancel the mouse event. 
 
-[C#]
+   ~~~ cs
 
+		this.groupingEngine.TableControl.GridControlMouseDown+=new Syncfusion.Windows.Forms.CancelMouseEventHandler(TableControl_GridControlMouseDown);
 
+   ~~~
+   {:.prettyprint }
 
-this.groupingEngine.TableControl.DragDrop+=new DragEventHandler(TableControl_DragDrop);
+   ~~~ vbnet
 
+      AddHandler groupingEngine.TableControl.GridControlMouseDown, AddressOf TableControl_GridControlMouseDown
+	  
+   ~~~
+   {:.prettyprint }
+   
+   The event handler receives an argument of type CancelMouseEventArgs containing data related to this event.
 
+   The following CancelMouseEventArgs properties provide information specific to this event.
 
-[VB.NET]
+   * Cancel - Gets or sets a value indicating whether the event should be canceled.
+   
+6. GridControlMouseUp - Occurs before MouseUp is raised and allows you to cancel the mouse event. 
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.GridControlMouseUp+=new Syncfusion.Windows.Forms.CancelMouseEventHandler(TableControl_GridControlMouseUp);
 
-AddHandler groupingEngine.TableControl.DragDrop, AddressOf TableControl_DragDrop
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+       AddHandler groupingEngine.TableControl.GridControlMouseUp, AddressOf TableControl_GridControlMouseUp
 
-15. GotFocus - Occurs when the control receives focus.
-
-
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.GotFocus+=new EventHandler(TableControl_GotFocus);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.GotFocus, AddressOf TableControl_GotFocus
-
-
-
-16. GridControlMouseDown - Occurs before a MouseDown is raised and allows you to cancel the mouse event. 
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.GridControlMouseDown+=new Syncfusion.Windows.Forms.CancelMouseEventHandler(TableControl_GridControlMouseDown);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.GridControlMouseDown, AddressOf TableControl_GridControlMouseDown
-
-
-
-The event handler receives an argument of type CancelMouseEventArgs containing data related to this event.
-
-The following CancelMouseEventArgs properties provide information specific to this event.
-
-* Cancel - Gets or sets a value indicating whether the event should be canceled.
-17. GridControlMouseUp - Occurs before MouseUp is raised and allows you to cancel the mouse event. 
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.GridControlMouseUp+=new Syncfusion.Windows.Forms.CancelMouseEventHandler(TableControl_GridControlMouseUp);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.GridControlMouseUp, AddressOf TableControl_GridControlMouseUp
-
-
-
-The event handler receives an argument of type CancelMouseEventArgs containing data related to this event.
-
-The following CancelMouseEventArgs properties provide information specific to this event.
-
-* Cancel - Gets or sets a value indicating whether the event should be canceled.
-###### Mouse Events
+   ~~~
+   {:.prettyprint }
+   
+   The event handler receives an argument of type CancelMouseEventArgs containing data related to this event.
+
+   The following CancelMouseEventArgs properties provide information specific to this event.
+
+   * Cancel - Gets or sets a value indicating whether the event should be canceled.
+   
+#### Mouse Events
 
 
 Following are the mouse events:
 
 1. MouseDown - Occurs when the mouse pointer is over the control and Mouse button is pressed.
 
+   ~~~ cs
 
+		this.groupingEngine.TableControl.MouseDown+=new MouseEventHandler(TableControl_MouseDown);
 
-[C#]
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.MouseDown, AddressOf TableControl_MouseDown
 
-this.groupingEngine.TableControl.MouseDown+=new MouseEventHandler(TableControl_MouseDown);
+   ~~~
+   {:.prettyprint }
 
+   The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs properties provide information specific to this event.
 
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.MouseDown, AddressOf TableControl_MouseDown
-
-
-
-The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs properties provide information specific to this event.
-
-* Button - Indicates which mouse button was pressed.
-* Clicks - The number of times mouse button was pressed.
-* X - The x-coordinate of a mouse click in pixels.
-* Y - The y-coordinate of a mouse click in pixels.    
-* Point - Gets the location of the mouse during the generating mouse event.
+   * Button - Indicates which mouse button was pressed.
+   * Clicks - The number of times mouse button was pressed.
+   * X - The x-coordinate of a mouse click in pixels.
+   * Y - The y-coordinate of a mouse click in pixels.    
+   * Point - Gets the location of the mouse during the generating mouse event.
 
 
 
-18. MouseLeave - Occurs when mouse pointer leaves the control.
+2. MouseLeave - Occurs when mouse pointer leaves the control.
+
+   ~~~ cs
 
 
+		this.groupingEngine.TableControl.MouseLeave+=new MouseLeave EventHandler(TableControl_MouseLeave);		
 
-[C#]
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
+		AddHandler groupingEngine.TableControl.MouseLeave, AddressOf TableControl_MouseLeave
 
-this.groupingEngine.TableControl.MouseLeave+=new MouseLeave EventHandler(TableControl_MouseLeave);
+   ~~~
+   {:.prettyprint }
 
+3. MouseUp - Occurs when the mouse pointer is over the control and Mouse button is released.
 
+   ~~~ cs
 
-[VB.NET]
+		this.groupingEngine.TableControl.MouseUp+=new MouseEventHandler(TableControl_MouseUp);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-AddHandler groupingEngine.TableControl.MouseLeave, AddressOf TableControl_MouseLeave
+		AddHandler groupingEngine.TableControl.MouseUp, AddressOf TableControl_MouseUp
 
+   ~~~
+   {:.prettyprint }
 
+   The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs properties provide information specific to this event.
 
-19. MouseUp - Occurs when the mouse pointer is over the control and Mouse button is released.
-
-
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.MouseUp+=new MouseEventHandler(TableControl_MouseUp);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.MouseUp, AddressOf TableControl_MouseUp
-
-The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs properties provide information specific to this event.
-
-* Button - Indicates which mouse button was pressed.
-* Clicks - The number of times a mouse button was pressed.
-* X - The x-coordinate of a mouse click in pixels.
-* Y - The y-coordinate of a mouse click in pixels.    
-* Point - Gets the location of the mouse during the generating mouse event.
-MouseDown Event
+   * Button - Indicates which mouse button was pressed.
+   * Clicks - The number of times a mouse button was pressed.
+   * X - The x-coordinate of a mouse click in pixels.
+   * Y - The y-coordinate of a mouse click in pixels.    
+   * Point - Gets the location of the mouse during the generating mouse event.
+   
+#### MouseDown Event
 
 
 It occurs when the mouse pointer is over the control and mouse button is pressed. It receives an argument of type GridTableControlMouseEventArgs that provides data related to this event. This event can be invoked as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39827,11 +39829,17 @@ this.gridGroupingControl1.TableControlMouseDown+=new GridTableControlMouseEventA
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Me.gridGroupingControl1.TableControlMouseDown+= New GridTableControlMouseEventArgs(TableControl_MouseDown)
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -39841,9 +39849,9 @@ _Table 128: Mouse event properties_
 
 <table>
 <tr>
-<td>
- PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+ PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Inner</td><td>
@@ -39855,7 +39863,7 @@ The GridTableControl that initiated the original event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39869,9 +39877,9 @@ Console.Writeline("MouseDown: No. of Clicks"+e.Inner.Clicks.ToString());
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub TableControl_MouseDown(ByVal sender As Object, ByVal e As GridTableControlMouseEventArgs)
 
@@ -39879,13 +39887,18 @@ Console.Writeline("MouseDown: No. of Clicks"+e.Inner.Clicks.ToString())
 
 End Sub
 
+{% endhighlight %}
 
 
-MouseLeave Event
+
+
+
+
+#### MouseLeave Event
 
 This occurs when the mouse pointer leaves control. It receives an argument of type EventArgs that provides data related to this event. This event can be invoked as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39893,19 +39906,25 @@ this.gridGroupingControl1.TableControl.MouseLeave+=new MouseEventHandler(TableCo
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Me.gridGroupingControl1.TableControl.MouseLeave+= New MouseEventHandler(TableControl_MouseLeave)
 
+{% endhighlight %}
 
 
-Example
 
 
 
-[C#]
+
+
+#### Example
+
+
+
+{% highlight c# %}
 
 
 
@@ -39919,9 +39938,9 @@ Console.Writeline("MouseLeave");
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub TableControl_MouseLeave(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -39929,11 +39948,17 @@ Console.Writeline("MouseLeave")
 
 End Sub
 
-MouseUp Event
+{% endhighlight %}
+
+
+
+
+
+#### MouseUp Event
 
 This occurs when the mouse pointer leaves the control and Mouse button is pressed. It receives an argument of type MouseEventArgs that provides data related to this event. This event can be invoked as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -39941,9 +39966,15 @@ this.gridGroupingControl1.TableControlMouseUp+=new MouseEventHandler(TableContro
 
 
 
-[VB.NET]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Private Me.gridGroupingControl1.TableControlMouseUp+= New MouseEventHandler(TableControl_MouseUp)
+
+{% endhighlight %}
+
+
 
 
 
@@ -39953,9 +39984,9 @@ _Table 129: Mouse up event_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 Button</td><td>
@@ -39987,7 +40018,7 @@ Example
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -40001,9 +40032,9 @@ Console.Writeline("MouseUp: No. of Clicks"+e.Clicks.ToString());
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub TableControl_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
 
@@ -40011,81 +40042,88 @@ Console.Writeline("MouseUp: No. of Clicks"+e.Clicks.ToString())
 
 End Sub
 
-###### Key Events
+{% endhighlight %}
+
+
+
+
+
+#### Key Events
 
 Following are the key events:
 
 1. KeyDown - Occurs when a key is pressed when control has focus.
 
-[C#]
+
+   ~~~ cs
+
+		this.groupingEngine.TableControl.KeyDown+=new KeyEventHandler(TableControl_KeyDown);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		AddHandler groupingEngine.TableControl.KeyDown, AddressOf TableControl_KeyDown
+
+   ~~~
+   {:.prettyprint }
+
+   The event handler receives an argument of type KeyEventArgs containing data related to this event.
+
+   The following KeyEventArgs properties provide information specific to this event.
+
+2. KeyData - Gets the key data for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp event.    
+   
+   * Alt - Gets a value indicating whether the ALT key was pressed.
+   * Control - Gets a value indicating whether the CTRL key was pressed.
+   * Handled - Gets or sets a value indicating whether the event was handled.
+   * KeyCode - Gets the keyboard code for a System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp.
+   * KeyValue - Gets the keyboard value for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp event.
+   * Modifiers - Gets the modifier flags for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp.
+   * Shift - Gets a value indicating whether the SHIFT key was pressed.
+   * SuppressKeyPress - Gets or sets a value indicating whether the key event should be passed on to the underlying control.
+
+3. KeyPress - Occurs when a key is pressed when control has focus.
 
 
 
-this.groupingEngine.TableControl.KeyDown+=new KeyEventHandler(TableControl_KeyDown);
+   ~~~ cs
+
+		this.groupingEngine.TableControl.KeyPress+=new KeyPressEventHandler(TableControl_KeyPress);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		AddHandler groupingEngine.TableControl.KeyPress, AddressOf TableControl_KeyPress
+
+   ~~~
+   {:.prettyprint }
+
+   The event handler receives an argument of type KeyPressEventArgs containing data related to this event. The following KeyPressEventArgs properties provide information specific to this event.
+
+   * KeyChar - The ASCII character corresponding to the key the user pressed.
+   * Handled - Gets or sets a value indicating whether the System.Windows.Forms.Control.KeyPress
+
+4. KeyUp - Occurs when a key is released when control has focus.
 
 
+   ~~~ cs
 
-[VB.NET]
+		this.groupingEngine.TableControl.KeyUp+=new KeyEventHandler(TableControl_KeyUp);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-AddHandler groupingEngine.TableControl.KeyDown, AddressOf TableControl_KeyDown
+		AddHandler groupingEngine.TableControl.KeyUp, AddressOf TableControl_KeyUp
 
-
-
-The event handler receives an argument of type KeyEventArgs containing data related to this event.
-
-The following KeyEventArgs properties provide information specific to this event.
-
-20. KeyData - Gets the key data for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp event.    
-* Alt - Gets a value indicating whether the ALT key was pressed.
-* Control - Gets a value indicating whether the CTRL key was pressed.
-* Handled - Gets or sets a value indicating whether the event was handled.
-* KeyCode - Gets the keyboard code for a System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp.
-* KeyValue - Gets the keyboard value for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp event.
-* Modifiers - Gets the modifier flags for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp.
-* Shift - Gets a value indicating whether the SHIFT key was pressed.
-* SuppressKeyPress - Gets or sets a value indicating whether the key event should be passed on to the underlying control.
-21. KeyPress - Occurs when a key is pressed when control has focus.
-
-
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.KeyPress+=new KeyPressEventHandler(TableControl_KeyPress);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.KeyPress, AddressOf TableControl_KeyPress
-
-The event handler receives an argument of type KeyPressEventArgs containing data related to this event. The following KeyPressEventArgs properties provide information specific to this event.
-
-* KeyChar - The ASCII character corresponding to the key the user pressed.
-* Handled - Gets or sets a value indicating whether the System.Windows.Forms.Control.KeyPress
-22. KeyUp - Occurs when a key is released when control has focus.
-
-[C#]
-
-
-
-this.groupingEngine.TableControl.KeyUp+=new KeyEventHandler(TableControl_KeyUp);
-
-
-
-[VB.NET]
-
-
-
-AddHandler groupingEngine.TableControl.KeyUp, AddressOf TableControl_KeyUp
-
-
-
+   ~~~
+   {:.prettyprint }
+   
 The event handler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs properties provide information specific to this event.
 
 * KeyData - Gets the key data for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp event.  
@@ -40097,16 +40135,17 @@ The event handler receives an argument of type KeyEventArgs containing data rela
 * Modifiers - Gets the modifier flags for System.Windows.Forms.Control.KeyDown or System.Windows.Forms.Control.KeyUp event.
 * Shift - Gets a value indicating whether the SHIFT key was pressed.
 * SuppressKeyPress - Gets or sets a value indicating whether the key event should be passed on to the underlying control.
-###### Selection Events for Filter Bar 
+
+#### Selection Events for Filter Bar 
 
 
 Two Selection events for filter bar, namely FilterBarSelectedItemChanging and FilterBarSelectedItemChanged are implemented for Essential Grid. These events enable you to cancel or customize filter value. This support is not available in MS-DataGridView.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 FilterBarSelectedItemChanging_event_enables you to customize or cancel filter value for specific column. FilterBarSelectedItemChanged_event enables you to retrieve selected column information, selected index, and selected text.
 
-_Table_ _9_0: Event Table_
+_Table 90: Event Table_
 
 <table>
 <tr>
@@ -40117,23 +40156,26 @@ ARGUMENTS </th><th>
 TYPE </th><th>
 REFERENCE LINKS </th></tr>
 <tr>
-<th>
-{{'_FilterBarSelectedItemChanging_'| markdownify}}</th><th>
-This event will be triggered while filtering a column.  This can be canceled. Selected index or selected text can be modified as required.  </th><th>
- public FilterBarSelectedItemChangingEventArgs( GridColumnDescriptor column, int selectedIndex, string selectedText)</th><th>
-Event</th><th>
-NA </th></tr>
+<td>
+{{ '_FilterBarSelectedItemChanging_' | markdownify }}</td><td>
+This event will be triggered while filtering a column.  This can be canceled. Selected index or selected text can be modified as required.  </td><td>
+ public FilterBarSelectedItemChangingEventArgs( GridColumnDescriptor column, int selectedIndex, string selectedText)</td><td>
+Event</td><td>
+NA </td></tr>
 <tr>
-<th>
-{{'_FilterBarSelectedItemChanged_'| markdownify}} </th><th>
-This event will be triggered after a column is filtered.    Selected column, selected index, and selected text can be retrieved with this event.</th><th>
-        public FilterBarSelectedItemChangedEventArgs(GridColumnDescriptor column, int selectedIndex, string selectedText)</th><th>
-Event </th><th>
-NA</th></tr>
+<td>
+{{ '_FilterBarSelectedItemChanged_' | markdownify }}</td><td>
+This event will be triggered after a column is filtered.    Selected column, selected index, and selected text can be retrieved with this event.</td><td>
+        public FilterBarSelectedItemChangedEventArgs(GridColumnDescriptor column, int selectedIndex, string selectedText)</td><td>
+Event </td><td>
+NA</td></tr>
 </table>
-Triggering Selection Events
+
+#### Triggering Selection Events
 
 Refer to the following code to trigger the Selection events:  
+
+{% highlight c# %}
 
 //Events hooked in the form load...
 
@@ -40171,11 +40213,9 @@ void gridGroupingControl1_FilterBarSelectedItemChanging(object sender, FilterBar
 
         }
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 'Events hooked in the form load...
 
@@ -40209,7 +40249,10 @@ MessageBox.Show(e.SelectedIndex.ToString())
 
 End Sub
 
-##### Delete Collection of Records in GridGroupingControl
+{% endhighlight %}
+
+
+#### Delete Collection of Records in GridGroupingControl
 
 
 
@@ -40223,51 +40266,49 @@ For these methods DeleteAll have been implemented to support delete all the reco
 
 1. Deleting All
 
-The following code illustrates deleting all the records.
-
-[C#]
+   The following code illustrates deleting all the records.
 
 
+   ~~~ cs
 
-//Deletes all the records from the grid table.
+		//Deletes all the records from the grid table.
 
-this.gridGroupingControl1.Table.Records.DeleteAll();
+		this.gridGroupingControl1.Table.Records.DeleteAll();
 
+   ~~~
+   {:.prettyprint }
 
+   When the code runs, Deleting all records is bound to Delete All button.
 
-When the code runs, Deleting all records is bound to Delete All button.
+2. Deleting Selected Records
 
-23. Deleting Selected Records
+   The following code illustrates deleting records manually selected.  
 
-The following code illustrates deleting records manually selected.  
+   ~~~ cs
 
-[C#]
+		//Delete selected records from the grid table. 
 
+		this.gridGroupingControl1.Table.SelectedRecords.DeleteAll();
 
+   ~~~
+   {:.prettyprint }
 
-//Delete selected records from the grid table. 
+   When the code runs, deleting manually selected record is bound to Delete All[Selected] button  
 
-this.gridGroupingControl1.Table.SelectedRecords.DeleteAll();
+3. Deleting Specified Records
 
-When the code runs, deleting manually selected record is bound to Delete All[Selected] button  
+   The following code illustrates deleting Specified records.
 
-24. Deleting Specified Records
+   > Note: Parameter – Specify the collection of records that needs to be deleted.
 
-The following code illustrates deleting Specified records.
+   ~~~ cs
 
-> ![](Grid-Controls_images/Grid-Controls_img496.jpeg)
+		//Deletes the specified records from the table. 
 
-_Note: Parameter – Specify the collection of records that needs to be deleted._
+		this.gridGroupingControl1.Table.Records.DeleteRecords(rec);
 
-
-
-[C#]
-
-
-
-//Deletes the specified records from the table. 
-
- this.gridGroupingControl1.Table.Records.DeleteRecords(rec);
+   ~~~
+   {:.prettyprint }
 
 When the code runs, deleting specified records are bound to Delete Selected Records button. 
 
@@ -40275,7 +40316,7 @@ When the code runs, deleting specified records are bound to Delete Selected Reco
 
 
 
-##### Select Collection of Records In GridGroupingControl
+#### Select Collection of Records In GridGroupingControl
 
 Essential GridGroupingControl now supports two methods for selecting records in grid table. 
 
@@ -40284,7 +40325,7 @@ Essential GridGroupingControl now supports two methods for selecting records in 
 
 
 
-Selecting All
+#### Selecting All
 
 The following code illustrates how to select all record in grid table.
 
@@ -40302,17 +40343,21 @@ When the code runs, selecting all record is bound to Select All button.
 
 
 
-Selecting Specified Records
+#### Selecting Specified Records
 
 The following code illustrates how to select specified records.
 
-> ![](Grid-Controls_images/Grid-Controls_img499.jpeg)
+> Note: Method Name:  AddRange   Parameter: Specify the Record collection to be selected
 
-_Note: Method Name:  AddRange   Parameter: Specify the Record collection to be selected_
+{% highlight c# %}
 
 //Selects the specified records in the grid table.
 
 this.gridGroupingControl1.Table.SelectedRecords.AddRange(rec);
+
+{% endhighlight %}
+
+
 
 
 
@@ -40322,7 +40367,7 @@ When the code runs, selecting specified records is bound to Select Specified Rec
 
 
 
-##### Export Summary as Caption 
+#### Export Summary as Caption 
 
 This feature enables you to export the summary as caption while exporting GridGroupingControl to Excel. 
 
@@ -40330,12 +40375,12 @@ _Table 131: Property Table_
 
 <table>
 <tr>
-<td>
-PROPERTY </td><td>
-DESCRIPTION </td><td>
-TYPE </td><td>
-DATA TYPE </td><td>
-REFERENCE LINKS </td></tr>
+<th>
+PROPERTY </th><th>
+DESCRIPTION </th><th>
+TYPE </th><th>
+DATA TYPE </th><th>
+REFERENCE LINKS </th></tr>
 <tr>
 <td>
 ExportCaptionSummary</td><td>
@@ -40346,15 +40391,19 @@ NA </td></tr>
 </table>
 
 
-Exporting Summary as Caption
+#### Exporting Summary as Caption
 
 You can export summary as caption using _ExportCaptionSummary_ property. The following code illustrates this:
 
-[C#]
-
-
+{% highlight c# %}
 
 converter.ExportCaptionSummary = true;
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -40362,27 +40411,27 @@ converter.ExportCaptionSummary = true;
 
 
 
-###### Searching for text in multiple columns
+#### Searching for text in multiple columns
 
 This feature can be used to perform searches either in specified columns or in all the grid columns. Only the rows containing search text will be filtered and displayed. 
 
 Searches can be performed in two modes:
 
 1. Search for text in all columns.
-25. Search for text in particular columns.
+2. Search for text in particular columns.
 
 _Table 132: Method Table_
 
 <table>
 <tr>
-<td>
-METHOD</td><td>
-PROTOTYPES</td><td>
-DESCRIPTION</td></tr>
+<th>
+METHOD</th><th>
+PROTOTYPES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td rowspan = "2">
 Search()</td><td>
-this.gridGroupingControl1.TableDescriptor.Search("SearchText", List<GridColumnDescriptor>);</td><td rowspan = "2">
+this.gridGroupingControl1.TableDescriptor.Search("SearchText", List&lt;GridColumnDescriptor&gt;);</td><td rowspan = "2">
 It is called for performing search operation in the columns. </td></tr>
 <tr>
 <td>
@@ -40394,21 +40443,27 @@ Here, text is provided as a parameter in the Search method in TableDescriptor. I
 
 The following code sample illustrates how to perform the search operation:
 
-[C#]
+{% highlight c# %}
 
 this.gridGroupingControl1.TableDescriptor.Search("Duke");
 
 
 
-[VB]
+{% endhighlight %}
 
- Me.gridGroupingControl1.TableDescriptor.Search("Duke");
+{% highlight vbnet %}
 
-Searching for text in particular columns
+Me.gridGroupingControl1.TableDescriptor.Search("Duke");
+
+{% endhighlight %}
+
+ 
+
+#### Searching for text in particular columns
 
 We can perform this operation by passing columns that need to be searched into the Search() method. In this case, we need to create a list that will hold columns that need to be searched for that particular text. The search text and the list of columns that will be searched are passed as parameters for performing the operation. The following code illustrates this:
 
-[C#]
+{% highlight c# %}
 
 List<GridColumnDescriptor> list= new List<GridColumnDescriptor>();
 
@@ -40420,7 +40475,9 @@ this.gridGroupingControl1.TableDescriptor.Search("Duke", list);
 
 
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Dim list As New List(Of GridColumnDescriptor)()
 
@@ -40431,6 +40488,10 @@ list.Add(Me.gridGroupingControl1.TableDescriptor.Columns(3))
 
 
 Me.gridGroupingControl1.TableDescriptor.Search("Duke", list)
+
+{% endhighlight %}
+
+
 
 
 
@@ -40446,13 +40507,13 @@ DataBound Grid has been designed to be used as a grid that is bound to a data so
 
 This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatical approach in a .NET application.
 
-##### Through Designer
+#### Through Designer
 
 With the designer, all you have to do is drag Grid DataBound Grid control, resize it and then set the desired properties. The following steps illustrate this.
 
 1. Drag GridBoundDataGrid object from your toolbox onto the form.
 
-![](Grid-Controls_images/Grid-Controls_img503.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img503.jpeg)
 
 
 
@@ -40463,7 +40524,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 
 
-![](Grid-Controls_images/Grid-Controls_img504.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img504.jpeg)
 
 
 
@@ -40471,13 +40532,13 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 4. In the Data Source Configuration wizard, select Database and click Next.
 
-![](Grid-Controls_images/Grid-Controls_img505.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img505.jpeg)
 
 
 
 5. Select appropriate data connection and click Next. This example uses Northwind database available in: _<Sample Install Location>\Syncfusion\EssentialStudio\x.x.x.x\Common\Data_
 
-![](Grid-Controls_images/Grid-Controls_img506.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img506.jpeg)
 
 
 
@@ -40485,7 +40546,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 6. Select appropriate table and data using this wizard.
 
-![](Grid-Controls_images/Grid-Controls_img507.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img507.jpeg)
 
 
 
@@ -40497,7 +40558,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 
 
-![](Grid-Controls_images/Grid-Controls_img508.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img508.jpeg)
 
 
 
@@ -40505,7 +40566,7 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 8. Run the application. Following is the output.
 
-![](Grid-Controls_images/Grid-Controls_img509.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img509.jpeg)
 
 
 
@@ -40513,13 +40574,13 @@ With the designer, all you have to do is drag Grid DataBound Grid control, resiz
 
 Grid Data Bound Grid is added to the windows application and bound to a local data source. For more details, see Grid Data Bound Grid tutorial.
 
-##### Through Code
+#### Through Code
 
 Here are some code samples that will create a DataTable and bind it a to Grid Data Bound Grid. Once you have a DataTable object populated you can use the GridDataBoundGrid.DataSource property to implement the binding.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -40585,9 +40646,9 @@ this.GridDataBoundGrid1.Model.ColWidths[2] = 50;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim myDataTable As DataTable = New DataTable("MyDataTable")
 
@@ -40653,11 +40714,17 @@ Me.gridDataBoundGrid1.Model.ColWidths(1) = 30
 
 Me.gridDataBoundGrid1.Model.ColWidths(2) = 50
 
+{% endhighlight %}
+
+
+
+
+
 #### Concepts and Features
 
 This section discusses use cases for Grid Data Bound Grid. The cases range from simple binding to a DataTable through Master-Detail and ends with some hierarchical binding samples. It also includes other topics like filtering, sorting, and accessing data in the grid.
 
-##### Binding to an ArrayList
+#### Binding to an ArrayList
 
 You can bind an ArrayList that holds objects with public properties. Given below is an example, which substantiates this point.
 
@@ -40669,7 +40736,7 @@ Given below is the code sample for this.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -40751,9 +40818,9 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Creates the Person object class.
 
@@ -40839,9 +40906,15 @@ Me.GridDataBoundGrid1.DataSource = al
 
 End Sub
 
+{% endhighlight %}
+
+
+
+
+
 See Also
 
-###### ArrayList Class with IBindingList Support
+#### ArrayList Class with IBindingList Support
 
 Any change that you make to the grid will be posted back to the ArrayList. Keep in mind that you cannot add new items to the ArrayList through the grid. Instead, make sure that your data source supports the IBindingList interface and that it implements an appropriate AddNew method. The IBindingList support determines whether you can add new items and sort items as well as do searching for other basic aspects of list behavior. 
 
@@ -40851,13 +40924,13 @@ Any change that you make to the grid will be posted back to the ArrayList. Keep 
 
 Here is a minimal implementation of an ArrayList-derived class that also supports IBindingList. If you add this class to the above code and in the Form-Load change the ArrayList to PersonList, then you will be able to add new entries to your underlying PersonList data source by using the AppendRow at the bottom of the grid. Notice that the implementation of IBindingList.AddNew as well as the IBindingList.AllowNew property will indicate that new rows are allowed.
 
-##### Binding to a DataTable
+#### Binding to a DataTable
 
 Binding to a DataTable is a very simple and straight-forward process. After defining DataTable, you must set GridDataBoundGrid.DataSource property to the table. Then you can easily use the Data Tab of your toolbox in Visual Studio to generate DataTables. Here we will add a simple People table using the code to illustrate how you can dynamically create a DataTable. 
 
 Creating a DataTable from code is a two-step process. You must first add DataColumn objects to the DataTable.Columns collection and then you must add DataRow objects to the DataTable.Rows collection. Given below is the code that does this. The code will assume that you have dropped a Grid Data Bound Grid onto the form.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -40965,9 +41038,9 @@ private DataTable ReturnATable()
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -41067,11 +41140,17 @@ Return table
 
 End Function
 
-##### Accessing Values in the Grid Data Bound Grid and in the Data Source
+{% endhighlight %}
+
+
+
+
+
+#### Accessing Values in the Grid Data Bound Grid and in the Data Source
 
 To access values in the Grid Data Bound Grid, use the indexer and retrieve the value from the GridStyleInfo object. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41081,17 +41160,23 @@ object myValue = this.gridDataBoundGrid1[row, col].CellValue;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Gets Value at (row, col).
 
 Dim myValue as Object = Me.GridDataBoundGrid1(row, col).CellValueget value at row, col
 
+{% endhighlight %}
+
+
+
+
+
 If you want to retrieve the values that are based on column names, use the methods in the GridDataBoundGrid.Binder object to switch the name for a column index.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41113,9 +41198,9 @@ object myValue = this.gridDataBoundGrid1[row, col].CellValue;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Specifies the field name.
 
@@ -41133,7 +41218,13 @@ Dim col As Integer = Me.gridDataBoundGrid1.Binder.FieldToColIndex(nField)
 
 Dim myValue As Object = Me.gridDataBoundGrid1(row, col).CellValue
 
-##### Using CurrencyManager
+{% endhighlight %}
+
+
+
+
+
+#### Using CurrencyManager
 
 Sometimes the grid itself will not contain all the data in the data table. For example, your data table may have 12 columns in it, but you are able to add only three GridBoundColumns to display exactly three of the twelve columns. In this case, the table has nine more columns than the grid. How do you get all the values in the columns that are not in the grid? 
 
@@ -41141,7 +41232,7 @@ Your first inclination might be to grab the row number from the grid and try to 
 
 Given below are some code samples.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41167,9 +41258,9 @@ if(drv != null)
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Assuming grid is bound to a Data Table.
 
@@ -41189,7 +41280,13 @@ Console.WriteLine(dr("FirstName").ToString())
 
 End If
 
-##### Filtering Grid Data Bound Grid
+{% endhighlight %}
+
+
+
+
+
+#### Filtering Grid Data Bound Grid
 
 We will use an example to illustrate filtering procedure for the grid.
 
@@ -41201,9 +41298,9 @@ _Table 74: Filtering procedure for the grid_
 
 <table>
 <tr>
-<td>
-ROWFILTER STRING</td><td>
-RESULT</td></tr>
+<th>
+ROWFILTER STRING</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 [City Area] = Center</td><td>
@@ -41221,6 +41318,8 @@ Shows only rows where the Name column begins with *a.</td></tr>
 Name LIKE *a</td><td>
 Shows only rows where the Name column ends with *a.</td></tr>
 </table>
+
+
 ![](Grid-Controls_images/Grid-Controls_img511.jpeg)
 
 
@@ -41229,7 +41328,7 @@ Shows only rows where the Name column ends with *a.</td></tr>
 
 The filtered grid is created by setting RowFilter property of it to default view. If you change RowFilter property then the grid's contents will change to reflect the new filter. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41241,9 +41340,9 @@ dv.RowFilter = "FirstName LIKE 's*'";
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 ' Assuming the grid is bound to a Data Table.
 
@@ -41251,9 +41350,15 @@ Dim dv As DataView = CType(Me.gridDataBoundGrid1.DataSource, DataTable).DefaultV
 
 dv.RowFilter = "FirstName LIKE 's*'"
 
+{% endhighlight %}
+
+
+
+
+
 You can use the Essential Grid's GridFilterBar class to automatically add a row of drop-down cells at the top of a simple (non-hierarchical) DataBound Grid that can be used to filter the grid to display only rows that match values from the drop-down. For example, when you have a grid with Grid Filter Bar, if one of your columns is City and you want to see all the rows where City is 'Boston' for example and then you will have to drop the combo box at the top of the City column and select Boston. The grid will then display only those rows with Boston in the City column. Adding a Grid Filter Bar takes only two lines of code. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41265,9 +41370,9 @@ filterBar.WireGrid(gridDataBoundGrid1);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Adds a Filter Bar to the databound grid.
 
@@ -41275,13 +41380,19 @@ Dim filterBar As GridFilterBar = New Syncfusion.Windows.Forms.Grid.GridFilterBar
 
 filterBar.WireGrid(GridDataBoundGrid1)
 
+{% endhighlight %}
+
+
+
+
+
 
 
 ![](Grid-Controls_images/Grid-Controls_img512.jpeg)
 
 
 
-Filter By DisplayMember
+#### Filter By DisplayMember
 
 Grid Data Bound Grid filters data records by value member of the columns. This default behavior can be customized in order to accomplish filtering by display member instead. This can be achieved by deriving custom filter from the GridFilterBar class wherein you can customize GetFilterFromRow method to replace the display strings in the filter with value strings.
 
@@ -41289,7 +41400,7 @@ Filter By DisplayMember feature performs this sort of customization and lets you
 
 Following code example illustrates how to enable this filter.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41299,13 +41410,18 @@ filterBar.WireGrid(gridDataBoundGrid1);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim filterBar As GridDataBoundGridFilterBarExt = New GridDataBoundGridFilterBarExt()
 
 filterBar.WireGrid(gridDataBoundGrid1)
+
+{% endhighlight %}
+
+
+
 
 
 
@@ -41313,19 +41429,17 @@ filterBar.WireGrid(gridDataBoundGrid1)
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img514.jpeg)
+> Note: For more details, refer to the following browser sample:
+>
+> _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo_
 
-_Note: For more details, refer to the following browser sample:_ 
-
-> _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo_
-
-##### GridBoundColumns and Controlling the Column Format
+#### GridBoundColumns and Controlling the Column Format
 
 To control properties of a column in your Grid DataBound Grid, you must use GridBoundColumn class object. You can also explicitly add GridBoundColumn object to GridDataBoundGrid.GridBoundColumns collection for each column that you want to see in the grid or you can let GridDataBoundGrid.Binder class generate these columns for you. 
 
 Here are the code samples that will explicitly add GridBoundColumns. Note that you can add these GridBoundColumns at design-time provided you properly set MappingName property for each column.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41407,9 +41521,9 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -41471,8 +41585,6 @@ gbc.HeaderText = "City"
 
 Me.gridDataBoundGrid1.GridBoundColumns.Add(gbc)
 
-
-
 'Needs to initialize GridBoundColumns so their settings will replace currently set values.
 
 Me.gridDataBoundGrid1.Binder.InitializeColumns()
@@ -41489,11 +41601,20 @@ Me.gridDataBoundGrid1.Model.ColWidths.ResizeToFit(GridRangeInfo.Row(0), GridResi
 
 End Sub
 
-###### Using the GridDataBoundGrid.Binder Class
+{% endhighlight %}
+
+
+
+
+
+
+
+
+#### Using the GridDataBoundGrid.Binder Class
 
 Instead of adding your own GridBoundColumns, you can directly reference internal columns that are generated by GridDataBoundGrid.Binder class when data source is set in the grid. You can also use these internal columns to set the style info for columns or HeaderText or any other property of the GridBoundColumn. Here is a Form_Load handler that will display the same grid as above using internal columns.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41543,9 +41664,9 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -41593,11 +41714,17 @@ Me.gridDataBoundGrid1.Model.ColWidths.ResizeToFit(GridRangeInfo.Row(0), GridResi
 
 End Sub 
 
-##### Changing Column Order in Grid Data Bound Grid
+{% endhighlight %}
+
+
+
+
+
+#### Changing Column Order in Grid Data Bound Grid
 
 The simplest way to change the column order in a Grid Data Bound Grid is to use the GridDataBoundGrid.Model.Cols.MoveRange method. This method will rearrange columns that are based on from and to and counts the parameters passed into it. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41607,15 +41734,21 @@ this.gridDataBoundGrid1.Model.Cols.MoveRange(4, 2, 1);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Moves columns 4 and 5, to column 1.
 
 Me.GridDataBoundGrid1.Model.Cols.MoveRange(4, 2, 1)
 
-##### Using Master-Details Relation
+{% endhighlight %}
+
+
+
+
+
+#### Using Master-Details Relation
 
 To define simple Master-Details relation, you must have two tables. The first is a Master table that has a column whose values are also included in a second table, referred to as the Details table. You must display these two tables in two grids, which are called Master grid and Details grid. As you click a row in the Master grid, the rows displayed in the Details Grid will be restricted to only those rows whose common value matches the value in the selected Master grid row. 
 
@@ -41629,7 +41762,7 @@ Here is a screen shot showing you Master-Detail grid pair using NorthWind Custom
 
 Here is the code that implements this Master-Detail form. In the designer, two DataAdapters (one for each table), Customers and Orders are added to the form. A DataSet will be generated as well. Two DataBound Grids are also positioned on the form. The Form_Load event listed below will set up all the data binding between DataSet that is holding the two tables and the two grids. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41667,9 +41800,9 @@ private void Form1_Load(object sender , System.EventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -41703,7 +41836,13 @@ Me.detailsGrid.DataMember = "CustomersToOrders"
 
 End Sub
 
-##### Foreign Key Columns: Shows One Value, but Saves Another
+
+{% endhighlight %}
+
+
+
+
+#### Foreign Key Columns: Shows One Value, but Saves Another
 
 Very often a table will have a column that displays an ID key defined in another table. In your grid, you may like to have this foreign key mapped to some meaningful value, which is referenced from a different column in this other table. The key column in the foreign table is referred as ValueMember and the meaningful column is referred as DisplayMember. 
 
@@ -41711,7 +41850,7 @@ Essential Grid will handle this work for you and it can be done through the desi
 
 In the designer, drag two of the DataBound Grids onto a form. Use one grid to show the foreign key combobox and the other to show the raw data for the primary table. Once the grids are in place, the code, which is given below will create the tables for this sample and then the code in the Form_Load will hook up the foreign key combobox. In our sample, we have set the combobox button to display only the current row.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41825,9 +41964,9 @@ private DataTable ForeignKeyTable()
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -41917,8 +42056,6 @@ Return dt
 
 End Function
 
-
-
 Private Function ForeignKeyTable() As DataTable
 
 
@@ -41957,11 +42094,21 @@ Return dt
 
 End Function
 
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
 ![](Grid-Controls_images/Grid-Controls_img516.jpeg)
 
 
 
-##### Sorting
+#### Sorting
 
 Sorting feature available in DataBound Grid control allows the user to arrange items in a sequence and/or in different sets. SortBehaviour property under the control allows you to sort a column in a data bound grid when the column header cell is clicked. Implementation of this property will rearrange the cell data in the clicked column. This property can be set using either a code or designer. By default, it is set to perform sorting on double-click. GridSortBehavior is an enumeration that defines the sorting behavior options/values.
 
@@ -41973,7 +42120,7 @@ Following is the list of options/values that can be assigned to SortBehaviour pr
 
 The following code example illustrates sorting of columns on a single click.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -41981,11 +42128,17 @@ this.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -41993,13 +42146,11 @@ Me.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick
 
 
 
-##### Sort by DisplayMember
+#### Sort by DisplayMember
 
 By default, sorting is done in DataBound Grid through IBindingList.
 
-> ![](Grid-Controls_images/Grid-Controls_img518.jpeg)
-
-_Note: IBindingList interface provides features required to support both complex and simple scenarios when binding to a data source._
+> Note: IBindingList interface provides features required to support both complex and simple scenarios when binding to a data source.
 
 Sort method relies on the data source for the grid and by default sorting is done based on the value members present in the data source and not based on display member. We can implement Sort By DisplayMember feature in Data Bound Grid. The code for foreign key column can be added to the View of the data table so that the sort behavior can be redirected to use foreign key column linked to the combo box column when the user sorts combo box column.
 
@@ -42009,7 +42160,7 @@ The following code example implements a solution for sorting a column by its dis
 
 To accomplish this, two handlers, CellClick event and QueryCellInfo event have been used. In CellClick event, display member is set to the existing mapping name in sortName (which will be the value member) so that sorting is done by display member.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42025,9 +42176,9 @@ else if (column.MappingName == "CategoryID")
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim sortName As String = column.MappingName
 
@@ -42042,10 +42193,16 @@ sortName = "CategoryName"
 End If
 
 
+{% endhighlight %}
+
+
+
+
+
 
 DataView is created by using List property under CurrencyManager class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42055,17 +42212,23 @@ DataView dv = cm.List as DataView;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim cm As CurrencyManager = TryCast(BindingContext(Grid.DataSource, Grid.DataMember), CurrencyManager)
 
 Dim dv As DataView = TryCast(cm.List, DataView)
 
+{% endhighlight %}
+
+
+
+
+
 DataView sort is applied to this with sortName.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42083,9 +42246,9 @@ else
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 If dv.Sort = sortName Then
 
@@ -42097,13 +42260,17 @@ dv.Sort = sortName
 
 End If
 
-> ![](Grid-Controls_images/Grid-Controls_img519.jpeg)
+{% endhighlight %}
 
-_Note: CurrencyManager manages a list of binding objects when data source uses IBindingList interface._
+
+
+
+
+> Note: CurrencyManager manages a list of binding objects when data source uses IBindingList interface.
 
 In QueryCellInfo handler, the sorting icon is drawn with respect to sorting
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42117,9 +42284,9 @@ else if (dv.Sort == sortName + " DESC")
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 If dv.Sort = sortName Then
 
@@ -42131,6 +42298,12 @@ e.Style.Tag = ListSortDirection.Descending
 
 End If
 
+{% endhighlight %}
+
+
+
+
+
 
 
 ![](Grid-Controls_images/Grid-Controls_img520.jpeg)
@@ -42139,15 +42312,15 @@ End If
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Sort By DisplayMember Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Sort By DisplayMember Demo_
 
-##### Data Relations
+#### Data Relations
 
 
 
 This section illustrates the following topics.
 
-###### Nested Drop-down Grids
+#### Nested Drop-down Grids
 
 Nested Drop-down grids are used to represent multi-level data in a grid. For example, if a bank wants to load all the accounts of an enrolled user in grid control for a financial project, and some of the accounts have subaccounts with options to be selected under each subaccount, which need to be loaded/ shown as a subelement to that account, Nested Drop-down grids can be used to represent data. Data can be distributed in parent (primary) grid, child grid, and so on. Grid Data Bound Grid control can display hierarchical data using Nested Drop-down grids.
 
@@ -42157,7 +42330,7 @@ In the code example below, the parent (primary) grid is the 'Customers' table fr
 
 This example has a derived GridDataBoundGrid class called GridHierDataBoundGrid used for all the grids to be displayed. In the constructor for this class, the tables for parent and child are to be passed.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42173,9 +42346,9 @@ new QueryFormatGridEventHandler(ProvideOrderFormat), true);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Parent table to Child table.
 
@@ -42184,12 +42357,18 @@ new QueryFormatGridEventHandler(ProvideOrderFormat), true);
 Me.customerGrid1 = New GridHierDataBoundGrid(Me, Me.dataSet11.Customers, Me.dataSet11.Orders, Me.orderGrid2, New QueryFilterStringEventHandler(AddressOf ProvideOrdersFilterStrings), New QueryFormatGridEventHandler(AddressOf ProvideOrderFormat), True)
 
 
+{% endhighlight %}
+
+
+
+
+
 
 Finally, to specify a relationship between a parent table and a child table, an event handler must be passed for the QueryFilterString event. The event should specify the FilterString that defines the relationship between the parent table and the child table.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42211,9 +42390,9 @@ e.FilterString = string.Format("CustomerID = '{0}'", this.customerGrid1.Model[e.
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Parent table to Child table.
 
@@ -42231,6 +42410,12 @@ End If
 
 End Sub
 
+{% endhighlight %}
+
+
+
+
+
 
 
 ![](Grid-Controls_images/Grid-Controls_img521.jpeg)
@@ -42239,9 +42424,9 @@ End Sub
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Drop Grid Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Drop Grid Demo_
 
-###### Multiple Nested Relations
+#### Multiple Nested Relations
 
 Grid Data Bound Grid control supports multiple nested relations. A relation can be added in the data source and the data source can be set to GridDataBoundGrid. Then the name of the relation can be passed through Grid.Binder.AddRelation function to show a hierarchical pattern.
 
@@ -42249,7 +42434,7 @@ Example:
 
 The following code example illustrates the display of a DataSet with multiple nested relations. The sample displays NorthWind's 'Category', 'Products' and the 'Orders_Details' table, and allows you to expand and collapse the order details for each order and products for each category. After adding a relation in the dataset and setting DataSource to the grid, the name of the relation is passed through Grid.Binder.AddRelation function in order to show hierarchical pattern.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42259,13 +42444,19 @@ GridHierarchyLevel hlProducts_OrderDetails = gridBinder.AddRelation("Products_Or
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim hlCategory_Products As GridHierarchyLevel = gridBinder.AddRelation("Category_Products")
 
 Dim hlProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRelation("Products_OrderDetails")
+
+{% endhighlight %}
+
+
+
+
 
 ![](Grid-Controls_images/Grid-Controls_img522.jpeg)
 
@@ -42273,13 +42464,13 @@ Dim hlProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRelation("Prod
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\Expand Grid Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\Expand Grid Demo_
 
-###### Hierarchical Grid with Tree Lines
+#### Hierarchical Grid with Tree Lines
 
 Grid Data Bound Grid supports display of hierarchical grid with tree lines. This can be achieved by setting the ShowTreeLines property to _true_. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42287,11 +42478,17 @@ this.gridDataBoundGrid1.ShowTreeLines = true;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridDataBoundGrid1.ShowTreeLines = True
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -42303,57 +42500,57 @@ With ShowTreeLines property set to true, there is no separate column allotted fo
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\GDBG Tree Lines Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\GDBG Tree Lines Demo_
 
-###### ExpandAll and CollapseAll Methods
+#### ExpandAll and CollapseAll Methods
 
 1. ExpandAll
-4. Using this method will enable the user to view expanded nodes in DataBound Grid, i.e., the parent, child and subsequent sublevel nodes.
+2. Using this method will enable the user to view expanded nodes in DataBound Grid, i.e., the parent, child and subsequent sublevel nodes.
 
-The following code illustrates how to set this method for DataBound Grid:
+   The following code illustrates how to set this method for DataBound Grid:
 
-[C#]
+   ~~~ cs
 
+		this.gridDataBoundGrid1.ExpandAll();
 
+   ~~~
+   {:.prettyprint }
 
-this.gridDataBoundGrid1.ExpandAll();
+   ~~~ vbnet
 
+		Me.gridDataBoundGrid1.ExpandAll()
 
+   ~~~
+   {:.prettyprint }
 
-[VB.NET]
-
-
-
-Me.gridDataBoundGrid1.ExpandAll()
-
-![](Grid-Controls_images/Grid-Controls_img524.jpeg)
-
-
-
-5. CollapseAll
-6. Using this method will enable the user to view collapsed nodes in DataBound Grid, i.e., only the parent node can be viewed with its corresponding expansion icon.
-
-The following code illustrates how to set this method for DataBound Grid:
-
-[C#]
+   ![](Grid-Controls_images/Grid-Controls_img524.jpeg)
 
 
 
-this.gridDataBoundGrid1.CollapseAll();
+3. CollapseAll
+4. Using this method will enable the user to view collapsed nodes in DataBound Grid, i.e., only the parent node can be viewed with its corresponding expansion icon.
+
+   The following code illustrates how to set this method for DataBound Grid:
+
+   ~~~ cs
+
+		this.gridDataBoundGrid1.CollapseAll();
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		Me.gridDataBoundGrid1.CollapseAll()
+
+   ~~~
+   {:.prettyprint }
+   
+   ![](Grid-Controls_images/Grid-Controls_img525.jpeg)
 
 
 
-[VB.NET]
-
-
-
-Me.gridDataBoundGrid1.CollapseAll()
-
-![](Grid-Controls_images/Grid-Controls_img525.jpeg)
-
-
-
-##### Multi Row Record
+#### Multi Row Record
 
 DataBound Grid has support for displaying a single record in multiple rows. 
 
@@ -42361,11 +42558,9 @@ DataBound Grid has support for displaying a single record in multiple rows.
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img527.jpeg)
+> Note: For more details, refer to the following browser sample:
 
-_Note: For more details, refer to the following browser sample:_
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Multi Row Record Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Multi Row Record Demo_
 
 Example
 
@@ -42373,7 +42568,7 @@ Using the following code example, you can switch display of records from NorthWi
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42389,9 +42584,9 @@ binder.LayoutColumns(new string[] {"CustomerID", "CompanyName", "ContactTitle", 
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim gridModel As GridModel = gridDataBoundGrid1.Model
 
@@ -42405,7 +42600,13 @@ binder.LayoutColumns(New String() {"CustomerID", "CompanyName", "ContactTitle", 
 
 "Country", "Phone", "Fax", "Region"})
 
-##### Record Navigation Bar
+{% endhighlight %}
+
+
+
+
+
+#### Record Navigation Bar
 
 It is possible to display DataBound Grid within Grid Record Navigation control. This combination will give you a look similar to Microsoft Access.
 
@@ -42413,43 +42614,33 @@ It is possible to display DataBound Grid within Grid Record Navigation control. 
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img529.jpeg)
+> Note: For more details, refer to the following browser sample:
 
-_Note: For more details, refer to the following browser sample:_
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_
 
 Example
 
 The following sample displays DataBound Grid within Grid Record Navigation control. This sample was created using the designer. 
 
 1. Step 1: Create an SqlDataAdapter and connect to the Customers table of NorthWind database. 
-> 
-![](Grid-Controls_images/Grid-Controls_img530.jpeg)
+   
+   > Note: A DataSet is generated.
 
-_Note: A DataSet is generated._ 
+2. Step 2: Drag Grid Record Navigation control onto the form.
 
-7. Step 2: Drag Grid Record Navigation control onto the form.
-
-![](Grid-Controls_images/Grid-Controls_img531.png)
-
-
+   ![](Grid-Controls_images/Grid-Controls_img531.png)
+   
+3. Step 3: Drag Grid DataBound Grid onto the Grid Record Navigation control.
 
 
 
-8. Step 3: Drag Grid DataBound Grid onto the Grid Record Navigation control.
+   ![](Grid-Controls_images/Grid-Controls_img532.png)
 
 
 
-![](Grid-Controls_images/Grid-Controls_img532.png)
+   > Note: Records can be displayed by typing in the NavigationBar._
 
-
-
-> ![](Grid-Controls_images/Grid-Controls_img533.jpeg)
-
-_Note: Records can be displayed by typing in the NavigationBar._
-
-![](Grid-Controls_images/Grid-Controls_img534.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img534.jpeg)
 
 
 
@@ -42457,13 +42648,13 @@ _Note: Records can be displayed by typing in the NavigationBar._
 
 DataBound Grid is displayed within Grid Record Navigation control.
 
-##### Multiple Headers
+#### Multiple Headers
 
 Grid Data Bound Grid supports display of multiple row and column headers. Additional row headers can be added along side the existing header by setting Model.Rows.HeaderCount and additional column headers can be added below the existing column header by setting the Model.Cols.HeaderCount property.
 
 The following code example illustrates how to display multiple row and column headers.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42480,10 +42671,9 @@ this.gridDataBoundGrid1.Model.Rows.HeaderCount = extraRowHeaders;
 this.gridDataBoundGrid1.Model.Cols.HeaderCount = extraColHeaders;
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim extraRowHeaders As Integer = 1
 
@@ -42497,6 +42687,12 @@ Me.gridDataBoundGrid1.Model.Rows.HeaderCount = extraRowHeaders
 
 Me.gridDataBoundGrid1.Model.Cols.HeaderCount = extraColHeaders
 
+{% endhighlight %}
+
+
+
+
+
 
 
 The resultant output is shown below.
@@ -42505,7 +42701,7 @@ The resultant output is shown below.
 
 
 
-##### Performance of DataBound Grid 
+#### Performance of DataBound Grid 
 
 Essential DataBound Grid can handle large amount of data without a performance hit.
 
@@ -42515,7 +42711,7 @@ Essential DataBound Grid can handle large amount of data without a performance h
 
 
 
-For more details, refer to the sample: _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Grid Performance Demo_
+For more details, refer to the sample: _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Grid Performance Demo_
 
 Example
 
@@ -42537,11 +42733,11 @@ In the Manipulate Grid group box
 
 
 
-##### Events
+#### Events
 
 The important events in Grid control and DataBound Grid are as follows.
 
-Current Cell Related Events
+#### Current Cell Related Events
 
 * CurrentCellAcceptedChanges - Occurs when the grid accepts changes made to active current cell.
 * CurrentCellMoved - Occurs when current cell is moved to new position.
@@ -42572,7 +42768,7 @@ Current Cell Related Events
 * CurrentCellKeyDown - Occurs before GridCellRendererBase.OnKeyDown is called.
 * CurrentCellKeyUp - Occurs before GridCellRendererBase.OnKeyUp is called.
 
-Mouse Related Events
+#### Mouse Related Events
 
 * CellButtonClicked - Occurs when the user has clicked on a button element inside a cell renderer.
 * CellClick - Occurs when user clicks inside a cell.
@@ -42584,7 +42780,7 @@ Mouse Related Events
 * CheckBoxClick - Occurs when the user selects a check box in a cell.
 * PushButtonClick - Occurs when the user clicks a push button of the PushButton cell.
 
-Other Events
+#### Other Events
 
 * Click - Occurs when control is clicked once.
 * DoubleClick - Occurs when control is double clicked.
@@ -42601,7 +42797,8 @@ Other Events
 * QueryCanOleDragRange - Occurs when the user hovers the mouse over the edge of a selected range. 
 * ResizingColumns - Occurs when user is resizing a selected range of columns.
 * ResizingRows - Occurs when user is resizing a selected range of rows.
-##### Enables Migration of .Net Grid to Esssential Grid
+
+#### Enables Migration of .Net Grid to Esssential Grid
 
 
 Look-up table that Enables Migration of .Net Grid to Esssential Grid
@@ -42614,10 +42811,10 @@ _Table 75: Properties_
 
 <table>
 <tr>
-<td>
-.NET GRID</td><td>
-ESSSENTIAL GRID</td><td>
-DESCRIPTION</td></tr>
+<th>
+.NET GRID</th><th>
+ESSSENTIAL GRID</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 AllowDrop</td><td>
@@ -42796,15 +42993,16 @@ RefreshEdit</td><td>
 CurrentCell.Refresh()</td><td>
 Refreshes the value of the current cell. </td></tr>
 </table>
-##### Field Chooser for DataBound Grid 
+
+#### Field Chooser for DataBound Grid 
 
 This feature enables you to customize the view of the grid without modifying the database.The _FieldChooser_ class of _GridDataBoundGrid_ has been implemented to add or remove columns from a grid. 
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 This feature will be useful when you want to remove certain columns (which cannot be deleted) from the grid.
 
-Methods
+#### Methods
 
 _Table 78: Field chooser_
 
@@ -42818,25 +43016,25 @@ TYPE </th><th>
 RETURN TYPE </th><th>
 REFERENCE LINKS </th></tr>
 <tr>
-<th>
-WireGrid </th><th>
-Used to wire the {{'_FieldChooser._'|markdownify}}</th><th>
-Overloads:  ( Arg1) </th><th>
-In GridWindowsForm </th><th>
-Example: GridDataboundGrid1.WireGrid(GridDataboundGrid). </th><th>
-NA</th></tr>
+<td>
+WireGrid </td><td>
+Used to wire the {{ '_FieldChooser._' | markdownify }}</td><td>
+Overloads:  ( Arg1) </td><td>
+In GridWindowsForm </td><td>
+Example: GridDataboundGrid1.WireGrid(GridDataboundGrid). </td><td>
+NA</td></tr>
 <tr>
-<th>
-UnWireGrid </th><th>
-Used to unwire the FieldChooser.</th><th>
-NA</th><th>
-In GridWindowsForm </th><th>
-Example: GridDataboundGrid1.Unwired(). </th><th>
-NA</th></tr>
+<td>
+UnWireGrid </td><td>
+Used to unwire the FieldChooser.</td><td>
+NA</td><td>
+In GridWindowsForm </td><td>
+Example: GridDataboundGrid1.Unwired(). </td><td>
+NA</td></tr>
 </table>
 
 
-Sample Link
+#### Sample Link
 
 You can find a sample for this feature in the following location: 
 
@@ -42844,47 +43042,39 @@ _..\..\AppData\Local\Syncfusion\EssentialStudio\9.4.0.49\Windows\Grid.Windows\Sa
 
 Adding Field Chooser for Grid Data Bound Grid
 
-9. To add field chooser, pass data bound grid as the parameter_of the _WireGrid_ method.
+1. To add field chooser, pass data bound grid as the parameter_of the _WireGrid_ method.
 
-The following code illustrates this:
+   The following code illustrates this:
 
-[C#]
+   ~~~ cs
+    
+		GridDataBoundFieldChooser fChooser = new GridDataBoundFieldChooser();
+		           fChooser.WireGrid(this.GridDataBoundGrid1);
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-  GridDataBoundFieldChooser fChooser = new GridDataBoundFieldChooser();
+		Dim fchooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
+		            fchooser.WireGrid(Me.GridDataBoundGrid1)
 
-            fChooser.WireGrid(this.GridDataBoundGrid1);
+   ~~~
+   {:.prettyprint }
 
+2. When the code runs, the entire grid will open.
+3. Right click on a column header and select the Field Chooser menu item to view _Field Chooser_ dialog.
 
+   ![](Grid-Controls_images/Grid-Controls_img538.png)
 
-[VB.NET]
+4. This dialog will list all the column names with check boxes adjacent to them.
 
-Dim fchooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
+   ![](Grid-Controls_images/Grid-Controls_img539.png)
 
-            fchooser.WireGrid(Me.GridDataBoundGrid1)
+5. Select the checkboxes of the columns you want to be displayed in the grid.
+6. The grid will have only the columns which are selected in the _Field Chooser_ dialog.
 
-
-
-
-
-10. When the code runs, the entire grid will open.
-11. Right click on a column header and select the Field Chooser menu item to view _Field Chooser_ dialog.
-
-![](Grid-Controls_images/Grid-Controls_img538.png)
-
-
-
-12. This dialog will list all the column names with check boxes adjacent to them.
-
-![](Grid-Controls_images/Grid-Controls_img539.png)
-
-
-
-13. Select the checkboxes of the columns you want to be displayed in the grid.
-14. The grid will have only the columns which are selected in the _Field Chooser_ dialog.
-
-![](Grid-Controls_images/Grid-Controls_img540.png)
+   ![](Grid-Controls_images/Grid-Controls_img540.png)
 
 
 
@@ -42900,7 +43090,7 @@ Grid List control is System.Windows.Forms ListControl-derived object. It uses an
 
 This section will provide step-by-step procedure to create a Grid List control through designer and through programmatical approach in a .NET application.
 
-##### Through Designer
+#### Through Designer
 
 With the designer, all you have to do is drag the control onto the form, size it and then set the desired properties, assuming you have a data source ready. If you do not have data source ready, then create one by using the steps listed below.
 
@@ -42908,13 +43098,13 @@ To Create a Data Source
 
 1. Drag an SqlDataAdapter from Data tab of the Toolbox onto the form. Follow the steps in the wizard to select database and SQL query used to generate the table.
 
-![](Grid-Controls_images/Grid-Controls_img542.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img542.jpeg)
 
 
 
 2. Click SqlAdapter in the components tray with the right Mouse button and generate a dataset for this adapter by just taking the defaults. 
 
-![](Grid-Controls_images/Grid-Controls_img543.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img543.jpeg)
 
 
 
@@ -42922,40 +43112,40 @@ To Create a Data Source
 
 3. In the Form_Load event handler, Fill method will be called automatically for this SqlDataAdapter by passing dataset that is generated in the previous step.
 
-![](Grid-Controls_images/Grid-Controls_img544.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img544.jpeg)
 
 
 
 4. Drag GridListControl object from your tool box and drop it onto the form.
 
-![](Grid-Controls_images/Grid-Controls_img545.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img545.jpeg)
 
 
 
 5. Size and position it.
 6. Go to Properties dialog of this Grid List control and set DataSource property of this control to an appropriate object.
 
-![](Grid-Controls_images/Grid-Controls_img546.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img546.jpeg)
 
 
 
 7. Run the application. Following is the output.
 
-![](Grid-Controls_images/Grid-Controls_img547.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img547.jpeg)
 
 
 
 This designer-created data source is now available for use as the data source member of Grid List control. For a complete step-by-step tutorial on how to use the designer to create data source, see the Grid Data Bound Grid tutorial.
 
-##### Through Code
+#### Through Code
 
 The Grid List control sample that ships with Essential Grid does not use the designer. It creates an ArrayList of objects that serves as a data source for the Grid List control. Each state object has a LongName, ShortName and ImageIndex properties that can be displayed in the list control. Here are some code samples that illustrate assignments of the major properties. 
 
 For the complete implementation details, refer to the sample in the below installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -42987,9 +43177,9 @@ gridListBox1.FillLastColumn = true;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Sets to arraylist of states.
 
@@ -43015,13 +43205,19 @@ gridListBox1.SelectionMode = SelectionMode.One
 
 'Makes last column.
 
-gridListBox1.FillLastColumn = True             
+gridListBox1.FillLastColumn = True    
+
+{% endhighlight %}
+
+
+
+         
 
 #### Concepts and Features
 
 This section discusses the following concepts of Grid List control:
 
-##### Data binding and Selection Modes
+#### Data binding and Selection Modes
 
 Data Binding
 
@@ -43029,7 +43225,7 @@ Data binding is used in Web pages that contain interactive components such as fo
 
 The following code example illustrates data binding for Grid List control by using DataSource property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43051,9 +43247,9 @@ this.gridlistControl1.DataSource = array;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim array As ArrayList = New ArrayList()
 
@@ -43071,9 +43267,15 @@ array.Add(New [MyClass](6, "Johny"))
 
 Me.gridlistControl1.DataSource = array
 
+{% endhighlight %}
 
 
-Selection Modes
+
+
+
+
+
+#### Selection Modes
 
 The selection behavior for Grid List control can be specified by using SelectionMode property. There are 3 types of selection behaviors:
 
@@ -43085,7 +43287,7 @@ arrow keys, etc.
 
 The following code example illustrates setting of various selection behaviors for Grid List control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43097,9 +43299,9 @@ this.gridListControl1.SelectionMode = SelectionMode.MultiExtended;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.SelectionMode = SelectionMode.One
 
@@ -43107,13 +43309,19 @@ Me.gridListControl1.SelectionMode = SelectionMode.MultiSimple
 
 Me.gridListControl1.SelectionMode = SelectionMode.MultiExtended
 
-##### ComboBoxBase Feature
+{% endhighlight %}
+
+
+
+
+
+#### ComboBoxBase Feature
 
 Grid List control can be coupled to a ComboBoxBase control by using ListControl property of ComboBoxBase class. ComboBoxBase is an advanced control provided by Syncfusion, which essentially separates edit portion from drop-down portion making. It displays Grid List control as a dropdown i.e. users can drop Grid List control in the drop-down area to get a multi-column drop-down effect.
 
 The following code example illustrates usage of Grid List control as a drop-down in Combo Box Base control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43121,11 +43329,16 @@ this.comboBoxBase1.ListControl = this.gridListControl1;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.comboBoxBase1.ListControl = Me.gridListControl1
+
+{% endhighlight %}
+
+
+
 
 
 
@@ -43133,7 +43346,7 @@ Me.comboBoxBase1.ListControl = Me.gridListControl1
 
 
 
-##### Customizing List control
+#### Customizing List control
 
 The appearance Grid List control can be customized by customizing the background color, image, header background color, etc. The following properties can be used for customization:
 
@@ -43141,7 +43354,7 @@ The appearance Grid List control can be customized by customizing the background
 
 The following code example illustrates setting of a transparent background for grid cells.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43149,11 +43362,17 @@ this.gridListControl1.TransparentBackground = true;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.TransparentBackground = True
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43167,7 +43386,7 @@ Me.gridListControl1.TransparentBackground = True
 
 The following code example illustrates usage of the properties to display grid lines.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43177,13 +43396,19 @@ this.gridListControl1.Properties.DisplayVertLines = true;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.Properties.DisplayHorzLines = True
 
 Me.gridListControl1.Properties.DisplayVertLines = True
+
+{% endhighlight %}
+
+
+
+
 
 ![](Grid-Controls_images/Grid-Controls_img550.jpeg)
 
@@ -43201,7 +43426,7 @@ Me.gridListControl1.Properties.DisplayVertLines = True
 
 The following code example illustrates the usage of the property to render a 3D header.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43209,11 +43434,17 @@ this.gridListControl1.Properties.Buttons3D = true;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.Properties.Buttons3D = True
+
+{% endhighlight %}
+
+
+
+
 
 ![](Grid-Controls_images/Grid-Controls_img552.jpeg)
 
@@ -43223,7 +43454,7 @@ Me.gridListControl1.Properties.Buttons3D = True
 
 The following code example illustrates the usage of this property to render blue grid lines.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43231,11 +43462,17 @@ this.gridListControl1.Grid.Properties.GridLineColor = Color.Blue;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43249,7 +43486,7 @@ Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
 
 The following code example illustrates the usage of this property to render Beige background color.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43257,11 +43494,17 @@ this.gridListControl1.BackColor = Color.Beige;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.BackColor = Color.Beige
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43273,7 +43516,7 @@ Me.gridListControl1.BackColor = Color.Beige
 
 The following code example illustrates usage of this property to render a red background for the headers.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43281,11 +43524,17 @@ this.gridListControl1.HeaderBackColor = Color.Red;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.HeaderBackColor = Color.Red
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43293,7 +43542,7 @@ Me.gridListControl1.HeaderBackColor = Color.Red
 
 The following code example illustrates usage of this property to render a blue header text color.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43301,11 +43550,17 @@ this.gridListControl1.HeaderTextColor = Color.Blue;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.HeaderTextColor = Color.Blue;
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43313,7 +43568,7 @@ Me.gridListControl1.HeaderTextColor = Color.Blue;
 
 The following code example illustrates usage of this property to set the required image as background of the control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43321,11 +43576,16 @@ this.gridListControl1.BackgroundImage = Image.FromFile("Colud.jpg");
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.gridListControl1.BackgroundImage = Image.FromFile("Colud.jpg")
+
+{% endhighlight %}
+
+
+
 
 
 
@@ -43345,36 +43605,36 @@ Grid Record Navigation control will allow the user to move from row to row using
 
 This section will provide step-by-step procedure to create Grid Record Navigation control through designer and through programmatical approach in.NET application.
 
-##### Through Designer
+#### Through Designer
 
 With the designer you can drag both Grid Record Navigation control and Grid control (either Grid control or Data Bound Grid) from the toolbox onto your form. But, to get the proper initialization code generated by the designer, you must first drop and position Grid Record Navigation control on your form and then drag the grid directly onto Grid Record Navigation control. Do not drop the grid onto the form.
 
-8. Drag GridRecordNavigationControl object from your toolbox and drop it on the form.
+1. Drag GridRecordNavigationControl object from your toolbox and drop it on the form.
 
-![](Grid-Controls_images/Grid-Controls_img557.jpeg)
-
-
-
-
-
-9. Size and position it.
-10. Drag GridDataBoundGrid object from your toolbox and drop it on Grid Record Navigation control (and not the form itself).
-
-![](Grid-Controls_images/Grid-Controls_img558.jpeg)
-
-
-
-11. Set GridDataBoundGrid.DataSource property to an appropriate object.
-
-![](Grid-Controls_images/Grid-Controls_img559.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img557.jpeg)
 
 
 
 
 
-12. Run the application. The following will be the output.
+2. Size and position it.
+3. Drag GridDataBoundGrid object from your toolbox and drop it on Grid Record Navigation control (and not the form itself).
 
-![](Grid-Controls_images/Grid-Controls_img560.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img558.jpeg)
+
+
+
+4. Set GridDataBoundGrid.DataSource property to an appropriate object.
+
+   ![](Grid-Controls_images/Grid-Controls_img559.jpeg)
+
+
+
+
+
+5. Run the application. The following will be the output.
+
+   ![](Grid-Controls_images/Grid-Controls_img560.jpeg)
 
 
 
@@ -43382,11 +43642,11 @@ With the designer you can drag both Grid Record Navigation control and Grid cont
 
 A Grid Record Navigation control is created.
 
-##### Through Code
+#### Through Code
 
 Here is some minimal code that is necessary to create Grid Record Navigation control.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43428,9 +43688,9 @@ this.Controls.Add(this.recordNavigationControl1);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.recordNavigationControl1 = New Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl()
 
@@ -43468,6 +43728,12 @@ Me.recordNavigationControl1.Controls.Add(Me.gridControl1)
 
 Me.Controls.Add(Me.recordNavigationControl1)
 
+{% endhighlight %}
+
+
+
+
+
 #### Built-in Navigation Support for RecordNavigationControl in GridGroupingControl
 
 GridGrouping control now provides four types of built-in navigation support enabling users to navigate to the first record, last record, previous record, and next record. 
@@ -43476,7 +43742,7 @@ Use Case Scenarios
 
 When you have lots of records in your application, this feature helps you easily navigate to the required record.
 
- _Table_ _10_: Methods Table_
+ _Table 10: Methods Table_
 
 <table>
 <tr>
@@ -43488,78 +43754,107 @@ TYPE</th><th>
 RETURN TYPE</th><th>
 REFERENCE LINKS</th></tr>
 <tr>
-<th>
-MoveFirst()</th><th>
-This Method is used to navigate to the first record.</th><th>
-N/A </th><th>
-method</th><th>
-void </th><th>
-N/A. </th></tr>
+<td>
+MoveFirst()</td><td>
+This Method is used to navigate to the first record.</td><td>
+N/A </td><td>
+method</td><td>
+void </td><td>
+N/A. </td></tr>
 <tr>
-<th>
-MoveLast()</th><th>
-This method is used to navigate to the last record.</th><th>
-N/A</th><th>
-method</th><th>
-void</th><th>
-N/A</th></tr>
+<td>
+MoveLast()</td><td>
+This method is used to navigate to the last record.</td><td>
+N/A</td><td>
+method</td><td>
+void</td><td>
+N/A</td></tr>
 <tr>
-<th>
-MoveNext()</th><th>
-This method is used to navigate to the next record.</th><th>
-N/A</th><th>
-method</th><th>
-void</th><th>
-N/A</th></tr>
+<td>
+MoveNext()</td><td>
+This method is used to navigate to the next record.</td><td>
+N/A</td><td>
+method</td><td>
+void</td><td>
+N/A</td></tr>
 <tr>
-<th>
-MovePrevious()</th><th>
-This method is used to navigate to the previous record.</th><th>
-N/A </th><th>
-method</th><th>
-void</th><th>
-N/A</th></tr>
+<td>
+MovePrevious()</td><td>
+This method is used to navigate to the previous record.</td><td>
+N/A </td><td>
+method</td><td>
+void</td><td>
+N/A</td></tr>
 </table>
-Sample Link
+
+#### Sample Link
 
 A demo of this feature is available in the following location:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
 
 Adding Navigation Bar to the RecordNavigationControl
 
 The following are steps to add navigation bar:
 
-13. Enable navigation bar by setting ShowNavigationBar property to true. The following code illustrates this:
+1. Enable navigation bar by setting ShowNavigationBar property to true. The following code illustrates this:
 
-[C#]
+   ~~~ cs
 
+		this.gridGroupingControl1.ShowNavigationBar = true;
 
+   ~~~
+   {:.prettyprint }
 
-this.gridGroupingControl1.ShowNavigationBar = true;
+   ~~~ vbnet
 
+		Me.gridGroupingControl1.ShowNavigationBar = True
 
-
-[VB]
-
-
-
-Me.gridGroupingControl1.ShowNavigationBar = True
-
-
+   ~~~
+   {:.prettyprint }
 
 14. Call the methods for navigation bar i.e., MoveFirst(), MoveLast(), MoveNext() and MovePrevious() methods. The following code illustrates this: 
 
+{% highlight c# %}
+
+//This property should set to true to show navigation bar. 
+     
+this.gridGroupingControl1.ShowNavigationBar = true;
+
+//This method is used to navigate the first record.
+
+this.gridGroupingControl1.RecordNavigationBar.MoveFirst();
+
+//This method is used to navigate the last record.
+
+this.gridGroupingControl1.RecordNavigationBar.MoveLast();
+
+//This method is used to navigate the next record.
+
+this.gridGroupingControl1.RecordNavigationBar.MoveNext();
+
+//This method is used to navigate the previous record.    
+
+this.gridGroupingControl1.RecordNavigationBar.MovePrevious();
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'This property should set to true to show the navigation bar.       
+Me.gridGroupingControl1.ShowNavigationBar = True
+'This method is used to navigate the first record.     
+Me.gridGroupingControl1.RecordNavigationBar.MoveFirst()
+'This method is used to navigate the last record.     
+Me.gridGroupingControl1.RecordNavigationBar.MoveLast()
+'This method is used to navigate the next record.  
+Me.gridGroupingControl1.RecordNavigationBar.MoveNext()
+'This method is used to navigate the previous record.     
+Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
+
+{% endhighlight %}
 
 
-<table>
-<tr>
-<td>
-[C#]//This property should set to true to show navigation bar.      this.gridGroupingControl1.ShowNavigationBar = true;//This method is used to navigate the first record.this.gridGroupingControl1.RecordNavigationBar.MoveFirst();//This method is used to navigate the last record.this.gridGroupingControl1.RecordNavigationBar.MoveLast();//This method is used to navigate the next record.this.gridGroupingControl1.RecordNavigationBar.MoveNext();//This method is used to navigate the previous record.    this.gridGroupingControl1.RecordNavigationBar.MovePrevious();</td></tr>
-<tr>
-<td>
-[VB]'This property should set to true to show the navigation bar.       Me.gridGroupingControl1.ShowNavigationBar = True'This method is used to navigate the first record.     Me.gridGroupingControl1.RecordNavigationBar.MoveFirst()'This method is used to navigate the last record.     Me.gridGroupingControl1.RecordNavigationBar.MoveLast()'This method is used to navigate the next record.  Me.gridGroupingControl1.RecordNavigationBar.MoveNext()'This method is used to navigate the previous record.     Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()</td></tr>
-</table>
 ![](Grid-Controls_images/Grid-Controls_img561.png)
 
 
@@ -43573,17 +43868,23 @@ RecordNavigationControl supports visual styles such as Default, Metro. The style
 
 The following code example allows you to set the style for the RecordNavigationControl.
 
-[C#]
+{% highlight c# %}
 
 this.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro;
 
 
 
- [VB]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Me.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43601,14 +43902,26 @@ This class is derived from the textbox and will allow you to bind it to the Curr
 
 Drag the Grid Aware Text Box from your toolbox and drop it on a form along with either Grid control or DataBound Grid. Finally, in your Form_Load handler, add a call to GridAwareTextBox.WireGrid to bind Grid Aware Text Box to the grid. Here are some code samples that will show you how this is done.
 
-<table>
-<tr>
-<td>
-[C#]private void Form1_Load(object sender, System.EventArgs e){//Binds Grid Aware Text Box to grid.    this.gridAwareTextBox1.WireGrid(this.gridControl1);}</td></tr>
-<tr>
-<td>
-[VB.NET]Private Sub Form1_Load(sender As Object, e As System.EventArgs)'Binds Grid Aware Text Box to grid.Me.gridAwareTextBox1.WireGrid(Me.gridControl1)End Sub </td></tr>
-</table>
+
+{% highlight c# %}
+
+private void Form1_Load(object sender, System.EventArgs e){
+
+//Binds Grid Aware Text Box to grid.    
+this.gridAwareTextBox1.WireGrid(this.gridControl1);
+}
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Private Sub Form1_Load(sender As Object, e As System.EventArgs)
+'Binds Grid Aware Text Box to grid.
+Me.gridAwareTextBox1.WireGrid(Me.gridControl1)
+End Sub 
+
+
+{% endhighlight %}
+
 ### Grid Helper Classes
 
 Grid control provides a collection of grid helper classes to achieve specific functionalities. You need to refer to Syncfusion.GridHelperClasses.Windows assembly in your Windows application to make use of these helper classes. The various helper classes and their usage is described in the following topics.
@@ -43625,7 +43938,7 @@ Properties
 
 The following code example illustrates how to set this property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43633,11 +43946,17 @@ pdfConvertor.ShowHeader = true;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 pdfConvertor.ShowHeader = True
+
+{% endhighlight %}
+
+
+
+
 
 ![](Grid-Controls_images/Grid-Controls_img563.jpeg)
 
@@ -43647,7 +43966,7 @@ pdfConvertor.ShowHeader = True
 
 The following code example illustrates how to set this property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43655,11 +43974,17 @@ pdfConvertor.ShowFooter = true;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 pdfConvertor.ShowFooter = True
+
+{% endhighlight %}
+
+
+
+
 
 ![](Grid-Controls_images/Grid-Controls_img564.jpeg)
 
@@ -43671,7 +43996,7 @@ pdfConvertor.ShowFooter = True
 
 The following code example illustrates how to set this property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43679,11 +44004,17 @@ pdfConvertor.HeaderHeight = 15;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 pdfConvertor.HeaderHeight = 15
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43691,7 +44022,7 @@ pdfConvertor.HeaderHeight = 15
 
 The following code example illustrates how to set this property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43699,11 +44030,17 @@ pdfConvertor.FooterHeight = 20;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 pdfConvertor.FooterHeight = 20
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43713,7 +44050,7 @@ pdfConvertor.FooterHeight = 20
 
 The following code example illustrates how to set this property.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43721,11 +44058,17 @@ pdfConvertor.Margins.All = 40;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 pdfConvertor.Margins.All = 40
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43735,7 +44078,7 @@ Methods
 
 The following code example illustrates how to use this method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43747,13 +44090,19 @@ pdfConvertor.ExportToPdf("Sample1.pdf", this.gridControl1);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim pdfConvertor As New GridPDFConverter()
 
 pdfConvertor.ExportToPdf("Sample1.pdf", Me.gridControl1)
+
+{% endhighlight %}
+
+
+
+
 
 Events
 
@@ -43763,7 +44112,7 @@ Events
 
 The following code example illustrates how to handle this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43771,17 +44120,23 @@ pdfConvertor.DrawPDFFooter += new GridPDFConverter.DrawPDFHeaderFooterEventHandl
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 AddHandler pdfConvertor.DrawPDFFooter, AddressOf pdfConvertor_DrawPDFFooter
+
+{% endhighlight %}
+
+
+
+
 
 * DrawPDFHeader - This event lets you draw a header for the PDF document.
 
 The following code example illustrates how to handle this event.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43789,17 +44144,23 @@ pdfConvertor.DrawPDFHeader += new GridPDFConverter.DrawPDFHeaderFooterEventHandl
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 AddHandler pdfConvertor.DrawPDFHeader, AddressOf pdfConvertor_DrawPDFHeader
+
+{% endhighlight %}
+
+
+
+
 
 #### Resizing Heights of Individual Rows in Grid
 
 Grid Grouping control does not support resizing heights of individual rows in the grid. This feature has been newly added and can be implemented by initializing an instance of the AllowResizingIndividualRows class to GridEngineFactory in the Form's constructor of your Windows application. The following code examples illustrate how to do this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43807,11 +44168,17 @@ GridEngineFactory.Factory = new Syncfusion.GridHelperClasses.AllowResizingIndivi
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndividualRows()
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43831,7 +44198,7 @@ The new filter bar adds two cell buttons, Filter button and Clear Filter button,
 
 The following code example illustrates how to invoke Grid Dynamic Filter.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43839,11 +44206,17 @@ GridEngineFactory.Factory = new Syncfusion.GridHelperClasses.AllowResizingIndivi
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndividualRows()
+
+{% endhighlight %}
+
+
+
+
 
 
 
@@ -43859,9 +44232,9 @@ GridDynamicFilter in GridGroupingControl is now an enhanced functionality to ser
 
 
 
-<code>filter.LoadCompareOperator();</code>
+&lt;code&gt;filter.LoadCompareOperator();</code>
 
-<code>filter.SaveCompareOperator();</code>
+&lt;code&gt;filter.SaveCompareOperator();</code>
 
 When the code runs, the following output displays.
 
@@ -43871,19 +44244,21 @@ When the code runs, the following output displays.
 
 
 
-Apply Filter Only on Lost Focus in GridDynamicFilter
+#### Apply Filter Only on Lost Focus in GridDynamicFilter
 
 ApplyFilterOnlyOnCellLostFocus property enables you to turn off/on the filtering on each key stroke in GridDynamicFilter. Set ApplyFilterOnlyOnCellLostFocus property to true to filter only when the filter cell lost focus. This disables filtering for each key stroke including Enter, arrow keys, and tab keys. Defaults value is false and allows filtering for each key stroke.
 
 The following code illustrates how to add ApplyFilterOnlyOnCellLostFocus property.
 
-[C#]
+{% highlight c# %}
 
 
 
   GridDynamicFilter filter = new GridDynamicFilter();
 
   filter.ApplyFilterOnlyOnCellLoseFocus= true;
+  
+  {% endhighlight %}
 
 When the code runs, the following output displays.
 
@@ -43897,7 +44272,7 @@ GridForeignKeyHelper class is used to set up foreign key relations to perform fo
 
 The following code example illustrates how to use this class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43905,21 +44280,25 @@ GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", co
 
 
 
-[VB.NET]
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+{% endhighlight %}
 
 
 
 GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", countries, "CountryCode", "CountryName")
 
-> ![](Grid-Controls_images/Grid-Controls_img569.jpeg)
-
-_Note:_
-
-* _The first argument in this method is an instance of Grid Grouping control._
-* _The second argument is the column name of the Parent table's Value Member._
-* _The third argument is the name of the Foreign table._
-* _The fourth argument is the column name of Child table's Value Member._
-* _The fifth argument is the column name of Child tables's Display Member._
+> Note:
+>
+> * The first argument in this method is an instance of Grid Grouping control.
+> * The second argument is the column name of the Parent table's Value Member.
+> * The third argument is the name of the Foreign table.
+> * The fourth argument is the column name of Child table's Value Member.
+> * The fifth argument is the column name of Child tables's Display Member.
 
 The following screen shot illustrates Foreign Key Relations in the Grid Grouping control.
 
@@ -43960,7 +44339,7 @@ Following are the Button Edit cell types available in the Grid control.
 
 The following code example illustrates how to set the grid cell type to ButtonEdit.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -43980,9 +44359,9 @@ this.gridControl1[2, 2].CellType = "ButtonEdit";
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 'Registers the Cell Type with Grid control.
 
@@ -43995,6 +44374,12 @@ sp = New Syncfusion.GridHelperClasses.ButtonEditStyleProperties(Me.gridControl1(
 sp.ButtonEditInfo.ButtonEditType = Syncfusion.GridHelperClasses.ButtonType.Browse
 
 gridControl1[2, 2].CellType = "ButtonEdit"
+
+{% endhighlight %}
+
+
+
+
 
 Following screen shots illustrate different Button Edit cell types.
 
@@ -44076,7 +44461,7 @@ You can implement Calculator control in grid cells by using CalculatorTextBox ce
 
 The following code example illustrates how to set the grid cell type to CalculatorTextBox.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -44102,9 +44487,9 @@ style.Control = c1;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.CalculatorTextBox)
 
@@ -44126,6 +44511,12 @@ style.CellType = "CalculatorTextBox"
 
 style.Control = c1
 
+{% endhighlight %}
+
+
+
+
+
 
 
 Following screen shot illustrates CalculatorTextBox cell type in the Grid control.
@@ -44142,7 +44533,7 @@ You can implement MonthCalendar control in a grid cell by enabling Calendar cell
 
 The following code example illustrates how to set the grid cell type to Calendar.
 
- [C#]
+ {% highlight c# %}
 
 
 
@@ -44162,9 +44553,9 @@ style.Control = new MonthCalendar();
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.Calendar)
 
@@ -44180,6 +44571,12 @@ style.CellType = "Calendar"
 
 style.Control = New MonthCalendar()
 
+{% endhighlight %}
+
+
+
+
+
 
 
 Following screen shot illustrates Calendar cell type in Grid control.
@@ -44190,13 +44587,13 @@ Following screen shot illustrates Calendar cell type in Grid control.
 
 
 
-DateTimePicker
+#### DateTimePicker
 
 You can implement Date Time Picker control in grid cells by using DateTimePicker cell type. This cell type is implemented as a drop-down container, embedded into the cell where date and time picker is added. The drop down contains calendar, which displays and stores date value in the cell. Various formats for date and time can be specified by using Format style property.
 
 The following code example illustrates how to set grid cell type to DateTimePicker.
 
- [C#]
+ {% highlight c# %}
 
 
 
@@ -44216,9 +44613,9 @@ this.gridControl1[4, 2].Format = "MM/dd/yyyy hh:mm";
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.DateTimePicker)
 
@@ -44234,6 +44631,12 @@ Me.gridControl1(4, 2).CellValue = DateTime.Now
 
 Me.gridControl1(4, 2).Format = "MM/dd/yyyy hh:mm"
 
+{% endhighlight %}
+
+
+
+
+
 
 
 Following screen shot illustrates DateTimePicker cell type in Grid control.
@@ -44242,13 +44645,13 @@ Following screen shot illustrates DateTimePicker cell type in Grid control.
 
 
 
-FnumericUpDown
+#### FnumericUpDown
 
 You can implement Float Numeric Up Down control in grid cells by using FNumericUpDown cell type. FNumericUpDown cell types can be used by initializing FloatNumericUpDownStyleProperties class for grid cells. This will allow you set limitations of numeric values and several other properties can also be added as follows.
 
 The following code example illustrates how to set grid cell type to FNumericUpDown.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -44266,9 +44669,9 @@ style.Text = "0.5";
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.FNumericUpDown)
 
@@ -44282,6 +44685,12 @@ style.CellType = "FNumericUpDown"
 
 style.Text = "0.5"
 
+{% endhighlight %}
+
+
+
+
+
 
 
 Following screen shot illustrates FNumericUpDown cell type in the Grid control.
@@ -44292,13 +44701,13 @@ Following screen shot illustrates FNumericUpDown cell type in the Grid control.
 
 
 
-GridinCell
+#### GridinCell
 
 GridinCell cell type provides covered range of cells to embed the grid, which is added as a control to the cells. The registered cell model initializes the range by calculating the size of the grid control to be embedded, and adds styles such as borders and scroll bars to have the control within the range.
 
 The following code example illustrates how to set grid cell type to GridinCell.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -44328,9 +44737,9 @@ this.gridControl1.Controls.Add(grid);
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.GridinCell)
 
@@ -44356,6 +44765,12 @@ Me.gridControl1(3, 2).Control = grid
 
 Me.gridControl1.Controls.Add(grid)
 
+{% endhighlight %}
+
+
+
+
+
 Following screen shot illustrates GridinCell cell type in Grid control.
 
 ![](Grid-Controls_images/Grid-Controls_img587.jpeg)
@@ -44364,13 +44779,13 @@ Following screen shot illustrates GridinCell cell type in Grid control.
 
 
 
-LinkLabelCell
+#### LinkLabelCell
 
 LinkLabelCell cell type displays text, which can be hyperlinked to a specific location. The path to be hyperlinked is specified by using the Tag property.
 
 The following code example illustrates how to set grid cell type to LinkLabelCell.
 
- [C#]
+ {% highlight c# %}
 
 
 
@@ -44390,9 +44805,9 @@ gridControl1[rowIndex, 2].HorizontalAlignment = GridHorizontalAlignment.Center;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.LinkLabelCell)
 
@@ -44408,6 +44823,12 @@ gridControl1(rowIndex, 2).Tag = "http://www.syncfusion.com"
 
 gridControl1(rowIndex, 2).HorizontalAlignment = GridHorizontalAlignment.Center
 
+{% endhighlight %}
+
+
+
+
+
 
 
 Following screen shot illustrates LinkLabelCell cell type in the Grid control.                                      
@@ -44418,13 +44839,13 @@ Following screen shot illustrates LinkLabelCell cell type in the Grid control.
 
 
 
-PictureBox
+#### PictureBox
 
 PictureBox cell type can be embedded into a cell by calculating the size of the picture and extending the width and height of the cell accordingly. PictureBoxStyleProperties class is used to specify the style for Picture Box control.
 
 The following code example illustrates how to set the grid cell type to PictureBox.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -44460,9 +44881,9 @@ sp.Image = GetImage("one.jpg");
 
 
 
-[VB.NET]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.PictureBox)
 
@@ -44492,6 +44913,12 @@ sp = New Syncfusion.GridHelperClasses.PictureBoxStyleProperties(style)
 
 sp.Image = GetImage("one.jpg")
 
+{% endhighlight %}
+
+
+
+
+
 
 
 Following screen shot illustrates PictureBox cell type in Grid control.
@@ -44505,46 +44932,40 @@ Following screen shot illustrates PictureBox cell type in Grid control.
 You can customize column appearance of a Grid Grouping control by using plug-in utility called Field Chooser. FieldChooser class can be associated with Grid Grouping control to add or remove columns from the grid. The following code example illustrates this.
 
 
+{% highlight c# %}
 
-<table>
-<tr>
-<td>
-[C#]FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);</td></tr>
-<tr>
-<td>
-[VB.NET]Dim fchooser As New FieldChooser(Me.gridGroupingControl1)</td></tr>
-</table>
+FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
 
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
+
+{% endhighlight %}
 
 Following screen shot shows Grid Grouping control with the Field dialog box.
 
 ![](Grid-Controls_images/Grid-Controls_img590.jpeg)
 
-
-
-
-
 To add or remove columns by using Field Chooser, right-click column header and select Field Chooser menu item to view Field dialog box. This dialog box lists all the column names with check boxes. You can select or clear check boxes to add or remove respective columns from Grid Grouping control.
 
 A sample demonstration of Grid Field Chooser feature is available in the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Field Chooser Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Field Chooser Demo_
 
 #### Filtering By Display Member
 
 This topic elaborates on filtering columns in the Grid Data Bound Grid and Grid Grouping controls by their display member.
 
-Filtering Columns in Grid Data Bound Grid
+#### Filtering Columns in Grid Data Bound Grid
 
 GridDataBoundGridFilterBarExt class provides support to filter a column in DataBound Grid by its display member instead of the value member. This is accomplished by implementing a custom filter bar cell by replacing the default filter bar cell.
 
 Following code example illustrates how to wire GridDataBoundGridFilterBarExt to Data Bound Grid.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 private GridDataBoundGridFilterBarExt filterBar;
 
@@ -44552,11 +44973,9 @@ filterBar = new GridDataBoundGridFilterBarExt();
 
 filterBar.WireGrid(this.gridDataBoundGrid1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private filterBar As GridDataBoundGridFilterBarExt
 
@@ -44564,23 +44983,20 @@ filterBar = New GridDataBoundGridFilterBarExt()
 
 filterBar.WireGrid(Me.gridDataBoundGrid1)
 
+{% endhighlight %}
+
 Following screen shot illustrates how to filter a column in the Grid Data Bound Grid by its display member.
 
 ![](Grid-Controls_images/Grid-Controls_img591.jpeg)
 
 
-
-
-
-Filtering Columns in Grid Grouping Control
+#### Filtering Columns in Grid Grouping Control
 
 GroupingGridFilterBarExt class provides support to filter a column in the Grid Grouping control by its display member instead of value member. This is accomplished by implementing a custom filter bar cell by replacing the default filter bar cell.
 
 Following code example illustrates how to wire the GroupingGridFilterBarExt to the Grid Grouping control. 
 
-[C#]
-
-
+{% highlight c# %}
 
 private GroupingGridFilterBarExt gGCFilter;
 
@@ -44588,11 +45004,9 @@ this.gGCFilter = new GroupingGridFilterBarExt();
 
 this.gGCFilter.WireGrid(this.gridGroupingControl1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private gGCFilter As GroupingGridFilterBarExt
 
@@ -44600,7 +45014,7 @@ Me.gGCFilter = New GroupingGridFilterBarExt()
 
 Me.gGCFilter.WireGrid(Me.gridGroupingControl1)
 
-
+{% endhighlight %}
 
 Following screen shot illustrates how to filter a column in the Grid Grouping control by its display member.
 
@@ -44612,23 +45026,22 @@ Following screen shot illustrates how to filter a column in the Grid Grouping co
 
 Grid Format Cell Dialog, similar to the Excel-like Format Cell Dialog, enables users to format cells dynamically. It provides options to customize cell font family, font color, font size, font style, font effects, background, alignment, text format, and so on. You can instantiate Grid Format Cell Dialog by using the following code.
 
-[C#]
-
-
+{% highlight c# %}
 
 GridFormatCellDialog f = new GridFormatCellDialog(this.gridControl1);
 
 f.ShowDialog();
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim f As New GridFormatCellDialog(Me.gridControl1)
 
 f.ShowDialog()
+
+{% endhighlight %}
 
 
 
@@ -44642,15 +45055,13 @@ Following screen shot illustrates the Format Cell Dialog of Grid control.
 
 This topic elaborates on printing options supported by Grid control.
 
-Printing Multiple Grids
+#### Printing Multiple Grids
 
 You can print multiple grids across various pages by using GridPrintDocumentAdv helper class. This is achieved by drawing full sized grid to a large bitmap and then drawing this bitmap scaled to fit the output page.
 
 By using ScaleColumnsToFitPage property, columns can be scaled to fit a single page. Headers and footers can also be added by using DrawGridPrintHeader and DrawGridPrintFooter events. The following code examples illustrate how to do this.
 
-[C#]
-
-
+{% highlight c# %}
 
 Syncfusion.GridHelperClasses.GridPrintDocumentAdv pd = new Syncfusion.GridHelperClasses.GridPrintDocumentAdv(this.gridControl1);
 
@@ -44672,11 +45083,9 @@ previewDialog.Document = pd;
 
 previewDialog.Show();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim pd As New Syncfusion.GridHelperClasses.GridPrintDocumentAdv(Me.gridControl1)
 
@@ -44698,6 +45107,7 @@ previewDialog.Document = pd
 
 previewDialog.Show()
 
+{% endhighlight %}
 
 
 The following screen shots illustrate the Print Preview feature of the Grid control.
@@ -44712,15 +45122,13 @@ The following screen shots illustrate the Print Preview feature of the Grid cont
 
 
 
-Print Page Layout
+#### Print Page Layout
 
 Print Page Layout feature enables viewing page layout on the grid by displaying a segment line and page number with each segment. This helps users to analyze page breaks within the grid, and manage them accordingly.
 
 Properties are available to define colors for the line and text of the page layout. The following code examples illustrate how to set the line and text color of the page layout.
 
-[C#]
-
-
+{% highlight c# %}
 
 LayoutSupportHelper layoutHelper;
 
@@ -44730,11 +45138,9 @@ layoutHelper.LineColor= Color.Blue;
 
 layoutHelper.TextColor = Color.Green;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim layoutHelper As LayoutSupportHelper
 
@@ -44743,6 +45149,8 @@ layoutHelper = New LayoutSupportHelper(gridControl1)
 layoutHelper.TextColor = Color.Orange
 
 layoutHelper.LineColor = Color.SteelBlue
+
+{% endhighlight %}
 
 
 
@@ -44756,15 +45164,13 @@ Following screen shot illustrates print page layout feature of the Grid control.
 
 This topic illustrates how to convert Grid and Grid Grouping content to Word format.
 
-Grid to Word Conversion
+#### Grid to Word Conversion
 
 GridWordConverter class provides support to convert grid content into a Word document. It also provides support to add headers and footers to the document. Essential DocIO libraries are used to support conversion of grid content into a Word document. The following dependent assemblies must be included in your Windows application to work with GridWordConverter helper class: Syncfusion.DocIO.Base and Syncfusion.GridHelperClasses.Windows.
 
 The following code examples illustrate conversion of Grid content to Word document.
 
-[C#]
-
-
+{% highlight c# %}
 
 GridWordConverter converter = new GridWordConverter(true, true);
 
@@ -44796,11 +45202,9 @@ e.Header.AddParagraph().AppendText("Syncfusion Inc.");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private converter As New GridWordConverter(True, True)
 
@@ -44824,6 +45228,7 @@ void converter_DrawHeader(Object sender, DocHeaderFooterEventArgs e)
 
 e.Header.AddParagraph().AppendText("Syncfusion Inc.")
 
+{% endhighlight %}
 
 
 The following screen shots illustrate Grid to Word conversion.
@@ -44838,15 +45243,13 @@ The following screen shots illustrate Grid to Word conversion.
 
 
 
-Grouping Grid to Word Conversion
+#### Grouping Grid to Word Conversion
 
 GroupingGridWordConverter class provides support to convert grouping grid content into a Word document. It also provides support to add headers and footers to the document. Essential DocIO libraries are used to support conversion of grouping grid content into a Word document. The following dependent assemblies must be included in your Windows application to work with GroupingGridWordConverter helper class: Syncfusion.DocIO.Base and Syncfusion.GridHelperClasses.Windows.
 
 The following code example illustrates the conversion of Grouping Grid content to Word document.
 
-[C#]
-
-
+{% highlight c# %}
 
 GroupingGridWordConverter converter = new GroupingGridWordConverter(true, true);
 
@@ -44882,11 +45285,9 @@ void converter_DrawHeader(object sender, DocHeaderFooterEventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Private converter As New GroupingGridWordConverter(True, True)
 
@@ -44914,7 +45315,7 @@ Dim txt As IWTextRange = e.Header.AddParagraph().AppendText(Constants.vbTab + Co
 
 txt.CharacterFormat.Font = New Font("verdana", 12.0F, FontStyle.Bold)
 
-
+{% endhighlight %}
 
 The following screen shots illustrate Grouping Grid to Word conversion.
 
@@ -44928,7 +45329,7 @@ The following screen shots illustrate Grouping Grid to Word conversion.
 
 #### Fill Series 
 
-Support to implement Excel-like Fill Series in the Grid
+#### Support to implement Excel-like Fill Series in the Grid
 
 A helper class implementing IMouseController interface has been added to GridHelperClasses library to implement Excel-like Fill Series in the Grid. To make use of this functionality, Syncfusion.GridHelperClasses.Windows .dll must be referred and the mouse controller has to be added in MouseControllerDispatcher of grid.
 
@@ -44950,7 +45351,7 @@ The Excel Like fill Series has support on:
 
 The following code illustrates how to add Excel Like fill Series.
 
-[C#] 
+{% highlight c# %}
 
             gridControl1.ExcelLikeCurrentCell = true;
 
@@ -44960,11 +45361,9 @@ The following code illustrates how to add Excel Like fill Series.
 
             this.gridControl1.MouseControllerDispatcher.Add(marker);
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
             GridControl1.ExcelLikeCurrentCell = True
 
@@ -44972,9 +45371,11 @@ The following code illustrates how to add Excel Like fill Series.
 
             GridControl1.MouseControllerDispatcher.Add(excelMarker)
 
+{% endhighlight %}
 
 
-Methods of IMouseController Interface Implemented
+
+#### Methods of IMouseController Interface Implemented
 
 * MouseMove - The code handled in this method allows dragging series in either one of the four directions at a time, retaining a rectangular layout.
 * MouseUp - The code handled in this method sets the cell values based on dragged series accordingly (if it is a formula or text or numeric value).
@@ -44983,7 +45384,7 @@ Following are screen shots illustrating the feature.
 
 1. Image displaying drag operation of the selected series towards bottom.
 
-![](Grid-Controls_images/Grid-Controls_img601.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img601.jpeg)
 
 
 
@@ -44991,7 +45392,7 @@ Following are screen shots illustrating the feature.
 
 2. Image displaying the filled series.
 
-![](Grid-Controls_images/Grid-Controls_img602.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img602.jpeg)
 
 
 
@@ -44999,19 +45400,15 @@ Following are screen shots illustrating the feature.
 
 3. The image shows popup menu displayed after dragging the cell that displays January.
 
-![](Grid-Controls_images/Grid-Controls_img603.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img603.jpeg)
 
 
 
-> ![](Grid-Controls_images/Grid-Controls_img604.jpeg)
-
-_Note: The cell has been dragged exactly the same as it is done in Excel._ 
+   > Note: The cell has been dragged exactly the same as it is done in Excel.
 
 4. The image shows cells have been filled after the Fill series has been selected from the popup menu.
 
-
-
-![](Grid-Controls_images/Grid-Controls_img605.jpeg)
+   ![](Grid-Controls_images/Grid-Controls_img605.jpeg)
 
 
 
@@ -45019,19 +45416,17 @@ _Note: The cell has been dragged exactly the same as it is done in Excel._
 
 Office2007Filter and optimized GridExcelFilter are the two types of Excel-like filter. The next section explains these types in detail.
 
-##### Office2007Filter
+#### Office2007Filter
 
 Essential Grid now provides an in-built filter similar to Microsoft Excel 2007 from the class GridOffice2007Filter with which the grid has to be wired.
 
-Enabling Excel like filter 
+##### Enabling Excel like filter 
 
 Set Allow filter to true when Grid Control is wired with GridOffice2007Filter to enable Excel like filter to the Grid filter bar.
 
 The following code illustrates how to add Excel Like Filter to the Grid filter bar.
 
-[C#]
-
-
+{% highlight c# %}
 
          GridOffice2007Filter filter;
 
@@ -45059,11 +45454,9 @@ The following code illustrates how to add Excel Like Filter to the Grid filter b
 
         }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
     Private filter As GridOffice2007Filter
 
@@ -45083,11 +45476,13 @@ The following code illustrates how to add Excel Like Filter to the Grid filter b
 
     End Sub
 
-> ![](Grid-Controls_images/Grid-Controls_img606.jpeg)
+{% endhighlight %}
 
-_Note: GridOffice2007Filter can be unwired from the grid to disable Excel like filter._
 
-Specifying Value To Filter 
+
+> Note: GridOffice2007Filter can be unwired from the grid to disable Excel like filter._
+
+##### Specifying Value To Filter 
 
 The feature has multiple selections of values to filter. 
 
@@ -45097,9 +45492,9 @@ You can specify the value of the column that has to filter in the check box of t
 
 
 
-##### Optimized GridExcelFilter
+#### Optimized GridExcelFilter
 
-Use Case Scenarios
+##### Use Case Scenarios
 
 If Office2007Filter is used in a WF GridGroupingControl where the columns have a large number of unique items (say 5000 or 10000), the grid is unusable (hanged). To improve the performance, the new optimized GridExcelFilter can be used.
 
@@ -45114,21 +45509,22 @@ PARAMETERS </th><th>
 TYPE </th><th>
 RETURN TYPE </th></tr>
 <tr>
-<th>
-WireGrid</th><th>
-Wires grid with filter.</th><th>
-this.gridGroupingControl1 (control as argument)</th><th>
- Method</th><th>
- void </th></tr>
+<td>
+WireGrid</td><td>
+Wires grid with filter.</td><td>
+this.gridGroupingControl1 (control as argument)</td><td>
+ Method</td><td>
+ void </td></tr>
 <tr>
-<th>
-UnWireGrid</th><th>
-Unwire grid with filter. </th><th>
-this.gridGroupingControl1 (control as argument)</th><th>
- Method</th><th>
- void </th></tr>
+<td>
+UnWireGrid</td><td>
+Unwire grid with filter. </td><td>
+this.gridGroupingControl1 (control as argument)</td><td>
+ Method</td><td>
+ void </td></tr>
 </table>
-Sample Link
+
+##### Sample Link
 
 To view a sample:
 
@@ -45137,15 +45533,13 @@ To view a sample:
 * Click Run Samples.  
 * Navigate to GridGrouping Samples > Filters and Expressions > Optimized Excel Filter Demo
 
-Implementing optimized GridExcelFilter to GGC 
+##### Implementing optimized GridExcelFilter to GGC 
 
 Set AllowFilter to True when the Grid control is wired with GridOffice2007Filter to enable Excel-like filtering in the grid filter bar.
 
 The following code illustrates how to add Excel-like filter to grid filter bar:
 
-[C#]
-
-
+{% highlight c# %}
 
 GridExcelFilter filter;
 
@@ -45173,11 +45567,9 @@ GridExcelFilter filter;
 
         }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Private filter As GridExcelFilter
 
@@ -45197,7 +45589,10 @@ End If
 
 End Sub
 
-##### GridExcelFilter Enhancement
+{% endhighlight %}
+
+
+#### GridExcelFilter Enhancement
 
 GridExcelFilter’s FilterByColor functionality is used to filter GridGroupingControl based on its color. You can enable or disable FilterByColor functionality by customizing AllowFilterByColor property before wiring GridGroupingControl. FilterByColor functionality is available for cell background color and font color. 
 
@@ -45211,7 +45606,7 @@ The following screenshot shows the result of setting FilterByColor property in G
 
  The following code example shows how to set FilterByColor property for GridGroupingControl.
 
-[C#]
+{% highlight c# %}
 
 this.filter.AllowResize = true;
 
@@ -45230,9 +45625,18 @@ col.AllowFilter = true;
 
 this.filter.WireGrid(gridGroupingControl1);
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-AllowFilterByColor
+
+{% endhighlight %}
+
+
+
+
+##### AllowFilterByColor
 
 
 You can enable FilterByColor functionality in GridExcelFilter by setting AllowFilterByColor property. GridExcelFilter calculates the colors available in the collection of the Grid Grouping control and displays any five colors from the collection in a drop-down. You can view the other available colors by clicking the “_More Cell Colors/More Font Colors”_ option in the drop-down menu.
@@ -45251,14 +45655,16 @@ The following screen shots show the list of available colors when FilerByColor p
 
 
 
-AllowResize
+##### AllowResize
 
 
 Using AllowResize property, you can enable or disable resizable functionality of the GridExcelFilter. GridExcelFilter has a resizable strip at the bottom of the filterpopup, which is used to resize GridExcelFilter popup.
-Search TextBox  
+
+##### Search TextBox  
+
 Search Textbox added in GridExcelFilter searches the available collection from checkedlistbox and displays searched results in the checkedlistbox.
 
-##### Filtering Null Values from the Grid
+#### Filtering Null Values from the Grid
 
 This feature is to provide support for filtering null or empty values from the grid using Excel-like filters. The filter choice will be in the name of “(Blanks)” when there are empty values in the grid.
 
@@ -45270,9 +45676,9 @@ The option to filter empty values (Blanks) will automatically be included in fil
 
 
 
-##### Date and Number Filter in GridExcelFilter
+#### Date and Number Filter in GridExcelFilter
 
-###### Date Filter
+##### Date Filter
 
 You can use EnableDateFilter property in GridExcelFilter to search and filter the dates quickly. The following screenshot shows the values that are filtered by years in a filter Drop-down box. 
 
@@ -45280,7 +45686,7 @@ You can use EnableDateFilter property in GridExcelFilter to search and filter th
 
 
 
-Filter options 
+##### Filter options 
 
 You can use the following filter options by using context menu of the filter Drop-down.
 
@@ -45297,11 +45703,11 @@ You can use the following filter options by using context menu of the filter Dro
 
 You can filter the required dates using the above options in check box selection available in the filter Drop-down.
 
-###### Number Filter
+##### Number Filter
 
 You can use EnableNumberFilter property in GridExcelFilter to filter the numbers that are displayed in a grid. This property is enabled in filter Drop-down when the cell value is in number format. You can filter the numbers using the following filter options.
 
-Filter options 
+##### Filter options 
 
 * Equal - Returns the records the matches the given numeric value.
 * Does Not Equal - Returns the records, which is not equal to the given date.
@@ -45329,17 +45735,17 @@ You can select the number of items using numeric up down option. You can select 
 
 The card view displays records as separate cards arranged in a grid-like layout. It is implemented similar to binding GridDataBoundGrid control to GridCardView object.
 
-##### Tables for Properties, Methods, and Events
+#### Tables for Properties, Methods, and Events
 
 _Table 135: Properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES </td><td>
-DESCRIPTION </td><td>
-TYPE </td><td>
-DATA TYPE </td></tr>
+<th>
+PROPERTIES </th><th>
+DESCRIPTION </th><th>
+TYPE </th><th>
+DATA TYPE </th></tr>
 <tr>
 <td>
 CaptionField</td><td>
@@ -45432,61 +45838,61 @@ PARAMETERS</th><th>
 TYPE </th><th>
 RETURN TYPE </th></tr>
 <tr>
-<th>
-WireGrid</th><th>
-Gets the GridDataBoundGrid and changes it to Card View Style.</th><th>
-GridDataBoundGridboundGrid </th><th>
-Method </th><th>
-void</th></tr>
+<td>
+WireGrid</td><td>
+Gets the GridDataBoundGrid and changes it to Card View Style.</td><td>
+GridDataBoundGridboundGrid </td><td>
+Method </td><td>
+void</td></tr>
 <tr>
-<th>
-UnWireGrid</th><th>
-Unhooks all the events hooked in the WireGrid() method.</th><th>
-N/A</th><th>
-Method</th><th>
-Void</th></tr>
+<td>
+UnWireGrid</td><td>
+Unhooks all the events hooked in the WireGrid() method.</td><td>
+N/A</td><td>
+Method</td><td>
+Void</td></tr>
 <tr>
-<th>
-IsActiveCard</th><th>
-Indicates the state of the card if active.</th><th>
-rowIndex, ColIndex</th><th>
-Method</th><th>
-bool</th></tr>
+<td>
+IsActiveCard</td><td>
+Indicates the state of the card if active.</td><td>
+rowIndex, ColIndex</td><td>
+Method</td><td>
+bool</td></tr>
 <tr>
-<th>
-IsHeaderCell</th><th>
-Indicates if the cell is a header column cell.</th><th>
-rowIndex, ColIndex</th><th>
-Method</th><th>
-bool</th></tr>
+<td>
+IsHeaderCell</td><td>
+Indicates if the cell is a header column cell.</td><td>
+rowIndex, ColIndex</td><td>
+Method</td><td>
+bool</td></tr>
 <tr>
-<th>
-IsRecordCell</th><th>
-Indicates if the cell is a record cell.</th><th>
-rowIndex,colIndex.</th><th>
-Method</th><th>
-bool</th></tr>
+<td>
+IsRecordCell</td><td>
+Indicates if the cell is a record cell.</td><td>
+rowIndex,colIndex.</td><td>
+Method</td><td>
+bool</td></tr>
 <tr>
-<th>
-IsValueCell</th><th>
-Indicates if the cell is a value cell.</th><th>
-rowIndex,colIndex.</th><th>
-Method</th><th>
-bool</th></tr>
+<td>
+IsValueCell</td><td>
+Indicates if the cell is a value cell.</td><td>
+rowIndex,colIndex.</td><td>
+Method</td><td>
+bool</td></tr>
 <tr>
-<th>
-IsCardCaption</th><th>
-Indicates if the cell is a caption cell.</th><th>
-rowIndex,colIndex.</th><th>
-Method</th><th>
-bool</th></tr>
+<td>
+IsCardCaption</td><td>
+Indicates if the cell is a caption cell.</td><td>
+rowIndex,colIndex.</td><td>
+Method</td><td>
+bool</td></tr>
 <tr>
-<th>
-GetCardCellTypeGetCardCellType</th><th>
-Specifies the type of the card cell.</th><th>
-rowIndex,colIndex.</th><th>
-Method</th><th>
-CardCellType</th></tr>
+<td>
+GetCardCellTypeGetCardCellType</td><td>
+Specifies the type of the card cell.</td><td>
+rowIndex,colIndex.</td><td>
+Method</td><td>
+CardCellType</td></tr>
 </table>
 
 
@@ -45500,29 +45906,29 @@ DESCRIPTION </th><th>
 ARGUMENTS </th><th>
 TYPE </th></tr>
 <tr>
-<th>
-QueryCardCellInfo</th><th>
-Occurs when the card model queries for style information about a specific cell.</th><th>
-public QueryCardCellInfoEventArgs(GridQueryCellInfoEventArgs e, GridCardView cardView)</th><th>
-Event</th></tr>
+<td>
+QueryCardCellInfo</td><td>
+Occurs when the card model queries for style information about a specific cell.</td><td>
+public QueryCardCellInfoEventArgs(GridQueryCellInfoEventArgs e, GridCardView cardView)</td><td>
+Event</td></tr>
 <tr>
-<th>
-CellClick</th><th>
-Occurs when the user clicks inside a cell.</th><th>
-public CardCellClickEventArgs(GridCellClickEventArgs e, GridCardView cardView)</th><th>
-Event</th></tr>
+<td>
+CellClick</td><td>
+Occurs when the user clicks inside a cell.</td><td>
+public CardCellClickEventArgs(GridCellClickEventArgs e, GridCardView cardView)</td><td>
+Event</td></tr>
 <tr>
-<th>
-SaveCardCellInfo</th><th>
-Occurs when the card model is about to save style information about a specific cell.</th><th>
-public SaveCardCellInfoEventArgs(GridSaveCellInfoEventArgs e, GridCardView cardView)</th><th>
-Event</th></tr>
+<td>
+SaveCardCellInfo</td><td>
+Occurs when the card model is about to save style information about a specific cell.</td><td>
+public SaveCardCellInfoEventArgs(GridSaveCellInfoEventArgs e, GridCardView cardView)</td><td>
+Event</td></tr>
 <tr>
-<th>
-PushButtonClick</th><th>
-Occurs when the user clicks a push button.</th><th>
-public CardCellPushButtonClickEventArgs(GridCellPushButtonClickEventArgs e, GridCardView cardView)</th><th>
-Event</th></tr>
+<td>
+PushButtonClick</td><td>
+Occurs when the user clicks a push button.</td><td>
+public CardCellPushButtonClickEventArgs(GridCellPushButtonClickEventArgs e, GridCardView cardView)</td><td>
+Event</td></tr>
 </table>
 
 
@@ -45532,15 +45938,15 @@ Event</th></tr>
 
 
 
-Sample Link
+##### Sample Link
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Card View Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Card View Demo_
 
-##### Enable the Card View Layout
+#### Enable the Card View Layout
 
 The following code is used to enable card view layout in GridDataBoundGrid control.
 
-[C#]
+{% highlight c# %}
 
 GridCardView card = new GridCardView();
 
@@ -45548,15 +45954,17 @@ card.CaptionField = "ProductName";
 
 card.WireGrid(this.gridDataBoundGrid1);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Private card As New GridCardView()
 
 card.CaptionField = "ProductName"
 
 card.WireGrid(Me.gridDataBoundGrid1)
+
+{% endhighlight %}
 
 ### Office2010 Theme in Windows Grids
 
@@ -45567,7 +45975,7 @@ To enable this support in grid, the following need to be handled:
 * Apply Office 2010 Visual Style to Grid
 * Enable Office 2010 Scrollbars
 
-Applying Office2010 Visual Style to Grid
+#### Applying Office2010 Visual Style to Grid
 
 To apply Office 2010 Visual Style to Grid:
 
@@ -45582,7 +45990,7 @@ To apply Office 2010 Visual Style to Grid:
 
 
 
-Enabling Office2010 Scrollbars
+#### Enabling Office2010 Scrollbars
 
 To enable Office 2010 Scrollbars:
 
@@ -45593,7 +46001,7 @@ To enable Office 2010 Scrollbars:
 
 
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 Office2010Theme support for Windows Grids is useful for commercial applications in order to attract its users with inspiring UI look and feel.
 
@@ -45611,18 +46019,18 @@ Office2010Theme support for Windows Grids is useful for commercial applications 
 
 
 
-Tables for Properties and Events
+#### Tables for Properties and Events
 
-Properties
+#### Properties
 
-_Table_ _11_38: Properties Table_
+_Table_ _11_ _38_: _Properties Table_
 
 <table>
 <tr>
-<td>
-PROPERTY</td><td>
-DESCRIPTION</td><td>
-DATA TYPE</td></tr>
+<th>
+PROPERTY</th><th>
+DESCRIPTION</th><th>
+DATA TYPE</th></tr>
 <tr>
 <td>
 GridVisualStyles</td><td>
@@ -45641,7 +46049,7 @@ Office2010ScrollBarsColorScheme</td><td>
 </table>
 
 
-Events
+#### Events
 
 The following event is used when applying Office2010 theme to Essential Windows Grids.
 
@@ -45649,10 +46057,10 @@ _Table 139: Events Table_
 
 <table>
 <tr>
-<td>
-EVENT</td><td>
-PARAMETERS</td><td>
-DESCRIPTION</td></tr>
+<th>
+EVENT</th><th>
+PARAMETERS</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 ThemeChanged</td><td>
@@ -45682,47 +46090,55 @@ OfficeScrollBarsChanged</td><td>
 object sender, GridGroupingControl.OfficeScrollBarsEventArgs e</td><td>
 Occurs when the GridOfficeScrollBars property has changed.</td></tr>
 </table>
-Adding Grid with Office2010 Theme to an Application 
+
+#### Adding Grid with Office2010 Theme to an Application 
 
 To add Grid with Office 2010 theme to an application:
 
 1. Create a GridControl enabled application.
 2. Set GridVisualStyles property to apply Office2010 theme in GridControl.
 
-The following sample code sets an Office2010 Black skin theme to Essential Grid Control.  
+   The following sample code sets an Office2010 Black skin theme to Essential Grid Control.  
 
-[C#]
+   ~~~ cs
 
-this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Black;
+       this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Black;
 
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
+		Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Black
 
-[VB]
-
-Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Black
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Set GridOfficeScrollBars property to Office2010 to apply Office2010 like scroll bars in Essential Windows Grids.
+
 4. Set Office2010ScrollBarsColorScheme to apply the color scheme of the scroll bars.
 
 
+   ~~~ cs
 
-[C#]
+		this.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010;
 
-this.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010;
+		this.gridGroupingControl1.Office2010ScrollBarsColorScheme = Office2010ColorScheme.Black;
 
-this.gridGroupingControl1.Office2010ScrollBarsColorScheme = Office2010ColorScheme.Black;
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-[VB]
+		Me.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010
 
-Me.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010
+		Me.gridGroupingControl1.Office2010ScrollBarsColorScheme = Office2010ColorScheme.Black
 
-Me.gridGroupingControl1.Office2010ScrollBarsColorScheme = Office2010ColorScheme.Black
+   ~~~
+   {:.prettyprint }
 
-Sample Link
+##### Sample Link
 
 To get the Schedule samples from the dashboard:
 
@@ -45734,13 +46150,14 @@ To get the Schedule samples from the dashboard:
 
 
 
-To open sample project:
+##### To open sample project:
 
 1. Navigate to the following sample location in your system:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\GridStyle Demo_
+   _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\GridStyle Demo_
 
 2. This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application language.
+
 ### Enhanced Visual Styles for Syncfusion Windows Grids
 
 
@@ -45748,7 +46165,7 @@ This feature enables you to apply an enhanced visual styles for Windows Grids: G
 
 By default, EnableLegacyStyle property value is true.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 You can use this control to apply skin for the entire control including the scrollbars, combo box, drop-down container, filter, and so on.
 
@@ -45756,10 +46173,10 @@ You can use this control to apply skin for the entire control including the scro
 
 <table>
 <tr>
-<td>
-PROPERTY</td><td>
-DESCRIPTION</td><td>
-DATA TYPE</td></tr>
+<th>
+PROPERTY</th><th>
+DESCRIPTION</th><th>
+DATA TYPE</th></tr>
 <tr>
 <td>
 EnableLegacyStyle</td><td>
@@ -45771,11 +46188,12 @@ EnableGridListControlInCobmoBox</td><td>
 Specifies whether the grid combo box should contain GridList control.</td><td>
 Boolean</td></tr>
 </table>
- Sample Link
+
+#### Sample Link
 
 Samples for the feature are available in the following locations: 
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Skin Customization Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Skin Customization Demo_
 
 #### Applying Enhanced GridVisualStyle to the Application
 
@@ -45783,17 +46201,20 @@ To apply enhanced visual style to the entire control, you have to enable enhance
 
 The following code illustrates how to enable enhanced GridVisualStyle. 
 
-[C#]
+{% highlight c# %}
 
 this.gridGroupingControl1.TableModel.EnableLegacyStyle = false;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.TableModel.EnableLegacyStyle = False
 
- EnhancedGridVisualStyle
+{% endhighlight %}
+
+
+#### EnhancedGridVisualStyle
 
 You can apply one of the following skins to the control using EnhancedGridVisualStyle property: 
 
@@ -45807,19 +46228,21 @@ You can apply one of the following skins to the control using EnhancedGridVisual
 * Metro
 * SystemTheme 
 
-SystemTheme is the default skin.
+#### SystemTheme is the default skin.
 
 The following code illustrated how to customize the skin for the control: 
 
-[C#]
+{% highlight c# %}
 
 this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2007Black;
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB]
+Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2007Black
 
-this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2007Black
+{% endhighlight %}
 
 ![](Grid-Controls_images/Grid-Controls_img620.png)
 
@@ -45831,29 +46254,34 @@ Skin cannot be applied to ListBox control inside combo box. To overcome this li
 
 The following code illustrated this: 
 
-[C#]
+{% highlight c# %}
 
 this.gridControl1.Model.EnableGridListControlInComboBox = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.gridControl1.Model.EnableGridListControlInComboBox = true
+
+{% endhighlight %}
 
 If you want to create an application for which the combo box is created from GridComboBoxCellModel and not to use GridDropDownGridListControlCellModel, you need to set EnableGridListControlInCobmoBox property to false. By default, this is set to true.
 
 The following code illustrates how to disable EnableGridListControlInCobmoBox property:
 
-[C#]
+{% highlight c# %}
 
 this.gridControl1.Model.EnableGridListControlInComboBox = false;
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB]
+Me.gridControl1.Model.EnableGridListControlInComboBox = false;
 
-this.gridControl1.Model.EnableGridListControlInComboBox = false;
+{% endhighlight %}
+
 
 ### Metro Theme for Essential Grid Controls
 
@@ -45865,7 +46293,7 @@ This feature enables you to apply new Metro styles to the controls of Essential 
 * GridList control
 * GridRecordNavigation control
 
-Use case scenarios
+#### Use case scenarios
 
 The Metro theme support is useful for commercial applications in order to attract end users with inspiring UI look and feel.
 
@@ -45875,9 +46303,9 @@ _Table 142: Properties Table_
 
 <table>
 <tr>
-<td>
-PROPERTY</td><td>
-DESCRIPTION</td></tr>
+<th>
+PROPERTY</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 GridVisualStyles</td><td>
@@ -45889,10 +46317,10 @@ _Table_ _12_43: Event Table_
 
 <table>
 <tr>
-<td>
-EVENT</td><td>
-PARAMETERS</td><td>
-DESCRIPTION</td></tr>
+<th>
+EVENT</th><th>
+PARAMETERS</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 ThemeChanged</td><td>
@@ -45905,15 +46333,18 @@ Occurs when the ThemesEnabled property is changed.</td></tr>
 
 You can apply Metro theme to an application by setting GridVisualStyles property as Metro. The following code example illustrates how to apply Metro theme for the GridGrouping control.
 
-[C#]
+{% highlight c# %}
 
 this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Metro;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Metro
+
+{% endhighlight %}
+
 
 The following screenshot is a sample output for the previous code.
 
@@ -45929,10 +46360,10 @@ _Table 144: Method Table_
 
 <table>
 <tr>
-<td>
-METHOD</td><td>
-PROTOTYPE</td><td>
-DESCRIPTION</td></tr>
+<th>
+METHOD</th><th>
+PROTOTYPE</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 SetMetroStyle</td><td>
@@ -45954,16 +46385,18 @@ A method that takes the user-defined back color, mouse hover color, and mouse pr
 ![](Grid-Controls_images/Grid-Controls_img624.png)
 
 
-
-[C#]
+{% highlight c# %}
 
 this.gridControl1.SetMetroStyle(Color.Pink, Color.Plum, Color.PowderBlue);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.gridControl1.SetMetroStyle(Color.Pink, Color.Plum, Color.PowderBlue)
+
+{% endhighlight %}
+
 
 ### Coded UI Support in Windows Grids
 
@@ -45982,7 +46415,7 @@ _Figure_ _602_: Architectural Diagram_
 * The Grid Test Plugin implements necessary details to communicate with VS 2010 Test Framework.
 * The Grid application host runs with .NET Remoting channel hosted internally to communicate with test plugin through an interface. Data is then channeled across the VS 2010 Test Framework to identify the Cells and Grid controls.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 You can create Coded UI Test with Essential Grid for Windows Forms. The following example shows the implementation of the feature.
 
@@ -45992,6 +46425,7 @@ Perform the following initial steps before creating the Coded UI Test project:
 * Prepare Grid sample application
 * Write UI tests using VS 2010
 * Testing the application with generated Coded UI Tests
+
 #### Deploying Extension Assembly
 
 
@@ -45999,6 +46433,7 @@ To deploy extension assembly:
 
 1. Navigate to copydrop.bat file in UITest folder.
 2. Run Bat file to place Extension and Provider assemblies with appropriate directories to pick the assemblies by VS2010.
+
 #### Preparing the Grid Application
 
 
@@ -46007,27 +46442,31 @@ To prepare the Grid Application:
 1. Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll contains implementation to easily change an existing application to the test application that the plugin would require.
 2. Let the parent container inherit GridControlTestApplication class as shown below:
 
+   ~~~ cs
 
+		public class Form1 : GridControlTestApplication
 
-[C#]
+		{
 
-public class Form1 : GridControlTestApplication
+		}
 
-{
+   ~~~
+   {:.prettyprint }
 
-}
+   ~~~ vbnet
 
+		Public Class Form1
 
+		Inherits GridControlTestApplication
+	
+		End Class
 
-[VB]
+   ~~~
+   {:.prettyprint }
 
-Public Class Form1
-
-Inherits GridControlTestApplication
-
-End Class
 
 3. Build and run the application to make it ready for testing.
+
 #### Creating Unit Tests with VS2010
 
 
@@ -46035,7 +46474,7 @@ To create Unit Tests with VS2010:
 
 1. Create a new test project in VS2010.
 
-![](Grid-Controls_images/Grid-Controls_img625.png)
+   ![](Grid-Controls_images/Grid-Controls_img625.png)
 
 
 
@@ -46043,12 +46482,10 @@ To create Unit Tests with VS2010:
 
 2. Add a new CodedUITest item for the project.
 
+   ![](Grid-Controls_images/Grid-Controls_img626.png)
 
 
-![](Grid-Controls_images/Grid-Controls_img626.png)
-
-
-_Figure_ _604_: Adding Coded UI Test file_
+   _Figure_ _604_: Adding Coded UI Test file_
 
 #### Testing the Application with Generated Coded UI Tests
 
@@ -46056,41 +46493,41 @@ To test the application with generated coded UI Tests:
 
 1. Add a TestMethod called CodedUITestMethod1.
 
-[C#]
+   ~~~ cs
 
-  [TestMethod]
+       [TestMethod]
 
-public void CodedUITestMethod1()
+		public void CodedUITestMethod1()
 
-{
+		{
 
-//Generates codes for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+		//Generates codes for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
 
-//For more information on generated code, see: http://go.microsoft.com/fwlink/?LinkId=179463
+		//For more information on generated code, see: http://go.microsoft.com/fwlink/?LinkId=179463
 
-}
+		}
+
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-[VB]
-
-  <TestMethod()>
-
-Public Sub CodedUITestMethod1()
+		Public Sub CodedUITestMethod1()
 
             '            
 
-'Generates codes for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+		'Generates codes for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
 
-'For more information on generated code, see: http://go.microsoft.com/fwlink/?LinkId=179463
+		'For more information on generated code, see: http://go.microsoft.com/fwlink/?LinkId=179463
 
-            '
 
-End Sub
+   ~~~
+   {:.prettyprint }
 
 2. Build and run the Grid application that was configured already. Right-click TestMethod body and then select Generate Code for Coded UI Test -> Use Coded UI Test Builder as shown in the following screenshot:
 
-![](Grid-Controls_images/Grid-Controls_img627.png)
+   ![](Grid-Controls_images/Grid-Controls_img627.png)
 
 
 
@@ -46098,23 +46535,17 @@ End Sub
 
 3. Click the Record button to perform actions. In this scenario, add a text Hello World in a cell [x, y].
 
-![](Grid-Controls_images/Grid-Controls_img628.png)
+   ![](Grid-Controls_images/Grid-Controls_img628.png)
 
+   ![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/Tablecontrol.png](Grid-Controls_images/Grid-Controls_img629.png)
 
+   _Figure_ _607_: Identifying the Table of the Syncfusion Grid_
 
-
-
-![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/Tablecontrol.png](Grid-Controls_images/Grid-Controls_img629.png)
-
-     _Figure_ _607_: Identifying the Table of the Syncfusion Grid_
-
-![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/GDBG.png](Grid-Controls_images/Grid-Controls_img630.png)
-
-
+   ![Description: C:/Users/christopherk/Desktop/Screenshots/CodedUI/GDBG.png](Grid-Controls_images/Grid-Controls_img630.png)
 
 4. Assert the cell value using cross-hair present in Coded UI Test builder. Click cross-hair and hover to the cell. It will display Assert window as shown in the following screenshot:
 
-![](Grid-Controls_images/Grid-Controls_img631.png)
+   ![](Grid-Controls_images/Grid-Controls_img631.png)
 
 
 
@@ -46134,7 +46565,7 @@ DATA TYPE</th></tr>
 <tr>
 <td>
 AllowEnter</td><td>
-Indicates that by pressing the <Enter>-Key, a new line is inserted into the edited text.</td><td>
+Indicates that by pressing the &lt;Enter&gt;-Key, a new line is inserted into the edited text.</td><td>
 -</td><td>
 bool</td></tr>
 <tr>
@@ -46708,11 +47139,11 @@ _Table 146: Control Properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES</td><td>
-DESCRIPTION</td><td>
-TYPE</td><td>
-DATA TYPE</td></tr>
+<th>
+PROPERTIES</th><th>
+DESCRIPTION</th><th>
+TYPE</th><th>
+DATA TYPE</th></tr>
 <tr>
 <td>
 RowCount</td><td>
@@ -46756,18 +47187,19 @@ Specifies whether XP Themes should be used for this control when available.</td>
 -</td><td>
 bool</td></tr>
 </table>
+
 #### In-built Coded UI Support for 3.5 and 4.0 Frameworks
 
 Essential Grid for Windows Forms supports automated UI testing with VS 2010 coded UI technology. Without using the existing plugins, the coded UI test is now enabled in frameworks 3.5 and 4.0.
 
-_Table 147_13_: Property Table_
+_Table 147_ _13_: _Property Table_
 
 <table>
 <tr>
-<td>
-PROPERTY </td><td>
-DESCRIPTION </td><td>
-DATA TYPE </td></tr>
+<th>
+PROPERTY </th><th>
+DESCRIPTION </th><th>
+DATA TYPE </th></tr>
 <tr>
 <td>
 AccesibiltyEnabled </td><td>
@@ -46776,29 +47208,30 @@ Boolean, true/false</td></tr>
 </table>
 
 
-Enabling AccessibilityEnabled Property
+#### Enabling AccessibilityEnabled Property
 
 The following code example illustrates how to enable AccessibilityEnabled property for the control.
 
-[C#] 
+{% highlight c# %}
 
-    this.grid.AccessibilityEnabled = true;
+   this.grid.AccessibilityEnabled = true;
 
+{% endhighlight %}
 
-
-[VB] 
+{% highlight vbnet %}
 
     Me.grid.AccessibilityEnabled = True
 
-> ![](Grid-Controls_images/Grid-Controls_img632.jpeg)
+{% endhighlight %}
 
-_You can follow the same steps to test the application with generated coded UI tests as described in the chapter_ Testing the Application with Generated Coded UI Tests_._
+
+> Note : You can follow the same steps to test the application with generated coded UI tests as described in the chapter_ Testing the Application with Generated Coded UI Tests_.
 
 ### Built-in Error Provider Support
 
 Essential Grid for Windows Forms now provides a built-in error provider for error alerts. This feature enables you to display an error icon in a specific cell and row header when incorrect data is entered in a cell. This also enables you to specify the error conditions.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 This feature is useful when you want to set only numeric values to be entered in a cell. 
 
@@ -46806,11 +47239,11 @@ _Table 148: Error properties_
 
 <table>
 <tr>
-<td>
-PROPERTIES </td><td>
-DESCRIPTION </td><td>
-TYPE </td><td>
-DATA TYPE </td></tr>
+<th>
+PROPERTIES </th><th>
+DESCRIPTION </th><th>
+TYPE </th><th>
+DATA TYPE </th></tr>
 <tr>
 <td>
 ShowerrorIcon</td><td>
@@ -46842,39 +47275,39 @@ _Table 149: Methods_
 
 <table>
 <tr>
-<th>
-METHOD </th><th>
-DESCRIPTION </th><th>
-PARAMETERS </th><th>
-TYPE </th><th>
-RETURN TYPE </th></tr>
+<td>
+METHOD </td><td>
+DESCRIPTION </td><td>
+PARAMETERS </td><td>
+TYPE </td><td>
+RETURN TYPE </td></tr>
 <tr>
-<th>
-SetError()</th><th>
-</th><th>
-Method (string)</th><th>
-Method</th><th>
-String </th></tr>
+<td>
+SetError()</td><td>
+</td><td>
+Method (string)</td><td>
+Method</td><td>
+String </td></tr>
 </table>
 
 
-Sample Link
+#### Sample Link
 
 A sample of this feature is available in the following location:
 
-GridDataBoundGrid
+#### GridDataBoundGrid
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Appearance\Error Provider Demo_   
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Appearance\Error Provider Demo_   
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Error Provider Demo_                                                                           
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Error Provider Demo_                                                                           
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Error Provider Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Error Provider Demo_
 
 #### Enabling Error Alert
 
 You can show an error icon or error message box as an alert for incorrect data. 
 
-Displaying Error Icon
+#### Displaying Error Icon
 
 You can show the error icon in the cell and row header using the ShowerrorIcon and the ShowRowHeaderErrorIcon properties respectively. 
 
@@ -46882,25 +47315,21 @@ To show the error icon in the cell, set ShowerrorIcon property to True. By defau
 
 The following code illustrates how to display the error icon on both the cell as well as the row header:
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridDataBoundGrid1.CurrentCell.ShowerrorIcon = true;
 
-this.gridDataBoundGrid1.ShowRowHeaderErrorIcon = true; 
+this.gridDataBoundGrid1.ShowRowHeaderErrorIcon = true;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.gridDataBoundGrid1.CurrentCell.ShowerrorIcon = True
 
 Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 
-
+{% endhighlight %}
 
 
 
@@ -46908,15 +47337,13 @@ Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 
 
 
-Displaying Error Message Box
+#### Displaying Error Message Box
 
 You can show an error dialog using ShowErrorMessageBox_property and specify the content to be displayed using the ValidationErrorText_property. 
 
 The following code illustrates this:
 
-[C#]
-
-
+{% highlight c# %}
 
 this.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= false;
 
@@ -46924,11 +47351,9 @@ this.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= false;
 
 this.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text";
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= False
 
@@ -46936,29 +47361,31 @@ Me.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= False
 
 Me.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text"
 
+{% endhighlight %}
+
+
 ![C:/Users/ragamathullahb/Desktop/sshot-2.png](Grid-Controls_images/Grid-Controls_img634.png)
 
 
 
-Specifying Error Content
+#### Specifying Error Content
 
 You can specify error conditions for individual cells using SetError() method of GridCurrentCell. 
 
 The following code illustrates this:
-
-[C#]
-
+{% highlight c# %}
 
 
 this.gridDataBoundGrid1.CurrentCell.SetError("Please enter valid number");
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Me.gridDataBoundGrid1.CurrentCell.SetError("Please enter valid number")
+
+{% endhighlight %}
+
 
 ### Support for Skin Manager in Windows Forms Grid 
 
@@ -46971,7 +47398,7 @@ This feature enables you to easily apply themes to all grids in an application t
 * Office 2010 Black
 * Office 2010 Silver
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 When you create an application with multiple Grid controls, you can apply uniform themes for the entire form and its child controls using this feature.
 
@@ -46979,10 +47406,10 @@ _Table 150: Properties Table_
 
 <table>
 <tr>
-<td>
-PROPERTY </td><td>
-DESCRIPTION </td><td>
-DATA TYPE </td></tr>
+<th>
+PROPERTY </th><th>
+DESCRIPTION </th><th>
+DATA TYPE </th></tr>
 <tr>
 <td>
 Control</td><td>
@@ -47008,15 +47435,16 @@ DESCRIPTION </th><th>
 PARAMETERS </th><th>
 RETURN TYPE </th></tr>
 <tr>
-<th>
-VisualTheme(Control,VisualTheme)</th><th>
-Specifies the parent control and the theme to be applied.</th><th>
-Overloads:* (Control, String)* (Control,VisualTheme)</th><th>
-<br>Void</th></tr>
+<td>
+VisualTheme(Control,VisualTheme)</td><td>
+Specifies the parent control and the theme to be applied.</td><td>
+Overloads:* (Control, String)* (Control,VisualTheme)</td><td>
+<br>Void</td></tr>
 </table>
-Sample Link
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\SkinManager Demo_
+#### Sample Link
+
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\SkinManager Demo_
 
 #### Adding Skin Manager to an Application 
 
@@ -47024,27 +47452,33 @@ You can add SkinManager control to one of the controls in your form or to the en
 
  To add SkinManager control to one of the controls, specify selected control as the root control. The following code illustrates this, where the control is styled with Office2010Blue theme.
 
-[C#]
+{% highlight c# %}
 
  SkinManager.SetVisualStyle(this.gridControl1, VisualTheme.Office2010Blue );
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 SkinManager.SetVisualStyle(Me.gridControl1, VisualTheme.Office2010Blue)
 
+{% endhighlight %}
+
+
 To add Skin Manager to the entire form, specify the form as the root control. The following code illustrates this. 
 
-[C#]
+{% highlight c# %}
 
  SkinManager.SetVisualStyle(this, VisualTheme.Office2010Blue );
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
+
+{% endhighlight %}
+
 
 Implementing the above code will create the following output.
 
@@ -47056,21 +47490,21 @@ Implementing the above code will create the following output.
 
 Localization support allows you to set the content according to the language or culture of a specific country or region. Essential Grid provides localization support for all controls.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 With this feature, you can localize the options in the grid to display the content according to the language or culture of a specific country or region.
 
-Sample Link
+#### Sample Link
 
 To open sample project, navigate to the following sample location in your system:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo_
 
-Adding Localization Support to Grid Controls
+#### Adding Localization Support to Grid Controls
 
 To localize the content, create a class file and add ILocalizationProvider_interface to the class. Assign the required content to be displayed to DynamicFilterResourceIdentifiers_,_GroupingResourceIdentifiers_,_ and_GridResourceIdentifiers of GetLocalizedString method as illustrated in the following code.
 
-[C#]
+{% highlight c# %}
 
    public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
 
@@ -47130,17 +47564,9 @@ To localize the content, create a class file and add ILocalizationProvider_inter
 
         }
 
+{% endhighlight %}
 
-
-
-
-
-
-
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String Implements ILocalizationProvider.GetLocalizedString
 
@@ -47174,10 +47600,6 @@ Return "Of"
 
 End If
 
-
-
-
-
 Case DynamicFilterResourceIdentifiers.SortAtoZ
 
 If office2007Filter Then
@@ -47200,8 +47622,7 @@ End Select
 
 End Function
 
-
-
+{% endhighlight %}
 
 
 Add the following table items to the above code example by substituting the identifiers and Enum values as in they correspond in the table.
@@ -47210,9 +47631,9 @@ _Table 152: Enum_
 
 <table>
 <tr>
-<td rowspan = "10">
-DynamicFilterResourceIdentifiers</td><td colspan = "3">
-ENUM</td></tr>
+<th rowspan = "10">
+DynamicFilterResourceIdentifiers</th><th colspan = "3">
+ENUM</th></tr>
 <tr>
 <td>
 StartsWith</td><td>
@@ -47279,11 +47700,11 @@ This will generate the following output.
 
 Localization support allows you to set the content in a ComboBox cell according to the language or culture of a specific country or region. You can localize the content in the ComboBox cell using the ConvertToString method of Status class.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 With this feature, you can localize the options in the ComboBox cell to display the content according to the language or culture of a specific country or region.
 
-Sample Link
+#### Sample Link
 
 To get DataGrid samples from the dashboard:
 
@@ -47293,13 +47714,11 @@ To get DataGrid samples from the dashboard:
 3. Select Data Grid.
 4. Expand Localization samples in the left panel of sample browser and click ComboBoxCellLocalization Demo.
 
-Adding Localization Support to ComboBox Cell 
+#### Adding Localization Support to ComboBox Cell 
 
 The following code example illustrates how to add localization support to ComboBox cell using ConvertToString method of Status class.
 
-[C#]
-
-
+{% highlight c# %}
 
 public object ConvertToString(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value)
 
@@ -47329,11 +47748,9 @@ public object ConvertToString(ITypeDescriptorContext context, System.Globalizati
 
             }}
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Private Overloads Function ConvertFromString(ByVal context As ITypeDescriptorContext, ByVal culture As System.Globalization.CultureInfo, ByVal value As Object) As Object
 
@@ -47363,6 +47780,8 @@ End Select
 
 End Function
 
+{% endhighlight %}
+
 
 
 ![](Grid-Controls_images/Grid-Controls_img637.png)
@@ -47373,7 +47792,7 @@ End Function
 
 A Satellite Assembly is a compiled library that contains resources that can be localized. You can use satellite assemblies to create a multilingual application. You can design and deploy your solution to multiple cultures, rather than using hard coding strings into your main application. Satellite assemblies are auto generated, and do not contain any code. Hence, they cannot be executed as the main assembly. Localization processes can be performed by using Satellite Assemblies without recompiling the main assembly. Localization can be applied to Grid, Grid Grouping, and Pivot Grid controls by using Satellite Assemblies. 
 
-##### Creating a Satellite Assembly
+#### Creating a Satellite Assembly
 
 The following components are required for creating a Satellite Assembly:
 
@@ -47387,83 +47806,53 @@ The following steps illustrate creating a Satellite Assembly:
 1. Open Visual Studio Command Prompt with Administrator privileges.
 2. Enter the following command for creating resource file from the text file:
 
+   Resgen Text_file.txt  Resource_File.resources
 
-
-Resgen Text_file.txt  Resource_File.resources
-
-
-
-![](Grid-Controls_images/Grid-Controls_img638.png)
-
-
-
-
+   ![](Grid-Controls_images/Grid-Controls_img638.png)
 
 3. You can modify the resource file according to your requirements by using the Resorce Editor.
 
-![](Grid-Controls_images/Grid-Controls_img639.png)
-
-
-
-
+   ![](Grid-Controls_images/Grid-Controls_img639.png)
 
 4. Create the satellite assembly from the resource file by using the following command:
 
-
-
-al /t:lib /culture:de-DE /out:<Location>\Syncfusion.GridHelperClasses.Windows.resources.dll /v:1.1.0.0 /delay+ /keyf:<Location>:\\sf.publicsnk /embed:<Location>\Syncfusion. GridHelperClasses.Windows.Localization.SR.de-DE.Resources  
-
-
+   al /t:lib /culture:de-DE /out:&lt;Location&gt;\Syncfusion.GridHelperClasses.Windows.resources.dll /v:1.1.0.0 /delay+ /keyf:&lt;Location&gt;:\\sf.publicsnk /embed:&lt;Location&gt;\Syncfusion. GridHelperClasses.Windows.Localization.SR.de-DE.Resources  
 
 5. After creating the satellite assembly, you must have the assembly signed to access the resources in the assembly. The signing operation is done by using the following code:
 
-Sn –Vr <Location of Satellite dll>\Syncfusion.GridHelperClasses.Windows.resources.dll
-
-
+   Sn –Vr <Location of Satellite dll>\Syncfusion.GridHelperClasses.Windows.resources.dll
 
 6. Finally, the satellite assembly created is placed in a folder at the following path:
 
+   &lt;Location of Program&gt;\bin\debug\de-DE (German Culture)
 
-
-<Location of Program>\bin\debug\de-DE (German Culture)
-
-> ![](Grid-Controls_images/Grid-Controls_img640.jpeg)
-
-_Note: The name of the subfolder in Debug folder differs based on the culture of the application. For example, fr-FR is used for the French Culture, and so on._
-
-
+   > Note: The name of the subfolder in Debug folder differs based on the culture of the application. For example, fr-FR is used for the French Culture, and so on.
 
 Similarly, you can create satellite assemblies for resource files of Windows Grid, Grid Grouping, and Pivot Grid controls. You can find the resource files for Windows Grid, Grid Grouping, and Pivot Grid controls at the following paths respectively:
 
-
-
 * Grid
+  
+  _&lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Windows\Samples\_
 
-_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Windows\Samples\_
-
-_Localization Samples\Localization Demo\CS\Resources\SR.resources_
-
-
+  _Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
 * Grid Grouping
 
-_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\_
+  _&lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Grouping.Windows\_
 
-_Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources_
-
-
+  _Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
 * Pivot Grid
 
-_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\PivotGrid.Windows\_
+  _&lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\PivotGrid.Windows\_
 
-_Samples\Localization\ Localization using Satellite Assemblies\CS\Resources\SR.resources_
+  _Samples\Localization\ Localization using Satellite Assemblies\CS\Resources\SR.resources_
 
 ### Zoom Support
 
 Essential Grid provides zoom support for the Grid, GridDataBoundGrid, and GridGrouping controls. With this support, users can zoom in or out of the entire grid as well as individual cells of the grid. 
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 You can zoom in or out the Grid at the specified percentage level in your application by using this feature.
 
@@ -47471,10 +47860,10 @@ _Table 153: Properties Table_
 
 <table>
 <tr>
-<td>
-PROPERTIES </td><td>
-DESCRIPTION </td><td>
-DATA TYPE </td></tr>
+<th>
+PROPERTIES </th><th>
+DESCRIPTION </th><th>
+DATA TYPE </th></tr>
 <tr>
 <td>
 ZoomGridControlCell</td><td>
@@ -47486,6 +47875,7 @@ ZoomGridDataBoundCell</td><td>
 Used to enable zooming at the cell level for the GridDataBoundGrid.</td><td>
 Boolean</td></tr>
 </table>
+
 _Table154: Methods Table_
 
 <table>
@@ -47496,93 +47886,90 @@ DESCRIPTION </th><th>
 PARAMETERS </th><th>
 RETURN TYPE </th></tr>
 <tr>
-<th>
-zoomGrid</th><th>
-Gets the percentage value as the parameter and uses this value to set font and cell size for the grid. </th><th>
-Overloads: 1) (string Arg1)</th><th>
-Void</th></tr>
+<td>
+zoomGrid</td><td>
+Gets the percentage value as the parameter and uses this value to set font and cell size for the grid. </td><td>
+Overloads: 1) (string Arg1)</td><td>
+Void</td></tr>
 <tr>
-<th>
-ZoomGrid</th><th>
-This constructor gets Grid control to be zoomed as a parameter.</th><th>
-Overloads:1)(Class Arg1)</th><th>
-Constructor </th></tr>
+<td>
+ZoomGrid</td><td>
+This constructor gets Grid control to be zoomed as a parameter.</td><td>
+Overloads:1)(Class Arg1)</td><td>
+Constructor </td></tr>
 <tr>
-<th>
-ZoomGroupingGrid</th><th>
-This constructor gets the GridGrouping control as a parameter and defines zooming function for the GridGroupingControl.</th><th>
-Overloads:1)(Class Arg1)</th><th>
-Constructor</th></tr>
+<td>
+ZoomGroupingGrid</td><td>
+This constructor gets the GridGrouping control as a parameter and defines zooming function for the GridGroupingControl.</td><td>
+Overloads:1)(Class Arg1)</td><td>
+Constructor</td></tr>
 </table>
 
 
-Sample Link
+#### Sample Link
 
 To open sample project, navigate to the following sample locations in your system:
 
-For GridControl:
+#### For GridControl:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
-
-
-
-For GridDataBoundGrid:
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Zoom\Zooming Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
 
 
 
-For GridGroupingControl:
+#### For GridDataBoundGrid:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Zooming\Zooming Demo_
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Zoom\Zooming Demo_
+
+
+
+#### For GridGroupingControl:
+
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Zooming\Zooming Demo_
 
 #### Zooming Grid Controls
 
 To enable zooming support for a control, you need to pass the control as a parameter to implement zooming functionality. Then, you need to define percentage value of zooming by using zoomGrid method. The following code examples illustrate how to zoom the entire grid of the GridControl, GridDataBoundGrid, and GridGrouping controls.
 
-For GridControl
+#### For GridControl
 
-[C#]
+{% highlight c# %}
 
  ZoomGrid zoom = new ZoomGrid(this.gridControl1);
 
 zoom.zoomGrid(this.trackBar1.Value.ToString());
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Dim zoom As New ZoomGrid(Me.gridControl1)
 
        zoom.zoomGrid(Me.trackBar1.Value.ToString())
 
+{% endhighlight %}
 
 
 ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Zoom and Scrolling/GridControl Zoom/Images/zoom1.png](Grid-Controls_images/Grid-Controls_img641.png)
 
 
 
-For GridDataBoundGrid Control
+#### For GridDataBoundGrid Control
 
-
-
-[C#]
+{% highlight c# %}
 
  ZoomGrid zoom = new ZoomGrid(this.gridDataBoundGrid1);      
 
 zoom.zoomGrid(this.trackBar1.Value.ToString());
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Dim zoom As New ZoomGrid(Me.gridDataBoundGrid1)
 
        zoom.zoomGrid(Me.trackBar1.Value.ToString())
+
+{% endhighlight %}
 
 
 
@@ -47590,23 +47977,23 @@ Dim zoom As New ZoomGrid(Me.gridDataBoundGrid1)
 
 
 
-For GridGrouping Control
+#### For GridGrouping Control
 
-[C#]
+{% highlight c# %}
 
  ZoomGroupingGrid zoom = new ZoomGroupingGrid(this.gridGroupingControl1);
 
  zoom.zoomGrid(this.trackBar1.Value.ToString());
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 Dim zoom As New ZoomGroupingGrid (Me.gridGroupingControl1)
 
 zoom.zoomGrid(Me.trackBar1.Value.ToString())
+
+{% endhighlight %}
 
 ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Grouping.Windows/Samples/2.0/Zoom/Zoom Grid Demo/Images/zoom7.png](Grid-Controls_images/Grid-Controls_img643.png)
 
@@ -47616,19 +48003,19 @@ zoom.zoomGrid(Me.trackBar1.Value.ToString())
 
 You can also zoom individual cells of a grid by using ZoomGridControlCell property.This facilitates display of selected cell content in a maximized form. When you click any cell, this sample displays a picture box control over the cell displaying the content in large fonts.
 
-[C#]
+{% highlight c# %}
 
  ZoomGrid.ZoomGridControlCell = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
  ZoomGrid.ZoomGridControlCell = True
 
+{% endhighlight %}
 
 
 ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Zoom and Scrolling/GridControl Zoom/Images/zoom3.png](Grid-Controls_images/Grid-Controls_img644.png)
-
 
 
