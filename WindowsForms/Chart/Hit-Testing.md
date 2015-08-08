@@ -13,9 +13,9 @@ The section covers the below topics:
 
 ## Chart Coordinates by Point
 
-Chart Coordinates by point
+### Chart Coordinates by point
 
-GetValueByPoint()
+#### GetValueByPoint()
 
 Using the GetValueByPoint method, the mouse position in chart client-coordinates can be converted into a corresponding Chart Coordinate in terms of x, y values.
 
@@ -23,23 +23,19 @@ The below figure shows a chart where the tooltip text for each point shows the c
 
 
 
-{{ '![](Hit-Testing_images/Hit-Testing_img1.jpeg)' | markdownify }}
-{:.image }
+![](Hit-Testing_images/Hit-Testing_img1.jpeg)
 
 
 
 
-_Figure_ _366__: Chart displaying Coordinate value at a Client Point_
+
+_Figure_ _366_: _Chart displaying Coordinate value at a Client Point_
 
 
 
 Code snippet for the above sample
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Chartcontrol mouse move event.
 
@@ -55,11 +51,9 @@ private void chartControl_MouseMove(object sender,System.Windows.Forms.MouseEven
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' ChartControl mouse move event.
 
@@ -73,23 +67,23 @@ Private Sub chartControl_MouseMove(ByVal sender As Object, ByVal e As System.Win
 
 End Sub
 
+{% endhighlight %}
 
 
-GetPointByValue()
+
+
+#### GetPointByValue()
 
 The GetPointByValue method does the opposite of the above - given a chart coordinate it returns the client co-ordinate corresponding to that chart point.
 
 ## LegendItem By Point
 
-Get LegendItem By Point
+### Get LegendItem By Point
 
 The Legend.GetItemBy method will let you get the reference to a legend item at a specific point. Implementing the below code sample, will display a tooltip with legend item name, on which the user mouse hover. 
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 private ToolTip toolTip2;
 
@@ -111,13 +105,9 @@ void lgnd_MouseHover(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 private toolTip2 As ToolTip
 
@@ -141,27 +131,23 @@ If item IsNot Nothing Then
 
 End Sub
 
+{% endhighlight %}
 
 
-{{ '![](Hit-Testing_images/Hit-Testing_img2.jpeg)' | markdownify }}
-{:.image }
+![](Hit-Testing_images/Hit-Testing_img2.jpeg)
 
 
-
-
-_Figure_ _367__: Legend Item Identified using GetItemBy Method_
+_Figure_ _367_: _Legend Item Identified using GetItemBy Method_
 
 ## Chart Area Bounds
 
-Full Chart Area Bounds
+### Full Chart Area Bounds
 
 Use the Bounds property to get the rectangular area comprising the chart area that includes the axis, axis titles and other sections.
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartAreaPaint += new System.Windows.Forms.PaintEventHandler(chartControl1_ChartAreaPaint);
 
@@ -180,10 +166,9 @@ void chartControl1_ChartAreaPaint(object sender, System.Windows.Forms.PaintEvent
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 AddHandler Me.chartControl1.ChartAreaPaint, AddressOf chartControl1_ChartAreaPaint
 
@@ -199,27 +184,20 @@ Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As Syst
 
 End Sub
 
+{% endhighlight %}
 
+![](Hit-Testing_images/Hit-Testing_img3.jpeg)
 
-{{ '![](Hit-Testing_images/Hit-Testing_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _368__: Chart Area Bounds in Red_
+_Figure_ _368_: _Chart Area Bounds in Red_
 
 
 
-Chart Plot Area Bounds
+### Chart Plot Area Bounds
 
 Use the RenderBounds property to get the rectangular area comprising just the plot-area, bound by the axes.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 this.chartControl1.ChartAreaPaint += new System.Windows.Forms.PaintEventHandler(chartControl1_ChartAreaPaint);
 
@@ -238,10 +216,9 @@ void chartControl1_ChartAreaPaint(object sender, System.Windows.Forms.PaintEvent
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 AddHandler Me.chartControl1.ChartAreaPaint, AddressOf chartControl1_ChartAreaPaint
 
@@ -257,13 +234,10 @@ Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As Syst
 
 End Sub
 
+{% endhighlight %}
 
 
-{{ '![](Hit-Testing_images/Hit-Testing_img4.jpeg)' | markdownify }}
-{:.image }
+![](Hit-Testing_images/Hit-Testing_img4.jpeg)
 
 
-
-
-_Figure_ _369__: Chart Plot Area Bounds in Red_
-
+_Figure_ _369_: _Chart Plot Area Bounds in Red_

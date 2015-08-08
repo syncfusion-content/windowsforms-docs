@@ -19,13 +19,13 @@ There is no built-in support in Chart for importing data from CSV (Comma Separat
 
 
 
-{{ '![](Importing_images/Importing_img1.jpeg)' | markdownify }}
-{:.image }
+![](Importing_images/Importing_img1.jpeg)
 
 
-_Figure_ _351__: Importing a CSV File_
 
-Sample Location:
+_Figure_ _351_: _Importing a CSV File_
+
+### Sample Location:
 
 ..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Import\Data from CSV
 
@@ -35,13 +35,13 @@ There is no built-in support in Chart for importing data from an XML file. But g
 
 
 
-{{ '![](Importing_images/Importing_img2.jpeg)' | markdownify }}
-{:.image }
+![](Importing_images/Importing_img2.jpeg)
 
 
-_Figure_ _352__: Importing data from XML to Chart_
 
-Sample Location
+_Figure_ _352_: _Importing data from XML to Chart_
+
+### Sample Location
 
 Windows Forms - My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Import\Data from XML
 
@@ -53,15 +53,15 @@ There is no built-in support in Chart for importing data from XLS (MS Excel) fil
 
 
 
-{{ '![](Importing_images/Importing_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _353__:Importing data from Excel to Chart_
+![](Importing_images/Importing_img3.jpeg)
 
 
 
-Sample Location
+_Figure_ _353_: _Importing data from Excel to Chart_
+
+
+
+### Sample Location
 
 My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Import\Data from Excel
 

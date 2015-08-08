@@ -15,7 +15,7 @@ You can open, modify and create Project files using the Project Class. Project c
 
 ### Constructors
 
-_Table_ _4__: Project Constructor_
+_Table_ _4_: _Project Constructor_
 
 <table>
 <tr>
@@ -23,13 +23,14 @@ _Table_ _4__: Project Constructor_
 Name</th><th>
 Description</th></tr>
 <tr>
-<th>
-Project.Project()</th><th>
-Initializes a new instance of the Project class</th></tr>
+<td>
+Project.Project()</td><td>
+Initializes a new instance of the Project class</td></tr>
 </table>
+
 ### Properties
 
-_Table_ _5__: Project Properties_
+_Table_ _5_: _Project Properties_
 
 <table>
 <tr>
@@ -339,13 +340,13 @@ Gets or sets the collection of assignments that make up the project.</td></tr>
 </table>
 ### Methods
 
-_Table_ _6__: Project Methods_
+_Table_ _6_: _Project Methods_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Save</td><td>
@@ -375,11 +376,12 @@ Gets the type of the current instance</td></tr>
 ToString</td><td>
 Returns a string that represents the current object</td></tr>
 </table>
+
 ## Creating a simple project
 
 Project is the main class of Essential ProjIO. We can only create project files in XML format. The following lines of code create a simple project.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -393,9 +395,9 @@ Project project = new Project();
 
 project.Save("Empty Project.xml");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -409,10 +411,12 @@ Dim project As Project = New Project()
 
 project.Save("Empty Project.xml")
 
+{% endhighlight %}
+
 The XML project file can be viewed in Microsoft Project using the option File – Open and then selecting the XML format (*.xml) option from the file types. Select ‘Project Information’ option from the Projects menu and the options will look as follows:
 
-{{ '![](Project_images/Project_img1.jpeg)' | markdownify }}
-{:.image }
+![](Project_images/Project_img1.jpeg)
+
 
 
 ## Reading a project file
@@ -426,7 +430,7 @@ Read method returns a Project object, which can then be used to retrieve or mani
 
 The following code illustrates the use of the Read method:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -434,9 +438,9 @@ The following code illustrates the use of the Read method:
 
 Project P = ProjectReader.Open("SimpleProject.xml");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -444,13 +448,15 @@ Project P = ProjectReader.Open("SimpleProject.xml");
 
 Dim P As Project = ProjectReader.Open("SimpleProject.xml")
 
+{% endhighlight %}
+
 ## General Project Properties
 
 ### Retrieving Project Properties
 
 The Project Properties can be retrieved by using the Project class. The following code snippet shows how to get the project properties. These properties can be viewed in MS Project by selecting Project Properties from the File -Project Menu.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -486,9 +492,9 @@ Console.WriteLine("Status Date: " + project.StatusDate);
 
 Console.WriteLine("Calendar: " + project.Calendar.Name);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -526,13 +532,15 @@ Console.WriteLine("Status Date: " + project.StatusDate)
 
 Console.WriteLine("Calendar: " + project.Calendar.Name)
 
+{% endhighlight %}
+
 ### Setting Project Properties
 
 The Project class can be used to set Project properties such as Start Date, Finish Date, Calendar and so on.
 
 The following code snippet shows how to set the Project properties:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -558,9 +566,9 @@ project.StatusDate = new DateTime(2011, 7, 9);
 
 project.Save("ProjectProperties.xml");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -586,6 +594,8 @@ project.StatusDate = New DateTime(2011, 7, 9)
 
 project.Save("ProjectProperties.xml")
 
+{% endhighlight %}
+
 ## Default Project Properties
 
 The Project class is used to get/set Project Default Properties. The default properties of a project can be viewed using the Tools – Options menu in MS Project.
@@ -594,7 +604,7 @@ The Project class is used to get/set Project Default Properties. The default pro
 
 The following example illustrates how to retrieve default project properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -618,10 +628,9 @@ Console.WriteLine("Default Task EV Method: " + project.DefaultTaskEVMethod);
 
 Console.WriteLine("Default Cost Accrual: " + project.DefaultFixedCostAccrual);
 
+{% endhighlight %}
 
-
-[VB]
-
+{% highlight vbnet %}
 
 
 ' Creating an instance of Project
@@ -648,11 +657,13 @@ Console.WriteLine("Default Task EV Method: " & project.DefaultTaskEVMethod)
 
 Console.WriteLine("Default Cost Accrual: " & project.DefaultFixedCostAccrual)
 
+{% endhighlight %}
+
 ### Setting Default Project Properties
 
 The following example shows how to set the default project properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -683,8 +694,9 @@ project.DefaultFixedCostAccrual = DefaultFixedCostAccrual.Prorated;
 project.Save("DefaultProjectProperties.xml");
 
 
+{% endhighlight %}
 
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -714,11 +726,13 @@ project.DefaultFixedCostAccrual = DefaultFixedCostAccrual.Prorated
 
 project.Save("DefaultProjectProperties.xml")
 
+{% endhighlight %}
+
 ## Writing Project Summary Information
 
 Project class contains properties that can get or set the summary information of a project file in XML format. Using this class, the summary information can be updated and the file can be written back in XML format. The following code shows how this can be done.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -751,8 +765,9 @@ project.Title = "Sample Project";
 project.Save("Empty Project.xml");
 
 
+{% endhighlight %}
 
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -784,10 +799,12 @@ project.Title = "Sample Project"
 
 project.Save("Empty Project.xml")
 
+{% endhighlight %}
+
 The project summary information added through the above code can be viewed by checking the Project Information – Advanced Properties in the File menu.
 
-{{ '![](Project_images/Project_img2.jpeg)' | markdownify }}
-{:.image }
+![](Project_images/Project_img2.jpeg)
+
 
 
 ## Fiscal Year Properties
@@ -798,7 +815,7 @@ The Project class properties FYStartDate and FiscalYearStart are used to get or 
 
 The following code snippets retrieve Fiscal year properties from a project:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -819,8 +836,10 @@ Console.WriteLine(project.FiscalYearStart ? "Fiscal Year Numbering is used in th
 
 
 
+{% endhighlight %}
 
-[VB]
+
+{% highlight vbnet %}
 
 
 
@@ -838,11 +857,14 @@ Console.WriteLine("Fiscal Year Start Month: " + project.FYStartDate)
 
 Console.WriteLine(If(project.FiscalYearStart, "Fiscal Year Numbering is used in the Project", "Fiscal Year Numbering is not used in the Project"))
 
+
+{% endhighlight %}
+
 ### Setting Fiscal Year Properties
 
 The following code sets the Fiscal year properties for a project.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -864,9 +886,11 @@ project.FiscalYearStart = true;
 
 project.Save("FiscalProperties.xml");
 
+{% endhighlight %}
 
 
-[VB]
+
+{% highlight vbnet %}
 
 
 
@@ -888,6 +912,9 @@ project.FiscalYearStart = True
 
 project.Save("FiscalProperties.xml")
 
+{% endhighlight %}
+
+
 ## Week Day Properties
 
 The Project class contains properties WeekStartDay, DaysPerMonth, MinutesPerDay, MinutesPerWeek that can be used to get or set Week day properties of a project.
@@ -896,7 +923,7 @@ The Project class contains properties WeekStartDay, DaysPerMonth, MinutesPerDay,
 
 The following code snippets illustrate how to retrieve the Week day properties of a project.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -916,9 +943,11 @@ Console.WriteLine("No.of minutes per day: " + project.MinutesPerDay);
 
 Console.WriteLine("No. of minutes per week: " + project.MinutesPerWeek);
 
+{% endhighlight %}
 
 
-[VB]
+
+{% highlight vbnet %}
 
 
 
@@ -938,11 +967,14 @@ Console.WriteLine("No.of minutes per day: " + project.MinutesPerDay)
 
 Console.WriteLine("No. of minutes per week: " + project.MinutesPerWeek)
 
+{% endhighlight %}
+
+
 ### Setting Week Day Properties
 
 The following code snippet illustrates how to set the Week day properties of a project.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -969,10 +1001,12 @@ project.MinutesPerWeek = 2880;
 project.Save("WeekDayProperties.xml");
 
 
+{% endhighlight %}
 
 
 
-[VB]
+
+{% highlight vbnet %}
 
 
 
@@ -998,5 +1032,6 @@ project.MinutesPerWeek = 2880
 
 project.Save("WeekDayProperties.xml")
 
+{% endhighlight %}
 
 

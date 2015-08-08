@@ -25,20 +25,18 @@ Bullet Graph is available in the following namespace.
 
 Namespace: Syncfusion.Windows.Forms.BulletGraph
 
-Steps to create a simple Bullet Graph control:
+### Steps to create a simple Bullet Graph control:
 
 1. Create a new Windows Forms application project in Visual Studio.
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
-
-
+   ![](Getting-Started_images/Getting-Started_img1.png)
+   
 2. Add references to Syncfusion.BulletGraph.Windows.
 3. Add the Bullet Graph control in code behind as follows.
 
-[C#]
+   ~~~ cs
 
-BulletGraph bulletgraph = new BulletGraph();
+		BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;
 
@@ -72,13 +70,12 @@ BulletGraph bulletgraph = new BulletGraph();
 
             this.Controls.Add(bulletgraph);
 
-
+   ~~~
+   {:.prettyprint }
 
 4. Run the application to view the Bullet Graph.
 
-{{ '![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
-
+   ![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img2.png)
 
 ## Create the Bullet Graph using Syncfusion Reference Manager
 
@@ -88,39 +85,29 @@ BulletGraph bulletgraph = new BulletGraph();
 
 1. Create a simple Windows Forms application using Visual Studio.
 
-{{ '![D:/Help UGs/BulletGraph/WF/VS_NewProject.bmp](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
-
+   ![D:/Help UGs/BulletGraph/WF/VS_NewProject.bmp](Getting-Started_images/Getting-Started_img3.png)
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
-{{ '![D:/Help UGs/BulletGraph/WF/Select_Ref_Manager.bmp](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
+   ![D:/Help UGs/BulletGraph/WF/Select_Ref_Manager.bmp](Getting-Started_images/Getting-Started_img4.png)
 
 3. The Syncfusion Reference Manager Wizard is opened as shown in the following screenshot.
 
-{{ '![D:/Help UGs/BulletGraph/WF/Ref_Manager.bmp](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
-
+   ![D:/Help UGs/BulletGraph/WF/Ref_Manager.bmp](Getting-Started_images/Getting-Started_img5.png)
 
 4. Search for Bullet Graph using SearchBox and select Bullet Graph Control.  Click on Done to add selected Bullet Graph Control.
 
-{{ '![D:/Help UGs/BulletGraph/WF/Select_BG.bmp](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
-
+   ![D:/Help UGs/BulletGraph/WF/Select_BG.bmp](Getting-Started_images/Getting-Started_img6.png)
 
 5. The Bullet Graph assemblies are automatically added to the Project after Clicking OK
 
-{{ '![D:/Help UGs/BulletGraph/WF/Selected_BG.bmp](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
-
+   ![D:/Help UGs/BulletGraph/WF/Selected_BG.bmp](Getting-Started_images/Getting-Started_img7.png)
 
 6. Add the following code example in code behind to create a simple Bullet Graph control.
 
-[C#]
+   ~~~ cs
 
-            BulletGraph bulletgraph = new BulletGraph();
+        BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.Dock = DockStyle.Fill;
 
@@ -152,21 +139,15 @@ BulletGraph bulletgraph = new BulletGraph();
 
             bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green }); 
 
-            this.Controls.Add(bulletgraph);                                                                                 
+            this.Controls.Add(bulletgraph);   
 
-
+   ~~~
+   {:.prettyprint }  
 
 7. The simple Bullet Graph control is created as shown in the following screenshot.
 
-{{ '![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+   ![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img8.png)
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
-_Note:_   
-
-> _1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version._
-
-> _2.   The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013._             
-
+   > Note:  
+   > 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
+   > 2.   The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.

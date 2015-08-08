@@ -19,13 +19,9 @@ The range of calculations include simple algebraic expressions such as (1.2^3-1)
 
 Essential Calculate allows you to add extensive calculation support to your business objects. It enables to easily setup forms that have calculation dependencies among various controls.
 
+![](Overview_images/Overview_img1.jpeg)
 
-
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
-
-
-Key Features
+### Key Features
 
 Important features of Essential Calculate are listed below.
 
@@ -35,7 +31,7 @@ Important features of Essential Calculate are listed below.
 * It can be used in conjunction with Essential XlsIO, to fully load, manipulate and compute Excel spreadsheets without depending on Excel.
 * Essential Calculate does not depend upon Microsoft Excel and thus enables you to perform calculations independent of Excel.
 
-User Guide Organization
+### User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of Essential Calculate. It is organized into the following sections:
 
@@ -45,23 +41,23 @@ The product comes with numerous samples as well as an extensive documentation to
 * Concepts and Features-The features of Essential Calculate are illustrated with use case scenarios, code examples and screen shots under this section.
 * Frequently Asked Questions-This section illustrates the solutions for various task-based queries about Essential Calculate.
 
-Document Conventions
+### Document Conventions
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
-_Table_ _1_: Document Conventions_
+_Table_ _1_: _Document Conventions_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
 ![](Overview_images/Overview_img2.jpeg)
-{:.image }
+
 Note:</td><td>
 Represents important information.</td></tr>
 <tr>
@@ -73,66 +69,92 @@ Represents an example.</td></tr>
 <td>
 Tip</td><td>
 ![](Overview_images/Overview_img3.jpeg)
-{:.image }
+
 </td><td>
 Represents useful hints that will help you in using the controls/features.</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
 ![](Overview_images/Overview_img4.jpeg)
-{:.image }
+
 </td><td>
 Represents additional information on the topic.</td></tr>
 </table>
+
 ## Prerequisites and Compatibility
 
 This section covers the requirements mandatory for using Essential Calculate. It also lists operating systems and browsers, compatible with the product.
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed below:
 
-_Table_ _2_: Prerequisites_
+_Table_ _2_: _Prerequisites_
 
 <table>
+<ul>
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2012 (Ultimate, Premium, Professional and Express)*  Visual Studio 2010 (Ultimate, Premium, Professional and Express)* Visual Studio 2008 (Team System, Professional, Standard & Express)* Visual Studio 2005 (Professional, Standard & Express)</td></tr>
+<li>Visual Studio 2012 (Ultimate, Premium, Professional and Express)</li>
+<li>Visual Studio 2010 (Ultimate, Premium, Professional and Express)</li>
+<li>Visual Studio 2008 (Team System, Professional, Standard & Express)</li>
+<li>Visual Studio 2005 (Professional, Standard & Express)</li>
+</td></tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5* .NET 4.0* .NET 3.5* .NET 2.0</td></tr>
+<li>.NET 4.5.1</li>
+<li>.NET 4.5</li>
+<li>.NET 4.0</li>
+<li>.NET 3.5</li>
+<li>.NET 2.0</li>
+</td></tr>
+</ul>
 </table>
 
 
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed below:
 
 
 
-_Table_ _3_: Compatibility_
+_Table_ _3_: _Compatibility_
 
 <table>
+<ul>
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2013 (32 bit and 64 bit)* Windows Server 2012(32bit and 64 bit* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows Server 2003 (32 bit and 64 bit) * Windows XP</td></tr>
+<li>Windows 8.1 (32 bit and 64 bit)</li>
+<li>Windows 8 (32 bit and 64 bit)</li>
+<li>Windows Server 2013 (32 bit and 64 bit)</li>
+<li>Windows Server 2012(32bit and 64 bit</li>
+<li>Windows Server 2008 (32 bit and 64 bit)</li>
+<li>Windows 7 (32 bit and 64 bit)</li>
+<li>Windows Vista (32 bit and 64 bit)</li>
+<li>Windows Server 2003 (32 bit and 64 bit)</li>
+<li>Windows XP</li>
+</td>
+</tr>
+</ul>
 </table>
+
+
 ## Documentation
 
 
 Syncfusion provides the following documentation segments to provide all the necessary information pertaining to Essential Calculate.
 
-_Table_ _4_: Type of Documentation_
+_Table_ _4_: _Type of Documentation_
 
 <table>
 <tr>
-<td>
-Type of Documentation</td><td>
-Location</td></tr>
+<th>
+Type of Documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -145,12 +167,10 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the Calculate User Guide.)> ![](Overview_images/Overview_img5.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
 Online{{ '[http://help.syncfusion.com/cr](http://help.syncfusion.com/cr)' | markdownify }}  (Navigate to the Reporting User Guide. Select {{ ''_Calculate_'' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
-
-

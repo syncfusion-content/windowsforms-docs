@@ -13,16 +13,16 @@ PivotGrid is customized and displayed in a 3D structural format. It customizes t
 
 
 
-Use case scenario
+### Use case scenario
 
 This Support is useful under the following cases etc.
 
 
 <table>
 <tr>
-<td>
-Use-Case Description</td><td>
-Details</td></tr>
+<th>
+Use-Case Description</th><th>
+Details</th></tr>
 <tr>
 <td>
 For Quick access of small amount of data.</td><td>
@@ -46,7 +46,7 @@ This support provides the available PivotCalculation items in a context menu and
 </table>
 
 
-Functionality Support in RowPivotsOnly mode:
+### Functionality Support in RowPivotsOnly mode:
 
 The following functionalities are implemented in the RowPivotsOnly mode. 
 
@@ -61,16 +61,16 @@ The PivotCalculation item is supported with Sorting. Sorting of the PivotCalcula
 
 
 
-{{ '![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img1.png)' | markdownify }}
-{:.image }
+![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img1.png)
+
 
 
 ## Filtering Support
 
 The PivotCalculation items are supported with Filtering. Whereas the PivotRows is not supported with Filters. This operation is enabled or disabled using AllowFilter Property.
 
-{{ '![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img2.png)' | markdownify }}
-{:.image }
+![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img2.png)
+
 
 
 ## Pivot Value Chooser
@@ -79,7 +79,4 @@ Pivot Value chooser is a customized dialog that showcases the available Pivot Ca
 
 
 
-{{ '![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img3.png)' | markdownify }}
-{:.image }
-
-
+![](RowPivots-Support-in-PivotGrid_images/RowPivots-Support-in-PivotGrid_img3.png)

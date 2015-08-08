@@ -13,23 +13,23 @@ Localization allows a chart to display data according to the language and cultur
 
 EssentialChart now supports localization; built-in resource files for specific languages can be easily added.  Context menu items, exception messages, and some of the toolbar items can be localized.
 
-Use Case Scenario
+### Use Case Scenario
 
 This enables you to localize any part of the chart that has static strings in it.
 
 
 
-_Table_ _186__: Properties_
+_Table_ _186_: _Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td><td>
-Dependencies</td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th><th>
+Dependencies</th></tr>
 <tr>
 <td>
 Localize </td><td>
@@ -44,23 +44,15 @@ NA</td></tr>
 Adding Localization to an application
 
 1. Create your localization resource file (.resx) in the  bin > Debug folder with the following naming convention:
-* ChartControl.<your culture info name>.resx
+   * ChartControl.<your culture info name>.resx
+
+   > Note: It is mandatory to follow this naming convention.
+
+   ![](Localization_images/Localization_img2.png)
 
 
 
-> {{ '![](Localization_images/Localization_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: It is mandatory to follow this naming convention._ 
-
-
-
-
-
-{{ '![](Localization_images/Localization_img2.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _371__: Resource File_
+   _Figure_ _371_: _Resource File_
 
 
 
@@ -68,41 +60,36 @@ _Figure_ _371__: Resource File_
 
 
 
-{{ '![D:/Feature2011_VOL4/English.PNG](Localization_images/Localization_img3.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _372__: Default English resource file_
+   ![D:/Feature2011_VOL4/English.PNG](Localization_images/Localization_img3.png)
 
 
 
-> {{ '![](Localization_images/Localization_img4.jpeg)' | markdownify }}
-{:.image }
-_Note: It is mantatory to specify equivalent terms for all static element to localize the chart._
+   _Figure_ _372_: _Default English resource file_
+
+
+
+   > Note: It is mantatory to specify equivalent terms for all static element to localize the chart.
 
 3. Specify the culture using the Localize property as given in the following code:
 
 
-
-[C#]
+{% highlight c# %}
 
 this.chartControl1.Localize=”de-DE”;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.chartControl1.Localize=”de-DE”
 
+{% endhighlight %}
 
+![](Localization_images/Localization_img5.png)
 
-{{ '![](Localization_images/Localization_img5.png)' | markdownify }}
-{:.image }
+_Figure_ _373_: _Localized Chart_
 
-
-_Figure_ _373__: Localized Chart_
-
-Sample Link
+### Sample Link
 
 To view a sample
 
@@ -114,4 +101,3 @@ To view a sample
 You can find the resource file for the localization in English at the following location:
 
 [ChartControl_Resource](http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=ChartControl_Resource-1347262360.zip)
-

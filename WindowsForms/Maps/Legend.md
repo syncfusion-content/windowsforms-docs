@@ -25,10 +25,10 @@ Map legends can be positioned by setting the LegendPosition property in ShapeF
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 LegendPosition</td><td>
@@ -69,11 +69,11 @@ Bubble type legends are always bubbles with varying sizes.  The size of the bub
 
 Layer shape type legends can be different shapes for the legend. The shapes can be set using the LegendIcon, of the LegendIcon type.
 
-Code sample:
+### Code sample:
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -103,9 +103,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -181,11 +181,8 @@ shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
      }       
 
-
+{% endhighlight %}
 
 The following screenshot illustrate a map displaying default legend
 
-{{ '![](Legend_images/Legend_img1.png)' | markdownify }}
-{:.image }
-
-
+![](Legend_images/Legend_img1.png)

@@ -7,13 +7,13 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
 This section covers information on the install location, samples, licensing, patch updates and updates of the current version of Essential Studio. It is comprised of the following subsections:
 
 
 
-### Installation
+## Installation
 
 For step-by-step installation procedures for installing Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
@@ -28,32 +28,33 @@ For licensing, patches and information on adding or removing selective component
 * Licensing
 * Patches
 * Add/Remove Components
-### Samples and Location
+
+## Samples and Location
 
 
 This section covers the location of the installed samples and describes the procedure to run the samples through the Sample Browser and online. It also provides the location of the source code.
 
 
 
-Samples Installation Location
+### Samples Installation Location
 
 The PivotGrid samples are installed in the following location locally on the disk:
 
 
 
-Windows XP:
+#### Windows XP:
 
-C:\Syncfusion\Essential Studio<version number>\Windows\PivotGrid.Windows\Samples
-
-
-
-Windows 7/Vista:
-
-C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\<version number>\Windows\PivotGrid.Windows\Samples
+C:\Syncfusion\Essential Studio&lt;version number&gt;\Windows\PivotGrid.Windows\Samples
 
 
 
-Viewing Samples
+#### Windows 7/Vista:
+
+C:\Users\&lt;username&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version number&gt;\Windows\PivotGrid.Windows\Samples
+
+
+
+#### Viewing Samples
 
 To view the samples, follow the steps below:
 
@@ -61,51 +62,26 @@ To view the samples, follow the steps below:
 
 1. Click Start > All Programs > Syncfusion > Essential Studio<version number> > Dashboard. 
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
-{:.image }
-
-
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
+   
+   > Note: You can view the samples in any of the following three ways:
+   > * Run Samples - Click to view the locally installed samples.
+   > * Online Samples - Click to view online samples.
+   > * Explore Samples - Explore UI Windows Forms on disk.
 
-
-
-> {{ '![http://help.syncfusion.com/ug/windows%20forms/pivotgrid/ImagesExt/image9_1.png](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
-{:.image }
-_Note: You can view the samples in any of the following three ways:_
-
-
-
-* Run Samples - Click to view the locally installed samples.
-* Online Samples - Click to view online samples.
-* Explore Samples - Explore UI Windows Forms on disk.
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
-{:.image }
-
-
-
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   
 3. Click PivotGrid from the bottom-left pane. The PivotGrid samples are displayed.
-
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _4_: PivotGrid samples_
-
-
+   
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+    
+   _Figure_ _4_: _PivotGrid samples_
 
 4. Select any sample and browse through the features.
 
-
-
-Source Code Location
+#### Source Code Location
 
 The default location of the PivotGrid source code is:
 
@@ -113,7 +89,7 @@ The default location of the PivotGrid source code is:
 
 
 
-### Deployment Requirements
+## Deployment Requirements
 
 The following assemblies need to be referenced in your application to use Essential PivotGrid for WF.
 
@@ -127,24 +103,23 @@ The following assemblies need to be referenced in your application to use Essent
 * Syncfusion.Shared.Windows
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.PivotAnalysis.Windows
-### Properties Table for PivotGrid
 
+## Properties Table for PivotGrid
 
-
-
-_Table_ _5_: Properties Table_
+_Table_ _5_: _Properties Table_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 DeferLayoutUpdate</td><td>
 bool</td><td>
-Gets or sets a value to specify whether the layout should be updated immediately after updating the pivoting info, or if it should wait for a {{ '_Refresh()_' | markdownify }} call.</td></tr>
+Gets or sets a value to specify whether the layout should be updated immediately after updating the pivoting info, or if it should wait for a {{ '_Refresh()_' | markdownify }}
+ call.</td></tr>
 <tr>
 <td>
 FreezeHeaders</td><td>
@@ -191,5 +166,3 @@ PivotCellInfo</td><td>
 PivotCellInfo</td><td>
 Gets or sets the PivotCellInfo in order to check the cell type.</td></tr>
 </table>
-
-

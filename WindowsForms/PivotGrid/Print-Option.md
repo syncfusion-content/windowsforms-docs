@@ -19,7 +19,7 @@ The print functionality can be invoked using the following code:
 
 
 
- [C#]
+ {% highlight c# %}
 
 
 
@@ -61,11 +61,9 @@ MessageBox.Show("Error while print preview" + ex.ToString());
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Private Sub button1_Click_1(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -101,47 +99,36 @@ End Try
 
 End Sub
 
-
-
-
+{% endhighlight %}
 
 Headers and footers can also be added by using the DrawGridPrintHeader and DrawGridPrintFooter events. The following code illustrates how to add the header and footer.
 
-[C#]
+{% highlight c# %}
 
-pd.DrawGridPrintHeader+=new
+pd.DrawGridPrintHeader+=new GridPrintDocumentAdv.DrawGridHeaderFooterEventHandler(pd_DrawGridPrintHeader);
 
-GridPrintDocumentAdv.DrawGridHeaderFooterEventHandler(pd_DrawGridPrintHeader)
+pd.DrawGridPrintFooter+=new GridPrintDocumentAdv.DrawGridHeaderFooterEventHandler(pd_DrawGridPrintFooter)
 
-;
+{% endhighlight %}
 
-pd.DrawGridPrintFooter+=new
-
-GridPrintDocumentAdv.DrawGridHeaderFooterEventHandler(pd_DrawGridPrintFooter)
-
-;
-
-
-
-[VB]
+{% highlight vbnet %}
 
 AddHandler pd.DrawGridPrintHeader, AddressOf pd_DrawGridPrintHeader
 
 AddHandler pd.DrawGridPrintFooter, AddressOf pd_DrawGridPrintFooter
 
+{% endhighlight %}
+
+
+
 The following image shows the printed output of the pivot grid:
 
 
 
-{{ '![C:/Users/athirams/Desktop/print/page1.png](Print-Option_images/Print-Option_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/athirams/Desktop/print/page1.png](Print-Option_images/Print-Option_img1.png)
 
-
-
-
-Sample Link
+### Sample Link
 
 A sample is available in the following location:
 
-<InstalledLocation>\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows \Samples\2.0\Print\Print Grid Demo
-
+&lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows \Samples\2.0\Print\Print Grid Demo

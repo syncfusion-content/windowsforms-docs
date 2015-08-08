@@ -13,27 +13,27 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 
 1. AnnotationLabel
 
-AnnotationLabel is a “Text” that shows some information in the text format.
+   AnnotationLabel is a “Text” that shows some information in the text format.
 
 2. AnnotationStroke
 
-By using AnnotationStroke we can apply specific color for the annotations.
+   By using AnnotationStroke we can apply specific color for the annotations.
 
 
 
 3. Latitude and Longitude
 
-MapAnnotation can be positioned anywhere on the map based on latitude and longitude. MapAnnotation has two properties called “Latitude” and “Longitude” which are string types used to set co-ordinates of the MapAnnotation in the form of latitude and longitude.
+   MapAnnotation can be positioned anywhere on the map based on latitude and longitude. MapAnnotation has two properties called “Latitude” and “Longitude” which are string types used to set co-ordinates of the MapAnnotation in the form of latitude and longitude.
 
 
 
 
 
-Code sample:
+### Code sample:
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -61,9 +61,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -125,11 +125,6 @@ public partial class Form1 : Form
 
      }       
 
+{% endhighlight %}
 
-
-Screenshot:{{ '![](Annotations_images/Annotations_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
+Screenshot:![](Annotations_images/Annotations_img1.png)

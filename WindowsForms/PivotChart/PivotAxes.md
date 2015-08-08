@@ -13,13 +13,13 @@ PivotCharts typically have two axes that are used to measure and categorize data
 
 PivotChart provides properties to set custom titles for the axes. You can set the title text for an axis by using Title property. Customize this text by using TitleColor and TitleFont properties.
 
-_Table_ _1__: Chart Axis properties_
+_Table_ _1_: _Chart Axis properties_
 
 <table>
 <tr>
-<td>
-Chart Axis Properties</td><td>
-Description</td></tr>
+<th>
+Chart Axis Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 TitleColor</td><td>
@@ -31,9 +31,7 @@ Sets the font style for the title text.</td></tr>
 </table>
 
 
-[C#]
-
-
+{% highlight c# %}
 
 //Sets custom title for x-axis.
 
@@ -47,10 +45,9 @@ this.pivotChart1.PrimaryXaxis.TitleFont = new Font("Arial", 10);
 
 //Sets custom title for y-axis in a similar method.
 
+{% endhighlight %}
 
-
-[VB]
-
+{% highlight vbnet %}
 
 'Sets custom title for x-axis.
 
@@ -64,18 +61,19 @@ Me.pivotChart1.PrimaryXaxis.TitleFont = New Font("Arial", 10)
 
 'Sets custom title for y-axis in a similar method.
 
+{% endhighlight %}
 
-Chart Grid Lines
+### Chart Grid Lines
 
 The Grid Lines in the PivotChart defines the intervals in the axes that can be customized by using the following properties. 
 
-_Table_ _2__: Chart control properties_
+_Table_ _2_: _Chart control properties_
 
 <table>
 <tr>
-<td>
-Chart Control Properties</td><td>
-Description</td></tr>
+<th>
+Chart Control Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 GridLineType.ForeColor</td><td>
@@ -101,9 +99,7 @@ The thickness of the lines.</td></tr>
 
 BackColor, DashStyle, ForeColor, PenType and the Width are specified by using the GridLineType property. The following code illustrates how to show the Grid Lines on both axes and how to customize them.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Customizes X-Axis Gridlines.
 
@@ -127,11 +123,9 @@ this.chartControl1.PrimaryYAxis.GridLineType.PenType = System.Drawing.Drawing2D.
 
 this.chartControl1.PrimaryYAxis.GridLineType.Width = 2F;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 'Customizes X-Axis Gridlines.
 
@@ -155,5 +149,4 @@ Me.chartControl1.PrimaryYAxis.GridLineType.PenType = System.Drawing.Drawing2D.Pe
 
 Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
-
-
+{% endhighlight %}

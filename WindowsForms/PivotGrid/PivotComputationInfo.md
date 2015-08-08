@@ -13,16 +13,16 @@ This class holds the information needed for calculations that appear in PivotGri
 
 
 
-_Table_ _7__: Properties Table for PivotComputationInfo_
+_Table_ _7_: _Properties Table for PivotComputationInfo_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td><td>
-Type</td><td>
-Value it Accepts</td><td>
-Reference link</td></tr>
+<th>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
 <tr>
 <td>
 CalculationName</td><td>
@@ -66,18 +66,32 @@ SummaryType</td><td>
 DoubleTotalSumDoubleAverageDoubleMaximumDoubleMinimumDoubleStandardDeviationDoubleVarianceCountDecimalTotalSumIntTotalSumCustom</td><td>
 -</td></tr>
 </table>
+
 ## Defining PivotComputationInfo and Code-Behind
 
-The__PivotComputationInfo can be defined in C# or VB code.
+The PivotComputationInfo can be defined in C# or VB code.
 
-<table>
-<tr>
-<td>
-[C#]// Defining PivotComputationInfoPivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() { CalculationName="Amount", FieldName="Amount", SummaryType= SummaryType.Count };// Adding PivotComputationInfo to PivotCalculationsthis.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);</td></tr>
-<tr>
-<td>
- [VB]' Defining PivotComputationInfoDim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() With {.CalculationName="Amount", .FieldName="Amount", .SummaryType= SummaryType.Count}' Adding PivotComputationInfo to PivotCalculationsMe.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo)</td></tr>
-</table>
+
+{% highlight c# %}
+
+// Defining PivotComputationInfo
+PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() 
+{ CalculationName="Amount", FieldName="Amount", SummaryType= SummaryType.Count };
+// Adding PivotComputationInfo to PivotCalculations
+this.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+' Defining PivotComputationInfo
+Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
+With {.CalculationName="Amount", .FieldName="Amount", .SummaryType= SummaryType.Count}
+' Adding PivotComputationInfo to PivotCalculations
+Me.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo)
+
+{% endhighlight %}
+
 ## Format String in PivotComputationInfo
 
 The PivotComputationInfo property replaces each format specification in a specified string with the textual equivalent of a corresponding value.
@@ -85,24 +99,35 @@ The PivotComputationInfo property replaces each format specification in a specif
 <table>
 <tr>
 <td>
-[C#]// Decimal FormatPivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() { CalculationName="Total", FieldName="Quantity", SummaryType= SummaryType.Count, Format="0.00"};</td></tr>
-<tr>
-<td>
- [VB]' Decimal FormatDim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() With {.CalculationName="Total", .FieldName="Quantity", .SummaryType= SummaryType.Count, .Format="0.00"}</td></tr>
-</table>
+{% highlight c# %}
+
+// Decimal Format
+PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() 
+{ CalculationName="Total", FieldName="Quantity", SummaryType= SummaryType.Count, Format="0.00"};
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+' Decimal Format
+Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
+With {.CalculationName="Total", .FieldName="Quantity", .SummaryType= SummaryType.Count, .Format="0.00"}</td></tr>
+
+{% endhighlight %}
+
 
 
 The following table lists the different types of format settings.
 
 
 
-_Table_ _8__: Types of format settings_
+_Table_ _8_: _Types of format settings_
 
 <table>
 <tr>
-<td>
-Format</td><td>
-Description</td></tr>
+<th>
+Format</th><th>
+Description</th></tr>
 <tr>
 <td>
 0.00</td><td>
@@ -124,5 +149,3 @@ Literal String Specifier</td></tr>
 D</td><td>
 Long Date</td></tr>
 </table>
-
-

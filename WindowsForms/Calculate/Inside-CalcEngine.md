@@ -15,15 +15,15 @@ Following are the topics discussed in this section.
 
 To track information used during calculations, CalcEngine manages several hash tables. Here is a table of the public hash tables in CalcEngine and a description of their keys and values:
 
-_Table_ _12__: Hash Table_
+_Table_ _12_: _Hash Table_
 
 <table>
 <tr>
-<td>
-Hash Table</td><td>
-Key</td><td>
-Value</td><td>
-Description</td></tr>
+<th>
+Hash Table</th><th>
+Key</th><th>
+Value</th><th>
+Description</th></tr>
 <tr>
 <td>
 FormulaInfoTable</td><td>
@@ -79,10 +79,7 @@ CalcEngine.Calculate is the method that actually performs calculations. It does 
 
 * It accepts a parsed formula 
 * Uses a stack oriented calculation technique to convert the parsed formula into the value that it represents. 
-> 
-{{ '![](Inside-CalcEngine_images/Inside-CalcEngine_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: The value returned is a string holding the computed quantity._
+> Note: The value returned is a string holding the computed quantity.
 
 ## How Things Work
 
@@ -92,13 +89,13 @@ _Note: The value returned is a string holding the computed quantity._
 4. The string is tested to see whether it begins with an equal sign. If not, CalcSheet stores the entered string in its internal memory so that it will be available if needed. A check is made to see if this cell is a key in the DependentCells collection. If it is, then all cells depending upon this cell are recomputed. This recomputing is a recursive process as changing a cell, that depends upon the changed cell which triggers the recomputing needs of the newly changed cell and so on.
 5. If the entered string does begin with an equal sign, the CalcEngine sees this as an entered formula. At this point, the CalcEngine checks to see if the cell is a key in the FormulaInfoTable. 
 6. If the cell is a key in the FormulaInfoTable, the corresponding FormulaInfo object is retrieved and updated. This amounts to the following: 
-* Parsing the string.
-* Computing the string.
-* Saving the original formula, the parsed formula and the computed value in the FormulaInfo object.
+   * Parsing the string.
+   * Computing the string.
+   * Saving the original formula, the parsed formula and the computed value in the FormulaInfo object.
 7. If the cell is not a key in the FormulaInfoTable, a new FormulaInfo object is created. This new FormulaInfo object is populated from the entered string. This amounts to the following: 
-* Parsing the string.
-* Computing the string.
-* Saving the original formula, the parsed formula and the computed value in the FormulaInfo object.
+   * Parsing the string.
+   * Computing the string.
+   * Saving the original formula, the parsed formula and the computed value in the FormulaInfo object.
 
 There are several other scenarios that must be handled in the CalcEngine. They include things like the newly entered string changes from an existing formula cell to a non-formula cell. In this situation, the CalcEngine uses the DependFormulaCells collection to remove dependencies that are no longer needed.
 
@@ -108,11 +105,7 @@ All this dependent tracking is done conditionally depending upon CalcEngine.UseD
 
 The error messages that are displayed by Essential Calculate can be found in this string array in the CalcEngine. After a CalcEngine object has been created, you can change the text of these messages by changing the array values.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 public string[] FormulaErrorStrings = new string[]
 
@@ -178,22 +171,24 @@ public string[] FormulaErrorStrings = new string[]
 
 };
 
+{% endhighlight %}
+
 ## Properties
 
-UseDatesInCalculations
+### UseDatesInCalculations
 
 Essential Calculate provides support to compute the date values similar to Excel. Using UseDatesInCalculations property in Calculate control, you can compute DateTime related calculations in your application.
 
 You can compute and get the correct values of DateTime in arithmetic signs and formulas using this property.
 
-_Table_ _13__:_ Property Table
+_Table_ _13_: _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 UseDatesInCalculations</td><td>
@@ -204,11 +199,7 @@ Boolean</td></tr>
 
 The following code examples illustrate UseDatesInCalculations property.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 //Create a CalcEngine object, tie it to the gridDataBoundGrid that implements ICalcData:
 
@@ -220,35 +211,24 @@ The following code examples illustrate UseDatesInCalculations property.
 
             engine.UseDatesInCalculations = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Create a CalcEngine object, tie it to the gridDataBoundGrid that implements ICalcData:
 
 Dim engine As New Syncfusion.Calculate.CalcEngine(Me.gridDataBoundGrid1)
 
-
-
 ' for DateTime value computation.
 
 engine.UseDatesInCalculations = True
 
-
-
-
+{% endhighlight %}
 
 The following screenshot displays the calculation when UseDatesInCalculations propertyis set to “False”.
 
-{{ '![C:/Users/labuser/Desktop/b.png](Inside-CalcEngine_images/Inside-CalcEngine_img2.png)' | markdownify }}
-{:.image }
-
+![C:/Users/labuser/Desktop/b.png](Inside-CalcEngine_images/Inside-CalcEngine_img2.png)
 
 The following screenshot shows a Grid when UseDatesInCalculations propertyis set to “True”.
 
-{{ '![C:/Users/labuser/Desktop/c.png](Inside-CalcEngine_images/Inside-CalcEngine_img3.png)' | markdownify }}
-{:.image }
-
-
+![C:/Users/labuser/Desktop/c.png](Inside-CalcEngine_images/Inside-CalcEngine_img3.png)

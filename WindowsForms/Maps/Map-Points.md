@@ -13,11 +13,11 @@ Points are one of the record types in the Shape File layer. Points are used to s
 
 
 
-Code sample
+### Code sample
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -47,9 +47,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -106,38 +106,10 @@ public partial class Form1 : Form
      }       
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% endhighlight %}
 
 Screenshot:
 
-{{ '![](Map-Points_images/Map-Points_img1.png)' | markdownify }}
-{:.image }
- _Figure 19: Map points_
+![](Map-Points_images/Map-Points_img1.png)
 
+ _Figure 19: Map points_

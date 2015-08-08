@@ -19,7 +19,7 @@ There are three options to export PivotGrid:
 
 
 
-Export to Excel:
+### Export to Excel:
 
 Exporting data to an Excel spreadsheet is one of the most commonly preferred features in the .NET world. Essential Grid control has an in-built support to export an Excel spreadsheet. The class ExcelExport provides support for exporting data from the PivotGrid control to an Excel spreadsheet for verification and/or computation. 
 
@@ -27,16 +27,15 @@ This class automatically copies a grid's styles and formats to an Excel spreadsh
 
 The following code illustrates exporting PivotGrid to an Excel:
 
+{% highlight c# %}
+
 ExcelExport excelExport = new ExcelExport(pivotGridControl1, Syncfusion.XlsIO.ExcelVersion.Excel2010);
-
-
 
 excelExport.ExportMode = (ExportAsPivotTable) ? ExportModes.PivotTable : ExportModes.Cell;
 
-
-
 excelExport.Export(FileName);
 
+{% endhighlight %}
 
 
 Export to Excel provides two options:
@@ -46,7 +45,7 @@ Export to Excel provides two options:
 
 
 
-Cell-by-Cell Export:
+### Cell-by-Cell Export:
 
 In the cell-by-cell export, the contents are exported cell by cell with the formats applied on it. The cell-by-cell formatting will have all the styles applied on it.
 
@@ -54,15 +53,9 @@ The following image shows the cell-by-cell export:
 
 
 
-{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img1.png)' | markdownify }}
-{:.image }
+![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img1.png)
 
-
-
-
-
-
-Pivot Table Export:
+### Pivot Table Export:
 
 In this type of export, the user can export the entire PivotGrid with its functionalities such as sorting and filtering. PivotGrid pivots the data via drag-and-drop to organize the data in a cross-tabulated form. The major advantage of PivotGrid is that you can extract any desired information within a limited span of time. 
 
@@ -72,19 +65,19 @@ The following image depicts the exported PivotTable:
 
 
 
-{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img2.png)' | markdownify }}
-{:.image }
+![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img2.png)
 
 
 
 
-Export to Word:
+
+### Export to Word:
 
 Essential Grid has an in-built support to export Word. The user can download the data from the PivotGrid control into a Word document for offline verification and/or computation. This can be achieved by making use of the PivotWordExport class. 
 
 The below code snippets contains codes that exports PivotGrid to Word:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -94,19 +87,15 @@ PivotWordExport wordExport = new PivotWordExport();
 
 wordExport.pivotGridToWord(savedialog.FileName, pivotGridControl1);
 
-[VB]
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 Dim wordExport As New PivotWordExport()
 
-
-
 wordExport.pivotGridToWord(savedialog.FileName, pivotGridControl1)
 
-
-
-
+{% endhighlight %}
 
 Merging is applied to all the cells and the exported file is as same as that of the original PivotGrid.
 
@@ -114,13 +103,9 @@ The formatting is applied based on the visual styles of the grid.
 
 The below image depicts the conversion of PivotGrid content to a Word file:
 
+![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img3.png)
 
-
-{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img3.png)' | markdownify }}
-{:.image }
-
-
-Exporting to PDF:
+### Exporting to PDF:
 
 Essential Grid control supports conversion of PivotGrid content to a PDF file. Data in the PivotGrid control can be converted to a PDF document for offline verification and/or computation. This can be achieved by making use of the PivotPdfExport class. The PDF libraries are used to support the conversion of PivotGrid content to a PDF page.
 
@@ -128,35 +113,34 @@ While exporting to PDF, PivotGrid is read row by row and exported into the PDF d
 
 The Export method is used to export PivotGrid content to a PDF file. The following sample code illustrates how to convert the PivotGrid content to PDF.
 
-[C#]
+{% highlight c# %}
 
 PivotPdfExport pdfExport = new PivotPdfExport(pivotGridControl1);
 
 pdfExport.Export(savedialog.FileName);
 
-[VB]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 Dim pdfExport As New PivotPdfExport(pivotGridControl1)
 
 pdfExport.Export(savedialog.FileName)
 
-
+{% endhighlight %}
 
 The below image depicts the conversion of PivotGrid content to a PDF file:
 
 
 
-{{ '![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img4.png)' | markdownify }}
-{:.image }
+![](Exporting-Pivot-Grid-to-Excel-Word-and-PDF_images/Exporting-Pivot-Grid-to-Excel-Word-and-PDF_img4.png)
 
 
 
 
-Sample Location
+
+### Sample Location
 
 A sample is placed in the following location:
 
-<InstalledLocation>\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Exporting\Export Demo
-
-
-
+&lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\[VersionNumber]\Windows\ PivotGrid.Windows\Samples\2.0\Exporting\Export Demo

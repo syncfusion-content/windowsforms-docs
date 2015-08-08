@@ -21,51 +21,52 @@ Essential ProjIO is used by Managers and Project Leads in companies to manage th
 
 This section covers the requirements that are mandatory for using Essential ProjIO. It also lists operating systems and browsers compatible with the product. 
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are tabulated as follows:
 
-_Table_ _1_: Prerequisites_
+_Table_ _1_: _Prerequisites_
 
 <table>
 <tr>
-<td>
-Development Environments</td><td>
-* Visual Studio 2010 (Ultimate, Premium, Professional and Express)* Visual Studio 2008 (Team System, Professional, Standard & Express)* Visual Studio 2005 (Professional, Standard & Express)</td></tr>
+<th>
+Development Environments</th><th>
+* Visual Studio 2010 (Ultimate, Premium, Professional and Express)* Visual Studio 2008 (Team System, Professional, Standard & Express)* Visual Studio 2005 (Professional, Standard & Express)</th></tr>
 <tr>
 <td>
 <br>.Net Framework Versions</td><td>
 * .NET 4.0* .NET 3.5 SP1* .NET 2.0</td></tr>
 </table>
 
-Compatibility
+### Compatibility
 
 The compatibility details are tabulated as follows
 
-_Table_ _2_: Compatibility_
+_Table_ _2_: _Compatibility_
 
 <table>
 <tr>
-<td>
-Operating Systems</td><td>
-* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<th>
+Operating Systems</th><th>
+* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</th></tr>
 <tr>
 <td>
 <br>MS Project Compatibility Support</td><td>
 * MS Project 2007* MS Project 2010</td></tr>
 </table>
+
 ## Documentation
 
 
 Syncfusion provides the following documentation segments to provide all the necessary information pertaining to Essential ProjIO.
 
-_Table_ _3_: Documentation_
+_Table_ _3_: _Documentation_
 
 <table>
 <tr>
-<td>
-Type of Documentation</td><td>
-Location</td></tr>
+<th>
+Type of Documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -78,12 +79,10 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the ProjIO User Guide.)![](Overview_images/Overview_img1.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }}cr (Navigate to the desired platform and Select {{ '_ProjIO_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
-
-

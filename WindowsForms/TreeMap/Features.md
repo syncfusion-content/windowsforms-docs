@@ -7,45 +7,35 @@ control: TreeMap
 documentation: ug
 ---
 
-## Features
+# Features
 
-### WeightValuePath
+## WeightValuePath
 
 The WeightValuePath ofTreeMap is a path to a field on the source object, which serves as the "weight" of the object. 
 
-
-
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img1.png)' | markdownify }}
-{:.image }
-_Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection._
+> Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
 
 
-### ColorValuePath
+## ColorValuePath
 
 The ColorValuePath ofTreeMap is a path to a field on the source object, which serves as the "color" of the object. 
 
-### DataBinding
+## DataBinding
 
 TreeMap control supports Data Binding and it can be achieved using ItemsSource property.
 
 The ItemsSource property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as itemssource for TreeMap.
 
-
-
-
-
-[FORM1.CS]
-
-
+{% highlight c# %}
 
 public partial class Form1 : Form
 
     {
 
- TreeMap TreeMap1 = new TreeMap();
+	TreeMap TreeMap1 = new TreeMap();
 
-public Form1()
+	public Form1()
 
         {
 
@@ -65,44 +55,37 @@ public Form1()
 
    }
 
+{% endhighlight %}
+
+> Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
 
 
 
 
-
-
-
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img2.png)' | markdownify }}
-{:.image }
-_Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection._
-
-
-
-
-
-### TreeMap Levels
+## TreeMap Levels
 
 The levels of TreeMap can be categorized into two types such as,
 
 * TreeMapFlatLevel
 * TreeMapHierarchicalLevel
-#### TreeMapFlatLevel
+
+### TreeMapFlatLevel
 
 
 The TreeMapFlatLevel is used to define levels for flat data collection. 
 
-ItemsSource:
+#### ItemsSource:
 
 The ItemsSource set for TreeMap must be a flat collection of data. The following code shows how to bind a flat collection as ItemsSource to a TreeMap.
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -200,25 +183,21 @@ PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Coun
 
 
 
+{% endhighlight %}
 
 
 
-
-
-
-
-
-GroupPath:
+### GroupPath:
 
 You must specify the GroupPath for each and every flat level of TreeMap. It is a path to a field on the source object, which serves as the “Group” for the levels specified. Based upon the GroupPath, the data is grouped in the TreeMap. If GroupPath is not specified, then the items are not grouped, and it is shown in the order, in which they are specified in the ItemsSource.
 
-Code Sample:
+### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -262,23 +241,23 @@ public partial class Form1 : Form
 
     }      
 
+{% endhighlight %}
 
 
 
 
 
-
-GroupGap:
+### GroupGap:
 
 You can specify GroupGap for separating the items of every flat level and it is used to differentiate the levels mentioned for TreeMap.
 
-Code Sample:
+### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -321,26 +300,28 @@ public partial class Form1 : Form
         }
 
     }   
+	
+{% endhighlight %}
 
-#### TreeMapHierarchicalLevel:
+### TreeMapHierarchicalLevel:
 
 TreeMapHierarchicalLevel is used to define levels for hierarchical data collection which contains tree-structured data. 
 
-ChildPath:
+#### ChildPath:
 
 You must specify ChildPath for each and every hierarchical level of TreeMap. It is a path to a field on the source object, which serves as the “Child” for the level specified. Based upon the ChildPath, the treemap contains child items.
 
-ChildGap:
+#### ChildGap:
 
 You can specify ChildGap for separating the child items of every level and it is used to differentiate the levels mentioned for TreeMap.
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -392,11 +373,11 @@ public partial class Form1 : Form
 
     }   
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -622,33 +603,29 @@ public partial class Form1 : Form
 
     }
 
+{% endhighlight %}
+
+> Note: The specified field must be a collection of sub class (object) specified in the nested data collection.
 
 
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Features_images/Features_img3.png)' | markdownify }}
-{:.image }
-_Note: The specified field must be a collection of sub class (object) specified in the nested data collection._
-
-
-
-### TreeMap Layout
+## TreeMap Layout
 
 The ItemsLayoutMode for TreeMap specifies the layout mode of the tree map items. This layout is applied for all the tree map levels. There are four different TreeMap layouts such as,
 
-#### Squarified Layout
+### Squarified Layout
 
 In this layout the data is visualized in the form of square-like rectangles with best aspect ratio.
 
 The following code illustrates how to set a squarified layout in Treemap.
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -696,35 +673,35 @@ public partial class Form1 : Form
 
      }   
 
-
+{% endhighlight %}
 
 The following screen shot illustrates a squarified layout.
 
 
 
-{{ '![](Features_images/Features_img4.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img4.png)
 
 
 
 
-_Figure_ _1_: Squarified layout_
+
+_Figure_ _1_: _Squarified layout_
 
 
 
-#### SliceAndDiceAuto Layout:
+### SliceAndDiceAuto Layout:
 
 In this layout the data is visualized in the form of long-thin rectangles with high aspect ratio, which can be displayed either vertically or horizontally.
 
 The following code illustrates how to set a slice and dice layout in Treemap.
 
-Code Sample:
+### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -754,7 +731,7 @@ public partial class Form1 : Form
 
     }      
 
-
+{% endhighlight %}
 
 The following screen shot illustrates a slice-and-dice layout.
 
@@ -764,23 +741,23 @@ The following screen shot illustrates a slice-and-dice layout.
 
 
 
-{{ '![](Features_images/Features_img5.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _2_: Slice-and-dice layout_
+![](Features_images/Features_img5.png)
 
 
 
-#### SliceAndDiceHorizontal Layout:
+_Figure_ _2_: _Slice-and-dice layout_
+
+
+
+### SliceAndDiceHorizontal Layout:
 
 The following code illustrates how to set a slice and dice layout horizontally in Treemap.
 
-Code Sample:
+#### Code Sample:
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -814,7 +791,7 @@ public partial class Form1 : Form
 
     }
 
-
+{% endhighlight %}
 
 The following screen shot shows a Slice-and-dice treemap in horizontal layout.
 
@@ -823,24 +800,25 @@ The following screen shot shows a Slice-and-dice treemap in horizontal layout.
 <table>
 <tr>
 <td>
-![](Features_images/Features_img6.png)
-{:.image }
+{{ ' ![](Features_images/Features_img6.png)' | markdownify }}
+
 {{ '_Figure_' | markdownify }}{{ '_3_' | markdownify }}{{ '_: Slice-and-dice treemap in horizontal layout_' | markdownify }}</td></tr>
 <tr>
 <td>
 </td></tr>
 </table>
-#### SliceAndDiceVertical Layout:
+
+### SliceAndDiceVertical Layout:
 
 The following code illustrates how to set a slice and dice layout vertically in Treemap.
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -878,25 +856,25 @@ public partial class Form1 : Form
 
      }  
 
-
+{% endhighlight %}
 
 The following screen shot shows a Slice-and-dice treemap in vertical layout.
 
 
 
-{{ '![](Features_images/Features_img7.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img7.png)
 
 
 
 
 
 
-_Figure_ _4_: Slice-and-dice treemap in vertical layout_
+
+_Figure_ _4_: _Slice-and-dice treemap in vertical layout_
 
 
 
-### ColorMapping
+## ColorMapping
 
 The ColorMapping is categorized into four different types such as,
 
@@ -911,11 +889,11 @@ The various colorMappings can be set in LeafColorMapping property of TreeMap.
 
 TreeMap leaf nodes can be provided with unique colors with the help of the Color property specified using UniColorMapping.
 
-Code Sample:
+#### Code Sample:
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -975,17 +953,17 @@ uniColorMapping.Color = Color.MediumSlateBlue;
 
 
 
+{% endhighlight %}
 
 
 
 
 
-
-{{ '![](Features_images/Features_img8.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img8.png)
 
 
-_Figure_ _5_: Leaf Nodes colored by using UniColorMapping_
+
+_Figure_ _5_: _Leaf Nodes colored by using UniColorMapping_
 
 
 
@@ -995,13 +973,13 @@ _Figure_ _5_: Leaf Nodes colored by using UniColorMapping_
 
 The leaf nodes of TreeMap can be colored based upon the range (i.e., From and To) and Brush specified using RangeBrush collection of RangeBrushColorMapping.
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -1070,30 +1048,30 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
      } 
 
 
+{% endhighlight %}
 
 
 
 
-
-{{ '![](Features_images/Features_img9.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _6_: Leaf nodes colored by using RangeBrushColorMapping_
+![](Features_images/Features_img9.png)
 
 
 
-#### DesaturationColorMapping
+_Figure_ _6_: _Leaf nodes colored by using RangeBrushColorMapping_
+
+
+
+### DesaturationColorMapping
 
 The leaf nodes of TreeMap can be colored based upon the Color specified using DesaturationColorMapping. The RangeMinimum and RangeMaximum must be specified to determine the opacity for each leaf node. The opacity of leaf nodes are in the range of From and To mentioned in DesaturationColorMapping.
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -1162,30 +1140,30 @@ public partial class Form1 : Form
      }
 
 
+{% endhighlight %}
 
 
 
 
-
-{{ '![](Features_images/Features_img10.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _7_:  Leaf nodes colored by using DesaturationColorMapping_
+![](Features_images/Features_img10.png)
 
 
 
-#### PaletteColorMapping
+_Figure_ _7_:  _Leaf nodes colored by using DesaturationColorMapping_
+
+
+
+### PaletteColorMapping
 
 The leaf nodes are colored by using the brushes mentioned in Colors collection of PaletteColorMapping.
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -1251,19 +1229,19 @@ public partial class Form1 : Form
 
 
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Features_images/Features_img11.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _8_:  Leaf nodes colored by using PaletteColorMapping_
+![](Features_images/Features_img11.png)
 
 
 
-### TreeMap Legend
+_Figure_ _8_:  _Leaf nodes colored by using PaletteColorMapping_
+
+
+
+## TreeMap Legend
 
 TreeMap legend is used to easily demonstrate about the color value of leaf nodes. But this legend could be appropriate only for the treemap having leaf nodes colored by using RangeBrushColorMapping. The labels of the legend item can be customized by specifying LegendLabel of RangeBrush mentioned in the Brushes of RangeBrushColorMapping.
 
@@ -1275,13 +1253,13 @@ The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the h
 
 
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -1347,29 +1325,29 @@ RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();
 
 }
 
+{% endhighlight %}
 
-
-{{ '![](Features_images/Features_img12.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _9_: TreeMap with Legend_
+![](Features_images/Features_img12.png)
 
 
 
-### Headers and Labels
+_Figure_ _9_: _TreeMap with Legend_
 
-#### Headers
+
+
+## Headers and Labels
+
+### Headers
 
 To show headers in TreeMap, you can set the HeaderHeight property of TreeMapLevel. 
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -1417,27 +1395,27 @@ public partial class Form1 : Form
 
 }
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Features_images/Features_img13.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _10_: TreeMap with Headers_
+![](Features_images/Features_img13.png)
 
 
 
-#### Labels
+_Figure_ _10_: _TreeMap with Headers_
+
+
+
+### Labels
 
 To show labels in TreeMap, ShowLabels of TreeMapLevel should be enabled to True. 
 
-Code Sample:
+#### Code Sample:
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -1488,34 +1466,34 @@ public partial class Form1 : Form
 }
 
 
+{% endhighlight %}
+
+
+![](Features_images/Features_img14.png)
 
 
 
-{{ '![](Features_images/Features_img14.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _11_: TreeMap with Labels_
+_Figure_ _11_: _TreeMap with Labels_
 
 
 
-### Leaf Item Setting 
+## Leaf Item Setting 
 
 You can customize the Leaf level TreeMapitems using LeafItemSettings. Label values take the property of bound object that is referred in the labelPath when defined.
 
 
 
-### ToolTip Support
+## ToolTip Support
 
 You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. 
 
-Code Sample:
+#### Code Sample:
 
 
 
 
 
-[FORM1.CS]
+{% highlight c# %}
 
 
 
@@ -1591,21 +1569,14 @@ public partial class Form1 : Form
 
   }
 
-
+{% endhighlight %}
 
 The following screen shot shows a tree map with a tool tip.
 
 
 
-{{ '![](Features_images/Features_img15.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _12_: ToolTip on TreeMap_
-
-_
+![](Features_images/Features_img15.png)
 
 
 
-
-
+_Figure_ _12_: _ToolTip on TreeMap_

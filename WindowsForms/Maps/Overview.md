@@ -15,7 +15,7 @@ Essential Maps controls are useful for those users who want to build a Windows 
 
 
 
-User Guide Structure
+### User Guide Structure
 
 
 
@@ -31,7 +31,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-Document Conventions
+### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
@@ -39,15 +39,15 @@ The conventions listed below will help you to quickly identify the important sec
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-ICON</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+ICON</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-> ![](Overview_images/Overview_img1.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
+
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
@@ -58,15 +58,15 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img2.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Important Note</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{ ' ![](Overview_images/Overview_img3.jpeg)' | markdownify }}
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
@@ -84,31 +84,53 @@ This section covers the requirements mandatory for using Maps control. It also l
 
 
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed in the following table.
 
 <table>
+<ul>
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 (Ultimate and Express)* Visual Studio 2008 (Team, Professional, Standard, and Express)* Borland Delphi for .NET* SharpCode</td></tr>
+<li>Visual Studio 2013</li>
+<li>Visual Studio 2012</li>
+<li>Visual Studio 2010 (Ultimate and Express)</li>
+<li>Visual Studio 2008 (Team, Professional, Standard, and Express)</li>
+<li>Borland Delphi for .NET</li>
+<li>SharpCode</li>
+</td>
+</tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5 * .NET 4.0* .NET 3.5<br></td></tr>
+<li>.NET 4.5.1</li>
+<li>.NET 4.5</li>
+<li>.NET 4.0</li>
+<li>.NET 3.5</li>
+<br>
+</td></tr>
+</ul>
 </table>
 
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed in the following table.
 
 <table>
+<ul>
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<li>Windows 8.1 (32 bit and 64 bit)</li>
+<li>Windows Server 2008 (32 bit and 64 bit)</li>
+<li>Windows 7 (32 bit and 64 bit)</li>
+<li>Windows Vista (32 bit and 64 bit)</li>
+<li>Windows XP</li>
+<li>Windows 2003</li>
+</td></tr>
+</ul>
 </table>
 
 
@@ -123,9 +145,9 @@ Syncfusion provides the following documentation segments to provide all necessar
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -138,16 +160,10 @@ Release Notes</td><td>
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the Maps for Windows Forms User Guide.)> ![](Overview_images/Overview_img4.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
 Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Maps_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
-
-
-
-
-
-

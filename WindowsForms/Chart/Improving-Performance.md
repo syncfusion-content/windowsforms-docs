@@ -9,13 +9,13 @@ documentation: ug
 
 # Improving Performance
 
-_Table_ _4__: Properties and Methods_
+_Table_ _4_: _Properties and Methods_
 
 <table>
 <tr>
-<td>
-Chart control Property</td><td>
-Description</td></tr>
+<th>
+Chart control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ChartControl.ImprovePerformance</td><td>
@@ -58,9 +58,8 @@ Encapsulate your "data points adding code" within BeginUpdate and EndUpdate to i
 </table>
 
 
-[C#]
 
-
+{% highlight c# %}
 
 // Improves the performance of the chart when a large number of series are used.
 
@@ -102,11 +101,9 @@ this.chartControl1.BeginUpdate();
 
 this.chartControl1.EndUpdate();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Improves the performance of the chart when a large number of series are used.
 
@@ -148,5 +145,4 @@ Me.chartControl1.BeginUpdate()
 
 Me.chartControl1.EndUpdate()
 
-
-
+{% endhighlight %}

@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Chart provides a series model implementation that works directly on top of grouped data. Filters, summaries and computed expressions are all supported in EssentialChart and users can easily add custom summaries and filters and have such data displayed in the chart.
 
-Grouping Support
+## Grouping Support
 
 The enterprise version of Essential Chart includes Essential Grouping that allows EssentialChart to implement a series model that works directly on top of grouped data. All the key advantages of Essential Grouping carry over into thegrouping support in Essential Chart. Filters, summaries and computed expressions are all supported in EssentialChart. With EssentialChart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
 
@@ -23,17 +23,17 @@ The following image displays the same data with data from transactions that occu
 
 
 
-{{ '![](Data-Manipulation_images/Data-Manipulation_img1.png)' | markdownify }}
-{:.image }
+![](Data-Manipulation_images/Data-Manipulation_img1.png)
 
 
 
 
-_Figure_ _364__: Grouped Data with Filtering_
+
+_Figure_ _364_: _Grouped Data with Filtering_
 
 
 
-Essential Grid Interaction
+## Essential Grid Interaction
 
 Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes, is a few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
 
@@ -41,11 +41,11 @@ Essential Chart offers great interaction capabilities with Essential Grid. You c
 
 
 
-{{ '![](Data-Manipulation_images/Data-Manipulation_img2.png)' | markdownify }}
-{:.image }
+![](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 
 
 
-_Figure_ _365__: Essential Chart with Essential Grid_
+
+_Figure_ _365_: _Essential Chart with Essential Grid_
 

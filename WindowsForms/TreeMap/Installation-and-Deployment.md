@@ -7,13 +7,13 @@ control: TreeMap
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
 
 
 
-### Installation
+## Installation
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
@@ -31,93 +31,66 @@ For licensing, patches and information on adding or removing selective component
 
 
 
-### Sample and Location
+## Sample and Location
 
 Use the following steps to view the samples:
 
 
 
-1.   Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard
+1. Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard
+
+   The Essential Studio Enterprise Edition window will be displayed.
+
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+
+   _Figure 1: Syncfusion Essential Studio Dashboard_
+
+2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
+
+
+   > Note: You can view the samples in any of the following three ways:
+   > * Run Samples - Click to view the locally installed samples.
+   > * Online Samples - Click to view online samples.
+   > * Explore Samples - Explore the UI for Windows Forms on disk._
+
+   The User Interface Edition panel is displayed by default.
 
 
 
-The Essential Studio Enterprise Edition window will be displayed.
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
-{:.image }
+   _Figure 2: UI Windows Forms Sample Browser_
 
 
-__
+3. Click the TreeMap under Data Visualization. The TreeMap samples will be displayed.
 
-_Figure 1: Syncfusion Essential Studio Dashboard_
-
-__
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
 
-2.   In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
-
-__
-
-_Note: You can view the samples in any of the following three ways:_
-
-_•Run Samples - Click to view the locally installed samples._
-
-_•Online Samples - Click to view online samples._
-
-_•Explore Samples - Explore the UI for Windows Forms on disk._
-
-_The User Interface Edition panel is displayed by default._
+   _Figure 3: Essential TreeMap WF Samples_
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
-{:.image }
-
-
-__
-
-_Figure 2: UI Windows Forms Sample Browser_
-
-__
-
-3.   Click the TreeMap under Data Visualization. The TreeMap samples will be displayed.
+4. Select any sample and browse through the features. 
 
 
 
 
 
-__{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
-{:.image }
-
-
-_Figure 3: Essential TreeMap WF Samples_
+## Deployment Requirements
 
 
 
-4.   Select any sample and browse through the features. 
-
-
-
-
-
-### Deployment Requirements
-
-
-
-Toolbox Entries
+### Toolbox Entries
 
 
 
 * TreeMap
 
-
-
-Dll List
+#### Dll List
 
 While deploying an application that references SyncfusionEssentialTreeMap assembly, the following dependencies must be included in the distribution.
-
-
 
 * Syncfusion.TreeMap.Windows
 * Syncfusion.Shared.Base

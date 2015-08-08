@@ -19,13 +19,13 @@ The following is a list of the operators which are supported by Essential Calcul
 
 
 
-Unary Arithmetic Operator
+### Unary Arithmetic Operator
 
 -         Unary Minus Sign
 
 
 
-Binary Arithmetic Operators
+### Binary Arithmetic Operators
 
 +        Addition
 
@@ -39,13 +39,13 @@ Binary Arithmetic Operators
 
 
 
-Binary Literal Operator
+### Binary Literal Operator
 
 &        Concatenation
 
 
 
-Binary Logical Operators
+### Binary Logical Operators
 
 <        Less Than 
 
@@ -77,7 +77,7 @@ If you want to change the default operators precedence, then use parentheses to 
 
 
 
-Examples
+#### Examples
 
 
 
@@ -97,9 +97,8 @@ If you are using a CalcQuickBase object to add calculation support to your busin
 
 
 
-[C#]
 
-
+{% highlight c# %}
 
 // 1) Instantiates a CalcQuickBase object.
 
@@ -129,11 +128,9 @@ calculator("C") = this.textBoxC.Text;
 
 calculator("D") = this.textBoxD.Text;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 ' 1) Instantiates a CalcQuickBase object.
 
@@ -163,6 +160,9 @@ calculator("C") = Me.textBoxC.Text
 
 calculator("D") = Me.textBoxD.Text
 
+{% endhighlight %}
+
+
 ## Equal Sign, the Formula Character
 
 To indicate that a particular string should be treated as a formula, you must start the string with a special character, CalcEngine.FormulaCharacter. This property is static (Shared in VB), so you can change the formula character within your code. It's default value is the equal sign, (=).
@@ -177,9 +177,9 @@ Function Library formulas may be used as a stand alone formula, and they can be 
 
 <table>
 <tr>
-<td>
-Formula</td><td>
-Comment</td></tr>
+<th>
+Formula</th><th>
+Comment</th></tr>
 <tr>
 <td>
 = Sin(3.14159)</td><td>
@@ -196,4 +196,3 @@ Returns 2 * sine of 3.14159 radians plus the square root of 2.</td></tr>
 
 
 Some library functions may not have arguments but, you must still include the parentheses to indicate that you are using a library function. For example, = 2 * Pi(), shows the proper use of the library function Pi.
-

@@ -12,20 +12,18 @@ documentation: ug
 The PivotGrid for Windows Forms provides built-in support for freezing column and row headers. This is achieved by setting FreezeHeaders property of PivotGrid to True. This feature also enables scrolling through the value cells.
 
 
+{% highlight c# %}
 
-<table>
-<tr>
-<td>
-[C#]// To Freeze Grid Headersthis.PivotGridControl1.FreezeHeaders = true;</td></tr>
-<tr>
-<td>
- [VB]' To Freeze Grid HeadersMe.PivotGridControl1.FreezeHeaders = True</td></tr>
-</table>
+// To Freeze Grid Headersthis.
+PivotGridControl1.FreezeHeaders = true;
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
+' To Freeze Grid HeadersMe.
+PivotGridControl1.FreezeHeaders = True
 
-{{ '![](Freezing-Headers_images/Freezing-Headers_img1.png)' | markdownify }}
-{:.image }
+{% endhighlight %}
 
-
+![](Freezing-Headers_images/Freezing-Headers_img1.png)

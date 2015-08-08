@@ -13,13 +13,13 @@ SummaryType determines the type of field summary such as count, sum, average, et
 
 
 
-_Table_ _9__: Summary Type Table_
+_Table_ _9_: _Summary Type Table_
 
 <table>
 <tr>
-<td>
-Summary Type</td><td>
-Description</td></tr>
+<th>
+Summary Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 DoubleTotalSum</td><td>
@@ -61,5 +61,3 @@ Computes the sum of integer values.</td></tr>
 Custom</td><td>
 Specifies that you are using a custom SummaryBase object to define the calculation.</td></tr>
 </table>
-
-

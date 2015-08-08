@@ -23,19 +23,19 @@ The headers of all visible fields are contained within header areas. The headers
 
 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 At times, you may expect the Grid to perform sorting and filtering at run-time.
 
 
 
-Adding Grouping Bar 
+### Adding Grouping Bar 
 
 By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupBar property of PivotGrid to False.
 
 
 
-[C#]
+{% highlight c# %}
 
 // Instantiating PivotGridControl
 
@@ -59,11 +59,9 @@ pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName="Am
 
 pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
 
+{% endhighlight %}
 
-
-
-
-[VB]
+{% highlight vbnet %}
 
 ' Instantiating PivotGridControl
 
@@ -88,11 +86,11 @@ pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldNam
 pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##0"})
 
 
+{% endhighlight %}
 
 
+![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Grouping-Bar_images/Grouping-Bar_img1.png)
 
-{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Grouping-Bar_images/Grouping-Bar_img1.png)' | markdownify }}
-{:.image }
 
 
 ## Filtering in Grouping Bar
@@ -101,8 +99,8 @@ Data filtering displays only a subset of data that meets criteria specified by y
 
 
 
-{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Grouping-Bar_images/Grouping-Bar_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Grouping-Bar_images/Grouping-Bar_img2.png)
+
 
 
 
@@ -110,36 +108,43 @@ Data filtering displays only a subset of data that meets criteria specified by y
 The following code example illustrates how to disable the filtering in the Grouping Bar.
 
 
+{% highlight c# %}
 
-<table>
-<tr>
-<td>
-[C#]// Disabling FilteringpivotGridControl1.AllowFiltering = false;</td></tr>
-<tr>
-<td>
- [VB]// Disabling FilteringpivotGridControl1.AllowFiltering = False </td></tr>
-</table>
+// Disabling FilteringpivotGridControl1.AllowFiltering = false;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+// Disabling FilteringpivotGridControl1.AllowFiltering = False
+
+{% endhighlight %} 
+
 ## Sorting Indicator
 
 The sort indicator in the item represents the sort type such as ascending order or descending order. By default, the PivotGrid will populate the data in ascending order. The sorting order can be changed by clicking on the item present in the row header area and column header area.
 
 The following image illustrates the sort indicator with sort types.
 
-{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Sort.png](Grouping-Bar_images/Grouping-Bar_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Sort.png](Grouping-Bar_images/Grouping-Bar_img3.png)
+
 
 
 
 
 The following code example illustrates how to disable sorting in the Grouping Bar.
 
-<table>
-<tr>
-<td>
-[C#]// Disabling SortingpivotGridControl1.AllowSorting = false;</td></tr>
-<tr>
-<td>
- [VB]// Disabling SortingpivotGridControl1.AllowSorting = False </td></tr>
-</table>
 
+{% highlight c# %}
 
+// Disabling Sorting
+pivotGridControl1.AllowSorting = false;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+' Disabling Sorting
+pivotGridControl1.AllowSorting = False 
+
+{% endhighlight %}

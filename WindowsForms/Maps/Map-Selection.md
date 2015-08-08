@@ -13,7 +13,7 @@ Each shape in the map can be selected and unselected when interacted with shapes
 
 1.  SingleSelection
 
-2.   MultiSelection
+2.  MultiSelection
 
 
 
@@ -31,7 +31,7 @@ Multiple shapes in the map can be selected when “SelectionMode” of ShapeFile
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -61,9 +61,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -111,53 +111,16 @@ public partial class Form1 : Form
 
   }       
 
-
+{% endhighlight %}
 
 Screenshot:
 
 
 
-{{ '![](Map-Selection_images/Map-Selection_img1.png)' | markdownify }}
-{:.image }
-
-
-
+![](Map-Selection_images/Map-Selection_img1.png)
 
 MultiSelection can be performed by selecting the map shape and holding the ctrl key over the map.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Screenshot:
 
-{{ '![](Map-Selection_images/Map-Selection_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
+![](Map-Selection_images/Map-Selection_img2.png)

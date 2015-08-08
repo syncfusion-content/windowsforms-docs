@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Data
 
-Built-in Support for data-binding
+### Built-in Support for data-binding
 
 EssentialChart has built-in support for binding to DataTables, DataSets, DataViews or any implementation of IListSource, IBindingList or ITypedList.
 
@@ -17,21 +17,15 @@ The ChartSeries data points and the axis labels are the ones that can be databou
 
 There is however no DESIGN-TIME support for data binding. This has to be setup in code.
 
-Binding a DataSet to the Chart
+ Binding a DataSet to the Chart
 
-Data binding via custom interfaces
+### Data binding via custom interfaces
 
 There is also a more flexible support for implementing custom data models by implementing specific interfaces. Using this approach you can query and provide data for the chart much more flexibly and from any kind of data store.
 
+> Note: One important reason you might want to use either of the above two approaches is to greatly enhance performance (speed and memory) especially while dealing with a large set of data points.
 
-
-{{ '![](Chart-Data_images/Chart-Data_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: One important reason you might want to use either of the above two approaches is to greatly enhance performance (speed and memory) especially while dealing with a large set of data points._
-
-
-
-See Also
+#### See Also
 
 Implementing Custom Data Binding Interfaces
 
@@ -39,21 +33,11 @@ Implementing Custom Data Binding Interfaces
 
 The following sample code illustrates how a custom DataSet can be bound to a ChartSeries to provide data points and to a ChartAxis to provide label names. Note that the DataSet can easily be replaced with a DataTable or DataView.
 
+![](Chart-Data_images/Chart-Data_img2.jpeg)
 
+_Figure_ _:_ _Access Table data that is about to get bound to Chart_
 
-{{ '![](Chart-Data_images/Chart-Data_img2.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _24__: Access Table data that is about to get bound to Chart_
-
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ChartDataBindModel model = null;
 
@@ -113,11 +97,9 @@ this.chartControl1.PrimaryXAxis.LabelsImpl = this.xAxisLabelModel;
 
 this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim model As ChartDataBindModel = Nothing
 
@@ -177,15 +159,11 @@ Me.chartControl1.PrimaryXAxis.LabelsImpl = Me.xAxisLabelModel
 
 Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 
+{% endhighlight %}
 
+![](Chart-Data_images/Chart-Data_img3.jpeg)
 
-{{ '![](Chart-Data_images/Chart-Data_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _25__: Demographics DataSet bounded to the Chart_
+_Figure_ _25_: _Demographics DataSet bounded to the Chart_
 
 ## Implementing Custom Data Binding Interfaces
 
@@ -193,11 +171,7 @@ Note that the ChartDataBindModel type in the previous topic implements a simple 
 
 Shown below is some sample code that implements IChartSeriesModel interface for use with the chart.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Custom Model
 
@@ -280,10 +254,9 @@ public class ArrayModel : IChartSeriesModel
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 ' Custom Model
 
@@ -352,14 +325,11 @@ Public Class ArrayModel Implements IChartSeriesModel
 End Class
 
 
+{% endhighlight %}
 
-Bind the above model to the chart series.
+## Bind the above model to the chart series.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 //Creating series data and binding to the array model
 
@@ -371,11 +341,9 @@ series1.Type = ChartSeriesType.Bar;
 
 this.chartControl1.Series.Add(series1);
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 'Creating series data and binding to the array model
 
@@ -387,31 +355,21 @@ series1.Type = ChartSeriesType.Bar
 
 Me.chartControl1.Series.Add(series1)
 
+{% endhighlight %}
 
+![](Chart-Data_images/Chart-Data_img4.jpeg)
 
-{{ '![](Chart-Data_images/Chart-Data_img4.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _26_: _CustomModel bound to the Chart Series_
 
+### Indexed data
 
-
-
-_Figure_ _26__: CustomModel bound to the Chart Series_
-
-
-
-Indexed data
-
-Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can instead implement the IChartSeriesIndexedModel interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
+> Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can instead implement the IChartSeriesIndexedModel interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
 
 ## Chart Data Binding with IEnumerables
 
 Syncfusionchart provides an option of binding the Chart with IEnumerables, like ArrayList for Indexed or Non Indexed model data through ChartDataBindModel implementation.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 class PopulationData
 
@@ -476,10 +434,9 @@ class PopulationData
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Class PopulationData
 
@@ -535,17 +492,13 @@ Class PopulationData
 
     End Property
 
-
+{% endhighlight %}
 
 If you have a class like above, you will have a collection of this class instances, in an ArrayList. To bind with the Chart, you need to create a ChartDataBindModel instance, by supplying the instance of data source (In our case, ArrayList is the data source).
 
 In this example, we are binding with a Non Indexed data, with YNames alone and the chart will not be rendered with x-axis values. We need to assign the x-axis values through ChartDataBindAxisLabelModel class. ChartDataBindAxisLabelModel class provides a facility to bind the axis label values through the data source like ChartDataBindModel. 
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ArrayList populations = new ArrayList();
 
@@ -597,11 +550,9 @@ chartControl1.Series.Add(series);
 
 chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel;
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Dim populations As New ArrayList()
 
@@ -653,15 +604,11 @@ chartControl1.Series.Add(series)
 
 chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel 
 
+{% endhighlight %}
 
+![](Chart-Data_images/Chart-Data_img5.jpeg)
 
-{{ '![](Chart-Data_images/Chart-Data_img5.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _27__: Binding Chart with IEnumerables_
+_Figure_ _27_: _Binding Chart with IEnumerables_
 
 ## Data Binding in Chart Through Chart Wizard
 
@@ -673,195 +620,92 @@ The below steps lets you bind a database table with the ChartControl.
 
 1. Open the Chart Wizard tool, Click Series button and go to the Data Source tab as shown in the image below.
 
+   ![](Chart-Data_images/Chart-Data_img6.png)
 
-
-{{ '![](Chart-Data_images/Chart-Data_img6.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _28__: Data Source Tab_
-
-
+   _Figure_ _28_: _Data Source Tab_
 
 2. First step is to select the chart data source from the drop-down list. All data sources available with the form will be shown in the list. If there is no data source in the list, click the new BindingSource option from the drop-down list.
+   
+   ![](Chart-Data_images/Chart-Data_img7.png)
 
-
-
-{{ '![](Chart-Data_images/Chart-Data_img7.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _29__: Selecting "new BindingSource...." from the drop-down list in the Data Source Tab_
-
-
+   _Figure_ _29_: _Selecting "new BindingSource...." from the drop-down list in the Data Source Tab
 
 3. This opens a Data Source Configuration Wizard.Choose the Data source Type as Database, and click Next.
 
+   ![](Chart-Data_images/Chart-Data_img8.jpeg)
 
-
-{{ '![](Chart-Data_images/Chart-Data_img8.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _30__: Selecting the Data Source Type_
-
-
+   _Figure_ _30_: _Selecting the Data Source Type_
 
 4. Then click New Connection.
 
+   ![](Chart-Data_images/Chart-Data_img9.jpeg)
 
-
-{{ '![](Chart-Data_images/Chart-Data_img9.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _31__: Creating a New Connection_
-
-
+   _Figure_ _31_: _Creating a New Connection_
 
 5. In the Choose Data Source dialog box, select the data source as MS SQL server database or MS Access database, and then click Continue button.
+   
+   ![](Chart-Data_images/Chart-Data_img10.jpeg)
 
-
-
-{{ '![](Chart-Data_images/Chart-Data_img10.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _32__: Choose Data Source Dialog Box_
+   _Figure_ _32_: _Choose Data Source Dialog Box_
 
 
 
 6. This opens the Add Connection dialog box. Click the Browse button and select the database file from any location. Click OK to make this connection available to the Data source Configuration Wizard.
 
+   ![](Chart-Data_images/Chart-Data_img11.jpeg)
 
-
-{{ '![](Chart-Data_images/Chart-Data_img11.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _33__: Selecting the Database file by clicking on the Browse Button in the Add Connection Dialog Box_
-
-
+   _Figure_ _33_: _Selecting the Database file by clicking on the Browse Button in the Add Connection Dialog Box_
 
 7. You will be directed to the Data Source Configuration Wizard after completing the above steps. Click Next.
+   
+   ![](Chart-Data_images/Chart-Data_img12.jpeg)
 
-
-
-{{ '![](Chart-Data_images/Chart-Data_img12.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _34__: Next button in the Data Source Configuration Wizard is Clicked_
-
-
+   _Figure_ _34_: _Next button in the Data Source Configuration Wizard is Clicked_
 
 8. Tables and Views that are available in the selected database will be listed in the Wizard. Select the appropriate table, required columns and then click Finish.
-
-
-
-{{ '![](Chart-Data_images/Chart-Data_img13.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _35__: Finish button in the Data Source Configuration Wizard is clicked after selecting the required Table and Columns_ 
-
-
+   
+   ![](Chart-Data_images/Chart-Data_img13.jpeg)
+   
+   _Figure_ _35_: _Finish button in the Data Source Configuration Wizard is clicked after selecting the required Table and Columns_ 
 
 9. You will be directed back to the Chart Wizard now. Select the database from the Data Source list as shown in the image below.
 
-
-
-{{ '![](Chart-Data_images/Chart-Data_img14.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _36__: Selecting the Database from the drop-down List in the Data Source Tab_
-
-
+   ![](Chart-Data_images/Chart-Data_img14.png)
+   
+   _Figure_ _36_: _Selecting the Database from the drop-down List in the Data Source Tab_
 
 10. Once the source is selected, the selected table will be visible as in the below image.
 
+    ![](Chart-Data_images/Chart-Data_img15.png)
+
+    _Figure_ _37_: _Selected Table_
 
 
-{{ '![](Chart-Data_images/Chart-Data_img15.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _37__: Selected Table_
-
-
-
-Binding the Table Data with Chart Series
+## Binding the Table Data with Chart Series
 
 1. Click the 'Series Data' option in the wizard to select the series to which the data is to be bound. In 'Series Data' page, select the series using the Series Data box.
 
+   ![](Chart-Data_images/Chart-Data_img16.png)
 
-
-{{ '![](Chart-Data_images/Chart-Data_img16.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _38__: Selecting the Series to which the data is to be Bound_
+   _Figure_ _38_: _Selecting the Series to which the data is to be Bound_
 
 
 
 2. To assign the retrieved database column to X and Y values of the series, use X Value box and Y Value box as shown in the below screen shots.
 
-
-
-{{ '![](Chart-Data_images/Chart-Data_img17.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _39__: Assigning the retrieved database column to X value of the Series_
-
-
-
-{{ '![](Chart-Data_images/Chart-Data_img18.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Figure_ _40__: Assigning the retrieved database column to Y value of the Series_
-
-
+   ![](Chart-Data_images/Chart-Data_img17.png)
+   
+   _Figure_ _39_: _Assigning the retrieved database column to X value of the Series_
+   
+   ![](Chart-Data_images/Chart-Data_img18.png)
+   
+   _Figure_ _40_: _Assigning the retrieved database column to Y value of the Series_
 
 3. Click Finish to apply these data binding settings to the Chart. The below image illustrates the Chart bound with custom data.
 
-{{ '![](Chart-Data_images/Chart-Data_img19.jpeg)' | markdownify }}
-{:.image }
+   ![](Chart-Data_images/Chart-Data_img19.jpeg)
 
-
-
-
-_Figure_ _41__: Data Source bound to the Chart by using the Chart Wizard_
-
-
+   _Figure_ _41_: _Data Source bound to the Chart by using the Chart Wizard_
 
 ## Binding Chart with a BindingSource
 
@@ -875,63 +719,41 @@ Step-1:
 
 Open the Chart Wizard in designer. Chart wizard can be opened either by right-clicking the Chart control and choosing the Chart Wizard option in context menu or by clicking Chart Wizard option in smart tag of the Chart control. Chart wizard appears as follows.
 
-{{ '![](Chart-Data_images/Chart-Data_img20.png)' | markdownify }}
-{:.image }
+![](Chart-Data_images/Chart-Data_img20.png)
 
-
-{{ '![](Chart-Data_images/Chart-Data_img21.png)' | markdownify }}
-{:.image }
-
-
-
+![](Chart-Data_images/Chart-Data_img21.png)
 
 Step-2:
 
 In Chart Wizard, click Series button and click Data Source tab to choose the data source.
 
-{{ '![](Chart-Data_images/Chart-Data_img22.png)' | markdownify }}
-{:.image }
-
-
-
+![](Chart-Data_images/Chart-Data_img22.png)
 
 Step-3:
 
 The combo box displays all the available binding sources in the Form. Choose the binding source for Chart from the binding sources available in the combo box.
 
-{{ '![](Chart-Data_images/Chart-Data_img23.jpeg)' | markdownify }}
-{:.image }
-_Note: When Form does not contain any binding source, then only [none] and [new Binding Source…] options are present in the combo box._ 
+> Note: When Form does not contain any binding source, then only [none] and [new Binding Source…] options are present in the combo box.
 
-{{ '![](Chart-Data_images/Chart-Data_img24.png)' | markdownify }}
-{:.image }
-
+![](Chart-Data_images/Chart-Data_img24.png)
 
 Here, MyBindingSource is a binding source present in the form.
 
-{{ '![](Chart-Data_images/Chart-Data_img25.png)' | markdownify }}
-{:.image }
-
+![](Chart-Data_images/Chart-Data_img25.png)
 
 Step-4:
 
 Click Series Data tab to map the binding source fields with X and Yvalues of the Chart. Select a series in the combo box and other fields in this tab are enabled.
 
-{{ '![](Chart-Data_images/Chart-Data_img26.png)' | markdownify }}
-{:.image }
-
+![](Chart-Data_images/Chart-Data_img26.png)
 
 Step-5:
 
 In the X Value combo box, choose the field that should be bound with the X value of series. Similarly, in Y Value combo box, choose the field that should be bound with the Y value of the series and click Finish button. 
 
-{{ '![](Chart-Data_images/Chart-Data_img27.jpeg)' | markdownify }}
-{:.image }
-_Note: You can also change series Type and Name here._
+> Note: You can also change series Type and Name here.
 
-{{ '![](Chart-Data_images/Chart-Data_img28.png)' | markdownify }}
-{:.image }
-
+![](Chart-Data_images/Chart-Data_img28.png)
 
 Designer displays default chart with random values but you can see the series bounded with binding source after running the application.
 
@@ -943,33 +765,29 @@ Step-1
 
 Create a ChartDataBindModel object with BinidngSource as data source
 
-[C#]
+{% highlight c# %}
 
-      //Using BindingSource as data source to the ChartDataBindModel
+//Using BindingSource as data source to the ChartDataBindModel
 
       ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-
-
-[VB]
-
-     'Using BindingSource as data source to the ChartDataBindModel
+'Using BindingSource as data source to the ChartDataBindModel
 
      Dim model As New ChartDataBindModel(MyBindingSource)
 
-
+{% endhighlight %}
 
 Step-2:
 
 Provide a field name in binding source as value to the XName property of the ChartDataBindModel object. 
 
+{% highlight c# %}
 
-
-[C#]
-
-      //Using BindingSource as data source to the ChartDataBindModel
+//Using BindingSource as data source to the ChartDataBindModel
 
       ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 
@@ -979,13 +797,11 @@ Provide a field name in binding source as value to the XName property of the Cha
 
       model.XName = "Field1";
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-
-
-[VB]
-
-      'Using BindingSource as data source to the ChartDataBindModel
+'Using BindingSource as data source to the ChartDataBindModel
 
       Dim model As New ChartDataBindModel(MyBindingSource)
 
@@ -995,7 +811,7 @@ Provide a field name in binding source as value to the XName property of the Cha
 
       model.XName = "Field1"
 
-
+{% endhighlight %}
 
 Step-3:
 
@@ -1003,7 +819,7 @@ Similarly, provide a field name in binding source as value to the YNames propert
 
 As pie chart is used in this example, it is enough to use one field name for the YNames property of the ChartDataBindModel object.
 
-[C#]
+{% highlight c# %}
 
       //Using BindingSource as data source to the ChartDataBindModel
 
@@ -1021,9 +837,9 @@ As pie chart is used in this example, it is enough to use one field name for the
 
       model.YNames = new string[] { "Field2" };
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
       'Using BindingSource as data source to the ChartDataBindModel
 
@@ -1041,15 +857,13 @@ As pie chart is used in this example, it is enough to use one field name for the
 
       model.YNames = New String() {"Field2"}
 
-
-
-
+{% endhighlight %}
 
 Step-4:
 
 Set ChartDataBindModel object as value to the ChartSeries object. This binds the Series with BindingSource.
 
-[C#]
+{% highlight c# %}
 
       //Using BindingSource as data source to the ChartDataBindModel
 
@@ -1067,13 +881,9 @@ Set ChartDataBindModel object as value to the ChartSeries object. This binds the
 
       model.YNames = new string[] { "Field2" };
 
+{% endhighlight %}
 
-
-
-
-[VB]
-
-
+{% highlight vbnet %}
 
       'Using BindingSource as data source to the ChartDataBindModel
 
@@ -1097,15 +907,8 @@ Set ChartDataBindModel object as value to the ChartSeries object. This binds the
 
       series.SeriesModel = model
 
-
-
-
+{% endhighlight %}
 
 The following screenshot displays a Chart bounded with binding source in code behind.
 
-{{ '![](Chart-Data_images/Chart-Data_img29.png)' | markdownify }}
-{:.image }
-
-
-
-
+![](Chart-Data_images/Chart-Data_img29.png)

@@ -15,13 +15,13 @@ Task class exposes ways to create a task for a Project. Task is useful in creati
 
 ### Constructors
 
-_Table_ _7__: Task Constructors_
+_Table_ _7_: _Task Constructors_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Task.Task()</td><td>
@@ -31,9 +31,10 @@ Initializes a new instance of the Task class.</td></tr>
 Task.Task(string taskName)</td><td>
 Initializes a new instance of the Task class with the task name. </td></tr>
 </table>
+
 ### Properties
 
-_Table_ _8__: Task Properties_
+_Table_ _8_: _Task Properties_
 
 <table>
 <tr>
@@ -457,15 +458,16 @@ Gets or sets text displayed in duration field when the task is in Manually Sched
 TimePhasedData </td><td>
 Gets or sets the time phased data block associated with the task.</td></tr>
 </table>
+
 ### Methods
 
-_Table_ _9__: Task Methods_
+_Table_ _9_: _Task Methods_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetHashCode</td><td>
@@ -479,6 +481,7 @@ Gets the type of the current instance.</td></tr>
 ToString</td><td>
 Returns a string that represents the current object.</td></tr>
 </table>
+
 ### Adding Tasks to a Project
 
 Tasks can be created in one or more ways as given below.
@@ -487,7 +490,7 @@ Tasks can be created in one or more ways as given below.
 
 Creating a task instance without using any parameter as shown in the following code snippet:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -499,9 +502,9 @@ task1.Start = DateTime.Now;
 
 task1.Finish = DateTime.Now;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -513,11 +516,13 @@ task1.Start = DateTime.Now
 
 task1.Finish = DateTime.Now
 
+{% endhighlight %}
+
 * By name
 
 Creating a task instance by passing the task name as shown in the following code snippet:
 
-[C#]
+{% highlight c# %}
 
 Task task1 = new Task("Main Task");
 
@@ -525,9 +530,9 @@ task1.Start = DateTime.Now;
 
 task1.Finish = DateTime.Now;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -537,13 +542,15 @@ task1.Start = DateTime.Now
 
 task1.Finish = DateTime.Now
 
+{% endhighlight %}
+
 ## Creating a summary task
 
 To make a task as the summary task, you need to make use of the IsSummary property of the Task class.
 
 The following example illustrates making a task as Summary task.
 
-[C#]
+{% highlight c# %}
 
 Task task1 = new Task("Main Task");
 
@@ -553,9 +560,9 @@ task1.Finish = DateTime.Now;
 
 task1.IsSummary = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -567,10 +574,12 @@ task1.Finish = DateTime.Now
 
 task1.IsSummary = True
 
+{% endhighlight %}
+
 The summary task created using the above code will look like as shown below when viewed in Microsoft Project.
 
-{{ '![](Task_images/Task_img1.jpeg)' | markdownify }}
-{:.image }
+![](Task_images/Task_img1.jpeg)
+
 
 
 ## Creating Task links
@@ -579,7 +588,7 @@ A task link is created using the default constructor of the TaskLink class. It a
 
 The following example illustrates how to create links between two tasks.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -595,9 +604,9 @@ Task task2 = new Task("Task2");
 
 TaskLink link = new TaskLink(task1, task2, TaskLinkType.FinishToStart);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -613,13 +622,15 @@ Dim task2 As Task = New Task("Task2")
 
 Dim link As TaskLink = New TaskLink(task1, task2, TaskLinkType.FinishToStart)
 
+{% endhighlight %}
+
 ## Writing Tasks to Projects
 
 RootTask property of the Project class contains the Children property that returns the list of Task objects. The Children property is used to update the tasks.
 
 The following code snippet demonstrates writing tasks to a project.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -667,9 +678,9 @@ P.Save("ProjectWithTasks.xml");
 
 
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 ' Creating an instance of the Project
 
@@ -715,13 +726,10 @@ Dim link As TaskLink = New TaskLink(task1, task2, TaskLinkType.FinishToStart)
 
 P.Save("ProjectWithTasks.xml")
 
-
+{% endhighlight %}
 
 
 
 The project file created using above code will look as shown in the following screenshot.
 
-{{ '![](Task_images/Task_img2.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Task_images/Task_img2.jpeg)

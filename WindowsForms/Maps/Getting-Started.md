@@ -17,10 +17,9 @@ Tree map-like support provides rich UI for shapes and bubbles. Annotation and To
 
 
 
-Options like zooming, panning, and map selection extend the interactivity of the map.{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+Options like zooming, panning, and map selection extend the interactivity of the map.
 
-
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 ## Feature Summary
@@ -33,8 +32,8 @@ Options like zooming, panning, and map selection extend the interactivity of the
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 
@@ -61,9 +60,9 @@ Structure of Uri Property,
 
 • ShapeFilename.shp
 
-Code sample:
+#### Code sample:
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 
 
@@ -93,9 +92,9 @@ partial class Form1
 
      }  
 
+{% endhighlight %}
 
-
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -129,24 +128,14 @@ public partial class Form1 : Form
 
      }       
 
+{% endhighlight %}
+	 
 In the above snippet “world1” is a shapefile name.
-
-
-
-
-
-
-
-
-
 
 
 Screenshot:
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
-
-
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 ## Reading and Loading the Shapes
@@ -176,6 +165,3 @@ For more information about the 8.3 naming convention, shape files and their desc
 [http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 
 Maps read the main file and create the map shapes. The associated .dbf file contents are then incorporated with the shapes created from the main files.
-
-
-

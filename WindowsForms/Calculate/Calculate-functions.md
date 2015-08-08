@@ -15,7 +15,7 @@ documentation: ug
 
 A dollar price expressed as a fraction converts into a dollar price expressed as a decimal number.
 
-Syntax:
+#### Syntax:
 
 DOLLARDE( arg1, arg2) where:
 
@@ -24,23 +24,21 @@ DOLLARDE( arg1, arg2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - Occurs if the fraction is less than 0.
+&#35;NUM! - Occurs if the fraction is less than 0.
 
-#DIV/0! - Occurs if the fraction is equal to 0.
+&#35;DIV/0! - Occurs if the fraction is equal to 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img1.png)' | markdownify }}
-{:.image }
-
+![](Calculate-functions_images/Calculate-functions_img1.png)
 
 ### DOLLARFR
 
 A dollar price expressed as a decimal number converts into a dollar price expressed as a fraction.
 
-Syntax:
+#### Syntax:
 
 DOLLARFR (decNum, arg2) where:
 
@@ -49,23 +47,23 @@ DOLLARFR (decNum, arg2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - Occurs if the fraction is less than 0.
+&#35;NUM! - Occurs if the fraction is less than 0.
 
-#DIV/0! - Occurs if the fraction is 0.
+&#35;DIV/0! - Occurs if the fraction is 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img2.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img2.png)
+
 
 
 ### DURATION
 
 Returns the annual duration of a security with periodic interest payments.
 
-Syntax:
+#### Syntax:
 
 DURATION(SettlementDate,MaturityDate,rate,profit,frequency,basis) where:
 
@@ -78,17 +76,15 @@ DURATION(SettlementDate,MaturityDate,rate,profit,frequency,basis) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img3.png)' | markdownify }}
-{:.image }
-
+![](Calculate-functions_images/Calculate-functions_img3.png)
 
 ### RRI
 
 The RRI function returns an equivalent interest rate when investment value increases.
 
-Syntax:
+#### Syntax:
 
 RRI(np,pv,fv) where,
 
@@ -96,17 +92,17 @@ RRI(np,pv,fv) where,
 * pv is the present investment value.
 * fv is the future investment value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img4.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img4.png)
+
 
 
 ### FVSCHEDULE
 
 The FVSCHEDULE method returns the future value of an initial principle after applying a series of compound interest rates.
 
-Syntax:
+#### Syntax:
 
 FVSCHEDULE(arg1,arg2) where:
 
@@ -115,21 +111,21 @@ FVSCHEDULE(arg1,arg2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! – occurs any other than numbers or blank cells.
+&#35;VALUE! – occurs any other than numbers or blank cells.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img5.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img5.png)
+
 
 
 ### DISC
 
 The DISC function returns security discount rate.
 
-Syntax:
+#### Syntax:
 
 DISC(SettlementDate,MaturityDate,rate,value) where:
 
@@ -138,17 +134,17 @@ DISC(SettlementDate,MaturityDate,rate,value) where:
 * rate – yearly coupon rate of the security.
 * value – security value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img6.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img6.png)
+
 
 
 ### INTRATE
 
 The INTRATE function returns the interest rate for a fully invested security.
 
-Syntax:
+#### Syntax:
 
 INTRATE(SettlementDate,MaturityDate, investment, amount, basis ) where:
 
@@ -158,23 +154,21 @@ INTRATE(SettlementDate,MaturityDate, investment, amount, basis ) where:
 * amount - amount to be received at maturitydate.
 * Basis - type of day count basis.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if settlementdate is greater than or equal to maturitydate, investment and amount is less than or equal to zero.
+&#35;NUM! - occurs if settlementdate is greater than or equal to maturitydate, investment and amount is less than or equal to zero.
 
-#VALUE! - occurs if settlementdate and maturitydate less than or equal to zero.
+&#35;VALUE! - occurs if settlementdate and maturitydate less than or equal to zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img7.png)' | markdownify }}
-{:.image }
-
+![](Calculate-functions_images/Calculate-functions_img7.png)
 
 ### CUMIPMT
 
 Calculates the cumulative interest paid on a loan or investment, between two specified periods. 
 
-Syntax:
+#### Syntax:
 
 CUMIPMT(rate, np,pv,startPeriod, endPeriod, pp) where,
 
@@ -187,21 +181,21 @@ CUMIPMT(rate, np,pv,startPeriod, endPeriod, pp) where,
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if rate,np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
+&#35;NUM! - occurs if rate,np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img8.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img8.png)
+
 
 
 ### CUMPRINC
 
 The CUMPRINC function calculates the cumulative payment on the principal of a loan or investment, between two specified periods. 
 
-Syntax:
+#### Syntax:
 
 CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
@@ -214,21 +208,20 @@ CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if rate, np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
+&#35;NUM! - occurs if rate, np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img9.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img9.png)
 
 
 ### ACCRINT
 
 The ACCRINT function returns the accrued interest for a security with periodic interest payments.
 
-Syntax:
+#### Syntax:
 
 ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis) where:
 
@@ -242,23 +235,23 @@ ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis)
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE - returns only if FirstInterest or settlementDate is invalid. 
+&#35;VALUE - returns only if FirstInterest or settlementDate is invalid. 
 
-#NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
+&#35;NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img10.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img10.png)
+
 
 
 ### RECEIVED
 
 The RECEIVED function returns the amount received at maturity for a fully invested security.
 
-Syntax:
+#### Syntax:
 
 RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
@@ -270,14 +263,14 @@ RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if settlement ≥ maturity and if investment and discount is ≤ 0.
+&#35;NUM! - occurs if settlement ≥ maturity and if investment and discount is ≤ 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img11.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img11.png)
+
 
 
 ## Database Functions
@@ -286,7 +279,7 @@ Example:
 
 The DCOUNT function counts the number of cells that contain numbers in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DCOUNT(collection,column,condition) where:
 
@@ -294,19 +287,19 @@ DCOUNT(collection,column,condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png)
+
 
 
 ### DCOUNTA
 
 The DCOUNTA function counts the number of nonblank cells in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DCOUNTA(collection,column,condition) where:
 
@@ -314,19 +307,19 @@ DCOUNTA(collection,column,condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png)
+
 
 
 ### DAVERAGE
 
 The DAVERAGE function finds the average values obtained from a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DAVERAGE(collection,column,condition) where:
 
@@ -336,19 +329,19 @@ DAVERAGE(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png)
+
 
 
 ### DGET
 
 The DGET function renders value from the column of list from the specified condition.
 
-Syntax:
+#### Syntax:
 
 DGET(collection,column,condition) where:
 
@@ -356,19 +349,19 @@ DGET(collection,column,condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img15.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img15.png)
+
 
 
 ### DMAX
 
 The DMAX function returns the largest number in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DMAX(collection,column,condition) where:
 
@@ -376,17 +369,17 @@ DMAX(collection,column,condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img16.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img16.png)
+
 
 
 ### DMIN
 
 The DMIN function returns the smallest number in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DMIN(collection,column,condition) where:
 
@@ -394,19 +387,19 @@ DMIN(collection,column,condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png)
+
 
 
 ### DSTDEV
 
 The DSTDEV function estimates the standard deviation of a population based on a sample by using the numbers in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DSTDEV(collection,column,condition) where:
 
@@ -414,19 +407,19 @@ DSTDEV(collection,column,condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png)
+
 
 
 ### DSTDEVP
 
 The DSTDEVP function calculates the standard deviation of a population based on the entire population, using the numbers in a column of a list that match the given conditions.
 
-Syntax:
+#### Syntax:
 
 DSTDEVP(collection,column,condition) where:
 
@@ -434,19 +427,19 @@ DSTDEVP(collection,column,condition) where:
 * column indicates the column used in the function
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png)
+
 
 
 ### DVAR
 
 The DVAR function estimates the variance of a population based on a sample by using the numbers in a column of a list which matches the conditions.
 
-Syntax:
+#### Syntax:
 
 VAR(collection, column, condition) where:
 
@@ -454,17 +447,17 @@ VAR(collection, column, condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png)
+
 
 
 ### DVARP
 
 The DVARP function calculates the variance of a population based on the entire population by using the numbers in a column of a list or database that matches the conditions.
 
-Syntax:
+#### Syntax:
 
 DVARP(collection, column, condition) where:
 
@@ -472,17 +465,17 @@ DVARP(collection, column, condition) where:
 * column indicates the column used in the function
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png)
+
 
 
 ### DSUM
 
 The DSUM function adds the numbers in a field (column) of records in a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DSUM(collection, column, condition) where:
 
@@ -492,10 +485,10 @@ DSUM(collection, column, condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img22.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img22.png)
+
 
 
 ## Math and Trigonometry
@@ -504,29 +497,29 @@ Example:
 
 The SEC function returns the secant of an angle.
 
-Syntax:
+#### Syntax:
 
 SEC(number) where:
 
 * number - angle radians to get the secant value.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if number is a non-numeric value.
+&#35;VALUE! - occurs if number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img23.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img23.png)
+
 
 
 ### SECH
 
 The SECH function returns the hyperbolic secant of an angle.
 
-Syntax:
+#### Syntax:
 
 SECH(number) where:
 
@@ -534,23 +527,23 @@ SECH(number) where:
 
 
 
-REMARKS:
+#### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img24.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img24.png)
+
 
 
 ### COT
 
 The COT function returns the cotangent of an angle specified in radians.
 
-Syntax:
+#### Syntax:
 
 COT(number) where:
 
@@ -558,21 +551,21 @@ COT(number) where:
 
 
 
-#NUM! - occurs if the number is out of range.
+&#35;NUM! - occurs if the number is out of range.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img25.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img25.png)
+
 
 
 ### COTH
 
 The COTH function returns the hyperbolic cotangent of a hyperbolic angle.
 
-Syntax:
+#### Syntax:
 
 COTH(number) where:
 
@@ -580,23 +573,23 @@ COTH(number) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img26.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img26.png)
+
 
 
 ### CSC
 
 The CSC function returns the cosecant of an angle specified in radians.
 
-Syntax:
+#### Syntax:
 
 CSC(number) where:
 
@@ -604,23 +597,23 @@ CSC(number) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img27.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img27.png)
+
 
 
 ### CSCH
 
 The CSCH function returns the hyperbolic cosecant of an angle specified in radians.
 
-Syntax:
+#### Syntax:
 
 CSCH(number) where:
 
@@ -628,16 +621,16 @@ CSCH(number) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img28.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img28.png)
+
 
 
 ### ACOT
@@ -646,7 +639,7 @@ The ACOT function retrieves the principal value of the inverse trigonometric co
 
 To obtain in degrees, use DEGREES function before ACOT function.
 
-Syntax:
+#### Syntax:
 
 ACOT(number) or DEGREES ACOT(number) where:
 
@@ -654,23 +647,23 @@ ACOT(number) or DEGREES ACOT(number) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
 The returned angle is given in radians in the range of 0 (zero) to pi.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img29.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img29.png)
+
 
 
 ### ACOTH
 
 The ACOTH function retrieves the inverse hyperbolic cotangent of a number.
 
-Syntax:
+#### Syntax:
 
 ACOTH(number) where:
 
@@ -678,75 +671,75 @@ ACOTH(number) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is less than one.
+&#35;NUM! - occurs if number is less than one.
 
-#VALUE! - occurs if absolute value of number is less than one.
+&#35;VALUE! - occurs if absolute value of number is less than one.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img30.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img30.png)
+
 
 
 ### ACSCH
 
 The ACSCH function computes the inverse hyperbolic cosecant of its argument.
 
-Syntax:
+#### Syntax:
 
 x = ACSCH(y) where:
 
 * x is a complex or real array
 * y is a complex or real array
 
-Example:
+#### Example:
 
 
 
-{{ '![](Calculate-functions_images/Calculate-functions_img31.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img31.png)
+
 
 
 ### BIGMUL
 
 The BIGMUL function gives the full value of multiplying two 32-bit numbers.
 
-Syntax:
+#### Syntax:
 
 Math.BIGMUL(x,y); where:
 
 * x is the first number to multiply
 * y is the second nr to multiply.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img32.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img32.png)
+
 
 
 ### DIVREM
 
 The DIVREM function calculates the quotient of two numbers and also returns the remainder in an output parameter.
 
-Syntax:
+#### Syntax:
 
 Math.DIVREM(num1,num2) where:
 
 * num1 and num2 are integers.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img33.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img33.png)
+
 
 
 ### IEEERemainder
 
 IEEERemainder function returns the remainder operation on two arguments.
 
-Syntax:
+#### Syntax:
 
 IEEERemainder(d1, d2) where:
 
@@ -755,34 +748,34 @@ IEEERemainder(d1, d2) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img34.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img34.png)
+
 
 
 ### TRUNC
 
 The TRUNC function truncates a supplied number to a specified number of decimal places.
 
-Syntax:
+#### Syntax:
 
 TRUNC( number, [num_digits] ) where:
 
 * number is the initial number that is truncated.
 * [num_digits] is an optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img35.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img35.png)
+
 
 
 ### COMBINA
 
 For a given number of items, the COMBINA function returns the number of combinations.
 
-Syntax:
+#### Syntax:
 
 COMBINA(number1, number2) where:
 
@@ -791,23 +784,23 @@ COMBINA(number1, number2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if either value is out of range.
+&#35;NUM! - occurs if either value is out of range.
 
-#VALUE! - occurs if either value is non-numeric.
+&#35;VALUE! - occurs if either value is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img36.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img36.png)
+
 
 
 ### ARABIC
 
 A Roman numeral is converted into an Arabic numeral.
 
-Syntax:
+#### Syntax:
 
 ARABIC( romannumeral ) where 
 
@@ -815,25 +808,25 @@ ARABIC( romannumeral ) where
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if text is not a valid value.
+&#35;VALUE! - occurs if text is not a valid value.
 
-#VALUE! - occurs if text is not a valid Roman numeral.
+&#35;VALUE! - occurs if text is not a valid Roman numeral.
 
 Value zero occurs if an empty string is given as an input.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img37.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img37.png)
+
 
 
 ### BASE
 
 A number is converted into a text representation with the given radix (base).
 
-Syntax:
+#### Syntax:
 
 BASE(number,radix [Minlength]) where:
 
@@ -843,23 +836,23 @@ BASE(number,radix [Minlength]) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if Number, Radix, or Minlength are outside the minimum or maximum constraints.
+&#35;NUM! - occurs if Number, Radix, or Minlength are outside the minimum or maximum constraints.
 
-#VALUE! - occurs if Number is a non-numeric value.
+&#35;VALUE! - occurs if Number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img38.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img38.png)
+
 
 
 ### CEILING.MATH
 
 The CEILING.MATH function returns number rounded up to a multiple of another number.
 
-Syntax:
+#### Syntax:
 
 CEILING(number, [significance],  [mode]) where:
 
@@ -867,17 +860,17 @@ CEILING(number, [significance],  [mode]) where:
 * significance - multiple to which the number is rounded.
 * mode is for negative numbers, it controls whether the number is rounded toward or away from zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img39.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img39.png)
+
 
 
 ### DECIMAL
 
 A text representation of a number in a given base has been converted into a decimal number.
 
-Syntax:
+#### Syntax:
 
 DECIMAL(text, radix) where:
 
@@ -886,21 +879,21 @@ DECIMAL(text, radix) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! or #VALUE! - occurs if text or radix is outside the constraints.
+&#35;NUM! or &#35;VALUE! - occurs if text or radix is outside the constraints.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img40.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img40.png)
+
 
 
 ### MDETERM
 
 The MDETERM function retrieves the matrix determinant of an array.
 
-Syntax:
+#### Syntax:
 
 MDETERM(array) where:
 
@@ -908,21 +901,21 @@ MDETERM(array) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
+&#35;VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img41.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img41.png)
+
 
 
 ### MINVERSE
 
 The MINVERSE function retrieves the inverse matrix for the matrix stored in an array.
 
-Syntax:
+#### Syntax:
 
 MINVERSE(array) where:
 
@@ -930,41 +923,41 @@ MINVERSE(array) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
+&#35;VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img42.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img42.png)
+
 
 
 ### MMULT
 
 The MMULT function returns the matrix product of two arrays. Both the arrays should have same number of columns and same number of rows.
 
-Syntax:
+#### Syntax:
 
 MMULT(M1,M2) where:
 
 * M1, M2 are the matrix arrays that is to be multiplied.
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any cell in the array is empty or contains text in it and if the array does not have an equal number of rows and columns.
+&#35;VALUE! - occurs if any cell in the array is empty or contains text in it and if the array does not have an equal number of rows and columns.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img43.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img43.png)
+
 
 
 ### MUNIT
 
 The MUNIT function retrieves the unit matrix for the particular dimension that has been specified.
 
-Syntax:
+#### Syntax:
 
 MUNIT(dimension) where:
 
@@ -972,14 +965,14 @@ MUNIT(dimension) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if the dimension is a value that is equal to or smaller than zero.
+&#35;VALUE! - occurs if the dimension is a value that is equal to or smaller than zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img44.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img44.png)
+
 
 
 ## Statistical functions
@@ -988,7 +981,7 @@ Example:
 
 CONFIDENCE.T function retrieves the confidence interval for a population mean.
 
-Syntax:
+#### Syntax:
 
 CONFIDENCE.T(alpha,stdev,size) where:
 
@@ -998,25 +991,25 @@ CONFIDENCE.T(alpha,stdev,size) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if alpha  and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
+&#35;NUM! - occurs if alpha  and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
 
-#DIV/0! - occurs if the size is equal to one.
+&#35;DIV/0! - occurs if the size is equal to one.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img45.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img45.png)
+
 
 
 ### SKEW.P
 
 Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a distribution around its mean.
 
-Syntax:
+#### Syntax:
 
 SKEW.P(number 1, [number 2],…) where:
 
@@ -1024,42 +1017,42 @@ SKEW.P(number 1, [number 2],…) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if arguments do not have a valid value.
+&#35;NUM! - occurs if arguments do not have a valid value.
 
-#VALUE! - occurs if arguments do not have valid data types.
+&#35;VALUE! - occurs if arguments do not have valid data types.
 
-#DIV/0! - occurs if there are fewer than three data points, or the sample standard deviation is zero.
+&#35;DIV/0! - occurs if there are fewer than three data points, or the sample standard deviation is zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img46.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img46.png)
+
 
 
 ### COVARIANCE.P
 
 The COVARIANCE.P function retrieves population covariance, the average of the products of deviations for each data point pair in two data sets.
 
-Syntax:
+#### Syntax:
 
 COVARIANCE.P(array1,array2) where:
 
 * array1 is the first cell range of integers.
 * array2 is the second cell range of integers.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img47.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img47.png)
+
 
 
 ### COVARIANCE.S
 
 The COVARIANCE.S function returns the sample covariance, the average of the products of deviations for each data point pair in two data sets.
 
-Syntax:
+#### Syntax:
 
 COVARIANCE.S(array1,array2) where:
 
@@ -1068,23 +1061,23 @@ COVARIANCE.S(array1,array2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#N/A - occurs when values are different number of data points.
+&#35;N/A - occurs when values are different number of data points.
 
-#DIV/0! - occurs if either array1 or array2 is empty or contain only one data point each.
+&#35;DIV/0! - occurs if either array1 or array2 is empty or contain only one data point each.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img48.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img48.png)
+
 
 
 ### PERCENTILE.EXC
 
 The PERCENTILE.EXC function returns the k-th percentile of values in a range, where k is in the range of 0 to 1, exclusively.
 
-Syntax:
+#### Syntax:
 
 PERCENTILE.EXC(array, k) where:
 
@@ -1093,23 +1086,23 @@ PERCENTILE.EXC(array, k) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
+&#35;NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
-#VALUE! - occurs if k is non-numeric.
+&#35;VALUE! - occurs if k is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img49.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img49.png)
+
 
 
 ### PERCENTILE.INC
 
 The PERCENTILE.INC function returns the k-th percentile of values in a range, where k is in the range 0 to 1.
 
-Syntax:
+#### Syntax:
 
 PERCENTILE.INC(array,k) where:
 
@@ -1118,46 +1111,46 @@ PERCENTILE.INC(array,k) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
+&#35;NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
-#VALUE! - occurs if k is non-numeric.
+&#35;VALUE! - occurs if k is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img50.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img50.png)
+
 
 
 ### PERCENTRANK.EXC
 
 The PERCENTRANK.EXC function returns the rank of a value in a data set as a percentage (0 to 1, exclusively) of the data set.
 
-Syntax:
+#### Syntax:
 
 PERCENTRANK.EXC(array, x ) where:
 
 * array is the range of data that defines relative standing.
 * x is value for which you want to know the rank.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if this argument is empty.
+&#35;NUM! - occurs if this argument is empty.
 
-#NUM! - occurs if the argument is less than one.
+&#35;NUM! - occurs if the argument is less than one.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img51.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img51.png)
+
 
 
 ### STDEV.P
 
 The STDEV.P function calculates the standard deviation of a supplied set of values.
 
-Syntax:
+#### Syntax:
 
 STDEV.P(number1,[number2],...]) where:
 
@@ -1166,25 +1159,25 @@ STDEV.P(number1,[number2],...]) where:
 
 
 
-Remarks:
+#### Remarks:
 
 * Arguments can either be numbers or names, arrays, or references that contain numbers.
 * The standard deviation is calculated using the "n" method.
 * Arguments that are error values or text that cannot be translated into numbers cause errors.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png)
+
 
 
 ### STDEV.S
 
 The STDEV.S function calculates the sample standard deviation of a supplied set of values.
 
-Syntax:
+#### Syntax:
 
 STDEV.S(number1,[number2],...]) where:
 
@@ -1193,7 +1186,7 @@ STDEV.S(number1,[number2],...]) where:
 
 
 
-Remarks:
+#### Remarks:
 
 * Arguments can either be numbers or names, arrays, or references that contain numbers.
 * The standard deviation is calculated using the "n" method.
@@ -1201,17 +1194,17 @@ Remarks:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png)
+
 
 
 ### PERMUTATIONA
 
 The PERMUTATIONA function returns the number of permutations for a given number of objects (with repetitions) that can be selected from the total number of objects.
 
-Syntax:
+#### Syntax:
 
 PERMUTATIONA(number, number-chosen) where:
 
@@ -1220,23 +1213,23 @@ PERMUTATIONA(number, number-chosen) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if numeric arguments use data types that are non-numeric.
+&#35;VALUE! - occurs if numeric arguments use data types that are non-numeric.
 
-#NUM! - occurs if numeric arguments are values that are not valid.
+&#35;NUM! - occurs if numeric arguments are values that are not valid.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img54.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img54.png)
+
 
 
 ### NORMDIST
 
 The NORM.DIST function calculates the normal distribution for a supplied value of x, and a supplied distribution mean & standard deviation.
 
-Syntax:
+#### Syntax:
 
 NORM.DIST(x,mean,stdev,cumulative) where:
 
@@ -1247,16 +1240,16 @@ NORM.DIST(x,mean,stdev,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if mean or stdev is non-numeric.
+&#35;VALUE! - occurs if mean or stdev is non-numeric.
 
-#NUM! - occurs if stdev is equal to or less than zero.
+&#35;NUM! - occurs if stdev is equal to or less than zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img55.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img55.png)
+
 
 
 
@@ -1266,7 +1259,7 @@ Example:
 Returns theinverse of the normal cumulative distribution for the specified mean and standard deviation.
 
 
-Syntax:
+#### Syntax:
 
 NORMINV(probability, mean, stdev), where:
 
@@ -1276,33 +1269,33 @@ NORMINV(probability, mean, stdev), where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - if probability or stdev is equal to or less than zero, equal to or greater than 1.
+&#35;NUM! - if probability or stdev is equal to or less than zero, equal to or greater than 1.
 
-#VALUE! - if probability or mean or stdev is non-numeric.
+&#35;VALUE! - if probability or mean or stdev is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img56.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img56.png)
+
 
 
 ### NORM.S.DIST
 
 The NORM.S.DIST function returns the standard normal distribution.
 
-Syntax:
+#### Syntax:
 
 NORM.S.DIST(val, cumulative) where:
 
 * val is the value for which you want the distribution.
 * cumulative is a logical value that determines the form of the function.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img57.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img57.png)
+
 
 
 
@@ -1311,7 +1304,7 @@ Example:
 
 The NORM.S.INV function returns the inverse of the standard normal cumulative distribution.
 
-Syntax:
+#### Syntax:
 
 NORM.S.INV(probability) where:
 
@@ -1319,17 +1312,17 @@ NORM.S.INV(probability) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img58.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img58.png)
+
 
 
 ### WEIBULL.DIST
 
 The WEIBULL.DIST function returns the Weibull distribution.
 
-Syntax:
+#### Syntax:
 
 WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
@@ -1340,23 +1333,23 @@ WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if x is less than zero and if alpha or beta is equal to or less than zero.
+&#35;NUM! - occurs if x is less than zero and if alpha or beta is equal to or less than zero.
 
-#VALUE! - occurs if beta is non-numeric.
+&#35;VALUE! - occurs if beta is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img59.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img59.png)
+
 
 
 ### EXPON.DIST
 
 The EXPON.DIST function calculates the value of the probability density function or the cumulative distribution function for the exponential distribution.
 
-Syntax:
+#### Syntax:
 
 EXPON.DIST(x,y,cumulative) where:
 
@@ -1366,23 +1359,23 @@ EXPON.DIST(x,y,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if x is less than zero and if y is equal to or less than zero. 
+&#35;NUM! - occurs if x is less than zero and if y is equal to or less than zero. 
 
-#VALUE! - occurs if x or y is non-numeric.
+&#35;VALUE! - occurs if x or y is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png)
+
 
 
 ### GAMMA.DIST
 
 The GAMMA.DIST function returns either the cumulative distribution or the probability density function for the Gamma Distribution.
 
-Syntax:
+#### Syntax:
 
 GAMMA.DIST(x,y,z,cumulative) where:
 
@@ -1393,23 +1386,23 @@ GAMMA.DIST(x,y,z,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
+&#35;NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
-#VALUE! - occurs if x or y or z is non-numeric.
+&#35;VALUE! - occurs if x or y or z is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img61.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img61.png)
+
 
 
 ### GAMMA.INV
 
 The GAMMA.INV function returns the inverse of the Gamma Distribution.
 
-Syntax:
+#### Syntax:
 
 GAMMA.INV(x,y,z,cumulative) where
 
@@ -1420,46 +1413,46 @@ GAMMA.INV(x,y,z,cumulative) where
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
+&#35;NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
-#VALUE! - occurs if x or y or z is non-numeric
+&#35;VALUE! - occurs if x or y or z is non-numeric
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img62.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img62.png)
+
 
 
 ### GAMMALN.PRECISE
 
 The GAMMALN.PRECISE function returns the natural logarithm of the Gamma Distribution.
 
-Syntax:
+#### Syntax:
 
 GAMMALN.PRECISE( x ) where:
 
 * x is the positive numeric value that evaluates the function. 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if x is less than zero.
+&#35;NUM! - occurs if x is less than zero.
 
-#VALUE! - occurs if x is non-numeric.
+&#35;VALUE! - occurs if x is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img63.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img63.png)
+
 
 
 ### F.INV
 
 The F.INV function returns the inverse of the F probability distribution.
 
-Syntax:
+#### Syntax:
 
 F.INV(probability,degFreedom1,degFreedom2) where:
 
@@ -1469,23 +1462,23 @@ F.INV(probability,degFreedom1,degFreedom2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
+&#35;NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
-#VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
+&#35;VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png)
+
 
 
 ### F.INV.RT
 
 The F.INV.RT function calculates the inverse of the Cumulative F Distribution for a supplied probability.
 
-Syntax:
+#### Syntax:
 
 F.INV.RT(probability,degFreedom1,degFreedom2) where:
 
@@ -1495,23 +1488,23 @@ F.INV.RT(probability,degFreedom1,degFreedom2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
+&#35;NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
-#VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
+&#35;VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png)
+
 
 
 ### BINOM.INV
 
 The BINOM.INV function returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
 
-Syntax:
+#### Syntax:
 
 BINOM.INV(trial number,sp,value) where:
 
@@ -1521,23 +1514,23 @@ BINOM.INV(trial number,sp,value) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
+&#35;NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
 
-#VALUE! - occurs if trials, sp and value are non-numeric.
+&#35;VALUE! - occurs if trials, sp and value are non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png)
+
 
 
 ### HYPGEOM.DIST
 
 The HYPGEOM.DIST function returns the hypergeometric distribution for a specified number of successes from a population sample.
 
-Syntax:
+#### Syntax:
 
 HYPGEOM.DIST(S_sample,size,S- population,ps,cumulative) where:
 
@@ -1549,31 +1542,31 @@ HYPGEOM.DIST(S_sample,size,S- population,ps,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if S_sample < 0 or S_sample is greater than the lesser of size or S- population.
+&#35;NUM! - occurs if S_sample < 0 or S_sample is greater than the lesser of size or S- population.
 
-#NUM! - occurs if S_sample is less than 0.
+&#35;NUM! - occurs if S_sample is less than 0.
 
-#NUM! - occurs if size ≤ 0 or size > ps.
+&#35;NUM! - occurs if size ≤ 0 or size > ps.
 
-#NUM! - occurs if S- population ≤ 0 or S- population > ps.
+&#35;NUM! - occurs if S- population ≤ 0 or S- population > ps.
 
-#NUM! - occurs if ps ≤ 0.
+&#35;NUM! - occurs if ps ≤ 0.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png)
+
 
 
 ### LOGNORM.DIST
 
 The LOGNORM.DIST function calculates the Log-Normal Probability Density Function or the Cumulative Log-Normal Distribution Function for a supplied value of x.
 
-Syntax:
+#### Syntax:
 
 LOGNORM.DIST(x,mean,stdev,cumulative) where:
 
@@ -1584,23 +1577,23 @@ LOGNORM.DIST(x,mean,stdev,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x ≤ 0 or if stdev ≤ 0.
+&#35;NUM! - occurs if x ≤ 0 or if stdev ≤ 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img68.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img68.png)
+
 
 
 ### LOGNORM.INV
 
 The LOGNORM.INV function calculates the inverse of the Cumulative Log-Normal Distribution Function of x, for a supplied probability.
 
-Syntax:
+#### Syntax:
 
 LOGNORM.INV(probability, mean, stdev) where:
 
@@ -1610,23 +1603,23 @@ LOGNORM.INV(probability, mean, stdev) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
+&#35;NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png)
+
 
 
 ### CONFIDENCE.NORM
 
 The CONFIDENCE.NORM function uses a [Normal Distribution](http://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability and sample size.
 
-Syntax:
+#### Syntax:
 
 CONFIDENCE.NORM(alpha,stdev,size) where:
 
@@ -1636,25 +1629,25 @@ CONFIDENCE.NORM(alpha,stdev,size) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if alpha and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
+&#35;NUM! - occurs if alpha and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
 
-#DIV/0! - occurs if the size is equal to one.
+&#35;DIV/0! - occurs if the size is equal to one.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img70.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img70.png)
+
 
 
 ### CHISQ.DIST
 
 The CHISQ.DIST function calculates the Probability Density Function or the Cumulative Distribution Function for the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
 
-Syntax:
+#### Syntax:
 
 CHISQ.DIST(x,degFreedom,cumulative) where:
 
@@ -1664,48 +1657,48 @@ CHISQ.DIST(x,degFreedom,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
+&#35;NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png)
+
 
 
 ### CHISQ.DIST.RT
 
 The CHISQ.DIST.RT function calculates the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
 
-Syntax:
+#### Syntax:
 
 CHISQ.DIST.RT(x,degFreedom) where:
 
 * x is the value that evaluates the function.
 * degFreedom is the number of degrees of freedom.
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if either argument is non-numeric.
+&#35;VALUE! - occurs if either argument is non-numeric.
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
+&#35;NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png)
+
 
 
 ### F.DIST 
 
 The F.DIST function calculates the Probability Density Function or the Cumulative Distribution Function for the F Distribution.
 
-Syntax:
+#### Syntax:
 
 F.DIST(x,degFreedom1,degFreedom2,cumulative) where:
 
@@ -1716,23 +1709,23 @@ F.DIST(x,degFreedom1,degFreedom2,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x is negative, if degFreedom1< 1 and if degFreedom1< 1
+&#35;NUM! - occurs if x is negative, if degFreedom1< 1 and if degFreedom1< 1
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png)
+
 
 
 ### F.DIST.RT
 
 The F.DIST.RT function calculates the F Probability Distribution, which measures the degree of diversity between two data sets.
 
-Syntax:
+#### Syntax:
 
 F.DIST.RT(x, degFreedom1, degFreedom2) where:
 
@@ -1742,23 +1735,23 @@ F.DIST.RT(x, degFreedom1, degFreedom2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
+&#35;NUM! - occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png)
+
 
 
 ### MODE.MULT
 
 The MODE.MULT function returns a vertical array of the statistical modes (the most frequently occurring values) within a list of supplied numbers.
 
-Syntax:
+#### Syntax:
 
 MODE.MULT(number1) where:
 
@@ -1766,21 +1759,21 @@ MODE.MULT(number1) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#N/A - occurs if the data set contains no duplicate data points.
+&#35;N/A - occurs if the data set contains no duplicate data points.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png)
+
 
 
 ### CHISQ.TEST
 
 The CHISQ.TEST function function performs the chi-square test on two supplied data sets (of observed and expected frequencies), and returns the probability that the differences between the sets are simply due to sampling error. 
 
-Syntax:
+#### Syntax:
 
 CHISQ.TEST(O_range,E_range) where:
 
@@ -1789,10 +1782,10 @@ CHISQ.TEST(O_range,E_range) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png)
+
 
 
 
@@ -1801,7 +1794,7 @@ Example:
 
 The CHISQ.INV function returns the inverse of the left-tailed probability of the chi-squared distribution.
 
-Syntax:
+#### Syntax:
 
 CHISQ.INV(probability,degFreedom) where:
 
@@ -1810,23 +1803,23 @@ CHISQ.INV(probability,degFreedom) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if probability is is less than zero, if probability is greater than 1 and degFreedom is less than 1.
+&#35;NUM! - occurs if probability is is less than zero, if probability is greater than 1 and degFreedom is less than 1.
 
-#VALUE! - occurs if probability or degFreedom is non-numeric.
+&#35;VALUE! - occurs if probability or degFreedom is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png)
+
 
 
 ### CHISQ.INV.RT
 
 The CHISQ.INV.RT function calculates the inverse of the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
 
-Syntax:
+#### Syntax:
 
 CHISQ.INV.RT(probability, degFreedom) where:
 
@@ -1835,23 +1828,23 @@ CHISQ.INV.RT(probability, degFreedom) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if probability is is less than zero, if probability is greater than 1 and if degFreedom is less than 1.
+&#35;NUM! - occurs if probability is is less than zero, if probability is greater than 1 and if degFreedom is less than 1.
 
-#VALUE! - occurs if probability or degFreedom is non-numeric. 
+&#35;VALUE! - occurs if probability or degFreedom is non-numeric. 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img78.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img78.png)
+
 
 
 ### BINOM.DIST
 
 The BINOM.DIST function returns the Binomial Distribution probability for a given number of successes from a specified number of trials. 
 
-Syntax:
+#### Syntax:
 
 BINOM.DIST (trial number,sp,value, cumulative) where:
 
@@ -1864,40 +1857,40 @@ BINOM.DIST (trial number,sp,value, cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
+&#35;NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
 
-#VALUE! - occurs if trials, sp and value are non-numeric.
+&#35;VALUE! - occurs if trials, sp and value are non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img79.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img79.png)
+
 
 
 ### RANK.AVG
 
 The RANK.AVG function returns the statistical rank of a given value, within a supplied array of values. If there are duplicate values in the list, the average rank is returned. 
 
-Syntax:
+#### Syntax:
 
 RANK.AVG(number,ref) where:
 
 * number is the rank you want to find.
 * ref is a reference to, a list of numbers.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png)
+
 
 
 ### QUARTILE.EXC
 
 The QUARTILE.EXC function returns a requested quartile of a supplied range of values, based on a percentile range of 0 to 1 exclusive.
 
-Syntax:
+#### Syntax:
 
 QUARTILE.EXC(array, quart) where:
 
@@ -1906,14 +1899,14 @@ QUARTILE.EXC(array, quart) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
+&#35;NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/15.png](Calculate-functions_images/Calculate-functions_img81.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/15.png](Calculate-functions_images/Calculate-functions_img81.png)
+
 
 
 ### QUARTILE.INC
@@ -1927,23 +1920,23 @@ QUARTILE.INC(array,quart) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
+&#35;NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/16.png](Calculate-functions_images/Calculate-functions_img82.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/16.png](Calculate-functions_images/Calculate-functions_img82.png)
+
 
 
 ### NEGBINOM.DIST
 
 The NEGBINOM.DIST function calculates the probability mass function or the cumulative distribution function for the Negative Binomial Distribution.
 
-Syntax:
+#### Syntax:
 
 NEGBINOM.DIST(F_number,S_number,S_probability,cumulative) where:
 
@@ -1952,10 +1945,10 @@ NEGBINOM.DIST(F_number,S_number,S_probability,cumulative) where:
 * S_probability s is the probability of a success.
 * cumulative is a logical value that determines the form of the function.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img83.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img83.png)
+
 
 
 ### POISSON.DIST
@@ -1970,23 +1963,23 @@ POISSON.DIST(x,mean,cumulative) where
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if x is not an integer.
+&#35;VALUE! - occurs if x is not an integer.
 
-#NUM! - occurs if x or mean is non-numeric and s if x < 0.
+&#35;NUM! - occurs if x or mean is non-numeric and s if x < 0.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/17.png](Calculate-functions_images/Calculate-functions_img84.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/17.png](Calculate-functions_images/Calculate-functions_img84.png)
+
 
 
 ### ZTEST
 
 ZTEST function returns the one-tailed probability-value of a z-test.
 
-Syntax:
+#### Syntax:
 
 ZTEST(a1,T_value,sigma) where:
 
@@ -1994,17 +1987,17 @@ ZTEST(a1,T_value,sigma) where:
 * T_value is the value to test.
 * sigma  is the population (known) standard deviation.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/18.png](Calculate-functions_images/Calculate-functions_img85.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/18.png](Calculate-functions_images/Calculate-functions_img85.png)
+
 
 
 ### RANK.EQ
 
 The RANK.EQ function returns the statistical rank of a given value, within a supplied array of values.
 
-Syntax:
+#### Syntax:
 
 RANK.EQ( number, ref ) where:
 
@@ -2013,17 +2006,17 @@ RANK.EQ( number, ref ) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img86.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img86.png)
+
 
 
 ### CHIDIST
 
 The CHIDIST function calculates the right-tailed probability of the chi-square distribution.
 
-Syntax:
+#### Syntax:
 
 CHIDIST(x, degFreedom) where:
 
@@ -2032,14 +2025,14 @@ CHIDIST(x, degFreedom) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the  x is negative or degFreedom argument is invalid.
+&#35;NUM! - occurs if the  x is negative or degFreedom argument is invalid.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/19.png](Calculate-functions_images/Calculate-functions_img87.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/19.png](Calculate-functions_images/Calculate-functions_img87.png)
+
 
 
 ## Engineering Functions
@@ -2048,30 +2041,30 @@ Example:
 
 The DEC2BIN function converts a decimal number into a binary number.
 
-Syntax:
+#### Syntax:
 
 DEC2BIN(num,places) where:
 
 * num is the decimal integer you want to convert. 
 * places is the number of characters to use.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-#VALUE! - occurs if number  or places is non-numeric, if DEC2BIN requires more than the number of characters specified in places.
+&#35;VALUE! - occurs if number  or places is non-numeric, if DEC2BIN requires more than the number of characters specified in places.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img88.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img88.png)
+
 
 
 ### DEC2OCT
 
 The DEC2OCT function converts a decimal number into an octal number.
 
-Syntax:
+#### Syntax:
 
 DEC2OCT(num, places) where:
 
@@ -2080,16 +2073,16 @@ DEC2OCT(num, places) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-#VALUE! - occurs if number  or places is non-numeric, if DEC2OCT requires more than the number of characters specified in places.
+&#35;VALUE! - occurs if number  or places is non-numeric, if DEC2OCT requires more than the number of characters specified in places.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/21.png](Calculate-functions_images/Calculate-functions_img89.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/21.png](Calculate-functions_images/Calculate-functions_img89.png)
+
 
 
 ### DEC2HEX
@@ -2103,23 +2096,23 @@ DEC2HEX(num, places ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-#VALUE! - occurs if number or places is non-numeric, if DEC2HEX requires more than the number of characters specified in places.
+&#35;VALUE! - occurs if number or places is non-numeric, if DEC2HEX requires more than the number of characters specified in places.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img90.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img90.png)
+
 
 
 ### BIN2DEC
 
 The BIN2DEC function converts a binary number into a decimal number.
 
-Syntax:
+#### Syntax:
 
 BIN2DEC(num) where:
 
@@ -2127,38 +2120,38 @@ BIN2DEC(num) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid binary number, or if number contains more than 10 characters.
+&#35;NUM! - occurs if number is not a valid binary number, or if number contains more than 10 characters.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img91.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img91.png)
+
 
 
 ### BIN2OCT
 
 The BIN2OCT function converts a binary number into an octal number.
 
-Syntax:
+#### Syntax:
 
 BIN2OCT(num, places) where:
 
 * num is the decimal integer you want to convert. 
 * places is the number of characters to use.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/24.png](Calculate-functions_images/Calculate-functions_img92.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/24.png](Calculate-functions_images/Calculate-functions_img92.png)
+
 
 
 ### BIN2HEX
 
 The BIN2HEX function converts a binary number into a hexadecimal.
 
-Syntax:
+#### Syntax:
 
 BIN2HEX(num places) where:
 
@@ -2167,23 +2160,23 @@ BIN2HEX(num places) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid binary number, if if places is negative.
+&#35;NUM! - occurs if number is not a valid binary number, if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/25.png](Calculate-functions_images/Calculate-functions_img93.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/25.png](Calculate-functions_images/Calculate-functions_img93.png)
+
 
 
 ### HEX2BIN
 
 The HEX2BIN function converts a hexadecimal number into a binary number. 
 
-Syntax:
+#### Syntax:
 
 HEX2BIN(num, places ) where:
 
@@ -2192,23 +2185,23 @@ HEX2BIN(num, places ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid binary number, if if places is negative.
+&#35;NUM! - occurs if number is not a valid binary number, if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.7.png](Calculate-functions_images/Calculate-functions_img94.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/5.7.png](Calculate-functions_images/Calculate-functions_img94.png)
+
 
 
 ### HEX2OCT
 
 The HEX2OCT function converts a hexadecimal number into an octal number. 
 
-Syntax:
+#### Syntax:
 
 HEX2OCT(num, places) where:
 
@@ -2217,23 +2210,23 @@ HEX2OCT(num, places) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid hexadecimal number and if if places is negative.
+&#35;NUM! - occurs if number is not a valid hexadecimal number and if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/26.png](Calculate-functions_images/Calculate-functions_img95.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/26.png](Calculate-functions_images/Calculate-functions_img95.png)
+
 
 
 ### HEX2DEC
 
 The HEX2DEC function converts a hexadecimal number into a decimal number.
 
-Syntax:
+#### Syntax:
 
 HEX2DEC(num) where:
 
@@ -2241,67 +2234,67 @@ HEX2DEC(num) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid hexadecimal number.
+&#35;NUM! - occurs if number is not a valid hexadecimal number.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/27.png](Calculate-functions_images/Calculate-functions_img96.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/27.png](Calculate-functions_images/Calculate-functions_img96.png)
+
 
 
 ### OCT2BIN
 
 The OCT2BIN function converts an octal number into a binary number.
 
-Syntax:
+#### Syntax:
 
 OCT2BIN(nuM, places ) where:
 
 * num is the octal number you want to convert. 
 * places is the number of characters to use.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid octal number and if if places is negative.
+&#35;NUM! - occurs if number is not a valid octal number and if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/28.png](Calculate-functions_images/Calculate-functions_img97.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/28.png](Calculate-functions_images/Calculate-functions_img97.png)
+
 
 
 ### OCT2HEX
 
 The OCT2HEX function converts an octal number into a hexadecimal number.
 
-Syntax:
+#### Syntax:
 
 OCT2HEX(num, places) where:
 
 * num is the octal number you want to convert. 
 * places is the number of characters to use.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid octal number and if if places is negative.
+&#35;NUM! - occurs if number is not a valid octal number and if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/29.png](Calculate-functions_images/Calculate-functions_img98.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/29.png](Calculate-functions_images/Calculate-functions_img98.png)
+
 
 
 ### OCT2DEC
 
 The decimal value converts to an octal number.
 
-Syntax:
+#### Syntax:
 
 OCT2DEC(number) where:
 
@@ -2309,21 +2302,21 @@ OCT2DEC(number) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if number is not a valid octal number.
+&#35;NUM! - occurs if number is not a valid octal number.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/30.png](Calculate-functions_images/Calculate-functions_img99.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/30.png](Calculate-functions_images/Calculate-functions_img99.png)
+
 
 
 ### IMABS
 
 The IMABS function calculates the absolute value of a complex number in a + bi  or a + bj text format. 
 
-Syntax:
+#### Syntax:
 
 IMABS(inum) where:
 
@@ -2331,21 +2324,21 @@ IMABS(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/31.png](Calculate-functions_images/Calculate-functions_img100.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/31.png](Calculate-functions_images/Calculate-functions_img100.png)
+
 
 
 ### IMAGINARY
 
 The IMAGINARY function returns the imaginary coefficient of a complex number in a + bi or a+bj text format. 
 
-Syntax:
+#### Syntax:
 
 IMAGINARY(inum) where:
 
@@ -2353,21 +2346,21 @@ IMAGINARY(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/32.png](Calculate-functions_images/Calculate-functions_img101.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/32.png](Calculate-functions_images/Calculate-functions_img101.png)
+
 
 
 ### IMREAL
 
 The IMREAL function returns the real coefficient of a complex number in a + bi  or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMREAL(inum) where:
 
@@ -2375,21 +2368,21 @@ IMREAL(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/33.png](Calculate-functions_images/Calculate-functions_img102.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/33.png](Calculate-functions_images/Calculate-functions_img102.png)
+
 
 
 ### COMPLEX
 
 The COMPLEX function converts real and imaginary coefficients into a complex number of the form a + bi  or a + bj. 
 
-Syntax:
+#### Syntax:
 
 COMPLEX(num,inum, suffix ) where:
 
@@ -2399,103 +2392,103 @@ COMPLEX(num,inum, suffix ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if num or inum is non-numeric, if suffix is neither "i" nor "j".
+&#35;VALUE! - occurs if num or inum is non-numeric, if suffix is neither "i" nor "j".
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/34.png](Calculate-functions_images/Calculate-functions_img103.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/34.png](Calculate-functions_images/Calculate-functions_img103.png)
+
 
 
 ### IMSUM
 
 The IMSUM function calculates the sum of two or more complex numbers in a + bi  or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMSUM(inum1,inum2,...) where:
 
 * inum1,inum2,... are 1 to 29 complex numbers to add.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/35.png](Calculate-functions_images/Calculate-functions_img104.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/35.png](Calculate-functions_images/Calculate-functions_img104.png)
+
 
 
 ### IMSUB
 
 The IMSUB function calculates the difference of two complex numbers in a + bi  or a + bj text format. 
 
-Syntax:
+#### Syntax:
 
 IMSUB(inumber1,inumber2) where:
 
 * inum1 is the complex number from which to subtract inum1. 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.18.png](Calculate-functions_images/Calculate-functions_img105.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/5.18.png](Calculate-functions_images/Calculate-functions_img105.png)
+
 
 
 ### IMPRODUCT
 
 The IMPRODUCT function calculates the product of 1 to 255 complex numbers in a + bi  or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMPRODUCT(inum1, inum2,... ) where:
 
 * inum1, inum2,... are 1 to 255 complex numbers to multiply.
 * Inum2 is the complex number to subtract from inumber1.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img106.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img106.png)
+
 
 
 ### IMDIV
 
 The IMDIV function calculates the quotient of two complex numbers in a + bi  or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMDIV(inum1, inum2) where:
 
 * inum1 is the complex numerator or dividend.
 * Inum2  is the complex denominator or divisor.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/36.png](Calculate-functions_images/Calculate-functions_img107.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/36.png](Calculate-functions_images/Calculate-functions_img107.png)
+
 
 
 ### IMCONJUGATE
 
 The IMCONJUGATE function calculates the complex conjugate of a complex number in a + bi  or a + bj text format. 
 
-Syntax:
+#### Syntax:
 
 IMCONJUGATE(inum) where:
 
 * inum is a complex number for which you want the conjugate.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/37.png](Calculate-functions_images/Calculate-functions_img108.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/37.png](Calculate-functions_images/Calculate-functions_img108.png)
+
 
 
 ### IMSQRT
 
 The IMSQRT function calculates the square root of a complex number in a + bi  or a + bj text format. 
 
-Syntax:
+#### Syntax:
 
 IMSQRT(inum) where:
 
@@ -2503,26 +2496,26 @@ IMSQRT(inum) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/38.png](Calculate-functions_images/Calculate-functions_img109.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/38.png](Calculate-functions_images/Calculate-functions_img109.png)
+
 
 
 ### IMARGUMENT
 
 The IMARGUMENT function retrieves the argument Theta, an angle expressed in radians.
 
-Syntax:
+#### Syntax:
 
 IMARGUMENT(inum) where:
 
 * inum is a complex number for which you want the argument Theta.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img110.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img110.png)
+
 
 
 ### IMSIN
@@ -2535,12 +2528,12 @@ IMSIN(inum) where:
 
 * inum is a complex number for which you want the sine.
 
-Example:
+#### Example:
 
 
 
-{{ '![](Calculate-functions_images/Calculate-functions_img111.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img111.png)
+
 
 
 ### IMCSC
@@ -2555,39 +2548,39 @@ IMCSC(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in the a+bi or a+bj text format.  
+&#35;NUM! - occurs if inumber is a value that is not in the a+bi or a+bj text format.  
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/40.png](Calculate-functions_images/Calculate-functions_img112.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/40.png](Calculate-functions_images/Calculate-functions_img112.png)
+
 
 
 ### IMCOS
 
 The IMCOS function retrieves the cosine of a complex number in a + bi  or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMCOS(inum) where:
 
 * inum is a complex number for which you want the cosine.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/41.png](Calculate-functions_images/Calculate-functions_img113.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/41.png](Calculate-functions_images/Calculate-functions_img113.png)
+
 
 
 ### IMSEC
 
 The IMSEC function retrieves the secant of a complex number in a+bi or a+bj text format.
 
-Syntax:
+#### Syntax:
 
 IMSEC(inum) where:
 
@@ -2595,45 +2588,45 @@ IMSEC(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img114.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img114.png)
+
 
 
 ### IMTAN
 
 The IMTAN function retrieves the tangent of a complex number in a + bi or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMTAN(inum) where
 
 * Inum is a complex number for which you want the cotangent.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/43.png](Calculate-functions_images/Calculate-functions_img115.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/43.png](Calculate-functions_images/Calculate-functions_img115.png)
+
 
 
 ### IMCOT
 
 The IMCOT function calculates the cotangent of a complex number in a + bi or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMCOT(inum) where
 
@@ -2641,23 +2634,23 @@ IMCOT(inum) where
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inum is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inum is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/44.png](Calculate-functions_images/Calculate-functions_img116.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/44.png](Calculate-functions_images/Calculate-functions_img116.png)
+
 
 
 ### IMSINH
 
 The IMSINH function calculates the hyperbolic sine of a complex number in a + bi or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMSINH(inum) where:
 
@@ -2665,23 +2658,23 @@ IMSINH(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/45.png](Calculate-functions_images/Calculate-functions_img117.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/45.png](Calculate-functions_images/Calculate-functions_img117.png)
+
 
 
 ### IMCSCH
 
 The IMCSCH function calculates the hyperbolic cosecant of a complex number in a + bi or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMCSCH(inum) where:
 
@@ -2689,23 +2682,23 @@ IMCSCH(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/46.png](Calculate-functions_images/Calculate-functions_img118.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/46.png](Calculate-functions_images/Calculate-functions_img118.png)
+
 
 
 ### IMCOSH
 
 The IMCOSH function calculates the hyperbolic cosine of a complex number in a + bi or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMCOSH(inum) where: 
 
@@ -2713,23 +2706,23 @@ IMCOSH(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/47.png](Calculate-functions_images/Calculate-functions_img119.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/47.png](Calculate-functions_images/Calculate-functions_img119.png)
+
 
 
 ### IMSECH
 
 The IMSECH function calculates the hyperbolic secant of a complex number in a + bi or a + bj text format.
 
-Syntax:
+#### Syntax:
 
 IMSECH(inum) where:
 
@@ -2737,23 +2730,23 @@ IMSECH(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/48.png](Calculate-functions_images/Calculate-functions_img120.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/48.png](Calculate-functions_images/Calculate-functions_img120.png)
+
 
 
 ### IMTANH
 
 The IMTANH function calculates the hyperbolic tangent of the complex number z. 
 
-Syntax:
+#### Syntax:
 
 IMTANH(inum) where: 
 
@@ -2761,23 +2754,23 @@ IMTANH(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/49.png](Calculate-functions_images/Calculate-functions_img121.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/49.png](Calculate-functions_images/Calculate-functions_img121.png)
+
 
 
 ### IMCOTH
 
 The IMCOTH function calculates the hyperbolic cotangent of the complex number z. 
 
-Syntax:
+#### Syntax:
 
 IMCOTH(inum) where:
 
@@ -2785,23 +2778,23 @@ IMCOTH(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/50.png](Calculate-functions_images/Calculate-functions_img122.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/50.png](Calculate-functions_images/Calculate-functions_img122.png)
+
 
 
 ### IMLOG10
 
 The IMLOG10 function calculates the common logarithm (base 10) of a complex number z.
 
-Syntax:
+#### Syntax:
 
 IMLOG10(inum) where:
 
@@ -2809,21 +2802,21 @@ IMLOG10(inum) where:
 
 
 
-Remarks: 
+#### Remarks: 
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/51.png](Calculate-functions_images/Calculate-functions_img123.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/51.png](Calculate-functions_images/Calculate-functions_img123.png)
+
 
 
 ### IMLOG2
 
 The IMLOG2 function calculates the base-2 logarithm of a complex number z.
 
-Syntax:
+#### Syntax:
 
 IMLOG2(inum) where:
 
@@ -2831,21 +2824,21 @@ IMLOG2(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format.
+&#35;NUM! - occurs if inumber is not in the complex format.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.37.png](Calculate-functions_images/Calculate-functions_img124.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/5.37.png](Calculate-functions_images/Calculate-functions_img124.png)
+
 
 
 ### IMLN
 
 The IMLN function calculates the natural logarithm of a complex number z.
 
-Syntax:
+#### Syntax:
 
 IMLN(inum) where:
 
@@ -2853,21 +2846,21 @@ IMLN(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/53.png](Calculate-functions_images/Calculate-functions_img125.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/53.png](Calculate-functions_images/Calculate-functions_img125.png)
+
 
 
 ### IMEXP
 
 The IMEXP function calculates the exponential of a complex number z.
 
-Syntax:
+#### Syntax:
 
 IMEXP(inum) where:
 
@@ -2875,21 +2868,21 @@ IMEXP(inum) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/54.png](Calculate-functions_images/Calculate-functions_img126.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/54.png](Calculate-functions_images/Calculate-functions_img126.png)
+
 
 
 ### IMPOWER
 
 The IMPOWER function calculates a complex number in a + bi or a + bj text format raised to a power. 
 
-Syntax:
+#### Syntax:
 
 IMPOWER(inum,num) where:
 
@@ -2898,23 +2891,23 @@ IMPOWER(inum,num) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
-#VALUE! - occurs if number is non-numeric.
+&#35;VALUE! - occurs if number is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/55.png](Calculate-functions_images/Calculate-functions_img127.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/55.png](Calculate-functions_images/Calculate-functions_img127.png)
+
 
 
 ### GESTEP
 
 The GESTEP function tests whether a supplied number is greater than a supplied step size and returns 1 if number ≥ step; returns 0 (zero) otherwise.
 
-Syntax:
+#### Syntax:
 
 GESTEP(num, step ) where:
 
@@ -2923,60 +2916,60 @@ GESTEP(num, step ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/56.png](Calculate-functions_images/Calculate-functions_img128.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/56.png](Calculate-functions_images/Calculate-functions_img128.png)
+
 
 
 ### DELTA
 
 The DELTA function tests two numbers for equality and returns the [Kronecker Delta](http://en.wikipedia.org/wiki/Kronecker_delta). Returns 1 if a =b; returns 0 otherwise.
 
-Syntax:
+#### Syntax:
 
 DELTA(num1,num2) where:
 
 * num1 is the first number.
 * num2 is the second number.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/57.png](Calculate-functions_images/Calculate-functions_img129.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/57.png](Calculate-functions_images/Calculate-functions_img129.png)
+
 
 
 ### BITAND
 
 The BITAND function returns a bitwise 'AND' of two numbers.
 
-Syntax:
+#### Syntax:
 
 BITAND(num1,num2) where:
 
 * num1 and num2 should be in decimal format.
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/58.png](Calculate-functions_images/Calculate-functions_img130.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/58.png](Calculate-functions_images/Calculate-functions_img130.png)
+
 
 
 ### BITOR
 
 The BITOR function retrieves a bitwise 'OR' of two numbers.
 
-Syntax:
+#### Syntax:
 
 BITOR(num1, num2) where:
 
@@ -2984,23 +2977,23 @@ BITOR(num1, num2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img131.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img131.png)
+
 
 
 ### BITXOR
 
 The BITXOR function retrieves a bitwise 'XOR' of two numbers.
 
-Syntax:
+#### Syntax:
 
 BITXOR(num1,num2b) where:
 
@@ -3008,23 +3001,23 @@ BITXOR(num1,num2b) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/60.png](Calculate-functions_images/Calculate-functions_img132.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/60.png](Calculate-functions_images/Calculate-functions_img132.png)
+
 
 
 ### BITLSHIFT
 
 The BITLSHIFT function retrieves a number shifted left by the specified number of bits.
 
-Syntax:
+#### Syntax:
 
 BITLSHIFT(num1,num2) where:
 
@@ -3033,23 +3026,23 @@ BITLSHIFT(num1,num2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/61.png](Calculate-functions_images/Calculate-functions_img133.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/61.png](Calculate-functions_images/Calculate-functions_img133.png)
+
 
 
 ### BITRSHIFT
 
 The BITRSHIFT function retrieves a number shifted right by the specified number of bits.
 
-Syntax:
+#### Syntax:
 
 BITRSHIFT(num1,num2) where:
 
@@ -3058,23 +3051,23 @@ BITRSHIFT(num1,num2) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/62.png](Calculate-functions_images/Calculate-functions_img134.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/62.png](Calculate-functions_images/Calculate-functions_img134.png)
+
 
 
 ### ERF
 
 The ERF function calculates the Error Function, integrated between two supplied limits. 
 
-Syntax:
+#### Syntax:
 
 ERF(lowerLimit, upperLimit ) where:
 
@@ -3083,23 +3076,23 @@ ERF(lowerLimit, upperLimit ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if lowerLimit or upperLimit  is non-numeric.
+&#35;VALUE! - occurs if lowerLimit or upperLimit  is non-numeric.
 
-#NUM! - occurs if lowerLimit  or upperLimit  is negative.
+&#35;NUM! - occurs if lowerLimit  or upperLimit  is negative.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/63.png](Calculate-functions_images/Calculate-functions_img135.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/63.png](Calculate-functions_images/Calculate-functions_img135.png)
+
 
 
 ### ERF.PRECISE
 
 The ERF.PRECISE function calculates the Error Function, integrated between a supplied lower or upper limit and 0.
 
-Syntax:
+#### Syntax:
 
 ERF.PRECISE(a) where:
 
@@ -3107,21 +3100,21 @@ ERF.PRECISE(a) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - a is non-numeric
+&#35;VALUE! - a is non-numeric
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/64.png](Calculate-functions_images/Calculate-functions_img136.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/64.png](Calculate-functions_images/Calculate-functions_img136.png)
+
 
 
 ### BESSELI
 
 The BESSELI function calculates the [modified Bessel functions](http://en.wikipedia.org/wiki/Bessel_function). These functions are the equivalent of the [Bessel functions](http://en.wikipedia.org/wiki/Bessel_function), evaluated for purely imaginary arguments.
 
-Syntax:
+#### Syntax:
 
 BESSELI(a,n) where:
 
@@ -3130,23 +3123,23 @@ BESSELI(a,n) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/65.png](Calculate-functions_images/Calculate-functions_img137.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/65.png](Calculate-functions_images/Calculate-functions_img137.png)
+
 
 
 ### BESSELJ
 
 The BESSELJ function calculates the [Bessel function](http://en.wikipedia.org/wiki/Bessel_function), Jn(x), for a specified order and a given value of x.
 
-Syntax:
+#### Syntax:
 
 BESSELJ(a,n) where: 
 
@@ -3155,23 +3148,23 @@ BESSELJ(a,n) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/66.png](Calculate-functions_images/Calculate-functions_img138.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/66.png](Calculate-functions_images/Calculate-functions_img138.png)
+
 
 
 ### BESSELY
 
 The BESSELY function calculates for a specified order and value of x.
 
-Syntax:
+#### Syntax:
 
 BESSELY(a,n) where: 
 
@@ -3180,23 +3173,23 @@ BESSELY(a,n) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/67.png](Calculate-functions_images/Calculate-functions_img139.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/67.png](Calculate-functions_images/Calculate-functions_img139.png)
+
 
 
 ### BESSELK
 
 The BESSELK function retrieves the modified Bessel function K n(x), which is equivalent to the Bessel functions evaluated for purely imaginary arguments. 
 
-Syntax:
+#### Syntax:
 
 BESSELK(x,n) where:
 
@@ -3205,23 +3198,23 @@ BESSELK(x,n) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/68.png](Calculate-functions_images/Calculate-functions_img140.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/68.png](Calculate-functions_images/Calculate-functions_img140.png)
+
 
 
 ### CONVERT
 
 The CONVERT function converts a number from one unit type (e.g. Yards) to another unit type (e.g. Meters). 
 
-Syntax:
+#### Syntax:
 
 CONVERT(num,fromUnit,toUnit) where:
 
@@ -3231,18 +3224,18 @@ CONVERT(num,fromUnit,toUnit) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if the input data types are incorrect.
+&#35;VALUE! - occurs if the input data types are incorrect.
 
-#N/A - occurs if the unit does not exist or are in different groups.
+&#35;N/A - occurs if the unit does not exist or are in different groups.
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/69.png](Calculate-functions_images/Calculate-functions_img141.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/69.png](Calculate-functions_images/Calculate-functions_img141.png)
+
 
 
 ## Web Functions
@@ -3251,7 +3244,7 @@ Example:
 
 The ENCODEURL function retrieves a URL-encoded string.
 
-Syntax:
+#### Syntax:
 
 ENCODEURL(name) where:
 
@@ -3259,10 +3252,10 @@ ENCODEURL(name) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.1.png](Calculate-functions_images/Calculate-functions_img142.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.1.png](Calculate-functions_images/Calculate-functions_img142.png)
+
 
 
 
@@ -3271,7 +3264,7 @@ Example:
 
 The FILTERXML function retrieves specific data from the XML content by using the specified XPath.
 
-Syntax:
+#### Syntax:
 
 FILTERXML(xml, xpath) where:
 
@@ -3280,21 +3273,21 @@ FILTERXML(xml, xpath) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
+&#35;VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.2.png](Calculate-functions_images/Calculate-functions_img143.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.2.png](Calculate-functions_images/Calculate-functions_img143.png)
+
 
 
 ### WEBSERVICE
 
 WEBSERVICE function retrieves data from a web service on the Internet.
 
-Syntax:
+#### Syntax:
 
 WEBSERVICE(url) where:
 
@@ -3302,14 +3295,14 @@ WEBSERVICE(url) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
+&#35;VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.3.png](Calculate-functions_images/Calculate-functions_img144.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.3.png](Calculate-functions_images/Calculate-functions_img144.png)
+
 
 
 ## Text Functions
@@ -3318,23 +3311,23 @@ Example:
 
 The ASC function changes the double-byte characters to single-byte characters for DBCS languages.
 
-Syntax:
+#### Syntax:
 
 ASC(text) where:
 
 * text is the text you want to change.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/70.png](Calculate-functions_images/Calculate-functions_img145.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/70.png](Calculate-functions_images/Calculate-functions_img145.png)
+
 
 
 ### CODE
 
 The CODE function converts the first character of a supplied text string into numeric character set code.
 
-Syntax:
+#### Syntax:
 
 CODE(name) where:
 
@@ -3342,17 +3335,17 @@ CODE(name) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/71.png](Calculate-functions_images/Calculate-functions_img146.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/71.png](Calculate-functions_images/Calculate-functions_img146.png)
+
 
 
 ### FINDB
 
 The FINDB function finds one text string (text1) within another text string (text2) and returns the number of the starting position of text1, based on the number of bytes each character uses, from the first character of text2. 
 
-Syntax:
+#### Syntax:
 
 FINDB(text1,text2, num) where:
 
@@ -3362,21 +3355,21 @@ FINDB(text1,text2, num) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if text1 does not appear in text2 and  if num is not greater than zero.
+&#35;VALUE! - occurs if text1 does not appear in text2 and  if num is not greater than zero.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/72.png](Calculate-functions_images/Calculate-functions_img147.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/72.png](Calculate-functions_images/Calculate-functions_img147.png)
+
 
 
 ### JIS
 
 The JIS function changes single-byte English letters or katakana within a character string to double-byte characters. This function is a Japanese-specific feature.
 
-Syntax:
+#### Syntax:
 
 JIS(name) where:
 
@@ -3384,17 +3377,17 @@ JIS(name) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.4.png](Calculate-functions_images/Calculate-functions_img148.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/7.4.png](Calculate-functions_images/Calculate-functions_img148.png)
+
 
 
 ### LEFTB
 
 The LEFTB function returns the first character or characters in a text string, based on the number of bytes you specify for double-byte character set (DBCS) languages.
 
-Syntax:
+#### Syntax:
 
 LEFTB(text, bytes) where:
 
@@ -3403,17 +3396,17 @@ LEFTB(text, bytes) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.5.png](Calculate-functions_images/Calculate-functions_img149.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/7.5.png](Calculate-functions_images/Calculate-functions_img149.png)
+
 
 
 ### LENB
 
 The LENB function returns the number of bytes used to represent the characters in a text string for DBCS languages.
 
-Syntax:
+#### Syntax:
 
 LENB(name) where:
 
@@ -3421,19 +3414,19 @@ LENB(name) where:
 
 
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/74.png](Calculate-functions_images/Calculate-functions_img150.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/74.png](Calculate-functions_images/Calculate-functions_img150.png)
+
 
 
 ### MIDB
 
 The MIDB function returns a specific number of characters from a text string, starting at the position you specify, based on the number of bytes you specify for double-byte character set (DBCS) languages.
 
-Syntax:
+#### Syntax:
 
 MIDB(text, startNum, numBytes) where:
 
@@ -3441,17 +3434,17 @@ MIDB(text, startNum, numBytes) where:
 * startNum is the position of the first character that you want to extract in text.
 * numBytes specifies the number of characters you want in bytes.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/75.png](Calculate-functions_images/Calculate-functions_img151.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/75.png](Calculate-functions_images/Calculate-functions_img151.png)
+
 
 
 ### NUMBERVALUE
 
 The NUMBERVALUE function converts text to a number in a locale-independent way.
 
-Syntax:
+#### Syntax:
 
 NUMBERVALUE(text) where,
 
@@ -3459,37 +3452,37 @@ NUMBERVALUE(text) where,
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if any of the arguments are not valid.
+&#35;VALUE! - occurs if any of the arguments are not valid.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/76.png](Calculate-functions_images/Calculate-functions_img152.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/76.png](Calculate-functions_images/Calculate-functions_img152.png)
+
 
 
 ### PROPER
 
 The PROPER function changes the first letter of text into a capital letter and following letters changes to lowercases.
 
-Syntax:
+#### Syntax:
 
 PROPER(text) where:
 
 * text is the string which you want to capitalize the first letter.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/77.png](Calculate-functions_images/Calculate-functions_img153.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/77.png](Calculate-functions_images/Calculate-functions_img153.png)
+
 
 
 ### REPLACE
 
 The REPLACE function replaces a certain part of text with a different part of text based on the number of characters given.
 
-Syntax:
+#### Syntax:
 
 REPLACE(oldText, startNum, numChars, newText) where:
 
@@ -3498,17 +3491,17 @@ REPLACE(oldText, startNum, numChars, newText) where:
 * numChars is the number of characters that is need to be replaced
 * newText is the text that replaces the character in old text.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/78.png](Calculate-functions_images/Calculate-functions_img154.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/78.png](Calculate-functions_images/Calculate-functions_img154.png)
+
 
 
 ### REPLACEB
 
 The REPLACEB function replaces a certain part of text with a different part of text based on the number of bytes given.
 
-Syntax:
+#### Syntax:
 
 REPLACEB(oldText, startNum, numBytes, newText) where:
 
@@ -3517,17 +3510,17 @@ REPLACEB(oldText, startNum, numBytes, newText) where:
 * numChars is the number of bytes that is need to be replaced,
 * newText is the text that replaces the character in old text.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/79.png](Calculate-functions_images/Calculate-functions_img155.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/79.png](Calculate-functions_images/Calculate-functions_img155.png)
+
 
 
 ### REPT
 
 The REPT function returns a supplied text string, repeated a specified number of times.
 
-Syntax:
+#### Syntax:
 
 REPT(string, number) where:
 
@@ -3536,21 +3529,21 @@ REPT(string, number) where:
 
 
 
-Remarks:
+#### Remarks:
 
 Blank text - occurs if number is zero.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/80.png](Calculate-functions_images/Calculate-functions_img156.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/80.png](Calculate-functions_images/Calculate-functions_img156.png)
+
 
 
 ### RIGHTB
 
 The RIGHTB function returns the last character or characters in a string, based on the number of bytes you specify for double-byte character set (DBCS) languages.
 
-Syntax:
+#### Syntax:
 
 RIGHTB(string, num) where:
 
@@ -3559,17 +3552,17 @@ RIGHTB(string, num) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.13.png](Calculate-functions_images/Calculate-functions_img157.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/7.13.png](Calculate-functions_images/Calculate-functions_img157.png)
+
 
 
 ### SEARCHB
 
 The SEARCHB function finds one text string (find_text) within another text string (within_text), and returns the number of the starting position of find_text for double-byte character set (DBCS) languages.
 
-Syntax:
+#### Syntax:
 
 SEARCHB(findText,withinText, startNum ) where:
 
@@ -3579,43 +3572,43 @@ SEARCHB(findText,withinText, startNum ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if find Text is not found.
+&#35;VALUE! - occurs if find Text is not found.
 
-Example: 
+#### Example: 
 
-{{ '![](Calculate-functions_images/Calculate-functions_img158.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img158.png)
+
 
 
 ### UNICHAR
 
 The UNICHAR function retrieves the unicode character for a given numeric value.
 
-Syntax:
+#### Syntax:
 
 UNICHAR(num) where:
 
 * num is the Unicode number that represents the character.
 
-Remarks:
+#### Remarks:
 
-#N/A - occurs if data types are not valid.
+&#35;N/A - occurs if data types are not valid.
 
-#VALUE! - occurs if num fall outside the allowable range, if number is zero.
+&#35;VALUE! - occurs if num fall outside the allowable range, if number is zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img159.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img159.png)
+
 
 
 ### UNICODE
 
 The UNICODE function calculates the number corresponding to the first character of the text.
 
-Syntax:
+#### Syntax:
 
 UNICODE(text) where:
 
@@ -3623,16 +3616,16 @@ UNICODE(text) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if data types is not valid.
+&#35;VALUE! - occurs if data types is not valid.
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img160.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img160.png)
+
 
 
 ## Lookup and Reference Functions
@@ -3641,51 +3634,51 @@ Example:
 
 The AREAS function returns the number of areas that make up the reference. 
 
-Syntax:
+#### Syntax:
 
 AREAS(reference) where:
 
 * reference is an input argument.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/81.png](Calculate-functions_images/Calculate-functions_img161.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/81.png](Calculate-functions_images/Calculate-functions_img161.png)
+
 
 
 ### COLUMNS
 
 The COLUMNS function returns the number of columns that are contained within the range. 
 
-Syntax:
+#### Syntax:
 
 COLUMNS( array ) where:
 
 * array argument is the range that you want to know the number of columns in.
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/82.png](Calculate-functions_images/Calculate-functions_img162.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/82.png](Calculate-functions_images/Calculate-functions_img162.png)
+
 
 
 ### HYPERLINK
 
 The HYPERLINK function creates a hyperlink to a document in a supplied location.
 
-Syntax:
+#### Syntax:
 
 HYPERLINK( linkLocation, friendlyName ) where
 
 * linkLocation is the address of the file to link to. 
 * friendlyName is the text to display in the cell. 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.3.png](Calculate-functions_images/Calculate-functions_img163.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.3.png](Calculate-functions_images/Calculate-functions_img163.png)
+
 
 
 ### ROW
@@ -3696,17 +3689,17 @@ ROW( [reference] ) where,
 
 * reference is an optional argument that you want to return the row number of. If [reference] is omitted, the function returns the row number of the current cell (i.e. the cell that the function is entered into).
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/83.png](Calculate-functions_images/Calculate-functions_img164.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/83.png](Calculate-functions_images/Calculate-functions_img164.png)
+
 
 
 ### ROWS
 
 The ROWS function takes a range and returns the number of rows that are contained within the range. 
 
-Syntax:
+#### Syntax:
 
 ROWS( array ) where:
 
@@ -3714,17 +3707,17 @@ ROWS( array ) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img165.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img165.png)
+
 
 
 ### SHEET
 
 The SHEET function returns the sheet number of the reference sheet.
 
-Syntax:
+#### Syntax:
 
 SHEET(value) where:
 
@@ -3732,16 +3725,16 @@ SHEET(value) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #REF! - occurs if value argument is not a valid value.
 
 #NA - occurs if value argument is a sheet name that is not valid.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.6.png](Calculate-functions_images/Calculate-functions_img166.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.6.png](Calculate-functions_images/Calculate-functions_img166.png)
+
 
 
 
@@ -3752,7 +3745,7 @@ Example:
 
 SHEETS function returns the number of sheets in a reference.
 
-Syntax:
+#### Syntax:
 
 SHEETS(reference) where:
 
@@ -3760,39 +3753,39 @@ SHEETS(reference) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #REF! - occurs if reference is not a valid value.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)
+
 
 
 ### TRANSPOSE
 
 The TRANSPOSE function copies a horizontal range of cells into a vertical range and vice versa.
 
-Syntax:
+#### Syntax:
 
 TRANSPOSE( array ) where:
 
 * array argument is a range of spreadsheet cells. 
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)
+
 
 
 ### FORMULATEXT
 
 FORMULATEXT function returns the formula as string.
 
-Syntax:
+#### Syntax:
 
 FORMULATEXT(reference) where:
 
@@ -3800,26 +3793,26 @@ FORMULATEXT(reference) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#N/A - occurs if the reference argument is to another workbook that is not open.
+&#35;N/A - occurs if the reference argument is to another workbook that is not open.
 
-#N/A - occurs if the reference argument is to a range containing more than one cell.
+&#35;N/A - occurs if the reference argument is to a range containing more than one cell.
 
-#N/A - occurs if the cell used as the reference argument does not contain a formula.
+&#35;N/A - occurs if the cell used as the reference argument does not contain a formula.
 
-#N/A - occurs if the formula in the cell is longer than 8192 characters.
+&#35;N/A - occurs if the formula in the cell is longer than 8192 characters.
 
-#N/A - occurs if the formula can't be displayed in the worksheet.
+&#35;N/A - occurs if the formula can't be displayed in the worksheet.
 
-#N/A - occurs if an external workbook that contains the formula which is not open.
+&#35;N/A - occurs if an external workbook that contains the formula which is not open.
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png)
+
 
 
 ## Information Functions
@@ -3828,58 +3821,58 @@ Example:
 
 The CELL function returns information about a given cell. This can be information in relation to the contents, formatting, or location of the cell. 
 
-Syntax:
+#### Syntax:
 
 CELL( infoType, reference ) where
 
 * infoType argument is a text string that specifies the type of information to be returned. 
 * reference is the cell for which the information is to be returned. 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img170.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img170.png)
+
 
 
 ### INFO
 
 The INFO function returns a text string containing information about the current operating environment.
 
-Syntax:
+#### Syntax:
 
  INFO( infoType ) where:
 
 * infoType argument is a text string that specifies the type of information to be returned. 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png)
+
 
 
 ### TYPE
 
 The TYPE function receives a value and returns an integer that represents the supplied value's data type. 
 
-Syntax:
+#### Syntax:
 
 TYPE( value ) where:
 
 * value can be input either directly, as a value returned from a formula, or as a reference to a cell that contains a value. 
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png)
+
 
 
 ### ISFORMULA
 
 The ISFORMULA function returns true or false if there is a reference to a cell that contains a formula.
 
-Syntax:
+#### Syntax:
 
 ISFORMULA(reference) where:
 
@@ -3887,14 +3880,14 @@ ISFORMULA(reference) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if reference is not a valid data type.
+&#35;VALUE! - occurs if reference is not a valid data type.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img173.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img173.png)
+
 
 
 ## Date and Time Functions
@@ -3903,7 +3896,7 @@ Example:
 
 The EDATE function returns a date that is a specified number of months before or after a supplied start date. 
 
-Syntax:
+#### Syntax:
 
 EDATE( startDate, Months ) where:
 
@@ -3912,23 +3905,23 @@ EDATE( startDate, Months ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if the supplied startDate is not a valid date.
+&#35;VALUE! - occurs if the supplied startDate is not a valid date.
 
-#VALUE! - occurs if the supplied Months argument is non-numeric.
+&#35;VALUE! - occurs if the supplied Months argument is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png)
+
 
 
 ### EOMONTH
 
 The EOMONTH function returns the last day of the month that is a specified number of months before or after an initially supplied start date.  
 
-Syntax:
+#### Syntax:
 
 EOMONTH(startDate, Months) where:
 
@@ -3937,25 +3930,25 @@ EOMONTH(startDate, Months) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if either any of the supplied arguments are not numeric values. 
+&#35;VALUE! - occurs if either any of the supplied arguments are not numeric values. 
 
-#NUM! - occurs if the supplied startDate is not a valid date.
+&#35;NUM! - occurs if the supplied startDate is not a valid date.
 
-#NUM! - occurs if the supplied startDate plus the value of the months argument is not a valid date.
+&#35;NUM! - occurs if the supplied startDate plus the value of the months argument is not a valid date.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png)
+
 
 
 ### NETWORKDAYS.INTL
 
 NETWORKDAYS.INTL calculates the number of whole work days between two supplied dates.
 
-Syntax:
+#### Syntax:
 
 NETWORKDAYS.INTL(startDate, endDate) where:
 
@@ -3964,21 +3957,21 @@ NETWORKDAYS.INTL(startDate, endDate) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if the supplied startDate, endDate are not valid dates. 
+&#35;VALUE! - occurs if the supplied startDate, endDate are not valid dates. 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png)
+
 
 
 ### WEEKNUM
 
 For a supplied a date, the WEEKNUM function returns an integer representing the week number (from 1 to 53) of the year. 
 
-Syntax:
+#### Syntax:
 
 WEEKNUM( serialNum, [returnType] ) where:
 
@@ -3987,25 +3980,25 @@ WEEKNUM( serialNum, [returnType] ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if the supplied serialNum cannot be recognized as a numeric value or a date. 
+&#35;VALUE! - occurs if the supplied serialNum cannot be recognized as a numeric value or a date. 
 
-#NUM! - occurs if the supplied [returnType] argument is not one of the above listed permitted values. 
+&#35;NUM! - occurs if the supplied [returnType] argument is not one of the above listed permitted values. 
 
-#NUM! - occurs if the supplied serialNum argument is numeric but is out of range for the current date base. 
+&#35;NUM! - occurs if the supplied serialNum argument is numeric but is out of range for the current date base. 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png)
+
 
 
 ### WORKDAY.INTL
 
 The WORKDAY.INTL function returns a date that is a supplied number of working days (excluding weekends and holidays) ahead of a given start date.
 
-Syntax:
+#### Syntax:
 
 WORKDAY.INTL( startDate, days, [weekend], [holidays] ) where:
 
@@ -4016,27 +4009,27 @@ WORKDAY.INTL( startDate, days, [weekend], [holidays] ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date.
+&#35;NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date.
 
-#NUM! - occurs if the supplied [weekend] argument is invalid (see above explanation of this argument).
+&#35;NUM! - occurs if the supplied [weekend] argument is invalid (see above explanation of this argument).
 
-#VALUE! - occurs if the supplied startDate  or any of the values in the supplied [holidays] array are not valid dates.
+&#35;VALUE! - occurs if the supplied startDate  or any of the values in the supplied [holidays] array are not valid dates.
 
-#VALUE! - occurs if the supplied days argument is non-numeric.
+&#35;VALUE! - occurs if the supplied days argument is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/88.png](Calculate-functions_images/Calculate-functions_img178.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/88.png](Calculate-functions_images/Calculate-functions_img178.png)
+
 
 
 ### YEARFRAC
 
 The YEARFRAC function returns the fraction of a year that is represented by the number of whole days between two supplied dates.
 
-Syntax:
+#### Syntax:
 
 YEARFRAC( startDate, endDate, [basis] ) where:
 
@@ -4046,23 +4039,23 @@ YEARFRAC( startDate, endDate, [basis] ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#VALUE! - occurs if the startDate or endDate arguments are not valid dates. 
+&#35;VALUE! - occurs if the startDate or endDate arguments are not valid dates. 
 
-#NUM! - occurs if the value of the supplied [basis] argument is less than 0 or greater than 4. 
+&#35;NUM! - occurs if the value of the supplied [basis] argument is less than 0 or greater than 4. 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/89.png](Calculate-functions_images/Calculate-functions_img179.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/89.png](Calculate-functions_images/Calculate-functions_img179.png)
+
 
 
 ### WORKDAY
 
 The WORKDAY function returns a date that is a supplied number of working days (excluding weekends and holidays) ahead of a given start date. 
 
-Syntax:
+#### Syntax:
 
 WORKDAY(startDate, Days, [holidays] ) where:
 
@@ -4072,23 +4065,23 @@ WORKDAY(startDate, Days, [holidays] ) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date. 
+&#35;NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date. 
 
-#VALUE! - occurs if the supplied startDate or any of the values in the supplied [holidays] array are not valid dates, if the supplied days argument is non-numeric.
+&#35;VALUE! - occurs if the supplied startDate or any of the values in the supplied [holidays] array are not valid dates, if the supplied days argument is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/90.png](Calculate-functions_images/Calculate-functions_img180.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/90.png](Calculate-functions_images/Calculate-functions_img180.png)
+
 
 
 ### ISOWEEKNUM
 
 For a given date, the ISOWEEKNUM function returns the ISO week number of that year.
 
-Syntax:
+#### Syntax:
 
 ISOWEEKNUM( DateTime) where:
 
@@ -4096,23 +4089,23 @@ ISOWEEKNUM( DateTime) where:
 
 
 
-Remarks:
+#### Remarks:
 
-#NUM! - occurs if the date argument is not a valid number.
+&#35;NUM! - occurs if the date argument is not a valid number.
 
-#VALUE! - occurs if the date argument is not a valid date type.
+&#35;VALUE! - occurs if the date argument is not a valid date type.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/91.png](Calculate-functions_images/Calculate-functions_img181.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/91.png](Calculate-functions_images/Calculate-functions_img181.png)
+
 
 
 ###  DAYS
 
 The DAYS function retrieves the number of days between two dates.
 
-Syntax:
+#### Syntax:
 
 DAYS(endDate, startDate) where:
 
@@ -4120,9 +4113,6 @@ DAYS(endDate, startDate) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/94.png](Calculate-functions_images/Calculate-functions_img182.png)' | markdownify }}
-{:.image }
-
-
+![C:/Users/ApoorvahR/Desktop/94.png](Calculate-functions_images/Calculate-functions_img182.png)

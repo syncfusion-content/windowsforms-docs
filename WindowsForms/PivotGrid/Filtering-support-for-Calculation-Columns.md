@@ -21,32 +21,32 @@ The FilterDialog is designed to have a look and feel like Excel Filter. The Filt
 
 
 
-{{ '![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img1.png)' | markdownify }}
-{:.image }
+![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img1.png)
 
 
 
 
 
-{{ '![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img2.png)' | markdownify }}
-{:.image }
 
-
-_Figure_ _29__: Filtered Image showing PivotSummaries are being updated._
+![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img2.png)
 
 
 
-{{ '![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img3.png)' | markdownify }}
-{:.image }
+_Figure_ _29_: _Filtered Image showing PivotSummaries are being updated._
+
+
+
+![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img3.png)
 
 
 
 
-_Figure_ _30__: SmartSearch using searchTextBox._
+
+_Figure_ _30_: _SmartSearch using searchTextBox._
 
 
 
-Methods
+### Methods
 
 The following methods perform Filtering on Pivot Columns.
 
@@ -54,10 +54,10 @@ The following methods perform Filtering on Pivot Columns.
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 ClearFilters</td><td>
@@ -69,16 +69,17 @@ This method clears thecurrent filtered state andredraws the pivot displ
 void ClearFilters(bool refresh)</td><td>
 This method clears the current filtered state and optionally redraws the Pivot display.</td></tr>
 </table>
-Properties 
+
+### Properties 
 
 The following properties perform Filtering on Pivot Columns.
 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowFilter</td><td>
@@ -91,16 +92,16 @@ Specifies whether the PivotGridControl is used to pivot only rows or both r
 
 
 
-Events 
+### Events 
 
 The following event performs Filtering on Pivot Columns. 
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 FilterActionCompleted</td><td>

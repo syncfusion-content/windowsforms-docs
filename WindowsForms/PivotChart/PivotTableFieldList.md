@@ -11,9 +11,7 @@ documentation: ug
 
 PivotChart can be dynamically built and customized by choosing any available fields to display and choose whether those fields should be displayed as column, row, value or filter fields. The PivotTableFieldList also gives flexibility to wire itself with both PivotChart and PivotGrid. This links the PivotGrid and PivotChart.
 
-
-[C#]
-
+{% highlight c# %}
 
 //Synchronizes the PivotChart with the PivotTableFieldList.
 this.pivotTableFieldList1.AssociateWith(this.pivotChart1);
@@ -23,11 +21,9 @@ this.pivotTableFieldList1.AssociateWith(this.pivotChart1);
 
 this.panel.Controls.Add(this.pivotTableFieldList1.PivotGrid);
 
+{% endhighlight %}
 
-
-
-[VB]
-
+{% highlight vbnet %}
 
 'Synchronizes the PivotChart with the PivotTableFieldList.
 
@@ -39,9 +35,6 @@ Me.pivotTableFieldList1.AssociateWith(Me.pivotChart1)
 
 Me.panel.Controls.Add(Me.pivotTableFieldList1.PivotGrid
 
+{% endhighlight %}
 
-
-{{ '![](PivotTableFieldList_images/PivotTableFieldList_img1.png)' | markdownify }}
-{:.image }
-
-
+![](PivotTableFieldList_images/PivotTableFieldList_img1.png)

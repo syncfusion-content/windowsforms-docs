@@ -25,24 +25,18 @@ Manual calculations requires you to explicitly request Essential Calculate to co
 
 * ParseAndCompute-This method will accept a formula string, parse it, and then return the computed value of the parsed formula. You can also directly invoke computation methods for any of the library functions of Essential Calculate through the CalcEngine class.
 * Indexer method by using Variables
+
 #### ParseAndCalculate Method
 
 
 If you have an algebraic expression that just contains constants and function library methods, the most straight forward way of using Essential Calculate is to invoke its ParseAndCalculate method. Using CalcQuickBase makes this very simple. Consider, for example, the below form with a text box and a button on it. When you click the button, the computed value of the formula is displayed in the text box.
 
 
-
-{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img1.png)' | markdownify }}
-{:.image }
-
+![](Adding-Calculation-Support_images/Adding-Calculation-Support_img1.png)
 
 The code that provides this functionality is very straight-forward. Add a reference to Syncfusion.Calculate in your project. Then instantiate a CalcQuickBase object, and invoke its ParseAndCalculate method from the button handler. Now you can type a formula in the text box and click the button to get the computed value. The following code illustrates this.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 using Syncfusion.Calculate;
 
@@ -73,10 +67,9 @@ private void button1_Click(object sender, EventArgs e)
 }
 
 
+{% endhighlight %}
 
-[VB]
-
-
+{% highlight vbnet %}
 
 Imports Syncfusion.Calculate
 
@@ -111,6 +104,8 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
 End Sub 
 
 
+{% endhighlight %}
+
 
 In this discussion, it is assumed that the formulas involved contain only constants and library references. On the other hand, you can use the ParseAndCompute method to explicitly parse and calculate formulas that use variables as well. But, before you do that, you need to know how to register variables and assign values to them.
 
@@ -119,29 +114,25 @@ In this discussion, it is assumed that the formulas involved contain only consta
 In this section, you will learn how to use variable names within formulas to represent particular values. A variable name must begin with an alphabetical character and can contain only letters and digits. It is not case-sensitive. To register a string as a variable name and set its value is a single step operation, you must simply index the CalcQuickBase object with the name and assign the value to it.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 this.calculator["base"] = 3;
 
 this.calculator["height"] = 2.5;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.calculator("base") = 3
 
 Me.calculator("height") = 2.5
 
+{% endhighlight %}
 
 
-{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img2.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Calculation-Support_images/Adding-Calculation-Support_img2.jpeg)
+
 
 
 When a name is used as an indexer on the CalcQuickBase object, the object checks a collection of variables that it maintains. 
@@ -185,8 +176,7 @@ By default, CalcQuickBase does not try to track any dependencies among the varia
 
 In practice, some additional work needs to be done. When a variable is auto-changed, nothing will actually happen until you try to use it. For example, assume that you have a series of text boxes on a form with some of the text boxes holding numerical values and some text boxes holding formulas that reference these values through variables that you have registered with a CalcQuickBase object.
 
-{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img3.png)' | markdownify }}
-{:.image }
+![](Adding-Calculation-Support_images/Adding-Calculation-Support_img3.png)
 
 
 In the above screenshot, Text Box C is set to a formula that references the values from Text Box A and Text Box B. So, once the value in Text Box A or Text Box B changes, the value in Text Box C should also change.
@@ -198,10 +188,7 @@ In order to get this to work, two things must be done. First, when the variable 
 The following code illustrates the above process.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 private CalcQuickBase calculator = null;
 
@@ -342,10 +329,9 @@ private void textBoxA_Leave(object sender, EventArgs e)
 // ..... same for textBoxB_Leave, textBoxC_Leave, textBoxD_Leave
 
 
+{% endhighlight %}
 
-[VB]
-
-
+{% highlight vbnet %}
 
 Private calculator As CalcQuickBase = Nothing
 
@@ -476,6 +462,7 @@ Private Sub textBoxA_Leave(ByVal sender As Object, ByVal e As EventArgs)
 End Sub 
 
 
+{% endhighlight %}
 
 The following is an explanation of the numbered steps given in the preceding Form_Load.
 
@@ -488,6 +475,7 @@ The following is an explanation of the numbered steps given in the preceding For
 7. This step forces the recalculation of all variables registered with the CalcQuickBase object. This has to be done after the AutoCalc property has been set to True, so that the dependencies between variables can be monitored. The reason to postpone setting AutoCalc until after the initial registration of the variables, is to avoid problems that might occur because of CalcQuickBase trying to set up dependency chains even before all the variables have been registered. Initializing the variables, turning on AutoCalc, and then calling RefreshAllCalculations, avoids this potential problem.
 8. This is the event handler that moves a freshly computed variable into the text box that it is related to.
 9. These four event handlers signal when the user leaves a modified text box. At that point, the CalcQuickBase object is updated to reflect the new value that has been entered by the user.
+
 #### Using RegisterControlArray
 
 
@@ -495,11 +483,7 @@ Using explicit events to manage the auto-calculation in CalcQuickBase used with 
 
 Here is the code that will do exactly the same work as our previous example by using explicit events to support auto-calculation. Notice that all the event handling has been removed. There are only three steps that are related to adding the calculation support, which includes instantiating the CalcQuickBase object, and calling the RegisterControlArray and RefreshAllCalculations methods.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 CalcQuickBase calculator = null;
 
@@ -565,11 +549,9 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 ' 1) Make sure controls have the names you want to use as variables. This can be done either 
 
@@ -611,7 +593,7 @@ Me.calculator.RegisterControlArray(New Control() {Me.textBoxA, Me.textBoxB, Me.t
 
 Me.calculator.RefreshAllCalculations()
 
-
+{% endhighlight %}
 
 The following is an explanation of the numbered steps in the preceding Form_Load.
 
@@ -620,6 +602,7 @@ The following is an explanation of the numbered steps in the preceding Form_Load
 3. Instantiates the CalcQuickBase instance.
 4. Calls the RegisterControlArray method. In this method, the CalcQuickBase object will handle all the event code that you have manually added in the previous section. It does make the assumption that the controls are either text boxes or combo boxes with the appropriate names.
 5. This step forces the recalculation of all variables that are registered with the CalcQuickBase object.
+
 ### Resetting Keys by using Calculate Engine
 
 
@@ -627,42 +610,38 @@ This method provides support for resetting keys (which happens backend) using Ca
 
 The user can reset or clear the keys by using this method. 
 
-Samples Installation Location:
+#### Samples Installation Location:
 
 CalcQuick WF samples are installed under the following location:
 
-C:\Syncfusion\EssentialStudio\<Version Number>\Windows\Calculate.Windows\Samples \2.0\Working With CalcQuick Demo
+C:\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Windows\Calculate.Windows\Samples \2.0\Working With CalcQuick Demo
 
-Viewing Samples:
+### Viewing Samples:
 
 1. Follow steps 1 to 2 of viewing Windows samples in section 2.2 Samples and Installation.
 
-
-
-{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img4.png)' | markdownify }}
-{:.image }
-
+   ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img4.png)
 
 2. Select Working With CalcQuick Demo from the samples provided and browse through the features.
 
-{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img5.png)' | markdownify }}
-{:.image }
-
+   ![](Adding-Calculation-Support_images/Adding-Calculation-Support_img5.png)
 
 #### Methods
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
-![Public method](Adding-Calculation-Support_images/Adding-Calculation-Support_img6.jpeg)
-{:.image }
+{{ '![Public method](Adding-Calculation-Support_images/Adding-Calculation-Support_img6.jpeg)' | markdownify }}
+
+
 ResetKeys()</td><td>
 Clears the keys used by the Calculate engine</td></tr>
 </table>
+
 ### Summary
 
 CalcQuickBase is the simplest way to add calculation support to your code. You can create an instance of it, and then just start by using it through either its ParseAndCompute method, or by indexing it with a variable name. You can use CalcQuickBase either in manual calculation mode or in an automatic calculation mode. Automatic calculations will require you to either handle certain events or use theRegisterControlArray method for Windows Forms text box and combo box controls.
@@ -679,6 +658,7 @@ ICalcData has three methods and one event. This interface allows the CalcEngine 
 * SetValueRowCol-Sets the data value of a specified row and column
 * WireParentObject-A callback to the data object that occurs as the CalcEngine is being created. The purpose is to give the data object a chance to do any initialization steps it may need, such as subscribe to events to handle changes in data notifications.
 * ValueChanged-An event that is raised whenever data changes. The ICalcData implementer raises this event when the data changes. The CalcEngine listens to this event and accordingly reacts to data changes. It is through this event that formulas are processed and dependencies are tracked by the CalcEngine.
+
 ### Working with System.Windows.Forms.DataGrid
 
 
@@ -686,8 +666,7 @@ A Windows Forms Data Grid is a rectangular container that holds data in cells. S
 
 The following is a discussion of using Essential Calculate with a Data Grid as an ICalcData object is based on the Essential Studio\Windows\Calculation.Windows\Samples\DataGridCalculator sample that ships with the product. The sample has a derived DataGrid class that implements ICalcData. Below is a screen shot of a sample screen. The sample sets the column header text to A, B, and so on, and places 1, 2, and so on, in the first column along with random integers in the other columns. This is done to remind you of the Excel-like cell notation of A1, A2, B2, and so on. This is the notation supported by Essential Calculate formulas using ICalcData objects.
 
-{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img7.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Calculation-Support_images/Adding-Calculation-Support_img7.jpeg)
 
 
 You can copy the code that defines the derived DataGrid object to your projects and have immediate support for calculations in a Data Grid using Data Table data sources. Before we begin with the details of this sample and the derived DataGrid class, we will discuss the ICalcData interface describing the purpose of its implementation details.
@@ -697,10 +676,7 @@ You can copy the code that defines the derived DataGrid object to your projects 
 Essential Calculate provides a derived DataGrid object that implementsICalcData to support calculations. But you need to know how to use such an object on a User Control. Essentially, you can drop an instance of the CalcDataGrid object onto your form, create an instance of CalcEngine by using your CalcDataGrid as its ICalcData object and then calculate things so that the initial display shows the calculated values. The following code illustrates this.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 private Syncfusion.Calculate.CalcEngine engine;
 
@@ -758,11 +734,9 @@ private void SingleDataGridForm_Load(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Private engine As Syncfusion.Calculate.CalcEngine
 
@@ -822,7 +796,7 @@ Private Sub SingleDataGridForm_Load(sender As Object, e As System.EventArgs)
 
 End Sub 
 
-
+{% endhighlight %}
 
 The following is an explanation of the preceding code.
 
@@ -830,24 +804,19 @@ The following is an explanation of the preceding code.
 2. Creates an instance of the CalcEngine object.
 3. Sets the engine object to track calculation dependencies so that cells can be automatically updated as other cell values change.
 4. RecalculateRange goes through the existing cell contents and calculates any formulas for the initial display.
+
 #### Using Several CalcDataGrids in a Workbook
 
 
 Essential Calculate supports cross-references among several ICalcData objects. This support allows you to have a workbook of CalcDataGrids by using a Windows Forms Tab control. The following discussion is based on the Calculation\Samples\DataGridCalculator sample that ships with the product.
 
-{{ '![](Adding-Calculation-Support_images/Adding-Calculation-Support_img8.png)' | markdownify }}
-{:.image }
-
+![](Adding-Calculation-Support_images/Adding-Calculation-Support_img8.png)
 
 To support cross-references among several ICalcData objects, you must register the objects with a single instance of the CalcEngine. Part of the information provided during registration are names associated with each ICalcData object. To reference a particular cell in an ICalcData object, you need to use its name along with the column and row to determine the proper reference. For example, say, in an ICalcData object whose name is Sales; To reference column 5, row 3, you must use Sales!E3. The name is separated from the column and row reference by an exclamation point. In the above screenshot, the formula = DG2!A5 + 6 would add 6 to the value in row 5, column 1 in sheet DG2.
 
 Here is the FormLoad method for the sample screenshot depicted above. Using the designer, a TabControl is dropped on a form and five TabPages are added. The pages are named DG1, DG2, …, DG5. On each TabPage, a CalcDataGrid is set with the DockStyle set to Fill. This is all done through the designer.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 Syncfusion.Calculate.CalcEngine engine;
 
@@ -907,11 +876,9 @@ private void DataGridWorkBookForm_Load(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Dim engine As Syncfusion.Calculate.CalcEngine
 
@@ -973,7 +940,7 @@ Private Sub DataGridWorkBookForm_Load(sender As Object, e As System.EventArgs)
 
 End Sub 
 
-
+{% endhighlight %}
 
 The following is an explanation of the preceding code.
 
@@ -982,6 +949,7 @@ The following is an explanation of the preceding code.
 3. Creates an instance of the CalcEngine object.
 4. Sets the engine object to track calculation dependencies so that cells can be automatically updated as other cell values change. 
 5. This is the code that registers a name for each ICalcData object so that the CalcEngine can support references across ICalcData objects.
+
 ### Conventions
 
 
@@ -989,11 +957,7 @@ There are two conventions that are honored by Essential Calculate. While process
 
 The second convention involves zero-based and one-based indexing. It should be noted that a lot of data sources use zero-based indexing to access values, but in CalcEngine one-based indexing is used to mimic Excel. This leads to possible indexing conflicts. To keep things consistent and to make sure that it is clear what should be used, Essential Calculate expects any indexes (rows / column integer values) to be one-based. This means that you may have to tweak the indexes that are passed through the ICalcData methods and event arguments to make them consistent with any zero-based data sources that you might be using. One such example is the DataGrid discussed in this section. You can see the index-based adjustments in the following code samples.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 public class CalcDataGrid : DataGrid, Syncfusion.Calculate.ICalcData
 
@@ -1101,11 +1065,9 @@ public class CalcDataGrid : DataGrid, Syncfusion.Calculate.ICalcData
 
 }
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Public Class CalcDataGrid
 
@@ -1205,7 +1167,7 @@ Public Event ValueChanged As ValueChangedEventHandler Implements ICalcData.Value
 
 End Class 
 
-
+{% endhighlight %}
 
 The following is an explanation of the preceding code.
 

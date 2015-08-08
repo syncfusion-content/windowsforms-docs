@@ -11,21 +11,16 @@ documentation: ug
 
 Through expanders, you can drill down to the next level of hierarchy and drill up to the previous level. The PivotChart has inbuilt support to drill up and down the PivotSeries population. This behavior can be achieved by enabling the AllowDrillDown property.
 
-[C#]
-
+{% highlight c# %}
 
 this.pivotChart1.AllowDrillDown = true;
 
+{% endhighlight %}
 
-
-[VB]
-
+{% highlight vbnet %}
 
 Me.pivotChart1.AllowDrillDown = True
 
+{% endhighlight %}
 
-
-{{ '![](Drill-UpDown-Level_images/Drill-UpDown-Level_img1.png)' | markdownify }}
-{:.image }
-
-
+![](Drill-UpDown-Level_images/Drill-UpDown-Level_img1.png)

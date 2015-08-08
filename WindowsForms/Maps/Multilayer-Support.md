@@ -31,11 +31,11 @@ SubShapeFileLayer is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 
 
 
-Code sample:
+### Code sample:
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -62,8 +62,10 @@ partial class Form1
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
      }  
+	 
+{% endhighlight %}
 
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -145,15 +147,12 @@ public partial class Form1 : Form
 
  }       
 
-
+{% endhighlight %}
 
 
 
 Screenshot:
 
-{{ '![](Multilayer-Support_images/Multilayer-Support_img1.png)' | markdownify }}
-{:.image }
+![](Multilayer-Support_images/Multilayer-Support_img1.png)
 
-
-Figure 20: MultiLayer
-
+_Figure 20: MultiLayer_

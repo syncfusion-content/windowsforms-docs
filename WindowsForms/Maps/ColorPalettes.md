@@ -13,11 +13,11 @@ ColorPalette is a set of colors that are applied to the shapes.
 
 ColorPalette has to be set in the ShapeSetting’s ColorPalette property. 
 
-Code sample:
+### Code sample:
 
 
 
-[FORM1.DESIGNER.CS]
+{% highlight c# %}
 
 partial class Form1
 
@@ -46,8 +46,10 @@ partial class Form1
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
      }  
+	 
+{% endhighlight %}
 
-[FORM1.CS]
+{% highlight c# %}
 
 public partial class Form1 : Form
 
@@ -117,25 +119,8 @@ public partial class Form1 : Form
 
      }       
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% endhighlight %}
 
 Screenshot:
 
-{{ '![](ColorPalettes_images/ColorPalettes_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
+![](ColorPalettes_images/ColorPalettes_img1.png)

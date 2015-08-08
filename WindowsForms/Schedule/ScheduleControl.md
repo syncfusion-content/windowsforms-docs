@@ -11,13 +11,13 @@ documentation: ug
 
 It is a User Control that provides the basic scheduling functionality.
 
-Properties
+### Properties
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Appearance</td><td>
@@ -47,13 +47,14 @@ Gets the navigation panel.</td></tr>
 ScheduleType</td><td>
 Gets / sets whether a daily, weekly or monthly schedule is displayed.</td></tr>
 </table>
-Methods
+
+### Methods
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddControlToNavigationPanel</td><td>
@@ -79,13 +80,14 @@ Displays a dialog box allowing you to edit an item.</td></tr>
 PerformSwitchToScheduleViewTypeClick</td><td>
 Switches the display to the specified ScheduleView type.</td></tr>
 </table>
-Events
+
+### Events
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 ItemChanged</td><td>
@@ -99,6 +101,7 @@ Occurs when an item is clicked / double-clicked.</td></tr>
 ScheduleGridCreated</td><td>
 Lets you either use a derived ScheduleGridControl or subscribe to the events on the ScheduleGridControl.</td></tr>
 </table>
+
 ## Caption Panel
 
 This panel displays a caption at the top of the ScheduleControl. The two buttons on this panel will navigate the schedule forward and backward.
@@ -111,13 +114,13 @@ It is a panel where you can place additional controls and make them appear adjac
 
 A GridControl-derived object that displays multiple calendars lets you select particular dates or data ranges to be displayed in the ScheduleControl.
 
-Properties
+### Properties
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 CalendarGrid</td><td>
@@ -139,13 +142,14 @@ Indicates whether the week numbers should be displayed in the calendars.</td></t
 Today</td><td>
 Gets / sets the DateTime value for the current day.</td></tr>
 </table>
-Methods
+
+### Methods
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 FirstDayOfMonth</td><td>
@@ -159,19 +163,18 @@ Returns the Monday before the given date.</td></tr>
 SundayAfterDate</td><td>
 Returns the Sunday after the given date.</td></tr>
 </table>
-Event
+
+### Event
 
 
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 DateValueChanged</td><td>
 Occurs when NavigationCalendar.DateValue property is changed.</td></tr>
 </table>
-
-
