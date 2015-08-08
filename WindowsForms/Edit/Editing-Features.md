@@ -19,7 +19,7 @@ Action Grouping allows you to specify a set of actions as groups for Undo / Redo
 
 
 
-Grouping Actions
+### Grouping Actions
 
 To undo/redo an action group, do the following steps:
 
@@ -89,13 +89,11 @@ Clear the undo buffer. Hence undo operation is not allowed on contents/actions p
 </table>
 
 
-> {{ '![](Editing-Features_images/Editing-Features_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: The undo/redo buffer is cleared after the 'Save' operation._
+> Note: The undo/redo buffer is cleared after the 'Save' operation.
 
 
 
-Enabling Grouping
+#### Enabling Grouping
 
 Grouping is enabled using the below given property.
 
@@ -113,7 +111,7 @@ Specifies whether grouping should be enabled for undo/redo actions.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -151,9 +149,9 @@ this.editControl1.ResetUndoInfo();
 
 this.editControl1.GroupUndo = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -191,17 +189,17 @@ Me.editControl1.ResetUndoInfo()
 
 Me.editControl1.GroupUndo = True
 
-
+{% endhighlight %}
 
 The following screenshot shows action grouping in Edit Control. 
 
 
 
-{{ '![](Editing-Features_images/Editing-Features_img2.jpeg)' | markdownify }}
-{:.image }
+![](Editing-Features_images/Editing-Features_img2.jpeg)
 
 
-_Figure_ _9__: Grouping Actions in Edit Control_
+
+_Figure_ _9_: Grouping Actions in Edit Control
 
 
 
@@ -225,13 +223,11 @@ Similarly, the GetNewLineStyle method returns a NewLineStyle enumerator value wh
 
 
 
-> {{ '![](Editing-Features_images/Editing-Features_img3.jpeg)' | markdownify }}
-{:.image }
-_Note: The default new line style value is set to 'Control'. This value can be changed according to the needs of the user using the DefaultNewLineStyle property._
+> Note: The default new line style value is set to 'Control'. This value can be changed according to the needs of the user using the DefaultNewLineStyle property.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -247,9 +243,9 @@ this.editControl1.GetNewLineStyle();
 
 this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -265,7 +261,7 @@ Me.editControl1.GetNewLineStyle()
 
 Me.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows
 
-
+{% endhighlight %}
 
 ## Clipboard Operations
 
@@ -309,7 +305,7 @@ Clears all contents in the clipboard associated with Essential Edit. This is gen
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -353,9 +349,9 @@ bool canPaste = this.editControl1.CanPaste;
 
 this.editControl1.ClearClipboard();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -399,7 +395,7 @@ Dim canPaste as bool = Me.editControl1.CanPaste
 
 Me.editControl1.ClearClipboard()
 
-
+{% endhighlight %}
 
 ### EnableMD5
 
@@ -425,33 +421,31 @@ Specifies whether to enable or disable MD5 algorithm.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.EnableMD5 = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.EnableMD5 = True
 
+{% endhighlight %}
 
-
-> {{ '![](Editing-Features_images/Editing-Features_img4.jpeg)' | markdownify }}
-{:.image }
-_Note:_ 
-
-To enable FIPS:
-
-1. Click Start, click Control Panel, and the click on Administrative Tools.
-2. Double-click Local Security Policy.
-3. Double-click Local Policies.
-4. Click Security Options. Under Policies listed in the right pane, double-click System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing.
-5. Select Enabled to enable FIPS on your machine.
+> Note: 
+>
+> To enable FIPS:
+>
+> 1. Click Start, click Control Panel, and the click on Administrative Tools.
+> 2. Double-click Local Security Policy.
+> 3. Double-click Local Policies.
+> 4. Click Security Options. Under Policies listed in the right pane, double-click System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing.
+> 5. Select Enabled to enable FIPS on your machine.
 
 
 
@@ -476,11 +470,11 @@ The following illustration shows the Keys Binding dialog box.
 
 
 
-{{ '![](Editing-Features_images/Editing-Features_img5.jpeg)' | markdownify }}
-{:.image }
+![](Editing-Features_images/Editing-Features_img5.jpeg)
 
 
-_Figure_ _10__: Preview of Keys Binding Dialog Box_
+
+_Figure_ _10_: Preview of Keys Binding Dialog Box
 
 
 
@@ -490,7 +484,7 @@ This following code example registers the "File.Open" command and binds a Ctrl+O
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -534,9 +528,9 @@ private void Command_Open()
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -574,7 +568,7 @@ Private Sub Command_Open()
 
 End Sub
 
-
+{% endhighlight %}
 
 A sample which demonstrates Keys Binding is available in the following sample installation path.
 
@@ -592,23 +586,23 @@ Edit Control implements a customized regular expression engine which is capable 
 
 
 
-Language Elements
+#### Language Elements
 
 Edit Control offers complete support to a variety of common constructs for regular expression patterns. Refer to the Language Elements topic for more information on the regular expression pattern syntax.
 
 
 
-Lexical Macros
+#### Lexical Macros
 
 Lexical macros definitions create named regular expressions that can be used to replace certain sections of the regular expression patterns. This improves the reusability of common patterns and simplifies the task of creating lexems in configuration files. Refer to the Lexical Macros topic for more information in this regard.
 
 
 
-Regular Expressions in XML based Configuration File
+#### Regular Expressions in XML based Configuration File
 
 There are certain regular expression command characters that must be translated to an XML compatible format while being used in an XML-based configuration file. The following is an example of a lexem tag block that has been used for outlining.
 
-[XML]
+{% highlight xml %}
 
 
 
@@ -622,13 +616,13 @@ There are certain regular expression command characters that must be translated 
 
 </lexem>
 
-
+{% endhighlight %}
 
 Ampersands (&) can be escaped using &amp, less-than symbols (<) can be escaped using &lt, and greater-than symbols (>) can be escaped using &gt.
 
 
 
-Invalid Regular Expressions
+#### Invalid Regular Expressions
 
 If you enter an invalid regular expression pattern in a language definition that the Edit Control cannot parse, an exception is raised with a diagnostic message describing the problem.
 
@@ -640,7 +634,7 @@ The Edit Control regular expression engine accepts an extensive set of regular e
 
 
 
-Character Escapes
+#### Character Escapes
 
 Most of the important regular expression language operators are unescaped single characters. The escape character \ (a single backslash) signals to the regular expression parser that the character following the backslash is not an operator. For example, the parser treats an asterisk (*) as a repeating quantifier, and a backslash followed by an asterisk (\*) as the Unicode character \u002A.
 
@@ -702,7 +696,7 @@ Matches a character when followed by a character that is not recognized as an es
 </table>
 
 
-Character Classes
+#### Character Classes
 
 A character class is a set of characters that will find a match if any one of the characters included in the set matches. The following table summarizes the character matching syntax.
 
@@ -760,7 +754,7 @@ Escaped built-in character classes such as \w and \s may be used in a character 
 </table>
 
 
-Quantifiers 
+#### Quantifiers 
 
 Quantifiers add optional quantity data to a regular expression. A quantifier expression applies to the character, group, or character class that immediately precedes it. The .NET Framework regular expressions support minimal matching ("lazy") quantifiers.
 
@@ -802,7 +796,7 @@ Specifies at least n, but no more than m, matches.</td></tr>
 </table>
 
 
-Atomic Zero-Width Assertions
+#### Atomic Zero-Width Assertions
 
 The metacharacters described in the following table do not cause the engine to advance through the string or consume characters. They simply cause a match to succeed or fail depending on the current position in the string. For instance, ^ specifies that the current position is at the beginning of a line or string. Thus, the regular expression ^#region, returns only those occurrences of the character string #region that occur at the beginning of a line.
 
@@ -852,7 +846,7 @@ Zero-width negative look ahead assertion. Continues match only if the subexpress
 </table>
 
 
-Miscellaneous Constructs
+#### Miscellaneous Constructs
 
 The following table lists other regular expression constructs.
 
@@ -900,7 +894,7 @@ Edit Control allows you to define macros that represent regular expression eleme
 
 
 
-Usage
+#### Usage
 
 Using defined macros is easy. To reference a macro, simply type its name within curly braces ({ ... }). The following examples illustrate this feature better:
 
@@ -916,7 +910,7 @@ Using defined macros is easy. To reference a macro, simply type its name within 
 
 
 
-Built-In Macros
+#### Built-In Macros
 
 Edit Control recognizes a number of built-in macros. If a language definition defines a lexical macro of the same name as a built-in lexical macro, the user's definition will override the system definition. The following table summarizes the built-in macros of Edit Control.
 
@@ -998,7 +992,7 @@ The lexical macros are used to specify configuration settings, and can be added 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1026,9 +1020,9 @@ configLex.ContinueBlock = macro.NameInConfig;
 
 configLex.IsContinueRegex = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1056,7 +1050,7 @@ configLex.ContinueBlock = macro.NameInConfig
 
 configLex.IsContinueRegex = True
 
-
+{% endhighlight %}
 
 See Also
 
@@ -1072,7 +1066,7 @@ You can also set the tab size to the desired number of spaces using the TabSize 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1080,9 +1074,9 @@ You can also set the tab size to the desired number of spaces using the TabSize 
 
 this.editControl1.TabSize = n;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1090,7 +1084,7 @@ this.editControl1.TabSize = n;
 
 Me.editControl1.TabSize = n
 
-
+{% endhighlight %}
 
 Indent and Outdent Text Programmatically
 
@@ -1122,7 +1116,7 @@ Outdents selected text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1144,9 +1138,9 @@ this.editControl1.OutdentText(new Point(5, 5), new Point(10, 10));
 
 this.editControl1.OutdentSelection();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1169,7 +1163,7 @@ Me.editControl1.OutdentText(New Point(5, 5), New Point(10, 10))
 Me.editControl1.OutdentSelection()
 
 
-
+{% endhighlight %}
 
 
 ## Right-To-Left (RTL) Support 
@@ -1195,11 +1189,11 @@ With RTL support, you can use EditControl, to render content in Right-To-left la
 
 
 
-{{ '![](Editing-Features_images/Editing-Features_img6.png)' | markdownify }}
-{:.image }
+![](Editing-Features_images/Editing-Features_img6.png)
 
 
-_Figure_ _11__: Right-To-Left Layout of Arabic_
+
+_Figure_ _11_: Right-To-Left Layout of Arabic
 
 
 
@@ -1231,17 +1225,17 @@ RTL can be enabled in EditControl with the Application Programming Interface (AP
 
 
 
-[C#]
+{% highlight c# %}
 
 this.editControl1.RenderRightToLeft = true;
 
+{% endhighlight %}
 
-
-[VB NET]
+{% highlight vbnet%}
 
 Me.editControl1.RenderRightToLeft = True
 
-
+{% endhighlight %}
 
 Sample Link
 

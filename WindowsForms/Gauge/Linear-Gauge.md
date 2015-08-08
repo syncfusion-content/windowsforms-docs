@@ -7,13 +7,13 @@ control: Gauge
 documentation: ug
 ---
 
-## Linear Gauge
+# Linear Gauge
 
 Linear gauges are perfect for displaying values graphically along a linear scale. All the elements in a linear gauge, including scales, labels, ticks, and pointers, can be fully customized with data-binding support.
 
 The LinearGauge control includes the following elements: scale label, needle, gauge value, and background frame. All the elements can be optionally displayed in the Gauge control. 
 
-Feature Summary
+## Feature Summary
 
 Here is a brief overview of various features of the LinearGauge control.
 
@@ -21,6 +21,7 @@ Here is a brief overview of various features of the LinearGauge control.
 * Frame Types - Allow you to specify the built-in frame style, such as full circle or half circle.
 * Pointers - Provide complete support for pointers to point to the value.
 * Range - Full-fledged range support. 
+
 ### Concepts and Features
 
 
@@ -32,7 +33,8 @@ This section illustrates the features of the linear gauge with images and sample
 * Needles
 * Ranges
 * Scaling Divisions
-#### Linear Gauge Frame
+
+### Linear Gauge Frame
 
 
 The frame defines the frame types of linear gauges. Frames can be applied using the FrameType property. The LinearGauge control contains two frame types:
@@ -40,7 +42,7 @@ The frame defines the frame types of linear gauges. Frames can be applied using 
 * Horizontal
 * Vertical
 
-_Table_ _9__: Linear Gauge Frame Properties_
+_Table_ _9_: Linear Gauge Frame Properties
 
 <table>
 <tr>
@@ -96,13 +98,13 @@ Gets or sets the value indicator color of the gauge.</td></tr>
 </table>
 
 
-{{ '![](Linear-Gauge_images/Linear-Gauge_img1.png)' | markdownify }}
-{:.image }
+![](Linear-Gauge_images/Linear-Gauge_img1.png)
 
 
 
-{{ '![](Linear-Gauge_images/Linear-Gauge_img2.png)' | markdownify }}
-{:.image }
+
+![](Linear-Gauge_images/Linear-Gauge_img2.png)
+
 
 
 
@@ -111,17 +113,19 @@ Code Sample
 
 
 
-[C#]
+{% highlight c# %}
 
 this.linearGauge1.LinearFrameType = LinearFrameType.Horizontal;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.linearGauge1.LinearFrameType = LinearFrameType.Horizontal
 
-##### Scales
+{% endhighlight %}
+
+#### Scales
 
 Scales are used to control element placement and value ranges. 
 
@@ -129,7 +133,7 @@ Customizing Scales
 
 You can customize scales added to the Linear Gauge by using the properties listed in the following table:
 
-_Table_ _10__: Scales_
+_Table_ _10_: Scales
 
 <table>
 <tr>
@@ -148,13 +152,14 @@ ScaleLabelColor</td><td>
 Color</td><td>
 Gets or sets the scale label color of the gauge.</td></tr>
 </table>
-##### Ticks
+
+#### Ticks
 
 Two types of ticks can be added to the LinearGauge control scale. Major tick marks are the primary scale indicators. Minor tick marks and inter-tick marks are the secondary scale indicators that fall between the major ticks.
 
 The following table lists the properties that can be used to customize the linear tick marks. This is done to represent the scale with meaningful markers and labels.
 
-_Table_ _11__: Ticks_
+_Table_ _11_: Ticks
 
 <table>
 <tr>
@@ -186,16 +191,19 @@ Gets or sets the height of the minor tickmarks.</td></tr>
 <td>
 Pointer Placement</td><td>
 Enum</td><td>
-Gets or sets the pointer position* Near* Far* Center</td></tr>
+Gets or sets the pointer position
+<ul>
+<li> Near</li>
+<li> Far</li>
+<li> Center</li></ul></td></tr>
 </table>
-
 
 
 The following code sample demonstrates how to add major and minor ticks to the linear scale.
 
 
 
-[C#] 
+{% highlight c# %} 
 
 this.linearGauge1.MajorTickMarkColor = System.Drawing.Color.White;
 
@@ -205,9 +213,9 @@ this.linearGauge1.MinorTickHeight = 6;
 
 this.linearGauge1.MajorTicksHeight = 12;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.linearGauge1.MajorTickMarkColor = System.Drawing.Color.White
 
@@ -217,65 +225,65 @@ Me.linearGauge1.MinorTickHeight = 6
 
 Me.linearGauge1.MajorTicksHeight = 12
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 this.linearGauge1.ShowNeedle = true;
 
 this.linearGauge1.NeedleColor = System.Drawing.Color.Black;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.linearGauge1.ShowNeedle = True
 
 Me.linearGauge1.NeedleColor = System.Drawing.Color.Black
 
 
+{% endhighlight %}
+
+
+#### Pointer Placement
 
 
 
-Pointer Placement
-
-
-
-[C#]
+{% highlight c# %}
 
 this.linearGauge1.PointerPlacement = Placement.Center;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
       Me.linearGauge1.PointerPlacement = Placement.Center
 
+{% endhighlight %}
 
-
-{{ '![](Linear-Gauge_images/Linear-Gauge_img3.png)' | markdownify }}
-{:.image }
-
-
-
-
-{{ '![](Linear-Gauge_images/Linear-Gauge_img4.png)' | markdownify }}
-{:.image }
+![](Linear-Gauge_images/Linear-Gauge_img3.png)
 
 
 
 
-{{ '![](Linear-Gauge_images/Linear-Gauge_img5.png)' | markdownify }}
-{:.image }
+
+![](Linear-Gauge_images/Linear-Gauge_img4.png)
 
 
-##### Ranges
+
+
+
+![](Linear-Gauge_images/Linear-Gauge_img5.png)
+
+
+
+#### Ranges
 
 Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and more. All the available attributes are listed in the following table: 
 
-_Table_ _12__: Ranges_
+_Table_ _12_: Ranges
 
 <table>
 <tr>
@@ -297,7 +305,9 @@ Specify the end value of the range. Default value is set to 0.</td></tr>
 <td>
 RangePlacement</td><td>
 Enum</td><td>
-Using this attribute, the range can be positioned in two areas along the linear scale. It includes the following options:* Inside* Outside<br> The default value is Inside.</td></tr>
+Using this attribute, the range can be positioned in two areas along the linear scale. It includes the following options:
+<ul><li> Inside</li>
+<li> Outside</li></ul><br> The default value is Inside.</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -315,7 +325,7 @@ The following code sample demonstrates how to add ranges to the linear gauge:
 
 
 
-[C#]
+{% highlight c# %}
 
 Syncfusion.Windows.Forms.Gauge.LinearRange range1 = new Syncfusion.Windows.Forms.Gauge.LinearRange();
 
@@ -333,11 +343,11 @@ range1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((by
 
             this.linearGauge1.Ranges.Add(range1);
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim range1 As New Syncfusion.Windows.Forms.Gauge.LinearRange range()
 
@@ -356,18 +366,18 @@ range1.StartValue = 0F
 Me.linearGauge1.Ranges.Add(range1)
 
 
+{% endhighlight %}
+
+
+![](Linear-Gauge_images/Linear-Gauge_img6.png)
 
 
 
-{{ '![](Linear-Gauge_images/Linear-Gauge_img6.png)' | markdownify }}
-{:.image }
-
-
-##### Scaling Divisions
+#### Scaling Divisions
 
 The Gauge control for Windows Forms includes support for customizing the number of major tick lines and minor tick lines using the Major Difference and MinorTickCount properties. It also provides support to customize the number of tick lines using the MaximumValue and MinimunValue properties.
 
-_Table_ _13__: Scaling Divisions_
+_Table_ _13_: Scaling Divisions
 
 <table>
 <tr>
@@ -398,7 +408,7 @@ Gets or sets the minor difference value.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
            this.linearGauge1.MajorDifference = 20F;
 
@@ -408,11 +418,11 @@ Gets or sets the minor difference value.</td></tr>
 
            this.linearGauge1.MinorTickCount = 1;
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.linearGauge1.MajorDifference = 20F
 
@@ -422,9 +432,10 @@ Me.linearGauge1.MinimumValue = 0F
 
 Me.linearGauge1.MinorTickCount = 1
 
+{% endhighlight %}
 
 
-### Visual Styles for All Gauges
+## Visual Styles for All Gauges
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
 
@@ -437,55 +448,53 @@ The styles are built-in for all of the gauges. Using SkinManager, these four sty
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black;
 
+{% endhighlight %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 Me.linearGauge1.VisualStyle = 
 
 Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
+{% endhighlight %}
+
+
+
+![](Linear-Gauge_images/Linear-Gauge_img7.png)
 
 
 
 
-{{ '![](Linear-Gauge_images/Linear-Gauge_img7.png)' | markdownify }}
-{:.image }
+
+![](Linear-Gauge_images/Linear-Gauge_img8.png)
 
 
 
 
-{{ '![](Linear-Gauge_images/Linear-Gauge_img8.png)' | markdownify }}
-{:.image }
+
+![](Linear-Gauge_images/Linear-Gauge_img9.png)
 
 
 
 
-{{ '![](Linear-Gauge_images/Linear-Gauge_img9.png)' | markdownify }}
-{:.image }
+
+![](Linear-Gauge_images/Linear-Gauge_img10.png)
 
 
 
-
-{{ '![](Linear-Gauge_images/Linear-Gauge_img10.png)' | markdownify }}
-{:.image }
-
-
-### Data Binding
+## Data Binding
 
 You can bind any data source to the LinearGauge control and map an index of a record to represent the actual value in the linear gauge. The DisplayMember and DisplayRecordIndex properties will map the DataColumn and DataRow of the binding source respectively to the LinearGauge control, which will then support high frequency data updates.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -496,4 +505,4 @@ this.linearGauge1.DataSource = dataTable;
             this.linearGauge1.DisplayMember = [column name];
 
 
-
+{% endhighlight %}

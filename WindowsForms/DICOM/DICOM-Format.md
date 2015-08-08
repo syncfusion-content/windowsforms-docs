@@ -17,6 +17,7 @@ Essential DICOM is a 100% native .NET library that converts the standard image f
 * EMF
 * TIFF
 * GIF
+
 ## Properties, Methods, and Events 
 
 
@@ -24,7 +25,7 @@ The following properties and methods will fall under the DICOMImage class.
 
 ### Properties
 
-_Table_ _4__: Properties Table_
+_Table_ _4_: Properties Table
 
 <table>
 <tr>
@@ -52,9 +53,10 @@ Gets or sets the input image</td><td>
 Normal</td><td>
 System.Drawing</td></tr>
 </table>
+
 ### Methods
 
-_Table_ _5__: Methods Table_
+_Table_ _5_: Methods Table
 
 <table>
 <tr>
@@ -72,11 +74,12 @@ Save(String)Save(Stream) </th><th>
 Normal </th><th>
 void </th></tr>
 </table>
+
 ## Adding DICOM to an Application 
 
 The following sets of code snippets illustrate the conversion to DICOM Format.
 
-[C#]
+{% highlight c# %}
 
    //Initailizing the DICOM Image object.
 
@@ -87,8 +90,9 @@ The following sets of code snippets illustrate the conversion to DICOM Format.
      dcmImage.Save("Sample.dcm");
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
    'Initailizing the DICOM Image object.
 
@@ -98,5 +102,5 @@ The following sets of code snippets illustrate the conversion to DICOM Format.
 
    dcmImage.Save("Sample.dcm")
 
-
+{% endhighlight %}
 

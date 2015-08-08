@@ -15,7 +15,7 @@ Edit Control provides extensive support for File and Stream Handling operations 
 
 This section discusses the file operations supported in Edit Control. 
 
-Creating Files
+### Creating Files
 
 The New and NewFile methods are used to create a new stream or file, and optionally allows you to set the language to be used by specifying the appropriate configuration settings.
 
@@ -35,7 +35,7 @@ Creates new empty file with specified coloring.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -61,9 +61,9 @@ this.editControl.New(ConfigLanguage lang);
 
 this.editControl.NewFile(IConfigLanguage lang);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -85,9 +85,9 @@ Me.editControl1.NewFile(config)
 
 Me.editControl1.[New](config)
 
+{% endhighlight %}
 
-
-Loading Files
+### Loading Files
 
 The LoadFile method loads the content of any desired file into the Edit Control.
 
@@ -103,13 +103,11 @@ Shows open file dialog to the user and opens the selected file.</td></tr>
 </table>
 
 
-> {{ '![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: The character encoding for the text can also be specified while loading the file._
+> Note: The character encoding for the text can also be specified while loading the file.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -123,9 +121,9 @@ this.editControl1.LoadFile();
 
 this.editControl1.LoadFile("Temp.txt", Encoding.ASCII);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -139,9 +137,9 @@ Me.editControl1.LoadFile()
 
 Me.editControl1.LoadFile("Temp.txt", Encoding.ASCII)
 
+{% endhighlight %}
 
-
-Saving Files
+### Saving Files
 
 The following methods are used to save a file in the Edit Control.
 
@@ -169,7 +167,7 @@ Saves the file only if it was modified and prompts for filename if needed. This 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -195,9 +193,9 @@ this.editControl1.SaveAs();
 
 this.editControl1.SaveModified();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -223,9 +221,9 @@ Me.editControl1.SaveAs()
 
 Me.editControl1.SaveModified()
 
+{% endhighlight %}
 
-
-Inserting Files
+### Inserting Files
 
 The following methods are used to insert a file in the Edit Control.
 
@@ -248,7 +246,7 @@ Inserts a file by using file path.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Displays the Insert dialog box
 
@@ -261,10 +259,10 @@ this.editControl1.InsertFile();
 this.editControl1.InsertFile(@"..\\..\\Form2.cs");
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Displays the Insert dialog box
 Me.editControl1.InsertFile
@@ -273,9 +271,9 @@ Me.editControl1.InsertFile
 'Insert a file using file path
 Me.editControl1.InsertFile(@"..\\..\\Form2.cs")
 
+{% endhighlight %}
 
-
-Dropping Files
+### Dropping Files
 
 Files can be dropped onto the Edit Control by using the properties given below.
 
@@ -297,7 +295,7 @@ Gets / sets extensions of files that can be dropped to Edit Control.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -311,9 +309,9 @@ this.editControl1.DropAllFiles = true;
 
 this.editControl1.FileExtensions = new string[] {".cs", ".sql", ".vb", ".xml"};
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -327,7 +325,7 @@ Me.editControl1.DropAllFiles = True
 
 Me.editControl1.FileExtensions = New String() {".cs", ".sql", ".vb", ".xml"} 
 
-
+{% endhighlight %}
 
 ## Loading And Saving Contents
 
@@ -355,7 +353,7 @@ Saves content to the specified stream using specified encoding and line end styl
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -381,9 +379,9 @@ this.editControl1.FlushChanges();
 
 this.editControl1.SaveStream(System.IO.Stream.Null , Encoding.BigEndianUnicode, Syncfusion.IO.NewLineStyle.Mac);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -409,9 +407,9 @@ Me.editControl1.FlushChanges()
 
 Me.editControl1.SaveStream(System.IO.Stream.Null , Encoding.BigEndianUnicode, Syncfusion.IO.NewLineStyle.Mac)
 
+{% endhighlight %}
 
-
-Getting Details of Currently Loaded File
+### Getting Details of Currently Loaded File
 
 The name of the file that is currently loaded can be set by using the FileName property.
 
@@ -429,7 +427,7 @@ Gets / sets the name of the currently opened file.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -437,9 +435,9 @@ Gets / sets the name of the currently opened file.</td></tr>
 
 this.editControl1.FileName = "Temp.txt";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -447,9 +445,9 @@ this.editControl1.FileName = "Temp.txt";
 
 Me.editControl1.FileName = "Temp.txt"
 
+{% endhighlight %}
 
-
-Getting Details of Currently Loaded Stream
+### Getting Details of Currently Loaded Stream
 
 The name of the stream that is currently loaded in the Edit Control can be set by using the FileOpened property.
 
@@ -465,7 +463,7 @@ Gets / sets the filestream that is used as an input.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -473,9 +471,9 @@ Gets / sets the filestream that is used as an input.</td></tr>
 
 this.editControl1.FileOpened = new FileStream("Temp.txt", FileMode.Create);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -483,7 +481,7 @@ this.editControl1.FileOpened = new FileStream("Temp.txt", FileMode.Create);
 
 Me.editControl1.FileOpened = New FileStream("Temp.txt", FileMode.Create)
 
-
+{% endhighlight %}
 
 See Also
 
@@ -497,23 +495,23 @@ In the Edit control, all unsaved changes from the current stream can be discarde
 
 
 
-[C#]
+{% highlight c# %}
 
 /// Discards all unsaved changes from current stream.
 
 Me.editControl1.DiscardChanges();
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 ‘ Discards all unsaved changes from current stream.
 
 Me.editControl1.DiscardChanges();  
 
-
+{% endhighlight %}
 
 ## Saving And Cancelling Changes
 
@@ -527,7 +525,7 @@ This property specifies whether the default Save Changes prompt should be displa
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -535,9 +533,9 @@ This property specifies whether the default Save Changes prompt should be displa
 
 this.editControl1.SaveOnClose = false; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -545,13 +543,13 @@ this.editControl1.SaveOnClose = false;
 
 Me.editControl1.SaveOnClose = False 
 
+{% endhighlight %}
+
+![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg)
 
 
-{{ '![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _62__: Default Save Changes Prompt Dialog Box_
+_Figure_ _62_: Default Save Changes Prompt Dialog Box
 
 
 
@@ -561,7 +559,7 @@ When the SaveOnClose property is set to False, the default Save Changes prompt d
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -587,9 +585,9 @@ if (this.editControl1.SaveModified() == true)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -613,7 +611,7 @@ End If
 
 End Sub 'Form1_Closing
 
-
+{% endhighlight %}
 
 Saving Changes using the Save Changes Prompt
 
@@ -623,7 +621,7 @@ The above task can be further customized by handling the Closing event of Edit C
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -657,9 +655,9 @@ e.Action = SaveChangesAction.ShowDialog;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -691,15 +689,14 @@ e.Action = SaveChangesAction.ShowDialog
 
 End Sub
 
+{% endhighlight %}
 
 
-> {{ '![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img3.jpeg)' | markdownify }}
-{:.image }
-_Note: The default value of e.Action is SaveChangesAction.ShowDialog._
+> Note: The default value of e.Action is SaveChangesAction.ShowDialog.
 
 
 
-Close Method
+#### Close Method
 
 This method closes the currently open file or stream and displays the Edit Control in the read-only mode, until a new file or stream is opened.
 
@@ -717,7 +714,7 @@ Closes stream, makes control readonly.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -725,9 +722,9 @@ Closes stream, makes control readonly.</td></tr>
 
 this.editControl1.Close(); 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -735,7 +732,7 @@ this.editControl1.Close();
 
 Me.editControl1.Close()
 
-
+{% endhighlight %}
 
 See Also
 
@@ -759,7 +756,7 @@ Gets / sets value indicating whether file should be opened in shared mode.</td><
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -767,9 +764,9 @@ Gets / sets value indicating whether file should be opened in shared mode.</td><
 
 this.editControl1.SharedFileMode = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -777,7 +774,7 @@ this.editControl1.SharedFileMode = true;
 
 Me.editControl1.SharedFileMode = True
 
-
+{% endhighlight %}
 
 ## Lexical Analysis And Semantic Parsing
 
@@ -789,13 +786,13 @@ Additionally, parsers can detect the situation when no legal end state can be re
 
 
 
-Lexical Analysis
+#### Lexical Analysis
 
 Lexical Analysis is the process of scanning text in a document and breaking it up into meaningful tokens. The purpose of lexical analyzers is to take a stream of input characters, and decode them into higher level tokens that a semantic parser can understand. In this stage, the text is split into tokens with the help of some special rules specified by the user. For instance, the user can specify "=+" or "end if " expressions as single tokens using the Split tag in the configuration file. Tokens are plain text, and have no additional information or meaning associated with them.
 
 
 
-Semantic Parsing
+#### Semantic Parsing
 
 In this stage, the syntax highlighting rules are applied. These rules can be as simple as identifying the format name of the token, and applying the appropriate font or color settings. But this simple two-phase procedure was not very flexible in complex scenarios involving embedded scripts. Hence the entire process has been enhanced from the very beginning, by merging the lexical analysis and semantic parsing.
 
@@ -803,7 +800,7 @@ The Parser property indicates the parser used for parsing the currently loaded d
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -811,9 +808,9 @@ The Parser property indicates the parser used for parsing the currently loaded d
 
 RenderableLexemParser lexemParser = this.editControl1.Parser;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -821,9 +818,9 @@ RenderableLexemParser lexemParser = this.editControl1.Parser;
 
 Dim lexemParser As RenderableLexemParser = Me.editControl1.Parser
 
+{% endhighlight %}
 
-
-Parsing Modes
+#### Parsing Modes
 
 Edit Control supports several modes of text parsing which can be specified to the ParsingMode property by using the TextParsingMode enumerator. The default value of the ParsingMode property is set to PartialParsingNoFallback.
 
@@ -850,7 +847,7 @@ When ParsingMode is set to PartialParsingWithFallback, text parsing is once agai
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -858,9 +855,9 @@ When ParsingMode is set to PartialParsingWithFallback, text parsing is once agai
 
 this.editControl1.ParsingMode = Syncfusion.Windows.Forms.Edit.Enums.TextParsingMode.FullParsing;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -868,7 +865,7 @@ this.editControl1.ParsingMode = Syncfusion.Windows.Forms.Edit.Enums.TextParsingM
 
 Me.editControl1.ParsingMode = Syncfusion.Windows.Forms.Edit.Enums.TextParsingMode.FullParsing
 
-
+{% endhighlight %}
 
 ## Clearing/Flushing Saved Changes
 
@@ -892,19 +889,19 @@ Gets \ Sets whether to reset the saved lines changes.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 //Gets or sets a value to reset the saved line changes.
 
 this.editControl1.FlushSavedLines = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 //Gets or sets a value to reset the saved line changes.
 
  Me.editControl1.FlushSavedLines = True
 
-
+{% endhighlight %}
 

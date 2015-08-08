@@ -13,7 +13,7 @@ The Scroll property of the HTMLUI control helps in loading large HTML documents.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23,9 +23,9 @@ IHTMLElement elem = this.htmluiControl1.Document.GetElementByUserId("pre");
 
 this.htmluiControl1.ScrollToElement(elem);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -35,7 +35,7 @@ Private elem As IHTMLElement = Me.htmluiControl1.Document.GetElementByUserId("pr
 
 Me.htmluiControl1.ScrollToElement(elem)
 
-
+{% endhighlight %}
 
 ## HTMLUIAutoScroll Sample
 
@@ -43,8 +43,8 @@ This sample illustrates the Scrolling feature supported in HTMLUI.
 
 
 
-{{ '![](Scrolling_images/Scrolling_img1.jpeg)' | markdownify }}
-{:.image }
+![](Scrolling_images/Scrolling_img1.jpeg)
+
 
 
 

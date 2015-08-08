@@ -26,7 +26,7 @@ The following example illustrates how the Anchor tag is rendered in HTMLUI.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -34,9 +34,9 @@ string htmlCode="<html><head><title>A Tag support</title></head><body><A href="l
 
 this.htmluiControl1.LoadFromString(htmlCode);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -44,7 +44,7 @@ Private htmlCode As String = "<html><head><title>A Tag support</title></head><bo
 
 Me.HtmluiControl1.LoadFromString(htmlCode)
 
-
+{% endhighlight %}
 
 ## ABBR - Abbreviation Tag
 
@@ -52,7 +52,7 @@ The Abbreviation tag is used to indicate the abbreviated forms of long and impor
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -70,25 +70,25 @@ File Location and Name:  C:\MyProjects\Anchor\abbr.html
 
 </html>
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\Anchor\abbr.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\Anchor\abbr.html")
 
-
+{% endhighlight %}
 
 ## Acronym Tag
 
@@ -96,7 +96,7 @@ The Acronym tag is used to define the start of an acronym. The HTMLUI control su
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -114,23 +114,23 @@ File Location and Name:  C:\MyProjects\Acronym\acronym.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\Acronym\acronym.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\Acronym\acronym.html")
 
-
+{% endhighlight %}
 
 ## Comment Tag
 
@@ -138,7 +138,7 @@ HTMLUI control supports the use of HTML Comment tags while developing applicatio
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -158,23 +158,23 @@ File Location and Name:  C:\MyProjects\Comment\comment.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\Comment\comment.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\Comment\comment.html")
 
-
+{% endhighlight %}
 
 ## Font Style Tags
 
@@ -191,7 +191,7 @@ The Font Style tags are used to format the appearance of the specified text when
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -219,23 +219,23 @@ File Location and Name:  C:\MyProjects\FontStyle\fontStyle.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\FontStyle\fontStyle.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\FontStyle\fontStyle.html")
 
-
+{% endhighlight %}
 
 ## BODY - Body Tag
 
@@ -243,7 +243,7 @@ The Body element defines the body of the HTML document. This is the parent eleme
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -261,23 +261,23 @@ File Location and Name:  C:\MyProjects\body\bodyTag.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\body\bodyTag.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\body\bodyTag.html")
 
-
+{% endhighlight %}
 
 ## BR - Break Tag
 
@@ -285,7 +285,7 @@ The Break tag is used to insert a line break in the document displayed.
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -303,23 +303,23 @@ File Location and Name:  C:\MyProjects\break\br.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\break\br.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\break\br.html")
 
-
+{% endhighlight %}
 
 ## DIV - Division Tag
 
@@ -332,7 +332,7 @@ The Division tag is used to define a division or a section defined in the docume
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -357,22 +357,22 @@ File Location and Name:  C:\MyProjects\divide\div.html
 </html>
 
 
-
-[C#]
+{% endhighlight %}
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\divide\div.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\divide\div.html")
 
-
+{% endhighlight %}
 
 ## FORM - Form Tag
 
@@ -380,7 +380,7 @@ The Form tag is used to create a form-based dialog for the users to give their i
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -408,23 +408,23 @@ File Location and Name:  C:\MyProjects\UserInput\form.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\UserInput\form.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\UserInput\form.html")
 
-
+{% endhighlight %}
 
 ## HEAD - Head Tag
 
@@ -438,7 +438,7 @@ The Head element contains the information required for processing the document. 
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -466,23 +466,23 @@ File Location and Name:  C:\MyProjects\heading\head.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\heading\head.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\heading\head.html")
 
-
+{% endhighlight %}
 
 ## H1 - H6 Header Tag
 
@@ -490,7 +490,7 @@ The Header tags are defined as the h tags. These header tags are classified into
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -518,23 +518,23 @@ File Location and Name:  C:\MyProjects\header\h.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\header\h.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\header\h.html")
 
-
+{% endhighlight %}
 
 ## HR - Horizontal Rule Tag
 
@@ -548,7 +548,7 @@ The Horizontal Rule tag is used to draw an horizontal line in the document. The 
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -566,23 +566,23 @@ File Location and Name:  C:\MyProjects\HorizRule\rule.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\HorizRule\rule.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\HorizRule\rule.html")
 
-
+{% endhighlight %}
 
 ## HTML - HTML Tag
 
@@ -590,7 +590,7 @@ The HTML tag specifies that the document to be loaded in the HTMLUI control is a
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -614,23 +614,23 @@ File Location and Name:  C:\MyProjects\HTML\htmlElement.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\HTML\htmlElement.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\HTML\htmlElement.html")
 
-
+{% endhighlight %}
 
 ## IMG - Image Tag
 
@@ -643,7 +643,7 @@ The Image tag is used to display an image in the HTMLUI control. The HTMLUI cont
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -661,25 +661,23 @@ File Location and Name:  C:\MyProjects\img\imageElement.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\img\imageElement.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\img\imageElement.html")
 
-
-
-
+{% endhighlight %}
 
 ## INPUT - Input Tag
 
@@ -738,7 +736,7 @@ Submit Button</td></tr>
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -768,21 +766,24 @@ File Location and Name:  C:\MyProjects\input\input.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\input\input.html");
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\input\input.html")
+
+{% endhighlight %}
 
 ## LI - List Item Tag
 
@@ -790,7 +791,7 @@ The List Item tag defines a list item. The <li> tag is used inside the <ol> tag 
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -816,23 +817,23 @@ File Location and Name:  C:\MyProjects\listItem\li.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\li.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\li.html")
 
-
+{% endhighlight %}
 
 ## LINK - Link Tag
 
@@ -846,13 +847,11 @@ The Link tag is used to link another document to the current HTML document. This
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
 File Location and Name:  C:\MyProjects\link\link.html
-
-
 
 <html>
 
@@ -866,9 +865,9 @@ File Location and Name:  C:\MyProjects\link\link.html
 
 </html>
 
+{% endhighlight %}
 
-
-[Stylesheet]
+{% highlight html %}
 
 
 
@@ -884,23 +883,23 @@ background-color: #dae5f5;
 
 }
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\link\link.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\link\link.html")
 
-
+{% endhighlight %}
 
 ## OL - Ordered List Tag
 
@@ -908,7 +907,7 @@ The Ordered List tag defines the start of an ordered list. The ordered list is n
 
 
 
-[HTMl]
+{% highlight html %}
 
 
 
@@ -934,35 +933,29 @@ File Location and Name:  C:\MyProjects\listItem\ol.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\ol.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\ol.html")
 
-
+{% endhighlight %}
 
 ## OPTION - Option Tag
 
 The Option tag is used to include items to the drop-down list. The option tag is the child of the select tag. The option tag in HTMLUI supports the selected attribute. This attribute specifies the control that the specified option item is to be selected at startup.
 
-
-
-
-
-[HTML]
-
-
+{% highlight html %}
 
 File Location and Name:  C:\MyProjects\select\option.html
 
@@ -992,23 +985,23 @@ File Location and Name:  C:\MyProjects\select\option.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\select\option.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\select\option.html")
 
-
+{% endhighlight %}
 
 ## P - Paragraph Tag
 
@@ -1023,7 +1016,7 @@ The P tag is used to define a paragraph in the HTML document. HTMLUI supports th
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1043,27 +1036,25 @@ File Location and Name:  C:\MyProjects\paragraph\p.html
 
 </html>
 
+{% endhighlight %}
 
-
-
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html");
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html")
 
-
+{% endhighlight %}
 
 ## PRE - Preformatted Tag
 
@@ -1071,7 +1062,7 @@ The HTMLUI control renders preformatted texts written inside the <pre> tags. The
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1095,23 +1086,23 @@ The Evaluation Center has online sample code and complete sample downloads to he
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html")
 
-
+{% endhighlight %}
 
 ## SCRIPT - Script Tag
 
@@ -1121,7 +1112,7 @@ HTMLUI supports C#, Visual Basic and Jscript. The language attribute is used to 
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1217,7 +1208,7 @@ public class Script
 
 </html>
 
-
+{% endhighlight %}
 
 ## SELECT - Select Tag
 
@@ -1230,7 +1221,7 @@ The Select tag is used to create a drop-down list of options that can be selecte
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1264,23 +1255,23 @@ Essential Studio includes ten component libraries in one great package. Each of 
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\select\select.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\select\select.html")
 
-
+{% endhighlight %}
 
 ## SPAN - Span Tag
 
@@ -1288,7 +1279,7 @@ The Span element is used to group inline elements present inside the element tag
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1306,24 +1297,24 @@ File Location and Name: C:\MyProjects\span\span.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\span\span.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\span\span.html")
 
 
-
+{% endhighlight %}
 
 
 ## STYLE - Style Tag
@@ -1336,100 +1327,93 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
 
 
-[HTML]
+   ~~~ vbnet
 
+		<style>p {color: red}</style>
 
+		<p>Sample</p>
 
-<style>p {color: red}</style>
-
-<p>Sample</p>
-
-
+   ~~~
+   {:.prettyprint }
 
 2. By specifying the Class Names to the Styles: Specifies styles with the help of the class names inside the Style tag
 
+   ~~~ html
+   
+		<style>.span {color: green}</style>
 
+		<span class=”span”>Sample</span>
 
-[HTML]
-
-
-
-<style>.span {color: green}</style>
-
-<span class=”span”>Sample</span>
-
-
+   ~~~
+   {:.prettyprint }
 
 3. By specifying ID Class Selectors: Specifies styles by writing styles with the unique id inside the Style tag, and assigning them to the HTML elements by using the id attribute
 
 
 
-[HTML]
+   ~~~ html
+
+		<style>#divide {color: blue}</style>
+
+		<div id=”divide”>Sample</span>
+
+   ~~~
+   {:.prettyprint }
+
+   Style tag in HTMLUI also supports the type attribute. The type attribute is optional and it specifies the type of the content in the HTML document.
+
+
+   ~~~ html
+
+		File Location and Name:  C:\MyProjects\style\style.html
 
 
 
-<style>#divide {color: blue}</style>
+		<html>
 
-<div id=”divide”>Sample</span>
+		<head>
 
+		<style type="text/css">
 
+		p {color: red}
 
-Style tag in HTMLUI also supports the type attribute. The type attribute is optional and it specifies the type of the content in the HTML document.
+		.span {color: blue}
 
+		#bluebg { background-color: #dae5f5; background-repeat: repeat-x;}
 
+		</style>
 
-[HTML]
+		</head>
 
+		<body id="bluebg">
 
+		<p>100% .NET HTML display engine that can be used to create 
 
-File Location and Name:  C:\MyProjects\style\style.html
+		extremely flexible user interfaces. Part of <span 
 
+		class="span">Essential Studio</span> Enterprise.</p> 
 
+		</body>
 
-<html>
+		</html>
 
-<head>
+   ~~~
+   {:.prettyprint }
 
-<style type="text/css">
-
-p {color: red}
-
-.span {color: blue}
-
-#bluebg { background-color: #dae5f5; background-repeat: repeat-x;}
-
-</style>
-
-</head>
-
-<body id="bluebg">
-
-<p>100% .NET HTML display engine that can be used to create 
-
-extremely flexible user interfaces. Part of <span 
-
-class="span">Essential Studio</span> Enterprise.</p> 
-
-</body>
-
-</html>
+   ~~~ cs
 
 
+		this.htmluiControl.LoadHTML(@"C:\MyProjects\style\style.html");
 
-[C#]
+   ~~~
+   {:.prettyprint }   
 
+   ~~~ html
 
-
-this.htmluiControl.LoadHTML(@"C:\MyProjects\style\style.html");
-
-
-
-[VB.NET]
-
-
-
-Me.htmluiControl.LoadHTML(@"C:\MyProjects\style\style.html")
-
+		Me.htmluiControl.LoadHTML(@"C:\MyProjects\style\style.html")
+  
+   ~~~
+   {:.prettyprint }
 
 
 ## SUB - Subscript Tag
@@ -1438,7 +1422,7 @@ The Subscript tag defines a subscript text. The use of subscript text in HTMLUI 
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1464,23 +1448,23 @@ Carbon-di-Oxide - CO<sub>2</sub>
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\sub\sub.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\sub\sub.html")
 
-
+{% endhighlight %}
 
 ## SUP - Superscript Tag
 
@@ -1488,7 +1472,7 @@ The Superscript tag defines a superscript text. The use of superscript text in H
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1519,26 +1503,26 @@ hypotenuse<sup>2</sup> = opposite<sup>2</sup> + adjacent<sup>2</sup>
 </html>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\sup\sup.html");
 
 
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\sup\sup.html")
 
-
+{% endhighlight %}
 
 ## TABLE - Table Tag
 
@@ -1551,7 +1535,7 @@ A Table tag defines a table in an HTML document. The table tag uses the <tr> tag
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1577,23 +1561,23 @@ File Location and Name:  C:\MyProjects\table\table.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\table\table.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\table.html")
 
-
+{% endhighlight %}
 
 ## TD - Table Cell Tag
 
@@ -1612,7 +1596,7 @@ The Table Cell tag defines a cell inside a table. The <td> tag has a parent <tr>
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1684,23 +1668,23 @@ File Location and Name:  C:\MyProjects\table\td.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\table\td.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\td.html")
 
-
+{% endhighlight %}
 
 ## TEXTAREA - Text Area Tag
 
@@ -1711,7 +1695,7 @@ The Text Area tag is used to define a multiline text box. The HTMLUI control sup
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1733,21 +1717,21 @@ Essential Studio features "Just-In-Time" source level debugging. Switch between 
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\textArea\textarea.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
-
-
+{% highlight vbnet %}
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\textArea\textarea.html")
+
+{% endhighlight %}
 
 ## TH - Table Header Tag
 
@@ -1766,7 +1750,7 @@ The Table Header tag is used to define header cells for the cells in a table. Th
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1824,23 +1808,23 @@ File Location and Name:  C:\MyProjects\table\th.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\table\th.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\th.html")
 
-
+{% endhighlight %}
 
 ## TITLE - Title Tag
 
@@ -1848,7 +1832,7 @@ The Title tag is used to enter a title to the document. The <title> tag is displ
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1876,21 +1860,23 @@ Syncfusion Essential HTMLUI
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\head\title.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\head\title.html")
+
+{% endhighlight %}
 
 ## TR - Table Row Tag
 
@@ -1898,7 +1884,7 @@ The Table Row tag is used to define a row in a table. The row contains the cells
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1926,23 +1912,23 @@ File Location and Name:  C:\MyProjects\table\tr.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\table\tr.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\tr.html")
 
-
+{% endhighlight %}
 
 ## UL - UnOrdered List Tag
 
@@ -1950,7 +1936,7 @@ The UnOrdered List tag defines the start of a bulleted list. HTMLUI supports the
 
 
 
-[HTML]
+{% highlight html %}
 
 
 
@@ -1976,23 +1962,23 @@ File Location and Name:  C:\MyProjects\listItem\ul.html
 
 </html>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 this.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\ul.html");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\ul.html")
 
-
+{% endhighlight %}
 
 ## HTML Tags Sample
 
@@ -2000,8 +1986,8 @@ This sample shows the various Tags supported in HTMLUI.
 
 
 
-{{ '![](HTML-Tags_images/HTML-Tags_img1.jpeg)' | markdownify }}
-{:.image }
+![](HTML-Tags_images/HTML-Tags_img1.jpeg)
+
 
 
 

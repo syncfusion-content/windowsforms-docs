@@ -49,7 +49,7 @@ Moves cursor right, if possible.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 this.editControl1.MoveUp();
@@ -60,9 +60,9 @@ this.editControl1.MoveLeft();
 
 this.editControl1.MoveRight();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 Me.editControl1.MoveUp()
@@ -73,9 +73,9 @@ Me.editControl1.MoveLeft()
 
 Me.editControl1.MoveRight()
 
+{% endhighlight %}
 
-
-Word Level Navigation
+### Word Level Navigation
 
 The following APIs enable text navigation in the Edit Control, in terms of words.
 
@@ -97,25 +97,25 @@ Moves caret to the right by one word.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 this.editControl1.MoveLeftWord();
 
 this.editControl1.MoveRightWord();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 Me.editControl1.MoveLeftWord();
 
 Me.editControl1.MoveRightWord();
 
+{% endhighlight %}
 
-
-Line Level Navigation
+### Line Level Navigation
 
 The following APIs enable text navigation in the Edit Control, in terms of lines.
 
@@ -137,25 +137,25 @@ Moves caret to the end of the line.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 this.editControl1.MoveToLineStart();
 
 this.editControl1.MoveToLineEnd();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 Me.editControl1.MoveToLineStart();
 
 Me.editControl1.MoveToLineEnd();
 
+{% endhighlight %}
 
-
-Page Level Navigation
+### Page Level Navigation
 
 The following APIs enable text navigation in the Edit Control, in terms of pages.
 
@@ -177,25 +177,25 @@ Moves caret one page down.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 this.editControl1.MovePageUp();
 
 this.editControl1.MovePageDown();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 Me.editControl1.MovePageUp();
 
 Me.editControl1.MovePageDown();
 
+{% endhighlight %}
 
-
-Document Level Navigation
+### ocument Level Navigation
 
 The following APIs enable text navigation in the Edit Control, in terms of documents.
 
@@ -217,29 +217,29 @@ Moves caret to the end of the file.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 this.editControl1.MoveToBeginning();
 
 this.editControl1.MoveToEnd();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 Me.editControl1.MoveToBeginning();
 
 Me.editControl1.MoveToEnd();
 
+{% endhighlight %}
+
+![](Text-Visualization_images/Text-Visualization_img1.jpeg)
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img1.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _14_: Text Navigation Options in Edit Control_
+_Figure_ _14_: Text Navigation Options in Edit Control
 
 
 
@@ -305,7 +305,7 @@ Navigates to the specified position in the opened file.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -329,9 +329,9 @@ this.editControl1.CurrentPosition = new Point(10, 2);
 
 this.editControl1.GoTo(7);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -355,15 +355,13 @@ Me.editControl1.CurrentPosition = New Point (10, 2)
 
 Me.editControl1.GoTo(7)
 
-
+{% endhighlight %}
 
 The coordinates associated with the above properties are referred to as Virtual (or Visible), because their values vary depending on factors that affect the state of the collapsible blocks, font size of the text, and so on.
 
 
 
-> {{ '![](Text-Visualization_images/Text-Visualization_img2.jpeg)' | markdownify }}
-{:.image }
-_Note: The Virtual coordinates of the top-left corner in the Edit Control is (1,1), and it is not a zero-based coordinates system._
+> Note: The Virtual coordinates of the top-left corner in the Edit Control is (1,1), and it is not a zero-based coordinates system.
 
 
 
@@ -403,7 +401,7 @@ Converts point in virtual coordinates to coordinate point.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -441,9 +439,9 @@ Point virtualPosition = this.editControl1.ConvertOffsetToVirtualPosition(offset)
 
 this.editControl1.ConvertVirtualPointToCoordinatePoint(int Column, int line);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -481,19 +479,17 @@ Dim virtualPosition As Point =  Me.editControl1.ConvertOffsetToVirtualPosition(o
 
 Me.editControl1.ConvertVirtualPointToCoordinatePoint(Integer Column, Integer line)
 
+{% endhighlight %}
 
-
-{{ '![](Text-Visualization_images/Text-Visualization_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _15_: Positions and Offsets Conversion Options in Edit Control_
+![](Text-Visualization_images/Text-Visualization_img3.jpeg)
 
 
 
-> {{ '![](Text-Visualization_images/Text-Visualization_img4.jpeg)' | markdownify }}
-{:.image }
-_Note: The Offset value is always calculated from the top-left corner of the Edit Control from the Virtual coordinates (1,1)._
+_Figure_ _15_: Positions and Offsets Conversion Options in Edit Control
+
+
+
+> Note: The Offset value is always calculated from the top-left corner of the Edit Control from the Virtual coordinates (1,1).
 
 
 
@@ -543,7 +539,7 @@ Gets / sets font that is used while measuring the position of the column guides.
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -569,9 +565,9 @@ this.editControl1.ColumnGuideItems = columnGuideItem;
 
 this.editControl1.ColumnGuidesMeasuringFont = new Font("Microsoft Sans Serif", 12);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -597,13 +593,13 @@ Me.editControl1.ColumnGuideItems = columnGuideItem
 
 Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
+{% endhighlight %}
+
+![](Text-Visualization_images/Text-Visualization_img5.jpeg)
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img5.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _16_: Customized Column Guide Items positioned at Equal Intervals_
+_Figure_ _16_: Customized Column Guide Items positioned at Equal Intervals
 
 
 
@@ -621,11 +617,11 @@ Edit Control supports content dividers just like VB.NET code in Visual Studio.NE
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img6.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img6.jpeg)
 
 
-_Figure_ _17_: Content Dividers separating the Event Contents into Sections_
+
+_Figure_ _17_: Content Dividers separating the Event Contents into Sections
 
 
 
@@ -633,7 +629,7 @@ This feature can be enabled for sections of the Edit Control contents, by settin
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
@@ -659,7 +655,7 @@ This feature can be enabled for sections of the Edit Control contents, by settin
 
 </lexem>
 
-
+{% endhighlight %}
 
 A sample which demonstrates Content Dividers is available in the following sample installation path.
 
@@ -675,7 +671,7 @@ Before the underlining can be applied to the selected text, a custom underlining
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -683,9 +679,9 @@ Before the underlining can be applied to the selected text, a custom underlining
 
 ISnippetFormat format = editControl1.RegisterUnderlineFormat (SelectedColor, SelectedStyle, SelectedWeight);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -693,7 +689,7 @@ ISnippetFormat format = editControl1.RegisterUnderlineFormat (SelectedColor, Sel
 
 Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(SelectedColor, SelectedStyle, SelectedWeight)
 
-
+{% endhighlight %}
 
 The SelectedColor value can be set to any desired color. The SelectedStyle value is specified by using the UnderlineStyle enumerator. The SelectedWeight value is specified by using the UnderlineWeight enumerator.
 
@@ -715,7 +711,7 @@ UnderlineWeight.Thick(default) and UnderlineWeight.Double.</td></tr>
 </table>
 
 
-Underlining Selected Text
+### Underlining Selected Text
 
 Underlining can be set and removed for selected text by using the below given methods.
 
@@ -737,7 +733,7 @@ Removes underlining in the specified region.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -745,9 +741,9 @@ this.editControl1.SetUnderline(this.editControl1.Selection.Top, this.editControl
 
 this.editControl1.RemoveUnderline(this.editControl1.Selection.Top, this.editControl1.Selection.Bottom);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -761,25 +757,25 @@ Underlining using Configuration File
 
 You can also set the underlining from the configuration file, as shown in the below example.
 
+{% endhighlight %}
 
-
-[XML]
+{% highlight xml %}
 
 
 
 <format name="Comment" Font="Courier New, 10pt, style=Bold" FontColor="Green" LineColor="Red" Weight="Thick" Underline="DashDot" />
 
-
+{% endhighlight %}
 
 LineColor, Weight and Underline parameters are used to specify the type of underlining to be used.
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img7.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img7.jpeg)
 
 
-_Figure_ _18_: Text with Double Solid Style, Double Dot Style, Wave Style Underlines_
+
+_Figure_ _18_: Text with Double Solid Style, Double Dot Style, Wave Style Underlines
 
 
 
@@ -789,13 +785,13 @@ A sample which demonstrates this feature is available in the below location.
 
 _..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-Striking Through Text
+#### Striking Through Text
 
 The StrikeThrough method allows you to perform strikethrough operation on the text contained in the Edit Control. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -815,9 +811,9 @@ this.editControl1.StrikeThrough(this.editControl1.Selection.Top, this.editContro
 
 this.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aqua);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -837,17 +833,17 @@ Me.editControl1.StrikeThrough(Me.editControl1.Selection.Top, Me.editControl1.Sel
 
 Me.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aqua)
 
-
+{% endhighlight %}
 
 To remove the strikethrough line, just call one of the above mentioned methods and specify the Color parameter as Color.Empty.
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img8.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img8.jpeg)
 
 
-_Figure_ _19_: Striking Through Range of Text_
+
+_Figure_ _19_: Striking Through Range of Text
 
 
 
@@ -895,7 +891,7 @@ Appends the specified text to the end of the existing contents of the Edit Contr
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -903,9 +899,9 @@ Appends the specified text to the end of the existing contents of the Edit Contr
 
 this.editControl1.AppendText(" text to be appended ");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -913,9 +909,9 @@ this.editControl1.AppendText(" text to be appended ");
 
 Me.editControl1.AppendText(" text to be appended ")
 
+{% endhighlight %}
 
-
-Inserting Text
+#### Inserting Text
 
 The Insert mode can be enabled in the Edit Control by setting the InsertMode property to True.
 
@@ -933,7 +929,7 @@ Inserts a piece of text at any desired position in the Edit Control.</td></tr>
 </table>
 
 
-Inserting Multiple Lines
+#### Inserting Multiple Lines
 
 Collection of text lines can be inserted by using the property given below.
 
@@ -949,7 +945,7 @@ Lets you to specify multiple lines of text to the Edit Control in the form of a 
 </table>
 
 
-Inserting Text based on Conditions
+#### Inserting Text based on Conditions
 
 The following properties can be used to insert text based on conditions that are described as follows.
 
@@ -981,7 +977,7 @@ Specifies whether the Notification message is to be displayed when the outer fil
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1025,9 +1021,9 @@ this.editControl1.InsertDroppedFileIntoText = true;
 
 this.editControl1.ShowFileDropNotification = false;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1069,9 +1065,9 @@ Me.editControl1.InsertDroppedFileIntoText = True
 // To hide the notification message displayed when the outer file is dragged and dropped onto the Edit Control.
 Me.editControl1.ShowFileDropNotification = false
 
+{% endhighlight %}
 
-
-Deleting Text
+#### Deleting Text
 
 Text can be deleted in the Edit Control by using the below given methods.
 
@@ -1107,7 +1103,7 @@ Deletes the specified text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1145,9 +1141,9 @@ this.editControl1.DeleteAll();
 
 this.editControl1.DeleteText(this.editControl1.Selection.Top, this.editControl1.Selection.Bottom);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1185,13 +1181,13 @@ Me.editControl1.DeleteAll()
 
 Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Selection.Bottom)
 
+{% endhighlight %}
+
+![](Text-Visualization_images/Text-Visualization_img9.jpeg)
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img9.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _20_: Input entered for Handling Text_
+_Figure_ _20_: Input entered for Handling Text
 
 A sample that demonstrates the above features is available in the following sample installation path.
 
@@ -1225,7 +1221,7 @@ Gets / sets an array of tab stops.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1235,9 +1231,9 @@ this.editControl1.UseTabStops = true;
 
 this.editControl1.TabStopsArray = new int[] { 8, 16, 24, 32, 40};
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1247,9 +1243,9 @@ Me.editControl1.UseTabStops = True;
 
 Me.EditControl1.TabStopsArray = New Integer() {8, 16, 24, 32, 40}
 
+{% endhighlight %}
 
-
-Specifying Tab Size
+#### Specifying Tab Size
 
 The size of the tab can be specified by using the below given property.
 
@@ -1267,7 +1263,7 @@ Specifies tab size in spaces.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1275,9 +1271,9 @@ Specifies tab size in spaces.</td></tr>
 
 this.editControl1.TabSize = 8;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1285,15 +1281,15 @@ this.editControl1.TabSize = 8;
 
 Me.editControl1.TabSize = 8
 
+{% endhighlight %}
 
-
-TAB key Functionality
+#### TAB key Functionality
 
 The TransferFocusOnTab property allows you to specify, if the Edit Control should process the TAB key as a text input, or transfer the focus to the next control (by the order of TabIndex property value) on the Form or the User Control hosting the Edit Control.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1307,9 +1303,9 @@ this.editControl1.TransferFocusOnTab = false;
 
 this.editControl1.TransferFocusOnTab = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1323,9 +1319,9 @@ this.editControl1.TransferFocusOnTab = False
 
 this.editControl1.TransferFocusOnTab = True
 
+{% endhighlight %}
 
-
-TAB key Functionality on Selected Text
+#### TAB key Functionality on Selected Text
 
 The below given methods can be used convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
 
@@ -1355,7 +1351,7 @@ Removes leading tab symbol (or its spaces equivalent) from selected lines.</td><
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1381,9 +1377,9 @@ this.editControl1.AddTabsToSelection();
 
 this.editControl1.RemoveTabsFromSelection();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1409,7 +1405,7 @@ Me.editControl1.AddTabsToSelection()
 
 Me.editControl1.RemoveTabsFromSelection()
 
-
+{% endhighlight %}
 
 ### WhiteSpace Indicators
 
@@ -1429,8 +1425,8 @@ Edit Control has the ability to indicatewhitespaces in its contents with default
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img10.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img10.jpeg)
+
 
 
 
@@ -1467,7 +1463,7 @@ Toggles showing of whitespaces.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1481,9 +1477,9 @@ this.editControl1.ShowWhitespaces = true;
 
 this.editControl1.ToggleShowingWhiteSpaces();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1497,9 +1493,9 @@ Me.editControl1.ShowWhitespaces = True
 
 Me.editControl1.ToggleShowingWhiteSpaces()
 
+{% endhighlight %}
 
-
-Showing / Hiding Indicators
+#### Showing / Hiding Indicators
 
 You can selectively show / hide the whitespace indicators by using the following subproperties of the WhiteSpaceIndicators property - ShowSpaces, ShowTabs and ShowNewLines.
 
@@ -1525,7 +1521,7 @@ Indicates whether new lines should be replaced with symbols.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1545,9 +1541,9 @@ this.editControl1.WhiteSpaceIndicators.ShowTabs = true;
 
 this.editControl1.WhiteSpaceIndicators.SpaceNewLines = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1567,7 +1563,7 @@ Me.editControl1.WhiteSpaceIndicators.ShowTabs = True
 
 Me.editControl1.WhiteSpaceIndicators.SpaceNewLines = True
 
-
+{% endhighlight %}
 
 You can also set the indicators to indicate single spaces, tabs and line feeds by using the NewLineString, TabString and SpaceChar subproperties of the WhiteSpaceIndicators property, as shown below.
 
@@ -1593,7 +1589,7 @@ Gets / sets character that represents line feed in WhiteSpace mode.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1613,9 +1609,9 @@ this.editControl1.WhiteSpaceIndicators.TabString = "TAB";
 
 this.editControl1.WhiteSpaceIndicators.SpaceChar = "s";
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1635,7 +1631,7 @@ Me.editControl1.WhiteSpaceIndicators.TabString = "TAB"
 
 Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
-
+{% endhighlight %}
 
 See Also
 
@@ -1669,7 +1665,7 @@ Gets the count of lines in the files.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1683,9 +1679,9 @@ this.editControl1.ShowLineNumbers = true;
 
 int actualLineCount = this.editControl1.PhysicalLineCount;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1699,7 +1695,7 @@ Me.editControl1.ShowLineNumbers = True
 
 Dim actualLineCount As Integer = Me.editControl1.PhysicalLineCount
 
-
+{% endhighlight %}
 
 Line numbers can be customized by using the below given Edit Control properties.
 
@@ -1713,7 +1709,7 @@ Description</td></tr>
 <tr>
 <td>
 LineNumbersAlignment</td><td>
-Specifies the alignment of line numbers. The options provided are{{ '_Left_' | markdownify }}}{{ '_Right_' | markdownify }}</td></tr>
+Specifies the alignment of line numbers. The options provided are{{ '_Left_' | markdownify }}{{ '_Right_' | markdownify }}</td></tr>
 <tr>
 <td>
 LineNumbersColor</td><td>
@@ -1729,7 +1725,7 @@ Gets / sets value indicating whether click on line numbers performs selection.</
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1755,9 +1751,9 @@ this.editControl1.LineNumbersFont = new Font("Verdana", 9);
 
 this.editControl1.SelectOnLineNumberClick = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1783,15 +1779,15 @@ Me.editControl1.LineNumbersFont = new Font("Verdana", 9)
 
 Me.editControl1.SelectOnLineNumberClick = True
 
+{% endhighlight %}
+
+![](Text-Visualization_images/Text-Visualization_img11.jpeg)
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img11.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Highlighting Current Line at Run Time
+#### Highlighting Current Line at Run Time
 
 You can highlight the current line where the mouse pointer is present by setting the HighlightCurrentLine property of the Edit Control to True. Set the color for the highlighted line by using the CurrentLineHighlightColor property.
 
@@ -1813,7 +1809,7 @@ Gets / sets color of current line highlight.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1821,9 +1817,9 @@ this.editControl1.HighlightCurrentLine = true;
 
 this.editControl1.CurrentLineHighlightColor = Color.Orange;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1831,13 +1827,13 @@ Me.editControl1.HighlightCurrentLine = true
 
 Me.editControl1.CurrentLineHighlightColor = Color.Orange
 
+{% endhighlight %}
+
+![](Text-Visualization_images/Text-Visualization_img12.jpeg)
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img12.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _23_: CurrentLineHighlightColor = "Orange"_
+_Figure_ _23_: CurrentLineHighlightColor = "Orange"
 
 
 
@@ -1851,13 +1847,11 @@ The Edit Control allows any number of custom images or bookmarks to be added to 
 
 
 
-> {{ '![](Text-Visualization_images/Text-Visualization_img13.jpeg)' | markdownify }}
-{:.image }
-_Note: At any given point of time, each line can have only one indicator or bookmark associated with it._
+> Note: At any given point of time, each line can have only one indicator or bookmark associated with it.
 
 
 
-Displaying Bookmarks
+#### Displaying Bookmarks
 
 The Edit Control provides an indicator margin for the purpose of displaying the custom indicators or bookmarks. This can be enabled by using the ShowIndicatorMargin property, as shown below.
 
@@ -1879,7 +1873,7 @@ Gets / sets width of marker area.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1893,9 +1887,9 @@ this.editControl1.ShowIndicatorMargin = true;
 
 this.editControl1.MarkerAreaWidth = 20;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1909,9 +1903,9 @@ Me.editControl1.ShowIndicatorMargin = True
 
 Me.editControl1.MarkerAreaWidth = 20
 
+{% endhighlight %}
 
-
-Customizing Bookmarks
+#### Customizing Bookmarks
 
 You can either display the default bookmark image (like in Visual Studio.NET) or display custom images as indicators. This can be done by making use of the following methods of the Edit Control.
 
@@ -1953,7 +1947,7 @@ Clears all the bookmarks.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1985,9 +1979,9 @@ this.editControl1.BookmarkAdd(this.editControl1.CurrentLine, brushInfo);
 
 IBookmark bookmark = this.editControl1.BookmarkGet(this.editControl1.CurrentLine);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2015,7 +2009,9 @@ Me.editControl1.BookmarkAdd(Me.editControl1.CurrentLine, brushInfo)
 
 Dim bookmark As IBookmark = Me.EditControl1.BookmarkGet(Me.EditControl1.CurrentLine)
 
-Setting Bookmarks
+{% endhighlight %}
+
+#### Setting Bookmarks
 
 Bookmarks can be set and removed by using the below given methods.
 
@@ -2037,9 +2033,7 @@ Removes the custom bookmark from the desired line.</td></tr>
 </table>
 
 
-> {{ '![](Text-Visualization_images/Text-Visualization_img14.jpeg)' | markdownify }}
-{:.image }
-_Note: To clear the bookmarks set by using the SetCustomBookmark method, you must use the BookmarkClear method with its bool argument set as True._
+> Note: To clear the bookmarks set by using the SetCustomBookmark method, you must use the BookmarkClear method with its bool argument set as True.
 
 
 
@@ -2047,7 +2041,7 @@ The bookmarks set by using the SetCustomBookmark method, do not respond to the B
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2064,8 +2058,9 @@ customBookmark.UseInBookmarkSearch = true;
 ICustomBookmark customBookmark = this.editControl1.RemoveCustomBookmark(this.editControl1.CurrentLine, BookmarkPaintEventHandler(CustomBookmarkPainter));
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2081,9 +2076,9 @@ customBookmark.UseInBookmarkSearch = True
 
 Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.editControl1.CurrentLine, BookmarkPaintEventHandler(CustomBookmarkPainter))
 
+{% endhighlight %}
 
-
-Setting Tooltips for Bookmarks
+#### Setting Tooltips for Bookmarks
 
 Tooltips can be set for bookmarks and customized by using the below given properties.
 
@@ -2109,7 +2104,7 @@ Specifies the color of the bookmark tooltip form border.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2129,9 +2124,9 @@ this.editControl1.BookmarkTooltipBackgroundBrush = new Syncfusion.Drawing.BrushI
 
 this.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2151,10 +2146,10 @@ Me.editControl1.BookmarkTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInf
 
 Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson
 
+{% endhighlight %}
 
+![](Text-Visualization_images/Text-Visualization_img15.jpeg)
 
-{{ '![](Text-Visualization_images/Text-Visualization_img15.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -2195,7 +2190,7 @@ Comments text in the specified range.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2205,9 +2200,9 @@ this.editControl1.CommentSelection();
 
 this.editControl1.CommentText(new Point(1, 1), new Point(7, 7));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2217,9 +2212,9 @@ Me.editControl1.CommentSelection()
 
 Me.editControl1.CommentText(New Point(1, 1), New Point(7, 7))
 
+{% endhighlight %}
 
-
-Removing Comments
+#### Removing Comments
 
 Comments can be removed by using the below given methods.
 
@@ -2245,7 +2240,7 @@ UnComments text in the specified range.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2255,9 +2250,9 @@ this.editControl1.UncommentSelection();
 
 this.editControl1.UncommentText(new Point(1, 1), new Point(7, 7));
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2267,13 +2262,13 @@ Me.editControl1.UncommentSelection()
 
 Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 
-
+{% endhighlight %}
 
 ## Break Points
 
 Essential Edit allows you to set a pause at some specified location in the Edit Control by using the Break Points feature. This is done by combining the Line Background and Custom Indicator features. IndicatorMarginClick event can be handled to insert a break point.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2295,9 +2290,9 @@ this.editControl1.SetLineBackColor(e.LineIndex, true, format);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2317,10 +2312,10 @@ Me.editControl1.SetLineBackColor(e.LineIndex, True, format)
 
 End Sub
 
+{% endhighlight %}
 
+![](Text-Visualization_images/Text-Visualization_img16.jpeg)
 
-{{ '![](Text-Visualization_images/Text-Visualization_img16.jpeg)' | markdownify }}
-{:.image }
 
 
 _Figure_ _25_: Inserting Break Points in Edit Control_
@@ -2343,7 +2338,7 @@ Edit Control has one of the most powerful and intelligent Bracket Highlighting a
 
  Consider the following example.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2357,7 +2352,7 @@ public void Test()
 
 }
 
-
+{% endhighlight %}
 
 If the cursor is positioned on the end curly brace, most editors will match to the open curly brace in the string. On the contrary, Edit Control matches to the open curly brace for the method.
 
@@ -2421,7 +2416,7 @@ If possible, shows indent guideline of the current region.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2441,9 +2436,9 @@ this.editControl1.HideIndentGuideline();
 
 this.editControl1.ShowIndentGuideline();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2463,27 +2458,27 @@ Me.editControl1.HideIndentGuideline()
 
 Me.editControl1.ShowIndentGuideline()
 
+{% endhighlight %}
 
-
-Bracket Highlighting
+#### Bracket Highlighting
 
 The bracket highlighting feature can be turned on by enabling the ShowIndentationGuidelines and OnlyHighlightMatchingBraces properties. Setting the OnlyHighlightMatchingBraces property to True, enables bracket highlighting whereas the indentation guidelines are not displayed.
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img17.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _26_: Bracket Highlighting with Indentation Guidelines_
+![](Text-Visualization_images/Text-Visualization_img17.jpeg)
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img18.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _26_: Bracket Highlighting with Indentation Guidelines
 
 
-_Figure_ _27_: Bracket Highlighting without Indentation Guidelines_
+
+![](Text-Visualization_images/Text-Visualization_img18.jpeg)
+
+
+
+_Figure_ _27_: Bracket Highlighting without Indentation Guidelines
 
 
 
@@ -2525,7 +2520,7 @@ Specifies whether indentation block borders should be drawn.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2541,9 +2536,9 @@ this.editControl1.IndentationBlockBorderStyle = Syncfusion.Windows.Forms.Edit.En
 
 this.editControl1.ShowIndentationBlockBorders = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2559,17 +2554,17 @@ Me.editControl1.IndentationBlockBorderStyle = Syncfusion.Windows.Forms.Edit.Enum
 
 Me.editControl1.ShowIndentationBlockBorders = True
 
+{% endhighlight %}
 
-
-{{ '![](Text-Visualization_images/Text-Visualization_img19.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _28_: IndentLineColor = "OrangeRed"; IndentBlockHighlightingColor = "IndianRed"_
+![](Text-Visualization_images/Text-Visualization_img19.jpeg)
 
 
 
-Positioning
+_Figure_ _28_: IndentLineColor = "OrangeRed"; IndentBlockHighlightingColor = "IndianRed"
+
+
+
+#### Positioning
 
 It is also possible to position the caret at the beginning or end of the indentation block by using the JumpToIndentBlockStart and JumpToIndentBlockEnd methods respectively.
 
@@ -2621,7 +2616,7 @@ Gets / sets the value that specifies whether indent guideline should be shown au
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2629,9 +2624,9 @@ Gets / sets the value that specifies whether indent guideline should be shown au
 
 this.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentMode.None;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2639,17 +2634,17 @@ this.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoInden
 
 Me.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentMode.None
 
-
+{% endhighlight %}
 
 If Enter is pressed when the AutoIndentMode is set to None, the text is not indented.
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img20.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img20.jpeg)
 
 
-_Figure_ _29_: AutoIndentMode = "None"_
+
+_Figure_ _29_: AutoIndentMode = "None"
 
 
 
@@ -2657,11 +2652,11 @@ When the AutoIndentMode is set to Smart, the next line is indented by one TabSiz
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img21.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img21.jpeg)
 
 
-_Figure_ _30_: AutoIndentMode = "Smart"_
+
+_Figure_ _30_: AutoIndentMode = "Smart"
 
 
 
@@ -2669,11 +2664,11 @@ When the AutoIndentMode is set to Block, the next line begins at the same column
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img22.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img22.jpeg)
 
 
-_Figure_ _31_: AutoIndentMode = "Block"_
+
+_Figure_ _31_: AutoIndentMode = "Block"
 
 
 
@@ -2681,13 +2676,13 @@ The Auto Indentation characters can be specified by setting the Indent field to 
 
 
 
-[XML]
+{% highlight xml %}
 
 
 
 <lexem BeginBlock="{" EndBlock="}" Type="Operator" IsComplex="true" IsCollapsable="true" Indent="true"  CollapseName="{...}" IndentationGuideline="true">
 
-
+{% endhighlight %}
 
 A sample which demonstrates Auto Indentation is available in the below sample installation path.
 
@@ -2713,7 +2708,7 @@ Gets or sets a value to make the Block mode work like Smart mode for conditional
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 // Gets or sets a value to make the Block mode work like Smart mode for conditional statements.
 
@@ -2721,15 +2716,15 @@ Gets or sets a value to make the Block mode work like Smart mode for conditional
 
 this.editcontrol1.EnableSmartInBlockIndent = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 // Gets or sets a value to make the Block mode work like Smart mode for conditional statements.
 
 Me.editcontrol1.EnableSmartInBlockIndent = True
 
-
+{% endhighlight %}
 
 ### AutoFormatting
 
@@ -2755,11 +2750,11 @@ For example, the closing brace gets automatically aligned with the opening brace
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img23.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img23.jpeg)
 
 
-_Figure_ _32_: Code is entered into the Edit Control_
+
+_Figure_ _32_: Code is entered into the Edit Control
 
 
 
@@ -2767,17 +2762,14 @@ Now, when the closing brace '}' is typed, it gets automatically aligned with the
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img24.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _33_: AutoFormatting support for code in Edit Control_
+![](Text-Visualization_images/Text-Visualization_img24.jpeg)
 
 
 
-> {{ '![](Text-Visualization_images/Text-Visualization_img25.jpeg)' | markdownify }}
-{:.image }
-_Note: The_ AutoIndentMode _property for the Edit Control should be set to Smart for this purpose._
+_Figure_ _33_: AutoFormatting support for code in Edit Control
+
+
+> Note: The_ AutoIndentMode _property for the Edit Control should be set to Smart for this purpose.
 
 
 
@@ -2789,7 +2781,7 @@ Essential Edit provides an extensible interface, IAutoFormatter, which can be im
 
 
 
-[HTML or XML]
+{% highlight xml%}
 
 
 
@@ -2803,7 +2795,7 @@ Essential Edit provides an extensible interface, IAutoFormatter, which can be im
 
 </abc>
 
-
+{% endhighlight %}
 
 * Similarly, when the Edit Control is using C# configuration settings, any text enclosed within '{' and '}' should get automatically indented, just as in the VS.NET editor. Also, the closing brace should be automatically indented with its matching opening brace.
 
@@ -2813,7 +2805,7 @@ Essential Edit provides an extensible interface, IAutoFormatter, which can be im
 
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2826,6 +2818,7 @@ Private sub TestMethod() '----> Method header
 
 
 End sub '----> End statement should be automatically aligned with the function header
+{% endhighlight %}
 
 ### Unicode
 
@@ -2839,11 +2832,11 @@ The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian 
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img26.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img26.jpeg)
 
 
-_Figure_ _34_: Unicode support in Edit Control_
+
+_Figure_ _34_: Unicode support in Edit Control
 
 
 
@@ -2899,7 +2892,7 @@ Toggles collapse option for current line.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2949,9 +2942,9 @@ this.editControl1.ExpandAll();
 
 this.editControl1.ToggleLineCollapsing();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3001,9 +2994,9 @@ Me.editControl1.ExpandAll()
 
 Me.editControl1.ToggleLineCollapsing()
 
+{% endhighlight %}
 
-
-Outlining Operations
+#### Outlining Operations
 
 The Edit Control supports the following events to handle the various Outlining operations.
 
@@ -3061,24 +3054,24 @@ The Outlining Tooltip can be optionally shown / hidden by using the ShowOutlinin
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.ShowOutliningTooltip = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.ShowOutliningTooltip = True
 
+{% endhighlight %}
 
+![](Text-Visualization_images/Text-Visualization_img27.png)
 
-{{ '![](Text-Visualization_images/Text-Visualization_img27.png)' | markdownify }}
-{:.image }
 
 
 _Figure_ _35_: Outlining Tooltip displaying the Collapsed Block of Text_
@@ -3113,7 +3106,7 @@ The OutliningTooltipBeforePopup event is used to control the visibility of the o
 
 
 
-[C#]
+{% highlight c# %}
 
 private void editControl1_OutliningTooltipBeforePopup(object sender, Syncfusion.Windows.Forms.Edit.OutliningTooltipBeforePopupEventArgs e)
 
@@ -3131,9 +3124,9 @@ e.ShowMode = OutliningTooltipShowMode.Off;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3155,11 +3148,11 @@ e.ShowMode = OutliningTooltipShowMode.Off
 
 End Sub
 
-
+{% endhighlight %}
 
 See Also
 
-Automatic Outlining
+## Automatic Outlining
 
 
 
@@ -3191,7 +3184,7 @@ Gets / sets type of word wrapping. The options provided are* {{ '_WrapByChar_' |
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3205,9 +3198,9 @@ this.editControl1.WordWrap = true;
 
 this.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.WrapByChar;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3221,9 +3214,9 @@ Me.editControl1.WordWrap = True
 
 Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.WrapByChar
 
+{% endhighlight %}
 
-
-Wordwrap Mode
+#### Wordwrap Mode
 
 The following properties are associated with setting the mode of Word Wrapping.
 
@@ -3257,7 +3250,7 @@ Specifies offset of wrapped lines.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 // Sets the WordWrap mode.
 
@@ -3287,9 +3280,9 @@ this.editControl1.TextAreaWidth = 300;
 
 this.editControl1.WrappedLinesOffset = 10;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3321,17 +3314,17 @@ Me.editControl1.TextAreaWidth = 300
 
 Me.editControl1.WrappedLinesOffset = 10
 
-
+{% endhighlight %}
 
 The following illustration shows the Edit Control with the WordWrappingMode and WordWrapType properties set.
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img28.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img28.jpeg)
 
 
-_Figure_ _36_: WordWrappingMode = "Control"; WordWrapType= "WrapByWord"_
+
+_Figure_ _36_: WordWrappingMode = "Control"; WordWrapType= "WrapByWord"
 
 
 
@@ -3375,7 +3368,7 @@ Gets / sets BrushInfo object that is used when the area situated after the text 
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3401,9 +3394,9 @@ this.editControl1.WordWrapMarginLineColor = Color.Green;
 
 this.editControl1.WordWrapMarginBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.White, System.Drawing.Color.LightSalmon);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3429,17 +3422,17 @@ Me.editControl1.WordWrapMarginLineColor = System.Drawing.Color.Green
 
 Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.White, System.Drawing.Color.LightSalmon)
 
+{% endhighlight %}
 
-
-{{ '![](Text-Visualization_images/Text-Visualization_img29.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _37_: Edit Control with Character Wrapping and Custom Painted Wordwrap Margin_
+![](Text-Visualization_images/Text-Visualization_img29.jpeg)
 
 
 
-Line Wrapping Images
+_Figure_ _37_: Edit Control with Character Wrapping and Custom Painted Wordwrap Margin
+
+
+
+#### Line Wrapping Images
 
 It is also possible to associate images to indicate line wrapping. This feature can be turned on by setting the MarkLineWrapping property to True. There can be two types of image indicators:
 
@@ -3481,7 +3474,7 @@ Gets / sets custom image that marks wrapping lines.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3507,9 +3500,9 @@ this.editControl1.CustomLineWrappingMarkingImage = ((System.Drawing.Image)(resou
 
 this.editControl1.MarkWrappedLines = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3535,13 +3528,13 @@ Me.editControl1.CustomLineWrappingMarkingImage = (CType((resources.GetObject("$t
 
 Me.editControl1.MarkWrappedLines = True
 
+{% endhighlight %}
+
+![](Text-Visualization_images/Text-Visualization_img30.jpeg)
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img30.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _38_: Wrapping Images indicating Wrapped Lines and Point of Wrapping_
+_Figure_ _38_: Wrapping Images indicating Wrapped Lines and Point of Wrapping
 
 ### Read-Only Text
 
@@ -3565,7 +3558,7 @@ Removes read-only status of specified region.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3579,9 +3572,9 @@ this.editControl1.MarkAsReadOnly(this.editControl1.Selection.Start, this.editCon
 
 this.editControl1.RemoveReadOnly(this.editControl1.Selection.Start, this.editControl1.Selection.End);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3595,17 +3588,17 @@ Me.editControl1.MarkAsReadOnly(Me.editControl1.Selection.Start, Me.editControl1.
 
 Me.editControl1.RemoveReadOnly(Me.editControl1.Selection.Start, Me.editControl1.Selection.End)
 
-
+{% endhighlight %}
 
 The following screenshot shows a read-only region in the code section of the Edit Control.
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img31.png)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img31.png)
 
 
-_Figure_ _39_: Read-Only Region with Orange Background and Crimson Text Color_
+
+_Figure_ _39_: Read-Only Region with Orange Background and Crimson Text Color
 
 
 
@@ -3625,7 +3618,7 @@ This section discusses how the text color of the Edit Control can be changed.
 
 The text color of the Edit Control is set by using the SetTextColor method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3633,9 +3626,9 @@ The text color of the Edit Control is set by using the SetTextColor method.
 
 this.editControl1.SetTextColor(new Point(1, 1), new Point(5, 5), Color.Orange);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3643,7 +3636,7 @@ this.editControl1.SetTextColor(new Point(1, 1), new Point(5, 5), Color.Orange);
 
 Me.editControl1.SetTextColor(New Point(1, 1), New Point(5, 5), Color.Orange)
 
-
+{% endhighlight %}
 
 ### Text Border
 
@@ -3686,7 +3679,7 @@ Specifies the weight of the border line. The options provided are* Bold* Double*
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3700,9 +3693,9 @@ this.editControl1.SetTextBorder(new Point(1, 13), new Point(15, 13), Color.Red, 
 
 this.editControl1.RemoveTextBorder(new Point(1, 13), new Point(15, 13);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3716,13 +3709,13 @@ Me.editControl1.SetTextBorder(New Point(1, 13), New Point(15, 13), Color.Red, Fr
 
 Me.editControl1.RemoveTextBorder(New Point(1, 13), New Point(15, 13)
 
+{% endhighlight %}
+
+![](Text-Visualization_images/Text-Visualization_img32.png)
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img32.png)' | markdownify }}
-{:.image }
 
-
-_Figure_ _40_: Text Borders in Edit Control_
+_Figure_ _40_: Text Borders in Edit Control
 
 
 
@@ -3756,21 +3749,21 @@ Saves content to the specified file.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.SaveFile("EditControl", Encoding.Unicode, Syncfusion.IO.NewLineStyle.Mac);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.SaveFile("EditControl", Encoding.Unicode, Syncfusion.IO.NewLineStyle.Mac)
 
-
+{% endhighlight %}
 
 Edit Control supports all the encoding styles supported by the System.Text.Encoding enumerator. The below given methods can be used to get / set the encoding style for the text in the Edit Control.
 
@@ -3793,7 +3786,7 @@ Sets the current text encoding. The options provided are* ASCII* BigEndianUnicod
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3808,8 +3801,9 @@ this.editControl1.GetEncoding();
 this.editControl1.SetEncoding(Encoding.ASCII);
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3823,7 +3817,7 @@ Me.editControl1.GetEncoding()
 
 Me.editControl1.SetEncoding(Encoding.ASCII)
 
-
+{% endhighlight %}
 
 It also supports all the new line styles supported by the Syncfusion.IO.NewLineStyle enumerator - Windows, Mac, Unix and Control.
 
@@ -3863,7 +3857,7 @@ The Edit Control supports text selection operations through the use of the APIs 
 
 
 
-Selecting Text
+#### Selecting Text
 
 Edit Control provides support to select text programmatically. The StartSelection and StopSelection methods are used to programmatically specify the starting and ending bounds for the text to be selected.
 
@@ -3910,7 +3904,7 @@ Gets / sets value indicating whether line selection should be extended to the fa
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -3936,9 +3930,9 @@ this.editControl1.SelectLine(5);
 
 this.editControl1.ExtendSelectionToFarRight = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3964,7 +3958,7 @@ Me.editControl1.SelectLine(5)
 
 Me.editControl1.ExtendSelectionToFarRight = True
 
-
+{% endhighlight %}
 
 Text can also be selected after drag / drop operations by using the below given property.
 
@@ -3982,23 +3976,23 @@ Specifies whether text should be selected after drag / drop operations.</td></tr
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.SelectTextAfterDragDrop = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.SelectTextAfterDragDrop = True
 
+{% endhighlight %}
 
-
-Selected Text
+#### Selected Text
 
 The following properties can be used to get / set selected text.
 
@@ -4018,7 +4012,7 @@ Gets selected text range.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4026,9 +4020,9 @@ Gets selected text range.</td></tr>
 
 string editText = this.editControl1.SelectedText;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4036,19 +4030,19 @@ string editText = this.editControl1.SelectedText;
 
 Dim editText as String = Me.editControl1.SelectedText
 
+{% endhighlight %}
 
-
-Transparent Selection
+#### Transparent Selection
 
 Setting the TransparentSelection property to True, will highlight the selected text range with a transparent blue background (which will let you view the syntax highlighting in the text within the selected region), as shown in the following screenshot.
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img33.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img33.jpeg)
 
 
-_Figure_ _41_: Transparent Selection Enabled_
+
+_Figure_ _41_: Transparent Selection Enabled
 
 
 
@@ -4056,13 +4050,13 @@ Setting the TransparentSelection property to False, will highlight the selected 
 
 
 
-{{ '![](Text-Visualization_images/Text-Visualization_img34.jpeg)' | markdownify }}
-{:.image }
+![](Text-Visualization_images/Text-Visualization_img34.jpeg)
 
 
 
 
-Cancelling / Resetting Selection
+
+#### Cancelling / Resetting Selection
 
 Text selection can be either cancelled or reset by using the below given methods.
 
@@ -4082,7 +4076,7 @@ Resets selection.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -4096,9 +4090,9 @@ this.editControl1.SelectionCancel();
 
 this.editControl1.ResetSelection();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -4112,5 +4106,5 @@ Me.editControl1.SelectionCancel()
 
 Me.editControl1.ResetSelection()
 
-
+{% endhighlight %}
 

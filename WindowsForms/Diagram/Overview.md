@@ -18,11 +18,11 @@ Essential Diagram is an extensible and high-performance .NET diagramming framewo
 Essential Diagram lets users create interactive diagrams easily using the Diagram Builder utility included with the Diagram. It explicitly lays out diagram objects, or allows our built-in layout managers to handle the job, making complex layout diagrams a snap. Using the Symbol Designer utility, you can create domain or business specific symbols by using custom shapes and images.
 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
-Key Features
+
+### Key Features
 
 Some of the key features of Essential Diagram are listed below.
 
@@ -41,7 +41,7 @@ Some of the key features of Essential Diagram are listed below.
 * It has a user interface similar to Microsoft Outlook bar 
 * It is implemented based on the Syncfusion GroupBar and GroupView controls
 
-User Guide Organization
+#### User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Tools controls. It is organized into the following sections:
 
@@ -51,7 +51,7 @@ The product comes with numerous samples as well as an extensive documentation to
 * Getting Started - This section guides you on getting started with Windows application, controls etc.
 * Concepts and Features - The features of Essential Diagram are illustrated with use case scenarios, code examples and screen shots under this section.
 
-Document Conventions
+#### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
@@ -67,7 +67,7 @@ Description</td></tr>
 <td>
 Note</td><td>
 ![](Overview_images/Overview_img2.jpeg)
-{:.image }
+
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
@@ -79,17 +79,18 @@ Represents an example</td></tr>
 <td>
 Tip</td><td>
 ![](Overview_images/Overview_img3.jpeg)
-{:.image }
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
 ![](Overview_images/Overview_img4.jpeg)
-{:.image }
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
+
 ## Prerequisites and Compatibility
 
 This section covers the requirements mandatory for using Essential Diagram control. It also lists operating systems and browsers compatible with the product.
@@ -98,7 +99,7 @@ Prerequisites
 
 The prerequisites details are listed below:
 
-_Table_ _2_: Prerequisites_
+_Table_ _2_: Prerequisites
 
 <table>
 <tr>
@@ -111,7 +112,7 @@ Development Environments</td><td>
 * .NET 4.5* .NET 4.0* .NET 3.5* .NET 2.0</td></tr>
 </table>
 
-Compatibility
+#### Compatibility
 
 The compatibility details are listed below:
 
@@ -125,12 +126,13 @@ Operating Systems</td></tr>
 <td>
 * Windows 8.1* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
 </table>
+
 ## Documentation
 
 
 Syncfusion provides the following documentation segments to provide all necessary information for using Essential Diagram control in Windows application in an efficient manner.
 
-_Table_ _4_: Documentation_
+_Table_ _4_: Documentation
 
 <table>
 <tr>
@@ -149,7 +151,7 @@ Release Notes</td><td>
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>

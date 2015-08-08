@@ -7,11 +7,11 @@ control: Grouping
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following subsections:
 
-### Installation
+## Installation
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
@@ -22,7 +22,8 @@ For licensing, patches and information on adding or removing selective component
 * Licensing
 * Patches
 * Add / Remove Components
-### Where to Find Samples?
+
+## Where to Find Samples?
 
 
 This section provides the location of the installed samples and describes the procedure to run the samples in the sample browser and online. It also lists the location of utilities, assemblies, and source code.
@@ -37,61 +38,45 @@ Windows Forms Samples – The Grouping Windows Forms samples are installed in th
 * ASP.NET Samples – The Grouping Web samples are installed in the following location:
 * [Install Location]:\...\Syncfusion\Essential Studio\[Version Number]\Web\Grouping.Web\Samples\3.5
 
-Viewing Samples
+### Viewing Samples
 
 To view the samples: 
 
 1. Click Start All Programs  Syncfusion  Essential Studio <version number>  Dashboard. 
 
-The UI Edition samples are displayed by default.
+   The UI Edition samples are displayed by default.
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
-{:.image }
-
-
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 2. Select Reporting Edition.
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
-{:.image }
-
-
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
 The steps to view the Grouping samples in various platforms are discussed below:
 
 
 
-Windows
+#### Windows
 
 1. In the Dashboard window, click Run Samples for Windows Forms under Reporting Edition panel. The Windows Forms Sample Browser window is displayed.
-> 
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
-{:.image }
-_Note: You can view the samples in any of the following three ways:_
-
-* Run Samples – Click to view the locally installed samples.
-* Online Samples – Click to view online samples.
-* Explore Samples – Explore Windows Forms samples on disk.
+ 
+   > Note: You can view the samples in any of the following three ways:
+   >
+   > * Run Samples – Click to view the locally installed samples.
+   > * Online Samples – Click to view online samples.
+   > * Explore Samples – Explore Windows Forms samples on disk.
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
-{:.image }
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+
 
 
 2. Click Grouping from the bottom-left pane. The Grouping samples are displayed.
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)' | markdownify }}
-{:.image }
-
-
-
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)
 
 3. Select any sample and browse through the features.
 
@@ -102,21 +87,19 @@ ASP.NET
 
 
 1. In the Dashboard window, click Run Samples for ASP.NET under Reporting Edition panel. The ASP.NET Sample Browser window is displayed.
-> 
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)' | markdownify }}
-{:.image }
-_Note: You can view the samples in any of the three ways displayed:_
+ 
+   > Note: You can view the samples in any of the three ways displayed:
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)' | markdownify }}
-{:.image }
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
+
 
 
 2. Click Grouping from thebottom-left pane.The Grouping samples are displayed.
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)' | markdownify }}
-{:.image }
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
+
 
 
 3. Select any sample and browse through the features.
@@ -141,7 +124,7 @@ The default location of the ASP.NET Grouping source code is:
 
 ### Deployment Requirements
 
-Dll List
+#### Dll List
 
 While deploying an application that references Syncfusion Essential Grouping assembly, the following dependencies must be included in the distribution.
 

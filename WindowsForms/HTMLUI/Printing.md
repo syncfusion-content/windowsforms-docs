@@ -13,7 +13,7 @@ The HTMLUI control supports printing that helps the user in developing a hard co
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -45,9 +45,9 @@ if (dg.ShowDialog() == DialogResult.OK)
 
 pd.Print();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -81,13 +81,13 @@ pd.Print()
 
 End If
 
-
+{% endhighlight %}
 
 Along with printing feature, HTMLUI control supports previewing of the document before printing. This following code snippet shows how the print preview feature is enabled in HTMLUI.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -111,9 +111,9 @@ private void PrintPreViewButton_Click(object sender, System.EventArgs e)
 
 }  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -135,20 +135,20 @@ dlg.ShowDialog()
 
 End Sub
 
-
+{% endhighlight %}
 
 The following figure shows the Print preview page that appears when the corresponding button is clicked. This illustrates the Printing feature in HTMLUI.
 
-{{ '![](Printing_images/Printing_img1.png)' | markdownify }}
-{:.image }
+![](Printing_images/Printing_img1.png)
+
 
 
 ## HTMLUIPrinting Sample
 
 This sample shows how an HTML document available in the HTMLUI can be printed.
 
-{{ '![](Printing_images/Printing_img2.jpeg)' | markdownify }}
-{:.image }
+![](Printing_images/Printing_img2.jpeg)
+
 
 
 

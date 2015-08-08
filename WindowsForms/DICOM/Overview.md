@@ -26,11 +26,11 @@ This section covers the requirements mandatory for installing Essential DICOM. I
 
 
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed below: 
 
-_Table_ _1_: Prerequisites_
+_Table_ _1_: Prerequisites
 
 <table>
 <tr>
@@ -45,13 +45,13 @@ Development Environments</td><td>
 
 
 
-Compatibility
+### Compatibility
 
 The compatibility details are listed below: 
 
 
 
-_Table_ _2_: Compatibility_
+_Table_ _2_: Compatibility
 
 <table>
 <tr>
@@ -59,6 +59,7 @@ _Table_ _2_: Compatibility_
 Operating Systems</td><td>
 * Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
 </table>
+
 ## Documentation
 
 
@@ -66,7 +67,7 @@ Syncfusion provides the following documentation segments to provide all the nece
 
 
 
-_Table_ _3_: Documentation_
+_Table_ _3_: Documentation
 
 <table>
 <tr>
@@ -85,7 +86,7 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\<Version Number
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the DICOM User Guide.)> ![](Overview_images/Overview_img1.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>

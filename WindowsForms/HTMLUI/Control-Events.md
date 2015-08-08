@@ -28,7 +28,7 @@ The events executed by the HTMLUI control are as follows:
 
 
 
-LinkClicked Event
+### LinkClicked Event
 
 This event is raised after the hyperlink is clicked and before the hyperlink tries to load a new resource. The event properties associated with the Link Forward Event Arguments are as follows.
 
@@ -39,7 +39,7 @@ This event is raised after the hyperlink is clicked and before the hyperlink tri
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -64,8 +64,8 @@ private void htmluiControl1_LinkClicked(object sender, Syncfusion.Windows.Forms.
 }  
 
 
-
-[VB.NET]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -87,13 +87,13 @@ form2.Show()
 
 End Sub
 
+{% endhighlight %}
 
-
-LoadStarted Event
+### LoadStarted Event
 
 This event is raised when a new HTML document has started loading into the HTMLUI control from the specified resource.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -111,9 +111,9 @@ private void htmluiControl1_LoadStarted(object sender, System.EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -129,15 +129,15 @@ Console.WriteLine("Started Loading...")
 
 End Sub
 
+{% endhighlight %}
 
-
-LoadFinished Event
+### LoadFinished Event
 
 This event is raised after the loading of HTML document inside the HTMLUI control is completed.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -155,9 +155,9 @@ private void htmluiControl1_LoadFinished(object sender, System.EventArgs e)
 
 }   
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -173,9 +173,9 @@ Console.WriteLine("Load successfully completed")
 
 End Sub
 
+{% endhighlight %}
 
-
-LoadError Event
+### LoadError Event
 
 This event is raised when an error occurs during loading or rendering an HTML document from the specified resource. The LoadErrorEventArgs contains the following property that defines the data related to the action of this event. 
 
@@ -185,7 +185,7 @@ This event is raised when an error occurs during loading or rendering an HTML do
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -203,9 +203,9 @@ private void htmluiControl1_LoadError(object sender, Syncfusion.Windows.Forms.HT
 
 }  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -221,15 +221,15 @@ Console.WriteLine("Error loading due to" + e.ToString())
 
 End Sub
 
+{% endhighlight %}
 
-
-PreRenderDocument Event
+### PreRenderDocument Event
 
 This event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -249,9 +249,9 @@ private void htmluiControl1_PreRenderDocument(object sender, Syncfusion.Windows.
 
 } 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -269,9 +269,9 @@ Console.WriteLine("This is the Prerender document event")
 
 End Sub
 
+{% endhighlight %}
 
-
-ShowTitleChanged Event
+### ShowTitleChanged Event
 
 This event is raised after the ShowTitle property of the HTMLUI control is changed. The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the ShowTitleChanged event handling.
 
@@ -283,7 +283,7 @@ This event is raised after the ShowTitle property of the HTMLUI control is chang
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -301,9 +301,9 @@ private void htmluiControl1_ShowTitleChanged(object sender, ValueChangedEventArg
 
 }   
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -319,9 +319,9 @@ MessageBox.Show("ShowTitle Changed")
 
 End Sub
 
+{% endhighlight %}
 
-
-TitleChanged Event
+## TitleChanged Event
 
 The TitleChanged event is raised after the Title property of the HTMLUI control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the HTMLUI control.
 
@@ -334,7 +334,7 @@ The event handler receives its data from the ValueChangedEventArguments. The fol
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -350,9 +350,9 @@ MessageBox.Show("Title Changed");
 
 }  
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -376,7 +376,9 @@ This event is handled when the value of the Border3DStyle property is changed.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% endhighlight %}
+
+{% highlight c# %}
 
 
 
@@ -406,9 +408,9 @@ private void htmluiControl1_Border3DStyleChanged(object sender, EventArgs e
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -436,15 +438,15 @@ AddHandler Me.htmluiControl1.Border3DStyleChanged, AddressOf htmluiControl1_Bo
 
 End Sub
 
+{% endhighlight %}
 
-
-BorderColorChanged Event
+### BorderColorChanged Event
 
 This event is handled when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -474,9 +476,9 @@ private void htmluiControl1_BorderColorChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -504,15 +506,15 @@ Private Sub htmluiControl1_BorderColorChanged(ByVal sender As Object, ByVa
 
 End Sub
 
+{% endhighlight %}
 
-
-BorderSingleChanged Event
+### BorderSingleChanged Event
 
 This event is handled, when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -542,9 +544,9 @@ private void htmluiControl1_BorderSingleChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -572,15 +574,15 @@ Private Sub htmluiControl1_BorderSingleChanged(ByVal sender As Object, ByV
 
 End Sub
 
+{% endhighlight %}
 
-
-BorderSidesChanged Event
+### BorderSidesChanged Event
 
 This event is fired, when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -606,9 +608,9 @@ private void htmluiControl1_BorderSidesChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -632,15 +634,15 @@ Private Sub htmluiControl1_BorderSidesChanged(ByVal sender As Object, ByVa
 
 End Sub
 
+{% endhighlight %}
 
-
-BorderStyleChanged Event
+### BorderStyleChanged Event
 
 This event is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -666,9 +668,9 @@ private void htmluiControl1_BorderStyleChanged(object sender, EventArgs e)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -692,7 +694,7 @@ Private Sub htmluiControl1_BorderStyleChanged(ByVal sender As Object, ByVa
 
 End Sub
 
-
+{% endhighlight %}
 
 ## HTMLUI Control Events Sample
 
@@ -700,8 +702,8 @@ This sample illustrates the different events executed by the HTMLUI control.
 
 
 
-{{ '![](Control-Events_images/Control-Events_img1.jpeg)' | markdownify }}
-{:.image }
+![](Control-Events_images/Control-Events_img1.jpeg)
+
 
 
 

@@ -19,7 +19,7 @@ This event occurs when the CanUndoRedo state is changed. The CanUndo and CanRedo
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -31,9 +31,9 @@ Console.WriteLine(" CanUndoRedoChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -43,7 +43,7 @@ Console.WriteLine(" CanUndoRedoChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 
 
@@ -83,7 +83,7 @@ Code snippet that is currently activated.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -97,9 +97,9 @@ Console.WriteLine(" CodeSnippetActivating event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -111,7 +111,7 @@ Console.WriteLine(" CodeSnippetActivating event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 
 
@@ -135,7 +135,7 @@ Code snippet that is currently activated.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -149,9 +149,9 @@ Console.WriteLine(" CodeSnippetDeactivating event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -164,7 +164,7 @@ Console.WriteLine(" CodeSnippetDeactivating event is raised ")
 End Sub
 
 
-
+{% endhighlight %}
 
 
 ### CodeSnippetTemplateTextChanging Event
@@ -199,7 +199,7 @@ Name of template member that is to be changed.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -225,9 +225,9 @@ Console.WriteLine(" CodeSnippetTemplateTextChanging event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -251,7 +251,7 @@ Console.WriteLine(" CodeSnippetTemplateTextChanging event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### NewSnippetMemberHighlighting Event
 
@@ -285,7 +285,7 @@ Previously highlighted snippet member.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -299,9 +299,9 @@ Console.WriteLine(" NewSnippetMemberHighlighting event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -313,7 +313,7 @@ Console.WriteLine(" NewSnippetMemberHighlighting event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## ConfigurationChanged Event
 
@@ -323,7 +323,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -341,9 +341,9 @@ this.editControl1.ApplyConfiguration("XML");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -359,7 +359,7 @@ Console.WriteLine(" ConfigurationChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## Collapse Events
 
@@ -379,7 +379,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -403,9 +403,9 @@ Console.WriteLine(" CollapsedAll event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -425,7 +425,7 @@ Console.WriteLine(" CollapsedAll event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### CollapsingAll Event
 
@@ -447,7 +447,7 @@ Gets / sets a value indicating whether the event should be cancelled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -477,9 +477,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -507,7 +507,7 @@ e.Cancel = True
 
 End Sub
 
-
+{% endhighlight %}
 
 ## ContextChoice Events
 
@@ -593,7 +593,7 @@ Specifies whether autocomplete technique should be used with current context cho
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -635,9 +635,9 @@ foreach (IContextChoiceItem item in c)
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -675,7 +675,7 @@ Next
 
 End Sub
 
-
+{% endhighlight %}
 
 ### ContextChoiceOpen Event
 
@@ -703,7 +703,7 @@ Underlying ContextChoiceItem.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -719,9 +719,9 @@ MessageBox.Show(" ContextChoiceRightClick event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -735,7 +735,7 @@ MessageBox.Show(" ContextChoiceRightClick event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## ContextPrompt Events
 
@@ -783,7 +783,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -795,9 +795,9 @@ MessageBox.Show(" CurrentCursorPosition event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -807,7 +807,7 @@ MessageBox.Show(" CursorPositionChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## Expand Events
 
@@ -823,7 +823,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -849,9 +849,9 @@ Console.WriteLine(" ExpandedAll event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -876,7 +876,7 @@ Console.WriteLine(" ExpandedAll event is raised ")
 End Sub
 
 
-
+{% endhighlight %}
 
 
 ### ExpandingAll Event
@@ -899,7 +899,7 @@ Gets / sets a value indicating whether the event should be cancelled.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -931,9 +931,9 @@ e.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -963,7 +963,7 @@ e.Cancel = True
 
 End Sub
 
-
+{% endhighlight %}
 
 ## Indicator Margin Events
 
@@ -997,7 +997,7 @@ Gets clicked line index.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1009,9 +1009,9 @@ Console.WriteLine(" IndicatorMarginClick event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1021,7 +1021,7 @@ Console.WriteLine(" IndicatorMarginClick event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### IndicatorMarginDoubleClick Event
 
@@ -1047,7 +1047,7 @@ Gets clicked line index.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1059,9 +1059,9 @@ Console.WriteLine(" IndicatorMarginDoubleClick event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1071,7 +1071,7 @@ Console.WriteLine(" IndicatorMarginDoubleClick event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### DrawLineMark Event
 
@@ -1109,7 +1109,7 @@ Physical line number.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1131,9 +1131,9 @@ e.Graphics.DrawRectangle(Pens.IndianRed, e.MarkRect);
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1151,13 +1151,13 @@ End If
 
 End Sub
 
+{% endhighlight %}
+
+![](Edit-Control-Events_images/Edit-Control-Events_img1.jpeg)
 
 
-{{ '![](Edit-Control-Events_images/Edit-Control-Events_img1.jpeg)' | markdownify }}
-{:.image }
 
-
-_Figure_ _84__: Custom Indicators in the Indicator Margin_
+_Figure_ _84_: Custom Indicators in the Indicator Margin
 
 
 
@@ -1169,7 +1169,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1195,9 +1195,9 @@ Console.WriteLine(" InsertModeChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1221,7 +1221,7 @@ Console.WriteLine(" InsertModeChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## LanguageChanged Event
 
@@ -1231,7 +1231,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1243,9 +1243,9 @@ Console.WriteLine(" LanguageChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1255,7 +1255,7 @@ Console.WriteLine(" LanguageChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## MenuFill Event
 
@@ -1301,7 +1301,7 @@ Gets time of the operation activity.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1313,9 +1313,9 @@ Console.WriteLine(" OperationStarted event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1325,6 +1325,7 @@ Console.WriteLine(" OperationStarted event is raised ")
 
 End Sub
 
+{% endhighlight %}
 
 
 ### OperationStopped Event
@@ -1359,7 +1360,7 @@ Gets time of the operation activity.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1371,9 +1372,9 @@ Console.WriteLine(" OperationStopped event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1384,7 +1385,7 @@ Console.WriteLine(" OperationStopped event is raised ")
 End Sub
 
 
-
+{% endhighlight %}
 
 
 ## Outlining Events
@@ -1423,7 +1424,7 @@ Gets / sets collapser.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1435,9 +1436,9 @@ Console.WriteLine(" OutliningBeforeCollapse event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1447,7 +1448,7 @@ Console.WriteLine(" OutliningBeforeCollapse event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### OutliningBeforeExpand Event
 
@@ -1481,7 +1482,7 @@ Gets / sets collapser.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1493,9 +1494,9 @@ Console.WriteLine(" OutliningBeforeExpand event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1505,7 +1506,7 @@ Console.WriteLine(" OutliningBeforeExpand event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### OutliningCollapse Event
 
@@ -1535,7 +1536,7 @@ Gets / sets collapser.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1547,9 +1548,9 @@ Console.WriteLine(" OutliningCollapse event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1559,7 +1560,7 @@ Console.WriteLine(" OutliningBeforeCollapse event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### OutliningExpand Event
 
@@ -1587,7 +1588,7 @@ Gets / sets collapser.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1599,9 +1600,9 @@ Console.WriteLine(" OutliningExpand event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1611,7 +1612,7 @@ Console.WriteLine(" OutliningExpand event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### OutliningTooltipBeforePopup Event
 
@@ -1647,7 +1648,7 @@ Gets / sets collapser.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1659,9 +1660,9 @@ Console.WriteLine(" OutliningTooltipClose event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1671,7 +1672,7 @@ Console.WriteLine(" OutliningTooltipClose event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### OutliningTooltipPopup Event
 
@@ -1701,7 +1702,7 @@ Gets / sets collapser.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1713,9 +1714,9 @@ Console.WriteLine(" OutliningTooltipPopup event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1725,7 +1726,7 @@ Console.WriteLine(" OutliningTooltipPopup event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## Print Events
 
@@ -1753,7 +1754,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1777,9 +1778,9 @@ Console.WriteLine(" ReadOnlyChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1802,7 +1803,7 @@ Console.WriteLine(" ReadOnlyChanged event is raised ")
 End Sub
 
 
-
+{% endhighlight %}
 
 
 ## RegisteringDefaultKeyBindings Event
@@ -1845,7 +1846,7 @@ Gets / sets value that indicates whether user handled the event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1859,9 +1860,9 @@ e.UserHandling = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1873,7 +1874,7 @@ e.UserHandling = True
 
 End Sub
 
-
+{% endhighlight %}
 
 ### SaveStreamWithDataLoss Event
 
@@ -1899,7 +1900,7 @@ Gets / sets value that indicates whether user handled the event.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1913,9 +1914,9 @@ e.UserHandling = true;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1927,7 +1928,7 @@ e.UserHandling = True
 
 End Sub
 
-
+{% endhighlight %}
 
 ## Scroll Events
 
@@ -1965,7 +1966,7 @@ Gets the type of scroll event that occurred.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1978,8 +1979,8 @@ Console.WriteLine(" HorizontalScroll event is raised ");
 }
 
 
-
-[VB.NET]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -1989,7 +1990,7 @@ Console.WriteLine(" HorizontalScroll event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ### VerticalScroll Event
 
@@ -2023,7 +2024,7 @@ Gets the type of scroll event that occurred.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2035,9 +2036,10 @@ Console.WriteLine(" VerticalScroll event is raised ");
 
 }
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2047,7 +2049,7 @@ Console.WriteLine(" VerticalScroll event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## SelectionChanged Event
 
@@ -2055,7 +2057,7 @@ This event is raised when text selection has been changed.
 
 The event handler receives an argument of type EventArgs.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2067,9 +2069,9 @@ MessageBox.Show(" SelectionChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2079,7 +2081,7 @@ MessageBox.Show(" SelectionChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## SingleLineChanged Event
 
@@ -2089,7 +2091,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2115,9 +2117,9 @@ Console.WriteLine(" SingleLineChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2141,7 +2143,7 @@ Console.WriteLine(" SingleLineChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## Text Events
 
@@ -2149,6 +2151,7 @@ This section discusses the following text events:
 
 * TextChanged
 * TextChanging
+
 ### TextChanged Event
 
 
@@ -2158,7 +2161,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2184,9 +2187,9 @@ Console.WriteLine(" TextChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2211,7 +2214,7 @@ Console.WriteLine(" TextChanged event is raised ")
 End Sub
 
 
-
+{% endhighlight %}
 
 
 ### TextChanging Event
@@ -2250,7 +2253,7 @@ Gets/sets type of the event (Changed/Insert/Delete). It includes the below given
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2268,9 +2271,9 @@ Console.WriteLine(" TextChanging event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2286,6 +2289,7 @@ Console.WriteLine(" TextChanging event is raised ")
 
 End Sub
 
+{% endhighlight %}
 
 
 ### Line Modification Events
@@ -2298,7 +2302,7 @@ The following events are triggered from the control when the editor is modified:
 
 The LineChanged event will be fired when any line is modified in the Edit control.
 
-[C#]
+{% highlight c# %}
 
 // Handle the LineChanged event.
 
@@ -2324,9 +2328,9 @@ void editControl1_LineChanged(objectsender,Syncfusion.Windows.Forms.Edit.TextCha
 
       }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
    ‘Handle the LineChanged event.
 
@@ -2347,13 +2351,13 @@ void editControl1_LineChanged(objectsender,Syncfusion.Windows.Forms.Edit.TextCha
 
     End Sub
 
-
+{% endhighlight %}
 
 #### Line Inserted
 
 The LineInserted event will be fired when a new line is inserted in the Edit control.
 
-[C#]
+{% highlight c# %}
 
 // Handle the LineInserted event.
 
@@ -2375,9 +2379,9 @@ void editControl1_LineInserted(objectsender,Syncfusion.Windows.Forms.Edit.LinesE
 
         }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
     ‘Handle the LineInserted event.
     AddHandler Me.editControl1.LineInserted, AddressOf Me.editControl1_LineInserted
@@ -2394,7 +2398,7 @@ void editControl1_LineInserted(objectsender,Syncfusion.Windows.Forms.Edit.LinesE
 
     End Sub
 
-
+{% endhighlight %}
 
 #### Line Deleted
 
@@ -2402,7 +2406,7 @@ The LineDeleted event will be fired when any line is removed from the Edit contr
 
 
 
-[C#]
+{% highlight c# %}
 
 // Handle the LineDeleted event.
 
@@ -2424,9 +2428,9 @@ this.editControl1.LineDeleted += new Syncfusion.Windows.Forms.Edit.LineDeletedEv
 
 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 ‘Handle the LineDeleted event.   AddHandler Me.editControl1.LineDeleted, AddressOf Me.editControl1_LineDeleted
 
@@ -2441,6 +2445,8 @@ this.editControl1.LineDeleted += new Syncfusion.Windows.Forms.Edit.LineDeletedEv
 
 
     End Sub
+
+{% endhighlight %}
 
 ## UnreachableTextFound Event
 
@@ -2470,7 +2476,7 @@ Searched text.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2482,9 +2488,9 @@ Console.WriteLine(" UnreachableTextFound event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2494,7 +2500,7 @@ Console.WriteLine(" UnreachableTextFound event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## UpdateBookmarkToolTip Event
 
@@ -2540,7 +2546,7 @@ Mouse Y coordinate in client coordinates.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2568,9 +2574,9 @@ e.Text = " Introduction to Essential Edit ";
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2596,10 +2602,10 @@ e.Text = " Introduction to Essential Edit "
 
 End Sub
 
+{% endhighlight %}
 
+![](Edit-Control-Events_images/Edit-Control-Events_img2.jpeg)
 
-{{ '![](Edit-Control-Events_images/Edit-Control-Events_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 _Figure_ _85__: Bookmark ToolTip Text Displayed_
@@ -2648,7 +2654,7 @@ Gets the graphics that will be used to paint.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2661,8 +2667,9 @@ Console.WriteLine(" PaintUserMargin event is raised ");
 }
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2672,7 +2679,7 @@ Console.WriteLine(" PaintUserMargin event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 
 ## WordWrapChanged Event
 
@@ -2682,7 +2689,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2708,9 +2715,9 @@ Console.WriteLine(" WordWrapChanged event is raised ");
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2734,5 +2741,5 @@ Console.WriteLine(" WordWrapChanged event is raised ")
 
 End Sub
 
-
+{% endhighlight %}
 

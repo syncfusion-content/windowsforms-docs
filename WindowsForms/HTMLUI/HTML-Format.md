@@ -13,7 +13,7 @@ HTMLUI allows the user to apply formats to the elements at run time. The HTMLFor
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -33,9 +33,9 @@ format.ForeColor = Color.Blue;
 
 div.Format = format; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -55,13 +55,13 @@ Private format.ForeColor = Color.Blue
 
 Private div.Format = format
 
-
+{% endhighlight %}
 
 With HTMLUI, the user can also access the location of the elements in the HTMLUI control.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -73,11 +73,11 @@ beginPoint = element.Location;
 
 endPoint = new Point(beginPoint.X + element.Size.Width, beginPoint.Y + element.Size.Height);
 
+{% endhighlight %}
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -89,14 +89,14 @@ Private beginPoint = element.Location
 
 Private endPoint = New Point(beginPoint.X + element.Size.Width, beginPoint.Y + element.Size.Height)
 
-
+{% endhighlight %}
 
 ## HTMLFormat Sample
 
 This sample shows how the styles are applied by using the HTML Format object.
 
-{{ '![](HTML-Format_images/HTML-Format_img1.jpeg)' | markdownify }}
-{:.image }
+![](HTML-Format_images/HTML-Format_img1.jpeg)
+
 
 
 

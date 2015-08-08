@@ -7,13 +7,13 @@ control: Edit
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
 
 
 
-### Installation
+## Installation
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
@@ -31,7 +31,7 @@ For licensing, patches and information on adding or removing selective component
 
 
 
-### Sample and Location
+## Sample and Location
 
 This section covers the location of the installed samples and describes the procedure to run the samples through the sample browser. It also lists the location of source code.
 
@@ -57,11 +57,11 @@ To view the samples, follow the steps below:
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
-{:.image }
+![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
-_Figure_ _2__: Syncfusion Essential Studio Dashboard_
+
+_Figure_ _2_: Syncfusion Essential Studio Dashboard
 
 
 
@@ -69,9 +69,7 @@ _Figure_ _2__: Syncfusion Essential Studio Dashboard_
 
 
 
-> {{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)' | markdownify }}
-{:.image }
-_Note: You can view the samples in any of the following three ways:_
+> Note: You can view the samples in any of the following three ways:
 
 
 
@@ -83,11 +81,11 @@ _Note: You can view the samples in any of the following three ways:_
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
-{:.image }
+![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
-_Figure_ _3__: User Interface Edition Windows Forms Sample Browser_
+
+_Figure_ _3_: User Interface Edition Windows Forms Sample Browser
 
 
 
@@ -95,11 +93,11 @@ _Figure_ _3__: User Interface Edition Windows Forms Sample Browser_
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
-{:.image }
+![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
-_Figure_ _4__: Essential Edit Samples for Windows_
+
+_Figure_ _4_: Essential Edit Samples for Windows
 
 
 
@@ -117,11 +115,11 @@ _[System Drive]:\Program Files\Syncfusion\Essential Studio\[Version Number]\Wind
 
 
 
-### Deployment Requirements
+## Deployment Requirements
 
 This section gives the deployment requirements for using Essential Edit in a Windows application. It comprises the below sections:
 
-#### Toolbox Entries
+### Toolbox Entries
 
 Essential Edit places the following control into your VisualStudio .NET toolbox from where you can drag onto the form and start working with it.
 
@@ -131,7 +129,7 @@ Essential Edit places the following control into your VisualStudio .NET toolbox 
 
 
 
-#### DLLs
+### DLLs
 
 While deploying an application that references a Syncfusion Essential Edit assembly, the following dependencies must be included in the distribution.
 

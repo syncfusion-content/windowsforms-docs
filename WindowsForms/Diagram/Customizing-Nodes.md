@@ -17,8 +17,8 @@ Line bridging provides the visual effect such that the links jump over other lin
 
 
 
-{{ '![](Customizing-Nodes_images/Customizing-Nodes_img1.jpeg)' | markdownify }}
-{:.image }
+![](Customizing-Nodes_images/Customizing-Nodes_img1.jpeg)
+
 
 
 
@@ -27,7 +27,7 @@ The below table lists the properties which controls the appearance of the bridge
 
 
 
-_Table_ _28__: Bridging Properties_
+_Table_ _28_: Bridging Properties
 
 <table>
 <tr>
@@ -50,7 +50,7 @@ Programmatically it can be set as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -72,9 +72,9 @@ link.LineBridgingEnabled = true;
 
 this.diagram1.Model.BridgeStyle = BridgeStyle.Square;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -96,11 +96,9 @@ link.LineBridgingEnabled = True
 
 Me.diagram1.Model.BridgeStyle = BridgeStyle.Square
 
+{% endhighlight %}
 
-
-> {{ '![](Customizing-Nodes_images/Customizing-Nodes_img2.jpeg)' | markdownify }}
-{:.image }
-_Note: In the above code snippets, link refers to the instance of the Link node._
+> Note: In the above code snippets, link refers to the instance of the Link node.
 
 ## Line Routing
 
@@ -108,7 +106,7 @@ When a link is drawn between two nodes, by enabling the LineRoutingEnabled prope
 
 
 
-_Table_ _29__: Line Routing_
+_Table_ _29_: Line Routing
 
 <table>
 <tr>
@@ -126,7 +124,7 @@ Programmatically it can be set as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -140,9 +138,9 @@ this.diagram1.Model.LineRoutingEnabled = true;
 
 link.LineRoutingEnabled = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -156,19 +154,16 @@ Me.diagram1.Model.LineRoutingEnabled = True
 
 link.LineRoutingEnabled = True.Model.LineBridgeSize = 5
 
+{% endhighlight %}
 
-
-> {{ '![](Customizing-Nodes_images/Customizing-Nodes_img3.jpeg)' | markdownify }}
-{:.image }
-_Note:_
-
-> _In the above code snippet, link refers to the instance of the Link node._
-
-> _Only when LineRoutingEnabled property is set to true, LineRouter properties will be enabled._
+> Note:
+>
+>  In the above code snippet, link refers to the instance of the Link node.
+>  Only when LineRoutingEnabled property is set to true, LineRouter properties will be enabled.
 
 
 
-Distance and Routing mode settings
+### Distance and Routing mode settings
 
 To customize the distance between the connectors and the obstacles, and the type of routing to use, the LineRouter collection property should be handled. The below properties are available for the LineRouter Collection property.
 
@@ -194,7 +189,7 @@ Programmatically it can be set as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -202,9 +197,9 @@ this.diagram1.Model.LineRouter.DistanceToObstacles = 20;
 
 this.diagram1.Model.LineRouter.RoutingMode = RoutingMode.Automatic;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -222,23 +217,23 @@ When line routing is enabled make sure to set the TreatAsObstacle property of th
 
 Programmatically it can be set as follows: 
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 
 
 circle.TreatAsObstacle = true;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
 circle.TreatAsObstacle = True
 
-
+{% endhighlight %}
 
 In the above code snippets, the TreatAsObstacle property is set to the circle object.
 
@@ -250,7 +245,7 @@ The following code snippet creates a group with two nodes.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -301,8 +296,8 @@ grp.AppendChild(nodeRect1);
 this.diagramControl1.Model.AppendChild(grp);
 
 
-
-[VB.NET]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -352,15 +347,15 @@ grp.AppendChild(nodeRect1)
 
 Me.diagramWebControl1.Model.AppendChild(grp)
 
+{% endhighlight %}
+
+![](Customizing-Nodes_images/Customizing-Nodes_img4.jpeg)
 
 
-{{ '![](Customizing-Nodes_images/Customizing-Nodes_img4.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _73__: Selecting a Group in a Diagram_
+_Figure_ _73_: Selecting a Group in a Diagram
 
 
 
@@ -368,7 +363,7 @@ The grouping of nodes can be performed using ready-made API.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -382,9 +377,9 @@ this.diagram1.Controller.Group();
 
 this.diagram1.Controller.UnGroup();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -398,7 +393,7 @@ Me.diagram1.Controller.Group()
 
 Me.diagram1.Controller.UnGroup()
 
-
+{% endhighlight %}
 
 ## Label
 
@@ -431,7 +426,7 @@ Tables for Properties and Methods
 
 
 
-_Table_ _30__: Properies Table_
+_Table_ _30_: Properies Table
 
 <table>
 <tr>
@@ -633,11 +628,11 @@ NA</td></tr>
 </table>
 
 
-Methods
+### Methods
 
 
 
-_Table_ _31__: Methods Table_
+_Table_ _31_: Methods Table
 
 
 
@@ -675,7 +670,7 @@ You can create label as illustrated in the following code example:
 
 
 
-[C#]
+{% highlight c# %}
 
 RoundRect node = new RoundRect(0, 0, 170, 100,MeasureUnits.Pixel);
 
@@ -745,11 +740,11 @@ RoundRect node = new RoundRect(0, 0, 170, 100,MeasureUnits.Pixel);
 
             diagram1.Model.AppendChild(node);  
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim node As New RoundRect(0, 0, 170, 100,MeasureUnits.Pixel)
 
@@ -820,16 +815,16 @@ node.Labels.Add(lbl_Custom)
 diagram1.Model.AppendChild(node)
 
 
+{% endhighlight %}
 
 
 
 
-
-{{ '![](Customizing-Nodes_images/Customizing-Nodes_img5.png)' | markdownify }}
-{:.image }
+![](Customizing-Nodes_images/Customizing-Nodes_img5.png)
 
 
-_Figure_ _74__: Label_ 
+
+_Figure_ _74_: Label
 
 ## Label Orientation
 
@@ -837,7 +832,7 @@ This feature lets the user to specify the orientation of a node label. There are
 
 
 
-_Table_ _32__: Orientation Properties_
+_Table_ _32_: Orientation Properties
 
 <table>
 <tr>
@@ -857,7 +852,7 @@ The following code shows how to set the orientation of the label to horizontal:
 
 
 
-[C#]
+{% highlight c# %}
 
 Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label(node, "Orientation");
 
@@ -867,9 +862,9 @@ label.Orientation = LabelOrientation.Horizontal;
 
 node.Labels.Add(label);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim label As New Syncfusion.Windows.Forms.Diagram.Label(node, "Orientation")
 
@@ -879,15 +874,15 @@ label.Orientation = LabelOrientation.Horizontal
 
 node.Labels.Add(label)
 
+{% endhighlight %}
+
+![C:/Users/amsathm/Desktop/Horizontal orientation.png](Customizing-Nodes_images/Customizing-Nodes_img6.png)
 
 
-{{ '![C:/Users/amsathm/Desktop/Horizontal orientation.png](Customizing-Nodes_images/Customizing-Nodes_img6.png)' | markdownify }}
-{:.image }
 
 
 
+![C:/Users/amsathm/Desktop/Automatic Orientation.png](Customizing-Nodes_images/Customizing-Nodes_img7.png)
 
-{{ '![C:/Users/amsathm/Desktop/Automatic Orientation.png](Customizing-Nodes_images/Customizing-Nodes_img7.png)' | markdownify }}
-{:.image }
 
 

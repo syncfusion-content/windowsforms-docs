@@ -22,7 +22,7 @@ The Essential Diagram package is comprised of the following controls:
 * PropertyEditor
 * DocumentExplorer
 
-Diagram
+### Diagram
 
 The Diagram control is an interactive two-dimensional graphics control for diagramming, technical drawing, visualization, and simulation applications. It provides a surface for rendering and manipulating 2-D shapes, text, images, and Windows Form controls.  The UI supports drag-and-drop, scaling, zooming, rotation, grouping, ungrouping, connection points, layouts, and many other features.
 
@@ -32,54 +32,54 @@ The model contains the data (node/connector) portion of a diagram. The view is r
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-Overview
+
+### Overview
 
 The Overview control provides a perspective view of a diagram model and allows users to dynamicallypan/zoom the diagram. It features a viewport window that can be moved and/or resized using the mouse to modify the diagram’s origin and magnification properties at run time.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
-PaletteGroupBar
+
+### PaletteGroupBar
 
 The PaletteGroupBar control provides a way for users to drag symbols onto a diagram. It is based on the GroupBar control of Essential Tools. Each symbol palette loaded in thePaletteGroupBar control occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. Each symbol palette is a list of symbols that have an icon and a label. The symbols in the palette are shown as icons that can be dragged onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols. It also provides preview of symbol during drag-and-drop operation.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-PaletteGroupView
+
+### PaletteGroupView
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from a resource file of a form. At design time, users can attach a symbol palette to the PaletteGroupView control in the form. Selecting PaletteGroupView and clicking the Palette property in the Visual Studio .NET Properties window will open a standard Open File dialog, which allows the user to select a symbol palette file that has been created with the Symbol Designer.
 
 It displays the symbol models belonging to a symbol palette in the GroupView control of Essential Tools for Windows Froms. It contains a list of icons and labels that can be hosted in the PaletteGroupBar control. The symbol models can be dragged from this control and dropped onto the diagram. It also provides preview of symbols during drag-and-drop operation.
 
-PropertyEditor
+### PropertyEditor
 
 The PropertyEditor control displays and edits the properties of diagram models, and nodes on the diagram. It contains an embedded PropertyGrid control which is used to edit the properties of selected objects on the diagram. A combo box is added to this control for listing out the names of objects and selecting the objects on the diagram. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-DocumentExplorer
+
+### DocumentExplorer
 
 The DocumentExplorer control allows you to visualize the details of the various objects that are added onto the diagram model. The layers will be listed under the Layers node, and other objects like shapes, links, lines, and text editors will be listed under the Nodes node. The nodes and layers can be renamed, deleted, and hided, and a new layer can be added through this control.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 ## Essential Diagram in Windows Forms Application
@@ -100,16 +100,16 @@ To create a Diagram control using the designer:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 The Diagram control will be added to the designer and its dependent assemblies will be added to the project once you dropped it to the Designer Form window.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 #### Creating a Diagram Control through Code
@@ -128,7 +128,7 @@ To create a Diagram control using code:
 
 
 
-[C#]
+{% highlight c# %}
 
             //Imports the Diagram control’s namespaces
 
@@ -161,10 +161,10 @@ To create a Diagram control using code:
             diagram.Location = new Point(20, 5);
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Imports the Diagram control’s namespaces
 
@@ -196,7 +196,7 @@ To create a Diagram control using code:
 
             diagram.Location = New Point(20, 5)
 
-
+{% endhighlight %}
 
 
 
@@ -204,7 +204,7 @@ To create a Diagram control using code:
 
 
 
-[C#]
+{% highlight c# %}
 
             //Create a model
 
@@ -217,10 +217,10 @@ To create a Diagram control using code:
             diagram.Model = model;
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Create a model
 
@@ -232,7 +232,7 @@ To create a Diagram control using code:
 
             diagram.Model = model
 
-
+{% endhighlight %}
 
 
 
@@ -240,7 +240,7 @@ To create a Diagram control using code:
 
 
 
-[C#]
+{% highlight c# %}
 
             //Add the Diagram control to Diagram Form
 
@@ -248,20 +248,20 @@ To create a Diagram control using code:
 
 
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
             'Add the Diagram control to the Diagram Form
 
             Me.Controls.Add(diagram)
 
 
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img8.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
 
 
 #### Adding Nodes to the Model
@@ -272,7 +272,7 @@ The following code creates a rectangular node and adds it to the model.
 
 
 
-[C#]
+{% highlight c# %}
 
             //Enable diagram rulers
 
@@ -331,10 +331,10 @@ The following code creates a rectangular node and adds it to the model.
             diagram.Model.AppendChild(rectangle);
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Enable diagram rulers
 
@@ -389,11 +389,11 @@ The following code creates a rectangular node and adds it to the model.
             diagram.Model.AppendChild(rectangle)
 
 
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img9.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
 
 
 
@@ -406,7 +406,7 @@ The following code illustrates how to connect a process node to a decision node 
 
 
 
-[C#]
+{% highlight c# %}
 
              //Create a process node
 
@@ -555,10 +555,10 @@ The following code illustrates how to connect a process node to a decision node 
             diagram.Model.AppendChild(link);
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Create a process node
 
@@ -709,11 +709,11 @@ The following code illustrates how to connect a process node to a decision node 
             diagram.Model.AppendChild(link)
 
 
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img10.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
 
 
 ### PaletteGroupBar
@@ -730,8 +730,8 @@ To create a PaletteGroupBar control through the designer:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 
@@ -740,8 +740,8 @@ The PaletteGroupBar control will be added to the designer and its dependent asse
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
+
 
 
 #### Creating a PaletteGroupBar Control through code
@@ -760,7 +760,7 @@ To create a PaletteGroupBar control using code:
 
 
 
- [C#]
+ {% highlight c# %}
 
             //Imports the Diagram control’s namespace
 
@@ -800,11 +800,11 @@ To create a PaletteGroupBar control using code:
 
             this.Controls.Add(paletteBar);
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
 
@@ -844,12 +844,12 @@ To create a PaletteGroupBar control using code:
 
             Me.Controls.Add(paletteBar)
 
+{% endhighlight %}
 
 
 
+![](Getting-Started_images/Getting-Started_img13.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
 
 
 ### PaletteGroupView
@@ -866,8 +866,8 @@ To create a PaletteGroupView control using the designer:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 
@@ -876,8 +876,8 @@ The PaletteGroupView control will be added to the designer and its dependent ass
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 #### Creating a PaletteGroupView Control through Code
@@ -896,7 +896,7 @@ To create a PaletteGroupView control using code:
 
 
 
-[C#]
+{% highlight c# %}
 
             //Imports the Diagram control’s namespace
 
@@ -934,9 +934,9 @@ To create a PaletteGroupView control using code:
 
 
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
 
@@ -973,11 +973,11 @@ To create a PaletteGroupView control using code:
             Me.Controls.Add(paletteView)
 
 
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img16.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
 
 
 ### Overview Control
@@ -994,8 +994,8 @@ To create an Overview control using the designer:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img17.png)
+
 
 
 
@@ -1004,8 +1004,8 @@ The Overview control will be added to the designer and its dependent assemblies 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img18.png)
+
 
 
 #### Creating an Overview Control through Code
@@ -1024,7 +1024,7 @@ To create an Overview control using code:
 
 
 
-[C#]
+{% highlight c# %}
 
             //Imports the Diagram control’s namespace
 
@@ -1050,11 +1050,11 @@ To create an Overview control using code:
 
             this.Controls.Add(overviewControl);
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
 
@@ -1081,11 +1081,11 @@ To create an Overview control using code:
             Me.Controls.Add(overviewControl)
 
 
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img19.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
-{:.image }
 
 
 ### PropertyEditor
@@ -1102,8 +1102,8 @@ To create a PropertyEditor control using code:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img20.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img20.png)
+
 
 
 
@@ -1112,8 +1112,8 @@ The PropertyEditor control will be added to the designer and its dependent assem
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img21.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img21.png)
+
 
 
 #### Creating a PropertyEditor Control through Code
@@ -1132,7 +1132,7 @@ To create a PropertyEditor control using code:
 
 
 
-[C#]
+{% highlight c# %}
 
             //Imports the Diagram control’s namespace
 
@@ -1161,10 +1161,10 @@ To create a PropertyEditor control using code:
             this.Controls.Add(propertyEditor);
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
 
@@ -1193,11 +1193,11 @@ To create a PropertyEditor control using code:
             Me.Controls.Add(propertyEditor)
 
 
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img22.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img22.png)' | markdownify }}
-{:.image }
 
 
 ### DocumentExplorer
@@ -1214,8 +1214,8 @@ To create a DocumentExplorer control using the designer:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img23.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img23.png)
+
 
 
 
@@ -1224,8 +1224,8 @@ The DocumentExplorer control will be added to the designer and its dependent ass
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img24.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img24.png)
+
 
 
 #### Creating a DocumentExplorer Control through Code
@@ -1244,7 +1244,7 @@ To create a DocumentExplorer control using code:
 
 
 
-[C#]
+{% highlight c# %}
 
             //Imports the Diagram control’s namespace
 
@@ -1270,11 +1270,11 @@ To create a DocumentExplorer control using code:
 
             this.Controls.Add(documentExplorer);
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
 
@@ -1300,12 +1300,10 @@ To create a DocumentExplorer control using code:
 
             Me.Controls.Add(documentExplorer)
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img25.png)
 
-
-
-{{ '![](Getting-Started_images/Getting-Started_img25.png)' | markdownify }}
-{:.image }
 
 
 ## Diagram Builder
@@ -1323,27 +1321,26 @@ Software Path
 
 1. Overview Control
 
-Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagrams. The control features a view port window that can be moved and / or resized using the mouse to modify the diagrams' origin and magnification properties at run-time. The properties of this control is discussed in the Overview Control topic.
+	Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagrams. The control features a view port window that can be moved and / or resized using the mouse to modify the diagrams' origin and magnification properties at run-time. The properties of this control is discussed in the Overview Control topic.
 
 2. Palette GroupBar and GroupView
 
-The PaletteGroupBar control provides a way for users to drag and drop symbols onto a diagram. It is based on the Syncfusion Essential Tools GroupBar control. Each symbol palette loaded in thePaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols.
+	The PaletteGroupBar control provides a way for users to drag and drop symbols onto a diagram. It is based on the Syncfusion Essential Tools GroupBar control. Each symbol palette loaded in thePaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols.
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from the resource file of a form. At design-time, users can attach a symbol palette to a PaletteGroupView control in the form. Selecting the PaletteGroupView and clicking the Palette property in the Visual Studio .NET Properties window will open a standard Open File dialog, which allows the user to select a symbol palette file that has been created with the Symbol Designer.
-
 For more details about these diagram controls, refer to the Palette GroupBar and GroupView topic.
 
 3. Property Editor
 
-The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
+	The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
 
 4. Document Explorer
 
-Document Explorer allows you to visualize the details of the various objects that are added onto the diagram control at run-time. The layers will be listed under the _Layers_ node and other objects like shapes, links, lines and text editor will be listed under _Nodes_ node.
+	Document Explorer allows you to visualize the details of the various objects that are added onto the diagram control at run-time. The layers will be listed under the _Layers_ node and other objects like shapes, links, lines and text editor will be listed under _Nodes_ node.
 
 5. Diagram Document
 
-The DiagramDocument is a serializable document type that encapsulates the model and view data for the diagram. The grid area of the diagram document is the diagram view object area. The nodes dragged from the PaletteGroupBar will be dropped here.
+	The DiagramDocument is a serializable document type that encapsulates the model and view data for the diagram. The grid area of the diagram document is the diagram view object area. The nodes dragged from the PaletteGroupBar will be dropped here.
 
 For more details, see Diagram Grid topic.
 
@@ -1359,7 +1356,7 @@ Follow the below steps in order to open an existing diagram document
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1377,14 +1374,14 @@ if (this.openFileDialog1.ShowDialog(this) == DialogResult.OK)
 
 }
 
-
+{% endhighlight %}
 
 The diagram1.LoadBinary() method loads the selected diagram file into diagram document.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img26.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img26.jpeg)
+
 
 
 
@@ -1399,7 +1396,7 @@ Below are the steps to save a diagram document.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1415,14 +1412,14 @@ if (this.saveFileDialog1.ShowDialog(this) == DialogResult.OK)
 
 }
 
-
+{% endhighlight %}
 
 The diagram1.SaveBinary() method saves the diagram file in the given filename.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img27.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img27.jpeg)
+
 
 
 
@@ -1439,7 +1436,7 @@ The following code snippet can be used for setting the page set up for diagram d
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1463,10 +1460,10 @@ using (PageSetupDialog dlgPageSetup = new
 
 }
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img28.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img28.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -1483,7 +1480,7 @@ The following code snippet can be used for setting the page border for diagram d
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1509,15 +1506,15 @@ if (diagram1 != null && diagram1.Model != null)
 
 }
 
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img29.jpeg)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img29.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _32__: Diagram Page Borders Dialog Box_
+_Figure_ _32_: Diagram Page Borders Dialog Box
 
 
 
@@ -1529,7 +1526,7 @@ The following code snippet can be used for creating the Header and Footer dialog
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1556,16 +1553,16 @@ if (diagram1 != null && diagram1.Model != null)
     }
 
 }
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img30.jpeg)
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img30.jpeg)' | markdownify }}
-{:.image }
 
 
-
-
-_Figure_ _33__: Diagram Header Footer Dialog Box_
+_Figure_ _33_: Diagram Header Footer Dialog Box
 
 
 
@@ -1581,7 +1578,7 @@ The following code snippet can be used for creating Print Preview dialog.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1611,15 +1608,15 @@ if (diagram1 != null)
 
 }
 
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img31.jpeg)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img31.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-_Figure_ _34__: Print Preview Dialog Box_
+_Figure_ _34_: Print Preview Dialog Box
 
 
 
@@ -1631,7 +1628,7 @@ The following code snippet can be used for sending the document for printing.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1663,13 +1660,13 @@ if (diagram1 != null)
 
 }
 
-
+{% endhighlight %}
 
 Diagram Builder Tools
 
 
 
-_Table_ _5__: Editing Options_
+_Table_ _5_: Editing Options
 
 <table>
 <tr>
@@ -1716,17 +1713,17 @@ The following screenshot illustrates the pan and zoomtools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img32.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img32.jpeg)
 
 
 
 
-_Figure_ _35__: Pan&Zoom Tool_
+
+_Figure_ _35_: Pan&Zoom Tool
 
 
 
-_Table_ _6__: Pan & Zoom Tool_
+_Table_ _6_: Pan & Zoom Tool
 
 <table>
 <tr>
@@ -1794,15 +1791,15 @@ The following screen shot illustrates the Alignmenttools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img33.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img33.jpeg)
 
 
 
 
-_Figure_ _36__:  Alignment Tool_
 
-_Table_ _7__: Alignment Tool_
+_Figure_ _36_:  Alignment Tool
+
+_Table_ _7_: Alignment Tool
 
 <table>
 <tr>
@@ -1849,17 +1846,17 @@ The following screen shot illustrates the Rotatetools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img34.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img34.jpeg)
 
 
 
 
-_Figure_ _37__:  Rotate Tools_
+
+_Figure_ _37_:  Rotate Tools
 
 
 
-_Table_ _8__: Rotate Tools_
+_Table_ _8_: Rotate Tools
 
 <table>
 <tr>
@@ -1896,17 +1893,17 @@ The following screen shot illustrates the Resizetools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img35.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img35.jpeg)
 
 
 
 
-_Figure_ _38__: Resize Tools_
+
+_Figure_ _38_: Resize Tools
 
 
 
-_Table_ _9__: Resize Tools_
+_Table_ _9_: Resize Tools
 
 <table>
 <tr>
@@ -1948,17 +1945,17 @@ The following screen shot illustrates the Nudgetools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img36.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img36.jpeg)
 
 
 
 
-_Figure_ _39__: Nudge Tools_
+
+_Figure_ _39_: Nudge Tools
 
 
 
-_Table_ _10__: Nudge Tools_
+_Table_ _10_: Nudge Tools
 
 <table>
 <tr>
@@ -1995,17 +1992,17 @@ The following screen shot illustrates the Text Formattingtools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img37.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img37.jpeg)
 
 
 
 
-_Figure_ _40__: Text Formatting Tools_
+
+_Figure_ _40_: Text Formatting Tools
 
 
 
-_Table_ _11__: Text Formatting Tools_
+_Table_ _11_: Text Formatting Tools
 
 <table>
 <tr>
@@ -2092,17 +2089,17 @@ The following screen shot illustrates the Group and Ordertools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img38.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img38.jpeg)
 
 
 
 
-_Figure_ _41__: Group & Order Tools_
+
+_Figure_ _41_: Group & Order Tools
 
 
 
-_Table_ _12__: Group & Order Tools_
+_Table_ _12_: Group & Order Tools
 
 <table>
 <tr>
@@ -2149,15 +2146,15 @@ The following screen shot illustrates the drawingtools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img39.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _42__: Drawing Tools_
+![](Getting-Started_images/Getting-Started_img39.png)
 
 
 
-_Table_ _13__: Drawing Tools_
+_Figure_ _42_: Drawing Tools
+
+
+
+_Table_ _13_: Drawing Tools
 
 <table>
 <tr>
@@ -2254,13 +2251,13 @@ The following screen shot illustrates the Diagram Connectortools.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img40.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img40.jpeg)
 
 
 
 
-_Figure_ _43__: Diagram Connector Tools_
+
+_Figure_ _43_: Diagram Connector Tools
 
 
 
@@ -2273,7 +2270,7 @@ The below table lists the properties of the tool.
 
 
 
-_Table_ _14__: LineConnectorTool_
+_Table_ _14_: LineConnectorTool
 
 <table>
 <tr>
@@ -2305,7 +2302,7 @@ Gets the Preceding Tool.</td></tr>
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2327,7 +2324,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
 
 }
 
-
+{% endhighlight %}
 
 Orthogonal Connector Tool
 
@@ -2335,7 +2332,7 @@ Orthogonal Connector Tool is used to connect nodes in an orthogonal manner by pr
 
 
 
-_Table_ _15__: Orthogonal Connector Tool_
+_Table_ _15_: Orthogonal Connector Tool
 
 <table>
 <tr>
@@ -2365,7 +2362,7 @@ Gets the Preceding Tool.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2385,7 +2382,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
 
 }
 
-
+{% endhighlight %}
 
 DirectedLineConnector Tool
 
@@ -2393,7 +2390,7 @@ DirectedLineConnector Tool is used to connect the nodes in a directed line. It c
 
 
 
-_Table_ _16__: DirectedLineConnector Tool_
+_Table_ _16_: DirectedLineConnector Tool
 
 <table>
 <tr>
@@ -2423,7 +2420,7 @@ Gets the Preceding Tool.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2443,7 +2440,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
 
 }
 
-
+{% endhighlight %}
 
 PolyLineConnector Tool
 
@@ -2481,7 +2478,7 @@ Gets the Preceding Tool.</td></tr>
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2501,7 +2498,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.PolyLineConnectorTool)
 
 }
 
-
+{% endhighlight %}
 
 Creating a Diagram using Diagram Builder
 
@@ -2511,13 +2508,13 @@ To create your own diagram in the diagram builder, follow the below given proced
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img41.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img41.jpeg)
 
 
 
 
-_Figure_ _44__: Diagram Builder_
+
+_Figure_ _44_: Diagram Builder
 
 
 
@@ -2526,8 +2523,8 @@ _Figure_ _44__: Diagram Builder_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img42.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img42.jpeg)
+
 
 
 
@@ -2539,8 +2536,8 @@ A diagram is created using the Diagram Builder. You can use this diagram (.edd) 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img43.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img43.jpeg)
+
 
 
 ## Symbol Designer
@@ -2564,8 +2561,8 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img44.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img44.jpeg)
+
 
 
 
@@ -2574,8 +2571,8 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img45.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img45.jpeg)
+
 
 
 
@@ -2584,8 +2581,8 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img46.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img46.png)
+
 
 
 
@@ -2594,14 +2591,14 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img47.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img47.jpeg)
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img48.jpeg)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img48.jpeg)
+
 
 
 
@@ -2610,8 +2607,8 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img49.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img49.jpeg)
+
 
 
 
@@ -2621,8 +2618,8 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img50.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img50.jpeg)
+
 
 
 
@@ -2630,9 +2627,9 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 * Repeat the steps 3 to 7 for creating more symbols.
 * If you create symbols using more than one shapes, you need to group all the shapes into single symbol using the Group option in symbol designer.
 
-__{{ '![](Getting-Started_images/Getting-Started_img51.png)' | markdownify }}
-{:.image }
- _Figure_ _54__: Different Symbols_
+ ![](Getting-Started_images/Getting-Started_img51.png)
+
+ _Figure_ _54_: Different Symbols
 
 
 
@@ -2640,8 +2637,8 @@ __{{ '![](Getting-Started_images/Getting-Started_img51.png)' | markdownify }}
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img52.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img52.jpeg)
+
 
 
 
@@ -2657,8 +2654,8 @@ __{{ '![](Getting-Started_images/Getting-Started_img51.png)' | markdownify }}
 
 Drag and Drop the Diagram control from the toolbox into the designer form to create a diagram using Designer.  
 
-{{ '![C:/Users/Ashok/Desktop/fdgh.PNG](Getting-Started_images/Getting-Started_img53.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img53.png)
+
 
 
 
@@ -2678,7 +2675,7 @@ Create a Diagram control using the following code.
 
 
 
-[C#]
+{% highlight c# %}
 
 //Imports the Diagram control’s namespaces
 
@@ -2710,13 +2707,13 @@ Create a Diagram control using the following code.
 
             diagram.Location = new Point(20, 5);
 
-
+{% endhighlight %}
 
 Establishing Database Connectivity
 
 2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that have 2 columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
 
-[C#]
+{% highlight c# %}
 
         //Windows Form Load
 
@@ -2767,12 +2764,12 @@ Establishing Database Connectivity
         }
 
 
-
+{% endhighlight %}
 
 
 3. Use the following code example to establish the connection with the Database and retrieve the data in the form of Datatable.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -2799,14 +2796,14 @@ private DataTable DataSource()
         }
 
 
-
+{% endhighlight %}
 
 
 The following code example explains how to apply the layout for the data retrieved from the Database.
 
 
 
-[C#]
+{% highlight c# %}
 
 private void LayoutNode()
 
@@ -2825,22 +2822,14 @@ private void LayoutNode()
         }
 
 
-
-
-
-
-
-
-
-
-
+{% endhighlight %}
 
 
 The following screenshot displays the organizational flow of diagram.
 
 
 
-{{ '![C:/Users/Ashok/Desktop/IMG_12032015_143452.png](Getting-Started_images/Getting-Started_img54.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img54.png)
+
 
 

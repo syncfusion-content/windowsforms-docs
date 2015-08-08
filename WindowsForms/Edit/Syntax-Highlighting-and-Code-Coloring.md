@@ -15,11 +15,11 @@ These configuration settings are made available in the EditControl.Configurator.
 
 
 
-Pre-defined Configuration Files
+### Pre-defined Configuration Files
 
 You can set the Edit Control to use any of the pre-defined configuration settings by using the ApplyConfiguration method, as shown below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -49,9 +49,9 @@ IConfigLanguage config = this.editControl1.Configurator.GetLanguage("sql") as IC
 
 this.editControl1.ApplyConfiguration(config.Language);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -81,11 +81,11 @@ Dim config As IConfigLanguage = Me.EditControl1.Configurator.GetLanguage("sql")
 
 Me.editControl1.ApplyConfiguration(config.Language)
 
-
+{% endhighlight %}
 
 You can also load any of the configuration settings by using the ResetColoring method, as shown in the code below.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -165,9 +165,9 @@ this.editControl1.ResetColoring(this.editControl1.Configurator.KnownLanguages[6]
 
 this.editControl1.ResetColoring(this.editControl1.Configurator.GetLanguage("cs") as IConfigLanguage);    
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -247,15 +247,15 @@ Me.editControl1.ResetColoring(Me.editControl1.Configurator.KnownLanguages(6))
 
 Me.editControl1.ResetColoring(Me.editControl1.Configurator.GetLanguage("cs"))
 
+{% endhighlight %}
 
-
-External Configuration File
+### External Configuration File
 
 You can plug-in an external configuration file that defines a custom language to the Edit Control by using the Configurator.Open and ApplyConfiguration methods in conjunction, as shown in the below code snippet.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -269,9 +269,9 @@ this.editControl1.Configurator.Open(configFile);
 
 this.editControl1.ApplyConfiguration("CustomLanguage");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -285,9 +285,9 @@ Me.editControl1.Configurator.Open(configFile)
 
 Me.editControl1.ApplyConfiguration("CustomLanguage")
 
+{% endhighlight %}
 
-
-Run Time Configuration Settings
+### Run Time Configuration Settings
 
 Syntax Highlighting and Code Coloring can be implemented at run time by using the Language Coloring Configuration Editor.
 
@@ -295,17 +295,17 @@ Syntax Highlighting and Code Coloring can be implemented at run time by using th
 
 
 
-{{ '![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img1.jpeg)' | markdownify }}
-{:.image }
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img1.jpeg)
 
 
-_Figure_ _43__: Configuration Customization Dialog Box_
+
+_Figure_ _43_: Configuration Customization Dialog Box
 
 
 
 The Language Coloring Configuration Editorcan be invoked programmatically as follows.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -341,9 +341,9 @@ IConfigLanguage newLang = editConfig.Configurator.KnownLanguageNames.Contains(ac
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -377,7 +377,7 @@ If editConfig.ShowDialog(Me) = DialogResult.OK AndAlso Not (activeLang Is Nothin
 
 End If
 
-
+{% endhighlight %}
 
 A sample which demonstrates the above features is available in the below sample installation path.
 
@@ -399,7 +399,7 @@ Syntax Highlighting is accomplished in Essential Edit through the use of XML-bas
 
 The language-specific configuration is stored in XML files. The below given code snippet illustrates a sample configuration file that can be used for syntax highlighting a LISP-like code.
 
-[XML]
+{% highlight xml %}
 
 
 
@@ -469,7 +469,7 @@ The language-specific configuration is stored in XML files. The below given code
 
 </ConfigLanguage>
 
-
+{% endhighlight %}
 
 For additional information, Refer to the Creating a Custom Language Configuration File subsection under the
 
@@ -489,11 +489,11 @@ Edit Control supportssyntax highlighting in scenarios where more than one langua
 
 
 
-{{ '![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img2.jpeg)' | markdownify }}
-{:.image }
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img2.jpeg)
 
 
-_Figure_ _44__: Syntax Highlighting illustrated in HTML with Embedded JScript_
+
+_Figure_ _44_: Syntax Highlighting illustrated in HTML with Embedded JScript
 
 
 

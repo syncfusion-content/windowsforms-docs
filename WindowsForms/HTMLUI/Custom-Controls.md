@@ -19,7 +19,7 @@ An HTML document containing custom controls is shown below.
 
 
 
-[HTML]
+{% highlight html%}
 
 
 
@@ -45,7 +45,7 @@ NumericUpDown:<CUSTOM class="NumericUpDown" assembly="System.Windows.Forms"></CU
 
 </html>
 
-
+{% endhighlight %}
 
 The custom controls defined in the HTML document are interfaced with their equivalent windows forms control with the help of the PreRenderDocument event. The PreRenderDocument event occurs at a time when the HTML document is being loaded into the HTMLUI control, but the elements are not yet positioned.
 
@@ -55,7 +55,7 @@ The CustomControlBase implements the base functionality of the Windows forms con
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -85,9 +85,9 @@ new CustomControlBase( NumericUpDownElement, this.NumericUpDown1 );
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -115,22 +115,22 @@ Dim oTemp2 As CustomControlBase = New CustomControlBase(NumericUpDownElement, Me
 
 End Sub
 
-
+{% endhighlight %}
 
 The following image illustrates three custom controls created using HTMLUI.
 
 
 
-{{ '![](Custom-Controls_images/Custom-Controls_img1.png)' | markdownify }}
-{:.image }
+![](Custom-Controls_images/Custom-Controls_img1.png)
+
 
 
 ## Custom Controls Sample
 
 This sample demonstrates the implementation of Custom Controls by using HTMLUI.
 
-{{ '![](Custom-Controls_images/Custom-Controls_img2.jpeg)' | markdownify }}
-{:.image }
+![](Custom-Controls_images/Custom-Controls_img2.jpeg)
+
 
 
 

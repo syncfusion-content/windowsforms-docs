@@ -15,13 +15,13 @@ This tutorial will show you how easy it is to get started using Essential HTMLUI
 
 
 
-Creating an HTML Display Application
+### Creating an HTML Display Application
 
 Lesson 1 will show you how to load HTML from any source and display it as an HTML display application (like a web browser or an HTML enabled email application). 
 
 
 
-Creating an HTML Layout
+### Creating an HTML Layout
 
 In Lesson 2 you will learn how to lay out your user interfaces using HTMLUI. You will also learn how to let the users interact with the various HTML elements from within your application code.
 
@@ -38,115 +38,97 @@ In this lesson, you will learn about the following:
 1. Create a new Windows Forms application and open the main form for the application in the designer. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already. Drag an HTMLUI control onto the form.
 2. HTML can be loaded into the HTMLUI control from the following sources:
 
-
-
-* From a HTML file
-* From a URI (Uniform resource Identifier)
-* From a Stream
-
-
+   * From a HTML file
+   * From a URI (Uniform resource Identifier)
+   * From a Stream
 
 3. Add a MainMenu component from the toolbox onto the form. Also add a OpenFileDialog component to the form and name it as "openDlg".
 
-
-
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
-
-
+   ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 4. Add a handler for the Open menu item by double-clicking on the menu.
 
-
-
-[C#]
-
-
-
-this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
+   ~~~ cs
 
 
 
-private void menuItem2_Click(object sender, System.EventArgs e)
-
-{
-
-    // Gets or Sets the initial directory displayed by file dialog box
-
-openDlg.InitialDirectory = GetFilesLocation();
+		this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
 
 
 
-     // Gets or Sets the current file name filter string, which determines the choices that appear in the 
+		private void menuItem2_Click(object sender, System.EventArgs e)
 
-    // "Save as File Type" or "File of type" box in the dialog box.
+		{
 
-openDlg.Filter = "HTML files (*.htm)|*.htm|HTML Files (*.html)|*.html";
+			// Gets or Sets the initial directory displayed by file dialog box
 
-if( DialogResult.OK == openDlg.ShowDialog() )
-
-{
-
-string filePath = openDlg.FileName;
-
-this.htmluiControl1.LoadHTML(filePath);
-
-}
-
-}
+		openDlg.InitialDirectory = GetFilesLocation();
 
 
 
+			 // Gets or Sets the current file name filter string, which determines the choices that appear in the 
+
+			// "Save as File Type" or "File of type" box in the dialog box.
+
+		openDlg.Filter = "HTML files (*.htm)|*.htm|HTML Files (*.html)|*.html";
+
+		if( DialogResult.OK == openDlg.ShowDialog() )
+
+		{
+
+		string filePath = openDlg.FileName;
+
+		this.htmluiControl1.LoadHTML(filePath);
+
+		}
+
+		}
 
 
-[VB.NET]
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
 
-Me.menuItem2.Click += New System.EventHandler(Me.menuItem2_Click)
+		Me.menuItem2.Click += New System.EventHandler(Me.menuItem2_Click)
 
 
 
-Private Sub menuItem2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+		Private Sub menuItem2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 
 
-'  Gets or Sets the initial directory displayed by file dialog box
+		'  Gets or Sets the initial directory displayed by file dialog box
 
-openDlg.InitialDirectory = GetFilesLocation()
-
-
-
-' Gets or Sets the current file name filter string, which determines the choices that appear in the 
-
-'  "Save as File Type" or "File of type" box in the dialog box.
-
-openDlg.Filter = "HTML files (*.htm)|*.htm|HTML Files (*.html)|*.html"
-
-If DialogResult.OK = openDlg.ShowDialog() Then
-
-Dim filePath As String = openDlg.FileName
-
-Me.htmluiControl1.LoadHTML(filePath)
-
-End If
-
-End Sub
+		openDlg.InitialDirectory = GetFilesLocation()
 
 
+
+		' Gets or Sets the current file name filter string, which determines the choices that appear in the 
+
+		'  "Save as File Type" or "File of type" box in the dialog box.
+
+		openDlg.Filter = "HTML files (*.htm)|*.htm|HTML Files (*.html)|*.html"
+
+		If DialogResult.OK = openDlg.ShowDialog() Then
+
+		Dim filePath As String = openDlg.FileName
+
+		Me.htmluiControl1.LoadHTML(filePath)
+
+		End If
+
+		End Sub
+
+   ~~~
+   {:.prettyprint }
 
 5. Now run the sample and try loading a HTML document into the HTMLUI control.
 
-
-
-
-
-{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
-
-
-
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 Any HTML document can be loaded from a file by using the method shown in this sample.
 
@@ -164,8 +146,8 @@ In this lesson, you will learn about about the following:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
+
 
 
 
@@ -174,8 +156,8 @@ In this lesson, you will learn about about the following:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img4.jpeg)
+
 
 
 
@@ -184,71 +166,70 @@ In this lesson, you will learn about about the following:
 
 
 
-[HTML]
+   ~~~ html
+
+		<HTML>
+
+		<HEAD>
+
+		<TITLE> Creating User Interface </TITLE>
+
+		</HEAD>
+
+		<BODY bgcolor="#ffffff">
 
 
 
-<HTML>
-
-<HEAD>
-
-<TITLE> Creating User Interface </TITLE>
-
-</HEAD>
-
-<BODY bgcolor="#ffffff">
+		<TABLE id="Table1" height="360" cellSpacing="1" cellPadding="1" width="392" border="1">
 
 
 
-<TABLE id="Table1" height="360" cellSpacing="1" cellPadding="1" width="392" border="1">
+		<TR>
+
+		<TD align="center" height="72" valign="middle">
+
+		<INPUT id="txt" type="text" size="40" name="Text1"></INPUT>
+
+		</TD>
+
+		</TR>
 
 
 
-<TR>
+		<TR>
 
-<TD align="center" height="72" valign="middle">
+		<TD align="center" height="209" valign="middle">
 
-<INPUT id="txt" type="text" size="40" name="Text1"></INPUT>
+		<TEXTAREA id="txtArea" name="Textarea1" rows="9" cols="35"></TEXTAREA>
 
-</TD>
+		</TD>
 
-</TR>
-
-
-
-<TR>
-
-<TD align="center" height="209" valign="middle">
-
-<TEXTAREA id="txtArea" name="Textarea1" rows="9" cols="35"></TEXTAREA>
-
-</TD>
-
-</TR>
+		</TR>
 
 
 
-<TR>
+		<TR>
 
-<TD align="center" valign="middle">
+		<TD align="center" valign="middle">
 
-<INPUT id="btn" type="button" size="" value="Button" name="Button1"></INPUT>
+		<INPUT id="btn" type="button" size="" value="Button" name="Button1"></INPUT>
 
-</TD>
+		</TD>
 
-</TR>
-
-
-
-</TABLE>
+		</TR>
 
 
 
-</BODY>
-
-</HTML>
+		</TABLE>
 
 
+
+		</BODY>
+
+		</HTML>
+
+   ~~~
+   {:.prettyprint }
 
 4. As shown in the HTML document above, a textbox, a textarea and a button control has been added in the HTML document. The objective is to create an user interface by adding a Click event to the button element and on clicking the button, the text controls are made to display some text.
 
@@ -256,69 +237,66 @@ In this lesson, you will learn about about the following:
 
 5. The LoadFinished event is executed when the HTML document is loaded in the HTMLUI control. Add a handler for the LoadFinished event of the HTMLUI control. Access the HTML elements inside the managed code with objects created for each element as defined in the HTMLUI namespace.
 
+   ~~~ cs
 
+		//Objects declaration made global
 
-[C#]
+		INPUTElementImpl text;
 
+		INPUTElementImpl button;
 
-
-//Objects declaration made global
-
-INPUTElementImpl text;
-
-INPUTElementImpl button;
-
-TEXTAREAElementImpl textArea;
+		TEXTAREAElementImpl textArea;
 
 
 
-//HTMLUI control LoadFinishedEvent handler declaration
+		//HTMLUI control LoadFinishedEvent handler declaration
 
-this.htmluiControl1.LoadFinished += new System.EventHandler(this.htmluiControl1_LoadFinished);
-
-
-
-//HTMLUI control LoadFinishedEvent definition
-
-private void htmluiControl1_LoadFinished(object sender, System.EventArgs e)
-
-{
-
-Hashtable html = this.htmluiControl1.Document.GetElementsByUserIdHash();
+		this.htmluiControl1.LoadFinished += new System.EventHandler(this.htmluiControl1_LoadFinished);
 
 
 
-this.text = html["txt"] as INPUTElementImpl;
+		//HTMLUI control LoadFinishedEvent definition
 
-this.button = html["btn"] as INPUTElementImpl;
+		private void htmluiControl1_LoadFinished(object sender, System.EventArgs e)
 
-this.textArea = html["txtArea"] as TEXTAREAElementImpl;
+		{
 
-
-
-//Click Event declaration for HTML button element
-
-this.button.Click += new EventHandler(button_Click);
-
-}
+		Hashtable html = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
 
 
-private void button_Click(object sender, EventArgs e)
+		this.text = html["txt"] as INPUTElementImpl;
 
-{
+		this.button = html["btn"] as INPUTElementImpl;
 
-
-
-//Click Event definition and Text control UserInterface
-
-this.text.UserControl.CustomControl.Text = "HTML provides extensive means to layout and customize display elements.";
-
-this.textArea.UserControl.CustomControl.Text = "The HTMLUI control adds the ability to create user interfaces using HTML from within Windows Forms applications using managed code.";
-
-}
+		this.textArea = html["txtArea"] as TEXTAREAElementImpl;
 
 
+
+		//Click Event declaration for HTML button element
+
+		this.button.Click += new EventHandler(button_Click);
+
+		}
+
+
+
+		private void button_Click(object sender, EventArgs e)
+
+		{
+
+
+
+		//Click Event definition and Text control UserInterface
+
+		this.text.UserControl.CustomControl.Text = "HTML provides extensive means to layout and customize display elements.";
+
+		this.textArea.UserControl.CustomControl.Text = "The HTMLUI control adds the ability to create user interfaces using HTML from within Windows Forms applications using managed code.";
+
+		}
+
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -326,8 +304,8 @@ this.textArea.UserControl.CustomControl.Text = "The HTMLUI control adds the abil
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.jpeg)
+
 
 
 ### Creating And Displaying Custom Controls
@@ -336,93 +314,90 @@ To create and display Custom Controls:
 
 1. Add the Custom tags in the HTML document to display custom Windows Forms controls. In this case, a MaskedEditBox, MonthCalendar and DataGrid will be displayed in each of the cells in the HTML Table.
 
+   ~~~ html
 
+		<HTML>
 
-[HTML]
+		<HEAD>
 
+		<TITLE>HTMLUI CUSTOM CONTROLS</TITLE>
 
+		<style> 
 
-<HTML>
+		.tttDisplay { text-decoration: none; color: #ffffff; font-family: Tahoma; font-size: 34pt; font-weight: bold; line-height: 30px; padding-left: 2px; }
 
-<HEAD>
+		</style>
 
-<TITLE>HTMLUI CUSTOM CONTROLS</TITLE>
+		</HEAD>
 
-<style> 
-
-.tttDisplay { text-decoration: none; color: #ffffff; font-family: Tahoma; font-size: 34pt; font-weight: bold; line-height: 30px; padding-left: 2px; }
-
-</style>
-
-</HEAD>
-
-<BODY>
+		<BODY>
 
 
 
-<TABLE id="CustomControls" cellSpacing="0" cellPadding="0" width="100%" bgColor="silver" border="1" height="100%" align="center">
+		<TABLE id="CustomControls" cellSpacing="0" cellPadding="0" width="100%" bgColor="silver" border="1" height="100%" align="center">
 
 
 
-<TR>
+		<TR>
 
-<TD class="tttDisplay" height="33%" width="100%" id="cctd1" vAlign="center">
+		<TD class="tttDisplay" height="33%" width="100%" id="cctd1" vAlign="center">
 
-<maskededittextbox id="maskedEditTextBox1" height="20" width="136">
+		<maskededittextbox id="maskedEditTextBox1" height="20" width="136">
 
-</maskededittextbox>
+		</maskededittextbox>
 
-</TD>
+		</TD>
 
-</TR>
-
-
-
-<TR>
-
-<TD class="tttDisplay" height="33%" width="100%" id="cctd2" vAlign="center">
-
-<monthcalendar id="monthCalendar1" width="199" height="155"></monthcalendar>
-
-</TD>
-
-</TR>
+		</TR>
 
 
 
-<TR>
+		<TR>
 
-<TD class="tttDisplay" height="33%" width="100%" id="cctd3" vAlign="center">
+		<TD class="tttDisplay" height="33%" width="100%" id="cctd2" vAlign="center">
 
-<datagrid id="dataGrid1" width="304" height="144"></datagrid>
+		<monthcalendar id="monthCalendar1" width="199" height="155"></monthcalendar>
 
-</TD>
+		</TD>
 
-</TR>
-
-
-
-</TABLE>
+		</TR>
 
 
 
-</BODY>
+		<TR>
 
-</HTML>
+		<TD class="tttDisplay" height="33%" width="100%" id="cctd3" vAlign="center">
+
+		<datagrid id="dataGrid1" width="304" height="144"></datagrid>
+
+		</TD>
+
+		</TR>
 
 
 
-Note the custom tags maskededitbox, monthcalendar, and datagrid. These tags do not have any relation to the name of the control type they represent. Set the desired size of the custom control by setting the width and height attributes.
+		</TABLE>
 
-In the previous step, three custom controls were defined as part of the HTMLUI interface. The actual Windows Forms controls that represent these definitions have to be added to the form. 
+
+
+		</BODY>
+
+		</HTML>
+
+   ~~~
+   {:.prettyprint }
+
+   Note the custom tags maskededitbox, monthcalendar, and datagrid. These tags do not have any relation to the name of the control type they represent. Set the desired size of the custom control by setting the width and height attributes.
+
+   In the previous step, three custom controls were defined as part of the HTMLUI interface. The actual Windows Forms controls that represent these definitions have to be added to the form. 
 
 
 
 2. Drag a MonthCalendar control from the toolbox and drop it on the form. The MonthCalendar will be named monthCalendar1 by default. Use this name in the next step to associate it with the appropriate HTML-defined control.
 3. Drag a MaskedEditBox control and a DataGrid control onto the form.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.jpeg)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img6.jpeg)
+
 
 
 
@@ -431,125 +406,126 @@ In the previous step, three custom controls were defined as part of the HTMLUI i
 
 
 
-This step associates the Windows Forms controls on the form with controls defined in the HTML. This is done in the PreRenderDocument event handler of the HTMLUI control. This event is raised before the control renders the HTML elements (after it has parsed the HTML document into HTML elements).
+   This step associates the Windows Forms controls on the form with controls defined in the HTML. This is done in the PreRenderDocument event handler of the HTMLUI control. This event is raised before the control renders the HTML elements (after it has parsed the HTML document into HTML elements).
+
+
+   ~~~ cs
 
 
 
-[C#]
+		this.htmluiControl1.PreRenderDocument += new Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentEventHandler(this.htmluiControl1_PreRenderDocument);
 
 
 
-this.htmluiControl1.PreRenderDocument += new Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentEventHandler(this.htmluiControl1_PreRenderDocument);
+		// Event that is to be raised when a tree of element has been created and their size and location have 
+
+		// not been calculated yet.
+
+		private void htmluiControl1_PreRenderDocument(object sender, Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentArgs e)
+
+		{
+
+		Hashtable htmlelements = new Hashtable();
+
+		htmlelements = e.Document.ElementsByUserID;
 
 
 
-// Event that is to be raised when a tree of element has been created and their size and location have 
-
-// not been calculated yet.
-
-private void htmluiControl1_PreRenderDocument(object sender, Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentArgs e)
-
-{
-
-Hashtable htmlelements = new Hashtable();
-
-htmlelements = e.Document.ElementsByUserID;
+		BaseElement maskedEditTextBoxElement1 = htmlelements["maskedEditTextBox1"] as BaseElement;
 
 
 
-BaseElement maskedEditTextBoxElement1 = htmlelements["maskedEditTextBox1"] as BaseElement;
+		   // Create a new Wrapper object
+
+		new CustomControlBase( maskedEditTextBoxElement1, this.maskedEditBox1  ); 
 
 
 
-   // Create a new Wrapper object
+		BaseElement monthCalendarElement1 = htmlelements["monthCalendar1"] as BaseElement;
 
-new CustomControlBase( maskedEditTextBoxElement1, this.maskedEditBox1  ); 
-
-
-
-BaseElement monthCalendarElement1 = htmlelements["monthCalendar1"] as BaseElement;
-
-new CustomControlBase( monthCalendarElement1, this.monthCalendar1  ); 
+		new CustomControlBase( monthCalendarElement1, this.monthCalendar1  ); 
 
 
 
-BaseElement dataGridElement1 = htmlelements["dataGrid1"] as BaseElement;
+		BaseElement dataGridElement1 = htmlelements["dataGrid1"] as BaseElement;
 
-new CustomControlBase( dataGridElement1, this.dataGrid1  ); 
+		new CustomControlBase( dataGridElement1, this.dataGrid1  ); 
 
-}
+		}
 
-
+   ~~~
+   {:.prettyprint }
 
 5. Add a handler for the Load event and load the HTML document resource into the HTMLUI control.
 
 
+   ~~~ cs
 
-[C#]
-
-
-
-this.Load += new System.EventHandler(this.Form1_Load);
+		this.Load += new System.EventHandler(this.Form1_Load);
 
 
 
-private void Form1_Load(object sender, System.EventArgs e)
+		private void Form1_Load(object sender, System.EventArgs e)
 
-{
+		{
 
-LoadHTMLResource();                        
+		LoadHTMLResource();                        
 
-}
-
-
-
-private bool LoadHTMLResource()
-
-{
-
-bool success = false;
-
-try
-
-{
+		}
 
 
 
-     // Gets the Assembly that contains the code that is currently executing
+		private bool LoadHTMLResource()
 
-_assembly = Assembly.GetExecutingAssembly();
+		{
+
+		bool success = false;
+
+		try
+
+		{
 
 
 
-        // Loads the specified manifest resource from the Assembly
+			 // Gets the Assembly that contains the code that is currently executing
 
-_htmlStream = (Stream)_assembly.GetManifestResourceStream("HTMLUICustomControls.customcontrols.htm");
+		_assembly = Assembly.GetExecutingAssembly();
 
-if(_htmlStream != null)
 
-{
 
-this.htmluiControl1.LoadHTML(_htmlStream);
+				// Loads the specified manifest resource from the Assembly
 
-success = true;
+		_htmlStream = (Stream)_assembly.GetManifestResourceStream("HTMLUICustomControls.customcontrols.htm");
 
-}
+		if(_htmlStream != null)
 
-}
+		{
 
-catch(Exception ex)
+		this.htmluiControl1.LoadHTML(_htmlStream);
 
-{
+		success = true;
 
-MessageBox.Show(ex.ToString());
+		}
 
-}
+		}
 
-return success;
+		catch(Exception ex)
 
-}
+		{
 
-{{ '![](Getting-Started_images/Getting-Started_img7.jpeg)' | markdownify }}
-{:.image }
+		MessageBox.Show(ex.ToString());
+
+		}
+
+		return success;
+
+		}
+
+   ~~~
+   {:.prettyprint }
+		
+		
+![](Getting-Started_images/Getting-Started_img7.jpeg)
+
 
 

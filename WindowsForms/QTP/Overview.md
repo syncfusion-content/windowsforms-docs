@@ -25,8 +25,8 @@ Essential QuickTest Professional contains custom libraries, which help HP QuickT
 
 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
+
 
 
 
@@ -43,37 +43,37 @@ This section provides details about installing and configuring Essential QuickTe
 
 
 
-Samples and Locations
+### Samples and Locations
 
 This section provides the location of the installed samples, source code location, and the location of the assemblies for the source.
 
 
 
-Licensing, Patches and Uninstallation
+### Licensing, Patches and Uninstallation
 
 This section covers information on licensing and patches. It also covers the uninstallation process.
 
 
 
-Assembly information
+### Assembly information
 
 This section provides details about the assembly name, type name, and control type in table format. This table is used to write the swfconfig file.
 
 
 
-Frequently Asked Questions
+### Frequently Asked Questions
 
 This section comprises an assembled list of questions and answers to provide expert solutions on the product and its usage for every control that is supported.
 
 
 
-Known Issues
+### Known Issues
 
 This section lists existing issues with the product that have not yet been solved.
 
 
 
-Supported Controls
+### Supported Controls
 
 Essential QuickTest Professional supports only certain methods exclusive to each control. This section lists these controls and their methods.
 
@@ -83,7 +83,7 @@ This section covers the requirements that are mandatory for installing Essential
 
 
 
-Prerequisites
+### Prerequisites
 
 The following are the prerequisites:
 
@@ -105,7 +105,7 @@ Essential Studio (User Interface edition – Windows Forms) of the same version 
 </table>
 
 
-Compatibility
+### Compatibility
 
 Essential QuickTest Professional is compatible with the following operating systems:
 
@@ -115,7 +115,18 @@ Essential QuickTest Professional is compatible with the following operating syst
 <tr>
 <td>
 Operating Systems</td><td>
-* Microsoft Windows 8.1 ((32 bit and 64 bit)* Microsoft Windows 8  ((32 bit and 64 bit)* Microsoft Windows Server 2013 (32 bit and 64 bit)* Microsoft Windows Server 2012 (32 bit and 64 bit)* Microsoft Windows Server 2008 (32 bit and 64 bit)* Microsoft Windows Server 2003 (32 bit and 64 bit)* Microsoft Windows Vista (32 bit and 64 bit)* Microsoft Windows XP</td></tr>
+<ul>
+<li> Microsoft Windows 8.1 ((32 bit and 64 bit)</li>
+<li> Microsoft Windows 8  ((32 bit and 64 bit)/li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
+<li> Microsoft Windows Server 2012 (32 bit and 64 bit)/li>
+<li> Microsoft Windows Server 2008 (32 bit and 64 bit)/li>
+<li> Microsoft Windows Server 2003 (32 bit and 64 bit)/li>
+<li> Microsoft Windows Vista (32 bit and 64 bit)/li>
+<li> Microsoft Windows XP</li><<ul>/td><
 </table>
 
 

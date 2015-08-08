@@ -11,11 +11,7 @@ documentation: ug
 
 Bookmarks feature is enabled in the HTMLUI control. This allows the user to switch to particular references in the page when the link is clicked. The HTMLUI control has another functionality of referring bookmarks which is, referring them not only in the same page, but also in other pages.
 
-
-
-[HTML]
-
-
+{% highlight html %}
 
 <html>
 
@@ -35,12 +31,14 @@ Bookmarks feature is enabled in the HTMLUI control. This allows the user to swit
 
 </html>
 
+{% endhighlight %}
+
 The following image shows the bookmarks implemented using HTMLUI.
 
 
 
-{{ '![](HTML-Bookmarks_images/HTML-Bookmarks_img1.png)' | markdownify }}
-{:.image }
+![](HTML-Bookmarks_images/HTML-Bookmarks_img1.png)
+
 
 
 ## HTMLUI Bookmarks Sample
@@ -49,8 +47,8 @@ This sample illustrates the implementation of Bookmarks in HTMLUI.
 
 
 
-{{ '![](HTML-Bookmarks_images/HTML-Bookmarks_img2.jpeg)' | markdownify }}
-{:.image }
+![](HTML-Bookmarks_images/HTML-Bookmarks_img2.jpeg)
+
 
 
 

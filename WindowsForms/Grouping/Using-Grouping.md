@@ -17,9 +17,7 @@ In this lesson, you will start working with the Grouping.Engine object to see ho
 
 You will now look at the property that holds the schema information that is associated with the data, i.e., the grouping.Engine.TableDescriptor property. For example, the TableDescriptor.Columns property holds a collection of ColumnDescriptor objects that define the schema information on the columns in the data. 
 
-> {{ '![C:/Users/ApoorvahR/Desktop/Note.png](Using-Grouping_images/Using-Grouping_img1.png)' | markdownify }}
-{:.image }
-_Note: Here, the columns correspond to the public properties in our sample MyObject class, A, B, C, and D._
+> Note: Here, the columns correspond to the public properties in our sample MyObject class, A, B, C, and D.
 
 
 
@@ -29,75 +27,75 @@ We will now continue using the same sample created in the previous section and a
 
 
 
-[C#]
+   ~~~ cs
 
 
 
-// Group on property C.
+		// Group on property C.
 
-groupingEngine.TableDescriptor.GroupedColumns.Add("C");
-
-
-
-// Display the records in the engine after grouping.
-
-foreach(Record rec in groupingEngine.Table.Records)
-
-{
-
-       MyObject obj = rec.GetData() as MyObject;
-
-       if(obj != null)
-
-       {
-
-         Console.WriteLine(obj);
-
-       }
-
-}
+		groupingEngine.TableDescriptor.GroupedColumns.Add("C");
 
 
 
-[VB.NET]
+		// Display the records in the engine after grouping.
+
+		foreach(Record rec in groupingEngine.Table.Records)
+
+		{
+
+			   MyObject obj = rec.GetData() as MyObject;
+
+			   if(obj != null)
+
+			   {
+
+				 Console.WriteLine(obj);
+
+			   }
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+
+		' Group on property C.
+
+		groupingEngine.TableDescriptor.GroupedColumns.Add("C")
 
 
 
-' Group on property C.
+		' Display the records in the engine after grouping.
 
-groupingEngine.TableDescriptor.GroupedColumns.Add("C")
+		For Each rec In groupingEngine.Table.Records
 
+			Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
+			If Not (obj Is Nothing) Then
 
-' Display the records in the engine after grouping.
+				   Console.WriteLine(obj)
 
-For Each rec In groupingEngine.Table.Records
+			End If
 
-    Dim obj As MyObject = CType(rec.GetData(), MyObject)
+		Next rec
 
-    If Not (obj Is Nothing) Then
-
-           Console.WriteLine(obj)
-
-    End If
-
-Next rec
-
-
+   ~~~
+   {:.prettyprint }
 
 2. After running the code from step 1, a screen similar to the one below will be displayed. Note that the bottom list displayed is now sorted by column C. This is a one side effect of grouping by column C.
 
 
 
-{{ '![](Using-Grouping_images/Using-Grouping_img2.png)' | markdownify }}
-{:.image }
+![](Using-Grouping_images/Using-Grouping_img2.png)
+
 
 
 ### The Grouping.TableDescriptor Class
 
 As noted previously, the grouping.TableDescriptor is the property that maintains the schema information for the data source. Here is a table showing some collections in the TableDescriptor that you will be using as the lessons continue.
 
-_Table_ _5__: TableDescriptor Property_
+_Table_ _5_: TableDescriptor Property
 
 <table>
 <tr>
@@ -125,6 +123,7 @@ Holds information on columns that are part of filters. </td></tr>
 SortedColumns </td><td>
 Holds sorted properties. </td></tr>
 </table>
+
 ## Accessing a Particular Group
 
 Grouping is a recursive process whereby a data source may be grouped several times. This leads to the recursive situation of groups having sub-groups and so on. In recursion, there is usually some primary node or initial starting point that you use, to work with the recursive objects. In Grouping, the initial starting point is Engine.Table.TopLevelGroup. This is the 'primary' Group object.
@@ -143,215 +142,208 @@ Your first task is to add a recursive method to either display records if the Gr
 
 4. Add the following code below the Main method to implement a recursive method to display records in a Group.
 
+   ~~~ cs
 
+		private static void ShowRecordsUnderGroup(Group g)
 
-[C#]
+		{
 
+				if(g.Records != null && g.Records.Count > 0)
 
+				{
 
-private static void ShowRecordsUnderGroup(Group g)
 
-{
 
-        if(g.Records != null && g.Records.Count > 0)
+					 // Displaying the data for all the records in each group.
 
-        {
+					 foreach(Record rec in g.Records)
 
+					  {
 
+							  MyObject obj = rec.GetData() as MyObject;
 
-             // Displaying the data for all the records in each group.
+							  if(obj != null)
 
-             foreach(Record rec in g.Records)
+							  {
 
-              {
+								  Console.WriteLine(obj);
 
-                      MyObject obj = rec.GetData() as MyObject;
+							  }
 
-                      if(obj != null)
+					   }
 
-                      {
+						Console.WriteLine("--");
 
-                          Console.WriteLine(obj);
+				}
 
-                      }
+				else if(g.Groups != null && g.Groups.Count > 0)
 
-               }
+				{
 
-                Console.WriteLine("--");
 
-        }
 
-        else if(g.Groups != null && g.Groups.Count > 0)
+						 // Iterating through the groups.
 
-        {
+						 foreach(Group g1 in g.Groups)
 
+						 {
 
 
-                 // Iterating through the groups.
 
-                 foreach(Group g1 in g.Groups)
+							 // Recursive call
 
-                 {
+							 ShowRecordsUnderGroup(g1); 
 
+						 }
 
+				 }
 
-                     // Recursive call
+		  }
 
-                     ShowRecordsUnderGroup(g1); 
+   ~~~
+   {:.prettyprint }
 
-                 }
+   ~~~ vbnet
 
-         }
+		Private Sub ShowRecordsUnderGroup(ByVal g As Group)
 
-  }
+				If Not (g.Records Is Nothing) And g.Records.Count > 0 Then
 
+					Dim rec As Record
 
 
-[VB.NET]
 
+					' Displaying the data for all the records in each group.
 
+					For Each rec In g.Records
 
-Private Sub ShowRecordsUnderGroup(ByVal g As Group)
+						Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-        If Not (g.Records Is Nothing) And g.Records.Count > 0 Then
+						If Not (obj Is Nothing) Then
 
-            Dim rec As Record
+							Console.WriteLine(obj)
 
+						End If
 
+					Next rec
 
-            ' Displaying the data for all the records in each group.
+					Console.WriteLine("--")
 
-            For Each rec In g.Records
+				Else
 
-                Dim obj As MyObject = CType(rec.GetData(), MyObject)
+					If Not (g.Groups Is Nothing) And g.Groups.Count > 0 Then
 
-                If Not (obj Is Nothing) Then
+						Dim g1 As Group
 
-                    Console.WriteLine(obj)
 
-                End If
 
-            Next rec
+						' Iterating through the groups.
 
-            Console.WriteLine("--")
+						For Each g1 In g.Groups
 
-        Else
 
-            If Not (g.Groups Is Nothing) And g.Groups.Count > 0 Then
 
-                Dim g1 As Group
+							' Recursive call
 
+							ShowRecordsUnderGroup(g1) 
 
+						Next g1
 
-                ' Iterating through the groups.
+					End If
 
-                For Each g1 In g.Groups
+				End If
 
 
 
-                    ' Recursive call
+		   ' ShowRecordsUnderGroup
 
-                    ShowRecordsUnderGroup(g1) 
+		End Sub 
 
-                Next g1
-
-            End If
-
-        End If
-
-
-
-   ' ShowRecordsUnderGroup
-
-End Sub 
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Once you have your ShowRecordsUnderGroup method, you only have to retrieve a particular group from the Groups collection and then call the method. So, after grouping on property C, you can view all the records whose Category is "c1" using the code like the one given below the Main method.
 
 
+   ~~~ cs
 
-[C#]
+		// Get the Group associated with the value "c1".
 
+		Group g = groupingEngine.Table.TopLevelGroup.Groups["c1"];
 
-
-// Get the Group associated with the value "c1".
-
-Group g = groupingEngine.Table.TopLevelGroup.Groups["c1"];
-
-ShowRecordsUnderGroup(g);
+		ShowRecordsUnderGroup(g);
 
 
 
-// Pause
+		// Pause
 
-Console.ReadLine(); 
+		Console.ReadLine(); 
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-[VB.NET]
+		' Get the Group associated with the value "c1".
 
+		Dim g As Group = groupingEngine.Table.TopLevelGroup.Groups("c1")
 
-
-' Get the Group associated with the value "c1".
-
-Dim g As Group = groupingEngine.Table.TopLevelGroup.Groups("c1")
-
-ShowRecordsUnderGroup(g)
-
-
-
-' Pause
-
-Console.ReadLine() 
+		ShowRecordsUnderGroup(g)
 
 
 
-{{ '![](Using-Grouping_images/Using-Grouping_img3.png)' | markdownify }}
-{:.image }
+		' Pause
+
+		Console.ReadLine() 
+
+   ~~~
+   {:.prettyprint }
+
+![](Using-Grouping_images/Using-Grouping_img3.png)
+
 
 
 6. Similar code can be used to display all the records by passing the 'primary' group to your ShowRecordsUnderGroup method. To implement this, add the following code to the Main method.
 
 
 
-[C#]
+   ~~~ cs
+
+		// Show all records under the TopLevelGroup.
+
+		ShowRecordsUnderGroup(groupingEngine.Table.TopLevelGroup);
 
 
 
-// Show all records under the TopLevelGroup.
+		// Pause
 
-ShowRecordsUnderGroup(groupingEngine.Table.TopLevelGroup);
+		Console.ReadLine(); 
 
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
-// Pause
+		' Show all records under the TopLevelGroup.
 
-Console.ReadLine(); 
-
-
-
-[VB.NET]
-
-
-
-' Show all records under the TopLevelGroup.
-
-ShowRecordsUnderGroup(groupingEngine.Table.TopLevelGroup)
+		ShowRecordsUnderGroup(groupingEngine.Table.TopLevelGroup)
 
 
 
-' Pause
+		' Pause
 
-Console.ReadLine() 
-
+		Console.ReadLine() 
+		
+   ~~~
+   {:.prettyprint }
+   
 ## Adding a Summary
 
 Essential Grouping lets you summarize your data by adding SummaryDescriptor objects to the schema information that is stored in the Engine.TableDescriptor.Summaries collection. You can have multiple summaries by adding several SummaryDescriptors.
 
 At the bottom of the Main method, add this code to create a summary item for the Engine.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -365,9 +357,9 @@ SummaryDescriptor sdBInt32Agg = new SummaryDescriptor("BInt32Agg", "B", SummaryT
 
 groupingEngine.TableDescriptor.Summaries.Add(sdBInt32Agg);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -381,10 +373,9 @@ Dim sdBInt32Agg As New SummaryDescriptor("BInt32Agg", "B", SummaryType.Int32Aggr
 
 groupingEngine.TableDescriptor.Summaries.Add(sdBInt32Agg)
 
+{% endhighlight %}
 
 
-{{ '![](Using-Grouping_images/Using-Grouping_img4.jpeg)' | markdownify }}
-{:.image }
  There are several overloads of the constructor for SummaryDescriptor. Here, we are using the overload that accepts a SummaryType enum as the third argument. This SummaryType will allow you to pick out some predefined calculations such as the Int32Aggregate functions like Max, Min, Sum, and Average. There are enums that specify double, boolean, and other aggregate types. Here, we choose Int32 as that is the type of value you will see in the B property in the data.
 
 ## Retrieving Summary Values for a Particular Group
@@ -397,7 +388,7 @@ The following code snippet illustrates this.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -439,9 +430,9 @@ Console.WriteLine("c1-group {0}, {1}, {2}", int32Summary.Sum, int32Summary.Avera
 
 Console.ReadLine(); 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -477,9 +468,9 @@ Console.WriteLine("c1-group {0}, {1}, {2}", int32Summary.Sum, int32Summary.Avera
 
 Console.ReadLine() 
 
+{% endhighlight %}
 
+![](Using-Grouping_images/Using-Grouping_img5.png)
 
-{{ '![](Using-Grouping_images/Using-Grouping_img5.png)' | markdownify }}
-{:.image }
 
 

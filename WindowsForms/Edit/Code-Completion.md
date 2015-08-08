@@ -60,7 +60,7 @@ Set the UseAutocomplete property associated with the IContextChoiceController to
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -73,8 +73,8 @@ controller.UseAutocomplete = true;
 }
 
 
-
-[VB.NET]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -84,7 +84,7 @@ controller.UseAutocomplete = True
 
 End Sub
 
-
+{% endhighlight %}
 
 See Also
 
@@ -100,19 +100,19 @@ The AutoReplace Trigger keys are defined within the language definitions. This m
 
 
 
-{{ '![](Code-Completion_images/Code-Completion_img1.jpeg)' | markdownify }}
-{:.image }
-
-
-_Figure_ _12__: "for" has been incorrectly typed as "fro"_
+![](Code-Completion_images/Code-Completion_img1.jpeg)
 
 
 
-{{ '![](Code-Completion_images/Code-Completion_img2.jpeg)' | markdownify }}
-{:.image }
+_Figure_ _12_: "for" has been incorrectly typed as "fro"
 
 
-_Figure_ _13__: After typing '(' the incorrect token "fro" is replaced with the correct token "for"_
+
+![](Code-Completion_images/Code-Completion_img2.jpeg)
+
+
+
+_Figure_ _13_: After typing '(' the incorrect token "fro" is replaced with the correct token "for"
 
 
 
@@ -120,23 +120,23 @@ AutoReplace Triggers can be enabled by using the UseAutoreplaceTriggers property
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 // Enables AutoReplace Triggers.
 this.editControl1.UseAutoreplaceTriggers = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 ' Enables AutoReplace Triggers.
 Me.editControl1.UseAutoreplaceTriggers = True
 
-
+{% endhighlight %}
 
 The keys used as AutoReplace Triggers are defined by using the TriggersActivators attribute of the language in the configuration file, as shown below.
 
@@ -158,15 +158,15 @@ The words to be replaced when the AutoReplace Triggers key is pressed can be def
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 this.editControl1.Language.AutoReplaceTriggers.AddRange(new AutoReplaceTrigger[]{new AutoReplaceTrigger("tis","this"),new AutoReplaceTrigger("fro","for")});
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -188,7 +188,7 @@ The words to be replaced can also be defined within the language definition in t
 
 </AutoReplaceTriggers>
 
-
+{% endhighlight %}
 
 See Also
 

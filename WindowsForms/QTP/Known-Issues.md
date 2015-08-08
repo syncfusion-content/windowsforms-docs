@@ -7,27 +7,27 @@ control: QTP
 documentation: ug
 ---
 
-## Known Issues
+# Known Issues
 
 The following are the known issues in various platforms that are yet to be solved.
 
 
 
-### General
+## General
 
 Documentation column is not supported in the Keyword View.
 
-### Essential Grid 
+## Essential Grid 
 
 Grid does not support drop-down controls such as Combo box, Grid List control, and so on.
 
-### Essential Tools
+## Essential Tools
 
 The following are the list of tools with their respective known issues:
 
 
 
-Group Bar
+### Group Bar
 
 
 
@@ -35,7 +35,7 @@ When the Stacked Mode is set to true, the NavigationPanelButtonClick is not reco
 
 
 
-GroupView
+#### GroupView
 
 
 
@@ -43,7 +43,7 @@ When the button view is set to false, the drag-and-drop, or re-ordering, of the 
 
 
 
-DateTimePickerAdv
+#### DateTimePickerAdv
 
 
 
@@ -54,7 +54,7 @@ DateTimePickerAdv
 
 
 
-Docking Manager
+#### Docking Manager
 
 
 
@@ -63,7 +63,7 @@ Docking Manager
 
 
 
-Ribbon Control
+#### Ribbon Control
 
 
 

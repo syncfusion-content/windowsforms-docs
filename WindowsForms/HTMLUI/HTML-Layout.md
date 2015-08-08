@@ -26,16 +26,16 @@ The following figure shows a form based dialog that illustrates HTMLUI as a Layo
 
 
 
-{{ '![](HTML-Layout_images/HTML-Layout_img1.png)' | markdownify }}
-{:.image }
+![](HTML-Layout_images/HTML-Layout_img1.png)
+
 
 
 ## HTMLUI Chat Sample
 
 This sample illustrates how a Chat application can be implemented using HTMLUI.
 
-{{ '![](HTML-Layout_images/HTML-Layout_img2.jpeg)' | markdownify }}
-{:.image }
+![](HTML-Layout_images/HTML-Layout_img2.jpeg)
+
 
 
 

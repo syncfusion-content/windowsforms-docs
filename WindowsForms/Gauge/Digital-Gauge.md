@@ -7,13 +7,13 @@ control: Gauge
 documentation: ug
 ---
 
-## Digital Gauge
+# Digital Gauge
 
 Digital gauges are perfect for displaying alphanumeric values. All the elements in a digital gauge, including the CharacterCount, CharacterType, RoundCornerRadius, and ShowInvisibleSegments, can be fully customized with data-binding support.
 
 The digital gauge control includes the following elements: SegmentSpacing, ShowInvisibleSegments, Value, and VisualStyle. All the elements are optional for displaying the value. 
 
-Feature Summary
+### Feature Summary
 
 Here is a brief overview of various features of the DigitalGauge control:
 
@@ -21,7 +21,8 @@ Here is a brief overview of various features of the DigitalGauge control:
 * VisualStyle - Allows you to specify the visual style for the digital gauge.
 * CharacterType - Provides different segment styles for the digital gauge.
 * CharacterCount - Provides the number of characters that can be displayed.
-###  Concepts and Features
+
+##  Concepts and Features
 
 
 This section illustrates the features of the digital gauge with different visual styles and sample code. It contains the following topics:
@@ -32,7 +33,8 @@ This section illustrates the features of the digital gauge with different visual
 * Segment Spacing
 * Show Invisible Segments
 * Round Corner Radius
-#### Digital Gauge Visual Style
+
+### Digital Gauge Visual Style
 
 
 Different visual styles can be applied using the VisualStyle property. The Digital Gauge control features five visual styles:
@@ -43,7 +45,7 @@ Different visual styles can be applied using the VisualStyle property. The Digit
 * Metro
 * Default
 
-_Table_ _14__: Digital Gauge Visual Style_
+_Table_ _14_: Digital Gauge Visual Style
 
 <table>
 <tr>
@@ -61,81 +63,82 @@ Gets or sets the frame type.</td></tr>
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black;
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
+{% endhighlight %}
 
+![](Digital-Gauge_images/Digital-Gauge_img1.png)
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img1.png)' | markdownify }}
-{:.image }
 
 
 
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
+{% endhighlight %}
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img2.png)' | markdownify }}
-{:.image }
+![](Digital-Gauge_images/Digital-Gauge_img2.png)
+
 
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver
 
+{% endhighlight %}
 
 
+![](Digital-Gauge_images/Digital-Gauge_img3.png)
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img3.png)' | markdownify }}
-{:.image }
 
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img4.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img4.png)' | markdownify }}
-{:.image }
 
-
-##### Character Type
+#### Character Type
 
 Character types are used to customize the digital segments. 
 
@@ -143,7 +146,7 @@ Customizing Scales
 
 You can customize the segments in the digital gauge using the following property:
 
-_Table_ _15__: Customizing Scales_
+_Table_ _15_: Customizing Scales_
 
 <table>
 <tr>
@@ -165,129 +168,130 @@ Different segments can be applied using the CharacterType property. The digital 
 * Seven segments
 * Fourteen segments
 * Sixteen segments
-##### Dot Matrix
+
+#### Dot Matrix
 
 
 In a digital gauge, the value can be displayed in dot matrix format by setting the character type as DotMatrixSegment.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.DotMatrixSegment;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.DotMatrixSegment
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img5.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img5.png)' | markdownify }}
-{:.image }
 
-
-##### Seven Segments
+#### Seven Segments
 
 In a digital gauge, the value can be displayed in a seven-segment format by setting the character type as SevenSegment.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SevenSegment;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SevenSegment
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img6.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img6.png)' | markdownify }}
-{:.image }
 
-
-##### Fourteen Segments
+#### Fourteen Segments
 
 In a digital gauge, the value can be displayed in a fourteen-segment format by setting the character type as FourteenSegment.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.FourteenSegment;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.FourteenSegment
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img7.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img7.png)' | markdownify }}
-{:.image }
 
 
 
-
-##### Sixteen Segments
+#### Sixteen Segments
 
 In a digital gauge, the value can be displayed in a sixteen-segment format by setting the character type as SixteenSegment.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SixteenSegment;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SixteenSegment
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img8.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img8.png)' | markdownify }}
-{:.image }
 
-
-### Character Count
+## Character Count
 
 The CharacterCount property can be used to restrict the number of characters that can be displayed in a digital gauge.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.CharacterCount = 4;
 
 this.digitalGauge1.Value = “123456”;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.CharacterCount = 4
 Me.digitalGauge1.Value = 123456
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img9.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img9.png)' | markdownify }}
-{:.image }
 
-
-### Segment Spacing
+## Segment Spacing
 
 The SegmentSpacing property is used to determine the spacing between the characters displayed in the digital gauge.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
   this.digitalGauge1.CharacterCount = 2;
 
@@ -295,72 +299,72 @@ Code Sample
 
   this.digitalGauge1.Value = “123456”;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.CharacterCount = 2
 
 Me.digitalGauge1.OverrideFontSize = false
 Me.digitalGauge1.Value = 123456
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img10.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img10.png)' | markdownify }}
-{:.image }
 
-
-### Show Visible Segements 
+## Show Visible Segements 
 
 The ShowInvisibleSegments property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to false.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.ShowInvisibleSegments = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
  Me.digitalGauge1.ShowInvisibleSegments = true
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img11.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img11.png)' | markdownify }}
-{:.image }
 
-
-### RoundCornerRadius
+## RoundCornerRadius
 
 The RoundCornerRadius property of the digital gauge is used to draw digital gauge with rounded edges.
 
 Code Sample
 
-[C#]
+{% highlight c# %}
 
 this.digitalGauge1.RoundCornerRadius = 50;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Me.digitalGauge1.RoundCornerRadius = 50
 
+{% endhighlight %}
+
+![](Digital-Gauge_images/Digital-Gauge_img12.png)
 
 
-{{ '![](Digital-Gauge_images/Digital-Gauge_img12.png)' | markdownify }}
-{:.image }
 
-
-### Data Binding
+## Data Binding
 
 You can bind any data source to the digital gauge and map an index of a record to represent the actual value in the gauge. The DisplayMember and DisplayRecordIndex properties map the DataColumn and DataRow of the bound data source, respectively, to the Gauge control. Data-bound gauges support high frequency data updates.
 
 Example
 
-
+{% highlight c# %}
 
 this.digitalGauge1.DataSource = dataTable;
 
@@ -368,5 +372,5 @@ this.digitalGauge1.DataSource = dataTable;
 
             this.digitalGauge1.DisplayMember = [column name];
 
-
+{% endhighlight %}
 

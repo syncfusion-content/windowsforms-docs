@@ -15,7 +15,7 @@ The CTRL+F shortcut can also be used for enabling this feature.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23,9 +23,9 @@ The CTRL+F shortcut can also be used for enabling this feature.
 
 this.htmluiControl1.DisplayFindForm();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -33,7 +33,7 @@ this.htmluiControl1.DisplayFindForm();
 
 Me.htmluiControl1.DisplayFindForm()
 
-
+{% endhighlight %}
 
 ## HTMLUISearching Sample
 
@@ -41,7 +41,7 @@ This sample shows how a text can be searched in a document loaded into the HTMLU
 
 
 
-{{ '![](Searching_images/Searching_img1.jpeg)' | markdownify }}
-{:.image }
+![](Searching_images/Searching_img1.jpeg)
+
 
 

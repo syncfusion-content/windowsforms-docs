@@ -21,7 +21,7 @@ This section covers the requirements for using Gauge control. It also lists oper
 
 The prerequisites details are listed below:
 
-_Table_ _1__: Prerequisites Table_
+_Table_ _1_: Prerequisites Table
 
 <table>
 <tr>
@@ -30,15 +30,28 @@ Development Environments</td><td>
 .NET Framework versions</td></tr>
 <tr>
 <td>
-* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 (Ultimate and Express)* Visual Studio 2008 (Team, Professional, Standard and Express)* Visual Studio 2005 (Team, Professional, Standard and Express)* Borland Delphi for .NET* SharpCode</td><td>
-* .NET 4.5.1* .NET 4.5* .NET 4.0* .NET 3.5 * .NET 2.0</td></tr>
+<ul>
+<li> Visual Studio 2013 </li>
+<li> Visual Studio 2012 </li>
+<li> Visual Studio 2010 (Ultimate and Express)</li>
+<li> Visual Studio 2008 (Team, Professional, Standard and Express)</li>
+<li> Visual Studio 2005 (Team, Professional, Standard and Express)</li>
+<li> Borland Delphi for .NET</li>
+<li> SharpCode</li></ul></td><td>
+<ul>
+<li> .NET 4.5.1</li>
+<li> .NET 4.5</li>
+<li> .NET 4.0</li>
+<li> .NET 3.5 </li>
+<li> .NET 2.0</li></ul></td></tr>
 </table>
+
 ### Compatibility
 
 
 The compatibility details are as follows: 
 
- _Table_ _2__: Compatibility_
+ _Table_ _2_: Compatibility
 
 <table>
 <tr>
@@ -46,7 +59,14 @@ The compatibility details are as follows:
 Operating Systems</td></tr>
 <tr>
 <td>
-* Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2013 (32 bit and 64 bit)* Windows Server 2012 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)</td></tr>
+</ul>
+<li> Windows 8.1 (32 bit and 64 bit)</li>
+<li> Windows 8 (32 bit and 64 bit)</li>
+<li> Windows Server 2013 (32 bit and 64 bit)</li>
+<li> Windows Server 2012 (32 bit and 64 bit)</li>
+<li> Windows Server 2008 (32 bit and 64 bit)</li>
+<li> Windows 7 (32 bit and 64 bit)</li>
+<li> Windows Vista (32 bit and 64 bit)</li></ul></td></tr>
 </table>
 
 

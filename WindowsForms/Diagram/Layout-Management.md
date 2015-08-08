@@ -29,7 +29,7 @@ The model and the number of rows and column values are passed as parameters to t
 
 
 
-_Table_ _33__: Table Layout Manager_
+_Table_ _33_: Table Layout Manager
 
 <table>
 <tr>
@@ -71,7 +71,7 @@ Programmatically, the table layout manager instance should be created with the r
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -105,9 +105,9 @@ documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
 documentExplorer1.ShowNodeToolTips = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -141,16 +141,16 @@ documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 documentExplorer1.ShowNodeToolTips = True
 
+{% endhighlight %}
+
+![](Layout-Management_images/Layout-Management_img1.jpeg)
 
 
-{{ '![](Layout-Management_images/Layout-Management_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
+![](Layout-Management_images/Layout-Management_img2.jpeg)
 
-{{ '![](Layout-Management_images/Layout-Management_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -167,7 +167,7 @@ The parameters to be defined for the DirectedTreeLayoutManager class are listed 
 
 
 
-_Table_ _34__: DirectedTreeLayoutManager_
+_Table_ _34_: DirectedTreeLayoutManager
 
 <table>
 <tr>
@@ -197,7 +197,7 @@ Programmatically, the directed tree layout manager instance is created with the 
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -207,9 +207,9 @@ diagram1.LayoutManager = directedLayout;
 
 diagram1.LayoutManager.UpdateLayout(null);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -219,37 +219,37 @@ diagram1.LayoutManager = directedLayout;
 
 diagram1.LayoutManager.UpdateLayout(null);
 
-
+{% endhighlight %}
 
 Sample Diagrams are as follows.
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img3.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Management_images/Layout-Management_img3.jpeg)
 
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img4.png)' | markdownify }}
-{:.image }
+
+![](Layout-Management_images/Layout-Management_img4.png)
 
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img5.jpeg)' | markdownify }}
-{:.image }
+
+![](Layout-Management_images/Layout-Management_img5.jpeg)
 
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img6.jpeg)' | markdownify }}
-{:.image }
+
+![](Layout-Management_images/Layout-Management_img6.jpeg)
 
 
 
 
-_Figure_ _82__: Right-to- Left with 90 degree Rotation Angle_
+
+_Figure_ _82_: Right-to- Left with 90 degree Rotation Angle
 
 ### Radial Tree Layout Manager
 
@@ -261,7 +261,7 @@ The following parameters need should be specified for the RadialTreeLayoutManage
 
 
 
-_Table_ _35__: RadialTreeLayoutManager_
+_Table_ _35_: RadialTreeLayoutManager
 
 <table>
 <tr>
@@ -291,7 +291,7 @@ Programmatically, the radial tree layout manager instance is created with the re
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -301,9 +301,9 @@ this.diagram1.LayoutManager=radialLayout;
 
 this.diagram1.LayoutManager.UpdateLayout(null);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -313,20 +313,20 @@ Me.diagram1.LayoutManager = radialLayout
 
 Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
-
+{% endhighlight %}
 
 Sample Diagram is as follows.
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img7.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Management_images/Layout-Management_img7.jpeg)
 
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img8.jpeg)' | markdownify }}
-{:.image }
+
+![](Layout-Management_images/Layout-Management_img8.jpeg)
+
 
 
 ### Symmetric Layout Manager
@@ -337,7 +337,7 @@ The Model and Vertical Distance values are passed as parameters to the Symmetric
 
 
 
-_Table_ _36__: SymmetricLayoutManager_
+_Table_ _36_: SymmetricLayoutManager
 
 <table>
 <tr>
@@ -371,7 +371,7 @@ Programmatically, the symmetric layout manager instance is created with the resp
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -387,9 +387,9 @@ this.diagram1.LayoutManager = symmetricLayout;
 
 this.diagram1.LayoutManager.UpdateLayout(null);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -405,20 +405,20 @@ Me.diagram1.LayoutManager = symmetricLayout
 
 Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
-
+{% endhighlight %}
 
 Sample Diagrams are as follows.
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img9.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Management_images/Layout-Management_img9.jpeg)
 
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img10.jpeg)' | markdownify }}
-{:.image }
+
+![](Layout-Management_images/Layout-Management_img10.jpeg)
+
 
 
 ### Hierarchical Layout Manager
@@ -429,7 +429,7 @@ The parameters to be passed for the HierarchicalLayoutManager class are as follo
 
 
 
-_Table_ _37__: HierarchicalLayoutManager_
+_Table_ _37_: HierarchicalLayoutManager
 
 <table>
 <tr>
@@ -459,7 +459,7 @@ Programmatically, the hierarchical layout manager instance should be created wit
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -469,9 +469,9 @@ this.diagram1.LayoutManager = hierarchyLayout;
 
 this.diagram1.LayoutManager.UpdateLayout(null);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -481,20 +481,20 @@ Me.diagram1.LayoutManager = hierarchyLayout
 
 Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
-
+{% endhighlight %}
 
 Sample diagrams are as follows:
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img11.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Management_images/Layout-Management_img11.jpeg)
 
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img12.jpeg)' | markdownify }}
-{:.image }
+
+![](Layout-Management_images/Layout-Management_img12.jpeg)
+
 
 
 ### Graph Layout Manager 
@@ -505,7 +505,7 @@ The event of the Graph Layout Manager class and its description is given below:
 
 
 
-_Table_ _38__: GraphLayoutManager_
+_Table_ _38_: GraphLayoutManager
 
 <table>
 <tr>
@@ -523,7 +523,7 @@ Programmatically, it is implemented as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -558,8 +558,8 @@ evtArgs.Size = new SizeF(100, 100);
  }
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -590,18 +590,19 @@ Private Sub dtlm_PreferredLayout(ByVal sender As Object, ByVal evtArgs As Prefer
 End Sub
 
 
+{% endhighlight %}
 
 The following is a sample Diagram showing GraphLayoutManager:
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img13.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Management_images/Layout-Management_img13.jpeg)
 
 
 
 
-_Figure_ _89__: Graph Layout Manager_
+
+_Figure_ _89_: Graph Layout Manager
 
 ### Subgraph Layout Manager 
 
@@ -631,7 +632,7 @@ Programmatically, it is implemented as follows.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -659,9 +660,9 @@ private void st_SubgraphPreferredLayout(object sender, SubgraphPreferredLayoutEv
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -685,10 +686,10 @@ Private Sub st_SubgraphPreferredLayout(ByVal sender As Object, ByVal evtArgs As 
 
 End Sub
 
+{% endhighlight %}
 
+![](Layout-Management_images/Layout-Management_img14.png)
 
-{{ '![](Layout-Management_images/Layout-Management_img14.png)' | markdownify }}
-{:.image }
 
 
 ### OrgChart Layout Manager  
@@ -697,7 +698,7 @@ Event arranges all the nodes in parent-child relationship with the new OrgLineCo
 
 
 
-_Table_ _40__: OrgChartLayoutManager_
+_Table_ _40_: OrgChartLayoutManager
 
 <table>
 <tr>
@@ -725,9 +726,7 @@ Holds the value for the vertical offset between adjacent nodes (float value).</t
 
 Programmatically, the organization layout manager instance should be created with the respective arguments, assigned to the Layout Manager and updated as follows. 
 
-
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -737,9 +736,9 @@ this.diagram1.LayoutManager = manager;
 
 this.diagram1.LayoutManager.UpdateLayout(null);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -749,40 +748,37 @@ Me.diagram1.LayoutManager = manager
 
 Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
-
+{% endhighlight %}
 
 Sample diagram is as follows.
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img15.png)' | markdownify }}
-{:.image }
+![](Layout-Management_images/Layout-Management_img15.png)
 
 
 
 
-{{ '![](Layout-Management_images/Layout-Management_img16.png)' | markdownify }}
-{:.image }
+
+![](Layout-Management_images/Layout-Management_img16.png)
 
 
 
 
-OrgChart Alignment
+
+### OrgChart Alignment
 
 As the OrgChartLayout follows a Waterfall model, whenever there is only one child node, the layout will be widened. To overcome this, Essential diagram enables you to align the single child node parallel to the parent node, which will reduce the layout structure.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
 OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, RotateDirection.TopToBottom, 20, 50, LayoutType.Waterfall, 1, true);
 
-
-
-[VB]
-
+{% endhighlight %}
 
 
 Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50,LayoutType.Waterfall, 1, True)
@@ -794,8 +790,7 @@ Margin Properties for Layout Managers
 For all the Layout Managers supported by Essential Diagram, except _Symmetric and Table Layout Manager_, it is now possible to set the left and right margins for the graph that can be laid out by the layout manager. The two new properties, i.e, TopMargin and LeftMargin of the Layout Manager will set the margin for the graph using the following code snippet.
 
 
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -806,8 +801,8 @@ manager.LeftMargin = 50;
 manager.TopMargin = 50;
 
 
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -817,15 +812,15 @@ manager.LeftMargin = 50
 
 manager.TopMargin = 50
 
+{% endhighlight %}
 
-
-Improving performance
+### Improving performance
 
 The performance of most of the Essential Diagram Layout Managers is now improved to a great extent. The time taken for laying out a diagram, using a Layout Manager can now be reduced by setting the ImprovePerformance property to _true_.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -833,9 +828,9 @@ OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, Ro
 
 manager.ImprovePerformance = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -843,5 +838,5 @@ Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToB
 
 manager.ImprovePerformance = True
 
-
+{% endhighlight %}
 

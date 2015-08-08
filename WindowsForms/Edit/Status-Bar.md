@@ -22,11 +22,11 @@ The Edit control provides support to include a built-in status bar at the bottom
 
 
 
-{{ '![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_76.png](Status-Bar_images/Status-Bar_img1.png)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_76.png](Status-Bar_images/Status-Bar_img1.png)
 
 
-_Figure_ _73__: Status Bar and Status Bar Panels in the Edit Control_
+
+_Figure_ _73_: Status Bar and Status Bar Panels in the Edit Control
 
 
 
@@ -34,7 +34,7 @@ _Figure_ _73__: Status Bar and Status Bar Panels in the Edit Control_
 
 
 
-Status Bar Settings
+## Status Bar Settings
 
 The StatusBarSettings property consists of the following subproperties, which can be used to customize the appearance and visibility of the status bar and its panels.
 
@@ -87,37 +87,37 @@ Gets or sets the visibility of the status bar sizing grip. The options provided 
 
 
 
-[C#]
+{% highlight c# %}
 
  // Set the visibility of the status bar sizing grip.
 
 this.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
  ' Set the visibility of the status bar sizing grip.
 
 Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible
 
+{% endhighlight %}
 
-
-{{ '![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_77.png](Status-Bar_images/Status-Bar_img2.png)' | markdownify }}
-{:.image }
-
-
-_Figure_ _74__: Sizing Gripper in the Status Bar_
+![http://help.syncfusion.com/ug/windows%20forms/edit/ImagesExt/image9_77.png](Status-Bar_images/Status-Bar_img2.png)
 
 
 
-Visibility Settings 
+_Figure_ _74_: Sizing Gripper in the Status Bar
+
+
+
+### Visibility Settings 
 
 The StatusBar feature in the Edit control can be turned on by setting the StatusBarSettings.Visible property to True. By default, this property is set to False. The individual Status Bar Panels can be optionally shown or hidden by using the Visible property corresponding to the respective panel.
 
 
 
-[C#]
+{% highlight c# %}
 
  this.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible;
 
@@ -129,9 +129,9 @@ this.editControl1.StatusBarSettings.Visible = true;
 
 this.editControl1.StatusBarSettings.TextPanel.Visible = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
  Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible 
 
@@ -147,9 +147,10 @@ Me.editControl1.StatusBarSettings.Visible = True
 
 Me.editControl1.StatusBarSettings.TextPanel.Visible = True
 
+{% endhighlight %}
 
 
-Visual Styles
+### Visual Styles
 
 The Edit control status bar provides three different visual styles in addition to a default style:
 
@@ -162,25 +163,25 @@ The Edit control status bar provides three different visual styles in addition t
 
 
 
-[C#]
+{% highlight c# %}
 
  this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007; 
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007
 
 
+{% endhighlight %}
 
 
 
 
-
-_Figure_ _75__: Edit Control with Office2007 Visual Style_
+_Figure_ _75_: Edit Control with Office2007 Visual Style
 
 
 
@@ -194,7 +195,7 @@ Both the Office2007 and Office2010 styles have three color schemes:
 
 
 
-[C#]
+{% highlight c# %}
 
 //Offcie2007
 
@@ -206,9 +207,9 @@ Both the Office2007 and Office2010 styles have three color schemes:
 
 this.editControl1.StatusBarSettings.Offcie2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
  //Offcie2007
 
@@ -220,11 +221,11 @@ this.editControl1.StatusBarSettings.Offcie2007ColorScheme = Syncfusion.Windows.F
 
 Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
+{% endhighlight %}
 
 
 
-
-_Figure_ _76__: Edit Control with Office 2007 Visual Style and Blue Color Scheme_
+_Figure_ _76_: Edit Control with Office 2007 Visual Style and Blue Color Scheme
 
 
 

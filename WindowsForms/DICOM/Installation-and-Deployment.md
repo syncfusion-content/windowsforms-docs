@@ -7,9 +7,9 @@ control: DICOM
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
-### Installation
+## Installation
 
 For step-by-step installation procedure of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG:
 
@@ -25,7 +25,7 @@ For licensing, patches and information on adding or removing selective component
 
 
 
-### Deployment Requirements
+## Deployment Requirements
 
 While deploying an application that references Syncfusion Essential DICOM assembly, the following dependencies must be included in the distribution.
 
