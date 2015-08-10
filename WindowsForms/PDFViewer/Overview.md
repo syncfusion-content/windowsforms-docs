@@ -21,8 +21,8 @@ The user can embed the PDF viewer within the .NET application using this feature
 
 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
+
 
 
 ## Prerequisites and Compatibility
@@ -64,8 +64,8 @@ Compatibility
 <table>
 <tr>
 <td>
-Type of Documentation</td><td>
-Location</td></tr>
+{{ '**Type of Documentation**' | markdownify }}</td><td>
+{{ '**Location**' | markdownify }}</td></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -78,7 +78,7 @@ ReleaseNotes: [drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the PDF Viewer for Windows Forms User Guide.)> ![](Overview_images/Overview_img2.jpeg)
-{:.image }
+
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>

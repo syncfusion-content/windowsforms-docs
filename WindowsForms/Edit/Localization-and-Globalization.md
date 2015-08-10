@@ -36,10 +36,8 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
 
 1. The neutral resource of every Syncfusion Edit Control is present in the Localization folder of Edit.Windows source code. Assume that C:\Program Files\ is the installation path for the Syncfusion components. Here is the path:
-
-
-
-_C:\Program Files\Syncfusion\Essential Studio\x.x.x.x\Windows\Edit.Windows\Src\LocalizationSet v1.1_
+   
+   _C:\Program Files\Syncfusion\Essential Studio\x.x.x.x\Windows\Edit.Windows\Src\LocalizationSet v1.1_
 
 
 
@@ -48,10 +46,8 @@ _C:\Program Files\Syncfusion\Essential Studio\x.x.x.x\Windows\Edit.Windows\Src\L
 
 
 3. Open WinRes from the following location:
-
-
-
-C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\bin\winRes.exe
+   
+   C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\bin\winRes.exe
 
 
 
@@ -60,18 +56,12 @@ C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\bin\winRes.exe
 
 
 5. Open the resources using the WinRes utility, and replace the English strings with the culture equivalent.
-
-
-
-For example, the following figure shows the Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog.resources file that is opened in the WinRes tool, showing strings in German (strings are converted using some language converter).
-
-
-
-![](Localization-and-Globalization_images/Localization-and-Globalization_img3.jpeg)
-
-
-
-_Figure_ _82_: Replacing strings in English to German by using the WinRes Utility
+   
+   For example, the following figure shows the Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog.resources file that is opened in the WinRes tool, showing strings in German (strings are converted using some language converter).
+   
+   ![](Localization-and-Globalization_images/Localization-and-Globalization_img3.jpeg)
+   
+   _Figure_ _82_: Replacing strings in English to German by using the WinRes Utility
 
 
 
@@ -84,10 +74,8 @@ _Figure_ _82_: Replacing strings in English to German by using the WinRes Utilit
 
 
 8. Now, in the Visual Studio.NET 2005 Command Prompt, type the following command, and then press ENTER. Make sure that you have the sf.publicsnk file from the Localization folder.
-
-
-
-al /t:lib /culture:de-DE /out:Syncfusion.Edit.Windows.resources.dll /v:1.0.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog.de-DE.resources
+   
+   al /t:lib /culture:de-DE /out:Syncfusion.Edit.Windows.resources.dll /v:1.0.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog.de-DE.resources
 
 
 
@@ -107,7 +95,7 @@ al /t:lib /culture:de-DE /out:Syncfusion.Edit.Windows.resources.dll /v:1.0.0.0 /
 
 
 
-sn –Vr Syncfusion.Edit.Windows.resources.dll
+    sn –Vr Syncfusion.Edit.Windows.resources.dll
 
 
 
@@ -119,7 +107,7 @@ sn –Vr Syncfusion.Edit.Windows.resources.dll
 
 
 
-System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE"); 
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE"); 
 
 
 
@@ -127,11 +115,11 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalizatio
 
 
 
-![](Localization-and-Globalization_images/Localization-and-Globalization_img4.jpeg)
+    ![](Localization-and-Globalization_images/Localization-and-Globalization_img4.jpeg)
 
 
 
-_Figure_ _83_: Find dialog box localized to German
+    _Figure_ _83_: Find dialog box localized to German
 
 
 

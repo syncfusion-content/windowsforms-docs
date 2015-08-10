@@ -37,8 +37,8 @@ To view the samples:
 
 
 
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
-{:.image }
+  ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+
 
 
 
@@ -52,39 +52,32 @@ Windows Forms
 
 
 1. Click the drop-down button of the Windows platform. The following options are displayed and you can view the samples in the following three ways:
-
-
-
-* Run Samples - View the locally installed PdfViewer samples for Windows using the sample browser
-* Online Samples-View the online PdfViewer samples for Windows
-* Explore Samples-Locate the samples for PdfViewer on the disk
+   
+   * Run Samples - View the locally installed PdfViewer samples for Windows using the sample browser
+   * Online Samples-View the online PdfViewer samples for Windows
+   * Explore Samples-Locate the samples for PdfViewer on the disk
 
 
 
 2. Click Run Samples link. Essential Studio Reporting Edition Windows Forms sample browser is displayed.
+   
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
-{:.image }
 
 
 
 
 3. Click PDFViewer from the bottom-left pane.
-
-
-
-{{ '![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
-{:.image }
-
-
-
-
-A list of samples is displayed on the left pane. 
+   
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   
+   A list of samples is displayed on the left pane. 
 
 4. Select any sample and browse through the features.
+
 5. For running the sample, click Run Sample icon in the right pane.
+
+
 ### Deployment Procedures 
 
 #### Deployment Requirements
@@ -96,10 +89,13 @@ The required assemblies are:
 * Syncfusion.Compression.Base.dll
 * Syncfusion.Pdf.Base.dll
 * Syncfusion.PdfViewer.Windows.dll
+
+
 #### Default Deployment Pattern
 
 
 For step-by-step installation procedure of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
+
 
 #### Fast Deployment Pattern 
 

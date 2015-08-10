@@ -24,10 +24,10 @@ _Table_ _1__: 	Supported and non-supported elements_
 <table>
 <tr>
 <td>
-Features</td><td>
-Windows</td><td>
-WPF</td><td>
-ASP.NET MVC</td></tr>
+{{ '**Features**' | markdownify }}</td><td>
+{{ '**Windows**' | markdownify }}</td><td>
+{{ '**WPF**' | markdownify }}</td><td>
+{{ '**ASP.NET MVC**' | markdownify }}</td></tr>
 <tr>
 <td>
 Text</td><td>
@@ -42,7 +42,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td colspan = "4">
-Image Formats</td></tr>
+{{ '**Image Formats**' | markdownify }}</td></tr>
 <tr>
 <td>
 JPEG</td><td>
@@ -69,7 +69,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td colspan = "4">
-Encoding Techniques</td></tr>
+{{ '**Encoding Techniques**' | markdownify }}</td></tr>
 <tr>
 <td>
 Soft mask</td><td>
@@ -84,7 +84,7 @@ No</td><td>
 No</td></tr>
 <tr>
 <td colspan = "4">
-Fonts </td></tr>
+{{ '**Fonts**' | markdownify }}</td></tr>
 <tr>
 <td>
 Standard Fonts</td><td>
@@ -111,7 +111,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td colspan = "4">
-Color Space</td></tr>
+{{ '**Color Space**' | markdownify }}</td></tr>
 <tr>
 <td>
 RGB</td><td>
@@ -180,7 +180,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td colspan = "4">
-Compression Filters</td></tr>
+{{ '**Compression Filters**' | markdownify }}</td></tr>
 <tr>
 <td>
 DCTDecode (Image, Content)</td><td>
@@ -225,7 +225,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td colspan = "4">
-Interactive Features</td></tr>
+{{ '**Interactive Features**' | markdownify }}</td></tr>
 <tr>
 <td>
 Actions</td><td>
@@ -318,7 +318,7 @@ Yes***</td><td>
 No</td></tr>
 <tr>
 <td colspan = "4">
-Print</td></tr>
+{{ '**Print**' | markdownify }}</td></tr>
 <tr>
 <td>
 Silent Printing</td><td>
@@ -333,7 +333,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td colspan = "4">
-Export</td></tr>
+{{ '**Export**' | markdownify }}</td></tr>
 <tr>
 <td>
 Image </td><td>
@@ -354,11 +354,9 @@ To add a PDF Viewer control to your application:
 
 
 1. Open your form in the designer. Add the Syncfusion controls to yourVS.NET toolbox if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
+   
+   ![](Getting-Started_images/Getting-Started_img1.png)
 
-
-
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
 
 
 
@@ -367,64 +365,46 @@ To add a PDF Viewer control to your application:
 
 
 
-Appearance and behavior-related aspects of the PDF Viewer can be controlled by setting the appropriate properties through the properties grid. 
+   Appearance and behavior-related aspects of the PDF Viewer can be controlled by setting the appropriate properties through the properties grid. 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 3. Add Syncfusion.PdfViewer.Windows namespace.
-
-C#:
-
-using Syncfusion.PdfViewer.Windows;
-
-
-
-//Initializing the PDF Viewer
-
-PdfViewer viewer = new PdfViewer();
-
-
-
-//Loading the document in the PDF Viewer
-
-viewer.Load(@"c:/documents/myPDF.pdf");
-
-
-
-VB:
-
-Imports Syncfusion.PdfViewer.Windows
-
-
-
-'Initializing the Pdf Viewer
-
- Dim viewer As PdfViewer = New PdfViewer()
-
-
-
-'Loading the document in the Pdf Viewer
-
- viewer.Load("c:/documents/myPDF.pdf")
-
-
-
-Refer to Viewing PDF files for more information.
+   
+   ~~~ cs
+   using Syncfusion.PdfViewer.Windows;
+   //Initializing the PDF Viewer
+   PdfViewer viewer = new PdfViewer();
+   //Loading the document in the PDF Viewer
+   viewer.Load(@"c:/documents/myPDF.pdf");
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
+   
+   Imports Syncfusion.PdfViewer.Windows
+   'Initializing the Pdf Viewer
+   Dim viewer As PdfViewer = New PdfViewer()
+   'Loading the document in the Pdf Viewer
+   viewer.Load("c:/documents/myPDF.pdf")
+   ~~~
+   {:.prettyprint}
+   
+   Refer to Viewing PDF files for more information.
 
 ## Appearance and Structure of the Control
 
 The following screenshot is a pictorial representation of PDF Viewer. 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-ToolStrip
+### ToolStrip
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 1. File Open Dialog

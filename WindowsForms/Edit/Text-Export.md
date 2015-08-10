@@ -22,8 +22,8 @@ The following methods can implemented for this purpose.
 <table>
 <tr>
 <td>
-Edit Control Method</td><td>
-Description</td></tr>
+{{ '**Edit Control Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 SaveAsXML</td><td>
@@ -90,8 +90,8 @@ Edit Control is also capable of providing XML, RTF and HTML source code for gene
 <table>
 <tr>
 <td>
-Edit Control Method</td><td>
-Description</td></tr>
+{{ '**Edit Control Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 GetTextAsRTF</td><td>

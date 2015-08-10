@@ -20,10 +20,10 @@ _Table_ _2__: Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 EnableNotificationBar</td><td>
@@ -53,11 +53,10 @@ _Table_ _3__: Methods Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 Load</th><th>
@@ -115,10 +114,10 @@ _Table_ _4__: Events Table_
 <table>
 <tr>
 <th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th></tr>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 DocumentLoaded</th><th>
@@ -144,7 +143,7 @@ Viewing PDF Files
 
 A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the Load method. It also requests passwords to open encrypted documents.
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -158,7 +157,10 @@ PdfViewerControl pdfViewer1 = new PdfViewerControl();
 
 pdfViewer1.Load("Template.pdf");
 
+{%endhighlight%}
 
+
+{%highlight vbnet%}
 
 [VB.NET]
 
@@ -172,11 +174,11 @@ Private pdfViewer1 As New PdfViewerControl()
 
 pdfViewer1.Load("Template.pdf")
 
-
+{%endhighlight%}
 
 You can load an encrypted document by using the overload in the Load method.
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -190,7 +192,10 @@ PdfViewerControl pdfViewer1 = new PdfViewerControl();
 
 pdfViewer1.Load("Template.pdf", "password");
 
+{%endhighlight%}
 
+
+{%highlight vbnet%}
 
 [VB.NET]
 
@@ -204,7 +209,7 @@ Private pdfViewer1 As New PdfViewerControl()
 
 pdfViewer1.Load("Template.pdf", "password")
 
-
+{%endhighlight%}
 
 Printing PDF Files 
 
@@ -212,8 +217,8 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 
 
-{{ '![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)' | markdownify }}
-{:.image }
+![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
+
 
 
 _Figure_ _9__: Print Dialog displayed in PDF Viewer_
@@ -221,6 +226,8 @@ _Figure_ _9__: Print Dialog displayed in PDF Viewer_
 Silent Printing
 
 The PrintDocument property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. The following code sample demonstrates this:
+
+{%highlight c#%}
 
 [C#]
 
@@ -232,7 +239,10 @@ dialog.Document = viewer.PrintDocument;
 
 dialog.Document.Print();
 
+{%endhighlight%}
 
+
+{%highlight vbnet%}
 
 [VB.NET]
 
@@ -250,7 +260,10 @@ Exporting PDFs as Raster Images
 
 Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
 
+{%endhighlight%}
 
+
+{%highlight c#%}
 
 [C#]
 
@@ -262,7 +275,10 @@ Bitmap img = pdfViewer1.ExportAsImage(0);
 
 img.Save("Sample.png", ImageFormat.Png);
 
+{%endhighlight%}
 
+
+{%highlight vbnet%}
 
 [VB.NET]
 
@@ -274,15 +290,20 @@ Dim img As Bitmap = pdfViewer1.ExportAsImage(0)
 
 img.Save("Sample.png", ImageFormat.Png)
 
-
+{%endhighlight%}
 
 You can also specify the page range instead of converting each page.
 
+
+{%highlight c#%}
 [C#]
 
 Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
 
+{%endhighlight%}
 
+
+{%highlight vbnet%}
 
 [VB.NET]
 
@@ -291,6 +312,11 @@ Dim img() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
 Exporting PDFs as Vector Images
 
 Exporting PDFs as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a metafile.
+
+{%endhighlight%}
+
+
+{%highlight c#%}
 
 [C#]
 
@@ -302,7 +328,10 @@ Metafile img = pdfViewer1.ExportAsMetafile(0);
 
 img.Save("Sample.emf", ImageFormat.Emf);
 
+{%endhighlight%}
 
+
+{%highlight vbnet%}
 
 [VB.NET]
 
@@ -314,26 +343,32 @@ Dim img As Metafile = pdfViewer1.ExportAsMetafile(0)
 
 img.Save("Sample.emf", ImageFormat.Emf)
 
-
+{%endhighlight%}
 
 You can also specify the page range instead of converting each page individually.
+
+{%highlight c#%}
 
 [C#]
 
 Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
 
+{%endhighlight%}
 
+{%highlight vbnet%}
 
 [VB.NET]
 
 Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
+{%endhighlight%}
+
 Text Search
 
 Essential PDF Viewer allows end users to search and highlight the text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
 
-{{ '![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)' | markdownify }}
-{:.image }
+![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
+
 
 
 _Figure_ _10__: Searching a PDF_
@@ -343,6 +378,7 @@ _Figure_ _10__: Searching a PDF_
 The PDF Viewer control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the PDF Viewer control.
 
 
+{%highlight c#%}
 
 [C#]
 
@@ -360,7 +396,10 @@ Dictionary<int, List<RectangleF>>
 
 IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 
+{%endhighlight%}
 
+
+{%highlight vbnet%}
 
 [VB.NET]
 
@@ -376,9 +415,12 @@ Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
 
 IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 
+{%endhighlight%}
+
+
 
 
 Annotation
-
+ 
 Essential PDF Viewer provides support for URI annotations in the PDF document, which enables the URI available in the PDF document to be opened in the browser just by clicking it. This also supports a few events which are listed in the previous table.
 

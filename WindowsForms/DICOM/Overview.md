@@ -72,8 +72,8 @@ _Table_ _3_: Documentation
 <table>
 <tr>
 <td>
-Type of Documentation</td><td>
-Location</td></tr>
+{{ '**Type of Documentation**' | markdownify }}</td><td>
+{{ '**Location**' | markdownify }}</td></tr>
 <tr>
 <td>
 Readme</td><td>

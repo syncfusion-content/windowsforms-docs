@@ -26,8 +26,8 @@ _Table_ _41_: Node Selections
 <table>
 <tr>
 <td>
-EditStyle Property</td><td>
-Description</td></tr>
+{{ '**EditStyle Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 AllowChangeHeight </td><td>
@@ -114,8 +114,8 @@ _Table_ _42_: Properties
 <table>
 <tr>
 <td>
- Property</td><td>
-Description</td></tr>
+{{ '**Property **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 AspectRatio</td><td>
@@ -228,8 +228,8 @@ _Table_ _43_: Port Properties
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 EnableCentralPort</td><td>
@@ -288,8 +288,8 @@ Custom ports can be defined at any position of the diagram node, thus allowing t
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DrawPorts</td><td>
@@ -352,8 +352,8 @@ _Table_ _45_: Port Shapes
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualType</td><td>
@@ -407,8 +407,8 @@ _Table_ _46_: ConnectionPointType
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ConnectionPointType</td><td>
@@ -583,8 +583,8 @@ _Table_ _47_: Properties
 <table>
 <tr>
 <td>
-Properties</td><td>
-Description</td></tr>
+{{ '**Properties **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 OffsetX</td><td>
@@ -731,8 +731,8 @@ _Table_ _48_: Undo / Redo Properties_
 <table>
 <tr>
 <td>
-History Manager Tool</td><td>
-Description</td></tr>
+{{ '**History Manager Tool **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Undo</td><td>
@@ -945,8 +945,8 @@ _Table_ _49_: Layers
 <table>
 <tr>
 <td>
-Properties</td><td>
-Description</td></tr>
+{{ '**Properties **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -1083,8 +1083,8 @@ _Table_ _51_: Diagram With Rulers
 <table>
 <tr>
 <td>
-Ruler Property</td><td>
-Description</td></tr>
+{{ '**Ruler Property **' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 BackgroundColor</td><td>
@@ -1529,6 +1529,7 @@ Programmatically, these properties can be set as follows.
 
 
 {% highlight c# %}
+
 
 
 
