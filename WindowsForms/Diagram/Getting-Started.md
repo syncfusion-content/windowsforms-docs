@@ -1670,10 +1670,10 @@ _Table_ _5_: Editing Options
 
 <table>
 <tr>
-<td>
-Edit Menu Items</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Edit Menu Items</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 Undo</td><td>
@@ -1727,10 +1727,10 @@ _Table_ _6_: Pan & Zoom Tool
 
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td><td>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th><th>
 </td><td>
 </td><td>
 </td></tr>

@@ -19,11 +19,11 @@ _Table_ _2__: Properties Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 EnableNotificationBar</td><td>
@@ -53,10 +53,10 @@ _Table_ _3__: Methods Table_
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 Load</th><th>
@@ -114,10 +114,10 @@ _Table_ _4__: Events Table_
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th></tr>
+Event</th><th>
+Description</th><th>
+Event</th><th>
+Type</th></tr>
 <tr>
 <th>
 DocumentLoaded</th><th>
@@ -145,7 +145,7 @@ A PDF can be loaded into the PDF Viewer either through the File Open dialog avai
 
 {%highlight c#%}
 
-[C#]
+
 
 //Initialize PDF Viewer.
 
@@ -162,7 +162,7 @@ pdfViewer1.Load("Template.pdf");
 
 {%highlight vbnet%}
 
-[VB.NET]
+
 
 'Initialize PDF Viewer.
 
@@ -180,7 +180,7 @@ You can load an encrypted document by using the overload in the Load method.
 
 {%highlight c#%}
 
-[C#]
+
 
 //Initialize PDF Viewer.
 
@@ -197,7 +197,7 @@ pdfViewer1.Load("Template.pdf", "password");
 
 {%highlight vbnet%}
 
-[VB.NET]
+
 
 'Initialize PDF Viewer.
 
@@ -229,7 +229,7 @@ The PrintDocument property of PdfViewerControl returns System.Drawing.Printing.P
 
 {%highlight c#%}
 
-[C#]
+
 
 PrintDialog dialog = new PrintDialog();
 
@@ -244,7 +244,7 @@ dialog.Document.Print();
 
 {%highlight vbnet%}
 
-[VB.NET]
+
 
 Dim dialog As New PrintDialog()
 
@@ -265,7 +265,6 @@ Essential PDF Viewer allows selected pages to be exported as raster images. Expo
 
 {%highlight c#%}
 
-[C#]
 
 Bitmap img = pdfViewer1.ExportAsImage(0);
 
@@ -280,7 +279,7 @@ img.Save("Sample.png", ImageFormat.Png);
 
 {%highlight vbnet%}
 
-[VB.NET]
+
 
 Dim img As Bitmap = pdfViewer1.ExportAsImage(0)
 
@@ -296,7 +295,7 @@ You can also specify the page range instead of converting each page.
 
 
 {%highlight c#%}
-[C#]
+
 
 Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
 
@@ -305,7 +304,7 @@ Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
 
 {%highlight vbnet%}
 
-[VB.NET]
+
 
 Dim img() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
 
@@ -318,7 +317,7 @@ Exporting PDFs as vector images can be done using the ExportAsMetafile method. T
 
 {%highlight c#%}
 
-[C#]
+
 
 Metafile img = pdfViewer1.ExportAsMetafile(0);
 
@@ -333,7 +332,7 @@ img.Save("Sample.emf", ImageFormat.Emf);
 
 {%highlight vbnet%}
 
-[VB.NET]
+
 
 Dim img As Metafile = pdfViewer1.ExportAsMetafile(0)
 
@@ -349,7 +348,7 @@ You can also specify the page range instead of converting each page individually
 
 {%highlight c#%}
 
-[C#]
+
 
 Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
 
@@ -357,7 +356,7 @@ Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
 
 {%highlight vbnet%}
 
-[VB.NET]
+
 
 Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
@@ -380,7 +379,7 @@ The PDF Viewer control also supports searching text in the PDF document with the
 
 {%highlight c#%}
 
-[C#]
+
 
 bool IsMatchFound;
 
@@ -401,7 +400,6 @@ IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 
 {%highlight vbnet%}
 
-[VB.NET]
 
 Dim IsMatchFound As Boolean
 

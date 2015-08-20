@@ -46,7 +46,7 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
+
 
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>

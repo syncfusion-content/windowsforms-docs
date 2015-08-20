@@ -31,9 +31,9 @@ _Table_ _28_: Bridging Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 LineBridgeSize</td><td>
@@ -110,9 +110,9 @@ _Table_ _29_: Line Routing
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 LineRoutingEnabled</td><td>
@@ -171,9 +171,9 @@ To customize the distance between the connectors and the obstacles, and the type
 
 <table>
 <tr>
-<td>
-Line Router Property</td><td>
-Description</td></tr>
+<th>
+Line Router Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DistanceToObstacle</td><td>
@@ -430,12 +430,12 @@ _Table_ _30_: Properies Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Name</td><td>
@@ -836,10 +836,10 @@ _Table_ _32_: Orientation Properties
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 Orientation</td><td>

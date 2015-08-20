@@ -7,19 +7,20 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Load a specific page?
+## Load a specific page?
 
 Navigation to a specific page, through code, is possible using GoToPageAtIndex method.
 
-[C#]
+{%highlight c#%}
 
 pdfViewer1.GoToPageAtIndex(2);
 
+{%endhighlight%}
 
+{%highlight vbnet%}
 
-[VB.NET]
 
 pdfViewer1.GoToPageAtIndex(2)
 
-
+{%endhighlight%}
 

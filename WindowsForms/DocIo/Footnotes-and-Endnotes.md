@@ -25,8 +25,8 @@ Following are the steps to add a footnote or endnote to a Word document in Micro
 
 3.   Point to Footnotes and then click Footnotes in the Microsoft Word menu.
 
-{{ '![](Footnotes-and-Endnotes_images/Footnotes-and-Endnotes_img1.png)' | markdownify }}
-{:.image }
+     ![](Footnotes-and-Endnotes_images/Footnotes-and-Endnotes_img1.png)
+
 
 
 
@@ -56,9 +56,9 @@ Public Constructors
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WFootnote.WFootnote (IWordDocument)</td><td>
@@ -72,9 +72,9 @@ _Table_ _106__: Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 EntityType</td><td>
@@ -108,8 +108,8 @@ Specifies custom (string) marker for footnote. If footnote is autonumbered, this
 
 The following code example illustrates how to create a Footnote and an Endnote by using Essential DocIO.
 
-[C#]
 
+{%highlight c#%}
 
 
 //Creates a new document.
@@ -168,10 +168,10 @@ paragraph.AppendText("Essential DocIO is a .NET library that has a simple yet an
 
 document.Save("Sample.doc", Syncfusion.DocIO.FormatType.Doc);
 
+{%endhighlight%}
 
 
-[VB.NET]
-
+{%highlight vbnet%}
 
 
 'Creates a new document.
@@ -228,9 +228,9 @@ paragraph.AppendText("Essential DocIO is a .NET library that has a simple yet an
 
 document.Save("Sample.doc", Syncfusion.DocIO.FormatType.Doc)
 
+{%endhighlight%}
 
-
-Footnote and Endnote Separators
+### Footnote and Endnote Separators
 
 A Footnote or Endnote separator is a line preserved between the body and the endnotes or footnotes in a Microsoft Word document. A footnote or endnote continuation separator is a line running across the top section indicating that the footnotes or endnotes are carried over from the preceding page if they run over to the second page. A footnote or endnote continuation notice is a special character or word preserved at the bottom of the footer area to indicate that the footnotes or endnotes continue to the next page.
 
@@ -240,9 +240,9 @@ _Table_ _107__: Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructors</td><td>
-Description</td></tr>
+<th>
+Constructors</th><th>
+Description</th></tr>
 <tr>
 <td>
 Footnote.Footnote(WordDocument)</td><td>
@@ -260,9 +260,9 @@ _Table_ _108__: Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Separator</td><td>

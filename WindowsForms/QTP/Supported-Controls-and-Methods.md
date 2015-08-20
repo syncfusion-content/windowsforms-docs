@@ -41,9 +41,9 @@ The following are the recorded methods and their corresponding descriptions for 
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellButtonClick(int row, int col)</td><td>
@@ -200,9 +200,9 @@ Gets the name of the Grid control object.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
  CellButtonClick(int row, int col)</td><td>
@@ -375,9 +375,9 @@ Gets the name of the Grid DataBoundGrid object</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
  CellButtonClick(object row, object col)</td><td>
@@ -591,9 +591,9 @@ Gets the name of the Grid control object.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 ResizeColumn(object fromColumn, int to, int width)</td><td>
@@ -619,9 +619,9 @@ Gets the name of the GridListControl object</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetName()</td><td>
@@ -695,9 +695,9 @@ The following are the recorded methods and their corresponding descriptions for 
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Click(string text)</td><td>
@@ -711,9 +711,9 @@ Performs click action on the ButtonAdv control.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetValue(int value)</td><td>
@@ -739,9 +739,9 @@ Sets the value in the text area as specified in the argument.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Set(string chkState)</td><td>
@@ -762,9 +762,9 @@ Gets the CheckState of the CheckBoxAdv.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectColor(object color)</td><td>
@@ -778,9 +778,9 @@ The color that has to be selected.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 DropDown()</td><td>
@@ -794,9 +794,9 @@ Shows the drop-down list.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 DropDown()</td><td>
@@ -814,9 +814,9 @@ Selects the item in the list.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 DropDown()</td><td>
@@ -838,9 +838,9 @@ Sets the CommandBar to float.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select(string item)</td><td>
@@ -858,9 +858,9 @@ Performs click on the focused item.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 void CheckEnabled(object on, string checkState);</td><td>
@@ -906,9 +906,9 @@ Returns the current value in the DateTimePickerAdv control.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 DockStateChange(string dock,string prevState, string ctrl,string hostForm,string dockingStyle)</td><td>
@@ -934,9 +934,9 @@ Changes the state of the docking window into a floating state with the specified
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectGroup(object index, string itemText)</td><td>
@@ -954,9 +954,9 @@ Simulates click in the Navigation pane drop-down button.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectItem(object item)</td><td>
@@ -974,9 +974,9 @@ Drag and drop the GroupView item.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 DropDown()</td><td>
@@ -994,9 +994,9 @@ Selects the given index.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select(string barText)</td><td>
@@ -1010,9 +1010,9 @@ Selects the item from the pop-up menu.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetValue(int value)</td><td>
@@ -1030,9 +1030,9 @@ Gets the current value of the ProgressBar.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Set()</td><td>
@@ -1050,9 +1050,9 @@ Shows whether the RadioButtonAdv is set.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 RibbonMenuButtonClick()</td><td>
@@ -1102,9 +1102,9 @@ Maximizes the Ribbon Tab panel.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 ScrollValue(int value)</td><td>
@@ -1118,9 +1118,9 @@ The position of the scroll to be specified.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 ClosePage(object tabPage)</td><td>
@@ -1140,9 +1140,9 @@ Selects the specified tab page.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectPage(object tab)</td><td>
@@ -1164,9 +1164,9 @@ Closes the tab page in the TabPageAdv control.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Expand(string headerText)</td><td>
@@ -1219,9 +1219,9 @@ Helps to find an item’s existence.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Set(string text)</td><td>
@@ -1239,9 +1239,9 @@ Select the text in the TextBoxExt.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Set(string chkState)</td><td>
@@ -1259,9 +1259,9 @@ Gets the CheckState of the CheckBox in the DateTimeAdv</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 CollapseNode(string fullPath)</td><td>
@@ -1327,9 +1327,9 @@ Right-clicks the specified node.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select(string text)</td><td>
@@ -1351,9 +1351,9 @@ For the given text of the required menu, MenuItemPos will return the position of
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select(string ID)</td><td>
@@ -1371,9 +1371,9 @@ Shows the popup of the parent bar item.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Expand(string headerText)</td><td>
@@ -1426,9 +1426,9 @@ Helps to find if an item exists.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 MoveSplitter(int distance)</td><td>
@@ -1446,9 +1446,9 @@ Collapses the panel.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Collapse(string collapse)</td><td>
@@ -1482,9 +1482,9 @@ Selects the secondary tab page based on the given index.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetValue(int value)</td><td>
@@ -1498,9 +1498,9 @@ Sets the value.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetValue(int min, int max)</td><td>
@@ -1514,9 +1514,9 @@ Sets the values.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select(int x, int y)</td><td>
@@ -1534,9 +1534,9 @@ Selects the bar based on the given name.</td></tr>
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select(string tab)</td><td>
@@ -1566,9 +1566,9 @@ ChartControl
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 RegionClick(double x, double y)</td><td>
@@ -1662,9 +1662,9 @@ The following are the recorded methods and their corresponding descriptions for 
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 DblClick(int row, int col)</td><td>
@@ -1701,9 +1701,9 @@ The following are the recorded methods and their corresponding descriptions for 
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 ConnectNodes(string startNode, string endNode, string connector)</td><td>

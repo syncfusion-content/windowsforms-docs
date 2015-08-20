@@ -25,9 +25,9 @@ _Table_ _41_: Node Selections
 
 <table>
 <tr>
-<td>
-{{ '**EditStyle Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+EditStyle Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowChangeHeight </td><td>
@@ -113,9 +113,9 @@ _Table_ _42_: Properties
 
 <table>
 <tr>
-<td>
-{{ '**Property **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property </th><th>
+Description</th></tr>
 <tr>
 <td>
 AspectRatio</td><td>
@@ -227,9 +227,9 @@ _Table_ _43_: Port Properties
 
 <table>
 <tr>
-<td>
-{{ '**Property **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 EnableCentralPort</td><td>
@@ -287,9 +287,9 @@ Custom ports can be defined at any position of the diagram node, thus allowing t
 
 <table>
 <tr>
-<td>
-{{ '**Property **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property </th><th>
+Description</th></tr>
 <tr>
 <td>
 DrawPorts</td><td>
@@ -351,9 +351,9 @@ _Table_ _45_: Port Shapes
 
 <table>
 <tr>
-<td>
-{{ '**Property **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property </th><th>
+Description</th></tr>
 <tr>
 <td>
 VisualType</td><td>
@@ -406,9 +406,9 @@ _Table_ _46_: ConnectionPointType
 
 <table>
 <tr>
-<td>
-{{ '**Property **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property </th><th>
+Description</th></tr>
 <tr>
 <td>
 ConnectionPointType</td><td>
@@ -582,9 +582,9 @@ _Table_ _47_: Properties
 
 <table>
 <tr>
-<td>
-{{ '**Properties **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 OffsetX</td><td>
@@ -730,9 +730,9 @@ _Table_ _48_: Undo / Redo Properties_
 
 <table>
 <tr>
-<td>
-{{ '**History Manager Tool **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+History Manager Tool </th><th>
+Description</th></tr>
 <tr>
 <td>
 Undo</td><td>
@@ -944,9 +944,9 @@ _Table_ _49_: Layers
 
 <table>
 <tr>
-<td>
-{{ '**Properties **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Properties </th><th>
+Description</th></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -1020,9 +1020,9 @@ _Table_ _50_: RulersHeight
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowRulers</td><td>
@@ -1082,9 +1082,9 @@ _Table_ _51_: Diagram With Rulers
 
 <table>
 <tr>
-<td>
-{{ '**Ruler Property **' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Ruler Property </th><th>
+Description</th></tr>
 <tr>
 <td>
 BackgroundColor</td><td>
@@ -1670,9 +1670,9 @@ _Table_ _55_: Scroll Behavior
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AccelerateScrolling</td><td>
@@ -1716,9 +1716,9 @@ _Table_ _56_: ThumbTrack
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HorizontalThumbTrack</td><td>
@@ -1766,9 +1766,9 @@ _Table_ _57_: ScrollTips
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 HorizontalScrollTips</td><td>
@@ -1820,9 +1820,9 @@ _Table_ _58_: Splitter
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FillSplitterPane</td><td>
@@ -1874,10 +1874,10 @@ _Table_ _59_: Properties
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 ZoomType </td><td>
@@ -2059,10 +2059,10 @@ _Table_ _61_: Zoom Tool Properties
 
 <table>
 <tr>
-<td>
- Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+ Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 MaximumMagnification</td><td>
@@ -2183,9 +2183,9 @@ _Table_ _62_: Node Collection Events
 
 <table>
 <tr>
-<td>
-DiagramViewerEventSink</td><td>
-Description</td></tr>
+<th>
+DiagramViewerEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 NodeCollectionChanged</td><td>
@@ -2205,9 +2205,9 @@ _Table_ _63_: Properties
 
 <table>
 <tr>
-<td>
-NodeCollection EventArgs Member</td><td>
-Description</td></tr>
+<th>
+NodeCollection EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -2349,9 +2349,9 @@ _Table_ _64_: Tool Events
 
 <table>
 <tr>
-<td>
-DiagramViewerEventSink</td><td>
-Description</td></tr>
+<th>
+DiagramViewerEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 ToolActivated</td><td>
@@ -2371,9 +2371,9 @@ _Table_ _65_: Members
 
 <table>
 <tr>
-<td>
-ToolActivated / Deactivated EventArgs Members      </td><td>
-Description</td></tr>
+<th>
+ToolActivated / Deactivated EventArgs Members      </th><th>
+Description</th></tr>
 <tr>
 <td>
 Tool</td><td>
@@ -2491,9 +2491,9 @@ _Table_ _66_: Origin Events
 
 <table>
 <tr>
-<td>
-DiagramViewerEventSink</td><td>
-Description</td></tr>
+<th>
+DiagramViewerEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 OriginChanged</td><td>
@@ -2509,9 +2509,9 @@ _Table_ _67_: Members
 
 <table>
 <tr>
-<td>
-Origin EventArgs Member</td><td>
-Description</td></tr>
+<th>
+Origin EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 NewOrigin</td><td>
@@ -2727,9 +2727,9 @@ _Table_ _68_: Magnification Events
 
 <table>
 <tr>
-<td>
-DiagramViewerEventSink</td><td>
-Description</td></tr>
+<th>
+DiagramViewerEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 MagnificationChanged</td><td>
@@ -2745,9 +2745,9 @@ _Table_ _69_: Member properties
 
 <table>
 <tr>
-<td>
-Magnification EventArgs Member</td><td>
-Description</td></tr>
+<th>
+Magnification EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 NewMagnification</td><td>
@@ -2830,9 +2830,9 @@ _Table_ _70_: Editor Events
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td></tr>
+<th>
+Event Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 TextChanged</td><td>
@@ -2926,9 +2926,9 @@ _Table_ _71_: Vertex Events
 
 <table>
 <tr>
-<td>
-DocumentEventSink</td><td>
-Description</td></tr>
+<th>
+DocumentEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 VertexChanged</td><td>
@@ -2948,9 +2948,9 @@ _Table_ _72_: Description
 
 <table>
 <tr>
-<td>
-Vertex EventArgs Member</td><td>
-Description</td></tr>
+<th>
+Vertex EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -3112,9 +3112,9 @@ _Table_ _73_: Pinpoint Events
 
 <table>
 <tr>
-<td>
-DocumentEventSink</td><td>
-Description</td></tr>
+<th>
+DocumentEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 PinOffsetChanged</td><td>
@@ -3142,9 +3142,9 @@ _Table_ _74_: Members
 
 <table>
 <tr>
-<td>
-PinPoint / PinPointOffset EventArgs Member</td><td>
-Description</td></tr>
+<th>
+PinPoint / PinPointOffset EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -3336,9 +3336,9 @@ _Table_ _75_: Rotation Events
 
 <table>
 <tr>
-<td>
-DocumentEventSink</td><td>
-Description</td></tr>
+<th>
+DocumentEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 FlipChanged</td><td>
@@ -3366,9 +3366,9 @@ _Table_ _76_: Members
 
 <table>
 <tr>
-<td>
-Rotation EventArgs Member</td><td>
-Description</td></tr>
+<th>
+Rotation EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 NodeAffected</td><td>
@@ -3384,9 +3384,9 @@ _Table_ _77_: Flip EventArgs Member
 
 <table>
 <tr>
-<td>
-Flip EventArgs Member</td><td>
-Description</td></tr>
+<th>
+Flip EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -3562,9 +3562,9 @@ _Table_ _78_: ZOrder events
 
 <table>
 <tr>
-<td>
-DocumentEventSink</td><td>
-Description</td></tr>
+<th>
+DocumentEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 ZOrderChanged</td><td>
@@ -3584,9 +3584,9 @@ _Table_ _79_: Members
 
 <table>
 <tr>
-<td>
-ZOrder EventArgs Members</td><td>
-Description</td></tr>
+<th>
+ZOrder EventArgs Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -3704,9 +3704,9 @@ _Table_ _80_: Connections and Ports Events
 
 <table>
 <tr>
-<td>
-DocumentEventSink</td><td>
-Description</td></tr>
+<th>
+DocumentEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 ConnectionsChanged</td><td>
@@ -3726,9 +3726,9 @@ _Table_ _81_: Members
 
 <table>
 <tr>
-<td>
-Connection and Port EventArgs Member</td><td>
-Description</td></tr>
+<th>
+Connection and Port EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -3906,9 +3906,9 @@ _Table_ _82_: Property Events
 
 <table>
 <tr>
-<td>
-DocumentEventSink</td><td>
-Description</td></tr>
+<th>
+DocumentEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 PropertyChanged</td><td>
@@ -3928,9 +3928,9 @@ _Table_ _83_: Members
 
 <table>
 <tr>
-<td>
-PropertyChanging EventArgs Member</td><td>
-Description</td></tr>
+<th>
+PropertyChanging EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -3954,9 +3954,9 @@ _Table_ _84_: Members
 
 <table>
 <tr>
-<td>
-PropertyChanged EventArgs Member</td><td>
-Description</td></tr>
+<th>
+PropertyChanged EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 NodeAffected</td><td>
@@ -4058,9 +4058,9 @@ _Table_ _85_: Labels And Layers Events
 
 <table>
 <tr>
-<td>
-DocumentEventSink</td><td>
-Description</td></tr>
+<th>
+DocumentEventSink</th><th>
+Description</th></tr>
 <tr>
 <td>
 LabelsChanged</td><td>
@@ -4076,9 +4076,9 @@ Data can be retrieved or set using the following members.
 
 <table>
 <tr>
-<td>
-Label / Layers EventArgs Member</td><td>
-Description</td></tr>
+<th>
+Label / Layers EventArgs Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -4244,12 +4244,12 @@ _Table_ _86_: Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 DefaultContextMenuEnabled</td><td>
@@ -4330,12 +4330,12 @@ _Table_ _87_: Property Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Diagram</td><td>
@@ -4407,12 +4407,12 @@ _Table_ _88_: Property Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 ShowDragNodeCue</td><td>
@@ -4524,11 +4524,11 @@ _Table_ _89_: Properties Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 ResizingStyle</td><td>
@@ -4604,9 +4604,9 @@ _Table_ _90_: Guides Properties
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Guides</td><td>
@@ -4710,9 +4710,9 @@ _Table_ _91_: Touch support Properties
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 TouchMode</td><td>
@@ -4778,10 +4778,10 @@ _Table_ _92_: Properties
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 PropertyBag </td><td>

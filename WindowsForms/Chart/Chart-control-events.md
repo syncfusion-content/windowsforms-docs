@@ -92,7 +92,7 @@ Specifies the tooltip for this region.</td></tr>
 
 ChartRegionDoubleClick and ChartRegionMouseDown Events
 
-## [C#]
+
 
 {% highlight c# %}
 
