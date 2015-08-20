@@ -21,15 +21,13 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Windows Forms Application template, name the project and click OK. 
 
-
-
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
 
 
-A windows application is created.
+   A windows application is created.
 
 2. Now you need to deploy Essential Grouping into this Windows application. Refer Windows / WPF topic for detailed info.
 
@@ -82,7 +80,7 @@ Now, you have created a Windows / WPF application (refer Creating Platform Appli
 
 
 
-#### Deploying Essential Grouping in a Windows / WPF Application
+### Deploying Essential Grouping in a Windows / WPF Application
 
 The following steps will guide you to deploy Essential Grouping:
 

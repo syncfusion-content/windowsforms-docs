@@ -99,9 +99,9 @@ _Table_ _5_: TableDescriptor Property
 
 <table>
 <tr>
-<td>
-TableDescriptor Property</td><td>
-Description</td></tr>
+<th>
+TableDescriptor Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SortedColumns </td><td>
@@ -138,7 +138,7 @@ The Grouping.Group class has two properties that are used to recursively access 
 2. At most one of these collections will actually hold objects. If the Groups collections is populated, this implies that the Group has sub-groups and there are no records. 
 3. If the Records collection is populated then, it implies that this Group is a terminal group with records, but there are no sub-groups. 
 
-Your first task is to add a recursive method to either display records if the Group has records, or to recursively call itself to display any records of its child groups.
+   Your first task is to add a recursive method to either display records if the Group has records, or to recursively call itself to display any records of its child groups.
 
 4. Add the following code below the Main method to implement a recursive method to display records in a Group.
 
@@ -299,7 +299,7 @@ Your first task is to add a recursive method to either display records if the Gr
    ~~~
    {:.prettyprint }
 
-![](Using-Grouping_images/Using-Grouping_img3.png)
+   ![](Using-Grouping_images/Using-Grouping_img3.png)
 
 
 

@@ -25,7 +25,7 @@ The first thing you need to do is to derive a class that will serve as your cust
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+   ![](Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -352,7 +352,7 @@ The first thing you need to do is to derive a class that will serve as your cust
    {:.prettyprint }
 
 
-![](Data-Binding_images/Data-Binding_img2.png)
+   ![](Data-Binding_images/Data-Binding_img2.png)
 
 
 

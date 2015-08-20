@@ -108,7 +108,7 @@ Do the following steps:
 3. Add it to the RecordFilters collection. 
 4. List the filtered data. 
 
-> Note: To list the data, instead of accessing the Table.Records collections, you were using the Table.FilteredRecords collections. The FilteredRecords collection only includes the records that satisfy all filters in the RecordFilters collection. Add this code at the end of the Main method.
+   > Note: To list the data, instead of accessing the Table.Records collections, you were using the Table.FilteredRecords collections. The FilteredRecords collection only includes the records that satisfy all filters in the RecordFilters collection. Add this code at the end of the Main method.
 
 
 
@@ -237,12 +237,7 @@ Do the following steps:
    {:.prettyprint }
 
 
-![](Data-Manipulation_images/Data-Manipulation_img2.png)
-
-
-
-
-
+   ![](Data-Manipulation_images/Data-Manipulation_img2.png)
 6. You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
 
    ~~~ cs
@@ -317,7 +312,7 @@ Do the following steps:
    {:.prettyprint }
 
 
-![](Data-Manipulation_images/Data-Manipulation_img3.png)
+   ![](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 
 Filtering is applied to the data displayed in the console.
@@ -505,7 +500,7 @@ To add an expression, you need to create an ExpressionFieldDescriptor and add it
    ~~~
    {:.prettyprint }
 
-![](Data-Manipulation_images/Data-Manipulation_img4.png)
+   ![](Data-Manipulation_images/Data-Manipulation_img4.png)
 
 
 
@@ -1061,7 +1056,7 @@ The following steps illustrate how to do custom sorting using the IComparer prop
    ~~~
    {:.prettyprint }
 
-![](Data-Manipulation_images/Data-Manipulation_img7.png)
+   ![](Data-Manipulation_images/Data-Manipulation_img7.png)
 
 
 

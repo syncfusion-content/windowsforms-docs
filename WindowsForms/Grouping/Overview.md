@@ -49,18 +49,18 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-#### Document Conventions
+### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
-_Table_ _1_: Document Conventions
+_Table_ _1: Document Conventions
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
@@ -95,11 +95,11 @@ This section covers the requirements mandatory for using Essential Grouping. It 
 
 
 
-#### Prerequisites
+### Prerequisites
 
 The prerequisites details are listed below:
 
-_Table_ _2_: Prerequisites
+_Table_ _2: Prerequisites
 
 <table>
 <tr>
@@ -123,11 +123,11 @@ Development Environments</td><td>
 
 
 
-#### Compatibility
+### Compatibility
 
 The compatibility details are listed below:
 
-_Table_ _3_: Compatibility
+_Table_ _3: Compatibility
 
 <table>
 <tr>
@@ -150,13 +150,13 @@ Operating Systems</td><td>
 
 Syncfusion provides the following documentation segments to provide all necessary information for using Essential Grouping in different platform applications in an efficient manner.
 
-_Table_ _4_: Documentation
+_Table_ _4: Documentation
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -170,7 +170,7 @@ Release Notes</td><td>
 User Guide (this document)</td><td>
 Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the Grouping User Guide.)![](Overview_images/Overview_img5.jpeg)
 
-Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+> Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
