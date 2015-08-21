@@ -19,9 +19,9 @@ _Table_ _7_: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Background</td><td>
@@ -175,9 +175,9 @@ _Table_ _8_: Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 WordDocument.WordDocument ()</td><td>
@@ -215,9 +215,9 @@ _Table_ _9_: Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddListStyle</td><td>
@@ -337,20 +337,66 @@ Updates Paragraph Count, Word Count, and Character Count.</td></tr>
 
 By using Essential DocIO, you can create a copy of a whole Word document or a particular entity (such as WSection, WParagraph, WTable, WTextRange, etc.) by invoking the Clone method of the Entity. This method returns the shallow copy of the Entity that invoked the Clone method. By using this functionality, you can copy the whole document or part of its content along with its formatting from one document and add it to another document.
 
-> {{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document._
+
+_> Note: When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document._
 
 The following code example illustrates how to merge two documents by using the Clone method.
 
-<table>
-<tr>
-<td>
-[C#]//Creates the first document.IWordDocument doc = new WordDocument();//Adds a section to the document.IWSection section = doc.AddSection();//Appends text to the paragraph.IWTextRange text1 = section.AddParagraph().AppendText( "First document section..." );//Applies text color.text1.CharacterFormat.TextColor = Color.Red;//Appends new paragraphs.section.AddParagraph().AppendText( "Some Text..." );section.AddParagraph().AppendText( "New Paragraph" );section.AddParagraph().AppendText( "Third Paragraph" );//Creates the second document.IWordDocument doc2 = new WordDocument();//Adds a section.IWSection section2 = doc2.AddSection();//Appends text to the paragraph.IWTextRange text2 = section2.AddParagraph().AppendText( "Second document section..." );//Applies text color.text2.CharacterFormat.TextColor = Color.Blue;//Appends new paragraphs.section2.AddParagraph().AppendText( "Some Text..." );section2.AddParagraph().AppendText( "New Paragraph More Text" );section2.AddParagraph().AppendText( "Third Paragraph More Text" );//Merges the second document with the first.doc.Sections.Add( section2.Clone() );//Saves the document to disk.doc.Save("Sample.docx", FormatType.Word2013);</td></tr>
-<tr>
-<td>
-[VB.NET]'Creates the first document.Dim doc As IWordDocument = New WordDocument()'Adds a section to the document.Dim section As IWSection = doc.AddSection()'Appends text to the paragraph.Dim text1 As IWTextRange = section.AddParagraph().AppendText("First document section...")'Applies text color.text1.CharacterFormat.TextColor = Color.Redsection.AddParagraph().AppendText("Some Text...")section.AddParagraph().AppendText("New Paragraph")section.AddParagraph().AppendText("Third Paragraph")'Creates the second document.Dim doc2 As IWordDocument = New WordDocument()'Adds a section to the document.Dim section2 As IWSection = doc2.AddSection()'Appends text to the paragraph.Dim text2 As IWTextRange = section2.AddParagraph().AppendText("Second document section...")'Applies text color.text2.CharacterFormat.TextColor = Color.Bluesection2.AddParagraph().AppendText("Some Text...")section2.AddParagraph().AppendText("New Paragraph More Text")section2.AddParagraph().AppendText("Third Paragraph More Text")'Merges the second document with the first.doc.Sections.Add(section2.Clone())'Saves the document to disk.doc.Save("Sample.docx", FormatType.Word2013);</td></tr>
-</table>
+{% highlight C# %} 
+//Creates the first document.
+IWordDocument doc = new WordDocument();
+//Adds a section to the document.
+IWSection section = doc.AddSection();
+//Appends text to the paragraph.
+IWTextRange text1 = section.AddParagraph().AppendText( "First document section..." );
+//Applies text color.
+text1.CharacterFormat.TextColor = Color.Red;
+//Appends new paragraphs.
+section.AddParagraph().AppendText( "Some Text..." );
+section.AddParagraph().AppendText( "New Paragraph" );
+section.AddParagraph().AppendText( "Third Paragraph" );
+//Creates the second document.
+IWordDocument doc2 = new WordDocument();
+//Adds a section.
+IWSection section2 = doc2.AddSection();
+//Appends text to the paragraph.
+IWTextRange text2 = section2.AddParagraph().AppendText( "Second document section..." );
+//Applies text color.
+text2.CharacterFormat.TextColor = Color.Blue;
+//Appends new paragraphs.section2.AddParagraph().AppendText( "Some Text..." );
+section2.AddParagraph().AppendText( "New Paragraph More Text" );
+section2.AddParagraph().AppendText( "Third Paragraph More Text" );
+//Merges the second document with the first.doc.
+Sections.Add( section2.Clone() );
+//Saves the document to disk.
+doc.Save("Sample.docx", FormatType.Word2013);
+ {% endhighlight %}
+ 
+ {% highlight vbnet %}
+'Creates the first document.
+Dim doc As IWordDocument = New WordDocument()
+'Adds a section to the document.
+Dim section As IWSection = doc.AddSection()'Appends text to the paragraph.
+Dim text1 As IWTextRange = section.AddParagraph().AppendText("First document section...")
+'Applies text color.
+text1.CharacterFormat.TextColor = Color.Redsection.AddParagraph().AppendText("Some Text...")
+section.AddParagraph().AppendText("New Paragraph")
+section.AddParagraph().AppendText("Third Paragraph")
+'Creates the second document.
+Dim doc2 As IWordDocument = New WordDocument()
+'Adds a section to the document.
+Dim section2 As IWSection = doc2.AddSection()
+'Appends text to the paragraph.
+Dim text2 As IWTextRange = section2.AddParagraph().AppendText("Second document section...")
+'Applies text color.
+text2.CharacterFormat.TextColor = Color.Bluesection2.AddParagraph().AppendText("Some Text...")
+section2.AddParagraph().AppendText("New Paragraph More Text")
+section2.AddParagraph().AppendText("Third Paragraph More Text")
+'Merges the second document with the first.
+doc.Sections.Add(section2.Clone())
+'Saves the document to disk.
+doc.Save("Sample.docx", FormatType.Word2013);
+ {% endhighlight %}
 
 
 ## Merging a Word document
@@ -373,15 +419,28 @@ Use the ImportContent(WordDocument doc, ImportOptions importOptions) method to i
 
 The following code example illustrates how to import contents from one document to another with various import options.
 
-<table>
-<tr>
-<td>
-[C#]//Opens the destination Word document.WordDocument destination = new WordDocument("Destination.doc");//Opens the source Word document.WordDocument source = new WordDocument("Source.doc");//Imports contents with “KeepSourceFormatting” import option.destination.ImportContent(source, ImportOptions.KeepSourceFormatting);//Saves the document.destination.Save("Sample.doc", FormatType.Doc);</td></tr>
-<tr>
-<td>
-[VB.NET]'Opens the destination Word document.Dim destination As New WordDocument("Destination.doc")'Opens the source Word document.Dim source As New WordDocument("Source.doc")'Imports the contents with import option keep source formatting.destination.ImportContent(source, ImportOptions.KeepSourceFormatting)'Saves the document.destination.Save("Sample.doc", FormatType.Doc)</td></tr>
-</table>
+{% highlight C# %}  
+//Opens the destination Word document.
+WordDocument destination = new WordDocument("Destination.doc");
+//Opens the source Word document.
+WordDocument source = new WordDocument("Source.doc");
+//Imports contents with “KeepSourceFormatting” import option.
+destination.ImportContent(source, ImportOptions.KeepSourceFormatting);
+//Saves the document.destination.Save("Sample.doc", FormatType.Doc);
+{% endhighlight %}
 
+{% highlight vbnet %} 
+
+'Opens the destination Word document.
+Dim destination As New WordDocument("Destination.doc")
+'Opens the source Word document.
+Dim source As New WordDocument("Source.doc")
+'Imports the contents with import option keep source formatting.
+destination.ImportContent(source, ImportOptions.KeepSourceFormatting)
+'Saves the document.
+destination.Save("Sample.doc", FormatType.Doc)
+
+{% endhighlight %}
 
 ## Protecting a Word Document
 
@@ -391,8 +450,8 @@ This section provides information about how to restrict anonymous users from vie
 
 You can use the EncryptDocument method to protect a Word document with a password, and restrict anonymous users from viewing or accessing the content of the document. A password for encrypting a Word document is set in Microsoft Word through the Protect Document tab in the File menu.
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img2.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img2.png)
+
 
 
 
@@ -401,24 +460,31 @@ Decryption is the process of removing the restriction to view or access the cont
 
 The following code example illustrates how to encrypt and decrypt a Word document.
 
-<table>
-<tr>
-<td>
-[C#]//Encrypts the Word document with a password.document.EncryptDocument(password);//Opens the encrypted Word document.WordDocument document = new WordDocument(filename, password);</td></tr>
-<tr>
-<td>
-[VB.NET]'Encrypts the Word document with a password.document.EncryptDocument(password)'Opens the encrypted Word document.Dim document As New WordDocument(filename, password)</td></tr>
-</table>
-> {{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img3.jpeg)' | markdownify }}
-{:.image }
-_Note: Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform._
+{% highlight C# %} 
+//Encrypts the Word document with a password.
+document.EncryptDocument(password);//Opens the encrypted Word document.
+WordDocument document = new WordDocument(filename, password);
+ {% endhighlight %}
+ 
+ {% highlight vbnet %} 
+'Encrypts the Word document with a password.
+document.EncryptDocument(password)
+'Opens the encrypted Word document.
+Dim document As New WordDocument(filename, password)
+
+{% endhighlight %}
+
+
+> _Note: Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform_.
+
+
 
 ### Restricting Editing
 
 Essential DocIO provides support to restrict a Word document from editing. All the users can view the contents of the document, but editing is restricted based on the contents. In Microsoft Word, a document is protected through the Restrict Editing option in the Review menu.
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img4.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img4.png)
+
 
 
 
@@ -433,16 +499,7 @@ DocIO supports such protection while reading and writing Word documents for both
 
 You can restrict a Word document from editing either by providing a password or without password by using Essential DocIO. You can easily modify document protection type by using the WordDocument.ProtectionType property.
 
-The following code example illustrates how to set the protection type for a document.
 
-<table>
-<tr>
-<td>
-[C#]//Loads a Word document.IWordDocument doc = new WordDocument("sample.doc");//Sets protection with password, and allows to only add comments to the document.doc.Protect(ProtectionType.AllowOnlyComments,"password");//Saves the Word document.doc.Save( "Protection.doc" );</td></tr>
-<tr>
-<td>
-[VB.NET]'Loads a Word document.Dim doc As IWordDocument = New WordDocument("sample.doc")'Sets protection with password, and allows only add comments to the document.doc.Protect(ProtectionType.AllowOnlyComments,"password")'Saves the Word document.doc.Save("Protection.doc")</td></tr>
-</table>
 
 
 ## Working with Document Properties
@@ -451,8 +508,8 @@ Document Properties contain general information about the document such as autho
 
 To view or edit the document properties, go to File menu and click Properties in Microsoft Word. The Document Properties dialog box appears as follows.
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img5.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img5.png)
+
 
 
 
@@ -464,6 +521,7 @@ The Document Properties dialog box contains the following tabs.
 * Statistics (not editable): Displays the statistics of the document such as creation, modification, access and print dates, revision number, characters, words, pages number, and so on.
 * Contents (not editable): Displays the content of the document.
 * Custom (editable): Enables you to create your own properties combining their name, type, and value. For example, to mark a document as "Checked", you can create a custom property with the Name as "Checked", Type as "Text", and Value as "your name".
+
 ### Built-in document properties
 
 
@@ -487,9 +545,9 @@ _Table_ _10_: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 BytesCount</td><td>
@@ -535,9 +593,9 @@ _Table_ _11_: Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -545,24 +603,15 @@ Clone</td><td>
 </table>
 
 
-The following code example illustrates how to get, set, and modify Document Properties.
 
-<table>
-<tr>
-<td>
-[C#]//Initializes Word document object.WordDocument doc = new WordDocument();//Opens a Word document.doc.Open( "DocumentProperties.doc" );//Retrieves document property values.string author = doc.BuiltinDocumentProperties.Author;int bytesCount = doc.BuiltinDocumentProperties.BytesCount;//Sets document properties.doc.BuiltinDocumentProperties.Keywords += "document properties";doc.BuiltinDocumentProperties.Author = "Author's name";doc.BuiltinDocumentProperties.Comments = "Document comments";</td></tr>
-<tr>
-<td>
-[VB.NET]'Initializes Word document object.Dim doc As New WordDocument()'Opens a Word document.doc.Open("DocumentProperties.doc")'Retrieves document property values.Dim author As String = doc.BuiltinDocumentProperties.AuthorDim bytesCount As Integer = doc.BuiltinDocumentProperties.BytesCount'Sets document properties.doc.BuiltinDocumentProperties.Keywords and= "document properties"doc.BuiltinDocumentProperties.Author = "Author's name"doc.BuiltinDocumentProperties.Comments = "Document comments"</td></tr>
-</table>
 
 
 ### Custom Document Properties
 
 CustomDocumentProperties class enables you to create and save your own custom properties. It contains a collection of DocumentProperty instances. You can access a document property by indexing, that is, by specifying the property name or index.
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img6.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img6.png)
+
 
 
 
@@ -573,9 +622,9 @@ _Table_ _12_: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Count</td><td>
@@ -589,9 +638,9 @@ _Table_ _13_: Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Add</td><td>
@@ -607,7 +656,7 @@ Removes custom property in a document.  </td></tr>
 </table>
 
 
-DocumentProperty
+### DocumentProperty
 
 This class represents each custom document property.
 
@@ -619,9 +668,9 @@ _Table_ _14_: Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -655,30 +704,33 @@ Converts value to string.</td></tr>
 
 The following code example illustrates how to get or set the existing custom document properties, and also add new custom document properties.
 
-<table>
-<tr>
-<td>
-[C#]WordDocument doc = new WordDocument();doc.Open( "DocumentProperties.doc" );//Gets custom property value.int phoneNumber = doc.CustomDocumentProperties["Telephone number "].ToInt();//Sets existent custom property value.doc.CustomDocumentProperties["Check by"].Value = "user name";//Adds new custom property.DateTime completedDate = DateTime.Now;doc.CustomDocumentProperties.Add( "Date completed", completedDate );</td></tr>
-<tr>
-<td>
-[VB.NET]Dim doc As New WordDocument()doc.Open("DocumentProperties.doc")‘Gets custom property value.Dim phoneNumber As Integer = doc.CustomDocumentProperties("Telephone number ").ToInt()‘Sets existent custom property value.doc.CustomDocumentProperties("Check by").Value = "user name"‘Adds new custom property.Dim completedDate As DateTime = DateTime.Nowdoc.CustomDocumentProperties.Add("Date completed", completedDate)</td></tr>
-</table>
+{% highlight C# %}  
+
+WordDocument doc = new WordDocument();
+doc.Open( "DocumentProperties.doc" );//Gets custom property value.
+int phoneNumber = doc.CustomDocumentProperties["Telephone number "].ToInt();
+//Sets existent custom property value.
+doc.CustomDocumentProperties["Check by"].Value = "user name";
+//Adds new custom property.DateTime completedDate = DateTime.Now;
+doc.CustomDocumentProperties.Add( "Date completed", completedDate );
+{% endhighlight %}
+
+{% highlight vbnet %} 
+
+Dim doc As New WordDocument()
+doc.Open("DocumentProperties.doc")
+‘Gets custom property value.
+Dim phoneNumber As Integer = doc.CustomDocumentProperties("Telephone number ").ToInt()
+‘Sets existent custom property value.
+doc.CustomDocumentProperties("Check by").Value = "user name"
+‘Adds new custom property.
+Dim completedDate As DateTime = DateTime.Now
+doc.CustomDocumentProperties.Add("Date completed", completedDate)
+
+{% endhighlight %}
 
 
-## Working with Styles
 
-Essential DocIO provides support to create a new style, and then apply the newly created style to a document by adding it to the document styles collection. 
-
-The following code example illustrates how to create a new style and apply it to a Word document.
-
-<table>
-<tr>
-<td>
-[C#]//Creates Paragraph styles.WParagraphStyle style = document.AddParagraphStyle("Heading 1") as WParagraphStyle;//Applies the base style.style.ApplyBaseStyle("Normal");//Applies character formats.style.CharacterFormat.FontName = "Calibri Light";style.CharacterFormat.FontSize = 16f;style.CharacterFormat.TextColor = System.Drawing.Color.FromArgb(46,116,181);//Applies paragraph formats.style.ParagraphFormat.BeforeSpacing = 12;style.ParagraphFormat.AfterSpacing = 0;style.ParagraphFormat.Keep = true;style.ParagraphFormat.KeepFollow = true;style.ParagraphFormat.OutlineLevel = OutlineLevel.Level1;</td></tr>
-<tr>
-<td>
-[VB.NET]'Creates Paragraph styles.Dim style As WParagraphStyle = document.AddParagraphStyle("Heading 1") As WParagraphStyle'Applies the base style.style.ApplyBaseStyle("Normal")'Applies character formats.style.CharacterFormat.FontName = "Calibri Light"style.CharacterFormat.FontSize = 16fstyle.CharacterFormat.TextColor = System.Drawing.Color.FromArgb(46,116,181)'Applies paragraph formats.style.ParagraphFormat.BeforeSpacing = 12style.ParagraphFormat.AfterSpacing = 0style.ParagraphFormat.Keep = Truestyle.ParagraphFormat.KeepFollow = Truestyle.ParagraphFormat.OutlineLevel = OutlineLevel.Level1</td></tr>
-</table>
 
 
 ## Setting the Background for a Document
@@ -692,8 +744,8 @@ To set the background effects in a Microsoft Word document, open the Design menu
 
 
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img7.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img7.png)
+
 
 
 
@@ -702,15 +754,15 @@ Document Color
 
 Background class represents the background color and fill effects in a Word document. The type of the background effect is defined by using the Type property. This property can take the following variants:
 
+
+
 * NoBackground: No background fill effect.
 * Gradient: Gradient fill effect.
 * Picture: Insert a picture as the document background.  
 * Texture: Insert a picture as the.
 * Color: Color fill effect.
-> 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img8.jpeg)' | markdownify }}
-{:.image }
-_Note: Pattern fill effect is currently not supported by Essential DocIO._
+
+_> Note: Pattern fill effect is currently not supported by Essential DocIO._
 
 By using the WordDocument.Background property, you can access the document background. The Background property of WordDocument is automatically initialized with the Type property of the Background set to NoBackground.
 
@@ -722,9 +774,9 @@ _Table_ _15_: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Color</td><td>
@@ -744,20 +796,10 @@ Specifies the type of the background effect for a document.</td></tr>
 </table>
 
 
-> {{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img9.jpeg)' | markdownify }}
-{:.image }
-_Note: For more details on BackgroundGradient class, refer to the_ BackgroundGradient _topic._
 
-The following code example illustrates how to use the Background class.
+> _Note: For more details on BackgroundGradient class, refer to the_ BackgroundGradient _topic._
 
-<table>
-<tr>
-<td>
-[C#]//Opens the Template document.IWordDocument doc1 = new WordDocument();doc1.Open("Background.doc");//Creates a new document.IWordDocument doc2 = new WordDocument();doc2.EnsureMinimal();//Applies Document 1 background to the Document 2.switch (doc1.Background.Type){    case BackgroundType.Gradient:        //Applies Gradient color to the document background.        doc2.Background.Gradient = doc1.Background.Gradient.Clone();        break;    case BackgroundType.Picture:    case BackgroundType.Texture:        //Applies Texture/Picture to the document background.        doc2.Background.Picture = doc1.Background.Picture;        break;    case BackgroundType.Color:        //Applies Background color to the document.        doc2.Background.Color = doc1.Background.Color;        break;    default: break;}doc2.Background.Type = doc1.Background.Type;//Applies Background color to the document.doc1.Background.Type = BackgroundType.Color;doc1.Background.Color = Color.Red;//Saves the document.doc1.Save("Background.doc");doc2.Save("BackgroundNew.doc");</td></tr>
-<tr>
-<td colspan = "2">
-[VB.NET]'Opens the Template document.Dim doc As IWordDocument = New WordDocument()doc1.Open("Background.doc")'Creates a new document.Dim doc2 As IWordDocument = New WordDocument()doc2.EnsureMinimal()‘Applies Document 1 background to the Document 2.Select Case doc1.Background.TypeCase BackgroundType.Gradient            ‘Applies Gradient color to the document background.doc2.Background.Gradient = doc1.Background.Gradient.Clone()Case BackgroundType.Picture, BackgroundType.Texture            ‘Applies Texture/Picture to the document background.doc2.Background.Picture = doc1.Background.PictureCase BackgroundType.Color            ‘Applies Background color to the document.doc2.Background.Color = doc1.Background.ColorCase ElseEnd Selectdoc2.Background.Type = doc1.Background.Type‘Applies Background color to the document.doc1.Background.Type = BackgroundType.Colordoc1.Background.Color = Color.Red'Saves the document.doc1.Save("Background.doc")doc2.Save("BackgroundNew.doc")</td></tr>
-</table>
+
 
 
 Background Gradient
@@ -766,8 +808,8 @@ Background Gradient class represents the background gradient fill effect in the 
 
 The following screenshot shows the Fill Effects dialog box that appears.
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img10.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img10.png)
+
 
 
 
@@ -784,9 +826,9 @@ _Table_ _16_: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Color1</td><td>
@@ -812,9 +854,9 @@ _Table_ _17_: Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -824,15 +866,30 @@ Clones current Gradient object.</td></tr>
 
 The following code example illustrates how to use the Background Gradient class.
 
-<table>
-<tr>
-<td>
-[C#]//Instantiates Word document object.IWordDocument doc = new WordDocument();//Sets background to the document.doc.Background.Type = BackgroundType.Gradient;doc.Background.Gradient.Color1 = Color.White;doc.Background.Gradient.Color2 = Color.Black;doc.Background.Gradient.ShadingStyle = GradientShadingStyle.FromCenter;doc.Background.Gradient.ShadingVariant = GradientShadingVariant.ShadingDown;</td></tr>
-<tr>
-<td>
-[VB.NET]'Instantiates Word document object.Dim doc As IWordDocument = New WordDocument()'Sets background to the document.doc.Background.Type = BackgroundType.Gradientdoc.Background.Gradient.Color1 = Color.Whitedoc.Background.Gradient.Color2 = Color.Blackdoc.Background.Gradient.ShadingStyle = GradientShadingStyle.FromCenterdoc.Background.Gradient.ShadingVariant = GradientShadingVariant.ShadingDown</td></tr>
-</table>
+{% highlight C# %}  
 
+//Instantiates Word document object.
+IWordDocument doc = new WordDocument();
+//Sets background to the document.doc.Background.Type = BackgroundType.Gradient;
+doc.Background.Gradient.Color1 = Color.White;
+doc.Background.Gradient.Color2 = Color.Black;
+doc.Background.Gradient.ShadingStyle = GradientShadingStyle.FromCenter;
+doc.Background.Gradient.ShadingVariant = GradientShadingVariant.ShadingDown;
+
+{% endhighlight %}
+
+{% highlight vbnet %} 
+
+'Instantiates Word document object.
+Dim doc As IWordDocument = New WordDocument()
+'Sets background to the document.
+doc.Background.Type = BackgroundType.Gradient
+doc.Background.Gradient.Color1 = Color.White
+doc.Background.Gradient.Color2 = Color.Black
+doc.Background.Gradient.ShadingStyle = GradientShadingStyle.FromCenter
+doc.Background.Gradient.ShadingVariant = GradientShadingVariant.ShadingDown
+
+{% endhighlight %}
 
 ## Working with Watermarks
 
@@ -866,9 +923,9 @@ Public Properties
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 EntityType</td><td>
@@ -884,8 +941,8 @@ Gets or sets the watermark type such as picture or text or none.</td></tr>
 
 TextWatermark class represents text watermarks in a Word document. The following screenshot illustrates the Text Watermark settings.
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img11.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img11.png)
+
 
 
 
@@ -919,9 +976,9 @@ _Table_ _18_: Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 TextWatermark()</td><td>
@@ -943,9 +1000,9 @@ _Table_ _19_: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Color</td><td>
@@ -979,22 +1036,44 @@ Gets or sets the text for the watermark.</td></tr>
 
 The following code example illustrates how to use the TextWatermark class.
 
-<table>
-<tr>
-<td>
-[C#]//Creates a new Word document.IWordDocument doc = new WordDocument();//Adds one empty section and one empty paragraph to the document.doc.EnsureMinimal();//Creates a new text watermark.TextWatermark textWatermark = new TextWatermark();//Sets the created watermark to document.doc.Watermark = textWatermark;//Sets the text watermark font size.textWatermark.Size = 96;//Sets the text watermark layout to Horizontal.textWatermark.Layout = WatermarkLayout.Horizontal;textWatermark.Semitransparent = false;//Sets the text watermark text color.textWatermark.Color = Color.Black;//Sets the text watermark text.textWatermark.Text = "TextWatermark"; </td></tr>
-<tr>
-<td>
-[VB.NET]‘Creates a new Word document.Dim doc As IWordDocument = New WordDocument()‘Adds one empty section and one empty paragraph to the document.doc.EnsureMinimal()‘Creates a new text watermark.Dim textWatermark As TextWatermark = New TextWatermark()‘Sets the created watermark to document.doc.Watermark = textWatermark‘Sets the text watermark font size.textWatermark.Size = 96‘Sets the text watermark layout to Horizontal.textWatermark.Layout = WatermarkLayout.HorizontaltextWatermark.Semitransparent = False‘Sets the text watermark text color.textWatermark.Color = Color.Black‘Sets the text watermark text.textWatermark.Text = "TextWatermark"</td></tr>
-</table>
+{%highlight c#%}
+//Creates a new Word document.
+IWordDocument doc = new WordDocument();
+//Adds one empty section and one empty paragraph to the document.
+doc.EnsureMinimal();//Creates a new text watermark.
+TextWatermark textWatermark = new TextWatermark();
+//Sets the created watermark to document.doc.Watermark = textWatermark;
+//Sets the text watermark font size.textWatermark.Size = 96;
+//Sets the text watermark layout to Horizontal.
+textWatermark.Layout = WatermarkLayout.Horizontal;
+textWatermark.Semitransparent = false;
+//Sets the text watermark text color.
+textWatermark.Color = Color.Black;
+//Sets the text watermark text.
+textWatermark.Text = "TextWatermark"; 
 
+{%endhighlight%}
+
+{%highlight vbnet%}
+‘Creates a new Word document.
+Dim doc As IWordDocument = New WordDocument()
+‘Adds one empty section and one empty paragraph to the document.
+doc.EnsureMinimal()‘Creates a new text watermark.
+Dim textWatermark As TextWatermark = New TextWatermark()
+‘Sets the created watermark to document.doc.Watermark = textWatermark
+‘Sets the text watermark font size.textWatermark.Size = 96‘
+Sets the text watermark layout to Horizontal.textWatermark.Layout = WatermarkLayout.HorizontaltextWatermark.Semitransparent = False
+‘Sets the text watermark text color.textWatermark.Color = Color.Black‘
+Sets the text watermark text.textWatermark.Text = "TextWatermark"
+
+{%endhighlight%}
 
 ### Picture watermark
 
 PictureWatermark class represents picture watermarks in a Word document.
 
-{{ '![](Working-with-Word-Documents_images/Working-with-Word-Documents_img12.png)' | markdownify }}
-{:.image }
+![](Working-with-Word-Documents_images/Working-with-Word-Documents_img12.png)
+
 
 
 
@@ -1019,9 +1098,9 @@ _Table_ _20_: Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 PictureWatermark()</td><td>
@@ -1039,9 +1118,9 @@ _Table_ _21_: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 EntityType</td><td>
@@ -1057,20 +1136,35 @@ Gets or sets picture scaling (in percent).</td></tr>
 <tr>
 <td>
 Washout</td><td>
-Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{ '_true_' | markdownify }}.</td></tr>
+Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to  '_true_.</td></tr>
 </table>
 
 
 The following code example illustrates how to use the PictureWatermark class.
 
-<table>
-<tr>
-<td>
-[C#]//Initializes a new Word document.IWordDocument doc = new WordDocument();doc.EnsureMinimal();//Creates a new picture watermark.PictureWatermark picWatermark = new PictureWatermark();//Sets the scaling to picture.picWatermark.Scaling = 120f;picWatermark.Washout = true;//Adds the picture watermark to document.doc.Watermark = picWatermark;//Adds the picture to the picture watermark.picWatermark.Picture = Image.FromFile(ImagesPath + "Water lilies.jpg");</td></tr>
-<tr>
-<td>
-'[VB.NET]‘Initializes a new Word document.Dim doc As IWordDocument = New WordDocument()doc.EnsureMinimal()‘Creates a new picture watermark.Dim picWatermark As PictureWatermark = New PictureWatermark()‘Sets the scaling to picturepicWatermark.Scaling = 120.0FpicWatermark.Washout = True‘Adds the picture watermark to document.doc.Watermark = picWatermark‘Adds the picture to the picture watermark.picWatermark.Picture = Image.FromFile(ImagesPath and "Water lilies.jpg")</td></tr>
-</table>
+{%highlight c#%}
+//Initializes a new Word document.
+IWordDocument doc = new WordDocument();
+doc.EnsureMinimal();
+//Creates a new picture watermark.
+PictureWatermark picWatermark = new PictureWatermark();
+//Sets the scaling to picture.picWatermark.Scaling = 120f;
+picWatermark.Washout = true;
+//Adds the picture watermark to document.doc.Watermark = picWatermark;
+//Adds the picture to the picture watermark.picWatermark.Picture = Image.FromFile(ImagesPath + "Water lilies.jpg");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+'‘Initializes a new Word document.
+Dim doc As IWordDocument = New WordDocument()
+doc.EnsureMinimal()
+‘Creates a new picture watermark.Dim picWatermark As PictureWatermark = New PictureWatermark()‘
+Sets the scaling to picturepicWatermark.Scaling = 120.0F
+picWatermark.Washout = True‘Adds the picture watermark to document.
+doc.Watermark = picWatermark‘Adds the picture to the picture watermark.
+picWatermark.Picture = Image.FromFile(ImagesPath and "Water lilies.jpg")
+{%endhighlight%}
 
 
 ## Iterating Document Elements
@@ -1079,26 +1173,25 @@ This section shows how to iterate document elements from the WordDocument instan
 
 The following code example illustrates how to iterate all the paragraphs in the document and set horizontal alignment to Right.
 
-<table>
-<tr>
-<td>
-[C#] //Opens the Word document.WordDocument wordDoc = new WordDocument(“Sample.docx”);//Sets the Page orientation of the section.foreach (WSection section in wordDoc.Sections){   foreach (TextBodyItem textBodyItem in section.Body.ChildEntities)   {      UpdateParagraphAlignment(textBodyItem);   }}</td></tr>
-<tr>
-<td>
-[VB.NET] 'Opens the Word document.Dim wordDoc As New WordDocument("Sample.docx")'Sets the Page orientation of the section.For Each section As WSection In wordDoc.Sections    For Each textBodyItem As TextBodyItem In section.Body.ChildEntities          UpdateParagraphAlignment(textBodyItem)    NextNext</td></tr>
-</table>
+{% highlight C# %} 
+ //Opens the Word document.
+ WordDocument wordDoc = new WordDocument(“Sample.docx”);
+ //Sets the Page orientation of the section.
+ foreach (WSection section in wordDoc.Sections){ 
+ foreach (TextBodyItem textBodyItem in section.Body.ChildEntities)   {   
+ UpdateParagraphAlignment(textBodyItem);   }}
+ {% endhighlight %}
+ 
+ {% highlight vbnet %} 
+ 'Opens the Word document.
+ Dim wordDoc As New WordDocument("Sample.docx")
+ 'Sets the Page orientation of the section.
+ For Each section As WSection In wordDoc.Sections  
+ For Each textBodyItem As TextBodyItem In section.Body.ChildEntities       
+ UpdateParagraphAlignment(textBodyItem)    NextNext
+{% endhighlight %}
 
 
-The following code example illustrates the usage of the UpdateParagraphAlignment method.
-
-<table>
-<tr>
-<td>
-[C#] ///Updates Paragraph Horizontal alignment.private void UpdateParagraphAlignment(TextBodyItem textBodyItem){    if (textBodyItem is WParagraph)    {        (textBodyItem as WParagraph).ParagraphFormat.HorizontalAlignment = Syncfusion.DocIO.DLS.HorizontalAlignment.Right;            }    if (textBodyItem is WTable)    {        WTable table = textBodyItem as WTable;        foreach (WTableRow row in table.Rows)        {           foreach (WTableCell cell in row.Cells)            {                 foreach (TextBodyItem item in cell.ChildEntities)                 {                    UpdateParagraphAlignment(item);               }            }         }     }}</td></tr>
-<tr>
-<td>
-[VB.NET] '‘Updates Paragraph Horizontal alignment.Private Sub UpdateParagraphAlignment(textBodyItem As TextBodyItem)    If TypeOf textBodyItem Is WParagraph Then        TryCast(textBodyItem, WParagraph).ParagraphFormat.HorizontalAlignment = Syncfusion.DocIO.DLS.HorizontalAlignment.Right    End If   If TypeOf textBodyItem Is WTable Then        Dim table As WTable = TryCast(textBodyItem, WTable)        For Each row As WTableRow In table.Rows            For Each cell As WTableCell In row.Cells                For Each item As TextBodyItem In cell.ChildEntities                    UpdateParagraphAlignment(item)                Next            Next        Next    End IfEnd Sub</td></tr>
-</table>
 
 
 ## Setting View Options
@@ -1125,30 +1218,22 @@ This property is used to set the document default layout option when opening a d
 
 The following code example illustrates how to set the DocumentViewType property.
 
-<table>
-<tr>
-<td>
-[C#] //Sets the Document View Type for the Word document as WebLayout.wordDoc.ViewSetup.DocumentViewType = DocumentViewType.WebLayout;</td></tr>
-<tr>
-<td>
-[VB.NET] ‘Sets the Document View Type for the Word document as WebLayout.wordDoc.ViewSetup.DocumentViewType = DocumentViewType.WebLayout</td></tr>
-</table>
+{% highlight C# %}  
+ //Sets the Document View Type for the Word document as WebLayout.
+ wordDoc.ViewSetup.DocumentViewType = DocumentViewType.WebLayout;
+{% endhighlight %}
+
+{% highlight vbnet %} 
+ ‘Sets the Document View Type for the Word document as WebLayout.
+ wordDoc.ViewSetup.DocumentViewType = DocumentViewType.WebLayout
+{% endhighlight %}
 
 
 ZoomPercent
 
 This property is used to set the document default zoom percent when opening the generated document in Microsoft Word.
 
-The following code example illustrates how to use the ZoomPercent property.
 
-<table>
-<tr>
-<td>
-[C#]//Sets the zoom percent of viewsetup.wordDoc.ViewSetup.ZoomPercent = 70;</td></tr>
-<tr>
-<td>
-[VB.NET] ‘Sets the zoom percent of viewsetup.wordDoc.ViewSetup.ZoomPercent = 70</td></tr>
-</table>
 
 
 ZoomType
@@ -1164,15 +1249,16 @@ This property is used to set the document default Zoom type when opening a docum
 
 The following code example illustrates how to set the DocumentViewType property.
 
-<table>
-<tr>
-<td>
-[C#] //Sets the zoomtype of viewsetup as Page width.wordDoc.ViewSetup.ZoomType = ZoomType.PageWidth;</td></tr>
-<tr>
-<td>
-[VB.NET] ‘Sets the zoomtype of viewsetup as Page width.wordDoc.ViewSetup.ZoomType = ZoomType.PageWidth</td></tr>
-</table>
+{% highlight C# %} 
+ //Sets the zoomtype of viewsetup as Page width.
+ wordDoc.ViewSetup.ZoomType = ZoomType.PageWidth;
+ {% endhighlight %}
+ 
+ {% highlight vbnet %} 
+ ‘Sets the zoomtype of viewsetup as Page width.
+ wordDoc.ViewSetup.ZoomType = ZoomType.PageWidth
 
+{% endhighlight %}
 
 ## Accepting or Rejecting Track Changes
 
@@ -1190,15 +1276,5 @@ ParagraphItem and TextBodyItem (WParagraph and WTable are TextBodyItems) objects
 
 WordDocument.HasChanges specifies whether the document has any revision (change). When the document has at least one revision, it returns true.
 
-By using the WordDocument.TrackChanges property, you can enable revision tracking of a document opened in Microsoft Word. Note that this setting neither affects the changes made to the document by using DocIO nor tracked as revisions.
-
-<table>
-<tr>
-<td>
-[C#] //Opens a Word document.WordDocument doc = new WordDocument(@"Essential DocIO.doc", FormatType.Doc);foreach (WSection section in doc.Sections){    for (int i = 0; i <= section.Paragraphs.Count - 1; i++)    {        para = section.Paragraphs[i];        //Checks each paragraph item’s revision.        foreach (ParagraphItem item in para.Items)        {            Console.WriteLine(item.EntityType.ToString() + " Inserted: " + item.IsInsertRevision.ToString());            Console.WriteLine(item.EntityType.ToString() + "Deleted:" + item.IsDeleteRevision.ToString());        }    }}//Accepts tracking changes of the document.doc.AcceptChanges();doc.Save("sample.doc");</td></tr>
-<tr>
-<td>
-[VB.NET]‘Opens a Word document.Dim doc As WordDocument = New WordDocument("Essential DocIO.doc", FormatType.Doc)For Each section As WSection In doc.Sections    For i As Integer = 0 To section.Paragraphs.Count - 1        para = section.Paragraphs(i)        'Checks each paragraph item’s revision.         For Each item As ParagraphItem In para.Items              Console.WriteLine((item.EntityType.ToString() and " Inserted: ") + item.IsInsertRevision.ToString())              Console.WriteLine((item.EntityType.ToString() and "Deleted:") + item.IsDeleteRevision.ToString())         Next    NextNext'Accepts tracking changes of the document.doc.AcceptChanges()doc.Save("sample.doc")</td></tr>
-</table>
 
 

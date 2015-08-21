@@ -40,9 +40,9 @@ _Table_ _89__: Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 TableOfContent.TableOfContent (IWordDocument)</td><td>
@@ -60,9 +60,9 @@ _Table_ _90__: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 EntityType</td><td>
@@ -106,14 +106,13 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 </table>
 
 
-> {{ '![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels._
+
+> _Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels._
 
 
 
-{{ '![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img2.png)' | markdownify }}
-{:.image }
+![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img2.png)
+
 
 
 
@@ -124,9 +123,9 @@ _Table_ _91__: Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetTOCLevelStyleName</td><td>
@@ -136,17 +135,42 @@ Gets the style name for TOC level.</td></tr>
 SetTOCLevelStyle </td><td>
 Specifies the style for TOC level.</td></tr>
 </table>
+
 The following code example illustrates how to insert TOC based on custom styles.
 
-<table>
-<tr>
-<td>
-[C#]WordDocument doc = new WordDocument();doc.EnsureMinimal();WParagraph para = doc.LastParagraph;TableOfContent toc = para.AppendTOC(1, 1);toc.UseHeadingStyles = false;//Sets the TOC level style based on which the TOC should be created.toc. SetTOCLevelStyle(1, "MyStyle1");WSection section = doc.LastSection;WParagraph newPara = section.AddParagraph() as WParagraph;WTextRange text = newPara.AppendText("My Style1") as WTextRange;newPara.ApplyStyle("MyStyle1");//Updates the table of contents.doc.UpdateTableOfContents();</td></tr>
-<tr>
-<td>
-[VB.NET]Dim doc As New WordDocument()doc.EnsureMinimal()Dim para As WParagraph = doc.LastParagraphDim toc As TableOfContent = para.AppendTOC(1, 1)toc.UseHeadingStyles = False'Sets the TOC level style based on which the TOC should be created.toc.SetTOCLevelStyle(1, "MyStyle1")Dim section As WSection = doc.LastSectionDim newPara As WParagraph = TryCast(section.AddParagraph(), WParagraph)Dim text As WTextRange = TryCast(newPara.AppendText("My Style1"), WTextRange)newPara.ApplyStyle("MyStyle1")'Updates the table of contents.doc.UpdateTableOfContents()</td></tr>
-</table>
+{% highlight C# %}  
 
+WordDocument doc = new WordDocument();
+doc.EnsureMinimal();
+WParagraph para = doc.LastParagraph;
+TableOfContent toc = para.AppendTOC(1, 1);
+toc.UseHeadingStyles = false;
+//Sets the TOC level style based on which the TOC should be created.
+toc. SetTOCLevelStyle(1, "MyStyle1");
+WSection section = doc.LastSection;
+WParagraph newPara = section.AddParagraph() as WParagraph;
+WTextRange text = newPara.AppendText("My Style1") as WTextRange;
+newPara.ApplyStyle("MyStyle1");
+//Updates the table of contents.
+doc.UpdateTableOfContents();
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim doc As New WordDocument()doc.EnsureMinimal()
+Dim para As WParagraph = doc.LastParagraphDim 
+toc As TableOfContent = para.AppendTOC(1, 1)
+toc.UseHeadingStyles = False
+'Sets the TOC level style based on which the TOC should be created.
+toc.SetTOCLevelStyle(1, "MyStyle1")
+Dim section As WSection = doc.LastSection
+Dim newPara As WParagraph = TryCast(section.AddParagraph(), WParagraph)
+Dim text As WTextRange = TryCast(newPara.AppendText("My Style1"), WTextRange)newPara.ApplyStyle("MyStyle1")
+'Updates the table of contents.
+doc.UpdateTableOfContents()
+
+ {% endhighlight %}
 
 ## Updating Table of contents
 
@@ -154,9 +178,8 @@ UpdatingTableOfContents method of WordDocument class updates table of contents f
 
 
 
-> {{ '![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img3.jpeg)' | markdownify }}
-{:.image }
-_Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications._
+
+> _Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications._
 
 
 
@@ -171,13 +194,15 @@ The following are the known limitations:
 
 The following code example illustrates how to update TOC.
 
-<table>
-<tr>
-<td>
-[C#]WordDocument doc = new WordDocument(“Sample.docx”);//Updates the table of contents.doc.UpdateTableOfContents();</td></tr>
-<tr>
-<td>
-[VB.NET]Dim doc As New WordDocument(“Sample.docx”)'Updates the table of contents.doc.UpdateTableOfContents()</td></tr>
-</table>
+{% highlight C# %} 
 
+WordDocument doc = new WordDocument(“Sample.docx”);//Updates the table of contents.doc.UpdateTableOfContents();
+ 
+ {% endhighlight %} 
+
+{% highlight vbnet %} 
+
+Dim doc As New WordDocument(“Sample.docx”)'Updates the table of contents.doc.UpdateTableOfContents()
+
+{% endhighlight %}
 

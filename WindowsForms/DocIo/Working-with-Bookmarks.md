@@ -15,20 +15,17 @@ The following steps illustrate how to add a bookmark in Word:
 
 1. Select the text for which you like to assign as a bookmark.
 2. On the Insert menu, click Bookmark. This opens the Bookmark dialog box.
+   
+   ![](Working-with-Bookmarks_images/Working-with-Bookmarks_img1.png)
 
-
-
-{{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img1.png)' | markdownify }}
-{:.image }
 
 
 
 
 3. Type the name of the bookmark.
 4. Click Add button.
-> 
-{{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img2.jpeg)' | markdownify }}
-{:.image }
+
+
 _Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words._
 
 
@@ -65,9 +62,9 @@ _Table_ _66__: BookmarkStart Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 BookmarkStart (IWordDocument, string)</td><td>
@@ -81,9 +78,9 @@ _Table_ _67__: BookmarkEnd Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 BookmarkEnd (IWordDocument, string)</td><td>
@@ -97,9 +94,9 @@ _Table_ _68__: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 EntityType</td><td>
@@ -119,22 +116,81 @@ DocIO provides support to navigate to bookmarks. For details, see BookmarkNaviga
 
 
 
-> {{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img3.jpeg)' | markdownify }}
-{:.image }
+
 _Note: Modification of bookmarks in the Bookmarks Collection causes document corruption._
 
 
 
 The following code example illustrates how to use bookmarks.
 
-<table>
-<tr>
-<td>
-[C#]IWordDocument doc = new WordDocument();IWSection section = doc.AddSection();IWParagraph paragraph = section.AddParagraph();paragraph.AppendText("Book with one ");paragraph.AppendBookmarkStart("one_word");paragraph.AppendText("word");paragraph.AppendBookmarkEnd("one_word");paragraph.AppendText(" selected");section.AddParagraph();paragraph = section.AddParagraph();paragraph.AppendBookmarkStart("beginning_paragraph");paragraph.AppendText("Beginning of the paragraph selected");section.AddParagraph();paragraph = section.AddParagraph();paragraph.AppendBookmarkStart("bigger_bookmark");paragraph.AppendText("Smaller bookmark ");paragraph.AppendBookmarkStart("smaller_bookmark");paragraph.AppendText("is inside ");paragraph.AppendBookmarkEnd("smaller_bookmark");paragraph.AppendText("of the bigger bookmark");paragraph.AppendBookmarkEnd("bigger_bookmark");paragraph = section.AddParagraph();paragraph.AppendBookmarkStart("multi_paragraph");paragraph.AppendText("Bookmark starts here and ends in the next paragraph");paragraph = section.AddParagraph();paragraph.AppendText("This ");paragraph.AppendBookmarkStart("overlapped bookmark");paragraph.AppendText("bookmark over");paragraph.AppendBookmarkEnd("multi_paragraph");paragraph.AppendText("laps ");paragraph.AppendBookmarkEnd("overlapped bookmark");paragraph.AppendText("with previous one");doc.Save("Bookmarks.doc");</td></tr>
-<tr>
-<td>
-[VB.NET]Dim doc As IWordDocument = New WordDocument()Dim section As IWSection = doc.AddSection()Dim paragraph As IWParagraph = section.AddParagraph()paragraph.AppendText("Book with one ")paragraph.AppendBookmarkStart("one_word")paragraph.AppendText("word")paragraph.AppendBookmarkEnd("one_word")paragraph.AppendText(" selected")section.AddParagraph()paragraph = section.AddParagraph()paragraph.AppendBookmarkStart("beginning_paragraph")paragraph.AppendText("Beginning of the paragraph selected")section.AddParagraph()paragraph = section.AddParagraph()paragraph.AppendBookmarkStart("bigger_bookmark")paragraph.AppendText("Smaller bookmark ")paragraph.AppendBookmarkStart("smaller_bookmark")paragraph.AppendText("is inside ")paragraph.AppendBookmarkEnd("smaller_bookmark")paragraph.AppendText("of the bigger bookmark")paragraph.AppendBookmarkEnd("bigger_bookmark")paragraph = section.AddParagraph()paragraph.AppendBookmarkStart("multi_paragraph")paragraph.AppendText("Bookmark starts here and ends in the next paragraph")paragraph = section.AddParagraph()paragraph.AppendText("This ")paragraph.AppendBookmarkStart("overlapped bookmark")paragraph.AppendText("bookmark over")paragraph.AppendBookmarkEnd("multi_paragraph")paragraph.AppendText("laps ")paragraph.AppendBookmarkEnd("overlapped bookmark")paragraph.AppendText("with previous one")doc.Save("Bookmarks.doc")</td></tr>
-</table>
+{%highlight c#%}
+IWordDocument doc = new WordDocument();
+IWSection section = doc.AddSection();
+IWParagraph paragraph = section.AddParagraph();
+paragraph.AppendText("Book with one ");
+paragraph.AppendBookmarkStart("one_word");
+paragraph.AppendText("word");
+paragraph.AppendBookmarkEnd("one_word");
+paragraph.AppendText(" selected");
+section.AddParagraph();
+paragraph = section.AddParagraph();
+paragraph.AppendBookmarkStart("beginning_paragraph");
+paragraph.AppendText("Beginning of the paragraph selected");
+section.AddParagraph();paragraph = section.AddParagraph();
+paragraph.AppendBookmarkStart("bigger_bookmark");
+paragraph.AppendText("Smaller bookmark ");
+paragraph.AppendBookmarkStart("smaller_bookmark");
+paragraph.AppendText("is inside ");
+paragraph.AppendBookmarkEnd("smaller_bookmark");
+paragraph.AppendText("of the bigger bookmark");
+paragraph.AppendBookmarkEnd("bigger_bookmark");
+paragraph = section.AddParagraph();
+paragraph.AppendBookmarkStart("multi_paragraph");
+paragraph.AppendText("Bookmark starts here and ends in the next paragraph");
+paragraph = section.AddParagraph();paragraph.AppendText("This ");
+paragraph.AppendBookmarkStart("overlapped bookmark");
+paragraph.AppendText("bookmark over");
+paragraph.AppendBookmarkEnd("multi_paragraph");
+paragraph.AppendText("laps ");
+paragraph.AppendBookmarkEnd("overlapped bookmark");
+paragraph.AppendText("with previous one");
+doc.Save("Bookmarks.doc");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+Dim doc As IWordDocument = New WordDocument()
+Dim section As IWSection = doc.AddSection()
+Dim paragraph As IWParagraph = section.AddParagraph()
+paragraph.AppendText("Book with one ")
+paragraph.AppendBookmarkStart("one_word")
+paragraph.AppendText("word")
+paragraph.AppendBookmarkEnd("one_word")
+paragraph.AppendText(" selected")
+section.AddParagraph()
+paragraph = section.AddParagraph()
+paragraph.AppendBookmarkStart("beginning_paragraph")
+paragraph.AppendText("Beginning of the paragraph selected")section.AddParagraph()
+paragraph = section.AddParagraph()paragraph.AppendBookmarkStart("bigger_bookmark")
+paragraph.AppendText("Smaller bookmark ")paragraph.AppendBookmarkStart("smaller_bookmark")
+paragraph.AppendText("is inside ")
+paragraph.AppendBookmarkEnd("smaller_bookmark")
+paragraph.AppendText("of the bigger bookmark")
+paragraph.AppendBookmarkEnd("bigger_bookmark")paragraph = section.AddParagraph()
+paragraph.AppendBookmarkStart("multi_paragraph")
+paragraph.AppendText("Bookmark starts here and ends in the next paragraph")
+paragraph = section.AddParagraph()
+paragraph.AppendText("This ")
+paragraph.AppendBookmarkStart("overlapped bookmark")
+paragraph.AppendText("bookmark over")
+paragraph.AppendBookmarkEnd("multi_paragraph")
+paragraph.AppendText("laps ")
+paragraph.AppendBookmarkEnd("overlapped bookmark")
+paragraph.AppendText("with previous one")doc.Save("Bookmarks.doc")
+
+{%endhighlight%}
+
+
 ## Bookmark Navigation
 
 BookmarkNavigator is used for navigating to bookmarks in a Word document.
@@ -156,9 +212,9 @@ _Table_ _69__: Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 BookmarkNavigator.BookmarkNavigator (IWordDocument)</td><td>
@@ -170,9 +226,9 @@ _Table_ _70__: Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrentBookmark</td><td>
@@ -190,9 +246,9 @@ _Table_ _71__: Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 DeleteBookmarkContent</td><td>
@@ -238,8 +294,8 @@ Inserts the paragraph.</td></tr>
 InsertTextBodyPart</td><td>
 Inserts the body part of the text.</td></tr>
 </table>
-> {{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img4.jpeg)' | markdownify }}
-{:.image }
+
+
 _Note:_
 
 > * _Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark._
@@ -254,58 +310,86 @@ Due to MS Word’s behavior, you cannot replace the bookmark content, when the b
 
 Case 1
 
-{{ '![^E6721B4986F9545EF92693A89BD41D3E477EF62EB5EA1E82CE^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img5.png)' | markdownify }}
-{:.image }
+![][^E6721B4986F9545EF92693A89BD41D3E477EF62EB5EA1E82CE^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img5.png)
+
 
 
 Case 2
 
-{{ '![^808D0403340DCCC6C0D4853B479F46AE75C9328F5BFE21863E^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img6.png)' | markdownify }}
-{:.image }
+![][^808D0403340DCCC6C0D4853B479F46AE75C9328F5BFE21863E^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img6.png)
+
 
 
 ## Replacing Content in a Bookmark
 
 The following code example illustrates how to get and replace bookmark content by using the BookmarkNavigator class with TextBodyPart.
 
-<table>
-<tr>
-<td>
-[C#] IWordDocument doc = new WordDocument( Path + "BookmarkNavigator.doc" );BookmarksNavigator bn = new BookmarksNavigator( doc );bn.MoveToBookmark( "bm_bodypart" );TextBodyPart part = bn.GetBookmarkContent();bn.MoveToBookmark( "bm_empty" );bn.ReplaceBookmarkContent( part );</td></tr>
-<tr>
-<td>
-[VB.NET] Dim doc As IWordDocument = New WordDocument(Path and "BookmarkNavigator.doc")Dim bn As BookmarksNavigator = New BookmarksNavigator(doc)bn.MoveToBookmark("bm_bodypart")Dim part As TextBodyPart = bn.GetBookmarkContent()bn.MoveToBookmark("bm_empty")bn.ReplaceBookmarkContent(part)</td></tr>
-</table>
+{%highlight c#%}
+IWordDocument doc = new WordDocument( Path + "BookmarkNavigator.doc" );
+BookmarksNavigator bn = new BookmarksNavigator( doc );
+bn.MoveToBookmark( "bm_bodypart" );
+TextBodyPart part = bn.GetBookmarkContent();
+bn.MoveToBookmark( "bm_empty" );
+bn.ReplaceBookmarkContent( part );
 
+{%endhighlight%}
+
+{%highlight vbnet%}
+Dim doc As IWordDocument = New WordDocument(Path and "BookmarkNavigator.doc")
+Dim bn As BookmarksNavigator = New BookmarksNavigator(doc)bn.MoveToBookmark("bm_bodypart")
+Dim part As TextBodyPart = bn.GetBookmarkContent()bn.MoveToBookmark("bm_empty")bn.ReplaceBookmarkContent(part)
+
+{%endhighlight%}
 
 The following code example illustrates how to get and replace bookmark content by using the BookmarkNavigator class with WordDocumentPart. This can be used when you require to replace the content in between bookmark start and bookmark end with multiple sections.
 
-<table>
-<tr>
-<td>
-[C#] IWordDocument doc = new WordDocument( Path + "BookmarkNavigator.doc" );BookmarksNavigator bn = new BookmarksNavigator( doc );bn.MoveToBookmark( "bm_bodypart" );WordDocumentPart part = bn.GetContent();bn.MoveToBookmark( "bm_empty" );bn.ReplaceContent( part );</td></tr>
-<tr>
-<td>
-[VB.NET] Dim doc As IWordDocument = New WordDocument(Path and "BookmarkNavigator.doc")Dim bn As BookmarksNavigator = New BookmarksNavigator(doc)bn.MoveToBookmark("bm_bodypart")Dim part As WordDocumentPart = bn.GetContent()bn.MoveToBookmark("bm_empty")bn.ReplaceContent(part)</td></tr>
-</table>
+{%highlight c#%}
+IWordDocument doc = new WordDocument( Path + "BookmarkNavigator.doc" );
+BookmarksNavigator bn = new BookmarksNavigator( doc );
+bn.MoveToBookmark( "bm_bodypart" );
+WordDocumentPart part = bn.GetContent();
+bn.MoveToBookmark( "bm_empty" );
+bn.ReplaceContent( part );
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+Dim doc As IWordDocument = New WordDocument(Path and "BookmarkNavigator.doc")
+Dim bn As BookmarksNavigator = New BookmarksNavigator(doc)bn.MoveToBookmark("bm_bodypart")
+Dim part As WordDocumentPart = bn.GetContent()bn.MoveToBookmark("bm_empty")bn.ReplaceContent(part)
+{%endhighlight%}
+
+
+
 ## Inserting and Deleting Content in a Bookmark
 
 You can also preserve the formatting in the template (target) document while inserting or replacing the bookmark with a string, by deleting the content of the bookmark without deleting its format. The following code example illustrates this.
 
-<table>
-<tr>
-<td>
-[C#]//Moves to the Essential_DocIO bookmark.bk.MoveToBookmark("Essential_DocIO");//Delete bookmark content without deleting the format in the target document.bk.DeleteBookmarkContent(false);//Insert Textbk.InsertText("Essential XlsIO is a Non UI component that can be used in both ASP.NET and windows forms applications. The usage is common for both environments except for the part where the created spreadsheet is saved to disk or stream in the case of a windows forms application and streamed to the client browser in the case of asp.net applications.");    </td></tr>
-<tr>
-<td>
-[VB.NET]'Moves to the Essential_DocIO bookmark.bk.MoveToBookmark("Essential_DocIO")'Deletes bookmark content without deleting the format in the target document.bk.DeleteBookmarkContent(false)'Inserts text.bk.InsertText("Essential XlsIO is a Non UI component that can be used in both ASP.NET and windows forms applications. The usage is common for both environments except for the part where the created spreadsheet is saved to disk or stream in the case of a windows forms application and streamed to the client browser in the case of asp.net applications.")     </td></tr>
-</table>
+
+{%highlight c#%}
+//Moves to the Essential_DocIO bookmark.bk.MoveToBookmark("Essential_DocIO");
+//Delete bookmark content without deleting the format in the target document.bk.DeleteBookmarkContent(false);
+//Insert Textbk.InsertText("Essential XlsIO is a Non UI component that can be used in both ASP.NET and windows forms applications. 
+The usage is common for both environments except for the part where the created spreadsheet is saved to disk or stream in the case of a windows forms application and streamed to the client browser in the case of asp.net applications.");    
+
+{%endhighlight%}
+
+
+
+{%highlight vbnet%}
+'Moves to the Essential_DocIO bookmark.bk.MoveToBookmark("Essential_DocIO")
+'Deletes bookmark content without deleting the format in the target document.bk.DeleteBookmarkContent(false)
+'Inserts text.bk.InsertText("Essential XlsIO is a Non UI component that can be used in both ASP.NET and windows forms applications. 
+The usage is common for both environments except for the part where the created spreadsheet is saved to disk or stream in the case of a windows forms application and streamed to the client browser in the case of asp.net applications.")     </td></tr>
+
+{%endhighlight%}
+
+
 ## WordDocumentPart
 
 WordDocumentPart class contains the collection of sections. WordDocumentPart is usually used with the Bookmark Navigator.
 
-> {{ '![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image133_0.jpg](Working-with-Bookmarks_images/Working-with-Bookmarks_img7.jpeg)' | markdownify }}
-{:.image }
+
 _Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document._
 
 Public Constructors
@@ -314,9 +398,9 @@ _Table_ _72__: Constructors Table_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 WordDocumentPart WordDocumentPart()</td><td>
@@ -334,9 +418,9 @@ _Table_ _73__: Properties Table_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Sections</td><td>
@@ -350,9 +434,9 @@ _Table_ _74__: Methods Table_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Load</td><td>
@@ -370,25 +454,57 @@ Closes the WordDocumentPart.instance.</td></tr>
 
 The following code example illustrates how to use the WordDocumentPart class with the BookmarksNavigator.
 
-<table>
-<tr>
-<td>
-[C#]//Create the new document instanceWordDocument document = new WordDocument("document.docx");//Initializes the bookmarks navigator for the document instanceBookmarksNavigator navigator = new BookmarksNavigator(document);navigator.MoveToBookmark("bookmarkName");//Gets the bookmark content as WordDocumentPart instanceWordDocumentPart documentPart = navigator.GetContent();//Extract the documentPart as new WordDocument instanceWordDocument extractDocument = documentPart.GetAsWordDocument();//Closes the WordDocumentPart instancedocumentPart.Close();//Saves the extractDocument in local machineextractDocument.Save("Sample.docx");//Closes the WordDocument instancedocument.Close();//Closes the WordDocument instanceextractDocument.Close();</td></tr>
-<tr>
-<td>
-[VB.NET] 'Create the new document instance Dim document As New WordDocument("document.docx") 'Initializes the bookmarks navigator for the document instance Dim navigator As New BookmarksNavigator(document) navigator.MoveToBookmark("bookmarkName") 'Gets the bookmark content as WordDocumentPart instance Dim documentPart As WordDocumentPart = navigator.GetContent() 'Extract the documentPart as new WordDocument instance Dim extractDocument As WordDocument = documentPart.GetAsWordDocument() 'Saves the extractDocument in local machine extractDocument.Save("Sample.docx") 'Closes the WordDocumentPart instance documentPart.Close(); 'Saves the extractDocument in local machine extractDocument.Save("Sample.docx");'Closes the WordDocumentPart instance document.Close();'Closes the WordDocumentPart instance extractDocument.Close();</td></tr>
-</table>
+{%highlight c#%}
+//Create the new document instanceWordDocument document = new WordDocument("document.docx");
+//Initializes the bookmarks navigator for the document instanceBookmarksNavigator navigator = new BookmarksNavigator(document);
+navigator.MoveToBookmark("bookmarkName");
+//Gets the bookmark content as WordDocumentPart instanceWordDocumentPart documentPart = navigator.GetContent();
+//Extract the documentPart as new WordDocument instanceWordDocument extractDocument = documentPart.GetAsWordDocument();
+//Closes the WordDocumentPart instancedocumentPart.Close();
+//Saves the extractDocument in local machineextractDocument.Save("Sample.docx");
+//Closes the WordDocument instancedocument.Close();
+//Closes the WordDocument instanceextractDocument.Close();
 
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+'Create the new document instance 
+Dim document As New WordDocument("document.docx") 
+'Initializes the bookmarks navigator for the document instance 
+Dim navigator As New BookmarksNavigator(document) 
+navigator.MoveToBookmark("bookmarkName") 
+'Gets the bookmark content as WordDocumentPart instance 
+Dim documentPart As WordDocumentPart = navigator.GetContent() 
+'Extract the documentPart as new WordDocument instance 
+Dim extractDocument As WordDocument = documentPart.GetAsWordDocument() 
+'Saves the extractDocument in local machine extractDocument.Save("Sample.docx") 
+'Closes the WordDocumentPart instance documentPart.Close(); 
+'Saves the extractDocument in local machine extractDocument.Save("Sample.docx");
+'Closes the WordDocumentPart instance document.Close();
+'Closes the WordDocumentPart instance extractDocument.Close();
+
+{%endhighlight%}
 
 The following code example illustrates how to load the word document as WordDocumentPart.
 
-<table>
-<tr>
-<td>
-[C#]//Create the new document instanceWordDocument document = new WordDocument("document.docx");//Gets the bookmark content as WordDocumentPart instanceWordDocumentPart documentPart = new WordDocumentPart();//Loads the document into documentPart instancedocumentPart.Load(document);//Closes the documentPart instance documentPart.Close();</td></tr>
-<tr>
-<td>
-[VB.NET]'Create the new document instance Dim document As New WordDocument("document.docx")'Gets the bookmark content as WordDocumentPart instance Dim documentPart As New WordDocumentPart()'Loads the document into documentPart instance documentPart.Load(document) 'Closes the documentPart instance documentPart.Close()</td></tr>
-</table>
+
+{%highlight c#%}
+
+//Create the new document instanceWordDocument document = new WordDocument("document.docx");
+//Gets the bookmark content as WordDocumentPart instanceWordDocumentPart documentPart = new WordDocumentPart();
+//Loads the document into documentPart instancedocumentPart.Load(document);
+//Closes the documentPart instance documentPart.Close();
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+'Create the new document instance Dim document As New WordDocument("document.docx")
+'Gets the bookmark content as WordDocumentPart instance 
+Dim documentPart As New WordDocumentPart()
+'Loads the document into documentPart instance documentPart.Load(document) 
+'Closes the documentPart instance documentPart.Close()
+{%endhighlight%}
+
 
 

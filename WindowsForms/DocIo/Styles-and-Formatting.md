@@ -2,7 +2,7 @@
 layout: post
 title: Styles-and-Formatting
 description: styles and formatting
-platform: WindowsForms
+platform:  WindowsForms
 control: DocIO
 documentation: ug
 ---
@@ -22,18 +22,21 @@ The following are the types of formattings supported by DocIO.
 * Character formatting
 * Paragraph formatting
 * List style fromatting
-> 
-{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img1.jpeg)' | markdownify }}
-{:.image }
-_Note: DocIO currently does not support table styles._
+
+
+
+> _Note: DocIO currently does not support table styles._
+
+
 
 Introduction to styles and formatting in DocIO
 
 DocIO allows you to create your own paragraph style and list styles (user-defined style), which can be applied to any paragraph or list item. Refer to the Paragraph formatting section to know more about the user-defined styles.
 
-> {{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img2.jpeg)' | markdownify }}
-{:.image }
-_Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition._
+
+> _Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition._
+
+
 
 Collection of DocIO Character and Paragraph styles are accessible through the WordDocument.Styles property. Collection of List styles is accessible through the WordDocument.ListStyles property.
 
@@ -47,9 +50,9 @@ _Table_ _109__: Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CharacterFormat</td><td>
@@ -73,9 +76,9 @@ _Table_ _110__: Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ApplyBaseStyle</td><td>
@@ -93,9 +96,9 @@ You can access the collection of styles defined in the document by using the St
 
 The following code example illustrates how to access the collection of styles defined in the Word document.
 
-[C#]
 
 
+{% highlight C# %} 
 
 //Gets a collection of styles defined in the document.
 
@@ -115,9 +118,9 @@ IStyle style1=coll[0];
 
 
 
-[VB.NET]
+ {% endhighlight %}
 
-
+{% highlight vbnet %} 
 
 'Gets a collection of styles defined in the document.
 
@@ -134,6 +137,8 @@ Dim style As IStyle= coll.FindByName(String Stylename,StyleType styleType)
 'Accesses a particular style using the index.
 
 Dim style1 As IStyle = coll(0)
+{% endhighlight %}
+
 
 ## Character Formatting Properties
 
@@ -141,9 +146,7 @@ Character Styles
 
 This sections elaborates how to deal with the Character Styles. The class CharacterStyle takes resposibilty for handling the character styles. 
 
-> {{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Styles-and-Formatting_images/Styles-and-Formatting_img3.png)' | markdownify }}
-{:.image }
-_Note: DocIO does not provide support to add user-defined character styles to the document_
+> _Note: DocIO does not provide support to add user-defined character styles to the document_
 
 Class Hierarchy
 
@@ -163,9 +166,9 @@ _Table_ _111__: Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BaseStyle</td><td>
@@ -203,9 +206,9 @@ _Table_ _112__: Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -217,7 +220,7 @@ Converts string style names to BuiltinStyle.</td></tr>
 </table>
 Character Formatting
 
-The class WCharacterFormat represents the character formats in EssentialDocIO. It is used to get or set the formatting for text chunks, special symbol, or marker (for example marker of picture, text box, footnote, etc.). WCharacterFormat customizes the appearance of the element (for example text chunk or symbol) in the document, starting with font name to the style of texture and spacing between characters.
+The class WCharacterFormat represents the character formats in Essential DocIO. It is used to get or set the formatting for text chunks, special symbol, or marker (for example marker of picture, text box, footnote, etc.). WCharacterFormat customizes the appearance of the element (for example text chunk or symbol) in the document, starting with font name to the style of texture and spacing between characters.
 
 Class Hierarchy
 
@@ -229,9 +232,9 @@ FormatBase
 
 
 
- Public Constructor
+Public Constructor
 
- _Table_ _113__: Public Constructor_
+_Table_ _113__: Public Constructor_
 
 <table>
 <tr>
@@ -247,7 +250,7 @@ Initializes a new instance of the WCharacterFormat class.</td></tr>
 
 Public Properties
 
- _Table_ _114__: Public Properties_
+_Table_ _114__: Public Properties_
 
 <table>
 <tr>
@@ -255,132 +258,132 @@ Public Properties
 Properties</th><th>
 Description</th></tr>
 <tr>
-<th>
-AllCaps</th><th>
-Gets or sets the AllCaps property of text.</th></tr>
+<td>
+AllCaps</td><td>
+Gets or sets the AllCaps property of text.</td></tr>
 <tr>
-<th>
-Bidi</th><th>
-Gets or sets the right-to-left property of text.  </th></tr>
+<td>
+Bidi</td><td>
+Gets or sets the right-to-left property of text.  </td></tr>
 <tr>
-<th>
-Bold</th><th>
-Gets or sets the bold style of text.</th></tr>
+<td>
+Bold</td><td>
+Gets or sets tde bold style of text.</td></tr>
 <tr>
-<th>
-BoldBidi</th><th>
-Gets or sets the bold property for right-to-left text.  </th></tr>
+<td>
+BoldBidi</td><td>
+Gets or sets the bold property for right-to-left text.  </td></tr>
 <tr>
-<th>
-Border</th><th>
-Gets the border for text.</th></tr>
+<td>
+Border</td><td>
+Gets the border for text.</td></tr>
 <tr>
-<th>
-CharacterSpacing</th><th>
-Gets or sets the space width between characters in text.  </th></tr>
+<td>
+CharacterSpacing</td><td>
+Gets or sets the space width between characters in text.  </td></tr>
 <tr>
-<th>
-DoubleStrike</th><th>
-Gets or sets the doublestrikeout style to text.  </th></tr>
+<td>
+DoubleStrike</td><td>
+Gets or sets the doublestrikeout style to text.  </td></tr>
 <tr>
-<th>
-Emboss           </th><th>
-Gets or sets the emboss property of text.  </th></tr>
+<td>
+Emboss           </td><td>
+Gets or sets the emboss property of text.  </td></tr>
 <tr>
-<th>
-Engrave</th><th>
-Gets or sets the engrave property of text.  </th></tr>
+<td>
+Engrave</td><td>
+Gets or sets the engrave property of text.  </td></tr>
 <tr>
-<th>
-Font</th><th>
-Gets or sets the font as System.Drawing.Font. </th></tr>
+<td>
+Font</td><td>
+Gets or sets the font as System.Drawing.Font. </td></tr>
 <tr>
-<th>
-FontName</th><th>
-Gets or sets the font name for text.</th></tr>
+<td>
+FontName</td><td>
+Gets or sets the font name for text.</td></tr>
 <tr>
-<th>
-FontNameBidi</th><th>
-Gets or sets the font name for right-to-left text.  </th></tr>
+<td>
+FontNameBidi</td><td>
+Gets or sets the font name for right-to-left text.  </td></tr>
 <tr>
-<th>
-FontSize</th><th>
-Gets or sets the font size (in points).</th></tr>
+<td>
+FontSize</td><td>
+Gets or sets the font size (in points).</td></tr>
 <tr>
-<th>
-FontSizeBidi</th><th>
-Gets or sets the font size of the right-to-left text (in points).  </th></tr>
+<td>
+FontSizeBidi</td><td>
+Gets or sets the font size of the right-to-left text (in points).  </td></tr>
 <tr>
-<th>
-Hidden</th><th>
-Gets or sets the hidden property of text.  </th></tr>
+<td>
+Hidden</td><td>
+Gets or sets the hidden property of text.  </td></tr>
 <tr>
-<th>
-HighlightColor</th><th>
-Gets or sets the highlight color of text.  </th></tr>
+<td>
+HighlightColor</td><td>
+Gets or sets the highlight color of text.  </td></tr>
 <tr>
-<th>
-Italic</th><th>
-Gets or sets the italic style to text.  </th></tr>
+<td>
+Italic</td><td>
+Gets or sets the italic style to text.  </td></tr>
 <tr>
-<th>
-ItalicBidi</th><th>
-Gets or sets the italic property for right-to-left text.  </th></tr>
+<td>
+ItalicBidi</td><td>
+Gets or sets the italic property for right-to-left text.  </td></tr>
 <tr>
-<th>
-LineBreak</th><th>
-Gets or sets the line break after the text.  </th></tr>
+<td>
+LineBreak</td><td>
+Gets or sets the line break after the text.  </td></tr>
 <tr>
-<th>
-OutLine</th><th>
-Gets or sets the outline character property.  </th></tr>
+<td>
+OutLine</td><td>
+Gets or sets the outline character property.  </td></tr>
 <tr>
-<th>
-Position</th><th>
-Gets or sets the text vertical position.  </th></tr>
+<td>
+Position</td><td>
+Gets or sets the text vertical position.  </td></tr>
 <tr>
-<th>
-Shadow</th><th>
-Gets or sets the shadow property of text.  </th></tr>
+<td>
+Shadow</td><td>
+Gets or sets the shadow property of text.  </td></tr>
 <tr>
-<th>
-SmallCaps</th><th>
-Gets or sets the SmallCaps property of text.  </th></tr>
+<td>
+SmallCaps</td><td>
+Gets or sets the SmallCaps property of text.  </td></tr>
 <tr>
 <th>
 Strikeout</th><th>
-Gets or sets the strikeout style to text.  </th></tr>
+Gets or sets the strikeout style to text.  </td></tr>
 <tr>
-<th>
-SubSuperScript</th><th>
-Gets or sets the subscript/superscript mode to text.  </th></tr>
+<td>
+SubSuperScript</td><td>
+Gets or sets the subscript/superscript mode to text.  </td></tr>
 <tr>
-<th>
-TextBackgroundColor</th><th>
-Gets or sets the text background color.  </th></tr>
+<td>
+TextBackgroundColor</td><td>
+Gets or sets the text background color.  </td></tr>
 <tr>
-<th>
-TextColor</th><th>
-Gets or sets the text color.  </th></tr>
+<td>
+TextColor</td><td>
+Gets or sets the text color.  </td></tr>
 <tr>
-<th>
-UnderlineStyle</th><th>
-Gets or sets the underline style to text.</th></tr>
+<td>
+UnderlineStyle</td><td>
+Gets or sets the underline style to text.</td></tr>
 <tr>
-<th>
-LocaleIdASCII</th><th>
-Gets or sets the localeidentifier (language) of the formatted characters.</th></tr>
+<td>
+LocaleIdASCII</td><td>
+Gets or sets the localeidentifier (language) of the formatted characters.</td></tr>
 <tr>
-<th>
-LocaleIdFarEast</th><th>
-Gets or sets the the localeidentifier (language) of the formatted Asian characters.</th></tr>
+<td>
+LocaleIdFarEast</td><td>
+Gets or sets the the localeidentifier (language) of the formatted Asian characters.</td></tr>
 </table>
 
 
 The following code example illustrates how to use the WCharacterFormat class.
 
-[C#]
 
+{% highlight C# %} 
 
 
 //Writes different font name or font size.
@@ -506,9 +509,9 @@ textRange.CharacterFormat.LocaleIdFarEast = 2052
 
 
 
-[VB.NET]
+ {% endhighlight %}
 
-
+{% highlight vbnet %} 
 
 'Writes different font name or font size.
 
@@ -632,15 +635,19 @@ textRange.CharacterFormat.LocaleIdASCII = 1093
 
 textRange.CharacterFormat.LocaleIdFarEast = 2052
 
+{% endhighlight %}
+
 ## Paragraph Formatting Properties
 
 Paragraph Style
 
 WParagraphStyle class represents paragraph style in DocIO. Paragraph Style is a pattern of paragraph formatting. You can also apply custom paragraph styles to the paragraph. The following screenshot illustrates how to achieve this in Microsoft Word.
 
-{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img4.png)' | markdownify }}
-{:.image }
+![](Styles-and-Formatting_images/Styles-and-Formatting_img4.png)
 
+
+
+_Figure_ _50__: Setting Paragraph Style_
 
 
 
@@ -718,8 +725,8 @@ Clones itself.</td></tr>
 
 The following code example illustrates how to create user-defined Paragraph Styles by using DocIO.
 
-[C#]
 
+{% highlight C# %}  
 
 
 IWordDocument doc = new WordDocument();
@@ -781,9 +788,9 @@ section.AddParagraph();
 doc.Save("UserStyle.doc");
 
 
+{% endhighlight %}
 
-[VB.NET]
-
+{% highlight vbnet %} 
 
 
 Dim doc As IWordDocument = New WordDocument()
@@ -850,13 +857,13 @@ section.AddParagraph()
 
 doc.Save("UserStyle.doc")
 
-
+{% endhighlight %}
 
 The following code illustrates how to apply built-in paragraph styles to the Word document.
 
-[C#]
 
 
+{% highlight C# %} 
 
 IWordDocument doc = new WordDocument();
 
@@ -874,9 +881,10 @@ doc.Save("BuiltinStyle.doc");
 
 
 
-[VB.NET]
+ {% endhighlight %}
 
 
+{% highlight vbnet %} 
 
 Dim doc As IWordDocument = New WordDocument()
 
@@ -894,15 +902,17 @@ doc.LastParagraph.ApplyStyle(BuiltinStyle.Heading1)
 
 doc.Save("BuiltinStyle.doc")
 
-
+{% endhighlight %}
 
 Paragraph Format
 
 WParagraphFormat class represents paragraph formatting in Essential DocIO. The following screenshot illustrates how to define Paragraph Format to a paragraph in Microsoft Word.
 
-{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img5.png)' | markdownify }}
-{:.image }
+![](Styles-and-Formatting_images/Styles-and-Formatting_img5.png)
 
+
+
+_Figure_ _51__: Paragraph Formatting_
 
 
 
@@ -1030,21 +1040,22 @@ Gets or sets a value indicating whether the indentation type is mirror indents (
 </table>
 
 
-[C#]
 
 
+{% highlight C# %} 
 
 para.ParagraphFormat.OutlineLevel = OutlineLevel.Level8;
 
+ {% endhighlight %}
 
 
-[VB.NET]
 
 
+{% highlight vbnet %} 
 
 para.ParagraphFormat.OutlineLevel = OutlineLevel.Level8
 
-
+{% endhighlight %}
 
 Tabs
 
@@ -1122,9 +1133,9 @@ Removes tab at specified tab position from the tab collection.</td></tr>
 
 The following code example illustrates how to add the tab to a paragraph and delete the tab from a paragraph.
 
-[C#]
 
 
+{% highlight C# %} 
 
 //Creates a new instance for a Word document.
 
@@ -1174,11 +1185,11 @@ paragraph.AppendText("Tabs are added and removed");
 
 document .Save ("Sample.doc",FormatType.Doc  );
 
+ {% endhighlight %}
 
 
-[VB.NET]
 
-
+{% highlight vbnet %} 
 
 'Creates a new instance for a Word document.
 
@@ -1228,6 +1239,7 @@ paragraph.AppendText("Tabs are added and removed")
 
 document.Save("Sample.doc", FormatType.Doc)
 
+{% endhighlight %}
 
 
 ## List Style Properties
@@ -1247,9 +1259,11 @@ You can specify the type of the list style by using the ListType property. Eve
 
 The following screenshot demonstrates how to create list styles by using Microsoft Word.
 
-{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img6.png)' | markdownify }}
-{:.image }
+![](Styles-and-Formatting_images/Styles-and-Formatting_img6.png)
 
+
+
+_Figure_ _52__: Creating List Styles_
 
 
 
@@ -1319,7 +1333,7 @@ Description</td></tr>
 WListLevel.WListLevel (ListStyle)</td><td>
 Initializes new instance of WListLevel class.</td></tr>
 </table>
- Public Methods
+Public Methods
 
 _Table_ _125__: Public Methods_
 
@@ -1337,6 +1351,7 @@ Clones this instance.  </td></tr>
 GetListItemText</td><td>
 Gets list symbol for specified item index.</td></tr>
 </table>
+
 Public Properties
 
 _Table_ _126__: Public Properties_
@@ -1411,9 +1426,9 @@ When true, number generated will include previous levels (used for legal numberi
 
 The following code example illustrates how to create user-defined list styles and apply it to a paragraph.
 
-[C#]
 
 
+{% highlight C# %} 
 
 //User bullet list style.
 
@@ -1536,10 +1551,9 @@ paragraph.ListFormat.ContinueListNumbering();
 paragraph.ListFormat.ListLevelNumber = 0;
 
 
+ {% endhighlight %}
 
-[VB.NET]
-
-
+{% highlight vbnet %} 
 
 'User bullet list style.
 
@@ -1661,6 +1675,9 @@ paragraph.ListFormat.ContinueListNumbering()
 
 paragraph.ListFormat.ListLevelNumber = 0
 
+{% endhighlight %} 
+
+
 List Format
 
 WListFormat class specifies the formatting for DocIO list paragraph. The type of the list is specified by using the ListType property of WListFormat. ListLevelNumber property specifies the level number for the list paragraph. CurrentListStyle property specifies the list style, applied for the current list paragraph. CurrentListLevel property returns the instance of the WListLevel type, which specifies the formatting for the list level (paragraph). For example, a value that the list starts at (for numbered lists), list symbols, alignment of list text, and so forth.
@@ -1731,7 +1748,7 @@ Gets or sets whether numbering of the list must restart from previous list.</td>
 </table>
  Public Methods
 
- _Table_ _129__: Public Methods_
+_Table_ _129__: Public Methods_
 
 <table>
 <tr>
@@ -1771,8 +1788,8 @@ Removes the list from current paragraph.  </td></tr>
 
 The following code example illustrates how to use the WListFormat and List Styles in DocIO.
 
-[C#]
 
+{% highlight C# %} 
 
 
 //Writes default numbered list.         
@@ -1916,10 +1933,10 @@ section.AddParagraph();
 section.AddParagraph();
 
 
+ {% endhighlight %}
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Writes default numbered list.         
 
@@ -2061,13 +2078,17 @@ section.AddParagraph()
 
 section.AddParagraph()
 
+ {% endhighlight %}
+
+ 
 ## Text Box Format
 
-Text Box control is a container that provides support to insert text, images, and so on. DocIO supports text box and its methods. The WTextBoxFormat class specifies formatting for the Text Box.
+Text Box control is a container that provides support to insert text, images, and so on. DocIO supports text box and its 
+methods. The WTextBoxFormat class specifies formatting for the Text Box.
 
-{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img7.png)' | markdownify }}
-{:.image }
+![](Styles-and-Formatting_images/Styles-and-Formatting_img7.png)
 
+_Figure_ _53__: Formatting Text Box_
 
 
 
@@ -2130,7 +2151,7 @@ Class Hierarchy
 
             WTextBoxFormat
 
- Public Constructor
+Public Constructor
 
 _Table_ _130__: Public Constructor_
 
@@ -2220,7 +2241,7 @@ Gets or sets  the textbox vertical position (in points).  </td></tr>
 Width</td><td>
 Gets or sets  the textbox width (in points).  </td></tr>
 </table>
- Public Methods
+Public Methods
 
 _Table_ _132__: Public Methods_
 
@@ -2238,8 +2259,8 @@ Clones textbox format.</td></tr>
 
 The following code example illustrates how to use the WTextBox and TextBoxFormat classes.
 
-[C#]
 
+{% highlight C# %} 
 
 
 IWordDocument doc = new WordDocument();
@@ -2363,10 +2384,10 @@ section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph);
 doc.Save("TextBoxes.doc");
 
 
+ {% endhighlight %} 
 
-[VB.NET]
 
-
+{% highlight vbnet %} 
 
 Dim doc As IWordDocument = New WordDocument()
 
@@ -2491,4 +2512,4 @@ section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)
 doc.Save("TextBoxes.doc")
 
 
-
+{% endhighlight %}
