@@ -33,7 +33,7 @@ The Gauge control is built on Windows Forms programming, which is extended to su
 
 Radial gauges can be enhanced with a circle frame or semi-circle frame. This section covers how to include a radial gauge in an application.
 
-Through Designer:
+#### Through Designer:
 
 Drag the RadialGauge control from the toolbox onto the form. 
 
@@ -51,7 +51,7 @@ Drag the RadialGauge control from the toolbox onto the form.
 
 As soon as the control is dropped, it will be loaded with its default style. 
 
-Through Code:
+#### Through Code:
 
 
 
@@ -91,7 +91,7 @@ Me.Controls.Add(Me.radialGauge1)
 
 The RadialGauge control includes the following elements: Scale Label, Needle, Gauge Value, and Background Frame. All the elements are optional for displaying the Gauge control. 
 
-Feature Summary:
+#### Feature Summary:
 
 Here is a brief overview of various features of the RadialGauge control.
 
@@ -121,14 +121,14 @@ The frame defines the frame types of radial gauges. Frames can be applied using 
 * Full Circle
 * Half Circle
 
-_Table_ _3_: 	Radial Gauge Frame Properties
+_Table_ _3: 	Radial Gauge Frame Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 FrameType</td><td>
@@ -202,7 +202,7 @@ Gets or sets the gauge value visibility.</td></tr>
 
 
 
-Code Sample:
+#### Code Sample:
 
 
 
@@ -246,11 +246,11 @@ Me.radialGauge1.ShowBackgroundFrame = false;
 
 Scales are used to control element placement and value ranges. 
 
-Customizing Scales
+#### Customizing Scales
 
 You can customize scales added to the Radial Gauge using the properties listed in the following table:
 
-_Table_ _4_: Property Table
+_Table_ _4: Property Table
 
 <table>
 <tr>
@@ -291,7 +291,7 @@ Gets or sets the text orientation layout. </td></tr>
 
 
 
-_Figure_ _11_:  Scale inside the arc
+_Figure_ _11:  Scale inside the arc
 
 
 
@@ -323,14 +323,14 @@ Two types of ticks can be added to the RadialGauge control scale. Major tick mar
 
 The following table lists the important properties that can be used to customize the radial tick marks. This is done to represent the scale with meaningful markers and labels.
 
- _Table_ _5_: Property Table
+ _Table_ _5: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 TickPlacement</td><td>
@@ -427,14 +427,14 @@ Me.radialGauge1.MinorInnerLinesHeight = 6
 
 You can easily customize the style of the needle and the positions of the sub elements within the RadialGauge through the following enumerations.
 
-_Table_ _6_: Default and Advanced pointer styles
+_Table_ _6: Default and Advanced pointer styles
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 NeedleColor</td><td>
@@ -479,14 +479,14 @@ Me.radialGauge1.NeedleStyle = Syncfusion.Windows.Forms.Gauge.NeedleStyle.Advance
 
 Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and so on. All the available attributes are listed in the following table: 
 
-_Table_ _7_: Ranges
+_Table_ _7: Ranges
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Startvalue</td><td>
@@ -583,14 +583,14 @@ Me.radialGauge1.Ranges.Add(range1)
 
 The Gauge control for Windows Forms includes support for customizing the number of major tick lines and number of minor tick lines using the Major Difference and Minor Difference. It also provides support to customize the number of tick lines using MaximumValue and MinimunValue.
 
-_Table_ _8_: Properties
+_Table_ _8: Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Minimum </td><td>
@@ -699,7 +699,7 @@ You can bind any data source to the RadialGauge and map an index of a record to 
 
 
 
-Example:
+### Example:
 
 this.radialGauge1.DataSource = dataTable;
 
@@ -779,7 +779,7 @@ Me.RadialGauge1.NeedleCollection.Add(needle2)
 
 You can customize the Radial gauge needles using the Needles property. 
 
-Needle Style
+##### Needle Style
 
 RadialGauge supports three needle style. They are
 
@@ -787,11 +787,11 @@ RadialGauge supports three needle style. They are
 * Advanced
 * Pointer
 
-Needle Color 
+##### Needle Color 
 
 You can customize the needle color by using the NeedleColor property.
 
-Needle Values
+##### Needle Values
 
 The Needle values can be assigned using Values property in Needle.
 

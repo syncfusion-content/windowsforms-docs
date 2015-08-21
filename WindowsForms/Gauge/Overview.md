@@ -25,9 +25,9 @@ _Table_ _1_: Prerequisites Table
 
 <table>
 <tr>
-<td>
-Development Environments</td><td>
-.NET Framework versions</td></tr>
+<th>
+Development Environments</th><th>
+.NET Framework versions</th></tr>
 <tr>
 <td>
 <ul>
@@ -55,8 +55,8 @@ The compatibility details are as follows:
 
 <table>
 <tr>
-<td>
-Operating Systems</td></tr>
+<th>
+Operating Systems</th></tr>
 <tr>
 <td>
 </ul>

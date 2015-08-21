@@ -31,7 +31,7 @@ Our Edit control can be used in the Visual Studio Editor as it is featured with 
 
 
 
-_Figure_ _1_: Essential Edit
+_Figure_ _1: Essential Edit
 
 
 
@@ -80,10 +80,10 @@ The conventions listed below will help you to quickly identify the important sec
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
@@ -187,9 +187,9 @@ Syncfusion provides the following documentation segments to provide all necessar
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><td>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -201,7 +201,7 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Onlinehttp://help.syncfusion.com/ Navigate to the Edit for Windows Forms User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
+Onlinehttp://help.syncfusion.com/ Navigate to the Edit for Windows Forms User Guide.
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify}}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>

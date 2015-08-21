@@ -385,7 +385,7 @@ A sample which demonstrates the above features is available in the below sample 
 
 _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-See Also
+### See Also
 
 Creating a Custom Language Configuration File, 
 
@@ -477,9 +477,9 @@ Configuration Settings section.
 
 
 
-See Also
+### See Also
 
-Syntax Highlighting and Code Coloring, Multiple Language Syntax Highlighting
+### Syntax Highlighting and Code Coloring, Multiple Language Syntax Highlighting
 
 
 
@@ -493,7 +493,7 @@ Edit Control supportssyntax highlighting in scenarios where more than one langua
 
 
 
-_Figure_ _44_: Syntax Highlighting illustrated in HTML with Embedded JScript
+_Figure_ _44: Syntax Highlighting illustrated in HTML with Embedded JScript
 
 
 
@@ -503,9 +503,9 @@ A sample which demonstrates the above feature is available in the below sample i
 
 _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-See Also
+### See Also
 
-Syntax Highlighting and Code Coloring, XML Based Configuration Files
+### Syntax Highlighting and Code Coloring, XML Based Configuration Files
 
 
 

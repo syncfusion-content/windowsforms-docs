@@ -89,7 +89,7 @@ From the code given above, the configuration file contains a set of language con
 
 
 
-Language Configuration (ConfigLanguage) Definition
+### Language Configuration (ConfigLanguage) Definition
 
 Name of the language must be set using the name attribute of the ConfigLanguage tag. If language is case insensitive, you should set the CaseInsensitive attribute to 'True'.
 
@@ -162,7 +162,7 @@ If you want to use regular expressions in [Begin / Continue / EndBlock], you sho
 
 
 
-Example
+### Example
 
 
 
@@ -244,11 +244,7 @@ Me.editControl1.Configurator.Open(String fileName)
 
 {% endhighlight %}
 
-See Also
-
-
-
-Creating Configuration Settings Programmatically
+### See Also
 
 
 
@@ -448,11 +444,11 @@ Edit Control offers rich set of APIs to create configuration settings in code. T
    ~~~
    {:.prettyprint }
 
-See Also
+### See Also
 
 
 
-Creating a Custom Language Configuration File
+### Creating a Custom Language Configuration File
 
 
 

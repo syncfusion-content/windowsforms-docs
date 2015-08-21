@@ -19,7 +19,7 @@ Edit Control offers extensive support for text navigation. You can perform navig
 
 
 
-Character Level Navigation
+### Character Level Navigation
 
 The following APIs enable text navigation in the Edit Control, in terms of characters or columns.
 
@@ -27,9 +27,9 @@ The following APIs enable text navigation in the Edit Control, in terms of chara
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 MoveUp</td><td>
@@ -83,9 +83,9 @@ The following APIs enable text navigation in the Edit Control, in terms of words
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 MoveLeftWord</td><td>
@@ -123,9 +123,9 @@ The following APIs enable text navigation in the Edit Control, in terms of lines
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 MoveToLineStart</td><td>
@@ -163,9 +163,9 @@ The following APIs enable text navigation in the Edit Control, in terms of pages
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 MovePageUp</td><td>
@@ -203,9 +203,9 @@ The following APIs enable text navigation in the Edit Control, in terms of docum
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 MoveToBeginning</td><td>
@@ -239,7 +239,7 @@ Me.editControl1.MoveToEnd();
 
 
 
-_Figure_ _14_: Text Navigation Options in Edit Control
+_Figure_ _14: Text Navigation Options in Edit Control
 
 
 
@@ -259,9 +259,9 @@ Edit Control has a wide array of APIs for handling text operations by using Posi
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrentColumn</td><td>
@@ -295,9 +295,9 @@ You can use the GoTo method to navigate to any desired position in a file.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 GoTo</td><td>
@@ -371,9 +371,9 @@ The following APIs are used for inter-conversion between virtual / actual positi
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 PointToVirtualPosition</td><td>
@@ -485,7 +485,7 @@ Me.editControl1.ConvertVirtualPointToCoordinatePoint(Integer Column, Integer lin
 
 
 
-_Figure_ _15_: Positions and Offsets Conversion Options in Edit Control
+_Figure_ _15: Positions and Offsets Conversion Options in Edit Control
 
 
 
@@ -501,11 +501,11 @@ _..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows
 
 
 
-See Also
+### See Also
 
 
 
-Line Numbers and Current Line Highlighting
+### Line Numbers and Current Line Highlighting
 
 
 
@@ -521,9 +521,9 @@ Each column guide can be provided with a custom color and location. This can be 
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowColumnGuides</td><td>
@@ -599,7 +599,7 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 
 
-_Figure_ _16_: Customized Column Guide Items positioned at Equal Intervals
+_Figure_ _16: Customized Column Guide Items positioned at Equal Intervals
 
 
 
@@ -621,7 +621,7 @@ Edit Control supports content dividers just like VB.NET code in Visual Studio.NE
 
 
 
-_Figure_ _17_: Content Dividers separating the Event Contents into Sections
+_Figure_ _17: Content Dividers separating the Event Contents into Sections
 
 
 
@@ -697,9 +697,9 @@ The SelectedColor value can be set to any desired color. The SelectedStyle value
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Underline Enumerator**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Underline Enumerator</th><th>
+Description</th></tr>
 <tr>
 <td>
 UnderlineStyle</td><td>
@@ -719,9 +719,9 @@ Underlining can be set and removed for selected text by using the below given me
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetUnderline</td><td>
@@ -753,7 +753,7 @@ Me.editControl1.RemoveUnderline(Me.editControl1.Selection.Top, Me.editControl1.S
 
 
 
-Underlining using Configuration File
+### Underlining using Configuration File
 
 You can also set the underlining from the configuration file, as shown in the below example.
 
@@ -775,7 +775,7 @@ LineColor, Weight and Underline parameters are used to specify the type of under
 
 
 
-_Figure_ _18_: Text with Double Solid Style, Double Dot Style, Wave Style Underlines
+_Figure_ _18: Text with Double Solid Style, Double Dot Style, Wave Style Underlines
 
 
 
@@ -843,7 +843,7 @@ To remove the strikethrough line, just call one of the above mentioned methods a
 
 
 
-_Figure_ _19_: Striking Through Range of Text
+_Figure_ _19: Striking Through Range of Text
 
 
 
@@ -855,11 +855,11 @@ _..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\
 
 
 
-See Also
+### See Also
 
 
 
-Text Border, Text Selection
+### Text Border, Text Selection
 
 
 
@@ -875,15 +875,15 @@ Edit Control offers support for text manipulation operations like append, delete
 
 
 
-Appending Text
+### Appending Text
 
 Text can be appended to the Edit Control by using the following method.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 AppendText</td><td>
@@ -919,9 +919,9 @@ Text can be inserted anywhere inside the Edit Control by using the InsertText me
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 InsertText</td><td>
@@ -935,9 +935,9 @@ Collection of text lines can be inserted by using the property given below.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Lines</td><td>
@@ -951,9 +951,9 @@ The following properties can be used to insert text based on conditions that are
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowDrop</td><td>
@@ -1073,9 +1073,9 @@ Text can be deleted in the Edit Control by using the below given methods.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description/th></tr>
 <tr>
 <td>
 DeleteChar</td><td>
@@ -1187,7 +1187,7 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 
 
 
-_Figure_ _20_: Input entered for Handling Text
+_Figure_ _20: Input entered for Handling Text
 
 A sample that demonstrates the above features is available in the following sample installation path.
 
@@ -1203,9 +1203,9 @@ Essential Edit controls the insertion of tabs using the UseTabs property, which 
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 UseTabs</td><td>
@@ -1245,6 +1245,7 @@ Me.EditControl1.TabStopsArray = New Integer() {8, 16, 24, 32, 40}
 
 {% endhighlight %}
 
+
 #### Specifying Tab Size
 
 The size of the tab can be specified by using the below given property.
@@ -1253,9 +1254,9 @@ The size of the tab can be specified by using the below given property.
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 TabSize</td><td>
@@ -1282,6 +1283,7 @@ this.editControl1.TabSize = 8;
 Me.editControl1.TabSize = 8
 
 {% endhighlight %}
+
 
 #### TAB key Functionality
 
@@ -1321,6 +1323,7 @@ this.editControl1.TransferFocusOnTab = True
 
 {% endhighlight %}
 
+
 #### TAB key Functionality on Selected Text
 
 The below given methods can be used convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
@@ -1329,9 +1332,9 @@ The below given methods can be used convert the spaces in a selected region into
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 TabifySelection</td><td>
@@ -1407,6 +1410,7 @@ Me.editControl1.RemoveTabsFromSelection()
 
 {% endhighlight %}
 
+
 ### WhiteSpace Indicators
 
 Edit Control has the ability to indicatewhitespaces in its contents with default indicators, explained as follows.
@@ -1425,7 +1429,7 @@ Edit Control has the ability to indicatewhitespaces in its contents with default
 
 
 
-![](Text-Visualization_images/Text-Visualization_img10.jpeg)
+   ![](Text-Visualization_images/Text-Visualization_img10.jpeg)
 
 
 
@@ -1437,9 +1441,9 @@ You can enable whitespace indicators by setting the ShowWhiteSpaces property to 
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th>
+Description</th></tr>
 <tr>
 <td>
 ShowWhiteSpaces</td><td>
@@ -1453,9 +1457,9 @@ You can also toggle the visibility of the whitespace indicators by using the Tog
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 ToggleShowingWhiteSpaces</td><td>
@@ -1495,6 +1499,7 @@ Me.editControl1.ToggleShowingWhiteSpaces()
 
 {% endhighlight %}
 
+
 #### Showing / Hiding Indicators
 
 You can selectively show / hide the whitespace indicators by using the following subproperties of the WhiteSpaceIndicators property - ShowSpaces, ShowTabs and ShowNewLines.
@@ -1504,8 +1509,8 @@ You can selectively show / hide the whitespace indicators by using the following
 <table>
 <tr>
 <td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+Edit Control Property</td><td>
+Description</td></tr>
 <tr>
 <td>
 ShowSpaces</td><td>
@@ -1571,9 +1576,9 @@ You can also set the indicators to indicate single spaces, tabs and line feeds b
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 NewLineString</td><td>
@@ -1633,11 +1638,12 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 {% endhighlight %}
 
-See Also
+
+### See Also
 
 
 
-Spaces and Tabs
+### Spaces and Tabs
 
 
 
@@ -1651,9 +1657,9 @@ The number of lines in the Edit Control can be obtained by using the PhysicalLin
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowLineNumbers</td><td>
@@ -1703,9 +1709,9 @@ Line numbers can be customized by using the below given Edit Control properties.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 LineNumbersAlignment</td><td>
@@ -1795,9 +1801,9 @@ You can highlight the current line where the mouse pointer is present by setting
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HighlightCurrentLine</td><td>
@@ -1833,7 +1839,7 @@ Me.editControl1.CurrentLineHighlightColor = Color.Orange
 
 
 
-_Figure_ _23_: CurrentLineHighlightColor = "Orange"
+_Figure_ _23: CurrentLineHighlightColor = "Orange"
 
 
 
@@ -1859,9 +1865,9 @@ The Edit Control provides an indicator margin for the purpose of displaying the 
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowIndicatorMargin</td><td>
@@ -1905,6 +1911,7 @@ Me.editControl1.MarkerAreaWidth = 20
 
 {% endhighlight %}
 
+
 #### Customizing Bookmarks
 
 You can either display the default bookmark image (like in Visual Studio.NET) or display custom images as indicators. This can be done by making use of the following methods of the Edit Control.
@@ -1913,9 +1920,9 @@ You can either display the default bookmark image (like in Visual Studio.NET) or
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 BookmarkToggle</td><td>
@@ -2011,6 +2018,7 @@ Dim bookmark As IBookmark = Me.EditControl1.BookmarkGet(Me.EditControl1.CurrentL
 
 {% endhighlight %}
 
+
 #### Setting Bookmarks
 
 Bookmarks can be set and removed by using the below given methods.
@@ -2019,9 +2027,9 @@ Bookmarks can be set and removed by using the below given methods.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetCustomBookmark</td><td>
@@ -2078,6 +2086,7 @@ Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.
 
 {% endhighlight %}
 
+
 #### Setting Tooltips for Bookmarks
 
 Tooltips can be set for bookmarks and customized by using the below given properties.
@@ -2086,9 +2095,9 @@ Tooltips can be set for bookmarks and customized by using the below given proper
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowBookmarkTooltip</td><td>
@@ -2172,9 +2181,9 @@ Comments can be set for a single line, selected text, and for text within a spec
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 CommentLine</td><td>
@@ -2222,9 +2231,9 @@ Comments can be removed by using the below given methods.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 UnCommentLine</td><td>
@@ -2318,7 +2327,7 @@ End Sub
 
 
 
-_Figure_ _25_: Inserting Break Points in Edit Control_
+_Figure_ _25: Inserting Break Points in Edit Control
 
 
 
@@ -2382,9 +2391,9 @@ The indentation guidelines are vertical lines that connect the matching brackets
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowIndentationGuidelines</td><td>
@@ -2402,9 +2411,9 @@ Also, the indent guideline for the current region can be set by using the ShowIn
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 HideIndentGuideline</td><td>
@@ -2470,7 +2479,7 @@ The bracket highlighting feature can be turned on by enabling the ShowIndentatio
 
 
 
-_Figure_ _26_: Bracket Highlighting with Indentation Guidelines
+_Figure_ _26: Bracket Highlighting with Indentation Guidelines
 
 
 
@@ -2478,11 +2487,11 @@ _Figure_ _26_: Bracket Highlighting with Indentation Guidelines
 
 
 
-_Figure_ _27_: Bracket Highlighting without Indentation Guidelines
+_Figure_ _27: Bracket Highlighting without Indentation Guidelines
 
 
 
-Customizing the Appearance
+### Customizing the Appearance
 
 It is possible to specify custom colors for the indentation guidelines and bracket highlighting blocks by using the below given properties.
 
@@ -2490,9 +2499,9 @@ It is possible to specify custom colors for the indentation guidelines and brack
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property}</th><th>
+Description</th></tr>
 <tr>
 <td>
 IndentLineColor</td><td>
@@ -2560,7 +2569,7 @@ Me.editControl1.ShowIndentationBlockBorders = True
 
 
 
-_Figure_ _28_: IndentLineColor = "OrangeRed"; IndentBlockHighlightingColor = "IndianRed"
+_Figure_ _28: IndentLineColor = "OrangeRed"; IndentBlockHighlightingColor = "IndianRed"
 
 
 
@@ -2572,9 +2581,9 @@ It is also possible to position the caret at the beginning or end of the indenta
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 JumpToIndentBlockStart</td><td>
@@ -2600,9 +2609,9 @@ The properties given in the following table can be used to customize the auto in
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoIndentMode</td><td>
@@ -2644,7 +2653,7 @@ If Enter is pressed when the AutoIndentMode is set to None, the text is not inde
 
 
 
-_Figure_ _29_: AutoIndentMode = "None"
+_Figure_ _29: AutoIndentMode = "None"
 
 
 
@@ -2656,7 +2665,7 @@ When the AutoIndentMode is set to Smart, the next line is indented by one TabSiz
 
 
 
-_Figure_ _30_: AutoIndentMode = "Smart"
+_Figure_ _30: AutoIndentMode = "Smart"
 
 
 
@@ -2668,7 +2677,7 @@ When the AutoIndentMode is set to Block, the next line begins at the same column
 
 
 
-_Figure_ _31_: AutoIndentMode = "Block"
+_Figure_ _31: AutoIndentMode = "Block"
 
 
 
@@ -2699,8 +2708,8 @@ When this property is enabled, the lines will be aligned to the position of the 
 <table>
 <tr>
 <td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+Property</td><td>
+Description</td></tr>
 <tr>
 <td>
 EnableSmartInBlockIndent</td><td>
@@ -2737,8 +2746,8 @@ AutoFormatting can be enabled by using the below given method.
 <table>
 <tr>
 <td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+Edit Control Method</td><td>
+Description</td></tr>
 <tr>
 <td>
 AutoFormatText</td><td>
@@ -2754,7 +2763,7 @@ For example, the closing brace gets automatically aligned with the opening brace
 
 
 
-_Figure_ _32_: Code is entered into the Edit Control
+_Figure_ _32: Code is entered into the Edit Control
 
 
 
@@ -2766,7 +2775,7 @@ Now, when the closing brace '}' is typed, it gets automatically aligned with the
 
 
 
-_Figure_ _33_: AutoFormatting support for code in Edit Control
+_Figure_ _33: AutoFormatting support for code in Edit Control
 
 
 > Note: The_ AutoIndentMode _property for the Edit Control should be set to Smart for this purpose.
@@ -2836,7 +2845,7 @@ The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian 
 
 
 
-_Figure_ _34_: Unicode support in Edit Control
+_Figure_ _34: Unicode support in Edit Control
 
 
 
@@ -2858,9 +2867,9 @@ Setting the ShowOutliningCollapsers property to True, will enable Automatic Outl
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Collapse</td><td>
@@ -3002,9 +3011,9 @@ The Edit Control supports the following events to handle the various Outlining o
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Event**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 OutliningBeforeCollapse</td><td>
@@ -3074,7 +3083,7 @@ Me.editControl1.ShowOutliningTooltip = True
 
 
 
-_Figure_ _35_: Outlining Tooltip displaying the Collapsed Block of Text_
+_Figure_ _35: Outlining Tooltip displaying the Collapsed Block of Text_
 
 
 
@@ -3224,9 +3233,9 @@ The following properties are associated with setting the mode of Word Wrapping.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 WordWrapMode</td><td>
@@ -3324,7 +3333,7 @@ The following illustration shows the Edit Control with the WordWrappingMode and 
 
 
 
-_Figure_ _36_: WordWrappingMode = "Control"; WordWrapType= "WrapByWord"
+_Figure_ _36: WordWrappingMode = "Control"; WordWrapType= "WrapByWord"
 
 
 
@@ -3346,9 +3355,9 @@ Wordwrap margin of the Edit Control can be set and customized by using the below
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 WordWrapMarginVisible</td><td>
@@ -3452,9 +3461,9 @@ Also, to indicate whether wrapped lines should be marked, the MarkWrappedLines p
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property}</th><th>
+Description</th></tr>
 <tr>
 <td>
 MarkLineWrapping</td><td>
@@ -3534,7 +3543,7 @@ Me.editControl1.MarkWrappedLines = True
 
 
 
-_Figure_ _38_: Wrapping Images indicating Wrapped Lines and Point of Wrapping
+_Figure_ _38: Wrapping Images indicating Wrapped Lines and Point of Wrapping
 
 ### Read-Only Text
 
@@ -3544,9 +3553,9 @@ Edit Control allows you to specify read-only regions in the code, i.e., regions 
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 MarkAsReadOnly</td><td>
@@ -3598,7 +3607,7 @@ The following screenshot shows a read-only region in the code section of the Edi
 
 
 
-_Figure_ _39_: Read-Only Region with Orange Background and Crimson Text Color
+_Figure_ _39: Read-Only Region with Orange Background and Crimson Text Color
 
 
 
@@ -3611,6 +3620,7 @@ _..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows
 ## Customizing Text
 
 The following text customization features are discussed in this section:
+
 
 ### Text Color
 
@@ -3638,6 +3648,7 @@ Me.editControl1.SetTextColor(New Point(1, 1), New Point(5, 5), Color.Orange)
 
 {% endhighlight %}
 
+
 ### Text Border
 
 This section discusses how borders can be set for the text in the Edit Control.
@@ -3648,9 +3659,9 @@ Edit Control supports borders for its text by using the methods given below.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetTextBorder</td><td>
@@ -3664,9 +3675,9 @@ Removes border around text with given coordinates.</td></tr>
 
 <table>
 <tr>
-<td>
-Edit Control Border Enumerator</td><td>
-Description</td></tr>
+<th>
+Edit Control Border Enumerator</th><th>
+Description</th></tr>
 <tr>
 <td>
 FrameBorderStyle</td><td>
@@ -3715,7 +3726,7 @@ Me.editControl1.RemoveTextBorder(New Point(1, 13), New Point(15, 13)
 
 
 
-_Figure_ _40_: Text Borders in Edit Control
+_Figure_ _40: Text Borders in Edit Control
 
 
 
@@ -3725,7 +3736,7 @@ A sample which demonstrates the above feature is available in the following samp
 
 _..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-See Also
+### See Also
 
 Underlines, Wavelines and StrikeThrough
 
@@ -3739,9 +3750,9 @@ Edit Control facilitates saving the contents of a file in any desired encoding a
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SaveFile</td><td>
@@ -3771,9 +3782,9 @@ Edit Control supports all the encoding styles supported by the System.Text.Encod
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</td></tr>
 <tr>
 <td>
 GetEncoding</td><td>
@@ -3825,9 +3836,9 @@ It also supports all the new line styles supported by the Syncfusion.IO.NewLineS
 
 <table>
 <tr>
-<td>
-{{ '**New Line Styles**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+New Line Styles\</th><th>
+Description</th></tr>
 <tr>
 <td>
 Windows</td><td>
@@ -3865,9 +3876,9 @@ Edit Control provides support to select text programmatically. The StartSelectio
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 StartSelection</td><td>
@@ -3894,9 +3905,9 @@ Line selection in Edit Control is extended by using the ExtendSelectionToFarRigh
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ExtendSelectionToFarRight</td><td>
@@ -3966,9 +3977,9 @@ Text can also be selected after drag / drop operations by using the below given 
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectTextAfterDragDrop</td><td>
@@ -3992,15 +4003,16 @@ Me.editControl1.SelectTextAfterDragDrop = True
 
 {% endhighlight %}
 
+
 #### Selected Text
 
 The following properties can be used to get / set selected text.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectedText</td><td>
@@ -4042,7 +4054,7 @@ Setting the TransparentSelection property to True, will highlight the selected t
 
 
 
-_Figure_ _41_: Transparent Selection Enabled
+_Figure_ _41: Transparent Selection Enabled
 
 
 
@@ -4062,9 +4074,9 @@ Text selection can be either cancelled or reset by using the below given methods
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectionCancel</td><td>

@@ -49,7 +49,7 @@ To undo/redo an action group, do the following steps:
 
 
 
-Unlimited Undo and Redo
+### Unlimited Undo and Redo
 
 
 
@@ -63,9 +63,9 @@ Essential Edit allows the following methods to be invoked any number of times.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Undo</td><td>
@@ -101,9 +101,9 @@ Grouping is enabled using the below given property.
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 GroupUndo</td><td>
@@ -199,7 +199,7 @@ The following screenshot shows action grouping in Edit Control.
 
 
 
-_Figure_ _9_: Grouping Actions in Edit Control
+_Figure_ _9: Grouping Actions in Edit Control
 
 
 
@@ -271,9 +271,9 @@ Edit Control uses the clipboard to cut, copy or paste the text data. It stores t
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Copy</td><td>
@@ -401,7 +401,7 @@ Me.editControl1.ClearClipboard()
 
 The EditControl is mainly based on the MD5 algorithm. By default, EnableMD5 property is enabled in EditControl. 
 
-FIPS
+#### FIPS
 
 The system’s cryptography is based on the FIPS compliant algorithms for encryption, hashing and security.
 
@@ -411,9 +411,9 @@ When FIPS is enabled, the Clipboard Operations of EditControl are affected as Ed
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 EnableMD5</td><td>
@@ -474,7 +474,7 @@ The following illustration shows the Keys Binding dialog box.
 
 
 
-_Figure_ _10_: Preview of Keys Binding Dialog Box
+_Figure_ _10: Preview of Keys Binding Dialog Box
 
 
 
@@ -642,9 +642,9 @@ Most of the important regular expression language operators are unescaped single
 
 <table>
 <tr>
-<td>
-Escaped Character</td><td>
-Description</td></tr>
+<th>
+Escaped Character</th><th>
+Description</th></tr>
 <tr>
 <td>
 (Ordinary characters)</td><td>
@@ -704,9 +704,9 @@ A character class is a set of characters that will find a match if any one of th
 
 <table>
 <tr>
-<td>
-Character Class</td><td>
-Description</td></tr>
+<th>
+Character Class</th><th>
+Description</th></tr>
 <tr>
 <td>
 .</td><td>
@@ -766,9 +766,9 @@ The following table describes the metacharacters that affect the matching quanti
 
 <table>
 <tr>
-<td>
-Quantifier</td><td>
-Description</td></tr>
+<th>
+Quantifier</th><th>
+Description</th></tr>
 <tr>
 <td>
 *</td><td>
@@ -808,9 +808,9 @@ The following table lists other regular expression constructs.
 
 <table>
 <tr>
-<td>
-Assertion</td><td>
-Description</td></tr>
+<th>
+Assertion</th><th>
+Description</th></tr>
 <tr>
 <td>
 ^</td><td>
@@ -854,9 +854,9 @@ The following table lists other regular expression constructs.
 
 <table>
 <tr>
-<td>
-Construct</td><td>
-Description</td></tr>
+<th>
+Construct</th><th>
+Description</th></tr>
 <tr>
 <td>
 " "</td><td>
@@ -880,9 +880,7 @@ Provides an alternation construct that matches any one of the terms separated by
 </table>
 
 
-See Also
-
-Lexical Macros
+### See Also
 
 
 
@@ -918,9 +916,9 @@ Edit Control recognizes a number of built-in macros. If a language definition de
 
 <table>
 <tr>
-<td>
-Macro</td><td>
-Description</td></tr>
+<th>
+Macro</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllMacro</td><td>
@@ -1052,9 +1050,9 @@ configLex.IsContinueRegex = True
 
 {% endhighlight %}
 
-See Also
+### See Also
 
-Language Elements
+### Language Elements
 
 
 
@@ -1094,9 +1092,9 @@ The following methods are used to indent and outdent text in the Edit Control.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 IndentText</td><td>
@@ -1183,7 +1181,7 @@ The following features that are present in Left-To-Right layout are also support
 
 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 With RTL support, you can use EditControl, to render content in Right-To-left layout for languages such as Arabic. This is depicted in the screenshot below:
 
@@ -1193,22 +1191,22 @@ With RTL support, you can use EditControl, to render content in Right-To-left la
 
 
 
-_Figure_ _11_: Right-To-Left Layout of Arabic
+_Figure_ _11: Right-To-Left Layout of Arabic
 
 
 
-Properties
+### Properties
 
 
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 RenderRightToLeft</td><td>
@@ -1219,7 +1217,7 @@ Boolean</td><td>
 </table>
 
 
-Enabling Right-To-Left in EditControl
+### Enabling Right-To-Left in EditControl
 
 RTL can be enabled in EditControl with the Application Programming Interface (API) RenderRightToLeft as given in the following codes:
 
@@ -1237,7 +1235,7 @@ Me.editControl1.RenderRightToLeft = True
 
 {% endhighlight %}
 
-Sample Link
+### Sample Link
 
 To view a sample:
 

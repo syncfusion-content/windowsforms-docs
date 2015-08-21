@@ -23,7 +23,7 @@ HTMLUI is helpful in creating cool UI applications like Chat windows. It can be 
 
 
 
-_Figure_ _1_: Essential HTML UI_
+_Figure_ _1: Essential HTML UI_
 
 
 
@@ -51,7 +51,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-Document Conventions
+### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
@@ -59,10 +59,10 @@ The conventions listed below will help you to quickly identify the important sec
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
@@ -157,9 +157,9 @@ Syncfusion provides the following documentation segments to provide all necessar
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>

@@ -76,9 +76,9 @@ The vertical and horizontal splitters are always visible, by default. They can b
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowHorizontalSplitters</td><td>
@@ -96,9 +96,9 @@ The following methods can be used to split the Edit Control into two equal horiz
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SplitHorizontally</td><td>
@@ -150,9 +150,9 @@ The following properties can be used to position the horizontal and vertical spl
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HorizontalSplitterPosition</td><td>
@@ -218,7 +218,7 @@ Me.editControl1.SplitFourQuadrants()
 
 
 
-_Figure_ _63_: Edit Control Split into Four Quadrants
+_Figure_ _63: Edit Control Split into Four Quadrants
 
 
 
@@ -228,7 +228,7 @@ A sample which demonstrates Split Views is available in the below sample install
 
 _..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-See Also
+### See Also
 
 
 
@@ -264,7 +264,7 @@ Me.editControl1.UseXPStyle = True
 
 
 
-_Figure_ _64_: Edit Control using Windows XP Themes
+_Figure_ _64: Edit Control using Windows XP Themes
 
 
 
@@ -282,9 +282,9 @@ The border style for the Edit Control can be set by using the below given proper
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
@@ -317,9 +317,9 @@ The following properties can be used to set the composition quality, interpolati
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 GraphicsCompositingQuality</td><td>
@@ -412,9 +412,9 @@ The ShowSelectionMargin property allows you to show / hide this selection margin
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectionMarginForegroundColor</td><td>
@@ -460,7 +460,7 @@ Me.editControl1.SelectionMarginWidth = 100
 
 
 
-_Figure_ _65_: Selection Margin Set
+_Figure_ _65: Selection Margin Set
 
 
 
@@ -512,9 +512,9 @@ The User Margin feature can be turned on by setting the ShowUserMargin property 
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 UserMarginWidth</td><td>
@@ -562,9 +562,9 @@ The following properties can be used to set the background color, text color and
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 UserMarginBackgroundColor</td><td>
@@ -688,9 +688,9 @@ Edit Control can be displayed with a gradient background by setting the Backgrou
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackgroundColor</td><td>
@@ -802,7 +802,7 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 
 
-_Figure_ _68_: Edit Control with Gradient Background
+_Figure_ _68: Edit Control with Gradient Background
 
 
 
@@ -812,7 +812,7 @@ A sample which demonstrates the Gradient Background feature is available in the 
 
 _..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-Setting BackgroundColor for Specified Range of Text
+### Setting BackgroundColor for Specified Range of Text
 
 The SetBackgroundColor method is used to set the background color for a specified range of text.
 
@@ -896,14 +896,14 @@ Me.editControl1.SetSelectionBackColor(format)
 
 
 
-_Figure_ _69_: Background Color and Border set for Text
+_Figure_ _69: Background Color and Border set for Text
 
 
 > Note: Refer the_ Text Border _topic to know how to set the border for the text.
 
 
 
-Removing Background Color for Individual Lines or Selected Blocks of Text
+### Removing Background Color for Individual Lines or Selected Blocks of Text
 
 The following methods can be used to set the background color for individual lines or selected blocks of text.
 
@@ -911,9 +911,9 @@ The following methods can be used to set the background color for individual lin
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 RemoveLineBackColor</td><td>
@@ -965,7 +965,7 @@ _..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\
 
 
 
-See Also
+### See Also
 
 Line Numbers and Current Line Highlighting
 
@@ -1073,7 +1073,7 @@ You can turn on the single line mode of the Edit Control by setting the SingleLi
 
 
 
-_Figure_ _71_: Edit Control with SingleLineMode Turned On
+_Figure_ _71: Edit Control with SingleLineMode Turned On
 
 
 
@@ -1089,7 +1089,7 @@ Essential Edit now enables you to create a new find dialog by inheriting Essenti
 
 
 
-Creating a Class for Own Find Dialog
+### Creating a Class for Own Find Dialog
 
 Create a class for own find dialog that inherits the frmFindDialog class.
 
@@ -1199,7 +1199,7 @@ End Sub
 
 
 
-_Figure_ _72_: Customized  Find Dialog
+_Figure_ _72: Customized  Find Dialog
 
 
 

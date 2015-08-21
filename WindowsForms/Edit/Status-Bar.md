@@ -26,7 +26,7 @@ The Edit control provides support to include a built-in status bar at the bottom
 
 
 
-_Figure_ _73_: Status Bar and Status Bar Panels in the Edit Control
+_Figure_ _73: Status Bar and Status Bar Panels in the Edit Control
 
 
 
@@ -42,9 +42,9 @@ The StatusBarSettings property consists of the following subproperties, which ca
 
 <table>
 <tr>
-<td>
-StatusBarSettings Property</td><td>
-Description</td></tr>
+<th>
+StatusBarSettings Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 TextPanel</td><td>
@@ -107,7 +107,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 
 
-_Figure_ _74_: Sizing Gripper in the Status Bar
+_Figure_ _74: Sizing Gripper in the Status Bar
 
 
 
@@ -181,7 +181,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 
 
-_Figure_ _75_: Edit Control with Office2007 Visual Style
+_Figure_ _75: Edit Control with Office2007 Visual Style
 
 
 
@@ -225,7 +225,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Syncfusion.Windows.For
 
 
 
-_Figure_ _76_: Edit Control with Office 2007 Visual Style and Blue Color Scheme
+_Figure_ _76: Edit Control with Office 2007 Visual Style and Blue Color Scheme
 
 
 

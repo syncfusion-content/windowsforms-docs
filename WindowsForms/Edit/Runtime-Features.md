@@ -61,9 +61,9 @@ The keyboard shortcuts for the commands in the Edit Control are listed below.
 
 <table>
 <tr>
-<td>
-Command</td><td>
-Shortcut</td></tr>
+<th>
+Command</th><th>
+Shortcut</th></tr>
 <tr>
 <td colspan = "2">
 Clipboard</td></tr>
@@ -253,7 +253,7 @@ Dim bmp as Bitmap = Me.editControl1.CreateBitmap()
 
 
 
-_Figure_ _45_: Bitmap of a Live Instance of Edit Control
+_Figure_ _45: Bitmap of a Live Instance of Edit Control
 
 ## Find, Replace and Goto
 
@@ -263,9 +263,9 @@ The Edit Control supports text search and replace functionalities through the us
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 FindText</td><td>
@@ -393,7 +393,7 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 
 
-_Figure_ _46_: "FindText" method
+_Figure_ _46: "FindText" method
 
 
 
@@ -407,7 +407,7 @@ Edit Control also supports advanced and customizable Find and Replace dialog box
 
 
 
-_Figure_ _47_: Find Dialog Box
+_Figure_ _47: Find Dialog Box
 
 
 
@@ -417,7 +417,7 @@ The Replace dialog box is invoked by using the ShowReplaceDialog method. The key
 
 
 
-_Figure_ _48_: Replace Dialog Box
+_Figure_ _48: Replace Dialog Box
 
 
 
@@ -511,7 +511,7 @@ Me.editControl1.ShowGoToDialog()
 
 
 
-_Figure_ _49_: GoTo Dialog Box
+_Figure_ _49: GoTo Dialog Box
 
 
 
@@ -527,9 +527,9 @@ The FindHistory property is used to add/remove items from the find history in th
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FindHistory</td><td>
@@ -551,9 +551,9 @@ The methods associated with the FindHistory property are used to perform the fol
 
 <table>
 <tr>
-<td>
-FindHistory Method</td><td>
-Description</td></tr>
+<th>
+FindHistory Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Insert</td><td>
@@ -626,7 +626,7 @@ Essential Edit control Find Dialog is now enhanced with an alert message box. Th
 
 
 
-_Figure_ _50_: Alert Message Box
+_Figure_ _50: Alert Message Box
 
 ## Scrolling Support
 
@@ -638,9 +638,9 @@ The scrollers in the Edit Control can be optionally shown / hidden by using the 
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowVerticalScroller</td><td>
@@ -704,7 +704,7 @@ The Edit Control supports scroller events that are raised when the scroll arrows
 
 
 
-_Figure_ _51_: Scrolling support in Edit Control
+_Figure_ _51: Scrolling support in Edit Control
 
 
 
@@ -716,9 +716,9 @@ Buttons can be displayed at the top, bottom, left or right of the scroll bars by
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ScrollbarBottomButtons</td><td>
@@ -774,9 +774,9 @@ The scroll position and offsets of the Edit Control are set by using the below g
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><td>
+Description</th></tr>
 <tr>
 <td>
 ScrollPosition</td><td>
@@ -848,9 +848,9 @@ It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), wh
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ScrollVisualStyle</td><td>
@@ -912,7 +912,7 @@ The following illustration shows the Edit Control with custom color (green) set 
 
 
 
-_Figure_ _52_: Edit Control with ScrollColorScheme property = "Managed"
+_Figure_ _52: Edit Control with ScrollColorScheme property = "Managed"
 
 
 
@@ -941,7 +941,7 @@ The context menu has the standard VS.NET-like appearance, and can optionally be 
 
 
 
-_Figure_ _53_: Edit Control's Context Menu in Office2003 Style
+_Figure_ _53: Edit Control's Context Menu in Office2003 Style
 
 
 
@@ -1146,7 +1146,7 @@ End Sub
 
 
 
-Assembly Dependency
+### Assembly Dependency
 
 If the Syncfusion.Tools.Windows assembly is loaded before the instantiation of the context menu, then an XPMenus.PopupMenu is displayed as the context menu. Otherwise, a standard .NET context menu is shown.
 
@@ -1184,13 +1184,11 @@ Code Snippets are inserted into the Edit Control by following the procedure give
 2. Pressing the TAB key, or CTRL + ' combination.
 3. Select an item from the list as shown in the image below.
 
-
-
-![](Runtime-Features_images/Runtime-Features_img14.jpeg)
+   ![](Runtime-Features_images/Runtime-Features_img14.jpeg)
 
 
 
-_Figure_ _55_: Inserting Code Snippets into the Edit Control
+_Figure_ _55: Inserting Code Snippets into the Edit Control
 
 
 
@@ -1229,7 +1227,7 @@ Code Snippets are added to the current language of the Edit Control by using the
 
 <table>
 <tr>
-<td>
+<th>
 Edit Control Method</td><td>
 Description</td></tr>
 <tr>
@@ -1341,7 +1339,7 @@ The Literal element is used to identify a replacement for a piece of code that i
 
 
 
-Showing Code Snippets
+ ###Showing Code Snippets
 
 You can programmatically show the choice list of code snippets by calling ShowCodeSnippets method given below.
 
@@ -1403,7 +1401,7 @@ The Context Choice support allows you to create pop-ups for displaying a list of
 
 
 
-_Figure_ _56__: Context Choice List_
+_Figure_ _56: Context Choice List_
 
 
 
@@ -1455,9 +1453,9 @@ The Context Choice list is populated by handling the ContextChoiceOpen event of 
 
 <table>
 <tr>
-<td>
-Edit Control Event</td><td>
-Description</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextChoiceOpen</td><td>
@@ -1597,9 +1595,9 @@ The border color of the Context Choice form is set by using the ContextChoiceBor
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextChoiceBorderColor</td><td>
@@ -1653,9 +1651,9 @@ The Edit Control provides the following set of events for performing Context Cho
 
 <table>
 <tr>
-<td>
-Edit Control Event</td><td>
-Description</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextChoiceBeforeOpen</td><td>
@@ -1721,9 +1719,9 @@ End Sub
 
 <table>
 <tr>
-<td>
-Edit Control Event</td><td>
-Description</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextChoiceClose</td><td>
@@ -1763,9 +1761,9 @@ End Sub
 
 <table>
 <tr>
-<td>
-Edit Control Event</td><td>
-Description</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextChoiceItemSelected</td><td>
@@ -1881,9 +1879,9 @@ Edit Control provides options to filter items in AutoComplete. This can be done 
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FilterAutoCompleteItems</td><td>
@@ -1899,7 +1897,7 @@ FilterAutoCompleteItems property when set to True, filters the item in the AutoC
 
 
 
-_Figure_ _57_: Filtering Items in AutoComplete Context Choice
+_Figure_ _57: Filtering Items in AutoComplete Context Choice
 
 
 
@@ -1947,9 +1945,9 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 
 
 
-See Also
+### See Also
 
-Context Prompt
+### Context Prompt
 
 
 
@@ -1963,7 +1961,7 @@ The Context Prompt feature allows you to create pop-ups for displaying variation
 
 
 
-_Figure_ _58_: Context Prompt Pop-Up
+_Figure_ _58: Context Prompt Pop-Up
 
 
 
@@ -1991,9 +1989,9 @@ The Context Prompt is populated by handling the ContextPromptOpen event of Edit 
 
 <table>
 <tr>
-<td>
-Edit Control Event</td><td>
-Description</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextPromptOpen</td><td>
@@ -2071,9 +2069,9 @@ The border color of the Context Prompt form is set by using the ContextPromptBor
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextPromptBorderColor</td><td>
@@ -2105,9 +2103,9 @@ The size of the Context Prompt form can be set by using the below given properti
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextPromptSize</td><td>
@@ -2147,9 +2145,9 @@ The Edit Control provides the following set of events for performing Context Pro
 
 <table>
 <tr>
-<td>
-Edit Control Event</td><td>
-Description</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextPromptBeforeOpen</td><td>
@@ -2641,7 +2639,7 @@ The Context ToolTip displays helpful tooltips when the mouse is hovered over a l
 
 
 
-_Figure_ _59_: Context ToolTip
+_Figure_ _59: Context ToolTip
 
 
 
@@ -2775,9 +2773,9 @@ The border color of the Context ToolTip form is set by using the ContextTooltipB
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextTooltipBorderColor</td><td>
@@ -2892,9 +2890,9 @@ Presently, Edit Control supports all the cursors contained in the Windows Forms 
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cursor</td><td>
@@ -3006,11 +3004,11 @@ Essential Edit provides excellent support for viewport navigation including inte
 
 
 
-_Figure_ _60_: Preview of Intellimouse in Edit Control
+_Figure_ _60: Preview of Intellimouse in Edit Control
 
 
 
-See Also
+### See Also
 
 Some of the intellisense features.
 

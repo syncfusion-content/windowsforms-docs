@@ -45,14 +45,14 @@ Different visual styles can be applied using the VisualStyle property. The Digit
 * Metro
 * Default
 
-_Table_ _14_: Digital Gauge Visual Style
+_Table_ _14: Digital Gauge Visual Style
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -61,7 +61,7 @@ Gets or sets the frame type.</td></tr>
 </table>
 
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -83,7 +83,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -101,7 +101,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -120,7 +120,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silve
 
 
 
-Code Sample
+#####  Code Sample
 
 {% highlight c# %}
 
@@ -138,22 +138,22 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 
 
 
-#### Character Type
+### Character Type
 
 Character types are used to customize the digital segments. 
 
-Customizing Scales
+#### Customizing Scales
 
 You can customize the segments in the digital gauge using the following property:
 
-_Table_ _15_: Customizing Scales_
+_Table_ _15: Customizing Scales_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 CharacterType</td><td>
@@ -174,7 +174,7 @@ Different segments can be applied using the CharacterType property. The digital 
 
 In a digital gauge, the value can be displayed in dot matrix format by setting the character type as DotMatrixSegment.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -196,7 +196,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 In a digital gauge, the value can be displayed in a seven-segment format by setting the character type as SevenSegment.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -218,7 +218,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 In a digital gauge, the value can be displayed in a fourteen-segment format by setting the character type as FourteenSegment.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -242,7 +242,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 In a digital gauge, the value can be displayed in a sixteen-segment format by setting the character type as SixteenSegment.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -260,11 +260,11 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 
 
-## Character Count
+### Character Count
 
 The CharacterCount property can be used to restrict the number of characters that can be displayed in a digital gauge.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -285,11 +285,11 @@ Me.digitalGauge1.Value = 123456
 
 
 
-## Segment Spacing
+### Segment Spacing
 
 The SegmentSpacing property is used to determine the spacing between the characters displayed in the digital gauge.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -314,11 +314,11 @@ Me.digitalGauge1.Value = 123456
 
 
 
-## Show Visible Segements 
+### Show Visible Segements 
 
 The ShowInvisibleSegments property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to false.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -336,11 +336,11 @@ this.digitalGauge1.ShowInvisibleSegments = true;
 
 
 
-## RoundCornerRadius
+### RoundCornerRadius
 
 The RoundCornerRadius property of the digital gauge is used to draw digital gauge with rounded edges.
 
-Code Sample
+##### Code Sample
 
 {% highlight c# %}
 
@@ -358,11 +358,11 @@ Me.digitalGauge1.RoundCornerRadius = 50
 
 
 
-## Data Binding
+### Data Binding
 
 You can bind any data source to the digital gauge and map an index of a record to represent the actual value in the gauge. The DisplayMember and DisplayRecordIndex properties map the DataColumn and DataRow of the bound data source, respectively, to the Gauge control. Data-bound gauges support high frequency data updates.
 
-Example
+##### Example
 
 {% highlight c# %}
 

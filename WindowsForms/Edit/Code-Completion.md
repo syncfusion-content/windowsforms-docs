@@ -17,7 +17,7 @@ Complete Word feature is a user-friendly functionality that can be used in conju
 
 
 
-Example
+### Example
 
 When the following text is typed - "this.editControl1.", it displays a Context Choice list with members in the following order
 
@@ -30,25 +30,25 @@ When the following text is typed - "this.editControl1.", it displays a Context C
 
 
 
-Case 1
+### Case 1
 
 If you type "w" after "this.editControl1.", such that it looks like - "this.editControl1.w", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will autocomplete it with the first matching member name. In this case, it will be autocompleted as "this.editControl1.Word".
 
 
 
-Case 2
+### Case 2
 
 If you type "wordr" after "this.editControl1.", such that it looks like - "this.editControl1.wordr", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will autocomplete it with the first matching member name. In this case, it will be autocompleted as "this.editControl1.WordRight".
 
 
 
-Case 3
+### Case 3
 
 If you type "move" after "this.editControl1.", such that it looks like - "this.editControl1.move", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will autocomplete it with the first matching member name. In this case, there is no matching member name to autocomplete, and hence nothing will happen.
 
 
 
-Case 4
+### Case 4
 
 If you type nothing after "this.editControl1.", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will autocomplete it with the first member name in the Context Choice list. In this case, it should be autocompleted as "this.editControl1.New".
 
@@ -86,10 +86,7 @@ End Sub
 
 {% endhighlight %}
 
-See Also
-
-AutoReplace Triggers
-
+### See Also
 
 
 ## AutoReplace Triggers
@@ -104,7 +101,7 @@ The AutoReplace Trigger keys are defined within the language definitions. This m
 
 
 
-_Figure_ _12_: "for" has been incorrectly typed as "fro"
+_Figure_ _12: "for" has been incorrectly typed as "fro"
 
 
 
@@ -112,7 +109,7 @@ _Figure_ _12_: "for" has been incorrectly typed as "fro"
 
 
 
-_Figure_ _13_: After typing '(' the incorrect token "fro" is replaced with the correct token "for"
+_Figure_ _13: After typing '(' the incorrect token "fro" is replaced with the correct token "for"
 
 
 

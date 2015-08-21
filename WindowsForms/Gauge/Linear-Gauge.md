@@ -42,14 +42,14 @@ The frame defines the frame types of linear gauges. Frames can be applied using 
 * Horizontal
 * Vertical
 
-_Table_ _9_: Linear Gauge Frame Properties
+_Table_ _9: Linear Gauge Frame Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 LinearFrameType</td><td>
@@ -109,7 +109,7 @@ Gets or sets the value indicator color of the gauge.</td></tr>
 
 
 
-Code Sample
+### Code Sample
 
 
 
@@ -129,18 +129,18 @@ Me.linearGauge1.LinearFrameType = LinearFrameType.Horizontal
 
 Scales are used to control element placement and value ranges. 
 
-Customizing Scales
+#### Customizing Scales
 
 You can customize scales added to the Linear Gauge by using the properties listed in the following table:
 
-_Table_ _10_: Scales
+_Table_ _10: Scales
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowScaleLabel</td><td>
@@ -159,14 +159,14 @@ Two types of ticks can be added to the LinearGauge control scale. Major tick mar
 
 The following table lists the properties that can be used to customize the linear tick marks. This is done to represent the scale with meaningful markers and labels.
 
-_Table_ _11_: Ticks
+_Table_ _11: Ticks
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 MajorTickMarkColor</td><td>
@@ -283,14 +283,14 @@ this.linearGauge1.PointerPlacement = Placement.Center;
 
 Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and more. All the available attributes are listed in the following table: 
 
-_Table_ _12_: Ranges
+_Table_ _12: Ranges
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 StartSalue</td><td>
@@ -381,10 +381,10 @@ _Table_ _13_: Scaling Divisions
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 MinimumValue </td><td>

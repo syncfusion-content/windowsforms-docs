@@ -69,9 +69,9 @@ The event handler receives an argument of type CancellableCodeSnippetsEventArgs.
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -125,9 +125,9 @@ The event handler receives an argument of type CodeSnippetsEventArgs. The follow
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 CodeSnippet</td><td>
@@ -177,9 +177,9 @@ The event handler receives an argument of type CodeSnippetTemplateTextChangingEv
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -263,9 +263,9 @@ The event handler receives an argument of type NewSnippetMemberHighlightingEvent
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -437,9 +437,9 @@ The event handler receives an argument of type CancelEventArgs. The following Ca
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -551,9 +551,9 @@ The event handler receives an argument of type IContextChoiceController. The fol
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Dropper</td><td>
@@ -693,9 +693,9 @@ The event handler receives an argument of type ContextChoiceItemEventArgs. The f
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Item</td><td>
@@ -889,9 +889,9 @@ The event handler receives an argument of type CancelEventArgs. The following Ca
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -983,9 +983,9 @@ The event handler receives an argument of type IndicatorClickEventArgs. The foll
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Bookmark</td><td>
@@ -1033,9 +1033,9 @@ The event handler receives an argument of type IndicatorClickEventArgs. The foll
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Bookmark</td><td>
@@ -1083,9 +1083,9 @@ The event handler receives an argument of type DrawLineMarkEventArgs. The follow
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 CustomDraw</td><td>
@@ -1157,7 +1157,7 @@ End Sub
 
 
 
-_Figure_ _84_: Custom Indicators in the Indicator Margin
+_Figure_ _84: Custom Indicators in the Indicator Margin
 
 
 
@@ -1279,9 +1279,9 @@ The event handler receives an argument of type ILongOperation. The following ILo
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 ID</td><td>
@@ -1338,9 +1338,9 @@ The event handler receives an argument of type ILongOperation. The following ILo
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 ID</td><td>
@@ -1402,9 +1402,9 @@ The event handler receives an argument of type OutliningEventArgs. The following
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -1460,9 +1460,9 @@ The event handler receives an argument of type OutliningEventArgs. The following
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -1518,9 +1518,9 @@ The event handler receives an argument of type CollapseEventArgs. The following 
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
@@ -1570,9 +1570,9 @@ The event handler receives an argument of type CollapseEventArgs. The following 
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
@@ -1630,9 +1630,9 @@ The event handler receives an argument of type CollapseEventArgs. The following 
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
@@ -1684,9 +1684,9 @@ The event handler receives an argument of type CollapseEventArgs. The following 
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
@@ -1832,9 +1832,9 @@ The event handler receives an argument of type SaveWithDataLosingEventArgs. The 
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 SaveWithLoss</td><td>
@@ -1886,9 +1886,9 @@ The event handler receives an argument of type SaveWithDataLosingEventArgs. The 
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 SaveWithLoss</td><td>
@@ -1944,9 +1944,9 @@ The event handler receives an argument of type ScrollEventArgs. The following Sc
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 NewValue</td><td>
@@ -2002,9 +2002,9 @@ The event handler receives an argument of type ScrollEventArgs. The following Sc
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 NewValue</td><td>
@@ -2227,9 +2227,9 @@ The event handler receives an argument of type TextChangingEventArgs. The follow
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -2458,9 +2458,9 @@ The event handler receives an argument of type UnreachableTextFoundEventArgs. Th
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContinueSearch</td><td>
@@ -2512,9 +2512,9 @@ The event handler receives an argument of type UpdateBookmarkTooltipEventArgs. T
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Bookmark</td><td>
@@ -2608,7 +2608,7 @@ End Sub
 
 
 
-_Figure_ _85__: Bookmark ToolTip Text Displayed_
+_Figure_ _85: Bookmark ToolTip Text Displayed_
 
 
 
@@ -2640,9 +2640,9 @@ The event handler receives an argument of type PaintEventArgs. The following Pai
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 ClipRectangle</td><td>

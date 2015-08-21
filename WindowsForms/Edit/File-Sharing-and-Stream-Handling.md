@@ -21,9 +21,9 @@ The New and NewFile methods are used to create a new stream or file, and optiona
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 New</td><td>
@@ -93,9 +93,9 @@ The LoadFile method loads the content of any desired file into the Edit Control.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 LoadFile</td><td>
@@ -145,9 +145,9 @@ The following methods are used to save a file in the Edit Control.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SaveFile</td><td>
@@ -229,10 +229,10 @@ The following methods are used to insert a file in the Edit Control.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 InsertFile</td><td>
@@ -281,9 +281,9 @@ Files can be dropped onto the Edit Control by using the properties given below.
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DropAllFiles</td><td>
@@ -335,9 +335,9 @@ The contents of the Edit Control can be loaded and saved to a particular stream.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 LoadStream</td><td>
@@ -417,9 +417,9 @@ The name of the file that is currently loaded can be set by using the FileName p
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FileName</td><td>
@@ -453,9 +453,9 @@ The name of the stream that is currently loaded in the Edit Control can be set b
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FileOpened</td><td>
@@ -483,13 +483,13 @@ Me.editControl1.FileOpened = New FileStream("Temp.txt", FileMode.Create)
 
 {% endhighlight %}
 
-See Also
+### See Also
 
 Creating, Loading and Saving a File, Saving and Cancelling Changes
 
 
 
-Discard Changes
+### Discard Changes
 
 In the Edit control, all unsaved changes from the current stream can be discarded. This is done to make sure that the changes on the content and recently performed actions be undone.
 
@@ -519,7 +519,7 @@ This section demonstrates how changes made to the contents of the Edit Control c
 
 
 
-SaveOnClose Property
+### SaveOnClose Property
 
 This property specifies whether the default Save Changes prompt should be displayed on closing the Edit Control.
 
@@ -549,11 +549,11 @@ Me.editControl1.SaveOnClose = False
 
 
 
-_Figure_ _62_: Default Save Changes Prompt Dialog Box
+_Figure_ _62: Default Save Changes Prompt Dialog Box
 
 
 
-Saving Changes without displaying the Save Changes Prompt
+### Saving Changes without displaying the Save Changes Prompt
 
 When the SaveOnClose property is set to False, the default Save Changes prompt does not appear. The user should perform some custom Save routine in the Closing event handler of the host form, to save the unsaved contents in the Edit Control; If not they will be lost.
 
@@ -704,9 +704,9 @@ This method closes the currently open file or stream and displays the Edit Contr
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 Close</td><td>
@@ -736,7 +736,9 @@ Me.editControl1.Close()
 
 See Also
 
-Creating, Loading and Saving a File, Loading and Saving Contents
+
+### Creating, Loading and Saving a File, Loading and Saving Contents
+
 
 ## File Sharing
 
@@ -746,9 +748,9 @@ By default, Edit Control locks the file currently loaded into it, and does not a
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SharedFileMode</td><td>
@@ -775,6 +777,7 @@ this.editControl1.SharedFileMode = true;
 Me.editControl1.SharedFileMode = True
 
 {% endhighlight %}
+
 
 ## Lexical Analysis And Semantic Parsing
 
@@ -828,9 +831,9 @@ Edit Control supports several modes of text parsing which can be specified to th
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ParsingMode</td><td>
@@ -879,9 +882,9 @@ If the FlushSavedLines property is enabled, the FlushChanges() method will remov
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FlushSavedLines</td><td>

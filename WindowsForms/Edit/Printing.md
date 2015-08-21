@@ -63,7 +63,7 @@ Me.editControl1.Print()
 
 
 
-_Figure_ _77_: Print Dialog Box
+_Figure_ _77: Print Dialog Box
 
 
 
@@ -107,9 +107,9 @@ The following methods allow you to specify the options for printing.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 PrintCurrentPage</td><td>
@@ -195,9 +195,9 @@ The following properties are used to print the contents of the editor, the docum
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 PrintDocument</td><td>
@@ -221,9 +221,9 @@ The default text in the header and footer is the fully qualified path of the fil
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 PrintHeader</td><td>
@@ -295,11 +295,11 @@ The following image shows a typical page with a header and footer in Print Previ
 
 
 
-_Figure_ _79_: Preview of Header and Footer
+_Figure_ _79: Preview of Header and Footer
 
 
 
-Page Border Settings
+### Page Border Settings
 
 Edit Control provides the following methods to display page borders for the Edit Control.
 
@@ -307,9 +307,9 @@ Edit Control provides the following methods to display page borders for the Edit
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetPageBorder</td><td>

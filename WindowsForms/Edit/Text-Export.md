@@ -21,9 +21,9 @@ The following methods can implemented for this purpose.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SaveAsXML</td><td>
@@ -89,9 +89,9 @@ Edit Control is also capable of providing XML, RTF and HTML source code for gene
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetTextAsRTF</td><td>
@@ -156,7 +156,7 @@ Essential Edit now comes with an XML Schema Definition (XSD) file that provides 
 
 
 
-_Figure_ _61_: XML Schema Definition File
+_Figure_ _61: XML Schema Definition File
 
 
 
