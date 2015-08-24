@@ -2,12 +2,12 @@
 layout: post
 title: Introduction-to-Essential-XlsIO
 description: introduction to essential xlsio
-platform: WindowsForms
+platform: ejmvc
 control: XlsIO	
 documentation: ug
 ---
 
-## Introduction to Essential XlsIO
+# Introduction to Essential XlsIO
 
 Essential XlsIO is a 100% native .NET library that generates fully functional Microsoft Excel Spreadsheets in native Excel format without depending on Microsoft Excel. Essential XlsIO is a perfect solution for those who need to read and write Microsoft Excel files from code. It does not require MS Excel to be installed in the report generation machine or server.
 
@@ -27,15 +27,15 @@ XlsIO can read and write Excel files that are compatible with Excel 97 to Excel 
 
 The following image shows a sample worksheet.
 
-{{ '![](Introduction-to-Essential-XlsIO_images/Introduction-to-Essential-XlsIO_img1.png)' | markdownify }}
-{:.image }
+![](Introduction-to-Essential-XlsIO_images/Introduction-to-Essential-XlsIO_img1.png)
 
 
-Use Case Scenario
+#### Use Case Scenario
 
 * Desktop Application-A sales tracking application generating a report on sales figures for the past year. 
 * Web Application-A banking website allowing customers to download monthly statements in MS Excel format.
-### Advantages of Using Excel Reports
+
+## Advantages of Using Excel Reports
 
 
 Microsoft Excel is the most widely used Spreadsheet application in the world that makes XLS/XLSX an ideal reporting format for .NET applications. Some of the advantages of using Excel reports over other alternatives like HTML, PDF, etc. are:
@@ -43,7 +43,8 @@ Microsoft Excel is the most widely used Spreadsheet application in the world tha
 * The report generated may contain rich formats like Charts, Pictures, Multiple Worksheets, Formulae, Tables, PivotTables, Shapes, and so on.
 * The end-user can use the Data Visualization power of MS Excel to manipulate the generated reports. For example, the end-user can generate several charts to analyze and understand the sales numbers in a product sales report.
 * The popularity of MS Excel guarantees that the end-user is already familiar with MS Excel.
-### Problems of Using MS Excel
+
+## Problems of Using MS Excel
 
 
 MS Excel is not designed to be a report generation library, so it has several disadvantages compared to XlsIO. Here is a list of some problems in using Excel as a reporting component:
