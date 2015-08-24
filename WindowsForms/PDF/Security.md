@@ -15,7 +15,7 @@ Essential PDF allows you to encrypt your document in RC4 encryption.
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -65,9 +65,9 @@ document.Close();
 
 
 
-[VB]
+{%endhighlight%}
 
-
+{%highlight vbnet%}
 
 'Creates a new PDF document.
 
@@ -111,13 +111,15 @@ document.Save("Output.pdf")
 
 document.Close()
 
+{%endhighlight%}
+
 ## AES Encryption
 
 Essential PDF allows you to create an AES encrypted PDF document.
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -166,10 +168,9 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
-
-
+{%highlight vbnet%}
 
 'Creates a new PDF document.
 
@@ -213,7 +214,9 @@ document.Save("Output.pdf")
 
 document.Close()
 
-Digitally Sign the new PDF document
+{%endhighlight%}
+
+### Digitally Sign the new PDF document
 
 A digital signature is an electronic signature that is used to authenticate the identity of the sender of a message or the signer of a document, and to ensure that the original content of the message or document is unchanged. It stores information about the signee and the state of the document at the moment of signing.
 
@@ -223,9 +226,9 @@ _Table_ _28__: List of Elements in Digital Signature_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Appearance</td><td>
@@ -283,7 +286,7 @@ PdfSignature class has methods and properties that allow setting the signature i
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -330,10 +333,9 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
-
-
+{%highlight vbnet%}
 
 'Creates a new PDF document.
 
@@ -377,19 +379,21 @@ document.Save("Output.pdf")
 
 document.Close()
 
-Author Signature
+{%endhighlight%}
+
+### Author Signature
 
 By default, documents are signed with standard signature types. Certificated property of PdfSignature is used to create author’s signature. When signed with this type of signature, any modification after signing is detected, and hence do not support added multiple signatures.
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](Security_images/Security_img1.png)' | markdownify }}
-{:.image }
+
+
 _Note: This implementation of certification will only work with Acrobat 7 and higher versions._
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -441,9 +445,9 @@ document.Close();
 
 
 
-[VB]
+{%endhighlight%}
 
-
+{%highlight vbnet%}
 
 'Creates a new PDF document.
 
@@ -491,13 +495,15 @@ document.Save("Output.pdf")
 
 document.Close()
 
+{%endhighlight%}
+
 ## Digitally Sign the existing PDF document
 
 Essential PDF allows you to put signature in an existing PDF document as in a newly created PDF.
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -545,9 +551,9 @@ document.Close();
 
 
 
-[VB]
+{%endhighlight%}
 
-
+{%highlight vbnet%}
 
 'Creates a new PDF document.
 
@@ -595,6 +601,9 @@ document.Save("Output.pdf")
 
 document.Close()
 
+
+{%endhighlight%}
+
 ## Timestamp in Digital signature
 
 Essential PDF supports addition of timestamp in digital signatures. The date and time on which the document is signed can be added as part of the signature. Timestamps are easier to verify when they are associated with timestamp authority’s trusted certificate.  It also helps establish exactly when the document was signed and reduces the chances of an invalid signature. The timestamp can be obtained from a third-party timestamp authority or from the certificate authority that issued the digital ID.
@@ -608,7 +617,7 @@ The following code illustrates the method for adding timestamp in the digital si
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -658,11 +667,10 @@ document.Save("Output.pdf");
 
 document.Close();
 
+{%endhighlight%}
 
 
-[VB]
-
-
+{%highlight vbnet%}
 
 'Creates a new PDF document.
 
@@ -710,7 +718,7 @@ document.Save("Output.pdf")
 
 document.Close()
 
-
+{%endhighlight%}
 
 
 

@@ -15,7 +15,7 @@ Code 39 character set includes the digits 0-9, the letters A-Z (upper case only)
 
 
 
-[C#]
+{%highlight c#%}
 
 //Creates a new PDF Document.
 
@@ -43,9 +43,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODE39.pdf");
 
+{%endhighlight%}
 
-
-[VB]
+{%highlight vbnet%}
 
 'Creates a new PDF Document.
 
@@ -73,6 +73,8 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODE39.pdf")   
 
+{%endhighlight%}
+
 ## Code39Extended
 
 Code 39 Extended is an extended version of Code 39 that supports the ASCII character set. So with Code 39 Extended, you can also code the 26 lower letters (a-z) and the special characters you have on your keyboard. 
@@ -81,7 +83,7 @@ The following code example illustrates you on how to draw Code39Extended barcode
 
 
 
-[C#]
+{%highlight c#%}
 
 //Creates new PDF Document.
 
@@ -110,10 +112,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 doc.Save("CODE39Ext.pdf");
 
 
+{%endhighlight%}
 
-[VB]
-
-
+{%highlight vbnet%}
 
 'Creates new PDF Document.
 
@@ -141,6 +142,8 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODE39Ext.pdf")
 
+{%endhighlight%}
+
 ## Code11
 
 Code 11 is used primarily for labeling telecommunications equipment. The character set includes digits from 0 to 9, a dash (-), and a start or stop code. Each character is encoded with three bars and two spaces. Of these five elements, there can be two wide and three narrow elements, or one wide and four narrow elements. 
@@ -149,7 +152,7 @@ The following code example illustrates how to draw Code 11 Barcode.
 
 
 
-[C#]
+{%highlight c#%}
 
 //Creates new PDF document.
 
@@ -181,9 +184,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODE11.pdf");
 
+{%endhighlight%}
 
-
-[VB]
+{%highlight vbnet%}
 
 'Creates new PDF document.
 
@@ -215,6 +218,9 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODE11.pdf")
 
+
+{%endhighlight%}
+
 ## Codabar
 
 CodaBar is a variable length symbology that performs encoding of the following 20 characters: 
@@ -223,7 +229,7 @@ CodaBar is a variable length symbology that performs encoding of the following 2
 
 
 
-[C#]
+{%highlight c#%}
 
 //Draws Codabar barcode. 
 
@@ -251,11 +257,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODABAR.pdf");
 
+{%endhighlight%}
 
-
-[VB]
-
-
+{%highlight vbnet%}
 
 'Draws Codabar barcode. 
 
@@ -283,6 +287,8 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODABAR.pdf")
 
+{%endhighlight%}
+
 ## Code32
 
 It is mainly used for coding pharmaceuticals, cosmetics, and dietetics. Code 32 is mainly used to encode pharmaceutical products in Italy and has the following structure: 
@@ -295,7 +301,7 @@ The value to be encoded (that is passed to Barcode Professional) must be 8 digit
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -332,10 +338,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 doc.Save("CODE32.pdf");
 
 
+{%endhighlight%}
 
-[VB]
-
-
+{%highlight vbnet%}
 
 'Draws Code32 barcode. 
 
@@ -367,7 +372,9 @@ Dim page As PdfPage = doc.Pages.Add()
 
 'Saves the document.
 
-doc.Save("CODE32.pdf")     
+doc.Save("CODE32.pdf")    
+
+{%endhighlight%} 
 
 ## Code93
 
@@ -378,8 +385,8 @@ Code 93 was designed to complement and improve Code 39. It can represent the ful
 * The asterisk (*) is not a true encodable character, but is the start and stop 'symbol' for Code 93.
 
 
+{%highlight c#%}
 
-[C#]
 
 //Draws Code93 barcode. 
 
@@ -407,9 +414,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODE93.pdf");
 
+{%endhighlight%}
 
-
-[VB]
+{%highlight vbnet%}
 
 
 
@@ -437,11 +444,13 @@ barcode.Draw(page, New PointF(25, 70))
 
 'Saves the document.
 
-doc.Save("CODE93.pdf")        
+doc.Save("CODE93.pdf")   
+
+{%endhighlight%}     
 
 ## Code93Extended
 
-[C#]
+{%highlight c#%}
 
 //Draws Code93 Extended barcode. 
 
@@ -473,10 +482,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODE93Ext.pdf");
 
+{%endhighlight%}
 
-
-[VB]
-
+{%highlight vbnet%}
 
 
 'Draws Code93 Extended barcode. 
@@ -509,6 +517,8 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODE93Ext.pdf")
 
+{%endhighlight%}
+
 ## Code128
 
 Code 128 is a variable length, high density, alphanumeric, linear bar code symbology, capable of encoding the full 128-character ASCII character set and extended character sets. This Symbology includes a checksum digit for verification, and the barcode can also be verified character-by-character for parity of each data byte. 
@@ -529,7 +539,7 @@ Code Set A (or Characters Set A) includes all of the standard upper case U.S. al
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -571,9 +581,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODE128A.pdf");
 
+{%endhighlight%}
 
-
-[VB]
+{%highlight vbnet%}
 
 'Draws Code128A barcode. 
 
@@ -613,13 +623,15 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODE128A.pdf")
 
+{%endhighlight%}
+
 ## Code128B
 
 Code Set B (or Characters Set B) includes all of the standard upper case alphanumeric keyboard characters and punctuation characters together with the lower case alphabetic characters (i.e. characters with ASCII values from 32 to 127 inclusive), and seven special characters. 
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -657,9 +669,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODE128B.pdf");
 
+{%endhighlight%}
 
-
-[VB]
+{%highlight vbnet%}
 
 'Draws Code128B barcode. 
 
@@ -695,13 +707,15 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODE128B.pdf")   
 
+{%endhighlight%}
+
 ## Code128C
 
 Code Set C (or Characters Set C) includes the set of 100 digit pairs from 00 to 99, as well as three special characters. This allows numeric data to be encoded as two data digits per symbol character at effectively twice the density of standard data. 
 
 
 
-[C#]
+{%highlight c#%}
 
 //Draws Code128C barcode. 
 
@@ -737,12 +751,10 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("CODE128C.pdf");
 
+{%endhighlight%}
 
 
-[VB]
-
-
-
+{%highlight vbnet%}
 'Draws Code128C barcode. 
 
 Dim barcode As New PdfCode128CBarcode()
@@ -777,11 +789,13 @@ barcode.Draw(page, New PointF(25, 70))
 
 doc.Save("CODE128C.pdf")
 
+{%endhighlight%}
+
 ## Data Matrix
 
 DataMatrix barcode is a two dimensional barcode that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the barcode can either be number or alphanumeric. The PdfDataMatrixBarcode class available in Syncfusion.Pdf.Barcode namespace sets the suitable encoding type and size for the input data. However, the size, encoding type, and dimension of individual blocks can also be set using these properties.
 
-Use case scenario 
+### Use case scenario 
 
 The DataMatrix bar codes are widely used in printed media as labels and letters. It can easily be read by a bar code reader and also by mobile phones. 
 
@@ -789,10 +803,10 @@ _Table_ _29__: Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 Encoding </td><td>
@@ -818,7 +832,7 @@ Float </td></tr>
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -850,11 +864,9 @@ barcode.Draw(page, new PointF(25, 70 ));
 
 doc.Save("DataMatrix.pdf");
 
+{%endhighlight%}
 
-
-[VB]
-
-
+{%highlight vbnet%}
 
 'Draws Data Matrix barcode.
 
@@ -882,7 +894,9 @@ barcode.Draw(page, New PointF(25, 70))
 
 'Saves the document.
 
-doc.Save("DataMatrix.pdf")     
+doc.Save("DataMatrix.pdf")  
+
+{%endhighlight%}   
 
 ## QR Barcode
 
@@ -890,7 +904,7 @@ QR Barcode is a two-dimensional barcode that consists of a grid of dark and ligh
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -925,10 +939,9 @@ barcode.Draw(page, new PointF(25, 70));
 doc.Save("QRBarcode.pdf");
 
 
+{%endhighlight%}
 
-[VB]
-
-
+{%highlight vbnet%}
 
 'Draws QR Barcode.
 
@@ -961,4 +974,4 @@ barcode.Draw(page, New PointF(25, 70))
 doc.Save("QRBarcode.pdf")  
 
 
-
+{%endhighlight%}

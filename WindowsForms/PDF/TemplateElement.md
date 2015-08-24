@@ -9,46 +9,36 @@ documentation: ug
 
 # TemplateElement
 
-Page Templates define graphic primitives for a range of pages. Each page has two sources of template, such as template on the document holding the section of the page and template on the section containing the page that apply sequentially.
+Page Templates define graphic primitives for a range of pages. Each page has two sources of template, such as template on the document holding the section of the page and template on the section containing the page that apply sequentially.Each page template has four properties for Left, Right, Top, and Bottom docked templates, and a collection of additional template elements (stamps). There are eight additional templates that you can add to the odd or even pages (EvenTop, OddTop, etc.). If one of these eight templates is set, it overrides its usual template (OddTop overrides top, etc.); otherwise, the usual template is used. 
 
-Each page template has four properties for Left, Right, Top, and Bottom docked templates, and a collection of additional template elements (stamps). There are eight additional templates that you can add to the odd or even pages (EvenTop, OddTop, etc.). If one of these eight templates is set, it overrides its usual template (OddTop overrides top, etc.); otherwise, the usual template is used. 
-
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](TemplateElement_images/TemplateElement_img1.png)' | markdownify }}
-{:.image }
-_Note: A PdfPageTemplateElement is added as one template. It can be assigned to Left, Right, Top, or Bottom only once._ 
+> Note: A PdfPageTemplateElement is added as one template. It can be assigned to Left, Right, Top, or Bottom only once.
 
 
-Using the Page Templates 
+### Using the Page Templates 
 
 When you want to define some graphics content to all pages of the document, use the Template property of the PdfDocument class. You can define Left, Top, Right, and Bottom templates, as well as an arbitrary quantity of the other templates (stamps) that can be used for water marking or stamping of the pages.
 
 When you decide to use some custom templates for a specified range of the page, use Template property of the PdfSection class containing these pages. It involves the same functionality as in the PdfDocument class. Additionally, you can disable or enable the document templates from the section.
 
-Default Behavior
+### Default Behavior
 
 Document templates are enabled, by default.
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](TemplateElement_images/TemplateElement_img2.png)' | markdownify }}
-{:.image }
-_Note: Section template that is printed over the parent template, does not replace document templates. When you want to insert a watermark or stamp on the page, use Stamps property of the PdfDocumentTemplate class._ 
+> Note: Section template that is printed over the parent template, does not replace document templates. When you want to insert a watermark or stamp on the page, use Stamps property of the PdfDocumentTemplate class.
 
 Behavior
 
 PdfPageTemplateElement class has the functionality of aligning (use Alignment property) and docking (use Dock property) of this class. Docking to the Left, Top, Right, and Bottom are implemented similar to Windows Forms Docking functionality (Top and Bottom have priority). Docking stamp elements do not have any priorities and the appearance depends on their order in the collection. 
 
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](TemplateElement_images/TemplateElement_img3.png)' | markdownify }}
-{:.image }
-_Note: Alignment has higher priority than Docking in the template element, but Docking resets the Alignment._ 
+> Note: Alignment has higher priority than Docking in the template element, but Docking resets the Alignment.
 
 
 Each template element that is docked, sticks to its appropriate side of the page. It stretches itself according to the dimensions of the page and resets the alignment. Avoid printing any content that can be stretched in cases where the pages have different sizes. Also, define the size of the template elements according to its docking style on the page. When you want to use some template element as Left, Top, Right, or Bottom, but do not want the element to be stretched, then you can set the Alignment property once you are assigned with the template element (or set Dock property) to any of the mentioned properties. In this case, the template sticks to the appropriate position, but not be stretched.
 
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](TemplateElement_images/TemplateElement_img4.png)' | markdownify }}
-{:.image }
-_Note: In this scenario, you can set the Alignment property to the appropriate side only (depending on the Dock style). For example, when you want to set some template element as Top, the allowed values for Alignment are: TopLeft, TopCenter, and TopRight. You cannot set any other value attributing to the possible inconsistency with docking style._ 
+> Note: In this scenario, you can set the Alignment property to the appropriate side only (depending on the Dock style). For example, when you want to set some template element as Top, the allowed values for Alignment are: TopLeft, TopCenter, and TopRight. You cannot set any other value attributing to the possible inconsistency with docking style. 
 
-Z-Order of the Layers
+#### Z-Order of the Layers
 
 Each page can contain page templates from the document and from the parent section. Also, it can contain its own layers. The order of the layers is as follows (from back to top): 
 
@@ -71,17 +61,14 @@ Each page can contain page templates from the document and from the parent secti
 9.   Document stamp elements that have Foreground property set to True.
 
 
-{{ '![C:/Users/SURESH/Desktop/UGRevamp/TemplateElement.png](TemplateElement_images/TemplateElement_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/SURESH/Desktop/UGRevamp/TemplateElement.png](TemplateElement_images/TemplateElement_img5.png)
+
 
 
 The code sample to use PdfTemplate to render it into the PDF document is illustrated as follows.
 
 
-
-[C#]
-
-
+{% highlight c# %}
 
 //Creates a new PDF document.
 
@@ -117,11 +104,9 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
+{% endhighlight  %}
 
-
-[VB]
-
-
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -157,5 +142,4 @@ pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
 
-
-
+{% endhighlight  %}

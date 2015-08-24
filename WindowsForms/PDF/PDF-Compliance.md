@@ -16,7 +16,7 @@ For data transmission, compression can be performed on any of the following depe
 * Just the data content, or
 * Entire transmission unit.
 
-Content compression
+## Content compression
 
 Content compression involves following:
 
@@ -24,15 +24,15 @@ Content compression involves following:
 * Inserting a single repeat character to indicate a string of repeated characters.
 * Substituting smaller bit strings for frequently occurring characters.
 
-Advantages of Content compression
+### Advantages of Content compression
 
 •Reduces a text file upto 50 percent of its original size.
 
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](PDF-Compliance_images/PDF-Compliance_img1.png)' | markdownify }}
-{:.image }
+![](PDF-Compliance_images/PDF-Compliance_img1.png)
+
 _Note: Compression is performed by a program that uses a formula or algorithm, which determines how to compress or decompress the data. This algorithm is one of the critical factors that determines compression quality and is elaborated below._ 
 
-Controlling the Compression Levels
+### Controlling the Compression Levels
 
 Essential PDF controls the compression level of document by using the PdfCompressionLevel class with the help of the LZW and zlib/deflate compression algorithms. Both LZW and Flate algorithms compress either binary data or ASCII text and always produces the binary data.
 
@@ -50,12 +50,14 @@ The following compression levels are supported by Essential PDF:
 
      	•Best-Performs the best compression; time consuming
 
-PDF Compliance
+### PDF Compliance
 
 PDF elements are standardized under ISO for several constituencies. This section deals with the following standards that are supported by Essential PDF.
 
 * PDF/A-This topic demonstrates PDF/A-1b standard that is used for archiving in environments like corporate, government, and library.
 * PDF/X-This topic discusses the PDF/X-1a standard that is mainly available for standardizing printing and graphics.
+
+
 ## PDF/A-1b
 
 
@@ -86,7 +88,7 @@ The following code example illustrates you on how to create PDF/A-1b compliant o
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -124,7 +126,9 @@ document.Close();
 
 
 
-[VB]
+{%endhighlight%}
+
+{%highlight vbnet%}
 
 
 
@@ -160,6 +164,8 @@ document.Save("Output.pdf")
 
 document.Close()
 
+{%endhighlight%}
+
 ## PDF/X-1a
 
 PDF/X is a subset of the Adobe Portable Document Format (PDF) specification that exhibits best practices in graphic arts file exchange. PDF/X-1a restricts the content in the PDF document that does not directly serve the purpose of high-quality print production output, such as annotations, Java Actions, and embedded multimedia.
@@ -173,8 +179,7 @@ The following code example illustrates how to create PDF/A-1b compliant output:
 
 
 
-[C#]
-
+{%highlight c#%}
 
 
 //Creates a new document with PDF/A standard.
@@ -211,9 +216,9 @@ document.Close();
 
 
 
-[VB]
+{%endhighlight%}
 
-
+{%highlight vbnet%}
 
 'Creates a new document with PDF/A standard.
 
@@ -247,5 +252,5 @@ document.Save("Output.pdf")
 
 document.Close()
 
-
+{%endhighlight%}
 

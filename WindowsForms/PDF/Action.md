@@ -53,7 +53,7 @@ Sound action plays a specified music file in the PDF document. Volume and repeat
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -97,12 +97,10 @@ document.Save("Output.pdf");
 
 document.Close();
 
+{%endhighlight%}
 
 
-[VB]
-
-
-
+{%highlight vbnet%}
 'Creates a new document with PDF/A standard.
 
 Dim document As New PdfDocument()
@@ -141,13 +139,16 @@ document.Actions.AfterOpen = soundAction
 
 document.Save("Output.pdf")
 
+
+{%endhighlight%}
+
 ## JavaScript Action
 
 A JavaScript action allows execution of JavaScript code embedded in the PDF document.
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -192,8 +193,9 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
+{%highlight vbnet%}
 
 
 
@@ -237,13 +239,16 @@ document.Save("Output.pdf")
 
 document.Close()
 
+
+{%endhighlight%}
+
 ## URI Action 
 
 URI action allows you displaying a hypertext link in a web browser. Next property of an action is used to specify the queue of actions.
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -296,8 +301,9 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
+{%highlight vbnet%}
 
 
 
@@ -349,13 +355,16 @@ document.Save("Output.pdf")
 
 document.Close()
 
+
+{%endhighlight%}
+
 ## GoTo Action 
 
 GoTo action displays the specified page in the current document. The location can be specified for the destination page. 
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -409,9 +418,9 @@ document.Close();
 
 
 
-[VB]
+{%endhighlight%}
 
-
+{%highlight vbnet%}
 
 'Creates a new document with PDF/A standard.
 
@@ -463,13 +472,16 @@ document.Save("Output.pdf")
 
 document.Close()
 
+
+{%endhighlight%}
+
 ## Launch Action 
 
 Launch action allows execution of an external application or file.
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -514,8 +526,10 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
+
+{%highlight vbnet%}
 
 
 
@@ -559,13 +573,17 @@ document.Save("Output.pdf")
 
 document.Close()
 
+
+
+{%endhighlight%}
+
 ## Named Action
 
 Named action allows execution of predefined PDF actions. The following predefined PDF actions are available: go to next page, go to prev page, go to first page, and go to last page. 
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -616,8 +634,9 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
+{%highlight vbnet%}
 
 
 
@@ -665,13 +684,15 @@ document.Save("Output.pdf")
 
 document.Close()
 
+
+{%endhighlight%}
+
 ## Submit Action
 
 Submit action allows submission of data that is entered into the PDF form.
 
 
-
-[C#]
+{%highlight c#%}
 
 
 
@@ -736,8 +757,9 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
+{%highlight vbnet%}
 
 
 
@@ -801,13 +823,16 @@ document.Save("Output.pdf")
 
 document.Close()
 
+
+{%endhighlight%}
+
 ## Reset Action 
 
 Reset action allows resetting of all form fields in the PDF document.
 
 
 
-[C#]
+{%highlight c#%}
 
 
 
@@ -870,8 +895,9 @@ document.Save("Output.pdf");
 document.Close();
 
 
+{%endhighlight%}
 
-[VB]
+{%highlight vbnet%}
 
 
 
@@ -936,4 +962,5 @@ document.Save("Output.pdf")
 document.Close()
 
 
+{%endhighlight%}
 
