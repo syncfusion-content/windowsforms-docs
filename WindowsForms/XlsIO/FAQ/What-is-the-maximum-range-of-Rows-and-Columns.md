@@ -7,7 +7,7 @@ control: XlsIO
 documentation: ug
 ---
 
-### What is the maximum range of Rows and Columns
+# What is the maximum range of Rows and Columns
 
 XlsIO has support for 16,384 columns by 1,048,576 rows in Excel 2007 xlsx format, and 256 columns by 65,536 rows in Excel 97 to 2003 format. Note that this is the worksheet size of MS Excel itself.
 

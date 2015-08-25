@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-open-an-existing-Xlsx-workbook-and-save-it-as-Xlsx
+description:  How to open an existing Xlsx workbook and save it as Xlsx
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
@@ -10,7 +10,6 @@ documentation: ug
 # How to open an existing Xlsx workbook and save it as Xlsx
 
 You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
-
  
 {% highlight C# %}
 
@@ -26,7 +25,8 @@ workbook.SaveAs("Sample.xlsx");
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
+  
+'Opens an existing Excel 2013 file.
 Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
  
 'Selects the version to be saved.

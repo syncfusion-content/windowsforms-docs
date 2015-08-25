@@ -1,39 +1,49 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-open-an-Excel-2007-Macro-Enabled-Template
+description:  How to open an Excel 2007 Macro Enabled Template
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to open an Excel 2007 Macro Enabled Template
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
-
+XlsIO now provides support to open and save an Excel 2013 Macro Enabled Template to XLSM (Excel 2013 Macro Enabled Document) format. The following code example illustrates this.
  
 {% highlight C# %}
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
+// Opens an existing XLTM file.
+IWorkbook workbook = application.Workbooks.Open(@"Template.xltm", ExcelOpenType.Automatic);
+ 
+// Saves the file as XLSM.
 workbook.Version = ExcelVersion.Excel2013;
- 
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
-  {% endhighlight %}    
+workbook.SaveAs("Sample.xlsm", ExcelSaveType.SaveAsTemplate);
+ {% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+
+'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Selects the version to be saved.
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
+ 
+'Opens an existing XLTM file.
+workbook = application.Workbooks.Open("MacroTemplate.xltm", ExcelOpenType.Automatic)
+ 
+'Saves the file as XLSM.
 workbook.Version = ExcelVersion.Excel2013
+workbook.SaveAs("Sample.xlsm", ExcelSaveType.SaveAsTemplate)
+
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 
 

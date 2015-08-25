@@ -1,40 +1,67 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-unfreeze-the-rows-and-columns-in-XlsIO
+description:  How to unfreeze the rows and columns in XlsIO
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to unfreeze the rows and columns in XlsIO
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
+You can unfreeze rows and columns in XlsIO by using the RemovePanes method. The following code example illustrates this.
 
+ 
  
 {% highlight C# %}
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
+IWorksheet sheet = workbook.Worksheets[0];
+ 
+//Sets the FreezePanes.
+sheet.Range[8, 1].FreezePanes();
+sheet.RemovePanes();
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+// Closes the workbook.
+workbook.Close();
+excelEngine.Dispose();   
   {% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+ 'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+ 
+' Accesses via index.
+Dim sheet As IWorkbook = workbook.Worksheets(0)
+ 
+'Sets the FreezePanes.
+sheet.Range(8, 1).FreezePanes()
+sheet.RemovePanes()
+ 
+Dim fileName As String = "Output.xlsx"
+workbook.SaveAs(fileName)
+ 
+' Closes the workbook.
+workbook.Close()
+excelEngine.Dispose()
 {% endhighlight %}
 
-
-> Note: You need to change the Excel Version, if you want to save to another version.

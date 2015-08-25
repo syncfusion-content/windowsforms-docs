@@ -1,40 +1,49 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-save-a-file-to-the-stream
+description:  How to save a file to the stream
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to save a file to the stream
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
+XlsIO provides support to save a spreadsheet to a .NET stream. The following code example illustrates this.
 
+ 
  
 {% highlight C# %}
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+ 
+//Saves the workbook to stream.
+FileStream fs = new FileStream("Sample.xls", FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite);
+workbook.SaveAs(fs);
+workbook.Close();
   {% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+ 'Saves the workbook to the stream.
+Dim fs As FileStream = New FileStream("Sample.xls", FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite)
  
-'Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013
+'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
+ 
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+workbook.SaveAs(fs)
+workbook.Close()
 {% endhighlight %}
 
-
-> Note: You need to change the Excel Version, if you want to save to another version.

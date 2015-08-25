@@ -1,19 +1,22 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-open-an-Excel-file-from-Stream
+description:  How to open an Excel file from Stream?
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an Excel file from Stream
+# How to open an Excel file from Stream?
 
 XlsIO provides support for opening a template spreadsheet that is stored as a stream. The following code example illustrates this.
 
+ 
+ 
 {% highlight C# %}
 
-  //Step 1: Instantiates the spreadsheet creation engine.
+  
+//Step 1: Instantiates the spreadsheet creation engine.
 ExcelEngine excelEngine = new ExcelEngine();
 
 //Step 2: Instantiates the excel application object.
@@ -32,7 +35,7 @@ workbook.SaveAs(fileName);
  
 // Closes the workbook.
 workbook.Close();
-excelEngine.Dispose();      
+excelEngine.Dispose();  
 {% endhighlight %}    
 
 

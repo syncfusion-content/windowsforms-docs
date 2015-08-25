@@ -1,40 +1,66 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-set-or-format-a-HeaderFooter
+description:  How to set or format a Header/Footer
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to set or format a Header/Footer
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
+The string that the header/footer takes is a script that you can use to format the header/footer. For more information on formatting the string, see <http://support.microsoft.com/?kbid=213618>.
 
  
 {% highlight C# %}
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
+IWorksheet sheet = workbook.Worksheets[0];
+ 
+//Formats the header.
+Sheet.PageSetup.CenterHeader = @"&""Gothic,bold""Center Header Text";  
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+// Closes the workbook.
+workbook.Close();
+excelEngine.Dispose();    
   {% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
  
-'Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013
+  
+'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
+ 
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+ 
+' Accesses via index.
+Dim sheet As IWorkbook = workbook.Worksheets(0)
+ 
+'Formats the header.
+sheet.PageSetup.CenterHeader = @"&""Gothic,bold""Center Header Text"
+ 
+Dim fileName As String = "Output.xlsx"
+workbook.SaveAs(fileName)
+ 
+' Closes the workbook.
+workbook.Close()
+excelEngine.Dispose()
 {% endhighlight %}
 
-
-> Note: You need to change the Excel Version, if you want to save to another version.

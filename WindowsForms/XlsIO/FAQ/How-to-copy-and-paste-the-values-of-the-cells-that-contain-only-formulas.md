@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-copy-and-paste-the-values-of-the-cells-that-contain-only-formulas
+description:  How to copy and paste the values of the cells that contain only formulas
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
@@ -10,8 +10,11 @@ documentation: ug
 # How to copy and paste the values of the cells that contain only formulas
 
 You can copy and paste the values of the cells that contain only formulas by setting ExcelCopyRangeOptions of the CopyTo method to None. The following code example illustrates this.
+
  
+
 {% highlight C# %}
+
 
 //Step 1: Instantiates the spreadsheet creation engine.
 ExcelEngine excelEngine = new ExcelEngine();
@@ -35,15 +38,14 @@ workbook.SaveAs(fileName);
  
 // Closes the workbook.
 workbook.Close();
-excelEngine.Dispose();              
+excelEngine.Dispose();                
 
 {% endhighlight %}    
 
 
 {% highlight vbnet %}
  
- 
-'Step 1: Instantiates the spreadsheet creation engine.
+ 'Step 1: Instantiates the spreadsheet creation engine.
 
 Dim excelEngine As ExcelEngine = New ExcelEngine
 

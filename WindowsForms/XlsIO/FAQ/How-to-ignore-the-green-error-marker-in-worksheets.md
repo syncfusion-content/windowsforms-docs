@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-ignore-the-green-error-marker-in-worksheets
+description:  How to ignore the green error marker in worksheets
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
@@ -12,10 +12,10 @@ documentation: ug
 You can ignore the error marker that appears in cells when there exists data that are of different formats. This can be done by using the ExcelIgnoreError enumerator that provides various options to ignore the error marker.
 
  
+ 
 {% highlight C# %}
 
- 
-//Step 1: Instantiates the spreadsheet creation engine.
+ //Step 1: Instantiates the spreadsheet creation engine.
 ExcelEngine excelEngine = new ExcelEngine();
 
 //Step 2: Instantiates the excel application object.
@@ -36,7 +36,7 @@ workbook.SaveAs(fileName);
  
 // Closes the workbook.
 workbook.Close();
-excelEngine.Dispose();          
+excelEngine.Dispose();            
 {% endhighlight %}    
 
 
@@ -63,10 +63,10 @@ workbook.SaveAs(fileName)
 ' Closes the workbook.
 workbook.Close()
 excelEngine.Dispose()
+ 
 
 {% endhighlight %}
 
 
-![](FAQ_images/FAQ_img1.png)
+![](FAQ_images/FAQ_img7.png)
 
-To ignore error

@@ -1,40 +1,76 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-protect-certain-cells-in-a-spreadsheet
+description:  How to protect certain cells in a spreadsheet
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to protect certain cells in a spreadsheet
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
+All the cells in an Excel spreadsheet have a Locked property that determines if the cell is editable when the worksheet is protected. All the cells are set to Locked, by default. So, when a worksheet is protected, all the cells in the worksheet get protected, by default. However, there is often a need to protect only certain cells in a worksheet. In this scenario, you need to protect a worksheet and set the IsLocked property to false for the cells that need to be made editable.
 
+ 
  
 {% highlight C# %}
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
+IWorksheet sheetOne = workbook.Worksheets[0];
+ 
+// Sample data.
+sheetOne.Range["A1:K20"].Text = "Locked";
+ 
+// A1:A10 will not be protected.
+sheetOne.Range["A1:A10"].CellStyle.Locked = false;
+sheetOne.Range["A1:A10"].Text = "UnLocked";
+sheetOne.Protect("syncfusion", ExcelSheetProtection.FormattingColumns);
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+// Closes the workbook.
+workbook.Close();
+excelEngine.Dispose();         
   {% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+ 'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+ 
+' Accesses via index.
+Dim sheetOne As IWorkbook = workbook.Worksheets(0)
+ 
+'Sample data.
+sheetOne.Range("A1:K20").Text = "Locked"
+ 
+'A1:A10 is not protected.
+sheetOne.Range("A1:A10").CellStyle.Locked = False
+sheetOne.Range("A1:A10").Text = "UnLocked"
+sheetOne.Protect("syncfusion", ExcelSheetProtection.FormattingColumns)
+ 
+Dim fileName As String = "Output.xlsx"
+workbook.SaveAs(fileName)
+ 
+' Closes the workbook.
+workbook.Close()
+excelEngine.Dispose()
 {% endhighlight %}
 
 
-> Note: You need to change the Excel Version, if you want to save to another version.
+> Note: Locking/Unlocking cells in an unprotected worksheet has no effect.

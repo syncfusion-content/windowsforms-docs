@@ -1,40 +1,121 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-set-options-to-print-Titles
+description:  How to set options to print Titles
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to set options to print Titles
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
+## Printing Title Rows
 
- 
+The following code example illustrates printing the Title Rows.
+
 {% highlight C# %}
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
+IWorksheet sheet = workbook.Worksheets[0];
+ 
+//Prints Rows 1 to 3.
+sheet.PageSetup.PrintTitleRows = "$A$1:$IV$3";
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+// Closes the workbook.
+workbook.Close();
+excelEngine.Dispose();     
   {% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+ 'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+ 
+' Accesses via index.
+Dim sheet As IWorkbook = workbook.Worksheets(0)
+ 
+'Prints Rows 1 to 3.
+sheet.PageSetup.PrintTitleRows = "$A$1:$IV$3"
+ 
+Dim fileName As String = "Output.xlsx"
+workbook.SaveAs(fileName)
+ 
+' Closes the workbook.
+workbook.Close()
+excelEngine.Dispose()
 {% endhighlight %}
 
+## Printing the Title Columns
 
-> Note: You need to change the Excel Version, if you want to save to another version.
+The following code example illustrates printing the Title Columns.
+
+ {% highlight C# %}
+ 
+ //Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
+ 
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+ 
+IWorksheet sheet = workbook.Worksheets[0];
+ 
+//Prints Columns 1 to 3.
+sheet.PageSetup.PrintTitleColumns = "$A$1:$C$65536";
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+// Closes the workbook.
+workbook.Close();
+excelEngine.Dispose();       
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
+ 
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
+ 
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+ 
+' Accesses via index.
+Dim sheet As IWorkbook = workbook.Worksheets(0)
+ 
+'Prints Columns 1 to 3.
+sheet.PageSetup.PrintTitleColumns = "$A$1:$C$65536"
+ 
+Dim fileName As String = "Output.xlsx"
+workbook.SaveAs(fileName)
+ 
+' Closes the workbook.
+workbook.Close()
+excelEngine.Dispose()
+
+{% endhighlight %}
+
+For information on Print settings, refer to the section [Print Settings](http://help.syncfusion.com/windows%20forms).

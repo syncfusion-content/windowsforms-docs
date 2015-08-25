@@ -1,40 +1,70 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-suppress-the-summary-rows-and-columns-by-using-XlsIO
+description:  How to suppress the summary rows and columns by using XlsIO
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to suppress the summary rows and columns by using XlsIO
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
+You can suppress the summary rows and columns by using the IsSummaryRowBelow and IsSummaryColumnRight properties. The following code example illustrates this.
 
+ 
  
 {% highlight C# %}
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
-  {% endhighlight %}    
+IWorksheet sheet = workbook.Worksheets[0];
+ 
+//Suppresses the summary rows at the bottom.
+sheet.PageSetup.IsSummaryRowBelow = false;
+//Suppresses the summary columns to the right.
+sheet.PageSetup.IsSummaryColumnRight = false;
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+//Closes the workbook.
+workbook.Close();
+excelEngine.Dispose();   
+{% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+ 'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+ 
+'Accesses via index.
+Dim sheet As IWorkbook = workbook.Worksheets(0)
+ 
+'Suppresses the summary rows at the bottom.
+sheet.PageSetup.IsSummaryRowBelow = False
+'Suppress the summary columns to the right.
+sheet.PageSetup.IsSummaryColumnRight = False
+ 
+Dim fileName As String = "Output.xlsx"
+workbook.SaveAs(fileName)
+ 
+'Closes the workbook.
+workbook.Close()
+excelEngine.Dispose()
+
 {% endhighlight %}
 
-
-> Note: You need to change the Excel Version, if you want to save to another version.

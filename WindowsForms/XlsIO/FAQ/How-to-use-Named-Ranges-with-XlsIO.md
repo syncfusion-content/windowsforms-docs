@@ -1,27 +1,55 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-use-Named-Ranges-with-XlsIO
+description:  How to use Named Ranges with XlsIO
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to use Named Ranges with XlsIO
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
-
+The NamedRanges collection belongs to the workbook and not to the worksheet. When you define two named ranges with the same name then the named range that is defined last replaces the previous named range.
  
 {% highlight C# %}
+ 
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
+IWorksheet mySheet = workbook.Worksheets[0];
+ 
+//Loops through the Named Ranges in a spreadsheet.
+foreach (IName name in mySheet.Names)
+{
+MessageBox.Show(name.Name.ToString());
+}
+//There is already a named range called "One". Change the address that it points to.
+mySheet.Names["One"].RefersToRange = mySheet.Range["B6"];
+ 
+//Named ranges are added to the workbook collection in both the methods mentioned.
+//Adds the named Range to the workbook.
+workbook.Names.Add("TestRangeBook", mySheet.Range["A5"]);
+ 
+//Adds the named Range to the workbook. Internally named range is added to the workbook names coll.
+mySheet.Names.Add("TestRangeSheet", mySheet.Range["A5"]);
+ 
+//References from the sheet.
+mySheet.Range["TestRangeSheet"].Number = 100;
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+// Closes the workbook.
+workbook.Close();
+excelengine.Dispose();  
   {% endhighlight %}    
 
 

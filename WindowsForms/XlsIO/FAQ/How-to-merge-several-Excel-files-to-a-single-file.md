@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-merge-several-Excel-files-to-a-single-file
+description:  How to merge several Excel files to a single file
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
@@ -11,10 +11,10 @@ documentation: ug
 
 XlsIO provides support to merge several Excel files to a single file. The following code example illustrates how to do this.
 
+ 
 {% highlight C# %}
 
-  
-//Step 1: Instantiates the spreadsheet creation engine.
+ //Step 1: Instantiates the spreadsheet creation engine.
 ExcelEngine excelEngine = new ExcelEngine();
 
 //Step 2: Instantiates the excel application object.
@@ -36,8 +36,7 @@ workbook.SaveAs(fileName);
  
 // Closes the workbook.
 workbook.Close();
-excelEngine.Dispose();    
-          
+excelEngine.Dispose(); 
 {% endhighlight %}    
 
 

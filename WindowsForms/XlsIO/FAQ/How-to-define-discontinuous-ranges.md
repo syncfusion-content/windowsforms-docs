@@ -1,40 +1,74 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
-description:  how to add chart labels to scatter points
+title: How-to-define-discontinuous-ranges
+description:  How to define discontinuous ranges
 platform: WindowsForms
 control: XlsIO	
 documentation: ug
 ---
 
-# How to open an existing Xlsx workbook and save it as Xlsx
+# How to define discontinuous ranges
 
-You can open and save an existing Excel 2013 file to the .xlsx format by using XlsIO. The following code example illustrates this.
+You can set a discontinuous range by adding different ranges to the Range collection. The following code example illustrates this.
 
+ 
  
 {% highlight C# %}
+//Step 1: Instantiates the spreadsheet creation engine.
+ExcelEngine excelEngine = new ExcelEngine();
 
-// Opens an existing Excel 2013 file.
-IWorkbook workbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Step 2: Instantiates the excel application object.
+IApplication application = excelEngine.Excel;
+application.DefaultVersion = ExcelVersion.Excel2010;
  
-// Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013;
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
  
-// Saves it as "Excel 2007" format.
-workbook.SaveAs("Sample.xlsx");
+IWorksheet sheet = workbook.Worksheets[0];
+ 
+//Creates Range collection.
+IRanges rangesOne = sheet.CreateRangesCollection();
+ 
+//Adds different ranges to the Range collection.
+rangesOne.Add(sheet.Range["D2:D3"]);
+rangesOne.Add(sheet.Range["D10:D11"]);
+ 
+string fileName = "Output.xlsx";
+workbook.Version = ExcelVersion.Excel2010;
+ 
+workbook.SaveAs(fileName);
+ 
+// Closes the workbook.
+workbook.Close();
+excelEngine.Dispose();  
   {% endhighlight %}    
 
 
 {% highlight vbnet %}
- 'Opens an existing Excel 2013 file.
-Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+ 'Step 1: Instantiates the spreadsheet creation engine.
+Dim excelEngine As ExcelEngine = New ExcelEngine
  
-'Selects the version to be saved.
-workbook.Version = ExcelVersion.Excel2013
+'Step 2: Instantiates the excel application object.
+Dim application As IApplication = excelEngine.Excel
  
-'Saves it as "Excel 2013" format.
-workbook.SaveAs("Sample.xlsx")
+Dim workbook As IWorkbook = application.Workbooks.Open("sample.xlsx", ExcelOpenType.Automatic)
+ 
+'Accesses via index.
+Dim sheet As IWorkbook = workbook.Worksheets(0)
+ 
+'Creates Range collection.
+Dim rangesOne As Syncfusion.XlsIO.IRanges = sheet.CreateRangesCollection()
+ 
+'Adds different ranges to the Range collection.
+rangesOne.Add(sheet.Range("D2:D3"))
+rangesOne.Add(sheet.Range("D10:D11"))
+ 
+string fileName = "Output.xlsx"
+workbook.Version = ExcelVersion.Excel2010
+ 
+workbook.SaveAs(fileName)
+ 
+//Closes the workbook.
+workbook.Close()
+excelEngine.Dispose()   
 {% endhighlight %}
 
-
-> Note: You need to change the Excel Version, if you want to save to another version.
