@@ -3,7 +3,7 @@ layout: post
 title: TileLayout-Control-for-Windows-Forms
 description: tilelayout control for windows forms
 platform: WindowsForms
-Tools
+control:Tools
 documentation: ug
 ---
 
