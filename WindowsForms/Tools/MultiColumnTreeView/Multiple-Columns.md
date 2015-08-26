@@ -1,0 +1,199 @@
+---
+layout: post
+title: Multiple-Columns
+description: Concepts and Features
+platform: windowsforms
+control: MultiColumnTreeView
+documentation: ug
+---
+
+
+# Multiple Columns
+
+## Adding Multiple Columns
+
+MultiColumnTreeView control lets you add multiple columns easily using Columns Editor. The SubItems can be added using the SubItems Collection Editor. There are also properties to modify the appearance of the columns.
+
+ ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img1.jpeg) 
+
+
+
+This dialog can be accessed using the context menu of the control or the command available at the bottom of the property grid. The context menu also lets you add columns directly using "Add Column".
+
+Customizing the columns using Columns Editor
+
+The below properties can be used to customize the columns.
+
+_Table_ _526__: Property Table_
+
+<table>
+<tr>
+<td>
+TreeColumnAdv Properties</td><td>
+Description</td></tr>
+<tr>
+<td>
+AllowTextOverlap</td><td>
+Indicates whether the text can overlap or not. By default it false.</td></tr>
+<tr>
+<td>
+Background</td><td>
+Sets the background for the column (column header).</td></tr>
+<tr>
+<td>
+Font</td><td>
+Sets the foreground style for the columns.</td></tr>
+<tr>
+<td>
+HelpText</td><td>
+Sets the help text for the columns.</td></tr>
+<tr>
+<td>
+HorizontalAlignment</td><td>
+Sets the horizontal alignment of the text in the columns.</td></tr>
+<tr>
+<td>
+Text</td><td>
+Sets text for the columns.</td></tr>
+<tr>
+<td>
+TextColor</td><td>
+Sets the text color for the columns.</td></tr>
+<tr>
+<td>
+Vertical Alignment</td><td>
+Sets the vertical alignment of the text in the columns.</td></tr>
+<tr>
+<td>
+BaseStyle</td><td>
+Sets the base style to be applied to the column.</td></tr>
+<tr>
+<td>
+Visible</td><td>
+Sets the visibility of the particular column.</td></tr>
+<tr>
+<td>
+Width</td><td>
+Specifies Column width.</td></tr>
+<tr>
+<td>
+Border3DStyle</td><td>
+Sets the 3D border style for the column.</td></tr>
+<tr>
+<td>
+BorderColor</td><td>
+Border color for the column.</td></tr>
+<tr>
+<td>
+BorderSides</td><td>
+Specifies the sides of the column which should have border.</td></tr>
+<tr>
+<td>
+BorderStyle</td><td>
+Sets 2D or 3D border. The options are,FixedSingle andFixed3D.</td></tr>
+<tr>
+<td>
+BorderSingle</td><td>
+Specifies the 2D border style for the columns, when BorderStyle is set to Fixed Single. The options are, Dotted,Dashed, Solid,Inset andOutset.</td></tr>
+<tr>
+<td>
+Comparer</td><td>
+Comparative value for sorting.</td></tr>
+<tr>
+<td>
+SortOrder</td><td>
+Specifies the sort order for the column.</td></tr>
+<tr>
+<td>
+LeftImage</td><td>
+Sets the left image for the column.</td></tr>
+<tr>
+<td>
+LeftImageIndices</td><td>
+Specifies the left image index.</td></tr>
+<tr>
+<td>
+RightImageIndices</td><td>
+Specifies the right image index.</td></tr>
+<tr>
+<td>
+LeftImagePadding</td><td>
+Sets the padding of the left image.</td></tr>
+<tr>
+<td>
+RightImagPadding</td><td>
+Sets the padding of the right image.</td></tr>
+<tr>
+<td>
+RightImage</td><td>
+Sets the right image for the column.</td></tr>
+</table>
+
+> _Note: The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers._
+
+Painting the Column Area
+
+_Table_ _527__: Property Table_
+
+<table>
+<tr>
+<td>
+TreeColumnAdv Property</td><td>
+Description</td></tr>
+<tr>
+<td>
+AreaBackground</td><td>
+Gets / sets the background for the column area.</td></tr>
+</table>
+
+
+{% highlight C# %} 
+
+
+
+treeColumnAdv1.AreaBackground = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.CadetBlue, System.Drawing.Color.PowderBlue);
+
+treeColumnAdv1.Background = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure);
+
+
+
+treeColumnAdv2.AreaBackground = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.PowderBlue);
+
+treeColumnAdv2.Background = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure);
+
+
+
+treeColumnAdv3.AreaBackground = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.LightBlue);
+
+treeColumnAdv3.Background = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure);
+
+ {% endhighlight %}
+
+ 
+ 
+{% highlight vbnet %} 
+
+treeColumnAdv1.AreaBackground = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.CadetBlue, System.Drawing.Color.PowderBlue) 
+
+treeColumnAdv1.Background = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure) 
+
+
+
+treeColumnAdv2.AreaBackground = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.PowderBlue) 
+
+treeColumnAdv2.Background = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure) 
+
+
+
+treeColumnAdv3.AreaBackground = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.LightBlue) 
+
+treeColumnAdv3.Background = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CadetBlue, System.Drawing.Color.Azure) 
+
+{% endhighlight %}
+
+![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img3.jpeg) 
+
+
+
+>_Note: The appearance of the columns can also be controlled using the standard column styles settings._ _This overrides the above settings._
+

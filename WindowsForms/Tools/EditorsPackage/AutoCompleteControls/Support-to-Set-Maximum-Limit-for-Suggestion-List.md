@@ -1,0 +1,68 @@
+---
+layout: post
+title: Support to Set Maximum Limit for Suggestion List 
+description: Support to Set Maximum Limit for Suggestion List 
+platform: WindowsForms
+control: Tools
+documentation: ug
+---
+
+
+
+# Support to Set Maximum Limit for Suggestion List 
+
+The AutoComplete control displays a filtered suggestion list from a mapped data source in a drop-down as the user types text into the text box. This feature provides support to set the maximum number for the filtered suggestion. 
+
+## Use Case Scenarios
+
+When you want to narrow down the filtering and get more accurate data, you can use this feature. 
+
+## Properties
+
+Table 125: Property Table
+
+<table>
+<tr>
+<td>
+Property </td><td>
+Description </td><td>
+Type </td><td>
+Data Type </td><td>
+Reference links </td></tr>
+<tr>
+<td>
+MaxNumberofSuggestion</td><td>
+Set the maximum limit for the suggestion list. </td><td>
+NA</td><td>
+Integer. </td><td>
+NA </td></tr>
+</table>
+
+## Sample Link
+
+To view a sample:
+
+1. Open Syncfusion Dashboard.
+2. Click Windows Forms.
+3. Click Run Samples.
+4. Navigate to Tools Samples > Editors Package > AutoCompleteDemo. 
+
+## Maximum Number of Suggestion 
+
+You can set the maximum number of suggestions to be displayed in the AutoComplete using the MaxNumberofSuggestion property: The following code illustrates this: 
+
+{% highlight C# %}
+
+
+
+this.autoComplete1.MaxNumberofSuggestion = 5; 
+{% endhighlight %}
+
+
+
+{% highlight vbnet %}
+
+
+Me.autoComplete1.MaxNumberofSuggestion = 5
+
+{% endhighlight %}

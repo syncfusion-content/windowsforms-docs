@@ -1,0 +1,120 @@
+---
+layout: post
+title: Behavior Settings
+description: Behavior Settings
+platform: WindowsForms
+control: Tools
+documentation: ug
+---
+
+
+# Behavior Settings
+
+The behavior settings of a ComboBoxAutoComplete control includes the below properties.
+
+
+
+Table 130: Property Table
+
+<table>
+<tr>
+<td>
+ComboAutoComplete Properties</td><td>
+Description</td></tr>
+<tr>
+<td>
+AllowNewText</td><td>
+Specifies whether the user is allowed to enter new text. User can be allowed to enter new text in the ComboAutoComplete by setting AllowNewText to true. AllowNewText is mainly used to prevent items that are not in the list while validating.</td></tr>
+<tr>
+<td>
+ReadOnly</td><td>
+Gets or Sets value indicating whether changes can be done to the combobox.</td></tr>
+<tr>
+<td>
+UpdateComboSelectionProperties</td><td>
+UpdateComboSelectionProperties set to true means the Property SelectedItem will return the AutoCompleteControl's SelectedItem. Else if it is set to false, then SelectedItem property should return the base class SelectedItem ie., the Windows ComboBox SelectedItem value.</td></tr>
+</table>
+
+
+{% highlight C# %}
+
+
+
+
+
+this.comboBoxAutoComplete1.AllowNewText= true;
+
+this.comboBoxAutoComplete1.ReadOnly = true;
+
+this.comboBoxAutoComplete1.UpdateComboSelectionProperties = false;
+
+{% endhighlight %}
+
+
+
+{% highlight vbnet %}
+
+
+
+Me.comboBoxAutoComplete1.AllowNewText= True
+
+Me.comboBoxAutoComplete1.ReadOnly = True
+
+Me.comboBoxAutoComplete1.UpdateComboSelectionProperties = False
+{% endhighlight %}
+
+Table 131: Methods Table
+
+<table>
+<tr>
+<td>
+Methods</td><td>
+Description</td></tr>
+<tr>
+<td>
+SetSelectedItem</td><td>
+To set SelectedItem in ComboBoxAutoComplete, when loading AutoComplete control as its DropDown.</td></tr>
+</table>
+
+
+
+{% highlight C# %}
+
+
+
+
+//To set selected item in ComboBoxAutoComplete AutoComplete Popup
+
+this.comboBoxAutoComplete1.SetSelectedItem("India");
+
+{% endhighlight %}
+
+
+
+
+{% highlight vbnet %}
+
+
+
+'To set selected item in ComboBoxAutoComplete AutoComplete Popup
+
+Me.comboBoxAutoComplete1.SetSelectedItem("India")
+{% endhighlight %}
+
+
+
+> Note: When DisplayMember is defined, you can assign DisplayMember column value as selected item in ComboBoxAutoComplete. When DisplayMember is not defined or single level data source is assigned to ComboBoxAutoComplete, zeroth index column value needs to be used as argument value of the function named “SetSelectedItem”
+
+## Refreshing the Columns 
+
+When the datasource of the AutoComplete control is set to a valid datasource through the designer, the "Refresh Columns" verb can be clicked to automatically populate the Columns collection. This option is available in the context menu of the ComboBoxAutoComplete control and also as property grid command.
+
+ ![](ComboBoxAutoComplete-Images/Overview_img45.jpeg) 
+
+
+
+## Banner Text Support
+
+We can set banner text for the ComboBoxAutoComplete control. Refer BannerTextProvider Component topic for more details.
+
+ ![](ComboBoxAutoComplete-Images/Overview_img46.jpeg)
