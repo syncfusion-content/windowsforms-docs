@@ -3,10 +3,10 @@ layout: post
 title: GroupBar Items Customization
 description: GroupBar Items Customization
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupBar Items Customization
+# GroupBar Items Customization
 
 The following table lists the properties related to the GroupBar Items.
 

@@ -3,15 +3,14 @@ layout: post
 title: Features Overview
 description: Features Overview
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-
 # Features Overview
 
 This section discusses the features of the GroupBar control of the Navigation Package.
 
-### Features
+## Features
 
    * Custom Colors can be applied for GroupBar control. See Visual Styles topic.
 

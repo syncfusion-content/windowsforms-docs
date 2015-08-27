@@ -3,11 +3,10 @@ layout: post
 title: Through Code
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 --- 
-
-## Through Code
+# Through Code
 
 GroupView control can be created using the GroupView class. GroupView Items can be added to the GroupView control using the GroupView.GroupViewItems collection property. 
 

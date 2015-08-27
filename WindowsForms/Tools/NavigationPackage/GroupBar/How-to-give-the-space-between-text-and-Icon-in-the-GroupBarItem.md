@@ -3,10 +3,10 @@ layout: post
 title: How to give the space between text and Icon in the GroupBarItem
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## How to give the space between text and Icon in the GroupBarItem
+# How to give the space between text and Icon in the GroupBarItem
 
 The Padding property of GroupBarItem provides spacing between Icons and text in the GroupBarItems.
 

@@ -3,10 +3,10 @@ layout: post
 title: Integrated Scrolling
 description: Integrated Scrolling
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Integrated Scrolling
+# Integrated Scrolling
 
 Scroll buttons can be included for the client controls in the GroupBar by setting the IntegratedScrolling propertyto 'True'.
 

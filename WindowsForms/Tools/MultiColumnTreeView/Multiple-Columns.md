@@ -6,19 +6,19 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-
-
 # Multiple Columns
 
 ## Adding Multiple Columns
 
-MultiColumnTreeView control lets you add multiple columns easily using Columns Editor. The SubItems can be added using the SubItems Collection Editor. There are also properties to modify the appearance of the columns.
+MultiColumnTreeView control lets you add multiple columns easily using Columns Editor. The SubItems can be added 
+using the SubItems Collection Editor. There are also properties to modify the appearance of the columns.
 
  ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img1.jpeg) 
+Figure : Columns Editor
 
 
-
-This dialog can be accessed using the context menu of the control or the command available at the bottom of the property grid. The context menu also lets you add columns directly using "Add Column".
+This dialog can be accessed using the context menu of the control or the command available at the bottom of the 
+property grid. The context menu also lets you add columns directly using "Add Column".
 
 Customizing the columns using Columns Editor
 
@@ -192,8 +192,8 @@ treeColumnAdv3.Background = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.
 {% endhighlight %}
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img3.jpeg) 
+Figure : Background for Column Headers and Area Background for the MultiColumns
 
 
-
->_Note: The appearance of the columns can also be controlled using the standard column styles settings._ _This overrides the above settings._
+> _Note: The appearance of the columns can also be controlled using the standard column styles settings._ _This overrides the above settings._
 

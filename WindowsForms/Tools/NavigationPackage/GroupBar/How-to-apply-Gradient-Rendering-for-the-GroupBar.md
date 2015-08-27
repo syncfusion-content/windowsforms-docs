@@ -3,10 +3,10 @@ layout: post
 title: How to apply Gradient Rendering for the GroupBar
 description: Frequently asked questions
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## How to apply Gradient Rendering for the GroupBar
+# How to apply Gradient Rendering for the GroupBar
 
 The correct way to apply gradient rendering for the GroupBar is to handle the ProvideGroupBarItemBrush Event of GroupBar.
 

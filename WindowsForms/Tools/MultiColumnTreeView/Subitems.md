@@ -6,7 +6,6 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-
 # SubItems
 
 ## Adding SubItems
@@ -14,11 +13,11 @@ documentation: ug
 You can add SubItems for the nodes using the SubItems Collection available in Nodes Collection Editor. 
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img5.jpeg) 
-
+Figure : Accessing the SubItems Collection Dialog Box
 
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img6.jpeg) 
-
+Figure : Setting the text, BorderSingle and BorderStyle Property for the SubItem
 
 
 ## Properties for Customizing the SubItems
@@ -86,10 +85,16 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 The below image displays subitems with similar settings in the property grid above.
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img7.jpeg) 
+Figure 890: SubItems with Italic Style; Solid, FixedSingle Border Style
 
 
+StyleSettings for all the sub Items can be specified using TreeNodeAdvSubItemStyleInfo class. It is a default base 
+style which can be accessed in the BaseStyles Collection Editor. 
+See [SubItem Styles](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/subitemstyles.htm).
 
-StyleSettings for all the sub Items can be specified using TreeNodeAdvSubItemStyleInfo class. It is a default base style which can be accessed in the BaseStyles Collection Editor. See SubItem Styles.
+> See Also
 
+> [Column Styles](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/columnstyles1.htm)
 
+> [MultiColumnTreeView Appearance](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/multicolumntreeviewappearance.htm)
 

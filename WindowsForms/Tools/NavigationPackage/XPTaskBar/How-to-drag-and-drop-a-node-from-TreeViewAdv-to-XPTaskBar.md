@@ -3,11 +3,10 @@ layout: post
 title: How to drag and drop a node from TreeViewAdv to XPTaskBar
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-
-## How to drag and drop a node from TreeViewAdv to XPTaskBar ?
+# How to drag and drop a node from TreeViewAdv to XPTaskBar ?
 
 This can be achieved by handling the ItemDrag event of TreeViewAdv and DragDrop event of the XPTaskBar.
 

@@ -3,10 +3,10 @@ layout: post
 title: MinimumSizeChanged Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## MinimumSizeChanged Event
+# MinimumSizeChanged Event
 
 This event occurs when the MinimumSize property is changed. The MinimumSize property specifies the minimum size with which  
 the XPTaskBar is to be created.

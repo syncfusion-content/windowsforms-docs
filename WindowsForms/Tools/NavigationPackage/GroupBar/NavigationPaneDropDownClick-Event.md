@@ -3,11 +3,10 @@ layout: post
 title: NavigationPaneDropDownClick Event
 description: NavigationPaneDropDownClick Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 --- 
-
-## NavigationPaneDropDownClick Event
+# NavigationPaneDropDownClick Event
 
 It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the 
 Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to True. The event handler receives an argument of 

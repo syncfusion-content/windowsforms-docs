@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Configuring HubTile Control 
 description: getting started
 platform: windowsforms
 control: HubTile
@@ -13,11 +13,11 @@ The most commonly used settings of the HubTile control can be configured either 
 
 
 ![hub](Configuring-hubtile-control_images/Configuring-hubtile-control_img1.png) 
-
+Figure : HubTile Control Customization through Smart tag
 
 
  ![hub](Configuring-hubtile-control_images/Configuring-hubtile-control_img2.png) 
-
+Figure : HubTile Control Customization through Properties Window
 
 
 

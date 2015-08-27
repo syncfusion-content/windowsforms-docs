@@ -6,7 +6,7 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-## Context Menu at DesignTime
+# Context Menu at DesignTime
 
 You can access the below options using this context menu at the design time.
 
@@ -17,6 +17,6 @@ You can access the below options using this context menu at the design time.
 * Add Node, lets you add new nodes.
 
  ![](DesignTime-Features_images/DesignTime-Features_img2.jpeg) 
-
+Figure : Design-Time Context Menu
 
 

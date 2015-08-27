@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: DefaultTile
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # DefaultTile
 
 This type provides notification through various transition effects.
@@ -52,5 +51,5 @@ Me.HubTile1.ImageSource  = Me.ImageListAdv1.Images(0)
 
 
  ![hub](Concept-and-Features_images/Concept-and-Features_img1.png) 
-
+Figure : Default Tile
 

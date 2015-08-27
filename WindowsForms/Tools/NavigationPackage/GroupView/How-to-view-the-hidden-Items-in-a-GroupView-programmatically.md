@@ -3,10 +3,10 @@ layout: post
 title: How to view the hidden Items in a GroupView programmatically
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## How to view the hidden Items in a GroupView programmatically
+# How to view the hidden Items in a GroupView programmatically
 
 GroupView's BringItemIntoView method can be used to scroll down to a hidden item and bring that item into view.
 

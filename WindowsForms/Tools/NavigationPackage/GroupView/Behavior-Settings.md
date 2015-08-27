@@ -3,11 +3,10 @@ layout: post
 title: Behavior Settings 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 --- 
-
-## Behavior Settings 
+# Behavior Settings 
 
 This section discusses the properties that determine the behavior of the GroupView control.
 

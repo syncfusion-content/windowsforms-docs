@@ -3,10 +3,10 @@ layout: post
 title: Header Settings 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Header Settings 
+# Header Settings 
 
 This section lists the properties used for customizing the header of the XPTaskBar Box.
 

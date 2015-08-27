@@ -3,10 +3,10 @@ layout: post
 title: Style 
 description: Style 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Style 
+# Style 
 
 GroupView supports visual styles such as Default, Metro. The style can be set using Style property. 
 

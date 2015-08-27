@@ -3,13 +3,12 @@ layout: post
 title: Padding
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 --- 
+# Padding
 
-## Padding
-
-Padding Settings for XPTaskBar
+## Padding Settings for XPTaskBar
 
 The interior spacing of the XPTaskBar control can be specified by setting the DockPadding propertyto integer values.
 

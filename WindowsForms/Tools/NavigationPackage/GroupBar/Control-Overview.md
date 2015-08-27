@@ -3,11 +3,10 @@ layout: post
 title: Control Overview
 description: Control Overview
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-
-## Control Overview
+# Control Overview
 
 The various sections of GroupBar and their description are given below.
 

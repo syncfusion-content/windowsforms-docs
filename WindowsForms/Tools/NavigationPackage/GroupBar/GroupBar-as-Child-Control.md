@@ -3,10 +3,10 @@ layout: post
 title: GroupBar as Child Control
 description: GroupBar as Child Control
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupBar as Child Control
+# GroupBar as Child Control
 
 GroupBar control itself can be placed in the client region of the GroupBar Item. This is called Nested GroupBar.
 

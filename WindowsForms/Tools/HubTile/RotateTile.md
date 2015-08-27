@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: RotateTile
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # RotateTile
 
 The Tile will animate by rotating itself in different orientation.

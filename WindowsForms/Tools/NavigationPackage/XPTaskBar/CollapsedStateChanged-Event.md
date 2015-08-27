@@ -3,10 +3,10 @@ layout: post
 title: CollapsedStateChanged Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## CollapsedStateChanged Event
+# CollapsedStateChanged Event
 
 This event occurs after the XPTaskBar Box has been collapsed or expanded.
 

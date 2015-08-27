@@ -3,10 +3,10 @@ layout: post
 title: GroupBarItemRenamed Event
 description: GroupBarItemRenamed Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupBarItemRenamed Event
+# GroupBarItemRenamed Event
 
 This event is handled after a GroupBar Item is renamed by an inplace edit operation. It is handled when a GroupBar Item is renamed at runtime.
 

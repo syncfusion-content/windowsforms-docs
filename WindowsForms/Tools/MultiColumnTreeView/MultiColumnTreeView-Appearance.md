@@ -6,12 +6,11 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-
 # MultiColumnTreeView Appearance
 
 The appearance of the MultiColumnTreeView can be customized using background, foreground, border and spacing properties similar to TreeView control. The below topics are covered in this section.
 
-SubItem Appearance
+## SubItem Appearance
 
 The background, foreground and border settings of a subitem can be specified using SubItem Style Editor. Refer to SubItem Styles for all the style settings.
 
@@ -82,42 +81,6 @@ treeNodeAdvSubItem2.TextColor = System.Drawing.Color.Navy
 A MultiColumnTreeView with above settings is displayed below.
 
 ![](MultiColumnTreeView-Appearance_images/MultiColumnTreeView-Appearance_img1.jpeg) 
-
-
-
-## Column Appearance
-
-The appearance of different columns can be customized through Column Styles settings. 
-
-MultiColumnTreeView.ColumnHeaderBackground property sets the background column headers for the control. These settings are overridden by above ColumnStyles settings.
-
-![](MultiColumnTreeView-Appearance_images/MultiColumnTreeView-Appearance_img2.jpeg) 
-
-
-
-{ ![](MultiColumnTreeView-Appearance_images/MultiColumnTreeView-Appearance_img3.jpeg) | markdownify }
-
-
-
-Adding HighlightBorderColor property
-
-Essential tool is now enhanced with HighlightBorderColor property to set the highlight color of the column header in MultiColumnTreeView.
-
-The following code illustrates how to set HighlightBorderColor property.
-
-{% highlight C# %}  
-
-this.treeColumnAdv1.HighlightBorderColor = Color.Brown;
-
-{% endhighlight %}
-
-{% highlight vbnet %} 
-
-Me.treeColumnAdv1.HighlightBorderColor = Color.Brown;
-
-{% endhighlight %}
-
-![](MultiColumnTreeView-Appearance_images/MultiColumnTreeView-Appearance_img4.jpeg)
-
+Figure : MultiColumnTreeView with Customized Appearance
 
 

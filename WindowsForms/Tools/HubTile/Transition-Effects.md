@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Transition Effects
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # Transition Effects
 
 In HubTile, image transition can be performed at specified intervals and in different directions just like the Windows 8 live tiles. They include the following transition effects.
@@ -50,5 +49,5 @@ Me.HubTile1.SlideTransition = TransitionDirection.LeftToRight
 
 
  ![hub](Concept-and-Features_images/Concept-and-Features_img2.png) 
-
+Figure : Image Transition
 

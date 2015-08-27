@@ -3,10 +3,10 @@ layout: post
 title: GroupBarItemAdded Event
 description: GroupBarItemAdded Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupBarItemAdded Event
+# GroupBarItemAdded Event
 
 This event is handled after a GroupBar Item is added to the GroupBar Items Collection. It is handled to create client controls when new GroupBar Items are added at runtime.
 

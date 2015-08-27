@@ -3,11 +3,10 @@ layout: post
 title: GroupViewItemSelected Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-
-## GroupViewItemSelected Event
+# GroupViewItemSelected Event
 
 It occurs when a GroupView Item in the GroupView control is selected.
 

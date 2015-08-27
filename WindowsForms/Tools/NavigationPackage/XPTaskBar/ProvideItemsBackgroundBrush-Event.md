@@ -3,10 +3,10 @@ layout: post
 title: ProvideItemsBackgroundBrush Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## ProvideItemsBackgroundBrush Event
+# ProvideItemsBackgroundBrush Event
 
 This event occurs when the Items portion of the XPTaskBar Box gets drawn. Users may custom draw the Items portion of the XPTaskBar Box with different colors.
 

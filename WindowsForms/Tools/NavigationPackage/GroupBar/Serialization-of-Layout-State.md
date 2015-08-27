@@ -3,10 +3,10 @@ layout: post
 title: Serialization of Layout State 
 description: Serialization of Layout State 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Serialization of Layout State 
+# Serialization of Layout State 
 
 The Layout state of GroupBar can be saved and loaded using the AppStateSerializer class.
 

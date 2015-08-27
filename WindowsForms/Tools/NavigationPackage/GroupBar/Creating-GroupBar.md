@@ -3,9 +3,9 @@ layout: post
 title:  Creating GroupBar
 description:  Creating GroupBar
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Creating GroupBar
+# Creating GroupBar
 
 This tutorial will show you how a GroupBar is created through the following ways.

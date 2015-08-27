@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview
+title: GroupBar Events
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupBar Events
+# GroupBar Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

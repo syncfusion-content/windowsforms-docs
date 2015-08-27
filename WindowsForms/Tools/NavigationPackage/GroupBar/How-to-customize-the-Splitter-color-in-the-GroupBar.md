@@ -3,10 +3,10 @@ layout: post
 title: How to customize the Splitter color in the GroupBar
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## How to customize the Splitter color in the GroupBar
+# How to customize the Splitter color in the GroupBar
 
 #### Appearance Settings
 

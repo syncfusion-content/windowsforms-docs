@@ -3,10 +3,10 @@ layout: post
 title: Themes and Animation Settings
 description: Themes and Animation Settings
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Themes and Animation Settings
+# Themes and Animation Settings
 
 Themes define the look and feel of the whole GroupBar. It also changes the behavior of the GroupBar completely. Themes can be 
 enabled by setting the ThemesEnabled property of GroupBar to True.

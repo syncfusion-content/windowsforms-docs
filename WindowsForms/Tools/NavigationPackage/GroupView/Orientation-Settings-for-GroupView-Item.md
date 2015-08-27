@@ -3,10 +3,10 @@ layout: post
 title: Orientation Settings for GroupView Item
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Orientation Settings for GroupView Item
+# Orientation Settings for GroupView Item
 
 The following table lists the properties related to the orientation of GroupView Items.
 

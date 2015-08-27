@@ -3,10 +3,10 @@ layout: post
 title: Tooltip Settings 
 description: Tooltip Settings 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Tooltip Settings 
+# Tooltip Settings 
 
 The tooltips for the buttons and the navigation pane are set through the below properties.
 

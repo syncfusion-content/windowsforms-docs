@@ -3,9 +3,9 @@ layout: post
 title: Creating an XPTaskBar
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Creating an XPTaskBar
+# Creating an XPTaskBar
 
 This tutorial will show you how a XPTaskBar is created through the following ways.

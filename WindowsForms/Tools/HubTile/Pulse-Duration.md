@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Pulse Duration
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # Pulse Duration
 
 In PulsingTile, the time interval between Zoom In and Zoom Out operations can be modified using PulseDuration property. It decreases on increasing the value to this property and vice-versa.

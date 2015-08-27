@@ -6,23 +6,23 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-## Standard Style
+# Standard Style
 
 Setting a Common Style for all the Nodes in the TreeViewAdv
 
 We can modify the background for all the children of a parent node by editing the StandardStyle property. 
 
 ![](Styles-Architecture_images/Styles-Architecture_img2.jpeg) 
-
+Figure : StandardStyle settings using the Property Grid
 
 
 The below image displays a gradient style for all the columns of the MultiColumnTreeView control.
 
 ![](Styles-Architecture_images/Styles-Architecture_img3.jpeg) 
+Figure : Gradient = "BackwardDiagonal; DarkKhaki, OldLace"
 
 
-
-### StandardStyle Settings
+## StandardStyle Settings
 
 The below properties lets you customize the standard style settings.
 

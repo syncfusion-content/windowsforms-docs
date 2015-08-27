@@ -6,17 +6,17 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-## Editors for the MultiColumnTreeView
+# Editors for the MultiColumnTreeView
 
 The following Editors are available for changing the appearance and behavior of the MultiColumnTreeView control.
 
-### TreeViewAdv NodeCollection Editor
+## TreeViewAdv NodeCollection Editor
 
 This editor lets you add nodes, SubItems for the nodes and customize them using various property settings.
 
 
  ![](DesignTime-Features_images/DesignTime-Features_img3.jpeg) 
-
+Figure : TreeViewAdv NodeCollection Editor
 
 
 This editor can be accessed using the below options.
@@ -27,7 +27,7 @@ This editor can be accessed using the below options.
 * Command at the bottom of the property grid.
 
  ![](DesignTime-Features_images/DesignTime-Features_img4.jpeg) 
-
+Figure : Properties Grid Commands
 
 
 ### Columns Editor
@@ -35,7 +35,7 @@ This editor can be accessed using the below options.
 This lets you add columns and customize those columns appearance with style settings.
 
  ![](DesignTime-Features_images/DesignTime-Features_img5.jpeg) 
-
+Figure : Columns Editor
 
 
 This editor can be accessed using the following options.
@@ -49,7 +49,7 @@ This editor can be accessed using the following options.
 This editor lets you add subitems to the nodes and customize the subitems using the property settings. It can be accessed through Node Collection Editor and selecting the SubItems Collection property.
 
  ![](DesignTime-Features_images/DesignTime-Features_img6.jpeg) 
-
+Figure : TreeNodeAdvSubItem Collection Editor
 
 
 ### Styles Editor
@@ -57,7 +57,7 @@ This editor lets you add subitems to the nodes and customize the subitems using 
 This editor comes with default styles and also lets you add new style and apply to the nodes, subitems, and so on. The property settings are discussed in Styles Architecture.
 
 ![](DesignTime-Features_images/DesignTime-Features_img7.jpeg) 
-
+Figure : BaseStyles Collection Editor
 
 
 This editor can be accessed using the below options.

@@ -6,7 +6,6 @@ platform: windowsforms
 control: Navigation Package
 documentation: ug
 ---
-
 # Overview
 
 Navigation package is a combination of controls designed to help navigation through various types of UI tasks, tools and more. 

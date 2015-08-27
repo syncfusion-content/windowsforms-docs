@@ -3,10 +3,10 @@ layout: post
 title: Features Overview
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Features Overview
+# Features Overview
 
 This section lists the features of XPTaskBar.
 

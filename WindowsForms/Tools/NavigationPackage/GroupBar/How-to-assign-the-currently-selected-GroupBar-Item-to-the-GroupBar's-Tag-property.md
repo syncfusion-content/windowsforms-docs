@@ -3,10 +3,10 @@ layout: post
 title: How to assign the currently selected GroupBar Item to the GroupBar's Tag property
 description: Frequently asked questions
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## How to assign the currently selected GroupBar Item to the GroupBar's Tag property
+# How to assign the currently selected GroupBar Item to the GroupBar's Tag property
 
 You could do so by handling the GroupBar’s GroupBarItemSelected event. Within this event handler, index into the GroupBar Items Collection using the GroupBar's SelectedItem property value, to get the currently selected GroupBar Item, and then assign it to the GroupBar’s Tag property. 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Tile Press Behavior
 description: concept and features
 platform: windowsforms
 control: HubTile
@@ -29,9 +29,9 @@ Me.HubTile1.EnableTileSlideEffect = True
 
 
 
-_Note: EnableTileSlideEffect is applicable only for DefaultTile and PulsingTile types._
+> _Note: EnableTileSlideEffect is applicable only for DefaultTile and PulsingTile types._
 
 ![hub](Concept-and-Features_images/Concept-and-Features_img19.png) 
-
+Figure 1649: Tile Press Behavior
 
 

@@ -3,10 +3,10 @@ layout: post
 title: StackedGroupBar 
 description: StackedGroupBar 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## StackedGroupBar 
+# StackedGroupBar 
 
 The following are the properties available for GroupBar Items when the GroupBar is in the Stacked Mode. The Stacked Mode can be 
 enabled by setting the StackedMode property to 'True'.

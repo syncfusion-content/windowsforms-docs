@@ -3,10 +3,10 @@ layout: post
 title:  Applying Themes
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Applying Themes
+# Applying Themes
 
 The Themes Enabled property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by 
 setting the ThemesEnabled property of GroupView to 'True'. 

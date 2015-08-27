@@ -3,10 +3,10 @@ layout: post
 title: GroupViewItemRenamed Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## GroupViewItemRenamed Event
+# GroupViewItemRenamed Event
 
 It occurs when a GroupView Item has been renamed by an inplace edit operation. 
 

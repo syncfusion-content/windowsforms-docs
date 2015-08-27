@@ -6,11 +6,11 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-## Column Styles
+# Column Styles
 
 Standard - Column style is default style that will applied for all the columns of the MultiColumnTreeView control. The style settings can be edited by the user.
 
-### Column Style Properties
+## Column Style Properties
 
 The below properties controls the appearance of the columns.
 
@@ -84,10 +84,10 @@ Specifies the 2D border style for the columns, when BorderStyle is set to Fixed 
 The editor also lets you add user defined column styles like other styles as follows.
 
 ![](Styles-Architecture_images/Styles-Architecture_img8.jpeg) 
-
+Figure : New ColumnStyle1 Added
 
 
 The user-defined column style can be applied to any of the columns, using Columns Editor. This setting overrides the default settings.
 
 ![](Styles-Architecture_images/Styles-Architecture_img9.jpeg) 
-
+Figure : Column Style applied by using the Columns Editor

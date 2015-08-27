@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Selection Marker Border Color
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
 
-## Selection Marker Border Color
+# Selection Marker Border Color
 
 In HubTile, Selection Marker Border color can be customized using SelectionMarkerColor.
 

@@ -3,10 +3,10 @@ layout: post
 title: XPTaskBar- Image Settings 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## XPTaskBar- Image Settings 
+# XPTaskBar- Image Settings 
 
 This section discusses the image settings available in XPTaskBar. 
 

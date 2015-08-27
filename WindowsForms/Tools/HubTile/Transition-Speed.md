@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Transition Speed
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # Transition Speed
 
 In HubTile, image transition speed can be increased or decreased by using ImageTransitionSpeed property.

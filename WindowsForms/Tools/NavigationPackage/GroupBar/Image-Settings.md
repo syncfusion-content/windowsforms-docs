@@ -3,10 +3,10 @@ layout: post
 title: Image Settings
 description: Image Settings
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Image Settings
+# Image Settings
 
 This section describes the image settings available for GroupBar Items.
 

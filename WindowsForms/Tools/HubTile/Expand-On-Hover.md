@@ -6,8 +6,7 @@ platform: windowsforms
 control: HubTile
 documentation: ug
 --- 
-
-## Expand On Hover
+# Expand On Hover
 
 HubTile can be expanded once it is focused. It can be enabled by using the ExpandOnHover property.
 
@@ -27,4 +26,4 @@ Me.HubTile1.ExpandOnHover= True
 
 {% endhighlight %}
 
-_Note: ExpandOnHover is applicable only for DefaultTile type._
+> _Note: ExpandOnHover is applicable only for DefaultTile type._

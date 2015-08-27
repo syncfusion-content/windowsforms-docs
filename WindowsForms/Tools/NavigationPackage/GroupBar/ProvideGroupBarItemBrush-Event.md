@@ -3,10 +3,10 @@ layout: post
 title: ProvideGroupBarItemBrush Event
 description: ProvideGroupBarItemBrush Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## ProvideGroupBarItemBrush Event
+# ProvideGroupBarItemBrush Event
 
 It occurs when a GroupBar Item is about to be drawn. The event handler receives an argument of type ProvideGroupBarItemBrushEventArgs. 
 

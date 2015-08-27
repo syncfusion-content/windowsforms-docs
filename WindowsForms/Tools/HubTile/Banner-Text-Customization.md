@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Banner Text Customization
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
-
 # Banner Text Customization
 
 In HubTile, information in the form of text can be displayed in Banner.
@@ -33,4 +31,4 @@ Me.HubTile1.Banner.TextColor  = Color.White
 {% endhighlight %}
 
 
-_Note: Banner Text properties are applicable only for DefaultTile and RotateTile types._
+> _Note: Banner Text properties are applicable only for DefaultTile and RotateTile types._

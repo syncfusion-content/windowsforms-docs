@@ -3,10 +3,10 @@ layout: post
 title: GroupBarItemSelectionChanging Event
 description: GroupBarItemSelectionChanging Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupBarItemSelectionChanging Event
+# GroupBarItemSelectionChanging Event
 
 This event occurs when a GroupBar Item is selected in the GroupBar control. It is handled when a GroupBar Item is selected at 
 runtime.

@@ -3,11 +3,10 @@ layout: post
 title: GroupBarItem Popup
 description: GroupBarItem Popup
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-
-## GroupBarItem Popup
+# GroupBarItem Popup
 
 The below properties controls the appearance and behavior of the GroupBarItem popup.
 

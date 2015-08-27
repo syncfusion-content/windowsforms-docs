@@ -6,8 +6,7 @@ platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
-## Horizontal Transition
+# Horizontal Transition
 
 Tile is rotated horizontally. The following image illustrates Horizontal rotation.
 

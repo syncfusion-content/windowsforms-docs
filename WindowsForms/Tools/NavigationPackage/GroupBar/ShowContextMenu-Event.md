@@ -3,10 +3,10 @@ layout: post
 title: ShowContextMenu Event
 description: ShowContextMenu Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## ShowContextMenu Event
+# ShowContextMenu Event
 
 It occurs on right-clicking the mouse button over the GroupBar control. It is handled when the mouse is right-clicked over the GroupBar control at runtime.
 

@@ -3,10 +3,10 @@ layout: post
 title: Through Code
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Through Code
+# Through Code
 
 The following step by step procedure helps you to create XPTaskBar programmatically.
 

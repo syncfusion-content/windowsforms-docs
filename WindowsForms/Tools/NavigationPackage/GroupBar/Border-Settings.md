@@ -3,10 +3,10 @@ layout: post
 title: Border Settings 
 description: Border Settings 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Border Settings 
+# Border Settings 
 
 GroupBar Settings
 

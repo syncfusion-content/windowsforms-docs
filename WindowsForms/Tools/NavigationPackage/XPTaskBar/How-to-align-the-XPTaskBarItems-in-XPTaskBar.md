@@ -3,10 +3,10 @@ layout: post
 title: How to align the XPTaskBarItems in XPTaskBar
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## How to align the XPTaskBarItems in XPTaskBar
+# How to align the XPTaskBarItems in XPTaskBar
 
 We can arrange the XPTaskBarItems horizontally or vertically using BoxItemsAlignment property. The following code snippet can be 
 used.

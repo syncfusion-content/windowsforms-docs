@@ -3,10 +3,10 @@ layout: post
 title: Header Customization Settings
 description: Header Customization Settings
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Header Customization Settings
+# Header Customization Settings
 
 Header Height and Font Settings
 

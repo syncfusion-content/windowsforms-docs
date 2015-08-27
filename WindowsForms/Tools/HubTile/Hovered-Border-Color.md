@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Hovered Border Color
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
-## Hovered Border Color
+# Hovered Border Color
 
 In HubTile, border highlight is rendered once it is focused. Its appearance can be customized using the HoveredBorderColor property.
 

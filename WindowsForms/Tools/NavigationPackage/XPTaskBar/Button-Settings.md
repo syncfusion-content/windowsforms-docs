@@ -3,10 +3,10 @@ layout: post
 title: Button Settings 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Button Settings 
+# Button Settings 
 
 This section discusses the button settings of the XPTaskBar Box.
 

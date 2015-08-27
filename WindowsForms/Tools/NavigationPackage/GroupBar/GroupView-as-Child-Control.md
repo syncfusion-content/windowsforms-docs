@@ -3,12 +3,13 @@ layout: post
 title: GroupView as Child Control 
 description: GroupView as Child Control 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupView as Child Control 
+# GroupView as Child Control 
 
-GroupView control can be added as a Child control to the GroupBar Item by dragging-and-dropping the control onto the GroupBar's client region and adding GroupView Items using the GroupView Item Collection Editor. 
+GroupView control can be added as a Child control to the GroupBar Item by dragging-and-dropping the control onto the
+GroupBar's client region and adding GroupView Items using the GroupView Item Collection Editor. 
 
 {% highlight C# %}  
 

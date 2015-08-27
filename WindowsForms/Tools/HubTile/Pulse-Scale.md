@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Pulse Scale
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # Pulse Scale
 
 In PulsingTile, the zoom level can be set using PulseScale property.

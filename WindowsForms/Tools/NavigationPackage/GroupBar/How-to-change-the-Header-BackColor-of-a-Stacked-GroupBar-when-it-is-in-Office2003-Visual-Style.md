@@ -3,10 +3,10 @@ layout: post
 title: How to change the Header BackColor of a Stacked GroupBar when it is in Office 2003 Visual Style
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## How to change the Header BackColor of a Stacked GroupBar when it is in Office 2003 Visual Style
+# How to change the Header BackColor of a Stacked GroupBar when it is in Office 2003 Visual Style
 
 The following code examples are used to change the GroupBar Item's Header BackColor.
 
@@ -49,7 +49,7 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White
 
 
 
-_Note : In GroupBar, StackedMode property should be enabled to customize the appearace of the GroupBar header._
+> _Note : In GroupBar, StackedMode property should be enabled to customize the appearace of the GroupBar header._
 
 ![](Overview_images/Overview_img47.png) 
 Figure 955: Customized GroupBar Header backcolor in Office2003 Visual style

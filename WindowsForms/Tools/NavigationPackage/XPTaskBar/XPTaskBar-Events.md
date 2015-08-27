@@ -3,10 +3,10 @@ layout: post
 title: XPTaskBar Events
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## XPTaskBar Events
+# XPTaskBar Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

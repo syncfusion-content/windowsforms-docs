@@ -3,10 +3,10 @@ layout: post
 title: ItemClick Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## ItemClick Event
+# ItemClick Event
 
 The XPTaskBar Box uses this event to make an XPTaskBar Item do some task when the user clicks on it. For this event, the user 
 should set unique names for the XPTaskBar Items through the Tag property in the Items Collection Editor.

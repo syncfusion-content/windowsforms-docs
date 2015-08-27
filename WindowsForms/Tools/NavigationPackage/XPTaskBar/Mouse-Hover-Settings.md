@@ -3,10 +3,10 @@ layout: post
 title: Mouse Hover Settings 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Mouse Hover Settings 
+# Mouse Hover Settings 
 
 This section discusses the mouse hover settings of the XPTaskBar control.
 

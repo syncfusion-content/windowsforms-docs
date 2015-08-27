@@ -3,10 +3,10 @@ layout: post
 title: Interactive Features
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Interactive Features
+# Interactive Features
 
 User can determine whether the particular GroupView Item is selected or not using the ButtonView and ClipSelectionBounds properties. ButtonView displays the selected GroupView Item in the pressed state.
 

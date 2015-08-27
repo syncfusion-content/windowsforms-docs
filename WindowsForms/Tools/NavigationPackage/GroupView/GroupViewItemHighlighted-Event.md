@@ -3,11 +3,10 @@ layout: post
 title: GroupViewItemHighlighted Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-
-## GroupViewItemHighlighted Event
+# GroupViewItemHighlighted Event
 
 It occurs when a GroupView Item in the GroupView control is highlighted.
 

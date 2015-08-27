@@ -3,11 +3,10 @@ layout: post
 title: Text Settings 
 description: Text Settings 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-
-## Text Settings 
+# Text Settings 
 
 This section describes how text alignment can be done for the GroupBar Items.
 

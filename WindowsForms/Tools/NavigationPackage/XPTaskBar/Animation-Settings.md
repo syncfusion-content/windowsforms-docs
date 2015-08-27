@@ -3,10 +3,10 @@ layout: post
 title: Animation Settings 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Animation Settings 
+# Animation Settings 
 
 Animation during expanding / collapsing of the Taskbar items in an XPTaskBar can be controlled using the following properties. 
 Animation can also be enabled while adding or removing any TaskBar items.

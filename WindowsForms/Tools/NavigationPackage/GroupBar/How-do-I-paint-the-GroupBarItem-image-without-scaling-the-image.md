@@ -3,10 +3,10 @@ layout: post
 title: How do I paint the GroupBarItem image without scaling the image
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## How do I paint the GroupBarItem image without scaling the image?
+# How do I paint the GroupBarItem image without scaling the image?
 
 You can draw the image of GroupBarItem (without scaling it), by overriding the DrawGroupBarImage method of the GroupBar. 
 

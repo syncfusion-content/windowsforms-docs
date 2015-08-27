@@ -6,8 +6,7 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-
-## Column Appearance
+# Column Appearance
 
 The appearance of different columns can be customized through Column Styles settings.
 
@@ -21,7 +20,7 @@ Figure 901: ColumnsHeaderBackground property in the Properties Grid
 ![](Column-Appearance-images/Column-Appearance-img2.jpeg)
 Figure 902: Gradient colors set for Header Background
 
-### Adding HighlightBorderColor property
+## Adding HighlightBorderColor property
 
 Essential tool is now enhanced with HighlightBorderColor property to set the highlight color of the column header in MultiColumnTreeView.
 

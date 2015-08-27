@@ -3,10 +3,10 @@ layout: post
 title: Appearance Settings
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Appearance Settings
+# Appearance Settings
 
 The following table describes the properties that enhance the appearance of the GroupView control.
 

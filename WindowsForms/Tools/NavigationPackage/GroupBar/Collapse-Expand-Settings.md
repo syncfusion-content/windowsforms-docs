@@ -3,14 +3,14 @@ layout: post
 title: Collapse / Expand Settings
 description: Collapse / Expand Settings
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Collapse / Expand Settings
+# Collapse / Expand Settings
 
 This section discusses settings of a groupbar in its collapsed state. 
 
- _Note: AllowCollapse property should be set to true to effect the below settings._
+> _Note: AllowCollapse property should be set to true to effect the below settings._
  
 Table 540: Property Table
 <table>
@@ -60,7 +60,7 @@ this.groupBar1.CollapsedWidth = 45;
 {% endhighlight %}
 
 
-#### Image for collapse / Expand States
+### Image for collapse / Expand States
 
 The below properties set images for the collapse button based on the button states.
 

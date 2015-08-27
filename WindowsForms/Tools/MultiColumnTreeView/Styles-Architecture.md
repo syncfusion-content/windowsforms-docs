@@ -6,7 +6,6 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-
 # Styles Architecture
 
 The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a MultiColumnTreeView.TreeNodeAdvStyleInfo. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hatch table.
@@ -24,7 +23,7 @@ When a style is not set in a style info object, it inherits the style from the p
 * Column Style : This lets you specify the styles for the columns.
 * SubItem Style : This lets you specify the styles for the Sub Items of the nodes.
 
-### Explicit Style Inheritance
+## Explicit Style Inheritance
 
 Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 
@@ -69,7 +68,7 @@ Indicates the style that all the subitems will inherit from.</td></tr>
 
 
  ![](Styles-Architecture_images/Styles-Architecture_img1.jpeg) 
-
+Figure : Default Base Styles
 
 
 User can also add their own styles using this BaseStyles Collection Editor. The styles which can be added by the users are as follows.

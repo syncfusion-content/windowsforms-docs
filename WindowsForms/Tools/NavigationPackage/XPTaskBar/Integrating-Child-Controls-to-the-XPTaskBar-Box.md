@@ -3,10 +3,10 @@ layout: post
 title: Integrating Child Controls to the XPTaskBar Box
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Integrating Child Controls to the XPTaskBar Box 
+# Integrating Child Controls to the XPTaskBar Box 
 
 To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the PreferredChildPanelHeight property.
 

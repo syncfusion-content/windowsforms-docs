@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Selection Marker Border Color
 description: concept and features
 platform: windowsforms
 control: HubTile
@@ -28,5 +28,5 @@ Me.HubTile1.SelectionMarkerColor = Color.Blue
 
 
 
-_Note: SelectionMarkerColor is applicable only for DefaultTile type._
+> _Note: SelectionMarkerColor is applicable only for DefaultTile type._
 

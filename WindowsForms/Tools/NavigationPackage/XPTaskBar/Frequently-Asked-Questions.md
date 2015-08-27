@@ -3,7 +3,7 @@ layout: post
 title: Frequently Asked Questions
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
 # Frequently Asked Questions

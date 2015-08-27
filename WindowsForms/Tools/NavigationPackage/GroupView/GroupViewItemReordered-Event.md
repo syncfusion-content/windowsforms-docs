@@ -3,10 +3,10 @@ layout: post
 title: GroupViewItemReordered Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## GroupViewItemReordered Event
+# GroupViewItemReordered Event
 
 It occurs when a GroupView Item in the GroupView control is reordered.
 

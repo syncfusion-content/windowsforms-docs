@@ -3,10 +3,10 @@ layout: post
 title: Text Settings
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Text Settings
+# Text Settings
 
 This section describes the text alignment options available for GroupView.
 

@@ -3,10 +3,10 @@ layout: post
 title: How to remove the header of XPTaskBarBox in an XPTaskBar
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## How to remove the header of XPTaskBarBox in an XPTaskBar
+# How to remove the header of XPTaskBarBox in an XPTaskBar
 
 For this, you need to derive XPTaskBarBox class, and override DetermineHeaderHeight method as follows.
 

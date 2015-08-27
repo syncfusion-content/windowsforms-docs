@@ -6,11 +6,11 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-## SubItem Styles
+# SubItem Styles
 
 Standard - SubItem style in the BaseStyles Collection Editor will be applied by default to all the subitems that are added to the tree nodes. User can also edit the default style settings.
 
-### Properties
+## Properties
 
 The below properties lets you customize the subitems using the Styles editor.
 
@@ -67,7 +67,10 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 User can add and define a SubItem style using the BaseStyles Collection Editor as follows.
 
 ![](Styles-Architecture_images/Styles-Architecture_img10.jpeg)
+Figure 913: SubItem Style added to the Styles Editor
 
+> _See Also 
+> [Adding Multiple Columns and SubItems](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/addingmultiplecolumnsandsubitems.htm)
 
 
 

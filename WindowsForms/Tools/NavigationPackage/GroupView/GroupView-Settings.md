@@ -3,12 +3,13 @@ layout: post
 title: GroupView Settings
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## GroupView Settings
+# GroupView Settings
 
-This section discusses the various settings that can be applied to define the look and behavior of the GroupView control.
+This section discusses the various settings that can be applied to define the look and behavior of the GroupView 
+control.
 
 
 

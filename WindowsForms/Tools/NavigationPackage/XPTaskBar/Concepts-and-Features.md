@@ -3,7 +3,7 @@ layout: post
 title: Concepts and Features
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
 # Concepts and Features

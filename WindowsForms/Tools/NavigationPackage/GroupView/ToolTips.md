@@ -3,12 +3,13 @@ layout: post
 title: ToolTips
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## ToolTips
+# ToolTips
 
-The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips property must be set to 'True' in order to make the tooltip visible.
+The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips 
+property must be set to 'True' in order to make the tooltip visible.
 
 _Table_ _576__: Property Table_
 
@@ -52,4 +53,4 @@ Me.groupView1.ShowToolTips = True
 
 
 ![](Overview_images/Overview_img86.jpeg) 
-Figure 988: ToolTip displayed for "Copy" Item
+Figure : ToolTip displayed for "Copy" Item

@@ -6,11 +6,10 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-
 # MultiLine Support
 
-
-TreeNodeAdv has multiline text option for each node by using the Multiline property. This can be set through NodeCollection Editor. We need to adjust the default Node height value to make it effective.
+TreeNodeAdv has multiline text option for each node by using the Multiline property. This can be set through 
+NodeCollection Editor. We need to adjust the default Node height value to make it effective.
 
 _Table_ _529__: Property Table_
 
@@ -57,7 +56,7 @@ treeNodeAdv1.Text = "ICC \n World \n Cup \n 2007"
 The below image displays a node with multiline property set.
 
 ![](TreeNode-Features_images/TreeNode-Features_img2.jpeg) 
-
+Figure : MultiLine Support Illustrated
 
 
 

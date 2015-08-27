@@ -3,10 +3,10 @@ layout: post
 title: Control Overview
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Control Overview
+# Control Overview
 
 The various sections of XPTaskBar and their descriptions are given below.
 

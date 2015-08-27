@@ -3,10 +3,10 @@ layout: post
 title: Cursor Settings 
 description: Cursor Settings 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Cursor Settings 
+# Cursor Settings 
 
 #### Cursor Settings for GroupBar
 

@@ -3,10 +3,10 @@ layout: post
 title: Through Designer
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Through Designer
+# Through Designer
 
 In this tutorial, we will create a simple XPTaskBar.
 

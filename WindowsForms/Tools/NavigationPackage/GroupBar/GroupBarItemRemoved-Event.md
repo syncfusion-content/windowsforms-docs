@@ -3,11 +3,10 @@ layout: post
 title: GroupBarItemRemoved Event
 description: GroupBarItemRemoved Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-
-## GroupBarItemRemoved Event
+# GroupBarItemRemoved Event
 
 This event is handled after a GroupBar Item is removed from the GroupBar Items Collection. It is handled to dispose client 
 controls when GroupBar Items are removed at runtime.

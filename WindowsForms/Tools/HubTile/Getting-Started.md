@@ -6,7 +6,6 @@ platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # Getting Started
 
 This section briefly describes how to design a HubTile control in a Windows Forms Application.

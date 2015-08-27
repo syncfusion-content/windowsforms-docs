@@ -3,10 +3,10 @@ layout: post
 title: GroupBarItemSelected Event
 description: GroupBarItemSelected Event
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## GroupBarItemSelected Event
+# GroupBarItemSelected Event
 
 It occurs when a GroupBar Item of the GroupBar control is selected. Accessing the GroupBar.SelectedItem property from within the GroupBarItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked. 
 

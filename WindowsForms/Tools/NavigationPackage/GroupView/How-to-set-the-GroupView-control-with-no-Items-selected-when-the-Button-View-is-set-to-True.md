@@ -3,11 +3,10 @@ layout: post
 title: How to set the GroupView control with no Items selected when the Button View is set to True
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-
-## How to set the GroupView control with no Items selected when the Button View is set to True
+# How to set the GroupView control with no Items selected when the Button View is set to True
 
 When ButtonView is set to 'True', the user cannot set the selected index to -1 to make it as not selected. As an alternative, set the Button View to 'False' as a default and in the GroupView's MouseDown event or GroupViewItemSelected event, set the Button View to 'True'.
 

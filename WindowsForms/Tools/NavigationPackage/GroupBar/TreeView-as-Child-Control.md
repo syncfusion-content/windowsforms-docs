@@ -3,10 +3,10 @@ layout: post
 title: TreeView as Child Control 
 description: TreeView as Child Control 
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## TreeView as Child Control 
+# TreeView as Child Control 
 
 You can add a TreeView control to the GroupBar by clicking on a particular group say GroupBarItem1 by activating it and then dragging-and-dropping the TreeView control onto the GroupBar's client region. You can repeat this process for all groups in the control. 
 

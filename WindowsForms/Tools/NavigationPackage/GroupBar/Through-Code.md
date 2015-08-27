@@ -3,10 +3,10 @@ layout: post
 title: Through Code
 description: Through Code
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Through Code
+# Through Code
 
 The following code shows how to create a GroupBar control and add GroupBar Items to the control.
 

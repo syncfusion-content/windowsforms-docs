@@ -3,10 +3,10 @@ layout: post
 title: Color Settings
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Color Settings
+# Color Settings
 
 This section describes the color settings available for GroupView.
 

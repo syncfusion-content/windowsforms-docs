@@ -3,10 +3,10 @@ layout: post
 title: Image Settings of GroupView 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Image Settings of GroupView 
+# Image Settings of GroupView 
 
 This section describes the image options available for GroupView.
 
@@ -57,7 +57,7 @@ Me.groupView1.SmallImageList = Me.imageList1
 
  {% endhighlight %}
  
- _Note : Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
+> _Note : Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
 
  ![](Overview_images/Overview_img79.jpeg) 
 Figure 982: GroupView Items displaying Small Images instead of Icons

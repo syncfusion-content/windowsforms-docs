@@ -3,12 +3,10 @@ layout: post
 title: GroupBar
 description: GroupBar
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-
-## GroupBar
-
+# GroupBar
 
 The GroupBar and GroupView controls abide by the container-client model and are designed to work in perfect synchronization with each other.
 
@@ -17,7 +15,7 @@ The GroupBar class implements a tab-type container control similar to the Window
 The GroupBar may be used in combination with the GroupView control to implement clones of some of the popular UI components such as the Microsoft OutlookBar and the Visual Studio .NET toolbox window.
 
 ![](Overview_images/Overview_img2.jpeg) 
-
+Figure 915: GroupBar with GroupView Client Control
 
 The Essential ToolsGroupBar control displays multiple groups or tabs, each of which represents a client control that is hosted 
 within the GroupBar. 

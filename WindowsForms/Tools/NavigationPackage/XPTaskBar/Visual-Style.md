@@ -3,10 +3,10 @@ layout: post
 title: Visual Style
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Visual Style
+# Visual Style
 
 We can give Office2007 look and feel for the XPTaskBarBox control using Style property. It supports all the three Office2007 
 Color Schemes. Specify the color schemes in Office2007ColorScheme property.

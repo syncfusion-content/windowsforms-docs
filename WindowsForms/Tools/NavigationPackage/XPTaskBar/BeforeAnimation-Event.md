@@ -3,10 +3,10 @@ layout: post
 title: BeforeAnimation Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## BeforeAnimation Event
+# BeforeAnimation Event
 
 This event gets called before the XPTaskBar Box expands or collapses.
 

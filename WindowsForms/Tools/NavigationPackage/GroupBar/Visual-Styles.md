@@ -3,10 +3,10 @@ layout: post
 title: Visual Styles
 description: Visual Styles
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## Visual Styles
+# Visual Styles
 
 
 It determines the painting scheme to be used for drawing the control. 

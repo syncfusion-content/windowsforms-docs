@@ -3,10 +3,10 @@ layout: post
 title: How to drag-and-drop a GroupView Item into any other control (ListView control)
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## How to drag-and-drop a GroupView Item into any other control (ListView control)
+# How to drag-and-drop a GroupView Item into any other control (ListView control)
 
 You can handle the GroupView's DragOver Event to get the selected GroupView Item and then handle the ListView control's DragEnter and DragDrop events to drop the selected GroupView Item as a ListView item in the ListView control.
 

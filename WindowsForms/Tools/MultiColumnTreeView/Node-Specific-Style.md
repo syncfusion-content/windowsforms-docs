@@ -6,20 +6,20 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-## Node Specific Style
+# Node Specific Style
 
 Make a Node's Style Inherit from Another Base Style
 
 Apart from the default style (Standard Style), we can also create custom Base styles using the BaseStyles Collection Editor. Select the Base Style option, then click Add Style.
 
  ![](Styles-Architecture_images/Styles-Architecture_img4.jpeg) 
-
+Figure : Base Style option Selected
 
 
 This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
  ![](Styles-Architecture_images/Styles-Architecture_img5.jpeg) 
-
+Figure : BaseStyle property in the TreeNodeAdv NodeCollection Editor
 
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
@@ -28,7 +28,7 @@ This overrides the Standard Style settings for the specified nodes and displays 
 
 
 
-### Style Settings
+## Style Settings
 
 The below properties lets you customize the Base style settings.
 

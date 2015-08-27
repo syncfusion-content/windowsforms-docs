@@ -6,7 +6,6 @@ platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
-
 # TreeNode Features
 
 This section discusses the following topics.

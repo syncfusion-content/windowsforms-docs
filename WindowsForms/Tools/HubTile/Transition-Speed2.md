@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Transition Speed 2
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-
 # Transition Speed
 
 In HubTile, Rotation speed can be increased or decreased by the RotationTransitionSpeed property.

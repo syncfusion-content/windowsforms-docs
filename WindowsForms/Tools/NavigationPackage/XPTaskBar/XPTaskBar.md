@@ -3,7 +3,7 @@ layout: post
 title: XPTaskBar
 description: Introduction
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
 # XPTaskBar
@@ -22,4 +22,4 @@ You can then add one or more XPTaskBar Items to the boxes using their Items prop
 The following screen shot illustrates the XPTaskBar and it's elements.
 
  ![](Overview_images/Overview_img90.jpeg) 
-
+Figure 992: XPTaskBar Illustrated

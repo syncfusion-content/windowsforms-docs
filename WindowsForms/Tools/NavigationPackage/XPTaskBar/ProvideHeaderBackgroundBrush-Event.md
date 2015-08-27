@@ -3,10 +3,10 @@ layout: post
 title: ProvideHeaderBackgroundBrush Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## ProvideHeaderBackgroundBrush Event
+# ProvideHeaderBackgroundBrush Event
 
 This event occurs when the header portion of the XPTaskBar Box gets drawn. Users may custom draw the header portion of the 
 XPTaskBar Box with different colors.

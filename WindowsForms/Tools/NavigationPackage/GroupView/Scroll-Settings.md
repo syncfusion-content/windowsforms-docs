@@ -3,10 +3,10 @@ layout: post
 title: Scroll Settings
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Scroll Settings
+# Scroll Settings
 
 We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling propertyto 'True'.
 

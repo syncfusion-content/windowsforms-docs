@@ -3,10 +3,10 @@ layout: post
 title: How to dynamically embed any control via Templates inside the GroupBar
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupBar
 documentation: ug
 ---
-## How to dynamically embed any control via Templates inside the GroupBar
+# How to dynamically embed any control via Templates inside the GroupBar
 
 The following code snippet shows how to dynamically add a Label control to the Groupbar Item using Templates.
 

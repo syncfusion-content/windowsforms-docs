@@ -3,10 +3,10 @@ layout: post
 title: Scroll Settings 
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## Scroll Settings 
+# Scroll Settings 
 
 Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBarBoxes are placed outside the TaskBar's client 
 area, provided the XPTaskBar is in the Vertical Layout mode. 

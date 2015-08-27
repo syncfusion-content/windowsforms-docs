@@ -3,10 +3,10 @@ layout: post
 title: Through Designer
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Through Designer
+# Through Designer
 
 To create a GroupView control and add GroupView Items to it,
 

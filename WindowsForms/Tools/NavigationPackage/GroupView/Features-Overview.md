@@ -3,10 +3,10 @@ layout: post
 title: Features Overview
 description: overview
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## Features Overview
+# Features Overview
 
 This section discusses the feature list of GroupView.
 

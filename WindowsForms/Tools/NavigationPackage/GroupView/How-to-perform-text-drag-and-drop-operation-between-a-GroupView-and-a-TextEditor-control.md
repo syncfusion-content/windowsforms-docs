@@ -3,10 +3,10 @@ layout: post
 title: How to perform text drag-and-drop operation between a GroupView and a TextEditor control
 description: Frequently Asked Questions
 platform: windowsforms
-control: Navigation Package
+control: GroupView
 documentation: ug
 ---
-## How to perform text drag-and-drop operation between a GroupView and a TextEditor control
+# How to perform text drag-and-drop operation between a GroupView and a TextEditor control
 
 You could perform text drag-and-drop operation between a TextEditor control like RichTextBox and GroupView by handling the GroupView's DragEnter and DragLeave events as shown below.
 

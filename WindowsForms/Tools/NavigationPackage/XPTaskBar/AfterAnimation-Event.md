@@ -3,10 +3,10 @@ layout: post
 title: AfterAnimation Event
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## AfterAnimation Event
+# AfterAnimation Event
 
 This event gets called after the XPTaskBar Box box expands or collapses.
 

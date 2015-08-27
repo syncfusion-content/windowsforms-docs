@@ -3,10 +3,10 @@ layout: post
 title: XPTaskBar-ToolTips
 description: Concepts and Features
 platform: windowsforms
-control: Navigation Package
+control: XPtaskBar
 documentation: ug
 ---
-## XPTaskBar- ToolTips
+# XPTaskBar- ToolTips
 
 ToolTips can be provided for the TaskBar Items of the XPTaskBar Box. The interesting part is that tooltips can also be assigned 
 for the disabled TaskBar Items. 

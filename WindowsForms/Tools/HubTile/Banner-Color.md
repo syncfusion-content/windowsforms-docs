@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Concept-and-Features
+title: Banner Color
 description: concept and features
 platform: windowsforms
 control: HubTile
 documentation: ug
 --- 
-
 # Banner Color
 
 HubTileBanner color can be changed using the BannerColor property. 
 
 ![hub](Concept-and-Features_images/Concept-and-Features_img11.png) 
-
+Figure : Banner Color
 
 
 The following code illustrates how to change the Banner color.
@@ -33,4 +32,4 @@ Me.HubTile1.BannerColor= Color.Green
 
 
 
-_Note: BannerColor is applicable only for DefaultTile and RotateTile types._
+> _Note: BannerColor is applicable only for DefaultTile and RotateTile types._
