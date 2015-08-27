@@ -1,0 +1,58 @@
+---
+layout: post
+title: Culture Settings
+description: Concepts and Features
+platform: windowsforms
+control: MaskedEditBox
+documentation: ug
+---
+# Culture Settings
+
+This section discusses the culture settings of the MaskedEditBox control.
+
+_Table_ _334__: Property Table_
+
+<table>
+<tr>
+<td>
+MaskedEditBox Properties</td><td>
+Description</td></tr>
+<tr>
+<td>
+Culture</td><td>
+Gets / sets the culture that is to be used for formatting the numeric display.</td></tr>
+<tr>
+<td>
+SpecialCultureValue</td><td>
+Gets / sets the mode for the cultures.It includes the below given options:{{ _None,_ | markdownify }}{{ _CurrentCulture,_ | markdownify }}{{ _UICulture and_ | markdownify }}{{ _InstalledCulture._ | markdownify }}</td></tr>
+<tr>
+<td>
+UseUserOverride</td><td>
+Specifies if the NumberFormatInfo used for formatting will use the User Overrides for the culture. The default value is set to 'True'.</td></tr>
+</table>
+
+
+{% highlight C# %}  
+
+this.maskedEditBox1.Culture = new System.Globalization.CultureInfo("ar-SA");
+
+this.maskedEditBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None;
+
+this.maskedEditBox1.UseUserOverride = true;
+
+{% endhighlight %}
+
+
+
+{% highlight vbnet %} 
+
+Me.maskedEditBox1.Culture = New System.Globalization.CultureInfo("ar-SA")
+
+Me.maskedEditBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None
+
+Me.maskedEditBox1.UseUserOverride = True
+
+{% endhighlight %}
+
+![](MaskedEditBox-images/MarkedEditBox-img11.png)
+
