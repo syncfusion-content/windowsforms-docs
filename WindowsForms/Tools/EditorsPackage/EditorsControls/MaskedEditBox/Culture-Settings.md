@@ -24,7 +24,7 @@ Gets / sets the culture that is to be used for formatting the numeric display.</
 <tr>
 <td>
 SpecialCultureValue</td><td>
-Gets / sets the mode for the cultures.It includes the below given options:{{ _None,_ | markdownify }}{{ _CurrentCulture,_ | markdownify }}{{ _UICulture and_ | markdownify }}{{ _InstalledCulture._ | markdownify }}</td></tr>
+Gets / sets the mode for the cultures.It includes the below given options:{{ '_None,_' | markdownify }}{{ '_CurrentCulture,_' | markdownify }}{{ '_UICulture and_' | markdownify }}{{ '_InstalledCulture._' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>

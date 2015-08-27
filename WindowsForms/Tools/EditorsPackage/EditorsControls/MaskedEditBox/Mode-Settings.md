@@ -22,11 +22,11 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{ _IncludeLiterals and_ | markdownify }}{{ _ExcludeLiterals._ | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
+Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
 <tr>
 <td>
 InputMode</td><td>
-Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ _OvertypeOnly and_ | markdownify }}{{ _Normal._ | markdownify }}The default value is 'OvertypeOnly'.</td></tr>
+Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'OvertypeOnly'.</td></tr>
 <tr>
 <td>
 UsageMode</td><td>

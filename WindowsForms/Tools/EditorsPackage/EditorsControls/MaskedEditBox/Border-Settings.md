@@ -22,7 +22,7 @@ Description</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:{{ _RaisedOuter,_ | markdownify }}{{ _SunkenOuter,_ | markdownify }}{{ _RaisedInner,_ | markdownify }}{{ _SunkenInner,_ | markdownify }}{{ _Raised,_ | markdownify }}{{ _Etched,_ | markdownify }}{{ _Bump,_ | markdownify }}{{ _Sunken,_ | markdownify }}{{ _Adjust and_ | markdownify }}{{ _Flat._ | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows:{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_ '| markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -30,11 +30,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Indicates the border sides of the panel. The options included are as follows:{{ _Left,_ | markdownify }}{{ _Top,_ | markdownify }}{{ _Right,_ | markdownify }}{{ _Bottom,_ | markdownify }}{{ _Middle and_ | markdownify }}{{ _All._ | markdownify }}</td></tr>
+Indicates the border sides of the panel. The options included are as follows:{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the edit control should have a border. The options included are given below:{{ _FixedSingle,_ | markdownify }}{{ _Fixed3D and_ | markdownify }}{{ _None._ | markdownify }}</td></tr>
+Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._ '| markdownify }}</td></tr>
 </table>
 
 

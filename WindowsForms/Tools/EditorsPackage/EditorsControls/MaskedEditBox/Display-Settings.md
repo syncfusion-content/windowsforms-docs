@@ -103,7 +103,7 @@ Description</td></tr>
 <tr>
 <td>
 PositionAt</td><td>
-Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{ _Decimal_ | markdownify }}{{ _FirstPosition and_ | markdownify }}{{ _FirstMaskPosition._ | markdownify }}The default value is 'FirstPosition'.</td></tr>
+Defines the control's cursor position behavior on getting the focus. The options included are as follows:{{ '_Decimal_' | markdownify }}{{ '_FirstPosition and_' | markdownify }}{{ '_FirstMaskPosition._' | markdownify }}The default value is 'FirstPosition'.</td></tr>
 <tr>
 <td>
 PositionAtDecimal</td><td>

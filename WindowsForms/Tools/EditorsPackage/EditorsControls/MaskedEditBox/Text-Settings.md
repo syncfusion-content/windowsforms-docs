@@ -22,7 +22,7 @@ Description</td></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options:{{ _Normal,_ | markdownify }}{{ _Upper and_ | markdownify }}{{ _Lower._ | markdownify }}</td></tr>
+Gets / sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -136,7 +136,7 @@ Description</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{ _IncludeLiterals and_ | markdownify }}{{ _ExcludeLiterals._ | markdownify }}</td></tr>
+Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}</td></tr>
 </table>
 
 
