@@ -13,17 +13,17 @@ documentation: ug
 
 The CurrencyTextBox control also provides support for clipboard operations that are compatible with currency data. TheClipMode property specifies if formatting characters are to be copied to the clipboard.
 
-Table 316: Property Table
+_Table_ _316_: _Property Table_
 
 <table>
 <tr>
 <td>
-CurrencyTextBox Property</td><td>
-Description</td></tr>
+{{ '**CurrencyTextBox Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ 'ExcludeFormatting and' | markdownify }}{{ 'IncludeFormatting.' | markdownify }}</td></tr>
+Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ '_ExcludeFormatting and_' | markdownify }}{{ '_IncludeFormatting._' | markdownify }}</td></tr>
 </table>
 
 
@@ -79,13 +79,13 @@ Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
 The CurrencyTextBox class is globalization aware and uses System.Globalization.CultureInfo for locale-specific information. You can set the control's culture to any installed culture through its culture property.
 
-Table 317: Property Table
+_Table_ _317_: _Property Table_
 
 <table>
 <tr>
 <td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+{{ '**CurrencyTextBox Properties**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Culture</td><td>
@@ -97,7 +97,7 @@ Specifies whether the culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify }}{{ 'CurrentCulture (default),' | markdownify }}{{ 'InstalledCulture,' | markdownify }}{{ 'UICulture.' | markdownify }}</td></tr>
+It sets the mode for the cultures. The options includes:{{ '_None,_' | markdownify }}{{ '_CurrentCulture (default),_' | markdownify }}{{ '_InstalledCulture,_ '| markdownify }}{{ '_UICulture._ '| markdownify }}</td></tr>
 </table>
 
 
@@ -131,13 +131,13 @@ Me.currencyTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Special
 
 ### User Override for Culture
 
-Table 318: Property Table
+_Table_ _318_: _Property Table_
 
 <table>
 <tr>
 <td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+{{ '**CurrencyTextBox Properties**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 UseUserOverride</td><td>
@@ -169,13 +169,13 @@ Me.currencyTextBox1.Culture = New CultureInfo(CultureInfo.CurrentUICulture.LCI
 
 The culture name can be displayed in the different format according to the specified culture value. Refer the following table in detail.
 
-Table 319: Property Table
+_Table_ _319_: _Property Table_
 
 <table>
 <tr>
 <td>
-CurrencyTextBox.Culture Properties</td><td>
-Description</td></tr>
+{{ '**CurrencyTextBox.Culture Properties**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DisplayName</td><td>

@@ -13,7 +13,7 @@ documentation: ug
 
 CurrencyTextBox control can be themed by setting ThemesEnabled to true.
 
-Table 313: Property Table
+_Table_ _313_: _Property Table_
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ Me.currencyTextBox1.ThemesEnabled = True
 
 The below properties describes various properties available to set border for the CurrencyTextBox control.
 
-Table 314: Property Table
+_Table_ _314_: _Property Table_
 
 <table>
 <tr>
@@ -61,11 +61,11 @@ Sets the style of the border. The options includes:FixedSingle,Fixed3D andNone (
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ 'Raised,' | markdownify }}{{ 'RaisedOuter,' | markdownify }}{{ 'RaisedInner,' | markdownify }}{{ 'Sunken (default),' | markdownify }}{{ 'SunkenOuter,' | markdownify }}{{ 'SunkenInner,' | markdownify }}{{ 'Etched,' | markdownify }}{{ 'Bump,' | markdownify }}{{ 'Adjust and' | markdownify }}{{ 'Flat.' | markdownify }}</td></tr>
+Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the border sides. The options includes{{ 'Left,' | markdownify }}{{ 'Top,' | markdownify }}{{ 'Right,' | markdownify }}{{ 'Bottom,' | markdownify }}{{ 'Middle and' | markdownify }}{{ 'All (default).' | markdownify }}</td></tr>
+Specifies the border sides. The options includes{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -105,7 +105,7 @@ Me.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 We can set different colors for the different set of currency values i.e, Colors can be set for positive currency values, negative currency values and zero values by using the below properties. We can draw the background of Currency TextBox with colors when it is in read only mode by ReadOnlyBackColor.
 
-Table 315: Property Table
+_Table_ _315_: _Property Table_
 
 <table>
 <tr>
