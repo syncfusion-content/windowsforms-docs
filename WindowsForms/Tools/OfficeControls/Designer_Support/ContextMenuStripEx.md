@@ -141,7 +141,7 @@ Me.richTextBox1.ContextMenuStrip = Me.contextMenuStripEx1
 
 At Run time, when the user right clicks the control, menu items will be displayed like the below image.
 
-![](Office-Controls_images/Office-Controls_img174.jpeg)
+![](Designer_images/designer_img140.png)
 
 
 

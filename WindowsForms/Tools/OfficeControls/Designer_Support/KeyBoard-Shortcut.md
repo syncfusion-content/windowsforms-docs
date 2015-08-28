@@ -207,6 +207,8 @@ A complex arrangement of controls like in the below image, can be achieved using
 _Figure 1206: Controls added to ToolStripPanelItem_
 
 #### Customizing Panel Item
+
+
 ##### Foreground Settings
 
 _Table 704: Property Table_
@@ -217,7 +219,7 @@ _Table 704: Property Table_
 Property</th><th>	Description</th></tr>
 <tr><td>
 Font	</td><td>Set Font Style for the display text in the control.</td></tr>
-<tr><td>ForeColor<td><td>	Sets fore color for the display text in the panel.</td></tr>
+<tr><td>ForeColor</td><td>	Sets fore color for the display text in the panel.</td></tr>
 <tr><td>Text</td><td>Sets the text for the ToolStripPanelItem.</td></tr></table>
 
 {% highlight C# %}
@@ -234,9 +236,14 @@ Me.toolStripPanelItem12.ForeColor = System.Drawing.Color.Crimson
 
 {% endhighlight %}
 
+
 ![](Designer_images/designer_img13.png)
 
+
+
+
 _Figure 1207: Font = "Verdana, 8, Bold"; ForeColor = "Crimson"_
+
 
 ##### Tooltip Settings
 
@@ -431,7 +438,7 @@ _Table 712: Property Table_
 <table><tr><th>
 Property</th><th>	Description</th></tr>
 <tr><td>RightToLeft</td><td>	Indicates whether the item should right to left for RTL languages.
-</td><tr><td>RightToLeftAutoMirrorImage</td><td>	Specifies whether image should mirror when RightToLeft is enabled for the item.
+</td></tr><tr><td>RightToLeftAutoMirrorImage</td><td>	Specifies whether image should mirror when RightToLeft is enabled for the item.
 </td></tr></table>
 
 ##### See Also
@@ -738,8 +745,8 @@ TextBeforeImage - Text will be placed before the image.</td></tr></table>
 _Table 718: Property Table_
 <table><tr><th>
 Property</th><th>	Description</th></tr>
-<tr><td>Image<td></td>	Sets the image for the item.</td></tr>
-<tr><td>ImageAlign<td></td>	Specifies the alignment of the image. The options are,
+<tr><td>Image</td><td>	Sets the image for the item.</td></tr>
+<tr><td>ImageAlign</td><td>	Specifies the alignment of the image. The options are,
 
 TopLeft, 
 TopCenter, 
@@ -750,8 +757,8 @@ MiddleRight,
 BottomLeft, 
 BottomCenter and
 BottomRight.</td></tr>
-<tr><td>ImageScaling<td></td>	Specifies whether the image on the item will size to fit on the ToolStrip.
-<tr><td>ImageTransparentColor<td></td>	Sets the transparent color on the image, that supports transparency.
+<tr><td>ImageScaling</td><td>	Specifies whether the image on the item will size to fit on the ToolStrip.</td></tr>
+<tr><td>ImageTransparentColor</td><td>	Sets the transparent color on the image, that supports transparency.
 </td></tr></table>
 
 ##### Style Settings
@@ -802,9 +809,9 @@ _Table 721: Property Table_
 <tr><th>
 Property</th><th>Description</th></tr>
 <tr><td>RightToLeft</td><td>	Indicates whether the item should draw right to left for RTL languages.
-</td><tr>
+</td></tr>
 <tr><td>RightToLeftAutoMirrorImage</td><td>	Specifies whether image should mirror when RightToLeft is enabled for the item.
-</td><tr></table>
+</td></tr></table>
 
 #### Label
 ToolStripLabel can be added to a ToolStripEx directly or through a panel. 
@@ -875,16 +882,17 @@ BottomRight.</td></tr>
 
 ##### Link Settings
 A ToolStripLabel can behave as a link at run time. The below properties controls the appearance and behavior of the links.
+
 _Table 724: Property Table_
 
 <table>
 <tr><th>
-Property</th><th>	Description</th>
+Property</th><th>	Description</th></tr>
 <tr><td>IsLink</td><td>	Sets whether the label should behave like a link.</td></tr>
-<tr><td>LinkColor	</td><td>Sets the color of the link.
-<tr><td>ActiveLinkColor</td><td>	Sets the color of the active link.</td><td>
-<tr><td>LinkVisited</td><td>	Specifies whether the hyperlink should be rendered as visited when the application loads.
-<tr><td>VisitedLinkColor</td><td>	Sets the color of the link that is visited.
+<tr><td>LinkColor	</td><td>Sets the color of the link.</td></tr>
+<tr><td>ActiveLinkColor</td><td>	Sets the color of the active link.</td></tr>
+<tr><td>LinkVisited</td><td>	Specifies whether the hyperlink should be rendered as visited when the application loads.</td></tr>
+<tr><td>VisitedLinkColor</td><td>	Sets the color of the link that is visited.</td></tr>
 <tr><td>LinkBehavior</td><td>	Specifies the underlining behavior of the link. The options are,
 
 SystemDefault - Based on the system settings for the links,
@@ -925,7 +933,9 @@ ImageAndText - Displays image and text.</td></tr>
 <tr><td>AutoSize	</td><td>Specifies whether the item should size itself based on its image and text.</td></tr></table>
 
 ##### ToolTip Settings
+
 The TooStripLabel can show tooltips during runtime, using the below properties.
+
 
 _Table 726: Property Table_
 <table>
@@ -1092,6 +1102,7 @@ The below properties controls the appearance and behavior of the ToolStripDropDo
 ##### Foreground Settings
 
 _Table 734: Property Table_
+
 <table><tr><th>
 Property</th><th>	Description</th></tr>
 <tr><td>Text</td><td>	Sets the Text for the ToolStripDropDownButton. This text will be displayed, only if the DisplayStyle is Text or ImageAndText.</td></tr>
@@ -1107,7 +1118,7 @@ MiddleCenter,
 MiddleRight,
 BottomLeft, 
 BottomCenter and
-BottomRight.</td><tr><td>
+BottomRight.</td></tr><tr><td>
 TextDirection</td><td>	Specifies the direction of drawing the text. The direction are,
 
 Horizontal - Text is placed horizontally,
@@ -1311,7 +1322,7 @@ Center.</td></tr></table>
 _Table 746: Property Table_
 
 <table><tr><th>
-Property</th><th>	Description</th></td>
+Property</th><th>	Description</th></tr>
 <tr><td>Enabled	</td><td>Specifies whether the item is enabled.</td></tr>
 <tr><td>Visible</td><td>	Specifies whether the item is visible.</td></tr>
 <tr><td>Alignment	</td><td>Sets the alignment of the item within the ToolStrip. They can be set to beginning (Left) or end (Right) of the ToolStripEx control.</td></tr>
@@ -1396,10 +1407,11 @@ Property	</th><th>Description</th></tr>
 
 ##### Style Settings
 _Table 752: Property Table_
+
 <table>
 <tr><th>
-Property	</th>Description<th>
-<tr><td>
+Property	</th><thDescription</th>
+</tr><tr><td>
 Style	</td><td>Specifies the style for ProgressBar. The style are,
 
 Blocks - Indicates the progress, by increasing the number of segmented blocks in a ProgressBar,
@@ -1663,11 +1675,13 @@ _Figure 1226: ToolStripEx controls illustrating LauncherStyles_
 
 #### Grip Style
 The toolstrip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
+
 _Table 766: Property Table_
+
 <table><tr><th>
 Property</th><th>	Description</th></tr>
 <tr><td>GripStyle	</td><td>Specifies whether or not to show the Gripper for the control. It can be hidden (default) or visible.</td></tr>
-<td>GripMargin</td><td>	Specifies the margin for the Gripper. Default is 2.</td></tr></table>
+<tr><td>GripMargin</td><td>	Specifies the margin for the Gripper. Default is 2.</td></tr></table>
 
 {% highlight C# %}
 
@@ -1696,7 +1710,7 @@ _Figure 1227: ToolStripEx with GripStyle Enabled_
 [Collapsed State Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/groupingitems.htm)
 
 #### Appearance Settings 
-##### Office12Mode
+Office12Mode
 ToolStripEx now supports Office12 modes in Ribbon. The properties which applies this mode are as follows.
 _Table 767: Property Table_
 <table><tr><th>
@@ -1839,6 +1853,7 @@ Me.toolStripEx2.ShowItemToolTips = True
 
 
 ### DesignTime Features 
+
 #### Smart Tag
 Smart Tag of the ToolStripEx opens the Task Windows which lets you to set some important properties easily.
 
@@ -2010,6 +2025,7 @@ Me.toolStripEx1.CollapsedDropDownButtonText = "Clipboard Items"
 _Figure 1238: ToolStripEx with Collapsed image and text at Run Time_
 
 ###	Events
+
 #### LauncherClick
 This event is raised when the launcher button is clicked.
 
