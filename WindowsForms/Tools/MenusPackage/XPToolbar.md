@@ -1,0 +1,17 @@
+---
+layout: post
+title: XPToolbar
+description: xptoolbar
+platform: windowsforms
+control: Menus Package 
+documentation: ug
+---
+# XPToolbar
+
+An XP Toolbar is a toolbar-like control with look-and-feel of the XP Menus toolbar. It supports a list of BarItems which can be added to it. It is a stand-alone control that can also be used in the absence of a BarManager also. 
+
+![](Overview_images/Overview_img122.jpeg)
+
+
+
+See Also
