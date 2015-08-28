@@ -436,7 +436,7 @@ This conversion is performed in order to avoid an incomplete page, harming furth
 * The bookmark tree might not appear like the original document if just part of it is copied, as it is hard to recreate the tree with parts of the bookmark.
 * Some of the contents are usually imported from the original document to the final document during saving process. Hence, the original document should be closed only after the final document is saved.
 
-> Note: To import the document asynchronously for Windows Store apps, refer the [Asynchronous Support](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/asynchronoussupport.htm) section.
+> Note: To import the document asynchronously for Windows Store apps, refer the [Asynchronous Support](http://docs.syncfusion.com/windowsforms/pdf/getting-started#asynchronous-support) section.
 
 ## TextElement
 

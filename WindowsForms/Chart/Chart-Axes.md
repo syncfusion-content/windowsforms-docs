@@ -2230,7 +2230,7 @@ _Figure_ _280_: _Chart with Y-Axis Labels Placemed Inside of Axis_
 
 Essential Chart supports customizing the individual axis label position to the right or left side of the axis for a horizontal axis and to the top or bottom for a vertical axis based on the user's needs.
 
-This feature can be achieved by using the[ChartFormatAxisLabel](http://help.syncfusion.com/User%20Interface/Windows%20Forms/Chart) event of the chart axis. The following code illustrates customizing the individual label position by using AxisLabelPlacement in the ChartFormatAxisLabel event.
+This feature can be achieved by using the[ChartFormatAxisLabel](http://docs.syncfusion.com/windowsforms/chart) event of the chart axis. The following code illustrates customizing the individual label position by using AxisLabelPlacement in the ChartFormatAxisLabel event.
 
 {% highlight c# %}
 

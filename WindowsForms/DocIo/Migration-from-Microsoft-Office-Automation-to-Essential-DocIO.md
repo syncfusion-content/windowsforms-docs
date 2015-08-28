@@ -105,7 +105,7 @@ doc.Save("MailMerge.doc", FormatType.Doc)
 
 _Note: For more information on mail merge using DocIO, you can refer to online documentation link:_
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/46mailmerge.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 
 #### Find and Replace
@@ -183,7 +183,7 @@ The following code example shows you how to perform a simple “Find and Replace
 {:.image }
 _Note: For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:_
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/45findandreplace.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 #### Bookmarks
 
@@ -291,7 +291,7 @@ doc.Close()
 
 _Note: For more information on working with bookmarks using DocIO, you can refer to the online documentation link:_
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4413bookmark.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 #### Page Numbers
 
@@ -507,7 +507,7 @@ Color = Color.BlackTextWatermark.Text = "Watermark"
 
 _Note: For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:_
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4222watermark.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 #### Header or Footer
 
@@ -615,7 +615,7 @@ For Each sec As WSection In doc.Sections    
 
 _Note: For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:_
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/432headersandfooters.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 #### Character Formatting
 
@@ -768,7 +768,7 @@ table.ResetCells(3, 2)
 
 _Note: For more information on creating tables using DocIO, refer to online documentation link:_
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/433table.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 #### Comments
 
@@ -920,7 +920,7 @@ Dim Comments As CommentsCollection = doc.Comments
 
 _Note: For more information on working with the comments using DocIO, you can refer to the online documentation link:_
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/44143comment.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 #### Document Protection
 
@@ -1008,7 +1008,7 @@ Dim doc As WordDocument = New WordDocument("Document.doc")
 
 Refer to the online documentation link for more details about ways to protect the Word documents using DocIO:
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/47security.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 #### Table of Contents
 
@@ -1089,7 +1089,7 @@ Dim TOC As TableOfContent = para.AppendTOC(1, 3)sec.Paragraphs.Insert(0, para
 {%endhighlight%}
 Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO:
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4418tableofcontents.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms>
 
 
 

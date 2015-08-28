@@ -1028,7 +1028,7 @@ Assembly Dependencies for this Conversion
 > _Note:_ 
 > * _You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed._
 > * _Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word._
-> * _Currently,_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _conversion is not supported in Silverlight, WinRT and Windows Phone applications._
+> * _Currently,_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _conversion is not supported in Silverlight, WinRT and Windows Phone applications._
 
 The following code example lets you to convert a Word document to PDF.
 
@@ -1333,7 +1333,7 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 > * _Parameter "pageIndex" is a zero based index._
 > * _Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word._
 > * _Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications._
-> * _You can refer to the_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _Conversion for supported and unsupported elements in Word to Image conversion._
+> * _You can refer to the_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _Conversion for supported and unsupported elements in Word to Image conversion._
 
 The following code example lets you to render a Word document as image.
 
