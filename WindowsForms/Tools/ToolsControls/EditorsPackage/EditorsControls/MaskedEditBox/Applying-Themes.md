@@ -24,7 +24,7 @@ Specifies whether or not to use XP themes when BorderStyle property is set to '
 </table>
 
 
- _Note: Refer_ [Border Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BorderStyles5.html) _topic to know about the BorderStyle property._
+ _Note: Refer_ [Border Settings](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/coloruicontrols/borderstyles) _topic to know about the BorderStyle property._
 
 {% highlight C# %} 
 

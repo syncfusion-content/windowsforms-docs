@@ -12,7 +12,7 @@ Localization is the process of customizing the application to culture-specific r
 
 Syncfusion components support localizing and have their own neutral resources. These resources can be localized as per the customer requirement.
 
-Localization is made easy with the latest version of Essential Studio (Volume - 2 2011). Earlier versions of the products have a different localization procedure (for the documentation refer [v8.4.0.10](http://help.syncfusion.com/ug_84/User%20Interface/Windows%20Forms/Tools/default.htm?turl=Documents/localizationoftools.htm)). Syncfusion components will continue to support both the procedures.
+Localization is made easy with the latest version of Essential Studio (Volume - 2 2011). Earlier versions of the products have a different localization procedure (for the documentation refer [v8.4.0.10](http://docs.syncfusion.com/windowsforms)). Syncfusion components will continue to support both the procedures.
 
 ## Use Case Scenarios
 

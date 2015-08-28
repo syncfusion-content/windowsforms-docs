@@ -30,7 +30,7 @@ The [culture](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm)�
 
 * Text Settings
 
-Text can be selected, formatted, clipped, aligned and displayed from right to left using the [text settings](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm) of the PercentTextBox control.
+Text can be selected, formatted, clipped, aligned and displayed from right to left using the [text settings](http://docs.syncfusion.com/windowsforms/tools/tools-controls) of the PercentTextBox control.
 
 MultiLine text can be displayed using the control.
 
@@ -52,7 +52,7 @@ The color of the border can also be set for the control using the BorderColor 
 
 * Size Settings
 
-The maximum and minimum [size](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm) of the control can be set according to the needs of the user.
+The maximum and minimum [size](http://docs.syncfusion.com/windowsforms/tools/tools-controls) of the control can be set according to the needs of the user.
 
 * Key Settings
 

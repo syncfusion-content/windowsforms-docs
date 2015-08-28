@@ -351,7 +351,7 @@ Me.currencyTextBox1.EnforceMinMaxDuringValidating = True;
 
 ### Null String
 
-If you want to display null string instead of actual [decimal](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/DecimalSettings.html) values, you can set NullString property to any values. To display the null string set AllowNull to true.
+If you want to display null string instead of actual [decimal](http://docs.syncfusion.com/windowsforms/tools) values, you can set NullString property to any values. To display the null string set AllowNull to true.
 
 _Table_ _311_: _Property Table_
 

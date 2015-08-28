@@ -124,7 +124,7 @@ Me.doubleTextBox1.MinValue = 4
 
 ### Banner Text Support
 
-We can set banner text for the DoubleTextBox control. Refer [BannerTextProvider Component](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BannerText.html) topic for more details.
+We can set banner text for the DoubleTextBox control. Refer [BannerTextProvider Component](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/integertextbox/bannertext ) topic for more details.
 
 We need to do the below settings to make Banner text feature available for the control.
 

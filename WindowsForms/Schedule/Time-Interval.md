@@ -123,7 +123,7 @@ Recurrence Appointments can be added by using the appointment recurrence dialog 
 
 Recurrence appointments can also be added by using the RecurrenceRule property. The RecurrenceRule is a string value that contains the details of the recurrence appointment with repeated rule types like daily, monthly, yearly, every second, every minute, every hour, how many days it needs to render or count, what is the interval, the time period to render the appointment, etc. The rules that are available in the Recurrence Rule property are listed in the following link.
 
-[RecurrenceRule](http://help.syncfusion.com/ug/windows%20forms/index.html)
+[RecurrenceRule](http://docs.syncfusion.com/windowsforms)
 
 In order to use the recurring appointments data provider of the Schedule control, the IRecurringScheduleAppointment interface should be implemented. Refer to the following code to achieve this.
 

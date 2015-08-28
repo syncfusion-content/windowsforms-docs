@@ -14,4 +14,4 @@ DomainUpDownExtis an advanced version of the standard windows DomainUpDown contr
 * Keyboard Support to increment or decrement value using Up and Down keys.
 * Orientation of spin button to vertical and horizontal.
 * Provides option to set different visual styles including Office2007.
-* [Custom Colors](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/VisualStyles4.html)can be applied to the control.
+* [Custom Colors](http://docs.syncfusion.com/windowsforms/tools/EditorsPackage/ButtonControls/ButtonAdv/Buttonadvappearnce#visualstyles )can be applied to the control.

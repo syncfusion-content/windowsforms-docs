@@ -91,19 +91,19 @@ Me.bannerTextProvider1.SetBannerText(Me.comboBoxBarItem1, New Syncfusion.Windows
 > Note: BannerText feature can be made available for the below controls only.
 
 
-* [TextBoxBarItem](http://help.syncfusion.com/ug/windows%20forms/Documents/textboxbaritem.htm) (XPMenus)
-* [ComboBoxBarItem](http://help.syncfusion.com/ug/windows%20forms/Documents/comboboxbaritem.htm) (XPMenus)
-* [TextBox](http://help.syncfusion.com/ug/windows%20forms/Documents/textbox3.htm) (ToolStripEx)
-* [ComboBox](http://help.syncfusion.com/ug/windows%20forms/Documents/combobox2.htm) (ToolStripEx)
-* [ComboBoxEx](http://help.syncfusion.com/ug/windows%20forms/Documents/comboboxex.htm) (ToolStripEx)
-* [TextBoxExt](http://help.syncfusion.com/ug/windows%20forms/Documents/textboxext.htm) (Editor Control)
-* [CurrencyTextBox](http://help.syncfusion.com/ug/windows%20forms/Documents/currencytextbox.htm)(Editor Control)
-* [ComboBoxAdv](http://help.syncfusion.com/ug/windows%20forms/Documents/comboboxadv.htm)(Editor Control)
-* [ComboDropDown](http://help.syncfusion.com/ug/windows%20forms/Documents/combodropdown.htm) (Editor Control)
-* [ComboBoxAutoComplete](http://help.syncfusion.com/ug/windows%20forms/Documents/comboboxautocomplete.htm) (Editor Control)
-* [Integer TextBox](http://help.syncfusion.com/ug/windows%20forms/Documents/integertextbox1.htm)(Editor Control)
-* [Double TextBox](http://help.syncfusion.com/ug/windows%20forms/Documents/doubletextbox1.htm) (Editor Control)
-* [Percent TextBox](http://help.syncfusion.com/ug/windows%20forms/Documents/percenttextbox1.htm)(Editor Control)
+* [TextBoxBarItem](http://docs.syncfusion.com/windowsforms/tools/menuspackage/menuspackage#textboxbarItem) (XPMenus)
+* [ComboBoxBarItem](http://docs.syncfusion.com/WindowsForms/Tools/MenusPackage/MenusPackage/ComboBoxBarItem) (XPMenus)
+* [TextBox](http://docs.syncfusion.com/windowsforms/tools/tools-controls) (ToolStripEx)
+* [ComboBox](http://docs.syncfusion.com/WindowsForms/Tools/OfficeControls/Designer_Support/KeyBoard-Shortcut#combobox ) (ToolStripEx)
+* [ComboBoxEx](http://docs.syncfusion.com/WindowsForms/Tools/OfficeControls/Designer_Support/KeyBoard-Shortcutl#comboboxex)
+* [TextBoxExt](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/textboxext) (Editor Control)
+* [CurrencyTextBox](http://docs.syncfusion.com/windowsforms/tools/editorspackage/editorscontrols#currencytextbox)(Editor Control)
+* [ComboBoxAdv](http://docs.syncfusion.com/WindowsForms/Tools/EditorsPackage/ComboboxContols/ComboBoxAdv/ComboBoxAdv)(Editor Control)
+* [ComboDropDown](http://docs.syncfusion.com/WindowsForms/Tools/EditorsPackage/ComboboxContols/ComboDropDown/ComboDropDown ) (Editor Control)
+* [ComboBoxAutoComplete](http://docs.syncfusion.com/WindowsForms/Tools/EditorsPackage/ComboBoxAutoComplete/ComboBoxAutoComplete) (Editor Control)
+* [Integer TextBox](http://docs.syncfusion.com/windowsforms/tools/editorspackage/editorscontrols#integertextbox)(Editor Control)
+* [Double TextBox](http://docs.syncfusion.com/windowsforms/tools/tools-controls) (Editor Control)
+* [Percent TextBox](http://docs.syncfusion.com/windowsforms/tools/editorspackage/editorscontrols/percenttextbox)(Editor Control)
 * Other Microsoft Editor Controls
 
 

@@ -14,7 +14,7 @@ IntegerTextBox is used to display Int64 values and contains the following featur
 
 * Display Settings
 
-The [display](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/_DisplaySettings.html) settings involves setting the separator to be used to group the numbers and the group size.
+The [display](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/displaysettings) settings involves setting the separator to be used to group the numbers and the group size.
 
 It also involves setting the pattern and symbol to be used when the number is negative.
 
@@ -26,11 +26,11 @@ The maximum and minimum value of the control can also be set.
 
 * Culture Settings
 
-The [culture](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/CultureSettings.html) to be used for formatting the numeric display can be set using the Culture property.
+The [culture](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/percentTextBox/culturesettings ) to be used for formatting the numeric display can be set using the Culture property.
 
 * Text Settings
 
-Text can be selected, formatted, clipped and displayed from right to left using the [text settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/TextSettings5.html) of the IntegerTextBox control.
+Text can be selected, formatted, clipped and displayed from right to left using the [text settings](http://docs.syncfusion.com/windowsforms/tools/EditorsPackage/DialogControls/TextSettings) of the IntegerTextBox control.
 
 * Appearance Settings
 
@@ -52,7 +52,7 @@ The color of the border can also be set for the control using the BorderColor 
 
 * Key Settings
 
-Keyboard support for entering large values is provided. Incrementing and decrementing of values can be done using the up and down arrow [keys](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/KeySettings.html).
+Keyboard support for entering large values is provided. Incrementing and decrementing of values can be done using the up and down arrow [keys](http://docs.syncfusion.com/windowsforms/tools/editorspackage/editorscontrols/integertextbox/keysettings).
 
 * Applying Themes
 

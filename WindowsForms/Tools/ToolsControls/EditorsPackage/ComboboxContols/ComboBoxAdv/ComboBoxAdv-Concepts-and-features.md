@@ -235,7 +235,7 @@ Me.comboBoxAdv1.MaxLength = 32766
 
 ### Banner Text Support
 
-You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvider Component](http://help.syncfusion.com/ug/windows%20forms/documents/bannertextsupport.htm) topic for more details.
+You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvider Component](http://docs.syncfusion.com/WindowsForms/Tools/BannerTextProviderComponent/Overview) topic for more details.
 
 
 
@@ -305,7 +305,7 @@ Me.comboBoxAdv1.Sorted = True
 
 
 
-> Note: Data for the dropdown can be set using Items property. Refer[Data Settings](http://help.syncfusion.com/ug/windows%20forms/documents/datasettings1.htm) for details. To know about different dropdown styles available for the control, see ReadOnly Settings section in [TextBox](http://help.syncfusion.com/ug/windows%20forms/documents/textbox2.htm)topic.
+> Note: Data for the dropdown can be set using Items property. Refer[Data Settings](http://docs.syncfusion.com/windowsforms/tools/editorspackage/comboboxContols#data-settings ) for details. To know about different dropdown styles available for the control, see ReadOnly Settings section in [TextBox](http://docs.syncfusion.com/windowsforms)topic.
 
 See Also 
 

@@ -31,7 +31,7 @@ The [culture](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm)�
 
 * Text Settings
 
-Text can be selected, formatted, clipped and displayed from right to left using the [text settings](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm) of the IntegerTextBox control.
+Text can be selected, formatted, clipped and displayed from right to left using the [text settings](http://docs.syncfusion.com/windowsforms/tools/tools-controls) of the IntegerTextBox control.
 
 * Appearance Settings
 
@@ -53,7 +53,7 @@ The color of the border can also be set for the control using the BorderColor 
 
 * Key Settings
 
-Keyboard support for entering large values is provided. Incrementing and decrementing of values can be done using the up and down arrow [keys](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm).
+Keyboard support for entering large values is provided. Incrementing and decrementing of values can be done using the up and down arrow [keys](http://docs.syncfusion.com/windowsforms/tools/tools-controls).
 
 * Applying Themes
 

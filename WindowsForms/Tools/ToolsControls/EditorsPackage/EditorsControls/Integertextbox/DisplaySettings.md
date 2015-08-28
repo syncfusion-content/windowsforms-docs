@@ -75,7 +75,7 @@ A Sample which demonstrates the Display Settings of IntegerTextBox control is av
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### [Value Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/IntegerTextBox_ValueSettings.html)
+### [Value Settings](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/percentTextBox/valuesettings)
 
 The various values of the IntegerTextBox control and their settings are given below.
 
