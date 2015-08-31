@@ -41,7 +41,7 @@ Me.textBoxExt1.ThemesEnabled = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_themesNew.png](Applying-Themes_images/Applying-Themes_img1.png)
+![](Applying-Themes_images/Applying-Themes_img1.png)
 
 
 

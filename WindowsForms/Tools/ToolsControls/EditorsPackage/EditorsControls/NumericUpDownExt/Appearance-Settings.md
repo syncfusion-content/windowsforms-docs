@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance Settings
 
-[Background Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BackgroundSettings22.html)
+[Background Settings](/windowsforms/tools/editorspackage/editorscontrols/numericupdownext/border-settings)
 
 The Background settings of the NumericUpDownExt control are discussed below.
 
@@ -47,11 +47,11 @@ Me.numericUpDownExt1.BackColor = System.Drawing.Color.Aquamarine
 {% endhighlight %}
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features3.png](Appearance-Settings_images/Appearance-Settings_img1.png)
+![](Appearance-Settings_images/Appearance-Settings_img1.png)
 
 
 
-[Foreground Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/ForegroundSettings31.html)
+[Foreground Settings](/windowsforms/tools/editorspackage/editorscontrols/numericupdownext/foreground-settings)
 
 The foreground settings of the NumericUpDownExt control are discussed below.
 
@@ -89,15 +89,15 @@ Me.numericUpDownExt1.ForeColor = System.Drawing.Color.DodgerBlue
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features4.png](Appearance-Settings_images/Appearance-Settings_img2.png)
+![](Appearance-Settings_images/Appearance-Settings_img2.png)
 
 
 
-[Applying Foreground Color to Negative Values](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/ColorOptionsForNegativeValues.html)
+[Applying Foreground Color to Negative Values](//docs.syncfusion.com/windowsforms/tools)
 
 It is a good behavior in a NumericUpDownExt control to indicate negative values using a separate color. The IntegerTextBox and DoubleTextBox controls also exhibit the same behavior.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features5.png](Appearance-Settings_images/Appearance-Settings_img3.png)
+![](Appearance-Settings_images/Appearance-Settings_img3.png)
 
 
 

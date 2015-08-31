@@ -67,7 +67,7 @@ Me.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features1.png](Border-Settings_images/Border-Settings_img1.png)
+![](Border-Settings_images/Border-Settings_img1.png)
 
 
 

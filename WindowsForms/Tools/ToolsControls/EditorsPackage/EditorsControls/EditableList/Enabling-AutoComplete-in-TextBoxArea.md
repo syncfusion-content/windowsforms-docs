@@ -50,7 +50,7 @@ End Sub
 
 The data source may vary according to your choice.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/image1861354887.png](Enabling-AutoComplete-in-TextBoxArea_images/Enabling-AutoComplete-in-TextBoxArea_img1.png)
+![](Enabling-AutoComplete-in-TextBoxArea_images/Enabling-AutoComplete-in-TextBoxArea_img1.png)
 
 
 

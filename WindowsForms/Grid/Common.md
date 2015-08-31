@@ -3949,7 +3949,7 @@ me.gridControl1.ExcelLikeAlignment = True;
 
 
 
-> { ![http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/ImagesExt/image9_1.png](Common_images/Common_img10.png) | markdownify }
+> { ![](Common_images/Common_img10.png) | markdownify }
 
 _Note: The preceding settings can be applied to all Grid Controls._
 

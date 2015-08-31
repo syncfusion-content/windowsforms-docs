@@ -186,7 +186,7 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com> (Navigate to the Pivot Grid for Windows Forms User Guide.)![](Overview_images/Overview_img5.jpeg)' | markdownify }}
+Online{{ '<http://docs.syncfusion.com/windowsforms/pivotgrid> (Navigate to the Pivot Grid for Windows Forms User Guide.)![](Overview_images/Overview_img5.jpeg)' | markdownify }}
 
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>

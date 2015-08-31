@@ -90,11 +90,11 @@ Figure 890: SubItems with Italic Style; Solid, FixedSingle Border Style
 
 StyleSettings for all the sub Items can be specified using TreeNodeAdvSubItemStyleInfo class. It is a default base 
 style which can be accessed in the BaseStyles Collection Editor. 
-See [SubItem Styles](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/subitemstyles.htm).
+See [SubItem Styles](/windowsforms/tools/multicolumntreeview/subitem-styles).
 
 > See Also
 
-> [Column Styles](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/columnstyles1.htm)
+> [Column Styles](/windowsforms/tools/multicolumntreeview/column-styles)
 
-> [MultiColumnTreeView Appearance](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/multicolumntreeviewappearance.htm)
+> [MultiColumnTreeView Appearance](/windowsforms/tools/multicolumntreeviewappearance)
 

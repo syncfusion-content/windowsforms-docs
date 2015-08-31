@@ -84,7 +84,7 @@ Me.integerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features12.png](Overview_images/Overview_img458.png) 
+![](Overview_images/Overview_img458.png) 
 
 
 A sample which demonstrates the Border Settings of IntegerTextBox control is available in the below sample installation path.

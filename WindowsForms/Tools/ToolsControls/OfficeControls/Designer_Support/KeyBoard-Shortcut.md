@@ -443,10 +443,10 @@ Property</th><th>	Description</th></tr>
 
 ##### See Also
 
-[Caption Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/captionsettings2.htm)
-[Item Customization](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/itemcustomization.htm)
-[ToolTips](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/tooltips4.htm)
-[GalleryItemClick Event](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/galleryitemclickedevent.htm)
+[Caption Settings](/windowsforms/tools/officecontrols/designer_support/scrollersframe#captionsettings)
+[Item Customization](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#itemcustomization)
+[ToolTips](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#tooltips)
+[GalleryItemClick Event](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#galleryitemclickedevent)
 
 ## Caption Settings
 Caption for a ToolStripGallery can be visible by settings the ShowCaption property to true.
@@ -474,10 +474,10 @@ Me.toolStripGallery1.ShowCaption = True
 {% endhighlight %}
 
 ##### See Also
-[Appearance Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings16.htm)
-[Item Customization](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/itemcustomization.htm)
-[ToolTips](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/tooltips4.htm)
-[GalleryItemClick Event](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/galleryitemclickedevent.htm)
+[Appearance Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#appearancesettings)
+[Item Customization](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#itemcustomization)
+[ToolTips](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#tooltips)
+[GalleryItemClick Event](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#galleryitemclickedevent)
 
 
 #### Item Customization
@@ -540,10 +540,10 @@ Me.toolStripGallery1.ItemSize = New System.Drawing.Size(80, 46)
 
 ##### See Also
 
-[Appearance Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings16.htm)
-[Caption Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/captionsettings2.htm)
-[ToolTips](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/tooltips4.htm)
-[GalleryItemClick Event](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/galleryitemclickedevent.htm)
+[Appearance Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#appearancesettings)
+[Caption Settings](/windowsforms/tools/officecontrols/designer_support/scrollersframe#captionsettings)
+[ToolTips](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#tooltips)
+[GalleryItemClick Event](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#galleryitemclickedevent)
 
 
 #### ToolTips 
@@ -571,10 +571,10 @@ Me.toolStripGallery1.ToolTipText = "New ToolStrip text"
 _Figure 1212: Gallery Showing the ToolTip_
 
 ##### See Also
-[Appearance Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings16.htm)
-[Item Customization](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/itemcustomization.htm)
-[ToolTips](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/tooltips4.htm)
-[GalleryItemClick Event](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/galleryitemclickedevent.htm)
+[Appearance Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#appearancesettings)
+[Item Customization](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#itemcustomization)
+[ToolTips](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#tooltips)
+[GalleryItemClick Event](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#galleryitemclickedevent)
 
 #### GalleryItemClicked Event
 
@@ -615,10 +615,10 @@ End Sub
 
 ##### See Also
 
-[Appearance Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings16.htm)
-[Item Customization](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/itemcustomization.htm)
-[ToolTips](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/tooltips4.htm)
-[Caption Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/captionsettings2.htm)
+[Appearance Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#appearancesettings)
+[Item Customization](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#itemcustomization)
+[ToolTips](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#tooltips)
+[Caption Settings](/windowsforms/tools/officecontrols/designer_support/scrollersframe#captionsettings)
 
 ##### Show ToolTips for individual Gallery Items 
 RibbonControlAdv now supports showing ToolTips for individual Gallery Item when moving the mouse over them. Earlier ToolTips were not supported for individual gallery items. Now you can specify the ToolTipText for individual Gallery Items on the ToolTipText property of the respective toolStripGallery Item.
@@ -1703,11 +1703,11 @@ Me.toolStripEx1.GripMargin = new System.Windows.Forms.Padding(5)
 _Figure 1227: ToolStripEx with GripStyle Enabled_
 
 #### See Also
-[Appearance Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings17.htm)
-[DesignTime Features](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/designtimefeatures7.htm)
-[Caption Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/captionsettings3.htm)
-[Grouping Items](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/groupingitems.htm)
-[Collapsed State Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/groupingitems.htm)
+[Appearance Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#appearancesettings)
+[DesignTime Features](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#designtimefeatures)
+[Caption Settings](/windowsforms/tools/officecontrols/designer_support/scrollersframe#captionsettings)
+[Grouping Items](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#groupingitems)
+[Collapsed State Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#collapsedstatesettings)
 
 #### Appearance Settings 
 Office12Mode
@@ -1797,9 +1797,9 @@ Me.toolStripEx1.AutoSize = True
 {% endhighlight %}
 
 #### See Also
-[Style Settings] (http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/stylesettings4.htm)
-[Caption Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/captionsettings3.htm)
-[Collapsed State Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/collapsedstatesettings.htm)
+[Style Settings] (/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#stylesettings)
+[Caption Settings](/windowsforms/tools/officecontrols/designer_support/scrollersframe#captionsettings)
+[Collapsed State Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#collapsedstatesettings)
 
 ![](Designer_images/designer_img35.png)
 
@@ -1847,7 +1847,7 @@ Me.toolStripEx2.ShowItemToolTips = True
 >  Note: ToolTip text for the ToolStrip items can be specified using the respective <Control>.TooltipText properties. Ex, toolStripGallery1.ToolTipText property sets the tooltip for gallery item. 
 
 #### See Also
-[ToolStripItems](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/toolstripitems1.htm)
+[ToolStripItems](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#toolstripitems)
 
 
 
@@ -1968,8 +1968,8 @@ _Figure 1235: CaptionFont = "Verdana 8"; TextStyle = "Shadow"; Alignment = "Cent
 
 
 #### See Also
-[Style Settings] (http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/stylesettings4.htm)
-[Appearance Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings17.htm)
+[Style Settings] (/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#stylesettings)
+[Appearance Settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#appearancesettings)
 
 ### Grouping Items
 ToolStripItems can be grouped inside a ToolStripEx using the GroupedButtons property.
@@ -2051,4 +2051,4 @@ End Sub
 _Figure 1239: Font Dialog box is displayed when the Launcher of FontToolStripEx is Clicked_
 
 #### See Also
-[ItemClicked Event](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/itemclickedevent.htm)
+[ItemClicked Event](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#itemclickedevent)

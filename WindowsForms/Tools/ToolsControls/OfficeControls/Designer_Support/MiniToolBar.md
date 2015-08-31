@@ -67,7 +67,7 @@ To add a MiniToolBar to the form, follow the below given steps.
 
   
 ### See Also
-Creating MiniToolBar [Through Code](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/throughcode36.htm)
+Creating MiniToolBar [Through Code](/windowsforms/tools/officecontrols/designer_support/minitoolbar#throughcode)
 
 ### Through Code
 This section guides you with the steps to add a MiniToolbar and associating with a RichTextBox control programmatically.

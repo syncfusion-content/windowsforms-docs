@@ -36,7 +36,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select Windows Forms Application template, name the project and click OK. 
 
-![http://help.syncfusion.com/ug_93/Reporting/XlsIO/ASP.NET/ImagesExt/image9_16.png](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -57,13 +57,8 @@ A windows application is created.
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-![http://help.syncfusion.com/ug_93/Reporting/XlsIO/ASP.NET/ImagesExt/image9_18.png](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-
-
-A new WPF application is created.
+   ![](Getting-Started_images/Getting-Started_img3.png)
+   A new WPF application is created.
 
 2. Open the main form of the application in the designer. 
 3. Add the Syncfusion.Core and Syncfusion.DICOM.Base reference to the project.

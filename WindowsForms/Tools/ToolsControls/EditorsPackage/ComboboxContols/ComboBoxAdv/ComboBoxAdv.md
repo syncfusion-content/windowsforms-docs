@@ -9,7 +9,7 @@ documentation: ug
 
 # ComboBoxAdv
 
-ComboBoxAdv is an advanced combo box control that provides a similar object model as the framework of the ComboBox control, with a lot of additional features. ComboBoxAdv is inherited from ComboBoxBaseDataBound, derived from [ComboBoxBase](http://help.syncfusion.com/ug/windows%20forms/documents/howtochangethebackco6.htm) control.
+ComboBoxAdv is an advanced combo box control that provides a similar object model as the framework of the ComboBox control, with a lot of additional features. ComboBoxAdv is inherited from ComboBoxBaseDataBound, derived from [ComboBoxBase](/windowsforms/tools/editorspackage/comboboxcontols/comboboxbase) control.
 
 Based on the ComboBoxBase control, the ComboBoxAdv pre-binds a list box in its drop-down area and includes some additional API to provide a framework combo box-like object model and data binding support. Written from scratch, this control exposes the text box and the list box controls used internally to let you customize the different parts of the control.
 

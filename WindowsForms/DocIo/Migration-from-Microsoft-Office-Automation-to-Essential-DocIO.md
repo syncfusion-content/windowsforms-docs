@@ -105,7 +105,7 @@ doc.Save("MailMerge.doc", FormatType.Doc)
 
 _Note: For more information on mail merge using DocIO, you can refer to online documentation link:_
 
-<http://docs.syncfusion.com/windowsforms>
+<http://docs.syncfusion.com/windowsforms/docio/mail-merge#mail-merge-1>
 
 
 #### Find and Replace
@@ -173,17 +173,35 @@ Using DocIO
 
 The following code example shows you how to perform a simple “Find and Replace” operation using DocIO.
 
+{% highlight c# %}
 
-[C#]//Opens the Word document.WordDocument doc = new WordDocument("FindAndReplaceTemplate.doc",FormatType.Doc);//Defines replacement text.string replaceText = "World";//Performs replace.doc.Replace(new Regex("Hello"), replaceText);//Saves the document.doc.Save("Find And Replace.doc");//Closes the document.doc.Close();</td></tr>
-<tr>
-<td>
-[VB.NET]‘Opens the Word document.Dim doc As WordDocument = New WordDocument("FindAndReplaceTemplate.doc")‘Defines text to be replaced.Dim replaceText As String = "World"‘Performs replace.doc.Replace(New Regex("Hello"), replaceText)‘Saves the document.doc.Save("Find And Replace.doc")‘Closes the document.doc.Close()</td></tr>
-</table>
-> {{ '![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img2.png)' | markdownify }}
-{:.image }
-_Note: For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:_
+//Opens the Word document.
+WordDocument doc = new WordDocument("FindAndReplaceTemplate.doc",FormatType.Doc);
+//Defines replacement text.string replaceText = "World";
+//Performs replace.doc.Replace(new Regex("Hello"), replaceText);
+//Saves the document.doc.Save("Find And Replace.doc");
+//Closes the document.doc.Close();
 
-<http://docs.syncfusion.com/windowsforms>
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+‘Opens the Word document.
+Dim doc As WordDocument = New WordDocument("FindAndReplaceTemplate.doc")
+‘Defines text to be replaced.
+Dim replaceText As String = "World"
+‘Performs replace.doc.Replace(New Regex("Hello"), replaceText)
+‘Saves the document.doc.Save("Find And Replace.doc")
+‘Closes the document.doc.Close()
+
+{% endhighlight %}
+
+
+> {{ '![](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img2.png)' | markdownify }}
+
+> Note: For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:_
+
+<http://docs.syncfusion.com/windowsforms/docio/find-and-replace>
 
 #### Bookmarks
 
@@ -291,7 +309,7 @@ doc.Close()
 
 _Note: For more information on working with bookmarks using DocIO, you can refer to the online documentation link:_
 
-<http://docs.syncfusion.com/windowsforms>
+<http://docs.syncfusion.com/windowsforms/docio/working-with-bookmarks>
 
 #### Page Numbers
 
@@ -507,7 +525,7 @@ Color = Color.BlackTextWatermark.Text = "Watermark"
 
 _Note: For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:_
 
-<http://docs.syncfusion.com/windowsforms>
+<http://docs.syncfusion.com/windowsforms/docio/working-with-word-documents#working-with-watermarks>
 
 #### Header or Footer
 
@@ -615,7 +633,7 @@ For Each sec As WSection In doc.Sections    
 
 _Note: For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:_
 
-<http://docs.syncfusion.com/windowsforms>
+<http://docs.syncfusion.com/windowsforms/docio/working-with-sections#working-with-headers-and-footers>
 
 #### Character Formatting
 
@@ -768,7 +786,7 @@ table.ResetCells(3, 2)
 
 _Note: For more information on creating tables using DocIO, refer to online documentation link:_
 
-<http://docs.syncfusion.com/windowsforms>
+<http://docs.syncfusion.com/windowsforms/docio/working-with-tables>
 
 #### Comments
 
@@ -920,7 +938,7 @@ Dim Comments As CommentsCollection = doc.Comments
 
 _Note: For more information on working with the comments using DocIO, you can refer to the online documentation link:_
 
-<http://docs.syncfusion.com/windowsforms>
+<http://docs.syncfusion.com/windowsforms/docio/working-with-paragraphs#comments>
 
 #### Document Protection
 
@@ -1089,7 +1107,7 @@ Dim TOC As TableOfContent = para.AppendTOC(1, 3)sec.Paragraphs.Insert(0, para
 {%endhighlight%}
 Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO:
 
-<http://docs.syncfusion.com/windowsforms>
+<http://docs.syncfusion.com/windowsforms/docio/working-with-table-of-contents>
 
 
 

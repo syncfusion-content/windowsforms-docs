@@ -27,7 +27,7 @@ Specifies whether the text should be drawn active even when the control is disab
 
 The following figure illustrates this.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Active.png](Overview_images/Overview_img509.png) 
+![](Overview_images/Overview_img509.png) 
 
 
 

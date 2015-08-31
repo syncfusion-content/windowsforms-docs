@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance Settings
 
-[Background Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/BackgroundSettings31.html)
+[Background Settings](/windowsforms/tools/editorspackage/editorscontrols/numericupdownext/border-settings)
 
 The background settings of the TextBoxExt control are discussed below.
 
@@ -47,11 +47,11 @@ Me.textBoxExt1.BackColor = System.Drawing.Color.Moccasin
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features9.png](Appearance-Settings_images/Appearance-Settings_img1.png)
+![](Appearance-Settings_images/Appearance-Settings_img1.png)
 
 
 
-[Foreground Settings](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/ForegroundSettings21.html)
+[Foreground Settings](/windowsforms/tools/editorspackage/editorscontrols/numericupdownext/foreground-settings)
 
 The foreground settings of the TextBoxExt control are discussed below.
 
@@ -85,7 +85,7 @@ Me.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features10.png](Appearance-Settings_images/Appearance-Settings_img2.png)
+![](Appearance-Settings_images/Appearance-Settings_img2.png)
 
 
 

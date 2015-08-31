@@ -11,7 +11,7 @@ documentation: ug
 
 The text field of a CurrencyTextBox control can be customized using the properties available. The below image illustrates the various sections of the control.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField.png](Overview_images/Overview_img490.png) 
+![](Overview_images/Overview_img490.png) 
 
 ## Text
 
@@ -33,7 +33,7 @@ Me.currencyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_TextField1.png](Overview_images/Overview_img491.png) 
+![](Overview_images/Overview_img491.png) 
 
 
 
@@ -87,7 +87,7 @@ Me.currencyTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Multiline.png](Overview_images/Overview_img492.png) 
+![](Overview_images/Overview_img492.png) 
 
 
 
@@ -95,7 +95,7 @@ Me.currencyTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTExtBox_Scroll.png](Overview_images/Overview_img494.png) 
+![](Overview_images/Overview_img494.png) 
 
 
 
@@ -119,7 +119,7 @@ Me.currencyTextBox1.PasswordChar = '*'
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_Password.png](Overview_images/Overview_img495.png)
+![](Overview_images/Overview_img495.png)
 
 
 
@@ -149,7 +149,7 @@ Me.currencyTextBox1.Text = ""
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_BannerText.png](Overview_images/Overview_img496.png)
+![](Overview_images/Overview_img496.png)
 
 
 
@@ -271,11 +271,11 @@ Me.currencyTextBox1.RemoveDecimalZeros = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Overview_images/Overview_img498.png) 
+![](Overview_images/Overview_img498.png) 
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_RemoveLastDecimal.png](Overview_images/Overview_img499.png) 
+![](Overview_images/Overview_img499.png) 
 
 
 
@@ -387,7 +387,7 @@ Me.currencyTextBox1.AllowNull = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyTextBox_NullString.png](Overview_images/Overview_img500.png) 
+![](Overview_images/Overview_img500.png) 
 
 
 

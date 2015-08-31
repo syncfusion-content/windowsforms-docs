@@ -78,10 +78,10 @@ Me.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_DomainUp_border.png](DomainUpdownExt_images/Overview_img431.png) 
+![](DomainUpdownExt_images/Overview_img431.png) 
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Create2.png](DomainUpdownExt_images/Overview_img432.png) 
+![](DomainUpdownExt_images/Overview_img432.png) 
 
 

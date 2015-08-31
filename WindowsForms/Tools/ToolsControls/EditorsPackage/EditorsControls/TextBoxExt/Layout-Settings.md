@@ -51,7 +51,7 @@ Me.textBoxExt1.MinimumSize = New System.Drawing.Size(150, 20)
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features3.png](Layout-Settings_images/Layout-Settings_img1.png)
+![](Layout-Settings_images/Layout-Settings_img1.png)
 
 
 

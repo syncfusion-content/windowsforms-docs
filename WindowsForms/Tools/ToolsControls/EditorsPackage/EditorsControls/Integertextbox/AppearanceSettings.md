@@ -62,10 +62,10 @@ Me.integerTextBox1.ReadOnly = True
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features4.png](Overview_images/Overview_img453.png)
+![](Overview_images/Overview_img453.png)
 
 
- ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features5.png](Overview_images/Overview_img454.png) 
+ ![](Overview_images/Overview_img454.png) 
 
 
 
@@ -143,7 +143,7 @@ Me.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features10.png](Overview_images/Overview_img456.png) 
+![](Overview_images/Overview_img456.png) 
 
 
 The methods associated with the above properties are given below.

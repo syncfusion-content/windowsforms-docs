@@ -54,7 +54,7 @@ Me.domainUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownOffice.png](DomainUpdownExt_images/Overview_img427.png)
+![](DomainUpdownExt_images/Overview_img427.png)
 
 
 
@@ -79,11 +79,11 @@ Me.domainUpDownExt1.ThemesEnabled =True
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownDefault.png](DomainUpdownExt_images/Overview_img428.png) 
+![](DomainUpdownExt_images/Overview_img428.png) 
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownVista.png](DomainUpdownExt_images/Overview_img429.png)
+![](DomainUpdownExt_images/Overview_img429.png)
 
 
 
@@ -111,6 +111,6 @@ Office2007Colors.ApplyManagedColors(Me,Color.Orange)
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDown_CustomColors.png](DomainUpdownExt_images/Overview_img430.png)
+![](DomainUpdownExt_images/Overview_img430.png)
 
 

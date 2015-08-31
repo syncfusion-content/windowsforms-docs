@@ -70,7 +70,7 @@ Me.integerTextBox1.UseUserOverride = True
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_PercentTB_Features5.png](Overview_images/Overview_img445.png) 
+![](Overview_images/Overview_img445.png) 
 
 
  _Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings._

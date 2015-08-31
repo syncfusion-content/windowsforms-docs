@@ -144,7 +144,7 @@ Try the following steps to resolve this issue:
 
 Check once again if the project refers to the Syncfusion assemblies of version [Target version]. Refer to the following help link if needed.
 
-Link: [http://help.syncfusion.com/ug/common/documents/assemblymanager.htm](http://help.syncfusion.com/ug/common/documents/assemblymanager.htm)
+Link: <http://docs.syncfusion.com/common/essential-studio/utilities#assembly-manager>
 
 ## VB samples are missing in Essential Studio v 11.2.0.25
 

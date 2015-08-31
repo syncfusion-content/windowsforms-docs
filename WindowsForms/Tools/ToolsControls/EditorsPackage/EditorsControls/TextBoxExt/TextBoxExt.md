@@ -11,7 +11,7 @@ documentation: ug
 
 TextBoxExt is a textbox derived control that can display different border colors and styles.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Intro.png](TextBoxExt_images/TextBoxExt_img1.png)
+![](TextBoxExt_images/TextBoxExt_img1.png)
 
 
 

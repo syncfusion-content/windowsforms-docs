@@ -84,7 +84,7 @@ Me.currencyEdit1.TextBox.DecimalValue = New Decimal(New Integer() {40000, 0, 
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrencyEdit_Text.png](Overview_images/Overview_img417.png) 
+![](Overview_images/Overview_img417.png) 
 
 
 

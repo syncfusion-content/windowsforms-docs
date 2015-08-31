@@ -9,7 +9,7 @@ documentation: ug
 # Concepts and Features
 
 The following Editors controls (DoubleTextBox, IntegerTextBox, PercentTextBox, and CurrencyTextBox) has been revamped, 
-[click here](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/revampingofeditorscontrols.htm) to see the 
+[click here](/windowsforms/tools/editorspackage/editorspackage/editorscontrols/revampingofeditorscontrols) to see the 
 details of revamping.
 
 

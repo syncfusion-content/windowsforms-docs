@@ -51,7 +51,7 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features11.png](Display-Settings_images/Display-Settings_img1.png)
+![](Display-Settings_images/Display-Settings_img1.png)
 
 
 

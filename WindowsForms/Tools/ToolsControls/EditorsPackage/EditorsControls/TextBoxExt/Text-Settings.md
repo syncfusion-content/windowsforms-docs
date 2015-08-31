@@ -87,19 +87,19 @@ Me.textBoxExt1.DrawActiveWhenDisabled = True
 {% endhighlight %}
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features4.png](Text-Settings_images/Text-Settings_img1.png)
+![](Text-Settings_images/Text-Settings_img1.png)
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features12.png](Text-Settings_images/Text-Settings_img2.png)
+![](Text-Settings_images/Text-Settings_img2.png)
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features11.png](Text-Settings_images/Text-Settings_img3.png)
+![](Text-Settings_images/Text-Settings_img3.png)
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TextBoxExt_styles1.png](Text-Settings_images/Text-Settings_img4.png)
+![](Text-Settings_images/Text-Settings_img4.png)
 
 
 
@@ -204,15 +204,15 @@ Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features6.png](Text-Settings_images/Text-Settings_img5.png)
+![](Text-Settings_images/Text-Settings_img5.png)
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features7.png](Text-Settings_images/Text-Settings_img6.png)
+![](Text-Settings_images/Text-Settings_img6.png)
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features8.png](Text-Settings_images/Text-Settings_img7.png)
+![](Text-Settings_images/Text-Settings_img7.png)
 
 
 
@@ -268,7 +268,7 @@ Me.textBoxExt1.OverflowIndicatorToolTipText = "Overflow"
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_TBExt_Features2.png](Text-Settings_images/Text-Settings_img9.png)
+![](Text-Settings_images/Text-Settings_img9.png)
 
 
 

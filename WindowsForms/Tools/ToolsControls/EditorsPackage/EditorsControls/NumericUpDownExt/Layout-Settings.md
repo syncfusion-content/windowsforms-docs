@@ -51,7 +51,7 @@ Me.numericUpDownExt1.MinimumSize = New System.Drawing.Size(60, 50)
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features10.png](Layout-Settings_images/Layout-Settings_img1.png)
+![](Layout-Settings_images/Layout-Settings_img1.png)
 
 
 

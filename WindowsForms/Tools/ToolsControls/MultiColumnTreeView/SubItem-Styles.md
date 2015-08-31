@@ -70,7 +70,7 @@ User can add and define a SubItem style using the BaseStyles Collection Editor a
 Figure 913: SubItem Style added to the Styles Editor
 
 > _See Also 
-> [Adding Multiple Columns and SubItems](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/addingmultiplecolumnsandsubitems.htm)
+> [Adding Multiple Columns and SubItems](/windowsforms/tools/multicolumntreeview/subitems#multicolumntreeviewappearance)
 
 
 

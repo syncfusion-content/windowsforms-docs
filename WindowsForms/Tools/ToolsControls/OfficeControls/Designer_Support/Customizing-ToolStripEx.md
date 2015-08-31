@@ -61,8 +61,8 @@ Office12.
 </td></tr>
 </table>
 
-> Note: These caption and style settings can be overridden by the individual ToolStripEx's [caption](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/captionsettings2.htm) and [style settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings16.htm).
+> Note: These caption and style settings can be overridden by the individual ToolStripEx's [caption](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#captionsettings) and [style settings](/windowsforms/tools/officecontrols/designer_support/keyboard-shortcut#appearancesettings).
 
 ## See Also
 
-[ToolStripEx](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/toolstripex.htm)
+[ToolStripEx](='/windowsforms/tools/officecontrols/frequently-asked-questions/toolstripex)

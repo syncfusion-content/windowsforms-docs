@@ -12,7 +12,7 @@ documentation: ug
 
 CurrencyTextBox provides full support for the windows forms designer. Just drag and drop CurrencyTextBox from the toolbox, onto the form.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTB_Icon.png](Overview_images/Overview_img489.png) 
+![](Overview_images/Overview_img489.png) 
 
 
 

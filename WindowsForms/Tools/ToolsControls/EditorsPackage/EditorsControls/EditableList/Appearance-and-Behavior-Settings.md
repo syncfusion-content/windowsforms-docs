@@ -106,7 +106,7 @@ Gets the dock padding for all edges of the control.</td></tr>
 
 The following image displays the EditableList control with the dock padding for all the edges set to 5.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_Dock.png](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img1.png)
+![](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img1.png)
 
 
 
@@ -142,7 +142,7 @@ Specifies whether to show button to the right while editing.</td></tr>
 </table>
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_EditableList_wantbutton.png](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img2.png)
+![](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img2.png)
 
 
 

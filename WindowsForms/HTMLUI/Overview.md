@@ -171,13 +171,13 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }}  (Navigate to the HTMLUI for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+Online{{ '<http://docs.syncfusion.com/windowsforms/htmlui/overview>' | markdownify }}  (Navigate to the HTMLUI for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }} Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)  (Navigate to the Windows Forms User Guide. Select {{ '_HTMLUI_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://docs.syncfusion.com/windowsforms/overview> (Navigate to the Windows Forms User Guide. Select {{ '_HTMLUI_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

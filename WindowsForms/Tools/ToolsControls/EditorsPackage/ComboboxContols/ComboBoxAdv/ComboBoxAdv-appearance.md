@@ -69,7 +69,7 @@ Me.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_360.jpg](Overview_images/Overview_img307.jpeg) 
+![](Overview_images/Overview_img307.jpeg) 
 
 
 
@@ -247,7 +247,7 @@ Me.comboBoxAdv1.IgnoreThemeBackground = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_362.jpg](Overview_images/Overview_img311.jpeg) 
+![](Overview_images/Overview_img311.jpeg) 
 
 
 
@@ -316,7 +316,7 @@ Me.comboBoxAdv1.ShowImageInTextBox = True
 
 {% endhighlight %}
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image17_363.jpg](Overview_images/Overview_img312.jpeg) | markdownify }
+{ ![](Overview_images/Overview_img312.jpeg) | markdownify }
 
 
 

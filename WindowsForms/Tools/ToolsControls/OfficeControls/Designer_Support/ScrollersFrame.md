@@ -86,7 +86,7 @@ The below images illustrates the controls that are added, before and after the s
 
 ### See Also
 
-[Visual Styles](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/visualstyles10.htm)
+[Visual Styles](/windowsforms/tools/officecontrols/designer_support/scrollersframe#visual-styles)
 
 ## Scroll Settings in ScrollersFrame
 
@@ -220,4 +220,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightSkyBlue)
 
 ### See Also
 
-[Adding Controls to the ScrollBar](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/addingcontrolstothescrollbar.htm)
+[Adding Controls to the ScrollBar](/windowsforms/tools/officecontrols/designer_support/scrollersframe#addingcontrolstothescrollbar)

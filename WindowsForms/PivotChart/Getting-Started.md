@@ -22,7 +22,7 @@ To create the PivotChart through Visual Studio
 1. Create a new Windows Forms Application Project in VS IDE through New ProjectWizard.
 2. On the File menu, click New Project. The New Project dialog box appears as follows.
 
-   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image51_8.png](Getting-Started_images/Getting-Started_img1.png)
+   ![](Getting-Started_images/Getting-Started_img1.png)
    
 3. Select Windows Forms Application, and then click OK.
 4. Drag the PivotChart control from the Toolbox to the Design page.

@@ -45,7 +45,7 @@ Me.numericUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features12.png](Alignment-Settings_images/Alignment-Settings_img1.png)
+![](Alignment-Settings_images/Alignment-Settings_img1.png)
 
 
 

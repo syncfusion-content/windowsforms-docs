@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Tools provides the CurrencyTextBox control for currency specific behavior in edit controls. CurrencyTextBox is derived from System.Windows.Forms.TextBox and implements all the functionality needed for formatting currency input and validation.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Decimal.png](Overview_images/Overview_img488.png) 
+![](Overview_images/Overview_img488.png) 
 
 
 

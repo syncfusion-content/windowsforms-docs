@@ -10,7 +10,7 @@ documentation: ug
 
 This section will discuss the properties which controls the alignment and orientation of the spin button in a DomainUpDownExt control.
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Spin.png](DomainUpdownExt_images/Overview_img424.png) 
+![](DomainUpdownExt_images/Overview_img424.png) 
 
 
 
@@ -47,7 +47,7 @@ Me.domainUpDownExt1.SpinOrientation = Orientation.Vertical
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownSpin.png](DomainUpdownExt_images/Overview_img425.png) 
+![](DomainUpdownExt_images/Overview_img425.png) 
 
 
 
@@ -71,5 +71,5 @@ Me.domainUpDownExt1.UpDownAlign =LeftRightAlignment.Left
 {% endhighlight %}
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Align.png](DomainUpdownExt_images/Overview_img426.png)
+![](DomainUpdownExt_images/Overview_img426.png)
 

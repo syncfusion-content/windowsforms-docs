@@ -71,7 +71,7 @@ Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Overflow.png](Overview_images/Overview_img505.png) 
+![](Overview_images/Overview_img505.png) 
 
 
 
@@ -101,7 +101,7 @@ It sets the mode for the cultures. The options includes:{{ '_None,_' | markdowni
 </table>
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Culture.png](Overview_images/Overview_img506.png) 
+![](Overview_images/Overview_img506.png) 
 
 
 
@@ -225,6 +225,6 @@ Me.label14.Text = Me.currencyTextBox1.Culture.ThreeLetterWindowsLanguageName
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Globalization.png](Overview_images/Overview_img507.png) 
+![](Overview_images/Overview_img507.png) 
 
 

@@ -154,9 +154,9 @@ The options are,
 
 ### See Also
 
-[Creating a StatusStripEx](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/creatingastatusstripex.htm)
+[Creating a StatusStripEx](/windowsforms/tools/officecontrols/designer_support/statusstripex#creating-a-statusstripex)
 
-[ColorSchemes for StatusStripEx](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/colorschemesforstatusstripex.htm)
+[ColorSchemes for StatusStripEx](/windowsforms/tools/officecontrols/designer_support/statusstripex#colorschemes-for-statusstripex)
 
 ## SizingGrip Settings
 
@@ -265,11 +265,11 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 ### See Also
 
-[Creating a StatusStripEx](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/creatingastatusstripex.htm)
+[Creating a StatusStripEx](/windowsforms/tools/officecontrols/designer_support/statusstripex#creating-a-statusstripex)
 
-[Smart Tag Options](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/smarttagoptions.htm)
+[Smart Tag Options](/windowsforms/tools/officecontrols/designer_support/statusstripex#smart-tag-options)
 
-[SizingGrip Settings](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/sizinggripsettings.htm)
+[SizingGrip Settings](/windowsforms/tools/officecontrols/designer_support/statusstripex#sizinggrip-settings)
 
 ## Custom Context Menu
 

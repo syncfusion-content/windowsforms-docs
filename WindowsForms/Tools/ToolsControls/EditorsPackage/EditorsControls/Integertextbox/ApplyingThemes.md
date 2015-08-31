@@ -46,7 +46,7 @@ Me.integerTextBox1.ThemesEnabled = true
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features14.png](Overview_images/Overview_img460.png) 
+![](Overview_images/Overview_img460.png) 
 
 
 A sample which demonstrates the ThemesEnabled property of the IntegerTextBox control is available in the below sample installation path.

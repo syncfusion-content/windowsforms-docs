@@ -67,7 +67,7 @@ Me.integerTextBox1.NegativeSign = "-"
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_GroupSize1.png](Overview_images/Overview_img442.png) 
+![](Overview_images/Overview_img442.png) 
 
 
 
@@ -123,7 +123,7 @@ Me.integerTextBox1.BindableValue = 777
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features2.png](Overview_images/Overview_img443.png) 
+![](Overview_images/Overview_img443.png) 
 
 
 ### Null Value Settings
@@ -180,7 +180,7 @@ Me.integerTextBox1. AllowNull = True
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features1.png](Overview_images/Overview_img444.png) 
+![](Overview_images/Overview_img444.png) 
 
 
 ### Min and Max Value Settings

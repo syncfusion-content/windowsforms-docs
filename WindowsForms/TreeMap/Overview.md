@@ -158,11 +158,11 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/)' | markdownify }} (Navigate to the TreeMap for Windows Forms User Guide.)> ![](Overview_images/Overview_img4.jpeg)
+Online{{ '<http://docs.syncfusion.com/windowsforms/treemap>' | markdownify }} (Navigate to the TreeMap for Windows Forms User Guide.)> ![](Overview_images/Overview_img4.jpeg)
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_TreeMap_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://docs.syncfusion.com/windowsforms>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_TreeMap_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

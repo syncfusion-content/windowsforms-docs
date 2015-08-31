@@ -70,10 +70,10 @@ Me.integerTextBox1.ClipText = "12"
 {%endhighlight%}
 
 
- ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features15.png](Overview_images/Overview_img447.png) 
+ ![](Overview_images/Overview_img447.png) 
 
 
- ![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features7.png](Overview_images/Overview_img448.png) 
+ ![](Overview_images/Overview_img448.png) 
 
 
 The methods associated with the above properties are given below.
@@ -218,7 +218,7 @@ Me.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features9.png](Overview_images/Overview_img450.png) 
+![](Overview_images/Overview_img450.png) 
 
 
  _Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
@@ -269,7 +269,7 @@ Me.integerTextBox1.ShowOverflowIndicatorToolTip = True
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features13.png](Overview_images/Overview_img452.png)
+![](Overview_images/Overview_img452.png)
 
 A Sample which demonstrates the Text, Text Align and Overflow Indicator features of the IntegerTextBox control is available in the below sample installation path.
 

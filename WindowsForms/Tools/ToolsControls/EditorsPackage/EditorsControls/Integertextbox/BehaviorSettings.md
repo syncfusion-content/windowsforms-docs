@@ -92,4 +92,4 @@ Me.integerTextBox1.AllowLeadingZeros = True
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_IntegerTB_Features11.png](Overview_images/Overview_img457.png) 
+![](Overview_images/Overview_img457.png) 

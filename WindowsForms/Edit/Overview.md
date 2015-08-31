@@ -201,13 +201,13 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Onlinehttp://help.syncfusion.com/ Navigate to the Edit for Windows Forms User Guide.
+Online {{ '<http://docs.syncfusion.com/windowsforms/edit/overview>'| markdownify }}  Navigate to the Edit for Windows Forms User Guide.
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify}}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '[http://help.syncfusion.com/cr/windows%20forms/](http://help.syncfusion.com/cr/windows%20forms/)' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Edit_' | markdownify}} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://docs.syncfusion.com/windowsforms/overview>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Edit_' | markdownify}} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

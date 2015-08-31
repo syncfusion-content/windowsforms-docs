@@ -265,7 +265,7 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-> Note:You can also set multiple columns. Refer_[Multiple Columns](http://help.syncfusion.com/ug/windows%20forms/Documents/multiplecolumns.htm)_to know more.
+> Note:You can also set multiple columns. Refer_[Multiple Columns](http://docs.syncfusion.com/windowsforms/tools/editorspackage/autocompletecontrols/multiple-columns)_to know more.
 
 ### Close Button and Gripper Settings
 

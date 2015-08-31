@@ -15,7 +15,7 @@ Features
 
 ### Display Settings
 
-The [display](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm) settings involve setting the separator to be used to group the numbers and the group size.
+The [display](http://docs.syncfusion.com/windowsforms/tools) settings involve setting the separator to be used to group the numbers and the group size.
 
 It also involves setting the pattern and symbol to be used when the number is negative.
 
@@ -27,7 +27,7 @@ The maximum and minimum value of the control can also be set.
 
 * Culture Settings
 
-The [culture](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm) to be used for formatting the numeric display can be set using the Culture property.
+The [culture](http://docs.syncfusion.com/windowsforms/tools) to be used for formatting the numeric display can be set using the Culture property.
 
 * Text Settings
 

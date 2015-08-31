@@ -312,7 +312,7 @@ To populate the ComboBoxAdv containing the predefined percent values with othe
   ~~~
   {:.pretty-print }
 
-![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image14_364.jpg](Overview_images/Overview_img313.jpeg) 
+![](Overview_images/Overview_img313.jpeg) 
 
 
 

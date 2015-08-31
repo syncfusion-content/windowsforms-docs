@@ -27,7 +27,7 @@ This event is triggered when the drag-and-drop operation is completed.
 
 This event is triggered when a object is dragged into control's bounds.
 
-[Handling Drag drop events](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/HandlingDragDropEvents.html)
+[Handling Drag drop events](//docs.syncfusion.com/windowsforms/tools)
 
 DragDrop and DragEnter events can be handled to drag and drop the external objects into the EditableList control.
 

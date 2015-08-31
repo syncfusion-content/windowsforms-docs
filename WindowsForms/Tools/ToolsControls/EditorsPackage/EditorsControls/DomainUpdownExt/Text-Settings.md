@@ -60,5 +60,5 @@ Me.domainUpDownExt2.MaxLength = 32768
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/DomainUpDownExt_Text.png](DomainUpdownExt_images/Overview_img423.png) 
+![](DomainUpdownExt_images/Overview_img423.png) 
 

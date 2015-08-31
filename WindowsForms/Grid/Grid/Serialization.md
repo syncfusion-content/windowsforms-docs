@@ -123,7 +123,7 @@ gecc.GridToExcel(Me.gridControl1.Model, "C:\MyGC.xls")
 
 The following screenshot shows a grid, which has some data that can be exported.
 
-![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image641_259.jpg](Grid-Control_images/Grid-Control_img162.jpeg)
+![](Grid-Control_images/Grid-Control_img162.jpeg)
 
 
 
@@ -155,7 +155,7 @@ gecc.GridToExcel(Me.gridDataBoundGrid1.Model, "C:\MyGC.xls")
 
 The following screenshot shows the output of the exported excel. 
 
-![http://help.syncfusion.com/ug/windows%20forms/grid/ImagesExt/image641_260.jpg](Grid-Control_images/Grid-Control_img163.jpeg)
+![](Grid-Control_images/Grid-Control_img163.jpeg)
 
 
 

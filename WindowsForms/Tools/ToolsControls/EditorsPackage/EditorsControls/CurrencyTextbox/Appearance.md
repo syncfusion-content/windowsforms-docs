@@ -39,7 +39,7 @@ Me.currencyTextBox1.ThemesEnabled = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrText_themes.png](Overview_images/Overview_img501.png) 
+![](Overview_images/Overview_img501.png) 
 
 
 
@@ -97,7 +97,7 @@ Me.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_CurrencyTextBox_Border.png](Overview_images/Overview_img502.png) 
+![](Overview_images/Overview_img502.png) 
 
 
 
@@ -155,5 +155,5 @@ Me.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/CurrText_Color.png](Overview_images/Overview_img503.png) 
+![](Overview_images/Overview_img503.png) 
 

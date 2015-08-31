@@ -67,7 +67,7 @@ Me.numericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features1.png](Border-Settings_images/Border-Settings_img1.png)
+![](Border-Settings_images/Border-Settings_img1.png)
 
 
 
@@ -109,7 +109,7 @@ Me.numericUpDownExt1.ThemesEnabled = True
 {% endhighlight %}
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features2.png](Border-Settings_images/Border-Settings_img3.png)
+![](Border-Settings_images/Border-Settings_img3.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a MultiColumnTreeView
+title: Creating-a-MultiColumnTreeView
 description: Creating a MultiColumnTreeView
 platform: windowsforms
 control: MultiColumnTreeView
@@ -21,7 +21,7 @@ To create a MultiColumnTreeView control, follow the steps that are given below.
 
 4.You can add columns using Columns Editor by clicking add columns button. 
 
-5.The Subitems can be added through SubItems Collection Editor available in the Nodes Collection Editor. You can add any number of columns using this collection. Refer [Adding Multiple Columns and SubItems](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/addingmultiplecolumnsandsubitems.htm).
+5.The Subitems can be added through SubItems Collection Editor available in the Nodes Collection Editor. You can add any number of columns using this collection. Refer [Adding Multiple Columns and SubItems](http://docs.syncfusion.com/windowsforms/tools/multicolumntreeview/multiple-columns).
 
 6.Appearance and behavior related aspects can be controlled by setting the appropriate properties through the property grid of the MultiColumnTreeView control. 
 

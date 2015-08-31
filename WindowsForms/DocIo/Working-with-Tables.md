@@ -660,18 +660,19 @@ table.ResetCells(6, 6, format, 80)
 
 WTableStyle class represents table style in a Word document. Table style specifies a set of formatting characteristics for a table.
 
-![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_32.png](Working-with-Tables_images/Working-with-Tables_img5.png)
+![](Working-with-Tables_images/Working-with-Tables_img5.png)
 
 
 
 * You can apply Word built-in table styles by using the WTable.ApplyStyle method with Built-inTableStyle enumeration parameter that specifies the built-in table style.
 * You can get information of the related style that is applied to the table by using the GetStyle method of WTable class.
 
-_> Note: Essential DocIO currently provides support for built-in table styles in Word2007, Word2010, and Word2013 formats. The visual formatting is also preserved in Word to PDF, Word to Image, and Word to HTML conversions._
+> Note: Essential DocIO currently provides support for built-in table styles in Word2007, Word2010, and Word2013 formats. The visual formatting is also preserved in Word to PDF, Word to Image, and Word to HTML conversions.
 
 The following code illustrates how to apply and get the table styles in the table.
 
 {% highlight C# %} 
+
 //Creates a new Word document.
 WordDocument document = new WordDocument();
 //Initializes a new word document with one section and one paragraph      
@@ -683,9 +684,11 @@ table.ResetCells(3, 3);
 //Applies "LightShading" style to table
 table.ApplyStyle(BuiltinTableStyle.LightShading);
 //Gets the table styles.IWTableStyle style = table.GetStyle()
+
  {% endhighlight %}
 
 {% highlight vbnet %} 
+
 'Creates a new Word document.
 Dim document As WordDocument = New WordDocument()
 'Initializes a new word document with one section and one paragraph
@@ -697,6 +700,7 @@ document.EnsureMinimal()
 table.ApplyStyle(BuiltinTableStyle.LightShading)
 'Gets the table style. 
 Dim style As IWTableStyle = table.GetStyle()
+
 {% endhighlight %}
 
 
@@ -706,13 +710,14 @@ You can choose the features of the table style that is to be applied in the rows
 
 The following screenshot illustrates how to set the conditional formatting to the table by using the Table Style Options ribbon in Microsoft Word
 
-![sshot-2](Working-with-Tables_images/Working-with-Tables_img7.png)
+![](Working-with-Tables_images/Working-with-Tables_img7.png)
 
 
 
 The following code illustrates how to set the table style options to the table that contains the Built in Table style.
 
-{% highlight C# %}  
+{% highlight C# %} 
+ 
 //Creates a new Word document.
 WordDocument document = new WordDocument();
 //Initializes a new word document with one section and one paragraph       
@@ -732,9 +737,11 @@ table.ApplyStyleForLastColumn = true;
 table.ApplyStyleForLastRow = false;
 //Save document. 
 document.Save("sample.docx”,FormatType.Docx);
+
 {% endhighlight %}
 
 {% highlight vbnet %} 
+
 'Creates a new Word document.
 Dim document As WordDocument = New WordDocument()
 'Initializes a new word document with one section and one paragraph

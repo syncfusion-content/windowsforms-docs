@@ -144,4 +144,4 @@ The following code illustrates how to create a backstage with a BackStageButtom 
 {% endhighlight %}
 
 ### Refer to:
-[Appearance Setting](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/appearancesettings15.htm)
+[Appearance Setting](/windowsforms/tools/officecontrols/designer_support/officebuttonproperties#appearancesettings)

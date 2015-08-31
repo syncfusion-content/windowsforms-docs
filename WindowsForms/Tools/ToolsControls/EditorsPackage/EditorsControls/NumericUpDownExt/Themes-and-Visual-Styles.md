@@ -43,7 +43,7 @@ Me.numericUpDownExt1.ThemesEnabled = True
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features9.png](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img1.png)
+![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img1.png)
 
 
 
@@ -89,11 +89,11 @@ Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features7.png](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img2.png)
+![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img2.png)
 
 
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features6.png](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img3.png)
+![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img3.png)
 
 
 
@@ -125,7 +125,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Images/Editor_NumericUpDownExt_Features8.png](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img4.png)
+![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img4.png)
 
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 CurrencyTextBox fires events when 3D border style is changed, border color is changed, border sides are changed, decimal value property is changed and when Themes enabled property is changed. Also fires event when the input text is invalid.
 
-KeyDown:It occurs when a key is pressed while the control has a focus. The event handler receives an argument of type KeyEventArgs. We can handle this event to add keyboard support to the CurrencyTextBox. Refer [Adding the Key Support for Mega and Kilo](http://help.syncfusion.com/ug/windows%20forms/tools/default.htm)[.](http://help.syncfusion.com/ug_82/WindowsFormsUI_Tools/Behaviour.html)
+KeyDown:It occurs when a key is pressed while the control has a focus. The event handler receives an argument of type KeyEventArgs. We can handle this event to add keyboard support to the CurrencyTextBox. Refer [Adding the Key Support for Mega and Kilo](/windowsforms/tools)[.](/windowsforms/tools)
 
 ValidationError: It occurs when an inappropriate character is encountered. The event handler receives an argument of type ValidationErrorArgs.
 

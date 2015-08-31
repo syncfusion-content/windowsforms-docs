@@ -34,9 +34,9 @@ _Figure 1240: Accessing Customize Quick Access Toolbar Dialog using RibbonContro
 _Figure 1241: Editing Quick Access Toolbar Items_
 
 > Note: You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer.
-> Note: Ribbon provides option to edit the items at run time also. See [RunTime Customization](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/runtimecustomization.htm) for more details.
+> Note: Ribbon provides option to edit the items at run time also. See [RunTime Customization](/windowsforms/tools/officecontrols/designer_support/quick-access-toolbar#runtime-customization) for more details.
 
-A sample code snippet which adds a ToolStripButton named "File" to the QuickAccessToolbar through code. To know about other controls, refer [ToolStripItems](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/toolstripitems.htm) topic.
+A sample code snippet which adds a ToolStripButton named "File" to the QuickAccessToolbar through code. To know about other controls, refer [ToolStripItems](/windowsforms/tools/officecontrols/designer_support/quick-access-toolbar#toolstripitems) topic.
 
 
 {% highlight C# %}
@@ -69,9 +69,9 @@ Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 
 
 ### See Also
-[How to add a component in the QuickAccessMenu programmatically?](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/howtoaddacomponentinthequickaccessmenuprogrammatically.htm)
-[How to show a Customize Quick Access Toolbar programmatically at run time?](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/howtoshowacustomizequickaccesstoolbardialogprogrammaticallyatrun.htm)
-[How to set the description on RibbonControlAdv?](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/howtogetorsetthedescriptiononribboncontroladv.htm)
+[How to add a component in the QuickAccessMenu programmatically?](/windowsforms/tools/officecontrols/frequently-asked-questions/quick-acess-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog)
+[How to show a Customize Quick Access Toolbar programmatically at run time?](/windowsforms/tools/officecontrols/frequently-asked-questions/quick-acess-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo)
+[How to set the description on RibbonControlAdv?](/windowsforms/tools/officecontrols/frequently-asked-questions/quick-acess-toolbar/how-to-get-or-set-the-description-on-ribboncontrol)
 
 ## RunTime Customization
 At run time, when you click the drop-down button of the Quick Access Toolbar, "Customize Quick Access Toolbar" option will be displayed. 
@@ -127,10 +127,10 @@ case ToolsResourceIdentifiers.CustomizationLabel:
 {% endhighlight %}
 	 
 #### See Also
-[Placing QAT](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/placingqat.htm)
-[How to add a component in the QuickAccessMenu programmatically](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/howtoaddacomponentinthequickaccessmenuprogrammatically.htm)
-[How to show a Customize Quick Access Toolbar programmatically at run time](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/howtoshowacustomizequickaccesstoolbardialogprogrammaticallyatrun.htm)
-[How to set the description on RibbonControlAdv](http://help.syncfusion.com/ug/windows%20forms/index.html#!Documents/howtogetorsetthedescriptiononribboncontroladv.htm)
+[Placing QAT](/windowsforms/tools/officecontrols/designer_support/quick-access-toolbar#placing-qat)
+[How to add a component in the QuickAccessMenu programmatically](/windowsforms/tools/officecontrols/frequently-asked-questions/quick-acess-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog)
+[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/tools/officecontrols/frequently-asked-questions/quick-acess-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo)
+[How to set the description on RibbonControlAdv](/windowsforms/tools/officecontrols/frequently-asked-questions/quick-acess-toolbar/how-to-get-or-set-the-description-on-ribboncontrol)
 
 ## Placing QAT
 ### DesignTime

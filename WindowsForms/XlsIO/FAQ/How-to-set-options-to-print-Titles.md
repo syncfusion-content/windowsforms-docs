@@ -118,4 +118,4 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-For information on Print settings, refer to the section [Print Settings](http://help.syncfusion.com/windows%20forms).
+For information on Print settings, refer to the section [Print Settings](http://docs.syncfusion.com/windowsforms).
