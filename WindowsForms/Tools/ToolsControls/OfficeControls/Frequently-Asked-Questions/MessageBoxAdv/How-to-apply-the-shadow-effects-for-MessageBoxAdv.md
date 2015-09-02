@@ -3,32 +3,35 @@ layout: post
 title: How-to-apply-the-shadow-effects-for-MessageBoxAdv
 description: how to apply the shadow effects for messageboxadv?
 platform: windowsforms
-control: Frequently Asked Questions
+control: Tools
 documentation: ug
 ---
 
 # How to apply the shadow effects for MessageBoxAdv?
 
+
+
 In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShadow property. Refer to the following code examples.
+
+
 
 {% highlight c# %}
 
- //To set the shadow effect of the MessageBoxAdv
+     //To set the shadow effect of the MessageBoxAdv
 
- MessageBoxAdv.DropShadow = true;
+     MessageBoxAdv.DropShadow = true;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vbnet %}
 
- 'To set the shadow effect of the MessageBoxAdv
+     'To set the shadow effect of the MessageBoxAdv
 
- MessageBoxAdv.DropShadow = True
+     MessageBoxAdv.DropShadow = True
 
-{% endhighlight  %}
+{% endhighlight %}
 
-
-> _Note: The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect._
+> Note: The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect.
 
 
 

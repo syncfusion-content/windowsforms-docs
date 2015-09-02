@@ -3,7 +3,7 @@ layout: post
 title: How-to-remove-ToolStripTabItems-from-the-RibbonCon
 description: how to remove toolstriptabitems from the ribboncontroladv programmatically?
 platform: windowsforms
-control: Frequently Asked Questions
+control: Tools
 documentation: ug
 ---
 
@@ -13,12 +13,16 @@ Call RibbonControlAdv.Header.MainItem.RemoveAt method for this purpose. The para
 
 {% highlight c# %}
 
+
+
 this.ribbonControlAdv1.Header.MainItems.RemoveAt(1);
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vbnet %}
 
+
 Me.ribbonControlAdv1.Header.MainItems.RemoveAt(1)
 
-{% endhighlight  %}
+{% endhighlight %}
+

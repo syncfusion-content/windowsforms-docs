@@ -3,7 +3,7 @@ layout: post
 title: How-to-prevent-the-RibbonPanel-of-the-RibbonContro
 description: how to prevent the ribbonpanel of the ribboncontroladv from collapsing?
 platform: windowsforms
-control: Frequently Asked Questions
+control: Tools
 documentation: ug
 ---
 
@@ -13,14 +13,17 @@ To prevent the RibbonPanels from collapsing, set the AllowCollapse property to f
 
 {% highlight c# %}
 
+
+
 this.ribbonControlAdv1.AllowCollapse = false;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vbnet %}
 
+
+
 Me.ribbonControlAdv1.AllowCollapse = False
 
-{% endhighlight  %}
 
-
+{% endhighlight %}

@@ -3,7 +3,7 @@ layout: post
 title: What-are-all-the-customization-options-available-i
 description: what are all the customization options available in messageboxadv?
 platform: windowsforms
-control: Frequently Asked Questions
+control: Tools
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 MessageBoxAdv appearance can be customized using the following options.
 
-_Table 809: Property Table_
+_Table_ _809_: _Property Table_
 
 <table>
 <tr>
@@ -51,7 +51,11 @@ Gets or sets the Office2007 theme, which is used to show MessageBoxAdv.</td></tr
 
 The following code example is to demonstrate the same.
 
+
+
 {% highlight c# %}
+
+
 
 //To disable the Aero theme
 
@@ -81,9 +85,11 @@ MessageBoxAdv.MetroColorTable = new MetroStyleColorTable();
 
 MessageBoxAdv.Office2007Theme = Office2007Theme.Blue;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vbnet %}
+
+
 
 'To disable the Aero theme
 MessageBoxAdv.ApplyAeroTheme = false
@@ -100,5 +106,7 @@ MessageBoxAdv.MetroColorTable = New MetroStyleColorTable
 'To set the Office2007 color scheme
 MessageBoxAdv.Office2007Theme = Office2007Theme.Blue
 
-{% endhighlight  %}
+{% endhighlight %}
+
+
 
