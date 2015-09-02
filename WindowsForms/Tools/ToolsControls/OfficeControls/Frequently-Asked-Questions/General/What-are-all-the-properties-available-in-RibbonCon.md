@@ -3,7 +3,7 @@ layout: post
 title: What-are-all-the-properties-available-in-RibbonCon
 description: what are all the properties available in ribboncontroladv touchstyle and its purpose?
 platform: windowsforms
-control: Tools
+control: Frequently Asked Questions
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 TouchStyleColorTable helps to customize appearance of each and every item in RibbonControlAdv. The items of the RibbonControlAdv can be customized by using the property given here.
 
-_Table_ _805_: Property Table
+_Table 805: Property Table_
 
 <table>
 <tr>

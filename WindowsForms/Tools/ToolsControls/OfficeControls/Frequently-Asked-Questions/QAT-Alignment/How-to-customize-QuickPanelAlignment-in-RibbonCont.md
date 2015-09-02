@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How-to-customize-QuickPanelAlignment-in-RibbonCont
-description: how to customize quickpanelalignment in ribboncontroladv touchstyle?
+description: how to customize quickpanelalignment in ribboncontroladv touchstyle
 platform: windowsforms
-control: Tools
+control: Frequently Asked Questions
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 By default, QAT DropDownButton is placed on the left of the ToolStripTabItems. It can be placed on the right side of the ToolStripTabItems by using the property named “QuickPanelAlignment” and it helps to specify the alignment of the QATDropDownButton.
 
-_Table_ _806_: _Property Table:_
+_Table 806: Property Table:_
 
 <table>
 <tr>
@@ -32,10 +32,7 @@ Right</td><td>
 Specifies the Right alignment for QuickDropDown button.</td></tr>
 </table>
 
-
 {% highlight c# %}
-
-
 
 //Specifies the QAT DropDown button at default (left) position.
 
@@ -45,11 +42,9 @@ this.ribbonControlAdv1.QuickPanelAlignment = QuickPanelAlignment.Left;
 
 this.ribbonControlAdv1.QuickPanelAlignment = QuickPanelAlignment.Right;
 
-{% endhighlight %}
+{% endhighlight  %}
 
 {% highlight vbnet %}
-
-
 
 'Specifies the QAT DropDown button at default (left) position.
 
@@ -59,19 +54,12 @@ Me.ribbonControlAdv1.QuickPanelAlignment = QuickPanelAlignment.Left
 
 Me.ribbonControlAdv1.QuickPanelAlignment = QuickPanelAlignment.Right
 
-{% endhighlight %}
+{% endhighlight  %}
 
 > Note: The property named “QuickPanelAlignment” is only applicable when RibbonStyle is set as TouchStyle.
-
 
 
 ![](How-to-customize-QuickPanelAlignment-in-RibbonCont_images/How-to-customize-QuickPanelAlignment-in-RibbonCont_img2.png)
 
 
-
-
-
 ![](How-to-customize-QuickPanelAlignment-in-RibbonCont_images/How-to-customize-QuickPanelAlignment-in-RibbonCont_img3.png)
-
-
-

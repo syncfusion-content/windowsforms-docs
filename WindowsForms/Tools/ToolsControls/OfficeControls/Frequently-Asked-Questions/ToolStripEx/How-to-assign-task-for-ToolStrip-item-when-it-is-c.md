@@ -3,7 +3,7 @@ layout: post
 title: How-to-assign-task-for-ToolStrip-item-when-it-is-c
 description: how to assign task for toolstrip item when it is clicked?
 platform: windowsforms
-control: Tools
+control: Frequently Asked Questions
 documentation: ug
 ---
 
@@ -12,8 +12,6 @@ documentation: ug
 This can be done by handling the ItemClicked event and assigning value for ClickedItem property.
 
 {% highlight c# %}
-
-
 
 private void toolStripEx1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
 
@@ -43,15 +41,11 @@ private void toolStripEx1_ItemClicked(object sender, ToolStripItemClickedEventAr
 
 } 
 
-{% endhighlight %}
+{% endhighlight  %}
 
 {% highlight vbnet %}
 
-
-
 Private Sub toolStripEx1_ItemClicked(ByVal sender As Object, ByVal e As ToolStripItemClickedEventArgs)
-
-
 
     Select Case CType(ConversionHelpers.AsWorkaround(e.ClickedItem.Text, GetType(String)), String)
 
@@ -73,5 +67,5 @@ Private Sub toolStripEx1_ItemClicked(ByVal sender As Object, ByVal e As ToolStri
 
 End Sub
 
+{% endhighlight  %}
 
-{% endhighlight %}

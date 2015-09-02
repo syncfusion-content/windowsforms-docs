@@ -3,17 +3,15 @@ layout: post
 title: How-to-customize-BackStageView-arrow-color-in-Touc
 description: how to customize backstageview arrow color in touchstyle ribboncontroladv?
 platform: windowsforms
-control: Tools
+control: Frequently Asked Questions
 documentation: ug
 ---
 
 # How to customize BackStageView arrow color in TouchStyle RibbonControlAdv?
 
-
-
 In TouchStyle Ribbon, Menu button arrow color can be customized on BackStageView by enabling the “UseTouchStyleArrowColor” property in RibbonControlAdv. It helps to enable the “MenuButtonArrowColor” and “MenuButtonHoverArrowColor” properties in BackStageView.
 
-_Table_ _804_: Property Table:
+_Table 804: Property Table:_
 
 <table>
 <tr>
@@ -35,11 +33,11 @@ Gets or sets the MenuButtonArrow color on hovering</td></tr>
 </table>
 
 
-> Note: The“UseTouchStyleArrowColor” property is only applicable when using RibbonStyle as TouchStyle.
-
+> _Note: The“UseTouchStyleArrowColor” property is only applicable when using RibbonStyle as TouchStyle._
 
 
 {% highlight c# %}
+
 
 TouchStyleColorTable colorTable = new TouchStyleColorTable();
 
@@ -59,7 +57,7 @@ this.ribbonControlAdv1.UseTouchStyleArrowColor = true;
 
 this.ribbonControlAdv1.ApplyTouchStyleColorTable(colorTable);
 
-{% endhighlight %}
+{% endhighlight  %}
 
 {% highlight vbnet %}
 
@@ -81,7 +79,7 @@ Me.ribbonControlAdv1.UseTouchStyleArrowColor = True
 
 Me.ribbonControlAdv1.ApplyTouchStyleColorTable(colorTable)
 
-{% endhighlight %}
+{% endhighlight  %}
 
 
 

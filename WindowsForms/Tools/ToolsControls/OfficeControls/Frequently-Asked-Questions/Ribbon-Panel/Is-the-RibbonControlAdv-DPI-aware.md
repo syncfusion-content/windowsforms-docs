@@ -3,7 +3,7 @@ layout: post
 title: Is-the-RibbonControlAdv-DPI-aware
 description: is the ribboncontroladv dpi aware?
 platform: windowsforms
-control: Tools
+control: Frequently Asked Questions
 documentation: ug
 ---
 
