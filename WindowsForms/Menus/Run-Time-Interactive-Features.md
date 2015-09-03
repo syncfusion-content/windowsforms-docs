@@ -2,7 +2,7 @@
 layout: post
 title: Run Time Interactive Features
 description: run time interactive features
-platform: windowsforms
+platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Splitter-Behavior
 description: splitter behavior
-platform: windowsforms
+platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---

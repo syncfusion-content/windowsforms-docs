@@ -2,7 +2,7 @@
 layout: post
 title: Hovered Border Color
 description: concept and features
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

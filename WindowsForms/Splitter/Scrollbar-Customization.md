@@ -2,7 +2,7 @@
 layout: post
 title: Scrollbar-customization
 description: scrollbar customization
-platform: windowsforms
+platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---

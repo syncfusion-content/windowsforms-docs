@@ -2,7 +2,7 @@
 layout: post
 title: Caption-Fore-Color-Settings
 description: caption fore color settings
-platform: windowsforms
+platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---

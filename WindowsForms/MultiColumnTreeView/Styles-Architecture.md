@@ -2,7 +2,7 @@
 layout: post
 title: Styles-Architecture
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Sorting
 description: Sorting
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

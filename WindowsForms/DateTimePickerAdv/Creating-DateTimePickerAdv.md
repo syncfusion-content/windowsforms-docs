@@ -2,7 +2,7 @@
 layout: post
 title: Creating DateTimePickerAdv
 description: creating datetimepickeradv
-platform: windowsforms
+platform: WindowsForms
 control: DateTimePicker
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Creating-RadioButtonAdv
 description: creating radiobuttonadv
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Offcie2010-Form-Caption-Align
 description: offcie2010 form caption align
-platform: windowsforms
+platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---

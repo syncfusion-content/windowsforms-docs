@@ -2,7 +2,7 @@
 layout: post
 title: Tab Text
 description: tab text
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI 
 documentation: ug
 ---

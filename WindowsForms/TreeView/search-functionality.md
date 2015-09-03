@@ -2,7 +2,7 @@
 layout: post
 title: search-functionality
 description: search functionality
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

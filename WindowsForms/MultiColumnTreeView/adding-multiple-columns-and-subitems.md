@@ -2,7 +2,7 @@
 layout: post
 title: Adding-Multiple-Columns-and-SubItems
 description: adding multiple columns and subitems
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---

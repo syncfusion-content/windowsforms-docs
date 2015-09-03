@@ -2,7 +2,7 @@
 layout: post
 title: Events
 description: Events
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

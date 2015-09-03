@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Set-the-Background-Color-for-a-Grid
 description: how to set the background color for a grid
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

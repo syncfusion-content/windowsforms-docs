@@ -2,7 +2,7 @@
 layout: post
 title: Alignment-Settings
 description: alignment settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---

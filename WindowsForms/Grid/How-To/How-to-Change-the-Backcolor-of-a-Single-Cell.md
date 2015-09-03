@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Backcolor-of-a-Single-Cell
 description: how to change the backcolor of a single cell
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

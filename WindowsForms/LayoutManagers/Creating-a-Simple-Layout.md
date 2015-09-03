@@ -2,7 +2,7 @@
 layout: post
 title: Creating a Simple Layout
 description: creating a simple layout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

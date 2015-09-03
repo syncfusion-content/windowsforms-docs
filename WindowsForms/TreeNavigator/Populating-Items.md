@@ -2,7 +2,7 @@
 layout: post
 title: Populating-Items
 description: populating items
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---

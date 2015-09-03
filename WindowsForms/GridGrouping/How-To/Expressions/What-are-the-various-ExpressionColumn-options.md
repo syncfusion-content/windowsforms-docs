@@ -2,7 +2,7 @@
 layout: post
 title: What-are-the-various-ExpressionColumn-options
 description: what are the various expressioncolumn options
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

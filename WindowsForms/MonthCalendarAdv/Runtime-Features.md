@@ -2,7 +2,7 @@
 layout: post
 title: Runtime Features
 description: Runtime Features
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

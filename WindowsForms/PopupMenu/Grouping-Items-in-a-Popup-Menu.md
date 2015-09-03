@@ -2,7 +2,7 @@
 layout: post
 title: Grouping-Items-in-a-Popup-Menu
 description: grouping items in a popup menu
-platform: windowsforms
+platform: WindowsForms
 control: Popup-Menu
 documentation: ug
 ---

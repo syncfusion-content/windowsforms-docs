@@ -2,7 +2,7 @@
 layout: post
 title: Drag-and-Drop
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---

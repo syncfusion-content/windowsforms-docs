@@ -2,7 +2,7 @@
 layout: post
 title: Visual Styles
 description: Visual Styles
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

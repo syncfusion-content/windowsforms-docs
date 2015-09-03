@@ -2,7 +2,7 @@
 layout: post
 title: Creating-StatusBarAdvPanel
 description: creating statusbaradvpanel
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---

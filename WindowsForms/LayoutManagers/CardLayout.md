@@ -2,7 +2,7 @@
 layout: post
 title: CardLayout
 description: cardlayout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

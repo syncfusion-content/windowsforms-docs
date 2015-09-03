@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Show-Multiple-Images-in-a-Cell
 description: how to show multiple images in a cell
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

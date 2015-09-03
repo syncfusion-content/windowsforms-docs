@@ -2,7 +2,7 @@
 layout: post
 title: FlowLayout
 description: flowlayout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

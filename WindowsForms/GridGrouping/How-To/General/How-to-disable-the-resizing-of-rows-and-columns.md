@@ -2,7 +2,7 @@
 layout: post
 title: How-to-disable-the-resizing-of-rows-and-columns
 description: how to disable the resizing of rows and columns
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

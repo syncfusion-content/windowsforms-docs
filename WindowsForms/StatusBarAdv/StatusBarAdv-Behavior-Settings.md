@@ -2,7 +2,7 @@
 layout: post
 title: StatusBarAdv-Behavior-Settings
 description: statusbaradv - behavior settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---

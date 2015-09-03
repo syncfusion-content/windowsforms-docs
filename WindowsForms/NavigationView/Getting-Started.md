@@ -2,7 +2,7 @@
 layout: post
 title: Creating NavigationView
 description: creating navigationView
-platform: windowsforms
+platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---

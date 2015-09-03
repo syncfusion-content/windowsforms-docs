@@ -2,7 +2,7 @@
 layout: post
 title: Associating-Popup-Menu-to-a-Control
 description: associating popup menu to a control
-platform: windowsforms
+platform: WindowsForms
 control: Popup-Menu
 documentation: ug
 ---

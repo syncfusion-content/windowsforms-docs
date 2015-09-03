@@ -2,7 +2,7 @@
 layout: post
 title: Container Control
 description: Container Control
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Animation-Settings
 description: animation settings
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Navigation-Mode
 description: navigation mode
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---

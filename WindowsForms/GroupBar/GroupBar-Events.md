@@ -2,7 +2,7 @@
 layout: post
 title: GroupBar Events
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

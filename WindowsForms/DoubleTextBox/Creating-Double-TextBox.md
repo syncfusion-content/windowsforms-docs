@@ -2,7 +2,7 @@
 layout: post
 title: Creating Double TextBox
 description: creating double textbox
-platform: windowsforms
+platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
 ---

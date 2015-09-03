@@ -2,7 +2,7 @@
 layout: post
 title: Scroll Support
 description: Scroll Support
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

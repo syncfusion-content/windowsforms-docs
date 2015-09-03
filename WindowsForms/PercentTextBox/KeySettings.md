@@ -2,7 +2,7 @@
 layout: post
 title: Key Settings
 description: Key Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

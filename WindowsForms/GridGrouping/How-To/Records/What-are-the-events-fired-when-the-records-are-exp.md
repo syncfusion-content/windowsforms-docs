@@ -2,7 +2,7 @@
 layout: post
 title: What-are-the-events-fired-when-the-records-are-exp
 description: what are the events fired when the records are expanded or expanding
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

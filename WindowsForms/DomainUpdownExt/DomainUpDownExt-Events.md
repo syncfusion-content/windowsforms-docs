@@ -2,7 +2,7 @@
 layout: post
 title: DomainUpDownExt Events
 description: domainupdownext events
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

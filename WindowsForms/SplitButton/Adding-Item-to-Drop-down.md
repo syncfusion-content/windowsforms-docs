@@ -2,7 +2,7 @@
 layout: post
 title: Adding-Item-to-Drop-down
 description: adding item to drop-down
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---

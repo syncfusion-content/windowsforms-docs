@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Align-Radio-Buttons
 description: how to align radio buttons
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

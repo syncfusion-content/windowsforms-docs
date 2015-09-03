@@ -2,7 +2,7 @@
 layout: post
 title: Runtime Features
 description: runtime features
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---

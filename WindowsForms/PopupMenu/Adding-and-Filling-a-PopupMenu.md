@@ -2,7 +2,7 @@
 layout: post
 title: Adding-and-Filling-a-PopupMenu
 description: adding and filling a popupmenu
-platform: windowsforms
+platform: WindowsForms
 control: Popup-Menu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: ComboBoxBase
 description: comboboxbase 
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

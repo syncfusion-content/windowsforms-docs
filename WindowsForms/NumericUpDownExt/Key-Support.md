@@ -2,7 +2,7 @@
 layout: post
 title: Key-Support
 description: key support
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

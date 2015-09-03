@@ -2,7 +2,7 @@
 layout: post
 title: MaskedEditBox Events
 description:  MaskedEditBox Events
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---

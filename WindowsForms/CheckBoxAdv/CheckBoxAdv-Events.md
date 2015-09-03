@@ -2,7 +2,7 @@
 layout: post
 title: CheckBoxAdv-Events
 description: checkboxadv events
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

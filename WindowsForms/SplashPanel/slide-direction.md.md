@@ -2,7 +2,7 @@
 layout: post
 title: Slide Direction
 description: Slide Direction
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---

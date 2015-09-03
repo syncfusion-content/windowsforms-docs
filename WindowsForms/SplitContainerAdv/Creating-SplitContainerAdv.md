@@ -2,7 +2,7 @@
 layout: post
 title: Creating SplitContainerAdv
 description: Creating SplitContainerAdv
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

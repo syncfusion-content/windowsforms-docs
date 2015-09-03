@@ -2,7 +2,7 @@
 layout: post
 title: Foreground Settings
 description: Foreground Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

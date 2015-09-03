@@ -2,7 +2,7 @@
 layout: post
 title: Caption-Settings
 description: caption settings
-platform: windowsforms
+platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---

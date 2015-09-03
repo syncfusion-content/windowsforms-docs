@@ -2,7 +2,7 @@
 layout: post
 title: Creating-NumericUpDownExt
 description: creating numericupdownext
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

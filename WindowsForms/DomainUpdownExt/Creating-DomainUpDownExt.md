@@ -2,7 +2,7 @@
 layout: post
 title: Creating DomainUpDownExt
 description: creating domainupdownext
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

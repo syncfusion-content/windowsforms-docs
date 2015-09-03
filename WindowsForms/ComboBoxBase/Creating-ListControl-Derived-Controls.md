@@ -2,7 +2,7 @@
 layout: post
 title: Creating-ListControl-Derived-Controls
 description: creating listcontrol - derived controls
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

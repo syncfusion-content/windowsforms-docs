@@ -2,7 +2,7 @@
 layout: post
 title: GradientPanelExt Events
 description: gradientpanelext events
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---

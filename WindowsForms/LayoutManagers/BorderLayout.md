@@ -2,7 +2,7 @@
 layout: post
 title: BorderLayout
 description: borderlayout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

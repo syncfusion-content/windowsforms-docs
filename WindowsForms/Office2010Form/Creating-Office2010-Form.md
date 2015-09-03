@@ -2,7 +2,7 @@
 layout: post
 title: Creating-Office2010-Form
 description: creating office2010 form
-platform: windowsforms
+platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---

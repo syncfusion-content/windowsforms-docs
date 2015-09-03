@@ -2,7 +2,7 @@
 layout: post
 title: Creating GradientLabel
 description: Creating GradientLabel
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

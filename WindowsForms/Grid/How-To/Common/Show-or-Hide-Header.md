@@ -2,7 +2,7 @@
 layout: post
 title: Show-or-Hide-Header
 description: show or hide header
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

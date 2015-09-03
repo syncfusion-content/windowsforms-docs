@@ -2,7 +2,7 @@
 layout: post
 title: How-to-pre-select-a-checkbox-inside-a-grid-cell
 description: how to pre-select a checkbox inside a grid cell
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

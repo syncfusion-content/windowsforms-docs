@@ -2,7 +2,7 @@
 layout: post
 title: Runtime Selection
 description: runtime selection
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerUIAdv
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: LoadOnDemand
 description: loadondemand
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

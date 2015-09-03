@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: Overview
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

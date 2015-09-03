@@ -2,7 +2,7 @@
 layout: post
 title: ShowPromptOnFocus
 description: showpromptonfocus
-platform: windowsforms
+platform: WindowsForms
 control: SfMaskedEdit
 documentation: ug
 ---

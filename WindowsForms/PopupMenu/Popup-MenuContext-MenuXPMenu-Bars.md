@@ -2,7 +2,7 @@
 layout: post
 title: Popup-MenuContext-MenuXPMenu-Bars
 description: popup menucontext menuxpmenu bars
-platform: windowsforms
+platform: WindowsForms
 control: Popup-MenuContext-MenuXPMenu-Bars
 documentation: ug
 ---

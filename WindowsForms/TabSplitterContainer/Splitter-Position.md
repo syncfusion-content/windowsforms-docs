@@ -2,7 +2,7 @@
 layout: post
 title: Splitter-Position
 description: splitter position
-platform: windowsforms
+platform: WindowsForms
 control: TabSplitterContainer 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Themes-and-Visual-Styles-of-RadioButtonAdv
 description: themes and visual styles of radioButtonAdv
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

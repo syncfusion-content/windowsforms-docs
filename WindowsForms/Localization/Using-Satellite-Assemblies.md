@@ -2,7 +2,7 @@
 layout: post
 title: Using Satellite Assemblies
 description: using satellite assemblies
-platform: windowsforms
+platform: WindowsForms
 control: Localization
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: MDI-Merging
 description: mdi merging
-platform: windowsforms
+platform: WindowsForms
 control: Control Name undefined
 documentation: ug
 ---

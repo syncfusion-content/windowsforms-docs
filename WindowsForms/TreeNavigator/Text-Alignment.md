@@ -2,7 +2,7 @@
 layout: post
 title: Text-Alignment
 description: text alignment
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---

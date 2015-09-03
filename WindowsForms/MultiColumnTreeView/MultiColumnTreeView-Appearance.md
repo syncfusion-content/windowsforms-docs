@@ -2,7 +2,7 @@
 layout: post
 title: MultiColumnTreeView-Appearance
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---

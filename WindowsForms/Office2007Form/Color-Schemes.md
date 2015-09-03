@@ -2,7 +2,7 @@
 layout: post
 title: Color-Schemes
 description: color schemes
-platform: windowsforms
+platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---

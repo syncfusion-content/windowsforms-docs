@@ -2,7 +2,7 @@
 layout: post
 title: Custom-Styling
 description: custom styling
-platform: windowsforms
+platform: WindowsForms
 control: ToggleButton 
 documentation: ug
 ---

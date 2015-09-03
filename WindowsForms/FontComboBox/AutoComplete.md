@@ -2,7 +2,7 @@
 layout: post
 title: AutoComplete
 description: AutoComplete
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

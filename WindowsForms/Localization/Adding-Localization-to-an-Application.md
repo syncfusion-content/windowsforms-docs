@@ -2,7 +2,7 @@
 layout: post
 title: Adding Localization to an Application
 description: adding localization to an application
-platform: windowsforms
+platform: WindowsForms
 control: Localization
 documentation: ug
 ---

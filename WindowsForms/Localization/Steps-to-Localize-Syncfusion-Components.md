@@ -2,7 +2,7 @@
 layout: post
 title: Steps to Localize Syncfusion Components
 description: steps to localize syncfusion components
-platform: windowsforms
+platform: WindowsForms
 control: Localization
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: XPToolbar-Properties
 description: xptoolbar properties
-platform: windowsforms
+platform: WindowsForms
 control: XPToolbar
 documentation: ug
 ---

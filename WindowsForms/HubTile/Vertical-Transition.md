@@ -2,7 +2,7 @@
 layout: post
 title: Vertical Transition
 description: concept and features
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

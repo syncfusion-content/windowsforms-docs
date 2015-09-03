@@ -2,7 +2,7 @@
 layout: post
 title: Populating-and-Editing-the-List
 description: populating and editing the list
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

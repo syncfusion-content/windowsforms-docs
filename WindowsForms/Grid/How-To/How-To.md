@@ -2,7 +2,7 @@
 layout: post
 title: How-To
 description: how to
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

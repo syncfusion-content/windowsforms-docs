@@ -2,7 +2,7 @@
 layout: post
 title: WeightValuePath
 description: weightvaluepath
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

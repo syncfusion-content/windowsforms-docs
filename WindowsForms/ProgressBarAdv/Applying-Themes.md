@@ -2,7 +2,7 @@
 layout: post
 title: Applying-Themes
 description: applying themes
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---

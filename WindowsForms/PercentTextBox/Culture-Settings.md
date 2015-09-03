@@ -2,7 +2,7 @@
 layout: post
 title: Culture Settings
 description: Culture Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

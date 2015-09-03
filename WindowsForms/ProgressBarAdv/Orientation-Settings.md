@@ -2,7 +2,7 @@
 layout: post
 title: Orientation-Settings
 description: orientation settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---

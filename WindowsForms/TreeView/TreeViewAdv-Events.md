@@ -2,7 +2,7 @@
 layout: post
 title: TreeViewAdv-Events
 description: treeviewadv events
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

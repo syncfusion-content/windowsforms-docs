@@ -2,7 +2,7 @@
 layout: post
 title: Appearance-Settings
 description: appearance settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---

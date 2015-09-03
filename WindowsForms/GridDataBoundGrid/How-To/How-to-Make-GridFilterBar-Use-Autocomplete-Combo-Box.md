@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Make-GridFilterBar-Use-Autocomplete-Combo-Box
 description: how to make gridfilterbar use autocomplete combo box
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

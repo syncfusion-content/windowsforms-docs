@@ -2,7 +2,7 @@
 layout: post
 title: Reordering-XPTaskPage
 description: reordering xptaskpage
-platform: windowsforms
+platform: WindowsForms
 control: WizardPackage 
 documentation: ug
 ---

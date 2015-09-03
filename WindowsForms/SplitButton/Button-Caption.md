@@ -2,7 +2,7 @@
 layout: post
 title: Button-Caption
 description: button caption
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---

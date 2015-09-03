@@ -2,7 +2,7 @@
 layout: post
 title: Creating GroupView
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Creating-ProgressBarAdv
 description: creating progressbaradv
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---

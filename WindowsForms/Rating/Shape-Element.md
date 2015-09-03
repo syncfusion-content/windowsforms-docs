@@ -2,7 +2,7 @@
 layout: post
 title: Shape-Element
 description: shape element
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---

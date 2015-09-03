@@ -2,7 +2,7 @@
 layout: post
 title: CheckBoxAdv-Settings
 description: checkboxadv settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

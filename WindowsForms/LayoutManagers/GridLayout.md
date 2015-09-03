@@ -2,7 +2,7 @@
 layout: post
 title: GridLayout
 description: gridlayout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

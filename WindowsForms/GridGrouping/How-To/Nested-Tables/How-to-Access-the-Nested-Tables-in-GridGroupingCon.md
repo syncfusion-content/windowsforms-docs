@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Access-the-Nested-Tables-in-GridGroupingCon
 description: how to access the nested tables in gridgroupingcontrol
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

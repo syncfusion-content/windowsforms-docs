@@ -2,7 +2,7 @@
 layout: post
 title: Themes and Animation Settings
 description: Themes and Animation Settings
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

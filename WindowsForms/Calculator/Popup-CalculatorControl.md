@@ -2,7 +2,7 @@
 layout: post
 title: Popup-CalculatorControl
 description: popup calculatorControl
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

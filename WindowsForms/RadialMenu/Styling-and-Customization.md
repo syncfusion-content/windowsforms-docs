@@ -2,7 +2,7 @@
 layout: post
 title: Styling-and-Customization
 description: styling and customization
-platform: windowsforms
+platform: WindowsForms
 control: RadialMenu 
 documentation: ug
 ---

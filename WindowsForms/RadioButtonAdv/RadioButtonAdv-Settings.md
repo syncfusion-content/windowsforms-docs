@@ -2,7 +2,7 @@
 layout: post
 title: RadioButtonAdv -Settings
 description: radiobuttonAdvsettings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

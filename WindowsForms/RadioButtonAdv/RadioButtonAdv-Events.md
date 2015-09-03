@@ -2,7 +2,7 @@
 layout: post
 title: RadioButtonAdv-Events
 description: radiobuttonadv events
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Centering-the-Child-Controls-Horizontally-and-Vertically
 description: centering the child controls horizontally and vertically
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 --

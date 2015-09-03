@@ -2,7 +2,7 @@
 layout: post
 title: Customization Settings
 description: customization settings
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerButton 
 documentation: ug
 ---

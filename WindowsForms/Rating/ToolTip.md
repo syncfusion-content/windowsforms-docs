@@ -2,7 +2,7 @@
 layout: post
 title: ToolTip
 description: tooltip
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---

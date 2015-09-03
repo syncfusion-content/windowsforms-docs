@@ -1,0 +1,51 @@
+---
+layout: post
+title: How to hide a control when an application loads
+description: How to hide a control when an application loads
+platform: WindowsForms
+control: Control Name undefined
+documentation: ug
+---
+
+
+
+# How to hide a control when an application loads?
+
+This is done programmatically, by calling SetHiddenOnLoad method or through Designer, by setting HiddenOnLoad property to true. 
+
+Table 108: Method Table
+
+<table>
+<tr>
+<td>
+Method</td><td>
+Description</td></tr>
+<tr>
+<td>
+SetHiddenOnLoad</td><td>
+Hides the docked control when the application loads. The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the docked control.{{ 'bhidden' | markdownify }} - Value indicating true or false.</td></tr>
+</table>
+
+
+
+{% highlight C# %}
+
+
+
+this.dockingManager1.SetHiddenOnLoad(this.listBox1, true);
+{% endhighlight %}
+
+
+
+{% highlight vbnet %}
+
+
+
+
+
+Me.dockingManager1.SetHiddenOnLoad(Me.listBox1, True)
+{% endhighlight %}
+
+
+
+

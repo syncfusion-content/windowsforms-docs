@@ -2,7 +2,7 @@
 layout: post
 title: Number Settings
 description: number settings
-platform: windowsforms
+platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
 ---

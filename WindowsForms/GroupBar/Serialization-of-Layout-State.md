@@ -2,7 +2,7 @@
 layout: post
 title: Serialization of Layout State 
 description: Serialization of Layout State 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

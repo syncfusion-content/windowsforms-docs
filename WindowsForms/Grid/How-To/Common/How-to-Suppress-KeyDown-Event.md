@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Suppress-KeyDown-Event
 description: how to suppress keydown event
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

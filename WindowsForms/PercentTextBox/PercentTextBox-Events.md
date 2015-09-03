@@ -2,7 +2,7 @@
 layout: post
 title: PercentTextBox Events
 description: PercentTextBox Events
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

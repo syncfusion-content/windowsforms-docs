@@ -2,7 +2,7 @@
 layout: post
 title: Tree-Map-Legend
 description: tree map legend
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Features Overview
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

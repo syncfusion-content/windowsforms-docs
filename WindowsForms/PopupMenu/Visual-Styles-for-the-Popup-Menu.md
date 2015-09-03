@@ -2,7 +2,7 @@
 layout: post
 title: Visual-Styles-for-the-Popup-Menu
 description: visual styles for the popup menu
-platform: windowsforms
+platform: WindowsForms
 control: Popup-Menu
 documentation: ug
 ---

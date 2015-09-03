@@ -2,7 +2,7 @@
 layout: post
 title: Docking-Styles
 description: docking styles
-platform: windowsforms
+platform: WindowsForms
 control: Docking Package 
 documentation: ug
 ---

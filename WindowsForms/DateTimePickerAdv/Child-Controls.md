@@ -2,7 +2,7 @@
 layout: post
 title: Child Controls
 description: child controls
-platform: windowsforms
+platform: WindowsForms
 control: DateTimePicker
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Creating FontListBox
 description: Creating FontListBox
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

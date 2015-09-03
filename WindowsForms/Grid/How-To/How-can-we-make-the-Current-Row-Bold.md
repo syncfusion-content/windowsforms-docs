@@ -2,7 +2,7 @@
 layout: post
 title: How-can-we-make-the-Current-Row-Bold
 description: how can we make the current row bold?
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

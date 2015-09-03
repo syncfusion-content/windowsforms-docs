@@ -2,7 +2,7 @@
 layout: post
 title: Appearance-Customization
 description: appearance customization
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---

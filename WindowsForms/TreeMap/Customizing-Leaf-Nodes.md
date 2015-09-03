@@ -2,7 +2,7 @@
 layout: post
 title: Customizing-Leaf-Nodes
 description: customizing leaf nodes
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

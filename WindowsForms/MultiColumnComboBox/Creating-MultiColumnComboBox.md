@@ -2,7 +2,7 @@
 layout: post
 title: Creating-MultiColumnComboBox
 description: creating multicolumncombobox
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

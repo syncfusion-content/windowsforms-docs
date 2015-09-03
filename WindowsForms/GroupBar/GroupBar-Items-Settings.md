@@ -2,7 +2,7 @@
 layout: post
 title: GroupBar Items Settings
 description: GroupBar Items Settings
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

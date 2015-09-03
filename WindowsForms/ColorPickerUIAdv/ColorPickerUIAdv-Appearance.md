@@ -2,7 +2,7 @@
 layout: post
 title: ColorPickerUIAdv Appearance
 description: colorpickeruiadv appearance
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerUIAdv 
 documentation: ug
 ---

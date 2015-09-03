@@ -2,7 +2,7 @@
 layout: post
 title: Globalization
 description: Globalization
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime 
 documentation: ug
 ---

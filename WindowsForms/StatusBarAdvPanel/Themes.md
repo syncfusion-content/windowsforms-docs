@@ -2,7 +2,7 @@
 layout: post
 title: Themes
 description: themes
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---

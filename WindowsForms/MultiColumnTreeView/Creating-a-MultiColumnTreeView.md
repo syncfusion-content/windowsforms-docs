@@ -2,7 +2,7 @@
 layout: post
 title: Creating-a-MultiColumnTreeView
 description: Creating a MultiColumnTreeView
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Creating PercentTextBox
 description: Creating PercentTextBox
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

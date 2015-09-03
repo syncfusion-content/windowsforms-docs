@@ -2,7 +2,7 @@
 layout: post
 title: GridBagLayout
 description: gridbaglayout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

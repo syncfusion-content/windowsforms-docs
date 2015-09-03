@@ -2,7 +2,7 @@
 layout: post
 title: Toggle-State-Configuration
 description: toggle state configuration
-platform: windowsforms
+platform: WindowsForms
 control: ToggleButton 
 documentation: ug
 ---

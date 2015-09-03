@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Include-an-Icon-in-the-Column-Header
 description: how to include an icon in the column header
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

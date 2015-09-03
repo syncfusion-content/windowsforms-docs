@@ -2,7 +2,7 @@
 layout: post
 title: Display-Mode-Configuration
 description: display mode configuration
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

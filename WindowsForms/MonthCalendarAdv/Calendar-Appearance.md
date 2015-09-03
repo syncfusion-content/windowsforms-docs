@@ -2,7 +2,7 @@
 layout: post
 title: Calendar Appearance
 description: Calendar Appearance
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

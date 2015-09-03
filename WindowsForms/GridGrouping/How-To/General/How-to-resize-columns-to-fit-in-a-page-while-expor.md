@@ -2,7 +2,7 @@
 layout: post
 title: How to resize columns to fit in a page while exporting to PDF
 description: how to resize columns to fit in a page while exporting to pdf
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

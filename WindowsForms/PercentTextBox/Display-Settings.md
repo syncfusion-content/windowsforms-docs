@@ -2,7 +2,7 @@
 layout: post
 title: Display Settings
 description: Display Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: SpellChecking-Options
 description: spellcheckingoptions
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

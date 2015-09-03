@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Copy-a-Range-of-Cells-to-the-Clipboard
 description: how to copy a range of cells to the clipboard
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

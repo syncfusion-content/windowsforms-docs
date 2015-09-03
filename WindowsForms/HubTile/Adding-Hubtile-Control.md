@@ -2,7 +2,7 @@
 layout: post
 title: Adding HubTile Control
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

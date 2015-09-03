@@ -2,7 +2,7 @@
 layout: post
 title: PulsingTile
 description: pulsingtile
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

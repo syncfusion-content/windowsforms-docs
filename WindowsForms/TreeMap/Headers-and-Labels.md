@@ -2,7 +2,7 @@
 layout: post
 title: Headers-and-Labels
 description: headers and labels
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

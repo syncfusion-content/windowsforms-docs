@@ -2,7 +2,7 @@
 layout: post
 title: Appearance
 description: Appearance
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

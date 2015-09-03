@@ -2,7 +2,7 @@
 layout: post
 title: Background-Settings
 description: background settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

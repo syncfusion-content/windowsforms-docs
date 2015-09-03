@@ -2,7 +2,7 @@
 layout: post
 title: Metro-Form
 description: metro form
-platform: windowsforms
+platform: WindowsForms
 control: Metro Form
 documentation: ug
 ---

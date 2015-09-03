@@ -2,7 +2,7 @@
 layout: post
 title: Right-To-Left-Support
 description: right-to-left support
-platform: windowsforms
+platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---

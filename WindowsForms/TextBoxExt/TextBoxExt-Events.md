@@ -2,7 +2,7 @@
 layout: post
 title: TextBoxExt-Events
 description: textboxext events
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: NumericUpDownExt-Events
 description: numericupdownext events
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

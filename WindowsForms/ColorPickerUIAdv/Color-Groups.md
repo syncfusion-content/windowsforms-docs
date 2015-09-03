@@ -2,7 +2,7 @@
 layout: post
 title: Color Groups
 description: Color Groups
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerUIAdv
 documentation: ug
 ---

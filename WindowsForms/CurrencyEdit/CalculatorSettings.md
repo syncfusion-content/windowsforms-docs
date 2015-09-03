@@ -2,7 +2,7 @@
 layout: post
 title: Calculator Settings
 description: calculator settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

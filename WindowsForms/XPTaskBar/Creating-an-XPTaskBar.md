@@ -2,7 +2,7 @@
 layout: post
 title: Creating an XPTaskBar
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: XPtaskBar
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Sizing-Grip
 description: sizing grip
-platform: windowsforms
+platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---

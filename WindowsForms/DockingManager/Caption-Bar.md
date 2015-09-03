@@ -2,7 +2,7 @@
 layout: post
 title: Caption-Bar
 description: caption bar
-platform: windowsforms
+platform: WindowsForms
 control: Docking Package 
 documentation: ug
 ---

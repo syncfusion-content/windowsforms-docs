@@ -2,7 +2,7 @@
 layout: post
 title: RunTime-Features
 description: runtime features
-platform: windowsforms
+platform: WindowsForms
 control: Docking Package 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Hosting ComboBoxBase Control 
 description: Hosting ComboBoxBase Control 
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

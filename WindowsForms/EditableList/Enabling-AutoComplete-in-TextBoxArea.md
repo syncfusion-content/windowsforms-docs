@@ -2,7 +2,7 @@
 layout: post
 title: Enabling-AutoComplete-in-TextBoxArea
 description: enabling autocomplete in textboxarea
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

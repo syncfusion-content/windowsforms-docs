@@ -2,7 +2,7 @@
 layout: post
 title: RotateTile
 description: rotatetile
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

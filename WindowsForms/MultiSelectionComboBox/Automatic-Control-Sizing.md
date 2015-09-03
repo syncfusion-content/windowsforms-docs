@@ -2,7 +2,7 @@
 layout: post
 title: Automatic-Control-Sizing
 description: automatic control sizing
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Header Customization Settings
 description: Header Customization Settings
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

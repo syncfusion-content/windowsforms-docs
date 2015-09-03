@@ -2,7 +2,7 @@
 layout: post
 title: TreeMap-Layout
 description: treeMap layout
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

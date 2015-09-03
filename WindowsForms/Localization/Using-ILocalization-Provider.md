@@ -2,7 +2,7 @@
 layout: post
 title: Using ILocalization Provider
 description: using ilocalization provider
-platform: windowsforms
+platform: WindowsForms
 control: Localization
 documentation: ug
 ---

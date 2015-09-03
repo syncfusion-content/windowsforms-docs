@@ -2,7 +2,7 @@
 layout: post
 title: Data-binding
 description: data binding
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Get-Cell-Coordinates-Under-a-Given-Point
 description: how to get cell coordinates under a given point
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

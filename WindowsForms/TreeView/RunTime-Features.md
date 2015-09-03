@@ -2,7 +2,7 @@
 layout: post
 title: RunTime-Features
 description: runTime features
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

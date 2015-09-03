@@ -2,7 +2,7 @@
 layout: post
 title: Creating-TextBoxExt
 description: creating textboxext
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

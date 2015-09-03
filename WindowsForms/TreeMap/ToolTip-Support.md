@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip-Support
 description: tooltip support
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

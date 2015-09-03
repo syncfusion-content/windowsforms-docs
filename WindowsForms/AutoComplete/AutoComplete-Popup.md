@@ -2,7 +2,7 @@
 layout: post
 title: AutoComplete Popup
 description: AutoComplete Popup
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

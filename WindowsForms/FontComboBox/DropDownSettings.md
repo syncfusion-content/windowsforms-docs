@@ -2,7 +2,7 @@
 layout: post
 title: DropDown Settings
 description: DropDown Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

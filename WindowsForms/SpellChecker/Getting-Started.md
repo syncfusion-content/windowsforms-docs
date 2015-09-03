@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: gettingstarted
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

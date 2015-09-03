@@ -2,7 +2,7 @@
 layout: post
 title: Customizable-Splitter-Back-Color
 description: customizable splitter back color 
-platform: windowsforms
+platform: WindowsForms
 control: TabSplitterContainer 
 documentation: ug
 ---

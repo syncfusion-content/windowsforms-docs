@@ -2,7 +2,7 @@
 layout: post
 title: Precision
 description: precision
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---

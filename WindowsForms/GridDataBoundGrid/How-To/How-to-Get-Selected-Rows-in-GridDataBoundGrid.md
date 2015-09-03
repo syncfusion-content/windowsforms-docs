@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Get-Selected-Rows-in-GridDataBoundGrid
 description: how to get selected rows in griddataboundgrid 
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

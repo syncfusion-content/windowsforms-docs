@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: SfMaskedEdit
 documentation: ug
 ---

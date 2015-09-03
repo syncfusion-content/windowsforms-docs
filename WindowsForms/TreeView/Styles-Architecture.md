@@ -2,7 +2,7 @@
 layout: post
 title: Styles-Architecture
 description: styles architecture
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

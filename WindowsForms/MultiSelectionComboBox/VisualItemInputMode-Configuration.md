@@ -2,7 +2,7 @@
 layout: post
 title: VisualItemInputMode-Configuration
 description: visualiteminputmode configuration
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Display-TextBox
 description: display textbox
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

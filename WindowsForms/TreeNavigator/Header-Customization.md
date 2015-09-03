@@ -2,7 +2,7 @@
 layout: post
 title: Header-Customization
 description: header customization
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---

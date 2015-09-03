@@ -2,7 +2,7 @@
 layout: post
 title: Creating CurrencyEdit
 description: creating currencyedit
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

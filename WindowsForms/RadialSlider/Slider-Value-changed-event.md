@@ -2,7 +2,7 @@
 layout: post
 title: Slider-Value-changed-event
 description: slider value changed event
-platform: windowsforms
+platform: WindowsForms
 control: RadialSlider 
 documentation: ug
 ---

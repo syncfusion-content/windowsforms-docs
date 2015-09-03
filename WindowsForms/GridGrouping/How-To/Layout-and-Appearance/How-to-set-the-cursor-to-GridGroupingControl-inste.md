@@ -2,7 +2,7 @@
 layout: post
 title: How-to-set-the-cursor-to-GridGroupingControl-inste
 description: how to set the cursor to gridgroupingcontrol instead of the default one
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

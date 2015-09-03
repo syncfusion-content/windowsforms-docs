@@ -2,7 +2,7 @@
 layout: post
 title: Slider-style
 description: slider style
-platform: windowsforms
+platform: WindowsForms
 control: RadialSlider 
 documentation: ug
 ---

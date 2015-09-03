@@ -2,7 +2,7 @@
 layout: post
 title: Event Handling
 description: event handling
-platform: windowsforms
+platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
 ---

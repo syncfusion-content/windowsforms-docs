@@ -2,7 +2,7 @@
 layout: post
 title: Text-Field
 description: text field
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

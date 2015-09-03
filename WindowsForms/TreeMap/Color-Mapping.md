@@ -2,7 +2,7 @@
 layout: post
 title: Color-Mapping
 description: color mapping
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

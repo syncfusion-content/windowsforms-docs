@@ -2,7 +2,7 @@
 layout: post
 title: Advanced-Features
 description: advanced features
-platform: windowsforms
+platform: WindowsForms
 control: Docking Package 
 documentation: ug
 ---

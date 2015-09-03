@@ -2,7 +2,7 @@
 layout: post
 title: Cursor Settings 
 description: Cursor Settings 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

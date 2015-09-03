@@ -2,7 +2,7 @@
 layout: post
 title: Customize-Appearance
 description: customize appearance 
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

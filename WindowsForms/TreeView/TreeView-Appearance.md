@@ -2,7 +2,7 @@
 layout: post
 title: TreeView-Appearance
 description: treeview appearance
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Use Case Scenarios
 description: use case scenarios
-platform: windowsforms
+platform: WindowsForms
 control: Localization
 documentation: ug
 ---

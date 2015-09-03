@@ -2,7 +2,7 @@
 layout: post
 title: StackedGroupBar 
 description: StackedGroupBar 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Layout Settings
 description: Layout Settings
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 

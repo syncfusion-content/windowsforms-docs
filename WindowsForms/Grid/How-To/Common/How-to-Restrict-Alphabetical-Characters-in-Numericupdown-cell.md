@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Restrict-Alphabetical-Characters-in-Numericupdown-cell
 description: how to restrict alphabetical characters in numericupdown cell
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

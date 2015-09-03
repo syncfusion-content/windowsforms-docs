@@ -2,7 +2,7 @@
 layout: post
 title: Orientation
 description: orientation
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---

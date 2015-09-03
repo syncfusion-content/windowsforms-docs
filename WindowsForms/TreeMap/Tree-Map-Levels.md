@@ -2,7 +2,7 @@
 layout: post
 title: Tree-Map-Levels
 description: tree map levels
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

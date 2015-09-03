@@ -2,7 +2,7 @@
 layout: post
 title: Drop-Down-Selection
 description: drop-down selection
-platform: windowsforms
+platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---

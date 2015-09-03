@@ -2,7 +2,7 @@
 layout: post
 title: Creating ColorPickerButton
 description: creating colorpickerbutton
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerButton
 documentation: ug
 ---

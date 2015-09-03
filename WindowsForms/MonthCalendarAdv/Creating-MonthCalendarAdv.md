@@ -2,7 +2,7 @@
 layout: post
 title: Creating MonthCalendarAdv
 description: creating monthcalendaradv
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

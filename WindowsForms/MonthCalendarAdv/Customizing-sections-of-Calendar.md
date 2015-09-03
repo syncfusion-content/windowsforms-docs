@@ -2,7 +2,7 @@
 layout: post
 title: Customizing sections of Calendar
 description: customizing sections of calendar
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime 
 documentation: ug
 ---

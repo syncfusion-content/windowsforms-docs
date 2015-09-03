@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Size-Column-Widths-or-Row-Heights-to-Fit-the-text
 description: how to size column widths or row heights to fit the text
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

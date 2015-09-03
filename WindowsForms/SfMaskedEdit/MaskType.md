@@ -2,7 +2,7 @@
 layout: post
 title: MaskType
 description: masktype
-platform: windowsforms
+platform: WindowsForms
 control: SfMaskedEdit
 documentation: ug
 ---

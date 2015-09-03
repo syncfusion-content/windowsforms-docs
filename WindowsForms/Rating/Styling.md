@@ -2,7 +2,7 @@
 layout: post
 title: Styling
 description: styling
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Adding-and-Filling-the-XPToolbar
 description: adding and filling the xptoolbar
-platform: windowsforms
+platform: WindowsForms
 control: XPToolbar
 documentation: ug
 ---

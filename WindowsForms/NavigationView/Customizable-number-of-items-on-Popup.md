@@ -2,7 +2,7 @@
 layout: post
 title: Customizable-number-of-items-on-Popup
 description: customizable number of items on popup
-platform: windowsforms
+platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---

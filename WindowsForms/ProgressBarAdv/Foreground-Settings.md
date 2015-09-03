@@ -2,7 +2,7 @@
 layout: post
 title: Foreground-Settings
 description: foreground settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---

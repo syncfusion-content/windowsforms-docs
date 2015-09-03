@@ -2,7 +2,7 @@
 layout: post
 title: Interactive Features
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

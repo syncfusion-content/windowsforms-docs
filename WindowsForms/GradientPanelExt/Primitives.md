@@ -2,7 +2,7 @@
 layout: post
 title: Primitives
 description: primitives
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---

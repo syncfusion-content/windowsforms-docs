@@ -2,7 +2,7 @@
 layout: post
 title: Creating-SplashPanel
 description: creating splashpanel
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---

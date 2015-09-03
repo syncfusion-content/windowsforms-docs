@@ -2,7 +2,7 @@
 layout: post
 title: How-to-show-Summary-Results-in-the-Inner-Most-Tabl
 description: how to show summary results in the inner most table on every parent level in nested related tables
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

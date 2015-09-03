@@ -2,7 +2,7 @@
 layout: post
 title: Transition Speed
 description: Transition Speed
-platform: windowsforms
+platform: WindowsForms
 control: Carousel
 documentation: ug
 ---

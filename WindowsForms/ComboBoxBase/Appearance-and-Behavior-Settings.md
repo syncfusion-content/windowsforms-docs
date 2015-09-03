@@ -2,7 +2,7 @@
 layout: post
 title: Appearance-and-Behavior-Settings
 description: appearance and behavior settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

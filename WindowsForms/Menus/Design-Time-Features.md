@@ -2,7 +2,7 @@
 layout: post
 title: Design-Time Features
 description: design-time features
-platform: windowsforms
+platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---

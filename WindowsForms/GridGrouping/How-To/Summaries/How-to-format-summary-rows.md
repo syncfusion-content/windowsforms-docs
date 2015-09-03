@@ -2,7 +2,7 @@
 layout: post
 title: How-to-format-summary-rows
 description: how to format summary rows
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

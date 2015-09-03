@@ -2,7 +2,7 @@
 layout: post
 title: colorvaluepath
 description: ColorValuePath
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

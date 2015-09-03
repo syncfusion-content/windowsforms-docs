@@ -2,7 +2,7 @@
 layout: post
 title: Behavior Settings
 description: Behavior Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

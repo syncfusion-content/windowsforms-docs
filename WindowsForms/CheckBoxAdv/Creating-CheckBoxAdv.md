@@ -2,7 +2,7 @@
 layout: post
 title: Creating-CheckBoxAdv
 description: creating checkboxadv
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

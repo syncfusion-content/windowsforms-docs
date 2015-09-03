@@ -2,7 +2,7 @@
 layout: post
 title: Mode Settings
 description: Mode Settings
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 

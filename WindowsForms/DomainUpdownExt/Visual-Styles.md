@@ -2,7 +2,7 @@
 layout: post
 title: Visual Styles
 description: visual styles
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Border Settings 
 description: Border Settings 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

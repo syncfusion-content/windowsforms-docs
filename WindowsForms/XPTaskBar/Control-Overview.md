@@ -2,7 +2,7 @@
 layout: post
 title: Control-Overview
 description: control overview
-platform: windowsforms
+platform: WindowsForms
 control: XPtaskBar
 documentation: ug
 ---

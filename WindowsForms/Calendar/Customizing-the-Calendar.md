@@ -2,7 +2,7 @@
 layout: post
 title: Customizing the Calendar
 description: customizing the calendar
-platform: windowsforms
+platform: WindowsForms
 control: Calendar
 documentation: ug
 ---

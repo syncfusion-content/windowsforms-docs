@@ -2,7 +2,7 @@
 layout: post
 title: Creating Simple Popup
 description: Creating Simple Popup
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

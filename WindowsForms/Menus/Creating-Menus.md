@@ -2,7 +2,7 @@
 layout: post
 title: Creating Menus 
 description: creating menus 
-platform: windowsforms
+platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---

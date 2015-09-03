@@ -2,7 +2,7 @@
 layout: post
 title: How-to-select-all-the-contents-in-a-cell-after-double-clicking-the-contents
 description: how to select all the contents in a cell after double clicking the contents
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

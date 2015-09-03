@@ -2,7 +2,7 @@
 layout: post
 title: Applying Themes
 description: Applying Themes
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 

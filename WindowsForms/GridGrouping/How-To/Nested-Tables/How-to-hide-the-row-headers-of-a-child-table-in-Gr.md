@@ -2,7 +2,7 @@
 layout: post
 title: How-to-hide-the-row-headers-of-a-child-table-in-Gr
 description: how to hide the row headers of a child table in gridgroupingcontrol
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

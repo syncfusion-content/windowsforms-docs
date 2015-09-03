@@ -2,7 +2,7 @@
 layout: post
 title: Creating GradientPanel
 description: Creating GradientPanel
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

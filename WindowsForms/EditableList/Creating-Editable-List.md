@@ -2,7 +2,7 @@
 layout: post
 title: Creating-Editable-List
 description: creating editable list
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

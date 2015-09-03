@@ -2,7 +2,7 @@
 layout: post
 title: Behavior-Settings
 description: behavior settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---

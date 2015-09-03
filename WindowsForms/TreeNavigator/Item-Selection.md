@@ -2,7 +2,7 @@
 layout: post
 title: Item-Selection
 description: item selection
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---

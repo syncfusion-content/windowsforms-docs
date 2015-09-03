@@ -2,7 +2,7 @@
 layout: post
 title: Border-Settings
 description: border settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---

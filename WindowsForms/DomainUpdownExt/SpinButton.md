@@ -2,7 +2,7 @@
 layout: post
 title: SpinButton
 description: spinbutton
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

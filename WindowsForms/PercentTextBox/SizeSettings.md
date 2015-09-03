@@ -2,7 +2,7 @@
 layout: post
 title: Size Settings
 description: Size Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

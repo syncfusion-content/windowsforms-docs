@@ -2,7 +2,7 @@
 layout: post
 title: Multiple-Columns
 description: multiple columns
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

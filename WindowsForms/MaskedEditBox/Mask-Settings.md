@@ -2,7 +2,7 @@
 layout: post
 title: Mask Settings
 description: Mask Settings
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---

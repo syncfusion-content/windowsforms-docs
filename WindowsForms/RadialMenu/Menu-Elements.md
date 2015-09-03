@@ -2,7 +2,7 @@
 layout: post
 title: Menu-Elements
 description: menu elements 
-platform: windowsforms
+platform: WindowsForms
 control: RadialMenu 
 documentation: ug
 ---

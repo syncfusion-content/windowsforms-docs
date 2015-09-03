@@ -2,7 +2,7 @@
 layout: post
 title: Office2010-Form-Color-Scheme-Settings
 description: office2010 form color scheme settings
-platform: windowsforms
+platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Boundary-Value-Settings
 description: boundary value settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---

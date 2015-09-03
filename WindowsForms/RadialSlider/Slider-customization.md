@@ -2,7 +2,7 @@
 layout: post
 title: Slider-customization
 description: slider customization
-platform: windowsforms
+platform: WindowsForms
 control: RadialSlider 
 documentation: ug
 ---

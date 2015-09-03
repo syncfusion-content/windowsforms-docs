@@ -2,7 +2,7 @@
 layout: post
 title: Button-Mode
 description: button mode
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---

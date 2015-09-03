@@ -2,7 +2,7 @@
 layout: post
 title: Tile Press Behavior
 description: concept and features
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 --- 

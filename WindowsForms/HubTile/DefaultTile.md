@@ -2,7 +2,7 @@
 layout: post
 title: DefaultTile
 description: defaulttile
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

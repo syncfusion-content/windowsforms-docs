@@ -2,7 +2,7 @@
 layout: post
 title: Color Groups
 description: color groups
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Scroll Settings
 description: scroll settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---

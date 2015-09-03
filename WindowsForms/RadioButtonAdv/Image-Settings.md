@@ -2,7 +2,7 @@
 layout: post
 title: Image-Settings
 description: image settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-derive-user-defined-groups
 description: how to derive user defined groups
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

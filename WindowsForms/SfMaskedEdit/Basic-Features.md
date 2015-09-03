@@ -2,7 +2,7 @@
 layout: post
 title: Basic-Features
 description: basic features
-platform: windowsforms
+platform: WindowsForms
 control: SfMaskedEdit
 documentation: ug
 ---

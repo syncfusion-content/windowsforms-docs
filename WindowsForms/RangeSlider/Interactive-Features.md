@@ -2,7 +2,7 @@
 layout: post
 title: Interactive-Features
 description: interactive features
-platform: windowsforms
+platform: WindowsForms
 control: RangeSlider 
 documentation: ug
 ---

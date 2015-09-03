@@ -2,7 +2,7 @@
 layout: post
 title: Freezing
 description: freezing
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

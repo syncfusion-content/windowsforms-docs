@@ -2,7 +2,7 @@
 layout: post
 title: Docking-Events
 description: docking events
-platform: windowsforms
+platform: WindowsForms
 control: Docking Package 
 documentation: ug
 ---

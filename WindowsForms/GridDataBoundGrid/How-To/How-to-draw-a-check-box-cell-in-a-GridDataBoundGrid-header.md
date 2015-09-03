@@ -2,7 +2,7 @@
 layout: post
 title: How-to-draw-a-check-box-cell-in-a-GridDataBoundGrid-header
 description: how to draw a check box cell in a griddataboundgrid header
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

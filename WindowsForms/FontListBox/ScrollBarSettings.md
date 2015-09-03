@@ -2,7 +2,7 @@
 layout: post
 title: ScrollBar Settings
 description: ScrollBar Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

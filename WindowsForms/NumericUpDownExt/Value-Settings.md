@@ -2,7 +2,7 @@
 layout: post
 title: Value-Settings
 description: value settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

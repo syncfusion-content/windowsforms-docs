@@ -2,7 +2,7 @@
 layout: post
 title: Types-of-Merging
 description: types of merging
-platform: windowsforms
+platform: WindowsForms
 control: Control Name undefined
 documentation: ug
 ---

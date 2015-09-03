@@ -2,7 +2,7 @@
 layout: post
 title: DesignTime-Features
 description: designTime features
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

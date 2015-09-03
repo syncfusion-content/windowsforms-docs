@@ -2,7 +2,7 @@
 layout: post
 title: Drag-And-Drop
 description: drag and drop
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

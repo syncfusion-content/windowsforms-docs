@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Prevent-Showing--Sign-Next-to-the-Parent-Rows-with-no-children
 description: how to prevent showing sign next to the parent rows with no children
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

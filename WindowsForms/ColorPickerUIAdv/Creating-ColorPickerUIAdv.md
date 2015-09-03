@@ -2,7 +2,7 @@
 layout: post
 title: Creating ColorPickerUI Adv
 description: creating colorpickerui adv
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerUIAdv
 documentation: ug
 ---

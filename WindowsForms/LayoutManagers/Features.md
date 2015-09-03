@@ -2,7 +2,7 @@
 layout: post
 title: Features
 description: features
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

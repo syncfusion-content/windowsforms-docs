@@ -2,7 +2,7 @@
 layout: post
 title: TreeNode-Features
 description: treeNode features
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

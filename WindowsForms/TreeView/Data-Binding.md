@@ -2,7 +2,7 @@
 layout: post
 title: Data-Binding
 description: data binding
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

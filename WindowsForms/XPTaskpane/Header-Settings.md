@@ -2,7 +2,7 @@
 layout: post
 title: Header-Settings
 description: header settings
-platform: windowsforms
+platform: WindowsForms
 control: WizardPackage 
 documentation: ug
 ---

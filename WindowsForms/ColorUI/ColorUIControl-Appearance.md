@@ -2,7 +2,7 @@
 layout: post
 title: ColorUIControl Appearance
 description: coloruicontrol appearance
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI
 documentation: ug
 ---

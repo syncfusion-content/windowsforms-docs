@@ -2,7 +2,7 @@
 layout: post
 title: Runtime Settings
 description: runtime settings
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI
 documentation: ug
 ---

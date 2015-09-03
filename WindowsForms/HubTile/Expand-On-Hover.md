@@ -2,7 +2,7 @@
 layout: post
 title: Concept-and-Features
 description: concept and features
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 --- 

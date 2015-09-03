@@ -2,7 +2,7 @@
 layout: post
 title: ComboDropDown-Appearance
 description: combodropdown appearance
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

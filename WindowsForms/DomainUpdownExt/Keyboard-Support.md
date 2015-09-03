@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Support
 description: keyboard support
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: ValidationMode
 description: validationmode
-platform: windowsforms
+platform: WindowsForms
 control: SfMaskedEdit
 documentation: ug
 ---

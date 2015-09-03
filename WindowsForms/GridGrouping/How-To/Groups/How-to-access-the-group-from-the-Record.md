@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-the-group-from-the-Record
 description: how to access the group from the record
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

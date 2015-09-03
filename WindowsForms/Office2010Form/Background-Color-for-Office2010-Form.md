@@ -2,7 +2,7 @@
 layout: post
 title: Background-Color-for-Office2010-Form
 description: background color for office2010 form
-platform: windowsforms
+platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Padding
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: XPtaskBar
 documentation: ug
 --- 

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-set-up-a-datasource-to-the-grouping-grid
 description: how to set up a datasource to the grouping grid
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

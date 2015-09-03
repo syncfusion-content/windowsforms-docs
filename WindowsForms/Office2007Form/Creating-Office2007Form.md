@@ -2,7 +2,7 @@
 layout: post
 title: Creating-Office2007Form
 description: creating office2007form
-platform: windowsforms
+platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---

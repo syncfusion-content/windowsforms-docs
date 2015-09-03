@@ -2,7 +2,7 @@
 layout: post
 title: Themes-and-Visual-Styles
 description: themes and visual styles
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

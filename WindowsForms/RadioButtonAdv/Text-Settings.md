@@ -2,7 +2,7 @@
 layout: post
 title: Text-Settings
 description: text settins
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

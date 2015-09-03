@@ -2,7 +2,7 @@
 layout: post
 title: Display-Settings
 description: display settings
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---

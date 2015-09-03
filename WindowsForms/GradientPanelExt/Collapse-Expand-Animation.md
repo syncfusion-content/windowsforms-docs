@@ -2,7 +2,7 @@
 layout: post
 title: Collapse Expand Animation
 description: collapse expand animation
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---

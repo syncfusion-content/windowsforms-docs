@@ -2,7 +2,7 @@
 layout: post
 title: Image Settings of GroupView 
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

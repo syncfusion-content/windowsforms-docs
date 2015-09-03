@@ -2,7 +2,7 @@
 layout: post
 title: DesignTime-Features
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Hide-Custom-Option-in-the-FilterBar-DropDow
 description: how to hide custom option in the filterbar dropdown
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

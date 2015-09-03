@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip Settings 
 description: Tooltip Settings 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

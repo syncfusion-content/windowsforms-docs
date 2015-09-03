@@ -2,7 +2,7 @@
 layout: post
 title: Transition Speed 2
 description: concept and features
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

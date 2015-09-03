@@ -2,7 +2,7 @@
 layout: post
 title: GradientPanel Appearance
 description: GradientPanel Appearance
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

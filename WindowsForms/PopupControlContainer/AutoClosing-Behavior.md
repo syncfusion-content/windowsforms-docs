@@ -2,7 +2,7 @@
 layout: post
 title: AutoClosing Behavior
 description: AutoClosing Behavior
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Element-Binding
 description: element binding
-platform: windowsforms
+platform: WindowsForms
 control: RadialMenu 
 documentation: ug
 ---

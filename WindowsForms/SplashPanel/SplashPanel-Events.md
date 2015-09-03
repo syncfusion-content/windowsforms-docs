@@ -2,7 +2,7 @@
 layout: post
 title: SplashPanel-Events
 description: splashpanel events
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-get-the-row-position-of-AddNewRecord-in-Gri
 description: how to get the row position of addnewrecord in gridgroupingcontrol
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---

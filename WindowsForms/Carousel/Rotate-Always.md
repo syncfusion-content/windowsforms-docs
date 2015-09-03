@@ -2,7 +2,7 @@
 layout: post
 title: Rotate Always
 description: Rotate Always
-platform: windowsforms
+platform: WindowsForms
 control: Carousel
 documentation: ug
 ---

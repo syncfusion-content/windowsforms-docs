@@ -2,7 +2,7 @@
 layout: post
 title: Hiding-the-Scrollbars
 description: hiding the scrollbars
-platform: windowsforms
+platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---

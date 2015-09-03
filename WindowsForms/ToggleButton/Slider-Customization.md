@@ -2,7 +2,7 @@
 layout: post
 title: Slider-Customization
 description: slider customization
-platform: windowsforms
+platform: WindowsForms
 control: ToggleButton 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Selection Mode
 description: Selection Mode
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

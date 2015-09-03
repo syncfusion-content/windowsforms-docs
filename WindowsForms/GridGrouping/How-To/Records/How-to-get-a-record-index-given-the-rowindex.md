@@ -2,7 +2,7 @@
 layout: post
 title: How-to-get-a-record-index-given-the-rowindex
 description: how to get a record index given the rowindex
-platform: windowsforms
+platform: WindowsForms
 control: How To
 documentation: ug
 ---
