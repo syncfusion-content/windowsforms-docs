@@ -89,6 +89,7 @@ Displays text in the cell that cannot be edited.</td></tr>
 Text Box</td><td>
 Displays text in the cell that can be edited.</td></tr>
 </table>
+
 ## Check Box
 
 Check Box cell type displays a check box in a grid cell. The check box has three states: Checked, Unchecked and Indeterminate. You can decide whether the check box should behave as a two-state check box or a three-state check box.
@@ -127,9 +128,10 @@ Boolean true or false values, or empty (null or nothing).</td></tr>
 
 The following code example illustrates how to set the cell type to CheckBox.
 
-{% highlight c# %}
 
 
+
+{% highlight C# %}
 
 //Specifies display values for True/False/Indeterminate.
 
@@ -158,7 +160,9 @@ gridControl1[rowIndex,colIndex + 1].CellType = "CheckBox";
 gridControl1[rowIndex,colIndex + 1].TriState = true;
 
 gridControl1[rowIndex,colIndex + 1].Description = "TriState";
+
 {% endhighlight %}
+
 
 
 {% highlight vbnet %}
@@ -195,7 +199,7 @@ gridControl1(rowIndex, colIndex + 1).Description = "TriState"
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img1.jpeg)
+ ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img1.jpeg) 
 
 
 
@@ -203,8 +207,9 @@ gridControl1(rowIndex, colIndex + 1).Description = "TriState"
 
 Color Edit cell type allows you to pick up colors and set a color object as the CellValue. To do this, you have to set the CellType property to _ColorEdit_. The following code example illustrates how to set the cell type to ColorEdit.
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 //Sets up a Color Edit control.
@@ -212,7 +217,9 @@ Color Edit cell type allows you to pick up colors and set a color object as the 
 gridControl1[rowIndex, colIndex].CellType = "ColorEdit";
 
 gridControl1[rowIndex, colIndex].CellValue = Color.Aqua;
+
 {% endhighlight %}
+
 
 
 {% highlight vbnet %}
@@ -227,7 +234,7 @@ gridControl1(rowIndex, colIndex).CellValue = Color.Aqua
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img2.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img2.jpeg) 
 
 
 
@@ -257,7 +264,7 @@ StringCollection holding the strings for the drop down.</td></tr>
 <tr>
 <td>
 ExclusiveChoiceList</td><td>
-{{ '_True_' | markdownify }} if you want to list the items in the drop-down, {{ '_false_' | markdownify }} otherwise.</td></tr>
+{{ 'True' | markdownify }} if you want to list the items in the drop-down, {{ 'false' | markdownify }} otherwise.</td></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -275,8 +282,9 @@ String that names the public property from data source object to be used as the 
 
 The following code example illustrates how to set the cell type to ComboBox.
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 //Generates the choices.
@@ -321,8 +329,10 @@ gridControl1[2, 2].ValueMember = "CustomerID";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+
+
+{% highlight vbnet %}
 
 
 'Generates the choices.
@@ -365,10 +375,9 @@ gridControl1(2, 2).DisplayMember = "CustomerID"
 
 gridControl1(2, 2).ValueMember = "CustomerID"
 
-
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img3.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img3.jpeg) 
 
 
 
@@ -381,7 +390,7 @@ Essential Grid provides AutoComplete support for combo box cells. AutoComplete f
 * Both—Enables normal editable behavior.
 * None—No operations will be performed in the text box and list box areas.
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 You can choose the suggestion instead of typing the entire content.
 
@@ -434,63 +443,65 @@ The following steps illustrate enabling AutoComplete in EditMode for a combo Box
 
 1. Declare the Celltype as Combo Box as given in the following code:
 
-{% highlight c# %}
 
 
 
-this.gridControl1[RowIndex,ColIndex].CellType = GridCellTypeName.ComboBox;  
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-
-
-Me.gridControl1(RowIndex,ColIndex).CellType = GridCellTypeName.ComboBox
-{% endhighlight %}
-
-
-Set the Dropdown style as Editable.
-
-{% highlight c# %}
+   ~~~ cs
+     this.gridControl1[RowIndex,ColIndex].CellType = GridCellTypeName.ComboBox;  
+   ~~~
+   {:.prettyprint}
 
 
 
-this.gridControl1[RowIndex,ColIndex].DropDownStyle = GridDropDownStyle.Editable;
-
-{% endhighlight %}
-
-{% highlight vbnet %}
 
 
+   ~~~ cs
+      Me.gridControl1(RowIndex,ColIndex).CellType = GridCellTypeName.ComboBox
 
-Me.gridControl1(RowIndex,ColIndex).DropDownStyle = GridDropDownStyle.Editable  
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
-Set the GridComboSelectionOption using AutoCompleteInEditMode property:
-
- {% highlight vbnet %}
+   Set the Dropdown style as Editable.
 
 
 
-Me.gridControl1(RowIndex,ColIndex).AutoCompleteInEditMode = GridComboSelectionOptions.AutoSuggest
+   ~~~ cs
 
-{% endhighlight %}
+		this.gridControl1[RowIndex,ColIndex].DropDownStyle = GridDropDownStyle.Editable;
+   ~~~
+   {:.prettyprint}
 
-{% highlight vbnet %}
+
+   ~~~ vbnet
+      Me.gridControl1(RowIndex,ColIndex).DropDownStyle = GridDropDownStyle.Editable  
+   ~~~
+   {:.prettyprint}
+
+   Set the GridComboSelectionOption using AutoCompleteInEditMode property:
+
+ 
+
+
+   ~~~ vbnet
+        Me.gridControl1(RowIndex,ColIndex).AutoCompleteInEditMode = GridComboSelectionOptions.AutoSuggest
 
 
 
-Me.gridControl1(RowIndex,ColIndex).AutoCompleteInEditMode = GridComboSelectionOptions.AutoSuggest
-{% endhighlight %}
 
+
+
+
+        Me.gridControl1(RowIndex,ColIndex).AutoCompleteInEditMode = GridComboSelectionOptions.AutoSuggest
+   ~~~
+   {:.prettyprint}
 ## Control
 
 You can place an arbitrary control in a grid cell through Control cell type. This cell type differs from most other cell types shipped with Essential Grid, which cannot be shared among several cells. Control cell type requires you to instantiate control object for each cell that uses this cell type, and set that object to___style__.__Control_. A different control object is required for every cell that makes use of Control cell type. The following code example illustrates how to set cell type to Control.
 
-{% highlight c# %}
 
 
+
+{% highlight C# %}
 
 //Sets up a Control Cell.
 
@@ -508,6 +519,8 @@ this.gridControl1[2,2].CellType = "Control";
 
 this.gridControl1[2,2].Control = this.dataPanel;
 {% endhighlight %}
+
+
 
 
 {% highlight vbnet %}
@@ -534,7 +547,7 @@ Me.gridControl1(2, 2).Control = Me.dataPanel
 
 The following screenshot shows a panel holding two radio buttons and a push button in the cell.
 
-![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img4.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img4.jpeg) 
 
 
 
@@ -542,9 +555,10 @@ The following screenshot shows a panel holding two radio buttons and a push butt
 
 CurrencyEdit cell type lets you edit monetary values and display them by using different currency type formats. To achieve this, you must set the CellType property to Currency_._ You can set additional properties such as the decimal and group separator for the cell value. The following code example illustrates how to set the cell type to CurrencyEdit.
 
-{% highlight c# %}
 
 
+
+{% highlight C# %}
 
 GridStyleInfo style = gridControl1[row, 2];
 
@@ -587,6 +601,7 @@ style.CurrencyEdit.PositiveColor = System.Drawing.Color.Black;
 style.FloatCell = true;
 
 {% endhighlight %}
+
 
 {% highlight vbnet %}
 
@@ -634,7 +649,7 @@ style.FloatCell = True
 
 {% endhighlight %}
 
-![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img5.jpeg)
+ ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img5.jpeg)
 
 
 
@@ -644,8 +659,9 @@ FormulaCell cell type allows you to add algebraic formulas to a cell that depend
 
 The following code example illustrates how to set the cell type to FormulaCell.
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 //Sets Cell Type as Formula Cell.
@@ -659,11 +675,12 @@ gridControl1[rowIndex, colIndex].CellType = "FormulaCell";
 gridControl1[rowIndex, colIndex].CellValue = "= (A1+A2) / 2";
 
 
+
+
 {% endhighlight %}
 
 
 {% highlight vbnet %}
-
 
 
 'Sets Cell Type as Formula Cell.
@@ -675,17 +692,16 @@ gridControl1(rowIndex, colIndex).CellType = "FormulaCell"
 'Assigns a Formula.
 
 gridControl1(rowIndex, colIndex).CellValue = "= (A1+A2) / 2"
-
 {% endhighlight %}
 
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img6.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img6.jpeg)
 
 
 
 
 
-![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img7.jpeg)
+ ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img7.jpeg) 
 
 
 
@@ -721,8 +737,9 @@ Determines whether all the columns in the data source are displayed or if the si
 
 Let us assume you have an ArrayList of US State objects. When you set the cell type to GridListControl, you will get the output as displayed in the screen shot. 
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 //Sets up the data source.
@@ -742,6 +759,8 @@ gridControl1[rowIndex, colIndex + 2].CellType = "GridListControl";
 gridControl1[rowIndex, colIndex + 2].Text = "Wisconsin";
 
 gridControl1[rowIndex, colIndex + 2].ExclusiveChoiceList = true;
+
+
 
 {% endhighlight %}
 
@@ -769,13 +788,13 @@ gridControl1(rowIndex, colIndex + 2).ExclusiveChoiceList = True
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img8.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img8.jpeg) 
 
 
 
 A sample which demonstrates Grid List Control cell type is available in the following sample installation path.
 
-<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control
 
 
 
@@ -785,9 +804,10 @@ A sample which demonstrates Grid List Control cell type is available in the foll
 
 Header cell type displays static text similar to static CellType, but the Header cell type, in addition, has a button-like border that can have a depressed state. The following code example illustrates how to set the cell type to Header.
 
-{% highlight c# %}
 
 
+
+{% highlight C# %}
 
 //Sets Cell Type as "Header".
 
@@ -800,12 +820,13 @@ gridControl1[rowIndex,colIndex].Text = "HeaderText";
 gridControl1[rowIndex,colIndex].CellType = "Header";
 
 gridControl1[rowIndex,colIndex].BackColor = Color.FromArgb(208, 208, 208);
+
+
+
 {% endhighlight %}
 
 
 {% highlight vbnet %}
-
-
 
 'Sets Cell Type as "Header".
 
@@ -818,10 +839,10 @@ gridControl1(rowIndex, colIndex).Text = "HeaderText"
 gridControl1(rowIndex, colIndex).CellType = "Header"
 
 gridControl1(rowIndex, colIndex).BackColor = Color.FromArgb(208, 208, 208)
+
 {% endhighlight %}
 
-
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img9.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img9.jpeg) 
 
 
 
@@ -829,8 +850,9 @@ gridControl1(rowIndex, colIndex).BackColor = Color.FromArgb(208, 208, 208)
 
 MaskedEdit cell type lets you edit and display specially formatted text cells that conform to an edit mask you specify. To make use of this cell type, set the CellType property to _MaskedEdit_. You can set additional properties like Mask, ClipMode, and so on, through the cell style's GridMaskEditInfo object. The various options will allow you to input masks to control the type of input that is valid within a cell. For example, you can use a MaskedEdit cell to facilitate entry of a formatted Social Security number, phone number, or 3 character alpha-code. The following code example illustrates how to set the cell type to MaskedEdit.
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 gridControl1[2, 3].Text = "First Name";
@@ -899,7 +921,9 @@ maskedEditStyle4.UseLocaleDefault = false;
 
 maskedEditStyle4.UseUserOverride = true;
 
+
 {% endhighlight %}
+
 
 {% highlight vbnet %}
 
@@ -973,7 +997,7 @@ maskedEditStyle4.UseUserOverride = True
 {% endhighlight %}
 
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img10.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img10.jpeg) 
 
 
 
@@ -981,7 +1005,9 @@ maskedEditStyle4.UseUserOverride = True
 
 MonthCalendar cell type lets you pick dates. To make use of this cell type in grid, set CellType property to _MonthCalendar_ and CellValue property to _DateTime_ object. The following code example illustrates how to set the cell type to MonthCalendar.
 
-{% highlight c# %}
+
+
+{% highlight C# %}
 
 
 
@@ -995,10 +1021,12 @@ gridControl1[rowIndex, colIndex].CellType = "MonthCalendar";
 
 gridControl1[rowIndex, colIndex].CellValue = DateTime.Now;
 
+
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %}
 
 
 'Sets Cell Type.
@@ -1013,7 +1041,7 @@ gridControl1(rowIndex, colIndex).CellValue = DateTime.Now
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img11.jpeg)
+ ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img11.jpeg) 
 
 
 
@@ -1021,15 +1049,17 @@ gridControl1(rowIndex, colIndex).CellValue = DateTime.Now
 
 NumericUpDownCellType lets you input numeric data either by editing the displayed text or by using spinner buttons to increase or decrease the displayed value. As your value hits a limit, you can either have it stick at that limit or wrap to the opposite limiting value. To hold information such as the upper and lower limits, Essential Grid uses GridNumericUpDownCellInfo object whose constructor accepts the parameters used in the control. This is illustrated in the following code.
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 //Sets up a NumericUpDown Control and sets up upper and lower limits.  
 
 public GridNumericUpDownCellInfo(int min, int max, int start, int step, bool wrap)
-{% endhighlight %}
 
+
+{% endhighlight %}
 
 {% highlight vbnet %}
 
@@ -1041,7 +1071,7 @@ Public Sub New(min As Integer, max As Integer, start As Integer, step1 As Intege
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img12.jpeg)
+ ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img12.jpeg) 
 
 
 
@@ -1051,9 +1081,10 @@ Public Sub New(min As Integer, max As Integer, start As Integer, step1 As Intege
 
 There are several formatting options that can be applied to an ProgressBar cell type embedded into the grid control. The following code example illustrates this.
 
-{% highlight c# %}
 
 
+
+{% highlight C# %}
 
 //Sets up a Progress Bar Control.
 
@@ -1119,8 +1150,9 @@ progressBarEx3.ProgressValue = 75;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+
+{% highlight vbnet %}
 
 
 'Sets up a Progress Bar Control.
@@ -1175,7 +1207,7 @@ progressBarEx3.ProgressValue = 75
 
 {% endhighlight %}
 
-![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img13.jpeg)
+ ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img13.jpeg) 
 
 
 
@@ -1209,8 +1241,9 @@ Sets to "PushButton" for push button control.</td></tr>
 
 The following code example illustrates how to set the cell type to PushButton.
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 gridControl1[rowIndex,colIndex].Description = "PushButton1";
@@ -1236,10 +1269,12 @@ private void gridControl1_CellButtonClicked(object sender, GridCellButtonClicked
 MessageBox.Show("You clicked row"  + e.RowIndex.ToString() + "col"  + e.ColIndex.ToString());
 
 }
-
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
+
 
 
 
@@ -1264,10 +1299,10 @@ Private Sub gridControl1_CellButtonClicked(ByVal sender As Object, ByVal e As Gr
 MessageBox.Show("You clicked row " + e.RowIndex.ToString() + "  col " + e.ColIndex.ToString())
 
 End Sub
+
 {% endhighlight %}
 
-
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img14.png)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img14.png) 
 
 
 
@@ -1275,9 +1310,10 @@ End Sub
 
 Rich Text control will allow you to display and edit Rich Text in grid cells. The control enables you to optionally drop down an editable Rich Text window by which you can modify the Rich Text in the cell. The following code example illustrates how to set the cell type to RichText.
 
-{% highlight c# %}
 
 
+
+{% highlight C# %}
 
 //Creates a Rich Text Format.
 
@@ -1319,6 +1355,7 @@ string rtf =
 
 
 
+
 //Sets up a Rich Text Cell.
 
 gridControl1[rowIndex, 1].CellType = "RichText";
@@ -1329,11 +1366,11 @@ gridControl1.RowHeights[rowIndex] = 50;
 
 gridControl1.CoveredRanges.Add(GridRangeInfo.Cells(rowIndex, 1, rowIndex, 5));
 
+
+
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-
 
 'Creates a Rich Text Format.
 
@@ -1383,7 +1420,7 @@ gridControl1.CoveredRanges.Add(GridRangeInfo.Cells(rowIndex, 1, rowIndex, 5))
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img15.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img15.jpeg)
 
 
 
@@ -1395,7 +1432,7 @@ A range of enhancements have been made to the RichTextBox control:
 
 
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img16.png)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img16.png)
 
 
 
@@ -1405,7 +1442,7 @@ A range of enhancements have been made to the RichTextBox control:
 
 
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img17.png)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img17.png) 
 
 
 
@@ -1415,37 +1452,44 @@ A range of enhancements have been made to the RichTextBox control:
 
 
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img18.png) 
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img18.png)
+
 
 
 
 
 * You can alternatively edit Rich Text directly in the Grid Cell instead of the RichTextBox Popup Window by turning on the InRichTextEditMode property.
 
-{% highlight c# %}
 
 
+{% highlight C# %}
 
-this.grid.Model.InRichTextEditMode = true;
+
+  this.grid.Model.InRichTextEditMode = true;
 
 {% endhighlight %}
+
+
 
 {% highlight vbnet %}
 
 
 
-Me.grid.Model.InRichTextEditMode = True
+  Me.grid.Model.InRichTextEditMode = True
+
 {% endhighlight %}
 
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img19.png) 
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img19.png) 
 
 
 ## Slider
 
 You can use slider cells in grid cells. You can also share a single Slider control among multiple cells. To set slider properties for a cell, make use of the SliderStyleProperties object. The following code example illustrates how to set cell type to Slider.
 
-{% highlight c# %}
+
+
+{% highlight C# %}
 
 
 
@@ -1473,9 +1517,10 @@ sp.SmallChange = 4;
 
 {% endhighlight %}
 
+
+
+
 {% highlight vbnet %}
-
-
 
 'Sets up a Slider control.
 
@@ -1498,10 +1543,10 @@ sp.TickFrequency = 8
 sp.LargeChange = 16
 
 sp.SmallChange = 4
+
 {% endhighlight %}
 
-
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img20.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img20.jpeg) 
 
 
 
@@ -1509,9 +1554,10 @@ sp.SmallChange = 4
 
 Static cell type will display text that cannot be edited. You can select it to make it the current cell, but the cell cannot be activated for editing. Static cells can be deleted by the user, if the static cells are part of the selection when the DELETE key is pressed (To prevent this deletion behavior, set static cells to ReadOnly). Static cells may also include an image in addition to the text. The following code example illustrates how to set the cell type to Static.
 
-{% highlight c# %}
 
 
+
+{% highlight C# %}
 
 //Uses a static cell.
 
@@ -1555,10 +1601,11 @@ gridControl1[rowIndex,colIndex + 1].Text = "Static2";
 
 gridControl1[rowIndex,colIndex + 1].ImageIndex = 2; 
 
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %}
 
 
 'Uses a static cell.
@@ -1605,7 +1652,7 @@ gridControl1(rowIndex, colIndex + 1).ImageIndex = 2
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img21.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img21.jpeg) 
 
 
 
@@ -1613,8 +1660,9 @@ gridControl1(rowIndex, colIndex + 1).ImageIndex = 2
 
 Text Box cell type displays text and images that can be edited in place. The following code example illustrates how to set the cell type to TextBox.
 
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 gridControl1[rowIndex,colIndex].Text = "TextBox";
@@ -1631,10 +1679,12 @@ gridControl1[rowIndex,colIndex].CellType = "TextBox";
 
 gridControl1[rowIndex,colIndex + 1].ImageIndex = 1;
 
+
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %}
 
 
 gridControl1(rowIndex, colIndex).Text = "TextBox"
@@ -1653,7 +1703,7 @@ gridControl1(rowIndex, colIndex + 1).ImageIndex = 1
 
 {% endhighlight %}
 
- ![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img22.jpeg)
+![](Adding-Special-Controls-to-Grid-Cells_images/Adding-Special-Controls-to-Grid-Cells_img22.jpeg) 
 
 
 

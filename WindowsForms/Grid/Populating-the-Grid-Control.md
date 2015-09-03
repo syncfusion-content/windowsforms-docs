@@ -17,9 +17,9 @@ Out of these three ways, the latter two ways of providing data to an Essential G
 
 To place data into a grid, you need to loop through all the rows and columns, setting GridStyleInfo.CellValue property for each cell. This technique is fine for small grids and is not a real drawback. It does have overhead of firing events that are normally associated with a change in a cell's GridStyleInfo object. For larger grids, the overhead associated with such events is likely to be noticed by users only during population. One thing to note is that you may need to turn off the Grid's Undo/Redo support so that users cannot undo your initial population of the grid.
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Turns off undo.
 
@@ -55,9 +55,10 @@ this.gridControl1.Refresh();
 
 
 
-[VB.NET]
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 'Turns off undo.
 
@@ -98,6 +99,7 @@ Me.gridControl1.EndUpdate()
 Me.gridControl1.Refresh()
 
 
+{% endhighlight   %}
 
 ## GridControl.PopulateValues Method
 
@@ -107,7 +109,7 @@ The basic types that can be passed into the datasource parameter include IListSo
 
 Note that when you use theGridControl.PopulateValues method, data values are copied from your data source and placed into the Essential Grid object. Thus, this is an entirely different concept than binding a grid to a data source. In such cases, data is not moved into the grid object, instead is provided on demand from data source to the grid. So, the grid never stores any values in a databound grid. When you use the PopulateValues method, data is actually copied from data source and is placed in the grid's internal storage.
 
-C#]
+{% highlight c#  %}
 
 
 
@@ -126,8 +128,9 @@ this.gridControl1.EndUpdate();
 this.gridControl1.Refresh();
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-[VB.NET]
 
 
 
@@ -146,6 +149,7 @@ Me.gridControl1.Model.PopulateValues(GridRangeInfo.Cells(1, 1, Me.numArrayRows, 
 Me.gridControl1.EndUpdate()
 
 Me.gridControl1.Refresh()
+{% endhighlight   %}
 
 To see a program sample that uses these techniques to populate a grid, look at the Grid Population Demo sample that is shipped with the product. It allows you to time the different population methods including using of a grid virtually. For small grids, the three techniques are comparable. But, as you increase the grid size, virtual grid timing values remain the same, whereas the other two methods vary depending upon the number of data points. In general, the population of a grid by using indexer technique is about factor of ten slower than using PopulateValues method. Depending upon the size of the grid, the virtual technique can be thousands of times quicker than the other techniques.
 
@@ -157,17 +161,15 @@ By using GridRangeInfo class and properties of GridStyleInfo class, you can writ
 
 There are several ways of setting GridStyleInfo properties. If you want to set them for a particular cell, you need to use row and column values as indexers on GridControl object to retrieve GridStyleInfo object that is associated with a particular cell. But, to change BaseStyle, ColumnStyle, or RowStyle, you will have to use different accessory methods to retrieve the style which is under consideration. The code samples that follow will show you several ways of changing particular styles. 
 
-> { ![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img1.jpeg) | markdownify }
+N> This section shows working with cell-oriented Grid control allows explicit setting of individual cell and row properties. Column-oriented Grid Data Bound Grid does not support explicit setting of individual cell and row properties. Instead, events are used to set these properties on demand. You can see samples in the DataBound Grid section.
 
-_Note: This section shows working with cell-oriented Grid control allows explicit setting of individual cell and row properties. Column-oriented Grid Data Bound Grid does not support explicit setting of individual cell and row properties. Instead, events are used to set these properties on demand. You can see samples in the DataBound Grid section._
-
-#### Through Code
+## Through Code
 
 Given below is the code to help you create GridStyleInfo properties.
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Adds some text to cell (2,3).
 
@@ -194,8 +196,8 @@ style.Font.Bold = true;
 this.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 3, 4, 4), style);
 
 
-
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
@@ -230,17 +232,17 @@ style.Font.Bold = True
 ' Applyies this style to several cells.
 
 Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 3, 4, 4), style)
+{% endhighlight   %}
+
+
+ ![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img2.jpeg)
 
 
 
-{ ![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img2.jpeg) | markdownify }
 
 
 
-
-
-[C#]
-
+{% highlight c#  %}
 
 
 //Changes the back color of the grid by using TableStyle.
@@ -249,25 +251,26 @@ this.gridControl1.TableStyle.BackColor = Color.FromArgb(255, 192, 192);
 
 
 
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
 'Changes the back color of the grid using TableStyle.
 
 Me.gridControl1.TableStyle.BackColor = Color.FromArgb(255, 192, 192)
+{% endhighlight   %}
 
 
 
-{ ![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img3.jpeg) | markdownify }
+![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img3.jpeg) 
 
 
 
 
 
-[C#]
 
-
+{% highlight c#  %}
 
 //Changes a row style and a column style.
 
@@ -281,8 +284,9 @@ this.gridControl1.ColStyles[3].CellValue = "Red";
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 'Changes a row style and a column style.
@@ -295,16 +299,16 @@ Me.gridControl1.ColStyles(3).TextColor = Color.Red
 
 Me.gridControl1.ColStyles(3).CellValue = "Red"
 
+{% endhighlight   %}
+
+![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img4.jpeg)
 
 
-{ ![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img4.jpeg) | markdownify }
 
 
 
 
-
-[C#]
-
+{% highlight c#  %}
 
 
 //Changes a base style, eg. Row Header.
@@ -313,25 +317,26 @@ gridControl1.BaseStylesMap["Row Header"].StyleInfo.BackColor = Color.FromArgb(22
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 'Changes a base style, eg. Row Header.
 
 gridControl1.BaseStylesMap("Row Header").StyleInfo.BackColor = Color.FromArgb(228, 255, 255)
 
+{% endhighlight   %}
+
+![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img5.jpeg) 
 
 
-{ ![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img5.jpeg) | markdownify }
 
-
-
-#### Through Designer
+## Through Designer
 
 To edit cell styles from the designer, you must select the grid on the design surface and then click Toggle Interactive Mode verb shown at the bottom of the PropertyGrid. This will allow you to select cells that are within the Grid control on the design surface. To change any of the style settings of the selected cells, you must first click the Cell Settings tool bar button at the top of PropertyGrid. This will display the cell style settings that are within the PropertyGrid and will allow you to change them. The changes will affect the currently selected range or the current cell if no range is selected. 
 
-{ ![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img6.jpeg) | markdownify }
+![](Populating-the-Grid-Control_images/Populating-the-Grid-Control_img6.jpeg) 
 
 
 
@@ -339,20 +344,21 @@ To edit cell styles from the designer, you must select the grid on the design su
 
 To add Grid control to a form, you must create an instance of Grid control, set row and column count, then position it on your form.
 
-#### Through Designer
+## Through Designer
 
 With the designer, you can drag-and-drop control, size it, and then set a couple of properties.
 
 * Drag a Grid control object from your toolbox and drop it on the form. 
 * Size and position it. 
 * Change RowCount and ColCount values in the PropertyGrid for this control.
-#### Through Code
+
+## Through Code
 
 
 Given below is the code to help you create a grid.
 
-[C#]
 
+{% highlight c#  %}
 
 
 using Syncfusion.Windows.Forms.Grid;
@@ -391,8 +397,9 @@ this.Controls.Add(this.gridControl1);
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 imports Syncfusion.Windows.Forms.Grid
@@ -431,3 +438,4 @@ Me.Controls.Add(Me.gridControl1)
 
 
 
+{% endhighlight   %}

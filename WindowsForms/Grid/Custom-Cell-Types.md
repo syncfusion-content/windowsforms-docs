@@ -29,9 +29,10 @@ You can also add custom buttons that you have created to the grid cells. This en
 
 The following code example illustrates how to set the cell type to ButtonEdit.
 
-[C#]
 
 
+
+{% highlight C# %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.ButtonEdit);
 
@@ -44,11 +45,12 @@ sp = new ButtonEditStyleProperties(this.gridControl1[rowIndex, colIndex]);
 sp.ButtonEditInfo.ButtonEditType = ButtonType.Browse;
 
 sp.ButtonEditInfo.Width = 50;
+{% endhighlight %}
 
 
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.ButtonEdit)
@@ -63,9 +65,9 @@ sp = New ButtonEditStyleProperties(Me.gridControl1(rowIndex, colIndex))
 
 sp.ButtonEditInfo.ButtonEditType = ButtonType.Browse
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img1.jpeg) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img1.jpeg) 
 
 
 
@@ -75,31 +77,34 @@ OLE objects can be directly embedded to a grid’s cell, which by default displa
 
 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 In a payroll application, the generated report can be attached to the grid and viewed directly from the grid. The grid should be exported to the Excel when the operation is completed to view the recent results; otherwise the document will not reflect the recent changes.
 
-Sample Link
+### Sample Link
 
 Find a sample in the following location: _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\ Grid Controls / Grid Control / Concepts and Features/Custom Cell Types_
 
 
 
-Adding OleContainer Cell to an Application 
+### Adding OleContainer Cell to an Application 
 
 The following code illustrates how to set the cell type to OleContainer: 
 
-[C#]
+
+{% highlight C# %}
 
 RegisterCellModel.GridCellType(this.gridControl1, CustomCellTypes.OleContainerCell);
 
 this.gridControl1[rowIndex, colIndex].CellType = CustomCellTypes. OleContainerCell.ToString();
 
 this.gridControl1[rowIndex, colIndex].Description = GetIconFile(@"common\Data\DocIO\SalesInvoiceDemo.doc");
+{% endhighlight %}
 
 
 
-VB.NET]
+
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(this.gridControl1, CustomCellTypes.OleContainerCell);
 
@@ -107,9 +112,9 @@ Me.gridControl1(rowIndex, colIndex).CellType = CustomCellTypes. OleContainerCell
 
 Me.gridControl1(rowIndex, colIndex).Description = GetIconFile("common\Data\DocIO\SalesInvoiceDemo.doc")
 
+{% endhighlight %}
 
-
-{ ![C:/Users/Giftline/Desktop/a.png](Custom-Cell-Types_images/Custom-Cell-Types_img2.png) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img2.png) 
 
 
 
@@ -119,7 +124,9 @@ Me.gridControl1(rowIndex, colIndex).Description = GetIconFile("common\Data\DocIO
 
 Calculator Text Box cell type is implemented as a drop-down container, embedded in the cell where the drop-down contains the calculator, which displays the value in the cell. The following code examples illustrate how to set the cell type to CalculatorTextBox.
 
-[C#]
+
+{% highlight C# %}
+
 
 
 
@@ -137,9 +144,11 @@ style.CellType = CustomCellTypes.CalculatorTextBox.ToString();
 
 style.Control = c2;
 
+{% endhighlight %}
 
 
-[VB.NET]
+
+{% highlight xml %}
 
 
 
@@ -156,10 +165,10 @@ style = gridControl1(6, 2)
 style.CellType = CustomCellTypes.CalculatorTextBox.ToString()
 
 style.Control = c2
+{% endhighlight %}
 
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img3.jpeg) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img3.jpeg) 
 
 
 
@@ -167,9 +176,10 @@ style.Control = c2
 
 Calendar cell type by can be added by registering the cell model by using RegisterCellModel class. The following code example illustrates how to set the cell type to Calendar.
 
-[C#]
 
 
+
+{% highlight C# %}
 
 GridStyleInfo style;
 
@@ -179,10 +189,11 @@ style.CellType = CustomCellTypes.Calendar.ToString();
 
 style.Control = new MonthCalendar();
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 Dim style As GridStyleInfo
@@ -193,9 +204,9 @@ style.CellType = CustomCellTypes.Calendar.ToString()
 
 style.Control = New MonthCalendar()
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img4.jpeg) | markdownify }
+![](Custom-Cell-Types_images/Custom-Cell-Types_img4.jpeg)
 
 
 
@@ -203,7 +214,9 @@ style.Control = New MonthCalendar()
 
 Date Time Picker cell type can be embedded into a cell as a drop-down container where date and time picker will be added in the drop-down. The cell value of the corresponding cell has to be specified as date value. Various formats of the date and time can be provided in the Format styleproperty. The following code example illustrates how to set the cell type to DateTimePicker.
 
-[C#]
+
+
+{% highlight C# %}
 
 
 
@@ -217,10 +230,11 @@ this.gridControl1[4, 2].CellValue = DateTime.Now;
 
 this.gridControl1[4, 2].Format = "MM/dd/yyyy hh:mm";
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.DateTimePicker)
@@ -233,9 +247,9 @@ Me.gridControl1(4, 2).CellValue = DateTime.Now
 
 Me.gridControl1(4, 2).Format = "MM/dd/yyyy hh:mm"
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img5.jpeg) | markdownify }
+![](Custom-Cell-Types_images/Custom-Cell-Types_img5.jpeg) 
 
 
 
@@ -243,13 +257,13 @@ Me.gridControl1(4, 2).Format = "MM/dd/yyyy hh:mm"
 
 Numeric Up Down cell type has been enhanced to provide more styles and properties that can be added to the numeric up down control by using FloatNumericUpDownStyleProperties class. It enables you to set the limitations of the numeric values and several other properties. 
 
-_Table 27: Numeric Up Down style properties_
+Table 27: Numeric Up Down style properties
 
 <table>
 <tr>
-<td>
-FLOAT NUMERIC UP DOWN STYLE PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+FLOAT NUMERIC UP DOWN STYLE PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -291,7 +305,9 @@ The bool value, which allows to separate thousand basis.</td></tr>
 
 The following code example illustrates how to set the cell type to FNumericUpDown.
 
-[C#]
+
+
+{% highlight C# %}
 
 
 
@@ -335,9 +351,10 @@ sp.FloatNumericUpDownProperties.DecimalPlaces = 1;
 
 
 
-[VB.NET]
+{% endhighlight %}
 
 
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.FNumericUpDown)
 
@@ -378,8 +395,9 @@ sp.FloatNumericUpDownProperties.WrapValue = True
 sp.FloatNumericUpDownProperties.DecimalPlaces = 1
 
 
+{% endhighlight %}
 
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img6.jpeg) | markdownify }
+![](Custom-Cell-Types_images/Custom-Cell-Types_img6.jpeg) 
 
 
 
@@ -387,7 +405,9 @@ sp.FloatNumericUpDownProperties.DecimalPlaces = 1
 
 GridInCell cell type provide covered range of cells to embed the grid, which is added as a control to the cells. The registered cell model will initialize the range by calculating the size of the grid control to be embedded, and add some styles such as borders and scroll bar to have the control within the range. The following code examples illustrate how to set the cell type to GridinCell.
 
-[C#]
+
+{% highlight C# %}
+
 
 
 
@@ -420,9 +440,10 @@ this.gridControl1[3, 2].Control = grid;
 this.gridControl1.Controls.Add(grid);
 
 
+{% endhighlight %}
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.GridinCell)
@@ -452,10 +473,10 @@ grid.ThemesEnabled = True
 Me.gridControl1(3, 2).Control = grid
 
 Me.gridControl1.Controls.Add(grid)
+{% endhighlight %}
 
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img7.jpeg) | markdownify }
+![](Custom-Cell-Types_images/Custom-Cell-Types_img7.jpeg) 
 
 
 
@@ -463,7 +484,8 @@ Me.gridControl1.Controls.Add(grid)
 
 The Link Label Cell type holds the link that has been provided in the Tag property. This displays ordinary text in the cell, which links specified location. The following code example illustrates how to set the cell type to LinkLabelCell.
 
-[C#]
+
+{% highlight C# %}
 
 
 
@@ -479,11 +501,13 @@ gridControl1[rowIndex, 2].Font.Bold = true;
 
 gridControl1[rowIndex, 2].Tag = "http://www.syncfusion.com";
 
+{% endhighlight %}
 
 
-[VB.NET]
 
 
+
+{% highlight vbnet %}
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.LinkLabelCell)
 
@@ -497,9 +521,9 @@ gridControl1(rowIndex, 2).Font.Bold = True
 
 gridControl1(rowIndex, 2).Tag = "http://www.syncfusion.com"
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img8.jpeg) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img8.jpeg)
 
 
 
@@ -507,8 +531,10 @@ gridControl1(rowIndex, 2).Tag = "http://www.syncfusion.com"
 
 Picture Box cell type can be embedded into a cell by calculating the size of the picture and extending the width and height of the cell accordingly. PictureBoxStyleProperties class provides the style where it holds the information of the picture that has to be added. The following code examples illustrate how to set the cell type to PictureBox.
 
-[C#]
 
+
+
+{% highlight C# %}
 
 
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.PictureBox);
@@ -523,10 +549,11 @@ sp = new PictureBoxStyleProperties(style);
 
 sp.Image = GetImage("one.jpg");
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.PictureBox)
@@ -541,9 +568,9 @@ sp = New PictureBoxStyleProperties(style)
 
 sp.Image = GetImage("one.jpg")
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img9.jpeg) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img9.jpeg) 
 
 
 
@@ -551,9 +578,9 @@ sp.Image = GetImage("one.jpg")
 
 Slider control embedded in a grid cell is termed as a Slider Cell. Slider control can be embedded in the grid cells by using Slider cell type. The class SliderStyleProperties provides custom properties specific to Slider control. All the properties support the style inheritance mechanism. Slider control can be embedded by using the following set of codes:
 
-[C#]
 
 
+{% highlight C# %}
 
 gridControl1.CellModels.Add("Slider", new SliderCellModel(gridControl1.Model));
 
@@ -577,10 +604,12 @@ sp.SmallChange = 4;
 
 sp.Orientation = Orientation.Vertical;
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+
+{% highlight vbnet %}
 
 
 gridControl1.CellModels.Add("Slider", New SliderCellModel(gridControl1.Model))
@@ -605,9 +634,9 @@ sp.SmallChange = 4
 
 sp.Orientation = Orientation.Vertical
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img10.jpeg) | markdownify }
+![](Custom-Cell-Types_images/Custom-Cell-Types_img10.jpeg) 
 
 
 
@@ -620,9 +649,10 @@ An XHTML page can be displayed in a grid cell by using Xhtml Cell cell type. Cus
 
 The CellModel (read GridCellModelBase class in this document) handles any serialization that a cell type requires and also creates the CellRenderer (read GridCellRendererBase class in this document) class that is associated with the cell type. CellRenderer class manages the UI aspects of cell type. The XHTML page can be displayed by using the following set of codes.
 
-[C#]
 
 
+
+{% highlight C# %}
 
 string xhtml1 = "<body style=\"font-family:Arial; line-height:1em\"> ";
 
@@ -638,10 +668,11 @@ gridControl1[rowIndex, 1].CellType = "XhtmlCell";
 
 gridControl1[rowIndex, 1].Text = xhtml1;
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 Dim xhtml1 As String = "<body style=""font-family:Arial; line-height:1em""> "
@@ -657,10 +688,10 @@ xhtml1 += "</body>"
 gridControl1(rowIndex, 1).CellType = "XhtmlCell"
 
 gridControl1(rowIndex, 1).Text = xhtml1
+{% endhighlight %}
 
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img11.jpeg) | markdownify }
+![](Custom-Cell-Types_images/Custom-Cell-Types_img11.jpeg)
 
 
 
@@ -668,9 +699,10 @@ gridControl1(rowIndex, 1).Text = xhtml1
 
 Essential Chart control can be embedded in grid cells by creating and registering custom Chart Cell cell type. CellModel class handles any serialization that a cell type requires and also creates CellRenderer class associated with the cell type. The actions mentioned can be performed by using the following code example.
 
-[C#]
 
 
+
+{% highlight C# %}
 
 ChartStyleProperties csp;
 
@@ -690,9 +722,10 @@ csp.Series3D = false;
 
 csp.TitleAlignment = StringAlignment.Center;
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -714,9 +747,9 @@ csp.Series3D = False
 
 csp.TitleAlignment = StringAlignment.Center
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img12.jpeg) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img12.jpeg)
 
 
 
@@ -728,7 +761,8 @@ Essential Grid has flexible support for displaying drop-down grids in cells. It 
 
 The actions mentioned above can be performed by using the following code examples.
 
-[C#]
+
+{% highlight C# %}
 
 
 
@@ -748,10 +782,12 @@ this.gridControl1[rowIndex,1].Text = "Grid A";
 
 this.gridControl1[rowIndex,1].CellType = "GridADropCell";
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+
+{% highlight vbnet %}
 
 
 'Creates and registers drop-down grid cells.
@@ -770,9 +806,9 @@ Me.gridControl1(rowIndex,1).Text = "Grid A"
 
 Me.gridControl1(rowIndex,1).CellType = "GridADropCell"
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img13.jpeg) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img13.jpeg) 
 
 
 
@@ -782,7 +818,7 @@ Me.gridControl1(rowIndex,1).CellType = "GridADropCell"
 
 A custom control cell that displays a drop-down form or a user control in a grid cell can be created.
 
-You can create:
+### You can create:
 
 * A drop-down form in a grid cell by deriving GridStaticCellModel/GridStaticCellRenderer classes.
 * Adrop-down User control in a grid cell by deriving GridDropDownCellModel/GridDropDownCellRender classes.
@@ -791,8 +827,9 @@ You can create:
 
 The actions mentioned can be performed by using the following code example.
 
-[C#]
 
+
+{% highlight C# %}
 
 
 //Registers your custom cell type.
@@ -819,8 +856,10 @@ this.gridControl1[6, 2].CellType = "DropDownUserControl";
 
 
 
-[VB.NET]
+{% endhighlight %}
 
+
+{% highlight vbnet %}
 
 
 'Registers your custom cell type.
@@ -845,9 +884,9 @@ Me.gridControl1.CellModels.Add("DropDownUserControl", New DropDownUserCellModel(
 
 Me.gridControl1(6, 2).CellType = "DropDownUserControl"
 
+{% endhighlight %}
 
-
-{ ![](Custom-Cell-Types_images/Custom-Cell-Types_img14.jpeg) | markdownify }
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img14.jpeg) 
 
 
 
@@ -855,27 +894,30 @@ Me.gridControl1(6, 2).CellType = "DropDownUserControl"
 
 Integer text box is used to display integer data-type values in the grid cells. This cell type can be added to the grid cells by registering its cell model using RegisterCellModel class. The following code example illustrates how to add the integer text box to grid cells using the RegisterCellModel class.
 
-[C#]
 
 
+{% highlight C# %}
 
 RegisterCellModel.GridCellType(this.gridControl1, CustomCellTypes.IntegerTextBox);
 
 this.gridControl1[4, 2].CellType = CustomCellTypes.IntegerTextBox.ToString();
+{% endhighlight %}
 
 
 
 
 
-[VB]
+{% highlight vbnet %}
+
+
 
 RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.IntegerTextBox)
 
 
 
 Me.gridControl1(4, 2).CellType = CustomCellTypes.IntegerTextBox.ToString()
-
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Integer TextBox Cell Demo/images/sample.png](Custom-Cell-Types_images/Custom-Cell-Types_img15.png) | markdownify }
+{% endhighlight %}
+![](Custom-Cell-Types_images/Custom-Cell-Types_img15.png) 
 
 
 
@@ -883,17 +925,21 @@ Me.gridControl1(4, 2).CellType = CustomCellTypes.IntegerTextBox.ToString()
 
 Double text box is used to display double data-type values in the grid cells. This cell type can be added to the grid cells by registering its cell model using RegisterCellModel class. The following code example illustrates how to add the double text box to grid cells using the RegisterCellModel class.
 
-[C#]
+
+{% highlight C# %}
+
 
  RegisterCellModel.GridCellType(this.gridControl1, CustomCellTypes.DoubleTextBox);
 
    this.gridControl1[4, 2].CellType= CustomCellTypes.DoubleTextBox.ToString();
+{% endhighlight %}
 
 
 
+{% highlight vbnet %}
 
 
-[VB]
+
 
 RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.DoubleTextBox)
 
@@ -901,9 +947,9 @@ RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.DoubleTextBox)
 
 Me.gridControl1(4, 2).CellType = CustomCellTypes.DoubleTextBox.ToString()
 
+{% endhighlight %}
 
-
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Double TextBox Cell Demo/images/sample.png](Custom-Cell-Types_images/Custom-Cell-Types_img16.png) | markdownify }
+![](Custom-Cell-Types_images/Custom-Cell-Types_img16.png) 
 
 
 
@@ -911,7 +957,8 @@ Me.gridControl1(4, 2).CellType = CustomCellTypes.DoubleTextBox.ToString()
 
 Percent text box is used to display percentage values in the grid cell. This cell type can be added to the grid cells by registering its cell model using RegisterCellModel class. The following code example illustrates how to add percent text box to grid cells using RegisterCellModel class.
 
-[C#]
+{% highlight C# %}
+
 
    RegisterCellModel.GridCellType(this.gridControl1, CustomCellTypes.PercentTextBox);
 
@@ -920,11 +967,13 @@ Percent text box is used to display percentage values in the grid cell. This cel
 this.gridControl1[5, 2].CellType = CustomCellTypes.PercentTextBox.ToString();
 
 
+{% endhighlight %}
 
 
 
-[VB]
 
+
+{% highlight vbnet %}
 
 
 RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.PercentTextBox)
@@ -932,8 +981,8 @@ RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.PercentTextBox)
 
 
 Me.gridControl1(4, 2).CellType = CustomCellTypes.PercentTextBox.ToString() 
-
-{ ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Custom Cell Type/Percentage TextBox Cell Demo/images/sample.png](Custom-Cell-Types_images/Custom-Cell-Types_img17.png) | markdownify }
+{% endhighlight %}
+ ![](Custom-Cell-Types_images/Custom-Cell-Types_img17.png)
 
 
 

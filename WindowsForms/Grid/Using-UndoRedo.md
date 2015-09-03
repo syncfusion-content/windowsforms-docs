@@ -24,8 +24,8 @@ The CommandStack property of the GridControl class will return a reference to Gr
 
 
 
-[C#]
 
+{% highlight c#  %}
 
 
 //Turns off the Undo buffer. 
@@ -58,7 +58,8 @@ this.gridControl1.CommandStack.Clear();
 
 
 
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
@@ -89,6 +90,7 @@ Me.gridControl1.CommandStack.RedoStack.Clear()
 'Clears both Undo and Redo buffers.
 
 Me.gridControl1.CommandStack.Clear()
+{% endhighlight   %}
 
 ## Transactions
 

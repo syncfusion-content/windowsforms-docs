@@ -7,12 +7,12 @@ control: GridControl
 documentation: ug
 ---
 
-### How can we make the Current Row Bold?
+# How can we make the Current Row Bold?
 
 To make the current row bold, use the below code sample.
 
-[C#]
 
+{% highlight c#  %}
 
 
 //There is no current row at this point, so refresh removes the bold text.
@@ -95,10 +95,10 @@ private void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewSty
 
 
 
-[VB.NET]
+{% endhighlight   %}
 
 
-
+{% highlight vbnet  %}
 //Adds the handlers...
 
 AddHandler Me.gridControl1.CurrentCellDeactivated, New GridCurrentCellDeactivatedEventHandler(AddressOf gridControl1_CurrentCellDeactivated)
@@ -185,5 +185,5 @@ AddHandler Me.gridControl1.PrepareViewStyleInfo, New GridPrepareViewStyleInfoEve
 
 
 
-
+{% endhighlight   %}
 

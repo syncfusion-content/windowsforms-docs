@@ -9,345 +9,445 @@ documentation: ug
 
 # Getting Started
 
-This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatical approach in a .NET application.
+This section will provide step-by-step procedure to create Grid control through designer and through programmatical approach in a .NET application.
 
-## Through Designer
+## Choosing the Best Grid
 
-In this lesson, you will learn how to use Forms Designer to create an Essential DataBound Grid. You can rely on the designer to generate all the codes necessary except for two lines: one that fills the ADO.NET adapter and one that updates the database when you are done.
+GridControl (GC) is a powerful grid control that is implemented using unique styles architecture. Grid control, which is similar to Microsoft Excel, allows extremely detailed customization down to the cell level. Multilevel undo-redo, shared scrollbar support, data view separation, floating cells, more than 18 cell types, and unmatched extensibility are the unique features of the Essential Grid. This is a complete native .NET UI library, which provides several packages for building modern Windows applications by using the Microsoft .NET framework. 
 
-### Basic DataBound Grid
+GridGroupingControl (GGC) is a column-row oriented grid that is used to bind to a data source. Essential Grouping allows you to easily group, sort, filter, and summarize your data. It can display true nested grids with hierarchical data and it can also display multiple unrelated tables in one grid.
 
-In this part, you will learn how to use the designer to place DataBound Grid on a form. 
+GridDataBoundGrid (GDBG) has been designed to be used as a grid bound to a data source such as an ADO.NET data set or data table. No data values are stored in the GridDataBoundGrid object. In GDBG, individual columns act as single entity (column-centric). Unlike the GridControl, GDBG is data bound. 
 
-1. In Visual Studio .NET, use the File -> Menu option to create a new Windows Application project, naming it DBGridTutorial.
+This section analyses the efficiency of the Grids based on the most important features. The following are the important features:
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+* Performance
+* Grouping
+* Sorting
+* Summary
+* ExcelExport
+* Filtering
 
+  ![](Getting-Started_images/Getting-Started_img1.png) 
 
+  * Sorting can be performed through customizing the GridSortColumnHeaderCellModel.
 
-You now have an empty form on the design surface. Open the Data section of your toolbox and drag a SQLDataAdapter onto your form. This will open a Data Adapter Wizard.
 
-Use the wizard to create a connection to the NorthWind database. This DataBase is installed as part of the .NET Framework ADO.NET samples.
+### Performance
 
+#### GridGroupingControl
 
+GridGroupingControl has an extremely high-performance standard. It can handle very high frequency updates and refresh scenarios. It also provides complete support for Virtual Mode wherein the data will be loaded only on demand. By simply setting a few properties, you can have the grid work with large amounts of data without affecting the performance. 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+N>  For more details, refer to the following section: Performance
 
+#### GridControl and GridDataBoundGrid
 
+GridControl has an extremely high performance standard. It can handle high frequency updates and work with large amounts of data without affecting the performance, similarly GridDataBoundGrid can also handle large amount of data without affecting the performance. 
 
+N> For more details, refer to the following section: Grid Data Bound Grid Performance and Performance
 
+### Grouping
 
-Select use SQL statements.
+#### GridGroupingControl
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+GridGroupingControl alone supports grouping. This control is exclusively designed for grouping.This control supports grouping data at design time too. Grouping at design time displays the grid as a tree view. For non-nested data tables, you can use this control to quickly provide custom views of data. 
 
+Grid Grouping control allows you to group the data based on one or more columns. When grouping is applied, the data will be organized into a hierarchical structure based on the matching field values.  This control enables you to combine identical value to form a group. Each group is identified by its GroupCaptionSection. You can expand this to view the records in the group. GroupCaptionSection provides information about a particular group such as the group name, number of items in the group and so on. The Grid Grouping control also provides Expand/Collapse button for every group. 
 
+N> For more details, refer to the following section: Grouping
 
+#### Sample 
 
+A sample of this feature is available in the following location: &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo
 
-To generate SQL statement, click Query Builder button.
+![](Getting-Started_images/Getting-Started_img5.jpeg) 
 
-{ ![](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+GridControl and the GridDataBoundGrid do not support Grouping.
 
+### Summary
 
+#### GridGroupingControl
 
+GridGroupingcontrol alone supports calculating summaries and allows you to display summaries for each group. This enables you to derive additional information from your data such as average, maximum and minimum, summation, count, and so on. This engine supports summaries that operate on vectors such as Distinct Count, Median, 25% and 75% Quartile. You can also easily add custom summaries.
 
+N> For more details, refer to the following section: Summaries
 
-In the Add Table dialog, select Products table and click Add, then Close.
+#### Sample
 
-{ ![](Getting-Started_images/Getting-Started_img5.jpeg) | markdownify }
+A sample of this feature is available in the following location:
 
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Calculate Summary\Summary Tutorial
 
+* GridControl and the GridDataBoundGrid do not support Summary.
 
+### Sorting
 
 
-In this Query Build window, select ProductName, ProductID, QuantityPerUnit and UnitPrice. Then press OK.
+#### GridGroupingControl
 
-{ ![](Getting-Started_images/Getting-Started_img6.jpeg) | markdownify }
+GridGroupingcontrol provides in-built support for sorting. This allows you to sort the table data against one or more columns and provides support to sort unlimited number of columns. While sorting, the grid will rearrange the data to match the current sort criteria.
 
+N> For more details, refer to the following section: Sorting
 
+#### Sample 
 
+A sample of this feature is available in the following location:
 
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo
 
-Click Next to confirm the Query you selected.
+#### GridDataBoundGrid
 
-{ ![](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
+GridDataBoundGrid allows you to arrange items in sequence, in different sets or in both. The following is the list of sorting behavior options that are available in GridDataBoundGrid:
 
+* SingleClick: Sort column on single click once.
+* DoubleClick: Sort column on double-click.
+* None: Sorting is disabled.
 
+  N> For more details, refer to the following section: Sorting By Display Member
 
+#### Sample 
 
+A sample of this feature is available in the following location:
 
-Click Finish. Your design surface will look similar to this.
+  &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Sorting\Sort By DisplayMember Demo
 
-{ ![](Getting-Started_images/Getting-Started_img8.jpeg) | markdownify }
+#### GridControl
 
+GridControl doesnot directly support sorting. Sorting can be performed through customizing the GridSortColumnHeaderCellModel. 
 
+#### Sample 
 
-Next you will need to generate a dataset from the SQLDataAdapter. Right-click sqlDataAdapter1 under the design surface and select Generate DataSet. You will then see this window.
+The sample in the following location illustrates how to implement header-click sorting for the GridControl based grids. 
 
-{ ![](Getting-Started_images/Getting-Started_img9.jpeg) | markdownify }
+  &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Sorting Demo\
 
+#### Sort Icon Placement
 
+This feature is used to place the sort icon in different positions of the column header cell of the grid. The default position of the sort icon is to the right.
 
+The position options include:
 
+* Right
+* Top
+* Left 
 
-Press OK to add DataSet11 object next to sqlConnection1 under the design surface.
-
-From the toolbox, drag Grid Data Bound Grid control to your form. Size and position it and add a button labeled Update to your form.
-
-{ ![](Getting-Started_images/Getting-Started_img10.jpeg) | markdownify }
-
-
-
-
-
-Click DataBound Grid to display its properties in PropertyGrid. Set these properties.
-
-
-
-_Table 7: Properties_
+_Table 4: Properties_
 
 <table>
 <tr>
-<td>
-DataSource</td><td>
-DataSet11</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
-DisplayMember</td><td>
-Products</td></tr>
+SortIconPlacement.Right</td><td>
+Gets or sets the icon placement to the right side of the column header cell.</td><td>
+SortIconPlacement</td><td>
+enumeration</td></tr>
+<tr>
+<td>
+SortIconPlacement.Top</td><td>
+Gets or sets the icon placement to the top side of the column header cell.</td><td>
+SortIconPlacement</td><td>
+enumeration</td></tr>
+<tr>
+<td>
+SortIconPlacement.Left</td><td>
+Gets or sets the icon placement to the left side of the column header cell.</td><td>
+SortIconPlacement</td><td>
+enumeration</td></tr>
 </table>
-Double click the form on the design surface (not one of the controls, but the form itself) to add a load event handler. In this handler, add the single statement given below.
 
-[C#]
+##### Sample Link
 
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo
 
+##### Adding Sort Icon Placement to an Application 
 
-//Loads dataset with records.
+To enable this feature, use the following code:
 
-this.sqlDataAdapter1.Fill(this.dataSet11);
+{% highlight c# %}
 
+this.gridGroupingControl1.SortIconPlacement = SortIconPlacement.Top;  
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
+Me.gridGroupingControl1.SortIconPlacement = SortIconPlacement.Top
 
+{% endhighlight %}
 
-'Loads dataset with records.
+![](Getting-Started_images/Getting-Started_img9.png)
 
-Me.sqlDataAdapter1.Fill(Me.dataSet11)
 
 
+### Excel Export
 
-To support updating data in your database, you will need to call Update command on the SQLDataAdapter. Double click Update button on the design surface to add a Click Handler. Then add this single line of code to the handler.
+Essential Grid control has built-in support for Excel. You can download the data from the Grid control or Grid Data Bound Grid or Grouping Grid control into an Excel spreadsheet for offline verification and computation. 
 
+#### GridGroupingControl
 
+This control automatically copies the Grid's styles, formats, groups, summary rows and expression fields to Excel. This enables you to export the grid with or without nested tables. It provides support for exporting grid with four different views. They are: 
 
-[C#]
+* Default
+* Visible
+* RowHeader 
+* ColumnHeader.
+  N> For more details, refer to the following section:_ Exporting Grid Grouping Control To Excel
 
+#### Sample 
 
+A sample of this feature is available in the following location:
 
-//Saves Changes(if any) back to the database.
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo
 
-this.sqlDataAdapter1.Update(this.dataSet11);
+#### GridControl and GridDataBoundGrid
 
+GridExcelConverter class enables you to export data from a Grid control or Grid Data Bound Grid into Excel. This control automatically copies the Grid's styles and formats to Excel. 
 
+N> For more details, refer to the following section:_ [Exporting the Grid Control or Grid Data Bound Grid To Excel](http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/default.htm?turl=Documents%2F3161exportingthegridcontrolorgriddataboundgridtoexcel.htm)
 
-[VB.NET]
+#### Sample 
 
+A sample of this feature is available in the following location:
 
+#### For GDBG: 
 
-'Saves Changes (if any) back to the database.
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Export\DBG XLS Export Demo
 
-Me.sqlDataAdapter1.Update(Me.dataSet11);
+#### For GC:
 
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Export Demo
 
+### Filtering
 
-Now when you click Update button, it will post the changes made back to your database.
+#### GridGroupingControl
 
-### Applying Special Column Formats
+This control enables you to specify the logical condition for filtering. Similar to an Expression Field, this control also provides the option of typing an expression or entering a condition using an editor dialog for filtering.
 
-GridBoundColumn collection property of DataBound Grid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
+#### Filterbar
 
-{ ![](Getting-Started_images/Getting-Started_img11.jpeg) | markdownify }
+Grouping Grid provides in-built support for displaying _Filter_ _Bar_across columns. It can be used to filter and clear filter at run time. This is user interactive and has more advantages.  One of the main reasons for its wide usage is that this can display various filter options for the columns. You can also add your own filter criteria.
 
+#### Dynamic filter
 
+Dynamic Filter serves as good replacement for Filter Bar. This provides advanced filtering capabilities. This is built on the foundation of the regular filter bar with added provisions to support dynamic filtering. The dynamic filter can be used with Nested Tables and Nested Groups.
 
+N> For more details, refer to the following section: Record Filtering
 
+#### Sample 
 
-1. Open GridBoundColumns collection editor by using property grid.
+A sample of this feature is available in the following location:
 
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions
 
+#### GridDataBoundGrid 
 
-Click Add button to add a grid bound column, and then set MappingName property of that grid bound column to _ProductName_.
+You can enable filtering for the grid based on GridDataBoundGrid, by adding a row of drop-down cells at the top of a simple (non-hierarchical) Grid Data Bound Grid. This allows you to filter match values from the drop-down. This control also supports filter by DisplayMember. 
 
-{ ![](Getting-Started_images/Getting-Started_img12.jpeg) | markdownify }
+N> For more details, refer to the following section: Filtering a Grid Data Bound Grid
 
+#### Sample 
 
+A sample of this feature is available in the following location:
 
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Filtering\Filter By DisplayMember Demo
 
+#### Filter for Specific Columns
 
-Select StyleInfo property and set BackColor for the column as shown in the following screen shot.
+When a filter is wired to a grid, it is wired to the entire grid. This makes it difficult to use different filters (e.g., dynamic filter, Excel-style filter, and filter by display member) in a single grid.
 
-{ ![](Getting-Started_images/Getting-Started_img13.jpeg) | markdownify }
+Here is a short description of each filter:
 
+* Dynamic Filter—Filters the content using a list of comparison operators.
+* Ordinary Filter—Filters the content based on the selected text and index.
+* Excel-Style Filter—Filters the content based on multiple values and can sort the results, similar to Microsoft Excel filtering.
+* Filter by Display Member—Filters the content by displaying the member instead of the value member of a combo-box column.
 
+This feature enhances the use of different filters within a single grid. The filters are wired to each column by changing the cell type of the corresponding column, which enables users to apply many filters.
 
+A filter can be applied to an individual column by setting the AllowIndividualColumnWiring property of the filter to true.
 
+_Table 5: Properties_
 
-Repeat the above steps to add Grid Bound Columns for 'UnitPrice' and 'UnitsInStock'. For the 'UnitPrice' Grid Bound Column, set StyleInfo.Format to _C_.
+<table>
+<tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
+<tr>
+<td>
+AllowIndividualColumnWiring</td><td>
+Gets or sets whether the filters can be wired to an individual column. </td><td>
+Bool</td><td>
+Bool</td></tr>
+</table>
 
-{ ![](Getting-Started_images/Getting-Started_img14.jpeg) | markdownify }
+![](Getting-Started_images/Getting-Started_img14.png)
 
+##### Sample Link
 
+A sample is available in the following location:
 
-Compile and run the project to see formatted Grid Data Bound Grid. In the following screen shot, you will be able to see the grid with columns specified and in the order that you specified them. Notice that the 'UnitPrice' column shows the price in specified currency format.
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo
 
-{ ![](Getting-Started_images/Getting-Started_img15.jpeg) | markdownify }
+##### Enable Filters on Desired Columns
 
+The following code is used to enable filters in specific columns:
 
+{% highlight c# %}
 
+GridDynamicFilter filter = new GridDynamicFilter();
 
+filter.AllowIndividualColumnWiring  = true;
+
+filter.WireGrid(gridGroupingControl1);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+ Dim filter As New GridDynamicFilter()
+
+filter.AllowIndividualColumnWiring  = true;
+
+filter.WireGrid(gridGroupingControl1);
+
+{% endhighlight %}
+
+Dynamic filter is wired to column 0 by using the following code:
+
+{% highlight c# %}
+
+this.gridGroupingControl1.TableDescriptor.Columns[0].Appearance.FilterBarCell.CellType = "DynamicFilterCell";
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.gridGroupingControl1.TableDescriptor.Columns[0].Appearance.FilterBarCell.CellType = "DynamicFilterCell";
+
+{% endhighlight %}
+
+Other filters can be wired to the grids column by using the previous code.
+
+## Through Designer
+
+To make the task of designing Grid control easier on cell level, a new Designer Editor has been added. With the editor, grid can be modified and saved (and loaded) to xml formatted files or Soap formatted templates. There is also no longer Toggle Interactive Mode design verb that was present in versions prior to 4.1.
+
+To add a Grid Control to the Application
+
+Following steps illustrate how to add Grid control to your application.
+
+1. Drag the GridControl component from the toolbox onto the form.
+
+   ![](Getting-Started_images/Getting-Started_img15.jpeg) 
+
+   To edit cell level properties of the grid (and also general Grid control properties), right-click anywhere in the Grid control and select Edit.
+
+   ![](Getting-Started_images/Getting-Started_img16.jpeg) 
+
+   This opens the GridControl Designer window. By using GridControl Designer, cell contents or styles, and general grid properties can be modified.
+
+   ![](Getting-Started_images/Getting-Started_img17.jpeg)
+
+   Single cells can be modified along with a selection of ranges. To do this, select a range of cells, and switch to the Selected Range tab to view the property grid for the selection.
+
+   ![](Getting-Started_images/Getting-Started_img18.jpeg)
+
+   GridControl Designer also lets you to save/load xml formatted files, and Soap templates.
+
+2. When the changes are complete, simply exit the designer. If changes have been made, you will be prompted to save the changes to the Grid control in the designer.
+
+3. Click OK to apply settings to the grid control.
+
+
+
+See Also Through Code
 
 ## Through Code
 
-Here are some code samples that will create a DataTable and bind it a to Grid Data Bound Grid. Once you have a DataTable object populated you can use the GridDataBoundGrid.DataSource property to implement the binding.
 
 
+The following code examples illustrate how to create a Grid control through code.
 
-[C#]
+{% highlight vbnet %}
 
 
 
-DataTable myDataTable = new DataTable("MyDataTable");
+//Creates the Essential Grid.
 
-//Declares the Data Column and Data Row variables.
+private Syncfusion.Windows.Forms.Grid.GridControl gridControl1;
 
-DataColumn myDataColumn;
+....
 
-DataRow myDataRow;
+this.gridControl1 = new Syncfusion.Windows.Forms.Grid.GridControl();
 
 
 
-//Creates a new Data Column, sets the Data Type and Column Name and adds to the Data Table.   
+//Sets the number of rows and columns.
 
-myDataColumn = new DataColumn();
+this.gridControl1.ColCount = 10;
 
-myDataColumn.DataType = System.Type.GetType("System.Int32");
+this.gridControl1.RowCount = 100;
 
-myDataColumn.ColumnName = "id";
 
-myDataTable.Columns.Add(myDataColumn);
 
+//Positions it on the form.
 
+this.gridControl1.Location = new System.Drawing.Point(20, 20);
 
-//Creates a second column.
+this.gridControl1.Size = new System.Drawing.Size(344, 200);
 
-myDataColumn = new DataColumn();
 
-myDataColumn.DataType = Type.GetType("System.String");
 
-myDataColumn.ColumnName = "item";
+//Adds it to the form's controls.
 
-myDataTable.Columns.Add(myDataColumn);
+this.Controls.Add(this.gridControl1);
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-//Creates new Data Row objects and adds to the Data Table.    
 
-for (int i = 0; i <= 10; i++)
 
-{
+'Creates the Essential Grid.
 
-    myDataRow = myDataTable.NewRow();
+Private WithEvents gridControl1 As GridControl
 
-    myDataRow["id"] = i;
+        ....
 
-    myDataRow["item"] = "item " + i.ToString();
+Me.gridControl1 = New Syncfusion.Windows.Forms.Grid.GridControl()
 
-    myDataTable.Rows.Add(myDataRow);
 
-}
 
-this.GridDataBoundGrid1.DataSource = myDataTable;
+'Sets the number of rows and columns.
 
+ Me.gridControl1.ColCount = 10
 
+ Me.gridControl1.RowCount = 100
 
-//Sizes the columns.
 
-this.GridDataBoundGrid1.Model.ColWidths[1] = 30;
 
-this.GridDataBoundGrid1.Model.ColWidths[2] = 50;
+'Positions it on the form.
 
+ Me.gridControl1.Location = New System.Drawing.Point(20, 15)
 
+ Me.gridControl1.Size = New System.Drawing.Size(344, 150)
 
-[VB.NET]
 
 
+'Adds it to the form's controls.
 
-Dim myDataTable As DataTable = New DataTable("MyDataTable")
+Me.Controls.Add(Me.gridControl1)
 
+{% endhighlight %}
 
-
-'Declares the Data Column and Data Row variables.
-
-Dim myDataColumn As DataColumn
-
-Dim myDataRow As DataRow
-
-
-
-'Creates a new Data Column, sets Data Type and Column Name and adds to the Data Table. 
-
-myDataColumn = New DataColumn()
-
-myDataColumn.DataType = System.Type.GetType("System.Int32")
-
-myDataColumn.ColumnName = "id"
-
-myDataTable.Columns.Add(myDataColumn)
-
-
-
-'Creates a second column.
-
-myDataColumn = New DataColumn()
-
-myDataColumn.DataType = Type.GetType("System.String")
-
-myDataColumn.ColumnName = "item"
-
-myDataTable.Columns.Add(myDataColumn)
-
-
-
-'Creates new Data Row objects and adds to the Data Table.    
-
-Dim i As Integer
-
-For i = 0 To 10
-
-myDataRow = myDataTable.NewRow
-
-myDataRow("id") = i
-
-myDataRow("item") = "item " & i
-
-myDataTable.Rows.Add(myDataRow)
-
-Next i
-
-
-
-Me.gridDataBoundGrid1.DataSource = myDataTable
-
-
-
-'Sizes the columns.
-
-Me.gridDataBoundGrid1.Model.ColWidths(1) = 30
-
-Me.gridDataBoundGrid1.Model.ColWidths(2) = 50
-
-
+See Also Through Designer
 

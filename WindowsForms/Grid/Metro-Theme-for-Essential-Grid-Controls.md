@@ -17,7 +17,7 @@ This feature enables you to apply new Metro styles to the controls of Essential 
 * GridList control
 * GridRecordNavigation control
 
-### Use case scenarios
+## Use case scenarios
 
 The Metro theme support is useful for commercial applications in order to attract end users with inspiring UI look and feel.
 
@@ -37,7 +37,7 @@ This is an enumeration type property. It is used to get or set the visual styles
 </table>
 
 
-_Table 1243: Event Table_
+_Table1243: Event Table_
 
 <table>
 <tr>
@@ -57,23 +57,23 @@ Occurs when the ThemesEnabled property is changed.</td></tr>
 
 You can apply Metro theme to an application by setting GridVisualStyles property as Metro. The following code example illustrates how to apply Metro theme for the GridGrouping control.
 
-{% highlight c# %}
+{% highlight c#  %}
 
 this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Metro;
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Metro
-
-{% endhighlight %}
-
-
+{% endhighlight   %}
 
 The following screenshot is a sample output for the previous code.
 
-![](Metro-Theme-for-Essential-Grid-Controls_images/Metro-Theme-for-Essential-Grid-Controls_img1.png)
+![](Metro-Theme-for-Essential-Grid-Controls_images/Metro-Theme-for-Essential-Grid-Controls_img1.png) 
+
+
 
 ## Applying User-Defined Colors as Metro Themes
 
@@ -95,22 +95,30 @@ A method that takes the user-defined back color, mouse hover color, and mouse pr
 </table>
 
 
-![](Metro-Theme-for-Essential-Grid-Controls_images/Metro-Theme-for-Essential-Grid-Controls_img2.png)
+![E:/Vol 2 Release/Feature/Metro Theme/snap/GridControl.PNG](Metro-Theme-for-Essential-Grid-Controls_images/Metro-Theme-for-Essential-Grid-Controls_img2.png) 
+
+
 
 ![](Metro-Theme-for-Essential-Grid-Controls_images/Metro-Theme-for-Essential-Grid-Controls_img3.png)
 
 
-![](Metro-Theme-for-Essential-Grid-Controls_images/Metro-Theme-for-Essential-Grid-Controls_img4.png)
 
 
-{% highlight c# %}
+
+![](Metro-Theme-for-Essential-Grid-Controls_images/Metro-Theme-for-Essential-Grid-Controls_img4.png) 
+
+
+
+{% highlight c#  %}
 
 this.gridControl1.SetMetroStyle(Color.Pink, Color.Plum, Color.PowderBlue);
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+
 
 Me.gridControl1.SetMetroStyle(Color.Pink, Color.Plum, Color.PowderBlue)
 
-{% endhighlight %}
+{% endhighlight   %}
+

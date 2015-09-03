@@ -1,0 +1,433 @@
+---
+layout: post
+title: GroupBar Events
+description: overview
+platform: windowsforms
+control: GroupBar
+documentation: ug
+---
+# GroupBar Events
+
+The list of events and a detailed explanation about each of them is given in the following sections.
+
+_Table_ _556__: Events Table_
+
+<table>
+<tr>
+<td>
+GroupBar Events</td><td>
+Description</td></tr>
+<tr>
+<td>
+GroupBarItemAdded</td><td>
+This event is handled after a GroupBar Item is added to the GroupBar Items Collection.</td></tr>
+<tr>
+<td>
+GroupBarItemRemoved</td><td>
+This event is handled after a GroupBar Item is removed from the GroupBar Items Collection.</td></tr>
+<tr>
+<td>
+GroupBarItemRenamed</td><td>
+This event is handled after a GroupBar Item is renamed by an in-place edit operation.</td></tr>
+<tr>
+<td>
+GroupBarItemSelectionChanging</td><td>
+This event occurs when a GroupBar Item is being selected in the GroupBar control.</td></tr>
+<tr>
+<td>
+GroupBarItemSelected </td><td>
+This event occurs when a GroupBar Item of the GroupBar control is selected.</td></tr>
+<tr>
+<td>
+ShowContextMenu</td><td>
+This event occurs when the right mouse button is clicked over the GroupBar control.</td></tr>
+<tr>
+<td>
+NavigationPaneDropDownClick</td><td>
+This event occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button.</td></tr>
+<tr>
+<td>
+ProvideGroupBarItemBrush</td><td>
+This event occurs when a GroupBar Item is about to be drawn.</td></tr>
+</table>
+
+
+## GroupBarItemAdded Event
+
+This event is handled after a GroupBar Item is added to the GroupBar Items Collection. It is handled to create client controls when new GroupBar Items are added at runtime.
+
+The event handler of this event receives an argument of type GroupBarItemEventArgs.
+
+{% highlight C# %}  
+
+// The GroupBarItemAdded event occurs when a GroupBar Item is added to the GroupBar Items Collection.
+
+private void grpbr_GroupBarItemAdded(object sender, GroupBarItemEventArgs args)
+
+{
+
+listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {"GroupBarItemAdded", "Item Added: " +args.Item.Text});
+
+this.listView1.Items.Add(listViewItem1);
+
+}
+
+{% endhighlight %}
+
+
+
+{% highlight vbnet %} 
+
+// The GroupBarItemAdded event occurs when a GroupBar Item is added to the GroupBar Items Collection.
+
+Private Sub grpbr_GroupBarItemAdded(ByVal sender As Object, ByVal args As GroupBarItemEventArgs)
+
+listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemAdded", "Item Added: " + args.Item.Text})
+
+Me.listView1.Items.Add(listViewItem1)
+
+End Sub
+
+{% endhighlight %}
+
+
+## GroupBarItemRemoved Event
+
+This event is handled after a GroupBar Item is removed from the GroupBar Items Collection. It is handled to dispose client 
+controls when GroupBar Items are removed at runtime.
+
+The event handler of this event receives an argument of type GroupBarItemEventArgs.
+
+{% highlight C# %}  
+
+// The GroupBarItemRemoved event occurs when a GroupBar Item is removed from the GroupBar Items Collection.
+
+private void grpbr_GroupBarItemRemoved(object sender, GroupBarItemEventArgs args)
+
+{
+
+listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {"GroupBarItemRemoved", "Item Removed: " +args.Item.Text});
+
+this.listView1.Items.Add(listViewItem1);
+
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %} 
+
+// The GroupBarItemRemoved event occurs when a GroupBar Item is removed from the GroupBar Items Collection.
+
+Private Sub grpbr_GroupBarItemRemoved(ByVal sender As Object, ByVal args As GroupBarItemEventArgs)
+
+listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemRemoved", "Item Removed: " + args.Item.Text})
+
+Me.listView1.Items.Add(listViewItem1)
+
+End Sub
+
+{% endhighlight %}
+
+
+## GroupBarItemRenamed Event
+
+This event is handled after a GroupBar Item is renamed by an inplace edit operation. It is handled when a GroupBar Item is renamed at runtime.
+
+The event handler of this event receives an argument of type GroupItemRenamedEventArgs.
+
+{% highlight C# %}  
+
+// The GroupBarItemRenamed event occurs when a GroupBar Item is renamed by an inplace edit operation.
+
+private void grpbr_GroupBarItemRenamed(object obj, GroupItemRenamedEventArgs arg)
+
+{
+
+listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {"GroupBarItemRenamed", "Item Renamed: " +arg.Index + " NewLabel: " + arg.NewLabel + " OldLabel: " + arg.OldLabel});
+
+this.listView1.Items.Add(listViewItem1);
+
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %} 
+
+// The GroupBarItemRenamed event occurs when a GroupBar Item is renamed by an inplace edit operation.
+
+Private Sub grpbr_GroupBarItemRenamed(ByVal obj As Object, ByVal arg As GroupItemRenamedEventArgs)
+
+listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemRenamed", "Item Renamed: " + arg.Index + " NewLabel: " + arg.NewLabel + " OldLabel: " + arg.OldLabel})
+
+Me.listView1.Items.Add(listViewItem1)
+
+End Sub
+
+{% endhighlight %}
+
+
+## GroupBarItemSelectionChanging Event
+
+This event occurs when a GroupBar Item is selected in the GroupBar control. It is handled when a GroupBar Item is selected at 
+runtime.
+
+The event handler of this event receives an argument of type GroupItemSelectionChangingEventArgs.
+
+{% highlight C# %}  
+
+// The GroupBarItemSelected event occurs when a GroupBar Item is selected in the GroupBar control. 
+
+private void grpbr_GroupBarItemSelectionChanging(object sender, GroupBarItemSelectionChangingEventArgs args)
+
+{
+
+listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {"GroupBarItemSelectionChanging ", "Old Selected: " +args.OldSelected.ToString() +" New Selected: " + args.NewSelected.ToString()});
+
+this.listView1.Items.Add(listViewItem1);
+
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %} 
+
+
+
+// The GroupBarItemSelected event occurs when a GroupBar Item is selected in the GroupBar control. 
+
+Private Sub grpbr_GroupBarItemSelectionChanging(ByVal sender As Object, ByVal args As GroupBarItemSelectionChangingEventArgs)
+
+listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemSelectionChanging ", "Old Selected: " + args.OldSelected.ToString() + " New Selected: " + args.NewSelected.ToString()})
+
+Me.listView1.Items.Add(listViewItem1)
+
+End Sub
+
+{% endhighlight %}
+
+
+## GroupBarItemSelected Event
+
+It occurs when a GroupBar Item of the GroupBar control is selected. Accessing the GroupBar.SelectedItem property from within the GroupBarItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked. 
+
+The event handler of this event receives an argument of type EventArgs.
+
+{% highlight C# %}  
+
+// Provide a handler for the GroupBar.GroupBarItemSelected event.
+
+this.groupBar1.GroupBarItemSelected += new System.EventHandler(this.groupBar1_GroupBarItemSelected); 
+
+// GroupBar.GroupBarItemSelected event handler.
+
+// The GroupBar.SelectedItem property fetches the index of the selected item, while the item is obtained by referencing the selected index within the GroupBar.GroupBarItems collection.
+
+private void groupBar1_GroupBarItemSelected(object sender, System.EventArgs e)
+
+{
+
+Trace.WriteLine(String.Concat("Selected Item = ", this.groupBar1.GroupBarItems[this.groupBar1.SelectedItem].Text)); 
+
+}
+
+{% endhighlight %}
+
+
+
+{% highlight vbnet %} 
+
+' Provide a handler for the GroupBar.GroupBarItemSelected event.
+
+Private Me.groupBar1.GroupBarItemSelected += New System.EventHandler(Me.groupBar1_GroupBarItemSelected)
+
+' GroupBar.GroupBarItemSelected event handler.
+
+' The GroupBar.SelectedItem property fetches the index of the selected item, while the item is obtained by referencing the selected index within the GroupBar.GroupBarItems collection.
+
+Private Sub groupBar1_GroupBarItemSelected(ByVal sender As Object, ByVal e As System.EventArgs)
+
+Trace.WriteLine(String.Concat("Selected Item = ", Me.groupBar1.GroupBarItems(Me.groupBar1.SelectedItem).Text))
+
+End Sub
+
+{% endhighlight %}
+
+
+## ShowContextMenu Event
+
+It occurs on right-clicking the mouse button over the GroupBar control. It is handled when the mouse is right-clicked over the GroupBar control at runtime.
+
+The event handler receives an argument of type EventArgs.
+
+{% highlight C# %}  
+
+private void groupBar1_ShowContextMenu(object sender, EventArgs e)
+
+{
+
+  // You can see the below line in the output window during run-time.
+
+Console.Write(" ShowContextMenu Event is raised ");
+
+}
+
+{% endhighlight %}
+
+
+
+{% highlight vbnet %} 
+
+Private Sub groupBar1_ShowContextMenu(ByVal sender As Object, ByVal e As EventArgs)
+
+  // You can see the below line in the output window during run-time.
+
+Console.Write(" ShowContextMenu Event is raised ")
+
+End Sub
+
+{% endhighlight %}
+
+
+## NavigationPaneDropDownClick Event
+
+It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the 
+Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to True. The event handler receives an argument of 
+type NavigationPaneDropDownClickEventArgs containing data related to this event.
+
+The following event property is associated with the NavigationPaneDropDownClickEventArgs.
+
+_Table_ _557__: Member Table_
+
+<table>
+<tr>
+<td>
+Member</td><td>
+Description</td></tr>
+<tr>
+<td>
+ContextMenuProvider</td><td>
+Returns the menu provider object used by the GroupBar for creating it's context menu.</td></tr>
+</table>
+
+
+{% highlight C# %}  
+
+private void groupBar1_NavigationPaneDropDownClick(object sender, NavigationPaneDropDownClickEventArgs e)
+
+{
+
+  // NavigationPaneDropDownClick Event has a property called ContextMenuProvider which returns the object   
+
+// used for creating the context menu.
+
+Console.Write(" NavigationPaneDropDownClick Event is raised ");
+
+Console.Write("ContextMenuProvider :" + e.ContextMenuProvider.ToString());
+
+}
+
+{% endhighlight %}
+
+
+
+{% highlight vbnet %} 
+
+Private Sub groupBar1_NavigationPaneDropDownClick(ByVal sender As Object, ByVal e As NavigationPaneDropDownClickEventArgs)
+
+// NavigationPaneDropDownClick Event has a property called ContextMenuProvider which returns the object   
+
+// used for creating the context menu.
+
+Console.Write(" NavigationPaneDropDownClick Event is raised ")
+
+Console.Write("ContextMenuProvider :" + e.ContextMenuProvider.ToString())
+
+End Sub
+
+{% endhighlight %}
+
+## ProvideGroupBarItemBrush Event
+
+It occurs when a GroupBar Item is about to be drawn. The event handler receives an argument of type ProvideGroupBarItemBrushEventArgs. 
+
+The event properties associated with the ProvideGroupBarItemBrushEventArgs are given below.
+
+_Table_ _558__: Members Table_
+
+<table>
+<tr>
+<td>
+Members</td><td>
+Description</td></tr>
+<tr>
+<td>
+BackgroundBrush</td><td>
+Gets / sets the brush that will be used to draw the specified bounds.</td></tr>
+<tr>
+<td>
+Bounds</td><td>
+Returns the bounds for which a brush is requested.</td></tr>
+<tr>
+<td>
+Item</td><td>
+Returns the index of the GroupBar Item being drawn.</td></tr>
+</table>
+
+
+{% highlight C# %}  
+
+private void gbOutlook_ProvideGroupBarItemBrush(object sender, Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs args)
+
+{
+
+System.Drawing.Drawing2D.Blend blend = new System.Drawing.Drawing2D.Blend();
+
+blend.Factors = new float[] { 0.0f, 0.0f, 1.0f };
+
+blend.Positions = new float[] { 0.0F, 0.5f, 1.0F };
+
+// Estimate the GroupBar Item bounds.
+
+Rectangle rcgroupbaritem = args.Bounds;
+
+// Create and initialize the LinearGradientBrush.
+
+System.Drawing.Drawing2D.LinearGradientBrush lgbrush = new System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, gbOutlook.GroupBarItems[0].BackColor, SystemColors.ScrollBar, 90, true);
+
+lgbrush.Blend = blend;
+
+args.BackgroundBrush = lgbrush;
+
+}
+
+{% endhighlight %}
+
+
+
+{% highlight vbnet %} 
+
+Private Sub gbOutlook_ProvideGroupBarItemBrush(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs)
+
+Dim blend As New System.Drawing.Drawing2D.Blend()
+
+blend.Factors = New Single() {0.0F, 0.0F, 1.0F}
+
+blend.Positions = New Single() {0.0F, 0.5F, 1.0F}
+
+' Estimate the GroupBar Item bounds. 
+
+Dim rcgroupbaritem As Rectangle = args.Bounds
+
+' Create and initialize the LinearGradientBrush. 
+
+Dim lgbrush As New System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, gbOutlook.GroupBarItems(0).BackColor, SystemColors.ScrollBar, 90, True)
+
+lgbrush.Blend = blend
+
+args.BackgroundBrush = lgbrush
+
+End Sub
+
+{% endhighlight %}

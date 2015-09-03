@@ -7,17 +7,13 @@ control: GridControl
 documentation: ug
 ---
 
-## Elaborate Structure of the Control
+# Elaborate Structure of the Control
 
 This section lists the important elements that are used by the grouping grid to organize data. These grid elements can have specific appearance and behavior. The following screen shot points out the various grid elements.
 
-{ ![](Elaborate-Structure-of-the-Control_images/Elaborate-Structure-of-the-Control_img1.png) | markdownify }
+![](Elaborate-Structure-of-the-Control_images/Elaborate-Structure-of-the-Control_img1.png)
 
-
-
-
-
-Elements of Grid Control
+## Elements of Grid Control
 
 * Caption Section-This is the first section within a group that provides caption bar above column headers. If a caption should be displayed at the beginning of each group, then Caption Sections are created when the grouping for a table is initialized.
 * Column Header Section-This section will appear at the top of a table or a group, below the caption section. Column Header Section is a place holder where grouping grid displays column headers.

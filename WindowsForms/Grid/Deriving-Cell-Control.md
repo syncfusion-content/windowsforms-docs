@@ -21,9 +21,9 @@ _Table 25: Samples_
 
 <table>
 <tr>
-<td>
-SAMPLES</td><td>
-DESCRIPTION</td></tr>
+<th>
+SAMPLES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 ExcelSelectionMarker</td><td>
@@ -69,8 +69,8 @@ See Also
 
 The main function of GridCellModelBase derived class is to serialize your control. It can hold any persistent state independent data that your control uses. The state dependent data should be part of GridStyleInfo object for the cell, but any other persistent property (for example, the initial height of a drop-down) will be in this GridCellModelBase derived class. Another major function of this class is to create cellrenderer object of the correct type. In fact, the only required override in GridCellModelBase derived class is the CreateRenderer method. In that override, you can create and return GridCellRendererBase derived object that would handle the user interactions in your new cell type. In general, you probably will not be able to derive directly from the base class, but instead from an existing Essential Grid derived class such as GridStaticCellModel. The following code example illustrates this.
 
-[C#]
 
+{% highlight c# %}
 
 
 //Defines custom Cell Model by inheriting GridStaticCellModel.
@@ -109,8 +109,9 @@ return new LinkLabelCellRenderer(control, this);
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 'Defines custom Cell Model by inheriting GridStaticCellModel.
@@ -150,6 +151,7 @@ Public Class LinkLabelCellModel
     End Function
 
 End Class
+{% endhighlight  %}
 
 ## GridCellRendererBase
 
@@ -159,9 +161,9 @@ _Table 26: Virtual members to override_
 
 <table>
 <tr>
-<td>
-VIRTUAL METHODS</td><td>
-DESCRIPTION</td></tr>
+<th>
+VIRTUAL METHODS</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 OnInitialize(int rowIndex, int colIndex)</td><td>

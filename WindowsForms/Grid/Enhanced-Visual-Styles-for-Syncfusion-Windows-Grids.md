@@ -13,7 +13,7 @@ This feature enables you to apply an enhanced visual styles for Windows Grids: G
 
 By default, EnableLegacyStyle property value is true.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 You can use this control to apply skin for the entire control including the scrollbars, combo box, drop-down container, filter, and so on.
 
@@ -37,12 +37,11 @@ Specifies whether the grid combo box should contain GridList control.</td><td>
 Boolean</td></tr>
 </table>
 
-
-#### Sample Link
+## Sample Link
 
 Samples for the feature are available in the following locations: 
 
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Skin Customization Demo
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Skin Customization Demo_
 
 ## Applying Enhanced GridVisualStyle to the Application
 
@@ -53,17 +52,15 @@ The following code illustrates how to enable enhanced GridVisualStyle. 
 {% highlight c# %}
 
 this.gridGroupingControl1.TableModel.EnableLegacyStyle = false;
-
-{% endhighlight %}
+{% endhighlight  %}
 
 {% highlight vbnet %}
 
+
 Me.gridGroupingControl1.TableModel.EnableLegacyStyle = False
+{% endhighlight  %}
 
-{% endhighlight %}
-
-
-### EnhancedGridVisualStyle
+## EnhancedGridVisualStyle
 
 You can apply one of the following skins to the control using EnhancedGridVisualStyle property: 
 
@@ -77,23 +74,24 @@ You can apply one of the following skins to the control using EnhancedGridVisual
 * Metro
 * SystemTheme 
 
-### SystemTheme is the default skin.
+## SystemTheme is the default skin.
 
 The following code illustrated how to customize the skin for the control: 
 
-{% highlight c# %}
 
+{% highlight c# %}
 this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2007Black;
 
-{% endhighlight %}
+{% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vbnet  %}
 
 this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2007Black
+{% endhighlight  %}
 
-{% endhighlight %}
+![](Enhanced-Visual-Styles-for-Syncfusion-Windows-Grids_images/Enhanced-Visual-Styles-for-Syncfusion-Windows-Grids_img1.png) 
 
-![](Enhanced-Visual-Styles-for-Syncfusion-Windows-Grids_images/Enhanced-Visual-Styles-for-Syncfusion-Windows-Grids_img1.png)
+
 
 ## Combo Box
 
@@ -101,31 +99,32 @@ Skin cannot be applied to ListBox control inside combo box. To overcome this li
 
 The following code illustrated this: 
 
-{% highlight c# %}
 
+{% highlight c# %}
 this.gridControl1.Model.EnableGridListControlInComboBox = true;
 
-{% endhighlight %}
-
+{% endhighlight  %}
 {% highlight vbnet %}
 
+
+
 Me.gridControl1.Model.EnableGridListControlInComboBox = true
-
-{% endhighlight %}
-
+{% endhighlight  %}
 
 If you want to create an application for which the combo box is created from GridComboBoxCellModel and not to use GridDropDownGridListControlCellModel, you need to set EnableGridListControlInCobmoBox property to false. By default, this is set to true.
 
 The following code illustrates how to disable EnableGridListControlInCobmoBox property:
 
+
 {% highlight c# %}
+this.gridControl1.Model.EnableGridListControlInComboBox = false;
+
+{% endhighlight  %}
+{% highlight vbnet %}
+
+
 
 this.gridControl1.Model.EnableGridListControlInComboBox = false;
 
-{% endhighlight %}
+{% endhighlight  %}
 
-{% highlight vbnet %}
-
-Me.gridControl1.Model.EnableGridListControlInComboBox = false
-
-{% endhighlight %}

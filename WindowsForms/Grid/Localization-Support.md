@@ -11,22 +11,22 @@ documentation: ug
 
 Localization support allows you to set the content according to the language or culture of a specific country or region. Essential Grid provides localization support for all controls.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 With this feature, you can localize the options in the grid to display the content according to the language or culture of a specific country or region.
 
-#### Sample Link
+### Sample Link
 
 To open sample project, navigate to the following sample location in your system:
 
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo
+_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo_
 
-### Adding Localization Support to Grid Controls
+Adding Localization Support to Grid Controls
 
-To localize the content, create a class file and add ILocalizationProvider interface to the class. Assign the required content to be displayed to DynamicFilterResourceIdentifiers, GroupingResourceIdentifiers,and GridResourceIdentifiers of GetLocalizedString method as illustrated in the following code.
+To localize the content, create a class file and add ILocalizationProvider__interface to the class. Assign the required content to be displayed to DynamicFilterResourceIdentifiers_,_GroupingResourceIdentifiers_,_ and__GridResourceIdentifiers of GetLocalizedString method as illustrated in the following code.
 
-{% highlight c# %}
 
+{% highlight c#  %}
    public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
 
         {
@@ -85,9 +85,18 @@ To localize the content, create a class file and add ILocalizationProvider inter
 
         }
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+
+
+
+
+
+
+{% endhighlight   %}
+{% highlight vbnet  %}
+
+
+
 
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String Implements ILocalizationProvider.GetLocalizedString
 
@@ -147,7 +156,8 @@ End Select
 
 End Function
 
-{% endhighlight %}
+{% endhighlight   %}
+
 
 
 Add the following table items to the above code example by substituting the identifiers and Enum values as in they correspond in the table.
@@ -225,26 +235,27 @@ This will generate the following output.
 
 Localization support allows you to set the content in a ComboBox cell according to the language or culture of a specific country or region. You can localize the content in the ComboBox cell using the ConvertToString method of Status class.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 With this feature, you can localize the options in the ComboBox cell to display the content according to the language or culture of a specific country or region.
 
-#### Sample Link
+### Sample Link
 
 To get DataGrid samples from the dashboard:
 
 1. Open Syncfusion Dashboard.
-2. Select UI > Windows Forms.
-3. Click Run Samples.
-4. Select Data Grid.
-5. Expand Localization samples in the left panel of sample browser and click ComboBoxCellLocalization Demo.
+1. Select UI > Windows Forms.
+2. Click Run Samples.
+3. Select Data Grid.
+4. Expand Localization samples in the left panel of sample browser and click ComboBoxCellLocalization Demo.
 
-Adding Localization Support to ComboBox Cell 
+## Adding Localization Support to ComboBox Cell 
 
 The following code example illustrates how to add localization support to ComboBox cell using ConvertToString method of Status class.
 
 
-{% highlight c# %}
+{% highlight c#  %}
+
 
 public object ConvertToString(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value)
 
@@ -274,9 +285,12 @@ public object ConvertToString(ITypeDescriptorContext context, System.Globalizati
 
             }}
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+
+
+
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 Private Overloads Function ConvertFromString(ByVal context As ITypeDescriptorContext, ByVal culture As System.Globalization.CultureInfo, ByVal value As Object) As Object
 
@@ -306,9 +320,7 @@ End Select
 
 End Function
 
-{% endhighlight %}
-
-
+{% endhighlight   %}
 
 ![](Localization-Support_images/Localization-Support_img2.png)
 
@@ -327,55 +339,79 @@ The following components are required for creating a Satellite Assembly:
 
 The following steps illustrate creating a Satellite Assembly:
 
-1. Open Visual Studio Command Prompt with Administrator privileges.
 
+
+1. Open Visual Studio Command Prompt with Administrator privileges.
 2. Enter the following command for creating resource file from the text file:
+
 
 
    Resgen Text_file.txt  Resource_File.resources
 
-   ![](Localization-Support_images/Localization-Support_img3.png)
+
+
+   ![](Localization-Support_images/Localization-Support_img3.png) 
+
+
+
+
 
 3. You can modify the resource file according to your requirements by using the Resorce Editor.
 
-   ![](Localization-Support_images/Localization-Support_img4.png)
+  ![](Localization-Support_images/Localization-Support_img4.png) 
+
+
+
+
 
 4. Create the satellite assembly from the resource file by using the following command:
 
-   al /t:lib /culture:de-DE /out:&lt;Location&gt;\Syncfusion.GridHelperClasses.Windows.resources.dll /v:1.1.0.0 /delay+ /keyf:&lt;Location&gt;:\\sf.publicsnk /embed:&lt;Location&gt;\Syncfusion. GridHelperClasses.Windows.Localization.SR.de-DE.Resources  
+
+
+   al /t:lib /culture:de-DE /out:<Location>\Syncfusion.GridHelperClasses.Windows.resources.dll /v:1.1.0.0 /delay+ /keyf:<Location>:\\sf.publicsnk /embed:<Location>\Syncfusion. GridHelperClasses.Windows.Localization.SR.de-DE.Resources  
+
+
 
 5. After creating the satellite assembly, you must have the assembly signed to access the resources in the assembly. The signing operation is done by using the following code:
 
-   Sn –Vr &lt;Location of Satellite dll&gt;\Syncfusion.GridHelperClasses.Windows.resources.dll
+   Sn –Vr <Location of Satellite dll>\Syncfusion.GridHelperClasses.Windows.resources.dll
+
+
 
 6. Finally, the satellite assembly created is placed in a folder at the following path:
 
+
+
    &lt;Location of Program&gt;\bin\debug\de-DE (German Culture)
 
-   > Note: The name of the subfolder in Debug folder differs based on the culture of the application. For example, fr-FR is used for the French Culture, and so on.
+   N> The name of the subfolder in Debug folder differs based on the culture of the application. For example, fr-FR is used for the French Culture, and so on.
 
 
+   {:.prettyprint}
+   
 Similarly, you can create satellite assemblies for resource files of Windows Grid, Grid Grouping, and Pivot Grid controls. You can find the resource files for Windows Grid, Grid Grouping, and Pivot Grid controls at the following paths respectively:
+
+
 
 * Grid
 
-  &lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Windows\Samples\
+_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Windows\Samples\_
 
-  Localization Samples\Localization Demo\CS\Resources\SR.resources
+_Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
 
 
 * Grid Grouping
 
-  &lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\Grid.Grouping.Windows\
+_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\_
 
-  Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources
+_Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources_
 
 
 
 * Pivot Grid
 
-  &lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Version&gt;\Windows\PivotGrid.Windows\
+_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\PivotGrid.Windows\_
 
-  Samples\Localization\ Localization using Satellite Assemblies\CS\Resources\SR.resources
+_Samples\Localization\ Localization using Satellite Assemblies\CS\Resources\SR.resources_
 

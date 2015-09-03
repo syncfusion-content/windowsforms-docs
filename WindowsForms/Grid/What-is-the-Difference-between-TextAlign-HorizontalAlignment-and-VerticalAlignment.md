@@ -7,18 +7,18 @@ control: GridControl
 documentation: ug
 ---
 
-### What is the Difference between TextAlign, HorizontalAlignment, and VerticalAlignment?
+# What is the Difference between TextAlign, HorizontalAlignment, and VerticalAlignment?
 
-Introduction
+## Introduction
 
 TextAlign is set when the description of embedded controls are to be aligned to the left or right. HorizontalAlignment is set when cell value is to be aligned either left or right or center of the cell. VerticalAlignment is set when the cell value is to be aligned either top or bottom or middle of the cell.
 
-Example
-
-[C#]
+## Example
 
 
 
+
+{% highlight c#  %}
 //Right aligns the cell values of column 3 horizontally.
 
 this.gridControl1.ColStyles[3].HorizontalAlignment = GridHorizontalAlignment.Right;
@@ -37,8 +37,9 @@ this.gridControl1.ColStyles[8].VerticalAlignment = GridVerticalAlignment.Bottom;
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 'Right aligns the cell values of column 3 horizontally.
@@ -57,5 +58,5 @@ Me.gridControl1.ColStyles(6).TextAlign = GridTextAlign.Right
 
 Me.gridControl1.ColStyles(8).VerticalAlignment = GridVerticalAlignment.Bottom
 
-
+{% endhighlight   %}
 

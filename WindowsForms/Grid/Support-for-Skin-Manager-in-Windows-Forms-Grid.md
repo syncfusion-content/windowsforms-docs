@@ -18,7 +18,7 @@ This feature enables you to easily apply themes to all grids in an application t
 * Office 2010 Black
 * Office 2010 Silver
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 When you create an application with multiple Grid controls, you can apply uniform themes for the entire form and its child controls using this feature.
 
@@ -42,7 +42,10 @@ Specifies the style.</td><td>
 Enum </td></tr>
 </table>
 
-_Table 151: Methods Table_ 
+
+
+
+_Table 151__14__: Methods Table_ 
 
 <table>
 <tr>
@@ -55,17 +58,12 @@ RETURN TYPE </th></tr>
 <td>
 VisualTheme(Control,VisualTheme)</td><td>
 Specifies the parent control and the theme to be applied.</td><td>
-Overloads:<br/>
-<ul>
-<li>(Control, String)</li>
-<li>(Control,VisualTheme)</li>
-</ul> </td><td>
-<br/>Void</td></tr>
+Overloads:* (Control, String)* (Control,VisualTheme)</td><td>
+<br>Void</td></tr>
 </table>
+Sample Link
 
-#### Sample Link
-
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\SkinManager Demo
+_&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\SkinManager Demo_
 
 ## Adding Skin Manager to an Application 
 
@@ -73,35 +71,33 @@ You can add SkinManager control to one of the controls in your form or to the en
 
  To add SkinManager control to one of the controls, specify selected control as the root control. The following code illustrates this, where the control is styled with Office2010Blue theme.
 
-{% highlight c# %}
 
-SkinManager.SetVisualStyle(this.gridControl1, VisualTheme.Office2010Blue );
+{% highlight c#  %}
+ SkinManager.SetVisualStyle(this.gridControl1, VisualTheme.Office2010Blue );
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+
+{% endhighlight   %}
 
 SkinManager.SetVisualStyle(Me.gridControl1, VisualTheme.Office2010Blue)
 
-{% endhighlight %}
-
-
 To add Skin Manager to the entire form, specify the form as the root control. The following code illustrates this. 
 
-{% highlight c# %}
+{% highlight c#  %}
 
  SkinManager.SetVisualStyle(this, VisualTheme.Office2010Blue );
 
-{% endhighlight %}
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-{% highlight vbnet %}
+
 
 SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
-
-{% endhighlight %}
-
+{% endhighlight   %}
 
 Implementing the above code will create the following output.
 
+![](Support-for-Skin-Manager-in-Windows-Forms-Grid_images/Support-for-Skin-Manager-in-Windows-Forms-Grid_img1.png) 
 
-![](Support-for-Skin-Manager-in-Windows-Forms-Grid_images/Support-for-Skin-Manager-in-Windows-Forms-Grid_img1.png)
+
+

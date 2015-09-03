@@ -1,0 +1,127 @@
+---
+layout: post
+title: Export-Summary-as-Caption
+description: export summary as caption 
+platform: windowsform
+control: GridGroupingControl
+documentation: ug
+---
+
+# Export Summary as Caption 
+
+This feature enables you to export the summary as caption while exporting GridGroupingControl to Excel. 
+
+_Table 131: Property Table_
+
+<table>
+<tr>
+<th>PROPERTY </th><th>
+DESCRIPTION </th><th>
+TYPE </th><th>
+DATA TYPE </th><th>
+REFERENCE LINKS </th></tr>
+<tr>
+<td>
+ExportCaptionSummary</td><td>
+This property exports summary as caption.  </td><td>
+GridGroupingControl</td><td>
+Boolean </td><td>
+NA </td></tr>
+</table>
+
+
+Exporting Summary as Caption
+
+You can export summary as caption using _ExportCaptionSummary_ property. The following code illustrates this:
+
+{% highlight C# %}  
+
+
+
+converter.ExportCaptionSummary = true;
+
+{% endhighlight %}
+
+ ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/exportsummarycaption.png](Export-Summary-as-Caption_images/Export-Summary-as-Caption_img1.png) 
+
+
+
+## Searching for text in multiple columns
+
+This feature can be used to perform searches either in specified columns or in all the grid columns. Only the rows containing search text will be filtered and displayed. 
+
+Searches can be performed in two modes:
+
+1.Search for text in all columns.
+
+2.Search for text in particular columns.
+
+_Table 132: Method Table_
+
+<table>
+<tr>
+<th>METHOD</th>
+<th>PROTOTYPES</th>
+<th>DESCRIPTION</th>
+</tr>
+<tr>
+<td rowspan = "2">
+Search()</td><td>
+this.gridGroupingControl1.TableDescriptor.Search("SearchText", List[GridColumnDescriptor]);</td><td rowspan = "2">
+It is called for performing search operation in the columns. </td></tr>
+<tr>
+<td>
+this.gridGroupingControl1.TableDescriptor.Search("SearchText");</td></tr>
+</table>
+
+### Searching for text in all columns
+
+Here, text is provided as a parameter in the Search method in TableDescriptor. It searches for the text in all the columns and displays the rows that contain the word.
+
+The following code sample illustrates how to perform the search operation:
+
+{% highlight C# %}  
+
+this.gridGroupingControl1.TableDescriptor.Search("Duke");
+
+{% endhighlight %}
+
+{% highlight vbnet %} 
+
+ Me.gridGroupingControl1.TableDescriptor.Search("Duke");
+
+{% endhighlight %} 
+
+
+### Searching for text in particular columns
+
+We can perform this operation by passing columns that need to be searched into the Search() method. In this case, we need to create a list that will hold columns that need to be searched for that particular text. The search text and the list of columns that will be searched are passed as parameters for performing the operation. The following code illustrates this:
+
+{% highlight C# %}  
+
+List<GridColumnDescriptor> list= new List<GridColumnDescriptor>();
+
+list.Add(this.gridGroupingControl1.TableDescriptor.Columns[1]);
+
+list.Add(this.gridGroupingControl1.TableDescriptor.Columns[3]);
+
+this.gridGroupingControl1.TableDescriptor.Search("Duke", list);
+
+{% endhighlight %}
+
+{% highlight vbnet %} 
+
+Dim list As New List(Of GridColumnDescriptor)()
+
+list.Add(Me.gridGroupingControl1.TableDescriptor.Columns(1))
+
+list.Add(Me.gridGroupingControl1.TableDescriptor.Columns(3))
+
+
+
+Me.gridGroupingControl1.TableDescriptor.Search("Duke", list)
+
+
+{% endhighlight %} 
+
+

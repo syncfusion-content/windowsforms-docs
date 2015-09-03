@@ -1,0 +1,87 @@
+---
+layout: post
+title: ComboDropDown-Text
+description: combodropdown text
+platform: windowsforms
+control: Editors Package
+documentation: ug
+---
+
+# ComboDropDown Text
+
+ComboDropDown control supports the properties which can change the appearance and behavior of the control's edit portion.
+
+![](Overview_images/Overview_img284.jpeg) 
+
+
+
+Table 211: Property Table
+
+<table>
+<tr>
+<td>
+ComboDropDown Properties</td><td>
+Description</td></tr>
+<tr>
+<td>
+CharacterCasing</td><td>
+Specifies the ComboDropDown control modifies the case of characters when they are typed in the edit portion.</td></tr>
+<tr>
+<td>
+NumberOnly</td><td>
+Specifies whether the user should be forced to enter only numbers in the edit portion of ComboDropDown.</td></tr>
+<tr>
+<td>
+ReadOnly</td><td>
+Specifies whether the text in the edit portion of ComboDropDown should be set to read-only or can be changed. By default it will be set to false.</td></tr>
+</table>
+
+
+{% highlight c# %}
+
+
+
+this.comboDropDown1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+
+this.comboDropDown1.NumberOnly = true;
+
+this.comboDropDown1.ReadOnly = true;
+
+
+
+this.comboDropDown1.CaseSensitiveAutocomplete = false;
+
+this.comboDropDown1.MatchFirstCharacterOnly = false;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+Me.comboDropDown1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+
+Me.comboDropDown1.NumberOnly = True
+
+Me.comboDropDown1.ReadOnly = True
+
+
+
+Me.comboDropDown1.CaseSensitiveAutocomplete = False
+
+Me.comboDropDown1.MatchFirstCharacterOnly = False
+
+{% endhighlight %}
+
+### Banner Text Support
+
+We can set banner text for the ComboBoxDropDown control. Refer BannerTextProvider Component topic for more details.
+
+![](Overview_images/Overview_img285.jpeg) 
+
+
+
+
+
+
+

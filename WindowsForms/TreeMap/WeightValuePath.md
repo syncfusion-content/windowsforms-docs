@@ -1,15 +1,26 @@
 ---
 layout: post
-title: Features
-description: features
-platform: WindowsForms
-control: TreeMap
+title: WeightValuePath
+description: weightvaluepath
+platform: windowsforms
+control: TreeMap 
 documentation: ug
 ---
 
 # WeightValuePath
 
-The WeightValuePath ofTreeMap is a path to a field on the source object, which serves as the "weight" of the object. 
+The WeightValuePath ofthe TreeMap control is a path to a field on the source object that serves as the "weight" of the object. 
 
-Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
+Code Sample
 
+{% highlight c# %}
+
+TreeMap TreeMap1 = new TreeMap();
+
+TreeMap1.ItemsSource = data.PopulationDetails;
+
+TreeMap1.WeightValuePath = "Population";
+
+{% endhighlight %}
+
+N> The specified field must be available in every subclass (object) defined in the hierarchical (nested) data collection.

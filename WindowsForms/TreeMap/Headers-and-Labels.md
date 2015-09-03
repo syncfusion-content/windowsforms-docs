@@ -1,149 +1,89 @@
 ---
 layout: post
-title: Features
-description: features
-platform: WindowsForms
-control: TreeMap
+title: Headers-and-Labels
+description: headers and labels
+platform: windowsforms
+control: TreeMap 
 documentation: ug
 ---
 
 # Headers and Labels
 
-### Headers
+Labels and headers in a tree map can be customized by the various properties available in the TreeMap control, such as LabelFont, LabelBrush, LabelBackgroundBrush, LabelBorderBrush, LabelBorderThickness, and HeaderBrush.
 
-To show headers in TreeMap, you can set the HeaderHeight property of TreeMapLevel. 
-
-#### Code Sample:
-
-
-
-
+Code Sample
 
 {% highlight c# %}
 
+TreeMap TreeMap1 = new TreeMap();
 
+PopulationViewModel data = new PopulationViewModel();
 
-public partial class Form1 : Form
+TreeMap1.ItemsSource = data.PopulationDetails;
 
-    {
+TreeMap1.WeightValuePath = "Population";
 
-        TreeMap TreeMap1 = new TreeMap();
+TreeMap1.ColorValuePath = "Growth";
 
+TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto;
 
+TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
 
-        public Form1()
+treeMapFlatLevel1.GroupPath = "Continent";
 
-        {
+treeMapFlatLevel1.ShowLabels = true;
 
-            InitializeComponent();
-
-
-
-            PopulationViewModel data = new PopulationViewModel();
-
-            TreeMap1.ItemsSource = data.PopulationDetails;
-
-            TreeMap1.WeightValuePath = "Population";
-
-            TreeMap1.ColorValuePath = "Growth";
-
-            TreeMap1.HeaderBrush = new SolidBrush(Color.Red);
-
-            TreeMap1.HeaderBorderThickness = 5;
+TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 
 
-            TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
+TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
 
-            treeMapFlatLevel1.GroupPath = "Continent";
+treeMapFlatLevel2.GroupPath = "Country";
 
-            TreeMap1.Levels.Add(treeMapFlatLevel1);
+treeMapFlatLevel2.ShowLabels = true;
 
-            TreeMap1.LeafItemSettings.LabelPath ="Country";
+treeMapFlatLevel2.HeaderHeight = 25;
 
-            this.Controls.Add(TreeMap1);
+TreeMap1.Levels.Add(treeMapFlatLevel2);
 
-        } 
 
-}
+
+TreeMap1.HeaderBrush = new SolidBrush(Color.Blue);
+
+TreeMap1.LabelBorderBrush = new SolidBrush(Color.White);
+
+TreeMap1.LabelBorderThickness = 5;
+
+TreeMap1.LabelBackgroundBrush = new SolidBrush(Color.LightSkyBlue);
+
+TreeMap1.LabelBrush = new SolidBrush(Color.White);
+
+TreeMap1.LabelFont = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+
+
+DesaturationColorMapping desaturationColorMapping = new DesaturationColorMapping();
+
+desaturationColorMapping.Color = Color.OrangeRed;
+
+desaturationColorMapping.From = 220;
+
+desaturationColorMapping.To = 0;
+
+desaturationColorMapping.RangeMinimum = 0;
+
+desaturationColorMapping.RangeMaximum = 80000;            
+
+
+
+this.TreeMap1.LeafColorMapping = desaturationColorMapping;
+
 
 {% endhighlight %}
 
 
 
-![](Features_images/Features_img13.png)
 
 
-
-_Figure_ _10_: _TreeMap with Headers_
-
-
-
-### Labels
-
-To show labels in TreeMap, ShowLabels of TreeMapLevel should be enabled to True. 
-
-#### Code Sample:
-
-
-
-{% highlight c# %}
-
-
-
-public partial class Form1 : Form
-
-    {
-
-        TreeMap TreeMap1 = new TreeMap();
-
-
-
-        public Form1()
-
-        {
-
-            InitializeComponent();            
-
-
-
-            PopulationViewModel data = new PopulationViewModel();
-
-            TreeMap1.ItemsSource = data.PopulationDetails;
-
-            TreeMap1.WeightValuePath = "Population";
-
-            TreeMap1.ColorValuePath = "Growth";
-
-
-
-            TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
-            treeMapFlatLevel1.GroupPath = "Continent";
-
-            treeMapFlatLevel1.ShowLabels = true;
-
-            TreeMap1.Levels.Add(treeMapFlatLevel1);
-
-            TreeMap1.LeafItemSettings.LabelPath ="Country";
-
-            this.Controls.Add(TreeMap1);
-
-
-
-
-
-        } 
-
-}
-
-
-{% endhighlight %}
-
-
-![](Features_images/Features_img14.png)
-
-
-
-_Figure_ _11_: _TreeMap with Labels_
-
+![](Features_images/Features_img12.png)

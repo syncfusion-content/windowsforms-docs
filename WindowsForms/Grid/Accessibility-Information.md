@@ -9,7 +9,7 @@ documentation: ug
 
 # Accessibility Information
 
-Technical Standards
+## Technical Standards
 
 Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
 

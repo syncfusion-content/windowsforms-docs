@@ -17,37 +17,37 @@ A Static cell will not allow the edit cursor to become visible. With Read-only t
 
 The property GridControl.ReadOnly or GridDataBoundGrid.Model.ReadOnly will allow you to set ReadOnly behavior on a grid-wide basis.
 
-<table>
-<tr>
-<td>
-[C#]//Changes cannot be made to the Grid control.this.gridControl1.ReadOnly = true;  //Changes cannot be made to the DataBound Grid.this.gridDataBoundGrid1.ReadOnly = true;</td></tr>
-<tr>
-<td>
-[VB.NET]'Changes cannot be made to the Grid control.Me.GridControl1.ReadOnly = True   'Changes cannot be made to the DataBound Grid.Me.GridDataBoundGrid1.ReadOnly = True</td></tr>
-</table>
+{% highlight c#  %}
+//Changes cannot be made to the Grid control.this.gridControl1.ReadOnly = true;  //Changes cannot be made to the DataBound Grid.this.gridDataBoundGrid1.ReadOnly = true;
+{% endhighlight   %}
+{% highlight vbnet  %}
+'Changes cannot be made to the Grid control.Me.GridControl1.ReadOnly = True   'Changes cannot be made to the DataBound Grid.Me.GridDataBoundGrid1.ReadOnly = True
+{% endhighlight   %}
+
 ## Setting ReadOnly Cell by Cell
 
 
 
 To set ReadOnly behavior on a cell-by-cell basis, you must use the cell's GridStyleInfo object which has ReadOnly property. 
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Changes cannot be made to the cell (1,1).
 
 this.gridControl1[1,1].ReadOnly = true;
 
+{% endhighlight   %}
 
 
-[VB.NET]
-
+{% highlight vbnet  %}
 
 
 'Changes cannot be made to the cell (1,1).
 
 Me.GridControl1(1,1).ReadOnly = True
+{% endhighlight   %}
 
 ## Making a Change to ReadOnly Cell
 
@@ -55,10 +55,10 @@ If you set Read-Only behavior, the user will not be able to type in the cell and
 
 
 
-[C#]
 
 
 
+{% highlight c#  %}
 this.gridControl1[1,1].ReadOnly = true; 
 
 
@@ -85,7 +85,8 @@ this.gridControl1.IgnoreReadOnly = false;
 
 
 
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
@@ -113,5 +114,5 @@ Me.GridControl1(1, 1).CellValue = 256
 
 this.Me.GridControl1.IgnoreReadOnly = False   
 
-
+{% endhighlight   %}
 

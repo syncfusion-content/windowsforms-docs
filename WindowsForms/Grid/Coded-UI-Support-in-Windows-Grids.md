@@ -17,14 +17,14 @@ Essential Grid for Windows Forms now supports automated UI testing with VS 2010 
 
 The architectural diagram is as follows:
 
-![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img.png)
 
-_Figure_ _602_: _Architectural Diagram_
+
+_Figure602: Architectural Diagram_
 
 * The Grid Test Plugin implements necessary details to communicate with VS 2010 Test Framework.
 * The Grid application host runs with .NET Remoting channel hosted internally to communicate with test plugin through an interface. Data is then channeled across the VS 2010 Test Framework to identify the Cells and Grid controls.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 You can create Coded UI Test with Essential Grid for Windows Forms. The following example shows the implementation of the feature.
 
@@ -45,12 +45,15 @@ To deploy extension assembly:
 
 ## Preparing the Grid Application
 
+
 To prepare the Grid Application:
 
 1. Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll contains implementation to easily change an existing application to the test application that the plugin would require.
 2. Let the parent container inherit GridControlTestApplication class as shown below:
 
+
    ~~~ cs
+
 
 		public class Form1 : GridControlTestApplication
 
@@ -59,34 +62,41 @@ To prepare the Grid Application:
 		}
 
    ~~~
-   {:.prettyprint }
+   {:.prettyprint}
+
 
    ~~~ vbnet
-
 		Public Class Form1
 
 		Inherits GridControlTestApplication
-		
+
 		End Class
-
    ~~~
-   {:.prettyprint }
-
+   {:.prettyprint}
+   
 3. Build and run the application to make it ready for testing.
 
 ## Creating Unit Tests with VS2010
+
 
 To create Unit Tests with VS2010:
 
 1. Create a new test project in VS2010.
 
-   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img1.png)
+   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img1.png) 
+
+
+
+
 
 2. Add a new CodedUITest item for the project.
 
-   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img2.png)
 
-   _Figure 604: Adding Coded UI Test file_
+
+   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img2.png) 
+
+
+Figure 604: Adding Coded UI Test file
 
 ## Testing the Application with Generated Coded UI Tests
 
@@ -95,6 +105,8 @@ To test the application with generated coded UI Tests:
 1. Add a TestMethod called CodedUITestMethod1.
 
    ~~~ cs
+
+		  [TestMethod]
 
 		public void CodedUITestMethod1()
 
@@ -105,11 +117,13 @@ To test the application with generated coded UI Tests:
 		//For more information on generated code, see: http://go.microsoft.com/fwlink/?LinkId=179463
 
 		}
-
    ~~~
-   {:.prettyprint }
+   {:.prettyprint}
+
+
 
    ~~~ vbnet
+		  <TestMethod()>
 
 		Public Sub CodedUITestMethod1()
 
@@ -122,34 +136,43 @@ To test the application with generated coded UI Tests:
 					'
 
 		End Sub
-
    ~~~
-   {:.prettyprint }
-
+   {:>prettyprint}
 2. Build and run the Grid application that was configured already. Right-click TestMethod body and then select Generate Code for Coded UI Test -> Use Coded UI Test Builder as shown in the following screenshot:
 
-   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img3.png)
+   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img3.png) 
+
+
+
+
 
 3. Click the Record button to perform actions. In this scenario, add a text Hello World in a cell [x, y].
 
-   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img4.png)
+   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img4.png) 
 
-   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img5.png)
 
-   _Figure 607: Identifying the Table of the Syncfusion Grid_
 
-   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img6.png)
+
+
+   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img5.png) 
+
+     Figure 607: Identifying the Table of the Syncfusion Grid
+
+   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img6.png) 
+
+
 
 4. Assert the cell value using cross-hair present in Coded UI Test builder. Click cross-hair and hover to the cell. It will display Assert window as shown in the following screenshot:
 
-   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img7.png)
+   ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img7.png) 
+
 
 
 ## Properties
 
-Below is the Cell Properties Table
+Below is the Cell Properties Table-
 
-_Table 145: Cell properties_
+Table 145: Cell properties
 
 <table>
 <tr>
@@ -161,7 +184,7 @@ DATA TYPE</th></tr>
 <tr>
 <td>
 AllowEnter</td><td>
-Indicates that by pressing the &lt;Enter&gt;-Key, a new line is inserted into the edited text.</td><td>
+Indicates that by pressing the <Enter>-Key, a new line is inserted into the edited text.</td><td>
 -</td><td>
 bool</td></tr>
 <tr>
@@ -731,13 +754,13 @@ bool</td></tr>
 </table>
 
 
-Table 146: Control Properties
+_Table 146: Control Properties_ 
 
 <table>
 <tr>
 <th>
 PROPERTIES</th><th>
-DESCRIPTION</th><th>
+DESCRIPTION</th><td>
 TYPE</th><th>
 DATA TYPE</th></tr>
 <tr>
@@ -788,7 +811,7 @@ bool</td></tr>
 
 Essential Grid for Windows Forms supports automated UI testing with VS 2010 coded UI technology. Without using the existing plugins, the coded UI test is now enabled in frameworks 3.5 and 4.0.
 
-_Table 147: Property Table_
+Table 147: Property Table
 
 <table>
 <tr>
@@ -804,20 +827,24 @@ Boolean, true/false</td></tr>
 </table>
 
 
-### Enabling AccessibilityEnabled Property
+Enabling AccessibilityEnabled Property
 
 The following code example illustrates how to enable AccessibilityEnabled property for the control.
 
-{% highlight c# %}
+ 
+{% highlight C# %}
 
     this.grid.AccessibilityEnabled = true;
-
 {% endhighlight %}
 
+
+ 
 {% highlight vbnet %}
 
     Me.grid.AccessibilityEnabled = True
-
 {% endhighlight %}
 
-> Note: You can follow the same steps to test the application with generated coded UI tests as described in the chapter Testing the Application with Generated Coded UI Tests.
+ 
+
+> You can follow the same steps to test the application with generated coded UI tests as described in the chapter_ Testing the Application with Generated Coded UI Tests.
+

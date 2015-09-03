@@ -25,13 +25,13 @@ In this section, you will learn how to set up an external data source, and then 
 
 1. In Visual Studio .NET, open File menu and select New Project. Then using either VB.NET or C#, select Windows Application project template to create a new Windows Forms project, naming it VirtualGridTutorial.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img1.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img1.jpeg) 
 
 
 
 
 
-Create the data source
+#### Create the data source
 
 You can set any external data source that can return value based on the row-column parameters that are passed to it. In addition, external data source should have knowledge of the number of rows and columns. This last requirement can be relaxed, but if the data source knows the number of rows and columns, it simplifies things. Our tutorial will assume that this is the case.
 
@@ -40,8 +40,8 @@ The external data source will be a class with two public properties (RowCount an
 Copy the following code into this file. Notice that the constructor accepts row and column count, and then populates an integer array. You can modify this class in any way you like as long as you define the class indexer and RowCount and ColCount properties, so that the virtual grid can access the data when needed. 
 
 
+{% highlight c# %}
 
-[C#]
 
 
 
@@ -121,9 +121,10 @@ public class ExternalData
 
 }
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -232,6 +233,7 @@ End Set
 End Property
 
 End Class
+{% endhighlight  %}
 
 ### Adding Virtual Grid
 
@@ -240,45 +242,43 @@ To add a Virtual Grid to your application:
 
 
 1. Select the form, open the toolbox and drag a Grid control onto your form.
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img2.jpeg) | markdownify }
-
-_Note: Do not change the values of the RowCount or ColCount properties for the grid. Let the default values remain as it is. These values will be provided dynamically as part of the virtual grid implementation._
+   N> Do not change the values of the RowCount or ColCount properties for the grid. Let the default values remain as it is. These values will be provided dynamically as part of the virtual grid implementation.
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img3.jpeg) | markdownify }
+   ![](Virtual-Grids_images/Virtual-Grids_img3.jpeg) 
 
 
 
 2. Customize the other properties such as BorderStyle, etc.
-### Initializing the Virtual Grid
+
+   ### Initializing the Virtual Grid
 
 
-To initialize the Virtual Grid added to your application
+   To initialize the Virtual Grid added to your application
 
-1. Double-click the form's background so that a handler for the form's load event is added to your code.
-2. Add an ExternalData member to your form with the code given below.
-
-
-
-[C#]
+   1. Double-click the form's background so that a handler for the form's load event is added to your code.
+   2. Add an ExternalData member to your form with the code given below.
 
 
 
-//Adds an external data member.
-
-private ExternalData _extData;
 
 
 
-[VB.NET]
+
+				//Adds an external data member.
+
+				private ExternalData _extData;
 
 
 
-'Adds an external data member.
 
-Private _extData as ExternalData
+
+
+
+				'Adds an external data member.
+
+				Private _extData as ExternalData
 
 
 
@@ -286,79 +286,82 @@ Private _extData as ExternalData
 
 
 
-[C#]
 
 
 
-private void Form1_Load(object sender, System.EventArgs e)
 
-{
+					private void Form1_Load(object sender, System.EventArgs e)
 
-//Creates a new external data source with 100 rows and 20 columns.
+					{
 
-    this._extData = new ExternalData(100, 20);
+					//Creates a new external data source with 100 rows and 20 columns.
 
-
-
-//Prepares the grid for virtual data.
-
-    gridControl1.ResetVolatileData();
+						this._extData = new ExternalData(100, 20);
 
 
 
-//Hooks up the events needed for the virtual grid.
+					//Prepares the grid for virtual data.
 
-    gridControl1.QueryCellInfo += new GridQueryCellInfoEventHandler(GridQueryCellInfo);
-
-    gridControl1.QueryRowCount += new GridRowColCountEventHandler(GridQueryRowCount);
-
-    gridControl1.QueryColCount += new GridRowColCountEventHandler(GridQueryColCount);
-
-}
+						gridControl1.ResetVolatileData();
 
 
 
-[VB.NET]
+					//Hooks up the events needed for the virtual grid.
+
+						gridControl1.QueryCellInfo += new GridQueryCellInfoEventHandler(GridQueryCellInfo);
+
+						gridControl1.QueryRowCount += new GridRowColCountEventHandler(GridQueryRowCount);
+
+						gridControl1.QueryColCount += new GridRowColCountEventHandler(GridQueryColCount);
+
+					}
 
 
 
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 
 
-'Creates a new external data source with 100 rows and 20 columns.
 
-Me._extData = New ExternalData(100, 20)
-
-
-
-'Prepares the grid for virtual data.
-
-gridControl1.ResetVolatileData()
+					Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 
 
-' Hooks up the events needed for the virtual grid.
+					'Creates a new external data source with 100 rows and 20 columns.
 
-'While only the QueryCellInfo is absolutely required, it would be unusual not to handle at least one of the count events.
+					Me._extData = New ExternalData(100, 20)
 
-AddHandler gridControl1.QueryCellInfo, New _GridQueryCellInfoEventHandler(AddressOf GridQueryCellInfo)
 
-AddHandler gridControl1.QueryRowCount, New _GridRowColCountEventHandler(AddressOf GridQueryRowCount)
 
-AddHandler gridControl1.QueryColCount, New _GridRowColCountEventHandler(AddressOf GridQueryColCount)
+					'Prepares the grid for virtual data.
 
-End Sub
+					gridControl1.ResetVolatileData()
 
+
+
+					' Hooks up the events needed for the virtual grid.
+
+					'While only the QueryCellInfo is absolutely required, it would be unusual not to handle at least one of the count events.
+
+					AddHandler gridControl1.QueryCellInfo, New _GridQueryCellInfoEventHandler(AddressOf GridQueryCellInfo)
+
+					AddHandler gridControl1.QueryRowCount, New _GridRowColCountEventHandler(AddressOf GridQueryRowCount)
+
+					AddHandler gridControl1.QueryColCount, New _GridRowColCountEventHandler(AddressOf GridQueryColCount)
+
+					End Sub
+
+					
+   {:.prettyprint}
+   
 ### Style Properties
 
 In your GridQueryCellInfo handler, it is possible to set style properties other than CellValue. For example, the code that follows will color any value that is divisible by three. To set properties other than the CellValue, change your QueryCellInfo event handler as shown below.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e) 
 
@@ -388,9 +391,9 @@ void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight  %}
 
-
+{% highlight vbnet %}
 
 Private Sub GridQueryCellInfo(ByVal sender As Object, ByVal e _As GridQueryCellInfoEventArgs)
 
@@ -419,8 +422,9 @@ End If
 End Sub
 
 
+{% endhighlight  %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img4.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img4.jpeg) 
 
 
 
@@ -430,67 +434,67 @@ To retrieve data for the Virtual Grid from the external data source,
 
 1. Add event handlers for QueryRowCount and QueryColCount events. Use the following code in your event handlers.
 
-GridQueryRowCount and GridQueryColCount provide the number of rows and columns from the external data source. Thus, the implementation code will access public properties of our external data object to get these values.
+				GridQueryRowCount and GridQueryColCount provide the number of rows and columns from the external data source. Thus, the implementation code will access public properties of our external data object to get these values.
 
 
 
-[C#]
 
 
 
-//Sets number of rows from external data source.
 
-void GridQueryRowCount(object sender, GridRowColCountEventArgs e) 
+				//Sets number of rows from external data source.
 
-{
+				void GridQueryRowCount(object sender, GridRowColCountEventArgs e) 
 
-    e.Count = this._extData.RowCount;
+				{
 
-    e.Handled = true;
+					e.Count = this._extData.RowCount;
 
-}
+					e.Handled = true;
 
-
-
-//Sets number of columns from external data source.
-
-void GridQueryColCount(object sender, GridRowColCountEventArgs e) 
-
-{
-
-    e.Count = this._extData.ColCount;
-
-    e.Handled = true;
-
-}
+				}
 
 
 
-[VB.NET]
+				//Sets number of columns from external data source.
+
+				void GridQueryColCount(object sender, GridRowColCountEventArgs e) 
+
+				{
+
+					e.Count = this._extData.ColCount;
+
+					e.Handled = true;
+
+				}
 
 
 
-'Sets number of rows from external data source.
-
-Private Sub GridQueryRowCount(ByVal sender As Object, ByVal e _As GridRowColCountEventArgs)
-
-e.Count = Me._extData.RowCount
-
-e.Handled = True
-
-End Sub
 
 
 
-'Sets number of columns from external data source.
 
-Private Sub GridQueryColCount(ByVal sender As Object, ByVal e _As GridRowColCountEventArgs)
+				'Sets number of rows from external data source.
 
-e.Count = Me._extData.ColCount
+				Private Sub GridQueryRowCount(ByVal sender As Object, ByVal e _As GridRowColCountEventArgs)
 
-e.Handled = True
+				e.Count = Me._extData.RowCount
 
-End Sub
+				e.Handled = True
+
+				End Sub
+
+
+
+				'Sets number of columns from external data source.
+
+				Private Sub GridQueryColCount(ByVal sender As Object, ByVal e _As GridRowColCountEventArgs)
+
+				e.Count = Me._extData.ColCount
+
+				e.Handled = True
+
+				End Sub
 
 
 
@@ -499,61 +503,61 @@ End Sub
 
 
 
-[C#]
 
 
 
-void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e) 
 
-{
+				void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e) 
 
-    if (e.RowIndex > 0 && e.ColIndex > 0)
+				{
 
-    {
+					if (e.RowIndex > 0 && e.ColIndex > 0)
 
-        e.Style.CellValue = this._extData[e.RowIndex - 1, e.ColIndex - 1];
+					{
 
-        e.Handled = true;
+						e.Style.CellValue = this._extData[e.RowIndex - 1, e.ColIndex - 1];
 
-    }
+						e.Handled = true;
 
-}
+					}
 
-
-
-[VB.NET]
+				}
 
 
 
-Private Sub GridQueryCellInfo(ByVal sender As Object, ByVal e _As GridQueryCellInfoEventArgs)
 
-If ((e.RowIndex > 0) AndAlso (e.ColIndex > 0)) Then
 
-e.Style.CellValue = Me._extData(e.RowIndex - 1, e.ColIndex - 1)
 
-e.Handled = True
 
-End If
+				Private Sub GridQueryCellInfo(ByVal sender As Object, ByVal e _As GridQueryCellInfoEventArgs)
 
-End Sub
+				If ((e.RowIndex > 0) AndAlso (e.ColIndex > 0)) Then
 
-Notice that all the three handlers set Handled property on EventArgs when a value is provided. This informs the grid that no further processing is needed. Do not forget this or you will lose some of the benefits of using a virtual grid. 
+				e.Style.CellValue = Me._extData(e.RowIndex - 1, e.ColIndex - 1)
+
+				e.Handled = True
+
+				End If
+
+				End Sub
+
+				Notice that all the three handlers set Handled property on EventArgs when a value is provided. This informs the grid that no further processing is needed. Do not forget this or you will lose some of the benefits of using a virtual grid. 
 
 
 
 4. Compile and run the project. You will see something similar to the screen shot below. The point is that the grid itself does not hold any data. All the information is provided on demand through the three events that you have added.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img5.jpeg) | markdownify }
+   ![](Virtual-Grids_images/Virtual-Grids_img5.jpeg) 
 
-
+   {:.prettyprint}
 
 ### Saving Edited Values
 
 While working on Virtual Grid, you will see that the changes do not stay around after you leave the current cell, i.e., if you over type a cell entry, when you move off the cell, the old value is restored. The reason is that currently, there is no way for the changed value to be moved back to the external data source. So, as you move off the cell, when the grid redraws the old cell, it will query the external data source (through GridQueryCellInfo), get the original value and display it. The value you had typed will be lost. In order to edit and save values in the Virtual Grid, you must get the changed value back to the external data source. This is accomplished through GridControl.SaveCellInfo event. You must add a handler for this event and in this handler, you must save the changed value back to the external data source.
 
 
+{% highlight c# %}
 
-[C#]
 
 
 
@@ -615,9 +619,10 @@ void GridSaveCellInfo(object sender, GridSaveCellInfoEventArgs e)
 
 
 
-[VB.NET]
 
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -677,9 +682,9 @@ e.Handled = True
 
 End Sub
 
+{% endhighlight  %}
 
-
-{ ![](Virtual-Grids_images/Virtual-Grids_img6.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img6.jpeg) 
 
 
 
@@ -695,8 +700,8 @@ Here is a list of the other events that will allow virtual access to an Essentia
 
 
 
-[C#]
 
+{% highlight c# %}
 
 
 //Provides the row heights on demand - optional...
@@ -779,8 +784,9 @@ void GridQueryCoveredRange(object sender, GridQueryCellRangeEventArgs e)
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 Private Sub GridQueryRowHeight(ByVal sender As Object, ByVal e As _GridRowColSizeEventArgs)
@@ -844,10 +850,10 @@ e.Handled = True
 End If
 
 End Sub
+{% endhighlight %}
 
 
-
-{ ![](Virtual-Grids_images/Virtual-Grids_img7.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img7.jpeg) 
 
 
 
@@ -855,27 +861,26 @@ End Sub
 
 You will notice that in GridSaveCellInfo method, you had used int.Parse method to convert string value in the GridStyleInfo object to the integer you needed for the external data source. You can instead make use of the more general Convert class provided by Essential Grid to handle conversions between various data types. This class, for example, can convert the value in CellValue property to DataTime object or to Color object, depending upon the need. The following code example illustrates how to use this Convert class.
 
-[C#]
 
 
 
+{% highlight c# %}
 // Converts a value in CellValue property to 'int' (as required by our data source) by using Convert class.
 
 this._extData[e.RowIndex - 1, e.ColIndex - 1] = (int)GridCellValueConvert.ChangeType(e.Style.CellValue, typeof(int), null);
 
 
 
-[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 
 'Converts a value in CellValue property to 'int' (as required by our data source) by using Convert class.
 
 Me._extData(e.RowIndex - 1, e.ColIndex - 1) = CInt(GridCellValueConvert.ChangeType(e.Style.CellValue, GetType(Integer), Nothing))
-
-> { ![](Virtual-Grids_images/Virtual-Grids_img8.jpeg) | markdownify }
-
-_Note: This conversion problem may occur when the value that is stored in the style object is a string. This happens when the CellValueType property is not explicitly set on the style object in your GridQueryCellInfo method. But when this is set to "int", then you can cast the CellValue in SaveCellInfo to an int, and do not have to worry about conversions._
+{% endhighlight  %}
+N> This conversion problem may occur when the value that is stored in the style object is a string. This happens when the CellValueType property is not explicitly set on the style object in your GridQueryCellInfo method. But when this is set to "int", then you can cast the CellValue in SaveCellInfo to an int, and do not have to worry about conversions.
 
 ## Required Events
 
@@ -885,10 +890,10 @@ These are the three events that you should handle in order to implement a virtua
 
 This event is used to return the row count on demand. Here is a sample handler. 
 
-[C#]
 
 
 
+{% highlight c# %}
 private void GridQueryRowCount(object sender, GridRowColCountEventArgs e)
 
 {
@@ -903,8 +908,9 @@ private void GridQueryRowCount(object sender, GridRowColCountEventArgs e)
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 Private Sub GridQueryRowCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
@@ -918,6 +924,7 @@ e.Count = Me.numArrayRows
 e.Handled = True
 
 End Sub
+{% endhighlight  %}
 
 ### QueryColCount Event
 
@@ -925,9 +932,9 @@ End Sub
 
 QueryColCount event is used to return column count on demand. Note that when you handle the event by assigning e.Count, you are setting the e.Handled property to true. 
 
-[C#]
 
 
+{% highlight c# %}
 
 private void GridQueryColCount(object sender, GridRowColCountEventArgs e)
 
@@ -943,8 +950,9 @@ private void GridQueryColCount(object sender, GridRowColCountEventArgs e)
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 Private Sub GridQueryColCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
@@ -958,6 +966,7 @@ e.Count = Me.numArrayCols
 e.Handled = True
 
 End Sub
+{% endhighlight  %}
 
 ### QueryCellInfo Event
 
@@ -967,10 +976,10 @@ GridQueryCellInfoEventArgs members, e.ColIndex and e.RowIndex, specify the colum
 
 One last comment before we look at the code. Header rows and columns in an Essential Grid are treated the same as other rows and columns with respect to QueryCellInfo. If you have a single header row, then anytime e.ColIndex is 0, a row header is being requested. Similarly, if you have a single column header row, e.RowIndex = 0 is a request for the column header.
 
-[C#]
 
 
 
+{% highlight c# %}
 private void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 {
@@ -991,7 +1000,8 @@ private void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 
@@ -1010,6 +1020,7 @@ e.Handled = True
 End If
 
 End Sub
+{% endhighlight  %}
 
 ## Optional Events
 
@@ -1019,9 +1030,9 @@ Optional events can be used to extend the functionality of the basic Read-only v
 
 This event is used to store data back into your data source when it has been changed by the user. Here is a sample handler. 
 
-[C#]
 
 
+{% highlight c# %}
 
 void GridSaveCellInfo(object sender, GridSaveCellInfoEventArgs e)
 
@@ -1043,8 +1054,9 @@ void GridSaveCellInfo(object sender, GridSaveCellInfoEventArgs e)
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 Private Sub GridSaveCellInfo(ByVal sender As Object, ByVal e As GridSaveCellInfoEventArgs)
@@ -1062,15 +1074,16 @@ e.Handled = True
 End If
 
 End Sub
+{% endhighlight  %}
 
 ### QueryRowHeight
 
 This event is used to return row heights that are in demand. 
 
-[C#]
 
 
 
+{% highlight c# %}
 void GridQueryRowHeight(object sender, GridRowColSizeEventArgs e)
 
 {
@@ -1091,8 +1104,9 @@ void GridQueryRowHeight(object sender, GridRowColSizeEventArgs e)
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 Private Sub GridQueryRowHeight(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
@@ -1110,6 +1124,7 @@ e.Handled = True
 End If
 
 End Sub
+{% endhighlight  %}
 
 ### QueryColWidth
 
@@ -1117,10 +1132,10 @@ This event is used to return column widths that are in demand. Here is a sample 
 
 
 
-[C#]
 
 
 
+{% highlight c# %}
 void GridQueryColWidth(object sender, GridRowColSizeEventArgs e)
 
 {
@@ -1141,7 +1156,8 @@ e.Handled = true;
 
 
 
-[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 
@@ -1160,15 +1176,16 @@ e.Handled = True
 End If
 
 End Sub
+{% endhighlight  %}
 
 ### QueryCoveredRange
 
 This event is used to provide covered ranges on demand. If you have a pattern of cells covered, then you can use this event to provide the ranges.
 
-[C#]
 
 
 
+{% highlight c# %}
 void GridQueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e) 
 
 {
@@ -1205,7 +1222,8 @@ void GridQueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 
@@ -1244,6 +1262,7 @@ e.Handled = True
 End If
 
 End Sub
+{% endhighlight  %}
 
 ### Pivot Grid
 
@@ -1260,7 +1279,7 @@ Pivot Grid control is built on the foundation of the Grid control. It comprises 
 
 Calculations are done through Grouping Engine, which is a part of Essential Grouping. The default calculation is _Summation_, but there exists an option to change calculation type to _Average_, _Median_, _Percentiles_, _Variances_, _Standard Deviations_, etc. You can also provide "custom" calculations through the grouping engine.
 
-Features
+### Features
 
 * Data-binding support
 * Auto-calculation of Total Summary
@@ -1269,7 +1288,7 @@ Features
 * Customizable Appearance
 * Support for XML and Binary Serialization
 
-APIs
+### APIs
 
 Here is a brief explanation on some of the important methods implemented in Pivot Grid.
 
@@ -1277,55 +1296,55 @@ Here is a brief explanation on some of the important methods implemented in Pivo
 
 
 
-[C#]
 
+{% highlight c# %}
 
 
 pivotGridControl1.CollapseAll();
 
-
+{% endhighlight  %}
 
 * ExpandAll() - Expands all the collapsed nodes in the Pivot Grid.
 
 
 
-[C#]
 
+{% highlight c# %}
 
 
 pivotGridControl1.ExpandAll();
-
+{% endhighlight  %}
 
 
 * InitSchema() - A new Pivot schema will be created and it will be associated with the Pivot Grid.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 pivotGridControl1.InitSchema();
 
-
+{% endhighlight  %}
 
 * ResetSchema() - Resets Pivot Grid control into an initial schema, which will be empty.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 pivotGridControl1.ResetSchema();
-
+{% endhighlight  %}
 
 
 * SetAppearance() - This method sets the appearance of the Pivot Grid.
 
 
 
-[C#]
+
 
 
 
@@ -1335,151 +1354,153 @@ Here is a brief explanation on some of the important properties implemented in t
 
 * AllString - This will get the string values that appear in the dropdown filter, when all the filter values get selected.
 
-[C#]
 
 
 
+{% highlight c# %}
 pivotGridControl1.AllString = "All";
+{% endhighlight  %}
 
 * AutoSizeColumns - Sizes the column according to the calculated value of the display width.
 
-[C#]
 
 
 
+{% highlight c# %}
 pivotGridControl1.AutoSizeColumns = true;
 
 
-
+{% endhighlight %}
 * ColumnCount - This specifies the number of columns in the main display grid.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 int i = pivotGridControl1.ColumnCount;
+{% endhighlight  %}
 
 * ColumnsCount - This specifies the number of distinct fields in the pivot grid.
 
 
 
-[C#]
 
 
 
+{% highlight c# %}
 int i = pivotGridControl1.ColumnsCount;
 
-
+{% endhighlight  %}
 
 * DataRowCount - This specifies the number of rows in the underlying IList datasource.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 int i = pivotGridControl1.DataRowCount;
 
-
+{% endhighlight  %}
 
 * DefaultComputationName - This specifies the name of the default calculation. The default value is _Sum_.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 pivotGridControl1.DefaultComputationName = "Sum";
 
-
+{% endhighlight  %}
 
 * DefaultDescriptionFormat - This specifies the format of calculated description. By default it will be, _{0} of {1}_, where {0} is the value of computation name and {1} is the value of the field name.
 
 
 
-[C#]
 
+{% highlight c# %}
 
 
 pivotGridControl1.DefaultDescriptionFormat = "{0} of {1}";
 
-
+{% endhighlight  %}
 
 * FilterCount - This specifies the number of distinct fields added to the filter.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 int i = pivotGridControl1.FilterCount;
 
-
+{% endhighlight  %}
 
 * FreezeHeaders - This determines whether the row and column headers should be frozen.
 
 
 
-[C#]
 
 
 
+{% highlight c# %}
 pivotGridControl1.FreezeHeaders = true;
-
+{% endhighlight  %}
 
 
 * GrandTotalString - This provides the text for the summary cells of the Pivot Grid.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 pivotGridControl1.GrandTotalString = "Grand Total";
 
-
+{% endhighlight  %}
 
 * LeftPanelWidth - This specifies the width of the left-most Panel.
 
 
 
-[C#]
 
 
 
+{% highlight c# %}
 pivotGridControl1.LeftPanelWidth = 20;
-
+{% endhighlight  %}
 
 
 * LeftPanelHeight - This specifies the height of the top-most Panel.
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 pivotGridControl1.LeftPanelHeight = 20;
 
-
+{% endhighlight  %}
 
 * MainDisplayGrid - This is a basic grid, which stores the pivot results.
 * MultipleString - This specifies the text that should appear when the Multiple Filter selected in the Filter Combo Box is changed. By default it will be set to Multiple.
 
 
 
-[C#]
 
 
 
+{% highlight c# %}
 pivotGridControl1.MultipleString = "Multiple";
-
+{% endhighlight  %}
 
 
 * Print Option - The print option is extended for the PivotGrid control to allow users to preview the contents before the contents are printed on paper.
@@ -1490,8 +1511,8 @@ The pivot grid visual style color is automatically applied in the printed docume
 
 The print functionality can be invoked using the following code:
 
- [C#]
-
+ 
+{% highlight c# %}
 
 
 private void button1_Click_1(object sender, EventArgs e)
@@ -1529,11 +1550,11 @@ MessageBox.Show("Error while print preview" + ex.ToString());
 }
 
 
+{% endhighlight  %}
 
 
 
-[VB]
-
+{% highlight vbnet %}
 
 
 Private Sub button1_Click_1(ByVal sender As Object, ByVal e As EventArgs)
@@ -1570,47 +1591,47 @@ End Try
 
 End Sub
 
-
+{% endhighlight  %}
 
 The following screen shots illustrate the print feature of the PivotGrid control: Headers and footers can also be added by using DrawGridPrintHeader and DrawGridPrintFooter events. The following code illustrates how to add the header and footer.
 
-[C#]
 
+{% highlight c# %}
 pd.DrawGridPrintHeader+=new GridPrintDocumentAdv.DrawGridHeaderFooterEventHandler(pd_DrawGridPrintHeader);
 
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 pd.DrawGridPrintFooter+=new GridPrintDocumentAdv.DrawGridHeaderFooterEventHandler(pd_DrawGridPrintFooter);
 
 
 
 
 
-[VB]
+{% endhighlight  %}
 
-
+{% highlight c# %}
 
 AddHandler pd.DrawGridPrintHeader, AddressOf pd_DrawGridPrintHeader
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 AddHandler pd.DrawGridPrintFooter, AddressOf pd_DrawGridPrintFooter
 
 
-
+{% endhighlight  %}
 
 
 The following image shows the printed output of the pivot grid:
 
 
+![C:/Users/athirams/Desktop/print/page1.png](Virtual-Grids_images/Virtual-Grids_img9.png) 
 
-{ ![C:/Users/athirams/Desktop/print/page1.png](Virtual-Grids_images/Virtual-Grids_img9.png) | markdownify }
-
- _Figure_ _267__: Pivot Grid in Print Preview_
-
+ _Figure267: Pivot Grid in Print Preview_
 
 
-Sample Link
+
+### Sample Link
 
 _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows\Samples\Printing\Pivot Print Demo_
 
@@ -1622,79 +1643,77 @@ This section comprises the following:
 
 GridFormatCellDialog simulates FormatCells dialog feature of MS Excel. It provides numerous formatting options such as Font, Alignment, Background, and Number, which aid in formatting grid cells dynamically. It is now available as an add-on feature for Essential Grid control. GridFormatCellDialog class accepts an instance of the Grid control to be formatted, and exposes the above mentioned formatting options to operate on grid cells that are selected. Below image illustrates such a sample dialog.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img10.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img10.jpeg) 
 
 
 
 
 
-Setting up GridFormatCellDialog
+### Setting up GridFormatCellDialog
 
 This GridFormatCellDialog can be enabled by instantiating GridFormatCellDialog class and invoking its ShowDialog method. 
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img11.jpeg) | markdownify }
-
-_Note: You must select the cells to be formatted before activating this dialog._
-
-[C#]
+N> You must select the cells to be formatted before activating this dialog.
 
 
+
+{% highlight c# %}
 
 GridFormatCellDialog formatDialog = new GridFormatCellDialog(this.gridControl1);
 
 formatDialog.ShowDialog();
 
+{% endhighlight  %}
 
 
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Dim formatDialog As GridFormatCellDialog = New GridFormatCellDialog(Me.gridControl1)
 
 formatDialog.ShowDialog()
 
+{% endhighlight  %}
 
+### Formatting Options
 
-Formatting Options
-
-Font Tab
+#### Font Tab
 
 This provides options to set the font, font style, font size, font effects, and font color for the desired grid cells.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img12.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img12.jpeg)
 
 
 
 
 
-Number Tab
+#### Number Tab
 
 This allows you to specify text format for grid cells. The possible options are Number, Currency, Percentage, Date, Time, Scientific and Text.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img13.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img13.jpeg)
 
 
 
 
 
-Background Tab
+#### Background Tab
 
 This allows you to set background color for grid cells. You can set gradient shades and pattern styles as well.
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img14.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img14.jpeg)
 
 
 
 
 
-Alignment Tab
+#### Alignment Tab
 
 This provides various cell alignment options such as Horizontal Alignment, Vertical Alignment, Merge Cells, Wrap Text, and so on.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img15.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img15.jpeg)
 
 
 
@@ -1704,7 +1723,7 @@ This section provides information on VisualStyles and ThemesEnabled properties (
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img16.png) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img16.png) 
 
 
 
@@ -1714,41 +1733,43 @@ The figure above displays various visual styles in VisualStyles group box in UI 
 
 Following code example illustrates how to set visual style for Grid control.
 
-[C#]
 
 
 
+{% highlight c# %}
 //Sets an Office 2007 Blue skin theme to the Essential Grid control.
 
 gridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue;
 
+{% endhighlight  %}
 
 
-[VB.NET]
 
-
+{% highlight c# %}
 
 'Sets an Office 2007 Blue skin theme to the Essential Grid control.
 
 gridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue
 
-
+{% endhighlight  %}
 
 ThemesEnabled property determines whether XP Themes (visual styles) can be used for this control or not, when available. Following code example illustrates how to set the theme for the Grid control.
 
-[C#]
 
 
+{% highlight c# %}
 
 this.gridControl1.ThemesEnabled = true;
 
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
 Me.gridControl1.ThemesEnabled = True
+{% endhighlight  %}
 
 ### Grid Control Designer
 
@@ -1759,50 +1780,47 @@ Following is the step-by-step procedure to edit Grid control's cell styles using
 1. Right click the Grid control. A context menu is displayed.
 2. Select Edit from the context menu drop-down. The figure below illustrates this user-action:
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img17.jpeg) | markdownify }
+   ![](Virtual-Grids_images/Virtual-Grids_img17.jpeg) 
 
 
 
 
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img18.jpeg) | markdownify }
-
-_Note: Editor opens up on the right hand side of the page and Grid Properties tab is highlighted by default. The cell content, styles and general grid properties can be modified under Grid Properties tab._ 
+   N> Editor opens up on the right hand side of the page and Grid Properties tab is highlighted by default. The cell content, styles and general grid properties can be modified under Grid Properties tab.
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img19.png) | markdownify }
+   ![](Virtual-Grids_images/Virtual-Grids_img19.png) 
 
 
 
 
 
-The figure above shows GridControl Designer window with Grid Properties tab.
+   The figure above shows GridControl Designer window with Grid Properties tab.
 
-Modifying the Properties of a Selected Range
+   Modifying the Properties of a Selected Range
 
-To modify properties of a selected range, follow the steps listed below:
+   To modify properties of a selected range, follow the steps listed below:
 
-1. Select a range of cells.
-2. Click Selected Range tab to view Property grid for the selection.
-
-
-
-{ ![](Virtual-Grids_images/Virtual-Grids_img20.png) | markdownify }
+   1. Select a range of cells.
+   2. Click Selected Range tab to view Property grid for the selection.
 
 
 
+   ![](Virtual-Grids_images/Virtual-Grids_img20.png)
 
 
-The figure above shows the Property grid under Selected Range tab in GridControl Designer window.
+
+
+
+   The figure above shows the Property grid under Selected Range tab in GridControl Designer window.
 
 3. Make the required modifications in the property grid so that they are affected in the selected range of the main grid.
 4. Exit editor after modifications are done. 
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img21.jpeg) | markdownify }
 
-_Note: The system prompts you to save the changes to the Grid control in the designer if exited without saving._
-
+   N> The system prompts you to save the changes to the Grid control in the designer if exited without saving.
+   {:.prettyprint}
+   
 ### Grid Properties
 
 Essential Grid provides support to customize the appearance and behavior of grid cells. This section would provide you more insight on the properties affecting Appearance, Print Styles, and Scroll Bar Settings available. It includes the following topics.
@@ -1813,7 +1831,7 @@ The properties that majorly affect the appearance cells and data in cells of a g
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img22.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img22.jpeg)
 
 
 
@@ -1827,9 +1845,9 @@ The following properties are used to customize the appearance of Grid.
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Enables TransparentBackground property.
 
@@ -1837,17 +1855,19 @@ this.gridControl1.TransparentBackground = true;
 
 
 
-[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 
 'Enables TransparentBackground property.
 
 Me.gridControl1.TransparentBackground = True
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the TransparentBackground property is set to true.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img23.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img23.jpeg)
 
 
 
@@ -1857,27 +1877,28 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 //Enables DisplayHorzLines property.
 
 this.gridControl1.Properties.DisplayHorzLines = false;
 
+{% endhighlight  %}
 
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Enables DisplayHorzLines property.
 
 Me.gridControl1.Properties.DisplayHorzLines = False
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.DisplayHorzLines property is set to false.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img24.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img24.jpeg) 
 
 
 
@@ -1887,29 +1908,29 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 //Enables DisplayVertLines property.
 
 this.gridControl1.Properties.DisplayVertLines = false;
 
 
-
-[VB.NET]
-
+{% endhighlight  %}
 
 
+
+{% highlight vbnet %}
 'Enables DisplayVertLines property.
 
 Me.gridControl1.Properties.DisplayVertLines = False
-
+{% endhighlight  %}
 
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.DisplayVertLines property is set to false.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img25.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img25.jpeg)
 
 
 
@@ -1919,29 +1940,29 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 //Hides the column headers.
 
 this.gridControl1.Properties.ColHeaders = false;
 
 
 
-[VB.NET]
+{% endhighlight  %}
 
 
-
+{% highlight vbnet %}
 'Hides the column headers.
 
 Me.gridControl1.Properties.ColHeaders = False
 
-
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when Properties.ColHeaders property is set to false.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img26.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img26.jpeg)
 
 
 
@@ -1949,27 +1970,28 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Hides the row headers.
 
 this.gridControl1.Properties.RowHeaders = false;
 
+{% endhighlight  %}
 
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Hides the row headers.
 
 Me.gridControl1.Properties.RowHeaders = False
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.RowHeaders property is set to false.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img27.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img27.jpeg)
 
 
 
@@ -1979,27 +2001,29 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Enables Buttons3D property.
 
 this.gridControl1.Properties.Buttons3D = false;
 
 
-
-[VB.NET]
-
+{% endhighlight  %}
 
 
+
+{% highlight vbnet %}
 'Enables Buttons3D property.
 
 Me.gridControl1.Properties.Buttons3D = False
+{% endhighlight  %}
+
 
 The following illustration shows how the Grid in "Figure 1" is transformed when Properties.Buttons3D property is set to false.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img28.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img28.jpeg)
 
 
 
@@ -2009,9 +2033,9 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Specifiesthe color for the grid lines.
 
@@ -2019,19 +2043,19 @@ this.gridControl1.Properties.GridLineColor = System.Drawing.Color.IndianRed;
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
 
-
+{% highlight vbnet %}
 'Specifies the color for the grid lines.
 
 Me.gridControl1.Properties.GridLineColor = System.Drawing.Color.IndianRed
 
-
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the Properties.GridLineColor property is set to IndianRed.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img29.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img29.jpeg) 
 
 
 
@@ -2041,27 +2065,28 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 // Specifies the background image.
 
 this.gridControl1.BackgroundImage = Image.FromFile(FindImageFile(@"..\..\..\..pic.jpg"));
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
 
-
+{% highlight vbnet %}
 'Specifies the background image.
 
 Me.gridControl1.BackgroundImage = Image.FromFile(FindImageFile("..\..\..\..pic.jpg"))
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the BackgroundImage property is set.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img30.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img30.jpeg) 
 
 
 
@@ -2071,29 +2096,29 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 //Sets grid text color.
 
 this.gridControl1.TableStyle.TextColor = Color.MidnightBlue;
 
+{% endhighlight  %}
 
 
-[VB.NET]
 
 
-
+{% highlight vbnet %}
 'Sets grid text color.
 
 Me.gridControl1.TableStyle.TextColor = Color.MidnightBlue
 
-
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when TableStyle.TextColor property is set to MidnightBlue.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img31.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img31.jpeg)
 
 
 
@@ -2103,27 +2128,28 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Sets the grid background color.
 
 this.gridControl1.BackColor = Color.Beige;
 
 
+{% endhighlight  %}
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Sets the grid background color.
 
 Me.gridControl1.BackColor = Color.Beige
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the BackColor property is set to Beige.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img32.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img32.jpeg)
 
 
 
@@ -2133,17 +2159,19 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 //Specifies the color for the grid line marker while resizing rows and columns.
 
 this.gridControl1.Properties.ResizingCellsLinesColor = Color.PaleVioletRed;
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -2151,38 +2179,38 @@ this.gridControl1.Properties.ResizingCellsLinesColor = Color.PaleVioletRed;
 
 Me.gridControl1.Properties.ResizingCellsLinesColor = Color.PaleVioletRed
 
-
+{% endhighlight  %}
 
 * Borders - Specifies settings for Top, Left, Bottom, and Right borders.
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Sets border settings for the grid.
 
 this.gridControl1.TableStyle.Borders.All = new GridBorder(GridBorderStyle.Solid, Color.SteelBlue);
 
 
-
-[VB.NET]
-
+{% endhighlight  %}
 
 
+
+{% highlight vbnet %}
 'Sets border settings for the grid.
 
 Me.gridControl1.TableStyle.Borders.All = New GridBorder(GridBorderStyle.Solid, Color.SteelBlue)
 
-
+{% endhighlight  %}
 
 * FixedLinesColor - Specifies the color of frozen grid lines (for example, row or column headers). Default value is set to _ActiveCaption_.
 
 The following code examples can be used to set this property:
 
- [C#]
-
+ 
+{% highlight vbnet %}
 
 
 //Sets the color of frozen grid lines.
@@ -2190,14 +2218,16 @@ The following code examples can be used to set this property:
 this.gridControl1.Properties.FixedLinesColor = Color.YellowGreen;
 
 
-
-[VB.NET]
-
+{% endhighlight  %}
 
 
+
+{% highlight vbnet %}
 'Sets the color of frozen grid lines.
 
 Me.gridControl1.Properties.FixedLinesColor = Color.YellowGreen
+{% endhighlight  %}
+
 
 A sample demonstrating these properties is available under the following sample installation path.
 
@@ -2211,53 +2241,56 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Win
 
 The following code examples illustrate how to set this property:
 
-[C#]
 
+{% highlight c# %}
 
 
 //Specifies if the grid should print only in black and white.
 
 this.gridControl1.Properties.BlackWhite = true;
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
-
- [VB.NET]
+ 
 
 
 
 'Specifies if the grid should print only in black and white.
 
 Me.gridControl1.Properties.BlackWhite = True
+{% endhighlight  %}
 
 * Printing - Prints the grid.
 
 The following code examples illustrate how to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 //Prints the grid.
 
 this.gridControl1.Properties.Printing = true;
 
 
-
-[VB.NET]
-
+{% endhighlight %}
 
 
+
+{% highlight vbnet %}
 'Prints the grid.
 
-Me.gridControl1.Properties.Printing = True
+Me.gridControl1.Properties.Printing = True\
+{% endhighlight  %}
 
 * PrintFrame - Specifies the appearance of a frame around the grid while printing.
 
 The following code examples illustrate how to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Specifies if a frame should be drawn around the grid while printing.
 
@@ -2265,31 +2298,33 @@ this.gridControl1.Properties.PrintFrame = true;
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 ' Specifies if a frame should be drawn around the grid while printing.
 
 Me.gridControl1.Properties.PrintFrame = True
 
-
+{% endhighlight  %}
 
 * PrintColHeader - Specifies if column headers should be printed.
 
 The following code examples illustrate how to set this property:
 
-[C#]
 
 
 
+{% highlight c# %}
 // Specify if column headers should be printed.
 
 this.gridControl1.Properties.PrintColHeader = true;
 
 
 
- [VB.NET]
+ {% endhighlight  %}
+ {% highlight vbnet %}
 
 
 
@@ -2297,23 +2332,23 @@ this.gridControl1.Properties.PrintColHeader = true;
 
 Me.gridControl1.Properties.PrintColHeader = True
 
-
+{% endhighlight  %}
 
 * PrintRowHeader - Specifies if row headers should be printed.
 
  The following code example illustrates how to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Specifies if row headers should be printed.
 
 this.gridControl1.Properties.PrintRowHeader = true;
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
-
-[VB.NET]
 
 
 
@@ -2322,14 +2357,14 @@ this.gridControl1.Properties.PrintRowHeader = true;
 Me.gridControl1.Properties.PrintRowHeader = True
 
 
-
+{% endhighlight  %}
 * CenterVertical - Specifies if the grid should be centered vertically on printing.
 
 The following code examples illustrate how to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Specifies if the grid should be centered vertically on printing.
 
@@ -2337,31 +2372,32 @@ this.gridControl1.Properties.CenterVertical = true;
 
 
 
-[VB.NET]
+{% endhighlight  %}
 
 
-
+{% highlight vbnet %}
 'Specifies if the grid should be centered vertically on printing.
 
 Me.gridControl1.Properties.CenterVertical = True
-
+{% endhighlight %}
 
 
 * PrintHorzLines - Specifies if horizontal lines of the grid should be printed.
 
 The following code example illustrates how to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Specifies if horizontal lines of the grid should be printed.
 
 this.gridControl1.Properties.PrintHorzLines = true;
 
+{% endhighlight %}
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -2369,47 +2405,49 @@ this.gridControl1.Properties.PrintHorzLines = true;
 
 Me.gridControl1.Properties.PrintHorzLines = True
 
-
+{% endhighlight  %}
 
 * PrintVertLines - Specifies if vertical lines of the grid should be printed.
 
 The following code example illustrates how to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Specifies if vertical lines of the grid should be printed.
 
 this.gridControl1.Properties.PrintVertLines = true;
 
+{% endhighlight  %}
 
 
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 'Specifies if vertical lines of the grid should be printed.
 
 Me.gridControl1.Properties.PrintVertLines = True
+{% endhighlight  %}
 
 * CenterHorizontal - Specifies if a grid should be centered horizontally while printing.
 
 The following code example illustrates how to set this property in Grid control. 
 
-[C#]
+{% highlight c# %}
 
 //Specifies if the grid should be centered horizontally while printing.
 
 this.gridControl1.Properties.CenterHorizontal = true;
 
 
-
-[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
 'Specifies if the grid should be centered horizontally while printing.
 
 Me.gridControl1.Model.Properties.CenterHorizontal = False
+{% endhighlight  %}
 
 A sample demonstrating these properties is available under the following sample installation path.
 
@@ -2419,7 +2457,7 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Win
 
 Essential Grid provides support to control functionalities and appearance of the grid scroll bars.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img33.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img33.jpeg) 
 
 
 
@@ -2431,33 +2469,33 @@ The following properties are associated with scrolling in grid.
 
 The following code examples can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Enables horizontal pixel scrolling for the grid.
 
 this.gridControl1.HScrollPixel = true;
 
 
+{% endhighlight  %}
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Enables horizontal pixel scrolling for the grid.
 
 Me.gridControl1.HScrollPixel = True
 
-
+{% endhighlight  %}
 
 * VscrollPixel - Specifies whether to enable or disable vertical pixel scrolling for the grid. Default value is set to _false_.
 
 The following code examples can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Enables vertical pixel scrolling for the grid.
 
@@ -2465,31 +2503,33 @@ this.gridControl1.VScrollPixel = true;
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 'Enables vertical pixel scrolling for the grid.
 
 Me.gridControl1.VScrollPixel = True
 
-
+{% endhighlight  %}
 
 * HorizontalScrollTips - Specifies if the control should display scroll tips while the user is dragging a horizontal scroll bar thumb. Default value is set to _false_.
 
 The following code examples can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Specifies whether scroll tips should be displayed while dragging the horizontal scroll bar thumb.
 
 this.gridControl1.HorizontalScrollTips = true;
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -2497,11 +2537,11 @@ this.gridControl1.HorizontalScrollTips = true;
 
 Me.gridControl1.HorizontalScrollTips = True
 
-
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when thorizontalScrollTips if  property is set to true.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img34.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img34.jpeg) 
 
 
 
@@ -2511,31 +2551,31 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
- [C#]
+ 
 
 
-
+{% highlight c# %}
 //Specifieswhether scroll tips should be displayed while dragging the vertical scroll bar thumb.
 
 this.gridControl1.VerticalScrollTips = true;
 
 
 
-[VB.NET]
+{% endhighlight  %}
 
 
-
+{% highlight vbnet %}
 'Specifies whether scroll tips should be displayed while dragging the vertical scroll bar thumb.
 
 Me.gridControl1.VerticalScrollTips = True
 
-
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the VerticalScrollTips property is set to true.
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img35.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img35.jpeg)
 
 
 
@@ -2545,25 +2585,25 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code example can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Sets the behavior of the horizontal scroll bar.
 
 this.gridControl1.HScrollBehavior = GridScrollbarMode.Shared;
 
 
+{% endhighlight  %}
 
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 'Sets the behavior of the horizontal scroll bar.
 
 Me.gridControl1.HScrollBehavior = GridScrollbarMode.Shared
 
-
+{% endhighlight  %}
 
 * VScrollBehavior - Specifies the behavior of the vertical scroll bar. GridScrollbarMode enumeration provides the following options to control the scroll bar behavior: Automatic, AutoScroll, DetectIfShared, DisableAutoScroll, Disabled, Enabled, and Shared_._
 
@@ -2571,33 +2611,33 @@ The following code example can be used to set this property:
 
 
 
-[C#]
 
 
+{% highlight c# %}
 
 //Sets the behavior of the vertical scroll bar.
 
 this.gridControl1.VScrollBehavior = GridScrollbarMode.Shared;
 
+{% endhighlight  %}
 
 
-[VB.NET]
 
 
-
+{% highlight vbnet %}
 'Sets the behavior of the vertical scroll bar.
 
 Me.gridControl1.VScrollBehavior = GridScrollbarMode.Shared
-
+{% endhighlight  %}
 
 
 * HorizontalThumbTrack - Specifies whether the control should scroll while the user is dragging the horizontal scroll bar thumb. Default value is set to _false_.
 
 The following code example can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Specifies whether the control should scroll while dragging the horizontal scroll bar thumb.
 
@@ -2605,7 +2645,8 @@ this.gridControl1.HorizontalThumbTrack = true;
 
 
 
-[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 
@@ -2613,11 +2654,11 @@ this.gridControl1.HorizontalThumbTrack = true;
 
 Me.gridControl1.HorizontalThumbTrack = True
 
-
+{% endhighlight %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the HorizontalThumbTrack property is set to true.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img36.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img36.jpeg)
 
 
 
@@ -2627,31 +2668,31 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Specifies whether the control should scroll while dragging the vertical scroll bar thumb.
 
 this.gridControl1.VerticalThumbTrack = true;
 
 
+{% endhighlight  %}
 
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 'Specifies whether the control should scroll while dragging the vertical scroll bar thumb.
 
 Me.gridControl1.VerticalThumbTrack = True
 
-
+{% endhighlight  %}
 
 The following illustration shows how the Grid in "Figure 1" is transformed when the VerticalThumbTrack property is set to true.
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img37.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img37.jpeg) 
 
 
 
@@ -2661,81 +2702,81 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 The following code examples can be used to set this property:
 
- [C#]
+ 
 
 
-
+{% highlight c# %}
 //Toggles to Office 2007 scroll bar.
 
 this.gridControl1.Office2007ScrollBars = true;
 
 
+{% endhighlight  %}
+ 
 
- [VB.NET]
 
-
-
+{% highlight vbnet %}
 'Toggles to Office 2007 scroll bar.
 
 Me.gridControl1.Office2007ScrollBars = True
-
+{% endhighlight  %}
 
 
 * Office2007ScrollBarsColorScheme - Specifies the style for Office 2007 scroll bars. Default value is set to _Blue_.
 
 The following code example can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Sets the style for Office 2007 scroll bar.
 
 this.gridControl1.Office2007ScrollBarsColorScheme = Office2007ColorScheme.Blue;
 
 
+{% endhighlight  %}
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Sets the style for Office 2007 scroll bar.
 
 Me.gridControl1.Office2007ScrollBarsColorScheme = Office2007ColorScheme.Blue
 
 
-
+{% endhighlight  %}
 * ScrollFrozen - Defines scroll behavior when user moves current cell with arrow keys into frozen cells area. Default value is set to _true_.
 
 The following code examples can be used to set this property:
 
- [C#]
+ 
 
 
-
+{% highlight c# %}
 //Defines scroll behavior in frozen cells.
 
 this.gridControl1.ScrollFrozen = true;
 
+{% endhighlight  %}
 
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Defines scroll behavior in frozen cells.
 
 Me.gridControl1.ScrollFrozen = True
-
+{% endhighlight  %}
 
 
 * ScrollTipFormat - Specifies the text to be displayed in the ScrollTip window with a place holder for scroll position.
 
 The following code example can be used to set this property:
 
-[C#]
 
 
+{% highlight c# %}
 
 //Sets the text to be displayed in the ScrollTip window with a place holder for scroll position.
 
@@ -2743,84 +2784,85 @@ this.gridControl1.ScrollTipFormat = "Position {0}";
 
 
 
-[VB.NET]
+{% endhighlight  %}
 
 
-
+{% highlight vbnet %}
 'Sets the text to be displayed in the ScrollTip window with a place holder for scroll position.
 
 Me.gridControl1.ScrollTipFormat = "Position {0}"
+{% endhighlight  %}
 
 * AutoScrolling - Specifies whether to enable or disable automatic scrolling.
 
 The following code example can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Enables AutoScrolling.
 
 this.gridControl1.AutoScrolling = true;
 
 
+{% endhighlight  %}
+ 
 
- [VB.NET]
 
-
-
+{% highlight vbnet %}
 'Enables AutoScrolling.
 
 Me.gridControl1.AutoScrolling = True
-
+{% endhighlight  %}
 
 
 * Hscroll - Specifies whether to enable orv disable horizontal scroll bar.
 
 The following code examples can be used to set this property:
 
- [C#]
+ 
 
 
-
+{% highlight c# %}
 //Enables horizontal scroll bar.
 
 this.gridControl1.HScroll = true;
 
 
+{% endhighlight  %}
 
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 'Enables horizontal scroll bar.
 
 Me.gridControl1.HScroll = True
 
-
+{% endhighlight  %}
 
 * VScroll - Specifies whether to enable or disable vertical scroll bar.
 
 The following code example can be used to set this property:
 
- [C#]
+ 
 
-
+{% highlight c# %}
 
 //Enables vertical scroll bar.
 
 this.gridControl1.VScroll = true;
 
+{% endhighlight  %}
 
 
-[VB.NET]
 
 
-
+{% highlight vbnet %}
 ' Enables vertical scroll bar.
 
 Me.gridControl1.VScroll = True
-
+{% endhighlight  %}
 A sample demonstrating these properties is available under the following sample installation path.
 
 _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\ScrollBar Demo_
@@ -2834,9 +2876,8 @@ Essential Grid enables custom drawing on its cells. Custom Drawing denotes addin
 
 Following code example illustrates handling the Draw Cell event.
 
- [C#]
-
-
+ 
+{% highlight c#  %}
 
 //DrawCell event is used to apply styles to the grid.
 
@@ -2872,9 +2913,9 @@ private void gridControl1_DrawCell(object sender, GridDrawCellEventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight   %}
 
-
+{% highlight vbnet  %}
 
 'DrawCell event is used to apply styles to the grid.
 
@@ -2896,14 +2937,14 @@ End If
 
 End Sub
 
-
+{% endhighlight   %}
 
 The above code identifies the first row, first column and the even rows using their index values and paints them with unique interior styles.
 
 Following code example illustrates handling the CellDrawn Event.
 
- [C#]
-
+ 
+{% highlight c#  %}
 
 
 //Handles CellDrawn Event to customize the appearance of grid cells.
@@ -2946,10 +2987,10 @@ private void gridControl1_CellDrawn(object sender, GridDrawCellEventArgs e)
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
 
-
+{% highlight vbnet  %}
 'Handles CellDrawn Event to customize the appearance of grid cells.
 
 Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As GridDrawCellEventArgs)
@@ -2978,7 +3019,7 @@ End If
 
 End Sub
 
-
+{% endhighlight   %}
 
 The above code identifies the cells of the sixth column except the cell corresponding to the column header, using their index values, and customizes their appearance.
 
@@ -2988,7 +3029,7 @@ Essential Grid has built-in support for displaying a Grid List control as a drop
 
 The following screen shot shows grid cell with Grid List control as its drop-down.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img38.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img38.jpeg)
 
 
 
@@ -2998,10 +3039,10 @@ To add a Grid List control to grid cell and bind some data:
 
 To have a Grid List control in a Grid cell, set its CellType property as _GridListControl_. An array is used as data source in the following example. You can set its DataSource and DisplayMember properties as follows:
 
-[C#]
 
 
 
+{% highlight c#  %}
 ArrayList array = new ArrayList();
 
 array.Add(new MyClass(001, "John David"));
@@ -3032,7 +3073,7 @@ this.gridControl1[rowIndex, 2].DisplayMember = "Name";
 
 
 
-[VB.NET]
+
 
 
 
@@ -3050,8 +3091,8 @@ array.Add(New [MyClass](5, "Bruch"))
 
 array.Add(New [MyClass](6, "Johny"))
 
-
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 'Sets up a Grid List control cell.
 
 Me.gridControl1(rowIndex, 2).CellType = "GridListControl"
@@ -3063,18 +3104,17 @@ Me.gridControl1(rowIndex, 2).CellType = "GridListControl"
 Me.gridControl1(rowIndex, 2).DataSource = array
 
 Me.gridControl1(rowIndex, 2).DisplayMember = "Name"
+{% endhighlight   %}
 
 We have now added a Grid List control in a Grid cell and bound the data to it. This Grid List control can be customized by accessing GridDropDownGridListControlCellRenderer class inside the CurrentCellShowedDropDown event handler.
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img39.jpeg) | markdownify }
-
-_Note: CurrentCellShowedDropDown event is handled once the drop-down of the specified grid cell is made visible by clicking the downward arrow at the end of the cell._
+N> CurrentCellShowedDropDown event is handled once the drop-down of the specified grid cell is made visible by clicking the downward arrow at the end of the cell.
 
 The following code illustrates this event:
 
-[C#]
 
 
+{% highlight c#  %}
 
 private void gridControl1_CurrentCellShowedDropDown(object sender, EventArgs e)
 
@@ -3107,8 +3147,9 @@ private void gridControl1_CurrentCellShowedDropDown(object sender, EventArgs e)
 }
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-[VB.NET]
 
 
 
@@ -3141,7 +3182,7 @@ Private Sub gridControl1_CurrentCellShowedDropDown(ByVal sender As Object, ByVal
     listRenderer.ListControlPart.FillLastColumn = False
 
 End Sub
-
+{% endhighlight   %}
 You can apply various styles such as table style, border style, text color, grid line color, etc, to the Grid List control inside a grid cell as in Figure 1. 
 
 ### Working with Rows and Columns
@@ -3160,9 +3201,9 @@ GridControl.Cols.Hidden collection will allow you to specify whether a column is
 
 
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Hides column 2.
 
@@ -3175,10 +3216,10 @@ this.gridControl1.Cols.Hidden[2] = true;
 this.gridControl1.Rows.Hidden[3] = true; 
 
 
+{% endhighlight   %}
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Hides column 2.
 
@@ -3189,14 +3230,15 @@ Me.GridControl1.Cols.Hidden(2) = True
 'Hides row 3. 
 
 Me.GridControl1.Rows.Hidden(3) = True  
+{% endhighlight   %}
 
 You can also use this property to hide the default row headers and column headers. These headers are just column zero and row zero respectively. To hide them you can use code like the one given below.
 
 
 
-[C#]
 
 
+{% highlight vbnet  %}
 
 //Hides default row headers.
 
@@ -3208,11 +3250,11 @@ this.gridControl1.Cols.Hidden[0] = true;
 
 this.gridControl1.Rows.Hidden[0] = true; 
 
+{% endhighlight   %}
 
 
-[VB.NET]
 
-
+{% highlight vbnet  %}
 
 'Hides default row headers.       
 
@@ -3223,12 +3265,13 @@ Me.GridControl1.Cols.Hidden(0) = True
 'Hides default column headers. 
 
 Me.GridControl1.Rows.Hidden(0) = True  
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img40.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img40.jpeg) 
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img41.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img41.jpeg)
 
 
 
@@ -3236,8 +3279,8 @@ Me.GridControl1.Rows.Hidden(0) = True
 
 As we have seen in the previous section, it is possible to hide both the row and column headers. We can also have more than one header row and/or more than one header column. The properties that control the number of header rows and columns is GridControl.Rows.HeaderCount and GridControl.Cols.HeaderCount. This HeaderCount property is the index of the last header row or column. So, to have a total of three column header rows, set Rows.HeaderCount to two.
 
-[C#]
 
+{% highlight c#  %}
 
 
 //Total of three column header rows.        
@@ -3245,16 +3288,17 @@ As we have seen in the previous section, it is possible to hide both the row and
 this.gridControl1.Rows.HeaderCount = 2;
 
 
+{% endhighlight   %}
 
-[VB.NET]
 
-
+{% highlight vbnet  %}
 
 'Total of three column header rows.        
 
 Me.GridControl1.Cols.Rows.HeaderCount = 2  
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img42.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img42.jpeg) 
 
 
 
@@ -3262,8 +3306,8 @@ Me.GridControl1.Cols.Rows.HeaderCount = 2
 
 A  frozen row is one that cannot be scrolled. For example, the default column header (row 0) is a frozen row. Frozen rows will always be displayed at the top of the grid. You can set the number of frozen rows using GridControl.Rows.FrozenCount property. In our previous code sample, we used the Rows.HeaderCount property to set up two additional column header rows. To cause the new headers to be fixed and not to scroll, you need to set the Rows.FrozenCount to two. Note that you can freeze non-header type rows as well, but in the following code samples we are freezing headers only.
 
-[C#]
 
+{% highlight c#  %}
 
 
 //Has 3 non-scrollable rows at the top.        
@@ -3278,10 +3322,10 @@ this.gridControl1.Rows.HeaderCount = 2;
 
 
 
-[VB.NET]
+{% endhighlight   %}
 
 
-
+{% highlight vbnet  %}
 'Has 3 non-scrollable rows at the top.        
 
 Me.GridControl1.Rows.FrozenCount = 2    
@@ -3291,8 +3335,9 @@ Me.GridControl1.Rows.FrozenCount = 2
 'Total of three column header rows.        
 
 Me.GridControl1.Rows.HeaderCount = 2   
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img43.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img43.jpeg)
 
 
 
@@ -3302,8 +3347,8 @@ As we have said, frozen rows will always appear at the top of the grid and froze
 
 
 
-[C#]
 
+{% highlight c#  %}
 
 
 //Moves rows 3 and 4 to the top of the grid and freezes them.        
@@ -3311,14 +3356,15 @@ As we have said, frozen rows will always appear at the top of the grid and froze
 this.gridControl1.Rows.FreezeRange(3,4);
 
 
+{% endhighlight   %}
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Moves rows 3 and 4 to the top of the grid and freezes them.        
 
 Me.GridControl1.Rows.FreezeRange(3,4)  
+{% endhighlight   %}
 
 ### Moving Rows and Columns
 
@@ -3326,25 +3372,26 @@ The methods GridControl.Rows.MoveRange and GridControl.Cols.MoveRange are used t
 
 
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Starts at row 7, moves 2 rows to row 4.        
 
 this.gridControl1.Rows.MoveRange(7, 2, 4); 
 
+{% endhighlight  %}
 
 
-[VB.NET]
-
+{% highlight vbnet  %}
 
 
 'Starts at row 7, moves 2 rows to row 4.      
 
 Me.GridControl1.Rows.MoveRange(7, 2, 4)
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img44.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img44.jpeg)
 
 
 
@@ -3352,12 +3399,10 @@ Me.GridControl1.Rows.MoveRange(7, 2, 4)
 
 GridControl.ColWidths and GridControl.RowHeights collections will allow you to programmatically set the width of a column and/or the height of a row.
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img45.jpeg) | markdownify }
+N> Before you can use GridDataBoundGrid.Model.ColWidths to explicitly set column widths in Data Bound Grid, you must first set GridDataBoundGrid.AllowResizeToFit to false. Otherwise, the grid will try to size columns based on the width of the header text.
 
-_Note: Before you can use GridDataBoundGrid.Model.ColWidths to explicitly set column widths in Data Bound Grid, you must first set GridDataBoundGrid.AllowResizeToFit to false. Otherwise, the grid will try to size columns based on the width of the header text._ 
 
-[C#]
-
+{% highlight c#  %}
 
 
 //Sets the width of column 3.       
@@ -3371,10 +3416,10 @@ this.gridControl1.ColWidths[3] = 40;
 this.gridControl1.RowHeights[4] = 40; 
 
 
+{% endhighlight  %}
 
-[VB.NET]
 
-
+{% highlight vbnet  %}
 
 'Sets the width of column 3.        
 
@@ -3385,8 +3430,9 @@ Me.GridControl1.ColWidths(3) = 40
 'Sets the height of row 4.
 
 Me.GridControl1.RowHeights(4) = 40 
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img46.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img46.jpeg)
 
 
 
@@ -3394,13 +3440,11 @@ Me.GridControl1.RowHeights(4) = 40
 
 GridControl.ColStyles and GridControl.RowStyles collections will allow you to programmatically set the default row or column style. This code will set backcolor and text color as well as set the font to bold for column two and row three.
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img47.jpeg) | markdownify }
-
-_Note: RowStyles and ColStyles are not supported in DataBound Grid. For that grid, you will need to use  GridBoundColumn.StyleInfo property to set column styles and you will need to use grid.Model.QueryCellInfo event to set row styles._
-
-[C#]
+>Note: RowStyles and ColStyles are not supported in DataBound Grid. For that grid, you will need to use  GridBoundColumn.StyleInfo property to set column styles and you will need to use grid.Model.QueryCellInfo event to set row styles.
 
 
+
+{% highlight c#  %}
 
 //Sets Back Color, Text Color and Font Style of Column 2.
 
@@ -3421,10 +3465,10 @@ this.gridControl1.RowStyles[3].TextColor = Color.White;
 this.gridControl1.RowStyles[3].Font.Bold = true;
 
 
+{% endhighlight   %}
 
-[VB.NET]
 
-
+{% highlight vbnet  %}
 
 'Sets Back Color, Text Color and Font Style of Column 2.
 
@@ -3445,8 +3489,9 @@ Me.GridControl1.RowStyles(3).TextColor = Color.White
 Me.GridControl1.RowStyles(3).Font.Bold = True
 
 
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img48.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img48.jpeg)
 
 
 
@@ -3457,10 +3502,8 @@ Essential Grid supports resizing behavior of columns and rows in Grid control. T
 GridResizeCellsBehavior enumeration provides the following options to control resizing behavior. 
 
 * AllowDragOutside - Allows the user to drag the cell boundary outside grid client area and resize specific row or column.
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img49.jpeg) | markdownify }
 
-_Note: Grid client area is the area where cells along with row and column headers are visible to the client. Dragging outside the client area means dragging beyond the boundary of the grid._
+N> Grid client area is the area where cells along with row and column headers are visible to the client. Dragging outside the client area means dragging beyond the boundary of the grid.
 
 * InsideGrid - Allows the user to resize rows or columns from anywhere inside the grid by dragging the divider between any two row or column headers.
 * None - Turns off the mouse control over resizing rows and columns.
@@ -3468,14 +3511,12 @@ _Note: Grid client area is the area where cells along with row and column header
 * OutlineHeaders - Highlights the header boundaries when the user resizes the associated row or column.
 * ResizeAll - Resizes all rows or columns automatically when the user resizes one row or column with the mouse. All rows and columns are resized to the same size as the current row or column being resized.
 * ResizeSingle - Resizes the row or column being resized by the user using the mouse.
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img50.jpeg) | markdownify }
 
-_Note: You can also control the mouse controller's behavior at run time while the user is performing the action by subscribing to ResizingColumns and ResizingRows events._
+N> You can also control the mouse controller's behavior at run time while the user is performing the action by subscribing to ResizingColumns and ResizingRows events.
 
 The following code illustrates how to use this method in Grid control:
 
- [C#]
+ {% highlight c#  %}
 
 
 
@@ -3485,22 +3526,23 @@ this.gridControl1.ResizeRowsBehavior = GridResizeCellsBehavior.InsideGrid;
 
 
 
-[VB.NET]
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 Me.gridControl1.ResizeColsBehavior = GridResizeCellsBehavior.InsideGrid
 
 Me.gridControl1.ResizeRowsBehavior = GridResizeCellsBehavior.InsideGrid
+{% endhighlight   %}
 
 ### Resize To Fit
 
 Essential Grid supports this feature to enable resizing columns and rows based on the content of cells. ResizeToFit method is used for this purpose. The following code illustrates how to use this method in Grid control:
 
- [C#]
+ 
 
 
-
+{% highlight c#  %}
 //Resizes the column widths.
 
 this.gridControl1.ColWidths.ResizeToFit(GridRangeInfo.Cols(1, 5));
@@ -3512,11 +3554,10 @@ this.gridControl1.ColWidths.ResizeToFit(GridRangeInfo.Cols(1, 5));
 this.gridControl1.RowHeights.ResizeToFit(GridRangeInfo.Rows(1, 5));
 
 
-
-[VB.NET]
-
+{% endhighlight   %}
 
 
+{% highlight vbnet  %}
 'Resizes the column widths.
 
 Me.gridControl1.ColWidths.ResizeToFit(GridRangeInfo.Cols(1, 5))
@@ -3526,23 +3567,20 @@ Me.gridControl1.ColWidths.ResizeToFit(GridRangeInfo.Cols(1, 5))
 'Resizes the row heights.
 
 Me.gridControl1.RowHeights.ResizeToFit(GridRangeInfo.Rows(1, 5))
+{% endhighlight   %}
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img51.jpeg) | markdownify }
-
-_Note: The parameter passed to ResizeToFit method is either GridRangeInfo.Cols or GridInfo.Rows method, which in turn has two parameters:_
+N> The parameter passed to ResizeToFit method is either GridRangeInfo.Cols or GridInfo.Rows method, which in turn has two parameters:
 
 1. The first parameter corresponds to the starting row or column that is to be resized to fit. 
 2. The second parameter corresponds to the ending row or column upto which the resize has to be done.
 
 The following image shows the application of resize to fit operation to the first five rows of the grid.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img52.png) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img52.png)
 
 
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img53.jpeg) | markdownify }
-
-_Note: The preceding image is the output of a demo that is available in the samples in the following installed location._
+N> The preceding image is the output of a demo that is available in the samples in the following installed location.
 
 _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Resize To Fit Demo_
 
@@ -3554,13 +3592,13 @@ The two buttons, Set RowHeight and Set Column Width seen in the image above are 
 
 Essential Grid supports ResizeToFitOptimized feature to enable resizing columns and rows based on the contents of grid cells. The existing ResizeToFit method does not resize the columns or rows to make the entire cell value visible in the control. ResizeToFitOptimized method is used for this purpose.
 
-Use Case Scenarios
+### Use Case Scenarios
 
 This feature enables you to display the entire cell with resized columns and rows even if the grid cells has special characters such as tab, newline, etc.
 
-Methods Table
+#### Methods Table
 
-_Table_ _7__1: Method Table_
+_Table71: Method Table_
 
 <table>
 <tr>
@@ -3570,19 +3608,19 @@ DESCRIPTION </th><th>
 PARAMETERS </th><th>
 RETURN TYPE </th></tr>
 <tr>
-<th>
-ResizeToFitOptimized</th><th>
-Resizes a range of rows or columns to optimally fit contents of the specified range of cells.</th><th>
-Overloads: 1. ResizeToFitOptimized(GridRangeInfo range) 2. ResizeToFitOptimized(GridRangeInfo range, GridResizeToFitOptions option)3. ResizeToFitOptimized(GridRangeInfo range, GridTextOptions textOption)</th><th>
-<br>Void </th></tr>
+<td>
+ResizeToFitOptimized</td><td>
+Resizes a range of rows or columns to optimally fit contents of the specified range of cells.</td><td>
+Overloads: 1. ResizeToFitOptimized(GridRangeInfo range) 2. ResizeToFitOptimized(GridRangeInfo range, GridResizeToFitOptions option)3. ResizeToFitOptimized(GridRangeInfo range, GridTextOptions textOption)</td><td>
+<br>Void </td></tr>
 </table>
 Applying ResizeToFitOptimized to an Application
 
 The following code example illustrates how to use this ResizeToFitOptimized method in Grid control.
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Resizes the column width.
 
@@ -3593,8 +3631,9 @@ this.gridControl1.ColWidths.ResizeToFitOptimized(GridRangeInfo.Col(1));
 this.gridControl1.RowHeights.ResizeToFitOptimized(GridRangeInfo.Rows(1,8));
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-[VB.NET]
 
 
 
@@ -3605,10 +3644,11 @@ Me.gridControl1.ColWidths.ResizeToFitOptimized(GridRangeInfo.Col(1)); 
 'Resizes the row height.
 
 Me.gridControl1.RowHeights.ResizeToFitOptimized(GridRangeInfo.Rows(1,8));
+{% endhighlight   %}
 
  The following image shows the application of ResizeToFitOptimized to the first column of the grid.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img54.png) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img54.png) 
 
 
 
@@ -3618,15 +3658,16 @@ Essential Grid supports resizing columns and rows based on the content of cells.
 
 AutoSize enables the cell height to be automatically increased when the edited text does not fit into the cell and when WrapText is set to true. If WrapText is set to false, AutoSize will affect the column width, but it does not have the functionality of resizing the rows or columns after text has been entered as the ResizeToFit() method does. AutoSize also supports resizing rows and columns based on their cell content during the binding of the data source to the grid. Content can be entered in the grid and then the AutoSize property can be applied. This will resize the altered rows and columns.
 
-[C#]
 
+{% highlight c#  %}
 this.gridGroupingControl1.Appearance.AnyCell.AutoSize = true;
+{% endhighlight   %}
 
+{% highlight vbnet  %}
 
-
-[VB]
 
  me.gridGroupingControl1.Appearance.AnyCell.AutoSize = true;
+{% endhighlight   %}
 
  AutoSize can also be applied to different cell types to resize the rows and columns to fit the contents of the cell, and the row height and column width will be resized when editing cell contents.
 
@@ -3640,10 +3681,10 @@ The Grid lets you add custom controls to cells by creating CellModel class and C
 
 The following code example illustrates how to implement this feature in the Grid control:
 
- [C#]
+ 
 
 
-
+{% highlight c#  %}
 // Overrides this method to calculate proper control size and returns the same.
 
 protected override Size OnQueryPrefferedClientSize(Graphics g, int rowIndex, int colIndex, GridStyleInfo style, GridQueryBounds queryBounds)
@@ -3681,11 +3722,11 @@ return size;
 }
 
 
+{% endhighlight   %}
 
 
 
-[VB.NET]
-
+{% highlight vbnet  %}
 
 
 'Overrides this method to calculate proper control size and return the same.
@@ -3723,10 +3764,10 @@ End If
 End Function
 
 
-
+{% endhighlight   %}
 The following image shows how the cell resizes itself automatically to the size of the control, when a custom control is added to it.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img55.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img55.jpeg)
 
 
 
@@ -3750,7 +3791,7 @@ EnterKeyBehavior property provides support for the following navigation options
 * TopLeft
 * Up
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 You can use this property to change navigation direction of Enter key behavior in the grid. The EnterKeyBehavior property works based on WrapCellBehavior. Enter key behavior navigates to the first column in the next row when at the end of a row, moving to the right.
 
@@ -3758,11 +3799,11 @@ _Table 72: Properties_
 
 <table>
 <tr>
-<td>
-PROPERTY</td><td>
-DESCRIPTION</td><td>
-TYPE</td><td>
-DATA TYPE</td></tr>
+<th>
+PROPERTY</th><th>
+DESCRIPTION</th><th>
+TYPE</th><th>
+DATA TYPE</th></tr>
 <tr>
 <td>
 EnterKeyBehavior</td><td>
@@ -3782,9 +3823,9 @@ The following code illustrates how to set EnterKeyBehavior property for Syncfusi
 
 For the Grid Control
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.EnterKeyBehavior = GridDirectionType.Top;
 
@@ -3793,32 +3834,32 @@ this.gridControl1.EnterKeyBehavior = GridDirectionType.Top;
 this.gridControl1.Model.Options.WrapCellBehavior = GridWrapCellBehavior.WrapGrid;
 
 
+{% endhighlight   %}
 
-[VB.NET]
-
+{% highlight vbnet  %}
 
 
 Me.gridControl1.EnterKeyBehavior = GridDirectionType.Top
 
         Me.gridControl1.Model.Options.WrapCellBehavior=GridWrapCellBehavior.WrapGrid;
 
-
+{% endhighlight  %}
 
 For GridGroupingControl
 
-[C#]
 
 
 
+{% highlight c#  %}
 this.gridGroupingControl1.TableModel.Options.EnterKeyBehavior = GridDirectionType.Top;
 
                     this.gridGroupingControl1.TableModel.Options.WrapCellBehavior = GridWrapCellBehavior.WrapGrid;
 
 
 
-[VB.NET]
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 Me. gridGroupingControl1.TableModel.Options.EnterKeyBehavior = GridDirectionType.Top
 
@@ -3826,12 +3867,12 @@ Me. gridGroupingControl1.TableModel.Options.EnterKeyBehavior = GridDirectionType
 
 Me.gridGroupingControl1.TableModel.Options.WrapCellBehavior = GridWrapCellBehavior.WrapGrid
 
-
+{% endhighlight   %}
 
 For GridDataBoundGrid
 
-[C#]
 
+{% highlight c#  %}
 
 
 this.gridDataBoundGrid1.Model.Options.EnterKeyBehavior = GridDirectionType.Top;
@@ -3842,8 +3883,9 @@ this.gridDataBoundGrid1.Model.Options.WrapCellBehavior = GridWrapCellBehavior.Wr
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 Me. gridDataBoundGrid1.Model.Options.EnterKeyBehavior = GridDirectionType.Top
@@ -3851,8 +3893,9 @@ Me. gridDataBoundGrid1.Model.Options.EnterKeyBehavior = GridDirectionType.Top
 
 
 Me. gridDataBoundGrid1.Model.Options.WrapCellBehavior = GridWrapCellBehavior.WrapGrid
+{% endhighlight   %}
 
-Sample Link
+#### Sample Link
 
 Samples for this feature are available in the following location:
 
@@ -3864,9 +3907,9 @@ Covered cells will allow you to group a range of cells together so that the grou
 
 To specify a covered range, you will have to use GridControl.CoveredRange collection. You must add GridRangeInfo object to this collection to specify the range of cells that you want covered. You can then use the top-left corner to control what is being displayed in this large cell. 
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Covers (2,2) through (3,4) so it is treated as a single cell.
 
@@ -3905,8 +3948,9 @@ this.gridControl1[6, 2].Interior = new BrushInfo(GradientStyle.PathRectangle, Co
 this.gridControl1[6, 2].TextColor = Color.FromArgb(0x66, 0x6E, 0x98);
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-[VB.NET]
 
 
 
@@ -3947,14 +3991,15 @@ Me.GridControl1(6, 2).Interior = New BrushInfo(GradientStyle.PathRectangle, _Col
 _Color.FromArgb(0x2A, 0x43, 0x7E ))
 
 Me.GridControl1(6, 2).TextColor = Color.FromArgb(0x66, 0x6E, 0x98)
+{% endhighlight   %}
 
 ### Deriving GridPrintDocument
 
 GridPrintDocument has the events BeginPrint, PrintPage and EndPrint inherited from PrintDocument, which allows you access to the printing flow at certain points. To gain more control, you can derive GridPrintDocument and override members like OnPrint. This will allow you to access grid members like ViewLayout and TopRowIndex to obtain information about the page that is being printed. The following code will show you how to print the top and bottom row of the page.
 
-[C#]
 
 
+{% highlight c#  %}
 
 public class MyPrintDocument : GridPrintDocument
 
@@ -4014,8 +4059,9 @@ public class MyPrintDocument : GridPrintDocument
 
 
 
-[VB.NET]
 
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 Public Class MyPrintDocument
@@ -4079,6 +4125,7 @@ End Sub
 'MyPrintDocument.
 
 End Class
+{% endhighlight   %}
 
 ### Floating Cells
 
@@ -4088,9 +4135,9 @@ Floating cells are those cells whose content floats over empty, adjacent cells. 
 
 You can control a cell whether or not it floats over adjacent cells through FloatCell property in the cell's GridStyleInfo object. You can also prevent a cell from being flooded by using its GridStyleInfo.FloodCell property. In the code given below, all three lines (1, 3, 5) hold the same text in column one. But, the floating cells in lines three and five are stopped short; line three by an occupied cell and line five by a FloodCell false settings.
 
-[C#]
 
 
+{% highlight c#  %}
 
 //Enables Float Cells.
 
@@ -4115,8 +4162,9 @@ this.gridControl1[3, 3].Text = "3.14159";
 this.gridControl1[5, 2].FloodCell = false;
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-[VB.NET]
 
 
 
@@ -4145,8 +4193,9 @@ Me.gridControl1(5, 2).FloodCell = False
 Me.gridControl1(2, 2).Font.Bold = True
 
 
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img56.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img56.jpeg)
 
 
 
@@ -4154,9 +4203,9 @@ Me.gridControl1(2, 2).Font.Bold = True
 
 TabBarSplitterControl enables users to create Tab Pages with dynamic splitters; when used with a grid control, it gives a workbook like appearance. It comes with Office 2007 Style by default, and supports all the three color schemes.
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.tabBarSplitterControl.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007;
 
@@ -4164,28 +4213,29 @@ this.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Offi
 
 
 
-[VB.NET]
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 Me.tabBarSplitterControl.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007
 
 Me.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
+{% endhighlight   %}
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img57.jpeg) | markdownify }
-
-
-
+ ![](Virtual-Grids_images/Virtual-Grids_img57.jpeg)
 
 
-Custom Colors
+
+
+
+### Custom Colors
 
 We can apply custom colors to the TabBarSplitterControl by setting Office2007ColorScheme property to "Managed" and by giving the color through ApplyManagedColor method as follows.
 
 
 
-[C#]
 
+{% highlight c#  %}
 
 
 this.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
@@ -4194,7 +4244,8 @@ Office2007Colors.ApplyManagedColors(this, Color.PowderBlue);
 
 
 
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
@@ -4202,15 +4253,15 @@ Me.tabBarSplitterControl.Office2007ColorScheme = Syncfusion.Windows.Forms.Office
 
 Office2007Colors.ApplyManagedColors(Me, Color.PowderBlue)
 
+{% endhighlight   %}
+
+ ![](Virtual-Grids_images/Virtual-Grids_img58.jpeg) 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img58.jpeg) | markdownify }
 
 
 
-
-
-_Figure_ _306__: Custom Color of Tab Bar Splitter Control set to "PowderBlue"_
+_Figure306: Custom Color of Tab Bar Splitter Control set to "PowderBlue"_
 
 ### PrepareViewStyleInfo Event
 
@@ -4226,9 +4277,9 @@ To see a full working sample, check the HighlightCurrent sample that is shipped 
 
 Essential Grid directly supports printing and print previews through the .NET Framework classes Systems.Windows.Forms.PrintPreviewDialog and Systems.Windows.Forms.PrintDialog. A derived PrintDocument, GridPrintDocument is passed to these classes. This GridPrintDocument implements the printing logic that is needed to print multi-page grids. Following code example illustrates how to enable print previewing.
 
-[C#]
 
 
+{% highlight c#  %}
 
 //PrintPreview button handler.
 
@@ -4308,9 +4359,10 @@ private void Print_Click(object sender, System.EventArgs e)
 
 
 
- [VB.NET]
+ 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 'PrintPreview button handler.
 
@@ -4390,9 +4442,9 @@ Private Sub Print_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub
 
+{% endhighlight   %}
 
-
-Grid Helper Features
+### Grid Helper Features
 
 The following are the features of Grid Helper that supports print preview and printing:
 
@@ -4400,7 +4452,7 @@ The following are the features of Grid Helper that supports print preview and pr
 * Page layout
 * Print Column To Fit
 
-Advanced Printing
+### Advanced Printing
 
 Multiple grids can be printed across various pages using helper class GridPrintDocumentAdv. This is achieved by drawing full sized grid to a large bitmap and then scaling this bitmap to fit the output page.
 
@@ -4414,8 +4466,8 @@ Following code example illustrates Advanced Printing in Grid.
 
 
 
- [C#]
-
+ 
+{% highlight c#  %}
 
 
 Syncfusion.GridHelperClasses.GridPrintDocumentAdv pd = new
@@ -4442,10 +4494,10 @@ previewDialog.Show();
 
 
 
-[VB.NET]
+{% endhighlight   %}
 
 
-
+{% highlight vbnet  %}
 Dim pd As Syncfusion.GridHelperClasses.GridPrintDocumentAdv = New
 
 Syncfusion.GridHelperClasses.GridPrintDocumentAdv(Me.gridControl1)
@@ -4468,25 +4520,25 @@ previewDialog.Document = pd
 
 previewDialog.Show()
 
-
+{% endhighlight   %}
 
 Following screen shot illustrates Advanced Printing functionality provided by the GridPrintDocumentAdv class.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img59.png) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img59.png) 
 
 
 
 
 
-Page Layout
+### Page Layout
 
 The print Page Layout feature helps view the printing layout for the grid by displaying segment line and page number with each segment. This helps users to analyze page breaks within the grid and manage them accordingly. Colors for the line and text of the page layout can be defined with the properties available. Following code example illustrates this.
 
 
 
- [C#]
+ 
 
-
+{% highlight c#  %}
 
 LayoutSupportHelper layoutHelper;
 
@@ -4498,9 +4550,9 @@ layoutHelper.TextColor = Color.Green;
 
 
 
-[VB.NET]
+{% endhighlight   %}
 
-
+{% highlight vbnet  %}
 
 Dim layoutHelper As LayoutSupportHelper
 
@@ -4510,26 +4562,24 @@ layoutHelper.LineColor = Color.Blue
 
 layoutHelper.TextColor = Color.Green
 
-
+{% endhighlight   %}
 
 Following screen shot shows the page layout of the grid, with the segment line and page number.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img60.png) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img60.png) 
 
 
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img61.jpeg) | markdownify }
+N> The functionality mentioned above can also be achieved on UI by selecting Show Page Layout check box on the UI, which allows the user to view the page layout.
 
-_Note: The functionality mentioned above can also be achieved on UI by selecting Show Page Layout check box on the UI, which allows the user to view the page layout._
-
-Print To Fit
+### Print To Fit
 
 An entire grid can be printed on a single page by deriving GridPrintDocument class to handle the printing of entire grid on a single page. The class achieves this by drawing full-size grid to a large bitmap and then scaling the same to fit the output page. Following code example illustrates this.
 
-[C#]
 
 
 
+{% highlight c#  %}
 GridPrintToFitDocument pd = new GridPrintToFitDocument(this.gridControl1, true);
 
 PrintDialog dlg = new PrintDialog();
@@ -4541,9 +4591,9 @@ if (dlg.ShowDialog() == DialogResult.OK)
 pd.Print();
 
 
+{% endhighlight   %}
 
-[VB.NET]
-
+{% highlight vbnet  %}
 
 
 Dim dlg As PrintDialog = New PrintDialog()
@@ -4556,11 +4606,11 @@ pd.Print()
 
 End If
 
-
+{% endhighlight   %}
 
 Following screen shot illustrates the Grid's Print To Fit feature.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img62.png) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img62.png) 
 
 
 
@@ -4579,18 +4629,18 @@ Multiple grids can be printed across various pages using helper class MultipleG
 
 
 
-Properties
+#### Properties
 
 _Table 73: Properties Table_
 
 <table>
 <tr>
-<td>
-PROPERTY </td><td>
-DESCRIPTION </td><td colspan = "2">
-TYPE </td><td>
-DATA TYPE </td><td>
-REFERENCE LINKS </td></tr>
+<th>
+PROPERTY </th><th>
+DESCRIPTION </th><th colspan = "2">
+TYPE </th><th>
+DATA TYPE </th><th>
+REFERENCE LINKS </th></tr>
 <tr>
 <td>
 GridPrintOptions</td><td>
@@ -4621,7 +4671,7 @@ Multiple grid columns are scaled to fit the printed page.</td></tr>
 </table>
 
 
-Sample Link
+#### Sample Link
 
 _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing_
 
@@ -4632,9 +4682,9 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Win
 
 
 
-[C#]
 
 
+{% highlight c#  %}
 
 List<Control> gridsToPrint = new List<Control>();
 
@@ -4666,10 +4716,10 @@ printDialog.ShowDialog();
 
 
 
-[VB]
 
+{% endhighlight   %}
 
-
+{% highlight vbnet  %}
 Dim ctrls As New List(Of Control)()
 
 Dim gridsToPrint As New List(Of Control)()
@@ -4696,11 +4746,11 @@ printDialog.Document = pd
 
 printDialog.ShowDialog()
 
-
+{% endhighlight   %}
 
 The following screen shot illustrates the advanced printing functionality provided by MultipleGridPrintDocument class:
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img63.png) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img63.png) 
 
 
 
@@ -4710,9 +4760,9 @@ In Grid control, column header can be dragged to a new position by clicking on i
 
 The following code examples illustrate this feature.
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.ControllerOptions |= GridControllerOptions.DragColumnHeader;
 
@@ -4726,9 +4776,10 @@ System.Diagnostics.Debug.WriteLine("gridControl1_QueryAllowDragColumnHeader: " +
 
 }
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
-[VB.NET]
 
 
 
@@ -4743,20 +4794,19 @@ Private Sub gridControl1_QueryAllowDragColumnHeader(ByVal sender As Object, ByVa
     End If
 
 End Sub
-
+{% endhighlight   %}
 
 
  The following screen shot illustrates how to drag the column header.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img64.jpeg) | markdownify }
-
+![](Virtual-Grids_images/Virtual-Grids_img64.jpeg) 
 
 
 ### OLE Drag-and-Drop
 
 Essential Grid offers support functionality like Object Linking and Embedding (OLE) Drag-and-Drop. A range in one grid can be selected and dragged to another grid or into a Rich Edit Box. The following screen shot shows selected region of grid that has been dragged and dropped into another grid:
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img65.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img65.jpeg)
 
 
 
@@ -4764,9 +4814,9 @@ Essential Grid offers support functionality like Object Linking and Embedding (O
 
 The following code example illustrates this feature.
 
-[C#]
 
 
+{% highlight c#  %}
 
 gridControl1.AllowDrop = true;
 
@@ -4794,7 +4844,8 @@ private void gridControl2_DragOver(object sender, DragEventArgs e)
 
 
 
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
@@ -4814,7 +4865,7 @@ private void gridControl2_DragOver(Object sender, DragEventArgs e)
 
 e.Effect = DragDropEffects.Copy
 
-
+{% endhighlight   %}
 
 ### Selection Modes
 
@@ -4822,7 +4873,7 @@ e.Effect = DragDropEffects.Copy
 
 Essential Grid supports different selection modes for grid cells. A specific selection behavior can be set through GridControl.AllowSelection property. The following screen shot shows a window with a list of selection modes.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img66.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img66.jpeg) 
 
 
 
@@ -4841,23 +4892,24 @@ Different types of selection modes are listed with their corresponding descripti
 * An existing selection using SHIFT key can be extended by using GridSelectionFlags.Shift option or selecting Shift check box under Selection Modes group box in UI. 
 * Selection of cells using CTRL key can be disabled by using GridSelectionFlags.None option or selecting Cell check box under Selection Modes group box in UI. 
 
-Setting Specific Selection Mode
+#### Setting Specific Selection Mode
 
 Specific selection modes can be set by using the following code examples:
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.AllowSelection = GridSelectionFlags.Row;
 
 
 
-[VB.NET]
+{% endhighlight  %}
 
 
-
+{% highlight vbnet  %}
 Me.gridControl1.AllowSelection = GridSelectionFlags.Row
+{% endhighlight   %}
 
 ### Banner Cells
 
@@ -4865,7 +4917,7 @@ Banner cells are multiple cells spanning a single background image. An image to 
 
 The following screen shot shows an example of how multiple cells span a single background image to form banner cells.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img67.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img67.jpeg) 
 
 
 
@@ -4875,10 +4927,10 @@ Displaying Image using Banner Cells
 
 The following code example illustrates how to display images by using banner cells:
 
- [C#]
+ 
 
 
-
+{% highlight c#  %}
 GridStyleInfo style;
 
 style = grid[4, 3];
@@ -4895,8 +4947,8 @@ style.BackgroundImageMode = GridBackgroundImageMode.StretchImage;
 
 
 
-[VB.NET]
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 Dim style As GridStyleInfo
@@ -4912,14 +4964,13 @@ style.Text = "back1.jpg"
 style.TextColor = Color.Red
 
 style.BackgroundImageMode = GridBackgroundImageMode.StretchImage
+{% endhighlight   %}
 
 ### Merge Cells Feature
 
 Merge Cells feature merges two or more adjacent cells with the same value into one cell and displays the content in the merged cell. A single cell is created by combining two or more selected cells.
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img68.jpeg) | markdownify }
-
-_Note: The data in the merged cells will be displayed on the first cell of the merged range._
+N> The data in the merged cells will be displayed on the first cell of the merged range.
 
 To use merge cells, you need to set Model.Options.MergeCellsMode and MergeCell properties of the cells to select the required merge behavior for cells.
 
@@ -4963,9 +5014,9 @@ Merges with neighboring rows in the same column.
 
 The following code examples illustrate how to set the MergeCellsMode and MergeCell properties.
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation | GridMergeCellsMode.MergeRowsInColumn;
 
@@ -4976,11 +5027,11 @@ this.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalc
 this.gridControl1.ColStyles[2].MergeCell = GridMergeCellDirection.RowsInColumn;
 
 
-
-[VB.NET]
-
+{% endhighlight   %}
 
 
+
+{% highlight vbnet  %}
 Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation Or GridMergeCellsMode.MergeRowsInColumn
 
 
@@ -4988,16 +5039,16 @@ Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalcul
 'Merges cells in column 2.
 
 Me.gridControl1.ColStyles(2).MergeCell = GridMergeCellDirection.RowsInColumn
-
+{% endhighlight   %}
 The following screen shots illustrate the merge cells feature in Essential Grid.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img69.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img69.jpeg) 
 
 
 
 
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img70.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img70.jpeg) 
 
 
 
@@ -5013,7 +5064,7 @@ Example
 
 Let us consider the Tetris game application, which is implemented by using Essential Grid. This game application makes use of arrow keys to move the blocks and change the block shape. It also provides an option to display the next block.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img71.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img71.jpeg) 
 
 
 
@@ -5025,7 +5076,7 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Win
 
 Essential Grid control provides support to implement Microsoft Excel 2007-like User Interface (UI). It contains Name Box that shows the current selection range and Formula Bar, which supports the formula cells. The row and column headers of the selected range are highlighted on the UI. This feature is similar to Excel.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img72.png) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img72.png)
 
 
 
@@ -5049,10 +5100,10 @@ This sample operates grid in virtual mode in order to populate the data dynamica
 
 The following code example illustrates how to set the data from the data source.
 
-[C#]
 
 
 
+{% highlight c#  %}
 void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e) 
 
 {
@@ -5082,8 +5133,9 @@ e.Handled = true;
 }
 
 
-
- [VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
+ 
 
 
 
@@ -5109,11 +5161,11 @@ e.Handled = True
 
 End Sub
 
-
+{% endhighlight   %}
 
 The implementation uses CollapsibleDataSource class. This class makes use of custom collection to hold a list of SampleData objects. (Consider each of these objects as a row in the underlying grid). Each row carries information on a specific folder. Each SampleData object has IndentValue property, ExpandState property, and Items string array that holds the different column values for this row. The column values display folder details like the name of the folder, folder size and so on. This class also contains InsertData method, which retrieves data of inner subtree and inserts data into the collection when a node is expanded.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img73.jpeg) | markdownify }
+ ![](Virtual-Grids_images/Virtual-Grids_img73.jpeg)
 
 
 
@@ -5121,7 +5173,7 @@ The implementation uses CollapsibleDataSource class. This class makes use of cus
 
 Essential Grid supports Multiple Document Interface (MDI) by enabling users to work with multiple grid controls simultaneously. Here, multiple windows reside under a single parent window.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img74.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img74.jpeg) 
 
 
 
@@ -5143,27 +5195,24 @@ Here is the list of properties and methods:
 
 The following code examples illustrate how to set ClipboardFlags by using the GridDragDropFlags.Styles property:
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.Model.CutPaste.ClipboardFlags = GridDragDropFlags.Styles;
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
-
-[VB.NET]
 
 
 
 Me.gridControl1.Model.CutPaste.ClipboardFlags = GridDragDropFlags.Styles
 
-
+{% endhighlight   %}
 
 * CanCopy - This method checks whether there are selected ranges of cells that can be copied to clipboard or if the current cell's contents can be copied. The return type of this method is Boolean. If it returns true, it indicates that the selected range of cells or the current cell's contents can be copied to the clipboard. If it is false, it indicates that the selected range of cells or the current cell's contents cannot be copied to the clipboard.
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img75.jpeg) | markdownify }
-
-_Note: Any content copied is pasted to the Clipboard by default._
+N> Any content copied is pasted to the Clipboard by default.
 
 
 
@@ -5171,39 +5220,41 @@ The following code example is used to call CanCopy method:
 
 
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.Model.CutPaste.CanCopy();
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight vbnet %}
 
 
 Me.gridControl1.Model.CutPaste.CanCopy()
+{% endhighlight  %}
 
 * Copy - This method copies the contents of selected cells and the current cell's contents to the clipboard.
 
 The following code example is used to call the Copy method:
 
- [C#]
+ 
 
-
+{% highlight c#  %}
 
 this.gridControl1.Model.CutPaste.Copy();
 
 
-
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
 Me.gridControl1.Model.CutPaste.Copy()
 
-
+{% endhighlight   %}
 
 * CopyRange(GridRangeInfo range) - This method copies the contents of a specified range of cells to the clipboard. The range of cells to be copied is given to the method as a parameter. For example, if the range is specified to be (2,2), the selection is restricted to the cell with row index 2 and column index 2 of the grid.
 
@@ -5211,20 +5262,21 @@ The following code example shows how to call this method:
 
 
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.Model.CutPaste.CopyRange(GridRangeInfo.Cell(2, 2));
 
 
 
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
 Me.gridControl1.Model.CutPaste.CopyRange(GridRangeInfo.Cell(2, 2))
-
+{% endhighlight   %}
 
 
 * CopyTextToClipboard(GridRangeInfo range) - This method copies the formatted text of a specified range of cells to clipboard. The range of cells to be copied is given to the method as a parameter. For example, if the range is specified to be (1,2,1,4), the selection starts from the cell (1,2) – with row index 1 and column index 2 to the cell (1,4) – with row index 1 and column index 4 of the grid.
@@ -5233,21 +5285,22 @@ The following code example shows how to call this method:
 
 
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.Model.CutPaste.CopyTextToClipboard(GridRangeInfo.Cells(1, 2, 1, 4));
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
-[VB.NET]
 
 
 
 Me.gridControl1.Model.CutPaste.CopyTextToClipboard(GridRangeInfo.Cells(1, 2, 1, 4))
 
-
+{% endhighlight   %}
 
 * CopyCellsToClipboard(GridRangeInfoList list, bool bLoadBaseStyles) - This method copies the style information of a specified range of cells to clipboard. The range of cells to be copied is given to the method as the first parameter. The second parameter represents a Boolean value. The base style will be copied along with default settings, if it is set to true. Only the default settings that were initialized to the cell are copied if it is set to false.
 
@@ -5257,8 +5310,8 @@ The following code example shows how to call this method:
 
 
 
-[C#]
 
+{% highlight c#  %}
 
 
 GridRangeInfoList list = new GridRangeInfoList();
@@ -5269,7 +5322,8 @@ this.gridControl1.Model.CutPaste.CopyCellsToClipboard(list, true);
 
 
 
-[VB.NET]
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 
@@ -5279,29 +5333,28 @@ list.Add(GridRangeInfo.Cell(2, 2))
 
 Me.gridControl1.Model.CutPaste.CopyCellsToClipboard(list, True)
 
-
+{% endhighlight   %}
 
 * CanCut-This method checks if there are selected ranges that can be cut or if the current cell's contents can be cut. The return type of this method is Boolean. If it returns true, it indicates that the content in the selected range of cells or the current cell's content can be cut. This method returns false, when no selected range is available to cut.
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img76.jpeg) | markdownify }
-
-_Note: Any content cut is pasted to the clipboard by default._
+N> Any content cut is pasted to the clipboard by default.
 
 The following code example shows how to call this method:
 
-[C#]
 
 
 
+{% highlight c#  %}
 this.gridControl1.Model.CutPaste.CanCut();
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 Me.gridControl1.Model.CutPaste.CanCut()
+{% endhighlight   %}
 
 * Cut - This method cuts the content of the selected cells and the current cell, and pastes them to the clipboard.
 
@@ -5309,85 +5362,85 @@ The following code example shows how to call this method:
 
 
 
-[C#]
 
 
+{% highlight c#  %}
 
 this.gridControl1.Model.CutPaste.Cut();
 
+{% endhighlight   %}
 
-
-[VB.NET]
+{% highlight vbnet  %}
 
 
 
 Me.gridControl1.Model.CutPaste.Cut()
 
-
+{% endhighlight   %}
 
 * CutRange(GridRangeInfo rangelist) - This method cuts the content of a specified range of cells and pastes it to the clipboard. The range of cells to be cut is specified as a parameter. 
 
 The following code examples show how to call this method:
 
-[C#]
 
 
 
+{% highlight c#  %}
 this.gridControl1.Model.CutPaste.CutRange(GridRangeInfo.Row(4), false);
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-[VB.NET]
 
 
 
 Me.gridControl1.Model.CutPaste.CutRange(GridRangeInfo.Row(4), False)
 
-
+{% endhighlight   %}
 
 * CanPaste - This method checks for the most recent content in the clipboard that can be pasted in the grid. The return type of this method is Boolean. If it returns true, it indicates that the contents in the clipboard can be pasted into the grid. If there is no content available in the clipboard to paste, this method returns false.
 
 The following code example shows how to call this method:
 
-[C#]
 
+{% highlight c#  %}
 
 
 this.gridControl1.Model.CutPaste.CanPaste();
 
 
 
-[VB.NET]
+{% endhighlight   %}
 
-
+{% highlight vbnet  %}
 
 Me.gridControl1.Model.CutPaste.CanPaste()
-
+{% endhighlight   %}
 
 
 * Paste-This method pastes the content from the clipboard into the grid at the current selected range or current cell.
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img77.jpeg) | markdownify }
-
-_Note: It is not mandatory to call this method after CanPaste method. If there is no content in the clipboard to be pasted, this method will not respond._
+N> It is not mandatory to call this method after CanPaste method. If there is no content in the clipboard to be pasted, this method will not respond.
 
 The following code examples show how to call this method:
 
 
 
-[C#]
+{% highlight c#  %}
 
 
 
 this.gridControl1.Model.CutPaste.Paste();
 
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
-[VB.NET]
 
 
 
 Me.gridControl1.Model.CutPaste.Paste()
+{% endhighlight   %}
 
 ### Clipboard Events
 
@@ -5400,6 +5453,7 @@ Essential Grid exposes various events to manage the clipboard content while perf
 * ClipboardCut - This event is to be handled when the Cut method of grid is called.
 * ClipboardPaste - This event is to be handled when the Paste method of grid is called.
 * ClipboardPasted - This event is to be handled after a paste operation.
+
 ### Performance
 
 
@@ -5413,7 +5467,7 @@ Example:
 
 In this example, a timer changes the cell in short intervals, inserts and removes rows. This example draws cell changes directly to the graphics context instead of performing an Invalidate. It also shows you text using GDI instead of GDI+ and how to optimize updates for inserting and removing rows. You can start multiple instances without slowing down your machine. You can confirm the same by viewing TaskManager CPU usage while the sample runs.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img78.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img78.jpeg) 
 
 
 
@@ -5439,33 +5493,31 @@ You can specify the size of the grid that is to be populated while running the s
 
 2. Using Indexer
 
-This technique loops through the cells and uses an indexer on the Grid control to set values.
-
-[C#]
+   This technique loops through the cells and uses an indexer on the Grid control to set values.
 
 
 
-for (int i = 0; i < this.numArrayRows; ++i)
 
-    for (int j = 0; j < this.numArrayCols; ++j)
+			for (int i = 0; i < this.numArrayRows; ++i)
 
-        this.gridControl1[i + 1, j + 1].CellValue = this.intArray[i, j]; 
+				for (int j = 0; j < this.numArrayCols; ++j)
 
-
-
-[VB.NET]
+					this.gridControl1[i + 1, j + 1].CellValue = this.intArray[i, j]; 
 
 
 
-For i As Integer = 0 To Me.numArrayRows - 1
 
-For j As Integer = 0 To Me.numArrayCols - 1
 
-Me.gridControl1(i + 1, j + 1).CellValue = Me.intArray(i, j)
 
-Next j
+			For i As Integer = 0 To Me.numArrayRows - 1
 
-Next i
+			For j As Integer = 0 To Me.numArrayCols - 1
+
+			Me.gridControl1(i + 1, j + 1).CellValue = Me.intArray(i, j)
+
+			Next j
+
+			Next i
 
 
 
@@ -5474,150 +5526,150 @@ Next i
 
 
 
-[C#]
 
 
 
-gridControl1.Model.PopulateValues(GridRangeInfo.Cells(top, left, bottom, right), this.intArray);
+
+				gridControl1.Model.PopulateValues(GridRangeInfo.Cells(top, left, bottom, right), this.intArray);
 
 
 
-[VB.NET]
 
 
 
-gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right), Me.intArray)
+
+				gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right), Me.intArray)
 
 
 
 5. Implementing Virtual Mode
 6. Three events need to be handled in order to implement a virtual mode. They perform the following actions:
-* Determine number of rows
-* Determine number of columns
-* Pass value to a cell from a data source.
+   * Determine number of rows
+   * Determine number of columns
+   * Pass value to a cell from a data source.
 
-[C#]
 
 
 
-//Determines number of rows.      
 
-this.gridControl1.QueryRowCount += new GridRowColCountEventHandler(GridQueryRowCount); 
+				//Determines number of rows.      
 
-private void GridQueryRowCount(object sender, GridRowColCountEventArgs e)
+				this.gridControl1.QueryRowCount += new GridRowColCountEventHandler(GridQueryRowCount); 
 
-{ 
+				private void GridQueryRowCount(object sender, GridRowColCountEventArgs e)
 
-    e.Count = this.numArrayRows;
+				{ 
 
-    e.Handled = true;
+					e.Count = this.numArrayRows;
 
-}  
+					e.Handled = true;
 
+				}  
 
 
-//Determines number of columns.
 
-this.gridControl1.QueryColCount += new GridRowColCountEventHandler(GridQueryColCount);       
+				//Determines number of columns.
 
-private void GridQueryColCount(object sender, GridRowColCountEventArgs e)
+				this.gridControl1.QueryColCount += new GridRowColCountEventHandler(GridQueryColCount);       
 
-{
+				private void GridQueryColCount(object sender, GridRowColCountEventArgs e)
 
-    e.Count = this.numArrayCols;
+				{
 
-    e.Handled = true;
+					e.Count = this.numArrayCols;
 
-}
+					e.Handled = true;
 
+				}
 
 
-//Passes value to a cell from a given data source.
 
-this.gridControl1.QueryCellInfo += new GridQueryCellInfoEventHandler(QueryCellInfoHandler);
+				//Passes value to a cell from a given data source.
 
-private void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+				this.gridControl1.QueryCellInfo += new GridQueryCellInfoEventHandler(QueryCellInfoHandler);
 
-{
+				private void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
-    if(e.ColIndex > 0 && e.RowIndex > 0)
+				{
 
-    {
+					if(e.ColIndex > 0 && e.RowIndex > 0)
 
-//By using indexers, passes value to a cell from a given data source.
+					{
 
-        e.Style.CellValue = this.intArray[e.RowIndex - 1, e.ColIndex - 1];
+				//By using indexers, passes value to a cell from a given data source.
 
-        e.Handled = true;
+						e.Style.CellValue = this.intArray[e.RowIndex - 1, e.ColIndex - 1];
 
-    }
+						e.Handled = true;
 
-}
+					}
 
+				}
 
 
-[VB.NET]
 
 
 
-'Determines number of rows.
 
-Private Me.gridControl1.QueryRowCount += New GridRowColCountEventHandler(AddressOf GridQueryRowCount)
 
-Private Sub GridQueryRowCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
+				'Determines number of rows.
 
-e.Count = Me.numArrayRows
+				Private Me.gridControl1.QueryRowCount += New GridRowColCountEventHandler(AddressOf GridQueryRowCount)
 
-e.Handled = True
+				Private Sub GridQueryRowCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
 
-End Sub
+				e.Count = Me.numArrayRows
 
+				e.Handled = True
 
+				End Sub
 
 
 
-'Determines the number of columns.
 
-Private Me.gridControl1.QueryColCount += New GridRowColCountEventHandler(AddressOf GridQueryColCount)
 
-Private Sub GridQueryColCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
+				'Determines the number of columns.
 
-e.Count = Me.numArrayCols
+				Private Me.gridControl1.QueryColCount += New GridRowColCountEventHandler(AddressOf GridQueryColCount)
 
-e.Handled = True
+				Private Sub GridQueryColCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
 
-End Sub
+				e.Count = Me.numArrayCols
 
+				e.Handled = True
 
+				End Sub
 
 
 
-'Passes value to a cell from a given data source.
 
-Private Me.gridControl1.QueryCellInfo += New GridQueryCellInfoEventHandler(AddressOf QueryCellInfoHandler)
 
-Private Sub GridQueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
+				'Passes value to a cell from a given data source.
 
-If e.ColIndex > 0 AndAlso e.RowIndex > 0 Then
+				Private Me.gridControl1.QueryCellInfo += New GridQueryCellInfoEventHandler(AddressOf QueryCellInfoHandler)
 
+				Private Sub GridQueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
 
+				If e.ColIndex > 0 AndAlso e.RowIndex > 0 Then
 
-'By using indexers, passes value to a cell from a given data source.
 
-e.Style.CellValue = Me.intArray(e.RowIndex - 1, e.ColIndex - 1)
 
-e.Handled = True
+				'By using indexers, passes value to a cell from a given data source.
 
-End If
+				e.Style.CellValue = Me.intArray(e.RowIndex - 1, e.ColIndex - 1)
 
-End Sub
+				e.Handled = True
 
+				End If
 
+				End Sub
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img79.jpeg) | markdownify }
 
 
+   ![](Virtual-Grids_images/Virtual-Grids_img79.jpeg)
 
+
+   {:.prettyprint}
 
 
 A sample demonstrating this feature is available under the following sample installation path.
@@ -5634,7 +5686,7 @@ We can implement zooming functionality in Essential Grid to show a magnified ima
 
 The following screen shot shows a grid that is zoomed to the grid-level.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img80.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img80.jpeg) 
 
 
 
@@ -5642,7 +5694,7 @@ The following screen shot shows a grid that is zoomed to the grid-level.
 
 The following screen shot shows a grid that is zoomed to the cell-level.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img81.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img81.jpeg) 
 
 
 
@@ -5654,279 +5706,274 @@ This example implements zooming functionality for Essential Grid at cell-level. 
 
 1. Call the ZoomGrid method by passing the percentage of zoom as the parameter. The below code illustrates this.
 
-[C#]
 
 
 
-private void zoomGrid(float percent)
 
-{
+				private void zoomGrid(float percent)
 
-    this.gridControl1.BeginUpdate();
+				{
 
-    currentPercent = percent;
+					this.gridControl1.BeginUpdate();
 
-    for (int i = 0; i <= gridControl1.ColCount; i++)
+					currentPercent = percent;
 
-    {
+					for (int i = 0; i <= gridControl1.ColCount; i++)
 
-        for (int j = 0; j <= gridControl1.RowCount; j++)
+					{
 
-        this.gridControl1[j, i].Font.Size = fontSize * currentPercent;
+						for (int j = 0; j <= gridControl1.RowCount; j++)
 
-        this.gridControl1.Model.ColWidths[i] = (int)(percent * defColWidth);
+						this.gridControl1[j, i].Font.Size = fontSize * currentPercent;
 
-    }
+						this.gridControl1.Model.ColWidths[i] = (int)(percent * defColWidth);
 
-
-
-    this.gridControl1.ColWidths[0] = (int)(percent * headerColWd);
-
-    this.gridControl1.DefaultColWidth = (int)(percent * defColWidth);
-
-    this.gridControl1.DefaultRowHeight = (int)(percent * defRowHeight);
-
-    this.gridControl1.RowHeights[0] = (int)(percent * headerRowHt);
-
-    this.gridControl1.EndUpdate();
-
-    this.gridControl1.Refresh();
-
-}
+					}
 
 
 
-[VB.NET]
+					this.gridControl1.ColWidths[0] = (int)(percent * headerColWd);
+
+					this.gridControl1.DefaultColWidth = (int)(percent * defColWidth);
+
+					this.gridControl1.DefaultRowHeight = (int)(percent * defRowHeight);
+
+					this.gridControl1.RowHeights[0] = (int)(percent * headerRowHt);
+
+					this.gridControl1.EndUpdate();
+
+					this.gridControl1.Refresh();
+
+				}
 
 
 
-Private Sub zoomGrid(ByVal percent As Single)
-
-    Me.label1.Text = Me.trackBar1.Value.ToString() & "%"
-
-    Me.label1.Refresh()
 
 
 
-    Me.gridControl1.BeginUpdate()
 
-    currentPercent = percent
+				Private Sub zoomGrid(ByVal percent As Single)
 
-    For i As Integer = 0 To gridControl1.ColCount
+					Me.label1.Text = Me.trackBar1.Value.ToString() & "%"
 
-        For j As Integer = 0 To gridControl1.RowCount
-
-            Me.gridControl1(j, i).Font.Size = fontSize * currentPercent
-
-        Next j
-
-        Me.gridControl1.Model.ColWidths(i) = CInt(Fix(percent * defColWidth))
-
-    Next i
+					Me.label1.Refresh()
 
 
 
-    Me.gridControl1.ColWidths(0) = CInt(Fix(percent * headerColWd))
+					Me.gridControl1.BeginUpdate()
 
-    Me.gridControl1.DefaultColWidth = CInt(Fix(percent * defColWidth))
+					currentPercent = percent
 
-    Me.gridControl1.DefaultRowHeight = CInt(Fix(percent * defRowHeight))
+					For i As Integer = 0 To gridControl1.ColCount
 
-    Me.gridControl1.RowHeights(0) = CInt(Fix(percent * headerRowHt))
+						For j As Integer = 0 To gridControl1.RowCount
 
-    Me.gridControl1.EndUpdate()
+							Me.gridControl1(j, i).Font.Size = fontSize * currentPercent
 
-    Me.gridControl1.Refresh()
+						Next j
 
-End Sub
+						Me.gridControl1.Model.ColWidths(i) = CInt(Fix(percent * defColWidth))
+
+					Next i
 
 
 
-The preceding code sets the font and cell size using the percent parameter.
+					Me.gridControl1.ColWidths(0) = CInt(Fix(percent * headerColWd))
+
+					Me.gridControl1.DefaultColWidth = CInt(Fix(percent * defColWidth))
+
+					Me.gridControl1.DefaultRowHeight = CInt(Fix(percent * defRowHeight))
+
+					Me.gridControl1.RowHeights(0) = CInt(Fix(percent * headerRowHt))
+
+					Me.gridControl1.EndUpdate()
+
+					Me.gridControl1.Refresh()
+
+				End Sub
+
+
+
+   The preceding code sets the font and cell size using the percent parameter.
 
 
 
 2. When the cell to be zoomed is clicked, handle CellClick event to display it as a zoomed cell. Here we use a PictureBox to show the magnified view of the cell content. 
-> 
-{ ![](Virtual-Grids_images/Virtual-Grids_img82.jpeg) | markdownify }
+   N> A PictureBox is a Microsoft’s .NET Control used to display an image.
 
-_Note: A PictureBox is a Microsoft’s .NET Control used to display an image._
 
-[C#]
 
 
 
-//Code to show zoomed window.
+				//Code to show zoomed window.
 
-private System.Windows.Forms.PictureBox zoomWindow;
+				private System.Windows.Forms.PictureBox zoomWindow;
 
-private void gridControl1_CellClick(object sender, GridCellClickEventArgs e)
+				private void gridControl1_CellClick(object sender, GridCellClickEventArgs e)
 
-{
+				{
 
-    if (e.RowIndex > 0 && e.ColIndex > 0)
+					if (e.RowIndex > 0 && e.ColIndex > 0)
 
-    {
+					{
 
-        if (checkBox1.Checked)
+						if (checkBox1.Checked)
 
-        {
+						{
 
-            if (!zoomWindow.Visible)
+							if (!zoomWindow.Visible)
 
-            this.zoomWindow.Visible = true;
+							this.zoomWindow.Visible = true;
 
-            Point p1 = new Point(0, 0);
+							Point p1 = new Point(0, 0);
 
-            Size s = new Size(this.gridControl1.ColWidths[e.ColIndex] + 10, this.gridControl1.RowHeights[e.RowIndex] + 5);
+							Size s = new Size(this.gridControl1.ColWidths[e.ColIndex] + 10, this.gridControl1.RowHeights[e.RowIndex] + 5);
 
-            s.Width += 50;
+							s.Width += 50;
 
-            s.Height += 30;
+							s.Height += 30;
 
-            Rectangle rect = new Rectangle(p1, s);
+							Rectangle rect = new Rectangle(p1, s);
 
-            zoomWindow.Size = s;
+							zoomWindow.Size = s;
 
 
 
-            Bitmap bmp = new Bitmap(s.Width, s.Height);
+							Bitmap bmp = new Bitmap(s.Width, s.Height);
 
-            Graphics g = Graphics.FromImage(bmp);
+							Graphics g = Graphics.FromImage(bmp);
 
-            GridStyleInfo style = gridControl1[e.RowIndex, e.ColIndex];
+							GridStyleInfo style = gridControl1[e.RowIndex, e.ColIndex];
 
-            float size = style.Font.Size;
+							float size = style.Font.Size;
 
-            style.Font.Size = 15.5f;
+							style.Font.Size = 15.5f;
 
-            gridControl1.DrawSingleCell(g, e.RowIndex, e.ColIndex, rect, style, true, true);
+							gridControl1.DrawSingleCell(g, e.RowIndex, e.ColIndex, rect, style, true, true);
 
-            g.Dispose();
+							g.Dispose();
 
 
 
-            this.zoomWindow.Image = bmp;
+							this.zoomWindow.Image = bmp;
 
-            this.zoomWindow.BorderStyle = BorderStyle.FixedSingle;
+							this.zoomWindow.BorderStyle = BorderStyle.FixedSingle;
 
-            this.zoomWindow.Visible = true;
+							this.zoomWindow.Visible = true;
 
-            Point pt = this.gridControl1.ViewLayout.RowColToPoint(e.RowIndex, e.ColIndex, GridCellSizeKind.VisibleSize);
+							Point pt = this.gridControl1.ViewLayout.RowColToPoint(e.RowIndex, e.ColIndex, GridCellSizeKind.VisibleSize);
 
-            pt.Y += 60;
+							pt.Y += 60;
 
-            zoomWindow.Location = pt;
+							zoomWindow.Location = pt;
 
 
 
-            style.Font.Size = size;
+							style.Font.Size = size;
 
-        }
+						}
 
-    }
+					}
 
-    else
+					else
 
-    {
+					{
 
-        this.zoomWindow.Visible = false;
+						this.zoomWindow.Visible = false;
 
-        MessageBox.Show("Not a record cell");
+						MessageBox.Show("Not a record cell");
 
-    }
+					}
 
-}
+				}
 
 
 
-[VB.NET]
 
 
 
-Private zoomWindow As System.Windows.Forms.PictureBox
 
+				Private zoomWindow As System.Windows.Forms.PictureBox
 
 
-'Code to show zoomed window.
 
-Private Sub gridControl1_CellClick(ByVal sender As Object, ByVal e As GridCellClickEventArgs)
+				'Code to show zoomed window.
 
-    If e.RowIndex > 0 AndAlso e.ColIndex > 0 Then
+				Private Sub gridControl1_CellClick(ByVal sender As Object, ByVal e As GridCellClickEventArgs)
 
-        If checkBox1.Checked Then
+					If e.RowIndex > 0 AndAlso e.ColIndex > 0 Then
 
-            If (Not zoomWindow.Visible) Then
+						If checkBox1.Checked Then
 
-                Me.zoomWindow.Visible = True
+							If (Not zoomWindow.Visible) Then
 
-            End If
+								Me.zoomWindow.Visible = True
 
-            Dim p1 As Point = New Point(0, 0)
+							End If
 
-            Dim s As Size = New Size(Me.gridControl1.ColWidths(e.ColIndex) + 10, Me.gridControl1.RowHeights(e.RowIndex) + 5)
+							Dim p1 As Point = New Point(0, 0)
 
-            s.Width += 50
+							Dim s As Size = New Size(Me.gridControl1.ColWidths(e.ColIndex) + 10, Me.gridControl1.RowHeights(e.RowIndex) + 5)
 
-            s.Height += 30
+							s.Width += 50
 
-            Dim rect As Rectangle = New Rectangle(p1, s)
+							s.Height += 30
 
-            zoomWindow.Size = s
+							Dim rect As Rectangle = New Rectangle(p1, s)
 
+							zoomWindow.Size = s
 
 
-            Dim bmp As Bitmap = New Bitmap(s.Width, s.Height)
 
-            Dim g As Graphics = Graphics.FromImage(bmp)
+							Dim bmp As Bitmap = New Bitmap(s.Width, s.Height)
 
-            Dim style As GridStyleInfo = gridControl1(e.RowIndex, e.ColIndex)
+							Dim g As Graphics = Graphics.FromImage(bmp)
 
-            Dim size As Single = style.Font.Size
+							Dim style As GridStyleInfo = gridControl1(e.RowIndex, e.ColIndex)
 
-            style.Font.Size = 15.5F
+							Dim size As Single = style.Font.Size
 
-            gridControl1.DrawSingleCell(g, e.RowIndex, e.ColIndex, rect, style, True, True)
+							style.Font.Size = 15.5F
 
-            g.Dispose()
+							gridControl1.DrawSingleCell(g, e.RowIndex, e.ColIndex, rect, style, True, True)
 
+							g.Dispose()
 
 
-            Me.zoomWindow.Image = bmp
 
-            Me.zoomWindow.BorderStyle = BorderStyle.FixedSingle
+							Me.zoomWindow.Image = bmp
 
-            Me.zoomWindow.Visible = True
+							Me.zoomWindow.BorderStyle = BorderStyle.FixedSingle
 
-            Dim pt As Point = Me.gridControl1.ViewLayout.RowColToPoint(e.RowIndex, e.ColIndex, GridCellSizeKind.VisibleSize)
+							Me.zoomWindow.Visible = True
 
-            pt.Y += 60
+							Dim pt As Point = Me.gridControl1.ViewLayout.RowColToPoint(e.RowIndex, e.ColIndex, GridCellSizeKind.VisibleSize)
 
-            zoomWindow.Location = pt
+							pt.Y += 60
 
+							zoomWindow.Location = pt
 
 
-            style.Font.Size = size
 
-        End If
+							style.Font.Size = size
 
-    Else
+						End If
 
-        Me.zoomWindow.Visible = False
+					Else
 
-        MessageBox.Show("Not a record cell")
+						Me.zoomWindow.Visible = False
 
-    End If
+						MessageBox.Show("Not a record cell")
 
-End Sub
+					End If
 
+				End Sub
 
+   {:.prettyprint}
 
 Now when you click any cell, it displays a picture box over the cell showing cell content in a magnified manner.
 
-> { ![](Virtual-Grids_images/Virtual-Grids_img83.jpeg) | markdownify }
-
-_Note: For more details on this feature, refer the following browser sample:_
+N> For more details on this feature, refer the following browser sample:
 
 _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
 
@@ -5936,19 +5983,21 @@ Essential GridControl supports Tile Image feature in Grid cell. Set BackgroundIm
 
 The following code illustrates how to add Tile Image feature in Grid cell.
 
-[C#]
+{% highlight c#  %}
 
 this.gridControl1[2, 2].BackgroundImageMode = GridBackgroundImageMode.TileImage;
 
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
-[VB]
 
   Me.gridControl1(2, 2).BackgroundImageMode = GridBackgroundImageMode.TileImage
+  {% endhighlight   %}
 
 When the code runs, the following image is displayed.
 
-{ ![](Virtual-Grids_images/Virtual-Grids_img84.jpeg) | markdownify }
+![](Virtual-Grids_images/Virtual-Grids_img84.jpeg)
 
 
 

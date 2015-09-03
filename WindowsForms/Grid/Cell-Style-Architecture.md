@@ -27,7 +27,7 @@ These three GridStyleInfo objects may not be fully populated, meaning that some 
 
 The following graphic illustrates the effect of using the GridStyleInfo inheritance to come up with the appearance of a cell 3, 2. Even though BackColor property is set in each of the tablestyle, rowstyle and columnstyle objects, it is the cell specific style that determines the back color of the cell.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img1.jpeg) | markdownify }
+![](Cell-Style-Architecture_images/Cell-Style-Architecture_img1.jpeg) 
 
 
 
@@ -35,25 +35,25 @@ The following graphic illustrates the effect of using the GridStyleInfo inherita
 
 The next graphic shows the effect of removing BackColor property from cell specific style. In this case, it is the rowstyle that determines the back color setting for the displayed cell. If you remove the rowstyle setting for BackColor, then the columnstyle would contribute its BackColor property to determine the cell's displayed color. Run the GridStyleInfo sample to experiment using different parent styles.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img2.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img2.jpeg) 
 
 
 
 
 
-See Also     --------------------???????     
+     
 
 ### Properties
 
 GridStyleInfo provides many properties to control the appearance and behavior of grid cells. The following table lists some of the properties.
 
-_Table 22: GridStyleInfo properties_
+Table 22: GridStyleInfo properties
 
 <table>
 <tr>
-<td>
-GRIDSTYLEINFO PROPERTIES</td><td>
-DESCRIPTION</td></tr>
+<th>
+GRIDSTYLEINFO PROPERTIES</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 String GridStyleInfo.Text</td><td>
@@ -83,15 +83,15 @@ Holds a list of images for use by the cell.</td></tr>
 Int GridStyleInfo.ImageIndex</td><td>
 Picks a particular image from the ImageList property.</td></tr>
 </table>
-> { ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img3.jpeg) | markdownify }
 
-_Note: Refer to the GridStyleInfo topic in the Essential Grid Class Reference for a complete description of all the GridStyleInfo class members._
+
+N> Refer to the GridStyleInfo topic in the Essential Grid Class Reference for a complete description of all the GridStyleInfo class members._
 
 #### BackColor
 
 BackColor property specifies the background color for the cell. If you want to use a special brush to get gradient background, you can use Interior property of GridStyleInfo to specify a brush that can be used to draw the cell background.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img4.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img4.jpeg) 
 
 
 
@@ -99,7 +99,7 @@ BackColor property specifies the background color for the cell. If you want to u
 
 GridFontInfo class is an Essential Grid wrapper class for standard Systems.Drawing.Font class. Font property of the GridStyleInfo class specifies the font for the text displayed in the cell. The GridFontInfo class has special static members that enable you to easily modify font property members.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img5.png) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img5.png) 
 
 
 
@@ -107,7 +107,7 @@ GridFontInfo class is an Essential Grid wrapper class for standard Systems.Drawi
 
 ImageList property holds Systems.Windows.Forms.ImageList. Generally, there is one ImageListstored in the parent GridInfoStyle such as standardstyle or tablestyle. This single ImageListis shared by all cells in the grid through ImageIndex property, which has been set on cell-by-cell basis. 
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img6.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img6.jpeg) 
 
 
 
@@ -115,7 +115,7 @@ ImageList property holds Systems.Windows.Forms.ImageList. Generally, there is on
 
 Text and CellValue properties are closely related. You can set the value of either by using the other. The major difference is that Text property is a string and CellValue property is an object. This means, for example, that you can assign DateTime object to cell value, but you cannot assign it to a text. Grid control generally sets Text property by using CultureInfo formatting on CellValue property. Text property can also be set directly through code.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img7.png) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img7.png) 
 
 
 
@@ -127,7 +127,7 @@ Since BaseStyles are considered parent styles, where do they fit within the prec
 
 To work with BaseStyles from within the Visual Studio designer, you need to use the Edit base styles verb that appears at the bottom of the Grid control's property grid.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img8.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img8.jpeg) 
 
 
 
@@ -135,7 +135,7 @@ To work with BaseStyles from within the Visual Studio designer, you need to use 
 
 When you click Edit base styles verb, GridBaseStyle Collection Editor dialog box is displayed. You can use GridBaseStyle Collection Editor to edit existing BaseStyles or add new ones.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img9.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img9.jpeg) 
 
 
 
@@ -143,8 +143,9 @@ When you click Edit base styles verb, GridBaseStyle Collection Editor dialog box
 
 The following code example illustrates how to create BaseStyle. When you define BaseStyle you can apply it to any cell (or row or column) just by setting GridStyleInfo.BaseStyle for that cell to the name used to define BaseStyle.
 
-[C#]
 
+
+{% highlight C# %}
 
 
 //Adds a new base style.
@@ -168,9 +169,11 @@ gridControl1[1,2].BaseStyle = "BackColorTest";
 gridControl1[4,2].BaseStyle = "BackColorTest";
 
 
+{% endhighlight %}
 
-[VB.NET]
 
+
+{% highlight vbnet %}
 
 
 'Adds a new base style.
@@ -192,18 +195,19 @@ gridControl1.BaseStylesMap.AddRange(New GridBaseStyle() {gridBaseStyle1})
 gridControl1(1, 2).BaseStyle = "BackColorTest"
 
 gridControl1(4, 2).BaseStyle = "BackColorTest"
+{% endhighlight %}
 
 ## GridRangeInfo
 
 This class is used extensively to specify a collection of grid cells that are to be used as parameters for other method calls. GridRangeInfo class contains static methods that will allow you to specify a single cell, a rectangular range of cells, a row or rows, a column or columns, or the entire table.
 
-_Table 23: GridRangeInfo methods_
+Table 23: GridRangeInfo methods
 
 <table>
 <tr>
-<td>
-GRIDRANGEINFO METHOD</td><td>
-DESCRIPTION</td></tr>
+<th>
+GRIDRANGEINFO METHOD</th><th>
+DESCRIPTION</th></tr>
 <tr>
 <td>
 GridRangeInfo.Cell(int row, int col)</td><td>
@@ -233,15 +237,16 @@ Returns GridRangeInfo object containing columns fromCol through toCol.</td></tr>
 GridRangeInfo.Table()</td><td>
 Returns GridRangeInfo object containing the whole table.</td></tr>
 </table>
-> { ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img10.jpeg) | markdownify }
+ 
 
-_Note: For complete description of GridRangeInfo class, see the Essential Grid Class Reference._
+N>  For complete description of GridRangeInfo class, see the Essential Grid Class Reference.
 
 ## The GridControl.ChangeCells Method
 
 GridControl.ChangeCells method is used to modify GridStyleInfo objects. This overloaded method accepts GridRangeInfo and GridStyleInfo objects. ChangeCells method depends upon the value of ModifyType parameter. Current GridStyleInfo settings are modified by using new GridStyleInfo settings that are present in CellInfo parameter, according to the value of the ModifyType parameter.
 
-[C#]
+
+{% highlight C# %}
 
 
 
@@ -250,14 +255,16 @@ GridControl.ChangeCells method is used to modify GridStyleInfo objects. This ove
 public bool ChangeCells(GridRangeInfo range, GridStyleInfo cellInfo, StyleModifyType modifyType);
 
 
+{% endhighlight %}
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 ' Applies an array of styles to the specified range in grid.
 
 Public Function ChangeCells(range As GridRangeInfo, cellInfo As GridStyleInfo, modifyType As StyleModifyType) As Boolean
+{% endhighlight %}
 
 ## Activating Current Cell Behavior
 
@@ -272,26 +279,32 @@ When moving current cell or clicking inside a cell, you can control the current 
 
 The following code examples illustrate how to set the ActivateCurrentCellBehavior property:
 
-[C#]
+
+
+{% highlight C# %}
 
 
 
 this.gridControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll;
 
+{% endhighlight %}
 
 
-[VB.NET]
+
+{% highlight vbnet %}
 
 
 
 Me.gridControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
+{% endhighlight %}
 
 ## Scroll Cell into View
 
 You can use grid method, ScrollCellInView, to scroll the specified cell or range into view. The range that should be scrolled into the visible grid view area is given as the parameter to this method. The following code examples illustrate this:
 
-[C#]
 
+
+{% highlight C# %}
 
 
 //Scrolls into view cell(2,2).
@@ -300,15 +313,17 @@ this.gridControl1.ScrollCellInView(GridRangeInfo.Cell(2, 2));
 
 
 
+
+
 //Scrolls into view range Col(2).
 
 this.gridControl1.ScrollCellInView(GridRangeInfo.Col(2));
 
+{% endhighlight %}
 
 
-[VB.NET]
 
-
+{% highlight vbnet %}
 
 'Scrolls into view cell(2,2).
 
@@ -319,6 +334,7 @@ Me.gridControl1.ScrollCellInView(GridRangeInfo.Cell(2, 2))
 'Scrolls into view range Col(2).
 
 Me.gridControl1.ScrollCellInView(GridRangeInfo.Col(2))
+{% endhighlight %}
 
 ## Managing Current Cell Operations
 
@@ -326,19 +342,22 @@ GridCurrentCell class provides storage for current cell information and manages 
 
 The following code examples illustrate how to set a GridCurrentCell:
 
-[C#]
 
+
+{% highlight C# %}
 
 
 GridCurrentCell cc = this.gridControl1.CurrentCell;
+{% endhighlight %}
 
 
 
-[VB.NET]
 
 
+{% highlight vbnet %}
 
 Dim cc As GridCurrentCell = Me.gridControl1.CurrentCell
+{% endhighlight %}
 
 ## Show/Hide Current Cell Border
 
@@ -351,31 +370,32 @@ ShowCurrentCellBorderBehavior property of the grid determines the behavior of th
 
 The following code examples illustrate how to set the ShowCurrentCellBorderBehavior property:
 
-[C#]
 
+
+{% highlight C# %}
 
 
 this.gridControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.AlwaysVisible;
 
 
 
-[VB.NET]
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 Me.gridControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.AlwaysVisible
+{% endhighlight %}
 
 ## Refreshing Behavior of Current Cell
 
 The Grid property, RefreshCurrentCellBehavior determines the behavior of refreshing cells while the focus is moved from current cell to another. GridRefreshCurrentCellBehavior enumeration specifies which cells to refresh when the focus is moved from current cell to another.
 
-> { ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img11.jpeg) | markdownify }
 
-_Note: Refreshing behavior of the cells enables them to display current data automatically after updates._
 
-> { ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img12.jpeg) | markdownify }
+N>  Refreshing behavior of the cells enables them to display current data automatically after updates.
 
-_Note: Refreshing the cells denote reloading cell's value._
+
+
+N> Refreshing the cells denote reloading cell's value.
 
 Following is the list of options provided by GridRefreshCurrentCellBehavior enumeration.
 
@@ -387,20 +407,22 @@ Following is the list of options provided by GridRefreshCurrentCellBehavior enum
 
 The following code examples illustrate how to set RefreshCurrentCellBehavior property:
 
-[C#]
 
+
+{% highlight C# %}
 
 
 this.gridControl1.RefreshCurrentCellBehavior = GridRefreshCurrentCellBehavior.RefreshCell;
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 Me.gridControl1.RefreshCurrentCellBehavior = GridRefreshCurrentCellBehavior.RefreshCell
-
+{% endhighlight %}
 ## Style Properties
 
 This section provides information on the following topics:
@@ -409,7 +431,7 @@ This section provides information on the following topics:
 
 GridStyleInfo class comprises properties that let users to control the appearance and behavior of grid cells.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img13.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img13.jpeg) 
 
 
 
@@ -417,124 +439,135 @@ The above screen shot provides information on the following properties:
 
 1. Interior -  Lets you specify solid, gradient, or pattern style for cell's background. Grid cells can be painted by using Interior property under Syncfusion.Drawing.BrushInfo class. BrushInfo holds information on filling the background of a grid cell. PatternStyle specifies the pattern style to be used and GradientStyle specifies the gradient style to be used.
 
-[C#]
+
+
+   ~~~ cs
+
+      gridControl1[2, 2].Interior = new BrushInfo(GradientStyle.Horizontal, Color.Yellow, Color.Blue);  
+
+      gridControl1[3,2].Interior = new BrushInfo(PattenStyle.DashedHorizontal, Color.Black, Color.White);
+
+   ~~~
+   {:.prettyprint}
 
 
 
-gridControl1[2, 2].Interior = new BrushInfo(GradientStyle.Horizontal, Color.Yellow, Color.Blue);  
+   ~~~ vbnet
 
-gridControl1[3,2].Interior = new BrushInfo(PattenStyle.DashedHorizontal, Color.Black, Color.White);
+		gridControl1(2, 2).Interior = New BrushInfo(GradientStyle.Horizontal, color.Yellow, color.Blue)
 
-
-
-[VB.NET]
-
-
-
-gridControl1(2, 2).Interior = New BrushInfo(GradientStyle.Horizontal, color.Yellow, color.Blue)
-
-gridControl1(3, 2).Interior = New BrushInfo(PattenStyle.DashedHorizontal, color.Black, color.White)
-
+		gridControl1(3, 2).Interior = New BrushInfo(PattenStyle.DashedHorizontal, color.Black, color.White)
+   ~~~
+   {:.prettyprint}
 
 
 2. Font - Lets you specify the font for drawing text. Cells can be given required styles by using Font property under GridFontInfo. GridFontInfo holds information on font settings.
 
-[C#]
 
 
 
-GridFontInfo boldFont = new GridFontInfo();
+   ~~~ cs
+		GridFontInfo boldFont = new GridFontInfo();
 
-boldFont.Bold = true;
+		boldFont.Bold = true;
 
-boldFont.Size = 11;
+		boldFont.Size = 11;
 
-boldFont.Underline = true;
+		boldFont.Underline = true;
 
-gridControl1[3, 4].Font = boldFont;
-
-
-
-[VB.NET]
-
+		gridControl1[3, 4].Font = boldFont;
+   ~~~
+   {:.prettyprint}
 
 
-Dim boldFont As GridFontInfo = New GridFontInfo()
 
-boldFont.Bold = True
 
-boldFont.Size = 11
 
-boldFont.Underline = True
+   ~~~ vbnet
+		Dim boldFont As GridFontInfo = New GridFontInfo()
 
-gridControl1(3, 4).Font = boldFont
+		boldFont.Bold = True
 
+		boldFont.Size = 11
+
+		boldFont.Underline = True
+
+		gridControl1(3, 4).Font = boldFont
+   ~~~
+   {:.prettyprint}
 
 
 3. Text Color - Colors for the cell text can be set by using TextColor property.
 
-[C#]
 
 
 
-gridControl1[rowIndex, colIndex].TextColor = Color.Red;
+   ~~~ cs
+		gridControl1[rowIndex, colIndex].TextColor = Color.Red;
+
+   ~~~
+   {:.prettyprint}
 
 
 
-[VB.NET]
+   ~~~ vbnet
 
+		gridControl1(rowIndex, colIndex).TextColor = color.Red
 
-
-gridControl1(rowIndex, colIndex).TextColor = color.Red
-
-
+   ~~~
+   {:.prettyprint}
 
 4. Border - Borders can be set on all sides of a cell by setting Border property to an instance of GridBorder. GridBorder class holds the formatting information for borders of the cell.
 
-[C#]
+
+
+   ~~~ cs
+
+		gridControl1[rowIndex, colIndex].Borders.All = new GridBorder(GridBorderStyle.DashDotDot, Color.Red);
+
+   ~~~
+   {:.prettyprint}
 
 
 
-gridControl1[rowIndex, colIndex].Borders.All = new GridBorder(GridBorderStyle.DashDotDot, Color.Red);
+   ~~~ vbnet
 
+		gridControl1(rowIndex, colIndex).Borders.All = New GridBorder(GridBorderStyle.DashDotDot, color.Red)
 
-
-[VB.NET]
-
-
-
-gridControl1(rowIndex, colIndex).Borders.All = New GridBorder(GridBorderStyle.DashDotDot, color.Red)
-
-
+   ~~~
+   {:.prettyprint}
 
 5. Orientation - Lets you specify orientation of the grid cell text, in turn specifying the angle at which the text is displayed.
 
-[C#]
 
 
 
-gridControl1[3, 4].Font.Orientation = 270;
+   ~~~ cs
+		gridControl1[3, 4].Font.Orientation = 270;
+
+   ~~~
+   {:.prettyprint}
 
 
 
-[VB.NET]
+   ~~~ vbnet
 
+		gridControl1[3, 4].Font.Orientation = 270
 
-
-gridControl1[3, 4].Font.Orientation = 270
-
-
+   ~~~
+   {:.prettyprint}
 
 A sample demonstrating this feature is available under the following sample installation path. 
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Cell Customization Demo_
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Cell Customization Demo
 
 ### Custom Borders
 
 You can draw custom borders around cells by using DrawCellFrameAppearance event of the Grid. DrawCellFrameAppearance event is triggered for every cell before the grid draws the frame of a specified cell and after the cell's background is drawn. This event can be used with any cell type such as TextBox, CheckBox, and so on. You can draw texture-brush border and gradient borders. The following code examples illustrate drawing custom borders by using the DrawCellFrameAppearance event:
 
-[C#]
 
+
+{% highlight C# %}
 
 
 private void grid_DrawCellFrameAppearance(object sender, GridDrawCellBackgroundEventArgs)
@@ -622,11 +655,11 @@ e.Cancel = true;
 }
 
 }
+{% endhighlight %}
 
 
 
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 Private Sub grid_DrawCellFrameAppearance(ByVal sender As Object, ByVal e As GridDrawCellBackgroundEventArgs)
@@ -703,9 +736,10 @@ End If
 
 End Sub
 
+{% endhighlight %}
 
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img14.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img14.jpeg) 
 
 
 
@@ -713,31 +747,32 @@ End Sub
 
 The formats of a numeric field (cell value) can be masked by using Format object. You can specify numeric format string as a mask. Format mask objects are assigned to date and numeric fields, and are also used to define how the data returned for that field is displayed.
 
-> { ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img15.jpeg) | markdownify }
 
-_Note: Format masks object cannot be deleted once assigned to a field._
-
+N>  Format masks object cannot be deleted once assigned to a field.
 
 
 The following code examples illustrate masking numeric fields by using the Format object:
 
-[C#]
 
+
+{% highlight C# %}
 
 
 this.gridControl1[2, 2].Format = "###0.##%";
 
 
+{% endhighlight %}
 
-[VB.NET]
+
+{% highlight vbnet %}
 
 
 
 Me.gridControl1(2, 2).Format = "###0.##%"
+{% endhighlight %}
 
 
-
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img16.jpeg) | markdownify }
+![](Cell-Style-Architecture_images/Cell-Style-Architecture_img16.jpeg) 
 
 
 
@@ -745,7 +780,9 @@ Me.gridControl1(2, 2).Format = "###0.##%"
 
 CellTipText object lets you specify the ToolTip Text to be displayed when the mouse pointer is moved over a cell. Cell tip text can be set for rows, columns, tables and individual cells. The following code examples illustrate how to set cell tips by using the CellTipText object:
 
-[C#]
+
+
+{% highlight C# %}
 
 
 
@@ -771,10 +808,11 @@ this.gridControl1.ColStyles[4].CellTipText = "TipText for column 4";
 
 this.gridControl1.TableStyle.CellTipText = "TipText for table";
 
+{% endhighlight %}
 
 
-[VB.NET]
 
+{% highlight vbnet %}
 
 
 'Tip Text for cell (2,3).
@@ -798,10 +836,10 @@ Me.gridControl1.ColStyles(4).CellTipText = "TipText for column 4"
 'Tip Text for table.
 
 Me.gridControl1.TableStyle.CellTipText = "TipText for table"
+{% endhighlight %}
 
 
-
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img17.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img17.jpeg) 
 
 
 
@@ -809,7 +847,7 @@ Me.gridControl1.TableStyle.CellTipText = "TipText for table"
 
 Excel-like Cell Comment Tips can be included in a Grid by deriving the mouse controller class. The comment text is a custom style property added to cells that hold comments. To change, add, or delete a commen right-click the cell or left-click the red corner.
 
-{ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img18.jpeg) | markdownify }
+ ![](Cell-Style-Architecture_images/Cell-Style-Architecture_img18.jpeg) 
 
 
 
@@ -832,22 +870,24 @@ Here is the list of options in GridShowCurrentCellBorder enumeration.
 
 The following code example illustrates how to set the ShowCurrentCellBorderBehavior property:
 
-[C#]
 
+
+{% highlight C# %}
 
 
 this.gridControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.AlwaysVisible;
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 'Set the ShowCurrentCellBorderBehavior property.
 
 Me.gridControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.AlwaysVisible
-
+{% endhighlight %}
 ## Browse-Only Grid
 
 BrowseOnly property permits the Grid control to be set to a non-editable state without affecting its background appearance, displaying an unavailable effect, etc. This feature is available in GridDataBoundGrid and GridGrouping controls, and it is directly exposed under the controls' properties.
@@ -860,15 +900,15 @@ Applying this property will reflect in all cell types and will make the Grid non
 
 DropDown cells like MonthCalendar, ColorEdit, etc. will behave the same as ComboBox cell type; items can be viewed, but cannot be selected.
 
-_Table 24: BrowseOnly property_
+Table 24: BrowseOnly property
 
 <table>
 <tr>
-<td>
-PROPERTY</td><td>
-DESCRIPTION</td><td>
-TYPE</td><td>
-DATA TYPE</td></tr>
+<th>
+PROPERTY</th><th>
+DESCRIPTION</th><th>
+TYPE</th><th>
+DATA TYPE</th></tr>
 <tr>
 <td>
 BrowseOnly</td><td>
@@ -880,21 +920,24 @@ Boolean </td><td>
 
 ### Sample Link
 
-_{Install Drive}\AppData\Local\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Cell Types\Editor Cell Demo_
+{Install Drive}\AppData\Local\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Cell Types\Editor Cell Demo
 
 ### Making a Grid Browse-Only
 
 To make the Grid non-editable, the following property must be set to true:
 
-[C#]
+
+{% highlight C# %}
 
  this.gridControl1.BrowseOnly = true;   
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB]
 
  Me.gridControl1.BrowseOnly = true
-
+{% endhighlight %}
 
 

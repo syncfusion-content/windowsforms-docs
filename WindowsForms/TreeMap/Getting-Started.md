@@ -2,45 +2,32 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: WindowsForms
-control: TreeMap
+platform: windowsforms
+control: TreeMap 
 documentation: ug
 ---
 
 # Getting Started
 
-TreeMapsare a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole dataset. The size of each box represents a quantity. TreeMapsalso use color to represent any number of values, but it is often used to categorize the various boxes within the tree map.
+Tree mapsare a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. Tree mapscan also use color to represent any number of values, but colors are often used to categorize the various boxes within the tree map.
 
-## Creating TreeMap for WindowsForms App
+Creating Tree Map for Windows Form Applications
 
-In order to create a TreeMap you can refer to the following assembly and namespace.
+The TreeMap control is available in the following assembly and namespace:
 
 Assembly: Syncfusion.TreeMap.Windows
 
 Namespace: Syncfusion.Windows.Forms.TreeMap
 
-The following code example shows how to add a TreeMap in your application:
+Refer to the following code to add a TreeMap control to an application:
 
-### Code Sample:
-
-
+Code Sample
 
 {% highlight c# %}
 
-public partial class Form1 : Form
-
-    {
-
-      TreeMap TreeMap1 = new TreeMap();
-
-      public Form1()
-
-        {
-
-            InitializeComponent();
-
-        }
-
-   }
+          TreeMap TreeMap1 = new TreeMap();
 
 {% endhighlight %}
+
+
+
