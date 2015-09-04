@@ -37,34 +37,31 @@ To create a StatusBarAdvPanel programmatically,
 * Add the Syncfusion assemblies Shared.Base and Tool.Windows to your application.
 * Declare the StatusBarAdvPanel control.
 
-  ~~~ cs
+{% highlight c# %}
 
-        private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel1;
-		
-  ~~~
-  {:.pretty-print }
+private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel1;
 
-  ~~~ vbnet
-  
-        Private statusBarAdvPanel1 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
-		
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Private statusBarAdvPanel1 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
+
+{% endhighlight %}
 
 * Initialize the control and add it to your form.
 
-  ~~~ cs
-  
+{% highlight c# %}
+
         this.statusBarAdvPanel1 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
 
 		this.statusBarAdvPanel1.Location = new System.Drawing.Point(48, 128);
 
 		this.Controls.Add(this.statusBarAdvPanel1);
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
-  ~~~ vbnet
+{% highlight vbnet %}
 
         Me.statusBarAdvPanel1 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel()
 
@@ -72,12 +69,12 @@ To create a StatusBarAdvPanel programmatically,
 
 		Me.Controls.Add(Me.statusBarAdvPanel1)
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
+
 
 * Customize the control's look and feel using the properties given below.
 
-  ~~~ cs
+{% highlight c# %}
 
         this.statusBarAdvPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PaleVioletRed, System.Drawing.Color.PeachPuff);
 
@@ -91,10 +88,9 @@ To create a StatusBarAdvPanel programmatically,
 
 		this.statusBarAdvPanel1.Size = new System.Drawing.Size(216, 48);
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
-  ~~~ vbnet
+{% highlight vbnet %}
 
         Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PaleVioletRed, System.Drawing.Color.PeachPuff)
 
@@ -108,8 +104,7 @@ To create a StatusBarAdvPanel programmatically,
 
 		Me.statusBarAdvPanel1.Size = New System.Drawing.Size(216, 48)
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 * Run the application. You will see the StatusBarAdvPanel with the date text displayed at the bottom right of the application.
 

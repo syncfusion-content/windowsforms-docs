@@ -11,7 +11,7 @@ documentation: ug
 
 The WeightValuePath ofthe TreeMap control is a path to a field on the source object that serves as the "weight" of the object. 
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _859_: Events Table_
+_Table_ _859_: _Events Table_
 
 <table>
 <tr>

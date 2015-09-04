@@ -75,7 +75,7 @@ Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
 
 
-N> Close Button can be set for the whole TabControlAdv by using_ TabPrimitives_.
+N> Close Button can be set for the whole TabControlAdv by using [TabPrimitives](/windowsforms/tabs/tabprimitives).
 
 ### ToolTip Support
 
@@ -101,7 +101,7 @@ Me.tabPageAdv1.ToolTipText = "Tooltips for tab page 1"
 ![](Applying-Themes_images/Applying-Themes_img6.jpeg)
 
 
-SuperTooltip Support
+### SuperTooltip Support
 
 TabControlAdv can now display supertooltip on the tabs when mouse hovered on the tabs.
 
@@ -132,7 +132,7 @@ It includes the below topics.
 
 The PersistTabState property specifies the value which determines whether the TabState (ActivePage, TabOrder and Text) should be automatically persisted or not. The default value is set to False.
 
-_Table_ _834_: Property Table_
+_Table_ _834_: _Property Table_
 
 <table>
 <tr>
@@ -145,7 +145,7 @@ PersistTabState</td><td>
 Gets / sets the value which determines whether the TabState should be automatically persisted or not.</td></tr>
 </table>
 
-_Table_ _824_:Methods Table
+_Table_ _824_: _Methods Table_
 
 <table>
 <tr>
@@ -170,7 +170,7 @@ Tabs framework allows the tabitems in the TabControlAdv to be drawn from right t
 
 This property aligns the tabs and the text from right to left which proves to be helpful for the Right-To-Left languages.
 
-_Table_ _836_: Property Table_
+_Table_ _836_: _Property Table_
 
 <table>
 <tr>
@@ -192,7 +192,7 @@ RotateTabsWhenRTL property can be used to rotate the tabs of the tabcontroladv t
 
 When the RightToLeft mode is activated and RotateTabsWhenRTLproperty is enabled, tab rotation is allowed.
 
-_Table_ _837_: Property Table
+_Table_ _837_: _Property Table_
 
 <table>
 <tr>
@@ -236,7 +236,7 @@ N> Only VS2005Style, OneNoteStyle and DockingWhidbeyStyle support RotateTabsWhen
 
 RotateTextWhenVertical property can be used to rotate the text of the tabitems that are aligned to the left and right of the pages. This displays the tabs horizontally and provides better user readability by displaying the tabitems' text in a horizontal fashion.
 
-_Table_ _838_: Property Table
+_Table_ _838_: _Property Table_
 
 <table>
 <tr>
@@ -274,7 +274,7 @@ ScrollButton
 
 TabControlAdv has the ability to add scrollbuttons on the TabPanel when the number of Tab items increase. These scrollbuttons allow the user to navigate through the tabpages in the front and back. For this, the ShowScroll property of the TabControl must be set.
 
-_Table_ _839_: Property Table_
+_Table_ _839_: _Property Table_
 
 <table>
 <tr>
@@ -324,7 +324,7 @@ ScrollBars can be set for the tabpages for which the AutoScroll property has to 
 
 ScrollIncrement property is used to specify whether to scroll through tabs or pages.
 
-_Table_ _840_: Property Table
+_Table_ _840_: _Property Table_
 
 <table>
 <tr>

@@ -40,7 +40,9 @@ Once you have a Custom ITabRenderer implementation, you can, if necessary, make 
 
 
 {% seealso %}
-TabStyles
+
+[TabStyles](/windowsforms/tabs/styles-settings#tabstyles)
+
 {% endseealso %}
 
 
@@ -104,7 +106,9 @@ Me.tabControlAdv1.TabGap = 2
 {% endhighlight %}
 
 {% seealso %}
-TabStyles
+
+[TabStyles](/windowsforms/tabs/styles-settings#tabstyles)
+
 {% endseealso %}
 
 ## Text Alignment

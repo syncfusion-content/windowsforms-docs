@@ -15,8 +15,6 @@ The tabs in the TabbedMDI layout can be aligned to the Top, Left, Right and Bott
 
    ~~~ cs
 
-
-
 		this.tb.TabControlAdded += new TabbedMDITabControlEventHandler(tb_TabControlAdded);
 
    ~~~
@@ -61,7 +59,9 @@ The tabs in the TabbedMDI layout can be aligned to the Top, Left, Right and Bott
 
 
 {% seealso %}
-MDI List
+
+[MDI List](/windowsforms/tabbedmdi/mdi-list)
+
 {% endseealso %}
 
 

@@ -15,7 +15,7 @@ This section will walk you through the following runtime features of TreeViewAdv
 
 TreeViewAdv control provides option for displaying context menu on right clicking on any node in the TreeViewAdv control. It also let users add custom menu items.
 
-Adding Custom Menu Items
+### Adding Custom Menu Items
 
 1.  Declare and initialize a context menu.
 
@@ -298,9 +298,10 @@ Me.treeViewAdv1.EndEdit(False)
 
 A sample which includes the Context Menu feature is available in the below installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 {% seealso %}
+
 Node Editing Events
 
 {% endseealso %}
@@ -309,11 +310,11 @@ Node Editing Events
 
 TreeViewAdv control provides scrollbar support to show additional content that is available but not visible by default. The following properties are supported by treeview scrolling.
 
-Displaying ScrollTips
+#### Displaying ScrollTips
 
 The text of the ScrollTip can be set through ScrollTipFormat property. It lets you identify the scroll position.
 
-_Table_ _892_: Property Table
+_Table_ _892_: _Property Table_
 
 <table>
 <tr>
@@ -359,7 +360,7 @@ Me.treeViewAdv1.ScrollTipFormat = "Position {0}"
 
 The following properties support scrolling using mouse wheel.
 
-_Table_ _893_: Property Table
+_Table_ _893_: _Property Table_
 
 <table>
 <tr>
@@ -387,11 +388,12 @@ Specifies the acceleration behavior for scrollbars.FastImmediateNoneDefault</td>
 AllowIncreaseSmallChange</td><td>
 When set to true, the scroll control can increase the scrollbar.smallchange property when doing accelerated scrolling.</td></tr>
 </table>
-Sizing Grip for the Scrollbars
+
+### Sizing Grip for the Scrollbars
 
 Setting the value for the SizeGripStyle property, will display a sizing grip at the bottom right corner of the control when both the scrollbars are visible. The options available are Show, which will show the sizing grip; Auto, which will automatically show the sizing grip whenever needed; Hide, which will hide the sizing grip.
 
-_Table_ _894_: Property Table
+_Table_ _894_: _Property Table_
 
 <table>
 <tr>
@@ -421,7 +423,7 @@ Color schemes can be selected using Office2007ScrollBarsColorScheme property.
 
 When the control is been used under a splitter window and if it is sharing the scrollbars with the parent control or the parent window, then setting FillSplitterPane property to true, will toggle support for doing that.
 
-_Table_ _895_: Property Table
+_Table_ _895_: _Property Table_
 
 <table>
 <tr>
@@ -475,7 +477,7 @@ Enabling the HotTracking property to true and when the mouse hovers over any nod
 
 The TreeView control can display help text for individual nodes, when the mouse is moved over a node, by setting the HelpText property of the nodes. 
 
-_Table_ _896_: Property Table
+_Table_ _896_: _Property Table_
 
 <table>
 <tr>
@@ -502,4 +504,4 @@ TreeNodeAdv9.HelpText = "ToolTip for TreeView"
 {% endhighlight %}
 
 
-We can display scroll tips for the scrollbars.
+We can display scroll tips for the [scrollbars](/windowsforms/treeview/runtime-features#scrolling).

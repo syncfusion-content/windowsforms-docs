@@ -21,11 +21,11 @@ Namespace: Syncfusion.Windows.Forms.TreeMap
 
 Refer to the following code to add a TreeMap control to an application:
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
-          TreeMap TreeMap1 = new TreeMap();
+TreeMap TreeMap1 = new TreeMap();
 
 {% endhighlight %}
 

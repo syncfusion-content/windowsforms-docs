@@ -162,7 +162,9 @@ The XP Menus framework automatically handles the case when the MDIChild windows 
 
 
 {% seealso %}
-UserControls as Tabs
+
+[UserControls as Tabs](/windowsforms/tabbedmdi/usercontrols-as-tabs)
+
 {% endseealso %}
 
 

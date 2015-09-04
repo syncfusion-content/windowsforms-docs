@@ -92,9 +92,9 @@ TabPages are the pages included in the TabControl. The TabPages are laid one abo
 
  The TabPageAdv can be added to the TabControlAdv through designer as well as through code.
 
-Creating a TabControlAdv Through Designer
+[Creating a TabControlAdv Through Designer](/windowsforms/tabs/overview#through-designer)
 
-Creating a TabControlAdv Programmatically
+[Creating a TabControlAdv Programmatically](/windowsforms/tabs/overview#through-code)
 
 ## Creating TabControlAdv
 

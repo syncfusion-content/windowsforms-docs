@@ -352,7 +352,7 @@ Me.tabPageAdv1.TabFont = New System.Drawing.Font("Trebuchet MS", 8.25F, System.D
 
 
 
-To set image for tab items, see BackgroundImage Settings.
+To set image for tab items, see [BackgroundImage Settings](#backgroundimage-settings).
 
 ### ForeColor Settings
 
@@ -434,5 +434,5 @@ Me.tabControlAdv1.BorderWidth = 10
 
 
 
-N> These border properties are especially implemented for _"VS2008Style"_ TabStyles.
+N> These border properties are especially implemented for _"VS2008Style"_ [TabStyles](/windowsforms/tabs/styles-settings#tabstyles).
 

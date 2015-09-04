@@ -17,7 +17,7 @@ Essential Tools TabSplitterContainer control is a VS 2008 control which can have
 
 The features of the TabSplitterContainer control are listed below.
 
-* Lets you add primary and secondary pages. See Splitter Components topic.
+* Lets you add primary and secondary pages. See [Splitter Components](/windowsforms/tabsplittercontainer/splitter-components) topic.
 * We can swap the tab pages easily by clicking a button. 
 * The splitter orientation can be horizontal and vertical. 
 * Splitter panes can be expanded or collapsed.

@@ -72,7 +72,7 @@ The below image displays a gradient style for all the nodes of the TreeView cont
 
 Make a Node's Style Inherit from Another Base Style
 
- Apart from the default style (Standard Style),we can also create custom Base styles using the Base Styles Collection Editor. Clicking the Add Base Style button, will add a new BaseStyle whose properties can be edited.
+ Apart from the default style [Standard Style](#standard-style),we can also create custom Base styles using the Base Styles Collection Editor. Clicking the Add Base Style button, will add a new BaseStyle whose properties can be edited.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img51.jpeg)
 
@@ -84,7 +84,7 @@ This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseSt
 
 
 
-This overrides the Standard Style settings for the specified nodes and displays the image as follows.
+This overrides the [Standard Style](#standard-style) settings for the specified nodes and displays the image as follows.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img53.jpeg)
 

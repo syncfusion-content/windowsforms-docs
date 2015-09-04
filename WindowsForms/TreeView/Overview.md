@@ -13,7 +13,7 @@ The Essential Tools' TreeViewAdv control implements a classical tree structure w
 
 * The TreeViewAdv control contains a hierarchical collection of TreeNodeAdv objects which gets rendered in a classical tree structure.
 * The top level nodes and the children nodes of the TreeNodeAdv can be accessed through the node's properties.
-* While the TreeViewAdv exposes some global styles that are to be applied for all the nodes, the TreeNodeAdv lets the users to specify styles for a specific node. The Styles Architecture which will be discussed later in this section, lets the users to define styles for nodes at different levels of the tree. This allows the users to specify styles for a class of nodes.
+* While the TreeViewAdv exposes some global styles that are to be applied for all the nodes, the TreeNodeAdv lets the users to specify styles for a specific node. The [Styles Architecture](/windowsforms/treeview/styles-architecture) which will be discussed later in this section, lets the users to define styles for nodes at different levels of the tree. This allows the users to specify styles for a class of nodes.
 
 ![](Overview_images/Overview_img1.jpeg)
 
@@ -86,7 +86,7 @@ Supports a flexible style architecture to let users define the styles for nodes 
 
 ### Custom Control
 
-Support for custom control feature allows to add custom controls to the tree structure that can be embedded to the required tree node. See custom control for details.
+Support for custom control feature allows to add custom controls to the tree structure that can be embedded to the required tree node. See [custom control](/windowsforms/treeview/treenode-features#custom-controls) for details.
 
 
 

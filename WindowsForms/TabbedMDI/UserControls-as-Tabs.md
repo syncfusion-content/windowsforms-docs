@@ -55,6 +55,9 @@ Me.dockingManager1.SetAsMDIChild(Uc, True)
 
 
 {% seealso %}
-MDI List
+
+[MDI List](/windowsforms/tabbedmdi/mdi-list)
+
 {% endseealso %}
+
 

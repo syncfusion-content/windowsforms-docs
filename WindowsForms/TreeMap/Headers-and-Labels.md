@@ -11,7 +11,7 @@ documentation: ug
 
 Labels and headers in a tree map can be customized by the various properties available in the TreeMap control, such as LabelFont, LabelBrush, LabelBackgroundBrush, LabelBorderBrush, LabelBorderThickness, and HeaderBrush.
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
@@ -73,17 +73,11 @@ desaturationColorMapping.To = 0;
 
 desaturationColorMapping.RangeMinimum = 0;
 
-desaturationColorMapping.RangeMaximum = 80000;            
-
-
+desaturationColorMapping.RangeMaximum = 80000;
 
 this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 
 
 {% endhighlight %}
-
-
-
-
 
 ![](Features_images/Features_img12.png)

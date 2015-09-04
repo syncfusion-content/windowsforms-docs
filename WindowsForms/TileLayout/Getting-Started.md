@@ -25,31 +25,32 @@ To create TileLayout through designer:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 3. Add ImageStreamer to the control in the designer as shown below.
 
-   ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 4. Change ImageStreamer’s back color.
 
-   ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
-   ![](Getting-Started_images/Getting-Started_img6.jpeg) | markdownify }
+   ![](Getting-Started_images/Getting-Started_img6.jpeg)
 
 
 
 ## Through Code
 
- To create TileLayout programmatically: 
+To create TileLayout programmatically: 
 
 1. Add the Syncfusion assembly Tools.Windows to your application. 
+
 2. Add the namespace Syncfusion.Windows.Forms.Tools.
 
    ~~~ cs
@@ -92,9 +93,7 @@ To create TileLayout through designer:
 
    The following code creates a TileLayout and LayoutGroup.
 
-   {% highlight C# %}
-
-
+{% highlight C# %}
 
 		private void Form1_Load(object sender, System.EventArgs e)
 
@@ -165,7 +164,7 @@ To create TileLayout through designer:
 
 		}
 
-       {% endhighlight %}
+{% endhighlight %}
 
         
 {% highlight vbnet %}
@@ -265,5 +264,3 @@ ShowNavigator</td><td>
 Shows the navigator in the slides.</td><td>
 Bool</td></tr>
 </table>
-
-

@@ -13,25 +13,16 @@ Toggle Button is set to display either text or image through its DisplayMode pro
 
 {% highlight c# %}
 
-this.toggleButton1.DisplayMode = 
-
-DisplayType.Text;
-
-
+this.toggleButton1.DisplayMode = DisplayType.Text;
 
 // DisplayType.Image ,for displaying image
-
 
 {% endhighlight %}
 
 
 {% highlight vbnet %}
 
-Me.ToggleButton1.DisplayMode = 
-
-DisplayType.Text
-
-
+Me.ToggleButton1.DisplayMode = DisplayType.Text
 
 'DisplayType.Image for displaying image
 

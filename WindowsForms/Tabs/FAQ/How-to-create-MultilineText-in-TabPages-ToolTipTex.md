@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-create-MultilineText-in-TabPages-ToolTipTex
-description: how to create multilinetext in tabpages' tooltiptext
+description: how to create multilinetext in tabpages tooltiptext
 platform: WindowsForms
 control: TabsPackage
 documentation: ug
 ---
 
-# How to create MultilineText in TabPages' ToolTipText
+# How to create MultilineText in TabPage's ToolTipText
 
 Setting the ShowToolTipText property of TabControlAdv to 'True' will wrap the text when using the new line character (\n) in the ToolTipText property of TabPageAdv. The new line character (\n) is not supported at design-time.
 

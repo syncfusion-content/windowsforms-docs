@@ -29,7 +29,7 @@ Indicates the type of the panel.</td></tr>
 
 The PanelType property can be used to display predefined text representing key states, date / time or culture information.
 
-N> Users can also specify their own text to be displayed in the control by setting the PanelType property to 'Custom'. The text to be displayed is set using the Text property of the StatusBarAdvPanel._
+N> Users can also specify their own text to be displayed in the control by setting the PanelType property to 'Custom'. The text to be displayed is set using the Text property of the StatusBarAdvPanel.
 
 {% highlight c# %}
 

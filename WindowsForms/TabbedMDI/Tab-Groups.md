@@ -334,5 +334,5 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Black
 
 A sample which illustrates this feature is available in the below sample installation location.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 

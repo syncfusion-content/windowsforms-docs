@@ -216,7 +216,7 @@ Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 
 
-> Note: The ScrollToCaret() method can be used to scroll the contents of the control to the current caret position.
+N> The ScrollToCaret() method can be used to scroll the contents of the control to the current caret position.
 
 ### OverflowIndicatorToolTipText
 
@@ -272,9 +272,9 @@ Me.textBoxExt1.OverflowIndicatorToolTipText = "Overflow"
 
 
 
-> Note: If there is no value set for the OverflowIndicatorToolTipText property, then the value set for the Text property of the TextBoxExt will be displayed as the tooltip.
+N> there is no value set for the OverflowIndicatorToolTipText property, then the value set for the Text property of the TextBoxExt will be displayed as the tooltip.
 
 A sample which demonstrates the Text, Text Align, Character Casing, RightToLeft, Multiline, Word Wrap, ScrollBars and Overflow Indicator ToolTip features of TextBoxExt control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 

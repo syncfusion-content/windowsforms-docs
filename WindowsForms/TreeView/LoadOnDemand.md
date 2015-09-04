@@ -13,7 +13,7 @@ LoadOnDemand feature is to give a delay in loading a node in a Tree, before the 
 
 By setting LoadOnDemand property to true, the plus(+) and minus(-) of all the nodes will be visible in the beginning. By handling the BeforeExpand event of the nodes, subnodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether or not the children are added.
 
-_Table_ _914_: Property Table
+_Table_ _914_: _Property Table_
 
 <table>
 <tr>
@@ -30,19 +30,20 @@ AddSeparatorAtEnd</td><td>
 Indicates if the TreeNodeAdv.GetPath method adds a separator at the end of the path string returned.</td></tr>
 </table>
 
-_Table_ _915_: Methods Table
+_Table_ _915_: _Methods Table_
 
 <table>
 <tr>
-<td>
-TreeNodeAdv Methods</td><td>
-Description</td></tr>
+<th>
+TreeNodeAdv Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetPath</td><td>
 Method which is used to derive the path string for a specific node.</td></tr>
 </table>
-Retrieving Node Path
+
+### Retrieving Node Path
 
 In the BeforeExpand event the user can retrieve the path string for a specific node using the TreeNodeAdv.GetPath method where the user can also specify the separator.
 
@@ -208,9 +209,11 @@ End Sub
 
 A sample demonstrating the LoadOnDemand feature in available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 {% seealso %}
+
 Plus Sign On ExpandMode
+
 {% endseealso %}
 

@@ -58,7 +58,9 @@ Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 
 
 {% seealso %}
-Context Menu
+
+[Context Menu](/windowsforms/tabbedmdi/interactive-features#context-menu)
+
 {% endseealso %}
 
 
@@ -191,7 +193,9 @@ tabbedMDIManager.ContextMenuItem = contextMenuItem
 
 
 {% seealso %}
-How to remove the Context Menu for a particular tab?
+
+[How to remove the Context Menu for a particular tab](/windowsforms/tabbedmdi/faq/how-to-remove-the-context-menu-for-a-particular-tab)
+
 {% endseealso %}
 
 

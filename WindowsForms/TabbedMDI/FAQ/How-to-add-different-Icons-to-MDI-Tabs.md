@@ -2,7 +2,7 @@
 layout: post
 title: How-to-add-different-Icons-to-MDI-Tabs
 description: how to add different icons to mdi tabs
-platform: wpf
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---

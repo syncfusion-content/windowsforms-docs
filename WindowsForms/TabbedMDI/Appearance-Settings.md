@@ -96,6 +96,3 @@ Me.tabbedMDIManager1.ThemesEnabled = True
 {% endhighlight %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
-
-
-

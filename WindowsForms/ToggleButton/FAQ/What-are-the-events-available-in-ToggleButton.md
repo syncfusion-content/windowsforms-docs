@@ -14,11 +14,11 @@ The following listed events are available in Toggle Button.
 * ToggleStateChanging
 * ToggleStateChanged
 
-ToggleStateChanging 
+## ToggleStateChanging 
 
 This event is triggered in Toggle Button when its state is changing.
 
-Event Data
+#### Event Data
 
 _Table_ _987_: _Member Table_
 
@@ -58,11 +58,11 @@ End Sub
 
 {% endhighlight %}
 
-#### ToggleStateChanged 
+## ToggleStateChanged 
 
 This event is triggered in Toggle Button after its value is changed. 
 
-Event Data
+#### Event Data
 
 _Table_ _988_: _Member Table_
 
@@ -80,14 +80,8 @@ Returns the current state of the ToggleButton.</td></tr>
 
 {% highlight c# %}
 
-
-
 void toggleButton1_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
-
-
-
 {
-
      ToggleButtonState state = e.ToggleState;
 
      Console.WriteLine("ToggleStateChanged event is raised");

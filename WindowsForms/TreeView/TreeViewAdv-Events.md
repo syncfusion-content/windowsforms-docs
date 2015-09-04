@@ -15,27 +15,27 @@ This section covers the events related to the below concepts.
 
 This section discusses the below node painting events.
 
-## AfterNodePaint Event
+### AfterNodePaint Event
 
-This event is discussed here.
+This event is discussed [here](/windowsforms/treeview/treeview-appearance#drawing-selected-node-foreground).
 
-## BeforeNodePaint
+### BeforeNodePaint
 
-This event is discussed in Drawing Selected Node Foreground.
+This event is discussed in [Drawing Selected Node Foreground](/windowsforms/treeview/treeview-appearance#drawing-selected-node-foreground).
 
 ## CheckBox Event
 
 This section discusses AfterInteractiveChecks Event.
 
-## AfterInteractiveChecks Event
+### AfterInteractiveChecks Event
 
 InteractiveCheckBox settings available for the treeNodeAdv indicates whether the node will have an interactive checkbox. This AfterInteractiveChecks event will be triggered when the checked state of one or more nodes of a TreeViewAdv has changed due to this InteractiveCheckbox setting.
 
-## Event Data
+#### Event Data
 
 The TreeNodeAdvEventHandler receives an argument of type TreeNodeAdvEventArgs containing data related to this event. The following TreeNodeAdvEventArgs members provide information specific to this event.
 
-_Table_ _924_: Members Table
+_Table_ _924_: _Members Table_
 
 <table>
 <tr>
@@ -96,7 +96,9 @@ End Sub
 {% endhighlight %}
 
 {% seealso %}
+
 Checkbox and Option buttons
+
 {% endseealso %}
 
 
@@ -105,11 +107,11 @@ Checkbox and Option buttons
 
 This section discusses the following general events.
 
-## BeforeExpand Event
+### BeforeExpand Event
 
-BeforeExpand event occurs before a node is expanded. It is illustrated in the LoadOnDemand topic.
+BeforeExpand event occurs before a node is expanded. It is illustrated in the [LoadOnDemand](/windowsforms/treeview/loadondemand) topic.
 
-## Deactivated Event
+### Deactivated Event
 
 The Deactivated event is triggered when the TreeViewAdv control is deactivated or lost focus.
 
@@ -143,7 +145,7 @@ End Sub
 
 {% endhighlight %}
 
-## FillSplitterPaneChanged Event
+### FillSplitterPaneChanged Event
 
 The FillSplitterPane property of a TreeViewAdv control is the one that toggles support for using the control inside a dynamic splitter window and sharing scrollbars with the parent window. The FillSplitterPaneChanged event will be raised when this property is changed.
 
@@ -179,11 +181,11 @@ End Sub
 
 This event is triggered when the key is first pressed. An example which uses the KeyDown event is as follows.
 
-## Event Data
+### Event Data
 
 The KeyEventHandler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs members provide information specific to this event.
 
-_Table_ _925_: Members Table
+_Table_ _925_: _Members Table_
 
 <table>
 <tr>
@@ -232,7 +234,7 @@ Adding nodes into the TreeViewAdv using KeyBoard
 
 The nodes can be added to the TreeViewAdv when any key is pressed, whereby the text of the node reflects the key that has been used for adding the node, by using the following code in the TreeViewAdv KeyDown event handler.
 
-Border Settings
+#### Border Settings
 
 {% highlight c# %}
 
@@ -259,9 +261,6 @@ private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventAr
 
 {% highlight vbnet %}
 
-
-
-
 Private Sub treeViewAdv1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
 
 
@@ -286,15 +285,104 @@ End Sub
 ![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
 
 
-## BeforeCheck Event
+### KeyDown Event
+
+This event is triggered when the key is first pressed. An example which uses the KeyDown event is as follows.
+
+####  Event Data
+
+The KeyEventHandler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs members provide information specific to this event.
+
+_Table 925: Members Table_
+<table>
+<tr>
+<th>
+Members</th><th>
+Description</th></tr>
+<tr>
+<td>
+Alt	</td><td>
+Gets a value indicating whether the ALT key was pressed.</td></tr>
+<tr>
+<td>
+Control	</td><td>
+Gets a value indicating whether the CTRL key was pressed.</td></tr>
+<tr>
+<td>Handled	</td><td>
+Gets or sets a value indicating whether the event was handled.</td></tr>
+<tr>
+<td>KeyCode	</td><td>
+Gets the keyboard code for a KeyDown or KeyUp event.</td></tr>
+<tr>
+<td>KeyData	</td><td>
+Gets the key data for a KeyDown or KeyUp event.</td></tr>
+<tr>
+<td>KeyValue</td><td>
+Gets the keyboard value for a KeyDown or KeyUp event.</td></tr>
+<tr>
+<td>Modifiers</td><td>
+Gets the modifier flags for a KeyDown or KeyUp event. The flags indicate which combination of CTRL, SHIFT, and ALT keys was pressed.</td></tr>
+<tr>
+<td>Shift</td><td>
+Gets a value indicating whether the SHIFT key was pressed.</td></tr>
+<tr>
+<td>SuppressKeyPress</td><td>
+Gets or sets a value indicating whether the key event should be passed on to the underlying control.
+</td>
+</tr>
+</table>
+
+#### Adding nodes into the TreeViewAdv using KeyBoard
+
+The nodes can be added to the TreeViewAdv when any key is pressed, whereby the text of the node reflects the key that has been used for adding the node, by using the following code in the TreeViewAdv KeyDown event handler.
+
+#### Border Settings
+
+{% highlight c# %}
+
+// Setting the keydata to the newly added node.
+// Add the nodes to the selected node.
+private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e) 
+{ 
+     // Setting the keydata to the newly added node.
+     TreeNodeAdv node=new TreeNodeAdv("Node"+" "+e.KeyData.ToString()); 
+
+     // Add the nodes to the selected node.
+     this.treeViewAdv1.SelectedNode.Nodes.Add(node); 
+     Console.WriteLine("The "+node.Text+" "+"is added"); 
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Private Sub treeViewAdv1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
+
+     ' Setting the keydata to the newly added node.
+     Dim node As TreeNodeAdv = New TreeNodeAdv("Node" & " " & e.KeyData.ToString())
+
+     ' Add the nodes to the selected node.
+     Me.treeViewAdv1.SelectedNode.Nodes.Add(node)
+     Console.WriteLine("The " & node.Text & " " & "is added")
+End Sub
+
+{% endhighlight %}
+
+ 
+![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
+
+_Figure 1555: Nodes added using Keyboard_
+
+
+### BeforeCheck Event
 
 This event is triggered when the checkbox is checked in the control. Below is an example which handles this event.
 
-## Event Data
+#### Event Data
 
 The TreeNodeAdvBeforeCheckEventHandler receives an argument of type TreeNodeAdvBeforeCheckEventArgs containing data related to this event. The following  TreeNodeAdvBeforeCheckEventArgs' members provide information specific to this event.
 
-_Table_ _926_: Members Table_
+_Table_ _926_: _Members Table_
 
 <table>
 <tr>
@@ -370,7 +458,7 @@ End Sub
 
 {% endhighlight %}
 
-## Leave Event
+### Leave Event
 
 This event is triggered when the control is no longer the active control of the form. An example which uses the Leaveevent is as follows.
 
@@ -418,8 +506,6 @@ this.barItem1.Shortcut = Shortcut.Del;
 
 {% highlight vbnet %}
 
-
-
 Private editbox As TextBox
 
 Private Sub treeViewAdv1_BeforeEdit(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs)
@@ -448,7 +534,7 @@ End Sub
 
 This section illustrates the events related to the node images.
 
-## DefaultCollapseImageIndexChanged Event
+### DefaultCollapseImageIndexChanged Event
 
 DefaultCollapseImageIndex property of the TreeViewAdv sets the index of the default image for collapse button. This event is triggered when this property is changed.
 
@@ -481,7 +567,7 @@ End Sub
 
 {% endhighlight %}
 
-## DefaultExpandImageIndexChanged Event
+### DefaultExpandImageIndexChanged Event
 
 DefaultExpandImageIndex property of the TreeViewAdv sets the index of the default image for Expand button. The DefaultExpandImageIndexChanged event is triggered when this property is changed.
 
@@ -515,7 +601,7 @@ End Sub
 
 {% endhighlight %}
 
-## NodeStateImageListChanged Event
+### NodeStateImageListChanged Event
 
 NodeStateImageList holds the state images for the nodes. When this image list is changed then, the NodeStateImageListChanged event will be triggered.
 
@@ -553,7 +639,7 @@ End Sub
 
 TreeViewAdv has properties that specifies the collection of expanded nodes, collapsed nodes, checked nodes and selected nodes.
 
-_Table_ _927_: Property Table
+_Table_ _927_: _Property Table_
 
 <table>
 <tr>
@@ -582,7 +668,7 @@ Specifies the collection of selected nodes.</td></tr>
 
 This section discusses those events that are handled on changing some appearance related properties. They are as follows.
 
-## GradientBackgroundChanged Event
+### GradientBackgroundChanged Event
 
 This event occurs when the GradientBackground of the tree changes.
 
@@ -615,11 +701,13 @@ End Sub
 
 {% endhighlight %}
 
+{% seealso %}
 
+Background Settings
 
-## Background Settings
+{% endseealso %}
 
-## GradientColorsChanged Event
+### GradientColorsChanged Event
 
 This event occurs when the GradientColors of the tree changes.
 
@@ -653,6 +741,7 @@ End Sub
 {% endhighlight %}
 
 {% seealso %}
+
 Background Settings
 
 {% endseealso %}
@@ -693,7 +782,9 @@ End Sub
 {% endhighlight %}
 
 {% seealso %}
+
 Background Settings
+
 {% endseealso %}
 
 
@@ -703,12 +794,14 @@ Background Settings
 This section will walk through the following node editing events.
 
 {% seealso %}
+
 Context Menu
+
 {% endseealso %}
 
 
 
-## NodeEditorValidating Event
+### NodeEditorValidating Event
 
 This event is used to validate a new node label entered by the user.
 
@@ -716,7 +809,7 @@ Event Data
 
 The TreeNodeAdvCancelableEditEventHandler receives an argument of type TreeNodeAdvCancelableEditEventArgs containing data related to this event. The following TreeNodeAdvCancelableEditEventArgs members provide information specific to this event.
 
-_Table_ _928_: Members Table
+_Table_ _928_: _Members Table_
 
 <table>
 <tr>
@@ -740,6 +833,7 @@ Indicates whether the event should be canceled.</td></tr>
 ContinueEditing</td><td>
 Indicates whether editing should end now.</td></tr>
 </table>
+
 How To Validate Node Label Text
 
 This topic shows how you can validate the text of the label of a node in the TreeViewAdv control. You need to listen to the NodeEditorValidating event of the TreeViewAdv control to validate the node's label text entered by the user. The code sample below demonstrates how you can prevent blank labels in a node. 
@@ -772,8 +866,6 @@ private void treeViewAdv1_NodeEditorValidating(object sender, Syncfusion.Windows
 
 {% highlight vbnet %}
 
-
-
 Private  Sub treeViewAdv1_NodeEditorValidating(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvCancelableEditEventArgs)
 
 If e.Label.Length = 0 Then
@@ -796,7 +888,7 @@ End Sub
 
 {% endhighlight %}
 
-## NodeEditorValidated Event
+### NodeEditorValidated Event
 
 This event is raised after the newly entered text in the Node editor gets stored.
 
@@ -804,7 +896,7 @@ Event Data
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _929_: Members Table
+_Table_ _929_: _Members Table_
 
 <table>
 <tr>
@@ -864,15 +956,15 @@ End Sub
 
 {% endhighlight %}
 
-## NodeEditorValidateString Event
+### NodeEditorValidateString Event
 
 This event is triggered when the text entered by the user changes in the Node editor control. 
 
-## Event Data
+#### Event Data
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _930_: Members Table
+_Table_ _930_: _Members Table_
 
 <table>
 <tr>
@@ -974,17 +1066,17 @@ End Sub
 
 {% endhighlight %}
 
-N> Another use case illustrating this event - How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit?
+N> Another use case illustrating this event - [How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit](/windowsforms/treeview/faq/how-to-limit-the-characters-that-the-user-type-for-editing)
 
-## BeforeEdit Event
+### BeforeEdit Event
 
 This event is raised before the node goes into edit mode. Below are examples which handles the BeforeEdit event.
 
-## Event Data
+#### Event Data
 
 The TreeNodeAdvBeforeEditEventHandler receives an argument of type TreeNodeAdvBeforeEditEventArgs containing data related to this event. The following  TreeNodeAdvBeforeEditEventArgs' members provide information specific to this event.
 
-_Table_ _931_: Members Table
+_Table_ _931_: _Members Table_
 
 <table>
 <tr>
@@ -1004,11 +1096,12 @@ Returns the textbox that is used to edit the node.</td></tr>
 Cancel</td><td>
 Gets or Sets a value indicating whether the event should be canceled.</td></tr>
 </table>
-Method to set UnEditable Nodes
+
+#### Method to set UnEditable Nodes
 
 Methods to make a node completely uneditable even when the,
 
-1.  Node is visible.
+1. Node is visible.
 2. Node is clickable.
 
 BeforeEdit event can be used for this purpose. In this example, the Parent Nodes are made uneditable.TreeNodeAdvBeforeEditEventArgs.Node indicates the target node for editing.
@@ -1142,21 +1235,21 @@ The following figure shows the color change for some of the nodes of the user th
 
 ## Node Selection
 
-## BeforeSelect Event
+### BeforeSelect Event
 
-This event occurs before a node is selected. This event is illustrated in “How to prevent a node from being selected?” topic.
+This event occurs before a node is selected. This event is illustrated in [How to prevent a node from being selected](/windowsforms/treeview/faq/how-to-prevent-a-node-from-being-selected) topic.
 
-## HotTracking Events in TreeViewAdv
+### HotTracking Events in TreeViewAdv
 
-Description
+#### Description
 
 In TreeViewAdv, a NodeHotTrackChanged event enables users to retrieve the TreeViewAdv node which is currently being hot tracked by the mouse. This event will be triggered when the mouse moves over the nodes in a tree view, and the node that is currently selected by the mouse pointer is the hot tracked node.
 
-Use Cases
+#### Use Cases
 
 If a user needs to get a particular node’s details as it is being tracked by the mouse pointer, this event will provide this information through its event arguments.
 
-Event Table
+#### Event Table
 
 _Table_ _932_: Events Table
 
@@ -1209,7 +1302,7 @@ AddHandler Me.treeViewAdv1.NodeHotTrackChanged, AddressOf Me.treeViewAdv1_Nod
 
 The following mouse events and Mouse related events are discussed in this section.
 
-## Mouse Events
+### Mouse Events
 
 MouseDown and MouseUp Event
 
@@ -1341,11 +1434,11 @@ End Sub
 
 {% endhighlight %}
 
-## MouseWheelZoom Event
+### MouseWheelZoom Event
 
 MouseWheelZoom event occurs when the user holds the Control Key and rolls the mouse wheel.
 
-Event Data
+#### Event Data
 
 The event handler receives an argument of type MouseWheelZoomEventArgs containing data related to this event. The following MouseWheelZoomEventArgs member provide information specific to this event.
 
@@ -1396,7 +1489,7 @@ End Sub
 
 {% endhighlight %}
 
-## IntelliMouseDragScrolling Event
+### IntelliMouseDragScrolling Event
 
 This event is triggered when the user presses the mouse wheel and drags the mouse. 
 
@@ -1506,17 +1599,17 @@ End Sub
 
 {% endhighlight %}
 
-## Mouse Selection Events in TreeViewAdv and MultiColumnTreeView
+### Mouse Selection Events in TreeViewAdv and MultiColumnTreeView
 
-Description
+#### Description
 
 The event NodeMouseClick is raised when the mouse pointer is over the TreeNodeAdv control and the left mouse button is single clicked. The event NodeMouseDoubleClick is raised when the mouse pointer is over the TreeNodeAdv control and a left mouse button is double-clicked. An example that uses the NodeMouseClick and NodeMouseDoubleClick events follows.
 
-Event Data
+#### Event Data
 
 The TreeViewAdvMouseClickEventArgs contain the following members to provide information specific to this event.
 
-_Table_ _936_: Members Table_
+_Table_ _936_: _Members Table_
 
 <table>
 <tr>
@@ -1692,16 +1785,18 @@ End Sub
 Events that are handled during drag and drop operation, using highlight tracker functionality are as follows.
 
 {% seealso %}
+
 Drag and Drop
+
 {% endseealso %}
 
 
 
-## QueryDragInsertInfo
+### QueryDragInsertInfo
 
-This event is discussed in Highlighting Drag and Drop topic.
+This event is discussed in [Highlighting Drag and Drop](/windowsforms/treeview/drag-and-drop#highlighting-drag-and-drop) topic.
 
-## Drag and Drop Events
+### Drag and Drop Events
 
 The drag drop events given below are discussed here.
 
@@ -1713,7 +1808,7 @@ The drag drop events given below are discussed here.
 * GiveFeedback
 * QueryContinueDrag
 
-## QueryAllowedPositionForNode
+### QueryAllowedPositionForNode
 
 
 This event is discussed here.
@@ -2024,7 +2119,7 @@ End Sub
 
 {% endhighlight %}
 
-## ScrollControlHandledMouseUp Event
+### ScrollControlHandledMouseUp Event
 
 The event, MouseUp is raised when the mouse pointer is over the control and a mouse button is released. Once this event is raised, ScrollControlHandledMouseUp event will also be triggered.
 
@@ -2158,11 +2253,11 @@ End Sub
 
 {% endhighlight %}
 
-## ScrollControlMouseDown Event
+### ScrollControlMouseDown Event
 
 The event, MouseDown is raised when the mouse pointer is over the control and a mouse button is pressed. The ScrollControlMouseDown event will be raised before a MouseDown is raised and allows you to cancel the mouse event.
 
-Event Data
+### Event Data
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
@@ -2222,7 +2317,7 @@ End Sub
 
 {% endhighlight %}
 
-## ScrollControlMouseMove Event
+### ScrollControlMouseMove Event
 
 The event, MouseMove is raised when the mouse pointer is moved over the control. ScrollControlMouseMove event occurs before a MouseMove event is raised and allows you to cancel the mouse event.
 
@@ -2286,11 +2381,11 @@ End Sub
 
 {% endhighlight %}
 
-## ScrollControlMouseUp Event
+### ScrollControlMouseUp Event
 
 The event, MouseUp is raised when the mouse pointer is over the control and a mouse button is released. ScrollControlMouseUp event occurs before a MouseUp event is raised and allows you to cancel the mouse event.
 
-Event Data
+#### Event Data
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
@@ -2354,11 +2449,11 @@ End Sub
 
 {% endhighlight %}
 
-## ScrollTipFeedback Event
+### ScrollTipFeedback Event
 
 This event is triggered when the user is dragging the scrollbar thumb.
 
-Event Data
+#### Event Data
 
 The event handler receives an argument of type ScrollTipFeedbackEventArgs containing data related to this event. The following ScrollTipFeedbackEventArgs members provide information specific to this event.
 

@@ -25,21 +25,23 @@ The TabbedMDI framework contains the TabbedMDIManager control with features to c
 
 * Styles - TabbedMDI supports wide range of Tab Styles and Window Styles. Windows in the TabbedMDI framework can be arranged in four different styles such as horizontal, vertical, cascade and inside the client area of the parent form. It also provides advanced features to set the styles for the DropDown Menus and Context Menus. 
 * Tab Alignment - Aligns the Tabs to the Top, Left, Right or Bottom using the Alignment property. To access this property, the TabControlAdded event is used.
-* Tab Groups - Tab Groups are resizable exactly as in the Visual Studio .NET IDE. The number and layout of the Tab Groups can be restricted and controlled. 
+* Tab Groups - [Tab Groups](/windowsforms/tabbedmdi/tab-groups) are resizable exactly as in the Visual Studio .NET IDE. The number and layout of the Tab Groups can be restricted and controlled. 
 * MDI List - The list of MDIChild Forms in the application can be retrieved by using a single property. Also the Menu Item or ToolStrip Menu Item to which the list should be added can be specified.
 
 
 
-* Button Settings - Options to add DropDown and Close buttons are available. Close buttons can be displayed individually for each tab. The color of the close button can be set according to the needs of the user. It also provides options to close tabs on clicking the middle button of the mouse.
+* Button Settings - Options to add [DropDown](/windowsforms/tabbedmdi/button-settings#dropdown-button) and [Close buttons](/windowsforms/tabbedmdi/button-settings#close-button) are available. Close buttons can be displayed individually for each tab. The color of the close button can be set according to the needs of the user. It also provides options to close tabs on clicking the middle button of the mouse.
 * Appearance Settings - User Controls, Images and Icons can be added to the Tabs. Options are provided to customize the tab's text and image and control the tab's image size. Themed tabs can be displayed using the ThemesEnabled property.
-* Context Menu - Context Menu Items of the Tabs can be customized. Customized Bar Items can be added to the default context menu by accessing the ParentBarItem instance through the contextMenuItem.Items.Add(baritem) property.
+* Context Menu - [Context Menu](/windowsforms/tabbedmdi/interactive-features#context-menu) Items of the Tabs can be customized. Customized Bar Items can be added to the default context menu by accessing the ParentBarItem instance through the contextMenuItem.Items.Add(baritem) property.
 * Automatic State Persistence - TabbedMDI provides full state persistence support. The TabbedMDIManager automatically persists Tab Groups and Tab Group Sizes for use across application invocations.
-* Serialization Support - Provides serialization support to save and load the Tab States.
+* Serialization Support - Provides [serialization support](/windowsforms/tabbedmdi/serialization-support) to save and load the Tab States.
 * Tooltip Support - Tooltips can be enabled for individual Tabs.
 
 
 {% seealso %}
-Creating TabbedMDIManager
+
+[Creating TabbedMDIManager](/windowsforms/tabbedmdi/overview#creating-tabbedmdimanager)
+
 {% endseealso %}
 
 

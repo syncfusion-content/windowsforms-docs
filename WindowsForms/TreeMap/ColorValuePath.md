@@ -11,7 +11,7 @@ documentation: ug
 
 The ColorValuePath of the TreeMap control is a path to a field on the source object that serves as the "color" of the object. 
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 

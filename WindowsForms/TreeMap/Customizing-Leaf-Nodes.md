@@ -11,7 +11,7 @@ documentation: ug
 
 Leaf nodes can be customized by raising the LeafItemDrawing event of the TreeMap control. 
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
@@ -65,10 +65,6 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 
 this.TreeMap1.LeafColorMapping = rangeBrushColorMapping;
 
-
-
-
-
 void treeMap_LeafItemDrawing(object sender, LeafItemDrawingEventArgs e)
 
 {
@@ -103,11 +99,7 @@ void treeMap_LeafItemDrawing(object sender, LeafItemDrawingEventArgs e)
 
 }
 
-
-
 #region View Model
-
-
 
 public class OlymicMedalsViewModel
 
@@ -197,13 +189,8 @@ public class OlympicMedals
 
 }
 
-
-
 #endregion
 
-
-
 {% endhighlight %}
-
 
 ![](Features_images/Features_img14.png)

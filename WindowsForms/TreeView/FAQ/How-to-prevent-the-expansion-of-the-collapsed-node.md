@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-prevent-the-expansion-of-the-collapsed-node
+title: How-to-prevent-the-expansion-of-the-collapsed-nodes-when-it-is-been-double-clicked
 description: how to prevent the expansion of the collapsed nodes when it is been double clicked
 platform: WindowsForms
 control: TreeView 

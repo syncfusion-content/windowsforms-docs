@@ -2,7 +2,7 @@
 layout: post
 title: How-to-add-a-MDI-Child-from-another-MDIChild
 description: how to add a mdi child from another mdichild
-platform: wpf
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---

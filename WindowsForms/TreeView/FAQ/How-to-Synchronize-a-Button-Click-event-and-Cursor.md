@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Synchronize-a-Button-Click-event-and-Cursor
+title: How-to-Synchronize-a-Button-Click-event-and-Cursor-Position-on-a-Node-in-TreeViewAdv
 description: how to synchronize a button click event and cursor position on a node in treeviewadv
 platform: WindowsForms
 control: TreeView 

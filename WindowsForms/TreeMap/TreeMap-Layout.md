@@ -13,7 +13,7 @@ The ItemsLayoutMode for the TreeMap control specifies the mode in which the item
 
 ## Squarified Layout
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
@@ -53,16 +53,11 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 {% endhighlight %}
 
-
- 
-
-
-
 ![](Features_images/Features_img3.png)
 
 ## SliceAndDiceAuto Layout
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
@@ -112,7 +107,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 ## SliceAndDiceHorizontal Layout
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
@@ -160,7 +155,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 ## SliceAndDiceVertical Layout
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 

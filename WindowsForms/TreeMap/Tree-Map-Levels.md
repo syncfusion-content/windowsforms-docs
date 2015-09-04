@@ -15,7 +15,7 @@ The levels of the TreeMap control can be categorized as two types, such as flat 
 
 The ItemsSource set for TreeMap control must be a flat collection of data. The following code sample shows how to set a data collection as ItemsSource for the TreeMap control.
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 

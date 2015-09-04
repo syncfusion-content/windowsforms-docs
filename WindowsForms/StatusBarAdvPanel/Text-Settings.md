@@ -45,7 +45,7 @@ Me.statusBarAdvPanel1.Text = "StatusBarAdvPanel"
 
 The method associated with the above property is given below.
 
-N> The GetText() method returns text according to the key state._
+N> The GetText() method returns text according to the key state.
 
 ## Marquee Settings
 
@@ -110,7 +110,7 @@ AnimationStyle</td><td>
 Specifies the style of animation for the marquee style. The options included are as follows.Scroll,Slide andAlternate.</td></tr>
 </table>
 
-N> The IsMarquee property must be set to 'True' for the animation settings to be visible._
+N> The IsMarquee property must be set to 'True' for the animation settings to be visible.
 
 {% highlight c# %}
 

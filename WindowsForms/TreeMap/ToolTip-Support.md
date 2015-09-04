@@ -11,7 +11,7 @@ documentation: ug
 
 Visibility of tooltips can be specified by the IsToolTipVisible property of the TreeMap control. The format of the tooltip header and item can be customized through the HeaderToolTipInfo and ItemToolTipInfo properties.
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
@@ -32,8 +32,5 @@ itemInfo.ToolTipContentPattern = "Growth \t      :  {Growth} %  \nPopulation   :
 TreeMap1.ItemToolTipInfo = itemInfo; 
 
 {% endhighlight %}
-
-
-
 
 ![](Features_images/Features_img13.png)

@@ -23,27 +23,46 @@ Tree map leaf nodes can be colored with the help of the Color property specified
 
 
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
+
 TreeMap TreeMap1 = new TreeMap();
+
 PopulationViewModel data = new PopulationViewModel(); 
+
 TreeMap1.ItemsSource = data.PopulationDetails;
+
 TreeMap1.WeightValuePath = "Population";  
+
 TreeMap1.ColorValuePath = "Growth";
+
 TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto;
+
 TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel(); 
-treeMapFlatLevel1.GroupPath = "Continent";   
+
+treeMapFlatLevel1.GroupPath = "Continent";  
+ 
 treeMapFlatLevel1.ShowLabels = true;    
+
 TreeMap1.Levels.Add(treeMapFlatLevel1);
+
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel(); 
+
 treeMapFlatLevel2.GroupPath = "Country";  
+
 treeMapFlatLevel2.ShowLabels = true; 
+
 treeMapFlatLevel2.HeaderHeight = 25;
+
 TreeMap1.Levels.Add(treeMapFlatLevel2);
+
 UniColorMapping uniColorMapping = new UniColorMapping(); 
+
 uniColorMapping.Color = Color.MediumSlateBlue; 
+
 this.TreeMap1.LeafColorMapping = uniColorMapping;
+
 			
 {% endhighlight %}
 			
@@ -53,13 +72,11 @@ this.TreeMap1.LeafColorMapping = uniColorMapping;
 
 The leaf nodes of the TreeMap control can be colored based upon the range (i.e. From and To) and Brush specified using the RangeBrush collection of RangeBrushColorMapping.
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}
 
 TreeMap TreeMap1 = new TreeMap();
-
-
 
 PopulationViewModel data = new PopulationViewModel();
 
@@ -69,11 +86,7 @@ TreeMap1.WeightValuePath = "Population";
 
 TreeMap1.ColorValuePath = "Growth";
 
-
-
 TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto;
-
-
 
 TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
 
@@ -82,8 +95,6 @@ treeMapFlatLevel1.GroupPath = "Continent";
 treeMapFlatLevel1.ShowLabels = true;
 
 TreeMap1.Levels.Add(treeMapFlatLevel1);
-
-
 
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
 
@@ -94,10 +105,6 @@ treeMapFlatLevel2.ShowLabels = true;
 treeMapFlatLevel2.HeaderHeight = 25;
 
 TreeMap1.Levels.Add(treeMapFlatLevel2);
-
-
-
-
 
 RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();              
 
@@ -122,30 +129,52 @@ this.TreeMap1.LeafColorMapping = rangeBrushColorMapping;
 
 The leaf nodes of the TreeMap control can be colored based on the Color specified by using DesaturationColorMapping. The RangeMinimum and RangeMaximum must be specified to determine the opacity for every leaf node. The opacity of leaf nodes is in the range between From and To in DesaturationColorMapping.
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %} 
+
 TreeMap TreeMap1 = new TreeMap(); 
+
 PopulationViewModel data = new PopulationViewModel();   
+
 TreeMap1.ItemsSource = data.PopulationDetails; 
+
 TreeMap1.WeightValuePath = "Population"; 
+
 TreeMap1.ColorValuePath = "Growth"; 
+
 TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto;  
-TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();    
+
+TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel(); 
+   
 treeMapFlatLevel1.GroupPath = "Continent";    
+
 treeMapFlatLevel1.ShowLabels = true;    
+
 TreeMap1.Levels.Add(treeMapFlatLevel1); 
+
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-treeMapFlatLevel2.GroupPath = "Country";      
-treeMapFlatLevel2.ShowLabels = true;   
+
+treeMapFlatLevel2.GroupPath = "Country"; 
+     
+treeMapFlatLevel2.ShowLabels = true; 
+  
 treeMapFlatLevel2.HeaderHeight = 25; 
+
 TreeMap1.Levels.Add(treeMapFlatLevel2); 
+
 DesaturationColorMapping desaturationColorMapping = new DesaturationColorMapping(); 
+
 desaturationColorMapping.Color = Color.OrangeRed;  
+
 desaturationColorMapping.From = 220;   
+
 desaturationColorMapping.To = 0;   
+
 desaturationColorMapping.RangeMinimum = 0;
+
 desaturationColorMapping.RangeMaximum = 80000; 
+
 this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 		   
 {% endhighlight %}
@@ -157,29 +186,49 @@ this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 
 The leaf nodes can be colored by using the brushes listed in the Colors collection of PaletteColorMapping.
 
-Code Sample
+#### Code Sample
 
 {% highlight c# %}   
    
 TreeMap TreeMap1 = new TreeMap();
+
 PopulationViewModel data = new PopulationViewModel();  
-TreeMap1.ItemsSource = data.PopulationDetails;    
-TreeMap1.WeightValuePath = "Population";     
-TreeMap1.ColorValuePath = "Growth";       
+
+TreeMap1.ItemsSource = data.PopulationDetails; 
+   
+TreeMap1.WeightValuePath = "Population";   
+  
+TreeMap1.ColorValuePath = "Growth";  
+     
 TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto; 
-TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();        
-treeMapFlatLevel1.GroupPath = "Continent";       
-treeMapFlatLevel1.ShowLabels = true;       
+
+TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel(); 
+       
+treeMapFlatLevel1.GroupPath = "Continent";    
+   
+treeMapFlatLevel1.ShowLabels = true;   
+    
 TreeMap1.Levels.Add(treeMapFlatLevel1);  
-TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();   
-treeMapFlatLevel2.GroupPath = "Country";        
+
+TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();  
+ 
+treeMapFlatLevel2.GroupPath = "Country";    
+    
 treeMapFlatLevel2.ShowLabels = true;    
+
 treeMapFlatLevel2.HeaderHeight = 25;  
+
 TreeMap1.Levels.Add(treeMapFlatLevel2); 
+
 PaletteColorMapping paletteColorMapping = new PaletteColorMapping();   
-paletteColorMapping.Colors = new List<Brush>() {  new SolidBrush(Color.MediumSeaGreen), new SolidBrush(Color.PaleVioletRed), new SolidBrush(Color.MediumSlateBlue), };
-this.TreeMap1.LeafColorMapping = paletteColorMapping;  
-	  
+
+paletteColorMapping.Colors = new List<Brush>() 
+{  
+new SolidBrush(Color.MediumSeaGreen), new SolidBrush(Color.PaleVioletRed), new SolidBrush(Color.MediumSlateBlue) 
+};
+
+this.TreeMap1.LeafColorMapping = paletteColorMapping; 
+ 	  
 {% endhighlight %}
 	  
 ![](Features_images/Features_img10.png)

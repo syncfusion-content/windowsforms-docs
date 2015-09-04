@@ -39,7 +39,10 @@ Node Images
 Checkbox and Option Buttons
 
 CustomControls
+
 {% endseealso %}
+
+
 ## Node Images
 
 TreeViewAdv control can be customized with images for each of its actions for example collapse / expand state, plus / minus of the tree etc., This section discusses about the below topics.
@@ -116,7 +119,7 @@ Setting State Images
 
 Different images can be set for expand / collapse states of the node, using StateImageList property. To apply the left open and close images, set the ClosedImgIndex and the OpenImgIndex to the indices that points to the images in the StateImageList respectively. Nodes without child can be set with a separate image using NoChildrenImageIndex.
 
-_Table_ _856_:Property Table
+_Table_ _856_: _Property Table_
 
 <table>
 <tr>
@@ -206,11 +209,13 @@ Me.stateImageList.ImageSize = New System.Drawing.Size(15, 15)
 
 
 {% seealso %}
+
 Line images
 
 Expand and Collapse Image
 
 Styles Architecture
+
 {% endseealso %}
 
 
@@ -222,7 +227,7 @@ When child nodes are added to a node, automatically the expand / collapse (+/-) 
 * Images to be displayed for the expanded and collapsed nodes can be specified in the DefaultExandImageIndex and DefaultCollapseImageIndex properties respectively.
 * Images for individual nodes can be specified in treeNodeAdv.ExpandImageIndex / treeNodeAdv.CollapseImageIndex properties. Setting these properties will override the expand / collapse image settings that is applied for the control.
 
-_Table_ _858_:Property Table
+_Table_ _858_: _Property Table_
 
 <table>
 <tr>
@@ -250,7 +255,7 @@ Indicates the imagelist with images that are displayed instead of expand / colla
 
 These properties can be set at the node level using the below properties.
 
-_Table_ _859_:Property Table
+_Table_ _859_:_Property Table_
 
 <table>
 <tr>
@@ -279,7 +284,9 @@ It is the imageindex for expand button.</td></tr>
 N> You can customize the background of the plusminus control. Click here to know more about this.
 
 {% seealso %}
+
 Line Images
+
 {% endseealso %}
 
 
@@ -298,7 +305,7 @@ The standard +/- signs for the expand/collapse buttons in the TreeViewAdv can be
 
 ShowPlusMinus when disabled, does not display the plus / minus images for the parent nodes, i.e., the expand/collapse images will not be displayed.
 
-_Table_ _860_:Property Table
+_Table_ _860_: _Property Table_
 
 <table>
 <tr>
@@ -443,7 +450,7 @@ LoadOnDemand property should be set to true for this feature to be effected.
 
 The BeforeExpand event will be raised when the plus is clicked again and when in expanded mode so that you can check the datasource for changes. 
 
-_Table_ _862_:Property Table
+_Table_ _862_: _Property Table_
 
 <table>
 <tr>
@@ -508,9 +515,9 @@ Given below is a screen shot of this.
 
 
 
-### Checkbox and Option buttons
+## Checkbox and Option buttons
 
-Adding Checkbox to the Nodes
+### Adding Checkbox to the Nodes
 
 The ShowCheckBoxes property when set will display check box for all the nodes. To apply checkbox to individual nodes, set the TreeNodeAdv.ShowCheckBox property, only for the required nodes in the NodeCollection Editor.
 
@@ -533,7 +540,7 @@ InteractiveCheckBoxes</td><td>
 Indicates if the state of the node's checkbox indicates the checkstate of the child node's checkboxes.</td></tr>
 </table>
 
-_Table_ _864_:Property Table
+_Table_ _864_: _Property Table_
 
 <table>
 <tr>
@@ -558,7 +565,7 @@ In the TreeViewAdv, the partial checking of the child nodes are supported. They 
 
 The CheckColor and CheckState property is used to set the color and the state of the check mark of the particular selected node. The options for the CheckState property are Checked, Unchecked and Indeterminate.
 
-_Table_ _876_: Property Table_
+_Table_ _876_: _Property Table_
 
 <table>
 <tr>
@@ -621,11 +628,11 @@ TreeNodeAdv8.Checked = True
 
 
 
-Adding Option Buttons
+### Adding Option Buttons
 
 ShowOptionButtons property, when set, will add option buttons to all the nodes which can be applied for the required nodes alone, by setting the property for the respective nodes in the NodeCollection Editor.
 
-_Table_ _866_:Property Table
+_Table_ _866_: _Property Table_
 
 <table>
 <tr>
@@ -685,7 +692,7 @@ Disabling a node's Checkbox or Option button
 
 The user can disable the checkbox or the option button of a node and can still select and deselect the node by setting the EnabledButtons property to false of the respective TreeNodeAdv.
 
-_Table_ _867_:Property Table
+_Table_ _867_: _Property Table_
 
 <table>
 <tr>
@@ -703,7 +710,7 @@ Indicates if the buttons that are displayed, are enabled for the particular node
 
 
 
-#### Custom Controls
+## Custom Controls
 
 Tree Nodes can hold controls using this Custom Controls feature. This widens the functionality and view of the Tree nodes. With this feature, the nodes can hold controls like combo box, Calendar, Chart etc.,
 
@@ -723,7 +730,7 @@ A sample which demonstrates Custom Controls feature is available in the below sa
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### Enabling the control
+## Enabling the control
 
 The TreeView control can be enabled using the below properties.
 
@@ -739,7 +746,7 @@ Description</th></tr>
 Enabled</td><td>
 Indicates whether the control is enabled and can respond to user interactions.</td></tr>
 </table>
-_Table_ _869_:Property Table
+_Table_ _869_: _Property Table_
 
 <table>
 <tr>
