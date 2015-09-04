@@ -19,9 +19,9 @@ Table 12: Chevron
 
 <table>
 <tr>
-<td>
-CommandBar Property</td><td>
-Description</td></tr>
+<th>
+CommandBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ChevronColor</td><td>

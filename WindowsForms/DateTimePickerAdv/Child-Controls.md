@@ -130,7 +130,7 @@ Me.dateTimePickerAdv2.DropDownPressedColor = System.Drawing.Color.Goldenrod
 
 Me.dateTimePickerAdv2.DropDownSelectedColor = System.Drawing.Color.SteelBlue
 {% endhighlight   %}
-> Note: These settings will be effective only when DateTimePickerAdv.Style is Office2003, OfficeXP and VS2005.
+N> These settings will be effective only when DateTimePickerAdv.Style is Office2003, OfficeXP and VS2005.
 
 ![](DateTimePicker_images/Overview_img188.jpeg)
 
@@ -155,7 +155,7 @@ this.dateTimePickerAdv2.FlatDropButton = true;
 this.dateTimePickerAdv2.FlatDropButton = true;
 {% endhighlight   %}
 
-> Note: These setting will be effective only when DateTimePickerAdv.Style is Default.
+N> These setting will be effective only when DateTimePickerAdv.Style is Default.
 
 ![](DateTimePicker_images/Overview_img190.jpeg) 
 
@@ -237,9 +237,11 @@ Me.dateTimePickerAdv1.StretchDropDownImage = True
 
 
 
- See Also
+ {% seealso %}
+ [Checkbox](#checkbox), [Text Field](#text-field)
+{% endseealso %}
  
- Checkbox, Text Field
+
 
 
 
@@ -272,9 +274,11 @@ Me.dateTimePickerAdv5.Checked = False
 
 
 
- See Also
+ {% seealso %}
+[Text Field](#text-field), [UpDown and DropDown Buttons](#updown-and-dropdown-buttons)
+{% endseealso %}
  
- Text Field, UpDown and DropDown Buttons
+ 
 
 
 ## Text Field
@@ -323,7 +327,7 @@ Description</th></tr>
 <tr>
 <td>
 Format </td><td>
-Gets or Sets the format of the picker. The options are,{{ '_Long(default),_'  | markdownify }}{{ '_Short,_'  | markdownify }}{{ '_Time and_' | markdownify }}{{ '_Custom._' | markdownify }}</td></tr>
+Gets or Sets the format of the picker. The options are,{{ 'Long(default),'  | markdownify }}{{ 'Short,'  | markdownify }}{{ 'Time and' | markdownify }}{{ 'Custom.' | markdownify }}</td></tr>
 <tr>
 <td>
 CustomFormat</td><td>
@@ -419,11 +423,13 @@ Me.dateTimePickerAdv1.Spacing = 5
 
 
 
-> Note: The text field can be refreshed programmatically by calling DateTimePickerAdv.RefreshFields() method.
+N> The text field can be refreshed programmatically by calling DateTimePickerAdv.RefreshFields() method.
 
- See Also
+ {% seealso %}
+  Navigating between Fields, UpDown and DropDown Buttons
+{% endseealso %}
  
- Navigating between Fields, UpDown and DropDown Buttons
+ 
 
 ###  Null Value Settings
 
@@ -457,11 +463,11 @@ Specifies the text visible when there is no date selected.  EnableNullDate must 
 <tr>
 <td>
 NullModeKeyReset</td><td>
-Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ '_ArrowKeys (default),_' | markdownify }}{{ '_NumericKeys and_'  | markdownify }}{{ '_Any._' | markdownify }}EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ 'ArrowKeys (default),' | markdownify }}{{ 'NumericKeys and'  | markdownify }}{{ 'Any.' | markdownify }}EnableNullDate must be set to true to make this setting effective.</td></tr>
 <tr>
 <td>
 IsNullDate</td><td>
-Set this to true, if you want to display null value ({{ '_String specified in NullString_' | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
+Set this to true, if you want to display null value ({{ 'String specified in NullString' | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
 </table>
 
 

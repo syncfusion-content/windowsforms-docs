@@ -16,7 +16,7 @@ The CheckBoxAdv is an advanced CheckBox control that supports themes, gradient c
 
 CheckBoxAdv control can replace the CheckBox control provided in the Windows Forms. This type of control can be defined as consisting of a graphic and associated text that the user clicks to select or deselect an option. A check mark in the checkbox graphic indicates that the option is selected. In the CheckBoxAdv control, the graphic can be changed to an image that indicates a selected or deselected state.
 
-See Also
+
 
 ## Features	
 
@@ -70,6 +70,3 @@ It provides the Office2007 Visual Style that comes in the blue, silver and black
 
 You can bind the CheckBoxAdv to a datasource such as an SQL database.
 
-See Also
-
-Concepts and Features

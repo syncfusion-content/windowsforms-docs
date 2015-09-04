@@ -76,6 +76,7 @@ A sample which demonstrates the TextShadow property of CheckBoxAdv is available 
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-See Also
+{% seealso %}
+[Alignment Settings](/WindowsForms/CheckBoxAdv/Alignment-Settings)
+{% endseealso %}
 
-Alignment Settings

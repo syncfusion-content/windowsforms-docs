@@ -35,7 +35,7 @@ Represents the group of theme colors.</td></tr>
 
 
 
-> Note: You can also add custom ColorGroups apart from the above default groups. Refer Custom ColorGroups topic to know more.
+N>  You can also add custom ColorGroups apart from the above default groups. Refer Custom ColorGroups topic to know more.
 
 ## Sections of Color Groups 
 
@@ -45,9 +45,11 @@ The sections of a color group is illustrated in the below image.
 
 
 
-> See Also
-> 
-> Custom Color Groups, Customizing the Color Groups
+{% seealso %}
+[Custom Color Groups](#custom-color-groups), [Customizing the Color Groups](#customizing-the-color-groups)
+{% endseealso %}
+ 
+ 
 
 
 ## Custom Color Groups
@@ -109,11 +111,12 @@ Me.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1)
 
 
 
-> Note: The properties to customize the color groups are similar to default color groups. See how to Customize the Color Groups in_ Customizing the Color Groups _topic.
+N> The properties to customize the color groups are similar to default color groups. 
+See how to Customize the Color Groups in [Customizing the Color Groups](#customizincolor-items)topic.
 
-# Customizing the Color Groups
+## Customizing the Color Groups
 
-## Adding Color Items and sub items to Color Groups
+### Adding Color Items and sub items to Color Groups
 
 The below properties lets you add color items and sub items.
 
@@ -186,7 +189,7 @@ Me.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1
 
 
 
-> Note: To know how to customize a color item, refer_ Color Items _topic.
+N> To know how to customize a color item, refer_ Color Items _topic.
 
 ## Color Items
 
@@ -194,7 +197,7 @@ Me.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1
 
 Size of the color items can be set through ColorItemSize property. Default width is 13 and height is 13.
 
-> Note: The colors within the groups are clickable at design time and you can change the color using property grid as in the below image.
+N> The colors within the groups are clickable at design time and you can change the color using property grid as in the below image.
 
 ![](ColorPickerUIAdv_Images/Overview_img266.jpeg)
 
@@ -246,13 +249,16 @@ Me.colorPickerUIAdv1.VerticalItemsSpacing = 15
 
 
 {% endhighlight  %}
+
 ![](ColorPickerUIAdv_Images/Overview_img268.jpeg) 
 
 
 
-> See Also
->
-> Header Settings
+{% seealso %}
+[Header Settings](#header-settings)
+{% endseealso %}
+
+ 
 
 
 ## Header Settings

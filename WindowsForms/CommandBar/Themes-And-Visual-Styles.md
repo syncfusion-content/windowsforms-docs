@@ -19,9 +19,9 @@ Table 24: CommandBarController Property Table
 
 <table>
 <tr>
-<td>
-CommandBarController Property</td><td>
-Description</td></tr>
+<th>
+CommandBarController Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ThemesEnabled</td><td>
@@ -59,9 +59,9 @@ Table 25: CommandBarController Property Table
 
 <table>
 <tr>
-<td>
-CommandBarController Property</td><td>
-Description</td></tr>
+<th>
+CommandBarController Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Style</td><td>
@@ -98,7 +98,7 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 
 
 
-> Note : For the Office2003 and VS2005 styles to take effect, the ThemesEnabled property should be set to 'False'.
+N> For the Office2003 and VS2005 styles to take effect, the ThemesEnabled property should be set to 'False'.
 
 ## Office 2007 Theme
 
@@ -108,9 +108,9 @@ Table 26: CommandBarController Property Table
 
 <table>
 <tr>
-<td>
-CommandBarController Property</td><td>
-Description</td></tr>
+<th>
+CommandBarController Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Office2007Theme</td><td>

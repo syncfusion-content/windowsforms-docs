@@ -34,39 +34,39 @@ Specifies whether calculator button is to be displayed. By default it is True.</
 <td>
 CalculatorButton</td><td>
 Provides properties to customize the calculator button. 
-[See ButtonEdit](http://172.168.111.149/UG_82/WindowsFormsUI_Tools/ButtonEdit.html)  control user guide to know about the settings.</td></tr>
+See {{ '[ButtonEdit](http://172.168.111.149/UG_82/WindowsFormsUI_Tools/ButtonEdit.html)'| markdownify}}  control user guide to know about the settings.</td></tr>
 <tr>
 <td>
 CalculatorLayoutType</td><td>
 Specifies the LayoutType for the Calculator control. The layout types are,
-Financial (default) and WindowStandard.</td></tr>
+Financial (default) <br/>and WindowStandard<br/>.</td></tr>
 <tr>
 <td>
 PopupCalculatorAlignment</td><td>
 It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,
-Right(default) and Left.</td></tr>
+Right(default) and <br/>Left<br/>.</td></tr>
 <tr>
 <td>
 CloseAction</td><td>
 Specifies the action that will close the popup calculator. After performing calculations in the popup calculator, we may press '=' to close the popup calculator. This is called closed action. We can select any operator instead of '=' to close the popup calculator. The options are,
-Calcdigit0...Calcdigit9,
-CalcOperatorNone,
-CalcOperatorMultiply,
-CalcOperatorPlus,
-CalcOperatorMinus,
-CalcOperatorDivide,
-CalcOperatorPercent,
-CalcOperatorEquals (default),
-CalcOperatorSqrt,
-CalcOperatorSign,
-CalcOperatorMemoryClear,
-CalcOperatorMemoryRecall,
-CalcOperatorMemoryStore,
-CalcOperatorMemoryPlus,
-CalcSpecialClear,
-CalcSpecialClearEntry,
-CalcSpecialDecimal and
-CalcSpecialBackspace.</td></tr>
+Calcdigit0...Calcdigit9,<br/>
+CalcOperatorNone,<br/>
+CalcOperatorMultiply,<br/>
+CalcOperatorPlus,<br/>
+CalcOperatorMinus,<br/>
+CalcOperatorDivide,<br/>
+CalcOperatorPercent,<br/>
+CalcOperatorEquals (default),<br/>
+CalcOperatorSqrt,<br/>
+CalcOperatorSign,<br/>
+CalcOperatorMemoryClear,<br/>
+CalcOperatorMemoryRecall,<br/>
+CalcOperatorMemoryStore,<br/>
+CalcOperatorMemoryPlus,<br/>
+CalcSpecialClear,<br/>
+CalcSpecialClearEntry,<br/>
+CalcSpecialDecimal and<br/>
+CalcSpecialBackspace.<br/></td></tr>
 </table>
 
 

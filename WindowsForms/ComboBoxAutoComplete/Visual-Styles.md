@@ -42,7 +42,7 @@ Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2
 
 
 
-> Note: The control supports all the three office color schemes.
+N> The control supports all the three office color schemes.
 
 ## Custom Colors
 

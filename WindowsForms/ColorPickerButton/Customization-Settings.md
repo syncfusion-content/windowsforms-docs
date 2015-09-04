@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Customization Settings
 
-ColorPickerButton displays the ColorUIControl as its dropdown. ColorPickerButton has properties to customize the ColorUIControl. Refer the User Guide for ColorUIControl. The size for the dropdown, i.e, ColorUIControl can be set using ColorUISize property.
+ColorPickerButton displays the ColorUIControl as its dropdown. ColorPickerButton has properties to customize the ColorUIControl. Refer the [User Guide](/windowsforms/colorui/overview) for ColorUIControl. The size for the dropdown, i.e, ColorUIControl can be set using ColorUISize property.
 
 
 {% highlight c# %}
@@ -77,6 +77,8 @@ Me.colorPickerButton1.SelectedAsText = True
 
 
 
- See Also
+ {% seealso %}
+[Color Groups](/windowsforms/colorui/color-groups),[Tab Text](/windowsforms/colorui/tab-text), [ColorUIControlAppearance](/windowsforms/colorui/coloruicontrol-appearance), [Runtime Settings of ColorUIControl](/windowsforms/colorui/runtime-settings).
+{% endseealso %}
  
- Color Groups,Tab Text, ColorUIControlAppearance, Runtime Settings of ColorUIControl.
+ 

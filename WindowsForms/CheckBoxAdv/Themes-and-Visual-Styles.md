@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses the themes and visual style settings that are supported by the CheckBoxAdv control.
 
-### Themes
+## Themes
 
 The CheckBoxAdv can be provided with a themed appearance using the below given property.
 
@@ -47,7 +47,7 @@ Me.checkBoxAdv1.ThemesEnabled = True
 ![](Overview_images/Overview_img623.jpeg)
 
 
-### Visual Styles
+## Visual Styles
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
 
@@ -128,4 +128,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Pink)
 
 A sample which demonstrates the Themes and Visual Styles of CheckBoxAdv is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

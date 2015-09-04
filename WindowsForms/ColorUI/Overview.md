@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Overview
 
-The Essential Tools ColorUIControl allows .NET developers to provide a standard user-interface which, is similar to the Visual Studio .NET color picker drop-down, for selecting colors in their Windows Forms applications. The ColorUIControl implements a palette type visual interface comprising of the System, Standard, Custom and UserColor color groups. The control can be used either as a regular control that is hosted within a parent container or as a drop-down. Refer ColorPickerButton to use ColorUIControl as drop down.
+The Essential Tools ColorUIControl allows .NET developers to provide a standard user-interface which, is similar to the Visual Studio .NET color picker drop-down, for selecting colors in their Windows Forms applications. The ColorUIControl implements a palette type visual interface comprising of the System, Standard, Custom and UserColor color groups. The control can be used either as a regular control that is hosted within a parent container or as a drop-down. Refer [ColorPickerButton](/windowsforms/colorpickerbutton/overview) to use ColorUIControl as drop down.
 
 ![](ColorUI_images/Overview_img225.jpeg) 
 
@@ -23,6 +23,7 @@ The ColorUIControl implements a palette type visual interface for selecting colo
 * CustomColors providing a customizable color palette.
 * UserColors providing different shades of user defined Colors 
 
-See also
+{% seealso %}
+[Creating ColorUIControl](/windowsforms/colorui/creating-coloruicontrol)
+{% endseealso %}
 
-Creating ColorUIControl

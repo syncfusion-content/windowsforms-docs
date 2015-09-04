@@ -19,9 +19,9 @@ Table 211: Property Table
 
 <table>
 <tr>
-<td>
-ComboDropDown Properties</td><td>
-Description</td></tr>
+<th>
+ComboDropDown Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
@@ -73,9 +73,9 @@ Me.comboDropDown1.MatchFirstCharacterOnly = False
 
 {% endhighlight %}
 
-### Banner Text Support
+## Banner Text Support
 
-We can set banner text for the ComboBoxDropDown control. Refer BannerTextProvider Component topic for more details.
+We can set banner text for the ComboBoxDropDown control. Refer [BannerTextProvider](/windowsforms/bannertextprovider/overview) Component topic for more details.
 
 ![](Overview_images/Overview_img285.jpeg) 
 

@@ -49,9 +49,9 @@ Table 13: Method Table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 CalcChildControlBounds</td><td>

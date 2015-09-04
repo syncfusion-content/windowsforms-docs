@@ -189,11 +189,11 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 
    ![](Overview_images/Overview_img291.jpeg) 
 
-   > Note: We can also suppress the dropdown event from firing by setting SuppressDropDownEvent property to true._
+   N> We can also suppress the dropdown event from firing by setting SuppressDropDownEvent property to true._
 
 We can also associate a GridList control with the ComboDropDown and make it interactive. A sample which demonstrates this feature is available in the below sample installation location.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 ## Popup Event
 

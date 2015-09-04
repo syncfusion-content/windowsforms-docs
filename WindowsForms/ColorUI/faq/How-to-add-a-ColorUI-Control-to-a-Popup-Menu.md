@@ -55,4 +55,4 @@ To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlCont
    {:prettyprint}
 
 
-> Note: You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event.
+N> You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event.

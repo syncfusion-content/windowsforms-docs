@@ -17,13 +17,13 @@ Table 316: Property Table
 
 <table>
 <tr>
-<td>
-{{ '**CurrencyTextBox Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**CurrencyTextBox Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ '_ExcludeFormatting and_' | markdownify }}{{ '_IncludeFormatting._' | markdownify }}</td></tr>
+Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ 'ExcludeFormatting and' | markdownify }}{{ 'IncludeFormatting.' | markdownify }}</td></tr>
 </table>
 
 
@@ -83,9 +83,9 @@ Table 317: Property Table
 
 <table>
 <tr>
-<td>
-{{ '**CurrencyTextBox Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**CurrencyTextBox Properties**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Culture</td><td>
@@ -97,7 +97,7 @@ Specifies whether the culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{ '_None,_' | markdownify }}{{ '_CurrentCulture (default),_' | markdownify }}{{ '_InstalledCulture,_ '| markdownify }}{{ '_UICulture._ '| markdownify }}</td></tr>
+It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify }}{{ 'CurrentCulture (default),' | markdownify }}{{ 'InstalledCulture, '| markdownify }}{{ 'UICulture. '| markdownify }}</td></tr>
 </table>
 
 

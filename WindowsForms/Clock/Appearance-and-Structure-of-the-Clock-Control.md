@@ -9,7 +9,7 @@ documentation: ug
 
 #  Appearance and Structure of the Clock Control
 
-### Color setting
+## Color setting
 
 Clock control allows you to customize its gradient back color, hands color, minute line color and border color.
 
@@ -58,7 +58,7 @@ Me.clock1.StartGradientBackColor
 ![](Overview_images/Overview_img95.png) 
 
 
-### Appearance setting
+## Appearance setting
 
 Clock control allows you to customize the thickness of the hands and minute line. It also allows you to enable or disable the AM/PM, borders, minute and second hand. The Clock control gives a transparent appearance.
 
@@ -128,7 +128,7 @@ Me.clock1.ShowSecondHand = False
 
 ![](Overview_images/Overview_img97.png) 
 
-### Transparent support
+## Transparent support
 
 Clock control supports transparent back ground.
 
@@ -154,7 +154,7 @@ Me.clock1.IsTransparent = True
 
 The Clock control usually displays the current time on the machine where it is hosted. To freeze the clock to display a fixed time, the Boolean property StopTimer can be used. Then, using the Clock control’s Now property, the desired time can be displayed or the default time will be displayed.
 
-_Table_ _681_: _Property Table_
+Table 681: Property Table
 
 <table>
 <tr>

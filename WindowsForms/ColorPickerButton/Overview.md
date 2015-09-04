@@ -13,6 +13,6 @@ The Essential Tools ColorPickerButton allows.NET developers to provide a standar
 ![](ColorPickerButton_images/Overview_img246.jpeg) 
 
 
-
-See also
-ColorUIControl
+{% seealso %}
+[ColorUI](/windowsforms/colorui/overview)
+{% endseealso %}

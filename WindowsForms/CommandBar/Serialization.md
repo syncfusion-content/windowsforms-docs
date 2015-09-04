@@ -24,9 +24,9 @@ Table 28: CommandBarController Property Table
 
 <table>
 <tr>
-<td>
-CommandBarController Property</td><td>
-Description</td></tr>
+<th>
+CommandBarController Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 PersistState</td><td>
@@ -35,7 +35,7 @@ Specifies whether the application's CommandBar state should be persisted.</td></
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -46,7 +46,7 @@ this.commandBarController1.PersistState = true;
 {% highlight vbnet %}
 
 
-[VB.NET]
+
 
 
 
@@ -89,7 +89,7 @@ The following step by step procedure helps you to save and load the layout state
    {:.prettyprint}
 
    ~~~ vbnet
-		[VB.NET]
+		
 
 
 
@@ -109,7 +109,7 @@ The following step by step procedure helps you to save and load the layout state
 4. Declare instances of RegistryKey and MemoryStream classes.
 
    ~~~ cs
-		[C#]
+		
 
 
 
@@ -278,7 +278,7 @@ The following step by step procedure helps you to save and load the layout state
    {:.prettyprint}
 
    ~~~ vbnet
-		   [VB.NET]
+		   
 
 
 

@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets the 3D border style for the control. The options are,* {{ '_RaisedOuter_' | markdownify }}* {{ '_RaisedInner_' | markdownify }}* {{ '_SunkenOuter_' | markdownify }}* {{ '_SunkenInner_' | markdownify }}* {{ '_Raised_' | markdownify }}* {{ '_Sunken_' | markdownify }}* {{ '_Etched_' | markdownify }}* {{ '_Flat_' | markdownify }}* {{ '_Adjust_'  | markdownify }}* {{ '_Bump_' | markdownify }}<br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
+Sets the 3D border style for the control. The options are,<ul><li>{{ 'RaisedOuter' | markdownify }}</li><li>{{ 'RaisedInner' | markdownify }}</li><li>{{ 'SunkenOuter' | markdownify }}</li><li>{{ 'SunkenInner' | markdownify }}</li><li>{{ 'Raised' | markdownify }}</li><li>{{ 'Sunken' | markdownify }}</li><li>{{ 'Etched' | markdownify }}</li><li>{{ 'Flat' | markdownify }}</li><li>{{ 'Adjust'  | markdownify }}</li><li>{{ 'Bump' | markdownify }}</li></ul><br>FlatStyle property should be set to Standard to effect this settings.</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
@@ -65,5 +65,8 @@ Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 
 
-> Note: ComboDropDown.Style property should be set to Default to effect the above settings. 
-See_ Themes and Styles _topic._
+N> ComboDropDown.Style property should be set to Default to effect the above settings. 
+
+{% seealso %}
+[Themes and Styles](/windowsforms/combodropdown/themes-and-styles)topic.
+{% endseealso %} 

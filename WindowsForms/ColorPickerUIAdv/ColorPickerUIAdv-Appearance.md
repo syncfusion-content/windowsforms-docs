@@ -33,9 +33,11 @@ Me.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 
 
- See Also
+{% seealso %}
+[Style Settings](#style-settings)
+{% endseealso %}
  
-Style Settings
+
 
 
 

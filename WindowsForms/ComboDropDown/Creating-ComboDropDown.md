@@ -41,9 +41,9 @@ The below steps will guide you with this.
 
 
 
-> Note: We can also include code to set up the interaction between the combo and the treeview control. Refer_ Setting Interaction between ComboDropDown and TreeView.
+N> We can also include code to set up the interaction between the combo and the treeview control. Refer_ Setting Interaction between ComboDropDown and TreeView.
 
-See also 
+
 
 ## Through Code
 
@@ -105,6 +105,5 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
    ~~~
    {:.pretty-print }
 
-> Note: Refer Setting Interaction between ComboDropDown and TreeView to set the interaction between the ComboDropDown and Treeview.
+N> Refer Setting Interaction between ComboDropDown and TreeView to set the interaction between the ComboDropDown and Treeview.
 
-See also

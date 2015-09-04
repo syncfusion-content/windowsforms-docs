@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ 'TopLeft,' | markdownify }}{{ 'TopCenter,' | markdownify }}{{ 'TopRight,' | markdownify }}{{ 'MiddleLeft,' | markdownify }}{{ 'MiddleCenter,' | markdownify }}{{ 'MiddleRight,' | markdownify }}{{ 'BottomLeft,' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ 'BottomRight.' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
 </table>
 
 
@@ -62,7 +62,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_'| markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{ 'TopLeft,' | markdownify }}{{ 'TopCenter,' | markdownify }}{{ 'TopRight,' | markdownify }}{{ 'MiddleLeft,' | markdownify }}{{ 'MiddleCenter,' | markdownify }}{{ 'MiddleRight,'| markdownify }}{{ 'BottomLeft,' | markdownify }}{{ 'BottomCenter and' | markdownify }}{{ 'BottomRight.' | markdownify }}</td></tr>
 </table>
 
 
@@ -86,8 +86,9 @@ Me.checkBoxAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 
 A sample which demonstrates the Text and CheckBox Alignment features of CheckBoxAdv is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
-See Also
+{% seealso %}
 
-Text Settings, CheckBoxAdv Settings
+[Text Settings](/WindowsForms/CheckBoxAdv/Text-Settings), [CheckBoxAdv Settings](/WindowsForms/CheckBoxAdv/CheckBoxAdv-Settings)
+{% endseealso %}

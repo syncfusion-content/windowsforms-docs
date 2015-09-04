@@ -25,7 +25,7 @@ Specifies whether the control will ignore the theme's background color and draw 
 <tr>
 <td>
 Style</td><td>
-Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,{{ '_Default,_' | markdownify }}{{ '_OfficeXP,_' | markdownify }}{{ '_Office2003,_' | markdownify }}{{ '_VS2005 and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,<ul><li>{{ 'Default,' | markdownify }}</li><li>{{ 'OfficeXP,' | markdownify }}</li><li>{{ 'Office2003,' | markdownify }}</li><li>{{ 'VS2005 and' | markdownify }}</li><li>{{ 'Office2007.' | markdownify }}</li></ul></td></tr>
 </table>
 
 
@@ -89,11 +89,11 @@ Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 {% endhighlight %}
 
-{ ![](Overview_images/Overview_img288.jpeg) | markdownify }
+![](Overview_images/Overview_img288.jpeg) 
 
 
 
-### Office Color Schemes
+## Office Color Schemes
 
 The ComboDropDown control supports blue, silver and black office colors scheme. It is set using Office2007ColorTheme property. Style property should be set to Office2007.
 
@@ -133,11 +133,11 @@ Me.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
 
 {% endhighlight %}
 
-{ ![](Overview_images/Overview_img289.jpeg) | markdownify }
+![](Overview_images/Overview_img289.jpeg) 
 
 
 
-### Custom Colors
+## Custom Colors
 
 We can also apply custom colors to the ComboDropDown control by setting Office2007ColorTheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 

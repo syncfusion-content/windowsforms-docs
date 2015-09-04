@@ -27,7 +27,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets / sets the check state of the CheckBox.It includes the below given options.{{ '_Unchecked,_' | markdownify }}{{ '_Checked and_' | markdownify }}{{ '_Indeterminate._' | markdownify }}</td></tr>
+Gets / sets the check state of the CheckBox.It includes the below given options.{{ 'Unchecked,' | markdownify }}{{ 'Checked and' | markdownify }}{{ 'Indeterminate.' | markdownify }}</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -62,11 +62,14 @@ Me.checkBoxAdv1.Checked = True
 ![](Overview_images/Overview_img611.jpeg)
 
 
-See Also
+{% seealso %}
 
-CheckBoxAdv Values, Image Settings
+[CheckBoxAdv Values](#checkboxadv-values), [Image Settings](/windowsforms/checkboxadv/image-settings)
 
-### CheckBoxAdv Values
+{% endseealso %}
+
+
+## CheckBoxAdv Values
 
 This section discusses how values can be associated with the various check states.
 
@@ -166,6 +169,7 @@ Me.checkBoxAdv1.BoolValue = True
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
+[CheckBoxAdv States](#checkboxadv-states),  [Image Settings](/windowsforms/checkboxadv/image-settings)
+{% endseealso %}
 
-CheckBoxAdv States, Image Settings

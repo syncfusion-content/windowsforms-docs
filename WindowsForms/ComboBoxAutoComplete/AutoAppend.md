@@ -84,9 +84,9 @@ Table 132: Methods Table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetAutoAppend</td><td>
@@ -121,9 +121,11 @@ autoappend1.SetAutoAppend(cmbBox,new AutoAppendInfo(true,"category name", al, 10
 autoappend1.SetAutoAppend(cmbBox,New AutoAppendInfo(True, "category name", al, 10)) ' al is an IList object
 {% endhighlight %}
 
- See Also
+ {% seealso %}
+[Adding New Entries Programmatically](#adding-new-entries-programmatically)
+{% endseealso %}
  
- Adding New Entries Programmatically
+ 
 
 ## Adding New Entries Programmatically
 

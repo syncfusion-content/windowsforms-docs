@@ -54,6 +54,7 @@ pcc.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done)
 End Sub
 {% endhighlight  %}
 
- See Also
+{% seealso %}
+[ How to add a ColorUI Control to a Popup Menu?](/windowsforms/colorui/faq/how-to-add-a-colorui-control-to-a-popup-menu)
+{% endseealso %}
  
- How to add a ColorUI Control to a Popup Menu?

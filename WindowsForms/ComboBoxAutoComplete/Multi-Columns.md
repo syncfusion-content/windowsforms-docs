@@ -16,6 +16,7 @@ We can use multiples columns in the ComboBoxAutoComplete control. In this case, 
 
 ![](ComboBoxAutoComplete-Images/Overview_img47.jpeg) 
 
-See also
+{% seealso %}
+[Data Source](/windowsforms/comboboxautocomplete/datasource)
+{% endseealso %}
  
-Data Source

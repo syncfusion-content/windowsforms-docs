@@ -15,9 +15,9 @@ Table 29: CommandBar Event Table
 
 <table>
 <tr>
-<td>
-CommandBar Event</td><td>
-Description</td></tr>
+<th>
+CommandBar Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 CommandBarDropDownClicked</td><td>
@@ -143,9 +143,9 @@ Table 30: Members Table
 
 <table>
 <tr>
-<td>
- Members</td><td>
-Description</td></tr>
+<th>
+ Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -458,9 +458,9 @@ Table 31: Members Table
 
 <table>
 <tr>
-<td>
- Members</td><td>
-Description</td></tr>
+<th>
+ Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 ClientSize</td><td>

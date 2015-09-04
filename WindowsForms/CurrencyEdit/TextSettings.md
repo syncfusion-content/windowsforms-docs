@@ -89,4 +89,4 @@ Me.currencyEdit1.TextBox.DecimalValue = New Decimal(New Integer() {40000, 0, 
 
 
 
-> Note: Enabling ButtonEdit.UseVisualStyle property and by setting visual style for control using ButtonEdit.ButtonStyle property, we can change the appearance of the calculator button.
+> Note: Enabling ButtonEdit.UseVisualStyle property and by setting visual style for control using ButtonEdit.ButtonStyle property, we can change the appearance of the calculator button.

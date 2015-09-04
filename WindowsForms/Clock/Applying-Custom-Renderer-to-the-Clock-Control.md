@@ -9,7 +9,7 @@ documentation: ug
 
 # Applying Custom Renderer to the Clock Control
 
-### Customization of rendering by overriding the method
+## Customization of rendering by overriding the method
 
 Clock control enables you to customize the Clock control by applying the custom renderer.
 

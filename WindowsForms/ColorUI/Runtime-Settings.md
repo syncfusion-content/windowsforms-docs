@@ -45,8 +45,10 @@ Me.colorUIControl1.SelectedColor = System.Drawing.Color.OrangeRed;
 
 
 
-> Note: These property settings can be reset using ResetSelectedColorGroup() and ResetSelectedColor() methods.
+N> These property settings can be reset using ResetSelectedColorGroup() and ResetSelectedColor() methods.
 
-See Also
+{% seealso %}
+[Color Groups](/windowsforms/colorui/color-groups)
+{% endseealso %}
 
-Color Groups
+

@@ -13,7 +13,7 @@ This section discusses the appearance and behavior settings of the CheckBoxAdv c
 
 ## Appearance Settings
 
-DrawFocusRectangle
+### DrawFocusRectangle
 
 The focus rectangle can be hidden or made visible using the below given property.
 
@@ -97,4 +97,4 @@ Me.checkBoxAdv1.Tristate= False
 
 A sample which demonstrates the ReadOnlyMode and Tristate properties of CheckBoxAdv is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

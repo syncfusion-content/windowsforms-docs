@@ -69,4 +69,4 @@ Me.colorUIControl1.CustomTabName = "Palettes"
 
 
 
-> Note: We can also change the font style of the tab text using ColorUIControl.Font property.
+N> We can also change the font style of the tab text using ColorUIControl.Font property.

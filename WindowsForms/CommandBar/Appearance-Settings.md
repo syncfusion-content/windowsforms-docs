@@ -277,6 +277,6 @@ Calculates the CommandBar's maximum length for the specified client width.</td><
 
 {% seealso %}
 
-Interactive Features, Themes And Visual Styles
+[Interactive Features](/WindowsForms/CommandBar/Interactive-Features), [Themes And Visual Styles](/WindowsForms/CommandBar/Themes-And-Visual-Styles)
 
 {% endseealso %}

@@ -45,9 +45,9 @@ Table 307: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Lines</td><td>
@@ -165,9 +165,9 @@ Table 308: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrencyNumberDigits</td><td>
@@ -211,9 +211,9 @@ Table 309: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrencyDecimalDigits</td><td>
@@ -311,9 +311,9 @@ Table 310: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 MaxValue</td><td>
@@ -357,9 +357,9 @@ Table 311: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 NullString</td><td>
@@ -399,9 +399,9 @@ Table 312: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Property</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrencySymbol</td><td>

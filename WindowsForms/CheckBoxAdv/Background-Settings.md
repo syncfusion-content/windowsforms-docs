@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the CheckBoxAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
+Sets the background style of the CheckBoxAdv.The options included are as follows.{{ 'HorizontalGradient,' | markdownify }}{{ 'VerticalGradient and' | markdownify }}{{ 'Default.' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -62,8 +62,8 @@ Me.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta
  ![](Overview_images/Overview_img616.jpeg)
 
 
-> Note: Gradient background cannot be applied to the CheckBoxAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
+N> Gradient background cannot be applied to the CheckBoxAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
 
 A sample which demonstrates the Background Settings of CheckBoxAdv is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

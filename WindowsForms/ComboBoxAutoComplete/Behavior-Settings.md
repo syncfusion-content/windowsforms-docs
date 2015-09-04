@@ -18,9 +18,9 @@ Table 130: Property Table
 
 <table>
 <tr>
-<td>
-ComboAutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+ComboAutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowNewText</td><td>
@@ -67,9 +67,9 @@ Table 131: Methods Table
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetSelectedItem</td><td>
@@ -103,7 +103,7 @@ Me.comboBoxAutoComplete1.SetSelectedItem("India")
 
 
 
-> Note: When DisplayMember is defined, you can assign DisplayMember column value as selected item in ComboBoxAutoComplete. When DisplayMember is not defined or single level data source is assigned to ComboBoxAutoComplete, zeroth index column value needs to be used as argument value of the function named “SetSelectedItem”
+N> When DisplayMember is defined, you can assign DisplayMember column value as selected item in ComboBoxAutoComplete. When DisplayMember is not defined or single level data source is assigned to ComboBoxAutoComplete, zeroth index column value needs to be used as argument value of the function named “SetSelectedItem”
 
 ## Refreshing the Columns 
 
@@ -115,6 +115,6 @@ When the datasource of the AutoComplete control is set to a valid datasource thr
 
 ## Banner Text Support
 
-We can set banner text for the ComboBoxAutoComplete control. Refer BannerTextProvider Component topic for more details.
+We can set banner text for the ComboBoxAutoComplete control. Refer [BannerTextProvider](/windowsforms/bannertextprovider/overview) Component topic for more details.
 
  ![](ComboBoxAutoComplete-Images/Overview_img46.jpeg)

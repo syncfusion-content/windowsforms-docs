@@ -50,7 +50,7 @@ StretchImage</td><td>
 Indicates whether the state images of the CheckBox are stretched.</td></tr>
 </table>
 
-> Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'.
+N> Before setting the images, make sure the ImageCheckBox property is set to 'True'.
 
 {% highlight c# %}
 
@@ -95,7 +95,7 @@ Me.checkBoxAdv1.StretchImage = False
 ![](Overview_images/Overview_img621.jpeg)
 
 
-### Images displayed during Mouse Hover
+## Images displayed during Mouse Hover
 
 Images can also be set when the mouse is hovered over the CheckBoxAdv control.
 

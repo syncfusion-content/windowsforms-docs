@@ -24,7 +24,7 @@ Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets border style for the control. The options are,{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D (default) and_'  | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Sets border style for the control. The options are,{{ 'FixedSingle,' | markdownify }}{{ 'Fixed3D (default) and'  | markdownify }}{{ 'None.' | markdownify }}</td></tr>
 </table>
 
 

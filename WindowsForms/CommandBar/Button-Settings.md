@@ -19,9 +19,9 @@ Table 10: Button Settings
 
 <table>
 <tr>
-<td>
-CommandBar Property</td><td>
-Description</td></tr>
+<th>
+CommandBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HideCloseButton</td><td>
@@ -72,9 +72,9 @@ Table 11: Button Settings - Methods
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetCloseButtonState</td><td>

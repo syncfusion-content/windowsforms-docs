@@ -21,9 +21,9 @@ Table 320: Members Table
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 ErrorMessage</td><td>

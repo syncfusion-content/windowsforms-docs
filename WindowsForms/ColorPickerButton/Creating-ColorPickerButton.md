@@ -78,6 +78,8 @@ It can be created programmatically as discussed below.
 
    {:.prettyprint}
    
- See Also
+ {% seealso %}
+[Appearance and Behavior Settings](/windowsforms/colorpickerbutton/customization-settings)
+{% endseealso %}
  
- Appearance and Behavior Settings
+ 

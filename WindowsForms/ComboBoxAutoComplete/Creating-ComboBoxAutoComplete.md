@@ -18,7 +18,7 @@ Implementing a simple ComboBoxAutoComplete can be done in the following ways.
  This tutorial illustrates the usage of the ComboBoxAutoComplete control without any external datasource.
 
 
-> Note : This is applicable only for VS2005.
+N> This is applicable only for VS2005.
 
 1. Drag-and-drop a ComboBoxAutoComplete control from the toolbox onto the form.
 
@@ -32,8 +32,8 @@ Implementing a simple ComboBoxAutoComplete can be done in the following ways.
 
 
 
-3. Specify the text completion behavior of the control using ComboBoxAutoComplete.AutoCompleteMode. The value of AutoCompleteMode should not be none in this case. See Source for AutoComplete Control to know the different AutoCompleteModes. 
-4. Set AutoCompleteSource to CustomSource as shown below. See  Source for AutoComplete Control to know the different AutoComplete sources.
+3. Specify the text completion behavior of the control using ComboBoxAutoComplete.AutoCompleteMode. The value of AutoCompleteMode should not be none in this case. See [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control) to know the different AutoCompleteModes. 
+4. Set AutoCompleteSource to CustomSource as shown below. See  [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control) to know the different AutoComplete sources.
 
     ![](ComboBoxAutoComplete-Images/Overview_img41.jpeg) 
 

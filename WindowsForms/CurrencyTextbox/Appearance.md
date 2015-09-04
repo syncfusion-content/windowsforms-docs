@@ -17,9 +17,9 @@ Table 313: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Property</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ThemesEnabled</td><td>
@@ -51,9 +51,9 @@ Table 314: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
@@ -109,9 +109,9 @@ Table 315: Property Table
 
 <table>
 <tr>
-<td>
-CurrencyTextBox Properties</td><td>
-Description</td></tr>
+<th>
+CurrencyTextBox Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 PositiveColor</td><td>

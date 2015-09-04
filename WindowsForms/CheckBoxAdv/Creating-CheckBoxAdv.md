@@ -28,11 +28,13 @@ The following steps illustrate how to create a CheckBoxAdv control through desig
 ![](Overview_images/Overview_img608.jpeg)
 
 
-See Also
+{% seealso %}
+[Through Code](#through-code)
+{% endseealso %}
 
-Through Code
 
-### Through Code
+
+## Through Code
 
 The CheckBoxAdv control can be created programmatically as detailed below:
 
@@ -123,6 +125,6 @@ Me.Controls.Add(Me.radioButtonAdv1)
 ![](Overview_images/Overview_img609.jpeg)
 
 
-See Also
-
-Through Designer
+{% seealso %}
+[Through Designer](#through-designer)
+{% endseealso %}

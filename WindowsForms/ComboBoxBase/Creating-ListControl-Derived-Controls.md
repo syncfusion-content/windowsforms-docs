@@ -23,9 +23,9 @@ Table 226: Class Table
 
 <table>
 <tr>
-<td>
-Collection Class</td><td>
-Use Within the List Box</td></tr>
+<th>
+Collection Class</th><th>
+Use Within the List Box</th></tr>
 <tr>
 <td>
 ListBox.ObjectCollection</td><td>

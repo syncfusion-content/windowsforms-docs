@@ -19,9 +19,9 @@ Table 20: CommandBar Property Table
 
 <table>
 <tr>
-<td>
-CommandBar Property</td><td>
-Description</td></tr>
+<th>
+CommandBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cursor</td><td>
@@ -56,9 +56,9 @@ Table 21: CommandBar Property Table
 
 <table>
 <tr>
-<td>
-CommandBar Property</td><td>
-Description</td></tr>
+<th>
+CommandBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 RowIndex</td><td>
@@ -100,9 +100,9 @@ Table 22: CommandBar Property Table
 
 <table>
 <tr>
-<td>
-CommandBar Property</td><td>
-Description</td></tr>
+<th>
+CommandBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Visible</td><td>
@@ -135,9 +135,9 @@ Table 23: CommandBarController Property Table
 
 <table>
 <tr>
-<td>
-CommandBarController Property</td><td>
-Description</td></tr>
+<th>
+CommandBarController Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 RightToLeft</td><td>

@@ -38,4 +38,4 @@ Me.colorPickerUIAdv1.AutomaticColor = System.Drawing.Color.OrangeRed
 
 
 
-> Note: Height of this Automatic button can be specified in ColorPickerUIAdv.ButtonHeight property. Default value is 23.
+N>  Height of this Automatic button can be specified in ColorPickerUIAdv.ButtonHeight property. Default value is 23.

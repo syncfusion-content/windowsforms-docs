@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboBoxBase
-description: comboboxbase 
+title: Overview
+description: Overview
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-#  ComboBoxBase
+#  Overview
 
 The flexible ComboBoxBase control is an alternative to the standard combo box control. It separates the edit portion from the drop-down list portion thereby making this architecture powerful and flexible. However, due to this separation, the object model of this control is different from that of the combo box. 
 
@@ -21,5 +21,8 @@ With the ComboBoxBase, you can plug in any ListControl-derived class as the list
 
 This version of ComboBoxBase does not support any kind of owner drawing to customize painting. Note however that you could still use a ListControl that supports owner drawing. 
 
+{% seealso %}
+[ComboBoxAdv](/windowsforms/comboboxadv)
+{% endseealso %}
 
 

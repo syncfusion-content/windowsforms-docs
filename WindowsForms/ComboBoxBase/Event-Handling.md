@@ -17,12 +17,12 @@ Table 227: Events Table
 
 <table>
 <tr>
-<td>
-Scenarios</td><td>
-SelectionChangedCommitted</td><td>
-SelectedValueChanged</td><td>
-SelectedIndexChanged</td><td>
-Validating/Validated</td></tr>
+<th>
+Scenarios</th><th>
+SelectionChangedCommitted</th><th>
+SelectedValueChanged</th><th>
+SelectedIndexChanged</th><th>
+Validating/Validated</th></tr>
 <tr>
 <td>
 TextArea-Change Selection by Keys</td><td>

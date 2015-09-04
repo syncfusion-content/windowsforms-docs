@@ -90,6 +90,3 @@ It can also be created programmatically as discussed below.
    ![](ColorUI_images/Overview_img227.jpeg)
 
 
-See also
-
-Concepts and Features
