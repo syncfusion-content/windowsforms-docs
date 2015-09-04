@@ -250,6 +250,3 @@ Me.Controls.Add(Me.ribbonControlAdv1)
 
 {% endhighlight %}
 
-Refer to:
-
-Appearance Setting

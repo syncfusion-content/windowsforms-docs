@@ -13,7 +13,7 @@ RibbonControlAdv allows to create TabGroups using the TabGroups property availab
 
 ## Creating TabGroup
 
-## Through Designer
+### Through Designer
 
 1. Clicking the TabGroup property will pop up a window like the one below and using this, number of groups can be added and customized using the Color, Name and Visible properties provided to the right of the window.
 
@@ -70,6 +70,7 @@ toolStripTabGroup3.Color = System.Drawing.Color.DarkBlue;
 toolStripTabGroup3.Name = "New Group";
 
 toolStripTabGroup3.Visible = true;
+
 
 {% endhighlight %}
 

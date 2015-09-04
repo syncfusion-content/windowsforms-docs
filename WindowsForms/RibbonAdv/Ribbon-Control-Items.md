@@ -567,7 +567,7 @@ Me.toolStripButton1.ToolTipText = "Open"
 
 {% seealso %}
 
-[ToolStripItems](/windowsforms/ribboncontroladv/ribbon-control-items#toolstripitems)
+[ToolStripItems](/windowsforms/ribbonadv/ribbon-control-items.html#toolstripitems)
 
 {% endseealso %}
 
@@ -1147,8 +1147,8 @@ A ribbon panel is automatically added when you add a ToolStripTabItem. ToolStrip
 ![](Ribbon-Control-Items_images/Ribbon-Control-Items_img29.jpeg)
 
 {% seealso %}
-
-[How to prevent the RibbonPanel of the RibbonControlAdv from collapsing](/windowsforms/ribboncontroladv/frequently-asked-questions/ribbon-panel/how-to-prevent-the-ribbonpanel-of-the-ribboncontro)
+                                                                          
+[How to prevent the RibbonPanel of the RibbonControlAdv from collapsing](/windowsforms/ribbonadv/faq/ribbon-panel/how-to-prevent-the-ribbonpanel-of-the-ribboncontro.html)
 
 {% endseealso %}
 
@@ -1525,7 +1525,7 @@ Me.toolStripTabItem1.Panel.Controls.Add(paraToolStrip)
 
 ![](ToolStripEx_images/ToolStripEx_img10.jpeg)
 
-#### ToolStripItems
+## ToolStripItems
 
 The following ToolStripItems can be added to a ToolStripEx through Designer, using Items Collection Editor.
 
@@ -4149,7 +4149,7 @@ Me.ribbonControlAdv1.CaptionMinHeight = 20
 
 {% seealso %}
 
-[Style Settings](style-settings)
+[Style Settings](#style-settings)
 
 [Appearance Settings](#appearance-settings)
 
@@ -4279,7 +4279,7 @@ End Sub
 
 {% seealso %}
 
-[ItemClicked Event](/windowsforms/ribboncontroladv/minitoolbar#itemclicked-event)
+[ItemClicked Event](/windowsforms/ribbonadv/minitoolbar#itemclicked-event)
 
 {% endseealso %}
 
@@ -4369,11 +4369,12 @@ Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 
 {% seealso %}
 
-[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribboncontroladv/frequently-asked-questions/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog)
 
-[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribboncontroladv/frequently-asked-questions/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo)
+[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog.html)
 
-[How to set the description on RibbonControlAdv](/windowsforms/ribboncontroladv/frequently-asked-questions/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol)
+[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo.html)
+
+[How to set the description on RibbonControlAdv](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol.html)
 
 {% endseealso %}
 
@@ -4456,17 +4457,17 @@ case ToolsResourceIdentifiers.CustomizationLabel:
 
 [Placing QAT](#placing-qat)
 
-[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribboncontroladv/frequently-asked-questions/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog)
+[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog.html)
 
-[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribboncontroladv/frequently-asked-questions/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo)
+[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo.html)
 
-[How to set the description on RibbonControlAdv](/windowsforms/ribboncontroladv/frequently-asked-questions/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol)
+[How to set the description on RibbonControlAdv](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol.html)
 
 {% endseealso %}
 
 
 
-### Placing QAT
+## Placing QAT
 
 #### DesignTime
 

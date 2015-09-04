@@ -74,7 +74,7 @@ The below images illustrates the controls that are added, before and after the s
 
 {% seealso %}
 
-[Visual Styles](/windowsforms/ribboncontroladv/scrollersframe#visual-styles)
+[Visual Styles](/windowsforms/ribbonadv/ScrollersFrame.html#visual-styles)
 
 {% endseealso %}
 
@@ -202,6 +202,6 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightSkyBlue)
 
 {% seealso %}
 
-[Adding Controls to the ScrollBar](/windowsforms/ribboncontroladv/scrollersframe#adding-controls-to-the-scrollbar)
+[Adding Controls to the ScrollBar](/windowsforms/ribbonadv/scrollersframe.html#adding-controls-to-the-scrollbar)
 
 {% endseealso %}

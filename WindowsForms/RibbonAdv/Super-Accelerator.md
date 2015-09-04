@@ -31,10 +31,9 @@ N> We can make the Accelerator feature to be active or inactive using SuperAccel
 
 {% seealso %}
 
-[How to get or set an accelerator key programmatically](/windowsforms/ribboncontroladv/frequently-asked-questions/super-accelerator/how-to-get-or-set-an-accelerator-key-programmatica)
+[How to get or set an accelerator key programmatically](/windowsforms/ribbonadv/faq/super-accelerator/how-to-get-or-set-an-accelerator-key-programmatica.html)
 
 {% endseealso %}
-
 
 
 ## Super Accelerator Appearance

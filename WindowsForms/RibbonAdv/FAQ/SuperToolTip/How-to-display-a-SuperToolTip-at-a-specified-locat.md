@@ -60,6 +60,6 @@ N> A SuperToolTip can be hidden by calling the SuperToolTip.Hide() method.
 
 {% seealso %}
 
-[PopupToolTip Event](/windowsforms/ribboncontroladv/supertooltip#popup-tooltip)
+[PopupToolTip Event](/windowsforms/ribbonadv/supertooltip.html#supertooltip-events)
 
 {% endseealso %}

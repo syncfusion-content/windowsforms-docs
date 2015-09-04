@@ -148,9 +148,9 @@ The options are,
 
 {% seealso %}
 
-[Creating a StatusStripEx](/windowsforms/ribboncontroladv/statusstripex#creating-a-statusstripex)
+[Creating a StatusStripEx](/windowsforms/ribbonadv/statusstripex.html#creating-a-statusstripex)
 
-[ColorSchemes for StatusStripEx](/windowsforms/ribboncontroladv/statusstripex#colorschemes-for-statusstripex)
+[ColorSchemes for StatusStripEx](/windowsforms/ribbonadv/statusstripex.html#colorschemes-for-statusstripex)
 
 {% endseealso %}
 
@@ -253,11 +253,11 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 {% seealso %}
 
-[Creating a StatusStripEx](/windowsforms/ribboncontroladv/statusstripex#creating-a-statusstripex)
+[Creating a StatusStripEx](/windowsforms/ribbonadv/statusstripex.html#creating-a-statusstripex)
 
-[Smart Tag Options](/windowsforms/ribboncontroladv/statusstripex#smart-tag-options)
+[Smart Tag Options](/windowsforms/ribbonadv/statusstripex.html#smart-tag-options)
 
-[SizingGrip Settings](/windowsforms/ribboncontroladv/statusstripex#sizinggrip-settings)
+[SizingGrip Settings](/windowsforms/ribbonadv/statusstripex.html#sizinggrip-settings)
 
 {% endseealso %}
 

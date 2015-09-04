@@ -547,6 +547,3 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Style.Office2007Bla
 
 
 
-> See Also
-> [Thumbnail Arrow Settings](/windowsforms/Tools/EditorsPackage/SplitContainerAdv/Thumbnail-Arrow-and-Grip-Settings)
-

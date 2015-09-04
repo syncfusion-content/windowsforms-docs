@@ -25,6 +25,6 @@ This section gives you an overview of the components of a RibbonControlAdv.
 
 {% seealso %}
 
-[Ribbon Control Items](/windowsforms/ribboncontroladv/ribbon-control-items)
+[Ribbon Control Items](/windowsforms/ribbonadv/ribbon-control-items.html)
 
 {% endseealso %}

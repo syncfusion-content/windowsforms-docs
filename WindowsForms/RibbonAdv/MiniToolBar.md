@@ -15,11 +15,7 @@ N> MiniToolBar control uses a ToolStripPanelItem to hold its options.
 
 ![](MiniToolBar_images/MiniToolBar_img2.jpeg) 
 
-{% seealso %}
 
-[Color Schemes in MiniToolBar](/windowsforms/ribboncontroladv/minitoolbar#color-schemes-in-minitoolbar)
-
-{% endseealso %}
 
 ## Color Schemes in MiniToolBar
 
@@ -54,7 +50,7 @@ Me.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorSch
 
 The sub topics under this section will guide you to create a MiniToolBar control, add controls to it and then associate it with a control. The topics are as follows.
 
-### Through Designer
+## Through Designer
 
 To add a MiniToolBar to the form, follow the below given steps.
 
@@ -90,14 +86,9 @@ A sample which demonstrates this features is available in the below sample insta
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
-{% seealso %}
-
-Creating MiniToolBar [Through Code](/windowsforms/ribboncontroladv/minitoolbar#through-code)
-
-{% endseealso %}
 
 
-### Through Code
+## Through Code
 
 This section guides you with the steps to add a MiniToolbar and associating with a RichTextBox control programmatically.
 
@@ -349,7 +340,7 @@ End Sub
 
 {% endhighlight %}
 
-### ItemClicked Event
+## ItemClicked Event
 
 This event is handled when a ToolStripItem has been added to the ToolStrip's Item collection.
 
