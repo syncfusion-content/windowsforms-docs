@@ -570,7 +570,7 @@ Data to PdfLightTable can also be set using the following three events:
 
 • QueryNextRow – Sets data to the PdfLightTable.
 
-> Note: These events acts only when the DataSource property is not set.
+N>  These events acts only when the DataSource property is not set.
 
 
 The following code sample illustrates this:
@@ -863,7 +863,7 @@ doc.Close(True)
 BorderOverlapStyle decides whether the cell border overlaps the neighboring cells or if it should be drawn inside the cell.
 
 
-> Note: This property applies for all cells in the PdfLightTable. You need to be careful when using overlapping borders, because they can produce bad results if they are not the same width and color.
+N>  This property applies for all cells in the PdfLightTable. You need to be careful when using overlapping borders, because they can produce bad results if they are not the same width and color.
 
 
 
@@ -1588,7 +1588,7 @@ doc.Close(True)
 
 {% endhighlight %}
 
-> Note: The unit of the Width property is always in points, and PDF units can be set only as points.  You can also use the PdfUnitConvertor class to convert the other units to points.
+N>  The unit of the Width property is always in points, and PDF units can be set only as points.  You can also use the PdfUnitConvertor class to convert the other units to points.
 
 #### Cell
 
@@ -2295,7 +2295,7 @@ This event is raised after the element is printed on the page.(Inherited from Pd
 
 ### Creating a grid
 
-> Note: You must add Syncfusion.Pdf.Grid namespace to work with PdfGrid.
+N>  You must add Syncfusion.Pdf.Grid namespace to work with PdfGrid.
 
 
 You can create a PdfGrid by simply specifying the new operator with a proper constructor. After assigning data source to the grid, it can be drawn using one of the overloads available in its Draw method.
@@ -2897,7 +2897,7 @@ pdfDocument.Close(True)
 
 This section explains you the direct options available to format PdfGrid. The PdfGridStyle class, accessible through Style property of PdfGrid provides options to format entire PdfGrid or parts of it. Formatting applicable for the entire PdfGrid using PdfGridStyle class is discussed here. Header, Row, Column, and Cell are discussed in the following sections.
 
-> Note: If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes the precedence. Following is an example for the exact order of precedence.
+N>  If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes the precedence. Following is an example for the exact order of precedence.
 
 
 
@@ -2967,7 +2967,7 @@ When you set AllowHorizontalOverflow to True, the columns exceeding the current 
 
 This property decides if the cell border should overlap with neighboring cells or to draw the interior of cell.
 
-> Note: This property applies for all cells in the PdfGrid. Be careful while using overlapping borders, because they may produce bad results if they are not of the same width and color
+N>  This property applies for all cells in the PdfGrid. Be careful while using overlapping borders, because they may produce bad results if they are not of the same width and color
 
 #### CellPadding
 
@@ -2986,7 +2986,7 @@ Header is a set of rows that can be optionally repeated on each page and has its
 * By using Add method of the PdfGridHeaderCollection class.
 
 
-> Note: When you bind data source to PdfGrid, column captions will be automatically added to header collection. It can be removed at any time using Clear method of PdfGridHeaderCollection.
+N>  When you bind data source to PdfGrid, column captions will be automatically added to header collection. It can be removed at any time using Clear method of PdfGridHeaderCollection.
 
 
 
@@ -3454,7 +3454,7 @@ pdfDocument.Close(True)
 
 
 
-> Note: Styles for each PdfGridRow in Header can be individually applied using PdfGridRowStyle class
+N>  Styles for each PdfGridRow in Header can be individually applied using PdfGridRowStyle class
 
 Refer to the following topics for more details:
 
@@ -3592,7 +3592,7 @@ pdfDocument.Close(True)
 
 
 
-> Note: The unit of the Height property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points.
+N>  The unit of the Height property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points.
 
 #### Row Span
 
@@ -3722,7 +3722,7 @@ pdfDocument.Close(True)
 The PdfGridRowStyle class, accessed through Style property of PdfGridRow class is used to specify the row style for the PdfGrid rows.
 
 
-> Note: If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes over the precedence. Following is an example for the exact order of precedence.
+N>  If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes over the precedence. Following is an example for the exact order of precedence.
 
 
 
@@ -4292,7 +4292,7 @@ pdfDocument.Close(True)
 
 
 
-> Note: The unit of the Width property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points.
+N>  The unit of the Width property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points.
 
 
 

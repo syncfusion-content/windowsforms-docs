@@ -71,7 +71,7 @@ Me.percentTextBox1.UseUserOverride = True
 
 
 
-> Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
+N> The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
 
 A sample which demonstrates the Culture Settings of the PercentTextBox control is available in the below sample installation path.
 

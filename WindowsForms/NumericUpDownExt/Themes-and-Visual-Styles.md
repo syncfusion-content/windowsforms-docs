@@ -115,8 +115,6 @@ Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
 {% highlight vbnet %}
 
-
-
 Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
@@ -129,7 +127,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-> Note: The ThemesEnabled property should be set to 'True' for the above settings to take effect.
+N> The ThemesEnabled property should be set to 'True' for the above settings to take effect.
 
 A sample which demonstrates the ThemesEnabled property and Office 2007 Visual Styles of TextBoxExt control is available in the below sample installation path.
 

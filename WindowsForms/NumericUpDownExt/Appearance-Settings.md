@@ -17,7 +17,7 @@ The Background settings of the NumericUpDownExt control are discussed below.
 
 The background color of the control can be set using the properties given below.
 
-Table 354 : Property Tabl
+Table 354 : Property Table
 
 <table>
 <tr>

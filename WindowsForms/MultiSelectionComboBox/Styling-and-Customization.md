@@ -263,4 +263,4 @@ Me.MultiSelectionComboBox1.DelimiterChar = ","
 
 {% endhighlight %}
 
-> Note: Delimiter character needs to be single special characters like “,” “.”_ 
+N> Delimiter character needs to be single special characters like “,” “.”_ 

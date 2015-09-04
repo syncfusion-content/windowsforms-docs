@@ -11,7 +11,7 @@ documentation: ug
 
 This section will give a step-by-step procedure to design a NumericUpDownExt control through designer and also through programmatical approach.
 
-Through Designer
+## Through Designer
 
 1. Create or open a Windows Forms project.
 2. Click on the NumericUpDownExt Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
@@ -28,7 +28,7 @@ Through Designer
 
 
 
-Through Programmatical Approach
+## Through Programmatical Approach
 
 1. Declare an instance of the NumericUpDownExt control.
 

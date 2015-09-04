@@ -18,7 +18,7 @@ This section discusses the following topics.
    * Image Overlaying - This feature can be only applicable for the first column or the tree structure. 
    * Plus Sign On ExpandMode 
 
->  _Note: The below properties can be applied only to the first column among the multiple columns._ 
+N> The below properties can be applied only to the first column among the multiple columns._ 
 
   * Checkbox and Option buttons - This section illustrates how to set the checkbox and option buttons for the tree nodes. 
   * Multiline Support - This section discusses about the multiline support to the nodes. 

@@ -12,7 +12,8 @@ documentation: ug
 The default forms can be changed into the Office2007 Form by following the below given steps.
 
 1. Open a Visual Studio project. 
-2. Add the assembly Syncfusion.Shared.Base in the reference. (Right click the References in the Solution explorer and click Add Reference to add the assembly. 
+2. Add the assembly Syncfusion.Shared.Base in the reference. (Right click the References in the Solution explorer and click Add Reference to  
+   add the assembly. 
 3. In the form's code Editor, add the namespace.
 
    ~~~ cs
@@ -45,4 +46,4 @@ The default forms can be changed into the Office2007 Form by following the below
    ~~~
    {:.prettyprint }
    
-![](Creating-Office2007Form_images/Creating-Office2007Form_img1.jpeg)
+   ![](Creating-Office2007Form_images/Creating-Office2007Form_img1.jpeg)

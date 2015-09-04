@@ -28,7 +28,7 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 		this.multiColumnComboBox1.Text = ""; 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -45,7 +45,7 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 		Me.multiColumnComboBox1.Text = ""
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. Populate the MultiColumnComboBox with data. Refer Databinding topic.
 
@@ -70,7 +70,7 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 		string str = "";
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -91,7 +91,7 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 		Private str As String = ""
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 3. In order to display the contents of the entire row in the GridListControl in the MultiColumnComboBox instead of just the DisplayMember, you can handle the MultiColumnComboBox's SelectedIndexChanged event as shown below.
 
@@ -140,7 +140,7 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -179,9 +179,9 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
-![](Overview_images/Overview_img332.png)
+   ![](Overview_images/Overview_img332.png)
 
 
 

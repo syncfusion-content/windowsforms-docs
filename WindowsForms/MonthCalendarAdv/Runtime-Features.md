@@ -67,7 +67,7 @@ When we drag and drop a MonthCalendarAdv control, current system date, i.e, toda
 
 
 
-> Note: It is possible to set color for the highlighted date. See_ Text Settings _topic for details.
+N> It is possible to set color for the highlighted date. See_ Text Settings _topic for details.
 
 ### Multiple Selection at run time
 
@@ -146,7 +146,7 @@ Dates should be specified in the DataTime Array List. Then the DateTime Array li
 
 
 
-> Note: Date range should be specified manually in the DateTime Array list.
+N> Date range should be specified manually in the DateTime Array list.
 
 
 ## Month Settings

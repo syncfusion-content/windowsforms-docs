@@ -33,7 +33,7 @@ Each set of methods accepts parameters specific to each primitive type (for exam
 * If brush is used, the primitive are filled. 
 
 
-> Note: You must add the Syncfusion.Pdf.Graphics namespace to work with graphic objects.
+N>  You must add the Syncfusion.Pdf.Graphics namespace to work with graphic objects.
 
 
 The following code example illustrates how to draw shapes.

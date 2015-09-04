@@ -20,7 +20,7 @@ To turn off showing multiple columns in a ListBox, follow the below given steps.
 		this.multiColumnBoundCombo.ListBox.MultiColumn = false;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -29,7 +29,7 @@ To turn off showing multiple columns in a ListBox, follow the below given steps.
 		Me.multiColumnBoundCombo.ListBox.MultiColumn = False
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. The dropdown will then simply show the first column in the bound datasource (the combo's DisplayMember property will not be consulted here). Make sure that in your SQL query, the desired column to be shown in the drop-down is the first one.
 

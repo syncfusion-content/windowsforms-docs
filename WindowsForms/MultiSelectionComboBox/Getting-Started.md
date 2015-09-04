@@ -42,7 +42,7 @@ To add MultiSelectionComboBox control to a Windows Forms application through cod
 		using Syncfusion.Windows.Forms;
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
   ~~~ vbnet
 
@@ -53,7 +53,7 @@ To add MultiSelectionComboBox control to a Windows Forms application through cod
 		Imports Syncfusion.Windows.Forms.Tools
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
 * Create an instance of the MultiSelectionComboBox control and add it to the Form.
 
@@ -70,7 +70,7 @@ To add MultiSelectionComboBox control to a Windows Forms application through cod
 		this.Controls.Add(this.MultiSelectionComboBox1);
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
   ~~~ vbnet
 
@@ -83,4 +83,4 @@ To add MultiSelectionComboBox control to a Windows Forms application through cod
 		Me.Controls.Add(Me.MultiSelectionComboBox1)
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }

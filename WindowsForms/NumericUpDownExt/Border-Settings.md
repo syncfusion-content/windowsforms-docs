@@ -86,7 +86,7 @@ ThemedBorder</td><td>
 Specifies whether or not you want themed border around the control when themes are enabled.The ThemesEnabled property must be set to 'True'.</td></tr>
 </table>
 
-> Note: Refer [Themes and Visual Styles](http://docs.syncfusion.com/windowsforms/tools/EditorsPackage/ButtonControls/ButtonAdv/Buttonadvappearnce#visualstyles ) topic to know about the ThemesEnabled property.
+N> Refer [Themes and Visual Styles](http://docs.syncfusion.com/windowsforms/tools/EditorsPackage/ButtonControls/ButtonAdv/Buttonadvappearnce#visualstyles ) topic to know about the ThemesEnabled property.
 
 {% highlight c# %}
 

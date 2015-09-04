@@ -15,7 +15,7 @@ Essential PDF Viewer can display PDF files, and print and export the pages as ra
 
 ### Properties
 
-_Table_ _2__: Properties Table_
+Table 2: Properties Table
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ bool</td></tr>
 ### Methods
 
 
-_Table_ _3__: Methods Table_
+Table 3: Methods Table
 
 <table>
 <tr>
@@ -58,58 +58,58 @@ Description</th><th>
 Parameters</th><th>
 Return Type</th></tr>
 <tr>
-<th>
-Load</th><th>
-This method is used to load the PDF to the viewer.</th><th>
-Overloads: (string filePath) (string filePath, string password)(PdfLoadedDocument doc)(Stream file)</th><th>
-N/A </th><th>
-Void </th></tr>
+<td>
+Load</td><td>
+tdis metdod is used to load tde PDF to tde viewer.</td><td>
+Overloads: (string filePatd) (string filePatd, string password)(PdfLoadedDocument doc)(Stream file)</td><td>
+N/A </td><td>
+Void </td></tr>
 <tr>
-<th>
-Unload</th><th>
-Unloads the loaded PDF.</th><th>
--</th><th>
-N/A</th><th>
-Void</th></tr>
+<td>
+Unload</td><td>
+Unloads tde loaded PDF.</td><td>
+-</td><td>
+N/A</td><td>
+Void</td></tr>
 <tr>
-<th>
-Dispose</th><th>
-Unloads the document and releases the resources used by the component.</th><th>
--</th><th>
-N/A</th><th>
-Void</th></tr>
+<td>
+Dispose</td><td>
+Unloads tde document and releases tde resources used by tde component.</td><td>
+-</td><td>
+N/A</td><td>
+Void</td></tr>
 <tr>
-<th>
-ExportAsImage</th><th>
-Converts the page to a raster image.</th><th>
-Overloads:(int pageIndex)(int startIndex, int endIndex)</th><th>
-N/A</th><th>
-Bitmap</th></tr>
+<td>
+ExportAsImage</td><td>
+Converts tde page to a raster image.</td><td>
+Overloads:(int pageIndex)(int startIndex, int endIndex)</td><td>
+N/A</td><td>
+Bitmap</td></tr>
 <tr>
-<th>
-FindText</th><th>
-Searches for the occurance of given input text in the PDF document and returns all the occurances and its location in all pages of the PDF document.</th><th>
-Overloads:(String text, out Dictionary<int, List<System.Drawing.RectangleF>> matchRect)</th><th>
-N/A</th><th>
-bool</th></tr>
+<td>
+FindText</td><td>
+Searches for tde occurance of given input text in tde PDF document and returns all tde occurances and its location in all pages of tde PDF document.</td><td>
+Overloads:(String text, out Dictionary<int, List<System.Drawing.RectangleF>> matchRect)</td><td>
+N/A</td><td>
+bool</td></tr>
 <tr>
-<th>
-GoToPageAtIndex</th><th>
-Navigates to the mentioned page</th><th>
-(int index)</th><th>
-N/A</th><th>
-Void</th></tr>
+<td>
+GoToPageAtIndex</td><td>
+Navigates to tde mentioned page</td><td>
+(int index)</td><td>
+N/A</td><td>
+Void</td></tr>
 <tr>
-<th>
-ZoomTo</th><th>
-Magnifies the document displayed to the specified percentage.</th><th>
-(int percentage)</th><th>
-N/A</th><th>
-Void</th></tr>
+<td>
+ZoomTo</td><td>
+Magnifies tde document displayed to tde specified percentage.</td><td>
+(int percentage)</td><td>
+N/A</td><td>
+Void</td></tr>
 </table>
 Events
 
-_Table_ _4__: Events Table_
+Table 4: Events Table
 
 <table>
 <tr>
@@ -119,25 +119,24 @@ Description</th><th>
 Event</th><th>
 Type</th></tr>
 <tr>
-<th>
-DocumentLoaded</th><th>
-This event is triggered after the PDF is successfully loaded.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+DocumentLoaded</td><td>
+tdis event is triggered after tde PDF is successfully loaded.</td><td>
+N/A</td><td>
+N/A</td></tr>
 <tr>
-<th>
-HyperLinkMouseHover</th><th>
-This event is triggered when the mouse pointer is placed over the URL.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+HyperLinkMouseHover</td><td>
+tdis event is triggered when tde mouse pointer is placed over tde URL.</td><td>
+N/A</td><td>
+N/A</td></tr>
 <tr>
-<th>
-HyperLinkMouseClicked</th><th>
-This event is triggered when the URL in the PDF document is clicked.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+HyperLinkMouseClicked</td><td>
+tdis event is triggered when tde URL in tde PDF document is clicked.</td><td>
+N/A</td><td>
+N/A</td></tr>
 </table>
-
 
 Viewing PDF Files 
 

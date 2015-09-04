@@ -233,7 +233,7 @@ End Sub
 
 {% endhighlight  %}
 
-> Note: *  In Fig 1, 18th is identified as the current cell and the tooltip is displayed. Also the background of the current cell is painted with LightSteelBlue.*  Edges of the 4th column cells (ColIndex=4), other than the current cell are set to "Raised" and hence shows a raised appearance. *  In Fig 2, user tries to query the cells outside the range, i.e inactive month dates and the respective tooltip is displayed.
+N> *  In Fig 1, 18th is identified as the current cell and the tooltip is displayed. Also the background of the current cell is painted with LightSteelBlue.*  Edges of the 4th column cells (ColIndex=4), other than the current cell are set to "Raised" and hence shows a raised appearance. *  In Fig 2, user tries to query the cells outside the range, i.e inactive month dates and the respective tooltip is displayed.
 
 ![](CalendarDateTime_images/Overview_img174.jpeg) 
 
@@ -245,9 +245,9 @@ End Sub
 
 
 
-> See Also
-> How to customize the appearance of the diagonal columns?
-
+{% seealso %}
+How to customize the appearance of the diagonal columns?
+{% endseealso %}
 
 ## DateHover Event
 

@@ -77,7 +77,7 @@ Me.percentTextBox1.ReadOnlyBackColor = System.Drawing.Color.Pink
 
 
 
-> Note: The ReadOnly property must be set to 'True' for the above setting to take effect.
+N> The ReadOnly property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
 

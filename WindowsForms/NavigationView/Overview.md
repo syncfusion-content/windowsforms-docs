@@ -11,7 +11,7 @@ documentation: ug
 
 Breadcrumbs or breadcrumb trails is a navigation technique used in user interfaces. Its enables users to keep track of their location within programs or documents. Breadcrumbs provides a trail for the user to get back to the starting / entry point of a folder. Essential Tools provides the NavigationView control that uses the Breadcrumbs technique to keep track of locations and folders.
 
-Features
+## Key Features
 
 The following are the features supported by the NavigationView control.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating NavigationView
-description: creating navigationView
+title: Creating-NavigationView
+description: creating navigationview
 platform: WindowsForms
 control: Navigation View 
 documentation: ug
@@ -37,14 +37,14 @@ To create a NavigationView control programmatically, follow the below given step
         using Syncfusion.Windows.Forms.Tools;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
         Imports Syncfusion.Windows.Forms.Tools
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. Create an instance of the NavigationView control and add Parent Bars and Child Bars to it.
 
@@ -109,7 +109,7 @@ To create a NavigationView control programmatically, follow the below given step
 		this.Controls.Add(navigationView4);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -166,8 +166,8 @@ To create a NavigationView control programmatically, follow the below given step
 		Me.Controls.Add(navigationView4)
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
-![](Getting-Started_images/Getting-Started_img3.jpeg) 
+   ![](Getting-Started_images/Getting-Started_img3.jpeg) 
 
 
