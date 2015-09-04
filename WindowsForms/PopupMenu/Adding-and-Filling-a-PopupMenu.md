@@ -43,13 +43,13 @@ In the Presence of the BarManager
 You can also reuse the ParentBarItem that you have already created for your menu structure using BarManager to fill the Popup menu. To do so, set the ParentBarItem property of the Popup menu to one of the available ParentBarItems. 
 
 ![](Adding-and-Filling-a-PopupMenu_images/Adding-and-Filling-a-PopupMenu_img5.jpeg)
-{:.image }
+
 
 
 In the presence of a BarManager, the user can just drag BarItems into the popup menu. Right-click on the popupMenu1 and select Customize to invoke this dialog and drag the required menu items.
 
 ![](Adding-and-Filling-a-PopupMenu_images/Adding-and-Filling-a-PopupMenu_img6.jpeg)
-{:.image }
+
 
 
 

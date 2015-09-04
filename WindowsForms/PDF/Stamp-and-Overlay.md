@@ -285,7 +285,7 @@ doc.Save("NewPDF.pdf")
 
 {% endhighlight  %}
 
-> Note: This template can be scaled, rotated, placed at different coordinates, and so on.
+N>  This template can be scaled, rotated, placed at different coordinates, and so on.
 
 ### Restrictions
 

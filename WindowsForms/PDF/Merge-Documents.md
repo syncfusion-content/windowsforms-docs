@@ -252,7 +252,7 @@ sample. First, parent PDF document needs to be created, loaded, and then import 
 document and dispose the loaded PDF document. Setting EnableMemoryOptimization to true also reduces the memory usage once the 
 document instance is closed.
 
-> Note: The PDF document (parent document) contents are still in run time memory. It releases the memory once the PDF document 
+N>  The PDF document (parent document) contents are still in run time memory. It releases the memory once the PDF document 
 instance is disposed.
 
 {% highlight c# %}

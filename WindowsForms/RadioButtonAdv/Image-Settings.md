@@ -46,7 +46,7 @@ StretchImage</td><td>
 Indicates whether the state images of the RadioButton are stretched.</td></tr>
 </table>
 
-> Note: Before setting the images, make sure the ImageCheckBox property is set to 'True'.
+N> Before setting the images, make sure the ImageCheckBox property is set to 'True'.
 
 {% highlight c# %}
 
@@ -65,6 +65,7 @@ this.radioButtonAdv1.DisabledImage = ((System.Drawing.Image)(resources.GetObject
 this.radioButtonAdv1.StretchImage = false;
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 
 

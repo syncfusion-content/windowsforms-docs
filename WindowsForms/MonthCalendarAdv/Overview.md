@@ -29,7 +29,3 @@ The following figure displays the sections of MonthCalendarAdv control.
 * Grid Line - Grid Line which separates the dates.
 * None Button - Lets you to withdraw focus from a day in the MonthCalendarAdv.
 * Today Button - Focus will be moved to today's date.
-
-See Also
-
-Concepts and Features

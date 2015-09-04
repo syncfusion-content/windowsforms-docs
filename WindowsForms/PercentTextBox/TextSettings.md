@@ -323,7 +323,7 @@ RightToLeft</td><td>
 Indicates whether the component should draw right-to-left for RTL languages. The default value is set to 'False'.</td></tr>
 </table>
 
-> Note: The RightToLeft property will be automatically set to 'True' for RTL languages.
+N> The RightToLeft property will be automatically set to 'True' for RTL languages.
 
 
 {% highlight C# %}
@@ -349,7 +349,7 @@ Me.percentTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 
 
-> Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value.
+N> The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value.
 
 ## OverflowIndicatorToolTipText
 

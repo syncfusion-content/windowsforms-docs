@@ -65,7 +65,7 @@ Themed appearance can be provided for the NumericUpDownExt control.
 
 The appearance of the control can be enhanced by applying the Office2007 visual style. It also comes with the new Office 20007 themes in the blue, silver and black colors.
 
-### Key Features
+## Key Features
 
 * Provides XP Themes look and feel.
 * Provides themes border.

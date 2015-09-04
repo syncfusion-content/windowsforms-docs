@@ -112,11 +112,9 @@ Me.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenI
 ![](CalendarDateTime_images/Overview_img209.png) 
 
 
-
-> See Also
-> 
-> Background Settings
-
+{% seealso %}
+Background Settings
+{% endseealso %}
 
 ## Background Settings
 
@@ -146,10 +144,9 @@ Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.St
 ![](CalendarDateTime_images/Overview_img138.jpeg) 
 
 
-
-> See Also
-> Border Styles, Visual Settings
-
+{% seealso %}
+Border Styles, Visual Settings
+{% endseealso %}
 
 ## Visual Settings
 
@@ -307,10 +304,10 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-> Note: Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See_ Scroll Buttons
+N> Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See_ Scroll Buttons
 
 
-
-> See Also
+{% seealso %}
  
-> Border Styles, Background Settings
+Border Styles, Background Settings
+{% endseealso %}

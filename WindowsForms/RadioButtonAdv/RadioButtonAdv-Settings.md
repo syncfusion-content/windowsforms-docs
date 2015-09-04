@@ -46,9 +46,11 @@ Me.radioButtonAdv1.Checked = True
  ![](Overview_images/Overview_img632.jpeg)
 
 
-See Also
+{%seealso%}
 
 RadioButtonAdv Values, Image Settings, RadioButtonAdv Events
+
+{%endseealso%}
 
 ## RadioButtonAdv Values
 
@@ -118,6 +120,8 @@ Me.radioButtonAdv1.IntValue = 5
 
 {% endhighlight %}
 
-See Also
+{%seealso%}
 
 RadioButtonAdv States, Image Settings
+
+{%endseealso%}

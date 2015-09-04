@@ -269,7 +269,7 @@ The following are the fields displayed:
 * Creation and current date
 * Other document information
 
-> Note: These fields are not always evaluated at the moment of constructing the document.
+N>  These fields are not always evaluated at the moment of constructing the document.
 
 
 

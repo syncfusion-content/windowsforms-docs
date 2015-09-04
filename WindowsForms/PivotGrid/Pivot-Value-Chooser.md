@@ -51,7 +51,7 @@ ObservableCollectionOf type PivotComputationInfo</td></tr>
 
 You can show or hide the Pivot Value Chooser by setting the ShowPivotValueChooser property to ‘true’ or ‘false’, respectively. The RowPivotsOnly mode is enabled in the Pivot Grid for this feature.
 
-> Note:_PossiblePivotCalculations_is a collection where you can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection is automatically generated from the PivotGrid control’s__ItemSource.
+N> PossiblePivotCalculations_is a collection where you can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection is automatically generated from the PivotGrid control’s__ItemSource.
 
 Showing the Pivot Value Chooser with Possible Pivot Calculations
 

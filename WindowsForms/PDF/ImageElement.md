@@ -37,7 +37,7 @@ PdfBitmap and PdfMetafile classes. There are static methods in PdfImage provi
 instance from different sources.
 
 
-> Note: Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce 
+N>  Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce 
 the file size.
 
 ### Working with Bitmap

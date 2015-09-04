@@ -136,7 +136,7 @@ RightImage</td><td>
 Sets the right image for the column.</td></tr>
 </table>
 
-> _Note: The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers._
+N> The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers._
 
 Painting the Column Area
 

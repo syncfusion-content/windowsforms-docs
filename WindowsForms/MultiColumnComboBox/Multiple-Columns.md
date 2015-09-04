@@ -39,8 +39,6 @@ Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
 
 {% endhighlight %}
 
-See Also
-
 
 
 

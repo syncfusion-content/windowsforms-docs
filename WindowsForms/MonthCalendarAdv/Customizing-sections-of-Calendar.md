@@ -621,8 +621,9 @@ The today's date for the below calendar image is "eighteenth".
 
 
 
-> See Also 
-> Day Settings, Text Settings
+{% seealso %} 
+Day Settings, Text Settings
+{% endseealso %}
 
 ## Text Settings
 
@@ -717,8 +718,9 @@ monthCalendarAdv1.NoneButton.Visible=False
 
 
 
-> See Also
-> ButtonAdv, Scroll Buttons
+{% seealso %}
+ButtonAdv, Scroll Buttons
+{% endseealso %}
 
 ## Scroll Buttons
 

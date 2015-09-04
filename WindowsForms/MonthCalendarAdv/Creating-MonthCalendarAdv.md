@@ -17,64 +17,48 @@ We can just drag and drop the MonthCalendarAdv onto the form through designer an
 To create the control programmatically, follow the below steps.
 
 1. Include the required namespace.
-
-
-
-
-
-             using Syncfusion.Windows.Forms.Tools;
-
-
-
-
-
-
-
-              Imports Syncfusion.Windows.Forms.Tools
+    
+   ~~~ cs
+   using Syncfusion.Windows.Forms.Tools;
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
+   Imports Syncfusion.Windows.Forms.Tools
+   ~~~
+   {:.prettyprint}
 
 
 
 2. Create an instance of the MonthCalendarAdv control. 
-
-
-
-
-
-					private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv monthCalendarAdv1;
-
-					this.monthCalendarAdv1=new MonthCalendarAdv();
-
-
-
-
-
-
-
-					Private monthCalendarAdv1 As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
-
-					Me.monthCalendarAdv1 = New MonthCalendarAdv()
+   
+   ~~~ cs
+   private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv monthCalendarAdv1;
+   this.monthCalendarAdv1=new MonthCalendarAdv();
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
+   Private monthCalendarAdv1 As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
+   Me.monthCalendarAdv1 = New MonthCalendarAdv()
+   ~~~
+   {:.prettyprint}
 
 
 
 3. Set the visual style for the control. Add that instance to the Form.
 
-
-
-
-
-					this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
-
-					this.Controls.Add(this.monthCalendarAdv1);
-
-
-
-
-
-
-
-					Me.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
-
-					Me.Controls.Add(Me.monthCalendarAdv1)
+   ~~~ cs
+   this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+   this.Controls.Add(this.monthCalendarAdv1);
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
+   Me.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
+   Me.Controls.Add(Me.monthCalendarAdv1)
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -82,7 +66,7 @@ To create the control programmatically, follow the below steps.
 
    ![](CalendarDateTime_images/Overview_img134.jpeg) 
 
-   {:.prettyprint}
+  
 
-See Also
+
 

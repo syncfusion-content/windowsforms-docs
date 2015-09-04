@@ -27,9 +27,11 @@ The following steps illustrate how to create a RadioButtonAdv control through de
  ![](Overview_images/Overview_img630.jpeg) 
 
 
-See Also
+{%seealso%}
 
 Through Code
+
+{%endseealso%}
 
 ### Through Code
 
@@ -122,6 +124,8 @@ Me.Controls.Add(Me.radioButtonAdv1)
  ![](Overview_images/Overview_img631.jpeg)
 
 
-See Also
+{%seealso%}
 
 Through Designer
+
+{%endseealso%}
