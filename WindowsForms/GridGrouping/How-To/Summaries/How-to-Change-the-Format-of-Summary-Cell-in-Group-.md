@@ -3,7 +3,7 @@ layout: post
 title: How-to-Change-the-Format-of-Summary-Cell-in-Group-
 description: how to change the format of summary cell in group caption
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

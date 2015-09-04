@@ -3,7 +3,7 @@ layout: post
 title: How-to-group-a-column-programmatically
 description: how to group a column programmatically
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

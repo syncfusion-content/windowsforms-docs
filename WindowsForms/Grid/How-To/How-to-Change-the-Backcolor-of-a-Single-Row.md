@@ -3,7 +3,7 @@ layout: post
 title: How-to-Change-the-Backcolor-of-a-Single-Row
 description: how to change the backcolor of a single row
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

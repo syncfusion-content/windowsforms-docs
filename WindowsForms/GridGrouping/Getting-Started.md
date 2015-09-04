@@ -2,8 +2,8 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

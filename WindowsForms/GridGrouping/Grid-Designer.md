@@ -2,8 +2,8 @@
 layout: post
 title: Grid-Designer
 description: grid designer
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

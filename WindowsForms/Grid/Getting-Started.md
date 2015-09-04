@@ -2,8 +2,8 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -209,7 +209,7 @@ A sample of this feature is available in the following location:
 
 GridExcelConverter class enables you to export data from a Grid control or Grid Data Bound Grid into Excel. This control automatically copies the Grid's styles and formats to Excel. 
 
-N> For more details, refer to the following section:_ [Exporting the Grid Control or Grid Data Bound Grid To Excel](http://help.syncfusion.com/ug_94/User%20Interface/Windows%20Forms/Grid/default.htm?turl=Documents%2F3161exportingthegridcontrolorgriddataboundgridtoexcel.htm)
+N> For more details, refer to the following section:_ [Exporting the Grid Control or Grid Data Bound Grid To Excel](http://docs.syncfusion.com/windowsforms/grid/getting-started#excel-export)
 
 #### Sample 
 
@@ -291,13 +291,13 @@ Bool</td></tr>
 
 ![](Getting-Started_images/Getting-Started_img14.png)
 
-##### Sample Link
+#### Sample Link
 
 A sample is available in the following location:
 
 &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo
 
-##### Enable Filters on Desired Columns
+#### Enable Filters on Desired Columns
 
 The following code is used to enable filters in specific columns:
 
@@ -368,8 +368,11 @@ Following steps illustrate how to add Grid control to your application.
 3. Click OK to apply settings to the grid control.
 
 
+{% seealso %}
 
-See Also Through Code
+Through Code
+
+{% endseealso %} 
 
 ## Through Code
 
@@ -449,5 +452,9 @@ Me.Controls.Add(Me.gridControl1)
 
 {% endhighlight %}
 
-See Also Through Designer
+{% seealso %}
+
+Through Designer
+
+{% endseealso %} 
 

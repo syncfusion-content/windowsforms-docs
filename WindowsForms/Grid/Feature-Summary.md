@@ -2,8 +2,8 @@
 layout: post
 title: Feature-Summary
 description: feature summary
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 Grid control is a powerful control that is implemented by using a unique Styles Architecture. This grid control is similar to Microsoft Excel, and allows detailed customization of control down to the cell level. Multi-level Undo/Redo, shared scroll bar support, data/view separation, floating cells, more than 18 cell types and unmatched extensibility are unique features of the Grid control.
 
-![](Feature-Summary_images/Feature-Summary_img1.jpg) 
+![](Feature-Summary_images/Feature-Summary_img1.jpeg) 
 
 ## Cell Attributes
 

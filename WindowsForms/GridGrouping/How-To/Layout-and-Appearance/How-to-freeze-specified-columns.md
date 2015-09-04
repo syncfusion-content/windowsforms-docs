@@ -3,7 +3,7 @@ layout: post
 title: How-to-freeze-specified-columns
 description: how to freeze specified columns
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

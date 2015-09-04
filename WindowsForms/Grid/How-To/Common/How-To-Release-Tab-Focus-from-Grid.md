@@ -3,7 +3,7 @@ layout: post
 title: How-To-Release-Tab-Focus-from-Grid
 description: how to release tab focus from grid
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

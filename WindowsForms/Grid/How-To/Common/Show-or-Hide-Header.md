@@ -3,7 +3,7 @@ layout: post
 title: Show-or-Hide-Header
 description: show or hide header
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

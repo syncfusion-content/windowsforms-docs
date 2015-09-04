@@ -3,7 +3,7 @@ layout: post
 title: How-to-Set-the-Width-of-a-Column
 description: how to set the width of a column
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

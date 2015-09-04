@@ -3,7 +3,7 @@ layout: post
 title: How-to-disable-the-resizing-of-rows-and-columns
 description: how to disable the resizing of rows and columns
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

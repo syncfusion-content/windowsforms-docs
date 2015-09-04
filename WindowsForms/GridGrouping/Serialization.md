@@ -2,8 +2,8 @@
 layout: post
 title: Serialization
 description: serialization
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Support-for-Skin-Manager-in-Windows-Forms-Grid
 description: support for skin manager in windows forms grid 
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -45,7 +45,7 @@ Enum </td></tr>
 
 
 
-_Table 151__14__: Methods Table_ 
+_Table 151 14: Methods Table_ 
 
 <table>
 <tr>
@@ -61,7 +61,8 @@ Specifies the parent control and the theme to be applied.</td><td>
 Overloads:* (Control, String)* (Control,VisualTheme)</td><td>
 <br>Void</td></tr>
 </table>
-Sample Link
+
+#### Sample Link
 
 _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\SkinManager Demo_
 

@@ -2,8 +2,8 @@
 layout: post
 title: Events
 description: events
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

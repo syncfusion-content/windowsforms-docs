@@ -3,7 +3,7 @@ layout: post
 title: How-to-set-ListBoxSelectionModes
 description: how to set listboxselectionmodes
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

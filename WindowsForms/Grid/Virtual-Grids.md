@@ -2,8 +2,8 @@
 layout: post
 title: Virtual-Grids
 description: virtual grids
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -262,7 +262,7 @@ To add a Virtual Grid to your application:
 
 
 
-
+   ~~~ cs
 
 
 
@@ -270,9 +270,10 @@ To add a Virtual Grid to your application:
 
 				private ExternalData _extData;
 
+   ~~~				
+   {:.prettyprint}
 
-
-
+   ~~~ vbnet
 
 
 
@@ -280,12 +281,13 @@ To add a Virtual Grid to your application:
 
 				Private _extData as ExternalData
 
-
+   ~~~				
+   {:.prettyprint}
 
 3. Then in your Form1_Load handler, add the following code to initialize the external data source and hook up the Grid control events so that the grid can use external data source to get data in demand. The events of interest are GridControl.QueryRowCount, GridControl.QueryColCount and GridControl.QueryCellInfo. The call to ResetVolatileData tells the grid that it needs to reset properties like RowCount and ColCount the next time they are needed. This will allow the event handlers to set these values.
 
 
-
+   ~~~ cs
 
 
 
@@ -318,7 +320,10 @@ To add a Virtual Grid to your application:
 
 
 
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 
 
 
@@ -350,7 +355,7 @@ To add a Virtual Grid to your application:
 
 					End Sub
 
-					
+   ~~~				
    {:.prettyprint}
    
 ### Style Properties
@@ -434,11 +439,11 @@ To retrieve data for the Virtual Grid from the external data source,
 
 1. Add event handlers for QueryRowCount and QueryColCount events. Use the following code in your event handlers.
 
-				GridQueryRowCount and GridQueryColCount provide the number of rows and columns from the external data source. Thus, the implementation code will access public properties of our external data object to get these values.
+   GridQueryRowCount and GridQueryColCount provide the number of rows and columns from the external data source. Thus, the implementation code will access public properties of our external data object to get these values.
 
 
 
-
+   ~~~ cs
 
 
 
@@ -467,9 +472,10 @@ To retrieve data for the Virtual Grid from the external data source,
 					e.Handled = true;
 
 				}
+   ~~~
+   {:.prettyprint}
 
-
-
+   ~~~ vbnet
 
 
 
@@ -496,13 +502,14 @@ To retrieve data for the Virtual Grid from the external data source,
 
 				End Sub
 
-
+   ~~~
+   {:.prettyprint}
 
 2. Add QueryCellInfo event handler.
 3. GridQueryCellInfo is the event handler where the grid expects external data source to provide cell values that are in demand. Here is how it can be implemented with external data source. Recall that row 0 and column 0 are usually the header columns in a grid. In the GridQueryCellInfo, do not provide these values and use the default headers. If you need to provide special header values, you can do so.
 
 
-
+   ~~~ cs
 
 
 
@@ -525,10 +532,11 @@ To retrieve data for the Virtual Grid from the external data source,
 
 
 
+   ~~~				
+   {:.prettyprint}
 
 
-
-
+   ~~~ vbnet
 				Private Sub GridQueryCellInfo(ByVal sender As Object, ByVal e _As GridQueryCellInfoEventArgs)
 
 				If ((e.RowIndex > 0) AndAlso (e.ColIndex > 0)) Then
@@ -543,7 +551,8 @@ To retrieve data for the Virtual Grid from the external data source,
 
 				Notice that all the three handlers set Handled property on EventArgs when a value is provided. This informs the grid that no further processing is needed. Do not forget this or you will lose some of the benefits of using a virtual grid. 
 
-
+   ~~~
+   {:.prettyprint}
 
 4. Compile and run the project. You will see something similar to the screen shot below. The point is that the grid itself does not hold any data. All the information is provided on demand through the three events that you have added.
 
@@ -1277,7 +1286,7 @@ Pivot Grid control is built on the foundation of the Grid control. It comprises 
 
  Pivot Grid provides UI that allows you to specify the rows and columns in the pivot table through drag-and-drop operations. The visual aspects of the control are saved in an Appearance object. The control supports Office 2003 and Office 2007 styles.
 
-Calculations are done through Grouping Engine, which is a part of Essential Grouping. The default calculation is _Summation_, but there exists an option to change calculation type to _Average_, _Median_, _Percentiles_, _Variances_, _Standard Deviations_, etc. You can also provide "custom" calculations through the grouping engine.
+Calculations are done through Grouping Engine, which is a part of Essential Grouping. The default calculation is Summation, but there exists an option to change calculation type to Average, Median, Percentiles, Variances, Standard Deviations, etc. You can also provide "custom" calculations through the grouping engine.
 
 ### Features
 
@@ -1347,9 +1356,9 @@ pivotGridControl1.ResetSchema();
 
 
 
-
+{% highlight c# %}
 pivotGridControl1.SetAppearance(new PivotGridLibrary.PivotAppearance(pivotGridControl2));
-
+{% endhighlight  %}
 Here is a brief explanation on some of the important properties implemented in the Pivot Grid.
 
 * AllString - This will get the string values that appear in the dropdown filter, when all the filter values get selected.
@@ -1627,13 +1636,12 @@ The following image shows the printed output of the pivot grid:
 
 ![C:/Users/athirams/Desktop/print/page1.png](Virtual-Grids_images/Virtual-Grids_img9.png) 
 
- _Figure267: Pivot Grid in Print Preview_
 
 
 
 ### Sample Link
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows\Samples\Printing\Pivot Print Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\PivotGrid.Windows\Samples\Printing\Pivot Print Demo
 
 ### Appearance
 
@@ -1819,7 +1827,7 @@ Following is the step-by-step procedure to edit Grid control's cell styles using
 4. Exit editor after modifications are done. 
 
    N> The system prompts you to save the changes to the Grid control in the designer if exited without saving.
-   {:.prettyprint}
+   
    
 ### Grid Properties
 
@@ -2231,7 +2239,7 @@ Me.gridControl1.Properties.FixedLinesColor = Color.YellowGreen
 
 A sample demonstrating these properties is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Properties Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\Properties Demo
 
 ### Print Properties
 
@@ -2451,7 +2459,7 @@ Me.gridControl1.Model.Properties.CenterHorizontal = False
 
 A sample demonstrating these properties is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Print Grid Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Print Grid Demo
 
 ### Scroll Bar Properties
 
@@ -2581,7 +2589,7 @@ The following illustration shows how the Grid in "Figure 1" is transformed when 
 
 
 
-* HscrollBehavior - Specifies the behavior of the horizontal scroll bar. GridScrollbarMode enumeration provides the following options to control the scroll bar behavior: Automatic, AutoScroll, DetectIfShared, DisableAutoScroll, Disabled, Enabled, and Shared_._
+* HscrollBehavior - Specifies the behavior of the horizontal scroll bar. GridScrollbarMode enumeration provides the following options to control the scroll bar behavior: Automatic, AutoScroll, DetectIfShared, DisableAutoScroll, Disabled, Enabled, and Shared.
 
 The following code example can be used to set this property:
 
@@ -2865,7 +2873,7 @@ Me.gridControl1.VScroll = True
 {% endhighlight  %}
 A sample demonstrating these properties is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\ScrollBar Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\ScrollBar Demo
 
 ### Custom Drawing
 
@@ -3440,7 +3448,7 @@ Me.GridControl1.RowHeights(4) = 40
 
 GridControl.ColStyles and GridControl.RowStyles collections will allow you to programmatically set the default row or column style. This code will set backcolor and text color as well as set the font to bold for column two and row three.
 
->Note: RowStyles and ColStyles are not supported in DataBound Grid. For that grid, you will need to use  GridBoundColumn.StyleInfo property to set column styles and you will need to use grid.Model.QueryCellInfo event to set row styles.
+N> RowStyles and ColStyles are not supported in DataBound Grid. For that grid, you will need to use  GridBoundColumn.StyleInfo property to set column styles and you will need to use grid.Model.QueryCellInfo event to set row styles.
 
 
 
@@ -3582,7 +3590,7 @@ The following image shows the application of resize to fit operation to the firs
 
 N> The preceding image is the output of a demo that is available in the samples in the following installed location.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Resize To Fit Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Resize To Fit Demo
 
 
 
@@ -3817,11 +3825,12 @@ Go to first column in next row or last column in previous row when at end or beg
 GridWrapCellBehavior</td><td>
 Enum</td></tr>
 </table>
-Example
+
+#### Example
 
 The following code illustrates how to set EnterKeyBehavior property for Syncfusion Windows Forms Grid controls.
 
-For the Grid Control
+#### For the Grid Control
 
 
 
@@ -3845,7 +3854,7 @@ Me.gridControl1.EnterKeyBehavior = GridDirectionType.Top
 
 {% endhighlight  %}
 
-For GridGroupingControl
+#### For GridGroupingControl
 
 
 
@@ -3869,7 +3878,7 @@ Me.gridGroupingControl1.TableModel.Options.WrapCellBehavior = GridWrapCellBehavi
 
 {% endhighlight   %}
 
-For GridDataBoundGrid
+#### For GridDataBoundGrid
 
 
 {% highlight c#  %}
@@ -3899,7 +3908,7 @@ Me. gridDataBoundGrid1.Model.Options.WrapCellBehavior = GridWrapCellBehavior.Wra
 
 Samples for this feature are available in the following location:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Cell Formatting Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Cell Formatting Demo
 
 ### Covered Cells
 
@@ -4259,9 +4268,6 @@ Office2007Colors.ApplyManagedColors(Me, Color.PowderBlue)
 
 
 
-
-
-_Figure306: Custom Color of Tab Bar Splitter Control set to "PowderBlue"_
 
 ### PrepareViewStyleInfo Event
 
@@ -4673,7 +4679,7 @@ Multiple grid columns are scaled to fit the printed page.</td></tr>
 
 #### Sample Link
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing
 
 ### Adding Multi-Grid Printing to an Application
 
@@ -4975,42 +4981,44 @@ N> The data in the merged cells will be displayed on the first cell of the merge
 To use merge cells, you need to set Model.Options.MergeCellsMode and MergeCell properties of the cells to select the required merge behavior for cells.
 
 1. The GridMergeCellsMode enumeration specifies behavior of the merged cells in a grid. Following is the list of options under this enumeration:
-* None-
 
-Merge cells behavior is disabled.
+   * None-
 
-* OnDemandCalculation-
+   Merge cells behavior is disabled.
 
-The number of cells to be merged are calculated before the merged cells are displayed and the results are saved. Floating cells will only be recalculated if the width or content of the cells change.
+   * OnDemandCalculation-
 
-* BeforeDisplayCalculation-
+   The number of cells to be merged are calculated before the merged cells are displayed and the results are saved. Floating cells will only be recalculated if the width or content of the cells change.
 
-The number of cells to be merged are always calculated before cells are displayed.
+   * BeforeDisplayCalculation-
 
-* MergeRowsInColumn-
+   The number of cells to be merged are always calculated before cells are displayed.
 
-Enables merging of neighboring cells among rows in the same column.
+   * MergeRowsInColumn-
 
-* MergeColumnsInRow-
+   Enables merging of neighboring cells among rows in the same column.
 
-Enables merging of neighboring cells among columns in the same row.
+   * MergeColumnsInRow-
 
-* SkipHiddenCells-
+   Enables merging of neighboring cells among columns in the same row.
 
-Skips hidden rows and columns while merging the cells. This means that the hidden rows or columns in the grid are not considered during the merge process.
+   * SkipHiddenCells-
+
+   Skips hidden rows and columns while merging the cells. This means that the hidden rows or columns in the grid are not considered during the merge process.
 
 2. GridMergeCellDirection enumeration specifies the merge behavior for an individual cell when merging cells feature has been enabled. Here is the list of options offered:
-* None-
 
-Merging cells is disabled.
+   * None-
 
-* ColumnsInRow-
+   Merging cells is disabled.
 
-Merges with neighboring columns in the same row.
+   * ColumnsInRow-
 
-* RowsInColumn-
+   Merges with neighboring columns in the same row.
 
-Merges with neighboring rows in the same column.
+   * RowsInColumn-
+
+   Merges with neighboring rows in the same column.
 
 The following code examples illustrate how to set the MergeCellsMode and MergeCell properties.
 
@@ -5058,9 +5066,9 @@ This section provides information on the real-time applications of Essential Gri
 
 ### Gaming Applications
 
-Essential Grid is used to implement gaming applications.
+Essential Grid is used to implement gaming application
 
-Example
+#### Example
 
 Let us consider the Tetris game application, which is implemented by using Essential Grid. This game application makes use of arrow keys to move the blocks and change the block shape. It also provides an option to display the next block.
 
@@ -5070,7 +5078,7 @@ Let us consider the Tetris game application, which is implemented by using Essen
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Essential Blocks Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Essential Blocks Demo
 
 ### MS Excel 2007-like UI
 
@@ -5084,17 +5092,17 @@ Essential Grid control provides support to implement Microsoft Excel 2007-like U
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo
 
 ### Grid Folder Browser
 
 Essential Grid can be used to develop a powerful TreeView control owing to its flexibility. The tree nodes can be created through custom TreeCell cell type. GridStaticCellModel class is inherited to create this cell type. The plus/minus buttons of the tree nodes are selected by using ImageIndex property. 
 
-Example
+#### Example
 
 Let us consider the Grid Folder Browser sample which is available under the following installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo
 
 This sample operates grid in virtual mode in order to populate the data dynamically on demand, i.e., when the tree is expanded. QueryCellInfo, QueryColCount and QueryRowCount events must be handled in order to implement virtual grid. These events provide basic information about the number of rows and columns and the values of the data.
 
@@ -5179,7 +5187,7 @@ Essential Grid supports Multiple Document Interface (MDI) by enabling users to w
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Pad Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Pad Demo
 
 ### Clipboard Support
 
@@ -5463,7 +5471,7 @@ Essential Grid control has an extremely high performance standard. It can handle
 
 Essential Grid supports frequent updates that occur in random cells across the grid while keeping CPU usage to a minimum level.
 
-Example:
+#### Example:
 
 In this example, a timer changes the cell in short intervals, inserts and removes rows. This example draws cell changes directly to the graphics context instead of performing an Invalidate. It also shows you text using GDI instead of GDI+ and how to optimize updates for inserting and removing rows. You can start multiple instances without slowing down your machine. You can confirm the same by viewing TaskManager CPU usage while the sample runs.
 
@@ -5475,13 +5483,13 @@ In this example, a timer changes the cell in short intervals, inserts and remove
 
 A sample demonstrating this feature is available under the following sample installation path:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo
 
 ### Data Handling
 
 Essential Grid control supports large amount of data without a performance hit.
 
-Example:
+#### Example:
 
 This example will step you through following three ways of populating an Essential Grid:
 
@@ -5495,7 +5503,7 @@ You can specify the size of the grid that is to be populated while running the s
 
    This technique loops through the cells and uses an indexer on the Grid control to set values.
 
-
+   ~~~ cs
 
 
 			for (int i = 0; i < this.numArrayRows; ++i)
@@ -5506,7 +5514,10 @@ You can specify the size of the grid that is to be populated while running the s
 
 
 
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 
 
 			For i As Integer = 0 To Me.numArrayRows - 1
@@ -5519,28 +5530,31 @@ You can specify the size of the grid that is to be populated while running the s
 
 			Next i
 
-
+   ~~~
+   {:.prettyprint}
 
 3. Populating Values
 4. PopulateValues method is used to move values from a given data source into the specified grid range. The first parameter specifies range of destination cells where data is to be copied and the second parameter specifies data source to the destination cells.
 
 
-
+   ~~~ cs
 
 
 
 
 				gridControl1.Model.PopulateValues(GridRangeInfo.Cells(top, left, bottom, right), this.intArray);
 
-
-
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 
 
 
 				gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right), Me.intArray)
 
-
+   ~~~
+   {:.prettyprint}
 
 5. Implementing Virtual Mode
 6. Three events need to be handled in order to implement a virtual mode. They perform the following actions:
@@ -5549,7 +5563,7 @@ You can specify the size of the grid that is to be populated while running the s
    * Pass value to a cell from a data source.
 
 
-
+   ~~~ cs
 
 
 				//Determines number of rows.      
@@ -5610,7 +5624,10 @@ You can specify the size of the grid that is to be populated while running the s
 
 
 
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 
 				'Determines number of rows.
 
@@ -5664,17 +5681,16 @@ You can specify the size of the grid that is to be populated while running the s
 
 				End Sub
 
-
+   ~~~
+   {:.prettyprint}
 
    ![](Virtual-Grids_images/Virtual-Grids_img79.jpeg)
 
 
-   {:.prettyprint}
-
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo
 
 ### Zooming options
 
@@ -5700,7 +5716,7 @@ The following screen shot shows a grid that is zoomed to the cell-level.
 
 
 
-Example
+#### Example
 
 This example implements zooming functionality for Essential Grid at cell-level. Follow the steps listed below:
 
@@ -5708,7 +5724,7 @@ This example implements zooming functionality for Essential Grid at cell-level. 
 
 
 
-
+   ~~~ cs
 
 				private void zoomGrid(float percent)
 
@@ -5748,7 +5764,10 @@ This example implements zooming functionality for Essential Grid at cell-level. 
 
 
 
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 
 
 
@@ -5792,7 +5811,8 @@ This example implements zooming functionality for Essential Grid at cell-level. 
 
 				End Sub
 
-
+   ~~~
+   {:.prettyprint}
 
    The preceding code sets the font and cell size using the percent parameter.
 
@@ -5802,7 +5822,7 @@ This example implements zooming functionality for Essential Grid at cell-level. 
    N> A PictureBox is a Microsoft’s .NET Control used to display an image.
 
 
-
+   ~~~ cs
 
 
 				//Code to show zoomed window.
@@ -5887,9 +5907,10 @@ This example implements zooming functionality for Essential Grid at cell-level. 
 
 				}
 
+   ~~~
+   {:.prettyprint}
 
-
-
+   ~~~ vbnet
 
 
 
@@ -5968,14 +5989,14 @@ This example implements zooming functionality for Essential Grid at cell-level. 
 					End If
 
 				End Sub
-
+   ~~~
    {:.prettyprint}
 
 Now when you click any cell, it displays a picture box over the cell showing cell content in a magnified manner.
 
 N> For more details on this feature, refer the following browser sample:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo
 
 ### Tile Image In Grid Cell 
 

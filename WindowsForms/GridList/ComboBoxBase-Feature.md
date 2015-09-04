@@ -2,8 +2,8 @@
 layout: post
 title: ComboBoxBase-Feature
 description: comboboxbase feature
-platform: windowsform
-control: GridListControl
+platform: windowsforms
+control: GridList
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: How-to-Suppress-KeyDown-Event
 description: how to suppress keydown event
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

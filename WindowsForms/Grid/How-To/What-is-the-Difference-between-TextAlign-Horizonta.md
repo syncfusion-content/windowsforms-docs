@@ -3,7 +3,7 @@ layout: post
 title: What-is-the-Difference-between-TextAlign-Horizonta
 description: what is the difference between textalign, horizontalalignment, and verticalalignment?
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

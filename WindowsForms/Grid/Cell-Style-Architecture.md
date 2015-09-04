@@ -2,8 +2,8 @@
 layout: post
 title: Cell-Style-Architecture
 description: cell style architecture
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -85,7 +85,7 @@ Picks a particular image from the ImageList property.</td></tr>
 </table>
 
 
-N> Refer to the GridStyleInfo topic in the Essential Grid Class Reference for a complete description of all the GridStyleInfo class members._
+N> Refer to the GridStyleInfo topic in the Essential Grid Class Reference for a complete description of all the GridStyleInfo class members.
 
 #### BackColor
 
@@ -853,7 +853,7 @@ Excel-like Cell Comment Tips can be included in a Grid by deriving the mouse con
 
 
 
-A sample demonstrating this feature is available under the following sample installation path. _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\ToolTip\Cell Comment Tip Demo_
+A sample demonstrating this feature is available under the following sample installation path. <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\ToolTip\Cell Comment Tip Demo
 
 ## Grid New Feature
 

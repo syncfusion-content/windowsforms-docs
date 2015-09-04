@@ -3,7 +3,7 @@ layout: post
 title: How-to-define-a-summary-row-in-the-grid
 description: how to define a summary row in the grid
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

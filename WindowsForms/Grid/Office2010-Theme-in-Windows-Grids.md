@@ -2,8 +2,8 @@
 layout: post
 title: Office2010-Theme-in-Windows-Grids
 description: office2010 theme in windows grids
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -31,7 +31,7 @@ To apply Office 2010 Visual Style to Grid:
 
 
 
-   Enabling Office2010 Scrollbars
+   ### Enabling Office2010 Scrollbars
 
    To enable Office 2010 Scrollbars:
 
@@ -40,7 +40,6 @@ To apply Office 2010 Visual Style to Grid:
 
    ![Description: C:/Users/christopherk/Pictures/presentation/Scrollbarproperty.png](Office2010-Theme-in-Windows-Grids_images/Office2010-Theme-in-Windows-Grids_img2.png) 
 
-   {:.prettyprint}
 
 ## Use Case Scenarios
 
@@ -64,7 +63,7 @@ Office2010Theme support for Windows Grids is useful for commercial applications 
 
 ### Properties
 
-_Table_ _11__38: Properties Table_
+_Table 11 38: Properties Table_
 
 <table>
 <tr>
@@ -141,18 +140,25 @@ To add Grid with Office 2010 theme to an application:
 
    The following sample code sets an Office2010 Black skin theme to Essential Grid Control.  
 
-
+   ~~~ cs
 
           this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Black; 
+		  
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
+   
            Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Black
 
-
+   ~~~
+   {:.prettyprint}
 
 3. Set GridOfficeScrollBars property to Office2010 to apply Office2010 like scroll bars in Essential Windows Grids.
 4. Set Office2010ScrollBarsColorScheme to apply the color scheme of the scroll bars.
 
 
-
+   ~~~ cs
 
 
 				this.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010;
@@ -160,13 +166,17 @@ To add Grid with Office 2010 theme to an application:
 				this.gridGroupingControl1.Office2010ScrollBarsColorScheme = Office2010ColorScheme.Black;
 
 
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 
 
 				Me.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010
 
 				Me.gridGroupingControl1.Office2010ScrollBarsColorScheme = Office2010ColorScheme.Black
 				
+   ~~~
    {:.prettyprint}
 
 ### Sample Link
@@ -181,10 +191,10 @@ To get the Schedule samples from the dashboard:
 
 
 
-To open sample project:
+### To open sample project:
 
 1. Navigate to the following sample location in your system:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\GridStyle Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Appearance\GridStyle Demo
 
 2. This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application language.

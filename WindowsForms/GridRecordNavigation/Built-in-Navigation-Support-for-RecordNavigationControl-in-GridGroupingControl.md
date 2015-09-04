@@ -2,8 +2,8 @@
 layout: post
 title: Built-in-Navigation-Support-for-RecordNavigationControl-in-GridGroupingControl
 description: built-in navigation support for recordnavigationcontrol in gridgroupingcontrol
-platform: windowsform
-control: GridRecordNavigationControl
+platform: windowsforms
+control: GridRecordNavigation
 documentation: ug
 ---
 

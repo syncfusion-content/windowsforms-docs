@@ -2,8 +2,8 @@
 layout: post
 title: Accessibility-Information
 description: accessibility information
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Technical Standards
 
-Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
+### Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
 
 Table 8: Voluntary Product Accessibility Template
 
@@ -119,9 +119,9 @@ Fully Supported</td><td>
 Essential Grid controls provide functionality that conform to the criteria.</td><td>
 Can be achieved through existing cell-related APIs.</td></tr>
 </table>
- Functional Performance Criteria
 
 
+### Functional Performance Criteria
 
 Table 9: Functional Performance Criteria
 

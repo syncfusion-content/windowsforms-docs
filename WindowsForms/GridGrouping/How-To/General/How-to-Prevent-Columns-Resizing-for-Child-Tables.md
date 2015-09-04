@@ -3,7 +3,7 @@ layout: post
 title: How-to-Prevent-Columns-Resizing-for-Child-Tables
 description: how to prevent columns resizing for child tables
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

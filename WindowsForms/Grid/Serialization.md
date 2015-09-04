@@ -2,8 +2,8 @@
 layout: post
 title: Serialization
 description: serialization
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -451,7 +451,8 @@ tdis will be triggered after exporting grid to PDF.</td><td>
 event </td><td>
 N/A </td></tr>
 </table>
- Sample Link
+ 
+#### Sample Link
 
 A demo of this feature is available in the following location: 
 
@@ -548,7 +549,8 @@ Grid control supports three different types of serialization techniques namely:
 * SOAP - Helps convert the grid schema information to SOAP format.
 * Binary - Helps convert the grid schema information to binary format.
 * XML - Helps convert the grid schema information to XML format.
-* SOAP
+
+### SOAP
 
 
 
@@ -596,7 +598,7 @@ Me.gridControl1.Refresh()
 
 {% endhighlight   %}
 
-* Binary
+### Binary
 
 
 
@@ -640,7 +642,8 @@ Me.gridControl1.Model = GridModel.LoadBinary(dlg.FileName)
 Me.gridControl1.Refresh()
 {% endhighlight   %}
 
-* XML
+### XML
+
 * Following code example illustrates serialization of grid schema information by using XML technique.
 
 
@@ -729,5 +732,5 @@ Me.gridControl1.Refresh()
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Serialization\Serialize Grid Control Demo_
+<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Serialization\Serialize Grid Control Demo
 

@@ -2,8 +2,8 @@
 layout: post
 title: Advanced-Features
 description: advanced features
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 
@@ -1327,11 +1327,11 @@ Loop
 
 2.Add another form, say FilterDialog to the project. This form will accept two filter conditions combined by a logical operator. Add a label to display the name of the filter column, two comboboxes to display the compare operator choices and two text boxes to accept the compare values, two radio buttons to determine logical combination of the filter conditions, and two buttons 'Ok' to pass the filter string to the parent grid and 'Cancel' to cancel the filter action. Here is a sample image of the form's designer.
 
-{ ![](Advanced-Features_images/Advanced-Features_img4.jpeg) | markdownify }
+![](Advanced-Features_images/Advanced-Features_img4.jpeg) 
 
 
 
- _Figure_ _481__: Creating FilterDialog Dialog Box_ 
+ _Figure481__: Creating FilterDialog Dialog Box_ 
 
 
 

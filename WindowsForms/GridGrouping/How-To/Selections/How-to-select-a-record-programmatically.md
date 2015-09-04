@@ -3,7 +3,7 @@ layout: post
 title: How-to-select-a-record-programmatically
 description: how to select a record programmatically
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

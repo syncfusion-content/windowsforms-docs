@@ -3,7 +3,7 @@ layout: post
 title: Grid-Model-Options
 description: grid model options 
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

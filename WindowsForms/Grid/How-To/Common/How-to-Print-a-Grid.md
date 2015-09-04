@@ -3,7 +3,7 @@ layout: post
 title: How-to-Print-a-Grid
 description: how to print a grid
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

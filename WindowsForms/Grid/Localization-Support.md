@@ -2,8 +2,8 @@
 layout: post
 title: Localization-Support
 description: localization support
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -19,9 +19,9 @@ With this feature, you can localize the options in the grid to display the conte
 
 To open sample project, navigate to the following sample location in your system:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo_
+    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo
 
-Adding Localization Support to Grid Controls
+### Adding Localization Support to Grid Controls
 
 To localize the content, create a class file and add ILocalizationProvider__interface to the class. Assign the required content to be displayed to DynamicFilterResourceIdentifiers_,_GroupingResourceIdentifiers_,_ and__GridResourceIdentifiers of GetLocalizedString method as illustrated in the following code.
 
@@ -100,7 +100,7 @@ To localize the content, create a class file and add ILocalizationProvider__inte
 
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String Implements ILocalizationProvider.GetLocalizedString
 
-Select Case name
+#### Select Case name
 
 Case DynamicFilterResourceIdentifiers.StartsWith
 
@@ -387,7 +387,6 @@ The following steps illustrate creating a Satellite Assembly:
    N> The name of the subfolder in Debug folder differs based on the culture of the application. For example, fr-FR is used for the French Culture, and so on.
 
 
-   {:.prettyprint}
    
 Similarly, you can create satellite assemblies for resource files of Windows Grid, Grid Grouping, and Pivot Grid controls. You can find the resource files for Windows Grid, Grid Grouping, and Pivot Grid controls at the following paths respectively:
 
@@ -395,17 +394,17 @@ Similarly, you can create satellite assemblies for resource files of Windows Gri
 
 * Grid
 
-_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Windows\Samples\_
+    <Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Windows\Samples\
 
-_Localization Samples\Localization Demo\CS\Resources\SR.resources_
+    Localization Samples\Localization Demo\CS\Resources\SR.resources
 
 
 
 * Grid Grouping
 
-_<Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\_
+    <Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\
 
-_Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources_
+    Samples\Localization Samples\Localization Demo\CS\Resources\SR.resources
 
 
 

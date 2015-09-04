@@ -3,7 +3,7 @@ layout: post
 title: How-to-Move-Groups-Upward-or-Downward-Using-Custom
 description: how to move groups upward or downward using custom comparer
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Using-UndoRedo
 description: using undo/redo
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

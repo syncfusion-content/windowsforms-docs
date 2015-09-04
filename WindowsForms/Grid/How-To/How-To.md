@@ -3,7 +3,7 @@ layout: post
 title: How-To
 description: how to
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

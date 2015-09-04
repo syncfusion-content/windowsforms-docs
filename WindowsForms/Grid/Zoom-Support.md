@@ -2,8 +2,8 @@
 layout: post
 title: Zoom-Support
 description: zoom support
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -69,19 +69,19 @@ Constructor</td></tr>
 
 To open sample project, navigate to the following sample locations in your system:
 
-For GridControl:
+#### For GridControl:
 
 _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Zoom and Scroll\Zooming Demo_
 
 
 
-For GridDataBoundGrid:
+#### For GridDataBoundGrid:
 
 _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Zoom\Zooming Demo_
 
 
 
-For GridGroupingControl:
+#### For GridGroupingControl:
 
 _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Zooming\Zooming Demo_
 
@@ -89,7 +89,7 @@ _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Gr
 
 To enable zooming support for a control, you need to pass the control as a parameter to implement zooming functionality. Then, you need to define percentage value of zooming by using zoomGrid method. The following code examples illustrate how to zoom the entire grid of the GridControl, GridDataBoundGrid, and GridGrouping controls.
 
-For GridControl
+### For GridControl
 
 {% highlight c#  %}
 
@@ -113,7 +113,7 @@ Dim zoom As New ZoomGrid(Me.gridControl1)
 
 
 
-For GridDataBoundGrid Control
+### For GridDataBoundGrid Control
 
 
 {% highlight c#  %}
@@ -139,7 +139,7 @@ Dim zoom As New ZoomGrid(Me.gridDataBoundGrid1)
 
 
 
-For GridGrouping Control
+### For GridGrouping Control
 
 {% highlight c#  %}
 

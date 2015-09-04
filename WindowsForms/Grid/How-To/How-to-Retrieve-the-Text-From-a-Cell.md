@@ -3,7 +3,7 @@ layout: post
 title: How-to-Retrieve-the-Text-From-a-Cell
 description: how to retrieve the text from a cell
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

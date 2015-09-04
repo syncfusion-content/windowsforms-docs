@@ -3,7 +3,7 @@ layout: post
 title: How-to-get-the-selected-text-from-a-TextBox-cell
 description: how to get the selected text from a textbox cell?
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

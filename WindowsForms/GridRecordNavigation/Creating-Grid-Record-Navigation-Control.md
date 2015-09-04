@@ -2,8 +2,8 @@
 layout: post
 title: Creating-Grid-Record-Navigation-Control
 description: creating grid record navigation control
-platform: windowsform
-control: GridRecordNavigationControl
+platform: windowsforms
+control: GridRecordNavigation
 documentation: ug
 ---
 

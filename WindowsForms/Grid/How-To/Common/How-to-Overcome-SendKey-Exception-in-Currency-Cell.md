@@ -3,7 +3,7 @@ layout: post
 title: How-to-Overcome-SendKey-Exception-in-Currency-Cell
 description: how to overcome sendkey exception in currency cell
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

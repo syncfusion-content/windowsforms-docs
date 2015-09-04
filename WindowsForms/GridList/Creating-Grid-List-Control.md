@@ -2,8 +2,8 @@
 layout: post
 title: Creating-Grid-List-Control
 description: creating grid list control
-platform: windowsform
-control: GridListControl
+platform: windowsforms
+control: GridList
 documentation: ug
 ---
 

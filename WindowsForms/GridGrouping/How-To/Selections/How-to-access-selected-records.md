@@ -3,7 +3,7 @@ layout: post
 title: How-to-access-selected-records
 description: how to access selected records
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

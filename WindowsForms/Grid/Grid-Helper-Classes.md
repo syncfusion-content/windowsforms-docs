@@ -2,8 +2,8 @@
 layout: post
 title: Grid-Helper-Classes
 description: grid helper classes
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -127,10 +127,6 @@ Following screen shots illustrate different Button Edit cell types.
 
 
 ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img9.jpeg) 
-
-
-
-_Figure_ _559__: "Right" Button Edit Cell Type_
 
 
 
@@ -822,6 +818,3 @@ Following are screen shots illustrating the feature.
 
    ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img28.jpeg) 
 
-
-
-   {:.prettyprint}

@@ -2,8 +2,8 @@
 layout: post
 title: Export-Summary-as-Caption
 description: export summary as caption 
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

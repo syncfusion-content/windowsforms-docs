@@ -3,7 +3,7 @@ layout: post
 title: Or
 description: or
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

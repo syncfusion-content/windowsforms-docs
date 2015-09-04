@@ -3,7 +3,7 @@ layout: post
 title: How-to-apply-grouping-properties-for-TopLevelGroup
 description: how to apply grouping properties for toplevelgroups
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

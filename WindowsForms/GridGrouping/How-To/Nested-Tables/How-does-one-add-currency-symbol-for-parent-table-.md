@@ -3,7 +3,7 @@ layout: post
 title: How-does-one-add-currency-symbol-for-parent-table-
 description: how does one add currency symbol for parent table and child table
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

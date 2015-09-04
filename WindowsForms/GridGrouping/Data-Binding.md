@@ -2,8 +2,8 @@
 layout: post
 title: Data-Binding
 description: data binding
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: How-to-Place-a-Checkbox-in-a-Header-Cell
 description: how to place a checkbox in a header cell
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

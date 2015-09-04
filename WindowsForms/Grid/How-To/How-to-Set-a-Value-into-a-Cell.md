@@ -3,7 +3,7 @@ layout: post
 title: How-to-Set-a-Value-into-a-Cell
 description: how to set a value into a cell
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

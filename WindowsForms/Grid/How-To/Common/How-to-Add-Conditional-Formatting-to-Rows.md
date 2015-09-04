@@ -3,7 +3,7 @@ layout: post
 title: How-to-Add-Conditional-Formatting-to-Rows
 description: how to add conditional formatting to rows
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

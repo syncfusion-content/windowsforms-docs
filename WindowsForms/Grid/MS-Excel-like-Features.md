@@ -2,8 +2,8 @@
 layout: post
 title: MS-Excel-like-Features
 description: ms excel-like features
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

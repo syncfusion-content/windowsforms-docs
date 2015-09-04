@@ -3,7 +3,7 @@ layout: post
 title: How-to-achieve-Excel-like-Text-Alignment-in-Grid-Control
 description: how to achieve excel-like text alignment in grid control?
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

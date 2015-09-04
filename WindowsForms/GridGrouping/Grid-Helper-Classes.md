@@ -2,8 +2,8 @@
 layout: post
 title: Grid-Helper-Classes
 description: grid helper classes
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

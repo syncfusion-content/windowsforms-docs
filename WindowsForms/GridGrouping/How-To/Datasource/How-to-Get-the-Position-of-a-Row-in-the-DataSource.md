@@ -3,7 +3,7 @@ layout: post
 title: How-to-Get-the-Position-of-a-Row-in-the-DataSource
 description: how to get the position of a row in the datasource from the current record
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

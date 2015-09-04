@@ -3,7 +3,7 @@ layout: post
 title: How-to-add-Expression-columns
 description: how to add expression columns
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

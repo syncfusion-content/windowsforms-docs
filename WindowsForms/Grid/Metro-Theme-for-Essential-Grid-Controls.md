@@ -2,8 +2,8 @@
 layout: post
 title: Metro-Theme-for-Essential-Grid-Controls
 description: metro theme for essential grid controls
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: How-to-Change-the-Backcolor-of-a-Column
 description: how to change the backcolor of a column
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

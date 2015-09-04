@@ -2,8 +2,8 @@
 layout: post
 title: Grid-Layout
 description: grid layout
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: Adding-Special-Controls-to-Grid-Cells
 description: adding special controls to grid cells
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -435,7 +435,7 @@ N/A</td></tr>
 </table>
 
 
-Enabling AutoComplete in EditMode for Combo Box Celltype
+#### Enabling AutoComplete in EditMode for Combo Box Celltype
 
 
 
@@ -443,20 +443,18 @@ The following steps illustrate enabling AutoComplete in EditMode for a combo Box
 
 1. Declare the Celltype as Combo Box as given in the following code:
 
-
-
-
    ~~~ cs
-     this.gridControl1[RowIndex,ColIndex].CellType = GridCellTypeName.ComboBox;  
+     
+	    this.gridControl1[RowIndex,ColIndex].CellType = GridCellTypeName.ComboBox;  
+   
    ~~~
    {:.prettyprint}
 
 
 
-
-
-   ~~~ cs
-      Me.gridControl1(RowIndex,ColIndex).CellType = GridCellTypeName.ComboBox
+   ~~~ vbnet
+      
+	    Me.gridControl1(RowIndex,ColIndex).CellType = GridCellTypeName.ComboBox
 
    ~~~
    {:.prettyprint}
@@ -468,12 +466,15 @@ The following steps illustrate enabling AutoComplete in EditMode for a combo Box
    ~~~ cs
 
 		this.gridControl1[RowIndex,ColIndex].DropDownStyle = GridDropDownStyle.Editable;
+   
    ~~~
    {:.prettyprint}
 
 
    ~~~ vbnet
-      Me.gridControl1(RowIndex,ColIndex).DropDownStyle = GridDropDownStyle.Editable  
+        
+		Me.gridControl1(RowIndex,ColIndex).DropDownStyle = GridDropDownStyle.Editable  
+   
    ~~~
    {:.prettyprint}
 
@@ -483,17 +484,13 @@ The following steps illustrate enabling AutoComplete in EditMode for a combo Box
 
 
    ~~~ vbnet
-        Me.gridControl1(RowIndex,ColIndex).AutoCompleteInEditMode = GridComboSelectionOptions.AutoSuggest
-
-
-
-
-
-
+        
+		Me.gridControl1(RowIndex,ColIndex).AutoCompleteInEditMode = GridComboSelectionOptions.AutoSuggest
 
         Me.gridControl1(RowIndex,ColIndex).AutoCompleteInEditMode = GridComboSelectionOptions.AutoSuggest
    ~~~
    {:.prettyprint}
+
 ## Control
 
 You can place an arbitrary control in a grid cell through Control cell type. This cell type differs from most other cell types shipped with Essential Grid, which cannot be shared among several cells. Control cell type requires you to instantiate control object for each cell that uses this cell type, and set that object to___style__.__Control_. A different control object is required for every cell that makes use of Control cell type. The following code example illustrates how to set cell type to Control.

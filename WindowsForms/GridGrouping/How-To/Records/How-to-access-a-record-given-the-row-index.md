@@ -3,7 +3,7 @@ layout: post
 title: How-to-access-a-record-given-the-row-index
 description: how to access a record given the row index
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

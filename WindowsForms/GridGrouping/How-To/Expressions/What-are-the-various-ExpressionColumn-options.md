@@ -3,7 +3,7 @@ layout: post
 title: What-are-the-various-ExpressionColumn-options
 description: what are the various expressioncolumn options
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

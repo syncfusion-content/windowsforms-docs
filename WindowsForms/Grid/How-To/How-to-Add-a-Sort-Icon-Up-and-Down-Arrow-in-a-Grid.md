@@ -3,7 +3,7 @@ layout: post
 title: How-to-Add-a-Sort-Icon-Up-and-Down-Arrow-in-a-Grid
 description: how to add a sort icon (up and down arrow) in a gridcontrol's column header
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

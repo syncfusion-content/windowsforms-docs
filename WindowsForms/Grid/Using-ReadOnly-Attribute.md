@@ -2,8 +2,8 @@
 layout: post
 title: Using-ReadOnly-Attribute
 description: using readonly attribute
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

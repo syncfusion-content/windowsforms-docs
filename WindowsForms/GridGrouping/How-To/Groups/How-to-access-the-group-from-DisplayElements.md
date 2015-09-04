@@ -3,7 +3,7 @@ layout: post
 title: How-to-access-the-group-from-DisplayElements
 description: how to access the group from displayelements
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

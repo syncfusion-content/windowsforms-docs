@@ -3,7 +3,7 @@ layout: post
 title: How-to-Swap-Rows-and-Columns
 description: how to swap rows and columns
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

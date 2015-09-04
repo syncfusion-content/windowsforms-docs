@@ -3,7 +3,7 @@ layout: post
 title: How-to-Make-the-Grid-Behave-Like-a-List-Box
 description: how to make the grid behave like a list box
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

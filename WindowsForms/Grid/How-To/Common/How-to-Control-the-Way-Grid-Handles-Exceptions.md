@@ -3,7 +3,7 @@ layout: post
 title: How-to-Control-the-Way-Grid-Handles-Exceptions
 description: how to control the way grid handles exceptions
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

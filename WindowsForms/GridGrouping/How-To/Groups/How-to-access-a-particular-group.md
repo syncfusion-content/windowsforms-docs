@@ -3,7 +3,7 @@ layout: post
 title: How-to-access-a-particular-group
 description: how to access a particular group
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

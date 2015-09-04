@@ -2,8 +2,8 @@
 layout: post
 title: Style
 description: style
-platform: windowsform
-control: GridRecordNavigationControl
+platform: windowsforms
+control: GridRecordNavigation
 documentation: ug
 ---
 

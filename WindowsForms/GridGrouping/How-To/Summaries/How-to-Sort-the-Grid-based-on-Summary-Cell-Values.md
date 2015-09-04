@@ -3,7 +3,7 @@ layout: post
 title: How-to-Sort-the-Grid-based-on-Summary-Cell-Values
 description: how to sort the grid based on summary cell values 
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

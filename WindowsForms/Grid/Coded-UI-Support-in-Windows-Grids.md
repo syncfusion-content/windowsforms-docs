@@ -2,8 +2,8 @@
 layout: post
 title: Coded-UI-Support-in-Windows-Grids
 description: coded ui support in windows grids
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -137,7 +137,7 @@ To test the application with generated coded UI Tests:
 
 		End Sub
    ~~~
-   {:>prettyprint}
+   {:.prettyprint}
 2. Build and run the Grid application that was configured already. Right-click TestMethod body and then select Generate Code for Coded UI Test -> Use Coded UI Test Builder as shown in the following screenshot:
 
    ![](Coded-UI-Support-in-Windows-Grids_images/Coded-UI-Support-in-Windows-Grids_img3.png) 

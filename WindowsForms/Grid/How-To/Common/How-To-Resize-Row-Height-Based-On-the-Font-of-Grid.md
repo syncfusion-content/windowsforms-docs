@@ -3,7 +3,7 @@ layout: post
 title: How-To-Resize-Row-Height-Based-On-the-Font-of-Grid
 description: how to resize row height based on the font of grid cell content
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

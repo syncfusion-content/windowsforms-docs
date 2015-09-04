@@ -2,8 +2,8 @@
 layout: post
 title: Performance
 description: performance
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

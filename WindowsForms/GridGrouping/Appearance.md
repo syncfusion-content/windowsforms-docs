@@ -2,8 +2,8 @@
 layout: post
 title: Appearance
 description: appearance
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

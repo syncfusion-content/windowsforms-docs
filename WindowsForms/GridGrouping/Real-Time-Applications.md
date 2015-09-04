@@ -2,8 +2,8 @@
 layout: post
 title: Real-Time-Applications
 description: real time applications
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 

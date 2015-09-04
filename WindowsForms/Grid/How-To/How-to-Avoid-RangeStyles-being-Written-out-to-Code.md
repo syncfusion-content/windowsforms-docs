@@ -3,7 +3,7 @@ layout: post
 title: How-to-Avoid-RangeStyles-being-Written-out-to-Code
 description: how to avoid rangestyles being written out to code in a derived gridcontrol
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

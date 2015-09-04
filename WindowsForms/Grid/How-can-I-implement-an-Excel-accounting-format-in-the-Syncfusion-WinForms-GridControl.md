@@ -2,8 +2,8 @@
 layout: post
 title: How-can-I-implement-an-Excel-accounting-format-in-the-Syncfusion-WinForms-GridControl
 description: how can i implement an excel accounting format in the syncfusion winforms gridcontrol?
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

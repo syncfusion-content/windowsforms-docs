@@ -3,7 +3,7 @@ layout: post
 title: What-are-the-options-in-the-summary-columns
 description: what are the options in the summary columns
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

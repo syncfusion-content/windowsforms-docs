@@ -2,8 +2,8 @@
 layout: post
 title: Custom-Cell-Types
 description: custom cell types
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

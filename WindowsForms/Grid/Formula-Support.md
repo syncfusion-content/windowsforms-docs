@@ -2,8 +2,8 @@
 layout: post
 title: Formula-Support
 description: formula support
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

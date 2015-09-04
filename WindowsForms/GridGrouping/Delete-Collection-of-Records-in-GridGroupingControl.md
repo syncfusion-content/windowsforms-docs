@@ -2,8 +2,8 @@
 layout: post
 title: Delete Collection of Records in GridGroupingControl
 description: Delete Collection of Records in GridGroupingControl
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 # Delete Collection of Records in GridGroupingControl

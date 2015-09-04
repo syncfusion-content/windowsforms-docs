@@ -3,7 +3,7 @@ layout: post
 title: How-to-Set-the-Cell-Properties-for-a-Range-of-Cell
 description: how to set the cell properties for a range of cells
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

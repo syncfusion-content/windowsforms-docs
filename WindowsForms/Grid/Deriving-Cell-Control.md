@@ -2,8 +2,8 @@
 layout: post
 title: Deriving-Cell-Control
 description: deriving cell control
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -62,8 +62,9 @@ RepeaterUserControl</td><td>
 Shows how you can use a derived cell control in a grid to create a repeater control used to edit DataTables.</td></tr>
 </table>
 
+{% seealso %}
 
-See Also
+{% endseealso %}
 
 ## GridCellModelBase
 

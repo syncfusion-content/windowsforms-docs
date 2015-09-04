@@ -3,7 +3,7 @@ layout: post
 title: How-to-set-style-properties-of-a-nested-table
 description: how to set style properties of a nested table
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

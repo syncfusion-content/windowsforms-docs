@@ -3,7 +3,7 @@ layout: post
 title: Summaries
 description: summaries
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

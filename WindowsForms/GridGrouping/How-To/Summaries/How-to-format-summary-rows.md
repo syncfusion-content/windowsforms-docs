@@ -3,7 +3,7 @@ layout: post
 title: How-to-format-summary-rows
 description: how to format summary rows
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

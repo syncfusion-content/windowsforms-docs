@@ -2,8 +2,8 @@
 layout: post
 title: Elaborate-Structure-of-the-Control
 description: elaborate structure of the control
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 

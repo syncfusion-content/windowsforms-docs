@@ -2,8 +2,8 @@
 layout: post
 title: Built-in-Error-Provider-Support
 description: built-in error provider support
-platform: windowsform
-control: GridControl
+platform: windowsforms
+control: Grid
 documentation: ug
 ---
 
@@ -125,7 +125,7 @@ Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 
 ### Displaying Error Message Box
 
-You can show an error dialog using ShowErrorMessageBox__property and specify the content to be displayed using the ValidationErrorText__property. 
+You can show an error dialog using ShowErrorMessageBox property and specify the content to be displayed using the ValidationErrorText property. 
 
 The following code illustrates this:
 

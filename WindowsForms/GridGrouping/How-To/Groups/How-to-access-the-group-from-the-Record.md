@@ -3,7 +3,7 @@ layout: post
 title: How-to-access-the-group-from-the-Record
 description: how to access the group from the record
 platform: windowsforms
-control: How To
+control: GridGrouping
 documentation: ug
 ---
 

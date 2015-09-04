@@ -3,7 +3,7 @@ layout: post
 title: How-to-Change-the-Backcolor-of-a-Single-Cell
 description: how to change the backcolor of a single cell
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

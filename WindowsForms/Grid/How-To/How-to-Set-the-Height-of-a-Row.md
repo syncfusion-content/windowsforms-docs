@@ -3,7 +3,7 @@ layout: post
 title: How-to-Set-the-Height-of-a-Row
 description: how to set the height of a row
 platform: windowsforms
-control: Tools
+control: Grid
 documentation: ug
 ---
 

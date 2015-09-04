@@ -2,8 +2,8 @@
 layout: post
 title: Major-Control-Classes-Overview
 description: major control classes overview
-platform: windowsform
-control: GridGroupingControl
+platform: windowsforms
+control: GridGrouping
 documentation: ug
 ---
 
