@@ -2,7 +2,7 @@
 layout: post
 title: How-To-Read-an-XLS-File-Into-Essential-Calculate
 description: how to read an xls file into essential calculate?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

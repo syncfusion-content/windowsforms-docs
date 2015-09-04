@@ -2,7 +2,7 @@
 layout: post
 title: How to attach a context menu to the GridGrouping control
 description: how to attach a context menu to the gridgrouping control
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

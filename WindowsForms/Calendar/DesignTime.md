@@ -2,7 +2,7 @@
 layout: post
 title: DesignTime Features
 description: designtime features
-platform: windowsforms
+platform: WindowsForms
 control: Calendar 
 documentation: ug
 ---

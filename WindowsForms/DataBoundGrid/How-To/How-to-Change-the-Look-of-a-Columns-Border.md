@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Look-of-a-Columns-Border
 description: how to change the look of a column's border
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

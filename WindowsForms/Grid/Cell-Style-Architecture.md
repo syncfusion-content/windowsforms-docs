@@ -2,7 +2,7 @@
 layout: post
 title: Cell-Style-Architecture
 description: cell style architecture
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

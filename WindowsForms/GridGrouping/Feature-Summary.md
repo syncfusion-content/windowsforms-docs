@@ -2,7 +2,7 @@
 layout: post
 title: Feature-Summary
 description: feature summary
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

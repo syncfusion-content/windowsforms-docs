@@ -2,7 +2,7 @@
 layout: post
 title: How-to-group-a-column-programmatically
 description: how to group a column programmatically
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

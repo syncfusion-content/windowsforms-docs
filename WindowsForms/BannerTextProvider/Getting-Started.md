@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: Getting Started
-platform: windowsforms
+platform: WindowsForms
 control: BannerTextProviderComponent
 documentation: ug
 ---

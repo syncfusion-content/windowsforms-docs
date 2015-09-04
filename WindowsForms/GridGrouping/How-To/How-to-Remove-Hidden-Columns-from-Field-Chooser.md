@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Remove-Hidden-Columns-from-Field-Chooser
 description: how to remove hidden columns from field chooser
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-generate-error-messages-or-exceptions-while
 description: how to generate error messages or exceptions while performing string-related calculations?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-use-Spreadsheet-control-of-WPF-in-Windows-F
 description: how to use spreadsheet control of wpf in windows forms?
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

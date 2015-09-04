@@ -2,7 +2,7 @@
 layout: post
 title: Creating-Calculator-control
 description: creating calculator control
-platform: windowsforms
+platform: WindowsForms
 control: Calculator
 documentation: ug
 ---

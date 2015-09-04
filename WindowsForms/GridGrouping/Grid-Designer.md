@@ -2,7 +2,7 @@
 layout: post
 title: Grid-Designer
 description: grid designer
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

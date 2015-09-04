@@ -2,7 +2,7 @@
 layout: post
 title: How-to-browse-through-the-MDIChildren-in-the-MDI-container-after-enabling-TabbedMDIManager
 description: how to browse through the mdichildren in the mdicontainer after enabling tabbedmdimanager
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Filtering-Grid-Data-Bound-Grid
 description: filtering grid data bound grid
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

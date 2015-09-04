@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

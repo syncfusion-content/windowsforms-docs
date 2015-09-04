@@ -2,7 +2,7 @@
 layout: post
 title: Spacing
 description: Spacing
-platform: windowsforms
+platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---

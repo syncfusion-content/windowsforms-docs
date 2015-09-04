@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Control-Whether-OLE-Drag-and-Drop-is-Supported-in-the-grid
 description: how to control whether ole drag-and-drop is supported in the grid
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-change-the-backcolor-of-Active-and-Inactive-tabs
 description: how to change the backcolor of active and inactive tabs
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

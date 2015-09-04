@@ -2,7 +2,7 @@
 layout: post
 title: How-to-get-rowindex-given-the-record-index
 description: how to get rowindex given the record index
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

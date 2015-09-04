@@ -2,7 +2,7 @@
 layout: post
 title: Calculator-Events
 description: calculator events
-platform: windowsforms
+platform: WindowsForms
 control: Calculator
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How to display DateTimePickerAdv control programmatically?
 description: how to display datetimepickeradv control programmatically?
-platform: windowsforms
+platform: WindowsForms
 control: Calendar 
 documentation: ug
 ---

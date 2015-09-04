@@ -2,7 +2,7 @@
 layout: post
 title: Built-in-Error-Provider-Support
 description: built-in error provider support
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

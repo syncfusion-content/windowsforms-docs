@@ -2,7 +2,7 @@
 layout: post
 title: Enhanced-Visual-Styles-for-Syncfusion-Windows-Grids
 description: enhanced visual styles for syncfusion windows grids
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

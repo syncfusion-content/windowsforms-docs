@@ -2,7 +2,7 @@
 layout: post
 title: Localization-Support
 description: localization support
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

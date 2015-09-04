@@ -2,7 +2,7 @@
 layout: post
 title: Print-and-Print-Preview
 description: print and print preview
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

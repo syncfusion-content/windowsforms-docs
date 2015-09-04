@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-unfiltered-records
 description: how to access unfiltered records
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

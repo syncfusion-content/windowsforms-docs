@@ -2,7 +2,7 @@
 layout: post
 title: Support-for-Skin-Manager-in-Windows-Forms-Grid
 description: support for skin manager in windows forms grid 
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

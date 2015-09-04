@@ -2,7 +2,7 @@
 layout: post
 title: Position
 description: Position
-platform: windowsforms
+platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-all-DisplayElements-or-a-particular-
 description: how to access all displayelements or a particular displayelement in gridgrouping control
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Column-Header-Text
 description: how to change the column header text
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

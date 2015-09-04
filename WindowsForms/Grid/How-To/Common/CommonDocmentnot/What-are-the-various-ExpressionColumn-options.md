@@ -2,7 +2,7 @@
 layout: post
 title: What are the various ExpressionColumn options
 description: What are the various ExpressionColumn options
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

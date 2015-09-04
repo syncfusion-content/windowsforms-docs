@@ -2,7 +2,7 @@
 layout: post
 title: Data-Settings
 description: data settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

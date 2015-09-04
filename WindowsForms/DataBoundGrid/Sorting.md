@@ -2,7 +2,7 @@
 layout: post
 title: Sorting
 description: sorting
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

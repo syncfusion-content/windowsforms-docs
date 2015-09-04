@@ -2,7 +2,7 @@
 layout: post
 title: How-To-Add-Remove-And-Modify-the-Implementation-Of
 description: how to add, remove, and modify the implementation of functions in the function library in calcquickbase?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

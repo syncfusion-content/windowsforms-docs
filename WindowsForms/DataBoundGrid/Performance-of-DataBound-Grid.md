@@ -2,7 +2,7 @@
 layout: post
 title: Performance-of-DataBound-Grid
 description: performance of databound grid 
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

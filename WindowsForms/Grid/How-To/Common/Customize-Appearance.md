@@ -2,7 +2,7 @@
 layout: post
 title: Customize-Appearance
 description: customize appearance 
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Select-Collection-of-Records-In-GridGroupingControl
 description: select collection of records in gridgroupingcontrol
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

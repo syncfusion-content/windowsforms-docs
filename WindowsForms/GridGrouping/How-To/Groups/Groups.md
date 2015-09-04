@@ -2,7 +2,7 @@
 layout: post
 title: Groups
 description: groups
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

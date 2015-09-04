@@ -2,7 +2,7 @@
 layout: post
 title: Coded-UI-Support-in-Windows-Grids
 description: coded ui support in windows grids
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

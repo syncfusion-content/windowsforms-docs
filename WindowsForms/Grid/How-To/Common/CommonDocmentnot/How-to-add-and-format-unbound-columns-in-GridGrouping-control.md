@@ -2,7 +2,7 @@
 layout: post
 title: How to add and format unbound columns in GridGrouping control
 description: How to add and format unbound columns in GridGrouping control
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

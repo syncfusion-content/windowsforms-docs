@@ -2,7 +2,7 @@
 layout: post
 title: Card-View-Layout
 description: card view layout
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

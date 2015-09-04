@@ -2,7 +2,7 @@
 layout: post
 title: Common
 description: common
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

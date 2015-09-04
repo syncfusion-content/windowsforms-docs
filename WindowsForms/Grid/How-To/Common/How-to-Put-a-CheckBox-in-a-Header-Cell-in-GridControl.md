@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Put-a-CheckBox-in-a-Header-Cell-in-GridCont
 description: how to put a checkbox in a header cell in gridcontrol or griddataboundgrid
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

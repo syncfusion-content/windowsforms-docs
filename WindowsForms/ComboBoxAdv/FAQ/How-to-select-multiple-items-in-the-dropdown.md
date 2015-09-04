@@ -2,7 +2,7 @@
 layout: post
 title: How-to-select-multiple-items-in-the-dropdown
 description: how to select multiple items in the dropdown?
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Use-PushButton-in-a-Column-and-Catch-the-User-clicking-it
 description: how to use pushbutton in a column and catch the user clicking it
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

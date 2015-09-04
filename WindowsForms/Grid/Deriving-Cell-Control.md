@@ -2,7 +2,7 @@
 layout: post
 title: Deriving-Cell-Control
 description: deriving cell control
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

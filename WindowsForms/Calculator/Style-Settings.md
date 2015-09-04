@@ -2,7 +2,7 @@
 layout: post
 title: Style-Settings
 description: style settings
-platform: windowsforms
+platform: WindowsForms
 control: Calculator
 documentation: ug
 ---

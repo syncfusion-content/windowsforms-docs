@@ -2,7 +2,7 @@
 layout: post
 title: How to access the current record
 description: How to access the current record
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

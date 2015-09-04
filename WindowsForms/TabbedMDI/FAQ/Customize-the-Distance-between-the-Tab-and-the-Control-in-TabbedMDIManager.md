@@ -2,7 +2,7 @@
 layout: post
 title: Customize-the-Distance-between-the-Tab-and-the-Control-in-TabbedMDIManager
 description: customize the distance between the tab and the control in tabbedmdimanager
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

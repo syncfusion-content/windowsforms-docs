@@ -2,7 +2,7 @@
 layout: post
 title: How-to-QueryCellFormattedText-and-SaveCellFormattedText
 description: how to querycellformattedtext and savecellformattedtext
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

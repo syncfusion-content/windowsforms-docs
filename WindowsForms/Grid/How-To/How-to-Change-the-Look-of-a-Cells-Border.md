@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Look-of-a-Cells-Border
 description: how to change the look of a cell's border
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

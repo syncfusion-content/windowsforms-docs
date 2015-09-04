@@ -2,7 +2,7 @@
 layout: post
 title: How to apply grouping properties for ChildLevelGroups
 description: how to apply grouping properties for childlevelgroups
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

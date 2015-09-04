@@ -2,7 +2,7 @@
 layout: post
 title: Customizing-List-control
 description: customizing list control
-platform: windowsforms
+platform: WindowsForms
 control: GridList
 documentation: ug
 ---

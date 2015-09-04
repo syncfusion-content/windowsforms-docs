@@ -2,7 +2,7 @@
 layout: post
 title: How-to-make-resizing-possible-in-additional-row-he
 description: how to make resizing possible in additional row headers of a gridcontrol and griddataboundgrid
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Use-a-Comma-as-a-Decimal-Separator-in-Formu
 description: how to use a comma as a decimal separator in formula?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

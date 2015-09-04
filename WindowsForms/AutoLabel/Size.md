@@ -2,7 +2,7 @@
 layout: post
 title: Size
 description: Size
-platform: windowsforms
+platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---

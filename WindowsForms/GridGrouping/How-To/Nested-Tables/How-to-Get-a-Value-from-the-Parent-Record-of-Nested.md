@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Get-a-Value-from-the-Parent-Record-of-Neste
 description: how to get a value from the parent record of nested table when the dropdown list is clicked
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

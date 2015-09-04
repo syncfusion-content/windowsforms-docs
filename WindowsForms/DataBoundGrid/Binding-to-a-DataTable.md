@@ -2,7 +2,7 @@
 layout: post
 title: Binding-to-a-DataTable
 description: binding to a datatable
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

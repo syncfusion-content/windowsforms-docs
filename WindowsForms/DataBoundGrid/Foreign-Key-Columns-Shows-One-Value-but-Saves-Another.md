@@ -2,7 +2,7 @@
 layout: post
 title: Foreign-Key-Columns-Shows-One-Value-but-Saves-Another
 description: foreign key columns shows one value but saves another
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

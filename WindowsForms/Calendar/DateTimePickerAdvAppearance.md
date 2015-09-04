@@ -2,7 +2,7 @@
 layout: post
 title: DateTimePickerAdv Appearance
 description: datetimepickeradv appearance
-platform: windowsforms
+platform: WindowsForms
 control: Calendar
 documentation: ug
 ---

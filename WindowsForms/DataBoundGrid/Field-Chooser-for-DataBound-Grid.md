@@ -2,7 +2,7 @@
 layout: post
 title: Field-Chooser-for-DataBound-Grid
 description: field chooser for databound grid 
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How to Efficiently Customize Child Table/Group using Custom Engine
 description: how to efficiently customize child table/group using custom engine
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

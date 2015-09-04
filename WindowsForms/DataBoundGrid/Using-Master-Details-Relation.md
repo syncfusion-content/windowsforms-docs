@@ -2,7 +2,7 @@
 layout: post
 title: Using-Master-Details-Relation
 description: using master-details relation
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

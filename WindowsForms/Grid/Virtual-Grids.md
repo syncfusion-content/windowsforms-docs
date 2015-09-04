@@ -2,7 +2,7 @@
 layout: post
 title: Virtual-Grids
 description: virtual grids
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

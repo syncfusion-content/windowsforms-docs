@@ -2,7 +2,7 @@
 layout: post
 title: Adding-Special-Controls-to-Grid-Cells
 description: adding special controls to grid cells
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

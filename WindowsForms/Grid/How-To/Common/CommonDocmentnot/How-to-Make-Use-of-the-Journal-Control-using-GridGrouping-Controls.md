@@ -2,7 +2,7 @@
 layout: post
 title: How to Make Use of the Journal Control using GridGrouping Controls
 description: how to make use of the journal control using gridgrouping controls
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

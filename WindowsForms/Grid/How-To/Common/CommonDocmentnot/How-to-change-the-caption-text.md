@@ -2,7 +2,7 @@
 layout: post
 title: How to change the caption text
 description: How to change the caption text
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

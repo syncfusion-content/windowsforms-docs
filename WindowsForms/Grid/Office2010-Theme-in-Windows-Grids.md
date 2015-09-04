@@ -2,7 +2,7 @@
 layout: post
 title: Office2010-Theme-in-Windows-Grids
 description: office2010 theme in windows grids
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

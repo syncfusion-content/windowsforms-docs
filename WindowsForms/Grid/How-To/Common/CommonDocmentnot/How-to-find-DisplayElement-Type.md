@@ -2,7 +2,7 @@
 layout: post
 title: How to find DisplayElement Type
 description: How to find DisplayElement Type
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

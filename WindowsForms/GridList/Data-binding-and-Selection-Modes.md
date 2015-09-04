@@ -2,7 +2,7 @@
 layout: post
 title: Data-binding-and-Selection-Modes
 description: data binding and selection modes
-platform: windowsforms
+platform: WindowsForms
 control: GridList
 documentation: ug
 ---

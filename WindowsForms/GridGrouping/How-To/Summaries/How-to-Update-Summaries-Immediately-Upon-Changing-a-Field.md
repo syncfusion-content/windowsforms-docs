@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Update-Summaries-Immediately-Upon-Changing-
 description: how to update summaries immediately upon changing a field
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

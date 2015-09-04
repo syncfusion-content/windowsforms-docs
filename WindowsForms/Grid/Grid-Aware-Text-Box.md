@@ -2,7 +2,7 @@
 layout: post
 title: Grid-Aware-Text-Box
 description: grid aware text box
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

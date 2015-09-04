@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-sorted-or-filtered-records
 description: how to access sorted or filtered records
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

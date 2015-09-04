@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility-Information
 description: accessibility information
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

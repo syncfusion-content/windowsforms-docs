@@ -2,7 +2,7 @@
 layout: post
 title: What are the events fired when the group is expanded / expanding?
 description: What are the events fired when the group is expanded / expanding?
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

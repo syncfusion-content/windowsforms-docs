@@ -2,7 +2,7 @@
 layout: post
 title: How-to-save-the-contents-of-a-Grid-in-memory-rathe
 description: how to save the contents of a grid in memory rather than a file system to export to another grid
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

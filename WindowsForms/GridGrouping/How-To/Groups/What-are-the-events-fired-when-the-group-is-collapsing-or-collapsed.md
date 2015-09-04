@@ -2,7 +2,7 @@
 layout: post
 title: What-are-the-events-fired-when-the-group-is-collap
 description: what are the events fired when the group is collapsing or collapsed
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

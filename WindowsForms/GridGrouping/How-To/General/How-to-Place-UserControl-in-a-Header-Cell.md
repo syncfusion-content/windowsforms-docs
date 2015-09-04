@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Place-UserControl-in-a-Header-Cell
 description: how to place usercontrol in a header cell
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

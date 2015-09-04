@@ -2,7 +2,7 @@
 layout: post
 title: ComboBoxAdv-appearance
 description: comboboxadv appearance
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

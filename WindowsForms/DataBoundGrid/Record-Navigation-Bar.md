@@ -2,7 +2,7 @@
 layout: post
 title: Record-Navigation-Bar
 description: record navigation bar
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

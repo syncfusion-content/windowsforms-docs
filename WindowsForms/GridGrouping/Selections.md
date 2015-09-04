@@ -2,7 +2,7 @@
 layout: post
 title: Selections
 description: selections
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

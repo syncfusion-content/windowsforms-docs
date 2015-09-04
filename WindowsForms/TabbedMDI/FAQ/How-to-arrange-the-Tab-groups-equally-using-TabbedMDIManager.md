@@ -2,7 +2,7 @@
 layout: post
 title: How-to-arrange-the-Tab-groups-equally-using-TabbedMDIManager
 description: how to arrange the tab groups equally using tabbedmdimanager
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

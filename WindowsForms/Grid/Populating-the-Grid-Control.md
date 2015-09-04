@@ -2,7 +2,7 @@
 layout: post
 title: Populating-the-Grid-Control
 description: populating the grid control
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-perform-Custom-Sorting-in-GridGroupingContr
 description: how to perform custom sorting in gridgroupingcontrol
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Navigation-Bar
 description: navigation bar
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

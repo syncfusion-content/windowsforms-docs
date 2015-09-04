@@ -2,7 +2,7 @@
 layout: post
 title: Datasource
 description: datasource
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

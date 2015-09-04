@@ -2,7 +2,7 @@
 layout: post
 title: Data-Representation
 description: data representation
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Get-the-Selected-Ranges-in-a-Grid
 description: how to get the selected ranges in a grid
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

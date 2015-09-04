@@ -2,7 +2,7 @@
 layout: post
 title: ButtonAdv Appearance
 description: ButtonAdv Appearance
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

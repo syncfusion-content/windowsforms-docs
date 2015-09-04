@@ -2,7 +2,7 @@
 layout: post
 title: How-To-Suspend-Calculations-While-a-Series-Of-Valu
 description: how to suspend calculations while a series of values are updated?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

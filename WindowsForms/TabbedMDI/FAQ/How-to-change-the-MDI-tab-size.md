@@ -2,7 +2,7 @@
 layout: post
 title: How-to-change-the-MDI-tab-size
 description: how to change the mdi tab size
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

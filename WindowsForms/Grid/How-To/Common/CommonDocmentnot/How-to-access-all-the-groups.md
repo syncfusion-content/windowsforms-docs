@@ -2,7 +2,7 @@
 layout: post
 title: How to access all the groups
 description: how to access all the groups
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

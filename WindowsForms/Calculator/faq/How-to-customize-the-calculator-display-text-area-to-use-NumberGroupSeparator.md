@@ -2,7 +2,7 @@
 layout: post
 title: How-to-customize-the-calculator-display-text-area-to-use-NumberGroupSeparator
 description: how to customize the calculator display text area to use numbergroupseparator
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

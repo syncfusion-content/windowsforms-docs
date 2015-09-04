@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Optimize-Pixel-Scrolling-in-GridControl
 description: how to optimize pixel scrolling in gridcontrol
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

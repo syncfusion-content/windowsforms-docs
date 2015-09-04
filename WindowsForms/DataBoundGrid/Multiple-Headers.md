@@ -2,7 +2,7 @@
 layout: post
 title: Multiple-Headers
 description: multiple headers
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

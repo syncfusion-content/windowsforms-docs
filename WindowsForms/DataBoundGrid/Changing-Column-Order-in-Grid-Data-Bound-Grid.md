@@ -2,7 +2,7 @@
 layout: post
 title: Changing-Column-Order-in-Grid-Data-Bound-Grid
 description: changing column order in grid data bound grid
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: GridBoundColumns-and-Controlling-the-Column-Format
 description: gridboundcolumns and controlling the column format
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

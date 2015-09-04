@@ -2,7 +2,7 @@
 layout: post
 title: Multi-Row-Record
 description: multi row record
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-customize-the-close-button-in-TabbedGroupMDIManager
 description: how to customize the close button in tabbedgroupmdimanager
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

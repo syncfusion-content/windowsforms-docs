@@ -2,7 +2,7 @@
 layout: post
 title: Zoom-Support
 description: zoom support
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

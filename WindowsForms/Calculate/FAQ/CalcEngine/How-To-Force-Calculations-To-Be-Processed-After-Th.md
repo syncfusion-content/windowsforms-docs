@@ -2,7 +2,7 @@
 layout: post
 title: How-To-Force-Calculations-To-Be-Processed-After-Th
 description: how to force calculations to be processed after they have been suspended?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

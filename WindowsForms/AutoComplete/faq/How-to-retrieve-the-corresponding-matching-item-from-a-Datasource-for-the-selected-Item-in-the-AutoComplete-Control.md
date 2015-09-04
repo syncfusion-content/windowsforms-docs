@@ -2,7 +2,7 @@
 layout: post
 title: How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete Control
 description: How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete Control
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

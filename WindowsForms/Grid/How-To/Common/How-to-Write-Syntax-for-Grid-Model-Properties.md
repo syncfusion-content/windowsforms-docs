@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Write-Syntax-for-Grid-Model-Properties
 description: how to write syntax for grid model properties 
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

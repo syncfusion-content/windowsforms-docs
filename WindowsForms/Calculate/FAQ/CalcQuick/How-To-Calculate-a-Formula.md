@@ -2,7 +2,7 @@
 layout: post
 title: How-To-Calculate-a-Formula
 description: how to calculate a formula?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

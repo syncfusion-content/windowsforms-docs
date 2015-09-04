@@ -2,7 +2,7 @@
 layout: post
 title: How-to-improve-the-performance-of-CalcEngine-
 description: how to improve the performance of calcengine ?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

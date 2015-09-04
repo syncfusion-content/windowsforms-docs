@@ -2,7 +2,7 @@
 layout: post
 title: Binding-to-an-ArrayList
 description: binding to an arraylist
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

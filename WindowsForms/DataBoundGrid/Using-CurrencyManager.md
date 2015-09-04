@@ -2,7 +2,7 @@
 layout: post
 title: Using-CurrencyManager
 description: using currencymanager
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

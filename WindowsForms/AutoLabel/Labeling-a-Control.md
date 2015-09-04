@@ -2,7 +2,7 @@
 layout: post
 title: Creating AutoLabel
 description: Creating AutoLabel
-platform: windowsforms
+platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---

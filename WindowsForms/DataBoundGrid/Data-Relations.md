@@ -2,7 +2,7 @@
 layout: post
 title: Data-Relations
 description: data relations
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Foreign-Key-Reference-For-Child-Table
 description: foreign key reference for child table
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

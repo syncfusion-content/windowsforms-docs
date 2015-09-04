@@ -2,7 +2,7 @@
 layout: post
 title: How-to-refresh-Binding-List-Data-Source-automatica
 description: how to refresh binding list data source automatically when grid grouping control changes
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

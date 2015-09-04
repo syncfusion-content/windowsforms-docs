@@ -2,7 +2,7 @@
 layout: post
 title: How-to-customize-the-fonts-of-Active-and-Inactive-Tabs
 description: how to customize the fonts of active and inactive tabs
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

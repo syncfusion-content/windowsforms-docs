@@ -2,7 +2,7 @@
 layout: post
 title: AutoLabel Event
 description: AutoLabel Event
-platform: windowsforms
+platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---

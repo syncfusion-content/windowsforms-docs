@@ -2,7 +2,7 @@
 layout: post
 title: Accessing-Values-in-the-Grid-Data-Bound-Grid-and-in-the-Data-Source
 description: accessing values in the grid data bound grid and in the data source
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

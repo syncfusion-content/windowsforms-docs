@@ -2,7 +2,7 @@
 layout: post
 title: How-to-programmatically-select-the-record-in-the-d
 description: how to programmatically select the record in the dropdown that matches the text typed in comboboxadv?
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---

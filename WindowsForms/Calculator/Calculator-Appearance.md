@@ -2,7 +2,7 @@
 layout: post
 title: Calculator-Appearance
 description: calculator appearance
-platform: windowsforms
+platform: WindowsForms
 control: Calculator
 documentation: ug
 ---

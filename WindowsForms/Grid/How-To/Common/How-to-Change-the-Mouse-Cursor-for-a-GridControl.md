@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Mouse-Cursor-for-a-GridControl
 description: how to change the mouse cursor for a gridcontrol
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Paging-Support-in-GridGrouping-Control
 description: paging support in gridgrouping control
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

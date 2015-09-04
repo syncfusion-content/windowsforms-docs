@@ -2,7 +2,7 @@
 layout: post
 title: Sort-by-DisplayMember
 description: sort by displaymember
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---
