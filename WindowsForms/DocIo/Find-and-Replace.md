@@ -32,7 +32,7 @@ TextSelection class internally uses the Find and FindAll methods to select text.
 
 Public Constructors
 
-_Table_ _94__: Public Constructor_
+Table 94 : Public Constructor
 
 <table>
 <tr>
@@ -69,7 +69,7 @@ Dim selection As New TextSelection(paragraph, 0, 10)
 
 Public Properties
 
-_Table_ _95__: Public Properties_
+Table 95 : Public Properties
 
 <table>
 <tr>
@@ -89,7 +89,7 @@ Gets the selected text.  </td></tr>
 
 Public Methods
 
-_Table_ _96__: Public Methods_
+Table 96 : Public Methods
 
 <table>
 <tr>
@@ -116,7 +116,7 @@ Gets the System.String at the specified index.  </td></tr>
 
 
 
-_Note: TextSelection and GetAsOneRange should not be used for text replacement._
+> Note: TextSelection and GetAsOneRange should not be used for text replacement.
 
 The following code example illustrates how to use the TextSelection class with the Find Method. Refer to the Find section to know more about Find method.
 
@@ -139,11 +139,11 @@ TextBodyPart class contains the collection of body items (it means that TextBody
 
 
 
-_Note: TextBodyPart contains the copy of objects from the documents (paragraphs, tables, sections, and so on). So, if you modify the content of the TextBodyPart, it will not affect the objects inside the document._
+> Note: TextBodyPart contains the copy of objects from the documents (paragraphs, tables, sections, and so on). So, if you modify the content of the TextBodyPart, it will not affect the objects inside the document.
 
 Public Constructors
 
-_Table_ _97__: Public Constructors_
+Table 97 : Public Constructors
 
 <table>
 <tr>
@@ -169,7 +169,7 @@ Initializes a new instance of the TextBodyPart class with respect to WordDocumen
 </table>
 Public Properties
 
-_Table_ _98__: Public Properties_
+Table 98 : Public Properties
 
 <table>
 <tr>
@@ -184,7 +184,7 @@ Gets the body items.  </td></tr>
 
 ## Public Methods
 
-_Table_ _99__: Public Methods_
+Table 99 : Public Methods
 
 <table>
 <tr>
@@ -318,7 +318,7 @@ Dim bodySelection As New TextBodySelection(body, 0, 2, 1, 1)
 
 Public Constructors
 
-_Table_ _100__: Public Constructors_
+Table 100 : Public Constructors
 
 <table>
 <tr>
@@ -338,7 +338,7 @@ Initializes a new instance of the TextBodySelection class with start paragraph i
 
 Public Properties
 
-_Table_ _101__: Public Properties_
+Table 101 : Public Properties
 
 <table>
 <tr>
@@ -578,7 +578,7 @@ FindSingleLine method is used to find an entry in a document with a specified te
 
 
 
-_Table_ _102__: Public Methods_
+Table 102 : Public Methods
 
 <table>
 <tr>
@@ -596,7 +596,7 @@ Finds the first entry of the given text in the single-line mode with the Boolean
 </table>
 It is also possible to find a string with SingleLine mode from a particular region by using the FindNextSingleLine method of the WordDocument class.
 
-_Table_ _103__: Public Methods_
+Table 103 : Public Methods
 
 <table>
 <tr>
@@ -845,7 +845,7 @@ It is also possible to replace a string with .NET Regex SingleLine mode by usi
 
 The following table lists the overloads of this method.
 
-_Table_ _104__: Public Methods_
+Table 104 : Public Methods
 
 <table>
 <tr>

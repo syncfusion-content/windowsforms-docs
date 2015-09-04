@@ -19,7 +19,7 @@ This section will discuss the below four docking styles.
 ## Docking
 
 
-Docked control can be docked to any of the four sides of the container control, i.e., to Left, Right, Top and Bottom. DockingManager lets you specify the type of docking and the bounds of the docked control using the DockControl method. This method also sets [Tabbed style](#tabbed-docking) for the controls.
+Docked control can be docked to any of the four sides of the container control, i.e., to Left, Right, Top and Bottom. DockingManager lets you specify the type of docking and the bounds of the docked control using the DockControl method. This method also sets [Tabbed style](windowsforms/dockingmanager/docking-styles#tabbed-docking) for the controls.
 
 {% highlight C# %}
 
@@ -49,7 +49,7 @@ Me.dockingManager.DockControl(Me.listBox1, Me.listBox2,Syncfusion.Windows.Forms.
 
 
 
-At runtime, docking style can be selected easily using the [context menu](/windowsforms/Tools/DockingPackage/RunTime-Features.html#context-menu).
+At runtime, docking style can be selected easily using the [context menu](/windowsforms/dockingmanager/runtime-features#context-menu).
 
  ![](Docking-Styles_images/Docking-Styles_img2.jpeg) 
 
@@ -64,7 +64,7 @@ This section will discuss how the docked controls inside a container can be tabb
 
 ### At Design Time
 
-The docked controls can be tabbed in the designer, by just dragging and dropping into one another. DockingManager helps you in doing this using different [DragProviderStyle](/windowsforms/Tools/DockingPackage/Special-Features.html#dock-arrow-settings).
+The docked controls can be tabbed in the designer, by just dragging and dropping into one another. DockingManager helps you in doing this using different [DragProviderStyle](/windowsforms/dockingmanager/special-features#dock-arrow-settings).
 
  ![](Docking-Styles_images/Docking-Styles_img4.jpeg) 
 
@@ -72,7 +72,7 @@ The docked controls can be tabbed in the designer, by just dragging and dropping
 
 ### At RunTime
 
-DockingManager helps you in dragging and dropping the docked controls at run time, using different [DragProviderStyle](/windowsforms/Tools/DockingPackage/Special-Features.html#dock-arrow-settings). This styles display prediction Bands, which lets you decide whether you can drop the control in that location.
+DockingManager helps you in dragging and dropping the docked controls at run time, using different [DragProviderStyle](/windowsforms/dockingmanager/special-features#dock-arrow-settings). This styles display prediction Bands, which lets you decide whether you can drop the control in that location.
 
  ![](Docking-Styles_images/Docking-Styles_img5.jpeg) 
 
@@ -106,7 +106,7 @@ N> In the Tabbed style, the control is docked as a tabbed window along with the 
 
 ### Context Menu for Tabbed Controls
 
-The tabbed control can display context menu when the user right clicks on the tabs. See [Context Menu]((/windowsforms/Tools/DockingPackage/Caption-Bar.html#custom-caption-buttons)).
+The tabbed control can display context menu when the user right clicks on the tabs. See [Context Menu](/windowsforms/dockingmanager/runtime-features#context-menu).
 
 Aligning the Tabs
 
@@ -215,7 +215,7 @@ Me.dockingManager1.IsTabbed(this.listBox1)
 
 {% seealso %}
 
-[Getting Started](/windowsforms/Tools/DockingPackage/Getting-Started),[ DockAllow Event](/windowsforms/Tools/DockingPackage/Docking-Events.html#dockallow-event),[ Dock Arrow Settings](/windowsforms/Tools/DockingPackage/Special-Features.html#dock-arrow-settings)
+[Getting Started](/windowsforms/dockingmanager/getting-started),[ DockAllow Event](/windowsforms/dockingmanager/docking-events#docking),[ Dock Arrow Settings](/windowsforms/dockingmanager/special-features#dock-arrow-settings)
 
 {% endseealso %}
 
@@ -299,7 +299,7 @@ Setting EnableDoubleClickOnCaption property to true, lets you dock or float the 
 
 {% seealso %}
  
-[Nested Docking and Floating](Tools\DockingPackage\Advanced-Features.html#nested-docking-and-floating), How to make a docked control Floating Only?,
+[Nested Docking and Floating](/windowsforms/dockingmanager/advanced-features#nested-docking-and-floating), How to make a docked control Floating Only?,
 
 How to float a single control even if it is tabbed to many controls?, How to find out whether a docked control is floating or not?,
 
@@ -476,7 +476,7 @@ Animation in Auto Hiding is discussed in Auto Hide Animation Speed topic and Dra
 
 {% seealso %}
 
-[Context Menu](/windowsforms/Tools/DockingPackage/Caption-Bar.html#context-menu), Animation Events, AutoHide TabContextMenu Event, How to autohide a control when an application loads
+[Context Menu](/windowsforms/dockingmanager/runtime-features#context-menu), Animation Events, AutoHide TabContextMenu Event, How to autohide a control when an application loads
 
 {% endseealso %}
 
@@ -516,7 +516,7 @@ N> For a control to show animation in autohide mode, the animation step value sh
 
 ### Context Menu for AutoHidden Tabs
 
-This is discussed in [Context Menu](/windowsforms/Tools/DockingPackage/Docking-Events.html#context-menu) topic.
+This is discussed in [Context Menu](/windowsforms/dockingmanager/runtime-features#context-menu) topic.
 
 ### Dragging Autohidden tabs
 

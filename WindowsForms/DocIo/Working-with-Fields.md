@@ -57,7 +57,7 @@ WField
 
 Public Constructors
 
-_Table_ _75__: Public Constructors_
+Table 75 : Public Constructors
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ Initializes a new instance of the WField class. </td></tr>
 
 Public Properties
 
-_Table_ _76__: Public Properties_
+Table 76 : Public Properties
 
 <table>
 <tr>
@@ -167,7 +167,7 @@ WMergeField
 
 Public Constructors
 
-_Table_ _77__: Public Constructors_
+Table 77 : Public Constructors
 
 <table>
 <tr>
@@ -183,7 +183,7 @@ Initializes a new instance of the WMergeField class. </td></tr>
 
 Public Properties
 
-_Table_ _78__: Public Properties_
+Table 78 : Public Properties
 
 <table>
 <tr>
@@ -261,7 +261,7 @@ WEmbedField class represents an embed field type in a Word document. Word does n
 
 
 
-_Note: Modification of WEmbedField properties can cause document corruption or incorrect document preservation. DocIO preserves only fields of this type._
+> Note: Modification of WEmbedField properties can cause document corruption or incorrect document preservation. DocIO preserves only fields of this type.
 
 
 
@@ -281,7 +281,7 @@ WField
 
 Public Properties
 
-_Table_ _79__: Public Properties_
+Table 79 : Public Properties
 
 <table>
 <tr>
@@ -303,7 +303,7 @@ You can use the NumberFormat property to set the numbering format for the fields
 
 Public Constructors
 
-_Table_ _80__: Public Constructors_
+Table 80 : Public Constructors
 
 <table>
 <tr>
@@ -316,7 +316,7 @@ Initializes a new instance of the WSeqField class.</td></tr>
 </table>
 Public Properties
 
-_Table_ _81__: Public Properties_
+Table 81 : Public Properties
 
 <table>
 <tr>
@@ -548,7 +548,7 @@ REF BookmarkName [Switches]
 
 
 
-_Note: Page number and Paragraph number options are not supported in Silverlight, WinRT and Windows Phone applications while updating Cross reference field._
+> Note: Page number and Paragraph number options are not supported in Silverlight, WinRT and Windows Phone applications while updating Cross reference field.
 
 Known Limitations
 

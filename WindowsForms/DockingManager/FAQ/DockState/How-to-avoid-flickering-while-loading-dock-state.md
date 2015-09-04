@@ -46,6 +46,6 @@ Me.dockingManager1.UnlockHostFormUpdate()
 
 {% seealso %}
 
-[Persistence](/windowsforms/DockingPackage/Advanced-Features.html#dock-state-persistence)
+[Persistence](/windowsforms/dockingmanager/advanced-features#dock-state-persistence)
 
 {% endseealso %}

@@ -19,7 +19,7 @@ The primitives that can be included in the GradientPanelExt are,
 
 The primitives for the GradientPanelExt can be included using the GradientPanelExt PrimitiveCollection Editor, which can be opened using the primitives property.
 
-![](Overview_images/Overview_img377.png)
+![](GradientPanelExt_images/Overview_img377.jpeg)
 
 
 
@@ -79,16 +79,16 @@ Private collapsePrimitive1.Size = New System.Drawing.Size(40, 40)
 
 {% endhighlight  %}
 
-![](Overview_images/Overview_img378.png)
+![](GradientPanelExt_images/Overview_img378.jpeg)
 
 
 
-![](Overview_images/Overview_img379.png)
+![](GradientPanelExt_images/Overview_img379.jpeg)
 
 
 
 > See Also
-> 
+
 > Image and Text Primitives, Host Primitives
 
 

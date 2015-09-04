@@ -52,7 +52,7 @@ Supported and Unsupported Elements
 
 DocIO Supports the following document elements.
 
-_Table_ _133__: Document Elements_
+Table 133 : Document Elements
 
 <table>
 <tr>
@@ -387,7 +387,7 @@ paragraph.AppendXHTML(htmlstring)
 {% endhighlight %}
 
 
- > _Notes: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications._
+ > Notes: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
 
 
 
@@ -409,7 +409,7 @@ The None type provides the feature to manipulate the XHTML without using Strict 
 
 The following table illustrates the basic comparison between the Transitional and Strict validation types.
 
-_Table_ _134__: Validation Types_
+Table 134 : Validation Types
 
 <table>
 <tr>
@@ -444,7 +444,7 @@ Parameter Description
 1. htmlString: The desired HTML string to be validated.
 2. XHTMLValidationType: It defines the validation type. It could be Strict, Transitional, or None.
 
-_Notes: Currently XHTML Validation is not supported in Windows Store applications._
+> Notes: Currently XHTML Validation is not supported in Windows Store applications.
 
 
 
@@ -562,7 +562,7 @@ Supported Document Elements
 
 DocIO supports the following document elements.
 
-_Table_ _135__: Document Elements_
+Table 135 : Document Elements
 
 <table>
 <tr>
@@ -968,7 +968,7 @@ Supported Document Elements
 DocIO supports the following document elements.
 
 
-_Table_ _136__: Document Elements_
+Table 136 : Document Elements
 
 <table>
 <tr>
@@ -1025,10 +1025,10 @@ Assembly Dependencies for this Conversion
 * Syncfusion.Compression.Base.dll
 
 
-> _Note:_ 
-> * _You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed._
-> * _Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word._
-> * _Currently,_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _conversion is not supported in Silverlight, WinRT and Windows Phone applications._
+> Note:
+> * You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
+> * Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+> * Currently,_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
 
 The following code example lets you to convert a Word document to PDF.
 
@@ -1048,7 +1048,7 @@ Word to PDF conversion feature provides support for the following elements.
 
 
 
-_Table_ _137__: Supported and Unsupported Elements_
+Table 137 : Supported and Unsupported Elements
 
 <table>
 <tr>
@@ -1175,7 +1175,7 @@ Essential DocIO supports conversion of Microsoft Word documents to EPub v2.0.1. 
 By default, Table of Contents (TOC) is enabled in the EPub document. It is generated based on the built-in heading styles or custom styles mentioned in the TOC field. 
 
 
-> _Note: You need to have an EPub reader installed in the machine to view the resultant EPub document._
+> Note: You need to have an EPub reader installed in the machine to view the resultant EPub document.
 
 
 
@@ -1214,7 +1214,7 @@ The following screenshot illustrates the resultant EPub document.
 
 
 
-_Figure_ _54__: Word document converted to EPub File Format_
+Figure 54 : Word document converted to EPub File Format
 
 
 
@@ -1252,7 +1252,7 @@ The following screenshot illustrates the resultant EPub document.
 
 
 
-_Figure_ _55__: Embedding fonts in an EPub File_
+Figure 55 : Embedding fonts in an EPub File
 
 
 
@@ -1289,7 +1289,7 @@ The following is the screenshot of the resultant EPub document with the disabled
 
 
 
-_Figure_ _56__: Exporting Header and Footer_
+Figure 56 : Exporting Header and Footer
 
 
 
@@ -1316,7 +1316,7 @@ The following are the known limitations:
 * Embedding font files can increase the size of the EPub document
 * Embedding font files is not supported in medium trust
 
-_> Note: Currently Doc to EPub conversion is not supported in Silverlight application._
+> Note: Currently Doc to EPub conversion is not supported in Silverlight application.
 
 ## Saving a Word Document as an Image
 
@@ -1329,11 +1329,11 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 * WordDocument.RenderAsImages(pageIndex, imageType): This is used to render/convert a particular page of the document into an image; it returns the resultant image of type Image.
 * WordDocument.RenderAsImages(pageIndex, noOfPages, imageType): This is used to render/convert multiple number of pages in the document, starting from the specified page index. It returns the resultant image of type Image[] array.
 
-> _Note:_
-> * _Parameter "pageIndex" is a zero based index._
-> * _Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word._
-> * _Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications._
-> * _You can refer to the_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _Conversion for supported and unsupported elements in Word to Image conversion._
+> Note:
+> * Parameter "pageIndex" is a zero based index.
+> * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+> * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+> * You can refer to the_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _Conversion for supported and unsupported elements in Word to Image conversion.
 
 The following code example lets you to render a Word document as image.
 

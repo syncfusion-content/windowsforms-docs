@@ -775,7 +775,7 @@ The scroll position and offsets of the Edit Control are set by using the below g
 <table>
 <tr>
 <th>
-Edit Control Property</th><td>
+Edit Control Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1160,7 +1160,7 @@ A sample demonstrating the Context Menu feature is available in the following sa
 
 
 
-_..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
 
@@ -1184,7 +1184,7 @@ Code Snippets are inserted into the Edit Control by following the procedure give
 2. Pressing the TAB key, or CTRL + ' combination.
 3. Select an item from the list as shown in the image below.
 
-   ![](Runtime-Features_images/Runtime-Features_img14.jpeg)
+![](Runtime-Features_images/Runtime-Features_img14.jpeg)
 
 
 
@@ -1228,8 +1228,8 @@ Code Snippets are added to the current language of the Edit Control by using the
 <table>
 <tr>
 <th>
-Edit Control Method</td><td>
-Description</td></tr>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddCodeSnippet</td><td>

@@ -944,7 +944,6 @@ Lines</td><td>
 Lets you to specify multiple lines of text to the Edit Control in the form of a string array. This feature is similar to the one in .NET RichTextBox control.</td></tr>
 </table>
 
-
 #### Inserting Text based on Conditions
 
 The following properties can be used to insert text based on conditions that are described as follows.
@@ -975,7 +974,6 @@ Specifies whether the tab stops should be valued on inserting blocks of text.</t
 ShowFileDropNotification</td><td>
 Specifies whether the Notification message is to be displayed when the outer file is dragged and dropped onto the Edit Control.</td></tr>
 </table>
-
 
 {% highlight c# %}
 
@@ -1075,7 +1073,7 @@ Text can be deleted in the Edit Control by using the below given methods.
 <tr>
 <th>
 Edit Control Method</th><th>
-Description/th></tr>
+Description</th></tr>
 <tr>
 <td>
 DeleteChar</td><td>
@@ -1102,10 +1100,7 @@ DeleteText</td><td>
 Deletes the specified text.</td></tr>
 </table>
 
-
 {% highlight c# %}
-
-
 
 // Deletes the character to the right of the cursor.
 
@@ -1169,13 +1164,9 @@ Me.editControl1.DeleteWord()
 
 Me.editControl1.DeleteWordLeft()
 
-
-
 ' Deletes all the text.
 
 Me.editControl1.DeleteAll()
-
-
 
 ' Deletes a selection.
 
@@ -1185,9 +1176,9 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 
 ![](Text-Visualization_images/Text-Visualization_img9.jpeg)
 
+Figure 20: Input entered for Handling Text
 
 
-_Figure_ _20: Input entered for Handling Text
 
 A sample that demonstrates the above features is available in the following sample installation path.
 
@@ -3784,7 +3775,7 @@ Edit Control supports all the encoding styles supported by the System.Text.Encod
 <tr>
 <th>
 Edit Control Method</th><th>
-Description</td></tr>
+Description</th></tr>
 <tr>
 <td>
 GetEncoding</td><td>
@@ -3837,7 +3828,7 @@ It also supports all the new line styles supported by the Syncfusion.IO.NewLineS
 <table>
 <tr>
 <th>
-New Line Styles\</th><th>
+New Line Styles</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -4003,8 +3994,8 @@ Me.editControl1.SelectTextAfterDragDrop = True
 
 {% endhighlight %}
 
-
 #### Selected Text
+
 
 The following properties can be used to get / set selected text.
 
@@ -4026,8 +4017,6 @@ Gets selected text range.</td></tr>
 
 {% highlight c# %}
 
-
-
 // Returns the currently selected text in the Edit Control.
 
 string editText = this.editControl1.SelectedText;
@@ -4035,8 +4024,6 @@ string editText = this.editControl1.SelectedText;
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-
 
 ' Returns the currently selected text in the Edit Control.
 
@@ -4048,24 +4035,13 @@ Dim editText as String = Me.editControl1.SelectedText
 
 Setting the TransparentSelection property to True, will highlight the selected text range with a transparent blue background (which will let you view the syntax highlighting in the text within the selected region), as shown in the following screenshot.
 
-
-
 ![](Text-Visualization_images/Text-Visualization_img33.jpeg)
-
-
 
 _Figure_ _41: Transparent Selection Enabled
 
-
-
 Setting the TransparentSelection property to False, will highlight the selected text range with a dark background (which will not let you view the syntax highlighting in the text within the selected region), as shown in the following screenshot.
 
-
-
 ![](Text-Visualization_images/Text-Visualization_img34.jpeg)
-
-
-
 
 
 #### Cancelling / Resetting Selection

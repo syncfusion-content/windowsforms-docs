@@ -36,7 +36,7 @@ TableOfContent
 
 Public Constructors
 
-_Table_ _89__: Public Constructors_
+Table 89 : Public Constructors
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ Initializes a new instance of the TableOfContent class.  </td></tr>
 
 Public Properties
 
-_Table_ _90__: Public Properties_
+Table 90 : Public Properties
 
 <table>
 <tr>
@@ -107,7 +107,7 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 
 
 
-> _Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels._
+> Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels.
 
 
 
@@ -119,7 +119,7 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 
 Public Methods
 
-_Table_ _91__: Public Methods_
+Table 91 : Public Methods
 
 <table>
 <tr>
@@ -179,7 +179,7 @@ UpdatingTableOfContents method of WordDocument class updates table of contents f
 
 
 
-> _Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications._
+> Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications.
 
 
 

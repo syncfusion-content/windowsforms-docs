@@ -49,7 +49,7 @@ WParagraph
 
 Public Constructors
 
-_Table_ _40__: Public Constructors_
+Table 40 : Public Constructors
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ Initializes a new instance of the WParagraph class. </td></tr>
 
 Public Properties
 
-_Table_ _41__: Public Properties_
+Table 41 : Public Properties
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ Gets or sets text for a paragraph.</td></tr>
 
 Public Methods
 
-_Table_ _42__: Public Methods_
+Table 42 : Public Methods
 
 <table>
 <tr>
@@ -260,7 +260,7 @@ WTextRange class represents a piece of text that has separate formatting. You ca
 
 You can also use the AppendText method of the WParagraph class to append text to the paragraph.
 
-> Note: AppendText method appends a new text range to the paragraph with the default character formatting._
+> Note: AppendText method appends a new text range to the paragraph with the default character formatting.
 
 
 
@@ -276,7 +276,7 @@ WextRange
 
 PublicConstructors
 
-_Table_ _43__: Public Constructors_
+Table 43 : Public Constructors
 
 <table>
 <tr>
@@ -292,7 +292,7 @@ Initializes a new instance of the WTextRange class.</td></tr>
 
 Public Properties
 
-_Table_ _44__: Public Properties_
+Table 44 : Public Properties
 
 <table>
 <tr>
@@ -468,7 +468,7 @@ WPicture
 
 Public Constructors
 
-_Table_ _45__: Public Constructors_
+Table 45 : Public Constructors
 
 <table>
 <tr>
@@ -484,7 +484,7 @@ Gets the type of the entity. </td></tr>
 
 Public Properties
 
-_Table_ _46__: Public Properties_
+Table 46 : Public Properties
 
 <table>
 <tr>
@@ -572,7 +572,7 @@ Gets or sets the title to the picture</td></tr>
 
 Public Methods
 
-_Table_ _47__: Public Methods_
+Table 47 : Public Methods
 
 <table>
 <tr>
@@ -640,7 +640,7 @@ WListFormat
 
 Public Constructor
 
-_Table_ _48__: Public Constructor_
+Table 48 : Public Constructor
 
 <table>
 <tr>
@@ -656,7 +656,7 @@ Initializes new instance of WListFormat class.</td></tr>
 
 Public Properties
 
-_Table_ _49__: Public Properties_
+Table 49 : Public Properties
 
 <table>
 <tr>
@@ -692,7 +692,7 @@ Gets or sets whether numbering of the list must restart from previous list. </td
 
 Public Methods
 
-_Table_ _50__: Public Methods_
+Table 50 : Public Methods
 
 <table>
 <tr>
@@ -836,7 +836,7 @@ Essential DocIO provides support to insert, edit, and replace hyperlinks as fiel
 
 Public Constructors
 
-_Table_ _51__: Public Constructors_
+Table 51 : Public Constructors
 
 <table>
 <tr>
@@ -852,7 +852,7 @@ Initializes a new instance of the Hyperlink class.</td></tr>
 
 Public Properties
 
-_Table_ _52__: Public Properties_
+Table 52 : Public Properties
 
 <table>
 <tr>
@@ -973,7 +973,7 @@ WTextBox
 
 Public Constructors
 
-_Table_ _53__: Public Constructors_
+Table 53 : Public Constructors
 
 <table>
 <tr>
@@ -989,7 +989,7 @@ Initializes a new instance of the WTextBox class.  </td></tr>
 
 Public Properties
 
-_Table_ _54__: Public Properties_
+Table 54 : Public Properties
 
 <table>
 <tr>
@@ -1125,7 +1125,7 @@ WComment
 
 Public Constructors
 
-_Table_ _55__: Public Constructors_
+Table 55 : Public Constructors
 
 <table>
 <tr>
@@ -1141,7 +1141,7 @@ Initializes a new instance of the WComment class.  </td></tr>
 
 Public Properties
 
-_Table_ _56__: Public Properties_
+Table 56 : Public Properties
 
 <table>
 <tr>
@@ -1167,7 +1167,7 @@ WCommentFormat has the following public properties and methods.
 
 Public Methods
 
-_Table_ _57__: Public Methods_
+Table 57 : Public Methods
 
 <table>
 <tr>
@@ -1195,7 +1195,7 @@ Replace the commented document content.</td></tr>
 
 Public Properties
 
-_Table_ _58__: Public Properties_
+Table 58 : Public Properties
 
 <table>
 <tr>
@@ -1245,7 +1245,7 @@ You can access comments while browsing through the collection of paragraph items
 
 Public Methods
 
-_Table_ _59__: Public Methods_
+Table 59 : Public Methods
 
 <table>
 <tr>
@@ -1293,7 +1293,7 @@ WSymbol
 
 Public Constructors
 
-_Table_ _60__: Public Constructors_
+Table 60 : Public Constructors
 
 <table>
 <tr>
@@ -1309,7 +1309,7 @@ Initializes a new instance of the WSymbol class.  </td></tr>
 
 Public Properties
 
-_Table_ _61__: Public Properties_
+Table 61 : Public Properties
 
 <table>
 <tr>
@@ -1392,7 +1392,7 @@ Break
 
 Public Constructors
 
-_Table_ _62__: Public Constructors_
+Table 62 : Public Constructors
 
 <table>
 <tr>
@@ -1412,7 +1412,7 @@ Initializes a new instance of the Break class with Break Type.  </td></tr>
 
 Public Constructors
 
-_Table_ _63__: Public Constructors_
+Table 63 : Public Constructors
 
 <table>
 <tr>
@@ -1470,7 +1470,7 @@ By using the WOleObject instance, you can insert content from one program to ano
 
 ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img8.jpeg)
 
-> _Note: Only installed programs that support OLE objects appear in the Object dialog box.
+> Note: Only installed programs that support OLE objects appear in the Object dialog box.
 
 
 
@@ -1545,7 +1545,7 @@ Essential DocIO provides support for embedding OLE objects in a Word document to
 
 ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img10.jpeg)
 
-> _Note: Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
+> Note: Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
 
 
 
@@ -1553,7 +1553,7 @@ Following are the API details of this feature:
 
 Public Constructors
 
-_Table_ _64__: Public Constructors_
+Table 64 : Public Constructors
 
 <table>
 <tr>
@@ -1569,7 +1569,7 @@ Gets the type of the entity. </td></tr>
 
 Public Properties
 
-_Table_ _65__: Public Properties_
+Table 65 : Public Properties
 
 <table>
 <tr>

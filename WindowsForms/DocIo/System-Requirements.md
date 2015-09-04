@@ -15,13 +15,13 @@ Prerequisites
 
 The prerequisites details are as follows.
 
-_Table_ _2__: Prerequisites_
+Table 2 : Prerequisites
 
 <table>
 <tr>
-<td>
-Supported IDEs</td><td>
-* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 * Visual Studio 2008 * Visual Studio 2005</td></tr>
+<th>
+Supported IDEs</th><th>
+* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 * Visual Studio 2008 * Visual Studio 2005</th></tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
@@ -32,13 +32,13 @@ Supported IDEs</td><td>
 
 The compatibility details are as follows.
 
-_Table_ _3__: Compatibility_
+Table 3 : Compatibility
 
 <table>
 <tr>
-<td>
-Operating Systems</td><td>
-* Windows 8.1* Windows 8* Windows Server 2012* Windows Server 2008* Windows 7* Windows Vista* Windows XP* Windows 2003</td></tr>
+<th>
+Operating Systems</th><th>
+* Windows 8.1* Windows 8* Windows Server 2012* Windows Server 2008* Windows 7* Windows Vista* Windows XP* Windows 2003</th></tr>
 <tr>
 <td>
 <br>Microsoft Word Compatibility Support</td><td>

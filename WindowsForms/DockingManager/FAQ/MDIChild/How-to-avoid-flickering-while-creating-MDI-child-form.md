@@ -77,6 +77,6 @@ Me.dockingManager1.IsMDIMode(Me.listBox2)
 
 {% seealso %}
 
-[MDI Child Transition](/windowsforms/DockingPackage/Advanced-Features.html#mdi-child-transition)
+[MDI Child Transition](/windowsforms/dockingmanager/advanced-features#mdi-child-transition)
 
 {% endseealso %}

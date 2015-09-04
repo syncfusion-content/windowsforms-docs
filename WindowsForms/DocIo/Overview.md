@@ -60,7 +60,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions helps you quickly to identify the important sections of information while using the content.
 
-_Table_ _1_: Document Conventions_
+Table 1 : Document Conventions
 
 <table>
 <tr>
@@ -71,7 +71,7 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-> ![](Overview_images/Overview_img1.jpeg)
+ {{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 
 {{ '_Note:_' | markdownify }}</td><td>
 {{ '_Represents important information_' | markdownify }}</td></tr>
@@ -83,14 +83,14 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img2.jpeg)
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
 
 </td><td>
 Represents useful hints that helps you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img3.jpeg)
+{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
 
 </td><td>
 Represents additional information on the topic</td></tr>

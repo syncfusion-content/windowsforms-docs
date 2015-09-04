@@ -184,7 +184,7 @@ End Sub
 
 {% seealso %}
  
-[Tabbed Docking](/windowsforms/DockingPackage/Docking-Styles.html#tabbed-docking)
+[Tabbed Docking](/windowsforms/dockingmanager/docking-styles#tabbed-docking)
 
 {% endseealso %}
 
