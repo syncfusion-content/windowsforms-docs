@@ -15,9 +15,9 @@ Table 235: Events Table
 
 <table>
 <tr>
-<td>
- Event</td><td>
-Description</td></tr>
+<th>
+ Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 Popup </td><td>

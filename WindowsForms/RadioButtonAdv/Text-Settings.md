@@ -70,6 +70,8 @@ A sample which demonstrates the TextShadow property of RadioButtonAdv is availab
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-See Also
+{%seealso%}
 
 Alignment Settings
+
+{%endseealso%}

@@ -23,11 +23,11 @@ This section provides specifics on installation of Syncfusion Essential QuickTes
 
 To install Essential Test Studio:
 
-> Note: The Installation procedures are the same for every Essential Test Studio setup, regardless of the volume of the Test setup.
+N> The Installation procedures are the same for every Essential Test Studio setup, regardless of the volume of the Test setup.
 
 1. Double-click the Syncfusion Essential Test Studio Setup file.
 
-   > Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens.
+   N> Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
@@ -37,7 +37,7 @@ To install Essential Test Studio:
 
 
 
-2. Click Next. The User Information screen opens. 
+2.Click Next. The User Information screen opens. 
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
@@ -45,11 +45,11 @@ To install Essential Test Studio:
 
 
 
-3. Enter your name, organization and enter the license key in the corresponding text boxes provided.
+3.Enter your name, organization and enter the license key in the corresponding text boxes provided.
 
-   > Note: Use Essential Studio Unlock Key as the Unlock Key for Essential Testing Studio. For version previous to 6.3.0.6, use “Syncfusion199“ as the Unlock Key.
+   N> Use Essential Studio Unlock Key as the Unlock Key for Essential Testing Studio. For version previous to 6.3.0.6, use “Syncfusion199“ as the Unlock Key.
 
-4. Click Next. The unlock key will be validated.
+4.Click Next. The unlock key will be validated.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)
    
@@ -57,7 +57,7 @@ To install Essential Test Studio:
 
 
 
-5. Click Next. The Select the installation folder window opens.
+5.Click Next. The Select the installation folder window opens.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
    
@@ -65,11 +65,11 @@ To install Essential Test Studio:
 
 
 
-6. To install in the default location, click Next. You can also browse to choose a required location. When you click Browse to select the desired location, the Destination Location screen displays the selected location. 
+6.To install in the default location, click Next. You can also browse to choose a required location. When you click Browse to select the desired location, the Destination Location screen displays the selected location. 
 
 
 
-7. Click Next. The Installation options window opens. Choose one of the following installation options as required:
+7.Click Next. The Installation options window opens. Choose one of the following installation options as required:
 
 
 
@@ -87,7 +87,7 @@ To install Essential Test Studio:
 
 
 
-8. Click Next. The Ready to Install dialog opens.
+8.Click Next. The Ready to Install dialog opens.
 
 
 
@@ -99,7 +99,7 @@ To install Essential Test Studio:
 
 
 
-9. Click Install. The installation process starts displaying the Installing screen as shown in the following screen shot.
+9.Click Install. The installation process starts displaying the Installing screen as shown in the following screen shot.
 
 
 
@@ -125,7 +125,7 @@ An XML file in QTP called swfconfig is the configuration file located at _(Insta
 
 
 
-> Note: The fully qualified name is the name of the file mentioned with its complete path.
+N> The fully qualified name is the name of the file mentioned with its complete path.
 
 Any event that is triggered while working with a Syncfusion control, either by the user or the program activity, will be handled by the corresponding method in the custom library (DLL) given as the <DllName> tag under the <Control> tag.
 
@@ -153,7 +153,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 
 
-	> Note: You will find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively.
+	N> You will find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively.
 
 2. Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The sample code below maps the grid control to its corresponding DLL.
 
@@ -198,8 +198,8 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
    ~~~
    {:.prettyprint }
 
-   > Note: In the preceding code, the fully qualified name of the DLL given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
-   >
+   N> In the preceding code, the fully qualified name of the DLL given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
+   
    > C:\Program Files\Syncfusion\Essential QuickTest Professional\<Version number>\
 
    If you have installed Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, if Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
@@ -267,7 +267,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 
 
-   > Note: The SwfConfig.xml file will look like the following:
+   N> The SwfConfig.xml file will look like the following:
 
    ~~~ xml
 
@@ -316,7 +316,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
    ~~~
    {:.prettyprint }
 
-   > Note: Ensure that the element <DllName> contains the correct path to the corresponding DLL.
+   N> Ensure that the element <DllName> contains the correct path to the corresponding DLL.
 
 7. Save the SwfConfig.xml file. 
 
@@ -326,7 +326,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 
 
-   > Note: Mapping for the required controls can be done in a similar manner.
+   N> Mapping for the required controls can be done in a similar manner.
 
 ### Sample and Location
 
@@ -350,7 +350,7 @@ The samples for Essential QuickTest Professional are available at the following 
 * Schedule samples- (installed location of the product)\Examples\Samples\Schedule\
 * Diagram samples- (installed location of the product)\Examples\Samples\Diagram\
 
-> Note: By default, the installed location of the product corresponds to- <Drive>:\Program Files\Syncfusion\Essential QuickTest Professional\<version number>\
+N> By default, the installed location of the product corresponds to- <Drive>:\Program Files\Syncfusion\Essential QuickTest Professional\<version number>\
 
 The executable files for the samples are available under the following location:
 
@@ -358,7 +358,7 @@ The executable files for the samples are available under the following location:
 
 
 
-> Note: There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location.
+N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location.
 
 
 
@@ -423,10 +423,10 @@ For Essential Grid
 
 <table>
 <tr>
-<td>
-Assembly Name</td><td>
-Type Name</td><td>
-Control Name</td></tr>
+<th>
+Assembly Name</th><th>
+Type Name</th><th>
+Control Name</th></tr>
 <tr>
 <td>
 GridControl.dll</td><td>
@@ -461,10 +461,10 @@ For Essential Tools
 
 <table>
 <tr>
-<td>
-Assembly Name</td><td>
-Type Name</td><td>
-Control Name</td></tr>
+<th>
+Assembly Name</th><th>
+Type Name</th><th>
+Control Name</th></tr>
 <tr>
 <td>
 RibbonControlAdv.dll</td><td>
@@ -603,11 +603,10 @@ For Essential Chart
 
 
 <table>
-<tr>
-<td>
-Assembly Name</td><td>
-Type Name</td><td>
-Control Name</td></tr>
+<th>
+Assembly Name</th><th>
+Type Name</th><th>
+Control Name</th></tr>
 <tr>
 <td>
 ChartControl.dll</td><td>
@@ -622,10 +621,10 @@ For Essential Schedule
 
 <table>
 <tr>
-<td>
-Assembly Name</td><td>
-Type Name</td><td>
-Control Name</td></tr>
+<th>
+Assembly Name</th><th>
+Type Name</th><th>
+Control Name</th></tr>
 <tr>
 <td>
 ScheduleControl.dll</td><td>
@@ -640,10 +639,10 @@ For Essential Diagram
 
 <table>
 <tr>
-<td>
-Assembly Name</td><td>
-Type Name</td><td>
-Control Name</td></tr>
+<th>
+Assembly Name</th><th>
+Type Name</th><th>
+Control Name</th></tr>
 <tr>
 <td>
 Diagram{{ '_._' | markdownify }}dll</td><td>

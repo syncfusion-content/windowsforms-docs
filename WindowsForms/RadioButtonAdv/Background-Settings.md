@@ -62,7 +62,7 @@ Me.radioButtonAdv1.GradientEnd = System.Drawing.Color.DarkSalmon
 ![](Overview_images/Overview_img636.jpeg)
 
 
-> Note: Gradient background cannot be applied to the RadioButtonAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
+N> Gradient background cannot be applied to the RadioButtonAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
 
 A sample which demonstrates the Background Settings of RadioButtonAdv is available in the below sample installation path.
 

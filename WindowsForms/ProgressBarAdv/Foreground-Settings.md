@@ -261,7 +261,7 @@ _Table_ _607_: _Property Table_
 <tr>
 <th>
 ProgressBarAdv Property</th><th>
-Description</td></tr>
+Description</th></tr>
 <tr>
 <td>
 ForegroundImage</td><td>

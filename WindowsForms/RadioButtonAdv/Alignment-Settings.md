@@ -89,6 +89,8 @@ A Sample which demonstrates the Text and RadioButton Alignment features of Check
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-See Also
+{%seealso%}
 
 Text Settings, RadioButtonAdv Settings
+
+{%endseealso%}

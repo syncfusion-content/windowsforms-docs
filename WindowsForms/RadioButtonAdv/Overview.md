@@ -13,9 +13,11 @@ RadioButtonAdv functions similar to the Windows standard RadioButton but it has 
 
 ![](Overview_images/Overview_img628.jpeg) 
 
-See Also
+{%seealso%}
 
 ## Features
+
+{%endseealso%}
 
 RadioButtonAdv is an advanced RadioButton control and has the following features.
 
@@ -61,6 +63,8 @@ Themes can be enabled for the RadioButtonAdv.
 
 It provides the Office2007 Visual Style that comes in the blue, silver and black colors. The Office2007 style also supports custom colors that can be applied to the RadioButtonAdv control.
 
-See Also
+{%seealso%}
 
 Concepts and Features
+
+{%endseealso%}
