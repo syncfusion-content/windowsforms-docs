@@ -43,7 +43,7 @@ Execute
 
 Public Methods
 
-_Table_ _92__: Public Methods_
+Table 92 : Public Methods
 
 <table>
 <tr>
@@ -436,15 +436,15 @@ In the above example, the customers property in EmployeeDetails has customers re
 
 
 
-_Note:_
+> Note:
 
-* _Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively._
-* _Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively._
-* _The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument._
+* Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
+* Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
+* The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
 
 Public Methods
 
-_Table_ _93__: Public Methods_
+Table 93 : Public Methods
 
 <table>
 <tr>

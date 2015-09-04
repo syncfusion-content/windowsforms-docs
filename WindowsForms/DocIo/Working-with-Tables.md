@@ -23,7 +23,6 @@ Class Hierarchy
 
 TextBodyItem
 
-|
 
 WTable
 
@@ -31,7 +30,7 @@ WTable
 
 Public Constructors
 
-_Table_ _29__: Public Constructors_
+Table 29 : Public Constructors
 
 <table>
 <tr>
@@ -51,7 +50,7 @@ Initializes a new instance of the WTable class.  </td></tr>
 
 Public Properties
 
-_Table_ _30__: Public Properties_
+Table 30 : Public Properties
 
 <table>
 <tr>
@@ -131,7 +130,7 @@ Gets or sets the value, indicating whether to apply style for last row.</td></tr
 
 Public Methods
 
-_Table_ _31__: Public Methods_
+Table 31 : Public Methods
 
 <table>
 <tr>
@@ -259,7 +258,7 @@ You can use the AddCell and AddCell(bool isCopyFormat) methods to add new cells 
 
 Public Constructors
 
-_Table_ _32__: Public Constructors_
+Table 32 : Public Constructors
 
 <table>
 <tr>
@@ -275,7 +274,7 @@ Initializes a new instance of the WTableRow class.  </td></tr>
 
 Public Properties
 
-_Table_ _33__: Public Properties_
+Table 33 : Public Properties
 
 <table>
 <tr>
@@ -315,7 +314,7 @@ Specifies table format.  </td></tr>
 
 Public Methods
 
-_Table_ _34__: Public Methods_
+Table 34 : Public Methods
 
 <table>
 <tr>
@@ -355,7 +354,7 @@ The following screenshot illustrates how to set the Cell Format in Microsoft Wor
 
 Cell Format Public Properties
 
-_Table_ _35__: Cell Format Public Properties_
+Table 35 : Cell Format Public Properties
 
 <table>
 <tr>
@@ -403,7 +402,7 @@ Gets or sets a value indicating vertical merging of a cell. </td></tr>
 
 Public Constructors
 
-_Table_ _36__: Public Constructors_
+Table 36 : Public Constructors
 
 <table>
 <tr>
@@ -419,7 +418,7 @@ Initializes a new instance of the WTableCell class.  </td></tr>
 
 Public Properties
 
-_Table_ _37__: Public Properties_
+Table 37 : Public Properties
 
 <table>
 <tr>
@@ -447,7 +446,7 @@ Specifies the cell width (in points).</td></tr>
 
 Public Methods
 
-_Table_ _38__: Public Methods_
+Table 38 : Public Methods
 
 <table>
 <tr>
@@ -592,7 +591,7 @@ The following screenshot illustrates how to set Row Format in Microsoft Word.
 
 Public Properties
 
-_Table_ _39__: Public Properties_
+Table 39 : Public Properties
 
 <table>
 <tr>

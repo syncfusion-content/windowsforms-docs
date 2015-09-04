@@ -44,7 +44,7 @@ WFootnote class represents the structure and properties of footnotes and endnot
 
  ParagraphItem
 
-                  |
+                  
 
              WFootnote
 
@@ -52,7 +52,7 @@ WFootnote class represents the structure and properties of footnotes and endnot
 
 Public Constructors
 
- _Table_ _105__: Public cConstructors_
+Table 105 : Public cConstructors
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ Initializes a new instance of the WFootnote class  </td></tr>
 
 Public Properties
 
-_Table_ _106__: Public Properties_
+Table 106 : Public Properties
 
 <table>
 <tr>
@@ -236,7 +236,7 @@ A Footnote or Endnote separator is a line preserved between the body and the end
 
 Public Constructors
 
-_Table_ _107__: Public Constructors_
+Table 107 : Public Constructors
 
 <table>
 <tr>
@@ -256,7 +256,7 @@ Initializes a new instance of the Endnote class.</td></tr>
 
 Public Properties 
 
-_Table_ _108__: Public Properties_
+Table 108 : Public Properties
 
 <table>
 <tr>

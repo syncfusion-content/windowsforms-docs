@@ -44,7 +44,7 @@ The following screenshot illustrates the breaks accessible through the Insert me
 
 Public Constructors
 
-_Table_ _22__: Public Constructors_
+Table 22 : Public Constructors
 
 <table>
 <tr>
@@ -60,7 +60,7 @@ Initializes a new instance of the WSection class.  </td></tr>
 
 Public Properties
 
-_Table_ _23__: Public Properties_
+Table 23 : Public Properties
 
 <table>
 <tr>
@@ -108,7 +108,7 @@ Gets collections of tables in the sections as IWTableCollection instance.</td></
 
 Public Methods
 
-_Table_ _24__: Public Methods_
+Table 24 : Public Methods
 
 <table>
 <tr>
@@ -207,7 +207,7 @@ The following properties return the instance of the HeaderFooter type.
 
 Public Properties
 
-_Table_ _25__: Public Properties_
+Table 25 : Public Properties
 
 <table>
 <tr>
@@ -259,7 +259,7 @@ Links to a previous section's header and footer.</td></tr>
 
 Public Methods
 
-_Table_ _26__: Public Methods_
+Table 26 : Public Methods
 
 <table>
 <tr>
@@ -281,7 +281,7 @@ The HeaderFooter class represents the page header or footer. It is inherited fro
 
 Public Properties
 
-_Table_ _27__: Public Properties_
+Table 27 : Public Properties
 
 <table>
 <tr>
@@ -315,7 +315,7 @@ Page Setup of a section is accessible through the PageSetup property of Essentia
 
 
 
-_Table_ _28__: PageSetup Properties_
+Table 28 : PageSetup Properties
 
 <table>
 <tr>
@@ -423,7 +423,7 @@ The following screenshot shows the page number option of Microsoft Word.
 
 
 
-_Figure_ _23__: Page Number Settings_
+Figure 23 : Page Number Settings
 
 
 

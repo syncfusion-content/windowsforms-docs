@@ -42,7 +42,7 @@ WField
 
 Public Properties
 
-_Table_ _82__:Public Properties_
+Table 82 :Public Properties
 
 <table>
 <tr>
@@ -142,7 +142,7 @@ WField
 
 Public Methods
 
-_Table_ _83__: Public Methods_
+Table 83 : Public Methods
 
 <table>
 <tr>
@@ -158,7 +158,7 @@ Initializes a new instance of the WCheckBox class. </td></tr>
 
 Public Properties
 
-_Table_ _84__: Public Properties_
+Table 84 : Public Properties
 
 <table>
 <tr>
@@ -262,7 +262,7 @@ WDropDownFormField
 
 Public Constructors
 
-_Table_ _85__: Public Constructors_
+Table 85 : Public Constructors
 
 <table>
 <tr>
@@ -278,7 +278,7 @@ Initializes a new instance of the WDropDownFormField class. </td></tr>
 
 Public Properties
 
-_Table_ _86__: Public Properties_
+Table 86 : Public Properties
 
 <table>
 <tr>
@@ -341,7 +341,7 @@ To set the format of the DocIO text directly from the field, you can use the Str
 
 
 
-_Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value._
+> Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
 
 
 
@@ -373,7 +373,7 @@ WFormField
 
 Public Constructors
 
-_Table_ _87__: Public Constructors_
+Table 87 : Public Constructors
 
 <table>
 <tr>
@@ -389,7 +389,7 @@ Initializes a new instance of the WTextFormField class. </td></tr>
 
 Public Properties
 
-_Table_ _88__: Public Properties_
+Table 88 : Public Properties
 
 <table>
 <tr>

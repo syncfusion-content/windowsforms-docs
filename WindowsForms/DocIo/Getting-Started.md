@@ -105,20 +105,20 @@ document.SaveOptions.MaintainCompatibilityMode = True
 
 {%endhighlight%}
 
-_Table_ _4__: Supported file formats in various platforms to load and save the document using DocIO_
+Table 4: Supported file formats in various platforms to load and save the document using DocIO
 
 <table>
 <tr>
-<td rowspan = "2">
-File Format Type</td><td rowspan = "2">
-Open</td><td rowspan = "2">
-Save</td><td colspan = "3">
-Supported Platforms</td></tr>
+<th rowspan = "2">
+File Format Type</th><th rowspan = "2">
+Open</th><th rowspan = "2">
+Save</th><th colspan = "3">
+Supported Platforms</th></tr>
 <tr>
-<td>
-Windows Forms/WPF/ASP.NET Web/MVC </td><td>
-Silverlight/LightSwitch/Windows Phone – Silverlight 8 and 8.1.</td><td>
-Windows Store Applications/Windows Phone 8.1 (Based on WinRT)</td></tr>
+<th>
+Windows Forms/WPF/ASP.NET Web/MVC </th><th>
+Silverlight/LightSwitch/Windows Phone – Silverlight 8 and 8.1.</th><th>
+Windows Store Applications/Windows Phone 8.1 (Based on WinRT)</th></tr>
 <tr>
 <td>
 Doc</td><td>
@@ -399,7 +399,7 @@ You can utilize the asynchronous Open and Save methods of WordDocument class to 
 
 
 
-_Note: Asynchronous support is applicable only to Windows Store, Windows Phone - Silverlight 8 and 8.1, and Windows Phone 8.1 (based on WinRT) apps._
+> Note: Asynchronous support is applicable only to Windows Store, Windows Phone - Silverlight 8 and 8.1, and Windows Phone 8.1 (based on WinRT) apps.
 
 <table>
 <tr>
@@ -431,7 +431,7 @@ Opens the document asynchronously from the stream that has the specified format 
 </table>
 
 
-_Table_ _6__: Overloads for SaveAsync method_
+Table 6 : Overloads for SaveAsync method
 
 <table>
 <tr>

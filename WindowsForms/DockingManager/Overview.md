@@ -25,11 +25,11 @@ Docking window may be defined as a control that attaches itself to a host contro
 
 ## Features
 
-* Office 2007 style look and feel for [MDIChild Forms](/windowsforms/DockingPackage/Advanced-Features.html#mdi-child-transition).
-* New VS 2008 DragProvider style for Docking manager. See [Dock Arrow Settings](/windowsforms/DockingPackage/Special-Features.html#dock-arrow-settings) for details.
+* Office 2007 style look and feel for [MDIChild Forms](/windowsforms/dockingmanager/advanced-features#mdi-child-transition).
+* New VS 2008 DragProvider style for Docking manager. See [Dock Arrow Settings](/windowsforms/dockingmanager/special-features#dock-arrow-settings) for details.
 * Visual styles
 
-Docking manager renders various styles that adds standard look and feel to your application. The [Visual Styles](/windowsforms/DockingPackage/Appearance-Settings.html#visual-styles) includes VS2005, Office 2003, Office2007, Office2007 Outlook. It supports blue, silver and black themes in Office2007 visual style.
+Docking manager renders various styles that adds standard look and feel to your application. The [Visual Styles](/windowsforms/dockingmanager/appearance-settings#visual-styles) includes VS2005, Office 2003, Office2007, Office2007 Outlook. It supports blue, silver and black themes in Office2007 visual style.
 
 * Dockingwindow
 
@@ -37,7 +37,7 @@ Docking window wraps the host control that is docked and enables the control to 
 
 * Dock arrows 
 
-[Dock arrow](/windowsforms/DockingPackage/Special-Features.html#dock-arrow-settings) guides where the control is to be docked and docks the control in the specified side.
+[Dock arrow](/windowsforms/dockingmanager/special-features#dock-arrow-settings) guides where the control is to be docked and docks the control in the specified side.
 
 * WYSIWYG Designer Engine
 
@@ -45,23 +45,23 @@ To ease the process of designing layouts, the docking windows framework provides
 
 * Tabbed docking
 
-Docking manager allows controls to be [tabbed](/windowsforms/DockingPackage/Docking-Styles.html#tabbed-docking) along with the docking capability.
+Docking manager allows controls to be [tabbed](/windowsforms/dockingmanager/docking-styles#tabbed-docking) along with the docking capability.
 
 * Auto Hide
 
-Docking manager provides an auto hide facility to the docked control. Docked controls can be hidden and will be tabbed along the side of the container control on which it was placed. The control will restore its appearance when the tab is clicked. Click [here](/windowsforms/DockingPackage/Docking-Styles.html#oncaptiondoubleclick-event) to know more.
+Docking manager provides an auto hide facility to the docked control. Docked controls can be hidden and will be tabbed along the side of the container control on which it was placed. The control will restore its appearance when the tab is clicked. Click [here](/windowsforms/dockingmanager/docking-styles#oncaptiondoubleclick-event) to know more.
 
 * Toggle docking
 
-The docked conrol can toggle its docking capability to floating and vice versa by double clicking on the caption or the title bar of the docking window. See [Floating](/windowsforms/DockingPackage/Docking-Styles.html#floating) topic.
+The docked conrol can toggle its docking capability to floating and vice versa by double clicking on the caption or the title bar of the docking window. See [Floating](/windowsforms/dockingmanager/docking-styles#floating) topic.
 
 * State Persistence
 
-The docking manager has the ability to load and store dock state information into default storage medium, XML files and also in other storage medium such as database. See [Dock State Persistence](/windowsforms/DockingPackage/Advanced-Features.html#dock-state-persistence).
+The docking manager has the ability to load and store dock state information into default storage medium, XML files and also in other storage medium such as database. See [Dock State Persistence](/windowsforms/dockingmanager/advanced-features#dock-state-persistence).
 
 * Nested Docking
 
-The docking windows framework provides a full fledged support for nested docking layouts.
+The docking windows framework provides a full fledged support for [nested docking](/windowsforms/dockingmanager/advanced-features#nested-docking-and-floating) layouts.
 
 * Design time drag drop and Floating
 
@@ -69,11 +69,11 @@ The docking manager architecture enables dragging, dropping and floating of the 
 
 * Docking - MDIChild Transitions 
 
-The Syncfusion dockable controls can be seamlessly transformed to and from [MDIChild](/windowsforms/DockingPackage/Advanced-Features.html#mdi-child-transition) forms using the pre-wired context menu or the programmatic API. Combining this behavior with the Essential Tools TabbedMDI framework allows docking and MDIChild window states to be switched around like in the Visual Studio .NET IDE.
+The Syncfusion dockable controls can be seamlessly transformed to and from [MDIChild](/windowsforms/dockingmanager/advanced-features#mdi-child-transition) forms using the pre-wired context menu or the programmatic API. Combining this behavior with the Essential Tools TabbedMDI framework allows docking and MDIChild window states to be switched around like in the Visual Studio .NET IDE.
 
 * DockToFill Option
 
-The [DockToFill](/windowsforms/DockingPackage/Special-Features.html#docktofill-freeze-resizing) feature allows users to implement a very unique docking layout where a non-MDIContainer form or container control's entire client region is composed of dockable controls. The DockToFill mode capability of the docking manager creates forms comprising entirely of dockable windows.
+The [DockToFill](/windowsforms/dockingmanager/special-features#docktofill-freeze-resizing) feature allows users to implement a very unique docking layout where a non-MDIContainer form or container control's entire client region is composed of dockable controls. The DockToFill mode capability of the docking manager creates forms comprising entirely of dockable windows.
 
 * Caption Buttons
 
@@ -81,7 +81,7 @@ The docking manager allows the users to set the visibility of the close button, 
 
 * Custom Caption Button
 
-[Custom Caption Buttons](/windowsforms/DockingPackage/Caption-Bar.html#custom-caption-buttons) is a newly added feature in Docking Manager. This allows user to customize the existing caption buttons like menu button, close button, autohide button and maximize button and also to create a new caption button and customize it.
+[Custom Caption Buttons](/windowsforms/dockingmanager/caption-bar#custom-caption-buttons) is a newly added feature in Docking Manager. This allows user to customize the existing caption buttons like menu button, close button, autohide button and maximize button and also to create a new caption button and customize it.
 
 * Container control support
 
@@ -103,6 +103,6 @@ Now, DockAbility / OuterDockAbility features allow to hide docking arrows so tha
 
 {% seealso %}
 
-[Getting Started](/windowsforms/DockingPackage/Getting-Started)
+[Getting Started](/windowsforms/dockingmanager/getting-started)
 
 {% endseealso %}

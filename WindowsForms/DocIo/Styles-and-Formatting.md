@@ -25,7 +25,7 @@ The following are the types of formattings supported by DocIO.
 
 
 
-> _Note: DocIO currently does not support table styles._
+> Note: DocIO currently does not support table styles.
 
 
 
@@ -34,7 +34,7 @@ Introduction to styles and formatting in DocIO
 DocIO allows you to create your own paragraph style and list styles (user-defined style), which can be applied to any paragraph or list item. Refer to the Paragraph formatting section to know more about the user-defined styles.
 
 
-> _Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition._
+> Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition.
 
 
 
@@ -46,7 +46,7 @@ DocIO Style class is a base class for the other style classes. Style is an abs
 
 Public Properties
 
-_Table_ _109__: Public Properties_
+Table 109 : Public Properties
 
 <table>
 <tr>
@@ -70,9 +70,10 @@ Gets the type of style.  </td></tr>
 IsPrimaryStyle</td><td>
 Gets or sets the Primary style definition. If you set this to true, then the corresponding style will be displayed in Syles ribbon of Microsoft Word.</td></tr>
 </table>
+
 Public Methods
 
-_Table_ _110__: Public Methods_
+Table 110 : Public Methods
 
 <table>
 <tr>
@@ -146,13 +147,13 @@ Character Styles
 
 This sections elaborates how to deal with the Character Styles. The class CharacterStyle takes resposibilty for handling the character styles. 
 
-> _Note: DocIO does not provide support to add user-defined character styles to the document_
+> Note: DocIO does not provide support to add user-defined character styles to the document
 
 Class Hierarchy
 
 Style
 
-   |
+   
 
     CharacterStyle
 
@@ -162,7 +163,7 @@ Public Properties
 
 
 
-_Table_ _111__: Public Properties_
+Table 111 : Public Properties
 
 <table>
 <tr>
@@ -202,7 +203,7 @@ Gets or sets the stylistic set type (Microsoft Word 2010 specific property).</td
 
 Public Methods
 
-_Table_ _112__: Public Methods_
+Table 112 : Public Methods
 
 <table>
 <tr>
@@ -226,7 +227,7 @@ Class Hierarchy
 
 FormatBase
 
-         |
+         
 
          WCharacterFormat
 
@@ -234,7 +235,7 @@ FormatBase
 
 Public Constructor
 
-_Table_ _113__: Public Constructor_
+Table 113 : Public Constructor
 
 <table>
 <tr>
@@ -250,7 +251,7 @@ Initializes a new instance of the WCharacterFormat class.</td></tr>
 
 Public Properties
 
-_Table_ _114__: Public Properties_
+Table 114 : Public Properties
 
 <table>
 <tr>
@@ -637,6 +638,7 @@ textRange.CharacterFormat.LocaleIdFarEast = 2052
 
 {% endhighlight %}
 
+
 ## Paragraph Formatting Properties
 
 Paragraph Style
@@ -647,7 +649,7 @@ WParagraphStyle class represents paragraph style in DocIO. Paragraph Style is a
 
 
 
-_Figure_ _50__: Setting Paragraph Style_
+Figure 50 : Setting Paragraph Style
 
 
 
@@ -657,7 +659,7 @@ Class Hierarchy
 
 Style
 
-  |
+  
 
     WParagraphStyle
 
@@ -665,13 +667,13 @@ Style
 
 Public Constructors
 
-_Table_ _115__: Public Constructor_
+Table 115 : Public Constructor
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WParagraphStyle.WParagraphStyle (IWordDocument)</td><td>
@@ -681,13 +683,13 @@ Initializes a new instance of the WParagraphStyle class.  </td></tr>
 
 Public Properties
 
-_Table_ _116__: Public Properties_
+Table 116 : Public Properties
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BaseStyle</td><td>
@@ -705,13 +707,13 @@ Gets the type of the style.</td></tr>
 
 Public Methods
 
-_Table_ _117__: Public Methods_
+Table 117 : Public Methods
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ApplyBaseStyle</td><td>
@@ -912,7 +914,7 @@ WParagraphFormat class represents paragraph formatting in Essential DocIO. The 
 
 
 
-_Figure_ _51__: Paragraph Formatting_
+Figure 51 : Paragraph Formatting
 
 
 
@@ -920,7 +922,7 @@ Class Hierarchy
 
 FormatBase
 
-           |
+           
 
             WParagraphFormat 
 
@@ -928,13 +930,13 @@ Public Constructors
 
 
 
-_Table_ _118__: Public Constructors_
+Table 118 : Public Constructors
 
 <table>
 <tr>
-<td>
-Constructors </td><td>
-Description</td></tr>
+<th>
+Constructors </th><th>
+Description</th></tr>
 <tr>
 <td>
 WParagraphFormat.WParagraphFormat ()</td><td>
@@ -944,15 +946,16 @@ Initializes a new instance of WParagraphFormat class. </td></tr>
 WParagraphFormat.WParagraphFormat (IWordDocument)</td><td>
 Initializes a new instance of WParagraphFormat class.</td></tr>
 </table>
+
 Public Properties
 
-_Table_ _119__: Public Properties_
+Table 119 : Public Properties
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AfterSpacing</td><td>
@@ -1065,13 +1068,13 @@ Class Hierarchy
 
 WParagraphFormat
 
-   |
+   
 
     Tabs
 
 Public Properties
 
-_Table_ _120__: Public Properties_
+Table 120 : Public Properties
 
 <table>
 <tr>
@@ -1101,13 +1104,13 @@ Public Methods
 
 
 
-_Table_ _121__: Public Methods_
+Table 121 : Public Methods
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddTab()</td><td>
@@ -1263,19 +1266,19 @@ The following screenshot demonstrates how to create list styles by using Microso
 
 
 
-_Figure_ _52__: Creating List Styles_
+Figure 52 : Creating List Styles
 
 
 
 Public Properties
 
-_Table_ _122__: Public Properties_
+Table 122 : Public Properties
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Levels</td><td>
@@ -1297,15 +1300,16 @@ Gets the type of the style.  </td></tr>
 ListStyle.ListStyle (IWordDocument, ListType)</td><td>
 Initializes a new instance of the ListStyle class.</td></tr>
 </table>
+
 Public Methods
 
-_Table_ _123__: Public Methods_
+Table 123 : Public Methods
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -1321,27 +1325,28 @@ WListLevel class represents list level in Essential DocIO. By using the WListLe
 
 Public Constructor
 
-_Table_ _124__: Public Constructor_
+Table 124 : Public Constructor
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WListLevel.WListLevel (ListStyle)</td><td>
 Initializes new instance of WListLevel class.</td></tr>
 </table>
+
 Public Methods
 
-_Table_ _125__: Public Methods_
+Table 125 : Public Methods
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -1354,13 +1359,13 @@ Gets list symbol for specified item index.</td></tr>
 
 Public Properties
 
-_Table_ _126__: Public Properties_
+Table 126 : Public Properties
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BulletCharacter</td><td>
@@ -1694,13 +1699,13 @@ Class Hierarchy
 
 FormatBase
 
-|
+
 
             WListFormat 
 
 Public Constructor
 
-_Table_ _127__: Public Constructors_
+Table 127 : Public Constructors
 
 <table>
 <tr>
@@ -1712,15 +1717,16 @@ Description</td></tr>
 WListFormat.WListFormat (IWParagraph)</td><td>
 Initializes new instance of WListFormat class.</td></tr>
 </table>
- Public Properties
+ 
+Public Properties
 
-_Table_ _128__: Public Properties_
+Table 128 : Public Properties
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrentListLevel</td><td>
@@ -1746,15 +1752,16 @@ Gets or sets the type of the list.</td></tr>
 RestartNumbering</td><td>
 Gets or sets whether numbering of the list must restart from previous list.</td></tr>
 </table>
- Public Methods
+ 
+Public Methods
 
-_Table_ _129__: Public Methods_
+Table 129 : Public Methods
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ApplyDefBulletStyle</td><td>
@@ -2088,7 +2095,7 @@ methods. The WTextBoxFormat class specifies formatting for the Text Box.
 
 ![](Styles-and-Formatting_images/Styles-and-Formatting_img7.png)
 
-_Figure_ _53__: Formatting Text Box_
+Figure 53 : Formatting Text Box
 
 
 
@@ -2147,19 +2154,19 @@ Class Hierarchy
 
  FormatBase
 
-            |
+            
 
             WTextBoxFormat
 
 Public Constructor
 
-_Table_ _130__: Public Constructor_
+Table 130 : Public Constructor
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 WTextBoxFormat.WTextBoxFormat (IWordDocument)</td><td>
@@ -2169,13 +2176,13 @@ Initializes a new instance of the WTextBoxFormat class.</td></tr>
 
 Public Properties
 
-_Table_ _131__: Public Properties_
+Table 131 : Public Properties
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 FillColor</td><td>
@@ -2241,15 +2248,16 @@ Gets or sets  the textbox vertical position (in points).  </td></tr>
 Width</td><td>
 Gets or sets  the textbox width (in points).  </td></tr>
 </table>
+
 Public Methods
 
-_Table_ _132__: Public Methods_
+Table 132 : Public Methods
 
 <table>
 <tr>
-<td>
-Method </td><td>
-Description</td></tr>
+<th>
+Method </th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>

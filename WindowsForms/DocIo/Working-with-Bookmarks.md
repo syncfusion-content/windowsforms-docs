@@ -26,7 +26,7 @@ The following steps illustrate how to add a bookmark in Word:
 4. Click Add button.
 
 
-_Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words._
+Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words.
 
 
 
@@ -58,7 +58,7 @@ WBookmarkEnd
 
 BookmarkStart Public Constructors
 
-_Table_ _66__: BookmarkStart Public Constructors_
+Table 66 : BookmarkStart Public Constructors
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ Initializes a new instance of the BookmarkStart class.  </td></tr>
 
 BookmarkEnd Public Constructors
 
-_Table_ _67__: BookmarkEnd Public Constructors_
+Table 67 : BookmarkEnd Public Constructors
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ Initializes a new instance of the BookmarkEnd class. </td></tr>
 
 Public Properties
 
-_Table_ _68__: Public Properties_
+Table 68 : Public Properties
 
 <table>
 <tr>
@@ -117,7 +117,7 @@ DocIO provides support to navigate to bookmarks. For details, see BookmarkNaviga
 
 
 
-_Note: Modification of bookmarks in the Bookmarks Collection causes document corruption._
+> Note: Modification of bookmarks in the Bookmarks Collection causes document corruption.
 
 
 
@@ -208,7 +208,7 @@ BookmarkNavigator is used for navigating to bookmarks in a Word document.
 
 Public Constructors
 
-_Table_ _69__: Public Constructors_
+Table 69 : Public Constructors
 
 <table>
 <tr>
@@ -222,7 +222,7 @@ Initializes a new instance of the BookmarkNavigator class. </td></tr>
 </table>
 Public Properties
 
-_Table_ _70__: Public Properties_
+Table 70 : Public Properties
 
 <table>
 <tr>
@@ -242,7 +242,7 @@ Gets or sets the Document where the object is attached to. </td></tr>
 
 Public Methods
 
-_Table_ _71__: Public Methods_
+Table 71 : Public Methods
 
 <table>
 <tr>
@@ -296,10 +296,10 @@ Inserts the body part of the text.</td></tr>
 </table>
 
 
-_Note:_
+> Note:
 
-> * _Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark._
-> * _Use for loop when replacing all the bookmarks in a document instead of foreach loop to avoid “collection modified exception”, as the Bookmarks collection is modified internally by preserving bookmark position once after replacing._
+> * Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark.
+> * Use for loop when replacing all the bookmarks in a document instead of foreach loop to avoid “collection modified exception”, as the Bookmarks collection is modified internally by preserving bookmark position once after replacing.
 
 The following are the restrictions on the Replace BookmarkContent methods such as,
 
@@ -310,13 +310,13 @@ Due to MS Word’s behavior, you cannot replace the bookmark content, when the b
 
 Case 1
 
-![][^E6721B4986F9545EF92693A89BD41D3E477EF62EB5EA1E82CE^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img5.png)
+![](Working-with-Bookmarks_images/Working-with-Bookmarks_img5.png)
 
 
 
 Case 2
 
-![][^808D0403340DCCC6C0D4853B479F46AE75C9328F5BFE21863E^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img6.png)
+![](Working-with-Bookmarks_images/Working-with-Bookmarks_img6.png)
 
 
 
@@ -390,11 +390,11 @@ The usage is common for both environments except for the part where the created 
 WordDocumentPart class contains the collection of sections. WordDocumentPart is usually used with the Bookmark Navigator.
 
 
-_Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document._
+> Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document.
 
 Public Constructors
 
-_Table_ _72__: Constructors Table_
+Table 72 : Constructors Table
 
 <table>
 <tr>
@@ -414,7 +414,7 @@ Initializes a new instance of the WordDocumentPart class and loads the content o
 
 Public Properties
 
-_Table_ _73__: Properties Table_
+Table 73 : Properties Table
 
 <table>
 <tr>
@@ -430,7 +430,7 @@ Gets the sections in the WordDocumentPart</td></tr>
 
 Public Methods
 
-_Table_ _74__: Methods Table_
+Table 74 : Methods Table
 
 <table>
 <tr>

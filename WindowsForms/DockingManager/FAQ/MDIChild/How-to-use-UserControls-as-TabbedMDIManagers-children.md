@@ -86,6 +86,6 @@ Me.dockingManager1.SetAsMDIChild(Me.userControl31,True)
 
 {% seealso %}
 
-[MDI Child Transition](/windowsforms/DockingPackage/Advanced-Features.html#mdi-child-transition)
+[MDI Child Transition](/windowsforms/dockingmanager/advanced-features#mdi-child-transition)
 
 {% endseealso %}

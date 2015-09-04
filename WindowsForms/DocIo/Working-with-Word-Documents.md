@@ -15,7 +15,7 @@ You can open, modify, and create Microsoft Word documents by using the WordDocum
 
 Public Properties
 
-_Table_ _7_: Public Properties_
+Table 7 : Public Properties
 
 <table>
 <tr>
@@ -171,7 +171,7 @@ Gets information on actual format type of the document.</td></tr>
 
 Public Constructors
 
-_Table_ _8_: Public Constructors_
+Table 8 : Public Constructors
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Initializes a new instance of the WordDocument class from existing Word document
 
 Public Methods
 
-_Table_ _9_: Public Methods_
+Table 9 : Public Methods
 
 <table>
 <tr>
@@ -338,7 +338,7 @@ Updates Paragraph Count, Word Count, and Character Count.</td></tr>
 By using Essential DocIO, you can create a copy of a whole Word document or a particular entity (such as WSection, WParagraph, WTable, WTextRange, etc.) by invoking the Clone method of the Entity. This method returns the shallow copy of the Entity that invoked the Clone method. By using this functionality, you can copy the whole document or part of its content along with its formatting from one document and add it to another document.
 
 
-_> Note: When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document._
+> Note: When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document.
 
 The following code example illustrates how to merge two documents by using the Clone method.
 
@@ -475,7 +475,7 @@ Dim document As New WordDocument(filename, password)
 {% endhighlight %}
 
 
-> _Note: Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform_.
+> Note: Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform.
 
 
 
@@ -533,7 +533,7 @@ Class Hierarchy
 
 SummaryDocumentProperties
 
-|
+
 
 BuiltinDocumentProperties
 
@@ -541,7 +541,7 @@ BuiltinDocumentProperties
 
 Public Properties
 
-_Table_ _10_: Public Properties_
+Table 10 : Public Properties
 
 <table>
 <tr>
@@ -589,7 +589,7 @@ Gets the slide count.</td></tr>
 
 Public Methods
 
-_Table_ _11_: Public Methods_
+Table 11 : Public Methods
 
 <table>
 <tr>
@@ -618,7 +618,7 @@ CustomDocumentProperties class enables you to create and save your own custom pr
 
 Public Properties
 
-_Table_ _12_: Public Properties_
+Table 12 : Public Properties
 
 <table>
 <tr>
@@ -634,7 +634,7 @@ Gets number of custom document properties in a document.</td></tr>
 
 Public Methods
 
-_Table_ _13_: Public Methods_
+Table 13 : Public Methods
 
 <table>
 <tr>
@@ -664,7 +664,7 @@ This class represents each custom document property.
 
 Public Methods
 
-_Table_ _14_: Public Methods_
+Table 14 : Public Methods
 
 <table>
 <tr>
@@ -762,7 +762,7 @@ Background class represents the background color and fill effects in a Word docu
 * Texture: Insert a picture as the.
 * Color: Color fill effect.
 
-_> Note: Pattern fill effect is currently not supported by Essential DocIO._
+> Note: Pattern fill effect is currently not supported by Essential DocIO.
 
 By using the WordDocument.Background property, you can access the document background. The Background property of WordDocument is automatically initialized with the Type property of the Background set to NoBackground.
 
@@ -770,7 +770,7 @@ By using the WordDocument.Background property, you can access the document backg
 
 Public Properties
 
-_Table_ _15_: Public Properties_
+Table 15 : Public Properties
 
 <table>
 <tr>
@@ -797,7 +797,7 @@ Specifies the type of the background effect for a document.</td></tr>
 
 
 
-> _Note: For more details on BackgroundGradient class, refer to the_ BackgroundGradient _topic._
+> Note: For more details on BackgroundGradient class, refer to the_ BackgroundGradient _topic.
 
 
 
@@ -822,7 +822,7 @@ Color1 and Color2 properties of Background Gradient define the gradient colors. 
 
 Public Properties
 
-_Table_ _16_: Public Properties_
+Table 16 : Public Properties
 
 <table>
 <tr>
@@ -850,7 +850,7 @@ Gets or sets the shading variants. </td></tr>
 
 Public Methods
 
-_Table_ _17_: Public Methods_
+Table 17 : Public Methods
 
 <table>
 <tr>
@@ -913,7 +913,7 @@ Class Hierarchy
 
 ParagraphItem
 
-|
+
 
 Watermark
 
@@ -960,11 +960,11 @@ Class Hierarchy
 
 ParagraphItem
 
-|
+
 
 Watermark
 
-|
+
 
         		TextWatermark
 
@@ -972,7 +972,7 @@ Watermark
 
 Public Constructors
 
-_Table_ _18_: Public Constructors_
+Table 18 : Public Constructors
 
 <table>
 <tr>
@@ -996,7 +996,7 @@ Initializes a new instance of the TextWatermark class with watermark text, text 
 
 Public Properties
 
-_Table_ _19_: Public Properties_
+Table 19 : Public Properties
 
 <table>
 <tr>
@@ -1082,11 +1082,11 @@ Class Hierarchy
 
 ParagraphItem
 
-|
+
 
 Watermark
 
-|
+
 
         		 PictureWatermark
 
@@ -1094,7 +1094,7 @@ Watermark
 
 Public Constructors
 
-_Table_ _20_: Public Constructors_
+Table 20 : Public Constructors
 
 <table>
 <tr>
@@ -1114,7 +1114,7 @@ Initializes a new instance of the PictureWatermark class with System.Drawing.Ima
 
 Public Properties
 
-_Table_ _21_: Public Properties_
+Table 21 : Public Properties
 
 <table>
 <tr>
@@ -1266,7 +1266,7 @@ Track Changes feature enables you to keep track of the changes made to a documen
 
 Revision Tracking is normally meant for use in a shared environment, so you can keep track of changes made to a document. However, it is a valuable tool even when you are the only one using a document, as you can view the changes made.
 
-Accessing Revisions
+###Accessing Revisions
 
 You can choose to accept or reject the changes made to a document by using AcceptChanges and RejectChanges methods of WordDocument class.
 

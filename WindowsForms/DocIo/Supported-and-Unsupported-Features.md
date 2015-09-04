@@ -11,11 +11,11 @@ documentation: ug
 
 This section describes the platform wise support and unsupported elements in DocIO. 
 
-Supported Elements in Silverlight
+##Supported Elements in Silverlight
 
 The list of various supported and non-supported elements of Essential DocIO in Silverlight platform is given in the following table.
 
-_Table_ _138__: Supported Elements in Silverlight Platform_
+Table 138 : Supported Elements in Silverlight Platform
 
 <table>
 <tr>
@@ -292,11 +292,11 @@ Yes</td></tr>
 </table>
 
 
-Supported Elements in Windows, ASP.NET, WPF and ASP.NET MVC
+##Supported Elements in Windows, ASP.NET, WPF and ASP.NET MVC
 
 The list of various supported and non-supported elements of Essential DocIO in Windows, ASP.NET, WPF, and ASP.NET MVC platforms is given in the following table.
 
-_Table_ _139__: Supported Elements in Windows, ASP.NET, WPF, and ASP.NET MVC_
+Table 139 : Supported Elements in Windows, ASP.NET, WPF, and ASP.NET MVC
 
 <table>
 <tr>
@@ -573,11 +573,11 @@ Yes</td></tr>
 </table>
 
 
-Supported Elements in Windows Store Platform
+##Supported Elements in Windows Store Platform
 
 The list of various supported and non-supported elements of Essential DocIO in Windows store platform is given in the following table.
 
-_Table_ _140__: Supported Elements in Windows Store Platform_
+Table 140 : Supported Elements in Windows Store Platform
 
 <table>
 <tr>
