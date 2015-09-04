@@ -73,4 +73,4 @@ excelEngine.Dispose()
 {% endhighlight %}
 
 
-> Note: Locking/Unlocking cells in an unprotected worksheet has no effect.
+N> Locking/Unlocking cells in an unprotected worksheet has no effect.

@@ -3,7 +3,7 @@ layout: post
 title: How to change the order of the XPTaskBar Boxes in the designer after creating them
 description: Frequently Asked Questions
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # How to change the order of the XPTaskBar Boxes in the designer after creating them

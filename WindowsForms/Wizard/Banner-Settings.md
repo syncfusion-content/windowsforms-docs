@@ -3,7 +3,7 @@ layout: post
 title: Banner-Settings
 description: banner settings
 platform: WindowsForms
-control: WizardPackage 
+control: Wizard
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ The controls inside the Banner Control include Banner Panel, Title, description 
 
 A Banner Panel is a simple gradient panel which holds a Title label, a Description label and a Picture box controls. 
 
-_Table_ _939_: Property Table
+Table 939: Property Table
 
 <table>
 <tr>
@@ -80,11 +80,11 @@ Me.gradientPanel1.Controls.Add(Me.label2)
 
 N> The appearance of a Banner panel can be customized using the properties of the gradient panel. See_ Border styles _for border settings of a Banner Panel.
 
-Layout of the Banner Controls
+### Layout of the Banner Controls
 
 The below properties controls the layout of the respective banner controls.
 
-_Table_ _940_: Property Table
+Table 940: Property Table
 
 <table>
 <tr>
@@ -140,11 +140,11 @@ Title and Description Settings
 
 
 
-Title Text
+### Title Text
 
 The font style and the fore color for the Title text can be edited through Label.Font and Label.Font property.
 
-_Table_ _941_: Property Table
+Table 941: Property Table
 
 <table>
 <tr>
@@ -198,7 +198,7 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 The appearance of the description text for a wizard control can be edited using the description label properties.
 
-_Table_ _942_: Property Table
+Table 942: Property Table
 
 <table>
 <tr>

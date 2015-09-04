@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How-to-Cancel-the-AutoLayout-of-the-Banner-panel-c
+title: How-to-Cancel-the-AutoLayout-of-the-Banner-panel-controls
 description: how to cancel the autolayout of the banner panel controls
 platform: WindowsForms
-control: WizardPackage
+control: Wizard
 documentation: ug
 ---
 

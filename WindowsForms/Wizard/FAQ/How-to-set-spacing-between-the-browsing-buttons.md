@@ -3,7 +3,7 @@ layout: post
 title: How-to-set-spacing-between-the-browsing-buttons
 description: how to set spacing between the browsing buttons?
 platform: WindowsForms
-control: WizardPackage
+control: Wizard
 documentation: ug
 ---
 

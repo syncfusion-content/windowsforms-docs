@@ -3,7 +3,7 @@ layout: post
 title: Browse-Buttons
 description: browse buttons
 platform: WindowsForms
-control: WizardPackage 
+control: Wizard
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ N> You can navigate between the pages at Design Time also. See Page Navigation a
 
 By default, all the buttons are visible for all the Wizard pages. To change their visibility, use the below properties in individual pages.
 
-_Table_ _947_: Property Table
+Table 947: Property Table
 
 <table>
 <tr>
@@ -82,7 +82,7 @@ Me.wizardControlPage1.FinishVisible = True
 
 You can enable or disable the buttons using the respective button enabled properties.
 
-_Table_ _948_: Property Table
+Table 948: Property Table
 
 <table>
 <tr>
@@ -110,7 +110,8 @@ Specifies whether the state of 'Help' button should be enabled or disabled.</td>
 NextEnabled</td><td>
 Specifies whether the state of 'Next' button should be enabled or disabled.</td></tr>
 </table>
-Adding Finish Button
+
+###Adding Finish Button
 
 In order to display the 'Finish' button in the last wizard page, user should set CancelOverFinish property in the WizardControlPage Collection Editor to false. This property determines if the Cancel button is positioned over the Finish button. If this property is set to true, it will override the FinishVisible property. 
 
@@ -128,17 +129,17 @@ Me.finishPage.CancelOverFinish = False
 
 A sample which includes button settings is available in the below sample installation location.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 {% seealso %}
 How to set spacing between the browsing buttons?
 
-Adding and Reordering Buttons
+
 {% endseealso %}
 
+### Adding and Reordering Buttons
 
-
-Adding new Button to a Page
+#### Adding new Button to a Page
 
 The following code snippet shows how to add a button to the wizard control browse buttons.
 
@@ -240,7 +241,7 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.HelpButton).
 
 The default browse buttons are the normal windows button controls. Appearance of the buttons can be controlled using the properties available. Some appearance properties are listed below.
 
-_Table_ _949_: Property Table
+Table 949: Property Table
 
 <table>
 <tr>

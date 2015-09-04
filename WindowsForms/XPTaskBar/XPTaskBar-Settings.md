@@ -3,7 +3,7 @@ layout: post
 title: XPTaskBar Settings 
 description: Concepts and Features
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # XPTaskBar Settings 
@@ -14,18 +14,18 @@ The behavior of the XPTaskBar can be controlled using the properties given below
 
 This section discusses the behavior settings of the XPTaskBar.
 
-_Table_ _579__: Property Table_
+_Table 579: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Property</td><td>
-Description</td><td>
-Type of Property</td><td>
-Value It Accepts</td><td>
-Property Syntax</td><td>
-Sub Properties</td><td>
-More Information</td></tr>
+<th>
+XPTaskBar Property</th><th>
+Description</th><th>
+Type of Property</th><th>
+Value It Accepts</th><th>
+Property Syntax</th><th>
+Sub Properties</th><th>
+More Information</th></tr>
 <tr>
 <td>
 AllowDrop</td><td>
@@ -92,10 +92,8 @@ Me.xpTaskBar1.VerticalLayout = True
 {% endhighlight %}
 
 ![](Overview_images/Overview_img103.jpeg) 
-Figure 1004: Vertical Layout of XPTaskBar
 
 ![](Overview_images/Overview_img104.jpeg)
-Figure 1005: Horizontal Layout of XPTaskBar with ColumnWidthOnHorizontalAlignment property set to "100"
 
 
 ## Scroll Settings 
@@ -106,13 +104,13 @@ area, provided the XPTaskBar is in the Vertical Layout mode.
 In the Horizontal Layout mode, the horizontal scrollbar appears on setting the ColWidthOnHorizontalLayout property to large 
 values.
 
-_Table_ _580__: Property Table_
+_Table 580: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoScroll</td><td>
@@ -155,4 +153,3 @@ Me.xpTaskBar1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
 The following screen shot illustrates the above settings.
 
  ![](Overview_images/Overview_img105.jpeg) 
-Figure 1006: AutoScroll set for the XPTaskBar

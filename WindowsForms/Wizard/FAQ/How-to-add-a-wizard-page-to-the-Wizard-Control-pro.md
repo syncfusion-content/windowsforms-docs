@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How-to-add-a-wizard-page-to-the-Wizard-Control-pro
+title: How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically?
 description: how to add a wizard page to the wizard control programmatically?
 platform: WindowsForms
-control: WizardPackage
+control: Wizard
 documentation: ug
 ---
 
@@ -43,6 +43,6 @@ NewPage.Description = "Give a Finish Text"
 
 {% endhighlight %}
 
-![](How-to-add-a-wizard-page-to-the-Wizard-Control-pro_images/How-to-add-a-wizard-page-to-the-Wizard-Control-pro_img1.jpeg)
+![](How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_images/How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_img1.jpeg)
 
 

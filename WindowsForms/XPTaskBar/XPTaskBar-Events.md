@@ -3,20 +3,20 @@ layout: post
 title: XPTaskBar Events
 description: Concepts and Features
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # XPTaskBar Events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _588__: Events Table_
+_Table 588: Events Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Events</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 AfterAnimation</td><td>
@@ -172,13 +172,13 @@ should set unique names for the XPTaskBar Items through the Tag property in the 
 The event handler receives an argument of the type XPTaskBarItemClickArgs. The event property associated with the 
 XPTaskBarItemClickArgs is as follows.
 
-_Table_ _594__: Member Table_
+_Table 594: Member Table_
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 XPTaskBarItem</td><td>
@@ -305,13 +305,13 @@ XPTaskBar Box with different colors.
 The event handler receives an argument of type ProvideBrushEventArgs. The event properties associated with the 
 ProvideBrushEventArgs are as follows.
 
-_Table_ _595__: Members Table_
+_Table 595: Members Table_
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 Bounds</td><td>

@@ -3,7 +3,7 @@ layout: post
 title: Is it possible to sort the XPTaskBarItems of an XPTaskBarBox
 description: Frequently Asked Questions
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # Is it possible to sort the XPTaskBarItems of an XPTaskBarBox?

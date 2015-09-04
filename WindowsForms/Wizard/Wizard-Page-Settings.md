@@ -13,17 +13,17 @@ A Wizard Page can include a collection of controls implementing an interactive W
 
 Creating a Basic Wizard topic discussed how to add Wizard Pages. Let us see how to customize the Wizard pages. 
 
-Setting Title and Description
+## Setting Title and Description
 
 You can specify the title and description in the Banner Panel, for a particular Wizard Page using the WizardPage.Title and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. See Title and Description Settings for details.
 
-_Table_ _943_: Property Table
+Table 943: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Title</td><td>
@@ -59,17 +59,17 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 
 
-Accessing Wizard Pages
+### Accessing Wizard Pages
 
 We can also access the properties of a Wizard Page using SelectedWizardPage property of the WizardControl in the Designer.
 
-_Table_ _944_: Property Table
+Table 944: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectedWizardPage</td><td>
@@ -87,13 +87,13 @@ The individual Wizard page is identified using its LayoutName in the SelectedWiz
 
 The header section (GradientPanel and its child controls) can be hidden by setting FullPage property to true. This makes the page occupy the entire space without the header.
 
-_Table_ _945_: Property Table
+Table 945: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FullPage</td><td>
@@ -119,7 +119,7 @@ Me.wizardControlPage1.FullPage = True
 
 A sample which demonstrates a Wizard Control with interactive Wizard pages is available in the below location.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 
 {% seealso %}
@@ -134,7 +134,7 @@ How to Programmatically control the Page Sequence?
 
 {% endseealso %}
 
-Reordering Wizard Pages
+### Reordering Wizard Pages
 
 By default, the WizardControl will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods. 
 
@@ -152,13 +152,13 @@ By default, the WizardControl will use the order in which the pages are added to
 
 * The WizardControlPage has the NextPage and PreviousPage properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
 
-_Table_ _946_: Property Table
+Table 946: Property Table
 
 <table>
 <tr>
-<td>
-WizardControlPage Property</td><td>
-Description</td></tr>
+<th>
+WizardControlPage Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 NextPage</td><td>

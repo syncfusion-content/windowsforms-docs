@@ -3,7 +3,7 @@ layout: post
 title: Event-Handling
 description: event handling 
 platform: WindowsForms
-control: WizardPackage 
+control: Wizard
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ This section comprises the below events:
 
 The events available for Wizard control and the methods which raises these events are listed in the below tables.
 
-_Table_ _957_: Events Table
+Table 957: Events Table
 
 <table>
 <tr>
@@ -64,7 +64,7 @@ BeforeNext</td><td>
 Handled before the Next button is clicked.</td></tr>
 </table>
 
-_Table_ _958_: Methods Table
+Table 958: Methods Table
 
 <table>
 <tr>
@@ -88,7 +88,7 @@ This event is discussed in How to Cancel the AutoLayout of the Banner panel cont
 
 The events available for the Wizard Page and the methods which raises these events are listed in the below tables.
 
-_Table_ _959_: Events Table
+Table 959: Events Table
 
 <table>
 <tr>
@@ -129,7 +129,7 @@ SettingChanged</td><td>
 Handled when the title and description of a page is changed.</td></tr>
 </table>
 
-_Table_ _960_: Methods Table
+Table 960: Methods Table
 
 <table>
 <tr>

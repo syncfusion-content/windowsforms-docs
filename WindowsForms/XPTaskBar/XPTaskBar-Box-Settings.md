@@ -16,13 +16,13 @@ This section lists the properties used for customizing the header of the XPTaskB
 
 The Header of the XPTaskBar Box contains the Collapse button and text. The header text can be changed using the Text property of the XPTaskBar Box. The other properties are discussed below.
 
-_Table_ _581__: Property Table_
+_Table 581: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeaderBackColor</td><td>
@@ -53,7 +53,6 @@ Gets / sets a value indicating whether the header text should be clipped.</td></
 The following screen shot illustrates the above settings.
 
  ![](Overview_images/Overview_img106.jpeg) 
-Figure 1007: Header Settings Illustrated
 
 
 {% highlight C# %}  
@@ -95,13 +94,13 @@ This section discusses the button settings of the XPTaskBar Box.
 The collapsed button is used to expand or collapse the XPTaskBar Items. The following table lists the properties associated with
 collapsing or expanding the XPTaskBar Box.
 
-_Table_ _582__: Property Table_
+_Table 582: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Collapsed</td><td>
@@ -140,17 +139,16 @@ Me.xpTaskBarBox1.ToggleByButton = True
 {% endhighlight %}
 
  ![](Overview_images/Overview_img107.jpeg) 
-Figure 1008: Collapsed State of the XPTaskBar Boxes
 
 The methods associated with the above properties are given below.
 
-_Table_ _583__: Methods Table_
+_Table 583: Methods Table_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 LoadBoxExpandedStates</td><td>
@@ -166,13 +164,13 @@ Saves the expanded child taskbar boxes to the AppStateSerializer.</td></tr>
 Animation during expanding / collapsing of the Taskbar items in an XPTaskBar can be controlled using the following properties. 
 Animation can also be enabled while adding or removing any TaskBar items.
 
-_Table_ _584__: Property Table_
+_Table 584: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AnimationDelay</td><td>
@@ -211,7 +209,6 @@ Me.xpTaskBarBox1.UseAdditionalAnimation = True
 {% endhighlight %}
 
  ![](Overview_images/Overview_img108.jpeg) 
-Figure 1009: Collapse and Header Image for XPTaskBar
 
 
 ## Mouse Hover Settings 
@@ -220,13 +217,13 @@ This section discusses the mouse hover settings of the XPTaskBar control.
 
 The position of the mouse with respect to the control can be known using the properties given below.
 
-_Table_ _585__: Property Table_
+_Table 585: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HitTaskBoxArea</td><td>
@@ -261,13 +258,13 @@ Me.xpTaskBarBox1.HeaderHit = True
 
 To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the PreferredChildPanelHeight property.
 
-_Table_ _586__: Property Table_
+_Table 586: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 PreferredChildPanelHeight</td><td>
@@ -298,13 +295,13 @@ for the disabled TaskBar Items.
 The ToolTipText property of the XPTaskBar control can be used to set the text of the tooltip, while the tooltip can be displayed
 using the ShowToolTip property.
 
-_Table_ _587__: Property Table_
+_Table 587: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ToolTipText</td><td>
@@ -342,4 +339,3 @@ Me.xpTaskBarBox1.ShowToolTip = True
 
 
  ![](Overview_images/Overview_img110.jpeg) 
-Figure 1011: TaskBar Box displaying ToolTip

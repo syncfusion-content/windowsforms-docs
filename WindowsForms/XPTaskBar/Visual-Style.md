@@ -3,7 +3,7 @@ layout: post
 title: Visual Style
 description: Concepts and Features
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # Visual Style
@@ -51,7 +51,6 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.B
 
 
  ![](Overview_images/Overview_img111.jpeg) 
-Figure 1012: Office2007 Look and Feel for XPTaskBarBox
 
 
 ### Custom Colors
@@ -79,4 +78,3 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 
  ![](Overview_images/Overview_img112.jpeg) 
-Figure 1013: Custom Color = "DarkGreen"

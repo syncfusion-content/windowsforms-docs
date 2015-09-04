@@ -3,7 +3,7 @@ layout: post
 title: Padding
 description: Concepts and Features
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 --- 
 # Padding
@@ -14,13 +14,13 @@ The interior spacing of the XPTaskBar control can be specified by setting the Do
 
 The horizontal and vertical padding can be specified using the HorizontalPadding and VerticalPadding properties. The default value of the both is 'Zero'.
 
-_Table_ _589__: Property Table_
+_Table 589: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DockPadding</td><td>
@@ -61,19 +61,18 @@ Me.xpTaskBar1.VerticalPadding = 3
 
 
  ![](Overview_images/Overview_img113.jpeg) 
-Figure 1014: Padding Settings of XP TaskBar Illustrated
 
 ### Padding Settings for XPTaskBar Box Header
 
 Padding provides spacing between the text of the header and it's borders. Horizontal and vertical padding can be set using the PADX and PADY properties.
 
-_Table_ _590__: Property Table_
+_Table 590: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 PADX</td><td>
@@ -108,4 +107,3 @@ Me.xpTaskBarBox1.PADY = 7
 The following figure displays the XPTaskBar Box with padding settings.
 
  ![](Overview_images/Overview_img114.jpeg) 
-Figure 1015: Padding Settings of XPTaskBar Box Illustrated

@@ -3,7 +3,7 @@ layout: post
 title: XPTaskPane-Appearance
 description: xptaskpane appearance
 platform: WindowsForms
-control: WizardPackage 
+control: XPTaskPane
 documentation: ug
 ---
 

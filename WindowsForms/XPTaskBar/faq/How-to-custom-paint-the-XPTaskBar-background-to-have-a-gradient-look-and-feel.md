@@ -3,7 +3,7 @@ layout: post
 title: How to custom paint the XPTaskBar background to have a gradient look and feel
 description: Frequently Asked Questions
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # How to custom paint the XPTaskBar background to have a gradient look and feel

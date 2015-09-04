@@ -11,7 +11,7 @@ documentation: ug
 
 In Excel, Tables can be inserted by selecting Table option from the Insert menu. The following sections illustrate working with tables by using XlsIO.
 
-Create a Table
+## Create a Table
 
 XlsIO provides support to read and write tables in a spreadsheet. The table is added as an IListObject to the worksheet. The input data to the table must be a range of data existing in the worksheet. IListObject returns the collection of tables in the worksheet.
 

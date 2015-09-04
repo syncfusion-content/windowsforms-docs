@@ -3,7 +3,7 @@ layout: post
 title: Creating an XPTaskBar
 description: overview
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # Creating an XPTaskBar
@@ -17,19 +17,17 @@ In this tutorial, we will create a simple XPTaskBar.
 1. Add an XPTaskBar control from the toolbox onto your form and a new instance will be placed on your form. Dock the control to the left of the form. Set the DockPadding.All property to '5' on the XPTaskBar so that there will be some space between the XPTaskBar Box children and the XPTaskBar. 
 
    ![](Overview_images/Overview_img93.jpeg) 
-   Figure 995: XPTaskBar in Toolbox
+
 
 
 
    ![](Overview_images/Overview_img94.jpeg)
-   Figure 996: DockPadding property set to "5"
 
 2. To add an XPTaskBar Box, right click on the XPTaskBar control and select the Add Task Box verb. This will add an empty XPTaskBar Box instance. You can change it's Header Text property to change the text of the header.
 
 3. You can also add an XPTaskBar Box using the Add Task Box command in the Property Grid. 
 
    ![](Overview_images/Overview_img95.jpeg) 
-   Figure 997: Adding XPTaskBar Box through Verbs
 
    ![](Overview_images/Overview_img96.jpeg) 
   

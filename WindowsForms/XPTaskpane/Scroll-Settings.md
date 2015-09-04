@@ -3,7 +3,7 @@ layout: post
 title: Scroll-Settings
 description: scroll settings
 platform: WindowsForms
-control: WizardPackage 
+control: Wizard
 documentation: ug
 ---
 

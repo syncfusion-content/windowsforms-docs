@@ -3,13 +3,13 @@ layout: post
 title: Header-Settings
 description: header settings
 platform: WindowsForms
-control: WizardPackage 
+control: XPTaskPane
 documentation: ug
 ---
 
 # Header Settings
 
-Setting Visibility of the ToolBar Items
+## Setting Visibility of the ToolBar Items
 
 The header section by default has four toolbar items. Left and right navigating buttons at the top left corner of the TaskPane Header and DropDownMenu and Close Button at the top right corner of the TaskPane Header. 
 
@@ -133,11 +133,11 @@ Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1
 
 
 
-Customizing Header Menu Item Image
+## Customizing Header Menu Item Image
 
 The Header Menu Item image can be changed through ImageIndex property which lists a set of pre-defined images, else set the Image property to the custom image you want to set for the dropdown image.
 
-_Table_ _975_: Property Table
+Table 975: Property Table
 
 <table>
 <tr>

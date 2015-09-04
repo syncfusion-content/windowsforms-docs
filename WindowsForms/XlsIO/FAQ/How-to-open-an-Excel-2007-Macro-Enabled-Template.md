@@ -47,4 +47,4 @@ workbook.SaveAs("Sample.xlsm", ExcelSaveType.SaveAsTemplate)
 {% endhighlight %}
 
 
-> Note: You need to change the Excel Version, if you want to save to another version.
+N> You need to change the Excel Version, if you want to save to another version.

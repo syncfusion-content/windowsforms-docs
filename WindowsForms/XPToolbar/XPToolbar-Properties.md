@@ -9,15 +9,15 @@ documentation: ug
 
 # XPToolbar Properties
 
-Appearance Properties
+## Appearance Properties
 
-_Table_ _507_: _Property Table_
+_Table 507: Property Table_
 
 <table>
 <tr>
-<td>
-XPToolbar Property</td><td>
-Description</td></tr>
+<th>
+XPToolbar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -100,9 +100,13 @@ Indicates whether to show chevron. (Default - true)</td></tr>
 </table>
 
 {% seealso %}
-* XPToolbar Control
-* Adding and Filling the XPToolbar
-* UI Command Update Patterns
+
+ XPToolbar Control
+ 
+ Adding and Filling the XPToolbar
+ 
+ UI Command Update Patterns
+ 
 {% endseealso %}
 
 

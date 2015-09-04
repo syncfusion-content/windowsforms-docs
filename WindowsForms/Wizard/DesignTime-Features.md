@@ -3,7 +3,7 @@ layout: post
 title: DesignTime-Features
 description: designtime features
 platform: WindowsForms
-control: WizardPackage 
+control: Wizard
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 The below topics are discussed in this particular section.
 
-Options to Add Page, Remove Page, Previous page and Next Page
+## Options to Add Page, Remove Page, Previous page and Next Page
 
 This section will guide you with various options available in the designer to add page, remove page, go to previous page and next page.
 

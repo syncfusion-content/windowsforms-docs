@@ -3,24 +3,24 @@ layout: post
 title: XPTaskBar- Image Settings 
 description: Concepts and Features
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # XPTaskBar- Image Settings 
 
 This section discusses the image settings available in XPTaskBar. 
 
-Adding Images to the XPTaskBar Box Header
+## Adding Images to the XPTaskBar Box Header
 
 We can add images to the header of the XPTaskBar Box using the ImageList control and some properties that are discussed below.
 
-_Table_ _591__: Property Table_
+_Table 591: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Box Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Box Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeaderImageList</td><td>
@@ -59,17 +59,17 @@ Me.xpTaskBarBox1.HeaderImageIndex = 0
  ![](Overview_images/Overview_img115.jpeg) 
 Figure 1016: Image added to the TaskBar Box Header
 
-### Adding Images to XPTaskBar Items
+## Adding Images to XPTaskBar Items
 
 Images can be easily associated with the ImageIndex property of the XPTaskBar Items.
 
-_Table_ _592__: Property Table_
+_Table 592: Property Table_
 
 <table>
 <tr>
-<td>
-XPTaskBar Item Property</td><td>
-Description</td></tr>
+<th>
+XPTaskBar Item Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ImageList</td><td>
@@ -110,4 +110,3 @@ Me.xpTaskBarBox1.Items(2)ImageIndex = 2
 {% endhighlight %}
 
 ![](Overview_images/Overview_img116.jpeg) 
-Figure 1017: Images added to the TaskBar Items

@@ -3,7 +3,7 @@ layout: post
 title: How to set the focus rectangle for XPTaskBarItem after selection
 description: Frequently Asked Questions
 platform: WindowsForms
-control: XPtaskBar
+control: XPTaskBar
 documentation: ug
 ---
 # How to set the focus rectangle for XPTaskBarItem after selection

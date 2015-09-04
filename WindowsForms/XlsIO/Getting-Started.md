@@ -230,7 +230,7 @@ The following steps guide you to create a simple Excel document in Windows/WPF a
    {:.prettyprint }
 
 
-   > Note: To know more about saving the workbook, see Save.
+   N> To know more about saving the workbook, see Save.
 
 7. Dispose the Excel engine. Note that the engine should be disposed after completing workbook operations.
 

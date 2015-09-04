@@ -169,7 +169,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note: Applying custom styles will override the original styles. See Also_ Global Styles
+N> Applying custom styles will override the original styles. See Also_ Global Styles
 
 ## Apply Global Style
 
@@ -177,7 +177,7 @@ XlsIO provides support for adding and modifying common (or global) styles that c
 
 
 
-> Note: when you want to apply more than one style for cells, enclose the style within the Begin and End calls. This improves the performance.
+N> when you want to apply more than one style for cells, enclose the style within the Begin and End calls. This improves the performance.
 
 
 
@@ -3634,7 +3634,7 @@ XlsIO provides support for reading and writing rich text by using the IRichTextS
 
 
 
-> Note: Currently XlsIO cannot write formatted rich text.
+N> Currently XlsIO cannot write formatted rich text.
 
 
 
@@ -3950,7 +3950,7 @@ In MS Excel, click the Format menu and then click Conditional Formatting. You ca
 
 
 
-> Note: Excel allows the addition of a maximum of three conditions for the same cell in the Biff8 format. However, this restriction is removed in Excel 2007 formats.
+N> Excel allows the addition of a maximum of three conditions for the same cell in the Biff8 format. However, this restriction is removed in Excel 2007 formats.
 
 
 ## Create a Conditional Format 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Custom XML Support
 
-Add XML
+## Add XML
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -53,9 +53,9 @@ book.Close();
 
 excelEngine.Dipose();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim fileName As String = "output.xlsx"
 
@@ -93,13 +93,13 @@ book.Close()
 
 excelEngine.Dipose()
 
+{% endhighlight %}
+
+## Read XML
 
 
-Read XML
 
-
-
-[C#]
+{% highlight c# %}
 
 
 
@@ -135,10 +135,9 @@ byte[] xmlData = customXmlPart.Data;
 
 System.Text.Encoding.Default.GetString(xmlData);
 
+{% endhighlight %}
 
-
-[VB]
-
+{% highlight vbnet %}
 
 
 Dim fileName As String = "output.xlsx"
@@ -174,4 +173,4 @@ Dim xmlData() As Byte = customXmlPart.Data
 System.Text.Encoding.Default.GetString(xmlData)
 
 
-
+{% endhighlight %}
