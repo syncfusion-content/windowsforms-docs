@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Color-of-All-Headers
 description: how to change the color of all headers
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

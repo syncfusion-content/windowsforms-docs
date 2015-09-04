@@ -2,7 +2,7 @@
 layout: post
 title: Printing-Options
 description: printing options 
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

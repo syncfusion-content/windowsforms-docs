@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: Getting Started
-platform: WindowsForms
+platform: windowsforms
 control: BannerTextProviderComponent
 documentation: ug
 ---
@@ -62,8 +62,6 @@ Specifies the rendering mode of the banner text. The modes are,* {{ 'FocusMode' 
 </table>
 
 
-{% highlight C# %}
-
 ## How to change the text for already assigned banner text of a control?
 
 This is done using the below code. 
@@ -97,7 +95,7 @@ info.Text = "New Banner Text"
 
 N> Make sure you clear the default value of the Text property of the controls before setting the banner text.
 
-
+{% highlight c# %}
 
 this.bannerTextProvider1.SetBannerText(this.comboBoxBarItem1, new Syncfusion.Windows.Forms.BannerTextInfo("Enter Your Country", true, new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic), System.Drawing.Color.RoyalBlue, Syncfusion.Windows.Forms.BannerTextMode.FocusMode));
 
@@ -122,19 +120,19 @@ Me.bannerTextProvider1.SetBannerText(Me.comboBoxBarItem1, New Syncfusion.Windows
 N> BannerText feature can be made available for the below controls only.
 
 
-* [TextBoxBarItem](http://docs.syncfusion.com/menuspackage/menuspackage#textboxbarItem) (XPMenus)
-* [ComboBoxBarItem](http://docs.syncfusion.com/MenusPackage/MenusPackage/ComboBoxBarItem) (XPMenus)
-* [TextBox](http://docs.syncfusion.com/tools-controls) (ToolStripEx)
-* [ComboBox](http://docs.syncfusion.com/OfficeControls/Designer_Support/KeyBoard-Shortcut#combobox ) (ToolStripEx)
-* [ComboBoxEx](http://docs.syncfusion.com/OfficeControls/Designer_Support/KeyBoard-Shortcutl#comboboxex)
-* [TextBoxExt](http://docs.syncfusion.com/editorsPackage/editorscontrols/textboxext) (Editor Control)
-* [CurrencyTextBox](http://docs.syncfusion.com/editorspackage/editorscontrols#currencytextbox)(Editor Control)
-* [ComboBoxAdv](http://docs.syncfusion.com/EditorsPackage/ComboboxContols/ComboBoxAdv/ComboBoxAdv)(Editor Control)
-* [ComboDropDown](http://docs.syncfusion.com/EditorsPackage/ComboboxContols/ComboDropDown/ComboDropDown ) (Editor Control)
-* [ComboBoxAutoComplete](http://docs.syncfusion.com/EditorsPackage/ComboBoxAutoComplete/ComboBoxAutoComplete) (Editor Control)
-* [Integer TextBox](http://docs.syncfusion.com/editorspackage/editorscontrols#integertextbox)(Editor Control)
-* [Double TextBox](http://docs.syncfusion.com/tools-controls) (Editor Control)
-* [Percent TextBox](http://docs.syncfusion.com/editorspackage/editorscontrols/percenttextbox)(Editor Control)
+* [TextBoxBarItem](/windowsforms/popup-menu/popup-menucontext-menuxpmenu-bars#textboxbarItem) (XPMenus)
+* [ComboBoxBarItem](/windowsforms/popup-menu/popup-menucontext-menuxpmenu-bars#comboboxbarItem) (XPMenus)
+* [TextBox](/windowsforms/ribbonadv/ribbon-control-items#toolstripex) (ToolStripEx)
+* [ComboBox](/windowsforms/ribbonadv/ribbon-control-items#combobox ) (ToolStripEx)
+* [ComboBoxEx](/windowsforms/ribbonadv/ribbon-control-items#comboboxex)
+* [TextBoxExt](/windowsforms/textboxext) (Editor Control)
+* [CurrencyTextBox](/windowsforms/currencytextbox)(Editor Control)
+* [ComboBoxAdv](/windowsforms/ComboBoxAdv)(Editor Control)
+* [ComboDropDown](/windowsforms/ComboDropDown ) (Editor Control)
+* [ComboBoxAutoComplete](/windowsforms/comboboxautocomplete) (Editor Control)
+* [Integer TextBox](/windowsforms/integertextbox)(Editor Control)
+* [Double TextBox](/windowsforms/doubletextbox) (Editor Control)
+* [Percent TextBox](/windowsforms/percenttextbox)(Editor Control)
 * Other Microsoft Editor Controls
 
 

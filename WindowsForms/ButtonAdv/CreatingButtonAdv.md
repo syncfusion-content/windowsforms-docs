@@ -2,7 +2,7 @@
 layout: post
 title: Creating  ButtonAdv
 description: Creating  ButtonAdv
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

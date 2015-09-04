@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Prevent-Resizing-a-Specific-Column-in-GridC
 description: how to prevent resizing a specific column in gridcontrol
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Retrieve-DataRow-from-GridDataBoundGrid-with-rowindex
 description: how to retrieve datarow from griddataboundgrid with rowindex
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

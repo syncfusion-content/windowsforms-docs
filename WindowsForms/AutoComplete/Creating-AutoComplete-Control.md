@@ -3,7 +3,7 @@ layout: post
 title: Creating AutoComplete Control
 description: Creating AutoComplete Control
 platform: WindowsForms
-control: Tools
+control: AutoComplete
 documentation: ug
 ---
 
@@ -36,13 +36,13 @@ This tutorial illustrates the usage of the AutoComplete control for TextBox, wit
 
 4. Set AutoComplete.AutoAddItem property to true. Run the application, type any text in the textbox and hit Enter to save the entry. Select the text, delete it and then retype the first letter of the text you saved. You should see autocompletion of the letter, as shown below.
 
-> Note: The text entered can be saved only when AutoAddItem property is set to True.
+N> The text entered can be saved only when AutoAddItem property is set to True.
 
   ![](AutoComplete-Controls-Images/Overview_img10.jpeg)
 
 
 
-> Note: We can also add a list of autocomplete items through designer, which can used as a source for AutoComplete control. SeeSee_ Source for AutoComplete Control _topic for details.
+N> We can also add a list of autocomplete items through designer, which can used as a source for AutoComplete control. SeeSee _Source for AutoComplete Control_ topic for details.
 
 
 

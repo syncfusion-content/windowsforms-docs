@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-a-particular-record-from-a-table
 description: how to access a particular record from a table
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Hide-or-Unhide-the-Columns-in-a-Grouping-Gr
 description: how to hide or unhide the columns in a grouping grid
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

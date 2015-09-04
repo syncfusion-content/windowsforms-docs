@@ -2,7 +2,7 @@
 layout: post
 title: How-to-achieve-Numeric-Column-Sorting-in-GridDataBoundGrid
 description: how to achieve numeric column sorting in griddataboundgrid
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

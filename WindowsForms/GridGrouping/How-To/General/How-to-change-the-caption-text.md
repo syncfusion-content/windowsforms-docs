@@ -2,7 +2,7 @@
 layout: post
 title: How-to-change-the-caption-text
 description: how to change the caption text
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

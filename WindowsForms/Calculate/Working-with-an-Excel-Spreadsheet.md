@@ -15,7 +15,7 @@ You can use the Microsoft Excel to design spreadsheets that can be used on syste
 
 To illustrate this process, consider a sample project, Essential Studio\x.x.x.x\Windows\Calculation.Windows\Samples\2.0\XlsFileUsingExcelRW. 
 
-> Note: This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required.
+N> This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required.
 
 The spreadsheet you are using is a car insurance calculator. It uses Names to manage variable values and has the following four sheets.
 
@@ -66,7 +66,7 @@ In the Adding Calculation Support section, you would have learnt how to support 
 * The CalcWorkbookclass is a collection of CalcSheets. 
 * You can use these classes to manage the support for working with Excel spreadsheets.
 
-![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img7.jpeg) For more detailed information on these classes, check out the class reference.
+For more detailed information on these classes, check out the class reference.
 
 
 

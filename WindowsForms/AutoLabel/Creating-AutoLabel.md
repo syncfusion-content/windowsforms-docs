@@ -2,8 +2,8 @@
 layout: post
 title: Creating AutoLabel
 description: Creating AutoLabel
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: AutoLabel
 documentation: ug
 ---
 
@@ -44,6 +44,7 @@ The following steps illustrate how to create an AutoLabel control programmatical
 
 
 		using Syncfusion.Windows.Forms.Tools;
+		
    ~~~
    {:.prettyprint}
 
@@ -61,10 +62,9 @@ The following steps illustrate how to create an AutoLabel control programmatical
 
    ~~~ cs
 
-
-
 		private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
-   ~~~
+
+		~~~
    {:.prettyprint}
 
 
@@ -73,6 +73,7 @@ The following steps illustrate how to create an AutoLabel control programmatical
 
 
 		Private autoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
+   
    ~~~
    {:.prettyprint}
 
@@ -117,7 +118,8 @@ The following steps illustrate how to create an AutoLabel control programmatical
 		// Add the AutoLabel control to the Form.
 
 		this.Controls.Add(this.autoLabel1);
-   ~~~
+  
+  ~~~
    {:.prettyprint}
 
 

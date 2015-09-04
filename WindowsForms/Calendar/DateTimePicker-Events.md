@@ -2,7 +2,7 @@
 layout: post
 title: DateTimePicker Events
 description: datetimepicker events
-platform: WindowsForms
+platform: windowsforms
 control: Calendar 
 documentation: ug
 ---

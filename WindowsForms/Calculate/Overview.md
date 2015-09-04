@@ -56,7 +56,7 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-![](Overview_images/Overview_img2.jpeg)
+{{ '![](Overview_images/Overview_img2.jpeg)'| markdownify }}
 
 Note:</td><td>
 Represents important information.</td></tr>
@@ -68,14 +68,14 @@ Represents an example.</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img3.jpeg)
+{{ '![](Overview_images/Overview_img3.jpeg)'| markdownify }}
 
 </td><td>
 Represents useful hints that will help you in using the controls/features.</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img4.jpeg)
+{{ '![](Overview_images/Overview_img4.jpeg)'| markdownify }}
 
 </td><td>
 Represents additional information on the topic.</td></tr>
@@ -166,7 +166,7 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/calculate/overview>' | markdownify }} (Navigate to the Calculate User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+Online{{ '<http://docs.syncfusion.com/windowsforms/calculate/overview>' | markdownify }} (Navigate to the Calculate User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>

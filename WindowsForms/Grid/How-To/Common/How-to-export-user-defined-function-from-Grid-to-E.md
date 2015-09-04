@@ -2,7 +2,7 @@
 layout: post
 title: How-to-export-user-defined-function-from-Grid-to-Excel-workbook
 description: how to export user-defined function from grid to excel workbook
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

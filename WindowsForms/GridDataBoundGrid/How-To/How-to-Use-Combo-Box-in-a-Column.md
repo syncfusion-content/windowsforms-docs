@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Use-Combo-Box-in-a-Column
 description: how to use combo box in a column
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Move-to-the-Next-Row-from-the-Last-Cell-of-
 description: how to move to the next row from the last cell of a row
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

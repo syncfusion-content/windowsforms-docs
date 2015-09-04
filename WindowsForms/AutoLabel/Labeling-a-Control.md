@@ -2,8 +2,8 @@
 layout: post
 title: Creating AutoLabel
 description: Creating AutoLabel
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: AutoLabel
 documentation: ug
 ---
 

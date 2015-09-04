@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Set-Transparent-Backcolor-for-GridControl
 description: how to set transparent backcolor for gridcontrol
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -3,7 +3,7 @@ layout: post
 title: DataSource
 description: DataSource
 platform: WindowsForms
-control: Tools
+control: AutoComplete
 documentation: ug
 ---
 
@@ -19,9 +19,9 @@ Table 118: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CategoryName</td><td>
@@ -57,7 +57,7 @@ Me.autoComplete1.DataSource = DataTable1
 {% endhighlight %}
 
 
-> Note: We can set External datasource for the autocompletion. See External DataSource topic.
+N> We can set External datasource for the autocompletion. See External DataSource topic.
 
  See Also
  How to delete the items in the list at run time?
@@ -76,9 +76,9 @@ Table 119: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoCompleteSource</td><td>
@@ -118,7 +118,7 @@ AutoComplete control lets you to specify a set of auto completion text using Str
 At run time when the user types the first letter, it will automatically display the auto completion list added through this editor.
 
 
->  Note: Control.AutoCompleteSource property should be set to "CustomSource" for this setting to be effective.
+N> Control.AutoCompleteSource property should be set to "CustomSource" for this setting to be effective.
 
 
 

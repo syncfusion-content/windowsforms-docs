@@ -55,7 +55,7 @@ SunkenOuter.<br/></td></tr>
 </table>
 
 
-> Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonEdit.ButtonStyle property. See Style Settings. We can also set border style for ButtonEdit controls without enabling visual styles._
+N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonEdit.ButtonStyle property. See Style Settings. We can also set border style for ButtonEdit controls without enabling visual styles.
 
 {%highlight c#%}
 
@@ -79,10 +79,11 @@ Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 ![](Overview_images/Overview_img95.jpeg)
 
-See Also
+{% seealso %}
 
 Style Settings, How to set tooltip for ButtonEdit Child buttons?
 
+{% endseealso %}
 
 ## Properties
 
@@ -126,7 +127,7 @@ Me.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAli
  ![](Overview_images/Overview_img96.jpeg)
 
 
-> Note: There is no support for placing more than one buttons on the same side. We need to add the buttons in the order we require.
+N> There is no support for placing more than one buttons on the same side. We need to add the buttons in the order we require.
 
 ### Image Settings
 
@@ -276,7 +277,7 @@ Office2007ColorScheme</td><td>
 Specifies the office color scheme.</td></tr>
 </table>
 
-> Note: Visual style of a child buttons is inherited from the visual style of it's parent (ButtonEdit) control. See Style Settings topic. You can override those settings using the above properties.
+N> Visual style of a child buttons is inherited from the visual style of it's parent (ButtonEdit) control. See Style Settings topic. You can override those settings using the above properties.
 
 ### Focusing the Child Button at Runtime
 
@@ -302,6 +303,8 @@ Me.buttonEditChildButton3.KeepFocusRectangle = True
 ![](Overview_images/Overview_img101.jpeg) 
 
 
-See Also
+{% seealso %}
 
 How to hide a child button of a ButtonEdit control?
+
+{% endseealso %}

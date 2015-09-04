@@ -30,7 +30,7 @@ The Caption for a Bullet Graph specifies a unique label describing the value rep
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_Caption.bmp](Features_images/Features_img3.png)
+![](Features_images/Features_img3.png)
 
 ### Caption Position
 
@@ -57,4 +57,4 @@ The caption in the Bullet Graph is placed at the start or end of the quantitativ
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_Caption_Far.bmp](Features_images/Features_img4.png)
+![](Features_images/Features_img4.png)

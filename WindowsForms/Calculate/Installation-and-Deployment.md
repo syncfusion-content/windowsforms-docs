@@ -15,13 +15,15 @@ This section covers information on the install location, samples, licensing, pat
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
-See Also
+{% seealso %}
 
 For licensing, patches and information on adding or removing selective components refer the following topics in Common UG under Installation and Deployment.
 
 * Licensing
 * Patches
 * Add/Remove Components
+
+{% endseealso %}
 
 ## Samples and Installation
 
@@ -67,7 +69,7 @@ To view the samples:
 ### Windows Forms
 
 1. In the Dashboard window, click Run Samples for Windows Forms under Reporting Edition panel. 
-   > Note: You can view the samples in any of the following three ways:
+   N> You can view the samples in any of the following three ways:
    >
    > * Run Samples – Click to view the locally installed samples.
    > * Online Samples – Click to view online samples.
@@ -93,7 +95,7 @@ To view the samples:
 
 1. In the Dashboard window, click Run Samples for ASP.NET under Reporting Edition panel. The ASP.NET Sample Browser window is displayed.
    
-   > Note: You can view the samples in any of the three options displayed.
+   N> You can view the samples in any of the three options displayed.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
 

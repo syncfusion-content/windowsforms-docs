@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Size-of-the-Combo-Box-Button
 description: how to change the size of the combo box button
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

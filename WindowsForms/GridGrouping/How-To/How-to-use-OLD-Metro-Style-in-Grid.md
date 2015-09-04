@@ -2,7 +2,7 @@
 layout: post
 title: How-to-use-OLD-Metro-Style-in-Grid
 description: how to use old metro style in grid?
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

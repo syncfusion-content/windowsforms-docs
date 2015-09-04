@@ -2,8 +2,8 @@
 layout: post
 title: Position
 description: Position
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: AutoLabel
 documentation: ug
 ---
 # Position

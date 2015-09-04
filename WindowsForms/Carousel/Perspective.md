@@ -2,7 +2,7 @@
 layout: post
 title: Perspective 
 description: Perspective 
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

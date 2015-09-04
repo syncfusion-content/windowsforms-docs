@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Display-Placeholder-Characters-when-Cell-Content-exceeds-cell-width
 description: how to display placeholder characters when cell content exceeds cell width
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

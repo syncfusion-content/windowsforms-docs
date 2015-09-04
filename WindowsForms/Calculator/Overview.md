@@ -2,8 +2,8 @@
 layout: post
 title: Overview
 description: Overview
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: Calculator
 documentation: ug
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Move-Groups-Upward-or-Downward-Using-Custom
 description: how to move groups upward or downward using custom comparer
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Path Support
 description: Path Support
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Print-Preview-a-Grid
 description: how to print preview a grid
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

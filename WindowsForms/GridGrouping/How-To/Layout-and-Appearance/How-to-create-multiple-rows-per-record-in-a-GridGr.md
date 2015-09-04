@@ -2,7 +2,7 @@
 layout: post
 title: How-to-create-multiple-rows-per-record-in-a-GridGr
 description: how to create multiple rows per record in a gridgroupingcontrol
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

@@ -3727,9 +3727,9 @@ SHEET(value) where:
 
 #### Remarks:
 
-#REF! - occurs if value argument is not a valid value.
+&#35;REF! - occurs if value argument is not a valid value.
 
-#NA - occurs if value argument is a sheet name that is not valid.
+&#35;NA - occurs if value argument is a sheet name that is not valid.
 
 #### Example:
 
@@ -3759,7 +3759,7 @@ SHEETS(reference) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)
+![](Calculate-functions_images/Calculate-functions_img167.png)
 
 
 
@@ -3777,7 +3777,7 @@ TRANSPOSE( array ) where:
 
 
 
-![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)
+![](Calculate-functions_images/Calculate-functions_img168.png)
 
 
 

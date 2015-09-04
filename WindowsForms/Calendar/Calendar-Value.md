@@ -2,7 +2,7 @@
 layout: post
 title: Calendar Value
 description: calendar value
-platform: WindowsForms
+platform: windowsforms
 control: Calendar
 documentation: ug
 ---
@@ -52,6 +52,8 @@ Me.dateTimePickerAdv1.MaxValue = New System.DateTime(2008, 12, 31, 23, 59, 0, 0)
 Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 1, 1, 0, 0, 0, 0)
 {% endhighlight   %}
 
-See Also
+{% seealso %}
 
 Customizing the Calendar
+
+{% endseealso %}

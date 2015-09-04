@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Prevent-Columns-Resizing-for-Child-Tables
 description: how to prevent columns resizing for child tables
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

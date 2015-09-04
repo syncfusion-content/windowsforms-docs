@@ -2,7 +2,7 @@
 layout: post
 title: Properties 
 description: Properties 
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

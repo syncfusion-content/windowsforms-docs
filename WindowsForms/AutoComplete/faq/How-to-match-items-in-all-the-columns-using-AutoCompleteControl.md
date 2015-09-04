@@ -2,7 +2,7 @@
 layout: post
 title: How to match items in all the columns using AutoCompleteControl
 description: How to match items in all the columns using AutoCompleteControl
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

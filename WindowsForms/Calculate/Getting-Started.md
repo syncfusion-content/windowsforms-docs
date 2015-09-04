@@ -94,7 +94,7 @@ The following steps will guide you to deploy Essential Calculate:
 
 4. The libraries are added to the GAC during the product installation. Note that the CalculateConfig is a component provided for convenient usage of Essential Calculate. Hence, the product can also be used just by manually adding reference to the above assemblies.
 
-   > Note: For detailed documentation on Windows Application deployment, see [http://www.syncfusion.com/support/user/uploads/DeployingWindowsApplication_bdaf76f7.pdf](http://www.syncfusion.com/support/user/uploads/DeployingWindowsApplication_bdaf76f7.pdf)
+   N> For detailed documentation on Windows Application deployment, see [http://www.syncfusion.com/support/user/uploads/DeployingWindowsApplication_bdaf76f7.pdf](http://www.syncfusion.com/support/user/uploads/DeployingWindowsApplication_bdaf76f7.pdf)
 
 5. Then create a CalculateEngine. The CalcQuickBase class is used to create a CalculateEngine.
 
@@ -166,7 +166,7 @@ The following steps will guide you to deploy Essential Calculate:
    ~~~
    {:.prettyprint }
 
-   > Note: Engine is a class that is defined as a "property" in Essential Calculate.
+   N> Engine is a class that is defined as a "property" in Essential Calculate.
 
 
 Essential Calculate is deployed in your Windows application.
@@ -186,7 +186,7 @@ The following steps will guide you to deploy Essential Calculate in an ASP.NET a
 1. Marking the Application directory-The appropriate directory, usually where the aspx files are stored, must be marked as Application in IIS.
 2. Syncfusion Assemblies-The Syncfusion assemblies need to be in the bin folder that is beside the aspx files.
    
-   > Note: They can also be in the GAC, in which case, they should be referenced in Web.config file.
+   N> They can also be in the GAC, in which case, they should be referenced in Web.config file.
 
    ~~~ html
 
@@ -202,7 +202,7 @@ The following steps will guide you to deploy Essential Calculate in an ASP.NET a
    ~~~
    {:.prettyprint } 
 
-   > Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using._
+   N> X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using._
 
 3. Data Files-If you have .xml, .mdb, or other data files, ensure that they have sufficient security permission. Authenticated users should have full control over the files and the directories in order to give ASP.NET code, enough permission to open the file during runtime.
 
@@ -210,7 +210,7 @@ The following steps will guide you to deploy Essential Calculate in an ASP.NET a
 
    [http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
 
-   > Note: Application with Essential Calculate needs the following dependent assemblies for deployment.
+   N> Application with Essential Calculate needs the following dependent assemblies for deployment.
 
    * Syncfusion.Core.dll
    * Syncfusion.Compression.Base.dll
@@ -241,7 +241,7 @@ The following steps will guide you to deploy Essential Calculate in an ASP.NET a
    ~~~
    {:.prettyprint }
 
-   > Note: The Engine is a class that is defined as a "property" in Essential Calculate.
+   N> The Engine is a class that is defined as a "property" in Essential Calculate.
 
 Essential Calculate is now deployed in your ASP.NET application.
 
@@ -258,7 +258,7 @@ The following steps will guide you to deploy Essential Calculate:
    * Syncfusion.Core.dll
    * Syncfusion.Compression.Base.dll
    * Syncfusion.Calculate.Base.dll
-   > Note: There is no toolbox support for Calculate in WPF application.
+   N> There is no toolbox support for Calculate in WPF application.
 
 3. Then create a CalculateEngine. The CalcQuickBase class is used to create a CalculateEngine.
 
@@ -330,7 +330,7 @@ The following steps will guide you to deploy Essential Calculate:
    ~~~
    {:.prettyprint }
 
-   > Note: Engine is a class that is defined as a "property" in Essential Calculate._
+   N> Engine is a class that is defined as a "property" in Essential Calculate._
 
    Essential Calculate is now deployed in your WPF application.
 

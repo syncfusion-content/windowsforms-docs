@@ -2,7 +2,7 @@
 layout: post
 title: Advanced Features
 description: advanced features
-platform: WindowsForms
+platform: windowsforms
 control: Calendar
 documentation: ug
 ---
@@ -14,7 +14,7 @@ This section covers the below topics:
 
 Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and BindableValue property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
 
-> Note: Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
+N>: Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
 
 To bind a DateTimePickerAdv, perform the following steps.
 
@@ -22,123 +22,128 @@ To bind a DateTimePickerAdv, perform the following steps.
 2. Create a daaset using the code below.
 
 
+   ~~~ cs
+
+
+			// Creating DataSet,Table and rows.
+
+			DataSet dataSet = null;
+
+			DataTable table = null;
 
 
 
-					// Creating DataSet,Table and rows.
+			dataSet = new DataSet();
 
-					DataSet dataSet = null;
-
-					DataTable table = null;
+			table = dataSet.Tables.Add("Table");
 
 
 
-					dataSet = new DataSet();
-
-					table = dataSet.Tables.Add("Table");
+			table.Columns.Add("DateTimeColumn", typeof(DateTime));
 
 
 
-					table.Columns.Add("DateTimeColumn", typeof(DateTime));
+			table.Columns[0].AllowDBNull = true;
 
 
 
-					table.Columns[0].AllowDBNull = true;
+			table.Rows.Add(new object[]{DateTime.Now - TimeSpan.FromDays(60)});
+
+			table.Rows.Add(new object[]{DateTime.Now});
+
+			table.Rows.Add(new object[]{DBNull.Value});
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+			' Creating DataSet,Table and rows.
+
+			Private dataSet As DataSet = Nothing
+
+			Private table As DataTable = Nothing
 
 
 
-					table.Rows.Add(new object[]{DateTime.Now - TimeSpan.FromDays(60)});
+			Private dataSet = New DataSet()
 
-					table.Rows.Add(new object[]{DateTime.Now});
-
-					table.Rows.Add(new object[]{DBNull.Value});
+			Private table = dataSet.Tables.Add("Table")
 
 
 
-
-					' Creating DataSet,Table and rows.
-
-					Private dataSet As DataSet = Nothing
-
-					Private table As DataTable = Nothing
+			table.Columns.Add("DateTimeColumn", GetType(DateTime))
 
 
 
-					Private dataSet = New DataSet()
-
-					Private table = dataSet.Tables.Add("Table")
+			Private table.Columns(0).AllowDBNull = True
 
 
 
-					table.Columns.Add("DateTimeColumn", GetType(DateTime))
+			table.Rows.Add(New Object(){DateTime.Now - TimeSpan.FromDays(60)})
 
+			table.Rows.Add(New Object(){DateTime.Now})
 
+			table.Rows.Add(New Object(){DBNull.Value})              
 
-					Private table.Columns(0).AllowDBNull = True
-
-
-
-					table.Rows.Add(New Object(){DateTime.Now - TimeSpan.FromDays(60)})
-
-					table.Rows.Add(New Object(){DateTime.Now})
-
-					table.Rows.Add(New Object(){DBNull.Value})              
-
-
+   ~~~
+   {:.prettyprint }
 
 3. Assign the dataset to the DataGrid control using its DataSource property. Set the control's DataMember property to the member that must be bound.
 
 
 
+   ~~~ cs
+
+		dataGrid1.DataSource = dataSet;
+
+		dataGrid1.DataMember = "Table";
+
+   ~~~
+   {:.prettyprint }
 
 
-					dataGrid1.DataSource = dataSet;
 
-					dataGrid1.DataMember = "Table";
+   ~~~ vbnet
 
+		Private dataGrid1.DataSource = dataSet
 
+		Private dataGrid1.DataMember = "Table"
 
-
-
-
-
-					Private dataGrid1.DataSource = dataSet
-
-					Private dataGrid1.DataMember = "Table"
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Bind the datasource with the DateTimePickerAdv control.
 
 
+   ~~~ cs
 
 
+			// Setting the BindableValue property in order to Data Bind.
 
-					// Setting the BindableValue property in order to Data Bind.
+			dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn");
 
-					dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn");
-
-					dateTimePickerAdv1.Focus();
-
+			dateTimePickerAdv1.Focus();
 
 
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
+   
+			' Setting the BindableValue property in order to Data Bind.
 
+			dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn")
 
-					' Setting the BindableValue property in order to Data Bind.
+			dateTimePickerAdv1.Focus()                       
 
-					dateTimePickerAdv1.DataBindings.Add("BindableValue", dataSet, "Table.DateTimeColumn")
-
-					dateTimePickerAdv1.Focus()                       
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
 
    ![](Calendar_Images/Overview_img219.jpeg) 
 
-   {:.prettyprint}
 
 A sample which demonstrates this feature is available in the below sample installation path.
 
@@ -259,418 +264,422 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
 2. Create a control that implements the IDateTimePickerAdvCalendar interface using the below code.
 
 
+   ~~~ cs
+
+
+			//Creating Calendar which implements the IDateTimePickerAdvCalendar
+
+			private MyCustomCalendar MonthCalendar;
 
 
 
-					//Creating Calendar which implements the IDateTimePickerAdvCalendar
+			//Initializing the Calendar 
 
-					private MyCustomCalendar MonthCalendar;
-
-
-
-					//Initializing the Calendar 
-
-					this.MonthCalendar = new MyCustomCalendar();
+			this.MonthCalendar = new MyCustomCalendar();
 
 
 
-					//Defining the Calendar Class which implements IDateTimePickerAdvCalendar
+			//Defining the Calendar Class which implements IDateTimePickerAdvCalendar
 
-					public class MyCustomCalendar : MonthCalendar, IDateTimePickerAdvCalendar
+			public class MyCustomCalendar : MonthCalendar, IDateTimePickerAdvCalendar
+
+			{
+
+				private bool active;
+
+
+
+				public bool Active
+
+				{
+
+					get { return active; }
+
+					set { active = value; }
+
+				}
+
+
+
+				public System.Drawing.Font CalendarFont
+
+				{
+
+					get { return Font; }
+
+					set { Font = value; }
+
+				}
+
+
+
+				public Color CalendarForeColor
+
+				{
+
+					get { return ForeColor; }
+
+					set { ForeColor = value; }
+
+				}
+
+
+
+				public Color CalendarMonthBackground
+
+				{
+
+					get { return BackColor; }
+
+					set { BackColor = value; }
+
+				}
+
+
+
+				public DateTime Value
+
+				{
+
+					get { return SelectionStart; }
+
+					set { SelectionStart = SelectionEnd = value; }
+
+				}
+
+
+
+				public event DateTimePickerAdv.NullButtonEventHandler NullButtonDown;
+
+				public event DateTimePickerAdv.SelectDateEventHandler SelectDate;
+
+				public event DateTimePickerAdv.DateChangedEventHandler DateChange;
+
+
+
+				public MyCustomCalendar()
+
+				{
+
+					this.DateSelected += new System.Windows.Forms.DateRangeEventHandler(OnDateSelected);
+
+					this.DateChanged += new System.Windows.Forms.DateRangeEventHandler(OnDateChanged);
+
+				}
+
+
+
+				protected void OnDateSelected(object sender, System.Windows.Forms.DateRangeEventArgs e)
+
+				{
+
+					if (SelectDate != null)
 
 					{
 
-						private bool active;
-
-
-
-						public bool Active
-
-						{
-
-							get { return active; }
-
-							set { active = value; }
-
-						}
-
-
-
-						public System.Drawing.Font CalendarFont
-
-						{
-
-							get { return Font; }
-
-							set { Font = value; }
-
-						}
-
-
-
-						public Color CalendarForeColor
-
-						{
-
-							get { return ForeColor; }
-
-							set { ForeColor = value; }
-
-						}
-
-
-
-						public Color CalendarMonthBackground
-
-						{
-
-							get { return BackColor; }
-
-							set { BackColor = value; }
-
-						}
-
-
-
-						public DateTime Value
-
-						{
-
-							get { return SelectionStart; }
-
-							set { SelectionStart = SelectionEnd = value; }
-
-						}
-
-
-
-						public event DateTimePickerAdv.NullButtonEventHandler NullButtonDown;
-
-						public event DateTimePickerAdv.SelectDateEventHandler SelectDate;
-
-						public event DateTimePickerAdv.DateChangedEventHandler DateChange;
-
-
-
-						public MyCustomCalendar()
-
-						{
-
-							this.DateSelected += new System.Windows.Forms.DateRangeEventHandler(OnDateSelected);
-
-							this.DateChanged += new System.Windows.Forms.DateRangeEventHandler(OnDateChanged);
-
-						}
-
-
-
-						protected void OnDateSelected(object sender, System.Windows.Forms.DateRangeEventArgs e)
-
-						{
-
-							if (SelectDate != null)
-
-							{
-
-								SelectDate(this, new EventArgs());
-
-							}
-
-						}
-
-						protected void OnDateChanged(object sender, System.Windows.Forms.DateRangeEventArgs e)
-
-						{
-
-							if (DateChange != null)
-
-							{
-
-								DateChange(this, new EventArgs());
-
-							}
-
-						}
-
-
-
-						public string Culture
-
-						{
-
-							get { return "Not Supported"; }
-
-						}
-
-
-
-						public void FireNullEvent()
-
-						{
-
-							if (NullButtonDown != null)
-
-							{
-
-								NullButtonDown(this, new EventArgs());
-
-							}
-
-						}
-
-
-
-						CultureInfo IDateTimePickerAdvCalendar.Culture
-
-						{
-
-							get { throw new Exception("The method or operation is not implemented."); }
-
-							set { throw new Exception("The method or operation is not implemented."); }
-
-						}           
+						SelectDate(this, new EventArgs());
 
 					}
 
+				}
 
+				protected void OnDateChanged(object sender, System.Windows.Forms.DateRangeEventArgs e)
 
+				{
 
+					if (DateChange != null)
 
+					{
 
+						DateChange(this, new EventArgs());
 
-					 'Creating Calendar which implements the IDateTimePickerAdvCalendar 
+					}
 
-					Private MonthCalendar As MyCustomCalendar
+				}
 
 
 
-					'Initializing the Calendar 
+				public string Culture
 
-					Me.MonthCalendar = New MyCustomCalendar()
+				{
 
+					get { return "Not Supported"; }
 
+				}
 
-					'Defining the Calendar Class which implements IDateTimePickerAdvCalendar 
 
-					Public Class MyCustomCalendar
 
-						Inherits MonthCalendar
+				public void FireNullEvent()
 
-						Implements IDateTimePickerAdvCalendar
+				{
 
+					if (NullButtonDown != null)
 
+					{
 
+						NullButtonDown(this, new EventArgs());
 
+					}
 
-						Private m_active As Boolean
+				}
 
 
 
-						Public Property Active() As Boolean
+				CultureInfo IDateTimePickerAdvCalendar.Culture
 
-							Get
+				{
 
-								Return m_active
+					get { throw new Exception("The method or operation is not implemented."); }
 
-							End Get
+					set { throw new Exception("The method or operation is not implemented."); }
 
-							Set(ByVal value As Boolean)
+				}           
 
-								m_active = value
+			}
 
-							End Set
 
-						End Property
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
-						Public Property CalendarFont() As System.Drawing.Font
+			 'Creating Calendar which implements the IDateTimePickerAdvCalendar 
 
-							Get
+			Private MonthCalendar As MyCustomCalendar
 
-								Return Font
 
-							End Get
 
-							Set(ByVal value As System.Drawing.Font)
+			'Initializing the Calendar 
 
-								Font = value
+			Me.MonthCalendar = New MyCustomCalendar()
 
-							End Set
 
-						End Property
 
+			'Defining the Calendar Class which implements IDateTimePickerAdvCalendar 
 
+			Public Class MyCustomCalendar
 
-						Public Property CalendarForeColor() As Color
+				Inherits MonthCalendar
 
-							Get
+				Implements IDateTimePickerAdvCalendar
 
-								Return ForeColor
 
-							End Get
 
-							Set(ByVal value As Color)
 
-								ForeColor = value
 
-							End Set
+				Private m_active As Boolean
 
-						End Property
 
 
+				Public Property Active() As Boolean
 
-						Public Property CalendarMonthBackground() As Color
+					Get
 
-							Get
+						Return m_active
 
-								Return BackColor
+					End Get
 
-							End Get
+					Set(ByVal value As Boolean)
 
-							Set(ByVal value As Color)
+						m_active = value
 
-								BackColor = value
+					End Set
 
-							End Set
+				End Property
 
-						End Property
 
 
+				Public Property CalendarFont() As System.Drawing.Font
 
-						Public Property Value() As DateTime
+					Get
 
-							Get
+						Return Font
 
-								Return SelectionStart
+					End Get
 
-							End Get
+					Set(ByVal value As System.Drawing.Font)
 
-							Set(ByVal value As DateTime)
+						Font = value
 
-								SelectionStart = SelectionEnd = value
+					End Set
 
-							End Set
+				End Property
 
-						End Property
 
 
+				Public Property CalendarForeColor() As Color
 
-						Public Event NullButtonDown As DateTimePickerAdv.NullButtonEventHandler
+					Get
 
-						Public Event SelectDate As DateTimePickerAdv.SelectDateEventHandler
+						Return ForeColor
 
-						Public Event DateChange As DateTimePickerAdv.DateChangedEventHandler
+					End Get
 
+					Set(ByVal value As Color)
 
+						ForeColor = value
 
-						Public Sub New()
+					End Set
 
-							AddHandler Me.DateSelected, AddressOf OnDateSelected
+				End Property
 
-							AddHandler Me.DateChanged, AddressOf OnDateChanged
 
-						End Sub
 
+				Public Property CalendarMonthBackground() As Color
 
+					Get
 
-						Protected Sub OnDateSelected(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
+						Return BackColor
 
-							RaiseEvent SelectDate(Me, New EventArgs())
+					End Get
 
-						End Sub
+					Set(ByVal value As Color)
 
-						Protected Sub OnDateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
+						BackColor = value
 
-							RaiseEvent DateChange(Me, New EventArgs())
+					End Set
 
-						End Sub
+				End Property
 
 
 
-						Public ReadOnly Property Culture() As String
+				Public Property Value() As DateTime
 
-							Get
+					Get
 
-								Return "Not Supported"
+						Return SelectionStart
 
-							End Get
+					End Get
 
-						End Property
+					Set(ByVal value As DateTime)
 
+						SelectionStart = SelectionEnd = value
 
+					End Set
 
-						Public Sub FireNullEvent()
+				End Property
 
-							RaiseEvent NullButtonDown(Me, New EventArgs())
 
-						End Sub
 
+				Public Event NullButtonDown As DateTimePickerAdv.NullButtonEventHandler
 
+				Public Event SelectDate As DateTimePickerAdv.SelectDateEventHandler
 
-						Private Property Culture() As CultureInfo Implements IDateTimePickerAdvCalendar.Culture
+				Public Event DateChange As DateTimePickerAdv.DateChangedEventHandler
 
-							Get
 
-								Throw New Exception("The method or operation is not implemented.")
 
-							End Get
+				Public Sub New()
 
-							Set(ByVal value As CultureInfo)
+					AddHandler Me.DateSelected, AddressOf OnDateSelected
 
-								Throw New Exception("The method or operation is not implemented.")
+					AddHandler Me.DateChanged, AddressOf OnDateChanged
 
-							End Set
+				End Sub
 
-						End Property
 
-					End Class
 
+				Protected Sub OnDateSelected(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
 
+					RaiseEvent SelectDate(Me, New EventArgs())
+
+				End Sub
+
+				Protected Sub OnDateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs)
+
+					RaiseEvent DateChange(Me, New EventArgs())
+
+				End Sub
+
+
+
+				Public ReadOnly Property Culture() As String
+
+					Get
+
+						Return "Not Supported"
+
+					End Get
+
+				End Property
+
+
+
+				Public Sub FireNullEvent()
+
+					RaiseEvent NullButtonDown(Me, New EventArgs())
+
+				End Sub
+
+
+
+				Private Property Culture() As CultureInfo Implements IDateTimePickerAdvCalendar.Culture
+
+					Get
+
+						Throw New Exception("The method or operation is not implemented.")
+
+					End Get
+
+					Set(ByVal value As CultureInfo)
+
+						Throw New Exception("The method or operation is not implemented.")
+
+					End Set
+
+				End Property
+
+			End Class
+
+   ~~~
+   {:.prettyprint }
 
 3. Set theActive property of the MonthCalendar to True. Set the DateTimePickerAdv's CustomPopupWindow property to the PopupControlContainer control. Set the DateTimePickerAdv's CustomDrop property to theTrue. 
 
 
 
+   ~~~ cs
+
+			this.dateTimePickerAdv1.CustomDrop = true;
+
+			this.dateTimePickerAdv1.CustomPopupWindow = this.popupControlContainer1;
+
+			//Setting the DateTimePickerAdv control to consider the interface events by enabling Active property
+
+			this.MonthCalendar.Active = true;
+
+			//Adding Calendar to the Popup Control Container
+
+			this.popupControlContainer1.Controls.Add(this.MonthCalendar);
 
 
-					this.dateTimePickerAdv1.CustomDrop = true;
+   ~~~
+   {:.prettyprint }
 
-					this.dateTimePickerAdv1.CustomPopupWindow = this.popupControlContainer1;
-
-					//Setting the DateTimePickerAdv control to consider the interface events by enabling Active property
-
-					this.MonthCalendar.Active = true;
-
-					//Adding Calendar to the Popup Control Container
-
-					this.popupControlContainer1.Controls.Add(this.MonthCalendar);
+   ~~~ vbnet
 
 
+			Me.dateTimePickerAdv1.CustomDrop = True 
 
+			Me.dateTimePickerAdv1.CustomPopupWindow = Me.popupControlContainer1 
 
+			'Setting the DateTimePickerAdv control to consider the interface events by enabling Active property 
 
+			Me.MonthCalendar.Active = True 
 
+			'Adding Calendar to the Popup Control Container 
 
-					Me.dateTimePickerAdv1.CustomDrop = True 
+			Me.popupControlContainer1.Controls.Add(Me.MonthCalendar)
 
-					Me.dateTimePickerAdv1.CustomPopupWindow = Me.popupControlContainer1 
-
-					'Setting the DateTimePickerAdv control to consider the interface events by enabling Active property 
-
-					Me.MonthCalendar.Active = True 
-
-					'Adding Calendar to the Popup Control Container 
-
-					Me.popupControlContainer1.Controls.Add(Me.MonthCalendar)
-
-
+   ~~~
+   {:.prettyprint }
 
 4. In the button click event, call the MyCustomCalendar's FireNullEvent method. 
 
 
 
-
+   ~~~ cs
 
 				private void buttonAdv1_Click(object sender, EventArgs e)
 
@@ -682,11 +691,12 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
 
 				}
 
+   ~~~
+   {:.prettyprint }
 
 
 
-
-
+   ~~~ vbnet
 
 				Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -696,7 +706,8 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
 
 				End Sub
 
-
+   ~~~
+   {:.prettyprint }
 
 5. Run the application and click the dropdown button of the DateTimePickerAdv control to display the custom popup. 
 
@@ -708,7 +719,6 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
 
    ![](Calendar_Images/Overview_img223.jpeg) 
 
-   {:.prettyprint}
 
 A sample which demonstrates adding a MonthCalendarAdv itself as a custom popup calendar to the DateTimePickerAdv control is available in the below sample installation location.
 

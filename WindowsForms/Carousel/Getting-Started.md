@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

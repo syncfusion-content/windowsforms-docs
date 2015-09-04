@@ -2,7 +2,7 @@
 layout: post
 title: How-to-set-style-properties-of-a-nested-table
 description: how to set style properties of a nested table
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

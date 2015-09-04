@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Print-a-Grid
 description: how to print a grid
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

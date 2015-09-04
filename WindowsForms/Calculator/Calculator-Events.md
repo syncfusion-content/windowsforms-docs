@@ -2,8 +2,8 @@
 layout: post
 title: Calculator-Events
 description: calculator events
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: Calculator
 documentation: ug
 ---
 
@@ -21,9 +21,9 @@ Table 159: Methods Table
 
 <table>
 <tr>
-<td>
-{{ '**Members**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 ErrorCondition</td><td>

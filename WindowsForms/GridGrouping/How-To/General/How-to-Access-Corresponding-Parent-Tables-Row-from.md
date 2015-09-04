@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Access-Corresponding-Parent-Tables-Row-from
 description: how to access corresponding parent table's row from the child
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

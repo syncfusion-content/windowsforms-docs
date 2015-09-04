@@ -3,12 +3,9 @@ layout: post
 title: AutoComplete Events
 description: AutoComplete Events
 platform: WindowsForms
-control: Tools
+control: AutoComplete
 documentation: ug
 ---
-
-
-
 
 # AutoComplete Events
 
@@ -18,9 +15,9 @@ Table 126: Events Table
 
 <table>
 <tr>
-<td>
-AutoComplete Events</td><td>
-Description</td></tr>
+<th>
+AutoComplete Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 BeforeAddItem</td><td>
@@ -54,7 +51,7 @@ Enables you to provide a custom matching routine for the current value in the Ed
 PreMatchItem</td><td>
 Handled before the AutoComplete control performs a matching operation for the current text content of the active Edit control.</td></tr>
 <tr>
-<td>
+<td> 
 TargetChanging</td><td>
 Occurs when the target control of the AutoComplete control changes.</td></tr>
 </table>
@@ -73,9 +70,9 @@ Table 127: Members Table
 
 <table>
 <tr>
-<td>
- Members</td><td>
-Description</td></tr>
+<th>
+ Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -121,6 +118,7 @@ Private Sub autoComplete1_BeforeAddItem(ByVal sender As Object, ByVal e As AutoC
    e.Cancel = True
 
 End Sub
+
 {% endhighlight %}
 
 ## AutoCompleteItemBrowsed Event
@@ -131,9 +129,9 @@ Table 128: Members Table
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectedValue</td><td>
@@ -189,6 +187,7 @@ Private Sub autoComplete1_AutoCompleteItemBrowsed(ByVal sender As Object, ByVal 
     textBox1.Text = textBox1.Text + eventlogmessage
 
 End Sub
+
 {% endhighlight %}
 
 ## MatchItem Event
@@ -199,9 +198,9 @@ Table 129: Members Table
 
 <table>
 <tr>
-<td>
- Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>

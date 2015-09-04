@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Efficiently-Customize-Child-TableGroup-usin
 description: how to efficiently customize child table/group using custom engine.
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

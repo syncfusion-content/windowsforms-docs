@@ -2,7 +2,7 @@
 layout: post
 title: How-to-find-DisplayElement-Type
 description: how to find displayelement type
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Add-Conditional-Formatting-to-Rows
 description: how to add conditional formatting to rows
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

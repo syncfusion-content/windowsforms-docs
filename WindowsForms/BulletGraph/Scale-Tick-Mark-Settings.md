@@ -51,7 +51,7 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_Tick.png](Features_images/Features_img9.png)
+![](Features_images/Features_img9.png)
 
 ### TickPosition:
 
@@ -89,4 +89,4 @@ They are:
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_TickPos.bmp](Features_images/Features_img10.png)
+![](Features_images/Features_img10.png)

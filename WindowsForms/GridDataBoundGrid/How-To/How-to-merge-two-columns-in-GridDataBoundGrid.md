@@ -2,7 +2,7 @@
 layout: post
 title: How-to-merge-two-columns-in-GridDataBoundGrid
 description: how to merge two columns in griddataboundgrid
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-apply-grouping-properties-for-a-particular-
 description: how to apply grouping properties for a particular column
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

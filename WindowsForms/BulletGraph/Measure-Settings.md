@@ -39,7 +39,7 @@ The value of the Featured Measure of the BulletGraph is set by the FeaturedMeasu
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_FM.bmp](Features_images/Features_img5.png)
+![](Features_images/Features_img5.png)
 
 ### Comparative Measure:
 
@@ -69,4 +69,4 @@ The value of the Comparative Measure is set by using the ComparativeMeasure prop
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_CM.bmp](Features_images/Features_img6.png)
+![](Features_images/Features_img6.png)

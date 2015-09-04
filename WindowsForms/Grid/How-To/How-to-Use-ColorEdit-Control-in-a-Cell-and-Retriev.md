@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Use-ColorEdit-Control-in-a-Cell-and-Retriev
 description: how to use coloredit control in a cell and retrieve its value
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -41,7 +41,7 @@ The ButtonEdit control can be used in situations where a set of buttons are need
 
   
 
-    > Note: You can also add or remove buttons to the ButtonEdit.Buttons collection through the Add Button and Remove Button verbs provided.
+    N> You can also add or remove buttons to the ButtonEdit.Buttons collection through the Add Button and Remove Button verbs provided.
 
 5. Run the application. You can specify handlers for these child buttons also.
 

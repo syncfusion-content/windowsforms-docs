@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Get-the-New-Value-and-Old-Value-when-an-Ite
 description: how to get the new value and old value when an item is selected in a combobox cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

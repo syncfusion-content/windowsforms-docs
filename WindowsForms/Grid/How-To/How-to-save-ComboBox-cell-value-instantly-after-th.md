@@ -2,7 +2,7 @@
 layout: post
 title: How-to-save-ComboBox-cell-value-instantly-after-th
 description: how to save combobox cell value instantly after the dropdown is closed?
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

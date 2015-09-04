@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-selected-records
 description: how to access selected records
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

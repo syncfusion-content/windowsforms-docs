@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Use-a-Combo-Box-in-a-Cell
 description: how to use a combo box in a cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

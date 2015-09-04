@@ -2,8 +2,8 @@
 layout: post
 title: Calculator-Appearance
 description: calculator appearance
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: Calculator
 documentation: ug
 ---
 
@@ -47,7 +47,7 @@ Me.calculatorControl1.LayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayo
 
 
 
-> Note: We can set different button styles for the Calculator control, using CalculatorControl.ButtonStyle property. Refer_ Themes and Button Styles _topic to know more. ButtonStyles can be applied to both the layout modes._
+N>: We can set different button styles for the Calculator control, using CalculatorControl.ButtonStyle property. Refer_ Themes and Button Styles _topic to know more. ButtonStyles can be applied to both the layout modes._
 
 ## Background Settings
 

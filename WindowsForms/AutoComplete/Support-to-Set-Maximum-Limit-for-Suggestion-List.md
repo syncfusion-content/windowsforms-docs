@@ -3,7 +3,7 @@ layout: post
 title: Support to Set Maximum Limit for Suggestion List 
 description: Support to Set Maximum Limit for Suggestion List 
 platform: WindowsForms
-control: Tools
+control: AutoComplete
 documentation: ug
 ---
 
@@ -23,12 +23,12 @@ Table 125: Property Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MaxNumberofSuggestion</td><td>

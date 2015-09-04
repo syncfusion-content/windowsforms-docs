@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: Overview
-platform: WindowsForms
+platform: windowsforms
 control: Calendar
 documentation: ug
 ---
@@ -57,4 +57,4 @@ this.dateTimePickerAdv1.NoneButtonVisible = false;
 Me.dateTimePickerAdv1.NoneButtonVisible = False
 
 {% endhighlight  %}
-> Note: None button will not be visible when EnableNullDate property is set to false. See_ Null Value Settings _to know about EnableNullDate property.
+N>: None button will not be visible when EnableNullDate property is set to false. See_ Null Value Settings _to know about EnableNullDate property.

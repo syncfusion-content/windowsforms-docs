@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Make-Particular-Cells-ReadOnly
 description: how to make particular cells readonly
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

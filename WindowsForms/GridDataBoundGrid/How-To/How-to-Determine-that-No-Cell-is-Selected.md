@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Determine-that-No-Cell-is-Selected
 description: how to determine that no cell is selected
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

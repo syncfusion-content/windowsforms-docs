@@ -13,11 +13,13 @@ A ButtonEdit control is a combination of controls with textbox and buttons. The 
 
 
 
-See Also
+
+{% seealso %}
 
 TextBox Settings for ButtonEdit, Child Button Customization
 
 
+{% endseealso %}
 
 ## Style Settings
 
@@ -76,7 +78,7 @@ Me.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Classic
 
 
 
-> Note: ButtonEdit control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this.
+N> ButtonEdit control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this.
 
 ### Custom Colors
 
@@ -183,7 +185,7 @@ this.buttonEdit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
 
 
-> Note: The Border styles of the child buttons can be controlled using ButtonEditChildButton.BorderStyleAdv property. SeeSee Button Types and Border Styles topic for details.
+N> The Border styles of the child buttons can be controlled using ButtonEditChildButton.BorderStyleAdv property. SeeSee Button Types and Border Styles topic for details.
 
 ### Size Settings
 
@@ -206,10 +208,11 @@ MinimumSize</td><td>
 Sets the minimum size of the ButtonEdit control.</td></tr>
 </table>
 
-See Also
+{% seealso %}
 
 Foreground Settings
 
+{% endseealso %}
 
 ## Foreground Settings
 
@@ -242,7 +245,7 @@ Me.buttonEdit3.ForeColor = Color.SteelBlue
 {%endhighlight%}
 
 
-> Note: Foreground settings for the child buttons can be specified using ButtonEditChildButton.Font and ButtonEditChildButton.ForeColor properties.
+N> Foreground settings for the child buttons can be specified using ButtonEditChildButton.Font and ButtonEditChildButton.ForeColor properties.
 
 ![](Overview_images/Overview_img92.jpeg)
 
@@ -273,8 +276,10 @@ Me.buttonEdit3.ForeColor = Color.SteelBlue
 {%endhighlight%}
 
 
-> Note: This case setting can be overridden by TextBox.CharacterCasing property.
+N> This case setting can be overridden by TextBox.CharacterCasing property.
 
-See Also
+{% seealso %}
 
 TextBox Settings for ButtonEdit
+
+{% endseealso %}

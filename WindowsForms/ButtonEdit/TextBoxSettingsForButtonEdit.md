@@ -58,4 +58,4 @@ Me.buttonEdit1.ShowTexBox = True
 {%endhighlight%}
 
 
- >Note: To increase the height of the ButtonEdit control, make the text as multiline textbox.
+ N> To increase the height of the ButtonEdit control, make the text as multiline textbox.

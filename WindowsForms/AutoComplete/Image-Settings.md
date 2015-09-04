@@ -3,7 +3,7 @@ layout: post
 title: Image Settings
 description: Image Settings
 platform: WindowsForms
-control: Tools
+control: AutoComplete
 documentation: ug
 ---
 
@@ -15,9 +15,9 @@ Table 123: Method Table
 
 <table> 
 <tr>
-<td>
-AutoComplete Method</td><td>
-Description</td></tr>
+<th>
+AutoComplete Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddHistoryItem</td><td>
@@ -100,6 +100,8 @@ Items with images can be added to the AutoCompletePopup, also using external dat
 
 While using an external datasource, the Columns property can be initially refreshed by clicking the _Refresh Columns_ verb, visible in the designer.
 
- See Also
+{% seealso %}
  
 Multiple Columns
+
+ {% endseealso %}

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-select-a-record-programmatically
 description: how to select a record programmatically
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

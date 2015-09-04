@@ -2,7 +2,7 @@
 layout: post
 title: How-to-prevent-sorting-if-the-column-has-the-same-
 description: how to prevent sorting if the column has the same value in each cell
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

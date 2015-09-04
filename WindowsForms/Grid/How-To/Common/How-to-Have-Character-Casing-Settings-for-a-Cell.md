@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Have-Character-Casing-Settings-for-a-Cell
 description: how to have character casing settings for a cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

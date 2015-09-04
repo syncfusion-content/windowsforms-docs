@@ -2,8 +2,8 @@
 layout: post
 title: Runtime-Features
 description: runtime features
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: Calculator
 documentation: ug
 ---
 
@@ -19,10 +19,10 @@ Table 158: Keyboard Support Table
 
 <table>
 <tr>
-<td>
-{{ '**Button**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Keyboard Equivalent**' | markdownify }}</td></tr>
+<th>
+Button</td><th>
+Description</th><th>
+Keyboard Equivalent</th></tr>
 <tr>
 <td>
 Backspace</td><td>

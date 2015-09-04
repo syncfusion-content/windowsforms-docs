@@ -2,7 +2,7 @@
 layout: post
 title: How-does-one-add-currency-symbol-for-parent-table-
 description: how does one add currency symbol for parent table and child table
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

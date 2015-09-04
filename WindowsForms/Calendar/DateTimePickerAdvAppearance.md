@@ -2,7 +2,7 @@
 layout: post
 title: DateTimePickerAdv Appearance
 description: datetimepickeradv appearance
-platform: WindowsForms
+platform: windowsforms
 control: Calendar
 documentation: ug
 ---
@@ -102,9 +102,11 @@ Me.dateTimePickerAdv2.BackgroundImage = DirectCast((resources.GetObject("dateTim
 
 
 
- See Also
+{% seealso %}
 
  Border Styles
+ 
+ {% endseealso %}
 
 ## Border Styles
 
@@ -168,7 +170,7 @@ Me.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenIn
 
 
 
-> Note: MonthCalendarAdv.ThemedBorder property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
+N>: MonthCalendarAdv.ThemedBorder property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
  
 {% highlight c# %}
 //Setting border to "All" sides
@@ -200,6 +202,8 @@ this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue
 
 
 
- See Also
+{% seealso %}
  
  Background Settings, Visual Settings
+ 
+ {% endseealso %}

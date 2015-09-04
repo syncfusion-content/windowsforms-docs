@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Backcolor-of-a-Column
 description: how to change the backcolor of a column
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

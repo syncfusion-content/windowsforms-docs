@@ -85,11 +85,11 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 1. Create a simple Windows Forms application using Visual Studio.
 
-   ![D:/Help UGs/BulletGraph/WF/VS_NewProject.bmp](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
-   ![D:/Help UGs/BulletGraph/WF/Select_Ref_Manager.bmp](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 3. The Syncfusion Reference Manager Wizard is opened as shown in the following screenshot.
 
@@ -97,11 +97,11 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 4. Search for Bullet Graph using SearchBox and select Bullet Graph Control.  Click on Done to add selected Bullet Graph Control.
 
-   ![D:/Help UGs/BulletGraph/WF/Select_BG.bmp](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 5. The Bullet Graph assemblies are automatically added to the Project after Clicking OK
 
-   ![D:/Help UGs/BulletGraph/WF/Selected_BG.bmp](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 6. Add the following code example in code behind to create a simple Bullet Graph control.
 
@@ -146,8 +146,8 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 7. The simple Bullet Graph control is created as shown in the following screenshot.
 
-   ![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
-   > Note:  
-   > 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
-   > 2.   The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.
+   N> 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
+   N>
+   N> 2.   The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.

@@ -2,7 +2,7 @@
 layout: post
 title: Summaries
 description: summaries
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

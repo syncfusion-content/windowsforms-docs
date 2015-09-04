@@ -2,7 +2,7 @@
 layout: post
 title: How-to-apply-grouping-properties-for-ChildLevelGro
 description: how to apply grouping properties for childlevelgroups
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

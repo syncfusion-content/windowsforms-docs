@@ -92,7 +92,7 @@ TextAboveImage.</td></tr>
 
 
 
-> Note: The Image settings will be effective only when ButtonType is set to Normal.
+N> The Image settings will be effective only when ButtonType is set to Normal.
 
 
 

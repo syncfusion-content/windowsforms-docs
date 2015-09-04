@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Disable-Sorting-While-Record-Added
 description: how to disable sorting while record added 
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

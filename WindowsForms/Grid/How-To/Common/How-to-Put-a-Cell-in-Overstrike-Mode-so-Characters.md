@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Put-a-Cell-in-Overstrike-Mode-so-Characters
 description: how to put a cell in overstrike mode so characters get replaced instead of inserted as you type
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

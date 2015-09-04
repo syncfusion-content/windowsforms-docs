@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Change-the-Appearance-of-a-Single-Header-Cell
 description: how to change the appearance of a single header cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

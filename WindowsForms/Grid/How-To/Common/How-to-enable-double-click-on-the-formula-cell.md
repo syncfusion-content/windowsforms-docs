@@ -2,7 +2,7 @@
 layout: post
 title: How-to-enable-double-click-on-the-formula-cell
 description: how to enable double-click on the formula cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

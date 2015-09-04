@@ -2,7 +2,7 @@
 layout: post
 title: How to implement AutoComplete with RichTextBox control
 description: How to implement AutoComplete with RichTextBox control
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

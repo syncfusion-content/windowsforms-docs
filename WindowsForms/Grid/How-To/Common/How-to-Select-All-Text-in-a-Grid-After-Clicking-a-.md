@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Select-All-Text-in-a-Grid-After-Clicking-a-
 description: how to select all text in a grid after clicking a cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

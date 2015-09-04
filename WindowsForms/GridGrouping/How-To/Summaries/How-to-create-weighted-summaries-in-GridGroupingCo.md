@@ -2,7 +2,7 @@
 layout: post
 title: How-to-create-weighted-summaries-in-GridGroupingCo
 description: how to create weighted summaries in gridgroupingcontrol
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-set-ListBoxSelectionModes
 description: how to set listboxselectionmodes
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

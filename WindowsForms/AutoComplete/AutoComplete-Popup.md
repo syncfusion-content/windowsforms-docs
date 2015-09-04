@@ -2,7 +2,7 @@
 layout: post
 title: AutoComplete Popup
 description: AutoComplete Popup
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
@@ -27,16 +27,16 @@ Table 109: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoAddItem</td><td>
 Specifies whether the current item in the target control is to be automatically added during validation, when the ENTER key is pressed.</td></tr>
 </table>
 
-> Note: The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
+N> The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
 
 
 
@@ -73,7 +73,7 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-> Note: You can also set multiple columns. Refer Multiple Columns to know more.
+N> You can also set multiple columns. Refer Multiple Columns to know more.
 
 ## Close Button and Gripper Settings
 
@@ -83,9 +83,9 @@ Table 110: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowCloseButton</td><td>
@@ -96,7 +96,7 @@ ShowGripper</td><td>
 Specifies whether to show gripper at the bottom right of a DropDownContainer. By default it is true.</td></tr>
 </table>
 
-> Note: The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
+N> The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
 
 
 {% highlight C# %}
@@ -128,9 +128,9 @@ Table 111: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeaderForeColor</td><td>
@@ -218,9 +218,9 @@ Table 112: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoAddItem</td><td>
@@ -229,7 +229,7 @@ Specifies whether the current item in the target control is to be automatically 
  
 
 
-> Note: The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
+N> The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
 
  
 
@@ -265,7 +265,7 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-> Note:You can also set multiple columns. Refer_Multiple Columns to know more.
+N>You can also set multiple columns. Refer_Multiple Columns to know more.
 
 ### Close Button and Gripper Settings
 
@@ -275,9 +275,9 @@ Table 113: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowCloseButton</td><td>
@@ -290,7 +290,7 @@ Specifies whether the gripper should be shown at the bottom right of a DropDownC
  
 
 
-> Note: The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
+N> The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
 
  
 
@@ -326,9 +326,9 @@ Table 114: Properties
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 IgnoreCase</td><td>
@@ -407,9 +407,9 @@ Table 115: Sorting Properties
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoSortList</td><td>
@@ -449,9 +449,9 @@ Table 116: Properties
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 EnableDuplicateValues</td><td>
@@ -496,9 +496,9 @@ Table 117: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AdjustHeightToItemCount</td><td>

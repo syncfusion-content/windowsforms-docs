@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Validate-Changes-Made-to-a-Grid-Cell
 description: how to validate changes made to a grid cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

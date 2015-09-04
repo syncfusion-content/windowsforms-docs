@@ -3,7 +3,7 @@ layout: post
 title: Overview
 description: Overview
 platform: WindowsForms
-control: Tools
+control: AutoComplete
 documentation: ug
 ---
 

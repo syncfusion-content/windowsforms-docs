@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Make-a-Cell-Display--if-it-is-Not-Wide-Enou
 description: how to make a cell display '...' if it is not wide enough
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

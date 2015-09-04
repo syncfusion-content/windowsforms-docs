@@ -2,7 +2,7 @@
 layout: post
 title: How-to-set-texts-in-the-preview-record
 description: how to set texts in the preview record
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

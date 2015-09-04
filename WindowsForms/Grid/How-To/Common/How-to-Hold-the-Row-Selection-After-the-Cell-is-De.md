@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Hold-the-Row-Selection-After-the-Cell-is-De
 description: how to hold the row selection after the cell is deactivated
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

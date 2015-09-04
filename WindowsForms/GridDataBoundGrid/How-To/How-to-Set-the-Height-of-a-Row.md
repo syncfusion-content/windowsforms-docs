@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Set-the-Height-of-a-Row
 description: how to set the height of a row
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

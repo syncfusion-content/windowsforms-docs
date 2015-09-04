@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Set-the-Text-Color-that-Appears-in-a-Cell
 description: how to set the text color that appears in a cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

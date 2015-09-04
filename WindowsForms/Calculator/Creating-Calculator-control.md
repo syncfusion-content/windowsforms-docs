@@ -2,8 +2,8 @@
 layout: post
 title: Creating-Calculator-control
 description: creating calculator control
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: Calculator
 documentation: ug
 ---
 

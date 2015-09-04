@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Get-the-Screen-Point-for-the-Given-Cell-Coordinates
 description: how to get the screen point for the given cell coordinates
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

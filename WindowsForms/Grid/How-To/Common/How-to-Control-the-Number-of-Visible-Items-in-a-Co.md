@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Control-the-Number-of-Visible-Items-in-a-Co
 description: how to control the number of visible items in a combo box cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

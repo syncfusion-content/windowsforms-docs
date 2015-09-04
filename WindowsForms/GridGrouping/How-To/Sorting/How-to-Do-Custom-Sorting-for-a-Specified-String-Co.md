@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Do-Custom-Sorting-for-a-Specified-String-Co
 description: how to do custom sorting for a specified string column
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

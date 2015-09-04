@@ -2,7 +2,7 @@
 layout: post
 title: How-to-align-summary-cells-in-GridGroupingControl
 description: how to align summary cells in gridgroupingcontrol
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

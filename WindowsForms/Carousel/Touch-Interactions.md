@@ -2,7 +2,7 @@
 layout: post
 title: Touch-Interactions
 description: touch interactions
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

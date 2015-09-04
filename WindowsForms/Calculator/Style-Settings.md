@@ -2,8 +2,8 @@
 layout: post
 title: Style-Settings
 description: style settings
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: Calculator
 documentation: ug
 ---
 

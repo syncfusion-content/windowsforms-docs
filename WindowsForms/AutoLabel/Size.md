@@ -2,8 +2,8 @@
 layout: post
 title: Size
 description: Size
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: AutoLabel
 documentation: ug
 ---
 
@@ -27,7 +27,7 @@ AutoSize</td><td>
 Enables automatic resizing based on font size.</td></tr>
 </table>
 
-> Note: This is valid only for label controls that do not wrap text.
+N> This is valid only for label controls that do not wrap text.
 
 
 {% highlight C# %}

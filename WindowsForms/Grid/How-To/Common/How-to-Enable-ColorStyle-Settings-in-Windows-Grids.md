@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Enable-ColorStyle-Settings-in-Windows-Grids
 description: how to enable colorstyle settings in windows grids
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

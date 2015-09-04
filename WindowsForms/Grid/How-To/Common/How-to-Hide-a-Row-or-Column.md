@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Hide-a-Row-or-Column
 description: how to hide a row or column
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

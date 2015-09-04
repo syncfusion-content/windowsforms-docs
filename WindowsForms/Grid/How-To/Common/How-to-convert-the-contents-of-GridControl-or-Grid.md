@@ -2,7 +2,7 @@
 layout: post
 title: How-to-convert-the-contents-of-GridControl-or-GridControl-or-GridDataBoundGridControl-to-Excel
 description: how to convert the contents of gridcontrol or griddataboundgridcontrol to excel
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

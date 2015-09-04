@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Set-a-Value-into-a-Cell
 description: how to set a value into a cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

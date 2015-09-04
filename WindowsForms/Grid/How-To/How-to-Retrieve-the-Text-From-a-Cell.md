@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Retrieve-the-Text-From-a-Cell
 description: how to retrieve the text from a cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

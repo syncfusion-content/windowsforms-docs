@@ -2,7 +2,7 @@
 layout: post
 title: ButtonAdv Appearance
 description: ButtonAdv Appearance
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
@@ -47,7 +47,7 @@ RightEnd - Right end image is used.</td></tr>
 
 
 
-> Note: You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See Image Settings to know more.
+N> You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See Image Settings to know more.
 
 {%highlight c#%}
 
@@ -77,7 +77,7 @@ Me.ButtonAdvControl.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calc
 
 
  
-> Note: The ButtonTypes are only provided for ease of use and do not in any way change the functionality of the buttons.
+N> The ButtonTypes are only provided for ease of use and do not in any way change the functionality of the buttons.
 
 Example - A sample image which uses most of the button types in a single application is as follows. User will have to add respective functionalities for each button type.
 
@@ -120,7 +120,7 @@ SunkenOuter</td></tr>
 
 
 
-> Note: This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See Visual Styles.
+N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See Visual Styles.
 
 
  
@@ -147,9 +147,11 @@ Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Su
 
 
 
-See Also
+{% seealso %}
 
 Visual Styles, Button Types
+
+ {% endseealso %}
 
 ## Visual Styles
 
@@ -206,7 +208,7 @@ Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.OfficeXP
 
 
 
-> Note: While mouse hovering over the OfficeXP, Office2003 and WindowsXP at run time, the button will be painted with some standard colors. This is an inbuilt feature in the ButtonControlAdv.
+N> While mouse hovering over the OfficeXP, Office2003 and WindowsXP at run time, the button will be painted with some standard colors. This is an inbuilt feature in the ButtonControlAdv.
 
 
  
@@ -300,9 +302,12 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
 ![](Overview_images/Overview_img68.jpeg) 
 
-See Also
+
+ {% seealso %}
 
 Button Types, Image Settings
+
+{% endseealso %}
 
 ## Foreground Settings
 

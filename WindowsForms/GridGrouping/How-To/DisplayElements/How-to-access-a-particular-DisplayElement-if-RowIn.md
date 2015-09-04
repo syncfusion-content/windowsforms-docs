@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-a-particular-DisplayElement-if-RowIn
 description: how to access a particular displayelement if rowindex is provided
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

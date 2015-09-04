@@ -2,7 +2,7 @@
 layout: post
 title: How to close the DateTimePickerAdv's Drop-Down by hitting ENTER key or ESC key
 description: how to close the datetimepickeradv's drop-down by hitting enter key or esc key
-platform: WindowsForms
+platform: windowsforms
 control: Calendar 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Implement-Fill-Paste-in-the-Grid
 description: how to implement fill paste in the grid
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

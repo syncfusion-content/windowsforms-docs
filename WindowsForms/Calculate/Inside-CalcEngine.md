@@ -79,7 +79,7 @@ CalcEngine.Calculate is the method that actually performs calculations. It does 
 
 * It accepts a parsed formula 
 * Uses a stack oriented calculation technique to convert the parsed formula into the value that it represents. 
-> Note: The value returned is a string holding the computed quantity.
+N> The value returned is a string holding the computed quantity.
 
 ## How Things Work
 

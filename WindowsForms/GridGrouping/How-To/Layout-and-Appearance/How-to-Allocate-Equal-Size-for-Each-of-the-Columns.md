@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Allocate-Equal-Size-for-Each-of-the-Columns
 description: how to allocate equal size for each of the columns in all the tables
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

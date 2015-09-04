@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Create-a-Cell-that-contains-Hypertext-Link-
 description: how to create a cell that contains hypertext link along with different formatted texts
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

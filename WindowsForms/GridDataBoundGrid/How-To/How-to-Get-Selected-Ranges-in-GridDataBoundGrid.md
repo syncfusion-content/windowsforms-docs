@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Get-Selected-Ranges-in-GridDataBoundGrid
 description: how to get selected ranges in griddataboundgrid
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

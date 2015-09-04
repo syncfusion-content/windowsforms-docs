@@ -2,7 +2,7 @@
 layout: post
 title: Groups
 description: groups
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-add-Expression-columns
 description: how to add expression columns
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

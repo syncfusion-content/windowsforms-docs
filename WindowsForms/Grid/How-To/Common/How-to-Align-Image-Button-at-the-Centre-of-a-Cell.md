@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Align-Image-Button-at-the-Centre-of-a-Cell
 description: how to align image button at the centre of a cell 
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

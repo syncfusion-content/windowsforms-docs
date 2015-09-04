@@ -3,7 +3,7 @@ layout: post
 title: Multiple Columns
 description: Multiple Columns
 platform: WindowsForms
-control: Tools
+control: AutoComplete
 documentation: ug
 ---
 
@@ -17,9 +17,9 @@ Table 121: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Properties</td><td>
-Description</td></tr>
+<th>
+AutoComplete Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Columns</td><td>
@@ -39,9 +39,9 @@ Table 122: Property Table
 
 <table>
 <tr>
-<td>
-AutoCompleteDataColumn Properties</td><td>
-Description</td></tr>
+<th>
+AutoCompleteDataColumn Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 ColumnHeaderText</td><td>
@@ -123,7 +123,10 @@ While using an external datasource, the Columns property can be initially refres
 
 
 
-> Note: We can also add images to the dropdown items using internal source and external source. See Image Settings for details.
+N> We can also add images to the dropdown items using internal source and external source. See Image Settings for details.
 
- See Also
+{% seealso %}
+
  Source for AutoComplete Control, How to match items in all the columns using AutoCompleteControl?
+ 
+{% endseealso %}

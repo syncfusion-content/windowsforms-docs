@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Insert-an-Unbound-CheckBox-Column
 description: how to insert an unbound checkbox column
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

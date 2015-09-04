@@ -2,7 +2,7 @@
 layout: post
 title: What-are-the-events-fired-when-the-record-values-a
 description: what are the events fired when the record values are changed
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

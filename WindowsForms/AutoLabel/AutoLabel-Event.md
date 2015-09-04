@@ -2,8 +2,8 @@
 layout: post
 title: AutoLabel Event
 description: AutoLabel Event
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: AutoLabel
 documentation: ug
 ---
 # AutoLabel Event
@@ -14,9 +14,9 @@ Table 389: Event Table
 
 <table>
 <tr>
-<td>
-AutoLabel Event</td><td>
-Description</td></tr>
+<th>
+AutoLabel Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 PropertyChanged</td><td>

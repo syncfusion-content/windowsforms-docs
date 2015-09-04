@@ -2,7 +2,7 @@
 layout: post
 title: How-to-set-conditional-formatting-in-the-GroupingG
 description: how to set conditional formatting in the groupinggrid
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

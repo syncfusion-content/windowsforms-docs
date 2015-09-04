@@ -71,4 +71,4 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_BindRangeStrokeToTicksLabels.png](Features_images/Features_img8.png)
+![](Features_images/Features_img8.png)

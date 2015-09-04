@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-all-the-groups
 description: how to access all the groups
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

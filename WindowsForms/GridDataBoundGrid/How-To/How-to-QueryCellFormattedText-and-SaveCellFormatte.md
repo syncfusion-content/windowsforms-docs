@@ -2,7 +2,7 @@
 layout: post
 title: How-to-QueryCellFormattedText-and-SaveCellFormattedText
 description: how to querycellformattedtext and savecellformattedtext
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

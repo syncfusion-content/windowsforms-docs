@@ -2,7 +2,7 @@
 layout: post
 title: Which event will raise when the month is changed using arrow button?
 description: Which event will raise when the month is changed using arrow button?
-platform: WindowsForms
+platform: windowsforms
 control: Calendar 
 documentation: ug
 ---

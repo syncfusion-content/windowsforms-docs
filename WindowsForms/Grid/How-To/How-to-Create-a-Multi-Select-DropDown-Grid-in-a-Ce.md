@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Create-a-Multi-Select-DropDown-Grid-in-a-Ce
 description: how to create a multi-select dropdown grid in a cell
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-retrieve-a-summary-item
 description: how to retrieve a summary item
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

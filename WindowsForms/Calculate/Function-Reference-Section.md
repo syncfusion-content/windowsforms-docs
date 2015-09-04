@@ -815,7 +815,7 @@ period is the period for which, you want to calculate the depreciation. Period 
 
 factor is the rate at which, the balance declines. If factor is omitted, it is assumed to be 2 (the double-declining balance method).
 
-> Note: All five arguments must be positive numbers.
+N> All five arguments must be positive numbers.
 
 
 #### Remarks:
@@ -1031,6 +1031,7 @@ where,
 * lookfor is the text you want to search.
 * lookin is the the text in which you want to search.
 * start specifies the starting position of the text from where you want to start searching in the text. This  is optional. 
+
 ## Finv 
 
 
@@ -1047,6 +1048,7 @@ The FINV function Syntax: has the following three arguments (Argument is a value
 * Probability is a probability associated with the F cumulative distribution.
 * Deg_freedom1 is the numerator degrees of freedom.
 * Deg_freedom2 is the denominator degrees of freedom.
+
 ## FISHER
 
 
@@ -1134,6 +1136,7 @@ significance is the multiple to which, you want to round the number off.
 
 * Number and significance must have the same sign. 
 * Regardless of the sign of the number, a value is rounded down when adjusted away from zero. If a number is an exact multiple of significance, no rounding occurs.
+
 ## FORECAST
 
 
@@ -1250,6 +1253,7 @@ where,
 * p is the probability associated with the gamma distribution.
 * alpha is a parameter of the distribution.
 * beta is a parameter of the distribution.
+
 ## GAMMALN
 
 ### GAMMAINV
@@ -1414,6 +1418,7 @@ where,
 * numberofsample is the size of the sample.
 * population is the number of successes in the population.
 * numberofpopulation is the population size.
+
 ## HYPEGEOMDIST
 
 
@@ -1487,6 +1492,7 @@ value_if_false is the value that is returned if a logical_test is False.
 #### Remarks:
 
 * Countif and Sumif are additional methods that provide conditional calculations.
+
 ## Index
 
 
@@ -1501,6 +1507,7 @@ where,
 * range is a string to mention the specific range.
 * row is the integer that indicates the specific row index.
 * col is the integer that indicates the specific column index.
+
 ## Indirect
 
 
@@ -1513,6 +1520,7 @@ Indirect(content)
 where,
 
 * content is the string that provides the textual representation of the cell.
+
 ## INT
 
 
@@ -1585,6 +1593,7 @@ type is the number 0 or 1 and indicates when payments are due. If type is omitt
 #### Remarks:
 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
+
 ## IRR
 
 
@@ -1659,6 +1668,7 @@ IsNA(value)
 where,
 
 * value  the function will test.
+
 ## IsNonText
 
 
@@ -1673,6 +1683,7 @@ IsNonText(text)
 where,
 
 * text is the value you want to  test whether  it is a string or not.
+
 ## ISNUMBER
 
 
@@ -1722,6 +1733,7 @@ IsText(text)
 where,
 
 * text is the value you want to test to check if it is a string or not.
+
 ## KURT
 
 
@@ -1773,6 +1785,7 @@ k is the position (from the largest) in the array or cell range of data to retu
 #### Remarks:
 
 * If n is the number of data points in a range, then LARGE(array,1) returns the largest value, and LARGE(array,n) returns the smallest value.
+
 ## LEFT
 
 
@@ -1795,6 +1808,7 @@ num_chars specifies the number of characters which, you want LEFT to extract.
 * Num_chars must be greater than or equal to zero.
 * If num_chars is greater than the length of text, LEFT returns all the text.
 * If num_chars is omitted, it is assumed to be 1.
+
 ## LN
 
 
@@ -1812,6 +1826,7 @@ number is the positive real number for which, you want the natural logarithm.
 #### Remarks:
 
 * LN is the inverse of the EXP function.
+
 ## LEN
 
 
@@ -2034,6 +2049,7 @@ value1, value2, ... are values for which you want to find the largest value.
 * If an argument is an array or reference, only values in that array or reference are used. Empty cells and text values in the array or reference are ignored.
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero).
 * If the arguments contain no values, MAXA returns 0 (zero).
+
 ## MEDIAN
 
 
@@ -2052,6 +2068,7 @@ number1, number2, ... are numbers for which you want the median.
 #### Remarks:
 
 * If there is an even number of numbers in the set, then MEDIAN calculates the average of the two numbers in the middle.
+
 ## MID
 
 
@@ -2086,6 +2103,7 @@ number1, number2, ... are  numbers for which you want to find the minimum value
 #### Remarks:
 
 * If an argument is an array or reference, only numbers in that array or reference are used. Empty cells, logical values or text in the array or reference are ignored. If logical values and text should not be ignored, use MINA.
+
 ## MINA
 
 
@@ -2124,6 +2142,7 @@ serial_number is the time that contains the minute you want to find. Times may 
 #### Remarks:
 
 * Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5).
+
 ## MIRR
 
 
@@ -2193,6 +2212,7 @@ number1, number2, ... are arguments for which you want to calculate the mode.
 #### Remarks:
 
 * In a set of values, the mode is the most frequently occurring value.
+
 ## MONTH
 
 
@@ -2211,6 +2231,7 @@ serial_number is the date of the month you are trying to find. Dates should be e
 #### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
+
 ## NEGBINOMDIST
 
 
@@ -2281,6 +2302,7 @@ cumulative is a logical value that determines the form of the function. If cumul
 
 
 * When cumulative = True, the formula is the integral from negative infinity to x of the given formula.
+
 ## NORMINV
 
 
@@ -2318,6 +2340,7 @@ NormsDist(value)
 where, 
 
 * value is a numeric value that checks with the random variable.
+
 ## NormsInv
 
 
@@ -2330,6 +2353,7 @@ NormsDist(value)
 where,
 
 * value is probability of the standard deviation.
+
 ## NOT
 
 
@@ -2357,6 +2381,7 @@ NOW( )
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900 
 * Numbers to the right of the decimal point in the serial number represent the time; numbers to the left represent the date. For example, the serial number .5 represents the time 12:00 noon.
+
 ## NPER
 
 
@@ -2380,6 +2405,7 @@ type is the number 0 or 1 and indicates when payments are due. If type equals:
 
 * 0 - payments are due at the end of the period
 * 1 - payments are due at the beginning of the period
+
 ## NPV
 
 
@@ -2425,6 +2451,7 @@ number is the value to be rounded off.
 #### Remarks:
 
 * Regardless of the sign of a number, a value is rounded up when adjusted away from zero. If the number is an odd integer, no rounding occurs.
+
 ## Offset
 
 
@@ -2441,6 +2468,7 @@ where,
 * columns is the number of columns you want to apply as the offset to the range. This can be either a positive or a negative number.
 * height is the number of rows that you want the returned range to be.
 * width is the number of columns that you want the returned range to be.
+
 ## OR
 
 
@@ -2459,6 +2487,7 @@ logical1, logical2, ... are conditions you want to test that can be either True
 #### Remarks:
 
 * The arguments must evaluate to logical values such as True or False or in arrays or references that contain logical values.
+
 ## PEARSON
 
 
@@ -2511,6 +2540,7 @@ k is the percentile value in the range 0..1, inclusive.
 
 * k must be >=10 and <= 1. 
 * If k is not a multiple of 1/(n - 1), PERCENTILE interpolates to determine the value at the k-th percentile.
+
 ## PERCENTRANK
 
 
@@ -2551,6 +2581,7 @@ where,
 
 * n is the number of items.
 * k is the time taken.
+
 ## PI
 
 
@@ -2589,6 +2620,7 @@ type is the number 0 (zero) or 1 and indicates when payments are due. If type eq
 
 * The payment returned by PMT includes principal and interest but no taxes, reserve payments or fees sometimes associated with loans. 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12 percent for rate and 4 for nper. 
+
 ## POISSON
 
 
@@ -2638,6 +2670,7 @@ where,
 
 * number is the base number. It can be any real number.
 * power is the exponent to which, the base number is raised.
+
 ## POWER
 
 
@@ -2683,6 +2716,7 @@ type is the number 0 or 1 and indicates when payments are due. If type equals:
 #### Remarks:
 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
+
 ## PROB
 
 
@@ -2708,6 +2742,7 @@ upper_limit is the optional upper bound on the value for which, you want a proba
 
 * Any value in prob_range must be > 0 and < 1.
 * If upper_limit is omitted, PROB returns the probability of being equal to lower_limit.
+
 ## PRODUCT
 
 
@@ -2835,6 +2870,7 @@ order is a number specifying how to rank numbers.
 Remark
 
 * RANK gives duplicate numbers of the same rank. However, the presence of duplicate numbers will affect the ranks of subsequent numbers.
+
 ## RATE
 
 
@@ -2886,6 +2922,7 @@ num_chars specifies the number of characters you want RIGHT to extract.
 * Num_chars must be greater than or equal to zero. 
 * If num_chars is greater than the length of text, RIGHT returns all the text. 
 * If num_chars is omitted, it is assumed to be 1.
+
 ## ROUND
 
 
@@ -2908,6 +2945,7 @@ num_digits specifies the number of digits you want to round off.
 * If num_digits > 0, then number is rounded off to the specified number of decimal places. 
 * If num_digits = 0, then number is rounded off to the nearest integer. 
 * If num_digits  < 0, then number is rounded off to the left of the decimal point.
+
 ## ROUNDDOWN
 
 
@@ -2928,6 +2966,7 @@ Num_digits is the number of digits to which you want to round a number.
 Remark
 
 * ROUNDDOWN behaves like ROUND, except that it always rounds a number down.
+
 ## ROUNDUP
 
 
@@ -2950,6 +2989,7 @@ num_digits is the number of digits to which you want to round a number.
 #### Remarks:
 
 * ROUNDUP behaves like ROUND, except that it always rounds a number up.
+
 ## RSQ
 
 
@@ -2998,6 +3038,7 @@ serial_number is the time that contains the seconds you want to find.
 #### Remarks:
 
 * Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5 because it is half of a day).
+
 ## SIGN
 
 
@@ -3057,6 +3098,7 @@ SinH(value)
 where,
 
 * value is to get the sine of the specific value.
+
 ## SKEW
 
 
@@ -3420,6 +3462,7 @@ Substitutes first instance of "1" with "2" (Quarter 2, 2008)</td></tr>
 =SUBSTITUTE(A4, "1", "2", 3)</td><td>
 Substitutes third instance of "1" with "2" (Quarter 1, 2012)</td></tr>
 </table>
+
 ## Sum
 
 The Sum function adds all numbers in a range of cells and returns the result.
@@ -3445,6 +3488,7 @@ where,
 * range is the range of cells you want to apply the criteria against.
 * criteria is used to determine the cells that will be added.
 * sum_range are the cells to sum.
+
 ## SUMPRODUCT
 
 
@@ -3464,6 +3508,7 @@ array1, array2, array3, ... are 2 to 30 arrays whose components you will want t
 
 * The array arguments must have the same dimensions. 
 * SUMPRODUCT treats array entries that are not numeric as if they were zeros.
+
 ## SUMSQ
 
 
@@ -3685,6 +3730,7 @@ Trim( text )
 where,
 
 * text is the text value for which you want to remove the leading and the trailing spaces.
+
 ## TRIMMEAN
 
 
@@ -3719,6 +3765,7 @@ True(stringvalue)
 where,
 
 * stringvalue is toprovide an empty string.
+
 ## TRUNC
 
 
@@ -3739,6 +3786,7 @@ num_digits is a number specifying the precision of the truncation. The default 
 #### Remarks:
 
 * TRUNC and INT are similar in that both return integers. TRUNC removes the fractional part of the number. INT rounds numbers down to the nearest integer based on the value of the fractional part of the number. INT and TRUNC are different only when using negative numbers: TRUNC(-4.3) returns -4 but, INT(-4.3) returns -5 because -5 is the lower number.
+
 ## Upper
 
 
@@ -3751,6 +3799,7 @@ Upper( text )
 where,
 
 * text is the string you want to convert to uppercase.
+
 ## Value
 
 
@@ -3800,6 +3849,7 @@ VarP(listofvalues)
 where,
 
 * listofvalues provides the range or values that contain the population.
+
 ## VARPA
 
 
@@ -3889,6 +3939,7 @@ range_lookup is a logical value that specifies whether you want VLOOKUP to find
 #### Remarks:
 
 * If VLOOKUP can't find a lookup_value and the range_lookup is True, it uses the largest value that is less than or equal to the lookup_value.
+
 ## WEEKDAY
 
 
@@ -3918,6 +3969,7 @@ If Return_type is:                 Number returned:
 #### Remarks:
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900 
+
 ## Weibull
 
 

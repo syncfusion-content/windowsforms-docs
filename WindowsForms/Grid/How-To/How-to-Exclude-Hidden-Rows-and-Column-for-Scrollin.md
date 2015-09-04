@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Exclude-Hidden-Rows-and-Column-for-Scrollin
 description: how to exclude hidden rows and column for scrolling? 
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

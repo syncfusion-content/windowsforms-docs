@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-child-tables-display-elements
 description: how to access child table's display elements
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

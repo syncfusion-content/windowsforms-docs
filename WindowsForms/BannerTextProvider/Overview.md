@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: BannerTextProviderComponent
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Synchronize-the-Selection-of-Multiple-Grids
 description: how to synchronize the selection of multiple grids
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

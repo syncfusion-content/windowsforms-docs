@@ -2,8 +2,8 @@
 layout: post
 title: Display-TextBox
 description: display textbox
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: Calculator
 documentation: ug
 ---
 
@@ -17,9 +17,9 @@ Table 152: Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Calculatorcontrol Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Calculatorcontrol Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 DisplayTextAlign</td><td>
@@ -71,9 +71,9 @@ Table 153: Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Calculatorcontrol Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Calculatorcontrol Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Culture</td><td>

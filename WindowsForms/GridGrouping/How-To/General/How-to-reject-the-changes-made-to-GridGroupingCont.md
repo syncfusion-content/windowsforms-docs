@@ -2,7 +2,7 @@
 layout: post
 title: How-to-reject-the-changes-made-to-GridGroupingCont
 description: how to reject the changes made to gridgroupingcontrol
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

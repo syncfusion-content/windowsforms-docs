@@ -2,8 +2,8 @@
 layout: post
 title: Spacing
 description: Spacing
-platform: WindowsForms
-control: Editors Package
+platform: windowsforms
+control: AutoLabel
 documentation: ug
 ---
 
@@ -16,9 +16,9 @@ Table 386: Property Table
 
 <table>
 <tr>
-<td>
-AutoLabel Properties</td><td>
-Description</td></tr>
+<th>
+AutoLabel Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 DX</td><td>

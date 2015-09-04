@@ -48,7 +48,7 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
 {% endhighlight %} 
 
-![D:/Help UGs/BulletGraph/WF/BG_Label.bmp](Features_images/Features_img11.png)
+![](Features_images/Features_img11.png)
 
 ### Label Position
 
@@ -81,4 +81,4 @@ The labels in the scale are placed above or below the qualitative ranges by choo
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_LabelPos.bmp](Features_images/Features_img12.png)
+![](Features_images/Features_img12.png)

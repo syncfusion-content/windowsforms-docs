@@ -2,7 +2,7 @@
 layout: post
 title: Runtime Features
 description: runtime features
-platform: WindowsForms
+platform: windowsforms
 control: EditorPackage 
 documentation: ug
 ---
@@ -188,6 +188,8 @@ Me.dateTimePickerAdv1.CopyFieldsOnly = True
 Me.dateTimePickerAdv1.ClipboardFormat = System.Windows.Forms.DateTimePickerFormat.Short
 {% endhighlight  %}
 
-> See Also
-> 
-> Text Field, Null value Settings
+{% seealso %}
+
+ Text Field, Null value Settings
+
+ {% endseealso %}

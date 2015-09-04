@@ -2,7 +2,7 @@
 layout: post
 title: How-to-access-a-particular-group
 description: how to access a particular group
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

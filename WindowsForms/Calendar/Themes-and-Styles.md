@@ -2,7 +2,7 @@
 layout: post
 title: Themes and Styles
 description: themes and styles
-platform: WindowsForms
+platform: windowsforms
 control: Calendar
 documentation: ug
 ---

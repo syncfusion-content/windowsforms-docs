@@ -2,7 +2,7 @@
 layout: post
 title: How-to-attach-a-context-menu-to-a-cell-in-GridGrou
 description: how to attach a context menu to a cell in gridgrouping control
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---

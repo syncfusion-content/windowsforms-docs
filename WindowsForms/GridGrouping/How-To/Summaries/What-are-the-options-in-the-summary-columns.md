@@ -2,7 +2,7 @@
 layout: post
 title: What-are-the-options-in-the-summary-columns
 description: what are the options in the summary columns
-platform: WindowsForms
+platform: windowsforms
 control: How To
 documentation: ug
 ---
