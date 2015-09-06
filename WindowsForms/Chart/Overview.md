@@ -67,7 +67,7 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-![](Overview_images/Overview_img2.jpeg)
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
 
 Note:</td><td>
 Represents important information</td></tr>
@@ -79,14 +79,14 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img3.jpeg)
+{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
 
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Important Note</td><td>
-![](Overview_images/Overview_img4.jpeg)
+{{ '![](Overview_images/Overview_img4.jpeg)' | markdownify }}
 
 </td><td>
 Represents additional information on the topic</td></tr>
@@ -119,12 +119,14 @@ Visual Studio 2013</li>
 <li>Visual Studio 2008 (Team, Professional, Standard, and Express)</li>
 <li>Visual Studio 2005 (Team, Professional, Standard, and Express)</li>
 <li>Borland Delphi for .NET</li>
-<li>SharpCode</li></td><td>
+<li>SharpCode</li></ul></td>
+<td>
+<ul>
 <li>.NET 4.5 RTM</li>
 <li>.NET 4.0</li>
 <li>.NET 3.5</li>
-<li>.NET 2.0</li></td></tr>
-</ul>
+<li>.NET 2.0</li>
+</ul></td></tr>
 </table>
 
 ### Compatibility

@@ -61,9 +61,9 @@ Table 154: Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Calculatorcontrol Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Calculatorcontrol Properties</td><td>
+Description</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -135,9 +135,9 @@ Table 155: Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Calculatorcontrol Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Calculatorcontrol Properties</td><td>
+Description</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
@@ -174,9 +174,9 @@ Table 156: Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Calculatorcontrol Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Calculatorcontrol Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 UseVerticalAndHorizontalSpacing</td><td>
@@ -228,9 +228,9 @@ Table 157: Methods Table
 
 <table>
 <tr>
-<td>
-{{ '**Calculatorcontrol Methods**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Calculatorcontrol Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetButtonColor</td><td>

@@ -9,5 +9,5 @@ documentation: ug
 
 # How To Add, Remove, And Modify the Implementation Of Functions In the Function Library In CalcQuickBase?
 
-Refer the Function Library topic to know about this.
+Refer the [Function Library](http://docs.syncfusion.com/windowsforms/calculate/function-library) topic to know about this.
 

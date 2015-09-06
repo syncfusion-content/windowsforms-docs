@@ -58,12 +58,16 @@ To create a ButtonEdit control programmatically, follow the below steps.
 1. Include the required namespace.
    
    ~~~ cs
+   
    using Syncfusion.Windows.Forms.Tools;
+   
    ~~~
    {:.prettyprint}
    
    ~~~ vbnet
+   
    Imports Syncfusion.Windows.Forms.Tools
+   
    ~~~
    {:.prettyprint}
 
@@ -72,6 +76,7 @@ To create a ButtonEdit control programmatically, follow the below steps.
 2. Create an instances of ButtonEdit, TextBox and three ButtonEditChildButtons.
    
    ~~~ cs
+   
    private Syncfusion.Windows.Forms.Tools.ButtonEdit buttonEdit1;
    private System.Windows.Forms.TextBox textBox1;
    private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton1;
@@ -82,6 +87,7 @@ To create a ButtonEdit control programmatically, follow the below steps.
    this.buttonEditChildButton1=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
    this.buttonEditChildButton2=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
    this.buttonEditChildButton3=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
+   
    ~~~
    {:.prettyprint}
    
@@ -98,6 +104,7 @@ To create a ButtonEdit control programmatically, follow the below steps.
    Me.buttonEditChildButton1 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
    Me.buttonEditChildButton2 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
    Me.buttonEditChildButton3 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
+   
    ~~~
    {:.prettyprint}
 
@@ -109,13 +116,16 @@ To create a ButtonEdit control programmatically, follow the below steps.
    
    //Associating the TextBoxExt control.
    this.buttonEdit1.TextBox=this.textBox1;
+   
    ~~~
    {:.prettyprint}
    
    
    ~~~vbnet
+   
    'Associating the TextBoxExt control.
    Me.buttonEdit1.TextBox=Me.textBox1
+   
    ~~~
    {:.prettyprint}
 
@@ -124,6 +134,7 @@ To create a ButtonEdit control programmatically, follow the below steps.
 4. Set the alignment and text for the buttons.
    
    ~~~ cs
+   
    //Setting Button alignment for Child Button 1
    //By default the alignment for other buttons will be right
    this.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left;
@@ -131,11 +142,13 @@ To create a ButtonEdit control programmatically, follow the below steps.
    this.buttonEditChildButton1.Text = "L";
    this.buttonEditChildButton2.Text = "R";
    this.buttonEditChildButton3.Text = "E";
+   
    ~~~
    {:.prettyprint}
    
    
    ~~~vbnet
+   
    'Setting Button alignment for Child Button 1. 
    'By default the alignment for other buttons will be right
    Me.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left
@@ -143,6 +156,7 @@ To create a ButtonEdit control programmatically, follow the below steps.
    Me.buttonEditChildButton1.Text = "L"
    Me.buttonEditChildButton2.Text = "R"
    Me.buttonEditChildButton3.Text = "E"
+   
    ~~~
    {:.prettyprint}
 
@@ -151,18 +165,22 @@ To create a ButtonEdit control programmatically, follow the below steps.
 5. Add ButtonEditChildButtons to the ButtonEdit which then add it to the form.
    
    ~~~cs
+   
    this.buttonEdit1.Buttons.Add(this.buttonEditChildButton1);
    this.buttonEdit1.Buttons.Add(this.buttonEditChildButton2);
    this.buttonEdit1.Buttons.Add(this.buttonEditChildButton3);
    this.Controls.Add(this.buttonEdit1);
+   
    ~~~
    {:.prettyprint}
    
    ~~~vbnet
+   
    Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton1)
    Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton2)
    Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton3)
    Me.Controls.Add(Me.buttonEdit1)
+   
    ~~~
    {:.prettyprint}
 

@@ -22,7 +22,7 @@ The following steps allows you to label a control.
 
 
 
-   ~~~ cs
+{% highlight c# %}
 
 
 
@@ -35,10 +35,11 @@ The following steps allows you to label a control.
 
 
 		this.Controls.Add(this.autoLabel1);
-   ~~~
-   {:.prettyprint}
 
-   ~~~ vbnet
+{% endhighlight %}
+
+
+{% highlight vbnet %}
    
 
 
@@ -52,8 +53,8 @@ The following steps allows you to label a control.
 
 
 		Me.Controls.Add(Me.autoLabel1)
-   ~~~
-   {:.prettyprint}
+
+{% endhighlight %}
 
 
 *  Run the application.

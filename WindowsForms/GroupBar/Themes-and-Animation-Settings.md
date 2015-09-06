@@ -24,8 +24,8 @@ Me.groupBar1.ThemesEnabled = True
 
 {% endhighlight %}
 
+![](Overview_images/Overview_img37.jpeg) 
 
-{ ![](Overview_images/Overview_img37.jpeg) 
 Figure 947: Themed look of Office 2007 Style GroupBar
 
 

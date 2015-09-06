@@ -17,6 +17,7 @@ documentation: ug
 This event is handled whenever a child button of a ButtonEdit control is clicked. It gives _ClickedButton_ member which lets you customize the button that is clicked. 
 
 The below code changes the alignment of the button that is clicked at runtime.
+
 {%highlight c#%}
 
 

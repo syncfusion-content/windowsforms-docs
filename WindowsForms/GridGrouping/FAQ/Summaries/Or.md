@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Summaries
-description: summaries
+title: Or
+description: or
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
----
 
-# Summaries
-
+# Or

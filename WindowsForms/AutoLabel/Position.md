@@ -14,9 +14,9 @@ Table 387: Property Table
 
 <table>
 <tr>
-<td>
-AutoLabel Property</td><td>
-Description</td></tr>
+<th>
+AutoLabel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Position</td><td>

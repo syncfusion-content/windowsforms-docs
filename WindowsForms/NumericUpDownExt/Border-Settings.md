@@ -13,7 +13,7 @@ This section discusses the Border Settings of the NumericUpDownExt control.
 
 Color and Styles can be applied to the border of the NumericUpDownExt control as discussed below.
 
-Table 361 : Property Table
+_Table_ _361_ : _Property Table_
 
 <table>
 <tr>

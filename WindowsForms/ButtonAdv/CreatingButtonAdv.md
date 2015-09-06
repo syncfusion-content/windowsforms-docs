@@ -39,9 +39,11 @@ It can be created programmatically by following the below steps.
 2. Create an instance of ButtonAdv control and add it to the form.
    
    ~~~ cs
+   
    private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
    this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
    this.Controls.Add(this.buttonAdv1);
+   
    ~~~
    {:.prettyprint }
 

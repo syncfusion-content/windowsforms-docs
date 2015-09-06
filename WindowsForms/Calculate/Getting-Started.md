@@ -199,6 +199,7 @@ The following steps will guide you to deploy Essential Calculate in an ASP.NET a
 			...
 		</system.web>
 		</configuration>
+		
    ~~~
    {:.prettyprint } 
 
@@ -1639,10 +1640,6 @@ In order to add arbitrary calculation support to an object, that object must imp
 				' Button1_Click
 
 		End Sub 
-
-
-
-
 
 		'/ <summary>
 

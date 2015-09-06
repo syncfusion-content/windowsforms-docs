@@ -39,67 +39,60 @@ The following steps illustrate how to create an AutoLabel control programmatical
 *  Add the required assembly references.
 *  Include the required namespace.
 
-   ~~~ cs
+{% highlight c# %}
 
 
 
 		using Syncfusion.Windows.Forms.Tools;
 		
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~ 
-   {:.prettyprint}
+{% endhighlight %}
 
 *  Declare the AutoLabel control.
 
-   ~~~ cs
+{% highlight c# %}
 
 		private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
 
-		~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 
 		Private autoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
    
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 
 *  Initialize the control.
 
-   ~~~ cs
+{% highlight c# %}
 
 
 		this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
-
+{% highlight vbnet %}
 
 
 		Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 *  Set the properties for the AutoLabel control and add it to your form.
 
-   ~~~ cs
+{% highlight c# %}
 
 
 
@@ -119,11 +112,10 @@ The following steps illustrate how to create an AutoLabel control programmatical
 
 		this.Controls.Add(this.autoLabel1);
   
-  ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 
@@ -143,8 +135,7 @@ The following steps illustrate how to create an AutoLabel control programmatical
 
 		Me.Controls.Add(Me.autoLabel1)
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 *  Run the application.
 

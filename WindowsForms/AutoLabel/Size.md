@@ -18,9 +18,9 @@ Table 388: Property Table
 
 <table>
 <tr>
-<td>
-AutoLabel Property</td><td>
-Description</td></tr>
+<th>
+AutoLabel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoSize</td><td>
@@ -32,8 +32,6 @@ N> This is valid only for label controls that do not wrap text.
 
 {% highlight C# %}
 
-
-
 this.autoLabel1.AutoSize = true;
 
 {% endhighlight %}
@@ -42,8 +40,6 @@ this.autoLabel1.AutoSize = true;
 
 {% highlight vbnet %}
 
-
-
-
 Me.autoLabel1.AutoSize = True
+
 {% endhighlight %}
