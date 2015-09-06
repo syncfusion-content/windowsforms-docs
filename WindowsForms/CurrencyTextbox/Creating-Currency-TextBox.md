@@ -25,14 +25,14 @@ It can be created programmatically as follows.
         using Syncfusion.Windows.Forms.Tools;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
         Imports Syncfusion.Windows.Forms.Tools
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. Create an instance of the CurrencyTextBox. Add that instance to the Form.
 
@@ -45,7 +45,7 @@ It can be created programmatically as follows.
 		this.Controls.Add(this.currencyTextBox1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -56,4 +56,4 @@ It can be created programmatically as follows.
 		Me.Controls.Add(Me.currencyTextBox1)
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }

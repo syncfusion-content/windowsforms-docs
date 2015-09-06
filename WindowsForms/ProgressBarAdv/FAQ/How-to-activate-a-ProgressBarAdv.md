@@ -36,7 +36,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
         
@@ -55,7 +55,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. Enable the timer in the button_Click event.
 
@@ -70,7 +70,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
    
@@ -81,7 +81,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 5. Run the application.
 

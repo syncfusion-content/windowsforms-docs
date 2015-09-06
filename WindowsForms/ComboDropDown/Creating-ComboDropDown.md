@@ -56,14 +56,14 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
         using Syncfusion.Windows.Forms.Tools;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
         Imports Syncfusion.Windows.Forms.Tools
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. Create an instance of the ComboDropDown control class.
 
@@ -74,7 +74,7 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
 		this.comboDropDown1=new Syncfusion.Windows.Forms.Tools.ComboDropDown();
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -83,7 +83,7 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
 		Me.comboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 3. Add TreeView in the drop-down portion of ComboDropDown. Finally add ComboDropDown to the Form.
 
@@ -94,7 +94,7 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
 		this.Controls.Add(this.comboDropDown1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -103,7 +103,7 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
 		Me.Controls.Add(Me.comboDropDown1)
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 N> Refer Setting Interaction between ComboDropDown and TreeView to set the interaction between the ComboDropDown and Treeview.
 

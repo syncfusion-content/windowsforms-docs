@@ -47,7 +47,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -72,7 +72,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 		End Sub 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. Simply traverses the tree structure recursively to find the matching node using the FindNode method discussed below.
 
@@ -105,7 +105,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -138,7 +138,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
         End Function
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 3. In the drop-down event, find the node whose text matches the text in the combo and make that the selected node, using the following code.
 
@@ -163,7 +163,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -182,7 +182,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 		End Sub 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. At run time, when the user double on a node, the node text will appears in the ComboDropDown. 
 5. Also when the user edits the text, the corresponding node will be selected in the tree in the drop down. 

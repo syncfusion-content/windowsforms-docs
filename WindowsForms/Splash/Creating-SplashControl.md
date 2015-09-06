@@ -54,7 +54,7 @@ A SplashControl can be created through code by following the below steps.
 		this.SuspendLayout();
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
    
@@ -65,7 +65,7 @@ A SplashControl can be created through code by following the below steps.
 		Me.SuspendLayout()
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. Set the following properties.
 
@@ -80,7 +80,7 @@ A SplashControl can be created through code by following the below steps.
 		this.splashControl1.TimerInterval = 3000;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -93,7 +93,7 @@ A SplashControl can be created through code by following the below steps.
 		Me.SplashControl1.TimerInterval = 3000
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 5. Run the application.
 

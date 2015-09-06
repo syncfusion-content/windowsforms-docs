@@ -24,14 +24,14 @@ It can be created programmatically using the below steps.
         using Syncfusion.Windows.Forms.Tools;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
         Imports Syncfusion.Windows.Forms.Tools
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. Declare and create an instance of the Calculator control class.
 
@@ -44,7 +44,7 @@ It can be created programmatically using the below steps.
 		this.calculatorControl1 = new CalculatorControl();
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -55,7 +55,7 @@ It can be created programmatically using the below steps.
 		Me.calculatorControl1 = New CalculatorControl()
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 3. As the final step, add the Calculator control to the form as follows.
 
@@ -68,7 +68,7 @@ It can be created programmatically using the below steps.
 		this.calculatorControl1.Visible=true;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -79,7 +79,7 @@ It can be created programmatically using the below steps.
 		Me.calculatorControl1.Visible=True
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 ![](Overview_images/Overview_img112.jpeg) 
 

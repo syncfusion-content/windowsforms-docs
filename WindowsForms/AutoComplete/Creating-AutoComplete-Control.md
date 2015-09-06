@@ -53,109 +53,71 @@ N> We can also add a list of autocomplete items through designer, which can used
 5. Include the required namespace.
 
    ~~~ cs
-
-		using Syncfusion.Windows.Forms.Tools;
-
+   using Syncfusion.Windows.Forms.Tools;
    ~~~
    {:.prettyprint }
 
    ~~~ vbnet
-
-		Imports Syncfusion.Windows.Forms.Tools
-
+   Imports Syncfusion.Windows.Forms.Tools
    ~~~
    {:.prettyprint }
 
 6. Create an instances of AutoComplete and TextBox controls.
 
    ~~~ cs
-
-		private Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1;
-
-		private System.Windows.Forms.TextBox textBox1;
-
-
-
-		this.textBox1=new TextBox();
-
-		this.autoComplete1=new AutoComplete();
-
+   private Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1;
+   private System.Windows.Forms.TextBox textBox1;
+   
+   this.textBox1=new TextBox();
+   this.autoComplete1=new AutoComplete();
    ~~~
    {:.prettyprint }
 
    ~~~ vbnet
+   Private autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete
+   Private textBox1 As System.Windows.Forms.TextBox
 
-		Private autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete
-
-		Private textBox1 As System.Windows.Forms.TextBox
-
-		
-		Me.textBox1 = New TextBox()
-
-		Me.autoComplete1 = New AutoComplete()
-
+   Me.textBox1 = New TextBox()
+   Me.autoComplete1 = New AutoComplete()
    ~~~
    {:.prettyprint }
 
 7. Associate AutoComplete with TextBox using SetAutoComplete() method.
 
    ~~~ cs
-
-
-
-		this.autoComplete1.SetAutoComplete(this.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
-
+   this.autoComplete1.SetAutoComplete(this.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
    ~~~
    {:.prettyprint }
 
    ~~~ vbnet
-
-
-
-		Me.autoComplete1.SetAutoComplete(Me.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest)
-
+   Me.autoComplete1.SetAutoComplete(Me.textBox1,Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest)
    ~~~
    {:.prettyprint }
 
 8. Specify its properties.
 
    ~~~ cs
-
-    	this.autoComplete1.AutoAddItem=true;
-
-		this.autoComplete1.AutoSerialize=true;
-
+   this.autoComplete1.AutoAddItem=true;
+   this.autoComplete1.AutoSerialize=true;
    ~~~
    {:.prettyprint }
 
    ~~~ vbnet
-
-		Me.autoComplete1.AutoAddItem=True
-
-		Me.autoComplete1.AutoSerialize=True
-
+   Me.autoComplete1.AutoAddItem=True
+   Me.autoComplete1.AutoSerialize=True
    ~~~
    {:.prettyprint }
 
 9. Finally add textBox to the Form.
 
    ~~~ cs
-
-
-
-		this.Controls.Add(this.textBox1);
-
+   this.Controls.Add(this.textBox1);
    ~~~
    {:.prettyprint }
 
    ~~~ cs
-
-		Me.Controls.Add(Me.textBox1)
-
+   Me.Controls.Add(Me.textBox1)
    ~~~
    {:.prettyprint }
 
-![](AutoComplete-Controls-Images/Overview_img12.jpeg)
-
-
- See also Through Designer
+   ![](AutoComplete-Controls-Images/Overview_img12.jpeg)

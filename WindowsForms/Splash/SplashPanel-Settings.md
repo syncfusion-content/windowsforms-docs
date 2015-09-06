@@ -150,7 +150,7 @@ A SplashControl allows the user to add an image that is to be displayed in the s
 		this.Controls.Add(this.splashPanel1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -233,7 +233,7 @@ A SplashControl allows the user to add an image that is to be displayed in the s
 		Me.Controls.Add(Me.SplashPanel1)
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ![](Overview_images/Overview_img37.jpeg) 
 

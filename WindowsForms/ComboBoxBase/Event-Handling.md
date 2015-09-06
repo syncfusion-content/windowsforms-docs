@@ -118,7 +118,7 @@ This section deals with associating a CheckedListBox and handling the events. Af
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -131,7 +131,7 @@ This section deals with associating a CheckedListBox and handling the events. Af
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. Handle SelectedIndexChanged event of the CheckedListBox and add the following code.
 
@@ -152,7 +152,7 @@ This section deals with associating a CheckedListBox and handling the events. Af
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
         
@@ -173,7 +173,7 @@ This section deals with associating a CheckedListBox and handling the events. Af
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 ![](Overview_images/Overview_img322.jpeg) 
 

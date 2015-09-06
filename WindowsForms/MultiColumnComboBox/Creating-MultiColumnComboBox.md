@@ -22,7 +22,7 @@ The MultiColumnComboBox can be created programmatically through code as detailed
    using Syncfusion.Windows.Forms.Tools;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
    Imports Syncfusion.Windows.Forms.Tools

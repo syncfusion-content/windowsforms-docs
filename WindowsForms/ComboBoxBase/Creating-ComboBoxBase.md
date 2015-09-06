@@ -38,14 +38,14 @@ It can be created through code by following the below steps.
         using Syncfusion.Windows.Forms.Tools;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
         Imports Syncfusion.Windows.Forms.Tools
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. Create an instance of the ComboBoxBase control and ListBox.
 
@@ -60,7 +60,7 @@ It can be created through code by following the below steps.
 		this.listBox1=new ListBox();
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -73,7 +73,7 @@ It can be created through code by following the below steps.
 		Me.listBox1 = New ListBox()
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 3. Set the ListControl that will be used in the dropdown portion of ComboBoxBase and specify the size of ComboBoxBase. 
 
@@ -84,7 +84,7 @@ It can be created through code by following the below steps.
 		this.comboBoxBase1.Size=new Size(120,20);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -93,7 +93,7 @@ It can be created through code by following the below steps.
 		Me.comboBoxBase1.Size = New Size(120,20)
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. Specify the datasource. 
 
@@ -114,7 +114,7 @@ It can be created through code by following the below steps.
 		ListBox1.DataSource = USStates; 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -133,7 +133,7 @@ It can be created through code by following the below steps.
 		ListBox1.DataSource = USStates
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 5. Finally add ComboBoxBase and Listbox to the Form.
 
@@ -144,7 +144,7 @@ It can be created through code by following the below steps.
 		this.Controls.Add(this.comboBoxBase1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -153,7 +153,7 @@ It can be created through code by following the below steps.
 		Me.Controls.Add(Me.comboBoxBase1)
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 ![](Overview_images/Overview_img319.png) 
 

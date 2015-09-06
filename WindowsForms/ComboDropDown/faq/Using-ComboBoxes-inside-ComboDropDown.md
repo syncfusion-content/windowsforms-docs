@@ -40,7 +40,7 @@ The steps are as follows.
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -59,7 +59,7 @@ The steps are as follows.
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 6. In the button click event of the Button inside the panel, insert these codes to close DropDown and to change text of ComboDropDown.
 
@@ -78,7 +78,7 @@ The steps are as follows.
 		} 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -93,7 +93,7 @@ The steps are as follows.
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
  
     ![](Overview_images/Overview_img294.png) 

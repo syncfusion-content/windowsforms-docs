@@ -47,7 +47,7 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
         this.SuspendLayout();
 		
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
   
   ~~~ vbnet
@@ -61,7 +61,7 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
         Me.SuspendLayout()
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
 * Set the Location property of the control.
 
@@ -70,14 +70,14 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
         this.progressBarAdv1.Location = new System.Drawing.Point(40, 48);
 		
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
   ~~~ vbnet
 
         Me.ProgressBarAdv1.Location = New System.Drawing.Point(40, 48)
 		
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
 * Add the control to the form.
 
@@ -92,7 +92,7 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
         this.ResumeLayout(false);
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
   ~~~ vbnet
 
@@ -105,7 +105,7 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
         Me.ResumeLayout(False)
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
 * Run the application.
 

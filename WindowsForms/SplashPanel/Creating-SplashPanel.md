@@ -50,7 +50,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		using System.Reflection;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -65,7 +65,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		Imports System.Reflection
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. Declare the SplashPanel and Button control.
 
@@ -76,7 +76,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		private System.Windows.Forms.Button button1;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -85,7 +85,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		Friend WithEvents button1 As System.Windows.Forms.Button
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 5. Initialize the controls and make it visible.
 
@@ -98,7 +98,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		this.splashPanel1.SuspendLayout();
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -109,7 +109,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		Me.splashPanel1.SuspendLayout()
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 6. Set the properties for the SplashPanel and Button control.
 
@@ -162,7 +162,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		this.Controls.Add(this.splashPanel1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -213,7 +213,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		this.Controls.Add(this.splashPanel1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 7. Call and define the ShowSplash() method as follows.
 
@@ -245,7 +245,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		}
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -278,7 +278,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 		End Sub
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 8. Run the application.
 

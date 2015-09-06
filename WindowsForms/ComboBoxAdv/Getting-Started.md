@@ -129,7 +129,7 @@ To add ComboBoxAdv Control to a Windows Forms Application through code behind, f
 		this.Controls.Add(this.comboBoxAdv1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -139,7 +139,7 @@ To add ComboBoxAdv Control to a Windows Forms Application through code behind, f
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv items.png](Overview_images/Overview_img298.png)

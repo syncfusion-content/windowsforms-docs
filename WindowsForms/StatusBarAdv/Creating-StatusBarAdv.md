@@ -47,7 +47,7 @@ To create a StatusBarAdv control programmatically,
 		private Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel statusBarAdvPanel3;
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -60,7 +60,7 @@ To create a StatusBarAdv control programmatically,
 		Private statusBarAdvPanel3 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 4. Initialize the controls.
 
@@ -75,7 +75,7 @@ To create a StatusBarAdv control programmatically,
 		this.statusBarAdvPanel3 = new Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel();
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -88,7 +88,7 @@ To create a StatusBarAdv control programmatically,
 		Me.statusBarAdvPanel3 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel() 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 5. Set the properties to customize the control's appearance, and add the control to the form.
 
@@ -123,7 +123,7 @@ To create a StatusBarAdv control programmatically,
 		this.Controls.Add(this.statusBarAdv1);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
    ~~~ vbnet
 
@@ -156,7 +156,7 @@ To create a StatusBarAdv control programmatically,
 		Me.Controls.Add(Me.statusBarAdv1)
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 6. Run the application. You will see the StatusBarAdv control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
