@@ -15,9 +15,9 @@ Table 624: Property Table
 
 <table>
 <tr>
-<td>
-SplashControl Property</td><td>
-Description</td></tr>
+<th>
+SplashControl Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HostForm</td><td>

@@ -91,16 +91,16 @@ The following are the prerequisites:
 
 <table>
 <tr>
-<td>
-Testing Environments</td><td>
+<th>
+Testing Environments</th><td>
 1) QuickTest Professional version 9.5 and above2) QuickTest Professional .NET add-in</td></tr>
 <tr>
-<td>
-.NET Framework </td><td>
+<th>
+.NET Framework </th><td>
 .Net Framework version 2.0, 3.5, 4.0, 4.5 or 4.5.1</td></tr>
 <tr>
-<td>
-Other Requirements</td><td>
+<th>
+Other Requirements</th><td>
 Essential Studio (User Interface edition – Windows Forms) of the same version as the Essential QTP Add-on. </td></tr>
 </table>
 
@@ -113,20 +113,23 @@ Essential QuickTest Professional is compatible with the following operating syst
 
 <table>
 <tr>
-<td>
-Operating Systems</td><td>
+<th>
+Operating Systems</th><td>
 <ul>
 <li> Microsoft Windows 8.1 ((32 bit and 64 bit)</li>
-<li> Microsoft Windows 8  ((32 bit and 64 bit)/li>
-<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
-<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
-<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
-<li> Microsoft Windows Server 2013 (32 bit and 64 bit)/li>
-<li> Microsoft Windows Server 2012 (32 bit and 64 bit)/li>
-<li> Microsoft Windows Server 2008 (32 bit and 64 bit)/li>
-<li> Microsoft Windows Server 2003 (32 bit and 64 bit)/li>
-<li> Microsoft Windows Vista (32 bit and 64 bit)/li>
-<li> Microsoft Windows XP</li><<ul>/td><
+<li> Microsoft Windows 8  ((32 bit and 64 bit)</li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)</li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)</li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)</li>
+<li> Microsoft Windows Server 2013 (32 bit and 64 bit)</li>
+<li> Microsoft Windows Server 2012 (32 bit and 64 bit)</li>
+<li> Microsoft Windows Server 2008 (32 bit and 64 bit)</li>
+<li> Microsoft Windows Server 2003 (32 bit and 64 bit)</li>
+<li> Microsoft Windows Vista (32 bit and 64 bit)</li>
+<li> Microsoft Windows XP</li>
+</ul>
+</td>
+</tr>
 </table>
 
 
@@ -139,9 +142,9 @@ Syncfusion provides the following documentation segments which cover all the nec
 
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>

@@ -15,77 +15,50 @@ Essential QuickTest Professional lets you test applications with different Syncf
 
 To create a new test:
 
-
-
 1. Open QTP by double-clicking the QuickTest Professional icon.
    
    N> The QuickTest Professional – Add-in Manager window is displayed.
 
 
-
-2.Select the .NET check box under the Add-in header. This ensures that .NET add-in is installed. 
-
-
+2. Select the .NET check box under the Add-in header. This ensures that .NET add-in is installed. 
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-
-
-
    _Figure_ _9_: QuickTest Professional - Add-In Manager
 
-
-
-3.Click OK.
-
-
+3. Click OK.
 
    N> The QuickTest Professional – [Start Page] window is displayed. There are two tabs, Start Page and Test, in the main pane of the window. The content under the Start Page tab is displayed by default.
 
+   
    ![](Getting-Started_images/Getting-Started_img4.png)
 
-
-
-
-
+   
    _Figure_ _10_: QuickTest Professional – [Start Page]
 
 
 
-4.Click the New Test icon on the Start Page.
-
-
+4. Click the New Test icon on the Start Page.
 
    ![](Getting-Started_images/Getting-Started_img5.png)
 
 
+    _Figure_ _11_: QuickTest Professional – [Start Page] showing New Test icon
 
 
 
-   _Figure_ _11_: QuickTest Professional – [Start Page] showing New Test icon
+This creates a new test. Alternatively, you can click the Test tab in the main pane of the window or Test sub-menu under the New menu in the Menu bar.
 
 
-
-   This creates a new test. Alternatively, you can click the Test tab in the main pane of the window or Test sub-menu under the New menu in the Menu bar.
-
-
-
-5.Click Record in the toolbar to start the recording. 
-
-
+5. Click Record in the toolbar to start the recording. 
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
 
+    _Figure_ _12_: QuickTest Professional – [Test*] Window showing Record tool
 
-
-
-   _Figure_ _12_: QuickTest Professional – [Test*] Window showing Record tool
-
-
-
-   N> A Record and Run Settings dialog box is displayed.
+    N> A Record and Run Settings dialog box is displayed.
 
    ![](Getting-Started_images/Getting-Started_img8.png)
 
@@ -97,7 +70,7 @@ To create a new test:
 
 
 
-6.Click the Windows Applications tab. 
+6. Click the Windows Applications tab. 
 
 
 
@@ -115,7 +88,7 @@ To create a new test:
 
 
 
-7.To add an application for testing, click the + button in the Application details: frame as shown in the figure above.
+7. To add an application for testing, click the + button in the Application details: frame as shown in the figure above.
  
    N> The Application Details dialog box is displayed.
   
@@ -125,12 +98,13 @@ To create a new test:
 
 
 
-8.Browse and select the path of the application that is to be tested by clicking (![](Getting-Started_images/Getting-Started_img14.jpeg)) for the Application: label.
-9.Browse and select the path of the working folder by clicking (![](Getting-Started_images/Getting-Started_img15.jpeg)) for the Working folder: label.
+8. Browse and select the path of the application that is to be tested by clicking (![](Getting-Started_images/Getting-Started_img14.jpeg)) for the Application: label.
+
+9. Browse and select the path of the working folder by clicking (![](Getting-Started_images/Getting-Started_img15.jpeg)) for the Working folder: label.
 
    N> Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box includes all the processes that are descendant to the current process. Both these check boxes will be selected by default.
 
-10.Click OK.
+10. Click OK.
 
     N> The path of the application and working folder are displayed in the Application details frame as shown below.
 
@@ -138,9 +112,7 @@ To create a new test:
 
     _Figure_ _16_: Record and Run Settings with the Application Location
 
-
-
-11.Click OK. 
+11. Click OK. 
 
     N> The recording starts. The application in the given path is opened as shown below.
 
@@ -148,9 +120,7 @@ To create a new test:
 
     _Figure_ _17_: Application using Grid Control
 
-
-
-12.Perform required valid user-action in the application. 
+12. Perform required valid user-action in the application. 
 
 
 
@@ -214,13 +184,13 @@ On recording, all the user actions performed in the control are just noted with 
 
 
 
-2.Click the required option.
+2. Click the required option.
 
    N> Selecting one option renders the other unavailable.
 
 
 
-3.Browse and select the required location by clicking the <icon>
+3. Browse and select the required location by clicking the <icon>
 
    N> QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, in which the results are summarized as shown below:
 
@@ -379,7 +349,7 @@ The tests that have been saved can be replayed later. To run a saved test, follo
 
 
 
-2.Select the required test and click Open.
+2. Select the required test and click Open.
 
 
 
@@ -399,7 +369,7 @@ The tests that have been saved can be replayed later. To run a saved test, follo
 
 
 
-3.Click Run on the toolbar to run the test.
+3. Click Run on the toolbar to run the test.
 
 
 

@@ -13,6 +13,7 @@ This section briefly describes how to design a Toggle Button in a .NET applicati
 
 * Adding a Toggle Button control.
 * Configuring the Toggle Button control.
+
 ## Add a ToggleButton Control
 
 1. Create a new Windows Forms Application Project in VS IDE through New Project Wizard.

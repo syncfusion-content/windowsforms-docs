@@ -15,9 +15,9 @@ Table 625: Events Table
 
 <table>
 <tr>
-<td>
-SplashControl Events</td><td>
-Description</td></tr>
+<th>
+SplashControl Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 BeforeSplash</td><td>
@@ -142,9 +142,9 @@ Table 626: Member Table
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>

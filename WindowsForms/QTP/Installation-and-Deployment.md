@@ -23,7 +23,7 @@ This section provides specifics on installation of Syncfusion Essential QuickTes
 
 To install Essential Test Studio:
 
-N> The Installation procedures are the same for every Essential Test Studio setup, regardless of the volume of the Test setup.
+   N> The Installation procedures are the same for every Essential Test Studio setup, regardless of the volume of the Test setup.
 
 1. Double-click the Syncfusion Essential Test Studio Setup file.
 

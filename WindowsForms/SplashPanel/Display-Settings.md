@@ -17,9 +17,9 @@ Table 627: Methods Table
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowSplash</td><td>
@@ -50,9 +50,9 @@ Table 628: Parameters Table
 
 <table>
 <tr>
-<td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 Location</td><td>
@@ -132,9 +132,9 @@ Table 629: Parameters Table
 
 <table>
 <tr>
-<td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 OwnerForm</td><td>
@@ -250,9 +250,9 @@ Table 630: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DiscreetLocation</td><td>
@@ -274,9 +274,9 @@ Table 631: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowInTaskBar</td><td>
@@ -327,9 +327,9 @@ Table 632: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 TimerInterval</td><td>
@@ -363,9 +363,9 @@ Table 638: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowMove</td><td>

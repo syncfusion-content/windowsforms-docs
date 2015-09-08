@@ -19,9 +19,9 @@ Table 617: Property Table
 
 <table>
 <tr>
-<td>
-SplashControl Property</td><td>
-Description</td></tr>
+<th>
+SplashControl Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoMode</td><td>
@@ -63,9 +63,9 @@ Table 618: Methods Table
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowSplash</td><td>
@@ -163,9 +163,9 @@ Table 619: Property Table
 
 <table>
 <tr>
-<td>
-SplashControl Property</td><td>
-Description</td></tr>
+<th>
+SplashControl Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 TimerInterval</td><td>

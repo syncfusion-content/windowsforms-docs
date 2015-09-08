@@ -19,9 +19,9 @@ _Table_ _1__: System Requirements_
 
 <table>
 <tr>
-<td>
-Supported IDEs</td><td>
-.NET Framework Versions</td></tr>
+<th>
+Supported IDEs</th><th>
+.NET Framework Versions</th></tr>
 <tr>
 <td>
 * Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 * Visual Studio 2008 * Visual Studio 2005</td><td>
@@ -34,8 +34,8 @@ _Table_ _2__: Operating Systems_
 
 <table>
 <tr>
-<td>
-Operating Systems</td></tr>
+<th>
+Operating Systems</th></tr>
 <tr>
 <td>
 * Windows 8* Windows Server 2012 R2* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>

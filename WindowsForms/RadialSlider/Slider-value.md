@@ -46,5 +46,5 @@ Slider divisions for the radial slider can be customized using the properties sh
 
 {% endhighlight %}
 
-N> This property will applicable only for default slider.
+    N> This property will applicable only for default slider.
 

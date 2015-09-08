@@ -19,9 +19,9 @@ Table 622: Property Table
 
 <table>
 <tr>
-<td>
-SplashControl Property</td><td>
-Description</td></tr>
+<th>
+SplashControl Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SplashImage</td><td>
@@ -51,9 +51,9 @@ Table 623: Property Table
 
 <table>
 <tr>
-<td>
-SplashControl Property</td><td>
-Description</td></tr>
+<th>
+SplashControl Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowAnimation</td><td>

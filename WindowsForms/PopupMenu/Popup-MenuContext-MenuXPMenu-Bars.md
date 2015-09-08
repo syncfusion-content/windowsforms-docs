@@ -42,7 +42,9 @@ This is a horizontal menu that appears on the bottom of a window and has the Bar
 
 {% seealso %}
 
-Bar Items, BarManagers, Bar Styles
+[Bar Items](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items), 
+[BarManagers](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#barmanagers),
+Bar Styles
 
 Toolbar Properties
 
@@ -50,7 +52,7 @@ Toolbar Properties
 
 The properties of a toolbar are as follows.
 
-_Table_ _468_: _Property Table_
+Table 468 : Property Table
 
 <table>
 <tr>

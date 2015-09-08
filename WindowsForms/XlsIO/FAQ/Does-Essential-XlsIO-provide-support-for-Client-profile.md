@@ -7,7 +7,7 @@ control: XlsIO
 documentation: ug
 ---
 
-### Does Essential XlsIO provide support for Client profile
+# Does Essential XlsIO provide support for Client profile
 
 Yes, Essential XlsIO provides support for Client profile. In order to use Essential XlsIO in an application (targeting Client profile), the following assemblies should be included:
 

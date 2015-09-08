@@ -207,7 +207,7 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 7. Add XPTaskBar Items to the XPTaskBar Box1 and XPTaskBar Box2.
 
-   ~~~ cs  
+   {% highlight C# %}  
 
 		this.xpTaskBarBox1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
 
@@ -231,12 +231,11 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
             new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, null, "", true, true, "XPTaskBarItem7", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)});
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
 
 
-   ~~~ vbnet
+   {% highlight vbnet %} 
 
 		Me.xpTaskBarBox1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
 
@@ -260,9 +259,9 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 		True, "XPTaskBarItem7", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)}) 
 
-   {:.prettyprint}
+   {% endhighlight %}
 
-8. Finally add the created XPTaskBar Boxes to the XPTaskBar control.
+8.Finally add the created XPTaskBar Boxes to the XPTaskBar control.
 
 {% highlight C# %}  
 

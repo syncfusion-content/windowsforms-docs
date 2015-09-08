@@ -17,9 +17,9 @@ Table 633: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AnimationSpeed</td><td>
@@ -69,9 +69,9 @@ Table 634: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SlideStyle</td><td>
@@ -107,9 +107,9 @@ Table 635: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SuspendAutoCloseWhenMouseOver</td><td>
@@ -143,9 +143,9 @@ Table 636: Methods Table
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 SuspendAutoCloseMode</td><td>
@@ -227,9 +227,9 @@ Table 637: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackgroundColor</td><td>
@@ -308,9 +308,9 @@ Table 638: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowMove</td><td>
@@ -371,9 +371,9 @@ Table 639: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
@@ -416,9 +416,9 @@ Table 640: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DesktopAlignment</td><td>
@@ -459,9 +459,9 @@ Table 641: Property Table
 
 <table>
 <tr>
-<td>
-SplashPanel Property</td><td>
-Description</td></tr>
+<th>
+SplashPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ToolTip on toolTip1</td><td>

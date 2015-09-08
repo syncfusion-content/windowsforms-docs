@@ -78,7 +78,7 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the ProjIO User Guide.)![](Overview_images/Overview_img1.jpeg)
+Online{{ '<http://docs.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the ProjIO User Guide.) {{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>

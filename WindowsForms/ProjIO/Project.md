@@ -338,6 +338,7 @@ Gets or sets the collection of resources that make up the project.</td></tr>
 Assignments</td><td>
 Gets or sets the collection of assignments that make up the project.</td></tr>
 </table>
+
 ### Methods
 
 _Table_ _6_: _Project Methods_

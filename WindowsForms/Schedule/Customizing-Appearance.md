@@ -230,8 +230,8 @@ Specifies the color of text in the time column.</td></tr>
 Visual Style</td></tr>
 <tr>
 <th>
-VisualStyle</th><td>
-Specifies the visual style for the ScheduleControl.</td></tr>
+VisualStyle</th><th>
+Specifies the visual style for the ScheduleControl.</th></tr>
 <tr>
 <td>
 Miscellaneous</td><td>

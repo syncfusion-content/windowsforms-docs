@@ -1525,7 +1525,8 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-![](Working-with-Charts_images/Working-with-Charts_img1.png)
+
+![](Working-with-Charts_images/Insert-Pictures_img1.png)
 
 
 
@@ -2444,7 +2445,7 @@ excelEngine.Dispose()
 
 In MS Excel, the Sparklines can be inserted by selecting any of the sparklines type from the Insert tab. 
 
-![](Working-with-Charts_images/Working-with-Charts_img2.png)
+![](Working-with-Charts_images/Insert-Pictures_img2.png)
 
 
 
@@ -2617,7 +2618,7 @@ excelEngine.Dispose()
 
 MS Excel provides various options through Sparklines tool ribbon in order to customize the appearance of the Sparklines.
 
-![](Working-with-Charts_images/Working-with-Charts_img3.png)
+![](Working-with-Charts_images/Insert-Comments_img1.png)
 
 
 
@@ -3595,7 +3596,7 @@ Known Limitation: The Line weight can be applied only for the line sparkline typ
 
 Normally,  in a sparkline group data there is a possibility of an empty cell or a hidden cell. MS Excel 2010 provides a dialog box to apply settings on hidden and empty cells.
 
-![](Working-with-Charts_images/Working-with-Charts_img4.png)
+![](Working-with-Charts_images/Insert-Comments_img2.png)
 
 
 

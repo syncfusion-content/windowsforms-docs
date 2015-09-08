@@ -17,9 +17,9 @@ Table 620: Property Table
 
 <table>
 <tr>
-<td>
-SplashControl Property</td><td>
-Description</td></tr>
+<th>
+SplashControl Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SplashControlPanel</td><td>

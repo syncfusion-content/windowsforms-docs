@@ -7,7 +7,7 @@ control: ProjIO
 documentation: ug
 ---
 
-### Does ProjIO require MS Project to be installed on the machine?
+# Does ProjIO require MS Project to be installed on the machine?
 
 No. ProjIO is a 100% Native .Net Library that does not depend on MS Project.
 

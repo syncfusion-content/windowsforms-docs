@@ -29,7 +29,7 @@ This section explains the usage of the following Form controls.
 
 Essential XlsIO can read and write text boxes. The ITextBoxShape interface lets you add a new text box inside a worksheet. The IFill interface is used to customize the inner appearance of the textbox. IShapeLineFormat interface is used to modify the border. Various other properties like Horizontal and Vertical Alignment, Alternative Text, Text Rotation, and so on, are also supported.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 
@@ -175,7 +175,7 @@ excelEngine.Dispose()
 
 Essential XlsIO supports reading and writing check boxes. This can be done by using the ICheckBoxShape interface that is used to add a check box inside a worksheet.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 
@@ -337,7 +337,7 @@ excelEngine.Dispose()
 
 Essential XlsIO provides support to read/write a Combo Box control. This is achieved by using the IComboBoxShape interface that is used to add a combo box inside a worksheet. The following code example illustrates how to read/write a Combo Box control.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 
@@ -497,7 +497,7 @@ excelEngine.Dispose()
 
 Essential XlsIO now provides support to read/write an Option Button control for XLSX format. This can be achieved by using the IOptionButtonShape interface that is used to add an Option button inside a worksheet. The IFill interface is used to customize its appearance. IShapeLineFormat interface is used to modify the border. Various other text alignment properties are also supported. The following code example illustrates how to read/write an Option button control.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 
@@ -715,7 +715,7 @@ Gets of sets the size of the OLE object.</td></tr>
 
 The following code example illustrates the condition when the property is set to True.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 
@@ -837,7 +837,7 @@ excelEngine.Dispose()
 
 The following code example illustrates the condition when the location is set to K column, 8th cell.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 
@@ -959,7 +959,7 @@ excelEngine.Dispose()
 
 The following code example illustrates the condition where image of the oleObject is accessed.
 
-{% highlight C#  %}
+{% highlight C# %}
 
 
 
@@ -1083,7 +1083,7 @@ excelEngine.Dispose()
 
 The following code example illustrates the condition when the property is set to any .png file image.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 
@@ -1205,7 +1205,7 @@ excelEngine.Dispose()
 
 The following code example illustrates the condition when the property is set to (30,30).
 
-{% highlight C#  %}
+{% highlight C# %}
 
 
 
@@ -1342,7 +1342,7 @@ XlsIO supports two types of association of objects:
 
 	The following code example illustrates how to link an OLE Object to an Excel document.
 
-	~~~ cs
+	{% highlight c# %}
 
 
 
@@ -1406,11 +1406,10 @@ XlsIO supports two types of association of objects:
 
 		excelEngine.Dispose();         
 
-    ~~~
-    {:.prettyprint }
+    {% endhighlight %}
 
 
-	~~~ vbnet
+	{% highlight vbnet %}
 
 
 
@@ -1478,10 +1477,9 @@ XlsIO supports two types of association of objects:
 
 		excelEngine.Dispose()
 
-    ~~~
-    {:.prettyprint }
+    {% endhighlight %}
 
-2. Embedded Objects  
+2.Embedded Objects  
 
 	Embedded objects are stored in the document. When a file is opened in another machine, the embedded object can be viewed without having access to the original data.
 
@@ -1489,7 +1487,7 @@ XlsIO supports two types of association of objects:
 
 	The following code example illustrates how to embed an OLE Object to an Excel document.
 
-    ~~~ cs
+    {% highlight c# %}
 
 
 
@@ -1553,11 +1551,10 @@ XlsIO supports two types of association of objects:
 
 		excelEngine.Dispose();         
 
-    ~~~
-    {:.prettyprint }
+    {% endhighlight %}
 
 
-	~~~ vbnet
+	{% highlight vbnet %}
 
 
 
@@ -1623,8 +1620,7 @@ XlsIO supports two types of association of objects:
 
 		excelEngine.Dispose()
 
-    ~~~
-    {:.prettyprint }
+    {% endhighlight %}
 
 ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img7.png)
 
@@ -1654,7 +1650,7 @@ Essential XlsIO supports all major AutoShape features.
 
 The following code example is an illustration of the output.
 
-{% highlight C#  %}
+{% highlight c# %}
 
 
 

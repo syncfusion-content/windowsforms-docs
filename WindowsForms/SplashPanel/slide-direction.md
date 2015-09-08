@@ -34,9 +34,9 @@ Table 642: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AnimationDirection</td><td>
@@ -98,9 +98,9 @@ Table 643: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AnimationDirection</td><td>
@@ -160,9 +160,9 @@ Table 644: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AnimationDirection</td><td>
@@ -234,9 +234,9 @@ Table 645: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 MarqueeDirection</td><td>
@@ -297,9 +297,9 @@ Table 646: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 MarqueeDirection</td><td>
