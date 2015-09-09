@@ -8,15 +8,15 @@ documentation: ug
 ---
 # How to customize the Splitter color in the GroupBar
 
-#### Appearance Settings
+## Appearance Settings
 
 The following properties help customize the splitter color in the GroupBar.
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 StackedMode</td><td>
@@ -65,4 +65,3 @@ Me.groupBar1.EnableSplittercolorCustomization = True
 The following image shows the customized splitter.
 
  ![](Overview_images/Overview_img48.png) 
-Figure 956: Splitter color customization

@@ -23,7 +23,7 @@ The computations are performed as listed below, with level one operations done f
 * match, like, in, between 
 * or, and, or
 
-> Note:
+N>
 >
 > 1. Alpha constants used with match and like should be enclosed in apostrophes (').
 >

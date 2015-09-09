@@ -12,7 +12,7 @@ documentation: ug
 
 {% seealso %}
 
-Overview of Layout Manager
+[Overview](/windowsforms/layoutmanagers/overview)
 
 {% endseealso %}
 
@@ -60,7 +60,7 @@ You can then configure the Layout Manager by changing its properties via the pro
 
 {% seealso %}
 
-Through Code, Concepts and Features
+[Through Code](#through-code)
 
 {% endseealso %}
 
@@ -334,6 +334,6 @@ Me.brd.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Center)
 
 {% seealso %}
 
-Through Designer, Concepts and Features
+[Through Designer](#through-designer)
 
 {% endseealso %}

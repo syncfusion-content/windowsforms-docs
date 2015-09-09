@@ -11,7 +11,7 @@ documentation: ug
 
 Color and Styles can be applied to the Border of the PercentTextBox control as discussed below.
 
-Table 301: Property Table
+
 
 <table>
 <tr>

@@ -10,7 +10,7 @@ documentation: ug
 
 Themes can be applied to the MaskedEditBox control using the property given below.
 
-Table 348 : Property Table
+
 
 <table>
 <tr>
@@ -24,7 +24,7 @@ Specifies whether or not to use XP themes when BorderStyle property is set to '
 </table>
 
 
-> Note: Refer_ [Border Settings](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/coloruicontrols/borderstyles) _topic to know about the BorderStyle property.
+N> Refer_ [Border Settings](/windowsforms/maskededitbox/border-settings) _topic to know about the BorderStyle property.
 
 {% highlight C# %} 
 
@@ -42,4 +42,4 @@ Me.maskedEditBox1.ThemesEnabled = true
 
 ![](MaskedEditBox-images/MarkedEditBox-img19.png)
 
-Figure 577: Themes Applied to MaskedEditBox Control
+

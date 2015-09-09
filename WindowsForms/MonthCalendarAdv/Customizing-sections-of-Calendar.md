@@ -20,7 +20,7 @@ In the MonthCalendarAdv control, the dates of a month is placed inside a grid an
 
 The below properties lets you to change the default appearance of the grid in the MonthCalendarAdv.
 
-Table163: Property Table
+
 
 <table>
 <tr>
@@ -34,7 +34,7 @@ Gets or Sets the back color of the Grid.</td></tr>
 <tr>
 <td>
 GridLines</td><td>
-Gets or Sets the style of the Grid lines. The options are* {{ '_NotSet_' | markdownify }}* {{ '_None_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_DashDot_' | markdownify }}* {{ '_DashDotDot_' | markdownify }}* {{ '_Solid_' | markdownify }}* {{ '_Standard_' | markdownify }}<br>The default value is 'Dotted'.</td></tr>
+Gets or Sets the style of the Grid lines. The options are {{ '_NotSet_' | markdownify }} {{ '_None_' | markdownify }} {{ '_Dashed_' | markdownify }} {{ '_Dotted_' | markdownify }} {{ '_DashDot_' | markdownify }} {{ '_DashDotDot_' | markdownify }} {{ '_Solid_' | markdownify }} {{ '_Standard_' | markdownify }}<br>The default value is 'Dotted'.</td></tr>
 </table>
 
 
@@ -71,7 +71,7 @@ This section will walk you through the different properties used to customize th
 
 Gradient background can be set for the header using the below properties.
 
-Table164: Property Table
+
 
 <table>
 <tr>
@@ -133,7 +133,7 @@ Me.monthCalendarAdv1.HeaderStartColor = System.Drawing.Color.AliceBlue
 
 The font style and fore color of the header text can be specified through HeaderFont and HeadForeColor properties.
 
-Table165: Property Table
+
 
 <table>
 <tr>
@@ -180,7 +180,7 @@ Me.monthCalendarAdv1.HeadForeColor = System.Drawing.Color.Navy
 
 The height of the header can be increased or decreased using HeaderHeight property. Header can also host an image in its background using HeaderImage property.
 
-Table166: Property Table
+
 
 <table>
 <tr>
@@ -229,7 +229,7 @@ This section will walk you through the different properties used to customize th
 
 Gradient background can be set for the header using the below properties.
 
-Table164: Property Table
+
 
 <table>
 <tr>
@@ -290,7 +290,7 @@ Me.monthCalendarAdv1.HeaderStartColor = System.Drawing.Color.AliceBlue
 
 The font style and fore color of the header text can be specified through HeaderFont and HeadForeColor properties.
 
-Table165: Property Table
+
 
 <table>
 <tr>
@@ -337,7 +337,7 @@ Me.monthCalendarAdv1.HeadForeColor = System.Drawing.Color.Navy
 
 The height of the header can be increased or decreased using HeaderHeight property. Header can also host an image in its background using HeaderImage property.
 
-Table166: Property Table
+
 
 <table>
 <tr>
@@ -379,13 +379,13 @@ Me.monthCalendarAdv1.HeaderHeight = 30
 
 ## Week Numbers
 
-MonthCalendarAdv control can display unique week numbers for all the weeks in a year. This section discusses the properties which can customize the appearance of the week numbers.
+MonthCalendarAdv control can display unique [week numbers](/windowsforms/monthcalendaradv/overview#sections-of-monthcalendaradv-control) for all the weeks in a year. This section discusses the properties which can customize the appearance of the week numbers.
 
 ### Foreground Settings
 
 By default, week numbers will not be shown in the calendar. ShowWeekNumbers property should be set to true to display the week numbers. The font and fore color can be set using the below properties.
 
-Table167: Property Table
+
 
 <table>
 <tr>
@@ -466,7 +466,7 @@ MonthCalendarAdv has properties to customize the days displayed in the calendar.
 
 The below properties deals with the foreground appearance of the dates.
 
-Table168: Property Table
+
 
 <table>
 <tr>
@@ -529,7 +529,7 @@ Me.monthCalendarAdv1.DaysFont = New System.Drawing.Font("Courier New", 8.25F, Sy
 
 The height of the day header and the day name formats are specified using below properties.
 
-Table169: Property Table
+
 
 <table>
 <tr>
@@ -621,9 +621,7 @@ The today's date for the below calendar image is "eighteenth".
 
 
 
-{% seealso %} 
-Day Settings, Text Settings
-{% endseealso %}
+
 
 ## Text Settings
 
@@ -656,11 +654,11 @@ The MonthCalendarAdv control contains the below buttons.
 * 'Today' button and 
 * 'None' button.
 
-To know about the placement of these buttons in the control, refer MonthCalendarAdv topic. Left and Right scroll buttons at the top of the control can have custom images. See Scroll Buttons for details.
+To know about the placement of these buttons in the control, refer [MonthCalendarAdv](/windowsforms/monthcalendaradv/overview) topic. Left and Right scroll buttons at the top of the control can have custom images. See Scroll Buttons for details.
 
 Today and None buttons are displayed at the bottom of the calendar and they can be customized to set background image and font styles. This section will discuss the properties which controls the appearance and behavior of the MonthCalendarAdv.
 
-Table171: Property Table
+
 
 <table>
 <tr>
@@ -719,7 +717,7 @@ monthCalendarAdv1.NoneButton.Visible=False
 
 
 {% seealso %}
-ButtonAdv, Scroll Buttons
+[ButtonAdv](/windowsforms/buttonadv/overview)
 {% endseealso %}
 
 ## Scroll Buttons
@@ -728,7 +726,7 @@ ButtonAdv, Scroll Buttons
 
 The default scroll button images can be replaced with custom images using the LeftScrollButtonImage and RightScrollButtonImage properties. The properties related to scroll buttons are as follows.
 
-Table172: Property Table
+
 
 <table>
 <tr>

@@ -15,7 +15,7 @@ This section discusses the display settings of the MaskedEditBox control.
 The user data can be displayed along with separators at run time for specifying date, time, decimals and thousands. It is not 
 required to type separators at run time. Separators can be specified in the mask character itself.
 
-Table 330 : Property Table
+
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 The cursor position of the MaskedEditBox control can be specified using the options provided by the following properties.
 
-Table 331 : Property Table
+
 
 <table>
 <tr>
@@ -134,7 +134,7 @@ Me.maskedEditBox1.PositionAtDecimal = true;
 
 Text can be split up and aligned using the options provided by the below given property.
 
-Table 332 : Property Table
+
 
 <table>
 <tr>
@@ -257,7 +257,7 @@ Me.maskedEditDataGroupInfo2.DataGroupSize = 4
 
 We can display different characters as substitutes for the user input. This can be done using the below given properties.
 
-Table 333 : Property Table
+
 
 <table>
 <tr>

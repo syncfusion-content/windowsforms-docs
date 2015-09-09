@@ -20,7 +20,7 @@ To have a cell that has a multi-selection dropdown grid, you must use a derived 
    Example
 
 
-
+   ~~~ cs
 
 
 					//Creates an instance of DropDownGrid Model.
@@ -38,10 +38,11 @@ To have a cell that has a multi-selection dropdown grid, you must use a derived 
 					gridControl1.CellModels.Add("MultiSelectCombo",aModel);
 
 
+   ~~~
+   {:.prettyprint}
 
 
-
-
+   ~~~ vbnet
 
 						'Creates an instance of the DropDownGrid Model.
 
@@ -56,7 +57,8 @@ To have a cell that has a multi-selection dropdown grid, you must use a derived 
 						'Registers the DropDownGridCellModel to GridModel.
 
 						gridControl1.CellModels.Add("MultiSelectCombo",aModel)
-
+   ~~~
+   {:.prettyprint}
 
 
 2. Set the CellType property to "MultiSelectCombo".
@@ -65,21 +67,22 @@ To have a cell that has a multi-selection dropdown grid, you must use a derived 
 
 
 
-
+   ~~~ cs
 
 					//Sets the CellType to 'MultiSelectCombo'.
 
 					this.gridControl1[4,2].CellType = "MultiSelectCombo";
 
+   ~~~
+   {:.prettyprint}
 
 
 
-
-
-
+   ~~~ vbnet
 					'Sets the CellType to 'InPlaceRTB'.
 
 					Me.gridControl1(4,2).CellType = "MultiSelectCombo"
 
+   ~~~
    {:.prettyprint}
 

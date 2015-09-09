@@ -26,7 +26,7 @@ This section briefly describes you on how to design a MultiSelectionComboBox con
 
 The commonly used settings of the MultiSelectionComboBox control can be configured either through Designer using the Smart tag or through the Properties window or through code. 
 
-![1](Overview_images/Overview_img336.png)
+![](Overview_images/Overview_img336.png)
 
 
 To add MultiSelectionComboBox control to a Windows Forms application through code behind,

@@ -15,7 +15,7 @@ Essential PDF Viewer can display PDF files, and print and export the pages as ra
 
 ### Properties
 
-Table 2: Properties Table
+
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ bool</td></tr>
 ### Methods
 
 
-Table 3: Methods Table
+
 
 <table>
 <tr>
@@ -56,6 +56,7 @@ Table 3: Methods Table
 Method</th><th>
 Description</th><th>
 Parameters</th><th>
+Type</th><th>
 Return Type</th></tr>
 <tr>
 <td>
@@ -89,7 +90,7 @@ Bitmap</td></tr>
 <td>
 FindText</td><td>
 Searches for tde occurance of given input text in tde PDF document and returns all tde occurances and its location in all pages of tde PDF document.</td><td>
-Overloads:(String text, out Dictionary<int, List<System.Drawing.RectangleF>> matchRect)</td><td>
+Overloads:(String text, out Dictionary&lt;int, List&gt;&lt;&lt;System.Drawing.RectangleF&gt;&gt; matchRect)</td><td>
 N/A</td><td>
 bool</td></tr>
 <tr>
@@ -107,9 +108,10 @@ Magnifies tde document displayed to tde specified percentage.</td><td>
 N/A</td><td>
 Void</td></tr>
 </table>
-Events
 
-Table 4: Events Table
+### Events
+
+
 
 <table>
 <tr>
@@ -138,7 +140,7 @@ N/A</td><td>
 N/A</td></tr>
 </table>
 
-Viewing PDF Files 
+## Viewing PDF Files 
 
 A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the Load method. It also requests passwords to open encrypted documents.
 
@@ -210,7 +212,7 @@ pdfViewer1.Load("Template.pdf", "password")
 
 {%endhighlight%}
 
-Printing PDF Files 
+## Printing PDF Files 
 
 PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon triggering the Print button.
 
@@ -220,9 +222,9 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 
 
-_Figure_ _9__: Print Dialog displayed in PDF Viewer_
 
-Silent Printing
+
+### Silent Printing
 
 The PrintDocument property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. The following code sample demonstrates this:
 
@@ -253,9 +255,9 @@ dialog.Document = viewer.PrintDocument
 
 dialog.Document.Print()
 
-Exporting PDF
+## Exporting PDF
 
-Exporting PDFs as Raster Images
+### Exporting PDFs as Raster Images
 
 Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
 
@@ -361,7 +363,7 @@ Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
 {%endhighlight%}
 
-Text Search
+## Text Search
 
 Essential PDF Viewer allows end users to search and highlight the text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
 
@@ -369,7 +371,7 @@ Essential PDF Viewer allows end users to search and highlight the text in the PD
 
 
 
-_Figure_ _10__: Searching a PDF_
+
 
 
 
@@ -417,7 +419,7 @@ IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 
 
 
-Annotation
+## Annotation
  
 Essential PDF Viewer provides support for URI annotations in the PDF document, which enables the URI available in the PDF document to be opened in the browser just by clicking it. This also supports a few events which are listed in the previous table.
 

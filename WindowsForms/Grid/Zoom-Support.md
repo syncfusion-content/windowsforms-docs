@@ -15,7 +15,7 @@ Essential Grid provides zoom support for the Grid, GridDataBoundGrid, and GridGr
 
 You can zoom in or out the Grid at the specified percentage level in your application by using this feature.
 
-_Table 153: Properties Table_
+
 
 <table>
 <tr>
@@ -35,7 +35,7 @@ Used to enable zooming at the cell level for the GridDataBoundGrid.</td><td>
 Boolean</td></tr>
 </table>
 
-_Table154: Methods Table_
+
 
 <table>
 <tr>
@@ -179,7 +179,7 @@ You can also zoom individual cells of a grid by using ZoomGridControlCell proper
 
 {% endhighlight   %}
 
- ![C:/Users/asarudheens/AppData/Local/Syncfusion/EssentialStudio/10.2.0.55/Windows/Grid.Windows/Samples/2.0/Zoom and Scrolling/GridControl Zoom/Images/zoom3.png](Zoom-Support_images/Zoom-Support_img4.png) 
+ ![](Zoom-Support_images/Zoom-Support_img4.png) 
 
 
 

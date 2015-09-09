@@ -15,7 +15,7 @@ The GroupBar class implements a tab-type container control similar to the Window
 The GroupBar may be used in combination with the GroupView control to implement clones of some of the popular UI components such as the Microsoft OutlookBar and the Visual Studio .NET toolbox window.
 
 ![](Overview_images/Overview_img2.jpeg) 
-Figure 915: GroupBar with GroupView Client Control
+
 
 The Essential ToolsGroupBar control displays multiple groups or tabs, each of which represents a client control that is hosted 
 within the GroupBar. 
@@ -26,11 +26,10 @@ collection can be accessed through the GroupBar.GroupBarItems property.
 
 ## Features
 
-* Custom Colors can be applied for GroupBar control. See Visual Styles topic.
+* Custom Colors can be applied for GroupBar control. See [Visual Styles](/windowsforms/groupbar/visual-styles) topic.
 
 ![](Overview_images/Overview_img3.jpeg)
 
-Figure 916: Custom Color applied to the GroupBar Control
 
 * Appearance and Behavior Settings   
 * Settings can be applied to change the look and feel of the GroupBar control and Items.

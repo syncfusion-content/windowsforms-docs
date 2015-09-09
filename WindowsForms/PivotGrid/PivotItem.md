@@ -13,7 +13,7 @@ PivotItem is an item in a PivotTable field. It provides the information needed t
 
 
 
-_Table_ _6_: _Properties Table for PivotItem_
+
 
 <table>
 <tr>
@@ -92,10 +92,12 @@ By default, the PivotGrid sorts data in ascending order. The sorting order can b
 
 // Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total", Comparer = new ReverseOrderComparer() });
+
 /// <summary>
 /// Reverse Order Comparer for sorting data in Descending order
 /// </summary>
 public class ReverseOrderComparer : IComparer{  
+
 #region IComparer Members   
 public int Compare(object x, object y)   
 {      
@@ -117,11 +119,14 @@ return -x.ToString().CompareTo(y.ToString());
 
 ' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 Me.PivotGridControl1.PivotRows.Add(New PivotItem
+
 With {.FieldMappingName = "Product", .TotalHeader = "Total", .Comparer = New ReverseOrderComparer()})
+
 ''' <summary>
 ''' Reverse Order Comparer for sorting data in Descending order
 ''' </summary>
 public class ReverseOrderComparer : IComparer
+
 '#Region "IComparer Members"   
 public Integer Compare(Object x, Object y)
 If x Is Nothing AndAlso y Is Nothing 

@@ -11,7 +11,7 @@ documentation: ug
 
 Themes can be applied to the PercentTextBox control using the property given below.
 
-Table 303: Property Table
+
 
 <table>
 <tr>
@@ -24,7 +24,7 @@ ThemesEnabled</td><td>
 Specifies whether or not to use XP themes when BorderStyle  property is set to 'Fixed3D'.</td></tr>
 </table>
 
-N> Refer [Border Settings](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/bordersettings) topic to know about the BorderStyle property.
+N> Refer [Border Settings](/windowsforms/percenttextbox/bordersettings) topic to know about the BorderStyle property.
 
 
 

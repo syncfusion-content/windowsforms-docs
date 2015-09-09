@@ -11,7 +11,7 @@ The settings that are common to all the Layout Manager's have been discussed in 
 
 It includes the below given topics.
 
-# Behavior Settings
+## Behavior Settings
 
 The behavior settings that are common to all the Layout Managers are discussed below.
 
@@ -19,7 +19,7 @@ The behavior settings that are common to all the Layout Managers are discussed b
 
 The Layout Manager, by default, listens to the Container'sLayout events and performs the layout automatically.
 
-_Table425: Property Table_
+
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ N> The above process can be prevented by setting the AutoLayout property to 'Fal
 
 The Container control to be laid out by the Layout Manager can be specified using the below given property.
 
-_Table426: Property Table_
+
 
 <table>
 <tr>
@@ -85,7 +85,7 @@ Me.borderLayout1.ContainerControl = Me
 
 The Layout Manager will, by default, layout the Child components within the Container control's client rectangle. However, you can specify any custom layout bounds using the property given below.
 
-_Table427: Property Table_
+
 
 <table>
 <tr>
@@ -123,7 +123,7 @@ The margin settings that are common to all the Layout Managers are discussed bel
 
 The layout bounds will also be adjusted to include some margin space along the borders according to the values specified in the properties given below. The default values of these properties are set to 'Zero'.
 
-_Table428: Property Table_
+
 
 <table>
 <tr>
@@ -182,7 +182,7 @@ Me.borderLayout1.BottomMargin = 20
 
 {% seealso %}
 
-Configuring BorderLayout, Configuring FlowLayout, Configuring GridLayout
+[Configuring BorderLayout](/windowsforms/layoutmanagers/borderlayout#configuring-borderlayout), [Configuring FlowLayout](/windowsforms/layoutmanagers/flowlayout#configuring-flowlayout), [Configuring GridLayout](/windowsforms/layoutmanagers/gridlayout#configuring-gridlayout)
 
 {% endseealso %}
 
@@ -198,7 +198,7 @@ The Layout Managers usually layout the components based on their preferred sizes
 
 In code, you can perform the same using the methods given below.
 
-_Table429: Methods Table_
+
 
 <table>
 <tr>
@@ -238,7 +238,7 @@ You can similarly associate a minimum size for a Child component through the Min
 
 In code, you can perform the same using the methods given below.
 
-_Table430: Methods Table_
+
 
 <table>
 <tr>
@@ -289,6 +289,6 @@ N> The above properties are available as the extended properties for the Child c
 
 {% seealso %}
 
-BorderLayout – Configuring Child Control, CardLayout - Configuring Child Controls, FlowLayout - Configuring Child Controls, GridLayout - Configuring Child Controls, GridBagLayout - Configuring Child Controls
+[BorderLayout – Configuring Child Control](/windowsforms/layoutmanagers/borderlayout#configuring-child-controls), [CardLayout - Configuring Child Controls](/windowsforms/layoutmanagers/cardlayout#configuring-child-controls), [FlowLayout - Configuring Child Controls](/windowsforms/layoutmanagers/flowlayout#configuring-child-controls), [GridLayout - Configuring Child Controls](/windowsforms/layoutmanagers/gridlayout#configuring-child-controls), [GridBagLayout - Configuring Child Controls](/windowsforms/layoutmanagers/gridbaglayout#configuring-child-controls)
 
 {% endseealso %}

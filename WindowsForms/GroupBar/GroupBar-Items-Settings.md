@@ -19,7 +19,7 @@ This section describes how text alignment can be done for the GroupBar Items.
 The TextAlign property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left and Right. The default alignment is set to Center.
 
 ![](Overview_images/Overview_img17.jpeg) 
-Figure : GroupBar with TextAlign = "Left"
+
 
 ### Through Code
 
@@ -63,13 +63,12 @@ Me.groupBar1.InplaceRenameItem(index)
 
 The method associated with this property is given below.
 
-_Table_ _542__: Method Table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 CancelInplaceRenameItem</td><td>
@@ -83,13 +82,13 @@ This section describes the image settings available for GroupBar Items.
 
 Large images can be set for GroupBar Items using the following properties.
 
-_Table_ _543__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBarItem Property</td><td>
-Description</td></tr>
+<th>
+GroupBarItem Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 LargeImageMode</td><td>
@@ -120,7 +119,7 @@ Me.groupBarItem1.Image = (CType(resources.GetObject("groupBarItem1.Image"), Syst
 {% endhighlight %}
 
 ![](Overview_images/Overview_img18.jpeg) 
-Figure 929: Large Images displayed on the Headers of GroupBar Items
+
 
 Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by 
 setting the ShowItemImageInHeader propertyto 'True'. 
@@ -143,20 +142,20 @@ Me.groupBar1.ShowItemImageInHeader = True
 
 
 ![](Overview_images/Overview_img19.jpeg) 
-Figure 930: Image displayed on the Header of the Stacked GroupBar
+
 
 
 ## GroupBar Items Customization
 
 The following table lists the properties related to the GroupBar Items.
 
-_Table_ _544__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BarHighlight</td><td>
@@ -190,13 +189,13 @@ The control provides highlighting effect for the GroupBar Item when the mouse is
 propertyto 'True'.
 
 ![](Overview_images/Overview_img20.jpeg) 
-Figure 931: 'Components' Item Highlighted in the GroupBar
+
 
 The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by 
 setting the FlatLook propertyto 'True'. 
 
 ![](Overview_images/Overview_img21.jpeg)
-Figure 932: Flat Look of GroupBar Items
+
 
 ## Integrating Child Controls to the GroupBar Items 
 
@@ -274,10 +273,10 @@ Me.treeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {treeNode2})
 {% endhighlight %}
 
  ![](Overview_images/Overview_img22.jpeg) 
-Figure 933: Adding a TreeView Control to the GroupBar
+
 
 ![](Overview_images/Overview_img23.jpeg) 
-Figure 934: TreeView Control added to GroupBarItem1
+
 
 ### GroupView as Child Control 
 
@@ -350,7 +349,7 @@ Me.groupView1.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupVi
 {% endhighlight %}
 
  ![](Overview_images/Overview_img24.jpeg)
-Figure 935: GroupView control added to the GroupBarItem0
+
 
 
 ### GroupBar as Child Control
@@ -363,22 +362,22 @@ The following step-by-step procedure helps you to create Nested GroupBars.
 2. The below screen shot shows the GroupBar with four GroupBar Items named as Windows Forms, Components, General and Nested GroupBar.
 
  ![](Overview_images/Overview_img25.jpeg) 
-Figure 936: GroupBar1 with Four GroupBar Items
+
 
 3. Drag and drop another GroupBar2 control from the toolbox and add the GroupBar Items (Personal, Work and Contacts) using the GroupBar Item Collection Editor and add the GroupView control with GroupView Items (Vendors, Metrics, Trend, Sales and Sales 2 for the GroupBar Item Work) to each GroupBar Item using the GroupView Item Collection Editor.
 
  ![](Overview_images/Overview_img26.jpeg) 
-Figure 937: GroupBar2 with Three GroupBar Items
+
 
 4. Add GroupBar2 as child control to the GroupBar1 by doing a drag and drop operation.
 
  ![](Overview_images/Overview_img27.jpeg) 
-Figure 938: Adding GroupBar2 as Child Control to GroupBar1
+
 
 The following screen shot shows the Nested GroupBars.
 
  ![](Overview_images/Overview_img28.jpeg) 
-Figure 939: Nested GroupBars
+
 
 {% highlight C# %}  
 
@@ -450,13 +449,13 @@ Me.groupBar2.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarI
 
 The below properties controls the appearance and behavior of the GroupBarItem popup.
 
-_Table_ _545__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 PopupAutoClose</td><td>
@@ -475,13 +474,13 @@ ShowPopupGripper</td><td>
 Specifies whether to show or hide the popup gripper.</td></tr>
 </table>
 
-_Table_ _546__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HidePopup</td><td>

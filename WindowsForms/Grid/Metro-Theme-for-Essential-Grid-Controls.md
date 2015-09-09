@@ -23,7 +23,7 @@ The Metro theme support is useful for commercial applications in order to attrac
 
 ## Tables for Properties and Events
 
-_Table 142: Properties Table_
+
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ This is an enumeration type property. It is used to get or set the visual styles
 </table>
 
 
-_Table1243: Event Table_
+
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ The following screenshot is a sample output for the previous code.
 
 Users can now utilize SetMetroStyle method to set user-defined colors as Metro theme in a grid. 
 
-_Table 144: Method Table_
+
 
 <table>
 <tr>

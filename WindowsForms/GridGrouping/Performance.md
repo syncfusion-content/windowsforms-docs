@@ -3413,5 +3413,4 @@ The following code illustrates how to enable real time updates.
 
 
  ![](Performance_images/Performance_img16.jpeg) 
-        _Figure_ _357__: Time Taken to Group the Records_
-
+        

@@ -14,7 +14,7 @@ This section comprises the appearance settings under the following topics:
 
 The wide variety of border options are available for DateTimePickerAdv control when they are in 2D or in 3D mode. The properties in the below table illustrates the border settings.
 
-Table190: Property Table
+
 
 <table>
 <tr>
@@ -24,19 +24,19 @@ Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are,* {{ '_None_' | markdownify }}* {{ '_FixedSingle_'  | markdownify }}* {{ '_Fixed3D(Default)_' | markdownify }}</td></tr>
+Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are, {{ '_None_' | markdownify }} {{ '_FixedSingle_'  | markdownify }}{{ '_Fixed3D(Default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>Border3DStyle</td><td>
-Specifies the 3D border style of the DateTimePickerAdv.The options are,* {{ '_Raised_' | markdownify }}* {{ '_RaisedOuter_'  | markdownify }}* {{ '_RaisedInner_'  | markdownify }}* {{ '_Sunken(Default)_' | markdownify }}* {{ '_SunkenOuter_'  | markdownify }}* {{ '_SunkenInner_'  | markdownify }}* {{ '_Etched_'  | markdownify }}* {{ '_Bump_'  | markdownify }}* {{ '_Adjust_'  | markdownify }}* {{ '_Flat_' | markdownify }}</td></tr>
+Specifies the 3D border style of the DateTimePickerAdv.The options are, {{ '_Raised_' | markdownify }}{{ '_RaisedOuter_'  | markdownify }} {{ '_RaisedInner_'  | markdownify }}{{ '_Sunken(Default)_' | markdownify }}{{ '_SunkenOuter_'  | markdownify }} {{ '_SunkenInner_'  | markdownify }} {{ '_Etched_'  | markdownify }} {{ '_Bump_'  | markdownify }}{{ '_Adjust_'  | markdownify }} {{ '_Flat_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderSingle</td><td>
-Specifies the 2D border style of the DateTimePickerAdv. The options are,* {{ '_None_' | markdownify }}* {{ '_Dotted_' | markdownify }}* {{ '_Dashed_' | markdownify }}* {{ '_Solid (default)_' | markdownify }}* {{ '_Inset_'  | markdownify }}* {{ '_Outset_' | markdownify }}</td></tr>
+Specifies the 2D border style of the DateTimePickerAdv. The options are,{{ '_None_' | markdownify }}{{ '_Dotted_' | markdownify }}{{ '_Dashed_' | markdownify }}{{ '_Solid (default)_' | markdownify }}{{ '_Inset_'  | markdownify }}{{ '_Outset_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderSides</td><td>
-Specifies the sides of the control which should have a border. The sides are,* {{ '_Left_' | markdownify }}* {{ '_Top_' | markdownify }}* {{ '_Right_'  | markdownify }}* {{ '_Bottom_' | markdownify }}* {{ '_Middle_'  | markdownify }}* {{ '_All (Default)_' | markdownify }}</td></tr>
+Specifies the sides of the control which should have a border. The sides are,{{ '_Left_' | markdownify }}{{ '_Top_' | markdownify }}{{ '_Right_'  | markdownify }}{{ '_Bottom_' | markdownify }}{{ '_Middle_'  | markdownify }}{{ '_All (Default)_' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>BorderColor</td><td>
@@ -112,9 +112,7 @@ Me.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenI
 ![](CalendarDateTime_images/Overview_img209.png) 
 
 
-{% seealso %}
-Background Settings
-{% endseealso %}
+
 
 ## Background Settings
 
@@ -144,17 +142,15 @@ Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.St
 ![](CalendarDateTime_images/Overview_img138.jpeg) 
 
 
-{% seealso %}
-Border Styles, Visual Settings
-{% endseealso %}
+
 
 ## Visual Settings
 
-Themes for MonthCalendarAdv
+### Themes for MonthCalendarAdv
 
 Some sections of the MonthCalendarAdv control are themed by default. The below table list the properties which controls the themed behavior border, grid and scroll buttons.
 
-Table161: Property Table
+
 
 <table>
 <tr>
@@ -209,7 +205,7 @@ Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
 
 MonthCalendarAdv supports the styles in the below table, which can be set through Style property.
 
-Table162: Property Table
+
 
 <table>
 <tr>
@@ -304,10 +300,5 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 
 
-N> Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See_ Scroll Buttons
+N> Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See [Scroll Buttons](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#scroll-buttons).
 
-
-{% seealso %}
- 
-Border Styles, Background Settings
-{% endseealso %}

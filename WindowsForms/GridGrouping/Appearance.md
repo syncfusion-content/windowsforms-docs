@@ -49,7 +49,7 @@ N>: When using Preview, make sure that you set ThemesEnabled to False, if you wa
 
 List of Appearance Properties
 
-_Table 94: Appearance properties_
+
 
 <table>
 <tr>
@@ -592,7 +592,7 @@ In a payroll application, images in the header cells help the user understand th
 
 
 
-_Table 95: Properties Table_
+
 
 <table>
 <tr>
@@ -670,7 +670,7 @@ This feature enables you to dynamically format such cell attributes as cell back
 
 Methods
 
-_Table_ _8__: Method Table_
+
 
 <table>
 <tr>
@@ -1010,7 +1010,7 @@ By default, when merging is applied in the cells, the Grid’s bounds will be dr
 
 To preserve this merging after the dynamic change in grid’s layout, the existing MergeCellsMode is modified to update grid bounds after they change and provides additional support to query the user whether to always update the range of cells to merge.
 
-_Table 97: Properties_
+
 
 <table>
 <tr>
@@ -1178,7 +1178,7 @@ PointToTableCellStyleInfo Method
 
 For any given point on the grid, this method will return the style information of the underlying cell that is displayed under that point. If the underlying cell belongs to a nested table, then style information is returned for the cell inside the nested table. The details of this method are given below.
 
-_Table 98: Cell styles_
+
 
 <table>
 <tr>
@@ -1205,7 +1205,7 @@ PointToNestedDisplayElement Method
 
 This method returns nested display element that is displayed at the given mouse position. The details are given below.
 
-_Table 99: Nested display_
+
 
 <table>
 <tr>
@@ -1465,7 +1465,7 @@ TableOptions lets you set various properties that will affect the look and behav
 
 The table below gives a brief description on the above properties.
 
-_Table 100: Properties_
+
 
 <table>
 <tr>

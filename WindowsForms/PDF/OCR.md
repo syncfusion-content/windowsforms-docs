@@ -11,17 +11,17 @@ documentation: ug
 
 The Tesseract Optical Character Recognition (OCR) engine is originally developed by Hewlett-Packard. It is one of the top three engines in the 1995 UNLV accuracy test and is probably one of the most accurate open-source OCR engines available. It is extensively revised with sponsorship from Google. Essential PDF uses the Tesseract OCR engine to perform OCR on a PDF file. Essential PDF eliminates the 32-bit restriction of Tesseract and allows you to work either in x86-bit or x64-bit platforms without any deployment changes.
 
-#### Use Case Scenarios
+## Use Case Scenarios
 
 * This converts an unsearchable PDF document into a searchable PDF document.
 * It allows you to search, select, and copy text from images found in the PDF document.
 
-## Tables for Properties and Methods
+### Tables for Properties and Methods
 
 
-Properties
+#### Properties
 
-Table 32: Property Table
+
 
 <table>
 <tr>
@@ -65,9 +65,10 @@ Gets or sets the black-list values. Blacklist of characters not to recognize.</t
 WhiteList</td><td>
 Gets or sets the white-list values. Whitelist of characters to recognize.</td></tr>
 </table>
-Methods
 
-_Table 33: Method Table_
+#### Methods
+
+
 
 <table>
 <tr>

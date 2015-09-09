@@ -33,7 +33,6 @@ The following screenshots show the PivotGrid with shown and hidden sub totals.
 
 ### Properties
 
-_Table_ _13_: _Property Table_
 
 <table>
 <tr>
@@ -53,7 +52,6 @@ Boolean </td><td>
 
 ### Methods
 
-_Table_ _14_: _Method Table_
 
 <table>
 <tr>

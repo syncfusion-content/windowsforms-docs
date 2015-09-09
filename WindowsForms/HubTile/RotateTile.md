@@ -53,10 +53,10 @@ Tile gets rotated vertically. The following image illustrates the Verticalrotati
 
 ![](Concept-and-Features_images/Concept-and-Features_img5.png) 
 
-Figure 1644: Vertical Transition
 
 
-The following code sets Rotate Transition vertically.__
+
+The following code sets Rotate Transition vertically.
 
 {% highlight C# %}  
 

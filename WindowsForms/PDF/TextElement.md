@@ -287,7 +287,7 @@ Numeric fields have an additional NumberingStyle property. There are five poss
 
 Brief descriptions on the various numbering fields are given as follows.
 
-_Table_ _4_: _List of Numbering fields with description_
+
 
 <table>
 <tr>
@@ -980,7 +980,7 @@ The PdfOrdered class is derived from the PdfList class that contains an item c
 
 You can create new instances of the PdfOrderedList class by using the following constructors.
 
-_Table_ _5_: List of constructors
+
 
 <table>
 <tr>
@@ -1013,7 +1013,7 @@ Creates list from the specified text and with specified marker. It splits text b
 
 Ordered list has ordered markers that are represented by the PdfOrderedMarker class. To create a new instance of the ordered marker, you can use the following constructors.
 
-_Table_ _6_: List of constructors
+
 
 <table>
 <tr>
@@ -1040,7 +1040,7 @@ Essential Pdf also provides support to render unordered List that isrepresented 
 
 You can create a new instance of the PdfUnorderedList class by using the following constructors.
 
-_Table_ _7_: List of constructors
+
 
 <table>
 <tr>

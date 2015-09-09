@@ -10,11 +10,11 @@ documentation: ug
 
 The value settings of the MaskedEditBox control are discussed below.
 
-### MinValue and MaxValue
+## MinValue and MaxValue
 
 The minimum and maximum values of the MaskedEditBox control can be set using the below given properties.
 
-Table 339 : Property Table
+
 
 <table>
 <tr>

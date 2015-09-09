@@ -53,7 +53,7 @@ this.gridDataBoundGrid1.Model.Refresh();
 
 #### Sample C#: 
 
-![](http://www.syncfusion.com/downloads/Support/DirectTrac/98125/GDBG%20checkbox-1326042168.zip)
+[GDBG header check box c#.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/98125/GDBG%20checkbox-1326042168.zip)
 
 {% highlight vbnet %}
 
@@ -117,5 +117,5 @@ End Sub
 
 #### Sample VB: 
 
-![](http://www.syncfusion.com/downloads/Support/DirectTrac/98125/Vb592317743.zip)
+[GDBG header check box VB.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/98125/Vb592317743.zip)
 

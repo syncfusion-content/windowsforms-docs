@@ -9,7 +9,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table466: Events Table_
+
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ This event is triggered to obtain the preferred size information for a Child con
 
 The event handler receives an argument of type ProvideLayoutInformationEventArgs containing data related to this event. The ProvideLayoutInformationEventArgs members provide information specific to this event.
 
-_Table467: Members Table_
+
 
 <table>
 <tr>

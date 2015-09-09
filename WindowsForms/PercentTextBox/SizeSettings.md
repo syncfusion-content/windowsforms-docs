@@ -11,7 +11,7 @@ documentation: ug
 
 The size of the PercentTextBox control can be set according to the needs of the user using the properties discussed below.
 
-Table 302: Property Table
+
 
 <table>
 <tr>

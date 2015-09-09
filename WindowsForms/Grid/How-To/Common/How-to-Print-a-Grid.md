@@ -11,7 +11,7 @@ documentation: ug
 
 ### Introduction
 
-GridPrintDocument class will allow you to print your grids. Here is a button click event handler that will show you how to use this class.
+GridPrintDocument class will allow you to [print](/windowsforms/grid/virtual-grids#print-preview-and-printing) your grids. Here is a button click event handler that will show you how to use this class.
 
 #### Example
 

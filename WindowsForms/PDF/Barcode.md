@@ -799,7 +799,7 @@ DataMatrix barcode is a two dimensional barcode that consists of a grid of dark 
 
 The DataMatrix bar codes are widely used in printed media as labels and letters. It can easily be read by a bar code reader and also by mobile phones. 
 
-_Table_ _29__: Property Table_
+
 
 <table>
 <tr>

@@ -26,7 +26,7 @@ A Sample which demonstrates the CardLayout is available in the below sample inst
 
 {% seealso %}
 
-Creating a Simple Layout, 
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)
 
 {% endseealso %}
 
@@ -38,7 +38,7 @@ The configuration settings for the CardLayout have been discussed in this topic.
 
 By default, when a new Child control is added, the CardLayout will render a unique card name for it. This name can be modified by using the property given below.
 
-_Table433: Property Table_
+
 
 <table>
 <tr>
@@ -75,7 +75,7 @@ Me.cardLayout1.SetCardName(Me.label1, "Card1")
 
 The methods associated with the above property are given below.
 
-_Table434: Methods Table_
+
 
 <table>
 <tr>
@@ -110,7 +110,7 @@ N> This property is added as an extended property in the properties window of th
 
 The index of the previous and next cards can be determined using the below given properties.
 
-_Table435: Property Table_
+
 
 <table>
 <tr>
@@ -131,7 +131,7 @@ Returns the index of the previous card that will be shown when the Previous() me
 
 The aspect ratio can be set using the property given below.
 
-_Table436: Property Table_
+
 
 <table>
 <tr>
@@ -164,7 +164,7 @@ Me.cardLayout1.SetMaintainAspectRatio(Me.label1, True)
 
 The methods associated with the above property are given below.
 
-_Table437: Methods Table_
+
 
 <table>
 <tr>
@@ -183,7 +183,7 @@ Sets the value for maintaining aspect ratio based on the control's preferred siz
 
 {% seealso %}
 
-Card Layout - Configuring Child Controls
+[Card Layout - Configuring Child Controls](t#configuring-child-controls)
 
 {% endseealso %}
 
@@ -195,15 +195,15 @@ For example, when the CardLayout is added to a form, and a Panel control is adde
 
 In the following screen shot, Panel control acts as the Container control and Label control acts as a card.
 
-![]() 
-Figure 694: Adding Labels as Cards
+![](CardLayout_images/CardLayout_img1.png) 
+
 
 ### Image Settings
 
 In the selected card, you can insert an image using the Child (Label) control property as shown below.
 
 
-Table 438: Property Table
+
 
 <table>
 <tr>
@@ -230,8 +230,8 @@ Me.label1.Image = DirectCast((resources.GetObject("label1.Image")), System.Drawi
 
 {% endhighlight %}
  
- ![]()
-Figure 695: Setting an Image for the Card
+ ![](CardLayout_images/CardLayout_img2.png) 
+
 
 #### Size
 
@@ -243,7 +243,7 @@ The CardLayout provides two modes to layout the Child controls. The mode can be 
 
 
 
-Table 439: Property Table
+
 
 <table>
 <tr>
@@ -271,18 +271,18 @@ Me.cardLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.CardLayoutMode.Fill
 
 {% endhighlight %}
  
- ![]()
-Figure 696: Layout Mode set to "Fill"
+ ![](CardLayout_images/CardLayout_img3.png) 
+
 
 ## Browsing Through Cards
 
 This section discusses illustrates how to browse through the Cards (Child controls) that have been added to the CardLayout Manager.
 
-Through Designer
+### Through Designer
 
 The selected card can be displayed using the property given below, which simply takes the card name as input.
 
-_Table440: Property Table_
+
 
 <table>
 <tr>
@@ -319,7 +319,7 @@ Me.cardLayout1.SelectedCard = "Card1"
 
 You can also browse through the different cards using the methods given below.
 
-_Table441: Methods Table_
+
 
 <table>
 <tr>
@@ -407,6 +407,6 @@ At run time, cards can be selected using the items in the ComboBox or by Button 
 
 {% seealso %}
 
-Configuring CardLayout, Configuring Child Controls, Child Control Settings
+[Configuring CardLayout](#configuring-cardlayout), [Configuring Child Controls](#configuring-child-controls), [Child Control Settings](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings)
 
 {% endseealso %}

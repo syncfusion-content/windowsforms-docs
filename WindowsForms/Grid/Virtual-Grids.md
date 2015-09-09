@@ -3606,7 +3606,7 @@ This feature enables you to display the entire cell with resized columns and row
 
 #### Methods Table
 
-_Table71: Method Table_
+
 
 <table>
 <tr>
@@ -3803,7 +3803,7 @@ EnterKeyBehavior property provides support for the following navigation options
 
 You can use this property to change navigation direction of Enter key behavior in the grid. The EnterKeyBehavior property works based on WrapCellBehavior. Enter key behavior navigates to the first column in the next row when at the end of a row, moving to the right.
 
-_Table 72: Properties_
+
 
 <table>
 <tr>
@@ -4637,7 +4637,7 @@ Multiple grids can be printed across various pages using helper class MultipleG
 
 #### Properties
 
-_Table 73: Properties Table_
+
 
 <table>
 <tr>

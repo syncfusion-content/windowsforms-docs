@@ -61,7 +61,7 @@ N> For more details, refer to the following section: Grouping
 
 A sample of this feature is available in the following location: &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo
 
-![](Getting-Started_images/Getting-Started_img5.jpeg) 
+![](Getting-Started_images/Getting-Started_img5.jpg) 
 
 GridControl and the GridDataBoundGrid do not support Grouping.
 
@@ -132,7 +132,7 @@ The position options include:
 * Top
 * Left 
 
-_Table 4: Properties_
+
 
 <table>
 <tr>
@@ -272,7 +272,6 @@ This feature enhances the use of different filters within a single grid. The fil
 
 A filter can be applied to an individual column by setting the AllowIndividualColumnWiring property of the filter to true.
 
-_Table 5: Properties_
 
 <table>
 <tr>
@@ -347,19 +346,19 @@ Following steps illustrate how to add Grid control to your application.
 
 1. Drag the GridControl component from the toolbox onto the form.
 
-   ![](Getting-Started_images/Getting-Started_img15.jpeg) 
+   ![](Getting-Started_images/Getting-Started_img15.jpg) 
 
    To edit cell level properties of the grid (and also general Grid control properties), right-click anywhere in the Grid control and select Edit.
 
-   ![](Getting-Started_images/Getting-Started_img16.jpeg) 
+   ![](Getting-Started_images/Getting-Started_img16.jpg) 
 
    This opens the GridControl Designer window. By using GridControl Designer, cell contents or styles, and general grid properties can be modified.
 
-   ![](Getting-Started_images/Getting-Started_img17.jpeg)
+   ![](Getting-Started_images/Getting-Started_img17.jpg)
 
    Single cells can be modified along with a selection of ranges. To do this, select a range of cells, and switch to the Selected Range tab to view the property grid for the selection.
 
-   ![](Getting-Started_images/Getting-Started_img18.jpeg)
+   ![](Getting-Started_images/Getting-Started_img18.jpg)
 
    GridControl Designer also lets you to save/load xml formatted files, and Soap templates.
 
@@ -370,7 +369,7 @@ Following steps illustrate how to add Grid control to your application.
 
 {% seealso %}
 
-Through Code
+[Through Code](#through-code)
 
 {% endseealso %} 
 
@@ -454,7 +453,7 @@ Me.Controls.Add(Me.gridControl1)
 
 {% seealso %}
 
-Through Designer
+[Through Designer](#through-designer)
 
 {% endseealso %} 
 

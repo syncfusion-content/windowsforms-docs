@@ -28,4 +28,3 @@ Me.groupView1.ThemesEnabled = True
 
 
  ![](Overview_images/Overview_img84.jpeg) 
-Figure 986: Themed look of Button View

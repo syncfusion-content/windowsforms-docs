@@ -22,7 +22,7 @@ Light table allows you to create a table with inputs from DataTable, arrays, or 
 
 #### Properties
 
-_Table_ _9_: Property Table
+
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ PdfLightTableStyle</td></tr>
 
 ### Methods
 
-_Table_ _10_: Methods Table
+
 
 <table>
 <tr>
@@ -158,7 +158,7 @@ PdfLightTableLayoutResult</td></tr>
 
 #### Events
 
-_Table_ _11_: Events Table
+
 
 <table>
 <tr>
@@ -1329,7 +1329,7 @@ doc.Close(True)
 
 Properties in the column
 
-_Table_ _12_: Property Table
+
 
 <table>
 <tr>
@@ -1596,7 +1596,7 @@ You can specify the default cell style by using the DefaultStyle property. You c
 
 #### Properties of a cell
 
-_Table_ _13_: Property Table
+
 
 <table>
 <tr>
@@ -2142,7 +2142,7 @@ Grid is based on cell model that offers rich API for formatting and layout optio
 
 #### Properties
 
-_Table_ _14_: Property Table
+
 
 <table>
 <tr>
@@ -2193,7 +2193,7 @@ PdfGridStyle</td></tr>
 </table>
 Methods
 
-_Table_ _15_: Methods Table
+
 
 <table>
 <tr>
@@ -2276,7 +2276,7 @@ PdfGridLayoutResult</td></tr>
 
 #### Events
 
-_Table_ _16_: Events Table
+
 
 <table>
 <tr>
@@ -2626,7 +2626,7 @@ You can create the layout of PdfGrid  using the PdfGridLayoutFormat class. Overl
 
 #### Properties
 
-_Table_ _17_: Property Table
+
 
 <table>
 <tr>
@@ -2772,7 +2772,7 @@ You can get layout settings for the drawn PdfGrid with the help of PdfGridLayout
 
 ### Properties
 
-_Table_ _18_: Property Table
+
 
 <table>
 <tr>
@@ -2905,7 +2905,7 @@ PdfBrush backgroundBrush = Cell.BackgroundBrush ?? Row.Style.BackgroundBrush ?? 
 
 #### Properties
 
-_Table_ _19_: Property Table
+
 
 <table>
 <tr>
@@ -4419,7 +4419,7 @@ Cell
 
 Properties
 
-_Table_ _20_: Property Table
+
 
 <table>
 <tr>
@@ -4647,7 +4647,7 @@ PdfGrid provides various options to customize the cell content, text color, back
 
 Properties
 
-_Table_ _21_: Property Table
+
 
 <table>
 <tr>
@@ -4855,7 +4855,7 @@ doc.Close(True
 
 #### Light Table vs Grid
 
-_Table_ _22_: Difference between PdfLightTable and PdfGrid
+
 
 <table>
 <tr>
@@ -4900,7 +4900,7 @@ Yes</td><td>
 Yes</td></tr>
 </table>
 
-_Table_ _23_: Difference between PdfLightTable and PdfGrid
+ _Difference between PdfLightTable and PdfGrid_
 
 <table>
 <tr>

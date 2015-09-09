@@ -86,7 +86,7 @@ Me.HubTile1.SlideTransition = TransitionDirection.LeftToRight
 
  ![](Concept-and-Features_images/Concept-and-Features_img2.png) 
  
-Figure : Image Transition
+
 
 ## Transition Speed
 

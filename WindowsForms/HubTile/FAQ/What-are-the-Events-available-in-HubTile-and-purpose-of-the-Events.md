@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: What are the Events available in HubTile and purpose of the Events
+description: What are the Events available in HubTile and purpose of the Events
 platform: WindowsForms
 control: HubTile
 documentation: ug
@@ -21,15 +21,15 @@ The Events available in HubTile are as follows,
 
 *TextChanged Event
 
-#### BeforeTransition Event
+## BeforeTransition Event
 
 This Event is triggered before the Image and Rotation Transition occur in HubTile.
 
-#### Event Data
+### Event Data
 
 BeforeTransitionEventArgs contain the following members that provide information specific to this Event.
 
-_Table 977: Members Table_
+
 
 <Table>
 <tr>
@@ -98,15 +98,15 @@ End Sub
 {% endhighlight %}
 
 
-#### TransitionCompleted Event
+## TransitionCompleted Event
 
 This Event is triggered after the image Transition and Rotation Transition are completed in HubTile.
 
-#### Event Data
+### Event Data
 
 TransitionCompletedEventArgs contain the following members that provide information specific to this Event.
 
-_Table 978: Members Table_
+
 
 <Table>
 <tr>
@@ -168,15 +168,15 @@ Private Sub HubTile1_TransitionCompleted(sender As System.Object, e As Transitio
 {% endhighlight %}
 
 
-#### SelectionMarked Event
+## SelectionMarked Event
 
 This Event is triggered once the HubTile is Selection marked.
 
-#### Event Data
+### Event Data
 
 SelectionMarker contains the following members that provide information specific to this Event.
 
-_Table 979: Members Table_
+
 
 
 <Table>
@@ -218,15 +218,15 @@ End Sub
 
  {% endhighlight %}
 
-#### ZoomCompleted Event
+## ZoomCompleted Event
 
 This Event is triggered after the HubTile image content is Zoomed In and Out.
 
-#### Event Data
+### Event Data
 
 ZoomCompleted contains the following members that provide information specific to this Event:
 
-_Table 980: Members Table_
+
 
 
 <Table>

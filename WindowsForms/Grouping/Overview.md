@@ -53,7 +53,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
-_Table_ _1: Document Conventions
+
 
 <table>
 <tr>
@@ -99,7 +99,7 @@ This section covers the requirements mandatory for using Essential Grouping. It 
 
 The prerequisites details are listed below:
 
-_Table_ _2: Prerequisites
+
 
 <table>
 <tr>
@@ -127,7 +127,7 @@ Development Environments</td><td>
 
 The compatibility details are listed below:
 
-_Table_ _3: Compatibility
+
 
 <table>
 <tr>
@@ -150,7 +150,7 @@ Operating Systems</td><td>
 
 Syncfusion provides the following documentation segments to provide all necessary information for using Essential Grouping in different platform applications in an efficient manner.
 
-_Table_ _4: Documentation
+
 
 <table>
 <tr>
@@ -170,7 +170,7 @@ Release Notes</td><td>
 User Guide (this document)</td><td>
 Online{{ '<http://docs.syncfusion.com/windowsforms/grouping/overview>' | markdownify }} (Navigate to the Grouping User Guide.)![](Overview_images/Overview_img5.jpeg)
 
-> Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+N> Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>

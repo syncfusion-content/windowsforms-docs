@@ -15,7 +15,7 @@ This event is triggered once SelectedItems collection is modified in MultiSelect
 
 #### Event Arguments
 
-Table 231 : Members Table
+
 
 <table>
 <tr>
@@ -75,7 +75,7 @@ This event is triggered once VisualItem collection is modified in MultiSelection
 
 #### Event Arguments
 
-Table 232 : Members Table
+
 
 <table>
 <tr>
@@ -137,7 +137,7 @@ This event is triggered once AutoSizeMode is modified in MultiSelectionComboBox.
 
 #### Event Arguments
 
-Table 233 : Members Table
+
 
 <table>
 <tr>

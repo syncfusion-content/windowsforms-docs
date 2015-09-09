@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-Set the CellType property in the cell style to "PushButton" and handle grids CellButtonClicked event. Use the Description property of the cell style to specify the text that is to be displayed on the button.
+Set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in the cell style to "PushButton" and handle grids CellButtonClicked event. Use the Description property of the cell style to specify the text that is to be displayed on the button.
 
 ### Example
 

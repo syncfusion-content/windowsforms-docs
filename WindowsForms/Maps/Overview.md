@@ -15,7 +15,7 @@ Essential Maps controls are useful for those users who want to build a Windows 
 
 
 
-### User Guide Structure
+## User Guide Structure
 
 
 
@@ -31,7 +31,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-### Document Conventions
+## Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
@@ -48,7 +48,7 @@ Description</th></tr>
 Note</td><td>
 
 
-{{ '_Note:_' | markdownify }}</td><td>
+{{ 'Note:' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>
@@ -159,9 +159,9 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/maps/overview>' | markdownify }} (Navigate to the Maps for Windows Forms User Guide.)> ![](Overview_images/Overview_img4.jpeg)
+Online{{ '<http://docs.syncfusion.com/windowsforms/maps/overview>' | markdownify }} (Navigate to the Maps for Windows Forms User Guide.)
 
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+{{ 'Note: Click Download as PDF to access a PDF version.' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>

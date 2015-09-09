@@ -12,7 +12,7 @@ The border settings of the MaskedEditBox control are discussed in this section.
 
 The wide variety of border options that are available for the MaskedEditBox control are given below.
 
-Table 346 : Property Table
+
 
 <table>
 <tr>

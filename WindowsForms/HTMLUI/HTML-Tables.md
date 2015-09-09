@@ -30,7 +30,7 @@ HTMLUI has a rich table support that lets the user to decide the table's dimensi
 
 {% endhighlight %}
 
-The HTML document that defines the Tables is then loaded into HTMLUI using any of the ways discussed in the section Loading HTML.
+The HTML document that defines the Tables is then loaded into HTMLUI using any of the ways discussed in the section [Loading HTML](/windowsforms/htmlui/loading-html).
 
 ## HTMLUI Tables Sample
 

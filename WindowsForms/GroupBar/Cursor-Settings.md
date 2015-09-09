@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Cursor Settings 
 
-#### Cursor Settings for GroupBar
+## Cursor Settings for GroupBar
 
 The cursor settings of the GroupBar control can be changed using the below given properties.
 
-_Table_ _554__: Property Table_
+
 
 <table>
 <tr>
@@ -43,14 +43,14 @@ Me.groupBar1.Cursor = System.Windows.Forms.Cursors.Cross
 
 
 ![](Overview_images/Overview_img34.jpeg) 
-Figure 945: Cross Cursor displayed on the GroupBar
+
 
 
 #### Cursor Settings for GroupBar Items
 
 Different types of cursors can be set when the mouse pointer is over the GroupBar Items. The cursors available are Mouse, Cross, Help, Hand and so on. The default cursor is 'Arrow'.
 
-_Table_ _555__: Property Table_
+
 
 <table>
 <tr>
@@ -78,6 +78,6 @@ Me.groupBar1.GroupBarItemCursor = System.Windows.Forms.Cursors.Hand
 {% endhighlight %}
 
  ![](Overview_images/Overview_img35.jpeg) 
-Figure 946: Hand cursor on 'Windows Forms' Item
 
- > _Note : The ResetGroupBarItemCursor() method can be used to reset the cursor when it is displayed over a GroupBar Item._ 
+
+N> The ResetGroupBarItemCursor() method can be used to reset the cursor when it is displayed over a GroupBar Item._ 

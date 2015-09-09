@@ -17,6 +17,7 @@ Sorting enables you to quickly visualize and understand the data in a better way
 // Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparerthis.
 PivotGridControl1.PivotRows.Add(new PivotItem 
 { FieldMappingName = "Product", TotalHeader = "Total", Comparer = new ReverseOrderComparer() });
+ 
  /// <summary>
  /// Reverse Order Comparer for sorting data in Descendingorder
  /// </summary>
@@ -41,10 +42,12 @@ PivotGridControl1.PivotRows.Add(new PivotItem
 ' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 Me.PivotGridControl1.PivotRows.Add(New PivotItem 
 With {.FieldMappingName = "Product", .TotalHeader = "Total", .Comparer = New ReverseOrderComparer()})
+
 ''' <summary>
 ''' Reverse Order Comparer for sorting data in Descending order
 ''' </summary>
 public class ReverseOrderComparer : IComparer
+
 '   #Region "IComparer Members"   
 public Integer Compare(Object x, Object y)
 If x Is Nothing AndAlso y Is Nothing Then

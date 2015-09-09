@@ -13,7 +13,7 @@ This section discusses the Display settings of the NumericUpDownExt control.
 
 The NumericUpDownExt provides the following properties to set the display characteristics associated with the integer value.
 
-Table 353 : Property Table
+
 
 <table>
 <tr>

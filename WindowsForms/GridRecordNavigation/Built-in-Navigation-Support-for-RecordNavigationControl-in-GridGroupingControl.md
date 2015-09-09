@@ -15,7 +15,7 @@ GridGrouping control now provides four types of built-in navigation support enab
 
 When you have lots of records in your application, this feature helps you easily navigate to the required record.
 
- _Table10: Methods Table_
+
 
 <table>
 <tr>
@@ -73,19 +73,23 @@ The following are steps to add navigation bar:
 1. Enable navigation bar by setting ShowNavigationBar property to true. The following code illustrates this:
 
 
-
+   ~~~ cs
 
 
              this.gridGroupingControl1.ShowNavigationBar = true;
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
               Me.gridGroupingControl1.ShowNavigationBar = True
-
+   ~~~
+   {:.prettyprint}
 
 
 2. Call the methods for navigation bar i.e., MoveFirst(), MoveLast(), MoveNext() and MovePrevious() methods. The following code illustrates this: 
 
 
-
+   ~~~ cs
 
 				//This property should set to true to show navigation bar.      
 				 this.gridGroupingControl1.ShowNavigationBar = true;
@@ -94,15 +98,19 @@ The following are steps to add navigation bar:
 				 //This method is used to navigate the next record.this.gridGroupingControl1.RecordNavigationBar.MoveNext();
 				 //This method is used to navigate the previous record.    
 				 this.gridGroupingControl1.RecordNavigationBar.MovePrevious();
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 				'This property should set to true to show the navigation bar.      
 				Me.gridGroupingControl1.ShowNavigationBar = True'This method is used to navigate the first record.   
 				Me.gridGroupingControl1.RecordNavigationBar.MoveFirst()'This method is used to navigate the last record.   
 				Me.gridGroupingControl1.RecordNavigationBar.MoveLast()'This method is used to navigate the next record. 
 				Me.gridGroupingControl1.RecordNavigationBar.MoveNext()'This method is used to navigate the previous record.
 				Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
-
-   ![](Built-in-Navigation-Support-for-RecordNavigationControl-in-GridGroupingControl_images/Built-in-Navigation-Support-for-RecordNavigationControl-in-GridGroupingControl_img1.png)
+   ~~~
+   {:.prettyprint}
+   ![](Builtin_images/Builtin_img1.png)
 
 
 

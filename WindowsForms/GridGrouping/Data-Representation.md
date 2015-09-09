@@ -15,13 +15,13 @@ This section deals with different layouts supported by grid grouping control. Th
 
 A Group represents a collection of records that belong to a category. Grid Grouping control allows the user to group data by one or more columns. When grouping is applied, data will be organized into a hierarchical structure based on the matching field values. Records having identical values in grouped column will be combined to form a group. Each group is identified by its GroupCaptionSection that can be expanded to bring underlying records into view. GroupCaptionSection carries information about a particular group like group name, number of items(records) in the group, etc. It also contains plus and minus buttons that allow the user to expand or collapse groups individually. By default, a grid table has one group.
 
-GroupedColumns Collection
+### GroupedColumns Collection
 
 GroupedColumns collection defines the fields to group by and the sort order. The collection can have multiple entries resulting in nested groups. GroupedColumns collection of grouping grid can be accessed via its TableDescriptor. The collection consists of various properties, methods, and events that allows the user to manage the elements in it.
 
-Adding Data Groups
+#### Adding Data Groups
 
-Simple Grouping
+##### Simple Grouping
 
 
 
@@ -105,7 +105,7 @@ N>: For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
 
-Multi Column Grouping
+##### Multi Column Grouping
 
 Grid Grouping control provides inbuilt support to group the data by more than one column. It is as simple as adding the column names to the GroupedColumns collection. With multicolumn grouping, grouping grid organizes data in a hierarchical structure showing groups in different levels. In the image below, you see Employees data grouped by Title and Country columns.
 
@@ -117,7 +117,7 @@ N>: For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Multi Column Grouping Demo_
 
-Grouping Through Designer
+### Grouping Through Designer
 
 Grouping can also be done at design time. After binding dataset to the grouping grid, open TableDescriptor node in property grid of Grid Grouping control. In that, accessing GroupedColumns property will open SortColumnDescriptorCollection Editor. Clicking Add button will add an existing column from the dataset. By using drop down Name, you can change the column by which you want to group table data. You can also specify the sort order for that column by using SortDirection property.
 
@@ -127,13 +127,13 @@ The image below depicts this process.
 
 
 
-Using GroupDropArea
+### Using GroupDropArea
 
 Table data can also be grouped simply by dragging the desired column header and dropping it into the GroupDropArea. Removing column header from the drop area will ungroup data. You can also change the grouping order by simple drag and drop action on column headers.
 
 For more information on GroupDropArea, refer GroupDropArea.
 
-Preventing a Column from Grouping
+### Preventing a Column from Grouping
 
 To disallow a column being grouped, AllowGroupByColumn property should be set to False for that column. This property determines whether the grid can be grouped by a column when the user drags the column to GroupDropArea.
 
@@ -172,7 +172,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
 
 {% endhighlight %}
 
-Removing a given Group
+### Removing a given Group
 
 GroupedColumns property provide two methods to remove a specific group from the collection. Remove() method deletes the column with a given name from GroupedColumns collection. As a result, the table data is ungrouped by that column. RemoveAt() method deletes the element at the specified index from the collection.
 
@@ -311,11 +311,11 @@ Given below is a sample screenshot.
 
 Grid Group Drop Area is made up of a collection of Grid controls packed in a panel named GroupDropPanel. A Splitter provides the insulation between Group Drop Panel and Grid Table Panel by using the size of Drop Panel that can be adjusted at run time. While formatting Group Drop Area, the user should take care of these controls too.
 
-Properties affecting GroupDropArea
+##### Properties affecting GroupDropArea
 
 The table given below lists the properties that allow you to customize the look and feel of Grid Group Drop Area.
 
-_Table 81: Properties_
+
 
 <table>
 <tr>
@@ -336,7 +336,7 @@ gridGroupingControl1.Splitter</td><td>
 Provides splitter related properties.</td></tr>
 </table>
 
-Example
+##### Example
 
 In this example, grouping grid is built with hierarchical dataset created at runtime. The formatting of Group Drop Area can be controlled by handling PrepareViewStyleInfo event for each of the grids in Group Drop Panel.
 
@@ -717,7 +717,7 @@ This feature allows users to display items in GroupDropArea in a hierarchical or
 * Resize group drop area dynamically up to the last level of hierarchy.
 * Set the tree lines with desired color.
 
-_Table 82: Properties_
+
 
 <table>
 <tr>
@@ -934,11 +934,11 @@ Samples\Grouping\Grouping Demo.
 
 Grid Grouping control provides a number of options that allows you to control the look and behavior of the groups. You can control the caption text, where and if AddNew row will be displayed and whether captions, headers, footers, preview rows and summaries will be displayed.
 
-GridGroupOptionsStyleInfo class
+#### GridGroupOptionsStyleInfo class
 
 GridGroupOptionsStyleInfo class derives StyleInfoBase and defines the properties to control the look and feel of the groups. A grouping grid distinguishes between three different kinds of group options listed below.
 
-_Table 83: Group Options_
+
 
 <table>
 <tr>
@@ -960,11 +960,11 @@ Lets you control the look and behavior of groups in nested child relations.</td>
 </table>
 
 
-Properties of Group Options
+#### Properties of Group Options
 
 The table below describes the properties defined in the GridGroupOptionsStyleInfo class. These properties are available for all kinds of Group Options.
 
-_Table 84: Properties of Group Options_
+
 
 <table>
 <tr>
@@ -1042,7 +1042,7 @@ Next chapter in this section discuss these properties in detail with a suitable 
 
 This section explores various properties that can be used to manipulate different group elements.
 
-Group Headers and Footers
+##### Group Headers and Footers
 
 The headers and footers of a group can be used to display any information that is common to all elements of that group. You can toggle the display of these headers and footers by using the boolean properties given below.
 
@@ -1062,7 +1062,7 @@ Group headers and footers can be populated by handling QueryCellStyleInfo event 
 
 
 
-GroupPreviewRows
+##### GroupPreviewRows
 
 GroupPreviewSection is the suitable place when you want to display memo fields or add custom notes for a given group. It can be enabled by setting &lt;GroupOptions&gt;.ShowGroupPreview property to True. You can adjust the size of preview row through TableOptions.GroupPreviewSectionHeight property. QueryCellStyleInfo event can be used to populate preview rows.
 
@@ -1070,7 +1070,7 @@ GroupPreviewSection is the suitable place when you want to display memo fields o
 
 
 
-AddNew Records
+##### AddNew Records
 
 Each group can optionally have an AddNew row where you can provide the values for a new record. Once a new record is entered, the record will be sorted into the existing record set and will be assigned a group's category automatically. The visibility of the AddNewRecord can be controlled through the following two boolean properties.
 
@@ -1081,7 +1081,7 @@ Each group can optionally have an AddNew row where you can provide the values fo
 
 
 
-GroupCaptionSection
+##### GroupCaptionSection
 
 This is the first section within a group that provides a caption bar above column headers. GroupCaptionRows are unbound rows that are created only to combine records into a group. By default, they display group category and the number of items in that group. The following properties can be used to control CaptionSection display.
 
@@ -1092,11 +1092,11 @@ This is the first section within a group that provides a caption bar above colum
 
 
 
-CaptionText Tokens
+##### CaptionText Tokens
 
 The following table lists the available token formats for &lt;GroupOptions&gt;.CaptionText.
 
-_Table 85: Token formats_
+
 
 <table>
 <tr>
@@ -1130,11 +1130,11 @@ Allows you to display any item you enter as a Summary Column. See discussion bel
 </table>
 
 
-Custom Summary Tokens 
+##### Custom Summary Tokens 
 
 Any summary item you add can be included in the CaptionText and you have the option of hiding summaries; so it is possible to add summaries only for the purpose of displaying values in the CaptionText. If you have added a summary row named Row1 and a summary column named Column1, then you can also use the value of this summary item in the caption with the token {Row1.Column1}. 
 
-Example
+##### Example
 
 Here is a sample implementation that illustrates usage of the above properties.
 
@@ -1358,7 +1358,7 @@ This section best demonstrates how to work with group rows and also shows how th
 
 This lesson will guide you on the ways to access individual groups in a collection, to retrieve all the groups, to expand or collapse groups, and will discuss some of the properties and events used to process groups.
 
-Expanding or Collapsing Groups
+##### Expanding or Collapsing Groups
 
 All the groups can be expanded as well as collapsed at once by calling the respective methods, Table.ExpandAllGroups and Table.CollapseAllGroups. To expand or collapse a specific group, set Group.IsExpanded property to true or false respectively. Following code example illustrates this.
 
@@ -1544,7 +1544,7 @@ System.Diagnostics.Trace.WriteLine(Me.gridGroupingControl1.Table.Records(3).Pare
 
 This section discusses some of the important events that could be handled to catch grouping actions. Below is a list of such events.
 
-_Table 86: Grouping events_
+
 
 <table>
 <tr>
@@ -1586,7 +1586,7 @@ Occurs after the records for a group are sorted.</td></tr>
 </table>
 
 
-Example
+##### Example
 
 The GroupedColumns Changing/Changed events get fired when the list is modified i.e. when any item is added, removed, or modified. It accepts an argument of type ListPropertyChangedEventArgs that lets you check the reason for a list change. The reason could be ItemAdded, ItemInserted, ItemRemoved, ItemModified, ItemMoved, ItemPropertyChanged, or the whole collection is modified.
 
@@ -1685,7 +1685,7 @@ GroupExpanding/GroupExpanded and GroupCollapsing/GroupCollapsed event handlers a
 
 The SortingItemsInGroup and SortedItemsInGroup events are raised when the records for a group are sorted. The grid should have at least one group for these events to occur. It does have no relationship with normal sorting. It occurs only when a grouped column is sorted.
 
-Tracking the changes in Nested Table
+##### Tracking the changes in Nested Table
 
 It is possible to get notified of the changes in table descriptors other than the default table. This can be achieved by listening to Engine.PropertyChanging event and using GetNestedChildTableDescriptorEvent method. This method lets you get information about a change in the table descriptor of the nested child table. For example, when a column is changed in a nested table, the above method allows you to get details such as table descriptor of the affected table and the original EventArgs which was raised in response to the column changes (eg. ColumnsChanged event). Once you have the event data, you can check whether just the width of the column was changed or if other settings were also changed.
 
@@ -1863,15 +1863,15 @@ To view a sample on Freezing the Caption Row, see &lt;Installed Location&gt;\Syn
 
 Grid Grouping control allows you to sort table data against one or more columns. The number of columns by which data can be sorted is unlimited. When sorting is applied, grid will rearrange data to match the current sort criteria.
 
-SortedColumns Collection
+#### SortedColumns Collection
 
 SortedColumns collection defines the sort order for records within groups. Multiple entries can be added with the first entry having precedence while sorting records. The properties and methods in this collection lets you manage elements in the collection. The collection can be viewed as a set of SortColumnDescriptors, one for every column against which the data is sorted. SortColumnDescriptor of a field contains details like the name of a field, sort direction, and optionally a custom comparer and categorization object. The custom comparer and categorizer will allow you to customize sorting.
 
-Sorting Methods
+### Sorting Methods
 
 There are multiple ways to sort table data. A simple one is to click the desired column headers that needs to be sorted. Once sorting is applied, the grid will display a sort icon in the respective column headers showing sort direction. Sorting can also be done against multiple columns by holding Ctrl key and clicking on the desired column headers.
 
-Through Designer
+### Through Designer
 
 At design time, data can be sorted by accessing SortedColumns property under TableDescriptor section in the property grid of Grid Grouping control. This will open SortColumnDescriptorCollection Editor. In that Editor, clicking Add button will add existing columns into the collection. Name and SortDirection in the property window of the editor will let you specify your desired field name to sort and the sort order. The image given below illustrates this process.
 
@@ -1881,7 +1881,7 @@ At design time, data can be sorted by accessing SortedColumns property under Tab
 
 
 
-Programmatic Sorting
+### Programmatic Sorting
 
 Sorting can be applied to the grid data by specifying the desired field name to the TableDescriptor.SortedColumns.Add() method.
 
@@ -1941,7 +1941,7 @@ N>: For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Multi Column Sorting Demo_
 
-Sorting By Display Member
+#### Sorting By Display Member
 
 Grid Grouping control sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foriegn-key reference relation between related tables. 
 
@@ -2073,9 +2073,9 @@ rd.ChildTableDescriptor.SortedColumns.Add("CustomerName")
 
 td.Relations.Add(rd); 
 
+{% endhighlight %}
 
-
-{% highlight vbnet %} {% endhighlight %}
+{% highlight vbnet %} 
 
 
 
@@ -2121,7 +2121,7 @@ N>: For more details, refer to the following browser sample: &lt;Install Locatio
 
 By default, Grouping Grid supports automatic sorting. When you want to disable this automatic sorting, you can use the following methods to prevent sorting on specific columns. 
 
-Properties used to control Sorting
+#### Properties used to control Sorting
 
 Sorting on the grid data can be controlled by two boolean properties under TableOptions: AllowSortColumns and AllowMultiColumnSort. These properties are used to enable and disable sorting action. They are set to True by default. To prevent sorting against multiple columns, you should set AllowMultiColumnSort to False whereas the AllowSortColumns property should be set to True to allow single column sorting. The screenshot given below highlights these properties in the property window.
 
@@ -2197,13 +2197,13 @@ The grouping grid provides the following built-in summary types.
 
 The engine supports summaries that operate on vectors such as Distinct Count, Median, 25% and 75% Quartile. Users may also easily add custom summaries.
 
-SummaryRows Collection
+### SummaryRows Collection
 
 TableDescriptor.SummaryRows manages a collection of summary rows for the grid table. This collection implements an abstracted view to summaries that lets users define where to display the summary in the grid. Behind the scenes, GridEngine adds many more hidden summaries to the Summaries collection. Examples for such hidden summaries are: maximum width for contents of a cell, filter bar choices, and display entries of a ForeignKeyKeyWords relation. You can have summaries for individual columns (SummaryColumns) that can be combined into a single Summary Row for display.
 
 It is the SummaryDescriptorCollection that manages summaries for a given table containing one entry for each summary. Each SummaryDescriptor in this collection has a MappingName that identifies FieldDescriptor for summaries calculation and SummaryType property that defines the type of calculations to be performed. Possible options for SummaryType are: Count, BooleanAggregate, ByteAggregate, CharAggregate, DistinctCount, DoubleAggregate, Int32Aggregate, MaxLength, StringAggregate, Vector, DoubleVector, and Custom. By default, SummaryDescriptor ignores records that do not satisfy filter criteria. This behavior can be changed with IgnoreRecordFilterCriteria flag.
 
-Summaries Through Designer
+### Summaries Through Designer
 
 Summaries can be set at design time itself through property window of the grid grouping control. In the property window, SummaryRows under TableDescriptor node will let you manage summaries for a grouping grid. Accessing SummaryRows property will the GridSummaryRowDescriptor collection editor. The editor contains a list of properties such as Title, SummaryColumn, Appearance, etc. that allows you to define summaries for the desired columns and to control the appearance of these summaries.
 
@@ -2213,7 +2213,7 @@ Summaries can be set at design time itself through property window of the grid g
 
 
 
-Through Code
+### Through Code
 
 This example shows a grouping grid bound with Statistics table whose columns are ID, School, Sport, wins, losses, ties and year. Follow the steps below to create a summary for wins column that displays the sum of wins's values.
 
@@ -2319,7 +2319,7 @@ N>: For more details, refer to the following browser sample:
 
 In the previous chapter, you learnt how to create simple summaries for a grid table. This chapter will explore the different forms of summaries. It is possible to have multiple summary rows for a single data table. We can define summary for each group and also for each table when nested tables are used.
 
-Multicolumn Summaries
+#### Multicolumn Summaries
 
 A Summary Row can have any number of summary columns. To display summaries for more than one field, you must first create summary columns for the desired fields. Then add those summary columns into a summary row. The code given below illustrates this.
 
@@ -2384,7 +2384,7 @@ Here is a sample screenshot displaying the summaries for the columns wins and lo
 
 
 
-MultiRow Summaries
+#### MultiRow Summaries
 
 Grouping Grid allows you to have summaries for more than one row. It is achieved by defining the required number of summary row descriptors. Each of the summary rows can have its own format for calculating summaries. Here is an example that shows how to add two different summary rows for a grid table.
 
@@ -2470,7 +2470,7 @@ Given below is a sample screenshot.
 
 
 
-Summaries for Nested Tables and Groups
+#### Summaries for Nested Tables and Groups
 
 For example, if your datasource has two tables nested, Orders and Order Details, with summaries for the parent table. The summaries that are set for the top level table are sufficient enough for the groups. You need to define summary rows only for child tables. It can be achieved by creating summaries through ChildTableDescriptor. The following code illustrates this process.
 
@@ -2552,7 +2552,7 @@ N>: For more details, refer to the following browser sample:
 
 Grid Grouping control provides built-in options to display group summaries for the columns in GroupCaptions instead of creating distinct rows for summaries. It can be easily achieved with few property settings. The table below describes these properties, which can be accessed through GroupOptions.
 
-_Table 87: Properties_
+
 
 <table>
 <tr>
@@ -2578,7 +2578,7 @@ Lets you control the caption text to be displayed.</td></tr>
 </table>
 
 
-Steps to create Caption Summaries
+#### Steps to create Caption Summaries
 
 
 
@@ -2686,7 +2686,7 @@ Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items"
 
 {% endhighlight %}
 
-4. Finally, format the caption rows to improve the look and feel.
+4.Finally, format the caption rows to improve the look and feel.
 
 {% highlight C# %}  
 
@@ -2738,11 +2738,11 @@ N>: For more details, refer to the following browser sample:
 
 This section illustrates how to sort groups by values of the summary. By default, when grouping is applied, it sorts records by the values of grouped column. When you want to change this default group and make grouping sort records by the values of group summaries, thre are a couple of ways to achieve this. You can use your own custom comparer to define the sort order. An alternate solution is to make use of built-in method, that is specially designed to use in this scenario, named SetGroupSummaryOrder. 
 
-SetGroupSummaryOrder Method
+#### SetGroupSummaryOrder Method
 
 This method will set up a custom comparer for sorting groups to enable groups to be sorted in a different order. It can be defined for a given column say, Col1 by passing the summary name, property in the summary and optionally sort direction as parameters. It makes use of these parameters to retrieve summary values and then pass these values to a custom comparer, which sets up a sort order based on these summary values. When the grid is grouped against column Col1, then groups are sorted in the order specified by the custom comparer instead of sorting by default order.
 
-Example
+##### Example
 
 This example uses an Orders Table bound to a grouping grid. Summaries are created for the column Freight. The group caption cells are made to display group summaries for Freight column. Now, our goal is to sort the table against ShipCountry field with data records arranged based on caption summaries i.e. groups are sorted against the summary values rather than the category.
 
@@ -2874,15 +2874,15 @@ Further topics in this section discusses these concepts in detail with suitable 
 
 Expression Fields will allow you to add a column that holds calculated values based on other fields in the same record. These expression columns can be visible or invisible, used in grouping and sorting, and may be employed as summary fields for summary rows. As with adding Summary Rows and Summary Columns, you can use collection editors to add Expression Fields. 
 
-Expression Fields Collection
+#### Expression Fields Collection
 
 Expression Fields collection of TableDescriptor defines expression fields. This collection is managed by ExpressionFieldDescriptor collection in which each entry termed as ExpressionFieldDescriptor defines one expression field. The data for expression fields is calculated at runtime based on ExpressionFieldDescriptor.Expression text formula and can depend on other fields in the same record.  
 
-Adding Expression Fields Through Designer
+##### Adding Expression Fields Through Designer
 
 In the property window of the grouping grid, if you open TableDescriptor section, you will notice ExpressionFields collection property. Clicking this will open ExpressionFieldDescriptor Collection Editor. The editor displays properties necessary to setup expression fields. The table given below gives a brief description about some important properties.
 
-_Table 88: ExpressionFields collection properties_
+
 
 <table>
 <tr>
@@ -2920,7 +2920,7 @@ You can add any number of expression fields to the table. The following image de
 
 
 
-Programmatically
+#### Programmatically
 
 Expression Fields can also be set through code. The following code example adds two expression fields to the Statistics table.
 
@@ -2981,7 +2981,7 @@ Expression fields can be nested, which means that the formula expression of an e
 * ExpressionField2.Expression = " [ExpressionField1] + 0.5 "
 * ExpressionField3.Expression = " [ExpressionField1] + [ExpressionField2] "
 
-Sample Code
+##### Sample Code
 
 The following code example is used to create nested expression fields.
 
@@ -3059,7 +3059,7 @@ The computations are performed as listed with level one operations done first. A
 
 Below is the list of operators used and their descriptions.
 
-_Table 89: Operators_
+
 
 <table>
 <tr>
@@ -3164,11 +3164,11 @@ Checks if a time in the date field value between the two values is listed in the
 
 RecordFilters otherwise known as RowFilters will allow you to restrict displayed records to those that satisfy logical condition you specify with FilterRowDescriptor. You have the option of typing an expression (similar to an Expression Field) or entering a condition using editor dialog.
 
-RecordFilters Collection
+#### RecordFilters Collection
 
 RecordFilters collection defines filter criteria for showing or hiding records. Each filter in this collection is internally maintained by RecordFilterDescriptor. All RecordFilterDescriptors for a given filter are managed by RecordFilterDescriptorCollection, which is returned by RecordFilters property of the TableDescriptor. Filters can be specified through text formulas similar to expression fields or through the entries of FilterConditionCollection. FilterConditionCollection is a set of conditions each with CompareOperator and CompareValue to compare with the value retrieved from the record. A condition can also have custom ICustomFilter object if you want to provide your own logic for evaluating filter criteria.
 
-Adding Filters Through Designer
+#### Adding Filters Through Designer
 
 Record Filters can easily be added through the designer. Opening TableDescriptor.RecordFilters property in the property window will display RecordFilterDescriptor Collection Editor that allows you to define record filters. The designer settings shown in the image below will setup a record filter for the field 'wins', to display only records with wins > 20.
 
@@ -3180,7 +3180,7 @@ Record Filters can easily be added through the designer. Opening TableDescriptor
 
 Here is the description of some important properties used to set a row filter.
 
-_Table 90: Properties to set row filter_
+
 
 <table>
 <tr>
@@ -3205,7 +3205,7 @@ LogicalOperator</td><td>
 Indicates logical operator used if multiple conditions are given.</td></tr>
 </table>
 
-Programmatically
+##### Programmatically
 
 To add record filter, you must create RecordFilterDescriptor by specifying field name with which the filter should be compared and a filter condition that contains CompareOperator and CompareValue. The possible options for CompareOperator are Equals, NotEquals, LessThan, LessThanOrEqualTo, GreaterThan, GreaterThanOrEqualTo, Like, Match and Custom ( for Custom Filter). A filter criteria can also be specified as an expression text similar to the one used in expression fields. A LogicalOperator will be used when you specify more than one condition for a given filter. Finally, add the record filter descriptor to RecordFilters collection of the Table Descriptor.
 
@@ -3243,7 +3243,7 @@ Given below is a sample screen shot showing the grid filtered with wins > 20.
 
 N>: Filter Expressions share the same format as in expression fields. For a list of valid expressions, refer to_ List of Filter Expressions.
 
-Nested Tables
+#### Nested Tables
 
 Record Filters can also be set to nested tables by accessing RecordFilters collection of the ChildTableDescriptor.
 
@@ -3460,7 +3460,7 @@ Grouping Grid provides in-built support for displaying Filter Bar across the col
 
 When filter bar is applied, a new row (Filter Row) will be added at the top of the table displaying filter options for the columns in a drop down. Each cell in the filter bar row is a simple ComboBox cell whose items are filter options. The filter options for a given column includes one entry for each value in that column. 
 
-Setting up a Filter Bar
+##### Setting up a Filter Bar
 
 The Filter Bar can be enabled by setting ShowFilterBar and AllowFilter properties to true. AllowFilter property can be set for the columns that require filter options.
 
@@ -3520,7 +3520,7 @@ Loop
 
 {% endhighlight %}
 
-Through Designer
+##### Through Designer
 
 A filter bar can also be added at design time by setting the above properties through property window of the grouping grid. The designer settings shown below adds the filter for columns CompanyName and ContactTitle.
 
@@ -3533,7 +3533,7 @@ A filter bar can also be added at design time by setting the above properties th
 
 
 
-Setting AllowFilter property for the column CompanyName
+##### Setting AllowFilter property for the column CompanyName
 
 Here is a sample screen shot that shows the filter bar with filters enabled for columns CompanyName and ContactTitle. The records are filtered against filter condition ContactTitle = 'Sales Representative'. The image also shows filter options for the column CompanyName.
 
@@ -3549,7 +3549,7 @@ While enabling FilterBar, it automatically adds up an option for showing All rec
 
 
 
-NestedTables and NestedGroups
+##### NestedTables and NestedGroups
 
 AutoFilterRow can also be added to the nested tables and groups. To turn on the Filter Bar for Nested Tables, set the property ShowFilterBar under NestedTableGroupOptions. For all groups, ShowFilterBar under ChildGroupOptions need to be set to true.
 
@@ -3597,7 +3597,7 @@ Dynamic Filter serves as good replacement for the default Filter Bar, which prov
 
 The dynamic filter can be used with Nested Tables and Nested Groups too. To make it more interactive, it adds a Filter Button at the right-most corner of every Filter Bar Cell, on clicking, which drops down into a list showing the available comparative operators. On hovering any filter bar cell, a filter icon is displayed, indicating whether a filter is applied to that particular column or not. The key feature of the dynamic filtering mechanism is that it allows you to view the filter results as you type each and every character. It supports user-defined filter criteria as well.
 
-Set up Dynamic Filter
+##### Set up Dynamic Filter
 
 The dynamic filter is defined in the GridDynamicFilter class, which exposes two public methods, WireGrid and UnwireGrid, in order to hook up and unhook the dynamic filter with the desired grid.
 
@@ -3654,17 +3654,17 @@ N>: For more details, refer the following browser sample:
 
 The dynamic filter in the GridGrouping control provides support to customize the display content of the static element. Using this you can localize the static elements in the compare operator list box. 
 
-Use Case Scenarios
+###### Use Case Scenarios
 
 With this feature, you can localize the options in the compare operator list box to display the language specific to your locale.
 
-Sample Link
+###### Sample Link
 
 A demo of this feature is available in the following location:
 
 _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
-Adding Localization Support for CompareOperatorListBox 
+###### Adding Localization Support for CompareOperatorListBox 
 
 To localize the content, create a class file and add an interface as _ILocalizationProvider_. Assign the required content to be displayed to the _DynamicFilterResourceIdentifiers_ of the _GetLocalizedString_ method as illustrated in the following code:
 
@@ -3956,7 +3956,7 @@ End Function
 
 This section deals with different options to process the filter rows.
 
-Accessing FilteredRecords
+##### Accessing FilteredRecords
 
 If you want to work with the subset of records being filtered from a grid table, then you can use FilteredRecords collection for that table. This is a read-only collection that manages the subset of records that has been filtered against a filter criteria.
 
@@ -3990,7 +3990,7 @@ Next frec
 
 {% endhighlight %}
 
-Accessing the FilterBarString
+#### Accessing the FilterBarString
 
 To get access to the FilteredString, you can use GetFilterBarText of FilterBarCellRenderer. Following code example illustrates how to print the filter bar string for a given column.
 
@@ -4116,7 +4116,7 @@ End Sub
 
 Grid Grouping control filters data records by the value member of the columns by default. This behavior can be customized to get filters work with display member of the columns. This is accomplished in the Filter By DisplayMember feature.
 
-Implementation
+##### Implementation
 
 Implementation includes the following classes.
 
@@ -4176,7 +4176,7 @@ Filter expressions can be set and added to RecordFilters collection through a te
 
 The following table lists tokens used, (Expression Filters) and their descriptions.
 
-_Table 91: Tokens_
+
 
 <table>
 <tr>
@@ -4284,7 +4284,7 @@ A grouping grid can automatically detect data relations in a dataset for display
 
 With nested tables, each record in the parent table will have an associated set of records in the child table. Every record in the relation is provided with a +/- button called RecordPlusMinus that can be expanded (as well as collapsed) to bring the underlying records in the child table into view. The number of tables that can be nested with relations using a Grid Grouping control is unlimited.
 
-Relations Collection
+### Relations Collection
 
 TableDescriptor.Relations collection defines relations for the table. By default a relation (RelatedMasterDetails) is created for each DataRelation found in a DataSet. Relations can either be related foreign key tables or nested child tables that can be expanded and collapsed. Each entry in this collection is owned by RelationDescriptor that stores details of a relation. All the RelationDescriptors for a given table is managed by RelationDescriptor Collection which is returned by TableDescriptor.Relations property.
 
@@ -4306,11 +4306,11 @@ _Figure_ _410__: Setting Up Relations by using GridRelationDescriptor Collection
 
 
 
-Properties
+#### Properties
 
 Here is a brief description on the properties used to setup a relation.
 
- _Table 92: Properties_
+ 
 
 <table>
 <tr>
@@ -4347,11 +4347,11 @@ ChildTableDescriptor</td><td>
 Specifies the table schema of Child Table.</td></tr>
 </table>
 
-Different RelationKinds
+### Different RelationKinds
 
 Apart from the default Master-Detail type, Essential Grouping Grid supports a number of relations that could be enabled by specifying the relations manually in the grouping engine. In case of manual relations, dataset does not need to have relations. This is the same approach that should be used if you want to setup relationships between independent IList collections.
 
-Supported Relations
+### Supported Relations
 
 * RelatedMasterDetails
 * ForeignKeyReference
@@ -4361,7 +4361,7 @@ Supported Relations
 
 
 
-The ForeignKey DropDown
+### The ForeignKey DropDown
 
 
 
@@ -4387,7 +4387,7 @@ RelatedMasterDetails is a Master-Details relation where matching keys in columns
 
 This section demonstrates how to manually specify master-detail relations between three independent tables that have primary key and foreign key column in common.
 
-Steps to setup RelatedMasterDetails relation
+#### Steps to setup RelatedMasterDetails relation
 
 1.Setup three datatables that have primary and foreign key columns in common.
 
@@ -4765,7 +4765,7 @@ N>: For more details, refer to the following browser sample:
 
 ForeignKeyReference is a foreign-key relation for looking up values where an id column in the main table can be used to look up a record in a related table. This is an n:1 relation where multiple records in the parent table can reference the same record in the related table. Fields in the related table can be referenced using a '.' dot in the FieldDescriptor.MappingName of the main table.
 
-Steps to setup ForeignKeyReference relation
+#### Steps to setup ForeignKeyReference relation
 
 This section sets up a foreignkeyreference relation between data table and the collection USStates. Data table represents Parent Table of the relation and USStates collection serves as the related child list wherein the values can be looked up using a key. The collection derives from ArrayList in which every item is an USState object having two properties named Key and Name. It also defines a method named CreateDefaultCollection() that returns an instance of itself populated with a set of values.
 
@@ -5375,7 +5375,7 @@ N>: For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo_
 
-GridForeignKeyHelper
+##### GridForeignKeyHelper
 
 GridForeignKeyHelper is a helper class that makes it easy for the users to use foreign key relations to do foreign key look ups. With this class available, users can easily hook up a foreign table by a single method call instead of going through all the steps described above.
 
@@ -5406,7 +5406,7 @@ GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, valueColInMai
 
 ForeignKeyKeyWords is a unique relation kind offered by the grouping engine. It is a foreign key relation where matching keys in the columns of the parent and child table define a relationship between two tables. This is an m:n relation. Field summaries of the related child table can be referenced using a ‘.’ dot in the FieldDescriptor.MappingName of the main table. This relation kind allows you to have multi-valued columns in the grid.
 
-Example
+#### Example
 
 Say you have a Customers table where each customer can have a list of purchased items. With MasterDetails, for a given customer the underlying child list (the list of items purchased by that customer) will be displayed in a separate table once the RecordPlusMinus button is clicked. Instead if you want to view the entire record along with the related child records in a single row, then ForeignKeyKeyWords would be the right choice to use.
 
@@ -5720,7 +5720,7 @@ N>: For more details, refer to the following browser sample:
 
 ListItemReference is an object reference relation for looking up values from a strong typed collection. Like ForeignKeyReference, it is also an n:1 relation where multiple records in the parent table can reference the same record in the related table. One difference between the ForeignKeyReference and ListItemReference is that the former uses a key to look up the values whereas the latter uses an object to look up the values in a nested collection.
 
-Steps to setup ListItemReference relation
+#### Steps to setup ListItemReference relation
 
 This section sets up ListItemReference relation between data table and the collection Countries. The data table represents the Parent Table of the relation and the Countries collection serves as the related child list wherein the values can be looked up using an object of the child list. The collection derives from ArrayList in which every item is a Country object having two properties, CountryCode and Name. It also defines a method named CreateDefaultCollection() that returns an instance of itself populated with a set of values.
 
@@ -6128,7 +6128,7 @@ End Class
 
 {% endhighlight %}
 
-6.2.Create an object of USStates and add this object into the SourceListSet with a lookup name.
+2.Create an object of USStates and add this object into the SourceListSet with a lookup name.
 
 
 
@@ -6348,7 +6348,7 @@ N>: For more details, refer the following browser sample:
 
 UniformChildList relation can be used to map nested strong typed collection inside a parent collection. If a public property is an object, then it will be displayed in a Nested Table. The collection in the below example consists of two kinds of objects, ParentObj and ChildObj, where every ParentObj is associated with a collection of ChildObjs and is represented by the public property named 'Child'. Hence, a nested table is always created to display associated children for a given parent.
 
-Example
+#### Example
 
 1. Create a class(ChildObj) whose instances form the child table records.
 
@@ -7034,7 +7034,7 @@ N>: For more details, refer to the following browser sample:
 
 This section discusses how to handle related tables in certain scenarios. It also describes the properties and events used for this purpose.
 
-AutoPopulateRelations Property
+#### AutoPopulateRelations Property
 
 It specifies if the relations should be automatically generated when you assign DataSource with a DataTable with constraints or a DataSet with relations defined. It is true by default.
 
@@ -7054,13 +7054,13 @@ Me.gridGroupingControl1.AutoPopulateRelations = False
 
 {% endhighlight %}
 
-ShowRelationFields Property
+#### ShowRelationFields Property
 
 When a foreign key relation (or related collection) is used, this property controls the display of dependent fields from a related table in the main table.
 
-Possible Options
+#### Possible Options
 
-_Table 93: Relations_
+
 
 <table>
 <tr>
@@ -7115,7 +7115,7 @@ Me.gridGroupingControl1.Engine.MaxNestedCollectionRecurseLevel = 4
 
 {% endhighlight %}
 
-QueryShowRelationDisplayFields Event
+#### QueryShowRelationDisplayFields Event
 
 It is raised for every foreign-key relation. At runtime, it allows you to control related fields of the child table to be added to the FieldDescriptorCollection. Inside this event, you can check for specific fields and set e.Cancel to true to avoid adding those fields.
 
@@ -7165,7 +7165,7 @@ End Sub
 
 {% endhighlight %}
 
-QueryShowField Event
+#### QueryShowField Event
 
 It gets fired for every field in the Field Descriptor Collection of individual tables in the dataset. It lets you control the population of field descriptors. Using this event, you can check for specific fields and cancel the population of desired fields at runtime.
 
@@ -7211,7 +7211,7 @@ End Sub
 
 {% endhighlight %}
 
-QueryAddRelation Event
+#### QueryAddRelation Event
 
 It is invoked for every relation that is being added to the RelationDescriptorCollection. By setting e.Cancel to true, you can avoid specific relations being added.
 
@@ -7248,7 +7248,7 @@ End Sub
 
 {% endhighlight %}
 
-QueryShowNestedPropertiesFields Event
+#### QueryShowNestedPropertiesFields Event
 
 It is called when there exists nested properties in the bound datasource. With the help of this event, you can determine if the individual fields in the nested property should be displayed.
 

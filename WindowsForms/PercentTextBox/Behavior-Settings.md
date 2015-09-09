@@ -16,7 +16,7 @@ The Behavior settings of the PercentTextBox control are discussed below.
 
 The percent value of the PercentTextBox can be changed to a negative value using the properties given below.
 
-Table 300: Property Table
+
 
 <table>
 <tr>

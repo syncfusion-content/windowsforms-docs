@@ -32,5 +32,5 @@ Me.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
 
  ![](Overview_images/Overview_img45.png) 
-Figure 954: GroupView
+
 

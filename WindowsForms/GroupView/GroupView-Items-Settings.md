@@ -39,13 +39,13 @@ Figure 968: "My Computer" Item is Highlighted in the GroupView Control
 
 The following properties are used to set the text offset for the GroupView Items.
 
-_Table_ _563__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Property</td><td>
-Description</td></tr>
+<th>
+GroupView Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HighlightTextOffset</td><td>
@@ -65,7 +65,7 @@ Sets the text offset for the selected GroupView Item.</td></tr>
 </table>
 
 
-> _Note: HighlightText property must be set to 'True' in all the cases._
+N> HighlightText property must be set to 'True' in all the cases._
 
 {% highlight C# %}  
 
@@ -95,26 +95,26 @@ Me.groupView1.SelectingTextOffset = New System.Drawing.Point(40, 8)
 
 
  ![](Overview_images/Overview_img62.jpeg) 
-Figure 969: HighlightTextOffset = "10, 5"
+
 
  ![](Overview_images/Overview_img63.jpeg)
-Figure 970: SelectedHighlightTextOffset = "20, 6"
+
 
 ![](Overview_images/Overview_img64.jpeg) 
-Figure 971: SelectedTextOffset = "30, 7"
+
 
  ![](Overview_images/Overview_img65.jpeg) 
-Figure 972: SelectingTextOffset = "40, 8"
+
 
 The methods associated with these properties are given below.
 
-_Table_ _564__: Methods Table_
+
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ResetHighlightTextOffset</td><td>
@@ -137,13 +137,13 @@ Resets the SelectedTextOffset property to it's default value.</td></tr>
 
 The following table lists the text formatting properties of GroupView Control.
 
-_Table_ _565__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Property</td><td>
-Description</td></tr>
+<th>
+GroupView Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 TextSpacing</td><td>
@@ -160,10 +160,10 @@ Specifies whether the GroupView Item's text should be wrapped when the control w
 
 
 ![](Overview_images/Overview_img66.jpeg) 
-Figure 973: Text Underline Illustrated
+
 
  ![](Overview_images/Overview_img67.jpeg) 
-Figure 974: Text Wrap Illustrated
+
 
 {% highlight C# %}  
 
@@ -210,13 +210,13 @@ Me.groupView1.InplaceRenameItem(index)
 
 {% endhighlight %}
 
-_Table_ _566__: Method Table_
+
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 CancelInplaceRenameItemAt</td><td>
@@ -231,13 +231,13 @@ This section describes the color settings available for GroupView.
 
 The color for highlighting Items and text during mouse hover can be specified using the properties given below.
 
-_Table_ _567__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Property</td><td>
-Description</td></tr>
+<th>
+GroupView Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HighlightItemColor</td><td>
@@ -248,7 +248,7 @@ HighlightTextColor</td><td>
 Specifies the color for highlighting the text of the GroupView Items when the mouse is moved over it.</td></tr>
 </table>
 
-> _Note: HighlightText property must be set to 'True' in both the cases._
+N> HighlightText property must be set to 'True' in both the cases._
 
 {% highlight C# %}  
 
@@ -270,18 +270,18 @@ Me.groupView1.HighlightTextColor = System.Drawing.Color.Purple
 
 
 ![](Overview_images/Overview_img69.jpeg) 
-Figure 975: LavendarBlush and Purple Color applied for Highlighting the Item and Text
+
 
 
 The following table lists the methods related to the above properties.
 
-_Table_ _568__: Methods Table_
+
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ResetHighlightItemColor</td><td>
@@ -296,13 +296,13 @@ Resets the HighlightTextColor property to it's default value.</td></tr>
 
 The color for highlighting selected Items and text can be specified using the properties given below.
 
-_Table_ _569__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Property</td><td>
-Description</td></tr>
+<th>
+GroupView Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectedHighlightItemColor</td><td>
@@ -329,7 +329,7 @@ SelectingTextColor</td><td>
 Specifies the color used to draw the text of the GroupView Item being selected.</td></tr>
 </table>
 
-> _Note: HighlightText property must be set to 'True' in all the cases._
+N> HighlightText property must be set to 'True' in all the cases._
 
 {% highlight C# %}  
 
@@ -367,23 +367,23 @@ Me.groupView1.SelectingTextColor = System.Drawing.Color.Red
 
 
 ![](Overview_images/Overview_img71.jpeg) 
-Figure 976: LightBlue and Crimson Color applied for Highlighting the Selected Item and Text during Mouse Hover
+
 
 ![](Overview_images/Overview_img72.jpeg) 
-Figure 977: LightGreen and Blue Color applied for Highlighting the Selected Item and Text
+
 
  ![](Overview_images/Overview_img73.jpeg) 
-Figure 978: PeachPuff and Red Color applied for Highlighting the Item and Text that is Being Selected
+
 
 The following table lists the methods related to the above properties.
 
-_Table_ _570__: Property Table_
+
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ResetSelectedHighlightItemColor</td><td>
@@ -414,13 +414,13 @@ Resets the SelectingTextColor property to the default value.</td></tr>
 
 The following table lists the properties related to the orientation of GroupView Items.
 
-_Table_ _571__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Property</td><td>
-Description</td></tr>
+<th>
+GroupView Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FlowView</td><td>
@@ -471,12 +471,11 @@ The GroupView Items in the GroupView control can be arranged in the horizontal a
 If you want to show the GroupView Item's text in the FlowView mode then set the ShowFlowViewItemText property to 'True'. You can also control the length of the GroupView Item's text in the FlowView mode using the FlowViewItemTextLength property.
 
 ![](Overview_images/Overview_img74.jpeg) 
-Figure 979: FlowView Illustrated
+
 
  ![](Overview_images/Overview_img75.jpeg) 
-Figure 980: ShowFlowViewItemText property set to True
+
 
 The Orientation property determines the direction of display for the GroupView Items. 
 
 ![](Overview_images/Overview_img76.jpeg) 
-Figure 981: Orientation property Illustrated

@@ -57,7 +57,7 @@ The current formula support will let you enter well-formed parenthetical algebra
 
 Code Tables
 
-Table 31: Code tables
+
 
 <table>
 <tr>
@@ -85,7 +85,7 @@ Less Than, Greater Than, Equal, Less Than Or Equal, Greater Than Or Equal, Not E
 
 The supported operands include those listed in the following table. An operand by itself is also a well-formed algebraic expression that can serve as an entire formula in a cell.
 
-Table 32: Supported operands
+
 
 <table>
 <tr>
@@ -563,7 +563,7 @@ ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])
 
 #### Example
 
-Table 33: Address
+
 
 <table>
 <tr>
@@ -752,7 +752,7 @@ AVERAGEIF function finds the average of values in a given array that satisfies t
 
 #### Example
 
-Table 34: Input Table
+
 
 <table>
 <tr>
@@ -826,7 +826,7 @@ AVERAGEIFS function finds the average of values in a given array that satisfies 
 
 #### Example
 
-Table 35: Input Table
+
 
 <table>
 <tr>
@@ -1122,7 +1122,7 @@ Text: Required. String or text from which to remove nonprintable characters.
 
 #### Example 
 
-Table 36: Clean
+
 
 <table>
 <tr>
@@ -1983,7 +1983,7 @@ The given value is required.
 
 Here is the return value of function:
 
-Table 37: Return value of function
+
 
 <table>
 <tr>
@@ -2113,7 +2113,7 @@ FACTDOUBLE function returns the double factorial of a given value. The given val
 
 #### Example:
 
- Table 38: Double factorial
+
 
 <table>
 <tr>
@@ -2483,7 +2483,7 @@ If any value is not an integer, then it will be rounded down.
 
 #### Example:
 
-Table 39: GCD
+
 
 <table>
 <tr>
@@ -2525,7 +2525,7 @@ GEOMEAN(number1, number2, ...), where: number1, number2, ... are arguments for 
 
 Growth enables you to calculate predicted exponential growth by using existing data.  This calculates and returns an array of values used for regression analysis.
 
-Table 40: Method Table
+
 
 <table>
 <tr>
@@ -2689,7 +2689,7 @@ If the value_error is an empty cell, then the function takes the error value as 
 
 #### Example:
 
-Table 41: Error
+
 
 <table>
 <tr>
@@ -2931,7 +2931,7 @@ The ISREF function returns the logical value TRUE if the given value is a refere
 
 #### Example
 
-Table 43: ISREF
+
 
 <table>
 <tr>
@@ -3029,7 +3029,7 @@ Number2 –  ?
 
 ####Example
 
-Table 44: LCM
+
 
 <table>
 <tr>
@@ -3132,7 +3132,7 @@ ISEVEN (value), where: value must be a numeric value. If it is non-integer value
 
 #### Example:
 
-Table 45: ISEVEN
+
 
 <table>
 <tr>
@@ -3167,7 +3167,7 @@ If the given value is nonnumeric, ISODD function returns the ‘#VALUE!’ error
 
 #### Example:
 
-Table 46: ISODD
+
 
 <table>
 <tr>
@@ -3192,7 +3192,7 @@ TRUE</td></tr>
 
 This feature enables you to calculate predicted exponential growth using existing data. This calculates and returns an array of values used for regression analysis.
 
-Table 47: Method Table
+
 
 <table>
 <tr>
@@ -3308,7 +3308,7 @@ Array form: The array form of LOOKUP looks in the first row or column of an arra
 
 #### Example
 
-Table 48: Input Table
+
 
 <table>
 <tr>
@@ -3597,7 +3597,7 @@ The number must be greater than or equal to half the value of multiple.
 
 #### Example:
 
-Table 49: MROUND
+
 
 <table>
 <tr>
@@ -3633,7 +3633,7 @@ MULTINOMIAL(number1, (number2), …)
 
 #### Example:
 
-Table 50: MULTINOMIAL
+
 
 <table>
 <tr>
@@ -3671,7 +3671,7 @@ Numeric values are converted to numeric values. A date value is converted to ser
 
 #### Example:
 
-Table 51: N function
+
 
 <table>
 <tr>
@@ -3712,7 +3712,7 @@ The NA function syntax has no arguments.
 
 #### Example:
 
-Table 532: NA function
+
 
 <table>
 <tr>
@@ -3774,7 +3774,7 @@ end_date: The end of the period to find the working days.
 
 #### Example  
 
-Table 53: Document Conventions
+
 
 <table>
 <tr>
@@ -4334,7 +4334,7 @@ array is the array or cell range of numeric values for which you want the quart
 
 quart indicates which value to return.
 
-Table 54: Quartile
+
 
 <table>
 <tr>
@@ -4381,7 +4381,7 @@ Denominator – Required.
 
 Example
 
-Table 55: Quotient
+
 
 <table>
 <tr>
@@ -4433,7 +4433,7 @@ end_num – is the largest integer.
 
 #### Example
 
-Table 56: Randbetween
+
 
 <table>
 <tr>
@@ -4553,7 +4553,7 @@ number – Required. If number is not an integer, then it will be rounded down.
 
 form – Optional, this value will specify the style of the Roman numeral.
 
-Table 57: Roman
+
 
 <table>
 <tr>
@@ -4588,7 +4588,7 @@ Simplified.</td></tr>
 
 #### Example
 
-Table 58: Roman
+
 
 <table>
 <tr>
@@ -4709,7 +4709,7 @@ start_num: Optional. The starting position for searching the string.
 
 #### Example
 
-Table 59: Search
+
 
 <table>
 <tr>
@@ -4904,7 +4904,7 @@ number – Required.
 
 #### Example
 
-Table 60: SQRTPI
+
 
 <table>
 <tr>
@@ -5084,7 +5084,7 @@ instance_num specifies which occurrence of old_text you want to replace with new
 
 The example may be easier to understand if you copy it to a blank worksheet.
 
-Table 61: Input Data
+
 
 <table>
 <tr>
@@ -5108,7 +5108,7 @@ Quarter 1, 2011</td></tr>
 
 
 
-Table 62: Substitution
+ _Substitution_
 
 <table>
 <tr>
@@ -5139,7 +5139,7 @@ SUBTOTAL (function_Number, ref1, (ref2),...)
 
 function_Number is required. This specifies which function to use in calculating subtotals within a list. Here is the list of functions supported by Syncfusion:
 
-Table 62: Subtotal
+
 
 <table>
 <tr>
@@ -5292,7 +5292,7 @@ other</td></tr>
 </table>
 
 
-Table 64: Input Table
+ _Input Table_
 
 <table>
 <tr>
@@ -5422,7 +5422,7 @@ T( value ), where: value is a value to be checked.
 
 #### Example:
 
-Table 65: T function
+
 
 <table>
 <tr>
@@ -5738,7 +5738,7 @@ WEEKDAY(serial_number, return_type), where: serial_number is a sequential number
 
 return_type is a number that determines the type of return value.
 
-Table 66: Weekday
+
 
 <table>
 <tr>
@@ -5850,7 +5850,7 @@ If the given arguments do not have the logical values, XOR returns the #VALUE! e
 
 #### Example
 
-Table 67: Xor
+
 
 <table>
 <tr>
@@ -5920,7 +5920,7 @@ Essential Grid control supports cross sheet references. A formula cell can be de
 
 
 
-Figure 249: Multiple Grids in Worksheet Format
+
 
 
 
@@ -5932,7 +5932,7 @@ The following screen shot shows multiple grids laid out in the form.
 
 
 
-Figure 250: Form with Multiple Grids
+
 
 
 

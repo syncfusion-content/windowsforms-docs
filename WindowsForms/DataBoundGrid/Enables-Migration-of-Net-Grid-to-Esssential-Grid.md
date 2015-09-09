@@ -16,6 +16,7 @@ The following section contains document that enables users to migrate .Net Grid 
 ## Equivalent Properties available
 
 
+
 <table>
 <tr>
 <th>
@@ -110,6 +111,7 @@ Gets or sets a value indicating whether control's elements are aligned to suppor
 </table>
 
 ## Equivalent Events available
+
 
 
 <table>

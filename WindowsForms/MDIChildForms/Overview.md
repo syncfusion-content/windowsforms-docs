@@ -15,7 +15,7 @@ This section illustrates how to create MDI Child forms using the ChildFrameBarMa
 
 Follow the steps below to create MDI parent form and MDI child form.
 
-Creating MDI ParentForm
+## Creating MDI ParentForm
 
 1. Set up an MDIParent form by setting Form.IsMdiContainer property to true.
 2. Add bar items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. Refer to Creating Menus.

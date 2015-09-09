@@ -17,7 +17,7 @@ This section deals with different types of data binding mechanisms, supported by
 
 ADO.NET is an object-oriented set of libraries that allows you to interact with different types of data sources and different types of databases. It comes in different sets of libraries. These libraries are called DataProviders and they allow a common way to interact with specific data sources or protocols. The following table lists the data providers that are widely used.
 
-_Table 79: Data Binding_
+
 
 <table>
 <tr>
@@ -80,7 +80,7 @@ Grid Grouping Control can be bound to data from XML files. To do this, DataSet o
 
 The following table lists some important methods provided by dataset that allows you to manipulate XML data. In this, the XmlSchema represents the type of data stored in XML file.
 
-Table 80: Methods to manipulate XML
+
 
 <table>
 <tr>

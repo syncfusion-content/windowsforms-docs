@@ -16,7 +16,7 @@ The background settings of the MaskedEditBox control are discussed below.
 
 The background color of the control can be set using the properties given below.
 
-Table 340 : Property Table
+
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Figure 573: Background Color set for MaskedEditBox
 
 The method associated with the above property is given below.
 
-Table 341 : Property Table
+
 
 <table>
 <tr>
@@ -77,7 +77,7 @@ The foreground settings of the MaskedEditBox control are discussed below.
 
 The foreground color of the control can be set using the properties given below.
 
-Table 342 : Property Table
+
 
 <table>
 <tr>

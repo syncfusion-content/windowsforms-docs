@@ -15,7 +15,7 @@ The events of ComboBoxAdv present in the MultiColumnComboBox.
 
 The MultiColumnComboBox fires different events for the different user interaction scenarios. The occurrence and order of the events are tabulated below: 
 
-Table 228 : Events Table
+
 
 <table>
 <tr>
@@ -93,8 +93,8 @@ No</td></tr>
 
 You can refer the following topics which gives you an idea on implementing the above events.
 
-* How to display multiple members in a MultiColumnComboBox?
-* How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?
+* [How to display multiple members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-display-multiple-members-in-a-multicolumncombobox)
+* [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-change-the-back-color-and-text-color-of-the-selected-item)
 
 ## SelectedValueChanged Event
 
@@ -155,4 +155,4 @@ End Sub
 
 ## SelectedIndexChanged Event
 
-This event is illustrated in How to retrieve the columns other than Display and Value members in a MultiColumnComboBox? topic.
+This event is illustrated in [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-change-the-back-color-and-text-color-of-the-selected-item) topic.

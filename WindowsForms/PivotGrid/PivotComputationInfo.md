@@ -13,7 +13,7 @@ This class holds the information needed for calculations that appear in PivotGri
 
 
 
-_Table_ _7_: _Properties Table for PivotComputationInfo_
+
 
 <table>
 <tr>
@@ -96,9 +96,7 @@ Me.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo)
 
 The PivotComputationInfo property replaces each format specification in a specified string with the textual equivalent of a corresponding value.
 
-<table>
-<tr>
-<td>
+
 {% highlight c# %}
 
 // Decimal Format
@@ -111,7 +109,7 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo()
 
 ' Decimal Format
 Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
-With {.CalculationName="Total", .FieldName="Quantity", .SummaryType= SummaryType.Count, .Format="0.00"}</td></tr>
+With {.CalculationName="Total", .FieldName="Quantity", .SummaryType= SummaryType.Count, .Format="0.00"}
 
 {% endhighlight %}
 
@@ -121,7 +119,7 @@ The following table lists the different types of format settings.
 
 
 
-_Table_ _8_: _Types of format settings_
+
 
 <table>
 <tr>

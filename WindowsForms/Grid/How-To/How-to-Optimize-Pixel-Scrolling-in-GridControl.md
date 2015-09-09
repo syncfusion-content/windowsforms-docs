@@ -20,9 +20,9 @@ Follow the steps that are given below to do this.
    * VScrollPixelPosToRowIndex(int pixelPos, out int rowIndex, out int pixelDelta)
    * GetVScrollPixelHeight()
 
-   Example
+   ### Example
 
-
+   ~~~ cs
 
 
 
@@ -94,10 +94,11 @@ Follow the steps that are given below to do this.
 
 				}
 
-				
+   ~~~
+   {:.prettyprint}   
 
 
-
+   ~~~ vbnet
 				Public Class DerivedGridControl : Inherits GridControl
 
 
@@ -183,51 +184,55 @@ Follow the steps that are given below to do this.
 				   End Sub
 
 				End Class
-
+   ~~~
+   {:.prettyprint}
 
 
 2. Assign the New custom control to the GridControl.
 
-   Example
+   ### Example
 
 
 
-
+   ~~~ cs
 				//Sets the derived GridControl to the grid.
 
 				this.gridControl1 = new VscrollOptimization.DerivedGridControl();
 
 
-
+   ~~~
+   {:.prettyprint}
 				
 
-
+   ~~~ vbnet
 
 				'Sets the derived GridControl to the grid.
 
 				Me.GridControl1 = New VscrollOptimization.DerivedGridControl
-
-
+   ~~~ 
+   {:.prettyprint}
+   
 
 3. Set the VScrollPixel property to TRUE.
 
-   Example
+   ### Example
 
 
-
+   ~~~ cs
 
 			 //Enables pixel scrolling.
 
 			 this.gridControl1.VScrollPixel = true;
 
 
-
+   ~~~
+   {:.prettyprint}
 			
-
+   ~~~ vbnet
 
 			 'Enables pixel scrolling.
  
 			 Me.GridControl1.VScrollPixel = True
 
-
+   ~~~ 
    {:.prettyprint}

@@ -82,4 +82,4 @@ Me.groupViewItem3.Text = "Desktop"
 
 
  ![](Overview_images/Overview_img87.jpeg) 
-Figure 989: GroupView in the Client Region of GroupBarItem0
+

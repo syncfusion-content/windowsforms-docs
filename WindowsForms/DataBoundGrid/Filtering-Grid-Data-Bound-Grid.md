@@ -16,6 +16,7 @@ Assume that you are binding a grid to DataTable. In this case, you will have to 
 Here are some samples.
 
 
+
 <table>
 <tr>
 <th>
@@ -135,6 +136,5 @@ filterBar.WireGrid(gridDataBoundGrid1)
 
 
 N> For more details, refer to the following browser sample:
-
-> <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo
+   <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo
 

@@ -15,19 +15,19 @@ designer by following the below given steps.
 
 1. Drag and drop the MaskedEditBox control onto your form from the controls toolbox.
 
-![](MaskedEditBox-images/MarkedEditBox-img2.png)
-Figure : MaskedEditBox in Toolbox
+   ![](MaskedEditBox-images/MarkedEditBox-img2.png)
+
 
 
 2. Set the MaskedEditBox.Mask property for the control. This property controls the behavior of the control at run time. If no 
-mask is specified, the control will behave the same as a standard Windows Forms TextBox control.
+   mask is specified, the control will behave the same as a standard Windows Forms TextBox control.
 
-![](MaskedEditBox-images/MarkedEditBox-img3.png)
-Figure : MaskedEditBox created Through Designer
+   ![](MaskedEditBox-images/MarkedEditBox-img3.png)
+
 
 Examples of some common masks are,
 
-Table 326 : Masks Table
+
 
 <table>
 <tr>
@@ -63,81 +63,88 @@ The MaskedEditBox control can be used programmatically through code as detailed 
 
 1. Include the required namespace.
 
-{% highlight C# %}  
+   ~~~ cs 
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
-{% endhighlight %}
+   ~~~ 
+   {:.prettyprint}
 
 
 
-{% highlight vbnet %} 
+   ~~~  vbnet
 
-Imports Syncfusion.Windows.Forms.Tools
+		Imports Syncfusion.Windows.Forms.Tools
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 2. Create an instance of the MaskedEditBox control.
 
-{% highlight C# %} 
+   ~~~ cs
 
-private Syncfusion.Windows.Forms.Tools.MaskedEditBox maskedEditBox1;
+		private Syncfusion.Windows.Forms.Tools.MaskedEditBox maskedEditBox1;
 
-this.maskedEditBox1=new MaskedEditBox();
+		this.maskedEditBox1=new MaskedEditBox();
 
- {% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
-{% highlight vbnet %} 
+   ~~~ vbnet
 
-Private maskedEditBox1 As Syncfusion.Windows.Forms.Tools.MaskedEditBox
+		Private maskedEditBox1 As Syncfusion.Windows.Forms.Tools.MaskedEditBox
 
-Me.maskedEditBox1 = New MaskedEditBox()
+		Me.maskedEditBox1 = New MaskedEditBox()
 
-{% endhighlight %}
-
+   ~~~
+   {:.prettyprint}
+   
 3. Set MaskedEditBox.Mask property.
 
-{% highlight C# %} 
+   ~~~ cs
 
-// The mask string.
+		// The mask string.
 
-this.maskedEditBox1.Mask = ">?<????????????";
+		this.maskedEditBox1.Mask = ">?<????????????";
 
-this.maskedEditBox1.Location = new System.Drawing.Point(70, 29);
+		this.maskedEditBox1.Location = new System.Drawing.Point(70, 29);
 
- {% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
-{% highlight vbnet %} 
+   ~~~ vbnet
 
-' The mask string.
+		' The mask string.
 
-Me.maskedEditBox1.Mask = ">?<????????????"
+		Me.maskedEditBox1.Mask = ">?<????????????"
 
-Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
+		Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 4. Add the MaskedEditBox control to the form.
 
-{% highlight C# %}  
+   ~~~ cs
 
-this.Controls.Add(this.maskedEditBox1);
+		this.Controls.Add(this.maskedEditBox1);
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
-{% highlight vbnet %} 
+   ~~~ vbnet
 
-Me.Controls.Add(Me.maskedEditBox1)
+			Me.Controls.Add(Me.maskedEditBox1)
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 ![](MaskedEditBox-images/MarkedEditBox-img4.png)
 
-Figure 562: MaskedEditBox created Through Code

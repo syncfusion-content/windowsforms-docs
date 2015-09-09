@@ -13,18 +13,18 @@ HTMLUI control comes with a rich set of events to help the application developer
 
 The events executed by the HTMLUI control are as follows:
 
-* LinkClicked Event
-* LoadStarted Event
-* LoadFinished Event
-* LoadError Event
-* PreRenderDocument Event
-* ShowTitleChanged Event
-* TitleChanged Event
-* Border3DStyleChanged Event
-* BorderColorChanged Event
-* BorderSingleChanged Event
-* BorderSidesChanged Event
-* BorderStyleChanged Event
+* [LinkClicked Event](#linkclicked-event)
+* [LoadStarted Event](#loadstarted-event)
+* [LoadFinished Event](#loadfinished-event)
+* [LoadError Event](#loaderror-event)
+* [PreRenderDocument Event](#prerenderdocument-event)
+* [ShowTitleChanged Event](#showtitlechanged-event)
+* [TitleChanged Event](#titlechanged-event)
+* [Border3DStyleChanged Event](#border3dstylechanged-event)
+* [BorderColorChanged Event](#bordercolorchanged-event)
+* [BorderSingleChanged Event](#bordersinglechanged-event)
+* [BorderSidesChanged Event](#bordersideschanged-event)
+* [BorderStyleChanged Event](#borderstylechanged-event)
 
 
 
@@ -367,16 +367,16 @@ Private Sub htmluiControl1_TitleChanged(ByVal sender As Object, ByVal e As Value
 MessageBox.Show("Title Changed")
 
 End Sub
+{% endhighlight %}
 
 
-
-Border3DStyleChanged Event
+## Border3DStyleChanged Event
 
 This event is handled when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
 
 The event handler receives an argument of type EventArgs.
 
-{% endhighlight %}
+
 
 {% highlight c# %}
 

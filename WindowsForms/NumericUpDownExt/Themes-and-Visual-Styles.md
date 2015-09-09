@@ -11,11 +11,11 @@ documentation: ug
 
 This section discusses themes and visual styles settings of the NumericUpDownExt control.
 
-Themes
+## Themes
 
 Themes define the look and feel of the NumericUpDownExt control. They can be set using the property given below.
 
-Table 364 : Property Table
+
 
 <table>
 <tr>
@@ -47,11 +47,11 @@ Me.numericUpDownExt1.ThemesEnabled = True
 
 
 
-### Visual Styles
+## Visual Styles
 
 Visual Styles enhance the appearance of the NumericUpDownExt control and can be set using the property given below.
 
-Table 365 : Property Table
+
 
 <table>
 <tr>

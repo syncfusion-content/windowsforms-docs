@@ -16,4 +16,3 @@ of interfaces such as lists with large / small images, regular / flow view, butt
 highlighting / underlining.
 
  ![](Overview_images/Overview_img49.jpeg)
- Figure : GroupView Styles

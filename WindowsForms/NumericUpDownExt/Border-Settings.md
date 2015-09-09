@@ -13,7 +13,7 @@ This section discusses the Border Settings of the NumericUpDownExt control.
 
 Color and Styles can be applied to the border of the NumericUpDownExt control as discussed below.
 
-_Table_ _361_ : _Property Table_
+
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ Me.numericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 We can display a themed border around the NumericUpDownExt control. This can be done using the property given below.
 
-Table 362 : Property Table
+
 
 <table>
 <tr>
@@ -86,7 +86,7 @@ ThemedBorder</td><td>
 Specifies whether or not you want themed border around the control when themes are enabled.The ThemesEnabled property must be set to 'True'.</td></tr>
 </table>
 
-N> Refer [Themes and Visual Styles](http://docs.syncfusion.com/windowsforms/tools/EditorsPackage/ButtonControls/ButtonAdv/Buttonadvappearnce#visualstyles ) topic to know about the ThemesEnabled property.
+N> Refer [Themes and Visual Styles](/windowsforms/numericupdownext/border-settings) topic to know about the ThemesEnabled property.
 
 {% highlight c# %}
 

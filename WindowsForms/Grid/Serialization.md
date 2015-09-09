@@ -19,7 +19,6 @@ Export to Word is one of the most common functionalities that is required in the
 
 Here is a list of properties offered by GridWordConverter. By setting these properties, you will be able to choose the elements you need to export.
 
-_Table 68: Properties_
 
 <table>
 <tr>
@@ -426,7 +425,7 @@ This feature allows you to access and modify PDF document attributes while expor
 
 Events
 
-_Table69: Export Event table_
+
 
 <table>
 <tr>
@@ -499,7 +498,7 @@ Essential Grid provides image export support for the Grid, GridDataBoundGrid, an
 
 This feature allows you to control the image export in the grid-to-Excel converter. This property will affect the grid when ExportStyle is true.
 
-_Table 70: Properties_
+
 
 <table>
 <tr>

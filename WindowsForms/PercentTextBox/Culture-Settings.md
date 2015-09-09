@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses the Culture settings of the PercentTextBox control.
 
-Table 288: Property Table
+
 
 <table>
 <tr>

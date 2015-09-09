@@ -27,11 +27,11 @@ using the SubItems Collection Editor. There are also properties to modify the ap
 This dialog can be accessed using the context menu of the control or the command available at the bottom of the 
 property grid. The context menu also lets you add columns directly using "Add Column".
 
-Customizing the columns using Columns Editor
+### Customizing the columns using Columns Editor
 
 The below properties can be used to customize the columns.
 
-_Table 526: Property Table_
+
 
 <table>
 <tr>
@@ -138,9 +138,9 @@ Sets the right image for the column.</td></tr>
 
 N> The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers._
 
-Painting the Column Area
+### Painting the Column Area
 
-_Table 527: Property Table_
+
 
 <table>
 <tr>
@@ -190,7 +190,6 @@ treeColumnAdv3.Background = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img3.jpeg) 
 
-Figure : Background for Column Headers and Area Background for the MultiColumns
 
 
 N> The appearance of the columns can also be controlled using the standard column styles settings._ _This overrides the above settings.
@@ -204,19 +203,19 @@ You can add SubItems for the nodes using the SubItems Collection available in No
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img5.jpeg) 
 
-Figure : Accessing the SubItems Collection Dialog Box
+
 
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img6.jpeg) 
 
-Figure : Setting the text, BorderSingle and BorderStyle Property for the SubItem
+
 
 
 ### Properties for Customizing the SubItems
 
 The below properties lets you customize the subitems using the SubItems Collection dialog.
 
-_Table 528: Property Table_
+
 
 <table>
 <tr>
@@ -278,17 +277,17 @@ The below image displays subitems with similar settings in the property grid abo
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img7.jpeg) 
 
-Figure 890: SubItems with Italic Style; Solid, FixedSingle Border Style
+
 
 
 StyleSettings for all the sub Items can be specified using TreeNodeAdvSubItemStyleInfo class. It is a default base 
 style which can be accessed in the BaseStyles Collection Editor. 
-See [SubItem Styles](/windowsforms/tools/multicolumntreeview/subitem-styles).
+See [SubItem Styles](/windowsforms/multicolumntreeview/styles-architecture#subitem-styles).
 
 {% seealso %}
 
-[Column Styles](/windowsforms/tools/multicolumntreeview/column-styles)
+[Column Styles](/windowsforms/multicolumntreeview/styles-architecture#column-styles)
 
-[MultiColumnTreeView Appearance](/windowsforms/tools/multicolumntreeviewappearance)
+[MultiColumnTreeView Appearance](/windowsforms/multicolumntreeview/multicolumntreeview-appearance)
 
 {% endseealso %}

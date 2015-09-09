@@ -23,7 +23,7 @@ HTMLUI is helpful in creating cool UI applications like Chat windows. It can be 
 
 
 
-_Figure_ _1: Essential HTML UI_
+
 
 
 
@@ -66,9 +66,9 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify}}
 
-{{ '_Note:_' | markdownify}}</td><td>
+
+{{ 'Note:' | markdownify}}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>
@@ -171,9 +171,9 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/htmlui/overview>' | markdownify }}  (Navigate to the HTMLUI for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+Online{{ '<http://docs.syncfusion.com/windowsforms/htmlui/overview>' | markdownify }}  (Navigate to the HTMLUI for Windows Forms User Guide.)> 
 
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }} Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+{{ 'Note: Click Download as PDF to access a PDF version.' | markdownify }} Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>

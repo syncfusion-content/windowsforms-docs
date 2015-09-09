@@ -13,7 +13,7 @@ This section describes the image options available for GroupView.
 To add images to the GroupView, ImageListcontrol must be added to the form with images. ImageList control containing large or small images can be set using the properties given below.
 
 
- _Note: If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list._
+N> If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list._
 
 <table>
 <tr>
@@ -57,15 +57,15 @@ Me.groupView1.SmallImageList = Me.imageList1
 
  {% endhighlight %}
  
-> _Note : Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
+N> Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
 
  ![](Overview_images/Overview_img79.jpeg) 
-Figure 982: GroupView Items displaying Small Images instead of Icons
+
 
 ![](Overview_images/Overview_img80.jpeg) 
-Figure 983: GroupView Items displaying Large Images instead of Icons
 
-#### Highlighting Images 
+
+## Highlighting Images 
 
 We can highlight the image of the GroupView Item when the mouse is moved over it by setting the HighlightImage property to 'True'.
 
@@ -84,19 +84,19 @@ Me.groupView1.HighLightImage = True
 {% endhighlight %}
 
 ![](Overview_images/Overview_img81.jpeg) 
-Figure 984: Highlighting Images Illustrated
 
-#### Image Offset Settings
+
+## Image Offset Settings
 
 The following properties are used to set the image offset for the GroupView Items.
 
-_Table_ _573_: _ Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Property</td><td>
-Description</td></tr>
+<th>
+GroupView Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectedImageOffset</td><td>
@@ -115,7 +115,7 @@ HighlightImageOffset</td><td>
 Gets / sets the image offset for the highlighted GroupView Item. </td></tr>
 </table>
 
-> _Note: HighlightImage property must be set to 'True' in all the cases._
+N> HighlightImage property must be set to 'True' in all the cases._
 
 {% highlight C# %}  
 
@@ -145,13 +145,13 @@ Me.groupView1.SelectedHighlightImageOffset = New System.Drawing.Point(5, 5)
 
 The following table lists the methods related to the above properties.
 
-_Table_ _574_: _ Property Table_
+
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ResetSelectedImageOffset</td><td>
@@ -170,7 +170,7 @@ ResetHighlightImageOffset</td><td>
 Resets the HighlightImageOffset property to it's default value.</td></tr>
 </table>
 
-#### Image Spacing
+## Image Spacing
 
 We can provide spacing between the highlighted edge of a GroupView Item and the image by setting the ImageSpacing property to integer values. 
 
@@ -194,4 +194,3 @@ Me.groupView1.ImageSpacing = 7
 
 
 ![](Overview_images/Overview_img83.jpeg) 
-Figure 985: GroupView with ImageSpacing = "7"

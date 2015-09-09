@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-The GridControl.ColStyles collection contains GridStyleInfo objects that provide column style settings for the GridControl. Changing the properties on a particular column style will affect all the cells in that row (unless a particular cell has a more specific style setting, like a cell style, applied).
+The GridControl.ColStyles collection contains [GridStyleInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) objects that provide column style settings for the GridControl. Changing the properties on a particular column style will affect all the cells in that row (unless a particular cell has a more specific style setting, like a [cell style](/WindowsForms/Grid/Cell-Style-Architecture#properties), applied).
 
 
 ### Example

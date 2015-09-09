@@ -223,7 +223,7 @@ EMF ONLY, EMF PLUS and EMF PLUS DUAL formats are supported by Essential PDF thro
 
 The following are the public properties of the PdfMetafileLayoutFormat class.
 
-_Table8: List of public properties of PdfMetafileLayoutFormat class_
+
 
 <table>
 <tr>

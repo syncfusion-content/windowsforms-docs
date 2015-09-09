@@ -19,7 +19,7 @@ documentation: ug
 
 The merge behavior is also controlled by the MergeType property, as follows.
 
-_Table_ _509_: _Property Table_
+
 
 <table>
 <tr>

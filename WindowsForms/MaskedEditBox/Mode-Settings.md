@@ -12,7 +12,7 @@ This section discusses the mode settings of the MaskedEditBox control.
 
 MaskedEditBox control uses the following modes.
 
-Table 329 : Property Table
+
 
 <table>
 <tr>
@@ -33,33 +33,33 @@ UsageMode</td><td>
 Specifies if the MaskedEditBox control is to behave as a numeric control.</td></tr>
 </table>
 
-#### Clip mode
+## Clip mode
 
 At runtime, we can copy / paste the entries of MaskedEditBox. The entries that are copied can be specified whether to include literals using the ClipMode property.
 
 Setting the ClipMode property of the MaskedEditBox to 'ExcludeLiterals', will get rid of the literals from the text that is returned by the control. The default value is set to 'IncludeLiterals'.
 
-#### InputMode
+## InputMode
 
 The different modes of the input can be determined by the InputMode property.
 
 Setting the InputMode to 'Normal', allows the user to work in insert mode and the INSERT key is not allowed. In OvertypeOnly mode, the INSERT key will not have any effect.
 
-#### UsageMode
+## UsageMode
 
 The UsageMode property modifies the behavior of the MaskedEditBox as detailed below.
 
-#### Normal mode
+## Normal mode
 
 When the UsageMode is set to 'Normal', there is no change in the behavior. This is the default mode for a MaskedEditBox control.
 
-#### Numeric Mode
+## Numeric Mode
 
 When the UsageMode is set to 'Numeric', the control creates internally two data groups and one decimal separator character in the mask. These groups are created such that the first group holds the mask value before the decimal separator and the second group holds the mask value after the decimal separator. For example, let us specify the mask as follows:
 
 ###.####
 
-The first group will contain the value for the first 3 ### characters of the mask (the number group) and the second group (the decimal group) will contain the 5 characters (.####). The default group alignment for the number group will be right and the alignment for the decimal group will be left. Refer to the information on [DataGroups](http://docs.syncfusion.com/windowsforms/tools) for more information on how this works.
+The first group will contain the value for the first 3 ### characters of the mask (the number group) and the second group (the decimal group) will contain the 5 characters (.####). The default group alignment for the number group will be right and the alignment for the decimal group will be left. Refer to the information on [DataGroups](/windowsforms/introduction/overview) for more information on how this works.
 
 The MaxValue and MinValue properties are enforced only when the UsageMode is set to 'Numeric'.
 

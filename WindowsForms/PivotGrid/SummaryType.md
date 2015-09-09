@@ -13,7 +13,7 @@ SummaryType determines the type of field summary such as count, sum, average, et
 
 
 
-_Table_ _9_: _Summary Type Table_
+
 
 <table>
 <tr>

@@ -10,7 +10,7 @@ documentation: ug
 
 MonthCalendarAdv triggers events whenever the date is selected and changed. The most widely used events are discussed as follows.
 
-Table176: Events Table
+
 
 <table>
 <tr>
@@ -39,7 +39,7 @@ DateCellQueryInfo</td><td>
 It can be handled to provide custom formatting for calendar cells. The event handler receives an argument of type DateCellQueryInfoEventArgs. The following are the event properties associated with DateCellQueryInfoEventArgs argument.</td></tr>
 <tr>
 <td>
-DateSelected</td><td>
+{{'[DateSelected](/windowsforms/monthcalendaradv/faq/how-to-identify-the-current-selected-date-at-run-time)'|markdownify}}</td><td>
 It occurs when a date is selected from the calendar. It can be handled to retrieve the selected date of the MonthCalendarAdv. The event handler receives an argument of type EventArgs.</td></tr>
 <tr>
 <td>
@@ -77,7 +77,7 @@ This event is triggered when mouse hover on the date and to assign SuperToolTip 
 
 This event is handled to provide custom formatting for calendar cells. 
 
-Table177: Members Table
+
 
 <table>
 <tr>
@@ -253,7 +253,7 @@ How to customize the appearance of the diagonal columns?
 
 This event is handled when mouse hover on the calendar cells and to assign SuperToolTip for calender cells.
 
-Table178: Members Table
+
 
 <table>
 <tr>

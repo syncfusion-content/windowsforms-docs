@@ -20,7 +20,7 @@ A Sample which demonstrates the GridLayout is available in the below sample inst
 
 {% seealso %}
 
-Creating a Simple Layout, 
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)
 
 {% endseealso %}
 
@@ -30,7 +30,7 @@ Creating a Simple Layout,
 
 The GridLayout simply divides the available space into a number of rows and columns based on the number of Child controls. The number of rows and columns can be specified using the properties given below.
 
-_Table454: Property Table_
+
 
 <table>
 <tr>
@@ -76,7 +76,7 @@ Me.gridLayout1.Columns = 1
 
 The horizontal and the vertical gap between the Child controls can be set using the properties given below.
 
-_Table455: Property Table_
+
 
 <table>
 <tr>
@@ -123,7 +123,7 @@ N> To include some margin space along the borders, refer_ Margin Settings
 
 {% seealso %}
 
-GridLayout - Configuring Child Controls, Rearranging the Controls laid out by GridLayout
+[GridLayout - Configuring Child Controls](#configuring-child-controls), [Rearranging the Controls laid out by GridLayout](#rearranging-the-controls-laid-out-by-gridlayout)
 
 {% endseealso %}
 
@@ -135,7 +135,7 @@ The following settings can be used to configure the Child controls of the GridLa
 
 To prevent a Child control from being laid out using the GridLayout Manager, the below given property can be used.
 
-_Table456: Property Table_
+
 
 <table>
 <tr>
@@ -151,7 +151,7 @@ Specifies whether the Child control should participate in the GridLayout. The de
 
 The methods associated with the above property are given below.
 
-_Table457: Methods Table_
+
 
 <table>
 <tr>
@@ -202,6 +202,6 @@ The Child controls of the GridLayout can be rearranged by dragging-and-dropping 
 
 {% seealso %}
 
-Rearranging the Controls laid out by FlowLayout, Rearranging the Controls laid out by GridBagLayout
+[Rearranging the Controls laid out by FlowLayout](/windowsforms/layoutmanagers/flowlayout#rearranging-the-controls-laid-out-by-flowlayout), [Rearranging the Controls laid out by GridBagLayout](/windowsforms/layoutmanagers/gridbaglayout#rearranging-the-controls-laid-out-by-gridbaglayout)
 
 {% endseealso %}

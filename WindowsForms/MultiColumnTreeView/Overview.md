@@ -10,7 +10,7 @@ documentation: ug
 
 MultiColumnTreeView is an advanced treeview control with multiple columns. This control displays the contents in the form of tree with additional columns displaying related data for the tree nodes. With its robust features, it gives a visually appealing tree structure. It supports almost all the features of the treeview control like settings images, check box and option buttons, help text capabilities, Gutter space, Indent Space, advanced drag-and-drop UI support, context-menu association, gradient backgrounds and multiple border styles, etc., 
 
-MultiColumnTreeView comes with complete design-time support. The Styles Architecture for the control lets the users to define styles for nodes at different levels of the tree and columns style for individual columns.
+MultiColumnTreeView comes with complete design-time support. The [Styles Architecture](/windowsforms/multicolumntreeview/styles-architecture) for the control lets the users to define styles for nodes at different levels of the tree and columns style for individual columns.
 
 ## Features
 

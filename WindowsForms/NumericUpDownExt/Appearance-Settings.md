@@ -9,15 +9,16 @@ documentation: ug
 
 # Appearance Settings
 
-[Background Settings](/windowsforms/tools/editorspackage/editorscontrols/numericupdownext/border-settings)
+## Background Settings
 
 The Background settings of the NumericUpDownExt control are discussed below.
+
 
 ### Background Color
 
 The background color of the control can be set using the properties given below.
 
-Table 354 : Property Table
+
 
 <table>
 <tr>
@@ -51,15 +52,15 @@ Me.numericUpDownExt1.BackColor = System.Drawing.Color.Aquamarine
 
 
 
-[Foreground Settings](/windowsforms/tools/editorspackage/editorscontrols/numericupdownext/foreground-settings)
+## Foreground Settings
 
 The foreground settings of the NumericUpDownExt control are discussed below.
 
-#### Foreground Color
+### Foreground Color
 
 The foreground color of the control can be set using the properties given below.
 
-Table 355 : Property Table
+
 
 <table>
 <tr>
@@ -93,7 +94,7 @@ Me.numericUpDownExt1.ForeColor = System.Drawing.Color.DodgerBlue
 
 
 
-[Applying Foreground Color to Negative Values](//docs.syncfusion.com/windowsforms/tools)
+### Applying Foreground Color to Negative Values
 
 It is a good behavior in a NumericUpDownExt control to indicate negative values using a separate color. The IntegerTextBox and DoubleTextBox controls also exhibit the same behavior.
 

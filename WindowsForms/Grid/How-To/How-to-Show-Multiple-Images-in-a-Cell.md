@@ -18,22 +18,24 @@ To show multiple Images in a cell, you need to handle CellDrawn Event. Follow th
    Example
 
 
-
+   ~~~ cs
 
 
 				//Sets the CellType to Image Type.
 
 				this.gridControl1[3,3].CellType = GridCellTypeName.Image;
 
-
+   ~~~
+   {:.prettyprint}
 
 				
-
+   ~~~ vbnet
 
 				'Sets the CellType to Image Type.
 
 				Me.gridControl1(3,3).CellType = GridCellTypeName.Image
-
+   ~~~
+   {:.prettyprint}
 
 
 2. In the CellDrawn EventHandler, draw Combinedbitmap using DrawImage function.
@@ -42,7 +44,7 @@ To show multiple Images in a cell, you need to handle CellDrawn Event. Follow th
 
 
 
-
+   ~~~ cs
 
 				private void gridControl1_CellDrawn(object sender, Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs e)
 
@@ -63,10 +65,11 @@ To show multiple Images in a cell, you need to handle CellDrawn Event. Follow th
 				}
 
 
-
+   ~~~
+   {:.prettyprint}
 				
 
-
+   ~~~ vbent
 
 				Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs)
 
@@ -79,7 +82,7 @@ To show multiple Images in a cell, you need to handle CellDrawn Event. Follow th
 						   End If
 
 				End Sub
-				
+   ~~~				
    {:.prettyprint}
 
 

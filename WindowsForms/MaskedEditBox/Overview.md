@@ -14,7 +14,7 @@ control, Phone Number edit control and Social Security edit control.
 
 
 ![](MaskedEditBox-images/MarkedEditBox-img1.png)
-Figure 559: MaskedEditBox Control
+
 
 If you define an input mask using the Mask property, each character position in the MaskedEditBox control maps to either a 
 placeholder of a specified type or a literal character. Literal characters, or literals, can give visual cues about the type of 

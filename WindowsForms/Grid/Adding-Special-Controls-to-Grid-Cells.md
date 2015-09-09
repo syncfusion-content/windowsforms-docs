@@ -13,7 +13,7 @@ GridStyleInfo property, CellType, lets you add special controls such as a check 
 
 Following table lists the cell types that are supported in Essential Grid.
 
-Table 16: Cell types supported in Essential Grid
+
 
 <table>
 <tr>
@@ -96,7 +96,7 @@ Check Box cell type displays a check box in a grid cell. The check box has three
 
 The following GridStyleInfo properties can be used to control the functioning of a check box.
 
-Table 17: GridStyleInfo properties
+
 
 <table>
 <tr>
@@ -246,7 +246,7 @@ gridControl1(rowIndex, colIndex).CellValue = Color.Aqua
 
 When you add a combo box to a grid cell, it will enable you to choose from a drop-down list of choices. You can populate this list in several ways by setting appropriate GridStyleInfo properties. Other properties restrict the choices to those items listed in the drop down, and enable auto completion of possible matches as the user types new items.
 
-Table 18: GridStyleInfo properties
+
 
 <table>
 <tr>
@@ -394,7 +394,7 @@ Essential Grid provides AutoComplete support for combo box cells. AutoComplete f
 
 You can choose the suggestion instead of typing the entire content.
 
-Table 19: Properties
+
 
 <table>
 <tr>
@@ -706,7 +706,7 @@ gridControl1(rowIndex, colIndex).CellValue = "= (A1+A2) / 2"
 
 GridListControl cell type allows display of drop-down list that can contain multiple columns as an image. It uses DataSource, DisplayMember and ValueMember properties to control what is shown in the multiple columns. DataSource member is generally stored in parent style, and this member is then shared among grid cells which might use DisplayMember and ValueMember properties to customize their look if needed.
 
-Table 20: GridStyleInfor Properties
+
 
 <table>
 <tr>
@@ -1218,7 +1218,6 @@ For other code samples, refer to the samples in the following location: _<Instal
 
 To display a Push Button in a grid cell, use the PushButton cell type. To catch and handle a user, click a button, and you can add GridControl.CellButtonClicked event handler. The event arguments passed into your handler will include the row and column of the click. GridStyleInfo properties that control the behavior of a Push Button cell are listed in the following table.
 
-Table 21: GridStyleInfo properties
 
 <table>
 <tr>

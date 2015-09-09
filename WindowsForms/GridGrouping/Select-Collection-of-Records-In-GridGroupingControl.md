@@ -16,7 +16,7 @@ Essential GridGroupingControl now supports two methods for selecting records in 
 
 
 
-Selecting All
+## Selecting All
 
 The following code illustrates how to select all record in grid table.
 
@@ -36,7 +36,7 @@ When the code runs, selecting all record is bound to Select All button.
 
 
 
-Selecting Specified Records
+## Selecting Specified Records
 
 The following code illustrates how to select specified records.
 

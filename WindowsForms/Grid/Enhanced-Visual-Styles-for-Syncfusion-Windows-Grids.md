@@ -17,7 +17,7 @@ By default, EnableLegacyStyle property value is true.
 
 You can use this control to apply skin for the entire control including the scrollbars, combo box, drop-down container, filter, and so on.
 
- _Table 141: Properties Table_
+ 
 
 <table>
 <tr>

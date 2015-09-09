@@ -15,13 +15,13 @@ This tutorial will show you how easy it is to get started using Essential HTMLUI
 
 
 
-### Creating an HTML Display Application
+## Creating an HTML Display Application
 
 Lesson 1 will show you how to load HTML from any source and display it as an HTML display application (like a web browser or an HTML enabled email application). 
 
 
 
-### Creating an HTML Layout
+## Creating an HTML Layout
 
 In Lesson 2 you will learn how to lay out your user interfaces using HTMLUI. You will also learn how to let the users interact with the various HTML elements from within your application code.
 

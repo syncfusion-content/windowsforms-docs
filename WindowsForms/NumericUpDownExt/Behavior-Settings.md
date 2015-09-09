@@ -11,11 +11,11 @@ documentation: ug
 
 The behavior settings of the NumericUpDownExt control are discussed below.
 
-### Intercept Arrow Keys
+## Intercept Arrow Keys
 
 The arrow keys can be used to select values using the below given property.
 
-Table 356 : Property Table
+
 
 <table>
 <tr>
@@ -49,7 +49,7 @@ Me.numericUpDownExt1.InterceptArrowKeys = True
 
 The maximum length of the text can be set using the property given below.
 
-Table 357 : Property Table
+
 
 <table>
 <tr>
@@ -77,11 +77,10 @@ Me.numericUpDownExt1.MaxLength = 32800
 
 {% endhighlight %}
 
-### ReadOnly
+## ReadOnly
 
 The ReadOnly mode can be enabled for the NumericUpDownExt control using the below given property.
 
-Table358 : Property Table
 
 <table>
 <tr>

@@ -14,11 +14,11 @@ documentation: ug
 
 The background settings of the IntegerTextBox control are discussed below.
 
-Background Color
+### Background Color
 
 The background color of the control can be set using the properties given below.
 
-Table 272 : Property Table
+
 
 <table>
 <tr>
@@ -69,11 +69,11 @@ Me.integerTextBox1.ReadOnly = True
 
 
 
-> Note: The ReadOnly property must be set to 'True' for the above setting to take effect.
+N> The ReadOnly property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
 
-Table 273 : Methods Table
+
 
 <table>
 <tr>
@@ -95,11 +95,11 @@ Resets the ReadOnlyBackColor property to it's default value.</td></tr>
 
 The foreground settings of the IntegerTextBox control are discussed below.
 
-Foreground Color
+### Foreground Color
 
 The foreground color of the control can be set using the properties given below.
 
-Table 274 : Property Table
+
 
 <table>
 <tr>
@@ -148,7 +148,7 @@ Me.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab
 
 The methods associated with the above properties are given below.
 
-Table 275 : Methods Table
+
 
 <table>
 <tr>

@@ -30,7 +30,7 @@ The following screen shot shows the CommandBar in the designer.
 
 
 
-* Drag and drop XPToolBar control on to the CommandBar and add bar items to the XPToolBar through BarItem Collection Editor. 
+* Drag and drop [XPToolBar](/windowsforms/xptoolbar/overview) control on to the CommandBar and add bar items to the XPToolBar through BarItem Collection Editor. 
 * The following screen shot shows the XPToolBar with bar items hosted on CommandBar. This command Bar can be hosted to any target within the form by just dragging and dropping.
 
 ![](Overview_images/Overview_img106.jpeg) 
@@ -78,7 +78,7 @@ Me.commandBar2.Controls.Add(Me.trackBarEx1)
 
 {% seealso %}
 
-CommandBar Properties
+[CommandBar Properties](#commandbar-properties)
 
 {% endseealso %}
 
@@ -86,7 +86,7 @@ CommandBar Properties
 
 #### Appearance Properties
 
-_Table497: Property Table_
+
 
 <table>
 <tr>
@@ -130,7 +130,7 @@ Sets the control's text.</td></tr>
 
 #### Behavior Properties
 
-_Table498: Property Table_
+
 
 <table>
 <tr>
@@ -177,7 +177,7 @@ Specifies whether the command bar should display the text that is set through Co
 
 #### Hide / Show
 
-_Table499: Property Table_
+
 
 <table>
 <tr>
@@ -207,9 +207,9 @@ Shows / Hides the drag gripper.</td></tr>
 
 
 
-Popup for the DropDown
+#### Popup for the DropDown
 
-_Table500: Property Table_
+
 
 <table>
 <tr>
@@ -284,9 +284,9 @@ Me.controlBar1.ControlBarCaptionHeight = 30
 
 {% seealso %}
 
-ControlBar Properties
+[ControlBar Properties](#controlbar-properties)
 
-Adding Different Pages To Control Bar
+[Adding Different Pages To Control Bar](#adding-different-pages-to-control-bar)
 
 How to dock the ControlBars to any edge of the host form?
 
@@ -296,7 +296,7 @@ How to dock the ControlBars to any edge of the host form?
 
 #### Appearance Properties
 
-_Table501: Property Table_
+
 
 <table>
 <tr>
@@ -335,7 +335,7 @@ Sets the control's text.</td></tr>
 
 #### Behavior Properties
 
-_Table502: Property Table_
+
 
 <table>
 <tr>
@@ -370,7 +370,7 @@ Disables floating ability of the CommandBar.</td></tr>
 
 #### Hide / Show
 
-_Table503: Property Table_
+
 
 <table>
 <tr>
@@ -393,7 +393,7 @@ Shows / Hides the drag gripper.</td></tr>
 
 #### Popup for the DropDown
 
-_Table504: Property Table_
+
 
 <table>
 <tr>
@@ -411,9 +411,9 @@ Indicates the Popup menu on clicking the dropdown button.</td></tr>
 </table>
 {% seealso %}
 
-ControlBar Client Controls, 
+[ControlBar Client Controls](#controlbar-client-controls)
 
-Adding Different Pages To Control Bar
+[Adding Different Pages To Control Bar](#adding-different-pages-to-control-bar)
 
 How to dock the ControlBars to any edge of the host form?
 
@@ -478,7 +478,7 @@ The resultant form is as follows.
 
 
 
-At Run Time
+#### At Run Time
 
 Include the following code snippet in the Click event of a BarItem to view the next page of a card.
 
@@ -505,9 +505,9 @@ A sample which demonstrates adding control bar is available in the below sample 
 
 {% seealso %}
 
-ControlBar Client Controls, 
+[ControlBar Client Controls](#controlbar-client-controls)
 
-Adding Different Pages To Control Bar
+[Adding Different Pages To Control Bar](#adding-different-pages-to-control-bar)
 
 How to dock the ControlBars to any edge of the host form
 

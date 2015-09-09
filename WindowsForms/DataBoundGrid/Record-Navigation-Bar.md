@@ -25,11 +25,11 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
 
 1. Step 1: Create an SqlDataAdapter and connect to the Customers table of NorthWind database. 
 
-   ![](Record-Navigation-Bar_images/Record-Navigation-Bar_img3.jpeg) 
+   
 
    N> A DataSet is generated.
 
-1. Step 2: Drag Grid Record Navigation control onto the form.
+2. Step 2: Drag Grid Record Navigation control onto the form.
 
    ![](Record-Navigation-Bar_images/Record-Navigation-Bar_img4.png) 
 
@@ -37,7 +37,7 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
 
 
 
-2. Step 3: Drag Grid DataBound Grid onto the Grid Record Navigation control.
+3. Step 3: Drag Grid DataBound Grid onto the Grid Record Navigation control.
 
    ![](Record-Navigation-Bar_images/Record-Navigation-Bar_img5.png) 
 

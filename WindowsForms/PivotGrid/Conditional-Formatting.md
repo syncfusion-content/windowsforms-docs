@@ -15,7 +15,7 @@ Conditional formatting changes the appearance of a specified cell range or pivot
 
 ### Properties
 
-_Table_ _15_: _Conditional Formatting Property Table_
+
 
 <table>
 <tr>

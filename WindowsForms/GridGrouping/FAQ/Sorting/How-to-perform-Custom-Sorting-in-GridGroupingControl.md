@@ -112,7 +112,7 @@ The following are the steps to disable default sorting and use custom sorting:
 
 
 
-		In the preceding code example CustomSorting_()_ is the user defined method. In this method, the values from the grid are added to an ArrayList and sorted, and then the sorted values are stored back into the grid. The following code illustrates this:
+   In the preceding code example CustomSorting_()_ is the user defined method. In this method, the values from the grid are added to an ArrayList and sorted, and then the sorted values are stored back into the grid. The following code illustrates this:
 
    ~~~ cs
 

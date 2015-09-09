@@ -57,7 +57,7 @@ Me.pivotChart1.LegendAlignment = Syncfusion.Windows.Forms.Chart.ChartAlignment.C
 
 The legend positioning can be affected in the following ways.
 
-_Table_ _3_: _Legend positioning_
+
 
 <table>
 <tr>

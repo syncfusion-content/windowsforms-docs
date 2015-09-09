@@ -112,59 +112,59 @@ The following are the various HTML elements supported by Essential HTMLUI.
 <table>
 <tr>
 <td>
-Anchor Element</td><td>
-Body Element</td><td>
-Bold Element</td><td>
-BR Element</td><td>
-Code Element</td><td>
-Custom Element</td><td>
-Div Element</td></tr>
+{{'[Anchor Element](#a---anchor-element)'| markdownify}}</td><td>
+{{'[Body Element](#body-element)'| markdownify}}</td><td>
+{{'[Bold Element](#b---bold-element)'| markdownify}}</td><td>
+{{'[BR Element](#br---break-element)'| markdownify}}</td><td>
+{{'[Code Element](#code-element)'| markdownify}}</td><td>
+{{'[Custom Element](#custom-element)'| markdownify}}</td><td>
+{{'[Div Element](#div---division-element)'| markdownify}}</td></tr>
 <tr>
 <td>
-EM Element</td><td>
-Font Element</td><td>
-Form Element</td><td>
-H1 - H6 Element</td><td>
-Head Element</td><td>
-HR Element</td><td>
-HTML Element</td></tr>
+{{'[EM Element](#em---emphasize-element)'| markdownify}}</td><td>
+{{'[Font Element](#font-element)'| markdownify}}</td><td>
+{{'[Form Element](#form-element)'| markdownify}}</td><td>
+{{'[H1 - H6 Element](#h1---h6-header-elements)'| markdownify}}</td><td>
+{{'[Head Element](#head-element)'| markdownify}}</td><td>
+{{'[HR Element](#hr---horizontal-rule-element)'| markdownify}}</td><td>
+{{'[HTML Element](#html-element)'| markdownify}}</td></tr>
 <tr>
 <td>
-I Element</td><td>
-IMG Element</td><td>
-Input Element</td><td>
-LI Element</td><td>
-Link Element</td><td>
-OL Element</td><td>
-P Element</td></tr>
+{{'[I Element](#i---italics-element)'| markdownify}}</td><td>
+{{'[IMG Element](#img---image-element)'| markdownify}}</td><td>
+{{'[Input Element](#input-element)'| markdownify}}</td><td>
+{{'[LI Element](li---list-element)'| markdownify}}</td><td>
+{{'[Link Element](#link-element)'| markdownify}}</td><td>
+{{'[OL Element](#ol---ordered-list-element)'| markdownify}}</td><td>
+{{'[P Element](#p---paragraph-element)'| markdownify}}</td></tr>
 <tr>
 <td>
-PRE Element</td><td>
-Script Element</td><td>
-Select Element</td><td>
-Span Element</td><td>
-Strong Element</td><td>
-Style Element</td><td>
-Table Element</td></tr>
+{{'[PRE Element](#pre---preformatted-element)'| markdownify}}</td><td>
+{{'[Script Element](#script-element)'| markdownify}}</td><td>
+{{'[Select Element](#select-element)'| markdownify}}</td><td>
+{{'[Span Element](#span-element)'| markdownify}}</td><td>
+{{'[Strong Element](#strong-element)'| markdownify}}</td><td>
+{{'[Style Element](#style-element)'| markdownify}}</td><td>
+{{'[Table Element](#table-element)'| markdownify}}</td></tr>
 <tr>
 <td>
-TD Element</td><td>
-TextArea Element</td><td>
-TH Element</td><td>
-TR Element</td><td>
-U Element</td><td>
-UL Element</td><td>
+{{'[TD Element](#td---table-cell-element)'| markdownify}}</td><td>
+{{'[TextArea Element](#textarea-element)'| markdownify}}</td><td>
+{{'[TH Element](#th---table-head-element)'| markdownify}}</td><td>
+{{'[TR Element](#tr---table-row-element)'| markdownify}}</td><td>
+{{'[U Element](#u---underline-element)'| markdownify}}</td><td>
+{{'[UL Element](#ul---unordered-list-element)'| markdownify}}</td><td>
 </td></tr>
 </table>
 
 
 ## A - Anchor Element
 
-The A element is used in creating links to another document or in creating bookmarks within the same document. This element is defined by the <a> tag in the HTML code. The AElementImpl class contains the properties and methods related to this element. Some of the important properties and methods are listed below:
+The A element is used in creating links to another document or in creating bookmarks within the same document. This element is defined by the &lt;a&gt; tag in the HTML code. The AElementImpl class contains the properties and methods related to this element. Some of the important properties and methods are listed below:
 
 
 
-#### Properties
+### Properties
 
 * IsVisited:Gets a bool value (either true / false) indicating whether the link is visited or not. This may be used in changing the color of the links visited.
 * HoverFormat:Gets the format of the A element when the user hovers the mouse pointer over the link.
@@ -208,7 +208,7 @@ Private Me.label1.Text=Constants.vbLf & "A(IsVisited and VisitedFormat):" & Me.a
 
 {% endhighlight %}
 
-#### Methods
+### Methods
 
 * ResetVisited: Excludes the element from the list containing the visited links.
 
@@ -228,7 +228,7 @@ The BR element is used for inserting a line break after a particular line. This 
 
 
 
-#### Properties
+### Properties
 
 * IsVisible: Gets / sets a Boolean value to indicate whether the control is shown / hidden.
 
@@ -380,7 +380,7 @@ The INPUT element is used for getting input from the user. It can be a text box,
 
 
 
-#### Properties
+### Properties
 
 * UserControl: Gets / sets the user control instance for the particular input element declared by the user
 
@@ -437,7 +437,7 @@ The LINK element is used to define links to other documents, style sheets, and s
 
 
 
-#### Properties
+### Properties
 
 
 
@@ -471,7 +471,7 @@ Me.label1.Text = Constants.vbLf & "Link(IsVisible):" & Me.link.IsVisible.ToStrin
 
 {% endhighlight %}
 
-#### Methods
+### Methods
 
 
 
@@ -499,7 +499,7 @@ The SCRIPT element is used to define scripts to the HTML document. This makes th
 
 
 
-Properties
+### Properties
 
 
 
@@ -535,7 +535,7 @@ Private Me.label1.Text = Constants.vbLf & "Script(IsVisible):" & Me.script.IsVis
 
 {% endhighlight %}
 
-#### Methods
+### Methods
 
 
 
@@ -565,7 +565,7 @@ The SELECT element is used to define a drop-down list. The user can specify the 
 
 
 
-#### Properties
+### Properties
 
 
 
@@ -601,7 +601,7 @@ Me.label1.Text = Constants.vbLf & "Select(UserControl):" & Me.Select.UserControl
 
 {% endhighlight %}
 
-#### Methods
+### Methods
 
 * InfillFromXMLElement: Detects the type of control and creates the particular control
 
@@ -621,7 +621,7 @@ The STYLE element is used to implement custom style in a document. It occurs ins
 
 
 
-#### Properties
+### Properties
 
 
 
@@ -671,7 +671,7 @@ The TABLE element is used to create tables in a document. The table element cont
 
 
 
-#### Properties
+### Properties
 
 * ColsCount: Gets / sets the number of columns present in the table
 * RowsCount: Gets / sets the number of rows present in the table
@@ -718,7 +718,7 @@ The TEXTAREA element is used to define a multiline textbox, allowing the user to
 
 
 
-#### Properties
+### Properties
 
 
 
@@ -762,7 +762,7 @@ The TR element is used to create rows inside a table. The TRElementImpl class co
 
 
 
-#### Properties
+### Properties
 
 
 

@@ -14,7 +14,7 @@ TaskWindow can be accessed using smart tag as follows.
 
  ![](DesignTime-Features_images/DesignTime-Features_img1.jpeg) 
  
- Figure : MultiColumnTreeView Tasks Window
+ 
 
 
 The above window lets you open the NodeCollection Editor, modify the appearance settings, assign imagelists, enable 
@@ -34,7 +34,7 @@ You can access the below options using this context menu at the design time.
 
  ![](DesignTime-Features_images/DesignTime-Features_img2.jpeg) 
  
- Figure : Design-Time Context Menu
+ 
  
  
 ## Editors for the MultiColumnTreeView
@@ -48,7 +48,7 @@ This editor lets you add nodes, SubItems for the nodes and customize them using 
 
  ![](DesignTime-Features_images/DesignTime-Features_img3.jpeg) 
  
- Figure : TreeViewAdv NodeCollection Editor
+
 
 
 This editor can be accessed using the below options.
@@ -69,7 +69,7 @@ This lets you add columns and customize those columns appearance with style sett
 
  ![](DesignTime-Features_images/DesignTime-Features_img5.jpeg) 
   
- Figure : Columns Editor
+
 
 
 This editor can be accessed using the following options.
@@ -84,7 +84,7 @@ This editor lets you add subitems to the nodes and customize the subitems using 
 
  ![](DesignTime-Features_images/DesignTime-Features_img6.jpeg) 
  
- Figure : TreeNodeAdvSubItem Collection Editor
+ 
 
 
 ### Styles Editor
@@ -93,7 +93,7 @@ This editor comes with default styles and also lets you add new style and apply 
 
 ![](DesignTime-Features_images/DesignTime-Features_img7.jpeg) 
 
-Figure : BaseStyles Collection Editor
+
 
 
 This editor can be accessed using the below options.

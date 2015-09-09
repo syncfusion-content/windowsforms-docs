@@ -64,11 +64,11 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 For More Information Refer:
 
-Deploying Essential Grouping
+[Deploying Essential Grouping](#deploying-essential-grouping)
 
 ## Deploying Essential Grouping
 
-We have now created a platform application in the previous topic (Creating Platform Application). This section will guide you to deploy Essential Grouping in those applications under the following topics:
+We have now created a platform application in the previous topic [Creating Platform Application](#creating-platform-application). This section will guide you to deploy Essential Grouping in those applications under the following topics:
 
 * Windows / WPF-Step-by-step procedure to deploy Grouping in Windows / WPF applications
 * ASP.NET-Step-by-step procedure to deploy Grouping in web application
@@ -76,7 +76,7 @@ We have now created a platform application in the previous topic (Creating Platf
 ### Windows / WPF
 
 
-Now, you have created a Windows / WPF application (refer Creating Platform Application). This section will guide you to deploy Essential Grouping in a Windows/WPF applications.
+Now, you have created a Windows / WPF application refer [Creating Platform Application](#creating-platform-application). This section will guide you to deploy Essential Grouping in a Windows/WPF applications.
 
 
 
@@ -90,7 +90,7 @@ The following steps will guide you to deploy Essential Grouping:
 4. Now you may see that the Syncfusion assemblies referenced in the project are copied to the output directory along with the application executable (bin/debug/).
 5. Deploy the exe along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application exe in the target machine.
  
-> Note: For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._
+N> For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._
 
 Dlls needed for deployment
 
@@ -111,7 +111,7 @@ The following steps will guide you to deploy Essential Grouping in an ASP.NET ap
 1. Marking the Application directory-The appropriate directory, usually where the aspx files are stored, must be marked as Application in IIS.
 2. Syncfusion Assemblies-The Syncfusion assemblies need to be in the bin folder that is beside the aspx files.
  
-> Note: They can also be in the GAC, in which case, they should be referenced in Web.config file.
+N> They can also be in the GAC, in which case, they should be referenced in Web.config file.
 
 
 
@@ -140,7 +140,7 @@ The following steps will guide you to deploy Essential Grouping in an ASP.NET ap
 
 {% endhighlight %}
 
-> Note: The version numbers in the above references will vary depending on the version you are linking to.
+N> The version numbers in the above references will vary depending on the version you are linking to.
 
 Data Files-If you have .xml, .mdb, or other data files, ensure that they have sufficient security permission. Authenticated Users should have full control over the files and the directories in order to give ASP.NET code, enough permissions to open the file during runtime.
 
@@ -148,7 +148,7 @@ Refer to the document in the following path, for step by step process of Syncfus
 
 [http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
 
-> Note: Application with Essential Grouping needs the following dependent assemblies for deployment.
+N> Application with Essential Grouping needs the following dependent assemblies for deployment.
 
 * Syncfusion.Shared.Base.dll
 * Syncfusion.Shared.Web.dll

@@ -384,7 +384,7 @@ The ID Class Selectors are defined like the name class selectors. Instead of spe
 
 
 
-{% highlight c# %}
+{% highlight html %}
 
 
 

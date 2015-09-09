@@ -17,7 +17,7 @@ In this lesson, you will start working with the Grouping.Engine object to see ho
 
 You will now look at the property that holds the schema information that is associated with the data, i.e., the grouping.Engine.TableDescriptor property. For example, the TableDescriptor.Columns property holds a collection of ColumnDescriptor objects that define the schema information on the columns in the data. 
 
-> Note: Here, the columns correspond to the public properties in our sample MyObject class, A, B, C, and D.
+N> Here, the columns correspond to the public properties in our sample MyObject class, A, B, C, and D.
 
 
 
@@ -95,7 +95,7 @@ We will now continue using the same sample created in the previous section and a
 
 As noted previously, the grouping.TableDescriptor is the property that maintains the schema information for the data source. Here is a table showing some collections in the TableDescriptor that you will be using as the lessons continue.
 
-_Table_ _5_: TableDescriptor Property
+
 
 <table>
 <tr>

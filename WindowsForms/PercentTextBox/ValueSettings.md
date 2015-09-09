@@ -12,7 +12,7 @@ documentation: ug
 
 The various values of the PercentTextBox control and their settings are given below.
 
-Table 284: Property Table
+
 
 <table>
 <tr>
@@ -85,7 +85,7 @@ Me.percentTextBox1.DoubleValue = 0.05
 
 There are various settings that can be applied to the PercentTextBox control, when the value of the control is set to 'Null'. These settings are illustrated below.
 
-Table 285: Property Table
+
 
 <table>
 <tr>
@@ -139,7 +139,7 @@ Me.percentTextBox1.AllowNull = True
 
 The minimum and maximum values of the IntegerTextBox can be set using the below given properties.
 
-Table 286: Property Table
+
 
 <table>
 <tr>
@@ -190,7 +190,7 @@ Me.percentTextBox1.EnforceMinMaxDuringValidating = True
 
 The methods associated with the above properties are given below.
 
-Table 287: Methods Table
+
 
 <table>
 <tr>

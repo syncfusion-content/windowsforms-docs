@@ -239,7 +239,7 @@ The following GridRowColIndexChangedEventArgs properties provide information spe
 
 The event occurs before and after the status of the current record is changed. Event handler receives an argument of type CurrentRecordContextChangeEventArgs containing data related to this event.
 
-_Table 110: Context change_ 
+ 
 
 <table>
 <tr>
@@ -305,7 +305,7 @@ End Sub
 
 This event occurs when a new group is added to the table after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
-_Table 111: Group add event_
+
 
 <table>
 <tr>
@@ -358,7 +358,7 @@ End Sub
 
 This occurs before a group is collapsed. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
-_Table 112: Group collapsing event_
+
 
 <table>
 <tr>
@@ -420,7 +420,7 @@ End Sub
 
 This occurs when a group is collapsed. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
-_Table 113: Group collapsed event_
+
 
 <table>
 <tr>
@@ -480,7 +480,7 @@ End Sub
 
 This occurs before a group is expanded. The event handler receives an argument of type GroupEventArgs containing the data related to this event.
 
-_Table 114: Group expanding event_
+
 
 <table>
 <tr>
@@ -549,7 +549,7 @@ End Sub
 
 This occurs when a group is expanded.The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
-_Table 115: Group expanded event_
+
 
 <table>
 <tr>
@@ -610,7 +610,7 @@ End Sub
 
 This event occurs before a group is removed after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
-_Table 116: Group removing event_
+
 
 <table>
 <tr>
@@ -671,7 +671,7 @@ End Sub
 
 This occurs when a summary has been marked dirty. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
-_Table 117: Invalidated event_
+
 
 <table>
 <tr>
@@ -744,7 +744,7 @@ End Sub
 
 This occurs before a record with nested table is expanded. The event handler receives an argument of type RecordEventArgs containing data related to this event.
 
-_Table 118: Properties_
+
 
 <table>
 <tr>
@@ -801,7 +801,7 @@ End Sub
 
 This occurs when RecordFieldCell cell's value is changed and before Record.SetValue is returned. The event handler receives an argument of type RecordValueChangingEventArgs containing data related to this event.
 
-_Table 119: Record value changing event properties_
+
 
 <table>
 <tr>
@@ -866,7 +866,7 @@ End Sub
 
 This occurs when RecordFieldCell cell's value is changed and after Record.SetValue is returned. The event handler receives an argument of type RecordValueChangedEventArgs containing data related to this event.
 
-_Table 120: Record value changed properties_
+
 
 <table>
 <tr>
@@ -939,7 +939,7 @@ End Sub
 
 This occurs before the records for a group is sorted. The event handler receives an argument of type GroupEventArgs containing data related to this event.
 
-_Table 121: Sorting properties_
+
 
 <table>
 <tr>
@@ -986,7 +986,7 @@ End Sub
 
 This occurs after the records for a group is sorted. The event handler receives an argument of type  GroupEventArgs containing data related to this event.
 
-_Table 122: Properties_
+
 
 <table>
 <tr>
@@ -1033,7 +1033,7 @@ End Sub
 
 This occurs before the table processes System.ComponentModel.IBindingList.ListChanged event of attached source list. The event handler receives an argument of type TableListChangedEventArgs containing data related to this event.
 
-_Table 123: Source list changed properties_
+
 
 <table>
 <tr>
@@ -1257,7 +1257,7 @@ AddHandler Me.gridGroupingControl1.TableControlCellButtonClicked, AddressOf Tabl
 
 The following GridCellButtonClickedEventArgs properties provide information specific to this event. 
 
-_Table 124: Cell button clicked properties_
+
 
 <table>
 <tr>
@@ -1333,7 +1333,7 @@ AddHandler Me.gridGroupingControl1.TableControlCellClick, AddressOf TableControl
 
 The following GridCellClickEventArgs properties provide information specific to this event. 
 
-_Table 125: Grid cell click properties_
+
 
 <table>
 <tr>
@@ -1415,7 +1415,7 @@ AddHandler Me.gridGroupingControl1.TableControlCellDrawn, AddressOf TableControl
 
 The following GridTableControlCellDrawnEventArgs properties provide information specific to this event. 
 
-_Table 126: Grid table control properties_
+
 
 <table>
 <tr>
@@ -1504,7 +1504,7 @@ AddHandler Me.gridGroupingControl1.TableControlCellDoubleClick, AddressOf TableC
 
 The following GridCellClickEventArgs properties provide information specific to this event. 
 
-_Table 127: Click event properties_
+
 
 <table>
 <tr>
@@ -1954,7 +1954,7 @@ Private Me.gridGroupingControl1.TableControlMouseDown+= New GridTableControlMous
 
 The following GridTableControlMouseEventArgs properties provide information specific to this event.
 
-_Table 128: Mouse event properties_
+
 
 <table>
 <tr>
@@ -2068,7 +2068,7 @@ Private Me.gridGroupingControl1.TableControlMouseUp+= New MouseEventHandler(Tabl
 
 The following MouseEventArgs properties provide information specific to this event.
 
-_Table 129: Mouse up event_
+
 
 <table>
 <tr>
@@ -2227,11 +2227,11 @@ The event handler receives an argument of type KeyEventArgs containing data rela
 
 Two Selection events for filter bar, namely FilterBarSelectedItemChanging and FilterBarSelectedItemChanged are implemented for Essential Grid. These events enable you to cancel or customize filter value. This support is not available in MS-DataGridView.
 
-Use Case Scenarios
+### Use Case Scenarios
 
 FilterBarSelectedItemChanging__event__enables you to customize or cancel filter value for specific column. FilterBarSelectedItemChanged__event enables you to retrieve selected column information, selected index, and selected text.
 
-_Table_ _9__0: Event Table_
+
 
 <table>
 <tr>
@@ -2242,12 +2242,12 @@ ARGUMENTS </th><th>
 TYPE </th><th>
 REFERENCE LINKS </th></tr>
 <tr>
-<th>
-FilterBarSelectedItemChanging</th><th>
-This event will be triggered while filtering a column.  This can be canceled. Selected index or selected text can be modified as required.  </th><th>
- public FilterBarSelectedItemChangingEventArgs( GridColumnDescriptor column, int selectedIndex, string selectedText)</th><th>
-Event</th><th>
-NA </th></tr>
+<td>
+FilterBarSelectedItemChanging</td><td>
+This event will be triggered while filtering a column.  This can be canceled. Selected index or selected text can be modified as required.  </td><td>
+ public FilterBarSelectedItemChangingEventArgs( GridColumnDescriptor column, int selectedIndex, string selectedText)</td><td>
+Event</td><td>
+NA </td></tr>
 <tr>
 <th>
 FilterBarSelectedItemChanged</th><th>
@@ -2256,7 +2256,8 @@ This event will be triggered after a column is filtered.    Selected column, sel
 Event </th><th>
 NA</th></tr>
 </table>
-Triggering Selection Events
+
+### Triggering Selection Events
 
 Refer to the following code to trigger the Selection events:  
 

@@ -14,7 +14,7 @@ documentation: ug
 
 The minimum and maximum date selectable by the calendar can be specified using MinValue and MaxValue properties. (This is similar to MinDate and MaxDate of windows MonthCalendar control).
 
-Table173: Property Table
+
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ N> It is possible to set color for the highlighted date. See_ Text Settings _top
 
 It is possible to enable multiple selection of the dates at run time. The below properties enables multiple selection. 
 
-Table174: Property Table
+
 
 <table>
 <tr>
@@ -184,7 +184,7 @@ Me.monthCalendarAdv1.MonthImageList = Me.imageList1
 
 The below property sets the color for the inactive months.
 
-Table175: Property Table
+
 
 <table>
 <tr>
@@ -424,4 +424,4 @@ End Class
 
 ## ToolTips
 
-Tooltips can be set using DateCellQueryInfo event.
+Tooltips can be set using [DateCellQueryInfo event](/windowsforms/monthcalendaradv/event-handling#datecellqueryinfo-event).

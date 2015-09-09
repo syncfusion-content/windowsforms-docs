@@ -27,15 +27,19 @@ The following code snippets show how to create a PivotGrid and specify cell sele
 
 // Instantiating PivotGridControl
 PivotGridControl pivotGridControl1 = new PivotGridControl();
+
 // Adding PivotRows
 pivotGridControl1.PivotRows.Add(new PivotItem { FieldHeader = "Product" });
 pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "Date" });
+
 // Adding PivotColumns
 pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "Country" });
 pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "State" });
+
 // Adding PivotCalculations
 pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName="Amount" , Format="C"});
 pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
+
 // Enabling cell selection
 this.pivotGridControl1.AllowSelection = false;
 
@@ -44,17 +48,21 @@ this.pivotGridControl1.AllowSelection = false;
 
 ' Instantiating PivotGridControl
 Dim pivotGridControl1 As PivotGridControl = New PivotGridControl()
+
 ' Adding PivotRowspivotGridControl1.PivotRows.Add(New PivotItem With {.FieldHeader = "Product"})
 pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "Date"})
+
 ' Adding PivotColumns
 pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "Country"})
 pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "State"})
+
 ' Adding PivotCalculations
 pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName="Amount", .Format="C"})
 pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##0"})
+
 ' Enabling cell selection
 Me.pivotGridControl1.AllowSelection = False
 
 {% endhighlight %}
 
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png)
+![](Cell-Selection_images/Cell-Selection_img1.png)

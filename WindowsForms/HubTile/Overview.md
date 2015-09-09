@@ -13,7 +13,7 @@ HubTile is a content control that functions as live tiles in an application for 
 
  ![loadimage](Overview_images/Overview_img1.png) 
  
-Figure : HubTile
+
 
 
 ## Key Features

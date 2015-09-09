@@ -14,7 +14,7 @@ This section discusses the below appearance related topics.
 
 The BarStyle property of the bar object lets users customize certain behavior and look-and-feel of the toolbar, such as visibility, whether it should be drawn in multi-line mode or whether the toolbar should be treated like a status bar that always gets shown at the bottom of the form.
 
-_Table510: Property Table_
+
 
 <table>
 <tr>
@@ -91,14 +91,14 @@ Essential studio comes with three classes to provide custom colors for the Menus
 * Office2007Colors - The Syncfusion.Windows.Forms.Office2007Colors class is used when the Visual Styles is set as Office2007.
 
 
-#### MenuColors
+### MenuColors
 
 
 The Syncfusion.Windows.Forms.Tools.XPMenus.MenuColors class includes static properties that allow you to change them to get custom background colors for the different portions of the menus and toolbars. Some of the properties include MainMenuBackColor, CommandBarBackColor and StatusBarBackColor.
 
 The following methods of MenuColors class can be invoked to set the custom color.
 
-_Table511: Methods Table_
+
 
 <table>
 <tr>
@@ -220,11 +220,11 @@ A sample which demonstrates setting colors for Menus using MenuColors class is a
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
-#### Office2003Colors
+### Office2003Colors
 
 The following table lists the members exposed by Office2003Colors class.
 
-_Table512: Members Table_
+
 
 <table>
 <tr>
@@ -370,11 +370,11 @@ Gets / sets the color of the separator line between the bar items.</td></tr>
 </table>
 
 
-#### Office2007 Colors
+### Office2007 Colors
 
 The following table lists the members exposed by Office2007Colors class.
 
-_Table513: Members Table_
+
 
 <table>
 <tr>
@@ -729,7 +729,7 @@ A sample which demonstrates setting colors for Menus using Office2007Colors clas
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
-### Visual Styles
+## Visual Styles
 
 The Visual appearance of the menus can be defined by using various Visual Styles and Themes.
 
@@ -743,7 +743,7 @@ Themes define the look and feel of the whole menu and it also changes the behavi
 
 
 
-#### Supported GUI styles
+### Supported GUI styles
 
 The supported Visual styles are:
 
@@ -831,7 +831,7 @@ Me.mainFrameBarManager1.Office2007Theme = Office2007ColorScheme.Blue
 
 
 
-#### Custom Colors
+### Custom Colors
 
 We can also apply custom colors to the MainFrameBarManager by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
@@ -859,7 +859,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Crimson)
 ![](Overview_images/Overview_img167.jpeg)
 
 
-### Customize Dialog Appearance
+## Customize Dialog Appearance
 
 Foreground and Background Settings
 
@@ -914,7 +914,7 @@ mainFrameBarManager1.CustomizationDialog.Font = New Font("Arial", 8, System.Draw
 
 
 
-#### Size Settings
+### Size Settings
 
 Size and the client size of the Customize Dialog can be controlled using the Size property as follows.
 
@@ -946,13 +946,13 @@ Me.mainFrameBarManager1.CustomizationDialog.ClientSize = New Size(600, 700)
 {% endhighlight  %}
 
 
-### Multiline Support for ParentBarItem in MainFrameBarManager
+## Multiline Support for ParentBarItem in MainFrameBarManager
 
 You can customize and display the ParentBarItem text in Multiline format by using “MultiLine” property. 
 
 API Details:
 
-_Table514: Property Table_
+
 
 <table>
 <tr>
@@ -989,9 +989,14 @@ The following code example illustrates how to set MultiLine property in C# and V
 
 The following screenshot shows how the ParentBarItem is displayed in Multiline.
 
-![](Overview_images/Overview_img169.png) 
+![](Overview_images/Overview_img169.png)
 
-#### Horizontal Alignment:
+## Text Orientation in ParentBarItem of MainFrameBarManager
+
+You can align the ParentBarItem text in vertical or horizontal manner by using “Orientation” property.
+ 
+
+### Horizontal Alignment:
 
 The following image illustrates how the parent bar items are displayed in horizontal alignment.
 
@@ -1002,7 +1007,7 @@ The following image illustrates how the parent bar items are displayed in horizo
 ![Horizontal](Overview_images/Overview_img171.png) 
 
 
-#### Vertical Alignment:
+### Vertical Alignment:
 
 The following image illustrates how the parent bar items are displayed in vertical alignment.
 
@@ -1010,9 +1015,9 @@ The following image illustrates how the parent bar items are displayed in vertic
 
 
 
-## API Details:
+### API Details:
 
-_Table515: Property Table_
+
 
 <table>
 <tr>

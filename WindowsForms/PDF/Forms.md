@@ -832,7 +832,7 @@ document.Close()
 
 The following table lists some of the properties of the TextBoxField.
 
-Table 24: Property Table
+
 
 <table>
 <tr>

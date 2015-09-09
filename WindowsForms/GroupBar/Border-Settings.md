@@ -8,17 +8,17 @@ documentation: ug
 ---
 # Border Settings 
 
-GroupBar Settings
+## GroupBar Settings
 
 The border style of the GroupBar can be set using the below given property.
 
-_Table_ _552__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
@@ -41,19 +41,19 @@ Me.groupBar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 {% endhighlight %}
 
  ![](Overview_images/Overview_img32.jpeg) 
-Figure 943: Border is drawn with BorderStyle = "Fixed3D"
 
-#### GroupBar Item Client Area Border Settings
+
+## GroupBar Item Client Area Border Settings
 
 The border of the GroupBar Item client area can be set and customized using the following properties.
 
-_Table_ _553__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DrawClientBorder</td><td>
@@ -84,4 +84,4 @@ Me.groupBarItem2.ClientBorderColors = New Syncfusion.Windows.Forms.Tools.BorderC
 {% endhighlight %}
 
  ![](Overview_images/Overview_img33.jpeg)
-Figure 944:GroupBar with ClientBorderColors = "Red, Aqua, Lime, Magenta"
+

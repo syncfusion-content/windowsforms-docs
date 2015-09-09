@@ -17,7 +17,7 @@ Grid control is a powerful control that is implemented by using a unique Styles 
 
 Cell attributes are properties that affect the appearance and behavior of grid cells. They include features like font used in the cell or the color of the cell. Following table lists the cell attributes.
 
-_Table 10: Cell attributes_
+
 
 <table>
 <tr>
@@ -167,7 +167,6 @@ The following path holds the Dashboard sample where Cell Style properties are im
 
 Each cell may contain specialized control such as Text Box, Check Box, or Combo Box, and this attribute of the cell is referred to as its Cell Type. Following table lists all the default cell types.
 
-_Table 11: Cell Types_
 
 <table>
 <tr>
@@ -256,7 +255,7 @@ Displays XHTML formatted text.</td></tr>
 
 Essential Grid comes with control to meet user requirements such as a grid that is bound to an ADO.NET data source, a grid that is virtually bound to the arbitrary collections, or a grid that maintains its own data storage. Following table lists the Data Binding features supported by the Grid control.
 
-_Table 12: Data Binding features_
+
 
 <table>
 <tr>
@@ -325,7 +324,7 @@ Displays a foreign key table in a drop-down.</td></tr>
 
 Essential Grid supports MS Office features like dynamic splitters and undo/redo. Following table lists the available features.
 
-_Table 13: MS Office features_
+
 
 <table>
 <tr>
@@ -370,7 +369,7 @@ Has a tabbed workbook format.</td></tr>
 
 Essential Grid offers support for many functionalities such as OLE drag-and-drop, and resizing of rows and columns through property settings and special event handlers. Following table lists such features.
 
-_Table 14: Essential Grid features_
+
 
 <table>
 <tr>
@@ -524,7 +523,7 @@ Changes the appearance of the mouse pointer.</td></tr>
 
 Other features include Excel Export and versioned Serialization support. Following table lists the features.
 
-_Table 15: Features of Essential Grid_
+
 
 <table>
 <tr>

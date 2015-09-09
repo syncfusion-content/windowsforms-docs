@@ -11,11 +11,9 @@ documentation: ug
 
 The MultiSelectionComboBox is a type of ComboBox Control with multiple item selection and auto suggestion capabilities. When you type a character into the text area, the control performs a search operation and suggest a list of possible matching results to select.
 
-![1](Overview_images/Overview_img334.png) 
+![](Overview_images/Overview_img334.png) 
 
 
-
-Figure 391 : MultiSelectionComboBox
 
 ## Key Features
 

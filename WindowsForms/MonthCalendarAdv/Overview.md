@@ -20,7 +20,7 @@ The following figure displays the sections of MonthCalendarAdv control.
 
 
 
-* Calendar Header - Header for the MonthCalendarAdv. See Header Settings.
+* Calendar Header - Header for the MonthCalendarAdv. See [Header Settings](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#header-settings-1).
 * Scroll Buttons - Allows the end user to scroll through the months. See Button Settings.
 * Week Number - Specifies a unique number for each week.
 * Day Names - Day names of each day in a week is displayed in DayNames section. 

@@ -11,11 +11,11 @@ documentation: ug
 
 This section discusses the Alignment settings of the NumericUpDownExt control.
 
-### Text Alignment
+## Text Alignment
 
 The text of the NumericUpDownExt control can be aligned using the below given property.
 
-Table 359 : Property Table
+
 
 <table>
 <tr>
@@ -49,11 +49,11 @@ Me.numericUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 
 
-### UpDownAlign
+## UpDownAlign
 
 The alignment of the up and down buttons can be set using the property given below.
 
-Table 360 : _Property Table
+
 
 <table>
 <tr>

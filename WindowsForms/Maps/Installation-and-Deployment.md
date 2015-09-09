@@ -47,7 +47,7 @@ Use the following steps to view the samples:
 
 2. 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
 
-      > Note: You can view the samples in any of the following three ways:
+      N> You can view the samples in any of the following three ways:
       > * Run Samples - Click to view the locally installed samples.
       > * Online Samples - Click to view online samples.
       > * Explore Samples - Explore the UI for Windows Forms on disk.

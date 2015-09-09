@@ -128,5 +128,5 @@ This section will give a step-by-step procedure to design a NumericUpDownExt con
 
 
 
-_Figure_ _581_: _NumericUpDownExt created Through Code_
+
 

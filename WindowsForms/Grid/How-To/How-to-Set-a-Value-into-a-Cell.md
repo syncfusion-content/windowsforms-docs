@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-A style object holds all the information that affects cells appearance. One property contained in the style object is its CellValue. It is this property that you have to set in order to place a value in a cell. Another property called GridStyleInfo.Text will allow you to set the value of a cell using a string. Text and CellValue are related properties and setting one of these properties will also set the other.
+A style object holds all the information that affects cells appearance. One property contained in the style object is its CellValue. It is this property that you have to set in order to place a value in a cell. Another property called GridStyleInfo.Text will allow you to set the value of a cell using a string. Text and [CellValue](/WindowsForms/Grid/Cell-Style-Architecture#text-and-cellvalue) are related properties and setting one of these properties will also set the other.
 
 
 ### Example

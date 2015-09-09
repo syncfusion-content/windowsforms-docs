@@ -19,7 +19,7 @@ Editing and updating features are useful when users need to edit cell values at 
 
 
 
-_Table_ _16_: _Editing and Updating Properties_
+
 
 <table>
 <tr>
@@ -61,7 +61,7 @@ Boolean</td></tr>
 </table>
 
 
-_Table_ _17_: _Editing and Updating Events_
+
 
 <table>
 <tr>
@@ -88,8 +88,10 @@ You can enable updating in value and total cells by setting the EnableValueEdit
 
 // To enable editing in the PivotGrid control.
 this.pivotGrid1.EnableValueEditing = true;
+
 // To enable updating in the PivotGrid control.
 this.pivotGrid1.EnableUpdating = true;
+
 // To enable editing the total cells in the PivotGrid control.
 this.pivotGrid1.EditManager.AllowEditingOfTotalCells = true;
 
@@ -99,8 +101,10 @@ this.pivotGrid1.EditManager.AllowEditingOfTotalCells = true;
 
 ‘To enable editing in the PivotGrid control.
 Me.pivotGrid1.EnableValueEditing = True
+
 ‘To enable updating in the PivotGrid control.
 Me.pivotGrid1.EnableUpdating = True
+
 ‘To enable editing the total cells in the PivotGrid control.
 Me.pivotGrid1.EditManager.AllowEditingOfTotalCells = True
 

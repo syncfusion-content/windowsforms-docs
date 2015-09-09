@@ -13,7 +13,7 @@ Grid Grouping control comes with an in-built Navigation Control that allows the 
 
 NavigationBar can be enabled by setting ShowNavigationBar to true. It is possible to customize default appearance of the navigation bar by setting appropriate properties. Tooltips can be enabled for the navigation bar by setting the property, ShowNavigationBarToolTips to true. ShowNavigationBar must be set to true to enable tooltips.
 
-  _Table 109: Navigation bar_
+  
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ Private Me.gridGroupingControl1.ShowNavigationBarToolTips = True
 
 {% endhighlight %}
 
-Through Designer
+ Through Designer
 
  ![](Navigation-Bar_images/Navigation-Bar_img1.jpeg) 
 

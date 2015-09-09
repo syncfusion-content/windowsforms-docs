@@ -21,18 +21,18 @@ To use the Grid Grouping control record selections, you must set AllowSelections
 
 Model Based Selection is cell-based that allows you to select across the cell, which is not possible with record-based selection. This derives from the GridControlBase and hence will not be aware of grouping elements like nested tables, groups, and so on. Model-based selection can be set by initializing AllowSelection property to a value other than None. The possible values for this type of selection is defined by the enum GridSelectionFlags. By setting various flags in AllowSelection, you can control the selection behavior of the grouping grids.
 
-Selection Flags
+### Selection Flags
 
-_Table 105: Flag selection_
+
 
 <table>
 <tr>
 <th>
-FLAG NAMES</th><td>
+FLAG NAMES</th><th>
 DESCRIPTION</th></tr>
 <tr>
 <td>
-AlphaBlend</th><td>
+AlphaBlend</td><td>
 Uses alpha blending to highlight selected cells.</td></tr>
 <tr>
 <td>
@@ -77,7 +77,7 @@ Disable selecting cells.</td></tr>
 </table>
 You can combine more than one flags to customize current selection behavior.
 
-Example
+#### Example
 
 Following code example illustrates how to set the selection mode for selecting multiple rows with alpha blending.
 
@@ -103,7 +103,7 @@ Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBl
 
 
 
-Format Selection
+### Format Selection
 
 It is possible to modify default color used for alphablend selection. This can be achieved by assigning a desired color to AlphaBlendSelectionColor property. The example given below uses Red Color for alpha blending.
 
@@ -145,7 +145,7 @@ Following code example illustrates the different types of record based selection
 
 
 
-SelectionMode - One
+### SelectionMode - One
 
 It allows you to select only one item (record).
 
@@ -173,7 +173,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One
 
 
 
-SelectionMode - MultiSimple
+### SelectionMode - MultiSimple
 
 You can select multiple items individually. It does not support the use of SHIFT, CTRL and ARROW keys to extend the selection.
 
@@ -201,7 +201,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiS
 
 
 
-SelectionMode - MultiExtended
+#### SelectionMode - MultiExtended
 
 This selection type allows selection of multiple items through Shift, Ctrl and Arrow keys.
 
@@ -229,7 +229,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiE
 
 
 
-Format ListBox Selections
+#### Format ListBox Selections
 
 ListBoxSelection appearance can be customized by setting the properties: SelectionBackColor, SelectionTextColor and ListBoxSelectionColorOptions. By default, SystemColors.Highlight and SystemColors.HighlightText are the colors used as backcolor and textcolor to highlight selected records. SelectionBackColor and SelectionTextColor property settings can be used to override these default colors.
 
@@ -357,7 +357,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 
 
 
-ListBoxSelection CurrentCellOptions
+#### ListBoxSelection CurrentCellOptions
 
 When ListBoxSelection mode is set, you can control the appearance and behavior of the CurrentCell by setting ListBoxSelectionCurrentCellOptions property to a desired value. Possible values are defined by GridListBoxSelectionCurrentCellOptions enumeration described below.
 
@@ -413,7 +413,7 @@ N>: For more details, refer to the following browser sample:
 
 Grouping Grid selection behavior can also be customized by handling appropriate events as required. Here is an example implementation that focuses current selection onto the desired grid elements like only the Current Cell, only the entire Row that contains the current cell, only the entire column that contains the current cell, or both the row and the column that contains the current cell. The focused grid element is highlighted to show the current selection.
 
- _Table 106: Selection options_
+ 
 
 <table>
 <tr>
@@ -451,7 +451,7 @@ Disables the cell selection.</td></tr>
 </table>
 
 
-Implementation
+### Implementation
 
 Follow the steps below to create a sample that shows the above selections.
 

@@ -12,7 +12,7 @@ This section deals with the mask settings of MaskedEditBox control.
 
 The format / behavior for the MaskedEditBox control is defined through the property given below.
 
-Table 327 : Property Table
+
 
 <table>
 <tr>
@@ -36,7 +36,7 @@ In the above Mask, all the non # characters are Literal characters and the #’s
 
 The MaskedEditBox control supports the following masks.
 
-Table 328 : Mask Characters Table
+
 
 <table>
 <tr>

@@ -67,7 +67,7 @@ The following screen shot illustrates Grid Grouping control with filter drop dow
 
 
 
- Support to Save and Load Compare Operators State in Grid Dynamic Filter
+### Support to Save and Load Compare Operators State in Grid Dynamic Filter
 
 GridDynamicFilter in GridGroupingControl is now an enhanced functionality to serialize/de-serialize compareoperator images in button. This can be achieved by handling the following method calls.
 
@@ -84,7 +84,7 @@ When the code runs, the following output displays.
 
 
 
-Apply Filter Only on Lost Focus in GridDynamicFilter
+### Apply Filter Only on Lost Focus in GridDynamicFilter
 
 ApplyFilterOnlyOnCellLostFocus property enables you to turn off/on the filtering on each key stroke in GridDynamicFilter. Set ApplyFilterOnlyOnCellLostFocus property to true to filter only when the filter cell lost focus. This disables filtering for each key stroke including Enter, arrow keys, and tab keys. Defaults value is false and allows filtering for each key stroke.
 
@@ -128,13 +128,7 @@ GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", co
 
 {% endhighlight %}
 
-N>
-
-* _The first argument in this method is an instance of Grid Grouping control._
-* _The second argument is the column name of the Parent table's Value Member._
-* _The third argument is the name of the Foreign table._
-* _The fourth argument is the column name of Child table's Value Member._
-* _The fifth argument is the column name of Child tables's Display Member._
+N>* The first argument in this method is an instance of Grid Grouping control.* The second argument is the column name of the Parent table's Value Member.* The third argument is the name of the Foreign table.* The fourth argument is the column name of Child table's Value Member.* The fifth argument is the column name of Child tables's Display Member.
 
 The following screen shot illustrates Foreign Key Relations in the Grid Grouping control.
 
@@ -177,7 +171,7 @@ _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Gr
 
 This topic elaborates on filtering columns in the Grid Data Bound Grid and Grid Grouping controls by their display member.
 
-Filtering Columns in Grid Data Bound Grid
+### Filtering Columns in Grid Data Bound Grid
 
 GridDataBoundGridFilterBarExt class provides support to filter a column in DataBound Grid by its display member instead of the value member. This is accomplished by implementing a custom filter bar cell by replacing the default filter bar cell.
 
@@ -217,7 +211,7 @@ Following screen shot illustrates how to filter a column in the Grid Data Bound 
 
 
 
-Filtering Columns in Grid Grouping Control
+### Filtering Columns in Grid Grouping Control
 
 GroupingGridFilterBarExt class provides support to filter a column in the Grid Grouping control by its display member instead of value member. This is accomplished by implementing a custom filter bar cell by replacing the default filter bar cell.
 
@@ -260,7 +254,7 @@ Office2007Filter and optimized GridExcelFilter are the two types of Excel-like f
 
 Essential Grid now provides an in-built filter similar to Microsoft Excel 2007 from the class GridOffice2007Filter with which the grid has to be wired.
 
-Enabling Excel like filter 
+#### Enabling Excel like filter 
 
 Set Allow filter to true when Grid Control is wired with GridOffice2007Filter to enable Excel like filter to the Grid filter bar.
 
@@ -324,7 +318,7 @@ The following code illustrates how to add Excel Like Filter to the Grid filter b
 	
 N>: GridOffice2007Filter can be unwired from the grid to disable Excel like filter.
 
-Specifying Value To Filter 
+#### Specifying Value To Filter 
 
 The feature has multiple selections of values to filter. 
 
@@ -336,11 +330,11 @@ You can specify the value of the column that has to filter in the check box of t
 
 ### Optimized GridExcelFilter
 
-Use Case Scenarios
+#### Use Case Scenarios
 
 If Office2007Filter is used in a WF GridGroupingControl where the columns have a large number of unique items (say 5000 or 10000), the grid is unusable (hanged). To improve the performance, the new optimized GridExcelFilter can be used.
 
-_Table 134: Methods_
+
 
 <table>
 <tr>
@@ -351,22 +345,22 @@ PARAMETERS </th><th>
 TYPE </th><th>
 RETURN TYPE </th></tr>
 <tr>
-<th>
-WireGrid</th><th>
-Wires grid with filter.</th><th>
-this.gridGroupingControl1 (control as argument)</th><th>
- Method</th><th>
- void </th></tr>
+<td>
+WireGrid</td><td>
+Wires grid with filter.</td><td>
+this.gridGroupingControl1 (control as argument)</td><td>
+ Method</td><td>
+ void </td></tr>
 <tr>
-<th>
-UnWireGrid</th><th>
-Unwire grid with filter. </th><th>
-this.gridGroupingControl1 (control as argument)</th><th>
- Method</th><th>
- void </th></tr>
+<td>
+UnWireGrid</td><td>
+Unwire grid with filter. </td><td>
+this.gridGroupingControl1 (control as argument)</td><td>
+ Method</td><td>
+ void </td></tr>
 </table>
 
-Sample Link
+### Sample Link
 
 To view a sample:
 
@@ -375,7 +369,7 @@ To view a sample:
 * Click Run Samples.  
 * Navigate to GridGrouping Samples > Filters and Expressions > Optimized Excel Filter Demo
 
-Implementing optimized GridExcelFilter to GGC 
+### Implementing optimized GridExcelFilter to GGC 
 
 Set AllowFilter to True when the Grid control is wired with GridOffice2007Filter to enable Excel-like filtering in the grid filter bar.
 
@@ -519,7 +513,7 @@ You can use EnableDateFilter property in GridExcelFilter to search and filter th
 
 
 
-Filter options 
+#### Filter options 
 
 You can use the following filter options by using context menu of the filter Drop-down.
 
@@ -540,7 +534,7 @@ You can filter the required dates using the above options in check box selection
 
 You can use EnableNumberFilter property in GridExcelFilter to filter the numbers that are displayed in a grid. This property is enabled in filter Drop-down when the cell value is in number format. You can filter the numbers using the following filter options.
 
-Filter options 
+##### Filter options 
 
 * Equal - Returns the records the matches the given numeric value.
 * Does Not Equal - Returns the records, which is not equal to the given date.

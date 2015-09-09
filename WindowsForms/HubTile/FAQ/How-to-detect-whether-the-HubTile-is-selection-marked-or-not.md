@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: How to detect whether the HubTile is selection marked or not
+description: How to detect whether the HubTile is selection marked or not
 platform: WindowsForms
 control: HubTile
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve it by using HubTile IsSelectionMarked property.
 
-_Table 985: Property Table_
+
 
 <Table>
 <tr>

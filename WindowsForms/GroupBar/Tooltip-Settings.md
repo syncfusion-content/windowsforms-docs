@@ -10,13 +10,13 @@ documentation: ug
 
 The tooltips for the buttons and the navigation pane are set through the below properties.
 
-_Table_ _551__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ExpandButtonTooltip</td><td>

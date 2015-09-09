@@ -27,25 +27,27 @@ Follow the below procedure to localize Quick Access ToolBar Customization dialog
 1. Include the required namespaces at the beginning of the source file.
 
 
-
+   ~~~ cs
 				using Syncfusion.Windows.Forms;
 
 				using Syncfusion.Windows.Forms.Tools;
-
+   ~~~
+   {:.prettyprint}
 
 
 				
-
+   ~~~ vbnet
 				Imports Syncfusion.Windows.Forms
 
 				Imports Syncfusion.Windows.Forms.Tools
 
-
+   ~~~
+   {:.prettyprint}
 
 2. Create a class that implements ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
 
 
-
+   ~~~ cs
 						class Localizer : ILocalizationProvider
 
 						{
@@ -68,10 +70,11 @@ Follow the below procedure to localize Quick Access ToolBar Customization dialog
 
 						}
 
-
+   ~~~
+   {:.prettyprint}
 
 					
-
+   ~~~ vbnet
 					Friend Class Localizer
 
 					Implements ILocalizationProvider
@@ -91,14 +94,15 @@ Follow the below procedure to localize Quick Access ToolBar Customization dialog
 					#End Region
 
 					End Class
-
+   ~~~
+   {:.prettyprint}
 
 
 3. Return the localized versions of the strings corresponding to  the string identifiers.
 
+   ~~~ cs
 
-
-							  switch (name)
+	 						  switch (name)
 
 							  {
 
@@ -112,10 +116,11 @@ Follow the below procedure to localize Quick Access ToolBar Customization dialog
 
 							  }
 
+   ~~~
+   {:.prettyprint}
 
 
-
-
+   ~~~ vbnet
 						Select Case name
 
 						Case ToolsResourceIdentifiers.QuickAccessCustomizeCaption
@@ -127,37 +132,44 @@ Follow the below procedure to localize Quick Access ToolBar Customization dialog
 						Return String.Empty
 
 						End Select
-
+   ~~~
+   {:.prettyprint}
 
 
 4. String identfiers are defined in the ResourceIdentifiers and the ToolsResourceIdentifiers classes in Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies respectively.
 
 
-
+   ~~~ cs
 						Syncfusion.Windows.Forms.Tools.ToolsResourceIdentifiers
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 						Syncfusion.Windows.Forms.ResourceIdentifiers
-
+   ~~~
+   {:.prettyprint}
 
 
 5. Leave empty string for the rest of the identifiers that arenot involed in the localization. These identifiers will be loaded with default value.
 6. Assign this instance to the Provider property of the LocalizationProvider class, before the InitializeComponent call in the constructor of the Application.
 
-
+   ~~~ cs
 				LocalizationProvider.Provider = new Localizer();
 
+   ~~~
+   {:.prettyprint}
 
 
-
-
+   ~~~ vbnet
 				LocalizationProvider.Provider = New Localizer()
 
-
+   ~~~
+   {:.prettyprint}
 
 7. You will get the following code snippet as the result.
 
-
-					  class Localizer : ILocalizationProvider
+   ~~~ cs
+ 				   class Localizer : ILocalizationProvider
 
 						{
 
@@ -216,10 +228,11 @@ Follow the below procedure to localize Quick Access ToolBar Customization dialog
 					LocalizationProvider.Provider = new Localizer();
 
 
+   ~~~
+   {:.prettyprint}
 
 
-
-					
+   ~~~ vbnet				
 
 					Friend Class Localizer
 
@@ -274,12 +287,13 @@ Follow the below procedure to localize Quick Access ToolBar Customization dialog
 					' Place this line before the InitalizeComponent call in constructor.
 
 					LocalizationProvider.Provider = New Localizer()
+   ~~~
+   {:.prettyprint}
 
 
 
 
-
-   ![Localization.png](Overview_images/Overview_img1.png) 
+   ![](Overview_images/Overview_img1.png) 
    
 
 
@@ -306,29 +320,36 @@ Use the following procedure to localize the FindDialogBox in the Edit control:
 
 
 
-
-
+   
+   ~~~ cs
 				using Syncfusion.Windows.Forms;
 
 
-
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
 				using Syncfusion.Windows.Forms.Edit; 
+   ~~~
+   {:.prettyprint}
 
 
 
-
-
+   ~~~ cs
 
 
 
 
 				Imports Syncfusion.Windows.Forms
 
+   ~~~
+   {:.prettyprint}
 
+   ~~~ vbnet
+	   Imports Syncfusion.Windows.Forms.Edit
 
-				Imports Syncfusion.Windows.Forms.Edit
-
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -337,30 +358,40 @@ Use the following procedure to localize the FindDialogBox in the Edit control:
 4. String identifiers are defined in the ResourceIdentifiers and the EditResourceIdentifiers classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
 
+   ~~~ cs
+             Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbnet
+			 
+			 Syncfusion.Windows.Forms.ResourceIdentifiers
 
-             Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers Syncfusion.Windows.Forms.ResourceIdentifiers
-
-
+   ~~~
+   {:.prettyprint}
 
 5. Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers will be loaded with a default value.
 6. Assign this instance to the Provider property of the LocalizationProvider class, before the InitializeComponent call in the constructor of the application.
 
 
-
+   ~~~ cs
               LocalizationProvider.Provider = new Localizer();
 
+   ~~~
+   {:.prettyprint}
 
 
-
-
+   ~~~ vbnet
              LocalizationProvider.Provider = New Localizer()
 
+   ~~~
+   {:.prettyprint}
 
 
 7. The following code sample is the result:
 
 
-
+   ~~~ cs
 				public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
 
 						{
@@ -439,11 +470,12 @@ Use the following procedure to localize the FindDialogBox in the Edit control:
 
 						}
 
+   ~~~
+   {:.prettyprint}
 
 
 
-
-
+   ~~~ vbnet
 
 				Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String
 
@@ -518,8 +550,8 @@ Use the following procedure to localize the FindDialogBox in the Edit control:
 						End Select
 
 					End Function
-	{:.prettyprint} 
-
+   ~~~
+   {:.prettyprint}
 
 ![](Overview_images/Overview_img3.png)
      

@@ -11,7 +11,7 @@ documentation: ug
 # Culture Settings
 This section discusses the culture settings of the IntegerTextBox control.
 
-Table 266 : Property Table
+
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ Me.integerTextBox1.UseUserOverride = True
 ![](Overview_images/Overview_img445.png) 
 
 
-> Note: The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
+N> The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
 
 A Sample which demonstrates the Culture Settings of the IntegerTextBox control is available in the below sample installation path.
 

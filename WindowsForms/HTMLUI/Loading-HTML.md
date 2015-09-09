@@ -439,7 +439,7 @@ The System.Reflection.Assembly.GetExecutingAssembly method gets the assembly fro
 
 The System.IO.Stream is used to provide a generic view of sequence of bytes when the IO in the assembly is referred.
 
-> Note: The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
+N> The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 
 The following image shows file loaded from an embedded resource.
 

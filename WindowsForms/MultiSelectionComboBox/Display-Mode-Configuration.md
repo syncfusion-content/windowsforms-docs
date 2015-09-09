@@ -13,7 +13,7 @@ documentation: ug
 
 Each selected item from its drop down list is displayed like a tag with remove button in text area.
 
-![VisualItems](Overview_images/Overview_img337.png) 
+![](Overview_images/Overview_img337.png) 
 
 
 The following code example illustrates you on how to set Display Mode as Visual Item.
@@ -34,7 +34,7 @@ Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.VisualItem
 
 Selected items are displayed in text area each separated with delimiter character.
 
-![DelimiterMode](Overview_images/Overview_img338.png) 
+![](Overview_images/Overview_img338.png) 
 
 
 The following code example illustrates you on how to set Display Mode as Delimiter Mode.
@@ -55,7 +55,7 @@ Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.DelimiterMode
 
 At a time, only one value can be selected from the drop down list and displayed in text area.
 
-![2](Overview_images/Overview_img339.png) 
+![](Overview_images/Overview_img339.png) 
 
 The following code sample illustrates you on how to set Display Mode as Normal Mode.
 

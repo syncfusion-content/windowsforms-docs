@@ -72,7 +72,7 @@ N>: For more details, refer to the following browser sample:
 
 Example: Following are the major features of the sample.
 
-Features
+### Features
 
 * Office 2007 themes - Blue, Black, and Silver to see the effects of the application.
 * The grouping of columns in the mails display area. Right click on the column headers and select ArrangeBy in the column.

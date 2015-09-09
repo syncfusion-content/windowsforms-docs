@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 304: Events Table
+
 
 <table>
 <tr>
@@ -615,7 +615,7 @@ This event occurs when the NULL state is to be set based on a value.
 
 The event handler receives an argument of type SetNullEventArgs containing data related to this event. The following SetNullEventArgs members provide information specific to this event.
 
-Table 305: Members Table
+
 
 <table>
 <tr>
@@ -733,7 +733,7 @@ This event occurs when the input text is invalid for the current state of the co
 
 The event handler receives an argument of type ValidationErrorArgs containing data related to this event. The following ValidationErrorArgs members provide information specific to this event.
 
-Table 306: Members Table
+
 
 <table>
 <tr>

@@ -10,7 +10,7 @@ documentation: ug
 
 This section discusses the feature list of GroupView.
 
-### Features
+## Features
 
  * Appearance and Behavior Settings
     

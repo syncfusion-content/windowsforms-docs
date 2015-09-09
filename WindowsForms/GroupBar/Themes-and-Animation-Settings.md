@@ -29,7 +29,7 @@ Me.groupBar1.ThemesEnabled = True
 Figure 947: Themed look of Office 2007 Style GroupBar
 
 
-#### Animation Settings
+## Animation Settings
 
 Switching between the different GroupBar Items can be animated by setting the AnimatedSelection property to True.
 
@@ -49,4 +49,3 @@ Me.groupBar1.AnimatedSelection = true
 
 
 ![](Overview_images/Overview_img38.jpeg)
-Figure 948: AnimatedSelection Property Illustrated

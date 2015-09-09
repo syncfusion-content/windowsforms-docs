@@ -15,7 +15,7 @@ Essential Grid for Windows Forms now provides a built-in error provider for erro
 
 This feature is useful when you want to set only numeric values to be entered in a cell. 
 
-Table 148: Error properties
+
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Boolean </td></tr>
 </table>
 
 
-Table 149: Methods
+
 
 <table>
 <tr>

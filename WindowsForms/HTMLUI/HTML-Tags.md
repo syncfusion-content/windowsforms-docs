@@ -182,12 +182,12 @@ The Font Style tags are used to format the appearance of the specified text when
 
 
 
-* <b>: Bold tag renders the text in bold face
-* <i>: Italics tag renders italicized text
-* <u>:Underline tag renders underlined text
-* <em>:Emphasizing Text tag highlights important text in the document
-* <strong>:Strong tag renders specified text in bold face
-* <code>:Code tag renders specified text similar to computer coded text
+* &lt;b&gt;: Bold tag renders the text in bold face
+* &lt;i&gt;: Italics tag renders italicized text
+* &lt;u&gt;:Underline tag renders underlined text
+* &lt;em&gt;:Emphasizing Text tag highlights important text in the document
+* &lt;strong&gt;:Strong tag renders specified text in bold face
+* &lt;code&gt;:Code tag renders specified text similar to computer coded text
 
 
 

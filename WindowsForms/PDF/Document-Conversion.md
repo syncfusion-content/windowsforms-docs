@@ -625,7 +625,7 @@ Starting with Internet Explorer 9, Microsoft has made a series of core-architect
 
 #### Prerequisites
 
-_Table 30: Prerequisites_
+
 
 <table>
 <tr>

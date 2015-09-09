@@ -17,7 +17,7 @@ This default arrangement can be modified to customize data views. This section d
 
 Essential Grouping Grid Control offers in-built support for Stacked MultiHeaders. This feature allows you to create additional unbound header rows called StackedHeaderRows that span across visible grid columns. You can group some columns under each header row. It also supports Drag/Drop of these header rows. Grouped columns will also be rearranged along with the header.
 
-StackedHeaderRows Collection
+### StackedHeaderRows Collection
 
 Stacked Header rows for a given Grid Table are gathered under TableDescriptor.StackedHeaderRows collection. This contains property definitions that control the behavior and appearance of Stacked Headers. A StackedHeaderRow collection can be viewed as a set of stacked header rows in which each header row contains a collection of stacked headers that span across multiple columns. 
 
@@ -33,7 +33,7 @@ It is possible to add Stacked Headers for nested tables and groups too. You can 
 * ChildGroupOptions.ShowStackedHeaders - Toggles the display of StackedHeaders for child groups.
 * NestedTableGroupOptions.ShowStackedHeaders - Toggles the display of StackedHeaders for child table and its groups.
 
-Through Designer
+#### Through Designer
 
 Creating Stacked Headers is a two-step process. 
 
@@ -46,9 +46,9 @@ Creating Stacked Headers is a two-step process.
 
 
 
-Property Definitions
+#### Property Definitions
 
-_Table 101: Definitions_ 
+
 
 <table>
 <tr>
@@ -80,6 +80,7 @@ Controls the appearance of the StackedHeaderCell.</td></tr>
 
 
 
+
 Output
 
 Here are the screen shots showing Grouping Grid with two Stacked Header Rows. It illustrates the effect of doing Drag and Drop on StackedHeaders. Notice that the order of the Visible columns gets affected automatically while rearranging StackedHeaders.
@@ -102,7 +103,7 @@ Here are the screen shots showing Grouping Grid with two Stacked Header Rows. It
 
 
 
-StackedHeaders for NestedGroups
+#### StackedHeaders for NestedGroups
 
 Stacked Headers can be enabled for Child Group by setting ChildGroupOptions.ShowStackedHeaders to true. The grouping grid in the image below displays stacked headers for nested groups.
 
@@ -111,7 +112,7 @@ Stacked Headers can be enabled for Child Group by setting ChildGroupOptions.Show
 
 
 
-Appearance
+#### Appearance
 
 Appearance of StackedHeaders can be controlled in a couple of ways. One way to access Appearance.StackedHeaderCell property is to enter appearance definitions. Appearance set this way will be applied to all stacked header cells. An alternate way is to specify appearance settings through GridStackedHeaderRow Descriptor. In this way, you can have different settings for individual stacked headers in each StackedHeaderRow.
 
@@ -133,7 +134,7 @@ Here is the effect of the above settings.
 
 
 
-Programmatically
+#### Programmatically
 
 You can add Stacked Header Rows at runtime too. To achieve this, first you must define the required number of GridStackedHeaderDescriptors by specifying VisibleColumns for each. Next, create StackedHeaderRow by instantiating GridStackedHeaderRowDescriptor and then add the above defined stacked headers into it. Finally, add this header row into TableDescriptor.StackedHeaderRows collection. The following code example illustrates this process.
 
@@ -193,11 +194,11 @@ N>: For more details, refer to the following browser sample:
 
 Grid Grouping control offers built-in support for MultiRowRecords. This feature allows the records to span across multiple rows and columns. It is achieved through the property, TableDescriptor.ColumnSets. It allows you to modify default alignment of visible columns. 
 
-ColumnSets Collection
+### ColumnSets Collection
 
 ColumnSets act as superset of TableDescriptor.Columns collection. Once ColumnSets are defined, the grouping grid will then loop through the collection and organize data display accordingly. Each ColumnSet is defined by GridColumnSetDescriptor. ColumnSets are managed by GridColumnSetDescriptorCollection that is returned by TableDescriptor.ColumnSets property.
 
-Programmatically
+#### Programmatically
 
 Follow the steps below to span the records across multiple rows.
 
@@ -382,7 +383,7 @@ fchooser.DeferLayoutUpdate = True
 
 FieldChooser events are used to customize FieldChooser dialog box. Field chooser events allow the user to modify control of the FieldChooser dialog and change its caption name. It has events to perform operations in FieldChooser dialog box such as FieldChooserShowing, FieldChooserShown, FieldChooserClosing,and FieldChooserClosed events.
 
-_Table 102: Field Chooser Events Table_
+
 
 <table>
 <tr>
@@ -581,7 +582,7 @@ Use Case Scenarios
 
 When you want to show or hide the columns of a stacked header in a grid without deleting its bound records, you can achieve this using this feature.
 
-_Table 103: Property Table_
+
 
 <table>
 <tr>
@@ -597,7 +598,8 @@ Used to enable or disable the column names in the field chooser dialog.</td><td>
 Property </td><td>
 Boolean </td></tr>
 </table>
-_Table 104: Constructor_
+
+_Constructor_
 
 <table>
 <tr>
@@ -608,12 +610,12 @@ PARAMETERS </th><th>
 TYPE </th><th>
 RETURN TYPE </th></tr>
 <tr>
-<th>
-FieldChooser</th><th>
-Used to wire the GridGroupin gControl  with the field chooser. </th><th>
-(&lt;GridGroupingControl&gt;)</th><th>
-Constructor</th><th>
-class</th></tr>
+<td>
+FieldChooser</td><td>
+Used to wire the GridGroupin gControl  with the field chooser. </td><td>
+(&lt;GridGroupingControl&gt;)</td><td>
+Constructor</td><td>
+class</td></tr>
 </table>
 
 Sample Link
@@ -674,9 +676,9 @@ When the code runs, the entire grid will open.
 
 
 
-9.Select the checkboxes of the columns to be displayed in the grid. The grid will have only the columns that are selected in the Field Chooser dialog.
+4.Select the checkboxes of the columns to be displayed in the grid. The grid will have only the columns that are selected in the Field Chooser dialog.
 
- ![D:/Task Doc/Marketing Content/10.4/UI/WF/Grid/Stacked Header.png](Grid-Layout_images/Grid-Layout_img16.png) 
+ ![](Grid-Layout_images/Grid-Layout_img16.png) 
 
 
 

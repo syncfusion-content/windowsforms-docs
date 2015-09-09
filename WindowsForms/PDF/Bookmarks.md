@@ -303,7 +303,7 @@ document.Close()
 
 Essential PDF allows you to add action to the specific bookmarks. You can perform action by clicking the bookmarks at the run time. You can add predefined actions to the bookmarks using the following classes.
 
-Table 25: Class Table
+
 
 <table>
 <tr>

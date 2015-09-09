@@ -66,7 +66,7 @@ To view the samples, follow the steps below:
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
    
-   > Note: You can view the samples in any of the following three ways:
+   N> You can view the samples in any of the following three ways:
    > * Run Samples - Click to view the locally installed samples.
    > * Online Samples - Click to view online samples.
    > * Explore Samples - Explore UI Windows Forms on disk.
@@ -106,7 +106,7 @@ The following assemblies need to be referenced in your application to use Essent
 
 ## Properties Table for PivotGrid
 
-_Table_ _5_: _Properties Table_
+
 
 <table>
 <tr>

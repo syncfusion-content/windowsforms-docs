@@ -16,7 +16,7 @@ The behavior settings of the IntegerTextBox control are discussed below.
 
 The integer value of the IntegerTextBox can be reset or changed to a negative value using the properties given below.
 
-Table 276 : Property Table
+
 
 <table>
 <tr>
@@ -58,7 +58,6 @@ Me.integerTextBox1.NegativeInputPendingOnSelectAll = True
 
 This property can be used to include zeros before the beginning value of the integer value of the control.
 
-Table 277 : Property Table
 
 <table>
 <tr>

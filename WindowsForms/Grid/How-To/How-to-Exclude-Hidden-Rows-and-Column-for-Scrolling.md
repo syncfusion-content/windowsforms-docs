@@ -66,11 +66,11 @@ Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArg
 
 
       Me.gridControl1.VScrollPixel = True;
-	  {% endhighlight  %}
+
 
 
 
     End Sub
 
-
+	  {% endhighlight  %}
 

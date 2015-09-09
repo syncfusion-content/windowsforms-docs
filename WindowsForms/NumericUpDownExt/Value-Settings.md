@@ -11,7 +11,7 @@ documentation: ug
 
 The various Values of the NumericUpDownExt control and their settings are given below.
 
-Table 351 : Property Table
+
 
 <table>
 <tr>
@@ -71,7 +71,7 @@ Me.numericUpDownExt1.Increment = New Decimal(New Integer() {5, 0, 0, 0})
 
 The methods associated with the above properties are given below.
 
-Table 352 : Methods Table
+
 
 <table>
 <tr>

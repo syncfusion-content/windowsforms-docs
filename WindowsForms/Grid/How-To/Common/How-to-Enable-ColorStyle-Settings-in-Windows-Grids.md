@@ -21,7 +21,6 @@ You can apply one of the following styles:
 * Office2010Silver
 * Metro
 
-_Table 158: Properties_
 
 <table>
 <tr>

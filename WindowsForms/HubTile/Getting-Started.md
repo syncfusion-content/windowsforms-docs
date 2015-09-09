@@ -20,7 +20,7 @@ This section briefly describes how to design a HubTile control in a Windows Form
 
  ![](Adding-hubtile-control_images/Adding-hubtile-control_img1.png) 
  
- Figure 1637: HubTile control in Toolbox
+
 
 ## Configuring HubTile Control 
 
@@ -29,9 +29,7 @@ The most commonly used settings of the HubTile control can be configured either 
 
 ![](Configuring-hubtile-control_images/Configuring-hubtile-control_img1.png)
  
-Figure : HubTile Control Customization through Smart tag
+
 
 
  ![](Configuring-hubtile-control_images/Configuring-hubtile-control_img2.png) 
- 
- Figure : HubTile Control Customization through Properties Window

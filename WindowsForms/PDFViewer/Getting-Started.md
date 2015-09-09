@@ -19,15 +19,15 @@ Supported features include:
 
 Supported and non-supported elements of Essential PDF Viewer for Windows Forms, WPF and ASP.NET MVC are listed in the following table.
 
-_Table_ _1__: 	Supported and non-supported elements_
+
 
 <table>
 <tr>
-<td>
-{{ '**Features**' | markdownify }}</td><td>
-{{ '**Windows**' | markdownify }}</td><td>
-{{ '**WPF**' | markdownify }}</td><td>
-{{ '**ASP.NET MVC**' | markdownify }}</td></tr>
+<th>
+{{ '**Features**' | markdownify }}</th><th>
+{{ '**Windows**' | markdownify }}</th><th>
+{{ '**WPF**' | markdownify }}</th><th>
+{{ '**ASP.NET MVC**' | markdownify }}</th></tr>
 <tr>
 <td>
 Text</td><td>
@@ -374,25 +374,29 @@ To add a PDF Viewer control to your application:
 3. Add Syncfusion.PdfViewer.Windows namespace.
    
    ~~~ cs
-   using Syncfusion.PdfViewer.Windows;
-   //Initializing the PDF Viewer
-   PdfViewer viewer = new PdfViewer();
-   //Loading the document in the PDF Viewer
-   viewer.Load(@"c:/documents/myPDF.pdf");
+	   using Syncfusion.PdfViewer.Windows;
+	   
+	   //Initializing the PDF Viewer
+	   PdfViewer viewer = new PdfViewer();
+	   
+	   //Loading the document in the PDF Viewer
+	   viewer.Load(@"c:/documents/myPDF.pdf");
    ~~~
    {:.prettyprint}
    
    ~~~ vbnet
    
-   Imports Syncfusion.PdfViewer.Windows
-   'Initializing the Pdf Viewer
-   Dim viewer As PdfViewer = New PdfViewer()
-   'Loading the document in the Pdf Viewer
-   viewer.Load("c:/documents/myPDF.pdf")
+	   Imports Syncfusion.PdfViewer.Windows
+	  
+	  'Initializing the Pdf Viewer
+	   Dim viewer As PdfViewer = New PdfViewer()
+	   
+	   'Loading the document in the Pdf Viewer
+	   viewer.Load("c:/documents/myPDF.pdf")
    ~~~
    {:.prettyprint}
    
-   Refer to Viewing PDF files for more information.
+   Refer to [Viewing PDF files](/windowsforms/pdfviewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
 
 ## Appearance and Structure of the Control
 

@@ -12,7 +12,7 @@ documentation: ug
 
 Color and Styles can be applied to the border of the IntegerTextBox control as discussed below.
 
-Table 278 : Property Table
+
 
 <table>
 <tr>

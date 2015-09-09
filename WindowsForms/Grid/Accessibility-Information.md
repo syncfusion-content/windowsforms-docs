@@ -13,7 +13,7 @@ documentation: ug
 
 ### Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
 
-Table 8: Voluntary Product Accessibility Template
+
 
 <table>
 <tr>
@@ -123,7 +123,7 @@ Can be achieved through existing cell-related APIs.</td></tr>
 
 ### Functional Performance Criteria
 
-Table 9: Functional Performance Criteria
+
 
 <table>
 <tr>

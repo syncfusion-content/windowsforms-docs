@@ -35,12 +35,12 @@ The IntegerTextBox control can be created programmatically through code as detai
 1. Include the required namespace.
    
    ~~~ cs
-   using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
    ~~~
    {:.prettyprint}
    
    ~~~vbnet
-   Imports Syncfusion.Windows.Forms.Tools
+		Imports Syncfusion.Windows.Forms.Tools
    ~~~
    {:.prettyprint}
 
@@ -50,18 +50,18 @@ The IntegerTextBox control can be created programmatically through code as detai
    
    ~~~ cs
    
-   // Create IntegerTextBox control.
-   private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
-   this.integerTextBox1=new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
+	   // Create IntegerTextBox control.
+	   private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
+	   this.integerTextBox1=new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
    
    ~~~
    {:.prettyprint}
    
    ~~~vbnet
-   ' Create IntegerTextBox control.
-   Private integerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
-   Me.integerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
-   ~~~
+	   ' Create IntegerTextBox control.
+	   Private integerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
+	   Me.integerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
+	   ~~~
    {:.prettyprint}
 
 
@@ -69,15 +69,15 @@ The IntegerTextBox control can be created programmatically through code as detai
 3. Specify its value and size.
    
    ~~~ cs
-   this.integerTextBox1.IntegerValue = ((long)(7));
-   this.integerTextBox1.Size = new System.Drawing.Size(144, 20);
+	   this.integerTextBox1.IntegerValue = ((long)(7));
+	   this.integerTextBox1.Size = new System.Drawing.Size(144, 20);
    ~~~
    {:.prettyprint}
    
    
    ~~~vbnet
-   Me.integerTextBox1.IntegerValue = (CLng(7))
-   Me.integerTextBox1.Size = New System.Drawing.Size(144, 20)
+	   Me.integerTextBox1.IntegerValue = (CLng(7))
+	   Me.integerTextBox1.Size = New System.Drawing.Size(144, 20)
    ~~~
    {:.prettyprint}
 
@@ -86,13 +86,13 @@ The IntegerTextBox control can be created programmatically through code as detai
 4. Add the IntegerTextBox control to the form.
    
    ~~~ cs
-   this.Controls.Add(this.integerTextBox1);
+		this.Controls.Add(this.integerTextBox1);
    ~~~
    {:.prettyprint}
    
    ~~~vbnet
    
-   Me.Controls.Add(Me.integerTextBox1)
+		Me.Controls.Add(Me.integerTextBox1)
    ~~~
    {:.prettyprint}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The property named VisualItemInputMode helps to define the Visual Items in Text Input.
 
-Table 230 : Property Table
+
 
 <table>
 <tr>

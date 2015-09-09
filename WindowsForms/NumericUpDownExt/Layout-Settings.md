@@ -13,7 +13,7 @@ The layout settings of the NumericUpDownExt control are discussed in this sectio
 
 The size of the NumericUpDownExt control can be set according to the needs of the user using the properties discussed below.
 
-Table 363 : Property Table
+
 
 <table>
 <tr>

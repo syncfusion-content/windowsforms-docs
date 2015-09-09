@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: How to Freeze HubTile functionality in runtime
+description: How to Freeze HubTile functionality in runtime
 platform: WindowsForms
 control: HubTile
 documentation: ug
 --- 
 
- # How to Freeze HubTile functionality in runtime?
+# How to Freeze HubTile functionality in runtime?
 
 You can achieve it by setting HubTile Freeze property to ‘true’.
 
-_Table 983: Property Table_
+
 
 
 <Table>

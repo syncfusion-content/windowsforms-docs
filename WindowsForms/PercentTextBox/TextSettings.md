@@ -13,7 +13,7 @@ This section discusses the text settings of the PercentTextBox control.
 
 The text associated with the PercentTextBox control can be set and customized using the below given settings.
 
-Table 289: Property Table
+
 
 <table>
 <tr>
@@ -119,7 +119,7 @@ Me.percentTextBox1.DrawActiveWhenDisabled = True
 
 The methods associated with the above properties are given below.
 
-Table 290: Methods Table
+
 
 <table>
 <tr>
@@ -168,7 +168,7 @@ Multiline Text Settings
 
 The text settings of the PercentTextBox control can be customized to display multiline text using the below given properties.
 
-Table 291: Property Table
+
 
 <table>
 <tr>
@@ -238,7 +238,7 @@ The formatting for the text can be enabled or disabled using the property given 
 
 
 
-Table 292: Property Table
+
 
 <table>
 <tr>
@@ -275,7 +275,7 @@ Me.percentTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.I
 
 Formatted text can be displayed using the below given property.
 
-Table 293: Property Table
+
 
 <table>
 <tr>
@@ -310,7 +310,7 @@ Me.percentTextBox1.FormattedText = "Hello"
 
 The text can be displayed from right to left for RTL languages using this property.
 
-Table 294: Property Table
+
 
 <table>
 <tr>
@@ -355,7 +355,7 @@ N> The ResetRightToLeft() method can be used to reset the RightToLeft prope
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
 
-Table 295: Property Table
+
 
 <table>
 <tr>

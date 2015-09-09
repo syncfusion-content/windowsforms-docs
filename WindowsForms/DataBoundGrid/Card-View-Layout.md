@@ -103,6 +103,7 @@ bool</td></tr>
 
 
 
+
 <table>
 <tr>
 <th>
@@ -168,6 +169,7 @@ rowIndex,colIndex.</td><td>
 Metdod</td><td>
 CardCellType</td></tr>
 </table>
+
 
 
 

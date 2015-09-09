@@ -17,7 +17,7 @@ Essential PivotGrid for Windows Forms is a powerful cell-oriented, extensible gr
 
 
 
-![C:/Users/dwarageshmb/Desktop/Doc Images/PivotGrid WPF/1.png](Overview_images/Overview_img1.png)
+![](Overview_images/Overview_img1.png)
 
 
 
@@ -57,7 +57,7 @@ The following conventions will help you quickly identify the important sections 
 
 
 
-_Table_ _1_: _Conventions Table_
+
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-> {{' ![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+> 
 
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information.</td></tr>
@@ -80,14 +80,14 @@ Represents an example.</td></tr>
 <tr>
 <td>
 Tip</td><td>
-{{' ![C:/Users/Hari/Pictures/OlapClient/Tip.png](Overview_images/Overview_img3.png)' | markdownify }}
+{{' ![](Overview_images/Overview_img3.png)' | markdownify }}
 
 </td><td>
 Represents useful hints that will help you in using the controls/features.</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-{{' ![C:/Users/Hari/Pictures/OlapClient/Information.png](Overview_images/Overview_img4.png)' | markdownify }}
+{{' ![](Overview_images/Overview_img4.png)' | markdownify }}
 
 </td><td>
 Represents additional information on the topic.</td></tr>
@@ -109,7 +109,7 @@ The prerequisites details are listed below:
 
 
 
-_Table_ _2_: _Prerequisites Table_
+
 
 <table>
 <ul>
@@ -141,7 +141,7 @@ The compatibility details are listed below:
 
 
 
-_Table_ _3_: _Compatibility Table_
+
 
 <table>
 <ul>
@@ -168,7 +168,7 @@ Syncfusion provides the following documentation sections to provide all the nece
 
 
 
-_Table_ _4_: _Documentation Table_
+
 
 <table>
 <tr>
@@ -186,7 +186,7 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/pivotgrid> (Navigate to the Pivot Grid for Windows Forms User Guide.)![](Overview_images/Overview_img5.jpeg)' | markdownify }}
+Online{{ '<http://docs.syncfusion.com/windowsforms/pivotgrid> (Navigate to the Pivot Grid for Windows Forms User Guide.)' | markdownify }}
 
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>

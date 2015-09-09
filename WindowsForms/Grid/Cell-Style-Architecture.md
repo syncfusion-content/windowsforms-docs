@@ -43,11 +43,11 @@ The next graphic shows the effect of removing BackColor property from cell speci
 
      
 
-### Properties
+## Properties
 
 GridStyleInfo provides many properties to control the appearance and behavior of grid cells. The following table lists some of the properties.
 
-Table 22: GridStyleInfo properties
+
 
 <table>
 <tr>
@@ -87,7 +87,7 @@ Picks a particular image from the ImageList property.</td></tr>
 
 N> Refer to the GridStyleInfo topic in the Essential Grid Class Reference for a complete description of all the GridStyleInfo class members.
 
-#### BackColor
+### BackColor
 
 BackColor property specifies the background color for the cell. If you want to use a special brush to get gradient background, you can use Interior property of GridStyleInfo to specify a brush that can be used to draw the cell background.
 
@@ -111,7 +111,7 @@ ImageList property holds Systems.Windows.Forms.ImageList. Generally, there is on
 
 
 
-#### Text and CellValue
+### Text and CellValue
 
 Text and CellValue properties are closely related. You can set the value of either by using the other. The major difference is that Text property is a string and CellValue property is an object. This means, for example, that you can assign DateTime object to cell value, but you cannot assign it to a text. Grid control generally sets Text property by using CultureInfo formatting on CellValue property. Text property can also be set directly through code.
 
@@ -201,7 +201,7 @@ gridControl1(4, 2).BaseStyle = "BackColorTest"
 
 This class is used extensively to specify a collection of grid cells that are to be used as parameters for other method calls. GridRangeInfo class contains static methods that will allow you to specify a single cell, a rectangular range of cells, a row or rows, a column or columns, or the entire table.
 
-Table 23: GridRangeInfo methods
+
 
 <table>
 <tr>
@@ -900,7 +900,7 @@ Applying this property will reflect in all cell types and will make the Grid non
 
 DropDown cells like MonthCalendar, ColorEdit, etc. will behave the same as ComboBox cell type; items can be viewed, but cannot be selected.
 
-Table 24: BrowseOnly property
+
 
 <table>
 <tr>

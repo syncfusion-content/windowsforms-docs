@@ -257,7 +257,7 @@ Me.gridControl1(4, 2).Format = "MM/dd/yyyy hh:mm"
 
 Numeric Up Down cell type has been enhanced to provide more styles and properties that can be added to the numeric up down control by using FloatNumericUpDownStyleProperties class. It enables you to set the limitations of the numeric values and several other properties. 
 
-Table 27: Numeric Up Down style properties
+
 
 <table>
 <tr>

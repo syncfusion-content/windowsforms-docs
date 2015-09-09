@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: How to display BannerIcon in Banner of HubTile
+description: How to display BannerIcon in Banner of HubTile
 platform: WindowsForms
 control: HubTile
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 
 You can achieve this by using HubTile ShowBannerTileIcon and BannerIcon property.
 
-_Table 982: Property Table_
+
 
 
 <Table>

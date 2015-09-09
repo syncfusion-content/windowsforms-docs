@@ -11,7 +11,7 @@ documentation: ug
 
 ### Introduction
 
-Set the CellType property in column style to "PushButton" and handle grids CellButtonClicked event. Use Description property of the column style to specify the text that is displayed on the button. To access a column's style, use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added the GridBoundColumns or not.
+Set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in column style to "PushButton" and handle grids CellButtonClicked event. Use Description property of the column style to specify the text that is displayed on the button. To access a column's style, use either [GridDataBoundGrid.GridBoundColumns](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format) or [GridDataBoundGrid.Binder.InternalColumn](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format#using-the-griddataboundgridbinder-class) depending upon whether you have explicitly added the GridBoundColumns or not.
 
 #### Example
 

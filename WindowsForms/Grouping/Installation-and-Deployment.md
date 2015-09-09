@@ -15,7 +15,7 @@ This section covers information on the install location, samples, licensing, pat
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
-See Also
+
 
 For licensing, patches and information on adding or removing selective components refer the following topics in Common UG under Installation and Deployment.
 
@@ -56,11 +56,11 @@ The steps to view the Grouping samples in various platforms are discussed below:
 
 
 
-#### Windows
+### Windows
 
 1. In the Dashboard window, click Run Samples for Windows Forms under Reporting Edition panel. The Windows Forms Sample Browser window is displayed.
  
-   > Note: You can view the samples in any of the following three ways:
+   N> You can view the samples in any of the following three ways:
    >
    > * Run Samples – Click to view the locally installed samples.
    > * Online Samples – Click to view online samples.
@@ -82,13 +82,13 @@ The steps to view the Grouping samples in various platforms are discussed below:
 
 
 
-ASP.NET
+### ASP.NET
 
 
 
 1. In the Dashboard window, click Run Samples for ASP.NET under Reporting Edition panel. The ASP.NET Sample Browser window is displayed.
  
-   > Note: You can view the samples in any of the three ways displayed:
+   N> You can view the samples in any of the three ways displayed:
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
 
@@ -106,9 +106,9 @@ ASP.NET
 
 
 
-Source Code Location
+### Source Code Location
 
-Windows Forms Source Code
+#### Windows Forms Source Code
 
 The default location of the Windows Forms Grouping source code is:
 
@@ -116,21 +116,21 @@ The default location of the Windows Forms Grouping source code is:
 
 
 
-ASP.NET Source Code
+#### ASP.NET Source Code
 
 The default location of the ASP.NET Grouping source code is:
 
 [System Drive]:\Program Files\Syncfusion\Essential Studio\[Version Number]\Web\Grouping.Web\Src
 
-### Deployment Requirements
+## Deployment Requirements
 
-#### Dll List
+### Dll List
 
 While deploying an application that references Syncfusion Essential Grouping assembly, the following dependencies must be included in the distribution.
 
 
 
-Windows Forms – Grouping
+#### Windows Forms – Grouping
 
 * Syncfusion.Core.dll
 * Syncfusion.Shared.Base.dll
@@ -140,7 +140,7 @@ Windows Forms – Grouping
 
 
 
-ASP.NET - Grouping
+#### ASP.NET - Grouping
 
 * Syncfusion.Core.dll
 * Syncfusion.Shared.Base.dll

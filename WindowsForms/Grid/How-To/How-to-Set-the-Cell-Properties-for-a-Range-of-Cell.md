@@ -11,11 +11,11 @@ documentation: ug
 
 ## Introduction
 
-Use the GridControl's ChangeCells method by passing it a GridRangeInfo object to change the appearance of a range of cells. 
+Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
 
 ### Example
 
-To set the backcolor and textcolor for a range of cells, use the below given code snippet.
+To set the [backcolor](/windowsforms/grid/cell-style-architecture#backcolor) and textcolor for a range of cells, use the below given code snippet.
 
 {% highlight c# %}
 

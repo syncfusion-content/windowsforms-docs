@@ -17,7 +17,7 @@ MultiSelectionComboBox control can be bound with external data source. Objects t
 
 You can add objects to the MultiSelectionComboBox by using the Items method. You can also add objects to a MultiSelectionComboBox using the DataSource, DisplayMember and ValueMember properties to fill the ComboBox. When the DataSource property is set, you cannot modify the items collection. When the DataSource property setting causes the data source to change, the DataSourceChanged event is raised .When you set DataSource to a null, DisplayMember is set with an empty string ("").
 
-Table 229 : Property Table
+
 
 <table>
 <tr>

@@ -622,14 +622,14 @@ Dim xmp As New XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData)
 
 The following table provides more information on the code.
 
-Table27: Property Table
+
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Value it accepts</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Value it accepts</th></tr>
 <tr>
 <td>
 XmlData</td><td>
@@ -1000,7 +1000,6 @@ A digital signature is an electronic signature that is used to authenticate the 
 
 Digital signatures are easily transportable, cannot be imitated by someone else, and can be automatically time-stamped. It has the ability to ensure that once the original signed message is received, the sender cannot easily repudiate it later.
 
-Table 28: List of Elements in Digital Signature
 
 <table>
 <tr>

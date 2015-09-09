@@ -10,13 +10,13 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _556__: Events Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Events</td><td>
-Description</td></tr>
+<th>
+GroupBar Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 GroupBarItemAdded</td><td>
@@ -298,13 +298,13 @@ type NavigationPaneDropDownClickEventArgs containing data related to this event.
 
 The following event property is associated with the NavigationPaneDropDownClickEventArgs.
 
-_Table_ _557__: Member Table_
+
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 ContextMenuProvider</td><td>
@@ -354,13 +354,13 @@ It occurs when a GroupBar Item is about to be drawn. The event handler receives 
 
 The event properties associated with the ProvideGroupBarItemBrushEventArgs are given below.
 
-_Table_ _558__: Members Table_
+
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackgroundBrush</td><td>

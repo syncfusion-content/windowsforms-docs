@@ -106,7 +106,7 @@ To test the application with generated coded UI Tests:
 
    ~~~ cs
 
-		  [TestMethod]
+		  
 
 		public void CodedUITestMethod1()
 
@@ -123,7 +123,7 @@ To test the application with generated coded UI Tests:
 
 
    ~~~ vbnet
-		  <TestMethod()>
+		  
 
 		Public Sub CodedUITestMethod1()
 
@@ -172,7 +172,6 @@ To test the application with generated coded UI Tests:
 
 Below is the Cell Properties Table-
 
-Table 145: Cell properties
 
 <table>
 <tr>
@@ -184,7 +183,7 @@ DATA TYPE</th></tr>
 <tr>
 <td>
 AllowEnter</td><td>
-Indicates that by pressing the <Enter>-Key, a new line is inserted into the edited text.</td><td>
+Indicates that by pressing the &lt;Enter&gt; -Key, a new line is inserted into the edited text.</td><td>
 -</td><td>
 bool</td></tr>
 <tr>
@@ -754,13 +753,13 @@ bool</td></tr>
 </table>
 
 
-_Table 146: Control Properties_ 
+
 
 <table>
 <tr>
 <th>
 PROPERTIES</th><th>
-DESCRIPTION</th><td>
+DESCRIPTION</th><th>
 TYPE</th><th>
 DATA TYPE</th></tr>
 <tr>
@@ -811,7 +810,7 @@ bool</td></tr>
 
 Essential Grid for Windows Forms supports automated UI testing with VS 2010 coded UI technology. Without using the existing plugins, the coded UI test is now enabled in frameworks 3.5 and 4.0.
 
-Table 147: Property Table
+
 
 <table>
 <tr>
@@ -846,5 +845,5 @@ The following code example illustrates how to enable AccessibilityEnabled proper
 
  
 
-> You can follow the same steps to test the application with generated coded UI tests as described in the chapter_ Testing the Application with Generated Coded UI Tests.
+N> You can follow the same steps to test the application with generated coded UI tests as described in the chapter Testing the Application with Generated Coded UI Tests.
 

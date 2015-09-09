@@ -11,7 +11,7 @@ documentation: ug
 
 Themes can be applied to the IntegerTextBox control using the property given below.
 
-Table 279 : Property Table
+
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Specifies whether or not to use XP themes, when BorderStyle property is set to '
 </table>
 
 
-> Note: Refer_ [Border Settings](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/bordersettings) _topic to know about the BorderStyle property.
+N> Refer_ [Border Settings](/windowsforms/integertextbox/bordersettings) _topic to know about the BorderStyle property.
 
 
 {%highlight c#%}

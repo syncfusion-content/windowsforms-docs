@@ -21,7 +21,7 @@ Clicking Preview and Edit verb will allow you to view the Grid Grouping control,
 
 Grid Designer presents populated Grid Grouping control along with property grid listing out the related properties. It also includes an integrated help feature to display a brief description on the property selected. You will be able to set any kind of properties using the designer so that you can see the results immediately. Here is a brief discussion on how to work with grid elements through the designer.
 
-Grouping
+## Grouping
 
 Designer provides full drag and drop capability so that you can group the records by dragging a column header and dropping it into GroupDropArea, provided the GroupDropArea is enabled by setting ShowGroupDropArea to true. Likewise you can group data against any number of columns across the tables when multiple nested tables are used.
 
@@ -44,7 +44,7 @@ You can also use TableDescriptor.GroupedColumns property to add groups where you
 
 
 
-Sorting
+## Sorting
 
 Sorting can be done on the table data by simply clicking the desired column header by which the values need to be sorted. Once sorting is done, the grouping grid displays ListSortIcon in the respective column header to indicate Sort Direction. You could also make use of the TableDescriptor.SortedColumns property to sort table data wherein you need to provide the column to be sorted and sort order.
 
@@ -59,7 +59,7 @@ Sorting can be done on the table data by simply clicking the desired column head
 
 
 
-Summaries
+## Summaries
 
 Summaries can be added in the designer itself by accessing TableDescriptor.SummaryRows property. You can add as many summary rows as you need, each with a desired number of summary columns specifying the type of summary, summary format, the column based on whose values the summary has to be calculated and the like for each of the summary columns.
 
@@ -77,7 +77,7 @@ Summaries can be added in the designer itself by accessing TableDescriptor.Summa
 
 
 
-Record Filters
+## Record Filters
 
 
 
@@ -117,7 +117,7 @@ Grid Grouping control provides AutoFilterRow, which can be enabled by setting Sh
 
 
 
-Expression Fields
+## Expression Fields
 
 When there is a need to display calculated values based on the values on other fields in the same record, ExpressionFields would be the right choice to use. ExpressionFields can be created by using TableDescriptor.ExpressionFields property. This will open an editor wherein you can add any number of expression fields each with its own expression used to calculate the results.
 
@@ -133,7 +133,7 @@ When there is a need to display calculated values based on the values on other f
 
 
 
-Relations
+## Relations
 
 
 
@@ -145,7 +145,7 @@ It is possible to specify the relation to be used across the tables in case mult
 
 
 
-Appearance
+## Appearance
 
 The appearance of every grid element can be customized by accessing Appearance property. It allows you to set GridStyleInfo properties like cell type, value, back color, font, etc. for grid cells. It holds a sub tree of different grid elements, each with its own set of formatting properties. For instance, when you want to set appearance for alternate record field cell, you can make use of Appearance.AlternateRecordFieldCell property; if you want to customize summary cells, you will have to use Appearance.SummaryFieldCell or related property.
 
@@ -155,7 +155,7 @@ The appearance of every grid element can be customized by accessing Appearance p
 
 
 
-Skins
+## Skins
 
 You can change the appearance and behavior of every grid element to provide grid with a rich look and feel by setting skins. Grouping Grid currently offers five such skins: Office2007Blue, Office2007Silver, Office2007Black, Office2003 and SystemTheme(Default XP theme). To set a skin, GridVisualStyles property which is under TableOptions section is used. It lists possible skin options in a drop down, which will make the entire grid redrawn with the chosen style.
 

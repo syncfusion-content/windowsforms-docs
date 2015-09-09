@@ -14,8 +14,7 @@ documentation: ug
 HubTile provides support to render Banner similar to Windows 8 live tiles. 
 
  ![](Concept-and-Features_images/Concept-and-Features_img6.png) 
- 
- Figure : Banner Visibility
+
 
 
 Banner can be added using the following code example.
@@ -67,7 +66,7 @@ In Banner, icons can be added, like the following image. Use the following code 
 
  ![](Concept-and-Features_images/Concept-and-Features_img9.png) 
  
-Figure : Banner Icon
+
 
 {% highlight C# %}  
 
@@ -117,9 +116,9 @@ N> BannerColor is applicable only for DefaultTile and RotateTile types.
 
 HubTile provides selection marker support similar to Windows 8 Start screen tile. 
 
-![hub](Concept-and-Features_images/Concept-and-Features_img13.png) 
+![](Concept-and-Features_images/Concept-and-Features_img13.png) 
 
-Figure : Selection Marker
+
 
 
 The following code example demonstrates how to keep a tile selection marked.
@@ -264,5 +263,3 @@ Me.HubTile1.EnableTileSlideEffect = True
 N> EnableTileSlideEffect is applicable only for DefaultTile and PulsingTile types.
 
 ![](Concept-and-Features_images/Concept-and-Features_img19.png) 
-
-Figure 1649: Tile Press Behavior

@@ -12,7 +12,7 @@ The layout settings of the MaskedEditBox control are discussed in this section.
 
 The size of the MaskedEditBox control can be set according to the needs of the user using the properties discussed below.
 
-Table 347 : Property Table
+
 
 <table>
 <tr>

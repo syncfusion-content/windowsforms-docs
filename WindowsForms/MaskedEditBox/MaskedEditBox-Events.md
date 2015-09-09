@@ -10,7 +10,6 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 349 : Events Table
 
 <table>
 <tr>
@@ -276,7 +275,7 @@ This event is handled to provide custom behavior to any mask characters.
 
 The event handler receives an argument of type MaskCustomValidateArgs containing data related to this event. The following MaskCustomValidateArgs members provide information specific to this event.
 
-Table 350 : Members Table
+
 
 <table>
 <tr>

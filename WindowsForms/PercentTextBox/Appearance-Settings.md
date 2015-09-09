@@ -17,7 +17,7 @@ The Background settings of the PercentTextBox control are discussed below.
 
 The background color of the control can be set using the properties given below.
 
-Table 296: Property Table
+
 
 <table>
 <tr>
@@ -81,7 +81,7 @@ N> The ReadOnly property must be set to 'True' for the above setting to take 
 
 The methods associated with the above properties are given below.
 
-Table 297: Methods Table
+
 
 <table>
 <tr>
@@ -106,7 +106,7 @@ The Foreground settings of the PercentTextBox control are discussed below.
 
 The foreground color of the control can be set using the properties given below.
 
-Table 298: Property Table
+
 
 <table>
 <tr>
@@ -162,7 +162,7 @@ Me.percentTextBox1.ZeroColor = System.Drawing.Color.Orchid
 
 The methods associated with the above properties are given below.
 
-Table 299: Methods Table
+
 
 <table>
 <tr>

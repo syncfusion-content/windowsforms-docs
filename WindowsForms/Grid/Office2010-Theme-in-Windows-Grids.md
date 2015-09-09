@@ -63,7 +63,7 @@ Office2010Theme support for Windows Grids is useful for commercial applications 
 
 ### Properties
 
-_Table 11 38: Properties Table_
+
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ Office2010ScrollBarsColorScheme</td><td>
 
 The following event is used when applying Office2010 theme to Essential Windows Grids.
 
-_Table 139: Events Table_
+
 
 <table>
 <tr>
@@ -111,7 +111,7 @@ Occurs when the ThemesEnabled property is changed.</td></tr>
 
 The following events occur when GridOfficeScrollBars are applied to Essential Windows Grids.
 
-_Table 140: Events Table_
+
 
 <table>
 <tr>

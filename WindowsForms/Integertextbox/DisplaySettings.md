@@ -13,7 +13,7 @@ This section discusses the display settings of the IntegerTextBox control.
 
 The IntegerTextBox provides a list of properties to set the display characteristics associated with the integer value.
 
-Table 262 : Property Table
+
 
 <table>
 <tr>
@@ -75,11 +75,11 @@ A Sample which demonstrates the Display Settings of IntegerTextBox control is av
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### [Value Settings](http://docs.syncfusion.com/windowsforms/tools/editorsPackage/editorscontrols/percentTextBox/valuesettings)
+ [Value Settings](/windowsforms/percenttextbox/valuesettings)
 
 The various values of the IntegerTextBox control and their settings are given below.
 
-Table 263 : Property Table
+
 
 <table>
 <tr>
@@ -126,11 +126,11 @@ Me.integerTextBox1.BindableValue = 777
 ![](Overview_images/Overview_img443.png) 
 
 
-### Null Value Settings
+## Null Value Settings
 
 There are various settings that can be applied to the IntegerTextBox control when the value of the control is set to 'Null'. These settings are illustrated below.
 
-Table 264 : Property Table
+
 
 <table>
 <tr>
@@ -183,11 +183,11 @@ Me.integerTextBox1. AllowNull = True
 ![](Overview_images/Overview_img444.png) 
 
 
-### Min and Max Value Settings
+## Min and Max Value Settings
 
 The minimum and maximum values of the IntegerTextBox can be set using the below given properties.
 
-Table 265 : Property Table
+
 
 <table>
 <tr>

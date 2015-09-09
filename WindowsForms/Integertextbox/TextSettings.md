@@ -13,7 +13,7 @@ This section discusses the text settings of the IntegerTextBox control.
 
 The text associated with the IntegerTextBox control can be set and customized using the below given settings.
 
-Table 267 : Property Table
+
 
 <table>
 <tr>
@@ -78,7 +78,7 @@ Me.integerTextBox1.ClipText = "12"
 
 The methods associated with the above properties are given below.
 
-Table 268 : Methods Table
+
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ Clip Mode
 
 The formatting for the text can be enabled or disabled by using the property given below.
 
-Table 269 : Property Table
+
 
 <table>
 <tr>
@@ -183,7 +183,7 @@ Me.integerTextBox1.FormattedText = "Hello"
 
 The text can be displayed from right to left for RTL languages using this property.
 
-Table 270 : Property Table
+
 
 <table>
 <tr>
@@ -198,7 +198,7 @@ Indicates whether the component should draw right-to-left for RTL languages. The
 
 
 
-> Note: The RightToLeft property will be automatically set to 'True' for RTL languages.
+N> The RightToLeft property will be automatically set to 'True' for RTL languages.
 
 {%highlight c#%}
 
@@ -221,11 +221,11 @@ Me.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 ![](Overview_images/Overview_img450.png) 
 
 
- _Note: The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
+N> The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
 
 ### OverflowIndicatorToolTipText
 
-Table 271 : Property Table
+
 
 <table>
 <tr>

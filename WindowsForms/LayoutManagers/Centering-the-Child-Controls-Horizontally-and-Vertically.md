@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Centering-the-Child-Controls-Horizontally-and-Vertically
-description: centering the child controls horizontally and vertically
+title: Centering the Child Controls Horizontally and Vertically
+description: Centering the Child Controls Horizontally and Vertically
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
---
+---
 
 # Centering the Child Controls Horizontally and Vertically
 
@@ -43,6 +43,6 @@ When resized to a smaller width, two rows are created resulting in the layout sh
 
 {% seealso %}
 
-Configuring FlowLayout, FlowLayout - Configuring Child Controls, Enabling Constrained FlowLayout on a Container
+[Configuring FlowLayout](/windowsforms/layoutmanagers/creating-a-simple-layout#configuring-layout-manager), [FlowLayout - Configuring Child Controls](/windowsforms/layoutmanagers/flowlayout#configuring-child-controls), [Enabling Constrained FlowLayout on a Container](/windowsforms/layoutmanagers/flowlayout#enabling-constrained-flowlayout-on-a-container)
 
 {% endseealso %}

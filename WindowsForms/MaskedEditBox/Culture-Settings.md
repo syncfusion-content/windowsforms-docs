@@ -10,7 +10,7 @@ documentation: ug
 
 This section discusses the culture settings of the MaskedEditBox control.
 
-Table 334 : Property Table
+
 
 <table>
 <tr>

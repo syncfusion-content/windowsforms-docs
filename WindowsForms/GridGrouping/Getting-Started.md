@@ -522,7 +522,7 @@ Click New Connection. ChooseData Source dialog box will be displayed.
 
 
 
-4. Add Connection dialog box will be opened without the Database file name entry set. Click Browse and browse to the following path: _C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb_ (this path will vary according to your installation location). Click OK.
+4.Add Connection dialog box will be opened without the Database file name entry set. Click Browse and browse to the following path: _C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb_ (this path will vary according to your installation location). Click OK.
 
 
 
@@ -612,7 +612,7 @@ The steps in this lesson are for use with Visual Studio 2013 and .NET 4.5.1. You
 
 
 
-2. In the Choose a Data Source Type window, click Database, and then click Next.
+2.In the Choose a Data Source Type window, click Database, and then click Next.
 
 
 
@@ -1103,7 +1103,7 @@ Next i
 
 {% endhighlight %}
 
-4. Bind the grid grouping control to this data table by setting its DataSource property.
+4.Bind the grid grouping control to this data table by setting its DataSource property.
 
 
 
@@ -1175,7 +1175,7 @@ The steps in this lesson are for use with Visual Studio 2005 and .NET 2.0. You c
 
 
 
-4. Click New Connection. The Add Connection dialog box will be displayed.
+4.Click New Connection. The Add Connection dialog box will be displayed.
 
 
 
@@ -1459,7 +1459,7 @@ _Figure_ _113__: Select Database_
 
 
 
-3. In the Choose a Database Model window, click Dataset, and then click Next.
+3.In the Choose a Database Model window, click Dataset, and then click Next.
 
 
 

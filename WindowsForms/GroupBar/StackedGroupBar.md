@@ -10,7 +10,7 @@ documentation: ug
 
 When the GroupBar is in StackedMode, its header height can be controlled by HeaderHeight property.
 
-_Table 550: Property Table_
+
 
 <table>
 <tr>

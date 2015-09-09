@@ -27,7 +27,7 @@ When a style is not set in a style info object, it inherits the style from the p
 
 Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 
-_Table 530: Property Table_
+
 
 <table>
 <tr>
@@ -45,7 +45,6 @@ StandardStyle is the default style for the nodes. It can be edited using MultiCo
 
 The TreeViewAdv control provides the below default styles which can be edited through BaseStyles Collection Editor also. In BaseStyle Collection Editor, StandardColumnStyle represents Standard - Column, StandardStyle represents Standard Styles and StandardSubItemStyle represents Standard - SubItem. User can customize these styles and apply to specific nodes through Nodes Collection Editor.
 
-_Table 531: Property Table_
 
 <table>
 <tr>
@@ -69,12 +68,12 @@ Indicates the style that all the subitems will inherit from.</td></tr>
 
  ![](Styles-Architecture_images/Styles-Architecture_img1.jpeg) 
  
- Figure : Default Base Styles
+
 
 
 User can also add their own styles using this BaseStyles Collection Editor. The styles which can be added by the users are as follows.
 
-_Table 532: Styles Table_
+
 
 <table>
 <tr>
@@ -107,21 +106,21 @@ We can modify the background for all the children of a parent node by editing th
 
 ![](Styles-Architecture_images/Styles-Architecture_img2.jpeg) 
 
-Figure : StandardStyle settings using the Property Grid
+
 
 
 The below image displays a gradient style for all the columns of the MultiColumnTreeView control.
 
 ![](Styles-Architecture_images/Styles-Architecture_img3.jpeg) 
 
-Figure : Gradient = "BackwardDiagonal; DarkKhaki, OldLace"
+
 
 
 ### StandardStyle Settings
 
 The below properties lets you customize the standard style settings.
 
-_Table 533: Styles Table_
+
 
 <table>
 <tr>
@@ -279,18 +278,18 @@ Specifies the sort type of the node.</td></tr>
 
 Make a Node's Style Inherit from Another Base Style
 
-Apart from the default style (Standard Style), we can also create custom Base styles using the BaseStyles Collection Editor. Select the Base Style option, then click Add Style.
+Apart from the default style [Standard Style](#standardstyle-settings), we can also create custom Base styles using the BaseStyles Collection Editor. Select the Base Style option, then click Add Style.
 
  ![](Styles-Architecture_images/Styles-Architecture_img4.jpeg) 
  
- Figure : Base Style option Selected
+
 
 
 This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
  ![](Styles-Architecture_images/Styles-Architecture_img5.jpeg) 
  
- Figure : BaseStyle property in the TreeNodeAdv NodeCollection Editor
+
 
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
@@ -303,7 +302,7 @@ This overrides the Standard Style settings for the specified nodes and displays 
 
 The below properties lets you customize the Base style settings.
 
-_Table 534: Property Table_
+
 
 <table>
 <tr>
@@ -465,7 +464,7 @@ TreeView lets you add node level styles using the BaseStyles Collection Editor. 
 
 ![](Styles-Architecture_images/Styles-Architecture_img7.jpeg)
 
-Figure : Node Level Style
+
 
 
 You can apply this style to any of the node by using TreeNodeAdv.BaseStyle property for a particular node. Refer to Style Settings table in Node Specific Style.
@@ -479,7 +478,7 @@ Standard - Column style is default style that will applied for all the columns o
 
 The below properties controls the appearance of the columns.
 
-_Table 535: Property Table_
+
 
 <table>
 <tr>
@@ -550,14 +549,14 @@ The editor also lets you add user defined column styles like other styles as fol
 
 ![](Styles-Architecture_images/Styles-Architecture_img8.jpeg) 
 
-Figure : New ColumnStyle1 Added
+
 
 
 The user-defined column style can be applied to any of the columns, using Columns Editor. This setting overrides the default settings.
 
 ![](Styles-Architecture_images/Styles-Architecture_img9.jpeg) 
 
-Figure : Column Style applied by using the Columns Editor
+
 
 
 ## SubItem Styles
@@ -568,7 +567,7 @@ Standard - SubItem style in the BaseStyles Collection Editor will be applied by 
 
 The below properties lets you customize the subitems using the Styles editor.
 
-_Table 536: Property Table_
+
 
 <table>
 <tr>
@@ -622,7 +621,7 @@ User can add and define a SubItem style using the BaseStyles Collection Editor a
 
 ![](Styles-Architecture_images/Styles-Architecture_img10.jpeg)
 
-Figure 913: SubItem Style added to the Styles Editor
+
 
 {% seealso %} 
 

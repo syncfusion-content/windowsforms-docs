@@ -12,7 +12,7 @@ This section discusses the text settings of the MaskedEditBox control.
 
 The text associated with the MaskedEditBox control can be set and customized using the below given settings.
 
-Table 335 : Property Table
+
 
 <table>
 <tr>
@@ -89,7 +89,7 @@ Me.maskedEditBox1.DrawActiveWhenDisabled = True
 
 The methods associated with the above properties are given below.
 
-Table 336 : Methods Table
+
 
 <table>
 <tr>
@@ -126,7 +126,7 @@ Selects a range of text in the TextBox.</td></tr>
 
 The formatting for the text can be enabled or disabled using the property given below.
 
-Table 337 : Property Table
+
 
 <table>
 <tr>
@@ -158,7 +158,6 @@ Me.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeLit
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
 
-Table 338 : Property Table
 
 <table>
 <tr>

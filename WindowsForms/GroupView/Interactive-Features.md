@@ -12,7 +12,7 @@ User can determine whether the particular GroupView Item is selected or not usin
 
 ButtonView can be enabled in the GroupView control at design-time by setting the SelectedItem property to integer values which in turn represents the GroupView Item. ClipSelectionBounds displays a white border around the selected GroupView Item.
 
-_Table_ _575_: _ Property Table_
+
 
 <table>
 <tr>
@@ -58,13 +58,13 @@ Figure 987: ButtonView of the 'Cut' Item
 The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips 
 property must be set to 'True' in order to make the tooltip visible.
 
-_Table_ _576_: _ Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Property</td><td>
-Description</td></tr>
+<th>
+GroupView Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ToolTipText</td><td>
@@ -100,4 +100,3 @@ Me.groupView1.ShowToolTips = True
 
 
 ![](Overview_images/Overview_img86.jpeg) 
-Figure : ToolTip displayed for "Copy" Item

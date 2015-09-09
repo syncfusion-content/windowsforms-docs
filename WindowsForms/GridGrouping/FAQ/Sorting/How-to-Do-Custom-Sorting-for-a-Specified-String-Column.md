@@ -11,7 +11,7 @@ documentation: ug
 
 You can customize the sorting and set the rows with an empty string to the last. This can be done by making use of the Compare method of IComparer Class. You can write your custom code for the Compare() method where you can set the empty string rows as last. This can be achieved by finding the length of the string in the compare() method and canceling its sorting thereby pushing the empty strings at the last.
 
-Example
+## Example
 
 Here is the code for implementing the string length compare method.
 

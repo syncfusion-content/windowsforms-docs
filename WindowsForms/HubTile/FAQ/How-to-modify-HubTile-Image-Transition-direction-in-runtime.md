@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: How to modify HubTile Image Transition direction in runtime
+description: How to modify HubTile Image Transition direction in runtime
 platform: WindowsForms
 control: HubTile
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 
 You can set HubTile SlideTransition property to achieve this.
 
-_Table 984: Property Table_
+
 
 <Table>
 <tr>

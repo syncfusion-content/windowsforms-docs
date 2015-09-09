@@ -13,7 +13,7 @@ This section discusses the display settings of the PercentTextBox control.
 
 The PercentTextBox provides a list of properties to set the display characteristics of the percentage.
 
-Table 283: Property Table
+
 
 <table>
 <tr>

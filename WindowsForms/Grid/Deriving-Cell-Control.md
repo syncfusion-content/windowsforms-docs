@@ -17,7 +17,7 @@ In the next sections, you will learn how to derive cell control from, _C:\Syncfu
 
 Also, _C:\Syncfusion\EssentialStudio\VersionNumber\Windows\Grid.Windows\Samples\[Version Number]\CustomCellTypes\DropDownFormAndUserControlSample_ sample illustrates how to add your own cell controls. It has two derived cell controls, one drops a modal form when a cell button is pressed and the other displays a pop-up UserControl when a cell button is pressed. Among the samples shipped with Grid control, there are several that provide custom cell types. The following table lists some of the samples.
 
-_Table 25: Samples_
+
 
 <table>
 <tr>
@@ -62,9 +62,7 @@ RepeaterUserControl</td><td>
 Shows how you can use a derived cell control in a grid to create a repeater control used to edit DataTables.</td></tr>
 </table>
 
-{% seealso %}
 
-{% endseealso %}
 
 ## GridCellModelBase
 
@@ -158,7 +156,7 @@ End Class
 
 The class derived from GridCellRendererBase handles drawing of the cell and user interaction aspect of the cell architecture. It takes care of things like the handling of the mouse and keyboard messages. Some of the virtual members you might override are listed in the following table.
 
-_Table 26: Virtual members to override_
+
 
 <table>
 <tr>

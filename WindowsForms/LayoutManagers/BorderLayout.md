@@ -22,19 +22,19 @@ A sample which demonstrates the BorderLayout is available in the below sample in
 
 {% seealso %}
 
-Creating a Simple Layout, 
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)
 
 {% endseealso %}
 
-# Configuring BorderLayout
+## Configuring BorderLayout
 
 The configuration settings for the BorderLayout have been discussed in this topic.
 
-## Spacing
+### Spacing
 
 The horizontal and the vertical gap between the Child controls can be set using the properties given below.
 
-_Table431: Property Table_
+
 
 <table>
 <tr>
@@ -78,7 +78,7 @@ Me.borderLayout1.VGap = 10
 
 {% seealso %}
 
-Margin Settings, Border Layout - Configuring Child Controls
+[Margin Settings](/windowsforms/layoutmanagers/layout-manager-settings#margin-settings), [Border Layout - Configuring Child Controls](#configuring-child-controls)
 
 {% endseealso %}
 
@@ -86,7 +86,7 @@ Margin Settings, Border Layout - Configuring Child Controls
 
 The Child controls can be aligned to various positions (North, South, East, West and Center) using the property given below.
 
-Table 432: Property Table
+
 
 <table>
 <tr>
@@ -131,6 +131,6 @@ N> BorderLayout allows only one control to be aligned along a particular layout 
 
 {% seealso %}
 
-Configuring BorderLayout
+[Configuring BorderLayout](#configuring-borderlayout)
 
 {% endseealso %}

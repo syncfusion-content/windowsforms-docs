@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: How to add HubTile using code example
+description: How to add HubTile using code example
 platform: WindowsForms
 control: HubTile
 documentation: ug

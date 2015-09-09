@@ -116,7 +116,7 @@ Me.tabBarPage3.Controls.Add(Me.gridControl3)
 
 A dynamic-splitter window can be embedded in Essential Grid to show multiple views of the same grid by using a Splitter. This MS Excel-like feature enables you to view more than one copy of a worksheet and scroll through each pane of worksheet independently. The panes work simultaneously, i.e., the changes made in one pane are reflected in the other. The splitter can be scrolled by placing the mouse pointer over it, holding down the left mouse button and dragging it to the required position. It can be split horizontally and vertically. Following are the events associated with the Splitter control.
 
-_Table 28: Events associated with the Splitter control_
+
 
 <table>
 <tr>
@@ -401,7 +401,7 @@ _\<Version>\Windows\Grid.Windows\Samples\Editing \Find-Replace Demo_
 
 Essential Grid has changed the unhide column operation to emulate the behavior found in Microsoft Excel. Previously, hidden columns could be shown by double-clicking a row. This behavior has been disabled so that applications created using Essential Grid will be similar to the hide/unhide behavior found in Microsoft Excel.
 
-_Table29: Property Table_
+
 
 <table>
 <tr>
@@ -444,7 +444,7 @@ To disable unhide column by double- clicking, set the UnHideColsOnDblClick prope
 
 This feature is used to highlight the corresponding row and column headers of one or more cells that you selected. Using the MarkRowHeader and MarkColHeader properties, you can enable highlighting the row and column headers of the selected cells.
 
-_Table30: Properties Table_
+
 
 <table>
 <tr>

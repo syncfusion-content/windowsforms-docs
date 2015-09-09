@@ -15,7 +15,7 @@ By default, data rows having matching values in a grouping column will be combin
 
 Custom Grouping can be achieved by adding a custom Categorizer object to SortColumnDescriptor that defines the group. You can also add a custom Comparer object to the SortColumnDescriptor. When a column is grouped, it is first sorted. The Comparer object allows you to control how sorting is done on your column. Once the column is sorted, custom Categorizer is used to determine which adjacent records in the sorted column belong to the same group. To create custom Comparer and Categorizer objects, you have to define classes that implement either IComparer (one method) or ICategorizer (two methods).
 
-Example
+### Example
 
 Say you have a column with values for 0 to 50, and you want to have them grouped so that values less than 10 are in one group, values 10-20 are in another, values 20-30 in another, and so on. The following code example illustrates how to achieve this by using Custom Categorizer.
 
@@ -544,7 +544,7 @@ Given below is a sample screen shot.
 
 Custom Sorting allows you to implement custom sorting logic when the standard sorting techniques do not meet your needs. To support custom sorting in Grid Grouping control, the user needs to add an IComparer object and handle one event. The Comparer object allows you to control how the sorting is done on the column. This is the place where you can define your own sorting logic. After customizing the sorting logic through IComparer, you can make grouping grid use this special IComparer by handling an event.
 
-Example
+### Example
 
 Consider a scenario where one of the data columns of your datasource consists of Date-Numeric combination values. In this case, default sorting will not produce results we desire. The sorting has to be done first on date values and then on numeric values. Hence, we need to write custom sorting logic by defining special IComparer object. The grouping grid could then be made to use this custom comparer by handling an event that gets fired while sorting columns.
 
@@ -887,7 +887,7 @@ This section deals with implementation of Custom Summaries. You can go for custo
 
 Custom Summaries can be created by subclassing SummaryBase class and by specifying SummaryType as Custom. In the derived class, you can customize CreateSummaryMethod in the way you want. It is the right place to define the way summaries need to be calculated. You can call this method each time the summary is queried, by assigning Custom CreateSummaryDelegate to CreateSummaryMethod property of SummaryDescriptor inside the QueryCustomSummary event handler. Optionally, you can also specify CreateSummaryFromElementMethod if summaries need to be calculated for elements other than records.
 
-Example
+### Example
 
 Here is an example that calculates summaries for both Minimum and Maximum values of the Date field. This can be achieved by using a custom summary field. For Custom summary, the summary Base class is derived and combine method is used to get the new summary value by comparing it with other summary values.
 

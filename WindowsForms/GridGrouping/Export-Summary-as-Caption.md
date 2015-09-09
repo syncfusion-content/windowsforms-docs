@@ -11,7 +11,7 @@ documentation: ug
 
 This feature enables you to export the summary as caption while exporting GridGroupingControl to Excel. 
 
-_Table 131: Property Table_
+
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ Searches can be performed in two modes:
 
 2.Search for text in particular columns.
 
-_Table 132: Method Table_
+
 
 <table>
 <tr>

@@ -28,7 +28,7 @@ A Sample which demonstrates the GridBagLayout is available in the below sample i
 
 {% seealso %}
 
- Creating a Simple Layout, 
+[ Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)
 
  {% endseealso %}
  
@@ -70,7 +70,7 @@ The following screen shot shows four buttons with non-zero weights with the Grid
 
 The next setting determines the weights for each row and column. The GridBagLayout determines the width and height of the rows based on the preferredsize setting of the Child components. Then it allocates the extra horizontal and vertical space available between these columns and rows based on their weights. The weight of a row or column is basically the largest weight of all the Child components in that row or column.
 
-_Table459: Constraints Table_
+
 
 <table>
 <tr>
@@ -108,7 +108,7 @@ N> The GetLayoutWeights() method returns the row and column weights of the curre
 
 The Child controls by default span a single cell with these properties set to (1, 1). However, it can be made to span multiple rows and / or columns by changing these properties.
 
-_Table460: Constraints Table_
+
 
 <table>
 <tr>
@@ -136,7 +136,7 @@ The below screen shot shows button1 spanning 2 columns (CellSpanX = 2 and Fill =
 
 Once a Child control has been allocated the layout area (usually one or more cells) in the virtual grid, it may be anchored at the sides or the corners of that layout area. This can be done using the property given below.
 
-_Table461: Constraints Table_
+
 
 <table>
 <tr>
@@ -162,7 +162,7 @@ N> Anchoring is done within the Child control's layout area.
 
 You can also make the cell fill its layout area using the below given property.
 
-_Table462: Constraints Table_
+
 
 <table>
 <tr>
@@ -186,7 +186,7 @@ The following screen shot shows the four buttons with different fill settings. I
 
 The amount that should be added to the component's declared preferred size, when determining the preferred size for that component during layout can be specified using the properties given below.
 
-_Table463: Constraints Table_
+
 
 <table>
 <tr>
@@ -210,7 +210,7 @@ For example, if IPadX property is set to '10', then the preferred width of the C
 
 The padding that is to be added around the Child component can be specified using the property given below. Similar to the IPad settings above, this space will be added to the Child control's preferred size when calculating the layout. However, unlike the IPad settings, this will not increase the size of the Child control, but indicates the minimum padding to be applied around the Child control.
 
-_Table464: Constraints Table_
+
 
 <table>
 <tr>
@@ -232,7 +232,6 @@ The buttons below are all of equal non-zero weights and set to Fill.Both. Howeve
 
 The methods associated with the above properties are given below.
 
-_Table465: Methods Table_
 
 <table>
 <tr>
@@ -280,7 +279,7 @@ Me.gridBayLayout.SetConstraints(Me.button1, New Syncfusion.Windows.Forms.Tools.G
 
 {% seealso %}
 
-Rearranging the Controls laid out by FlowLayout, Rearranging the Controls laid out by GridLayout
+[Rearranging the Controls laid out by FlowLayout](/windowsforms/layoutmanagers/flowlayout#rearranging-the-controls-laid-out-by-flowlayout), [Rearranging the Controls laid out by GridLayout](/windowsforms/layoutmanagers/gridlayout#rearranging-the-controls-laid-out-by-gridlayout)
 
 {% endseealso %}
 

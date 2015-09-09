@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: How to enable / disable HubTile rotation transition in runtime
+description: How to enable / disable HubTile rotation transition in runtime
 platform: WindowsForms
 control: HubTile
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve it by setting HubTile TileType property as DefaultType, so that rotation transition will be disabled.
 
-_Table 986: Property Table_
+
 
 <Table>
 <tr>

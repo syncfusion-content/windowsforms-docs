@@ -79,7 +79,7 @@ The Pivot Computation Information window is used to change or edit value format 
 
 
 
-_Table_ _12_: _Property Table_
+
 
 <table>
 <tr>

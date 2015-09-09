@@ -12,13 +12,12 @@ documentation: ug
 
 The following properties can be used to change the height and font of the header of the GroupBar Items.
 
-_Table_ _547__: Property Table_
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 GroupBarItemHeight</td><td>
@@ -51,24 +50,24 @@ Me.groupBar1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontSt
 
 
 ![](Overview_images/Overview_img29.jpeg) 
-Figure 940: GroupBar Items with Header Font = "Verdana, 9F, Regular"
+
 
 
  ![](Overview_images/Overview_img30.jpeg)
-Figure 941: GroupBar Items with Header Height = "30"
+
 
 
 ## Header BackColor and ForeColor Settings
 
 Different colors can be applied to the header and header text of the GroupBar Items. This can be done using the below given properties.
 
-_Table_ _548__: Property Table_
+
 
 <table>
 <tr>
-<td>
-GroupBar Property</td><td>
-Description</td></tr>
+<th>
+GroupBar Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeaderBackColor</td><td>
@@ -102,13 +101,13 @@ Figure 942: GroupBar Items with Background Color = "LavenderBlush" and Foregroun
 
 The methods given below are used to reset the above properties.
 
-_Table_ _549__: Property Table_
+
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ResetHeaderFont</td><td>

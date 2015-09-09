@@ -48,6 +48,6 @@ It is very simple to use more than one Layout Manager in a single form.
 
 {% seealso %}
 
-Creating a Simple Layout, How to programmatically nest various layouts?
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [How to programmatically nest various layouts?](/windowsforms/layoutmanagers/faq/how-to-programmatically-nest-various-layouts)
 
 {% endseealso %}

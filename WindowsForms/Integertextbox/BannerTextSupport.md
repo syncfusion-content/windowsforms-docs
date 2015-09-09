@@ -9,7 +9,7 @@ documentation: ug
 
 # Banner Text Support
 
-The IntegerTextBox control can display banner text in the text field, at run time. A BannerTextProvider Component should be available for this purpose. Also, we need to set AllowNull, NullString and Text properties as below, to make this feature effective.
+The IntegerTextBox control can display banner text in the text field, at run time. A [BannerTextProvider](/windowsforms/bannertextprovider/overview) should be available for this purpose. Also, we need to set AllowNull, NullString and Text properties as below, to make this feature effective.
 
 {%highlight c#%}
 

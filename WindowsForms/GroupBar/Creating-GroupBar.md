@@ -20,29 +20,29 @@ To create a GroupBar through designer,
 
  ![](Overview_images/Overview_img5.jpeg) 
  
- Figure 918: GroupBar in Toolbox
+
 
 * To add a GroupBar Item using design-time verbs, follow the procedure given below.
 * To add a GroupBar Item using the design-time verbs, right-click on the GroupBar and select the Add Group option. This adds a GroupBar Item to the GroupBar control.
 
  ![](Overview_images/Overview_img6.jpeg)
  
- Figure 919: "Add Group" Option Displayed on Right-Clicking the GroupBar Control
+ 
 
 * To add a GroupBar Item using the property browser, follow the procedure given below.
 * In the Properties window, select the GroupBarItems property. The GroupBarItem Collection Editor will be opened. Click Add, a GroupBar Item will be added to the GroupBar control.
 
 ![](Overview_images/Overview_img7.jpeg) 
 
-Figure 920: "GroupBarItems" Property Displayed in the Properties Window
+
 
 ![](Overview_images/Overview_img8.jpeg) 
 
-Figure 921: GroupBarItem Collection Editor
+
 
 ![](Overview_images/Overview_img9.jpeg)
  
-Figure 922: GroupBar with a GroupBar Item
+
 
 You can also add child controls to the GroupBar. Refer Integrating Child Controls to the GroupBarItem topic, for 
 information on this topic.
@@ -54,108 +54,115 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 
 1. Include the required namespace.
 
-{% highlight C# %}  
+   ~~~ cs
 
-using Syncfusion.Windows.Forms.Tools;
+     using Syncfusion.Windows.Forms.Tools;
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
-{% highlight vbnet %} 
+   ~~~ vbnet
 
-Imports Syncfusion.Windows.Forms.Tools
+		Imports Syncfusion.Windows.Forms.Tools
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 2. Create instances of GroupBar and GroupBar Items.
 
-{% highlight C# %} 
+   ~~~ cs
 
 
-private Syncfusion.Windows.Forms.Tools.GroupBar groupBar1;
+		private Syncfusion.Windows.Forms.Tools.GroupBar groupBar1;
 
-private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem1;
+		private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem1;
 
-private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem2;
+		private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem2;
 
-private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem3;
+		private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem3;
 
+   ~~~
+   {:.prettyprint}
+   
+   ~~~ vbent
+		this.groupBar1 = new GroupBar();
 
+		this.groupBarItem1 = new GroupBarItem();
 
-this.groupBar1 = new GroupBar();
+		this.groupBarItem2 = new GroupBarItem();
 
-this.groupBarItem1 = new GroupBarItem();
-
-this.groupBarItem2 = new GroupBarItem();
-
-this.groupBarItem3 = new GroupBarItem();
-
- {% endhighlight %}
-
-
-{% highlight vbnet %} 
-
+		this.groupBarItem3 = new GroupBarItem();
+   ~~~
+   {:.prettyprint}
 
 
-Private groupBar1 As Syncfusion.Windows.Forms.Tools.GroupBar
-
-Private groupBarItem1 As Syncfusion.Windows.Forms.Tools.GroupBarItem
-
-Private groupBarItem2 As Syncfusion.Windows.Forms.Tools.GroupBarItem
-
-Private groupBarItem3 As Syncfusion.Windows.Forms.Tools.GroupBarItem
+   ~~~ cs
 
 
 
-Me.groupBar1 = New GroupBar()
+		Private groupBar1 As Syncfusion.Windows.Forms.Tools.GroupBar
 
-Me.groupBarItem1 = New GroupBarItem()
+		Private groupBarItem1 As Syncfusion.Windows.Forms.Tools.GroupBarItem
 
-Me.groupBarItem2 = New GroupBarItem()
+		Private groupBarItem2 As Syncfusion.Windows.Forms.Tools.GroupBarItem
 
-Me.groupBarItem3 = New GroupBarItem()
+		Private groupBarItem3 As Syncfusion.Windows.Forms.Tools.GroupBarItem
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
+
+   ~~~ vbent
+		Me.groupBar1 = New GroupBar()
+
+		Me.groupBarItem1 = New GroupBarItem()
+
+		Me.groupBarItem2 = New GroupBarItem()
+
+		Me.groupBarItem3 = New GroupBarItem()
+
+   ~~~
+   {:.prettyprint}
 
 3. Add GroupBar Items to the GroupBar and specify the size of the GroupBar. Finally add a GroupBar control to the Form.
 
-{% highlight C# %}  
+   ~~~ cs
 
 
+		this.groupBar1.GroupBarItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupBarItem[]{this.groupBarItem1, this.groupBarItem2, this.groupBarItem3});
 
-this.groupBar1.GroupBarItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupBarItem[]{this.groupBarItem1, this.groupBarItem2, this.groupBarItem3});
+		this.groupBar1.Size = new System.Drawing.Size(192, 120);
 
-this.groupBar1.Size = new System.Drawing.Size(192, 120);
+		this.Controls.Add(this.groupBar1);
 
-this.Controls.Add(this.groupBar1);
+		this.groupBarItem1.Text = "GroupBarItem0";
 
-this.groupBarItem1.Text = "GroupBarItem0";
+		this.groupBarItem2.Text = "GroupBarItem1";
 
-this.groupBarItem2.Text = "GroupBarItem1";
+		this.groupBarItem3.Text = "GroupBarItem2";
 
-this.groupBarItem3.Text = "GroupBarItem2";
+   ~~~
+   {:.prettyprint}
 
-{% endhighlight %}
-
-{% highlight vbnet %} 
-
+   ~~~ vbnet
 
 
-Me.groupBar1.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarItem(){Me.groupBarItem1, Me.groupBarItem2, Me.groupBarItem3})
+		Me.groupBar1.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarItem(){Me.groupBarItem1, Me.groupBarItem2, Me.groupBarItem3})
 
-Me.groupBar1.Size = New System.Drawing.Size(192, 120)
+		Me.groupBar1.Size = New System.Drawing.Size(192, 120)
 
-Me.Controls.Add(Me.groupBar1)
+		Me.Controls.Add(Me.groupBar1)
 
-Me.groupBarItem1.Text = "GroupBarItem0"
+		Me.groupBarItem1.Text = "GroupBarItem0"
 
-Me.groupBarItem2.Text = "GroupBarItem1"
+		Me.groupBarItem2.Text = "GroupBarItem1"
 
-Me.groupBarItem3.Text = "GroupBarItem2"
+		Me.groupBarItem3.Text = "GroupBarItem2"
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
  ![](Overview_images/Overview_img10.jpeg) 
  
- Figure 923: GroupBar with Three GroupBar Items Added
+

@@ -13,7 +13,7 @@ PivotCharts typically have two axes that are used to measure and categorize data
 
 PivotChart provides properties to set custom titles for the axes. You can set the title text for an axis by using Title property. Customize this text by using TitleColor and TitleFont properties.
 
-_Table_ _1_: _Chart Axis properties_
+
 
 <table>
 <tr>
@@ -67,7 +67,7 @@ Me.pivotChart1.PrimaryXaxis.TitleFont = New Font("Arial", 10)
 
 The Grid Lines in the PivotChart defines the intervals in the axes that can be customized by using the following properties. 
 
-_Table_ _2_: _Chart control properties_
+
 
 <table>
 <tr>

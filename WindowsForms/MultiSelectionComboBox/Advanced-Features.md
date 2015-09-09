@@ -69,7 +69,7 @@ Me.MultiSelectionComboBox1.AutoCompleteMatchMode = AutoCompleteMatchMode.Disable
 
 MultiSelectionComboBox contains support to group its drop down items based on initial character. You can enable or disable this support using its ShowGroups property.
 
-![6](Overview_images/Overview_img343.png) 
+![](Overview_images/Overview_img343.png) 
 
 
 The following code sample illustrates you on how to enable Grouping in MultiSelectionComboBox Dropdown.

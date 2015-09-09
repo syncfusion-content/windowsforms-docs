@@ -49,7 +49,7 @@ public new GridRangeStyleCollection RangeStyles
 
 
 
-&lt;Browsable(False), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)&gt; 
+[Browsable(False), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 
 Public Shadows Property RangeStyles() As GridRangeStyleCollection
 

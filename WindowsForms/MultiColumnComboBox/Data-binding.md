@@ -186,28 +186,28 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 4. Add the XML Schema as shown below. 
 
    ~~~ xml
-   <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
-   <xs:complexType>
-   <xs:choice maxOccurs="unbounded">
-   <xs:element name="roster">
-   <xs:complexType>
-   <xs:sequence>
-   <xs:element name="PositionID" type="xs:string" minOccurs="0" />
-   <xs:element name="EmployeeID" type="xs:string" minOccurs="0" />
-   <xs:element name="PersonID" type="xs:string" minOccurs="0" />
-   <xs:element name="FirstName" type="xs:string" minOccurs="0" />
-   <xs:element name="LastName" type="xs:string" minOccurs="0" />
-   <xs:element name="BizUnitName" type="xs:string" minOccurs="0" />
-   <xs:element name="Title" type="xs:string" minOccurs="0" />
-   <xs:element name="FunctionalTitle" type="xs:string" minOccurs="0" />
-   <xs:element name="CorporateID" type="xs:string" minOccurs="0" />
-   <xs:element name="UserID" type="xs:int" minOccurs="0" />
-   </xs:sequence>
-   </xs:complexType>
-   </xs:element>
-   </xs:choice>
-   </xs:complexType>
-   </xs:element>
+	   <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+	   <xs:complexType>
+	   <xs:choice maxOccurs="unbounded">
+	   <xs:element name="roster">
+	   <xs:complexType>
+	   <xs:sequence>
+	   <xs:element name="PositionID" type="xs:string" minOccurs="0" />
+	   <xs:element name="EmployeeID" type="xs:string" minOccurs="0" />
+	   <xs:element name="PersonID" type="xs:string" minOccurs="0" />
+	   <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+	   <xs:element name="LastName" type="xs:string" minOccurs="0" />
+	   <xs:element name="BizUnitName" type="xs:string" minOccurs="0" />
+	   <xs:element name="Title" type="xs:string" minOccurs="0" />
+	   <xs:element name="FunctionalTitle" type="xs:string" minOccurs="0" />
+	   <xs:element name="CorporateID" type="xs:string" minOccurs="0" />
+	   <xs:element name="UserID" type="xs:int" minOccurs="0" />
+	   </xs:sequence>
+	   </xs:complexType>
+	   </xs:element>
+	   </xs:choice>
+	   </xs:complexType>
+	   </xs:element>
 
    ~~~
    {:.prettyprint }
@@ -216,45 +216,45 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 6. Add an XML file (Say newdataset.xml) with the following data. 
 
    ~~~ xml
-   <?xml version="1.0" standalone="yes" ?>
-   <NewDataSet xmlns="http://tempuri.org/NewDataSet.xsd">
-   <roster>
-   <PositionID>12345</PositionID>
-   <EmployeeID>1000</EmployeeID>
-   <PersonID>01</PersonID>
-   <FirstName>Mary</FirstName>
-   <LastName>Elsa</LastName>
-   <BizUnitName>Software</BizUnitName>
-   <Title>Partner</Title>
-   <FunctionalTitle>Microsoft</FunctionalTitle>
-   <CorporateID>23</CorporateID>
-   <UserID>11</UserID>
-   </roster>
-   <roster>
-   <PositionID>345667</PositionID>
-   <EmployeeID>1001</EmployeeID>
-   <PersonID>02</PersonID>
-   <FirstName>Anu</FirstName>
-   <LastName>Roy</LastName>
-   <BizUnitName>Software1</BizUnitName>
-   <Title>Partner</Title>
-   <FunctionalTitle>xx</FunctionalTitle>
-   <CorporateID>56</CorporateID>
-   <UserID>12</UserID>
-   </roster>
-   <roster>
-   <PositionID>4655</PositionID>
-   <EmployeeID>65</EmployeeID>
-   <PersonID>542</PersonID>
-   <FirstName>Sam</FirstName>
-   <LastName>George</LastName>
-   <BizUnitName>HR</BizUnitName>
-   <Title>partner</Title>
-   <FunctionalTitle>yy</FunctionalTitle>
-   <CorporateID>345</CorporateID>
-   <UserID>55</UserID>
-   </roster>
-   </NewDataSet>
+	   <?xml version="1.0" standalone="yes" ?>
+	   <NewDataSet xmlns="http://tempuri.org/NewDataSet.xsd">
+	   <roster>
+	   <PositionID>12345</PositionID>
+	   <EmployeeID>1000</EmployeeID>
+	   <PersonID>01</PersonID>
+	   <FirstName>Mary</FirstName>
+	   <LastName>Elsa</LastName>
+	   <BizUnitName>Software</BizUnitName>
+	   <Title>Partner</Title>
+	   <FunctionalTitle>Microsoft</FunctionalTitle>
+	   <CorporateID>23</CorporateID>
+	   <UserID>11</UserID>
+	   </roster>
+	   <roster>
+	   <PositionID>345667</PositionID>
+	   <EmployeeID>1001</EmployeeID>
+	   <PersonID>02</PersonID>
+	   <FirstName>Anu</FirstName>
+	   <LastName>Roy</LastName>
+	   <BizUnitName>Software1</BizUnitName>
+	   <Title>Partner</Title>
+	   <FunctionalTitle>xx</FunctionalTitle>
+	   <CorporateID>56</CorporateID>
+	   <UserID>12</UserID>
+	   </roster>
+	   <roster>
+	   <PositionID>4655</PositionID>
+	   <EmployeeID>65</EmployeeID>
+	   <PersonID>542</PersonID>
+	   <FirstName>Sam</FirstName>
+	   <LastName>George</LastName>
+	   <BizUnitName>HR</BizUnitName>
+	   <Title>partner</Title>
+	   <FunctionalTitle>yy</FunctionalTitle>
+	   <CorporateID>345</CorporateID>
+	   <UserID>55</UserID>
+	   </roster>
+	   </NewDataSet>
 
    ~~~
    {:.prettyprint }

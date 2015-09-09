@@ -10,7 +10,7 @@ documentation: ug
 
 This section will walk you through the following runtime features of MultiColumnTreeViewAdv Control.
 
-Refer TreeView Package > [RunTime Features](//docs.syncfusion.com/windowsforms/tools)
+Refer TreeView Package > [RunTime Features](/windowsforms/treeview/runtime-features)
 
  
 

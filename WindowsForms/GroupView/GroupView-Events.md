@@ -10,13 +10,13 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _577_: _ Events Table_
+
 
 <table>
 <tr>
-<td>
-GroupView Events</td><td>
-Description</td></tr>
+<th>
+GroupView Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 GroupViewItemHighlighted</td><td>
@@ -86,7 +86,7 @@ End Sub
 {% endhighlight %}
 
 ![](Overview_images/Overview_img88.jpeg) 
-Figure 990: GroupViewItemHighlighted Event Illustrated 
+
 
 ## GroupViewItemRenamed Event
 
@@ -94,13 +94,13 @@ It occurs when a GroupView Item has been renamed by an inplace edit operation.
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. The event properties associated with the GroupItemRenamedEventArgs are as follows.
 
-_Table_ _578_: _ Members Table_
+
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackgroundBrush</td><td>
@@ -454,4 +454,4 @@ End Sub
 {% endhighlight %}
 
 ![](Overview_images/Overview_img89.jpeg) 
-Figure 991: GroupView displaying Context Menu
+

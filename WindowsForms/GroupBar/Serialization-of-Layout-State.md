@@ -14,200 +14,206 @@ The following step-by-step procedure helps you to achieve the same.
 
 1. Include the required namespaces.
 
-{% highlight C# %}  
+   ~~~ cs
 
-using Syncfusion.Windows.Forms;
+		using Syncfusion.Windows.Forms;
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
-using Syncfusion.Runtime.Serialization;
+		using Syncfusion.Runtime.Serialization;
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
-{% highlight vbnet %} 
+   ~~~ vbnet
 
-Imports Syncfusion.Windows.Forms
+		Imports Syncfusion.Windows.Forms
 
-Imports Syncfusion.Windows.Forms.Tools
+		Imports Syncfusion.Windows.Forms.Tools
 
-Imports Syncfusion.Runtime.Serialization
+		Imports Syncfusion.Runtime.Serialization
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 2. Drag and drop a GroupBar control from the toolbox onto the form, add GroupBar Items using the GroupBar Item CollectionEditor and add two buttons to the form for 'Load' and 'Save' as shown below.
 
-![](Overview_images/Overview_img43.jpeg) 
-Figure 952: Form with GroupBar Control, Load and Save Buttons
+   ![](Overview_images/Overview_img43.jpeg) 
+
 
 3. Store the layout information of the selected GroupBar Item in an XML file using the AppStateSerializer class. In the Form_Closing and Save_Button click, call the following method,
 
-{% highlight C# %}  
+   ~~~ cs
 
-private void SaveState ()
+		private void SaveState ()
 
-{
+		{
 
-// Create a temporary storage.
+		// Create a temporary storage.
 
-ArrayList temp = new ArrayList();
+		ArrayList temp = new ArrayList();
 
-foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
+		foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
 
-{
+		{
 
-// Store the index of each GroupBar Item in the Navigation Pane.
+		// Store the index of each GroupBar Item in the Navigation Pane.
 
-if (gbi.InNavigationPane == true)
+		if (gbi.InNavigationPane == true)
 
-temp.Add(this.groupBar1.GroupBarItems.IndexOf(gbi));
+		temp.Add(this.groupBar1.GroupBarItems.IndexOf(gbi));
 
-}
+		}
 
-// Store the index of the selected GroupBar Item.
+		// Store the index of the selected GroupBar Item.
 
-temp.Add(this.groupBar1.SelectedItem);
+		temp.Add(this.groupBar1.SelectedItem);
 
-// Persist this information to an XML file using the AppStateSerializer class.
+		// Persist this information to an XML file using the AppStateSerializer class.
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
+		AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
 
-aser.SerializeObject("StackedModeState", temp);
+		aser.SerializeObject("StackedModeState", temp);
 
-aser.PersistNow();
+		aser.PersistNow();
 
-}
+		}
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
-{% highlight vbnet %} 
+   ~~~ vbnet
 
-Private Sub SaveState()
+		Private Sub SaveState()
 
-' Create a temporary storage.
+		' Create a temporary storage.
 
-Dim temp As ArrayList = New ArrayList()
+		Dim temp As ArrayList = New ArrayList()
 
-For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
+		For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
 
-' Store the index of each GroupBar Item in the Navigation Pane.
+		' Store the index of each GroupBar Item in the Navigation Pane.
 
-If gbi.InNavigationPane = True Then
+		If gbi.InNavigationPane = True Then
 
-temp.Add(Me.groupBar1.GroupBarItems.IndexOf(gbi))
+		temp.Add(Me.groupBar1.GroupBarItems.IndexOf(gbi))
 
-End If
+		End If
 
-Next gbi
+		Next gbi
 
-' Store the index of the selected GroupBar Item.
+		' Store the index of the selected GroupBar Item.
 
-temp.Add(Me.groupBar1.SelectedItem)
+		temp.Add(Me.groupBar1.SelectedItem)
 
-' Persist this information to an XML file using the AppStateSerializer class.
+		' Persist this information to an XML file using the AppStateSerializer class.
 
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
+		Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
 
-aser.SerializeObject("StackedModeState", temp)
+		aser.SerializeObject("StackedModeState", temp)
 
-aser.PersistNow()
+		aser.PersistNow()
 
-End Sub
+		End Sub
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 4. Retrieve the persisted layout information from the XML file using the AppStateSerializer class. In the Form_Load event and Load_Button click, call the following method,
 
-{% highlight C# %} 
+   ~~~ cs
 
-private void LoadState ()
+		private void LoadState ()
 
-{
+		{
 
-// De-Persist this information from the XML file using the AppStateSerializer class.
+		// De-Persist this information from the XML file using the AppStateSerializer class.
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
+		AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
 
-ArrayList temp = aser.DeserializeObject("StackedModeState") as ArrayList;
+		ArrayList temp = aser.DeserializeObject("StackedModeState") as ArrayList;
 
-// Reset the InNavigationPane for all GroupBar Items.
+		// Reset the InNavigationPane for all GroupBar Items.
 
-foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
+		foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
 
-{
+		{
 
-gbi.InNavigationPane = false;
+		gbi.InNavigationPane = false;
 
-}
+		}
 
-// Restore the saved state by setting the appropriate InNavigationPane entries.
+		// Restore the saved state by setting the appropriate InNavigationPane entries.
 
-int index;
+		int index;
 
-for(int i=0; i<temp.Count-1; i++)
+		for(int i=0; i<temp.Count-1; i++)
 
-{
+		{
 
-index = (int)temp[i];
+		index = (int)temp[i];
 
-this.groupBar1.GroupBarItems[index].InNavigationPane = true;
+		this.groupBar1.GroupBarItems[index].InNavigationPane = true;
 
-}
+		}
 
-// Restore the selected GroupBar Item.
+		// Restore the selected GroupBar Item.
 
-this.groupBar1.SelectedItem = (int)temp[temp.Count-1];
+		this.groupBar1.SelectedItem = (int)temp[temp.Count-1];
 
-}
+		}
 
- {% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
  
-{% highlight vbnet %} 
+   ~~~ vbnet
 
-Private Sub LoadState()
+		Private Sub LoadState()
 
-' De-Persist this information from the XML file using the AppStateSerializer class.
+		' De-Persist this information from the XML file using the AppStateSerializer class.
 
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
+		Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
 
-Dim temp As ArrayList = CType(IIf(TypeOf aser.DeserializeObject("StackedModeState") Is ArrayList,                   
-     aser.DeserializeObject("StackedModeState"), Nothing), ArrayList)
+		Dim temp As ArrayList = CType(IIf(TypeOf aser.DeserializeObject("StackedModeState") Is ArrayList,                   
+			 aser.DeserializeObject("StackedModeState"), Nothing), ArrayList)
 
-' Reset the InNavigationPane for all GroupBar Items.
+		' Reset the InNavigationPane for all GroupBar Items.
 
-For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
+		For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
 
-gbi.InNavigationPane = False
+		gbi.InNavigationPane = False
 
-Next gbi
+		Next gbi
 
-' Restore the saved state by setting the appropriate InNavigationPane entries.
+		' Restore the saved state by setting the appropriate InNavigationPane entries.
 
-Dim index As Integer
+		Dim index As Integer
 
-Dim i As Integer = 0
+		Dim i As Integer = 0
 
-Do While i < temp.Count - 1
+		Do While i < temp.Count - 1
 
-index = CInt(temp(i))
+		index = CInt(temp(i))
 
-Me.groupBar1.GroupBarItems(index).InNavigationPane = True
+		Me.groupBar1.GroupBarItems(index).InNavigationPane = True
 
-i += 1
+		i += 1
 
-Loop
+		Loop
 
-' Restore the selected GroupBar Item.
+		' Restore the selected GroupBar Item.
 
-Me.groupBar1.SelectedItem = CInt(temp(temp.Count - 1))
+		Me.groupBar1.SelectedItem = CInt(temp(temp.Count - 1))
 
-End Sub
+		End Sub
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 #### Output
@@ -221,4 +227,4 @@ Again open the same application. You can see the persisted layout state of Group
 
 
  ![](Overview_images/Overview_img44.jpeg)
-Figure 953: Illustrates Persisted State of GroupBarItem3
+

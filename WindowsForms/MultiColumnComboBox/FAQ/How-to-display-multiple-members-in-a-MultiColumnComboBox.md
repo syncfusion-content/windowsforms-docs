@@ -181,7 +181,7 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
    ~~~
    {:.prettyprint }
 
-   ![](Overview_images/Overview_img332.png)
+   ![](Frequently-Asked-Questions_images/Overview_img332.jpeg)
 
 
 

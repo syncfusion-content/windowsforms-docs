@@ -26,7 +26,7 @@ With XmlSerialization, the grid schema information can be converted into XML for
 
 All the grid elements can be serialized. Not only the data, but also the look and feel of the grid can be serialized and deserialized. The following code example best illustrates this process.
 
-Example
+### Example
 
 1. Setup a grouping grid and load it with some data. Save the initial state of the grid schema so that it could be used to reset the grid. 
 
@@ -293,7 +293,7 @@ N>: For more details, refer to the following browser samples:
 
 
 
-Saving and Restoring Look and Feel Properties
+### Saving and Restoring Look and Feel Properties
 
 You can save, look, and feel properties in XML format. This will allow you to design a basic look and feel to use with all your Grid Grouping controls, and then easily apply this look and feel to new grids at design-time or runtime.
 
@@ -302,7 +302,7 @@ It can be done in the following ways.
 * Through Verbs 
 * Through Code
 
-Through Verbs
+### Through Verbs
 
 The verbs "Save Look and Feel" and "Choose Look and Feel" that are found at the bottom of the property grid of Grid Grouping control will allow you to easily accomplish this task. Use the Save verb to save Look and Feel properties of the current Grid Grouping control. Then use Choose verb to apply the saved settings to a different control.
 
@@ -311,7 +311,7 @@ The verbs "Save Look and Feel" and "Choose Look and Feel" that are found at the 
 
 
 
-Through Code
+### Through Code
 
 To apply the Look and Feel properties saved as XML at runtime, simply call ApplyXmlLookandFeel method. For example, the code below shows the code that is necessary to load such a file in the form's constructor.
 
@@ -351,7 +351,7 @@ Export to Excel is one of the most common functionalities required in the .Net w
 
 GroupingGridExcelConverter class derives from GridExcelConverterBase. It contains a number of methods that helps in exporting different components of the grouping grid. Its properties will let you control the export of grid schema like styles and grid elements. You will be able to export Styles, RecordPlusMinus, GroupCaptionPlusMinus, Borders and PreviewRows as well.
 
-ConverterOptions
+### ConverterOptions
 
 Exporting of a Grouping Grid to Excel has two options: Visible and Default. Visible option will allow you to export only the visible contents of the grid, whereas Default option exports the entire elements of the grouping grid. Converter options are defined in GridExcelConverter.ConverterOptions enumeration.
 
@@ -359,7 +359,7 @@ Exporting of a Grouping Grid to Excel has two options: Visible and Default. Visi
 
 The following table lists the properties offered by Grouping Grid Excel Converter. By setting these properties, you would be able to choose the elements you need to export.
 
-_Table 107: Grouping Grid Excel Converter properties_
+
 
 <table>
 <tr>
@@ -397,11 +397,11 @@ Indicates the color to be used for Header in the worksheet.</td></tr>
 </table>
 
 
-Method
+### Method
 
 Grouping Grid Excel Converter control provides a method called GroupingGridToExcel. This is the method that converts grouping grid contents to an excel file. It accepts three parameters: grouping grid to be converted, filename of the destination worksheet, and convert options.
 
-Syntax
+### Syntax
 
 
 
@@ -425,11 +425,11 @@ converter.GroupingGridToExcel(Me.gridGroupingControl1, "Grid.xls", ConverterOpti
 {% endhighlight %}
 
 
-Events
+### Events
 
 QueryExportPreviewRowInfo is an event offered by the Grouping Grid Excel Converter control that aids in the conversion process. It occurs for each PreviewRow element before exporting the grid and letting you customize the preview row. It accepts two parameters: one contains the Element to export and the other the GridStyleInfo object representing style information.
 
-Syntax
+#### Syntax
 
 {% highlight C# %}  
 
@@ -469,7 +469,7 @@ End Sub
 {% endhighlight %}
 
 
-Implementation
+### Implementation
 
 Here is an example that illustrates the conversion of a grouping grid to an Excel file.
 
@@ -517,7 +517,7 @@ Imports Syncfusion.Windows.Forms.Grid.Grouping
 
 
 
-2.2.Setup an hierarchical datasource.
+2.Setup an hierarchical datasource.
 
 
 
@@ -713,7 +713,7 @@ End Function
 {% endhighlight %}
 
 
-3.3.Setup a grouping grid and load it with data from data source. Customize the grid by adding preview rows, groups, etc., as required.
+3.Setup a grouping grid and load it with data from data source. Customize the grid by adding preview rows, groups, etc., as required.
 
 
 
@@ -1001,7 +1001,7 @@ End Sub
 
 {% endhighlight %}
 
-4.4.Set up a Grouping Grid Excel Converter and choose the elements you want to export by setting the appropriate properties.
+4.Set up a Grouping Grid Excel Converter and choose the elements you want to export by setting the appropriate properties.
 
 
 
@@ -1049,7 +1049,7 @@ converter.CaptionBackColor = Color.Lavender
 {% endhighlight %}
 
 
-5.5.Handle the QueryExportPreviewRowInfo event to customize preview rows before export.
+5.Handle the QueryExportPreviewRowInfo event to customize preview rows before export.
 
 
 
@@ -1135,7 +1135,7 @@ End Sub
 
 {% endhighlight %}
 
-6.6.Export the grouping grid to an Excel file. 
+6.Export the grouping grid to an Excel file. 
 
 
 
@@ -1176,7 +1176,7 @@ GroupingGridWordConverter class derives from GridWordConverterBase. It contains 
 
 The following table lists the properties offered by Grouping Grid Word Converter. By setting these properties, you can choose the elements you need to export.
 
-_Table 108: Properties_
+
 
 <table>
 <tr>
@@ -1194,11 +1194,11 @@ Specifies if footer should be displayed.</td></tr>
 </table>
 
 
-Method
+### Method
 
 Grouping Grid Word Converter control provides a method called GroupingGridToWord. This is the method that does the conversion of grouping grid contents to a word file. It accepts two parameters: grouping grid to be converted and filename of the destination Word document.
 
-Syntax
+### Syntax
 
 
 
@@ -1222,11 +1222,11 @@ converter.GroupingGridToWord("Grid.doc", Me.gridGroupingControl1)
 
 {% endhighlight %}
 
-Events
+### Events
 
 DrawHeader and DrawFooter are the events offered by Grouping Grid Word Converter that aids in adding as well as customizing header and footer in the destination Word document. 
 
-Sample Output
+### Sample Output
 
 
 
@@ -1248,7 +1248,7 @@ N>: For more details, refer to the following browser sample:
 
 
 
-PDF Export
+### PDF Export
 
 Essential Grid Grouping control supports conversion of grid contents to a PDF file. Users can convert data from Grid Grouping control into a PDF document using GridPDFConverter class. PDF libraries are used to support conversion of grid content to a PDF page. 
 

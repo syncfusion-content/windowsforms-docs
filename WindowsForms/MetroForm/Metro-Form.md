@@ -61,7 +61,7 @@ The MouseEnter event is raised when the mouse pointer enters the caption image. 
 
 The MouseEventHandler receives an argument of type MouseEventArgs that contains data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _682_: _Members Table_
+
 
 <table>
 <tr>

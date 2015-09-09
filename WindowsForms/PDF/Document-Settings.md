@@ -171,7 +171,7 @@ N>  You cannot overwrite the existing metadata information.
 
 A PDF file can control the way the document is presented on the screen when it is opened in the viewer. Essential PDF allows you to set these preferences using the PdfViewerPreferences class. You can perform the following customizations of the viewer when the document is open.
 
-_Table3: List of customizations_
+
 
 <table>
 <tr>
@@ -201,15 +201,15 @@ A flag specifying whether to display the document's title in the top bar.</td></
 <tr>
 <th>
 PageLayout</th><td>
-The page layout to be used when the document is opened.* OneColumn - Displays the pages in one column.* SinglePage - Displays one page at a time.* TwoColumnLeft - Displays the pages in two columns with odd-numbered pages on the left.* TwoColumnRight - Displays the pages in two columns with odd-numbered pages on the right.* TwoPageLeft - Displays the pages two at a time with odd-numbered pages on the left.* TwoPageRight - Displays the pages two at a time with odd-numbered pages on the right.</td></tr>
+The page layout to be used when the document is opened.<ul><li> OneColumn - Displays the pages in one column.</li><li> SinglePage - Displays one page at a time.</li><li> TwoColumnLeft - Displays the pages in two columns with odd-numbered pages on the left.</li><li> TwoColumnRight - Displays the pages in two columns with odd-numbered pages on the right.</li><li> TwoPageLeft - Displays the pages two at a time with odd-numbered pages on the left.</li><li> TwoPageRight - Displays the pages two at a time with odd-numbered pages on the right</li></ul>.</td></tr>
 <tr>
 <th>
 PageMode - </th><td>
-<br>The page mode specifies how the document should be displayed when opened.* UseNone - Neither document outline nor thumbnail images visible. * UseOutlines - Document outline visible.* UseThumbs - Thumbnail images visible.* FullScreen - Full-screen mode, without menu bar, window controls, or any other window visible.* UseOC - Optional content group panel visible.* UseAttachments - Attachments panel visible.<br></td></tr>
+<br>The page mode specifies how the document should be displayed when opened.<ul><li>UseNone - Neither document outline nor thumbnail images visible.</li><li>UseOutlines - Document outline visible.</li><li> UseThumbs - Thumbnail images visible.</li><li>FullScreen - Full-screen mode, without menu bar, window controls, or any other window visible.</li><li> UseOC - Optional content group panel visible.</li><li>UseAttachments - Attachments panel visible.</li></ul><br></td></tr>
 <tr>
 <th>
 PageScaling</th><td>
-<br>An option to be selected when a print dialog is displayed for this document* AppDefault – Indicates the conforming reader’s default print scaling* None – Indicates no page scaling.</td></tr>
+<br>An option to be selected when a print dialog is displayed for this document<ul><li> AppDefault – Indicates the conforming reader’s default print scaling</li><li> None – Indicates no page scaling.</li></ul></td></tr>
 </table>
 
 {% highlight c# %}

@@ -15,7 +15,7 @@ way to interact with you by means of mouse and keyboard.
 Essential PDF library provides support to add annotations to both existing and newly created PDF files.The following annotion 
 types are supported.
 
-Table 26: List of Annotation types
+
 
 <table>
 <tr>

@@ -222,7 +222,7 @@ A digital signature is an electronic signature that is used to authenticate the 
 
 Digital signatures are easily transportable, cannot be imitated by someone else, and can be automatically time-stamped. It has the ability to ensure that once the original signed message is received, the sender cannot easily repudiate it later.
 
-_Table_ _28__: List of Elements in Digital Signature_
+
 
 <table>
 <tr>
@@ -278,7 +278,8 @@ Gets a value indicating whether the signature is visible or not. Allows you to c
 TimeStampServer</td><td>
 Sets the timestamp for the signature. Allows you to include timestamp for the digital signature.</td></tr>
 </table>
-Standard Signature
+
+### Standard Signature
 
 PdfCertificate class is used to get the certificates from disk or another device such as PFX file. The PFX file type is an encrypted security file that stores secure certificates that are used to authenticate a PDF document. One needs a password to access these files. The PFX files are supported with private keys.
 
@@ -389,7 +390,7 @@ By default, documents are signed with standard signature types. Certificated p
 
 
 
-_Note: This implementation of certification will only work with Acrobat 7 and higher versions._
+N> This implementation of certification will only work with Acrobat 7 and higher versions.
 
 
 

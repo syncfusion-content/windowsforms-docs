@@ -162,12 +162,12 @@ End Function
 
 Add the following table items to the above code example by substituting the identifiers and Enum values as in they correspond in the table.
 
-_Table 152: Enum_
+
 
 <table>
 <tr>
-<th rowspan = "10">
-DynamicFilterResourceIdentifiers</th><th colspan = "3">
+<td rowspan = "10">
+DynamicFilterResourceIdentifiers</td><th colspan = "3">
 ENUM</th></tr>
 <tr>
 <td>

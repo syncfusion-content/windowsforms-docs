@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently Asked Questions
-description: Frequently Asked Questions
+title: How to add ImageCollection to HubTile for Transition Effects
+description: How to add ImageCollection to HubTile for Transition Effects
 platform: WindowsForms
 control: HubTile
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 You can achieve this requirement using HubTile ImageList and ImageListAdv properties.
 
-_Table 981: Property Table_
+
 
 <Table>
 <tr>
@@ -64,10 +64,9 @@ The following screenshot displays the ImageListAdv property.
 
 
 ![](Frequently-asked-questions-images/FAQ_img1.png)
-Figure 1650 : ImageListAdv property
+
 
 The following screenshot displays the ImageList property.
 
 
 ![](Frequently-asked-questions-images/FAQ_img2.png)
-Figure 1651 : ImageList Property

@@ -14,7 +14,7 @@ The behavior settings of the MaskedEditBox control are discussed below.
 
 MaskedEditBox control allows you to add prompt characters in the input.
 
-Table 343 : Property Table
+
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ Me.maskedEditBox1.PassivePromptCharacterInt = 47
 {% endhighlight %}
 
 
- _Note: We can trim the additional spaces present in the mask by setting the PaddingCharacterInt property to '0'._
+N> We can trim the additional spaces present in the mask by setting the PaddingCharacterInt property to '0'.
 
 ### MaxLength
 
@@ -87,7 +87,7 @@ The maximum length of the text can be set using the property given below.
 
 
 
-Table 344 : Property Table
+
 
 <table>
 <tr>
@@ -119,7 +119,7 @@ Me.maskedEditBox1.MaxLength = 32800
 
 The ReadOnly mode can be enabled for the MaskedEditBox control using the below given property.
 
-Table 345 : Property Table
+
 
 <table>
 <tr>

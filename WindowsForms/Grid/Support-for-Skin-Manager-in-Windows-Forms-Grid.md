@@ -22,7 +22,7 @@ This feature enables you to easily apply themes to all grids in an application t
 
 When you create an application with multiple Grid controls, you can apply uniform themes for the entire form and its child controls using this feature.
 
-_Table 150: Properties Table_ 
+
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ Enum </td></tr>
 
 
 
-_Table 151 14: Methods Table_ 
+
 
 <table>
 <tr>
