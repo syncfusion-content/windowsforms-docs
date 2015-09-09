@@ -45,7 +45,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
-_Table_ _1_: _Document Conventions_
+_Document Conventions_
 
 <table>
 <tr>
@@ -89,8 +89,6 @@ This section covers the requirements mandatory for using Essential Calculate. It
 
 The prerequisites details are listed below:
 
-_Table_ _2_: _Prerequisites_
-
 <table>
 <ul>
 <tr>
@@ -120,9 +118,6 @@ Development Environments</td><td>
 The compatibility details are listed below:
 
 
-
-_Table_ _3_: _Compatibility_
-
 <table>
 <ul>
 <tr>
@@ -148,7 +143,7 @@ Operating Systems</td><td>
 
 Syncfusion provides the following documentation segments to provide all the necessary information pertaining to Essential Calculate.
 
-_Table_ _4_: _Type of Documentation_
+_Type of Documentation_
 
 <table>
 <tr>
@@ -172,5 +167,5 @@ Online{{ '<http://docs.syncfusion.com/windowsforms/calculate/overview>' | markdo
 <tr>
 <td>
 Class Reference</td><td>
-Online {{ '<http://docs.syncfusion.com>'| markdownify }}   (Navigate to the Reporting User Guide. Select {{ ''_Calculate_'' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online {{ '<http://docs.syncfusion.com/cr/windowsforms/>'| markdownify }}   (Navigate to the Reporting User Guide. Select {{ ''_Calculate_'' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

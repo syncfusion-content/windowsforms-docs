@@ -52,7 +52,6 @@ Supported and Unsupported Elements
 
 DocIO Supports the following document elements.
 
-Table 133 : Document Elements
 
 <table>
 <tr>
@@ -387,11 +386,11 @@ paragraph.AppendXHTML(htmlstring)
 {% endhighlight %}
 
 
- > Notes: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
+N> Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
 
 
 
-XHTML Validation
+#### XHTML Validation
 
 You can validate the given XHTML string by invoking the IsValidXHTML method of TextBody class. It returns true when the given XHTML string should meet any one of the following validation types.
 
@@ -409,12 +408,12 @@ The None type provides the feature to manipulate the XHTML without using Strict 
 
 The following table illustrates the basic comparison between the Transitional and Strict validation types.
 
-Table 134 : Validation Types
+
 
 <table>
 <tr>
-<td>XHTML Type</td>
-<td>Description</td>
+<th>XHTML Type</th>
+<th>Description</th>
 </tr>
 <tr>
 <td>Strict</td>
@@ -439,12 +438,12 @@ section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict)
 
  {% endhighlight %}
 
-Parameter Description
+#### Parameter Description
 
 1. htmlString: The desired HTML string to be validated.
 2. XHTMLValidationType: It defines the validation type. It could be Strict, Transitional, or None.
 
-> Notes: Currently XHTML Validation is not supported in Windows Store applications.
+N> Currently XHTML Validation is not supported in Windows Store applications.
 
 
 
@@ -507,7 +506,7 @@ document.Save(stream,FormatType.Html)
 {% endhighlight %}
 
 
-SaveOptions Class
+#### SaveOptions Class
 
 It provides some more flexibility and some extra features when exporting the HTML documents. 
 
@@ -558,11 +557,9 @@ document.SaveOptions.HtmlExportHeadersFooters = False
 
 {% endhighlight %}
 
-Supported Document Elements
+#### Supported Document Elements
 
 DocIO supports the following document elements.
-
-Table 135 : Document Elements
 
 <table>
 <tr>
@@ -930,7 +927,7 @@ Partial</td><td>
 Underline types and colors are ignored.</td></tr>
 </table>
 
-> _Notes: Currently Doc to Html conversion and vice-versa is not supported in Silverlight and Windows Phone 8 applications._
+N> Currently Doc to Html conversion and vice-versa is not supported in Silverlight and Windows Phone 8 applications.
 
 
 
@@ -963,12 +960,10 @@ doc.Save( "sample.txt", FormatType.Txt )
 
 {% endhighlight %}
 
-Supported Document Elements
+#### Supported Document Elements
 
 DocIO supports the following document elements.
 
-
-Table 136 : Document Elements
 
 <table>
 <tr>
@@ -1025,10 +1020,11 @@ Assembly Dependencies for this Conversion
 * Syncfusion.Compression.Base.dll
 
 
-> Note:
-> * You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
-> * Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
-> * Currently,_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+N>  You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
+N>
+N>  Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+N>
+N>  Currently, _[Word to PDF](http://docs.syncfusion.com/windowsforms)_ conversion is not supported in Silverlight, WinRT and Windows Phone applications.
 
 The following code example lets you to convert a Word document to PDF.
 
@@ -1042,13 +1038,10 @@ Dim wordDoc As New WordDocument("sample.doc")Dim converter As New DocToPDFConver
 
 {% endhighlight %}
 
-Supported and Unsupported Elements 
+#### Supported and Unsupported Elements 
 
 Word to PDF conversion feature provides support for the following elements.
 
-
-
-Table 137 : Supported and Unsupported Elements
 
 <table>
 <tr>
@@ -1175,7 +1168,7 @@ Essential DocIO supports conversion of Microsoft Word documents to EPub v2.0.1. 
 By default, Table of Contents (TOC) is enabled in the EPub document. It is generated based on the built-in heading styles or custom styles mentioned in the TOC field. 
 
 
-> Note: You need to have an EPub reader installed in the machine to view the resultant EPub document.
+N> You need to have an EPub reader installed in the machine to view the resultant EPub document.
 
 
 
@@ -1214,11 +1207,8 @@ The following screenshot illustrates the resultant EPub document.
 
 
 
-Figure 54 : Word document converted to EPub File Format
 
-
-
-EmbeddingFont
+#### EmbeddingFont
 
 Conversion of EPub by using default options does not embed font files. Hence, the targeted device uses its own default font for the texts in the document that may vary depending on the reader being used. To read the texts in the same font as used in the input word document, you should embed the font files into the generated EPub. This is achieved by turning on EPubExportFont property. By default, this property is set to false_,_ since this actually embeds the exact font file from the machine that may increase the size of the EPub document.
 
@@ -1251,12 +1241,7 @@ The following screenshot illustrates the resultant EPub document.
 ![](Importing-and-Exporting_images/Importing-and-Exporting_img7.png)
 
 
-
-Figure 55 : Embedding fonts in an EPub File
-
-
-
-Exporting Header and Footer
+#### Exporting Header and Footer
 
 
 
@@ -1289,9 +1274,6 @@ The following is the screenshot of the resultant EPub document with the disabled
 
 
 
-Figure 56 : Exporting Header and Footer
-
-
 
 Supported Elements
 
@@ -1309,14 +1291,14 @@ The following are the Supported Elements:
 
 
 
-Known Limitations
+#### Known Limitations
 
 The following are the known limitations:
 
 * Embedding font files can increase the size of the EPub document
 * Embedding font files is not supported in medium trust
 
-> Note: Currently Doc to EPub conversion is not supported in Silverlight application.
+N> Currently Doc to EPub conversion is not supported in Silverlight application.
 
 ## Saving a Word Document as an Image
 
@@ -1329,11 +1311,14 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 * WordDocument.RenderAsImages(pageIndex, imageType): This is used to render/convert a particular page of the document into an image; it returns the resultant image of type Image.
 * WordDocument.RenderAsImages(pageIndex, noOfPages, imageType): This is used to render/convert multiple number of pages in the document, starting from the specified page index. It returns the resultant image of type Image[] array.
 
-> Note:
-> * Parameter "pageIndex" is a zero based index.
-> * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
-> * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.
-> * You can refer to the_ [Word to PDF](http://docs.syncfusion.com/windowsforms) _Conversion for supported and unsupported elements in Word to Image conversion.
+N>
+N> Parameter "pageIndex" is a zero based index.
+N>
+N>  Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+N>
+N>  Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+N>
+N> You can refer to the _[Word to PDF](http://docs.syncfusion.com/windowsforms)_ Conversion for supported and unsupported elements in Word to Image conversion.
 
 The following code example lets you to render a Word document as image.
 

@@ -23,13 +23,12 @@ The AutoComplete control has a fully built-in serialization feature that provide
 
 The data of AutoComplete's control can be persisted by setting the AutoSerialize property to true. This information is stored in the Isolated storage.
 
-Table 124: Property Table
 
 <table>
 <tr>
-<td>
-AutoComplete Property</td><td>
-Description</td></tr>
+<th>
+AutoComplete Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoSerialize</td><td>

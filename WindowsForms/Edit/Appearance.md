@@ -218,9 +218,6 @@ Me.editControl1.SplitFourQuadrants()
 
 
 
-_Figure_ _63: Edit Control Split into Four Quadrants
-
-
 
 A sample which demonstrates Split Views is available in the below sample installation path.
 
@@ -228,13 +225,11 @@ A sample which demonstrates Split Views is available in the below sample install
 
 _..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### See Also
+{% seealso %}
 
+[Scrolling Support](/windowsforms/edit/runtime-features#scrolling-support)
 
-
-## Scrolling Support
-
-
+{% endseealso %}
 
 ### Applying Themes
 
@@ -262,9 +257,6 @@ Me.editControl1.UseXPStyle = True
 
 ![](Appearance_images/Appearance_img2.jpeg)
 
-
-
-_Figure_ _64: Edit Control using Windows XP Themes
 
 
 
@@ -460,9 +452,6 @@ Me.editControl1.SelectionMarginWidth = 100
 
 
 
-_Figure_ _65: Selection Margin Set
-
-
 
 #### Differentiating the Lines based on Actions
 
@@ -492,9 +481,6 @@ Me.editControl1.MarkChangedLines = True
 
 ![](Appearance_images/Appearance_img4.jpeg)
 
-
-
-_Figure_ _66_: Saved Changes in Green and Unsaved Changes in Yellow
 
 
 
@@ -802,9 +788,6 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 
 
-_Figure_ _68: Edit Control with Gradient Background
-
-
 
 A sample which demonstrates the Gradient Background feature is available in the below sample installation path.
 
@@ -896,10 +879,8 @@ Me.editControl1.SetSelectionBackColor(format)
 
 
 
-_Figure_ _69: Background Color and Border set for Text
 
-
-> Note: Refer the_ Text Border _topic to know how to set the border for the text.
+N> Refer the _Text Border_ topic to know how to set the border for the text.
 
 
 
@@ -965,11 +946,11 @@ _..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\
 
 
 
-### See Also
+{% seealso %}
 
-Line Numbers and Current Line Highlighting
+[Line Numbers and Current Line Highlighting](windowsforms/edit/text-visualization#line-numbers-and-current-line-highlighting-1)
 
-
+{% endseealso %}
 
 ## Font Customization
 
@@ -998,10 +979,6 @@ The Edit Control supports customization of fonts through the configuration file,
 {% endhighlight %}
 
 ![](Appearance_images/Appearance_img9.jpeg)
-
-
-
-_Figure_ _70_: Formats Editor
 
 
 
@@ -1065,15 +1042,13 @@ You can turn on the single line mode of the Edit Control by setting the SingleLi
 
 
 
-> Note: The SingleLineMode is intended for use, only when the Edit Control contains small amounts of text data in it. Using it in a scenario where the Edit Control has a huge file loaded into it, may lead to poor performance.
+N> The SingleLineMode is intended for use, only when the Edit Control contains small amounts of text data in it. Using it in a scenario where the Edit Control has a huge file loaded into it, may lead to poor performance.
 
 
 
 ![](Appearance_images/Appearance_img11.jpeg)
 
 
-
-_Figure_ _71: Edit Control with SingleLineMode Turned On
 
 
 
@@ -1198,8 +1173,6 @@ End Sub
 ![](Appearance_images/Appearance_img12.jpeg)
 
 
-
-_Figure_ _72: Customized  Find Dialog
 
 
 

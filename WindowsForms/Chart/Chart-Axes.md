@@ -27,13 +27,11 @@ In the figure below, the first chart shows a line chart that is not-indexed whil
 
 ![](Chart-Axes_images/Chart-Axes_img1.jpeg)
 
-_Figure_ _247_: _Non-Indexed X Values_
 
 ![](Chart-Axes_images/Chart-Axes_img2.jpeg)
 
-_Figure_ _248_: _Indexed X Values_
 
-> Note: Indexing is supported only on the x-axis in Essential Chart.
+N> Indexing is supported only on the x-axis in Essential Chart.
 
 You can enable x-axis indexing or categorizing through the Indexed property of the ChartControl as shown below:
 
@@ -51,7 +49,7 @@ Me.chartControl1.Indexed = True
 
 The above property automatically affects all the x-axes in the chart.
 
-You can also optionally customize the labels of the points in such an indexed series as explained in Chart Labels Customization.
+You can also optionally customize the labels of the points in such an indexed series as explained in [Chart Labels Customization](#customizing-label-text).
 
 ## Inverted Axis
 
@@ -94,7 +92,6 @@ The following image shows a chart whose x and y axes have been reversed.
 
 ![](Chart-Axes_images/Chart-Axes_img4.jpeg)
 
- _Figure_ _249_: _Chart with both Axes Reversed_
 
 ## Opposed Axis
 
@@ -128,7 +125,6 @@ The above code snippet will place both the x and y-axes in the position opposite
 
 ![](Chart-Axes_images/Chart-Axes_img5.jpeg)
 
- _Figure_ _250_: _Chart displaying Opposed X and Y Axes_
 
 You can similarly set this property on any custom ChartAxis that you might add to the chart. Using multiple axes in a chart is described in this topic: Multiple Axes.
 
@@ -183,7 +179,6 @@ Me.chartControl1.Series(1).XAxis = Me.secXAxis
 
 ![](Chart-Axes_images/Chart-Axes_img6.jpeg)
 
-_Figure_ _251_: _ChartControl with a 2nd X-Axis (-2 to 8) stacked below the Primary X-Axis_
 
 ### Opposed Position
 
@@ -191,7 +186,6 @@ By default, this additional axis will be rendered right next to the correspondin
 
 ![](Chart-Axes_images/Chart-Axes_img7.jpeg)
 
-_Figure_ _252_: _ChartControl with a 2nd X-Axis in Opposed Position_
 
 ### Stacked or SideBySide Position
 
@@ -215,7 +209,7 @@ Me.ChartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide;
 
 ![](Chart-Axes_images/Chart-Axes_img8.jpeg)
 
-_Figure_ _253_: _ChartControl with SideBySide Layout of Multiple Axes_
+
 
 
 ### ChartAxesLayouts
@@ -224,7 +218,7 @@ You can now combine the stacking and side-by-side chart axes layouts when multip
 
 ![](Chart-Axes_images/Chart-Axes_img9.jpeg)
 
-_Figure_ _254_: _Combining Stacking and SideBySide Layout_
+
 
 {% highlight c# %}
 
@@ -330,7 +324,7 @@ chartControl1.ChartArea.YLayouts.Add(layout1)
 
 {% endhighlight %}
 
-> Note: All the axes with the same orientation must be added to ChartAxisLayout (PrimaryAxis as well) as illustrated in the above code snippet.
+N> All the axes with the same orientation must be added to ChartAxisLayout (PrimaryAxis as well) as illustrated in the above code snippet.
 
 ## Axis Value Type
 
@@ -350,9 +344,11 @@ this.chartControl1.PrimaryXAxis.LogBase = 3;
 
 {% endhighlight %}
 
-### See Also 
+{% seealso %}
 
-Axis Range and Intervals
+[Axis Range and Intervals](/windowsforms/chart/chart-axes#axis-range-and-intervals)
+
+{% endseealso %}
 
 ## Axis Range and Intervals
 
@@ -368,7 +364,7 @@ Sometimes the automatic range generation might not be good enough for you, in wh
 
 
 
-_Table_ _97_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -456,7 +452,7 @@ You can however tweak the ranges and intervals that get generated through these 
 
 Use these properties to customize the intervals that get generated:
 
-_Table_ _98_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -483,10 +479,6 @@ Specifies whether the interval that gets calculated should be in Years, Months, 
 ### Changing Origin
 
 Use these properties to customize the origin of the axes:
-
-
-
-_Table_ _99_: _Properties_
 
 <table>
 <tr>
@@ -562,9 +554,6 @@ Specifies if there should be any padding applied between the points and the axes
 The axis' starting point, length and the whole rectangle (comprising the axis and it's labels) can be customized using the following properties.
 
 
-
-_Table_ _100_: _Properties_
-
 <table>
 <tr>
 <th>
@@ -597,8 +586,6 @@ Specifies the rectangle that includes the axis and it's labels. This provides gr
 
 ![](Chart-Axes_images/Chart-Axes_img11.jpeg)
 
-_Figure_ _255_: _Chart Axis with Location Properties Set_
-
 
 {% highlight c# %}
 
@@ -620,11 +607,10 @@ Me.ChartControl1.PrimaryYAxis.Location = New PointF(15, 200)
 
 ![](Chart-Axes_images/Chart-Axes_img12.jpeg)
 
-_Figure_ _256_: _Chart rendered in AutoSize Mode_
+
 
 ![](Chart-Axes_images/Chart-Axes_img13.jpeg)
 
-_Figure_ _257_: _Chart rendered with a custom size for the Primary X-Axis_
 
 {% highlight c# %}
 
@@ -649,10 +635,6 @@ This section talks about the customization of axis labels in the following topic
 ### Axis Label Text Formatting, Appearance and Positioning
 
 By default, the label texts are automatically determined based on the axis data points and the generated intervals. You can better the format, look and positioning of the labels using the properties listed below.
-
-
-
-_Table_ _101_: _Properties_
 
 <table>
 <tr>
@@ -696,7 +678,7 @@ If LabelRotate is true, this property specifies the angle of rotation.</td></tr>
 
 ![](Chart-Axes_images/Chart-Axes_img14.jpeg)
 
-_Figure_ _258_: _Axis Label Customization_
+
 
 {% highlight c# %}
 
@@ -793,9 +775,6 @@ The formatting options above will usually satisfy the label text requirements. H
 Customizing the label text for the automatically generated intervals
 
 
-
-_Table_ _102_: _Properties_
-
 <table>
 <tr>
 <th>
@@ -810,9 +789,6 @@ The event that gets raised for each label before getting rendered. This is a goo
 
 The following ChartFormatAxisLabelEventArgs properties provide information specific to this event.
 
-
-
-_Table_ _103_: _ChartFormatAxisLabelEventArgs properties_
 
 <table>
 <tr>
@@ -934,13 +910,13 @@ End Sub
 
 ![](Chart-Axes_images/Chart-Axes_img15.jpeg)
 
-_Figure_ _259_: _Customized Chart Labels_
+
 
 Specify a set of custom labels thereby dictating the intervals as well
 
 1. Using Custom Text
 
-   _Table_ _104_: _Custom Text_
+    _Custom Text_
 
    <table>
    <tr>
@@ -991,7 +967,7 @@ Specify a set of custom labels thereby dictating the intervals as well
 
    ![](Chart-Axes_images/Chart-Axes_img16.jpeg)
 	
-   _Figure_ _260_: _Chart with 'Q1 Mid Point' and 'Q2 Mid Point' Custom Labels_
+   
 
 2. Using Formatted Text
 
@@ -1031,13 +1007,13 @@ Specify a set of custom labels thereby dictating the intervals as well
 
    ![](Chart-Axes_images/Chart-Axes_img17.jpeg)
 
-   _Figure_ _261_: _DateTime formatted labels at the specified Intervals_
+   
 
 ### Intersecting Labels
 
 Sometimes the chart dimensions could cause the labels to intersect. The chart will, by default, render those texts one over the other. But, it also has some built-in capabilities to workaround this overlap and lets you dictate the technique to follow. Refer to the properties below.
 
-_Table_ _105_: _Intersecting Labels_
+_Intersecting Labels_
 
 <table>
 <tr>
@@ -1047,11 +1023,11 @@ Description</th></tr>
 <tr>
 <td>
 LabelIntersectAction</td><td>
-Specifies the action to take when labels texts intersect.* MultipleRows - Will render the labels in multiple rows.* None - Do nothing (default value)* Rotate - Rotates text so as to avoid overlap* Wrap - wraps text.</td></tr>
+Specifies the action to take when labels texts intersect.<ul><li> MultipleRows - Will render the labels in multiple rows.</li><li> None - Do nothing (default value)</li><li> Rotate - Rotates text so as to avoid overlap</li><li> Wrap - wraps text.</li></ul></td></tr>
 <tr>
 <td>
 <br>EdgeLabelsDrawingMode</td><td>
-Affects the labels that get rendered at the edges of the axis. Possible values:* Center - Centers the label at the interval. Default setting.* Shift - Shifts the labels so that it's within the interval boundaries* ClippingProtection - Uses some intelligent logic to avoid clipping.</td></tr>
+Affects the labels that get rendered at the edges of the axis. Possible values:<ul><li> Center - Centers the label at the interval. Default setting.</li><li> Shift - Shifts the labels so that it's within the interval boundaries</li><li>ClippingProtection - Uses some intelligent logic to avoid clipping.</li></ul></td></tr>
 <tr>
 <td>
 <br>HidePartialLabels</td><td>
@@ -1077,13 +1053,11 @@ Me.ChartWebControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectActio
 
 ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/IntersectingLabels.png](Chart-Axes_images/Chart-Axes_img18.png)
 
-_Figure_ _262_: _Intersecting Labels_
+
 
 ### Grouping Labels
 
 Another interesting feature that is available is to be able to group a set of adjoining labels and mark them with a new label. For example, grouping the first three months of the year and marking them as Q1 and so on. The following properties will let you do that.
-
-_Table_ _106_: _Grouping Labels_
 
 <table>
 <tr>
@@ -1155,7 +1129,7 @@ Me.chartControl1.PrimaryXAxis.DrawTickLabelGrid = True
 
 ![](Chart-Axes_images/Chart-Axes_img19.jpeg)
 
-_Figure_ _263_: _Q1 and Q2 Grouping Labels with Grids_
+
 
 ### Tooltip Support for ChartAxisLabels
 
@@ -1189,7 +1163,7 @@ ChartSeries series = new ChartSeries("Series");
 
             this.chartControl1.Series.Add(series);
 
-//Set labeltext
+			//Set labeltext
 
             arrLabel.Add("India");
 
@@ -1199,7 +1173,7 @@ ChartSeries series = new ChartSeries("Series");
 
             arrLabel.Add("Japan");
 
-//Set tooltip content 
+			//Set tooltip content 
 
             arrTooltip.Add("IND");
 
@@ -1219,7 +1193,7 @@ ChartSeries series = new ChartSeries("Series");
 
            this.chartControl1.Title.Text = "Product Sales";
 
-void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
+		void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
 
         {
 
@@ -1235,7 +1209,7 @@ void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEvent
 
                     e.Label = arrLabel[index].ToString();
 
-//Specify arrTooltip content as chartAxisLabel Tooltip 
+					//Specify arrTooltip content as chartAxisLabel Tooltip 
 
                     e.ToolTip = arrTooltip[index].ToString();
 
@@ -1331,19 +1305,18 @@ End Sub
 
 ![C:/Users/sivakumard/Desktop/Tooltip.png](Chart-Axes_images/Chart-Axes_img20.png)
 
-_Figure_ _264_: _Customized Tooltip_
 
-### Refer Also 
 
-Customizing Label Text and ToolTip
+{% seealso %}
+
+[Customizing Label Text](#Customizing Label Text) and [ToolTip](/windowsforms/chart/chart-series#tooltip)
+
+{% endseealso %}
 
 ## Axis Title
 
 EssentialChart provides properties to set custom titles for the axes. Set the title text for an axis using Title property. Customize this text using TitleColor and TitleFont properties.
 
-
-
-_Table_ _107_: _Title properties_
 
 <table>
 <tr>
@@ -1396,19 +1369,18 @@ You can now wrap the axes titles and display them as multiline text. Set multili
 
 ![](Chart-Axes_images/Chart-Axes_img21.jpeg)
 
-_Figure_ _265_: _Setting Multiline Axis Title Through Properties Window_
+
 
 The below screenshot illustrates a chart with multiline axes titles.
 
 ![](Chart-Axes_images/Chart-Axes_img22.jpeg)
 
-_Figure_ _266_: _Chart with Multiline Axes Titles_
+
 
 ### Drawing Mode of Title Text
 
 You can now display partial axis title with an ellipsis at the end of text, whose text length exceeds the axis length. There is also an option to wrap the title text, in addition to the multiline axes title feature, which is discussed above. The Axes.TitleDrawMode property is used to control this behavior.
 
-_Table_ _108_: _Axes.TitleDrawMode_
 
 <table>
 <tr>
@@ -1447,7 +1419,7 @@ Me.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
 
 ![](Chart-Axes_images/Chart-Axes_img23.png)
 
-_Figure_ _267_: _Y-Axis TitleDrawMode = "Ellipsis"; SecYAxis TitleDrawMode = "Wrap"_
+
 
 ## Axis Ticks
 
@@ -1455,7 +1427,6 @@ _Figure_ _267_: _Y-Axis TitleDrawMode = "Ellipsis"; SecYAxis TitleDrawMode = "Wr
 
 Major Ticks are rendered automatically at the intersection of an axis with the interval grid lines. Here are some properties that will let you customize the look and feel, and behavior of the ticks.
 
-_Table_ _109_: _Major Ticks_
 
 <table>
 <tr>
@@ -1482,7 +1453,7 @@ Defines the number of ticks to render while zooming.* NumberOfIntervalsFixed - W
 
 ![](Chart-Axes_images/Chart-Axes_img24.jpeg)
 
-_Figure_ _268_: _Primary X-Axis with Major ticks (3x3, DarkOrange)_
+
 
 {% highlight c# %}
 
@@ -1508,10 +1479,6 @@ Me.chartControl1.PrimaryXAxis.TickLabelGridPadding = 8F
 
 Minor ticks are tick marks in between major ticks. These are not rendered by default. Use the properties below to enable and define the frequency of such minor tick marks.
 
-
-
-_Table_ _110_: _Minor Ticks_
-
 <table>
 <tr>
 <th>
@@ -1530,7 +1497,7 @@ Specifies the size of the tick rectangle.</td></tr>
 
 ![](Chart-Axes_images/Chart-Axes_img25.jpeg)
 
-_Figure_ _269_: _Primary X-Axis with Major and Minor Ticks_
+
 
 {% highlight c# %}
 
@@ -1554,7 +1521,7 @@ Here are some properties that affect the rendering of an axis when in 3-D mode, 
 
 
 
-_Table_ _111_: _3-D Related_
+_3-D Related_
 
 <table>
 <tr>
@@ -1584,7 +1551,7 @@ Specifies the angle of rotation relative to the x-axis. Default value is 30f.</t
 <tr>
 <td>
 ColumnDrawMode</td><td>
-Specifies the mode of column drawing when in 3-D.* PlaneMode—Columns from different series are drawn with the same depth.* InDepthMode—Columns from different series are drawn with different depths.</td></tr>
+Specifies the mode of column drawing when in 3-D.<ul><li> PlaneMode—Columns from different series are drawn with the same depth.,/li><li> InDepthMode—Columns from different series are drawn with different depths.</li></ul></td></tr>
 <tr>
 <td>
 <br>EnableMouseRotation</td><td>
@@ -1619,7 +1586,7 @@ Me.chartControl1.Rotation = 60
 
 ![](Chart-Axes_images/Chart-Axes_img26.jpeg)
 
-_Figure_ _270_: _3-D Chart control with Depth = "55f", Tilt = "55f"; Rotation = "60"_
+
 
 ### Real 3D Mode sample
 
@@ -1654,13 +1621,13 @@ Me.chartControl1.RealMode3D = True
 
 ![](Chart-Axes_images/Chart-Axes_img27.jpeg)
 
-_Figure_ _271_: _3D Chart in a 3-D plane with Tilt = "0"; Depth = "150"; Rotation = "10"_
+
 
 ### Rotating Chart
 
 The end-users can be allowed to rotate the chart at run-time, using the mouse (middle or right mouse button) by setting the EnableMouseRotation property to true. 
 
-> Note: Rotation will not be possible with the LEFT-MOUSE button by enabling this property.
+N> Rotation will not be possible with the LEFT-MOUSE button by enabling this property.
 
 {% highlight c# %}
 
@@ -1680,13 +1647,10 @@ Me.chartControl1.EnableMouseRotation = True
 
 ![](Chart-Axes_images/Chart-Axes_img29.jpeg)
 
-_Figure_ _272_: _Real3D Mode Chart being Rotated By Using Mouse_
 
 ### Rendering Chart in 3-D Style
 
 The interior walls of 3-D charts are enhanced with color effects to improve the chart appearance for many 3-D chart types such as column, column range, bar, area, spline area, step area, candle, and histogram. The chart can be rendered in 3-D style using the Style3D property. The following table explains this property.
-
-_Table_ _112_: _Style3D_
 
 <table>
 <tr>
@@ -1717,13 +1681,12 @@ Specifies whether the chart should be rendered in 3-D style.</td></tr>
 
 ![http://www.syncfusion.com/downloads/Support/DirectTrac/93985/clip_image001105907764.png](Chart-Axes_images/Chart-Axes_img30.png)
 
-_Figure_ _273_: _Column Chart with 3-D Style_
 
 ## Chart Grid Lines
 
 The grid lines in the chart that delineates the intervals in the axes can be customized using the following properties.
 
-_Table_ _113_: _Chart grid lines_
+_Chart grid lines_
 
 <table>
 <tr>
@@ -1758,7 +1721,6 @@ The thickness of the lines.</td></tr>
 
 ![](Chart-Axes_images/Chart-Axes_img31.jpeg)
 
-_Figure_ _274_: _Axes Gridlines customized with Properties_
 
 Using the GridLineType property, BackColor, DashStyle, ForeColor, PenType and the Width can be specified.
 
@@ -1830,7 +1792,6 @@ Strip-lines are bands that are drawn at the background of the chart. They can be
 
 A strip-line is configurable by setting its start, end, period and width in the same value type as the axis that holds it. The interior of the strip-lines support gradients, images and different text positions and orientations.
 
-_Table_ _114_: _ChartStripLine_
 
 <table>
 <tr>
@@ -2005,14 +1966,11 @@ Me.chartControl1.PrimaryXAxis.StripLines.Add(stripLine)
 
 ![](Chart-Axes_images/Chart-Axes_img32.jpeg)
 
-_Figure_ _275_: _Chart with Stripline rendered in Y-Axis_
 
 Use an image as StripLine by setting through StripLine.BackImage property.
 
 ![](Chart-Axes_images/Chart-Axes_img33.jpeg)
 
-
-_Figure_ _276_: _Chart with Image StripLine rendered in X-Axis_
 
 ## Chart Breaks
 
@@ -2038,10 +1996,6 @@ All breaks work only with decart axes.
 ![](Chart-Axes_images/Chart-Axes_img34.png)
 
 
-
-
-
-_Figure_ _277_: _Illustrates Chart_ _BreakAmount_ _Value_
 
 
 {% highlight c# %}
@@ -2106,7 +2060,7 @@ Me.chartControl1.PrimaryYAxis.BreakRanges.BreakAmount = 0.5
 
 ![](Chart-Axes_images/Chart-Axes_img35.jpeg)
 
-_Figure_ _278_: _Chart BreakAmount = "0.5"_
+
 
 ## Axis Crossing Support 	
 
@@ -2116,7 +2070,7 @@ Essential Chart for Windows allows the X and Y axis to intersect at a desired po
 
 This feature will be useful to customize the location of primary axes from default location, when you want to add huge number of negative and positive points in the chart. 
 
-_Table_ _115_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -2168,7 +2122,7 @@ Me.chartControl1.Series3D = True
 
 ![](Chart-Axes_images/Chart-Axes_img36.png)
 
-_Figure_ _279_: _Primary axes location customized_
+
 
 ## Axis Label Placement
 
@@ -2178,7 +2132,7 @@ This feature enables you to specify the position of the label for an axis. You c
 
 When you have lengthy label for thechart axis, it will occupy more space. So the plotted chart area will get reduced. You can avoid this using this feature. 
 
-_Table_ _116_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -2224,7 +2178,7 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 
 ![](Chart-Axes_images/Chart-Axes_img37.png)
 
-_Figure_ _280_: _Chart with Y-Axis Labels Placemed Inside of Axis_
+
 
 ### Positioning Individual Axis Labels
 

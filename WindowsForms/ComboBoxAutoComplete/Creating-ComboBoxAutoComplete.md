@@ -3,7 +3,7 @@ layout: post
 title: Creating-ComboBoxAutoComplete
 description: Creating-ComboBoxAutoComplete
 platform: WindowsForms
-control: Tools
+control: ComboBoxAutoComplete
 documentation: ug
 ---
 

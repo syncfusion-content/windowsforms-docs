@@ -25,15 +25,13 @@ The following properties and methods will fall under the DICOMImage class.
 
 ### Properties
 
-_Table_ _4_: Properties Table
-
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 FileName </td><td>
@@ -56,7 +54,6 @@ System.Drawing</td></tr>
 
 ### Methods
 
-_Table_ _5_: Methods Table
 
 <table>
 <tr>
@@ -67,12 +64,12 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-Save ()</th><th>
-Saves the converted DICOM Image to the specified file or a Stream.</th><th>
-Save(String)Save(Stream) </th><th>
-Normal </th><th>
-void </th></tr>
+<td>
+Save ()</td><td>
+Saves the converted DICOM Image to the specified file or a Stream.</td><td>
+Save(String)Save(Stream) </td><td>
+Normal </td><td>
+void </td></tr>
 </table>
 
 ## Adding DICOM to an Application 

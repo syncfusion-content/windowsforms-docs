@@ -3,7 +3,7 @@ layout: post
 title: CommandBar-States
 description: commandbar states
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ These two states of the CommandBar are explained in detail in the following topi
 
  {% seealso %}
 
- [Serialization](#serialization)
+ [Serialization](windowsforms/commandbar/serialization)
  
  {% endseealso %}
 
@@ -23,7 +23,6 @@ These two states of the CommandBar are explained in detail in the following topi
 
 By default, CommandBars can be floated on the form by dragging the gripper on the CommandBar. The properties that enable floating of CommandBars and customization of their settings are discussed below.
 
-Table 7: CommandBar Property Table
 
 <table>
 <tr>
@@ -99,7 +98,6 @@ A sample which demonstrates the Floating CommandBar is available in the below sa
 
 CommandBar can be docked to all the edges of the form such as Top, Bottom, Right and Left. Docking can be controlled by the CommandBar and CommandBarController properties.
 
-Table 8: Docking CommandBar
 
 <table>
 <tr>
@@ -146,7 +144,6 @@ The docked state of the CommandBar can be disabled by setting the DisableDocking
 
 This CommandBarController property allows you to dock the CommandBar to the edges of the form. The AllowedDockBorders property doesn't take any effect when this property is set to 'None'.
 
-Table 9: CommandBarController_
 
 <table>
 <tr>

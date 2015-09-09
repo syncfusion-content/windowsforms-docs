@@ -31,7 +31,7 @@ The following steps illustrate how to perform Mail Merge:
 
 Mail Merge operations are performed by the Execute or ExecuteGroup method. There are several overloads of these methods for different data sources.
 
-Execute
+#### Execute
 
 * void Execute(string[ ] fieldNames, string[ ] fieldValues): Performs replacements of every merge field in the document in which field name matches one of the values from fieldNames string array with the corresponding value from fieldValues string array.
 * void Execute (DataTable table): Performs replacements of merge fields in which field names match the table column names with the corresponding values of table cell. These replacements are performed for every row contained in the table.
@@ -41,9 +41,8 @@ Execute
 * void Execute(OleDbDataReader dataReader): Works similarly with IDataRader parameter.
 * void Execute(IEnumerable dataSource): Performs replacement of merge fields, in which field names match the enumerable instance names in DataSource.
 
-Public Methods
+#### Public Methods
 
-Table 92 : Public Methods
 
 <table>
 <tr>
@@ -366,15 +365,15 @@ You can merge outer group fields placed within inner nested group using Nested M
 
 1. Implicit group:
 
-<<FieldName>>
+   <<FieldName>>
 
-<<Image:FieldName >>
+   <<Image:FieldName >>
 
 2. Explicit group:
 
-<<TableName:FieldName>>
+   <<TableName:FieldName>>
 
-<< Image:TableName:FieldName >>
+   << Image:TableName:FieldName >>
 
 
 
@@ -388,63 +387,71 @@ For example:
 
 1. class EmployeeDetails
 
-{
+   ~~~ cs
+   
+		{
 
-string employeeName;
+		string employeeName;
 
-string employeeID;
+		string employeeID;
 
-List<CustomerDetails> customers;
+		List<CustomerDetails> customers;
 
-}
+		}
 
-class CustomerDetails
+		class CustomerDetails
 
-{
+		{
 
-string customerName;
+		string customerName;
 
-string customerID;
+		string customerID;
 
-}
+		}
+		
+   ~~~
+   {:.prettyprint }
 
-2.  class EmployeeDetails
 
-{
+2. class EmployeeDetails
 
-string employeeName;
+   ~~~ vbnet
+		
+		{
 
-string employeeID;
+		string employeeName;
 
-CustomerDetails customer;
+		string employeeID;
 
-}
+		CustomerDetails customer;
 
-class CustomerDetails
+		}
 
-{
+		class CustomerDetails
 
-string customerName;
+		{
 
-string customerID;
+		string customerName;
 
-}
+		string customerID;
 
+		}
+
+   ~~~
+   {:.prettyprint }
 
 
 In the above example, the customers property in EmployeeDetails has customers related to the particular employee. It does not require any common property employeeID in EmployeeDetails and CustomerDetails. Also it does not require relational commands to relate the EmployeeDetails and CustomerDetails.
 
 
 
-> Note:
+N> Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
+N>
+N> Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
+N>
+N> The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
 
-* Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
-* Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
-* The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
-
-Public Methods
-
-Table 93 : Public Methods
+#### Public Methods
 
 <table>
 <tr>
@@ -465,7 +472,7 @@ ExecuteNestedGroup(DbConnection conn, ArrayList commands, bool isSqlConnection)<
 Runs nested mail merge within a Group for the specified data from the Database. If it is an SQL connection, then set to True.</td></tr>
 <tr>
 <td>
-ExecuteNestedGroup(MailMergeDataSet dataSource, List<Dictionaryentry> commands)</td><td>
+ExecuteNestedGroup(MailMergeDataSet dataSource, List&lt;Dictionaryentry&gt; commands)</td><td>
 Runs nested mail merge within a Group for the specified data from the MailMergeDataSet.</td></tr>
 <tr>
 <td>
@@ -727,7 +734,7 @@ End Function
 
 The following code example illustrates how to perform mail merge with business objects.
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1381,7 +1388,7 @@ this.Fax = Fax;
 
 {%endhighlight%}
 
-{%highlight c#%}
+{%highlight vbnet %}
 
 
 
@@ -2071,7 +2078,7 @@ End Sub
 End Class
 
 
-{%endhighlight%}
+{% endhighlight %}
 
 ###  Event Support for Mail Merge
 
@@ -2079,7 +2086,7 @@ The MailMerge class provides two events to expand the mail merge capabilities. T
 
 The MergeField event occurs during mail merge when a simple mail merge field is encountered in the document. This allows implementation of further control over the mail merge and perform any action when the event occurs. You can use the MergeFieldEventHandler delegate to reference the method that handles the MergeField. This method accepts a MergeFieldEventArgs instance that provides data for the MergeField event.
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -2181,7 +2188,7 @@ return dataTable;
 
 {%endhighlight%}
 
-{%highlight c#%}
+{% highlight vbnet %}
 
 
 
@@ -2255,7 +2262,7 @@ Return dataTable
 
 End Function
 
-{%endhighlight%}
+{% endhighlight %}
 
 
 
@@ -2267,7 +2274,7 @@ The MailMerge.MergeImageField occurs during mail merge when an image mail merge 
 
 You can use the MergeImageFieldEventHandler delegate representing the method to handle the MergeImageField event. The event handler receives an argument of type MergeImageFieldEventArgs.
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 public void MailMerge()
@@ -2363,7 +2370,7 @@ return dataTable;
 {%endhighlight%}
 
 
-{%highlight vbnet%}
+{% highlight vbnet %}
 Public Sub MailMerge()
 
 'Loads the template.
@@ -2444,7 +2451,7 @@ The MailMerge class allows automatic mapping between the names of fields in the 
 
 The following code example illustrates how to add mapping when a merge field in a document and a data field in a data source have different names.
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -2453,7 +2460,7 @@ doc.MailMerge.MappedDataFields.Add("FieldName_InDocument", "FieldName_InDataSour
 {%endhighlight%}
 
 
-{%highlight vbnet%}
+{% highlight vbnet %}
 
 
 
@@ -2490,14 +2497,17 @@ Dim fieldNames As String() = doc.MailMerge.GetMergeFieldNames()
 
 You can get the collection of the Merge Field Group names available in a document by using the GetMergeGroupNames method. This returns an array of string that contains the names. 
 
-{%highlight c#%}
+{% highlight c# %}
+
  string[] groupNames =  doc.MailMerge.GetMergeGroupNames()
  
- {%endhighlight%}
+ {% endhighlight %}
  
- {%highlight vbnet%}
-Dim filednames As String() = doc.MailMerge. GetMergeGroupNames()
-{%endhighlight%}
+ {% highlight vbnet %}
+
+ Dim filednames As String() = doc.MailMerge. GetMergeGroupNames()
+
+ {% endhighlight %}
 
 
 
@@ -2516,9 +2526,6 @@ string[] filednames = doc.MailMerge.GetMergeFieldNames(groupName);
 {%endhighlight%}
 
 {%highlight vbnet%}
-
-
-
 
 
 Dim filednames As String() = doc.MailMerge.GetMergeFieldNames(groupName)

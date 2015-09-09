@@ -15,8 +15,6 @@ This section discusses the complete Appearance and behavior settings of Editable
 
 EditableList control contains embedded controls such as Button, TextBox and ListBox.
 
-Table 322: List of controls
-
 <table>
 <tr>
 <th>
@@ -40,7 +38,6 @@ The listbox property of editable list, expands and allows the user to set variou
 
 You can enable scrollbars automatically for the EditableList control when its items are shown beyond its size by setting AutoScroll to true. When AutoScroll is enabled for the control, you can set the margin and logical size for the autoscroll region by AutoScrollMargin and AutoScrollMinSize properties.
 
-Table 323: Property Table
 
 <table>
 <tr>
@@ -90,7 +87,6 @@ Me.editableList1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
 
 Dock padding determines the size of the border for the docked controls.
 
-Table 324: Property Table
 
 <table>
 <tr>
@@ -128,7 +124,6 @@ Me.editableList1.DockPadding.All = 5
 
 You can display the button to the right while editing the items in the EditableList control by setting WantButton to true.
 
-Table 325: Property Table
 
 <table>
 <tr>

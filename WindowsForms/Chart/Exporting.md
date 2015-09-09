@@ -63,9 +63,6 @@ System.Diagnostics.Process.Start(exportFileName)
 Based on the filename extension the chart has built-in support to save the image in the following formats.
 
 
-
-_Table_ _179_: _Properties_
-
 <table>
 <tr>
 <th>
@@ -167,10 +164,9 @@ The figure below shows the chart EPS image text editing in Adobe Illustrator.
 
 
 
-_Figure_ _354_: _EPS Chart with Editable Text_
 
 
-> Note: Chart wrapping and formatting will not be possible in the EPS image by enabling this property.
+N> Chart wrapping and formatting will not be possible in the EPS image by enabling this property.
 
 ## Exporting to Word Doc
 
@@ -180,8 +176,6 @@ The chart control can be exported to a Word doc file as an image using Essential
 
 ![](Exporting_images/Exporting_img3.jpeg)
 
-
-_Figure_ _355_: _Exporting Chart to DocIO_
 
 Given below are the steps that will guide you through this process.
 
@@ -338,7 +332,6 @@ The chart control can be exported into a grid cell (in Essential Grid) as an ima
 ![](Exporting_images/Exporting_img4.jpeg)
 
 
-_Figure_ _356_: _Exporting Chart to Grid_
 
 The steps that are given below will guide you through the process.
 
@@ -542,11 +535,6 @@ EssentialChart data can be exported into an Excel document and an Excel chart ca
 
 ![](Exporting_images/Exporting_img5.jpeg)
 
-
-
-
-
-_Figure_ _357_: _Essential Chart translated into an Excel Chart by using Essential XlsIO_
 
 Given below are the steps that will guide you through this process.
 
@@ -763,8 +751,6 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 
 
 ![](Exporting_images/Exporting_img6.jpeg)
-
-_Figure_ _358_: _Exporting Chart to PDF_
 
 1. Add the Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows assemblies.
 2. Add the namespace Syncfusion.Pdf in your form.

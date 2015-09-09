@@ -11,7 +11,6 @@ documentation: ug
 
 The default textbox within the ButtonEdit control can be replaced with any custom textbox like PercentTextBox, IntegerTextBox, and so on. The properties of Embedded textbox of a ButtonEdit control are discussed below.
 
-Table 148: Property Table
 
 <table>
 <tr>

@@ -3,7 +3,7 @@ layout: post
 title: How to identify the docking window which is currently being closed
 description: How to identify the docking window which is currently being closed
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

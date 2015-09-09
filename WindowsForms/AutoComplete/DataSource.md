@@ -15,7 +15,6 @@ This section will discuss the data settings for the AutoComplete control, in the
 
 The data for the autocompletion will be maintained by the AutoComplete control itself. This is referred to as a History Data List mode. The below properties deals with data settings.
 
-Table 118: Property Table
 
 <table>
 <tr>
@@ -59,20 +58,22 @@ Me.autoComplete1.DataSource = DataTable1
 
 N> We can set External datasource for the autocompletion. See External DataSource topic.
 
- See Also
- How to delete the items in the list at run time?
+{% seealso %}
+ 
+ [How to delete the items in the list at run time?](http://docs.syncfusion.com/windowsforms/autocomplete/faq/how-to-delete-the-items-in-the-list-at-run-time)
+
+ {% endseealso %}
 
 ## Source for AutoComplete Control
 
 ### Dynamic Source at RunTime
 
-Enabling the AutoComplete.AutoAddItem property will allow the end users to save their entries at run time. Pressing Enter key will save the user entry. See Through Designer topic for details.
+Enabling the AutoComplete.AutoAddItem property will allow the end users to save their entries at run time. Pressing Enter key will save the user entry. See [Through Designer](http://docs.syncfusion.com/windowsforms/autocomplete/creating-autocomplete-control#through-designer) topic for details.
 
 ### Setting AutoCompletion Source Through Designer
 
 The different sources available for auto completion are specified using Control.AutoCompleteSource property. When the end user enters a letter in the TextBox for example, the letter will be matched with the source available and displays the dropdown item accordingly.
 
-Table 119: Property Table
 
 <table>
 <tr>
@@ -159,13 +160,12 @@ Me.textBox1.AutoCompleteCustomSource.AddRange(New String[] {"Customization Setti
 
 AutoCompletion modes can be specified using AutoCompleteMode property.
 
-Table 120: Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoCompleteMode</td><td>
@@ -197,9 +197,6 @@ Me.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppe
 
 ![](AutoComplete-Controls-Images/Overview_img30.jpeg) 
 
-
- See Also
- Multiple Columns, External Datasource.
 
 ## External Datasource
 
@@ -286,4 +283,4 @@ You can specify an external datasource for the AutoComplete control to use as th
  ![](AutoComplete-Controls-Images/Overview_img31.jpeg) 
 
 
-Refer to Multiple Columns section for more information on configuring data sources with multiple columns.
+Refer to [Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns) section for more information on configuring data sources with multiple columns.

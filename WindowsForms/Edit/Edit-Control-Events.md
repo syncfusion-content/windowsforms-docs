@@ -1157,9 +1157,6 @@ End Sub
 
 
 
-_Figure_ _84: Custom Indicators in the Indicator Margin
-
-
 
 ## InsertModeChanged Event
 
@@ -2606,9 +2603,6 @@ End Sub
 
 ![](Edit-Control-Events_images/Edit-Control-Events_img2.jpeg)
 
-
-
-_Figure_ _85: Bookmark ToolTip Text Displayed_
 
 
 

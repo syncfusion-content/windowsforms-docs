@@ -52,6 +52,8 @@ A sample which demonstrates the chartdividearea support is available in the foll
 
 &lt;sample installed location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Chart Divide Area
 
-### See Also
+{% seealso %}
 
-PieWithSameRadius
+[PieWithSameRadius](/windowsforms/chart/chart-series#piewithsameradius)
+
+{% endseealso %}

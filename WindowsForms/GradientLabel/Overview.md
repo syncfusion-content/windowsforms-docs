@@ -23,4 +23,4 @@ The .NET framework provides a label control typically used to provide descriptiv
 
 
 
-> Note: All the other functions of the GradientLabel is the same as the System.Windows.Forms.Label control in the Windows Forms library.
+N> All the other functions of the GradientLabel is the same as the System.Windows.Forms.Label control in the Windows Forms library.

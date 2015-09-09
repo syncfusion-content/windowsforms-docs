@@ -3,7 +3,7 @@ layout: post
 title: Calculator Settings
 description: calculator settings
 platform: WindowsForms
-control: Editors Package
+control: CurrencyEdit
 documentation: ug
 ---
 
@@ -17,9 +17,6 @@ A CurrencyEdit control has a text field and a Calculator button, pressing which 
 
 The properties which controls the behavior of the Calculator button is as follows.
 
-
-
-Table 254 : Property Table
 
 <table>
 <tr>
@@ -70,7 +67,7 @@ CalcSpecialBackspace.<br/></td></tr>
 </table>
 
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -86,13 +83,13 @@ this.currencyEdit1.TransferFromCalculator = true;
 
 this.currencyEdit1.TransferToCalculator = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
 
 
 
 
-{%highlight vbnet%}
+{% highlight vbnet %}
 
 
 
@@ -108,4 +105,4 @@ Me.currencyEdit1.TransferFromCalculator = True
 
 Me.currencyEdit1.TransferToCalculator = True
 
-{%endhighlight%}
+{% endhighlight %}

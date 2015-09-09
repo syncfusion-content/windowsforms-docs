@@ -3,7 +3,7 @@ layout: post
 title: How to get dock controls parent relationship through code
 description: How to get dock controls parent relationship through code
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

@@ -26,7 +26,7 @@ The Chart handles the following mouse related events when the user interacts wit
 
 The above events are raised with a ChartRegionMouseEventArgs that contain the following properties.
 
-_Table_ _184_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -50,9 +50,6 @@ Returns the right mouse button actions.</td></tr>
 
 The Region property above includes several useful information about the kind of region the user is currently interacting with:
 
-
-
-_Table_ _185_: _Properties_
 
 <table>
 <tr>
@@ -300,7 +297,7 @@ End Sub
 
 ![](Chart-control-events_images/Chart-control-events_img1.jpeg)
 
-_Figure_ _370_: _Green columns indicate employees who met 100 percent of their Quota_
+
 
 ## SeriesInCompatible Event
 
@@ -358,9 +355,11 @@ End Sub
 
 ChartAreaPaint event is discussed in Custom Drawing.
 
-### See Also
+{% seealso %}
 
-Chart Area Bounds
+[Chart Area Bounds](/windowsforms/chart/hit-testing#chart-area-bounds)
+
+{% endseealso %}
 
 ## ChartLegendFilterItems Event
 

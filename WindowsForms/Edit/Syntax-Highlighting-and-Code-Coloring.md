@@ -299,9 +299,6 @@ Syntax Highlighting and Code Coloring can be implemented at run time by using th
 
 
 
-_Figure_ _43_: Configuration Customization Dialog Box
-
-
 
 The Language Coloring Configuration Editorcan be invoked programmatically as follows.
 
@@ -385,11 +382,11 @@ A sample which demonstrates the above features is available in the below sample 
 
 _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### See Also
+{% seealso %}
 
-Creating a Custom Language Configuration File, 
+[Creating a Custom Language Configuration File](/windowsforms/edit/configuration-settings#creating-a-custom-language-configuration-file)
 
-
+{% endseealso %}
 
 
 
@@ -477,11 +474,11 @@ Configuration Settings section.
 
 
 
-### See Also
+{% seealso %}
 
-### Syntax Highlighting and Code Coloring, Multiple Language Syntax Highlighting
+[Syntax Highlighting and Code Coloring](#syntax-highlighting-and-code-coloring), [Multiple Language Syntax Highlighting](#multiple-language-syntax-highlighting)
 
-
+{% endseealso %}
 
 ## Multiple Language Syntax Highlighting
 
@@ -493,9 +490,6 @@ Edit Control supportssyntax highlighting in scenarios where more than one langua
 
 
 
-_Figure_ _44: Syntax Highlighting illustrated in HTML with Embedded JScript
-
-
 
 A sample which demonstrates the above feature is available in the below sample installation path.
 
@@ -503,9 +497,9 @@ A sample which demonstrates the above feature is available in the below sample i
 
 _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### See Also
+{% seealso %}
 
-### Syntax Highlighting and Code Coloring, XML Based Configuration Files
+[Syntax Highlighting and Code Coloring](#syntax-highlighting-and-code-coloring), [XML Based Configuration Files](#xml-based-configuration-files)
 
-
+{% endseealso %}
 

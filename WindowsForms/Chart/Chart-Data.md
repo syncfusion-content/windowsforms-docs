@@ -17,17 +17,19 @@ The ChartSeries data points and the axis labels are the ones that can be databou
 
 There is however no DESIGN-TIME support for data binding. This has to be setup in code.
 
- Binding a DataSet to the Chart
+ [Binding a DataSet to the Chart](http://docs.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart)
 
 ### Data binding via custom interfaces
 
 There is also a more flexible support for implementing custom data models by implementing specific interfaces. Using this approach you can query and provide data for the chart much more flexibly and from any kind of data store.
 
-> Note: One important reason you might want to use either of the above two approaches is to greatly enhance performance (speed and memory) especially while dealing with a large set of data points.
+N> One important reason you might want to use either of the above two approaches is to greatly enhance performance (speed and memory) especially while dealing with a large set of data points.
 
-#### See Also
+{% seealso %}
 
-Implementing Custom Data Binding Interfaces
+[Implementing Custom Data Binding Interfaces](http://docs.syncfusion.com/windowsforms/chart/chart-data#implementing-custom-data-binding-interfaces)
+
+{% endseealso %}
 
 ## Binding a DataSet to the Chart
 
@@ -35,7 +37,6 @@ The following sample code illustrates how a custom DataSet can be bound to a Cha
 
 ![](Chart-Data_images/Chart-Data_img2.jpeg)
 
-_Figure_ _:_ _Access Table data that is about to get bound to Chart_
 
 {% highlight c# %}
 
@@ -163,7 +164,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 
 ![](Chart-Data_images/Chart-Data_img3.jpeg)
 
-_Figure_ _25_: _Demographics DataSet bounded to the Chart_
+
 
 ## Implementing Custom Data Binding Interfaces
 
@@ -359,11 +360,11 @@ Me.chartControl1.Series.Add(series1)
 
 ![](Chart-Data_images/Chart-Data_img4.jpeg)
 
-_Figure_ _26_: _CustomModel bound to the Chart Series_
+
 
 ### Indexed data
 
-> Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can instead implement the IChartSeriesIndexedModel interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
+Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can instead implement the IChartSeriesIndexedModel interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
 
 ## Chart Data Binding with IEnumerables
 
@@ -608,7 +609,7 @@ chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel
 
 ![](Chart-Data_images/Chart-Data_img5.jpeg)
 
-_Figure_ _27_: _Binding Chart with IEnumerables_
+
 
 ## Data Binding in Chart Through Chart Wizard
 
@@ -622,31 +623,31 @@ The below steps lets you bind a database table with the ChartControl.
 
    ![](Chart-Data_images/Chart-Data_img6.png)
 
-   _Figure_ _28_: _Data Source Tab_
+   
 
 2. First step is to select the chart data source from the drop-down list. All data sources available with the form will be shown in the list. If there is no data source in the list, click the new BindingSource option from the drop-down list.
    
    ![](Chart-Data_images/Chart-Data_img7.png)
 
-   _Figure_ _29_: _Selecting "new BindingSource...." from the drop-down list in the Data Source Tab
+   
 
 3. This opens a Data Source Configuration Wizard.Choose the Data source Type as Database, and click Next.
 
    ![](Chart-Data_images/Chart-Data_img8.jpeg)
 
-   _Figure_ _30_: _Selecting the Data Source Type_
+   
 
 4. Then click New Connection.
 
    ![](Chart-Data_images/Chart-Data_img9.jpeg)
 
-   _Figure_ _31_: _Creating a New Connection_
+   
 
 5. In the Choose Data Source dialog box, select the data source as MS SQL server database or MS Access database, and then click Continue button.
    
    ![](Chart-Data_images/Chart-Data_img10.jpeg)
 
-   _Figure_ _32_: _Choose Data Source Dialog Box_
+   
 
 
 
@@ -654,31 +655,31 @@ The below steps lets you bind a database table with the ChartControl.
 
    ![](Chart-Data_images/Chart-Data_img11.jpeg)
 
-   _Figure_ _33_: _Selecting the Database file by clicking on the Browse Button in the Add Connection Dialog Box_
+  
 
 7. You will be directed to the Data Source Configuration Wizard after completing the above steps. Click Next.
    
    ![](Chart-Data_images/Chart-Data_img12.jpeg)
 
-   _Figure_ _34_: _Next button in the Data Source Configuration Wizard is Clicked_
+  
 
 8. Tables and Views that are available in the selected database will be listed in the Wizard. Select the appropriate table, required columns and then click Finish.
    
    ![](Chart-Data_images/Chart-Data_img13.jpeg)
    
-   _Figure_ _35_: _Finish button in the Data Source Configuration Wizard is clicked after selecting the required Table and Columns_ 
+
 
 9. You will be directed back to the Chart Wizard now. Select the database from the Data Source list as shown in the image below.
 
    ![](Chart-Data_images/Chart-Data_img14.png)
    
-   _Figure_ _36_: _Selecting the Database from the drop-down List in the Data Source Tab_
+ 
 
 10. Once the source is selected, the selected table will be visible as in the below image.
 
     ![](Chart-Data_images/Chart-Data_img15.png)
 
-    _Figure_ _37_: _Selected Table_
+   
 
 
 ## Binding the Table Data with Chart Series
@@ -687,7 +688,7 @@ The below steps lets you bind a database table with the ChartControl.
 
    ![](Chart-Data_images/Chart-Data_img16.png)
 
-   _Figure_ _38_: _Selecting the Series to which the data is to be Bound_
+  
 
 
 
@@ -695,17 +696,17 @@ The below steps lets you bind a database table with the ChartControl.
 
    ![](Chart-Data_images/Chart-Data_img17.png)
    
-   _Figure_ _39_: _Assigning the retrieved database column to X value of the Series_
+  
    
    ![](Chart-Data_images/Chart-Data_img18.png)
    
-   _Figure_ _40_: _Assigning the retrieved database column to Y value of the Series_
+
 
 3. Click Finish to apply these data binding settings to the Chart. The below image illustrates the Chart bound with custom data.
 
    ![](Chart-Data_images/Chart-Data_img19.jpeg)
 
-   _Figure_ _41_: _Data Source bound to the Chart by using the Chart Wizard_
+  
 
 ## Binding Chart with a BindingSource
 
@@ -733,7 +734,7 @@ Step-3:
 
 The combo box displays all the available binding sources in the Form. Choose the binding source for Chart from the binding sources available in the combo box.
 
-> Note: When Form does not contain any binding source, then only [none] and [new Binding Source…] options are present in the combo box.
+N> When Form does not contain any binding source, then only [none] and [new Binding Source…] options are present in the combo box.
 
 ![](Chart-Data_images/Chart-Data_img24.png)
 
@@ -751,7 +752,7 @@ Step-5:
 
 In the X Value combo box, choose the field that should be bound with the X value of series. Similarly, in Y Value combo box, choose the field that should be bound with the Y value of the series and click Finish button. 
 
-> Note: You can also change series Type and Name here.
+N> You can also change series Type and Name here.
 
 ![](Chart-Data_images/Chart-Data_img28.png)
 

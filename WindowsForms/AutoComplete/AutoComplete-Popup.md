@@ -23,7 +23,7 @@ This section will discuss various components in the AutoComplete popup.
 
 DropDown item can have a header which is enabled using AutoComplete.ShowColumnHeader property. AutoAddItem property should be set to true.
 
-Table 109: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -73,13 +73,13 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-N> You can also set multiple columns. Refer Multiple Columns to know more.
+N> You can also set multiple columns. Refer [Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
 
 ## Close Button and Gripper Settings
 
 Visibility of close button and the gripper in the popup can be determined by ShowCloseButton and ShowGripper properties.
 
-Table 110: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -123,8 +123,6 @@ Me.autoComplete1.ShowGripper = True
 ### Appearance 
 
 At run time, the appearance of the AutoComplete window can be customized by using the following properties.
-
-Table 111: Property Table
 
 <table>
 <tr>
@@ -214,7 +212,7 @@ Me.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable
 
 DropDown item can have a header that is enabled by using the AutoComplete.ShowColumnHeader property. AutoAddItem property should be set to “True”.
 
-Table 112: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -265,13 +263,13 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-N>You can also set multiple columns. Refer_Multiple Columns to know more.
+N> You can also set multiple columns. Refer [Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
 
 ### Close Button and Gripper Settings
 
 Visibility of close button and the gripper in the popup can be determined by using the ShowCloseButton and ShowGripper properties.
 
-Table 113: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -322,7 +320,6 @@ Me.autoComplete1.ShowGripper = True
 
 At run time, the string entered in a textbox, for example, can be made case sensitive using the following properties.
 
-Table 114: Properties
 
 <table>
 <tr>
@@ -403,7 +400,6 @@ Me.autoComplete1.OverrideCombo = True
 
 The items in the list can be sorted automatically by setting AutoSortList to True.
 
-Table 115: Sorting Properties
 
 <table>
 <tr>
@@ -443,9 +439,7 @@ Me.autoComplete1.AutoSortList = True
 
 The duplicate values can be used in AutoComplete DataSource by setting EnableDuplicateValues to True.
 
-
-
-Table 116: Properties
+_Properties_
 
 <table>
 <tr>
@@ -484,15 +478,12 @@ Me.autoComplete1.EnableDuplicateValues = True
 
 {% endhighlight %}
 
- See Also
- 
- Source for AutoComplete Control, External Datasource
-
+{% seealso %} 
+ [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control), [External Datasource](/windowsforms/autocomplete/datasource#external-datasource)
+{% endseealso %}
 ## Size Settings
 
 The properties which can control the height and width of the AutoCompletePopup are as follows.
-
-Table 117: Property Table
 
 <table>
 <tr>

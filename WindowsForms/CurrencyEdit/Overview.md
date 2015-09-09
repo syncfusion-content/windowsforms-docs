@@ -3,7 +3,7 @@ layout: post
 title: Overview
 description: overview
 platform: WindowsForms
-control: Editors Package
+control: CurrencyEdit
 documentation: ug
 ---
 

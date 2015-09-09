@@ -190,7 +190,6 @@ Me.GridDataBoundGrid1.DataSource = al
 
 End Sub
 {% endhighlight  %}
-See Also
 
 ## ArrayList Class with IBindingList Support
 

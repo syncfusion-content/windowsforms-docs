@@ -37,19 +37,9 @@ Essential Chart is now associated with the creation and loading of chart templat
 
 
 
-
-
-_Figure_ _359_: _Saving Template through Context Menu_
-
-
-
 ![](Design-time-Features_images/Design-time-Features_img2.jpeg)
 
 
-
-
-
-_Figure_ _360_: _Saving, Loading and Resetting Templates through Designer Verbs_
 
 ### Save Template
 
@@ -132,10 +122,6 @@ The tasks window has sufficient properties exposed in the right manner for users
 
 
 
-
-
-_Figure_ _361_: _ChartControl Tasks Window_
-
 ### Tasks
 
 #### Title
@@ -146,9 +132,6 @@ Used to add title to the Chart directly from the Tasks Window.
 
 Specifies the position relative to the chart at which to render the chart title panel.
 
-
-
-_Table_ _180_: _Properties_
 
 <table>
 <tr>
@@ -203,9 +186,6 @@ Specifies if the legend is to be displayed or not.
 Configuration information of the Legend object.
 
 
-
-_Table_ _181_: _Properties_
-
 <table>
 <tr>
 <th>
@@ -237,10 +217,6 @@ Will not be docked to any specific location. Can be docked manually by dragging 
 #### Legend Alignment
 
 Gets or sets the legend alignment. 
-
-
-
-_Table_ _182_: _Properties_
 
 <table>
 <tr>

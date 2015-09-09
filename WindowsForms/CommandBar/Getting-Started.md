@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -61,19 +61,12 @@ The following section covers the steps involved in creating, initializing and se
 
    ~~~ cs
 
-
-
-
-
 		using Syncfusion.Windows.Forms.Tools;
+
    ~~~
    {:.prettyprint}
 
    ~~~ vbnet
-
-
-
-
 
 		Imports Syncfusion.Windows.Forms.Tools
    ~~~
@@ -82,11 +75,8 @@ The following section covers the steps involved in creating, initializing and se
 
 2. Create instances of the Essential Tools CommandBarController class and CommandBar control within the application's main form.
 3. Call the CommandBarController's BeginInit method to signal the start of initialization.
+   
    ~~~ cs
-
-		
-
-
 
 		private Syncfusion.Windows.Forms.Tools.CommandBarController commandBarController1;
 
@@ -103,14 +93,12 @@ The following section covers the steps involved in creating, initializing and se
 		this.commandBar1 = new Syncfusion.Windows.Forms.Tools.CommandBar();
 
 		this.panel1 = new System.Windows.Forms.Panel();
+		
    ~~~
    {:.prettyprint}
 
 
    ~~~ vbnet
-
-		
-
 
 
 		Private commandBarController1 As Syncfusion.Windows.Forms.Tools.CommandBarController
@@ -137,21 +125,16 @@ The following section covers the steps involved in creating, initializing and se
 
    ~~~ cs
 		
-
-
-
 		// Set the CommandBarController.HostForm property.
 
 		this.commandBarController1.HostForm = this;
+		
    ~~~
    {:.prettyprint}
 
 
 
    ~~~ vbnet
-
-		
-
 
 
 		' Set the CommandBarController.HostForm property.
@@ -166,25 +149,19 @@ The following section covers the steps involved in creating, initializing and se
 
    ~~~ cs
 
-		
-
-
-
 		// Add the panel control containing the toolbar to the CommandBar.
 
 		this.commandBar1.Controls.AddRange(new System.Windows.Forms.Control[] {this.panel1});
+		
    ~~~
    {:.prettyprint}
 
    ~~~ vbnet
 
-		
-
-
-
 		' Add the panel control containing the toolbar to the CommandBar.
 
 		Me.commandBar1.Controls.AddRange(New System.Windows.Forms.Control() {Me.panel1})
+		
    ~~~
    {:.prettyprint}
 
@@ -192,10 +169,6 @@ The following section covers the steps involved in creating, initializing and se
 6. Add the CommandBar to the CommandBarController through the CommandBarController's CommandBars collectionproperty.
 
    ~~~ cs
-
-		
-
-
 
 		this.commandBarController1.CommandBars.Add(this.commandBar1);
 
@@ -207,10 +180,6 @@ The following section covers the steps involved in creating, initializing and se
    {:.prettyprint}
 
    ~~~ vbnet
-
-		
-
-
 
 		Me.commandBarController1.CommandBars.Add(Me.commandBar1)
 
@@ -226,16 +195,12 @@ The following section covers the steps involved in creating, initializing and se
 
    ~~~ cs
 
-
-
 		((System.ComponentModel.ISupportInitialize)(this.commandBarController1)).EndInit();
+		
    ~~~
    {:.prettyprint}
 
    ~~~ cs
-
-
-
 
 		CType(Me.commandBarController1, System.ComponentModel.ISupportInitialize).EndInit()
 
@@ -263,8 +228,6 @@ The XP Menus framework provides the flexibility to add detached toolbars that ca
 2. Add that control by dragging and dropping to any .NET control. If you need to host multiple controls, you will need to first add a panel to the CommandBar and then add the controls to this panel.
 
    ~~~ cs
-
-
 
 		// Declare the controls.
 
@@ -294,7 +257,6 @@ The XP Menus framework provides the flexibility to add detached toolbars that ca
    {:.prettyprint}
 
    ~~~ vbnet
-
 
 
 		' Declare the controls.

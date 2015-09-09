@@ -3,7 +3,7 @@ layout: post
 title: Caption-Bar
 description: caption bar
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -23,7 +23,6 @@ The following topics will guide the end users on how to effectively use the capt
 
 Docking Manager allows you to set the caption label by using the DockLabel property of that particular control through designer and programmatically by using the SetDockLabel method. Alignment of these labels can be specified by using the DockLabelAlignment property. Caption font of the docked controls can be specified by using the DockedCaptionFont property in the DockingManager.
 
-Table 37: DockingManager Property Table
 
 <table>
 <tr>
@@ -128,7 +127,6 @@ The caption icons / the images can be set using this DockIcon property of the do
 * The corresponding control will be displayed with the icon that is set. 
 * To disable displaying the icon, set the value as -1.
 
-Table 38: DockedControl Property Table
 
 <table>
 <tr>
@@ -169,13 +167,11 @@ Me.DockingManager1.SetDockIcon(Me.ListBox1, 2)
 
 Methods for setting Caption icons and labels are as follows.
 
-Table 39: Methods Table
-
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetDockIcon</td><td>
@@ -314,16 +310,15 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 This feature enables you to add custom buttons to the caption bar when an item is in its floating state. It is not required to dock the item to use the custom buttons. 
 
-Table 40: Properties Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 ShowCustomButtonsInFloating</td><td>

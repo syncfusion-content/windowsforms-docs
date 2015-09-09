@@ -24,11 +24,6 @@ The following screen shot illustrates the structure of the Edit Control.
 
 
 
-
-_Figure_ _5_: Structure of EditControl
-
-
-
 ## Creating an Edit Control
 
 Essential Edit provides users with a powerful editing control, modeled after the VS.NET code editor. When complete, Edit will have almost all the code editing features available in VS.NET.
@@ -45,15 +40,12 @@ The following steps illustrate how to create an Edit Control through designer.
 
 
 
-The following image shows Edit Control in the toolbox.
+   The following image shows Edit Control in the toolbox.
 
 
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+   ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-
-
-_Figure_ _6_: Edit Control in Toolbox
 
 
 
@@ -68,17 +60,6 @@ The following illustration shows Edit Control created through designer.
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-
-
-_Figure_ _7_: Edit Control created Through Designer
-
-
-
-See Also
-
-
-
-Through Code
 
 
 
@@ -203,14 +184,8 @@ The following illustration shows Edit Control created through code.
 ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
+{% seealso %}
 
-_Figure_ _8_: Edit Control created Through Code
+[Through Designer](#through-designer)
 
-
-
-See Also
-
-
-
-Through Designer
-
+{% endseealso %}

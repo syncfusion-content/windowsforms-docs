@@ -3,7 +3,7 @@ layout: post
 title: Appearance-Settings
 description: appearance settings
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -25,7 +25,6 @@ The docking Manager provides tab and label settings for the docked windows. Thes
 
 The font style and the height of the tab controls in a tabbed docking group can be controlled by using the following properties respectively.
 
-Table 44: DockingManager Property Table
 
 <table>
 <tr>
@@ -151,7 +150,6 @@ Tabbing the Docked controls in [Tabbed Docking](/windowsforms/Tools/DockingPacka
 
 The font style for the [autohidden tabs](#autohidden-tabs) can be specified in AutoHideTabFont property.
 
-Table 45: DockingManager Property Table
 
 <table>
 <tr>
@@ -196,7 +194,6 @@ Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawin
 
 The height for the auto hidden tabs can be specified in AutoHideTabHeight property.
 
-Table 46: DockingManager Property Table
 
 <table>
 <tr>
@@ -252,7 +249,6 @@ Me.DockingManager1.AutoHideTabHeight = 35
 
 Caption FontStyle and foreground settings, for an active docked control, can be controlled by ActiveCaptionFont and ActiveCaptionForeGround properties.
 
-Table 47: DockingManager Property Table
 
 <table>
 <tr>
@@ -303,7 +299,6 @@ Me.DockingManager1.ActiveCaptionForeGround = System.Drawing.Color.Red
 
 By setting the InactiveCaptionFont and InactiveCaptionForeGround properties, the caption foreground appearance of the inactive controls among the docked controls can be customized.
 
-Table 48: DockingManager Property Table
 
 <table>
 <tr>
@@ -357,7 +352,6 @@ The Docking Manager provides the [ProvideGraphicsItems](/windowsforms/Tools/Dock
 
 In the DockingManager, the Metro visual style has a default caption color and button color. The menu color and button color can be customized by using the properties MetroCaptionColor and MetroButtonColor, which are present in the caption bar of the docking manager.
 
-Table 49: Property Table
 
 <table>
 <tr>
@@ -427,7 +421,6 @@ This section will discuss the background settings for the caption area of the do
 
 Caption background appearance for the active docked control can be controlled through ActiveCaptionBackground property.
 
-Table 50: DockingManager Property Table
 
 <table>
 <tr>
@@ -471,7 +464,6 @@ Me.DockingManager1.ActiveCaptionBackground = New Syncfusion.Drawing.BrushInfo(Sy
 
 By setting the InactiveCaptionBackground properties, the caption appearance of the inactive control in the docked controls can be customized.
 
-Table 51: DockingManager Property Table
 
 <table>
 <tr>
@@ -516,9 +508,8 @@ Me.DockingManager1.InActiveCaptionBackground = New Syncfusion.Drawing.BrushInfo(
 
 Border color of the docked controls can be specified in the BorderColor property. 
 
-> Note that you will have to enable PaintBorders property to effect this setting.
+N> that you will have to enable PaintBorders property to effect this setting.
 
-Table 52: DockingManager Property Table
 
 <table>
 <tr>
@@ -566,7 +557,6 @@ Me.DockingManager1.PaintBorders = True
 
 ### HostFormClientBorder
 
-Table 53: DockingManager Property Table
 
 <table>
 <tr>
@@ -607,7 +597,6 @@ Me.DockingManager1.HostFormClientBorder = False
 
 The width of the splitter between the docking windows can be set by using the SplitterWidth property.
 
-Table 54: DockingManager Property Table
 
 <table>
 <tr>

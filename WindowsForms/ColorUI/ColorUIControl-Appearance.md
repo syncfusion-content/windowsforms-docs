@@ -14,7 +14,6 @@ This section discusses the appearance, border styles and size settings of the Co
 
 The border styles for the ColorUIControl can be set through BorderStyle property.
 
-Table 201: Property Table
 
 <table>
 <tr>
@@ -54,7 +53,6 @@ Me.colorUIControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 The Custom and User color panels can be stretched according to the size of the control using the below properties respectively.
 
-Table202: Property Table
 
 <table>
 <tr>

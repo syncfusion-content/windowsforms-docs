@@ -3,7 +3,7 @@ layout: post
 title: Themes-And-Styles
 description: themes and styles
 platform: WindowsForms
-control: Editors Package
+control: ComboDropDown
 documentation: ug
 ---
 
@@ -11,7 +11,6 @@ documentation: ug
 
 The below given properties enhances the look and feel of the ComboDropDown.
 
-Table 213: Property Table
 
 <table>
 <tr>

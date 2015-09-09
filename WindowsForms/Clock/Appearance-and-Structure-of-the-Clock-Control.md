@@ -154,7 +154,6 @@ Me.clock1.IsTransparent = True
 
 The Clock control usually displays the current time on the machine where it is hosted. To freeze the clock to display a fixed time, the Boolean property StopTimer can be used. Then, using the Clock control’s Now property, the desired time can be displayed or the default time will be displayed.
 
-Table 681: Property Table
 
 <table>
 <tr>

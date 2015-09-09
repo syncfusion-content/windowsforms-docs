@@ -3,7 +3,7 @@ layout: post
 title: Data-Settings
 description: data settings
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxAdv
 documentation: ug
 ---
 

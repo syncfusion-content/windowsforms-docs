@@ -89,7 +89,7 @@ Clear the undo buffer. Hence undo operation is not allowed on contents/actions p
 </table>
 
 
-> Note: The undo/redo buffer is cleared after the 'Save' operation.
+N> The undo/redo buffer is cleared after the 'Save' operation.
 
 
 
@@ -199,9 +199,6 @@ The following screenshot shows action grouping in Edit Control.
 
 
 
-_Figure_ _9: Grouping Actions in Edit Control
-
-
 
 A sample which demonstrates Action Grouping is available in the following sample installation location.
 
@@ -223,7 +220,7 @@ Similarly, the GetNewLineStyle method returns a NewLineStyle enumerator value wh
 
 
 
-> Note: The default new line style value is set to 'Control'. This value can be changed according to the needs of the user using the DefaultNewLineStyle property.
+N> The default new line style value is set to 'Control'. This value can be changed according to the needs of the user using the DefaultNewLineStyle property.
 
 
 
@@ -437,15 +434,17 @@ Me.editControl1.EnableMD5 = True
 
 {% endhighlight %}
 
-> Note: 
->
-> To enable FIPS:
->
-> 1. Click Start, click Control Panel, and the click on Administrative Tools.
-> 2. Double-click Local Security Policy.
-> 3. Double-click Local Policies.
-> 4. Click Security Options. Under Policies listed in the right pane, double-click System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing.
-> 5. Select Enabled to enable FIPS on your machine.
+N> To enable FIPS:
+N>
+N> 1. Click Start, click Control Panel, and the click on Administrative Tools.
+N>
+N> 2. Double-click Local Security Policy.
+N>
+N> 3. Double-click Local Policies.
+N>
+N> 4. Click Security Options. Under Policies listed in the right pane, double-click System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing.
+N>
+N> 5. Select Enabled to enable FIPS on your machine.
 
 
 
@@ -472,9 +471,6 @@ The following illustration shows the Keys Binding dialog box.
 
 ![](Editing-Features_images/Editing-Features_img5.jpeg)
 
-
-
-_Figure_ _10: Preview of Keys Binding Dialog Box
 
 
 
@@ -880,11 +876,6 @@ Provides an alternation construct that matches any one of the terms separated by
 </table>
 
 
-### See Also
-
-
-
-
 
 ### Lexical Macros
 
@@ -1050,11 +1041,11 @@ configLex.IsContinueRegex = True
 
 {% endhighlight %}
 
-### See Also
+{% seealso %}
 
-### Language Elements
+[Language Elements](/windowsforms/edit/editing-features#language-elements)
 
-
+{% endseealso %}
 
 ## Block Indent and Outdent
 
@@ -1191,7 +1182,6 @@ With RTL support, you can use EditControl, to render content in Right-To-left la
 
 
 
-_Figure_ _11: Right-To-Left Layout of Arabic
 
 
 

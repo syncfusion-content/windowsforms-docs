@@ -15,9 +15,11 @@ This section covers information on installation, the process of viewing samples 
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
-See Also
+{% seealso %}
 
 For licensing, patches, and information on adding or removing selective components, refer to the following topics in Common UG under Installation and Deployment:
+
+{% endseealso %}
 
 * Licensing
 * Patches 
@@ -44,29 +46,29 @@ C:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\W
 
 Use the following steps to view the samples:
 
-1.  Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard.
+1. Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard.
 
-The Essential Studio Enterprise Edition window will be displayed.
+   The Essential Studio Enterprise Edition window will be displayed.
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
 
-> Note: You can view the samples in any of the following three ways:
->
-> • Run Samples - Click to view the locally installed samples.
->
-> • Online Samples - Click to view online samples.
->
-> • Explore Samples - Explore the UI for Windows Forms on disk.
->
-> The User Interface Edition panel is displayed by default.
+   N> You can view the samples in any of the following three ways:
+   N>
+   N> • Run Samples - Click to view the locally installed samples.
+   N>
+   N> • Online Samples - Click to view online samples.
+   N>
+   N> • Explore Samples - Explore the UI for Windows Forms on disk.
+   N>
+   N> The User Interface Edition panel is displayed by default.
 
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
 
@@ -76,7 +78,7 @@ The Essential Studio Enterprise Edition window will be displayed.
 
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
 

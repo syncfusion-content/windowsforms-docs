@@ -16,9 +16,6 @@ Chart types are specified on each ChartSeries through the Type property. All the
 The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential Chart. 
 
 
-
-_Table_ _5_: _Chart Types_
-
 <table>
 <tr>
 <th>
@@ -238,8 +235,6 @@ The appearance of the lines and the points can be configured with options such a
 
 ![](Chart-Types_images/Chart-Types_img1.jpeg)
 
-_Figure_ _50_: _Chart displaying Line Series in 3D Mode_
-
 
 
 #### Chart Details
@@ -315,10 +310,6 @@ The appearance of the lines and the points can be configured with options such a
 
 
 
-_Figure_ _51_: _Chart displaying a Spline Series_
-
-
-
 #### Chart Details
 
 Number of Y values per point – 1.
@@ -388,7 +379,8 @@ Me.chartControl1.Series.Add (series)
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images, Rotate
 * Spacing Between Series, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
-#### Rotated Spline Chart
+
+### Rotated Spline Chart
 
 
 A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
@@ -399,8 +391,6 @@ The following image shows a sample Rotated Spline Chart.
 
 ![](Chart-Types_images/Chart-Types_img3.jpeg)
 
-
-_Figure_ _52_: _Chart displaying a Rotated Spline Series_
 
 
 
@@ -467,6 +457,7 @@ Me.chartControl1.Series.Add(series1)
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images, Spacing Between Series
 * ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Step Line Chart
 
 
@@ -474,8 +465,6 @@ Step Line Charts use horizontal and vertical lines to connect data points result
 
 ![](Chart-Types_images/Chart-Types_img4.jpeg)
 
-
-_Figure_ _53_: _Chart displaying Step Line Series_
 
 ### Chart Details
 
@@ -559,8 +548,6 @@ The following image shows a multi series Bar Chart.
 ![](Chart-Types_images/Chart-Types_img5.jpeg)
 
 
-_Figure_ _54_: _Chart displaying Bar Series_
-
 #### Chart Details
 
 Number of Y values per point – 1.
@@ -619,9 +606,11 @@ LightAngle, LightColor, PhongAlpha, Rotate, Spacing, Spacing Between Series, Sha
 
 
 
-### See Also
+{% seealso %}
 
-Column Chart
+[Column Chart](/windowsforms/chart/chart-types#column-chart)
+
+{% endseealso %}
 
 ### Stacking Bar Chart
 
@@ -630,8 +619,6 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 The following image shows a sample Stacking Bar Chart.
 
 ![](Chart-Types_images/Chart-Types_img6.jpeg)
-
-_Figure_ _55_: _Chart displaying Stacking Bar Series_
 
 
 
@@ -711,12 +698,14 @@ Me.chartControl1.Series.Add(series2)
 
 ### Customization Options
 
-* Border, ColumnDrawMode, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images
-* LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+ [Border](/windowsforms/chart/chart-series#border), [ColumnDrawMode](/windowsforms/chart/chart-series#columndrawmode), [DisplayText](/windowsforms/chart/chart-series#displaytext), [DrawSeriesNameInDepth](/windowsforms/chart/chart-series#drawseiesnameindepth), [ElementBorders](/windowsforms/chart/chart-series#elementsborders), [HighlightInterior](/windowsforms/chart/chart-series#highlightinterior), [ImageIndex](/windowsforms/chart/chart-series#imageindex), [Images](/windowsforms/chart/chart-series#images)
+ [LightAngle](/windowsforms/chart/chart-series#lightangle), [LightColor](/windowsforms/chart/chart-series#lightcolor), [Rotate](/windowsforms/chart/chart-series#rotate), [Spacing](/windowsforms/chart/chart-series#spacing), [Spacing Between Series](/windowsforms/chart/chart-series#spacingbetweenseries), [ShadingMode](/windowsforms/chart/chart-series#shadingmode), [ShadowInterior](/windowsforms/chart/chart-series#shadowinterior), [ShadowOffset](/windowsforms/chart/chart-series#shadowoffset), [ZOrder](/windowsforms/chart/chart-series#zorder), [FancyToolTip](/windowsforms/chart/chart-series#fancytooltip), [Font](/windowsforms/chart/chart-series#font), [Interior](/windowsforms/chart/chart-series#interior), [LegendItem](/windowsforms/chart/chart-series#legenditem), [Name](/windowsforms/chart/chart-series#name), [PointsToolTipFormat](/windowsforms/chart/chart-series#pointstoottipformat), [SmartLabels](/windowsforms/chart/chart-series#smartlabels), [Summary](/windowsforms/chart/chart-series#summary), [Text](/windowsforms/chart/chart-series#text), [TextColor](/windowsforms/chart/chart-series#textcolor), [TextFormat](/windowsforms/chart/chart-series#textformat), [TextOffset](/windowsforms/chart/chart-series#textoffset), [TextOrientation](/windowsforms/chart/chart-series#textorientation), [Visible](/windowsforms/chart/chart-series#visible)
 
-### See Also
+{% seealso %}
 
-Stacking Area Chart, Stacking Column Chart
+[Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart), [Stacking Column Chart](/windowsforms/chart/chart-types#stacking-column-chart)
+
+{% endseealso %}
 
 ### StackedBar100 Chart
 
@@ -726,8 +715,6 @@ This chart type displays multiple series of data as stacked Bars ensuring that t
 
 ![](Chart-Types_images/Chart-Types_img7.jpeg)
 
-
-_Figure_ _56_: _A 100% StackedBar Chart_
 
 #### Chart Details
 
@@ -785,9 +772,11 @@ Me.chartControl1.Series.Add(series1)
 * Border, ColumnDrawMode, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-### See Also
+{% seealso %}
 
-StackedArea100 Chart, StackedColumn100 Chart
+[StackedArea100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart), [StackedColumn100Chart](/windowsforms/chart/chart-types#stacked-column100-chart)
+
+{% endseealso %}
 
 ## Gantt Chart
 
@@ -799,7 +788,6 @@ You could then use another series to represent the completed portion of the diff
 
 ![](Chart-Types_images/Chart-Types_img8.jpeg)
 
-_Figure_ _57_: _Chart displaying Gantt Series_
 
 
 
@@ -851,13 +839,8 @@ Me.ChartControl1.Series.Add(series)
 
 ### Customization Options
 
-Border, ColumnDrawMode, DisplayShadow, DisplayText, ElementBorders, GanttDrawMode, HighlightInterior, ImageIndex, Images
-
-LightAngle, LightColor, PhongAlpha, PointWidth, RelatedPoints, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset
-
-ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
-
-Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+[Border](/windowsforms/chart/chart-series#border), [ColumnDrawMode](/windowsforms/chart/chart-series#columndrawmode), [DisplayText](/windowsforms/chart/chart-series#displaytext), [DrawSeriesNameInDepth](/windowsforms/chart/chart-series#drawseiesnameindepth), [ElementBorders](/windowsforms/chart/chart-series#elementsborders), [HighlightInterior](/windowsforms/chart/chart-series#highlightinterior), [ImageIndex](/windowsforms/chart/chart-series#imageindex), [Images](/windowsforms/chart/chart-series#images)
+ [LightAngle](/windowsforms/chart/chart-series#lightangle), [LightColor](/windowsforms/chart/chart-series#lightcolor), [Rotate](/windowsforms/chart/chart-series#rotate), [Spacing](/windowsforms/chart/chart-series#spacing), [Spacing Between Series](/windowsforms/chart/chart-series#spacingbetweenseries), [ShadingMode](/windowsforms/chart/chart-series#shadingmode), [ShadowInterior](/windowsforms/chart/chart-series#shadowinterior), [ShadowOffset](/windowsforms/chart/chart-series#shadowoffset), [ZOrder](/windowsforms/chart/chart-series#zorder), [FancyToolTip](/windowsforms/chart/chart-series#fancytooltip), [Font](/windowsforms/chart/chart-series#font), [Interior](/windowsforms/chart/chart-series#interior), [LegendItem](/windowsforms/chart/chart-series#legenditem), [Name](/windowsforms/chart/chart-series#name), [PointsToolTipFormat](/windowsforms/chart/chart-series#pointstoottipformat), [SmartLabels](/windowsforms/chart/chart-series#smartlabels), [Summary](/windowsforms/chart/chart-series#summary), [Text](/windowsforms/chart/chart-series#text), [TextColor](/windowsforms/chart/chart-series#textcolor), [TextFormat](/windowsforms/chart/chart-series#textformat), [TextOffset](/windowsforms/chart/chart-series#textoffset), [TextOrientation](/windowsforms/chart/chart-series#textorientation), [Visible](/windowsforms/chart/chart-series#visible)
 
 ### Histogram Chart
 
@@ -874,7 +857,6 @@ The shape of the distribution conveys important information such as the probabil
 ![](Chart-Types_images/Chart-Types_img9.jpeg)
 
 
-_Figure_ _58_: _Chart displaying a Histogram Series_
 
 #### Chart Details
 
@@ -966,11 +948,6 @@ The Tornado chart is a bar chart which shows the variability of an output to sev
 
 ![](Chart-Types_images/Chart-Types_img10.jpeg)
 
-
-
-
-
-_Figure_ _59_: _Chart displaying a Tornado Chart_
 
 #### Chart Details
 
@@ -1087,7 +1064,7 @@ Me.chartControl1.Series.Add(series2)
 
 Column Charts are among the most commonly used chart types. Displayed in vertical bars (called columns), they depict the different values of one or more items. Points from adjacent series are drawn as bars next to each other. They are ideal for showing the variations in the value of an item over time.
 
-A very similar bar type is the Bar Charts type where the bars are rendered horizontal.
+A very similar bar type is the [Bar Charts](/windowsforms/chart/chart-types#bar-charts) type where the bars are rendered horizontal.
 
 EssentialChart supports these different Column Charts.
 
@@ -1105,11 +1082,6 @@ The following image shows a multi series Column Chart.
 
 ![](Chart-Types_images/Chart-Types_img11.jpeg)
 
-
-
-
-
-_Figure_ _60_: _Chart displaying Column Series_
 
 #### Chart Details
 
@@ -1178,8 +1150,6 @@ The following figure shows a Column Range Chart.
 
 
 ![](Chart-Types_images/Chart-Types_img12.jpeg)
-
-_Figure_ _61_: _Chart displaying Column Range Series_
 
 
 
@@ -1251,8 +1221,6 @@ The following image shows a sample Stacking Column Chart.
 
 ![](Chart-Types_images/Chart-Types_img13.jpeg)
 
-
-_Figure_ _62_: _Chart displaying Stacking Column Series_
 
 #### Chart Details
 
@@ -1334,9 +1302,11 @@ Me.chartControl1.Series.Add(series2)
 * Border, ColumnWidthMode, ColumnFixedWidth, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+{% seealso %}
 
-Stacking Area Chart, Stacking Bar Chart
+[Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart), [Stacking Bar Chart](/windowsforms/chart/chart-types#stacking-bar-chart)
+
+{% endseealso %}
 
 ### Stacked Column100 Chart
 
@@ -1346,11 +1316,6 @@ This chart type displays multiple series of data as stacked Columns ensuring tha
 
 ![](Chart-Types_images/Chart-Types_img14.jpeg)
 
-
-
-
-
-_Figure_ _63_: _A 100 percent StackedColumn Chart_
 
 #### Chart Details
 
@@ -1407,9 +1372,11 @@ Me.chartControl1.Series.Add(series1)
 * Border, ColumnWidthMode, ColumnFixedWidth, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images
 * LightAngle, LightColor, Rotate, Spacing, Spacing Between Series, ShadingMode, ShadowInterior, ShadowOffset, ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+{% seealso %}
 
-StackedArea100 Chart, StackedBar100 Chart
+[StackedArea100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart), [StackedBar100 Chart](/windowsforms/chart/chart-types#stackedbar100-chart)
+
+{% endseealso %}
 
 ## Area Charts
 
@@ -1429,8 +1396,6 @@ The following image shows a multi series Area Chart.
 
 ![](Chart-Types_images/Chart-Types_img15.jpeg)
 
-
-_Figure_ _64_: _Chart displaying Area Series in 3D View_
 
 
 
@@ -1512,12 +1477,6 @@ The following image shows a multi series Spline Area Chart.
 
 
 
-
-
-_Figure_ _65_: _Chart displaying Spline Area Series in 3D Mode_
-
-
-
 #### Chart Details
 
 Number of Y values per point – 1.
@@ -1590,7 +1549,6 @@ The following image shows a sample Stacking Area Chart.
 
 ![](Chart-Types_images/Chart-Types_img17.jpeg)
 
-_Figure_ _66_: _Chart displaying Stacking Area Series in 3D_
 
 
 
@@ -1676,9 +1634,11 @@ ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, Sma
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+{% seealso %}
 
-Stacking Bar Chart, Stacking Column Chart
+[Stacking Bar Chart](/windowsforms/chart/chart-types#stacking-bar-chart), [Stacking Column Chart](/windowsforms/chart/chart-types#stacking-column-chart)
+
+{% endseealso %}
 
 ### StackedArea100 Chart
 
@@ -1687,8 +1647,6 @@ This chart type displays multiple series of data as stacked areas ensuring that 
 
 ![](Chart-Types_images/Chart-Types_img18.jpeg)
 
-
-_Figure_ _67_: _A 100 percent StackedArea Chart_
 
 #### Chart Details
 
@@ -1809,9 +1767,11 @@ Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, I
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+{% seealso %}
 
-StackedBar100 Chart, StackedColumn100Chart
+[StackedBar100 Chart](/windowsforms/chart/chart-types#stackedbar100-chart), [StackedColumn100Chart](/windowsforms/chart/chart-types#stacked-column100-chart)
+
+{% endseealso %}
 
 ### Step Area Chart
 
@@ -1822,10 +1782,6 @@ The following image shows a sample Step Area Chart.
 
 
 ![](Chart-Types_images/Chart-Types_img19.jpeg)
-
-
-_Figure_ _68_: _Chart displaying Step Area Series_
-
 
 
 #### Chart Details
@@ -1900,9 +1856,6 @@ This chart type gives a clear look and it may be used in cases, where we have to
 
 
 ![](Chart-Types_images/Chart-Types_img20.jpeg)
-
-_Figure_ _69_: _RangeArea Chart_
-
 
 
 #### Chart Details
@@ -1991,37 +1944,15 @@ The following images are some sample Funnel Charts.
 ![](Chart-Types_images/Chart-Types_img21.jpeg)
 
 
-
-
-
-_Figure_ _70_: _2DFunnelChart_
-
-
-
 ![](Chart-Types_images/Chart-Types_img22.jpeg)
-
-
-_Figure_ _71_: _3D Funnel-FigureBase-Circle Chart_
-
 
 
 ![](Chart-Types_images/Chart-Types_img23.jpeg)
 
 
 
-
-
-_Figure_ _72_: _3D Funnel-FigureBase-Square Chart_
-
-
-
 ![](Chart-Types_images/Chart-Types_img24.jpeg)
 
-
-
-
-
-_Figure_ _73_: _3D Funnel Chart with Gap ratio 0.1_
 
 #### Chart Details
 
@@ -2087,39 +2018,14 @@ The following images are some sample Pyramid Charts.
 
 
 
-
-
-_Figure_ _74_: _2DPyramid Chart_
-
-
-
 ![](Chart-Types_images/Chart-Types_img26.jpeg)
-
-
-
-
-
-_Figure_ _75_: _3D Pyramid-FigureBase-Circle Chart_
 
 
 
 ![](Chart-Types_images/Chart-Types_img27.jpeg)
 
 
-
-
-
-_Figure_ _76_: _3D Pyramid-FigureBase-Square Chart_
-
-
-
 ![](Chart-Types_images/Chart-Types_img28.jpeg)
-
-
-
-
-
-_Figure_ _77_: _3D Pyramid Chart with Gap ratio 0.1_
 
 
 
@@ -2195,13 +2101,6 @@ The following image shows a multi series Scatter Chart.
 
 
 ![](Chart-Types_images/Chart-Types_img29.jpeg)
-
-
-
-
-
-_Figure_ _78_: _Chart Displaying Scatter Series_
-
 
 
 #### Chart Details
@@ -2318,9 +2217,11 @@ series.Styles (2).Symbol.Shape = ChartSymbolShape.Cross
 
 DisplayText, DrawSeriesNameInDepth, LightAngle, LightColor, PhongAlpha, ScatterConnectType, ScatterSplineTension, ToolTip, ToolTipFormat, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+{% seealso %}
 
-Bubble Chart
+[Bubble Charts](/windowsforms/chart/chart-types#bubble-chart)
+
+{% endseealso %}
 
 ### Bubble Chart
 
@@ -2333,13 +2234,6 @@ The following image shows a multi series Bubble Chart.
 
 
 ![](Chart-Types_images/Chart-Types_img30.jpeg)
-
-
-
-
-
-_Figure_ _79_: _Chart Displaying 3 Bubble Series_
-
 
 
 #### Chart Details
@@ -2405,9 +2299,11 @@ Images, Spacing Between Series, FancyToolTip, Font, Interior, LegendItem, Name, 
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
-See Also
+{% seealso %}
 
-Scatter Chart
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart)
+
+{% endseealso %}
 
 ## Financial Charts
 
@@ -2426,12 +2322,6 @@ The following image shows a CandleChart displaying a single series.
 
 
 ![](Chart-Types_images/Chart-Types_img31.jpeg)
-
-
-
-
-
-_Figure_ _80_: _Chart displaying Candle Series_
 
 
 
@@ -2509,13 +2399,6 @@ The Hi Lo Chart expects two y values to be specified in the series. One value sh
 ![](Chart-Types_images/Chart-Types_img32.jpeg)
 
 
-
-
-
-_Figure_ _81_: _Chart displaying Hi Lo Series_
-
-
-
 #### Chart Details
 
 Number of Y values per point – 2.
@@ -2576,11 +2459,6 @@ Hi Lo Open Close Chart is a special kind of chart that is normally used in stock
 
 ![](Chart-Types_images/Chart-Types_img33.jpeg)
 
-
-
-
-
-_Figure_ _82_: _Chart displaying Hi Lo Open Close Series_
 
 
 
@@ -2652,12 +2530,6 @@ The penetration of a prior column's high or low, by the latest closing price, al
 
 
 ![](Chart-Types_images/Chart-Types_img34.jpeg)
-
-
-
-
-
-_Figure_ _83_: _Chart displaying Kagi Series_
 
 
 
@@ -2767,11 +2639,6 @@ If the ReversalAmount is 0.0 instead of 1.0 which is the default value, then the
 
 
 
-
-_Figure_ _84_: _Kagi Chart with ReversalAmount set to 0.0_
-
-
-
 ### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, PriceDownColor, PriceUpColor, ReversalAmount, Rotate, Spacing Between Series
@@ -2791,11 +2658,6 @@ This chart requires two y values, the high value and the low value for the speci
 
 ![](Chart-Types_images/Chart-Types_img36.jpeg)
 
-
-
-
-
-_Figure_ _85_: _Chart displaying Point And Figure Series_
 
 
 
@@ -2862,6 +2724,7 @@ Me.chartControl1.Series.Add (series)
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, HeightBox, PriceDownColor, PriceUpColor, ReversalAmount, Spacing Between Series
 * ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Renko Chart
 
 
@@ -2874,9 +2737,6 @@ Since a Renko chart isolates the underlying trends by filtering out the minor up
 
 
 ![](Chart-Types_images/Chart-Types_img37.jpeg)
-
-
-_Figure_ _86_: _Chart displaying Renko Series_
 
 
 
@@ -2939,6 +2799,7 @@ Me.chartControl1.Series.Add (series)
 
 * Border, ColorsMode, DarkLightPower, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, PriceDownColor
 * PriceUpColor, ReversalAmount, Spacing Between Series, ShadowInterior, ShadowOffset, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormatSmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
+
 ### Three Line Break Chart
 
 
@@ -2952,11 +2813,6 @@ The ReversalAmount specifies the threshold amount by which the price should chan
 
 ![](Chart-Types_images/Chart-Types_img38.jpeg)
 
-
-
-
-
-_Figure_ _87_: _Chart displaying Three Line Break Series_
 
 
 
@@ -3031,8 +2887,6 @@ The following is an example of a Box and Whisker plot.
 ![](Chart-Types_images/Chart-Types_img39.jpeg)
 
 
-_Figure_ _88_: _BoxAndWhisker Chart_
-
 
 
 The Box and Whisker plot is interpreted as follows.
@@ -3044,15 +2898,21 @@ The Box and Whisker plot is interpreted as follows.
 * In Percentile Mode: [Set Series1.ConfigItems.BoxAndWhiskerItem.PercentileMode property to _true_], the ends of the vertical lines or "whiskers" will be decided by the Series1.ConfigItems.BoxAndWhiskerItem.Percentile property value. For example, if the 'Percentile' value is 0.15, then the minimum value will be the 15th percentile of the overall data set and the maximum value will be 85th percentile of the overall data set.
 
 
-> Note:
-> 1. The percentile value should lie between 0.0 and 0.25.  
-> 2. It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value.
->  For example: Percentile = 0.15
-> Upper Percentile = 1 - Percentile = 0.85.
-> In Normal mode, Outliers are present in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range. But in Percentile mode, Outliers will be calculated based on the Percentile value.
-> For example: Percentile = 0.15
-> Outliers are present in which case the whiskers extend to minimum and maximum of 15th and 85th percentile of overall data set, respectively. If 'Percentile' value is Zero, then, there is no outliers in the Chart.
-> 3. The width of the Outliers can be adjusted by using this 'Series1.ConfigItems.BoxAndWhiskerItem.OutLierWidth' property. If it is zero, the width of the outlier will be calculated based on the data points range.
+N> 1. The percentile value should lie between 0.0 and 0.25.  
+N>
+N> 2. It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value.
+N>
+N>  For example: Percentile = 0.15
+N>
+N> Upper Percentile = 1 - Percentile = 0.85.
+N>
+N> In Normal mode, Outliers are present in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range. But in Percentile mode, Outliers will be calculated based on the Percentile value.
+N>
+N> For example: Percentile = 0.15
+N>
+N> Outliers are present in which case the whiskers extend to minimum and maximum of 15th and 85th percentile of overall data set, respectively. If 'Percentile' value is Zero, then, there is no outliers in the Chart.
+N>
+N> 3. The width of the Outliers can be adjusted by using this 'Series1.ConfigItems.BoxAndWhiskerItem.OutLierWidth' property. If it is zero, the width of the outlier will be calculated based on the data points range.
 
 
 
@@ -3144,7 +3004,6 @@ A Pie Chart renders y values as slices in a pie. These slices are rendered in pr
 
 ![](Chart-Types_images/Chart-Types_img41.jpeg)
 
-_Figure_ _89_: _Chart displaying Pie Series_
 
 
 
@@ -3225,7 +3084,6 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient=0.5f
 
 ![](Chart-Types_images/Chart-Types_img42.jpeg)
 
-_Figure_ _90_: _Pie Chart with DoughnutCoeficient Property Set_
 
 
 
@@ -3250,10 +3108,6 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
 {% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img43.jpeg)
-
-
-_Figure_ _91_: _Pie Chart with HeightCoeficient Property Set_
-
 
 
 ### Customization Options
@@ -3281,9 +3135,6 @@ Polar charts supports plotting the axis values in the reverse direction / clockw
 
 
 ![](Chart-Types_images/Chart-Types_img44.jpeg)
-
-
-_Figure_ _92_: _Chart displaying Polar Series_
 
 
 
@@ -3357,11 +3208,6 @@ Some scenarios where this chart type could be used
 
 
 ![](Chart-Types_images/Chart-Types_img45.jpeg)
-
-
-
-
-_Figure_ _93_: _Chart displaying Radar Series_
 
 
 
@@ -3443,12 +3289,6 @@ One can change an existing chart to a combination chart by selecting the data se
 
 
 ![](Chart-Types_images/Chart-Types_img46.jpeg)
-
-
-
-
-
-_Figure_ _94_: _Chart displaying Line and Column Chart_
 
 
 
@@ -3539,12 +3379,6 @@ A heat map chart is a graphical representation of data where the values taken by
 
 
 
-
-
-_Figure_ _95_: _Chart displaying Heat Map Series_
-
-
-
 #### Chart Details
 
 Number of Y values per point – 2. 
@@ -3607,9 +3441,6 @@ Me.chartControl1.Series.Add (Stocks)
 
 The following table lists the properties of heat map chart with descriptions.
 
-
-
-_Table_ _6_: _Features_
 
 <table>
 <tr>
@@ -3728,12 +3559,12 @@ Stacking Charts are similar to regular charts except that the y values stack on 
 
 There are different types of stacking charts:
 
-* Stacking Area Chart
-* Stacking Bar Chart
-* Stacking Column Chart
-* StackedArea100 Chart
-* StackedBar100 Chart
-* StackedColumn100 Chart
+ [Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart)
+ [Stacking Bar Chart](/windowsforms/chart/chart-types#stacking-bar-chart)
+ [Stacking Column Chart](/windowsforms/chart/chart-types#stacking-column-chart)
+ [StackedArea100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart)
+ [StackedBar100 Chart](/windowsforms/chart/chart-types#stackedbar100-chart)
+ [StackedColumn100 Chart](/windowsforms/chart/chart-types#stacked-column100-chart)
 
 ## Step Charts
 

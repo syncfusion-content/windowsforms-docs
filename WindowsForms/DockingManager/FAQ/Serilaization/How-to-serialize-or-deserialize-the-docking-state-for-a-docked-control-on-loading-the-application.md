@@ -3,7 +3,7 @@ layout: post
 title: How to serialize or deserialize the docking state for a docked control on loading the application
 description: How to serialize or deserialize the docking state for a docked control on loading the application
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

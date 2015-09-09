@@ -13,6 +13,3 @@ The Essential Tools FolderBrowser component provides a convenient and easy to us
 
 ![](Overview_images/Overview_img405.jpeg) 
 
-
-
-See Also

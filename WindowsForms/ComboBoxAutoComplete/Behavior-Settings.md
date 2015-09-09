@@ -3,7 +3,7 @@ layout: post
 title: Behavior Settings
 description: Behavior Settings
 platform: WindowsForms
-control: Tools
+control: ComboBoxAutoComplete
 documentation: ug
 ---
 
@@ -13,8 +13,6 @@ documentation: ug
 The behavior settings of a ComboBoxAutoComplete control includes the below properties.
 
 
-
-Table 130: Property Table
 
 <table>
 <tr>
@@ -63,7 +61,6 @@ Me.comboBoxAutoComplete1.ReadOnly = True
 Me.comboBoxAutoComplete1.UpdateComboSelectionProperties = False
 {% endhighlight %}
 
-Table 131: Methods Table
 
 <table>
 <tr>

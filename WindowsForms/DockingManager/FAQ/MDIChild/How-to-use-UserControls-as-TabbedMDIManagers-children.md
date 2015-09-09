@@ -3,7 +3,7 @@ layout: post
 title: How to use UserControls as TabbedMDIManager’s children
 description: How to use UserControls as TabbedMDIManager’s children
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

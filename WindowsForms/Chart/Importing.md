@@ -22,9 +22,6 @@ There is no built-in support in Chart for importing data from CSV (Comma Separat
 ![](Importing_images/Importing_img1.jpeg)
 
 
-
-_Figure_ _351_: _Importing a CSV File_
-
 ### Sample Location:
 
 ..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Import\Data from CSV
@@ -37,9 +34,6 @@ There is no built-in support in Chart for importing data from an XML file. But g
 
 ![](Importing_images/Importing_img2.jpeg)
 
-
-
-_Figure_ _352_: _Importing data from XML to Chart_
 
 ### Sample Location
 
@@ -55,9 +49,6 @@ There is no built-in support in Chart for importing data from XLS (MS Excel) fil
 
 ![](Importing_images/Importing_img3.jpeg)
 
-
-
-_Figure_ _353_: _Importing data from Excel to Chart_
 
 
 

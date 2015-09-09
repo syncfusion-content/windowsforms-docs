@@ -3,7 +3,7 @@ layout: post
 title: Creating-ListControl-Derived-Controls
 description: creating listcontrol - derived controls
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxBase
 documentation: ug
 ---
 
@@ -19,7 +19,6 @@ The BeginUpdate and EndUpdate methods enable you to add a large number of items 
 
 The Items, SelectedItem and SelectedIndices properties provide access to the three collections that are used by the ListBox.
 
-Table 226: Class Table
 
 <table>
 <tr>

@@ -3,7 +3,7 @@ layout: post
 title: Themes-And-Visual-Styles
 description: themes and visual styles
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -15,7 +15,6 @@ This section discusses the themes and visual styles settings of the CommandBar c
 
 Themes define the look and feel of the CommandBar control. They can be set using the property given below.
 
-Table 24: CommandBarController Property Table
 
 <table>
 <tr>
@@ -55,7 +54,6 @@ Me.commandBarController1.ThemesEnabled=True
 
 Visual Styles enhance the appearance of the CommandBar control and can be set using the property given below.
 
-Table 25: CommandBarController Property Table
 
 <table>
 <tr>
@@ -104,7 +102,6 @@ N> For the Office2003 and VS2005 styles to take effect, the ThemesEnabled proper
 
 CommandBarController provides the new Microsoft Office 2007 style in different color schemes, to enhance the appearance of the CommandBar control. Office 2007 color schemes can be enabled using the Office2007Theme property.
 
-Table 26: CommandBarController Property Table
 
 <table>
 <tr>
@@ -194,7 +191,6 @@ Me.dockingManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Si
 
 The list of controls that support Office 2010 styles is displayed in the following table:
 
-Table 27: List of controls
 
 <table>
 <tr>

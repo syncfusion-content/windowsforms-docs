@@ -3,7 +3,7 @@ layout: post
 title: How to detect the docking style assigned to a control
 description: How to detect the docking style assigned to a control
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -12,13 +12,12 @@ documentation: ug
 
  You can detect the Docking style that is assigned to the control, at run time, using GetDockingStyle method.
 
-Table 98: Method Table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetDockingStyle</td><td>

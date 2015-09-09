@@ -3,7 +3,7 @@ layout: post
 title: Special-Features
 description: special features
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -60,7 +60,6 @@ In the image above, a shadow for docking a panel to the top of the form is displ
 
 The docking arrows visibility, while dropping a control inside the form or into another docked control, can be set using the below properties.
 
-Table 55: DockedControl Property Table
 
 <table>
 <tr>
@@ -100,7 +99,6 @@ Indicates where the user can dock the controls in a form using the drag provider
 
 The DockToFill property allows users to implement a very unique docking layout where a non-MDIContainer form or ContainerControl's entire client region is occupied by the dockable controls.
 
-Table 56: DockingManager Property Table
 
 <table>
 <tr>
@@ -146,7 +144,6 @@ The FreezeResizing property has been implemented for each control by which, the 
 
 The controls can also be frozen by calling the SetFreezeResizing method which freezes the specified control and the user will no more be able to resize the controls.
 
-Table 57: Parameter Table
 
 <table>
 <tr>

@@ -3,7 +3,7 @@ layout: post
 title: How to prevent tabbed docking
 description: How to prevent tabbed docking
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -11,13 +11,12 @@ documentation: ug
 
 DockAllow event will be handled when a docking window is dragged over a potential dock target. In other words, whenever the user tries to dock a docked control to another docked control, this event will be raised. This lets you decide whether to allow tabbing or not. Giving arg.Cancel to true cancels the docking operation.
 
-Table 102: Members Table
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 DockStyle</td><td>
@@ -64,6 +63,7 @@ private void dockingManager1_DockAllow(object sender, Syncfusion.Windows.Forms.T
     }
 
 } 
+
 {% endhighlight %}
 
 

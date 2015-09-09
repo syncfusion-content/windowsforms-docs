@@ -94,13 +94,9 @@ The border gap for the GradientPanelExt can be set programmatically as given bel
 {% highlight c# %}
 
 gradientPanelExt1.BorderGap = 40;
+
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
-
 
 Private gradientPanelExt1.BorderGap = 40
 

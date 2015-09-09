@@ -14,8 +14,6 @@ This section illustrates the background settings of the GradientLabel control.
 
 The GradientLabel control's background can be customized using the various options provided by the BackgroundColor property given below.
 
-Table 392: Property Table
-
 <table>
 <tr>
 <th>

@@ -3,7 +3,7 @@ layout: post
 title: How to prevent closing of docked window
 description: How to prevent closing of docked window
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -11,13 +11,12 @@ documentation: ug
 
 This can be done in the DockVisibilityChanging event. When the end users tries to change the docking control visibility, this event will be handled. The members of this event is as follows.
 
-Table 101: Members Table
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -41,6 +40,7 @@ private void dockingManager1_DockVisibilityChanging(object sender, Syncfusion.Wi
     arg.Cancel = true;
 
 }
+
 {% endhighlight %}
 
 
@@ -55,6 +55,7 @@ Private Sub dockingManager1_DockVisibilityChanging(ByVal sender As Object, ByVal
     arg.Cancel = True
 
 End Sub
+
 {% endhighlight %}
 
 

@@ -3,7 +3,7 @@ layout: post
 title: How to find out whether a docked control is floating or not
 description: How to find out whether a docked control is floating or not
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -13,13 +13,13 @@ This can be achieved by calling IsFloating method.
 
 This method returns a value indicating whether the control is in docked or floating state. If the control is in floating state, the value returned will be true, and if it is docked, value returned will be false.
 
-Table 104: Methods Table
+
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 IsFloating</td><td>

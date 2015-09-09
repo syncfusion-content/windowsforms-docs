@@ -14,8 +14,6 @@ This section illustrates the size settings of the AutoLabel control.
 
 The AutoLabel control can be resized using the below given property.
 
-Table 388: Property Table
-
 <table>
 <tr>
 <th>
@@ -30,7 +28,7 @@ Enables automatic resizing based on font size.</td></tr>
 N> This is valid only for label controls that do not wrap text.
 
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.autoLabel1.AutoSize = true;
 

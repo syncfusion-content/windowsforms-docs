@@ -121,8 +121,6 @@ The frame defines the frame types of radial gauges. Frames can be applied using 
 * Full Circle
 * Half Circle
 
-_Table_ _3: 	Radial Gauge Frame Properties
-
 <table>
 <tr>
 <th>
@@ -250,7 +248,6 @@ Scales are used to control element placement and value ranges.
 
 You can customize scales added to the Radial Gauge using the properties listed in the following table:
 
-_Table_ _4: Property Table
 
 <table>
 <tr>
@@ -291,9 +288,6 @@ Gets or sets the text orientation layout. </td></tr>
 
 
 
-_Figure_ _11:  Scale inside the arc
-
-
 
 The following code sample illustrates how to place labels in the RadialGauge control.
 
@@ -322,8 +316,6 @@ Me.radialGauge1.TextOrientation = Syncfusion.Windows.Forms.Gauge.TextOrientation
 Two types of ticks can be added to the RadialGauge control scale. Major tick marks are the primary scale indicators. Minor tick marks and Inter tick marks are the secondary scale indicators that fall between the major ticks. The ticks can be placed by setting the TickPlacement property. Ticks can be placed inside or outside the arc.
 
 The following table lists the important properties that can be used to customize the radial tick marks. This is done to represent the scale with meaningful markers and labels.
-
- _Table_ _5: Property Table
 
 <table>
 <tr>
@@ -427,7 +419,6 @@ Me.radialGauge1.MinorInnerLinesHeight = 6
 
 You can easily customize the style of the needle and the positions of the sub elements within the RadialGauge through the following enumerations.
 
-_Table_ _6: Default and Advanced pointer styles
 
 <table>
 <tr>
@@ -479,7 +470,6 @@ Me.radialGauge1.NeedleStyle = Syncfusion.Windows.Forms.Gauge.NeedleStyle.Advance
 
 Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and so on. All the available attributes are listed in the following table: 
 
-_Table_ _7: Ranges
 
 <table>
 <tr>
@@ -583,7 +573,6 @@ Me.radialGauge1.Ranges.Add(range1)
 
 The Gauge control for Windows Forms includes support for customizing the number of major tick lines and number of minor tick lines using the Major Difference and Minor Difference. It also provides support to customize the number of tick lines using MaximumValue and MinimunValue.
 
-_Table_ _8: Properties
 
 <table>
 <tr>

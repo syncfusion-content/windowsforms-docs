@@ -421,9 +421,3 @@ The following screenshot shows the page number option of Microsoft Word.
 
 ![](Working-with-Sections_images/Working-with-Sections_img5.png)
 
-
-
-Figure 23 : Page Number Settings
-
-
-

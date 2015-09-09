@@ -136,4 +136,3 @@ End Class
 
 ![](DoubleTextBox-images/DoubleTextBox_img5.png)
 
-Figure 489: Overriding the Behavior of certain Keystrokes in the DoubleTextBox - Illustrated

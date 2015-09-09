@@ -17,10 +17,6 @@ EssentialChart now supports localization; built-in resource files for specific l
 
 This enables you to localize any part of the chart that has static strings in it.
 
-
-
-_Table_ _186_: _Properties_
-
 <table>
 <tr>
 <th>
@@ -46,13 +42,10 @@ Adding Localization to an application
 1. Create your localization resource file (.resx) in the  bin > Debug folder with the following naming convention:
    * ChartControl.<your culture info name>.resx
 
-   > Note: It is mandatory to follow this naming convention.
+   N> It is mandatory to follow this naming convention.
 
    ![](Localization_images/Localization_img2.png)
 
-
-
-   _Figure_ _371_: _Resource File_
 
 
 
@@ -64,11 +57,7 @@ Adding Localization to an application
 
 
 
-   _Figure_ _372_: _Default English resource file_
-
-
-
-   > Note: It is mantatory to specify equivalent terms for all static element to localize the chart.
+    N> It is mantatory to specify equivalent terms for all static element to localize the chart.
 
 3. Specify the culture using the Localize property as given in the following code:
 
@@ -86,8 +75,6 @@ Me.chartControl1.Localize=”de-DE”
 {% endhighlight %}
 
 ![](Localization_images/Localization_img5.png)
-
-_Figure_ _373_: _Localized Chart_
 
 ### Sample Link
 

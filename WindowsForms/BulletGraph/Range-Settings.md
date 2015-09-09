@@ -17,23 +17,23 @@ The width of the ranges are customized by setting the QualitativeRangesSize prop
 
 {% highlight c# %}
 
-            BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bulletgraph = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;            
+bulletgraph.Dock = DockStyle.Fill;            
 
-            bulletgraph.FeaturedMeasure = 4.5;
+bulletgraph.FeaturedMeasure = 4.5;
 
-            bulletgraph.ComparativeMeasure = 7;      
+bulletgraph.ComparativeMeasure = 7;      
 
-            bulletgraph.MinorTicksPerInterval = 3;
+bulletgraph.MinorTicksPerInterval = 3;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });            
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });            
 
-            this.Controls.Add(bulletgraph);
+this.Controls.Add(bulletgraph);
 
 {% endhighlight %}
 
@@ -45,29 +45,29 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 
 {% highlight c# %}
 
-            BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bulletgraph = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+bulletgraph.Dock = DockStyle.Fill;
 
-            bulletgraph.FeaturedMeasure = 4.5;
+bulletgraph.FeaturedMeasure = 4.5;
 
-            bulletgraph.ComparativeMeasure = 7;
+bulletgraph.ComparativeMeasure = 7;
 
-            bulletgraph.MajorTickStroke = Color.Black;
+bulletgraph.MajorTickStroke = Color.Black;
 
-            bulletgraph.MinorTicksPerInterval = 3;
+bulletgraph.MinorTicksPerInterval = 3;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });  
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });  
 
-			bulletgraph.BindRangeStrokeToTicks = true;
+bulletgraph.BindRangeStrokeToTicks = true;
 
-            bulletgraph.BindRangeStrokeToLabels = true;          
+bulletgraph.BindRangeStrokeToLabels = true;          
 
-            this.Controls.Add(bulletgraph);
+this.Controls.Add(bulletgraph);
 
 {% endhighlight %}
 

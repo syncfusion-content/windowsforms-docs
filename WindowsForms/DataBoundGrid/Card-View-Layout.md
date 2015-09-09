@@ -13,7 +13,6 @@ The card view displays records as separate cards arranged in a grid-like layout.
 
 ## Tables for Properties, Methods, and Events
 
-_Table 135: Properties_
 
 <table>
 <tr>
@@ -103,7 +102,6 @@ bool</td></tr>
 </table>
 
 
-_Table 136: Methods_
 
 <table>
 <tr>
@@ -172,7 +170,6 @@ CardCellType</td></tr>
 </table>
 
 
-_Table 137: Events_
 
 <table>
 <tr>

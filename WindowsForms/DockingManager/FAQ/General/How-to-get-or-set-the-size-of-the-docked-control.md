@@ -3,7 +3,7 @@ layout: post
 title: How to get or set the size of the docked control
 description: How to get or set the size of the docked control
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -11,13 +11,12 @@ documentation: ug
 
 The below methods lets you get or set the size of the control.
 
-Table 100: Methods Table
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetControlSize</td><td>

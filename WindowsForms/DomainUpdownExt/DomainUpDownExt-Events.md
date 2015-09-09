@@ -10,8 +10,6 @@ documentation: ug
 
 This section describes the events of DomainUpDownExt control.
 
-Table259: Property Table
-
 <table>
 <tr>
 <th>

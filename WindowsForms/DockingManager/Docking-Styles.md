@@ -3,7 +3,7 @@ layout: post
 title: Docking-Styles
 description: docking styles
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -112,8 +112,6 @@ Aligning the Tabs
 
 The alignment of the tabs can be specified using DockTabAlignment property.
 
-Table 32: DockingManager Property Table
-
 <table>
 <tr>
 <th>
@@ -158,7 +156,6 @@ Me.dockingManager.DockTabAlignment = Syncfusion.Windows.Forms.Tools.DockTabAlign
 
 ### Methods related to Tabbed Docking
 
-Table 33: DockingManager Property Table
 
 <table>
 <tr>
@@ -255,7 +252,6 @@ Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rcfrm.Right+25,rcfrm.B
 
 By enabling the DisallowFloating property, a control can be dragged and redocked to the host form, but cannot be floated.
 
-Table 34: DockingManager Property Table
 
 <table>
 <tr>
@@ -315,7 +311,6 @@ The OnCaptionDoubleClick event occurs when you double-click on a dockable contro
 
 The event handler receives an argument of type DockMouseSelectionEventHandler that contains data related to this event. The following DockMouseSelectionEventHandler properties provide information specific to this event.
 
-Table 35: Member Table
 
 <table>
 <tr>
@@ -393,8 +388,6 @@ The below image displays an autohidden docked control.
 
 
 The below properties controls the autohiding feature of the docked controls.
-
-Table 36: DockingManager Property Table
 
 <table>
 <tr>

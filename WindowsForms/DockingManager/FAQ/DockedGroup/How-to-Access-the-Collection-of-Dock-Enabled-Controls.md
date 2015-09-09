@@ -3,7 +3,7 @@ layout: post
 title: How to Access the Collection of Dock-Enabled Controls?
 description: How to Access the Collection of Dock-Enabled Controls?
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

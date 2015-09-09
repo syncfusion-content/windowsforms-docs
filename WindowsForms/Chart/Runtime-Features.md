@@ -28,18 +28,7 @@ Enable Zooming via the EnableXZooming and EnableYZooming properties.
 
 
 
-
-_Figure_ _293_: _Select a region in the chart to Zoom-In_
-
-
-
 ![](Runtime-Features_images/Runtime-Features_img2.jpeg)
-
-
-
-
-
-_Figure_ _294_: _Resultant Zoomed-In Chart_
 
 
 
@@ -52,10 +41,6 @@ User can zoom out by clicking the "Zoom Out" button in the scrollbar.
 ![](Runtime-Features_images/Runtime-Features_img3.jpeg)
 
 
-
-
-
-_Figure_ _295_: _Zoom Out button beside the Scrollbar_
 
 ZoomOutIncrement property specifies the increment by which to zoom out. The default value is 0.2.
 
@@ -72,10 +57,6 @@ To restrict the zoom-in factor to a certain level on the x and y axis use the Mi
 EssentialChart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the KeyZoom property.
 
 Using the following properties the zooming action can be mapped to specific keys.
-
-
-
-_Table_ _126_: _Chart control Property_
 
 <table>
 <tr>
@@ -118,9 +99,6 @@ Specifies the keyboard short cut to control Zoom Up. The default value is UP arr
 Now, you will be able to pan a chart when it is zoomed. Set the ChartControl.MouseAction to 'Panning' to enable this feature. Set the MouseAction to 'None' to disable this feature. The panning action can be controlled using the ZoomActions property that is available for individual axis. 
 
 
-
-_Table_ _127_: _Chart Axes Property_
-
 <table>
 <tr>
 <th>
@@ -156,7 +134,7 @@ Me.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 
 
 
-> Note: Remember to enable zooming on both the axis using EnableXZooming and EnableYZooming properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
+N> Remember to enable zooming on both the axis using EnableXZooming and EnableYZooming properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
 
 ### Formatted Axes Lables
 
@@ -191,19 +169,17 @@ Me.chartControl1.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00
 
 
 
-
-
-_Figure_ _296_: _SmartDateZoomDayLevelLabelFormat = "dd MM/yy  HH.00"_
-
-> Note: The value type of the axis should be "DateTime" for setting the above formatted labels.
+N> The value type of the axis should be "DateTime" for setting the above formatted labels.
 
 A sample which demonstrates the zooming and scrolling features is available in the following sample installation location.
 
 &lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Web\chart.web\Samples\3.5\UserInteraction\ZoomingAndScrolling
 
-See Also
+{% seealso %}
 
-How to hide the Chart ZoomButton
+[How to hide the Chart ZoomButton](/windowsforms/chart/faq/How-to-hide-the-Chart-ZoomButton")
+
+{% endseealso %}
 
 ## Toolbars
 
@@ -229,17 +205,7 @@ The toolbar looks like the below image.
 
 
 
-
-
-_Figure_ _297_: _Built-In Chart Toolbar_
-
-
-
 The toolbar commands and their functionalities are described below.
-
-
-
-_Table_ _128_: _Chart toolbar Commands_
 
 <table>
 <tr>
@@ -305,8 +271,6 @@ This item provides a logical split between the collection of commands.</td></tr>
 You can also add custom toolbar items using ChartToolBarCommandItem class. The ChartCommands enum lists the commands that can be added. The following table describes those commands.
 
 
-
-_Table_ _129_: _Chart toolbar Custom Commands_
 
 <table>
 <tr>
@@ -391,17 +355,8 @@ Me.chartControl1.ToolBar.Items.Add(x1)
 ![](Runtime-Features_images/Runtime-Features_img8.jpeg)
 
 
-_Figure_ _298_: _CustomCommand = "ChartCommands.AutoHighlight" ; Command ToolTip = "Highlighting"_
-
-
-
 ![](Runtime-Features_images/Runtime-Features_img9.jpeg)
 
-
-
-
-
-_Figure_ _299_: _AutoHighlight feature enabled in Chart using Custom Toolbar Command_
 
 ### Toolbar Properties
 
@@ -412,16 +367,7 @@ The chart control provides complete support for customizing the toolbar appearan
 ![](Runtime-Features_images/Runtime-Features_img10.jpeg)
 
 
-
-
-
-_Figure_ _300_: _ToolBar Properties Dialog Box_
-
 Below are the toolbar properties and their description.
-
-
-
-_Table_ _130_: _Chart ToolBar Property_
 
 <table>
 <tr>
@@ -518,15 +464,7 @@ The below image shows how to set the interior properties through "Interior" tab 
 ![](Runtime-Features_images/Runtime-Features_img11.jpeg)
 
 
-_Figure_ _301_: _Chart Series Style Window to set Interior Properties_
-
-
 ![](Runtime-Features_images/Runtime-Features_img12.jpeg)
-
-
-_Figure_ _302_: _Chart after setting Interior Properties_
-
-
 
 
 
@@ -541,18 +479,10 @@ User can enable or disable the Border line of Toolbar by using ShowBorder proper
 ![](Runtime-Features_images/Runtime-Features_img13.jpeg)
 
 
-
-
-
-_Figure_ _303_: _Toolbar with Border_
-
 ### Toolbar Behavior
 
 The docking behavior of the Toolbar can be controlled using Toolbar.Behavior property. 
 
-
-
-_Table_ _131_: _Toolbar Property_
 
 <table>
 <tr>
@@ -579,7 +509,7 @@ Me.chartControl1.ToolBar.Behavior = ChartDockingFlags.All
 
 {% endhighlight %}
 
-> Note: You can display or hide a toolbar while printing a Chart. See Printing And Print Preview topic for more details.
+N> You can display or hide a toolbar while printing a Chart. See Printing And Print Preview topic for more details.
 
 ## Context Menu
 
@@ -593,15 +523,12 @@ There are two types of context menus, both of which get shown by default when th
  
    ![](Runtime-Features_images/Runtime-Features_img15.jpeg)
 
-   _Figure_ _304_: _Chart Area Context Menu_
 
    This context menu can be disabled by setting the DisplayChartContextMenu property to false.
 
 2. Chart Series context menu - This will be displayed when the mouse is over a series.
 
    ![](Runtime-Features_images/Runtime-Features_img16.jpeg)
-
-   _Figure_ _305_: _Chart Series Context Menu_
 
     This context menu can be disabled by setting the DisplaySeriesContextMenu property to false.
 
@@ -610,8 +537,6 @@ There are two types of context menus, both of which get shown by default when th
 This context menu can be enabled by setting the ShowContextMenuInLegend property to true.
 
 ![](Runtime-Features_images/Runtime-Features_img17.jpeg)
-
-_Figure_ _306_: _Legend Context Menu_ 
 
 ## Interactive Features
 
@@ -665,8 +590,6 @@ cursor1.Color = Color.Red
 ![](Runtime-Features_images/Runtime-Features_img18.jpeg)
 
 
-_Figure_ _307_: _Chart Interactive Cursor_
-
 ### Chart AutoHighlight 
 
 The points or the series of the chart can be highlighted when the mouse hovers over them. Use the AutoHighlight property to enable this feature.
@@ -677,10 +600,6 @@ The points or the series of the chart can be highlighted when the mouse hovers o
 
 
 
-
-
-_Figure_ _308_: _Column Highlighted on Mouse Hover_
-
 ### Chart Series Highlighting
 
 You can also highlight a particular chart series alone while mouse hovering, and make the other series transparent. For this, you need to set SeriesHighlight property to _true_. The series can also be highlighted by hovering the mouse over a legend item corresponding to a particular series.
@@ -688,8 +607,6 @@ You can also highlight a particular chart series alone while mouse hovering, and
 The following table describes properties related to this feature.
 
 
-
-_Table_ _132_: _Chart Series Highlighting_
 
 <table>
 <tr>
@@ -711,7 +628,7 @@ If you want to highlight only a particular series alone, you need to set the ind
 </table>
 
 
-> Note: The AutoHighlight property should be disabled to enable this chart series highlighting feature.
+N> The AutoHighlight property should be disabled to enable this chart series highlighting feature.
 
 
 
@@ -741,9 +658,6 @@ Me.chartControl1.Series(0).Style.HiddenInterior = New BrushInfo(0, bi
 
 ![](Runtime-Features_images/Runtime-Features_img21.jpeg)
 
-
-_Figure_ _309_: _Product B Series being Highlighted_
-
 ### Drawing Interactive Cursor Separately – Either Horizontally or Vertically or Both 
 
 An Interactive cursor is used to indicate the x-axis and y-axis values of a data point. The interactive cursor can be drawn in different orientations namely Horizontal, Vertical and in both directions. The cursor color can also be changed according to requirements. The default color is set at the initial stage and this can be changed according to orientation or a common color can be set for both orientations as the parent color.
@@ -757,12 +671,7 @@ The following screen shot shows the Interactive cursor, which is drawn in horizo
 ![](Runtime-Features_images/Runtime-Features_img22.png)
 
 
-
-_Figure_ _310_: _Interactive Cursor with Horizontal Orientation_
-
-
-
-_Table_ _133_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -882,9 +791,6 @@ Now, the default color would be replaced with blue color at both the orientation
 ![](Runtime-Features_images/Runtime-Features_img23.png)
 
 
-
-_Figure_ _311_: _Interactive Cursor with Parent Color Set to Blue_
-
 The following code snippets draw interactive cursor in different colors:
 
 
@@ -912,9 +818,6 @@ cursor1.HorizontalCursorColor = Color.Red;
 ![](Runtime-Features_images/Runtime-Features_img24.png)
 
 
-
-_Figure_ _312_ _: _Interactive Cursor with Horizontal Cursor Color Red and Vertical Cursor Color Green._
-
 ### ChartInteractiveCursor Support for Chart Area
 
 EssentialChart now supports moving the interactive cursor fully over the chart area. It provides simple methods to display symbols at the intersection of series points and the interactive cursor.
@@ -931,9 +834,6 @@ To view a sample,
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Chart samples > User Interaction > Chart Interactive Cursor.
 
-
-
-_Table_ _134_: _Properties_
 
 <table>
 <tr>
@@ -962,10 +862,7 @@ Server Side</td><td>
 Double</td></tr>
 </table>
 
-
-
-
-_Table_ _135_: _Methods_
+_Methods_
 
 <table>
 <tr>
@@ -1038,24 +935,18 @@ Symbols will be displayed when the interactive cursor meets the series point in 
 ![C:/Users/sivakumard/Desktop/Symbols.PNG](Runtime-Features_images/Runtime-Features_img25.png)
 
 
-
-_Figure_ _313_: _Symbols shown at intersection between series point and interactive cursor_
-
 ## ToolTips
 
 Essential Chart supports ToolTips in different areas of the chart which comes with multiple customization options.
 
 The different tooltips in the chart can be turned off using the control's ShowToolTips property.
 
-> Note: The ShowToolTips property in the chart is false by default, so remember to turn this on, before setting tooltips in the different chart areas.
+N> The ShowToolTips property in the chart is false by default, so remember to turn this on, before setting tooltips in the different chart areas.
 
 ### DataPoint Tooltips
 
 Tooltips can be shown on each data point when the mouse hovers on them. The format of the tooltip is specified by the following property in ChartSeries.
 
-
-
-_Table_ _136_: _ChartSeries Property_
 
 <table>
 <tr>
@@ -1084,8 +975,6 @@ series1.PointsToolTipFormat = "Sales:{4}K"
 
 
 ![](Runtime-Features_images/Runtime-Features_img27.jpeg)
-
-_Figure_ _314_: _ToolTip Format set for Data Points_
 
 
 
@@ -1157,9 +1046,6 @@ End Sub
 
 ![](Runtime-Features_images/Runtime-Features_img28.jpeg)
 
-_Figure_ _315_: _ToolTip Format set for Individual Data Points_
-
-
 
 ### Chart Area Tooltip
 
@@ -1176,8 +1062,6 @@ Chart Windows includes a "fancy tooltip" feature. As the name implies, this tool
 The FancyToolTip can also be customized with more of the following properties.
 
 
-
-_Table_ _137_: _FancyToolTip_
 
 <table>
 <tr>
@@ -1261,9 +1145,10 @@ series1.FancyToolTip.Alignment = TabAlignment.Top
 
 ![](Runtime-Features_images/Runtime-Features_img29.jpeg)
 
-_Figure_ _316_: _Fancy ToolTip set for Data Point_
 
 
-See Also
+{% seealso %}
 
-How to display tooltip over Histogram Chart columns
+[How to display tooltip over Histogram Chart columns](/windowsforms/chart/faq/How-to-display-custom-tooltip-over-Histogram-Chart)
+
+{% endseealso %}

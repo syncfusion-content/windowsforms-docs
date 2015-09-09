@@ -13,7 +13,6 @@ This section discusses the text settings of the CheckBoxAdv.
 
 Text in the CheckBoxAdv can be shadowed and wrapped as illustrated below.
 
-Table 395: Property Table
 
 <table>
 <tr>
@@ -77,6 +76,8 @@ A sample which demonstrates the TextShadow property of CheckBoxAdv is available 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 {% seealso %}
-[Alignment Settings](/WindowsForms/CheckBoxAdv/Alignment-Settings)
+
+[Alignment Settings](http://docs.syncfusion.com/windowsforms/checkboxadv/alignment-settings)
+
 {% endseealso %}
 

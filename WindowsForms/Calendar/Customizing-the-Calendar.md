@@ -14,7 +14,6 @@ DateTimePickerAdv control has properties which can improve the look and feel of 
 
 The background of the Calendar can be customized using below properties.
 
-Table184: Property Table
 
 <table>
 <tr>
@@ -60,7 +59,6 @@ Me.dateTimePickerAdv1.CalendarTitleBackColor = System.Drawing.Color.Wheat
 
 The foreground appearance can be customized using the below properties.
 
-Table185: Property Table
 
 <table>
 <tr>
@@ -125,7 +123,6 @@ _CalendarFont = "Italic"; TrailingForeColor = "Blue"_
 
 The default size of the popup calendar can be changed using the below properties.
 
-Table186: Property Table
 
 <table>
 <tr>
@@ -168,6 +165,8 @@ Me.dateTimePickerAdv1.CalendarSizeToFit = False
 
 
 
-See Also
+{% seealso %}
 
-Calendar Value
+[Calendar Value](http://docs.syncfusion.com/windowsforms/calendar/calendar-value)
+
+{% endseealso %}

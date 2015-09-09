@@ -3,7 +3,7 @@ layout: post
 title: Text-Field
 description: text field
 platform: WindowsForms
-control: Editors Package
+control: CurrencyTextbox
 documentation: ug
 ---
 
@@ -41,7 +41,6 @@ Me.currencyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 The CurrencyTextBox control can be made multiline by setting Multiline property to true. Using the below properties we can control the behavior of control. 
 
-Table 307: Property Table
 
 <table>
 <tr>
@@ -161,7 +160,6 @@ The CurrencyTextBox text field has a number part and a decimal part. The propert
 
 The below properties lets you decide the formatting of the number part of CurrencyTextBox control.
 
-Table 308: Property Table
 
 <table>
 <tr>
@@ -207,7 +205,6 @@ Me.currencyTextBox1.CurrencyNegativePattern = 2
 
 The below properties lets you decide the formatting of the CurrencyTextBox control's number part.
 
-Table 309: Property Table
 
 <table>
 <tr>
@@ -307,7 +304,6 @@ Me.currencyTextBox1.NegativeInputPendingOnSelectAll = True
 
 The maximum and minimum value of the currency can be specified by MaxValue and MinValue properties.
 
-Table 310: Property Table
 
 <table>
 <tr>
@@ -353,7 +349,6 @@ Me.currencyTextBox1.EnforceMinMaxDuringValidating = True;
 
 If you want to display null string instead of actual decimal values, you can set NullString property to any values. To display the null string set AllowNull to true.
 
-Table 311: Property Table
 
 <table>
 <tr>
@@ -395,7 +390,6 @@ Me.currencyTextBox1.AllowNull = True
 
 The currency symbol that will be used for formatting the display is specified by setting CurrencySymbol to any special characters.
 
-Table 312: Property Table
 
 <table>
 <tr>

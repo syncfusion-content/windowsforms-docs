@@ -13,8 +13,6 @@ The image settings of the CheckBoxAdv control has been discussed in this section
 
 Images can be set to the CheckBoxAdv when it is in the Checked, Unchecked or Indeterminate state. The CheckBoxAdv allows us to set the following properties in order to display images.
 
-Table 402: Property Table
-
 <table>
 <tr>
 <th>
@@ -98,8 +96,6 @@ Me.checkBoxAdv1.StretchImage = False
 ## Images displayed during Mouse Hover
 
 Images can also be set when the mouse is hovered over the CheckBoxAdv control.
-
-Table 403: Property Table
 
 <table>
 <tr>

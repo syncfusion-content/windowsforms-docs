@@ -72,5 +72,3 @@ It can be added programmatically by performing the following steps.
 
    ![](ColorPickerUIAdv_Images/Overview_img253.jpeg) 
 
-   {:.prettyprint}
-

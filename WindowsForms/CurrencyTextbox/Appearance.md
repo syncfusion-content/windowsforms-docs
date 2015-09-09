@@ -3,7 +3,7 @@ layout: post
 title: Appearance
 description: Appearance
 platform: WindowsForms
-control: Editors Package
+control: CurrencyTextbox
 documentation: ug
 ---
 
@@ -12,8 +12,6 @@ documentation: ug
 ## Themes
 
 CurrencyTextBox control can be themed by setting ThemesEnabled to true.
-
-Table 313: Property Table
 
 <table>
 <tr>
@@ -46,8 +44,6 @@ Me.currencyTextBox1.ThemesEnabled = True
 ## Border Styles
 
 The below properties describes various properties available to set border for the CurrencyTextBox control.
-
-Table 314: Property Table
 
 <table>
 <tr>
@@ -105,7 +101,6 @@ Me.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 We can set different colors for the different set of currency values i.e, Colors can be set for positive currency values, negative currency values and zero values by using the below properties. We can draw the background of Currency TextBox with colors when it is in read only mode by ReadOnlyBackColor.
 
-Table 315: Property Table
 
 <table>
 <tr>

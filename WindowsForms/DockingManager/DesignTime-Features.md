@@ -3,13 +3,13 @@ layout: post
 title: DesignTime-Features
 description: designtime features
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
 # DesignTime Features
 
-Dragging and Docking at DesignTime
+### Dragging and Docking at DesignTime
 
 DockingManager supports dragging and docking of the dockable controls at the design time itself. It also lets you float the controls.
 

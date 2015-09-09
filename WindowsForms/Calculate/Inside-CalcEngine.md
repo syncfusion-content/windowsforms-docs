@@ -15,8 +15,6 @@ Following are the topics discussed in this section.
 
 To track information used during calculations, CalcEngine manages several hash tables. Here is a table of the public hash tables in CalcEngine and a description of their keys and values:
 
-_Table_ _12_: _Hash Table_
-
 <table>
 <tr>
 <th>
@@ -181,7 +179,7 @@ Essential Calculate provides support to compute the date values similar to Excel
 
 You can compute and get the correct values of DateTime in arithmetic signs and formulas using this property.
 
-_Table_ _13_: _Property Table_
+_Property Table_
 
 <table>
 <tr>

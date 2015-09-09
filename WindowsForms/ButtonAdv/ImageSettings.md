@@ -31,7 +31,6 @@ Image that will be displayed on the control.
 
 The Images can be added to the ButtonAdv control in two ways. Either Image property can be used or the below properties.
 
-Table 137: Property Table
 
 <table>
 <tr>
@@ -92,7 +91,7 @@ TextAboveImage.</td></tr>
 
 
 
-N> The Image settings will be effective only when ButtonType is set to Normal.
+N> The Image settings will be effective only when [ButtonType](http://docs.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
 
 
 

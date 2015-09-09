@@ -45,30 +45,24 @@ To view the samples, follow the steps below
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
-   _Figure_ _2_: _Syncfusion Essential Studio Dashboard_
-
 
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window is displayed.
 
 
 
-   > Note: You can view the samples in any of the following three ways:
+   N> You can view the samples in any of the following three ways:
    > * Run Samples - Click to view the locally installed samples.
    > * Online Samples - Click to view online samples.
    > * Explore Samples - Explore BI Web samples on disk.
    
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
-   
-   _Figure_ _3_: _User Interface Edition Windows Forms Sample Browser_
+  
    
 3. Select Chart frombottom-left pane. Chart samples will be displayed.
    
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
    
-   _Figure_ _4_: _Chart Samples for Windows_
-
-
 
 4. Select any sample and browse through the features.
 

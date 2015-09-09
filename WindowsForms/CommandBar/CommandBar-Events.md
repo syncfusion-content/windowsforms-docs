@@ -3,7 +3,7 @@ layout: post
 title: CommandBar-Events
 description: commandbar events
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -11,7 +11,6 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 29: CommandBar Event Table
 
 <table>
 <tr>
@@ -139,7 +138,6 @@ This event is raised when a CommandBar's dock / float state is about to change.
 
 The event handler receives an argument of type CommandBarStateChangingEventArgs containing data related to this event. The following CommandBarStateChangingEventArgs members provide information specific to this event.
 
-Table 30: Members Table
 
 <table>
 <tr>
@@ -454,7 +452,6 @@ This event is raised when the CommandBar is resized with either the DockModeWrap
 
 The event handler receives an argument of type CommandBarWrappingEventArgs containing data related to this event. The following CommandBarWrappingEventArgs members provide information specific to this event.
 
-Table 31: Members Table
 
 <table>
 <tr>

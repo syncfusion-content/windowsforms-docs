@@ -24,11 +24,11 @@ BackColor represents the background color used to display the text or the graphi
 {% highlight c# %}
  gradientPanelExt1.BackColor = System.Drawing.Color.Transparent;
 
+{% endhighlight  %}
 
 
 
-
-
+{% highlight vbnet %}
 
 Private gradientPanelExt1.BackColor = System.Drawing.Color.Transparent
 {% endhighlight  %}
@@ -45,8 +45,6 @@ The colors and styles of the GradientPanelExt control can be set using the Backg
 * ForeColor - Foreground color, for text or graphics can be set using ForeColor property.
 * PatternStyle - Provides the pattern styles available for the style selected.
 * GradientColors - This pops up the Color Collection Editor, which allows the user to add colors and get a combination of colors to display in the gradient panel with the specified style.
-
-Table240: Property Table
 
 <table>
 <tr>
@@ -98,13 +96,14 @@ gradientPanelExt1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.
 
   System.Drawing.Color.LightCoral});
 
+{% endhighlight  %}
 
 
 
+{% highlight vbnet %}
 
-
-
-Private gradientPanelExt1.BackgroundColor = New                                                                            Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New System.Drawing.Color() {                  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
+Private gradientPanelExt1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New System.Drawing.Color() {
+                  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
 
 
 {% endhighlight  %}
@@ -127,10 +126,10 @@ gradientPanelExt1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject(
 gradientPanelExt1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 
 
+{% endhighlight  %}
 
 
-
-
+{% highlight vbnet %}
 
 Private Me.gradientPanelExt1.BackgroundImage = (CType(resources.GetObject("gradientPanelExt1.BackgroundImage"),System.Drawing.Image))   
 

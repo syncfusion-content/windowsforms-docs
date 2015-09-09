@@ -3,7 +3,7 @@ layout: post
 title: Creating CurrencyEdit
 description: creating currencyedit
 platform: WindowsForms
-control: Editors Package
+control: CurrencyEdit
 documentation: ug
 ---
 
@@ -39,17 +39,21 @@ It can be created programmatically as follows.
 2. Create an instance of the CurrencyEdit. Add that instance to the Form.
    
    ~~~ cs
+   
    private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit1;
    this.currencyEdit1=new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
    this.Controls.Add(this.currencyEdit1);
+   
    ~~~
    {:.prettyprint}
    
    
    ~~~vbnet
+   
    Private currencyEdit1 As Syncfusion.Windows.Forms.Tools.CurrencyEdit
    Me.currencyEdit1 = New Syncfusion.Windows.Forms.Tools.CurrencyEdit()
    Me.Controls.Add(Me.currencyEdit1)
+   
    ~~~
    {:.prettyprint}
 

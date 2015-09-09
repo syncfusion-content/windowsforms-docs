@@ -3,7 +3,7 @@ layout: post
 title: How to Get the Individual Docked control's Properties
 description: How to Get the Individual Docked control's Properties
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -35,6 +35,7 @@ Me.dockingManager1.IsFloating(this.listBox1);
 2. Enable the listview as a docked control.
 
    ~~~ cs
+   
 		this.dockingManager1.SetEnableDocking(this.listView1,true);
 
    ~~~

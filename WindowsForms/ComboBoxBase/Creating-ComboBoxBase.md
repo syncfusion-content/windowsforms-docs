@@ -3,7 +3,7 @@ layout: post
 title: Creating-ComboBoxBase
 description: creating comboboxbase
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxBase
 documentation: ug
 ---
 

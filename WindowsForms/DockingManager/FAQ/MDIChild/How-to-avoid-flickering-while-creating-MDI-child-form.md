@@ -3,7 +3,7 @@ layout: post
 title: How to avoid flickering while creating MDI child form
 description: How to avoid flickering while creating MDI child form
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

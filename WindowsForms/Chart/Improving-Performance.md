@@ -9,7 +9,7 @@ documentation: ug
 
 # Improving Performance
 
-_Table_ _4_: _Properties and Methods_
+_Properties and Methods_
 
 <table>
 <tr>

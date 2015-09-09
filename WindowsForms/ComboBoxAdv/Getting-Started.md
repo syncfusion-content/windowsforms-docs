@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxAdv
 documentation: ug
 ---
 

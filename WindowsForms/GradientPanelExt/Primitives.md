@@ -85,12 +85,11 @@ Private collapsePrimitive1.Size = New System.Drawing.Size(40, 40)
 
 ![](GradientPanelExt_images/Overview_img379.jpeg)
 
+{% seealso %}
 
+[Host Primitives](#host-primitives)
 
-> See Also
-
-> Image and Text Primitives, Host Primitives
-
+{% endseealso %}
 
 ## Image and Text Primitives
 
@@ -326,11 +325,11 @@ Private Me.imagePrimitive4.PrimitiveBorderStyle = Syncfusion.Windows.Forms.Tools
 ![](GradientPanelExt_images/Overview_img380.jpeg)
 
 
+{% seealso %} 
 
-> See Also
-> 
-> Host Primitives, Expand and Collapse Options
+[Expand and Collapse Options](#expand-and-collapse-options)
 
+{% endseealso %}
 
 ## Host Primitives
 
@@ -465,6 +464,8 @@ gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrim
 
 
 
-> See Also
-> 
-> Expand and Collapse Options, Image and Text Primitives
+{% seealso %}
+
+[Expand and Collapse Options](#expand-and-collapse-options), [Image and Text Primitives](#image-and-text-primitives)
+
+{% endseealso %}

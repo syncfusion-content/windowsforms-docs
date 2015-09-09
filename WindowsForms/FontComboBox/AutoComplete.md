@@ -11,7 +11,6 @@ documentation: ug
 
 The AutoComplete feature of the FontComboBox can be turned on\off depending upon the type of behavior that is required for the FontComboBox control. The below properties enables the auto complete feature.
 
-Table 383: Property Table
 
 <table>
 <tr>
@@ -66,6 +65,8 @@ Me.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.Cu
 ![](Overview_images/Overview_img585.jpeg)
 
 
-See Also
+{% seealso %}
 
-DropDown Settings
+[DropDown Settings](/windowsforms/fontcombobox/dropdownsettings/)
+
+{% endseealso %}

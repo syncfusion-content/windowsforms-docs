@@ -21,7 +21,6 @@ This section covers the requirements for using Gauge control. It also lists oper
 
 The prerequisites details are listed below:
 
-_Table_ _1_: Prerequisites Table
 
 <table>
 <tr>
@@ -51,7 +50,6 @@ Development Environments</th><th>
 
 The compatibility details are as follows: 
 
- _Table_ _2_: Compatibility
 
 <table>
 <tr>

@@ -63,10 +63,6 @@ Me.editControl1.Print()
 
 
 
-_Figure_ _77: Print Dialog Box
-
-
-
 Use the PrintPreview method to view the contents of the Edit Control before they are printed.
 
 
@@ -93,9 +89,6 @@ Me.editControl1.PrintPreview()
 
 ![](Printing_images/Printing_img2.jpeg)
 
-
-
-_Figure_ _78_: Print Preview
 
 
 
@@ -292,10 +285,6 @@ The following image shows a typical page with a header and footer in Print Previ
 
 
 ![](Printing_images/Printing_img3.jpeg)
-
-
-
-_Figure_ _79: Preview of Header and Footer
 
 
 

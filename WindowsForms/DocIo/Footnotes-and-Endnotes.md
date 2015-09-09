@@ -9,11 +9,11 @@ documentation: ug
 
 # Footnotes and Endnotes
 
-Footnote
+### Footnote
 
 A Footnote is a note of text placed at the bottom of a page in a book or document. It is normally flagged by a superscript number followed by the text where it is referenced to the document content.
 
-Endnote
+### Endnote
 
 An Endnote is a note or reference given at the end of a text or a major text section. Endnotes are similar to footnotes, but the only difference is that they are listed together at the end of a chapter or at the end of work.
 
@@ -44,15 +44,14 @@ WFootnote class represents the structure and properties of footnotes and endnot
 
  ParagraphItem
 
-                  
+        &#124;          
 
              WFootnote
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 105 : Public cConstructors
 
 <table>
 <tr>
@@ -66,9 +65,7 @@ Initializes a new instance of the WFootnote class  </td></tr>
 </table>
 
 
-Public Properties
-
-Table 106 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -234,9 +231,7 @@ document.Save("Sample.doc", Syncfusion.DocIO.FormatType.Doc)
 
 A Footnote or Endnote separator is a line preserved between the body and the endnotes or footnotes in a Microsoft Word document. A footnote or endnote continuation separator is a line running across the top section indicating that the footnotes or endnotes are carried over from the preceding page if they run over to the second page. A footnote or endnote continuation notice is a special character or word preserved at the bottom of the footer area to indicate that the footnotes or endnotes continue to the next page.
 
-Public Constructors
-
-Table 107 : Public Constructors
+#### Public Constructors
 
 <table>
 <tr>
@@ -254,9 +249,7 @@ Initializes a new instance of the Endnote class.</td></tr>
 </table>
 
 
-Public Properties 
-
-Table 108 : Public Properties
+#### Public Properties 
 
 <table>
 <tr>

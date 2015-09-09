@@ -199,15 +199,12 @@ The EnableRoundedCorner is used to to enable rounded corner for a connector, and
 This is used to change the visual style of connectors.
 
 
-
-_Table_ _27_: Rounded Corner Properties
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 EnableRoundedCorner</td><td>
@@ -261,9 +258,6 @@ diagram1.Model.AppendChild(orthogonal)
 ![](Connectors-or-Links_images/Connectors-or-Links_img3.png)
 
 
-
-_Figure_ _70_: Connectors with Rounded Corners
-
 ## Drawing Tool
 
 Diagram control now provides a drawing tool to draw the Org line connector dynamically during run time.
@@ -293,8 +287,4 @@ diagram1.Controller.ActivateTool("OrgLineConnectorTool")
 {% endhighlight %}
 
 ![](Connectors-or-Links_images/Connectors-or-Links_img4.png)
-
-
-
-_Figure_ _71_: Org line Connector
 

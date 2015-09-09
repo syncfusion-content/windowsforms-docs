@@ -3,7 +3,7 @@ layout: post
 title: How to avoid flickering while loading dock state
 description: How to avoid flickering while loading dock state
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

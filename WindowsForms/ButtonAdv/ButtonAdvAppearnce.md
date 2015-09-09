@@ -16,7 +16,6 @@ This section will walk you through the below topics which discusses the properti
 
 ButtonAdv control supports different button types in terms of its appearance. It is specified using the ButtonType property.
 
-Table 133: Property Table
 
 <table>
 <tr>
@@ -47,7 +46,7 @@ RightEnd - Right end image is used.</td></tr>
 
 
 
-N> You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See Image Settings to know more.
+N> You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See [Image Settings](http://docs.syncfusion.com/windowsforms/buttonadv/imagesettings) to know more.
 
 {%highlight c#%}
 
@@ -88,7 +87,6 @@ Example - A sample image which uses most of the button types in a single applica
 
 Border style for the ButtonAdv control is specified in the below property.
 
-Table 134: Property Table
 
 <table>
 <tr>
@@ -120,7 +118,7 @@ SunkenOuter</td></tr>
 
 
 
-N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See Visual Styles.
+N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See [Visual Styles](http://docs.syncfusion.com/windowsforms/buttonadvappearnce#visual-styles).
 
 
  
@@ -149,7 +147,7 @@ Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Su
 
 {% seealso %}
 
-Visual Styles, Button Types
+[Button Types](http://docs.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types)
 
  {% endseealso %}
 
@@ -157,7 +155,6 @@ Visual Styles, Button Types
 
 Visual Styles for the ButtonAdv control can be enabled by using the UseVisualStyle property. The different visual style are specified through Appearance.
 
-Table 135: Property Table
 
 <table>
 <tr>
@@ -305,7 +302,7 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
  {% seealso %}
 
-Button Types, Image Settings
+[Button Types](#button-types), [Image Settings](http://docs.syncfusion.com/windowsforms/buttonadv/imagesettings)
 
 {% endseealso %}
 
@@ -313,7 +310,6 @@ Button Types, Image Settings
 
 Text for the ButtonAdv can be customized using the below properties.
 
-Table 136: Property Table
 
 <table>
 <tr>

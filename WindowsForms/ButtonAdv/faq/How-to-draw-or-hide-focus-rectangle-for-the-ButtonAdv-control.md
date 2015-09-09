@@ -11,8 +11,6 @@ documentation: ug
 
 ButtonControl shows some special features which the user interacts with the control. Those properties are discussed in this section.
 
-Table 138: Property Table
-
 <table>
 <tr>
 <th>

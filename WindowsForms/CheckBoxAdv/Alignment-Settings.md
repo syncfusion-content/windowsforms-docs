@@ -15,7 +15,6 @@ This section discusses the alignment settings of the CheckBoxAdv.
 
 Text in the CheckBoxAdv can be aligned to the desired location as given below.
 
-Table 398: Property Table
 
 <table>
 <tr>
@@ -52,7 +51,6 @@ Me.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCen
 
 The CheckBox itself can be aligned to any desired location that can be chosen from the options given in the following property.
 
-Table 399: Property Table
 
 <table>
 <tr>
@@ -90,5 +88,5 @@ A sample which demonstrates the Text and CheckBox Alignment features of CheckBox
 
 {% seealso %}
 
-[Text Settings](/WindowsForms/CheckBoxAdv/Text-Settings), [CheckBoxAdv Settings](/WindowsForms/CheckBoxAdv/CheckBoxAdv-Settings)
+[Text Settings](http://docs.syncfusion.com//WindowsForms/CheckBoxAdv/Text-Settings), [CheckBoxAdv Settings](http://docs.syncfusion.com//WindowsForms/CheckBoxAdv/CheckBoxAdv-Settings)
 {% endseealso %}

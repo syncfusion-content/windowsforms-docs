@@ -15,7 +15,6 @@ This section discusses the themes and visual style settings that are supported b
 
 The CheckBoxAdv can be provided with a themed appearance using the below given property.
 
-Table 404: Property Table
 
 <table>
 <tr>
@@ -51,7 +50,6 @@ Me.checkBoxAdv1.ThemesEnabled = True
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
 
-Table 405: Property Table
 
 <table>
 <tr>

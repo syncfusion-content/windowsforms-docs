@@ -14,51 +14,53 @@ controls toolbox onto your form.
 
 ![](DoubleTextBox-images/DoubleTextBox_img2.png)
  
-Figure 486: DoubleTextBox in Toolbox
 
 It can be created programmatically as follows.
 
-1.   Add Shared.Base, Shared.Windows, Tools.Base and Tools.Windows assembly references and include the required namespace.
+1. Add Shared.Base, Shared.Windows, Tools.Base and Tools.Windows assembly references and include the required namespace.
 
-{% highlight C# %}  
+   ~~~ cs    
 
-using Syncfusion.Windows.Forms.Tools;
+		using Syncfusion.Windows.Forms.Tools;
 
-{% endhighlight %} 
+   ~~~
+   {:.prettyprint }
 
 
 
- {% highlight vbnet %} 
 
-Imports Syncfusion.Windows.Forms.Tools
+   ~~~ vbnet
 
- {% endhighlight %}
+		Imports Syncfusion.Windows.Forms.Tools
+
+   ~~~
+   {:.prettyprint }
+
 
  
 2. Create an instance of the DoubleTextBox. Add that instance to the Form.
 
-{% highlight C# %}  
+   ~~~ cs 
 
-this.doubleTextBox1=new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+		this.doubleTextBox1=new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
 
-this.Controls.Add(this.doubleTextBox1);
+		this.Controls.Add(this.doubleTextBox1);
  
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
 
- 
-{% highlight vbnet %} 
+		Me.doubleTextBox1 = New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
 
- Me.doubleTextBox1 = New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
+		Me.Controls.Add(Me.doubleTextBox1)
 
-Me.Controls.Add(Me.doubleTextBox1)
+   ~~~
+   {:.prettyprint }
 
-{% endhighlight %}
 
  
 ![](DoubleTextBox-images/DoubleTextBox_img3.png)
-
-Figure 487: DoubleTextBox Created Programmatically
 
 
 

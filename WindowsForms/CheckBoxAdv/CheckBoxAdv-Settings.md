@@ -17,7 +17,6 @@ It includes the below given topics.
 
 The CheckBoxAdv can be displayed in three different states which have been described below.
 
-Table 393: Property Table
 
 <table>
 <tr>
@@ -64,7 +63,7 @@ Me.checkBoxAdv1.Checked = True
 
 {% seealso %}
 
-[CheckBoxAdv Values](#checkboxadv-values), [Image Settings](/windowsforms/checkboxadv/image-settings)
+[CheckBoxAdv States](http://docs.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://docs.syncfusion.com/windowsforms/checkboxadv/image-settings)
 
 {% endseealso %}
 
@@ -75,7 +74,6 @@ This section discusses how values can be associated with the various check state
 
 Both integer and string values can be associated with the check states as follows.
 
-Table 394: Property Table
 
 <table>
 <tr>
@@ -170,6 +168,8 @@ Me.checkBoxAdv1.BoolValue = True
 {% endhighlight %}
 
 {% seealso %}
-[CheckBoxAdv States](#checkboxadv-states),  [Image Settings](/windowsforms/checkboxadv/image-settings)
+
+[CheckBoxAdv States](http://docs.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://docs.syncfusion.com/windowsforms/checkboxadv/image-settings)
+
 {% endseealso %}
 

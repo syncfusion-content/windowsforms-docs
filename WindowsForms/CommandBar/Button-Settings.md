@@ -3,7 +3,7 @@ layout: post
 title: Button-Settings
 description: button settings
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -15,7 +15,6 @@ The buttons settings of the CommandBar control are given below.
 
 The close button of CommandBar gets displayed when it is in the float state whereas the dropdown button gets displayed both in the dock and float state.
 
-Table 10: Button Settings
 
 <table>
 <tr>
@@ -68,7 +67,6 @@ Me.commandBar1.HideDropDownButton=True
 
 The methods associated with the above properties is given below.
 
-Table 11: Button Settings - Methods
 
 <table>
 <tr>

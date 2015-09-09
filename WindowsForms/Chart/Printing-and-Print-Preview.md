@@ -37,9 +37,6 @@ printPreviewDialog1.ShowDialog()
 ![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg)
 
 
-_Figure_ _362_: _Print Preview Dialog Box_
-
-
 
 ## Printing
 Print a chart control using the PrintDocument exposed by the chart control as follows:
@@ -61,9 +58,6 @@ Me.chartControl1.PrintDocument.Print()
 
 You can also specify if you want to print the chart in Color or GrayScale using this property.
 
-
-
-_Table_ _183_: _Properties_
 
 <table>
 <tr>
@@ -97,12 +91,6 @@ Setting GrayScale print mode for the chart lets you print the chart in a gray sc
 
 
 ![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img2.jpeg)
-
-
-
-
-
-_Figure_ _363_: _Column Chart with 2nd and 3rd Series rendered with Patterned Brush_
 
 
 

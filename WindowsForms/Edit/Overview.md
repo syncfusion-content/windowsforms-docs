@@ -31,8 +31,6 @@ Our Edit control can be used in the Visual Studio Editor as it is featured with 
 
 
 
-_Figure_ _1: Essential Edit
-
 
 
 ### Key Features 
@@ -207,7 +205,7 @@ Online {{ '<http://docs.syncfusion.com/windowsforms/edit/overview>'| markdownify
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/overview>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Edit_' | markdownify}} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://docs.syncfusion.com/cr/windowsforms/overview>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Edit_' | markdownify}} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

@@ -3,7 +3,7 @@ layout: post
 title: Docking-Events
 description: docking events
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -15,7 +15,6 @@ The Essential Tools docking framework allows just about any child control on a f
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 69: Docking Events Table
 
 <table>
 <tr>
@@ -152,7 +151,6 @@ The DockControlActivated event occurs when a dockable control gets activated. Wh
 
 The event handler receives an argument of type DockActivationChangedEventArgs containing data related to this event. The following DockActivationChangedEventArgs properties provide information specific to this event.
 
-Table 70: Member Table
 
 <table>
 <tr>
@@ -229,7 +227,6 @@ Whenever a dockable control or the docked control loses focus, DockControlDeacti
 
 The event handler receives an argument of type DockedActivationChangedEventArgs containing data related to this event. The following DockActivationChangedEventArgs property provide information specific to this event.
 
-Table 71: Member Table
 
 <table>
 <tr>
@@ -300,8 +297,6 @@ The AutoHideAnimationStart event occurs just before the start of an autohide ani
 #### Event Data
 
 The AutoHideAnimationEventHandler receives an argument of type AutoHideAnimationEventArgs containing data related to this event. The following AutoHideAnimationEventArgs properties provide information specific to this event.
-
-Table 72: Members Table
 
 <table>
 <tr>
@@ -395,7 +390,6 @@ The AutoHideAnimationStop event occurs immediately after the end of an autohide 
 
 The AutoHideAnimationEventHandler receives an argument of type AutoHideAnimationEventArgs containing data related to this event. The following AutoHideAnimationEventArgs properties provide information specific to this event.
 
-Table 73: Members Table
 
 <table>
 <tr>
@@ -498,7 +492,6 @@ This event occurs when the right mouse button is clicked over a autohidden tab c
 
 The event handler receives an argument of type AutoHideTabContextMenuEventArgs containing data related to this event. The following AutoHideTabContextMenuEventArgs properties provide information specific to this event.
 
-Table 74: Members Table
 
 <table>
 <tr>
@@ -557,7 +550,6 @@ The DockContextMenu event is fired when the mouse is right-clicked over a dockin
 
 The event handler receives an argument of type DockContextMenuEventArgs containing data related to this event. The following DockContextMenuEventArgs properties provide information specific to this event. 
 
-Table 75: Members Table
 
 <table>
 <tr>
@@ -689,7 +681,6 @@ DockMenuClick event is fired, when the redock context menu item has been clicked
 
 The DockMenuClickEventHandler receives an argument of type DockMenuClickEventArgs containing data related to this event. The following DockMenuClickEventArgs properties provide information specific to this event.
 
-Table 76: Members Table
 
 <table>
 <tr>
@@ -756,7 +747,6 @@ The docked control gets maximized, when the maximized button of the docked contr
 
 The event handler receives an argument of type ControlMaximizedEventArgs containing data related to this event. The following  ControlMaximizedEventArgs properties provide information specific to this event.
 
-Table 77: Members Table
 
 <table>
 <tr>
@@ -825,7 +815,6 @@ When the user clicks on the maximize button, and when the control is going to be
 
 The event handler receives an argument of type ControlMaximizeEventArgs containing data related to this event. The following ControlMaximizeEventArgs properties provide information specific to this event.
 
-Table 78: Member Table
 
 <table>
 <tr>
@@ -889,8 +878,6 @@ End Sub
 
 This event is fired after the control is minimized using the minimize option available for the docked control. This event can display the control name using the Control parameter available for the ControlMinimizedEventHandler.
 
-Table 79: Members Table
-
 <table>
 <tr>
 <th>
@@ -950,8 +937,6 @@ This event occurs after the control is restored to its original position. This e
 #### Event Data
 
 The event handler receives an argument of type ControlRestoredEventArgs containing data related to this event. The following ControlRestoredEventArgs properties provide information specific to this event.
-
-Table 80: Members Table
 
 <table>
 <tr>
@@ -1022,8 +1007,6 @@ When the user changes the dock state of the control, DockStateChanged event will
 #### Event Data
 
 The event handler receives an argument of type DockStateChangeEventArgs containing data related to this event. The following DockStateChangeEventArgs property provides information specific to this event.
-
-Table 81: Members Table
 
 <table>
 <tr>
@@ -1118,7 +1101,6 @@ DockStateChanging event will be triggered just before a dock operation takes pla
 
 The event handler receives an argument of type DockStateChangeEventArgs containing data related to this event. The following DockStateChangeEventArgs property provides information specific to this event.
 
-Table 82: Members Table
 
 <table>
 <tr>
@@ -1209,7 +1191,6 @@ The DockStateUnavailable event occurs if serialized information is not available
 
 The event handler receives an argument of type DockStateUnavailableEventArgs containing data related to this event. The following DockStateUnavailableEventArgs property provides information specific to this event.
 
-Table 83: Members Table
 
 <table>
 <tr>
@@ -1268,7 +1249,6 @@ End Sub
 
 The NewDockStateBeginLoad event occurs just before a new dock state is loaded. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
 
-Table 84: Members Table
 
 <table>
 <tr>
@@ -1328,7 +1308,6 @@ End Sub
 
 The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded. Whenever an application with one or more docked controls is loaded, this event will be triggered.
 
-Table 85: Members Table
 
 <table>
 <tr>
@@ -1402,7 +1381,6 @@ This event occurs after a control's DockVisibility state has changed. When the u
 
 The event handler receives an argument of type DockVisibilityChangedEventArgs containing data related to this event. The following DockVisibilityChangedEventArgs properties provide information specific to this event.
 
-Table 86: Members Table
 
 <table>
 <tr>
@@ -1499,7 +1477,6 @@ The DragAllow event is triggered when a docking window is about to be dragged. W
 
 DragAllowEventHandler receives an argument of type DragAllowEventArgs containing data related to this event. The following DragAllowEventArgs properties provides information specific to this event.
 
-Table 87: Members Table
 
 <table>
 <tr>
@@ -1573,8 +1550,6 @@ End Sub
 ### DragFeedbackStart Event
 
 The DragFeedbackStart event is fired just before the start of the feedback of a drag operation. When the docked control is dragged from its position to locate some position, this event will be raised.
-
-Table 88: Member Table
 
 <table>
 <tr>
@@ -1665,7 +1640,6 @@ End Sub
 
 The DragFeedbackStop event occurs immediately after the end of the feedback of a drag operation. When the docked control is dragged from its position and locates another position, this event will be raised. Whenever the mouse click is released from dragging, the drag feedback is stopped and DragFeedbackStop event will be triggered.
 
-Table 89: Member Table
 
 <table>
 <tr>
@@ -1730,7 +1704,6 @@ The TransferredToManager event occurs after a dockable control that previously b
 
 The event handler receives an argument of type TransferManagerEventArgs containing data related to this event. The following TransferManagerEventArgs properties provide information specific to this event.
 
-Table 90: Member Table
 
 <table>
 <tr>
@@ -1796,7 +1769,6 @@ The TransferringFromManager event occurs when a dockable control hosted by a Doc
 
 The event handler receives an argument of type TransferManagerEventArgs containing data related to this event. The following TransferManagerEventArgs property provide information specific to this event.
 
-Table 91: Member Table
 
 <table>
 <tr>
@@ -1862,7 +1834,6 @@ End Sub
 
 When the imagelist property is changed, ImageListChanged event will be raised. Every docked control will have SetDockIcon property to set the icons for the control. When this property is changed, the above event will be triggered.
 
-Table 92: Member Table
 
 <table>
 <tr>
@@ -1929,7 +1900,6 @@ The InitializeControlOnLoad event occurs when the DockingManager is not able to 
 
 The event handler receives an argument of type InitializeControlOnLoadEventArgs containing data related to this event. The following InitializeControlOnLoadEventArgs property provides information specific to this event.
 
-Table 93: Member Table
 
 <table>
 <tr>
@@ -2070,7 +2040,6 @@ The ProvideGraphicsItems event occurs whenever a dockable control's caption need
 
 The event handler receives an argument of type ProvideGraphicsItemsEventArgs containing data related to this event. The following ProvideGraphicsItemsEventArgs properties provide information specific to this event.
 
-Table 94: Member Table
 
 <table>
 <tr>
@@ -2194,7 +2163,7 @@ This event lets you specify a unique ID to distinguish the persistence informati
 
 The event handler receives an argument of type ProvidePersistenceIDEventArgs containing data related to this event. The following ProvidePersistenceIDEventArgs property provides information specific to this event.
 
-Table 95: Member Table
+
 
 <table>
 <tr>
@@ -2306,7 +2275,6 @@ The following screen shot shows a dock panel in auto-hide state.
 
 #### API Details:
 
-Table 96: Property Table
 
 <table>
 <tr>

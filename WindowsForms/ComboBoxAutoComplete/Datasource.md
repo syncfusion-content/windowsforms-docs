@@ -3,7 +3,7 @@ layout: post
 title: Multi Columns
 description: Multi Columns
 platform: WindowsForms
-control: Tools
+control: ComboBoxAutoComplete
 documentation: ug
 ---
 

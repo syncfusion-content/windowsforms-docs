@@ -3,7 +3,7 @@ layout: post
 title: Event-Handling
 description: event handling
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxBase
 documentation: ug
 ---
 
@@ -13,7 +13,6 @@ documentation: ug
 
 The ComboBoxBase fires different events for the different user interaction scenarios. The occurrence and order of the events are tabulated below.
 
-Table 227: Events Table
 
 <table>
 <tr>

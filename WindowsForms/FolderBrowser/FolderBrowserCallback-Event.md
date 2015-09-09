@@ -13,7 +13,6 @@ The event occurs when an event within the folder browser dialog triggers a call 
 
 The following FolderBrowserCallbackEventArgs members provide information specific to this event.
 
-Table 253 : Members Table
 
 <table>
 <tr>

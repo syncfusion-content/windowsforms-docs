@@ -21,7 +21,7 @@ To populate through DataSource.
 
 // Specifies the DataSource.
 
-editableList1.ListBox.DataSource=&lt;DataSource&gt;;
+editableList1.ListBox.DataSource=DataSource;
 
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ editableList1.ListBox.DataSource=&lt;DataSource&gt;;
 
 ' Specifies the DataSource.
 
-editableList1.ListBox.DataSource=&lt;DataSource&gt;
+editableList1.ListBox.DataSource=DataSource
 
 {% endhighlight %}
 

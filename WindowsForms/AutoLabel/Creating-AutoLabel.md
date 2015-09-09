@@ -28,9 +28,6 @@ The following steps illustrate how to create an AutoLabel control through design
   ![](AutoLabel-Images/Overview_img6.jpg) 
 
 
-
-See Also Through Code
-
 ## Through Code
 
 The following steps illustrate how to create an AutoLabel control programmatically.

@@ -21,33 +21,33 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 
 {% highlight c# %}
 
-			BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bulletgraph = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;            
+bulletgraph.Dock = DockStyle.Fill;            
 
-            bulletgraph.FeaturedMeasure = 4.5;
+bulletgraph.FeaturedMeasure = 4.5;
 
-            bulletgraph.ComparativeMeasure = 7;            
+bulletgraph.ComparativeMeasure = 7;            
 
-            bulletgraph.MajorTickStroke = Color.Black;
+bulletgraph.MajorTickStroke = Color.Black;
 
-            bulletgraph.MajorTickSize = 15;
+bulletgraph.MajorTickSize = 15;
 
-            bulletgraph.MinorTickSize = 10;
+bulletgraph.MinorTickSize = 10;
 
-            bulletgraph.MajorTickStroke = Color.Red;
+bulletgraph.MajorTickStroke = Color.Red;
 
-            bulletgraph.MinorTickStroke = Color.Green;
+bulletgraph.MinorTickStroke = Color.Green;
 
-            bulletgraph.MinorTicksPerInterval = 3;
+bulletgraph.MinorTicksPerInterval = 3;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });  
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });  
 
-            this.Controls.Add(bulletgraph);
+this.Controls.Add(bulletgraph);
 
 {% endhighlight %}
 
@@ -65,27 +65,27 @@ They are:
 
 {% highlight c# %}
 
-			BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bulletgraph = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+bulletgraph.Dock = DockStyle.Fill;
 
-            bulletgraph.ComparativeMeasure = 7;
+bulletgraph.ComparativeMeasure = 7;
 
-            bulletgraph.TickPosition = BulletGraphTicksPosition.Cross;
+bulletgraph.TickPosition = BulletGraphTicksPosition.Cross;
 
-            bulletgraph.MajorTickSize = 30;
+bulletgraph.MajorTickSize = 30;
 
-            bulletgraph.MinorTickSize = 30;
+bulletgraph.MinorTickSize = 30;
 
-            bulletgraph.MinorTicksPerInterval = 3;
+bulletgraph.MinorTicksPerInterval = 3;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });                          
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });                          
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });               
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });               
 
-            this.Controls.Add(bulletgraph);
+this.Controls.Add(bulletgraph);
 
 {% endhighlight %}
 

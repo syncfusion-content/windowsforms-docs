@@ -13,21 +13,21 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
 {% highlight c# %}
 
-			BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bulletgraph = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+bulletgraph.Dock = DockStyle.Fill;
 
-            bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
 
-            bulletgraph.Orientation = Orientation.Horizontal;
+bulletgraph.Orientation = Orientation.Horizontal;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
 
-            this.Controls.Add(bulletgraph);
+this.Controls.Add(bulletgraph);
 
 {% endhighlight %}
 

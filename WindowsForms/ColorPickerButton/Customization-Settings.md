@@ -34,7 +34,6 @@ Me.colorPickerButton1.ColorUISize = New System.Drawing.Size(250, 280)
 
 The appearance and behavior of the ColorPickerButton can be controlled using the below properties.
 
-Table203: Property Table
 
 <table>
 <tr>
@@ -78,7 +77,9 @@ Me.colorPickerButton1.SelectedAsText = True
 
 
  {% seealso %}
+ 
 [Color Groups](/windowsforms/colorui/color-groups),[Tab Text](/windowsforms/colorui/tab-text), [ColorUIControlAppearance](/windowsforms/colorui/coloruicontrol-appearance), [Runtime Settings of ColorUIControl](/windowsforms/colorui/runtime-settings).
+
 {% endseealso %}
  
  

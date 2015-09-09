@@ -10,7 +10,6 @@ documentation: ug
 
 The default tab text of the ColorGroups can be set using the below properties.
 
-Table200: Property Table
 
 <table>
 <tr>

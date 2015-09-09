@@ -13,8 +13,6 @@ The text settings of the FolderBrowser control are described below.
 
 The text for the FolderBrowser can be set using the below given property.
 
-Table 251: Property Table
-
 <table>
 <tr>
 <th>

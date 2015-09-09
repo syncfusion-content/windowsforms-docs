@@ -15,7 +15,6 @@ This section elaborated keyboard support for the control.
 
 Essential Tools Calculator control does the functionality of a normal calculator, using the Mouse or Keyboard, at run time. The control provides Keyboard equivalents for the Calculator buttons. They are listed in the below table.
 
-Table 158: Keyboard Support Table
 
 <table>
 <tr>

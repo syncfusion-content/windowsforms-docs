@@ -25,7 +25,7 @@ Use ButtonEditChildButton1.ButtonType property for setting the button types of t
 
 The border styles for the child buttons can be set through BorderStyleAdv property.
 
-Table 143: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -57,7 +57,7 @@ SunkenOuter.<br/></td></tr>
 
 N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonEdit.ButtonStyle property. See Style Settings. We can also set border style for ButtonEdit controls without enabling visual styles.
 
-{%highlight c#%}
+{%highlight c# %}
 
 
 
@@ -67,7 +67,7 @@ this.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvB
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vbnet %}
 
 
 
@@ -81,7 +81,7 @@ Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 {% seealso %}
 
-Style Settings, How to set tooltip for ButtonEdit Child buttons?
+[Style Settings](windowsforms/buttonedit/buttoneditappearance#style-settings), [How to set tooltip for ButtonEdit Child buttons?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-set-tooltip-for-buttonedit-child-buttons)
 
 {% endseealso %}
 
@@ -92,8 +92,6 @@ The properties which controls the appearance and behavior of the ButtonEdit Chil
 ### Button Alignment
 
 Placement of the child buttons inside the ButtonEdit control is set through below property.
-
-Table 144: Property Table
 
 <table>
 <tr>
@@ -107,7 +105,7 @@ Specifies whether the child button should be aligned to left or right of the But
 </table>
 
 
-{%highlight c#%}
+{%highlight c# %}
 
 
 
@@ -116,7 +114,7 @@ this.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonA
 {%endhighlight%}
 
 
-{%highlight vbnet%}
+{%highlight vbnet %}
 
 
 
@@ -133,7 +131,6 @@ N> There is no support for placing more than one buttons on the same side. We ne
 
 The below properties can be used to set text and image for the child buttons.
 
-Table 145: Property Table
 
 <table>
 <tr>
@@ -175,7 +172,7 @@ Sets the relative location of the image to the text in the button.</td></tr>
 </table>
 
 
-{%highlight c#%}
+{%highlight c# %}
 
 
 
@@ -194,7 +191,7 @@ this.buttonEditChildButton2.PreferredWidth = 64;
 
 {%endhighlight%}
 
-{%highlight  vbnet%}
+{%highlight  vbnet %}
 
 Me.buttonEditChildButton2.Image = DirectCast((resources.GetObject("buttonEditChildButton2.Image")), System.Drawing.Image)
 
@@ -214,7 +211,7 @@ Me.buttonEditChildButton2.PreferredWidth = 64
 
 ### Flat Style for the Buttons
 
-Table 146: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -232,7 +229,7 @@ Specifies the flat style for the button. The options are Flat, Popup, Standard a
 </table>
 
 
-{%highlight c#%}
+{%highlight c# %}
 
 
 
@@ -244,7 +241,7 @@ this.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.C
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vbnet %}
 
 
 
@@ -260,7 +257,7 @@ Me.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Col
  
 ### Style Settings
 
-Table 147: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -283,7 +280,7 @@ N> Visual style of a child buttons is inherited from the visual style of it's pa
 
 The Child buttons can be focussed based on the order of the ChildButton.TabIndex set for individual buttons. ChildButton.TabStop property should be set to true to make this effective. While focusing the button, we can either display or don't display a focus rectangle, by using the  ButtonEdit.KeepFocusRectangle property. 
 
-{%highlight c#%}
+{%highlight c# %}
 
 
 
@@ -291,7 +288,7 @@ this.buttonEditChildButton3.KeepFocusRectangle = true;
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vbnet %}
 
 
 
@@ -305,6 +302,6 @@ Me.buttonEditChildButton3.KeepFocusRectangle = True
 
 {% seealso %}
 
-How to hide a child button of a ButtonEdit control?
+[How to hide a child button of a ButtonEdit control?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-hide-a-child-button-of-a-buttonedit-control)
 
 {% endseealso %}

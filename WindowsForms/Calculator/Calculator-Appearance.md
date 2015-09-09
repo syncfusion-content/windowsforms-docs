@@ -57,13 +57,11 @@ Background settings for a Calculator control is discussed in this section.
 
 The background of the Calculator can be painted using the below properties.
 
-Table 154: Property Table
-
 <table>
 <tr>
 <th>
-Calculatorcontrol Properties</td><td>
-Description</td></tr>
+Calculatorcontrol Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -131,7 +129,6 @@ Me.calculatorControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.C
 
 The below property will let you specify the border style for the Calculator control.
 
-Table 155: Property Table
 
 <table>
 <tr>
@@ -170,7 +167,6 @@ this.calculatorControl1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
 
 The default spacing between the Calculator buttons can be modified by enabling _UseVerticalAndHorizontalSpacing_ property. The below properties controls the horizontal and vertical spacing.
 
-Table 156: Property Table
 
 <table>
 <tr>
@@ -224,7 +220,6 @@ Me.calculatorControl1.VerticalSpacing = 5
 
 Using SetButtonFont and SetButtonColor properties, we can set the font style and color for the button text. The button can be identified using CalcActions enumerator.
 
-Table 157: Methods Table
 
 <table>
 <tr>

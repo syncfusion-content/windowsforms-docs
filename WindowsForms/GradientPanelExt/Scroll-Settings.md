@@ -28,9 +28,9 @@ Me.gradientPanel1.AutoScrollMinSize = New System.Drawing.Size(20, 20)
 
 The GradientPanel can automatically size itself based on the contents available in the control by enabling the AutoSize property. The mode of this resizing can be specified through AutoSizeMode property. There are two options provided for the AutoSizeMode.
 
-•GrowOnly - the control grows as much as necessary to fit its contents but doesn't shrink smaller than the value specified in Size property of the control.
+• GrowOnly - the control grows as much as necessary to fit its contents but doesn't shrink smaller than the value specified in Size property of the control.
 
-•GrowAndShrink - the control grows and shrinks to fit its contents to a size may be less than that specified in Size property.
+• GrowAndShrink - the control grows and shrinks to fit its contents to a size may be less than that specified in Size property.
 
 {% highlight c# %}
  

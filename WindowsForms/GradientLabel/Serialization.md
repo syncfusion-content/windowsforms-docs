@@ -13,7 +13,7 @@ We can save and load the background color information in an XML file to persist 
 
 *  First include the required namespaces.
 
-   ~~~ cs
+{% highlight c# %}
   
 
 
@@ -24,11 +24,11 @@ We can save and load the background color information in an XML file to persist 
 		using System.Xml.Serialization;
 
 		using System.IO;
-   ~~~
-   {:.prettyprint}
+
+{% endhighlight %}
 
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 
@@ -39,14 +39,14 @@ We can save and load the background color information in an XML file to persist 
 		Imports System.Xml.Serialization
 
 		Imports System.IO
-   ~~~
-   {:.prettyprint}
+
+{% endhighlight %}
 
 
 *  The below code snippet saves the information in a file called the colorinfo.xml.
 
 
-   ~~~ cs
+{% highlight c# %}
 
 
 		private void button1_Click(object sender, System.EventArgs e)
@@ -68,10 +68,10 @@ We can save and load the background color information in an XML file to persist 
 		writer.Close();
 
 		}
-   ~~~
-   {:.prettyprint}
 
-   ~~~ vbnet
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
 
@@ -92,8 +92,8 @@ We can save and load the background color information in an XML file to persist 
 		writer.Close()
 
 		End Sub
-   ~~~
-   {:.prettyprint}
+		
+{% endhighlight %}
 
 
  ![](GradientLabel-Images/Overview_img605.jpeg) 

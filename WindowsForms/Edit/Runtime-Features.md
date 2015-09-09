@@ -84,8 +84,8 @@ CTRL+X, SHIFT+DEL</td></tr>
 SelectAll</td><td>
 CTRL+A</td></tr>
 <tr>
-<td colspan = "2">
-File Operation</td></tr>
+<th colspan = "2">
+File Operation</th></tr>
 <tr>
 <td>
 Save</td><td>
@@ -103,15 +103,15 @@ CTRL+N</td></tr>
 Open</td><td>
 CTRL+O</td></tr>
 <tr>
-<td colspan = "2">
-Printing</td></tr>
+<th colspan = "2">
+Printing</th></tr>
 <tr>
 <td>
 Print</td><td>
 CTRL+P</td></tr>
 <tr>
-<td colspan = "2">
-Positioning</td></tr>
+<th colspan = "2">
+Positioning</th></tr>
 <tr>
 <td>
 Go to line</td><td>
@@ -125,8 +125,8 @@ CTRL+HOME</td></tr>
 Go to end</td><td>
 CTRL+END</td></tr>
 <tr>
-<td colspan = "2">
-Search and Replace</td></tr>
+<th colspan = "2">
+Search and Replace</th></tr>
 <tr>
 <td>
 Find</td><td>
@@ -144,8 +144,8 @@ CTRL+F3</td></tr>
 Replace</td><td>
 CTRL+H</td></tr>
 <tr>
-<td colspan = "2">
-Undo and Redo</td></tr>
+<th colspan = "2">
+Undo and Redo</th></tr>
 <tr>
 <td>
 Undo </td><td>
@@ -155,8 +155,8 @@ CTRL+Z</td></tr>
 Redo</td><td>
 CTRL+Y</td></tr>
 <tr>
-<td colspan = "2">
-Bookmark</td></tr>
+<th colspan = "2">
+Bookmark</th></tr>
 <tr>
 <td>
 Toggle unnamed bookmark</td><td>
@@ -178,8 +178,8 @@ CTRL+[index of bookmark]</td></tr>
 Go to named bookmark</td><td>
 CTRL+SHIFT+[index of bookmark]</td></tr>
 <tr>
-<td colspan = "2">
-Tab</td></tr>
+<th colspan = "2">
+Tab</th></tr>
 <tr>
 <td>
 Add leading tab</td><td>
@@ -189,8 +189,8 @@ TAB with multiple line selection</td></tr>
 Remove leading tab</td><td>
 SHIFT+TAB</td></tr>
 <tr>
-<td colspan = "2">
-Outlining</td></tr>
+<th colspan = "2">
+Outlining</th></tr>
 <tr>
 <td>
 Switch on outlining and collapse all</td><td>
@@ -204,15 +204,15 @@ CTRL+M->CTRL+P</td></tr>
 Toggle outlining</td><td>
 CTRL+M->CTRL+M</td></tr>
 <tr>
-<td colspan = "2">
-WhiteSpace</td></tr>
+<th colspan = "2">
+WhiteSpace</th></tr>
 <tr>
 <td>
 Show white space</td><td>
 CTRL+SHIFT+W</td></tr>
 <tr>
-<td colspan = "2">
-Intellisense</td></tr>
+<th colspan = "2">
+Intellisense</th></tr>
 <tr>
 <td>
 Show context prompt</td><td>
@@ -252,8 +252,6 @@ Dim bmp as Bitmap = Me.editControl1.CreateBitmap()
 ![](Runtime-Features_images/Runtime-Features_img1.jpeg)
 
 
-
-_Figure_ _45: Bitmap of a Live Instance of Edit Control
 
 ## Find, Replace and Goto
 
@@ -393,8 +391,6 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 
 
-_Figure_ _46: "FindText" method
-
 
 
 ### Find and Replace Dialog Boxes
@@ -407,17 +403,11 @@ Edit Control also supports advanced and customizable Find and Replace dialog box
 
 
 
-_Figure_ _47: Find Dialog Box
-
-
 
 The Replace dialog box is invoked by using the ShowReplaceDialog method. The keyboard shortcut to this dialog box is Ctrl+H. The Replace dialog box also allows you to find and replace words within the selected text.
 
 ![](Runtime-Features_images/Runtime-Features_img4.jpeg)
 
-
-
-_Figure_ _48: Replace Dialog Box
 
 
 
@@ -453,7 +443,7 @@ Me.editControl1.ShowReplaceDialog()
 
 {% endhighlight %}
 
-Positioning Mouse Cursor on a Specified line
+#### Positioning Mouse Cursor on a Specified line
 
 The Edit Control supports the "GoTo" functionality both through the use of a run time dialog box and through programmatic APIs. The GoTo method is used to position the mouse pointer on any specified line. The GoTo method not only positions the pointer on the appropriate line, but it also scrolls the concerned line into the view. The linesAbove argument can be used to specify the number of lines to be displayed above the pointer.
 
@@ -509,9 +499,6 @@ Me.editControl1.ShowGoToDialog()
 
 ![](Runtime-Features_images/Runtime-Features_img5.jpeg)
 
-
-
-_Figure_ _49: GoTo Dialog Box
 
 
 
@@ -601,7 +588,7 @@ Me.editControl1.FindHistory.Clear()
 
 {% endhighlight %}
 
-> Note: The above methods can also be set for the ReplaceHistory and ReplaceSearchHistory properties.
+N> The above methods can also be set for the ReplaceHistory and ReplaceSearchHistory properties.
 
 
 
@@ -618,15 +605,12 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 Essential Edit control Find Dialog is now enhanced with an alert message box. This displays the alert message box when find reaches the starting point of the search again.
 
 
-> Note: In search option Current Selection, click OK in alert message box, then the search area is selected again automatically as in VS editor.
+N> In search option Current Selection, click OK in alert message box, then the search area is selected again automatically as in VS editor.
 
 
 
 ![](Runtime-Features_images/Runtime-Features_img8.jpeg)
 
-
-
-_Figure_ _50: Alert Message Box
 
 ## Scrolling Support
 
@@ -701,10 +685,6 @@ The Edit Control supports scroller events that are raised when the scroll arrows
 
 
 ![](Runtime-Features_images/Runtime-Features_img9.jpeg)
-
-
-
-_Figure_ _51: Scrolling support in Edit Control
 
 
 
@@ -912,9 +892,6 @@ The following illustration shows the Edit Control with custom color (green) set 
 
 
 
-_Figure_ _52: Edit Control with ScrollColorScheme property = "Managed"
-
-
 
 ## ToolTip
 
@@ -940,8 +917,6 @@ The context menu has the standard VS.NET-like appearance, and can optionally be 
 ![](Runtime-Features_images/Runtime-Features_img11.png)
 
 
-
-_Figure_ _53: Edit Control's Context Menu in Office2003 Style
 
 
 
@@ -1152,7 +1127,7 @@ If the Syncfusion.Tools.Windows assembly is loaded before the instantiation of t
 
 
 
-> Note: You must have reference to the Syncfusion.Tools.Windows assembly in your project.
+N> You must have reference to the Syncfusion.Tools.Windows assembly in your project.
 
 
 
@@ -1170,7 +1145,7 @@ This section covers the following topics:
 
 
 
-#### Code Snippets
+### Code Snippets
 
 Essential Edit supports an advanced feature of VS 2005 like Code Snippets. It is also used to load / save VS.NET 2005-compatible XML snippets.
 
@@ -1186,9 +1161,6 @@ Code Snippets are inserted into the Edit Control by following the procedure give
 
 ![](Runtime-Features_images/Runtime-Features_img14.jpeg)
 
-
-
-_Figure_ _55: Inserting Code Snippets into the Edit Control
 
 
 
@@ -1283,9 +1255,11 @@ container.Name = "Loops"
 
 Me.editControl1.Language.SnippetsContainer.AddContainer(container)
 
+{% endhighlight %}
+
 Code snippets can also be created by using the configuration file. For example, the code snippet for a structure in C# can be created as shown below.
 
-
+{% highlight html %}
 
 <CodeSnippetsContainer Name ="Container 2">
 
@@ -1335,7 +1309,7 @@ Code snippets can also be created by using the configuration file. For example, 
 
 {% endhighlight %}
 
-The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. For example, literal strings, numeric values, and some variable names should be declared as literals. The symbol $ is placed at the beginning and end of the literal ID element value. For example, if a literal has an ID element that contains the value MyID, you must reference that literal in the code element as $MyID$. All code snippets must be placed between <![CDATA[ and ]]> brackets.
+The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. For example, literal strings, numeric values, and some variable names should be declared as literals. The symbol $ is placed at the beginning and end of the literal ID element value. For example, if a literal has an ID element that contains the value MyID, you must reference that literal in the code element as $MyID$. All code snippets must be placed between &lt;![CDATA[ and ]]&gt; brackets.
 
 
 
@@ -1391,7 +1365,7 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 
 
 
-#### Context Choice
+### Context Choice
 
 The Context Choice support allows you to create pop-ups for displaying a list of options that are used to complete what the user is typing. This feature is modeled on the List Members intellisense feature of Visual Studio, and is very convenient when editing programming languages. For example, in C# or VB.NET, when the . (period) character is typed after a class instance, a pop-up containing all the members of the class gets displayed. As you type in the editor, the list automatically changes selection to synchronize with the text that has been entered. You can also autocomplete the word by using the UP/DOWN ARROW keys to choose the Context Choice item and pressing theTAB key. The Context Choice pop-up can be dismissed by pressing the ESC key.
 
@@ -1399,9 +1373,6 @@ The Context Choice support allows you to create pop-ups for displaying a list of
 
 ![](Runtime-Features_images/Runtime-Features_img15.jpeg)
 
-
-
-_Figure_ _56: Context Choice List_
 
 
 
@@ -1897,10 +1868,6 @@ FilterAutoCompleteItems property when set to True, filters the item in the AutoC
 
 
 
-_Figure_ _57: Filtering Items in AutoComplete Context Choice
-
-
-
 #### Showing / Hiding Context Choice Pop-up
 
 You can also programmatically show / hide the Context Choice pop-up by calling the ShowContextChoice and
@@ -1944,14 +1911,7 @@ A sample demonstrating the Context Choice feature is available in the below samp
 _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
-
-### See Also
-
 ### Context Prompt
-
-
-
-#### Context Prompt
 
 The Context Prompt feature allows you to create pop-ups for displaying variations of syntax for the text input by using the Context Choice. This feature is modeled on the Parameter Info intellisense feature of Visual Studio. Each of the context prompt items can have a syntax specifier string and text message providing additional information on each item. The user is able to scroll through the syntax variations either by using the UP/DOWN ARROW keys or clicking on the UP/DOWN buttons on the pop-up.
 
@@ -1959,9 +1919,6 @@ The Context Prompt feature allows you to create pop-ups for displaying variation
 
 ![](Runtime-Features_images/Runtime-Features_img17.png)
 
-
-
-_Figure_ _58: Context Prompt Pop-Up
 
 
 
@@ -2629,7 +2586,7 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 
 
 
-#### Context ToolTip
+### Context ToolTip
 
 The Context ToolTip displays helpful tooltips when the mouse is hovered over a lexem in the Edit Control. This feature is modeled on the Quick Info intellisense feature of Visual Studio. Whenever the mouse hovers over a token, the UpdateContextTooltip event is fired for quick information on the lexem. If some text information is provided, it is displayed in a tooltip.
 
@@ -2637,9 +2594,6 @@ The Context ToolTip displays helpful tooltips when the mouse is hovered over a l
 
 ![](Runtime-Features_images/Runtime-Features_img18.jpeg)
 
-
-
-_Figure_ _59: Context ToolTip
 
 
 
@@ -3004,17 +2958,14 @@ Essential Edit provides excellent support for viewport navigation including inte
 
 
 
-_Figure_ _60: Preview of Intellimouse in Edit Control
 
-
-
-### See Also
+{% seealso %}
 
 Some of the intellisense features.
 
-Code Snippets, Context Choice, Context Prompt, Context Tooltip
+[Code Snippets](#code-snippets), [Context Choice](#context-choice), [Context Prompt](#context-prompt), [Context Tooltip](#context-tooltip)
 
-
+{% endseealso %}
 
 #### Drag-and-drop
 

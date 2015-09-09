@@ -32,7 +32,6 @@ Syncfusion introduces BannerTextProvider class which provides the ability to sho
 
 Extender properties which lets you customize the Banner text are as follows.
 
-Table 5: Property Table
 
 <table>
 <tr>
@@ -120,19 +119,19 @@ Me.bannerTextProvider1.SetBannerText(Me.comboBoxBarItem1, New Syncfusion.Windows
 N> BannerText feature can be made available for the below controls only.
 
 
-* [TextBoxBarItem](/windowsforms/popup-menu/popup-menucontext-menuxpmenu-bars#textboxbarItem) (XPMenus)
-* [ComboBoxBarItem](/windowsforms/popup-menu/popup-menucontext-menuxpmenu-bars#comboboxbarItem) (XPMenus)
-* [TextBox](/windowsforms/ribbonadv/ribbon-control-items#toolstripex) (ToolStripEx)
-* [ComboBox](/windowsforms/ribbonadv/ribbon-control-items#combobox ) (ToolStripEx)
-* [ComboBoxEx](/windowsforms/ribbonadv/ribbon-control-items#comboboxex)
-* [TextBoxExt](/windowsforms/textboxext) (Editor Control)
-* [CurrencyTextBox](/windowsforms/currencytextbox)(Editor Control)
-* [ComboBoxAdv](/windowsforms/ComboBoxAdv)(Editor Control)
-* [ComboDropDown](/windowsforms/ComboDropDown ) (Editor Control)
-* [ComboBoxAutoComplete](/windowsforms/comboboxautocomplete) (Editor Control)
-* [Integer TextBox](/windowsforms/integertextbox)(Editor Control)
-* [Double TextBox](/windowsforms/doubletextbox) (Editor Control)
-* [Percent TextBox](/windowsforms/percenttextbox)(Editor Control)
+* [TextBoxBarItem](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#textboxbarItem) (XPMenus)
+* [ComboBoxBarItem](http://docs.syncfusion.com/windowsforms/popup-menu/popup-menucontext-menuxpmenu-bars#comboboxbarItem) (XPMenus)
+* [TextBox](http://docs.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#toolstripex) (ToolStripEx)
+* [ComboBox](http://docs.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#combobox ) (ToolStripEx)
+* [ComboBoxEx](http://docs.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#comboboxex)
+* [TextBoxExt](http://docs.syncfusion.com/windowsforms/textboxext) (Editor Control)
+* [CurrencyTextBox](http://docs.syncfusion.com/windowsforms/currencytextbox)(Editor Control)
+* [ComboBoxAdv](http://docs.syncfusion.com/windowsforms/ComboBoxAdv)(Editor Control)
+* [ComboDropDown](http://docs.syncfusion.com/windowsforms/ComboDropDown ) (Editor Control)
+* [ComboBoxAutoComplete](http://docs.syncfusion.com/windowsforms/comboboxautocomplete) (Editor Control)
+* [Integer TextBox](http://docs.syncfusion.com/windowsforms/integertextbox)(Editor Control)
+* [Double TextBox](http://docs.syncfusion.com/windowsforms/doubletextbox) (Editor Control)
+* [Percent TextBox](http://docs.syncfusion.com/windowsforms/percenttextbox)(Editor Control)
 * Other Microsoft Editor Controls
 
 

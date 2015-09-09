@@ -3,7 +3,7 @@ layout: post
 title: How to restore the original docking windows layout that was set within the Windows Forms designer
 description: How to restore the original docking windows layout that was set within the Windows Forms designer
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

@@ -26,9 +26,6 @@ Line bridging provides the visual effect such that the links jump over other lin
 The below table lists the properties which controls the appearance of the bridge.
 
 
-
-_Table_ _28_: Bridging Properties
-
 <table>
 <tr>
 <th>
@@ -41,7 +38,8 @@ Allows to set the size of the bridge when the links intersect each other. Defaul
 <tr>
 <td>
 BridgeStyle</td><td>
-Specifies the type of bridge to be applied. Default value is 'Arc'. The value when set, applies to all the links that are drawn on the diagram. The links will bridge over the other link only when it's ZOrder value is high. The options include the following:* Arc* Gap* Square* Side2* Side3* Side4* Side5* Side6* Side7</td></tr>
+Specifies the type of bridge to be applied. Default value is 'Arc'. The value when set, applies to all the links that are drawn on the diagram. The links will bridge over the other link only when it's ZOrder value is high. The options include the following:
+<ul><li> Arc</li><li> Gap</li><li> Square</li><li> Side2</li><li>Side3</li><li>Side4</li><li>Side5</li><li>Side6</li><li>Side7</li></ul></td></tr>
 </table>
 
 
@@ -98,15 +96,12 @@ Me.diagram1.Model.BridgeStyle = BridgeStyle.Square
 
 {% endhighlight %}
 
-> Note: In the above code snippets, link refers to the instance of the Link node.
+N> In the above code snippets, link refers to the instance of the Link node.
 
 ## Line Routing
 
 When a link is drawn between two nodes, by enabling the LineRoutingEnabled property of that link and the diagram view, and if any other node is found in between them, the line will be automatically re-routed around those nodes.
 
-
-
-_Table_ _29_: Line Routing
 
 <table>
 <tr>
@@ -156,10 +151,9 @@ link.LineRoutingEnabled = True.Model.LineBridgeSize = 5
 
 {% endhighlight %}
 
-> Note:
->
->  In the above code snippet, link refers to the instance of the Link node.
->  Only when LineRoutingEnabled property is set to true, LineRouter properties will be enabled.
+N>  In the above code snippet, link refers to the instance of the Link node.
+N>
+N>  Only when LineRoutingEnabled property is set to true, LineRouter properties will be enabled.
 
 
 
@@ -353,12 +347,6 @@ Me.diagramWebControl1.Model.AppendChild(grp)
 
 
 
-
-
-_Figure_ _73_: Selecting a Group in a Diagram
-
-
-
 The grouping of nodes can be performed using ready-made API.
 
 
@@ -424,9 +412,6 @@ When you are drawing a Business Process Flow Diagram, using this support, you ca
 
 Tables for Properties and Methods
 
-
-
-_Table_ _30_: Properies Table
 
 <table>
 <tr>
@@ -631,11 +616,6 @@ NA</td></tr>
 ### Methods
 
 
-
-_Table_ _31_: Methods Table
-
-
-
 <table>
 <tr>
 <th>
@@ -646,25 +626,25 @@ Type </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-GetPosition</th><th>
-Gets the label position in the node coordinates.</th><th>
-Empty</th><th>
-NA</th><th>
-PointF</th><th>
-NA</th></tr>
+<td>
+GetPosition</td><td>
+Gets the label position in the node coordinates.</td><td>
+Empty</td><td>
+NA</td><td>
+PointF</td><td>
+NA</td></tr>
 <tr>
-<th>
-GetStringFormat</th><th>
-Creates a StringFormat object that encapsulates the properties of the text object.</th><th>
-Empty</th><th>
-NA</th><th>
-StringFormat</th><th>
-NA</th></tr>
+<td>
+GetStringFormat</td><td>
+Creates a StringFormat object that encapsulates the properties of the text object.</td><td>
+Empty</td><td>
+NA</td><td>
+StringFormat</td><td>
+NA</td></tr>
 </table>
 
 
-Adding a Label to an Application 
+#### Adding a Label to an Application 
 
 You can create label as illustrated in the following code example:
 
@@ -822,17 +802,10 @@ diagram1.Model.AppendChild(node)
 
 ![](Customizing-Nodes_images/Customizing-Nodes_img5.png)
 
-
-
-_Figure_ _74_: Label
-
 ## Label Orientation
 
 This feature lets the user to specify the orientation of a node label. There are two orientation modes, Horizontal, which displays the label horizontally, and Auto, which rotates the label based on the node or connector rotation angle.
 
-
-
-_Table_ _32_: Orientation Properties
 
 <table>
 <tr>

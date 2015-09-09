@@ -46,18 +46,15 @@ To view the samples, follow the steps below:
 
 
 
-![](Installation-And-Deployment_images/Installation-And-Deployment_img1.png)
+   ![](Installation-And-Deployment_images/Installation-And-Deployment_img1.png)
 
-
-
-_Figure_ _2_: Essential Studio Dashboard
 
 
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Form Sample Browser window is displayed.
 
 
-> Note: You can view the samples in any of the following three ways:
+N> You can view the samples in any of the following three ways:
 >
 > 1. Run Samples - Click to view the locally installed samples
 > 2. Online Samples - Click to view online samples

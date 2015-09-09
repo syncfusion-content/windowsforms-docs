@@ -105,8 +105,6 @@ Click DataBound Grid to display its properties in PropertyGrid. Set these proper
 
 
 
-_Table 7: Properties_
-
 <table>
 <tr>
 <th>

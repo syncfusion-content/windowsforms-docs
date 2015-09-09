@@ -26,10 +26,6 @@ The Edit control provides support to include a built-in status bar at the bottom
 
 
 
-_Figure_ _73: Status Bar and Status Bar Panels in the Edit Control
-
-
-
  In addition to the built-in panels, any custom text can also be displayed in the Status Bar Panels.
 
 
@@ -107,10 +103,6 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 
 
-_Figure_ _74: Sizing Gripper in the Status Bar
-
-
-
 ### Visibility Settings 
 
 The StatusBar feature in the Edit control can be turned on by setting the StatusBarSettings.Visible property to True. By default, this property is set to False. The individual Status Bar Panels can be optionally shown or hidden by using the Visible property corresponding to the respective panel.
@@ -179,12 +171,6 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 {% endhighlight %}
 
 
-
-
-_Figure_ _75: Edit Control with Office2007 Visual Style
-
-
-
 Both the Office2007 and Office2010 styles have three color schemes:
 
 
@@ -223,9 +209,6 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Syncfusion.Windows.For
 
 {% endhighlight %}
 
-
-
-_Figure_ _76: Edit Control with Office 2007 Visual Style and Blue Color Scheme
 
 
 

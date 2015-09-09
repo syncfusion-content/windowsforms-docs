@@ -3,7 +3,7 @@ layout: post
 title: Creating-Currency-TextBox
 description: creating currency textbox
 platform: WindowsForms
-control: Editors Package
+control: CurrencyTextbox
 documentation: ug
 ---
 

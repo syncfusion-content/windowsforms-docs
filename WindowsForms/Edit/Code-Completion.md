@@ -86,8 +86,6 @@ End Sub
 
 {% endhighlight %}
 
-### See Also
-
 
 ## AutoReplace Triggers
 
@@ -101,15 +99,10 @@ The AutoReplace Trigger keys are defined within the language definitions. This m
 
 
 
-_Figure_ _12: "for" has been incorrectly typed as "fro"
-
 
 
 ![](Code-Completion_images/Code-Completion_img2.jpeg)
 
-
-
-_Figure_ _13: After typing '(' the incorrect token "fro" is replaced with the correct token "for"
 
 
 
@@ -187,11 +180,9 @@ The words to be replaced can also be defined within the language definition in t
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
+[AutoComplete Support](/windowsforms/edit/code-completion#autocomplete-support)
 
-
-AutoComplete Support
-
-
+{% endseealso %}
 

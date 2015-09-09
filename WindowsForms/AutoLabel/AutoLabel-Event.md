@@ -10,8 +10,6 @@ documentation: ug
 
 A detailed explanation about the PropertyChanged event is given in the following section.
 
-Table 389: Event Table
-
 <table>
 <tr>
 <th>
@@ -31,7 +29,7 @@ The event handler receives an argument of type SyncfusionPropertyChangedEventArg
 
 
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -42,6 +40,7 @@ private void autoLabel1_PropertyChanged(object sender, Syncfusion.ComponentModel
 Console.WriteLine(" PropertyChanged event is raised");
 
 }
+
 {% endhighlight %}
 
 

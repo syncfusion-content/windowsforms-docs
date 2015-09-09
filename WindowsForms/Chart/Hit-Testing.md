@@ -28,11 +28,6 @@ The below figure shows a chart where the tooltip text for each point shows the c
 
 
 
-
-_Figure_ _366_: _Chart displaying Coordinate value at a Client Point_
-
-
-
 Code snippet for the above sample
 
 {% highlight c# %}
@@ -137,8 +132,6 @@ End Sub
 ![](Hit-Testing_images/Hit-Testing_img2.jpeg)
 
 
-_Figure_ _367_: _Legend Item Identified using GetItemBy Method_
-
 ## Chart Area Bounds
 
 ### Full Chart Area Bounds
@@ -188,9 +181,6 @@ End Sub
 
 ![](Hit-Testing_images/Hit-Testing_img3.jpeg)
 
-_Figure_ _368_: _Chart Area Bounds in Red_
-
-
 
 ### Chart Plot Area Bounds
 
@@ -238,6 +228,3 @@ End Sub
 
 
 ![](Hit-Testing_images/Hit-Testing_img4.jpeg)
-
-
-_Figure_ _369_: _Chart Plot Area Bounds in Red_

@@ -3,7 +3,7 @@ layout: post
 title: How to find whether a particular docked control is hidden or not
 description: How to find whether a particular docked control is hidden or not
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -14,13 +14,11 @@ This can be achieved using the below method.
 
 GetHiddenOnLoad - This method returns a value which indicates whether the specified control is hidden or not. The docked control should be passed as a parameter.
 
-Table 107: Parameter Table
-
 <table>
 <tr>
-<td>
-Parameter</td><td>
-Description</td></tr>
+<th>
+Parameter</th><th>
+Description</th></tr>
 <tr>
 <td>
 Ctrl</td><td>

@@ -56,8 +56,6 @@ The conventions listed below will help you to quickly identify the important sec
 
 
 
-_Table_ _1_: _Conventions_
-
 <table>
 <tr>
 <th>
@@ -102,8 +100,6 @@ The prerequisites details are listed in the following table.
 
 
 
-_Table_ _2_: _Prerequisites_
-
 <table>
 <tr>
 <th>
@@ -133,7 +129,7 @@ Visual Studio 2013</li>
 
 The compatibility details are listed in the following table.
 
-_Table_ _3_: _Compatibility_
+
 
 <table>
 <tr>
@@ -175,11 +171,11 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/chart/overview>' | markdownify }} (Navigate to the Chart for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+Online{{ '<http://docs.syncfusion.com/windowsforms/chart/overview>' | markdownify }} (Navigate to the Chart for Windows Forms User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '[](http://docs.syncfusion.com/windowsforms)' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Chart_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://docs.syncfusion.com/cr/windowsforms>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Chart_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

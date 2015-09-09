@@ -49,15 +49,14 @@ Class Hierarchy
 
 WTextRange
 
-|
+&brvbar;
 
 WField
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 75 : Public Constructors
 
 <table>
 <tr>
@@ -71,9 +70,7 @@ Initializes a new instance of the WField class. </td></tr>
 </table>
 
 
-Public Properties
-
-Table 76 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -155,11 +152,11 @@ Class Hierarchy
 
 WTextRange
 
-|
+&brvbar;
 
-       WField
+WField
 
-    	    |    
+&brvbar;    
 
 WMergeField
 
@@ -167,7 +164,6 @@ WMergeField
 
 Public Constructors
 
-Table 77 : Public Constructors
 
 <table>
 <tr>
@@ -183,7 +179,6 @@ Initializes a new instance of the WMergeField class. </td></tr>
 
 Public Properties
 
-Table 78 : Public Properties
 
 <table>
 <tr>
@@ -261,7 +256,7 @@ WEmbedField class represents an embed field type in a Word document. Word does n
 
 
 
-> Note: Modification of WEmbedField properties can cause document corruption or incorrect document preservation. DocIO preserves only fields of this type.
+N> Modification of WEmbedField properties can cause document corruption or incorrect document preservation. DocIO preserves only fields of this type.
 
 
 
@@ -269,19 +264,17 @@ Class Hierarchy
 
 WTextRange
 
-|
+&brvbar;
 
 WField
 
-|
+&brvbar;
 
-    		 WEmbedField
+ WEmbedField
 
 
 
-Public Properties
-
-Table 79 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -301,9 +294,7 @@ WSeqField class represents a sequence field type in the Word document. To add a 
 
 You can use the NumberFormat property to set the numbering format for the fields and the CaptionName property to set the name of the caption.
 
-Public Constructors
-
-Table 80 : Public Constructors
+#### Public Constructors
 
 <table>
 <tr>
@@ -314,9 +305,9 @@ Description</th></tr>
 WSeqField.WSeqField (IWordDocument)</td><td>
 Initializes a new instance of the WSeqField class.</td></tr>
 </table>
-Public Properties
 
-Table 81 : Public Properties
+#### Public Properties
+
 
 <table>
 <tr>
@@ -430,7 +421,7 @@ This field displays the current date-time, in the format specified by date-time 
 
 
 
-Syntax
+#### Syntax
 
 { DATE [\@ "Date-Time Picture"] }
 
@@ -438,25 +429,25 @@ Syntax
 
 
 
-DOCVARIABLE 
+### DOCVARIABLE 
 
 This field displays the value of the specified document variable.
 
 
 
-Syntax
+#### Syntax
 
 {DOCVARIABLE "Name”}
 
 
 
-DOCPROPERTY
+### DOCPROPERTY
 
 This field displays the value of the specified document property.
 
 
 
-Syntax
+#### Syntax
 
 {DOCPROPERTY "Name”}
 
@@ -468,79 +459,79 @@ This field compares two expressions and displays the result as "1" when the resu
 
 
 
-Syntax
+#### Syntax
 
 {COMPARE Expression1 Operator Expression2} 
 
 
 
-IF
+### IF
 
 This field compares two expressions and displays the true text when the result of comparison is true, or displays the false text when the result of comparison is false.
 
 
 
-Syntax
+#### Syntax
 
 {IF Expression1 Operator Expression2 TrueText FalseText}
 
 
 
-NEXTIF
+### NEXTIF
 
 This field compares two expressions. When the comparison result is true, the next data record is merged into the current merge document. When the comparison result is false, the next data record is merged into a new merge document.
 
 
 
-Syntax
+####Syntax
 
 {NEXTIF Expression1 Operator Expression2}
 
 
 
-MERGESEQ
+### MERGESEQ
 
 This field numbers all the merged records of a mail merge. The number may be different from the value that is inserted by the MERGEREC field.
 
 
 
-Syntax 
+#### Syntax 
 
 {MERGESEQ}
 
 
 
-MERGEREC
+### MERGEREC
 
 This field displays the ordinal position of the current data record in a merged document. The number reflects any sorting or filtering that you applied to the data source before the merge. 
 
 
 
-Syntax 
+#### Syntax 
 
 {MERGEREC}
 
 
 
-SECTION
+### SECTION
 
 This field displays the number of the current section. 
 
 
 
-Syntax 
+#### Syntax 
 
 {SECTION}
 
 
 
-Cross-Reference
+### Cross-Reference
 
 Insert the reference to the Bookmark.
 
 
 
-Syntax 
+#### Syntax 
 
 REF BookmarkName [Switches]
 
@@ -548,9 +539,9 @@ REF BookmarkName [Switches]
 
 
 
-> Note: Page number and Paragraph number options are not supported in Silverlight, WinRT and Windows Phone applications while updating Cross reference field.
+N> Page number and Paragraph number options are not supported in Silverlight, WinRT and Windows Phone applications while updating Cross reference field.
 
-Known Limitations
+### Known Limitations
 
 The following are the known limitations:
 

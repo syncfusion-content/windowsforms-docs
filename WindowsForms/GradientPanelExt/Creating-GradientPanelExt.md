@@ -30,13 +30,13 @@ The following steps are involved in creating the GradientPanelExt through the de
 
 
 5. The primitive alignment and position can be defined here.
-   > Note: The properties for the primitives can be set individually using the property grid as well.
+   N> The properties for the primitives can be set individually using the property grid as well.
 
 6. Build and run the application.
 
    ![](GradientPanelExt_images/Overview_img376.png)
 
-   {:.prettyprint}
+
    
    
 ## Through Code
@@ -49,172 +49,175 @@ The following steps will guide you to create a GradientPanelExt through code.
 
 
 
+   ~~~ cs
+
+		using Syncfusion.Windows.Forms.Tools;
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
 
-					using Syncfusion.Windows.Forms.Tools;
 
+		Imports Syncfusion.Windows.Forms.Tools
 
-
-
-
-
-
-					Imports Syncfusion.Windows.Forms.Tools
-
-
+   ~~~
+   {:.prettyprint }
 
 4. Create an instance GradientPanelExt and add it to the Windows Form, defining its various properties and primitives.
 
 
-
+   ~~~ vbnet
 
          
-					//Adding the GradientPanelExt
+			//Adding the GradientPanelExt
 
-					GradientPanelExt gpe = new GradientPanelExt();
+			GradientPanelExt gpe = new GradientPanelExt();
 
-					gpe.Dock = DockStyle.Fill;
+			gpe.Dock = DockStyle.Fill;
 
-					gradientPanelExt1.CornerRadius = 10;
+			gradientPanelExt1.CornerRadius = 10;
 
-					this.Controls.Add(gpe);
+			this.Controls.Add(gpe);
 
 
 
-					//Defining Gradient Colors
+			//Defining Gradient Colors
 
-					gpe.BackColor = System.Drawing.Color.Transparent;
+			gpe.BackColor = System.Drawing.Color.Transparent;
 
-					gpe.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new System.Drawing.Color[] {
+			gpe.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new System.Drawing.Color[] {
 
-					  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon,System.Drawing.Color.LightCoral});
+			  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon,System.Drawing.Color.LightCoral});
 
 
 
-					//button1
+			//button1
 
-					Button button1 = new Button();
+			Button button1 = new Button();
 
-					button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 
-					button1.Text = "Button";
+			button1.Text = "Button";
 
 
 
-					//hostPrimitive1
+			//hostPrimitive1
 
-					HostPrimitive hostPrimitive1 = new HostPrimitive();
+			HostPrimitive hostPrimitive1 = new HostPrimitive();
 
-					hostPrimitive1.HostControl = button1;
+			hostPrimitive1.HostControl = button1;
 
 
 
-					//progressBarAdv1
+			//progressBarAdv1
 
-					ProgressBarAdv progressBarAdv1= new ProgressBarAdv();
+			ProgressBarAdv progressBarAdv1= new ProgressBarAdv();
 
-					progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube;
+			progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube;
 
 
 
-					//textPrimitive1
+			//textPrimitive1
 
-					TextPrimitive textPrimitive1= new TextPrimitive();
+			TextPrimitive textPrimitive1= new TextPrimitive();
 
-					textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
+			textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
 
-					textPrimitive1.Text = "ProgressbarAdv";
+			textPrimitive1.Text = "ProgressbarAdv";
 
 
 
-					//textPrimitive2
+			//textPrimitive2
 
-					TextPrimitive textPrimitive2 = new TextPrimitive();
+			TextPrimitive textPrimitive2 = new TextPrimitive();
 
-					textPrimitive2.Text = "Windows Forms Button";
+			textPrimitive2.Text = "Windows Forms Button";
 
 
 
-					//Adding Primitives
+			//Adding Primitives
 
-					gpe.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] { hostPrimitive1, textPrimitive1,  textPrimitive2});
+			gpe.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] { hostPrimitive1, textPrimitive1,  textPrimitive2});
 
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ vbnet
 
 
+			'Adding the GradientPanelExt
 
+			Private gpe As GradientPanelExt = New GradientPanelExt()
 
-					'Adding the GradientPanelExt
+			Private gpe.Dock = DockStyle.Fill
 
-					Private gpe As GradientPanelExt = New GradientPanelExt()
+			Private gradientPanelExt1.CornerRadius = 10
 
-					Private gpe.Dock = DockStyle.Fill
+			Me.Controls.Add(gpe)
 
-					Private gradientPanelExt1.CornerRadius = 10
 
-					Me.Controls.Add(gpe)
 
+			'Defining Gradient Colors
 
+			Private gpe.BackColor = System.Drawing.Color.Transparent
 
-					'Defining Gradient Colors
+			Private gpe.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New                           System.Drawing.Color() { System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
 
-					Private gpe.BackColor = System.Drawing.Color.Transparent
 
-					Private gpe.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New                           System.Drawing.Color() { System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
 
+			'button1
 
+			Private button1 As Button = New Button()
 
-					'button1
+			Private button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
 
-					Private button1 As Button = New Button()
+			Private button1.Text = "Button"
 
-					Private button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
 
-					Private button1.Text = "Button"
 
+			'hostPrimitive1
 
+			Private hostPrimitive1 As HostPrimitive = New HostPrimitive()
 
-					'hostPrimitive1
+			Private hostPrimitive1.HostControl = button1
 
-					Private hostPrimitive1 As HostPrimitive = New HostPrimitive()
 
-					Private hostPrimitive1.HostControl = button1
 
+			'progressBarAdv1
 
+			Private progressBarAdv1 As ProgressBarAdv = New ProgressBarAdv()
 
-					'progressBarAdv1
+			Private progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
 
-					Private progressBarAdv1 As ProgressBarAdv = New ProgressBarAdv()
 
-					Private progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
 
+			'textPrimitive1
 
+			Private textPrimitive1 As TextPrimitive = New TextPrimitive()
 
-					'textPrimitive1
+			Private textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
 
-					Private textPrimitive1 As TextPrimitive = New TextPrimitive()
+			Private textPrimitive1.Text = "ProgressbarAdv"
 
-					Private textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
 
-					Private textPrimitive1.Text = "ProgressbarAdv"
 
+			'textPrimitive2
 
+			Private textPrimitive2 As TextPrimitive = New TextPrimitive()
 
-					'textPrimitive2
+			Private textPrimitive2.Text = "Windows Forms Button"
 
-					Private textPrimitive2 As TextPrimitive = New TextPrimitive()
 
-					Private textPrimitive2.Text = "Windows Forms Button"
 
+			'Adding Primitives
 
+			gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2, textPrimitive1,textPrimitive2})
 
-					'Adding Primitives
-
-					gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2, textPrimitive1,                      textPrimitive2})
-
-
+   ~~~
+   {:.prettyprint }
 
 5. Run and build the application to view the output.
 
-   {:.prettyprint}

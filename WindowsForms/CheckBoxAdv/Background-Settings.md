@@ -13,7 +13,6 @@ The background settings of the CheckBoxAdv are discussed below.
 
 The CheckBoxAdv can be provided with a gradient background using the properties given below.
 
-Table 400: Property Table
 
 <table>
 <tr>

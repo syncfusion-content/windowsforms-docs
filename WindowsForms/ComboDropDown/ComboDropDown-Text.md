@@ -3,7 +3,7 @@ layout: post
 title: ComboDropDown-Text
 description: combodropdown text
 platform: WindowsForms
-control: Editors Package
+control: ComboDropDown
 documentation: ug
 ---
 
@@ -14,8 +14,6 @@ ComboDropDown control supports the properties which can change the appearance an
 ![](Overview_images/Overview_img284.jpeg) 
 
 
-
-Table 211: Property Table
 
 <table>
 <tr>

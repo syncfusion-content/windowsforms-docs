@@ -55,7 +55,6 @@ End Sub
 
 The below table list the events that are raised for border changes.
 
-Table 149: Property Table
 
 <table>
 <tr>
@@ -118,7 +117,6 @@ End Sub
 
 The below table list the events that are available for the ButtonEdit Child Buttons control.
 
-Table 150: Events Table
 
 <table>
 <tr>

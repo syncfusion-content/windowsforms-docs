@@ -12,7 +12,6 @@ documentation: ug
 
 This event is raised every time a color is picked in the ColorPickerUIAdv control. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
 
-Table 09: Member Table
 
 <table>
 <tr>
@@ -55,8 +54,6 @@ BackColor = colorPickerUIAdv1.SelectedItem.Color
 ## Item Selection 
 
 When mouse is hovered over a particular color item, ItemSelection event will be raised. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
-
-Table 210: Member Table
 
 <table>
 <tr>

@@ -3,7 +3,7 @@ layout: post
 title: How to determine whether any two controls are in the same tabbed group
 description: How to determine whether any two controls are in the same tabbed group
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

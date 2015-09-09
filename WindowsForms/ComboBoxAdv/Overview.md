@@ -3,11 +3,11 @@ layout: post
 title: ComboBoxAdv
 description: comboboxadv-Overview
 platform: WindowsForms overview
-control: Editors Package
+control: ComboBoxAdv
 documentation: ug
 ---
 
-# ComboBoxAdv
+# Overview
 
 ComboBoxAdv is an advanced combo box control that provides a similar object model as the framework of the ComboBox control, with a lot of additional features. ComboBoxAdv is inherited from ComboBoxBaseDataBound, derived from [ComboBoxBase](/windowsforms/comboboxbase/overview) control.
 

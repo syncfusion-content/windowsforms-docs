@@ -3,7 +3,7 @@ layout: post
 title: Event-handling
 description: event handling
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxAdv
 documentation: ug
 ---
 
@@ -13,7 +13,6 @@ documentation: ug
 
 The events present in the ComboxBox can be applied for ComboxBoxAdv control. 
 
-Table 222: Properties
 
 <table>
 <tr>
@@ -45,7 +44,6 @@ Handled before the dropdown is shown.</td></tr>
 
 The ComboBoxAdv handles different events for the different user interaction scenarios. The occurrence and order of the events are tabulated as follows. 
 
-Table 223: Events Table
 
 <table>
 <tr>
@@ -119,10 +117,10 @@ No</td><td>
 No</td><td>
 No</td></tr>
 </table>
- 
- Populating the ComboBoxAdv
 
-To populate the ComboBoxAdv containing the predefined percent values with other percent values and allowing the text field of the ComboBoxAdv to behave like PercentTextBox, follow thye given steps:
+### Populating the ComboBoxAdv
+
+To populate the ComboBoxAdv containing the predefined percent values with other percent values and allowing the text field of the ComboBoxAdv to behave like PercentTextBox, follow the given steps:
 
 * Derive a new class from the existing Syncfusion ComboBoxAdv. Override as shown here and give a new definition for TextBox.
 

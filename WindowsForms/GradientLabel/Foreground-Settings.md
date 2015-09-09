@@ -15,7 +15,6 @@ This section illustrates the foreground settings of the GradientLabel control.
 
 Disabled text can be drawn active using the below given property.
 
-Table 391: Property Table
 
 <table>
 <tr>

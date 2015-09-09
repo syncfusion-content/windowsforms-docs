@@ -3,7 +3,7 @@ layout: post
 title: How to get the docking group details
 description: How to get the docking group details
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

@@ -10,7 +10,6 @@ documentation: ug
 
 The text for the DomainUpDownExt control can be specified in String Collection Editor. This section discusses the properties which deals with this text.
 
-Table256: Property Table
 
 <table>
 <tr>

@@ -3,7 +3,7 @@ layout: post
 title: Advanced-Features
 description: advanced features
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -37,13 +37,11 @@ The following sequence lists the steps involved in setting up a docking layout o
 6. The DockingClientPanel will now function as a proxy for the form's client surface and all controls originally intended to be placed on the form should henceforth be located on the DockingClientPanel; any anchoring / layout features for the child controls should be set relative to the DockingClientPanel. 
 7. To add controls directly to the form, the SizeToFit property can temporarily be turned off within the designer and the form resized to expose its surface. At run-time, the SizeToFit property is always enabled. 
 
-	Table 58: DockingClientPanel Property Table
-
 	<table>
 	<tr>
-	<td>
-	DockingClientPanel Property</td><td>
-	Description</td></tr>
+	<th>
+	DockingClientPanel Property</th><th>
+	Description</th></tr>
 	<tr>
 	<td>
 	SizeToFit</td><td>
@@ -165,13 +163,11 @@ The background and foreground of the DockingClientPanel control can be customize
 
 Background color of the control can be set using the BackColor property. Background image for the control can be specified using BackgroundImage property and image layout is set through BackgroundImageLayout property. Below are the code snippets to set these properties programmatically.
 
-Table 59: DockingClientPanel Property Table
-
 <table>
 <tr>
-<td>
-DockingClientPanel Property</td><td>
-Description</td></tr>
+<th>
+DockingClientPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -194,7 +190,9 @@ Indicates the background image layout used for the control.</td></tr>
 
 this.dockingClientPanel1.BackColor = System.Drawing.Color.AliceBlue;
 
-this.dockingClie{_
+this.dockingClientPanel1.BackgroundImage = CType((Resources.GetObject("dockingClientPanel1.BackgroundImage")), System.Drawing.Image);
+
+this.dockingClientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 {% endhighlight %}
 
 
@@ -215,13 +213,11 @@ Me.dockingClientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.
 
 The font used to display the text in the control is set through Font property and the forecolor through ForeColor property. Below are the code snippets to set these two properties programmatically.
 
-Table 60: DockingClientPanel Property Table
-
 <table>
 <tr>
-<td>
-DockingClientPanel Property</td><td>
-Description</td></tr>
+<th>
+DockingClientPanel Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Font</td><td>
@@ -266,8 +262,6 @@ Below image illustrates a DockingClientPanel with the foreground and background 
 ### Scroll properties
 
 When the control contents are larger than its visible area, the scroll bars will automatically appear, by enabling AutoScroll property. The margin for the control during autoscroll is specified using AutoScrollMargin property and the minimum size for auto scroll area can be specified using the AutoScrollMinSize property.
-
-Table 61: DockingClientPanel Property Table
 
 <table>
 <tr>
@@ -323,8 +317,6 @@ Me.dockingClientPanel1.AutoScrollMinSize = New System.Drawing.Size(1, 1)
 
 AutoSize property when set, will allow the control to automatically size itself to fit its contents. The resize mode can be specified using AutoSizeMode property.
 
-Table 62: DockingClientPanel Property Table
-
 <table>
 <tr>
 <th>
@@ -379,7 +371,6 @@ The docking windows framework has a fully built-in serialization feature that pr
 
 The dock state of a control can be persisted by setting the PersistState property of Docking manager. This information is stored in the Isolated storage.
 
-Table 63: DockingClientPanel Property Table
 
 <table>
 <tr>
@@ -420,7 +411,6 @@ The default auto serialization implementation for the DockingManager uses a sing
 
 #### LoadDockState
 
-Table 64: Methods Table
 
 <table>
 <tr>
@@ -470,7 +460,6 @@ Me.dockingManager1.LoadDockState(serializer, this.listBox1)
 
 #### SaveDockState
 
-Table 65: Methods Table
 
 <table>
 <tr>
@@ -760,7 +749,6 @@ Me.dockingManager1.LoadDesignerDockState()
 
 GetSerializedControls - Calling the GetSerializedControls method will return the serialized control collection enumerator in the specified serializer. This can be done through code as follows.
 
-Table 66: Parameter Table
 
 <table>
 <tr>
@@ -817,22 +805,20 @@ You can convert the docked control to an MDI child form and vice versa by referr
 3. Set the properties required and add the controls to the form. Set the IsMdiContainer property of the form to true.
 4. Call the SetAsMDIChild method. This method sets the specified docked control as an MDI child.
 
-		Table 67: Methods Table
-
-		<table>
-		<tr>
-		<td>
-		Methods</td><td>
-		Description</td></tr>
-		<tr>
-		<td>
-		SetAsMDIChild </td><td>
-		Sets the control specified in Ctrl parameter as MDI child when bsetMDI is set to true. The parameter are, Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating true or false.</td></tr>
-		<tr>
-		<td>
-		SetAsMDIChild(Overloaded)</td><td>
-		Sets the specified docked control as MDI child with the new size provided by using the Layout parameter.Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating true or false.Layout - Stores a set of four integers that represents the location and size of a rectangle.</td></tr>
-		</table>
+   <table>
+   <tr>
+   <td>
+   Methods</td><td>
+   Description</td></tr>
+   <tr>
+   <td>
+   SetAsMDIChild </td><td>
+   Sets the control specified in Ctrl parameter as MDI child when bsetMDI is set to true. The parameter are, Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating true or false.</td></tr>
+   <tr>
+   <td>
+   SetAsMDIChild(Overloaded)</td><td>
+   Sets the specified docked control as MDI child with the new size provided by using the Layout parameter.Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating true or false.Layout - Stores a set of four integers that represents the location and size of a rectangle.</td></tr>
+   </table>
 
 
 
@@ -1029,7 +1015,6 @@ AddToTargetManagersList method will let you add the DockingManager to the Target
 
 RemoveFromTargetManagersList method, removes the DockingManager from the TargetManagers List.
 
-Table 68: Methods Table
 
 <table>
 <tr>

@@ -19,7 +19,7 @@ When you want to narrow down the filtering and get more accurate data, you can u
 
 ## Properties
 
-Table 125: Property Table
+_Property Table_
 
 <table>
 <tr>

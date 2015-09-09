@@ -47,7 +47,6 @@ The appearance and behavior settings, available for the ColorPickerUIAdv are dis
 
 By default ColorPickerUIAdv control has Office2007 look and feel. 
 
-Table208: Property Table
 
 <table>
 <tr>

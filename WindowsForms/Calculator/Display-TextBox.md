@@ -13,7 +13,7 @@ The Calculator control has a display text area on its top corner, which displays
 
 The below properties controls the behavior of the display area.
 
-Table 152: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -67,7 +67,6 @@ Me.calculatorControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Dr
 
 The behavior of the TextBox value can be controlled using the below properties.
 
-Table 153: Property Table
 
 <table>
 <tr>
@@ -113,7 +112,11 @@ Me.calculatorControl1.UseUserOverride = True
 
 {% endhighlight %}
 
+{% seealso %}
 
+[How to customize the calculator display text area to use NumberGroupSeparator?](http://docs.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
+
+{% endseealso %}
 
 
 

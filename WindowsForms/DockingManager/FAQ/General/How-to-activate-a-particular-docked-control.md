@@ -3,7 +3,7 @@ layout: post
 title: How to activate a particular docked control
 description: How to activate a particular docked control
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -12,13 +12,11 @@ documentation: ug
 
 You can call the ActivateControl method inside NewDockStateEndLoad event to achieve this.
 
-Table 97: Methods Table
-
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th<th>
+Description</th></tr>
 <tr>
 <td>
 ActivateControl</td><td>

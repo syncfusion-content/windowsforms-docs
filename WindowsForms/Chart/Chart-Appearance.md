@@ -34,8 +34,6 @@ Me.chartControl1.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Drawing.
 
 ![](Chart-Appearance_images/Chart-Appearance_img1.jpeg)
 
-_Figure_ _317_: _BackInterior = "LightBlue"_
-
 ### Inside the Plot Area
 
 Use the ChartArea.BackInterior to customize the background of the rectangular region where the points are plotted.
@@ -54,7 +52,6 @@ Me.chartControl1.ChartArea.BackInterior = New Syncfusion.Drawing.BrushInfo(Syste
 
 ![](Chart-Appearance_images/Chart-Appearance_img2.jpeg)
 
-_Figure_ _318_: _ChartArea.BackInterior = "SkyBlue"_ 
 
 ### Inside the Chart Area
 
@@ -76,17 +73,13 @@ this.chartControl1.ChartInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.D
 
 ![](Chart-Appearance_images/Chart-Appearance_img3.jpeg)
 
-_Figure_ _319_: _ChartInterior = "LightBlue"_
+
 
 ## Background Image
 
 ### Chart Settings
 
 In Windows Forms, use the BackgroundImage property to specify a custom image as the background of the chart. The image layout can also be specified using the property below.
-
-
-
-_Table_ _138_: _Chart Settings_
 
 <table>
 <tr>
@@ -122,13 +115,13 @@ Me.ChartControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretc
 
 ![](Chart-Appearance_images/Chart-Appearance_img4.jpeg)
 
-_Figure_ _320_: _Background Image set for the Chart_
+
 
 ### ChartArea Background Image
 
 The chart area can also be rendered with a custom background image and this can be set using the ChartAreaBackImage property. 
 
-_Table_ _139_: _ChartAreaBackImage_
+_ChartAreaBackImage_
 
 <table>
 <tr>
@@ -156,7 +149,6 @@ Me.ChartControl1.ChartAreaBackImage = myCustomImage
 
 ![](Chart-Appearance_images/Chart-Appearance_img5.jpeg)
 
-_Figure_ _321_: _Background Image set for the Chart Area_ 
 
 ### Chart Interior Background Image
 
@@ -176,7 +168,6 @@ Me.ChartControl1.ChartInteriorBackImage = myCustomImage
 
 ![](Chart-Appearance_images/Chart-Appearance_img6.jpeg)
 
-_Figure_ _322_: _Background Image set for the Chart Interior_
 
 ## Border and Margins
 
@@ -184,7 +175,7 @@ _Figure_ _322_: _Background Image set for the Chart Interior_
 
 Borders of the chart area can be customized using the below border properties.
 
-_Table_ _140_: _Chart Area Border Properties_
+_Chart Area Border Properties_
 
 <table>
 <tr>
@@ -206,7 +197,7 @@ Specifies the width of the border.</td></tr>
 </table>
 
 
-_Table_ _141_: _BorderAppearance_
+_BorderAppearance_
 
 <table>
 <tr>
@@ -283,9 +274,7 @@ Me.chartControl1.BorderAppearance.SkinStyle = Syncfusion.Windows.Forms.Chart.Cha
 
 The chart area can also be rendered with a shadow. Turn this feature on, by enabling the ChartAreaShadow property. 
 
-
-
-_Table_ _142_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -328,15 +317,12 @@ Me.chartControl1.ShadowWidth = 7
 
 ![](Chart-Appearance_images/Chart-Appearance_img7.png)
 
-_Figure_ _323_: _ChartAreaShadow = "True"_
+
 
 ### Chart Area Margins
 
 Margin for the chart area can be controlled using ChartAreaMargins property. It indicates the margin that will be deduced from Chart Area's representation rectangle.
 
-
-
-_Table_ _143_: _Chart Area Margins_
 
 <table>
 <tr>
@@ -365,9 +351,6 @@ Me.ChartControl1.ChartAreaMargins = New Syncfusion.Windows.Forms.Chart.ChartMarg
 
 The margins for ChartPlotArea is specified in ChartPlotAreaMargins property. 
 
-
-
-_Table_ _144_: _ChartPlot Area Margins_
 
 <table>
 <tr>
@@ -413,9 +396,7 @@ Me.chartControl1.ChartArea.ChartPlotAreaMargins.Left = 200
 
 The spacing between elements in the chart is specified using the ElementsSpacing property. For example, the space between the chart right border and legend right border if LegendPosition is set to Right.
 
-
-
-_Table_ _145_: _Properties_
+ _Properties_
 
 <table>
 <tr>
@@ -438,9 +419,6 @@ Using the ChartControl.Text property, users can provide the title that appears a
 
 Here are some properties that affect the title text in the chart.
 
-
-
-_Table_ _146_: _Chart Title_
 
 <table>
 <tr>
@@ -496,15 +474,12 @@ Me.chartControl1.TextPosition = ChartTextPosition.Top
 
 ![](Chart-Appearance_images/Chart-Appearance_img8.jpeg)
 
-_Figure_ _324_: _Illustrates changes affecting the Title Text_
 
 General Text Related settings
 
 The following text related properties affect all the text rendered in the chart.
 
-
-
-_Table_ _147_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -523,15 +498,17 @@ Specifies how chart elements should be rendered. Possible values:* AntiAlias * H
 
 
 
-### See Also
+ {% seealso %}
 
-Axis Label Text Formatting, Appearance and Positioning, (for info on changing axis label text settings)
+[Axis Label Text Formatting, Appearance and Positioning](/windowsforms/chart/chart-axes#axis-labels) (for info on changing axis label text settings)
 
-Customizing Label Text, Intersecting Labels, Grouping Labels, (for info on changing axis label text settings)
+[Customizing Label Text](/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](/windowsforms/chart/chart-axes#grouping-labels), (for info on changing axis label text settings)
 
-Series Customization/Font, (for info on changing series text settings)
+[Series Customization/Font](/windowsforms/chart/chart-series#series-customization), (for info on changing series text settings)
 
-Chart Legend (for info on changing legend text settings)
+[Chart Legend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend) (for info on changing legend text settings)
+
+ {% endseealso %}
 
 ## Multiple Chart Titles
 
@@ -561,7 +538,6 @@ chartControl1.Title.Font = New System.Drawing.Font("Candara", 9F, System.Drawing
 
 ![](Chart-Appearance_images/Chart-Appearance_img9.jpeg)
 
-_Figure_ _325_: _Chart Title Set_
 
 The above default chart title is simply the first in the list of titles that can be specified for the Chart.
 
@@ -575,7 +551,7 @@ The above default chart title is simply the first in the list of titles that can
 
 Below listed properties will help you to modify the positioning of the Chart Title.
 
-_Table_ _148_: _Titles Positioning_
+_Titles Positioning_
 
 <table>
 <tr>
@@ -585,24 +561,22 @@ Description</th></tr>
 <tr>
 <td>
 Position</td><td>
-Specifies the position relative to the chart at which to render the chart title panel.* Top - above the chart(Default setting) * Left - left of the chart* Right - right of the chart* Bottom - below the chart* Floating - will not be docked to any specific location. Can be docked manually by dragging the title panel.</td></tr>
+Specifies the position relative to the chart at which to render the chart title panel.<ul><li> Top - above the chart(Default setting)</li><li> Left - left of the chart* Right - right of the chart</li><li>Bottom - below the chart</li><li>Floating - will not be docked to any specific location. Can be docked manually by dragging the title panel.</ul></li></td></tr>
 <tr>
 <td>
 <br>Alignment</td><td>
-When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.* Center - will be aligned to center. Defaultsetting.* Far - will be aligned Far.* Near - will be aligned Near.</td></tr>
+When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.<ul><li> Center - will be aligned to center. Defaultsetting.</li><li> Far - will be aligned Far.</li><li> Near - will be aligned Near.</ul></li></td></tr>
 <tr>
 <td>
 <br>Behavior</td><td>
-Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.* Movable - It is movable.* All - It is movable and dockable.* None - It is neither movable nor dockable.</td></tr>
+Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.<ul><li> Movable - It is movable.</li><li> All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</ul></li></td></tr>
 </table>
 
 ### Title Look and Feel
 
 There are several appearance options that can be applied on the ChartTitle instance as illustrated in this ChartTitle Collection Editor.
 
-'![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)
-
-_Figure_ _326_: _ChartTitle Collection Editor_
+![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)
 
 In code, you can add more titles to this list as follows.
 
@@ -644,7 +618,6 @@ Me.ChartControl1.Titles.Add(title)
 
 ![](Chart-Appearance_images/Chart-Appearance_img11.jpeg)
 
-_Figure_ _327_: _Chart with Multiple Chart Titles_
 
 ### Multiline Chart Title
 
@@ -652,7 +625,6 @@ You can now wrap the Chart titles and display them as multiline text. Set multil
 
 ![](Chart-Appearance_images/Chart-Appearance_img12.jpeg)
 
-_Figure_ _328_: _Multiline Title for Essential Chart_
 
 ## Custom Drawing
 
@@ -768,11 +740,12 @@ End Sub
 
 ![](Chart-Appearance_images/Chart-Appearance_img13.jpeg)
 
-_Figure_ _329_: _Chart with Custom Drawing - Arrows at the end of the Axes and a Diagonal Line_
 
-### See Also
+{% seealso %}
 
-#### Chart Area Bounds
+ [Chart Area Bounds](/windowsforms/chart/hit-testing#chart-area-bounds)
+ 
+ {% endseealso %}
 
 ## Watermark Support
 
@@ -782,7 +755,7 @@ Below are the WaterMark properties with descriptions.
 
 
 
-_Table_ _149_: _Watermark Properties_
+_Watermark Properties_
 
 <table>
 <tr>
@@ -848,8 +821,6 @@ Me.chartControl1.ChartArea.Watermark.ZOrder=ChartWaterMarkOrder.Behind;
 
 ![](Chart-Appearance_images/Chart-Appearance_img14.jpeg)
 
-_Figure_ _330_: _"Image" displayed as Watermark; Opacity = "60"; HorizontalAlignment = "Near"; VerticalAlignment = "Near"; ZOrder = "Behind"_
-
 ## Interlaced Grid Background
 
 Chart supports interlaced grid which draws alternative grid background in x-axis and y-axis. The color is also customizable.
@@ -878,7 +849,6 @@ Me.chartControl1.PrimaryYAxis.InterlacedGridInterior = new Syncfusion.Drawing.Br
 
 ![](Chart-Appearance_images/Chart-Appearance_img15.jpeg)
 
-_Figure_ _331_: _Interlaced Grid_
 
 The preceding image illustrates interlaced grid background for the chart.
 
@@ -918,7 +888,6 @@ chartControl1.PrimaryXAxis.SmallTicksPerInterval = 1
 
 {% endhighlight %}
 
-_Figure_ _332_: _Custom minor grid lines on x-axis._
 
 ## Chart Skins 
 
@@ -957,14 +926,12 @@ The following output is displayed when the Skins value is set to Office2007 Blac
 
 ![](Chart-Appearance_images/Chart-Appearance_img18.png)
 
-_Figure_ _333_: _Office2007 Black_
 
 The following output is displayed when the Skins value is set to Office2007 Blue.
 
 ![](Chart-Appearance_images/Chart-Appearance_img19.png)
 
 
-_Figure_ _334_: _Office2007 Blue_
 
 The following output is displayed when the Skins value is set to Office2007 Silver.
 
@@ -986,7 +953,7 @@ The following output is displayed when the Skins value is set to Marble.
 
 ![](Chart-Appearance_images/Chart-Appearance_img24.png)
 
-_Figure_ _339_: _Marble_
+
 
 The following output is displayed when the Skins value is set to Midnight.
 
@@ -1012,7 +979,7 @@ The following output is displayed when the Skins value is set to Vista.
 
 ![](Chart-Appearance_images/Chart-Appearance_img30.png)
 
-_Figure_ _345_: _Vista_
+
 
 The following output is displayed when the Skins value is set to VS2010.
 

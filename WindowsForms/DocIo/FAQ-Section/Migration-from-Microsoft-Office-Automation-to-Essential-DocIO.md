@@ -13,7 +13,7 @@ documentation: ug
 
 The Mail Merge feature can be used to generate reports and letters in MS Word. The following code examples show how to generate an employee report from an MDB data source using Office Automation and DocIO.
 
-Using MS Office Interop
+#### Using MS Office Interop
 
 Office Automation performs the Mail Merge by executing a SQL query on the Word document. The output of the Mail Merge can be sent to a new Word document. Alternatively, it can be sent to a printer, a fax machine, or forwarded to an e-mail address.
 
@@ -59,7 +59,7 @@ With doc.MailMerge.OpenDataSource(dataBase, nullobject, nullobject, nullobject,
 {%endhighlight%}
 
 
-Using DocIO
+#### Using DocIO
 
 DocIO performs Mail Merge using the following methods:
 
@@ -103,7 +103,7 @@ doc.Save("MailMerge.doc", FormatType.Doc)
 
 {%endhighlight%}
 
-> Note: For more information on mail merge using DocIO, you can refer to online documentation link:
+N> For more information on mail merge using DocIO, you can refer to online documentation link:
 
 <http://docs.syncfusion.com/windowsforms/docio/mail-merge#mail-merge-1>
 
@@ -112,7 +112,7 @@ doc.Save("MailMerge.doc", FormatType.Doc)
 
 This section illustrates how to perform a simple Find and replace operation in a Word document using MS Office Interop and DocIO.
 
-Using MS Office Interop
+#### Using MS Office Interop
 
 The following code example shows you how to search for a word in a Word document, replace it with another word and save the document under a new name.
 
@@ -169,7 +169,7 @@ Quit(nullobject, nullobject, nullobject)
 {%endhighlight%}
 
 
-Using DocIO
+#### Using DocIO
 
 The following code example shows you how to perform a simple “Find and Replace” operation using DocIO.
 
@@ -197,7 +197,7 @@ Dim replaceText As String = "World"
 {% endhighlight %}
 
 
-> Note: For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:
+N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:
 
 <http://docs.syncfusion.com/windowsforms/docio/find-and-replace>
 
@@ -205,7 +205,7 @@ Dim replaceText As String = "World"
 
 Bookmarks identify the location of text in a Word document that you can use for future reference. For example, you might use a bookmark to identify text that you want to revise later. Instead of scrolling through the document to locate the text, you can identify the text location by using the Bookmark dialog box.
 
-Using MS Office Interop
+#### Using MS Office Interop
 
 The following code example shows how to insert a bookmark for a range of text using Office Automation.
 
@@ -261,7 +261,7 @@ Dim rng As Object = doc.Range(startobj, endobj)
 {%endhighlight%}
 
 
-Using DocIO
+#### Using DocIO
 
 The following code example shows how to insert the bookmark using DocIO. Here, the AppendBookmarkStart() and AppendBookmarkEnd() methods are used to add the bookmark.
 
@@ -305,7 +305,7 @@ doc.Close()
 
 
 
-> Note: For more information on working with bookmarks using DocIO, you can refer to the online documentation link:
+N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link:
 
 <http://docs.syncfusion.com/windowsforms/docio/working-with-bookmarks>
 
@@ -313,7 +313,7 @@ doc.Close()
 
 Page numbers are inserted to a Word document in the header or footer section.
 
-Using MS Office Interop
+#### Using MS Office Interop
 
 In the following code example, the page numbers are inserted to the footer of the Word document by adding a page number field.
 
@@ -363,7 +363,7 @@ Close(nullobject, nullobject, nullobject)
 ‘Quits application.wordApp.Quit()
 {%endhighlight%}
 
-Using DocIO
+#### Using DocIO
 
 DocIO provides support for adding page numbers to a Word document. The page number field can be added to the header or footer of the Word document. In the following code example, the page numbers are inserted to the footer of the Word document.
 
@@ -405,7 +405,7 @@ doc.Save("PageNumbersUpdated.docx", FormatType.Docx)
 
 Watermark can be a text or an image, used to mark the document as private or confidential and to write any text that gives information about the usage and credibility of the document. In Microsoft Word, you can quickly insert a watermark using the Insert Watermark command. 
 
-Using MS Office Interop
+#### Using MS Office Interop
 
 The following code example illustrates how to insert a text watermark as a shape using OfficeAutomation.
 
@@ -454,7 +454,7 @@ Dim watermark As word.Shape = wordApp.Selection.HeaderFooter.Shapes.AddTextEf
 {%endhighlight%}
 
 
-Using DocIO
+#### Using DocIO
 
 DocIO enables you to add a text watermark and a picture watermark to a Word document. The following code example shows how to insert the picture watermark to the Word document.
 
@@ -521,7 +521,7 @@ Color = Color.BlackTextWatermark.Text = "Watermark"
 {%endhighlight%}
 
 
-_Note: For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:_
+N> For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:
 
 <http://docs.syncfusion.com/windowsforms/docio/working-with-word-documents#working-with-watermarks>
 
@@ -576,7 +576,7 @@ document.SaveAs(newFilePath, nullobject, nullobject, nullobject, nullobject, nul
 
 
 
-Using DocIO
+#### Using DocIO
 
 You can set the header and footer by using the HeadersFooters property in the Word document section. To access a particular header/footer, you can use the following properties of WHeadersFooters class:
 
@@ -629,7 +629,7 @@ For Each sec As WSection In doc.Sections    
 
 
 
-> Note: For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:
+N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:
 
 <http://docs.syncfusion.com/windowsforms/docio/working-with-sections#working-with-headers-and-footers>
 
@@ -681,7 +681,7 @@ doc.SaveAs(newFilePath, nullobject, nullobject, nullobject, nullobject, nullobje
 
 {%endhighlight%}
 
-Using DocIO
+#### Using DocIO
 
 The following code example illustrates how to apply the character formatting to the Word document using DocIO.
 
@@ -754,7 +754,7 @@ doc.SaveAs(newFilePath, nullobject, nullobject, nullobject, nullobject, nullobje
 
 
 
-Using DocIO
+#### Using DocIO
 
 The following code example shows how to insert an empty table to a Word document. The ResetCells() method is used to specify the number of rows and columns in a table.
 
@@ -782,7 +782,7 @@ table.ResetCells(3, 2)
 
 {%endhighlight%}
 
-> Note: For more information on creating tables using DocIO, refer to online documentation link:
+N> For more information on creating tables using DocIO, refer to online documentation link:
 
 <http://docs.syncfusion.com/windowsforms/docio/working-with-tables>
 
@@ -843,7 +843,7 @@ doc.SaveAs(newFilePath, nullobject, nullobject, nullobject, nullobject, nullobje
 {%endhighlight%}
 
 
-Adding Comments Using DocIO
+#### Adding Comments Using DocIO
 
 You can insert comments to a paragraph or text in a Word document using DocIO. The following code example shows how to insert comments to a Word document.
 
@@ -911,7 +911,7 @@ Dim document As word.Document = wordApp.Documents.Open(filepath, nullobject, 
 {%endhighlight%}
 
 
-Removing Comments Using DocIO
+#### Removing Comments Using DocIO
 
 The CommentsCollection property holds all the comments present in the Word document. The Clear() method can be called to remove all the comments. The following code example illustrates how to remove the comments from a Word document using DocIO.
 
@@ -934,7 +934,7 @@ Dim Comments As CommentsCollection = doc.Comments
 ‘Saves the document.doc.Save("CommentsRemovedDocIO.doc", FormatType.Doc)
 {%endhighlight%}
 
-> Note: For more information on working with the comments using DocIO, you can refer to the online documentation link:
+N> For more information on working with the comments using DocIO, you can refer to the online documentation link:
 
 <http://docs.syncfusion.com/windowsforms/docio/working-with-paragraphs#comments>
 
@@ -994,7 +994,7 @@ Dim doc As word.Document = wordApp.Documents.Open(filepath, nullobject, nullo
 
 
 
-Using DocIO
+#### Using DocIO
 
 DocIO uses ProtectionType property to specify the protection type of the Word document. This property uses the following values:
 
@@ -1074,7 +1074,7 @@ Dim TOC As word.TableOfContents = document.TablesOfContents.Add(rngToc, trueo
 {%endhighlight%}
 
 
-Using DocIO
+#### Using DocIO
 
 The following code example illustrates how to insert and update the table of contents in a Word document using DocIO.
 

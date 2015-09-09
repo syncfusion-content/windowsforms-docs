@@ -26,7 +26,7 @@ The following steps illustrate how to add a bookmark in Word:
 4. Click Add button.
 
 
-Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words.
+N> Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words.
 
 
 
@@ -56,9 +56,7 @@ WBookmarkEnd
 
 
 
-BookmarkStart Public Constructors
-
-Table 66 : BookmarkStart Public Constructors
+#### BookmarkStart Public Constructors
 
 <table>
 <tr>
@@ -72,9 +70,7 @@ Initializes a new instance of the BookmarkStart class.  </td></tr>
 </table>
 
 
-BookmarkEnd Public Constructors
-
-Table 67 : BookmarkEnd Public Constructors
+#### BookmarkEnd Public Constructors
 
 <table>
 <tr>
@@ -88,9 +84,8 @@ Initializes a new instance of the BookmarkEnd class. </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 68 : Public Properties
 
 <table>
 <tr>
@@ -117,7 +112,7 @@ DocIO provides support to navigate to bookmarks. For details, see BookmarkNaviga
 
 
 
-> Note: Modification of bookmarks in the Bookmarks Collection causes document corruption.
+N> Modification of bookmarks in the Bookmarks Collection causes document corruption.
 
 
 
@@ -206,9 +201,8 @@ BookmarkNavigator is used for navigating to bookmarks in a Word document.
 6. You can replace the content between bookmark start and bookmark end by using the ReplaceBookmarkContent method with TextBodyPart.
 7. You can replace the content in between bookmark start and bookmark end by using ReplaceContent method with WordDocumentPart.
 
-Public Constructors
+#### Public Constructors
 
-Table 69 : Public Constructors
 
 <table>
 <tr>
@@ -220,9 +214,8 @@ Description</th></tr>
 BookmarkNavigator.BookmarkNavigator (IWordDocument)</td><td>
 Initializes a new instance of the BookmarkNavigator class. </td></tr>
 </table>
-Public Properties
 
-Table 70 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -240,9 +233,7 @@ Gets or sets the Document where the object is attached to. </td></tr>
 </table>
 
 
-Public Methods
-
-Table 71 : Public Methods
+#### Public Methods
 
 <table>
 <tr>
@@ -296,10 +287,9 @@ Inserts the body part of the text.</td></tr>
 </table>
 
 
-> Note:
-
-> * Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark.
-> * Use for loop when replacing all the bookmarks in a document instead of foreach loop to avoid “collection modified exception”, as the Bookmarks collection is modified internally by preserving bookmark position once after replacing.
+N> Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark.
+N>
+N> Use for loop when replacing all the bookmarks in a document instead of foreach loop to avoid “collection modified exception”, as the Bookmarks collection is modified internally by preserving bookmark position once after replacing.
 
 The following are the restrictions on the Replace BookmarkContent methods such as,
 
@@ -390,11 +380,9 @@ The usage is common for both environments except for the part where the created 
 WordDocumentPart class contains the collection of sections. WordDocumentPart is usually used with the Bookmark Navigator.
 
 
-> Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document.
+N> WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document.
 
-Public Constructors
-
-Table 72 : Constructors Table
+#### Public Constructors
 
 <table>
 <tr>
@@ -414,7 +402,6 @@ Initializes a new instance of the WordDocumentPart class and loads the content o
 
 Public Properties
 
-Table 73 : Properties Table
 
 <table>
 <tr>
@@ -428,9 +415,7 @@ Gets the sections in the WordDocumentPart</td></tr>
 </table>
 
 
-Public Methods
-
-Table 74 : Methods Table
+#### Public Methods
 
 <table>
 <tr>

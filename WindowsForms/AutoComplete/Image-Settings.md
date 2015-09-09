@@ -11,8 +11,6 @@ documentation: ug
 
 We can add a dropdown item with image to the AutoComplete popup, through the AutoComplete.AddHistoryItem method. An imagelist should be associated with AutoComplete control for this purpose. Specify the item text and the image index in this method.
 
-Table 123: Method Table
-
 <table> 
 <tr>
 <th>
@@ -102,6 +100,6 @@ While using an external datasource, the Columns property can be initially refres
 
 {% seealso %}
  
-Multiple Columns
+[Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns)
 
  {% endseealso %}

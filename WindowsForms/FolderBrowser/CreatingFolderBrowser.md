@@ -46,11 +46,6 @@ Me.folderBrowser1.ShowDialog()
 ![](Overview_images/Overview_img407.jpeg) 
 
 
-
-See Also
-
-Through Code
-
 ## Through Code
 
 The programmatic approach for using the FolderBrowser component is shown below.
@@ -117,6 +112,8 @@ The programmatic approach for using the FolderBrowser component is shown below.
 
 
 
-See Also
+{% seealso %}
 
-Through Designer
+[Through Designer](#through-code)
+
+{% endseealso %}

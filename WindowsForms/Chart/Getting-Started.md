@@ -24,11 +24,6 @@ This section gives you an idea of the different sections of a Chart control. Bel
 
 
 
-
-_Figure_ _5_: _Chart Components_
-
-
-
 ### Chart Title
 
 The Charttitle is the area at the top of the Chart control that displays the text of the ChartControl.
@@ -71,9 +66,11 @@ Represents the label texts on the axes data points in a Chart.
 
 Indicates the title for individual axis.
 
-See Also
+{% seealso %}
 
-Text, Chart Legend, Chart Series, Chart Area, Axis Label Text Formatting, Appearance and Positioning, Customizing Label Text, Intersecting Labels, Grouping Labels
+[Text](http://docs.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](http://docs.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](http://docs.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](http://docs.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](http://docs.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting), [Appearance and Positioning](http://docs.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting), [Customizing Label Text](http://docs.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](http://docs.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](http://docs.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
+
+{% endseealso %}
 
 ## Creating a simple Chart
 
@@ -88,11 +85,6 @@ To create a simple chart control and populate it with simple data, follow the st
 
 
 
-
-   _Figure_ _6_: _ChartControl in Toolbox_
-
-
-
 2. Drag a Chart control onto the form.
 3. Appearance and behavior-related aspects of the Chart can be controlled by setting the appropriate properties through the properties grid. For example, change the position of the legend for the control to be top aligned by changing the LegendPosition property. 
 
@@ -101,10 +93,6 @@ To create a simple chart control and populate it with simple data, follow the st
    ![](Getting-Started_images/Getting-Started_img3.jpeg) 
 
 
-
-
-
-   _Figure_ _7_: _Setting Legend Position Property_
 
 
 
@@ -229,9 +217,9 @@ To create a simple chart control and populate it with simple data, follow the st
 
    ![](Getting-Started_images/Getting-Started_img4.jpeg)
    
-   _Figure_ _8_: _Chart control_
    
-See Also
+{% seealso %}
 
-Binding a DataSet to a Chart, Tasks Window
+[Binding a DataSet to a Chart](http://docs.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart), [Tasks Window](http://docs.syncfusion.com/windowsforms/chart/design-time-features#tasks-window)
 
+{% endseealso %}

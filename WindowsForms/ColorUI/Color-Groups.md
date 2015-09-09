@@ -68,7 +68,7 @@ Me.colorUIControl1.ColorGroups = DirectCast((((Syncfusion.Windows.Forms.ColorUIG
 
 
 N> We can add custom text for the tabs of the Color groups. See [Tab Text] (/WindowsForms/ColorUI/Tab-Text)for details.
-
+N>
 N> The Custom Color Panels and User Color Panels can be stretched according to the size of the control. Refer_ ColorUIControl Appearance _for details.
 
 {% seealso %}

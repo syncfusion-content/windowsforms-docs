@@ -10,8 +10,6 @@ documentation: ug
 
 In the Popup calendar, today's date will be selected by default, at run time. This default date can be changed using Value property. You can also specify the range of values / dates that can be selected at run time. 
 
-Table187: Property Table
-
 <table>
 <tr>
 <th>
@@ -54,6 +52,6 @@ Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 1, 1, 0, 0, 0, 0)
 
 {% seealso %}
 
-Customizing the Calendar
+[Customizing the Calendar](http://docs.syncfusion.com/windowsforms/calendar/customizing-the-calendar)
 
 {% endseealso %}

@@ -183,7 +183,7 @@ The following is an explanation of the preceding code.
 2. A call to CalculateAll is made so that all dependencies can be properly set within the underlying CalcEngine. By default, dependent management is locked in these classes. So, you will have to toggle LockDependencies to allow the engine to track them. It works this way for this sample, as you are not changing any relations among the values like adding or editing actual formulas, so the dependency relations among the values do not change. Thus, these dependencies only need to be done once and not continually updated as values change. The sample requests the calculated values to be refreshed from the beginning and does not rely on auto-calculations. There is another property setting that is commented out, i.e., setting CalculatingSuspended to True tells the engine to skip any calculations that might be triggered by changing values. This will postpone calculations until the property is reset to False. At that point, you will have to do a RecalculateAll call or use an explicit PullUpdatedValue call to ensure that the computed values are current. Suspending calculations makes sense if you are updating many entries and do not need intermediate values calculated.
 3. Sets initial values for the combo boxes on the form. This next set of code shows what will happen when you click the button. At this point, the values need to be moved from the controls on the form into the ExcelRWCalcWorkbook object and the newly computed result is retrieved.
 
-   ~~~ cs
+{% highlight c# %}
 
 		private void button1_Click(object sender, System.EventArgs e)
 
@@ -265,10 +265,9 @@ The following is an explanation of the preceding code.
 
 		}
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 			Private Sub button1_Click(sender As Object, e As System.EventArgs)
 
@@ -368,9 +367,7 @@ The following is an explanation of the preceding code.
 
 			End Sub 
 
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
 
 The following is an explanation of the preceding code.
 

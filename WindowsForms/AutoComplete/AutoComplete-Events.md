@@ -11,7 +11,6 @@ documentation: ug
 
 The events of the AutoComplete control are as follows.
 
-Table 126: Events Table
 
 <table>
 <tr>
@@ -60,13 +59,12 @@ Occurs when the target control of the AutoComplete control changes.</td></tr>
 
 AutoCompleteItemSelected Event is raised, when a new item has been selected by the user when the AutoComplete mode is set to AutoSuggest.
 
-This event is discussed in External Datasource topic.
+This event is discussed in [External Datasource](http://docs.syncfusion.com/windowsforms/autocomplete/datasource#external-datasource) topic.
 
 ## BeforeAddItem Event
 
 This event will be raised when new item is about to be added. New items can be added by calling AutoComplete.AddHistoryItem() method. The event handler receives an argument of type AutoCompleteAddItemCancelEventArgs containing data related to this event. The following are the properties associated with AutoCompleteAddItemCancelEventArgs argument.
 
-Table 127: Members Table
 
 <table>
 <tr>
@@ -125,7 +123,6 @@ End Sub
 
 This event will be raised when the user selects an item from the list of possible matches when the AutoComplete is set to AutoSuggest. The event handler receives an argument of type AutoCompleteItemEventArgs. The event properties associated with the AutoCompleteItemEventArgs are as follows.
 
-Table 128: Members Table
 
 <table>
 <tr>
@@ -193,8 +190,6 @@ End Sub
 ## MatchItem Event
 
 We can override the default matching of the current content of the target edit control using this event. The event handler receives an argument of type AutoCompleteMatchItemEventArgs. The following are the properties associated with AutoCompleteMatchItemEventArgs argument.
-
-Table 129: Members Table
 
 <table>
 <tr>

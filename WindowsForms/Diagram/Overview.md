@@ -55,8 +55,6 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
 
-_Table_ _1_: Document Conventions_
-
 <table>
 <tr>
 <td>
@@ -66,7 +64,7 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-![](Overview_images/Overview_img2.jpeg)
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
 
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
@@ -78,14 +76,14 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img3.jpeg)
+{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
 
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img4.jpeg)
+{{ '![](Overview_images/Overview_img4.jpeg)' | markdownify }}
 
 </td><td>
 Represents additional information on the topic</td></tr>
@@ -95,11 +93,10 @@ Represents additional information on the topic</td></tr>
 
 This section covers the requirements mandatory for using Essential Diagram control. It also lists operating systems and browsers compatible with the product.
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed below:
 
-_Table_ _2_: Prerequisites
 
 <table>
 <tr>
@@ -108,23 +105,23 @@ Development Environments</td><td>
 .NET Framework versions</td></tr>
 <tr>
 <td>
-* Visual Studio 2013* Visual Studio 2012* Visual Studio 2010 (Ultimate and Express)* Visual Studio 2008 (Team, Professional, Standard and Express)* Visual Studio 2005 (Team, Professional, Standard and Express)* Borland Delphi for .NET* SharpCode</td><td>
-* .NET 4.5* .NET 4.0* .NET 3.5* .NET 2.0</td></tr>
+<ul> 
+<li>Visual Studio 2013</li><li> Visual Studio 2012</li><li> Visual Studio 2010 (Ultimate and Express)</li><li>Visual Studio 2008 (Team, Professional, Standard and Express)</li><li> Visual Studio 2005 (Team, Professional, Standard and Express)</li><li> Borland Delphi for .NET</li><li>SharpCode</li></ul></td><td>
+<ul><li> .NET 4.5</li><li> .NET 4.0</li><li> .NET 3.5</li><li> .NET 2.0</li></ul></td></tr>
 </table>
 
 #### Compatibility
 
 The compatibility details are listed below:
 
-_Table_ _3_: Compatibility_
 
 <table>
 <tr>
-<td>
-Operating Systems</td></tr>
+<th>
+Operating Systems</th></tr>
 <tr>
 <td>
-* Windows 8.1* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<ul><li> Windows 8.1</li><li> Windows Server 2008 (32 bit and 64 bit)</li><li> Windows 7 (32 bit and 64 bit)</li><li> Windows Vista (32 bit and 64 bit)</li><li> Windows XP</li><li> Windows 2003</li></ul></td></tr>
 </table>
 
 ## Documentation
@@ -132,13 +129,11 @@ Operating Systems</td></tr>
 
 Syncfusion provides the following documentation segments to provide all necessary information for using Essential Diagram control in Windows application in an efficient manner.
 
-_Table_ _4_: Documentation
-
 <table>
 <tr>
-<td>
-Type of documentation</td><td>
-Location</td></tr>
+<th>
+Type of documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
@@ -156,7 +151,7 @@ Online{{ '<http://docs.syncfusion.com/windowsforms/diagram/overview>' | markdown
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Diagram_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://docs.syncfusion.com/cr/windowsforms>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Diagram_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

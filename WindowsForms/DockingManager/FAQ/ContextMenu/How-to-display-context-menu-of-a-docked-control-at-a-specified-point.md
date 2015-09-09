@@ -3,7 +3,7 @@ layout: post
 title: How to display context menu of a docked control at a specified point
 description: How to display context menu of a docked control at a specified point
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -11,13 +11,11 @@ documentation: ug
 
 This can be done using ShowMenu method.
 
-Table 103: Methods Table
-
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowMenu</td><td>

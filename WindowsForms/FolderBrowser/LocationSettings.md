@@ -13,8 +13,6 @@ This section deals with the location settings of the FolderBrowser control.
 
 The FolderBrowser allows the user to provide the location from which browsing should start. It also provides various options from which the root folder for browsing can be selected. The following properties illustrate this.
 
-Table 249 : Property Table
-
 <table>
 <tr>
 <th>
@@ -78,7 +76,7 @@ DirectoryPath</td><td>
 Retrieves the location of the selected folder.</td></tr>
 </table>
 
- _Note: For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'._
+N> For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'._
 
 {%highlight c#%}
 

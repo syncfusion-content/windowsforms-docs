@@ -35,7 +35,6 @@ Specifies the modes in which the AutoCompleteControl fills the history list for 
 
 
 
-Table 122: Property Table
 
 <table>
 <tr>
@@ -127,6 +126,6 @@ N> We can also add images to the dropdown items using internal source and extern
 
 {% seealso %}
 
- Source for AutoComplete Control, How to match items in all the columns using AutoCompleteControl?
+ [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control), [How to match items in all the columns using AutoCompleteControl?](http://docs.syncfusion.com/windowsforms/autocomplete/faq/how-to-match-items-in-all-the-columns-using-autocompletecontrol)
  
 {% endseealso %}

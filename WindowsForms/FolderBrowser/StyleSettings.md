@@ -11,7 +11,6 @@ documentation: ug
 
 The style settings that are available for the FolderBrowser Dialog are given below.
 
-Table 250 : Property Table
 
 <table>
 <tr>

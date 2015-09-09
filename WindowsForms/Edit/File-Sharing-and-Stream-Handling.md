@@ -103,7 +103,7 @@ Shows open file dialog to the user and opens the selected file.</td></tr>
 </table>
 
 
-> Note: The character encoding for the text can also be specified while loading the file.
+N> The character encoding for the text can also be specified while loading the file.
 
 
 
@@ -483,11 +483,11 @@ Me.editControl1.FileOpened = New FileStream("Temp.txt", FileMode.Create)
 
 {% endhighlight %}
 
-### See Also
+{% seealso %}
 
-Creating, Loading and Saving a File, Saving and Cancelling Changes
+[Creating, Loading and Saving a File](/windowsforms/edit/file-sharing-and-stream-handling#creating-loading-saving-and-dropping-files), [Saving and Cancelling Changes](/windowsforms/edit/file-sharing-and-stream-handling#saving-and-cancelling-changes)
 
-
+{% endseealso %}
 
 ### Discard Changes
 
@@ -547,9 +547,6 @@ Me.editControl1.SaveOnClose = False
 
 ![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg)
 
-
-
-_Figure_ _62: Default Save Changes Prompt Dialog Box
 
 
 
@@ -692,7 +689,7 @@ End Sub
 {% endhighlight %}
 
 
-> Note: The default value of e.Action is SaveChangesAction.ShowDialog.
+N> The default value of e.Action is SaveChangesAction.ShowDialog.
 
 
 
@@ -734,11 +731,11 @@ Me.editControl1.Close()
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
+[Creating, Loading and Saving a File](/windowsforms/edit/file-sharing-and-stream-handling#creating-loading-saving-and-dropping-files), [Loading and Saving Contents](/windowsforms/edit/file-sharing-and-stream-handling#loading-and-saving-contents)
 
-### Creating, Loading and Saving a File, Loading and Saving Contents
-
+{% endseealso %}
 
 ## File Sharing
 

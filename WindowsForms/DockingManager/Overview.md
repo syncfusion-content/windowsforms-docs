@@ -3,7 +3,7 @@ layout: post
 title: Overview
 description: overview
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 

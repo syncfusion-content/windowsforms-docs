@@ -12,7 +12,6 @@ This section discusses the border styles and back color that can be applied for 
 
 The below table lists the appearance properties of DomainUpDownExt control.
 
-Table258: Property Table
 
 <table>
 <tr>

@@ -3,7 +3,7 @@ layout: post
 title: How to Enable the Tabbed Style Dockable Window using TabbedMDI manager
 description: How to Enable the Tabbed Style Dockable Window using TabbedMDI manager
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

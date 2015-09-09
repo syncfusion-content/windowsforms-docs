@@ -12,7 +12,6 @@ documentation: ug
 
 GradientPanel can have 2D and 3D borders. The properties which sets the border style are as follows.
 
-Table 239: Property Table
 
 <table>
 <tr>
@@ -95,6 +94,8 @@ Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
 
  ![](GradientPanel-Images/Overview_img371.jpeg) 
 
-> See Also
->
-> [GradientPanel Appearance](/windowsforms/Tools/EditorsPackage/GradientPanel/GradientPanel-Appearance)
+ {% seealso %}
+ 
+ [GradientPanel Appearance](/windowsforms/Tools/EditorsPackage/GradientPanel/GradientPanel-Appearance)
+ 
+ {% endseealso %}

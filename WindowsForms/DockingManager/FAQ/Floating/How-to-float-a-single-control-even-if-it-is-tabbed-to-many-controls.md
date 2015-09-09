@@ -3,7 +3,7 @@ layout: post
 title: How to float a single control even if it is tabbed to many controls
 description: How to float a single control even if it is tabbed to many controls
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

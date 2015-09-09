@@ -25,63 +25,76 @@ It can be created programmatically as follows.
 
 1. Add Shared.Base, Shared.Windows, Tools.Base and Tools.Windows assembly references and include the required namespace.
 
-    {% highlight c# %}
+   ~~~ cs
 
-    usingSyncfusion.Windows.Forms.Tools;
+		usingSyncfusion.Windows.Forms.Tools;
+	
+   ~~~
+   {:.prettyprint }
 
+   ~~~ vbnet
+   
     ImportsSyncfusion.Windows.Forms.Tools
 
-    {% endhighlight %}
-
-2.Create an instance of the DomainUpDownExt. Add that instance to the Form.
-
-    {% highlight c# %}
+   ~~~
+   {:.prettyprint }
 
 
-    privateSyncfusion.Windows.Forms.Tools.DomainUpDownExt domainUpDownExt1;
+2. Create an instance of the DomainUpDownExt. Add that instance to the Form.
 
-	this.domainUpDownExt1=newSyncfusion.Windows.Forms.Tools.DomainUpDownExt();
+   ~~~ cs
 
 
+		privateSyncfusion.Windows.Forms.Tools.DomainUpDownExt domainUpDownExt1;
 
-	// Add items.
-
-	this.domainUpDownExt1.Items.Add("One");
-
-	this.domainUpDownExt1.Items.Add("Two");
-
-	this.domainUpDownExt1.Items.Add("Three");
-
-	this.domainUpDownExt1.Items.Add("Four");
-
-	this.domainUpDownExt1.Items.Add("Five");
+		this.domainUpDownExt1=newSyncfusion.Windows.Forms.Tools.DomainUpDownExt();
 
 
 
-	this.Controls.Add(this.domainUpDownExt1);
+		// Add items.
+
+		this.domainUpDownExt1.Items.Add("One");
+
+		this.domainUpDownExt1.Items.Add("Two");
+
+		this.domainUpDownExt1.Items.Add("Three");
+
+		this.domainUpDownExt1.Items.Add("Four");
+
+		this.domainUpDownExt1.Items.Add("Five");
 
 
-    PrivatedomainUpDownExt1AsSyncfusion.Windows.Forms.Tools.DomainUpDownExt
 
-	Me.domainUpDownExt1 =NewSyncfusion.Windows.Forms.Tools.DomainUpDownExt()
+		this.Controls.Add(this.domainUpDownExt1);
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
+   
+		PrivatedomainUpDownExt1AsSyncfusion.Windows.Forms.Tools.DomainUpDownExt
+
+		Me.domainUpDownExt1 =NewSyncfusion.Windows.Forms.Tools.DomainUpDownExt()
 
 
 
-	' Add items.
+		' Add items.
 
-	Me.domainUpDownExt1.Items.Add("One")
+		Me.domainUpDownExt1.Items.Add("One")
 
-	Me.domainUpDownExt1.Items.Add("Two")
+		Me.domainUpDownExt1.Items.Add("Two")
 
-	Me.domainUpDownExt1.Items.Add("Three")
+		Me.domainUpDownExt1.Items.Add("Three")
 
-	Me.domainUpDownExt1.Items.Add("Four")
+		Me.domainUpDownExt1.Items.Add("Four")
 
-	Me.domainUpDownExt1.Items.Add("Five")
+		Me.domainUpDownExt1.Items.Add("Five")
 
-    Me.Controls.Add(Me.domainUpDownExt1)
+		Me.Controls.Add(Me.domainUpDownExt1)
 
-    {% endhighlight %}
+   ~~~
+   {:.prettyprint }
+
 
    ![](DomainUpdownExt_images/Overview_img422.png)
    

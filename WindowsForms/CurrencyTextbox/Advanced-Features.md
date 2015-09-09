@@ -3,7 +3,7 @@ layout: post
 title: Advanced-Features
 description: advanced features
 platform: WindowsForms
-control: Editors Package
+control: CurrencyTextbox
 documentation: ug
 ---
 
@@ -13,7 +13,6 @@ documentation: ug
 
 The CurrencyTextBox control also provides support for clipboard operations that are compatible with currency data. TheClipMode property specifies if formatting characters are to be copied to the clipboard.
 
-Table 316: Property Table
 
 <table>
 <tr>
@@ -79,7 +78,6 @@ Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
 The CurrencyTextBox class is globalization aware and uses System.Globalization.CultureInfo for locale-specific information. You can set the control's culture to any installed culture through its culture property.
 
-Table 317: Property Table
 
 <table>
 <tr>
@@ -131,7 +129,6 @@ Me.currencyTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Special
 
 ### User Override for Culture
 
-Table 318: Property Table
 
 <table>
 <tr>
@@ -169,7 +166,7 @@ Me.currencyTextBox1.Culture = New CultureInfo(CultureInfo.CurrentUICulture.LCI
 
 The culture name can be displayed in the different format according to the specified culture value. Refer the following table in detail.
 
-Table 319: Property Table
+
 
 <table>
 <tr>

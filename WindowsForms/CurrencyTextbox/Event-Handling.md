@@ -3,7 +3,7 @@ layout: post
 title: Event-Handling
 description: event handling
 platform: WindowsForms
-control: Editors Package
+control: CurrencyTextbox
 documentation: ug
 ---
 
@@ -17,7 +17,6 @@ ValidationError: It occurs when an inappropriate character is encountered. The e
 
 The event properties associated with the ValidationErrorArgs are as follows.
 
-Table 320: Members Table
 
 <table>
 <tr>

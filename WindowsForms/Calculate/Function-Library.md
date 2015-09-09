@@ -368,7 +368,7 @@ Here is a list of the Function Library entries included with Essential Calculate
 
 This section lists the logical functions included with Essential calculate in the below table.
 
-_Table_ _5_: _logical functions_
+_logical functions_
 
 <table>
 <tr>
@@ -421,7 +421,6 @@ Returns TRUE if any of the conditions are TRUE. Otherwise, it returns FALSE.</td
 
 This section lists the Text functions included with Essential calculate in the below table.
 
-_Table_ _6_: _Text functions_
 
 <table>
 <tr>
@@ -462,7 +461,6 @@ Returns a text segment of a character string.</td></tr>
 
 This section lists the Date and Time functions included with Essential calculate in the below table.
 
-_Table_ _7_: _Date and Time functions_
 
 <table>
 <tr>
@@ -531,7 +529,6 @@ Returns the year from 1900 to 9999.</td></tr>
 
 This section lists the LookUp and Information functions included with Essential calculate in the below table.
 
-_Table_ _8_: _LookUp and Information functions_
 
 <table>
 <tr>
@@ -560,7 +557,6 @@ Returns True if cell holds a number.</td></tr>
 
 This section lists the Financial functions included with Essential calculate in the below table.
 
-_Table_ _9_: _Financial functions_
 
 <table>
 <tr>
@@ -637,7 +633,6 @@ Returns the depreciation using double declining balance calculation.</td></tr>
 
 This section lists the Math and Trig functions included with Essential calculate in the below table.
 
-_Table_ _10_: _Math and Trig functions_
 
 <table>
 <tr>
@@ -1527,7 +1522,7 @@ XOR (logical_value1, logical_value2,…)
 Logical_value1: Required. This can be either TRUE or FALSE, and can be logical values, arrays, or references.
 
 
-> Notes: If the given arguments do not have the logical values, XOR returns the &#35;VALUE! error value.
+N> If the given arguments do not have the logical values, XOR returns the &#35;VALUE! error value.
 
 
 
@@ -2037,8 +2032,6 @@ RESULT</th></tr>
 ## Statistics
 
 This section lists the Statistic functions included with Essential calculate in the below table.
-
-_Table_ _11_: _Statistic functions_
 
 <table>
 <tr>

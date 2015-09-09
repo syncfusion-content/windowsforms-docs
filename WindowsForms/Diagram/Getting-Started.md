@@ -120,15 +120,14 @@ To create a Diagram control using code:
 
 1. Create a new Windows Forms application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
-* Syncfusion.Core.dll
-* Syncfusion.Diagram.Base.dll
-* Syncfusion.Diagram.Windows.dll
-* Syncfusion.Shared.Base.dll
+   * Syncfusion.Core.dll
+   * Syncfusion.Diagram.Base.dll
+   * Syncfusion.Diagram.Windows.dll
+   * Syncfusion.Shared.Base.dll
 3. Create a Diagram control using the following code.
 
 
-
-{% highlight c# %}
+   ~~~ cs
 
             //Imports the Diagram control’s namespaces
 
@@ -161,10 +160,11 @@ To create a Diagram control using code:
             diagram.Location = new Point(20, 5);
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
-{% highlight vbnet %}
+   ~~~ vbnet
 
             'Imports the Diagram control’s namespaces
 
@@ -196,15 +196,15 @@ To create a Diagram control using code:
 
             diagram.Location = New Point(20, 5)
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 
 4. Add a model to the Diagram control.
 
 
-
-{% highlight c# %}
+   ~~~ cs
 
             //Create a model
 
@@ -217,10 +217,10 @@ To create a Diagram control using code:
             diagram.Model = model;
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
-
-{% highlight vbnet %}
+   ~~~ vbnet
 
             'Create a model
 
@@ -232,15 +232,15 @@ To create a Diagram control using code:
 
             diagram.Model = model
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 
 5. Add the Diagram control to the Diagram Form window.
 
 
-
-{% highlight c# %}
+   ~~~ cs
 
             //Add the Diagram control to Diagram Form
 
@@ -248,16 +248,18 @@ To create a Diagram control using code:
 
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
-{% highlight vbnet %}
+   ~~~ vbnet
 
             'Add the Diagram control to the Diagram Form
 
             Me.Controls.Add(diagram)
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 ![](Getting-Started_images/Getting-Started_img8.png)
@@ -269,7 +271,6 @@ To create a Diagram control using code:
 The Diagram control has a list of predefined basic shapes (nodes) which help you to draw diagrams according to your requirement. You can create your own shapes by inheriting the existing shape’s class and the Symbol Designer utility tool which is shipped with the Essential Diagram package. 
 
 The following code creates a rectangular node and adds it to the model.
-
 
 
 {% highlight c# %}
@@ -388,7 +389,6 @@ The following code creates a rectangular node and adds it to the model.
 
             diagram.Model.AppendChild(rectangle)
 
-
 {% endhighlight %}
 
 
@@ -403,8 +403,6 @@ The following code creates a rectangular node and adds it to the model.
 The Diagram control has a set of predefined links (connectors) which help you to connect the nodes with each other. You can create your own connectors by inheriting the ConnectorBase class.
 
 The following code illustrates how to connect a process node to a decision node by OrthogonalConnector.
-
-
 
 {% highlight c# %}
 
@@ -752,15 +750,15 @@ To create a PaletteGroupBar control using code:
 
 1. Create a new Windows Forms application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
-* Syncfusion.Core.dll
-* Syncfusion.Diagram.Base.dll
-* Syncfusion.Diagram.Windows.dll
-* Syncfusion.Shared.Base.dll
+   * Syncfusion.Core.dll
+   * Syncfusion.Diagram.Base.dll
+   * Syncfusion.Diagram.Windows.dll
+   * Syncfusion.Shared.Base.dll
 3. Create a PaletteGroupBar control using the following code.
 
 
 
- {% highlight c# %}
+{% highlight c# %}
 
             //Imports the Diagram control’s namespace
 
@@ -888,10 +886,10 @@ To create a PaletteGroupView control using code:
 
 1. Create a new Windows Form application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
-* Syncfusion.Core.dll
-* Syncfusion.Diagram.Base.dll
-* Syncfusion.Diagram.Windows.dll
-* Syncfusion.Shared.Base.dll
+   * Syncfusion.Core.dll
+   * Syncfusion.Diagram.Base.dll
+   * Syncfusion.Diagram.Windows.dll
+   * Syncfusion.Shared.Base.dll
 3. Create a PaletteGroupView control using the following code.
 
 
@@ -931,8 +929,6 @@ To create a PaletteGroupView control using code:
             //Add the paletteView to the form
 
             this.Controls.Add(paletteView);
-
-
 
 {% endhighlight %}
 
@@ -1016,10 +1012,10 @@ To create an Overview control using code:
 
 1. Create a new Windows Forms application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
-* Syncfusion.Core.dll
-* Syncfusion.Diagram.Base.dll
-* Syncfusion.Diagram.Windows.dll
-* Syncfusion.Shared.Base.dll
+   * Syncfusion.Core.dll
+   * Syncfusion.Diagram.Base.dll
+   * Syncfusion.Diagram.Windows.dll
+   * Syncfusion.Shared.Base.dll
 3. Create an Overview control using the following code.
 
 
@@ -1124,10 +1120,10 @@ To create a PropertyEditor control using code:
 
 1. Create a new Windows Forms application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
-* Syncfusion.Core.dll
-* Syncfusion.Diagram.Base.dll
-* Syncfusion.Diagram.Windows.dll
-* Syncfusion.Shared.Base.dll
+   * Syncfusion.Core.dll
+   * Syncfusion.Diagram.Base.dll
+   * Syncfusion.Diagram.Windows.dll
+   * Syncfusion.Shared.Base.dll
 3. Create a PropertyEditor control using the following code.
 
 
@@ -1236,10 +1232,10 @@ To create a DocumentExplorer control using code:
 
 1. Create a new Windows Forms application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
-* Syncfusion.Core.dll
-* Syncfusion.Diagram.Base.dll
-* Syncfusion.Diagram.Windows.dll
-* Syncfusion.Shared.Base.dll
+   * Syncfusion.Core.dll
+   * Syncfusion.Diagram.Base.dll
+   * Syncfusion.Diagram.Windows.dll
+   * Syncfusion.Shared.Base.dll
 3. Create a DocumentExplorer control using the following code.
 
 
@@ -1388,37 +1384,38 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
 
 2. How to Save a Diagram Document
 
-Below are the steps to save a diagram document.
+   Below are the steps to save a diagram document.
 
-1.  Add SaveFileDialog control to the Form.
-2.  Set the Filter property of SaveFileDialog as  Essential Diagram Files|*.edd|All files|*.*.
-3.  Add the following code snippet in your button click event.
-
-
-
-{% highlight c# %}
+   1.  Add SaveFileDialog control to the Form.
+   2.  Set the Filter property of SaveFileDialog as  Essential Diagram Files|*.edd|All files|*.*.
+   3.  Add the following code snippet in your button click event.
 
 
 
-// Checking whether "OK" button is clicked in SaveFileDialog
-
-if (this.saveFileDialog1.ShowDialog(this) == DialogResult.OK)
-
-{
-
-    this.FileName = this.saveFileDialog1.FileName;
-
-    this.diagram1.SaveBinary(this.FileName);
-
-}
-
-{% endhighlight %}
-
-The diagram1.SaveBinary() method saves the diagram file in the given filename.
+   ~~~ cs
 
 
 
-![](Getting-Started_images/Getting-Started_img27.jpeg)
+		// Checking whether "OK" button is clicked in SaveFileDialog
+
+		if (this.saveFileDialog1.ShowDialog(this) == DialogResult.OK)
+
+		{
+
+			this.FileName = this.saveFileDialog1.FileName;
+
+			this.diagram1.SaveBinary(this.FileName);
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   The diagram1.SaveBinary() method saves the diagram file in the given filename.
+
+
+
+   ![](Getting-Started_images/Getting-Started_img27.jpeg)
 
 
 
@@ -1430,201 +1427,183 @@ Following are the steps to print a diagram document:
 
 1. Page Setup
 
-The Page Setup dialog modifies the Page Settings and Printer Settings information for a given document. The user can enable sections of the dialog to manipulate printing, margins, paper orientation, size, source and to show help and network buttons. MinMargins defines the minimum margins a user can select.
+   The Page Setup dialog modifies the Page Settings and Printer Settings information for a given document. The user can enable sections of the dialog to manipulate printing, margins, paper orientation, size, source and to show help and network buttons. MinMargins defines the minimum margins a user can select.
 
-The following code snippet can be used for setting the page set up for diagram document.
-
-
-
-{% highlight c# %}
+   The following code snippet can be used for setting the page set up for diagram document.
 
 
 
-if (diagram1 == null || diagram1.Model == null)
-
-    return;
-
-using (PageSetupDialog dlgPageSetup = new
-
-        PageSetupDialog(diagram1.View))
-
-{
-
-    if (dlgPageSetup.ShowDialog() == DialogResult.OK)
-
-    {
-
-        diagram1.UpdateView();
-
-    }
-
-}
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img28.jpeg)
+   ~~~ cs
 
 
 
+		if (diagram1 == null || diagram1.Model == null)
 
+			return;
 
-_Figure_ _31__: Diagram page Setup Dialog Box_
+		using (PageSetupDialog dlgPageSetup = new
 
+				PageSetupDialog(diagram1.View))
+
+		{
+
+			if (dlgPageSetup.ShowDialog() == DialogResult.OK)
+
+			{
+
+				diagram1.UpdateView();
+
+			}
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ![](Getting-Started_images/Getting-Started_img28.jpeg)
 
 
 2. Page Borders
 
-The Page Borders dialog provides an interactive form-based interface, for setting the page borders of a diagram, initializing the dialog's   Syncfusion.Windows.Forms.Diagram.PageBorderDialog. The PageBorderStyle property with the corresponding Syncfusion.Windows.Forms.Diagram.View.PageBorderStyle member of the diagram's view, will let the users to configure the page border settings using the dialog controls.  
+   The Page Borders dialog provides an interactive form-based interface, for setting the page borders of a diagram, initializing the dialog's   Syncfusion.Windows.Forms.Diagram.PageBorderDialog. The PageBorderStyle property with the corresponding Syncfusion.Windows.Forms.Diagram.View.PageBorderStyle member of the diagram's view, will let the users to configure the page border settings using the dialog controls.  
 
-The following code snippet can be used for setting the page border for diagram document.
-
-
-
-{% highlight c# %}
+   The following code snippet can be used for setting the page border for diagram document.
 
 
 
-if (diagram1 != null && diagram1.Model != null)
-
-{
-
-    PageBorderDialog borderDialog = new PageBorderDialog();
-
-    borderDialog.PageBorderStyle = diagram1.View.PageBorderStyle; // It will show existing border set up
-
-    if (borderDialog.ShowDialog() == DialogResult.OK)
-
-    {
-
-        diagram1.View.PageBorderStyle = borderDialog.PageBorderStyle; // It will update the modified set up.
-
-        diagram1.View.RefreshPageSettings();
-
-        diagram1.UpdateView();
-
-    }
-
-}
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img29.jpeg)
+   ~~~ cs
 
 
 
+		if (diagram1 != null && diagram1.Model != null)
 
+		{
 
-_Figure_ _32_: Diagram Page Borders Dialog Box
+			PageBorderDialog borderDialog = new PageBorderDialog();
+
+			borderDialog.PageBorderStyle = diagram1.View.PageBorderStyle; // It will show existing border set up
+
+			if (borderDialog.ShowDialog() == DialogResult.OK)
+
+			{
+
+				diagram1.View.PageBorderStyle = borderDialog.PageBorderStyle; // It will update the modified set up.
+
+				diagram1.View.RefreshPageSettings();
+
+				diagram1.UpdateView();
+
+			}
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ![](Getting-Started_images/Getting-Started_img29.jpeg)
 
 
 
 3. Header and Footers
 
-The Header and Footer dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
+   The Header and Footer dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
 
-The following code snippet can be used for creating the Header and Footer dialog. 
-
-
-
-{% highlight c# %}
+   The following code snippet can be used for creating the Header and Footer dialog. 
 
 
 
-if (diagram1 != null && diagram1.Model != null)
-
-{
-
-    HeaderFooterDialog dlgHF = new HeaderFooterDialog();
-
-    dlgHF.Header = diagram1.Model.HeaderFooterData.Header;
-
-    dlgHF.Footer = diagram1.Model.HeaderFooterData.Footer;
-
-    dlgHF.MeasurementUnits = diagram1.Model.MeasurementUnits;
-
-    if (dlgHF.ShowDialog() == DialogResult.OK)
-
-    {
-
-        diagram1.Model.HeaderFooterData.Header = dlgHF.Header;
-
-        diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
-
-    }
-
-}
-{% endhighlight %}
-
-
-![](Getting-Started_images/Getting-Started_img30.jpeg)
+   ~~~ cs
 
 
 
+			if (diagram1 != null && diagram1.Model != null)
+
+			{
+
+				HeaderFooterDialog dlgHF = new HeaderFooterDialog();
+
+				dlgHF.Header = diagram1.Model.HeaderFooterData.Header;
+
+				dlgHF.Footer = diagram1.Model.HeaderFooterData.Footer;
+
+				dlgHF.MeasurementUnits = diagram1.Model.MeasurementUnits;
+
+				if (dlgHF.ShowDialog() == DialogResult.OK)
+
+				{
+
+					diagram1.Model.HeaderFooterData.Header = dlgHF.Header;
+
+					diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
+
+				}
+
+			}
+
+   ~~~
+   {:.prettyprint }
 
 
-_Figure_ _33_: Diagram Header Footer Dialog Box
-
+   ![](Getting-Started_images/Getting-Started_img30.jpeg)
 
 
 4. Print Preview
 
-It will show a preview of the page which will appear when printed. The Print Preview dialog shows the preview of the page with the following: 
+   It will show a preview of the page which will appear when printed. The Print Preview dialog shows the preview of the page with the following: 
 
-* Page setup 
-* Page border set up 
-* Header and footers in the page
+   * Page setup 
+   * Page border set up 
+   * Header and footers in the page
 
-The following code snippet can be used for creating Print Preview dialog.
-
-
-
-{% highlight c# %}
+   The following code snippet can be used for creating Print Preview dialog.
 
 
 
-if (diagram1 != null)
-
-{
-
-    PrintDocument printDoc = diagram1.CreatePrintDocument();
-
-    PrintPreviewDialog printPreviewDlg = new PrintPreviewDialog();
-
-    printPreviewDlg.StartPosition = FormStartPosition.CenterScreen;
+   ~~~ cs
 
 
 
-    printDoc.PrinterSettings.FromPage = 0;
+		if (diagram1 != null)
 
-    printDoc.PrinterSettings.ToPage = 0;
+		{
 
-    printDoc.PrinterSettings.PrintRange = PrintRange.AllPages;
+			PrintDocument printDoc = diagram1.CreatePrintDocument();
 
+			PrintPreviewDialog printPreviewDlg = new PrintPreviewDialog();
 
-
-    printPreviewDlg.Document = printDoc;
-
-    printPreviewDlg.ShowDialog(this);
-
-}
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img31.jpeg)
+			printPreviewDlg.StartPosition = FormStartPosition.CenterScreen;
 
 
 
+			printDoc.PrinterSettings.FromPage = 0;
+
+			printDoc.PrinterSettings.ToPage = 0;
+
+			printDoc.PrinterSettings.PrintRange = PrintRange.AllPages;
 
 
-_Figure_ _34_: Print Preview Dialog Box
+
+			printPreviewDlg.Document = printDoc;
+
+			printPreviewDlg.ShowDialog(this);
+
+		}
+
+   ~~~
+   {:.prettyprint }
+
+   ![](Getting-Started_images/Getting-Started_img31.jpeg)
 
 
 
+
+
+    
 5. Print
 
-This option will send the diagram document to the printer.
+   This option will send the diagram document to the printer.
 
-The following code snippet can be used for sending the document for printing.
+   The following code snippet can be used for sending the document for printing.
 
 
 
@@ -1664,9 +1643,7 @@ if (diagram1 != null)
 
 Diagram Builder Tools
 
-
-
-_Table_ _5_: Editing Options
+_Editing Options
 
 <table>
 <tr>
@@ -1707,7 +1684,7 @@ Diagram1.Controller.SelectAll();</td></tr>
 </table>
 
 
-Pan & Zoom Tool
+#### Pan & Zoom Tool
 
 The following screenshot illustrates the pan and zoomtools.
 
@@ -1715,77 +1692,50 @@ The following screenshot illustrates the pan and zoomtools.
 
 ![](Getting-Started_images/Getting-Started_img32.jpeg)
 
-
-
-
-
-_Figure_ _35_: Pan&Zoom Tool
-
-
-
-_Table_ _6_: Pan & Zoom Tool
+_Pan & Zoom Tool
 
 <table>
 <tr>
 <th>
 Tool Name</th><th>
 Description</th><th>
-Code Snippet</th><th>
-</td><td>
-</td><td>
-</td></tr>
+Code Snippet</th>
+</tr>
 <tr>
 <td>
 Pan Tool</td><td>
 Pan tool allows the user to drag the diagram and hence scroll it in any direction.</td><td>
-diagram1.Controller.ActivateTool("PanTool");</td><td>
-</td><td>
-</td><td>
-</td></tr>
+diagram1.Controller.ActivateTool("PanTool");</td>
+</tr>
 <tr>
 <td>
 Zoom Tool</td><td>
 Zoom tool allows the user to zoom the diagram with minimum and maximum magnification.</td><td>
-diagram1.Controller.ActivateTool("ZoomTool");</td><td>
-</td><td>
-</td><td>
-</td></tr>
+diagram1.Controller.ActivateTool("ZoomTool");</td></tr>
 <tr>
 <td>
 Magnification</td><td>
 This value is used to zoom the view in and out. The x and y axes can be scaled independently. Normally, the x and y axes will have the same magnification value.</td><td>
-int magVal = 30;diagram1.View.Magnification= magVal;</td><td>
-</td><td>
-</td><td>
-</td></tr>
+int magVal = 30;diagram1.View.Magnification= magVal;</td></tr>
 <tr>
 <td>
 ShowGrid</td><td>
 This will show / hide the diagram view grid.</td><td>
-Diagram1.View.Grid.Visible = true;</td><td>
-</td><td>
-</td><td>
-</td></tr>
+Diagram1.View.Grid.Visible = true;</td></tr>
 <tr>
 <td>
 SnapToGrid</td><td>
 Specifies whether the snap to grid feature is enabled.</td><td>
-Diagram1.View.Grid.SnapToGrid =true; </td><td>
-</td><td>
-</td><td>
-</td></tr>
+Diagram1.View.Grid.SnapToGrid =true; </td></tr>
 <tr>
 <td>
 Rulers</td><td>
 Diagram control supports rulers similar to that in Microsoft Word. For details see Rulers</td><td>
-Diagram1.ShowRulers=true;</td><td>
-</td><td>
-</td><td>
-</td></tr>
+Diagram1.ShowRulers=true;</td></tr>
 </table>
 
 
-Alignment Tool
+#### Alignment Tool
 
 The following screen shot illustrates the Alignmenttools.
 
@@ -1796,17 +1746,14 @@ The following screen shot illustrates the Alignmenttools.
 
 
 
-
-_Figure_ _36_:  Alignment Tool
-
-_Table_ _7_: Alignment Tool
+_Alignment Tool
 
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 AlignLeft</td><td>
@@ -1840,7 +1787,7 @@ diagram1.AlignBottom();</td></tr>
 </table>
 
 
-Rotate Tool
+#### Rotate Tool
 
 The following screen shot illustrates the Rotatetools.
 
@@ -1848,22 +1795,14 @@ The following screen shot illustrates the Rotatetools.
 
 ![](Getting-Started_images/Getting-Started_img34.jpeg)
 
-
-
-
-
-_Figure_ _37_:  Rotate Tools
-
-
-
-_Table_ _8_: Rotate Tools
+_Rotate Tools
 
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 RotateLeft</td><td>
@@ -1887,7 +1826,7 @@ diagram1.FlipHorizontal();</td></tr>
 </table>
 
 
-Resize Tool
+#### Resize Tool
 
 The following screen shot illustrates the Resizetools.
 
@@ -1896,21 +1835,14 @@ The following screen shot illustrates the Resizetools.
 ![](Getting-Started_images/Getting-Started_img35.jpeg)
 
 
-
-
-
-_Figure_ _38_: Resize Tools
-
-
-
-_Table_ _9_: Resize Tools
+_Resize Tools
 
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 SpaceAcross</td><td>
@@ -1939,7 +1871,7 @@ diagram1.SameWidth();</td></tr>
 </table>
 
 
-Nudge Tool
+#### Nudge Tool
 
 The following screen shot illustrates the Nudgetools.
 
@@ -1947,22 +1879,14 @@ The following screen shot illustrates the Nudgetools.
 
 ![](Getting-Started_images/Getting-Started_img36.jpeg)
 
-
-
-
-
-_Figure_ _39_: Nudge Tools
-
-
-
-_Table_ _10_: Nudge Tools
+_Nudge Tools_
 
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 NudgeUp</td><td>
@@ -1994,22 +1918,14 @@ The following screen shot illustrates the Text Formattingtools.
 
 ![](Getting-Started_images/Getting-Started_img37.jpeg)
 
-
-
-
-
-_Figure_ _40_: Text Formatting Tools
-
-
-
-_Table_ _11_: Text Formatting Tools
+ _Text Formatting Tools_
 
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 Font Family</td><td>
@@ -2083,7 +1999,7 @@ int nCurrentOffset = this.diagram1.Controller.TextEditor.CharOffset;nCurrentOffs
 </table>
 
 
-Group & Order Tool
+#### Group & Order Tool
 
 The following screen shot illustrates the Group and Ordertools.
 
@@ -2093,20 +2009,14 @@ The following screen shot illustrates the Group and Ordertools.
 
 
 
-
-
-_Figure_ _41_: Group & Order Tools
-
-
-
-_Table_ _12_: Group & Order Tools
+_Group & Order Tools_
 
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 Group</td><td>
@@ -2140,7 +2050,7 @@ Diagram1.Controller.SendBackward();</td></tr>
 </table>
 
 
-Drawing Tools
+#### Drawing Tools
 
 The following screen shot illustrates the drawingtools.
 
@@ -2149,19 +2059,12 @@ The following screen shot illustrates the drawingtools.
 ![](Getting-Started_images/Getting-Started_img39.png)
 
 
-
-_Figure_ _42_: Drawing Tools
-
-
-
-_Table_ _13_: Drawing Tools
-
 <table>
 <tr>
-<td>
-Tool Name</td><td>
-Description</td><td>
-Code Snippet</td></tr>
+<th>
+Tool Name</th><th>
+Description</th><th>
+Code Snippet</th></tr>
 <tr>
 <td>
 SelectTool</td><td>
@@ -2245,7 +2148,7 @@ diagram1.Controller.ActivateTool("ConnectionPointTool");</td></tr>
 </table>
 
 
-Diagram Connector Tools
+#### Diagram Connector Tools
 
 The following screen shot illustrates the Diagram Connectortools.
 
@@ -2253,15 +2156,7 @@ The following screen shot illustrates the Diagram Connectortools.
 
 ![](Getting-Started_images/Getting-Started_img40.jpeg)
 
-
-
-
-
-_Figure_ _43_: Diagram Connector Tools
-
-
-
-LineConnectorTool  
+#### LineConnectorTool  
 
 
 Line Connector Tool is used to connect nodes in a straight line. It creates line shape nodes. The name of the LineConnectorTool is LineLinkTool.
@@ -2269,14 +2164,11 @@ Line Connector Tool is used to connect nodes in a straight line. It creates line
 The below table lists the properties of the tool.
 
 
-
-_Table_ _14_: LineConnectorTool
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeadDecorator</td><td>
@@ -2326,19 +2218,17 @@ if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
 
 {% endhighlight %}
 
-Orthogonal Connector Tool
+#### Orthogonal Connector Tool
 
 Orthogonal Connector Tool is used to connect nodes in an orthogonal manner by providing its start point and end point. It creates the Orthogonal Line Shape node. The name of the Orthogonal Connector Tool is OrthogonalLinkTool. The below table lists the properties of the tool.
 
 
 
-_Table_ _15_: Orthogonal Connector Tool
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeadDecorator</td><td>
@@ -2384,19 +2274,16 @@ if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
 
 {% endhighlight %}
 
-DirectedLineConnector Tool
+#### DirectedLineConnector Tool
 
 DirectedLineConnector Tool is used to connect the nodes in a directed line. It creates the directed line shape node. The name of the DirectedLineConnectorTool is DirectedLineLinkTool. The below table lists the properties of the tool.
 
 
-
-_Table_ _16_: DirectedLineConnector Tool
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeadDecorator</td><td>
@@ -2442,7 +2329,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
 
 {% endhighlight %}
 
-PolyLineConnector Tool
+#### PolyLineConnector Tool
 
 This is an interactive tool for drawing Polyline Connector. The name of the tool is "PolyLineLinkTool". The below table lists the properties of the PolyLine tool.
 
@@ -2450,9 +2337,9 @@ This is an interactive tool for drawing Polyline Connector. The name of the tool
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeadDecorator</td><td>
@@ -2504,26 +2391,23 @@ Creating a Diagram using Diagram Builder
 
 To create your own diagram in the diagram builder, follow the below given procedure.
 
-1.  Go to the File menu and click New. The new window is displayed as in the following screen shot.
+1. Go to the File menu and click New. The new window is displayed as in the following screen shot.
 
 
 
-![](Getting-Started_images/Getting-Started_img41.jpeg)
+   ![](Getting-Started_images/Getting-Started_img41.jpeg)
 
 
 
 
 
-_Figure_ _44_: Diagram Builder
-
-
-
+  
 2. To add symbols into the symbol palette, select Add SymbolPalette in the File menu. 
 3. Select the symbol palette, which you created previously using symbol designer from the list of Symbol Palettes displayed.
 
 
 
-![](Getting-Started_images/Getting-Started_img42.jpeg)
+   ![](Getting-Started_images/Getting-Started_img42.jpeg)
 
 
 
@@ -2548,7 +2432,7 @@ Software Path
 
 [drive:]\Program Files\Syncfusion\Essential Studio\<Version Number>\Utilities\Diagram\Windows Forms\ Symbol Designer
 
-Creating EDP File
+#### Creating EDP File
 
 To create our own custom symbols in the symbol designer, follow the procedure given below.
 
@@ -2629,9 +2513,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
  ![](Getting-Started_images/Getting-Started_img51.png)
 
- _Figure_ _54_: Different Symbols
-
-
+ 
 
 * The above symbols are added to the symbol palette. You will get a symbol palette as shown in the following screen shot.
 
@@ -2650,70 +2532,72 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 ## Create your first Diagram
 
 1. You can create the Diagram in two ways.
-* Creating a diagram control by using Designer
+   
+   * Creating a diagram control by using Designer
 
-Drag and Drop the Diagram control from the toolbox into the designer form to create a diagram using Designer.  
+   Drag and Drop the Diagram control from the toolbox into the designer form to create a diagram using Designer.  
 
-![](Getting-Started_images/Getting-Started_img53.png)
-
-
-
-
-
-* Creating a diagram control by using code.
-
-To create a Diagram control using code, create a new Windows Forms application and add the following basic dependent Syncfusion assemblies to the project:
-
-* Syncfusion.Core.dll
-* Syncfusion.Diagram.Base.dll
-* Syncfusion.Diagram.Windows.dll
-* Syncfusion.Shared.Base.dll
+   ![](Getting-Started_images/Getting-Started_img53.png)
 
 
 
-Create a Diagram control using the following code.
+
+
+   * Creating a diagram control by using code.
+
+   To create a Diagram control using code, create a new Windows Forms application and add the following basic dependent Syncfusion assemblies to the project:
+
+   * Syncfusion.Core.dll
+   * Syncfusion.Diagram.Base.dll
+   * Syncfusion.Diagram.Windows.dll
+   * Syncfusion.Shared.Base.dll
 
 
 
-{% highlight c# %}
-
-//Imports the Diagram control’s namespaces
-
-            using Syncfusion.Windows.Forms.Diagram.Controls;
-
-            using Syncfusion.Windows.Forms.Diagram;
+   Create a Diagram control using the following code.
 
 
 
-//Create an instance
+   ~~~ cs
 
-            Diagram diagram = new Diagram();
+		//Imports the Diagram control’s namespaces
 
+					using Syncfusion.Windows.Forms.Diagram.Controls;
 
-
-//Enable scroll bars            
-
-            diagram.HScroll = true;
-
-            diagram.VScroll = true;
+					using Syncfusion.Windows.Forms.Diagram;
 
 
 
-//Sizing the diagram
+		//Create an instance
 
-            diagram.Size = new Size(400, 400);
+					Diagram diagram = new Diagram();
 
-//Positioning the diagram
 
-            diagram.Location = new Point(20, 5);
 
-{% endhighlight %}
+		//Enable scroll bars            
 
-Establishing Database Connectivity
+					diagram.HScroll = true;
+
+					diagram.VScroll = true;
+
+
+
+		//Sizing the diagram
+
+					diagram.Size = new Size(400, 400);
+
+		//Positioning the diagram
+
+					diagram.Location = new Point(20, 5);
+
+   ~~~
+   {:.prettyprint }
+
+   #### Establishing Database Connectivity
 
 2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that have 2 columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
 
-{% highlight c# %}
+   ~~~ cs
 
         //Windows Form Load
 
@@ -2764,16 +2648,17 @@ Establishing Database Connectivity
         }
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 3. Use the following code example to establish the connection with the Database and retrieve the data in the form of Datatable.
 
-{% highlight c# %}
+   ~~~ vbnet
 
 
 
-private DataTable DataSource()
+		private DataTable DataSource()
 
         {
 
@@ -2796,7 +2681,8 @@ private DataTable DataSource()
         }
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 The following code example explains how to apply the layout for the data retrieved from the Database.

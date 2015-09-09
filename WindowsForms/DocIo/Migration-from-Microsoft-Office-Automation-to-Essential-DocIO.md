@@ -199,7 +199,7 @@ Dim replaceText As String = "World"
 
 > {{ '![](Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_images/Migration-from-Microsoft-Office-Automation-to-Essential-DocIO_img2.png)' | markdownify }}
 
-> Note: For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:_
+N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:_
 
 <http://docs.syncfusion.com/windowsforms/docio/find-and-replace>
 

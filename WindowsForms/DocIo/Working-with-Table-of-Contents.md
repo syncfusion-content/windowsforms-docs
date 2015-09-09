@@ -28,15 +28,13 @@ Class Hierarchy
 
 ParagraphItem
 
-|
+&brvbar;
 
 TableOfContent
 
 
 
-Public Constructors
-
-Table 89 : Public Constructors
+#### Public Constructors
 
 <table>
 <tr>
@@ -54,9 +52,8 @@ Initializes a new instance of the TableOfContent class.  </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 90 : Public Properties
 
 <table>
 <tr>
@@ -107,7 +104,7 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 
 
 
-> Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels.
+N> DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels.
 
 
 
@@ -117,9 +114,8 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 
 
 
-Public Methods
+#### Public Methods
 
-Table 91 : Public Methods
 
 <table>
 <tr>
@@ -179,11 +175,11 @@ UpdatingTableOfContents method of WordDocument class updates table of contents f
 
 
 
-> Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications.
+N> UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications.
 
 
 
-Known Limitations
+#### Known Limitations
 
 The following are the known limitations:
 

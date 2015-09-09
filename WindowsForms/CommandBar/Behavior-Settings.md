@@ -3,7 +3,7 @@ layout: post
 title: Behavior-Settings
 description: behavior settings
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -15,7 +15,6 @@ The behavior settings of the CommandBar control are given below.
 
 The cursor settings of the CommandBar can be customized using the property given below.
 
-Table 20: CommandBar Property Table
 
 <table>
 <tr>
@@ -52,7 +51,6 @@ N> The ResetCursor() method can be used to reset the Cursor property to it's def
 
 The index and offset settings of rows can be customized using the properties given below.
 
-Table 21: CommandBar Property Table
 
 <table>
 <tr>
@@ -96,7 +94,6 @@ Me.commandBar1.RowOffset = 0
 
 The CommandBar control can be hidden using the property given below.
 
-Table 22: CommandBar Property Table
 
 <table>
 <tr>
@@ -131,7 +128,6 @@ Me.commandBar1.Visible = True
 
 The elements of the CommandBarController can be aligned from right to left and vice versa using the property given below.
 
-Table 23: CommandBarController Property Table
 
 <table>
 <tr>

@@ -3,7 +3,7 @@ layout: post
 title: ComboDropDown-Appearance
 description: combodropdown appearance
 platform: WindowsForms
-control: Editors Package
+control: ComboDropDown
 documentation: ug
 ---
 
@@ -15,7 +15,6 @@ This section discusses the appearance settings for ComboDropDown control.
 
 The below properties lets you set 3D border style for the control. 
 
-Table 212: Property Table
 
 <table>
 <tr>
@@ -68,5 +67,5 @@ Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 N> ComboDropDown.Style property should be set to Default to effect the above settings. 
 
 {% seealso %}
-[Themes and Styles](/windowsforms/combodropdown/themes-and-styles)topic.
+[Themes and Styles](/windowsforms/combodropdown/themes-and-styles) topic.
 {% endseealso %} 

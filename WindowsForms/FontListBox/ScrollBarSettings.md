@@ -15,7 +15,6 @@ FontListBox control by default has a vertical scrollbar. It can also have a hori
 
 Horizontal scrollbar can be displayed if the items are beyond the right edge of the FontListBox. The below properties lets you do that.
 
-Table 382: Property Table
 
 <table>
 <tr>
@@ -54,10 +53,11 @@ Me.fontListBox1.HorizontalScrollbar = True
 
  ![](Overview_images/Overview_img580.jpeg) 
 
-See Also
+{% seealso %}
 
-How to display the scrollbars always, irrespective of the number of items?
+[How to display the scrollbars always, irrespective of the number of items?](/windowsforms/fontlistbox/faq/how-to-display-the-scrollbars-always-irrespective-of-the-number-of-items)
 
+{% endseealso %}
 
 ## FontListBox Items
 

@@ -60,7 +60,6 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions helps you quickly to identify the important sections of information while using the content.
 
-Table 1 : Document Conventions
 
 <table>
 <tr>

@@ -19,15 +19,8 @@ The following images shows how the Find dialog in Edit Control is localized to F
 
 
 
-_Figure_ _80_: Find dialog localized to French
-
-
-
 ![](Localization-and-Globalization_images/Localization-and-Globalization_img2.jpeg)
 
-
-
-_Figure_ _81_: Find dialog localized to Spanish
 
 
 
@@ -60,8 +53,7 @@ Edit Control supports complete localization of all the dialog boxes associated w
    For example, the following figure shows the Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog.resources file that is opened in the WinRes tool, showing strings in German (strings are converted using some language converter).
    
    ![](Localization-and-Globalization_images/Localization-and-Globalization_img3.jpeg)
-   
-   _Figure_ _82_: Replacing strings in English to German by using the WinRes Utility
+
 
 
 
@@ -117,9 +109,6 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
     ![](Localization-and-Globalization_images/Localization-and-Globalization_img4.jpeg)
 
-
-
-    _Figure_ _83_: Find dialog box localized to German
 
 
 

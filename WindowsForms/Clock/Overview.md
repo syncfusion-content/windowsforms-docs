@@ -17,7 +17,6 @@ You can create an application with a control that indicates time, using this fea
 
 ## Properties
 
-Table 679: Property Table
 
 <table>
 <tr>
@@ -123,7 +122,7 @@ enum</td></tr>
 </table>
 Events
 
-Table 680: Events Table
+_Events Table_
 
 <table>
 <tr>

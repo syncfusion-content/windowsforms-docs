@@ -47,9 +47,7 @@ WParagraph
 
 
 
-Public Constructors
-
-Table 40 : Public Constructors
+#### Public Constructors
 
 <table>
 <tr>
@@ -63,9 +61,8 @@ Initializes a new instance of the WParagraph class. </td></tr>
 </table>
 
 
-Public Properties
+#### #### Public Properties
 
-Table 41 : Public Properties
 
 <table>
 <tr>
@@ -119,9 +116,8 @@ Gets or sets text for a paragraph.</td></tr>
 </table>
 
 
-Public Methods
+#### Public Methods
 
-Table 42 : Public Methods
 
 <table>
 <tr>
@@ -260,7 +256,7 @@ WTextRange class represents a piece of text that has separate formatting. You ca
 
 You can also use the AppendText method of the WParagraph class to append text to the paragraph.
 
-> Note: AppendText method appends a new text range to the paragraph with the default character formatting.
+N> AppendText method appends a new text range to the paragraph with the default character formatting.
 
 
 
@@ -276,7 +272,6 @@ WextRange
 
 PublicConstructors
 
-Table 43 : Public Constructors
 
 <table>
 <tr>
@@ -290,9 +285,8 @@ Initializes a new instance of the WTextRange class.</td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 44 : Public Properties
 
 <table>
 <tr>
@@ -466,9 +460,8 @@ WPicture
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 45 : Public Constructors
 
 <table>
 <tr>
@@ -482,9 +475,8 @@ Gets the type of the entity. </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 46 : Public Properties
 
 <table>
 <tr>
@@ -570,9 +562,8 @@ Gets or sets the title to the picture</td></tr>
 </table>
 
 
-Public Methods
+#### Public Methods
 
-Table 47 : Public Methods
 
 <table>
 <tr>
@@ -640,7 +631,6 @@ WListFormat
 
 Public Constructor
 
-Table 48 : Public Constructor
 
 <table>
 <tr>
@@ -654,9 +644,8 @@ Initializes new instance of WListFormat class.</td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 49 : Public Properties
 
 <table>
 <tr>
@@ -690,9 +679,8 @@ Gets or sets whether numbering of the list must restart from previous list. </td
 </table>
 
 
-Public Methods
+#### Public Methods
 
-Table 50 : Public Methods
 
 <table>
 <tr>
@@ -834,9 +822,8 @@ Essential DocIO provides support to insert, edit, and replace hyperlinks as fiel
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 51 : Public Constructors
 
 <table>
 <tr>
@@ -850,9 +837,8 @@ Initializes a new instance of the Hyperlink class.</td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 52 : Public Properties
 
 <table>
 <tr>
@@ -971,9 +957,7 @@ WTextBox
 
 
 
-Public Constructors
-
-Table 53 : Public Constructors
+#### Public Constructors
 
 <table>
 <tr>
@@ -987,9 +971,8 @@ Initializes a new instance of the WTextBox class.  </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 54 : Public Properties
 
 <table>
 <tr>
@@ -1123,9 +1106,8 @@ WComment
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 55 : Public Constructors
 
 <table>
 <tr>
@@ -1139,9 +1121,8 @@ Initializes a new instance of the WComment class.  </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 56 : Public Properties
 
 <table>
 <tr>
@@ -1163,11 +1144,10 @@ Gets the comment text body.  </td></tr>
 </table>
 
 
-WCommentFormat has the following public properties and methods.
+WCommentFormat has the following Public Properties and methods.
 
-Public Methods
+#### Public Methods
 
-Table 57 : Public Methods
 
 <table>
 <tr>
@@ -1193,9 +1173,8 @@ Replace the commented document content.</td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 58 : Public Properties
 
 <table>
 <tr>
@@ -1243,9 +1222,7 @@ You can access comments while browsing through the collection of paragraph items
 
 
 
-Public Methods
-
-Table 59 : Public Methods
+#### Public Methods
 
 <table>
 <tr>
@@ -1291,9 +1268,8 @@ WSymbol
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 60 : Public Constructors
 
 <table>
 <tr>
@@ -1307,9 +1283,8 @@ Initializes a new instance of the WSymbol class.  </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 61 : Public Properties
 
 <table>
 <tr>
@@ -1376,7 +1351,7 @@ You can use the AppendBreak method of WParagraph to insert a break by using DocI
 * Line
 
 
-> Note: Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method.
+N> Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method.
 
 
 
@@ -1390,9 +1365,8 @@ Break
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 62 : Public Constructors
 
 <table>
 <tr>
@@ -1410,9 +1384,8 @@ Initializes a new instance of the Break class with Break Type.  </td></tr>
 </table>
 
 
-Public Constructors
+#### Public Constructors
 
-Table 63 : Public Constructors
 
 <table>
 <tr>
@@ -1470,7 +1443,7 @@ By using the WOleObject instance, you can insert content from one program to ano
 
 ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img8.jpeg)
 
-> Note: Only installed programs that support OLE objects appear in the Object dialog box.
+N> Only installed programs that support OLE objects appear in the Object dialog box.
 
 
 
@@ -1545,15 +1518,14 @@ Essential DocIO provides support for embedding OLE objects in a Word document to
 
 ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img10.jpeg)
 
-> Note: Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
+N> Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
 
 
 
 Following are the API details of this feature:
 
-Public Constructors
+#### Public Constructors
 
-Table 64 : Public Constructors
 
 <table>
 <tr>
@@ -1567,9 +1539,8 @@ Gets the type of the entity. </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 65 : Public Properties
 
 <table>
 <tr>

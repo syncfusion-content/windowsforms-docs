@@ -154,8 +154,6 @@ A sample which demonstrates this feature is available in the below sample instal
 
 DateTimePickerAdv supports globalization through DateTimePickerAdv.Culture property.
 
-_Table195: Property Table_
-
 <table>
 <tr>
 <th>

@@ -29,13 +29,11 @@ The model and the number of rows and column values are passed as parameters to t
 
 
 
-_Table_ _33_: Table Layout Manager
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Model</td><td>
@@ -166,14 +164,11 @@ Graph orientation is determined by the rotation degree parameter while initializ
 The parameters to be defined for the DirectedTreeLayoutManager class are listed in the below table.
 
 
-
-_Table_ _34_: DirectedTreeLayoutManager
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Model</td><td>
@@ -247,10 +242,6 @@ Sample Diagrams are as follows.
 
 
 
-
-
-_Figure_ _82_: Right-to- Left with 90 degree Rotation Angle
-
 ### Radial Tree Layout Manager
 
 The Radial Tree Layout Manager is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The RadialTreeLayoutManager arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. 
@@ -260,14 +251,11 @@ The Radial Tree Layout Manager is a specialization of the Directed Tree Layout M
 The following parameters need should be specified for the RadialTreeLayoutManager.
 
 
-
-_Table_ _35_: RadialTreeLayoutManager
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Model</td><td>
@@ -336,14 +324,11 @@ The Symmetric layout manager arranges all the nodes in a symmetric fashion using
 The Model and Vertical Distance values are passed as parameters to the SymmetricLayoutManager class. The parameters and properties of Symmetric Layout Manager is listed below.
 
 
-
-_Table_ _36_: SymmetricLayoutManager
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Model</td><td>
@@ -428,14 +413,11 @@ Hierarchical layout manager arranges the nodes in a hierarchical fashion dependi
 The parameters to be passed for the HierarchicalLayoutManager class are as follows: 
 
 
-
-_Table_ _37_: HierarchicalLayoutManager
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Model</td><td>
@@ -505,13 +487,11 @@ The event of the Graph Layout Manager class and its description is given below:
 
 
 
-_Table_ _38_: GraphLayoutManager
-
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 PreferredLayout Event</td><td>
@@ -599,11 +579,6 @@ The following is a sample Diagram showing GraphLayoutManager:
 ![](Layout-Management_images/Layout-Management_img13.jpeg)
 
 
-
-
-
-_Figure_ _89_: Graph Layout Manager
-
 ### Subgraph Layout Manager 
 
 The SubgraphTreeLayoutManager enables the sub nodes of a diagram layout tree to have an orientation that is distinct from the parent node. The subgraph orientation is specified using a SubgraphPreferredLayout event that the layout manager raises before positioning each set of sub nodes in the graph.
@@ -613,14 +588,11 @@ The SubgraphTreeLayoutManager enables the sub nodes of a diagram layout tree to 
 The event of the SubgraphLayoutManager class is as follows:
 
 
-
-_Table_ _39__: SubgraphLayoutManager_
-
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 SubgraphPreferredLayout</td><td>
@@ -697,14 +669,11 @@ End Sub
 Event arranges all the nodes in parent-child relationship with the new OrgLineConnector that connects the nodes to get the OrgLayout appearance. The OrgLineConnector is specially designed for connecting the nodes in OrgChartLayoutManager.
 
 
-
-_Table_ _40_: OrgChartLayoutManager
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Model</td><td>

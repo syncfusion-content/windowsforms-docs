@@ -3,7 +3,7 @@ layout: post
 title: Appearance-and-Behavior-Settings
 description: appearance and behavior settings
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxBase
 documentation: ug
 ---
 

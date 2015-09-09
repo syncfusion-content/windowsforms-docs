@@ -3,7 +3,7 @@ layout: post
 title: Visual Styles
 description: Visual Styles
 platform: WindowsForms
-control: Tools
+control: ComboBoxAutoComplete
 documentation: ug
 ---
 
@@ -34,6 +34,7 @@ this.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Offic
 Me.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2007
 
 Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+
 {% endhighlight %}
 
 
@@ -67,6 +68,7 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen);
 Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
 
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
+
 {% endhighlight %}
 
 

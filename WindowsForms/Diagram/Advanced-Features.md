@@ -21,7 +21,7 @@ A node's behavior can be customized and modified using the EditStyle collection 
 
 
 
-_Table_ _41_: Node Selections
+_Node Selections_
 
 <table>
 <tr>
@@ -109,7 +109,7 @@ Behavior Settings
 
 
 
-_Table_ _42_: Properties
+_Properties_
 
 <table>
 <tr>
@@ -223,7 +223,7 @@ By default, the central port for a diagram is enabled using the EnableCentralPor
 
 
 
-_Table_ _43_: Port Properties
+_Port Properties_
 
 <table>
 <tr>
@@ -270,20 +270,13 @@ Sample diagram is as follows:
 ![](Advanced-Features_images/Advanced-Features_img5.jpeg)
 
 
-
-
-
-_Figure_ _97_: Central Port
-
-
-
 #### Custom ports
 
 Custom ports can be defined at any position of the diagram node, thus allowing the creation of any number of connection ports at any position on the node. All the connections can be defined from the required point or port. Unlike the default port, the custom port when set, will be visible. The DrawPorts property must be enabled for custom ports to be created.
 
 
 
-> Note: When a link is drawn to a node or another link and when the EnableCentralPort is set to True, the links cannot be connected to the custom port. Hence make sure to disable that property for the links and the nodes to connect the links to the custom ports.
+N> When a link is drawn to a node or another link and when the EnableCentralPort is set to True, the links cannot be connected to the custom port. Hence make sure to disable that property for the links and the nodes to connect the links to the custom ports.
 
 <table>
 <tr>
@@ -347,7 +340,7 @@ The VisualType property available for the port can be used for customizing the s
 
 
 
-_Table_ _45_: Port Shapes
+_Port Shapes_
 
 <table>
 <tr>
@@ -357,7 +350,8 @@ Description</th></tr>
 <tr>
 <td>
 VisualType</td><td>
-The default value is XPort. The options included are as follows:* CirclePort* XPort* TrianglePort* SquarePort* RhombPort* Custom</td></tr>
+The default value is XPort. The options included are as follows:
+<ul><li> CirclePort</li><li> XPort</li><li> TrianglePort</li><li>SquarePort</li><li>RhombPort</li><li> Custom</li></ul></td></tr>
 </table>
 
 
@@ -389,11 +383,6 @@ Sample diagram is as follows,
 ![](Advanced-Features_images/Advanced-Features_img8.jpeg)
 
 
-
-
-
-_Figure_ _99_: Different Port Shapes
-
 ### Connection Point Properties
 
 ConnectionPoint class provides points to connect to other nodes using a connector. It is available in different custom appearance and in different sizes.
@@ -402,7 +391,7 @@ The ConnectionPointType and ConnectionsLimit properties are available for the po
 
 
 
-_Table_ _46_: ConnectionPointType
+_ConnectionPointType_
 
 <table>
 <tr>
@@ -452,22 +441,12 @@ cp.ConnectionsLimit = 12
 
 
 
-
-_Figure_ _100_: ConnectionPoint Collection Editor
-
-
-
 Sample diagram  is as follows:
 
 
 
 ![](Advanced-Features_images/Advanced-Features_img10.jpeg)
 
-
-
-
-
-_Figure_ _101_: Rectangle with ConnectionPoint
 
 
 
@@ -578,7 +557,7 @@ The point at which the connection should be established can be easily customized
 
 
 
-_Table_ _47_: Properties
+Properties
 
 <table>
 <tr>
@@ -596,7 +575,8 @@ Specifies the Y offset value where the link should be aligned.  It positions th
 <tr>
 <td>
 Position</td><td>
-Specifies the position where the links should be connected to the node. Default value is Center. The options included are as follows:* Center* TopLeft* TopCenter* TopRight* MiddleLeft* MiddleRight* BottomLeft* BottomCenter* BottomRight* Custom</td></tr>
+Specifies the position where the links should be connected to the node. Default value is Center. The options included are as follows:
+<ul><li> Center</li><li> TopLeft</li><li> TopCenter</li><li> TopRight</li><li> MiddleLeft</li><li>MiddleRight</li><li>BottomLeft</li><li> BottomCenter</li><li>BottomRight</li><li> Custom</li></ul></td></tr>
 </table>
 
 
@@ -641,18 +621,8 @@ Sample diagram is as follows,
 
 
 
-
-_Figure_ _105_: BottomLeft ConnectionPoint
-
-
-
 ![](Advanced-Features_images/Advanced-Features_img15.jpeg)
 
-
-
-
-
-_Figure_ _106_: TopCenter ConnectionPoint
 
 
 
@@ -660,19 +630,8 @@ _Figure_ _106_: TopCenter ConnectionPoint
 
 
 
-
-
-_Figure_ _107_: MiddleRight ConnectionPoint
-
-
-
 ![](Advanced-Features_images/Advanced-Features_img17.jpeg)
 
-
-
-
-
-_Figure_ _108_: ConnectionPoint in Specified X & Y Offset
 
 #### Reject Connections
 
@@ -715,18 +674,13 @@ rect1.Ports.Add(port)
 ![](Advanced-Features_images/Advanced-Features_img18.png)
 
 
-
-
-
-_Figure_ _109_: Rejected Connection
-
 ## Undo / Redo
 
 The actions can be recorded into the history manager such that the undo and redo operations can be performed. The recording can be controlled and the undo and redo actions can be performed using the following tools.
 
 
 
-_Table_ _48_: Undo / Redo Properties_
+_Undo / Redo Properties_
 
 <table>
 <tr>
@@ -793,12 +747,7 @@ Layers are transparent sheets that can be added to the model and the objects are
 ![](Advanced-Features_images/Advanced-Features_img19.png)
 
 
-
-
-
-_Figure_ _110_: Model Layers
-
-Sample Layers
+#### Sample Layers
 
 A layer organizes graphical objects into groups that share a common set of default properties and Z-order. Users can add any number of layers to the model and move objects between layers. Objects in a layer have the same Z-order, which can be relatively controlled with respect to other layers. 
 
@@ -930,17 +879,13 @@ sp.Layers.Add(layer3)
 
 
 
-_Figure_ _111_: Diagram with Three Layers
-
-
-
-Adding Layers
+#### Adding Layers
 
 Layers can be added to the model through LayersCollectionEditor, which can be opened by selecting the Layers Collection property.
 
 
 
-_Table_ _49_: Layers
+_Layers_
 
 <table>
 <tr>
@@ -1016,7 +961,7 @@ Rulers can be enabled by setting the ShowRulers property for the diagram control
 
 The height of the ruler can be set through RulersHeight property.
 
-_Table_ _50_: RulersHeight
+_RulersHeight_
 
 <table>
 <tr>
@@ -1066,19 +1011,13 @@ Sample diagram is as follows,
 
 
 
-
-
-_Figure_ _112_: Diagram with Rulers
-
-
-
-Diagram With Rulers
+### Diagram With Rulers
 
 Horizontal and vertical rulers can be displayed by setting the ShowRulers property. Both the horizontal and vertical rulers can be customized using various properties, which can be separately applied for each of the rulers.
 
 
 
-_Table_ _51_: Diagram With Rulers
+_Diagram With Rulers_
 
 <table>
 <tr>
@@ -1186,12 +1125,6 @@ Sample diagram is as follows,
 
 
 
-
-
-_Figure_ _113_: Vertical ruler Property Settings
-
-
-
 These properties can be set separately for the horizontal ruler by using HorizontalRuler instead of VerticalRuler as follows.
 
 
@@ -1279,80 +1212,81 @@ There are two ways available to add a Group in diagram control:
 
 
 
-{% highlight c# %}
+   ~~~ cs
 
 
 
-//Node 1
+		//Node 1
 
 
 
-Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect = new Syncfusion.Windows.Forms.Diagram.Rectangle(50, 100, 125, 75);
+		Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect = new Syncfusion.Windows.Forms.Diagram.Rectangle(50, 100, 125, 75);
 
-nodeRect.FillStyle.Color = Color.FromArgb(255, 223, 189);
+		nodeRect.FillStyle.Color = Color.FromArgb(255, 223, 189);
 
-nodeRect.LineStyle.LineColor = Color.Orange;
+		nodeRect.LineStyle.LineColor = Color.Orange;
 
-Syncfusion.Windows.Forms.Diagram.Label lbl = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect, "Rectangle");
+		Syncfusion.Windows.Forms.Diagram.Label lbl = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect, "Rectangle");
 
-lbl.FontStyle.Size = 12;
+		lbl.FontStyle.Size = 12;
 
-lbl.FontStyle.Bold = true;
+		lbl.FontStyle.Bold = true;
 
-nodeRect.Labels.Add(lbl);
-
-
-
-//Node 2
-
-Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect1 = new Syncfusion.Windows.Forms.Diagram.Rectangle(150, 100, 125, 75);
-
-nodeRect1.FillStyle.Color = Color.FromArgb(255, 223, 189);
-
-nodeRect1.LineStyle.LineColor = Color.Orange;
-
-Syncfusion.Windows.Forms.Diagram.Label lbl1 = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect1, "Rectangle1");
-
-lbl1.FontStyle.Size = 12;
-
-lbl1.FontStyle.Bold = true;
-
-nodeRect1.Labels.Add(lbl1);
+		nodeRect.Labels.Add(lbl);
 
 
 
-//Grouping Nodes
+		//Node 2
 
-Syncfusion.Windows.Forms.Diagram.Group grp = new Group();
+		Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect1 = new Syncfusion.Windows.Forms.Diagram.Rectangle(150, 100, 125, 75);
 
-grp.AppendChild(nodeRect);
+		nodeRect1.FillStyle.Color = Color.FromArgb(255, 223, 189);
 
-grp.AppendChild(nodeRect1);
+		nodeRect1.LineStyle.LineColor = Color.Orange;
 
-this.DiagramWebControl1.Model.AppendChild(grp);
+		Syncfusion.Windows.Forms.Diagram.Label lbl1 = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect1, "Rectangle1");
 
-{% endhighlight %}
+		lbl1.FontStyle.Size = 12;
+
+		lbl1.FontStyle.Bold = true;
+
+		nodeRect1.Labels.Add(lbl1);
+
+
+
+		//Grouping Nodes
+
+		Syncfusion.Windows.Forms.Diagram.Group grp = new Group();
+
+		grp.AppendChild(nodeRect);
+
+		grp.AppendChild(nodeRect1);
+
+		this.DiagramWebControl1.Model.AppendChild(grp);
+
+   ~~~
+   {:.prettyprint }
 
 2. Diagram control support two direct methods for Grouping and UnGrouping as follows.
 
 
 
-{% highlight c# %}
+   ~~~ cs
 
 
 
-this.diagram1.Controller.Group();     //Method to Group the nodes
+		this.diagram1.Controller.Group();     //Method to Group the nodes
 
-this.diagram1.Controller.UnGroup();   //Method to UnGroup the nodes
+		this.diagram1.Controller.UnGroup();   //Method to UnGroup the nodes
 
+   ~~~
+   {:.prettyprint }
 
-
-How to access the child nodes in a Group, and how to delete / remove the node?
+#### How to access the child nodes in a Group, and how to delete / remove the node?
 
 The first step is to check whether the node is a Group.
 
 
-{% endhighlight %}
 {% highlight c# %}
 
 
@@ -1477,7 +1411,7 @@ group.GroupNodePosition = GroupNodePositions.Absolute
 
 
 
-_Table_ _52_: Properties
+Properties
 
 <table>
 <tr>
@@ -1489,13 +1423,13 @@ Default value</th><th>
 Value Accepted</th><th>
 Reference</th></tr>
 <tr>
-<th>
-GroupNodePosition</th><th>
-Specifies the mode in which the group node’s child should be positioned.</th><th>
-GroupNodePositions</th><th>
-Relative</th><th>
-Absolute,Relative</th><th>
-GroupNodePosition</th></tr>
+<td>
+GroupNodePosition</td><td>
+Specifies the mode in which the group node’s child should be positioned.</td><td>
+GroupNodePositions</td><td>
+Relative</td><td>
+Absolute,Relative</td><td>
+GroupNodePosition</td></tr>
 </table>
 
 ## Scrolling, Zooming And Panning Support
@@ -1506,13 +1440,13 @@ The interactive features like scrolling, zooming and panning support are discuss
 
 The horizontal and vertical scrollbars can be displayed or hidden by handling the HScroll and VScroll properties.
 
-_Table_ _53_: Scroll Support
+Scroll Support
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 HScroll</td><td>
@@ -1557,24 +1491,19 @@ Sample diagram is as follows,
 ![](Advanced-Features_images/Advanced-Features_img27.jpeg)
 
 
-
-
-
-_Figure_ _118_: Diagram With Scroll Settings
-
 ScrollGranularity determines the level of granularity for scrolling. The value of this property must be greater than 0. This value is multiplied by virtual size of the view in order to get the scroll range. For example, if the virtual size of the view is 100x50 and this property is set to 0.5f, then the horizontal scroll range is set to 0.50 and the vertical scroll range is set to 0.25.
 
 SmoothMouseWheelScrolling specifies whether the control should perform one scroll command (faster) or if it should perform multiple scroll commands with smaller increments (smoother) when user rolls mouse wheel.
 
 
 
-_Table_ _54_: Properties
+Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 EnableIntelliMouse</td><td>
@@ -1666,7 +1595,7 @@ Scrolling behavior can be controlled by setting the AccelerateScrolling property
 
 
 
-_Table_ _55_: Scroll Behavior
+Scroll Behavior
 
 <table>
 <tr>
@@ -1712,7 +1641,7 @@ Me.diagram1.AllowIncreaseSmallChange = True
 
 The HorizontalThumbTrack and VerticalThumbTrack properties allows to handle whether the scroll bar thumb should be used for scrolling.
 
-_Table_ _56_: ThumbTrack
+ThumbTrack
 
 <table>
 <tr>
@@ -1762,7 +1691,7 @@ The format in which the scrolltip should be displayed can be specified using the
 
 
 
-_Table_ _57_: ScrollTips
+ScrollTips
 
 <table>
 <tr>
@@ -1816,7 +1745,7 @@ Me.diagram1.ScrollTipFormat = "Offset{0}"
 
 When splitter control is used and one or more diagram controls are added, setting the FillSplitterPane docks the diagram control inside the splitter control and fills the entire space.
 
-_Table_ _58_: Splitter
+Splitter
 
 <table>
 <tr>
@@ -1853,11 +1782,6 @@ Me.diagram1.FillSplitterPane = True
 ![](Advanced-Features_images/Advanced-Features_img30.png)
 
 
-
-
-
-_Figure_ _121_: Scroll With Splitter Control
-
 ### Zoom Support
 
 One of the interactive features of Essential Diagram is its zooming capabilities. This feature allows you to interactively zoom in and out of the diagram in the following ways:
@@ -1870,7 +1794,7 @@ One of the interactive features of Essential Diagram is its zooming capabilities
 
 Users can zoom in and out of diagram content based on their requirements.
 
-_Table_ _59_: Properties
+Properties
 
 <table>
 <tr>
@@ -1891,7 +1815,7 @@ float</td></tr>
 </table>
 
 
-_Table_ _60_: Methods
+Methods
 
 <table>
 <tr>
@@ -1901,29 +1825,29 @@ Description </th><th>
 Parameters </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-ZoomIn</th><th>
-Zoom in on the diagram document.</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ZoomIn</td><td>
+Zoom in on the diagram document.</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-ZoomOut</th><th>
-Zoom out of the diagram document. </th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ZoomOut</td><td>
+Zoom out of the diagram document. </td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-ZoomToSelection</th><th>
-Zoom the diagram document to the specified selection bounds.</th><th>
-RectangleF  </th><th>
-void</th></tr>
+<td>
+ZoomToSelection</td><td>
+Zoom the diagram document to the specified selection bounds.</td><td>
+RectangleF  </td><td>
+void</td></tr>
 <tr>
-<th>
-ZoomToActual</th><th>
-Zoom the document to its actual size.</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ZoomToActual</td><td>
+Zoom the document to its actual size.</td><td>
+NA</td><td>
+void</td></tr>
 </table>
 
 #### ZoomIn, ZoomOut, ZoomToActual, ZoomToSelection
@@ -2055,7 +1979,7 @@ Essential Diagram supports zooming the diagram document to the pointer position 
 
 Essential Diagram supports a UI tool called ZoomTool which is used to zoom and select the diagram document interactively. Users can use the ZoomTool’s MaximumMagnification and MinimumMagnification properties to restrict the document’s maximum or minimum zoom levels and use the ZoomIncrement property to specify the amount to zoom each time the diagram is zoomed in or out.
 
-_Table_ _61_: Zoom Tool Properties
+Zoom Tool Properties
 
 <table>
 <tr>
@@ -2160,11 +2084,6 @@ Sample diagram is as follows.
 ![](Advanced-Features_images/Advanced-Features_img36.jpeg)
 
 
-
-
-
-_Figure_ _127_: Diagram With Pan Tool
-
 ## Event Handlers
 
 This section elaborates on the following:
@@ -2179,7 +2098,7 @@ This topic discusses the events that are fired while adding or removing the node
 
 
 
-_Table_ _62_: Node Collection Events
+Node Collection Events
 
 <table>
 <tr>
@@ -2201,7 +2120,7 @@ EventArgs members can be accessed using the following members.
 
 
 
-_Table_ _63_: Properties
+Properties
 
 <table>
 <tr>
@@ -2345,7 +2264,7 @@ The below table shows all the Tool Events.
 
 
 
-_Table_ _64_: Tool Events
+Tool Events
 
 <table>
 <tr>
@@ -2367,7 +2286,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _65_: Members
+Members
 
 <table>
 <tr>
@@ -2487,7 +2406,7 @@ Origin events are as follows,
 
 
 
-_Table_ _66_: Origin Events
+Origin Events
 
 <table>
 <tr>
@@ -2505,7 +2424,7 @@ Data can be retrieved or set by using the following members.
 
 
 
-_Table_ _67_: Members
+Members
 
 <table>
 <tr>
@@ -2703,19 +2622,8 @@ Sample diagrams are as follows.
 
 
 
-
-
-_Figure_ _132_: Origin Initial Stage
-
-
-
 ![](Advanced-Features_images/Advanced-Features_img42.jpeg)
 
-
-
-
-
-_Figure_ _133_: Origin Changed Stage
 
 #### Magnification Event 
 
@@ -2723,7 +2631,7 @@ When the control is zoomed in or out, the magnification events will be fired dis
 
 Magnification Events are as follows,
 
-_Table_ _68_: Magnification Events
+Magnification Events
 
 <table>
 <tr>
@@ -2741,7 +2649,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _69_: Member properties
+Member properties
 
 <table>
 <tr>
@@ -2826,7 +2734,7 @@ Diagram control provides support to notify users when the text in the Text Edito
 
 
 
-_Table_ _70_: Editor Events
+Editor Events
 
 <table>
 <tr>
@@ -2922,7 +2830,7 @@ DocumentEventSink class contains the events specific to the document. The variou
 
 Vertex Events are as follows,
 
-_Table_ _71_: Vertex Events
+Vertex Events
 
 <table>
 <tr>
@@ -2944,7 +2852,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _72_: Description
+Description
 
 <table>
 <tr>
@@ -3108,7 +3016,7 @@ Sample diagrams are as follows,
 
 
 
-_Table_ _73_: Pinpoint Events
+Pinpoint Events
 
 <table>
 <tr>
@@ -3138,7 +3046,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _74_: Members
+Members
 
 <table>
 <tr>
@@ -3332,7 +3240,7 @@ The below table discusses the available rotation events with descriptions.
 
 
 
-_Table_ _75_: Rotation Events
+Rotation Events
 
 <table>
 <tr>
@@ -3362,7 +3270,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _76_: Members
+Members
 
 <table>
 <tr>
@@ -3380,7 +3288,7 @@ Returns the angle by which the node was rotated.</td></tr>
 </table>
 
 
-_Table_ _77_: Flip EventArgs Member
+Flip EventArgs Member
 
 <table>
 <tr>
@@ -3558,7 +3466,7 @@ When the node order is changed from front-to-back or back-to-front, the Z-Order 
 
 
 
-_Table_ _78_: ZOrder events
+ZOrder events
 
 <table>
 <tr>
@@ -3580,7 +3488,7 @@ Data can be retrieved / set by using the following members.
 
 
 
-_Table_ _79_: Members
+Members
 
 <table>
 <tr>
@@ -3700,7 +3608,7 @@ The below table explains the Connections and Ports events.
 
 
 
-_Table_ _80_: Connections and Ports Events
+Connections and Ports Events
 
 <table>
 <tr>
@@ -3722,7 +3630,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _81_: Members
+Members
 
 <table>
 <tr>
@@ -3902,7 +3810,7 @@ Property Events are as follows.
 
 
 
-_Table_ _82_: Property Events
+Property Events
 
 <table>
 <tr>
@@ -3924,7 +3832,7 @@ Data can be retrieved or set using the following members.
 
 
 
-_Table_ _83_: Members
+Members
 
 <table>
 <tr>
@@ -3950,7 +3858,7 @@ Returns name of the property whose value is changed.</td></tr>
 </table>
 
 
-_Table_ _84_: Members
+Members
 
 <table>
 <tr>
@@ -4054,7 +3962,7 @@ The following table shows the label events:
 
 
 
-_Table_ _85_: Labels And Layers Events
+Labels And Layers Events
 
 <table>
 <tr>
@@ -4240,7 +4148,7 @@ Use Case Scenarios
 
 This feature enables easy access of frequently used options. 
 
-_Table_ _86_: Properties_
+Properties_
 
 <table>
 <tr>
@@ -4321,12 +4229,13 @@ To view a sample:
 1. Open the Syncfusion Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
+
 ## Adding Shapes by Clicking the Diagram Page
 
 
 Essential Diagram enables you to draw the selected node by clicking the Diagram page instead of dragging from the Symbol Palette. 
 
-_Table_ _87_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -4383,7 +4292,7 @@ paletteGroupBar1.Diagram = diagram1;
 ![](Advanced-Features_images/Advanced-Features_img61.png)
 
 
-> Note: Click the Diagram page to add the selected node. Click and drag to get the required size._ 
+N> Click the Diagram page to add the selected node. Click and drag to get the required size. 
 
 Sample Link
 
@@ -4403,7 +4312,7 @@ Essential Diagram for Windows Forms provides preview support for Symbol Palette.
 
 This feature displays a preview of the item you drag from Symbol Palette, thus enables you to identify the item you are dragging from the symbol palette to Diagram view.
 
-_Table_ _88_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -4478,11 +4387,11 @@ Following code example illustrates how to enable preview support:
 
 
 
-![](Advanced-Features_images/Advanced-Features_img63.png)
+
 
 {% endhighlight %}
 
-
+![](Advanced-Features_images/Advanced-Features_img63.png)
 
 The following code illustrates how to disable preview support: 
 
@@ -4520,7 +4429,7 @@ To view a sample:
 
 Essential Diagram for Windows Forms provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles provide better visual effects for your diagram and increase the performance speed of the diagram while dragging, rotating, or resizing nodes.
 
-_Table_ _89_: Properties Table
+Properties Table
 
 <table>
 <tr>
@@ -4600,7 +4509,7 @@ The following table describes the various properties associated with Diagram Gui
 
 
 
-_Table_ _90_: Guides Properties
+Guides Properties
 
 <table>
 <tr>
@@ -4706,7 +4615,7 @@ The following table describes the property associated with turning on/off touch 
 
 
 
-_Table_ _91_: Touch support Properties
+Touch support Properties
 
 <table>
 <tr>
@@ -4748,17 +4657,8 @@ diagram1.TouchMode = True
 
 
 
-_Figure_ _156_: Touch Support in Diagram Control_
-
-
-
 ![](Advanced-Features_images/Advanced-Features_img67.png)
 
-
-
-
-
-_Figure_ _157_: Touch Support in Diagram Control
 
 ## Dynamic Properties
 
@@ -4774,7 +4674,7 @@ It is used to store additional data to the nodes or connectors as needed.
 
 
 
-_Table_ _92_: Properties
+Properties
 
 <table>
 <tr>
@@ -4817,7 +4717,4 @@ node.PropertyBag.Add("Designation", emply.Designation)
 
 ![C:/Users/amsathm/Desktop/dynamic - Copy.png](Advanced-Features_images/Advanced-Features_img68.png)
 
-
-
-_Figure_ _158_: Dynamic Properties in a Diagram
 

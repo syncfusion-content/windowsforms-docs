@@ -3,7 +3,7 @@ layout: post
 title: Advanced-Features
 description: advanced features
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxAdv
 documentation: ug
 ---
 
@@ -15,13 +15,12 @@ This section will discuss the auto complete support available for the ComboBoxAd
 
 ComboBoxAdv has in-built support of auto-completion of the text entered in the control. This feature is automatically enabled for the control. To disable, set ComboBoxAdv.AutoComplete property to false. 
 
-_Table_ _219_: _Properties_
 
 <table>
 <tr>
-<td>
-ComboBoxAdv Properties</td><td>
-Description</td></tr>
+<th>
+ComboBoxAdv Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CaseSensitiveAutoComplete</td><td>
@@ -170,5 +169,5 @@ Me.comboBoxAdv1.DisplayMember = "place"
 
 {% endhighlight %}
 
-![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxDataTable.png](Overview_images/Overview_img306.png) 
+![](Overview_images/Overview_img306.png) 
 

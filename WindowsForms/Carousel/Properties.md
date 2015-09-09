@@ -10,8 +10,6 @@ documentation: ug
 # Properties 
 
 
-Table6 : Property Table
-
 <table>
 <tr>
 <th>

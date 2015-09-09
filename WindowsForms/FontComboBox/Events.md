@@ -75,7 +75,7 @@ To add FontSelected event, derive the classes as shown below.
 	   {
 	   // FontSelected event fires here.
 	   if(FontSelected!=null) FontSelected(this,e);
-	   base.OnSelectedIndexChanged (e);
+			base.OnSelectedIndexChanged (e);
 	   }
    ~~~
    {:.prettyprint}

@@ -30,17 +30,15 @@ This section covers the requirements mandatory for installing Essential DICOM. I
 
 The prerequisites details are listed below: 
 
-_Table_ _1_: Prerequisites
-
 <table>
 <tr>
 <td>
 Development Environments</td><td>
-* Visual Studio 2010 (Ultimate, Premium, Professional and Express)* Visual Studio 2008 (Team System, Professional, Standard & Express)* Visual Studio 2005 (Professional, Standard & Express)* Silverlight 4.0 </td></tr>
+<ul><li> Visual Studio 2010 (Ultimate, Premium, Professional and Express)</li><li> Visual Studio 2008 (Team System, Professional, Standard & Express)</li><li> Visual Studio 2005 (Professional, Standard & Express)</li><li> Silverlight 4.0</li></ul> </td></tr>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-* .NET 4.0* .NET 3.5 SP1* .NET 2.0</td></tr>
+<ul><li>.NET 4.0</li><li> .NET 3.5 SP1</li><li> .NET 2.0</li></ul></td></tr>
 </table>
 
 
@@ -50,14 +48,11 @@ Development Environments</td><td>
 The compatibility details are listed below: 
 
 
-
-_Table_ _2_: Compatibility
-
 <table>
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<ul><li> Windows Server 2008 (32 bit and 64 bit)</li><li> Windows 7 (32 bit and 64 bit)</li><li> Windows Vista (32 bit and 64 bit)</li><li> Windows XP</li><li> Windows 2003</li></ul></td></tr>
 </table>
 
 ## Documentation
@@ -65,9 +60,6 @@ Operating Systems</td><td>
 
 Syncfusion provides the following documentation segments to provide all the necessary information pertaining to Essential DICOM.
 
-
-
-_Table_ _3_: Documentation
 
 <table>
 <tr>

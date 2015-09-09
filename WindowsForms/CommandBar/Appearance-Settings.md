@@ -3,7 +3,7 @@ layout: post
 title: Appearance-Settings
 description: appearance settings
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -21,7 +21,6 @@ The background settings of the CommandBar control are discussed below.
 
 The back color of the CommandBarController can be set using the property given below.
 
-Table 14: CommandBarController Property Table
 
 <table>
 <tr>
@@ -57,7 +56,6 @@ Me.CommandBarController1.BackColor = System.Drawing.Color.RosyBrown
 
 The back color of the CommandBar can be set using the property given below.
 
-Table 15: CommandBar Property Table
 
 <table>
 <tr>
@@ -106,7 +104,6 @@ The foreground settings of the CommandBar control are discussed below.
 
 The gripper plays a major role in the CommandBar package. It allows the user to dock / float the CommandBar at runtime.
 
-Table 16: CommandBar Property Table
 
 <table>
 <tr>
@@ -146,7 +143,6 @@ Me.commandBar1.HideGripper=True
 
 The font of the text displayed in the CommandBar can be customized using the property given below.
 
-Table 17: CommandBar Property Table
 
 <table>
 <tr>
@@ -190,7 +186,6 @@ N> The ResetFont() method can be used to reset the Font property to it's default
 
 The properties that define the dimensions for the CommandBar are given below. During design time, the control's size can be changed by editing these property values.
 
-Table 18: CommandBar Property Table
 
 <table>
 <tr>
@@ -262,7 +257,6 @@ Me.commandBar1.IntegralHeight = 2
 
 The method associated with the above properties is given below.
 
-Table 19: Method Table
 
 <table>
 <tr>

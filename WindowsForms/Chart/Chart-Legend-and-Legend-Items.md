@@ -17,12 +17,6 @@ Essential Chart by default displays a legend with information on each series tha
 
 
 
-
-
-_Figure_ _282_: _Chart with Legend and Legend Items_
-
-
-
 1. Legend - The rectangular region that lists one or more legend items.
 2. Legend Item - Represented by an icon or image and a text; this usually gets rendered automatically corresponding to each ChartSeries in the chart. You can also add custom legend items to a Legend.
 3. Symbols - These refer to the symbols drawn at the data points in a plot. The legend items corresponding to the series can also be rendered with this symbol instead of an icon.
@@ -112,10 +106,6 @@ series[1].LegendName = "legend2"
 
 Here are some common properties you could use to customize the overall legend appearance:
 
-
-
-_Table_ _117_: _Legend Look and Feel_
-
 <table>
 <tr>
 <th>
@@ -132,7 +122,7 @@ If set to true, a checkbox will be displayed beside each legend item. And if thi
 </table>
 
 
-_Table_ _118_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -170,9 +160,6 @@ Sets the layout for the background image.</td></tr>
 
 The legend positioning can be affected in the following ways.
 
-
-
-_Table_ _119_: _Legend Positioning_
 
 <table>
 <tr>
@@ -217,26 +204,23 @@ ColumnsCount</td><td>
 Specifies the number of columns in which the legend items should be rendered.</td></tr>
 </table>
 
-
-> Note: Note that the user can drag the legend around during run time. He can dock it to the sides if docking is enabled. Docking behavior is controlled by Behavior property which is described in the above table.
+Note that the user can drag the legend around during run time. He can dock it to the sides if docking is enabled. Docking behavior is controlled by Behavior property which is described in the above table.
 
 ### Changing Legend Properties at Run Time
 
 The Legend's look and feel can also be customized during runtime. Double-clicking legend's text will pop up the below properties window. Properties set through this dialogue can be applied to the chart. 
 
-> Note: These settings will be lost when the application is closed.
+N> These settings will be lost when the application is closed.
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img4.jpeg)
 
 
 
+{% seealso %}
 
+[ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend)
 
-_Figure_ _283_: _Legend Properties Dialog Box_
-
-### See Also
-
-ChartLegend
+{% endseealso %}
 
 ## ChartLegendItem
 
@@ -317,8 +301,6 @@ Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img5.jpeg)
 
 
-_Figure_ _284_: _Custom Legend Item_
-
 ### Customizing items through event
 
 There is also a way to specify custom legend item via events right before they get rendered. 
@@ -369,17 +351,12 @@ End Sub
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img6.jpeg)
 
 
-_Figure_ _285_: _Chart with Legends in specified order using FilterItems Event_
-
 ### Legend Item's Look and Feel
 
 The legend item's look and feel can be customized to a good extent using the following properties in ChartLegend. 
 
 These settings affect all the items in the legend.
 
-
-
-_Table_ _120_: _Legend Item Properties_
 
 <table>
 <tr>
@@ -437,7 +414,7 @@ Specifies the horizontal alignment of the title text. Possible Values:Center (De
 </table>
 
 
-_Table_ _121_: _Legend Item Properties_
+_Legend Item Properties_
 
 <table>
 <tr>
@@ -478,10 +455,6 @@ NA</td></tr>
 </table>
 
 
-
-
-_Table_ _122_: _ChartLegend Properties_
-
 <table>
 <tr>
 <th>
@@ -496,9 +469,6 @@ Gets the legend item at the specified coordinates.</td></tr>
 
 You can also reference specific legend items and apply settings on them individually:
 
-
-
-_Table_ _123_: _Legend Item Properties_
 
 <table>
 <tr>
@@ -566,27 +536,24 @@ Lets you show / hide the legend item.</td></tr>
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img7.jpeg)
 
-_Figure_ _286_: _Chart with "Series1" Legend Item Unchecked_
 
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)
 
 
-_Figure_ _287_: _Chart with Multiline Legend Title 'Multiline Legend Text'_
 
 
 
-### See Also
+{% seealso %}
 
-ChartLegend, Customizing LegendItem Image
+[ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend), [Customizing LegendItem Image](/windowsforms/chart/chart-legend-and-legend-items#customizing-legenditem-image)
+
+{% endseealso %}
 
 ## Customizing LegendItem Image
 
 There are several options to customize the image rendered in the Legend. The following properties let you do so:
 
-
-
-_Table_ _124_: _ChartLegend Property_
 
 <table>
 <tr>
@@ -607,9 +574,6 @@ Specifies how each legend item should be represented, as the name implies:None (
 
 The following ChartLegendItem properties that can be accessed via the Legend.Items list typically override the above settings set in the Legend.
 
-
-
-_Table_ _125_: _ChartLegendItem Property_
 
 <table>
 <tr>
@@ -675,7 +639,6 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Serie
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img9.jpeg)
 
-_Figure_ _288_: _Legend Item with the Series Type Icon_
 
 To do this for specific legend items,
 
@@ -762,10 +725,6 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg)
 
 
-_Figure_ _289_: _Legend Items rendered with the Same Symbol_
-
-
-
 ### Custom Representation Icon
 
 You can also choose to use one of the built-in representation icons in the legend items.
@@ -793,7 +752,7 @@ Me.chartControl1.Legend.Items(0).Interior = New BrushInfo(Color.Violet)
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg)
 
-_Figure_ _290_: _Legend Item with a Custom Representation Icon_
+
 
 To do the above only on specific legend items, use the ChartLegendItem.Type property.
 
@@ -844,7 +803,7 @@ chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg)
 
-_Figure_ _291_: _LegendItem customized with "Triangle" Symbol in "Yellow" Color_
+
 
 ### Custom Images
 
@@ -899,7 +858,6 @@ Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.image
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)
 
-_Figure_ _292_: _Chart Legend Items with Custom Images_
 
 ### Hiding Icons
 
@@ -949,6 +907,8 @@ Me.chartControl1.Legend.Items(0).Type = ChartLegendItemType.None
 
 {% endhighlight %}
 
-### See Also
+{% seealso %}
 
-ChartLegend, ChartLegendItem
+[ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend), [ChartLegendItem](/windowsforms/chart/chart-legend-and-legend-items#chartlegenditem)
+
+{% endseealso %}

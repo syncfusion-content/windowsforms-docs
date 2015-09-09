@@ -3,7 +3,7 @@ layout: post
 title: Popup-Menu
 description: popup menu
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 

@@ -15,7 +15,6 @@ The following section contains document that enables users to migrate .Net Grid 
 
 ## Equivalent Properties available
 
-_Table 75: Properties_
 
 <table>
 <tr>
@@ -112,7 +111,6 @@ Gets or sets a value indicating whether control's elements are aligned to suppor
 
 ## Equivalent Events available
 
-_Table 76: Events_
 
 <table>
 <tr>
@@ -169,7 +167,6 @@ Occurs when row height changes.</td></tr>
 
 ## Methods
 
-_Table 77: Methods_
 
 <table>
 <tr>

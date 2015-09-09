@@ -19,7 +19,7 @@ Some commonly used statistical formulas that you can apply on the series points 
 
 
 
-_Table_ _150_: _BasicStatisticalFormulas_
+_BasicStatisticalFormulas_
 
 <table>
 <tr>
@@ -158,7 +158,7 @@ EssentialChart provides support to perform Anova Test by implementing a method n
 
 
 
-_Table_ _151_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -198,9 +198,6 @@ The following image displays the results of an ANOVA test.
 ![](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg)
 
 
-
-_Figure_ _347_: _Anova Test_
-
 ### Correlation
 
 Correlation, which is otherwise called as Correlation Coefficient, is a statistical formula that determines the degree of relationship between the y values of two series representing two variables. This calculation will then be used to measure the depth of synchronization between those two variables. 
@@ -229,7 +226,7 @@ The Correlation Coefficient can easily be calculated by using the Correlation me
 
 
 
-_Table_ _152_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -272,7 +269,7 @@ Correlation1=BasicStatisticalFormulas.Correlation(series,series1)
 {% endhighlight %}
 
 
-> Note: For further details, refer to this Browser Sample:
+N> For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\ Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -300,7 +297,7 @@ The Covariance can easily be calculated by using the Covariance method available
 
 
 
-_Table_ _153_: _Property_
+_Property_
 
 <table>
 <tr>
@@ -342,7 +339,7 @@ Covariance1=BasicStatisticalFormulas.Covariance (series,series1)
 
 {% endhighlight %}
 
-> Note: For further details, refer to this Browser Sample:
+N> For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -365,7 +362,7 @@ F-Test can be easily performed by using the FTest method of BasicStatisticalForm
 
 
 
-_Table_ _154_: _F-Test_
+_F-Test_
 
 <table>
 <tr>
@@ -400,7 +397,7 @@ Dim ttr As FTestResult = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisti
 
 {% endhighlight %}
 
-> Note: For further details, refer to this Browser Sample:
+N> For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -410,7 +407,7 @@ Mean is statistical formula that returns the arithmetic average of series y valu
 
 
 
-_Table_ _155_: _Mean_
+_Mean_
 
 <table>
 <tr>
@@ -453,7 +450,7 @@ calculatedMean = BasicStatisticalFormulas.Mean(series1)
 
 {% endhighlight %}
 
-> Note: For further details, refer to this Browser Sample:
+N> For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -465,7 +462,7 @@ Median can be found out for any series by using the Median method of BasicStatis
 
 
 
-_Table_ _156_: _Median_
+_Median_
 
 <table>
 <tr>
@@ -507,7 +504,7 @@ calculatedMedian = BasicStatisticalFormulas.Median(series1)
 
 {% endhighlight %}
 
-> Note: For further details, refer to this Browser Sample:
+N> For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -521,7 +518,7 @@ The Standard Deviation can be calculated for any series by using the StandardDev
 
 
 
-_Table_ _157_: _StandardDeviation_
+_StandardDeviation_
 
 <table>
 <tr>
@@ -563,7 +560,7 @@ Deviation1 = BasicStatisticalFormulas. StandartDeviation  (series1,false)
 
 {% endhighlight %}
 
-> Note: For further details, refer to this Browser Sample:
+N> For further details, refer to this Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -603,7 +600,7 @@ This formula performs a T-test for two groups of data and assumes unequal varian
 
 This analysis tool is referred to as a heteroscedastic t-test and can be used when the groups that are under study are distinct. Use a paired test when there is one group before and after a treatment.
 
-> Note: For programming example, refer to the following Browser Sample:
+N> For programming example, refer to the following Browser Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -654,7 +651,7 @@ The TTest formula for equal variances can be calculated by using the TTestEqualV
 
 
 
-_Table_ _158_: _Property_
+_Property_
 
 <table>
 <tr>
@@ -735,7 +732,7 @@ The TTest formula for unequal variances can be calculated by using the TTestUnEq
 
 
 
-_Table_ _159_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -800,7 +797,7 @@ The TTest formula for dependent samples can be calculated by using the TTestPair
 
 
 
-_Table_ _160_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -848,7 +845,7 @@ The variance can be computed for any series by using the method Variance of Basi
 
 
 
-_Table_ _161_: _Variance_
+_Variance_
 
 <table>
 <tr>
@@ -929,7 +926,7 @@ The Z-test can be carried out on any two series values by using the ZTest method
 
 
 
-_Table_ _162_: _Z Test Properties_
+_Z Test Properties_
 
 <table>
 <tr>
@@ -967,7 +964,7 @@ Dim ztr As ZTestResult = BasicStatisticalFormulas.ZTest(Convert.ToDouble(TextBox
 
 {% endhighlight %}
 
-> Note: For programming example, refer to the following Sample:
+N> For programming example, refer to the following Sample:
 
 [Installed drive]:\Documents and Settings\[User name]\My Documents\Syncfusion\EssentialStudio\[Installed version]\Windows\Chart.Windows\Samples\2.0\Statistical Analysis\Chart Statistical Formulas
 
@@ -977,7 +974,7 @@ Listed below are some common statistical formulas that are implemented in the Ut
 
 
 
-_Table_ _163_: _Utilities_
+_Utilities_
 
 <table>
 <tr>
@@ -1066,7 +1063,7 @@ The Beta method of the UtilityFunctions class calculates the beta function for 
 
 
 
-_Table_ _164_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1118,7 +1115,7 @@ The BetaCumulativeDistribution method of the UtilityFunctions class returns the 
 
 
 
-_Table_ _165_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1198,7 +1195,7 @@ The Binomial method of the UtilityFunctions class returns the binomial coefficie
 
 
 
-_Table_ _166_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1244,7 +1241,7 @@ The InverseBetaCumulativeDistribution method of the UtilityFunctions class retur
 
 
 
-_Table_ _167_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1298,7 +1295,7 @@ The Erf method of the UtilityFunctions class returns integral of the Gauss curve
 
 
 
-_Table_ _168_: _Utility Functions_
+_Utility Functions_
 
 <table>
 <tr>
@@ -1352,7 +1349,7 @@ The Factorial method of the UtilityFunctions class returns the factorial value f
 
 
 
-_Table_ _169_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1410,7 +1407,7 @@ FCumulativeDistribution is calculated using the Statistics.UtilityFunctions clas
 
 
 
-_Table_ _170_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1476,7 +1473,7 @@ The Gamma function is calculated using the Statistics.UtilityFunctions class. Th
 
 
 
-_Table_ _171_: _Statistics.UtilityFunctions_
+_Statistics.UtilityFunctions_
 
 <table>
 <tr>
@@ -1584,7 +1581,7 @@ The below table describes this function in detail.
 
 
 
-_Table_ _172_: _Inverse Error Function_
+_Inverse Error Function_
 
 <table>
 <tr>
@@ -1630,7 +1627,7 @@ InverseFCumulativeDistribution is calculated using the Statistics.UtilityFunctio
 
 
 
-_Table_ _173_: _Statistics.UtilityFunctions_
+_Statistics.UtilityFunctions_
 
 <table>
 <tr>
@@ -1678,7 +1675,7 @@ InverseNormalDistribution is calculated using the Statistics.UtilityFunctions cl
 
 
 
-_Table_ _174_: _Statistics.UtilityFunctions_
+_Statistics.UtilityFunctions_
 
 <table>
 <tr>
@@ -1729,8 +1726,6 @@ The normal density function is given by,
 
 ![](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg)
 
-_Figure_ _349_: _Normal Density Function_
-
 Different values of __ and  yield different normal density curves and hence different normal distributions.  All normal density curves satisfy the following property which is often referred to as the__Empirical Rule.
 
 * 68% of the observations fall within 1 standard deviation of the mean, that is, between __ -  and __ + . 
@@ -1745,7 +1740,7 @@ NormalDistribution is calculated using the Statistics.UtilityFunctions class. Th
 
 
 
-_Table_ _175_: _NormalDistribution_
+_NormalDistribution_
 
 <table>
 <tr>
@@ -1816,7 +1811,7 @@ and the variance is,
 
 
 
-_Table_ _176_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1827,7 +1822,9 @@ Return Value</th></tr>
 <tr>
 <td>
 NormalDistributionDensity</td><td>
-1. x: the value at which the distribution density is evaluated.2. m: the expected value of distribution.3. sigma: the variance of distribution.</td><td>
+1. x: the value at which the distribution density is evaluated.
+2. m: the expected value of distribution.
+3. sigma: the variance of distribution.</td><td>
 A double that represents the Normal Distribution Density  function value.</td></tr>
 </table>
 
@@ -1863,7 +1860,7 @@ InverseTCumulativeDistribution is calculated using the Statistics.UtilityFunctio
 
 
 
-_Table_ _177_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1874,7 +1871,9 @@ Return Value</th></tr>
 <tr>
 <td>
 InverseTCumulativeDistribution</td><td>
-1. p: the alpha value (probability). 2. degreeOfFreedom: an integer value that represents the degree of freedom. 3. oneTail: If true, one-tailed distribution is used; otherwise two-tailed distribution is used. </td><td>
+1. p: the alpha value (probability). 
+2. degreeOfFreedom: an integer value that represents the degree of freedom. 
+3. oneTail: If true, one-tailed distribution is used; otherwise two-tailed distribution is used. </td><td>
 A double that represents the Inverse of T cumulative distribution function probability.</td></tr>
 </table>
 
@@ -1921,7 +1920,7 @@ TCumulativeDistribution is calculated using the Statistics.UtilityFunctions clas
 
 
 
-_Table_ _178_: _Properties_
+_Properties_
 
 <table>
 <tr>
@@ -1932,7 +1931,9 @@ Return Value</th></tr>
 <tr>
 <td>
 TCumulativeDistribution</td><td>
-1. t Value: the T value for which you want the distribution. 2. degreeOfFreedom: an integer value that represents the degree of freedom. 3. oneTail: If true, one-tailed distribution is used; otherwise two-tailed distribution is used.</td><td>
+1. t Value: the T value for which you want the distribution. 
+2. degreeOfFreedom: an integer value that represents the degree of freedom.
+3. oneTail: If true, one-tailed distribution is used; otherwise two-tailed distribution is used.</td><td>
 A double that represents the T cumulative distribution function probability.</td></tr>
 </table>
 

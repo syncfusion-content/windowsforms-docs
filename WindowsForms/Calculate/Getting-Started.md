@@ -33,7 +33,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 2. Open the main form of the application in the designer.
 3. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already [This is done automatically when you install Essential Studio].
-4. Now you need to deploy Essential Calculate into this Windows application. Refer Windows topic for detailed information.
+4. Now you need to deploy Essential Calculate into this Windows application. Refer [Windows](http://docs.syncfusion.com/windowsforms/calculate/getting-started#windows) topic for detailed information.
 
 ### Web Application
 
@@ -55,7 +55,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 2. Open the main form of the application in the designer.
 3. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already [This is done automatically when you install Essential Studio].
-4. Now you need to deploy Essential Calculate into this WPF application. Refer WPF topic for detailed information.
+4. Now you need to deploy Essential Calculate into this WPF application. Refer [WPF](http://docs.syncfusion.com/windowsforms/calculate/getting-started#wpf) topic for detailed information.
 
 For more information refer the following topic. 
 

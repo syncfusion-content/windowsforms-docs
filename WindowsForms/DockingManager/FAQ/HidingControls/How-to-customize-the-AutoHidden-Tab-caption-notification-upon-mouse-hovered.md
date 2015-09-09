@@ -3,7 +3,7 @@ layout: post
 title: How to customize the AutoHidden Tab caption notification upon mouse hovered
 description: How to customize the AutoHidden Tab caption notification upon mouse hovered
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -18,9 +18,9 @@ This can be achieved by using the EnableAutoAdjustCaption property.
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 EnableAutoAdjustCaption</td><td>

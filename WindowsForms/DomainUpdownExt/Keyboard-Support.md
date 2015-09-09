@@ -10,8 +10,6 @@ documentation: ug
 
 Using Up and Down arrow keys we can increment and decrement the value of DomainUpDownExt control by settingInterceptArrowKeysto true.
 
-Table257: Property Table
-
 <table>
 <tr>
 <th>

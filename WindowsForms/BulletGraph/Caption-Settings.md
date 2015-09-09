@@ -41,19 +41,19 @@ The caption in the Bullet Graph is placed at the start or end of the quantitativ
 
 {% highlight c# %}
 
-            BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bulletgraph = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+bulletgraph.Dock = DockStyle.Fill;
 
-            bulletgraph.Caption = " Revenue YTD \n $ in thousands";
+bulletgraph.Caption = " Revenue YTD \n $ in thousands";
 
-            bulletgraph.CaptionPosition = BulletGraphCaptionPosition.Far;            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+bulletgraph.CaptionPosition = BulletGraphCaptionPosition.Far;            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
 
-            this.Controls.Add(bulletgraph);
+this.Controls.Add(bulletgraph);
 
 {% endhighlight %}
 

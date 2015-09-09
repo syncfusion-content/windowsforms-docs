@@ -3,7 +3,7 @@ layout: post
 title: ComboBoxAdv-Concepts-and-features
 description: comboboxadv concepts and features
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxAdv
 documentation: ug
 ---
 
@@ -19,7 +19,6 @@ ComboBoxAdv control has properties that change the appearance and behavior of th
 
 The following properties customize the text in the ComboBoxAdv control.
 
-Table 214: Properties
 
 <table>
 <tr>
@@ -71,7 +70,6 @@ Me.comboBoxAdv1.TextBox.ForeColor = Color.Red
 
 The selection of text during runtime can be controlled through the following properties.
 
-Table 215: Properties
 
 <table>
 <tr>
@@ -121,7 +119,6 @@ Me.comboBoxAdv1.TextBox.SelectionStart = 2
 
 The following properties deal with read-only settings for the ComboBoxAdv control. 
 
-Table 216: Properties
 
 <table>
 <tr>
@@ -163,7 +160,6 @@ Me.comboBoxAdv1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple
 
 The following properties control the behavior of the text typed in the Textbox. 
 
-Table 217: Properties
 
 <table>
 <tr>
@@ -247,7 +243,6 @@ You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvid
 
 Dropdown for the ComboBoxAdv control can be customized using the folllowing properties.
 
-Table 218: Properties
 
 <table>
 <tr>

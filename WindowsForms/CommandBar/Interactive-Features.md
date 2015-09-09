@@ -3,7 +3,7 @@ layout: post
 title: Interactive-Features
 description: interactive features
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -15,7 +15,6 @@ This section discusses the interactive features available in the CommandBar cont
 
 The term "chevron" is used for a menu that contains the toolbar icons that do not fit in the space available on the toolbar.
 
-Table 12: Chevron
 
 <table>
 <tr>

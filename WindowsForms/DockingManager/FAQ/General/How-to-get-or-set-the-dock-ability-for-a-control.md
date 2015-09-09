@@ -3,7 +3,7 @@ layout: post
 title: How to get or set the dock ability for a control
 description: How to get or set the dock ability for a control
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -11,13 +11,11 @@ documentation: ug
 
 The current dock ability for the controls can be retrieved or set using the below methods.
 
-Table 99: Methods Table
-
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetDockAbility</td><td>

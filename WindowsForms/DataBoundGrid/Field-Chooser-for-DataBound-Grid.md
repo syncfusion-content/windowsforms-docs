@@ -17,7 +17,6 @@ This feature will be useful when you want to remove certain columns (which canno
 
 Methods
 
-_Table 78: Field chooser_
 
 <table>
 <tr>

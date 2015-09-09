@@ -12,7 +12,6 @@ This section discusses the border settings of the GradientLabel control.
 
 The border style and sides of the GradientLabel can be customized using the properties given below.
 
-Table 390: Property Table
 
 <table>
 <tr>

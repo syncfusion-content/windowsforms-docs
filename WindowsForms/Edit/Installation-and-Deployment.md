@@ -19,11 +19,11 @@ For step-by-step installation procedure for the installation of Essential Studio
 
 
 
-See Also
+{% seealso %}
 
 For licensing, patches and information on adding or removing selective components, refer the following topics in Common UG under Installation and Deployment.
 
-
+{% endseealso %}
 
 * Licensing
 * Patches
@@ -57,11 +57,8 @@ To view the samples, follow the steps below:
 
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
-
-
-_Figure_ _2_: Syncfusion Essential Studio Dashboard
 
 
 
@@ -69,7 +66,7 @@ _Figure_ _2_: Syncfusion Essential Studio Dashboard
 
 
 
-> Note: You can view the samples in any of the following three ways:
+N> You can view the samples in any of the following three ways:
 
 
 
@@ -85,8 +82,6 @@ _Figure_ _2_: Syncfusion Essential Studio Dashboard
 
 
 
-_Figure_ _3_: User Interface Edition Windows Forms Sample Browser
-
 
 
 3. To view the samples of Edit control, click Edit from the bottom-left pane. 
@@ -94,10 +89,6 @@ _Figure_ _3_: User Interface Edition Windows Forms Sample Browser
 
 
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
-
-
-
-_Figure_ _4_: Essential Edit Samples for Windows
 
 
 

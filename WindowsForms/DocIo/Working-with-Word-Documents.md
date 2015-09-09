@@ -13,7 +13,7 @@ You can open, modify, and create Microsoft Word documents by using the WordDocum
 
 
 
-Public Properties
+#### Public Properties
 
 Table 7 : Public Properties
 
@@ -169,9 +169,9 @@ Gets information on actual format type of the document.</td></tr>
 </table>
 
 
-Public Constructors
+#### Public Constructors
 
-Table 8 : Public Constructors
+_Public Constructors_
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Initializes a new instance of the WordDocument class from existing Word document
 
 Public Methods
 
-Table 9 : Public Methods
+_Public Methods_
 
 <table>
 <tr>
@@ -338,7 +338,7 @@ Updates Paragraph Count, Word Count, and Character Count.</td></tr>
 By using Essential DocIO, you can create a copy of a whole Word document or a particular entity (such as WSection, WParagraph, WTable, WTextRange, etc.) by invoking the Clone method of the Entity. This method returns the shallow copy of the Entity that invoked the Clone method. By using this functionality, you can copy the whole document or part of its content along with its formatting from one document and add it to another document.
 
 
-> Note: When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document.
+N> When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document.
 
 The following code example illustrates how to merge two documents by using the Clone method.
 
@@ -475,7 +475,7 @@ Dim document As New WordDocument(filename, password)
 {% endhighlight %}
 
 
-> Note: Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform.
+N> Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform.
 
 
 
@@ -541,7 +541,6 @@ BuiltinDocumentProperties
 
 Public Properties
 
-Table 10 : Public Properties
 
 <table>
 <tr>
@@ -587,9 +586,7 @@ Gets the slide count.</td></tr>
 </table>
 
 
-Public Methods
-
-Table 11 : Public Methods
+#### Public Methods
 
 <table>
 <tr>
@@ -616,9 +613,8 @@ CustomDocumentProperties class enables you to create and save your own custom pr
 
 
 
-Public Properties
+#### Public Properties
 
-Table 12 : Public Properties
 
 <table>
 <tr>
@@ -632,9 +628,8 @@ Gets number of custom document properties in a document.</td></tr>
 </table>
 
 
-Public Methods
+#### Public Methods
 
-Table 13 : Public Methods
 
 <table>
 <tr>
@@ -662,9 +657,7 @@ This class represents each custom document property.
 
 
 
-Public Methods
-
-Table 14 : Public Methods
+#### Public Methods
 
 <table>
 <tr>
@@ -750,7 +743,7 @@ To set the background effects in a Microsoft Word document, open the Design menu
 
 
 
-Document Color
+#### Document Color
 
 Background class represents the background color and fill effects in a Word document. The type of the background effect is defined by using the Type property. This property can take the following variants:
 
@@ -762,15 +755,13 @@ Background class represents the background color and fill effects in a Word docu
 * Texture: Insert a picture as the.
 * Color: Color fill effect.
 
-> Note: Pattern fill effect is currently not supported by Essential DocIO.
+N> Pattern fill effect is currently not supported by Essential DocIO.
 
 By using the WordDocument.Background property, you can access the document background. The Background property of WordDocument is automatically initialized with the Type property of the Background set to NoBackground.
 
 
 
-Public Properties
-
-Table 15 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -797,12 +788,12 @@ Specifies the type of the background effect for a document.</td></tr>
 
 
 
-> Note: For more details on BackgroundGradient class, refer to the_ BackgroundGradient _topic.
+N> For more details on BackgroundGradient class, refer to the_ BackgroundGradient _topic.
 
 
 
 
-Background Gradient
+#### Background Gradient
 
 Background Gradient class represents the background gradient fill effect in the Word document. To set the gradient by using Microsoft Word menu, open the Format menu, click Background, Fill Effects, and then click Gradient.
 
@@ -820,9 +811,7 @@ Color1 and Color2 properties of Background Gradient define the gradient colors. 
 
 
 
-Public Properties
-
-Table 16 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -848,9 +837,7 @@ Gets or sets the shading variants. </td></tr>
 </table>
 
 
-Public Methods
-
-Table 17 : Public Methods
+#### Public Methods
 
 <table>
 <tr>
@@ -915,11 +902,11 @@ ParagraphItem
 
 
 
-Watermark
+### Watermark
 
 
 
-Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -970,9 +957,8 @@ Watermark
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 18 : Public Constructors
 
 <table>
 <tr>
@@ -994,9 +980,8 @@ Initializes a new instance of the TextWatermark class with watermark text, text 
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 19 : Public Properties
 
 <table>
 <tr>
@@ -1092,9 +1077,8 @@ Watermark
 
 
 
-Public Constructors
+#### Public Constructors
 
-Table 20 : Public Constructors
 
 <table>
 <tr>
@@ -1112,9 +1096,7 @@ Initializes a new instance of the PictureWatermark class with System.Drawing.Ima
 </table>
 
 
-Public Properties
-
-Table 21 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -1136,7 +1118,7 @@ Gets or sets picture scaling (in percent).</td></tr>
 <tr>
 <td>
 Washout</td><td>
-Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to  '_true_.</td></tr>
+Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to  {{  '_true_' | markdownify }} .</td></tr>
 </table>
 
 

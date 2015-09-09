@@ -17,7 +17,6 @@ This section discusses the appearance and behavior settings of the CheckBoxAdv c
 
 The focus rectangle can be hidden or made visible using the below given property.
 
-Table 396: Property Table
 
 <table>
 <tr>
@@ -49,7 +48,6 @@ Behavior Settings
 
 The behavior settings of the CheckBoxAdv can be customized using the properties given below.
 
-Table 397: Property Table
 
 <table>
 <tr>

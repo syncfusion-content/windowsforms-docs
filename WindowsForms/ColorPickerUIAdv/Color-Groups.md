@@ -10,7 +10,6 @@ documentation: ug
 
 The default color groups available for ColorPickerUIAdv control are listed in the below table.
 
-Table 204: List of Groups
 
 <table>
 <tr>
@@ -120,7 +119,6 @@ See how to Customize the Color Groups in [Customizing the Color Groups](#customi
 
 The below properties lets you add color items and sub items.
 
-Table205: Property Table
 
 <table>
 <tr>
@@ -265,7 +263,6 @@ Me.colorPickerUIAdv1.VerticalItemsSpacing = 15
 
 The below properties are used to change the default appearance of the color group headers.
 
-Table206: Property Table
 
 <table>
 <tr>
@@ -282,7 +279,6 @@ Name</td><td>
 Sets the name of the color group, i.e, the header text.</td></tr>
 </table>
 
-Table 207: Property Table
 
 <table>
 <tr>

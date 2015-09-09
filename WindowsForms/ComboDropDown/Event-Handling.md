@@ -3,7 +3,7 @@ layout: post
 title: Event-Handling
 description: event handling
 platform: WindowsForms
-control: Editors Package
+control: ComboDropDown
 documentation: ug
 ---
 

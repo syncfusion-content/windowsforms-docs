@@ -10,8 +10,6 @@ documentation: ug
 
 The below table lists the properties which illustrates the number settings for the DoubleTextBox.
 
-Table 260 : Property Table
-
 <table>
 <tr>
 <th>
@@ -85,7 +83,6 @@ Me.doubleTextBox1.NumberNegativePattern = 2
 
 The maximum and minimum value of the editable field in DoubleTextBox control can be specified using the below properties.
 
-Table 261 : Property Table
 
 <table>
 <tr>
@@ -154,4 +151,3 @@ Me.doubleTextBox1.Text = ""
 
 ![](DoubleTextBox-images/DoubleTextBox_img4.png)
 
-Figure 488: Banner Text set for DoubleTextBox

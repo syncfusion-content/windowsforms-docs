@@ -1310,7 +1310,6 @@ number1, number2, ... are arguments for which you want to calculate the mean.
 
 This feature enables you to calculate predicted exponential growth using existing data.  This calculates and returns an array of values used for the regression analysis. Growth enables you to perform a regression analysis.
 
-_Table_ _14_: _Method Table_
 
 <table>
 <tr>
@@ -1869,8 +1868,6 @@ number is the positive real number for which, you want the base-10 logarithm.
 ## LOGEST
 
 This feature enables you to calculate predicted exponential growth using existing data.  This calculates and returns an array of values used for the regression analysis. Logest calculates and returns an array of values that is used in regression analysis.
-
-_Table_ _15_: _Method Table_
 
 <table>
 <tr>

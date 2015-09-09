@@ -17,4 +17,3 @@ provide locale specific formatting.
 
 ![](DoubleTextBox-images/DoubleTextBox_img1.png)
 
-Figure 485: DoubleTextBox

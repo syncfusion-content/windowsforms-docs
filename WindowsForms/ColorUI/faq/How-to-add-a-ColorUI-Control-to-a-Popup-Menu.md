@@ -27,7 +27,7 @@ To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlCont
 
 
 
-
+   ~~~ cs
 
 				private void panel1_MouseUp(object sender, MouseEventArgs e)
 
@@ -38,21 +38,22 @@ To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlCont
 				}
 
 
+   ~~~
+   {:.prettyprint }
 
 
-
-
-
+   ~~~ vbnet
 				Private Sub panel1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
 
 					Me.popupMenu1.Show(Me.panel1, New Point(e.X, e.Y))
 
 				End Sub
 
-
+   ~~~
+   {:.prettyprint }
 
    ![](FAQ_images/Overview_img242.jpeg) 
-   {:prettyprint}
+
 
 
 N> You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event.

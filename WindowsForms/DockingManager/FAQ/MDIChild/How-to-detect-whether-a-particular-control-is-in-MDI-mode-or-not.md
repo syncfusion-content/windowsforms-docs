@@ -3,7 +3,7 @@ layout: post
 title: How to detect whether a particular control is in MDI mode or not
 description: How to detect whether a particular control is in MDI mode or not
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

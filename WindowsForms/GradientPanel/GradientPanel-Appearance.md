@@ -11,8 +11,6 @@ documentation: ug
 
 The background of the GradientPanel can be customized using the below properties.
 
-Table 236: Property Table
-
 <table>
 <tr>
 <th>
@@ -60,7 +58,6 @@ Me.gradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 
 The foreground text in the control can be customized using the below properties.
 
-Table 237: Property Table
 
 <table>
 <tr>
@@ -110,8 +107,6 @@ this.gradientPanel1.ForeColor = System.Drawing.Color.Blue;
 
 Background image for the GradientPanel control is set using below properties.
 
-Table 238: Property Table
-
 <table>
 <tr>
 <th>
@@ -153,8 +148,8 @@ Me.gradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stret
 
 ![](GradientPanel-Images/Overview_img369.jpeg) 
 
+{% seealso %}
 
+[Border Settings](/windowsforms/Tools/EditorsPackage/GradientPanel/Border-Settings)
 
-> See Also
-> 
-> [Border Settings](/windowsforms/Tools/EditorsPackage/GradientPanel/Border-Settings)
+{% endseealso %}

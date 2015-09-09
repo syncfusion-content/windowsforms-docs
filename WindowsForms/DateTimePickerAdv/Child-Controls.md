@@ -20,7 +20,6 @@ This section discusses the properties of DateTimePickerAdv control which customi
 
 The below properties controls the appearance and behavior of the UpDown buttons.
 
-Table179: Property Table
 
 <table>
 <tr>
@@ -85,7 +84,6 @@ DropDown button in the DateTimePickerAdv is visible by default. To hide the drop
 
 At run time, drop down button can be in normal mode, pressed mode or in selected mode. Different colors can be set for different modes.
 
-Table 180: Property Table
 
 <table>
 <tr>
@@ -190,7 +188,6 @@ Me.dateTimePickerAdv1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Ri
 
 The existing dropdown icon can be replaced with a custom image using the below properties.
 
-Table 181: Property Table
 
 <table>
 <tr>
@@ -317,7 +314,6 @@ Me.dateTimePickerAdv5.Checked = False
 
 Format and CustomFormat properties are used to format the text field. Below are the details
 
-Table182: Property Table
 
 <table>
 <tr>
@@ -441,7 +437,6 @@ At run time, on clicking the "None" button of the popup calendar, "No date is se
 
 This default string can be changed using NullString property. Below table describes the properties which controls the Null value behavior.
 
-Table 183: Property Table
 
 <table>
 <tr>

@@ -32,9 +32,11 @@ To create a GradientLabel control through designer,
 
 
 
-> See Also
->
-> [Through Code](#through-code)
+{% seealso %}
+
+[Through Code](#through-code)
+
+{% endseealso %}
 
 ## Through Code
 
@@ -44,66 +46,60 @@ GradientLabel can be created programmatically as detailed below.
 *  Add the required assembly references.
 *  Include the required namespace.
 
-   ~~~ cs
-
-
+{% highlight c# %}
 
 	 using Syncfusion.Windows.Forms.Tools;
-   ~~~
-   {:.prettyprint}
 
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 *  Declare the GradientLabel control.
 
-   ~~~ cs
+{% highlight c# %}
 
 
 
 		private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
-   ~~~
-   {:.prettyprint}
+		
+{% endhighlight %}
 
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 		Private gradientLabel1 As Syncfusion.Windows.Forms.Tools.GradientLabel
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 *  Initialize the control.
 
-   ~~~ cs
+{% highlight c# %}
 
 
 
 		this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 
 		Me.gradientLabel1 = New Syncfusion.Windows.Forms.Tools.GradientLabel()
-   ~~~
-   {:.prettyprint}
+
+{% endhighlight %}
 
 
 *  Set the properties for the GradientLabel control and add it to your form.
 
-   ~~~ cs
+{% highlight c# %}
 
 
 
@@ -118,11 +114,11 @@ GradientLabel can be created programmatically as detailed below.
 		// Add the GradientLabel control to the Form.
 
 		this.Controls.Add(this.gradientLabel1);
-   ~~~
-   {:.prettyprint}
+		
+{% endhighlight %}
 
 
-   ~~~ vbnet
+{% highlight vbnet %}
 
 
 
@@ -138,8 +134,7 @@ GradientLabel can be created programmatically as detailed below.
 
 		Me.Controls.Add(Me.gradientLabel1)
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 * Run the application.
 

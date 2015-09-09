@@ -3,7 +3,7 @@ layout: post
 title: How to hide a control when an application loads
 description: How to hide a control when an application loads
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -13,13 +13,12 @@ documentation: ug
 
 This is done programmatically, by calling SetHiddenOnLoad method or through Designer, by setting HiddenOnLoad property to true. 
 
-Table 108: Method Table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetHiddenOnLoad</td><td>

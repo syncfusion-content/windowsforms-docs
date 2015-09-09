@@ -3,7 +3,7 @@ layout: post
 title: Text Settings
 description: text settings
 platform: WindowsForms
-control: Editors Package
+control: CurrencyEdit
 documentation: ug
 ---
 
@@ -11,7 +11,6 @@ documentation: ug
 
 The below properties will let you control the behavior of the text in the CurrencyEdit control.
 
-Table 255 : Property Table
 
 <table>
 <tr>
@@ -89,4 +88,4 @@ Me.currencyEdit1.TextBox.DecimalValue = New Decimal(New Integer() {40000, 0, 
 
 
 
-> Note: Enabling ButtonEdit.UseVisualStyle property and by setting visual style for control using ButtonEdit.ButtonStyle property, we can change the appearance of the calculator button.
+N> Enabling ButtonEdit.UseVisualStyle property and by setting visual style for control using ButtonEdit.ButtonStyle property, we can change the appearance of the calculator button.

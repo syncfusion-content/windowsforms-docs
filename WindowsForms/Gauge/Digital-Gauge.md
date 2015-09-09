@@ -45,8 +45,6 @@ Different visual styles can be applied using the VisualStyle property. The Digit
 * Metro
 * Default
 
-_Table_ _14: Digital Gauge Visual Style
-
 <table>
 <tr>
 <th>
@@ -145,8 +143,6 @@ Character types are used to customize the digital segments.
 #### Customizing Scales
 
 You can customize the segments in the digital gauge using the following property:
-
-_Table_ _15: Customizing Scales_
 
 <table>
 <tr>

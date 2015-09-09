@@ -32,11 +32,6 @@ This section describes about the functionality of the chart wizard.
 ![](Chart-Wizard_images/Chart-Wizard_img1.png)
 
 
-
-
-
-_Figure_ _9_: _Chart Wizard (Windows)_
-
 ### Design Time
 
 To display the chart wizard at design-time, follow the below steps.
@@ -64,13 +59,13 @@ Me.chartControl1.DisplayWizard()
 
 The wizard provides six different categories whose settings can be customized.
 
-1. Chart type to let you visualize and select the type of chart to display.
-2. Series to let you add custom series to the chart and also setup data binding.
-3. Appearance to customize the color, font etc. of the ChartControl and ChartArea.
-4. Axes to change the chart control's axes settings.
-5. Points to customize the point labels.
-6. Legend to set the properties of the legend area.
-7. Toolbar to customize the various properties of the toolbar.
+1. [Chart type](#chart-type) to let you visualize and select the type of chart to display.
+2. [Series](#series) to let you add custom series to the chart and also setup data binding.
+3. [Appearance](#appearance) to customize the color, font etc. of the ChartControl and ChartArea.
+4. [Axes](#axes) to change the chart control's axes settings.
+5. Points] to customize the point labels.
+6. [Legend](#legend) to set the properties of the legend area.
+7. [Toolbar](#toolbar) to customize the various properties of the toolbar.
 
 There is a preview panel where a Chart is rendered with the latest settings. The sub topics of this section will guide you through these settings.
 
@@ -90,15 +85,12 @@ In this view, you can visually see the different chart types that could be used 
 
 
 
-_Figure_ _10_: _Chart Type button selected in Chart Wizard_
 
+{% seealso %}
 
+[Chart Types](/windowsforms/chart/chart-types)
 
-See Also
-
-Chart Types
-
-
+{% endseealso %}
 
 ## Series
 
@@ -107,12 +99,6 @@ A Chart can display multiple series. Properties such as Name, Data source, Serie
 
 
 ![](Chart-Wizard_images/Chart-Wizard_img3.png)
-
-
-
-
-
-_Figure_ _11_: _Series button selected in Chart Wizard_
 
 
 
@@ -125,22 +111,19 @@ Below are the three tabs in the Wizard for Series.
 5. Clicking the Edit points button, opens the ChartPoint Collection Editor.
 
    ![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)
-   
-   _Figure_ _12_: _ChartPoint Collection Editor_
+  
 
 6. Click Add to add points to the series. Give X and Y values. Click Ok.
 
    ![](Chart-Wizard_images/Chart-Wizard_img5.png)
 
-   _Figure_ _13_: _Adding Points to Series_
 
 
-
-Data source - The data source to connect with, can be selected using the data source page. Once the data source is selected, it will guide you through the connectivity steps. Refer Data Binding in Chart Through Chart Wizard topic for detailed information. This topic describes data binding techniques at the design-time through Chart Wizard tools.
+Data source - The data source to connect with, can be selected using the data source page. Once the data source is selected, it will guide you through the connectivity steps. Refer [Data Binding in Chart Through Chart Wizard](http://docs.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information. This topic describes data binding techniques at the design-time through Chart Wizard tools.
 
 Series Data - Using this tab, we can change the type of the chart. Whenever an external data source is selected using the Data Source tab, XValue and YValue ComboBox will be supplied with all the column names of the external data source.
 
-Select one column for XValue and another for YValue, between which you wanted to draw the chart. Refer Data Binding in Chart Through Chart Wizard topic for detailed information.
+Select one column for XValue and another for YValue, between which you wanted to draw the chart. Refer [Data Binding in Chart Through Chart Wizard](http://docs.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information.
 
 
 
@@ -148,15 +131,11 @@ Select one column for XValue and another for YValue, between which you wanted to
 
 
 
+ {% seealso %}
 
+[Chart Series](http://docs.syncfusion.com/windowsforms/chart/chart-series)
 
-_Figure_ _14_: _Setting the Chart Type_
-
-
-
-See Also
-
-Chart Series
+ {% endseealso %}
 
 ## Appearance
 
@@ -172,11 +151,11 @@ There are three tabs available in the wizard, for appearance settings.
 
 ![](Chart-Wizard_images/Chart-Wizard_img7.png)
 
-_Figure_ _15_: _Appearance button selected in Chart Wizard_
+ {% seealso %}
 
-See Also
+[Appearance Settings](http://docs.syncfusion.com/windowsforms/chart/chart-appearance)
 
-Appearance Settings
+ {% endseealso %}
 
 ## Axes
 
@@ -198,11 +177,6 @@ The below properties can be set separately for x-axis and y-axis.
 
 
 
-
-_Figure_ _16_: _Axes button selected in Chart Wizard_
-
-
-
 * Collection Editor Dialog - Click the Add button to add a label to the collection. Select the added label to view its properties on its right side. The color of the label, font, value type and so on can be changed using the properties window. If any label needs to be removed from the collection editor, select the label and click the Remove button. After adding all the values to the collection and making the necessary changes in the properties, click OK. In a similar way the labels can be edited for y-axis also.
 
 
@@ -211,15 +185,11 @@ _Figure_ _16_: _Axes button selected in Chart Wizard_
 
 
 
+{% seealso %}
 
+[Chart Axes](http://docs.syncfusion.com/windowsforms/chart/chart-axes)
 
-_Figure_ _17_: _ChartAxisLabel Collection Editor_
-
-
-
-See Also
-
-Chart Axes
+{% endseealso %}
 
 ## Points
 
@@ -236,11 +206,6 @@ This particular section in the wizard comes with the below options. It lets you 
 ![](Chart-Wizard_images/Chart-Wizard_img10.png)
 
 
-
-
-
-_Figure_ _18_: _Points button selected in Chart Wizard_
-
 ## Toolbar
 
 The final option in the Chart Wizard is the ChartControl ToolBar. It has two tabs.
@@ -255,12 +220,6 @@ Under this tab, the user can customize the toolbar's back color, button style as
 
 
 
-
-
-_Figure_ _19_: _ToolBar button selected in ChartWizard_
-
-
-
 * Edit Item
 
 Clicking the Edit Items button will invoke the below editor. It provides options to change the image, name and tooltip for individual items.
@@ -269,11 +228,6 @@ Clicking the Edit Items button will invoke the below editor. It provides options
 
 ![](Chart-Wizard_images/Chart-Wizard_img12.jpeg)
 
-
-
-
-
-_Figure_ _20_: _Editing ToolBar Items_
 
 
 
@@ -287,15 +241,11 @@ Toolbar's border, border style, border width and border color can be set through
 
 
 
+{% seealso %}
 
+[Chart Toolbar](http://docs.syncfusion.com/windowsforms/chart/runtime-features#toolbars)
 
-_Figure_ _21_: _Customizing the Border Appearance of the ToolBar_
-
-
-
-See Also
-
-Chart Toolbar
+{% endseealso %}
 
 ## Legend
 
@@ -313,10 +263,6 @@ The various properties of the chart legend such as position, alignment, orientat
 
 
 
-_Figure_ _22_: _Legend button selected in Chart Wizard_
-
-
-
 * Border Style - Here the user can set custom borders to the legend. The visibility of the border, border color, its Dash style as well as the Border Width can be set easily by selecting the appropriate options.
 
 
@@ -326,12 +272,8 @@ _Figure_ _22_: _Legend button selected in Chart Wizard_
 
 
 
+{% seealso %}
 
-_Figure_ _23_: _Customizing the Border Appearance of the Legend_
+[Chart Legend](http://docs.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items)
 
-
-
-See Also
-
-Chart Legend
-
+{% endseealso %}

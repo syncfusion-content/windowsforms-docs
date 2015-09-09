@@ -70,7 +70,7 @@ series.Points.Add(1,300)
 
 {% endhighlight %}
 
-> Note: Same ChartSeries object being added to more than one chart is not supported. It binds the series to the default primary axis always.
+N> Same ChartSeries object being added to more than one chart is not supported. It binds the series to the default primary axis always.
 
 ### Chart Points
 
@@ -78,7 +78,7 @@ The ChartPoint class holds value information about a single point in a series (x
 
 
 
-_Table_ _7_: _Chart Points_
+_Chart Points_
 
 <table>
 <tr>
@@ -173,7 +173,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Double
 
 {% endhighlight %}
 
-> Note : To display the text right next to the data points, the DisplayText property of the data point's style should be set.
+N> To display the text right next to the data points, the DisplayText property of the data point's style should be set.
 
 The Chart Series features are elaborated in more detail in the following sub-topics.
 
@@ -189,10 +189,6 @@ Interestingly the Chart control lets the user to edit the styles of a series by 
 
 The table below lists the customization options available in ChartSeries and their restrictions.
 
-
-
-_Table_ _8_: _Series Customization_
-
 <table>
 <tr>
 <th>
@@ -201,452 +197,452 @@ Applies to Series or DataPoints*</th><th>
 Applies to Chart Type</th></tr>
 <tr>
 <td>
-AngleOffset</td><td>
+{{ '[AngleOffset](/windowsforms/chart/chart-series#angleoffset)'| markdownify }}</td><td>
 Series</td><td>
 Pie Chart</td></tr>
 <tr>
 <td>
-Border</td><td>
+{{ '[Border](/windowsforms/chart/chart-series#border)' | markdownify }}</td><td>
 Series and points</td><td>
 Pyramid, Funnel, Area, Bar, Bubble, Column Chart, Candle Chart, Renko chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Histogram Chart, Tornado Chart, Polar and Radar Chart and Pie Chart.</td></tr>
 <tr>
 <td>
-BubbleType</td><td>
+{{ '[BubbleType](/windowsforms/chart/chart-series#bubbletype)' | markdownify }}</td><td>
 Series</td><td>
 Bubble chart.</td></tr>
 <tr>
 <td>
-ColumnDrawMode</td><td>
+{{ '[ColumnDrawMode](/windowsforms/chart/chart-series#columndrawmode)' | markdownify }}</td><td>
 </td><td>
 Column Chart, ColumnRange Chart,Bar Chart, BoxAndWhisker Chart, Gantt Chart.</td></tr>
 <tr>
 <td>
-ColumnWidthMode</td><td>
+{{ '[ColumnWidthMode](/windowsforms/chart/chart-series#columnwidthmode)' | markdownify }}</td><td>
 Series</td><td>
 Column charts</td></tr>
 <tr>
 <td>
-ColumnFixedWidth</td><td>
+{{ '[ColumnFixedWidth](/windowsforms/chart/chart-series#columnfixedwidth)' | markdownify }}</td><td>
 Series</td><td>
 Column charts</td></tr>
 <tr>
 <td>
-ColumnType</td><td>
+{{ '[ColumnType](/windowsforms/chart/chart-series#columntype)' | markdownify }}</td><td>
 Series</td><td>
 Column</td></tr>
 <tr>
 <td>
-ColorsMode</td><td>
+{{ '[ColorsMode](/windowsforms/chart/chart-series#colorsmode)' | markdownify }}</td><td>
 Series</td><td>
 Renko chart.</td></tr>
 <tr>
 <td>
-DarkLightPower</td><td>
+{{ '[DarkLightPower](/windowsforms/chart/chart-series#darklightpower)' | markdownify }}</td><td>
 Series</td><td>
 Renko chart.</td></tr>
 <tr>
 <td>
-DisplayShadow</td><td>
+{{ '[DisplayShadow](/windowsforms/chart/chart-series#displayshadow)' | markdownify }}</td><td>
 Series and points</td><td>
 Area Chart, Bar Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, Stepline Chart, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Threeline Break Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart.</td></tr>
 <tr>
 <td>
-DisplayText</td><td>
+{{ '[DisplayText](/windowsforms/chart/chart-series#displaytext)' | markdownify }}</td><td>
 Series and points</td><td>
 All Chart types.</td></tr>
 <tr>
 <td>
-DoughnutCoeficient</td><td>
+{{ '[DoughnutCoeficient](/windowsforms/chart/chart-series#doughnutcoeficient)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-DrawColumnSeparatingLines</td><td>
+{{ '[DrawColumnSeparatingLines](/windowsforms/chart/chart-series#drawcolumnseparatinglines)' | markdownify }}</td><td>
 Series</td><td>
 Column Chart.</td></tr>
 <tr>
 <td>
-DrawErrorBars</td><td>
+{{ '[DrawErrorBars](/windowsforms/chart/chart-series#drawerrorbars)' | markdownify }}</td><td>
 Series</td><td>
 Column Chart, Line Chart and HiLo Chart.</td></tr>
 <tr>
 <td>
-DrawHistogramNormalDistribution</td><td>
+{{ '[DrawHistogramNormalDistribution](/windowsforms/chart/chart-series#drawhistogramnormaldistribution)' | markdownify }}</td><td>
 Series</td><td>
 Histogram chart.</td></tr>
 <tr>
 <td>
-DrawSeriesNameInDepth</td><td>
+{{ '[DrawSeriesNameInDepth](/windowsforms/chart/chart-series#drawseriesnameindepth)' | markdownify }}</td><td>
 Series</td><td>
 All Chart types.</td></tr>
 <tr>
 <td>
-ElementBorders</td><td>
+{{ '[ElementBorders](/windowsforms/chart/chart-series#elementborders)' | markdownify }}</td><td>
 Series and points</td><td>
 Area Charts, Bar Charts, Bubble Chart, Column Charts, Line  Charts, Candle Chart, Renko chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Tornado Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-EnablePhongStyle</td><td>
+{{ '[EnablePhongStyle](/windowsforms/chart/chart-series#enablephongstyle)' | markdownify }}</td><td>
 Series</td><td>
 Bubble Chart.</td></tr>
 <tr>
 <td>
-ErrorBarsSymbolShape</td><td>
+{{ '[ErrorBarsSymbolShape](/windowsforms/chart/chart-series#errorbarssymbolshape)' | markdownify }}</td><td>
 Series</td><td>
 Column Chart, Line Chart and HiLo Chart.</td></tr>
 <tr>
 <td>
-ExplodedAll</td><td>
+{{ '[ExplodedAll](/windowsforms/chart/chart-series#explodedall)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart, Doughnut Chart.</td></tr>
 <tr>
 <td>
-ExplodedIndex</td><td>
+{{ '[ExplodedIndex](/windowsforms/chart/chart-series#explodedindex)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-ExplosionOffset</td><td>
+{{ '[ExplosionOffset](/windowsforms/chart/chart-series#explosionoffset)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-FancyToolTip</td><td>
+{{ '[FancyToolTip](/windowsforms/chart/chart-series#fancytooltip)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-FigureBase</td><td>
+{{ '[FigureBase](/windowsforms/chart/chart-series#figurebase)' | markdownify }}</td><td>
 Series</td><td>
 Funnel and Pyramid chart.</td></tr>
 <tr>
 <td>
-FillMode</td><td>
+{{ '[FillMode](/windowsforms/chart/chart-series#fillmode)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart</td></tr>
 <tr>
 <td>
-FunnelMode</td><td>
+{{ '[FunnelMode](/windowsforms/chart/chart-series#funnelmode)' | markdownify }}</td><td>
 Series</td><td>
 Funnel and Pyramid chart.</td></tr>
 <tr>
 <td>
-Font</td><td>
+{{ '[Font](/windowsforms/chart/chart-series#font)' | markdownify }}</td><td>
 Series and points</td><td>
 All Chart types.</td></tr>
 <tr>
 <td>
-GanttDrawMode</td><td>
+{{ '[GanttDrawMode](/windowsforms/chart/chart-series#ganttdrawmode)' | markdownify }}</td><td>
 Series</td><td>
 Gantt Chart.</td></tr>
 <tr>
 <td>
-GapRatio</td><td>
+{{ '[GapRatio](/windowsforms/chart/chart-series#gapratio)' | markdownify }}</td><td>
 Series</td><td>
 Funnel and Pyramid chart.</td></tr>
 <tr>
 <td>
-Gradient</td><td>
+{{ '[Gradient](/windowsforms/chart/chart-series#gradient)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-HeightBox</td><td>
+{{ '[HeightBox](/windowsforms/chart/chart-series#heightbox)' | markdownify }}</td><td>
 Series</td><td>
 Point And Figure Chart.</td></tr>
 <tr>
 <td>
-HeightByAreaDepth</td><td>
+{{ '[HeightByAreaDepth](/windowsforms/chart/chart-series#heightbyareadepth)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-HeightCoeficient</td><td>
+{{ '[HeightCoeficient](/windowsforms/chart/chart-series#heightcoeficient)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-HighlightInterior</td><td>
+{{ '[HighlightInterior](/windowsforms/chart/chart-series#highlightinterior)' | markdownify }}</td><td>
 Series</td><td>
 Bar Charts, Pie, Funnel, Pyramid,Bubble, Column, Area, Stacking Area, Stacking Area100, Line Charts, Box and Whisker, Gantt Chart and Tornado Chart.</td></tr>
 <tr>
 <td>
-HitTestRadius</td><td>
+{{ '[HitTestRadius](/windowsforms/chart/chart-series#hittestradius)' | markdownify }}</td><td>
 Series</td><td>
 Line Chart and Step Line Chart.</td></tr>
 <tr>
 <td>
-ImageIndex</td><td>
+{{ '[ImageIndex](/windowsforms/chart/chart-series#imageindex)' | markdownify }}</td><td>
 Series and points</td><td>
 Area Charts, Bar Charts, Bubble Chart, Column Charts, Line  Charts, Candle Chart, Renko chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Tornado Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-Images</td><td>
+{{ '[Images](/windowsforms/chart/chart-series#imges)' | markdownify }}</td><td>
 Series and points</td><td>
 Area Charts, Bar Charts, Bubble Chart, Column Charts, Line  Charts, Candle Chart, Renko chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Tornado Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-InSideRadius</td><td>
+{{ '[InSideRadius](/windowsforms/chart/chart-series#insideradius)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-Interior</td><td>
+{{ '[Interior](/windowsforms/chart/chart-series#interior)' | markdownify }}</td><td>
 Series and points</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-LabelPlacement</td><td>
+{{ '[LabelPlacement](/windowsforms/chart/chart-series#labelpacement)' | markdownify }}</td><td>
 Series</td><td>
 Funnel and Pyramid Charts.</td></tr>
 <tr>
 <td>
-LabelStyle</td><td>
+{{ '[LabelStyle](/windowsforms/chart/chart-series#labelstyle)' | markdownify }}</td><td>
 Series</td><td>
 Funnel and Pyramid, Pie</td></tr>
 <tr>
 <td>
-LegendItem</td><td>
+{{ '[LegendItem](/windowsforms/chart/chart-series#legenditem)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-LightAngle</td><td>
+{{ '[LightAngle](/windowsforms/chart/chart-series#lightangle)' | markdownify }}</td><td>
 Series</td><td>
 Scatter Chart, Column Charts , Bar Charts, Box and Whisker Chart, Gantt Chart, Histogram Chart, Tornado Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-LightColor</td><td>
+{{ '[LightColor](/windowsforms/chart/chart-series#lightcolor)' | markdownify }}</td><td>
 Series</td><td>
 Scatter Chart, Column Charts , Bar Charts, Box and Whisker Chart, Gantt Chart, Histogram Chart, Tornado Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-Name</td><td>
+{{ '[Name](/windowsforms/chart/chart-series#name)' | markdownify }}</td><td>
 Series</td><td>
 All chart types.</td></tr>
 <tr>
 <td>
-NumberOfHistogramIntervals</td><td>
+{{ '[NumberOfHistogramIntervals](/windowsforms/chart/chart-series#numberofhistogramintervals)' | markdownify }}</td><td>
 Series</td><td>
 Histogram Chart.</td></tr>
 <tr>
 <td>
-OpenCloseDrawMode</td><td>
+{{ '[OpenCloseDrawMode](/windowsforms/chart/chart-series#openclosedrawmode)' | markdownify }}</td><td>
 Series</td><td>
 HiLo OpenClose chart.</td></tr>
 <tr>
 <td>
-OptimizePiePointPositions</td><td>
+{{ '[OptimizePiePointPositions](/windowsforms/chart/chart-series#optimizepiepointpositions)' | markdownify }}</td><td>
 Series</td><td>
 Pie chart</td></tr>
 <tr>
 <td>
-PhongAlpha</td><td>
+{{ '[PhongAlpha](/windowsforms/chart/chart-series#phongalpha)' | markdownify }}</td><td>
 Series</td><td>
 Column Chart.</td></tr>
 <tr>
 <td>
-PieType</td><td>
+{{ '[PieType](/windowsforms/chart/chart-series#pietype)' | markdownify }}</td><td>
 Series</td><td>
 Pie chart</td></tr>
 <tr>
 <td>
-PieWithSameRadius</td><td>
+{{ '[PieWithSameRadius](/windowsforms/chart/chart-series#piewithsameradius)' | markdownify }}</td><td>
 Series</td><td>
 Pie chart and Doughnut chart.</td></tr>
 <tr>
 <td>
-PointsToolTipFormat</td><td>
+{{ '[PointsToolTipFormat](/windowsforms/chart/chart-series#pointstooltipformat)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-PointWidth</td><td>
+{{ '[PointWidth](/windowsforms/chart/chart-series#pointwidth)' | markdownify }}</td><td>
 Series and points</td><td>
 Gantt Chart.</td></tr>
 <tr>
 <td>
-PriceDownColor</td><td>
+{{ '[PriceDownColor](/windowsforms/chart/chart-series#pricedowncolor)' | markdownify }}</td><td>
 Series</td><td>
 Financial types</td></tr>
 <tr>
 <td>
-PriceUpColor</td><td>
+{{ '[PriceUpColor](/windowsforms/chart/chart-series#priceupcolor)' | markdownify }}</td><td>
 Series</td><td>
 Financial types</td></tr>
 <tr>
 <td>
-PyramidMode</td><td>
+{{ '[PyramidMode](/windowsforms/chart/chart-series#pyramidmode)' | markdownify }}</td><td>
 Series</td><td>
 Pyramid</td></tr>
 <tr>
 <td>
-Radar Type</td><td>
+{{ '[Radar Type](/windowsforms/chart/chart-series#radar-type)' | markdownify }}</td><td>
 Series</td><td>
 Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-RadarStyle</td><td>
+{{ '[RadarStyle](/windowsforms/chart/chart-series#radarstyle)' | markdownify }}</td><td>
 Series</td><td>
 Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-RelatedPoints</td><td>
+{{ '[RelatedPoints](/windowsforms/chart/chart-series#relatedpoints)' | markdownify }}</td><td>
 Series and points</td><td>
 Gantt Chart.</td></tr>
 <tr>
 <td>
-ReversalAmount</td><td>
+{{ '[ReversalAmount](/windowsforms/chart/chart-series#reversalamount)' | markdownify }}</td><td>
 Series</td><td>
 Kagi, PointAndFigure, Renko</td></tr>
 <tr>
 <td>
-Rotate</td><td>
+{{ '[Rotate](/windowsforms/chart/chart-series#rotate)' | markdownify }}</td><td>
 Series</td><td>
 Column Charts, Bar Charts, Area charts, Line Chart, Spline Chart, Stepline Chart, Candle Chart, HiLo Chart, HiLo Open Chart, Kagi Chart, BoxandWhisker chart, Histogram chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-ScatterConnectType</td><td>
+{{ '[ScatterConnectType](/windowsforms/chart/chart-series#scatterconnecttype)' | markdownify }}</td><td>
 Series</td><td>
 Scatter Chart.</td></tr>
 <tr>
 <td>
-ScatterSplineTension</td><td>
+{{ '[ScatterSplineTension](/windowsforms/chart/chart-series#)' | markdownify }}</td><td>
 Series</td><td>
 Scatter Chart.</td></tr>
 <tr>
 <td>
-SeriesToolTipFormat</td><td>
+{{ '[SeriesToolTipFormat](/windowsforms/chart/chart-series#seriestooltipformat)' | markdownify }}</td><td>
 Series</td><td>
 Area Charts.</td></tr>
 <tr>
 <td>
-ShadingMode</td><td>
+{{ '[ShadingMode](/windowsforms/chart/chart-series#shadingmode)' | markdownify }}</td><td>
 Series</td><td>
 Column Chart, BarCharts, Candle Chart, HiLO Chart, HiLoOpenClose Chart, Tornado chart, BoxandWhisker chart, Gantt Chart, Histogram Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-ShadowInterior</td><td>
+{{ '[ShadowInterior](/windowsforms/chart/chart-series#shadowinterior)' | markdownify }}</td><td>
 Series and points</td><td>
 Column Charts, Bubble Chart, Line Charts, BarCharts, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Histogram Chart, Tornado Chart, Pie Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-ShadowOffset</td><td>
+{{ '[ShadowOffset](/windowsforms/chart/chart-series#shadowoffset)' | markdownify }}</td><td>
 Series and points</td><td>
 Column Charts, Bubble Chart, Line Charts, BarCharts, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Histogram Chart, Tornado Chart, Pie Chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
-ShowDataBindLabels</td><td>
+{{ '[ShowDataBindLabels](/windowsforms/chart/chart-series#showdatabindlabels)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart, Doughnut Chart, Funnel and Pyramid charts.</td></tr>
 <tr>
 <td>
-ShowHistogramDataPoints</td><td>
+{{ '[ShowHistogramDataPoints](/windowsforms/chart/chart-series#showhistogramdatapoints)' | markdownify }}</td><td>
 Series</td><td>
 Histogram Chart</td></tr>
 <tr>
 <td>
-ShowTicks</td><td>
+{{ '[ShowTicks](/windowsforms/chart/chart-series#showticks)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-SmartLabels</td><td>
+{{ '[SmartLabels](/windowsforms/chart/chart-series#smartlabels)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-Spacing</td><td>
+{{ '[Spacing](/windowsforms/chart/chart-series#spacing)' | markdownify }}</td><td>
 Series and Points.</td><td>
 Column Charts, BarCharts, Box and Whisker Chart, Gantt Chart, Tornado Chart.</td></tr>
 <tr>
 <td>
-Spacing Between Series</td><td>
+{{ '[Spacing Between Series](/windowsforms/chart/chart-series#spacingbetweenseries)' | markdownify }}</td><td>
 Series</td><td>
 Area Charts, BarCharts, Line Charts, Bubble Chart, Financial Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart.</td></tr>
 <tr>
 <td>
-SpacingBetweenPoints</td><td>
+{{ '[SpacingBetweenPoints](/windowsforms/chart/chart-series#spacingbetweenpoints)' | markdownify }}</td><td>
 Series Points</td><td>
 Column Chart, Bar Chart, HiLo Chart, HiLo Open Close Chart, Candle Chart, Tornado Chart, Boxes and Whisker Chart.</td></tr>
 <tr>
 <td>
-StepItem.Inverted</td><td>
+{{ '[StepItem.Inverted](/windowsforms/chart/chart-series#stepiteminverted)' | markdownify }}</td><td>
 Series</td><td>
 StepAreaChart, StepLine Chart.</td></tr>
 <tr>
 <td>
-Summary</td><td>
+{{ '[Summary](/windowsforms/chart/chart-series#summary)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-Symbol</td><td>
+{{ '[Symbol](/windowsforms/chart/chart-series#symbol)' | markdownify }}</td><td>
 Series and points</td><td>
 Column Chart, Bar Chart, Bubble Chart, Financial Chart, Line Chart, BoxandWhisker Chart, Gantt chart, Tornado chart, Radar Chart</td></tr>
 <tr>
 <td>
-Text (Series)</td><td>
+{{ '[Text (Series)](/windowsforms/chart/chart-series#text-series)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-Text (Style)</td><td>
+{{ '[Text (Style)](/windowsforms/chart/chart-series#text-style)' | markdownify }}</td><td>
 Series and Points</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-TextColor</td><td>
+{{ '[TextColor](/windowsforms/chart/chart-series#textcolor)' | markdownify }}</td><td>
 Series and points</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-TextFormat</td><td>
+{{ '[TextFormat](/windowsforms/chart/chart-series#textformat)' | markdownify }}</td><td>
 Series and points</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-TextOffset</td><td>
+{{ '[TextOffset](/windowsforms/chart/chart-series#textoffset)' | markdownify }}</td><td>
 Series and points</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-TextOrientation</td><td>
+{{ '[TextOrientation](/windowsforms/chart/chart-series#textorientation)' | markdownify }}</td><td>
 Series and points</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-ToolTip</td><td>
+{{ '[ToolTip](/windowsforms/chart/chart-series#tooltip)' | markdownify }}</td><td>
 Series and points</td><td>
 Scatter Chart.</td></tr>
 <tr>
 <td>
-ToolTipFormat</td><td>
+{{ '[ToolTipFormat](/windowsforms/chart/chart-series#tooltipformat)' | markdownify }}</td><td>
 Series and points</td><td>
 Scatter Chart.</td></tr>
 <tr>
 <td>
-Visible</td><td>
+{{ '[Visible](/windowsforms/chart/chart-series#visible)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-VisibleAllPies</td><td>
+{{ '[VisibleAllPies](/windowsforms/chart/chart-series#visibleallfiles)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
 <tr>
 <td>
-XType</td><td>
+{{ '[XType](/windowsforms/chart/chart-series#xtype)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-YType</td><td>
+{{ '[YType](/windowsforms/chart/chart-series#ytype)' | markdownify }}</td><td>
 Series</td><td>
 All Chart Types.</td></tr>
 <tr>
 <td>
-ZOrder</td><td>
+{{ '[ZOrder](/windowsforms/chart/chart-series#zorder)' | markdownify }}</td><td>
 Series</td><td>
 Gantt chart, StackingBar chart, StackingBar100 chart, StackingColumn chart, StackedColumn100 chart, StackingArea chart, StackingArea100 chart.</td></tr>
 </table>
@@ -722,17 +718,16 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.AngleOffset = 45f
 
 ![](Chart-Series_images/Chart-Series_img3.jpeg)
 
-_Figure_ _96_:_ _PieChart with No AngleOffset_
 
 ![](Chart-Series_images/Chart-Series_img4.jpeg)
 
-_Figure_ _97_:_ _PieChart with AngleOffset = "45f"_
 
 
+{% seealso %}
 
-### See Also
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-Pie Chart
+{% endseealso %}
 
 ### Border
 
@@ -740,7 +735,7 @@ The user can also set the Border color and Border style for the chart series.
 
 
 
-_Table_ _9_: _Border_
+_Border_
 
 <table>
 <tr>
@@ -814,8 +809,6 @@ series.Style.ShadowOffset = New Size(3, 3)
 
 ![](Chart-Series_images/Chart-Series_img5.jpeg)
 
-_Figure_ _98_:_ _Border Lined Column Chart_
-
 To apply this on specific data points:
 
 {% highlight c# %}
@@ -856,13 +849,12 @@ series2.Styles(2).Border.Color = Color.White
 
 ![](Chart-Series_images/Chart-Series_img6.jpeg)
 
-_Figure_ _99_: _Individual Data Points with White Border_
 
+{% seealso %}
 
+ [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart), [AreaChart](/windowsforms/chart/chart-types#area-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-### See Also
-
-Pyramid Chart, Funnel Chart, Area Charts, BarCharts, Bubble Chart, Column Chart, Candle Chart, Renko chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Histogram Chart, Tornado Chart, Polar and Radar Chart, Pie Chart
+{% endseealso %}
 
 ### BubbleType
 
@@ -870,7 +862,7 @@ BubbleType - Specifies whether to render the data point symbols as circle, squar
 
 
 
-_Table_ _10_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -954,11 +946,12 @@ Me.chartControl1.Series[0].Styles(1).ImageIndex = 1
 
 ![](Chart-Series_images/Chart-Series_img7.jpeg)
 
-_Figure_ _100_: _Image BubbleType Chart Series_
 
-### See Also
+{% seealso %}
 
-Bubble Chart
+[Bubble Charts](/windowsforms/chart/chart-types#bubble-chart)
+
+{% endseealso %}
 
 ### ColumnDrawMode
 
@@ -966,7 +959,7 @@ It indicates the drawing mode of columns in charts when there are multiple serie
 
 
 
-_Table_ _11_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1017,27 +1010,19 @@ Me.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode
 
 ![](Chart-Series_images/Chart-Series_img8.jpeg)
 
-_Figure_ _101_: _ColumnDrawMode set to "PlaneMode"_
 
 ![](Chart-Series_images/Chart-Series_img9.jpeg)
-
-_Figure_ _102_: _ColumnDrawMode set to "InDepthMode"_
-
 
 
 ![](Chart-Series_images/Chart-Series_img10.jpeg)
 
 
 
+{% seealso %}
 
+[Column Charts](/windowsforms/chart/chart-types#column-charts), /windowsforms/chart/chart-types#column-range-chart,  [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart)
 
-_Figure_ _103_: _ColumnDrawMode set to "ClusteredMode"_
-
-
-
-### See Also
-
-Column Chart, ColumnRange Chart, Bar Chart, BoxAndWhisker Chart, Gantt Chart
+{% endseealso %}
 
 ### ColumnWidthMode
 
@@ -1045,7 +1030,7 @@ It specifies the width drawing mode for the columns in a column chart.
 
 
 
-_Table_ _12_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1055,7 +1040,9 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* DefaultWidthMode - The width of the columns will always be calculated to fill the space between columns.* FixedWidthMode - The width should be given in Series.Points[i].YValues[1], in pixels. If the width of the columns are not given in point YValues[1], then they are calculated to fill the space between columns.* RelativeWidthMode - Similar to the FixedWidthMode, the width is specified in YValues[1], but in units of X-axis range.</td></tr>
+<ul><li><b> DefaultWidthMode</b> - The width of the columns will always be calculated to fill the space between columns.</li>
+<li><b> FixedWidthMode </b>- The width should be given in Series.Points[i].YValues[1], in pixels. If the width of the columns are not given in point YValues[1], then they are calculated to fill the space between columns.</li>
+<li> <b>RelativeWidthMode</b> - Similar to the FixedWidthMode, the width is specified in YValues[1], but in units of X-axis range.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -1111,7 +1098,6 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.DefaultWidthMode
 
 ![](Chart-Series_images/Chart-Series_img11.jpeg)
 
-_Figure_ _104_: _Column Chart with DefaultWidthMode_
 
 {% highlight c# %}
 
@@ -1163,7 +1149,6 @@ Me.chartControl1.ColumnWidthMode = ChartColumnWidthMode.RelativeWidthMode
 
 ![](Chart-Series_images/Chart-Series_img12.jpeg)
 
-_Figure_ _105_: _Column Chart with RelativeWidthMode_
 
 {% highlight c# %}
 
@@ -1204,17 +1189,7 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.FixedWidthMode
 
 
 
-[VB.NET]
-
-
-
-
-
-
-
-
-
-> Note: The width of the column can also be specified by ColumnFixedWidth property. If both second Y value and ColumnFixedWidth are specified, second Y value takes higher priority.
+N> The width of the column can also be specified by ColumnFixedWidth property. If both second Y value and ColumnFixedWidth are specified, second Y value takes higher priority.
 
 
 
@@ -1222,11 +1197,11 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.FixedWidthMode
 
 
 
-_Figure_ _106_: _Column Chart with FixedWidthMode_
+{% seealso %}
 
-### See Also
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [ColumnFixedWidth](/windowsforms/chart/chart-series#columnfixedwidth)
 
-Column charts,BoxAndWhiskerChart, Candle Chart, ColumnFixedWidth
+{% endseealso %}
 
 ### ColumnFixedWidth
 
@@ -1236,7 +1211,7 @@ It specifies the width of each column when ColumnWidthMode is set to FixedWidthM
 
 
 
-_Table_ _13_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1304,16 +1279,17 @@ chartControl1.ColumnFixedWidth = 45
 
 {% endhighlight %}
 
-> Note: The ColumnFixedWidth property can be overridden by specifying a second y value in the data point. See_ ColumnWidthMode _for a sample.
+N> The ColumnFixedWidth property can be overridden by specifying a second y value in the data point. See_ ColumnWidthMode _for a sample.
 
 ![](Chart-Series_images/Chart-Series_img16.jpeg)
 
 
-_Figure_ _107_: _ColumnChart with ColumnFixedWidth = "45"_
 
-### See Also
+{% seealso %}
 
-Column charts, BoxAndWhiskerChart, ColumnWidthMode, Candle Charts
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , BoxAndWhiskerChart, ColumnWidthMode, Candle Charts
+
+{% endseealso %}
 
 ### ColumnType
 
@@ -1321,7 +1297,7 @@ It specifies whether the columns should be rendered as bars or cylinders.
 
 
 
-_Table_ _14_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1383,16 +1359,11 @@ Me.chartControl1.Series(1).ConfigItems.ColumnItem.ColumnType = ChartColumnType.B
 ![](Chart-Series_images/Chart-Series_img17.jpeg)
 
 
+{% seealso %}
 
+[Column Charts](/windowsforms/chart/chart-types#column-charts), [Column Range Chart](/windowsforms/chart/chart-types#column-range-chart),  [Stacking Column Chart](/windowsforms/chart/chart-types#stacking-column-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Stacking Bar Chart](/windowsforms/chart/chart-types#stacking-bar-chart)
 
-
-_Figure_ _108_: _Column Chart_
-
-
-
-### See Also
-
-Column Chart, Column Range Chart, Stacking Column Chart, Candle Chart, Bar Chart, Stacking Bar Chart
+{% endseealso %}
 
 ### ColorsMode
 
@@ -1400,7 +1371,7 @@ Gets / sets ColorsMode of the boxes in the financial chart types.
 
 
 
-_Table_ _15_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1410,7 +1381,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* DarkLight -Draws series data points as a darklight colorsmode.* Fixed - Draws series data points as a Fixed colorsmode.* Mixed - Draws series data points as a Mixed colorsmode.</td></tr>
+<ul><li> <b>DarkLight</b> -Draws series data points as a darklight colorsmode.</li><li> <b>Fixed</b> - Draws series data points as a Fixed colorsmode.</li><li> <b>Mixed</b> - Draws series data points as a Mixed colorsmode.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -1450,23 +1421,17 @@ Me.chartControl1.Series(0).ConfigItems.FinancialItem.ColorsMode = ChartFinancial
 
 ![](Chart-Series_images/Chart-Series_img18.jpeg)
 
-_Figure_ _109_: _Renko Chart with "DarkLight" ColorsMode_
-
-
 
 ![](Chart-Series_images/Chart-Series_img19.jpeg)
 
 
 
 
+{% seealso %}
 
-_Figure_ _110_: _Renko Chart with "Mixed" ColorsMode_
+[Renko Chart](/windowsforms/chart/chart-types#renko-chart)
 
-
-
-### See Also
-
-Renko Chart
+{% endseealso %}
 
 ### DarkLightPower
 
@@ -1474,7 +1439,7 @@ Gets or sets the intensity of the dark and light colors used in DarkLight color 
 
 
 
-_Table_ _16_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1532,9 +1497,11 @@ Me.chartControl1.Series(0).ConfigItems.FinancialItem.DarkLightPower = 200
 
 ![](Chart-Series_images/Chart-Series_img20.jpeg)
 
-### See Also
+{% seealso %}
 
-### Renko Chart
+[Renko Chart](/windowsforms/chart/chart-types#renko-chart)
+
+{% endseealso %}
 
 ### DisplayShadow
 
@@ -1542,7 +1509,7 @@ It specifies if shadow should be displayed for the series.
 
 
 
-_Table_ _17_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1600,7 +1567,6 @@ Me.chartControl1.Series(0).Style.DisplayShadow = True
 
 {% endhighlight %}
 
-_Figure_ _112_: _Line Chart with Shadow Series_
 
 ### Specific Data Point Setting
 
@@ -1620,9 +1586,11 @@ Me.chartControl1.Series(0).Styles(1).DisplayShadow = True
 
 {% endhighlight %}
 
-### See Also
+{% seealso %}
 
-Line Charts, Area Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Bar Chart, Pie Chart, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Three line Break Chart, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart, Polar And Radar Chart, Step Area Chart
+[Line Charts](/windowsforms/chart/chart-types#line-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [Stacking Column Chart](/windowsforms/chart/chart-types#stacking-column-chart), [StackedColumn100Chart](/windowsforms/chart/chart-types#stacked-column100-chart), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [PointAndFigure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), /windowsforms/chart/chart-types#step-area-chart
+
+{% endseealso %}
 
 ### DisplayText
 
@@ -1630,7 +1598,7 @@ It indicates whether a label indicating the data point value should be displayed
 
 
 
-_Table_ _18_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1686,17 +1654,11 @@ Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 
 ![](Chart-Series_images/Chart-Series_img22.jpeg)
 
-_Figure_ _113_: _DisplayText in Pie Chart_
-
 
 
 ![](Chart-Series_images/Chart-Series_img23.jpeg)
 
 
-
-
-
-_Figure_ _114_: _DisplayText in Column Chart_
 
 ### Specific Data Point Setting
 
@@ -1722,9 +1684,11 @@ Me.chartControl1.Series(0).Styles(0).TextColor = Color.LightSlateGray
 
 {% endhighlight %}
 
-### See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{%endseealso %}
 
 ### DoughnutCoeficient
 
@@ -1732,7 +1696,7 @@ Specifies the percentage of the overall radius of the chart that will be used fo
 
 
 
-_Table_ _19_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1779,11 +1743,12 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient = 0.5f
 {% endhighlight %}
 
 ![](Chart-Series_images/Chart-Series_img24.jpeg)
-_Figure_ _115_: _Pie Chart with DoughnutCoeficient Property Set_
 
-### See Also
+{% seealso %}
 
-Doughnut Chart, Pie Chart
+[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart),[PieChart](/windowsforms/chart/chart-types#pie-chart)
+
+{% endseealso %}
 
 ### DrawColumnSeparatingLines
 
@@ -1791,7 +1756,7 @@ The drawing of separating line between columns is controlled by this property.
 
 
 
-_Table_ _20_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1837,13 +1802,13 @@ Me.chartControl1.Series(0).DrawColumnSeparatingLines = True
 
 ![](Chart-Series_images/Chart-Series_img25.jpeg)
 
-_Figure_ _116_: _Column Chart without ColumnSeparatingLines_
 
 
+{% seealso %}
 
-### See Also
+[Column Charts](/windowsforms/chart/chart-types#column-charts),  [BarCharts](/windowsforms/chart/chart-types#bar-charts)
 
-Column Chart, Bar Chart
+{% endseealso %}
 
 ### DrawErrorBars
 
@@ -1853,7 +1818,7 @@ The 2nd y value is used to indicate the error range. For example, a value of 5 i
 
 
 
-_Table_ _21_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -1943,11 +1908,9 @@ Private Me.chartControl1.Series(0).DrawErrorBars = True
 
 ![](Chart-Series_images/Chart-Series_img26.jpeg)
 
-_Figure_ _117_: _ColumnChart with ErrorBars_
 
 ![](Chart-Series_images/Chart-Series_img27.jpeg)
 
-_Figure_ _118_: _Line Chart with ErrorBars and ErrorBarsSymbolShape="Diamond"_
 
 
 
@@ -2059,15 +2022,11 @@ Me.chartControl1.Series.Add(s1)
 
 
 
+{% seealso %}
 
+[Line Charts](/windowsforms/chart/chart-types#line-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [ErrorBarsSymbolShape](/windowsforms/chart/chart-series#errorbarssymbolshape)
 
-_Figure_ _119_: _Errorbar Orientation = "Horizontal"_
-
-
-
-### See Also
-
-Line Chart, Column Chart, Hi Lo Chart, ErrorBarsSymbolShape
+{% endseealso %}
 
 ### DrawHistogramNormalDistribution
 
@@ -2075,7 +2034,7 @@ The normal distribution curve is drawn by setting this property of the ChartSeri
 
 
 
-_Table_ _22_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2138,13 +2097,13 @@ series2.NumberOfHistogramIntervals = 10
 ![](Chart-Series_images/Chart-Series_img29.jpeg)
 
 
-_Figure_ _120_: _Histogram Chart with Normal Distribution Curve_
 
 
+{% seealso %}
 
-### See Also
+[Histogram chart](/windowsforms/chart/chart-types#histogram-chart)
 
-### Histogram Chart
+{% endseealso %}
 
 ### DrawSeriesNameInDepth
 
@@ -2152,7 +2111,7 @@ Indicates whether to draw series name at opposed position to origin, along x-axi
 
 
 
-_Table_ _23_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2230,11 +2189,11 @@ Me.chartControl1.Series(0).DrawSeriesNameInDepth = True
 
 ![](Chart-Series_images/Chart-Series_img30.jpeg)
 
-_Figure_ _121_: _DrawSeriesNameInDepth in BarChart_
+{% seealso %}
 
-### See Also
+[Chart Types](/windowsforms/chart/chart-types)
 
-Chart Types
+{% endseealso %}
 
 ### DropSeriesPoints
 
@@ -2260,7 +2219,7 @@ Gets / sets the border settings for elements associated with the chart point. Yo
 
 
 
-_Table_ _24_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2274,7 +2233,7 @@ Border setting object</td></tr>
 <tr>
 <td>
 Default Value     </td><td colspan = "2">
-* Weight – Thin* Width value – 1* Style - Standard</td></tr>
+<ul><li> Weight – Thin</li><li> Width value – 1</li><li> Style - Standard</li></ul></td></tr>
 <tr>
 <td>
 <br>2D / 3D Limitations</td><td colspan = "2">
@@ -2336,9 +2295,6 @@ Me.chartControl1.Series(0).Style.ElementBorders = cbi
 
 ![](Chart-Series_images/Chart-Series_img31.jpeg)
 
-_Figure_ _122_: _Column Chart with ElementBorder_
-
-
 
 ### Specific Data Point Setting
 
@@ -2358,11 +2314,13 @@ this.chartControl1.Series(0).Styles(0).ElementBorders = cbi
 
 {% endhighlight %}
 
-### See Also
+{% seealso %}
 
-Area Charts, Bar Charts, Bubble Chart, Column Charts, Line Charts, Candle Chart, Renko chart, Three Line Break Chart,
+[AreaChart](/windowsforms/chart/chart-types#area-chart), [Bar Charts](/windowsforms/chart/chart-types#bar-charts), [Bubble Chart](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart),
 
-Box and Whisker Chart, Gantt Chart, Tornado Chart, Polar and Radar Chart
+[Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
+
+{% endseealso %}
 
 ### EnablePhongStyle
 
@@ -2370,7 +2328,7 @@ Specifies if the PhongStyle is enabled.
 
 
 
-_Table_ _25_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2418,13 +2376,12 @@ Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 ![](Chart-Series_images/Chart-Series_img32.jpeg)
 
 
-_Figure_ _123_: _Bubble Chart with PhongStyle disabled for One Series_
 
+{% seealso %}
 
+[Bubble Charts](/windowsforms/chart/chart-types#bubble-chart)
 
-### See Also
-
-Bubble Chart
+{% endseealso %}
 
 ### EnableAreaToolTip
 
@@ -2447,7 +2404,6 @@ Me.chartControl1.Series(0).EnableAreaToolTip = True
 
 ![](Chart-Series_images/Chart-Series_img33.jpeg)
 
-_Figure_ _124_: _EnableAreaToolTip = "True"_
 
 ### ErrorBarsSymbolShape
 
@@ -2455,7 +2411,7 @@ This property determines the shape of the error bar symbol when DrawErrorBars is
 
 
 
-_Table_ _26_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2465,7 +2421,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* None - No marker will be shown.* Line - A Line will be drawn as the marker.* Square - A Square will be drawn as the marker.* Circle - A Circle will be drawn as the marker.* Diamond - A Diamond will be drawn as the marker.* Triangle - A Triangle will be drawn as the marker.* VertLine - A VerticalLine will be drawn as the marker.* Cross - A Cross will be drawn as the marker.* Hexagon - An Hexagon will be drawn as the marker.* HorizLine - An Horizontal Line will be drawn as the marker.* Image - An Image will be drawn as the marker.* InvertedTriangle - A InvertedTriangle will be drawn as the marker.* Pentagon - A Pentagon will be drawn as the marker.* Star - A Star will be drawn as the marker.</td></tr>
+<ul><li> <b>None</b> - No marker will be shown.</li><li> <b>Line</b> - A Line will be drawn as the marker.</li><li><b>Square</b> - A Square will be drawn as the marker.</li><li> <b>Circle</b> - A Circle will be drawn as the marker.</li><li> <b>Diamond</b> - A Diamond will be drawn as the marker.</li><li> <b>Triangle</b> - A Triangle will be drawn as the marker.</li><li> <b>VertLine</b> - A VerticalLine will be drawn as the marker.</li><li><b> Cross</b> - A Cross will be drawn as the marker.</li><li><b> Hexagon</b> - An Hexagon will be drawn as the marker.</li><li> <b>HorizLine</b> - An Horizontal Line will be drawn as the marker.</li><li><b> Image</b> - An Image will be drawn as the marker.</li><li> <b>InvertedTriangle</b> - A InvertedTriangle will be drawn as the marker.</li><li><b>Pentagon</b> - A Pentagon will be drawn as the marker.</li><li><b>Star</b> - A Star will be drawn as the marker.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -2507,13 +2463,12 @@ Me.chartControl1.Series(0).ErrorBarsSymbolShape = ChartSymbolShape.Circle
 
 
 
-_Figure_ _125_: _Line Chart with ErrorBarSymbol set to "Circle"_
 
+{% seealso %}
 
+[Line Charts](/windowsforms/chart/chart-types#line-charts), [DrawErrorBars](/windowsforms/chart/chart-series#drawerrorbars)
 
-### See Also
-
-Line Chart, DrawErrorBars
+{% endseealso %}
 
 ### ExplodedAll
 
@@ -2521,7 +2476,7 @@ Indicates whether to explode all slice in the Pie or Doughnut chart.
 
 
 
-_Table_ _27_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2568,13 +2523,11 @@ Me.chartControl1.Series(0).ExplodedAll = True
 ![](Chart-Series_images/Chart-Series_img35.jpeg)
 
 
-_Figure_ _126_: _Exploded Pie Chart_
+{% seealso %}
 
+[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-
-### See Also
-
-Doughnut Chart, Pie Chart
+{% endseealso %}
 
 ### ExplodedIndex
 
@@ -2582,7 +2535,7 @@ Gets / sets the Index point that is to be used when a point is to be exploded fr
 
 
 
-_Table_ _28_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2632,13 +2585,11 @@ Me.chartControl1.Series(0).ExplodedIndex = 0
 
 
 
-_Figure_ _127_: _Pie Chart with Exploded Index_
+{% seealso %}
 
+[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-
-### See Also
-
-Doughnut Chart, Pie Chart
+{% endseealso %}
 
 ### ExplosionOffset
 
@@ -2646,7 +2597,7 @@ Gets / sets the offset value that is to be used when slices are to be exploded i
 
 
 
-_Table_ _29_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2698,13 +2649,12 @@ Me.chartControl1.Series(0).ExplosionOffset = 30f
 
 
 
-_Figure_ _128_: _Exploded Pie Chart_
 
+{% seealso %}
 
+[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-### See Also
-
-Doughnut Chart, Pie Chart
+{% endseealso %}
 
 ### FancyToolTip
 
@@ -2712,7 +2662,7 @@ Defines the styles for a fancy tooltip. These styles include font, marker style,
 
 
 
-_Table_ _30_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2726,7 +2676,7 @@ Specifies symbol, symbol styles for the ToolTip.</td></tr>
 <tr>
 <td>
 Default Value     </td><td colspan = "2">
-* Visible - False* Angle  - 15* Alignment - Left* ForeColor - Color.Black* BackColor - Color.Info* SymbolColor - Color.Red* Font - Arial, 8 pt* Symbol Size - (10,10)* Symbol - Circle* Style - SmoothRectangle</td></tr>
+<ul><li> Visible - False</li><li> Angle  - 15</li><li> Alignment - Left</li><li>ForeColor - Color.Black</li><li> BackColor - Color.Info</li><li> SymbolColor - Color.Red</li><li> Font - Arial, 8 pt</li><li>Symbol Size - (10,10)</li><li>Symbol - Circle</li><li> Style - SmoothRectangle</li></ul></td></tr>
 <tr>
 <td>
 <br>2D / 3D Limitations</td><td colspan = "2">
@@ -2773,13 +2723,12 @@ Me.chartControl1.Series(0).FancyToolTip.Visible = True
 
 
 
-_Figure_ _129_: _StackingBar Chart with FancyToolTip_
 
+{% seealso %}
 
+[Chart Types](/windowsforms/chart/chart-types)
 
-### See Also
-
-Chart Types
+{% endseealso %}
 
 ### FigureBase
 
@@ -2787,7 +2736,7 @@ Specifies the drawing style for the funnel or pyramid chart base.
 
 
 
-_Table_ _31_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2797,7 +2746,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Circle - Renders the chart with a circular base.* Square - Renders the chart with a square base.</td></tr>
+<ul><li> Circle - Renders the chart with a circular base.</li><li> Square - Renders the chart with a square base.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -2864,16 +2813,8 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FigureBase = ChartFigureBase.S
 
 
 
-_Figure_ _130_: _Pyramid Chart with Figure Base = " Circle"_
-
-
-
 ![](Chart-Series_images/Chart-Series_img40.jpeg)
 
-
-
-
-_Figure_ _131_: _Pyramid Chart with Figure Base ="Square"_
 
 
 
@@ -2885,32 +2826,23 @@ _Figure_ _131_: _Pyramid Chart with Figure Base ="Square"_
 
 
 
-
-_Figure_ _132_: _Funnel Chart with Figure Base ="Circle"_
-
-
-
 ![](Chart-Series_images/Chart-Series_img42.jpeg)
 
 
 
+{% seealso %}
 
+ [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),[Funnel Chart](/windowsforms/chart/chart-types#funnel-chart)
 
-_Figure_ _133_: _Funnel Chart with Figure Base ="Square"_
-
-
-
-### See Also
-
-Pyramid Chart,Funnel Chart
-
+ {% endseealso %}
+ 
 ### FillMode
 
 Specifies how the slice interior should be filled with gradient colors.
 
 
 
-_Table_ _32_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2920,7 +2852,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* AllPie - Controls the interior shape style of All PieItem.* EveryPie - Controls the interior shape style of Every PieItem.</td></tr>
+<ul><li> AllPie - Controls the interior shape style of All PieItem.</li><li> EveryPie - Controls the interior shape style of Every PieItem.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -2969,19 +2901,15 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.FillMode = ChartPieFillMode.Every
 ![](Chart-Series_images/Chart-Series_img43.jpeg)
 
 
-_Figure_ _134_: _Pie Chart with "EveryPie" FillMode_
-
-
 
 ![](Chart-Series_images/Chart-Series_img44.jpeg)
 
-_Figure_ _135_: _Pie Chart with "AllPie" FillMode_
 
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-### See Also
-
-Pie Chart
+{% endseealso %}
 
 ### FunnelMode
 
@@ -2989,7 +2917,7 @@ Gets or sets the chart funnel mode.
 
 
 
-_Table_ _33_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -2999,7 +2927,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* YIsWidth - DataPoint y-value controls the radius of the funnel segment. * YIsHeight - DataPoint y-value controls the height of the funnel segment.</td></tr>
+<ul><li> YIsWidth - DataPoint y-value controls the radius of the funnel segment. </li><li>YIsHeight - DataPoint y-value controls the height of the funnel segment.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -3039,19 +2967,16 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.Y
 
 ![](Chart-Series_images/Chart-Series_img45.jpeg)
 
-_Figure_ _136_: _Funnel Chart with FunnelMode as "Height"_
-
 
 ![](Chart-Series_images/Chart-Series_img46.jpeg)
 
 
-_Figure_ _137_: _Funnel Chart with FunnelMode as "Width"_
 
+{% seealso %}
 
+[Funnel Chart](/windowsforms/chart/chart-types#funnel-chart
 
-### See Also
-
-Funnel Chart
+{% endseealso %}
 
 ### Font
 
@@ -3059,7 +2984,7 @@ Gets or sets a font object used for drawing the data point labels.
 
 
 
-_Table_ _34_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3073,7 +2998,7 @@ Specifying font face, size and style.</td></tr>
 <tr>
 <td>
 Default Value     </td><td colspan = "2">
-* FontStyle - Regular* Face Name - MicroSoft Sans Serif* Size -  8.25</td></tr>
+<ul><li> FontStyle - Regular</li><li> Face Name - MicroSoft Sans Serif</li><li> Size -  8.25</li></ul></td></tr>
 <tr>
 <td>
 <br>2D / 3D Limitations</td><td colspan = "2">
@@ -3143,13 +3068,11 @@ Me.chartControl1.Series(0).Styles(0).Font.Facename = "Arial"
 ![](Chart-Series_images/Chart-Series_img47.jpeg)
 
 
-_Figure_ _138_:_ _Column Chart with Text_
+{% seealso %}
 
+[Chart Types](/windowsforms/chart/chart-types)
 
-
-### See Also
-
-Chart Types
+{% endseealso %}
 
 ### GanttDrawMode
 
@@ -3157,7 +3080,7 @@ Specifies the drawing mode of Gantt chart.
 
 
 
-_Table_ _35_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3167,7 +3090,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* AutoSizeMode - Plots the Gantt Chart side by side.* CustomPointWidthMode - Plots the Gantt Chart as Overlapped.</td></tr>
+<ul><li> AutoSizeMode - Plots the Gantt Chart side by side.</li><li> CustomPointWidthMode - Plots the Gantt Chart as Overlapped.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -3241,17 +3164,14 @@ Me.chartControl1.Series(1).GanttDrawMode = ChartGanttDrawMode.AutoSizeMode
 ![](Chart-Series_images/Chart-Series_img48.jpeg)
 
 
-_Figure_ _139_: _Gantt Chart with AutoSizeMode_
-
 
 ![](Chart-Series_images/Chart-Series_img49.jpeg)
 
+{% seealso %}
 
-_Figure_ _140_:_ _Gantt Chart with CustomPointWidthMode_
+[Gantt Chart](/windowsforms/chart/chart-types#gantt-chart)
 
-### See Also
-
-Gantt Chart
+{% endseealso %}
 
 ### GapRatio
 
@@ -3259,7 +3179,7 @@ Gets or sets the gap size between funnel chart or pyramid chart segments. Defaul
 
 
 
-_Table_ _36_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3320,20 +3240,17 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.GapRatio = 0.1f
 
 ![](Chart-Series_images/Chart-Series_img50.jpeg)
 
-_Figure_ _141_: _Funnel chart with 0.1 GapRatio_
-
 
 
 ![](Chart-Series_images/Chart-Series_img51.jpeg)
 
 
-_Figure_ _142_: _Pyramid chart with 0.1 GapRatio_
 
+{% seealso %}
 
+[Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart), [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart)
 
-### See Also
-
-Pyramid Chart, Funnel Chart
+{% endseealso %}
 
 ### Gradient
 
@@ -3341,7 +3258,7 @@ Gets / sets ColorBlend for a pie item. ColorBlend defines arrays of colors and p
 
 
 
-_Table_ _37_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3408,13 +3325,13 @@ series.ConfigItems.PieItem.Gradient = clrblnd
 
 ![](Chart-Series_images/Chart-Series_img52.jpeg)
 
-_Figure_ _143_: _Pie Chart with Gradient Styles Set_
 
 
+{% seealso %}
 
-See Also
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-Pie Chart
+{% endseealso %}
 
 ### HeightBox
 
@@ -3422,7 +3339,7 @@ Gets / sets the height of the boxes in the financial chart types.
 
 
 
-_Table_ _38_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3470,20 +3387,16 @@ Me.chartControl1.Series(0).HeightBox = 2f
 ![](Chart-Series_images/Chart-Series_img53.jpeg)
 
 
-_Figure_ _144_: _PointAndFigure Chart with Box Size of 1 (Default)_
-
-
 
 ![](Chart-Series_images/Chart-Series_img54.jpeg)
 
 
-_Figure_ _145_: _PointAndFigure Chart with Box Size of 2_
 
+{% seealso %}
 
+[PointAndFigure Chart](/windowsforms/chart/chart-types#point-and-figure-chart)
 
-See Also
-
-PointAndFigure Chart
+{% endseealso %}
 
 ### HeightByAreaDepth
 
@@ -3491,7 +3404,7 @@ Indicates whether to draw series using the ChartArea.Depth property.
 
 
 
-_Table_ _39_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3542,19 +3455,15 @@ Me.chartControl1.ChartArea.Depth = 25f
 
 ![](Chart-Series_images/Chart-Series_img55.jpeg)
 
-_Figure_ _146_: _Pie Chart with Default Dimension_
-
-
 
 ![](Chart-Series_images/Chart-Series_img56.jpeg)
 
-_Figure_ _147_: _Pie Chart with HeightByAreaDepth Enabled_
 
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-See Also
-
-Pie Chart
+{% endseealso %}
 
 ### HeightCoeficient
 
@@ -3562,7 +3471,7 @@ When in 3D mode, the relative height of the pie chart can be specified via the p
 
 
 
-_Table_ _40_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3614,13 +3523,12 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
 ![](Chart-Series_images/Chart-Series_img57.jpeg)
 
 
-_Figure_ _148_: _Pie Chart with HeightCoeficient_
 
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-See Also
-
-Pie Chart
+{% endseealso %}
 
 ### HighlightInterior
 
@@ -3628,7 +3536,7 @@ The auto highlight color for any series can be changed by setting the color at t
 
 
 
-_Table_ _41_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3687,8 +3595,6 @@ series1.Style.HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, C
 
 ![](Chart-Series_images/Chart-Series_img58.jpeg)
 
-_Figure_ _149_: _Column Chart with HighlightInterior_
-
 
 
 ### Specific Data Point Setting
@@ -3719,17 +3625,19 @@ series1.Styles(3).HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagona
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
-Bar Charts, Pie Chart, Funnel Chart, Pyramid Chart, Bubble Chart, Column Chart, Area Chart, Stacking Area Chart, Stacking Area100 Chart, Line Charts, Box and Whisker Chart, Gantt Chart, Tornado Chart, Polar And Radar Chart, Hi Lo Chart, Hi Lo Open Close Chart
+ [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart),  [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart),[Column Charts](/windowsforms/chart/chart-types#column-charts),[AreaChart](/windowsforms/chart/chart-types#area-chart), [Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart), [Stacking Area100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
 
+ {% endseealso %}
+ 
 ### HitTestRadius
 
 HitTestRadius property controls the circle around this point, which will be considered within the bounds of this point for hit-testing purposes. The ChartRegion events such as ChartRegionClick, ChartRegionMouseDown, ChartRegionMouseHover, ChartRegionMouseLeave, ChartRegionMouseMove and ChartRegionMouseEnter, are being affected by this property.
 
 
 
-_Table_ _42_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3816,13 +3724,12 @@ End Sub
 
 ![](Chart-Series_images/Chart-Series_img59.jpeg)
 
-_Figure_ _150_: _Chart with HitTestRadius = "20"_
 
+{% seealso %}
 
+[Line Charts](/windowsforms/chart/chart-types#line-charts) , [StepLineChart](/windowsforms/chart/chart-types#step-line-chart), [ChartRegionClick Events](/windowsforms/chart/chart-control-events#chart-region-events)
 
-See Also
-
-Line Chart , StepLineChart, ChartRegionClick Events
+{% endseealso %}
 
 ### ImageIndex
 
@@ -3830,7 +3737,7 @@ Gets / sets the image index from the associated ImageList property.
 
 
 
-_Table_ _43_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -3894,9 +3801,6 @@ series1.Style.Symbol.Shape = ChartSymbolShape.Image
 
 ![](Chart-Series_images/Chart-Series_img60.jpeg)
 
-_Figure_ _151_: _Bubble Chart_
-
-
 
 Specific Data Point Setting
 
@@ -3952,9 +3856,11 @@ series1.Styles(1).Symbol.Shape = ChartSymbolShape.Image
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
-Area Charts, Bar Charts, Bubble Chart, Column Charts, Line Charts, Candle Chart, Renko chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Tornado Chart, Polar and Radar Chart
+[AreaChart](/windowsforms/chart/chart-types#area-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
+
+{% endseealso %}
 
 ### Images
 
@@ -3962,7 +3868,7 @@ Gets / sets the imagelist that is to be associated with this ChartPoint. This pr
 
 
 
-_Table_ _44_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4035,8 +3941,6 @@ Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 ![](Chart-Series_images/Chart-Series_img61.jpeg)
 
 
-_Figure_ _152_: _Bubble Chart with Image_
-
 Specific Data Point Setting
 
 You can also specify different image collections for different data points using the below code.
@@ -4087,9 +3991,11 @@ series1.Styles(1).Symbol.Shape = ChartSymbolShape.Image
 
 
 
-See Also
+{% seealso %}
 
-Area Charts, Bar Charts, Bubble Chart, Column Charts, Line Charts, Candle Chart, Renko chart, Three Line Break Chart, Box and Whisker Chart, Gantt Chart, Tornado Chart, Polar and Radar Chart
+[AreaChart](/windowsforms/chart/chart-types#area-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) ,[Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
+
+{% endseealso %}
 
 ### InSideRadius
 
@@ -4097,7 +4003,7 @@ Sets / Gets the radius of the doughnut hole of Pie chart as a fraction of the ra
 
 
 
-_Table_ _45_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4150,13 +4056,11 @@ series1.InSideRadius = 0.5f
 ![](Chart-Series_images/Chart-Series_img62.jpeg)
 
 
-_Figure_ _153_: _InSideRadius Pie Chart_
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-
-See Also
-
-Pie Chart
+{% endseealso %}
 
 ### Interior
 
@@ -4164,7 +4068,7 @@ This property will allow the user to set a solid back color, gradient or pattern
 
 
 
-_Table_ _46_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4217,11 +4121,6 @@ Me.chartControl1.Series(0).Style.Interior = New BrushInfo(GradientStyle.Horizont
 {% endhighlight %}
 
 ![](Chart-Series_images/Chart-Series_img63.jpeg)
-
-
-
-
-_Figure_ _154_: _Chart control with Gradient Control_
 
 
 
@@ -4296,14 +4195,11 @@ series1.Styles(3).Text = "Server4"
 
 
 
+{% seealso %}
 
-_Figure_ _155_: _Unique PatternStyle for each Slice in Pie Chart_
+[Chart Types](/windowsforms/chart/chart-types)
 
-
-
-See Also
-
-Chart Types
+{% endseealso %}
 
 ### LabelPlacement
 
@@ -4311,7 +4207,7 @@ Gets or sets the Pyramid chart or Funnel chart data point label placement when C
 
 
 
-_Table_ _47_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4321,7 +4217,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Center – DataPoint labels are aligned to the center of the Pyramid segment.* Top - DataPoint labels are aligned to the top of the Pyramid segment.* Bottom – DataPoint labels are aligned to the bottom of the Pyramid segment.* Left - DataPoint labels are aligned to the Left of the Pyramid segment.* Right - DataPoint labels are aligned to the Right of the Pyramid segment.</td></tr>
+<ul><li> Center – DataPoint labels are aligned to the center of the Pyramid segment.</li><li> Top - DataPoint labels are aligned to the top of the Pyramid segment.</li><li> Bottom – DataPoint labels are aligned to the bottom of the Pyramid segment.</li><li>Left - DataPoint labels are aligned to the Left of the Pyramid segment.</li><li>Right - DataPoint labels are aligned to the Right of the Pyramid segment.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -4357,9 +4253,6 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelPlacement = ChartAccumul
 
 ![](Chart-Series_images/Chart-Series_img65.jpeg)
 
-_Figure_ _156_: _ChartAccumulationLabelPlacement as Center_
-
-
 
 Here is the code snippet using LabelPlacement in Funnel Chart.
 
@@ -4380,13 +4273,11 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelPlacement = ChartAccumula
 ![](Chart-Series_images/Chart-Series_img66.jpeg)
 
 
-_Figure_ _157_: _ChartAccumulationLabelPlacement as Center_
+{% seealso %}
 
+[Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart)
 
-
-See Also
-
-Pyramid Chart, Funnel Chart
+{% endseealso %}
 
 ### LabelStyle 
 
@@ -4394,7 +4285,7 @@ Gets or sets the Pyramid chart or Funnel chart label style. This property dictat
 
 
 
-_Table_ _48_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4404,7 +4295,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Inside - DataPoint label is drawn inside the Pyramid segment.* Outside - DataPoint label is drawn outside and next to the Pyramid segment.* OutsideInColumn - DataPoint is drawn outside the Pyramid segment with all labels aligned.* Disabled - DataPoint labels are disabled.</td></tr>
+<ul><li> Inside - DataPoint label is drawn inside the Pyramid segment.</li><li>Outside - DataPoint label is drawn outside and next to the Pyramid segment.</li><li> OutsideInColumn - DataPoint is drawn outside the Pyramid segment with all labels aligned.</li><li> Disabled - DataPoint labels are disabled.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -4440,9 +4331,6 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelStyle= ChartAccumulation
 
 ![](Chart-Series_images/Chart-Series_img67.jpeg)
 
-_Figure_ _158_: _ChartAccumulationLabelStyle as OutsideInColumn_
-
-
 
 Here is the code snippet using LabelStyle in Funnel Chart.
 
@@ -4461,13 +4349,12 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelStyle= ChartAccumulationL
 
 ![](Chart-Series_images/Chart-Series_img68.jpeg)
 
-_Figure_ _159_: _ChartAccumulationLabelStyle as OutsideInColumn_
 
+{% seealso %}
 
-
-See Also
-
-Pyramid Chart, Funnel Chart
+ [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart)
+ 
+ {% endseealso %}
 
 ### LegendItem
 
@@ -4479,7 +4366,7 @@ Specifies the light angle in horizontal plane.
 
 
 
-_Table_ _49_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4534,22 +4421,16 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightAngle = 45
 
 ![](Chart-Series_images/Chart-Series_img69.jpeg)
 
-_Figure_ _160_: _Light Angle = 45 with 3D Effect_
-
-
 
 ![](Chart-Series_images/Chart-Series_img70.jpeg)
 
 
 
+{% seealso %}
 
-_Figure_ _161_: _Light Angle = 30 with 3D Effect_
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart) , [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart) , [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart) , [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart)(3D), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)(3D)
 
-
-
-See Also
-
-Column Charts,Bar Charts, Box and Whisker Chart , Gantt Chart , Histogram Chart, Tornado Chart , Polar and Radar Chart, Candle Chart, Hilo Chart(3D), HiloOpenClose(3D)
+{% endseealso %}
 
 ### LightColor
 
@@ -4557,7 +4438,7 @@ Specifies the color of light for all shading modes except ChartColumnShadingMode
 
 
 
-_Table_ _50_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4608,13 +4489,12 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightColor = Color.Gre
 ![](Chart-Series_images/Chart-Series_img71.jpeg)
 
 
-_Figure_ _162_: _LightColor applied to Chart Series_
 
+{% seealso %}
 
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart) , [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart) , [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart) , 
 
-See Also
-
-Scatter Chart, Column Charts, Bar Charts, Box and Whisker Chart , Gantt Chart , Histogram Chart, Tornado Chart , 
+{% endseealso %}
 
 ### Polar and Radar Chart
 
@@ -4624,7 +4504,7 @@ Specifies the name of the Series. This name can also be used to retrieve the ser
 
 
 
-_Table_ _51_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4708,13 +4588,13 @@ Me.chartControl1.Series["Product1"].Style.Symbol.Color = Color.Red
 
 ![](Chart-Series_images/Chart-Series_img72.jpeg)
 
-_Figure_ _163_: _Chart with Legend for the Series_
 
 
+{% seealso %}
 
-See Also
+[Chart Types](/windowsforms/chart/chart-types)
 
-Chart Types
+{% endseealso %}
 
 ### NumberOfHistogramIntervals
 
@@ -4722,7 +4602,7 @@ Gets or sets the number of Histogram intervals.
 
 
 
-_Table_ _52_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4772,13 +4652,12 @@ series.NumberOfHistogramIntervals = 20
 
 ![](Chart-Series_images/Chart-Series_img73.jpeg)
 
-_Figure_ _164_: _Histogram Chart with Interval set to 20_
 
+{% seealso %}
 
+[Histogram chart](/windowsforms/chart/chart-types#histogram-chart)
 
-See Also
-
-### Histogram Chart
+{% endseealso %}
 
 ### OpenCloseDrawMode
 
@@ -4786,7 +4665,7 @@ Gets or sets the open, close draw mode to the HiloOpenClose chart.
 
 
 
-_Table_ _53_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4796,7 +4675,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Open - Points only the opening value of that period.* Close - Points out the closing value of that period.* Both - Points out both the opening and the closing values  of that period.</td></tr>
+<ul><li> Open - Points only the opening value of that period.</li><li> Close - Points out the closing value of that period.* Both - Points out both the opening and the closing values  of that period.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -4866,16 +4745,7 @@ Me.chartControl1.Series(0).OpenCloseDrawMode = ChartOpenCloseDrawMode.Open
 ![](Chart-Series_images/Chart-Series_img74.jpeg)
 
 
-_Figure_ _165_: _Chart with "Open" Mode_
-
-
-
 ![](Chart-Series_images/Chart-Series_img75.jpeg)
-
-
-
-
-_Figure_ _166_: _Chart with "Close" Mode_
 
 
 
@@ -4883,9 +4753,11 @@ _Figure_ _166_: _Chart with "Close" Mode_
 
 
 
-See Also
+{% seealso %}
 
-### Hi Lo Open Close Chart
+[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
+
+{% endseealso %}
 
 ### OptimizePiePointPositions
 
@@ -4893,7 +4765,7 @@ Specifies if the data points with smaller values are grouped together and ordere
 
 
 
-_Table_ _54_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -4903,7 +4775,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* True  - Enables optimization* False - Disables optimization<br></td></tr>
+<ul><li> True  - Enables optimization</li><li> False - Disables optimization</li></ul><br></td></tr>
 <tr>
 <td>
 Default Value     </td><td colspan = "2">
@@ -4981,19 +4853,15 @@ Me.chartControl1.Series.Add(series)
 ![](Chart-Series_images/Chart-Series_img77.jpeg)
 
 
-_Figure_ _168_: _OptimizePiePointPositions set to True_
-
-
 
 ![](Chart-Series_images/Chart-Series_img78.jpeg)
 
-_Figure_ _169_: _OptimizePiePointPositions set to False_
 
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-See Also
-
-Pie Chart
+{% endseealso %}
 
 ### PhongAlpha
 
@@ -5001,7 +4869,7 @@ Specifies the Phong's alpha co-efficient used for calculating specular lighting.
 
 
 
-_Table_ _55_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5053,23 +4921,18 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.PhongAlpha = 2.0
 
 
 
-_Figure_ _170_: _Normal Column Chart_
-
-
 
 ![](Chart-Series_images/Chart-Series_img80.jpeg)
 
 
 
 
-
-_Figure_ _171_: _Column Chart with Phong Alpha Set_
-
+{% seealso %}
 
 
-See Also
+ [BarCharts](/windowsforms/chart/chart-types#bar-charts) ,  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart) , [Column Charts](/windowsforms/chart/chart-types#column-charts)  ,  [Candle Charts](/windowsforms/chart/chart-types#candle-chart) , [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart) ,  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart) , [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart) ,  [Histogram chart](/windowsforms/chart/chart-types#histogram-chart) , [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Radar Charts](/windowsforms/chart/chart-types#radar-chart), [Scatter Chart](/windowsforms/chart/chart-types#scatter-chart), 
 
-Bar Charts , Box and Whisker , Column Charts , Candle Chart , Gantt Chart , HiLo Chart , HiLoOpenClose Chart ,  Histogram Chart , Tornado Chart, Radar Chart, Scatter Chart, 
+{% endseealso %}
 
 ### PieType
 
@@ -5077,7 +4940,7 @@ Sets pre-defined types for pie charts.
 
 
 
-_Table_ _56_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5087,7 +4950,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* None - It has no specific type.* OutSide - Specifies outside pie type.* InSide - Specifies inside pie type.* Round - Specifies Round pie type.* Bevel - Specifies Bevel pie type.* Custom - Specifies custom pie type.</td></tr>
+<ul><li> None - It has no specific type.<li></li> OutSide - Specifies outside pie type.</li><li> InSide - Specifies inside pie type.</li><li> Round - Specifies Round pie type.</li><li> Bevel - Specifies Bevel pie type.</li><li> Custom - Specifies custom pie type.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -5124,46 +4987,29 @@ The following screen shots depict these types.
 ![](Chart-Series_images/Chart-Series_img81.jpeg)
 
 
-_Figure_ _172_: _Pie Chart_
-
 
 
 ![](Chart-Series_images/Chart-Series_img82.jpeg)
 
 
-_Figure_ _173_: _Pie Bevel Chart_
 
 
 ![](Chart-Series_images/Chart-Series_img83.jpeg)
-
-
-_Figure_ _174_: _Pie Inside Chart_
 
 
 
 ![](Chart-Series_images/Chart-Series_img84.jpeg)
 
 
-
-
-
-_Figure_ _175_: _Pie Outside Chart_
-
-
-
 ![](Chart-Series_images/Chart-Series_img85.jpeg)
 
 
 
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-_Figure_ _176_: _Pie Round Chart_
-
-
-
-See Also
-
-PieChart
+{% endseealso %}
 
 ### PieWithSameRadius
 
@@ -5171,7 +5017,7 @@ Gets or sets whether the pie chart is rendered in the same radius when the Label
 
 
 
-_Table_ _57_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5219,9 +5065,11 @@ Setting this property to true will let you display Pie Chart with same size in t
 
 Check Tooltips topic for more info on this setting.
 
-See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{% endseealso %}
 
 ### PointWidth
 
@@ -5229,7 +5077,7 @@ Sets the width of this point relative to the total width available. It is very u
 
 
 
-_Table_ _58_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5282,17 +5130,7 @@ Private ganttSeries.Style.PointWidth = 0.25f
 
 
 
-
-_Figure_ _177_: _Chart with default PointWidth_
-
-
-
 ![](Chart-Series_images/Chart-Series_img87.jpeg)
-
-
-
-_Figure_ _178_: _Chart with PointWidth= 0.25f_
-
 
 
 Specific Data Point Setting
@@ -5317,9 +5155,11 @@ Private ganttSeries.Styles(1).PointWidth = 0.5f
 
 
 
-See Also
+{% seealso %}
 
-Gantt Chart
+[Gantt Chart](/windowsforms/chart/chart-types#gantt-chart)
+
+{% endseealso %}
 
 ### PriceDownColor
 
@@ -5327,7 +5167,7 @@ Specifies a color for the financial item whose price is down.
 
 
 
-_Table_ _59_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5379,15 +5219,11 @@ series7.PriceUpColor = Color.Orange
 
 
 
+{% seealso %}
 
+[Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [PointAndFigure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart)
 
-_Figure_ _179_: _PriceDownColor = "Magenta"_
-
-
-
-See Also
-
-Kagi Chart, Point and Figure Chart, Three Line Break Chart, Renko Chart
+{% endseealso %}
 
 ### PriceUpColor
 
@@ -5395,7 +5231,7 @@ Specifies a color for the financial item whose price is up.
 
 
 
-_Table_ _60_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5447,17 +5283,18 @@ series.PriceDownColor = Color.Green
 
 ![](Chart-Series_images/Chart-Series_img89.jpeg)
 
-_Figure_ _180_: _PriceUpColor = "Red"_
 
-See Also
+{% seealso %}
 
 Kagi Chart, Point and Figure Chart, Three Line Break Chart, Renko Chart
+
+{% endseealso %}
 
 ### PyramidMode
 
 Specifies the mode in which the y values should be interpreted. In Linear mode the y values are proportional to the length of the sides of the Pyramid. In Surface Mode the y values are proportional to the surface area of the corresponding blocks.
 
-_Table_ _61_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5467,7 +5304,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Linear -  Draw pyramid chart in linear mode* Surface - Draw pyramid chart in surface mode</td></tr>
+<ul><li> Linear -  Draw pyramid chart in linear mode</li><li>Surface - Draw pyramid chart in surface mode</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -5503,13 +5340,12 @@ Private Me.chartControl1.Series(0).ConfigItems.PyramidItem.PyramidMode=ChartPyra
 
 ![](Chart-Series_images/Chart-Series_img90.jpeg)
 
-_Figure_ _181_: _Surface Mode Pyramid Chart_
 
+{% seealso %}
 
+[Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart)
 
-See Also
-
-Pyramid Chart
+{% endseealso %}
 
 ### Radar Type
 
@@ -5517,7 +5353,7 @@ Indicates the type of radar chart to be rendered.
 
 
 
-_Table_ _62_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5527,7 +5363,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Area - Renders the radar chart such that the points are connected and the enclosed region is not filled.* Line - Renders the radar chart such that the points are connected but the enclosed region is not filled.* Symbol - Points are rendered with the associated symbols</td></tr>
+<ul><li> Area - Renders the radar chart such that the points are connected and the enclosed region is not filled.</li><li> Line - Renders the radar chart such that the points are connected but the enclosed region is not filled.</li><li>Symbol - Points are rendered with the associated symbols</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -5588,13 +5424,12 @@ Private Me.chartControl1.Series(1).Style.Symbol.Color = Color.Green
 
 
 
-_Figure_ _182_: _Radar Chart_
 
+{% seealso %}
 
+[Polar And Radar Charts](/windowsforms/chart/chart-types#polar-and-radar-chart)
 
-See Also
-
-Polar and Radar Charts
+{% endseealso %}
 
 ### RadarStyle
 
@@ -5602,7 +5437,7 @@ Indicates the style of the radar chart axes.
 
 
 
-_Table_ _63_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5612,7 +5447,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Polygon - Axes are renders as polygon.* Circle - Axes are renders as Circle.</td></tr>
+<ul><li>Polygon - Axes are renders as polygon.</li><li> Circle - Axes are renders as Circle.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -5650,21 +5485,18 @@ Me.chartControl1.RadarStyle = ChartRadarAxisStyle.Circle
 ![](Chart-Series_images/Chart-Series_img92.jpeg)
 
 
-_Figure_ _183_: _Radar Chart with Circle RadarStyle_
-
 
 
 ![](Chart-Series_images/Chart-Series_img93.jpeg)
 
 
 
-_Figure_ _184_: _Radar Chart with Polygon RadarStyle_
 
+{% seealso %}
 
+[Radar Charts](/windowsforms/chart/chart-types#radar-chart)
 
-See Also
-
-Radar Charts
+{% endseealso %}
 
 ### RelatedPoints
 
@@ -5672,7 +5504,7 @@ Lets you specific the relationship between two points in the Gantt chart type. T
 
 
 
-_Table_ _64_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5682,11 +5514,12 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-A ChartRelatedPointInfo object, which has the following properties:* Color - Any Color Object* Alignment - Any PenAlignment Property* Points - Integer Array containing the points which are to be connected.* Count - Specifies the Number of points* DashStyle - Any System.Drawing.Drawing2D.DashStyle* DashPattern - A Float array with two values* Width - Any Float value</td></tr>
+A ChartRelatedPointInfo object, which has the following properties:
+<ul><li> Color - Any Color Object* Alignment - Any PenAlignment Property</li><li>Points - Integer Array containing the points which are to be connected.</li><li> Count - Specifies the Number of points</li><li>DashStyle - Any System.Drawing.Drawing2D.DashStyle* DashPattern - A Float array with two values</li><li>Width - Any Float value</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
-* Color - Control Text Color* Alignment - Center* Points - Null* Count - 0 * DashStyle - Solid* DashPattern - Null* Width - 5.0f</td></tr>
+<ul><li> Color - Control Text Color</li><li> Alignment - Center* Points - Null* Count - 0</li><li> DashStyle - Solid* DashPattern - Null</li><li>Width - 5.0f</li></ul></td></tr>
 <tr>
 <td>
 <br>2D / 3D Limitations</td><td colspan = "2">
@@ -5780,13 +5613,13 @@ Me.chartControl1.Series(1).Styles(5).RelatedPoints.Width = 3f
 
 ![](Chart-Series_images/Chart-Series_img94.jpeg)
 
-_Figure_ _185_: _Gantt Chart with RelatedPoints specified for certain Data Points_
 
 
+{% seealso %}
 
-See Also
+[Gantt Chart](/windowsforms/chart/chart-types#gantt-chart)
 
-Gantt Chart
+{% endseealso %}
 
 ### ReversalAmount
 
@@ -5794,7 +5627,7 @@ Gets or sets the reversal amount for financial charts.
 
 
 
-_Table_ _65_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5832,9 +5665,6 @@ Here is code snippet using ReversalAmount in Renko Chart.
 
 
 
-_Figure_ _186_: _Renko Chart with default ReversalAmount = "1"_
-
-
 {% highlight c# %}
 
 series.ReversalAmount = 3;
@@ -5849,11 +5679,13 @@ Private series.ReversalAmount = 3
 
 ![](Chart-Series_images/Chart-Series_img96.jpeg)
 
-_Figure_ _187_: _Renko Chart with ReversalAmount = "3"_
 
-See Also
 
-Kagi Chart, Point and Figure Chart, Three Line Break Chart, Renko Chart
+{% seealso %}
+
+[Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [PointAndFigure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart)
+
+{% endseealso %}
 
 ### Rotate
 
@@ -5861,7 +5693,7 @@ Indicates whether the x and y axis should be rotated for this series.
 
 
 
-_Table_ _66_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5909,18 +5741,14 @@ Private Me.chartControl1.Series(0).Rotate = True
 ![](Chart-Series_images/Chart-Series_img97.jpeg)
 
 
-_Figure_ _188_: _Column Chart_
-
-
 
 ![](Chart-Series_images/Chart-Series_img98.jpeg)
 
+{% seealso %}
 
-_Figure_ _189_: _Rotated Column Chart_
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , [Bar Charts](/windowsforms/chart/chart-types#bar-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Line Chart](/windowsforms/chart/chart-types#line-chart), [Spline Chart](/windowsforms/chart/chart-types#spline-chart), [Stepline Chart](/windowsforms/chart/chart-types#step-line-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [BoxandWhisker chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Bubble And Scatter Chart](/windowsforms/chart/chart-types#xy-charts)
 
-See Also
-
-Column Charts, Bar Charts, Area charts, Line Chart, Spline Chart, Stepline Chart, Kagi Chart, BoxandWhisker chart, Histogram chart, Polar and Radar Chart, Bubble And Scatter Chart
+{% endseealso %}
 
 ### ScatterConnectType
 
@@ -5928,7 +5756,7 @@ Specifies the connection type of the Scatter Charts.
 
 
 
-_Table_ _67_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -5978,13 +5806,6 @@ series.ScatterConnectType = ScatterConnectType.Line
 ![](Chart-Series_images/Chart-Series_img99.jpeg)
 
 
-
-
-
-_Figure_ _190_: _Scatter Line Chart_
-
-
-
 ### Scatter Spline Chart
 
 Alternatively, you can connect the points in the series through splines using the ScatterConnectType property as shown below.
@@ -6007,13 +5828,12 @@ series.ScatterSplineTension = 1 ' Default is 0
 
 ![](Chart-Series_images/Chart-Series_img100.jpeg)
 
-_Figure_ _191_: _Scatter Spline Chart_
 
+{% seealso %}
 
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart)
 
-See Also
-
-Scatter Chart
+{% endseealso %}
 
 ### ScatterSplineTension
 
@@ -6021,7 +5841,7 @@ Sets the tension required for the Scatter Spline Chart.
 
 
 
-_Table_ _68_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6069,12 +5889,12 @@ Private Me.chartControl1.Series(i).ScatterSplineTension =3
 
 ![](Chart-Series_images/Chart-Series_img101.jpeg)
 
-_Figure_ _192_: _Scatter Chart with ScatterSplineTension = "3"_
 
+{% seealso %}
 
-See Also
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart)
 
-Scatter Chart
+{% endseealso %}
 
 ### SeriesToolTipFormat
 
@@ -6084,7 +5904,7 @@ Specifies the format for tooltip display in series.
 
 
 
-_Table_ _69_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6094,7 +5914,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* {0}  -  Series Name* {1}  -  Series Style tooltip</td></tr>
+<ul><li> {0}  -  Series Name</li><li> {1}  -  Series Style tooltip</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -6132,11 +5952,13 @@ Private Me.chartControl1.Series(1).SeriesToolTipFormat="{0}"
 
 ![](Chart-Series_images/Chart-Series_img102.jpeg)
 
-_Figure_ _193_: _SeriesToolTipFormat set = "{0}"_
 
-See Also
 
-Area Charts, Radar Chart, Polar Chart, ThreeLineBreak Chart,PointAndFigure Chart, StepLine Chart, Spline Chart, HiloOpenClose(3D), RotatedSpline, Kagi Chart
+{% seealso %}
+
+[AreaChart](/windowsforms/chart/chart-types#area-chart), [Radar Chart](/windowsforms/chart/chart-types#radar-chart), [Polar Chart](/windowsforms/chart/chart-types#polar-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart),[PointAndFigure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [StepLine Chart](/windowsforms/chart/chart-types#step-line-chart), [Spline Chart](/windowsforms/chart/chart-types#spline-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)(3D), [RotatedSpline](/windowsforms/chart/chart-types#rotated-spline-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart)
+
+{% endseealso %}
 
 ### ShadingMode
 
@@ -6144,7 +5966,7 @@ Specifies the appearance of the chart series.
 
 
 
-_Table_ _70_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6154,7 +5976,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* FlatRectangle - Displays in a flat rectangular format.* PhongCylinder - Displays in a cylindrical format.</td></tr>
+<ul><li> FlatRectangle - Displays in a flat rectangular format.</li><li>PhongCylinder - Displays in a cylindrical format.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -6190,18 +6012,15 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartCol
 
 ![](Chart-Series_images/Chart-Series_img103.jpeg)
 
-_Figure_ _194_: _Normal Column Chart (3D View)_
-
 ![](Chart-Series_images/Chart-Series_img104.jpeg)
 
 
-_Figure_ _195_: _Column Chart with ShadingMode = "FlatRectangle"_
 
+{% seealso %}
 
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
 
-See Also
-
-Column Charts, BarCharts, Candle Chart, HiLO Chart, HiLoOpenClose Chart, Tornado chart, BoxandWhisker chart, Gantt Chart, Histogram Chart, Polar and Radar Chart
+{% endseealso %}
 
 ### ShadowInterior
 
@@ -6209,7 +6028,7 @@ Specifies the interior color of the shadow.
 
 
 
-_Table_ _71_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6266,9 +6085,6 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 
 ![](Chart-Series_images/Chart-Series_img105.jpeg)
 
-_Figure_ _196_: _ColumnChart with SkyBlue Shadow_
-
-
 
 ### Specific Data Point Setting
 
@@ -6291,9 +6107,11 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 {% endhighlight %}
 
 
-See Also
+{% seealso %}
 
-Column Charts, Bar Charts, Line Charts, Candle Chart, Kagi Chart, BoxandWhisker chart, Histogram chart, Polar and Radar Chart,Point and Figure Chart, Renko Chart, Three Line Break Chart, Gantt Chart, Tornado Chart, Pie Chart, Area Chart, Step Area Chart
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart),[Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart),[Point and Figure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Pie Chart](/windowsforms/chart/chart-types#pie-chart), [Area Chart](/windowsforms/chart/chart-types#area-chart), [Step Area Chart](/windowsforms/chart/chart-types#step-area-chart)
+
+{% endseealso %}
 
 ### ShadowOffset
 
@@ -6301,7 +6119,7 @@ Specifies the width of the shadow of the series.
 
 
 
-_Table_ _72_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6376,10 +6194,6 @@ Private series.Styles(2).ShadowOffset = New Size(6, 6)
 ![](Chart-Series_images/Chart-Series_img106.jpeg)
 
 
-_Figure_ _197_: _ColumnChart with ShadowOffset (7,7)_
-
-
-
 Specific Data Point Setting
 
 {% highlight c# %}
@@ -6407,9 +6221,11 @@ Private series.Styles(2).ShadowOffset = New Size(6, 6)
 {% endhighlight %}
 
 
-See Also
+{% seealso %}
 
-Column Charts, Bar Charts, Line Charts, Candle Chart, Kagi Chart, BoxandWhisker chart, Histogram chart, Polar and Radar Chart,Point and Figure Chart, Renko Chart, Three Line Break Chart, Gantt Chart, Tornado Chart, Pie Chart, Area Chart, Step Area Chart
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart),[Point and Figure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Pie Chart](/windowsforms/chart/chart-types#pie-chart), [Area Chart](/windowsforms/chart/chart-types#area-chart), [Step Area Chart](/windowsforms/chart/chart-types#step-area-chart)
+
+{% endseealso %}
 
 ### ShowDataBindLabels
 
@@ -6417,7 +6233,7 @@ Indicates whether data bound labels are displayed in the chart.
 
 
 
-_Table_ _73_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6427,7 +6243,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* True - Displays the databind labels.* False - Hides the databind labels.</td></tr>
+<ul><li>True - Displays the databind labels.</li><li> False - Hides the databind labels.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -6484,14 +6300,7 @@ Me.chartControl.Series(0).ConfigItems.PyramidItem.ShowDataBindLabels = True
 ![](Chart-Series_images/Chart-Series_img107.jpeg)
 
 
-_Figure_ _198_: _Doughnut Chart with Data-Bound Labels_
-
-
-
 ![](Chart-Series_images/Chart-Series_img108.jpeg)
-
-_Figure_ _199_: _Funnel Chart with Data-Bound Labels_
-
 
 
 
@@ -6501,13 +6310,11 @@ _Figure_ _199_: _Funnel Chart with Data-Bound Labels_
 
 
 
-_Figure_ _200_: _Pyramid Chart with Data-Bound Labels_
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart), [Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart), [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart)
 
-
-See Also
-
-Pie Chart, Doughnut Chart, Funnel Chart, Pyramid Chart
+{% endseealso %}
 
 ### ShowHistogramDataPoints
 
@@ -6515,7 +6322,7 @@ Indicates if the histogram data points should be shown.
 
 
 
-_Table_ _74_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6525,7 +6332,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* True - Displays the datapoints.* False - Hides the datapoints.</td></tr>
+<ul><li> True - Displays the datapoints.</li><li> False - Hides the datapoints.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -6563,18 +6370,15 @@ Private Me.chartControl1.Series(0).ShowHistogramDataPoints =True
 ![](Chart-Series_images/Chart-Series_img110.jpeg)
 
 
-_Figure_ _201_: _ShowHistogramDataPoints set to True_
-
 ![](Chart-Series_images/Chart-Series_img111.jpeg)
 
 
-_Figure_ _202_: _ShowHistogramDataPoints set to False_
 
+{% seealso %}
 
+[Histogram chart](/windowsforms/chart/chart-types#histogram-chart)
 
-See Also
-
-Histogram Chart
+{% endseealso %}
 
 ### ShowTicks
 
@@ -6582,7 +6386,7 @@ Indicates whether ticks should be shown or not.
 
 
 
-_Table_ _75_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6592,7 +6396,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* True - Displays ticks* False - Hides ticks</td></tr>
+<ul><li>True - Displays ticks</li><li> False - Hides ticks</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -6632,18 +6436,17 @@ Private Me.chartControl1.Series(0).ShowTicks = True
 
 ![](Chart-Series_images/Chart-Series_img112.jpeg)
 
-_Figure_ _203_: _ShowTicks = "True"_
+
 
 ![](Chart-Series_images/Chart-Series_img113.jpeg)
 
 
-_Figure_ _204_: _ShowTicks = "False"_
 
+{% seealso %}
 
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
-See Also
-
-Pie Chart
+{% endseealso %}
 
 ### SmartLabels
 
@@ -6651,7 +6454,7 @@ Specifies the behavior of the labels. If set to true, the labels will be rendere
 
 
 
-_Table_ _76_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6661,7 +6464,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* True  -  Enables smart labels* False -  Disables smart labels</td></tr>
+<ul><li> True  -  Enables smart labels</li><li> False -  Disables smart labels</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -6706,14 +6509,9 @@ Private Me.chartControl1.Series(0).SmartLabels = True
 ![](Chart-Series_images/Chart-Series_img114.jpeg)
 
 
-_Figure_ _205_: _Chart without enabling SmartLabels_
-
 
 
 ![](Chart-Series_images/Chart-Series_img115.jpeg)
-
-
-_Figure_ _206_: _Smart Label Enabled Column Chart_
 
 
 
@@ -6738,9 +6536,11 @@ Me.chartControl1.Series(0).SmartLabelsBorderWidth = 2
 {% endhighlight %}
 
 
-See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{% endseealso %}
 
 ### Spacing
 
@@ -6752,7 +6552,7 @@ This property will not be used when ChartColumnWidth is set to FixedWidthMode.
 
 
 
-_Table_ _77_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6801,13 +6601,12 @@ Me.chartControl1.Spacing = 50
 ![](Chart-Series_images/Chart-Series_img116.jpeg)
 
 
-_Figure_ _207_: _Series rendered with 50 percent Spacing_
 
+{% seealso %}
 
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,   [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart),   [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Chart](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
 
-See Also
-
-Column Charts, BarCharts, Box and Whisker Chart, Gantt Chart, Tornado Chart, Candle Chart, Hilo Chart, Hilo Open Close Chart
+{% endseealso %}
 
 ### SpacingBetweenSeries
 
@@ -6815,7 +6614,7 @@ EssentialChart provides support to control the spacing between series using Spac
 
 
 
-_Table_ _78_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6866,25 +6665,16 @@ Me.chartControl1.SpacingBetweenSeries = 20
 
 
 
-
-
-_Figure_ _208_: _Chart with default Spacing between Series_
-
-
-
 ![](Chart-Series_images/Chart-Series_img118.jpeg)
 
 
 
 
+{% seealso %}
 
-_Figure_ _209_: _Chart with SpacingBetweenSeries = "80"_
+[Area Charts](/windowsforms/chart/chart-types#area-charts), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Financial Charts](/windowsforms/chart/chart-types#financial-charts), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart) [Combination Chart](/windowsforms/chart/chart-types#combination-chart),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart)
 
-
-
-See Also
-
-Area Charts, BarCharts, Line Charts, Column Charts, Bubble Chart, Financial Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart
+{% endseealso %}
 
 ### SpacingBetweenPoints
 
@@ -6892,7 +6682,7 @@ EssentialChart provides support to control the spacing between points using Spac
 
 
 
-_Table_ _79_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -6934,11 +6724,11 @@ Me.chartControl1.SpacingBetweenSeries = 70
 {% endhighlight %}
 
 
-See Also
+{% seealso %}
 
-Column Chart, Bar Chart, HiLo Chart, HiLo Open Close Chart, Candle Chart, Tornado Chart, Box and Whisker Chart
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart)
 
-
+{% endseealso %}
 
 ### Stacking Group
 
@@ -7009,14 +6799,8 @@ ser3.StackingGroup = "FirstGroup"
 ![](Chart-Series_images/Chart-Series_img119.png)
 
 
-
-_Figure_ _210_: _Column chart with stacking group._
-
 ![](Chart-Series_images/Chart-Series_img120.png)
 
-
-
-_Figure_ _211_: _Bar chart with Stacking group._
 
 
 
@@ -7028,7 +6812,7 @@ Specifies if the particular stepline is inverted or not in the StepAreaChart.
 
 
 
-_Table_ _80_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7038,7 +6822,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* True - Indicates that the stepline is inverted.* False - Indicates that the stepline is not inverted.</td></tr>
+<ul><li>True - Indicates that the stepline is inverted.</li><li> False - Indicates that the stepline is not inverted.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -7076,20 +6860,16 @@ Private Me.chartControl1.Series(0).ConfigItems.StepItem.Inverted=True
 ![](Chart-Series_images/Chart-Series_img121.jpeg)
 
 
-_Figure_ _212_: _Inverted = "False"_
-
-
 
 ![](Chart-Series_images/Chart-Series_img122.jpeg)
 
 
-_Figure_ _213_: _Inverted = "True"_
 
+{% seealso %}
 
+[StepAreaChart](/windowsforms/chart/chart-types#step-area-chart), [StepLine Chart](/windowsforms/chart/chart-types#step-line-chart)
 
-See Also
-
-StepAreaChart, StepLine Chart
+{% endseealso %}
 
 ### Summary
 
@@ -7097,7 +6877,7 @@ Provides access to summary information such as minimum/maximum values contained 
 
 
 
-_Table_ _81_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7107,11 +6887,11 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* MaxX - Returns the maximum X value. * MaxY - Returns the minimum Y value. * MinX - Returns the minimum X value. * MinY - Returns the minimum Y value. * ModelImpl - Returns the model implemented.* GetYPercentage - This method returns percentage value of series point in a Pie chart.</td></tr>
+</ul></li> MaxX - Returns the maximum X value. </li><li> MaxY - Returns the minimum Y value. </li><li> MinX - Returns the minimum X value. </li><li> MinY - Returns the minimum Y value. </li><li> ModelImpl - Returns the model implemented.</li><li> GetYPercentage - This method returns percentage value of series point in a Pie chart.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
-* MaxX   - 0* MaxY   - 0* MinY    - 0* MinX    - 0* ModelImpl - Nil</td></tr>
+<ul><li> MaxX   - 0</li><li> MaxY   - 0</li><li> MinY    - 0</li><li> MinX    - 0</li><li> ModelImpl - Nil</li></ul></td></tr>
 <tr>
 <td>
 <br>2D / 3D Limitations</td><td colspan = "2">
@@ -7168,13 +6948,12 @@ this.chartControl1.Series[0].Summary.GetYPercentage(1, 0)
 ![](Chart-Series_images/Chart-Series_img123.jpeg)
 
 
-_Figure_ _214_: _Summary values displayed in Labels_
 
+{% seealso %}
 
+[Chart Types](/windowsforms/chart/chart-types), How to find value, maximum value and minimum value among the data points
 
-See Also
-
-Chart Types, How to find value, maximum value and minimum value among the data points
+{% endseealso %}
 
 ### Symbol
 
@@ -7182,7 +6961,7 @@ Sets the attributes of the symbol that is to be displayed at this point.
 
 
 
-_Table_ _82_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7192,11 +6971,11 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Size - Specifies the size of the symbol.* Color - Specifies the color of the symbol.* Shape - Specifies the shape of the symbol.* Offset - Specifies the offset of the symbol.</td></tr>
+<ul><li> Size - Specifies the size of the symbol.</li><li> Color - Specifies the color of the symbol.</li><li> Shape - Specifies the shape of the symbol.</li><li> Offset - Specifies the offset of the symbol.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value</td><td colspan = "2">
-* Size - 10,10* Color - HighLightText Color* Shape - None* Offset - 0,0</td></tr>
+<ul><li> Size - 10,10</li><li> Color - HighLightText Color</li><li> Shape - None</li><li> Offset - 0,0</li></ul></td></tr>
 <tr>
 <td>
 <br>2D / 3D Limitations</td><td colspan = "2">
@@ -7284,7 +7063,6 @@ Private Me.chartControl1.Series0).Style.Symbol.Border.DashStyle = DashStyle.Soli
 ![](Chart-Series_images/Chart-Series_img124.jpeg)
 
 
-_Figure_ _215_: _Blue Color Diamond symbol in a Column Chart with vertical offset of 20_
 
 
 
@@ -7375,9 +7153,11 @@ Private Me.chartControl1.Series0).Styles[0].Symbol.Border.DashStyle = DashStyle.
 {% endhighlight %}
 
 
-See Also
+{% seealso %}
 
-Column Charts, Bar Charts, Bubble Chart, Financial Chart, Line Charts, BoxandWhisker Chart, Gantt chart, Tornado chart, Radar Chart, Polar Chart, Area Charts, Scatter Chart
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,   [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Chart](/windowsforms/chart/chart-types#bubble-chart), [Financial Chart](/windowsforms/chart/chart-types#financial-chart),  [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Radar Chart](/windowsforms/chart/chart-types#radar-chart), [Polar Chart](/windowsforms/chart/chart-types#polar-chart), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Scatter Chart](/windowsforms/chart/chart-types#scatter-chart)
+
+{% endseealso %}
 
 ### Text (Series)
 
@@ -7385,7 +7165,7 @@ It specifies the chart series text. This will be displayed at run-time in the le
 
 
 
-_Table_ _83_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7472,13 +7252,13 @@ series2.Text = "JuneSales"
 
 ![](Chart-Series_images/Chart-Series_img125.jpeg)
 
-_Figure_ _216_: _Text set for the Series_
 
 
+{% seealso %}
 
-See Also
+[Chart Types](/windowsforms/chart/chart-types)
 
-Chart Types
+{% endseealso %}
 
 ### Text (Style)
 
@@ -7508,8 +7288,6 @@ chartControl1.Series(0).Style.Text = "Series1 Point"
 
 ![](Chart-Series_images/Chart-Series_img126.jpeg)
 
-
-_Figure_ _217_: _DataPoint Labels displayed for the Series_
 
 Specific Data Point Setting
 
@@ -7545,8 +7323,6 @@ chartControl1.Series(0).Styles(2).Text = "Third Point"
 
 ![](Chart-Series_images/Chart-Series_img127.jpeg)
 
-_Figure_ _218_: _Using Series.Styles[0].Text in Column Chart_
-
 
 
 ![](Chart-Series_images/Chart-Series_img128.jpeg)
@@ -7555,11 +7331,12 @@ _Figure_ _218_: _Using Series.Styles[0].Text in Column Chart_
 
 
 
-_Figure_ _219_: _Using Series.Styles[0].Text in Pie Chart_
 
-See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{% endseealso %}
 
 ### TextColor
 
@@ -7567,7 +7344,7 @@ It is used to set the color of the display text of the series.
 
 
 
-_Table_ _84_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7628,10 +7405,6 @@ Private Me.chartControl1.Series(2).Style.TextColor = Color.Green
 
 ![](Chart-Series_images/Chart-Series_img129.jpeg)
 
-_Figure_ _220_: _Customized Series Text Color_
-
-
-
 Specific Data Point Setting
 
 We can set TextColor for specific data points in a series by using Series.Styles[0].TextColor property as follows.
@@ -7662,9 +7435,11 @@ Private Me.chartControl1.Series(0).Styles(2).TextColor = Color.LightBlue
 {% endhighlight %}
 
 
-See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{% endseealso %}
 
 ### TextFormat
 
@@ -7674,7 +7449,7 @@ Sets the format that is to be applied to values that are displayed as text.
 
 
 
-_Table_ _85_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7727,11 +7502,6 @@ Me.chartControl1.Series(0).Style.TextFormat = "T = {0}"
 
 
 
-
-_Figure_ _221_: _TextFormat = "T = {0}"_
-
-
-
 Specific Data Point Setting
 
 TextFormats for individual data points are specified using below code.
@@ -7752,9 +7522,11 @@ chartControl1.Series(0).Styles(1).TextFormat = "Dollars : {0:C}"
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{% endseealso %}
 
 ### TextOffset
 
@@ -7762,7 +7534,7 @@ Sets the Offset of the text from the position of the chart point.
 
 
 
-_Table_ _86_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7813,11 +7585,6 @@ Me.chartControl1.Series(0).Style.TextOffset = 10.0F
 ![](Chart-Series_images/Chart-Series_img131.jpeg)
 
 
-
-
-
-_Figure_ _222_: _Text Offset set to 10.0F_
-
 Specific Data Point Setting
 
 TextOffset for data points can be specified using Series.Styles[0].TextOffset property.
@@ -7838,9 +7605,11 @@ Me.chartControl1.Series(0).Styles(1).TextOffset = 15.0F
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{% endseealso %}
 
 ### TextOrientation
 
@@ -7848,7 +7617,7 @@ It is used to align the text of the series within the data point region.
 
 
 
-_Table_ _87_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -7857,8 +7626,20 @@ Features</th><th>
 Details</th></tr>
 <tr>
 <td>
-Possible Values</td><td colspan = "2">
-* Center - Aligns to the center of the point.* Down - Aligns below the point.* Left - Aligns to the left position to the point.* RegionCenter - Aligns below the region that represents the points.* RegionDown - Aligns below the region that represents the points.* RegionUp - Aligns to the top of the region that represents the points.* Right - Aligns to the right of the point.* Smart - Aligns in a manner that is appropriate to the situation.* SymbolCenter - Text is centered to the symbol that is associated to the point.* Up - Aligns to the top of the point.* UpLeft - Aligns to the top left corner of the point.* UpRight - Aligns to the top right corner of the point.</td></tr>
+Possible Values</td>
+<td colspan = "2">
+<ul>
+<li> <b>Center</b> - Aligns to the center of the point.</li>
+<li><b>Down</b> - Aligns below the point.</li>
+<li><b>Left</b> - Aligns to the left position to the point.</li>
+<li> <b>RegionCenter</b> - Aligns below the region that represents the points.</li>
+<li> <b>RegionDown</b> - Aligns below the region that represents the points.</li>
+<li> <b>RegionUp</b> - Aligns to the top of the region that represents the points.</li>
+<li> <b>Right</b> - Aligns to the right of the point.</li>
+<li> <b>Smart</b> - Aligns in a manner that is appropriate to the situation.</li><li> <b>SymbolCenter </b>- Text is centered to the symbol that is associated to the point.</li>
+<li> <b>Up</b> - Aligns to the top of the point.</li>
+<li><b>UpLeft</b> - Aligns to the top left corner of the point.</li>
+<li> <b>UpRight</b> - Aligns to the top right corner of the point.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -7914,9 +7695,7 @@ Private Me.chartControl1.Series(1).Style.TextColor=Color.Red
 ![](Chart-Series_images/Chart-Series_img132.jpeg)
 
 
-_Figure_ _223_: _Text Orientation set for the Chart Series_
-
-Specific Data Point Setting
+#### Specific Data Point Setting
 
 Text orientation for specific data points can be set using Series.Style[i].TextOrientation property, where "i" represents the index of data points ranging from 0 to n.
 
@@ -7962,9 +7741,11 @@ Private Me.chartControl1.Series(1).Styles(1).TextColor=Color.Yellow
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
-Chart Types
+[Chart Types](/windowsforms/chart/chart-types)
+
+{% endseealso %}
 
 ### ToolTip
 
@@ -7972,7 +7753,7 @@ Sets the tooltip of the style object associated with the series.
 
 
 
-_Table_ _88_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -8004,7 +7785,7 @@ Scatter Chart, Hilo Open Close Chart(3D),Column Charts, BarCharts, Bubble Chart,
 
 
 
-_Table_ _89_: _Property_
+_Property_
 
 <table>
 <tr>
@@ -8055,12 +7836,7 @@ series1.Style.ToolTip = "Tooltip of Series1"
 
 
 
-
-_Figure_ _224_: _ToolTip set for Chart Series_
-
-
-
-Specific Data Point Setting
+#### Specific Data Point Setting
 
 ToolTip can be applied to individual points of a Series.
 
@@ -8070,7 +7846,7 @@ for (int i = 0; i < series1.Points.Count; i++)
 
 {                
 
-    series1.Styles[i].ToolTip = string.Format("X = {0}, Y = {1}", series1.Points[0].X.ToString(),                          series1.Points[i].YValues[0]);
+    series1.Styles[i].ToolTip = string.Format("X = {0}, Y = {1}", series1.Points[0].X.ToString(),series1.Points[i].YValues[0]);
 
 }
 
@@ -8082,7 +7858,7 @@ Dim i As Integer = 0
 
 Do While i < series1.Points.Count
 
-series1.Styles(i).ToolTip = String.Format("X = {0}, Y = {1}", series1.Points(0).X.ToString(),          series1.Points(i).YValues(0))
+series1.Styles(i).ToolTip = String.Format("X = {0}, Y = {1}", series1.Points(0).X.ToString(),series1.Points(i).YValues(0))
 
   i += 1
 
@@ -8095,15 +7871,11 @@ Loop
 
 
 
+{% seealso %}
 
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)(3D), [Column Charts](/windowsforms/chart/chart-types#column-charts), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart)(3D), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart), [Accumulation Charts](/windowsforms/chart/chart-types#accumulation-chart), [Area Charts](windowsforms/chart/chart-types#area-charts)
 
-_Figure_ _225_:_ _ToolTip set for Data Point in the Series_ 
-
-
-
-See Also
-
-Scatter Chart, Hilo Open Close Chart(3D), Column Charts, BarCharts, Bubble Chart, Line Charts, BoxandWhisker Chart, Tornado Chart, Combination Chart, Gantt Chart, Candle Chart, HiLo Chart(3D), PolarAndRadar chart, PieChart, Accumulation Charts, Area Charts
+{% endseealso %}
 
 ### ToolTipFormat
 
@@ -8111,7 +7883,7 @@ Sets the tooltip format of the style object associated with the series.
 
 
 
-_Table_ _90_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -8145,7 +7917,7 @@ Here is sample code snippet using ToolTipFormat in the Column chart.
 
 
 
-Series Wide Setting
+#### Series Wide Setting
 
 {% highlight c# %}
 
@@ -8166,11 +7938,7 @@ Me.chartControl1.Series[1].Style.ToolTipFormat = "Y = {0}"
 ![](Chart-Series_images/Chart-Series_img135.jpeg)
 
 
-_Figure_ _226_: _ToolTipFormat set for Chart Series_
-
-
-
-Specific Data Point Setting
+#### Specific Data Point Setting
 
 ToolTipformat can be applied for individual points by using Series.Styles[0].ToolTipFormat property settings.
 
@@ -8203,13 +7971,12 @@ Loop
 
 ![](Chart-Series_images/Chart-Series_img136.jpeg)
 
-_Figure_ _227_: _ToolTip Format set for Data Point in a Series_
 
+{% seealso %}
 
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)(3D)
 
-See Also
-
-Scatter Chart, Hilo Open Close Chart(3D)
+{% endseealso %}
 
 ### Visible
 
@@ -8217,7 +7984,7 @@ It turns on / off the visibility of the series.
 
 
 
-_Table_ _91_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -8227,7 +7994,7 @@ Details</th></tr>
 <tr>
 <td colspan = "2">
 Possible Values</td><td>
-* True - Unhides the associated series.* False - Hides the associated series.</td></tr>
+<ul><li> True - Unhides the associated series.</li><li> False - Hides the associated series.</ul></li></td></tr>
 <tr>
 <td colspan = "2">
 <br>Default Value     </td><td>
@@ -8271,18 +8038,17 @@ Private Me.chartControl1.Series(1).Visible = True
 
 ![](Chart-Series_images/Chart-Series_img137.jpeg)
 
-_Figure_ _228_: _Second Series Visible_
 
 ![](Chart-Series_images/Chart-Series_img138.jpeg)
 
 
-_Figure_ _229_: _Second Series Hidden_
 
 
+{% seealso %}
 
-See Also
+[Chart Types](/windowsforms/chart/chart-types)
 
-Chart Types
+{% endseealso %}
 
 ### VisibleAllPies
 
@@ -8290,7 +8056,7 @@ Specifies whether the legend is to be displayed with one legend item for each sl
 
 
 
-_Table_ _92_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -8300,7 +8066,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* True - Indicates only one legend item for all slices of pie.* False - Indicates one legend item for each slice of pie.</td></tr>
+<ul><li> True - Indicates only one legend item for all slices of pie.</li><li> False - Indicates one legend item for each slice of pie.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -8341,23 +8107,15 @@ chartControl1.Legend.RowsCount = 3
 ![](Chart-Series_images/Chart-Series_img139.jpeg)
 
 
-_Figure_ _230_: _VisibleAllPies set to True_
-
-
-
 ![](Chart-Series_images/Chart-Series_img140.jpeg)
 
 
 
+{% seealso %}
 
+[Pie Chart](/windowsforms/chart/chart-types#pie-chart)
 
-_Figure_ _231_: _VisibleAllPies set to False_
-
-
-
-See Also
-
-Pie Chart
+{% endseealso %}
 
 ### XType
 
@@ -8365,7 +8123,7 @@ Returns the x value type that is being rendered. It is a read-only property.
 
 
 
-_Table_ _93_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -8375,7 +8133,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Double - Specifies Double values* DateTime - Specifies Date and Time values* Logarithmic - Specifies Logarithmic values* Custom - Specifies Custom values</td></tr>
+<ul><li> Double - Specifies Double values</li><li> DateTime - Specifies Date and Time values</li><li>Logarithmic - Specifies Logarithmic values</li><li>Custom - Specifies Custom values</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -8411,13 +8169,13 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).XType.ToString()
 
 ![](Chart-Series_images/Chart-Series_img141.jpeg)
 
-_Figure_ _232_: _Get the X Value Type that is being Rendered_
 
 
+{% seealso %}
 
-See Also
+[Chart Types](/windowsforms/chart/chart-types)
 
-Chart Types
+{% endseealso %}
 
 ### YType
 
@@ -8425,7 +8183,7 @@ Returns the y value type that is being rendered. It is a read-only property.
 
 
 
-_Table_ _94_: _Features_
+_Features_
 
 <table>
 <tr>
@@ -8435,7 +8193,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-* Double - Specifies Double values* DateTime - Specifies Date and Time values* Logarithmic - Specifies Logarithmic values* Custom  -  Specifies Custom values</td></tr>
+<ul><li> Double - Specifies Double values</li><li> DateTime - Specifies Date and Time values</li><li> Logarithmic - Specifies Logarithmic values</li><li> Custom  -  Specifies Custom values</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -8472,13 +8230,11 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).YType.ToString()
 ![](Chart-Series_images/Chart-Series_img142.jpeg)
 
 
-_Figure_ _233_: _Get the Y Value Type that is being Rendered_
+{% seealso %}
 
+[Chart Types](/windowsforms/chart/chart-types)
 
-
-See Also
-
-Chart Types
+{% endseealso %}
 
 ### ZOrder
 
@@ -8487,8 +8243,6 @@ Specifies the order in which the objects are arranged and controls the visibilit
 By default, the ZOrder for series are assigned based on the order in which they are added to the Series collection.
 
 
-
-_Table_ _95_: _Features_
 
 <table>
 <tr>
@@ -8541,23 +8295,10 @@ Private Me.chartControl1.Series(1).ZOrder = 1
 
 
 
-
-
-_Figure_ _234_: _Series 1 ZOrder = 0, Series 2 ZOrder = 1_
-
-
-
 ![](Chart-Series_images/Chart-Series_img144.jpeg)
 
 
-
-
-
-_Figure_ _235_: _Series 1 ZOrder = 1, Series 2 ZOrder = 0_
-
-
-
-Rearranging the Series using ZOrder property
+#### Rearranging the Series using ZOrder property
 
 The chart series can be rearranged at run-time using ZOrder property as follows. The chart needs to be redrawn in order to reflect ZOrder property changes. We cannot call redrawing for every series ZOrder changes. In order to overcome this, we should change the order of the series in between the begin update and end update statements as follows.
 
@@ -8593,13 +8334,14 @@ Me.chartControl1.EndUpdate()
 
 ![](Chart-Series_images/Chart-Series_img145.jpeg)
 
-_Figure_ _236_: _Chart with Rearranged Series_
 
 
 
-See Also
+{% seealso %}
 
-Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart, Area Charts,Polar And Radar Chart, BarCharts, Column Charts, Bubble Charts, Candle Charts, Hilo Charts, Hilo Open Close Chart
+[Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Area Charts](/windowsforms/chart/chart-types#area-chart),[Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
+
+{% endseealso %}
 
 ## Data Point Labels, Tooltips and Symbols
 
@@ -8607,17 +8349,12 @@ Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker 
 
 Data Points in a series can be adorned with text labels as well as custom symbols to provide additional information regarding the specific data points.
 
-Text labels can be rendered at the data points using the DisplayText, Text and TextFormat settings. They can further be customized using the TextColor, TextOffset and TextOrientation settings.
+Text labels can be rendered at the data points using the [DisplayText](/windowsforms/chart/chart-series#displaytext), [Text](/windowsforms/chart/chart-series#text) and [TextFormat](/windowsforms/chart/chart-series#textformat) settings. They can further be customized using the [TextColor](/windowsforms/chart/chart-series#textcolor), [TextOffset](/windowsforms/chart/chart-series#textoffset) and [TextOrientation](/windowsforms/chart/chart-series#textorientation) settings.
 
 
 
 ![](Chart-Series_images/Chart-Series_img146.jpeg)
 
-
-
-
-
-_Figure_ _237_: _Black Color DataPoint Labels with TextOrientation= "RegionCenter", TextFormat="{0}"_
 
 ### Tooltips
 
@@ -8632,10 +8369,6 @@ Built-in or custom symbols can be rendered at the data points to emphasize impor
 ![](Chart-Series_images/Chart-Series_img147.jpeg)
 
 
-
-
-
-_Figure_ _238_: _"OrangeRed InvertedTriangle" Symbols in the Series Points_
 
 ## Custom Points
 
@@ -8652,18 +8385,9 @@ You can set the co-ordinates (XValue and the YValue property), symbols and their
 
 
 
-
-_Figure_ _239_: _CustomPoints Collection Editor during Design Time_
-
-
-
 ![](Chart-Series_images/Chart-Series_img149.jpeg)
 
 
-
-
-
-_Figure_ _240_: _ChartControl with a Custom Point_
 
 
 
@@ -8795,7 +8519,7 @@ chartCustomPoint1.Font.Size = 10F
 
 
 
-> Note: You can also customize a custom point symbol using Symbol property.
+N> You can also customize a custom point symbol using Symbol property.
 
 
 
@@ -8818,7 +8542,7 @@ Me.chartControl1.CustomPoints.Add(cp)
 {% endhighlight %}
 
 
-_Table_ _96_: _Custom point types_
+_Custom point types_
 
 <table>
 <tr>
@@ -8846,8 +8570,6 @@ The coordinates are specified to be in pixels of the chart area.</td></tr>
 
 ![](Chart-Series_images/Chart-Series_img151.jpeg)
 
-
-_Figure_ _241_: _Custom Point Types Illustrated_
 
 
 
@@ -8936,9 +8658,6 @@ Me.ChartWebControl1.CustomPoints.Add(cp)
 ![](Chart-Series_images/Chart-Series_img152.png)
 
 
-
-_Figure_ _242_: _Custom Points in Multiple Axes_
-
 ## Empty Points
 
 EssentialChart lets you prevent certain points from getting plotted in the resultant chart. Such points are termed Empty Points.
@@ -8970,14 +8689,10 @@ The following images illustrate the same. The second image displays after settin
 ![](Chart-Series_images/Chart-Series_img153.jpeg)
 
 
-_Figure_ _243_: _Chart without Empty Point_
-
 
 
 ![](Chart-Series_images/Chart-Series_img154.jpeg)
 
-
-_Figure_ _244_: _Chart with Point1 as Empty Point_
 
 
 
@@ -8989,7 +8704,7 @@ It is possible to set some data point as empty point and still show the chart wi
 
 ![](Chart-Series_images/Chart-Series_img155.jpeg)
 
-> Note: You need to set ChartControl.Indexed property to true for the above setting to be effective.
+N> You need to set ChartControl.Indexed property to true for the above setting to be effective.
 
 {% highlight c# %}
 
@@ -9016,10 +8731,6 @@ Me.chartControl1.Series(0).Points(5).IsEmpty = True
 ![](Chart-Series_images/Chart-Series_img156.jpeg)
 
 
-
-
-
-_Figure_ _245_: _4th, 5th and 6th Data Points set as Empty Points_
 
 {% highlight c# %}
 
@@ -9052,8 +8763,4 @@ Me.chartControl1.AllowGapForEmptyPoints = True
 ![](Chart-Series_images/Chart-Series_img157.jpeg)
 
 
-
-
-
-_Figure_ _246_: _4th, 5th and 6th Data Points set as Empty Points; AllowGapForEmptyPoints = "True"_
 

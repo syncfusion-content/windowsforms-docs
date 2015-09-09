@@ -10,7 +10,7 @@ documentation: ug
 
 Following are the events of DateTimePickerAdv control.
 
-Table198: Property Table
+_Property Table_
 
 <table>
 <tr>

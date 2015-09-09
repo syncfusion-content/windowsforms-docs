@@ -11,7 +11,6 @@ documentation: ug
 
 A detailed explanation about the CheckStateChanged event is given in the following section.
 
-Table 406: Events Table
 
 <table>
 <tr>

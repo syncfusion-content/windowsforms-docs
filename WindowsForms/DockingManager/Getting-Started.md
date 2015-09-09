@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -77,6 +77,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		using Syncfusion.Windows.Forms.Tools;
 
 		using Syncfusion.Windows.Forms;
+		
    ~~~
    {:.prettyprint}
 
@@ -90,6 +91,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		Imports Syncfusion.Windows.Forms
 
 		Imports Syncfusion.Windows.Forms.Tools
+		
    ~~~
    {:.prettyprint}
 
@@ -115,6 +117,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		this.listBox1 = new System.Windows.Forms.ListBox();
 
 		this.listBox2 = new System.Windows.Forms.CheckedListBox();
+		
    ~~~
    {:.prettyprint}
 
@@ -140,6 +143,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		Me.listBox1 = New System.Windows.Forms.ListBox()
 
 		Me.listBox2 = New System.Windows.Forms.ListBox()
+		
    ~~~
    {:.prettyprint}
 
@@ -153,6 +157,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		//Set the visual Style of the docked controls
 
 		this.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003;
+		
    ~~~
    {:.prettyprint}
 
@@ -177,6 +182,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		this.dockingManager.SetEnableDocking(this.listBox1,true);
 
 		this.dockingManager.SetEnableDocking(this.listBox2,true);
+		
    ~~~
    {:.prettyprint}
 
@@ -188,6 +194,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		Me.dockingManager.SetEnableDocking(Me.listBox1,True)
 
 		Me.dockingManager.SetEnableDocking(Me.listBox2,True)
+		
    ~~~
    {:.prettyprint}
 
@@ -201,6 +208,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		// Tab the docked controls
 
 		this.dockingManager.DockControl(this.listBox1, this.listBox2,Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed,200,true);
+		
    ~~~
    {:.prettyprint}
 
@@ -212,6 +220,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
 		' Tab the docked controls
 
 		Me.dockingManager.DockControl(Me.listBox1, Me.listBox2,Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed,200,True)
+		
    ~~~
    {:.prettyprint}
 

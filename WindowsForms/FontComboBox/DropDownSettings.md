@@ -12,7 +12,6 @@ documentation: ug
 
 FontComboBox has properties to control the appearance and behavior of the dropdown.
 
-Table 384: Property Table
 
 <table>
 <tr>

@@ -33,9 +33,11 @@ This section will guide you to create a GradientPanel control.
    ![](GradientPanel-Images/Overview_img365.jpeg) 
 
 
-> See Also
->
-> [Through Code](#through-code)
+{% seealso %}
+
+[Through Code](#through-code)
+
+{% endseealso %}
 
 ## Through Code
 

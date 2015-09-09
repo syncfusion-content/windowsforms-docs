@@ -28,5 +28,8 @@ The .NET framework does not provide any built-in support for providing autocompl
 
 The AutoComplete class is implemented as an Extender Provider similar to the ToolTip control in the Windows Forms package. 
 
- See Also
- ComboBoxAutoComplete, Auto Append
+{% seealso %}
+
+ [ComboBoxAutoComplete](/windowsforms/comboboxautocomplete/overview), [Auto Append](/windowsforms/comboboxautocomplete/autoappend)
+
+{% endseealso %}

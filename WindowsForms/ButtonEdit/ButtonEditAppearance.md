@@ -16,7 +16,7 @@ A ButtonEdit control is a combination of controls with textbox and buttons. The 
 
 {% seealso %}
 
-TextBox Settings for ButtonEdit, Child Button Customization
+[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), Child Button Customization](http://docs.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
 
 
 {% endseealso %}
@@ -29,7 +29,7 @@ This section discusses the different styles available for the ButtonEdit control
 
 Styles for the ButtonEdit control is specified using ButtonStyle property.
 
-Table 140: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightGreen)
 
 The border styles for the ButtonEdit can be controlled using the below properties.
 
-Table 141: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -191,7 +191,7 @@ N> The Border styles of the child buttons can be controlled using ButtonEditChil
 
 We can specify the maximum and minimum size for the ButtonEdit control using MaximumSize and MinimumSize properties.
 
-Table 142: Property Table
+ _Property Table_
 
 <table>
 <tr>
@@ -208,11 +208,7 @@ MinimumSize</td><td>
 Sets the minimum size of the ButtonEdit control.</td></tr>
 </table>
 
-{% seealso %}
 
-Foreground Settings
-
-{% endseealso %}
 
 ## Foreground Settings
 
@@ -249,8 +245,6 @@ N> Foreground settings for the child buttons can be specified using ButtonEditCh
 
 ![](Overview_images/Overview_img92.jpeg)
 
-
-
 ### Case Settings
 
 Using ButtonEdit.CharacterCasing property, we can specify whether the case of the character can be modified as they are typed. The values are Upper, Lower and Normal.
@@ -280,6 +274,6 @@ N> This case setting can be overridden by TextBox.CharacterCasing property.
 
 {% seealso %}
 
-TextBox Settings for ButtonEdit
+[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), Child Button Customization](http://docs.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
 
 {% endseealso %}

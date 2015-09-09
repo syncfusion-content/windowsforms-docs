@@ -11,8 +11,6 @@ documentation: ug
 
 The Office2007 visual style for the FontComboBox control can be enabled through below properties.
 
-Table 385: Property Table
-
 <table>
 <tr>
 <th>

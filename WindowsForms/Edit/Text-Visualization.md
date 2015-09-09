@@ -239,10 +239,6 @@ Me.editControl1.MoveToEnd();
 
 
 
-_Figure_ _14: Text Navigation Options in Edit Control
-
-
-
 A sample which demonstrates Text Navigation is available in the following sample installation path.
 
 
@@ -361,7 +357,7 @@ The coordinates associated with the above properties are referred to as Virtual 
 
 
 
-> Note: The Virtual coordinates of the top-left corner in the Edit Control is (1,1), and it is not a zero-based coordinates system.
+N> The Virtual coordinates of the top-left corner in the Edit Control is (1,1), and it is not a zero-based coordinates system.
 
 
 
@@ -485,11 +481,8 @@ Me.editControl1.ConvertVirtualPointToCoordinatePoint(Integer Column, Integer lin
 
 
 
-_Figure_ _15: Positions and Offsets Conversion Options in Edit Control
 
-
-
-> Note: The Offset value is always calculated from the top-left corner of the Edit Control from the Virtual coordinates (1,1).
+N> The Offset value is always calculated from the top-left corner of the Edit Control from the Virtual coordinates (1,1).
 
 
 
@@ -500,14 +493,11 @@ A sample which demonstrates the above features is available in the following sam
 _..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
+{% seealso %}
 
-### See Also
+[Line Numbers and Current Line Highlighting](#line-numbers-and-current-line-highlighting)
 
-
-
-### Line Numbers and Current Line Highlighting
-
-
+{% endseealso %}
 
 
 
@@ -599,10 +589,6 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 
 
-_Figure_ _16: Customized Column Guide Items positioned at Equal Intervals
-
-
-
 A sample which illustrates the above feature is available in the following sample installation path.
 
 
@@ -619,9 +605,6 @@ Edit Control supports content dividers just like VB.NET code in Visual Studio.NE
 
 ![](Text-Visualization_images/Text-Visualization_img6.jpeg)
 
-
-
-_Figure_ _17: Content Dividers separating the Event Contents into Sections
 
 
 
@@ -775,10 +758,6 @@ LineColor, Weight and Underline parameters are used to specify the type of under
 
 
 
-_Figure_ _18: Text with Double Solid Style, Double Dot Style, Wave Style Underlines
-
-
-
 A sample which demonstrates this feature is available in the below location.
 
 
@@ -843,10 +822,6 @@ To remove the strikethrough line, just call one of the above mentioned methods a
 
 
 
-_Figure_ _19: Striking Through Range of Text
-
-
-
 A sample which demonstrates the StrikeThrough feature is available in the following sample installation path.
 
 
@@ -855,13 +830,13 @@ _..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\
 
 
 
-### See Also
+{% seealso %}
 
 
 
-### Text Border, Text Selection
+[Text Border](#text-border), [Text Selection](#text-selection)
 
-
+{% endseealso %}
 
 ## Text Handling
 
@@ -1175,9 +1150,6 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 {% endhighlight %}
 
 ![](Text-Visualization_images/Text-Visualization_img9.jpeg)
-
-Figure 20: Input entered for Handling Text
-
 
 
 A sample that demonstrates the above features is available in the following sample installation path.
@@ -1499,9 +1471,9 @@ You can selectively show / hide the whitespace indicators by using the following
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowSpaces</td><td>
@@ -1630,13 +1602,11 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 {% endhighlight %}
 
 
-### See Also
+{% seealso %}
 
+[Spaces and Tabs](#spaces-and-tabs)
 
-
-### Spaces and Tabs
-
-
+{% endseealso %}
 
 ## Line Numbers and Current Line Highlighting
 
@@ -1830,9 +1800,6 @@ Me.editControl1.CurrentLineHighlightColor = Color.Orange
 
 
 
-_Figure_ _23: CurrentLineHighlightColor = "Orange"
-
-
 
 You can also highlight the selected text by using the Text Highlighting feature discussed in Background Settings.
 
@@ -1844,7 +1811,7 @@ The Edit Control allows any number of custom images or bookmarks to be added to 
 
 
 
-> Note: At any given point of time, each line can have only one indicator or bookmark associated with it.
+N> At any given point of time, each line can have only one indicator or bookmark associated with it.
 
 
 
@@ -2032,7 +1999,7 @@ Removes the custom bookmark from the desired line.</td></tr>
 </table>
 
 
-> Note: To clear the bookmarks set by using the SetCustomBookmark method, you must use the BookmarkClear method with its bool argument set as True.
+N> To clear the bookmarks set by using the SetCustomBookmark method, you must use the BookmarkClear method with its bool argument set as True.
 
 
 
@@ -2318,10 +2285,6 @@ End Sub
 
 
 
-_Figure_ _25: Inserting Break Points in Edit Control
-
-
-
 A sample which demonstrates setting custom indicators is available in the below sample installation path.
 
 
@@ -2470,15 +2433,8 @@ The bracket highlighting feature can be turned on by enabling the ShowIndentatio
 
 
 
-_Figure_ _26: Bracket Highlighting with Indentation Guidelines
-
-
-
 ![](Text-Visualization_images/Text-Visualization_img18.jpeg)
 
-
-
-_Figure_ _27: Bracket Highlighting without Indentation Guidelines
 
 
 
@@ -2558,9 +2514,6 @@ Me.editControl1.ShowIndentationBlockBorders = True
 
 ![](Text-Visualization_images/Text-Visualization_img19.jpeg)
 
-
-
-_Figure_ _28: IndentLineColor = "OrangeRed"; IndentBlockHighlightingColor = "IndianRed"
 
 
 
@@ -2644,9 +2597,6 @@ If Enter is pressed when the AutoIndentMode is set to None, the text is not inde
 
 
 
-_Figure_ _29: AutoIndentMode = "None"
-
-
 
 When the AutoIndentMode is set to Smart, the next line is indented by one TabSize from the first column of the previous line on pressing Enter.
 
@@ -2656,19 +2606,11 @@ When the AutoIndentMode is set to Smart, the next line is indented by one TabSiz
 
 
 
-_Figure_ _30: AutoIndentMode = "Smart"
-
-
-
 When the AutoIndentMode is set to Block, the next line begins at the same column as the previous line on pressing the ENTER key.
 
 
 
 ![](Text-Visualization_images/Text-Visualization_img22.jpeg)
-
-
-
-_Figure_ _31: AutoIndentMode = "Block"
 
 
 
@@ -2698,9 +2640,9 @@ When this property is enabled, the lines will be aligned to the position of the 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 EnableSmartInBlockIndent</td><td>
@@ -2736,9 +2678,9 @@ AutoFormatting can be enabled by using the below given method.
 
 <table>
 <tr>
-<td>
-Edit Control Method</td><td>
-Description</td></tr>
+<th>
+Edit Control Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoFormatText</td><td>
@@ -2754,9 +2696,6 @@ For example, the closing brace gets automatically aligned with the opening brace
 
 
 
-_Figure_ _32: Code is entered into the Edit Control
-
-
 
 Now, when the closing brace '}' is typed, it gets automatically aligned with the opening brace, as shown in the screenshot below.
 
@@ -2766,10 +2705,8 @@ Now, when the closing brace '}' is typed, it gets automatically aligned with the
 
 
 
-_Figure_ _33: AutoFormatting support for code in Edit Control
 
-
-> Note: The_ AutoIndentMode _property for the Edit Control should be set to Smart for this purpose.
+N> The_ AutoIndentMode _property for the Edit Control should be set to Smart for this purpose.
 
 
 
@@ -2833,10 +2770,6 @@ The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian 
 
 
 ![](Text-Visualization_images/Text-Visualization_img26.jpeg)
-
-
-
-_Figure_ _34: Unicode support in Edit Control
 
 
 
@@ -3074,19 +3007,16 @@ Me.editControl1.ShowOutliningTooltip = True
 
 
 
-_Figure_ _35: Outlining Tooltip displaying the Collapsed Block of Text_
 
-
-
-Using Events
+#### Using Events
 
 Edit Control supports the following Outlining Tooltip events.
 
 <table>
 <tr>
-<td>
-{{ '**Edit Control Event**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Edit Control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 OutliningTooltipBeforePopup</td><td>
@@ -3150,11 +3080,11 @@ End Sub
 
 {% endhighlight %}
 
-See Also
+{% seealso %}
 
-## Automatic Outlining
+[Automatic Outlining](#automatic-outlining)
 
-
+{% endseealso %}
 
 ### Wordwrap
 
@@ -3170,9 +3100,9 @@ Wordwrap is enabled by setting the WordWrap property of the Edit Control to True
 
 <table>
 <tr>
-<td>
-Edit Control Property</td><td>
-Description</td></tr>
+<th>
+Edit Control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 WordWrap</td><td>
@@ -3324,9 +3254,6 @@ The following illustration shows the Edit Control with the WordWrappingMode and 
 
 
 
-_Figure_ _36: WordWrappingMode = "Control"; WordWrapType= "WrapByWord"
-
-
 
 Refer to the WordWrap Demo sample in the following sample installation location.
 
@@ -3428,10 +3355,6 @@ Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusio
 
 
 
-_Figure_ _37_: Edit Control with Character Wrapping and Custom Painted Wordwrap Margin
-
-
-
 #### Line Wrapping Images
 
 It is also possible to associate images to indicate line wrapping. This feature can be turned on by setting the MarkLineWrapping property to True. There can be two types of image indicators:
@@ -3453,7 +3376,7 @@ Also, to indicate whether wrapped lines should be marked, the MarkWrappedLines p
 <table>
 <tr>
 <th>
-Edit Control Property}</th><th>
+Edit Control Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -3534,8 +3457,6 @@ Me.editControl1.MarkWrappedLines = True
 
 
 
-_Figure_ _38: Wrapping Images indicating Wrapped Lines and Point of Wrapping
-
 ### Read-Only Text
 
 Edit Control allows you to specify read-only regions in the code, i.e., regions that are uneditable. This can be achieved through the following methods. 
@@ -3596,9 +3517,6 @@ The following screenshot shows a read-only region in the code section of the Edi
 
 ![](Text-Visualization_images/Text-Visualization_img31.png)
 
-
-
-_Figure_ _39: Read-Only Region with Orange Background and Crimson Text Color
 
 
 
@@ -3717,9 +3635,6 @@ Me.editControl1.RemoveTextBorder(New Point(1, 13), New Point(15, 13)
 
 
 
-_Figure_ _40: Text Borders in Edit Control
-
-
 
 A sample which demonstrates the above feature is available in the following sample installation path.
 
@@ -3727,11 +3642,11 @@ A sample which demonstrates the above feature is available in the following samp
 
 _..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### See Also
+{% seealso %}
 
-Underlines, Wavelines and StrikeThrough
+[Underlines](#underlines), [Wavelines and StrikeThrough](#wavelines-and-strikethrough)
 
-
+{% endseealso %}
 
 ### Encoding Text
 
@@ -4036,8 +3951,6 @@ Dim editText as String = Me.editControl1.SelectedText
 Setting the TransparentSelection property to True, will highlight the selected text range with a transparent blue background (which will let you view the syntax highlighting in the text within the selected region), as shown in the following screenshot.
 
 ![](Text-Visualization_images/Text-Visualization_img33.jpeg)
-
-_Figure_ _41: Transparent Selection Enabled
 
 Setting the TransparentSelection property to False, will highlight the selected text range with a dark background (which will not let you view the syntax highlighting in the text within the selected region), as shown in the following screenshot.
 

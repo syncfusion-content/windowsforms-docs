@@ -11,7 +11,7 @@ documentation: ug
 
 By calling the ButtonEdit.HideButton method, we can hide a child button. 
 
-Table 151: Methods Table
+_Methods Table_
 
 <table>
 <tr>

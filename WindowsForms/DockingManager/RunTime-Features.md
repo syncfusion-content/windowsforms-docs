@@ -3,7 +3,7 @@ layout: post
 title: RunTime-Features
 description: runtime features
 platform: WindowsForms
-control: Docking Package 
+control: DockingManager 
 documentation: ug
 ---
 
@@ -31,8 +31,6 @@ Description</th></tr>
 Browsing Key</td><td>
 Determines the value of the key which can be used to tab through the docked controls.</td></tr>
 </table>
-
-Table 42: DockedControl Property Table
 
 <table>
 <tr>
@@ -93,7 +91,6 @@ N> EnableSuperTooltip property which is discussed below, should be set to false 
 
 Docking manager can display a super tooltip by enabling the DockingManager.EnableSuperTooltip property. For this a SuperTooltip control should be dragged and dropped on to the form and it should be selected in the DockingManager.SuperTooltip property.
 
-Table 43: DockingManager Property Table
 
 <table>
 <tr>

@@ -42,8 +42,6 @@ The frame defines the frame types of linear gauges. Frames can be applied using 
 * Horizontal
 * Vertical
 
-_Table_ _9: Linear Gauge Frame Properties
-
 <table>
 <tr>
 <th>
@@ -133,7 +131,6 @@ Scales are used to control element placement and value ranges.
 
 You can customize scales added to the Linear Gauge by using the properties listed in the following table:
 
-_Table_ _10: Scales
 
 <table>
 <tr>
@@ -159,7 +156,6 @@ Two types of ticks can be added to the LinearGauge control scale. Major tick mar
 
 The following table lists the properties that can be used to customize the linear tick marks. This is done to represent the scale with meaningful markers and labels.
 
-_Table_ _11: Ticks
 
 <table>
 <tr>
@@ -283,7 +279,6 @@ this.linearGauge1.PointerPlacement = Placement.Center;
 
 Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and more. All the available attributes are listed in the following table: 
 
-_Table_ _12: Ranges
 
 <table>
 <tr>
@@ -377,7 +372,6 @@ Me.linearGauge1.Ranges.Add(range1)
 
 The Gauge control for Windows Forms includes support for customizing the number of major tick lines and minor tick lines using the Major Difference and MinorTickCount properties. It also provides support to customize the number of tick lines using the MaximumValue and MinimunValue properties.
 
-_Table_ _13_: Scaling Divisions
 
 <table>
 <tr>

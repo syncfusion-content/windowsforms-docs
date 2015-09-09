@@ -3,7 +3,7 @@ layout: post
 title: How to make a docked control Float Only
 description: How to make a docked control Float Only
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 
@@ -12,13 +12,12 @@ documentation: ug
 
 The docked control can also be only floating and cannot be docked, by calling the SetFloatOnly method.
 
-Table 105: Parameter Table
 
 <table>
 <tr>
-<td>
-Parameter</td><td>
-Description</td></tr>
+<th>
+Parameter</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetFloatOnly</td><td>

@@ -156,7 +156,4 @@ Essential Edit now comes with an XML Schema Definition (XSD) file that provides 
 
 
 
-_Figure_ _61: XML Schema Definition File
-
-
 

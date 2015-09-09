@@ -244,9 +244,6 @@ Me.editControl1.Configurator.Open(String fileName)
 
 {% endhighlight %}
 
-### See Also
-
-
 
 ## Creating Configuration Settings Programmatically
 
@@ -444,11 +441,9 @@ Edit Control offers rich set of APIs to create configuration settings in code. T
    ~~~
    {:.prettyprint }
 
-### See Also
+{% seealso %}
 
+ [Creating a Custom Language Configuration File](#Creating-a-custom-language-configuration-file)
 
-
-### Creating a Custom Language Configuration File
-
-
+{% endseealso%}
 

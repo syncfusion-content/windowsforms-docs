@@ -3,7 +3,7 @@ layout: post
 title: Events
 description: events
 platform: WindowsForms
-control: Editors Package
+control: CurrencyEdit
 documentation: ug
 ---
 

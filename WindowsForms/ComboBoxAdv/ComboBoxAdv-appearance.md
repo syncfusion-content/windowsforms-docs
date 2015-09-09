@@ -3,7 +3,7 @@ layout: post
 title: ComboBoxAdv-appearance
 description: comboboxadv appearance
 platform: WindowsForms
-control: Editors Package
+control: ComboBoxAdv
 documentation: ug
 ---
 
@@ -14,8 +14,6 @@ This section discusses the below topics. 
 ## Border Styles
 
 This section discusses the border settings for the ComboBoxAdv control. 
-
-Table 220: Properties
 
 <table>
 <tr>
@@ -256,7 +254,6 @@ Me.comboBoxAdv1.IgnoreThemeBackground = True
 
 Images can be easily associated with the items of the ComboBoxAdv control using the following properties. 
 
-_Table_ _221_: _Properties_
 
 <table>
 <tr>

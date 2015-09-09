@@ -35,14 +35,12 @@ Class Hierarchy
 WTextRange
 
 WField
+     &brvbar;
+     FormField
 
-              WFormField
 
 
-
-Public Properties
-
-Table 82 :Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -126,23 +124,22 @@ Class Hierarchy
 
 WTextRange
 
-            |
+	   &brvbar;
 
-WField
+		WField
 
-              |
+		 &brvbar;
 
-           WFormField
+	     WFormField
 
-                 |
+		   &brvbar;
 
-               WCheckBox
+		   WCheckBox
 
 
 
-Public Methods
+#### Public Methods
 
-Table 83 : Public Methods
 
 <table>
 <tr>
@@ -156,9 +153,7 @@ Initializes a new instance of the WCheckBox class. </td></tr>
 </table>
 
 
-Public Properties
-
-Table 84 : Public Properties
+#### Public Properties
 
 <table>
 <tr>
@@ -246,23 +241,21 @@ Class Hierarchy
 
 WTextRange
 
-     |
+    &brvbar;
 
    WField
 
-        |
+       &brvbar;
 
       WFormField
 
-             |
+        &brvbar;
 
 WDropDownFormField
 
 
 
-Public Constructors
-
-Table 85 : Public Constructors
+#### Public Constructors
 
 <table>
 <tr>
@@ -276,9 +269,8 @@ Initializes a new instance of the WDropDownFormField class. </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 86 : Public Properties
 
 <table>
 <tr>
@@ -341,7 +333,7 @@ To set the format of the DocIO text directly from the field, you can use the Str
 
 
 
-> Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
+N> Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
 
 
 
@@ -357,23 +349,21 @@ Class Hierarchy
 
 WTextRange
 
- 	 |
+ 	&brvbar;
 
-WField
+    WField
 
-             |
+     &brvbar;
 
-WFormField
+     WFormField
 
-                 |
+        &#124
 
-              WTextFormField
+        WTextFormField
 
 
 
-Public Constructors
-
-Table 87 : Public Constructors
+#### Public Constructors
 
 <table>
 <tr>
@@ -387,9 +377,8 @@ Initializes a new instance of the WTextFormField class. </td></tr>
 </table>
 
 
-Public Properties
+#### Public Properties
 
-Table 88 : Public Properties
 
 <table>
 <tr>
@@ -545,6 +534,6 @@ document.Properties.FormFieldShading = false;
 {%endhighlight%}
 
 {%highlight vbnet%}
-[VB.NET]document.Properties.FormFieldShading = False
+document.Properties.FormFieldShading = False
 {%endhighlight%}
 

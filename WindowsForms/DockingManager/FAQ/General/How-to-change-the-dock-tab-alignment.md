@@ -3,7 +3,7 @@ layout: post
 title: How to change the dock tab alignment
 description: How to change the dock tab alignment
 platform: WindowsForms
-control: Control Name undefined
+control: DockingManager
 documentation: ug
 ---
 

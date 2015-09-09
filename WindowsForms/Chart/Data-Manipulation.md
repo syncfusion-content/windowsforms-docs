@@ -28,11 +28,6 @@ The following image displays the same data with data from transactions that occu
 
 
 
-
-_Figure_ _364_: _Grouped Data with Filtering_
-
-
-
 ## Essential Grid Interaction
 
 Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes, is a few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
@@ -43,9 +38,4 @@ Essential Chart offers great interaction capabilities with Essential Grid. You c
 
 ![](Data-Manipulation_images/Data-Manipulation_img2.png)
 
-
-
-
-
-_Figure_ _365_: _Essential Chart with Essential Grid_
 

@@ -9,4 +9,4 @@ documentation: ug
 
 # How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete Control?
 
-This can be done using AutoCompleteItemSelected Event which is discussed in External Datasource  topic.
+This can be done using AutoCompleteItemSelected Event which is discussed in [External Datasource](http://docs.syncfusion.com/windowsforms/autocomplete/datasource#external-datasource)  topic.

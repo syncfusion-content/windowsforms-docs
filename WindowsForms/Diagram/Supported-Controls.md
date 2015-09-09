@@ -18,11 +18,6 @@ The controls associated with the Diagram control are illustrated in the followin
 ![](Supported-Controls_images/Supported-Controls_img1.png)
 
 
-
-
-
-_Figure_ _58_: Diagram With Supported Controls
-
 ## Overview Control 
 
 Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagrams. The control features a view port window that can be moved and / or resized using the mouse to modify the diagrams' origin and magnification properties at run-time.
@@ -30,14 +25,11 @@ Overview Control provides a perspective view of a diagram model, and allows user
 The important property of the Overview Control is the Diagram property. The following are the list of properties of the Overview control.
 
 
-
-_Table_ _17_: Overview Control
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -80,14 +72,11 @@ Sets the visibility of the control.</td></tr>
 The important events of Overview Control are listed below with their corresponding descriptions.
 
 
-
-_Table_ _18_: Important events of Overview Control
-
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 Click</td><td>
@@ -159,10 +148,6 @@ overviewControl1.TabIndex = 1
 
 
 
-
-
-_Figure_ _59_: Overview Control
-
 ## Palette Groupbar And GroupView
 
 The Palette Groupbar control provides a way for users to drag-and-drop the symbols onto a diagram. It is based on the Syncfusion Essential Tools GroupBar control. Each symbol palette loaded in the PaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain the symbols.
@@ -173,13 +158,13 @@ The properties of the PaletteGroupBar and GroupView with their descriptions are 
 
 
 
-_Table_ _19_: PaletteGroupBar and GroupView
+_PaletteGroupBar and GroupView_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -331,13 +316,13 @@ Indicates the loaded palette is in palette view.</td></tr>
 </table>
 
 
-_Table_ _20_: PaletteGroupBar and GroupView
+_PaletteGroupBar and GroupView_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 LoadPalette</td><td>
@@ -347,15 +332,11 @@ Loads given Symbol Palette to the PaletteGroupView.</td></tr>
 
 The important events of the PaletteGroupBar and GroupView with their descriptions are given in the below table.
 
-
-
-_Table_ _21_: Important events of the PaletteGroupBar and GroupView
-
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 Click</td><td>
@@ -631,12 +612,12 @@ You can save the current active palette of PaletteGroupBar window by means of se
 
 Follow the steps given below for saving current symbol palette.
 
-1.  Add SaveFileDialog control into form.
-2.  Set the Filter property of SaveFileDialog as
+1. Add SaveFileDialog control into form.
+2. Set the Filter property of SaveFileDialog as
 
- Essential Diagram Palettes|*.edp|All files|*.*
+   Essential Diagram Palettes|*.edp|All files|*.*
 
-3.  Add the following lines of code to your button click event. 
+3. Add the following lines of code to your button click event. 
 
 
 
@@ -678,21 +659,18 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 
 
-_Figure_ _60_: Palette GroupBar and Palette GroupView
-
 ## Document Explorer
 
 Document Explorer allows you to visualize the details of various objects that are added onto the diagram control at run-time. The layers will be listed under the Layers node and other objects like shapes, links, lines and text editor will be listed under Nodes node.
 
 The properties of the Document Explorer are listed below with their respective descriptions.
 
-_Table_ _22_: Document Explorer
 
 <table>
 <tr>
-<td>
-    Property</td><td>
-Description</td></tr>
+<th>
+    Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -796,13 +774,13 @@ Sets visibility of the control.</td></tr>
 </table>
 
 
-_Table_ _23_: Document Explorer
+_Document Explorer_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 AttachModel</td><td>
@@ -813,14 +791,11 @@ Adds Diagram Model to the Document Explorer.</td></tr>
 The important events of Document Explorer are as follows,
 
 
-
-_Table_ _24_: important events of Document Explorer
-
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 Click</td><td>
@@ -999,14 +974,11 @@ The Property Editor in Essential Diagram displays properties of the currently se
 The following table lists the properties of the Property Editor. The important property of the Property Editor is the Diagram property.
 
 
-
-_Table_ _25_: Property Editor
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Diagram </td><td>
@@ -1066,31 +1038,27 @@ this.propertyEditor.Diagram = diagram1;
 
 
 
-
-
-_Figure_ _63_: Property Editor
-
 ## Diagram Grid
 
 Diagram Grid is drawn with evenly spaced points that provides a visual guidance to the user.  
 
-Behavior
+#### Behavior
 
 Draws a matrix of evenly spaced points in the view, and provides snap to the grid calculations.
 
-Class Reference
+#### Class Reference
 
 It is a property of Diagram.View class and its return type is _Syncfusion.Windows.Forms.Diagram.LayoutGrid_.
 
 
 
-_Table_ _26_: Diagram Grid Properties
+_Diagram Grid Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Color</td><td>

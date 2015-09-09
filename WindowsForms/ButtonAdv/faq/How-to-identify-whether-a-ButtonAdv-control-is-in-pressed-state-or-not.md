@@ -12,7 +12,7 @@ documentation: ug
 
 When ButtonAdv.PushButton property is enabled, the button will remain in its pressed state, when clicked. The state of the button will be present in the property State. So by examining the state property, we can conclude whether the button is in the Pressed state or not. Using the Office2007 visual styles will help better understanding of this feature.
 
-Table 139: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -49,6 +49,7 @@ MessageBox.Show("Button is in normal state");
 
 
 {%highlight vbnet%}
+
 Private Sub buttonAdv1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles buttonAdv1.Click
 
 if(Me.buttonAdv1.State==Syncfusion.Windows.Forms.ButtonAdvState.Pressed)
@@ -63,4 +64,5 @@ End Sub
 
 
 {%endhighlight%}
+
 ![](FAQ_images/Overview_img77.jpeg)

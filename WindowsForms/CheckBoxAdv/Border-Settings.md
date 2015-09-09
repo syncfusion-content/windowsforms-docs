@@ -11,7 +11,6 @@ documentation: ug
 
 Color and Styles can be applied to the border of the CheckBoxAdv as discussed below.
 
-Table 401: Property Table
 
 <table>
 <tr>

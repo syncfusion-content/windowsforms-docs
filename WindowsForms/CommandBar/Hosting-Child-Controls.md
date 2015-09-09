@@ -3,7 +3,7 @@ layout: post
 title: Hosting-Child-Controls
 description: hosting child controls
 platform: WindowsForms
-control: CommandBars package
+control: CommandBars
 documentation: ug
 ---
 
@@ -45,7 +45,6 @@ Me.commandBar1.Controls.Add(Me.panel1)
 
 The method associated with the above property is given below.
 
-Table 13: Method Table
 
 <table>
 <tr>
