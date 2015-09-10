@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Office2010-Theme-in-Windows-Grids
+title: Office2010-Theme-in-Windows-Grids | WindowsForms | Syncfusion
 description: office2010 theme in windows grids
 platform: WindowsForms
 control: Grid

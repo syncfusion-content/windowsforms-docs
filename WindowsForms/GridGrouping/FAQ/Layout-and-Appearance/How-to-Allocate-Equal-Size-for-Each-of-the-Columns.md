@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Allocate-Equal-Size-for-Each-of-the-Columns
+title: How-to-Allocate-Equal-Size-for-Each-of-the-Columns | WindowsForms | Syncfusion
 description: how to allocate equal size for each of the columns in all the tables
 platform: WindowsForms
 control: GridGrouping

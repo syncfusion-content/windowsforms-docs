@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Layout
+title: Grid-Layout | WindowsForms | Syncfusion
 description: grid layout
 platform: WindowsForms
 control: GridGrouping

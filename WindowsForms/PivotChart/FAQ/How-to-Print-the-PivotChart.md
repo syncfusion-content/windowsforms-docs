@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Print the PivotChart
+title: How to Print the PivotChart | WindowsForms | Syncfusion
 description: How to Print the PivotChart
 platform: WindowsForms
 control: PivotChart

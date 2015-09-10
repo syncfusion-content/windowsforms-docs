@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitter-Behavior
+title: Splitter-Behavior | WindowsForms | Syncfusion
 description: splitter behavior
 platform: WindowsForms
 control: Splitter  

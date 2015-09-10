@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DesignTime-Features
+title: DesignTime-Features | WindowsForms | Syncfusion
 description: designTime features
 platform: WindowsForms
 control: TreeView 

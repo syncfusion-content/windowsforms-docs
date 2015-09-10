@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Make-a-Cell-Display--if-it-is-Not-Wide-Enou
+title: How-to-Make-a-Cell-Display--if-it-is-Not-Wide-Enou | WindowsForms | Syncfusion
 description: how to make a cell display '...' if it is not wide enough
 platform: WindowsForms
 control: Grid

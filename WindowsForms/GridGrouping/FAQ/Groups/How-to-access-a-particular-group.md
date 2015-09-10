@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-access-a-particular-group
+title: How-to-access-a-particular-group | WindowsForms | Syncfusion
 description: how to access a particular group
 platform: WindowsForms
 control: GridGrouping

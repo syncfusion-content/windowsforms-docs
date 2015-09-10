@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Selection
+title: Text-Selection | WindowsForms | Syncfusion
 description: text selection
 platform: WindowsForms
 control: HTML UI

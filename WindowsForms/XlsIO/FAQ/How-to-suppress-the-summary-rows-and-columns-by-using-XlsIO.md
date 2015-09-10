@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-suppress-the-summary-rows-and-columns-by-using-XlsIO
+title: How-to-suppress-the-summary-rows-and-columns-by-using-XlsIO | WindowsForms | Syncfusion
 description:  How to suppress the summary rows and columns by using XlsIO
 platform: WindowsForms
 control: XlsIO	

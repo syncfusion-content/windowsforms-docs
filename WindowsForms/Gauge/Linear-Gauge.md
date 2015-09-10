@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear-Gauge
+title: Linear-Gauge | WindowsForms | Syncfusion
 description: linear gauge
 platform: WindowsForms
 control: Gauge

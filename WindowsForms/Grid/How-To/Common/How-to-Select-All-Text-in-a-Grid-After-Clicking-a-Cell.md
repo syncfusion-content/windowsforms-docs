@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Select-All-Text-in-a-Grid-After-Clicking-a-
+title: How-to-Select-All-Text-in-a-Grid-After-Clicking-a- | WindowsForms | Syncfusion
 description: how to select all text in a grid after clicking a cell
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ColorPalettes
+title: ColorPalettes | WindowsForms | Syncfusion
 description: colorpalettes
 platform: WindowsForms
 control: Maps

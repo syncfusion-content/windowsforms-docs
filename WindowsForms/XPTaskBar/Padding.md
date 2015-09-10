@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Padding
+title: Padding | WindowsForms | Syncfusion
 description: Concepts and Features
 platform: WindowsForms
 control: XPTaskBar

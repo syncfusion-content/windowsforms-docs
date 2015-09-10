@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Runtime Features
+title: Runtime Features | WindowsForms | Syncfusion
 description: Runtime Features
 platform: WindowsForms
 control: CalendarDateTime

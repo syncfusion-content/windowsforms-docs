@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Child Controls
+title: Child Controls | WindowsForms | Syncfusion
 description: child controls
 platform: WindowsForms
 control: DateTimePicker

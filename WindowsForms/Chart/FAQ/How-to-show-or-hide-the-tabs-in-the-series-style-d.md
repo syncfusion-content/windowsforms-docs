@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-show-or-hide-the-tabs-in-the-series-style-d
+title: How-to-show-or-hide-the-tabs-in-the-series-style-d | WindowsForms | Syncfusion
 description: how to show or hide the tabs in the series style dialog in a chart
 platform: WindowsForms
 control: chart

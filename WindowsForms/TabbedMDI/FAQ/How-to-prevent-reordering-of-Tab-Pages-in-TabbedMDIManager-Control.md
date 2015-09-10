@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-prevent-reordering-of-Tab-Pages-in-TabbedMDIManager-Control
+title: How-to-prevent-reordering-of-Tab-Pages-in-TabbedMDIManager-Control | WindowsForms | Syncfusion
 description: how to prevent reordering of tab pages in tabbedmdimanager control
 platform: WindowsForms
 control: TabbedMDIPackage

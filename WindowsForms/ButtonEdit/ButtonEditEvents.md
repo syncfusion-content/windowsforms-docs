@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ButtonEdit Events
+title: ButtonEdit Events | WindowsForms | Syncfusion
 description: ButtonEdit Events
 platform: WindowsForms
 control: Tools

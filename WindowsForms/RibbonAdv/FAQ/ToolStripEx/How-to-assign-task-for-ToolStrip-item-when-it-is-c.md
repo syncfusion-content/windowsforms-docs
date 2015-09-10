@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-assign-task-for-ToolStrip-item-when-it-is-c
+title: How-to-assign-task-for-ToolStrip-item-when-it-is-c | WindowsForms | Syncfusion
 description: how to assign task for toolstrip item when it is clicked?
 platform: WindowsForms
 control: Frequently Asked Questions

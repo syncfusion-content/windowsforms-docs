@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spacing
+title: Spacing | WindowsForms | Syncfusion
 description: Spacing
 platform: WindowsForms
 control: AutoLabel

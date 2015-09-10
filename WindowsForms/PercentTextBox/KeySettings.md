@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Settings
+title: Key Settings | WindowsForms | Syncfusion
 description: Key Settings
 platform: WindowsForms
 control: Editors Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ComboBoxAdv-Concepts-and-features
+title: ComboBoxAdv-Concepts-and-features | WindowsForms | Syncfusion
 description: comboboxadv concepts and features
 platform: WindowsForms
 control: ComboBoxAdv

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Map-appearance
+title: Customizing-Map-appearance | WindowsForms | Syncfusion
 description: customizing map appearance
 platform: WindowsForms
 control: Maps

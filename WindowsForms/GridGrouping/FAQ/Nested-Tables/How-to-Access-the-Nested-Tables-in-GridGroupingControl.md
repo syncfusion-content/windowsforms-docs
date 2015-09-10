@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Access-the-Nested-Tables-in-GridGroupingCon
+title: How-to-Access-the-Nested-Tables-in-GridGroupingCon | WindowsForms | Syncfusion
 description: how to access the nested tables in gridgroupingcontrol
 platform: WindowsForms
 control: GridGrouping

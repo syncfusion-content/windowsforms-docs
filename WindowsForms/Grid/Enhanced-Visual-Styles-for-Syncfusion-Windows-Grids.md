@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enhanced-Visual-Styles-for-Syncfusion-Windows-Grids
+title: Enhanced-Visual-Styles-for-Syncfusion-Windows-Grids | WindowsForms | Syncfusion
 description: enhanced visual styles for syncfusion windows grids
 platform: WindowsForms
 control: Grid

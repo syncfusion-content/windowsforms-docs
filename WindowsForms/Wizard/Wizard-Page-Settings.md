@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wizard-Page-Settings
+title: Wizard-Page-Settings | WindowsForms | Syncfusion
 description: wizard page settings 
 platform: WindowsForms
 control: Wizard Package 

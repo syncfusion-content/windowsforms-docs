@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Button-Mode
+title: Button-Mode | WindowsForms | Syncfusion
 description: button mode
 platform: WindowsForms
 control: SplitButton 

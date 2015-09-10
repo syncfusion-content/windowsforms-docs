@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ProgressBarAdv-Events
+title: ProgressBarAdv-Events | WindowsForms | Syncfusion
 description: progressbaradv events
 platform: WindowsForms
 control: ProgressBarAdv

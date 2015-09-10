@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Leaf-Nodes
+title: Customizing-Leaf-Nodes | WindowsForms | Syncfusion
 description: customizing leaf nodes
 platform: WindowsForms
 control: TreeMap 

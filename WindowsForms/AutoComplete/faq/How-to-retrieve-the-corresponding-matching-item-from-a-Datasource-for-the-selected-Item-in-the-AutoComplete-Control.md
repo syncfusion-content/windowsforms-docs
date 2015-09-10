@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete Control
+title: How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete Control | WindowsForms | Syncfusion
 description: How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete Control
 platform: WindowsForms
 control: Editors Package

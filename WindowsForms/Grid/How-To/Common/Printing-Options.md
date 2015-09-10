@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing-Options
+title: Printing-Options | WindowsForms | Syncfusion
 description: printing options 
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Use-a-Combo-Box-in-a-Cell
+title: How-to-Use-a-Combo-Box-in-a-Cell | WindowsForms | Syncfusion
 description: how to use a combo box in a cell
 platform: WindowsForms
 control: Grid

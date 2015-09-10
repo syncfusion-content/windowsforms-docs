@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing-Features
+title: Editing-Features | WindowsForms | Syncfusion
 description: editing features
 platform: WindowsForms
 control: Edit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-get-the-selected-text-from-a-TextBox-cell
+title: How-to-get-the-selected-text-from-a-TextBox-cell | WindowsForms | Syncfusion
 description: how to get the selected text from a textbox cell?
 platform: WindowsForms
 control: Grid

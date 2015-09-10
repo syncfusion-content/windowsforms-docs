@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Access-the-Name-Of-an-HTML-Element-At-Run-t
+title: How-To-Access-the-Name-Of-an-HTML-Element-At-Run-t | WindowsForms | Syncfusion
 description: how to access the name of an html element at run-time?
 platform: WindowsForms
 control: HTML UI

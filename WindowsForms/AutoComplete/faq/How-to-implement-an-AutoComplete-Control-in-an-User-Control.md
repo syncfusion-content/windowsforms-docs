@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to implement an AutoComplete Control in an User Control
+title: How to implement an AutoComplete Control in an User Control | WindowsForms | Syncfusion
 description: How to implement an AutoComplete Control in an User Control
 platform: WindowsForms
 control: Tools

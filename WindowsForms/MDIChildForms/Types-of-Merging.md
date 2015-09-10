@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Types-of-Merging
+title: Types-of-Merging | WindowsForms | Syncfusion
 description: types of merging
 platform: WindowsForms
 control: Control Name undefined

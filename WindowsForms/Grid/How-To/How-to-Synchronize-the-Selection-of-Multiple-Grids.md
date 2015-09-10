@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Synchronize-the-Selection-of-Multiple-Grids
+title: How-to-Synchronize-the-Selection-of-Multiple-Grids | WindowsForms | Syncfusion
 description: how to synchronize the selection of multiple grids
 platform: WindowsForms
 control: Grid

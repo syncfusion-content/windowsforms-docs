@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-fonts-of-Active-and-Inactive-Tabs
+title: How-to-customize-the-fonts-of-Active-and-Inactive-Tabs | WindowsForms | Syncfusion
 description: how to customize the fonts of active and inactive tabs
 platform: WindowsForms
 control: TabbedMDIPackage

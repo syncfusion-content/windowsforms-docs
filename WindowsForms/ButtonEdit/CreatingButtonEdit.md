@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating ButtonEdit
+title: Creating ButtonEdit | WindowsForms | Syncfusion
 description: Creating ButtonEdit
 platform: WindowsForms
 control: Tools

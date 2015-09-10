@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling
+title: Styling | WindowsForms | Syncfusion
 description: styling
 platform: WindowsForms
 control: Rating  

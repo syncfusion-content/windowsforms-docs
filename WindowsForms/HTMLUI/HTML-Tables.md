@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML-Tables
+title: HTML-Tables | WindowsForms | Syncfusion
 description: html tables
 platform: WindowsForms
 control: HTML UI

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Can-Essential-ProjIO-be-used-to-read-MS-Project-files
+title: Can-Essential-ProjIO-be-used-to-read-MS-Project-files | WindowsForms | Syncfusion
 description: can essential projio be used to read ms project files? 
 platform: WindowsForms
 control: ProjIO

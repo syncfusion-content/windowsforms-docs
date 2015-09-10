@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Word-Documents
+title: Working-with-Word-Documents | WindowsForms | Syncfusion
 description: working with word documents
 platform: WindowsForms
 control: DocIO

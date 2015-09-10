@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-data-points-for-Chart-Series
+title: How-to-customize-the-data-points-for-Chart-Series | WindowsForms | Syncfusion
 description: how to customize the data points for chart series
 platform: WindowsForms
 control: chart

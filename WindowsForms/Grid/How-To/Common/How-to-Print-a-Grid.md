@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Print-a-Grid
+title: How-to-Print-a-Grid | WindowsForms | Syncfusion
 description: how to print a grid
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Settings
+title: Data-Settings | WindowsForms | Syncfusion
 description: data settings
 platform: WindowsForms
 control: ComboBoxAdv

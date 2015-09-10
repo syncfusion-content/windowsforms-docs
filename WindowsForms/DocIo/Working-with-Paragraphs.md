@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Paragraphs
+title: Working-with-Paragraphs | WindowsForms | Syncfusion
 description: working with paragraphs
 platform: WindowsForms
 control: DocIO

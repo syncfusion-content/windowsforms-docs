@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formula-Support
+title: Formula-Support | WindowsForms | Syncfusion
 description: formula support
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ColorPickerUIAdv Appearance
+title: ColorPickerUIAdv Appearance | WindowsForms | Syncfusion
 description: colorpickeruiadv appearance
 platform: WindowsForms
 control: ColorPickerUIAdv 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating CurrencyEdit
+title: Creating CurrencyEdit | WindowsForms | Syncfusion
 description: creating currencyedit
 platform: WindowsForms
 control: CurrencyEdit

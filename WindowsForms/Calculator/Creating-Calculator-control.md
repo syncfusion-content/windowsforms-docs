@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-Calculator-control
+title: Creating-Calculator-control | WindowsForms | Syncfusion
 description: creating calculator control
 platform: WindowsForms
 control: Calculator

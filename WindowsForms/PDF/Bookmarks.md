@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bookmarks
+title: Bookmarks | WindowsForms | Syncfusion
 description: bookmarks
 platform: WindowsForms
 control: PDF

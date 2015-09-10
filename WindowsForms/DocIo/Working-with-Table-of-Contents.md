@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Table-of-Contents
+title: Working-with-Table-of-Contents | WindowsForms | Syncfusion
 description: working with table of contents
 platform: WindowsForms
 control: DocIO

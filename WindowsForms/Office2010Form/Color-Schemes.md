@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color-Schemes
+title: Color-Schemes | WindowsForms | Syncfusion
 description: color schemes
 platform: WindowsForms
 control: Office2010 Form

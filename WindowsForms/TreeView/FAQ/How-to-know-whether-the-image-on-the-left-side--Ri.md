@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-know-whether-the-image-on-the-left-side--Ri
+title: How-to-know-whether-the-image-on-the-left-side--Ri | WindowsForms | Syncfusion
 description: how to know whether the image on the left side / right side of the node's text was clicked
 platform: WindowsForms
 control: TreeView 

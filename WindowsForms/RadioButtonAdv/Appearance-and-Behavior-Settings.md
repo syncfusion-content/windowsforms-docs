@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Behavior-Settings
+title: Appearance-and-Behavior-Settings | WindowsForms | Syncfusion
 description: appearance and behavior settings
 platform: WindowsForms
 control: EditorsPackage

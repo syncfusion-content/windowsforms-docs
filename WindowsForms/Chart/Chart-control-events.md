@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-control-events
+title: Chart-control-events | WindowsForms | Syncfusion
 description: chart control events
 platform: WindowsForms
 control: Chart

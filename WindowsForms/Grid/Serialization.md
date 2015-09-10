@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization
+title: Serialization | WindowsForms | Syncfusion
 description: serialization
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to assign the currently selected GroupBar Item to the GroupBar's Tag property
+title: How to assign the currently selected GroupBar Item to the GroupBar's Tag property | WindowsForms | Syncfusion
 description: Frequently asked questions
 platform: WindowsForms
 control: GroupBar

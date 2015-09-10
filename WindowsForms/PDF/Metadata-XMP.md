@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metadata-XMP
+title: Metadata-XMP | WindowsForms | Syncfusion
 description: metadata (xmp)
 platform: WindowsForms
 control: PDF

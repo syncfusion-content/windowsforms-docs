@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Card-View-Layout
+title: Card-View-Layout | WindowsForms | Syncfusion
 description: card view layout
 platform: WindowsForms
 control: DataBoundGrid

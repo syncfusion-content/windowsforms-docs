@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Alignment-Settings
+title: Alignment-Settings | WindowsForms | Syncfusion
 description: alignment settings
 platform: WindowsForms
 control: StatusBarAdv

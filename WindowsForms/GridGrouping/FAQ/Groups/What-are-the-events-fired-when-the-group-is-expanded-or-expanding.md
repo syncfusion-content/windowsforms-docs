@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-the-group-is-expand
+title: What-are-the-events-fired-when-the-group-is-expand | WindowsForms | Syncfusion
 description: what are the events fired when the group is expanded / expanding?
 platform: WindowsForms
 control: GridGrouping

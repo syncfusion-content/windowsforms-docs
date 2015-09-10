@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coded-UI-Support-in-Windows-Grids
+title: Coded-UI-Support-in-Windows-Grids | WindowsForms | Syncfusion
 description: coded ui support in windows grids
 platform: WindowsForms
 control: Grid

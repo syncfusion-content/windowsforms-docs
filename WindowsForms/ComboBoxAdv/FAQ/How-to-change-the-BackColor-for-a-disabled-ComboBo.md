@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-change-the-BackColor-for-a-disabled-ComboBo
+title: How-to-change-the-BackColor-for-a-disabled-ComboBo | WindowsForms | Syncfusion
 description:  how to change the backcolor for a disabled comboboxadv control?
 platform: WindowsForms
 control: ComboBoxAdv

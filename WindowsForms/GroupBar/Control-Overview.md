@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GroupBar
+title: GroupBar | WindowsForms | Syncfusion
 description: GroupBar
 platform: WindowsForms
 control: GroupBar

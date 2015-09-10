@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mail-Merge
+title: Mail-Merge | WindowsForms | Syncfusion
 description: mail merge
 platform: WindowsForms
 control: DocIO

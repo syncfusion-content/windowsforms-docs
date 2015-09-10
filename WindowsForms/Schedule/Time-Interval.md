@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time-Interval
+title: Time-Interval | WindowsForms | Syncfusion
 description: time interval
 platform: WindowsForms
 control: Schedule

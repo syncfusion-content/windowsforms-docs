@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip Settings 
+title: Tooltip Settings  | WindowsForms | Syncfusion
 description: Tooltip Settings 
 platform: WindowsForms
 control: GroupBar

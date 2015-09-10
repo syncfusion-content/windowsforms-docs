@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize-Appearance
+title: Customize-Appearance | WindowsForms | Syncfusion
 description: customize appearance 
 platform: WindowsForms
 control: Grid

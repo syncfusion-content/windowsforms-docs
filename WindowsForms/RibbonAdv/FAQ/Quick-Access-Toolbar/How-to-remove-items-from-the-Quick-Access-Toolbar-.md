@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-remove-items-from-the-Quick-Access-Toolbar-
+title: How-to-remove-items-from-the-Quick-Access-Toolbar- | WindowsForms | Syncfusion
 description: how to remove items from the quick access toolbar programmatically?
 platform: WindowsForms
 control: Frequently Asked Questions

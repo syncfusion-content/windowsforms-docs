@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XPTaskPane
+title: XPTaskPane | WindowsForms | Syncfusion
 description: xptaskpane
 platform: WindowsForms
 control: XPTaskPane 

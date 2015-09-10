@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-create-and-open-Excel-Template-files-by-using-XlsIO
+title: How-to-create-and-open-Excel-Template-files-by-using-XlsIO | WindowsForms | Syncfusion
 description:  How to create and open Excel Template files by using XlsIO
 platform: WindowsForms
 control: XlsIO	

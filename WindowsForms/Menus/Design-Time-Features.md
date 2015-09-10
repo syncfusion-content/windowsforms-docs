@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design-Time Features
+title: Design-Time Features | WindowsForms | Syncfusion
 description: design-time features
 platform: WindowsForms
 control: Menus Package 

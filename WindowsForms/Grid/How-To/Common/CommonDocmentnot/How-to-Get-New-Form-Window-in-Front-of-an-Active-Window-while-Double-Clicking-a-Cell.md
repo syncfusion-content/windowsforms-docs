@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Get New Form Window in Front of an Active Window while Double Clicking a Cell
+title: How to Get New Form Window in Front of an Active Window while Double Clicking a Cell | WindowsForms | Syncfusion
 description: how to get new form window in front of an active window while double clicking a cell
 platform: WindowsForms
 control: GridGrouping

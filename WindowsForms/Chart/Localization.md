@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | WindowsForms | Syncfusion
 description: localization 
 platform: WindowsForms
 control: Chart

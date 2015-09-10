@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scroll-Settings
+title: Scroll-Settings | WindowsForms | Syncfusion
 description: scroll settings
 platform: WindowsForms
 control: Wizard

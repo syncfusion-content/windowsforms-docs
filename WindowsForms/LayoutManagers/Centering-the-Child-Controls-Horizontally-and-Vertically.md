@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Centering the Child Controls Horizontally and Vertically
+title: Centering the Child Controls Horizontally and Vertically | WindowsForms | Syncfusion
 description: Centering the Child Controls Horizontally and Vertically
 platform: WindowsForms
 control: Layout Managers Package

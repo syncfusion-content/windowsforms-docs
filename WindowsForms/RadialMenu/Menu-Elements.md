@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Menu-Elements
+title: Menu-Elements | WindowsForms | Syncfusion
 description: menu elements 
 platform: WindowsForms
 control: RadialMenu 

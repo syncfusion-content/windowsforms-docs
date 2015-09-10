@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-zip-all-the-files-in-subfolders-by-using-the-Syncfusion.Compression.Zip-namespace
+title: How-to-zip-all-the-files-in-subfolders-by-using-the-Syncfusion.Compression.Zip-namespace | WindowsForms | Syncfusion
 description:  How to zip all the files in subfolders by using the Syncfusion.Compression.Zip namespace
 platform: WindowsForms
 control: XlsIO	

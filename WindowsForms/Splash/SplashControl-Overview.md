@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SplashControl-Overview
+title: SplashControl-Overview | WindowsForms | Syncfusion
 description: splashcontrol overview
 platform: WindowsForms
 control: SplashControl

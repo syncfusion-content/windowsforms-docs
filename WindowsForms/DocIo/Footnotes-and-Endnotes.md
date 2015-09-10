@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Footnotes-and-Endnotes
+title: Footnotes-and-Endnotes | WindowsForms | Syncfusion
 description: footnotes and endnotes
 platform: WindowsForms
 control: DocIO

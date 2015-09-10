@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-hide-the-numbered-row-and-column-headers-wh
+title: How-to-hide-the-numbered-row-and-column-headers-wh | WindowsForms | Syncfusion
 description: how to hide the numbered row and column headers while printing or previewing print in gridcontrol
 platform: WindowsForms
 control: Grid

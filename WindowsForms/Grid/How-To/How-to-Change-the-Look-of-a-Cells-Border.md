@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Look-of-a-Cells-Border
+title: How-to-Change-the-Look-of-a-Cells-Border | WindowsForms | Syncfusion
 description: how to change the look of a cell's border
 platform: WindowsForms
 control: Grid

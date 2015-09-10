@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-prevent-the-ComboBoxBarItems-dropdown-from-
+title: How-to-prevent-the-ComboBoxBarItems-dropdown-from- | WindowsForms | Syncfusion
 description: how to prevent the comboboxbaritem's dropdown from being closed after clicking a choiselist item
 platform: WindowsForms
 control: Orientation

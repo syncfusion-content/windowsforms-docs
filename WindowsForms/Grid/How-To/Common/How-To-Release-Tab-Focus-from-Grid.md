@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Release-Tab-Focus-from-Grid
+title: How-To-Release-Tab-Focus-from-Grid | WindowsForms | Syncfusion
 description: how to release tab focus from grid
 platform: WindowsForms
 control: Grid

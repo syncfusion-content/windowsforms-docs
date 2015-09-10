@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing-and-Print-Preview
+title: Printing-and-Print-Preview | WindowsForms | Syncfusion
 description: printing and print preview 
 platform: WindowsForms
 control: Chart

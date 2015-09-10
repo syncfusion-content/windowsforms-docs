@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Swap-Rows-and-Columns
+title: How-to-Swap-Rows-and-Columns | WindowsForms | Syncfusion
 description: how to swap rows and columns
 platform: WindowsForms
 control: Grid

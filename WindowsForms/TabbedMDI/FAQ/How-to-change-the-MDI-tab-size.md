@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-change-the-MDI-tab-size
+title: How-to-change-the-MDI-tab-size | WindowsForms | Syncfusion
 description: how to change the mdi tab size
 platform: WindowsForms
 control: TabbedMDIPackage

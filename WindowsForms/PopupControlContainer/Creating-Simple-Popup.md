@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating Simple Popup
+title: Creating Simple Popup | WindowsForms | Syncfusion
 description: Creating Simple Popup
 platform: WindowsForms
 control: Editors Package

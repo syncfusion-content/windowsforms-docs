@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Include-an-Icon-in-the-Column-Header
+title: How-to-Include-an-Icon-in-the-Column-Header | WindowsForms | Syncfusion
 description: how to include an icon in the column header
 platform: WindowsForms
 control: DataBoundGrid

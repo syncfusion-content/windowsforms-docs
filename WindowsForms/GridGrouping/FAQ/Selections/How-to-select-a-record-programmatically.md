@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-select-a-record-programmatically
+title: How-to-select-a-record-programmatically | WindowsForms | Syncfusion
 description: how to select a record programmatically
 platform: WindowsForms
 control: GridGrouping

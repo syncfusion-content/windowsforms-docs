@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Hide-a-Row-or-Column
+title: How-to-Hide-a-Row-or-Column | WindowsForms | Syncfusion
 description: how to hide a row or column
 platform: WindowsForms
 control: Grid

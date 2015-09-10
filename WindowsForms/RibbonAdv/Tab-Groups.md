@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tab-Groups
+title: Tab-Groups | WindowsForms | Syncfusion
 description: tab groups
 platform: WindowsForms
 control: RibbonControlAdv 

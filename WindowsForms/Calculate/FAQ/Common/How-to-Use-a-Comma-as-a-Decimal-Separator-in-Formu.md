@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Use-a-Comma-as-a-Decimal-Separator-in-Formu
+title: How-to-Use-a-Comma-as-a-Decimal-Separator-in-Formu | WindowsForms | Syncfusion
 description: how to use a comma as a decimal separator in formula?
 platform: WindowsForms
 control: Calculate

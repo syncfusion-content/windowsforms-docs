@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-to-an-ArrayList
+title: Binding-to-an-ArrayList | WindowsForms | Syncfusion
 description: binding to an arraylist
 platform: WindowsForms
 control: DataBoundGrid

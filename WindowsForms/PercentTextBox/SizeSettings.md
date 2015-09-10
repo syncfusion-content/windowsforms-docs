@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Size Settings
+title: Size Settings | WindowsForms | Syncfusion
 description: Size Settings
 platform: WindowsForms
 control: Editors Package

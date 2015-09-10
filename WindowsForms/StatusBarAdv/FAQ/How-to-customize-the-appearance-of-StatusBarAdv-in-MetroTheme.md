@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-appearance-of-StatusBarAdv-in-MetroTheme
+title: How-to-customize-the-appearance-of-StatusBarAdv-in-MetroTheme | WindowsForms | Syncfusion
 description: how to customize the appearance of statusbaradv in metrotheme
 platform: WindowsForms
 control: Notification Package 

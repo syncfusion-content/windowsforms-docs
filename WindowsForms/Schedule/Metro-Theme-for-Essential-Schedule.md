@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metro-Theme-for-Essential-Schedule
+title: Metro-Theme-for-Essential-Schedule | WindowsForms | Syncfusion
 description: metro theme for essential schedule
 platform: WindowsForms
 control: Schedule

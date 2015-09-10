@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Value-Settings
+title: Value-Settings | WindowsForms | Syncfusion
 description: value settings
 platform: WindowsForms
 control: EditorsPackage

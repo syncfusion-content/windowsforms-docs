@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping
+title: Grouping | WindowsForms | Syncfusion
 description: grouping
 platform: WindowsForms
 control: PivotChart

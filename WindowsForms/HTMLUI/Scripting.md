@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scripting
+title: Scripting | WindowsForms | Syncfusion
 description:  scripting
 platform: WindowsForms
 control: HTML UI

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip
+title: ToolTip | WindowsForms | Syncfusion
 description: tooltip
 platform: WindowsForms
 control: Rating  

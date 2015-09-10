@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to display the scrollbars always, irrespective of the number of items
+title: How to display the scrollbars always, irrespective of the number of items | WindowsForms | Syncfusion
 description: How to display the scrollbars always, irrespective of the number of items
 platform: WindowsForms
 control: Editors Package

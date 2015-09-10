@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating SplitContainerAdv
+title: Creating SplitContainerAdv | WindowsForms | Syncfusion
 description: Creating SplitContainerAdv
 platform: WindowsForms
 control: Editors Package

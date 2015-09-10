@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculate-functions
+title: Calculate-functions | WindowsForms | Syncfusion
 description: calculate functions
 platform: WindowsForms
 control: Calculate

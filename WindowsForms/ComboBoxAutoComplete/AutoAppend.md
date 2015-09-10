@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoAppend
+title: AutoAppend | WindowsForms | Syncfusion
 description: AutoAppend
 platform: WindowsForms
 control: ComboBoxAutoComplete

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GroupBar Events
+title: GroupBar Events | WindowsForms | Syncfusion
 description: overview
 platform: WindowsForms
 control: GroupBar

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header Customization Settings
+title: Header Customization Settings | WindowsForms | Syncfusion
 description: Header Customization Settings
 platform: WindowsForms
 control: GroupBar

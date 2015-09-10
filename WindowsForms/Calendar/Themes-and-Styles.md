@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes and Styles
+title: Themes and Styles | WindowsForms | Syncfusion
 description: themes and styles
 platform: WindowsForms
 control: Calendar

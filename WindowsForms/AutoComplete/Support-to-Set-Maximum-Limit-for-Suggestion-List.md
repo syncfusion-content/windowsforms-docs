@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Support to Set Maximum Limit for Suggestion List 
+title: Support to Set Maximum Limit for Suggestion List  | WindowsForms | Syncfusion
 description: Support to Set Maximum Limit for Suggestion List 
 platform: WindowsForms
 control: AutoComplete

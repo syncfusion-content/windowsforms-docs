@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WeightValuePath
+title: WeightValuePath | WindowsForms | Syncfusion
 description: weightvaluepath
 platform: WindowsForms
 control: TreeMap 

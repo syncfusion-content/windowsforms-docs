@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-scroll-through-the-TreeViewAdv-control-using-up-down-arrow-keys-while-in-edit-mode
+title: How-to-scroll-through-the-TreeViewAdv-control-using-up-down-arrow-keys-while-in-edit-mode | WindowsForms | Syncfusion
 description: how to scroll through the treeviewadv control using up / down arrow keys while in edit mode
 platform: WindowsForms
 control: TreeView 

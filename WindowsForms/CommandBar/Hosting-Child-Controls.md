@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hosting-Child-Controls
+title: Hosting-Child-Controls | WindowsForms | Syncfusion
 description: hosting child controls
 platform: WindowsForms
 control: CommandBars

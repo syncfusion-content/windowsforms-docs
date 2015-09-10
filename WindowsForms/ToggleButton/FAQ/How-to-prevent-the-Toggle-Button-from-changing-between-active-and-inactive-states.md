@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-prevent-the-Toggle-Button-from-changing-between-active-and-inactive-states
+title: How-to-prevent-the-Toggle-Button-from-changing-between-active-and-inactive-states | WindowsForms | Syncfusion
 description: how to prevent the toggle button from changing between active and inactive states?
 platform: WindowsForms
 control: HubTile

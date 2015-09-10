@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizable-number-of-items-on-Popup
+title: Customizable-number-of-items-on-Popup | WindowsForms | Syncfusion
 description: customizable number of items on popup
 platform: WindowsForms
 control: Navigation View 

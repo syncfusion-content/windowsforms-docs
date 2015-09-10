@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Use-Combo-Box-in-a-Column
+title: How-to-Use-Combo-Box-in-a-Column | WindowsForms | Syncfusion
 description: how to use combo box in a column
 platform: WindowsForms
 control: DataBoundGrid

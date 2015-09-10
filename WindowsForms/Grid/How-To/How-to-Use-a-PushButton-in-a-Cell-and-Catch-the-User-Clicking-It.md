@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Use-a-PushButton-in-a-Cell-and-Catch-the-Us
+title: How-to-Use-a-PushButton-in-a-Cell-and-Catch-the-Us | WindowsForms | Syncfusion
 description: how to use a pushbutton in a cell and catch the user clicking it
 platform: WindowsForms
 control: Grid

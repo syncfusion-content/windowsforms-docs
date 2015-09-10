@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-perform-Custom-Sorting-in-GridGroupingContr
+title: How-to-perform-Custom-Sorting-in-GridGroupingContr | WindowsForms | Syncfusion
 description: how to perform custom sorting in gridgroupingcontrol
 platform: WindowsForms
 control: GridGrouping

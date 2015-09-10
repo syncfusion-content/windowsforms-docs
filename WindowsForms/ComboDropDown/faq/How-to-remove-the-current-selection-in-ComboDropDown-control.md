@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-remove-the-current-selection-in-ComboDropDown-control
+title: How-to-remove-the-current-selection-in-ComboDropDown-control | WindowsForms | Syncfusion
 description: how to remove the current selection in combodropdown control
 platform: WindowsForms
 control: Editors Package

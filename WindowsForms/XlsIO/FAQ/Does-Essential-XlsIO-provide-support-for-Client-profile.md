@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does-Essential-XlsIO-provide-support-for-Client-profile
+title: Does-Essential-XlsIO-provide-support-for-Client-profile | WindowsForms | Syncfusion
 description: does essential xlsio provide support for client profile
 platform: WindowsForms
 control: XlsIO	

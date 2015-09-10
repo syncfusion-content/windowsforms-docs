@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-get-or-set-a-SuperToolTip-programmatically
+title: How-to-get-or-set-a-SuperToolTip-programmatically | WindowsForms | Syncfusion
 description: how to get or set a supertooltip programmatically?
 platform: WindowsForms
 control: Frequently Asked Questions

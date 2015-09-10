@@ -1,6 +1,6 @@
 ---
 layout: post
-title: StatusBarAdv-Overview
+title: StatusBarAdv-Overview | WindowsForms | Syncfusion
 description: statusbaradv overview
 platform: WindowsForms
 control: StatusBarAdv

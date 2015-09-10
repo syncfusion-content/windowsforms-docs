@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Make-Particular-Cells-ReadOnly
+title: How-to-Make-Particular-Cells-ReadOnly | WindowsForms | Syncfusion
 description: how to make particular cells readonly
 platform: WindowsForms
 control: DataBoundGrid

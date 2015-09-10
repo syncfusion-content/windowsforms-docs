@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enables-Migration-of-Net-Grid-to-Esssential-Grid
+title: Enables-Migration-of-Net-Grid-to-Esssential-Grid | WindowsForms | Syncfusion
 description: enables migration of .net grid to esssential grid
 platform: WindowsForms
 control: DataBoundGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Background Settings
+title: Background Settings | WindowsForms | Syncfusion
 description: Background Settings
 platform: WindowsForms
 control: Editors Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radial-Gauge
+title: Radial-Gauge | WindowsForms | Syncfusion
 description: radial gauge
 platform: WindowsForms
 control: Gauge

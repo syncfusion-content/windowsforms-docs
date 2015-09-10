@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tab-Alignment
+title: Tab-Alignment | WindowsForms | Syncfusion
 description: tab alignment
 platform: WindowsForms
 control: TabbedMDIPackage 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-UndoRedo
+title: Using-UndoRedo | WindowsForms | Syncfusion
 description: using undo/redo
 platform: WindowsForms
 control: Grid

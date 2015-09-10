@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to remove default selection from autocomplete drop-down
+title: How to remove default selection from autocomplete drop-down | WindowsForms | Syncfusion
 description: How to remove default selection from autocomplete drop-down
 platform: WindowsForms
 control: Tools

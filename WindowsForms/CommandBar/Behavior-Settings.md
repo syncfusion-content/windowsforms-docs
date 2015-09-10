@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior-Settings | WindowsForms | Syncfusion
 description: behavior settings
 platform: WindowsForms
 control: CommandBars

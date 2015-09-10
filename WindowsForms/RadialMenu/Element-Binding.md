@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Element-Binding
+title: Element-Binding | WindowsForms | Syncfusion
 description: element binding
 platform: WindowsForms
 control: RadialMenu 

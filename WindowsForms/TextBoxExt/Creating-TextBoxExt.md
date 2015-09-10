@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-TextBoxExt
+title: Creating-TextBoxExt | WindowsForms | Syncfusion
 description: creating textboxext
 platform: WindowsForms
 control: EditorsPackage

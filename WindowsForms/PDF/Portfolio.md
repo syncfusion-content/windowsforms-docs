@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Portfolio
+title: Portfolio | WindowsForms | Syncfusion
 description: portfolio
 platform: WindowsForms
 control: PDF

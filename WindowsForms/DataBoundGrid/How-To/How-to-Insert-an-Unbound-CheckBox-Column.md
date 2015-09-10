@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Insert-an-Unbound-CheckBox-Column
+title: How-to-Insert-an-Unbound-CheckBox-Column | WindowsForms | Syncfusion
 description: how to insert an unbound checkbox column
 platform: WindowsForms
 control: DataBoundGrid

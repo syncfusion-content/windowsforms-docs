@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility-Information
+title: Accessibility-Information | WindowsForms | Syncfusion
 description: accessibility information
 platform: WindowsForms
 control: Grid

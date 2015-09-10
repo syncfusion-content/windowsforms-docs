@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-records-are-collaps
+title: What-are-the-events-fired-when-records-are-collaps | WindowsForms | Syncfusion
 description: what are the events fired when records are collapsing or collapsed
 platform: WindowsForms
 control: GridGrouping

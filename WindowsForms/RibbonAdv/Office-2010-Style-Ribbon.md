@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Office-2010-Style-Ribbon
+title: Office-2010-Style-Ribbon | WindowsForms | Syncfusion
 description: office 2010 style ribbon
 platform: WindowsForms
 control: RibbonControlAdv 

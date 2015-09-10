@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculator Settings
+title: Calculator Settings | WindowsForms | Syncfusion
 description: calculator settings
 platform: WindowsForms
 control: CurrencyEdit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zoom-Support
+title: Zoom-Support | WindowsForms | Syncfusion
 description: zoom support
 platform: WindowsForms
 control: Grid

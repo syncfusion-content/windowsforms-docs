@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessing-Values-in-the-Grid-Data-Bound-Grid-and-in-the-Data-Source
+title: Accessing-Values-in-the-Grid-Data-Bound-Grid-and-in-the-Data-Source | WindowsForms | Syncfusion
 description: accessing values in the grid data bound grid and in the data source
 platform: WindowsForms
 control: DataBoundGrid

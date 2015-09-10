@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elaborate-Structure-of-the-Control
+title: Elaborate-Structure-of-the-Control | WindowsForms | Syncfusion
 description: elaborate structure of the control
 platform: WindowsForms
 control: Grid

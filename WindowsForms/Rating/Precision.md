@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Precision
+title: Precision | WindowsForms | Syncfusion
 description: precision
 platform: WindowsForms
 control: Rating  

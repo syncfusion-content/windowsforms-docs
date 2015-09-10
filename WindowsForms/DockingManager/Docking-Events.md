@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docking-Events
+title: Docking-Events | WindowsForms | Syncfusion
 description: docking events
 platform: WindowsForms
 control: DockingManager 

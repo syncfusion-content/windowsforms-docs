@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Fields
+title: Working-with-Fields | WindowsForms | Syncfusion
 description: working with fields
 platform: WindowsForms
 control: DocIO

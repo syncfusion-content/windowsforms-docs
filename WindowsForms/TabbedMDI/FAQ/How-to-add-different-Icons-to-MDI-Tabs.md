@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-different-Icons-to-MDI-Tabs
+title: How-to-add-different-Icons-to-MDI-Tabs | WindowsForms | Syncfusion
 description: how to add different icons to mdi tabs
 platform: WindowsForms
 control: TabbedMDIPackage

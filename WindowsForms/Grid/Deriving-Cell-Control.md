@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deriving-Cell-Control
+title: Deriving-Cell-Control | WindowsForms | Syncfusion
 description: deriving cell control
 platform: WindowsForms
 control: Grid

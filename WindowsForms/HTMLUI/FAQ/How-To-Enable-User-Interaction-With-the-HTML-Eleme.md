@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Enable-User-Interaction-With-the-HTML-Eleme
+title: How-To-Enable-User-Interaction-With-the-HTML-Eleme | WindowsForms | Syncfusion
 description: how to enable user interaction with the html elements
 platform: WindowsForms
 control: HTML UI

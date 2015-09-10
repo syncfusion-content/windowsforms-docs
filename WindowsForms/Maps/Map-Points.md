@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map-Points
+title: Map-Points | WindowsForms | Syncfusion
 description: map points
 platform: WindowsForms
 control: Maps

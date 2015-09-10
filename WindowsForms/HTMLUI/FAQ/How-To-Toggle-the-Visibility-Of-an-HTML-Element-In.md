@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Toggle-the-Visibility-Of-an-HTML-Element-In
+title: How-To-Toggle-the-Visibility-Of-an-HTML-Element-In | WindowsForms | Syncfusion
 description: how to toggle the visibility of an html element in the htmlui control at run-time?
 platform: WindowsForms
 control: HTML UI

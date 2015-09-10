@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Element-Format
+title: Element-Format | WindowsForms | Syncfusion
 description:  element format
 platform: WindowsForms
 control: HTML UI

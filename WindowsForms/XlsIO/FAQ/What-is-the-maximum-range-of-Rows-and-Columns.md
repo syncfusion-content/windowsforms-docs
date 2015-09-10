@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-is-the-maximum-range-of-Rows-and-Columns
+title: What-is-the-maximum-range-of-Rows-and-Columns | WindowsForms | Syncfusion
 description: what is the maximum range of rows and columns
 platform: WindowsForms
 control: XlsIO	

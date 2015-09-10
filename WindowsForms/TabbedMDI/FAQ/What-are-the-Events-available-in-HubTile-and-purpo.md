@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-Events-available-in-HubTile-and-purpo
+title: What-are-the-Events-available-in-HubTile-and-purpo | WindowsForms | Syncfusion
 description: what are the events available in hubtile and purpose of the events?
 platform: wpf
 control: TabbedMDIPackage

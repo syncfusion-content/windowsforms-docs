@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Data
+title: Chart-Data | WindowsForms | Syncfusion
 description: chart data
 platform: WindowsForms
 control: Chart

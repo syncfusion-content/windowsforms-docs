@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to apply Gradient Rendering for the GroupBar
+title: How to apply Gradient Rendering for the GroupBar | WindowsForms | Syncfusion
 description: Frequently asked questions
 platform: WindowsForms
 control: GroupBar

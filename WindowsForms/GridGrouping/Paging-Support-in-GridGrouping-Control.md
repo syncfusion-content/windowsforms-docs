@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging-Support-in-GridGrouping-Control
+title: Paging-Support-in-GridGrouping-Control | WindowsForms | Syncfusion
 description: paging support in gridgrouping control
 platform: WindowsForms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Settings
+title: Image Settings | WindowsForms | Syncfusion
 description: Image Settings
 platform: WindowsForms
 control: Tools

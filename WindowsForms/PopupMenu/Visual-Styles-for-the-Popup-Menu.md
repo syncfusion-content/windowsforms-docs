@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual-Styles-for-the-Popup-Menu
+title: Visual-Styles-for-the-Popup-Menu | WindowsForms | Syncfusion
 description: visual styles for the popup menu
 platform: WindowsForms
 control: Popup-Menu

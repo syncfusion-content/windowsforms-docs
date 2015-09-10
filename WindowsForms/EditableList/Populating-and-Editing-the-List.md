@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating-and-Editing-the-List
+title: Populating-and-Editing-the-List | WindowsForms | Syncfusion
 description: populating and editing the list
 platform: WindowsForms
 control: EditorsPackage

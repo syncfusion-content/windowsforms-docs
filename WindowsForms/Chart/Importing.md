@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Importing
+title: Importing | WindowsForms | Syncfusion
 description: importing
 platform: WindowsForms
 control: Chart

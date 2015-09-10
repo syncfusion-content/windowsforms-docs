@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-or-Range-Formatting
+title: Cell-or-Range-Formatting | WindowsForms | Syncfusion
 description: cell or range formatting
 platform: ejmvc
 control: XlsIO	

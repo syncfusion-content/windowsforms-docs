@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes-or-Shapes
+title: Nodes-or-Shapes | WindowsForms | Syncfusion
 description: nodes or shapes
 platform: WindowsForms
 control: Diagram

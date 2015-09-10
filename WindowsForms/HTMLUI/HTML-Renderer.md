@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML-Renderer
+title: HTML-Renderer | WindowsForms | Syncfusion
 description:  html renderer
 platform: WindowsForms
 control: HTML UI

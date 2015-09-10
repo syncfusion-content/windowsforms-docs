@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotTableFieldList
+title: PivotTableFieldList | WindowsForms | Syncfusion
 description: pivottablefieldlist
 platform: WindowsForms
 control: PivotChart

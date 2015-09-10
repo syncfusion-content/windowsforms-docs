@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-select-all-the-contents-in-a-cell-after-double-clicking-the-contents
+title: How-to-select-all-the-contents-in-a-cell-after-double-clicking-the-contents | WindowsForms | Syncfusion
 description: how to select all the contents in a cell after double clicking the contents
 platform: WindowsForms
 control: DataBoundGrid

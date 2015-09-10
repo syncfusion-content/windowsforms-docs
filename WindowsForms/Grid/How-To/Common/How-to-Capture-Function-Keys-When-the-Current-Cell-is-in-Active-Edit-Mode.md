@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Capture-Function-Keys-When-the-Current-Cell-is-in-active-edit-mode
+title: How-to-Capture-Function-Keys-When-the-Current-Cell-is-in-active-edit-mode | WindowsForms | Syncfusion
 description: how to capture function keys when the current cell is in active edit mode
 platform: WindowsForms
 control: Grid

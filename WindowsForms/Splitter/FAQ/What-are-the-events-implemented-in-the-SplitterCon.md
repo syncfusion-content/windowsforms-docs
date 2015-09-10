@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-events-implemented-in-the-SplitterCon
+title: What-are-the-events-implemented-in-the-SplitterCon | WindowsForms | Syncfusion
 description: what are the events implemented in the splittercontrol
 platform: WindowsForms
 control: Splitter

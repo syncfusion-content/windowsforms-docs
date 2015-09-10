@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF-Compliance
+title: PDF-Compliance | WindowsForms | Syncfusion
 description: pdf compliance
 platform: WindowsForms
 control: PDF

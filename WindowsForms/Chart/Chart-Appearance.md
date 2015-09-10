@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Appearance
+title: Chart-Appearance | WindowsForms | Syncfusion
 description: chart appearance
 platform: WindowsForms
 control: Chart

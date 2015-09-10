@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MaskType
+title: MaskType | WindowsForms | Syncfusion
 description: masktype
 platform: WindowsForms
 control: SfMaskedEdit

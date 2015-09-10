@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing-and-Updating-Value-and-Total-Cells-in-the-PivotGrid-Control
+title: Editing-and-Updating-Value-and-Total-Cells-in-the-PivotGrid-Control | WindowsForms | Syncfusion
 description: editing and updating value and total cells in the pivotgrid control
 platform: WindowsForms
 control: PivotGrid

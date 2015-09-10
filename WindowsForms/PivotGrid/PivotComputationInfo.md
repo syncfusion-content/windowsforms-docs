@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotComputationInfo
+title: PivotComputationInfo | WindowsForms | Syncfusion
 description: pivotcomputationinfo
 platform: WindowsForms
 control: PivotGrid

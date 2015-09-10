@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing sections of Calendar
+title: Customizing sections of Calendar | WindowsForms | Syncfusion
 description: customizing sections of calendar
 platform: WindowsForms
 control: CalendarDateTime 

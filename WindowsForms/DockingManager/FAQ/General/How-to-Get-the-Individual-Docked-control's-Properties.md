@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Get the Individual Docked control's Properties
+title: How to Get the Individual Docked control's Properties | WindowsForms | Syncfusion
 description: How to Get the Individual Docked control's Properties
 platform: WindowsForms
 control: DockingManager

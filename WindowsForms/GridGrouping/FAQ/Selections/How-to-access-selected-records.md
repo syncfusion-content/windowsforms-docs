@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-access-selected-records
+title: How-to-access-selected-records | WindowsForms | Syncfusion
 description: how to access selected records
 platform: WindowsForms
 control: GridGrouping

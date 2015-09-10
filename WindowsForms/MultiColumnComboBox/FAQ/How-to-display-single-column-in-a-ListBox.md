@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-display-single-column-in-a-ListBox
+title: How-to-display-single-column-in-a-ListBox | WindowsForms | Syncfusion
 description: how to display single column in a listbox
 platform: WindowsForms
 control: Editors Package

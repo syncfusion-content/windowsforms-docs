@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ButtonAdv Appearance
+title: ButtonAdv Appearance | WindowsForms | Syncfusion
 description: ButtonAdv Appearance
 platform: WindowsForms
 control: Editors Package

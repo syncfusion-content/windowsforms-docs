@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating ColorUIControl
+title: Creating ColorUIControl | WindowsForms | Syncfusion
 description: creating coloruicontrol
 platform: WindowsForms
 control: ColorUI 

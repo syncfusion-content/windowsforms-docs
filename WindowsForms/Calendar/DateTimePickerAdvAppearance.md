@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTimePickerAdv Appearance
+title: DateTimePickerAdv Appearance | WindowsForms | Syncfusion
 description: datetimepickeradv appearance
 platform: WindowsForms
 control: Calendar

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi Columns
+title: Multi Columns | WindowsForms | Syncfusion
 description: Multi Columns
 platform: WindowsForms
 control: ComboBoxAutoComplete

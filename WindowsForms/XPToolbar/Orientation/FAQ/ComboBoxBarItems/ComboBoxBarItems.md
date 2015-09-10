@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ComboBoxBarItems
+title: ComboBoxBarItems | WindowsForms | Syncfusion
 description: comboboxbaritems
 platform: WindowsForms
 control: Frequently Asked Questions

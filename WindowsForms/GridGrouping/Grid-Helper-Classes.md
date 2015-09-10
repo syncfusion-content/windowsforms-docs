@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Helper-Classes
+title: Grid-Helper-Classes | WindowsForms | Syncfusion
 description: grid helper classes
 platform: WindowsForms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-appearance-of-ProgressBarAdv
+title: How-to-customize-the-appearance-of-ProgressBarAdv | WindowsForms | Syncfusion
 description: how to customize the appearance of progressbaradv
 platform: WindowsForms
 control: Notification Package 

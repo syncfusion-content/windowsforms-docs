@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Document-Settings
+title: Document-Settings | WindowsForms | Syncfusion
 description: document settings
 platform: WindowsForms
 control: PDF

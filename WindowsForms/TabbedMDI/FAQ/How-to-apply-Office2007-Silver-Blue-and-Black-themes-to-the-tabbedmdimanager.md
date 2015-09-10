@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-apply-Office2007-Silver-Blue-and-Black-themes-to-the-tabbedmdimanager
+title: How-to-apply-Office2007-Silver-Blue-and-Black-themes-to-the-tabbedmdimanager | WindowsForms | Syncfusion
 description: how to apply office2007 silver, blue, and black themes to the tabbedmdimanager
 platform: WindowsForms
 control: TabbedMDIPackage

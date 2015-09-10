@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Single-Row
+title: How-to-Change-the-Backcolor-of-a-Single-Row | WindowsForms | Syncfusion
 description: how to change the backcolor of a single row
 platform: WindowsForms
 control: Grid

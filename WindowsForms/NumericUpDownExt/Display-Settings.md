@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display-Settings
+title: Display-Settings | WindowsForms | Syncfusion
 description: display settings
 platform: WindowsForms
 control: EditorsPackage

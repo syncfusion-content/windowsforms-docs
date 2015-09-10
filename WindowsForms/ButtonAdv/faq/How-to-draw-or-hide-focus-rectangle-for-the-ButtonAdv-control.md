@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to draw or hide focus rectangle for the ButtonAdv control
+title: How to draw or hide focus rectangle for the ButtonAdv control | WindowsForms | Syncfusion
 description: How to draw or hide focus rectangle for the ButtonAdv control
 platform: WindowsForms
 control: Tools

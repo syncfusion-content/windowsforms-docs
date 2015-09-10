@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rotate Always
+title: Rotate Always | WindowsForms | Syncfusion
 description: Rotate Always
 platform: WindowsForms
 control: Carousel

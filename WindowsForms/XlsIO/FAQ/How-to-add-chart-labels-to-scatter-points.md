@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-chart-labels-to-scatter-points
+title: How-to-add-chart-labels-to-scatter-points | WindowsForms | Syncfusion
 description:  how to add chart labels to scatter points
 platform: WindowsForms
 control: XlsIO	

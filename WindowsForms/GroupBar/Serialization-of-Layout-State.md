@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization of Layout State 
+title: Serialization of Layout State  | WindowsForms | Syncfusion
 description: Serialization of Layout State 
 platform: WindowsForms
 control: GroupBar

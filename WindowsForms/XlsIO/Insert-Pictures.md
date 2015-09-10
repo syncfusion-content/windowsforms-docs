@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert-Pictures
+title: Insert-Pictures | WindowsForms | Syncfusion
 description: insert pictures 
 platform: WindowsForms
 control: XlsIO	

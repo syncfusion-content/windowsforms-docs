@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-Toggle-Button-styling
+title: How-to-customize-Toggle-Button-styling | WindowsForms | Syncfusion
 description: how to customize toggle button styling?
 platform: WindowsForms
 control: HubTile

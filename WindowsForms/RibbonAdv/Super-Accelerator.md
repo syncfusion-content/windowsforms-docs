@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Super-Accelerator
+title: Super-Accelerator | WindowsForms | Syncfusion
 description: super accelerator
 platform: WindowsForms
 control: RibbonControlAdv

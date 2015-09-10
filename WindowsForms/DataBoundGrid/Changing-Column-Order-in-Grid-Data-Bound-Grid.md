@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-Column-Order-in-Grid-Data-Bound-Grid
+title: Changing-Column-Order-in-Grid-Data-Bound-Grid | WindowsForms | Syncfusion
 description: changing column order in grid data bound grid
 platform: WindowsForms
 control: DataBoundGrid

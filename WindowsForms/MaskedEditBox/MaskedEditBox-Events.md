@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MaskedEditBox Events
+title: MaskedEditBox Events | WindowsForms | Syncfusion
 description:  MaskedEditBox Events
 platform: WindowsForms
 control: MaskedEditBox

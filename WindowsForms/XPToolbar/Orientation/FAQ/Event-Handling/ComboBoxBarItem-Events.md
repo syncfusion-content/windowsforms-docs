@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ComboBoxBarItem-Events
+title: ComboBoxBarItem-Events | WindowsForms | Syncfusion
 description: comboboxbaritem events
 platform: WindowsForms
 control: Orientation

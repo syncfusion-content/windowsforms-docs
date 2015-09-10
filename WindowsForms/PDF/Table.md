@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table
+title: Table | WindowsForms | Syncfusion
 description: table
 platform: WindowsForms
 control: Control Name undefined

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GridBagLayout
+title: GridBagLayout | WindowsForms | Syncfusion
 description: gridbaglayout
 platform: WindowsForms
 control: Layout Managers Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-List-control
+title: Customizing-List-control | WindowsForms | Syncfusion
 description: customizing list control
 platform: WindowsForms
 control: GridList

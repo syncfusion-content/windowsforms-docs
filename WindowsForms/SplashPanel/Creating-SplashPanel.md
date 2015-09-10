@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-SplashPanel
+title: Creating-SplashPanel | WindowsForms | Syncfusion
 description: creating splashpanel
 platform: WindowsForms
 control: SplashPanel

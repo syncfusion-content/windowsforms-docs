@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frequently-Asked-Questions
+title: Frequently-Asked-Questions | WindowsForms | Syncfusion
 description: frequently asked questions
 platform: WindowsForms
 control: Notification Package 

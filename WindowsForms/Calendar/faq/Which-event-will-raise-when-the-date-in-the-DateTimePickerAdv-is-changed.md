@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Which event will raise when the date in the DateTimePickerAdv is changed?
+title: Which event will raise when the date in the DateTimePickerAdv is changed? | WindowsForms | Syncfusion
 description: which event will raise when the date in the datetimepickeradv is changed?
 platform: WindowsForms
 control: Calendar

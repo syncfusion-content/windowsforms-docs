@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Field
+title: Text-Field | WindowsForms | Syncfusion
 description: text field
 platform: WindowsForms
 control: CurrencyTextbox

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a Simple Layout
+title: Creating a Simple Layout | WindowsForms | Syncfusion
 description: creating a simple layout
 platform: WindowsForms
 control: Layout Managers Package

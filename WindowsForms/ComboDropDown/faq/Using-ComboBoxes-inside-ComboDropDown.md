@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-ComboBoxes-inside-ComboDropDown
+title: Using-ComboBoxes-inside-ComboDropDown | WindowsForms | Syncfusion
 description: using comboboxes inside combodropdown
 platform: WindowsForms
 control: Editors Package

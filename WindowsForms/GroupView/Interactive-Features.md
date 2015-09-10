@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive Features
+title: Interactive Features | WindowsForms | Syncfusion
 description: Concepts and Features
 platform: WindowsForms
 control: GroupView

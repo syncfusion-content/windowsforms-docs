@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Culture Settings
+title: Culture Settings | WindowsForms | Syncfusion
 description: culture settings
 platform: WindowsForms
 control: Tools

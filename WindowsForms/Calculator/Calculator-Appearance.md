@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculator-Appearance
+title: Calculator-Appearance | WindowsForms | Syncfusion
 description: calculator appearance
 platform: WindowsForms
 control: Calculator

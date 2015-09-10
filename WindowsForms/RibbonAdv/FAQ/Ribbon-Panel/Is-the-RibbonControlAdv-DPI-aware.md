@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Is-the-RibbonControlAdv-DPI-aware
+title: Is-the-RibbonControlAdv-DPI-aware | WindowsForms | Syncfusion
 description: is the ribboncontroladv dpi aware?
 platform: WindowsForms
 control: Frequently Asked Questions

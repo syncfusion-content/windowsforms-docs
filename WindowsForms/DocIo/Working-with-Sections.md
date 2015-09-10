@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Sections
+title: Working-with-Sections | WindowsForms | Syncfusion
 description: working with sections
 platform:  WindowsForms
 control: DocIO

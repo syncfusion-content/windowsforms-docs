@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Designer
+title: Grid-Designer | WindowsForms | Syncfusion
 description: grid designer
 platform: WindowsForms
 control: GridGrouping

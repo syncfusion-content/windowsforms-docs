@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | WindowsForms | Syncfusion
 description: Sorting
 platform: WindowsForms
 control: TreeView 

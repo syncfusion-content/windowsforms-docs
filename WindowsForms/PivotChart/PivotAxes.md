@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotAxes
+title: PivotAxes | WindowsForms | Syncfusion
 description: pivotaxes
 platform: WindowsForms
 control: PivotChart

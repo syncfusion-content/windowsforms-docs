@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Security
+title: Security | WindowsForms | Syncfusion
 description: security
 platform: WindowsForms
 control: PDF

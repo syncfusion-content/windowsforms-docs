@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-export-user-defined-function-from-Grid-to-Excel-workbook
+title: How-to-export-user-defined-function-from-Grid-to-Excel-workbook | WindowsForms | Syncfusion
 description: how to export user-defined function from grid to excel workbook
 platform: WindowsForms
 control: Grid

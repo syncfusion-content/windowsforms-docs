@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display-Mode-Configuration
+title: Display-Mode-Configuration | WindowsForms | Syncfusion
 description: display mode configuration
 platform: WindowsForms
 control: ToggleButton 

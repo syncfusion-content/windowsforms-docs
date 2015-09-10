@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Banner-Settings
+title: Banner-Settings | WindowsForms | Syncfusion
 description: banner settings
 platform: WindowsForms
 control: Wizard

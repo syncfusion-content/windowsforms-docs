@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-unfreeze-the-rows-and-columns-in-XlsIO
+title: How-to-unfreeze-the-rows-and-columns-in-XlsIO | WindowsForms | Syncfusion
 description:  How to unfreeze the rows and columns in XlsIO
 platform: WindowsForms
 control: XlsIO	

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-prevent-sorting-if-the-column-has-the-same-
+title: How-to-prevent-sorting-if-the-column-has-the-same- | WindowsForms | Syncfusion
 description: how to prevent sorting if the column has the same value in each cell
 platform: WindowsForms
 control: GridGrouping

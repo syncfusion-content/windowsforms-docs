@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Filter a Collection
+title: How to Filter a Collection | WindowsForms | Syncfusion
 description: How to Filter a Collection
 platform: WindowsForms
 control: Grouping

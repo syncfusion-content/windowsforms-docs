@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web-Control-Performance
+title: Web-Control-Performance | WindowsForms | Syncfusion
 description: web control performance
 platform: WindowsForms
 control: Calculate

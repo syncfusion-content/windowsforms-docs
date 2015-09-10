@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title-Settings
+title: Title-Settings | WindowsForms | Syncfusion
 description: title settings 
 platform: WindowsForms
 control: RibbonControlAdv 

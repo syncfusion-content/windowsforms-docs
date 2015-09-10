@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To
+title: How-To | WindowsForms | Syncfusion
 description: how to
 platform: WindowsForms
 control: DataBoundGrid

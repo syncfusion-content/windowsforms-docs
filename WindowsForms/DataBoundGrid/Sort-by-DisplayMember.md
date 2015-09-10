@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort-by-DisplayMember
+title: Sort-by-DisplayMember | WindowsForms | Syncfusion
 description: sort by displaymember
 platform: WindowsForms
 control: DataBoundGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GroupBar Items Settings
+title: GroupBar Items Settings | WindowsForms | Syncfusion
 description: GroupBar Items Settings
 platform: WindowsForms
 control: GroupBar

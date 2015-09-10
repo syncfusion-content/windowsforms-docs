@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connectors-or-Links
+title: Connectors-or-Links | WindowsForms | Syncfusion
 description: connectors or links
 platform: WindowsForms
 control: Diagram

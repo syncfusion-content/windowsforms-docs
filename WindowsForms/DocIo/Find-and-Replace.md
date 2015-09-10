@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Find-and-Replace
+title: Find-and-Replace | WindowsForms | Syncfusion
 description: find and replace
 platform: WindowsForms
 control: DocIO

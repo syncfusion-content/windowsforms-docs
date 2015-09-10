@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Capture-Mouse-and-Key-Events-When-the-Text-box-cell-is-in-an-active-state
+title: How-to-Capture-Mouse-and-Key-Events-When-the-Text-box-cell-is-in-an-active-state | WindowsForms | Syncfusion
 description: how to capture mouse and key events when the text box cell is in an active state
 platform: WindowsForms
 control: Grid

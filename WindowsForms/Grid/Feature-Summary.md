@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature-Summary
+title: Feature-Summary | WindowsForms | Syncfusion
 description: feature summary
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-format-summary-rows
+title: How-to-format-summary-rows | WindowsForms | Syncfusion
 description: how to format summary rows
 platform: WindowsForms
 control: GridGrouping

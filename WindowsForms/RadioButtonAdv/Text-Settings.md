@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Settings
+title: Text-Settings | WindowsForms | Syncfusion
 description: text settins
 platform: WindowsForms
 control: EditorsPackage

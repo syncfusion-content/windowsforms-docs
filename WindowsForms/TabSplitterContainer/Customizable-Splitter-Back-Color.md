@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizable-Splitter-Back-Color
+title: Customizable-Splitter-Back-Color | WindowsForms | Syncfusion
 description: customizable splitter back color 
 platform: WindowsForms
 control: TabSplitterContainer 

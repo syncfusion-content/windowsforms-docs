@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Hold-the-Row-Selection-After-the-Cell-is-De
+title: How-to-Hold-the-Row-Selection-After-the-Cell-is-De | WindowsForms | Syncfusion
 description: how to hold the row selection after the cell is deactivated
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What are the Events available in HubTile and purpose of the Events
+title: What are the Events available in HubTile and purpose of the Events | WindowsForms | Syncfusion
 description: What are the Events available in HubTile and purpose of the Events
 platform: WindowsForms
 control: HubTile

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OCR
+title: OCR | WindowsForms | Syncfusion
 description: ocr
 platform: WindowsForms
 control: PDF

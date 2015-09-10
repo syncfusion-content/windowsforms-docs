@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | WindowsForms | Syncfusion
 description: sorting
 platform: WindowsForms
 control: PivotGrid

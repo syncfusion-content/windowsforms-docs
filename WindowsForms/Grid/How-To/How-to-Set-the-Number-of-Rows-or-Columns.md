@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Number-of-Rows-or-Columns
+title: How-to-Set-the-Number-of-Rows-or-Columns | WindowsForms | Syncfusion
 description: how to set the number of rows or columns
 platform: WindowsForms
 control: Grid

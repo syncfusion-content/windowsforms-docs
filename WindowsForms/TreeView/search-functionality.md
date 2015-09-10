@@ -1,6 +1,6 @@
 ---
 layout: post
-title: search-functionality
+title: search-functionality | WindowsForms | Syncfusion
 description: search functionality
 platform: WindowsForms
 control: TreeView 

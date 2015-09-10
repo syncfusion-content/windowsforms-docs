@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ShowPromptOnFocus
+title: ShowPromptOnFocus | WindowsForms | Syncfusion
 description: showpromptonfocus
 platform: WindowsForms
 control: SfMaskedEdit

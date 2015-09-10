@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PercentTextBox Events
+title: PercentTextBox Events | WindowsForms | Syncfusion
 description: PercentTextBox Events
 platform: WindowsForms
 control: Editors Package

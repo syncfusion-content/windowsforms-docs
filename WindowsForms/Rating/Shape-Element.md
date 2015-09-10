@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shape-Element
+title: Shape-Element | WindowsForms | Syncfusion
 description: shape element
 platform: WindowsForms
 control: Rating  

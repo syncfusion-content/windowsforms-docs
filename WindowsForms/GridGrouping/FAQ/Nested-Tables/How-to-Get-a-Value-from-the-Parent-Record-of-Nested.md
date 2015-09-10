@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Get-a-Value-from-the-Parent-Record-of-Neste
+title: How-to-Get-a-Value-from-the-Parent-Record-of-Neste | WindowsForms | Syncfusion
 description: how to get a value from the parent record of nested table when the dropdown list is clicked
 platform: WindowsForms
 control: GridGrouping

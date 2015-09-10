@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Types
+title: Chart-Types | WindowsForms | Syncfusion
 description: chart types
 platform: WindowsForms
 control: Chart

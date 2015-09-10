@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-define-discontinuous-ranges
+title: How-to-define-discontinuous-ranges | WindowsForms | Syncfusion
 description:  How to define discontinuous ranges
 platform: WindowsForms
 control: XlsIO	

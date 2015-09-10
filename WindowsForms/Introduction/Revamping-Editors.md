@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revamping Editors | Windows Forms | Syncfusion
+title: Revamping Editors | Windows Forms | Syncfusion | WindowsForms | Syncfusion
 description: Revamping Editors 
 platform: WindowsForms
 control: Editors Package

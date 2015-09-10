@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching
+title: Searching | WindowsForms | Syncfusion
 description:  searching
 platform: WindowsForms
 control: HTML UI

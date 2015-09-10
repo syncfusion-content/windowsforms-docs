@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-find-DisplayElement-Type
+title: How-to-find-DisplayElement-Type | WindowsForms | Syncfusion
 description: how to find displayelement type
 platform: WindowsForms
 control: GridGrouping

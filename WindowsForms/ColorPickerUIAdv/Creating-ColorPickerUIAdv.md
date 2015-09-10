@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating ColorPickerUI Adv
+title: Creating ColorPickerUI Adv | WindowsForms | Syncfusion
 description: creating colorpickerui adv
 platform: WindowsForms
 control: ColorPickerUIAdv

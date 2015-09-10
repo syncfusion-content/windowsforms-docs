@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metro-Theme-for-Essential-Grid-Controls
+title: Metro-Theme-for-Essential-Grid-Controls | WindowsForms | Syncfusion
 description: metro theme for essential grid controls
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Support
+title: Keyboard Support | WindowsForms | Syncfusion
 description: keyboard support
 platform: WindowsForms
 control: DomainUpdownExt 

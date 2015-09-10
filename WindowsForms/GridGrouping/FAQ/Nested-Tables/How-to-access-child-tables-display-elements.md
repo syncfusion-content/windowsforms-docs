@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-access-child-tables-display-elements
+title: How-to-access-child-tables-display-elements | WindowsForms | Syncfusion
 description: how to access child table's display elements
 platform: WindowsForms
 control: GridGrouping

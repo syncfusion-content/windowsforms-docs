@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabbedMDIManager-Events
+title: TabbedMDIManager-Events | WindowsForms | Syncfusion
 description: tabbedmdimanager events
 platform: WindowsForms
 control: TabbedMDIPackage 

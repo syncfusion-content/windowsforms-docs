@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hiding-the-Scrollbars
+title: Hiding-the-Scrollbars | WindowsForms | Syncfusion
 description: hiding the scrollbars
 platform: WindowsForms
 control: Splitter  

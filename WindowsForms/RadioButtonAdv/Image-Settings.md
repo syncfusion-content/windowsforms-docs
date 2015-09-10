@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image-Settings
+title: Image-Settings | WindowsForms | Syncfusion
 description: image settings
 platform: WindowsForms
 control: EditorsPackage

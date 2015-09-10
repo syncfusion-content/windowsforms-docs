@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to access the group from the Record
+title: How to access the group from the Record | WindowsForms | Syncfusion
 description: how to access the group from the record
 platform: WindowsForms
 control: GridGrouping

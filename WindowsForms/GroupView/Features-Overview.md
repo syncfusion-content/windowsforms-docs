@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Features Overview
+title: Features Overview | WindowsForms | Syncfusion
 description: overview
 platform: WindowsForms
 control: GroupView

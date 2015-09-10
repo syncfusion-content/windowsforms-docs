@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-force-a-treeNodeAdv-to-stay-in-edit-mode-un
+title: How-to-force-a-treeNodeAdv-to-stay-in-edit-mode-un | WindowsForms | Syncfusion
 description: how to force a treenodeadv to stay in edit mode until user enters an unique name
 platform: WindowsForms
 control: TreeView 

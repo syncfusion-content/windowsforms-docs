@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Alignment
+title: Text-Alignment | WindowsForms | Syncfusion
 description: text alignment
 platform: WindowsForms
 control: TreeNavigator 

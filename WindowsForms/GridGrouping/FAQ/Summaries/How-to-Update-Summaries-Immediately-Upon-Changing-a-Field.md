@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Update-Summaries-Immediately-Upon-Changing-
+title: How-to-Update-Summaries-Immediately-Upon-Changing- | WindowsForms | Syncfusion
 description: how to update summaries immediately upon changing a field
 platform: WindowsForms
 control: GridGrouping

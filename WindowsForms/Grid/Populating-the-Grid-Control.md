@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating-the-Grid-Control
+title: Populating-the-Grid-Control | WindowsForms | Syncfusion
 description: populating the grid control
 platform: WindowsForms
 control: Grid

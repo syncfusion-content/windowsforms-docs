@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Restrict-Alphabetical-Characters-in-Numericupdown-cell
+title: How-to-Restrict-Alphabetical-Characters-in-Numericupdown-cell | WindowsForms | Syncfusion
 description: how to restrict alphabetical characters in numericupdown cell
 platform: WindowsForms
 control: Grid

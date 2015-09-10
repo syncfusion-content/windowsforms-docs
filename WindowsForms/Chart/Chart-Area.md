@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Area
+title: Chart-Area | WindowsForms | Syncfusion
 description: chart area
 platform: WindowsForms
 control: Chart

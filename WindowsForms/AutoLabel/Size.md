@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Size
+title: Size | WindowsForms | Syncfusion
 description: Size
 platform: WindowsForms
 control: AutoLabel

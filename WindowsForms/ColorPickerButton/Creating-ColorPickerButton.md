@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating ColorPickerButton
+title: Creating ColorPickerButton | WindowsForms | Syncfusion
 description: creating colorpickerbutton
 platform: WindowsForms
 control: ColorPickerButton

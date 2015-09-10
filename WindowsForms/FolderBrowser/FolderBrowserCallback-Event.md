@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FolderBrowserCallback Event
+title: FolderBrowserCallback Event | WindowsForms | Syncfusion
 description: folderbrowsercallback event
 platform: WindowsForms
 control: Tools

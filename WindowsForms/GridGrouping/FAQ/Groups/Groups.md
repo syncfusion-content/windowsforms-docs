@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Groups
+title: Groups | WindowsForms | Syncfusion
 description: groups
 platform: WindowsForms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Wizard
+title: Chart-Wizard | WindowsForms | Syncfusion
 description: chart wizard
 platform: WindowsForms
 control: Chart

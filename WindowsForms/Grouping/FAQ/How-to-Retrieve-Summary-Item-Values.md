@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Retrieve Summary Item Values
+title: How to Retrieve Summary Item Values | WindowsForms | Syncfusion
 description: How to Retrieve Summary Item Values
 platform: WindowsForms
 control: Grouping

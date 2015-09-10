@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Which event will raise when the month is changed using arrow button?
+title: Which event will raise when the month is changed using arrow button? | WindowsForms | Syncfusion
 description: Which event will raise when the month is changed using arrow button?
 platform: WindowsForms
 control: Calendar 

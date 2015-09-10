@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML-Layout
+title: HTML-Layout | WindowsForms | Syncfusion
 description: html layout
 platform: WindowsForms
 control: HTML UI

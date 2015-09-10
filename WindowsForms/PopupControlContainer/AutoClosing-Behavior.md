@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoClosing Behavior
+title: AutoClosing Behavior | WindowsForms | Syncfusion
 description: AutoClosing Behavior
 platform: WindowsForms
 control: Editors Package

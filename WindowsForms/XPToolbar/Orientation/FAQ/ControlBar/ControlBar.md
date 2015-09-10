@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ControlBar
+title: ControlBar | WindowsForms | Syncfusion
 description: controlbar
 platform: WindowsForms
 control: Frequently Asked Questions

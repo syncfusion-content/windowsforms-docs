@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-disable-the-resizing-of-rows-and-columns
+title: How-to-disable-the-resizing-of-rows-and-columns | WindowsForms | Syncfusion
 description: how to disable the resizing of rows and columns
 platform: WindowsForms
 control: GridGrouping

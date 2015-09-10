@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend
+title: Legend | WindowsForms | Syncfusion
 description: legend
 platform: WindowsForms
 control: Maps

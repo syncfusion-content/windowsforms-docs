@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TemplateElement
+title: TemplateElement | WindowsForms | Syncfusion
 description: templateelement
 platform: WindowsForms
 control: PDF

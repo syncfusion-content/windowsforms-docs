@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-and-Unsupported-Features
+title: Supported-and-Unsupported-Features | WindowsForms | Syncfusion
 description: supported and unsupported features
 platform: WindowsForms
 control: DocIO

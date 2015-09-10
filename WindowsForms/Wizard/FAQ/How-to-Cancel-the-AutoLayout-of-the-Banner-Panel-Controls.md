@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Cancel-the-AutoLayout-of-the-Banner-panel-controls
+title: How-to-Cancel-the-AutoLayout-of-the-Banner-panel-controls | WindowsForms | Syncfusion
 description: how to cancel the autolayout of the banner panel controls
 platform: WindowsForms
 control: Wizard

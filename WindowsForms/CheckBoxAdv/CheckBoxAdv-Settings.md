@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CheckBoxAdv-Settings
+title: CheckBoxAdv-Settings | WindowsForms | Syncfusion
 description: checkboxadv settings
 platform: WindowsForms
 control: EditorsPackage

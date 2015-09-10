@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to change the caption text
+title: How to change the caption text | WindowsForms | Syncfusion
 description: How to change the caption text
 platform: WindowsForms
 control: GridGrouping

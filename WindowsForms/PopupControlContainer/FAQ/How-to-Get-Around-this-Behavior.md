@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Get Around this Behavior
+title: How to Get Around this Behavior | WindowsForms | Syncfusion
 description: How to Get Around this Behavior
 platform: WindowsForms
 control: Editors Package

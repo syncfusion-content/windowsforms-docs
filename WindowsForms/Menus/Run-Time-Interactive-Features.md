@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Run Time Interactive Features
+title: Run Time Interactive Features | WindowsForms | Syncfusion
 description: run time interactive features
 platform: WindowsForms
 control: Menus Package 

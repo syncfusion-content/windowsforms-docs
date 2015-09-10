@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style Settings
+title: Style Settings | WindowsForms | Syncfusion
 description: style settings
 platform: WindowsForms
 control: Tools

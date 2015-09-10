@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Place-UserControl-in-a-Header-Cell
+title: How-to-Place-UserControl-in-a-Header-Cell | WindowsForms | Syncfusion
 description: how to place usercontrol in a header cell
 platform: WindowsForms
 control: GridGrouping

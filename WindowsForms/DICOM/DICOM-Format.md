@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DICOM-Format
+title: DICOM-Format | WindowsForms | Syncfusion
 description: dicom format
 platform: WindowsForms
 control: DICOM 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-prevent-the-RibbonPanel-of-the-RibbonContro
+title: How-to-prevent-the-RibbonPanel-of-the-RibbonContro | WindowsForms | Syncfusion
 description: how to prevent the ribbonpanel of the ribboncontroladv from collapsing?
 platform: WindowsForms
 control: Frequently Asked Questions

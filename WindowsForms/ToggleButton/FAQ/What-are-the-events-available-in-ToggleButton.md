@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-events-available-in-ToggleButton
+title: What-are-the-events-available-in-ToggleButton | WindowsForms | Syncfusion
 description: what are the events available in togglebutton
 platform: WindowsForms
 control: HubTile

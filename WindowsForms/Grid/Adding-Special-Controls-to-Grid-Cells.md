@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Special-Controls-to-Grid-Cells
+title: Adding-Special-Controls-to-Grid-Cells | WindowsForms | Syncfusion
 description: adding special controls to grid cells
 platform: WindowsForms
 control: Grid

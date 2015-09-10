@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-Architecture
+title: Styles-Architecture | WindowsForms | Syncfusion
 description: Concepts and Features
 platform: WindowsForms
 control: MultiColumnTreeView

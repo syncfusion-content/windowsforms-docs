@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event Handling
+title: Event Handling | WindowsForms | Syncfusion
 description: Event Handling 
 platform: WindowsForms
 control: Editors Package

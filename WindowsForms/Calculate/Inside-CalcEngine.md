@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inside-CalcEngine
+title: Inside-CalcEngine | WindowsForms | Syncfusion
 description: inside calcengine 
 platform: WindowsForms
 control: Calculate

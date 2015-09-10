@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Primitives
+title: Primitives | WindowsForms | Syncfusion
 description: primitives
 platform: WindowsForms
 control: EditorPackage 

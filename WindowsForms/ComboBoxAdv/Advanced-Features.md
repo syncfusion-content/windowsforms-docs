@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced-Features
+title: Advanced-Features | WindowsForms | Syncfusion
 description: advanced features
 platform: WindowsForms
 control: ComboBoxAdv

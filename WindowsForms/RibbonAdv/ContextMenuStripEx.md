@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ContextMenuStripEx
+title: ContextMenuStripEx | WindowsForms | Syncfusion
 description: contextmenustripex
 platform: WindowsForms
 control: RibbonControlAdv 

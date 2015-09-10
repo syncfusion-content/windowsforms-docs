@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-enable-double-click-on-the-formula-cell
+title: How-to-enable-double-click-on-the-formula-cell | WindowsForms | Syncfusion
 description: how to enable double-click on the formula cell
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MessageBoxAdv
+title: MessageBoxAdv | WindowsForms | Syncfusion
 description: messageboxadv
 platform: WindowsForms
 control: RibbonControlAdv

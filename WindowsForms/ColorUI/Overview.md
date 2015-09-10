@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | WindowsForms | Syncfusion
 description: Overview
 platform: WindowsForms
 control: ColorUI 

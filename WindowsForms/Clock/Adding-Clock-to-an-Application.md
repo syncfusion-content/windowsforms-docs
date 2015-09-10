@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Clock-to-an-Application
+title: Adding-Clock-to-an-Application | WindowsForms | Syncfusion
 description: adding clock to an application
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms

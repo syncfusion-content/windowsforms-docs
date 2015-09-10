@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling-and-Customization
+title: Styling-and-Customization | WindowsForms | Syncfusion
 description: styling and customization
 platform: WindowsForms
 control: RadialMenu 

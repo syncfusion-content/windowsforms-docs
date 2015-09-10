@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CheckBoxAdv-Events
+title: CheckBoxAdv-Events | WindowsForms | Syncfusion
 description: checkboxadv events
 platform: WindowsForms
 control: EditorsPackage

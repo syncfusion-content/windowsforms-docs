@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-Selection
+title: Cell-Selection | WindowsForms | Syncfusion
 description: cell selection
 platform: WindowsForms
 control: PivotGrid

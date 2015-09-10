@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DropDown Settings
+title: DropDown Settings | WindowsForms | Syncfusion
 description: DropDown Settings
 platform: WindowsForms
 control: Editors Package

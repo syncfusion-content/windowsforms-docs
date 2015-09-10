@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-merge-several-Excel-files-to-a-single-file
+title: How-to-merge-several-Excel-files-to-a-single-file | WindowsForms | Syncfusion
 description:  How to merge several Excel files to a single file
 platform: WindowsForms
 control: XlsIO	

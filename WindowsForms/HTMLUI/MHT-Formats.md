@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MHT-Formats
+title: MHT-Formats | WindowsForms | Syncfusion
 description: mht formats
 platform: WindowsForms
 control: HTML UI

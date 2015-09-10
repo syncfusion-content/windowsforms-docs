@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Scroll Settings
+title:  Scroll Settings | WindowsForms | Syncfusion
 description:  Scroll Settings
 platform: WindowsForms
 control: Editors Package

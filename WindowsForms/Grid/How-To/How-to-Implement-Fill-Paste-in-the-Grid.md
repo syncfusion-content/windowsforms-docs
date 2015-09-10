@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Implement-Fill-Paste-in-the-Grid
+title: How-to-Implement-Fill-Paste-in-the-Grid | WindowsForms | Syncfusion
 description: how to implement fill paste in the grid
 platform: WindowsForms
 control: Grid

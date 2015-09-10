@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Print-a-Chart-in-Multiple-Pages
+title: How-to-Print-a-Chart-in-Multiple-Pages | WindowsForms | Syncfusion
 description: how to print a chart in multiple pages 
 platform: WindowsForms
 control: chart

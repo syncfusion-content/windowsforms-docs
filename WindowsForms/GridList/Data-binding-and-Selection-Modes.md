@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-binding-and-Selection-Modes
+title: Data-binding-and-Selection-Modes | WindowsForms | Syncfusion
 description: data binding and selection modes
 platform: WindowsForms
 control: GridList

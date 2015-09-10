@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resource
+title: Resource | WindowsForms | Syncfusion
 description: resource
 platform: WindowsForms
 control: ProjIO

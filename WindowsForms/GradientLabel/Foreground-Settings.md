@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Foreground Settings
+title: Foreground Settings | WindowsForms | Syncfusion
 description: Foreground Settings
 platform: WindowsForms
 control: Editors Package

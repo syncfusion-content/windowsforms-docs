@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection Mode
+title: Selection Mode | WindowsForms | Syncfusion
 description: Selection Mode
 platform: WindowsForms
 control: Editors Package

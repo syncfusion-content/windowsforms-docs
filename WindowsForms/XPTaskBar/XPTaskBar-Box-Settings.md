@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XPTaskBar Box Settings 
+title: XPTaskBar Box Settings  | WindowsForms | Syncfusion
 description: Concepts and Features
 platform: WindowsForms
 control: XPtaskBar

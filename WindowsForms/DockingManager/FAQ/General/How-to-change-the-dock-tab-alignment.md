@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to change the dock tab alignment
+title: How to change the dock tab alignment | WindowsForms | Syncfusion
 description: How to change the dock tab alignment
 platform: WindowsForms
 control: DockingManager

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: StatusStripEx
+title: StatusStripEx | WindowsForms | Syncfusion
 description: statusstripex
 platform: WindowsForms
 control: RibbonControlAdv 

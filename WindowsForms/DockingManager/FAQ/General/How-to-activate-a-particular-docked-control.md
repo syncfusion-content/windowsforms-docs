@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to activate a particular docked control
+title: How to activate a particular docked control | WindowsForms | Syncfusion
 description: How to activate a particular docked control
 platform: WindowsForms
 control: DockingManager

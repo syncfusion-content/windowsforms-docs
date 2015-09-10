@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-to-a-DataTable
+title: Binding-to-a-DataTable | WindowsForms | Syncfusion
 description: binding to a datatable
 platform: WindowsForms
 control: DataBoundGrid

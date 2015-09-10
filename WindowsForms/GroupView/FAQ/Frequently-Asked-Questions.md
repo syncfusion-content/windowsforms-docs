@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frequently Asked Questions
+title: Frequently Asked Questions | WindowsForms | Syncfusion
 description: Frequently Asked Questions
 platform: WindowsForms
 control: GroupView

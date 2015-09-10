@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ImageElement
+title: ImageElement | WindowsForms | Syncfusion
 description: imageelement
 platform: WindowsForms
 control: PDF

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Single-Cell
+title: How-to-Change-the-Backcolor-of-a-Single-Cell | WindowsForms | Syncfusion
 description: how to change the backcolor of a single cell
 platform: WindowsForms
 control: Grid

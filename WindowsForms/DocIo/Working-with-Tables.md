@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Tables
+title: Working-with-Tables | WindowsForms | Syncfusion
 description: working with tables
 platform: WindowsForms
 control: DocIO

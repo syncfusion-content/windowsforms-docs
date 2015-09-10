@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-Controls
+title: Supported-Controls | WindowsForms | Syncfusion
 description: supported controls  
 platform: WindowsForms
 control: Diagram

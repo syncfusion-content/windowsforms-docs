@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ScrollBar Settings
+title: ScrollBar Settings | WindowsForms | Syncfusion
 description: ScrollBar Settings
 platform: WindowsForms
 control: Editors Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collapse Expand Animation
+title: Collapse Expand Animation | WindowsForms | Syncfusion
 description: collapse expand animation
 platform: WindowsForms
 control: EditorPackage 

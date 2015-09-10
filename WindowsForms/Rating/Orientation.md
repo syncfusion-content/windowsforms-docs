@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation | WindowsForms | Syncfusion
 description: orientation
 platform: WindowsForms
 control: Rating  

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Booklets
+title: Booklets | WindowsForms | Syncfusion
 description: booklets
 platform: WindowsForms
 control: PDF

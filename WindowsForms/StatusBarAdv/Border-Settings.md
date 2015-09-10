@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Border-Settings
+title: Border-Settings | WindowsForms | Syncfusion
 description: border settings
 platform: WindowsForms
 control: StatusBarAdv

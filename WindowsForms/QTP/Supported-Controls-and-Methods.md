@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-Controls-and-Methods
+title: Supported-Controls-and-Methods | WindowsForms | Syncfusion
 description: supported controls and methods
 platform: WindowsForms
 control: QTP

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-limit-the-characters-that-the-user-type-for
+title: How-to-limit-the-characters-that-the-user-type-for | WindowsForms | Syncfusion
 description: how to limit the characters, that the user type for editing the treenodeadv using labeledit
 platform: WindowsForms
 control: TreeView 

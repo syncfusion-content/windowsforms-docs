@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SplashScreen-Settings
+title: SplashScreen-Settings | WindowsForms | Syncfusion
 description: splashscreen settings
 platform: WindowsForms
 control: SplashControl

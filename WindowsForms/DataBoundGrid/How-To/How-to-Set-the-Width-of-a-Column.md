@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Width-of-a-Column
+title: How-to-Set-the-Width-of-a-Column | WindowsForms | Syncfusion
 description: how to set the width of a column
 platform: WindowsForms
 control: DataBoundGrid

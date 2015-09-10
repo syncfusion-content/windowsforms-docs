@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-Architecture
+title: Styles-Architecture | WindowsForms | Syncfusion
 description: styles architecture
 platform: WindowsForms
 control: TreeView 

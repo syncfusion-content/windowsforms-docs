@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar Value
+title: Calendar Value | WindowsForms | Syncfusion
 description: calendar value
 platform: WindowsForms
 control: Calendar

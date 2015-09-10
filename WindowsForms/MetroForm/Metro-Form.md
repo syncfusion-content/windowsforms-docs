@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metro-Form
+title: Metro-Form | WindowsForms | Syncfusion
 description: metro form
 platform: WindowsForms
 control: Metro Form

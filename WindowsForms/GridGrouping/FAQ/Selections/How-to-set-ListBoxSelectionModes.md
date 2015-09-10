@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-ListBoxSelectionModes
+title: How-to-set-ListBoxSelectionModes | WindowsForms | Syncfusion
 description: how to set listboxselectionmodes
 platform: WindowsForms
 control: GridGrouping

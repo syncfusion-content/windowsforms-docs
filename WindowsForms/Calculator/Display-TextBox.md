@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display-TextBox
+title: Display-TextBox | WindowsForms | Syncfusion
 description: display textbox
 platform: WindowsForms
 control: Calculator

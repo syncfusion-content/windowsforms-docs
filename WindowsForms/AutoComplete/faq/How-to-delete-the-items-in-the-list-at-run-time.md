@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to delete the items in the list at run time
+title: How to delete the items in the list at run time | WindowsForms | Syncfusion
 description: How to delete the items in the list at run time
 platform: WindowsForms
 control: Tools

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hit-Testing
+title: Hit-Testing | WindowsForms | Syncfusion
 description: hit testing
 platform: WindowsForms
 control: Chart

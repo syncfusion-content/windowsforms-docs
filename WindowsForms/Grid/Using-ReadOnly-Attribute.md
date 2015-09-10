@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-ReadOnly-Attribute
+title: Using-ReadOnly-Attribute | WindowsForms | Syncfusion
 description: using readonly attribute
 platform: WindowsForms
 control: Grid

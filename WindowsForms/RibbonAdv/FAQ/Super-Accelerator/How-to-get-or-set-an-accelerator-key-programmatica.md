@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-get-or-set-an-accelerator-key-programmatica
+title: How-to-get-or-set-an-accelerator-key-programmatica | WindowsForms | Syncfusion
 description: how to get or set an accelerator key programmatically
 platform: WindowsForms
 control: Frequently Asked Questions

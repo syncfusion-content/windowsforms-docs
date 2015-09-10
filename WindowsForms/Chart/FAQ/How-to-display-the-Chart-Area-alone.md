@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-display-the-Chart-Area-alone
+title: How-to-display-the-Chart-Area-alone | WindowsForms | Syncfusion
 description: how to display the chart area alone
 platform: WindowsForms
 control: chart

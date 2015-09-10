@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization
+title: Globalization | WindowsForms | Syncfusion
 description: Globalization
 platform: WindowsForms
 control: CalendarDateTime 

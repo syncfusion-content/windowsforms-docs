@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-Style-Architecture
+title: Cell-Style-Architecture | WindowsForms | Syncfusion
 description: cell style architecture
 platform: WindowsForms
 control: Grid

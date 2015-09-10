@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GridBoundColumns-and-Controlling-the-Column-Format
+title: GridBoundColumns-and-Controlling-the-Column-Format | WindowsForms | Syncfusion
 description: gridboundcolumns and controlling the column format
 platform: WindowsForms
 control: DataBoundGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-Settings
+title: Styles-Settings | WindowsForms | Syncfusion
 description: styles settings
 platform: WindowsForms
 control: TabbedMDIPackage 

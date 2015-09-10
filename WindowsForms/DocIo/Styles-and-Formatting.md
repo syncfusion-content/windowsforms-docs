@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Formatting
+title: Styles-and-Formatting | WindowsForms | Syncfusion
 description: styles and formatting
 platform:  WindowsForms
 control: DocIO

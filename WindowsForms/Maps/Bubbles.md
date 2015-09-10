@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bubbles
+title: Bubbles | WindowsForms | Syncfusion
 description: bubbles
 platform: WindowsForms
 control: Maps

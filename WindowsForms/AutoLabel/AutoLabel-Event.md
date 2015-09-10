@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoLabel Event
+title: AutoLabel Event | WindowsForms | Syncfusion
 description: AutoLabel Event
 platform: WindowsForms
 control: AutoLabel

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Cell-Types
+title: Custom-Cell-Types | WindowsForms | Syncfusion
 description: custom cell types
 platform: WindowsForms
 control: Grid

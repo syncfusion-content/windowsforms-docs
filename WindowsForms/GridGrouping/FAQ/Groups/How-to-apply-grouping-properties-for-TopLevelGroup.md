@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-apply-grouping-properties-for-TopLevelGroup
+title: How-to-apply-grouping-properties-for-TopLevelGroup | WindowsForms | Syncfusion
 description: how to apply grouping properties for toplevelgroups
 platform: WindowsForms
 control: GridGrouping

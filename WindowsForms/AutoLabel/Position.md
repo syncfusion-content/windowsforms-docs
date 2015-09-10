@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Position
+title: Position | WindowsForms | Syncfusion
 description: Position
 platform: WindowsForms
 control: AutoLabel

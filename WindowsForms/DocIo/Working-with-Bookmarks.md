@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Bookmarks
+title: Working-with-Bookmarks | WindowsForms | Syncfusion
 description: working with bookmarks
 platform: WindowsForms
 control: DocIO

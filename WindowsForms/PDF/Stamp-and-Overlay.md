@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stamp-and-Overlay
+title: Stamp-and-Overlay | WindowsForms | Syncfusion
 description: stamp and overlay
 platform: WindowsForms
 control: PDF

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-keep-highlighting-the-selected-node-when-Tr
+title: How-to-keep-highlighting-the-selected-node-when-Tr | WindowsForms | Syncfusion
 description: how to keep highlighting the selected node when treeviewadv loses focus
 platform: WindowsForms
 control: TreeView 

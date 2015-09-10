@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-Context-Menu-to-display-the-n
+title: How-to-customize-the-Context-Menu-to-display-the-n | WindowsForms | Syncfusion
 description: how to customize the context menu to display the name of the selected node when right clicked on it
 platform: WindowsForms
 control: TreeView 

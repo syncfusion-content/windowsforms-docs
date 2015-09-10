@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-look-of-SuperAccelerator-as-l
+title: How-to-customize-the-look-of-SuperAccelerator-as-l | WindowsForms | Syncfusion
 description: how to customize the look of superaccelerator as like in ms office2013?
 platform: WindowsForms
 control: Frequently Asked Questions

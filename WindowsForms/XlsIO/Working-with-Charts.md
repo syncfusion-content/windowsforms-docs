@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Charts
+title: Working-with-Charts | WindowsForms | Syncfusion
 description: working with charts 
 platform: ejmvc
 control: XlsIO	

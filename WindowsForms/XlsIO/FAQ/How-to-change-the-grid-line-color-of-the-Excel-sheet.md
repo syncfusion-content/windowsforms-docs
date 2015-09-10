@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-change-the-grid-line-color-of-the-Excel-sheet.
+title: How-to-change-the-grid-line-color-of-the-Excel-sheet. | WindowsForms | Syncfusion
 description:  How to change the grid line color of the Excel sheet
 platform: WindowsForms
 control: XlsIO	

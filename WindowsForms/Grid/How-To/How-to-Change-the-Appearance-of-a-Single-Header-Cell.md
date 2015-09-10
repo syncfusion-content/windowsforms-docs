@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Appearance-of-a-Single-Header-Ce
+title: How-to-Change-the-Appearance-of-a-Single-Header-Ce | WindowsForms | Syncfusion
 description: how to change the appearance of a single header cell
 platform: WindowsForms
 control: Grid

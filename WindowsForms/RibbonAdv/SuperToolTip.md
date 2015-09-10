@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SuperToolTip
+title: SuperToolTip | WindowsForms | Syncfusion
 description: supertooltip
 platform: WindowsForms
 control: RibbonControlAdv

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load-a-specific-page
+title: Load-a-specific-page | WindowsForms | Syncfusion
 description: load a specific page?
 platform: WindowsForms
 control: PDF Viewer

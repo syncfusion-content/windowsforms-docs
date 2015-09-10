@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-Features
+title: Basic-Features | WindowsForms | Syncfusion
 description: basic features
 platform: WindowsForms
 control: SfMaskedEdit

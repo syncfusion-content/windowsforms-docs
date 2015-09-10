@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation
+title: Annotation | WindowsForms | Syncfusion
 description: annotation
 platform: WindowsForms
 control: PDF

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color-Space
+title: Color-Space | WindowsForms | Syncfusion
 description: color space
 platform: WindowsForms
 control: PDF

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Text-in-a-Header-Cell
+title: How-to-Set-the-Text-in-a-Header-Cell | WindowsForms | Syncfusion
 description: how to set the text in a header cell
 platform: WindowsForms
 control: Grid

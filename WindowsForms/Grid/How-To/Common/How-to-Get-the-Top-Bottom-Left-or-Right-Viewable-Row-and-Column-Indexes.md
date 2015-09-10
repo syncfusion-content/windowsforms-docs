@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Get-the-Top-Bottom--Left-or-Right-Viewable-row-and-column-indexes
+title: How-to-Get-the-Top-Bottom--Left-or-Right-Viewable-row-and-column-indexes | WindowsForms | Syncfusion
 description: how to get the top, bottom / left, or right viewable row and column indexes
 platform: WindowsForms
 control: Grid

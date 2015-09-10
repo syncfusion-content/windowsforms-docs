@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-export-the-Chart-Points-into-a-CSV-file
+title: How-to-export-the-Chart-Points-into-a-CSV-file | WindowsForms | Syncfusion
 description: how to export the chart points into a csv file
 platform: WindowsForms
 control: chart

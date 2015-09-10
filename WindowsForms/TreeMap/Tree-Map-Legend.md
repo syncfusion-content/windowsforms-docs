@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tree-Map-Legend
+title: Tree-Map-Legend | WindowsForms | Syncfusion
 description: tree map legend
 platform: WindowsForms
 control: TreeMap 

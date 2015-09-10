@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple-Columns
+title: Multiple-Columns | WindowsForms | Syncfusion
 description: multiple columns
 platform: WindowsForms
 control: Editors Package

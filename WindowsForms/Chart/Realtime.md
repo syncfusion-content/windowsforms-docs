@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Realtime
+title: Realtime | WindowsForms | Syncfusion
 description: realtime
 platform: WindowsForms
 control: Chart

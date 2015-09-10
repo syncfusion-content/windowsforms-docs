@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating AutoLabel
+title: Creating AutoLabel | WindowsForms | Syncfusion
 description: Creating AutoLabel
 platform: WindowsForms
 control: AutoLabel

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-get-the-row-position-of-AddNewRecord-in-Gri
+title: How-to-get-the-row-position-of-AddNewRecord-in-Gri | WindowsForms | Syncfusion
 description: how to get the row position of addnewrecord in gridgroupingcontrol
 platform: WindowsForms
 control: GridGrouping

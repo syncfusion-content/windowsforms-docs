@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Foreground-Settings
+title: Foreground-Settings | WindowsForms | Syncfusion
 description: foreground settings
 platform: WindowsForms
 control: ProgressBarAdv

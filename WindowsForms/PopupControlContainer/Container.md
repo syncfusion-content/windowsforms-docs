@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Container Control
+title: Container Control | WindowsForms | Syncfusion
 description: Container Control
 platform: WindowsForms
 control: Editors Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes
+title: Shapes | WindowsForms | Syncfusion
 description: shapes
 platform: WindowsForms
 control: PDF

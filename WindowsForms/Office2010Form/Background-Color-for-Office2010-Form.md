@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Background-Color-for-Office2010-Form
+title: Background-Color-for-Office2010-Form | WindowsForms | Syncfusion
 description: background color for office2010 form
 platform: WindowsForms
 control: Office2010 Form

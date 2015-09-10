@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project
+title: Project | WindowsForms | Syncfusion
 description: project
 platform: WindowsForms
 control: ProjIO

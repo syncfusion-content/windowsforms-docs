@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Function-Library
+title: Function-Library | WindowsForms | Syncfusion
 description: function library
 platform: WindowsForms
 control: Calculate

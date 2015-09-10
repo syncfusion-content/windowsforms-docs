@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Perspective 
+title: Perspective  | WindowsForms | Syncfusion
 description: Perspective 
 platform: WindowsForms
 control: Carousel

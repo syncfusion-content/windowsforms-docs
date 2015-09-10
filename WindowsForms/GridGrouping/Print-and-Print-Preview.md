@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print-and-Print-Preview
+title: Print-and-Print-Preview | WindowsForms | Syncfusion
 description: print and print preview
 platform: WindowsForms
 control: GridGrouping

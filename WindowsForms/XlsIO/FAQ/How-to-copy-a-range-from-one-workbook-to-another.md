@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-copy-a-range-from-one-workbook-to-another
+title: How-to-copy-a-range-from-one-workbook-to-another | WindowsForms | Syncfusion
 description:  How to copy a range from one workbook to another
 platform: WindowsForms
 control: XlsIO	

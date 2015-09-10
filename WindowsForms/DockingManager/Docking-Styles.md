@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docking-Styles
+title: Docking-Styles | WindowsForms | Syncfusion
 description: docking styles
 platform: WindowsForms
 control: DockingManager 

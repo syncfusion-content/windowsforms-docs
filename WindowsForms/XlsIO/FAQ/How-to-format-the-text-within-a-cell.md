@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-format-the-text-within-a-cell
+title: How-to-format-the-text-within-a-cell | WindowsForms | Syncfusion
 description:  How to format the text within a cell
 platform: WindowsForms
 control: XlsIO	

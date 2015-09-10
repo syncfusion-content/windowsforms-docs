@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Support-for-Skin-Manager-in-Windows-Forms-Grid
+title: Support-for-Skin-Manager-in-Windows-Forms-Grid | WindowsForms | Syncfusion
 description: support for skin manager in windows forms grid 
 platform: WindowsForms
 control: Grid

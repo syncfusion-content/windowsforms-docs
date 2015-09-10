@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Formulas
+title: Working-with-Formulas | WindowsForms | Syncfusion
 description: working with formulas 
 platform: ejmvc
 control: XlsIO	

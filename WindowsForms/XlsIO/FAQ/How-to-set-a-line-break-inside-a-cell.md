@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-a-line-break-inside-a-cell
+title: How-to-set-a-line-break-inside-a-cell | WindowsForms | Syncfusion
 description:  How to set a line break inside a cell
 platform: WindowsForms
 control: XlsIO	

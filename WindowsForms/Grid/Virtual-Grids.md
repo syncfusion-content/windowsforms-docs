@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual-Grids
+title: Virtual-Grids | WindowsForms | Syncfusion
 description: virtual grids
 platform: WindowsForms
 control: Grid

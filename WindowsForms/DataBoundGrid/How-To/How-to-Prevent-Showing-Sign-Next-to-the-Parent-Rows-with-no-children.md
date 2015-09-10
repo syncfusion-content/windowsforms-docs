@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Prevent-Showing--Sign-Next-to-the-Parent-Rows-with-no-children
+title: How-to-Prevent-Showing--Sign-Next-to-the-Parent-Rows-with-no-children | WindowsForms | Syncfusion
 description: how to prevent showing sign next to the parent rows with no children
 platform: WindowsForms
 control: DataBoundGrid

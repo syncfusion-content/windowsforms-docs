@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key-Support
+title: Key-Support | WindowsForms | Syncfusion
 description: key support
 platform: WindowsForms
 control: EditorsPackage

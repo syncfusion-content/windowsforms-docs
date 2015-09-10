@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-reject-the-changes-made-to-GridGroupingCont
+title: How-to-reject-the-changes-made-to-GridGroupingCont | WindowsForms | Syncfusion
 description: how to reject the changes made to gridgroupingcontrol
 platform: WindowsForms
 control: GridGrouping

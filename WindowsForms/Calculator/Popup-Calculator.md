@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Popup-CalculatorControl
+title: Popup-CalculatorControl | WindowsForms | Syncfusion
 description: popup calculatorControl
 platform: WindowsForms
 control: Calculator

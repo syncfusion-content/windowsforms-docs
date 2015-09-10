@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pages
+title: Pages | WindowsForms | Syncfusion
 description: pages
 platform: WindowsForms
 control: PDF

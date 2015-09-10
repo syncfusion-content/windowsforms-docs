@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-save-a-file-to-the-stream
+title: How-to-save-a-file-to-the-stream | WindowsForms | Syncfusion
 description:  How to save a file to the stream
 platform: WindowsForms
 control: XlsIO	

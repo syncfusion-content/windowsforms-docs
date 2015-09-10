@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MiniToolBar
+title: MiniToolBar | WindowsForms | Syncfusion
 description: minitoolbar
 platform: WindowsForms
 control: RibbonControlAdv 

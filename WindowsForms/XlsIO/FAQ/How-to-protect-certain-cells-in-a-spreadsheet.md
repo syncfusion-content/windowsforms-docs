@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-protect-certain-cells-in-a-spreadsheet
+title: How-to-protect-certain-cells-in-a-spreadsheet | WindowsForms | Syncfusion
 description:  How to protect certain cells in a spreadsheet
 platform: WindowsForms
 control: XlsIO	

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-access-unfiltered-records
+title: How-to-access-unfiltered-records | WindowsForms | Syncfusion
 description: how to access unfiltered records
 platform: WindowsForms
 control: GridGrouping

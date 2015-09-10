@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prevent closing of docked window
+title: How to prevent closing of docked window | WindowsForms | Syncfusion
 description: How to prevent closing of docked window
 platform: WindowsForms
 control: DockingManager

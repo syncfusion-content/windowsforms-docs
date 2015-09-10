@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-Editable-List
+title: Creating-Editable-List | WindowsForms | Syncfusion
 description: creating editable list
 platform: WindowsForms
 control: EditorsPackage

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Record-Navigation-Bar
+title: Record-Navigation-Bar | WindowsForms | Syncfusion
 description: record navigation bar
 platform: WindowsForms
 control: DataBoundGrid

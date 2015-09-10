@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Clear a Sort
+title: How to Clear a Sort | WindowsForms | Syncfusion
 description: How to Clear a Sort
 platform: WindowsForms
 control: Grouping

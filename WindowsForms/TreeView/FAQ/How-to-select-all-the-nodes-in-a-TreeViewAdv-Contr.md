@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr
+title: How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr | WindowsForms | Syncfusion
 description: how to select all the nodes in a treeviewadv control
 platform: WindowsForms
 control: TreeView 

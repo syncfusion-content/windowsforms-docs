@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Representation
+title: Data-Representation | WindowsForms | Syncfusion
 description: data representation
 platform: WindowsForms
 control: GridGrouping

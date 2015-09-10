@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Features
+title: Features | WindowsForms | Syncfusion
 description: features
 platform: WindowsForms
 control: Carousel

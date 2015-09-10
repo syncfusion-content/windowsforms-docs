@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color Groups
+title: Color Groups | WindowsForms | Syncfusion
 description: color groups
 platform: WindowsForms
 control: ColorUI

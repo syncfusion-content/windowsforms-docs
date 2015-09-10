@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML-Bookmarks
+title: HTML-Bookmarks | WindowsForms | Syncfusion
 description:  html bookmarks
 platform: WindowsForms
 control: HTML UI

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar-State-Persistence
+title: Toolbar-State-Persistence | WindowsForms | Syncfusion
 description: toolbar state persistence
 platform: WindowsForms
 control: Orientation

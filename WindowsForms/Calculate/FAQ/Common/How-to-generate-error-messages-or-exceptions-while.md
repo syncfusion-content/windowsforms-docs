@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-generate-error-messages-or-exceptions-while
+title: How-to-generate-error-messages-or-exceptions-while | WindowsForms | Syncfusion
 description: how to generate error messages or exceptions while performing string-related calculations?
 platform: WindowsForms
 control: Calculate

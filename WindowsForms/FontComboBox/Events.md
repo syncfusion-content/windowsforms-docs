@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events | WindowsForms | Syncfusion
 description: Events
 platform: WindowsForms
 control: Editors Package

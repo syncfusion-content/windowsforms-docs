@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RotateTile
+title: RotateTile | WindowsForms | Syncfusion
 description: rotatetile
 platform: WindowsForms
 control: HubTile

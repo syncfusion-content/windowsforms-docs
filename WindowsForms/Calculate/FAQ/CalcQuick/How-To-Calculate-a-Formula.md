@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Calculate-a-Formula
+title: How-To-Calculate-a-Formula | WindowsForms | Syncfusion
 description: how to calculate a formula?
 platform: WindowsForms
 control: Calculate

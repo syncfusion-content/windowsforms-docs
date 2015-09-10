@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TreeMap-Layout
+title: TreeMap-Layout | WindowsForms | Syncfusion
 description: treeMap layout
 platform: WindowsForms
 control: TreeMap 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Other-Drawing-Objects
+title: Working-with-Other-Drawing-Objects | WindowsForms | Syncfusion
 description: working with other drawing objects 
 platform: ejmvc
 control: XlsIO	

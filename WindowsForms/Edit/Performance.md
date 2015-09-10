@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance
+title: Performance | WindowsForms | Syncfusion
 description: performance
 platform: WindowsForms
 control: Edit

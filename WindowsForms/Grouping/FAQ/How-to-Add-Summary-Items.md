@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Add Summary Items
+title: How to Add Summary Items | WindowsForms | Syncfusion
 description: How to Add Summary Items
 platform: WindowsForms
 control: Grouping

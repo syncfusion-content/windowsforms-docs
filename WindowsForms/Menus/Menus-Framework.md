@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Menus Framework
+title: Menus Framework | WindowsForms | Syncfusion
 description: menus framework
 platform: WindowsForms
 control: Menus Package 

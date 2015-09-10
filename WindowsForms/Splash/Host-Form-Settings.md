@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Host-Form-Settings
+title: Host-Form-Settings | WindowsForms | Syncfusion
 description: host form settings
 platform: WindowsForms
 control: SplashControl

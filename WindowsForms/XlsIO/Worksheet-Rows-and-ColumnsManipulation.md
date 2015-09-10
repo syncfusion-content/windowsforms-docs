@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Worksheet-Rows-and-ColumnsManipulation
+title: Worksheet-Rows-and-ColumnsManipulation | WindowsForms | Syncfusion
 description: worksheet rows and columns manipulation
 platform: ejmvc
 control: XlsIO	

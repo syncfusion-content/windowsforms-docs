@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-a-MDI-Child-from-another-MDIChild
+title: How-to-add-a-MDI-Child-from-another-MDIChild | WindowsForms | Syncfusion
 description: how to add a mdi child from another mdichild
 platform: WindowsForms
 control: TabbedMDIPackage

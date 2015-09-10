@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping-Items-in-a-Popup-Menu
+title: Grouping-Items-in-a-Popup-Menu | WindowsForms | Syncfusion
 description: grouping items in a popup menu
 platform: WindowsForms
 control: Popup-Menu

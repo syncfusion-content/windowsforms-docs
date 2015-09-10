@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Hide Custom Option in the FilterBar DropDown
+title: How to Hide Custom Option in the FilterBar DropDown | WindowsForms | Syncfusion
 description: how to hide custom option in the filterbar dropdown
 platform: WindowsForms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider-style
+title: Slider-style | WindowsForms | Syncfusion
 description: slider style
 platform: WindowsForms
 control: RadialSlider 

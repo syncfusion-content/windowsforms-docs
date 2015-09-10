@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Calculation-Support
+title: Adding-Calculation-Support | WindowsForms | Syncfusion
 description: adding calculation support
 platform: WindowsForms
 control: Calculate

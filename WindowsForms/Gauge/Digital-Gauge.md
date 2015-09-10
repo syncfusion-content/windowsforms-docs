@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital-Gauge
+title: Digital-Gauge | WindowsForms | Syncfusion
 description: digital gauge
 platform: WindowsForms
 control: Gauge

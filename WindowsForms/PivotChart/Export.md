@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Export | WindowsForms | Syncfusion
 description: export
 platform: WindowsForms
 control: PivotChart

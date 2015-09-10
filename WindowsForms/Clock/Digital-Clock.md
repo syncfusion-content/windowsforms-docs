@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital-Clock
+title: Digital-Clock | WindowsForms | Syncfusion
 description: digital clock
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms

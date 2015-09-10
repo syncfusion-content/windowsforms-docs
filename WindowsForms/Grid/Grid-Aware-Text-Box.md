@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Aware-Text-Box
+title: Grid-Aware-Text-Box | WindowsForms | Syncfusion
 description: grid aware text box
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting-Pivot-Grid-to-Excel-Word-and-PDF
+title: Exporting-Pivot-Grid-to-Excel-Word-and-PDF | WindowsForms | Syncfusion
 description: exporting pivot grid to excel, word and pdf
 platform: WindowsForms
 control: PivotGrid

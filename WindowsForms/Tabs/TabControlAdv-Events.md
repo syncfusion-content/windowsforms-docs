@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabControlAdv-Events
+title: TabControlAdv-Events | WindowsForms | Syncfusion
 description: tabcontroladv events
 platform: WindowsForms
 control: TabsPackage 

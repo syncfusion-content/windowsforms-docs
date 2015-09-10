@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RunTime-Features
+title: RunTime-Features | WindowsForms | Syncfusion
 description: runtime features
 platform: WindowsForms
 control: DockingManager 

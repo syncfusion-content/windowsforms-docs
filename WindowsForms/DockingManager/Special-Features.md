@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Special-Features
+title: Special-Features | WindowsForms | Syncfusion
 description: special features
 platform: WindowsForms
 control: DockingManager 

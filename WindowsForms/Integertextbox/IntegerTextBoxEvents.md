@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IntegerTextBox Events
+title: IntegerTextBox Events | WindowsForms | Syncfusion
 description: IntegerTextBox Events
 platform: WindowsForms
 control: Tools

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-options-to-print-Titles
+title: How-to-set-options-to-print-Titles | WindowsForms | Syncfusion
 description:  How to set options to print Titles
 platform: WindowsForms
 control: XlsIO	

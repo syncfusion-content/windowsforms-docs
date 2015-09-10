@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merge-Documents
+title: Merge-Documents | WindowsForms | Syncfusion
 description: merge documents
 platform: WindowsForms
 control: PDF

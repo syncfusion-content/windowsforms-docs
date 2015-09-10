@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-copy-and-paste-the-values-of-the-cells-that-contain-only-formulas
+title: How-to-copy-and-paste-the-values-of-the-cells-that-contain-only-formulas | WindowsForms | Syncfusion
 description:  How to copy and paste the values of the cells that contain only formulas
 platform: WindowsForms
 control: XlsIO	

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes-And-Styles
+title: Themes-And-Styles | WindowsForms | Syncfusion
 description: themes and styles
 platform: WindowsForms
 control: ComboDropDown

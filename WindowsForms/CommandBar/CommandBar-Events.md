@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CommandBar-Events
+title: CommandBar-Events | WindowsForms | Syncfusion
 description: commandbar events
 platform: WindowsForms
 control: CommandBars

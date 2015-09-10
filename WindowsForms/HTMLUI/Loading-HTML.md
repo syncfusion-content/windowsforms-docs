@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loading-HTML
+title: Loading-HTML | WindowsForms | Syncfusion
 description: loading html
 platform: WindowsForms
 control: HTML UI

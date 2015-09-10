@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-show-Summary-Results-in-the-Inner-Most-Tabl
+title: How-to-show-Summary-Results-in-the-Inner-Most-Tabl | WindowsForms | Syncfusion
 description: how to show summary results in the inner most table on every parent level in nested related tables
 platform: WindowsForms
 control: GridGrouping

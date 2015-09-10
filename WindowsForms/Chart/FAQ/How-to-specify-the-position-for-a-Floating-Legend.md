@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-specify-the-position-for-a-Floating-Legend
+title: How-to-specify-the-position-for-a-Floating-Legend | WindowsForms | Syncfusion
 description: how to specify the position for a floating legend
 platform: WindowsForms
 control: chart

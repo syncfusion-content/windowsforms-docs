@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events-of-ParentBarItem
+title: Events-of-ParentBarItem | WindowsForms | Syncfusion
 description: events of parentbaritem
 platform: WindowsForms
 control: Orientation

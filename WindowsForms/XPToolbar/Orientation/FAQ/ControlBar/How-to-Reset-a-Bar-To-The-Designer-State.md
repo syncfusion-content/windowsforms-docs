@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Reset-a-Bar-To-The-Designer-State
+title: How-to-Reset-a-Bar-To-The-Designer-State | WindowsForms | Syncfusion
 description: how to reset a bar to the designer state
 platform: WindowsForms
 control: Orientation

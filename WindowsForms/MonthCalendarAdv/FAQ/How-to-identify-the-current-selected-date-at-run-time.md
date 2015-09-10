@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to identify the current selected date at run time?
+title: How to identify the current selected date at run time? | WindowsForms | Syncfusion
 description: how to identify the current selected date at run time?
 platform: WindowsForms
 control: CalendarDateTime

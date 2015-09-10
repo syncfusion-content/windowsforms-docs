@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit-Control-Events
+title: Edit-Control-Events | WindowsForms | Syncfusion
 description: edit control events
 platform: WindowsForms
 control: Edit

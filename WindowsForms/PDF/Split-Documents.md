@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Split-Documents
+title: Split-Documents | WindowsForms | Syncfusion
 description: split documents
 platform: WindowsForms
 control: PDF

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Appearance
+title: Customizing-Appearance | WindowsForms | Syncfusion
 description: customizing appearance
 platform: WindowsForms
 control: Schedule

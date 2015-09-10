@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-dock-the-bar-items-in-a-bar
+title: How-to-dock-the-bar-items-in-a-bar | WindowsForms | Syncfusion
 description: how to dock the bar items in a bar
 platform: WindowsForms
 control: Orientation

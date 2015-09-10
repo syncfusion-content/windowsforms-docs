@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events-of-BarItem
+title: Events-of-BarItem | WindowsForms | Syncfusion
 description: events of baritem
 platform: WindowsForms
 control: Orientation

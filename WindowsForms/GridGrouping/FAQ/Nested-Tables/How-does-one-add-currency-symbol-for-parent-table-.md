@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-does-one-add-currency-symbol-for-parent-table-
+title: How-does-one-add-currency-symbol-for-parent-table- | WindowsForms | Syncfusion
 description: how does one add currency symbol for parent table and child table
 platform: WindowsForms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tab Text
+title: Tab Text | WindowsForms | Syncfusion
 description: tab text
 platform: WindowsForms
 control: ColorUI 

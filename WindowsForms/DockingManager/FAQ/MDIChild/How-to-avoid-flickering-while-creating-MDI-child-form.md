@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to avoid flickering while creating MDI child form
+title: How to avoid flickering while creating MDI child form | WindowsForms | Syncfusion
 description: How to avoid flickering while creating MDI child form
 platform: WindowsForms
 control: DockingManager

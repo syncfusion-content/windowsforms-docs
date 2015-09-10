@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Get-the-New-Value-and-Old-Value-when-an-Ite
+title: How-to-Get-the-New-Value-and-Old-Value-when-an-Ite | WindowsForms | Syncfusion
 description: how to get the new value and old value when an item is selected in a combobox cell
 platform: WindowsForms
 control: Grid

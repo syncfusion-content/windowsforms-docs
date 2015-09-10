@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-hide-an-unnecessary-column-from-the-multiple-columns
+title: How-to-hide-an-unnecessary-column-from-the-multiple-columns | WindowsForms | Syncfusion
 description: how to hide an unnecessary column from the multiple columns
 platform: WindowsForms
 control: Editors Package

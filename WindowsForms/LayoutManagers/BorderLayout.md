@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BorderLayout
+title: BorderLayout | WindowsForms | Syncfusion
 description: borderlayout
 platform: WindowsForms
 control: Layout Managers Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ButtonEdit Appearance
+title: ButtonEdit Appearance | WindowsForms | Syncfusion
 description: ButtonEdit Appearance
 platform: WindowsForms
 control: Tools

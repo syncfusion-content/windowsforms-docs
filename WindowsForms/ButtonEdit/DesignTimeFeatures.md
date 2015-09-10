@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design Time Features
+title: Design Time Features | WindowsForms | Syncfusion
 description: Design Time Features
 platform: WindowsForms
 control: Tools

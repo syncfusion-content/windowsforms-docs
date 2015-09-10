@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Element-Events
+title: Element-Events | WindowsForms | Syncfusion
 description: element events
 platform: WindowsForms
 control: HTML UI

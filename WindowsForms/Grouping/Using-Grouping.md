@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-Grouping
+title: Using-Grouping | WindowsForms | Syncfusion
 description: using grouping
 platform: WindowsForms
 control: Grouping

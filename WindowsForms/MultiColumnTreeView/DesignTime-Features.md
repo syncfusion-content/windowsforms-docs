@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DesignTime-Features
+title: DesignTime-Features | WindowsForms | Syncfusion
 description: Concepts and Features
 platform: WindowsForms
 control: MultiColumnTreeView

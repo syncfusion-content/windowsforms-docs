@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-image-for-Slider-in-Toggle-Button
+title: How-to-set-image-for-Slider-in-Toggle-Button | WindowsForms | Syncfusion
 description: how to set image for slider in toggle button
 platform: WindowsForms
 control: HubTile

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Pivot-Tables
+title: Working-with-Pivot-Tables | WindowsForms | Syncfusion
 description: working with pivot tables 
 platform: ejmvc
 control: XlsIO	

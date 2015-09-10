@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes-And-Visual-Styles
+title: Themes-And-Visual-Styles | WindowsForms | Syncfusion
 description: themes and visual styles
 platform: WindowsForms
 control: CommandBars

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: StatusBarAdvPanel
+title: StatusBarAdvPanel | WindowsForms | Syncfusion
 description: statusbaradvpanel
 platform: WindowsForms
 control: StatusBarAdv

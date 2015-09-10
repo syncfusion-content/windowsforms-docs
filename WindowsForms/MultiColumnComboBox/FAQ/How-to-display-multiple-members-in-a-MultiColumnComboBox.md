@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-display-multiple-members-in-a-MultiColumnComboBox
+title: How-to-display-multiple-members-in-a-MultiColumnComboBox | WindowsForms | Syncfusion
 description: how to display multiple members in a multicolumncombobox
 platform: WindowsForms
 control: Editors Package

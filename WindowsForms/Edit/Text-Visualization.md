@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Visualization
+title: Text-Visualization | WindowsForms | Syncfusion
 description: text visualization
 platform: WindowsForms
 control: Edit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-open-an-Excel-2007-Macro-Enabled-Template
+title: How-to-open-an-Excel-2007-Macro-Enabled-Template | WindowsForms | Syncfusion
 description:  How to open an Excel 2007 Macro Enabled Template
 platform: WindowsForms
 control: XlsIO	

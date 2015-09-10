@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-open-an-Excel-file-from-Stream
+title: How-to-open-an-Excel-file-from-Stream | WindowsForms | Syncfusion
 description:  How to open an Excel file from Stream?
 platform: WindowsForms
 control: XlsIO	

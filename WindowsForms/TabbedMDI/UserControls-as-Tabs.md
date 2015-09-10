@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UserControls-as-Tabs
+title: UserControls-as-Tabs | WindowsForms | Syncfusion
 description: usercontrols as tabs
 platform: WindowsForms
 control: TabbedMDIPackage 

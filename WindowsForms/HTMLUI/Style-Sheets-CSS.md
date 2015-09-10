@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style-Sheets-CSS
+title: Style-Sheets-CSS | WindowsForms | Syncfusion
 description:  style sheets css
 platform: WindowsForms
 control: HTML UI

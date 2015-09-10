@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MDI-List
+title: MDI-List | WindowsForms | Syncfusion
 description: mdi list
 platform: WindowsForms
 control: TabbedMDIPackage 

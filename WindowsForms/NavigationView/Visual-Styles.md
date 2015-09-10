@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual-Styles
+title: Visual-Styles | WindowsForms | Syncfusion
 description: visual styles
 platform: WindowsForms
 control: Navigation View 

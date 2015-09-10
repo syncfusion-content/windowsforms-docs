@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Browse-Buttons
+title: Browse-Buttons | WindowsForms | Syncfusion
 description: browse buttons
 platform: WindowsForms
 control: Wizard

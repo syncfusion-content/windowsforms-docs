@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to save and restore the State information of a Stacked Mode GroupBar
+title: How to save and restore the State information of a Stacked Mode GroupBar | WindowsForms | Syncfusion
 description: Frequently Asked Questions
 platform: WindowsForms
 control: GroupBar

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ListBarItem-Events
+title: ListBarItem-Events | WindowsForms | Syncfusion
 description: listbaritem events
 platform: WindowsForms
 control: Orientation

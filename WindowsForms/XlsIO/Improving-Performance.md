@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improving-Performance
+title: Improving-Performance | WindowsForms | Syncfusion
 description: improving performance
 platform: ejmvc
 control: XlsIO	

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Settings of GroupView 
+title: Image Settings of GroupView  | WindowsForms | Syncfusion
 description: Concepts and Features
 platform: WindowsForms
 control: GroupView

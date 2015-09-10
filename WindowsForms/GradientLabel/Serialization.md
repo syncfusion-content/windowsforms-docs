@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization
+title: Serialization | WindowsForms | Syncfusion
 description: Serialization
 platform: WindowsForms
 control: Editors Package

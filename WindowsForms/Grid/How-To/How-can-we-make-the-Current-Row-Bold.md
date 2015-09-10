@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-can-we-make-the-Current-Row-Bold
+title: How-can-we-make-the-Current-Row-Bold | WindowsForms | Syncfusion
 description: how can we make the current row bold?
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boundary-Value-Settings
+title: Boundary-Value-Settings | WindowsForms | Syncfusion
 description: boundary value settings
 platform: WindowsForms
 control: ProgressBarAdv

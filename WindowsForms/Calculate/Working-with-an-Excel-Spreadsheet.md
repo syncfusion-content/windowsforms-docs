@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-an-Excel-Spreadsheet
+title: Working-with-an-Excel-Spreadsheet | WindowsForms | Syncfusion
 description: working with an excel spreadsheet
 platform: WindowsForms
 control: Calculate

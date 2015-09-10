@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations
+title: Annotations | WindowsForms | Syncfusion
 description: annotations
 platform: WindowsForms
 control: Maps

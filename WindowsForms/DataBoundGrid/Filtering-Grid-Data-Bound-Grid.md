@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering-Grid-Data-Bound-Grid
+title: Filtering-Grid-Data-Bound-Grid | WindowsForms | Syncfusion
 description: filtering grid data bound grid
 platform: WindowsForms
 control: DataBoundGrid

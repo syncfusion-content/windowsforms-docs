@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Associating-Popup-Menu-to-a-Control
+title: Associating-Popup-Menu-to-a-Control | WindowsForms | Syncfusion
 description: associating popup menu to a control
 platform: WindowsForms
 control: Popup-Menu

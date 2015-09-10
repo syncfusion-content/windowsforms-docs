@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabPrimitives
+title: TabPrimitives | WindowsForms | Syncfusion
 description: tabprimitives
 platform: WindowsForms
 control: TabsPackage 

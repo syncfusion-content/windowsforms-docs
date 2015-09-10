@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Legend-and-Legend-Items
+title: Chart-Legend-and-Legend-Items | WindowsForms | Syncfusion
 description: chart legend and legend items
 platform: WindowsForms
 control: Chart

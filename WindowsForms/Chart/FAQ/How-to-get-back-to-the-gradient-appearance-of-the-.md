@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-get-back-to-the-gradient-appearance-of-the-
+title: How-to-get-back-to-the-gradient-appearance-of-the- | WindowsForms | Syncfusion
 description: how to get back to the gradient appearance of the chart series
 platform: WindowsForms
 control: chart

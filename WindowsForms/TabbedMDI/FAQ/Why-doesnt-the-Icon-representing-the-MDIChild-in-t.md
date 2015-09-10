@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why-doesnt-the-Icon-representing-the-MDIChild-in-t
+title: Why-doesnt-the-Icon-representing-the-MDIChild-in-t | WindowsForms | Syncfusion
 description: why doesn't the icon representing the mdichild in the tabbedmdimanager change when the form.icon property is changed?
 platform: wpf
 control: TabbedMDIPackage

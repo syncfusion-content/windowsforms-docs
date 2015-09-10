@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider-value
+title: Slider-value | WindowsForms | Syncfusion
 description: slider value
 platform: WindowsForms
 control: RadialSlider 

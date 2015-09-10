@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotItem
+title: PivotItem | WindowsForms | Syncfusion
 description: pivotitem
 platform: WindowsForms
 control: PivotGrid

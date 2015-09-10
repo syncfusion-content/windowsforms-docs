@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML-Tags
+title: HTML-Tags | WindowsForms | Syncfusion
 description:  html tags
 platform: WindowsForms
 control: HTML UI

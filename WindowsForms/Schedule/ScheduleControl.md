@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ScheduleControl
+title: ScheduleControl | WindowsForms | Syncfusion
 description: schedulecontrol
 platform: WindowsForms
 control: Schedule

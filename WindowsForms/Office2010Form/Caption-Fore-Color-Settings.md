@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Caption-Fore-Color-Settings
+title: Caption-Fore-Color-Settings | WindowsForms | Syncfusion
 description: caption fore color settings
 platform: WindowsForms
 control: Office2010 Form

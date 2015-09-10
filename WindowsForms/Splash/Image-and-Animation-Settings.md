@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image-and-Animation-Settings
+title: Image-and-Animation-Settings | WindowsForms | Syncfusion
 description: image and animation settings
 platform: WindowsForms
 control: SplashControl

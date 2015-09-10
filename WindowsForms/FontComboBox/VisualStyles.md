@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Styles
+title: Visual Styles | WindowsForms | Syncfusion
 description: Visual Styles
 platform: WindowsForms
 control: Editors Package

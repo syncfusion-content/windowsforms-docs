@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon-Control-Items
+title: Ribbon-Control-Items | WindowsForms | Syncfusion
 description: ribbon control items
 platform: WindowsForms
 control: RibbonControlAdv 

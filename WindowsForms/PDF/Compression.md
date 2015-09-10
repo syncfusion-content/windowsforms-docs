@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compression
+title: Compression | WindowsForms | Syncfusion
 description: compression
 platform: WindowsForms
 control: PDF

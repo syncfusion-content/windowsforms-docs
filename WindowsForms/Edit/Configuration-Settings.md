@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuration-Settings
+title: Configuration-Settings | WindowsForms | Syncfusion
 description: configuration settings
 platform: WindowsForms
 control: Edit

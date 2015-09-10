@@ -1,6 +1,6 @@
 ---
 layout: post
-title: colorvaluepath
+title: colorvaluepath | WindowsForms | Syncfusion
 description: ColorValuePath
 platform: WindowsForms
 control: TreeMap 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-hide-the-row-headers-of-a-child-table-in-Gr
+title: How-to-hide-the-row-headers-of-a-child-table-in-Gr | WindowsForms | Syncfusion
 description: how to hide the row headers of a child table in gridgroupingcontrol
 platform: WindowsForms
 control: GridGrouping

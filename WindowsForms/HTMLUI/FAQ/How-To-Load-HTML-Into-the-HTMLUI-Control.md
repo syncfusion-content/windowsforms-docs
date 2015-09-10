@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Load-HTML-Into-the-HTMLUI-Control
+title: How-To-Load-HTML-Into-the-HTMLUI-Control | WindowsForms | Syncfusion
 description:  how to load html into the htmlui control?
 platform: WindowsForms
 control: HTML UI

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-and-format-unbound-columns-in-GridGroup
+title: How-to-add-and-format-unbound-columns-in-GridGroup | WindowsForms | Syncfusion
 description: how to add and format unbound columns in gridgrouping control
 platform: WindowsForms
 control: GridGrouping

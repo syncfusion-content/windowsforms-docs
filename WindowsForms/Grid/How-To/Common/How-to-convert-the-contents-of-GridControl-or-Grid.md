@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-convert-the-contents-of-GridControl-or-GridControl-or-GridDataBoundGridControl-to-Excel
+title: How-to-convert-the-contents-of-GridControl-or-GridControl-or-GridDataBoundGridControl-to-Excel | WindowsForms | Syncfusion
 description: how to convert the contents of gridcontrol or griddataboundgridcontrol to excel
 platform: WindowsForms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties 
+title: Properties  | WindowsForms | Syncfusion
 description: Properties 
 platform: WindowsForms
 control: Carousel

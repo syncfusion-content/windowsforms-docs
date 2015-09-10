@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Structure-of-the-Clock-Control
+title: Appearance-and-Structure-of-the-Clock-Control | WindowsForms | Syncfusion
 description: appearance and structure of the clock control
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms

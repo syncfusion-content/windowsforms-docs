@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Text-Color-that-Appears-in-a-Cell
+title: How-to-Set-the-Text-Color-that-Appears-in-a-Cell | WindowsForms | Syncfusion
 description: how to set the text color that appears in a cell
 platform: WindowsForms
 control: Grid

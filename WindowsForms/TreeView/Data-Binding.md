@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data-Binding | WindowsForms | Syncfusion
 description: data binding
 platform: WindowsForms
 control: TreeView 

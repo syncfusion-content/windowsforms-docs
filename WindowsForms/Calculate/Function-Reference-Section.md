@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Function-Reference-Section
+title: Function-Reference-Section | WindowsForms | Syncfusion
 description: function reference section
 platform: WindowsForms
 control: Calculate

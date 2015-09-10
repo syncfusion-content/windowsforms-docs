@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to remove the header of XPTaskBarBox in an XPTaskBar
+title: How to remove the header of XPTaskBarBox in an XPTaskBar | WindowsForms | Syncfusion
 description: Frequently Asked Questions
 platform: WindowsForms
 control: XPTaskBar

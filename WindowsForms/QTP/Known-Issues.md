@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Known-Issues
+title: Known-Issues | WindowsForms | Syncfusion
 description: known issues
 platform: WindowsForms
 control: QTP

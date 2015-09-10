@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editors-Package
+title: Editors-Package | WindowsForms | Syncfusion
 description: editors package
 platform: WindowsForms
 control: Tools

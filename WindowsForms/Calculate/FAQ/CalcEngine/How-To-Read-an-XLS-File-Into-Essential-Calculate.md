@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Read-an-XLS-File-Into-Essential-Calculate
+title: How-To-Read-an-XLS-File-Into-Essential-Calculate | WindowsForms | Syncfusion
 description: how to read an xls file into essential calculate?
 platform: WindowsForms
 control: Calculate

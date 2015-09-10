@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Background-Color-for-a-Grid
+title: How-to-Set-the-Background-Color-for-a-Grid | WindowsForms | Syncfusion
 description: how to set the background color for a grid
 platform: WindowsForms
 control: Grid

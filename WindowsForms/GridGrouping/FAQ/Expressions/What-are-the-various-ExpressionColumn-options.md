@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-various-ExpressionColumn-options
+title: What-are-the-various-ExpressionColumn-options | WindowsForms | Syncfusion
 description: what are the various expressioncolumn options
 platform: WindowsForms
 control: GridGrouping

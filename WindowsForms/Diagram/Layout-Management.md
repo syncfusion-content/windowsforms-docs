@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Management
+title: Layout-Management | WindowsForms | Syncfusion
 description: layout management
 platform: WindowsForms
 control: Diagram

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-a-bars-visibility-programmatically
+title: How-to-set-a-bars-visibility-programmatically | WindowsForms | Syncfusion
 description: how to set a bar's visibility programmatically
 platform: WindowsForms
 control: Orientation

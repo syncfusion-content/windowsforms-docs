@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-or-format-a-HeaderFooter
+title: How-to-set-or-format-a-HeaderFooter | WindowsForms | Syncfusion
 description:  How to set or format a Header/Footer
 platform: WindowsForms
 control: XlsIO	

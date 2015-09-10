@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-binding
+title: Data-binding | WindowsForms | Syncfusion
 description: data binding
 platform: WindowsForms
 control: Editors Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider-Customization
+title: Slider-Customization | WindowsForms | Syncfusion
 description: slider customization
 platform: WindowsForms
 control: ToggleButton 

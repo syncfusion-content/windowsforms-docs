@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-ignore-the-green-error-marker-in-worksheets
+title: How-to-ignore-the-green-error-marker-in-worksheets | WindowsForms | Syncfusion
 description:  How to ignore the green error marker in worksheets
 platform: WindowsForms
 control: XlsIO	

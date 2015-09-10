@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events | WindowsForms | Syncfusion
 description: events
 platform: WindowsForms
 control: ColorPickerUIAdv 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-open-an-existing-Xlsx-workbook-and-save-it-as-Xlsx
+title: How-to-open-an-existing-Xlsx-workbook-and-save-it-as-Xlsx | WindowsForms | Syncfusion
 description:  How to open an existing Xlsx workbook and save it as Xlsx
 platform: WindowsForms
 control: XlsIO	

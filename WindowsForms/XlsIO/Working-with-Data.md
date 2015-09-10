@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Data
+title: Working-with-Data | WindowsForms | Syncfusion
 description: working with data
 platform: ejmvc
 control: XlsIO	

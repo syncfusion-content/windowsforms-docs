@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Essential Studio Windows Forms
+title: Essential Studio Windows Forms | WindowsForms | Syncfusion
 description: Essential Studio Windows Forms
 platform: WindowsForms
 control: Editors Package

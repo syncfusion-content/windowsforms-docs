@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Populate-the-ParentNode-and-ChildNode-for-the-selected-node-programmatically
+title: How-to-Populate-the-ParentNode-and-ChildNode-for-the-selected-node-programmatically | WindowsForms | Syncfusion
 description: how to populate the parentnode and childnode for the selected node programmatically
 platform: WindowsForms
 control: TreeView 

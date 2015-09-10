@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-pre-select-a-checkbox-inside-a-grid-cell
+title: How-to-pre-select-a-checkbox-inside-a-grid-cell | WindowsForms | Syncfusion
 description: how to pre-select a checkbox inside a grid cell
 platform: WindowsForms
 control: Grid

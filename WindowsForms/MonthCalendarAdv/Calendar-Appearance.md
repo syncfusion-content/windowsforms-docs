@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar Appearance
+title: Calendar Appearance | WindowsForms | Syncfusion
 description: Calendar Appearance
 platform: WindowsForms
 control: CalendarDateTime

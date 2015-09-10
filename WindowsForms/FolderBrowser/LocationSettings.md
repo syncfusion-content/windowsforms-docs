@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Location Settings
+title: Location Settings | WindowsForms | Syncfusion
 description: location settings
 platform: WindowsForms
 control: Tools

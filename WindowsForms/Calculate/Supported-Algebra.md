@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-Algebra
+title: Supported-Algebra | WindowsForms | Syncfusion
 description: supported algebra
 platform: WindowsForms
 control: Calculate

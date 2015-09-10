@@ -1,6 +1,6 @@
 ---
 layout: post
-title: StackedGroupBar 
+title: StackedGroupBar  | WindowsForms | Syncfusion
 description: StackedGroupBar 
 platform: WindowsForms
 control: GroupBar

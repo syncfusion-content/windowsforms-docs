@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System-Requirements
+title: System-Requirements | WindowsForms | Syncfusion
 description: system requirements
 platform: WindowsForms
 control: DocIO

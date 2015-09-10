@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reordering-XPTaskPage
+title: Reordering-XPTaskPage | WindowsForms | Syncfusion
 description: reordering xptaskpage
 platform: WindowsForms
 control: XPTaskPane

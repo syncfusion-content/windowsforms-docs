@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-SplashControl
+title: Creating-SplashControl | WindowsForms | Syncfusion
 description: creating splashcontrol
 platform: WindowsForms
 control: SplashControl

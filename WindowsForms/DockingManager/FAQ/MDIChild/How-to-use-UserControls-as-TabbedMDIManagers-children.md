@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to use UserControls as TabbedMDIManager’s children
+title: How to use UserControls as TabbedMDIManager’s children | WindowsForms | Syncfusion
 description: How to use UserControls as TabbedMDIManager’s children
 platform: WindowsForms
 control: DockingManager

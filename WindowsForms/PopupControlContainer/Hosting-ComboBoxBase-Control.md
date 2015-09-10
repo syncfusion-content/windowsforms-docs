@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hosting ComboBoxBase Control 
+title: Hosting ComboBoxBase Control  | WindowsForms | Syncfusion
 description: Hosting ComboBoxBase Control 
 platform: WindowsForms
 control: Editors Package

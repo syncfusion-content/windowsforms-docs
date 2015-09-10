@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard
+title: Keyboard | WindowsForms | Syncfusion
 description:  keyboard
 platform: WindowsForms
 control: HTML UI

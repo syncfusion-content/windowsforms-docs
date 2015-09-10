@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Axes
+title: Chart-Axes | WindowsForms | Syncfusion
 description: chart axes
 platform: WindowsForms
 control: Chart

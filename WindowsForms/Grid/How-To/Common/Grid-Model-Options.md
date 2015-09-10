@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Model-Options
+title: Grid-Model-Options | WindowsForms | Syncfusion
 description: grid model options 
 platform: WindowsForms
 control: Grid

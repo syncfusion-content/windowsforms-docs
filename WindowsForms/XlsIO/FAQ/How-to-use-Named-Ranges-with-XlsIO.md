@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-use-Named-Ranges-with-XlsIO
+title: How-to-use-Named-Ranges-with-XlsIO | WindowsForms | Syncfusion
 description:  How to use Named Ranges with XlsIO
 platform: WindowsForms
 control: XlsIO	

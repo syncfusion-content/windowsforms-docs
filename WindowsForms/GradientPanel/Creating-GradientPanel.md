@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating GradientPanel
+title: Creating GradientPanel | WindowsForms | Syncfusion
 description: Creating GradientPanel
 platform: WindowsForms
 control: Editors Package

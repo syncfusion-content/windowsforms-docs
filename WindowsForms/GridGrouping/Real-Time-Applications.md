@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Real-Time-Applications
+title: Real-Time-Applications | WindowsForms | Syncfusion
 description: real time applications
 platform: WindowsForms
 control: GridGrouping

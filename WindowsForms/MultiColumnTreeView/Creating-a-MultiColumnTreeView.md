@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a MultiColumnTreeView
+title: Creating a MultiColumnTreeView | WindowsForms | Syncfusion
 description: Creating a MultiColumnTreeView
 platform: WindowsForms
 control: MultiColumnTreeView

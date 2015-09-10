@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-remove-the-Context-Menu-for-a-particular-ta
+title: How-to-remove-the-Context-Menu-for-a-particular-ta | WindowsForms | Syncfusion
 description: how to remove the context menu for a particular tab
 platform: wpf
 control: TabbedMDIPackage

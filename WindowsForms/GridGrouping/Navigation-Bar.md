@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigation-Bar
+title: Navigation-Bar | WindowsForms | Syncfusion
 description: navigation bar
 platform: WindowsForms
 control: GridGrouping

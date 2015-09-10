@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-close-button-in-TabbedGroupMD
+title: How-to-customize-the-close-button-in-TabbedGroupMD | WindowsForms | Syncfusion
 description: how to customize the close button in tabbedgroupmdimanager
 platform: wpf
 control: TabbedMDIPackage

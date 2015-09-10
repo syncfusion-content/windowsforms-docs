@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-create-MultilineText-in-TabPages-ToolTipTex
+title: How-to-create-MultilineText-in-TabPages-ToolTipTex | WindowsForms | Syncfusion
 description: how to create multilinetext in tabpages tooltiptext
 platform: WindowsForms
 control: TabsPackage

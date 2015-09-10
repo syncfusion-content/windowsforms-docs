@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task
+title: Task | WindowsForms | Syncfusion
 description: task
 platform: WindowsForms
 control: ProjIO

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation-Settings
+title: Orientation-Settings | WindowsForms | Syncfusion
 description: orientation settings
 platform: WindowsForms
 control: ProgressBarAdv

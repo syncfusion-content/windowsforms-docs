@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FlowLayout
+title: FlowLayout | WindowsForms | Syncfusion
 description: flowlayout
 platform: WindowsForms
 control: Layout Managers Package

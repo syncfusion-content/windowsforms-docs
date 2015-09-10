@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-display-custom-text-on-the-ProgressBarAdv-to-indicate-the-status-of-the-task-instead-of-the-percentage-completed
+title: How-to-display-custom-text-on-the-ProgressBarAdv-to-indicate-the-status-of-the-task-instead-of-the-percentage-completed | WindowsForms | Syncfusion
 description: how to display custom text on the progressbaradv to indicate the status of the task instead of the percentage completed
 platform: WindowsForms
 control: Notification Package 

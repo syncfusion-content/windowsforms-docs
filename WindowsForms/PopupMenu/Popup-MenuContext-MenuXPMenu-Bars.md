@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Popup-MenuContext-MenuXPMenu-Bars
+title: Popup-MenuContext-MenuXPMenu-Bars | WindowsForms | Syncfusion
 description: popup menucontext menuxpmenu bars
 platform: WindowsForms
 control: Popup-MenuContext-MenuXPMenu-Bars

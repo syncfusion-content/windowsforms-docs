@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Applying Themes
+title:  Applying Themes | WindowsForms | Syncfusion
 description: Concepts and Features
 platform: WindowsForms
 control: GroupView

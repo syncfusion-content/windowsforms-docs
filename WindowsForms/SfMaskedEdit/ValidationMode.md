@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ValidationMode
+title: ValidationMode | WindowsForms | Syncfusion
 description: validationmode
 platform: WindowsForms
 control: SfMaskedEdit

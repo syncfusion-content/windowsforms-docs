@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Export
+title: Text-Export | WindowsForms | Syncfusion
 description: text export
 platform: WindowsForms
 control: Edit

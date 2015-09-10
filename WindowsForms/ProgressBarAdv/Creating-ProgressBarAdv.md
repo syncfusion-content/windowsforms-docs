@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-ProgressBarAdv
+title: Creating-ProgressBarAdv | WindowsForms | Syncfusion
 description: creating progressbaradv
 platform: WindowsForms
 control: ProgressBarAdv

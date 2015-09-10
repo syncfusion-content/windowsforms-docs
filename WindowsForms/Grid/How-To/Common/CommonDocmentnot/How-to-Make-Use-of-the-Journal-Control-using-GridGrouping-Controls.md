@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Make Use of the Journal Control using GridGrouping Controls
+title: How to Make Use of the Journal Control using GridGrouping Controls | WindowsForms | Syncfusion
 description: how to make use of the journal control using gridgrouping controls
 platform: WindowsForms
 control: GridGrouping

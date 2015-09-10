@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-a-Value-into-a-Cell
+title: How-to-Set-a-Value-into-a-Cell | WindowsForms | Syncfusion
 description: how to set a value into a cell
 platform: WindowsForms
 control: Grid

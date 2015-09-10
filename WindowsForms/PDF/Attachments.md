@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attachments
+title: Attachments | WindowsForms | Syncfusion
 description: attachments
 platform: WindowsForms
 control: PDF

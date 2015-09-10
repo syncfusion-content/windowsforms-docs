@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XPToolbar-Properties
+title: XPToolbar-Properties | WindowsForms | Syncfusion
 description: xptoolbar properties
 platform: WindowsForms
 control: XPToolbar

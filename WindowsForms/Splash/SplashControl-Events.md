@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SplashControl-Events
+title: SplashControl-Events | WindowsForms | Syncfusion
 description: splashcontrol events
 platform: WindowsForms
 control: SplashControl

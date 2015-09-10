@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabControlAdv
+title: TabControlAdv | WindowsForms | Syncfusion
 description: tabcontroladv
 platform: WindowsForms
 control: TabsPackage 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DefaultTile
+title: DefaultTile | WindowsForms | Syncfusion
 description: defaulttile
 platform: WindowsForms
 control: HubTile

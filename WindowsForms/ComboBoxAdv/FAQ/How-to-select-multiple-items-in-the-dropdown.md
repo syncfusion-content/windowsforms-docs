@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-select-multiple-items-in-the-dropdown
+title: How-to-select-multiple-items-in-the-dropdown | WindowsForms | Syncfusion
 description: how to select multiple items in the dropdown?
 platform: WindowsForms
 control: ComboBoxAdv

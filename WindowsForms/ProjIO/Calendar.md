@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar
+title: Calendar | WindowsForms | Syncfusion
 description: calendar
 platform: WindowsForms
 control: ProjIO

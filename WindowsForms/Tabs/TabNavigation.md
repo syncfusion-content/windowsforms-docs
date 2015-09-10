@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabNavigation
+title: TabNavigation | WindowsForms | Syncfusion
 description: tabnavigation
 platform: WindowsForms
 control: TabsPackage 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-started
+title: Getting-started | WindowsForms | Syncfusion
 description: getting started
 platform: WindowsForms
 control: Presentation

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior Settings
+title: Behavior Settings | WindowsForms | Syncfusion
 description: Behavior Settings
 platform: WindowsForms
 control: MaskedEditBox

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prevent tabbed docking
+title: How to prevent tabbed docking | WindowsForms | Syncfusion
 description: How to prevent tabbed docking
 platform: WindowsForms
 control: DockingManager

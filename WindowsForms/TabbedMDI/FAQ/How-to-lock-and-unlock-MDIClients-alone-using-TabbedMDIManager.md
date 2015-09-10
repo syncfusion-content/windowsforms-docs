@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-lock-and-unlock-MDIClients-alone-using-TabbedMDIManager
+title: How-to-lock-and-unlock-MDIClients-alone-using-TabbedMDIManager | WindowsForms | Syncfusion
 description: how to lock and unlock mdiclients alone using tabbedmdimanager
 platform: WindowsForms
 control: TabbedMDIPackage

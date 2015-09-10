@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation-And-Deployment
+title: Installation-And-Deployment | WindowsForms | Syncfusion
 description: installation and deployment
 platform: WindowsForms
 control: Diagram

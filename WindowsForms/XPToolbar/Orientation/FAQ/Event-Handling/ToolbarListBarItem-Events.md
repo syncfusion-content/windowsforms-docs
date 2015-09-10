@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolbarListBarItem-Events
+title: ToolbarListBarItem-Events | WindowsForms | Syncfusion
 description: toolbarlistbaritem events
 platform: WindowsForms
 control: Orientation

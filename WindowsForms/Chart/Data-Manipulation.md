@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Manipulation
+title: Data-Manipulation | WindowsForms | Syncfusion
 description: data manipulation
 platform: WindowsForms
 control: Chart

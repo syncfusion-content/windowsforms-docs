@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating PercentTextBox
+title: Creating PercentTextBox | WindowsForms | Syncfusion
 description: Creating PercentTextBox
 platform: WindowsForms
 control: Editors Package

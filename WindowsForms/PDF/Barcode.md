@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Barcode
+title: Barcode | WindowsForms | Syncfusion
 description: barcode
 platform: WindowsForms
 control: PDF

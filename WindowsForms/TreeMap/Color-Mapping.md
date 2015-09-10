@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color-Mapping
+title: Color-Mapping | WindowsForms | Syncfusion
 description: color mapping
 platform: WindowsForms
 control: TreeMap 

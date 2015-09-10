@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TextElement
+title: TextElement | WindowsForms | Syncfusion
 description: textelement
 platform: WindowsForms
 control: Control Name undefined

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Statistical-Formulas
+title: Statistical-Formulas | WindowsForms | Syncfusion
 description: statistical formulas
 platform: WindowsForms
 control: Chart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-Grid-Record-Navigation-Control
+title: Creating-Grid-Record-Navigation-Control | WindowsForms | Syncfusion
 description: creating grid record navigation control
 platform: WindowsForms
 control: GridRecordNavigation

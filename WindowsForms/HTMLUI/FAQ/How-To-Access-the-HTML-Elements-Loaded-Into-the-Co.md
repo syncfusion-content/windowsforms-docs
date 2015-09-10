@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Access-the-HTML-Elements-Loaded-Into-the-Co
+title: How-To-Access-the-HTML-Elements-Loaded-Into-the-Co | WindowsForms | Syncfusion
 description: how to access the html elements loaded into the control?
 platform: WindowsForms
 control: HTML UI

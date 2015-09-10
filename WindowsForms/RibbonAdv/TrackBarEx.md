@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TrackBarEx
+title: TrackBarEx | WindowsForms | Syncfusion
 description: trackbarex
 platform: WindowsForms
 control: RibbonControlAdv 

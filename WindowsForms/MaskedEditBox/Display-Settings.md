@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Settings
+title: Display Settings | WindowsForms | Syncfusion
 description: Display Settings
 platform: WindowsForms
 control: MaskedEditBox

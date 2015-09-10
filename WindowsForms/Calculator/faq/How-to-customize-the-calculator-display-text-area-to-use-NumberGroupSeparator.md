@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-customize-the-calculator-display-text-area-to-use-NumberGroupSeparator
+title: How-to-customize-the-calculator-display-text-area-to-use-NumberGroupSeparator | WindowsForms | Syncfusion
 description: how to customize the calculator display text area to use numbergroupseparator
 platform: WindowsForms
 control: Editors Package

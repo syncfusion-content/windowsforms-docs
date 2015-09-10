@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically?
+title: How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically? | WindowsForms | Syncfusion
 description: how to add a wizard page to the wizard control programmatically?
 platform: WindowsForms
 control: Wizard

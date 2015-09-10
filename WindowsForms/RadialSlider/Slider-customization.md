@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider-customization
+title: Slider-customization | WindowsForms | Syncfusion
 description: slider customization
 platform: WindowsForms
 control: RadialSlider 

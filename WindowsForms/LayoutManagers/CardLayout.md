@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CardLayout
+title: CardLayout | WindowsForms | Syncfusion
 description: cardlayout
 platform: WindowsForms
 control: Layout Managers Package

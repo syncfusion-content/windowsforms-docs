@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Status-Bar
+title: Status-Bar | WindowsForms | Syncfusion
 description: status bar
 platform: WindowsForms
 control: Edit

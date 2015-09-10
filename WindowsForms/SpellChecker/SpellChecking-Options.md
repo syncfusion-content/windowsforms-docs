@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SpellChecking-Options
+title: SpellChecking-Options | WindowsForms | Syncfusion
 description: spellcheckingoptions
 platform: WindowsForms
 control: Editors Package

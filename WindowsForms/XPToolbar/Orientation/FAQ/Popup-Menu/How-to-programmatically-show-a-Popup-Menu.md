@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-programmatically-show-a-Popup-Menu
+title: How-to-programmatically-show-a-Popup-Menu | WindowsForms | Syncfusion
 description: how to programmatically show a popup menu
 platform: WindowsForms
 control: Orientation

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Settings
+title: Number Settings | WindowsForms | Syncfusion
 description: number settings
 platform: WindowsForms
 control: DoubleTextBox

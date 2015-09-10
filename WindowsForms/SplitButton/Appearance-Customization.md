@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-Customization
+title: Appearance-Customization | WindowsForms | Syncfusion
 description: appearance customization
 platform: WindowsForms
 control: SplitButton 

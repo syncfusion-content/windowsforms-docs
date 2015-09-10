@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layers
+title: Layers | WindowsForms | Syncfusion
 description: layers
 platform: WindowsForms
 control: PDF

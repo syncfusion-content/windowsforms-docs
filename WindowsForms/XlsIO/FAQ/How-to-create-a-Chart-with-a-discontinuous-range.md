@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-create-a-Chart-with-a-discontinuous-range
+title: How-to-create-a-Chart-with-a-discontinuous-range | WindowsForms | Syncfusion
 description:  How to create a Chart with a discontinuous range
 platform: WindowsForms
 control: XlsIO	

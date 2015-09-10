@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Applying Themes
+title: Applying Themes | WindowsForms | Syncfusion
 description: Applying Themes
 platform: WindowsForms
 control: Editors Package
