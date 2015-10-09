@@ -1,0 +1,49 @@
+---
+layout: post
+title: View-the-PDF-stream-in-viewer | WindowsForms | Syncfusion
+description: view the pdf stream in viewer?
+platform: WindowsForms
+control: PDF Viewer
+documentation: ug
+---
+
+## View the PDF stream in viewer?
+
+PDF files as stream can be viewed in Essential Pdf Viewer using the overload available in the Load method. Following are the code snippets.
+
+
+
+{%highlight c#%}
+
+FileStream stream = new FileStream("Template.pdf", FileMode.Open);
+
+//Initialize PDF Viewer
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF
+
+pdfViewer1.Load(stream);
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+Dim stream As New FileStream("Template.pdf", FileMode.Open)
+
+
+
+'Initialize PDF Viewer
+
+Dim pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF
+
+pdfViewer1.Load(stream)
+
+{%endhighlight%}
+
