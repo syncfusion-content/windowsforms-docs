@@ -1,0 +1,25 @@
+---
+layout: post
+title: Overview | WindowsForms | Syncfusion
+description: Overview
+platform: WindowsForms
+control: AutoLabel
+documentation: ug
+---
+
+
+# Overview
+
+The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel is automatically repositioned as the labeled control's position changes.
+
+![](AutoLabel-Images/Overview_img7.jpg)
+
+
+
+The FlowLayout layout manager always treats the AutoLabel-labeled control pair as a unit. You can use AutoLabels and FlowLayouts together to implement complex and powerful form layouts.
+
+ {% seealso %}
+ 
+ [Labeling a Control](http://docs.syncfusion.com/windowsforms/autolabel/labeling-a-control)
+ 
+  {% endseealso %}
