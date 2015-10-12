@@ -48,7 +48,7 @@ When the button view is set to false, the drag-and-drop, or re-ordering, of the 
 
 
 1. The events on the header panel that are inside the pop-up window cannot be replayed. The SetCurrentCell and ResizeRow events of the Syncfusion.QuickTestProfessional.Grid that are associated with the Calendar are triggered by the pop-up window. These events are recorded, but cannot be played back in the replay. While replaying, they should be manually removed.
-2. Once the calendar events are handled, the replay works slower. This is because of the ‘for each’ loop in the replay, which enables you to trace all the controls that are inside the pop-up window and then show or hide them as you need.
+2. Once the calendar events are handled, the replay works slower. This is because of the ‘for each’ loop in the replay, enables you to trace all the controls that are inside the pop-up window and then show or hide them as you need.
 
 
 
@@ -58,8 +58,8 @@ When the button view is set to false, the drag-and-drop, or re-ordering, of the 
 
 
 
-1. When two controls are in tabbed style and you click on the inactive tab and drag it outside the tabbed mode, it will not replay properly. In order to avoid this problem, select the tab that is going to be dragged, click on the tab, and drag it outside.
-2. When a floating form state is changed to an MDIChild state and MDIChild state is changed to a floating form state, it will not replay properly.
+1. When two controls are in tabbed style and you click on the inactive tab and drag it outside the tabbed mode, it does not replay properly. In order to avoid this problem, select the tab that is going to be dragged, click on the tab, and drag it outside.
+2. When a floating form state is changed to an MDIChild state and MDIChild state is changed to a floating form state, it does not replay properly.
 
 
 
@@ -67,5 +67,5 @@ When the button view is set to false, the drag-and-drop, or re-ordering, of the 
 
 
 
-The Quick access panel customize menu will not be recorded.
+The Quick access panel customize menu is not recorded.
 

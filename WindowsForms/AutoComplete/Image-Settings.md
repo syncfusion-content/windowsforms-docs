@@ -9,7 +9,7 @@ documentation: ug
 
 # Image Settings
 
-We can add a dropdown item with image to the AutoComplete popup, through the AutoComplete.AddHistoryItem method. An imagelist should be associated with AutoComplete control for this purpose. Specify the item text and the image index in this method.
+You can add a dropdown item with image to the AutoComplete popup, through the AutoComplete.AddHistoryItem method. An imagelist should be associated with AutoComplete control for this purpose. Specify the item text and the image index in this method.
 
 <table> 
 <tr>
@@ -92,11 +92,11 @@ Me.autoComplete1.AddHistoryItem("User Item", 2)
 
 ## Items with Images Through External DataSource
 
-Items with images can be added to the AutoCompletePopup, also using external datasource like XML file. A sample which demonstrates the implementation of external datasource is available in the below location. 
+Items with images can be added to the AutoCompletePopup, also using external datasource like XML file. A sample that demonstrates the implementation of external datasource is available in the following location. 
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
-While using an external datasource, the Columns property can be initially refreshed by clicking the _Refresh Columns_ verb, visible in the designer.
+While using an external datasource, the Columns property can be initially refreshed by clicking the _Refresh Columns_ verb, visible in the Designer.
 
 {% seealso %}
  

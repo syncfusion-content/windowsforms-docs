@@ -102,11 +102,11 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 9. Browse and select the path of the working folder by clicking (![](Getting-Started_images/Getting-Started_img15.jpeg)) for the Working folder: label.
 
-   N> Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box includes all the processes that are descendant to the current process. Both these check boxes will be selected by default.
+   N> Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box includes all the processes that are descendant to the current process. Both these check boxes are selected by default.
 
 10. Click OK.
 
-    N> The path of the application and working folder are displayed in the Application details frame as shown below.
+    N> The path of the application and working folder are displayed in the Application details frame as shown here.
 
     ![](Getting-Started_images/Getting-Started_img18.png)
 
@@ -114,7 +114,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 11. Click OK. 
 
-    N> The recording starts. The application in the given path is opened as shown below.
+    N> The recording starts. The application in the given path is opened as shown here.
 
     ![](Getting-Started_images/Getting-Started_img20.png)
 
@@ -123,11 +123,10 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 12. Perform required valid user-action in the application. 
 
 
+    N> Whenever you perform any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
 
-    N> Whenever the user performs any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
-
-    The DLL renders the correct method names of the Syncfusion namespace that will be called respective to the user-actions performed.
-    These method names are then recorded and displayed in the screen behind the running application, as shown below.
+    The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed.
+    These method names are then recorded and displayed in the screen behind the running application, as shown here.
 
 
 
@@ -137,7 +136,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 
 
-    N> This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording in which the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown below.
+    N> This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording where the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown here.
 
 
 
@@ -151,7 +150,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 
 
-    N> The low-level recording is the default recording, which is done by QTP when the steps mentioned in the Configuring Essential QuickTest Professional section are not followed. The recording can be stopped by clicking the Stop button in the toolbar.
+    N> The low-level recording is the default recording, done by QTP when the steps mentioned in the Configuring Essential QuickTest Professional section are not followed. The recording can be stopped by clicking the Stop button in the toolbar.
 
 
 
@@ -159,7 +158,7 @@ The process of creating and recording the test is completed.
 
 ## Running a Test
 
-On recording, all the user actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test, follow the steps below: 
+On recording, all the user-actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test, follow the given steps: 
 
 
 
@@ -179,8 +178,8 @@ On recording, all the user actions performed in the control are just noted with 
 
    In the Results Location tab, two options are provided:
 
-   * New run results folder: Allows the results of the test to be written to the location mentioned in the text box below it.
-   * Temporary run results folder (overwrites any existing temporary results) - Allows the results to be stored in the temporary location.
+   * New run results folder: Allows the results of the test to be written to the location mentioned in the text box after it.
+   * Temporary run results folder, overwrites any existing temporary results, allows the results to be stored in the temporary location.
 
 
 
@@ -192,7 +191,7 @@ On recording, all the user actions performed in the control are just noted with 
 
 3. Browse and select the required location by clicking the <icon>
 
-   N> QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, in which the results are summarized as shown below:
+   N> QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as shown here:
 
 ![](Getting-Started_images/Getting-Started_img30.png)
 
@@ -241,7 +240,7 @@ You can run the edited test to check whether the newly added or changed scripts 
 
 
 
-N> Sometimes, the newly added or changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog will show the failure as shown below:
+N> Sometimes, the newly added or changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog shows the failure as shown here:
 
 ![](Getting-Started_images/Getting-Started_img34.jpeg)
 
@@ -259,7 +258,7 @@ For more details on running the test, refer to the previous section.
 
 
 
-The keyword view is meant for persons who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown below.
+The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
 
 ![](Getting-Started_images/Getting-Started_img35.jpeg)
 
@@ -275,7 +274,7 @@ To edit the test in Keyword view, you can perform any of the following actions:
 
 
 
-1. You can right-click any of the items listed under the Item header and choose one of the options available in the displayed menu as shown below.
+1. You can right-click any of the items listed under the Item header and choose one of the options available in the displayed menu as shown here.
 
 
 
@@ -289,7 +288,7 @@ _Figure_ _24_: Editing in Keyword View – Right-click
 
 
 
-For example, clicking Cut in the menu will cause the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
+For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
 
 
 
@@ -333,7 +332,7 @@ The test is saved.
 
 ## Running the Saved Test
 
-The tests that have been saved can be replayed later. To run a saved test, follow the steps below:
+The tests that have been saved can be replayed later. To run a saved test, follow the steps provided:
 
 
 
@@ -365,7 +364,7 @@ The tests that have been saved can be replayed later. To run a saved test, follo
 
 
 
-   _Figure_ _28__: Test Opened_
+   _Figure_ _28_: Test Opened
 
 
 

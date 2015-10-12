@@ -4,15 +4,15 @@ The following Voluntary Product Accessibility information refers to Syncfusion E
 
 ## Summary Table: Voluntary Product Accessibility Template
 
-****<table>
+<table>
 <tr>
 <td>
-**CRITERIA******<br/><br/></td><td>
-**SUPPORTING** **FEATURES******<br/><br/></td></tr>
+**CRITERIA**<br/><br/></td><td>
+**SUPPORTING** **FEATURES**<br/><br/></td></tr>
 <tr>
 <td>
 1194.21 Software applications and operating systems.<br/><br/><br/><br/></td><td>
-Please refer to the attached VPAT.<br/><br/></td></tr>
+Refer to the attached VPAT.<br/><br/></td></tr>
 <tr>
 <td>
 1194.22 Web-based intranet and internet<br/><br/>Information and applications.<br/><br/><br/><br/></td><td>
@@ -36,9 +36,9 @@ Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
 1194.31 Functional performance criteria.<br/><br/><br/><br/></td><td>
-Please refer to the attached VPAT.<br/><br/></td></tr>
+Refer to the attached VPAT.<br/><br/></td></tr>
 <tr>
 <td>
 1194.41 Information, documentation, and support.<br/><br/><br/><br/></td><td>
-Please refer to the attached VPAT.<br/><br/></td></tr>
+Refer to the attached VPAT.<br/><br/></td></tr>
 </table>

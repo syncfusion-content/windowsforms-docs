@@ -2,24 +2,24 @@
 
 ### X-Copy
 
-X-copy can supported by the Syncfusion assembly reference in the Solution Explorer, It can be achieved by setting it’s the Copy Local property of the reference to True. So that Syncfusion assemblies will be copied to the Release/Bin, Debug/Bin folders. And this deployment consists of copying the exe, dlls, xmls files to the client machines that similar to manual copy.
+X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting it’s the Copy Local property of the reference to "True", so that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. And this deployment consists of copying the exe, dlls, xmls files to the client machines similar to that of manual copy.
 
 ![](Deployment_images/Deployment_img1.jpeg)
 
 
 ### GAC
 
-Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the the developer machines. Also Syncfusion [Assembly Manager](../AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/Selvaganapathy/Desktop/assembly manager# "") will help to Add/ Remove the Syncfusion assemblies to/from GAC.
+Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the developer machines. Also Syncfusion's [Assembly Manager](../AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/Selvaganapathy/Desktop/assembly manager# "") helps you add or remove the Syncfusion assemblies to or from GAC.
 
 ## Installed Location
 
-The following Table represent Assemblies/ Samples and its installed location
+The following table represent Assemblies/ Samples and its installed location
 
 <table>
 <tr>
 <td>
-**Assemblies****/** **Samples******<br/><br/></td><td>
-installed location****<br/><br/></td></tr>
+**Assemblies/ Samples**<br/><br/></td><td>
+**Installed location**<br/><br/></td></tr>
 <tr>
 <td>
 GAC<br/><br/></td><td>

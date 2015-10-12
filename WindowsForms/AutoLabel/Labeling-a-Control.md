@@ -10,13 +10,13 @@ documentation: ug
 
 # Labeling a Control
 
-The following steps allows you to label a control.
+The following steps allow you to label a control.
 
-*  Create or open a Windows forms project.
-*  Add an AutoLabel Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
-*  Add the control (TextBox) that has to be labeled to the form.
+*  Create or open a Windows Forms project.
+*  Add an AutoLabel control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
+*  Add the control, for example TextBox, that has to be labeled to the form.
 *  Go to the Property grid and select the LabeledControl property.
-*  Select the control to be labeled (TextBox) from the dropdown box as shown below.
+*  Select the control to be labeled, TextBox, from the dropdown box as shown here.
 
    ![](AutoLabel-Images/Overview_img3.jpg) 
 

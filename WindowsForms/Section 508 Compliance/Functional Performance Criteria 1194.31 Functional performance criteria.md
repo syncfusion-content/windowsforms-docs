@@ -3,9 +3,9 @@
 <table>
 <tr>
 <td>
-**CRITERIA******<br/><br/></td><td>
-**SUPPORTING** **FEATURES******<br/><br/></td><td>
-**REMARKS** **AND** **EXPLANATIONS******<br/><br/></td></tr>
+**CRITERIA**<br/><br/></td><td>
+**SUPPORTING** **FEATURES**<br/><br/></td><td>
+**REMARKS** **AND** **EXPLANATIONS**<br/><br/></td></tr>
 <tr>
 <td>
 (a) At least one mode of operation and information retrieval that does not require user vision shall be provided or support for Assistive Technology used by people who are blind or visually impaired shall be provided.<br/><br/></td><td>

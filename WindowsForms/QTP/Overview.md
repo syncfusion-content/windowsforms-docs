@@ -15,13 +15,13 @@ This topic gives an introduction to the new Essential QuickTest Professional. It
 * Who can use the product or for whom is this product intended?
 * What is the product used for?
 
-You will also get an overview of what this manual has to offer.
+You also get an overview of what this manual has to offer.
 
 ## Introduction to Essential QuickTest Professional
 
-Essential QuickTest Professional is an add-on shipped with Essential Studio products offered by Syncfusion. It has been specially designed to meet the requirements of professionals who test the applications designed (using Syncfusion controls) with HP QuickTest Professional software. 
+Essential QuickTest Professional is an add-on shipped with Essential Studio products offered by Syncfusion. It has been specially designed to meet the requirements of professionals who test the applications designed, using Syncfusion controls with HP QuickTest Professional software. 
 
-Essential QuickTest Professional contains custom libraries, which help HP QuickTest Professional software recognize Syncfusion controls. These custom libraries are built with the help of QuickTest Professional .NET add-in extensibility. For more details, refer to HP QuickTest Professional help. 
+Essential QuickTest Professional contains custom libraries, that help HP QuickTest Professional software recognize Syncfusion controls. These custom libraries are built with the help of QuickTest Professional .NET add-in extensibility. For more details, refer to HP QuickTest Professional help. 
 
 
 
@@ -31,15 +31,15 @@ Essential QuickTest Professional contains custom libraries, which help HP QuickT
 
 
 
-The custom libraries allow Syncfusion controls to be used as a native object inside the QTP testing environment and enable testing of applications in QTP. Essential QuickTest Professional will help you to perform regression test on your application containing Syncfusion controls and thereby increase the reliability of the end product. The following chapters demonstrate the usage of our custom library in QTP.
+The custom libraries allow Syncfusion controls to be used as a native object inside the QTP testing environment and enable testing of applications in QTP. Essential QuickTest Professional helps you perform regression test on your application containing Syncfusion controls and thereby increase the reliability of the end product. The following chapters demonstrate the usage of the custom library in QTP.
 
 Essential QuickTest Professional comes with numerous samples as well as extensive documentation to guide you step-by-step. This user guide provides detailed information on the features and functionalities of ssential QuickTest Professional and is organized in the following order:
 
 
 
-Install and Configuration of Essential QuickTest Professional
+Install and Configuration of Essential QuickTest Professional.
 
-This section provides details about installing and configuring Essential QuickTest Professional, which is mandatory before you start using the add-on.
+This section provides details about installing and configuring Essential QuickTest Professional, mandatory before you start using the add-on.
 
 
 
@@ -93,7 +93,8 @@ The following are the prerequisites:
 <tr>
 <th>
 Testing Environments</th><td>
-1) QuickTest Professional version 9.5 and above2) QuickTest Professional .NET add-in</td></tr>
+1) QuickTest Professional version 9.5 and above
+2) QuickTest Professional .NET add-in</td></tr>
 <tr>
 <th>
 .NET Framework </th><td>
@@ -136,7 +137,7 @@ Operating Systems</th><td>
 
 ## Documentation
 
-Syncfusion provides the following documentation segments which cover all the necessary information pertaining to Essential QuickTest Professional.
+Syncfusion provides the following documentation segments that covers all the necessary information pertaining to Essential QuickTest Professional.
 
 
 

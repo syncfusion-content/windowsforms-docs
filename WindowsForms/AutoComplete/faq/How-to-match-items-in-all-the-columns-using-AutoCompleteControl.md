@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to match items in all the columns using AutoCompleteControl | WindowsForms | Syncfusion
-description: How to match items in all the columns using AutoCompleteControl
+title: How to match items in all the columns using AutoComplete control | WindowsForms | Syncfusion
+description: How to match items in all the columns using AutoComplete control
 platform: WindowsForms
 control: Editors Package
 documentation: ug
@@ -11,12 +11,12 @@ documentation: ug
 
 
 
-# How to match items in all the columns using AutoCompleteControl
+# How to match items in all the columns using AutoComplete control?
 
 
-Matching items in multiple columns is possible using the AutoComplete control. We need to set the AutoCompleteModes to MultiSuggest or MultiExtended mode for this.
+Matching items in multiple columns is possible using the AutoComplete control. You can set the AutoCompleteModes to MultiSuggest or MultiExtended mode for this.
 
-MultiSuggest - Possible matches from Multiple columns for the current content of the Active edit control, will be presented in a form of a popup window with a selectable list of matches. MultiSuggest mode is an extended mode of AutoSuggest. On selecting this mode, user  will be able to get the matching items in the active edit control from all the columns. 
+MultiSuggest - Possible matches from Multiple columns for the current content of the Active edit control, are presented in the form of a popup window with a selectable list of matches. MultiSuggest mode is an extended mode of AutoSuggest. On selecting this mode, you can get the matching items in the active edit control from all the columns. 
 
 {% highlight C# %}
 

@@ -5,12 +5,12 @@ Table illustrates the Control’s assembly and its dependencies.
 <table>
 <tr>
 <td>
-**Controls******<br/><br/></td><td>
-**Assembly******<br/><br/></td><td>
-**Dependencies******<br/><br/></td></tr>
+**Controls**<br/><br/></td><td>
+**Assembly**<br/><br/></td><td>
+**Dependencies**<br/><br/></td></tr>
 <tr>
 <td>
-AutoCompleteControl<br/><br/></td><td>
+AutoComplete<br/><br/></td><td>
 Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/><br/><br/></td><td>
 <br/><br/></td></tr>
 <tr>

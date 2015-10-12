@@ -17,7 +17,7 @@ The history list of AutoComplete control can be saved in the following formats.
 * MemoryStream
 * PersistState property
 
-The AutoComplete control has a fully built-in serialization feature that provides automatic serialization of the AutoComplete's history list.  The serialization mechanism is implemented using the standardized Syncfusion.Windows.Forms.AppStateSerializer component that acts as a central coordinator for all the Essential Tools components and provides the option to read / write to different media such as the default Isolated Storage, XML file, XML stream, Binary file, Binary stream and the Windows Registry.
+The AutoComplete control has a fully built-in serialization feature that provides automatic serialization of the AutoComplete's history list.  The serialization mechanism is implemented using the standardized Syncfusion.Windows.Forms.AppStateSerializer component that acts as a central coordinator for all the Essential Tools components and provides the option to read or write to different media such as the default Isolated Storage, XML file, XML stream, Binary file, Binary stream and the Windows Registry.
 
 ## Persisting AutoComplete's data in default storage 
 

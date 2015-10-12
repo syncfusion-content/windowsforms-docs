@@ -1,6 +1,6 @@
 ## Development Environments
 
-Following IDEs can be used for development that can [compatible](https://www.visualstudio.com/en-us/products/visual-studio-2015-compatibility-vs.aspx# "") with Microsoft Windows Operating System (From XP) 
+The following IDEs can be used for development that are [compatible](https://www.visualstudio.com/en-us/products/visual-studio-2015-compatibility-vs.aspx# "") with Microsoft Windows Operating System (From XP) 
 
 * Microsoft Visual Studio 2005
 * Microsoft Visual Studio 2008

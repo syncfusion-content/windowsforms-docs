@@ -8,7 +8,7 @@ A New Test:
 
 1. Open QTP by double-clicking the QuickTest Professional icon.
 
-**NOTE******
+**NOTE**
 
 The QuickTest Professional – Add-in Manager window is displayed.
 
@@ -20,7 +20,7 @@ The QuickTest Professional – Add-in Manager window is displayed.
 
 3. Click OK.
 
-**NOTE******
+**NOTE**
 
 The QuickTest Professional – [Start Page] window is displayed. There are two tabs, Start Page and Test, in the main pane of the window. The content under the Start Page tab is displayed by default.
 
@@ -42,7 +42,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 ![](GettingStarted_Images/WindowShowingRecordTool.jpeg)
 
-**NOTE******
+**NOTE**
 
 A Record and Run Settings dialog box is displayed.
 
@@ -52,20 +52,20 @@ A Record and Run Settings dialog box is displayed.
 
 2. Click the Windows Applications tab.
 
-**NOTE******
+**NOTE**
 
 The content under the tab is displayed.
 
 
 ![](GettingStarted_Images/RecordAndRunSettingsWindows.jpeg)
 
-**NOTE******
+**NOTE**
 
-The Record and run only on option button is selected by default, and the check boxes selected under it ensure that only the applications opened by QuickTest and added applications are tested.
+The "Record and Run only on" option button is selected by default, and the check boxes selected under it ensure that only the applications opened by QuickTest and added applications are tested.
 
 3. To add an application for testing, click the + button in the Application details: frame as shown in the figure above.
 
-**NOTE******
+**NOTE**
 
 The Application Details dialog box is displayed.
 
@@ -76,15 +76,15 @@ The Application Details dialog box is displayed.
 4. Browse and select the path of the application that is to be tested by clicking () for the Application: label.
 5. Browse and select the path of the working folder by clicking () for the Working folder: label.
 
-**NOTE******
+**NOTE**
 
-Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box includes all the processes that are descendant to the current process. Both these check boxes will be selected by default.
+Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box includes all the processes that are descendant to the current process. Both these check boxes are selected by default.
 
 6. Click OK.
 
-**NOTE******
+**NOTE**
 
-The path of the application and working folder are displayed in the Application details frame as shown below.
+The path of the application and working folder are displayed in the Application details frame as displayed in the following screenshot.
 
 
 
@@ -92,9 +92,9 @@ The path of the application and working folder are displayed in the Application 
 
 7. Click OK.
 
-**NOTE******
+**NOTE**
 
-The recording starts. The application in the given path is opened as shown below.
+The recording starts. The application in the given path is opened as shown here.
 
 
 
@@ -102,35 +102,35 @@ The recording starts. The application in the given path is opened as shown below
 
 8. Perform required valid user-action in the application.
 
-**NOTE******
+**NOTE**
 
-Whenever the user performs any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
+Whenever you perform any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
 
-The DLL renders the correct method names of the Syncfusion namespace that will be called respective to the user-actions performed. These method names are then recorded and displayed in the screen behind the running application, as shown below.
+The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed. These method names are then recorded and displayed in the screen behind the running application, as shown here.
 
 ![](GettingStarted_Images/DefaultRecordingUsingSyncfusionControls.jpeg)
 
-**NOTE******
+**NOTE**
 
-This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording in which the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown below.
+This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording where the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown here.
 
 
 
 ![](GettingStarted_Images/DefaultRecording.jpeg)
 
-**NOTE******
+**NOTE**
 
-The low-level recording is the default recording, which is done by QTP when the steps mentioned in the Configuring Essential QuickTest Professional section are not followed. The recording can be stopped by clicking the Stop button in the toolbar.
+The low-level recording is the default recording, done by QTP when the steps mentioned in the Configuring Essential QuickTest Professional section are not followed. The recording can be stopped by clicking the Stop button in the toolbar.
 
 The process of creating and recording the test is completed.
 
 ### Running a Test
 
-On recording, all the user actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test, follow the steps below:
+On recording, all the user-actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test, follow the given steps:
 
 1. Click Run in the toolbar.
 
-**NOTE******
+**NOTE**
 
 The Run dialog box is displayed. The Results Location tab is highlighted by default.
 
@@ -140,19 +140,20 @@ The Run dialog box is displayed. The Results Location tab is highlighted by defa
 
 In the Results Location tab, two options are provided:
 
-  * New run results folder: Allows the results of the test to be written to the location mentioned in the text box below it.
-  * Temporary run results folder (overwrites any existing temporary results) - Allows the results to be stored in the temporary location.
+  * New run results folder: Allows the results of the test to be written to the location mentioned in the text box after it.
+  * Temporary run results folder, overwrites any existing temporary results, allows the results to be stored in the temporary location.
+
 2. Click the required option.
 
-**NOTE******
+**NOTE**
 
 Selecting one option renders the other unavailable.
 
-3. Browse and select the required location by clicking the
+3. Browse and select the required location by clicking it.
 
-**NOTE******
+**NOTE**
 
-QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, in which the results are summarized as shown below:
+QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as follows:
 
 
 
@@ -178,9 +179,9 @@ The following image shows adding a script line to the Expert View pane.
 
 You can run the edited test to check whether the newly added or changed scripts affect the running process by showing the changes in the running application.
 
-**NOTE******
+**NOTE**
 
-Sometimes, the newly added or changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog will show the failure as shown below:
+Sometimes, the newly added or changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog shows the failure as follows:
 
 
 
@@ -190,7 +191,7 @@ For more details on running the test, refer to the previous section.
 
 #### Editing in Keyword View
 
-The keyword view is meant for persons who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown below.
+The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
 
 
 
@@ -198,15 +199,15 @@ The keyword view is meant for persons who are not experts in VB scripts. Keyword
 
 To edit the test in Keyword view, you can perform any of the following actions:
 
-1. You can right-click any of the items listed under the Item header and choose one of the options available in the displayed menu as shown below.
+1. You can right-click any of the items listed under the Item header and choose one of the options available in the displayed menu.
 
 
 
 ![](GettingStarted_Images/EditingInKeyWordViewRightClick.jpeg)
 
-For example, clicking Cut in the menu will cause the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
+For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
 
-**NOTE******
+**NOTE**
 
 All the items under the Item header are represented as a drop-down list.
 
@@ -220,7 +221,7 @@ For more details on running the edited test, refer to Editing on Expert View top
 
 ### Saving a Test
 
-Saving a test is like saving any other document or picture. To save a test, follow the steps below:
+Saving a test is like saving any other document or picture. To save a test, follow the given steps:
 
 1. Click the Save button in the toolbar. The Save Test dialog box is displayed.
 
@@ -235,11 +236,11 @@ The test is saved.
 
 ### Running the Saved Test
 
-The tests that have been saved can be replayed later. To run a saved test, follow the steps below:
+The tests that have been saved can be replayed later. To run a saved test, follow the given steps:
 
 1. Click Open on the toolbar.
 
-**NOTE******
+**NOTE**
 
 The Open Test dialog box is displayed with a list of saved tests.
 
@@ -249,7 +250,7 @@ The Open Test dialog box is displayed with a list of saved tests.
 
 2. Select the required test and click Open.
 
-**NOTE******
+**NOTE**
 
 The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
 
