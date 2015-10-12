@@ -2134,7 +2134,7 @@ This event is raised when cell layout finishes. The arguments of this event are 
 
 * Graphics: Graphics on which the cell should be drawn.
 
-### Grid
+## Grid
 
 Grid is based on cell model that offers rich API for formatting and layout options API for formatting and layout options. It can take input from DataTable, arrays, or any other entity class. Formatting can be done at all levels of PdfGrid. More features like Nested Grids, Row, and Column Spanning are also supported. It offers full control over the appearance and is recommended to draw complex table structures. 
 
@@ -4444,7 +4444,7 @@ Gets or sets the image alignment type of the background image.</td><td>
 PdfGridImagePosition</td></tr>
 <tr>
 <td>
-{ '![RowSpan](http://docs.syncfusion.com/windowsforms/pdf/table/grid#row)' | markdownify }</td><td>
+{ '![RowSpan](http://help.syncfusion.com/windowsforms/pdf/table#row)' | markdownify }</td><td>
 Gets or sets the row span</td><td>
 Integer</td></tr>
 <tr>
