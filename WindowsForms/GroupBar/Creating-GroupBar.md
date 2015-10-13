@@ -86,7 +86,7 @@ The following code shows how to create a GroupBar control and add GroupBar Items
    ~~~
    {:.prettyprint}
    
-   ~~~ vbent
+   ~~~ vbnet
 		this.groupBar1 = new GroupBar();
 
 		this.groupBarItem1 = new GroupBarItem();
@@ -113,7 +113,7 @@ The following code shows how to create a GroupBar control and add GroupBar Items
    ~~~
    {:.prettyprint}
 
-   ~~~ vbent
+   ~~~ vbnet
 		Me.groupBar1 = New GroupBar()
 
 		Me.groupBarItem1 = New GroupBarItem()
