@@ -11,7 +11,7 @@ documentation: ug
 
 # Support to Set Maximum Limit for Suggestion List 
 
-The AutoComplete control displays a filtered suggestion list from a mapped data source in a drop-down as the user types text into the text box. This feature provides support to set the maximum number for the filtered suggestion. 
+The AutoComplete control displays a filtered suggestion list from a mapped data source in a drop-down as you type the text into the text box. This feature provides support to set the maximum number for the filtered suggestion. 
 
 ## Use Case Scenarios
 

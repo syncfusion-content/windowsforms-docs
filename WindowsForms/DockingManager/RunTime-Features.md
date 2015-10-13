@@ -192,6 +192,6 @@ Context menu for the tabbed controls is similar to the default context menu like
 
 {% seealso %}
 
-[Dock Context Menu Event](/windowsforms/Tools/DockingPackage/Docking-Events.html#dockcontextmenu-event), [How to display context menu of a docked control at a specified point?](/windowsforms/Tools/DockingPackage/FrequentlyAskedQuestions/Context-Menu.html#how-to-display-context-menu-of-a-docked-control-at-a-specified-point)
+[Dock Context Menu Event](/windowsforms/dockingmanager/Docking-Events.html#dockcontextmenu-event), [How to display context menu of a docked control at a specified point?](/windowsforms/dockingmanager/FrequentlyAskedQuestions/Context-Menu.html#how-to-display-context-menu-of-a-docked-control-at-a-specified-point)
 
 {% endseealso %}

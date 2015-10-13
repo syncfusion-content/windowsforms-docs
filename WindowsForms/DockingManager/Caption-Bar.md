@@ -92,7 +92,7 @@ Me.dockingManager1.DockedCaptionFont = New System.Drawing.Font("Segoe WP Light",
 
  
 
-N> DockLabelAlignment can also be set easily using [Task Window](/windowsforms/Tools/DockingPackage/Caption-Bar.html#custom-caption-buttons).
+N> DockLabelAlignment can also be set easily using [Task Window](/windowsforms/dockingmanager/caption-bar.html#custom-caption-buttons).
 
 ### Image for the Caption
 
@@ -187,7 +187,7 @@ Sets the text to be displayed in the docking window caption.Ctrl - Indicates the
 </table>
  
 
-N>[Background](/windowsforms/Tools/DockingPackage/Appearance-Settings.html#background-settings) and [foreground](/windowsforms/Tools/DockingPackage/Appearance-Settings.html#foreground-settings) appearance of the captions can be customized.
+N>[Background](/windowsforms/dockingmanager/Appearance-Settings.html#background-settings) and [foreground](/windowsforms/dockingmanager/Appearance-Settings.html#foreground-settings) appearance of the captions can be customized.
 
 {% seealso %}
 
@@ -207,7 +207,7 @@ The buttons available for the docked control and the properties which controls t
 
 ### Menu Button
 
-The menu button in a docked control can be made visible or hidden by setting the MenuButtonEnabled property to true. Clicking this button will display the [context menu](/windowsforms/Tools/DockingPackage/RunTime-Features.html#context-menu) items.
+The menu button in a docked control can be made visible or hidden by setting the MenuButtonEnabled property to true. Clicking this button will display the [context menu](/windowsforms/dockingmanager/RunTime-Features.html#context-menu) items.
 
 ### Maximize Button
 
@@ -223,14 +223,14 @@ The visibility of the Close button can be controlled using the CloseEnabled prop
 
 ### AutoHide Button
 
-Setting AutoHideEnabled property shows or hides the auto hide button in the docked control. Clicking this button will [autohide the docked controls](/windowsforms/Tools/DockingPackage/Docking-Styles.html#oncaptiondoubleclick-event).
+Setting AutoHideEnabled property shows or hides the auto hide button in the docked control. Clicking this button will [autohide the docked controls](/windowsforms/dockingmanager/Docking-Styles.html#oncaptiondoubleclick-event).
 
 
-N> Docking Manager let you customize the above default buttons and also add custom caption buttons. See [Custom Caption Buttons](/windowsforms/Tools/DockingPackage/Caption-Bar.html#custom-caption-buttons) for more details.
+N> Docking Manager let you customize the above default buttons and also add custom caption buttons. See [Custom Caption Buttons](/windowsforms/dockingmanager/caption-bar.html#custom-caption-buttons) for more details.
 
 {% seealso %}
 
-[Context Menu](/windowsforms/Tools/DockingPackage/RunTime-Features.html#context-menu), [AutoHiding](/windowsforms/Tools/DockingPackage/Docking-Styles.html#oncaptiondoubleclick-event)
+[Context Menu](/windowsforms/dockingmanager/RunTime-Features.html#context-menu), [AutoHiding](/windowsforms/dockingmanager/Docking-Styles.html#oncaptiondoubleclick-event)
 
 {% endseealso %}
 

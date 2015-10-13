@@ -9,7 +9,7 @@ documentation: ug
 
 # Installation and Deployment
 
-This section covers information on the install location, samples, licensing, and uninstallation of the recent version of Essential QuickTest Professional.
+This section provides information on install location, samples, licensing, and uninstallation of the recent version of Essential QuickTest Professional.
 
 
 
@@ -37,7 +37,7 @@ To install Essential Test Studio:
 
 
 
-2.Click Next. The User Information screen opens. 
+2. Click Next. The User Information screen opens. 
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
@@ -45,19 +45,20 @@ To install Essential Test Studio:
 
 
 
-3.Enter your name, organization and enter the license key in the corresponding text boxes provided.
+3. Enter your name, organization and enter the license key in the corresponding text boxes provided.
 
    N> Use Essential Studio Unlock Key as the Unlock Key for Essential Testing Studio. For version previous to 6.3.0.6, use “Syncfusion199“ as the Unlock Key.
 
-4.Click Next. The unlock key will be validated.
+4. Click Next. The unlock key is validated.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)
    
-    _Figure_ _3_: Select Destination Location
+  
+   _Figure_ _3_: Select Destination Location
 
 
 
-5.Click Next. The Select the installation folder window opens.
+5. Click Next. The Select the installation folder window opens.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
    
@@ -65,11 +66,11 @@ To install Essential Test Studio:
 
 
 
-6.To install in the default location, click Next. You can also browse to choose a required location. When you click Browse to select the desired location, the Destination Location screen displays the selected location. 
+6. To install in the default location, click Next. You can also browse to choose a required location. When you click Browse to select the desired location, the Destination Location screen displays the selected location. 
 
 
 
-7.Click Next. The Installation options window opens. Choose one of the following installation options as required:
+7. Click Next. The Installation options window opens. Choose one of the following installation options as required:
 
 
 
@@ -83,11 +84,11 @@ To install Essential Test Studio:
 
 
 
-   _Figure_ _5_: Installing options Screen_
+   _Figure_ _5_: Installing options Screen
 
 
 
-8.Click Next. The Ready to Install dialog opens.
+8. Click Next. The Ready to Install dialog opens.
 
 
 
@@ -95,11 +96,11 @@ To install Essential Test Studio:
 
 
 
-	_Figure_ _6_: Ready to Install Screen_
+  _Figure_ _6_: Ready to Install Screen
 
 
 
-9.Click Install. The installation process starts displaying the Installing screen as shown in the following screen shot.
+9. Click Install. The installation process starts displaying the Installing screen as shown in the following screenshot.
 
 
 
@@ -107,7 +108,7 @@ To install Essential Test Studio:
 
 
 
-	_Figure_ _7_: Installing Screen_
+  _Figure_ _7_: Installing Screen
 
 
 
@@ -117,17 +118,17 @@ To install Essential Test Studio:
 
 
 
-	_Figure_ _8_: Installation Completed_
+  _Figure_ _8_: Installation Completed
 
 #### Configuration
 
-An XML file in QTP called swfconfig is the configuration file located at _(Installed location of Essential QuickTest Professional)Config\<version-2.0, 3.5, or 4.0>\swfconfig_, which contains all the mapping information for QTP to recognize Syncfusion controls. In swfconfig, the controls are mapped to their corresponding custom server libraries (Essential QuickTest Professional DLLs) by giving the fully qualified name of the DLL.
+An XML file in QTP called swfconfig is the configuration file located at _(Installed location of Essential QuickTest Professional)Config\<version-2.0, 3.5, or 4.0>\swfconfig_, that contains all the mapping information for QTP to recognize Syncfusion controls. In swfconfig, the controls are mapped to their corresponding custom server libraries (Essential QuickTest Professional DLLs) by giving the fully qualified name of the DLL.
 
 
 
 N> The fully qualified name is the name of the file mentioned with its complete path.
 
-Any event that is triggered while working with a Syncfusion control, either by the user or the program activity, will be handled by the corresponding method in the custom library (DLL) given as the <DllName> tag under the <Control> tag.
+Any event that is triggered while working with a Syncfusion control, either by you or the program activity, is handled by the corresponding method in the custom library (DLL) given as the <DllName> tag under the <Control> tag.
 
 An XML file can be configured in one of two ways, automatically or manually.
 
@@ -153,9 +154,9 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 
 
-	N> You will find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively.
+	N> You can find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively.
 
-2. Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The sample code below maps the grid control to its corresponding DLL.
+2. Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding DLL.
 
 
 
@@ -202,7 +203,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
    
    > C:\Program Files\Syncfusion\Essential QuickTest Professional\<Version number>\
 
-   If you have installed Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, if Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
+ When you have installed Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, if Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
 
 
 
@@ -267,7 +268,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 
 
-   N> The SwfConfig.xml file will look like the following:
+   N> The SwfConfig.xml file appears as follows:
 
    ~~~ xml
 
@@ -358,7 +359,7 @@ The executable files for the samples are available under the following location:
 
 
 
-N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location.
+N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above mentioned location.
 
 
 
@@ -366,7 +367,7 @@ N> There is no sample browser available to run the samples for Essential QuickTe
 
 
 
-The source code for Essential QuickTest Professional is available at the following location:
+The source code for Essential QuickTest Professional is available in the following location:
 
 * (Installed location of the product)\Src\
 
@@ -391,7 +392,7 @@ This section deals with license keys, patches and the uninstallation process.
 
 
 
-Essentialqtpaddonsetup is the setup file for Essential QuickTest Professional, which can be installed with the same license key that has been used to install Essential Studio. Essential QuickTest Professional does not require a separate license. 
+Essentialqtpaddonsetup is the setup file for Essential QuickTest Professional, that can be installed with the same license key that has been used to install Essential Studio. Essential QuickTest Professional does not require a separate license. 
 
 
 

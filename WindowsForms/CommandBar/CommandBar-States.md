@@ -15,7 +15,7 @@ These two states of the CommandBar are explained in detail in the following topi
 
  {% seealso %}
 
- [Serialization](windowsforms/commandbar/serialization)
+ [Serialization](/windowsforms/commandbar/serialization)
  
  {% endseealso %}
 

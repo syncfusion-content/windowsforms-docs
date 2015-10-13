@@ -91,7 +91,7 @@ Indicates where the user can dock the controls in a form using the drag provider
 
 {% seealso %}
 
-[Docking](/windowsforms/Tools/DockingPackage/Docking-Events.html#docking)
+[Docking](/windowsforms/dockingmanager/Docking-Events.html#docking)
 
 {% endseealso %}
 
@@ -186,6 +186,6 @@ A sample which uses FreezeResizing property is available in the below sample ins
 
 {% seealso %}
 
-[Getting Started](/windowsforms/Tools/DockingPackage/Getting-Started)
+[Getting Started](/windowsforms/dockingmanager/Getting-Started)
 
 {% endseealso %}

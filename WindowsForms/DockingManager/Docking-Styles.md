@@ -19,7 +19,7 @@ This section will discuss the below four docking styles.
 ## Docking
 
 
-Docked control can be docked to any of the four sides of the container control, i.e., to Left, Right, Top and Bottom. DockingManager lets you specify the type of docking and the bounds of the docked control using the DockControl method. This method also sets [Tabbed style](windowsforms/dockingmanager/docking-styles#tabbed-docking) for the controls.
+Docked control can be docked to any of the four sides of the container control, i.e., to Left, Right, Top and Bottom. DockingManager lets you specify the type of docking and the bounds of the docked control using the DockControl method. This method also sets [Tabbed style](/windowsforms/dockingmanager/docking-styles#tabbed-docking) for the controls.
 
 {% highlight C# %}
 

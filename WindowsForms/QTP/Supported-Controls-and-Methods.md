@@ -19,7 +19,7 @@ The following controls are supported by Essential QuickTest Professional:
 
 
 
-By supported methods, we mean those methods that are recorded in QTP. 
+Supported methods denote those methods that are recorded in QTP. 
 
 ## Essential Grid
 
@@ -122,7 +122,7 @@ Retrieves the number of columns used.</td></tr>
 <tr>
 <td>
 int GetColumnIndex(string name)</td><td>
-Finds the column index for the given column name, returns 0 if search fails.</td></tr>
+Finds the column index for the given column name, returns 0 when the search fails.</td></tr>
 <tr>
 <td>
 string GetFormattedText(int row, int col)</td><td>
@@ -130,7 +130,7 @@ Retrives the formatted cell format.</td></tr>
 <tr>
 <td>
 bool IsFormulaCell(int row, int col, out string formula, out string computedValue)</td><td>
-For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns “false” if this cell is not a formula cell.</td></tr>
+For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns “false” when this cell is not a formula cell.</td></tr>
 <tr>
 <td>
 object GetCellData(int row, int col)</td><td>
@@ -166,7 +166,7 @@ Hides a range of rows specified for the Grid control.</td></tr>
 <tr>
 <td>
 ShowHiddenRow(int from, int to)</td><td>
-Shows a range of rows specified for the Grid control, which were hiding.</td></tr>
+Shows a range of rows specified for the Grid control, that are hiding.</td></tr>
 <tr>
 <td>
 HideCol(int from, int to)</td><td>
@@ -309,7 +309,7 @@ Checks if the column is visible.</td></tr>
 <tr>
 <td>
 bool IsFormulaCell(int row, int col, out string formula, out string computedValue) </td><td>
-For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns “false” if this cell is not a formula cell.</td></tr>
+For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns “false” when this cell is not a formula cell.</td></tr>
 <tr>
 <td>
 object GetCellData(int row, object col)</td><td>
@@ -717,11 +717,11 @@ Description</th></tr>
 <tr>
 <td>
 SetValue(int value)</td><td>
-The value will be appended to the calculated value.</td></tr>
+The value is appended to the calculated value.</td></tr>
 <tr>
 <td>
 SetAction(string action)</td><td>
-The action will be paused at the calculated value.</td></tr>
+The action is paused at the calculated value.</td></tr>
 <tr>
 <td>
 double GetCalculatedValue()</td><td>
@@ -912,7 +912,7 @@ Description</th></tr>
 <tr>
 <td>
 DockStateChange(string dock,string prevState, string ctrl,string hostForm,string dockingStyle)</td><td>
-Changes the docking window according to the specified current and previous state (i.e Pinned, Unpinned, Tabbed, and MDIChild).</td></tr>
+Changes the docking window according to the specified current and previous state, like Pinned, Unpinned, Tabbed, and MDIChild.</td></tr>
 <tr>
 <td>
 VisibilityChange(string ctrlName,string visibility)</td><td>
@@ -1273,7 +1273,7 @@ Expands the specified node.</td></tr>
 <tr>
 <td>
 SetCheckState(string fullPath, string checkState)</td><td>
-Sets the specified state of the CheckBox/OptionButton for the specified node.</td></tr>
+Sets the specified state of the CheckBox or OptionButton for the specified node.</td></tr>
 <tr>
 <td>
 SelectNodeWithModifierKeys(string fullPath,string ctrl, string shift)</td><td>
@@ -1289,7 +1289,7 @@ Edits the specified node.</td></tr>
 <tr>
 <td>
 DragDrop(string fullPath)</td><td>
-Perform the drag and drop operation for the nodes in the SelectedNodes list, which is added during drag over event.</td></tr>
+Perform the drag and drop operation for the nodes in the SelectedNodes list, that is added during drag over event.</td></tr>
 <tr>
 <td>
 AddToSelectedNodeList(string fullPath)</td><td>
@@ -1337,11 +1337,11 @@ Performs click on a bar item.</td></tr>
 <tr>
 <td>
 string TraceParentRoot(string barItemText)</td><td>
-For the given text of the required menu, TraceParentRoot will retrieve the full path as recoded.</td></tr>
+For the given text of the required menu, TraceParentRoot retrieves the full path as recoded.</td></tr>
 <tr>
 <td>
 int MenuItemPos(string ParentText, string barItemText)</td><td>
-For the given text of the required menu, MenuItemPos will return the position of the menu item.</td></tr>
+For the given text of the required menu, MenuItemPos returns the position of the menu item.</td></tr>
 </table>
 
 

@@ -142,7 +142,7 @@ Me.dockingManager1.ResetDockTabForeColor()
 
 {% seealso %}
 
-Tabbing the Docked controls in [Tabbed Docking](/windowsforms/Tools/DockingPackage/Docking-Styles.html#tabbed-docking)
+Tabbing the Docked controls in [Tabbed Docking](/windowsforms/dockingmanager/Docking-Styles.html#tabbed-docking)
 
 {% endseealso %}
 
@@ -346,7 +346,7 @@ Me.DockingManager1.InActiveCaptionForeGround = System.Drawing.Color.MediumSlateB
 
 
 
-The Docking Manager provides the [ProvideGraphicsItems](/windowsforms/Tools/DockingPackage/Docking-Events.html#providegraphicsitems-event) event that can be handled for custom rendering the docking window caption area. This event is fired whenever a docking window’s caption needs to be painted and the ProvideGraphicsItemsEventArgs provides the control being drawn and allows you to specify the new set of graphics objects to use.
+The Docking Manager provides the [ProvideGraphicsItems](/windowsforms/dockingmanager/Docking-Events.html#providegraphicsitems-event) event that can be handled for custom rendering the docking window caption area. This event is fired whenever a docking window’s caption needs to be painted and the ProvideGraphicsItemsEventArgs provides the control being drawn and allows you to specify the new set of graphics objects to use.
 
 #### DockingManager custom styling with Metro VisualStyle
 

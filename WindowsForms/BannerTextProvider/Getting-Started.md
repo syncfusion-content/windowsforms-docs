@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 
-Syncfusion introduces BannerTextProvider class which provides the ability to show banner text in the textbox. 
+Syncfusion introduces BannerTextProvider class that provides the ability to display banner text in the textbox. 
 
  ![](Overview_images/Overview_img2.jpeg) 
 
@@ -22,7 +22,7 @@ Syncfusion introduces BannerTextProvider class which provides the ability to sho
 
 
 
-* Drag the component onto the form. The control in the form, for ex, ComboBoxBarItem will get an extender provider property as in the image below. 
+* Drag the component onto the form. The control in the form, for example, ComboBoxBarItem gets an extender provider property as shown in the following image. 
 
  ![](Overview_images/Overview_img4.jpeg) 
 
@@ -30,7 +30,7 @@ Syncfusion introduces BannerTextProvider class which provides the ability to sho
 
 ## Customizing the Banner Text
 
-Extender properties which lets you customize the Banner text are as follows.
+Extender properties allow you to customize the Banner text. They are as follows.
 
 
 <table>
@@ -57,13 +57,13 @@ Sets the font style for the banner text.</td></tr>
 <tr>
 <td>
 Mode</td><td>
-Specifies the rendering mode of the banner text. The modes are,* {{ 'FocusMode' | markdownify }} - The banner text disappears when the control gets focus.* {{ 'EditMode' | markdownify }} - The banner text will only disappears when the control is in Edit Mode or the associated textbox is not empty.</td></tr>
+Specifies the rendering mode of the banner text. The modes are,* {{ 'FocusMode' | markdownify }} - The banner text disappears when the control gets focus.* {{ 'EditMode' | markdownify }} - The banner text disappears only when the control is in Edit Mode or when the associated textbox is not empty.</td></tr>
 </table>
 
 
 ## How to change the text for already assigned banner text of a control?
 
-This is done using the below code. 
+This is done using the following code. 
 
 {% highlight C# %}
 
@@ -81,7 +81,7 @@ info.Text = "New Banner Text";
 
 
 
-Dim info As BannerTextInfo = bannerTextProvider1.GetBannerText(comboBoxAutoComplete1) ' textbox is the control used for example
+Dim info As BannerTextInfo = bannerTextProvider1.GetBannerText(comboBoxAutoComplete1) ' textbox is the control used for example.
 
 
 
@@ -116,7 +116,7 @@ Me.bannerTextProvider1.SetBannerText(Me.comboBoxBarItem1, New Syncfusion.Windows
 
 
 
-N> BannerText feature can be made available for the below controls only.
+N> BannerText feature can be made available for the following controls only.
 
 
 * [TextBoxBarItem](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#textboxbarItem) (XPMenus)
