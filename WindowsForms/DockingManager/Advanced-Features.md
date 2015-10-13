@@ -787,7 +787,7 @@ Console.Write("Serialized controls :" + Me.dockingManager1.GetSerializedControls
 
 {% seealso %}
 
-[ProvidePersistenceID Event](/windowsforms/Tools/DockingPackage/Docking-Events.html#providepersistenceid-event), [How to avoid flickering while loading dock state?](/windowsforms/Tools/DockingPackage/FrequentlyAskedQuestions/Dock-State.html#how-to-avoid-flickering-while-loading-dock-state), 
+[ProvidePersistenceID Event](/windowsforms/dockingmanager/Docking-Events.html#providepersistenceid-event), [How to avoid flickering while loading dock state?](/windowsforms/dockingmanager//FrequentlyAskedQuestions/Dock-State.html#how-to-avoid-flickering-while-loading-dock-state), 
 
 
 How to serialize or deserialize the docking state for a docked control on loading the application?
@@ -983,7 +983,7 @@ Me.dockingManager1.Office2007MdiColorScheme = Office2007Theme.Blue
 
 {% seealso %}
 
-[How to avoid flickering while creating MDI child form?](/windowsforms/Tools/DockingPackage/FrequentlyAskedQuestions/MDIChild.html#how-to-avoid-flickering-while-creating-mdi-child-form),[How to detect whether a particular control is in MDI mode or not?](/windowsforms/Tools/DockingPackage/FrequentlyAskedQuestions/MDIChild.html#how-to-detect-whether-a-particular-control-is-in-mdi-mode-or-not)
+[How to avoid flickering while creating MDI child form?](/windowsforms/dockingmanager/FrequentlyAskedQuestions/MDIChild.html#how-to-avoid-flickering-while-creating-mdi-child-form),[How to detect whether a particular control is in MDI mode or not?](/windowsforms/dockingmanager/FrequentlyAskedQuestions/MDIChild.html#how-to-detect-whether-a-particular-control-is-in-mdi-mode-or-not)
 
 {% endseealso %}
 
@@ -1060,5 +1060,5 @@ Me.dockingManager1.AddToTargetManagersList(dockingManager2)
 
 ### Events during the Transfer of Docking Manager
 
-If any control comes from other docking manager, [TransferredToManager event](/windowsforms/Tools/DockingPackage/Docking-Events.html#transferredtomanager-event) will be handled and if a control is transferred out to other docking managers, [TransferredFromManager event](/windowsforms/Tools/DockingPackage/Docking-Events.html#transferringfrommanager-event) will be handled.
+If any control comes from other docking manager, [TransferredToManager event](/windowsforms/dockingmanager/Docking-Events.html#transferredtomanager-event) will be handled and if a control is transferred out to other docking managers, [TransferredFromManager event](/windowsforms/dockingmanager/Docking-Events.html#transferringfrommanager-event) will be handled.
 

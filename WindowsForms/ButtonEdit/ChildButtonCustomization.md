@@ -81,7 +81,7 @@ Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 {% seealso %}
 
-[Style Settings](windowsforms/buttonedit/buttoneditappearance#style-settings), [How to set tooltip for ButtonEdit Child buttons?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-set-tooltip-for-buttonedit-child-buttons)
+[Style Settings](/windowsforms/buttonedit/buttoneditappearance#style-settings), [How to set tooltip for ButtonEdit Child buttons?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-set-tooltip-for-buttonedit-child-buttons)
 
 {% endseealso %}
 
