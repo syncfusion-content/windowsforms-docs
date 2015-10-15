@@ -1,26 +1,17 @@
-# Control Behavior
+## Control behavior
 
 The table represents the Gesture support vs Syncfusion controls.
 
 <table>
 <tr>
 <td>
-**S.No**<br/><br/></td><td>
+**S****.****No**<br/><br/></td><td>
 **Category**<br/><br/></td><td>
 **Control**<br/><br/></td><td>
 **Swipe**<br/><br/></td><td>
 **Pinch**<br/><br/></td><td>
 **Tap**<br/><br/></td><td>
 **Hold**<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td></tr>
 <tr>
 <td>
 1<br/><br/></td><td>
@@ -73,7 +64,7 @@ Context Menu<br/><br/></td></tr>
 Radial Gauge<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
+Click<br/><br/></td><td>
 Context Menu<br/><br/></td></tr>
 <tr>
 <td>
@@ -82,7 +73,7 @@ Context Menu<br/><br/></td></tr>
 Linear Gauge<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
+Click<br/><br/></td><td>
 Context Menu<br/><br/></td></tr>
 <tr>
 <td>
@@ -91,7 +82,7 @@ Context Menu<br/><br/></td></tr>
 Digital Gauge<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
+Click<br/><br/></td><td>
 Context Menu<br/><br/></td></tr>
 <tr>
 <td>
@@ -155,7 +146,7 @@ Office2007Form<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -164,34 +155,52 @@ Office2010Form<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
 Clcik<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
-Ribbon<br/><br/></td><td>
+RibbonControlAdv<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+RibbonForm<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+RibbonMergeContainer<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
 Docking Manager<br/><br/></td><td>
--<br/><br/></td><td>
-Drag Drop<br/><br/></td><td>
+Move<br/><br/></td><td>
+<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
 Carousel<br/><br/></td><td>
-Scroll, Rotate<br/><br/></td><td>
--<br/><br/></td><td>
-Stop<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Rotate<br/><br/></td><td>
+Maximize/Minimize circle<br/><br/></td><td>
+Click, Select, Rotate<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -200,7 +209,7 @@ Tab Control Adv<br/><br/></td><td>
 TabMove<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-SuperToolTip, ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -209,7 +218,7 @@ TabbedMdi Manager<br/><br/></td><td>
 TabMove<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -218,7 +227,7 @@ Tile Layout<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -227,7 +236,16 @@ Metro Form<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+GradientLabel<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -235,8 +253,8 @@ ContextMenu<br/><br/></td></tr>
 GradientPanel<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -244,17 +262,17 @@ ContextMenu<br/><br/></td></tr>
 GradientPanelExt<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
 TabBarSplitterControl<br/><br/></td><td>
-Scroll<br/><br/></td><td>
+Scroll, Move<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
--<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -272,7 +290,7 @@ PopupControlContainer<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 4<br/><br/></td><td>
@@ -281,7 +299,7 @@ CurrencyTextBox<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -290,7 +308,7 @@ IntegerTextBox<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -299,7 +317,7 @@ DoubleTextBox<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -308,7 +326,7 @@ PercentTextBox<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -317,7 +335,7 @@ DomainUpDownExt<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -326,7 +344,7 @@ NumericUpDownExt<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -335,7 +353,7 @@ TextBoxExt<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -343,8 +361,8 @@ ContextMenu<br/><br/></td></tr>
 CurrencyEdit<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -353,7 +371,7 @@ EditableList<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ToolTip<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -362,7 +380,7 @@ MaskedEdit<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -376,11 +394,20 @@ Select<br/><br/></td><td>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
+AutoLabel<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
 ButtonAdv<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -389,7 +416,7 @@ ButtonEdit<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -397,8 +424,8 @@ ContextMenu<br/><br/></td></tr>
 SplitButtonAdv<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -406,8 +433,8 @@ ContextMenu<br/><br/></td></tr>
 Calculator<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -415,8 +442,8 @@ ContextMenu<br/><br/></td></tr>
 CheckBoxAdv<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Select/Unselect<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -424,17 +451,17 @@ ContextMenu<br/><br/></td></tr>
 RadioButtonAdv<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Select/Unselect<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
 Rating<br/><br/></td><td>
+Selection<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
-Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -443,7 +470,7 @@ ComboBoxAdv<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -452,7 +479,7 @@ ComboBoxBase<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -461,7 +488,7 @@ ComboBoxAutoComplete<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -470,7 +497,7 @@ ComboBoxDropDown<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -479,7 +506,7 @@ FontComboBox<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -488,7 +515,7 @@ MultiColumnComboBox<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -497,16 +524,16 @@ MultiSelectionComboBox<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
-FontComboBox<br/><br/></td><td>
+FontListBox<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Select<br/><br/></td><td>
-ContextMenu (on ScrollBar)<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -515,7 +542,7 @@ Syntax Editor<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 <br/><br/></td><td>
 Click, Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -524,16 +551,25 @@ HTML Viewer<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
 RadialSlider<br/><br/></td><td>
 Scroll<br/><br/></td><td>
+-<br/><br/></td><td>
+Click,Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
 <br/><br/></td><td>
+<br/><br/></td><td>
+Range Slider<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -541,8 +577,8 @@ ContextMenu<br/><br/></td></tr>
 MonthCalendarAdv<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -550,8 +586,8 @@ ContextMenu<br/><br/></td></tr>
 DateTimePickerAdv<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
-Select<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -559,8 +595,8 @@ ContextMenu<br/><br/></td></tr>
 ColorPickerUIAdv<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -568,8 +604,8 @@ ContextMenu<br/><br/></td></tr>
 ColorPickerButton<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -577,8 +613,8 @@ ContextMenu<br/><br/></td></tr>
 ColorUIControl<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -586,8 +622,8 @@ ContextMenu<br/><br/></td></tr>
 ToggleButton<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 5<br/><br/></td><td>
@@ -604,8 +640,17 @@ Click<br/><br/></td><td>
 TreeView<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
-Click, Collapse and expand<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select, Collapse and expand<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+MultiColumnTreeVIew<br/><br/></td><td>
+Scroll<br/><br/></td><td>
+-<br/><br/></td><td>
+Click, Select, Collapse and expand<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -613,8 +658,8 @@ ContextMenu<br/><br/></td></tr>
 GroupBar<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -622,8 +667,8 @@ ContextMenu<br/><br/></td></tr>
 GroupView<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -631,8 +676,17 @@ ContextMenu<br/><br/></td></tr>
 Menu<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
+Click,Select<br/><br/></td><td>
 -<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+XPToolBar<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -640,8 +694,17 @@ Click<br/><br/></td><td>
 TaskBar<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click,Collapse and expand<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Collapse and expand<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+MiniToolBar<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
+-<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -650,7 +713,7 @@ Toolbars<br/><br/></td><td>
 Drag and drop<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -658,8 +721,44 @@ ContextMenu<br/><br/></td></tr>
 TreeNavigator<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+Navigation View<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click , Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+RecordNavigationControl<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+ToolStripEx<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu (On ScrollBar)<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+TrackBarEx<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 6<br/><br/></td><td>
@@ -713,7 +812,7 @@ SplashPanel<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -730,8 +829,8 @@ Click<br/><br/></td><td>
 StatusBarAdv<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -739,8 +838,26 @@ ContextMenu<br/><br/></td></tr>
 StatusBarAdvPanel<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+StatusBarExt<br/><br/></td><td>
 -<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+-<br/><br/></td><td>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+StatusStripEx<br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td><td>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -748,8 +865,8 @@ ContextMenu<br/><br/></td></tr>
 Progressbar<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -775,8 +892,8 @@ Click<br/><br/></td><td>
 Clock<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
--<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -784,8 +901,17 @@ ContextMenu<br/><br/></td></tr>
 HubTile<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+Tile Layout<br/><br/></td><td>
 Click<br/><br/></td><td>
-Select,ContextMenu<br/><br/></td></tr>
+-<br/><br/></td><td>
+Click<br/><br/></td><td>
+Select<br/><br/></td></tr>
 <tr>
 <td>
 8<br/><br/></td><td>
@@ -829,8 +955,8 @@ Skin Manager<br/><br/></td><td>
 WizardControl<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -838,8 +964,8 @@ ContextMenu<br/><br/></td></tr>
 XPTaskPane<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Click, Select<br/><br/></td><td>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -848,7 +974,7 @@ Scrollers Frame<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
-ContextMenu<br/><br/></td></tr>
+Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -865,7 +991,7 @@ Click, Expand<br/><br/></td><td>
 SpellChecker<br/><br/></td><td>
 Scroll, Move<br/><br/></td><td>
 -<br/><br/></td><td>
-Click<br/><br/></td><td>
+Select<br/><br/></td><td>
 -<br/><br/></td></tr>
 <tr>
 <td>
@@ -877,3 +1003,5 @@ Click<br/><br/></td><td>
 <br/><br/></td><td>
 <br/><br/></td></tr>
 </table>
+# 
+
