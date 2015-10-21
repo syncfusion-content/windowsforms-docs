@@ -1,3 +1,12 @@
+---
+layout: post
+title: Overview | WindowsForms | Syncfusion
+description: Welcome to Syncfusion Essential WF
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
 # Overview
 
 ## Welcome to Syncfusion Essential WF

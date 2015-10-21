@@ -1,3 +1,12 @@
+---
+layout: post
+title: Installation and Deployment | WindowsForms | Syncfusion
+description: Deployment
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
 # Deployment
 
 ### X-Copy

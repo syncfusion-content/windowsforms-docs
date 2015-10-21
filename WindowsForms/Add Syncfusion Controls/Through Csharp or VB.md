@@ -1,4 +1,4 @@
-﻿## Through C# / VB
+## Through C# / VB
 
 The following steps help you add a required Essential WF Control, for example: DockingManager, through C# or VB Code.
 

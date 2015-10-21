@@ -1,3 +1,13 @@
+---
+layout: post
+title: Touch Support | WindowsForms | Syncfusion
+description: Gesture
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
 # Touch Support
 
 ## Gesture

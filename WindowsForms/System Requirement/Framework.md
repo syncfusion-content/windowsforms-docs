@@ -1,3 +1,13 @@
+---
+layout: post
+title: System Requirement | WindowsForms | Syncfusion
+description: Framework
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
 # System Requirement
 
 This section describes the system requirements to use Syncfusion WF Controls for development.

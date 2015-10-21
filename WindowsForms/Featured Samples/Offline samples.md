@@ -1,3 +1,12 @@
+---
+layout: post
+title: Featured Samples | WindowsForms | Syncfusion
+description: Offline samples
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
 # Featured Samples
 
 ## Offline samples

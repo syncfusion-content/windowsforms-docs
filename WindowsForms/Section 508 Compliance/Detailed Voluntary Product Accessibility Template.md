@@ -1,3 +1,12 @@
+---
+layout: post
+title: Section 508 Compilance | WindowsForms | Syncfusion
+description: Detailed Voluntary Product Accessibility Template
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
 ## Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
 
 <table>

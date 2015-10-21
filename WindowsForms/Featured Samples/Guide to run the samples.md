@@ -1,3 +1,12 @@
+---
+layout: post
+title: Featured Samples | WindowsForms | Syncfusion
+description: Guide to run the samples
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
 ## Guide to run the samples
 
 To run the samples, open the corresponding Dashboard from the following location:

@@ -1,3 +1,13 @@
+---
+layout: post
+title: Section 508 Compilance | WindowsForms | Syncfusion
+description: Information, Documentation, and Support 1194.41 Information documentation and support
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
 ## Subpart D -- Information, Documentation, and Support 1194.41 Information, documentation, and support
 
 <table>

@@ -1,4 +1,13 @@
-﻿# Coded UI
+---
+layout: post
+title: Coded UI | WindowsForms | Syncfusion
+description: Getting Started
+platform: WindowsForms
+control: General/Testing
+documentation: ug
+---
+
+# Coded UI
 
 ## Getting Started
 
@@ -14,7 +23,7 @@ __**Create**__ __**a**__ __**Coded**__ __**UI**__ __**test**__ __**project**_
 
 In case, the **Coded** **UI** test project does not appear on Visual Studio, you may be using a version that does not support **CUIT**. To create **CUIT**, you need to use Visual Studio Enterprise edition.
 
-
+
 
 ![](GettingStarted_Images/CreatingTestApplication.jpeg)
 
@@ -22,14 +31,14 @@ __**Adding**__ __**Coded**__ __**UI**__ __**test**__ __**file**__**:**
 
 The CUIT file is generated automatically, when creating the Coded UI test project. To add another test file, choose shortcut menu of the CUIT project, point to add, and then choose Coded UI test.
 
-
+
 ![](GettingStarted_Images/AddingCodedUI.jpeg)
 
 1. In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, choose the **Record** **actions** as shown in the following image.
 
 
 
-
+
 
 ![](GettingStarted_Images/RecordingOption.jpeg)
 
@@ -38,13 +47,13 @@ The CUIT file is generated automatically, when creating the Coded UI test 
 
 
 
-
+
 
 ![](GettingStarted_Images/RecordingFromUIMap.jpeg)
 
 
 
-
+
 
 ![](GettingStarted_Images/PauseRecordingFromUIMap.jpeg)
 
@@ -54,7 +63,7 @@ The CUIT file is generated automatically, when creating the Coded UI test 
 
 
 
-
+
 
 ![](GettingStarted_Images/RecordedSteps.jpeg)
 
@@ -62,7 +71,7 @@ The CUIT file is generated automatically, when creating the Coded UI test 
 
 
 
-
+
 
 ![](GettingStarted_Images/GenerateCodedUIMap.jpeg)
 
@@ -70,7 +79,7 @@ The CUIT file is generated automatically, when creating the Coded UI test 
 
 
 
-
+
 
 ![](GettingStarted_Images/GenerateCodeWindowForUIMap.jpeg)
 ****
@@ -109,15 +118,15 @@ ____
 
 
 
-
+
 
 ![](GettingStarted_Images/OpeningCodedUITestBuilder.jpeg)
-
+
 
 ![](GettingStarted_Images/CodedUIMap.jpeg)
 
 
-
+
 
 ![](GettingStarted_Images/AssetWindowForTreeViewAdv.jpeg)
 ### Supported of Controls
