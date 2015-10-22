@@ -10,7 +10,7 @@ documentation: ug
 
 # Section 508 Compliance
 
-The following Voluntary Product Accessibility information refers to Syncfusion Essential Studio for Windows Forms.
+The following Voluntary Product Accessibility information refers to the Syncfusion Essential Studio for Windows Forms.
 
 ## Summary Table: Voluntary Product Accessibility Template
 
