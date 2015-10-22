@@ -11,5 +11,5 @@ documentation: ug
 
 ## Offline samples
 
-Featured samples are installed along with the Essential Studio installation by Syncfusion installer. And the samples are available in __“[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\Windows\samples"__
+Featured samples are installed along with the Essential Studio installation by Syncfusion installer. The samples are available in __“[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\Windows\samples"__
 
