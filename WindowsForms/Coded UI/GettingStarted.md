@@ -59,7 +59,7 @@ The CUIT file is generated automatically, when creating the Coded UI test 
 
 4. The recorded steps can be viewed by using the **UIMap** or by pressing Alt + S key.
 5. To delete actions that you had recorded by mistake, choose Edit Actions.
-6. To generate code that replicates your action, choose the Generate Code icon and type a name and description for your **CUIT** method.
+6. To generate code that replicates your action, choose the Generate Code icon, type a name, and description for your **CUIT** method.
 
 
 
