@@ -42,7 +42,7 @@ The CUIT file is generated automatically, when creating the Coded UI test 
 
 ![](GettingStarted_Images/RecordingOption.jpeg)
 
-2. After choosing the option Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.
+2. After choosing the option, Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.
 3. Choose the **Start** **recording** option from the **UI** **Map** to record the testing. You can also pause the recording while testing the application.
 
 
