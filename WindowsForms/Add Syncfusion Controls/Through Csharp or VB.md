@@ -1,4 +1,4 @@
-﻿## Through C# / VB
+## Through C# / VB
 
 The following steps help you add a required Essential WF Control, for example: DockingManager, through C# or VB Code.
 
@@ -12,18 +12,17 @@ The following steps help you add a required Essential WF Control, for example: D
 <table>
 <tr>
 <td>
-**[**C**#]**<br/><br/><br/><br/>using Syncfusion.Windows.Forms.Tools;<br/><br/><br/><br/>using Syncfusion.Windows.Forms;<br/><br/></td></tr>
+**[**C**#]**<br/><br/>using Syncfusion.Windows.Forms.Tools;<br/><br/>using Syncfusion.Windows.Forms;<br/><br/></td></tr>
 </table>
 
 
 <table>
 <tr>
 <td>
-**[**VB**]**<br/><br/><br/><br/>Imports Syncfusion.Windows.Forms.Tools<br/><br/><br/><br/>Imports Syncfusion.Windows.Forms<br/><br/></td></tr>
+**[**VB**]**<br/><br/>Imports Syncfusion.Windows.Forms.Tools<br/><br/>Imports Syncfusion.Windows.Forms<br/><br/></td></tr>
 </table>
 
 3. Create an instance of Docking Manager.
-
 
 <table>
 <tr>

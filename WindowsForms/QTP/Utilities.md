@@ -21,7 +21,7 @@ An XML file in QTP called SwfConfig is the configuration file located at (Ins
    
    ![](Utilities_images/Utilities_img1.png)
    
-   _Figure_ _29_: Creating the SwfConfig.xml File for Essential Studio 10.3
+   
 
 
 
@@ -29,7 +29,7 @@ An XML file in QTP called SwfConfig is the configuration file located at (Ins
    
    ![](Utilities_images/Utilities_img2.png) 
    
-   _Figure_ _30_: Appending the SwfConfig File
+   
 
 
 
@@ -37,14 +37,14 @@ An XML file in QTP called SwfConfig is the configuration file located at (Ins
    
    ![](Utilities_images/Utilities_img3.png)
    
-   _Figure_ _31_: Replacing the SwfConfig.xml File
+   
 
 4. After generating the swfconfig.xml file, the system asks you whether you want to open it. Click Yes to save and open the new swfconfig.xml file.
    
    ![](Utilities_images/Utilities_img4.png)
    
    
-   _Figure_ _33_: Opening the new SwfConfig.xml File
+   
 
 
 

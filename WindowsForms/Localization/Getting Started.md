@@ -1,3 +1,13 @@
+---
+layout: post
+title: Localization | WindowsForms | Syncfusion
+description: Localization
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
 # Localization
 
 Localization is the process of making your application multilingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain. Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement.

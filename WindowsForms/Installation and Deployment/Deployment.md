@@ -1,10 +1,20 @@
+---
+layout: post
+title: Deployment | WindowsForms | Syncfusion
+description: Deployment
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
 # Deployment
 
 ### X-Copy
 
 X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting it’s the Copy Local property of the reference to "True", so that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. And this deployment consists of copying the exe, dlls, xmls files to the client machines similar to that of manual copy.
 
-![](Deployment_images/Deployment_img1.jpeg)
+![](Deployment_images/Deployment_img1.png)
 
 
 ### GAC
@@ -27,7 +37,7 @@ C:\Windows\Microsoft.NET\assembly\GAC_MSIL<br/><br/></td></tr>
 <tr>
 <td>
 Assemblies<br/><br/></td><td>
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.2.0.29\Assemblies<br/><br/></td></tr>
+C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\Assemblies<br/><br/></td></tr>
 <tr>
 <td>
 Precompiled Assemblies<br/><br/></td><td>

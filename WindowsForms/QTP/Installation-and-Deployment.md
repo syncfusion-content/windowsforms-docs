@@ -25,7 +25,7 @@ To install Essential Test Studio:
 
    N> The Installation procedures are the same for every Essential Test Studio setup, regardless of the volume of the Test setup.
 
-1. Double-click the Syncfusion Essential Test Studio Setup file.
+1) Double-click the Syncfusion Essential Test Studio Setup file.
 
    N> Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
@@ -33,44 +33,42 @@ To install Essential Test Studio:
 
 
 
-   _Figure_ _1_: Setup - Essential QuickTest Professional Welcome screen_
+   
 
 
 
-2. Click Next. The User Information screen opens. 
+2) Click Next. The User Information screen opens. 
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
-   _Figure_ _2_: User Information screen_
+   
 
 
-
-3. Enter your name, organization and enter the license key in the corresponding text boxes provided.
+3) Enter your name, organization and enter the license key in the corresponding text boxes provided.
 
    N> Use Essential Studio Unlock Key as the Unlock Key for Essential Testing Studio. For version previous to 6.3.0.6, use “Syncfusion199“ as the Unlock Key.
 
-4. Click Next. The unlock key is validated.
+4) Click Next. The unlock key is validated.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)
    
   
-   _Figure_ _3_: Select Destination Location
+   
 
 
-
-5. Click Next. The Select the installation folder window opens.
+5) Click Next. The Select the installation folder window opens.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
    
-   _Figure_ _4_: Select Installation Folder
+   
 
 
 
-6. To install in the default location, click Next. You can also browse to choose a required location. When you click Browse to select the desired location, the Destination Location screen displays the selected location. 
+6) To install in the default location, click Next. You can also browse to choose a required location. When you click Browse to select the desired location, the Destination Location screen displays the selected location. 
 
 
 
-7. Click Next. The Installation options window opens. Choose one of the following installation options as required:
+7) Click Next. The Installation options window opens. Choose one of the following installation options as required:
 
 
 
@@ -80,45 +78,39 @@ To install Essential Test Studio:
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
+![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
 
 
 
-   _Figure_ _5_: Installing options Screen
+   
+
+8) Click Next. The Ready to Install dialog opens.
 
 
 
-8. Click Next. The Ready to Install dialog opens.
+![](Installation-and-Deployment_images/Installation-and-Deployment_img9.png)
 
 
 
-	![](Installation-and-Deployment_images/Installation-and-Deployment_img9.png)
+
+
+9) Click Install. The installation process starts displaying the Installing screen as shown in the following screenshot.
 
 
 
-  _Figure_ _6_: Ready to Install Screen
+![](Installation-and-Deployment_images/Installation-and-Deployment_img10.png)
 
 
 
-9. Click Install. The installation process starts displaying the Installing screen as shown in the following screenshot.
 
 
 
-	![](Installation-and-Deployment_images/Installation-and-Deployment_img10.png)
+The following screen is displayed once the installation is completed.
+
+![](Installation-and-Deployment_images/Installation-and-Deployment_img11.png)
 
 
 
-  _Figure_ _7_: Installing Screen
-
-
-
-	The following screen is displayed once the installation is completed.
-
-	![](Installation-and-Deployment_images/Installation-and-Deployment_img11.png)
-
-
-
-  _Figure_ _8_: Installation Completed
 
 #### Configuration
 
@@ -148,19 +140,19 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 
 
-1. Navigate to the following path:
+1) Navigate to the following path:
 
-	_(Installed location of Essential QuickTest Professional)\Config_
+_(Installed location of Essential QuickTest Professional)\Config_
 
 
 
 	N> You can find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively.
 
-2. Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding DLL.
+2) Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding DLL.
 
 
 
-   ~~~ xml
+   xml
 
 
 
@@ -196,8 +188,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 		</Control>
 
-   ~~~
-   {:.prettyprint }
+   
 
    N> In the preceding code, the fully qualified name of the DLL given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
    
@@ -207,7 +198,7 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 
 
-   ~~~ xml
+   xml
 
 
 
@@ -243,34 +234,31 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 		</Control>
 
-   ~~~
-   {:.prettyprint }
+ 
 
-3. Select the segment of the code containing the controls to be tested.
-4. On the Edit menu, click Copy.
+3) Select the segment of the code containing the controls to be tested.
+4) On the Edit menu, click Copy.
 
-   > Note: While selecting the code for copying, exclude the following lines of code.
+   N> While selecting the code for copying, exclude the following lines of code.
 
-   ~~~ xml
+   xml
  
       <CC <?xml version="1.0" encoding="UTF-8" ?>
+   
 
-   ~~~
-   {:.prettyprint }
-
-5. Open the SwfConfig.xml file located under the following location:
+5) Open the SwfConfig.xml file located under the following location:
 
    <QuickTest Professional Installation Path>\dat\SwfConfig.xml
 
 
 
-6. Paste the copied segment under the <?xml> tag in SwfConfig.xml. 
+6) Paste the copied segment under the <?xml> tag in SwfConfig.xml. 
 
 
 
    N> The SwfConfig.xml file appears as follows:
 
-   ~~~ xml
+   xml
 
 
 
@@ -314,16 +302,14 @@ Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTes
 
 		</Controls>
 
-   ~~~
-   {:.prettyprint }
-
+  
    N> Ensure that the element <DllName> contains the correct path to the corresponding DLL.
 
-7. Save the SwfConfig.xml file. 
+7) Save the SwfConfig.xml file. 
 
 
 
-8. Restart QTP once the SwfConfig.xml file is saved to refresh the mappings to the required controls, before starting the test.
+8) Restart QTP once the SwfConfig.xml file is saved to refresh the mappings to the required controls, before starting the test.
 
 
 

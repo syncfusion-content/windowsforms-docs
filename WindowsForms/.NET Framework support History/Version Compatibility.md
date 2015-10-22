@@ -1,3 +1,12 @@
+---
+layout: post
+title: .Net Framework support History | WindowsForms | Syncfusion
+description: Version Compatibility
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
 ## Version Compatibility
 
 The table represents the .NET framework versions vs Syncfusion ES version.
