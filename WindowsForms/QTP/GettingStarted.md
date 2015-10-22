@@ -71,7 +71,7 @@ The content under the tab is displayed.
 
 **NOTE**
 
-The "Record and Run only on" option button is selected by default, and the check boxes selected under it ensure that only the applications opened by QuickTest and added applications are tested.
+The "Record and Run only on" option button is selected by default, and the check boxes selected under it ensure that, only the applications opened by QuickTest and added applications are tested.
 
 3. To add an application for testing, click the + button in the Application details: frame as shown in the figure above.
 
@@ -116,13 +116,13 @@ The recording starts. The application in the given path is opened as shown here.
 
 Whenever you perform any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
 
-The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed. These method names are then recorded and displayed in the screen behind the running application, as shown here.
+The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed. These method names are then recorded and displayed in the screen behind the running application as shown here.
 
 ![](GettingStarted_Images/DefaultRecordingUsingSyncfusionControls.jpeg)
 
 **NOTE**
 
-This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording where the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown here.
+This is called high-level recording as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording where the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown here.
 
 
 
@@ -163,7 +163,7 @@ Selecting one option renders the other unavailable.
 
 **NOTE**
 
-QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as follows:
+QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as follows:
 
 
 
@@ -201,7 +201,7 @@ For more details on running the test, refer to the previous section.
 
 #### Editing in Keyword View
 
-The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
+The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions, or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
 
 
 
@@ -209,13 +209,13 @@ The keyword view is meant for those who are not experts in VB scripts. Keyword v
 
 To edit the test in Keyword view, you can perform any of the following actions:
 
-1. You can right-click any of the items listed under the Item header and choose one of the options available in the displayed menu.
+1. You can right-click any of the items listed under the Item header and choose one option available in the displayed menu.
 
 
 
 ![](GettingStarted_Images/EditingInKeyWordViewRightClick.jpeg)
 
-For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
+For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
 
 **NOTE**
 
@@ -278,7 +278,7 @@ The process of running a saved test is complete.
 
 ### Supported Controls
 
-Syncfusion Essential Studio controls that are supported in QTP are listed below,
+Syncfusion Essential Studio controls that are supported in QTP are listed as follows,
 
 * GridControl
 * GridDataBoundGrid
