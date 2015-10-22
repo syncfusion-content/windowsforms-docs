@@ -10,11 +10,11 @@ documentation: ug
 
 # System Requirement
 
-This section describes the system requirements to use Syncfusion WF Controls for development.
+This section describes the system requirements to use the Syncfusion WF Controls for development.
 
 ## Framework
 
-Following frameworks are supported:
+The following frameworks are supported:
 
 * Microsoft .NET Framework 2.0
 * Microsoft .NET Framework 3.5
