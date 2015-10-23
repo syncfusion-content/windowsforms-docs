@@ -1,3 +1,13 @@
+---
+layout: post
+title: Section 508 Compilance | WindowsForms | Syncfusion
+description: Functional Performance Criteria 1194.31 Functional performance criteria
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
 ## Functional Performance Criteria 1194.31 Functional performance criteria
 
 <table>

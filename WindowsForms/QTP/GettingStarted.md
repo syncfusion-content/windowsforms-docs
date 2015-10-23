@@ -1,4 +1,14 @@
-﻿# QTP 
+﻿---
+layout: post
+title: QTP | WindowsForms | Syncfusion
+description: Getting Started
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
+# QTP 
 
 ## Getting Started
 
@@ -14,7 +24,7 @@ The QuickTest Professional – Add-in Manager window is displayed.
 
 2. Select the .NET check box under the Add-in header. This ensures that .NET add-in is installed.
 
-
+
 
 ![](GettingStarted_Images/QuickTestProfessional.jpeg)
 
@@ -24,13 +34,13 @@ The QuickTest Professional – Add-in Manager window is displayed.
 
 The QuickTest Professional – [Start Page] window is displayed. There are two tabs, Start Page and Test, in the main pane of the window. The content under the Start Page tab is displayed by default.
 
-
+
 
 ![](GettingStarted_Images/QuickTestProfessionalStartPage.jpeg)
 
 4. Click the New Test icon on the Start Page.
 
-
+
 
 ![](GettingStarted_Images/ShowingNewTesticon.jpeg)
 
@@ -38,7 +48,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 1. Click Record in the toolbar to start the recording.
 
-
+
 
 ![](GettingStarted_Images/WindowShowingRecordTool.jpeg)
 
@@ -46,7 +56,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 A Record and Run Settings dialog box is displayed.
 
-
+
 
 ![](GettingStarted_Images/RecordAndRunSettingsWeb.jpeg)
 
@@ -55,13 +65,13 @@ A Record and Run Settings dialog box is displayed.
 **NOTE**
 
 The content under the tab is displayed.
-
+
 
 ![](GettingStarted_Images/RecordAndRunSettingsWindows.jpeg)
 
 **NOTE**
 
-The "Record and Run only on" option button is selected by default, and the check boxes selected under it ensure that only the applications opened by QuickTest and added applications are tested.
+The "Record and Run only on" option button is selected by default, and the check boxes selected under it ensure that, only the applications opened by QuickTest and added applications are tested.
 
 3. To add an application for testing, click the + button in the Application details: frame as shown in the figure above.
 
@@ -69,12 +79,12 @@ The "Record and Run only on" option button is selected by default, and the check
 
 The Application Details dialog box is displayed.
 
-
+
 
 ![](GettingStarted_Images/ApplicationDetails.jpeg)
 
-4. Browse and select the path of the application that is to be tested by clicking () for the Application: label.
-5. Browse and select the path of the working folder by clicking () for the Working folder: label.
+4. Browse and select the path of the application that is to be tested by clicking for the Application: label.
+5. Browse and select the path of the working folder by clicking for the Working folder: label.
 
 **NOTE**
 
@@ -86,7 +96,7 @@ Selecting the Launch application check box launches the application immediately 
 
 The path of the application and working folder are displayed in the Application details frame as displayed in the following screenshot.
 
-
+
 
 ![](GettingStarted_Images/RecordAndRunApplicationLocation.jpeg)
 
@@ -96,7 +106,7 @@ The path of the application and working folder are displayed in the Application 
 
 The recording starts. The application in the given path is opened as shown here.
 
-
+
 
 ![](GettingStarted_Images/ApplicationUsingGridControl.jpeg)
 
@@ -106,15 +116,15 @@ The recording starts. The application in the given path is opened as shown here.
 
 Whenever you perform any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
 
-The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed. These method names are then recorded and displayed in the screen behind the running application, as shown here.
+The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed. These method names are then recorded and displayed in the screen behind the running application as shown here.
 
 ![](GettingStarted_Images/DefaultRecordingUsingSyncfusionControls.jpeg)
 
 **NOTE**
 
-This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording where the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown here.
+This is called high-level recording as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control, unlike the low-level recording where the Syncfusion controls are not recognized by QTP and the events are recorded with default method names as shown here.
 
-
+
 
 ![](GettingStarted_Images/DefaultRecording.jpeg)
 
@@ -134,7 +144,7 @@ On recording, all the user-actions performed in the control are just noted with 
 
 The Run dialog box is displayed. The Results Location tab is highlighted by default.
 
-
+
 
 ![](GettingStarted_Images/RunDialog.jpeg)
 
@@ -153,9 +163,9 @@ Selecting one option renders the other unavailable.
 
 **NOTE**
 
-QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as follows:
+QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as follows:
 
-
+
 
 ![](GettingStarted_Images/TestResults.jpeg)
 
@@ -173,7 +183,7 @@ This view is specially provided for the experts in VB script. In the Expert view
 
 The following image shows adding a script line to the Expert View pane.
 
-
+
 
 ![](GettingStarted_Images/EditingInExportView.jpeg)
 
@@ -183,7 +193,7 @@ You can run the edited test to check whether the newly added or changed scripts 
 
 Sometimes, the newly added or changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog shows the failure as follows:
 
-
+
 
 ![](GettingStarted_Images/TestingFailResults.jpeg)
 
@@ -191,27 +201,27 @@ For more details on running the test, refer to the previous section.
 
 #### Editing in Keyword View
 
-The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
+The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions, or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
 
-
+
 
 ![](GettingStarted_Images/KeyWordView.jpeg)
 
 To edit the test in Keyword view, you can perform any of the following actions:
 
-1. You can right-click any of the items listed under the Item header and choose one of the options available in the displayed menu.
+1. You can right-click any of the items listed under the Item header and choose one option available in the displayed menu.
 
-
+
 
 ![](GettingStarted_Images/EditingInKeyWordViewRightClick.jpeg)
 
-For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
+For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
 
 **NOTE**
 
 All the items under the Item header are represented as a drop-down list.
 
-
+
 
 ![](GettingStarted_Images/EditingInKeyWordViewDropDown.jpeg)
 
@@ -225,7 +235,7 @@ Saving a test is like saving any other document or picture. To save a test, foll
 
 1. Click the Save button in the toolbar. The Save Test dialog box is displayed.
 
-
+
 
 ![](GettingStarted_Images/SaveTestDialog.jpeg)
 2. Select the location to save the file from the Save in: drop-down list.
@@ -244,7 +254,7 @@ The tests that have been saved can be replayed later. To run a saved test, follo
 
 The Open Test dialog box is displayed with a list of saved tests.
 
-
+
 
 ![](GettingStarted_Images/OpenTestDialog.jpeg)
 
@@ -256,7 +266,7 @@ The saved test is opened with its name and the complete path as the name of the 
 
 The following image shows the mouse pointer pointing towards the path and file displayed as the window name.
 
-
+
 
 ![](GettingStarted_Images/TestOpened.jpeg)
 
@@ -268,7 +278,7 @@ The process of running a saved test is complete.
 
 ### Supported Controls
 
-Syncfusion Essential Studio controls that are supported in QTP are listed below,
+Syncfusion Essential Studio controls that are supported in QTP are listed as follows,
 
 * GridControl
 * GridDataBoundGrid

@@ -1,3 +1,12 @@
+---
+layout: post
+title: Control Dependencies | WindowsForms | Syncfusion
+description: ControlDependency
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
 # Control Dependencies
 
 Table illustrates the Control’s assembly and its dependencies.
