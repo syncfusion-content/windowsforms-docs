@@ -1207,7 +1207,7 @@ Yes<br/><br/></td></tr>
 
 # Control Dependencies
 
-Table illustrates the Controls assembly and its dependencies.
+Table illustrates the Controls' assembly and its dependencies.
 
 <table>
 <tr>
