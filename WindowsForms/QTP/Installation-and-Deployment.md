@@ -9,7 +9,7 @@ documentation: ug
 
 # Installation and Deployment
 
-This section provides information on install location, samples, licensing, and uninstallation of the recent version of Essential QuickTest Professional.
+This section provides information on install location, samples, licensing, and uninstallation of recent version of the Essential QuickTest Professional.
 
 
 
@@ -56,7 +56,7 @@ To install Essential Test Studio:
    
 
 
-5) Click Next. The Select the installation folder window opens.
+5) Click Next. Then, Select the installation folder window opens.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
    
@@ -74,7 +74,7 @@ To install Essential Test Studio:
 
 	* Typical - Installs most common program features.
 	* Custom - Allows you to choose the program to be installed and where it should be installed.
-	* Complete - Installs all of the feature programs.
+	* Complete - Installs all the feature programs.
 
 
 
@@ -84,7 +84,7 @@ To install Essential Test Studio:
 
    
 
-8) Click Next. The Ready to Install dialog opens.
+8) Click Next. Ready to Install dialog opens.
 
 
 
@@ -122,13 +122,13 @@ N> The fully qualified name is the name of the file mentioned with its complete 
 
 Any event that is triggered while working with a Syncfusion control, either by you or the program activity, is handled by the corresponding method in the custom library (DLL) given as the <DllName> tag under the <Control> tag.
 
-An XML file can be configured in one of two ways, automatically or manually.
+An XML file can be configured in any one of two ways, automatically or manually.
 
 
 
 #### Automatic Configuration
 
-This section provides the details about the configuration of the swfconfig file using the SwfConfigUtility. Refer to the Utility section of this document.
+This section provides the details about the configuration of the swfconfig file by using the SwfConfigUtility. Refer to the Utility section of this document.
 
 #### Manual Configuration
 
@@ -136,7 +136,7 @@ This section provides details about the manual configuration of the swfconfig fi
 
 
 
-Steps to Configure QTP to use the Custom Libraries shipped in Essential QuickTest Professional
+Steps to Configure QTP to use the Custom Libraries shipped in the Essential QuickTest Professional.
 
 
 
@@ -146,7 +146,7 @@ _(Installed location of Essential QuickTest Professional)\Config_
 
 
 
-	N> You can find three folders, named 2.0, 3.5 and 4.0 here. The folders 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5 and NET 4.0 frameworks respectively.
+	N> You can find three folders, 2.0, 3.5 and 4.0 here. The folders, 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5, and NET 4.0 frameworks respectively.
 
 2) Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding DLL.
 
@@ -194,7 +194,7 @@ _(Installed location of Essential QuickTest Professional)\Config_
    
    > C:\Program Files\Syncfusion\Essential QuickTest Professional\<Version number>\
 
- When you have installed Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, if Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
+ When you have installed the Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, when Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
 
 
 
@@ -319,7 +319,7 @@ _(Installed location of Essential QuickTest Professional)\Config_
 
 
 
-This section contains the location of the samples, source code and assemblies.
+This section contains the location of the samples, source code, and assemblies.
 
 
 
@@ -327,7 +327,7 @@ This section contains the location of the samples, source code and assemblies.
 
 
 
-The samples for Essential QuickTest Professional are available at the following locations:
+The samples for the Essential QuickTest Professional are available at the following locations:
 
 
 
@@ -370,7 +370,7 @@ The assemblies are available under the following location:
 ### Licensing, Patches and Uninstallation
 
 
-This section deals with license keys, patches and the uninstallation process.
+This section deals with license keys, patches, and the uninstallation process.
 
 
 
@@ -378,7 +378,7 @@ This section deals with license keys, patches and the uninstallation process.
 
 
 
-Essentialqtpaddonsetup is the setup file for Essential QuickTest Professional, that can be installed with the same license key that has been used to install Essential Studio. Essential QuickTest Professional does not require a separate license. 
+Essentialqtpaddonsetup is the setup file for Essential QuickTest Professional that can be installed with the same license key used to install the Essential Studio. Essential QuickTest Professional does not require a separate license. 
 
 
 
@@ -386,7 +386,7 @@ Essentialqtpaddonsetup is the setup file for Essential QuickTest Professional, t
 
 
 
-Patches are not provided for Essential QuickTest Professional. In case of any fix requested by the user, the assemblies are sent. These assemblies are then to be placed under the following location:
+Patches are not provided for the Essential QuickTest Professional. In case of any fix requested by the user, the assemblies are sent. These assemblies are then to be placed under the following location:
 
 _(Installed location of the product)\Bin\_
 
@@ -396,11 +396,11 @@ _(Installed location of the product)\Bin\_
 
 
 
-Uninstallation can be done with the help of the unins000 file that is available in the installed location. Double-clicking the file uninstalls Essential QuickTest Professional.
+Uninstallation can be done with the help of the unins000 file available in the installed location. Double-clicking the file uninstalls the Essential QuickTest Professional.
 
 ### Assembly information
 
-The following table shows the assembly information for each of the controls supported by Essential QuickTest Professional.
+The following table shows the assembly information for each of the controls supported by the Essential QuickTest Professional.
 
 
 
