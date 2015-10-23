@@ -12,7 +12,7 @@ documentation: ug
 
 ### X-Copy
 
-X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting it’s the Copy Local property of the reference to "True", so that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. And this deployment consists of copying the exe, dlls, xmls files to the client machines similar to that of manual copy.
+X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to "True". So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the exe, dlls, xmls files to the client machines similar to that of manual copy.
 
 ![](Deployment_images/Deployment_img1.png)
 
@@ -23,7 +23,7 @@ Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of 
 
 ## Installed Location
 
-The following table represent Assemblies/ Samples and its installed location
+The following table represents Assemblies/ Samples and its installed location
 
 <table>
 <tr>

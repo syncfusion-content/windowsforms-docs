@@ -11,7 +11,7 @@ documentation: ug
 
 Essential QuickTest Professional lets you test applications with different Syncfusion controls, and allows playback of scripts. The following is a list of chapters containing information on the functionality of this software.
 
-## Creating and Recording a Test
+## Create and Record a Test
 
 To create a new test:
 
@@ -74,7 +74,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 
 
-   N> The Record and run only on option button is selected by default, and the check boxes selected under it ensure that only the applications opened by QuickTest and added applications are tested.
+   N> The "Record and run only on" option button is selected by default, and the check boxes selected under it ensure that, only the applications opened by QuickTest and added applications are tested.
 
 
 
@@ -92,7 +92,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 9) Browse and select the path of the working folder by clicking (![](Getting-Started_images/Getting-Started_img15.jpeg)) for the Working folder: label.
 
-   N> Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box includes all the processes that are descendant to the current process. Both these check boxes are selected by default.
+   N> Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box that includes all the processes that are descendant to the current process. Both these check boxes are selected by default.
 
 10) Click OK.
 
@@ -114,7 +114,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
     N> Whenever you perform any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
 
     The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed.
-    These method names are then recorded and displayed in the screen behind the running application, as shown here.
+    These method names are then recorded and displayed in the screen behind the running application as shown here.
 
 
 
@@ -132,7 +132,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 
 
-    N> The low-level recording is the default recording, done by QTP when the steps mentioned in the Configuring Essential QuickTest Professional section are not followed. The recording can be stopped by clicking the Stop button in the toolbar.
+    N> The low-level recording is the default recording done by QTP, when the steps mentioned in the Configuring Essential QuickTest Professional section are not followed. The recording can be stopped by clicking the Stop button in the toolbar.
 
 
 
@@ -169,7 +169,7 @@ On recording, all the user-actions performed in the control are just noted with 
 
 3) Browse and select the required location by clicking the <icon>
 
-   N> QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as shown here:
+   N> QTP starts the running process; the application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one by one. After running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as shown here:
 
 ![](Getting-Started_images/Getting-Started_img30.png)
 
@@ -231,7 +231,7 @@ For more details on running the test, refer to the previous section.
 
 
 
-The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
+The keyword view is meant for those who are not experts in VB scripts. Keyword view contains the controls used, the user-actions, or operations performed, values involved in the operation, and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown here.
 
 ![](Getting-Started_images/Getting-Started_img35.jpeg)
 
@@ -258,7 +258,7 @@ To edit the test in Keyword view, you can perform any of the following actions:
 
 
 
-For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
+For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
 
 
 
@@ -277,7 +277,7 @@ You can then run the edited test.
 
 ## Saving a Test
 
-Saving a test is like saving any other document or picture. To save a test, follow the steps below:
+Saving a test is like saving any other document or picture. To save a test, follow the steps:
 
 
 
