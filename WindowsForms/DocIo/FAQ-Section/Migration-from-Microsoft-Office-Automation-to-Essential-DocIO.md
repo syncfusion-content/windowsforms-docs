@@ -105,7 +105,7 @@ doc.Save("MailMerge.doc", FormatType.Doc)
 
 N> For more information on mail merge using DocIO, you can refer to online documentation link:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/mail-merge#mail-merge-1>
+<http://docs.syncfusion.com/File-Formats/DocIO/mail-merge#mail-merge-1>
 
 
 ## Find and Replace
@@ -199,7 +199,7 @@ Dim replaceText As String = "World"
 
 N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/Find%20and%20Replace>
+<http://docs.syncfusion.com/File-Formats/DocIO/Find%20and%20Replace>
 
 ## Bookmarks
 
@@ -307,7 +307,7 @@ doc.Close()
 
 N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/Working%20with%20Bookmarks>
+<http://docs.syncfusion.com/File-Formats/DocIO/Working%20with%20Bookmarks>
 
 ## Page Numbers
 
@@ -523,7 +523,7 @@ Color = Color.BlackTextWatermark.Text = "Watermark"
 
 N> For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/Working%20with%20Word%20document#working-with-watermarks>
+<http://docs.syncfusion.com/File-Formats/DocIO/Working%20with%20Word%20document#working-with-watermarks>
 
 #### Header or Footer
 
@@ -631,7 +631,7 @@ For Each sec As WSection In doc.Sections    
 
 N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/Working%20with%20Sections#working-with-headers-and-footers>
+<http://docs.syncfusion.com/File-Formats/DocIO/Working%20with%20Sections#working-with-headers-and-footers>
 
 ## Character Formatting
 
@@ -784,7 +784,7 @@ table.ResetCells(3, 2)
 
 N> For more information on creating tables using DocIO, refer to online documentation link:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/Working%20with%20Tables>
+<http://docs.syncfusion.com/File-Formats/DocIO/Working%20with%20Tables>
 
 ## Comments
 
@@ -936,7 +936,7 @@ Dim Comments As CommentsCollection = doc.Comments
 
 N> For more information on working with the comments using DocIO, you can refer to the online documentation link:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/Working%20with%20Paragraph#comments>
+<http://docs.syncfusion.com/File-Formats/DocIO/Working%20with%20Paragraph#comments>
 
 ## Document Protection
 
@@ -1105,7 +1105,7 @@ Dim TOC As TableOfContent = para.AppendTOC(1, 3)sec.Paragraphs.Insert(0, para
 {%endhighlight%}
 Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO:
 
-<http://docs.syncfusion.com/FileFormat/DocIO/Working%20with%20Table%20Of%20Contents>
+<http://docs.syncfusion.com/File-Formats/DocIO/Working%20with%20Table%20Of%20Contents>
 
 
 
