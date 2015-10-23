@@ -33,7 +33,7 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 ![](GettingStarted_Images/RecordingOption.png)
 
-2) After choosing the option Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.
+2) After choosing the option, Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.
 3) Choose the **Start** **recording** option from the **UI** **Map** to record the testing. You can also pause the recording while testing the application.
 
 
@@ -115,7 +115,7 @@ The following code example demonstrates the same.
 
 ### Supported of Controls
 
-The following controls are featured with CodedUI Testing support
+The following controls are featured with CodedUI Testing support.
 
 <table>
 <tr>
