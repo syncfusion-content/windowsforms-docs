@@ -1,3 +1,13 @@
+---
+layout: post
+title: Touch Support | WindowsForms | Syncfusion
+description: Control Behavior
+platform: WindowsForms
+control: General
+documentation: ug
+---
+
+
 ## Control behavior
 
 The table represents the Gesture support vs Syncfusion controls.
