@@ -3,7 +3,7 @@ layout: post
 title: Overview | WindowsForms | Syncfusion
 description: Overview
 platform: WindowsForms
-control: General
+control: Introduction
 documentation: ug
 ---
 
@@ -20,6 +20,7 @@ Essential WF is a comprehensive collection of over 100+ enterprise-grade WF comp
 * Now, that you are familiar with the basics of using the component, the next step is to start integrating the component into your application. A good starting point is to refer to the code exmples in the sample browser that contains hundreds of code samples. It is very likely that you can find a code example that resembles your intended usage scenario.
 * After you have integrated the component into your application by using one of the sample code examples as a starting point, that you would need additional information on specific features and API. The best option is to search the specific topic by using the search box available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the object hierarchy as well as the settings available on every object.
+
 ### Additional help resources
 
 

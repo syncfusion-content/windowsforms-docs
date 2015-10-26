@@ -1,4 +1,14 @@
-﻿# Coded UI
+﻿---
+layout: post
+title: Coded UI | WindowsForms | Syncfusion
+description: Getting Started
+platform: WindowsForms
+control: Coded UI
+documentation: ug
+---
+
+
+# Coded UI
 
 ## Getting Started
 
@@ -7,7 +17,7 @@ This section demonstrates how to create a simple test with TreeViewAdv and Coded
 The Essential Tools TreeViewAdv control has basic level of Coded UI automation testing support. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20. Refer to the following steps to provide Coded UIsupport in the TreeViewAdv.
 
 
-
+### Creating Coded UI Project
 
 
 **CUIT** should contain the coded UI test project. When your application does not contain the **CUIT** project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution, choose Add, New Project, and then select either Visual Basic or Visual C#. Next, choose Test, Coded UI Test.
@@ -20,21 +30,20 @@ In case, the **Coded** **UI** test project does not appear on Visual Studi
 
 
 
-The CUIT file is generated automatically, when creating the Coded UI test project. To add another test file, choose shortcut menu of the CUIT project, point to add, and then choose Coded UI test.
+N> The CUIT file is generated automatically, when creating the Coded UI test project. To add another test file, choose shortcut menu of the CUIT project, point to add, and then choose Coded UI test
 
 
 ![](GettingStarted_Images/AddingCodedUI.png)
 
-In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, choose the **Record** **actions** as shown in the following image.
 
+### Recording Steps
 
-
-
+In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, choose the **Record** **actions** as shown in the following image.
 
 ![](GettingStarted_Images/RecordingOption.png)
 
-2) After choosing the option, Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.
-3) Choose the **Start** **recording** option from the **UI** **Map** to record the testing. You can also pause the recording while testing the application.
+1) After choosing the option, Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.<br/><br/></td></tr>
+2) Choose the **Start** **recording** option from the **UI** **Map** to record the testing. You can also pause the recording while testing the application.<br/><br/></td></tr>
 
 
 
@@ -48,9 +57,9 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 ![](GettingStarted_Images/PauseRecordingFromUIMap.png)
 
-4) The recorded steps can be viewed by using the **UIMap** or by pressing Alt + S key.
-5) To delete actions that you had recorded by mistake, choose Edit Actions.
-6) To generate code that replicates your action, choose the Generate Code icon and type a name and description for your **CUIT** method.
+3) The recorded steps can be viewed by using the **UIMap** or by pressing Alt + S key.<br/><br/></td></tr>
+4) To delete actions that you had recorded by mistake, choose Edit Actions.<br/><br/></td></tr>
+5) To generate code that replicates your action, choose the Generate Code icon and type a name and description for your **CUIT** method.<br/><br/></td></tr>
 
 
 
@@ -58,23 +67,19 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 ![](GettingStarted_Images/RecordedSteps.png)
 
-7) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates your actions.
+6) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates your actions.<br/><br/></td></tr>
 
-
-
-
 
 ![](GettingStarted_Images/GenerateCodedUIMap.png)
 
-8) Choose the required method and description for code generation.
+7) Choose the required method and description for code generation.<br/><br/></td></tr>
 
 
 
-
-
-![](GettingStarted_Images/GenerateCodeWindowForUIMap.png)
+![](GettingStarted_Images/GenerateCodeWindowForUIMap.png)
 
 
+### Testing Recorded Steps
 
 
 You can test the application with the generated **CUIT** method.
@@ -103,7 +108,7 @@ The following code example demonstrates the same.
 
 2) Build and run the application that has already been configured. You can also open the **CUIT** builder with the following steps.<br/><br/></td></tr>
 
-3) Right click the body of the **CodedUITestMethod** and then select **Generate** **Code** **for** **Coded** **UI** **Test** -> Use **CUIT** builder as shown in the following screenshots.
+3) Right click the body of the **CodedUITestMethod** and then select **Generate** **Code** **for** **Coded** **UI** **Test** -> Use **CUIT** builder as shown in the following screenshots.<br/><br/></td></tr>
 
 <br/><br/>
 ![](GettingStarted_Images/OpeningCodedUITestBuilder.png)

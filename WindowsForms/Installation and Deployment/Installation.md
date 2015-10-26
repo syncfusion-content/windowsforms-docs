@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Installation and Deployment | WindowsForms | Syncfusion
-description: Installation
+description: Installation and Deployment
 platform: WindowsForms
-control: General
+control: Installation and Deployment
 documentation: ug
 ---
 
 
 # Installation and Deployment
 
-## Installation
+### Installation
 
-### Manual Installation
+#### Manual Installation
 
 The following procedure illustrates how to install Essential Studio.
 
@@ -25,7 +25,7 @@ The following procedure illustrates how to install Essential Studio.
 7. Select the Run Dashboard check box to launch the Dashboard after installing.
 8. Click Finish. Essential Studio is installed in your system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm# "") is launched automatically.
 
-### Nuget Installation
+#### Nuget Installation
 
 
 Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps help you add the reference of the Syncfusion assemblies in the Project References.
@@ -40,7 +40,7 @@ Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The 
 4. Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.
 5. You can [configure](http://help.syncfusion.com/ug/extension/index.html#!Documents/nugetinstallandconfiguration.htm "") Nuget for the required purpose.
 
-### Command Line installation
+#### Command Line installation
 
 
 Follow the given steps to install through Command Line in Silent mode.
@@ -56,3 +56,42 @@ Follow the given steps to install through Command Line in Silent mode.
 
 “Setup file path\SyncfusionEssentialStudio_(version).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
 
+## Deployment
+
+#### X-Copy
+
+X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to "True". So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the exe, dlls, xmls files to the client machines similar to that of manual copy.
+
+![](Deployment_images/Deployment_img1.png)
+
+
+#### GAC
+
+Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the developer machines. Also Syncfusion's [Assembly Manager](../AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/Selvaganapathy/Desktop/assembly manager# "") helps you add or remove the Syncfusion assemblies to or from GAC.
+
+#### Installed Location
+
+The following table represents Assemblies/ Samples and its installed location
+
+<table>
+<tr>
+<td>
+**Assemblies/ Samples**<br/><br/></td><td>
+**Installed location**<br/><br/></td></tr>
+<tr>
+<td>
+GAC<br/><br/></td><td>
+C:\Windows\Microsoft.NET\assembly\GAC_MSIL<br/><br/></td></tr>
+<tr>
+<td>
+Assemblies<br/><br/></td><td>
+C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\Assemblies<br/><br/></td></tr>
+<tr>
+<td>
+Precompiled Assemblies<br/><br/></td><td>
+C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\precompiledassemblies\[Installed Version]<br/><br/></td></tr>
+<tr>
+<td>
+Samples<br/><br/></td><td>
+{{'__[__'| markdownify }}Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\WF\samples<br/><br/></td></tr>
+</table>

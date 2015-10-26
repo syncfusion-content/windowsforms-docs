@@ -16,36 +16,36 @@ Localization is the process of making your application multilingual by formattin
 
 The following are the steps to localize a control:
 
-1. By using **ILocalizationProvider**. 
-2. By using **Satellite** **Assemblies**.
+1) By using **ILocalizationProvider**. <br/><br/>
+2) By using **Satellite** **Assemblies**. 
 
-### ILocalizationProvider
+### By Using ILocalizationProvider
 
 ##### Add Localization to an Application
 
 Use the following procedure to localize the FindDialogBox in the Edit Control:
 
-1.   Include the required namespaces at the beginning of the source file.
+1)   Include the required namespaces at the beginning of the source file.
 
 <table>
 <tr>
 <td>
-**[C#]**<br/><br/><br/><br/>using Syncfusion.Windows.Forms;<br/><br/><br/><br/>using Syncfusion.Windows.Forms.Edit;<br/><br/></td></tr>
+**[C#]**<br/><br/>using Syncfusion.Windows.Forms;<br/><br/>using Syncfusion.Windows.Forms.Edit;<br/><br/></td></tr>
 </table>
 
 
 <table>
 <tr>
 <td>
-**[VB]**<br/><br/><br/><br/>Imports Syncfusion.Windows.Forms<br/><br/><br/><br/>Imports Syncfusion.Windows.Forms.Edit<br/><br/></td></tr>
+**[VB]**<br/><br/>Imports Syncfusion.Windows.Forms<br/><br/>Imports Syncfusion.Windows.Forms.Edit</td></tr>
 </table>
 
 
-2.   Create a class that implements the ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
+2)   Create a class that implements the ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.<br/><br/>
 
-3.   Return the localized versions of the strings corresponding to the string identifiers.
+3)   Return the localized versions of the strings corresponding to the string identifiers.<br/><br/>
 
-4.   String identifiers are defined in the ResourceIdentifiers and the EditResourceIdentifiers classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
+4)   String identifiers are defined in the ResourceIdentifiers and the EditResourceIdentifiers classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
 <table>
 <tr>
@@ -54,9 +54,9 @@ Use the following procedure to localize the FindDialogBox in the Edit Control:
 </table>
 
 
-5.   Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.
+5)   Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.<br/><br/>
 
-6.   Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
+6)   Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
 
 <table>
 <tr>
@@ -72,7 +72,7 @@ Use the following procedure to localize the FindDialogBox in the Edit Control:
 </table>
 
 
-7.   The following code example is the result:
+7)   The following code example is the result:
 
 <table>
 <tr>
@@ -113,7 +113,7 @@ There are three types of cultures:
 
 Syncfusion components have their own neutral resources, and these resources can be localized as per the needs of the customer. The steps for localizing the Syncfusion Menu Package are as follows.
 
-1.   The neutral resources of every Syncfusion component are present in the Localization folder of each component’s source code. For the Tools package, the resources are present in the following path assuming that “C:\Program Files\” is the installation path for the Syncfusion components.
+1)   The neutral resources of every Syncfusion component are present in the Localization folder of each component’s source code. For the Tools package, the resources are present in the following path assuming that “C:\Program Files\” is the installation path for the Syncfusion components.
 
 **Tools.Windows:**
 
@@ -123,11 +123,11 @@ C:\Program Files\Syncfusion\Essential Studio\<version>\Windows\Tools.Windows\Loc
 
 C:\Program Files\Syncfusion\Essential Studio\<version>\Base\Shared.Base\Localization
 
-1.   Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.
+2)   Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.<br/><br/>
 
-2.   Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows you to construct resource files containing bitmaps, icons, and strings.
+3)   Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows you to construct resource files containing bitmaps, icons, and strings.<br/><br/>
 
-3.   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.
+4)   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.<br/><br/>
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1596.jpg](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -135,25 +135,25 @@ C:\Program Files\Syncfusion\Essential Studio\<version>\Base\Shared.Base\Localiza
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1597.jpg](GettingStarted_images/GettingStarted_img3.jpeg)
 
 
-4.   By using the Resource Editor, open the resource file, **Syncfusion.Windows.Forms.Tools.SR.resources** present in the **NeutralResources** folder. The previous figure shows all string resources displayed in the tool.
+5)   By using the Resource Editor, open the resource file, **Syncfusion.Windows.Forms.Tools.SR.resources** present in the **NeutralResources** folder. The previous figure shows all string resources displayed in the tool.<br/><br/>
 
-5.   Now, the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language is used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ende”.
+6)   Now, the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language is used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ende”.
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1598.jpg](GettingStarted_images/GettingStarted_img4.jpeg)
 
 
-6.   Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool cannot be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.
+7)   Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool cannot be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.<br/><br/>
 
-7.   Open the other resources by using the WinRes utility and replace the English strings with the German equivalent. The following figure shows the file Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.resources open in the WinRes tool and with German text. The German text has been added to the form by using the Properties window.
+8)   Open the other resources by using the WinRes utility and replace the English strings with the German equivalent. The following figure shows the file Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.resources open in the WinRes tool and with German text. The German text has been added to the form by using the Properties window.
 
 
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1599.jpg](GettingStarted_images/GettingStarted_img5.jpeg)
 
 
-8.   Click **File** > **Save** **As** and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the **nameSyncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources** is added to the source path.
+9)   Click **File** > **Save** **As** and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the **nameSyncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources** is added to the source path.<br/><br/>
 
-9.   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the **sf.publicsnk** file from the **Localization** folder.
+10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the **sf.publicsnk** file from the **Localization** folder.<br/><br/>
 
 **Tools.Windows**
 
@@ -171,11 +171,11 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 </table>
 
 
-10.  The version you specify for these DLLs in the __al__ command should be based on the **SatelliteContractVersionAttribute** setting in the **productAssemblyInfo**. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the SatelliteContractVersionAttribute has changed.
+11)  The version you specify for these DLLs in the __al__ command should be based on the **SatelliteContractVersionAttribute** setting in the **productAssemblyInfo**. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the SatelliteContractVersionAttribute has changed.<br/><br/>
 
-11.  On successful execution, an assembly file, **Syncfusion.Tools.Windows.resources.dll** is created.
+12)  On successful execution, an assembly file, **Syncfusion.Tools.Windows.resources.dll** is created.<br/><br/>
 
-12.  Finally, mark this satellite DLL for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
+13)  Finally, mark this satellite DLL for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
 
 <table>
 <tr>
@@ -184,9 +184,9 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll<br/><br/></td></tr>
 </table>
 
 
-13.  Drop this DLL into an appropriate sub-directory under your .EXE’s directory (bin\Debug\), based on the naming conventions enforced in .NET. You can put it in the **de-DE** sub-directory when this DLL contains resources from the German (Germany) culture.
+14)  Drop this DLL into an appropriate sub-directory under your .EXE’s directory (bin\Debug\), based on the naming conventions enforced in .NET. You can put it in the **de-DE** sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
 
-14.  Finally, you can make your application fetch the German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the **Forms** constructor before the **InitializeComponent()**.
+15)  Finally, you can make your application fetch the German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the **Forms** constructor before the **InitializeComponent()**.<br/><br/>
 
 <table>
 <tr>
@@ -195,7 +195,7 @@ Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de
 </table>
 
 
-15.  Now, run your application that contains the Syncfusion Toolbar and Menu controls and open the **Customization** dialog. The dialog appears in German as shown in the following figure:
+16)  Now, run your application that contains the Syncfusion Toolbar and Menu controls and open the **Customization** dialog. The dialog appears in German as shown in the following figure:
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1600.jpg](GettingStarted_images/GettingStarted_img6.jpeg)
 

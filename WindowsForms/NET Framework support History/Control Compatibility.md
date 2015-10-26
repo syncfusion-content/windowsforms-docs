@@ -1,14 +1,60 @@
 ---
 layout: post
 title: .Net Framework support History | WindowsForms | Syncfusion
-description: Control Compatibility
+description: .Net Framework support History
 platform: WindowsForms
-control: General
+control: Introduction
 documentation: ug
 ---
 
+### Version Compatibility
 
-## Control Compatibility
+The table represents the .NET framework versions vs Syncfusion ES version.
+
+<table>
+<tr>
+<td>
+**Syncfusion** **version******<br/><br/></td><td>
+**.****NET** **3****.****5******<br/><br/></td><td>
+**.****NET** **4****.****0******<br/><br/></td><td>
+**.****NET** **4****.****5******<br/><br/></td><td>
+**.****NET** **4****.****5****.****1******<br/><br/></td><td>
+******.****NET** **4****.****6******<br/><br/></td></tr>
+<tr>
+<td>
+Earlier Version<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+No<br/><br/></td><td>
+No<br/><br/></td><td>
+No<br/><br/></td></tr>
+<tr>
+<td>
+From 11.2<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+No<br/><br/></td><td>
+No<br/><br/></td></tr>
+<tr>
+<td>
+From11.3<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+No<br/><br/></td></tr>
+<tr>
+<td>
+From.13.3<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td></tr>
+</table>
+
+### Control Compatibility
 
 The table represents the .NET framework versions vs Syncfusion controls.
 
@@ -1205,9 +1251,9 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </table>
 
-# Control Dependencies
+### Control Dependencies
 
-Table illustrates the Controls' assembly and its dependencies.
+Table illustrates the Control's assembly and its dependencies.
 
 <table>
 <tr>
