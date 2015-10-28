@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Coded UI | WindowsForms | Syncfusion
+title: Coded UI | WindowsForms | Syncfusion 
 description: Getting Started
 platform: WindowsForms
 control: Coded UI
@@ -24,7 +24,7 @@ The Essential Tools TreeViewAdv control has basic level of Coded UI automat
 
 In case, the **Coded** **UI** test project does not appear on Visual Studio, you may be using a version that does not support **CUIT**. To create **CUIT**, you need to use Visual Studio Enterprise edition.
 
-
+
 
 ![](GettingStarted_Images/CreatingTestApplication.png)
 
@@ -32,13 +32,13 @@ In case, the **Coded** **UI** test project does not appear on Visual Studi
 
 N> The CUIT file is generated automatically, when creating the Coded UI test project. To add another test file, choose shortcut menu of the CUIT project, point to add, and then choose Coded UI test
 
-
+
 ![](GettingStarted_Images/AddingCodedUI.png)
 
 
 ### Recording Steps
 
-In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, choose the **Record** **actions** as shown in the following image.
+In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, choose the **Record** **actions** as shown in the following image.
 
 ![](GettingStarted_Images/RecordingOption.png)
 
@@ -47,13 +47,13 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 
 
-
+
 
 ![](GettingStarted_Images/RecordingFromUIMap.png)
 
 
 
-
+
 
 ![](GettingStarted_Images/PauseRecordingFromUIMap.png)
 
@@ -63,7 +63,7 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 
 
-
+
 
 ![](GettingStarted_Images/RecordedSteps.png)
 
@@ -76,7 +76,7 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 
 
-![](GettingStarted_Images/GenerateCodeWindowForUIMap.png)
+![](GettingStarted_Images/GenerateCodeWindowForUIMap.png)
 
 
 ### Testing Recorded Steps
