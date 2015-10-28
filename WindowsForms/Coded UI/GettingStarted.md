@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coded UI | WindowsForms | Syncfusion
+title: Coded UI | WindowsForms | Syncfusion 
 description: Getting Started
 platform: WindowsForms
 control: Coded UI
