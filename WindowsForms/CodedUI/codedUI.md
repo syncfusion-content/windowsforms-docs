@@ -90,19 +90,20 @@ You can test the application with the generated **CUIT** method.
 
 The following code example demonstrates the same.
 
-**C#**
+**[C#]**
 
 <table>
 <tr>
 <td>
-[TestMethod]<br/><br/>public void CodedUITestMethod1()<br/><br/>{<br/><br/>// Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.<br/><br/>this.UIMap.RecordedMethod1();<br/><br/>}<br/><br/></td></tr>
+public void CodedUITestMethod1()<br/><br/>{<br/><br/>// Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.<br/><br/>this.UIMap.RecordedMethod1();<br/><br/>}<br/><br/></td></tr>
 </table>
-**VB**
+
+**[VB]**
 
 <table>
 <tr>
 <td>
-<TestMethod> _<br/><br/>Public Sub CodedUITestMethod1()<br/><br/>Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.<br/><br/>Me.UIMap.RecordedMethod1()<br/><br/>End Sub<br/><br/></td></tr>
+Public Sub CodedUITestMethod1()<br/><br/>Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.<br/><br/>Me.UIMap.RecordedMethod1()<br/><br/>End Sub<br/><br/></td></tr>
 </table>
 
 
@@ -118,7 +119,7 @@ The following code example demonstrates the same.
 ![](GettingStarted_Images/AssetWindowForTreeViewAdv.png)
 <br/><br/>
 
-### Supported of Controls
+## Supported of Controls
 
 The following controls are featured with CodedUI Testing support.
 

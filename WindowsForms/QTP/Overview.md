@@ -135,7 +135,7 @@ Operating Systems</th><td>
 
 
 
-## Documentation
+### Documentation
 
 Syncfusion provides the following documentation segments that covers all the necessary information pertaining to Essential QuickTest Professional.
 
@@ -157,11 +157,11 @@ Class Reference</td><td>
 </table>
 
 
-# Getting Started
+## Getting Started
 
 Essential QuickTest Professional lets you test applications with different Syncfusion controls, and allows playback of scripts. The following is a list of chapters containing information on the functionality of this software.
 
-## Create and Record a Test
+### Create and Record a Test
 
 To create a new test:
 
@@ -288,7 +288,7 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 
 The process of creating and recording the test is completed.
 
-## Running a Test
+### Running a Test
 
 On recording, all the user-actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test, follow the given steps: 
 
@@ -334,13 +334,13 @@ The process of running the test is completed.
 
  To know more about running scripts, refer to the QTP help document. 
 
-## Editing a Test
+### Editing a Test
 
 A test can be edited in either the Keyword view or in the Expert view. You can switch between these views by selecting the required tab at the bottom left of the QuickTest Professional test screen. 
 
 
 
-### Editing in Expert View
+#### Editing in Expert View
 
 
 
@@ -377,7 +377,7 @@ For more details on running the test, refer to the previous section.
 
 
 
-### Editing in Keyword View
+#### Editing in Keyword View
 
 
 
@@ -425,7 +425,7 @@ You can then run the edited test.
 
  For more details on running the edited test, refer to Editing on Expert View topic.
 
-## Saving a Test
+### Saving a Test
 
 Saving a test is like saving any other document or picture. To save a test, follow the steps:
 
@@ -446,7 +446,7 @@ Saving a test is like saving any other document or picture. To save a test, foll
 
 The test is saved.
 
-## Running the Saved Test
+### Running the Saved Test
 
 The tests that have been saved can be replayed later. To run a saved test, follow the steps provided:
 
@@ -491,7 +491,7 @@ The tests that have been saved can be replayed later. To run a saved test, follo
 
 The process of running a saved test is complete.
 
-# Supported Controls and Methods
+## Supported Controls and Methods
 
 The following controls are supported by Essential QuickTest Professional:
 
@@ -505,7 +505,7 @@ The following controls are supported by Essential QuickTest Professional:
 
 Supported methods denote those methods that are recorded in QTP. 
 
-## Essential Grid
+### Essential Grid
 
 Essential Grid supports the following controls:
 
@@ -2222,27 +2222,27 @@ Scroll(double x, double y)</td><td>
 Scroll the diagram view.</td></tr>
 </table>
 
-# Known Issues
+## Known Issues
 
 The following are the known issues in various platforms that are yet to be solved.
 
 
 
-## General
+### General
 
 Documentation column is not supported in the Keyword View.
 
-## Essential Grid 
+### Essential Grid 
 
 Grid does not support drop-down controls such as Combo box, Grid List control, and so on.
 
-## Essential Tools
+### Essential Tools
 
 The following are the list of tools with their respective known issues:
 
 
 
-### Group Bar
+#### Group Bar
 
 
 
@@ -2284,13 +2284,13 @@ When the button view is set to false, the drag-and-drop, or re-ordering, of the 
 
 The Quick access panel customize menu is not recorded.
 
-# Utilities
+## Utilities
 
-## Configuring the SwfConfig file
+### Configuring the SwfConfig file
 
 An XML file in QTP called SwfConfig is the configuration file located at (Installed location of Essential QuickTest Professional)\Config\<version-2.0, 3.5, or 4.0>\swfconfig, that contains all the mapping information for QTP to recognize Syncfusion controls. Using the SwfConfig utility, you can easily configure the SwfConfig.xml file in HP QTP.
 
-### Steps to Configure the SwfConfig.xml File
+#### Steps to Configure the SwfConfig.xml File
 
 
 
