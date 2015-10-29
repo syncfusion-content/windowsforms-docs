@@ -20,7 +20,7 @@ The table represents the Gesture support vs Syncfusion controls.
 <table>
 <tr>
 <td>
-**S****.****No**<br/><br/></td><td>
+**S.No**<br/><br/></td><td>
 **Category**<br/><br/></td><td>
 **Control**<br/><br/></td><td>
 **Swipe**<br/><br/></td><td>
@@ -30,7 +30,7 @@ The table represents the Gesture support vs Syncfusion controls.
 <tr>
 <td>
 1<br/><br/></td><td>
-Grids<br/><br/></td><td>
+**GRIDS**<br/><br/></td><td>
 Cell Grid<br/><br/></td><td>
 Selection, Scrolling<br/><br/></td><td>
 -<br/><br/></td><td>
@@ -40,7 +40,7 @@ Right-Click<br/><br/></td></tr>
 <td>
 <br/><br/></td><td>
 <br/><br/></td><td>
-Data Grid<br/><br/></td><td>
+**DATAGRID**<br/><br/></td><td>
 Selection, Scrolling and Drag Drop<br/><br/></td><td>
 -<br/><br/></td><td>
 Click and Select<br/><br/></td><td>
@@ -57,7 +57,7 @@ Right-Click<br/><br/></td></tr>
 <tr>
 <td>
 2<br/><br/></td><td>
-Data Visualization<br/><br/></td><td>
+**DATA VISUALIZATION**<br/><br/></td><td>
 Diagram<br/><br/></td><td>
 Pan/Rubber band<br/><br/>Selection<br/><br/></td><td>
 Zoom<br/><br/></td><td>
@@ -156,7 +156,7 @@ Maps<br/><br/></td><td>
 <tr>
 <td>
 3<br/><br/></td><td>
-Layout<br/><br/></td><td>
+**LAYOUT**<br/><br/></td><td>
 Office2007Form<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
@@ -309,7 +309,7 @@ Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 4<br/><br/></td><td>
-Editors<br/><br/></td><td>
+**EDITORS**<br/><br/></td><td>
 CurrencyTextBox<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
@@ -642,7 +642,7 @@ Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 5<br/><br/></td><td>
-Navigation<br/><br/></td><td>
+**NAVIGATION**<br/><br/></td><td>
 RadialMenu<br/><br/></td><td>
 Move, Swipe<br/><br/></td><td>
 Zoom<br/><br/></td><td>
@@ -777,7 +777,7 @@ Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 6<br/><br/></td><td>
-File Format<br/><br/></td><td>
+**FILE FORMAT**<br/><br/></td><td>
 DocIO<br/><br/></td><td>
 <br/><br/></td><td>
 <br/><br/></td><td>
@@ -822,7 +822,7 @@ Presentation<br/><br/></td><td>
 <tr>
 <td>
 7<br/><br/></td><td>
-Notification<br/><br/></td><td>
+**NOTIFICATION**<br/><br/></td><td>
 SplashPanel<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
@@ -930,7 +930,7 @@ Select<br/><br/></td></tr>
 <tr>
 <td>
 8<br/><br/></td><td>
-Miscellaneous<br/><br/></td><td>
+**MISCELLANEOUS**<br/><br/></td><td>
 Calculate<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>

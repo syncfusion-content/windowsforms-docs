@@ -8,11 +8,9 @@ documentation: ug
 ---
 
 
-# Installation and Deployment
+# Installation
 
-### Installation
-
-#### Manual Installation
+## Manual Installation
 
 The following procedure illustrates how to install Essential Studio.
 
@@ -25,22 +23,22 @@ The following procedure illustrates how to install Essential Studio.
 7. Select the Run Dashboard check box to launch the Dashboard after installing.
 8. Click Finish. Essential Studio is installed in your system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm# "") is launched automatically.
 
-#### Nuget Installation
+## Nuget Installation
 
 
 Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps help you add the reference of the Syncfusion assemblies in the Project References.
 
-1. Right-click the Project and choose the Manage NuGet Packages.
-2. Select Online. Refer to the following screenshot for more information. 
+1) Right-click the Project and choose the Manage NuGet Packages.
+2) Select Online. Refer to the following screenshot for more information. 
 
 ![nuget](Installation_images/Installation_img1.jpeg)
 
 
-3. Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, and 45, 451 are added.
-4. Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.
-5. You can [configure](http://help.syncfusion.com/ug/extension/index.html#!Documents/nugetinstallandconfiguration.htm "") Nuget for the required purpose.
+3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, and 45, 451 are added.
+4) Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.
+5) You can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.
 
-#### Command Line installation
+## Command Line installation
 
 
 Follow the given steps to install through Command Line in Silent mode.
@@ -56,20 +54,20 @@ Follow the given steps to install through Command Line in Silent mode.
 
 “Setup file path\SyncfusionEssentialStudio_(version).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
 
-## Deployment
+# Deployment
 
-#### X-Copy
+## X-Copy
 
 X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to "True". So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the exe, dlls, xmls files to the client machines similar to that of manual copy.
 
 ![](Deployment_images/Deployment_img1.png)
 
 
-#### GAC
+## GAC
 
 Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the developer machines. Also Syncfusion's [Assembly Manager](../AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/Selvaganapathy/Desktop/assembly manager# "") helps you add or remove the Syncfusion assemblies to or from GAC.
 
-#### Installed Location
+## Installed Location
 
 The following table represents Assemblies/ Samples and its installed location
 

@@ -12,14 +12,14 @@ documentation: ug
 
 Localization is the process of making your application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain. Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement.
 
-## Getting Started
+### Getting Started
 
 The following are the steps to localize a control:
 
 1) By using **ILocalizationProvider**. <br/><br/>
 2) By using **Satellite** **Assemblies**. 
 
-### By Using ILocalizationProvider
+## By Using ILocalizationProvider
 
 ##### Add Localization to an Application
 
@@ -91,7 +91,7 @@ Use the following procedure to localize the FindDialogBox in the Edit Control:
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
 
-### By using Satellite Assemblies
+## By using Satellite Assemblies
 
 Localization is a key feature for providing solutions to global customers. This is true for desktop applications as well as Syncfusion components. Resources are important for localizing an application as they contain the necessary settings for different languages and cultures.
 
@@ -109,7 +109,7 @@ There are three types of cultures:
 
 •**Specific:** A specific culture is a culture that is associated with a language and a country or region like, “fr-CA” and “fr-FR”. For example, "fr" is a neutral culture and "fr-FR" is a specific culture. Note that "zh-CHS" (simplified Chinese) and "zh-CHT" (traditional Chinese) are neutral cultures.
 
-##### Steps to Localize Syncfusion Components
+### Steps to Localize Syncfusion Components
 
 Syncfusion components have their own neutral resources, and these resources can be localized as per the needs of the customer. The steps for localizing the Syncfusion Menu Package are as follows.
 

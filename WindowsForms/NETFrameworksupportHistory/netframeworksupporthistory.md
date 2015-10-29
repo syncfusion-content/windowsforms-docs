@@ -14,12 +14,12 @@ The table represents the .NET framework versions vs Syncfusion ES version.
 <table>
 <tr>
 <td>
-**Syncfusion** **version******<br/><br/></td><td>
-**.****NET** **3****.****5******<br/><br/></td><td>
-**.****NET** **4****.****0******<br/><br/></td><td>
-**.****NET** **4****.****5******<br/><br/></td><td>
-**.****NET** **4****.****5****.****1******<br/><br/></td><td>
-******.****NET** **4****.****6******<br/><br/></td></tr>
+**Syncfusion version**<br/><br/></td><td>
+**.NET 3.5**<br/><br/></td><td>
+**.NET 4.0**<br/><br/></td><td>
+**.NET 4.5**<br/><br/></td><td>
+**.NET 4.5.1**<br/><br/></td><td>
+**.NET 4.6**<br/><br/></td></tr>
 <tr>
 <td>
 Earlier Version<br/><br/></td><td>
@@ -61,17 +61,17 @@ The table represents the .NET framework versions vs Syncfusion controls.
 <table>
 <tr>
 <th>
-**Category******<br/><br/></th><th>
-**Controls******<br/><br/></th><th>
-**.****NET** **2****.****0******<br/><br/></th><th>
-******.****NET** **3****.****5******<br/><br/></th><th>
-**.****NET** **4****.****0******<br/><br/></th><th>
-**.****NET** **4****.****5******<br/><br/></th><th>
-**.****NET** **4****.****5****.****1******<br/><br/></th><th>
-**.****NET** **4****.****6******<br/><br/></th></tr>
+**Category**<br/><br/></th><th>
+**Controls**<br/><br/></th><th>
+**.NET 2.0**<br/><br/></th><th>
+**.NET 3.5**<br/><br/></th><th>
+**.NET 4.0**<br/><br/></th><th>
+**.NET 4.5**<br/><br/></th><th>
+**.NET 4.5.1**<br/><br/></th><th>
+**.NET 4.6**<br/><br/></th></tr>
 <tr>
 <td>
-**GRIDS******<br/><br/></td><td>
+**GRIDS**<br/><br/></td><td>
 CellGrid<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -91,7 +91,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-**DATA** **VISUALIZATION******<br/><br/></td><td>
+**DATA VISUALIZATION**<br/><br/></td><td>
 Radial Gauge<br/><br/></td><td>
 No<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -161,7 +161,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-**LAYOUT******<br/><br/></td><td>
+**LAYOUT**<br/><br/></td><td>
 Office2007Form<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -471,7 +471,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-**EDITORS******<br/><br/></td><td>
+**EDITORS**<br/><br/></td><td>
 CurrencyTextBox<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -831,7 +831,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-**NAVIGATION******<br/><br/></td><td>
+**NAVIGATION**<br/><br/></td><td>
 TreeViewAdv<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -1041,7 +1041,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-**NOTIFICATION******<br/><br/></td><td>
+**NOTIFICATION**<br/><br/></td><td>
 SplashPanel<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -1151,7 +1151,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-**MISCELLANEOUS******<br/><br/></td><td>
+**MISCELLANEOUS**<br/><br/></td><td>
 SkinManager<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -1231,7 +1231,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-**BUSINESS** **INTELLIGENCE******<br/><br/></td><td>
+**BUSINESS INTELLIGENCE**<br/><br/></td><td>
 Pivot Grid<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -1258,11 +1258,11 @@ Table illustrates the Control's assembly and its dependencies.
 <table>
 <tr>
 <th>
-**S****.****NO******<br/><br/></th><th>
-**Category******<br/><br/></th><th>
-**Control******<br/><br/></th><th>
-**Main** **Assembly******<br/><br/></th><th>
-**Depended** **Assemblies******<br/><br/></th></tr>
+**S.NO**<br/><br/></th><th>
+**Category**<br/><br/></th><th>
+**Control**<br/><br/></th><th>
+**Main Assembly**<br/><br/></th><th>
+**Depended Assemblies**<br/><br/></th></tr>
 <tr>
 <td>
 1. <br/></td><td>
@@ -1280,7 +1280,7 @@ Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Grid.G
 <tr>
 <td>
 3. <br/></td><td>
-<br/>**DATA** **VISUALIZATION**<br/><br/></td><td>
+<br/>**DATA VISUALIZATION**<br/><br/></td><td>
 Radial Gauge<br/><br/></td><td>
 Syncfusion.Gauge.Windows<br/><br/></td><td>
 Syncfusion.Shared.Base<br/><br/></td></tr>
@@ -2071,7 +2071,7 @@ Syncfusion.Calculate.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Sh
 <tr>
 <td>
 116. <br/></td><td>
-<br/>**BUSINESS** **INTELLIGENCE**<br/><br/></td><td>
+<br/>**BUSINESS INTELLIGENCE**<br/><br/></td><td>
 Pivot Grid<br/><br/></td><td>
 Syncfusion.PivotAnalysis.Windows<br/><br/></td><td>
 Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.PivotAnalysis.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>

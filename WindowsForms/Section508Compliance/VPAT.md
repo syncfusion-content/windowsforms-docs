@@ -178,16 +178,16 @@ Essential Studio for Windows Forms controls provide functionality that conforms 
 <td>
 Section 1194.41 (a) Product Support Documentation provided to end-users is made available in alternate formats upon request at no additional charge.<br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online documentation can be found at {{'[http://www.syncfusion.com/library](http://www.syncfusion.com/library#"")'| markdownify }}<br/><br/></td></tr>
+Online [Documentation](http://help.syncfusion.com) is available.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.41 (b) Accessibility and Compatibility Features. End-users can have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request at no additional charge.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Information about Syncfusion’s built-in access technologies is available at {{'[http://www.syncfusion.com/products/accessibility](http://www.syncfusion.com/products/accessibility#"")'| markdownify }}.<br/><br/></td></tr>
+Information about Syncfusion’s built-in access technologies is available at [Accessible](http://www.syncfusion.com/).<br/><br/></td></tr>
 <tr>
 <td>
 1194.41 (c) Support Services for products can accommodate the communication needs of end-users with disabilities.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online support and forums are available at {{'[http://www.syncfusion.com/support/](http://www.syncfusion.com/support/#"")'| markdownify }} <br/><br/></td></tr>
+Online support [Incidents](https://www.syncfusion.com/support/directtrac/incidents) and [Forums](https://www.syncfusion.com/support/directtrac/forums) are available.<br/><br/></td></tr>
 </table>
 Syncfusion does not promise that the information provided in this document is error-free, or that any error is corrected, or that your use of the information provides specific results. The document and its contents are delivered on an “as-is” basis. All information provided is subject to change without prior notice. Syncfusion disclaims all warranties, express, or implied, including any warranty of accuracy, non-infringement, merchantability, and fitness for a particular purpose.

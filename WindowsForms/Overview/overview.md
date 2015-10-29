@@ -24,24 +24,24 @@ Essential WF is a comprehensive collection of over 100+ enterprise-grade WF comp
 ### Additional help resources
 
 
-The [Knowledge Base](http://www.syncfusion.com/kb/windowsforms# "") section contains responses to most of the common questions asked by the customers in the past. This would be a good place to search for topics that are not covered in the User Guide.
+The [Knowledge Base](http://www.syncfusion.com/kb/windowsforms) section contains responses to most of the common questions asked by the customers in the past. This would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the Knowledge Base, the [Forum](http://www.syncfusion.com/forums/windowsforms# "") section also contains responses to questions that other customers haa asked us in the past.
+Similar to the Knowledge Base, the [Forum](http://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers haa asked us in the past.
 
 ### Create a support incident
 
-In case you are unable to find the information that you are looking for in the self-help resources mentioned above, then please contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents# "").
+In case you are unable to find the information that you are looking for in the self-help resources mentioned above, then please contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
 ## List of Controls
 
 <table>
 <tr>
 <th>
-**Category******<br/><br/></th><th>
-**Control******<br/><br/></th></tr>
+**Category**<br/><br/></th><th>
+**Control**<br/><br/></th></tr>
 <tr>
 <td>
-**GRIDS******<br/><br/></td><td>
+GRIDS<br/><br/></td><td>
 CellGrid<br/><br/></td></tr>
 <tr>
 <td>
@@ -49,7 +49,7 @@ CellGrid<br/><br/></td></tr>
 DataGrid<br/><br/></td></tr>
 <tr>
 <td>
-**DATA** **VISUALIZATION******<br/><br/></td><td>
+DATA VISUALIZATION<br/><br/></td><td>
 Radial Gauge<br/><br/></td></tr>
 <tr>
 <td>
@@ -77,7 +77,7 @@ BulletGraph<br/><br/></td></tr>
 TreeMap<br/><br/></td></tr>
 <tr>
 <td>
-**LAYOUT******<br/><br/></td><td>
+LAYOUT<br/><br/></td><td>
 Office2007Form<br/><br/></td></tr>
 <tr>
 <td>
@@ -201,7 +201,7 @@ ImageListAdv<br/><br/></td></tr>
 TypeLoader<br/><br/></td></tr>
 <tr>
 <td>
-**EDITORS******<br/><br/></td><td>
+EDITORS<br/><br/></td><td>
 CurrencyTextBox<br/><br/></td></tr>
 <tr>
 <td>
@@ -345,7 +345,7 @@ NumericUpDownext<br/><br/></td></tr>
 ImageStreamer<br/><br/></td></tr>
 <tr>
 <td>
-**NAVIGATION******<br/><br/></td><td>
+NAVIGATION<br/><br/></td><td>
 TreeViewAdv<br/><br/></td></tr>
 <tr>
 <td>
@@ -429,7 +429,7 @@ ToolStripEx<br/><br/></td></tr>
 TrackBarEx<br/><br/></td></tr>
 <tr>
 <td>
-**NOTIFICATION******<br/><br/></td><td>
+NOTIFICATION<br/><br/></td><td>
 SplashPanel<br/><br/></td></tr>
 <tr>
 <td>
@@ -473,7 +473,7 @@ Clock<br/><br/></td></tr>
 HubTile<br/><br/></td></tr>
 <tr>
 <td>
-**MISCELLANEOUS******<br/><br/></td><td>
+MISCELLANEOUS<br/><br/></td><td>
 SkinManager<br/><br/></td></tr>
 <tr>
 <td>
@@ -505,7 +505,7 @@ Grouping<br/><br/></td></tr>
 Calculate<br/><br/></td></tr>
 <tr>
 <td>
-**BUSINESS** **INTELLIGENCE******<br/><br/></td><td>
+BUSINESS INTELLIGENCE<br/><br/></td><td>
 Pivot Grid<br/><br/></td></tr>
 <tr>
 <td>
