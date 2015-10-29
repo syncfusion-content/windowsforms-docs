@@ -42,8 +42,8 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 ![](GettingStarted_Images/RecordingOption.png)
 
-1) After choosing the option, Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.<br/><br/></td></tr>
-2) Choose the **Start** **recording** option from the **UI** **Map** to record the testing. You can also pause the recording while testing the application.<br/><br/></td></tr>
+1) After choosing the option, Coded UI Test Builder **(**UIMap**)** is shown at the BottomRight of the window.<br/><br/>
+2) Choose the **Start** **recording** option from the **UI** **Map** to record the testing. You can also pause the recording while testing the application.<br/><br/>
 
 
 
@@ -57,9 +57,9 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 ![](GettingStarted_Images/PauseRecordingFromUIMap.png)
 
-3) The recorded steps can be viewed by using the **UIMap** or by pressing Alt + S key.<br/><br/></td></tr>
-4) To delete actions that you had recorded by mistake, choose Edit Actions.<br/><br/></td></tr>
-5) To generate code that replicates your action, choose the Generate Code icon and type a name and description for your **CUIT** method.<br/><br/></td></tr>
+3) The recorded steps can be viewed by using the **UIMap** or by pressing Alt + S key.<br/><br/>
+4) To delete actions that you had recorded by mistake, choose Edit Actions.<br/><br/>
+5) To generate code that replicates your action, choose the Generate Code icon and type a name and description for your **CUIT** method.<br/><br/>
 
 
 
@@ -67,12 +67,12 @@ In the **Generate** **Code** **for** **Coded** **UI** **Test** dialog box, cho
 
 ![](GettingStarted_Images/RecordedSteps.png)
 
-6) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates your actions.<br/><br/></td></tr>
+6) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates your actions.<br/><br/>
 
 
 ![](GettingStarted_Images/GenerateCodedUIMap.png)
 
-7) Choose the required method and description for code generation.<br/><br/></td></tr>
+7) Choose the required method and description for code generation.<br/><br/>
 
 
 
@@ -103,13 +103,13 @@ public void CodedUITestMethod1()<br/><br/>{<br/><br/>// Generates code for this 
 <table>
 <tr>
 <td>
-Public Sub CodedUITestMethod1()<br/><br/>Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.<br/><br/>Me.UIMap.RecordedMethod1()<br/><br/>End Sub<br/><br/></td></tr>
+Public Sub CodedUITestMethod1()<br/><br/>Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.<br/><br/>Me.UIMap.RecordedMethod1()<br/><br/>End Sub<br/><br/>
 </table>
 
 
-2) Build and run the application that has already been configured. You can also open the **CUIT** builder with the following steps.<br/><br/></td></tr>
+2) Build and run the application that has already been configured. You can also open the **CUIT** builder with the following steps.<br/><br/>
 
-3) Right click the body of the **CodedUITestMethod** and then select **Generate** **Code** **for** **Coded** **UI** **Test** -> Use **CUIT** builder as shown in the following screenshots.<br/><br/></td></tr>
+3) Right click the body of the **CodedUITestMethod** and then select **Generate** **Code** **for** **Coded** **UI** **Test** -> Use **CUIT** builder as shown in the following screenshots.<br/><br/>
 
 <br/><br/>
 ![](GettingStarted_Images/OpeningCodedUITestBuilder.png)
