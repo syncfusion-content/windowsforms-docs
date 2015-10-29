@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-### Version Compatibility
+## Version Compatibility
 
 The table represents the .NET framework versions vs Syncfusion ES version.
 
@@ -54,7 +54,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </table>
 
-### Control Compatibility
+## Control Compatibility
 
 The table represents the .NET framework versions vs Syncfusion controls.
 
@@ -1251,7 +1251,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </table>
 
-### Control Dependencies
+## Control Dependencies
 
 Table illustrates the Control's assembly and its dependencies.
 
