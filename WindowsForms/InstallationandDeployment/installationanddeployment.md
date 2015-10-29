@@ -28,7 +28,7 @@ The following procedure illustrates how to install Essential Studio.
 
 Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps help you add the reference of the Syncfusion assemblies in the Project References.
 
-1) Right-click the Project and choose the Manage NuGet Packages.
+1) Right-click the Project and choose the Manage NuGet Packages.<br/><br/>
 2) Select Online. Refer to the following screenshot for more information. 
 
 ![nuget](Installation_images/Installation_img1.jpeg)
@@ -91,5 +91,5 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\precompil
 <tr>
 <td>
 Samples<br/><br/></td><td>
-{{'__[__'| markdownify }}Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\WF\samples<br/><br/></td></tr>
+[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\WF\samples<br/><br/></td></tr>
 </table>
