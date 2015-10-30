@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Section 508 Compilance | WindowsForms | Syncfusion
-description: Voluntary Product Accessibility Template
+description: Voluntary Product Accessibility Template for Syncfusion WF products
 platform: WindowsForms
 control: General
 documentation: ug
@@ -16,9 +16,9 @@ The following Voluntary Product Accessibility information refers to the Syncfusi
 
 <table>
 <tr>
-<td>
-**CRITERIA**<br/><br/></td><td>
-**SUPPORTING** **FEATURES**<br/><br/></td></tr>
+<th>
+CRITERIA<br/><br/></th><th>
+SUPPORTING FEATURES<br/><br/></th><th>
 <tr>
 <td>
 1194.21 Software applications and operating systems.<br/><br/><br/><br/></td><td>
@@ -58,10 +58,10 @@ Refer to the attached VPAT.<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**CRITERIA**<br/><br/></td><td>
-**SUPPORTING** **FEATURES**<br/><br/></td><td>
-**EXPLANATIONS**<br/><br/></td></tr>
+<th>
+CRITERIA<br/><br/></th><th>
+SUPPORTING FEATURES<br/><br/></th><th>
+REMARKS AND EXPLANATION<br/><br/></th></tr>
 <tr>
 <td>
 (a) When software is designed to run on a system that has a keyboard, product functions are executable from a keyboard, where the function itself or the result of performing a function can be discerned textually.<br/><br/></td><td>
@@ -129,10 +129,10 @@ This criterion does not apply to Essential Studio for Windows Forms controls.<br
 
 <table>
 <tr>
-<td>
-**CRITERIA**<br/><br/></td><td>
-**SUPPORTING** **FEATURES**<br/><br/></td><td>
-**REMARKS** **AND** **EXPLANATIONS**<br/><br/></td></tr>
+<th>
+CRITERIA<br/><br/></th><th>
+SUPPORTING FEATURES<br/><br/></th><th>
+REMARKS AND EXPLANATION<br/><br/></th></tr>
 <tr>
 <td>
 (a) At least one mode of operation and information retrieval that does not require user vision shall be provided or support for Assistive Technology used by people who are blind or visually impaired shall be provided.<br/><br/></td><td>
@@ -170,24 +170,24 @@ Essential Studio for Windows Forms controls provide functionality that conforms 
 
 <table>
 <tr>
-<td>
-**Criteria**<br/><br/></td><td>
-**Supporting** **Features**<br/><br/></td><td>
-**Remarks** **and** **Explanation**<br/><br/></td></tr>
+<th>
+CRITERIA<br/><br/></th><th>
+SUPPORTING FEATURES<br/><br/></th><th>
+REMARKS AND EXPLANATION<br/><br/></th></tr>
 <tr>
 <td>
 Section 1194.41 (a) Product Support Documentation provided to end-users is made available in alternate formats upon request at no additional charge.<br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online [Documentation](http://help.syncfusion.com) is available.<br/><br/></td></tr>
+Online {{'[Documentation](http://help.syncfusion.com)'| markdownify }} is available.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.41 (b) Accessibility and Compatibility Features. End-users can have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request at no additional charge.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Information about Syncfusion’s built-in access technologies is available at [Accessible](http://www.syncfusion.com/).<br/><br/></td></tr>
+Information about Syncfusion’s built-in access technologies is available at {{'[Accessible](http://www.syncfusion.com/)'| markdownify }}.<br/><br/></td></tr>
 <tr>
 <td>
 1194.41 (c) Support Services for products can accommodate the communication needs of end-users with disabilities.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online support [Incidents](https://www.syncfusion.com/support/directtrac/incidents) and [Forums](https://www.syncfusion.com/support/directtrac/forums) are available.<br/><br/></td></tr>
+Online support {{'[Incidents](https://www.syncfusion.com/support/directtrac/incidents)'| markdownify }} and {{'[Forums](https://www.syncfusion.com/support/directtrac/forums)'| markdownify }} are available.<br/><br/></td></tr>
 </table>
 Syncfusion does not promise that the information provided in this document is error-free, or that any error is corrected, or that your use of the information provides specific results. The document and its contents are delivered on an “as-is” basis. All information provided is subject to change without prior notice. Syncfusion disclaims all warranties, express, or implied, including any warranty of accuracy, non-infringement, merchantability, and fitness for a particular purpose.
