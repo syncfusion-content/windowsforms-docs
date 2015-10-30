@@ -37,8 +37,8 @@ In case you are unable to find the information that you are looking for in the s
 <table>
 <tr>
 <th>
-**Category**<br/><br/></th><th>
-**Control**<br/><br/></th></tr>
+Category<br/><br/></th><th>
+Control<br/><br/></th></tr>
 <tr>
 <td>
 GRIDS<br/><br/></td><td>
