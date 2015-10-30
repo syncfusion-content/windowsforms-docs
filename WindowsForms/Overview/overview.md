@@ -7,9 +7,6 @@ control: Introduction
 documentation: ug
 ---
 
-
-# Overview
-
 ## Welcome to Syncfusion Essential WF
 
 Essential WF is a comprehensive collection of over 100+ enterprise-grade WF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.

@@ -18,8 +18,7 @@ Table illustrates the Control's assembly and its dependencies.
 Category<br/><br/></th><th>
 Control<br/><br/></th><th>
 Main Assembly<br/><br/></th><th>
-Depended Assemblies<br/><br/></th><th>
-</th></tr>
+Depended Assemblies<br/><br/></th></tr>
 <tr>
 <td>
 GRIDS<br/><br/></td><td>
