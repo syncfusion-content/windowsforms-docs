@@ -27,18 +27,19 @@ Use the following procedure to localize the FindDialogBox in the Edit Control:
 
 1)   Include the required namespaces at the beginning of the source file.
 
-<table>
-<tr>
-<td>
-[C#]<br/><br/>using Syncfusion.Windows.Forms;<br/><br/>using Syncfusion.Windows.Forms.Edit;<br/><br/></td></tr>
-</table>
+~~~ csharp
+[C#]
 
+using Syncfusion.Windows.Forms;
+using Syncfusion.Windows.Forms.Edit;
+~~~
 
-<table>
-<tr>
-<td>
-[VB]<br/><br/>Imports Syncfusion.Windows.Forms<br/><br/>Imports Syncfusion.Windows.Forms.Edit</td></tr>
-</table>
+~~~ vbnet
+[VB]
+
+Imports Syncfusion.Windows.Forms
+Imports Syncfusion.Windows.Forms.Edit
+~~~
 
 
 2)   Create a class that implements the ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.<br/><br/>
@@ -58,34 +59,180 @@ Use the following procedure to localize the FindDialogBox in the Edit Control:
 
 6)   Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
 
-<table>
-<tr>
-<td>
-[C#]<br/><br/>LocalizationProvider.Provider = new Localizer();<br/><br/></td></tr>
-</table>
+~~~ csharp
+[C#]
 
+LocalizationProvider.Provider = new Localizer();
+~~~
 
-<table>
-<tr>
-<td>
-[VB]<br/><br/>LocalizationProvider.Provider = New Localizer()<br/><br/></td></tr>
-</table>
+~~~ vbnet
+[VB]
+
+LocalizationProvider.Provider = New Localizer()
+~~~
 
 
 7)   The following code example is the result:
 
-<table>
-<tr>
-<td>
-[C#]<br/><br/>public string GetLocalizedString(System.Globalization.CultureInfo culture, stringname,object obj)<br/><br/>{<br/><br/>switch (name)<br/><br/>{<br/><br/>#region Find Dialog<br/><br/>case Localizer.EditResourceIdentifiers.FDbtnClose:<br/><br/>return "schließen";<br/><br/>case Localizer.EditResourceIdentifiers.FDbtnFind:<br/><br/>return "finden";<br/><br/>case Localizer.EditResourceIdentifiers.FDbtnMarkAll:<br/><br/>return "markieren Sie alle";              <br/><br/>case Localizer.EditResourceIdentifiers.FDchkCase:<br/><br/>return "übereinstimmen Fall";               <br/><br/>case Localizer.EditResourceIdentifiers.FDchkHidden:<br/><br/>return "Suche hidden";<br/><br/>case Localizer.EditResourceIdentifiers.FDchkRegular:<br/><br/>return "Suche regelmäßige";<br/><br/>case Localizer.EditResourceIdentifiers.FDchkUp:<br/><br/>return "Suche Up";<br/><br/>case Localizer.EditResourceIdentifiers.FDchkWholeWord:<br/><br/>return "Ganzes Wort";<br/><br/>case Localizer.EditResourceIdentifiers.FDchkWrap:<br/><br/>return "Zeilenumbruch";<br/><br/>case Localizer.EditResourceIdentifiers.FDGroupTitle:<br/><br/>return "Suchen";<br/><br/>case Localizer.EditResourceIdentifiers.FDMain:<br/><br/>return "Startseite";<br/><br/>case Localizer.EditResourceIdentifiers.FDrdbDocument:<br/><br/>return "Document";<br/><br/>case Localizer.EditResourceIdentifiers.FDrdbSelection:<br/><br/>return "Auswahl";<br/><br/>case Localizer.EditResourceIdentifiers.FDTitle:<br/><br/>return "Kommentar";<br/><br/>#endregion             <br/><br/><br/><br/>default:<br/><br/>return string.Empty;<br/><br/>}<br/><br/>}<br/><br/></td></tr>
-</table>
+~~~ csharp
+[C#]
+
+public string GetLocalizedString(System.Globalization.CultureInfo culture, stringname,object obj)
+
+{
+
+switch (name)
+
+{
+
+#region Find Dialog
+
+case Localizer.EditResourceIdentifiers.FDbtnClose:
+
+return "schließen";
+
+case Localizer.EditResourceIdentifiers.FDbtnFind:
+
+return "finden";
+
+case Localizer.EditResourceIdentifiers.FDbtnMarkAll:
+
+return "markieren Sie alle";              
+
+case Localizer.EditResourceIdentifiers.FDchkCase:
+
+return "übereinstimmen Fall";               
+
+case Localizer.EditResourceIdentifiers.FDchkHidden:
+
+return "Suche hidden";
+
+case Localizer.EditResourceIdentifiers.FDchkRegular:
+
+return "Suche regelmäßige";
+
+case Localizer.EditResourceIdentifiers.FDchkUp:
+
+return "Suche Up";
+
+case Localizer.EditResourceIdentifiers.FDchkWholeWord:
+
+return "Ganzes Wort";
+
+case Localizer.EditResourceIdentifiers.FDchkWrap:
+
+return "Zeilenumbruch";
+
+case Localizer.EditResourceIdentifiers.FDGroupTitle:
+
+return "Suchen";
+
+case Localizer.EditResourceIdentifiers.FDMain:
+
+return "Startseite";
+
+case Localizer.EditResourceIdentifiers.FDrdbDocument:
+
+return "Document";
+
+case Localizer.EditResourceIdentifiers.FDrdbSelection:
+
+return "Auswahl";
+
+case Localizer.EditResourceIdentifiers.FDTitle:
+
+return "Kommentar";
+
+#endregion             
 
 
-<table>
-<tr>
-<td>
-[VB]<br/><br/><br/><br/>Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) AsString<br/><br/>Select Case name<br/><br/>'#Region "Find Dialog"<br/><br/>Case Localizer.EditResourceIdentifiers.FDbtnClose<br/><br/>Return "schließen"<br/><br/>Case Localizer.EditResourceIdentifiers.FDbtnFind<br/><br/>Return "finden"<br/><br/>Case Localizer.EditResourceIdentifiers.FDbtnMarkAll<br/><br/>Return "markieren Sie alle"<br/><br/>Case Localizer.EditResourceIdentifiers.FDchkCase<br/><br/>Return "übereinstimmen Fall"<br/><br/>Case Localizer.EditResourceIdentifiers.FDchkHidden<br/><br/>Return "Suche hidden"<br/><br/>Case Localizer.EditResourceIdentifiers.FDchkRegular<br/><br/>Return "Suche regelmäßige"<br/><br/>Case Localizer.EditResourceIdentifiers.FDchkUp<br/><br/>Return "Suche Up"<br/><br/>Case Localizer.EditResourceIdentifiers.FDchkWholeWord<br/><br/>Return "Ganzes Wort"<br/><br/>Case Localizer.EditResourceIdentifiers.FDchkWrap<br/><br/>Return "Zeilenumbruch"<br/><br/>Case Localizer.EditResourceIdentifiers.FDGroupTitle<br/><br/>Return "Suchen"<br/><br/>Case Localizer.EditResourceIdentifiers.FDMain<br/><br/>Return "Startseite"<br/><br/>Case Localizer.EditResourceIdentifiers.FDrdbDocument<br/><br/>Return "Document"<br/><br/>Case Localizer.EditResourceIdentifiers.FDrdbSelection<br/><br/>Return "Auswahl"<br/><br/>Case Localizer.EditResourceIdentifiers.FDTitle<br/><br/>Return "Kommentar"<br/><br/>Case Else<br/><br/>'#End Region<br/><br/><br/><br/>Return String.Empty<br/><br/>End Select<br/><br/>End Function<br/><br/></td></tr>
-</table>
+
+default:
+
+return string.Empty;
+
+}
+
+}
+~~~
+
+~~~ vbnet
+[VB]
+
+Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) AsString
+
+Select Case name
+
+'#Region "Find Dialog"
+
+Case Localizer.EditResourceIdentifiers.FDbtnClose
+
+Return "schließen"
+
+Case Localizer.EditResourceIdentifiers.FDbtnFind
+
+Return "finden"
+
+Case Localizer.EditResourceIdentifiers.FDbtnMarkAll
+
+Return "markieren Sie alle"
+
+Case Localizer.EditResourceIdentifiers.FDchkCase
+
+Return "übereinstimmen Fall"
+
+Case Localizer.EditResourceIdentifiers.FDchkHidden
+
+Return "Suche hidden"
+
+Case Localizer.EditResourceIdentifiers.FDchkRegular
+
+Return "Suche regelmäßige"
+
+Case Localizer.EditResourceIdentifiers.FDchkUp
+
+Return "Suche Up"
+
+Case Localizer.EditResourceIdentifiers.FDchkWholeWord
+
+Return "Ganzes Wort"
+
+Case Localizer.EditResourceIdentifiers.FDchkWrap
+
+Return "Zeilenumbruch"
+
+Case Localizer.EditResourceIdentifiers.FDGroupTitle
+
+Return "Suchen"
+
+Case Localizer.EditResourceIdentifiers.FDMain
+
+Return "Startseite"
+
+Case Localizer.EditResourceIdentifiers.FDrdbDocument
+
+Return "Document"
+
+Case Localizer.EditResourceIdentifiers.FDrdbSelection
+
+Return "Auswahl"
+
+Case Localizer.EditResourceIdentifiers.FDTitle
+
+Return "Kommentar"
+
+Case Else
+
+'#End Region
+
+
+
+Return String.Empty
+
+End Select
+
+End Function
+~~~
 
 
 ![](GettingStarted_images/GettingStarted_img1.png)
