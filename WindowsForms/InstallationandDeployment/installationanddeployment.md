@@ -31,7 +31,7 @@ Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The 
 1) Right-click the Project and choose the Manage NuGet Packages.<br/><br/>
 2) Select Online. Refer to the following screenshot for more information. 
 
-![nuget](Installation_images/Installation_img1.jpeg)
+![nuget](Installation_images/Installation_img1.png)
 
 
 3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, and 45, 451 are added.
@@ -50,13 +50,11 @@ Follow the given steps to install through Command Line in Silent mode.
 5. Cancel the wizard.
 6. Open Command Prompt in administrator mode and pass the following arguments for corresponding version.
 
-**Essential** **Studio** **version** **13.1** **and** **earlier:**
-
 “Setup file path\SyncfusionEssentialStudio_(version).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
 
 # Deployment
 
-## X-Copy
+## Copy Local
 
 X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to "True". So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the exe, dlls, xmls files to the client machines similar to that of manual copy.
 
@@ -65,7 +63,7 @@ X-copy is supported by the Syncfusion assembly reference in the Solutions Explor
 
 ## GAC
 
-Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the developer machines. Also Syncfusion's [Assembly Manager](../AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/Selvaganapathy/Desktop/assembly manager# "") helps you add or remove the Syncfusion assemblies to or from GAC.
+Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the developer machines. Also Syncfusion's [AssemblyManager](http://help.syncfusion.com/common/essential-studio/utilities#assembly-manager) helps you add or remove the Syncfusion assemblies to or from GAC.
 
 ## Installed Location
 
@@ -73,9 +71,9 @@ The following table represents Assemblies/ Samples and its installed location
 
 <table>
 <tr>
-<td>
-**Assemblies/ Samples**<br/><br/></td><td>
-**Installed location**<br/><br/></td></tr>
+<th>
+Assemblies/ Samples<br/><br/></th><th>
+Installed location<br/><br/></th></tr>
 <tr>
 <td>
 GAC<br/><br/></td><td>

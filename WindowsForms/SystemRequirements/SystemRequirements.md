@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SystemRequirement | WindowsForms | Syncfusion
-description: SystemRequirement
+description: SystemRequirement Details
 platform: WindowsForms
 control: General
 documentation: ug

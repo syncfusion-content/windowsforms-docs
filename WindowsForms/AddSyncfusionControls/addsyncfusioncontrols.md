@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Add Syncfusion Controls | WindowsForms | Syncfusion
-description: Through Drag and Drop
+description: Steps to Add syncfusion controls
 platform: WindowsForms
 control: Introduction
 documentation: ug
 ---
-
 
 # Add Syncfusion Controls
 
@@ -16,9 +15,7 @@ The following steps will help you to add required Essential WF Control, for exam
 
 1) Create a WF project in Visual Studio.<br/><br/>
 2) Find DockingManager control by typing the name of the DockingManager in the search box.<br/><br/>
-
-![docking](ThroughDragandDrop_images/ThroughDragandDrop_img1.jpeg)
-
+![docking](ThroughDragandDrop_images/ThroughDragandDrop_img1.png)
 
 3) Drag DockingManager and drop it in the designer.<br/><br/>
 
@@ -40,14 +37,14 @@ The following steps will help you to add required Essential WF Control. For exam
 <table>
 <tr>
 <td>
-**[C#]**<br/><br/>using Syncfusion.Windows.Forms.Tools;<br/><br/>using Syncfusion.Windows.Forms;<br/><br/></td></tr>
+[C#]<br/><br/>using Syncfusion.Windows.Forms.Tools;<br/><br/>using Syncfusion.Windows.Forms;<br/><br/></td></tr>
 </table>
 
 
 <table>
 <tr>
 <td>
-**[VB]**<br/><br/>Imports Syncfusion.Windows.Forms.Tools<br/><br/>Imports Syncfusion.Windows.Forms<br/><br/></td></tr>
+[VB]<br/><br/>Imports Syncfusion.Windows.Forms.Tools<br/><br/>Imports Syncfusion.Windows.Forms<br/><br/></td></tr>
 </table>
 
 3) Create an instance of Docking Manager.
@@ -55,12 +52,12 @@ The following steps will help you to add required Essential WF Control. For exam
 <table>
 <tr>
 <td>
-**[C#]**<br/><br/>private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components);<br/><br/></td></tr>
+[C#]<br/><br/>private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components);<br/><br/></td></tr>
 </table>
 
 
 <table>
 <tr>
 <td>
-**[VB]**<br/><br/>private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components)<br/><br/></td></tr>
+[VB]<br/><br/>private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components)<br/><br/></td></tr>
 </table>
