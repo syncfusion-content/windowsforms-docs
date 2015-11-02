@@ -88,22 +88,27 @@ You can test the application with the generated CUIT method.
 
 The following code example demonstrates the same.
 
-~~~ csharp
-[C#]
+{% tabs %}
+
+{% highlight c# %}
+
 public void CodedUITestMethod1()
+{
 // Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
 this.UIMap.RecordedMethod1();
 }
-	
-~~~
-~~~ vbnet
-[VB]
+
+{% endhighlight %}
+
+{% highlight vb %}
+
 Public Sub CodedUITestMethod1()
 'Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
 Me.UIMap.RecordedMethod1()
-End Sub		
 
-~~~
+{% endhighlight %}
+
+{% endtabs %}
 
 
 2) Build and run the application that has already been configured. You can also open the CUIT builder with the following steps.<br/><br/>

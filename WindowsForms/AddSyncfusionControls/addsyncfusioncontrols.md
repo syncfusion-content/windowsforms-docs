@@ -34,26 +34,38 @@ The following steps will help you to add required Essential WF Control. For exam
 
 2) Add the following namespace.
 
-~~~ csharp
-[C#]
+{% tabs %}
+
+{% highlight c# %}
+
 using Syncfusion.Windows.Forms.Tools;
 using Syncfusion.Windows.Forms;
-~~~
 
-~~~ vbnet
-[VB]
+{% endhighlight %}
+
+{% highlight vb %}
+
 Imports Syncfusion.Windows.Forms.Tools
 Imports Syncfusion.Windows.Forms
-~~~
+
+{% endhighlight %}
+
+{% endtabs %}
 
 3) Create an instance of Docking Manager.
 
-~~~ csharp
-[C#]
-private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components);
-~~~
+{% tabs %}
 
-~~~ vbnet
-[VB]
+{% highlight c# %}
+
+private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
 private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(this.components)
-~~~
+
+{% endhighlight %}
+
+{% endtabs %}

@@ -27,19 +27,23 @@ Use the following procedure to localize the FindDialogBox in the Edit Control:
 
 1)   Include the required namespaces at the beginning of the source file.
 
-~~~ csharp
-[C#]
+{% tabs %}
+
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Edit;
-~~~
 
-~~~ vbnet
-[VB]
+{% endhighlight %}
+
+{% highlight vb %}
 
 Imports Syncfusion.Windows.Forms
 Imports Syncfusion.Windows.Forms.Edit
-~~~
+
+{% endhighlight %}
+
+{% endtabs %}
 
 2)   Create a class that implements the ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.<br/><br/>
 
@@ -57,23 +61,28 @@ Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers<br/><br/
 
 6)   Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
 
-~~~ csharp
-[C#]
+{% tabs %}
+
+{% highlight c# %}
 
 LocalizationProvider.Provider = new Localizer();
-~~~
 
-~~~ vbnet
-[VB]
+{% endhighlight %}
+
+{% highlight vb %}
 
 LocalizationProvider.Provider = New Localizer()
-~~~
+
+{% endhighlight %}
+
+{% endtabs %}  
 
 
 7)   The following code example is the result:
 
-~~~ csharp
-[C#]
+{% tabs %}
+
+{% highlight c# %}
 
 public string GetLocalizedString(System.Globalization.CultureInfo culture, stringname,object obj)
 
@@ -146,10 +155,10 @@ return string.Empty;
 }
 
 }
-~~~
 
-~~~ vbnet
-[VB]
+{% endhighlight %}
+
+{% highlight vb %}
 
 Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) AsString
 
@@ -218,7 +227,10 @@ Return String.Empty
 End Select
 
 End Function
-~~~
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](GettingStarted_images/GettingStarted_img1.png)
