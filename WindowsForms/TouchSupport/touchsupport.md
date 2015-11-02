@@ -898,12 +898,4 @@ Scroll, Move<br/><br/></td><td>
 -<br/><br/></td><td>
 Select<br/><br/></td><td>
 -<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td></tr>
 </table>
