@@ -11,7 +11,7 @@ documentation: ug
 
 ## Gesture
 
-Gestures determine whether a finger or a stylus needs to be used to a drive over a control. The supported gestures of the WF controls are Tap, Swipe, Pinch, and Hold.
+Gestures determine whether a finger or a stylus needs to be used to drive over a control. The supported gestures of the WF controls are Tap, Swipe, Pinch, and Hold.
 
 ## Control behavior
 
@@ -197,7 +197,7 @@ Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-Tab Control Adv<br/><br/></td><td>
+TabControlAdv<br/><br/></td><td>
 TabMove<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>

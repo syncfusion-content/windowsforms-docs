@@ -285,9 +285,9 @@ C:\Program Files\Syncfusion\Essential Studio\<version>\Base\Shared.Base\Localiza
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1599.jpg](GettingStarted_images/GettingStarted_img5.png)
 
 
-9)   Click File > Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the **nameSyncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources** is added to the source path.<br/><br/>
+9)   Click File > Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources is added to the source path.<br/><br/>
 
-10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the **sf.publicsnk** file from the **Localization** folder.<br/><br/>
+10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the sf.publicsnk file from the Localization folder.<br/><br/>
 
 Tools.Windows
 
@@ -305,7 +305,7 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 </table>
 
 
-11)  The version you specify for these DLLs in the __al__ command should be based on the SatelliteContractVersionAttribute setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the SatelliteContractVersionAttribute has changed.<br/><br/>
+11)  The version you specify for these DLLs in the al command should be based on the SatelliteContractVersionAttribute setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the SatelliteContractVersionAttribute has changed.<br/><br/>
 
 12)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.<br/><br/>
 
