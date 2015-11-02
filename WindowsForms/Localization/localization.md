@@ -41,7 +41,6 @@ Imports Syncfusion.Windows.Forms
 Imports Syncfusion.Windows.Forms.Edit
 ~~~
 
-
 2)   Create a class that implements the ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.<br/><br/>
 
 3)   Return the localized versions of the strings corresponding to the string identifiers.<br/><br/>
@@ -51,9 +50,8 @@ Imports Syncfusion.Windows.Forms.Edit
 <table>
 <tr>
 <td>
-[C#/VB]<br/><br/>Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers<br/><br/>Syncfusion.Windows.Forms.ResourceIdentifiers<br/><br/></td></tr>
+Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers<br/><br/>Syncfusion.Windows.Forms.ResourceIdentifiers</td></tr>
 </table>
-
 
 5)   Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.<br/><br/>
 
@@ -84,8 +82,6 @@ public string GetLocalizedString(System.Globalization.CultureInfo culture, strin
 switch (name)
 
 {
-
-#region Find Dialog
 
 case Localizer.EditResourceIdentifiers.FDbtnClose:
 
@@ -142,11 +138,7 @@ return "Auswahl";
 case Localizer.EditResourceIdentifiers.FDTitle:
 
 return "Kommentar";
-
-#endregion             
-
-
-
+             
 default:
 
 return string.Empty;
@@ -162,8 +154,6 @@ return string.Empty;
 Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) AsString
 
 Select Case name
-
-'#Region "Find Dialog"
 
 Case Localizer.EditResourceIdentifiers.FDbtnClose
 
@@ -223,10 +213,6 @@ Return "Kommentar"
 
 Case Else
 
-'#End Region
-
-
-
 Return String.Empty
 
 End Select
@@ -276,6 +262,7 @@ C:\Program Files\Syncfusion\Essential Studio\<version>\Base\Shared.Base\Localiza
 
 4)   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.<br/><br/>
 
+
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1596.jpg](GettingStarted_images/GettingStarted_img2.png)
 
 
@@ -286,13 +273,13 @@ C:\Program Files\Syncfusion\Essential Studio\<version>\Base\Shared.Base\Localiza
 
 6)   Now, the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language is used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ende”.
 
+
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1598.jpg](GettingStarted_images/GettingStarted_img4.png)
 
 
 7)   Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool cannot be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.<br/><br/>
 
 8)   Open the other resources by using the WinRes utility and replace the English strings with the German equivalent. The following figure shows the file Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.resources open in the WinRes tool and with German text. The German text has been added to the form by using the Properties window.
-
 
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1599.jpg](GettingStarted_images/GettingStarted_img5.png)
@@ -307,14 +294,14 @@ Tools.Windows
 <table>
 <tr>
 <td>
-al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources /embed:Syncfusion.Windows.Forms.MdiWindowDialog.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.SR.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.XPMenus.BarCustomizationDialog.de-DE.resources<br/><br/></td></tr>
+al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources /embed:Syncfusion.Windows.Forms.MdiWindowDialog.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.SR.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.XPMenus.BarCustomizationDialog.de-DE.resources</td></tr>
 </table>
 Shared.Base
 
 <table>
 <tr>
 <td>
-al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE<br/><br/></td></tr>
+al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE</td></tr>
 </table>
 
 
@@ -327,7 +314,7 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 <table>
 <tr>
 <td>
-sn –Vr Syncfusion.Tools.Windows.resources.dll<br/><br/></td></tr>
+sn –Vr Syncfusion.Tools.Windows.resources.dll</td></tr>
 </table>
 
 
@@ -338,7 +325,7 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll<br/><br/></td></tr>
 <table>
 <tr>
 <td>
-Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de-DE");<br/><br/></td></tr>
+Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de-DE");</td></tr>
 </table>
 
 
