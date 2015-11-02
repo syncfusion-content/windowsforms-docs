@@ -18,7 +18,7 @@ The following Voluntary Product Accessibility information refers to the Syncfusi
 <tr>
 <th>
 CRITERIA<br/><br/></th><th>
-SUPPORTING FEATURES<br/><br/></th><th>
+SUPPORTING FEATURES<br/><br/></th>
 <tr>
 <td>
 1194.21 Software applications and operating systems.<br/><br/><br/><br/></td><td>
@@ -166,7 +166,7 @@ Essential Studio for Windows Forms controls provide functionality that conforms 
 </table>
 
 
-## Subpart D -- Information, Documentation, and Support 1194.41 Information, documentation, and support
+## Subpart D -- Information, Documentation, and Support 1194.41 Information, documentation, and support 
 
 <table>
 <tr>
@@ -178,16 +178,16 @@ REMARKS AND EXPLANATION<br/><br/></th></tr>
 <td>
 Section 1194.41 (a) Product Support Documentation provided to end-users is made available in alternate formats upon request at no additional charge.<br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online {{'[Documentation](http://help.syncfusion.com)'| markdownify }} is available.<br/><br/></td></tr>
+Online <a href="http://help.syncfusion.com">Documentation</a> is available.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.41 (b) Accessibility and Compatibility Features. End-users can have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request at no additional charge.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Information about Syncfusion’s built-in access technologies is available at {{'[Accessible](http://www.syncfusion.com/)'| markdownify }}.<br/><br/></td></tr>
+Information about Syncfusion’s built-in access technologies is available at <a href="http://www.syncfusion.com/">Accessible</a>.<br/><br/></td></tr>
 <tr>
 <td>
 1194.41 (c) Support Services for products can accommodate the communication needs of end-users with disabilities.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online support {{'[Incidents](https://www.syncfusion.com/support/directtrac/incidents)'| markdownify }} and {{'[Forums](https://www.syncfusion.com/support/directtrac/forums)'| markdownify }} are available.<br/><br/></td></tr>
+Online support <a href="https://www.syncfusion.com/support/directtrac/incidents">Incidents</a> and <a href="https://www.syncfusion.com/support/directtrac/forums">Forums</a> are available.<br/><br/></td></tr>
 </table>
 Syncfusion does not promise that the information provided in this document is error-free, or that any error is corrected, or that your use of the information provides specific results. The document and its contents are delivered on an “as-is” basis. All information provided is subject to change without prior notice. Syncfusion disclaims all warranties, express, or implied, including any warranty of accuracy, non-infringement, merchantability, and fitness for a particular purpose.
