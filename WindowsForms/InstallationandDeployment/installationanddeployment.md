@@ -26,7 +26,7 @@ The following procedure illustrates how to install Essential Studio.
 ## Nuget Installation
 
 
-Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps help you add the reference of the Syncfusion assemblies in the Project References.
+Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The following steps help you add the reference of the Syncfusion assemblies in the Project References.
 
 1) Right-click the Project and choose the Manage NuGet Packages.<br/><br/>
 2) Select Online. Refer to the following screenshot for more information. 
@@ -34,9 +34,9 @@ Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The 
 ![nuget](Installation_images/Installation_img1.png)
 
 
-3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, and 45, 451 are added.
-4) Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.
-5) You can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.
+3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, and 45, 451 are added.<br/><br/>
+4) Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.<br/><br/>
+5) You can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.<br/><br/>
 
 ## Command Line installation
 

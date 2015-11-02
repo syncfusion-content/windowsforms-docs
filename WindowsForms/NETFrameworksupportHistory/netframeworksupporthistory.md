@@ -232,7 +232,7 @@ Yes<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-Carousal<br/><br/></td><td>
+Carousel<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -302,7 +302,7 @@ Yes<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-TabSplitterContainerAdv<br/><br/></td><td>
+TabSplitterContainer<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -402,7 +402,7 @@ Yes<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-GradientpanelExt<br/><br/></td><td>
+GradientPanelExt<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -812,7 +812,7 @@ Yes<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-NumericUpDownext<br/><br/></td><td>
+NumericUpDownExt<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -1082,7 +1082,7 @@ Yes<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-StatusbarExt<br/><br/></td><td>
+StatusBarExt<br/><br/></td><td>
 Yes <br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>

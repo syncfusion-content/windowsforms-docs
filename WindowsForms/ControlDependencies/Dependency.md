@@ -112,7 +112,7 @@ Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared
 <tr>
 <td>
 <br/><br/></td><td>
-Carousal<br/><br/></td><td>
+Carousel<br/><br/></td><td>
 Syncfusion.Tools.Windows<br/><br/></td><td>
 Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
 <tr>
@@ -154,7 +154,7 @@ Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared
 <tr>
 <td>
 <br/><br/></td><td>
-TabSplitterContainerAdv<br/><br/></td><td>
+TabSplitterContainer<br/><br/></td><td>
 Syncfusion.Tools.Windows<br/><br/></td><td>
 Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
 <tr>
@@ -214,7 +214,7 @@ Syncfusion.Shared.Base<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-GradientpanelExt<br/><br/></td><td>
+GradientPanelExt<br/><br/></td><td>
 Syncfusion.Shared.Base<br/><br/></td><td>
 <br/><br/></td></tr>
 <tr>
@@ -460,7 +460,7 @@ Syncfusion.Shared.Base<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-NumericUpDownext<br/><br/></td><td>
+NumericUpDownExt<br/><br/></td><td>
 Syncfusion.Tools.Windows<br/><br/></td><td>
 Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
 <tr>
@@ -502,7 +502,7 @@ Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared
 <tr>
 <td>
 <br/><br/></td><td>
-ChildFramebarManager<br/><br/></td><td>
+ChildFrameBarManager<br/><br/></td><td>
 Syncfusion.Tools.Windows<br/><br/></td><td>
 Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
 <tr>
@@ -628,7 +628,7 @@ Syncfusion.Shared.Base<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-StatusbarExt<br/><br/></td><td>
+StatusBarExt<br/><br/></td><td>
 Syncfusion.Tools.Windows<br/><br/></td><td>
 Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
 <tr>

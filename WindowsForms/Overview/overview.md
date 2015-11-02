@@ -23,7 +23,7 @@ Essential WF is a comprehensive collection of over 100+ enterprise-grade WF comp
 
 The [Knowledge Base](http://www.syncfusion.com/kb/windowsforms) section contains responses to most of the common questions asked by the customers in the past. This would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the Knowledge Base, the [Forum](http://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers haa asked us in the past.
+Similar to the Knowledge Base, the [Forum](http://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
 
 ## Create a support incident
 
@@ -103,7 +103,7 @@ DockingClientPanel<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-Carousal<br/><br/></td></tr>
+Carousel<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -131,7 +131,7 @@ SplitContainerAdv<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-TabSplitterContainerAdv<br/><br/></td></tr>
+TabSplitterContainer<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -171,7 +171,7 @@ GradientPanel<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-GradientpanelExt<br/><br/></td></tr>
+GradientPanelExt<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -335,7 +335,7 @@ ColorUIControl<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-NumericUpDownext<br/><br/></td></tr>
+NumericUpDownExt<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -363,7 +363,7 @@ MainFrameBarManager<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-ChildFramebarManager<br/><br/></td></tr>
+ChildFrameBarManager<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -443,7 +443,7 @@ StatusBarAdvPanel<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-StatusbarExt<br/><br/></td></tr>
+StatusBarExt<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>

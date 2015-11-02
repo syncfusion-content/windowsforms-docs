@@ -55,5 +55,5 @@ private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncf
 
 ~~~ vbnet
 [VB]
-private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components)
+private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(this.components)
 ~~~
