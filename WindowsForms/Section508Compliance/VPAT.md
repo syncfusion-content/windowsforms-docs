@@ -54,7 +54,7 @@ Refer to the attached VPAT.<br/><br/></td></tr>
 </table>
 
 
-## Detailed Voluntary Product Accessibility Template
+Detailed Voluntary Product Accessibility Template
 
 <table>
 <tr>
@@ -125,7 +125,7 @@ This criterion does not apply to Essential Studio for Windows Forms controls.<br
 </table>
 
 
-## Functional Performance Criteria 1194.31 Functional performance criteria
+Functional Performance Criteria 1194.31 Functional performance criteria
 
 <table>
 <tr>
@@ -166,7 +166,7 @@ Essential Studio for Windows Forms controls provide functionality that conforms 
 </table>
 
 
-## Subpart D -- Information, Documentation, and Support 1194.41 Information, documentation, and support 
+Subpart D -- Information, Documentation, and Support 1194.41 Information, documentation, and support 
 
 <table>
 <tr>
