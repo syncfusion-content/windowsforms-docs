@@ -14,7 +14,7 @@ documentation: ug
 
 This section demonstrates how to create a simple test with TreeViewAdv and CodedUI.
 
-The Essential Tools TreeViewAdv control has basic level of Coded UI automation testing support. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20. Refer to the following steps to provide Coded UIsupport in the TreeViewAdv.
+The Essential Tools TreeViewAdv control has basic level of Coded UI automation testing support. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20. Refer to the following steps to provide Coded UI support in the TreeViewAdv.
 
 
 ### Creating Coded UI Project
