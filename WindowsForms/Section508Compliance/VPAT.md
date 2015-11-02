@@ -183,7 +183,7 @@ Online <a href="http://help.syncfusion.com">Documentation</a> is available.<br/>
 <td>
 Section 1194.41 (b) Accessibility and Compatibility Features. End-users can have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request at no additional charge.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Information about Syncfusion’s built-in access technologies is available at <a href="http://www.syncfusion.com/">Accessible</a>.<br/><br/></td></tr>
+Essential Studio WF controls are accessible.<br/><br/></td></tr>
 <tr>
 <td>
 1194.41 (c) Support Services for products can accommodate the communication needs of end-users with disabilities.<br/><br/><br/><br/></td><td>
