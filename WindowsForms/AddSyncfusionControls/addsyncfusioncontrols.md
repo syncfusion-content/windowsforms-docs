@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Add Syncfusion Controls
+# Add Syncfusion Controls 
 
 ## Through Drag and Drop
 
