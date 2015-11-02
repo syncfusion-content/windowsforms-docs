@@ -12,7 +12,7 @@ documentation: ug
 
 The following Voluntary Product Accessibility information refers to the Syncfusion Essential Studio for Windows Forms.
 
-## Summary Table: Voluntary Product Accessibility Template
+## Voluntary Product Accessibility Template
 
 <table>
 <tr>
@@ -54,7 +54,7 @@ Refer to the attached VPAT.<br/><br/></td></tr>
 </table>
 
 
-## Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
+## Detailed Voluntary Product Accessibility Template
 
 <table>
 <tr>
