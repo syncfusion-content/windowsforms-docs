@@ -10,14 +10,10 @@ documentation: ug
 
 # Coded UI
 
-## Getting Started
-
-This section demonstrates how to create a simple test with TreeViewAdv and Coded UI.
-
-The Essential Tools TreeViewAdv control has basic level of Coded UI automation testing support. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20. Refer to the following steps to provide Coded UI support in the TreeViewAdv.
+This section demonstrates how to create a simple test with TreeViewAdv. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20. Refer to the following steps to provide Coded UI support in the TreeViewAdv.
 
 
-### Creating Coded UI Project
+## Creating Coded UI Project
 
 
 CUIT should contain the coded UI test project. When your application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution, choose Add, New Project, and then select either Visual Basic or Visual C#. Next, choose Test, Coded UI Test.
@@ -36,7 +32,7 @@ N> The CUIT file is generated automatically, when creating the Coded UI te
 ![](GettingStarted_Images/AddingCodedUI.png)
 
 
-### Recording Steps
+## Recording Steps
 
 In the Generate Code for Coded UI Test dialog box, choose the Record actions as shown in the following image.
 
@@ -78,7 +74,7 @@ In the Generate Code for Coded UI Test dialog box, choose the Record actions�
 ![](GettingStarted_Images/GenerateCodeWindowForUIMap.png)
 
 
-### Testing Recorded Steps
+## Testing Recorded Steps
 
 
 You can test the application with the generated CUIT method.

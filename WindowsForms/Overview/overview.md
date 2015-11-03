@@ -7,9 +7,9 @@ control: Introduction
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential WF
+# Welcome to Syncfusion Essential Windows Form
 
-Essential WF is a comprehensive collection of over 100+ enterprise-grade WF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
+Essential Windows Form is a comprehensive collection of over 100+ enterprise-grade Windows Form components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
 
 ## How to best read this user guide
 
