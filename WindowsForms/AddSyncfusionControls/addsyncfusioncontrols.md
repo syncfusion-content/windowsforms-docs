@@ -21,7 +21,7 @@ The following steps will help you to add required Essential Windows Forms contro
 
 ## Through C# / VB
 
-The following steps will help you to add required Essential Windows Forms Control. For example: DockingManager through C# or VB Code.
+The following steps will help you to add required Essential Windows Forms control. For example: DockingManager through C# or VB Code.
 
 1) Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 
