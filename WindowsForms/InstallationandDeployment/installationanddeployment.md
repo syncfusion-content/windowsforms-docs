@@ -12,7 +12,7 @@ documentation: ug
 
 ## Manual Installation
 
-The following procedure illustrates how to install Essential Studio.
+The following procedure illustrates how to install Essential Studio. 
 
 1. Double-click the Syncfusion Essential Studio Windows Forms Setup file. The Self-Extractor wizard opens and extracts the package automatically.
 2. Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
