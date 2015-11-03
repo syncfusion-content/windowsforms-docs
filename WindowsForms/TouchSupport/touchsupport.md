@@ -54,7 +54,7 @@ Right-Click<br/><br/></td></tr>
 <td>
 Data Visualization<br/><br/></td><td>
 Diagram<br/><br/></td><td>
-Pan/Rubber bandSelection<br/><br/></td><td>
+Pan/Rubberband Selection<br/><br/></td><td>
 Zoom<br/><br/></td><td>
 Select<br/><br/></td><td>
 Context Menu<br/><br/></td></tr>
@@ -152,7 +152,7 @@ Context Menu<br/><br/></td></tr>
 Office2010Form<br/><br/></td><td>
 Move<br/><br/></td><td>
 -<br/><br/></td><td>
-Clcik<br/><br/></td><td>
+Click<br/><br/></td><td>
 Context Menu<br/><br/></td></tr>
 <tr>
 <td>
@@ -512,7 +512,7 @@ Context Menu<br/><br/></td></tr>
 RadialSlider<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
-Click,Select<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
 Context Menu<br/><br/></td></tr>
 <tr>
 <td>
@@ -616,7 +616,7 @@ Context Menu<br/><br/></td></tr>
 Menu<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Click,Select<br/><br/></td><td>
+Click, Select<br/><br/></td><td>
 -<br/><br/></td></tr>
 <tr>
 <td>
