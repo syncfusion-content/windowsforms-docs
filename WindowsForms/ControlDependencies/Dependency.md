@@ -255,7 +255,7 @@ Syncfusion.Shared.Base<br/><br/></td><td>
 <br/><br/></td></tr>
 <tr>
 <td>
-**EDITORS**<br/><br/></td><td>
+EDITORS<br/><br/></td><td>
 CurrencyTextBox<br/><br/></td><td>
 Syncfusion.Shared.Base<br/><br/></td><td>
 <br/><br/></td></tr>

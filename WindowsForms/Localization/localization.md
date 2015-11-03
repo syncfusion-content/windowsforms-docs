@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: Localization
+title: Localization support for Windows Form
+description: Getting Started for Localization
 platform: WindowsForms
 control: General
 documentation: ug
