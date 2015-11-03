@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Control Dependencies | WindowsForms | Syncfusion
-description: Control Dependencies for Windows Form 
+description: Control Dependencies for Windows Forms 
 platform: WindowsForms
 control: Introduction
 documentation: ug

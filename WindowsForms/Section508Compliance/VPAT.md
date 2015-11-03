@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Section 508 Compilance | WindowsForms | Syncfusion
-description: Voluntary Product Accessibility Template for Syncfusion Windows Form products
+description: Voluntary Product Accessibility Template for Syncfusion Windows Forms products
 platform: WindowsForms
 control: General
 documentation: ug
@@ -183,7 +183,7 @@ Online <a href="http://help.syncfusion.com">Documentation</a> is available.<br/>
 <td>
 Section 1194.41 (b) Accessibility and Compatibility Features. End-users can have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request at no additional charge.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Essential Studio Windows Form controls are accessible.<br/><br/></td></tr>
+Essential Studio Windows Forms controls are accessible.<br/><br/></td></tr>
 <tr>
 <td>
 1194.41 (c) Support Services for products can accommodate the communication needs of end-users with disabilities.<br/><br/><br/><br/></td><td>
