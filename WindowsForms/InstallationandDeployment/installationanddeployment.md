@@ -81,13 +81,13 @@ C:\Windows\Microsoft.NET\assembly\GAC_MSIL<br/><br/></td></tr>
 <tr>
 <td>
 Assemblies<br/><br/></td><td>
-C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\Assemblies<br/><br/></td></tr>
+C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies<br/><br/></td></tr>
 <tr>
 <td>
 Precompiled Assemblies<br/><br/></td><td>
-C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\precompiledassemblies\[Installed Version]<br/><br/></td></tr>
+C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies<br/><br/></td></tr>
 <tr>
 <td>
 Samples<br/><br/></td><td>
-[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\samples\Windows<br/><br/></td></tr>
+[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\samples\Windows<br/><br/></td></tr>
 </table>
