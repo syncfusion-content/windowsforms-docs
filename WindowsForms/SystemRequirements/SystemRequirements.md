@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirement
 
-This section describes the system requirements to use Syncfusion WF Controls for development.
+This section describes the system requirements to use Syncfusion Windows Form Controls for development.
 
 ## Framework
 

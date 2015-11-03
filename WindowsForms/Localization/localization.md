@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization
 
-Localization is the process of making your application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain. Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement.
+Localization is the process of making your application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, en-US is the culture for English spoken in United States; en-GB is the culture for English spoken in Great Britain. Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement.
 
 ### Getting Started
 
@@ -242,17 +242,17 @@ Localization is a key feature for providing solutions to global customers. This 
 
 Internationalization and localization are different but related concepts.
 
-•Internationalization: Ensuring an application can handle resources (For example, strings) in a language-specific fashion. Internationalization is also known as i18n.
+• Internationalization: Ensuring an application can handle resources (For example, strings) in a language-specific fashion. Internationalization is also known as i18n.
 
-•Localization: Also known as l10n. Localization is the process of customizing an application for specific cultures or regions. It is the adaptation of language, content, and design to reflect the local cultural sensitivities.
+• Localization: Also known as l10n. Localization is the process of customizing an application for specific cultures or regions. It is the adaptation of language, content, and design to reflect the local cultural sensitivities.
 
 There are three types of cultures:
 
-•Invariant: An invariant culture is always culture-insensitive primarily used as a “default” culture. You can specify the invariant culture with name by using an empty string (""). It is associated with the English language but not with any particular country or region.
+• Invariant: An invariant culture is always culture-insensitive primarily used as a “default” culture. You can specify the invariant culture with name by using an empty string (""). It is associated with the English language but not with any particular country or region.
 
-•Neutral: A neutral culture is a culture that is associated with a language but not with a country or region.
+• Neutral: A neutral culture is a culture that is associated with a language but not with a country or region.
 
-•Specific: A specific culture is a culture that is associated with a language and a country or region like, “fr-CA” and “fr-FR”. For example, "fr" is a neutral culture and "fr-FR" is a specific culture. Note that "zh-CHS" (simplified Chinese) and "zh-CHT" (traditional Chinese) are neutral cultures.
+• Specific: A specific culture is a culture that is associated with a language and a country or region like, “fr-CA” and “fr-FR”. For example, "fr" is a neutral culture and "fr-FR" is a specific culture. Note that "zh-CHS" (simplified Chinese) and "zh-CHT" (traditional Chinese) are neutral cultures.
 
 ### Steps to Localize Syncfusion Components
 

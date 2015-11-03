@@ -14,7 +14,7 @@ documentation: ug
 
 The following procedure illustrates how to install Essential Studio.
 
-1. Double-click the Syncfusion Essential Studio WF Setup file. The Self-Extractor wizard opens and extracts the package automatically.
+1. Double-click the Syncfusion Essential Studio Windows Form Setup file. The Self-Extractor wizard opens and extracts the package automatically.
 2. Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
 3. Click Next.
 4. After reading the terms, click “I accept the terms and conditions” check box.
@@ -89,5 +89,5 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\precompil
 <tr>
 <td>
 Samples<br/><br/></td><td>
-[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\WF\samples<br/><br/></td></tr>
+[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\samples\Windows<br/><br/></td></tr>
 </table>
