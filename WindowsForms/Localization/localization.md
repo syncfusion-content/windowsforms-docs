@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization support for Windows Form
+title: Localization support for Windows Forms
 description: Getting Started for Localization
 platform: WindowsForms
 control: General
