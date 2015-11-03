@@ -10,20 +10,16 @@ documentation: ug
 
 # Localization
 
-Localization is the process of making your application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain. Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement.
+Localization is the process of making your application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain.<br/><br/>
+Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement and they can be localized in two ways are, 
 
-### Getting Started
+• Using `ILocalizationProvider`.<br/><br/>
+• Using Satellite Assemblies.
+ 
+## Using ILocalizationProvider
 
-The following are the steps to localize a control:
 
-1) By using `ILocalizationProvider`.<br/><br/>
-2) By using Satellite Assemblies. 
-
-## By Using ILocalizationProvider
-
-### Add Localization to an Application
-
-Use the following procedure to localize the FindDialogBox in the Edit Control:
+The following procedure helps to localize the FindDialogBox in the Edit Control:
 
 1)   Include the required namespaces at the beginning of the source file.
 
@@ -45,17 +41,29 @@ Imports Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-2)   Create a class that implements the ILocalizationProvider interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.<br/><br/>
+2)   Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.<br/><br/>
 
 3)   Return the localized versions of the strings corresponding to the string identifiers.<br/><br/>
 
-4)   String identifiers are defined in the ResourceIdentifiers and the EditResourceIdentifiers classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
+4)   String identifiers are defined in the `ResourceIdentifiers` and the `EditResourceIdentifiers` classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
-<table>
-<tr>
-<td>
-Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers<br/><br/>Syncfusion.Windows.Forms.ResourceIdentifiers</td></tr>
-</table>
+{% tabs %}
+
+{% highlight c# %}
+
+using Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers;
+using Syncfusion.Windows.Forms.ResourceIdentifiers;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Imports Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers
+Imports Syncfusion.Windows.Forms.ResourceIdentifiers
+
+{% endhighlight %}
+
+{% endtabs %}
 
 5)   Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.<br/><br/>
 
@@ -236,23 +244,21 @@ End Function
 ![](GettingStarted_images/GettingStarted_img1.png)
 
 
-## By using Satellite Assemblies
+## Using Satellite Assemblies
 
-Localization is a key feature for providing solutions to global customers. This is true for desktop applications as well as Syncfusion components. Resources are important for localizing an application as they contain the necessary settings for different languages and cultures.
-
-Internationalization and localization are different but related concepts.
+Localization is a key feature for providing solutions to global customers. This is true for desktop applications as well as Syncfusion components. Resources are important for localizing an application as they contain the necessary settings for different languages and cultures. Here Internationalization and localization are different but related concepts.
 
 • Internationalization: Ensuring an application can handle resources (For example, strings) in a language-specific fashion. Internationalization is also known as i18n.
 
 • Localization: Also known as l10n. Localization is the process of customizing an application for specific cultures or regions. It is the adaptation of language, content, and design to reflect the local cultural sensitivities.
 
-There are three types of cultures:
+### Types of cultures
 
 • Invariant: An invariant culture is always culture-insensitive primarily used as a “default” culture. You can specify the invariant culture with name by using an empty string (""). It is associated with the English language but not with any particular country or region.
 
 • Neutral: A neutral culture is a culture that is associated with a language but not with a country or region.
 
-• Specific: A specific culture is a culture that is associated with a language and a country or region like, “fr-CA” and “fr-FR”. For example, "fr" is a neutral culture and "fr-FR" is a specific culture. Note that "zh-CHS" (simplified Chinese) and "zh-CHT" (traditional Chinese) are neutral cultures.
+• Specific: A specific culture is a culture that is associated with a language and a country or region like, `fr-CA` and `fr-FR`. For example, fr is a neutral culture and `fr-FR` is a specific culture. Note that `zh-CHS` (simplified Chinese) and `zh-CHT` (traditional Chinese) are neutral cultures.
 
 ### Steps to Localize Syncfusion Components
 
@@ -260,22 +266,17 @@ Syncfusion components have their own neutral resources, and these resources can 
 
 1)   The neutral resources of every Syncfusion component are present in the Localization folder of each component’s source code. For the Tools package, the resources are present in the following path assuming that “C:\Program Files\” is the installation path for the Syncfusion components.
 
-Tools.Windows:
+• For Tools.Windows: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }} \Windows\Tools.Windows\Localization\
 
-C:\Program Files\Syncfusion\Essential Studio\<version>\Windows\Tools.Windows\Localization\
+• For Shared.Base: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }} \Base\Shared.Base\Localization
 
-Shared.Base:
-
-C:\Program Files\Syncfusion\Essential Studio\<version>\Base\Shared.Base\Localization
+N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
 2)   Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.<br/><br/>
 
 3)   Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows you to construct resource files containing bitmaps, icons, and strings.<br/><br/>
 
 4)   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.<br/><br/>
-
-
-![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1596.jpg](GettingStarted_images/GettingStarted_img2.png)
 
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1597.jpg](GettingStarted_images/GettingStarted_img3.png)
@@ -317,7 +318,7 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 </table>
 
 
-11)  The version you specify for these DLLs in the al command should be based on the SatelliteContractVersionAttribute setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the SatelliteContractVersionAttribute has changed.<br/><br/>
+11)  The version you specify for these DLLs in the al command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
 
 12)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.<br/><br/>
 
@@ -334,11 +335,21 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll</td></tr>
 
 15)  Finally, you can make your application fetch the German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the InitializeComponent().<br/><br/>
 
-<table>
-<tr>
-<td>
-Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de-DE");</td></tr>
-</table>
+{% tabs %}
+
+{% highlight c# %}
+
+Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de-DE");
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de-DE")
+
+{% endhighlight %}
+
+{% endtabs %} 
 
 
 16)  Now, run your application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:

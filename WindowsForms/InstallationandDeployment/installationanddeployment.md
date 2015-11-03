@@ -44,13 +44,15 @@ Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The 
 Follow the given steps to install through Command Line in Silent mode.
 
 1. Double-click the Syncfusion Essential Studio Setup file. The Self-Extractor wizard opens and extracts the package automatically.
-2. The SyncfusionEssentialStudio_(version).exe file is extracted into the Temp folder.
-3. Run %temp%. The Temp folder opens. The SyncfusionEssentialStudio_(version).exe file is available in one of the folders.
-4. Copy the SyncfusionEssentialStudio_(version).exe file in local drive. Example: D:\temp
+2. The SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file is extracted into the Temp folder.
+3. Run %temp%. The Temp folder opens. The SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file is available in one of the folders.
+4. Copy the SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file in local drive. Example: D:\temp
 5. Cancel the wizard.
 6. Open Command Prompt in administrator mode and pass the following arguments for corresponding version.
 
-“Setup file path\SyncfusionEssentialStudio_(version).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
+“Setup file path\SyncfusionEssentialStudio_({{ site.releaseversion }}).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
+
+N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
 # Deployment
 
@@ -91,3 +93,5 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\pre
 Samples<br/><br/></td><td>
 [Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\samples\Windows<br/><br/></td></tr>
 </table>
+
+N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.

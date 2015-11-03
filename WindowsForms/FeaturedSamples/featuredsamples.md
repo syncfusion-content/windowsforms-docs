@@ -13,19 +13,20 @@ documentation: ug
 
 ## Offline samples
 
-Featured samples are installed along with the Essential Studio installation by Syncfusion installer. The samples are available in “[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\Windows\samples"
+Featured samples are installed along with the Essential Studio installation by Syncfusion installer. The samples are available in “[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Windows\samples"
 
 ## Guide to run the samples
 
 To run the samples, open the corresponding Dashboard from the following location:
 
-Start -> All Programs -> Syncfusion -> Essential Studio<x.x.x.x> -> Dashboard
+Start > All Programs > Syncfusion > Essential Studio<{{ site.releaseversion }}> > Dashboard
 
 Else open the Dashboard from the following installed location:
 
-C:\Program Files (x86)\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Dashboard\4.0\Dashboard.exe
+C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Dashboard\4.0\Dashboard.exe
 
-The following screenshot displays the Dashboard.
+N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
+
 
 ![dashboard](Guidetorunthesamples_images/Guidetorunthesamples_img1.png)
 
