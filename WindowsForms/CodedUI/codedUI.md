@@ -10,16 +10,13 @@ documentation: ug
 
 # Coded UI
 
-This section demonstrates how to create a simple test with TreeViewAdv. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20. Refer to the following steps to provide Coded UI support in the TreeViewAdv.
+This section demonstrates how to create a simple test with TreeViewAdv. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20.
 
 
 ## Creating Coded UI Project
 
 
-CUIT should contain the coded UI test project. When your application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution, choose Add, New Project, and then select either Visual Basic or Visual C#. Next, choose Test, Coded UI Test.
-
-In case, the Coded UI test project does not appear on Visual Studio, you may be using a version that does not support CUIT. To create CUIT, you need to use Visual Studio Enterprise edition.
-
+CUIT should contain the coded UI test project. When your application does not contain the CUIT project, create a new project.
 
 
 ![](GettingStarted_Images/CreatingTestApplication.png)
@@ -77,12 +74,10 @@ In the Generate Code for Coded UI Test dialog box, choose the Record actions�
 ## Testing Recorded Steps
 
 
-You can test the application with the generated CUIT method.
+The Application can be tested with the generated CUIT Method. 
 
-1) Add a TestMethod called CodedUITestMethod1.
+1) Add a TestMethod named CodedUITestMethod1.
 
-
-The following code example demonstrates the same.
 
 {% tabs %}
 
@@ -107,7 +102,7 @@ Me.UIMap.RecordedMethod1()
 {% endtabs %}
 
 
-2) Build and run the application that has already been configured. You can also open the CUIT builder with the following steps.<br/><br/>
+2) Build and Run the application that has already been configured. 
 
 3) Right click the body of the CodedUITestMethod and then select Generate Code for Coded UI Test -> Use CUIT builder as shown in the following screenshots.<br/><br/>
 
@@ -117,6 +112,7 @@ Me.UIMap.RecordedMethod1()
 
 ![](GettingStarted_Images/CodedUIMap.png)
 
+4) Now CUIT performs Recorded testing process.
 
 ![](GettingStarted_Images/AssetWindowForTreeViewAdv.png)
 

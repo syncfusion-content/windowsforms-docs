@@ -1,7 +1,7 @@
 ---
 layout: post
 title: .Net Framework support History | WindowsForms | Syncfusion
-description: .Net Framework support History
+description: .Net Framework support History details
 platform: WindowsForms
 control: Introduction
 documentation: ug
