@@ -67,7 +67,7 @@ Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 
 5)   Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.<br/><br/>
 
-6)   Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
+6)   Assign this instance to the `Provider` property of the `LocalizationProvider` class before the InitializeComponent call in the constructor of the application.
 
 {% tabs %}
 
@@ -86,7 +86,7 @@ LocalizationProvider.Provider = New Localizer()
 {% endtabs %}  
 
 
-7)   The following code example is the result:
+7)   The following code example is a reference to assign Localization string
 
 {% tabs %}
 
@@ -266,9 +266,9 @@ Syncfusion components have their own neutral resources, and these resources can 
 
 1)   The neutral resources of every Syncfusion component are present in the Localization folder of each component’s source code. For the Tools package, the resources are present in the following path assuming that “C:\Program Files\” is the installation path for the Syncfusion components.
 
-• For Tools.Windows: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }} \Windows\Tools.Windows\Localization\
+• For Tools.Windows: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Windows\Tools.Windows\Localization\
 
-• For Shared.Base: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }} \Base\Shared.Base\Localization
+• For Shared.Base: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Base\Shared.Base\Localization
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
@@ -298,7 +298,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1599.jpg](GettingStarted_images/GettingStarted_img5.png)
 
 
-9)   Click File > Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources is added to the source path.<br/><br/>
+9)   Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources is added to the source path.<br/><br/>
 
 10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the sf.publicsnk file from the Localization folder.<br/><br/>
 
@@ -339,13 +339,13 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll</td></tr>
 
 {% highlight c# %}
 
-Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de-DE");
+Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("de-DE")
+Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE")
 
 {% endhighlight %}
 

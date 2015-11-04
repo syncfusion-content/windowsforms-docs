@@ -31,7 +31,7 @@ N> The CUIT file is generated automatically, when creating the Coded UI te
 
 ## Recording Steps
 
-In the Generate Code for Coded UI Test dialog box, choose the Record actions as shown in the following image.
+While generating code for Coded UI Test dialog box, choose the Record actions as shown in the following image.
 
 ![](GettingStarted_Images/RecordingOption.png)
 

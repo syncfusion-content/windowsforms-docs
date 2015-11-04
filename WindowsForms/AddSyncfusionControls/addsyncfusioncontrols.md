@@ -11,7 +11,7 @@ documentation: ug
 
 ## Through Drag and Drop
 
-The following steps will help you to add required Essential Windows Forms control, for example: DockingManager.
+The following steps helps to add required Essential Windows Forms control, for example: DockingManager.
 
 1) Create a Windows Forms project in Visual Studio.<br/><br/>
 2) Find DockingManager control by typing the name of the DockingManager in the search box.<br/><br/>
@@ -21,7 +21,7 @@ The following steps will help you to add required Essential Windows Forms contro
 
 ## Through C# / VB
 
-The following steps will help you to add required Essential Windows Forms control. For example: DockingManager through C# or VB Code.
+The following steps helps to add required Essential Windows Forms control. For example: DockingManager through C# or VB Code.
 
 1) Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 
@@ -64,7 +64,7 @@ private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncf
 
 {% highlight vb %}
 
-private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(this.components)
+private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(Me.components)
 
 {% endhighlight %}
 
