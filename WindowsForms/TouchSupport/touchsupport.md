@@ -11,8 +11,8 @@ documentation: ug
 
 ## Gesture
 
-Gestures determine whether a finger or a stylus needs to be used to drive over a control. The supported gestures of the Windows Forms controls are Tap, Swipe, Pinch, and Hold.<br/><br/>
-The table represents the Gesture support vs Syncfusion controls.
+Gestures determine whether a finger or a stylus needs to be used to interact with a control. The supported gestures of the Windows Forms controls are Tap, Swipe, Pinch, and Hold.<br/><br/>
+The table represents the Gesture support for Syncfusion controls.
 
 <table>
 <tr>

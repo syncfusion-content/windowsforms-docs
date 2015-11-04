@@ -19,7 +19,7 @@ Featured samples are installed along with the Essential Studio installation by S
 
 To run the samples, open the corresponding Dashboard from the following location:
 
-Start > All Programs > Syncfusion > Essential Studio<{{ site.releaseversion }}> > Dashboard
+From Windows 10 : Start -> All Apps -> Syncfusion -> Syncfusion Dashboard {{ site.releaseversion }}
 
 Else open the Dashboard from the following installed location:
 
