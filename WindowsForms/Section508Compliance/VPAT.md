@@ -20,35 +20,35 @@ SUPPORTING FEATURES<br/><br/></th>
 <tr>
 <td>
 1194.21 Software applications and operating systems.<br/><br/><br/><br/></td><td>
-Refer to the attached VPAT.<br/><br/></td></tr>
+Refer to the attached VPAT.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.22 Web-based intranet and internet Information and applications.<br/><br/><br/><br/></td><td>
-Not Applicable.<br/><br/></td></tr>
+Not Applicable.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.23 Telecommunications products.<br/><br/><br/><br/></td><td>
-Not Applicable.<br/><br/></td></tr>
+Not Applicable.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.24 Video and multimedia products.<br/><br/><br/><br/></td><td>
-Not Applicable.<br/><br/></td></tr>
+Not Applicable.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.25 Self-contained closed products.<br/><br/><br/><br/></td><td>
-Not Applicable.<br/><br/></td></tr>
+Not Applicable.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.26 Desktop and portable computers.<br/><br/><br/><br/></td><td>
-Not Applicable.<br/><br/></td></tr>
+Not Applicable.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.31 Functional performance criteria.<br/><br/><br/><br/></td><td>
-Refer to the attached VPAT.<br/><br/></td></tr>
+Refer to the attached VPAT.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.41 Information, documentation, and support.<br/><br/><br/><br/></td><td>
-Refer to the attached VPAT.<br/><br/></td></tr>
+Refer to the attached VPAT.<br/><br/><br/><br/></td></tr>
 </table>
 
 

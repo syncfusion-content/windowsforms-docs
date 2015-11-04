@@ -21,12 +21,12 @@ The following procedure illustrates how to install Essential Studio for Windows 
 5. Click Next. Then, Select the Installation and Samples Folder window opens.
 6. To install it in the displayed default location, click Install.
 7. Select the Run Dashboard check box to launch the Dashboard after installing.
-8. Click Finish. Essential Studio is installed in your system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
+8. Click Finish. Essential Studio is installed in system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
 
 ## Nuget Installation
 
 
-Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The following steps help you add the reference of the Syncfusion assemblies in the Project References.
+Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The following steps helps to add the reference of the Syncfusion assemblies in the Project References.
 
 1) Right-click the Project and choose the Manage NuGet Packages.<br/><br/>
 2) Select Online. Refer to the following screenshot for more information. 
@@ -34,9 +34,9 @@ Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The 
 ![nuget](Installation_images/Installation_img1.png)
 
 
-3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like 35, 40, 45, 451 and 46 are added.<br/><br/>
+3) Install the required corresponding framework control to use in Visual Studio projects. User can install the dependent assemblies when required. The framework numbers at the end of package name like 35, 40, 45, 451 and 46 are added.<br/><br/>
 4) Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.<br/><br/>
-5) You can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.<br/><br/>
+5) User can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.<br/><br/>
 
 ## Command Line installation
 
@@ -63,7 +63,7 @@ Copying assembly in local folder is supported by the Syncfusion assembly referen
 
 ## GAC
 
-Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the developer machines. Also Syncfusion's [AssemblyManager](http://help.syncfusion.com/common/essential-studio/utilities#assembly-manager) helps you add or remove the Syncfusion assemblies to or from GAC.
+Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the developer machines. Also Syncfusion's [AssemblyManager](http://help.syncfusion.com/common/essential-studio/utilities#assembly-manager) helps to add or remove the Syncfusion assemblies to or from GAC.
 
 ## Installed Location
 
