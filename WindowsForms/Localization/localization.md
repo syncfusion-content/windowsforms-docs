@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization
 
-Localization is the process of making your application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain.<br/><br/>
+Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain.<br/><br/>
 Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement and they can be localized in two ways are, 
 
 • Using `ILocalizationProvider`.<br/><br/>
@@ -254,7 +254,7 @@ Localization is a key feature for providing solutions to global customers. This 
 
 ### Types of cultures
 
-• Invariant: An invariant culture is always culture-insensitive primarily used as a “default” culture. You can specify the invariant culture with name by using an empty string (""). It is associated with the English language but not with any particular country or region.
+• Invariant: An invariant culture is always culture-insensitive primarily used as a “default” culture and helps to specify the invariant culture with name by using an empty string (""). It is associated with the English language but not with any particular country or region.
 
 • Neutral: A neutral culture is a culture that is associated with a language but not with a country or region.
 
@@ -274,7 +274,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 2)   Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.<br/><br/>
 
-3)   Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows you to construct resource files containing bitmaps, icons, and strings.<br/><br/>
+3)   Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows to construct resource files containing bitmaps, icons, and strings.<br/><br/>
 
 4)   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.<br/><br/>
 
@@ -300,11 +300,10 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 9)   Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources is added to the source path.<br/><br/>
 
-10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the sf.publicsnk file from the Localization folder.<br/><br/>
+10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that sf.publicsnk file is available from the Localization folder.<br/><br/>
 
 For Tools.Windows
 
-{% tabs %}
 
 {% highlight console %}
 
@@ -312,12 +311,9 @@ al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 
 
 {% endhighlight %}
 
-{% endtabs %}
 
 For Shared.Base
 
-
-{% tabs %}
 
 {% highlight console %}
 
@@ -325,17 +321,13 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 
 {% endhighlight %}
 
-{% endtabs %} 
 
-
-11)  The version you specify for these DLLs in the al command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
+11)  The version can be specified for these DLLs in the al command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version that needs to be recreated by adding new and necessary resources. Recompile the resource DLLs with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
 
 12)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.<br/><br/>
 
 13)  Finally, mark this satellite DLL for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
 
-
-{% tabs %}
 
 {% highlight console %}
 
@@ -343,12 +335,10 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 
 {% endhighlight %}
 
-{% endtabs %} 
 
+14)  Drop this DLL into an appropriate sub-directory under .EXE’s directory (bin\Debug\), based on the naming conventions enforced in .NET. and it can placed in the de-DE sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
 
-14)  Drop this DLL into an appropriate sub-directory under your .EXE’s directory (bin\Debug\), based on the naming conventions enforced in .NET. You can put it in the de-DE sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
-
-15)  Finally, you can make your application fetch the German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the InitializeComponent().<br/><br/>
+15)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the InitializeComponent().<br/><br/>
 
 {% tabs %}
 
@@ -367,7 +357,7 @@ Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de
 {% endtabs %} 
 
 
-16)  Now, run your application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
+16)  Now, Run the application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1600.jpg](GettingStarted_images/GettingStarted_img6.png)
 
