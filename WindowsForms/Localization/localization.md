@@ -302,20 +302,30 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that you have the sf.publicsnk file from the Localization folder.<br/><br/>
 
-Tools.Windows
+For Tools.Windows
 
-<table>
-<tr>
-<td>
-al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources /embed:Syncfusion.Windows.Forms.MdiWindowDialog.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.SR.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.XPMenus.BarCustomizationDialog.de-DE.resources</td></tr>
-</table>
-Shared.Base
+{% tabs %}
 
-<table>
-<tr>
-<td>
-al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE</td></tr>
-</table>
+{% highlight console %}
+
+al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources /embed:Syncfusion.Windows.Forms.MdiWindowDialog.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.SR.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.XPMenus.BarCustomizationDialog.de-DE.resources
+
+{% endhighlight %}
+
+{% endtabs %}
+
+For Shared.Base
+
+
+{% tabs %}
+
+{% highlight console %}
+
+al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE
+
+{% endhighlight %}
+
+{% endtabs %} 
 
 
 11)  The version you specify for these DLLs in the al command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version you have to recreate by adding new and necessary resources. Recompile your resource DLLs with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
@@ -324,11 +334,16 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 
 13)  Finally, mark this satellite DLL for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
 
-<table>
-<tr>
-<td>
-sn –Vr Syncfusion.Tools.Windows.resources.dll</td></tr>
-</table>
+
+{% tabs %}
+
+{% highlight console %}
+
+sn –Vr Syncfusion.Tools.Windows.resources.dll
+
+{% endhighlight %}
+
+{% endtabs %} 
 
 
 14)  Drop this DLL into an appropriate sub-directory under your .EXE’s directory (bin\Debug\), based on the naming conventions enforced in .NET. You can put it in the de-DE sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
