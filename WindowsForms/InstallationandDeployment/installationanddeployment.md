@@ -34,7 +34,7 @@ Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The 
 ![nuget](Installation_images/Installation_img1.png)
 
 
-3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, 45, 451 are added.<br/><br/>
+3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like 35, 40, 45, 451 and 46 are added.<br/><br/>
 4) Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.<br/><br/>
 5) You can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.<br/><br/>
 

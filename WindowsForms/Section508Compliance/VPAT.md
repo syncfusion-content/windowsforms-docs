@@ -8,11 +8,9 @@ documentation: ug
 ---
 
 
-# Section 508 Compliance
+# Section 508 Compliance - Voluntary Product Accessibility Template
 
 The following Voluntary Product Accessibility information refers to the Syncfusion Essential Studio for Windows Forms.
-
-## Voluntary Product Accessibility Template
 
 <table>
 <tr>
@@ -25,7 +23,7 @@ SUPPORTING FEATURES<br/><br/></th>
 Refer to the attached VPAT.<br/><br/></td></tr>
 <tr>
 <td>
-1194.22 Web-based intranet and internet<br/><br/>Information and applications.<br/><br/><br/><br/></td><td>
+1194.22 Web-based intranet and internet Information and applications.<br/><br/><br/><br/></td><td>
 Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
@@ -54,7 +52,8 @@ Refer to the attached VPAT.<br/><br/></td></tr>
 </table>
 
 
-Detailed Voluntary Product Accessibility Template
+## Subpart B – Section 1194.21 Software Applications and Operating Systems
+
 
 <table>
 <tr>
@@ -125,7 +124,8 @@ This criterion does not apply to Essential Studio for Windows Forms controls.<br
 </table>
 
 
-Functional Performance Criteria 1194.31 Functional performance criteria
+## Subpart C - Section 1194.31 Functional performance criteria
+
 
 <table>
 <tr>
@@ -166,7 +166,8 @@ Essential Studio for Windows Forms controls provide functionality that conforms 
 </table>
 
 
-Subpart D -- Information, Documentation, and Support 1194.41 Information, documentation, and support 
+#Subpart D - Section 1194.41 Information, documentation, and support
+ 
 
 <table>
 <tr>

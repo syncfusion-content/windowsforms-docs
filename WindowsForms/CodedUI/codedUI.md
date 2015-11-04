@@ -16,7 +16,7 @@ This section demonstrates how to create a simple test with TreeViewAdv. The Cod
 ## Creating Coded UI Project
 
 
-CUIT should contain the coded UI test project. When your application does not contain the CUIT project, create a new project.
+CUIT should contain the coded UI test project. When the Application does not contain the CUIT project, create a new project.
 
 
 ![](GettingStarted_Images/CreatingTestApplication.png)
@@ -36,7 +36,7 @@ While generating code for Coded UI Test dialog box, choose the Record actions�
 ![](GettingStarted_Images/RecordingOption.png)
 
 1) After choosing the option, Coded UI Test Builder UIMap is shown at the BottomRight of the window.<br/><br/>
-2) Choose the Start recording option from the UI Map to record the testing. You can also pause the recording while testing the application.<br/><br/>
+2) Choose the Start recording option from the UI Map to record the testing and it is also possible to pause the recording while testing the application.<br/><br/>
 
 
 
@@ -51,15 +51,15 @@ While generating code for Coded UI Test dialog box, choose the Record actions�
 ![](GettingStarted_Images/PauseRecordingFromUIMap.png)
 
 3) The recorded steps can be viewed by using the UIMap or by pressing Alt + S key.<br/><br/>
-4) To delete actions that you had recorded by mistake, choose Edit Actions.<br/><br/>
-5) To generate code that replicates your action, choose the Generate Code icon and type a name and description for your CUIT method.<br/><br/>
+4) To delete actions that was recorded by mistake, choose Edit Actions.<br/><br/>
+5) To generate code that replicates performed actions, choose the Generate Code icon and type a name and description for CUIT method.<br/><br/>
 
 
 
 
 ![](GettingStarted_Images/RecordedSteps.png)
 
-6) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates your actions.<br/><br/>
+6) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates performed actions.<br/><br/>
 
 
 ![](GettingStarted_Images/GenerateCodedUIMap.png)
