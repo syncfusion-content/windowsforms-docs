@@ -11,10 +11,6 @@ documentation: ug
 
 # Featured Samples
 
-## Offline samples
-
-Featured samples are installed along with the Essential Studio installation by Syncfusion installer. The samples are available in “[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Windows\samples"
-
 ## Guide to run the samples
 
 To run the samples, open the corresponding Dashboard from the following location:
@@ -32,3 +28,9 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 
 To execute the locally installed samples, select the corresponding product and click RUN local samples.
+
+## Offline samples
+
+Featured samples are installed along with the Essential Studio installation by Syncfusion installer. The samples are available in “[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Windows\samples"
+
+N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
