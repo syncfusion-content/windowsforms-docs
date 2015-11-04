@@ -12,7 +12,7 @@ documentation: ug
 
 ## Manual Installation
 
-The following procedure illustrates how to install Essential Studio. 
+The following procedure illustrates how to install Essential Studio for Windows Forms. 
 
 1. Double-click the Syncfusion Essential Studio Windows Forms Setup file. The Self-Extractor wizard opens and extracts the package automatically.
 2. Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
@@ -34,7 +34,7 @@ Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The 
 ![nuget](Installation_images/Installation_img1.png)
 
 
-3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, and 45, 451 are added.<br/><br/>
+3) Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when required. The framework numbers at the end of package name like, 35, 40, 45, 451 are added.<br/><br/>
 4) Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.<br/><br/>
 5) You can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.<br/><br/>
 
@@ -48,9 +48,7 @@ Follow the given steps to install through Command Line in Silent mode.
 3. Run %temp%. The Temp folder opens. The SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file is available in one of the folders.
 4. Copy the SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file in local drive. Example: D:\temp
 5. Cancel the wizard.
-6. Open Command Prompt in administrator mode and pass the following arguments for corresponding version.
-
-“Setup file path\SyncfusionEssentialStudio_({{ site.releaseversion }}).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
+6. Open Command Prompt in administrator mode and pass the following arguments for corresponding version. <br/>“Setup file path\SyncfusionEssentialStudio_({{ site.releaseversion }}).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
@@ -58,7 +56,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ## Copy Local
 
-X-copy is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to "True". So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the exe, dlls and xmls files to the client machines similar to that of manual copy.
+Copying assembly in local folder is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to "True". So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the exe, dlls and xmls files to the client machines similar to that of manual copy.
 
 ![](Deployment_images/Deployment_img1.png)
 
