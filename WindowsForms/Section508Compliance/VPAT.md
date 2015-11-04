@@ -20,7 +20,7 @@ SUPPORTING FEATURES<br/><br/></th>
 <tr>
 <td>
 1194.21 Software applications and operating systems.<br/><br/><br/><br/></td><td>
-Refer to the attached VPAT.<br/><br/><br/><br/></td></tr>
+Refer to Subpart B.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.22 Web-based intranet and internet Information and applications.<br/><br/><br/><br/></td><td>
@@ -44,11 +44,11 @@ Not Applicable.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.31 Functional performance criteria.<br/><br/><br/><br/></td><td>
-Refer to the attached VPAT.<br/><br/><br/><br/></td></tr>
+Refer to Subpart C.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 1194.41 Information, documentation, and support.<br/><br/><br/><br/></td><td>
-Refer to the attached VPAT.<br/><br/><br/><br/></td></tr>
+Refer to Subpart D.<br/><br/><br/><br/></td></tr>
 </table>
 
 
@@ -113,7 +113,7 @@ Supported with minor exceptions<br/><br/></td><td>
 Essential Diagram: Supported with minor exceptions. Control provides functionality that allows setting colors for almost all the elements by providing a large range of colors to choose from.<br/><br/>Other products: Fully supported.<br/><br/></td></tr>
 <tr>
 <td>
-(k) Software does not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.<br/><br/></td><td>
+(k) Software does not use flashing or blinking text, objects or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.<br/><br/></td><td>
 Fully Supported<br/><br/></td><td>
 All Essential Studio for Windows Forms controls provide functionality that conforms to these criteria.<br/><br/></td></tr>
 <tr>
@@ -137,7 +137,7 @@ REMARKS AND EXPLANATION<br/><br/></th></tr>
 <td>
 (a) At least one mode of operation and information retrieval that does not require user vision shall be provided or support for Assistive Technology used by people who are blind or visually impaired shall be provided.<br/><br/></td><td>
 Partially Supported.<br/><br/></td><td>
-Essential Tools: Supported in the following Windows Forms Controls - Supported for Menus, Grid, CurrencyEdit, PercentTextBox, IntegerTextBox, DoubleTextbox, ComboboxAdv related controls, Schedule, ButtonAdv related controls. Not supported in the other Essential Studio for Windows Forms controls.<br/><br/></td></tr>
+Essential Tools: Supported in the following Windows Forms Controls - Supported for Menus, Grid, CurrencyEdit, PercentTextBox, IntegerTextBox, DoubleTextbox, ComboboxAdv related controls, Schedule and ButtonAdv related controls. Not supported in the other Essential Studio for Windows Forms controls.<br/><br/></td></tr>
 <tr>
 <td>
 (b) At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for Assistive Technology used by people who are visually impaired shall be provided.<br/><br/></td><td>
