@@ -19,7 +19,7 @@ Syncfusion components support localization and have their own neutral resources.
 ## Using ILocalizationProvider
 
 
-The following procedure helps to localize the FindDialogBox in the Edit Control:
+The following procedure helps to localize the `FindDialogBox` in the Edit Control:
 
 1)   Include the required namespaces at the beginning of the source file.
 
@@ -79,7 +79,7 @@ LocalizationProvider.Provider = new Localizer();
 
 {% highlight vb %}
 
-LocalizationProvider.Provider = New Localizer()
+LocalizationProvider.Provider = New Localizer()
 
 {% endhighlight %}
 
@@ -248,17 +248,17 @@ End Function
 
 Localization is a key feature for providing solutions to global customers. This is true for desktop applications as well as Syncfusion components. Resources are important for localizing an application as they contain the necessary settings for different languages and cultures. Here Internationalization and localization are different but related concepts.
 
-• Internationalization: Ensuring an application can handle resources (For example, strings) in a language-specific fashion. Internationalization is also known as i18n.
+• **Internationalization**: Ensuring an application can handle resources (For example, strings) in a language-specific fashion. Internationalization is also known as i18n.
 
-• Localization: Also known as l10n. Localization is the process of customizing an application for specific cultures or regions. It is the adaptation of language, content, and design to reflect the local cultural sensitivities.
+• **Localization**: Also known as l10n. Localization is the process of customizing an application for specific cultures or regions. It is the adaptation of language, content, and design to reflect the local cultural sensitivities.
 
 ### Types of cultures
 
-• Invariant: An invariant culture is always culture-insensitive primarily used as a “default” culture and helps to specify the invariant culture with name by using an empty string (""). It is associated with the English language but not with any particular country or region.
+• **Invariant**: An invariant culture is always culture-insensitive primarily used as a “default” culture and helps to specify the invariant culture with name by using an empty string (“”). It is associated with the English language but not with any particular country or region.
 
-• Neutral: A neutral culture is a culture that is associated with a language but not with a country or region.
+• **Neutral**: A neutral culture is a culture that is associated with a language but not with a country or region.
 
-• Specific: A specific culture is a culture that is associated with a language and a country or region like, `fr-CA` and `fr-FR`. For example, fr is a neutral culture and `fr-FR` is a specific culture. Note that `zh-CHS` (simplified Chinese) and `zh-CHT` (traditional Chinese) are neutral cultures.
+• **Specific**: A specific culture is a culture that is associated with a language and a country or region like, `fr-CA` and `fr-FR`. For example, fr is a neutral culture and fr-FR is a specific culture. Note that `zh-CHS` (simplified Chinese) and `zh-CHT` (traditional Chinese) are neutral cultures.
 
 ### Steps to Localize Syncfusion Components
 
@@ -298,11 +298,11 @@ N> In above section, Latest Essential Studio version details has been provided. 
 ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1599.jpg](GettingStarted_images/GettingStarted_img5.png)
 
 
-9)   Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources is added to the source path.<br/><br/>
+9)   Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name `Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources` is added to the source path.
 
 10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that sf.publicsnk file is available from the Localization folder.<br/><br/>
 
-For Tools.Windows
+For **Tools.Windows**
 
 
 {% highlight console %}
@@ -312,7 +312,7 @@ al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 
 {% endhighlight %}
 
 
-For Shared.Base
+For **Shared.Base**
 
 
 {% highlight console %}
@@ -336,9 +336,9 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 {% endhighlight %}
 
 
-14)  Drop this DLL into an appropriate sub-directory under .EXE’s directory (bin\Debug\), based on the naming conventions enforced in .NET. and it can placed in the de-DE sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
+14)  Drop this DLL into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
 
-15)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the InitializeComponent().<br/><br/>
+15)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the `InitializeComponent()`.<br/><br/>
 
 {% tabs %}
 
