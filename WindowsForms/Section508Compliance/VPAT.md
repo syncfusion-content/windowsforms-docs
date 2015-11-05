@@ -166,7 +166,7 @@ Essential Studio for Windows Forms controls provide functionality that conforms 
 </table>
 
 
-#Subpart D - Section 1194.41 Information, documentation, and support
+## Subpart D - Section 1194.41 Information, documentation, and support
  
 
 <table>
