@@ -50,8 +50,8 @@ While generating code for Coded UI Test dialog box, choose the Record actions�
 
 ![](GettingStarted_Images/PauseRecordingFromUIMap.png)
 
-3) The recorded steps can be viewed by using the UIMap or by pressing Alt + S key.<br/><br/>
-4) To delete actions that was recorded by mistake, choose Edit Actions.<br/><br/>
+3) The recorded steps can be viewed by using the UIMap or by pressing “Alt + S” key.<br/><br/>
+4) To delete actions that was recorded by mistake, choose “Edit” Actions.<br/><br/>
 5) To generate code that replicates performed actions, choose the Generate Code icon and type a name and description for CUIT method.<br/><br/>
 
 
@@ -76,7 +76,7 @@ While generating code for Coded UI Test dialog box, choose the Record actions�
 
 The Application can be tested with the generated CUIT Method. 
 
-1) Add a TestMethod named CodedUITestMethod1.
+1) Add a TestMethod named `CodedUITestMethod1`.
 
 
 {% tabs %}
@@ -102,7 +102,7 @@ Me.UIMap.RecordedMethod1()
 {% endtabs %}
 
 
-2) Build and Run the application that has already been configured. 
+2) **Build** and **Run** the application that has already been configured. 
 
 3) Right click the body of the CodedUITestMethod and then select Generate Code for Coded UI Test -> Use CUIT builder as shown in the following screenshots.<br/><br/>
 
