@@ -13,7 +13,7 @@ documentation: ug
 
 ## Guide to run the samples
 
-To run the samples, search it from Start by name of “DashBoard”
+To run the samples, search it from Start by name of “Dashboard”
 
 ![dashboard](Guidetorunthesamples_images/dashboardsearch.png)
 
