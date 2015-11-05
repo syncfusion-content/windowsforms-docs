@@ -16,7 +16,7 @@ The following Voluntary Product Accessibility information refers to the Syncfusi
 <tr>
 <th>
 CRITERIA<br/><br/></th><th>
-SUPPORTING FEATURES<br/><br/></th>
+SUPPORTING FEATURES<br/><br/></th></tr>
 <tr>
 <td>
 1194.21 Software applications and operating systems.<br/><br/><br/><br/></td><td>
