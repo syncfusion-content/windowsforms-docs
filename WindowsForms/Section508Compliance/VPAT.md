@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Section 508 Compilance | WindowsForms | Syncfusion
+title: Section 508 Compilance for Syncfusion Windows Forms products
 description: Voluntary Product Accessibility Template for Syncfusion Windows Forms products
 platform: WindowsForms
 control: General
