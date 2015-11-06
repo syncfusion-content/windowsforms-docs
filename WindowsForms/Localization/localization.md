@@ -258,7 +258,7 @@ Localization is a key feature for providing solutions to global customers. This 
 
 • **Neutral**: A neutral culture is a culture that is associated with a language but not with a country or region.
 
-• **Specific**: A specific culture is a culture that is associated with a language and a country or region like, `fr-CA` and `fr-FR`. For example, fr is a neutral culture and fr-FR is a specific culture. Note that `zh-CHS` (simplified Chinese) and `zh-CHT` (traditional Chinese) are neutral cultures.
+• **Specific**: A specific culture is a culture that is associated with a language and a country or region like, `fr-CA` and `fr-FR`. For example, fr is a neutral culture and `fr-FR` is a specific culture. Note that `zh-CHS` (simplified Chinese) and `zh-CHT` (traditional Chinese) are neutral cultures.
 
 ### Steps to Localize Syncfusion Components
 
