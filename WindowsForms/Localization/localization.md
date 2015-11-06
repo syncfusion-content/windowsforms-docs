@@ -350,7 +350,7 @@ Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("d
 
 {% highlight vb %}
 
-Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE")
+Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de-DE")
 
 {% endhighlight %}
 
