@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .Net Framework support History | WindowsForms | Syncfusion
+title: .NET Framework support History for Syncfusion Essential Studio Windows Forms controls
 description: .Net Framework support History details
 platform: WindowsForms
 control: Introduction

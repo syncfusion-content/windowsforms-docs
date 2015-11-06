@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization support for Windows Forms
+title: Localization support for Syncfusion Essential Studio Windows Forms controls
 description: Getting Started for Localization
 platform: WindowsForms
 control: General
