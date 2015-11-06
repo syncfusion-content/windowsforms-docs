@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Featured Samples | WindowsForms | Syncfusion
+title: Guidance to run the local samples
 description: Inbuilt Featured Samples
 platform: WindowsForms
 control: General

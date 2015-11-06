@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Welcome to Syncfusion Essential Windows Forms | Complete guide for Syncfusion Essential Windows Forms
 description: Overview
 platform: WindowsForms
 control: Introduction
@@ -115,7 +115,7 @@ LAYOUT<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/overview/overview">TabbedGroupedMDIManager</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/tabbedmdi/tab-groups">TabbedGroupedMDIManager</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -188,14 +188,6 @@ LAYOUT<br/><br/></td><td>
 <td>
 <br/><br/></td><td>
 <a href="http://help.syncfusion.com/windowsforms/bannertextprovider/overview">BannerTextProvider</a><br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/overview/overview">ImageListAdv</a><br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/overview/overview">TypeLoader</a><br/><br/></td></tr>
 <tr>
 <td>
 EDITORS<br/><br/></td><td>

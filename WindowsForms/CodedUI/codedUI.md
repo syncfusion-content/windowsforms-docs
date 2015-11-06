@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coded UI | WindowsForms | Syncfusion 
+title: Steps to perform Coded UI Automation testing for Syncfusion Essential Windows Forms controls  
 description: Getting Started for Coded UI
 platform: WindowsForms
 control: Coded UI

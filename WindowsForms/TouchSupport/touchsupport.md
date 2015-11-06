@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch Support | WindowsForms | Syncfusion
+title: Touch support for Syncfusion Windows Forms controls
 description: Touch Support Overview
 platform: WindowsForms
 control: General
