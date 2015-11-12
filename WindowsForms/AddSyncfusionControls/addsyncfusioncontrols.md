@@ -9,63 +9,96 @@ documentation: ug
 
 # Add Syncfusion Controls 
 
-## Through Drag and Drop
+The Syncfusion Windows Forms controls can be added in a Visual Studio projects by using either of the following ways,
 
-The following steps helps to add required Essential Windows Forms control through drag and drop. for example: DockingManager.
+* Through Designer
+* Through Code-Behind
 
-1) Create a Windows Forms project in Visual Studio.<br/><br/>
-2) Find DockingManager control by typing the name of the DockingManager in the search box.<br/><br/>
-![docking](ThroughDragandDrop_images/ThroughDragandDrop_img1.png)
+## Through Designer
 
-3) Drag DockingManager and drop it in the designer.<br/><br/>
+Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential Windows Forms control through drag and drop from Toolbox. For example: **TextBoxExt**
 
-## Through C# / VB
+1.Create a Windows Forms project in Visual Studio.
 
-The following steps helps to add required Essential Windows Forms control through code. For example: DockingManager.
+2.Find **TextBoxExt** by typing the name of the “TextBoxExt” in the search box.
 
-1) Create a Windows Forms project in Visual Studio and refer to the following assemblies.
+![](ThroughDragandDrop_images/AddSyncfusionControls_img1.jpeg)
 
- * Syncfusion.Tools.Base
- * Syncfusion.Tools.Windows
- * Syncfusion.Shared.Base
- * Syncfusion.Shared.Windows
- * Syncfusion.Grid.Base
- * Syncfusion.Grid.Windows
+3.Drag **TextBoxExt** and drop it in the designer.
 
-2) Add the following namespace.
+![](ThroughDragandDrop_images/AddSyncfusionControls_img2.jpeg)
+
+## Through Code-Behind
+
+Syncfusion UI for Windows Forms can added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code. For example: **TextBoxExt**.
+
+1.Create a Windows Forms project in Visual Studio and refer to the following assemblies.
+
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+
+2.Create an instance of **TextBoxExt** using it namespace
+
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
-using Syncfusion.Windows.Forms.Tools;
-using Syncfusion.Windows.Forms;
+Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
-Imports Syncfusion.Windows.Forms.Tools
-Imports Syncfusion.Windows.Forms
+Dim textBoxExt1 As New Syncfusion.Windows.Forms.Tools.TextBoxExt()
 
 {% endhighlight %}
 
 {% endtabs %}
 
-3) Create an instance of Docking Manager.
+3.Set Location and Size of the control with require value. Here, set its location as (100,100) and Size as (200,25) through its `Location` and ‘Size’ property respectively.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
-private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components);
+this.textBoxExt1.Location = new System.Drawing.Point(100, 100);
+
+this.textBoxExt1.Size = new System.Drawing.Size(200, 25);
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
-private Syncfusion.Windows.Forms.Tools.DockingManager DockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(Me.components)
+Me.textBoxExt1.Location = New System.Drawing.Point(100, 100)
+
+Me.textBoxExt1.Size = New System.Drawing.Size(200, 25)
 
 {% endhighlight %}
 
 {% endtabs %}
+
+4.Add the created instance to the parent form (or the needed layout panels) through its child collection property that named as `Controls`.
+{% tabs %}
+
+{% highlight C# %}
+
+//here this denotes parent main form
+
+this.Controls.Add(this.textBoxExt1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'here this denotes parent main form
+
+Me.Controls.Add(Me.textBoxExt1) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ThroughDragandDrop_images/AddSyncfusionControls_img3.jpeg)
