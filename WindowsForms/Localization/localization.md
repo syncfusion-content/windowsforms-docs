@@ -304,23 +304,27 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 For **Tools.Windows**
 
+{% tabs %}
 
-{% highlight console %}
+{% highlight Console %}
 
 al /t:lib /culture:de-DE /out:Syncfusion.Tools.Windows.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources /embed:Syncfusion.Windows.Forms.MdiWindowDialog.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.SR.de-DE.resources /embed:Syncfusion.Windows.Forms.Tools.XPMenus.BarCustomizationDialog.de-DE.resources
 
 {% endhighlight %}
 
+{% endtabs %}
 
 For **Shared.Base**
 
+{% tabs %}
 
-{% highlight console %}
+{% highlight Console %}
 
 al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE
 
 {% endhighlight %}
 
+{% endtabs %}
 
 11)  The version can be specified for these DLLs in the al command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version that needs to be recreated by adding new and necessary resources. Recompile the resource DLLs with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
 
@@ -328,13 +332,15 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 
 13)  Finally, mark this satellite DLL for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
 
+{% tabs %}
 
-{% highlight console %}
+{% highlight Console %}
 
 sn –Vr Syncfusion.Tools.Windows.resources.dll
 
 {% endhighlight %}
 
+{% endtabs %}
 
 14)  Drop this DLL into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
 
