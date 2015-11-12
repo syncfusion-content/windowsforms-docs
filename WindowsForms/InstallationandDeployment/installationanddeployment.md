@@ -50,9 +50,15 @@ Follow the given steps to install through Command Line in Silent mode.
 5. Cancel the wizard.
 6. Open Command Prompt in administrator mode and pass the following arguments for corresponding version.
 
-{ % highlight console % }
-“Setup file path\SyncfusionEssentialStudio_(13.3.0.7).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
-{ % endhighlight % }
+{% tabs %}
+
+{% highlight Console %}
+
+“Setup file path\SyncfusionEssentialStudio_({{ site.releaseversion }}).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
