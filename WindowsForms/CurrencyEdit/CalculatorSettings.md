@@ -31,7 +31,7 @@ Specifies whether calculator button is to be displayed. By default it is True.</
 <td>
 CalculatorButton</td><td>
 Provides properties to customize the calculator button. 
-See {{ '[ButtonEdit](http://172.168.111.149/UG_82/WindowsFormsUI_Tools/ButtonEdit.html)'| markdownify}}  control user guide to know about the settings.</td></tr>
+See {{ '[ButtonEdit](http://help.syncfusion.com/windowsforms/buttonedit/buttoneditevents#click-event)'| markdownify}}  control user guide to know about the settings.</td></tr>
 <tr>
 <td>
 CalculatorLayoutType</td><td>

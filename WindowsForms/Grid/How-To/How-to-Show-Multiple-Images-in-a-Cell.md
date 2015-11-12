@@ -69,7 +69,7 @@ To show multiple Images in a cell, you need to handle CellDrawn Event. Follow th
    {:.prettyprint}
 				
 
-   ~~~ vbent
+   ~~~ vbnet
 
 				Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs)
 

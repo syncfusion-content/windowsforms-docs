@@ -150,6 +150,6 @@ Me.gradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stret
 
 {% seealso %}
 
-[Border Settings](/windowsforms/Tools/EditorsPackage/GradientPanel/Border-Settings)
+[Border Settings](/windowsforms/GradientPanel/Border-Settings)
 
 {% endseealso %}

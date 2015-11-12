@@ -28,11 +28,11 @@ Handled to customize the AutoCompletion.</td></tr>
 <tr>
 <td>
 AutoCompleteItemBrowsed</td><td>
-Handled when the user selects an item from the list of possible matches when the AutoComplete is set to AutoSuggest.</td></tr>
+Handled when you select an item from the list of possible matches when the AutoComplete is set to AutoSuggest.</td></tr>
 <tr>
 <td>
 AutoCompleteItemSelected Event</td><td>
-Occurs when a new item has been selected by the user when the AutoComplete mode is set to AutoSuggest.</td></tr>
+Occurs when a new item has been selected by you when the AutoComplete mode is set to AutoSuggest.</td></tr>
 <tr>
 <td>
 DropDownClosed</td><td>
@@ -57,13 +57,13 @@ Occurs when the target control of the AutoComplete control changes.</td></tr>
 
 ## AutoCompleteItemSelected Event
 
-AutoCompleteItemSelected Event is raised, when a new item has been selected by the user when the AutoComplete mode is set to AutoSuggest.
+AutoCompleteItemSelected Event is raised, when you select a new item, when the AutoComplete mode is set to AutoSuggest.
 
 This event is discussed in [External Datasource](http://docs.syncfusion.com/windowsforms/autocomplete/datasource#external-datasource) topic.
 
 ## BeforeAddItem Event
 
-This event will be raised when new item is about to be added. New items can be added by calling AutoComplete.AddHistoryItem() method. The event handler receives an argument of type AutoCompleteAddItemCancelEventArgs containing data related to this event. The following are the properties associated with AutoCompleteAddItemCancelEventArgs argument.
+This event is raised when a new item is about to be added. New items can be added by calling the AutoComplete.AddHistoryItem() method. The event handler receives an argument of type AutoCompleteAddItemCancelEventArgs containing data related to this event. The following are the properties associated with AutoCompleteAddItemCancelEventArgs argument.
 
 
 <table>
@@ -74,11 +74,11 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets/Sets a value indicating whether the event should be canceled.</td></tr>
+Gets or sets a value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
 ImageColumnIndex</td><td>
-Gets/Sets the ColumnIndex into the AutoComplete.ImageList property.</td></tr>
+Gets or sets the ColumnIndex into the AutoComplete.ImageList property.</td></tr>
 <tr>
 <td>
 RowItem</td><td>
@@ -121,7 +121,7 @@ End Sub
 
 ## AutoCompleteItemBrowsed Event
 
-This event will be raised when the user selects an item from the list of possible matches when the AutoComplete is set to AutoSuggest. The event handler receives an argument of type AutoCompleteItemEventArgs. The event properties associated with the AutoCompleteItemEventArgs are as follows.
+This event is raised when you select an item from the list of possible matches when the AutoComplete is set to AutoSuggest. The event handler receives an argument of type AutoCompleteItemEventArgs. The event properties associated with the AutoCompleteItemEventArgs are as follows.
 
 
 <table>
@@ -132,7 +132,7 @@ Description</th></tr>
 <tr>
 <td>
 SelectedValue</td><td>
-Gets/Sets the value selected.</td></tr>
+Gets or sets the value selected.</td></tr>
 <tr>
 <td>
 Handled</td><td>
@@ -148,7 +148,7 @@ Returns the index of the item that was used for matching.</td></tr>
 </table>
 
 
-When the user selects an item from the list of possible matches when the AutoComplete is set to AutoSuggest, we can display the selected URL in separate TextBox. The following code illustrate this.
+When you select an item from the list of possible matches when AutoComplete is set to AutoSuggest, you can display the selected URL in a separate TextBox. The following code illustrates this.
 
 
 {% highlight C# %}
@@ -189,7 +189,7 @@ End Sub
 
 ## MatchItem Event
 
-We can override the default matching of the current content of the target edit control using this event. The event handler receives an argument of type AutoCompleteMatchItemEventArgs. The following are the properties associated with AutoCompleteMatchItemEventArgs argument.
+You can override the default matching of the current content of the target edit control using this event. The event handler receives an argument of type AutoCompleteMatchItemEventArgs. The following are the properties associated with AutoCompleteMatchItemEventArgs argument.
 
 <table>
 <tr>
@@ -199,7 +199,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets/Sets a value indicating whether the event should be canceled.</td></tr>
+Gets or sets a value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
 CurrentText</td><td>

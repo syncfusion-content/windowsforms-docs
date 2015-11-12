@@ -162,7 +162,7 @@ The Docking Manager's API makes it an easy task to programmatically create, init
    {:.prettyprint}
 
 
-   ~~~ vbent
+   ~~~ vbnet
 
 
 

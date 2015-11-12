@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Position
 
-The AutoLabel control can be positioned relative to the top, left, bottom or right of the labeled control. You can do this using the below given property.
+The AutoLabel control can be positioned relative to the top, left, bottom or right of the labeled control. You can do this using the given property.
 
 <table>
 <tr>

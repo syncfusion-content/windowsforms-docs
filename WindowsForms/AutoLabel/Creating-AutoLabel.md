@@ -13,7 +13,7 @@ The AutoLabel control can be created in the following ways.
 
 ## Through Designer
 
-The following steps illustrate how to create an AutoLabel control through designer.
+The following steps illustrate how to create an AutoLabel control through Designer.
 
 * Create or open a Windows Forms project.
 * Add an AutoLabel Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
@@ -22,7 +22,7 @@ The following steps illustrate how to create an AutoLabel control through design
 
 
 
-* Set the desired properties for the control through theProperty grid.
+* Set the desired properties for the control through the Property grid.
 * Run the application.
 
   ![](AutoLabel-Images/Overview_img6.jpg) 

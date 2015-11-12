@@ -948,7 +948,7 @@ _..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\
 
 {% seealso %}
 
-[Line Numbers and Current Line Highlighting](windowsforms/edit/text-visualization#line-numbers-and-current-line-highlighting-1)
+[Line Numbers and Current Line Highlighting](/windowsforms/edit/text-visualization#line-numbers-and-current-line-highlighting-1)
 
 {% endseealso %}
 

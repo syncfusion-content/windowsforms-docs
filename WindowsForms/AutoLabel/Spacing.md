@@ -10,7 +10,7 @@ documentation: ug
 
 # Spacing
 
-The space between the AutoLabel control and the labeled control can be customized using the properties given below. When using relative positioning, you can also specify the gap between the label and the control.
+The space between the AutoLabel control and the labeled control can be customized using the following properties. When using relative positioning, you can also specify the gap between the label and the control.
 
 <table>
 <tr>

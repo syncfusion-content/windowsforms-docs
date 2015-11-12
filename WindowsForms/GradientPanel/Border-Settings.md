@@ -96,6 +96,6 @@ Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
 
  {% seealso %}
  
- [GradientPanel Appearance](/windowsforms/Tools/EditorsPackage/GradientPanel/GradientPanel-Appearance)
+ [GradientPanel Appearance](/windowsforms/GradientPanel/GradientPanel-Appearance)
  
  {% endseealso %}

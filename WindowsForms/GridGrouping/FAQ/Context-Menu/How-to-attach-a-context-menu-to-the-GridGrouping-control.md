@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-attach-a-context-menu-to-the-GridGrouping-c | WindowsForms | Syncfusion
+title: How-to-attach-a-context-menu-to-the-GridGrouping-Control | WindowsForms | Syncfusion
 description: how to attach a context menu to the gridgrouping control
 platform: WindowsForms
 control: GridGrouping

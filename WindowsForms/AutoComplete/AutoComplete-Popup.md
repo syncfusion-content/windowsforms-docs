@@ -9,50 +9,19 @@ documentation: ug
 
 # AutoComplete Popup
 
-When a control is associated with an AutoComplete control, a popup will be displayed, based on the source. This section illustrates various components of the AutoComplete Popup with their properties which can control the appearance and behavior of the components.
+When a control is associated with an AutoComplete control, a popup is displayed, based on the source. This section illustrates various components of the AutoComplete Popup with their properties that can control the appearance and behavior of the components.
 
  ![](AutoComplete-Controls-Images/Overview_img13.png) 
 
 
 
-This section will discuss various components in the AutoComplete popup.
+This section discusses the various components in the AutoComplete popup.
 
 ## Header, Close Button and Gripper
 
 ### Header Settings
 
-DropDown item can have a header which is enabled using AutoComplete.ShowColumnHeader property. AutoAddItem property should be set to true.
-
-_Property Table_
-
-<table>
-<tr>
-<th>
-AutoComplete Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-AutoAddItem</td><td>
-Specifies whether the current item in the target control is to be automatically added during validation, when the ENTER key is pressed.</td></tr>
-</table>
-
-N> The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
-
-
-
-{% highlight C# %}
-
-
-this.autoComplete1.AutoAddItem = true;
-
-this.autoComplete2.ShowColumnHeader = true; 
-
-this.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents";
-
-//Specifies the style of ColumnHeader in AutoComplete Popup.
-
-this.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable;
-{% endhighlight %}
+DropDown item can have a header that is enabled using AutoComplete.ShowColumnHeader property. The AutoAddItem property must be set to "True"
 
 
 
@@ -122,7 +91,7 @@ Me.autoComplete1.ShowGripper = True
 
 ### Appearance 
 
-At run time, the appearance of the AutoComplete window can be customized by using the following properties.
+At runtime, the appearance of the AutoComplete window can be customized by using the following properties.
 
 <table>
 <tr>
@@ -155,19 +124,19 @@ Gets or sets the AutoCompletePopup Column Header style.</td></tr>
 
 
 
-//Specifies the header forecolor of the AutoComplete Popup
+//Specifies the header forecolor of the AutoComplete Popup.
 
 this.autoComplete1.HeaderForeColor = Color.Red;
 
-//Specifies the item forecolor of the AutoComplete Popup
+//Specifies the item forecolor of the AutoComplete Popup.
 
 this.autoComplete1.TextColor = Color.Blue;
 
-//Specifies the font of the ColumnHeader in AutoComplete Popup
+//Specifies the font of the ColumnHeader in AutoComplete Popup.
 
 this.autoComplete1.HeaderFont = new System.Drawing.Font("Segoe UI", 11.25F);
 
-//Specifies the font of the items in AutoComplete Popup
+//Specifies the font of the items in AutoComplete Popup.
 
 this.autoComplete1.ItemFont = new System.Drawing.Font("Mistral", 8.25F);
 
@@ -182,19 +151,19 @@ this.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable;
 
 
 
-'Specifies the header forecolor of the AutoComplete Popup
+'Specifies the header forecolor of the AutoComplete Popup.
 
 Me.autoComplete1.HeaderForeColor = Color.Red
 
-'Specifies the item forecolor of the AutoComplete Popup
+'Specifies the item forecolor of the AutoComplete Popup.
 
 Me.autoComplete1.TextColor = Color.Blue
 
-'Specifies the font of the ColumnHeader in AutoComplete Popup
+'Specifies the font of the ColumnHeader in AutoComplete Popup.
 
 Me.autoComplete1.HeaderFont = New System.Drawing.Font("Segoe UI", 11.25F)
 
-'Specifies the font of the items in AutoComplete Popup
+'Specifies the font of the items in AutoComplete Popup.
 
 Me.autoComplete1.ItemFont = New System.Drawing.Font("Mistral", 8.25F)
 
@@ -372,7 +341,7 @@ Me.autoComplete1.CaseSensitive = True
 
 ### Overriding Combo
 
-The Combobox drop down can be suppressed and overridden by the AutoComplete control using OverrideCombo property.
+The Combobox dropdown can be suppressed and overridden by the AutoComplete control by using the OverrideCombo property.
 
 
 
@@ -483,7 +452,7 @@ Me.autoComplete1.EnableDuplicateValues = True
 {% endseealso %}
 ## Size Settings
 
-The properties which can control the height and width of the AutoCompletePopup are as follows.
+The properties that can control the height and width of the AutoCompletePopup are as follows.
 
 <table>
 <tr>
@@ -493,7 +462,7 @@ Description</th></tr>
 <tr>
 <td>
 AdjustHeightToItemCount</td><td>
-Specifies if the height of the drop down should be adjusted automatically, based on the number of items.</td></tr>
+Specifies whether the height of the dropdown should be adjusted automatically, based on the number of items.</td></tr>
 <tr>
 <td>
 AutoPersistentDropDownSize</td><td>
@@ -501,11 +470,11 @@ The Dropdown size of Autocomplete control is automatically persistent when this 
 <tr>
 <td>
 PreferredHeight</td><td>
-Specifies preferred height for the drop down displayed by the AutoComplete control when AdjustHeightToItemCount property is false. Default value is 200.</td></tr>
+Specifies preferred height for the dropdown displayed by the AutoComplete control when AdjustHeightToItemCount property is false. Default value is 200.</td></tr>
 <tr>
 <td>
 PreferredWidth</td><td>
-Specifies preferred width for the drop down displayed by the AutoComplete control when AdjustHeightToItemCount property is false. Default value is -1.</td></tr>
+Specifies preferred width for the dropdown displayed by the AutoComplete control when AdjustHeightToItemCount property is false. Default value is -1.</td></tr>
 </table>
 
 

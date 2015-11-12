@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to implement an AutoComplete Control in an User Control | WindowsForms | Syncfusion
-description: How to implement an AutoComplete Control in an User Control
+title: How to implement AutoComplete control in a User control | WindowsForms | Syncfusion
+description: How to implement AutoComplete control in a User control
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 
 
-# How to implement an AutoComplete Control in an User Control?
+# How to implement AutoComplete control in a User control?
 
-AutoComplete control can be used in an UserControl by setting the parent form of the User Control to the parent form property of the AutoComplete Control. 
+AutoComplete control can be used in a User control by setting the parent form of the User Control to the parent form property of the AutoComplete control. 
 
 
 

@@ -12,9 +12,9 @@ documentation: ug
 
 # How to implement AutoComplete with RichTextBox control?
 
-Follow the below steps to implement AutoComplete feature with RichTextBox control.
+Follow the given steps to implement AutoComplete feature with RichTextBox control.
 
-1. Implement the IEditControlsEmbed interface in a RichTextBox class which, will enable the AutoComplete functionality for the RichTextBox control.
+1. Implement the IEditControlsEmbed interface in a RichTextBox class that enables the AutoComplete functionality for the RichTextBox control.
 
    ~~~ cs
 
@@ -98,8 +98,8 @@ Follow the below steps to implement AutoComplete feature with RichTextBox contro
    ~~~
    {:.prettyprint }
 
-3. The AutoComplete control can take an external data source (any data source that implements IList or IListSource) for its history list. Here we have set a StringCollection as the DataSource.
-4. When this property is set, the AutoComplete control will initialize itself with the data source and use that as the basis for its matching routines. For example, if you have a DataSet with a list of names of the States in the US and if you specify that as the DataSource, then the AutoComplete control will display all the matches from within these names when the user types in the target edit control.
+3. The AutoComplete control can take an external data source, any data source that implements IList or IListSource, for its history list. Set here is a StringCollection as the DataSource.
+4. When this property is set, the AutoComplete control initializes itself with the data source and use that as the basis for its matching routines. For example, when you have a DataSet with a list of names of the states in the US and you specify that as the DataSource, then the AutoComplete control displays all the matches from within these names when you type in the target edit control.
 
    ~~~ cs
 
@@ -139,8 +139,8 @@ Follow the below steps to implement AutoComplete feature with RichTextBox contro
    ~~~
    {:.prettyprint }
 
-5. Set the AutoCompleteonautoComplete1 property in the properties page to either AutoSuggest, AutoAppend or Both. 
-6. SetAutoComplete is the extended property for the AutoComplete property which, will be called by the framework when the AutoComplete property is set on any control. When using the AutoComplete control programmatically, you need to use this method to add and remove auto completion for the RichTextBox control.
+5. Set the AutoCompleteonautoComplete1 property in the properties page to either AutoSuggest, AutoAppend or both. 
+6. SetAutoComplete is the extended property for the AutoComplete property, that is called by the framework when the AutoComplete property is set on any control. When using the AutoComplete control programmatically, you can use this method to add and remove auto completion for the RichTextBox control.
 
    ~~~ cs
 
@@ -160,4 +160,4 @@ Follow the below steps to implement AutoComplete feature with RichTextBox contro
    ~~~
    {:.prettyprint }
 
-7. The RichTextBox will be enabled with the AutoComplete functionality.
+7. The RichTextBox is enabled with the AutoComplete functionality.

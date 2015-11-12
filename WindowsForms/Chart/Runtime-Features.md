@@ -177,7 +177,7 @@ A sample which demonstrates the zooming and scrolling features is available in t
 
 {% seealso %}
 
-[How to hide the Chart ZoomButton](/windowsforms/chart/faq/How-to-hide-the-Chart-ZoomButton")
+[How to hide the Chart ZoomButton](/windowsforms/chart/faq/How-to-hide-the-Chart-ZoomButton)
 
 {% endseealso %}
 

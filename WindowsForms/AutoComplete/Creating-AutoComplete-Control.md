@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Creating AutoComplete Control | WindowsForms | Syncfusion
-description: Creating AutoComplete Control
+title: Create an AutoComplete control | WindowsForms | Syncfusion
+description: Create an AutoComplete control
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
 
-# Creating AutoComplete Control
+# Create an AutoComplete control
 
-This section will guide you to implement a simple AutoComplete control with a TextBox via designer and programmatically.
+This section helps you implement a simple AutoComplete control with a TextBox via designer and programmatically.
 
 ## Through Designer
 
-This tutorial illustrates the usage of the AutoComplete control for TextBox, without any external data source. 
+This section explains the usage of the AutoComplete control for TextBox, without any external data source. 
 
-1. Create a new Windows Forms application and open the main form for the application in the designer. Add the Syncfusion controls to the VS .NET toolbox, if you have not done so already. Drag-and-drop an AutoComplete control onto the form.
+1. Create a new Windows Forms application and open the main form for the application in the Designer. Add the Syncfusion controls to the VS .NET toolbox, if you have not done so already. Drag-and-drop an AutoComplete control onto the form.
 
    ![](AutoComplete-Controls-Images/Overview_img6.jpeg)
 
 
 
-2. The AutoComplete control will appear as a component in the component tray of the design environment. Similarly add aText box, two labels and a button to make the form interactive. 
+2. The AutoComplete control appears as a component in the component tray of the design environment. Similarly add a Textbox, two labels and a button to make the form interactive. 
 
    ![](AutoComplete-Controls-Images/Overview_img7.jpeg)
 
@@ -34,7 +34,7 @@ This tutorial illustrates the usage of the AutoComplete control for TextBox, wit
 
 
 
-4. Set AutoComplete.AutoAddItem property to true. Run the application, type any text in the textbox and hit Enter to save the entry. Select the text, delete it and then retype the first letter of the text you saved. You should see autocompletion of the letter, as shown below.
+4. Set AutoComplete.AutoAddItem property to "True". Run the application, type any text in the textbox and hit Enter to save the entry. Select the text, delete it and then retype the first letter of the text you saved. You should see autocompletion of the letter, as shown here.
 
 N> The text entered can be saved only when AutoAddItem property is set to True.
 
@@ -42,13 +42,13 @@ N> The text entered can be saved only when AutoAddItem property is set to True.
 
 
 
-N> We can also add a list of autocomplete items through designer, which can used as a source for AutoComplete control. SeeSee _Source for AutoComplete Control_ topic for details.
+N> You can also add a list of AutoComplete items through designer, that can used as a source for AutoComplete control. SeeSee _Source for AutoComplete Control_ topic for details.
 
 
 
 ## Through Code
 
- This section will guide you, to programmatically add, and associate an AutoComplete control to a textbox.
+ This section explains to you how you can programmatically add, and associate an AutoComplete control to a textbox.
 
 5. Include the required namespace.
 
@@ -62,7 +62,7 @@ N> We can also add a list of autocomplete items through designer, which can used
    ~~~
    {:.prettyprint }
 
-6. Create an instances of AutoComplete and TextBox controls.
+6. Create an instance of AutoComplete and TextBox controls.
 
    ~~~ cs
    private Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1;
