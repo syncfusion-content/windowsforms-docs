@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Welcome to Syncfusion Essential Windows Forms | Complete guide for Syncfusion Essential Windows Forms
+title: Overview of Syncfusion Essential Studio Windows Forms products
 description: Overview
 platform: WindowsForms
 control: Introduction
