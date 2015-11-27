@@ -11,7 +11,6 @@ documentation: ug
 
 We can get or set the SuperToolTip programmatically using the below two methods.
 
-_Table 807: Method Table_
 
 <table>
 <tr>
