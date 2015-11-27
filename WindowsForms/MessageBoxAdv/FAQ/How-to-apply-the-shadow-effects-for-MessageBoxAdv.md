@@ -13,7 +13,7 @@ In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShad
 
 {% highlight c# %}
 
- //To set the shadow effect of the MessageBoxAdv
+ //To set the shadow effect
 
  MessageBoxAdv.DropShadow = true;
 
@@ -21,7 +21,7 @@ In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShad
 
 {% highlight vbnet %}
 
- 'To set the shadow effect of the MessageBoxAdv
+ 'To set the shadow effect 
 
  MessageBoxAdv.DropShadow = True
 
