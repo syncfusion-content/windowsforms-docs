@@ -218,7 +218,6 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12Colo
 
 Rendering mode of the ContextMenuStripEx can be controlled using the below property.
 
-_Table_ _784_: _Property Table_
 
 <table>
 <tr>
@@ -298,7 +297,6 @@ N> The font face of the Caption alone changes based on this Font property.
 
 Shadow for the context menu drop down is controlled using the below property.
 
-_Table_ _785_: _Property Table_
 
 <table>
 <tr>
@@ -334,7 +332,6 @@ The below image displays a shadow for the context menu strip.
 
 We can set margins for the context menu using the below properties.
 
-_Table_ _786_: _Property Table_
 
 <table>
 <tr>
@@ -408,7 +405,6 @@ Me.contextMenuStripEx1.ShowItemToolTips = True
 
 AutoClose property of the ContextMenuStrip control, when set to true, will close the context menu dropdown when the user clicks any item. If this is not enabled, the menu items will not be closed even after user actions.
 
-_Table_ _787_: _Property Table_
 
 <table>
 <tr>
@@ -461,7 +457,6 @@ The following are the ToolStripItems which can be added as menu items to the Con
 
 The ToolStripMenuItem supports all the general properties of a ToolStripItems. This section will walk you through the unique properties with their description for the ToolStripMenuItem.
 
-_Table_ _788_: _Property Table_
 
 <table>
 <tr>
@@ -543,7 +538,6 @@ Me.hyperlinkToolStripMenuItem.ShortcutKeys = DirectCast(((System.Windows.Forms.K
 
 This section lists the unique properties of a ToolStripComboBox item and their description.
 
-_Table_ _789_: _Property Table_
 
 <table>
 <tr>
@@ -623,7 +617,6 @@ Me.toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSour
 
 This section lists the unique properties of a ToolStripSeparator and their description.
 
-_Table_ _790_: _Property Table_
 
 <table>
 <tr>
@@ -652,7 +645,6 @@ Sets the visibility of the separator.</td></tr>
 
 This section lists the unique properties of a ToolStripTextBox item and their description.
 
-_Table_ _791_: _Property Table_
 
 <table>
 <tr>

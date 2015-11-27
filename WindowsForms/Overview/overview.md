@@ -383,7 +383,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/contextmenustripex">ContextMenuStripEx</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/contextmenustrioex/contextmenustripex">ContextMenuStripEx</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -415,7 +415,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href=" http://help.syncfusion.com/windowsforms/ribbonadv/trackbarex">TrackBarEx</a><br/><br/></td></tr>
+<a href=" http://help.syncfusion.com/windowsforms/trackbarex/trackbarex">TrackBarEx</a><br/><br/></td></tr>
 <tr>
 <td>
 NOTIFICATION<br/><br/></td><td>
@@ -439,7 +439,7 @@ NOTIFICATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/statusstripex">StatusStripEx</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/statusstripex/statusstripex">StatusStripEx</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -447,11 +447,11 @@ NOTIFICATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/supertooltip">SuperToolTip</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/supertooltip/supertooltip">SuperToolTip</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/messageboxadv">MessageBoxAdv</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/messageboxadv/messageboxadv">MessageBoxAdv</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -475,7 +475,7 @@ MISCELLANEOUS<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href=" http://help.syncfusion.com/windowsforms/ribbonadv/scrollersframe">ScrollersFrame</a><br/><br/></td></tr>
+<a href=" http://help.syncfusion.com/windowsforms/scrollersframe/scrollersframe">ScrollersFrame</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
