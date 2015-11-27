@@ -89,7 +89,6 @@ Me.superToolTip1.SetToolTip(this.toolStripTabItem1, toolTipInfo1)
 
 The appearance of the Super ToolTip can be customized using the below properties. This properties can be edited during design time using ToolTip Editor.
 
-_Table_ _796_: _Property Table_
 
 <table>
 <tr>
@@ -148,7 +147,6 @@ toolTipInfo2.Separator = True
 
 The following properties control the behavior of the SuperToolTip control.
 
-_Table_ _797_: _Property Table_
 
 <table>
 <tr>
@@ -248,7 +246,6 @@ N> All these properties are applicable to all the three ToolTipItems.
 
 ### Image Settings
 
-_Table_ _798_: _Property Table_
 
 <table>
 <tr>
@@ -301,7 +298,6 @@ toolTipInfo1.Footer.ImageScalingSize = New System.Drawing.Size(16, 16)
 
 ### Foreground Settings
 
-_Table_ _799_: _Property Table_
 
 <table>
 <tr>
@@ -338,7 +334,6 @@ toolTipInfo1.Header.ForeColor = System.Drawing.Color.Black
 
 ### Appearance and Text Settings
 
-_Table_ _800_: _Property Table_
 
 <table>
 <tr>
@@ -445,7 +440,6 @@ PopupToolTip event of the SuperToolTip control can be handled to set the tooltip
 
 Here, the parameter "rc" will pass the (x, y) coordinates for each single object that has been specified through the parameter "component".
 
-_Table_ _801_: _Property Table_
 
 <table>
 <tr>
