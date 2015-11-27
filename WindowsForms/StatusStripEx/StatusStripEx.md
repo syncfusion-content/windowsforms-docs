@@ -160,7 +160,6 @@ The options are,
 
 The StatusStripEx control has a sizing grip at its bottom right corner. This sizing grip can be shown or hidden using SizingGrip property. The below properties controls the appearance of the sizing grip.
 
-_Table_ _781_: _Property Table_
 
 <table>
 <tr>
