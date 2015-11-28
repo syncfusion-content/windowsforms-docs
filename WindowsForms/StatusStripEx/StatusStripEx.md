@@ -108,7 +108,7 @@ Me.statusStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.to
 
 Me.Controls.Add(Me.statusStripEx1)
 
-Docking the StatusStripEx to Bottom'
+'Docking the StatusStripEx to Bottom'
 
 Me.statusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
 
