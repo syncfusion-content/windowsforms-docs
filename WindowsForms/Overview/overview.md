@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Overview of Syncfusion Essential Studio Windows Forms products
 description: Overview
@@ -383,7 +383,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/contextmenustrioex/contextmenustripex">ContextMenuStripEx</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/contextmenustripex/contextmenustripex">ContextMenuStripEx</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
