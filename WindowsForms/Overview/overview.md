@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Overview of Syncfusion Essential Studio Windows Forms products
 description: Overview
@@ -83,15 +83,15 @@ LAYOUT<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/overview">RibbonControlAdv</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/ribboncontroladv/overview">RibbonControlAdv</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/ribbon-merging">RibbonPanelMergeContainer</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-merging">RibbonPanelMergeContainer</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/ribbon-form">RibbonForm</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-form">RibbonForm</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -379,7 +379,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href=" http://help.syncfusion.com/windowsforms/ribbonadv/office-2010-style-ribbon">BackStageView</a><br/><br/></td></tr>
+<a href=" http://help.syncfusion.com/windowsforms/ribboncontroladv/office-2010-style-ribbon">BackStageView</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -387,7 +387,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href=" http://help.syncfusion.com/windowsforms/ribbonadv/minitoolbar ">MiniToolBar</a><br/><br/></td></tr>
+<a href=" http://help.syncfusion.com/windowsforms/ribboncontroladv/minitoolbar ">MiniToolBar</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -407,11 +407,11 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href=" http://help.syncfusion.com/windowsforms/ribbonadv/super-accelerator">SuperAccelerator</a><br/><br/></td></tr>
+<a href=" http://help.syncfusion.com/windowsforms/ribboncontroladv/super-accelerator">SuperAccelerator</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#toolstripex">ToolStripEx</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-control-items#toolstripex">ToolStripEx</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
