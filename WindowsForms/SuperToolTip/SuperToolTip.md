@@ -78,7 +78,7 @@ toolTipInfo1.Header.TextAlign = System.Drawing.ContentAlignment.TopCenter
 
 
 
-//Associating SuperToolTip for ToolStripTabItem
+'Associating SuperToolTip for ToolStripTabItem
 
 Me.superToolTip1.SetToolTip(this.toolStripTabItem1, toolTipInfo1)
 
@@ -207,7 +207,7 @@ Me.superToolTip1.ToolTipDuration = 3
 
 Me.superToolTip1.UseFading = Syncfusion.Windows.Forms.Tools.SuperToolTip.FadingType.System
 
-this.superToolTip1.RightToLeft = RightToLeft.Yes
+Me.superToolTip1.RightToLeft = RightToLeft.Yes
 
 Me.treeViewAdv1.ShowToolTip = True
 
