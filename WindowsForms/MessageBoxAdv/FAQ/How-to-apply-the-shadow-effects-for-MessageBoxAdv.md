@@ -28,7 +28,7 @@ In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShad
 {% endhighlight  %}
 
 
-N > The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect.
+N> The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect.
 
 
 
