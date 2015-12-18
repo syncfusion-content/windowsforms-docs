@@ -567,7 +567,7 @@ Me.toolStripButton1.ToolTipText = "Open"
 
 {% seealso %}
 
-[ToolStripItems](/windowsforms/ribbonadv/ribbon-control-items.html#toolstripitems)
+[ToolStripItems](/windowsforms/ribboncontroladv/ribbon-control-items.html#toolstripitems)
 
 {% endseealso %}
 
@@ -1148,7 +1148,7 @@ A ribbon panel is automatically added when you add a ToolStripTabItem. ToolStrip
 
 {% seealso %}
                                                                           
-[How to prevent the RibbonPanel of the RibbonControlAdv from collapsing](/windowsforms/ribbonadv/faq/ribbon-panel/how-to-prevent-the-ribbonpanel-of-the-ribboncontro.html)
+[How to prevent the RibbonPanel of the RibbonControlAdv from collapsing](/windowsforms/ribboncontroladv/faq/ribbon-panel/how-to-prevent-the-ribbonpanel-of-the-ribboncontro.html)
 
 {% endseealso %}
 
@@ -4279,7 +4279,7 @@ End Sub
 
 {% seealso %}
 
-[ItemClicked Event](/windowsforms/ribbonadv/minitoolbar#itemclicked-event)
+[ItemClicked Event](/windowsforms/ribboncontroladv/minitoolbar#itemclicked-event)
 
 {% endseealso %}
 
@@ -4370,11 +4370,11 @@ Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 {% seealso %}
 
 
-[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog.html)
+[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribboncontroladv/faq/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog.html)
 
-[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo.html)
+[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribboncontroladv/faq/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo.html)
 
-[How to set the description on RibbonControlAdv](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol.html)
+[How to set the description on RibbonControlAdv](/windowsforms/ribboncontroladv/faq/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol.html)
 
 {% endseealso %}
 
@@ -4457,11 +4457,11 @@ case ToolsResourceIdentifiers.CustomizationLabel:
 
 [Placing QAT](#placing-qat)
 
-[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog.html)
+[How to add a component in the QuickAccessMenu programmatically](/windowsforms/ribboncontroladv/faq/quick-access-toolbar/how-to-add-a-component-in-the-quickaccessmenu-prog.html)
 
-[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo.html)
+[How to show a Customize Quick Access Toolbar programmatically at run time](/windowsforms/ribboncontroladv/faq/quick-access-toolbar/how-to-show-a-customize-quick-access-toolbar-dialo.html)
 
-[How to set the description on RibbonControlAdv](/windowsforms/ribbonadv/faq/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol.html)
+[How to set the description on RibbonControlAdv](/windowsforms/ribboncontroladv/faq/quick-access-toolbar/how-to-get-or-set-the-description-on-ribboncontrol.html)
 
 {% endseealso %}
 

@@ -787,7 +787,7 @@ Console.Write("Serialized controls :" + Me.dockingManager1.GetSerializedControls
 
 {% seealso %}
 
-[ProvidePersistenceID Event](/windowsforms/dockingmanager/Docking-Events.html#providepersistenceid-event), [How to avoid flickering while loading dock state?](/windowsforms/dockingmanager//FrequentlyAskedQuestions/Dock-State.html#how-to-avoid-flickering-while-loading-dock-state), 
+[ProvidePersistenceID Event](/windowsforms/dockingmanager/Docking-Events.html#providepersistenceid-event), [How to avoid flickering while loading dock state?](/windowsforms/dockingmanager/faq/Dock-State.html#how-to-avoid-flickering-while-loading-dock-state), 
 
 
 How to serialize or deserialize the docking state for a docked control on loading the application?
@@ -983,7 +983,7 @@ Me.dockingManager1.Office2007MdiColorScheme = Office2007Theme.Blue
 
 {% seealso %}
 
-[How to avoid flickering while creating MDI child form?](/windowsforms/dockingmanager/FrequentlyAskedQuestions/MDIChild.html#how-to-avoid-flickering-while-creating-mdi-child-form),[How to detect whether a particular control is in MDI mode or not?](/windowsforms/dockingmanager/FrequentlyAskedQuestions/MDIChild.html#how-to-detect-whether-a-particular-control-is-in-mdi-mode-or-not)
+[How to avoid flickering while creating MDI child form?](/windowsforms/dockingmanager/faq/MDIChild.html#how-to-avoid-flickering-while-creating-mdi-child-form),[How to detect whether a particular control is in MDI mode or not?](/windowsforms/dockingmanager/faq/MDIChild.html#how-to-detect-whether-a-particular-control-is-in-mdi-mode-or-not)
 
 {% endseealso %}
 

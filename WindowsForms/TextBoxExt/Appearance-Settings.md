@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance Settings
 
-[Background Settings](/windowsforms/numericupdownext/border-settings)
+## Background Settings
 
 The background settings of the TextBoxExt control are discussed below.
 
-## Background Color
+### Background Color
 
 The background color of the control can be set using the property given below.
 
@@ -51,7 +51,7 @@ Me.textBoxExt1.BackColor = System.Drawing.Color.Moccasin
 
 
 
-[Foreground Settings](/windowsforms/numericupdownext/foreground-settings)
+## Foreground Settings
 
 The foreground settings of the TextBoxExt control are discussed below.
 
