@@ -181,11 +181,6 @@ SetMaintainAspectRatio</td><td>
 Sets the value for maintaining aspect ratio based on the control's preferred size.</td></tr>
 </table>
 
-{% seealso %}
-
-[Card Layout - Configuring Child Controls](t#configuring-child-controls)
-
-{% endseealso %}
 
 ## Configuring Child Controls
 
