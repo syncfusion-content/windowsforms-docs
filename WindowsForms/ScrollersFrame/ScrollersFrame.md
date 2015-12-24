@@ -72,19 +72,10 @@ The below images illustrates the controls that are added, before and after the s
 ![](ScrollersFrame_images/ScrollersFrame_img4.jpeg)
 
 
-{% seealso %}
-
-[Visual Styles](/windowsforms/ribbonadv/ScrollersFrame.html#visual-styles)
-
-{% endseealso %}
-
-
-
 ## Scroll Settings in ScrollersFrame
 
 The horizontal and vertical scrollers has Value property, which represents the current position of the scrollbox on the scroll bar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
 
-_Table_ _782_: _Property Table_
 
 <table>
 <tr>
@@ -123,7 +114,6 @@ Me.scrollersFrame2.HorizontalSmallChange  = 25
 
 Visual Styles for the ScrollersFrame Control can be edited through VisualStyle property.	
 
-_Table_ _783_: _Property Table_
 
 <table>
 <tr>
@@ -198,10 +188,3 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightSkyBlue)
 {% endhighlight %}
 
 ![](ScrollersFrame_images/ScrollersFrame_img8.jpeg)
-
-
-{% seealso %}
-
-[Adding Controls to the ScrollBar](/windowsforms/ribbonadv/scrollersframe.html#adding-controls-to-the-scrollbar)
-
-{% endseealso %}

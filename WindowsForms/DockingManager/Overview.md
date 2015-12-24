@@ -77,7 +77,7 @@ The [DockToFill](/windowsforms/dockingmanager/special-features#docktofill-freeze
 
 * Caption Buttons
 
-The docking manager allows the users to set the visibility of the close button, Maximize button, Minimize button and Menu button on the title bar of the docked control. See [Caption Buttons](/windowsforms/DockingPackage/Caption-Bar.html#caption-buttons).
+The docking manager allows the users to set the visibility of the close button, Maximize button, Minimize button and Menu button on the title bar of the docked control. See [Caption Buttons](/windowsforms/dockingmanager/caption-bar#caption-buttons).
 
 * Custom Caption Button
 

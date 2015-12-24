@@ -50,7 +50,6 @@ Various Features and Customization options are discussed in the following topics
 
 The properties which controls the size of various components of the TrackBarEx are as follows.
 
-_Table_ _792_: _Property Table_
 
 <table>
 <tr>
@@ -79,7 +78,6 @@ Specifies the height of the channel. Default value is 4.</td></tr>
 
 The below properties will let you control the appearance of the Increase, Decrease and slider buttons.
 
-_Table_ _793_: _Property Table_
 
 <table>
 <tr>
@@ -214,7 +212,6 @@ Me.trackBarEx1.Orientation = Orientation.Horizontal
 
 The TrackBarEx control slides between the minimum and maximum values, which are specified in Minimum and Maximum properties. The properties with description are listed in the below table.
 
-_Table_ _794_: _Property Table_
 
 <table>
 <tr>
@@ -282,7 +279,6 @@ Me.trackBarEx1.TimerInterval = 50
 
 Following are the methods for the TrackBarEx control which gives the respective results based on SmallChange and LargeChange properties.
 
-_Table_ _795_: _Property Table_
 
 <table>
 <tr>

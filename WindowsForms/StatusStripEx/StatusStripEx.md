@@ -108,7 +108,7 @@ Me.statusStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.to
 
 Me.Controls.Add(Me.statusStripEx1)
 
-Docking the StatusStripEx to Bottom'
+'Docking the StatusStripEx to Bottom'
 
 Me.statusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
 
@@ -146,21 +146,10 @@ The options are,
 
 * Add StatusStripButton - Adds a Button item.
 
-{% seealso %}
-
-[Creating a StatusStripEx](/windowsforms/ribbonadv/statusstripex.html#creating-a-statusstripex)
-
-[ColorSchemes for StatusStripEx](/windowsforms/ribbonadv/statusstripex.html#colorschemes-for-statusstripex)
-
-{% endseealso %}
-
-
-
 ## SizingGrip Settings
 
 The StatusStripEx control has a sizing grip at its bottom right corner. This sizing grip can be shown or hidden using SizingGrip property. The below properties controls the appearance of the sizing grip.
 
-_Table_ _781_: _Property Table_
 
 <table>
 <tr>
@@ -249,18 +238,6 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 {% endhighlight %}
 
 ![](StatusStripEx_images/StatusStripEx_img10.jpeg)
-
-
-{% seealso %}
-
-[Creating a StatusStripEx](/windowsforms/ribbonadv/statusstripex.html#creating-a-statusstripex)
-
-[Smart Tag Options](/windowsforms/ribbonadv/statusstripex.html#smart-tag-options)
-
-[SizingGrip Settings](/windowsforms/ribbonadv/statusstripex.html#sizinggrip-settings)
-
-{% endseealso %}
-
 
 
 ## Custom Context Menu

@@ -133,7 +133,7 @@ The following are the various HTML elements supported by Essential HTMLUI.
 {{'[I Element](#i---italics-element)'| markdownify}}</td><td>
 {{'[IMG Element](#img---image-element)'| markdownify}}</td><td>
 {{'[Input Element](#input-element)'| markdownify}}</td><td>
-{{'[LI Element](li---list-element)'| markdownify}}</td><td>
+{{'[LI Element](#li---list-element)'| markdownify}}</td><td>
 {{'[Link Element](#link-element)'| markdownify}}</td><td>
 {{'[OL Element](#ol---ordered-list-element)'| markdownify}}</td><td>
 {{'[P Element](#p---paragraph-element)'| markdownify}}</td></tr>

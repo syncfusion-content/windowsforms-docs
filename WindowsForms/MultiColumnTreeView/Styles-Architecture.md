@@ -625,6 +625,6 @@ User can add and define a SubItem style using the BaseStyles Collection Editor a
 
 {% seealso %} 
 
-[Adding Multiple Columns and SubItems](/windowsforms/multicolumntreeview/subitems#multicolumntreeviewappearance)
+[Adding Multiple Columns and SubItems](/windowsforms/multicolumntreeview/adding-multiple-columns-and-subitems)
 
 {% endseealso %}
