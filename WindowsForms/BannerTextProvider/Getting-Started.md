@@ -119,8 +119,8 @@ Me.bannerTextProvider1.SetBannerText(Me.comboBoxBarItem1, New Syncfusion.Windows
 N> BannerText feature can be made available for the following controls only.
 
 
-* [TextBoxBarItem](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#textboxbarItem) (XPMenus)
-* [ComboBoxBarItem](http://docs.syncfusion.com/windowsforms/popup-menu/popup-menucontext-menuxpmenu-bars#comboboxbarItem) (XPMenus)
+* [TextBoxBarItem](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
+* [ComboBoxBarItem](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
 * [TextBox](http://docs.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#toolstripex) (ToolStripEx)
 * [ComboBox](http://docs.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#combobox ) (ToolStripEx)
 * [ComboBoxEx](http://docs.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#comboboxex)

@@ -75,7 +75,4 @@ End If
 
 'Code
 {% endhighlight  %}
-Refer to the following sample file for more details:
-
-[http://files2.syncfusion.com/dtSupport/DirectTrac/98946/GGCSortingFormat345822923.zip](http://files2.syncfusion.com/dtSupport/DirectTrac/98946/GGCSortingFormat345822923.zip)
 

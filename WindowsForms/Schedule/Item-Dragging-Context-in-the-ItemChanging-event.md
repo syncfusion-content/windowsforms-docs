@@ -49,7 +49,7 @@ Occurs after an IScheduleAppointment is modified</td></tr>
 
 You can get the schedule sample from the following online location,
 
-[http://asp.syncfusion.com/sfwinrepsamplebrowser/8.4.0.10/Windows/Schedule.Windows/Samples/2.0/Schedule%20Samples/Scheduler%20With%20Recurrence%20Demo/Sample.aspx?args=0](http://asp.syncfusion.com/sfwinrepsamplebrowser/8.4.0.10/Windows/Schedule.Windows/Samples/2.0/Schedule%20Samples/Scheduler%20With%20Recurrence%20Demo/Sample.aspx?args=0)
+[http://samples.syncfusion.com/windowsforms](http://samples.syncfusion.com/windowsforms)
 
 ### Adding this support to an Application
 

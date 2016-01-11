@@ -387,7 +387,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href=" http://help.syncfusion.com/windowsforms/ribboncontroladv/minitoolbar ">MiniToolBar</a><br/><br/></td></tr>
+<a href=" http://help.syncfusion.com/windowsforms/ribboncontroladv/minitoolbar">MiniToolBar</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
