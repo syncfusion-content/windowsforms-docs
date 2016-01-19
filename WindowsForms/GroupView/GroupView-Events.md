@@ -37,6 +37,10 @@ This event occurs when a GroupView Item in the GroupView control is reordered.</
 <td>
 ShowContextMenu</td><td>
 This event occurs when the right mouse button is clicked over the GroupView control.</td></tr>
+<tr>
+<td>
+GroupViewItemDoubleClick</td><td>
+This event occurs when the GroupViewItem is double clicked.</td></tr>
 </table>
 
 ## GroupViewItemHighlighted Event
@@ -454,4 +458,46 @@ End Sub
 {% endhighlight %}
 
 ![](Overview_images/Overview_img89.jpeg) 
+
+## GroupViewItemDoubleClick Event
+
+It occurs when a GroupView Item in the GroupView control is double clicked.
+
+The event handler receives an argument of type GroupViewItemDoubleClickArgs.
+
+<table>
+<tr>
+<th>
+Members</th><th>
+Description</th></tr>
+<tr>
+<td>
+SelectedItem</td><td>
+Gets/Sets the currently selected GroupView item</td></tr>
+</table>
+
+{% highlight c# %}
+
+//This event occurs when the GroupView item is double clicked.
+
+void groupView1_GroupViewItemDoubleClick(Syncfusion.Windows.Forms.Tools.GroupView sender, Syncfusion.Windows.Forms.Tools.GroupViewItemDoubleClickEventArgs e)
+
+{
+	MessageBox.Show(e.SelectedItem.Text + " is double clicked");
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'This event occurs when the GroupView item is double clicked.
+
+Private Sub groupView1_GroupViewItemDoubleClick(ByVal sender As Syncfusion.Windows.Forms.Tools.GroupView, ByVal e As Syncfusion.Windows.Forms.Tools.GroupViewItemDoubleClickEventArgs) 
+
+	 MessageBox.Show(e.SelectedItem.Text & " is double clicked")
+     
+End Sub
+
+{% endhighlight %}
+
 

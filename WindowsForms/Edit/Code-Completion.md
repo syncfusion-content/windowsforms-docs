@@ -86,6 +86,46 @@ End Sub
 
 {% endhighlight %}
 
+### ContextChoice customization
+
+We can customize the Context Choice font, fore color and back color by using the following code snippet.
+
+
+{% highlight c# %}
+
+// To set the context choice font.
+
+ this.editControl1.ContextChoiceFont = new Font("Monotype Corsiva", 12F, FontStyle.Bold);
+ 
+ // To set the Context Choice back color.
+ 
+ this.editControl1.ContextChoiceBackColor = Color.DodgerBlue;
+ 
+ // To set the Context Choice fore color.
+ 
+ this.editControl1.ContextChoiceForeColor = Color.White;
+ 
+ 
+{% endhighlight %}
+
+{% highlight vb.net %}
+
+' To set the context choice font.
+
+ Me.editControl1.ContextChoiceFont = New Font("Monotype Corsiva", 12F, FontStyle.Bold)
+ 
+ ' To set the Context Choice back color.
+ 
+ Me.editControl1.ContextChoiceBackColor = Color.DodgerBlue
+ 
+ ' To set the Context Choice fore color.
+ 
+ Me.editControl1.ContextChoiceForeColor = Color.White
+ 
+
+{% endhighlight %}
+
+![](Code-Completion_images/custom.jpeg)
 
 ## AutoReplace Triggers
 

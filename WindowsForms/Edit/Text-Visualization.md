@@ -4009,3 +4009,48 @@ Me.editControl1.ResetSelection()
 
 {% endhighlight %}
 
+## Selection Modes
+
+Essential Edit comes with VS like selecting option. It is possible to select certain rectangular portion of the text instead of the whole line with ALT key pressed. Selection includes all the characters captured within the rectangle, defined by the first character and the last character of the selection. Anything typed or pasted into the selected area is inserted at the same point, on each line. There are two types of selection mode.
+
+* Default 
+
+In Default selection, whole line will be selected. If we enable the property EnableBlockSelection then ALT key rectangular selection can be performed.
+
+* Block
+
+In Block selection, by default rectangular selection will be performed irrespective of the EnableBlockSelection property.
+
+User can toggle between the Default and Block selection mode using the following
+
+code snippet.
+
+{% highlight c# %}
+
+//To Enable Block Selection mode.
+
+this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block;
+
+//To Enable Default mode.
+
+this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'To Enable Block Selection mode.
+
+Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block
+
+'To Enable Default mode.
+
+Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default
+
+{% endhighlight %}
+
+![](Text-Visualization_images/SelectionModes_img1.jpeg)
+
+![](Text-Visualization_images/SelectionModes_img2.png)
+
+
