@@ -702,12 +702,12 @@ this.radialGauge1.DisplayMember = [column name];
 
 ## Custom Renderer Support for Radial Gauge
 
-The appearance of the Radial Gauge is customized by using the IRadialGaugeRenderer. This interface provides few methods to control painting over the OuterArc, Needle, Major ticks, Minor ticks, Label, Ranges etc.
+The appearance of the Radial Gauge is customized by using the `IRadialGaugeRenderer`. This interface provides few methods to control painting over the OuterArc, Needle, Major ticks, Minor ticks, Label, Ranges etc.
 
 To customize the appearance,
 
-1. Create a new custom renderer class and implement each of the members defined in IRadialGaugeRenderer.
-2. Assign instance of your custom renderer to the Renderer property of Radial Gauge. By default, Radial Gauge is painted by using its default renderer. 
+1. Create a new custom renderer class and implement each of the members defined in `IRadialGaugeRenderer`.
+2. Assign instance of your custom renderer to the `Renderer` property of Radial Gauge. By default, Radial Gauge is painted by using its default renderer. 
 
 The following code demonstrates the same.
 
@@ -819,7 +819,7 @@ Me.RadialGauge1.NeedleCollection(0).Value = 5
 
 ### How to customize Radial Gauge appearance ?
 
-You can customize the appearance of the Radial Gauge by using the IRadialGaugeRenderer. 
+You can customize the appearance of the Radial Gauge by using the `IRadialGaugeRenderer`. 
 
 The following code example illustrates how to achieve customized Radial Gauge.
 
@@ -1495,7 +1495,7 @@ Public Class CustomRenderer
 
 ### How to customize the Start Angle and Sweep angle of the arc in Radial Gauge ?
 
-In Radial Gauge, the arc Start and Sweep can be customized using the StartAngle and SweepAngle property respectively.
+In Radial Gauge, the arc Start and Sweep can be customized using the `StartAngle` and `SweepAngle` property respectively.
 
 The following code snippet illustrates the same.
 

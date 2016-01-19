@@ -503,12 +503,12 @@ this.linearGauge1.DataSource = dataTable;
 
 ## Custom Renderer Support for Linear Gauge
 
-The appearance of the Linear Gauge can be customized by using the Interface ILinearGaugeRenderer. This interface provides few methods to control painting over the Frame, Needle, Major ticks, Minor ticks, Pointers, Ranges etc.
+The appearance of the Linear Gauge can be customized by using the Interface `ILinearGaugeRenderer`. This interface provides few methods to control painting over the Frame, Needle, Major ticks, Minor ticks, Pointers, Ranges etc.
 
 To customize the appearance,
 
-1. Create a new custom renderer class and implement each of the members defined in ILinearGaugeRenderer.
-2. Assign instance of your custom renderer to the Renderer property of Linear Gauge. 
+1. Create a new custom renderer class and implement each of the members defined in `ILinearGaugeRenderer`.
+2. Assign instance of your custom renderer to the `Renderer` property of Linear Gauge. 
 
 Note: By default, Linear Gauge is painted by using its default renderer. 
 
@@ -536,7 +536,7 @@ linearGauge1.Renderer = custom
 
 ### How to customize Linear Gauge appearance ?
 
-You can customize the appearance of the Linear Gauge by using its interface named ILinearGaugeRenderer and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
+You can customize the appearance of the Linear Gauge by using its interface named `ILinearGaugeRenderer` and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
 
 {% tabs %}
 

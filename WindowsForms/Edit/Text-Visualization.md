@@ -4015,11 +4015,11 @@ Essential Edit comes with VS like selecting option. It is possible to select cer
 
 * Default 
 
-In Default selection, whole line will be selected. If we enable the property EnableBlockSelection then ALT key rectangular selection can be performed.
+In Default selection, whole line will be selected. If we enable the property `EnableBlockSelection` then ALT key rectangular selection can be performed.
 
 * Block
 
-In Block selection, by default rectangular selection will be performed irrespective of the EnableBlockSelection property.
+In Block selection, by default rectangular selection will be performed irrespective of the `EnableBlockSelection` property.
 
 User can toggle between the Default and Block selection mode using the following
 
