@@ -731,7 +731,7 @@ class CustomRenderer :ILinearGaugeRenderer
 
 {% endhighlight %}
 
-{ % highlight vbnet %}
+{% highlight vbnet %}
 
 Private custom1 As CustomRenderer  = New CustomRenderer(Me. linearGauge1)
 
