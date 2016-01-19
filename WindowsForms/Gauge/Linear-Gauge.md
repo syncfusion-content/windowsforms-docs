@@ -500,3 +500,415 @@ this.linearGauge1.DataSource = dataTable;
 
 
 {% endhighlight %}
+
+## Custom Renderer Support for Linear Gauge
+
+The appearance of the Linear Gauge can be customized by using the Interface `ILinearGaugeRenderer`. This interface provides few methods to control painting over the Frame, Needle, Major ticks, Minor ticks, Pointers, Ranges etc.
+
+To customize the appearance,
+
+1. Create a new custom renderer class and implement each of the members defined in `ILinearGaugeRenderer`.
+2. Assign instance of your custom renderer to the `Renderer` property of Linear Gauge. 
+
+Note: By default, Linear Gauge is painted by using its default renderer. 
+
+The following code demonstrates the same.
+
+{% highlight c# %}
+
+CustomRenderer custom1= new CustomRenderer(this.linearGauge1);
+
+linearGauge1.Renderer = custom;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Private custom1 As CustomRenderer  = New CustomRenderer(Me.linearGauge1)
+
+linearGauge1.Renderer = custom
+
+{% endhighlight %}
+
+![](Linear-Gauge_images/custom.jpeg)
+
+## Frequently Asked Questions
+
+### How to customize Linear Gauge appearance ?
+
+You can customize the appearance of the Linear Gauge by using its interface named `ILinearGaugeRenderer` and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+CustomRenderer custom1= new CustomRenderer(this.linearGauge1);
+
+linearGauge1.Renderer = custom;
+
+
+class CustomRenderer :ILinearGaugeRenderer
+    {
+        
+        /// </summary>
+        /// Gets the Linear gauge
+        /// </summary>
+        private LinearGauge m_LinearGauge;
+        /// <summary>
+        /// Gets/Sets the Tick Distance of the Linear gauge.
+        /// </summary>
+        private float majorTicksDistance;
+        /// <summary>
+        /// Calculates the Minor Ticks Pixels.
+        /// </summary>
+        private float m_minorTicksPixels;
+        /// <summary>
+        /// Start point of the frame
+        /// </summary>
+        private int startpoint;
+        /// <summary>
+        /// Counts the Major ticks count for the given range.
+        /// </summary>
+        private int majorTicksCount;
+
+        /// <summary>
+        ///  Gets the Radial gauge
+        /// </summary>
+        internal LinearGauge LinearGauge
+        {
+            get
+            {
+                return m_LinearGauge;
+            }
+        }
+
+        public CustomRenderer(LinearGauge linearGauge)
+        {
+            m_LinearGauge = linearGauge;
+            majorTicksDistance = 0;
+            m_minorTicksPixels = 0;
+            startpoint = 25;
+           
+        }
+
+        public void DrawFrame(System.Drawing.Graphics Graphics)
+        {
+        }
+
+        public void DrawLines(System.Drawing.Graphics Graphics)
+        {
+            Pen majorTickPen = new Pen(LinearGauge.MajorTickMarkColor);
+            Pen minorTickPen = new Pen(LinearGauge.MinorTickMarkColor);
+            Brush brush = new SolidBrush(LinearGauge.ForeColor);
+            StringFormat sf = new StringFormat();
+            Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            majorTicksDistance = ((LinearGauge.MaximumValue - LinearGauge.MinimumValue) / LinearGauge.MajorDifference);
+            majorTicksCount = ((int)(LinearGauge.MaximumValue - LinearGauge.MinimumValue) / (LinearGauge.MajorDifference)) + 1;
+            double majortickValue = LinearGauge.MinimumValue;
+            float tickPosition = 25f;
+            float temp1 = 0;
+            float s = (LinearGauge.MaximumValue - LinearGauge.MinimumValue) % LinearGauge.MajorDifference;
+            sf.Alignment = StringAlignment.Center;
+            sf.LineAlignment = StringAlignment.Center;
+            float minortickValue = 0;
+            float tickPositionminor = 0;
+            GraphicsPath path = new GraphicsPath();
+            int minorcount = LinearGauge.MinorTickCount;
+            m_minorTicksPixels = ((this.LinearGauge.Height - 50) / majorTicksDistance);
+            int x = this.LinearGauge.Width / 2;
+            temp1 = 0;
+            for (int L = 1; L <= majorTicksCount; L++)
+            {
+                Graphics.DrawLine(majorTickPen, x, this.LinearGauge.Height - tickPosition, x - LinearGauge.MajorTicksHeight, this.LinearGauge.Height - tickPosition);
+                Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+                if (LinearGauge.ShowScaleLabel)
+                    Graphics.DrawString(Math.Round(majortickValue, 2).ToString(),
+                             LinearGauge.Font, brush, new PointF(x - LinearGauge.MajorTicksHeight - 25, this.LinearGauge.Height - tickPosition), sf);
+                if (L == majorTicksCount)
+                    minorcount = (LinearGauge.MinorTickCount * (int)Math.Ceiling(s)) / LinearGauge.MajorDifference;
+                if (majortickValue < LinearGauge.MaximumValue)
+                {
+                    for (int S = 1; S <= minorcount; S++)
+                    {
+                        minortickValue = (m_minorTicksPixels / (LinearGauge.MinorTickCount + 1)) * S;
+                        tickPositionminor = this.LinearGauge.Height - (minortickValue + temp1 + 25);
+                        Graphics.DrawLine(minorTickPen, x, (float)tickPositionminor, x - LinearGauge.MinorTickHeight, (float)tickPositionminor);
+                    }
+                    temp1 = m_minorTicksPixels * L;
+                }
+
+                majortickValue += LinearGauge.MajorDifference;
+                tickPosition += m_minorTicksPixels;
+            }
+            Graphics.FillRectangle(new SolidBrush(LinearGauge.GaugeBaseColor), this.LinearGauge.Width / 2, startpoint - 1, 1, (((this.majorTicksDistance)) * m_minorTicksPixels) + 2);
+            if (this.LinearGauge.MinimumValue > 0)
+                Graphics.FillRectangle(new SolidBrush(LinearGauge.ValueIndicatorColor), this.LinearGauge.Width / 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - (((LinearGauge.Value / LinearGauge.MajorDifference)) * m_minorTicksPixels), 5, (((LinearGauge.Value / LinearGauge.MajorDifference)) * m_minorTicksPixels) + 2);
+            else
+                Graphics.FillRectangle(new SolidBrush(LinearGauge.ValueIndicatorColor), this.LinearGauge.Width / 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - ((((Math.Abs(this.LinearGauge.MinimumValue) + LinearGauge.Value) / LinearGauge.MajorDifference)) * m_minorTicksPixels), 5, ((((Math.Abs(this.LinearGauge.MinimumValue) + LinearGauge.Value) / LinearGauge.MajorDifference)) * m_minorTicksPixels) + 2);
+            brush.Dispose();
+            minorTickPen.Dispose();
+        }
+
+        public void DrawRanges(System.Drawing.Graphics Graphics)
+        {
+            Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias ;
+            foreach (LinearRange ptrRange in this.LinearGauge.Ranges)
+            {
+                int rvalve = (int)Math.Ceiling(LinearGauge.MaximumValue - ptrRange.EndValue) / LinearGauge.MajorDifference;
+                if (ptrRange.EndValue > ptrRange.StartValue && ptrRange.EndValue <= this.LinearGauge.MaximumValue)
+                {
+                    if (this.LinearGauge.MinimumValue >= 0 && ptrRange.StartValue < 0)
+                    {
+                        return;
+                    }
+                    float startValue = (float)ptrRange.StartValue;
+                    float endValue = (float)ptrRange.EndValue;
+                    if (this.LinearGauge.MinimumValue < 0)
+                    {
+                        startValue = this.LinearGauge.MinimumValue + Math.Abs(ptrRange.StartValue);
+                    }
+                    if (this.LinearGauge.MinimumValue < 0 && ptrRange.StartValue > 0)
+                    {
+                        startValue = Math.Abs(this.LinearGauge.MinimumValue) + Math.Abs(ptrRange.StartValue);
+                    }
+                    if (this.LinearGauge.MinimumValue < 0 && ptrRange.StartValue == 0)
+                    {
+                        startValue = Math.Abs(this.LinearGauge.MinimumValue) + Math.Abs(ptrRange.StartValue);
+                        startValue = (((startValue / LinearGauge.MajorDifference)) * m_minorTicksPixels);
+                    }
+
+                    float rangeheight = (ptrRange.EndValue / LinearGauge.MajorDifference) * m_minorTicksPixels;
+                    float endvalueRangeHeight = 0f;
+                    if (this.LinearGauge.MinimumValue < 0)
+                    {
+                        rangeheight = ((Math.Abs(this.LinearGauge.MinimumValue) + ptrRange.EndValue) / LinearGauge.MajorDifference) * m_minorTicksPixels;
+                    }
+                    endvalueRangeHeight = rangeheight;
+                    if (this.LinearGauge.MinimumValue < 0 && ptrRange.StartValue == 0)
+                    {
+                        endvalueRangeHeight = (((ptrRange.EndValue - ptrRange.StartValue) / LinearGauge.MajorDifference) * m_minorTicksPixels);
+                    }
+                    if (ptrRange.StartValue == 0)
+                        Graphics.FillRectangle(new SolidBrush(ptrRange.Color), this.LinearGauge.Width / 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - rangeheight, 8, endvalueRangeHeight);
+                    else if (ptrRange.StartValue > 0)
+                        Graphics.FillRectangle(new SolidBrush(ptrRange.Color), this.LinearGauge.Width / 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - rangeheight, 8, (((ptrRange.EndValue - ptrRange.StartValue) / LinearGauge.MajorDifference) * m_minorTicksPixels));
+                    else if (ptrRange.StartValue < 0)
+                    {
+                        Graphics.FillRectangle(new SolidBrush(ptrRange.Color), this.LinearGauge.Width / 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - rangeheight, 8, (((ptrRange.EndValue - ptrRange.StartValue) / LinearGauge.MajorDifference) * m_minorTicksPixels));
+                    }
+                }
+            }
+        }
+
+        public void DrawPointer(System.Drawing.Graphics Graphics)
+        {
+            Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            GraphicsPath path = new GraphicsPath();
+            int a = 0;
+            if (this.LinearGauge.MinimumValue < 0)
+                a = (int)Math.Ceiling((((Math.Abs(this.LinearGauge.MinimumValue) + LinearGauge.Value) / (float)LinearGauge.MajorDifference) * m_minorTicksPixels));
+            else
+                a = (int)Math.Ceiling(((LinearGauge.Value / (float)LinearGauge.MajorDifference) * m_minorTicksPixels));
+            int y = (this.LinearGauge.Height / 2 + 5 + LinearGauge.MajorTicksHeight) - LinearGauge.MajorTicksHeight;
+            a = 10 + (int)Math.Ceiling((majorTicksDistance * m_minorTicksPixels))-a;
+            Rectangle rect = new Rectangle(new Point(this.LinearGauge.Width / 2 + 28, a), new Size(32, 32));
+            SizeF sf= Graphics.MeasureString(this.LinearGauge.Value.ToString(),this.LinearGauge.GaugelabelFont);
+            PointF point=new PointF(rect.X+rect.Width/2-sf.Width/2,rect.Y+rect.Height/2-sf.Height/2);
+            Graphics.FillEllipse(new SolidBrush(LinearGauge.NeedleColor), rect);
+            Graphics.DrawEllipse(new Pen(ColorTranslator.FromHtml("#00a0d1")), rect);
+            Graphics.DrawLine(new Pen(ColorTranslator.FromHtml("#00a0d1")), rect.X, rect.Y + rect.Height / 2, rect.X - 18, rect.Y + rect.Height / 2);
+            Graphics.DrawString(Math.Round(LinearGauge.Value,2).ToString(), this.LinearGauge.GaugelabelFont, new SolidBrush( ColorTranslator.FromHtml("#024e60")), point);
+        }
+
+        public void UpdateRenderer(System.Windows.Forms.PaintEventArgs PaintEventArgs)
+        {
+            DrawLines(PaintEventArgs.Graphics);
+            DrawRanges(PaintEventArgs.Graphics);
+            DrawPointer(PaintEventArgs.Graphics);
+        }
+    }
+
+{% endhighlight %}
+
+{ % highlight vbnet %}
+
+Private custom1 As CustomRenderer  = New CustomRenderer(Me. linearGauge1)
+
+linearGauge1.Renderer = custom
+
+
+Public Class CustomRenderer
+        Implements ILinearGaugeRenderer
+        ''' </summary>
+        ''' Gets the Linear gauge
+        ''' </summary>
+        Private m_LinearGauge As LinearGauge
+        ''' <summary>
+        ''' Gets/Sets the Tick Distance of the Linear gauge.
+        ''' </summary>
+        Private majorTicksDistance As Single
+        ''' <summary>
+        ''' Calculates the Minor Ticks Pixels.
+        ''' </summary>
+        Private m_minorTicksPixels As Single
+        ''' <summary>
+        ''' Start point of the frame
+        ''' </summary>
+        Private startpoint As Integer
+        ''' <summary>
+        ''' Counts the Major ticks count for the given range.
+        ''' </summary>
+        Private majorTicksCount As Integer
+
+        ''' <summary>
+        '''  Gets the Radial gauge
+        ''' </summary>
+        Friend ReadOnly Property LinearGauge() As LinearGauge
+            Get
+                Return m_LinearGauge
+            End Get
+        End Property
+
+        Public Sub New(ByVal linearGauge As LinearGauge)
+            m_LinearGauge = linearGauge
+            majorTicksDistance = 0
+            m_minorTicksPixels = 0
+            startpoint = 25
+
+        End Sub
+
+        Public Sub DrawFrame(ByVal Graphics As System.Drawing.Graphics)
+        End Sub
+
+        Public Sub DrawLines(ByVal Graphics As System.Drawing.Graphics)
+            Dim majorTickPen As New Pen(LinearGauge.MajorTickMarkColor)
+            Dim minorTickPen As New Pen(LinearGauge.MinorTickMarkColor)
+            Dim brush As Brush = New SolidBrush(LinearGauge.ForeColor)
+            Dim sf As New StringFormat()
+            Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias
+
+            majorTicksDistance = ((LinearGauge.MaximumValue - LinearGauge.MinimumValue) / LinearGauge.MajorDifference)
+            majorTicksCount = (CInt(Fix(LinearGauge.MaximumValue - LinearGauge.MinimumValue)) / (LinearGauge.MajorDifference)) + 1
+            Dim majortickValue As Double = LinearGauge.MinimumValue
+            Dim tickPosition As Single = 25.0F
+            Dim temp1 As Single = 0
+            Dim s As Single = (LinearGauge.MaximumValue - LinearGauge.MinimumValue) Mod LinearGauge.MajorDifference
+            sf.Alignment = StringAlignment.Center
+            sf.LineAlignment = StringAlignment.Center
+            Dim minortickValue As Single = 0
+            Dim tickPositionminor As Single = 0
+            Dim path As New GraphicsPath()
+            Dim minorcount As Integer = LinearGauge.MinorTickCount
+            m_minorTicksPixels = ((Me.LinearGauge.Height - 50) / majorTicksDistance)
+            Dim x As Integer = Me.LinearGauge.Width \ 2
+            temp1 = 0
+            For L As Integer = 1 To majorTicksCount
+                Graphics.DrawLine(majorTickPen, x, Me.LinearGauge.Height - tickPosition, x - LinearGauge.MajorTicksHeight, Me.LinearGauge.Height - tickPosition)
+                Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias
+                If LinearGauge.ShowScaleLabel Then
+                    Graphics.DrawString(Math.Round(majortickValue, 2).ToString(), LinearGauge.Font, brush, New PointF(x - LinearGauge.MajorTicksHeight - 25, Me.LinearGauge.Height - tickPosition), sf)
+                End If
+                If L = majorTicksCount Then
+                    minorcount = (LinearGauge.MinorTickCount * CInt(Fix(Math.Ceiling(s)))) / LinearGauge.MajorDifference
+                End If
+                If majortickValue < LinearGauge.MaximumValue Then
+                    'INSTANT VB NOTE: The variable S was renamed since Visual Basic will not allow local variables with the same name as parameters or other local variables:
+                    For S_Renamed As Integer = 1 To minorcount
+                        minortickValue = (m_minorTicksPixels / (LinearGauge.MinorTickCount + 1)) * S_Renamed
+                        tickPositionminor = Me.LinearGauge.Height - (minortickValue + temp1 + 25)
+                        Graphics.DrawLine(minorTickPen, x, CSng(tickPositionminor), x - LinearGauge.MinorTickHeight, CSng(tickPositionminor))
+                    Next s
+                    temp1 = m_minorTicksPixels * L
+                End If
+
+                majortickValue += LinearGauge.MajorDifference
+                tickPosition += m_minorTicksPixels
+            Next L
+            Graphics.FillRectangle(New SolidBrush(LinearGauge.GaugeBaseColor), Me.LinearGauge.Width \ 2, startpoint - 1, 1, (((Me.majorTicksDistance)) * m_minorTicksPixels) + 2)
+            If Me.LinearGauge.MinimumValue > 0 Then
+                Graphics.FillRectangle(New SolidBrush(LinearGauge.ValueIndicatorColor), Me.LinearGauge.Width \ 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - (((LinearGauge.Value / LinearGauge.MajorDifference)) * m_minorTicksPixels), 5, (((LinearGauge.Value / LinearGauge.MajorDifference)) * m_minorTicksPixels) + 2)
+            Else
+                Graphics.FillRectangle(New SolidBrush(LinearGauge.ValueIndicatorColor), Me.LinearGauge.Width \ 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - ((((Math.Abs(Me.LinearGauge.MinimumValue) + LinearGauge.Value) / LinearGauge.MajorDifference)) * m_minorTicksPixels), 5, ((((Math.Abs(Me.LinearGauge.MinimumValue) + LinearGauge.Value) / LinearGauge.MajorDifference)) * m_minorTicksPixels) + 2)
+            End If
+            brush.Dispose()
+            minorTickPen.Dispose()
+        End Sub
+
+        Public Sub DrawRanges(ByVal Graphics As System.Drawing.Graphics)
+            Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias
+            For Each ptrRange As LinearRange In Me.LinearGauge.Ranges
+                Dim rvalve As Integer = CInt(Fix(Math.Ceiling(LinearGauge.MaximumValue - ptrRange.EndValue))) / LinearGauge.MajorDifference
+                If ptrRange.EndValue > ptrRange.StartValue AndAlso ptrRange.EndValue <= Me.LinearGauge.MaximumValue Then
+                    If Me.LinearGauge.MinimumValue >= 0 AndAlso ptrRange.StartValue < 0 Then
+                        Return
+                    End If
+                    Dim startValue As Single = CSng(ptrRange.StartValue)
+                    Dim endValue As Single = CSng(ptrRange.EndValue)
+                    If Me.LinearGauge.MinimumValue < 0 Then
+                        startValue = Me.LinearGauge.MinimumValue + Math.Abs(ptrRange.StartValue)
+                    End If
+                    If Me.LinearGauge.MinimumValue < 0 AndAlso ptrRange.StartValue > 0 Then
+                        startValue = Math.Abs(Me.LinearGauge.MinimumValue) + Math.Abs(ptrRange.StartValue)
+                    End If
+                    If Me.LinearGauge.MinimumValue < 0 AndAlso ptrRange.StartValue = 0 Then
+                        startValue = Math.Abs(Me.LinearGauge.MinimumValue) + Math.Abs(ptrRange.StartValue)
+                        startValue = (((startValue / LinearGauge.MajorDifference)) * m_minorTicksPixels)
+                    End If
+
+                    Dim rangeheight As Single = (ptrRange.EndValue / LinearGauge.MajorDifference) * m_minorTicksPixels
+                    Dim endvalueRangeHeight As Single = 0.0F
+                    If Me.LinearGauge.MinimumValue < 0 Then
+                        rangeheight = ((Math.Abs(Me.LinearGauge.MinimumValue) + ptrRange.EndValue) / LinearGauge.MajorDifference) * m_minorTicksPixels
+                    End If
+                    endvalueRangeHeight = rangeheight
+                    If Me.LinearGauge.MinimumValue < 0 AndAlso ptrRange.StartValue = 0 Then
+                        endvalueRangeHeight = (((ptrRange.EndValue - ptrRange.StartValue) / LinearGauge.MajorDifference) * m_minorTicksPixels)
+                    End If
+                    If ptrRange.StartValue = 0 Then
+                        Graphics.FillRectangle(New SolidBrush(ptrRange.Color), Me.LinearGauge.Width \ 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - rangeheight, 8, endvalueRangeHeight)
+                    ElseIf ptrRange.StartValue > 0 Then
+                        Graphics.FillRectangle(New SolidBrush(ptrRange.Color), Me.LinearGauge.Width \ 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - rangeheight, 8, (((ptrRange.EndValue - ptrRange.StartValue) / LinearGauge.MajorDifference) * m_minorTicksPixels))
+                    ElseIf ptrRange.StartValue < 0 Then
+                        Graphics.FillRectangle(New SolidBrush(ptrRange.Color), Me.LinearGauge.Width \ 2 + 10, startpoint + (majorTicksDistance * m_minorTicksPixels) - rangeheight, 8, (((ptrRange.EndValue - ptrRange.StartValue) / LinearGauge.MajorDifference) * m_minorTicksPixels))
+                    End If
+                End If
+            Next ptrRange
+        End Sub
+
+        Public Sub DrawPointer(ByVal Graphics As System.Drawing.Graphics)
+            Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias
+            Dim path As New GraphicsPath()
+            Dim a As Integer = 0
+            If Me.LinearGauge.MinimumValue < 0 Then
+                a = CInt(Fix(Math.Ceiling((((Math.Abs(Me.LinearGauge.MinimumValue) + LinearGauge.Value) / CSng(LinearGauge.MajorDifference)) * m_minorTicksPixels))))
+            Else
+                a = CInt(Fix(Math.Ceiling(((LinearGauge.Value / CSng(LinearGauge.MajorDifference)) * m_minorTicksPixels))))
+            End If
+            Dim y As Integer = (Me.LinearGauge.Height \ 2 + 5 + LinearGauge.MajorTicksHeight) - LinearGauge.MajorTicksHeight
+            a = 10 + CInt(Fix(Math.Ceiling((majorTicksDistance * m_minorTicksPixels)))) - a
+            Dim rect As New Rectangle(New Point(Me.LinearGauge.Width \ 2 + 28, a), New Size(32, 32))
+            Dim sf As SizeF = Graphics.MeasureString(Me.LinearGauge.Value.ToString(), Me.LinearGauge.GaugelabelFont)
+            Dim point As New PointF(rect.X + rect.Width \ 2 - sf.Width \ 2, rect.Y + rect.Height \ 2 - sf.Height \ 2)
+            Graphics.FillEllipse(New SolidBrush(LinearGauge.NeedleColor), rect)
+            Graphics.DrawEllipse(New Pen(ColorTranslator.FromHtml("#00a0d1")), rect)
+            Graphics.DrawLine(New Pen(ColorTranslator.FromHtml("#00a0d1")), rect.X, rect.Y + rect.Height \ 2, rect.X - 18, rect.Y + rect.Height \ 2)
+            Graphics.DrawString(Math.Round(LinearGauge.Value, 2).ToString(), Me.LinearGauge.GaugelabelFont, New SolidBrush(ColorTranslator.FromHtml("#024e60")), point)
+        End Sub
+
+        Public Sub UpdateRenderer(ByVal PaintEventArgs As System.Windows.Forms.PaintEventArgs)
+            DrawLines(PaintEventArgs.Graphics)
+            DrawRanges(PaintEventArgs.Graphics)
+            DrawPointer(PaintEventArgs.Graphics)
+        End Sub
+    End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Linear-Gauge_images/HowtocustomizeLinearGaugeappearance_img1.jpeg)
+
+
+
+
