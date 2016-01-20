@@ -59,7 +59,7 @@ When the UsageMode is set to 'Numeric', the control creates internally two data 
 
 ###.####
 
-The first group will contain the value for the first 3 ### characters of the mask (the number group) and the second group (the decimal group) will contain the 5 characters (.####). The default group alignment for the number group will be right and the alignment for the decimal group will be left. Refer to the information on [DataGroups](/windowsforms/maskededitbox/display-settings.html#datagroups) for more information on how this works.
+The first group will contain the value for the first 3 ### characters of the mask (the number group) and the second group (the decimal group) will contain the 5 characters (.####). The default group alignment for the number group will be right and the alignment for the decimal group will be left. Refer to the information on [DataGroups](/windowsforms/maskededitbox/display-settings#datagroups) for more information on how this works.
 
 The MaxValue and MinValue properties are enforced only when the UsageMode is set to 'Numeric'.
 
