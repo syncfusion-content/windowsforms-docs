@@ -302,5 +302,5 @@ Me.comboBoxAdv1.Sorted = True
 
 N> Data for the dropdown can be set using Items property. 
 
-Refer[Data Settings](/WindowsForms/ComboBoxAdv/Data-Settings) for details. To know about different dropdown styles available for the control, see ReadOnly Settings section in [TextBox](http://help.syncfusion.com:90/ug/windows%20forms/documents/textbox2.htm)topic.
+Refer[Data Settings](/WindowsForms/ComboBoxAdv/Data-Settings) for details. To know about different dropdown styles available for the control, see ReadOnly Settings section in [TextBox](/WindowsForms/ComboBoxAdv/TextBox)topic.
 
