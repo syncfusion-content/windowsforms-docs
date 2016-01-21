@@ -429,7 +429,7 @@ Me.linearGauge1.MinorTickCount = 1
 {% endhighlight %}
 
 
-## Visual Styles for All Gauges
+## Visual Styles 
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
 
@@ -501,7 +501,7 @@ this.linearGauge1.DataSource = dataTable;
 
 {% endhighlight %}
 
-## Custom Renderer Support for Linear Gauge
+## Custom Renderer 
 
 The appearance of the Linear Gauge can be customized by using the Interface `ILinearGaugeRenderer`. This interface provides few methods to control painting over the Frame, Needle, Major ticks, Minor ticks, Pointers, Ranges etc.
 

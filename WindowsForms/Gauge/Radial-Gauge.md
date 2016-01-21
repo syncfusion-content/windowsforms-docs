@@ -629,7 +629,7 @@ Me.radialGauge1.MinorDifference = 1
 
 {% endhighlight %}
 
-## Visual Styles for All Gauges
+## Visual Styles 
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
 
@@ -700,7 +700,7 @@ this.radialGauge1.DisplayMember = [column name];
 
 {% endhighlight %}
 
-## Custom Renderer Support for Radial Gauge
+## Custom Renderer
 
 The appearance of the Radial Gauge is customized by using the `IRadialGaugeRenderer`. This interface provides few methods to control painting over the OuterArc, Needle, Major ticks, Minor ticks, Label, Ranges etc.
 
@@ -1495,7 +1495,7 @@ Public Class CustomRenderer
 
 ### How to customize the Start Angle and Sweep angle of the arc in Radial Gauge ?
 
-In Radial Gauge, the arc Start and Sweep can be customized using the `StartAngle` and `SweepAngle` property respectively.
+It can be customized by using its properties named `StartAngle` and `SweepAngle`.
 
 The following code snippet illustrates the same.
 
