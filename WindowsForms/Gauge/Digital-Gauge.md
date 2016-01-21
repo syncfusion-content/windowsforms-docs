@@ -34,7 +34,7 @@ This section illustrates the features of the digital gauge with different visual
 * Show Invisible Segments
 * Round Corner Radius
 
-### Visual Style
+### Visual Styles
 
 
 Different visual styles can be applied using the VisualStyle property. The Digital Gauge control features five visual styles:

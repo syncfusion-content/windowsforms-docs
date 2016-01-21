@@ -195,7 +195,7 @@ Me.editControl1.MovePageDown();
 
 {% endhighlight %}
 
-### ocument Level Navigation
+### Document Level Navigation
 
 The following APIs enable text navigation in the Edit Control, in terms of documents.
 
@@ -4011,29 +4011,39 @@ Me.editControl1.ResetSelection()
 
 ## Selection Modes
 
-Essential Edit comes with VS like selecting option. It is possible to select certain rectangular portion of the text instead of the whole line with ALT key pressed. Selection includes all the characters captured within the rectangle, defined by the first character and the last character of the selection. Anything typed or pasted into the selected area is inserted at the same point, on each line. There are two types of selection mode.
+The EditControl has two text selection modes:
 
-* Default 
+·  Default   
 
-In Default selection, whole line will be selected. If we enable the property `EnableBlockSelection` then ALT key rectangular selection can be performed.
+   This mode enable user to select Whole line. 
+   
+   {% highlight c# %}
+   
+   //To Enable Default mode.
 
-* Block
+   this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default;
 
-In Block selection, by default rectangular selection will be performed irrespective of the `EnableBlockSelection` property.
+   {% endhighlight %}
 
-User can toggle between the Default and Block selection mode using the following
+   {% highlight vbnet %}
+   
+   'To Enable Default mode.
 
-code snippet.
+   Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default
+
+   {% endhighlight %}
+   
+   ![](Text-Visualization_images/SelectionModes_img3.jpg)
+     
+·   Block   
+
+   This mode enable user to select, certain rectangle portion instead of whole line. The selection includes all characters captured within the rectangle defined by the first and last character in the selection. Anything typed or pasted into the selected area is inserted at the same point on each line. 
 
 {% highlight c# %}
 
 //To Enable Block Selection mode.
 
 this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block;
-
-//To Enable Default mode.
-
-this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default;
 
 {% endhighlight %}
 
@@ -4042,10 +4052,6 @@ this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.D
 'To Enable Block Selection mode.
 
 Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block
-
-'To Enable Default mode.
-
-Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default
 
 {% endhighlight %}
 
