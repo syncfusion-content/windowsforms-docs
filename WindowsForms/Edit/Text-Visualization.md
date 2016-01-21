@@ -195,7 +195,7 @@ Me.editControl1.MovePageDown();
 
 {% endhighlight %}
 
-### ocument Level Navigation
+### Document Level Navigation
 
 The following APIs enable text navigation in the Edit Control, in terms of documents.
 
@@ -4008,4 +4008,55 @@ Me.editControl1.SelectionCancel()
 Me.editControl1.ResetSelection()
 
 {% endhighlight %}
+
+## Selection Modes
+
+The EditControl has two text selection modes:
+
+·  Default   
+
+   This mode enable user to select Whole line. 
+   
+   {% highlight c# %}
+   
+   //To Enable Default mode.
+
+   this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default;
+
+   {% endhighlight %}
+
+   {% highlight vbnet %}
+   
+   'To Enable Default mode.
+
+   Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default
+
+   {% endhighlight %}
+   
+   ![](Text-Visualization_images/SelectionModes_img3.jpg)
+     
+·   Block   
+
+   This mode enable user to select, certain rectangle portion instead of whole line. The selection includes all characters captured within the rectangle defined by the first and last character in the selection. Anything typed or pasted into the selected area is inserted at the same point on each line. 
+
+{% highlight c# %}
+
+//To Enable Block Selection mode.
+
+this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'To Enable Block Selection mode.
+
+Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block
+
+{% endhighlight %}
+
+![](Text-Visualization_images/SelectionModes_img1.jpeg)
+
+![](Text-Visualization_images/SelectionModes_img2.png)
+
 
