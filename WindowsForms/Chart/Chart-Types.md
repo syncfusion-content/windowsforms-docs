@@ -2871,10 +2871,11 @@ Me.chartControl1.Series.Add (series)
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, PriceDownColor, PriceUpColor, Spacing Between Series
 * ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
-  ### Box And Whisker Chart
+
+### Box And Whisker Chart
 
 
-  In 1977, John Tukey published an efficient method for displaying a five-number data summary. The graph is called a Box and Whisker plot (also known as BoxPlot) and summarizes the following statistical measures.
+In 1977, John Tukey published an efficient method for displaying a five-number data summary. The graph is called a Box and Whisker plot (also known as BoxPlot) and summarizes the following statistical measures.
 
 * median
 * upper and lower quartiles (75 percentile to 25 percentile)

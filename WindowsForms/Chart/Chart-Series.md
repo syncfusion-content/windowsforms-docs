@@ -852,7 +852,7 @@ series2.Styles(2).Border.Color = Color.White
 
 {% seealso %}
 
- [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart), [AreaChart](/windowsforms/chart/chart-types#area-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
+ [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart), [AreaChart](/windowsforms/chart/chart-types#area-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
 
 {% endseealso %}
 
@@ -1020,7 +1020,7 @@ Me.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts), /windowsforms/chart/chart-types#column-range-chart,  [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart)
+[Column Charts](/windowsforms/chart/chart-types#column-charts), [Range Column Chart](/windowsforms/chart/chart-types#column-range-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart)
 
 {% endseealso %}
 
@@ -1287,7 +1287,7 @@ N> The ColumnFixedWidth property can be overridden by specifying a second y valu
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) , BoxAndWhiskerChart, ColumnWidthMode, Candle Charts
+[Column Charts](/windowsforms/chart/chart-types#column-charts), [BoxAndWhiskerChart](/windowsforms/chart/chart-types#box-and-whisker-chart), [ColumnWidthMode](/windowsforms/chart/chart-series#columnwidthmode), [Candle Charts](/windowsforms/chart/chart-types#candle-chart)
 
 {% endseealso %}
 
@@ -1588,7 +1588,7 @@ Me.chartControl1.Series(0).Styles(1).DisplayShadow = True
 
 {% seealso %}
 
-[Line Charts](/windowsforms/chart/chart-types#line-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [Stacking Column Chart](/windowsforms/chart/chart-types#stacking-column-chart), [StackedColumn100Chart](/windowsforms/chart/chart-types#stacked-column100-chart), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [PointAndFigure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), /windowsforms/chart/chart-types#step-area-chart
+[Line Charts](/windowsforms/chart/chart-types#line-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [Stacking Column Chart](/windowsforms/chart/chart-types#stacking-column-chart), [StackedColumn100Chart](/windowsforms/chart/chart-types#stacked-column100-chart), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [PointAndFigure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Step Area chart] (/windowsforms/chart/chart-types#step-area-chart)
 
 {% endseealso %}
 
@@ -1746,7 +1746,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient = 0.5f
 
 {% seealso %}
 
-[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart),[PieChart](/windowsforms/chart/chart-types#pie-chart)
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
 {% endseealso %}
 
@@ -2318,7 +2318,7 @@ this.chartControl1.Series(0).Styles(0).ElementBorders = cbi
 
 [AreaChart](/windowsforms/chart/chart-types#area-chart), [Bar Charts](/windowsforms/chart/chart-types#bar-charts), [Bubble Chart](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart),
 
-[Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
+[Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
 
 {% endseealso %}
 
@@ -2525,7 +2525,7 @@ Me.chartControl1.Series(0).ExplodedAll = True
 
 {% seealso %}
 
-[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
 {% endseealso %}
 
@@ -2587,7 +2587,7 @@ Me.chartControl1.Series(0).ExplodedIndex = 0
 
 {% seealso %}
 
-[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
 {% endseealso %}
 
@@ -2652,7 +2652,7 @@ Me.chartControl1.Series(0).ExplosionOffset = 30f
 
 {% seealso %}
 
-[Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart)
+[PieChart](/windowsforms/chart/chart-types#pie-chart)
 
 {% endseealso %}
 
@@ -2974,7 +2974,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.Y
 
 {% seealso %}
 
-[Funnel Chart](/windowsforms/chart/chart-types#funnel-chart
+[Funnel Chart](/windowsforms/chart/chart-types#funnel-chart)
 
 {% endseealso %}
 
@@ -3627,7 +3627,7 @@ series1.Styles(3).HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagona
 
 {% seealso %}
 
- [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart),  [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart),[Column Charts](/windowsforms/chart/chart-types#column-charts),[AreaChart](/windowsforms/chart/chart-types#area-chart), [Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart), [Stacking Area100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
+ [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart),  [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart),[Column Charts](/windowsforms/chart/chart-types#column-charts),[AreaChart](/windowsforms/chart/chart-types#area-chart), [Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart), [Stacking Area100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
 
  {% endseealso %}
  
@@ -3858,7 +3858,7 @@ series1.Styles(1).Symbol.Shape = ChartSymbolShape.Image
 
 {% seealso %}
 
-[AreaChart](/windowsforms/chart/chart-types#area-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
+[AreaChart](/windowsforms/chart/chart-types#area-chart),  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [ThreeLineBreak Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
 
 {% endseealso %}
 
@@ -4492,7 +4492,7 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightColor = Color.Gre
 
 {% seealso %}
 
-[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart) , [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart) , [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart) , 
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart), [Column Charts](/windowsforms/chart/chart-types#column-charts) , [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart) , [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart) , [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart) , 
 
 {% endseealso %}
 
@@ -4930,7 +4930,7 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.PhongAlpha = 2.0
 {% seealso %}
 
 
- [BarCharts](/windowsforms/chart/chart-types#bar-charts) ,  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart) , [Column Charts](/windowsforms/chart/chart-types#column-charts)  ,  [Candle Charts](/windowsforms/chart/chart-types#candle-chart) , [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart) ,  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart) , [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart) ,  [Histogram chart](/windowsforms/chart/chart-types#histogram-chart) , [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Radar Charts](/windowsforms/chart/chart-types#radar-chart), [Scatter Chart](/windowsforms/chart/chart-types#scatter-chart), 
+ [BarCharts](/windowsforms/chart/chart-types#bar-charts) ,  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart) , [Column Charts](/windowsforms/chart/chart-types#column-charts)  ,  [Candle Charts](/windowsforms/chart/chart-types#candle-chart) , [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart) ,  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart) , [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart) ,  [Histogram chart](/windowsforms/chart/chart-types#histogram-chart) , [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Radar Charts](/windowsforms/chart/chart-types#radar-chart), [Scatter Chart](/windowsforms/chart/chart-types#scatter-chart), 
 
 {% endseealso %}
 
@@ -5746,7 +5746,7 @@ Private Me.chartControl1.Series(0).Rotate = True
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) , [Bar Charts](/windowsforms/chart/chart-types#bar-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Line Chart](/windowsforms/chart/chart-types#line-chart), [Spline Chart](/windowsforms/chart/chart-types#spline-chart), [Stepline Chart](/windowsforms/chart/chart-types#step-line-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [BoxandWhisker chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Bubble And Scatter Chart](/windowsforms/chart/chart-types#xy-charts)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , [Bar Charts](/windowsforms/chart/chart-types#bar-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Line Chart](/windowsforms/chart/chart-types#line-chart), [Spline Chart](/windowsforms/chart/chart-types#spline-chart), [Stepline Chart](/windowsforms/chart/chart-types#step-line-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [BoxandWhisker chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Bubble And Scatter Chart](/windowsforms/chart/chart-types#xy-charts-bubble-and-scatter)
 
 {% endseealso %}
 
@@ -6018,7 +6018,7 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartCol
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) , [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart)
 
 {% endseealso %}
 
@@ -6109,7 +6109,7 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart),[Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart),[Point and Figure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Pie Chart](/windowsforms/chart/chart-types#pie-chart), [Area Chart](/windowsforms/chart/chart-types#area-chart), [Step Area Chart](/windowsforms/chart/chart-types#step-area-chart)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart),[Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart),[Point and Figure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Pie Chart](/windowsforms/chart/chart-types#pie-chart), [Area Chart](/windowsforms/chart/chart-types#area-chart), [Step Area Chart](/windowsforms/chart/chart-types#step-area-chart)
 
 {% endseealso %}
 
@@ -6223,7 +6223,7 @@ Private series.Styles(2).ShadowOffset = New Size(6, 6)
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart),[Point and Figure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Pie Chart](/windowsforms/chart/chart-types#pie-chart), [Area Chart](/windowsforms/chart/chart-types#area-chart), [Step Area Chart](/windowsforms/chart/chart-types#step-area-chart)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart),[Point and Figure Chart](/windowsforms/chart/chart-types#point-and-figure-chart), [Renko Chart](/windowsforms/chart/chart-types#renko-chart), [Three Line Break Chart](/windowsforms/chart/chart-types#three-line-break-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Pie Chart](/windowsforms/chart/chart-types#pie-chart), [Area Chart](/windowsforms/chart/chart-types#area-chart), [Step Area Chart](/windowsforms/chart/chart-types#step-area-chart)
 
 {% endseealso %}
 
@@ -6312,7 +6312,7 @@ Me.chartControl.Series(0).ConfigItems.PyramidItem.ShowDataBindLabels = True
 
 {% seealso %}
 
-[PieChart](/windowsforms/chart/chart-types#pie-chart), [Doughnut Chart](/windowsforms/chart/chart-types#doughnut-chart), [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart), [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart)
+[PieChart](/windowsforms/chart/chart-types#pie-chart), [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart), [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart)
 
 {% endseealso %}
 
@@ -6604,7 +6604,7 @@ Me.chartControl1.Spacing = 50
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) ,   [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart),   [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Chart](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,   [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart),   [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Chart](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
 
 {% endseealso %}
 
@@ -6672,7 +6672,7 @@ Me.chartControl1.SpacingBetweenSeries = 20
 
 {% seealso %}
 
-[Area Charts](/windowsforms/chart/chart-types#area-charts), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Financial Charts](/windowsforms/chart/chart-types#financial-charts), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart) [Combination Chart](/windowsforms/chart/chart-types#combination-chart),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart)
+[Area Charts](/windowsforms/chart/chart-types#area-charts), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Financial Charts](/windowsforms/chart/chart-types#financial-charts), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart) [Combination Chart](/windowsforms/chart/chart-types#combination-chart),  [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart)
 
 {% endseealso %}
 
@@ -6726,7 +6726,7 @@ Me.chartControl1.SpacingBetweenSeries = 70
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,  [BarCharts](/windowsforms/chart/chart-types#bar-charts),  [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart)
 
 {% endseealso %}
 
@@ -7155,7 +7155,7 @@ Private Me.chartControl1.Series0).Styles[0].Symbol.Border.DashStyle = DashStyle.
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) ,   [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Chart](/windowsforms/chart/chart-types#bubble-chart), [Financial Chart](/windowsforms/chart/chart-types#financial-chart),  [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Radar Chart](/windowsforms/chart/chart-types#radar-chart), [Polar Chart](/windowsforms/chart/chart-types#polar-chart), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Scatter Chart](/windowsforms/chart/chart-types#scatter-chart)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) ,   [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Chart](/windowsforms/chart/chart-types#bubble-chart), [Financial Chart](/windowsforms/chart/chart-types#financial-charts),  [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Radar Chart](/windowsforms/chart/chart-types#radar-chart), [Polar Chart](/windowsforms/chart/chart-types#polar-chart), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Scatter Chart](/windowsforms/chart/chart-types#scatter-chart)
 
 {% endseealso %}
 
@@ -7873,7 +7873,7 @@ Loop
 
 {% seealso %}
 
-[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)(3D), [Column Charts](/windowsforms/chart/chart-types#column-charts), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart)(3D), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart), [Accumulation Charts](/windowsforms/chart/chart-types#accumulation-chart), [Area Charts](windowsforms/chart/chart-types#area-charts)
+[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)(3D), [Column Charts](/windowsforms/chart/chart-types#column-charts), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart),  [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart)(3D), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [PieChart](/windowsforms/chart/chart-types#pie-chart), [Accumulation Charts](/windowsforms/chart/chart-types#accumulation-chart), [Area Charts](windowsforms/chart/chart-types#area-charts)
 
 {% endseealso %}
 
@@ -7994,7 +7994,7 @@ Details</th></tr>
 <tr>
 <td colspan = "2">
 Possible Values</td><td>
-<ul><li> True - Unhides the associated series.</li><li> False - Hides the associated series.</ul></li></td></tr>
+<ul><li> True - Unhides the associated series.</li><li> False - Hides the associated series.</li></ul></td></tr>
 <tr>
 <td colspan = "2">
 <br>Default Value     </td><td>
@@ -8051,6 +8051,7 @@ Private Me.chartControl1.Series(1).Visible = True
 {% endseealso %}
 
 ### VisibleAllPies
+
 
 Specifies whether the legend is to be displayed with one legend item for each slice in the pie.
 
@@ -8118,6 +8119,7 @@ chartControl1.Legend.RowsCount = 3
 {% endseealso %}
 
 ### XType
+
 
 Returns the x value type that is being rendered. It is a read-only property.
 
@@ -8339,7 +8341,7 @@ Me.chartControl1.EndUpdate()
 
 {% seealso %}
 
-[Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#torando-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Area Charts](/windowsforms/chart/chart-types#area-chart),[Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
+[Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Combination Chart](/windowsforms/chart/chart-types#combination-chart), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Area Charts](/windowsforms/chart/chart-types#area-chart),[Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [BarCharts](/windowsforms/chart/chart-types#bar-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart), [Candle Charts](/windowsforms/chart/chart-types#candle-chart), [Hilo Charts](/windowsforms/chart/chart-types#hi-lo-chart),[Hilo Open Close Chart](/windowsforms/chart/chart-types#hi-lo-open-close-chart)
 
 {% endseealso %}
 
