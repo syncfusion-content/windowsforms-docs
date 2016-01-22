@@ -4013,7 +4013,7 @@ Me.editControl1.ResetSelection()
 
 The EditControl has two text selection modes:
 
-·  Default   
+ * Default   
 
    This mode enable user to select Whole line. 
    
@@ -4035,7 +4035,7 @@ The EditControl has two text selection modes:
    
    ![](Text-Visualization_images/SelectionModes_img3.jpg)
      
-·   Block   
+ * Block   
 
    This mode enable user to select, certain rectangle portion instead of whole line. The selection includes all characters captured within the rectangle defined by the first and last character in the selection. Anything typed or pasted into the selected area is inserted at the same point on each line. 
 
