@@ -9,9 +9,9 @@ documentation: ug
 
 # How to navigate to current date in DateTimePickerAdv ?
 
-In DateTimePicker, we can navigate to current date by using the `NavigateToCurrentDate` method. We can achieve this by calling this method under any key stroke.
+In DateTimePicker, we can navigate to current date by using the `NavigateToCurrentDate` method. 
 
-The following code illustrates the same.
+For example, it is possible to select current date on Enter key press and the following code illustrates the same.
 
 {% highlight c# %}
 
