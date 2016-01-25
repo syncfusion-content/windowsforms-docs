@@ -1176,7 +1176,7 @@ public class CustomRenderer : IRadialGaugeRenderer
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 Private custom1 As CustomRenderer  = New CustomRenderer(Me.radialGauge1)
