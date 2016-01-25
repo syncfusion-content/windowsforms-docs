@@ -787,7 +787,7 @@ Console.Write("Serialized controls :" + Me.dockingManager1.GetSerializedControls
 
 {% seealso %}
 
-[ProvidePersistenceID Event](/windowsforms/dockingmanager/Docking-Events.html#providepersistenceid-event), [How to avoid flickering while loading dock state?](/windowsforms/dockingmanager/faq/Dock-State.html#how-to-avoid-flickering-while-loading-dock-state), 
+[ProvidePersistenceID Event](/windowsforms/dockingmanager/Docking-Events.html#providepersistenceid-event), [How to avoid flickering while loading dock state?](/windowsforms/dockingmanager/faq/DockState.html#how-to-avoid-flickering-while-loading-dock-state), 
 
 
 How to serialize or deserialize the docking state for a docked control on loading the application?
