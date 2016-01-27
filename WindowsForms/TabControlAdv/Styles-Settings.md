@@ -34,7 +34,6 @@ Once you have a Custom ITabRenderer implementation, you can, if necessary, make 
    ![](Styles-Settings_images/Styles-Settings_img4.jpeg)
 
 
-
 {% seealso %}
 
 [TabStyles](/windowsforms/tabs/styles-settings#tabstyles)
