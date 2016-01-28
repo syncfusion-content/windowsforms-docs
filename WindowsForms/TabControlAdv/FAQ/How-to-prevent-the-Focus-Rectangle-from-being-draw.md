@@ -7,14 +7,13 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to prevent the Focus Rectangle from being drawn in the Tabs
+# How to prevent the Focus Rectangle from being drawn in the Tabs?
 
-You can easily do this by handling the DrawItem event, adjusting the DrawTabEventArgs and delegating drawing to the default drawing logic.
+You can easily do this by handling the DrawItem event, adjusting the `DrawTabEventArgs` and delegating drawing to the default drawing logic.
 
 {% tabs %}
 
 {% highlight c# %}
-
 
 
 private void TabControlExt_DrawItem(object sender, Syncfusion.Windows.Forms.Tools.DrawTabEventArgs drawItemInfo)

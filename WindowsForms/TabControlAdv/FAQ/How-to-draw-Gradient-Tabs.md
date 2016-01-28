@@ -7,16 +7,15 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to draw Gradient Tabs
+# How to draw Gradient Tabs?
 
-You can handle the DrawItem Event of TabControlAdv and then set the gradient by using the LinearGradientBrush.
+You can handle the DrawItem Event of TabControlAdv and then set the gradient by using the `LinearGradientBrush`.
 
 This can be done programmatically using the code snippet given below.
 
 {% tabs %}
 
 {% highlight c# %}
-
 
 
 private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Tools.DrawTabEventArgs drawItemInfo)
@@ -77,61 +76,9 @@ private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Too
 
    drawItemInfo.DrawInterior();
 
-} 
+}    
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
-
-        {
-
-            this.tabControlAdv1.Padding = new Point(12, 12); 
-
-        }
-
-
-
-        private void tabPageAdv1_Click(object sender, EventArgs e)
-
-        {
-
-
-
-        }
-
-
-
-        private void tabControlAdv1_SelectedIndexChanged(object sender, EventArgs e)
-
-        {
-
-
-
-        }
-
-
-
-        private void tabPageAdv1_Click_1(object sender, EventArgs e)
-
-        {
-
-
-
-        }
-
-
-
-        private void autoLabel1_Click(object sender, EventArgs e)
-
-        {
-
-
-
-        }
-
-   }
-
-}
+  
 
 {% endhighlight %}
 

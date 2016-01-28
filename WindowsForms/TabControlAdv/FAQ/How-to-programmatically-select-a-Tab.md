@@ -7,14 +7,13 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to programmatically select a Tab
+# How to programmatically select a Tab?
 
 The following code snippet illustrates the ways to select a Tab programmatically.
 
 {% tabs %}
 
 {% highlight c# %}
-
 
 
 //Select Second Tab.

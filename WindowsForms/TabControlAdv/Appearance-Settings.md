@@ -75,9 +75,7 @@ Me.tabPageAdv1.ImageIndex = 0
 
 TabControlAdv can have images set outside the TabBounds.
 
-
 ![](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
-
 
 To move the image outside the TabBounds, set the below given properties.
 
@@ -106,7 +104,7 @@ Sets the size of the tabs.</td></tr>
 
 #### Background Image for TabPages
 
-The below properties sets the background image for the pages.
+The below properties sets the background image for the TabPages.
 
 <table>
 <tr>
@@ -146,9 +144,9 @@ Private Me.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.
 
 {% endtabs %}
 
-### DisableInactivePageImage
+### DisableInActivePageImage
 
-The **DisableInactivePageImage** property specifies the value which determines whether the image should be disabled when the TabPage is not selected. The default value is True.
+The `DisableInactivePageImage` property specifies the value which determines whether the image should be disabled when the TabPage is not selected. The default value is True.
 
 <table>
 <tr>
@@ -178,7 +176,7 @@ Private Me.tabPageAdv1.DisableInactivePageImage = imageList1.Images(0)
 
 {% endtabs %}
 
-### BackColor Settings for the TabControlAdv
+### Color Customization
 
 The look and feel of the TabControlAdv can be customized using the below Tab and Panel properties. 
 
@@ -194,11 +192,11 @@ Specifies the backcolor for the selected tab.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
-Specifies the backcolor for all the tabpages.</td></tr>
+Specifies the backcolor for all the TabPages.</td></tr>
 <tr>
 <td>
 InActiveTabColor</td><td>
-Specifies the backcolor to be used for the inactive tabs.</td></tr>
+Specifies the backcolor to be used for the InActive tabs.</td></tr>
 <tr>
 <td>
 TabPanelBackColor</td><td>
@@ -206,7 +204,7 @@ Specifies the color for the tabpanel over which the tabitems are laid.</td></tr>
 </table>
 BackColor Settings for the TabItems
 
-The BackColor of the individual tabitems can be customized by setting the TabBackColor property of the corresponding tabpages.
+The BackColor of the individual tabitems can be customized by setting the `TabBackColor` property of the corresponding tabpages.
 
 <table>
 <tr>
@@ -257,7 +255,6 @@ Private Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
  ![](Appearance-Settings_images/Appearance-Settings_img3.jpeg)
 
 
-
  ![](Appearance-Settings_images/Appearance-Settings_img4.png) 
  
 
@@ -267,7 +264,7 @@ This section discusses the various Foreground Settings available in TabControlAd
 
 ### Font Settings
 
-The font settings for the TabControlAdv can be controlled through Font and ActiveTabFont properties.
+The font settings for the TabControlAdv can be controlled through `Font` and `ActiveTabFont` properties.
 
 <table>
 <tr>
@@ -281,7 +278,7 @@ Specifies the font of the selected tabitem text.</td></tr>
 <tr>
 <td>
 Font</td><td>
-Specifies the font for all the tabitems' text.</td></tr>
+Specifies the font for all the tabitem's text.</td></tr>
 </table>
 
 {% tabs %}
@@ -315,7 +312,7 @@ Description</th></tr>
 <tr>
 <td>
 TabFont</td><td>
-Specifies the font for the tabitem.</td></tr>
+Specifies the Font for the tabitem.</td></tr>
 </table>
 
 {% tabs %}
@@ -343,7 +340,7 @@ To set image for tab items, see [BackgroundImage Settings](#backgroundimage-sett
 
 ### ForeColor Settings
 
-The text color of the tabitems can be customized by setting the **TabForeColor** property of the corresponding TabPages.
+The text color of the tabitems can be customized by setting the `TabForeColor` property of the corresponding TabPages.
 
 <table>
 <tr>
@@ -375,9 +372,9 @@ Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 ![](Appearance-Settings_images/Appearance-Settings_img6.jpeg)
 
 
-## Border for TabControlAdv
+## Border Settings
 
-This section discusses the border settings available for the TabControlAdv. Set TabControlAdv.BorderVisible property to true to display the control border. By default it is false.
+This section discusses the border settings available for the TabControlAdv. Set `BorderVisible` property to true to display the control border. Default value is false.
 
 {% tabs %}
 
@@ -399,7 +396,7 @@ Me.tabControlAdv1.BorderVisible = True
 
 
 
-We can set width for the border using **BorderWidth** property. Default value is 5.
+We can set width for the border using `BorderWidth` property. Default value is 5.
 
 {% tabs %}
 

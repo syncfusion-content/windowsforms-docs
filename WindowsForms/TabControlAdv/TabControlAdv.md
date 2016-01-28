@@ -13,8 +13,7 @@ The look and feel of the TabControlAdv can be customized through various propert
 
 ## Renaming TabItems
 
-TabControlAdv comes with the renaming functionality similar to MS Excel. Users can edit TabControlAdv's text at run-time using the **LabelEdit** property which has to be set to True. 
-
+TabControlAdv comes with the renaming functionality similar to MS Excel. Users can edit TabControlAdv's text at run-time using the `LabelEdit` property which has to be set to True. 
 
 <table>
 <tr>
@@ -27,7 +26,6 @@ LabelEdit</td><td>
 Specifies whether the text of the tabitem is editable. Default value is False.</td></tr>
 </table>
 
-
 To bring the text of the TabItem to the edit mode, the following can be done.
 
 1. Select the text of the TabItem to be edited and right-click on the tab to bring the text to edit mode. The text can now be edited and it can be saved by pressing the Enter key.
@@ -39,7 +37,7 @@ To bring the text of the TabItem to the edit mode, the following can be done.
 
    After editing the text, to come out of the edit mode, press the Enter key or click the Left Mouse button.
 
-3. Programmatically the **LabelEdit** property can be set as follows.
+3. Programmatically the `LabelEdit` property can be set as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -64,7 +62,7 @@ Me.tabControlAdv.LabelEdit = True
 
 ## Moving TabItems
 
-The order of the tabs within the TabControlAdv can be changed at design-time and also at run-time by simply dragging-and-dropping the tabs in the required places. This can be enabled using the **UserMoveTabs** property.
+The order of the tabs within the TabControlAdv can be changed at design-time and also at run-time by simply dragging-and-dropping the tabs in the required places. This can be enabled using the `UserMoveTabs` property.
 
 {% tabs %}
 
@@ -84,7 +82,7 @@ Me.tabControlAdv1.UserMoveTabs = True
 
 ## Padding
 
-Using the **Padding** property, the space around the text / image of the TabItems can be changed by setting the X-axis and Y-axis values.
+Using the `Padding` property, the space around the text / image of the TabItems can be changed by setting the X-axis and Y-axis values.
 
 Code snippets to set the Padding
 
@@ -111,14 +109,13 @@ Me.tabControlAdv1.Padding = New Point(12, 12)
 
 ![](TabControlAdv_images/TabControlAdv_img3.jpeg)
 
-
-N> The TabControlAdv.OnTabPanelBoundsAffected() method forces the TabControlAdv to re-layout it's elements.
-
 ## Multiline Support
 
-Multiple level of Tabs can be created by setting the **Multiline** property of the TabControlAdv to true, which places the tabs in more than one line. This allows the tabs to be arranged in multiple lines when the tabs exceed the width of the control, with all the tabitems in view.
+Multiple level of Tabs can be created by setting the `Multiline` property of the TabControlAdv to true, which places the tabs in more than one line. This allows the tabs to be arranged in multiple lines when the tabs exceed the width of the control, with all the TabItems in view.
 
-The tabitem's text can be placed in more than one line by setting the **MultilineText** property.
+The TabItem's text can be placed in more than one line by setting the `MultilineText` property.
+
+The `KeepSelectedTabInFrontRow` property will bring the selected tab to the front row (applicable only in the case of Multiline Tabs).
 
 <table>
 <tr>
@@ -165,8 +162,6 @@ Me.tabControlAdv1.KeepSelectedTabInFrontRow = True
 ![](TabControlAdv_images/TabControlAdv_img5.jpeg)
 
 
-The **KeepSelectedTabInFrontRow** property will bring the selected tab to the front row (applicable only in the case of Multiline Tabs).
-
 ## UseMnemonic
 
 This property specifies whether the TabControlAdv interprets the Ampersand character (&) as an Access key prefix character or not. The default value is set to False.
@@ -189,7 +184,7 @@ Gets / sets the value which determines whether the TabControlAdv should interpre
 
 ### Border Settings
 
-The **BorderStyle** property of TabControlAdv can be used to set the border styles for the TabPages.
+The `BorderStyle` property of TabControlAdv can be used to set the border styles for the TabPages.
 
 The three types of border styles are given below.
 
@@ -212,7 +207,7 @@ Gets / sets the border styles for the tabpages. It includes the following styles
 
 #### FixedSingleBorderColor
 
-The **FixedSingleBorderColor** property is used to set the border color of the TabPage in the TabControlAdv when the BorderStyle is set to FixedSingle.
+The `FixedSingleBorderColor` property is used to set the border color of the TabPage in the TabControlAdv when the BorderStyle is set to FixedSingle.
 
 <table>
 <tr>
@@ -265,7 +260,7 @@ Allows the users to modify the size of the image.</td><td>
 Size</td></tr>
 </table>
 
-### Inserting GIF Image
+#### Inserting GIF Image
 
 The code should be in the following format:
 
