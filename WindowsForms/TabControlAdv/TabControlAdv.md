@@ -296,7 +296,7 @@ N> Only when the ImageIndex property is -1, Image from the Image property will b
 
 TabControlAdv now allows to prevent a specific Tab from being moved on TabControlAdv. This is achieved by using the property named **TabMoving**.
 
-{% tas %}
+{% tabs %}
 {% highlight c# %}
 
 //Prevents moving the tab.
