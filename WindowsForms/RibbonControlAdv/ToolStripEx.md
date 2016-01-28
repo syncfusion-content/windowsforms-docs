@@ -1,3 +1,12 @@
+---
+layout: post
+title: ToolStripEx | WindowsForms | Syncfusion
+description:  toolstripex
+platform: WindowsForms
+control: RibbonControlAdv 
+documentation: ug
+---
+
 # ToolStripEx
 
 The ToolStrip family of controls provides common interfaces for producing user interface elements for Windows Forms. Essential Tools has come up with ToolStripEx which, exhibits advanced features.

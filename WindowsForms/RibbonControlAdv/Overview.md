@@ -1,3 +1,12 @@
+----
+layout: post
+title: Overview | WindowsForms | Syncfusion
+description: overview
+platform: WindowsForms
+control: RibbonControlAdv 
+documentation: ug
+----
+
 # Overview
 
 Ribbon illustrates the implementation of Office UI with Ribbon items and Backstage. Also RibbonWindow has been implemented for giving a themed Office UI look and feel for the traditional window. Functionality of keyboard navigation, Tooltips and Keytips are provided for access to items present in the ribbon.
