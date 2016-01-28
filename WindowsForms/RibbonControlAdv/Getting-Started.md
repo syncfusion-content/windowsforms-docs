@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting-Started | WindowsForms | Syncfusion
+description:  getting started
+platform: WindowsForms
+control: RibbonControlAdv 
+documentation: ug
+---
+
 # Getting Started
 
 This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
