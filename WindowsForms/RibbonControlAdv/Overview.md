@@ -19,7 +19,7 @@ Ribbon illustrates the implementation of Office UI with Ribbon items and Backsta
 * RibbonPanel
 * ToolStripTabItem
 * ToolStripItems
-* ToolStripEx
+* ToolStripEx 
 
 ## Key Features
 
