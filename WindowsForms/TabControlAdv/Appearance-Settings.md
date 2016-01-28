@@ -17,7 +17,7 @@ This section discusses the various Background Settings available in TabControlAd
 
 ### BackgroundImage Settings
 
-Essential TabControlAdv provide a set of options to customize the images. 
+Essential TabControlAdv provides a set of options to customize the images. 
 
 The TabControlAdv can have,
 
@@ -27,12 +27,12 @@ The TabControlAdv can have,
 
 #### Images in TabItems
 
-To set images to the TabItems, add an ImageListControl and populate it with the required images. Then set the ImageIndex property of the TabPage to one of the indices, to display the corresponding image to the left of the text by default.
+To set images to the TabItems, add an `ImageListControl` and populate it with the required images. Then set the `ImageIndex` property of the TabPage to one of the indices, to display the corresponding image to the left of the text by default.
 
 ![](Appearance-Settings_images/Appearance-Settings_img1.jpeg)
 
 
-**ImageAlignmentR** property allows you to set the Tab's text and image relation. By default the image appears to the left and the text appears to the right. This setting can be changed using one of the below given options.
+`ImageAlignmentR` property allows you to set the Tab's text and image relation. By default the image appears to the left and the text appears to the right. This setting can be changed using one of the below given options.
 
 <table>
 <tr>
