@@ -269,10 +269,7 @@ Size</td></tr>
 
 The code should be in the following format:
 
-{& tabs %}
-
 {% highlight c# %}
-
 
 this.tabPageAdv.Image = Image.FromFile(imagepath);
 
@@ -290,7 +287,7 @@ this.tabPageAdv.ImageSize = new System.Drawing.Size(16,16);
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 N> Only when the ImageIndex property is -1, Image from the Image property will be displayed or else Image from ImageList will be displayed.
 
