@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: TabControlAdv | WindowsForms | Syncfusion
 description: tabcontroladv
