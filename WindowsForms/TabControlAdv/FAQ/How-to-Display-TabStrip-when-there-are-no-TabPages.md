@@ -7,14 +7,13 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to Display TabStrip when there are no TabPages
+# How to Display TabStrip when there are no TabPages?
 
-The TabStrip can be made visible even if there are no TabPages added. The TabControlAdv has a ReserveTabSpace property which makes the tabstrip visible when set to True and ReservedSpace property that is used to specify the height of the tabstrip when the above bool property is enabled.
+The TabStrip can be made visible even if there are no TabPages added. The TabControlAdv has a `ReserveTabSpace` property which makes the tabstrip visible when set to True.`ReservedSpace` property is used to specify the height of the tabstrip when the above bool property is enabled.
 
 {% tabs %}
 
 {% highlight c# %}
-
 
 
 //Setting the visibility of tabstrip.

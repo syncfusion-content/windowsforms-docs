@@ -7,7 +7,7 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to prevent Tabs from getting realigned when in Multiline mode
+# How to prevent Tabs from getting realigned when in Multiline mode?
 
 We will be making this a property based feature in a future version. For now, derive from our base TabControlExt class and do the following. 
 

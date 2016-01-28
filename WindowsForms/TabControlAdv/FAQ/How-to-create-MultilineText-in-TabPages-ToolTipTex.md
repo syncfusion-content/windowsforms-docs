@@ -7,9 +7,9 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to create MultilineText in TabPage's ToolTipText
+# How to create MultilineText in TabPage's ToolTipText?
 
-Setting the **ShowToolTipText** property of TabControlAdv to 'True' will wrap the text when using the new line character (\n) in the ToolTipText property of TabPageAdv. The new line character (\n) is not supported at design-time.
+Setting the `ShowToolTipText` property of TabControlAdv to 'True' will wrap the text when using the new line character (\n) in the ToolTipText property of TabPageAdv. The new line character (\n) is not supported at design-time.
 
 {% tabs %}
 

@@ -7,9 +7,9 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to highlight the TabPage text using HotTrack property
+# How to highlight the TabPage text using HotTrack property?
 
-The TabPage text can be highlighted using the **HotTrack** property of the TabControlAdv when the mouse hovers over it. This can be enabled programmatically using the code snippet given below.
+The TabPage text can be highlighted using the `HotTrack` property of the TabControlAdv when the mouse hovers over it. This can be enabled programmatically using the code snippet given below.
 
 {% tabs %}
 

@@ -7,14 +7,13 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to dynamically create a Form and add it to a Tab
+# How to dynamically create a Form and add it to a Tab?
 
 Here is a code sample which demonstrates how you could dynamically create a Form and add that form to a new Tab.
 
 {% tabs %}
 
 {% highlight c# %}
-
 
 
 //Form2 is the dynamically created form in your project that needs to be added to a Tab.
