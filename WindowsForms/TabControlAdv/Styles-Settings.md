@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles-Settings | WindowsForms | Syncfusion
 description: styles settings
