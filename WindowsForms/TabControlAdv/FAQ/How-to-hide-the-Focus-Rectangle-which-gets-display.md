@@ -7,9 +7,9 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to hide the Focus Rectangle which gets displayed on the selected Tab
+# How to hide the Focus Rectangle which gets displayed on the selected Tab?
 
-The focus rectangle can be hidden by setting the **FocusOnTabClick** property to False. This can be done programmatically using the code snippet given below.
+The focus rectangle can be hidden by setting the `FocusOnTabClick` property to False. This can be done programmatically using the code snippet given below.
 
 {% tabs %}
 

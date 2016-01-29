@@ -29,7 +29,7 @@ The various TabPrimitives are,
 
 N> The TabControlAdv.HitTestTabs() method can be used to return the tab at the specified location.
 
-### TabPrimitives Features
+## TabPrimitives Features
 
 Apart from doing the defined task of Navigation, TabPrimitivesHost comes with options for adding Images, ToolTips and enabling the Visible property for each TabPrimitive.
 
@@ -39,14 +39,14 @@ Apart from doing the defined task of Navigation, TabPrimitivesHost comes with op
 
 N> You can set the other properties for adding Images and ToolTips for the TabPrimitives using the TabPrimitives Collection Editor.
 
-### Creating TabPrimitives
+## Creating TabPrimitives
 
 The TabPrimitives can be added to the TabControlAdv by using either of the following ways,
 
 * Through Designer
 * Through Code-Behind
 
-#### Through Designer
+### Through Designer
 
 To create TabPrimitives through designer, follow the steps given below.
 
@@ -67,7 +67,7 @@ To create TabPrimitives through designer, follow the steps given below.
    ![](TabPrimitives_images/TabPrimitives_img7.jpeg)
 
 
-#### Through Code-Behind
+### Through Code-Behind
 
 {% tabs %}
 
@@ -122,10 +122,10 @@ Private Me.tabControlAdv1.TabPrimitivesHost.Visible = True
 
 {% endtabs %}
 
-N> After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True. Now the TabPrimitives added will be visible in the TabControlAdv.
+N> After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True. Now the added TabPrimitives will be visible in the TabControlAdv.
 
-**SwitchPagesForDialogKeys** property available for the TabControlAdv specifies if the control should switch TabPages on pressing Ctrl+Tab or Ctrl+Shift+Tab.
+`SwitchPagesForDialogKeys` property available for the TabControlAdv specifies if the control should switch TabPages on pressing Ctrl+Tab or Ctrl+Shift+Tab.
 
-The TabPrimitiveHost property allows to customize the navigation and close buttons by defining it through the TabPrimitives Property Collection. The TabPrimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First / Previous / Next / LastTab, Next / PreviousPage and Close / DropDown options.
+The `TabPrimitiveHost` property allows to customize the navigation and close buttons by defining it through the `TabPrimitives` Property Collection. The TabPrimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First / Previous / Next / LastTab, Next / PreviousPage and Close / DropDown options.
 
 ![](TabPrimitives_images/TabPrimitives_img10.jpeg)

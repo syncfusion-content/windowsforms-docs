@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Styles Settings
+# Style Settings
 
 This section discusses the various Style Settings available in TabControlAdv.
 
@@ -23,13 +23,13 @@ The Renderer property returns the current 'Syncfusion.Windows.Forms.Tools.ITabRe
 
 Once you have a Custom ITabRenderer implementation, you can, if necessary, make it available to the TabControlAdv at design-time. To do so, 
 
-1. First select the Add Custom Tabs entry in the drop-down list that pops-up from the TabStyle property editor. This will insert a new DesignTimeTabTypeLoader component into your forms designer. 
+1. First select the Add Custom Tabs entry in the drop-down list that pops-up from the TabStyle property editor. This will insert a new `DesignTimeTabTypeLoader` component into your forms designer. 
 
    ![](Styles-Settings_images/Styles-Settings_img3.jpeg)
 
 
 
-2. Insert the fully qualified type name of your Custom TabRenderer class (for example: Syncfusion.Samples.Tools.TabRendererNotched) to the DesignTimeTabTypeLoader's TypesToLoadList. This will try to load your class into the DesignTimeTabTypeLoader's TypesToLoadList, assuming the type is in the same project as the designer or the assembly in which this type resides is referenced. You will now find an entry in the TabControlAdv.TabStyle editor list corresponding to your Custom TabRenderer. 
+2. Insert the fully qualified type name of your Custom TabRenderer class (for example: Syncfusion.Samples.Tools.TabRendererNotched) to the DesignTimeTabTypeLoader's TypesToLoadList. This will try to load your class into the DesignTimeTabTypeLoader's TypesToLoadList, assuming the type is in the same project as the designer or the assembly in which this type resides is referenced. You will now find an entry in the `TabStyle` editor list corresponding to your Custom TabRenderer. 
 
    ![](Styles-Settings_images/Styles-Settings_img4.jpeg)
 
@@ -52,7 +52,7 @@ Description</th></tr>
 <tr>
 <td>
 Alignment</td><td>
-Specifies the alignment of tabitems with respect to the tab pages. The options include:TopBottomLeftRight</td></tr>
+Specifies the alignment of tabitems with respect to the tab pages. The options include:Top,Bottom,Left,Right</td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
@@ -78,8 +78,6 @@ Gets / sets the distance, in pixels, between the right edge of the control and t
 
 {% highlight c# %}
 
-
-
 this.tabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left;
 
 this.tabControlAdv1.TabGap = 2;
@@ -98,11 +96,6 @@ Me.tabControlAdv1.TabGap = 2
 
 {% endtabs %}
 
-{% seealso %}
-
-[TabStyles](/windowsforms/tabs/styles-settings#tabstyles)
-
-{% endseealso %}
 
 ## Text Alignment
 
@@ -146,7 +139,7 @@ Me.tabControlAdv1.TextLineAlignment = System.Drawing.StringAlignment.Near
 
 ## SizeMode
 
-The SizeMode of the TabStrip allows to position the TabItems according to the selected options.
+The `SizeMode` of the TabStrip allows to position the TabItems according to the selected options.
 
 <table>
 <tr>
@@ -181,8 +174,6 @@ this.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillTo
 
 {% highlight vbnet %}
 
-
-
 Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.Normal
 
 Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.Fixed
@@ -197,27 +188,9 @@ Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillToRi
 
 ![](Styles-Settings_images/Styles-Settings_img6.jpeg)
 
-
-The below methods are raised when the TabControlAdv is resized.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-AutoSize</td><td>
-Specifies whether a control should automatically resize itself to fit it's contents. The default value is set to False.</td></tr>
-<tr>
-<td>
-AutoSizeMode</td><td>
-Specifies the mode by which the user interface element automatically resizes itself. The options include:**GrowOnly** - This is used only when the controls have to be expanded.**GrowAndShrink** - This is used when the controls have to be expanded and shrunk. </td></tr>
-</table>
-
 ## TabStyles
 
-TabControlAdv provides options to customize the TabStyle settings. Styles can be set through **TabStyle** property.
+TabControlAdv provides options to customize the TabStyle settings. Styles can be set through `TabStyle` property.
 
 <table>
 <tr>
@@ -253,12 +226,11 @@ Given below are the various TabStyles along with the Metro, Office 2007 Style su
 
 ## Custom Color Schemes
 
-Custom colors can also be applied to the TabControlAdv. Use the below code snippet.
+Custom colors can also be applied to the TabControlAdv. 
 
 {% tabs %}
 
 {% highlight c# %}
-
 
 //Set the below code for applying the managed color scheme.
 
@@ -271,7 +243,6 @@ Office2007Colors.ApplyManagedColors(this, Color.Green);
 {% endhighlight %}
 
 {% highlight vbnet %}
-
 
 
 'Set the below code for applying the managed color scheme.

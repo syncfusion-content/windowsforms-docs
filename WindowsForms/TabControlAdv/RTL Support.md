@@ -10,7 +10,7 @@ documentation: ug
 
 # RTL Support
 
-TabControlAdv allows the TabItems to be drawn from right to left. This can be done by setting the **RightToLeft** property to Yes.
+TabControlAdv allows the TabItems to be drawn from right to left. This can be done by setting the `RightToLeft` property to Yes.
 
 This property aligns the Tabs and the text from right to left which proves to be helpful for the Right-To-Left languages.
 
@@ -24,16 +24,14 @@ Description</th></tr>
 RightToLeft</td><td>
 Specifies to draw the tabs and the text from right to left. The default value is No.</td></tr>
 </table>
+
 ![](RTL-Support_images/RTL-Support_img1.jpeg)
 
+## Rotating Tabs
 
+`RotateTabsWhenRTL` property can be used to rotate the tabs which are aligned to the left and right of the TabPages. This specifies whether a tab should be drawn from left to right or from right to left. The default value is False.
 
-### Rotating Tabs
-
-**RotateTabsWhenRTL** property can be used to rotate the tabs which are aligned to the left and right of the TabPages. This specifies whether a tab should be drawn from left to right or from right to left. The default value is False.
-
-When the RightToLeft mode is activated and **RotateTabsWhenRTL** property is enabled, tab rotation is allowed.
-
+When the RightToLeft mode is activated and `RotateTabsWhenRTL` property is enabled, tab rotation is allowed.
 
 <table>
 <tr>
@@ -72,9 +70,9 @@ Me.tabControlAdv1.RotateTabsWhenRTL = True
 {% endtabs %}
 
 
-### Rotating Text
+## Rotating Text
 
-**RotateTextWhenVertical** property can be used to rotate the text of the TabItems which are aligned to the left and right of the TabPages. This displays the tabs horizontally and provides better user readability by displaying the TabItem's text in a horizontal fashion.
+`RotateTextWhenVertical` property can be used to rotate the text of the TabItems which are aligned to the left and right of the TabPages. This displays the tabs horizontally and provides better user readability.
 
 <table>
 <tr>
