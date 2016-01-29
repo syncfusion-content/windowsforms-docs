@@ -1,11 +1,11 @@
-----
+---
 layout: post
 title: Overview | WindowsForms | Syncfusion
 description: overview
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
-----
+---
 
 # Overview
 
