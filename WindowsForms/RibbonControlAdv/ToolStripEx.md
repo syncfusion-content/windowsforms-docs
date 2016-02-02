@@ -11,7 +11,7 @@ documentation: ug
 
 The ToolStrip family of controls provides common interfaces for producing user interface elements for Windows Forms. Essential Tools has come up with ToolStripEx which, exhibits advanced features.
 
-**Note** :**__ __**It**__ __**is**__ __**also**__ __**possible**__ __**to**__ __**add**__ __**ToolStripEx**__ __**directly**__ __**from**__ __**the**__ __**toolbox**__ __**as**__ __**it**__ __**is**__ __**also**__ __**an**__ __**individual**__ __**control.
+N> It is also possible to add ToolStripEx directly from the toolbox as it is also an individual control.
 
 ## Style Settings
 
@@ -154,8 +154,7 @@ RenderMode<br/><br/></td><td>
 Specifies the painting style of the ToolStripEx. Options are,<br/><br/>System,<br/><br/>Professional and<br/><br/>ManagerRenderMode.(Default)<br/><br/></td></tr>
 </table>
 
-![](ToolStripEx_images/ToolStripEx_img4.jpeg)
-__**Note**__** :**__ __**These**__ __**properties**__ __**can**__ __**be**__ __**easily**__ __**set**__ __**through**__ __**Smart**__ __**tag**__ __**of**__ __**the**__ __**ToolStripEx**____**.**__ __**See**__ __**SmartTag**__ __**Options**__ __**in**__ __**DesignTime**__ __**Features**.
+N> These properties can be easily set through Smart tag of the ToolStripEx. See SmartTag Options in DesignTime Features.
 
 {% tabs %}
 
@@ -195,8 +194,7 @@ OfficeColorScheme<br/><br/></td><td>
 Sets the office color schemes for the control. Blue, Black and Silver schemes can be applied. <br/><br/></td></tr>
 </table>
 
-![](ToolStripEx_images/ToolStripEx_img6.jpeg)
-____**Note**____**:**__ __**This**__ __**settings**__ __**will**__ __**overwrite**__ __**the**__ __**Panel**____**.**____**OfficeColorScheme**__ __**property**.
+N> This settings will overwrite the Panel.OfficeColorScheme property.
 
 {% tabs %}
 
@@ -319,9 +317,7 @@ Me.toolStripEx2.ShowItemToolTips = True
 {% endhighlight %}
 
 {% endtabs %}
-
-![](ToolStripEx_images/ToolStripEx_img8.jpeg)
-____**Note**____** :**__ __**ToolTip**__ __**text**__ __**for**__ __**the**__ __**ToolStrip**__ __**items**__ __**can**__ __**be**__ __**specified**__ __**using**__ __**the**__ __**respective**__ __**<**____**Control**____**>.**TooltipText**__ __**properties**.**__ __**Ex**__. __**toolStripGallery1**____**.**____**ToolTipText**__ __**property**__ __**sets**__ __**the**__ __**tooltip**__ __**for**__ __**gallery**__ __**item**__**.**__ 
+N> ToolTip text for the ToolStrip items can be specified using the respective <Control>.TooltipText properties. Ex, toolStripGallery1.ToolTipText property sets the tooltip for gallery item. 
 
 ## DesignTime Features 
 

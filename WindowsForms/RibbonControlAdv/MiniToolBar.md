@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MiniToolBar | WindowsForms | Syncfusion
+title: MiniToolbar | WindowsForms | Syncfusion
 description: minitoolbar
 platform: WindowsForms
 control: RibbonControlAdv 
@@ -11,181 +11,146 @@ documentation: ug
 
 Essential Tools comes with MiniToolBar control with similar look and feel of MS Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focussed on it, it will be prominent to the users. 
 
+![](MiniToolbar_images/MiniToolbar_img4.jpg)
+
 N> MiniToolBar control uses a ToolStripPanelItem to hold its options.
-
-![](MiniToolBar_images/MiniToolBar_img2.jpeg) 
-
-
-
-## Color Schemes in MiniToolBar
-
-MiniToolbar supports all the three ColorSchemes of Office2007, which can be set using the ColorScheme property.
-
-{% highlight c# %}
-
-this.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver;
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-Me.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver
-
-{% endhighlight %}
-
-
-![](MiniToolBar_images/MiniToolBar_img3.jpeg) 
-
-
-
-![](MiniToolBar_images/MiniToolBar_img4.jpeg)
-
-
-
- ![](MiniToolBar_images/MiniToolBar_img5.jpeg)
-
-
 
 ## Creating MiniToolBar
 
-The sub topics under this section will guide you to create a MiniToolBar control, add controls to it and then associate it with a control. The topics are as follows.
+MiniToolBar adds controls to it and then associate it with a control.
 
-## Through Designer
+### Through Designer
 
 To add a MiniToolBar to the form, follow the below given steps.
 
 * Drag and drop a MiniToolBar from the toolbox. 
 
-![](MiniToolBar_images/MiniToolBar_img6.jpeg)
-
-* Open the Items Collection Editor of the MiniToolBar.
-
-![](MiniToolBar_images/MiniToolBar_img7.jpeg)
+![](MiniToolbar_images/MiniToolbar_img1.jpeg)
 
 
-* Add the required items into the MiniToolBar from the Items collection Editor and click Ok. 
+* Open the Items Collection Editor of the MiniToolBar and add the required items into the MiniToolBar from the Items collection Editor and click Ok. 
 
-![](MiniToolBar_images/MiniToolBar_img8.jpeg)
+![](MiniToolbar_images/MiniToolbar_img2.jpeg)
+
 
 * Now, drag and drop the control with which the MiniToolBar is to be associated, for eg. a RichTextBox.
 * Set the MiniToolBar's AssociatedControl property to the control to which this is to be associated.
 
-![](MiniToolBar_images/MiniToolBar_img9.jpeg)
-
+![](MiniToolbar_images/MiniToolbar_img3.jpeg)
 
 
 * Run the sample and right-click on the RichTextBox to view the MiniToolBar. 
 
-![](MiniToolBar_images/MiniToolBar_img10.jpeg) 
-
-
-
 N> You can also show a MiniToolBar by just selecting the text, as in MSOffice2007, using MouseUp event of the particular control.
 
-A sample which demonstrates this features is available in the below sample installation location.
-
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
-
-
-
-## Through Code
+### Through Code
 
 This section guides you with the steps to add a MiniToolbar and associating with a RichTextBox control programmatically.
 
-*  Add the given namespaces.
+* Add the given namespaces.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
-using Syncfusion.Windows.Forms;  
+using Syncfusion.Windows.Forms;  
 
-using Syncfusion.Windows.Forms.Tools; 
+using Syncfusion.Windows.Forms.Tools;   
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Imports Syncfusion.Windows.Forms
+
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% endtabs %}
 
-Imports Syncfusion.Windows.Forms
-
-Imports Syncfusion.Windows.Forms.Tools
-
-{% endhighlight %}
 
 * Declare and initialize the MiniToolBar control. Also declare the controls to be added to the MiniToolBar, and also the control, in this case RichTextBow, to which MiniToolBar is to be associated.
 
+{% tabs %}
+
 {% highlight c# %}
 
-private Syncfusion.Windows.Forms.Tools.MiniToolBar MiniToolBar;
+private Syncfusion.Windows.Forms.Tools.MiniToolBar MiniToolBar;
 
-private System.Windows.Forms.RichTextBox richTextBox1;
+private System.Windows.Forms.RichTextBox richTextBox1;
 
 
 
 //Control to be added to the MiniToolBar
 
-private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem MiniToolBarPanelItem;
+private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem MiniToolBarPanelItem;
 
-private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem PanelItem1;
+private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem PanelItem1;
 
-private System.Windows.Forms.ToolStripComboBox FontFaceCombo;
+private System.Windows.Forms.ToolStripComboBox FontFaceCombo;
 
 
 
 //initializing
 
-this.MiniToolBar = new Syncfusion.Windows.Forms.Tools.MiniToolBar();
+this.MiniToolBar = new Syncfusion.Windows.Forms.Tools.MiniToolBar();
 
-this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 
-this.MiniToolBarPanelItem = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+this.MiniToolBarPanelItem = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
 
-this.PanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+this.PanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
 
-this.FontFaceCombo = new System.Windows.Forms.ToolStripComboBox();
+this.FontFaceCombo = new System.Windows.Forms.ToolStripComboBox();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-Private MiniToolBar As Syncfusion.Windows.Forms.Tools.MiniToolBar
+Private MiniToolBar As Syncfusion.Windows.Forms.Tools.MiniToolBar
 
-Private richTextBox1 As System.Windows.Forms.RichTextBox
+Private richTextBox1 As System.Windows.Forms.RichTextBox
 
 
 
 'Control to be added to the MiniToolBar
 
-Private MiniToolBarPanelItem As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
+Private MiniToolBarPanelItem As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
 
-Private PanelItem1 As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
+Private PanelItem1 As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
 
-Private FontFaceCombo As System.Windows.Forms.ToolStripComboBox
+Private FontFaceCombo As System.Windows.Forms.ToolStripComboBox
 
 
 
 'Initializing
 
-Me.MiniToolBar = New Syncfusion.Windows.Forms.Tools.MiniToolBar()
+Me.MiniToolBar = New Syncfusion.Windows.Forms.Tools.MiniToolBar()
 
-Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
+Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
 
-Me.MiniToolBarPanelItem = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
+Me.MiniToolBarPanelItem = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
 
-Me.PanelItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
+Me.PanelItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
 
-Me.FontFaceCombo = New System.Windows.Forms.ToolStripComboBox()
+Me.FontFaceCombo = New System.Windows.Forms.ToolStripComboBox()
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 
 * Add the required items into the MiniToolBar.
+
+{% tabs %}
 
 {% highlight c# %}
 
 //Adding Panel
 
-this.MiniToolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.MiniToolBarPanelItem});
+this.MiniToolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.MiniToolBarPanelItem});
 
 
 
@@ -193,27 +158,27 @@ this.MiniToolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.
 
 this.MiniToolBarPanelItem.ForeColor = System.Drawing.Color.MidnightBlue;
 
-this.MiniToolBarPanelItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.PanelItem1});
+this.MiniToolBarPanelItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.PanelItem1});
 
 
 
 //Customizing the Panel
 
-this.PanelItem1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.FontFaceCombo});
+this.PanelItem1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.FontFaceCombo});
 
 
 
 //Customizing the FontFaceCombo
 
-this.FontFaceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;    
+this.FontFaceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;     
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Adding Panel
 
-Me.MiniToolBar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MiniToolBarPanelItem})
+Me.MiniToolBar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MiniToolBarPanelItem})
 
 
 
@@ -221,13 +186,13 @@ Me.MiniToolBar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Mini
 
 Me.MiniToolBarPanelItem.ForeColor = System.Drawing.Color.MidnightBlue
 
-Me.MiniToolBarPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PanelItem1})
+Me.MiniToolBarPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PanelItem1})
 
 
 
 'Customizing the Panel
 
-Me.PanelItem1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FontFaceCombo})
+Me.PanelItem1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FontFaceCombo})
 
 
 
@@ -237,39 +202,60 @@ Me.FontFaceCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 
 {% endhighlight %}
 
+{% endtabs %}
 
-* Set the MiniToolBar's AssociatedControl property to the RichTextBox to which this is to be associated.
 
+
+* Set the MiniToolBar's **AssociatedControl** property to the RichTextBox to which this is to be associated.
+
+{% tabs %}
 
 {% highlight c# %}
 
 //Associates the MiniToolBar with the RichTextBox
 
-this.MiniToolBar.AssociatedControl = this.richTextBox1;    
+this.MiniToolBar.AssociatedControl = this.richTextBox1;         
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Associates the MiniToolBar with the RichTextBox
 
-Me.MiniToolBar.AssociatedControl = Me.richTextBox1
+Me.MiniToolBar.AssociatedControl = Me.richTextBox1
 
 {% endhighlight %}
 
+{% endtabs %}
 
 * Right-click on the RichTextBox to view the MiniToolBar.
 
 
+## Color Schemes in MiniToolBar
 
-![](MiniToolBar_images/MiniToolBar_img12.jpeg)
+MiniToolbar supports all the three ColorSchemes of Office2007, which can be set using the **ColorScheme** property.
 
+{% tabs %}
 
+{% highlight c# %}
 
-A sample which demonstrates how to create and add controls to the MiniToolBar is available in the below sample installation location.
+this.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver;
 
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
+{% endhighlight %}
 
+{% highlight vb %}
+
+Me.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MiniToolbar_images/MiniToolbar_img5.jpg)
+
+![](MiniToolbar_images/MiniToolbar_img6.jpg)
+
+![](MiniToolbar_images/MiniToolbar_img7.jpg)
 ## MiniToolBar Events
 
 This section discusses about various events that can be handled for the MiniToolBar control. Following are the events covered.
@@ -278,23 +264,21 @@ This section discusses about various events that can be handled for the MiniTool
 
 This event is handled when a ToolStripItem has been added to the ToolStrip's Item collection.
 
-#### Event Data
+**Event** **Data**
 
 The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArgs containing data related to this event. The following type ToolStripItemEventArgs member provide information specific to this event.
 
-_Table_ _777_: _Member Table_
-
 <table>
 <tr>
-<th>
-Member</th><th>
-Description</th></tr>
+<td>
+**Member**<br/><br/></td><td>
+**Description**<br/><br/></td></tr>
 <tr>
 <td>
-Item</td><td>
-Gets a System.Windows.Forms.ToolStripItem for which to handle events.</td></tr>
+Item<br/><br/></td><td>
+Gets a System.Windows.Forms.ToolStripItem for which to handle events.<br/><br/></td></tr>
 </table>
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -306,8 +290,6 @@ private void miniToolBar1_ItemAdded(object sender, ToolStripItemEventArgs arg)
 
 Console.WriteLine("ItemAdded event is raised");
 
-
-
 e.Item = true;
 
 //Display the ToolStripItem
@@ -316,18 +298,15 @@ Console.WriteLine("ToolStrip Item Name : " + arg.Item.ToString());
 
 }
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub miniToolBar1_ItemAdded(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
 
 You can see the below line in output window during runtime.
 
 Console.Write("ItemAdded event is raised")
-
-
 
 e.Item = True
 
@@ -337,30 +316,29 @@ Console.Write("ToolStrip Item Name : " + arg.Item.ToString)
 
 End Sub
 
-
 {% endhighlight %}
 
-## ItemClicked Event
+{% endtabs %}
+
+### ItemClicked Event
 
 This event is handled when a ToolStripItem has been added to the ToolStrip's Item collection.
 
-#### Event Data
+**Event** **Data**
 
 The ToolStripItemClickedEventHandler receives an argument of type ToolStripItemEventArgs containing data related to this event. The following type ToolStripItemEventArgs member provide information specific to this event.
 
-_Table_ _778_: _Member Table_
-
 <table>
 <tr>
-<th>
-Member</th><th>
-Description</th></tr>
+<td>
+**Member**<br/><br/></td><td>
+**Description**<br/><br/></td></tr>
 <tr>
 <td>
-ClickedItem</td><td>
-Gets the item that is clicked on System.Windows.Forms.Toolstrip.</td></tr>
+ClickedItem<br/><br/></td><td>
+Gets the item that is clicked on System.Windows.Forms.Toolstrip.<br/><br/></td></tr>
 </table>
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -380,7 +358,7 @@ Console.WriteLine("ToolStrip Item Name : " + arg.ClickedItem.ToString());
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub miniToolBar1_ItemClicked(ByVal sender As Object, ByVal e As ToolStripItemClickedEventArgs)
 
@@ -396,28 +374,27 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ### ItemRemoved Event
 
 This event is handled when a ToolStripItem has been removed from the ToolStrip's Item collection.
 
-#### Event Data
+**Event** **Data**
 
 The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArgs containing data related to this event. The following ToolStripItemEventArgs member provide information specific to this event.
 
-_Table_ _779_: _Member Table_
-
 <table>
 <tr>
-<th>
-Member</th><th>
-Description</th></tr>
+<td>
+**Member**<br/><br/></td><td>
+**Description**<br/><br/></td></tr>
 <tr>
 <td>
-Item</td><td>
-Gets a System.Windows.Forms.ToolStripItem for which to handle events.</td></tr>
+Item<br/><br/></td><td>
+Gets a System.Windows.Forms.ToolStripItem for which to handle events.<br/><br/></td></tr>
 </table>
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -431,7 +408,7 @@ e.Item = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub miniToolBar1_ItemClicked(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
 
@@ -439,13 +416,15 @@ e.Item = True
 
 End Sub
 
-
 {% endhighlight %}
 
+{% endtabs %}
 
 ### BeginDrag Event
 
 This event is handled when the toolstrip has started to move with a ToolStripPanel.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -459,10 +438,9 @@ Console.Write("BeginDrag Event is raised");
 
 }
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub miniToolBar1_BeginDrag(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -474,28 +452,27 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ### Opening Event
 
 This event occurs when the drop down is opening.
 
-#### Event Data
+**Event** **Data**
 
 The CancelEventHandler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs members provide information specific to this event.
 
-_Table_ _780_: _Member Table_
-
 <table>
 <tr>
-<th>
-Member</th><th>
-Description</th></tr>
+<td>
+**Member**<br/><br/></td><td>
+**Description**<br/><br/></td></tr>
 <tr>
 <td>
-Cancel</td><td>
-Gets or Sets a value indicating whether the event should be canceled.</td></tr>
+Cancel<br/><br/></td><td>
+Gets or Sets a value indicating whether the event should be canceled.<br/><br/></td></tr>
 </table>
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -511,10 +488,9 @@ e.Cancel=true;
 
 }
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub miniToolBar1_Opening(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 
@@ -526,12 +502,15 @@ e.Cancel=true;
 
 End Sub
 
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Opened Event
 
 This event occurs when the drop down has opened.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -547,7 +526,7 @@ Console.Write(" Opened Event is raised");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub miniToolBar1_Opened(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -558,3 +537,6 @@ Console.Write(" Opened Event is raised");
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
+

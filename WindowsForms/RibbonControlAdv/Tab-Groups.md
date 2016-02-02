@@ -9,27 +9,25 @@ documentation: ug
 
 # Tab Groups
 
-RibbonControlAdv allows to create TabGroups using the TabGroups property available for the RibbonControlAdv.
+RibbonControlAdv allows to create TabGroups using the **TabGroups** property available for the RibbonControlAdv.
 
 ## Creating TabGroup
 
 ### Through Designer
 
-1. Clicking the TabGroup property will pop up a window like the one below and using this, number of groups can be added and customized using the Color, Name and Visible properties provided to the right of the window.
+* Click the TabGroup property of the RibbonControlAdv, TabGroup collection editor is opened. Add the tabgroup using the editor
 
-   ![](Tab-Groups_images/Tab-Groups_img1.jpeg)
+ ![](Tab-Groups_images/Tab-Group_img1.jpeg)
+ 
+* Now create a ToolStripTabItem using the smart tag of the Ribbon.
 
+* Click the TabGroup property in the ToolStripTabItem and select the tabgroup from the available list.
 
-2. Now create a ToolStripTabItem using the smart tag of the Ribbon.
-3. Switch to the properties grid of the ToolStripTabItem, and select the tabgroup you have added through TabGroup property.
+   ![](Tab-Groups_images/Tab-Group_img2.jpeg)
 
-   ![](Tab-Groups_images/Tab-Groups_img2.jpeg)
+* This will display the tab items in the RibbonControlAdv as shown in the image below.
 
-4. This will display the tab items in the RibbonControlAdv as shown in the image below.
-
-   ![](Tab-Groups_images/Tab-Groups_img3.png)
-
-
+   ![](Tab-Groups_images/Tab-Group_img3.jpg)
 
 ### Through Code
 
