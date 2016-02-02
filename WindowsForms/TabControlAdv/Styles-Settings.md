@@ -36,7 +36,7 @@ Once you have a Custom ITabRenderer implementation, you can, if necessary, make 
 
 {% seealso %}
 
-[TabStyles](/windowsforms/tabs/styles-settings#tabstyles)
+[TabStyles](/windowsforms/tabcontroladv/styles-settings#tabstyles)
 
 {% endseealso %}
 
