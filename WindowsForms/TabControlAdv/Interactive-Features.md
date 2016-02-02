@@ -77,7 +77,7 @@ Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 ![](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
-N> Close Button can be set for the whole TabControlAdv by using [TabPrimitives](/windowsforms/tabs/tabprimitives).
+N> Close Button can be set for the whole TabControlAdv by using [TabPrimitives](/windowsforms/tabcontroladv/tabprimitives).
 
 ## ToolTip Support
 
