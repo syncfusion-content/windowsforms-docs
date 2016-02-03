@@ -150,9 +150,7 @@ The ToolStrip family of controls provides common interfaces for producing user i
 ![](GettingStarted_images/GettingStarted_img7.jpeg)
 
 
-![](GettingStarted_images/GettingStarted_img8.jpeg)
-
-__**Note**__**:**__ __**It**__ __**is**__ __**also**__ __**possible**__ __**to**__ __**add**__ __**ToolStripEx**__ __**directly**__ __**from**__ __**the**__ __**toolbox**__ __**as**__ __**it**__ __**is**__ __**also**__ __**an**__ __**individual**__ __**control**____**.**____
+N> It is also possible to add ToolStripEx directly from the toolbox as it is also an individual control.
 
 ### Adding Controls to ToolStripEx
 
@@ -306,8 +304,7 @@ The dialog comes with Office2007 look and feel.
 ![](GettingStarted_images/GettingStarted_img19.jpeg)
 
 
-![](GettingStarted_images/GettingStarted_img20.jpeg)
-**Note**_**:**__ __**You**__ __**can**__ __**also**__ __**add**__ __**items**__ __**to**__ __**the**__ __**Quick**__ __**Access**__ __**Toolbar**__ __**by**__ __**enabling**__ __**the**__ __**UseInQuickAccessMenu**__ __**On**__ __**RibbonControl1**__ __**extended**__ __**property**__ __**for**__ __**any**__ __**control**__ __**in**__ __**the**__ __**designer**_.
+N> You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer.
 
 A sample code snippet which adds a ToolStripButton named "File" to the QuickAccessToolbar through code. 
 
@@ -366,7 +363,7 @@ Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 
 Ribbon enables you to work in the document and Backstage enables you to work with the document. Using this you can alter contents and provide end-user options that are related to specific solution requirements.
 
-__**Note**__**:**__ __**Backstageview**__ __**can**__ __**not**__ __**be**__ __**accessed**__ __**when**__ __**Ribbon**__ __**style**__ __**is**__ __**set**__ __**to**__ __**Office2007**.
+N> Backstageview can not be accessed when Ribbon style is set to Office2007.
 
 The following are steps to create a BackStageView:
 
@@ -601,13 +598,11 @@ The panels are:
 
 Each Panel has Items property which invokes the Items Collection Editor. Using this editor you can add the toolstrip items easily.
 
-Property__ __Table
-
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Items<br/><br/></td><td>
@@ -643,8 +638,8 @@ Property Table
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
+<th>
+Property<br/><br/></th><td>
 **Description**<br/><br/></td></tr>
 <tr>
 <td>

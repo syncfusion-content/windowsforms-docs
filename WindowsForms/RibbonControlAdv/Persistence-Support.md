@@ -11,7 +11,7 @@ documentation: ug
 
 RibbonControlAdv comes with persistence support. Using this we can restore the saved state of the ribbon control.
 
-#### Persistence works for the following.
+## Persistence works for the following.
 
 * The items in the QuickAccessToolBar that are added through the "Customize Quick Access ToolBar" can be persisted.
 * Items added through the context menu that appears while clicking the dropdown arrow to the right of the QuickAccessToolBar can be persisted.
