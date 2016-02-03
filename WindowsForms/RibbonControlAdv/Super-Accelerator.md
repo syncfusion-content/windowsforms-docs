@@ -9,7 +9,7 @@ documentation: ug
 
 # Super Accelerator
 
-SuperAccelerator is a component that is used to accelerate the click event of items by using a Single key stroke without mouse hovering on it.
+To invoke any command using KeyBoard, RibbonControlAdv provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed.
 
 1. Drag-and-drop the SuperAccelerator on your form.
 
@@ -21,7 +21,7 @@ SuperAccelerator is a component that is used to accelerate the click event of it
 
 3. In the appropriate item, use the Accelerator on SuperAccelerator property to set the string value.
 
-   ![](Super-Accelerator_images/Super-Accelerator_img3.jpeg)
+   ![](Super-Accelerator_images/Super-Accelerator_img2.png)
 
 4. To accelerate the item's click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items. 
 
@@ -39,8 +39,6 @@ N> We can make the Accelerator feature to be active or inactive using SuperAccel
 ## Super Accelerator Appearance
 
 This section discusses the appearance settings of a Super Accelerator.
-
-_Table_ _802_: _Property Table_
 
 <table>
 <tr>
@@ -83,27 +81,27 @@ Me.superAccelerator.ForeColor = System.Drawing.Color.Maroon
 
 {% endhighlight %}
 
-![](Super-Accelerator_images/Super-Accelerator_img5.jpeg) 
+![](Super-Accelerator_images/Super-Accelerator_img5.png) 
 
 ## Style
 
-MiniToolBar supports visual styles such as Default, Metro. The style can be set using Style property. 
+SuperAccelerator supports visual styles such as Default, Metro. The style can be set using Style property. 
 
 * Default
 * Metro
 
-The following code example allows you to set the style for the MiniToolBar.
+The following code example allows you to set the style for the superAccelerator.
 
 
 {% highlight c# %}
 
-this.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro;
+this.superAccelerator.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-Me.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+Me.superAccelerator.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
 
 {% endhighlight %}
 

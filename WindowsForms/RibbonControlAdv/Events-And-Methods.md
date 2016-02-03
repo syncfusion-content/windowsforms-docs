@@ -11,9 +11,7 @@ documentation: ug
 
 RibbonControlAdv comes with various events and methods to make easy customization.
 
-### Events
-
-_Table_ _775_: _Events Table_
+## Events
 
 <table>
 <tr>
@@ -82,9 +80,7 @@ Occurs when the OfficeMenuButton is double clicked.</td><td>
 EventArgs</td></tr>
 </table>
 
-### Methods
-
-_Table_ _776_: _Methods Table_
+## Methods
 
 <table>
 <tr>
@@ -119,9 +115,11 @@ RibbonControlAdv1.Header.MainItems.RemoveAt</td><td>
 Removes the specified ToolStripTabItems from the QuickAccessPanel.</td></tr>
 </table>
 
-## SelectedTabItemChanged Event
+### SelectedTabItemChanged Event
 
 This event is handled when selected tab of the RibbonControlAdv is changed. With the SelectedTabChangedEventArgs of this event, we can retrieve the NewSelectedTab and PrevSelectedTab.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -135,7 +133,7 @@ private void ribbonControlAdv1_SelectedTabItemChanged(object sender, SelectedTab
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub ribbonControlAdv1_SelectedTabItemChanged(ByVal sender As Object, ByVal e As SelectedTabChangedEventArgs)
 
@@ -145,13 +143,15 @@ End Sub
 
 {% endhighlight %}
 
-## BeforeCustomizeDropDownPopup Event
+{% endtabs %}
+
+### BeforeCustomizeDropDownPopup Event
 
 RibbonControlAdv has two events BeforeCustomizeDropDownPopup and AfterCustomizeDropDownPopup events that are handled before and after the CustomizeDropDownPopup is activated.
 
-#### Example
-
 The QAT context menu items can be accessed through the DropDownEventArgs of the BeforeCustomizeDropDownPopup event and the QAT context menu can be customized such as adding new items, accessing existing items and so on.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -177,7 +177,7 @@ private void ribbonControlAdv1_BeforeCustomizeDropDownPopup(object sender, DropD
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private newItem As ToolStripButton = New ToolStripButton()
 
@@ -196,3 +196,5 @@ Private Sub ribbonControlAdv1_BeforeCustomizeDropDownPopup(ByVal sender As Objec
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
