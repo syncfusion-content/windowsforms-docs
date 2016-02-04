@@ -37,8 +37,6 @@ Me.ribbonControlAdv1.IsFormManager = True
 
 The below properties deals with Ribbon title settings.
 
-_Table_ _774_: _Property Table_
-
 <table>
 <tr>
 <th>
@@ -58,6 +56,7 @@ TitleColor</td><td>
 Sets the font color of the title.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -69,7 +68,7 @@ this.ribbonControlAdv1.TitleColor = Color.GreenYellow;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ribbonControlAdv1.TitleAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Center
 
@@ -78,3 +77,5 @@ Me.ribbonControlAdv1.TitleFont = New System.Drawing.Font("Arial", 9.75F)
 Me.ribbonControlAdv1.TitleColor = Color.GreenYellow
 
 {% endhighlight %}
+
+{% endtabs %}

@@ -9,50 +9,9 @@ documentation: ug
 
 # Ribbon Form
 
-EssentialStudio now gives a similar look and feel of MS Office 2007, to its Office 2007 controls, using RibbonControlAdv which comes with rounded corners. This section will guide you in creating a Ribbon form using RibbonControlAdv. 
-
-### Creating Ribbon Form
-
-1. Drag and drop the RibbonControlAdv on to the form.
-
-   ![](Ribbon-Form_images/Ribbon-Form_img1.jpeg)
-
-2. To convert an ordinary form to Ribbon form, do the following.
-
-   The forms in the application by default will extend to the Form class. Add the respective namespace and programmatically change it as RibbonForm class.
-
-
-   ~~~ cs
-
-		using Syncfusion.Windows.Forms.Tools;
-
-		public partial class Form1 : RibbonForm 
-
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
-
-		Imports Syncfusion.Windows.Forms.Tools
-
-		Partial Public Class Form1
-
-   ~~~
-   {:.prettyprint }
-
-Inherits RibbonForm
-
-![](Ribbon-Form_images/Ribbon-Form_img2.jpeg)
-
 ## Appearance Settings
 
 This section discusses various appearance and behavior settings of the Ribbon form.
-
-#### Appearance Settings
-
-The appearance of the ribbon form can be controlled using the below properties.
-
-_Table_ _683_: _Property Table_
 
 <table>
 <tr>
@@ -144,8 +103,6 @@ Vista Aero theme support is available for Ribbon Form when used in Vista machine
 
 The property which lets you set borders for the Office2007Style form is as follows.
 
-_Table_ _684_: _Property Table_
-
 <table>
 <tr>
 <th>
@@ -170,10 +127,6 @@ Me.Borders = New System.Windows.Forms.Padding(10)
 
 {% endhighlight %}
 
-![](Ribbon-Form_images/Ribbon-Form_img6.jpeg)
-
-
-
 
 ### Customizing the Top Left Edge
 
@@ -191,5 +144,3 @@ Me.TopLeftRadius = 20
 
 {% endhighlight %}
 
-
-![](Ribbon-Form_images/Ribbon-Form_img7.jpeg)
