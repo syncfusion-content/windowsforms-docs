@@ -41,9 +41,9 @@ The ToolStripItems can be aligned to right or left using Alignment property.
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 BorderStyle<br/><br/></td><td>
@@ -53,9 +53,9 @@ Sets the border style for the ToolStripGallery. The options are,<br/><br/>None (
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Font<br/><br/></td><td>
@@ -69,9 +69,9 @@ Sets the fore color for the display text.<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ScrollerType<br/><br/></td><td>
@@ -87,9 +87,9 @@ Sets the scroller type for the Gallery. The types available are,<br/><br/>Standa
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 RightToLeft<br/><br/></td><td>
@@ -105,9 +105,9 @@ Caption for a ToolStripGallery can be visible by settings the `ShowCaption` prop
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ShowCaption<br/><br/></td><td>
@@ -145,9 +145,9 @@ ToolStripGallery lets you customize the ToolStrip items added to the Gallery usi
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ItemBackColor<br/><br/></td><td>
@@ -157,9 +157,9 @@ Sets the back color for the items.<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ItemDisplayStyle<br/><br/></td><td>

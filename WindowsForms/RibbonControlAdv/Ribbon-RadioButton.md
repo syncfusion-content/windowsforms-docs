@@ -20,9 +20,9 @@ The below properties controls the appearance and behavior of the ToolStripRadioB
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Font<br/><br/></td><td>
@@ -41,9 +41,9 @@ Specifies the alignment of the text in the item. The options are,<br/><br/>TopLe
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Checked<br/><br/></td><td>
@@ -78,9 +78,9 @@ Gets or Sets Group indicator which is used to create groups of ToolStripRadioBut
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoToolTip<br/><br/></td><td>
@@ -95,9 +95,9 @@ Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 RightToLeft<br/><br/></td><td>

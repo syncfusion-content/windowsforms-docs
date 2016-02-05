@@ -18,9 +18,9 @@ The below properties controls the appearance and behavior of the ToolStripComboB
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 BackColor<br/><br/></td><td>
@@ -43,9 +43,9 @@ Sets the text for the ComboBox item.<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Enabled<br/><br/></td><td>
@@ -76,9 +76,9 @@ Sets the display style of the combobox. The styles are,<br/><br/>Flat,<br/><br/>
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoToolTip<br/><br/></td><td>
@@ -93,9 +93,9 @@ Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 RightToLeft<br/><br/></td><td>
@@ -106,9 +106,9 @@ Indicates whether the item should draw right to left for RTL languages.<br/><br/
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Items<br/><br/></td><td>
