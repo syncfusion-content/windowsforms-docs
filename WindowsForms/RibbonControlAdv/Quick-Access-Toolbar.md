@@ -35,6 +35,8 @@ Items / controls can be added to the QuickAccessToolbar by clicking on the Edit 
 
 N> You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer.
 
+N> Ribbon provides option to edit the items at run time also. See [RunTime Customization](/windowsforms/ribboncontroladv/ribbon-customization#adding-item-to-qat-using-customized-window)  for more details. 
+
 The following code snippet allows us to add ToolStripButton to Qucik Access Toolbar.
 
 {% tabs %}
