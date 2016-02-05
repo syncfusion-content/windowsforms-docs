@@ -21,9 +21,9 @@ This section will discuss the style settings available for the ToolStripEx.
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 BorderStyle<br/><br/></td><td>
@@ -55,9 +55,9 @@ The below properties deals with the launcher settings.
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ShowLauncher<br/><br/></td><td>
@@ -97,9 +97,9 @@ The toolstrip can hold a grip, which can be visible by setting the GripStyle pro
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><td>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 GripStyle<br/><br/></td><td>
@@ -141,9 +141,9 @@ ToolStripEx now supports Office12 modes in Ribbon. The properties which applies 
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Office12Mode<br/><br/></td><td>
@@ -185,9 +185,9 @@ Disabling the Office12Mode property will automatically give the Ribbon control, 
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 OfficeColorScheme<br/><br/></td><td>
@@ -222,9 +222,9 @@ By enabling the **AutoSize** property of ToolStripEx, the toolstrip width will b
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoSize<br/><br/></td><td>
@@ -253,9 +253,9 @@ The **ToolStripLayoutStyle** property is used to specify the alignment for the T
 
 <table>
 <tr>
-<td>
-**Constraint**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Constraint<br/><br/></th><td>
+Descriptionh<br/><br/></th></tr>
 <tr>
 <td>
 Flow<br/><br/></td><td>
@@ -341,7 +341,7 @@ Smart Tag of the ToolStripEx opens the Task Windows which lets you to set some i
 The context menu on a toolstrip item provides advanced options which minimizes your time in customizing the ToolStrip container.
 
 ![](ToolStripEx_images/ToolStripEx_img10.jpeg)
-____
+
 
 * Set Image - This options lets you to modify the image for the particular toolstrip item.
 * Enabled - Specifies whether the item is enabled or not.
@@ -388,9 +388,9 @@ The below properties lets you customize caption for the control.
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 CaptionFont<br/><br/></td><td>
@@ -479,9 +479,9 @@ Instead of showing a blank ToolStripEx when collapsed, we can display a text and
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 CollapsedDropDownButtonImage<br/><br/></td><td>

@@ -256,6 +256,7 @@ Me.MiniToolBar.ColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorSch
 ![](MiniToolbar_images/MiniToolbar_img6.jpg)
 
 ![](MiniToolbar_images/MiniToolbar_img7.jpg)
+
 ## MiniToolBar Events
 
 This section discusses about various events that can be handled for the MiniToolBar control. Following are the events covered.
@@ -270,9 +271,9 @@ The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArg
 
 <table>
 <tr>
-<td>
-**Member**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Item<br/><br/></td><td>
@@ -330,9 +331,10 @@ The ToolStripItemClickedEventHandler receives an argument of type ToolStripItemE
 
 <table>
 <tr>
-<td>
-**Member**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
+
 <tr>
 <td>
 ClickedItem<br/><br/></td><td>
@@ -386,9 +388,9 @@ The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArg
 
 <table>
 <tr>
-<td>
-**Member**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Item<br/><br/></td><td>
@@ -464,9 +466,9 @@ The CancelEventHandler receives an argument of type CancelEventArgs containing d
 
 <table>
 <tr>
-<td>
-**Member**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Cancel<br/><br/></td><td>

@@ -88,20 +88,20 @@ Me.superAccelerator.ForeColor = System.Drawing.Color.Maroon
 SuperAccelerator supports visual styles such as Default, Metro. The style can be set using Style property. 
 
 * Default
-* Metro
+* Advanced
 
 The following code example allows you to set the style for the superAccelerator.
 
 
 {% highlight c# %}
 
-this.superAccelerator.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro;
+this.superAccelerator.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Advanced;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-Me.superAccelerator.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro
+Me.superAccelerator.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Advanced
 
 {% endhighlight %}
 

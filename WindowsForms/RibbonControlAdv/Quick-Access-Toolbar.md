@@ -9,7 +9,7 @@ documentation: ug
 
 # Quick Access Toolbar
 
-The quick access toolbar provides easy access to the controls that are used frequently. The visibility of this toolbar can be controlled using **`**QuickPanelVisible` property. 
+The quick access toolbar provides easy access to the controls that are used frequently. The visibility of this toolbar can be controlled using `QuickPanelVisible` property. 
 
 {% tabs %}
 

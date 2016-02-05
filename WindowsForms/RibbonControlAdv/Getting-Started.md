@@ -639,16 +639,13 @@ Property Table
 <table>
 <tr>
 <th>
-Property<br/><br/></th><td>
-**Description**<br/><br/></td></tr>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 MenuButtonDropDown<br/><br/></td><td>
 Gets / Sets ToolStripDropDown to be displayed, when the OfficeMenuButton is clicked.<br/><br/></td></tr>
 </table>
-<table>
-<tr>
-<td>
 
 
 {% tabs %}
@@ -773,9 +770,12 @@ Me.ribbonControlAdv1.MenuButtonDropDown = dropDown
 
 {% endtabs %}
 
+![](GettingStarted_images/GettingStarted_img31.jpg)
+
 **Adding** **ContextMenuStripEx** **as** **OfficeMenuDropDown**
 
 You can also display a ContextMenuStrip in the OfficeMenu button dropdown. This can be done by assigning a custom ContextMenuStrip to the RibbonControlAdv.MenuButtonDropDown property.
+
 
 {% tabs %}
 
