@@ -107,7 +107,7 @@ LAYOUT<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/tabs/tabcontroladv">TabControlAdv</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/tabcontroladv/overview">TabControlAdv</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -379,7 +379,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href=" http://help.syncfusion.com/windowsforms/ribboncontroladv/office-2010-style-ribbon">BackStageView</a><br/><br/></td></tr>
+<a href=" http://help.syncfusion.com/windowsforms/ribboncontroladv/getting-started">BackStageView</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -411,7 +411,7 @@ NAVIGATION<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-<a href="http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-control-items#toolstripex">ToolStripEx</a><br/><br/></td></tr>
+<a href="http://help.syncfusion.com/windowsforms/ribboncontroladv/toolstripex">ToolStripEx</a><br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
