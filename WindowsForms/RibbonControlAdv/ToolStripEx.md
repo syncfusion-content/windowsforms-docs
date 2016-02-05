@@ -98,7 +98,7 @@ The toolstrip can hold a grip, which can be visible by setting the GripStyle pro
 <table>
 <tr>
 <th>
-Property<br/><br/></th><td>
+Property<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
@@ -131,7 +131,6 @@ Me.toolStripEx1.GripMargin = new System.Windows.Forms.Padding(5)
 {% endtabs %}
 
 ![](ToolStripEx_images/ToolStripEx_img3.jpeg)
-
 
 ## Appearance Settings 
 
