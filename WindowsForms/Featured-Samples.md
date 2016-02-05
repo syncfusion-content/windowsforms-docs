@@ -15,7 +15,7 @@ documentation: ug
 
 To run the samples, search it from Start by name of “Dashboard”
 
-![dashboard](Guidetorunthesamples_images/dashboardsearch.png)
+![dashboard](featured-samples_images/dashboardsearch.png)
 
 Else open the Dashboard from the following installed location:
 
@@ -24,7 +24,7 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Inf
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
 
-![dashboard](Guidetorunthesamples_images/Guidetorunthesamples_img1.png)
+![dashboard](featured-samples_images/Guidetorunthesamples_img1.png)
 
 
 To execute the locally installed samples, select the corresponding product and click RUN local samples.
