@@ -789,7 +789,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/ribboncontroladv/ribbon-control-items#toolstripex">ToolStripEx</a><br/><br/>
+			<a href="/windowsforms/ribboncontroladv/toolstripex">ToolStripEx</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
