@@ -253,8 +253,8 @@ The **ToolStripLayoutStyle** property is used to specify the alignment for the T
 <table>
 <tr>
 <th>
-Constraint<br/><br/></th><td>
-Descriptionh<br/><br/></th></tr>
+Constraint<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Flow<br/><br/></td><td>
@@ -316,6 +316,7 @@ Me.toolStripEx2.ShowItemToolTips = True
 {% endhighlight %}
 
 {% endtabs %}
+
 N> ToolTip text for the ToolStrip items can be specified using the respective <Control>.TooltipText properties. Ex, toolStripGallery1.ToolTipText property sets the tooltip for gallery item. 
 
 ## DesignTime Features 
