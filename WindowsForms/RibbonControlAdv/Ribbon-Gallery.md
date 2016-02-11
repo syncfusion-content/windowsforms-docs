@@ -23,20 +23,6 @@ Using the `Item` property, Items Collection Editor opens, which lets you add ite
 
 ## Appearance
 
-The ToolStripItems can be aligned to right or left using Alignment property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ### Border Settings
 
 <table>
@@ -49,6 +35,7 @@ Description<br/><br/></th></tr>
 BorderStyle<br/><br/></td><td>
 Sets the border style for the ToolStripGallery. The options are,<br/><br/>None (default) and<br/><br/>Single.<br/><br/></td></tr>
 </table>
+
 ### Foreground Settings
 
 <table>
@@ -65,6 +52,7 @@ Sets the font style for the display text.<br/><br/></td></tr>
 ForeColor<br/><br/></td><td>
 Sets the fore color for the display text.<br/><br/></td></tr>
 </table>
+
 ### Scroller Settings
 
 <table>
@@ -77,6 +65,7 @@ Description<br/><br/></th></tr>
 ScrollerType<br/><br/></td><td>
 Sets the scroller type for the Gallery. The types available are,<br/><br/>StandardType and<br/><br/>CompactType.<br/><br/></td></tr>
 </table>
+
 ![](Ribbon-Gallery_images/Ribbon-Gallery_img3.jpeg)
 
 
@@ -99,6 +88,7 @@ Indicates whether the item should right to left for RTL languages.<br/><br/></td
 RightToLeftAutoMirrorImage<br/><br/></td><td>
 Specifies whether image should mirror when RightToLeft is enabled for the item.<br/><br/></td></tr>
 </table>
+
 ## Caption Settings
 
 Caption for a ToolStripGallery can be visible by settings the `ShowCaption` property to true.
