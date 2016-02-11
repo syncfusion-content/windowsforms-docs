@@ -5,7 +5,7 @@ description:  ribbon progressbar
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
---
+---
 
 # Ribbon ProgressBar
 

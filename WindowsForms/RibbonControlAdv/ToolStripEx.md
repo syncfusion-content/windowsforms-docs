@@ -521,9 +521,9 @@ We can set keyboard shortcut keys for RibbonControl components using **SetShortc
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 SetShortcut<br/><br/></td><td>
