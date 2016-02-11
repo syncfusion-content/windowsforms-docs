@@ -152,7 +152,7 @@ Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></
 
 <table>
 <tr>
-<td>
+<th>
 Property<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
