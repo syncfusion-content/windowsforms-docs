@@ -9,7 +9,7 @@ documentation: ug
 
 # Quick Access Toolbar
 
-The quick access toolbar provides easy access to the controls that are used frequently. The visibility of this toolbar can be controlled using **`**QuickPanelVisible` property. 
+The quick access toolbar provides easy access to the controls that are used frequently. The visibility of this toolbar can be controlled using `QuickPanelVisible` property. 
 
 {% tabs %}
 
@@ -34,6 +34,8 @@ Items / controls can be added to the QuickAccessToolbar by clicking on the Edit 
 ![](Quick-Access-Toolbar_images/quick-access-toolbar_img1.jpg)
 
 N> You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer.
+
+N> Ribbon provides option to edit the items at run time also. See [RunTime Customization](/windowsforms/ribboncontroladv/ribbon-customization#adding-item-to-qat-using-customized-window)  for more details. 
 
 The following code snippet allows us to add ToolStripButton to Qucik Access Toolbar.
 

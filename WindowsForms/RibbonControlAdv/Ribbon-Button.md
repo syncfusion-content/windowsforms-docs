@@ -20,9 +20,9 @@ The below properties controls the appearance and behavior of the ToolStripButton
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Text<br/><br/></td><td>
@@ -53,9 +53,9 @@ Specifies the relative location of the image to the text on the item. The option
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Image<br/><br/></td><td>
@@ -78,9 +78,9 @@ Sets the transparent color on the image, that supports transparency.<br/><br/></
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 DisplayStyle<br/><br/></td><td>
@@ -119,9 +119,9 @@ Specifies whether the item should size itself based on its image and text.<br/><
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoToolTip<br/><br/></td><td>
@@ -136,9 +136,9 @@ Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 RightToLeft<br/><br/></td><td>

@@ -22,11 +22,11 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 2.Find **TextBoxExt** by typing the name of the “TextBoxExt” in the search box.
 
-![](ThroughDragandDrop_images/AddSyncfusionControls_img1.jpeg)
+![](Add-Syncfusion-Control_images/AddSyncfusionControls_img1.jpeg)
 
 3.Drag **TextBoxExt** and drop it in the designer.
 
-![](ThroughDragandDrop_images/AddSyncfusionControls_img2.jpeg)
+![](Add-Syncfusion-Control_images/AddSyncfusionControls_img2.jpeg)
 
 ## Through Code-Behind
 
@@ -101,4 +101,4 @@ Me.Controls.Add(Me.textBoxExt1)
 
 {% endtabs %}
 
-![](ThroughDragandDrop_images/AddSyncfusionControls_img3.jpeg)
+![](Add-Syncfusion-Control_images/AddSyncfusionControls_img3.jpeg)

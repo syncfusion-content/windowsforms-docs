@@ -19,9 +19,9 @@ The below properties controls the appearance and behavior of the ToolStripTextBo
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 BackColor<br/><br/></td><td>
@@ -56,9 +56,9 @@ Specifies the alignment of the text in the item. The options are,<br/><br/>Left,
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Enabled<br/><br/></td><td>
@@ -81,9 +81,9 @@ Specifies whether the item should size itself based on its image and text.<br/><
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoToolTip<br/><br/></td><td>
@@ -98,9 +98,9 @@ Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 RightToLeft<br/><br/></td><td>
@@ -111,9 +111,9 @@ Indicates whether the item should right to left for RTL languages.<br/><br/></td
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AcceptsReturn<br/><br/></td><td>
@@ -152,9 +152,9 @@ Specifies the Keyboard shortcut to be used at run time to access this combobox.<
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoCompleteCustomSource<br/><br/></td><td>

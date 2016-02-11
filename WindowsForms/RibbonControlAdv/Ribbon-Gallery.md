@@ -23,39 +23,26 @@ Using the `Item` property, Items Collection Editor opens, which lets you add ite
 
 ## Appearance
 
-The ToolStripItems can be aligned to right or left using Alignment property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ### Border Settings
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 BorderStyle<br/><br/></td><td>
 Sets the border style for the ToolStripGallery. The options are,<br/><br/>None (default) and<br/><br/>Single.<br/><br/></td></tr>
 </table>
+
 ### Foreground Settings
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Font<br/><br/></td><td>
@@ -65,18 +52,20 @@ Sets the font style for the display text.<br/><br/></td></tr>
 ForeColor<br/><br/></td><td>
 Sets the fore color for the display text.<br/><br/></td></tr>
 </table>
+
 ### Scroller Settings
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ScrollerType<br/><br/></td><td>
 Sets the scroller type for the Gallery. The types available are,<br/><br/>StandardType and<br/><br/>CompactType.<br/><br/></td></tr>
 </table>
+
 ![](Ribbon-Gallery_images/Ribbon-Gallery_img3.jpeg)
 
 
@@ -87,9 +76,9 @@ Sets the scroller type for the Gallery. The types available are,<br/><br/>Standa
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 RightToLeft<br/><br/></td><td>
@@ -99,15 +88,16 @@ Indicates whether the item should right to left for RTL languages.<br/><br/></td
 RightToLeftAutoMirrorImage<br/><br/></td><td>
 Specifies whether image should mirror when RightToLeft is enabled for the item.<br/><br/></td></tr>
 </table>
+
 ## Caption Settings
 
 Caption for a ToolStripGallery can be visible by settings the `ShowCaption` property to true.
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ShowCaption<br/><br/></td><td>
@@ -145,9 +135,9 @@ ToolStripGallery lets you customize the ToolStrip items added to the Gallery usi
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ItemBackColor<br/><br/></td><td>
@@ -157,9 +147,9 @@ Sets the back color for the items.<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ItemDisplayStyle<br/><br/></td><td>

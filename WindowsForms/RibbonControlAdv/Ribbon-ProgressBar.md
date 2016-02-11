@@ -5,7 +5,7 @@ description:  ribbon progressbar
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
---
+---
 
 # Ribbon ProgressBar
 
@@ -19,9 +19,9 @@ The below properties controls the appearance and behavior of the ToolStripProgre
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Font<br/><br/></td><td>
@@ -36,9 +36,9 @@ Sets the fore color for the display text.<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Style<br/><br/></td><td>
@@ -83,9 +83,9 @@ The current value for the ProgressBar, in the range specified by the minimum and
 
 <table>
 <tr>
-<td>
-**Method**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 PerformStep()<br/><br/></td><td>
@@ -96,9 +96,9 @@ Advances the current position of the progressbar by the value specified in ToolS
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoToolTip<br/><br/></td><td>
@@ -113,9 +113,9 @@ Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 RightToLeft<br/><br/></td><td>
