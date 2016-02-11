@@ -23,18 +23,13 @@ The various TabPrimitives are,
 * Close - This button is used to close the TabControlAdv. It can be set to appear for the whole control or individual tabpages. 
 * Custom - User can add more buttons through Custom TabPrimitive. This helps the user to create / add more buttons and handle their own click events.
 
-![](TabPrimitives_images/TabPrimitives_img1.jpeg)
-
-
+![](TabPrimitives_images/TabPrimitives_img1.png)
 
 N> The TabControlAdv.HitTestTabs() method can be used to return the tab at the specified location.
 
 ## TabPrimitives Features
 
 Apart from doing the defined task of Navigation, TabPrimitivesHost comes with options for adding Images, ToolTips and enabling the Visible property for each TabPrimitive.
-
-![](TabPrimitives_images/TabPrimitives_img3.jpeg)
-
 
 
 N> You can set the other properties for adding Images and ToolTips for the TabPrimitives using the TabPrimitives Collection Editor.
@@ -128,4 +123,4 @@ N> After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True
 
 The `TabPrimitiveHost` property allows to customize the navigation and close buttons by defining it through the `TabPrimitives` Property Collection. The TabPrimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First / Previous / Next / LastTab, Next / PreviousPage and Close / DropDown options.
 
-![](TabPrimitives_images/TabPrimitives_img10.jpeg)
+![](TabPrimitives_images/TabPrimitives_img10.png)
