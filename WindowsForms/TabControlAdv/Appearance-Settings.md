@@ -132,7 +132,7 @@ this.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Right;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 
@@ -168,7 +168,7 @@ this.tabPageAdv1.DisableInactivePageImage = imageList1.Images[0];
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Me.tabPageAdv1.DisableInactivePageImage = imageList1.Images(0)
 
@@ -234,7 +234,7 @@ this.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 Private Me.tabControlAdv1.ActiveTabColor = System.Drawing.Color.Ivory
@@ -292,7 +292,7 @@ this.tabControlAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Draw
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 
@@ -323,7 +323,7 @@ this.tabPageAdv1.TabFont = new System.Drawing.Font("Trebuchet MS", 8.25F, System
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.tabPageAdv1.TabFont = New System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType((0), Byte))
 
@@ -361,7 +361,7 @@ this.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
@@ -384,7 +384,7 @@ this.tabControlAdv1.BorderVisible = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.tabControlAdv1.BorderVisible = True
 
@@ -409,7 +409,7 @@ this.tabControlAdv1.BorderWidth = 10;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

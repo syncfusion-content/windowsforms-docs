@@ -7,32 +7,8 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Interactive Features
 
-The TabControlAdv can be themed by enabling the `ThemesEnabled` property.
-
-N> On setting this property, all the TabPages will be themed. This can be disabled or enabled for individual pages using the TabPageAdv.ThemesEnabled property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-this.tabControlAdv1.ThemesEnabled = true;
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-Me.tabControlAdv1.ThemesEnabled = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Interactive-Features_images/Interactive-Features_img2.jpeg)
-
-
-## CloseButton Settings
+# CloseButton Settings
 
 TabControlAdv can have CloseButtons for all the TabPages to close the corresponding TabPages irrespective of the Style set.
 
@@ -48,7 +24,7 @@ this.tabControlAdv1.ShowTabCloseButton = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.tabControlAdv1.ShowTabCloseButton = True
 
@@ -66,7 +42,7 @@ this.tabControlAdv1.ShowCloseButtonForActiveTabOnly = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
@@ -79,7 +55,7 @@ Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
 N> Close Button can be set for the whole TabControlAdv by using [TabPrimitives](/windowsforms/tabcontroladv/tabprimitives).
 
-## ToolTip Support
+# ToolTip Support
 
 ToolTip for the TabControlAdv can be enabled using the `ShowToolTip` property and the tooltip text for the TabPages can be specified using the `ToolTipText` property of individual pages which allows to provide a unique ToolTip for each page.
 
@@ -93,7 +69,7 @@ this.tabPageAdv1.ToolTipText = "Tooltips for tab page 1";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.tabControlAdv1.ShowToolTips = True
 
@@ -106,7 +82,7 @@ Me.tabPageAdv1.ToolTipText = "Tooltips for tab page 1"
 ![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
-## SuperTooltip Support
+# SuperTooltip Support
 
 TabControlAdv can now display `SuperToolTip` on the Tabs when mouse hovered.
 
@@ -120,7 +96,7 @@ this.tabPageAdv1.SuperToolTips  = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 Me.tabControlAdv1.ShowSuperToolTips  = True
@@ -131,44 +107,12 @@ Me.tabPageAdv1.SuperToolTips  = True
 
 {% endtabs %}
 
-## Persistence Support
 
-The `PersistTabState` property specifies the value which determines whether the TabState (ActivePage, TabOrder and Text) should be automatically persisted or not. The default value is set to False.
-
-
-<table>
-<tr>
-<th>
-TabControlAdv Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-PersistTabState</td><td>
-Gets / sets the value which determines whether the TabState should be automatically persisted or not.</td></tr>
-</table>
-
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-TabControlAdv.SaveState()</td><td>
-Persists the TabState (ActivePage, TabOrder and Text).</td></tr>
-<tr>
-<td>
-TabControlAdv.LoadState()</td><td>
-Gets / sets the previously serialized TabState using the 'AppStateSerializer' object. </td></tr>
-</table>
-
-
-## Scroll Settings
+# Scroll Settings
 
 This section discusses about the Scrolling properties available in the TabControlAdv.
 
-### ScrollButton
+## ScrollButton
 
 TabControlAdv has the ability to add ScrollButtons on the TabPanel when the number of tab items increase. These ScrollButtons allows the user to navigate through the TabPages in the front and back. For this, the `ShowScroll` property of the TabControlAdv must be set.
 
@@ -203,7 +147,7 @@ this.tabControlAdv1.VSLikeScrollButton = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 
@@ -215,7 +159,7 @@ Me.tabControlAdv1.VSLikeScrollButton = True
 
 {% endtabs %}
 
-### ScrollBars
+## ScrollBars
 
 ScrollBars can be set for the TabPages for which the `AutoScroll` property has to be set to true. The `AutoScrollMinSize` is set to a value, which if exceeded, enables the TabControlAdv to automatically add a scrollbar to the TabPage. Setting `AutoScrollMargin`, allows to maintain a minimum distance between the end margin of any control that is placed inside the TabPage and the margin of the TabPage.
 
@@ -262,7 +206,7 @@ this.tabControlAdv1.BringSelectedTabToView();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Me.tabPageAdv1.AutoScroll = True
 

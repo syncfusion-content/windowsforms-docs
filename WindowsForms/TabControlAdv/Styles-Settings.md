@@ -11,38 +11,9 @@ documentation: ug
 
 This section discusses the various Style Settings available in TabControlAdv.
 
-## ITabRenderer
+## TabStyles
 
-'ITabRenderer' interface (or derive from TabRendererBase, a base implementation of ITabRenderer), could be implemented to gain more control over the display of Tabs. 
-
-The Renderer property returns the current 'Syncfusion.Windows.Forms.Tools.ITabRenderer' used by the TabControlAdv to render the TabPanel.
-
-![](Styles-Settings_images/Styles-Settings_img1.jpeg)
-
-
-
-Once you have a Custom ITabRenderer implementation, you can, if necessary, make it available to the TabControlAdv at design-time. To do so, 
-
-1. First select the Add Custom Tabs entry in the drop-down list that pops-up from the TabStyle property editor. This will insert a new `DesignTimeTabTypeLoader` component into your forms designer. 
-
-   ![](Styles-Settings_images/Styles-Settings_img3.jpeg)
-
-
-
-2. Insert the fully qualified type name of your Custom TabRenderer class (for example: Syncfusion.Samples.Tools.TabRendererNotched) to the DesignTimeTabTypeLoader's TypesToLoadList. This will try to load your class into the DesignTimeTabTypeLoader's TypesToLoadList, assuming the type is in the same project as the designer or the assembly in which this type resides is referenced. You will now find an entry in the `TabStyle` editor list corresponding to your Custom TabRenderer. 
-
-   ![](Styles-Settings_images/Styles-Settings_img4.jpeg)
-
-
-{% seealso %}
-
-[TabStyles](/windowsforms/tabcontroladv/styles-settings#tabstyles)
-
-{% endseealso %}
-
-## Tab Alignment
-
-Alignment of the Tabs can be set through the below properties.
+TabControlAdv provides options to customize the TabStyle settings. Styles can be set through `TabStyle` property.
 
 <table>
 <tr>
@@ -51,91 +22,66 @@ TabControlAdv Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Alignment</td><td>
-Specifies the alignment of tabitems with respect to the tab pages. The options include:Top,Bottom,Left,Right</td></tr>
-<tr>
-<td>
-VerticalAlignment</td><td>
-Specifies whether the tabs are aligned to the Top, Bottom or based on the RightToLeft property when aligned vertically.</td></tr>
-<tr>
-<td>
-TabGap</td><td>
-Specifies the space between the tabitems.</td></tr>
-<tr>
-<td>
-Top</td><td>
-Gets / sets the distance, in pixels, between the top edge of the control and the top edge of the container's client area.</td></tr>
-<tr>
-<td>
-Right</td><td>
-Gets / sets the distance, in pixels, between the right edge of the control and the left edge of the container's client area.</td></tr>
+TabStyle</td><td>
+Specifies the look and feel of the Tabcontrol. The options include,2D,3D,Workbook,InternetExplorer7Style,OneNoteStyle,VS2005DockingStyle,Office2007Style,VS2005Style,VS2005DockingStyleBeta,Office2003Style and VS2008Style.</td></tr>
 </table>
-
-
-![](Styles-Settings_images/Styles-Settings_img5.jpeg)
-
 {% tabs %}
 
 {% highlight c# %}
 
-this.tabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left;
-
-this.tabControlAdv1.TabGap = 2;
+this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
-
-Me.tabControlAdv1.Alignment = System.Windows.Forms.TabAlignment.Left
-
-Me.tabControlAdv1.TabGap = 2
+Me.tabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode)
 
 {% endhighlight %}
 
 {% endtabs %}
 
+Given below are the various TabStyles along with the Metro, Office 2007 Style supporting all the three color schemes (Blue, Silver and Black).
 
-## Text Alignment
+![](Styles-Settings_images/Styles-Settings_img7.png)
 
-The below properties deals with alignment of the text in the TabControlAdv.
 
-<table>
-<tr>
-<th>
-TabPageAdv Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-TextAlignment</td><td>
-Specifies horizontal alignment for the text of the tabitem.</td></tr>
-<tr>
-<td>
-TextLineAlignment</td><td>
-Specifies vertical alignment for the text of the tabitem.</td></tr>
-</table>
+## Custom Color Schemes
+
+Custom colors can also be applied to the TabControlAdv. 
 
 {% tabs %}
 
 {% highlight c# %}
 
+//Set the below code for applying the managed color scheme.
 
-this.tabControlAdv1.TextAlignment = System.Drawing.StringAlignment.Far;
+this.FormTabControl.TabStyle = typeof(TabRendererOffice2007);
 
-this.tabControlAdv1.TextLineAlignment = System.Drawing.StringAlignment.Near;
+this.FormTabControl.Office2007ColorScheme = Office2007Theme.Managed;
+
+Office2007Colors.ApplyManagedColors(this, Color.Green);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-Me.tabControlAdv1.TextAlignment = System.Drawing.StringAlignment.Far
 
-Me.tabControlAdv1.TextLineAlignment = System.Drawing.StringAlignment.Near
+'Set the below code for applying the managed color scheme.
+
+Me.FormTabControl.TabStyle = GetType(TabRendererOffice2007)
+
+Me.FormTabControl.Office2007ColorScheme = Office2007Theme.Managed
+
+Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Styles-Settings_images/Styles-Settings_img9.jpeg)
+
 
 ## SizeMode
 
@@ -172,7 +118,7 @@ this.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillTo
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.Normal
 
@@ -187,78 +133,4 @@ Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillToRi
 {% endtabs %}
 
 ![](Styles-Settings_images/Styles-Settings_img6.jpeg)
-
-## TabStyles
-
-TabControlAdv provides options to customize the TabStyle settings. Styles can be set through `TabStyle` property.
-
-<table>
-<tr>
-<th>
-TabControlAdv Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-TabStyle</td><td>
-Specifies the look and feel of the Tabcontrol. The options include,2D,3D,Workbook,InternetExplorer7Style,OneNoteStyle,VS2005DockingStyle,Office2007Style,VS2005Style,VS2005DockingStyleBeta,Office2003Style and VS2008Style.</td></tr>
-</table>
-{% tabs %}
-
-{% highlight c# %}
-
-this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode);
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-
-Me.tabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode)
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Given below are the various TabStyles along with the Metro, Office 2007 Style supporting all the three color schemes (Blue, Silver and Black).
-
-![](Styles-Settings_images/Styles-Settings_img7.png)
-
-
-## Custom Color Schemes
-
-Custom colors can also be applied to the TabControlAdv. 
-
-{% tabs %}
-
-{% highlight c# %}
-
-//Set the below code for applying the managed color scheme.
-
-this.FormTabControl.TabStyle = typeof(TabRendererOffice2007);
-
-this.FormTabControl.Office2007ColorScheme = Office2007Theme.Managed;
-
-Office2007Colors.ApplyManagedColors(this, Color.Green);
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-
-'Set the below code for applying the managed color scheme.
-
-Me.FormTabControl.TabStyle = GetType(TabRendererOffice2007)
-
-Me.FormTabControl.Office2007ColorScheme = Office2007Theme.Managed
-
-Office2007Colors.ApplyManagedColors(Me, Color.Green)
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Styles-Settings_images/Styles-Settings_img9.jpeg)
-
-
-
 
