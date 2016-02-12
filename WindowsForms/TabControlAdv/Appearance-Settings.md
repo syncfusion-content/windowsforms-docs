@@ -255,7 +255,6 @@ Private Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
  ![](Appearance-Settings_images/Appearance-Settings_img3.jpeg)
 
 
- ![](Appearance-Settings_images/Appearance-Settings_img4.png) 
  
 
 ## Foreground Settings
