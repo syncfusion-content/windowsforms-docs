@@ -27,4 +27,4 @@ Me.tabControlAdv1.ThemesEnabled = True
 
 {% endtabs %}
 
-![](How-to-enable-themes-in-TabControlAdv/How-to-enable-themes-in-TabControlAdv_img1.jpeg)
+![](How-to-enable-themes-in-TabControlAdv_images/How-to-enable-themes-in-TabControlAdv_img1.jpeg)
