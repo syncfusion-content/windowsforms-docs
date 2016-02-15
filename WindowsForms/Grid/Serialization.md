@@ -28,7 +28,7 @@ Binary Serialization is used to convert the grid schema information into Binary 
 During the binary serialization the schema of the grid will be saved into the file as the bit streams. The [SaveBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveBinary.html#) method is used to serialize the grid schema into the binary format.
 
 {% tabs %} 
-  {% highlight c# %}
+ {% highlight c# %}
 //Binary Serialization
 
 this.gridControl1.SaveBinary("GridSchema");
@@ -54,7 +54,7 @@ Me.gridControl1.SaveBinary("GridSchema")
 To de-serialize the contents of the encoded grid schema, decode it by using the [LoadBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadBinary.html#) method and assign it to the grid model.
 
 {% tabs %} 
- {% highlight c# %}
+{% highlight c# %}
 //Binary Deserialization (Apply the schema to the grid model)
 
 this.gridControl1.Model = GridModel.LoadBinary("GridSchema");
@@ -80,7 +80,7 @@ This serialization technique is used to store the data (schema) and Look and fee
 The schema and look and feel of the GridControl can be serialized by using the [SaveXml](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveXml.html#) method. 
 
 {% tabs %} 
- {% highlight c# %}
+{% highlight c# %}
 //Serialize the grid schema and Look And Feel to the Xml file
 
 this.gridControl1.SaveXml("GridSchemaXml");
@@ -104,7 +104,7 @@ Me.gridControl1.SaveXml("GridSchemaXml")
 The [InitializeFromXml](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~InitializeFromXml.html#) method is used to deserialize the contents of the xml file to restore the schema and look and feel of the GridControl.
 
 {% tabs %} 
- {% highlight c# %}
+{% highlight c# %}
 //Deserialize the schema and the look and feel of the grid
 
 this.gridControl1.InitializeFromXml("GridSchemaXml");
@@ -132,7 +132,7 @@ Me.gridControl1.Refresh()
 The grid data (schema) can alone serialize without the style information (Look and Feel) by using the [XmlSerializer](https://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx#) method. 
 
 {% tabs %} 
- {% highlight c# %}
+{% highlight c# %}
 //create stream for saving the data
 
 Stream s = File.Create("GridSchemaxml");
@@ -179,7 +179,7 @@ s.Close()
 The schema can be deserialized from the xml file and loaded to the grid by using the following code snippet,  
 
 {% tabs %} 
- {% highlight c# %}
+{% highlight c# %}
 //Open the xml file in the read mode
 
 Stream s = File.OpenRead("GridSchemaxml");
@@ -229,7 +229,7 @@ This serialization technique is used to store the schema of the grid in a memory
 The GridModel.[SaveSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SaveSoap.html#) method is used to save the schema of the grid to the memory stream / file.
 
 {% tabs %} 
- {% highlight c# %}
+{% highlight c# %}
 //Serialize the schema to the memory stream/ file
 
 this.gridControl1.SaveSoap("GridSchemaSoap");
@@ -261,7 +261,7 @@ Me.gridControl1.SaveSoap(stream) 'this.gridControl1.SaveXml(stream);
 The [GridModel.LoadSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadSoap.html#) method is used to deserialize the contents of the file/memory stream to the grid model.
 
 {% tabs %} 
- {% highlight c# %}
+{% highlight c# %}
 //Load the schema into the Grid model
 
 this.gridControl1.Model = GridModel.LoadSoap("GridSchemaSoap");
