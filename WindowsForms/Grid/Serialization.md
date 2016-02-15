@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Serialization of GridControl for Syncfusion Essential WindowsForms
-description: Explain about Serialization and de-serialization in gridControl
+description: This section explains on how to serialize and deserialize GridControl.
 platform: WindowsForms
-control: Grid
+control: GridControl
 documentation: ug
 
 ---
@@ -64,9 +64,6 @@ this.gridControl1.Model = GridModel.LoadBinary("GridSchema");
 'Binary Deserialization (Apply the schema to the grid model)
 
 Me.gridControl1.Model = GridModel.LoadBinary("GridSchema")
-
-
-
 {% endhighlight %}
 
 
@@ -146,11 +143,9 @@ xs.Serialize(xw, this.gridControl1.Model.Data);
 
 s.Close();
 
-
-
 {% endhighlight %}
 
-****{% highlight vb %}
+{% highlight vb %}
 'create stream for saving the data
 
 Dim s As Stream = File.Create("GridSchemaxml")
@@ -168,9 +163,6 @@ Dim xs As XmlSerializer = New System.Xml.Serialization.XmlSerializer(Me.gridCont
 xs.Serialize(xw, Me.gridControl1.Model.Data)
 
 s.Close()
-
-
-
 {% endhighlight %}
 
 ### Loading Grid Data using Xml Serialization
@@ -195,12 +187,9 @@ this.gridControl1.Model.Data = (GridData)xs.Deserialize(xr);
 s.Close();
 
 this.gridControl1.Refresh();
-
-
-
 {% endhighlight %}
 
-****{% highlight vb %}
+{% highlight vb %}
 'Open the xml file in the read mode
 
 Dim s As Stream = File.OpenRead("GridSchemaxml")
@@ -218,9 +207,6 @@ Me.gridControl1.Model.Data = CType(xs.Deserialize(xr), GridData)
 s.Close()
 
 Me.gridControl1.Refresh()
-
-
-
 {% endhighlight %}
 
 ## SOAP
@@ -241,9 +227,6 @@ MemoryStream stream = new MemoryStream();
 //Save the Grid schema into the memory Stream 
 
 this.gridControl1.SaveSoap(stream);  //this.gridControl1.SaveXml(stream);
-
-
-
 {% endhighlight %}
 
 {% highlight vb %}
@@ -256,9 +239,6 @@ Dim stream As New MemoryStream()
 'Save the Grid schema into the memory Stream 
 
 Me.gridControl1.SaveSoap(stream) 'this.gridControl1.SaveXml(stream);
-
-
-
 {% endhighlight %}
 
 ### Loading SOAP
@@ -273,12 +253,9 @@ this.gridControl1.Model = GridModel.LoadSoap("GridSchemaSoap");
 //Load the content of the memory stream into the Grid
 
 this.gridControl1.Model = GridModel.LoadSoap(stream);
-
-
-
 {% endhighlight %}
 
-****{% highlight vb %}
+{% highlight vb %}
 'Load the schema into the Grid model
 
 Me.gridControl1.Model = GridModel.LoadSoap("GridSchemaSoap")
@@ -286,9 +263,4 @@ Me.gridControl1.Model = GridModel.LoadSoap("GridSchemaSoap")
 'Load the content of the memory stream into the Grid
 
 Me.gridControl1.Model = GridModel.LoadSoap(stream)
-
-
-
 {% endhighlight %}
-
-****
