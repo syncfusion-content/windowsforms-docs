@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# TabControlAdv
+# Customization
 
 The look and feel of the TabControlAdv can be customized through various properties of the control. These properties are discussed in below topics.
 

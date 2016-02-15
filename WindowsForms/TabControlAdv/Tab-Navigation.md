@@ -62,7 +62,7 @@ To create TabPrimitives through designer, follow the steps given below.
    ![](TabPrimitives_images/TabPrimitives_img7.jpeg)
 
 
-### Through Code-Behind
+### Through Code
 
 {% tabs %}
 

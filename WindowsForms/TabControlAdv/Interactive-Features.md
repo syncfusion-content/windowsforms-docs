@@ -7,8 +7,9 @@ control: TabControlAdv
 documentation: ug
 ---
 
+# Interactive Features
 
-# CloseButton Settings
+## CloseButton Settings
 
 TabControlAdv can have CloseButtons for all the TabPages to close the corresponding TabPages irrespective of the Style set.
 
@@ -53,9 +54,9 @@ Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 ![](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
-N> Close Button can be set for the whole TabControlAdv by using [TabPrimitives](/windowsforms/tabcontroladv/tabprimitives).
+N> Close Button can be set for the whole TabControlAdv by using [Tab Navigation](/windowsforms/tabcontroladv/tab-navigation).
 
-# ToolTip Support
+## ToolTip Support
 
 ToolTip for the TabControlAdv can be enabled using the `ShowToolTip` property and the tooltip text for the TabPages can be specified using the `ToolTipText` property of individual pages which allows to provide a unique ToolTip for each page.
 
@@ -82,7 +83,7 @@ Me.tabPageAdv1.ToolTipText = "Tooltips for tab page 1"
 ![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
-# SuperTooltip Support
+## SuperTooltip Support
 
 TabControlAdv can now display `SuperToolTip` on the Tabs when mouse hovered.
 
@@ -108,11 +109,11 @@ Me.tabPageAdv1.SuperToolTips  = True
 {% endtabs %}
 
 
-# Scroll Settings
+## Scroll Settings
 
 This section discusses about the Scrolling properties available in the TabControlAdv.
 
-## ScrollButton
+### ScrollButton
 
 TabControlAdv has the ability to add ScrollButtons on the TabPanel when the number of tab items increase. These ScrollButtons allows the user to navigate through the TabPages in the front and back. For this, the `ShowScroll` property of the TabControlAdv must be set.
 
@@ -159,7 +160,7 @@ Me.tabControlAdv1.VSLikeScrollButton = True
 
 {% endtabs %}
 
-## ScrollBars
+### ScrollBars
 
 ScrollBars can be set for the TabPages for which the `AutoScroll` property has to be set to true. The `AutoScrollMinSize` is set to a value, which if exceeded, enables the TabControlAdv to automatically add a scrollbar to the TabPage. Setting `AutoScrollMargin`, allows to maintain a minimum distance between the end margin of any control that is placed inside the TabPage and the margin of the TabPage.
 

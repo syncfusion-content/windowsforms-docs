@@ -42,8 +42,6 @@ Me.tabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererW
 
 {% endtabs %}
 
-Given below are the various TabStyles along with the Metro, Office 2007 Style supporting all the three color schemes (Blue, Silver and Black).
-
 ![](Styles-Settings_images/Styles-Settings_img7.png)
 
 
