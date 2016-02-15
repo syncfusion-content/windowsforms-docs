@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization | GridControl | WindowsForms | Syncfusion
-description: Serialization
+title: Serialization of GridControl for Syncfusion Essential WindowsForms
+description: Explain about Serialization and de-serialization in gridControl
 platform: WindowsForms
 control: Grid
 documentation: ug
