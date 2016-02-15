@@ -11,7 +11,7 @@ documentation: ug
 
 TabControlAdv is an advanced form of standard TabControl that enables a developer to arrange visual content in a compacted and organized form in less space. It provides all the basic functionalities of a standard TabControl, along with plenty of appearance customization and configuration capabilities. 
 
-### Features
+## Features
 
 * Supports various Appearance customization. 
 * Supports easy Tab Navigation. 

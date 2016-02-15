@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Persistence Support
+# Serialization
 
 The `PersistTabState` property specifies the value which determines whether the TabState (ActivePage, TabOrder and Text) should be automatically persisted or not. The default value is set to False.
 
