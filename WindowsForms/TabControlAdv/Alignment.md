@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-## Tab Alignment
+# Alignment
 
 Alignment of the Tabs can be set through the below properties.
 

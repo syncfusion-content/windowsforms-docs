@@ -7,14 +7,14 @@ control: TabControlAdv
 documentation: ug
 ---
 
-## TabControlAdv
+# Getting Started
 
 The TabControlAdv can be added to Windows Forms application by using either of the following ways,
 
 * Through Designer
 * Through Code-Behind
 
-### Through Designer
+## Through Designer
 
 Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add TabControlAdv through drag and drop from Toolbox.
 
@@ -49,7 +49,7 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 
 
-### Through Code
+## Through Code
 
 The following steps helps to add TabControlAdv through code. 
 

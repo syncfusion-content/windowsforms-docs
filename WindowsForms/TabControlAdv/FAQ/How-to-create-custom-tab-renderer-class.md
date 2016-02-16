@@ -7,6 +7,7 @@ control: TabsPackage
 documentation: ug
 ---
 
+# How to create custom tab renderer class?
 
 'ITabRenderer' interface (or derive from TabRendererBase, a base implementation of ITabRenderer), could be implemented to gain more control over the display of Tabs. 
 
