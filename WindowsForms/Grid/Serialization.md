@@ -1,735 +1,228 @@
 ---
 layout: post
-title: Serialization | WindowsForms | Syncfusion
-description: serialization
+title: Serialization of GridControl for Syncfusion Essential WindowsForms
+description: This section explains on how to serialize and deserialize GridControl.
 platform: WindowsForms
-control: Grid
+control: GridControl
 documentation: ug
 ---
 
 # Serialization
 
-The following serilaization techniques are discussed in this section:
+GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and de-serialization of grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [deserialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
 
-## Word Converter
+GridControl has the different types of serialization techniques as follows,
 
-Export to Word is one of the most common functionalities that is required in the .NET world. Essential Grid control has in-built support for Word Export. Users can download data from the Grid Control into a Word document for offline verification and/or computation. This can be achieved by making use of the GridWordConverter class. This section will walk you through conversion of the contents of the grid to a word file as well as discuss various converter options. GridWordConverter class derives from GridWordConverterBase. It contains number of methods that helps in exporting different components of the grid. 
+[SOAP](https://msdn.microsoft.com/en-us/library/d5wt2he6.aspx#) - Helps convert the grid schema information to SOAP format.
 
-### Properties
+[Binary](https://msdn.microsoft.com/en-us/library/72hyey7b.aspx#) - Helps convert the grid schema information to binary format.
 
-Here is a list of properties offered by GridWordConverter. By setting these properties, you will be able to choose the elements you need to export.
+[XML](https://msdn.microsoft.com/en-us/library/ms172873.aspx#) - Helps convert the grid schema information to XML format.
 
+## Binary 
 
-<table>
-<tr>
-<th>
-PROPERTIES</th><th>
-DESCRIPTION</th></tr>
-<tr>
-<td>
-ShowHeader</td><td>
-Specifies if header should be displayed.</td></tr>
-<tr>
-<td>
-ShowFooter</td><td>
-Indicates if footer should be displayed.</td></tr>
-</table>
+Binary Serialization is used to convert the grid schema information into Binary format. 
 
-### Method
+### Saving Binary
 
-GridWordConverter control provides a method called GridToWord. This is the method that does the conversion of grid contents to a Word file. It accepts two parameters: grid to be converted and filename of the destination Word document.
+During the binary serialization the schema of the grid will be saved into the file as the bit streams. The [SaveBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveBinary.html#) method is used to serialize the grid schema into the binary format.
 
-### Syntax
+{% tabs %} 
+{% highlight c# %}
+//Binary Serialization
+this.gridControl1.SaveBinary("GridSchema");
+{% endhighlight %}
 
+{% highlight vb %}
+'Binary Serialization
+Me.gridControl1.SaveBinary("GridSchema")
+{% endhighlight %}
+{% endtabs %} 
 
-{% highlight c#  %}
 
+### Loading Binary
 
-GridWordConverter converter = new GridWordConverter();
+To de-serialize the contents of the encoded grid schema, decode it by using the [LoadBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadBinary.html#) method and assign it to the grid model.
 
-converter.GridToWord("Grid.doc", this.gridControl1);
+{% tabs %} 
+{% highlight c# %}
+//Binary Deserialization (Apply the schema to the grid model)
+this.gridControl1.Model = GridModel.LoadBinary("GridSchema");
+{% endhighlight %}
 
+{% highlight vb %}
+'Binary Deserialization (Apply the schema to the grid model)
+Me.gridControl1.Model = GridModel.LoadBinary("GridSchema")
+{% endhighlight %}
+{% endtabs %}
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+## XML 
 
+This serialization technique is used to store the data (schema) and Look and feel of the GridControl in to the xml file. This can be applied back to the grid at the time of deserialization.
 
+### Serialization 
 
-Dim converter As GridWordConverter = New GridWordConverter()
+The schema and look and feel of the GridControl can be serialized by using the [SaveXml](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveXml.html#) method. 
 
-converter.GridToWord("Grid.doc", Me.gridControl1)
+{% tabs %} 
+{% highlight c# %}
+//Serialize the grid schema and Look And Feel to the Xml file
+this.gridControl1.SaveXml("GridSchemaXml");
+{% endhighlight %}
 
+{% highlight vb %}
+'Serialize the grid schema and Look And Feel to the Xml file
+Me.gridControl1.SaveXml("GridSchemaXml")
+{% endhighlight %}
+{% endtabs %}
 
-{% endhighlight   %}
+### Deserialization 
 
-### Events
+The [InitializeFromXml](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~InitializeFromXml.html#) method is used to deserialize the contents of the xml file to restore the schema and look and feel of the GridControl.
 
-DrawHeader and DrawFooter are the events offered by the GridWordConverter that aids in adding as well as customizing the header and footer in the destination word document. 
-
-### Sample Output
-
-Below images depict the conversion of grid content to a Word file.
-
-![](Serialization_images/Serialization_img1.jpeg)
-
-
-
-
-
-![](Serialization_images/Serialization_img2.jpeg)
-
-
-
-
-
-A sample demonstrating this feature is available under the following sample installation path.
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Exporting\Exporting Demo\_
-
-## Excel Export
-
-Export to Excel is one of the most common functionalities required in the .NET world. Essential Grid control has built-in support for Excel Export. You can download the data from Grid control or DataBound Grid or Grouping Grid control into an Excel spreadsheet for offline verification and/or computation. This can be achieved by making use of the GridExcelConverter and GroupingGridExcelConverter classes. This section will take you through conversion of the contents of the grid to an Excel file, as well as discuss various converter options.
-
-### Import an Excel Sheet into Essential Grid
-
-An Excel sheet can also be imported to the Grid control or DataBound Grid. This can be done by using ExcelToGrid method in the GridExcelConverterControl class. The following code example illustrates how to transfer Excel content to the Grid control.
-
-
-
-{% highlight c#  %}
-
-Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-
-gecc.ExcelToGrid(@"C:\MyGC.xls", this.gridControl1.Model);
-
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-Dim gecc As Syncfusion.GridExcelConverter.GridExcelConverterControl = New Syncfusion.GridExcelConverter.GridExcelConverterControl()
-
-gecc.ExcelToGrid("C:\MyGC.xls", Me.gridControl1.Model)
-
-{% endhighlight   %}
-
-The following code example illustrates how to transfer Excel content to DataBound Grid.
-
-
-
-{% highlight c#  %}
-
-Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-
-gecc.ExcelToGrid(@"C:\MyGC.xls", this.gridDataBoundGrid1.Model);
-
-
-{% endhighlight  %}
-{% highlight vbnet  %}
-
-
-
-
-Dim gecc As Syncfusion.GridExcelConverter.GridExcelConverterControl = New Syncfusion.GridExcelConverter.GridExcelConverterControl()
-
-gecc.ExcelToGrid("C:\MyGC.xls", Me.gridDataBoundGrid1.Model)
-{% endhighlight   %}
-
-### Excel Converter Options
-
-GridExcelConverter class enables you to export specific grid elements like column headers, row headers, and so on. By default, GridExcelConverterControl exports all elements in the grid. The following code example illustrates how to include both row and column headers during the export.
-
-
-{% highlight c#  %}
-
-
-gecc.GridToExcel(this.grid.Model, @"C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.RowHeaders | Syncfusion.GridExcelConverter.ConverterOptions.ColumnHeaders);
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-
-gecc.GridToExcel(Me.grid.Model, "C:\MyGGC.xls", Syncfusion.GridExcelConverter.ConverterOptions.RowHeaders|Syncfusion.GridExcelConverter.ConverterOptions.ColumnHeaders)
-{% endhighlight   %}
-
-### Exporting Multiple Grids
-
-It is possible to save multiple grids to a single XLS file as worksheet. The following code example illustrates how to do this.
-
-
-
-{% highlight c#  %}
-
-using Syncfusion.XlsIO;
-
-using Syncfusion.GridExcelConverter;
-
-
-
-private void buttonExport_Click(object sender, System.EventArgs e)
-
-{
-
-    SaveFileDialog saveFileDialog = new SaveFileDialog();
-
-    saveFileDialog.Filter = "Files(*.XLS)|*.XLS";
-
-    saveFileDialog.AddExtension = true;
-
-    saveFileDialog.DefaultExt = ".XLS";
-
-
-
-    if(saveFileDialog.ShowDialog() == DialogResult.OK && saveFileDialog.CheckPathExists)
-
-    {
-
-        GridExcelConverterControl gec = new GridExcelConverterControl();
-
-        IWorkbook workBook = ExcelUtils.CreateWorkbook(new string[] {"Sheet1","Sheet2"});
-
-        gec.GridToExcel(this.gridControl1.Model, workBook.Worksheets[0]);
-
-        gec.GridToExcel(this.gridControl2.Model, workBook.Worksheets[1]);
-
-        workBook.SaveAs(saveFileDialog.FileName);
-
-        workBook.Close();
-
-        ExcelUtils.ThrowNotSavedOnDestroy = false;
-
-    }
-
-}
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-
-Imports Syncfusion.XlsIO
-
-Imports Syncfusion.GridExcelConverter
-
-
-
-Private Sub buttonExport_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
-Dim saveFileDialog As SaveFileDialog = New SaveFileDialog()
-
-saveFileDialog.Filter = "Files(*.XLS)|*.XLS"
-
-saveFileDialog.AddExtension = True
-
-saveFileDialog.DefaultExt = ".XLS"
-
-If saveFileDialog.ShowDialog() = DialogResult.OK And Also saveFileDialog.CheckPathExists Then
-
-Dim gec As GridExcelConverterControl = New GridExcelConverterControl
-
-Dim workbook As IWorkbook = ExcelUtils.CreateWorkbook(New String() {"Sheet1", "Sheet2"})
-
-gec.GridToExcel(Me.gridControl1.Model, workBook.Worksheets(0))
-
-gec.GridToExcel(Me.gridDataBoundGrid1.Model, workbook.Worksheets(1))
-
-workbook.SaveAs(saveFileDialog.FileName)
-
-workBook.Close()
-
-ExcelUtils.ThrowNotSavedOnDestroy = False
-
-End If
-
-End Sub
-{% endhighlight   %}
-
-### Exporting Grid Data to Excel 2010
-
-You can export Grid data to Excel 2010. To do this, you must explicitly set the Excel version by creating an XlsIO application, and then export the Grid data to the Excel worksheet. You can set DefaultVersion to _Excel2010_ to export to this version by default. Similarly, you can also export Grid data to other versions of Excel. The following code example illustrates this.
-
-
-
-
-{% highlight c#  %}
-
-
-ExcelEngine engine = new ExcelEngine();
-
-
-
-IApplication app = engine.Excel.Application;
-
-
-
-app.DefaultVersion = ExcelVersion.Excel2010;
-
-
-
-IWorkbook book = app.Workbooks.Create();
-
-
-
-GroupingGridExcelConverterControl gecc = new GroupingGridExcelConverterControl ();
-
-
-
-SaveFileDialog saveFileDialog = new SaveFileDialog();
-
-
-
-saveFileDialog.Filter = "Files(*.xlsx)|*.xlsx";
-
-
-
-saveFileDialog.DefaultExt = ".xlsx";
-
-
-
-if (saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-
-{
-
-
-
-gecc.GroupingGridToExcel(this.gridGroupingControl1, book.Worksheets(0), ConverterOptions.Visible);
-
-
-
-book.SaveAs(saveFileDialog.FileName);
-
-
-
-
-
-   if (MessageBox.Show("Do you wish to open the xls file now?", "Export to Excel", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms. DialogResult.Yes)
-
-   {
-
-
-
-Process proc = new Process ();
-
-
-
-proc.StartInfo.FileName = saveFileDialog.FileName;
-
-
-
-proc.Start();
-
-
-
-  }
-
-
-
-}
-
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-Dim engine As New ExcelEngine()
-
-Dim app As IApplication = engine.Excel.Application
-
-app.DefaultVersion = ExcelVersion.Excel2010
-
-Dim book As IWorkbook = app.Workbooks.Create()
-
-Dim gecc As New GroupingGridExcelConverterControl()
-
-Dim saveFileDialog As New SaveFileDialog()
-
-saveFileDialog.Filter = "Files(*.xlsx)|*.xlsx"
-
-saveFileDialog.DefaultExt = ".xlsx"
-
-If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK 
-
-Then
-
-gecc.GroupingGridToExcel(Me.gridGroupingControl1, book.Worksheets(0), ConverterOptions.Visible)
-
-book.SaveAs(saveFileDialog.FileName)
-
-   If MessageBox.Show("Do you wish to open the xls file now?", "Export to Excel", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.Yes Then
-
-Dim proc As New Process()
-
-proc.StartInfo.FileName = saveFileDialog.FileName
-
-proc.Start()
-
-  End If
-
-End If
-{% endhighlight   %}
-
-N> This is applicable to all Grid controls in Essential Grid.
-
-## PDF Export
-
-Our Essential Grid control supports conversion of grid content to a PDF file. Data in Grid control can be converted to a PDF document for offline verification and/or computation. This can be achieved by making use of GridPDFConverter class. PDF libraries are used to support the conversion of grid content to a PDF page. To make the control functional, the following dll files should be added along with the default dll files in the reference folder: 
-
-* Syncfusion.Pdf.Base
-* Syncfusion.GridHelperClasses.Windows.
-
-ExportToPdf method is used to export grid content to a PDF file. Following code example illustrates how to convert the content in grid to PDF.
-
-
-{% highlight c#  %}
-
-
-GridPDFConverter pdfConvertor = new GridPDFConverter();
-
-pdfConvertor.ExportToPdf("Sample1.pdf", this.gridControl1);
-
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-Dim pdfConvertor As GridPDFConverter = New GridPDFConverter()
-
-pdfConvertor.ExportToPdf("Sample1.pdf", Me.gridControl1)
-
-{% endhighlight   %}
-
-![](Serialization_images/Serialization_img4.jpeg)
-
-
-
-
-
-A sample demonstrating this feature is available under the following sample installation path.
-
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Export\PDF Converter Demo_
-
-### Support to Access or Modify Document Attributes of Exported PDF
-
-This feature allows you to access and modify PDF document attributes while exporting, or after exporting, a grid to PDF. When you want to check the page count of the exporting document, you can use this feature. 
-
-Events
-
-
-
-<table>
-<tr>
-<th>
-EVENT </th><th>
-DESCRIPTION </th><th>
-ARGUMENTS </th><th>
-TYPE </th><th>
-REFERENCE LINKS </th></tr>
-<tr>
-<td>
-Exporting </td><td>
-tdis will be triggered before exporting grid to PDF. </td><td>
-(object sender, Eventargs e) </td><td>
-event</td><td>
-N/A </td></tr>
-<tr>
-<td>
-Exported </td><td>
-tdis will be triggered after exporting grid to PDF.</td><td>
-(object sender, Eventargs e) </td><td>
-event </td><td>
-N/A </td></tr>
-</table>
- 
-#### Sample Link
-
-A demo of this feature is available in the following location: 
-
-_{Install Drive}\AppData\Local\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Exporting\Exporting Demo\_
-
-### Hooking the events in an application
-
-You can hook the events using the ExportToPdf() method of PDFconverter. The following code illustrates this:
-
-
-
-{% highlight c#  %}
-
-GridPDFConverter pdfConvertor = new GridPDFConverter();
-
-pdfConvertor.Exporting += new GridPDFConverter.PDFExportingEventHandler(pdfConvertor_Exporting);
-
-pdfConvertor.Exported += new GridPDFConverter.PDFExportedEventHandler(pdfConvertor_Exported);
-
-
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-
-Dim pdfConvertor As GridPDFConverter = New GridPDFConverter()
-
-AddHandler pdfConvertor.Exporting, AddressOf pdfConvertor_Exporting
-
-AddHandler pdfConvertor.Exported, AddressOf pdfConvertor_Exported
-
-{% endhighlight   %}
-
-## SOAP, Binary and XML Serialization
-
-Essential Grid control has support for serialization and de-serialization of grid's schema information.Export as Image Support
-
-Essential Grid provides image export support for the Grid, GridDataBoundGrid, and GridGrouping controls in the Excel converter. With this support, users can enable or disable image export from a Grid control to Excel. This is a Boolean property and its default value is true. This property will affect the grid-to-Excel converter when the ExportStyle property is true.
-
-### Use Case Scenarios 
-
-This feature allows you to control the image export in the grid-to-Excel converter. This property will affect the grid when ExportStyle is true.
-
-
-
-<table>
-<tr>
-<th>
-PROPERTY</th><th>
-DESCRIPTION</th><th>
-DATA TYPE</th></tr>
-<tr>
-<td>
-ExportImage</td><td>
-Used to enable or disable the image export in Syncfusion Windows Forms grid.</td><td>
-Boolean</td></tr>
-</table>
- Syntax
-
-
-{% highlight c#  %}
-
-
-ExcelExport.ExportStyle = true;   
-
-//ExportImage works only when ExportStyle is true.         
-
-ExcelExport.ExportImage = false;
-
-
-{% endhighlight   %}
-
-
-{% highlight vbnet  %}
-
-
-
-
-
-ExcelExport.ExportStyle = True
-
-‘ExportImage works only when ExportStyle is true.
-
-ExcelExport.ExportImage = False
-{% endhighlight   %}
-
-N> Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called deserialization.
-
-Grid control supports three different types of serialization techniques namely:
-
-* SOAP - Helps convert the grid schema information to SOAP format.
-* Binary - Helps convert the grid schema information to binary format.
-* XML - Helps convert the grid schema information to XML format.
-
-### SOAP
-
-
-
-* Following code example illustrates serialization of grid schema information by using SOAP technique.
-
-
-
-{% highlight c#  %}
-
-this.gridControl1.Model.SaveSoap(dlg.FileName);
-
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-Me.gridControl1.Model.SaveSoap(dlg.FileName)
-
-{% endhighlight   %}
-
-
-
-* Following code example illustrates deserialization of grid schema information by using SOAP technique.
-
-
-
-
-{% highlight c#  %}
-this.gridControl1.Model = GridModel.LoadSoap(dlg.FileName);
-
-this.gridControl1.Refresh();    
-
-
-{% endhighlight   %}
-{% highlight vbnet %}
-
-
-
-
-Me.gridControl1.Model = GridModel.LoadSoap(dlg.FileName)
-
-Me.gridControl1.Refresh()
-
-{% endhighlight   %}
-
-### Binary
-
-
-
-* Following code example illustrates serialization of grid schema information by using Binary technique.
-
-
-
-{% highlight c#  %}
-
-this.gridControl1.Model.SaveBinary(dlg.FileName);
-
-{% endhighlight   %}
-
-
-{% highlight c#  %}
-
-
-Me.gridControl1.Model.SaveBinary(dlg.FileName);
-{% endhighlight   %}
-
-* Following code example illustrates deserialization of grid schema information by using Binary technique.
-
-
-
-
-
-{% highlight c#  %}
-
-this.gridControl1.Model = GridModel.LoadBinary(dlg.FileName);
+{% tabs %} 
+{% highlight c# %}
+//Deserialize the schema and the look and feel of the grid
+this.gridControl1.InitializeFromXml("GridSchemaXml");
 
 this.gridControl1.Refresh();
+{% endhighlight %}
 
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-Me.gridControl1.Model = GridModel.LoadBinary(dlg.FileName)
+{% highlight vb %}
+'Deserialize the schema and the look and feel of the grid
+Me.gridControl1.InitializeFromXml("GridSchemaXml")
 
 Me.gridControl1.Refresh()
-{% endhighlight   %}
+{% endhighlight %}
+{% endtabs %}
 
-### XML
+### Saving Grid Data using Xml Serialization 
 
-* Following code example illustrates serialization of grid schema information by using XML technique.
+The grid data (schema) can alone serialize without the style information (Look and Feel) by using the [XmlSerializer](https://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx#) method. 
 
+{% tabs %} 
+{% highlight c# %}
+//create stream for saving the data
+Stream s = File.Create("GridSchemaxml");
 
-
-{% highlight c#  %}
-
-Stream s = null;
-
-s = File.Create(dlg.FileName);
-
+//Xml writer for writing the data into the xml format
 XmlWriter xw = new XmlTextWriter(s, System.Text.Encoding.Default);
 
+//Creating the object for serialize the grid data
 XmlSerializer xs = new System.Xml.Serialization.XmlSerializer(this.gridControl1.Model.Data.GetType());
 
+//Serialize the content of the grid to xml file
 xs.Serialize(xw, this.gridControl1.Model.Data);
 
 s.Close();
+{% endhighlight %}
 
+{% highlight vb %}
+'create stream for saving the data
+Dim s As Stream = File.Create("GridSchemaxml")
 
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-
-Dim s As Stream = Nothing
-
-s = File.Create(dlg.FileName)
-
+'Xml writer for writing the data into the xml format
 Dim xw As XmlWriter = New XmlTextWriter(s, System.Text.Encoding.Default)
 
+'Creating the object for serializing the grid data
 Dim xs As XmlSerializer = New System.Xml.Serialization.XmlSerializer(Me.gridControl1.Model.Data.GetType())
 
+'Serialize the content of the grid to xml file
 xs.Serialize(xw, Me.gridControl1.Model.Data)
 
 s.Close()
+{% endhighlight %}
+{% endtabs %}
 
-{% endhighlight   %}
+### Loading Grid Data using Xml Serialization
 
-* Following code example illustrates deserialization of grid schema information by using XML technique.
+The schema can be deserialized from the xml file and loaded to the grid by using the following code snippet,  
 
+{% tabs %} 
+{% highlight c# %}
+//Open the xml file in the read mode
+Stream s = File.OpenRead("GridSchemaxml");
 
-{% highlight c#  %}
+//read the stream of data using the xml reader
+XmlReader xr = new XmlTextReader(s);
 
+XmlSerializer xs = new XmlSerializer(this.gridControl1.Model.Data.GetType());
 
-Stream s = null;
-
-s = File.OpenRead(dlg.FileName);
-
-XmlReader xw = new XmlTextReader(s);
-
-XmlSerializer xs = new System.Xml.Serialization.XmlSerializer(this.gridControl1.Model.Data.GetType());
+//Deserialize the content of xml file to the grid data
+this.gridControl1.Model.Data = (GridData)xs.Deserialize(xr);
 
 s.Close();
 
-this.gridControl1.Model.Data = (GridData)xs.Deserialize(xw);
-
 this.gridControl1.Refresh();
+{% endhighlight %}
 
+{% highlight vb %}
+'Open the xml file in the read mode
+Dim s As Stream = File.OpenRead("GridSchemaxml")
 
+'read the stream of data using the xml reader
+Dim xr As XmlReader = New XmlTextReader(s)
 
-{% endhighlight   %}
+Dim xs As New XmlSerializer(Me.gridControl1.Model.Data.GetType())
 
-{% highlight vbnet  %}
-
-Dim s As Stream = Nothing
-
-s = File.OpenRead(dlg.FileName)
-
-Dim xw As XmlReader = New XmlTextReader(s)
-
-Dim xs As XmlSerializer = New System.Xml.Serialization.XmlSerializer(Me.gridControl1.Model.Data.GetType())
+'Deserialize the content of xml file to the grid data
+Me.gridControl1.Model.Data = CType(xs.Deserialize(xr), GridData)
 
 s.Close()
 
-Me.gridControl1.Model.Data = CType(xs.Deserialize(xw), GridData)
-
 Me.gridControl1.Refresh()
-{% endhighlight   %}
+{% endhighlight %}
+{% endtabs %}
 
- ![](Serialization_images/Serialization_img6.png) 
+## SOAP
 
+This serialization technique is used to store the schema of the grid in a memory stream rather than the file system.
 
+### Saving SOAP
 
+The GridModel.[SaveSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SaveSoap.html#) method is used to save the schema of the grid to the memory stream / file.
 
+{% tabs %} 
+{% highlight c# %}
+//Serialize the schema to the memory stream/ file
+this.gridControl1.SaveSoap("GridSchemaSoap");
 
-A sample demonstrating this feature is available under the following sample installation path.
+MemoryStream stream = new MemoryStream();
 
-<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Serialization\Serialize Grid Control Demo
+//Save the Grid schema into the memory Stream 
+this.gridControl1.SaveSoap(stream);  //this.gridControl1.SaveXml(stream);
+{% endhighlight %}
 
+{% highlight vb %}
+'Serialize the schema to the memory stream/ file
+Me.gridControl1.SaveSoap("GridSchemaSoap")
+
+Dim stream As New MemoryStream()
+
+'Save the Grid schema into the memory Stream 
+Me.gridControl1.SaveSoap(stream) 'this.gridControl1.SaveXml(stream);
+{% endhighlight %}
+{% endtabs %}
+
+### Loading SOAP
+
+The [GridModel.LoadSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadSoap.html#) method is used to deserialize the contents of the file/memory stream to the grid model.
+
+{% tabs %} 
+{% highlight c# %}
+//Load the schema into the Grid model
+this.gridControl1.Model = GridModel.LoadSoap("GridSchemaSoap");
+
+//Load the content of the memory stream into the Grid
+this.gridControl1.Model = GridModel.LoadSoap(stream);
+{% endhighlight %}
+
+{% highlight vb %}
+'Load the schema into the Grid model
+Me.gridControl1.Model = GridModel.LoadSoap("GridSchemaSoap")
+
+'Load the content of the memory stream into the Grid
+Me.gridControl1.Model = GridModel.LoadSoap(stream)
+{% endhighlight %}
+{% endtabs %}
