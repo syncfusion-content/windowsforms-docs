@@ -19,17 +19,15 @@ RibbonControlAdv comes with various events and methods to make easy customizatio
 Events</th><th>
 Description</th><th>
 EventArgs</th></tr>
-<tr>
-<td colspan = "4">
-QuickAccessToolbar Events</td></tr>
+
 <tr>
 <td>
-RibbonControlAdv1.BeforeCustomizeDropDownPopup</td><td>
+BeforeCustomizeDropDownPopup</td><td>
 Occurs before the DropDown of QuickItemsDropDownButton is shown.</td><td>
 DropDownEventArgs</td></tr>
 <tr>
 <td>
-RibbonControlAdv1.AfterCustomizeDropDownPopup</td><td>
+AfterCustomizeDropDownPopup</td><td>
 Occurs after the DropDown of QuickItemsDropDownButton is shown.</td><td>
 EventArgs</td></tr>
 <tr>
@@ -53,9 +51,6 @@ RibbonControlAdv.Header.QuickItemRemoved</td><td>
 Occurs when an item is removed from the Quick Menu.</td><td>
 ToolStripItemEventArgs</td></tr>
 <tr>
-<td colspan = "4">
-ToolStripTabItem Events</td></tr>
-<tr>
 <td>
 RibbonControlAdv1.SelectedTabItemChanged</td><td>
 Occurs when selected ToolStripTabItem has changed.</td><td>
@@ -71,49 +66,27 @@ RibbonControlAdv1.Header.MainItems.BeforeRemoveItem</td><td>
 Occurs before a ToolStripItem is removed from the collection.</td><td>
 RibbonItemEventArgs</td></tr>
 <tr>
-<td colspan = "4">
-OfficeMenuButton Event</td></tr>
-<tr>
 <td>
 RibbonControlAdv.MenuButtonDoubleClick</td><td>
 Occurs when the OfficeMenuButton is double clicked.</td><td>
 EventArgs</td></tr>
+<tr>
+<td>
+QATCustomizationMenuClicked</td><td>
+This event will be triggered when the Customize Quick Access Toolbar is clicked from the Ribbon Context Menu.</td><td>
+BeforeQATEventArgs</td></tr>
+<tr>
+<td>
+RibbonCustomizationMenuClicked</td><td>
+This event will be triggered when the Customize the Ribbon is clicked from the Ribbon Context Menu.</td><td>
+BeforeCustomizeRibbonEventArgs</td></tr>
+<tr>
+<td>
+RibbonCustomizationMenuClicked</td><td>
+This event will be triggered when the Customize the Ribbon is clicked from the Ribbon Context Menu.</td><td>
+BeforeCustomizeRibbonEventArgs</td></tr>
 </table>
 
-## Methods
-
-<table>
-<tr>
-<td>
-Methods</td><td>
-Description</td></tr>
-<tr>
-<td colspan = "2">
-QuickAccessToolbar Methods</td></tr>
-<tr>
-<td>
-RibbonControlAdv1.ShowCustomizeDialog</td><td>
-Shows QuickItems customizing dialog.</td></tr>
-<tr>
-<td>
-RibbonControlAdv1.Header.AddQuickItem</td><td>
-Adds ToolStripItems to the QuickAccessPanel.</td></tr>
-<tr>
-<td>
-RibbonControlAdv1.Header.QuickItems.RemoveAt</td><td>
-Removes the specified ToolStripItems from the QuickAccessPanel.</td></tr>
-<tr>
-<td colspan = "2">
-ToolStripTabItem Method</td></tr>
-<tr>
-<td>
-RibbonControlAdv1.Header.AddMainItem</td><td>
-Adds ToolStripTabItems to the RibbonPanel.</td></tr>
-<tr>
-<td>
-RibbonControlAdv1.Header.MainItems.RemoveAt</td><td>
-Removes the specified ToolStripTabItems from the QuickAccessPanel.</td></tr>
-</table>
 
 ### SelectedTabItemChanged Event
 
@@ -198,3 +171,210 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+### QATCustomizationMenuClicked
+
+This event will be triggered when the Customize Quick Access Toolbar is clicked from the Ribbon Context Menu.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.QATCustomizationMenuClicked += ribbonControlAdv1_QATCustomizationMenuClicked;
+
+void ribbonControlAdv1_QATCustomizationMenuClicked(object sender, BeforeQATEventArgs e)
+
+{
+
+MessageBox.Show("Customize Quick Access Toolbar context menu is clicked");
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+AddHandler Me.ribbonControlAdv1.QATCustomizationMenuClicked, AddressOf ribbonControlAdv1_QATCustomizationMenuClicked
+
+Private Sub ribbonControlAdv1_QATCustomizationMenuClicked(ByVal sender As Object, ByVal e As BeforeQATEventArgs)
+
+MessageBox.Show("Customize Quick Access Toolbar context menu is clicked")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### RibbonCustomizationMenuClicked
+
+This event will be triggered when the Customize the Ribbon is clicked from the Ribbon Context Menu.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.RibbonCustomizationMenuClicked += ribbonControlAdv1_RibbonCustomizationMenuClicked;
+
+void ribbonControlAdv1_RibbonCustomizationMenuClicked(object sender, BeforeCustomizeRibbonEventArgs e)
+
+{
+
+MessageBox.Show("Customize Ribbon context menu is clicked");
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+AddHandler Me.ribbonControlAdv1.RibbonCustomizationMenuClicked, AddressOf ribbonControlAdv1_RibbonCustomizationMenuClicked
+
+Private Sub ribbonControlAdv1_RibbonCustomizationMenuClicked(ByVal sender As Object, ByVal e As BeforeCustomizeRibbonEventArgs)
+
+MessageBox.Show("Customize Ribbon context menu is clicked")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### BeforeAddItem and BeforeRemoveItem Events
+
+**BeforeAddItem** event is handled, just before the item gets added to the Quick Access Toolbar. **BeforeRemoveItem** event is handled, just before an item is removed from the Quick Access Toolbar.
+
+{% tabs %}
+
+{% highlight c# %}
+
+private void QuickItems_BeforeAddItem(object sender, RibbonItemEventArgs e)
+
+{
+
+//Gets the item that is going to be added
+
+MessageBox.Show(e.Item.Text.ToString() + " Item is Added");
+
+}
+
+private void QuickItems_BeforeRemoveItem(object sender, RibbonItemEventArgs e)
+
+{
+
+//Gets the item that is going to be Removed
+
+MessageBox.Show(e.Item.Text.ToString() + " Item is Removed");
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Private Sub QuickItems_BeforeAddItem(ByVal sender As Object, ByVal e As RibbonItemEventArgs)
+
+'Gets the item that is going to be added 
+
+MessageBox.Show(e.Item.Text.ToString() + " Item is Added")
+
+End Sub
+
+Private Sub QuickItems_BeforeRemoveItem(ByVal sender As Object, ByVal e As RibbonItemEventArgs)
+
+'Gets the item that is going to be Removed 
+
+MessageBox.Show(e.Item.Text.ToString() + " Item is Removed")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### QuickItemAdded and QuickItemRemoved Events
+
+When the QuickAccessToolBar items are added, RibbonControlAdv.Header.**QuickItemAdded** event will be handled. Similarly when the QuickAccessToolBar items are removed, RibbonControlAdv.Header.**QuickItemRemoved** event will be handled. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.Header.QuickItemAdded += new ToolStripItemEventHandler(Header_QuickItemAdded);
+
+this.ribbonControlAdv1.Header.QuickItemRemoved += new ToolStripItemEventHandler(Header_QuickItemRemoved); 
+
+private void Header_QuickItemAdded(object sender, ToolStripItemEventArgs e)
+
+{
+
+MessageBox.Show(e.Item.Text);
+
+}
+
+private void Header_QuickItemRemoved(object sender, ToolStripItemEventArgs e)
+
+{
+
+MessageBox.Show(e.Item.Text);
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+AddHandler ribbonControlAdv1.Header.QuickItemAdded, AddressOf Header_QuickItemAdded 
+
+AddHandler ribbonControlAdv1.Header.QuickItemRemoved, AddressOf Header_QuickItemRemoved 
+
+Private Sub Header_QuickItemAdded(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
+
+MessageBox.Show(e.Item.Text)
+
+End Sub
+
+Private Sub Header_QuickItemRemoved(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
+
+MessageBox.Show(e.Item.Text)
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Methods
+
+<table>
+<tr>
+<td>
+Methods</td><td>
+Description</td></tr>
+<tr>
+<td colspan = "2">
+QuickAccessToolbar Methods</td></tr>
+<tr>
+<td>
+RibbonControlAdv1.ShowCustomizeDialog</td><td>
+Shows QuickItems customizing dialog.</td></tr>
+<tr>
+<td>
+RibbonControlAdv1.Header.AddQuickItem</td><td>
+Adds ToolStripItems to the QuickAccessPanel.</td></tr>
+<tr>
+<td>
+RibbonControlAdv1.Header.QuickItems.RemoveAt</td><td>
+Removes the specified ToolStripItems from the QuickAccessPanel.</td></tr>
+<tr>
+<td colspan = "2">
+ToolStripTabItem Method</td></tr>
+<tr>
+<td>
+RibbonControlAdv1.Header.AddMainItem</td><td>
+Adds ToolStripTabItems to the RibbonPanel.</td></tr>
+<tr>
+<td>
+RibbonControlAdv1.Header.MainItems.RemoveAt</td><td>
+Removes the specified ToolStripTabItems from the QuickAccessPanel.</td></tr>
+</table>
