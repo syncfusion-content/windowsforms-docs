@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Ribbon illustrates the implementation of Office UI with Ribbon items and Backstage. Also RibbonWindow has been implemented for giving a themed Office UI look and feel for the traditional window. Functionality of keyboard navigation, Tooltips and Keytips are provided for access to items present in the ribbon.
+Ribbon illustrates the implementation of Office UI with Ribbon items and Backstage. Also RibbonForm has been implemented for giving a themed Office UI look and feel for the traditional window. Functionality of keyboard navigation, Tooltips and Keytips are provided for access to items present in the ribbon.
 
 ## Components of RibbonControlAdv
 
@@ -23,12 +23,12 @@ Ribbon illustrates the implementation of Office UI with Ribbon items and Backsta
 
 ## Key Features
 
-* Provides a ribbon window that overrides the default window and can set visual styles of ribbon window to different theme styles.
+* Provides a RibbonForm that overrides the default form and can set visual styles of RibbonForm to different theme styles.
 * QuickAccessToolbar provides placing of frequently used items.
-* RibbonTab is available to add different Tabs like in Microsoft Outlook.
-* RibbonBar is available to structure the layouts.
-* Ribbon has a custom implementation of button control as RibbonButton.
+* ToolStripTabItem is available to add different Tabs like in Microsoft Outlook.
+* RibbonPanel is available to structure the layouts.
 * Can minimize / maximize the ribbon.
 * Keyboard navigation made easy through KeyTips.
-* RibbonStatusBar provides placing of StatusBar items.
+* StatusBarEx provides placing of StatusBar items.
+* Restore the saved state of the RibbonControlAdv using Persistence support.
 

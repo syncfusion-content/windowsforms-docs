@@ -17,3 +17,36 @@ RibbonControlAdv comes with persistence support. Using this we can restore the s
 * Items added through the context menu that appears while clicking the dropdown arrow to the right of the QuickAccessToolBar can be persisted.
 * The collapsed / expanded / floating state of the RibbonPanel can be persisted.
 * The position of the QuickAccessToolBar, either below or above the ribbon panel can be persisted.
+
+The RibbonControlAdv can be serialized using the below code snippet.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Saves the current state information to Isolated Storage.
+
+this.ribbonControlAdv1.SaveState();
+
+//Reads the persisted state information from the Isolated Storage.
+
+this.ribbonControlAdv1.LoadState();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+'Saves the current state information to Isolated Storage.
+
+Me.ribbonControlAdv1.SaveState()
+
+'Reads the persisted state information from the Isolated Storage.
+
+Me.ribbonControlAdv1.LoadState()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+

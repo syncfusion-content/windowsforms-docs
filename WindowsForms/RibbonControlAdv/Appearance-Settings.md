@@ -193,6 +193,149 @@ _touchColorTable.DropDownSelectedTextForeColor = Color.White;
 
 _touchColorTable.ToolstripTabItemBorder = ColorTranslator.FromHtml("#0272c5");
 
+//To set the back color of active toolstriptabitem
+
+_touchColorTable.ActiveToolStripTabItemBackColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the back color of active toolstriptabitem
+
+_touchColorTable.BackStageButtonColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the Color of the BackStageButton for Hovering.
+
+_touchColorTable.BackStageButtonHoverColor = Color.AliceBlue;
+
+//To sets the Caption color for the Backstage.
+
+_touchColorTable.BackStageCaptionColor = Color.BlanchedAlmond;
+
+//To sets the color of the CloseButton in BackStageVisibleMode.
+
+_touchColorTable.BackStageCloseButtonBackground = Color.BlueViolet;
+
+//To sets the BackColor of the MenuButton.
+
+_touchColorTable.BackStageNavigationButtonBackColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the ForeColor of the MenuButton.
+
+_touchColorTable.BackStageNavigationButtonForeColor = Color.White;
+
+//To sets the color for BackStageTab.
+
+_touchColorTable.BackStageTabColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the Color of the BackStageTab for Hovering.
+
+_touchColorTable.BackStageTabHoverColor = Color.BlanchedAlmond;
+
+//To sets the color for ToolStripBorder.
+
+_touchColorTable.BottomToolStripBackColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color of the button for checked state.
+
+_touchColorTable.ButtonCheckedColor = Color.Blue;
+
+//To sets the color of the Button for pressed state.
+
+_touchColorTable.ButtonPressedColor = Color.BlueViolet;
+
+//To sets the color of the close button.
+
+_touchColorTable.CloseButtonBackground = Color.CadetBlue;
+
+//To sets the color of the Close Button in pressed state.
+
+_touchColorTable.CloseButtonPressed = Color.Red;
+
+//To sets the color for the DropDown Text.
+
+_touchColorTable.DropDownTextForeColor = Color.Black;
+
+//To sets the color for the DropDown Title.
+
+_touchColorTable.DropDownTitleBackground = Color.WhiteSmoke;
+
+//To sets the color for RibbonHeader.
+
+_touchColorTable.HeaderColor = ColorTranslator.FromHtml("#0272c5");
+
+//To set the value of the BackColor of the tab when the mouse is hover on it.
+
+_touchColorTable.HoverTabBackColor = Color.Violet;
+
+//To set the value of the ForeColor of the tab when the mouse is hover on it.
+
+_touchColorTable.HoverTabBackColor = Color.Wheat;
+
+//To sets the color for Image Margin.
+
+_touchColorTable.ImageMargin = Color.Yellow;
+
+//To sets the color for when mouse hovers MenuButtonArrow.
+
+_touchColorTable.MenuButtonHoverArrowColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color for OverFlowArrow.
+
+_touchColorTable.OverFlowArrowColor = Color.Navy;
+
+//To sets the color of the QATButton for hover state.
+
+_touchColorTable.QATButtonHoverColor = Color.MediumAquamarine;
+
+//To sets the color for QATDown Arrow.
+
+_touchColorTable.QATDownArrowColor = Color.LimeGreen;
+
+//To sets the back color of active RibbonPanel
+
+_touchColorTable.RibbonPanelBackColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color of the SplitButton for Pressed state.
+
+_touchColorTable.SplitButtonPressed = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color of the SplitButton for selected state.
+
+_touchColorTable.SplitButtonSelected = Color.LightYellow;
+
+//To sets the color for SystemButtonBackground.
+
+_touchColorTable.SystemButtonBackground = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color of the SystemButton in pressed state.
+
+_touchColorTable.SystemButtonPressed = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color for TabScrollArrow.
+
+_touchColorTable.TabScrollArrowColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color of the DropDown Arrow.
+
+_touchColorTable.ToolStripArrowColor = Color.Red;
+
+//To sets the color for ToolStripBorder.
+
+_touchColorTable.ToolStripBorderColor = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color for Button Border.
+
+_touchColorTable.ToolstripButtonPressedBorder = ColorTranslator.FromHtml("#0272c5");
+
+//To sets the color of the selectedTabBorder.
+
+_touchColorTable.ToolstripSelectedTabItemBorder = Color.DodgerBlue;
+
+//To sets the color for Spliter.
+
+_touchColorTable.ToolStripSpliterColor = Color.Red;
+
+//To sets the color of the TabForeColor.
+
+_touchColorTable.ToolstripTabItemForeColor = Color.White;
 
 //To apply TouchStyleColorTable for RibbonControlAdv
 
@@ -254,6 +397,150 @@ _touchColorTable.DropDownSelectedTextForeColor = Color.White
 'To set the border color of the ToolStripTabItem.
 
 _touchColorTable.ToolstripTabItemBorder = ColorTranslator.FromHtml("#0272c5")
+
+'To set the back color of active toolstriptabitem
+
+_touchColorTable.ActiveToolStripTabItemBackColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the back color of active toolstriptabitem
+
+_touchColorTable.BackStageButtonColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the Color of the BackStageButton for Hovering.
+
+_touchColorTable.BackStageButtonHoverColor = Color.AliceBlue
+
+'To sets the Caption color for the Backstage.
+
+_touchColorTable.BackStageCaptionColor = Color.BlanchedAlmond
+
+'To sets the color of the CloseButton in BackStageVisibleMode.
+
+_touchColorTable.BackStageCloseButtonBackground = Color.BlueViolet
+
+'To sets the BackColor of the MenuButton.
+
+_touchColorTable.BackStageNavigationButtonBackColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the ForeColor of the MenuButton.
+
+_touchColorTable.BackStageNavigationButtonForeColor = Color.White
+
+'To sets the color for BackStageTab.
+
+_touchColorTable.BackStageTabColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the Color of the BackStageTab for Hovering.
+
+_touchColorTable.BackStageTabHoverColor = Color.BlanchedAlmond
+
+'To sets the color for ToolStripBorder.
+
+_touchColorTable.BottomToolStripBackColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color of the button for checked state.
+
+_touchColorTable.ButtonCheckedColor = Color.Blue
+
+'To sets the color of the Button for pressed state.
+
+_touchColorTable.ButtonPressedColor = Color.BlueViolet
+
+'To sets the color of the close button.
+
+_touchColorTable.CloseButtonBackground = Color.CadetBlue
+
+'To sets the color of the Close Button in pressed state.
+
+_touchColorTable.CloseButtonPressed = Color.Red
+
+'To sets the color for the DropDown Text.
+
+_touchColorTable.DropDownTextForeColor = Color.Black
+
+'To sets the color for the DropDown Title.
+
+_touchColorTable.DropDownTitleBackground = Color.WhiteSmoke
+
+'To sets the color for RibbonHeader.
+
+_touchColorTable.HeaderColor = ColorTranslator.FromHtml("#0272c5")
+
+'To set the value of the BackColor of the tab when the mouse is hover on it.
+
+_touchColorTable.HoverTabBackColor = Color.Violet
+
+'To set the value of the ForeColor of the tab when the mouse is hover on it.
+
+_touchColorTable.HoverTabBackColor = Color.Wheat
+
+'To sets the color for Image Margin.
+
+_touchColorTable.ImageMargin = Color.Yellow
+
+'To sets the color for when mouse hovers MenuButtonArrow.
+
+_touchColorTable.MenuButtonHoverArrowColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color for OverFlowArrow.
+
+_touchColorTable.OverFlowArrowColor = Color.Navy
+
+'To sets the color of the QATButton for hover state.
+
+_touchColorTable.QATButtonHoverColor = Color.MediumAquamarine
+
+'To sets the color for QATDown Arrow.
+
+_touchColorTable.QATDownArrowColor = Color.LimeGreen
+
+'To sets the back color of active RibbonPanel
+
+_touchColorTable.RibbonPanelBackColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color of the SplitButton for Pressed state.
+
+_touchColorTable.SplitButtonPressed = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color of the SplitButton for selected state.
+
+_touchColorTable.SplitButtonSelected = Color.LightYellow
+
+'To sets the color for SystemButtonBackground.
+
+_touchColorTable.SystemButtonBackground = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color of the SystemButton in pressed state.
+
+_touchColorTable.SystemButtonPressed = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color for TabScrollArrow.
+
+_touchColorTable.TabScrollArrowColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color of the DropDown Arrow.
+
+_touchColorTable.ToolStripArrowColor = Color.Red
+
+'To sets the color for ToolStripBorder.
+
+_touchColorTable.ToolStripBorderColor = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color for Button Border.
+
+_touchColorTable.ToolstripButtonPressedBorder = ColorTranslator.FromHtml("#0272c5")
+
+'To sets the color of the selectedTabBorder.
+
+_touchColorTable.ToolstripSelectedTabItemBorder = Color.DodgerBlue
+
+'To sets the color for Spliter.
+
+_touchColorTable.ToolStripSpliterColor = Color.Red
+
+'To sets the color of the TabForeColor.
+
+_touchColorTable.ToolstripTabItemForeColor = Color.White
 
 'To apply TouchStyleColorTable for RibbonControlAdv
 
