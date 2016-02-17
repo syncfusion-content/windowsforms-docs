@@ -15,11 +15,16 @@ This section explains how to implement a similar UI as Microsoft Outlook using R
 
 To create a control using Visual Studio:
 
-1.   Drag and drop the Ribbon control from toolbox to designer. It will generate the Ribbon as shown below:
+* Drag and drop the Ribbon control from toolbox to designer. It will generate the Ribbon as shown below:
 
-2. Most commonly used settings of the **RibbonControlAdv** are configured either through Designer using the **Smart** **tag** or through the Properties window or through code.
+![](GettingStarted_images/ribboncontrol.png)
 
-### Configuring Ribbon
+* Most commonly used settings of the **RibbonControlAdv** are configured either through Designer using the **Smart** **tag** or through the Properties window or through code.
+
+![](GettingStarted_images/ribboncontrol1.png)
+
+
+## Configuring Ribbon
 
 ### Ribbon Form
 
