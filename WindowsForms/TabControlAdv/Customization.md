@@ -150,7 +150,7 @@ Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Gets / sets the border styles for the tabpages. It includes the following styles:FixedSingleFixed3DNone</td></tr>
+Gets / sets the border styles for the tabpages. It includes the following styles:FixedSingle,Fixed3D and None</td></tr>
 </table>
 
 ![](TabControlAdv_images/TabControlAdv_img6.jpeg)
