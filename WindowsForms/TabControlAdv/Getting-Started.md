@@ -35,7 +35,7 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
    ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
 
- In the properties window, select the TabPages property. The TabPageAdv Collection Editor will be opened. Click Add, a TabPage will be added to the TabControlAdv.
+6. In the properties window, select the TabPages property. The TabPageAdv Collection Editor will be opened. Click Add, a TabPage will be added to the TabControlAdv.
 
   ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
