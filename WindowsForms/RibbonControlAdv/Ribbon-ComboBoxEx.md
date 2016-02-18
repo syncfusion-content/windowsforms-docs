@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Ribbon ComboBoxEx
+# ToolStripComboBoxEx
 
 ToolStripComboBoxEx control is used to display the list of items, as ComboBox. It can be added to a ToolStripEx directly or through a panel. 
 

@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Ribbon CheckBox
+# ToolStripCheckBox
 
 ToolStripCheckBox is used to select or unselect options. It provides similar set of functionalities like normal CheckBox control in Ribbon.It can be added to a ToolStripEx directly or through a panel. 
 
@@ -15,7 +15,7 @@ ToolStripCheckBox is used to select or unselect options. It provides similar set
 
 The below properties controls the appearance and behavior of the ToolStripCheckBox item.
 
-### Foreground Settings
+## Foreground Settings
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ TextAlign<br/><br/></td><td>
 Specifies the alignment of the text in the item. The options are,<br/><br/>TopLeft, <br/><br/>TopCenter, <br/><br/>TopRight,<br/><br/>MiddleLeft, <br/><br/>MiddleCenter, <br/><br/>MiddleRight,<br/><br/>BottomLeft, <br/><br/>BottomCenter and<br/><br/>BottomRight.<br/><br/></td></tr>
 </table>
 
-### Style Settings
+## Style Settings
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ AutoSize<br/><br/></td><td>
 Specifies whether the item should size itself based on its image and text.<br/><br/></td></tr>
 </table>
 
-### ToolTip Settings
+## ToolTip Settings
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ ToolTipText<br/><br/></td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></tr>
 </table>
 
-### RTL Support
+## RTL Support
 
 <table>
 <tr>
