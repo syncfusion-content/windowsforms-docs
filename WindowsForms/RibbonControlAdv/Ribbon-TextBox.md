@@ -6,7 +6,7 @@ platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
-# Ribbon TextBox
+# ToolStripTextBox
 
 Ribbon TextBox control provide similar set of functionalities like normal TextBox control in Ribbon Instance. It can be added to a ToolStripEx directly or through a panel. 
 
@@ -15,7 +15,7 @@ Ribbon TextBox control provide similar set of functionalities like normal TextBo
 
 The below properties controls the appearance and behavior of the ToolStripTextBox Item.
 
-### Foreground Settings
+## Foreground Settings
 
 <table>
 <tr>
@@ -52,7 +52,7 @@ TextBoxTextAlign<br/><br/></td><td>
 Specifies the alignment of the text in the item. The options are,<br/><br/>Left,<br/><br/>Right and <br/><br/>Center.<br/><br/></td></tr>
 </table>
 
-### Style Settings
+## Style Settings
 
 <table>
 <tr>
@@ -77,7 +77,7 @@ AutoSize<br/><br/></td><td>
 Specifies whether the item should size itself based on its image and text.<br/><br/></td></tr>
 </table>
 
-### ToolTip Settings
+## ToolTip Settings
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ ToolTipText<br/><br/></td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></tr>
 </table>
 
-### RTL Support
+## RTL Support
 
 <table>
 <tr>
@@ -107,7 +107,7 @@ RightToLeft<br/><br/></td><td>
 Indicates whether the item should right to left for RTL languages.<br/><br/></td></tr>
 </table>
 
-### Behavior Settings
+## Behavior Settings
 
 <table>
 <tr>
@@ -148,7 +148,7 @@ ShortCut on Form1<br/><br/></td><td>
 Specifies the Keyboard shortcut to be used at run time to access this combobox.<br/><br/></td></tr>
 </table>
 
-### AutoComplete Settings
+## AutoComplete Settings
 
 <table>
 <tr>
