@@ -309,7 +309,7 @@ The dialog comes with Office2007 look and feel.
 ![](GettingStarted_images/GettingStarted_img19.jpeg)
 
 
-N> You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer.
+N> You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControlAdv extended property for any control in the designer.
 
 A sample code snippet which adds a ToolStripButton named "File" to the QuickAccessToolbar through code. 
 

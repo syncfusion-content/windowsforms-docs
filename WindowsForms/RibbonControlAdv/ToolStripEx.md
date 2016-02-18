@@ -258,7 +258,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 Flow<br/><br/></td><td>
-Specifies that items flow horizontally or vertically as necessary.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items flow horizontally or vertically as necessary.<br/><br/>**Note**: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 HorizontalStackWithOverflow<br/><br/></td><td>
@@ -270,7 +270,7 @@ Specifies that items are laid out automatically.<br/><br/></td></tr>
 <tr>
 <td>
 Table<br/><br/></td><td>
-Specifies that items are laid out flush left.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items are laid out flush left.<br/><br/>**Note**: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 VerticalStackWithOverflow<br/><br/></td><td>

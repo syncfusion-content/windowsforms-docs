@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Ribbon Separator
+# ToolStripSeparator
 
 Ribbon Separator used to separate the similar set of Ribbon elements in Ribbon. It can seperate RibbonButtons according to their purpose and it can be added to a ToolStripEx directly or through a panel. 
 
