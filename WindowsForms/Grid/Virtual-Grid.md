@@ -493,7 +493,7 @@ End Sub
 
 ## Refreshing the Grid
 
-For refreshing the grid and to force the grid cells that are visible to reload all their data from the data source, make use of the [Model.ResetVolatileData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ResetVolatileData.html# "") method.
+For refreshing the grid and to force the grid cells that are visible to reload all their data from the data source, make use of the [Model.ResetVolatileData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ResetVolatileData.html#) method.
 {% tabs %}
 {% highlight c# %}
 // Refreshes the visible cells in grid.
@@ -508,7 +508,7 @@ Me.gridControl1.Model.ResetVolatileData()
 
 ### Refreshing Grid for particular range
 
-It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html# "") method. Required range can be passed through this method by using the `GridRangeInfo` class. 
+It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html#) method. Required range can be passed through this method by using the `GridRangeInfo` class. 
 {% tabs %}
 {% highlight c# %}
 // Will refresh the cells of range (2, 2, 20, 20). 
