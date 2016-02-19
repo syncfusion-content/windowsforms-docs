@@ -440,7 +440,7 @@ Selection operation can be handled by using [SelectionChanging](http://help.sync
 
 ## Editing
 
-By default the GridControl is in editable state. [Editing](CellGrid_Editing_Anish.docx#) can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. This property can be applied for whole grid as well as cell by cell basis.
+By default the GridControl is in editable state. [Editing](http://help.syncfusion.com/windowsforms/grid/editing) can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. This property can be applied for whole grid as well as cell by cell basis.
 
 {% tabs %}
 {% highlight c# %}
