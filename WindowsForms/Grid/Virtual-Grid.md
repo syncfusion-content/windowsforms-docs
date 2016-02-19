@@ -487,8 +487,45 @@ End If
 
 End Sub
 {% endhighlight %}
-{% endtabs %}
 
 ![](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img4.jpeg)
 
+## Refreshing the Grid
 
+For refreshing the grid and to force the grid cells that are visible to reload all their data from the data source, make use of the [Model.ResetVolatileData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ResetVolatileData.html# "") method.
+{% highlight c# %}
+// Refreshes the visible cells in grid.
+this.gridControl1.Model.ResetVolatileData();
+
+
+
+{% endhighlight %}
+
+{% highlight vb %}
+'Refreshes the visible cells in grid.
+Me.gridControl1.Model.ResetVolatileData()
+
+
+
+{% endhighlight %}
+
+### Refreshing Grid for particular range
+
+It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html# "") method. Required range can be passed through this method by using the GridRangeInfo class. 
+{% highlight c# %}
+// Will refresh the cells of range (2, 2, 20, 20). 
+this.gridControl1.RefreshRange(GridRangeInfo.Cells(2, 2, 20, 20));
+
+
+
+{% endhighlight %}
+
+{% highlight vb %}
+'Will refresh the cells of range (2, 2, 20, 20). 
+Me.gridControl1.RefreshRange(GridRangeInfo.Cells(2, 2, 20, 20))
+
+
+
+{% endhighlight %}
+
+{% endtabs %}
