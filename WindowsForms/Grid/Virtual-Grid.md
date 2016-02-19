@@ -511,7 +511,7 @@ Me.gridControl1.Model.ResetVolatileData()
 
 ### Refreshing Grid for particular range
 
-It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html# "") method. Required range can be passed through this method by using the GridRangeInfo class. 
+It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html# "") method. Required range can be passed through this method by using the `GridRangeInfo` class. 
 {% highlight c# %}
 // Will refresh the cells of range (2, 2, 20, 20). 
 this.gridControl1.RefreshRange(GridRangeInfo.Cells(2, 2, 20, 20));
