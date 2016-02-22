@@ -48,7 +48,7 @@ Me.gridControl1(2, 2).CellType = GridCellTypeName.Static
 {% endhighlight %}
 {% endtabs %}
 
-N> Editing can also be done in Virtual Grid, please check the detailed description on Editing in our [Virtual Grid topic](E:\Work_Vol4\svn\studio\trunk\work_area\GridWF\UG\CellGrid\CellGrid_VirtualGrid_Anish.docx#).
+N> Editing can also be done in Virtual Grid, please check the detailed description on Editing in our [Virtual Grid topic](http://help.syncfusion.com/windowsforms/grid/virtual-grid).
 
 ## Programmatic Editing
 

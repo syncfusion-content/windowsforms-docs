@@ -19,7 +19,7 @@ Essential Grid includes a trio of grid controls as well as many other controls t
 
 [GridDataBoundGrid](http://help.syncfusion.com/windowsforms/databoundgrid/getting-started#) - a column oriented grid best suited for use with ADO.NET [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx#)/[DataTables](https://msdn.microsoft.com/en-US/library/system.data.datatable.aspx#) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
-[GridControl](#_Getting_Started "") - a cell oriented grid that can contain its own data and does not need to be bound to a data source. It has the facility to easily be customized down to the cell level. This grid can also be used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grids# "") such that it can bind to any type of data source.
+[GridControl](#Getting_Started) - a cell oriented grid that can contain its own data and does not need to be bound to a data source. It has the facility to easily be customized down to the cell level. This grid can also be used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid# "") such that it can bind to any type of data source.
 
 <table>
 <tr>
@@ -277,7 +277,7 @@ Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCoun
 {% endhighlight %}	
 {% endtabs %}
 
-3.Populate Data using [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html#) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](http://help.syncfusion.com/windowsforms/grid/virtual-grids#) section.
+3.Populate Data using [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html#) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](http://help.syncfusion.com/windowsforms/grid/virtual-grid#) section.
     
 {% tabs %}
 {% highlight c# %}
@@ -440,7 +440,7 @@ Selection operation can be handled by using [SelectionChanging](http://help.sync
 
 ## Editing
 
-By default the GridControl is in editable state. [Editing](CellGrid_Editing_Anish.docx#) can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. This property can be applied for whole grid as well as cell by cell basis.
+By default the GridControl is in editable state. [Editing](http://help.syncfusion.com/windowsforms/grid/editing) can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. This property can be applied for whole grid as well as cell by cell basis.
 
 {% tabs %}
 {% highlight c# %}
