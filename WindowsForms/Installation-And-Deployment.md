@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Installation and Deployment process for Syncfusion Essential Studio Windows Forms products
 description: Installation and Deployment
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Installation
+# Installation and Deployment
 
 ## Manual Installation
 
@@ -61,8 +61,6 @@ Follow the given steps to install through Command Line in Silent mode.
 {% endtabs %}
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
-
-# Deployment
 
 ## Copy Local
 
