@@ -544,12 +544,12 @@ N> Make use of the <kbd>Ctrl</kbd>+<kbd>Del</kbd> shortcut key combination for c
 For clearing only the selected range of cells, make use of the [Model.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~Clear.html) method. This method clears only the cells that are selected. 
 
 {% tabs %}{% highlight c# %}
-// Will clear styles along with data of the range (2, 2, 5, 5).
+// Will clear the selected contents.
 this.gridControl1.Model.Clear(true);
 {% endhighlight %}
 
 {% highlight vb %}
-'Will clear styles along with data of the range (2, 2, 5, 5).
+'Will clear the selected contents.
 Me.gridControl1.Model.Clear(True)
 {% endhighlight %}
 
