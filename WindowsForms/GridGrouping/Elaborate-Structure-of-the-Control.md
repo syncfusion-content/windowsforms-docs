@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elaborate Structure of GridGroupingControl for syncfusion Essential WindowsForms
+title: Elaborate Structure of the GridGroupingControl for Syncfusion Essential WindowsForms
 description: elaborate structure of the control
 platform: WindowsForms
 control: GridGrouping
