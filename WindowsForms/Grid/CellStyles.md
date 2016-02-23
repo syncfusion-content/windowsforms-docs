@@ -539,7 +539,7 @@ Me.gridControl1.Model.ClearCells(GridRangeInfo.Col(2), True)
 {% endhighlight %}
 {% endtabs %}
 
-N> <kbd>Ctrl</kbd>+<kbd>Del</kbd> key combination can be used to clear the selected cells' data along with the styles.
+N> <kbd>Ctrl</kbd>+<kbd>Delete</kbd> key combination can be used to clear the selected cells' data along with the styles.
 
 ### Clearing only the data
 
@@ -557,4 +557,4 @@ Me.gridControl1.Model.Clear(True)
 
 {% endtabs %}
 
-N> <kbd>Del</kbd> key can be used for clearing the selected cells' data alone.
+N> <kbd>Delete</kbd> key can be used for clearing the selected cells' data alone.
