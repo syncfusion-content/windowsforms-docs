@@ -557,4 +557,4 @@ Me.gridControl1.Model.Clear(True)
 
 {% endtabs %}
 
-N> <kbd>Del</kbd> key can be used to clear the data alone.
+N> <kbd>Del</kbd> key can be used for clearing the data alone.
