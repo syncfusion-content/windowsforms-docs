@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Installation
+# Installation and Deployment
 
 ## Manual Installation
 
@@ -23,20 +23,57 @@ The following procedure illustrates how to manually install Essential Studio for
 7. Select the “Run Dashboard” check box to launch the Dashboard after installing.
 8. Click "Finish". Essential Studio is installed in system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
 
-## Nuget Installation
+## Configuring Syncfusion NuGet Packages in Visual Studio 
 
+Syncfusion Windows Forms NuGet packages are available [here](http://nuget.syncfusion.com/package/windows-forms).
 
-Refer to the Syncfusion Nuget Packages from the Visual Studio applications. The following steps helps to add the reference of the Syncfusion assemblies in the Project References.
+### NuGet Configuration  
 
-1) Right-click the Project and choose the Manage NuGet Packages.<br/><br/>
-2) Select Online. Refer to the following screenshot for more information. 
+The steps to install the Syncfusion Windows Forms NuGet Packages in Visual Studio are as follows,
 
-![nuget](Installation-And-Deployment_images/Installation_img1.png)
+1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
 
+   ![](Installation-And-Deployment_images/NuGetConfig1.jpeg)
 
-3) Install the required corresponding framework control to use in Visual Studio projects. User can install the dependent assemblies when required. The framework numbers at the end of package name like 35, 40, 45, 451 and 46 are added.<br/><br/>
-4) Find the installed Syncfusion Packages in the Directory location of the solution file of the created project, Syncfusion Packages.<br/><br/>
-5) User can [configure](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview) Nuget for the required purpose.<br/><br/>
+2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
+
+   **Name**: Name of the package that listed in Available package sources  
+   **Source**: Syncfusion Windows Forms NuGet Package feed url 
+   [http://nuget.syncfusion.com/windows-forms](http://nuget.syncfusion.com/windows-forms)
+    
+   ![](Installation-And-Deployment_images/NuGetConfig2.jpeg)
+
+   N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
+    
+I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
+
+### NuGet Installation
+
+Syncfusion Windows Forms NuGet can install once configured the package source. The NuGet installation steps as below,
+
+1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Online | <Package Source Name>`.
+
+   ![](Installation-And-Deployment_images/NuGetConfig3.jpeg)
+
+2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
+
+   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console).
+
+### Updating a NuGet Package
+
+Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update.
+ 
+1. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates` tab to check for updates.
+
+2. Select the `Updates -> <Syncfusion Package Source>`. Refer to the following screenshot for more information.
+
+   ![](Installation-And-Deployment_images/NuGetConfig4.jpeg)
+
+3. If there is a new version of NuGet you will see it in the list of available updates.
+
+4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
+
+   N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
 ## Command Line installation
 
@@ -61,8 +98,6 @@ Follow the given steps to install through Command Line in Silent mode.
 {% endtabs %}
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
-
-# Deployment
 
 ## Copy Local
 
