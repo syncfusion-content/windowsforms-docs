@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section is designed to help you understand and quickly get started with Essential Calculate in your WPF application.
+This section is designed to help you understand and quickly get started with Essential Calculate in your Windows Forms application.
 
 ## Class Diagram
 
