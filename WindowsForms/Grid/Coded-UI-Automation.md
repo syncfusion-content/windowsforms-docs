@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coded UI Support in Windows GridControl for Syncfusion Essential WindowsForms
+title: Coded UI Support in GridControl for Syncfusion Essential WindowsForms
 description: This section explains the testing the cell grid with Coded UI automation test
 platform: WindowsForms
 control: Grid
