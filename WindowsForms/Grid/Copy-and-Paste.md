@@ -288,9 +288,10 @@ To cancel the cut, copy and paste operation of the grid, handle the [ClipboardCa
 {% tabs %}
 {% highlight c# %}
 //Clipboard Events
-this.gridControl1.ClipboardCanPaste += gridControl1_ClipboardCanPaste;
-this.gridControl1.ClipboardCanCopy +=gridControl1_ClipboardCanCopy;
-this.gridControl1.ClipboardCanCut += gridControl1_ClipboardCanCut;
+'Clipboard Events
+AddHandler gridControl1.ClipboardCanPaste, AddressOf gridControl1_ClipboardCanPaste
+AddHandler gridControl1.ClipboardCanCopy, AddressOf gridControl1_ClipboardCanCopy
+AddHandler gridControl1.ClipboardCanCut, AddressOf gridControl1_ClipboardCanCut
 void gridControl1_ClipboardCanCut(object sender, GridCutPasteEventArgs e)
 {         
     //disables the cut to the clipboard
