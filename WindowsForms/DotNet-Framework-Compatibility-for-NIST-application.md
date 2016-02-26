@@ -31,8 +31,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 AutoLabel<br/><br/></td><td>
@@ -41,8 +40,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 BackstageView<br/><br/></td><td>
@@ -51,8 +49,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 BannerTextProvider<br/><br/></td><td>
@@ -61,8 +58,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 BorderLayout<br/><br/></td><td>
@@ -71,8 +67,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 BulletGraph<br/><br/></td><td>
@@ -81,8 +76,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ButtonAdv<br/><br/></td><td>
@@ -91,8 +85,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ButtonEdit<br/><br/></td><td>
@@ -101,8 +94,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Calculate<br/><br/></td><td>
@@ -111,8 +103,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Calculator<br/><br/></td><td>
@@ -121,8 +112,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 CardLayout<br/><br/></td><td>
@@ -131,8 +121,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Carousel<br/><br/></td><td>
@@ -141,8 +130,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Chart<br/><br/></td><td>
@@ -151,8 +139,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 CheckBoxAdv<br/><br/></td><td>
@@ -161,8 +148,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ChildFrameBarManager<br/><br/></td><td>
@@ -171,8 +157,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Clock<br/><br/></td><td>
@@ -181,8 +166,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ColorPickerButton<br/><br/></td><td>
@@ -191,8 +175,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ColorPickerUIAdv<br/><br/></td><td>
@@ -201,8 +184,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ColorUIControl<br/><br/></td><td>
@@ -211,8 +193,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ComboBoxAdv<br/><br/></td><td>
@@ -221,8 +202,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ComboBoxAutoComplete<br/><br/></td><td>
@@ -231,8 +211,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ComboBoxBase<br/><br/></td><td>
@@ -241,8 +220,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ComboDropDown<br/><br/></td><td>
@@ -251,8 +229,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 CommandBarController<br/><br/></td><td>
@@ -261,8 +238,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ContextMenuStripEx<br/><br/></td><td>
@@ -271,8 +247,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 CurrencyEdit<br/><br/></td><td>
@@ -281,8 +256,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 CurrencyTextBox<br/><br/></td><td>
@@ -291,8 +265,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DateTimePickerAdv<br/><br/></td><td>
@@ -301,8 +274,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Diagram<br/><br/></td><td>
@@ -311,8 +283,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DICOM<br/><br/></td><td>
@@ -321,8 +292,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Digital Gauge<br/><br/></td><td>
@@ -331,8 +301,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DocIO<br/><br/></td><td>
@@ -341,8 +310,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DockingClientPanel<br/><br/></td><td>
@@ -351,8 +319,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DockingManager<br/><br/></td><td>
@@ -361,8 +328,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DocumentExplorer<br/><br/></td><td>
@@ -371,8 +337,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DomainUpDownExt<br/><br/></td><td>
@@ -381,8 +346,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 DoubleTextBox<br/><br/></td><td>
@@ -391,8 +355,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 EditableList<br/><br/></td><td>
@@ -401,8 +364,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 EditControl<br/><br/></td><td>
@@ -411,8 +373,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 FlowLayout<br/><br/></td><td>
@@ -421,8 +382,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 FolderBrowser<br/><br/></td><td>
@@ -431,8 +391,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 FontComboBox<br/><br/></td><td>
@@ -441,8 +400,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 FontListBox<br/><br/></td><td>
@@ -451,8 +409,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GradientLabel<br/><br/></td><td>
@@ -461,8 +418,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GradientPanel<br/><br/></td><td>
@@ -471,8 +427,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GradientPanelExt<br/><br/></td><td>
@@ -481,8 +436,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridAwareTextBox<br/><br/></td><td>
@@ -491,8 +445,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridBagLayout<br/><br/></td><td>
@@ -501,8 +454,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridControl<br/><br/></td><td>
@@ -511,8 +463,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridDataBoundGrid<br/><br/></td><td>
@@ -521,8 +472,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridGroupingControl<br/><br/></td><td>
@@ -531,8 +481,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridLayout<br/><br/></td><td>
@@ -541,8 +490,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridListControl<br/><br/></td><td>
@@ -551,8 +499,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GridRecordNavigationControl<br/><br/></td><td>
@@ -561,8 +508,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GroupBar<br/><br/></td><td>
@@ -571,8 +517,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Grouping<br/><br/></td><td>
@@ -581,8 +526,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 GroupView<br/><br/></td><td>
@@ -591,8 +535,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 HTMLUIControl<br/><br/></td><td>
@@ -601,8 +544,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 HubTile<br/><br/></td><td>
@@ -611,8 +553,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ImageListAdv<br/><br/></td><td>
@@ -621,8 +562,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ImageStreamer<br/><br/></td><td>
@@ -631,8 +571,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 IntegerTextBox<br/><br/></td><td>
@@ -641,8 +580,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Linear Gauge<br/><br/></td><td>
@@ -651,8 +589,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MainFrameBarManager<br/><br/></td><td>
@@ -661,13 +598,11 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Maps<br/><br/></td><td>
 No<br/><br/></td><td>
-Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -681,8 +616,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MessageBoxAdv<br/><br/></td><td>
@@ -691,8 +625,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MetroForm<br/><br/></td><td>
@@ -701,8 +634,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MiniToolBar<br/><br/></td><td>
@@ -711,8 +643,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MonthCalendarAdv<br/><br/></td><td>
@@ -721,8 +652,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MultiColumnComboBox<br/><br/></td><td>
@@ -731,8 +661,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MultiColumnTreeView<br/><br/></td><td>
@@ -741,8 +670,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 MultiSelectionComboBox<br/><br/></td><td>
@@ -751,8 +679,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 NavigationView<br/><br/></td><td>
@@ -761,8 +688,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 NumericUpDownExt<br/><br/></td><td>
@@ -771,8 +697,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Office2007Form<br/><br/></td><td>
@@ -781,8 +706,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Office2010Form<br/><br/></td><td>
@@ -791,8 +715,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 OverviewControl<br/><br/></td><td>
@@ -801,8 +724,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PaletteGroupBar<br/><br/></td><td>
@@ -811,8 +733,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PaletteGroupView<br/><br/></td><td>
@@ -821,12 +742,10 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PDF<br/><br/></td><td>
-Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -841,7 +760,6 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
@@ -851,8 +769,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PivotChart<br/><br/></td><td>
@@ -861,8 +778,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PivotGridControl<br/><br/></td><td>
@@ -871,8 +787,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PopupControlContainer<br/><br/></td><td>
@@ -881,8 +796,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PopupMenu<br/><br/></td><td>
@@ -891,8 +805,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PopupMenuManager<br/><br/></td><td>
@@ -901,12 +814,10 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 Presentation<br/><br/></td><td>
-Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -921,12 +832,10 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 PropertyEditor<br/><br/></td><td>
-<br/><br/></td><td>
 <br/><br/></td><td>
 <br/><br/></td><td>
 <br/><br/></td><td>
@@ -941,8 +850,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 QTP Add-On<br/><br/></td><td>
@@ -951,8 +859,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RadialGauge<br/><br/></td><td>
@@ -961,8 +868,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RadialMenu<br/><br/></td><td>
@@ -971,8 +877,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RadialSlider<br/><br/></td><td>
@@ -981,8 +886,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RadioButtonAdv<br/><br/></td><td>
@@ -991,8 +895,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RangeSlider<br/><br/></td><td>
@@ -1001,8 +904,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RatingControl<br/><br/></td><td>
@@ -1011,8 +913,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RecordNavigationBar<br/><br/></td><td>
@@ -1021,8 +922,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RecordNavigationControl<br/><br/></td><td>
@@ -1031,8 +931,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RibbonControlAdv<br/><br/></td><td>
@@ -1041,8 +940,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RibbonForm<br/><br/></td><td>
@@ -1051,8 +949,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 RibbonPanelMergeContainer<br/><br/></td><td>
@@ -1061,8 +958,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ScheduleControl<br/><br/></td><td>
@@ -1071,8 +967,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-<br/><br/></td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ScrollersFrame<br/><br/></td><td>
@@ -1081,12 +976,10 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SfBarcode<br/><br/></td><td>
-Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -1101,8 +994,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SparkLine<br/><br/></td><td>
@@ -1111,8 +1003,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SpellChecker<br/><br/></td><td>
@@ -1121,8 +1012,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SplashControl<br/><br/></td><td>
@@ -1131,8 +1021,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SplashPanel<br/><br/></td><td>
@@ -1141,8 +1030,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SplitButton<br/><br/></td><td>
@@ -1151,8 +1039,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SplitContainerAdv<br/><br/></td><td>
@@ -1161,8 +1048,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SplitterControl<br/><br/></td><td>
@@ -1171,8 +1057,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 StatusBarAdv<br/><br/></td><td>
@@ -1181,8 +1066,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 StatusBarAdvPanel<br/><br/></td><td>
@@ -1191,8 +1075,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 StatusBarExt<br/><br/></td><td>
@@ -1201,8 +1084,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 StatusStripEx<br/><br/></td><td>
@@ -1211,8 +1093,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SuperAccelerator<br/><br/></td><td>
@@ -1221,8 +1102,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 SuperToolTip<br/><br/></td><td>
@@ -1231,8 +1111,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TabBarSplitterControl<br/><br/></td><td>
@@ -1241,8 +1120,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TabbedGroupedMDIManager<br/><br/></td><td>
@@ -1251,8 +1129,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TabbedMDIManager<br/><br/></td><td>
@@ -1261,8 +1138,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TabControlAdv<br/><br/></td><td>
@@ -1271,8 +1147,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TabSplitterContainer<br/><br/></td><td>
@@ -1281,8 +1156,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TextBoxExt<br/><br/></td><td>
@@ -1291,8 +1165,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TileLayout<br/><br/></td><td>
@@ -1301,8 +1174,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ToggleButton<br/><br/></td><td>
@@ -1311,8 +1183,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 ToolStripEx<br/><br/></td><td>
@@ -1321,8 +1192,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TrackBarEx<br/><br/></td><td>
@@ -1331,13 +1201,11 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TreeMap<br/><br/></td><td>
 No<br/><br/></td><td>
-Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -1351,8 +1219,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TreeViewAdv<br/><br/></td><td>
@@ -1361,8 +1228,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 TypeLoader<br/><br/></td><td>
@@ -1371,8 +1237,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 WizardControl<br/><br/></td><td>
@@ -1381,8 +1246,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 XlsIO<br/><br/></td><td>
@@ -1391,8 +1255,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 XPTaskbar<br/><br/></td><td>
@@ -1401,8 +1264,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 XPTaskPane<br/><br/></td><td>
@@ -1411,8 +1273,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 <tr>
 <td>
 XPToolbar<br/><br/></td><td>
@@ -1421,6 +1282,5 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-</td></tr>
+Yes<br/><br/></td></tr>
 </table>
