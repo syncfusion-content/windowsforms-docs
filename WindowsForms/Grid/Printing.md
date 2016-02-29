@@ -82,16 +82,16 @@ public void PrintGridControl()
 AddHandler gridControl1.KeyDown, AddressOf gridControl1_KeyDown
 Private Sub gridControl1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
    If e.Control AndAlso e.KeyCode= Keys.P Then
-	   'Call the method used to print the grid.
-	   PrintGridControl()
+       'Call the method used to print the grid.
+       PrintGridControl()
    End If
 End Sub
 
 Public Sub PrintGridControl()
-	Dim document As New GridPrintDocument(Me.gridControl1, True)
-	Dim pd As New PrintDialog()
-	pd.Document = document
-	document.Print()
+    Dim document As New GridPrintDocument(Me.gridControl1, True)
+    Dim pd As New PrintDialog()
+    pd.Document = document
+    document.Print()
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -214,6 +214,7 @@ The [GridPrintOption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid
 **DefaultGridPrint** - Multiple grids will be printed without considering column breaks.
 **ScaleColumnsToFit** - Multiple grid columns will be scaled to fit the printed page.
 
+{% tabs %}
 {% highlight c# %}
 List<Control> gridsToPrint = new List<Control>();
 foreach (Control cd in this.Controls)
@@ -229,14 +230,12 @@ mgpd.ShowHeaderFooterOnAllPages = true;
 PrintPreviewDialog printDialog = new PrintPreviewDialog();
 printDialog.Document = mgpd;
 {% endhighlight %}
-
-{% tabs %}
 {% highlight vb %}
 Dim gridsToPrint As New List(Of Control)()
 For Each cd As Control In Me.Controls
-	If TypeOf cd Is Control Then
-		gridsToPrint.Add(CType(cd, Control)
-	End If
+    If TypeOf cd Is Control Then
+        gridsToPrint.Add(CType(cd, Control)
+    End If
 Next cd
 Dim mgpd As New MultiGridPrintDocument(gridsToPrint)
 mgpd.GridPrintOption = MultiGridPrintDocument.GridPrintOptions.MultipleGridPrint
@@ -249,8 +248,9 @@ printDialog.Document = mgpd
 ![](Printing_images/Printing_img3.jpeg)
 
 N> The headers and footers can be printed for all the pages by setting the [ShowHeaderFooterOnAllPages](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~ShowHeaderFooterOnAllPages.html) property to `ture`. The particular grid can be removed from the printing grid collection by handling the [MultipleGridPrint](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~MultipleGridPrint_EV.html) event.
-N> The sample illustrates this feature is given in the following location,
-N> _&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_No&gt;\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing\CS_
+
+The sample illustrates this feature is given in the following location,<br/>
+_&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_No&gt;\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing\CS_
 
 ## Setting Header and Footer 
 The grid can be print with the headers and footers by setting the [HeaderPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~HeaderPrintStyleInfo.html) and [FooterPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~FooterPrintStyleInfo.html) properties of the advanced GridPrintDocument.
@@ -321,13 +321,13 @@ if (layoutHelper != null)
 {% endhighlight %}
 {% highlight vb %}
 If layoutHelper IsNot Nothing Then
-	layoutHelper.ShowLayoutLines = Me.checkBox1.Checked
+    layoutHelper.ShowLayoutLines = Me.checkBox1.Checked
 End If
 {% endhighlight %}
 {% endtabs %}
 
-N> The sample demonstrating the printing layout is given in the below location,
-N> &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_No&gt;\Windows\Grid.Windows\Samples\Printing\Print Page Layout Demo\CS
+The sample demonstrating the printing layout is given in the below location,<br/>
+&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_No&gt;\Windows\Grid.Windows\Samples\Printing\Print Page Layout Demo\CS
 
 ### Customizing Page Breaks
 The row breaks and column breaks for each pages can be customized by using the [PrintInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrintInfo.html) property. This will provide the list of first row index and first column index of each pages while printing.
@@ -357,23 +357,23 @@ private void Document_PrintPage(object sender, System.Drawing.Printing.PrintPage
 {% endhighlight %}
 {% highlight vb %}
 Private Sub btnPageBreak_Click(ByVal sender As Object, ByVal e As EventArgs)
-	Dim document As New GridPrintDocument(Me.gridControl1)
-	Dim dialog As New PrintPreviewDialog()
-	AddHandler document.PrintPage, AddressOf Document_PrintPage1
-	dialog.Document = document
-	dialog.ShowDialog()
+    Dim document As New GridPrintDocument(Me.gridControl1)
+    Dim dialog As New PrintPreviewDialog()
+    AddHandler document.PrintPage, AddressOf Document_PrintPage1
+    dialog.Document = document
+    dialog.ShowDialog()
 End Sub
 Private Sub Document_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs)
-	' set the row count need to be printed for each page
-	Me.gridControl1.PrintInfo.m_awPageFirstRow = New ArrayList()
-	Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(0)
-	Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(30)
-	Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(60)
+    ' set the row count need to be printed for each page
+    Me.gridControl1.PrintInfo.m_awPageFirstRow = New ArrayList()
+    Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(0)
+    Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(30)
+    Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(60)
 
-	' Set the starting column count for each page
-	Me.gridControl1.PrintInfo.m_awPageFirstCol = New ArrayList()
-	Me.gridControl1.PrintInfo.m_awPageFirstCol.Add(0)
-	Me.gridControl1.PrintInfo.m_awPageFirstCol.Add(5)
+    ' Set the starting column count for each page
+    Me.gridControl1.PrintInfo.m_awPageFirstCol = New ArrayList()
+    Me.gridControl1.PrintInfo.m_awPageFirstCol.Add(0)
+    Me.gridControl1.PrintInfo.m_awPageFirstCol.Add(5)
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -405,9 +405,9 @@ Private Sub gridControl1_QueryCellInfo(ByVal sender As Object, ByVal e As GridQu
    'Change the back color of the headers only when the grid is in printing mode.
    If Me.gridControl1.PrintingMode Then
                  'Column headers or Row headers
-	   If e.RowIndex = 0 OrElse e.ColIndex =0 Then
-		   e.Style.BackColor = Color.Pink
-	   End If
+       If e.RowIndex = 0 OrElse e.ColIndex =0 Then
+           e.Style.BackColor = Color.Pink
+       End If
    End If
 End Sub
 {% endhighlight %}
@@ -500,24 +500,24 @@ void gridControl1_QueryColWidth(object sender, GridRowColSizeEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Private Sub gridControl1_QueryRowHeight(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
-	'Apply the condition only on printing 
-	If Me.gridControl1.PrintingMode Then
-		If e.Index=2 OrElse e.Index =3 Then
-			'Set the row height value as zero while the Grid in printing mode
-			e.Size = 0
-			e.Handled = True
-		End If
-	End If
+    'Apply the condition only on printing 
+    If Me.gridControl1.PrintingMode Then
+        If e.Index=2 OrElse e.Index =3 Then
+            'Set the row height value as zero while the Grid in printing mode
+            e.Size = 0
+            e.Handled = True
+        End If
+    End If
 End Sub
 Private Sub gridControl1_QueryColWidth(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
-	'Apply the condition only on printing 
-	If Me.gridControl1.PrintingMode Then
-		If e.Index = 3 Then
-			'Set the Column width value as zero while the Grid in printing mode
-			e.Size = 0
-			e.Handled = True
-		End If
-	End If
+    'Apply the condition only on printing 
+    If Me.gridControl1.PrintingMode Then
+        If e.Index = 3 Then
+            'Set the Column width value as zero while the Grid in printing mode
+            e.Size = 0
+            e.Handled = True
+        End If
+    End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -538,10 +538,10 @@ gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection
 {% endtabs %}
 The `PrintRange` enumeration has the following printing options,
 
-**AllPages –**Used to print all the pages of the Grid
-**CurrentPage –**Used to print the Current page 
-**Selection –**Used to print the selected range of cells
-**SomePages –**Used to print particular range of pages. 
+**AllPages –**Used to print all the pages of the Grid<br/>
+**CurrentPage –**Used to print the Current page<br/>
+**Selection –**Used to print the selected range of cells<br/>
+**SomePages –**Used to print particular range of pages.<br/>
 
 N> By default the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
 
@@ -606,30 +606,30 @@ public class MyPrintDocument : GridPrintDocument
 {% endhighlight %}
 {% highlight vb %}
 Public Class MyPrintDocument
-	Inherits GridPrintDocument
-	Private _grid As GridControlBase
+    Inherits GridPrintDocument
+    Private _grid As GridControlBase
 
-	Public Sub New(ByVal grid As GridControlBase, ByVal printPreview As Boolean)
-		MyBase.New(grid, printPreview)
-		_grid = grid
-	End Sub
+    Public Sub New(ByVal grid As GridControlBase, ByVal printPreview As Boolean)
+        MyBase.New(grid, printPreview)
+        _grid = grid
+    End Sub
 
-	Protected Overrides Sub OnPrintPage(ByVal ev As System.Drawing.Printing.PrintPageEventArgs)
-		MyBase.OnPrintPage(ev)
-		_grid.PrintingMode = True
+    Protected Overrides Sub OnPrintPage(ByVal ev As System.Drawing.Printing.PrintPageEventArgs)
+        MyBase.OnPrintPage(ev)
+        _grid.PrintingMode = True
 
-		'Gets Top Row Index.
-		Dim topRow As Integer = _grid.TopRowIndex
-		_grid.ViewLayout.Reset()
+        'Gets Top Row Index.
+        Dim topRow As Integer = _grid.TopRowIndex
+        _grid.ViewLayout.Reset()
 
-		'Gets Bottom Row Index.
-		Dim botRow As Integer = Me._grid.ViewLayout.LastVisibleRow - (If(Me._grid.ViewLayout.HasPartialVisibleRows, 1, 0)
+        'Gets Bottom Row Index.
+        Dim botRow As Integer = Me._grid.ViewLayout.LastVisibleRow - (If(Me._grid.ViewLayout.HasPartialVisibleRows, 1, 0)
 
-		_grid.PrintingMode = False
+        _grid.PrintingMode = False
 
-		'Prints.
-		Console.WriteLine("OnPrintPage " & topRow.ToString() & "   " & botRow.ToString()
-	End Sub
+        'Prints.
+        Console.WriteLine("OnPrintPage " & topRow.ToString() & "   " & botRow.ToString()
+    End Sub
 End Class
 {% endhighlight %}
 {% endtabs %}
