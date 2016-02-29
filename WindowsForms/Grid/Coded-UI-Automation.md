@@ -269,7 +269,7 @@ To highlight a cell in GridControl, `DrawHighlight` method of corresponding `UIT
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
-public void GetCellValue()
+public void HighlightCell()
 {
    UITestControl grid = this.UIMap.UICellCustomizationWindow.UIGridControl1Window;
    UITestControl cell = new UITestControl(grid);
@@ -282,7 +282,7 @@ public void GetCellValue()
 {% endhighlight %}
 {% highlight vb %}
 <TestMethod()>
-Public Sub GetCellValue()
+Public Sub HighlightCell()
     Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window
     Dim cell As UITestControl = New UITestControl(grid)
     cell.SearchProperties("Name") = "GridCell_R4_C3"
@@ -301,7 +301,7 @@ To highlight a GridControl, `DrawHighlight` method of corresponding `UITestContr
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
-public void GetCellValue()
+public void HighlightGrid()
 {
    UITestControl grid = this.UIMap.UICellCustomizationWindow.UIGridControl1Window;
    if (grid.TryFind())
@@ -312,7 +312,7 @@ public void GetCellValue()
 {% endhighlight %}
 {% highlight vb %}
 <TestMethod>
-Public Sub GetCellValue()
+Public Sub HighlightGrid()
    Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window
    If grid.TryFind() Then
       grid.DrawHighlight()
