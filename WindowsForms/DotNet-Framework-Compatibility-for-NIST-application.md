@@ -835,15 +835,6 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-PropertyEditor<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
 ProjIO<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
