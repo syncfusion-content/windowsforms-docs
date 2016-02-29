@@ -125,7 +125,7 @@ Me.gridControl1.MetroColorTable.ThumbNormal = Color.Blue
 {% endtabs %}
 ![](Visual-Syles_images/Visual-Syles_img3.jpeg)
 
-N> The scrollbar customization is briefly discussed in the [Scrolling](CellGrid_Scrolling_Adhi.docx) section.
+N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling) section.
 
 ### Apply Skins to the GridControl
 The more advanced themes along with the basic themes defined by GridVisualStyles can be added to the grid by using the [GridSkins](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html) library. `GridSkins` depict the custom skin of `GridVisualStyles`. Currently, it comes with Vista skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins~ApplySkin.html) method.
