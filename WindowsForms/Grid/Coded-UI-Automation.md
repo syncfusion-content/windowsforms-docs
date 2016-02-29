@@ -141,7 +141,7 @@ The coded UI support for grid can be enabled using [AccessibilityEnabled](http:/
 this.gridControl1.AccessibilityEnabled = true;
 {% endhighlight %}
 {% highlight vb %}
-Me.gridControl1.AccessibilityEnabled = True
+Me.gridControl1.AccessibilityEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -249,15 +249,15 @@ public void GetCellValue()
 }
 {% endhighlight %}
 {% highlight vb %}
-<TestMethod()> 
- Public Sub GetCellValue() 
-   Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window 
-   Dim cell As UITestControl = New UITestControl(grid)
-   cell.SearchProperties("Name") = "GridCell_R4_C2"
-   If cell.TryFind Then
-       MessageBox.Show(cell.GetProperty("HelpText").ToString)
-   End If
- End Sub
+<TestMethod()>
+Public Sub GetCellValue()
+   Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window
+   Dim cell As New UITestControl(grid)
+   cell.SearchProperties("Name") = "GridCell_R4_C2"
+   If cell.TryFind() Then
+      MessageBox.Show(cell.GetProperty("HelpText").ToString())
+   End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 The below example shows the getting of a cell value from grid,
@@ -281,15 +281,15 @@ public void GetCellValue()
 }
 {% endhighlight %}
 {% highlight vb %}
-<TestMethod()> 
-Public Sub GetCellValue()
-    Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window
-    Dim cell As UITestControl = New UITestControl(grid)
-    cell.SearchProperties("Name") = "GridCell_R4_C3"
-    If cell.TryFind Then
-       cell.DrawHighlight
-    End If        
-End Sub
+<TestMethod()>
+Public Sub GetCellValue()
+    Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window
+    Dim cell As UITestControl = New UITestControl(grid)
+    cell.SearchProperties("Name") = "GridCell_R4_C3"
+    If cell.TryFind Then
+       cell.DrawHighlight
+    End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 The below example shows the highlighting of a cell,
@@ -311,13 +311,13 @@ public void GetCellValue()
 }
 {% endhighlight %}
 {% highlight vb %}
-<TestMethod()> 
-Public Sub GetCellValue()
-    Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window
-    If grid .TryFind Then
-	   grid .DrawHighlight
-	End If        
-End Sub
+<TestMethod>
+Public Sub GetCellValue()
+   Dim grid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window
+   If grid.TryFind() Then
+      grid.DrawHighlight()
+   End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 The below example shows the highlighting of grid,
@@ -338,7 +338,7 @@ The following IDEs and .Net frameworks are supported for automating the GridCont
 Premium, Ultimate, Enterprise editions of
 <li>VS2010,</li>
 <li>VS2012,</li>
-<li>VS2013,</li> 
+<li>VS2013</li> 
 </td>
 </tr>
 <tr>
@@ -380,6 +380,12 @@ The above extension assemblies should be deployed to the following locations,
 **C:\Program Files (x86)\Common Files\microsoft shared\VSTT\&lt;Visual Studio Version&gt;\UITestExtensionPackages**
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PublicAssemblies**<br/>
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PrivateAssemblies**
+
+For example, the DLLs can be deployed for the `Visual Studio 2013`,<br/>
+C:\Program Files (x86)\Common Files\microsoft shared\VSTT\12.0\UITestExtensionPackages<br/>
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies<br/>
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies
+
 
 ### Modifying the Sample Application for Communication
 The grid application host runs with .NET Remoting channel hosted internally to communicate with test plugin through an interface. Data is then channeled across the Visual Studio Test Framework to identify the Cells and GridControl. The following steps helps the users to prepare the grid sample application to support Coded UI plugin.
@@ -635,17 +641,17 @@ public void GetGridCell()
 }
 {% endhighlight %}
 {% highlight vb %}
-<TestMethod()>  _
-Public Sub GetGridCell()
-       Dim cellGrid = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window.UIGridControl1Table
-       Dim cellGridCell As UITestControl = New UITestControl(cellGrid)
-       cellGridCell.SearchProperties("ControlType") = "Cell"
-       cellGridCell.SearchProperties("RowIndex") = "4"
-       cellGridCell.SearchProperties("ColumnIndex") = "2"
-       If cellGridCell.TryFind Then
-           MessageBox.Show(cellGridCell.GetProperty("CellValue").ToString)
-       End If        
-End Sub
+<TestMethod>
+Public Sub GetGridCell()
+  Dim cellGrid = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window.UIGridControl1Table
+  Dim cellGridCell As New UITestControl(cellGrid)
+  cellGridCell.SearchProperties("ControlType") = "Cell"
+  cellGridCell.SearchProperties("RowIndex") = "4"
+  cellGridCell.SearchProperties("ColumnIndex") = "2"
+  If cellGridCell.TryFind() Then
+       MessageBox.Show(cellGridCell.GetProperty("CellValue").ToString())
+  End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -672,17 +678,17 @@ public void HighlightCell()
 }
 {% endhighlight %}
 {% highlight vb %}
-<TestMethod()>  _
-Public Sub HighlightCell()
-    Dim cellGrid = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window.UIGridControl1Table
-    Dim cellGridCell As UITestControl = New UITestControl(cellGrid)
-    cellGridCell.SearchProperties("ControlType") = "Cell"
-    cellGridCell.SearchProperties("RowIndex") = "4"
-    cellGridCell.SearchProperties("ColumnIndex") = "2"
-    If cellGridCell.TryFind Then
-        cellGridCell.DrawHighlight
-    End If        
-End Sub
+<TestMethod>
+Public Sub HighlightCell()
+  Dim cellGrid = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window.UIGridControl1Table
+  Dim cellGridCell As New UITestControl(cellGrid)
+  cellGridCell.SearchProperties("ControlType") = "Cell"
+  cellGridCell.SearchProperties("RowIndex") = "4"
+  cellGridCell.SearchProperties("ColumnIndex") = "2"
+  If cellGridCell.TryFind() Then
+       cellGridCell.DrawHighlight()
+  End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -696,7 +702,7 @@ To highlight a GridControl, the GridControl has to be searched with the needed s
 {% highlight c# %}
 [TestMethod]
 public void HighlightGrid()
-  {
+{
      UITestControl cellGrid =  this.UIMap.UICellCustomizationWindow.UIGridControl1Window.UIGridControl1Table.UIGridControlTable;
      cellGrid.SearchProperties["ControlType"] = "Table";
      cellGrid.SearchProperties["RowIndex"] = "-1";
@@ -708,16 +714,16 @@ public void HighlightGrid()
 }
 {% endhighlight %}
 {% highlight vb %}
-<TestMethod()>  _
-Public Sub GetGridCell()
-    Dim cellGrid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window.UI  GridControl1Table.UIGridControlTable
-    cellGrid.SearchProperties("ControlType") = "Table"
-    cellGrid.SearchProperties("RowIndex") = "-1"
-    cellGrid.SearchProperties("ColumnIndex") = "-1"
-    If cellGrid.TryFind Then
-      cellGrid.DrawHighlight
-    End If   
-End Sub
+<TestMethod>
+Public Sub HighlightGrid()
+     Dim cellGrid As UITestControl = Me.UIMap.UICellCustomizationWindow.UIGridControl1Window.UIGridControl1Table.UIGridControlTable
+     cellGrid.SearchProperties("ControlType") = "Table"
+     cellGrid.SearchProperties("RowIndex") = "-1"
+     cellGrid.SearchProperties("ColumnIndex") = "-1"
+     If cellGrid.TryFind() Then
+         cellGrid.DrawHighlight()
+     End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
