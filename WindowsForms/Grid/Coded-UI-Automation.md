@@ -338,7 +338,7 @@ The following IDEs and .Net frameworks are supported for automating the GridCont
 Premium, Ultimate, Enterprise editions of
 <li>VS2010,</li>
 <li>VS2012,</li>
-<li>VS2013,</li> 
+<li>VS2013</li> 
 </td>
 </tr>
 <tr>
@@ -380,6 +380,12 @@ The above extension assemblies should be deployed to the following locations,
 **C:\Program Files (x86)\Common Files\microsoft shared\VSTT\&lt;Visual Studio Version&gt;\UITestExtensionPackages**
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PublicAssemblies**<br/>
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PrivateAssemblies**
+
+For example, the DLLs can be deployed for the `Visual Studio 2013`,<br/>
+C:\Program Files (x86)\Common Files\microsoft shared\VSTT\12.0\UITestExtensionPackages<br/>
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies<br/>
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies
+
 
 ### Modifying the Sample Application for Communication
 The grid application host runs with .NET Remoting channel hosted internally to communicate with test plugin through an interface. Data is then channeled across the Visual Studio Test Framework to identify the Cells and GridControl. The following steps helps the users to prepare the grid sample application to support Coded UI plugin.
