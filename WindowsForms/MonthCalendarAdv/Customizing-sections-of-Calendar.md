@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing sections of Calendar | WindowsForms | Syncfusion
+title: Customizing sections of Calendar | Windows Forms | Syncfusion
 description: customizing sections of calendar
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime 
 documentation: ug
 ---

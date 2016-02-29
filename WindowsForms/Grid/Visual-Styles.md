@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Styles of GridControl for Syncfusion Essential WindowsForms
+title: Visual Styles of GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to apply visual styles and custom themes to the GridControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

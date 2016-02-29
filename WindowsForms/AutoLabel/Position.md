@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Position | WindowsForms | Syncfusion
+title: Position | Windows Forms | Syncfusion
 description: Position
-platform: WindowsForms
+platform: windowsforms
 control: AutoLabel
 documentation: ug
 ---

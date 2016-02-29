@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events-of-BarItem | WindowsForms | Syncfusion
+title: Events-of-BarItem | Windows Forms | Syncfusion
 description: events of baritem
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

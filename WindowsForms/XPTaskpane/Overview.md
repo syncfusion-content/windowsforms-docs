@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPTaskPane | WindowsForms | Syncfusion
+title: XPTaskPane | Windows Forms | Syncfusion
 description: xptaskpane
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskPane 
 documentation: ug
 ---

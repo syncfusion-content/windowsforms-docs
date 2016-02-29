@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Selection of GridControl for Syncfusion Essential WindowsForms
+title: Selection of GridControl for Syncfusion Essential Windows Forms
 description: This section explains about what are the selection modes available for GridControl and its usabilities.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display-TextBox | WindowsForms | Syncfusion
+title: Display-TextBox | Windows Forms | Syncfusion
 description: display textbox
-platform: WindowsForms
+platform: windowsforms
 control: Calculator
 documentation: ug
 ---
@@ -114,7 +114,7 @@ Me.calculatorControl1.UseUserOverride = True
 
 {% seealso %}
 
-[How to customize the calculator display text area to use NumberGroupSeparator?](http://docs.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
+[How to customize the calculator display text area to use NumberGroupSeparator?](http://help.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
 
 {% endseealso %}
 

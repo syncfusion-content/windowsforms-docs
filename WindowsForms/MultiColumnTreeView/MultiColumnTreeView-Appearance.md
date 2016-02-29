@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MultiColumnTreeView-Appearance | WindowsForms | Syncfusion
+title: MultiColumnTreeView-Appearance | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-ComboBox| WindowsForms | Syncfusion
+title: Ribbon-ComboBox| Windows Forms | Syncfusion
 description:  ribbon combobox
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -154,4 +154,4 @@ Indicates text completion behavior of the combo box. The modes are,<br/><br/>{{'
 ShortCut on Form1<br/><br/></td><td>
 Specifies the Keyboard shortcut to be used at run time to access this combobox.<br/><br/></td></tr>
 </table>
-N> We can set banner text for the ComboBox control. Refer [BannerTextProvider Component](http://docs.syncfusion.com/windowsforms/bannertextprovider/overview#overview) topic for more details.
+N> We can set banner text for the ComboBox control. Refer [BannerTextProvider Component](http://help.syncfusion.com/windowsforms/bannertextprovider/overview#overview) topic for more details.

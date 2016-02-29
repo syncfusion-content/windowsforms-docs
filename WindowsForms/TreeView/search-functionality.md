@@ -1,8 +1,8 @@
 ---
 layout: post
-title: search-functionality | WindowsForms | Syncfusion
+title: search-functionality | Windows Forms | Syncfusion
 description: search functionality
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

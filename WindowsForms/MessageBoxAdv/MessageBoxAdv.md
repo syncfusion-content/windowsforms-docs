@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MessageBoxAdv | WindowsForms | Syncfusion
+title: MessageBoxAdv | Windows Forms | Syncfusion
 description: messageboxadv
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv
 documentation: ug
 ---

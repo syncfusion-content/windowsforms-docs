@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-Relations | WindowsForms | Syncfusion
+title: Data-Relations | Windows Forms | Syncfusion
 description: data relations
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

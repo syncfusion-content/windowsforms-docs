@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeView-Appearance | WindowsForms | Syncfusion
+title: TreeView-Appearance | Windows Forms | Syncfusion
 description: treeview appearance
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

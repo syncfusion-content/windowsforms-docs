@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Child Controls | WindowsForms | Syncfusion
+title: Child Controls | Windows Forms | Syncfusion
 description: child controls
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePicker
 documentation: ug
 ---

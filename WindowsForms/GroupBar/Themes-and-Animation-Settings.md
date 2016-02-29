@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes and Animation Settings | WindowsForms | Syncfusion
+title: Themes and Animation Settings | Windows Forms | Syncfusion
 description: Themes and Animation Settings
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styling | WindowsForms | Syncfusion
+title: Styling | Windows Forms | Syncfusion
 description: styling
-platform: WindowsForms
+platform: windowsforms
 control: Rating  
 documentation: ug
 ---

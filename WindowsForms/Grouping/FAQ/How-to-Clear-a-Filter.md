@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Clear a Filter | WindowsForms | Syncfusion
+title: How to Clear a Filter | Windows Forms | Syncfusion
 description: How to Clear a Filter
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

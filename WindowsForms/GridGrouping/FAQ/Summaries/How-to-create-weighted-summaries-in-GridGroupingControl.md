@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-create-weighted-summaries-in-GridGroupingCo | WindowsForms | Syncfusion
+title: How-to-create-weighted-summaries-in-GridGroupingCo | Windows Forms | Syncfusion
 description: how to create weighted summaries in gridgroupingcontrol
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

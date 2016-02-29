@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Connectors-or-Links | WindowsForms | Syncfusion
+title: Connectors-or-Links | Windows Forms | Syncfusion
 description: connectors or links
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

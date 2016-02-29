@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-TextBox| WindowsForms | Syncfusion
+title: Ribbon-TextBox| Windows Forms | Syncfusion
 description:  ribbon textbox
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -169,5 +169,5 @@ AutoCompleteMode<br/><br/></td><td>
 Indicates text completion behavior of the combo box. The modes are,<br/><br/>{{'__Suggest__ '| markdownify }}- Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,<br/><br/>{{'__Append__ '| markdownify }}- Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and <br/><br/>{{'__SuggestAppend__ '| markdownify }}- Displays the drop down, also appends the highlighted string.<br/><br/></td></tr>
 </table>
 
-N> We can set banner text for the TextBox control. Refer [BannerTextProvider Component](http://docs.syncfusion.com/windowsforms/bannertextprovider/overview#overview) topic for more details.
+N> We can set banner text for the TextBox control. Refer [BannerTextProvider Component](http://help.syncfusion.com/windowsforms/bannertextprovider/overview#overview) topic for more details.
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-Manipulation | WindowsForms | Syncfusion
+title: Data-Manipulation | Windows Forms | Syncfusion
 description: data manipulation
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

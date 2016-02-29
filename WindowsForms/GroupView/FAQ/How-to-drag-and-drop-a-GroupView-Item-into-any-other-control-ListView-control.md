@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to drag-and-drop a GroupView Item into any other control (ListView control) | WindowsForms | Syncfusion
+title: How to drag-and-drop a GroupView Item into any other control (ListView control) | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

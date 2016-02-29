@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Editing of GridControl for Syncfusion Essential WindowsForms
+title: Editing of GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to edit cells and cell types in GridControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

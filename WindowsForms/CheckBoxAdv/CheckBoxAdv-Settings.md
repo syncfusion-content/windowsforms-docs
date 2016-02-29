@@ -1,8 +1,8 @@
 ---
 layout: post
-title: CheckBoxAdv-Settings | WindowsForms | Syncfusion
+title: CheckBoxAdv-Settings | Windows Forms | Syncfusion
 description: checkboxadv settings
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
@@ -63,7 +63,7 @@ Me.checkBoxAdv1.Checked = True
 
 {% seealso %}
 
-[CheckBoxAdv States](http://docs.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://docs.syncfusion.com/windowsforms/checkboxadv/image-settings)
+[CheckBoxAdv States](http://help.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://help.syncfusion.com/windowsforms/checkboxadv/image-settings)
 
 {% endseealso %}
 
@@ -169,7 +169,7 @@ Me.checkBoxAdv1.BoolValue = True
 
 {% seealso %}
 
-[CheckBoxAdv States](http://docs.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://docs.syncfusion.com/windowsforms/checkboxadv/image-settings)
+[CheckBoxAdv States](http://help.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://help.syncfusion.com/windowsforms/checkboxadv/image-settings)
 
 {% endseealso %}
 

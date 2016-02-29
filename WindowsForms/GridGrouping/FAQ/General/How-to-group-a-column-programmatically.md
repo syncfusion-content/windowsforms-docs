@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-group-a-column-programmatically | WindowsForms | Syncfusion
+title: How-to-group-a-column-programmatically | Windows Forms | Syncfusion
 description: how to group a column programmatically
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

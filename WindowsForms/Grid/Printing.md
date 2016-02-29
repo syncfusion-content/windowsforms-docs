@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Printing for Syncfusion Essential WindowsForms
+title: Printing for Syncfusion Essential Windows Forms
 description: This section explains on how to print and print preview the contents of GridControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

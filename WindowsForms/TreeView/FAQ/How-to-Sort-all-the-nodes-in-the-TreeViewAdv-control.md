@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Sort-all-the-nodes-in-the-TreeViewAdv-control | WindowsForms | Syncfusion
+title: How-to-Sort-all-the-nodes-in-the-TreeViewAdv-control | Windows Forms | Syncfusion
 description: how to sort all the nodes in the treeviewadv control
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to navigate to current date in DateTimePicker | WindowsForms | Syncfusion
+title: How to navigate to current date in DateTimePicker | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePickerAdv
 documentation: ug
 ---

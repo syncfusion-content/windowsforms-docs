@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Digital-Clock | WindowsForms | Syncfusion
+title: Digital-Clock | Windows Forms | Syncfusion
 description: digital clock
-platform: WindowsForms
+platform: windowsforms
 control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---

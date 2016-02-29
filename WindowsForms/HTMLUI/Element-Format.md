@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Element-Format | WindowsForms | Syncfusion
+title: Element-Format | Windows Forms | Syncfusion
 description:  element format
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

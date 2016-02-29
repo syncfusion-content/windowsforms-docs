@@ -1,8 +1,8 @@
 ---
 layout: post
-title: StatusBarAdv-Events | WindowsForms | Syncfusion
+title: StatusBarAdv-Events | Windows Forms | Syncfusion
 description: statusbaradv events
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdv
 documentation: ug
 ---

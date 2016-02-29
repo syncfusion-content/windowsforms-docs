@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-freeze-specified-columns | WindowsForms | Syncfusion
+title: How-to-freeze-specified-columns | Windows Forms | Syncfusion
 description: how to freeze specified columns
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

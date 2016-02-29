@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Conditional-Formatting | WindowsForms | Syncfusion
+title: Conditional-Formatting | Windows Forms | Syncfusion
 description: conditional formatting
-platform: WindowsForms
+platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: NumericUpDownExt-Events | WindowsForms | Syncfusion
+title: NumericUpDownExt-Events | Windows Forms | Syncfusion
 description: numericupdownext events
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

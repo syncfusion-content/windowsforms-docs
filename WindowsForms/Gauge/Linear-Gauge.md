@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Linear-Gauge | WindowsForms | Syncfusion
+title: Linear-Gauge | Windows Forms | Syncfusion
 description: linear gauge
-platform: WindowsForms
+platform: windowsforms
 control: Gauge
 documentation: ug
 ---

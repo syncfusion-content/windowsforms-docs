@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization-Support | WindowsForms | Syncfusion
+title: Localization-Support | Windows Forms | Syncfusion
 description: localization support
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

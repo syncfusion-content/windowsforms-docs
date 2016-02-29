@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating MaskedEditBox | WindowsForms | Syncfusion
+title: Creating MaskedEditBox | Windows Forms | Syncfusion
 description: Creating MaskedEditBox
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---

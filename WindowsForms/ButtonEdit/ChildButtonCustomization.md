@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Editors-Package | WindowsForms | Syncfusion
+title: Editors-Package | Windows Forms | Syncfusion
 description: editors package
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
@@ -81,7 +81,7 @@ Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 {% seealso %}
 
-[Style Settings](/windowsforms/buttonedit/buttoneditappearance#style-settings), [How to set tooltip for ButtonEdit Child buttons?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-set-tooltip-for-buttonedit-child-buttons)
+[Style Settings](/windowsforms/buttonedit/buttoneditappearance#style-settings), [How to set tooltip for ButtonEdit Child buttons?](http://help.syncfusion.com/windowsforms/buttonedit/faq/how-to-set-tooltip-for-buttonedit-child-buttons)
 
 {% endseealso %}
 
@@ -302,6 +302,6 @@ Me.buttonEditChildButton3.KeepFocusRectangle = True
 
 {% seealso %}
 
-[How to hide a child button of a ButtonEdit control?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-hide-a-child-button-of-a-buttonedit-control)
+[How to hide a child button of a ButtonEdit control?](http://help.syncfusion.com/windowsforms/buttonedit/faq/how-to-hide-a-child-button-of-a-buttonedit-control)
 
 {% endseealso %}

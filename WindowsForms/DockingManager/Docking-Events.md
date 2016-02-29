@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Docking-Events | WindowsForms | Syncfusion
+title: Docking-Events | Windows Forms | Syncfusion
 description: docking events
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
@@ -478,9 +478,9 @@ End Sub
 
 This section covers the following events:
 
-* [AutoHideTabContextMenu Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#autohidetabcontextmenu-event)
-* [DockContextMenu Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockcontextmenu-event)
-* [DocMenuClick Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#docmenuclick-event)
+* [AutoHideTabContextMenu Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#autohidetabcontextmenu-event)
+* [DockContextMenu Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockcontextmenu-event)
+* [DocMenuClick Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#docmenuclick-event)
 
 
 
@@ -993,11 +993,11 @@ End Sub
 
 This section covers the following events:
 
-* [DockStateChanged Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanged-event)
-* [DockStateChanging Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanging-event)
-* [DockStateUnavailable Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstateunavailable-event)
-* [NewDockStateBeginLoad Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
-* [NewDockStateEndLoad Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
+* [DockStateChanged Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanged-event)
+* [DockStateChanging Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanging-event)
+* [DockStateUnavailable Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstateunavailable-event)
+* [NewDockStateBeginLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
+* [NewDockStateEndLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
 
 ### DockStateChanged Event
 
@@ -1369,8 +1369,8 @@ End Sub
 
  This section covers the following events:
 
-* [DockVisibilityChanged Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanged-event)
-* [DockVisibilityChanging Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanging-event)
+* [DockVisibilityChanged Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanged-event)
+* [DockVisibilityChanging Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanging-event)
 
 ### DockVisibilityChanged Event
 
@@ -1464,9 +1464,9 @@ An use case demonstrating this event is available at How to prevent closing of d
 
 This section covers the following events:
 
-* [DragAllow Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dragallow-event)
-* [DragFeedbackStart Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstart-event)
-* [DragFeedbackStop Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstop-event)
+* [DragAllow Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragallow-event)
+* [DragFeedbackStart Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstart-event)
+* [DragFeedbackStop Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstop-event)
 
 ### DragAllow Event
 
@@ -1688,12 +1688,12 @@ End Sub
 
 This section covers the following events:
 
-* [TransferredToManager Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#transferredtomanager-event)
-* [TransferringFromManager Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#transferringfrommanager-event)
-* [ImageListChanged Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#imagelistchanged-event)
-* [InitializeControlOnLoad Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#initializecontrolonload-event)
-* [ProvideGraphicsItems Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#providegraphicsitems-event)
-* [ProvidePersistenceID Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#providepersistenceid-event)
+* [TransferredToManager Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#transferredtomanager-event)
+* [TransferringFromManager Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#transferringfrommanager-event)
+* [ImageListChanged Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#imagelistchanged-event)
+* [InitializeControlOnLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#initializecontrolonload-event)
+* [ProvideGraphicsItems Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#providegraphicsitems-event)
+* [ProvidePersistenceID Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#providepersistenceid-event)
 
 ### TransferredToManager Event
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add a new data row to the Data table at runtime | WindowsForms | Syncfusion
+title: How to add a new data row to the Data table at runtime | Windows Forms | Syncfusion
 description: How to add a new data row to the Data table at runtime
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

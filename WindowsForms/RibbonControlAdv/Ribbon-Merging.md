@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Merging | WindowsForms | Syncfusion
+title: Ribbon-Merging | Windows Forms | Syncfusion
 description: ribbon merging
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

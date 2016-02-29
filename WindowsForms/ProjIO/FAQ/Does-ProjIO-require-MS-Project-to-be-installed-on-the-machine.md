@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Does-ProjIO-require-MS-Project-to-be-installed-on-the-machine | WindowsForms | Syncfusion
+title: Does-ProjIO-require-MS-Project-to-be-installed-on-the-machine | Windows Forms | Syncfusion
 description: does projio require ms project to be installed on the machine?
-platform: WindowsForms
+platform: windowsforms
 control: ProjIO
 documentation: ug
 ---

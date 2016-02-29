@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Keyboard Support | WindowsForms | Syncfusion
+title: Keyboard Support | Windows Forms | Syncfusion
 description: keyboard support
-platform: WindowsForms
+platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---

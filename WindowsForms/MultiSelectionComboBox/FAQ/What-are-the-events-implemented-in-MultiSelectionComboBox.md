@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-implemented-in-MultiSelectionComboBox | WindowsForms | Syncfusion
+title: What-are-the-events-implemented-in-MultiSelectionComboBox | Windows Forms | Syncfusion
 description: what are the events implemented in multiselectioncombobox
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

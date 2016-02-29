@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating ColorUIControl | WindowsForms | Syncfusion
+title: Creating ColorUIControl | Windows Forms | Syncfusion
 description: creating coloruicontrol
-platform: WindowsForms
+platform: windowsforms
 control: ColorUI 
 documentation: ug
 ---

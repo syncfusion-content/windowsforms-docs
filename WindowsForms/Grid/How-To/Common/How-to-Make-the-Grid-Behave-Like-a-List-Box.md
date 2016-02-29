@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Make-the-Grid-Behave-Like-a-List-Box | WindowsForms | Syncfusion
+title: How-to-Make-the-Grid-Behave-Like-a-List-Box | Windows Forms | Syncfusion
 description: how to make the grid behave like a list box
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

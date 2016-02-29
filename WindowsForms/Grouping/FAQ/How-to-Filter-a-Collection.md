@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Filter a Collection | WindowsForms | Syncfusion
+title: How to Filter a Collection | Windows Forms | Syncfusion
 description: How to Filter a Collection
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Events | WindowsForms | Syncfusion
+title: Layout Events | Windows Forms | Syncfusion
 description: layout events
 control: Layout Managers Package
 documentation: ug

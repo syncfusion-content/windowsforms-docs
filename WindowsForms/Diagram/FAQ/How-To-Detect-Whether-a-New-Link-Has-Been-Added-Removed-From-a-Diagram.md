@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Detect Whether a New Link Has Been Added  R | Diagram | WindowsForms | Syncfusion
+title: How To Detect Whether a New Link Has Been Added  R | Diagram | Windows Forms | Syncfusion
 description: how to detect whether a new link has been added / removed from a diagram
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

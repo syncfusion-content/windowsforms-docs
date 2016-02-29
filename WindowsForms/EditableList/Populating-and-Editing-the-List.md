@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Populating-and-Editing-the-List | WindowsForms | Syncfusion
+title: Populating-and-Editing-the-List | Windows Forms | Syncfusion
 description: populating and editing the list
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Make-a-Cell-Display--if-it-is-Not-Wide-Enou | WindowsForms | Syncfusion
+title: How-to-Make-a-Cell-Display--if-it-is-Not-Wide-Enou | Windows Forms | Syncfusion
 description: how to make a cell display '...' if it is not wide enough
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

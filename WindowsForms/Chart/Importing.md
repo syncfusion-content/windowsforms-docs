@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Importing | WindowsForms | Syncfusion
+title: Importing | Windows Forms | Syncfusion
 description: importing
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Guidance to run the local samples
 description: Inbuilt Featured Samples
-platform: WindowsForms
+platform: windowsforms
 control: General
 documentation: ug
 ---

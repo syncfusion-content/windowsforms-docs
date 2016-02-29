@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DICOM-Format | WindowsForms | Syncfusion
+title: DICOM-Format | Windows Forms | Syncfusion
 description: dicom format
-platform: WindowsForms
+platform: windowsforms
 control: DICOM 
 documentation: ug
 ---

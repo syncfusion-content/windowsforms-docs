@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Exporting of GridControl for Syncfusion Essential WindowsForms
+title: Exporting of GridControl for Syncfusion Essential Windows Forms
 description: This section explains about the exporting of GridControl to the Excel, Pdf, Word, Html and CSV format.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

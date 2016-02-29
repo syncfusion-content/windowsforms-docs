@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ScrollersFrame | WindowsForms | Syncfusion
+title: ScrollersFrame | Windows Forms | Syncfusion
 description: scrollersframe
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating IntegerTextBox | WindowsForms | Syncfusion
+title: Creating IntegerTextBox | Windows Forms | Syncfusion
 description: creating integertextbox
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

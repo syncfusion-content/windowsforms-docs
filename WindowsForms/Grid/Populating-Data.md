@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Populating Data in GridControl for Syncfusion Essential WindowsForms
+title: Populating Data in GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to populate data in GridControl
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 

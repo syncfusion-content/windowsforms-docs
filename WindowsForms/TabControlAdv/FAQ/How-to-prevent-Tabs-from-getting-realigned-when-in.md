@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-prevent-Tabs-from-getting-realigned-when-in | WindowsForms | Syncfusion
+title: How-to-prevent-Tabs-from-getting-realigned-when-in | Windows Forms | Syncfusion
 description: how to prevent tabs from getting realigned when in multiline mode
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

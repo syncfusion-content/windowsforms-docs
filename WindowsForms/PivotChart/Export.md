@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Export | WindowsForms | Syncfusion
+title: Export | Windows Forms | Syncfusion
 description: export
-platform: WindowsForms
+platform: windowsforms
 control: PivotChart
 documentation: ug
 ---

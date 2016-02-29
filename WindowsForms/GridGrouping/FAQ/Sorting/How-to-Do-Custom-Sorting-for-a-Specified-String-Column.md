@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Do-Custom-Sorting-for-a-Specified-String-Co | WindowsForms | Syncfusion
+title: How-to-Do-Custom-Sorting-for-a-Specified-String-Co | Windows Forms | Syncfusion
 description: how to do custom sorting for a specified string column
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

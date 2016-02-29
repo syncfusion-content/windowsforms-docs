@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Print-and-Print-Preview | WindowsForms | Syncfusion
+title: Print-and-Print-Preview | Windows Forms | Syncfusion
 description: print and print preview
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

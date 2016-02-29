@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Is it possible to restrict the dates that are selected? | WindowsForms | Syncfusion
+title: Is it possible to restrict the dates that are selected? | Windows Forms | Syncfusion
 description: is it possible to restrict the dates that are selected?
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

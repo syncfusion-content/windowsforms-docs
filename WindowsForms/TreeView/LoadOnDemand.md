@@ -1,8 +1,8 @@
 ---
 layout: post
-title: LoadOnDemand | WindowsForms | Syncfusion
+title: LoadOnDemand | Windows Forms | Syncfusion
 description: loadondemand
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

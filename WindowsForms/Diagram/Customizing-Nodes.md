@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing-Nodes | WindowsForms | Syncfusion
+title: Customizing-Nodes | Windows Forms | Syncfusion
 description: customizing nodes
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

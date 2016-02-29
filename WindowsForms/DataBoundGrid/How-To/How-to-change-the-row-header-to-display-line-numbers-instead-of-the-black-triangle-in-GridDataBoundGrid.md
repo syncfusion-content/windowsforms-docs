@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-change-the-row-header-to-display-line-numbers-instead-of-the-black-triangle-in-GridDataBoundGrid | WindowsForms | Syncfusion
+title: How-to-change-the-row-header-to-display-line-numbers-instead-of-the-black-triangle-in-GridDataBoundGrid | Windows Forms | Syncfusion
 description: how to change the row header to display line numbers instead of the black triangle in griddataboundgrid
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

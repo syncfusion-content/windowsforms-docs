@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes-And-Styles | WindowsForms | Syncfusion
+title: Themes-And-Styles | Windows Forms | Syncfusion
 description: themes and styles
-platform: WindowsForms
+platform: windowsforms
 control: ComboDropDown
 documentation: ug
 ---

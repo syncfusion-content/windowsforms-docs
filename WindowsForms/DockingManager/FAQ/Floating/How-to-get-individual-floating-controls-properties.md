@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to get individual floating controls properties | WindowsForms | Syncfusion
+title: How to get individual floating controls properties | Windows Forms | Syncfusion
 description: How to get individual floating controls properties
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

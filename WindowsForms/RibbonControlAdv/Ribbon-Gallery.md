@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Gallery| WindowsForms | Syncfusion
+title: Ribbon-Gallery| Windows Forms | Syncfusion
 description:  ribbon gallery
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

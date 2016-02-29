@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Wizard-Page-Settings | WindowsForms | Syncfusion
+title: Wizard-Page-Settings | Windows Forms | Syncfusion
 description: wizard page settings 
-platform: WindowsForms
+platform: windowsforms
 control: Wizard Package 
 documentation: ug
 ---

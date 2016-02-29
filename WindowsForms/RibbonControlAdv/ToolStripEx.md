@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ToolStripEx | WindowsForms | Syncfusion
+title: ToolStripEx | Windows Forms | Syncfusion
 description:  toolstripex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

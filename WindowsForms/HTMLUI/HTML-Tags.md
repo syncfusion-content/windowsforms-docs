@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML-Tags | WindowsForms | Syncfusion
+title: HTML-Tags | Windows Forms | Syncfusion
 description:  html tags
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-determine-on-which-control-a-context-menu-w | WindowsForms | Syncfusion
+title: How-to-determine-on-which-control-a-context-menu-w | Windows Forms | Syncfusion
 description: how to determine on which control a context menu was shown
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

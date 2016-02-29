@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Appearance-of-a-Single-Header-Cell | WindowsForms | Syncfusion
+title: How-to-Change-the-Appearance-of-a-Single-Header-Cell | Windows Forms | Syncfusion
 description: how to change the appearance of a single header cell
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

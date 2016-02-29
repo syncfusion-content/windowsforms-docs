@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Editing-Features | WindowsForms | Syncfusion
+title: Editing-Features | Windows Forms | Syncfusion
 description: editing features
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
