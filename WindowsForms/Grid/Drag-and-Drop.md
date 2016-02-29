@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Drag and Drop in GridControl for Syncfusion Essential WindowsForms
+title: Drag and Drop in GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to use drag and drop functionality in GridControl
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

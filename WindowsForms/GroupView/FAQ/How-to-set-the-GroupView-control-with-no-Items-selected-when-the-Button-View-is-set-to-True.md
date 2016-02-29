@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to set the GroupView control with no Items selected when the Button View is set to True | WindowsForms | Syncfusion
+title: How to set the GroupView control with no Items selected when the Button View is set to True | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

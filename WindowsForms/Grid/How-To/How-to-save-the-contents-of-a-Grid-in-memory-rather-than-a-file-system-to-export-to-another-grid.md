@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-save-the-contents-of-a-Grid-in-memory-rathe | WindowsForms | Syncfusion
+title: How-to-save-the-contents-of-a-Grid-in-memory-rathe | Windows Forms | Syncfusion
 description: how to save the contents of a grid in memory rather than a file system to export to another grid
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

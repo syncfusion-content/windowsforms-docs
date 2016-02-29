@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Control-the-Number-of-Visible-Items-in-a-Co | WindowsForms | Syncfusion
+title: How-to-Control-the-Number-of-Visible-Items-in-a-Co | Windows Forms | Syncfusion
 description: how to control the number of visible items in a combo box cell
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

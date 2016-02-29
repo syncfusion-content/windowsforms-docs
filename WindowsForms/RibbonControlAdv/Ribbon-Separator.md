@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Separator| WindowsForms | Syncfusion
+title: Ribbon-Separator| Windows Forms | Syncfusion
 description:  ribbon separator
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

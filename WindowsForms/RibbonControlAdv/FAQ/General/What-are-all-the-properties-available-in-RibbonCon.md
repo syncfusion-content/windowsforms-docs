@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-all-the-properties-available-in-RibbonCon | WindowsForms | Syncfusion
+title: What-are-all-the-properties-available-in-RibbonCon | Windows Forms | Syncfusion
 description: what are all the properties available in ribboncontroladv touchstyle and its purpose?
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

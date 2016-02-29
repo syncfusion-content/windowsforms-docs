@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-up-a-datasource-to-the-grouping-grid | WindowsForms | Syncfusion
+title: How-to-set-up-a-datasource-to-the-grouping-grid | Windows Forms | Syncfusion
 description: how to set up a datasource to the grouping grid
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

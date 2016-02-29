@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grid-Model-Options | WindowsForms | Syncfusion
+title: Grid-Model-Options | Windows Forms | Syncfusion
 description: grid model options 
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

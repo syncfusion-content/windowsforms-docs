@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grid-Helper-Classes | WindowsForms | Syncfusion
+title: Grid-Helper-Classes | Windows Forms | Syncfusion
 description: grid helper classes
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

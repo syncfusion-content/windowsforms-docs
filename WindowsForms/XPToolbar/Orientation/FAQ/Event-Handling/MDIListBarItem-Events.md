@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MDIListBarItem-Events | WindowsForms | Syncfusion
+title: MDIListBarItem-Events | Windows Forms | Syncfusion
 description: mdilistbaritem events
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

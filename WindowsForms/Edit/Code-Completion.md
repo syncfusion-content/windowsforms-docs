@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Code-Completion | WindowsForms | Syncfusion
+title: Code-Completion | Windows Forms | Syncfusion
 description: code completion
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---

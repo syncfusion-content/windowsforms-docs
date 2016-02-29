@@ -2,7 +2,7 @@
 layout: post
 title: System requirements needed to use Syncfusion Essential Windows Forms components
 description: SystemRequirement Details
-platform: WindowsForms
+platform: windowsforms
 control: General
 documentation: ug
 ---

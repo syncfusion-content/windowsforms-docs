@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: Overview
-platform: WindowsForms
+platform: windowsforms
 control: ColorPickerUIAdv 
 documentation: ug
 ---

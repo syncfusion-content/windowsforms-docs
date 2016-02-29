@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Major-Control-Classes-Overview | WindowsForms | Syncfusion
+title: Major-Control-Classes-Overview | Windows Forms | Syncfusion
 description: major control classes overview
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

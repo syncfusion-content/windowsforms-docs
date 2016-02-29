@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Offcie2010-Form-Caption-Align | WindowsForms | Syncfusion
+title: Offcie2010-Form-Caption-Align | Windows Forms | Syncfusion
 description: offcie2010 form caption align
-platform: WindowsForms
+platform: windowsforms
 control: Office2010 Form
 documentation: ug
 ---

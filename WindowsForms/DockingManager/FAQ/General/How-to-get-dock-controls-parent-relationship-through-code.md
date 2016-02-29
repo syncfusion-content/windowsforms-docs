@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to get dock controls parent relationship through code | WindowsForms | Syncfusion
+title: How to get dock controls parent relationship through code | Windows Forms | Syncfusion
 description: How to get dock controls parent relationship through code
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

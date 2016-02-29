@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Virtual Grid of GridControl for Syncfusion Essential WindowsForms
+title: Virtual Grid of GridControl for Syncfusion Essential Windows Forms
 description: Explain about how to create and features of Virtual Grid
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Mask Settings | WindowsForms | Syncfusion
+title: Mask Settings | Windows Forms | Syncfusion
 description: Mask Settings
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---

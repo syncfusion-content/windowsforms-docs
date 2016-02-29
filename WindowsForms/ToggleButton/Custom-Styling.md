@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Custom-Styling | WindowsForms | Syncfusion
+title: Custom-Styling | Windows Forms | Syncfusion
 description: custom styling
-platform: WindowsForms
+platform: windowsforms
 control: ToggleButton 
 documentation: ug
 ---

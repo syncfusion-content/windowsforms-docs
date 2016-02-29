@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to layout non-control based Child components | WindowsForms | Syncfusion
+title: How to layout non-control based Child components | Windows Forms | Syncfusion
 description: how to layout non-control based child components
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

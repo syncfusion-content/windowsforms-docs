@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scrolling of GridControl for Syncfusion Essential WindowsForms
+title: Scrolling of GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to enable scrolling and custom scrollbars in GridControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---
@@ -42,6 +42,7 @@ N> In normal scrolling, the hidden rows and columns are considered as existing r
 
 ### Optimized Pixel Scrolling
 The pixel scrolling is not optimized for large row scenarios. To optimize the pixel scrolling set create the derived GridControl and override a couple of virtual methods to make it perform well. Also use the binary tree structures to quickly get the row index for an absolute pixel position and vice versa.
+
 The following methods are need to be override in the derived GridControl for Optimized Vertical scrolling,
 
 * [RowIndexToVScrollPixelPos](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~RowIndexToVScrollPixelPos.html)(int rowIndex)
@@ -307,6 +308,7 @@ Me.gridControl1.EnableIntelliMouse = True
 
 ## Hidden Row or Column Scrolling
 The scrolling logic for hidden rows and columns can be applied to the GridControl by enabling [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) property.This is a static property, it must be assigned before the ` `InitializeComponent` method.
+
 By default the thumbs are used the visible row and column index to update the positions on the Scrollbars. The [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) property is used to avoid the unwanted space leave for the Hidden Row/Column headers.
 {% tabs %}
 {% highlight c# %}
@@ -322,6 +324,7 @@ InitializeComponent()
 {% endtabs %}
 
 N> Consider the case “The grid have 1000 number of rows and the rows in between 5 and 990 are gets hidden”. In this case the thumb size of the vertical scrollbar is set based on the overall row count of the grid. By enabling the [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) static property, the hidden columns is not taken to the account for scrolling. Therefore the scrollbar thumb will draw based only on the visible rows.
+
 The following screenshot shows the grid with applied hidden scroll logic,
 
 ![](Scrolling_images/Scrolling_img4.jpeg)
@@ -355,6 +358,7 @@ Me.gridControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars
 
 ### Setting the Color Scheme for Office Scrollbars 
 The themes can be applied for the office scrollbars by setting the appropriate color scheme. Following are the color schemes available for the GridControl.
+
 [Office2007ScrollBarsColorScheme](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~Office2007ScrollBarsColorScheme.html) – Used to apply the color scheme for Office 2007 Scrollbars
 [Office2010ScrollBarsColorScheme](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~Office2010ScrollBarsColorScheme.html) – Used to apply color scheme for Office 2010 scrollbars
 

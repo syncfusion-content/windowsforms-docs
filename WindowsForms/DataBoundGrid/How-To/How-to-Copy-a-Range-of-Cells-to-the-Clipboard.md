@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Copy-a-Range-of-Cells-to-the-Clipboard | WindowsForms | Syncfusion
+title: How-to-Copy-a-Range-of-Cells-to-the-Clipboard | Windows Forms | Syncfusion
 description: how to copy a range of cells to the clipboard
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

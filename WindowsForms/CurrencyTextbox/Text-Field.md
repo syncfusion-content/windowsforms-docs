@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Field | WindowsForms | Syncfusion
+title: Text-Field | Windows Forms | Syncfusion
 description: text field
-platform: WindowsForms
+platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---

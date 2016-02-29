@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SpellChecking-Options | WindowsForms | Syncfusion
+title: SpellChecking-Options | Windows Forms | Syncfusion
 description: spellcheckingoptions
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

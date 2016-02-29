@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview  | WindowsForms | Syncfusion
+title: Overview  | Windows Forms | Syncfusion
 description: overview 
 control: Layout Managers Package
 documentation: ug

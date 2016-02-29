@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced-Features | WindowsForms | Syncfusion
+title: Advanced-Features | Windows Forms | Syncfusion
 description: advanced features
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

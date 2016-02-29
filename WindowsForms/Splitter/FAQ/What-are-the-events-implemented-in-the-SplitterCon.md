@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-implemented-in-the-SplitterCon | WindowsForms | Syncfusion
+title: What-are-the-events-implemented-in-the-SplitterCon | Windows Forms | Syncfusion
 description: what are the events implemented in the splittercontrol
-platform: WindowsForms
+platform: windowsforms
 control: Splitter
 documentation: ug
 ---

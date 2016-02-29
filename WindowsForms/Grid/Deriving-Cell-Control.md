@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Deriving-Cell-Control | WindowsForms | Syncfusion
+title: Deriving-Cell-Control | Windows Forms | Syncfusion
 description: deriving cell control
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

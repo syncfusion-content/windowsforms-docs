@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to change the order of the XPTaskBar Boxes in the designer after creating them | WindowsForms | Syncfusion
+title: How to change the order of the XPTaskBar Boxes in the designer after creating them | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

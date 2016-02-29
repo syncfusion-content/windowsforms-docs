@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Cell-Style-Architecture | WindowsForms | Syncfusion
+title: Cell-Style-Architecture | Windows Forms | Syncfusion
 description: cell style architecture
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

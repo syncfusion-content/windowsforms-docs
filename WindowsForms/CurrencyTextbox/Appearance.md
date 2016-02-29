@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
+title: Appearance | Windows Forms | Syncfusion
 description: Appearance
-platform: WindowsForms
+platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---

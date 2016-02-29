@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to avoid flickering while loading dock state | WindowsForms | Syncfusion
+title: How to avoid flickering while loading dock state | Windows Forms | Syncfusion
 description: How to avoid flickering while loading dock state
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

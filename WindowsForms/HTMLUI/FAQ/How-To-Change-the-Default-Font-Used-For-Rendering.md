@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Change-the-Default-Font-Used-For-Rendering- | WindowsForms | Syncfusion
+title: How-To-Change-the-Default-Font-Used-For-Rendering- | Windows Forms | Syncfusion
 description: how to change the default font used for rendering the html document in the htmlui control?
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tab-Groups | WindowsForms | Syncfusion
+title: Tab-Groups | Windows Forms | Syncfusion
 description: tab groups
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

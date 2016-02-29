@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-bind-a-MultiSelectionComboBox-with-external-data-source | WindowsForms | Syncfusion
+title: How-to-bind-a-MultiSelectionComboBox-with-external-data-source | Windows Forms | Syncfusion
 description: how to bind a multiselectioncombobox with external data source
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

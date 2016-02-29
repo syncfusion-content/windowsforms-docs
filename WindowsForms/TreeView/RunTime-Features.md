@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RunTime-Features | WindowsForms | Syncfusion
+title: RunTime-Features | Windows Forms | Syncfusion
 description: runTime features
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Formula Bar of GridControl for Syncfusion Essential WindowsForms
+title: Formula Bar of GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to add formula bar(GridAwareTextBox) in applicaation and its usablilities
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 

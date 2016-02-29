@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Retrieve-the-Text-From-a-Cell | WindowsForms | Syncfusion
+title: How-to-Retrieve-the-Text-From-a-Cell | Windows Forms | Syncfusion
 description: how to retrieve the text from a cell
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

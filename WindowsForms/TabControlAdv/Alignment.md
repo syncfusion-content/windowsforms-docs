@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment | WindowsForms | Syncfusion
+title: Alignment | Windows Forms | Syncfusion
 description: alignment
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---

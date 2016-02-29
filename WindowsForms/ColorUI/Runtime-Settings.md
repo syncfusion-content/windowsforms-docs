@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Runtime Settings | WindowsForms | Syncfusion
+title: Runtime Settings | Windows Forms | Syncfusion
 description: runtime settings
-platform: WindowsForms
+platform: windowsforms
 control: ColorUI
 documentation: ug
 ---

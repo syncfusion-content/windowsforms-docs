@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupBar Settings | WindowsForms | Syncfusion
+title: GroupBar Settings | Windows Forms | Syncfusion
 description: GroupBar Settings
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to access the group from DisplayElements | WindowsForms | Syncfusion
+title: How to access the group from DisplayElements | Windows Forms | Syncfusion
 description: how to access the group from displayelements
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

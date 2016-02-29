@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: DICOM 
 documentation: ug
 ---
@@ -77,13 +77,13 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\<Version Number
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/dicom/overview>' | markdownify }} (Navigate to the DICOM User Guide.)> ![](Overview_images/Overview_img1.jpeg)
+Online{{ '<http://help.syncfusion.com/windowsforms/dicom/overview>' | markdownify }} (Navigate to the DICOM User Guide.)> ![](Overview_images/Overview_img1.jpeg)
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online {{ '<http://docs.syncfusion.com>'| markdownify }} (Navigate to the Reporting User Guide. Select {{ '_DICOM_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online {{ '<http://help.syncfusion.com>'| markdownify }} (Navigate to the Reporting User Guide. Select {{ '_DICOM_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

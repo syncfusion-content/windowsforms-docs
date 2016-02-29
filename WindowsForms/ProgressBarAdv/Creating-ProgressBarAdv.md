@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-ProgressBarAdv | WindowsForms | Syncfusion
+title: Creating-ProgressBarAdv | Windows Forms | Syncfusion
 description: creating progressbaradv
-platform: WindowsForms
+platform: windowsforms
 control: ProgressBarAdv
 documentation: ug
 ---

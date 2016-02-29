@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-filter-particular-set-of-data-points-in-the | WindowsForms | Syncfusion
+title: How-to-filter-particular-set-of-data-points-in-the | Windows Forms | Syncfusion
 description: how to filter particular set of data points in the chart series
-platform: WindowsForms
+platform: windowsforms
 control: chart
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Custom-Controls | WindowsForms | Syncfusion
+title: Custom-Controls | Windows Forms | Syncfusion
 description:  custom controls
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

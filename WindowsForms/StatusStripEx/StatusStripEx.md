@@ -1,8 +1,8 @@
 ---
 layout: post
-title: StatusStripEx | WindowsForms | Syncfusion
+title: StatusStripEx | Windows Forms | Syncfusion
 description: statusstripex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

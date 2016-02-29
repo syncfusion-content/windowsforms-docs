@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-MultiColumnComboBox | WindowsForms | Syncfusion
+title: Creating-MultiColumnComboBox | Windows Forms | Syncfusion
 description: creating multicolumncombobox
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

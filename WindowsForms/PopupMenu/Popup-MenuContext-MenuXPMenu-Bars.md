@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Popup-MenuContext-MenuXPMenu-Bars | WindowsForms | Syncfusion
+title: Popup-MenuContext-MenuXPMenu-Bars | Windows Forms | Syncfusion
 description: popup menucontext menuxpmenu bars
-platform: WindowsForms
+platform: windowsforms
 control: Popup-MenuContext-MenuXPMenu-Bars
 documentation: ug
 ---
@@ -42,8 +42,8 @@ This is a horizontal menu that appears on the bottom of a window and has the Bar
 
 {% seealso %}
 
-[Bar Items](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items), 
-[BarManagers](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#barmanagers),
+[Bar Items](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items), 
+[BarManagers](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#barmanagers),
 Bar Styles
 
 Toolbar Properties

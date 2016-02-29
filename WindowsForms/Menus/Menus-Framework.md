@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Menus Framework | WindowsForms | Syncfusion
+title: Menus Framework | Windows Forms | Syncfusion
 description: menus framework
-platform: WindowsForms
+platform: windowsforms
 control: Menus Package 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Suppress-KeyDown-Event | WindowsForms | Syncfusion
+title: How-to-Suppress-KeyDown-Event | Windows Forms | Syncfusion
 description: how to suppress keydown event
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

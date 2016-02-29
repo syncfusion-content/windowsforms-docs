@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Docking-Styles | WindowsForms | Syncfusion
+title: Docking-Styles | Windows Forms | Syncfusion
 description: docking styles
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Formula-Support | WindowsForms | Syncfusion
+title: Formula-Support | Windows Forms | Syncfusion
 description: formula support
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

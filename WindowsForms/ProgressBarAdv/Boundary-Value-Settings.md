@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Boundary-Value-Settings | WindowsForms | Syncfusion
+title: Boundary-Value-Settings | Windows Forms | Syncfusion
 description: boundary value settings
-platform: WindowsForms
+platform: windowsforms
 control: ProgressBarAdv
 documentation: ug
 ---

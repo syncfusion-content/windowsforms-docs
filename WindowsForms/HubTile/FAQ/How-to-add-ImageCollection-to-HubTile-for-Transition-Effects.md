@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add ImageCollection to HubTile for Transition Effects | WindowsForms | Syncfusion
+title: How to add ImageCollection to HubTile for Transition Effects | Windows Forms | Syncfusion
 description: How to add ImageCollection to HubTile for Transition Effects
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Avoid-A-B-C-and--or-1-2-3-in-the-Headers | WindowsForms | Syncfusion
+title: How-to-Avoid-A-B-C-and--or-1-2-3-in-the-Headers | Windows Forms | Syncfusion
 description: how to avoid a, b, c and / or 1, 2, 3 in the headers
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

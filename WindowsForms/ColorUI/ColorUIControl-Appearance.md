@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ColorUIControl Appearance | WindowsForms | Syncfusion
+title: ColorUIControl Appearance | Windows Forms | Syncfusion
 description: coloruicontrol appearance
-platform: WindowsForms
+platform: windowsforms
 control: ColorUI
 documentation: ug
 ---

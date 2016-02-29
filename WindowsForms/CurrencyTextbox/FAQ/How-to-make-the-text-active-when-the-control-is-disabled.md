@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-make-the-text-active-when-the-control-is-disabled | WindowsForms | Syncfusion
+title: How-to-make-the-text-active-when-the-control-is-disabled | Windows Forms | Syncfusion
 description: How to make the text active when the control is disabled
-platform: WindowsForms
+platform: windowsforms
 control: CurrencyEdit
 documentation: ug
 ---

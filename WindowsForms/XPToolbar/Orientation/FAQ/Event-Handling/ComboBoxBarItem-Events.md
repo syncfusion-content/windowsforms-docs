@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboBoxBarItem-Events | WindowsForms | Syncfusion
+title: ComboBoxBarItem-Events | Windows Forms | Syncfusion
 description: comboboxbaritem events
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

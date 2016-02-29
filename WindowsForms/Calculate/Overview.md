@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---
@@ -161,11 +161,11 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/calculate/overview>' | markdownify }} (Navigate to the Calculate User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
+Online{{ '<http://help.syncfusion.com/windowsforms/calculate/overview>' | markdownify }} (Navigate to the Calculate User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online {{ '<http://docs.syncfusion.com/cr/windowsforms/>'| markdownify }}   (Navigate to the Reporting User Guide. Select {{ ''_Calculate_'' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online {{ '<http://help.syncfusion.com/cr/windowsforms/>'| markdownify }}   (Navigate to the Reporting User Guide. Select {{ ''_Calculate_'' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

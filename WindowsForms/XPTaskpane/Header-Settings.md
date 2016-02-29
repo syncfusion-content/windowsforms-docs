@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Header-Settings | WindowsForms | Syncfusion
+title: Header-Settings | Windows Forms | Syncfusion
 description: header settings
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---

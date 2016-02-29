@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Visualization | WindowsForms | Syncfusion
+title: Text-Visualization | Windows Forms | Syncfusion
 description: text visualization
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---

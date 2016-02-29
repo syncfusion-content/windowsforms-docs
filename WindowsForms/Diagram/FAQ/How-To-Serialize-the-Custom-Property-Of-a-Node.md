@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Serialize the Custom Property Of a Node | Diagram | WindowsForms | Syncfusion
+title: How To Serialize the Custom Property Of a Node | Diagram | Windows Forms | Syncfusion
 description: how to serialize the custom property of a node
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

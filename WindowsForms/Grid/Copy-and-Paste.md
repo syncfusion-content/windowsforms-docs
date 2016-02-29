@@ -1,8 +1,8 @@
 ---
 layout: post
-title: CopyPaste of GridControl for Syncfusion Essential WindowsForms
-description: This section explains on how to perform the Cut, Copy and Paste operations in GridControl.
-platform: WindowsForms
+title: CopyPaste of GridControl for Syncfusion Essential Windows Forms
+description: This section explains oh how to perform the Cut, Copy and Paste operations in GridControl.
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---
@@ -96,6 +96,7 @@ End Sub
 
 ## Paste 
 The [Paste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~Paste.html) method is used to insert the entire content of the clipboard to the selected range of cells. The <kbd>Ctrl</kbd>+<kbd>V</kbd> keyboard combination is used to perform the paste operation.  
+
 {% tabs %}
 {% highlight c# %}
 //Paste the contents of the clipboard to the specific selected range
@@ -124,6 +125,8 @@ Private Sub gridControl1_ClipboardPaste(ByVal sender As Object, ByVal e As GridC
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
+N> **ClipboardPasted** - This event is to be handled after a paste operation.
 
 ### Clipboard Flags
 When the number of rows/columns copied is greater than the number of rows/columns count of the grid, then the grid will automatically add the additional columns/rows according to the copied content. To avoid the unwanted rows/columns to be appended to the GridControl, set the [ClipboardFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs~ClipboardFlags.html) as follows,
@@ -216,7 +219,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CopyPaste_images/CopyPaste_img1.jpeg)
+![](CopyPaste_images/CopyPaste_img1.png)
 
 ## Cut
 The <kbd>Ctrl</kbd>+<kbd>X</kbd> keyboard combination is used to cut the data from the grid. It is used to remove the selected data from the source and add it to the Clipboard. 
@@ -288,10 +291,9 @@ To cancel the cut, copy and paste operation of the grid, handle the [ClipboardCa
 {% tabs %}
 {% highlight c# %}
 //Clipboard Events
-'Clipboard Events
-AddHandler gridControl1.ClipboardCanPaste, AddressOf gridControl1_ClipboardCanPaste
-AddHandler gridControl1.ClipboardCanCopy, AddressOf gridControl1_ClipboardCanCopy
-AddHandler gridControl1.ClipboardCanCut, AddressOf gridControl1_ClipboardCanCut
+this.gridControl1.ClipboardCanPaste += gridControl1_ClipboardCanPaste;
+this.gridControl1.ClipboardCanCopy +=gridControl1_ClipboardCanCopy;
+this.gridControl1.ClipboardCanCut += gridControl1_ClipboardCanCut;
 void gridControl1_ClipboardCanCut(object sender, GridCutPasteEventArgs e)
 {         
     //disables the cut to the clipboard
@@ -315,9 +317,10 @@ void gridControl1_ClipboardCanCopy(object sender, GridCutPasteEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 'Clipboard Events
-Private Me.gridControl1.ClipboardCanPaste += AddressOf gridControl1_ClipboardCanPaste
-Private Me.gridControl1.ClipboardCanCopy += AddressOf gridControl1_ClipboardCanCopy
-Private Me.gridControl1.ClipboardCanCut += AddressOf gridControl1_ClipboardCanCut
+'Clipboard Events
+AddHandler gridControl1.ClipboardCanPaste, AddressOf gridControl1_ClipboardCanPaste
+AddHandler gridControl1.ClipboardCanCopy, AddressOf gridControl1_ClipboardCanCopy
+AddHandler gridControl1.ClipboardCanCut, AddressOf gridControl1_ClipboardCanCut
 
 Private Sub gridControl1_ClipboardCanCut(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
 	'disables the cut to the clipboard

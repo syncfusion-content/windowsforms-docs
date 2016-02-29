@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabbedMDIManager-Events | WindowsForms | Syncfusion
+title: TabbedMDIManager-Events | Windows Forms | Syncfusion
 description: tabbedmdimanager events
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
 ---

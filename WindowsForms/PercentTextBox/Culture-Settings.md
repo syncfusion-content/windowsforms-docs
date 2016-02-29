@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Culture Settings | WindowsForms | Syncfusion
+title: Culture Settings | Windows Forms | Syncfusion
 description: Culture Settings
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

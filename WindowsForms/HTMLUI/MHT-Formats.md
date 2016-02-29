@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MHT-Formats | WindowsForms | Syncfusion
+title: MHT-Formats | Windows Forms | Syncfusion
 description: mht formats
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

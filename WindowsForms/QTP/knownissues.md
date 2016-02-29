@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Known-Issues | WindowsForms | Syncfusion
+title: Known-Issues | Windows Forms | Syncfusion
 description: known issues
-platform: WindowsForms
+platform: windowsforms
 control: QTP
 documentation: ug
 ---

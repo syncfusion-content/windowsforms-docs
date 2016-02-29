@@ -2,7 +2,7 @@
 layout: post
 title: Touch support for Syncfusion Windows Forms controls
 description: Touch Support Overview
-platform: WindowsForms
+platform: windowsforms
 control: General
 documentation: ug
 ---

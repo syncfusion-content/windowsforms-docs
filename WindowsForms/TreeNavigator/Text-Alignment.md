@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Alignment | WindowsForms | Syncfusion
+title: Text-Alignment | Windows Forms | Syncfusion
 description: text alignment
-platform: WindowsForms
+platform: windowsforms
 control: TreeNavigator 
 documentation: ug
 ---

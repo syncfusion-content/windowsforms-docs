@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Record-Navigation-Bar | WindowsForms | Syncfusion
+title: Record-Navigation-Bar | Windows Forms | Syncfusion
 description: record navigation bar
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

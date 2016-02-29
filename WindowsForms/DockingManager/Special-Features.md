@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Special-Features | WindowsForms | Syncfusion
+title: Special-Features | Windows Forms | Syncfusion
 description: special features
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---

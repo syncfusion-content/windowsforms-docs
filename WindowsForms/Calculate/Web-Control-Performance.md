@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Web-Control-Performance | WindowsForms | Syncfusion
+title: Web-Control-Performance | Windows Forms | Syncfusion
 description: web control performance
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

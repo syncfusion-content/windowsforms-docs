@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance and Behavior Settings | WindowsForms | Syncfusion
+title: Appearance and Behavior Settings | Windows Forms | Syncfusion
 description: appearance and behavior settings
-platform: WindowsForms
+platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---

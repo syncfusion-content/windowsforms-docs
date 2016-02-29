@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Touch-Support | WindowsForms | Syncfusion
+title: Touch-Support | Windows Forms | Syncfusion
 description:  touch support
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

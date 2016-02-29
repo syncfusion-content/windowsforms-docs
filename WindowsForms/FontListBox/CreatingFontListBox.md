@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating FontListBox | WindowsForms | Syncfusion
+title: Creating FontListBox | Windows Forms | Syncfusion
 description: Creating FontListBox
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

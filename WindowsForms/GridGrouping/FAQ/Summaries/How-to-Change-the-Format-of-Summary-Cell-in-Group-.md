@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Format-of-Summary-Cell-in-Group- | WindowsForms | Syncfusion
+title: How-to-Change-the-Format-of-Summary-Cell-in-Group- | Windows Forms | Syncfusion
 description: how to change the format of summary cell in group caption
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Axes | WindowsForms | Syncfusion
+title: Chart-Axes | Windows Forms | Syncfusion
 description: chart axes
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---

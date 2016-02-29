@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-generate-error-messages-or-exceptions-while-performing-String-related-Calculations | WindowsForms | Syncfusion
+title: How-to-generate-error-messages-or-exceptions-while-performing-String-related-Calculations | Windows Forms | Syncfusion
 description: how to generate error messages or exceptions while performing string-related calculations?
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

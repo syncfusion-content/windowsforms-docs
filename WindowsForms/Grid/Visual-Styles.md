@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Styles of GridControl for Syncfusion Essential WindowsForms
+title: Visual Styles of GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to apply visual styles and custom themes to the GridControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---
@@ -35,7 +35,7 @@ Me.gridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Off
 N> To apply the enhanced themes to the GridControl, set [EnableLegacyStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel~EnableLegacyStyle.html) property to `false`. 
 The change of visual styles can be handled by using the [ThemesChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ThemeChanged_EV.html) event. It will be fired while changing the[GridVisualStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~GridVisualStyles.html) of the GridControl.
 
-## Enabling Visual Styles	
+## Enabling Visual Styles   
 In GridControl, themes can be enabled by setting the [ThemesEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ThemesEnabled.html) property value as `true`. By default the grid will be loaded with the `SystemTheme`.
 {% tabs %}
 {% highlight c# %}
@@ -224,40 +224,40 @@ public class CustomTheme : IVisualStylesDrawing
 {% endhighlight %}
 {% highlight vb %}
 Public Class CustomTheme
-	Implements IVisualStylesDrawing
-	Private visualStyle As GridVisualStyles
+    Implements IVisualStylesDrawing
+    Private visualStyle As GridVisualStyles
 
-	Public Sub New(ByVal style As GridVisualStyles)
-		Me.visualStyle = style
+    Public Sub New(ByVal style As GridVisualStyles)
+        Me.visualStyle = style
 
-	End Sub
-	Public Sub New(ByVal style As GridVisualStyles, ByVal legacyStyle As Boolean)
-		Me.visualStyle = style
-		Me.isLegacyStyle = legacyStyle
-	End Sub
+    End Sub
+    Public Sub New(ByVal style As GridVisualStyles, ByVal legacyStyle As Boolean)
+        Me.visualStyle = style
+        Me.isLegacyStyle = legacyStyle
+    End Sub
 
 
-	Public Sub DrawHeaderStyle(ByVal g As Graphics, ByVal rect As Rectangle, ByVal state As ThemedHeaderDrawing.HeaderState)
-		'Check for empty headers
-		If rect.Height = 0 AndAlso rect.Width = 0 Then
-			Return
-		End If
+    Public Sub DrawHeaderStyle(ByVal g As Graphics, ByVal rect As Rectangle, ByVal state As ThemedHeaderDrawing.HeaderState)
+        'Check for empty headers
+        If rect.Height = 0 AndAlso rect.Width = 0 Then
+            Return
+        End If
 
-		'Check for the current state of the header and paints the foreground accordingly.
+        'Check for the current state of the header and paints the foreground accordingly.
 
-		If state Is ThemedHeaderDrawing.HeaderState.Normal Then
-			Dim br As New LinearGradientBrush(rect, Color.FromArgb(255, 128, 255), Color.FromArgb(255, 0, 128), LinearGradientMode.Vertical)
-			g.FillRectangle(br, rect)
-			g.FillRectangle(br, New Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2))
-			br.Dispose()
-		Else
-			Dim br As New LinearGradientBrush(rect, Color.FromArgb(0, 128, 0), Color.FromArgb(128, 255, 128), LinearGradientMode.Vertical)
-			g.FillRectangle(br, rect)
-			g.FillRectangle(br, New Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2))
-			br.Dispose()
-		End If
-	End Sub
-	' IVisualStylesDrawing Members …
+        If state Is ThemedHeaderDrawing.HeaderState.Normal Then
+            Dim br As New LinearGradientBrush(rect, Color.FromArgb(255, 128, 255), Color.FromArgb(255, 0, 128), LinearGradientMode.Vertical)
+            g.FillRectangle(br, rect)
+            g.FillRectangle(br, New Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2))
+            br.Dispose()
+        Else
+            Dim br As New LinearGradientBrush(rect, Color.FromArgb(0, 128, 0), Color.FromArgb(128, 255, 128), LinearGradientMode.Vertical)
+            g.FillRectangle(br, rect)
+            g.FillRectangle(br, New Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2))
+            br.Dispose()
+        End If
+    End Sub
+    ' IVisualStylesDrawing Members …
 End Class
 {% endhighlight %}
 {% endtabs %}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: BorderLayout | WindowsForms | Syncfusion
+title: BorderLayout | Windows Forms | Syncfusion
 description: borderlayout
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

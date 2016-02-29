@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-Binding | WindowsForms | Syncfusion
+title: Data-Binding | Windows Forms | Syncfusion
 description: data binding
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

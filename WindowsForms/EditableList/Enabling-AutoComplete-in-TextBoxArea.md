@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Enabling-AutoComplete-in-TextBoxArea | WindowsForms | Syncfusion
+title: Enabling-AutoComplete-in-TextBoxArea | Windows Forms | Syncfusion
 description: enabling autocomplete in textboxarea
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

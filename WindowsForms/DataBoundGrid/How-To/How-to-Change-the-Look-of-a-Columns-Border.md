@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Look-of-a-Columns-Border | WindowsForms | Syncfusion
+title: How-to-Change-the-Look-of-a-Columns-Border | Windows Forms | Syncfusion
 description: how to change the look of a column's border
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

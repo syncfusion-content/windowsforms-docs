@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Time-Interval | WindowsForms | Syncfusion
+title: Time-Interval | Windows Forms | Syncfusion
 description: time interval
-platform: WindowsForms
+platform: windowsforms
 control: Schedule
 documentation: ug
 ---
@@ -99,7 +99,7 @@ Me.scheduleControl1.AllowSecondsInAppointment = True
 
 ## Setting the Recurrence Appointments in Seconds
 
-By default, Schedule control allows you to add the recurrence appointments only for each day, month, or year. Now, recurrence appointments in the Schedule WF can also be organized in seconds, minutes, and hours. To add the recurrence appointments in seconds, it is necessary to enable the [AllowSecondsInAppointment](http://docs.syncfusion.com/windowsforms/schedule/time-interval#setting-the-time-interval-in-seconds-format )property. The minimum value that can be used for adding the recurrence appointments is 60 seconds. When the value goes below 60 seconds, then by default, the appointment time assigns 60 seconds. Recurrence Appointments can be added in two ways. 
+By default, Schedule control allows you to add the recurrence appointments only for each day, month, or year. Now, recurrence appointments in the Schedule WF can also be organized in seconds, minutes, and hours. To add the recurrence appointments in seconds, it is necessary to enable the [AllowSecondsInAppointment](http://help.syncfusion.com/windowsforms/schedule/time-interval#setting-the-time-interval-in-seconds-format )property. The minimum value that can be used for adding the recurrence appointments is 60 seconds. When the value goes below 60 seconds, then by default, the appointment time assigns 60 seconds. Recurrence Appointments can be added in two ways. 
 
 ### Adding recurrence by using Appointment Recurrence Dialog
 
@@ -123,7 +123,7 @@ Recurrence Appointments can be added by using the appointment recurrence dialog 
 
 Recurrence appointments can also be added by using the RecurrenceRule property. The RecurrenceRule is a string value that contains the details of the recurrence appointment with repeated rule types like daily, monthly, yearly, every second, every minute, every hour, how many days it needs to render or count, what is the interval, the time period to render the appointment, etc. The rules that are available in the Recurrence Rule property are listed in the following link.
 
-[RecurrenceRule](http://docs.syncfusion.com/windowsforms/schedule/time-interval#recurrence-rule)
+[RecurrenceRule](http://help.syncfusion.com/windowsforms/schedule/time-interval#recurrence-rule)
 
 In order to use the recurring appointments data provider of the Schedule control, the IRecurringScheduleAppointment interface should be implemented. Refer to the following code to achieve this.
 

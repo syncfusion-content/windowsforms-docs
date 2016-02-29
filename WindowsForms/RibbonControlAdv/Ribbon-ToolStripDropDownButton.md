@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-ToolStripDropDownButton | WindowsForms | Syncfusion
+title: Ribbon-ToolStripDropDownButton | Windows Forms | Syncfusion
 description:  ribbon toolstripdropdownbutton
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

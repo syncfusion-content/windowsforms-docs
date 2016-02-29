@@ -1,8 +1,8 @@
 ---
 layout: post
-title: FolderBrowserCallback Event | WindowsForms | Syncfusion
+title: FolderBrowserCallback Event | Windows Forms | Syncfusion
 description: folderbrowsercallback event
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Create a Connection Programmatically | Diagram | WindowsForms | Syncfusion
+title: How To Create a Connection Programmatically | Diagram | Windows Forms | Syncfusion
 description: how to create a connection programmatically
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button-Settings | WindowsForms | Syncfusion
+title: Button-Settings | Windows Forms | Syncfusion
 description: button settings
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
 ---

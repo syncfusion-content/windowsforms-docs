@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What are the events fired when the group is collapsing or collapsed | WindowsForms | Syncfusion
+title: What are the events fired when the group is collapsing or collapsed | Windows Forms | Syncfusion
 description: what are the events fired when the group is collapsing or collapsed
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

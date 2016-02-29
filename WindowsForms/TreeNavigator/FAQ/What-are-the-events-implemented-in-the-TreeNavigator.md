@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-implemented-in-the-TreeNavigator | WindowsForms | Syncfusion
+title: What-are-the-events-implemented-in-the-TreeNavigator | Windows Forms | Syncfusion
 description: what are the events implemented in the treenavigator?
-platform: WindowsForms
+platform: windowsforms
 control: TreeNavigator
 documentation: ug
 ---

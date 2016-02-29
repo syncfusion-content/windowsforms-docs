@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Precision | WindowsForms | Syncfusion
+title: Precision | Windows Forms | Syncfusion
 description: precision
-platform: WindowsForms
+platform: windowsforms
 control: Rating  
 documentation: ug
 ---
