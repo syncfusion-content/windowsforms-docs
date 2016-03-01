@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Runtime-Features | WindowsForms | Syncfusion
+title: Runtime-Features | Windows Forms | Syncfusion
 description: runtime features
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---

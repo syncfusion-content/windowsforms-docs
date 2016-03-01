@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-ItemBackColor-for-individual-TreeMenuIt | WindowsForms | Syncfusion
+title: How-to-set-ItemBackColor-for-individual-TreeMenuIt | Windows Forms | Syncfusion
 description: how to set itembackcolor for individual treemenuitem?
-platform: WindowsForms
+platform: windowsforms
 control: TreeNavigator
 documentation: ug
 ---

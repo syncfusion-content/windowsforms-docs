@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Run Time Interactive Features | WindowsForms | Syncfusion
+title: Run Time Interactive Features | Windows Forms | Syncfusion
 description: run time interactive features
-platform: WindowsForms
+platform: windowsforms
 control: Menus Package 
 documentation: ug
 ---

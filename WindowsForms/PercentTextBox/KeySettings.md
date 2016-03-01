@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Key Settings | WindowsForms | Syncfusion
+title: Key Settings | Windows Forms | Syncfusion
 description: Key Settings
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

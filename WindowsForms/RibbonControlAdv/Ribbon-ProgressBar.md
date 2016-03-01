@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-ProgressBar| WindowsForms | Syncfusion
+title: Ribbon-ProgressBar| Windows Forms | Syncfusion
 description:  ribbon progressbar
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

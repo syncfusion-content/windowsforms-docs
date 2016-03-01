@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to customize the Splitter color in the GroupBar | WindowsForms | Syncfusion
+title: How to customize the Splitter color in the GroupBar | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to change the back color and text color of the selected item | WindowsForms | Syncfusion
+title: How to change the back color and text color of the selected item | Windows Forms | Syncfusion
 description: How to change the back color and text color of the selected item
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

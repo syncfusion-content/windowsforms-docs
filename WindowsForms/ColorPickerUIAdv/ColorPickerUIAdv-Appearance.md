@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ColorPickerUIAdv Appearance | WindowsForms | Syncfusion
+title: ColorPickerUIAdv Appearance | Windows Forms | Syncfusion
 description: colorpickeruiadv appearance
-platform: WindowsForms
+platform: windowsforms
 control: ColorPickerUIAdv 
 documentation: ug
 ---

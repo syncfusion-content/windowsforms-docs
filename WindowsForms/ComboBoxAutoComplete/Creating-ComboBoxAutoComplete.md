@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-ComboBoxAutoComplete | WindowsForms | Syncfusion
+title: Creating-ComboBoxAutoComplete | Windows Forms | Syncfusion
 description: Creating-ComboBoxAutoComplete
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAutoComplete
 documentation: ug
 ---

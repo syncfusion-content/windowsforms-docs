@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Adding-Multiple-Columns-and-SubItems | WindowsForms | Syncfusion
+title: Adding-Multiple-Columns-and-SubItems | Windows Forms | Syncfusion
 description: adding multiple columns and subitems
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---

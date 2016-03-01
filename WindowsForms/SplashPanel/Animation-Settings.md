@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Animation-Settings | WindowsForms | Syncfusion
+title: Animation-Settings | Windows Forms | Syncfusion
 description: animation settings
-platform: WindowsForms
+platform: windowsforms
 control: SplashPanel
 documentation: ug
 ---

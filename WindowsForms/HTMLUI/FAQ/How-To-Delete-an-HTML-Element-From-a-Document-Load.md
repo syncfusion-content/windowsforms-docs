@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Delete-an-HTML-Element-From-a-Document-Load | WindowsForms | Syncfusion
+title: How-To-Delete-an-HTML-Element-From-a-Document-Load | Windows Forms | Syncfusion
 description: how to delete an html element from a document loaded into the htmlui control at run-time?
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

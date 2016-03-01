@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to access all the groups | WindowsForms | Syncfusion
+title: How to access all the groups | Windows Forms | Syncfusion
 description: how to access all the groups
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

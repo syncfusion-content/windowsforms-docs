@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-ComboDropDown | WindowsForms | Syncfusion
+title: Creating-ComboDropDown | Windows Forms | Syncfusion
 description: creating combodropdown
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

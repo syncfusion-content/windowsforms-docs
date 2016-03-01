@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Label| WindowsForms | Syncfusion
+title: Ribbon-Label| Windows Forms | Syncfusion
 description:  ribbon label
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

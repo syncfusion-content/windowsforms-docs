@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Groups | WindowsForms | Syncfusion
+title: Groups | Windows Forms | Syncfusion
 description: groups
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

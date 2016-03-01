@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-ComboBoxEx| WindowsForms | Syncfusion
+title: Ribbon-ComboBoxEx| Windows Forms | Syncfusion
 description:  ribbon comboboxex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -48,5 +48,5 @@ Me.toolStripEx2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tool
 
 {% endtabs %}
 
- N> We can set banner text for the ComboBoxEx control. Refer [BannerTextProvider Component](http://docs.syncfusion.com/windowsforms/bannertextprovider/overview#overview)  topic for more details.
+ N> We can set banner text for the ComboBoxEx control. Refer [BannerTextProvider Component](http://help.syncfusion.com/windowsforms/bannertextprovider/overview#overview)  topic for more details.
 

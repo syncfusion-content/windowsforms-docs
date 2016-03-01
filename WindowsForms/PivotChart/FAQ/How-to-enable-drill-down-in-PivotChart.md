@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to enable drill down in PivotChart | WindowsForms | Syncfusion
+title: How to enable drill down in PivotChart | Windows Forms | Syncfusion
 description: How to enable drill down in PivotChart
-platform: WindowsForms
+platform: windowsforms
 control: PivotChart
 documentation: ug
 ---

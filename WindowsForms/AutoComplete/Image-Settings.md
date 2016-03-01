@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Image Settings | WindowsForms | Syncfusion
+title: Image Settings | Windows Forms | Syncfusion
 description: Image Settings
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---
@@ -100,6 +100,6 @@ While using an external datasource, the Columns property can be initially refres
 
 {% seealso %}
  
-[Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns)
+[Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns)
 
  {% endseealso %}

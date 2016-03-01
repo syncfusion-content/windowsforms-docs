@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Caption-Bar | WindowsForms | Syncfusion
+title: Caption-Bar | Windows Forms | Syncfusion
 description: caption bar
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---

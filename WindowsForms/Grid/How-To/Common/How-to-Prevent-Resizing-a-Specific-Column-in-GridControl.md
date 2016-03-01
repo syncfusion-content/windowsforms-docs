@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Prevent-Resizing-a-Specific-Column-in-GridC | WindowsForms | Syncfusion
+title: How-to-Prevent-Resizing-a-Specific-Column-in-GridC | Windows Forms | Syncfusion
 description: how to prevent resizing a specific column in gridcontrol
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

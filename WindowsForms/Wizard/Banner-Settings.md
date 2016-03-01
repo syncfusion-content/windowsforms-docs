@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Banner-Settings | WindowsForms | Syncfusion
+title: Banner-Settings | Windows Forms | Syncfusion
 description: banner settings
-platform: WindowsForms
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Clear a Grouping | WindowsForms | Syncfusion
+title: How to Clear a Grouping | Windows Forms | Syncfusion
 description: How to Clear a Grouping
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

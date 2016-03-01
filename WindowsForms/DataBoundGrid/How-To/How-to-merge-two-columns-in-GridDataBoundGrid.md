@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-merge-two-columns-in-GridDataBoundGrid | WindowsForms | Syncfusion
+title: How-to-merge-two-columns-in-GridDataBoundGrid | Windows Forms | Syncfusion
 description: how to merge two columns in griddataboundgrid
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

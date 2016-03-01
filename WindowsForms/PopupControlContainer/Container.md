@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Container Control | WindowsForms | Syncfusion
+title: Container Control | Windows Forms | Syncfusion
 description: Container Control
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabControlAdv-Events | WindowsForms | Syncfusion
+title: TabControlAdv-Events | Windows Forms | Syncfusion
 description: tabcontroladv events
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---

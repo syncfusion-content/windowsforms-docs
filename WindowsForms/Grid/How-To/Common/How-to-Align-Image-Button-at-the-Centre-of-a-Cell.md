@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Align-Image-Button-at-the-Centre-of-a-Cell | WindowsForms | Syncfusion
+title: How-to-Align-Image-Button-at-the-Centre-of-a-Cell | Windows Forms | Syncfusion
 description: how to align image button at the centre of a cell 
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

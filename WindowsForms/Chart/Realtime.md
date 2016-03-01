@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Realtime | WindowsForms | Syncfusion
+title: Realtime | Windows Forms | Syncfusion
 description: realtime
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---

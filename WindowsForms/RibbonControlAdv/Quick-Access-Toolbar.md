@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Quick-Access-Toolbar | WindowsForms | Syncfusion
+title: Quick-Access-Toolbar | Windows Forms | Syncfusion
 description:  quick access toolbar
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-remove-ToolStripTabItems-from-the-RibbonCon | WindowsForms | Syncfusion
+title: How-to-remove-ToolStripTabItems-from-the-RibbonCon | Windows Forms | Syncfusion
 description: how to remove toolstriptabitems from the ribboncontroladv programmatically?
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

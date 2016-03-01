@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Avoid-RangeStyles-being-Written-out-to-Code | WindowsForms | Syncfusion
+title: How-to-Avoid-RangeStyles-being-Written-out-to-Code | Windows Forms | Syncfusion
 description: how to avoid rangestyles being written out to code in a derived gridcontrol
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scrollbar-customization | WindowsForms | Syncfusion
+title: Scrollbar-customization | Windows Forms | Syncfusion
 description: scrollbar customization
-platform: WindowsForms
+platform: windowsforms
 control: Splitter  
 documentation: ug
 ---

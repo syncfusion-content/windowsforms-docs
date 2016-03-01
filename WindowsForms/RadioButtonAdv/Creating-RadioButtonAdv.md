@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-RadioButtonAdv | WindowsForms | Syncfusion
+title: Creating-RadioButtonAdv | Windows Forms | Syncfusion
 description: creating radiobuttonadv
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

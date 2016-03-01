@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Force-Calculations-To-Be-Processed-After-They-have-been-Suspended | WindowsForms | Syncfusion
+title: How-To-Force-Calculations-To-Be-Processed-After-They-have-been-Suspended | Windows Forms | Syncfusion
 description: how to force calculations to be processed after they have been suspended?
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

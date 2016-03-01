@@ -1,8 +1,8 @@
 ---
 layout: post
-title: CardLayout | WindowsForms | Syncfusion
+title: CardLayout | Windows Forms | Syncfusion
 description: cardlayout
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

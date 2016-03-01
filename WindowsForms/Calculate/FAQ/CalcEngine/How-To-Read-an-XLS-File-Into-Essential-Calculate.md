@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Read-an-XLS-File-Into-Essential-Calculate | WindowsForms | Syncfusion
+title: How-To-Read-an-XLS-File-Into-Essential-Calculate | Windows Forms | Syncfusion
 description: how to read an xls file into essential calculate?
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---
@@ -11,5 +11,5 @@ documentation: ug
 
 To get Essential Calculate to work with an XLS file requires Essential XlsIO. Essential ExcelRW is a library that exposes Excel-Like Automation APIs without any dependence upon Excel. It has the ability to Read / Write XLS files.
 
-For details, see [Working with an Excel SpreadSheet](http://docs.syncfusion.com/windowsforms/calculate/working-with-an-excel-spreadsheet).
+For details, see [Working with an Excel SpreadSheet](http://help.syncfusion.com/windowsforms/calculate/working-with-an-excel-spreadsheet).
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Align-Radio-Buttons | WindowsForms | Syncfusion
+title: How-to-Align-Radio-Buttons | Windows Forms | Syncfusion
 description: how to align radio buttons
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
+title: Appearance-Settings | Windows Forms | Syncfusion
 description: appearance settings
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---

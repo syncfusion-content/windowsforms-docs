@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabBarSplitterControl in GridControl for Syncfusion Essential WindowsForms
+title: TabBarSplitterControl in GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to integrate TabBarSplitterControl in GridControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

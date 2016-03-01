@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-fire-click-event-when-a-child-node-is-selected | WindowsForms | Syncfusion
+title: How-to-fire-click-event-when-a-child-node-is-selected | Windows Forms | Syncfusion
 description: how to fire click event, when a child node is selected
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

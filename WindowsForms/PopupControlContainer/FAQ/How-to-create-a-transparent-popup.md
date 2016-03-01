@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to create a transparent popup | WindowsForms | Syncfusion
+title: How to create a transparent popup | Windows Forms | Syncfusion
 description: How to create a transparent popup
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

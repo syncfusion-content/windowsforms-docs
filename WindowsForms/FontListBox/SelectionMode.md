@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Selection Mode | WindowsForms | Syncfusion
+title: Selection Mode | Windows Forms | Syncfusion
 description: Selection Mode
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

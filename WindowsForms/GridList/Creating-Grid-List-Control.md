@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-Grid-List-Control | WindowsForms | Syncfusion
+title: Creating-Grid-List-Control | Windows Forms | Syncfusion
 description: creating grid list control
-platform: WindowsForms
+platform: windowsforms
 control: GridList
 documentation: ug
 ---

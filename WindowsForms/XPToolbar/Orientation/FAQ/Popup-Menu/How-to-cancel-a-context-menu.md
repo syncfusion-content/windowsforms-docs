@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-cancel-a-context-menu | WindowsForms | Syncfusion
+title: How-to-cancel-a-context-menu | Windows Forms | Syncfusion
 description: how to cancel a context menu
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

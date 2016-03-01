@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-define-a-summary-row-in-the-grid | WindowsForms | Syncfusion
+title: How-to-define-a-summary-row-in-the-grid | Windows Forms | Syncfusion
 description: how to define a summary row in the grid
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

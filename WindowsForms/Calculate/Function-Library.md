@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Function-Library | WindowsForms | Syncfusion
+title: Function-Library | Windows Forms | Syncfusion
 description: function library
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

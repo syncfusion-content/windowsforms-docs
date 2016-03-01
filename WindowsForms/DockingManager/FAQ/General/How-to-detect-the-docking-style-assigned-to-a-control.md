@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to detect the docking style assigned to a control | WindowsForms | Syncfusion
+title: How to detect the docking style assigned to a control | Windows Forms | Syncfusion
 description: How to detect the docking style assigned to a control
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

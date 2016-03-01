@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to derive user defined groups | WindowsForms | Syncfusion
+title: How to derive user defined groups | Windows Forms | Syncfusion
 description: how to derive user defined groups
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

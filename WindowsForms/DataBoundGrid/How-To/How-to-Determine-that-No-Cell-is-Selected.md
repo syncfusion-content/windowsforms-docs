@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Determine-that-No-Cell-is-Selected | WindowsForms | Syncfusion
+title: How-to-Determine-that-No-Cell-is-Selected | Windows Forms | Syncfusion
 description: how to determine that no cell is selected
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

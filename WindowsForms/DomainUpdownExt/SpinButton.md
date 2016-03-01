@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SpinButton | WindowsForms | Syncfusion
+title: SpinButton | Windows Forms | Syncfusion
 description: spinbutton
-platform: WindowsForms
+platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---

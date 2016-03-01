@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Subtotal-Hiding | WindowsForms | Syncfusion
+title: Subtotal-Hiding | Windows Forms | Syncfusion
 description: subtotal hiding
-platform: WindowsForms
+platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to display empty string in editor controls when databound value is null | WindowsForms | Syncfusion
+title: How to display empty string in editor controls when databound value is null | Windows Forms | Syncfusion
 description: how to display empty string in editor controls when databound value is null
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

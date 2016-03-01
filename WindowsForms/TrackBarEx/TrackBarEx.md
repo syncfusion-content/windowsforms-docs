@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TrackBarEx | WindowsForms | Syncfusion
+title: TrackBarEx | Windows Forms | Syncfusion
 description: trackbarex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

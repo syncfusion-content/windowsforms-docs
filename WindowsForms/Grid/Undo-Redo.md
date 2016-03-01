@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Undo/Redo operation of GridControl for syncfusion Essential WindowsForms
+title: Undo/Redo operation of GridControl for syncfusion Essential Windows Forms
 description: This section explains on how to make the Undo/Redo operations in GridControl
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 

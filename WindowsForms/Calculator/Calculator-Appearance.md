@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calculator-Appearance | WindowsForms | Syncfusion
+title: Calculator-Appearance | Windows Forms | Syncfusion
 description: calculator appearance
-platform: WindowsForms
+platform: windowsforms
 control: Calculator
 documentation: ug
 ---

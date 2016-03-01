@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Path Support | WindowsForms | Syncfusion
+title: Path Support | Windows Forms | Syncfusion
 description: Path Support
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

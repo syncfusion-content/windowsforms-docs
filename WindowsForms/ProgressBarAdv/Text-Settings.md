@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Settings | WindowsForms | Syncfusion
+title: Text-Settings | Windows Forms | Syncfusion
 description: text settings
-platform: WindowsForms
+platform: windowsforms
 control: ProgressBarAdv
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Zooming support in GridControl for Syncfusion Essential WindowsForms
+title: Zooming support in GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to add the zooming support in GridControl
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 

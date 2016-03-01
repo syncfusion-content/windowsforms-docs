@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Customization| WindowsForms | Syncfusion
+title: Ribbon-Customization| Windows Forms | Syncfusion
 description:  ribbon customization
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

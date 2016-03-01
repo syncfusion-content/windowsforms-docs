@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event-handling | WindowsForms | Syncfusion
+title: Event-handling | Windows Forms | Syncfusion
 description: event handling
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

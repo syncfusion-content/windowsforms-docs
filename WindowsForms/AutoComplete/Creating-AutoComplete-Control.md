@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Create an AutoComplete control | WindowsForms | Syncfusion
+title: Create an AutoComplete control | Windows Forms | Syncfusion
 description: Create an AutoComplete control
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---

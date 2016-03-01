@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: Schedule
 documentation: ug
 ---
@@ -175,11 +175,11 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/schedule>' | markdownify }} (Navigate to the Schedule for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+Online{{ '<http://help.syncfusion.com/windowsforms/schedule>' | markdownify }} (Navigate to the Schedule for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Schedule_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://help.syncfusion.com/windowsforms>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Schedule_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

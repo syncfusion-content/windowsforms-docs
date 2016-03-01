@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MDI-Merging | WindowsForms | Syncfusion
+title: MDI-Merging | Windows Forms | Syncfusion
 description: mdi merging
-platform: WindowsForms
+platform: windowsforms
 control: Control Name undefined
 documentation: ug
 ---

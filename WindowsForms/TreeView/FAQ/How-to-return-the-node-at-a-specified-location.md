@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-return-the-node-at-a-specified-location | WindowsForms | Syncfusion
+title: How-to-return-the-node-at-a-specified-location | Windows Forms | Syncfusion
 description: how to return the node at a specified location
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

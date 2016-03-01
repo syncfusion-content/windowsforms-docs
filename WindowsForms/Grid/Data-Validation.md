@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Validation in GridControl for Syncfusion Essential WindowsForms
+title: Data Validation in GridControl for Syncfusion Essential Windows Forms
 description: This section explains on how to add data validation using the default error provider in GridControl
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

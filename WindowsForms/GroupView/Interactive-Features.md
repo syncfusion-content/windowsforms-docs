@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive Features | WindowsForms | Syncfusion
+title: Interactive Features | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

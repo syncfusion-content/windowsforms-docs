@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grouping | WindowsForms | Syncfusion
+title: Grouping | Windows Forms | Syncfusion
 description: grouping
-platform: WindowsForms
+platform: windowsforms
 control: PivotChart
 documentation: ug
 ---

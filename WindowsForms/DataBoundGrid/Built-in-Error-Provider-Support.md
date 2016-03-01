@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Built-in-Error-Provider-Support | WindowsForms | Syncfusion
+title: Built-in-Error-Provider-Support | Windows Forms | Syncfusion
 description: built-in error provider support
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

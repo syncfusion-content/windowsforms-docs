@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Style | WindowsForms | Syncfusion
+title: Visual Style | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

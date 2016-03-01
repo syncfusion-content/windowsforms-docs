@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Office2010-Form-Color-Scheme-Settings | WindowsForms | Syncfusion
+title: Office2010-Form-Color-Scheme-Settings | Windows Forms | Syncfusion
 description: office2010 form color scheme settings
-platform: WindowsForms
+platform: windowsforms
 control: Office2010 Form
 documentation: ug
 ---

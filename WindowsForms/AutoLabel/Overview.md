@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: Overview
-platform: WindowsForms
+platform: windowsforms
 control: AutoLabel
 documentation: ug
 ---
@@ -20,6 +20,6 @@ The FlowLayout layout manager always treats the AutoLabel-labeled control pair a
 
  {% seealso %}
  
- [Labeling a Control](http://docs.syncfusion.com/windowsforms/autolabel/labeling-a-control)
+ [Labeling a Control](http://help.syncfusion.com/windowsforms/autolabel/labeling-a-control)
  
   {% endseealso %}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Use-a-Combo-Box-in-a-Cell | WindowsForms | Syncfusion
+title: How-to-Use-a-Combo-Box-in-a-Cell | Windows Forms | Syncfusion
 description: how to use a combo box in a cell
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---
@@ -16,7 +16,7 @@ The control type of a cell is part of the cell style and is determined by GridSt
 * Create a StringCollection object holding your choices and then set this StringCollection in GridStyleInfo.ChoiceList property for the cell. 
 * Have an IList object that holds object entries that have public properties (such as a DataTable object with its columns serving as public properties).
 
-In the second case, use GridStyleInfo.DataSource, DisplayMember and ValueMember properties to set datasource for the drop list. In addition to setting the CellType, ChoiceList, datasource, DisplayMember and ValueMember, the DropDownStyle property of [GridStyleInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview)controls the editing behavior of the combo box cell. You can also use GridStyleInfo.ShowButton property to control when the combo box button is visible. 
+In the second case, use GridStyleInfo.DataSource, DisplayMember and ValueMember properties to set datasource for the drop list. In addition to setting the CellType, ChoiceList, datasource, DisplayMember and ValueMember, the DropDownStyle property of [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview)controls the editing behavior of the combo box cell. You can also use GridStyleInfo.ShowButton property to control when the combo box button is visible. 
 
 ### Example
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization Settings | WindowsForms | Syncfusion
+title: Customization Settings | Windows Forms | Syncfusion
 description: customization settings
-platform: WindowsForms
+platform: windowsforms
 control: ColorPickerButton 
 documentation: ug
 ---

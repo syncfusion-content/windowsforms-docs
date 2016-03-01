@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboBoxBase-Feature | WindowsForms | Syncfusion
+title: ComboBoxBase-Feature | Windows Forms | Syncfusion
 description: comboboxbase feature
-platform: WindowsForms
+platform: windowsforms
 control: GridList
 documentation: ug
 ---

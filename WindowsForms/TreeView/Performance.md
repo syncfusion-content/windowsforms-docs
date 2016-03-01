@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Performance | WindowsForms | Syncfusion
+title: Performance | Windows Forms | Syncfusion
 description: performance 
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

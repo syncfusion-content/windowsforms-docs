@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPToolbar-Properties | WindowsForms | Syncfusion
+title: XPToolbar-Properties | Windows Forms | Syncfusion
 description: xptoolbar properties
-platform: WindowsForms
+platform: windowsforms
 control: XPToolbar
 documentation: ug
 ---

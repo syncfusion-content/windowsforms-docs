@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DataSource | WindowsForms | Syncfusion
+title: DataSource | Windows Forms | Syncfusion
 description: DataSource
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---

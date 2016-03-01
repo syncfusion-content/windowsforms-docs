@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization | WindowsForms | Syncfusion
+title: Serialization | Windows Forms | Syncfusion
 description: Serialization
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

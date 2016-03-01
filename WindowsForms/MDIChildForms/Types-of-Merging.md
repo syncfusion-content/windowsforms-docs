@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Types-of-Merging | WindowsForms | Syncfusion
+title: Types-of-Merging | Windows Forms | Syncfusion
 description: types of merging
-platform: WindowsForms
+platform: windowsforms
 control: Control Name undefined
 documentation: ug
 ---

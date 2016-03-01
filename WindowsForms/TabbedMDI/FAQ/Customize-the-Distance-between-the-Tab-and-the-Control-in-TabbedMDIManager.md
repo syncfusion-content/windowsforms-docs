@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customize-the-Distance-between-the-Tab-and-the-Control-in-TabbedMDIManager | WindowsForms | Syncfusion
+title: Customize-the-Distance-between-the-Tab-and-the-Control-in-TabbedMDIManager | Windows Forms | Syncfusion
 description: customize the distance between the tab and the control in tabbedmdimanager
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---

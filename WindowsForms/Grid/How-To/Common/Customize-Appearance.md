@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customize-Appearance | WindowsForms | Syncfusion
+title: Customize-Appearance | Windows Forms | Syncfusion
 description: customize appearance 
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

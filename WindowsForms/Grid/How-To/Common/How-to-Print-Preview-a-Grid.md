@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Print-Preview-a-Grid | WindowsForms | Syncfusion
+title: How-to-Print-Preview-a-Grid | Windows Forms | Syncfusion
 description: how to print preview a grid
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---
