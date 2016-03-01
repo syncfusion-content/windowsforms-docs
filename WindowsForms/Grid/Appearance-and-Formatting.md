@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Appearance and Formatting
-GridControl provides lot of properties and events for customizing the appearance of the grid. This section explains the appearance and formatting available in GridControl. GridControl provides different kinds visual styles, which changes the appearance of the whole grid. To know more about the Visual Styles check the link over [here](http://help.syncfusion.com/windowsforms/grid/enhanced-visual-styles-for-syncfusion-windows-grids).
+GridControl provides lot of properties and events for customizing the appearance of the grid. This section explains the appearance and formatting available in GridControl. GridControl provides different kinds visual styles, which changes the appearance of the whole grid. To know more about the Visual Styles check the link over [here](http://help.syncfusion.com/windowsforms/grid/visual-styles).
 
 ## Grid Control Designer
 GridControl has an excellent user friendly design-time support. A GridControl’s edit designer is added to the grid to ease the process of designing GridControl on a cell level. Using the editor, Grid can be modified, saved, and loaded to XML formatted files or to SOAP formatted templates. 
@@ -381,36 +381,36 @@ formatDialog.ShowDialog()
 
 N> The grid cells which needs to be formatted needs to be selected before actiavting this dialog.
 
-### Formatting Options
+## Formatting Options
 `GridFormatCellDialog` contains four kinds of formatting option in it.
 
-1. [Font Tab](#_Font_Tab)
-2. [Number Tab](#_Number_Tab)
-3. [Background Tab](#_Background_Tab)
-4. [Alignment Tab](#_Alignment_Tab)
+1. [Font Tab](#font-tab)
+2. [Number Tab](#number-tab)
+3. [Background Tab](#background-tab)
+4. [Alignment Tab](#alignment-tab)
 
-#### Font Tab
+### Font Tab
 This provides options to set the font, font style, font size, font effects, and font color for the desired grid cells.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img18.jpeg)
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img19.jpeg)
 
-#### Number Tab
+### Number Tab
 This allows you to specify text format for grid cells. The possible options are Number, Currency, Percentage, Date, Time, Scientific and Text.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img20.jpeg)
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img21.jpeg)
 
-#### Background Tab
+### Background Tab
 This allows you to set background color for grid cells. You can set gradient shades and pattern styles as well.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img22.jpeg)
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img23.jpeg)
 
-#### Alignment Tab
+### Alignment Tab
 This provides various cell alignment options such as Horizontal Alignment, Vertical Alignment, Merge Cells, Wrap Text, and so on.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img24.jpeg)
