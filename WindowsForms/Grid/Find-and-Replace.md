@@ -82,7 +82,7 @@ Dim frEvents As New GridFindReplaceEventArgs(Me.txtSearchText.Text, "", options,
 {% endtabs %}
 
 ### Find and Replace using Keyboard Shortcut
-The Find and Replace dialog can be shown in GridControl as like Excel while pressing <kbd>CTRL</kbd> + <kbd>F</kbd>; shortcut key.  This can be done by using the [CurrentCellKeyDown](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellKeyDown_EV.html) event as like below example,
+The Find and Replace dialog can be shown in GridControl as like Excel while pressing <kbd>CTRL</kbd> + <kbd>F</kbd> shortcut key.  This can be done by using the [CurrentCellKeyDown](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellKeyDown_EV.html) event as like below example,
 
 {% tabs %}
 {% highlight c# %}
@@ -109,15 +109,15 @@ void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
 Private Me.gridControl1.CurrentCellKeyDown += New KeyEventHandler(AddressOf gridControl1_CurrentCellKeyDown)
 
 Private Sub gridControl1_CurrentCellKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-	 If e.Control AndAlso e.KeyCode = Keys.F Then
-		 ' Setting the Dialog sink
-		 Dim findReplaceSink As New GridFindReplaceDialogSink(Me.gridControl1)
-		' Setting the Dialog
-		Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance
-		' Setting the sink to dialog
-		 findReplaceDialog.ActiveSink = findReplaceSink
-		 findReplaceDialog.ShowDialog()
-	 End If
+     If e.Control AndAlso e.KeyCode = Keys.F Then
+         ' Setting the Dialog sink
+         Dim findReplaceSink As New GridFindReplaceDialogSink(Me.gridControl1)
+        ' Setting the Dialog
+        Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance
+        ' Setting the sink to dialog
+         findReplaceDialog.ActiveSink = findReplaceSink
+         findReplaceDialog.ShowDialog()
+     End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -259,8 +259,8 @@ frDialog.ReplaceAll(frEvents)
 
 ![](Find-and-Replace_images/Find-and-Replace_img3.jpeg)
 
-For more details about the programmatically adding a `Find and Replace`, refer the below dashboard sample,
-&lt;Install Location&gt;Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Editing\Find-Replace Demo
+For more details about the programmatically adding a `Find and Replace`, refer the below dashboard sample,<br/>
+**&lt;Install Location&gt;Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Editing\Find-Replace Demo**
 
 ## Highlight Search Text 
 The search text can be highlighted by using the [GridHighlightSearchText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText.html) class. It will highlight the search text with the default color (yellow). The highlighting color can be changed by using[HighlightColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText~HighlightColor.html) property.
