@@ -209,10 +209,10 @@ Multiple grids can be printed across various pages using helper class [MultipleG
 
 The [GridPrintOption](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~GridPrintOption.html) property is used to specify the multiple grids printing options. 
 
-**MultiGridPrinting** - Customizes the way printing support is provided for grids. It enables multiple grids to be printed in a single print.
-**PrintGridInNewPage** - Multiple grids can be printed continuously. However, the consecutive grid’s starting page will begin on a new page.
-**DefaultGridPrint** - Multiple grids will be printed without considering column breaks.
-**ScaleColumnsToFit** - Multiple grid columns will be scaled to fit the printed page.
+**MultiGridPrinting** - Customizes the way printing support is provided for grids. It enables multiple grids to be printed in a single print.<br/>
+**PrintGridInNewPage** - Multiple grids can be printed continuously. However, the consecutive grid’s starting page will begin on a new page.<br/>
+**DefaultGridPrint** - Multiple grids will be printed without considering column breaks.<br/>
+**ScaleColumnsToFit** - Multiple grid columns will be scaled to fit the printed page.<br/>
 
 {% tabs %}
 {% highlight c# %}

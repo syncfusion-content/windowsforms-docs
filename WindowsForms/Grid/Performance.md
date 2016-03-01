@@ -35,7 +35,7 @@ for (int i = 0; i < this.numArrayRows; ++i)
         this.gridControl1[i + 1, j + 1].CellValue = this.intArray[i, j];
 {% endhighlight %}
 {% highlight vb %}
-For i As Integer = 0 To Me.numArrayRows – 1
+For i As Integer = 0 To Me.numArrayRows - 1
 For j As Integer = 0 To Me.numArrayCols - 1
 Me.gridControl1(i + 1, j + 1).CellValue = Me.intArray(i, j)
 Next j
@@ -192,22 +192,22 @@ Public Class DerivedGridControl
                 Inherits GridControl
 'Gets the Scroll Position for the pixel scrolling of a row.
 Public Overrides Function RowIndexToVScrollPixelPos(ByVal rowIndex As Integer) As Integer
-        'Takes separate height for the column headers into account.
-        rowIndex = Math.Min(rowIndex, Model.RowCount)
-        If rowIndex > 0 Then
-                        Return (rowIndex - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
-        Else
-                        Return Model.RowHeights(0)
-        End If
+    'Takes separate height for the column headers into account.
+    rowIndex = Math.Min(rowIndex, Model.RowCount)
+    If rowIndex > 0 Then
+        Return (rowIndex - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
+    Else
+        Return Model.RowHeights(0)
+    End If
 End Function
 'Gets the value for the vertical pixel position.
 Public Overrides Function GetVScrollPixelHeight() As Integer
-        'Checks the number of rows in the Grid.
-        If Model.RowCount = 0 Then
-                        Return 0
-        End If
-        'Returns the vertical pixel Position.
-        Return (Model.RowCount - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
+    'Checks the number of rows in the Grid.
+    If Model.RowCount = 0 Then
+        Return 0
+    End If
+    'Returns the vertical pixel Position.
+    Return (Model.RowCount - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
 End Function
 'Gets the row and pixel Delta to the scroll position of the row for the specified scroll position.
 Public Overrides Sub VScrollPixelPosToRowIndex(ByVal pixelPos As Integer, <System.Runtime.InteropServices.Out()> ByRef rowIndex As Integer, <System.Runtime.InteropServices.Out()> ByRef pixelDelta As Integer)
@@ -277,7 +277,9 @@ excelConverter.ImportBorders = false;
 excelConverter.ImportStyles = false;
 {% endhighlight %}
 {% highlight vb %}
-Dim excelConverter As GridExcelConverterControl = New GridExcelConverterControl<br/>excelConverter.ImportBorders = False<br/>excelConverter.ImportStyles = False<br/></td>
+Dim excelConverter As New GridExcelConverterControl()
+excelConverter.ImportBorders = False
+excelConverter.ImportStyles = False
 {% endhighlight %}
 {% endtabs %}
 
