@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Supported-Controls-and-Methods | WindowsForms | Syncfusion
+title: Supported-Controls-and-Methods | Windows Forms | Syncfusion
 description: supported controls and methods
-platform: WindowsForms
+platform: windowsforms
 control: QTP
 documentation: ug
 ---

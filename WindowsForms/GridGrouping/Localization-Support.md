@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization in GridGroupingControl for Syncfusion Essential WindowsForms
+title: Localization in GridGroupingControl for Syncfusion Essential Windows Forms
 description: This section explains on how to localize the GridGroupingControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

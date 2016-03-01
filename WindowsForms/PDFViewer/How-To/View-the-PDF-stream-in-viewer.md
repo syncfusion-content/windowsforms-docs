@@ -1,8 +1,8 @@
 ---
 layout: post
-title: View-the-PDF-stream-in-viewer | WindowsForms | Syncfusion
+title: View-the-PDF-stream-in-viewer | Windows Forms | Syncfusion
 description: view the pdf stream in viewer?
-platform: WindowsForms
+platform: windowsforms
 control: PDF Viewer
 documentation: ug
 ---

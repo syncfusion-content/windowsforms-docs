@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabPrimitives | WindowsForms | Syncfusion
+title: TabPrimitives | Windows Forms | Syncfusion
 description: tabprimitives
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---

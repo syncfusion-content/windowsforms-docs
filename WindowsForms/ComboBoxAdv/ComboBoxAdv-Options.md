@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboBoxAdv-Concepts-and-features | WindowsForms | Syncfusion
+title: ComboBoxAdv-Concepts-and-features | Windows Forms | Syncfusion
 description: comboboxadv concepts and features
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
@@ -302,5 +302,5 @@ Me.comboBoxAdv1.Sorted = True
 
 N> Data for the dropdown can be set using Items property. 
 
-Refer [Data Settings](/WindowsForms/ComboBoxAdv/Data-Settings) for details. To know about different dropdown styles available for the control, see [ReadOnly Settings](#readonly-settings) section in TextBox topic.
+Refer [Data Settings](/windowsforms/ComboBoxAdv/Data-Settings) for details. To know about different dropdown styles available for the control, see [ReadOnly Settings](#readonly-settings) section in TextBox topic.
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Display-TabStrip-when-there-are-no-TabPages | WindowsForms | Syncfusion
+title: How-to-Display-TabStrip-when-there-are-no-TabPages | Windows Forms | Syncfusion
 description: how to display tabstrip when there are no tabpages
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

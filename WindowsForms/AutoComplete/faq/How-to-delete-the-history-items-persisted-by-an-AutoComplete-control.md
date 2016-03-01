@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to delete the history items persisted by AutoComplete | WindowsForms | Syncfusion
+title: How to delete the history items persisted by AutoComplete | Windows Forms | Syncfusion
 description: How to delete the history items persisted by AutoComplete
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

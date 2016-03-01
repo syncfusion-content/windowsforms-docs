@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---

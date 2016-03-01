@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Add Summary Items | WindowsForms | Syncfusion
+title: How to Add Summary Items | Windows Forms | Syncfusion
 description: How to Add Summary Items
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

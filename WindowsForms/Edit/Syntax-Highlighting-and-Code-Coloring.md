@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Syntax-Highlighting-and-Code-Coloring | WindowsForms | Syncfusion
+title: Syntax-Highlighting-and-Code-Coloring | Windows Forms | Syncfusion
 description: syntax highlighting and code coloring
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---

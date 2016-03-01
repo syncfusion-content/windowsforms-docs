@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started | Windows Forms | Syncfusion
 description: Getting Started
-platform: WindowsForms
+platform: windowsforms
 control: Menus Package 
 documentation: ug
 ---

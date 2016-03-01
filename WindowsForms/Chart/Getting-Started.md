@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---
@@ -68,7 +68,7 @@ Indicates the title for individual axis.
 
 {% seealso %}
 
-[Text](http://docs.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](http://docs.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](http://docs.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](http://docs.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](http://docs.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting), [Appearance and Positioning](http://docs.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting), [Customizing Label Text](http://docs.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](http://docs.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](http://docs.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
+[Text](http://help.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](http://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](http://help.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](http://help.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](http://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting), [Appearance and Positioning](http://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting), [Customizing Label Text](http://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](http://help.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](http://help.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
 
 {% endseealso %}
 
@@ -220,6 +220,6 @@ To create a simple chart control and populate it with simple data, follow the st
    
 {% seealso %}
 
-[Binding a DataSet to a Chart](http://docs.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart), [Tasks Window](http://docs.syncfusion.com/windowsforms/chart/design-time-features#tasks-window)
+[Binding a DataSet to a Chart](http://help.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart), [Tasks Window](http://help.syncfusion.com/windowsforms/chart/design-time-features#tasks-window)
 
 {% endseealso %}

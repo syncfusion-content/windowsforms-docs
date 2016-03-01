@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add new items to the List when enter key is pressed | WindowsForms | Syncfusion
+title: How to add new items to the List when enter key is pressed | Windows Forms | Syncfusion
 description: how to add new items to the list when enter key is pressed
-platform: WindowsForms
+platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---

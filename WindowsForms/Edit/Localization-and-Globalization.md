@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization-and-Globalization | WindowsForms | Syncfusion
+title: Localization-and-Globalization | Windows Forms | Syncfusion
 description: localization and globalization
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---

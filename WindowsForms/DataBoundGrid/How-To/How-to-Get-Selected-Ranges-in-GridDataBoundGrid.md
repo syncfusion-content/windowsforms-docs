@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-Selected-Ranges-in-GridDataBoundGrid | WindowsForms | Syncfusion
+title: How-to-Get-Selected-Ranges-in-GridDataBoundGrid | Windows Forms | Syncfusion
 description: how to get selected ranges in griddataboundgrid
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

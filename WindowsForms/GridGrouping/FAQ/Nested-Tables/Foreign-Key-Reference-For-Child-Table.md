@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Foreign-Key-Reference-For-Child-Table | WindowsForms | Syncfusion
+title: Foreign-Key-Reference-For-Child-Table | Windows Forms | Syncfusion
 description: foreign key reference for child table
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

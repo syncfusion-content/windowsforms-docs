@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-binding | WindowsForms | Syncfusion
+title: Data-binding | Windows Forms | Syncfusion
 description: data binding
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

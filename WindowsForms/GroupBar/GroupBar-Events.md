@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupBar Events | WindowsForms | Syncfusion
+title: GroupBar Events | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

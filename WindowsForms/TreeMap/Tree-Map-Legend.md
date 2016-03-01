@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tree-Map-Legend | WindowsForms | Syncfusion
+title: Tree-Map-Legend | Windows Forms | Syncfusion
 description: tree map legend
-platform: WindowsForms
+platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---

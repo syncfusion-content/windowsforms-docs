@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-ComboBoxBase | WindowsForms | Syncfusion
+title: Creating-ComboBoxBase | Windows Forms | Syncfusion
 description: creating comboboxbase
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxBase
 documentation: ug
 ---
@@ -159,4 +159,4 @@ It can be created through code by following the below steps.
 
 
 
-Refer [Creating ListControl-Derived Controls](/WindowsForms/ComboBoxBase/Creating-ListControl-Derived-Controls) about ListControl-Derived controls in detail.
+Refer [Creating ListControl-Derived Controls](/windowsforms/ComboBoxBase/Creating-ListControl-Derived-Controls) about ListControl-Derived controls in detail.

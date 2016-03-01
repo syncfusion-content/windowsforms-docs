@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment-Settings | WindowsForms | Syncfusion
+title: Alignment-Settings | Windows Forms | Syncfusion
 description: alignment settings
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdv
 documentation: ug
 ---

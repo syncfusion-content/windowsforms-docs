@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-retrieve-a-summary-item | WindowsForms | Syncfusion
+title: How-to-retrieve-a-summary-item | Windows Forms | Syncfusion
 description: how to retrieve a summary item
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

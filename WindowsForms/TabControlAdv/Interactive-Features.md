@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Applying-Themes | WindowsForms | Syncfusion
+title: Applying-Themes | Windows Forms | Syncfusion
 description: interactive features
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---

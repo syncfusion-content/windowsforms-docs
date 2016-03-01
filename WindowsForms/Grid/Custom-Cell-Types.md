@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Custom-Cell-Types | WindowsForms | Syncfusion
+title: Custom-Cell-Types | Windows Forms | Syncfusion
 description: custom cell types
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

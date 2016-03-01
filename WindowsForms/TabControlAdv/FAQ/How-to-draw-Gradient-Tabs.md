@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-draw-Gradient-Tabs | WindowsForms | Syncfusion
+title: How-to-draw-Gradient-Tabs | Windows Forms | Syncfusion
 description: how to draw gradient tabs
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

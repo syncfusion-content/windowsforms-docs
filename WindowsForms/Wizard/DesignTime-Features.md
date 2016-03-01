@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DesignTime-Features | WindowsForms | Syncfusion
+title: DesignTime-Features | Windows Forms | Syncfusion
 description: designtime features
-platform: WindowsForms
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---

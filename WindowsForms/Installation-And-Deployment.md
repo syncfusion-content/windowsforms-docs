@@ -2,7 +2,7 @@
 layout: post
 title: Installation and Deployment process for Syncfusion Essential Studio Windows Forms products
 description: Installation and Deployment
-platform: WindowsForms
+platform: windowsforms
 control: Installation and Deployment
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To | WindowsForms | Syncfusion
+title: How-To | Windows Forms | Syncfusion
 description: how to
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

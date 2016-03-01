@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment-Settings | WindowsForms | Syncfusion
+title: Alignment-Settings | Windows Forms | Syncfusion
 description: alignment settings
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
@@ -87,6 +87,6 @@ A sample which demonstrates the Text and CheckBox Alignment features of CheckBox
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 {% seealso %}
-
-[Text Settings](http://docs.syncfusion.com//WindowsForms/CheckBoxAdv/Text-Settings), [CheckBoxAdv Settings](http://docs.syncfusion.com//WindowsForms/CheckBoxAdv/CheckBoxAdv-Settings)
+* [Text Settings](/windowsforms/CheckBoxAdv/Text-Settings), 
+* [CheckBoxAdv Settings](/windowsforms/CheckBoxAdv/CheckBoxAdv-Settings)
 {% endseealso %}

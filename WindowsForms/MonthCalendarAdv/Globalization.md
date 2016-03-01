@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Globalization | WindowsForms | Syncfusion
+title: Globalization | Windows Forms | Syncfusion
 description: Globalization
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime 
 documentation: ug
 ---

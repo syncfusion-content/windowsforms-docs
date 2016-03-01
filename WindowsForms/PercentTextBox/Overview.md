@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PercentTextBox | WindowsForms | Syncfusion
+title: PercentTextBox | Windows Forms | Syncfusion
 description: PercentTextBox
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

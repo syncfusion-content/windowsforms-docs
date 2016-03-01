@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-SuperToolTip-for-MenuStrip-ToolStrip-or | WindowsForms | Syncfusion
+title: How-to-set-SuperToolTip-for-MenuStrip-ToolStrip-or | Windows Forms | Syncfusion
 description: how to set supertooltip for menustrip, toolstrip or toolstripex and ribbontabcontrol?
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

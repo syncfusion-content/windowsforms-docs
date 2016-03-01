@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Nodes-or-Shapes | WindowsForms | Syncfusion
+title: Nodes-or-Shapes | Windows Forms | Syncfusion
 description: nodes or shapes
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

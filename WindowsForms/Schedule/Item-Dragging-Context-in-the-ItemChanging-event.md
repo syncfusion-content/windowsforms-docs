@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Item-Dragging-Context-in-the-ItemChanging-event | WindowsForms | Syncfusion
+title: Item-Dragging-Context-in-the-ItemChanging-event | Windows Forms | Syncfusion
 description: item dragging context in the itemchanging event
-platform: WindowsForms
+platform: windowsforms
 control: Schedule
 documentation: ug
 ---

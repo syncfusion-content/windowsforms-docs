@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Customization | WindowsForms | Syncfusion
+title: Appearance-Customization | Windows Forms | Syncfusion
 description: appearance customization
-platform: WindowsForms
+platform: windowsforms
 control: SplitButton 
 documentation: ug
 ---

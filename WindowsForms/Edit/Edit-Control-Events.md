@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Edit-Control-Events | WindowsForms | Syncfusion
+title: Edit-Control-Events | Windows Forms | Syncfusion
 description: edit control events
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---

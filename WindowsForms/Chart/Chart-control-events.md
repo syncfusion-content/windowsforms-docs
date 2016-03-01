@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-control-events | WindowsForms | Syncfusion
+title: Chart-control-events | Windows Forms | Syncfusion
 description: chart control events
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---

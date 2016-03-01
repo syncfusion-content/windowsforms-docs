@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-boolean | WindowsForms | Syncfusion
+title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-boolean | Windows Forms | Syncfusion
 description: how to databind a checkboxadv to an sql database if the corresponding datatable field is boolean
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

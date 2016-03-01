@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeViewAdv-Events | WindowsForms | Syncfusion
+title: TreeViewAdv-Events | Windows Forms | Syncfusion
 description: treeviewadv events
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

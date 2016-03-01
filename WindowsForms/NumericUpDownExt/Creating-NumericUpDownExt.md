@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-NumericUpDownExt | WindowsForms | Syncfusion
+title: Creating-NumericUpDownExt | Windows Forms | Syncfusion
 description: creating numericupdownext
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

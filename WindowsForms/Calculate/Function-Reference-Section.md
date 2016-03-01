@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Function-Reference-Section | WindowsForms | Syncfusion
+title: Function-Reference-Section | Windows Forms | Syncfusion
 description: function reference section
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

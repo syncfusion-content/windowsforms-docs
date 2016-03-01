@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Use-a-ColorEdit-Control-in-a-Column-and-Retrieve-its-value | WindowsForms | Syncfusion
+title: How-to-Use-a-ColorEdit-Control-in-a-Column-and-Retrieve-its-value | Windows Forms | Syncfusion
 description: how to use a color edit control in a column and retrieve its value
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

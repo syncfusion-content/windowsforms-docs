@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MS-Excel-like-Features | WindowsForms | Syncfusion
+title: MS-Excel-like-Features | Windows Forms | Syncfusion
 description: ms excel-like features
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

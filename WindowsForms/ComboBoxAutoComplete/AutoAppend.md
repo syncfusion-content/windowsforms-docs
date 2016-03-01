@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoAppend | WindowsForms | Syncfusion
+title: AutoAppend | Windows Forms | Syncfusion
 description: AutoAppend
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAutoComplete
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Color-Schemes | WindowsForms | Syncfusion
+title: Color-Schemes | Windows Forms | Syncfusion
 description: color schemes
-platform: WindowsForms
+platform: windowsforms
 control: Office2010 Form
 documentation: ug
 ---

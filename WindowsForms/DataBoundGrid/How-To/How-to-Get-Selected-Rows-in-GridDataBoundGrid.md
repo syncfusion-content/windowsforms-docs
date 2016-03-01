@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-Selected-Rows-in-GridDataBoundGrid | WindowsForms | Syncfusion
+title: How-to-Get-Selected-Rows-in-GridDataBoundGrid | Windows Forms | Syncfusion
 description: how to get selected rows in griddataboundgrid 
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

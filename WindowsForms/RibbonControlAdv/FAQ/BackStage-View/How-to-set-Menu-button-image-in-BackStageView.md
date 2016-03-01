@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-Menu-button-image-in-BackStageView | WindowsForms | Syncfusion
+title: How-to-set-Menu-button-image-in-BackStageView | Windows Forms | Syncfusion
 description: how to set menu button image in backstageview?
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

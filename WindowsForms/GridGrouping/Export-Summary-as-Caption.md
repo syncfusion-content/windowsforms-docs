@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Export-Summary-as-Caption | WindowsForms | Syncfusion
+title: Export-Summary-as-Caption | Windows Forms | Syncfusion
 description: export summary as caption 
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

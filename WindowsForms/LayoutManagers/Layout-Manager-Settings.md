@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Manager Settings | WindowsForms | Syncfusion
+title: Layout Manager Settings | Windows Forms | Syncfusion
 description: Layout Manager Settings
 control: Layout Managers Package
 documentation: ug

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to hide a child button of a ButtonEdit control | WindowsForms | Syncfusion
+title: How to hide a child button of a ButtonEdit control | Windows Forms | Syncfusion
 description: How to hide a child button of a ButtonEdit control
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

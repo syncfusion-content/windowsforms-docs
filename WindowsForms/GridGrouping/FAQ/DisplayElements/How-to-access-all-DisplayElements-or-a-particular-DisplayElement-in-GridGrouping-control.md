@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-access-all-DisplayElements-or-a-particular- | WindowsForms | Syncfusion
+title: How-to-access-all-DisplayElements-or-a-particular- | Windows Forms | Syncfusion
 description: how to access all displayelements or a particular displayelement in gridgrouping control
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

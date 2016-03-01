@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ProgressBarAdv-Events | WindowsForms | Syncfusion
+title: ProgressBarAdv-Events | Windows Forms | Syncfusion
 description: progressbaradv events
-platform: WindowsForms
+platform: windowsforms
 control: ProgressBarAdv
 documentation: ug
 ---

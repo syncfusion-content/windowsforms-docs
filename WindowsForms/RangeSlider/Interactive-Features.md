@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive-Features | WindowsForms | Syncfusion
+title: Interactive-Features | Windows Forms | Syncfusion
 description: interactive features
-platform: WindowsForms
+platform: windowsforms
 control: RangeSlider 
 documentation: ug
 ---

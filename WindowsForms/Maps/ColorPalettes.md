@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ColorPalettes | WindowsForms | Syncfusion
+title: ColorPalettes | Windows Forms | Syncfusion
 description: colorpalettes
-platform: WindowsForms
+platform: windowsforms
 control: Maps
 documentation: ug
 ---

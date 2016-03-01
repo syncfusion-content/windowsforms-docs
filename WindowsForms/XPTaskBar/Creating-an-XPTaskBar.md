@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating an XPTaskBar | WindowsForms | Syncfusion
+title: Creating an XPTaskBar | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

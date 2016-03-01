@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Metro-Form | WindowsForms | Syncfusion
+title: Metro-Form | Windows Forms | Syncfusion
 description: metro form
-platform: WindowsForms
+platform: windowsforms
 control: Metro Form
 documentation: ug
 ---

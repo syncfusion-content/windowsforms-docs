@@ -2,7 +2,7 @@
 layout: post
 title: Control Dependencies and Dependency assembly details for Syncfusion Essential Windows Forms controls 
 description: Control Dependencies for Windows Forms 
-platform: WindowsForms
+platform: windowsforms
 control: Introduction
 documentation: ug
 ---

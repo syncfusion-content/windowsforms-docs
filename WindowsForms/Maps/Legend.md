@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Legend | WindowsForms | Syncfusion
+title: Legend | Windows Forms | Syncfusion
 description: legend
-platform: WindowsForms
+platform: windowsforms
 control: Maps
 documentation: ug
 ---

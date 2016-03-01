@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Data | WindowsForms | Syncfusion
+title: Chart-Data | Windows Forms | Syncfusion
 description: chart data
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---
@@ -17,7 +17,7 @@ The ChartSeries data points and the axis labels are the ones that can be databou
 
 There is however no DESIGN-TIME support for data binding. This has to be setup in code.
 
- [Binding a DataSet to the Chart](http://docs.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart)
+ [Binding a DataSet to the Chart](http://help.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart)
 
 ### Data binding via custom interfaces
 
@@ -27,7 +27,7 @@ N> One important reason you might want to use either of the above two approaches
 
 {% seealso %}
 
-[Implementing Custom Data Binding Interfaces](http://docs.syncfusion.com/windowsforms/chart/chart-data#implementing-custom-data-binding-interfaces)
+[Implementing Custom Data Binding Interfaces](http://help.syncfusion.com/windowsforms/chart/chart-data#implementing-custom-data-binding-interfaces)
 
 {% endseealso %}
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Use-Combo-Box-in-a-Column | WindowsForms | Syncfusion
+title: How-to-Use-Combo-Box-in-a-Column | Windows Forms | Syncfusion
 description: how to use combo box in a column
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

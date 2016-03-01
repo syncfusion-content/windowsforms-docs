@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Perspective  | WindowsForms | Syncfusion
+title: Perspective  | Windows Forms | Syncfusion
 description: Perspective 
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

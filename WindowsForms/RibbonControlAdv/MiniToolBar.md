@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MiniToolbar | WindowsForms | Syncfusion
+title: MiniToolbar | Windows Forms | Syncfusion
 description: minitoolbar
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

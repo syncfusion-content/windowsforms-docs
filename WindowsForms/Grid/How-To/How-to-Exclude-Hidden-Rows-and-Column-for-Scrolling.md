@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Exclude-Hidden-Rows-and-Column-for-Scrollin | WindowsForms | Syncfusion
+title: How-to-Exclude-Hidden-Rows-and-Column-for-Scrollin | Windows Forms | Syncfusion
 description: how to exclude hidden rows and column for scrolling? 
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

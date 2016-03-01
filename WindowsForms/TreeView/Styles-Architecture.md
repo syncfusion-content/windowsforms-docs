@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styles-Architecture | WindowsForms | Syncfusion
+title: Styles-Architecture | Windows Forms | Syncfusion
 description: styles architecture
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

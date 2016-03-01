@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Importing of GridControl for Syncfusion Essential WindowsForms
+title: Importing of GridControl for Syncfusion Essential Windows Forms
 description: This section explains the importing functionalities of the GridControl
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-Office2010-Form | WindowsForms | Syncfusion
+title: Creating-Office2010-Form | Windows Forms | Syncfusion
 description: creating office2010 form
-platform: WindowsForms
+platform: windowsforms
 control: Office2010 Form
 documentation: ug
 ---

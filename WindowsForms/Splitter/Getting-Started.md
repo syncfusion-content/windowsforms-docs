@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: Splitter  
 documentation: ug
 ---
 
 # Getting Started
 
-This section briefly describes how to design the SplitterControl in the WindowsForms application.
+This section briefly describes how to design the SplitterControl in the Windows Forms application.
 
 * Add the SplitterControl control. 
 * Configure the SplitterControl control.

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-CheckBox| WindowsForms | Syncfusion
+title: Ribbon-CheckBox| Windows Forms | Syncfusion
 description:  ribbon checkbox
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

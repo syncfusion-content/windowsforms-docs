@@ -1,8 +1,8 @@
 ---
 layout: post
-title: StackedGroupBar  | WindowsForms | Syncfusion
+title: StackedGroupBar  | Windows Forms | Syncfusion
 description: StackedGroupBar 
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

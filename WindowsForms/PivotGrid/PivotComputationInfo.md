@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PivotComputationInfo | WindowsForms | Syncfusion
+title: PivotComputationInfo | Windows Forms | Syncfusion
 description: pivotcomputationinfo
-platform: WindowsForms
+platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SuperToolTip | WindowsForms | Syncfusion
+title: SuperToolTip | Windows Forms | Syncfusion
 description: supertooltip
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv
 documentation: ug
 ---

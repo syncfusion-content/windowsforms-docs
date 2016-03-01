@@ -2,7 +2,7 @@
 layout: post
 title: FrameWork Compatibility for NIST application
 description: .Net Framework support details for NIST application
-platform: WindowsForms
+platform: windowsforms
 control: Introduction
 documentation: ug
 ---

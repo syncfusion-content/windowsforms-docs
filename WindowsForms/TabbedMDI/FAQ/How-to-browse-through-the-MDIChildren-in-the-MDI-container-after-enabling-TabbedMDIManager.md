@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-browse-through-the-MDIChildren-in-the-MDI-container-after-enabling-TabbedMDIManager | WindowsForms | Syncfusion
+title: How-to-browse-through-the-MDIChildren-in-the-MDI-container-after-enabling-TabbedMDIManager | Windows Forms | Syncfusion
 description: how to browse through the mdichildren in the mdicontainer after enabling tabbedmdimanager
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---

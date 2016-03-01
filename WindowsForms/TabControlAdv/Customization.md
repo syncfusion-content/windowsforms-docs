@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabControlAdv | WindowsForms | Syncfusion
+title: TabControlAdv | Windows Forms | Syncfusion
 description: tabcontroladv
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Spacing | WindowsForms | Syncfusion
+title: Spacing | Windows Forms | Syncfusion
 description: Spacing
-platform: WindowsForms
+platform: windowsforms
 control: AutoLabel
 documentation: ug
 ---

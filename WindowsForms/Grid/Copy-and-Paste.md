@@ -1,8 +1,8 @@
 ---
 layout: post
-title: CopyPaste of GridControl for Syncfusion Essential WindowsForms
+title: CopyPaste of GridControl for Syncfusion Essential Windows Forms
 description: This section explains oh how to perform the Cut, Copy and Paste operations in GridControl.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---

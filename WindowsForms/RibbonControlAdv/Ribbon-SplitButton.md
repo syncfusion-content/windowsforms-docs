@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-SplitButton| WindowsForms | Syncfusion
+title: Ribbon-SplitButton| Windows Forms | Syncfusion
 description:  ribbon splitbutton
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

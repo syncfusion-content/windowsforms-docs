@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PivotAxes | WindowsForms | Syncfusion
+title: PivotAxes | Windows Forms | Syncfusion
 description: pivotaxes
-platform: WindowsForms
+platform: windowsforms
 control: PivotChart
 documentation: ug
 ---

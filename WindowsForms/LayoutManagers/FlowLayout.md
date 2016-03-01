@@ -1,8 +1,8 @@
 ---
 layout: post
-title: FlowLayout | WindowsForms | Syncfusion
+title: FlowLayout | Windows Forms | Syncfusion
 description: flowlayout
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

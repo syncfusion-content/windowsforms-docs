@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Working-with-an-Excel-Spreadsheet | WindowsForms | Syncfusion
+title: Working-with-an-Excel-Spreadsheet | Windows Forms | Syncfusion
 description: working with an excel spreadsheet
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

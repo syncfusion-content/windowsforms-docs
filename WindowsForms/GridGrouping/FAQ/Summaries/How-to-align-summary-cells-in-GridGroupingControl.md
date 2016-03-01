@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-align-summary-cells-in-GridGroupingControl | WindowsForms | Syncfusion
+title: How-to-align-summary-cells-in-GridGroupingControl | Windows Forms | Syncfusion
 description: how to align summary cells in gridgroupingcontrol
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

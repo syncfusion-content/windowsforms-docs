@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button-Mode | WindowsForms | Syncfusion
+title: Button-Mode | Windows Forms | Syncfusion
 description: button mode
-platform: WindowsForms
+platform: windowsforms
 control: SplitButton 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Drag-And-Drop | WindowsForms | Syncfusion
+title: Drag-And-Drop | Windows Forms | Syncfusion
 description: drag and drop
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

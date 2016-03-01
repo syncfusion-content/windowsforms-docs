@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Inside-CalcEngine | WindowsForms | Syncfusion
+title: Inside-CalcEngine | Windows Forms | Syncfusion
 description: inside calcengine 
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

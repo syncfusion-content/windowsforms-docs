@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Programmatically Link Two Symbols | Diagram | WindowsForms | Syncfusion
+title: How To Programmatically Link Two Symbols | Diagram | Windows Forms | Syncfusion
 description: how to programmatically link two symbols
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

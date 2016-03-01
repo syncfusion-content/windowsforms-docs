@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Location Settings | WindowsForms | Syncfusion
+title: Location Settings | Windows Forms | Syncfusion
 description: location settings
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

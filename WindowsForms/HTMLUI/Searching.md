@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Searching | WindowsForms | Syncfusion
+title: Searching | Windows Forms | Syncfusion
 description:  searching
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Utilities | WindowsForms | Syncfusion
+title: Utilities | Windows Forms | Syncfusion
 description: utilities
-platform: WindowsForms
+platform: windowsforms
 control: QTP
 documentation: ug
 ---

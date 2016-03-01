@@ -1,8 +1,8 @@
 ---
 layout: post
-title: File-Sharing-and-Stream-Handling | WindowsForms | Syncfusion
+title: File-Sharing-and-Stream-Handling | Windows Forms | Syncfusion
 description: file sharing and stream handling
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
