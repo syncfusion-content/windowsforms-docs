@@ -35,10 +35,10 @@ N> Any range of cells cannot be merged like the covered ranges. Because merging 
 
 The [MergeCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~MergeCell.html) is the option which is used to set the direction for allowing the merging for particular cell. The [GridMergeCellDirection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellDirection.html) have the following list of enumerations to set the merge direction,
 
-* ColumnsInRow – Merge adjacent cells in same row<br/>
-* RowsInColumn – Merge adjacent cells in same column<br/>
-* Both – Merge in both directions<br/>
-* None – Merge cell is disabled <br/>
+* **ColumnsInRow** – Merge adjacent cells in same row<br/>
+* **RowsInColumn** – Merge adjacent cells in same column<br/>
+* **Both** – Merge in both directions<br/>
+* **None** – Merge cell is disabled <br/>
 
 {% tabs %}
 {% highlight c# %}
@@ -52,12 +52,12 @@ Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.ColumnsInRow Or Gr
 {% endtabs %}
 The [MergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~MergeCellsMode.html) is used to specify how to calculate/compare the cells for merging. The [GridMergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellsMode.html) has the following list of enumerations to set the different merge cells mode.
 
-* BeforeDisplayCalculation – Used to calculate the merge cells while loading the grid<br/>
-* OnDemandCalculation – It will calculate the merge cells count on demand (while entering the values in the grid cells)<br/>
-* MergeRowsInColumn – Used to merge the rows in column.<br/>
-* MergeColumnsInRow –  To merge the same column values into the single row<br/>
-* None – MergeCells behavior is disabled.<br/>
-* SkipHiddencells - Skip the hidden rows/columns and allow merging across them.<br/>
+* **BeforeDisplayCalculation** – Used to calculate the merge cells while loading the grid<br/>
+* **OnDemandCalculation** – It will calculate the merge cells count on demand (while entering the values in the grid cells)<br/>
+* **MergeRowsInColumn** – Used to merge the rows in column.<br/>
+* **MergeColumnsInRow** –  To merge the same column values into the single row<br/>
+* **None** – MergeCells behavior is disabled.<br/>
+* **SkipHiddencells** - Skip the hidden rows/columns and allow merging across them.<br/>
 
 {% tabs %}
 {% highlight c# %}
@@ -70,8 +70,8 @@ Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalcul
 
 This property is used to set the calculation area for the merge cells in GridControl. The [GridMergeCellsLayout](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) provides the following options to set the calculation area for the merging,
 
-* Grid – Merge cells for entire grid, may affect the performance for the large grid.<br/>
-* VisibleRange – Merge cells only in visible range.<br/>
+* **Grid** – Merge cells for entire grid, may affect the performance for the large grid.<br/>
+* **VisibleRange** – Merge cells only in visible range.<br/>
 
 {% tabs %}
 {% highlight c# %}
