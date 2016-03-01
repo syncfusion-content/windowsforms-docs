@@ -23,7 +23,7 @@ Microsoft Excel-like User Interface can be implemented in GridControl with the h
 ![](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
 
 A sample demonstrating this real time application is available under the following sample installation path.<br/>
-**&lt;Install_Location&gt;\Syncfusion\EssentialStudio\[Version_Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo**
+**&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo**
 
 ## Grid Folder Browser
 GridControl can be used to develop a powerful `TreeView` control because of its flexibility. The tree nodes can be created through custom `TreeCell` cell type. The [GridStaticCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html) class is inherited to create this cell type. The plus/minus buttons of the tree nodes are selected by using [ImageIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageIndex.html) property.
@@ -68,7 +68,7 @@ End Sub
 ![](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)
 
 A sample demonstrating this feature is available under the following sample installation path.<br/>
-**&lt;Install_Location&gt;\Syncfusion\EssentialStudio\[Version_Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo**
+**&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Grid Folder Browser Demo**
 
 ## Pivot Grid
 PivotGrid is a powerful cell-oriented, extensible grid control. It simulates the pivot table feature of Excel. The major advantage with a pivot grid is that you can extract the desired information from a large list within seconds. Along with presenting the data, a pivot grid also enables you to summarize and group data. Pivot grid has its main application in the financial domain. It is used to organize and analyze business data.

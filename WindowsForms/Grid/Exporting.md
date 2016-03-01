@@ -18,7 +18,7 @@ The following assembly files should be added to the application reference folder
 * Syncfusion.GridConverter.Windows
 * Syncfusion.XlsIO.Base
 
-N> **Syncfusion.XlsIO.Base**libraries are used to support conversion of the grid contents to Excel. 
+N> **Syncfusion.XlsIO.Base** libraries are used to support conversion of the grid contents to Excel. 
 
 The [GridToExcel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~GridToExcel.html) method is used to export the grid to an excel sheet. The exported file behavior can be set by specifying the [ConverterOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.ConverterOptions.html) to this method (i.e., it will include or exclude the column and row headers). 
 
