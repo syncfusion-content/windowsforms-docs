@@ -108,7 +108,7 @@ MessageBox.Show("MergedRange for cell(4,3) is " & mergedRange.Info.ToString() & 
 
 ![](Cell-Merging_images/Cell-Merging_img2.jpeg)
 
-N> The merged range of a cell can also be determined by using [GetSpannedRangeInfo](http://help.syncfusion.com/windowsforms/grid/working-with-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method instead of using `FindRange` method. 
+N> The merged range of a cell can also be determined by using [GetSpannedRangeInfo](/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method instead of using `FindRange` method. 
 
 ## Delaying and Evaluating merge cells
 The cells which are all having same content will be merged. The merging can be delayed for specified range of cells to be re-evaluate later using [DelayMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~DelayMergeCells.html) and those delayed merged cells can be re-evaluated later by using [EvaluateMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~EvaluateMergeCells.html) methods. So merged cells which are delayed will not be re-evaluated until `EvaluateMergeCells` method is called for that specified range.
