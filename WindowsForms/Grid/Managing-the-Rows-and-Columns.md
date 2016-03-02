@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 
-# Managing of Rows and Columns
+# Managing the Rows and Columns
 This section will explain about the properties and methods available for customizing the rows and columns in GridControl. 
 
 ## Hiding Rows and Columns
@@ -162,7 +162,7 @@ End Sub
 {% endtabs %}
 
 ## Header Rows and Columns 
-The grid can be displayed with more than one row/column header by setting the [HeaderCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~HeaderCount.html) value**.** The `HeaderCount` property is also used to get the last index of header rows and columns.
+The grid can be displayed with more than one row/column header by setting the [HeaderCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~HeaderCount.html) value. The `HeaderCount` property is also used to get the last index of header rows and columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -203,7 +203,7 @@ Me.gridControl1.Cols.FrozenCount = 3
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img9.png)
 
-N> The more details about the changing of frozen lines colors is explained in the [freezing](http://help.syncfusion.com/windowsforms/grid/ms-excel-like-features) section of the Excel-Like features.
+N> The more details about the changing of frozen lines colors is explained in the [freezing](/windowsforms/grid/ms-excel-like-features) section of the Excel-Like features.
 
 ### Freeze Range of Rows and Columns
 There is possible to freeze an interior range of rows or columns. It can be done by using the [FreezeRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FreezeRange.html) method. The `FreezeRange` method will move the requested rows /columns to the top /left and then it will set the[FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) value to perform the actual process of freezing.
@@ -407,7 +407,7 @@ Me.gridControl.RowStyles(3).Font.Italic= True
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img15.png)
 
-N> The same row or column styles can also be set using [QueryCellInfo](http://help.syncfusion.com/windowsforms/grid/appearance-and-formatting#querycellinfo-event) event.
+N> The same row or column styles can also be set using [QueryCellInfo](/windowsforms/grid/appearance-and-formatting#querycellinfo-event) event.
 
 ## Controlling the Resize Behavior
 The resizing behavior of columns and rows can be customized by using the [ResizeColsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResizeColsBehavior.html) and [ResizeRowsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResizeRowsBehavior.html) properties. The[GridResizeCellsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.html) enumeration has provide the following options to control resizing behavior,
