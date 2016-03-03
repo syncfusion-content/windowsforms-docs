@@ -125,35 +125,39 @@ The following controls are featured with Coded UI Testing support.
 <tr>
 <th>
 Supported controls<br/><br/></th><th>
-Level<br/><br/></th></tr>
+Levels<br/><br/></th></tr>
+<tr>
+<td>
+GridControl<br/><br/></td><td>
+4 Levels<br/><br/></td></tr>
 <tr>
 <td>
 GridGroupingControl<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+4 Levels<br/><br/></td></tr>
 <tr>
 <td>
-DataBoundGrid<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+GridDataBoundGrid<br/><br/></td><td>
+4 Levels<br/><br/></td></tr>
 <tr>
 <td>
 TreeViewAdv<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 RibbonControlAdv<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 Carousel<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 RadialMenu<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 TabControlAdv<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 </table>
 
 
