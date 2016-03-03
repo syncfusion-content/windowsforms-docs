@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formula Support for Syncfusion Essential WindowsForms
-description: formula support
+description: This section explains the list of formulas available in GridControl.
 platform: WindowsForms
 control: Grid
 documentation: ug
