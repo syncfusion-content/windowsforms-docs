@@ -210,7 +210,7 @@ The [GridWrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms
 * **WrapGrid** - Move to first row and column, when focus at the last row and last column.
 * **WrapRow** - Move to first column in next row or last column in previous row.
 * **None** - Don’t move current cell.
-* **NextControllForm** - Activate next sibling control in the dialog when focus at the last row and last column or Activate previous sibling control in the dialog when focus at the first row and column.
+* **NextControllnForm** - Activate next sibling control in the dialog when focus at the last row and last column or Activate previous sibling control in the dialog when focus at the first row and column.
 
 {% tabs %}
 {% highlight c# %}
