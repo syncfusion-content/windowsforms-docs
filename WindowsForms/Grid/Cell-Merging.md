@@ -57,7 +57,7 @@ The [MergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/
 * **MergeRowsInColumn** – Used to merge the rows in column.<br/>
 * **MergeColumnsInRow** –  To merge the same column values into the single row<br/>
 * **None** – MergeCells behavior is disabled.<br/>
-* **SkipHiddenCells** - Skip the hidden rows/columns and allow merging across them.<br/>
+* **SkipHiddencells** - Skip the hidden rows/columns and allow merging across them.<br/>
 
 {% tabs %}
 {% highlight c# %}
