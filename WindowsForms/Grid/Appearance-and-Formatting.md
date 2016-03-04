@@ -36,7 +36,7 @@ N>  The system prompts you to save the changes to the Grid control in the design
 This section would explain the list of properties that changes the Appearance, Print Styles, and Scroll Bar settings of GridControl.
 
 ### Appearance Properties
-The properties that major affect the appearance of cells in GridControl are listed below.
+The properties that majorly affect the appearance of cells in GridControl are listed below.
 
 #### Hiding VerticalLines
 To display the grid without the vertical lines, set the [DisplayVerticalLines](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~DisplayVerticalLines.html) property to `false`.
