@@ -121,9 +121,9 @@ N> BannerText feature can be made available for the following controls only.
 
 * [TextBoxBarItem](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
 * [ComboBoxBarItem](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
-* [TextBox](http://help.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#toolstripex) (ToolStripEx)
-* [ComboBox](http://help.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#combobox ) (ToolStripEx)
-* [ComboBoxEx](http://help.syncfusion.com/windowsforms/ribbonadv/ribbon-control-items#comboboxex)
+* [TextBox](http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-textbox) (ToolStripEx)
+* [ComboBox](http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-combobox ) (ToolStripEx)
+* [ComboBoxEx](http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-comboboxex)(ToolStripEx)
 * [TextBoxExt](http://help.syncfusion.com/windowsforms/textboxext) (Editor Control)
 * [CurrencyTextBox](http://help.syncfusion.com/windowsforms/currencytextbox)(Editor Control)
 * [ComboBoxAdv](http://help.syncfusion.com/windowsforms/ComboBoxAdv)(Editor Control)
