@@ -61,49 +61,49 @@ Return Type</th></tr>
 <tr>
 <td>
 Load</td><td>
-tdis metdod is used to load tde PDF to tde viewer.</td><td>
-Overloads: (string filePatd) (string filePatd, string password)(PdfLoadedDocument doc)(Stream file)</td><td>
+this method is used to load the PDF to the viewer.</td><td>
+Overloads: (string filePath) (string filePath, string password)(PdfLoadedDocument doc)(Stream file)</td><td>
 N/A </td><td>
 Void </td></tr>
 <tr>
 <td>
 Unload</td><td>
-Unloads tde loaded PDF.</td><td>
+Unloads the loaded PDF.</td><td>
 -</td><td>
 N/A</td><td>
 Void</td></tr>
 <tr>
 <td>
 Dispose</td><td>
-Unloads tde document and releases tde resources used by tde component.</td><td>
+Unloads the document and releases the resources used by the component.</td><td>
 -</td><td>
 N/A</td><td>
 Void</td></tr>
 <tr>
 <td>
 ExportAsImage</td><td>
-Converts tde page to a raster image.</td><td>
+Converts the page to a raster image.</td><td>
 Overloads:(int pageIndex)(int startIndex, int endIndex)</td><td>
 N/A</td><td>
 Bitmap</td></tr>
 <tr>
 <td>
 FindText</td><td>
-Searches for tde occurance of given input text in tde PDF document and returns all tde occurances and its location in all pages of tde PDF document.</td><td>
-Overloads:(String text, out Dictionary&lt;int, List&gt;&lt;&lt;System.Drawing.RectangleF&gt;&gt; matchRect)</td><td>
+Searches for the occurence of given input text in the PDF document and returns all the occurances and its location in all pages of the PDF document.</td><td>
+Overloads:(String text, out Dictionary<int, List><<System.Drawing.RectangleF>> matchRect)</td><td>
 N/A</td><td>
 bool</td></tr>
 <tr>
 <td>
 GoToPageAtIndex</td><td>
-Navigates to tde mentioned page</td><td>
+Navigates to the mentioned page</td><td>
 (int index)</td><td>
 N/A</td><td>
 Void</td></tr>
 <tr>
 <td>
 ZoomTo</td><td>
-Magnifies tde document displayed to tde specified percentage.</td><td>
+Magnifies the document displayed to the specified percentage.</td><td>
 (int percentage)</td><td>
 N/A</td><td>
 Void</td></tr>
@@ -123,19 +123,19 @@ Type</th></tr>
 <tr>
 <td>
 DocumentLoaded</td><td>
-tdis event is triggered after tde PDF is successfully loaded.</td><td>
+this event is triggered after the PDF is successfully loaded.</td><td>
 N/A</td><td>
 N/A</td></tr>
 <tr>
 <td>
 HyperLinkMouseHover</td><td>
-tdis event is triggered when tde mouse pointer is placed over tde URL.</td><td>
+this event is triggered when the mouse pointer is placed over the URL.</td><td>
 N/A</td><td>
 N/A</td></tr>
 <tr>
 <td>
 HyperLinkMouseClicked</td><td>
-tdis event is triggered when tde URL in tde PDF document is clicked.</td><td>
+this event is triggered when the URL in the PDF document is clicked.</td><td>
 N/A</td><td>
 N/A</td></tr>
 </table>

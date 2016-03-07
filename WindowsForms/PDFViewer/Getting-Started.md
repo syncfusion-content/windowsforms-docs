@@ -189,7 +189,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
-CCITTFaxDeocde (Image)</td><td>
+CCITTFaxDecode (Image)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
