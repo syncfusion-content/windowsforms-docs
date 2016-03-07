@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Deployment process for Syncfusion Essential Studio Windows Forms products
 description: Deployment
