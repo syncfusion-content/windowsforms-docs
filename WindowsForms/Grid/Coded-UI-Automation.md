@@ -39,7 +39,7 @@ A `Coded UI Test Project` needs to be created for testing the application. The f
 The GridControl supports Coded UI as the two ways,
 
 * In-built support
-* External plugins
+* External plugin
 
 ## Control Assertion
 The **Coded UI Test** performs action on the user interface (UI) controls and verifies that the `UIElement` properties are displayed with the correct values. The assertion of the UI element can be done by the following steps,
@@ -106,7 +106,7 @@ The recorded automation codes can be played back. The following steps are used t
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
 
 ## In-built Support
-The GridControl supports automated UI testing with Coded UI technology without any external plugins. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
+The GridControl supports automated UI testing with Coded UI technology without any external plugin. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
 
 ### System Requirements
 The following IDEs and .Net frameworks are supported for automating the GridControl.
@@ -324,8 +324,8 @@ The below example shows the highlighting of grid,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
 
-## External Plugins
-The GridControl also provides Coded UI support via external plugins. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
+## External plugin
+The GridControl also provides Coded UI support via external plugin. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
 
 ### System Requirements
 The following IDEs and .Net frameworks are supported for automating the GridControl.

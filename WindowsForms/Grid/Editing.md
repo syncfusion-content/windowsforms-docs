@@ -309,7 +309,7 @@ End Sub
 
 ### Canceling edit for the whole grid cells
 
-The [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event will be fired when the current cell switches to edit mode. So on clicking an editing cell, this event will be called. There is `Cancel` property used in this event so that editing can be cancelled whenever required.
+The [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event will be fired when the current cell switches to edit mode. So on clicking an editing cell, this event will be called. There is `Cancel` property used in this event so that editing can be canceled whenever required.
 
 {% tabs %}
 {% highlight c# %}

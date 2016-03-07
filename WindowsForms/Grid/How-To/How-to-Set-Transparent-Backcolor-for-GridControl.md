@@ -7,11 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-# How to Set Transparent Backcolor for GridControl
+# How to Set Transparent BackColor for GridControl
 
 ## Introduction
 
-Setting the transparent [backcolor](/windowsforms/Grid/Cell-Style-Architecture#backcolor) for a GridControl can be done easily with simple code.
+Setting the transparent [BackColor](/windowsforms/Grid/Cell-Style-Architecture#backcolor) for a GridControl can be done easily with simple code.
 
 ### Example
 

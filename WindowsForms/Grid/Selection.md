@@ -221,7 +221,7 @@ Me.gridControl1.AlphaBlendSelectionColor = Color.Green
 ![](Selection_images/Selection_img5.jpeg)
 
 
-The selection color of the grid can be reset by using the [ResetAlphaBlenSelectionColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResetAlphaBlendSelectionColor.html#) method. It will reset the default color for selection.
+The selection color of the grid can be reset by using the [ResetAlphaBlendSelectionColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResetAlphaBlendSelectionColor.html#) method. It will reset the default color for selection.
 
 {% tabs %}
 {% highlight c# %}

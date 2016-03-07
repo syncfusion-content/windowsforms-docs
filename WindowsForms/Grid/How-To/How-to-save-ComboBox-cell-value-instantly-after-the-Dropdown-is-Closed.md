@@ -9,7 +9,7 @@ documentation: ug
 
 # How to save ComboBox cell value instantly after the dropdown is closed?
 
-To save ComboBox cell value immediately after the dropdown is closed; SaveCellInfo event must be triggered. To initiate SaveCellInfo event, EndEdit() has to be called. Also, in the CurrentCellCloseDropDown event CurrentCell.EndiEdit() is called.
+To save ComboBox cell value immediately after the dropdown is closed; SaveCellInfo event must be triggered. To initiate SaveCellInfo event, EndEdit() has to be called. Also, in the CurrentCellCloseDropDown event CurrentCell.EndEdit() is called.
 
 {% highlight c# %}
 
