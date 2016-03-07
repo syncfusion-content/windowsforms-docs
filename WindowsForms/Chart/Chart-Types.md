@@ -2008,7 +2008,7 @@ Border, DisplayText, DrawSeriesNameInDepth, FigureBase, FunnelMode, GapRatio, Hi
 
 ### Pyramid Chart
 
-Pyramid chart is similar to the funnel chart. It's often used for geographical purposes. The Pyramid Chart type displays the data, which when totalled will be 100%. This type of chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Pyramid chart can be viewed as 2D or 3D.
+Pyramid chart is similar to the funnel chart. It's often used for geographical purposes. The Pyramid Chart type displays the data, which when totaled will be 100%. This type of chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Pyramid chart can be viewed as 2D or 3D.
 
 The following images are some sample Pyramid Charts.
 
