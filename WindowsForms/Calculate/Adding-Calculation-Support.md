@@ -183,7 +183,7 @@ In the above screenshot, Text Box C is set to a formula that references the valu
 
 
 
-In order to get this to work, two things must be done. First, when the variable registered as A or B is modified, your code must set the new values in the CalcQuickBase object by using indexers. The reason for you do this is, so that CalcQuickBase has no knowledge of Text Box A and Text Box B. It knows about the variables A and B which you have registered through indexing, but it has no knowledge that these values are actually coming from particular text boxes. After you have set the new values using indexers, the CalcQuickBase object knows that variable C will change and modify its value. But, the CalcQuickBase object that modifies its value for variable C has no effect on the text box that holds C. This is the point where your code needs to play its second role. You need to get the value of variable C and put it into the appropriate text box. The common question is, "How does the code know that it has to retrieve C so that it can update Text Box C appropriately?" This is made possible as the CalcQuickBase object raises an event, CalcQuickBase.ValueSet, everytime a value that it is tracking is modified. So, your code can listen for this event and set the proper values.
+In order to get this to work, two things must be done. First, when the variable registered as A or B is modified, your code must set the new values in the CalcQuickBase object by using indexers. The reason for you do this is, so that CalcQuickBase has no knowledge of Text Box A and Text Box B. It knows about the variables A and B which you have registered through indexing, but it has no knowledge that these values are actually coming from particular text boxes. After you have set the new values using indexers, the CalcQuickBase object knows that variable C will change and modify its value. But, the CalcQuickBase object that modifies its value for variable C has no effect on the text box that holds C. This is the point where your code needs to play its second role. You need to get the value of variable C and put it into the appropriate text box. The common question is, "How does the code know that it has to retrieve C so that it can update Text Box C appropriately?" This is made possible as the CalcQuickBase object raises an event, CalcQuickBase.ValueSet, every time a value that it is tracking is modified. So, your code can listen for this event and set the proper values.
 
 The following code illustrates the above process.
 
@@ -606,7 +606,7 @@ The following is an explanation of the numbered steps in the preceding Form_Load
 ### Resetting Keys by using Calculate Engine
 
 
-This method provides support for resetting keys (which happens backend) using Calculate Engine. 
+This method provides support for resetting keys (which happens back end) using Calculate Engine. 
 
 The user can reset or clear the keys by using this method. 
 
@@ -944,7 +944,7 @@ End Sub
 
 The following is an explanation of the preceding code.
 
-1. Assign the datasources to the DataGrids.
+1. Assign the data sources to the DataGrids.
 2. ResetSheetFamilyID clears any static members of the CalcEngine class and sets the engine state to operate with a single ICalcData object.
 3. Creates an instance of the CalcEngine object.
 4. Sets the engine object to track calculation dependencies so that cells can be automatically updated as other cell values change. 
