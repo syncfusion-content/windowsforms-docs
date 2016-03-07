@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Realtime
+# Real time
 
 EssentialChart is optimized to deal with real time data. It can work with both huge and real time data and render a smooth and dynamic chart using any of the several available chart types.
 

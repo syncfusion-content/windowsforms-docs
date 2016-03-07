@@ -9,7 +9,7 @@ documentation: ug
 
 # How to hide the Chart ZoomButton
 
-Syncfusion Chart provides a way to access the ZoomOutButton through the ScrollBar instance. Inorder to hide this Zoom button, if Visible property is set to false, ZoomButton will be disabled, but there will be an empty space. So instead of setting Visible property, we can set the ZoomButton size to be 0.
+Syncfusion Chart provides a way to access the ZoomOutButton through the ScrollBar instance. In order to hide this Zoom button, if Visible property is set to false, ZoomButton will be disabled, but there will be an empty space. So instead of setting Visible property, we can set the ZoomButton size to be 0.
 
 
  {% highlight c# %}
@@ -35,7 +35,7 @@ Me.chartControl1.GetHScrollBar(Me.chartControl1.PrimaryXAxis).ZoomButton.Size = 
 ![](How-to-hide-the-Chart-ZoomButton_images/How-to-hide-the-Chart-ZoomButton_img1.jpeg)
 
 
-This setting will be useful, if you need to display the scrollbar, without ZoomingCancel operation, or if you need to change the backcolor and other properties, as ZoomButton is derived from the Button control.
+This setting will be useful, if you need to display the scrollbar, without ZoomingCancel operation, or if you need to change the back color and other properties, as ZoomButton is derived from the Button control.
 
 {% seealso %}
 

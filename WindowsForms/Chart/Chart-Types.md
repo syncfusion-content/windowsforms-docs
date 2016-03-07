@@ -2648,9 +2648,9 @@ If the ReversalAmount is 0.0 instead of 1.0 which is the default value, then the
 ### Point and Figure Chart
 
 
-Point and Figure Chart is used to identify support levels, resistance levels and chart patterns. The chart ignores the time factor and concentrates solely on movements in price - a column of Xs or Os may take one day or several weeks to complete. By convention, the first X in a column is plotted one box above the last O in the previous column (and the first O in a column is plotted one box below the highest X).  
+Point and Figure Chart is used to identify support levels, resistance levels and chart patterns. The chart ignores the time factor and concentrates solely on movements in price - a column of X's or O's may take one day or several weeks to complete. By convention, the first X in a column is plotted one box above the last O in the previous column (and the first O in a column is plotted one box below the highest X).  
 
-This is a chart that plots the day-to-day increment and decrement in price. It uses a series of Xs and Os to determine price trends where the Xs represent an upward trend and the Os represent a downward trend. The default value of ReversalAmount is 1. Use the PriceUpColor to specify the color for the Xs and PriceDownColor to specify the color for the Os. 
+This is a chart that plots the day-to-day increment and decrement in price. It uses a series of X's and O's to determine price trends where the X's represent an upward trend and the O's represent a downward trend. The default value of ReversalAmount is 1. Use the PriceUpColor to specify the color for the X's and PriceDownColor to specify the color for the O's. 
 
 This chart requires two y values, the high value and the low value for the specified period.
 
@@ -2895,7 +2895,7 @@ The Box and Whisker plot is interpreted as follows.
 * The box itself contains the middle 50% of the data. The upper edge (hinge) of the box indicates the 75th percentile of the data set and the lower hinge indicates the 25th percentile. The range of the middle two quartiles is known as the inter-quartile range.
 * The line in the box indicates the median value of the data. 
 * Box and Whisker chart has two modes, Normal mode and Percentile mode. 
-* In Normal Mode, if the median line within the box is not equi-distant from the hinges, then the data is skewed. The ends of the vertical lines or "whiskers" indicate the minimum and maximum data values, unless outliers are present, in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range.
+* In Normal Mode, if the median line within the box is not equidistant from the hinges, then the data is skewed. The ends of the vertical lines or "whiskers" indicate the minimum and maximum data values, unless outliers are present, in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range.
 * In Percentile Mode: [Set Series1.ConfigItems.BoxAndWhiskerItem.PercentileMode property to _true_], the ends of the vertical lines or "whiskers" will be decided by the Series1.ConfigItems.BoxAndWhiskerItem.Percentile property value. For example, if the 'Percentile' value is 0.15, then the minimum value will be the 15th percentile of the overall data set and the maximum value will be 85th percentile of the overall data set.
 
 
@@ -3060,26 +3060,26 @@ Me.chartControl1.Series.Add(series)
 
 ### Customization Options
 
-* AngleOffset, Border, DisplayShadow, DisplayText, DoughnutCoeficient, DrawSeriesNameInDepth, ElementBorders, ExplodedAll, ExplodedIndex, ExplosionOffset
-* FillMode, Gradient, HeightByAreaDepth, HeightCoeficient, HighlightInterior, InSideRadius, OptimizePiePointPositions, PieType, ShadowInterior, ShadowOffset
+* AngleOffset, Border, DisplayShadow, DisplayText, DoughnutCoefficient, DrawSeriesNameInDepth, ElementBorders, ExplodedAll, ExplodedIndex, ExplosionOffset
+* FillMode, Gradient, HeightByAreaDepth, HeightCoefficient, HighlightInterior, InSideRadius, OptimizePiePointPositions, PieType, ShadowInterior, ShadowOffset
 * ShowTicks, VisibleAllPies, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, ShowDataBindLabels
 ### Doughnut Chart
 
 
-#### DoughnutCoeficient
+#### DoughnutCoefficient
 
-PieCharts specified with a DoughnutCoeficient will be rendered as the Doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie. The DoughnutCoeficient property specifies the fraction of radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
+PieCharts specified with a DoughnutCoefficient will be rendered as the Doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie. The DoughnutCoefficient property specifies the fraction of radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
 {% highlight c# %}
 
-this.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient=0.5f;
+this.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient=0.5f
+Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f
 
 {% endhighlight %}
 
@@ -3088,15 +3088,15 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient=0.5f
 
 
 
-#### HeightCoeficient
+#### HeightCoefficient
 
-When in 3D mode, the relative height of the pie chart can be specified via the HeightCoeficient property. Note that the HeightByAreaDepth property should be set as false for this to take effect. The valid values are 0.1f to 0.5f. This property is set to 0.2f by default.
+When in 3D mode, the relative height of the pie chart can be specified via the HeightCoefficient property. Note that the HeightByAreaDepth property should be set as false for this to take effect. The valid values are 0.1f to 0.5f. This property is set to 0.2f by default.
 
 {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.HeightByAreaDepth = false;
 
-this.chartControl1.Series[0].ConfigItems.PieItem.HeightCoeficient = 0.1f;
+this.chartControl1.Series[0].ConfigItems.PieItem.HeightCoefficient = 0.1f;
 
 {% endhighlight %}
 
@@ -3104,7 +3104,7 @@ this.chartControl1.Series[0].ConfigItems.PieItem.HeightCoeficient = 0.1f;
 
 Me.chartControl1.Series(0).ConfigItems.PieItem.HeightByAreaDepth = False
 
-Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
+Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoefficient=0.1f
 
 {% endhighlight %}
 
@@ -3113,9 +3113,9 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
 
 ### Customization Options
 
-AngleOffset, Border, DisplayShadow, DisplayText, DoughnutCoeficient, DrawSeriesNameInDepth, ElementBorders, ExplodedAll, ExplodedIndex, ExplosionOffset
+AngleOffset, Border, DisplayShadow, DisplayText, DoughnutCoefficient, DrawSeriesNameInDepth, ElementBorders, ExplodedAll, ExplodedIndex, ExplosionOffset
 
-FillMode, Gradient, HeightByAreaDepth, HeightCoeficient, HighlightInterior, InSideRadius, OptimizePiePointPositions, PieType, ShadowInterior, ShadowOffset
+FillMode, Gradient, HeightByAreaDepth, HeightCoefficient, HighlightInterior, InSideRadius, OptimizePiePointPositions, PieType, ShadowInterior, ShadowOffset
 
 ShowTicks, VisibleAllPies, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
 
@@ -3123,7 +3123,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, Show
 
 ## Polar And Radar Chart
 
-Essentialchart supports the implementation of Polar and Radar charts in the chart control. These charts can be used to display different values and angles in the form of a graph.
+Essential chart supports the implementation of Polar and Radar charts in the chart control. These charts can be used to display different values and angles in the form of a graph.
 
 ### Polar Chart
 

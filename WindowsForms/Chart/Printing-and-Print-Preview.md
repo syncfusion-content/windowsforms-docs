@@ -67,7 +67,7 @@ Description</th></tr>
 <tr>
 <td>
 PrintColorMode</td><td>
-Indicates the color mode during printing. Possible Values:* Color - Always Print in Color.* GrayScale - Always Print using GrayScale.* CheckPrinter - If printer allows color print in color, otherwise use grayscale (default setting).</td></tr>
+Indicates the color mode during printing. Possible Values:* Color - Always Print in Color.* GrayScale - Always Print using GrayScale.* CheckPrinter - If printer allows color print in color, otherwise use gray scale (default setting).</td></tr>
 </table>
 
 

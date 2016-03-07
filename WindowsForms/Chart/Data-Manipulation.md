@@ -13,7 +13,7 @@ Essential Chart provides a series model implementation that works directly on to
 
 ## Grouping Support
 
-The enterprise version of Essential Chart includes Essential Grouping that allows EssentialChart to implement a series model that works directly on top of grouped data. All the key advantages of Essential Grouping carry over into thegrouping support in Essential Chart. Filters, summaries and computed expressions are all supported in EssentialChart. With EssentialChart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
+The enterprise version of Essential Chart includes Essential Grouping that allows EssentialChart to implement a series model that works directly on top of grouped data. All the key advantages of Essential Grouping carry over into the grouping support in Essential Chart. Filters, summaries and computed expressions are all supported in EssentialChart. With EssentialChart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
 
 The following image displays stock data that is grouped by symbol to calculate the total volume. The data contains discrete transaction details with symbol information, volume, and price. 
 

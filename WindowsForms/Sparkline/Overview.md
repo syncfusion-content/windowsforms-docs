@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-A Sparkline controlis a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
+A Sparkline control is a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
 
 ### Use Case Scenarios
 
@@ -138,7 +138,7 @@ To access a Sparkline sample Demo:
 
 ### Types of Sparklines
 
-Presently, SyncfusionSparkLine control supports three types of Sparklines and the sparkline control must be bound to a data source. It supports a variety of datasource such as DataTable and any component that implements the interface IEumerable, ICollection, IList. 
+Presently, SyncfusionSparkLine control supports three types of Sparklines and the sparkline control must be bound to a data source. It supports a variety of datasource such as DataTable and any component that implements the interface IEnumerable, ICollection, IList. 
 
 * Line
 * Column
@@ -308,7 +308,7 @@ Gets or sets the marker color for line type sparkline. This property color is se
 <tr>
 <td>
 HighPointColor</td><td>
-Gets or sets the high point color for  line type sparkline. This property color is set to sparkline marker when enablinge the ShowHighPoint property.</td></tr>
+Gets or sets the high point color for  line type sparkline. This property color is set to sparkline marker when enabling the ShowHighPoint property.</td></tr>
 <tr>
 <td>
 LowPointColor</td><td>
