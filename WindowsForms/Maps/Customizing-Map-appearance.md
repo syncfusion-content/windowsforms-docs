@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing Map appearance
 
-The Rangecolormapping is used to differentiate the shape’s fill, based on its underlying value and color ranges. From and To properties defines the value ranges and the Color property defines the equivalent color.
+The RangeColorMapping is used to differentiate the shape’s fill, based on its underlying value and color ranges. From and To properties defines the value ranges and the Color property defines the equivalent color.
 
 
 
