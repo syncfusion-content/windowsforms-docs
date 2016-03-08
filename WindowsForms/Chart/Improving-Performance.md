@@ -23,7 +23,7 @@ Instructs the chart to calculate the axes ranges only before painting and not at
 <tr>
 <td>
 CalcRegions</td><td>
-This property by default is true. This controls the Tooltips, Autohighlighting properties and RegionHit events. If these properties and events are not used, this property can be set to false for better performance.</td></tr>
+This property by default is true. This controls the Tooltips, AutoHighlighting properties and RegionHit events. If these properties and events are not used, this property can be set to false for better performance.</td></tr>
 <tr>
 <td>
 ChartSeries.EnableStyles</td><td>

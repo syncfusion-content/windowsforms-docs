@@ -13,7 +13,7 @@ The `GridExcelConverterControl` provides support to import the content from Exce
 The [ExcelToGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~ExcelToGrid.html) method is used to import the entire Excel sheet to GridControl. In this technique, the entire cells from Excel sheet will be imported to GridControl. The following styles can be imported to GridControl from Excel,
 
 * Font
-* Backcolor and Forecolor
+* BackColor and ForeColor
 * Alignment
 * Borders
 * Images
@@ -23,7 +23,7 @@ The [ExcelToGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syn
 * Column width
 * Freeze panes
 
-The following example shows the Gridcontrol is imported from Excel sheet,
+The following example shows the GridControl is imported from Excel sheet,
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
@@ -108,7 +108,7 @@ The following two methods are used to import the Excel as virtually,
 * [ConvertExcelStylesToGridStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~ConvertExcelStyleToVirtualGridStyle.html)
 * [ExcelToVirtualGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~ExcelToVirtualGrid.html)
 
-The ` ConvertExcelStylesToGridStyles` method is used to convert the Excel cell to grid cell. Using this method, the Excel cell’s font styles, backcolor, alignment, TextColor, borders will be imported. 
+The ` ConvertExcelStylesToGridStyles` method is used to convert the Excel cell to grid cell. Using this method, the Excel cell’s font styles, BackColor, alignment, TextColor, borders will be imported. 
 
 N> This method has to be used in [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html) event. 
 

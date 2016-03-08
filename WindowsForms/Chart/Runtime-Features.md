@@ -136,7 +136,7 @@ Me.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 
 N> Remember to enable zooming on both the axis using EnableXZooming and EnableYZooming properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
 
-### Formatted Axes Lables
+### Formatted Axes Labels
 
 It is possible to show formatted axes labels for a zoomed chart. EssentialChart'sSmartDateZoom property when set to true enables this feature. You can set any one of the following custom label formats to the chart axis. 
 
@@ -227,7 +227,7 @@ Clicking this toolbar command will copy the chart to the clipboard.</td></tr>
 <td>
 Styles</td><td>
 ChartToolBarStyleItem</td><td>
-This popsup a Chart Series Style dialog window, using which various properties and chart styles can be set. </td></tr>
+This pops up a Chart Series Style dialog window, using which various properties and chart styles can be set. </td></tr>
 <tr>
 <td>
 Print</td><td>
@@ -292,7 +292,7 @@ The zooming is reset using this command.</td></tr>
 <tr>
 <td>
 AutoHighlight</td><td>
-This command is used to enable the autohighlight feature in the chart series.</td></tr>
+This command is used to enable the auto highlight feature in the chart series.</td></tr>
 <tr>
 <td>
 ToggleXZooming</td><td>

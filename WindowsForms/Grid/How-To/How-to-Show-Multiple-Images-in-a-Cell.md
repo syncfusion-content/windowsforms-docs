@@ -38,7 +38,7 @@ To show multiple Images in a cell, you need to handle CellDrawn Event. Follow th
    {:.prettyprint}
 
 
-2. In the CellDrawn EventHandler, draw Combinedbitmap using DrawImage function.
+2. In the CellDrawn EventHandler, draw the combined bitmap using DrawImage function.
 
    Example
 

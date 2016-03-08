@@ -100,7 +100,7 @@ REFERENCE LINKS</th></tr>
 <tr>
 <td>
 ActivateCurrentCellBehavior</td><td>
-Used to set currentcell behaviour </td><td>
+Used to set CurrentCell behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
 {{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify}}</td></tr>
@@ -121,14 +121,14 @@ Enum</td><td>
 <tr>
 <td>
 ClickedOnDisabledCellBehavior</td><td>
-Disable to click behaviour </td><td>
+Disable to click behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
 {{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify}}</td></tr>
 <tr>
 <td>
 ShowCurrentCellBorderBehavior</td><td>
-To show currentcell border behaviour </td><td>
+To show CurrentCell border behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
 {{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify}}</td></tr>

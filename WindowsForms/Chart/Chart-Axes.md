@@ -1444,7 +1444,7 @@ Color of the tick mark. Default is System.ControlText.</td></tr>
 <tr>
 <td>
 TickLabelGridPadding</td><td>
-The padding between the tickmark in the axis and the label. Default is 5.</td></tr>
+The padding between the tick mark in the axis and the label. Default is 5.</td></tr>
 <tr>
 <td>
 TickDrawingOperationMode</td><td>
@@ -1700,7 +1700,7 @@ Specifies whether or not to draw the grid lines.</td></tr>
 <tr>
 <td>
 GridLineType.ForeColor</td><td>
-The forecolor of the line.</td></tr>
+The fore color of the line.</td></tr>
 <tr>
 <td>
 GridLineType.BackColor</td><td>
@@ -1989,7 +1989,7 @@ There are three possible modes. They are,
 * Breaks don't work with zooming.
 * Breaks don't work with stacking.
 
-All breaks work only with decart axes.
+All breaks work only with cartesian axes.
 
 
 
@@ -2130,7 +2130,7 @@ This feature enables you to specify the position of the label for an axis. You c
 
 ### Use Case Scenarios
 
-When you have lengthy label for thechart axis, it will occupy more space. So the plotted chart area will get reduced. You can avoid this using this feature. 
+When you have lengthy label for the chart axis, it will occupy more space. So the plotted chart area will get reduced. You can avoid this using this feature. 
 
 _Properties_
 

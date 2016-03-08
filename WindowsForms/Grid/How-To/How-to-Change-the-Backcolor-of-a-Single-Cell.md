@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Change the Backcolor of a Single Cell
+# How to Change the BackColor of a Single Cell
 
 ## Introduction
 

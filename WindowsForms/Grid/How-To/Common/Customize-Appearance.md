@@ -13,7 +13,7 @@ Essential Grid provides support to display horizontal and vertical lines and cus
 
 ## Displaying Horizontal Lines
 
-You can display horizontal lined using DisplayHorizontalLinesproperty. 
+You can display horizontal lined using DisplayHorizontalLines property. 
 
 The following code illustrates how to display horizontal lines in GridControl: 
 

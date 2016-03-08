@@ -208,7 +208,7 @@ Note that the user can drag the legend around during run time. He can dock it to
 
 ### Changing Legend Properties at Run Time
 
-The Legend's look and feel can also be customized during runtime. Double-clicking legend's text will pop up the below properties window. Properties set through this dialogue can be applied to the chart. 
+The Legend's look and feel can also be customized during runtime. Double-clicking legend's text will pop up the below properties window. Properties set through this dialog can be applied to the chart. 
 
 N> These settings will be lost when the application is closed.
 
@@ -526,7 +526,7 @@ Returns the child collection of the LegendItem.</td></tr>
 <tr>
 <td>
 IsChecked </td><td>
-Gets / sets the checkstate of the ChartLegendItem checkbox. By default it is set to true.</td></tr>
+Gets / sets the check state of the ChartLegendItem checkbox. By default it is set to true.</td></tr>
 <tr>
 <td>
 Visible</td><td>

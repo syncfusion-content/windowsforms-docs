@@ -13,7 +13,7 @@ documentation: ug
 
 ### GridControl
 
-To place a ComboBox in a header cell of GridControl, you must set CellType of the header to ComboBox and assign a valid data source (Choicelist or DataSource).
+To place a ComboBox in a header cell of GridControl, you must set CellType of the header to ComboBox and assign a valid data source (ChoiceList or DataSource).
 
 #### Example
 
@@ -57,7 +57,7 @@ Me.gridControl1(0,4).CellValue = "Combo"
 
 ### GridDataBoundGrid
 
-To place a ComboBox in a header cell of GridDataBoundGrid, you need to handle two events (QueryCellInfo and SaveCellInfo). Set the data source (Choicelist or DataSource) for the header cell in QueryCellInfo event handler and save the edited value back to datasource in SaveCellInfo event handler. 
+To place a ComboBox in a header cell of GridDataBoundGrid, you need to handle two events (QueryCellInfo and SaveCellInfo). Set the data source (ChoiceList or DataSource) for the header cell in QueryCellInfo event handler and save the edited value back to datasource in SaveCellInfo event handler. 
 
 #### Example
 

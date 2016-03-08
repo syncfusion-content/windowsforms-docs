@@ -14,7 +14,7 @@ Localization support allows to set the content according to the language or cult
 ## ILocalization interface
 
 To localize the content, create a class file and inherit [ILocalizationProvider](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface to the class. This interface consists of a method [GetLocalizedString](http://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider~GetLocalizedString.html) which gets the string and localize it. The enum property [GridResourceIdentifiers](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridResourceIdentifiers.html) and [ResourceIdentifiers](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) contains the resource identifiers specific to the GridControl.
-The following code will explain how to localize the **Alert Error Messagebox** which will be displayed at the time of cell content validation,
+The following code will explain how to localize the **Alert Error MessageBox** which will be displayed at the time of cell content validation,
 
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +68,7 @@ LocalizationProvider.Provider = New Localizer()
 {% endhighlight %}
 {% endtabs %}
 
-Only strings that are been used in GridControl can be localized; other text which are assigned by user (by other methods) needs to be set manually. So, to assign the custom error text for the current cell, make use of the [SetError](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~SetError.html) method in the [CurrenCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html) event.
+Only strings that are been used in GridControl can be localized; other text which are assigned by user (by other methods) needs to be set manually. So, to assign the custom error text for the current cell, make use of the [SetError](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~SetError.html) method in the [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}

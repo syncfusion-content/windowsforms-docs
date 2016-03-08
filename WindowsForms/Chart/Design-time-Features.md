@@ -69,7 +69,7 @@ ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
 
 ### Load Template
 
-EssentialChart provides support to load the saved Chart template into a new chart control. This loads the eries properties and the point properties, which was saved in a XML file and applies these properties into the new chart control.
+EssentialChart provides support to load the saved Chart template into a new chart control. This loads the series properties and the point properties, which was saved in a XML file and applies these properties into the new chart control.
 
 * At the design time, by selecting the Load Template from the context menu.
 * By clicking the Load Template designer verb, in the Visual Studio property browser. 

@@ -672,7 +672,7 @@ void converter_DrawHeader(Object sender, DocHeaderFooterEventArgs e)
 {% endtabs %}
 
 ![](Exporting_images/Exporting_img13.jpg)
-
+ 
 ## CSV Exporting
 The [GridCSVConverter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCSVConverter.html) lets you export the GridControl content to `CSV` format by using [GridToCSV](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCSVConverter~GridToCSV.html) method. In this technique, the content only will be exported without any styles.
 

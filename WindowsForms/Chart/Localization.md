@@ -57,7 +57,7 @@ Adding Localization to an application
 
 
 
-    N> It is mantatory to specify equivalent terms for all static element to localize the chart.
+    N> It is mandatory to specify equivalent terms for all static element to localize the chart.
 
 3. Specify the culture using the Localize property as given in the following code:
 

@@ -13,7 +13,7 @@ documentation: ug
 
 To have a cell that has a multi-selection dropdown grid, you must use a derived custom cell that is derived from GridDropDownGridCellModel and GridDropDownGridCellRenderer. 
 
-1. In the derived renderer, the code embeds GridControl whose ListBoxSelectionMode is set to MultiSimple. The renderer uses DropDownContainerCloseDropDown override to move the text in the selected rows of the embedded grid, into a string that is set into the style. The CellValue of the cell in the parent grid, which hosts this custom celltype lists the selected options as a hyphen delimited string for every column, and the NewLine delimited string for every row.
+1. In the derived renderer, the code embeds GridControl whose ListBoxSelectionMode is set to MultiSimple. The renderer uses DropDownContainerCloseDropDown override to move the text in the selected rows of the embedded grid, into a string that is set into the style. The CellValue of the cell in the parent grid, which hosts this custom CellType lists the selected options as a hyphen delimited string for every column, and the NewLine delimited string for every row.
 
 
 

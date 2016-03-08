@@ -47,7 +47,7 @@ this.gridControl1.SelectCellsMouseButtonsMask = System.Windows.Forms.MouseButton
 {% endtabs %}
 
 ### Restrict Cell Navigation Using Event
-The current cell navigation can be restricted by cancelling the [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivating_EV.html) event.
+The current cell navigation can be restricted by canceling the [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivating_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -210,7 +210,7 @@ The [GridWrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms
 * **WrapGrid** - Move to first row and column, when focus at the last row and last column.
 * **WrapRow** - Move to first column in next row or last column in previous row.
 * **None** - Don’t move current cell.
-* **NextControllnForm** - Activate next sibling control in the dialog when focus at the last row and last column or Activate previous sibling control in the dialog when focus at the first row and column.
+* **NextControlInForm** - Activate next sibling control in the dialog when focus at the last row and last column or Activate previous sibling control in the dialog when focus at the first row and column.
 
 {% tabs %}
 {% highlight c# %}

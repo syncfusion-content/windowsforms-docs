@@ -11,7 +11,7 @@ documentation: ug
 
 You can resize the row height based on the cell content height using ResizingRows event. Calculate the content height using MeasuringString() method. This considers the text, font style and font size to calculate the content size. Assign the calculated value to RowHeights property.
 
-You can resize the rows individually using AllowResizingIndividualRows() method of GridHelperclasses. This method will be effective only when used before InitializeComponent().
+You can resize the rows individually using AllowResizingIndividualRows() method of GridHelperClasses. This method will be effective only when used before InitializeComponent().
 
 The following code illustrates resizing rows based on the grid cell content: 
 

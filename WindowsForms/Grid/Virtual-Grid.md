@@ -396,7 +396,7 @@ End Sub
 ![](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img2.jpeg)
 
 
-## Colum Width
+## Column Width
 
 For changing the width of the column in the Virtual Grid, make use of the [QueryColWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryColWidth_EV.html#) event. This event is used to return column widths that are in demand. The `e.Size` property handles the width.
 
