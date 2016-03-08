@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Simulate-a-Particular-button-in-the-Calculator? | WindowsForms | Syncfusion
+title: How-to-Simulate-a-Particular-button-in-the-Calculator? | Windows Forms | Syncfusion
 description: how to simulate a particular button in the calculator?
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

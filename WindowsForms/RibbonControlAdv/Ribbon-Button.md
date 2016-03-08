@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-Button| WindowsForms | Syncfusion
+title: Ribbon-Button| Windows Forms | Syncfusion
 description:  ribbon button
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon Button
+# ToolStripButton
 
 ToolStripButton can be added to a ToolStripEx directly or through a panel. 
 
@@ -16,7 +16,7 @@ ToolStripButton can be added to a ToolStripEx directly or through a panel.
 
 The below properties controls the appearance and behavior of the ToolStripButton.
 
-### Foreground Settings
+## Foreground Settings
 
 <table>
 <tr>
@@ -49,7 +49,7 @@ TextImageRelation<br/><br/></td><td>
 Specifies the relative location of the image to the text on the item. The options are,<br/><br/>{{'__Overlay__ '| markdownify }}- Image and text shares the same space in the control,<br/><br/>{{'__ImageAboveText__ '| markdownify }}- Image will be placed above the text,<br/><br/>{{'__TextAboveImage__ '| markdownify }}- Text will be placed above the image,<br/><br/>{{'__ImageBeforeText__ '| markdownify }}- Image will be placed before the text and <br/><br/>{{'__TextBeforeImage__ '| markdownify }}- Text will be placed before the image.<br/><br/></td></tr>
 </table>
 
-### Image Settings
+## Image Settings
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ ImageTransparentColor<br/><br/></td><td>
 Sets the transparent color on the image, that supports transparency.<br/><br/></td></tr>
 </table>
 
-### Style Settings
+## Style Settings
 
 <table>
 <tr>
@@ -115,7 +115,7 @@ AutoSize<br/><br/></td><td>
 Specifies whether the item should size itself based on its image and text.<br/><br/></td></tr>
 </table>
 
-### ToolTip Settings
+## ToolTip Settings
 
 <table>
 <tr>
@@ -132,7 +132,7 @@ ToolTipText<br/><br/></td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></tr>
 </table>
 
-### RTL Support
+## RTL Support
 
 <table>
 <tr>

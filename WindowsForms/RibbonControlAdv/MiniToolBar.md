@@ -1,15 +1,15 @@
 ---
 layout: post
-title: MiniToolbar | WindowsForms | Syncfusion
+title: MiniToolbar | Windows Forms | Syncfusion
 description: minitoolbar
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
 # MiniToolBar
 
-Essential Tools comes with MiniToolBar control with similar look and feel of MS Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focused on it, it will be prominent to the users. 
+Essential Tools comes with MiniToolBar control with similar look and feel of MS Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focussed on it, it will be prominent to the users. 
 
 ![](MiniToolbar_images/MiniToolbar_img4.jpg)
 
@@ -338,7 +338,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 ClickedItem<br/><br/></td><td>
-Gets the item that is clicked on System.Windows.Forms.ToolStrip.<br/><br/></td></tr>
+Gets the item that is clicked on System.Windows.Forms.Toolstrip.<br/><br/></td></tr>
 </table>
 {% tabs %}
 
@@ -424,7 +424,7 @@ End Sub
 
 ### BeginDrag Event
 
-This event is handled when the tool strip has started to move with a ToolStripPanel.
+This event is handled when the toolstrip has started to move with a ToolStripPanel.
 
 {% tabs %}
 

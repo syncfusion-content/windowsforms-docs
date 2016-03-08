@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Supported-Controls | WindowsForms | Syncfusion
+title: Supported-Controls | Windows Forms | Syncfusion
 description: supported controls  
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

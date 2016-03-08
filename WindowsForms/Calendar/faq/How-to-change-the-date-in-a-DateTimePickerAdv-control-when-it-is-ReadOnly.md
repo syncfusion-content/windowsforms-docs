@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to change the date in a DateTimePickerAdv control, when it is ReadOnly? | WindowsForms | Syncfusion
+title: How to change the date in a DateTimePickerAdv control, when it is ReadOnly? | Windows Forms | Syncfusion
 description: how to change the date in a datetimepickeradv control, when it is readonly?
-platform: WindowsForms
+platform: windowsforms
 control: Calendar 
 documentation: ug
 ---

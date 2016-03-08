@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Slide Direction | WindowsForms | Syncfusion
+title: Slide Direction | Windows Forms | Syncfusion
 description: Slide Direction
-platform: WindowsForms
+platform: windowsforms
 control: SplashPanel
 documentation: ug
 ---

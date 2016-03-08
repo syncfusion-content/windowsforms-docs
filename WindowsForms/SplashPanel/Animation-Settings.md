@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Animation-Settings | WindowsForms | Syncfusion
+title: Animation-Settings | Windows Forms | Syncfusion
 description: animation settings
-platform: WindowsForms
+platform: windowsforms
 control: SplashPanel
 documentation: ug
 ---
@@ -117,7 +117,7 @@ Indicates whether the SplashPanel should not be closed when the mouse is over it
 </table>
 
 
-This property which is available in SplashPanel, when enabled, will close the SplashPanel at run time before the specified time interval ends, when the mouse is moved over it. By default this will be set to 'False'.
+Thisproperty which is available in SplashPanel, when enabled, will close the SplashPanel at run time before the specified time interval ends, when the mouse is moved over it. By default this will be set to 'False'.
 
 N> The CloseOnClick property can also be used to close the SplashPanel by a single mouse click._
 
@@ -241,11 +241,11 @@ Specifies the brush style.Solid,Pattern andGradient.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
-Specifies the back color of the control.</td></tr>
+Specifies the backcolor of the control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Specifies the fore color for any text or graphics in the control.</td></tr>
+Specifies the forecolor for any text or graphics in the control.</td></tr>
 <tr>
 <td>
 GradientStyle</td><td>
@@ -326,7 +326,7 @@ Indicates whether the SplashPanel gets closed when the user clicks on it.</td></
 </table>
 
 
-When the AllowMove property is set to 'True', the user will be allowed to click within the SplashPanel and move the SplashPanel on the screen.
+When the AllowMove property is setto 'True', the user will be allowed to click within the SplashPanel and move the SplashPanel on the screen.
 
 When the AllowResize property is set to 'True', resize handles will be displayed when the user moves the mouse near the border of the SplashPanel.
 

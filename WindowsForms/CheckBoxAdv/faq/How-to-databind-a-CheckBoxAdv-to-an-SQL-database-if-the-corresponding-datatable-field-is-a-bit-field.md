@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-a-bit-field | WindowsForms | Syncfusion
+title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-a-bit-field | Windows Forms | Syncfusion
 description: how to databind a checkboxadv to an sql database if the corresponding datatable field is a bit field
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# How to data bind a CheckBoxAdv to an SQL database if the corresponding data table field is a bit field
+# How to databind a CheckBoxAdv to an SQL database if the corresponding datatable field is a bit field
 
-The CheckBoxAdv's IntValue property can be used to data bind bit values as illustrated below.
+The CheckBoxAdv's IntValue property can be used to databind bit values as illustrated below.
 
 {% highlight c# %}
 

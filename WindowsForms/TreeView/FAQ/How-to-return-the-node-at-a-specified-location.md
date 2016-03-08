@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-return-the-node-at-a-specified-location | WindowsForms | Syncfusion
+title: How-to-return-the-node-at-a-specified-location | Windows Forms | Syncfusion
 description: how to return the node at a specified location
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
@@ -24,7 +24,7 @@ pt</td><td>
 Indicates the location.</td></tr>
 <tr>
 <td>
-text bounds</td><td>
+textbounds</td><td>
 Indicates whether testing will be done using the bounds of text and not the whole bounds of the node.</td></tr>
 <tr>
 <td>

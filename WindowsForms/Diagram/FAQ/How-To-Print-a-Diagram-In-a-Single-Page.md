@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Print a Diagram In a Single Page | Diagram | WindowsForms | Syncfusion
+title: How To Print a Diagram In a Single Page | Diagram | Windows Forms | Syncfusion
 description: how to print a diagram in a single page
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

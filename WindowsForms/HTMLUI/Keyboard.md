@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Keyboard | WindowsForms | Syncfusion
+title: Keyboard | Windows Forms | Syncfusion
 description:  keyboard
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

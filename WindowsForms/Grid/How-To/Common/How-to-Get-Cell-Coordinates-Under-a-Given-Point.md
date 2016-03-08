@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-Cell-Coordinates-Under-a-Given-Point | WindowsForms | Syncfusion
+title: How-to-Get-Cell-Coordinates-Under-a-Given-Point | Windows Forms | Syncfusion
 description: how to get cell coordinates under a given point
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

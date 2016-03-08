@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-Gallery| WindowsForms | Syncfusion
+title: Ribbon-Gallery| Windows Forms | Syncfusion
 description:  ribbon gallery
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon Gallery
+# ToolStripGallery
 
 Essential Tools RibbonControlAdv provides options to add a collection of items and store them into a gallery. A gallery can be added to a ToolStripTabItem using Items Collection Editor.
 
@@ -143,6 +143,7 @@ Description<br/><br/></th></tr>
 ItemBackColor<br/><br/></td><td>
 Sets the back color for the items.<br/><br/></td></tr>
 </table>
+
 ### Style Settings
 
 <table>

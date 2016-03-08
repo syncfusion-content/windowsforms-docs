@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-implemented-in-the-SplitterCon | WindowsForms | Syncfusion
+title: What-are-the-events-implemented-in-the-SplitterCon | Windows Forms | Syncfusion
 description: what are the events implemented in the splittercontrol
-platform: WindowsForms
+platform: windowsforms
 control: Splitter
 documentation: ug
 ---
@@ -28,11 +28,11 @@ SplitBarsChanged</td><td>
 Triggers when the SplitBars property has changed.</td></tr>
 <tr>
 <td>
-VSplitPostChanged</td><td>
+VSplitPosChanged</td><td>
 Triggers when the vertical splitter position has changed.</td></tr>
 <tr>
 <td>
-HSplitPostChanged</td><td>
+HSplitPosChanged</td><td>
 Triggers when the horizontal splitter position has changed.</td></tr>
 <tr>
 <td>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DataSource | WindowsForms | Syncfusion
+title: DataSource | Windows Forms | Syncfusion
 description: DataSource
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---
@@ -83,7 +83,7 @@ Description</th></tr>
 <tr>
 <td>
 AutoCompleteSource</td><td>
-Auto completion source for the control. The different sources are,{{ 'FileSystem' | markdownify }} - Files system as source,{{ 'HistoryList' | markdownify }} - Includes all the URLs in the history list,{{ 'RecentlyUsedList' | markdownify }} - Includes the list of most recently used URLs,{{ 'AllUrl' | markdownify }} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{ 'AllSystemSources' | markdownify }} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompleteMode is set to values other than default value),{{ 'ListItems' | markdownify }} - Specifies the items in the control, {{ 'FileSystemDirectories' | markdownify }} - Specifies directory names alone without file names,{{ 'CustomSource' | markdownify }} - Uses the string values entered in AutoCompleteCustomSource property and{{ 'None' | markdownify }} - There is no source for the auto completion.</td></tr>
+Auto completion source for the control. The different sources are,{{ 'FileSystem' | markdownify }} - Files system as source,{{ 'HistoryList' | markdownify }} - Includes all the URLs in the history list,{{ 'RecentlyUsedList' | markdownify }} - Includes the list of most recently used URLs,{{ 'AllUrl' | markdownify }} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{ 'AllSystemSources' | markdownify }} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompletMode is set to values other than default value),{{ 'ListItems' | markdownify }} - Specifies the items in the control, {{ 'FileSystemDirectories' | markdownify }} - Specifies directory names alone without file names,{{ 'CustomSource' | markdownify }} - Uses the string values entered in AutoCompleteCustomSource property and{{ 'None' | markdownify }} - There is no source for the auto completion.</td></tr>
 </table>
 
 
@@ -245,7 +245,7 @@ You can specify an external datasource for the AutoComplete control to use as th
    ~~~
    {:.prettprint}
 
-3. AutoCompleteItemSelected event is raised when you select a new item has, when the AutoComplete dropdown list is displayed. In this event, for example, the code to display corresponding OrgID of the OrganizationName on the label is included. The following code retrieves the corresponding item from the datasource, for the selected item in the AutoComplete control.
+3. AutoCompleteItemSelected event is raised when you select a new item has, when the AutoComplete dropdown list is displayed. In this event, for example, the code to display corresponding OrgID of the OrganisationName on the label is included. The following code retrieves the corresponding item from the datasource, for the selected item in the AutoComplete control.
 
 
 

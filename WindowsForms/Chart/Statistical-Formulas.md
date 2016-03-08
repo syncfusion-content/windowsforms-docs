@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Statistical-Formulas | WindowsForms | Syncfusion
+title: Statistical-Formulas | Windows Forms | Syncfusion
 description: statistical formulas
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---

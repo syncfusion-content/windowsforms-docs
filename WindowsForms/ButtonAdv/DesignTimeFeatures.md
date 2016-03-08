@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Design Time Features | WindowsForms | Syncfusion
+title: Design Time Features | Windows Forms | Syncfusion
 description: Design Time Features
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

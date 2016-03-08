@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SplashControl-Events | WindowsForms | Syncfusion
+title: SplashControl-Events | Windows Forms | Syncfusion
 description: splashcontrol events
-platform: WindowsForms
+platform: windowsforms
 control: SplashControl
 documentation: ug
 ---
@@ -204,7 +204,7 @@ End Sub
 ![](Overview_images/Overview_img40.jpeg) 
 
 
-BeforeSplash event is raised when the BeforeSplashNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm before the splash window is displayed.
+BeforeSplashevent is raised when the BeforeSplashNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm before the splash window is displayed.
 
 {% highlight c# %}
 
@@ -263,7 +263,7 @@ End Sub
 ![](Overview_images/Overview_img41.jpeg) 
 
 
-SplashDisplayed event will be triggered when the SplashDisplayedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is displayed.
+SplashDisplayedevent will be triggered when the SplashDisplayedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is displayed.
 
 {% highlight c# %}
 
@@ -322,7 +322,7 @@ End Sub
 ![](Overview_images/Overview_img42.jpeg) 
 
 
-SplashClosing event is raised when the SplashClosingNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closing.
+SplashClosingevent is raised when the SplashClosingNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closing.
 
 {% highlight c# %}
 
@@ -381,7 +381,7 @@ End Sub
 ![](Overview_images/Overview_img43.jpeg) 
 
 
-SplashClosed event is raised when the SplashClosedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closed.
+SplashClosedevent is raised when the SplashClosedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closed.
 
 {% highlight c# %}
 

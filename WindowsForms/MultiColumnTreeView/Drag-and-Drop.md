@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Drag-and-Drop | WindowsForms | Syncfusion
+title: Drag-and-Drop | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---

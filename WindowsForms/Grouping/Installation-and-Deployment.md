@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion
+title: Installation-and-Deployment | Windows Forms | Syncfusion
 description: installation and deployment
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---
@@ -94,7 +94,7 @@ The steps to view the Grouping samples in various platforms are discussed below:
 
 
 
-2. Click Grouping from the bottom-left pane.The Grouping samples are displayed.
+2. Click Grouping from thebottom-left pane.The Grouping samples are displayed.
 
 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Group a Collection | WindowsForms | Syncfusion
+title: How to Group a Collection | Windows Forms | Syncfusion
 description: How to Group a Collection
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Single-Row | WindowsForms | Syncfusion
+title: How-to-Change-the-Backcolor-of-a-Single-Row | Windows Forms | Syncfusion
 description: how to change the backcolor of a single row
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

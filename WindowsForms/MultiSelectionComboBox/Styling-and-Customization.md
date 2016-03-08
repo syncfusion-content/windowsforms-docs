@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styling-and-Customization | WindowsForms | Syncfusion
+title: Styling-and-Customization | Windows Forms | Syncfusion
 description: styling and customization
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
@@ -71,7 +71,7 @@ Me.MultiSelectionComboBox1.GroupHeaderForeColor = Color.White
 
 ### Grouping Header Separator Color
 
-Grouping Header Separator Color can be customized using GroupHeaderSeparatorColor property.
+Grouping Header Separator Color can be customized using GroupHeaderSeperatorColor property.
 
 ![10](Overview_images/Overview_img347.png) 
 

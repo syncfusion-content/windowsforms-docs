@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-detect-when-VisualItemCollection-is-modified-in-MultiSelectionComboBox | WindowsForms | Syncfusion
+title: How-to-detect-when-VisualItemCollection-is-modified-in-MultiSelectionComboBox | Windows Forms | Syncfusion
 description: how to detect when visualitemcollection is modified in multiselectioncombobox
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

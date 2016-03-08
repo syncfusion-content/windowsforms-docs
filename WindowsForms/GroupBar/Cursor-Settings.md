@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Cursor Settings  | WindowsForms | Syncfusion
+title: Cursor Settings  | Windows Forms | Syncfusion
 description: Cursor Settings 
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment | WindowsForms | Syncfusion
+title: Alignment | Windows Forms | Syncfusion
 description: alignment
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---
@@ -19,7 +19,7 @@ Description</th></tr>
 <tr>
 <td>
 Alignment</td><td>
-Specifies the alignment of tab items with respect to the tab pages. The options include:Top,Bottom,Left,Right</td></tr>
+Specifies the alignment of tabitems with respect to the tab pages. The options include:Top,Bottom,Left,Right</td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
@@ -27,7 +27,7 @@ Specifies whether the tabs are aligned to the Top, Bottom or based on the RightT
 <tr>
 <td>
 TabGap</td><td>
-Specifies the space between the tab items.</td></tr>
+Specifies the space between the tabitems.</td></tr>
 <tr>
 <td>
 Top</td><td>
@@ -76,11 +76,11 @@ Description</th></tr>
 <tr>
 <td>
 TextAlignment</td><td>
-Specifies horizontal alignment for the text of the tab item.</td></tr>
+Specifies horizontal alignment for the text of the tabitem.</td></tr>
 <tr>
 <td>
 TextLineAlignment</td><td>
-Specifies vertical alignment for the text of the tab item.</td></tr>
+Specifies vertical alignment for the text of the tabitem.</td></tr>
 </table>
 
 {% tabs %}
@@ -125,7 +125,7 @@ Allows the Tabs to be arranged in multiple lines when the Tabs exceed the width 
 <tr>
 <td>
 MultilineText</td><td>
-Allows the tab item's text to be placed in more than one line.</td></tr>
+Allows the tabitem's text to be placed in more than one line.</td></tr>
 </table>
 
 {% tabs %}

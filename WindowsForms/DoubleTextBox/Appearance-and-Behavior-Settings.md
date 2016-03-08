@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance and Behavior Settings | WindowsForms | Syncfusion
+title: Appearance and Behavior Settings | Windows Forms | Syncfusion
 description: appearance and behavior settings
-platform: WindowsForms
+platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
@@ -16,7 +16,7 @@ This section discusses the complete Appearance and behavior settings of Double T
 
 #### Color
 
-Colors can be applied for Double textbox when its value is positive, negative or zero. Refer [Color Settings](/windowsforms/currencytextbox/appearance#color-settings) of Currency textbox for details.
+Colors can be applied for Double textbox when its value is positive, negative or zero. Refer [Color Settings](/windowsforms/currencytextbox/appearance#color-settings)of Currency textbox for details.
 
 #### Keyboard Support
 
@@ -32,4 +32,4 @@ The Double TextBox class is globalization aware and uses System.Globalization.C
 
 #### Active When Disabled
 
-We can make the control active even when it is in Disable mode. Refer [Active When Disabled](/windowsforms/currencytextbox/faq/how-to-make-the-text-active-when-the-control-is-disabled) of Currency textbox in detail.
+We can make the control active even when it is in Disable mode. Refer [Active When Disabled](/windowsforms/currencytextbox/faq/how-to-make-the-text-active-when-the-control-is-disabled)of Currency textbox in detail.

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to delete the items in the list at runtime | WindowsForms | Syncfusion
+title: How to delete the items in the list at runtime | Windows Forms | Syncfusion
 description: How to delete the items in the list at runtime
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

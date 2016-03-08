@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button-Settings | WindowsForms | Syncfusion
+title: Button-Settings | Windows Forms | Syncfusion
 description: button settings
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -33,7 +33,7 @@ Me.tabbedMDIManager.DropDownButtonVisible = True
 
 {% endhighlight %}
 
-The visual dropdown styles can be set by handling the BeforeDropDownPopup event using the below code snippet.
+The visual dropdown styles can be set by handling the BeforeDropDownPopup eventusing the below code snippet.
 
 {% highlight c# %}
 

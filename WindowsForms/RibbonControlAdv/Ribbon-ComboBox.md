@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ribbon-ComboBox| WindowsForms | Syncfusion
+title: Ribbon-ComboBox| Windows Forms | Syncfusion
 description:  ribbon combobox
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
-# Ribbon ComboBox
+# ToolStripComboBox
 
 ToolStripComboBox control is used to display the list of items, as ComboBox. It can be added to a ToolStripEx directly or through a panel. 
 
@@ -14,7 +14,7 @@ ToolStripComboBox control is used to display the list of items, as ComboBox. It 
 
 The below properties controls the appearance and behavior of the ToolStripComboBox.
 
-### Foreground Settings
+## Foreground Settings
 
 <table>
 <tr>
@@ -39,7 +39,7 @@ Text<br/><br/></td><td>
 Sets the text for the ComboBox item.<br/><br/></td></tr>
 </table>
 
-### Style Settings
+## Style Settings
 
 <table>
 <tr>
@@ -72,7 +72,7 @@ FlatStyle<br/><br/></td><td>
 Sets the display style of the combobox. The styles are,<br/><br/>Flat,<br/><br/>Popup,<br/><br/>Standard and <br/><br/>System.<br/><br/></td></tr>
 </table>
 
-### ToolTip Settings
+## ToolTip Settings
 
 <table>
 <tr>
@@ -89,7 +89,7 @@ ToolTipText<br/><br/></td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></tr>
 </table>
 
-### RTL Support
+## RTL Support
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ RightToLeft<br/><br/></td><td>
 Indicates whether the item should draw right to left for RTL languages.<br/><br/></td></tr>
 </table>
 
-### DropDown settings
+## DropDown settings
 
 <table>
 <tr>
@@ -154,4 +154,4 @@ Indicates text completion behavior of the combo box. The modes are,<br/><br/>{{'
 ShortCut on Form1<br/><br/></td><td>
 Specifies the Keyboard shortcut to be used at run time to access this combobox.<br/><br/></td></tr>
 </table>
-N> We can set banner text for the ComboBox control. Refer [BannerTextProvider Component](http://docs.syncfusion.com/windowsforms/bannertextprovider/overview#overview) topic for more details.
+N> We can set banner text for the ComboBox control. Refer [BannerTextProvider Component](http://help.syncfusion.com/windowsforms/bannertextprovider/overview#overview) topic for more details.

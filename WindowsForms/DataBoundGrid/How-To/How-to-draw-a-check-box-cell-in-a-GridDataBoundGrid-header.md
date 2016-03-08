@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-draw-a-check-box-cell-in-a-GridDataBoundGrid-header | WindowsForms | Syncfusion
+title: How-to-draw-a-check-box-cell-in-a-GridDataBoundGrid-header | Windows Forms | Syncfusion
 description: how to draw a check box cell in a griddataboundgrid header
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

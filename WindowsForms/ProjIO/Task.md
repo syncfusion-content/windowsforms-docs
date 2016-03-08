@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Task | WindowsForms | Syncfusion
+title: Task | Windows Forms | Syncfusion
 description: task
-platform: WindowsForms
+platform: windowsforms
 control: ProjIO
 documentation: ug
 ---

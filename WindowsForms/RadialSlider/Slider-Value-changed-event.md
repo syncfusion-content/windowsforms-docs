@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Slider-Value-changed-event | WindowsForms | Syncfusion
+title: Slider-Value-changed-event | Windows Forms | Syncfusion
 description: slider value changed event
-platform: WindowsForms
+platform: windowsforms
 control: RadialSlider 
 documentation: ug
 ---

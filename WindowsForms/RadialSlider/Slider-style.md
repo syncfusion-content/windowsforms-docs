@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Slider-style | WindowsForms | Syncfusion
+title: Slider-style | Windows Forms | Syncfusion
 description: slider style
-platform: WindowsForms
+platform: windowsforms
 control: RadialSlider 
 documentation: ug
 ---

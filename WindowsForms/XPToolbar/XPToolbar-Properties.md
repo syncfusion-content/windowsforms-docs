@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPToolbar-Properties | WindowsForms | Syncfusion
+title: XPToolbar-Properties | Windows Forms | Syncfusion
 description: xptoolbar properties
-platform: WindowsForms
+platform: windowsforms
 control: XPToolbar
 documentation: ug
 ---
@@ -28,7 +28,7 @@ BackgroundImage</td><td>
 Sets the background image for the XPToolbar.</td></tr>
 <tr>
 <td>
-BackgroundImage layout</td><td>
+BackgroundImagelayout</td><td>
 Specifies the layout of the image. Title, Center, Stretch, Zoom are the option. Default value is Tile.</td></tr>
 <tr>
 <td>

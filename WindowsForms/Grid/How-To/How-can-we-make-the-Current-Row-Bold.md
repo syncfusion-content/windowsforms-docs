@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-can-we-make-the-Current-Row-Bold | WindowsForms | Syncfusion
+title: How-can-we-make-the-Current-Row-Bold | Windows Forms | Syncfusion
 description: how can we make the current row bold?
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---
@@ -11,8 +11,8 @@ documentation: ug
 
 To make the current row bold, use the below code sample.
 
-{% highlight c# %}
 
+{% highlight c#  %}
 
 
 //There is no current row at this point, so refresh removes the bold text.
@@ -93,12 +93,12 @@ private void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewSty
 
 }   
 
-{% endhighlight  %}
-
-{% highlight vbnet %}
 
 
+{% endhighlight   %}
 
+
+{% highlight vbnet  %}
 //Adds the handlers...
 
 AddHandler Me.gridControl1.CurrentCellDeactivated, New GridCurrentCellDeactivatedEventHandler(AddressOf gridControl1_CurrentCellDeactivated)
@@ -123,7 +123,7 @@ AddHandler Me.gridControl1.PrepareViewStyleInfo, New GridPrepareViewStyleInfoEve
 
                 If (Not (cc.IsInMoveTo) _
 
-                       OrElse (cc.MoveToRowIndex &lt;&gt; cc.MoveFromRowIndex)) Then
+                       OrElse (cc.MoveToRowIndex <> cc.MoveFromRowIndex)) Then
 
                     grid.RefreshRange(GridRangeInfo.Row(e.RowIndex), GridRangeOptions.MergeAllSpannedCells)
 
@@ -147,7 +147,7 @@ AddHandler Me.gridControl1.PrepareViewStyleInfo, New GridPrepareViewStyleInfoEve
 
                 If ((Not (cc.IsInMoveTo) _
 
-                    OrElse (cc.MoveToRowIndex &lt;&gt; cc.MoveFromRowIndex)) _
+                    OrElse (cc.MoveToRowIndex <> cc.MoveFromRowIndex)) _
 
                     OrElse Not (cc.MoveFromActiveState)) Then
 
@@ -183,7 +183,7 @@ AddHandler Me.gridControl1.PrepareViewStyleInfo, New GridPrepareViewStyleInfoEve
 
         End Sub
 
-{% endhighlight  %}
 
 
+{% endhighlight   %}
 

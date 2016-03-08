@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML-Bookmarks | WindowsForms | Syncfusion
+title: HTML-Bookmarks | Windows Forms | Syncfusion
 description:  html bookmarks
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

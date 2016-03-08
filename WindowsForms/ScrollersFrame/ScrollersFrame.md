@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ScrollersFrame | WindowsForms | Syncfusion
+title: ScrollersFrame | Windows Forms | Syncfusion
 description: scrollersframe
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -74,7 +74,7 @@ The below images illustrates the controls that are added, before and after the s
 
 ## Scroll Settings in ScrollersFrame
 
-The horizontal and vertical scrollers has Value property, which represents the current position of the scroll box on the scroll bar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
+The horizontal and vertical scrollers has Value property, which represents the current position of the scrollbox on the scroll bar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
 
 
 <table>
@@ -88,7 +88,7 @@ HorizontalSmallChange</td><td>
 Gets / sets a value to be added or subtracted from the Value Property, when horizontal scroll box is moved a small distance. Default value is 1.</td></tr>
 <tr>
 <td>
-VerticalSmallChange</td><td>
+VerticallSmallChange</td><td>
 Gets / sets a value to be added or subtracted from the Value Property, when vertical scroll box is moved a small distance. Default value is 1.</td></tr>
 </table>
 

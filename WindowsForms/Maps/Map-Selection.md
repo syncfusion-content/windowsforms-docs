@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Map-Selection | WindowsForms | Syncfusion
+title: Map-Selection | Windows Forms | Syncfusion
 description: map selection
-platform: WindowsForms
+platform: windowsforms
 control: Maps
 documentation: ug
 ---

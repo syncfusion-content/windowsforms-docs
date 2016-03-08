@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-highlight-the-TabPage-text-using-HotTrack-p | WindowsForms | Syncfusion
+title: How-to-highlight-the-TabPage-text-using-HotTrack-p | Windows Forms | Syncfusion
 description: how to highlight the tabpage text using hottrack property
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

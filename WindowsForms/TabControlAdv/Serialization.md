@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization | WindowsForms | Syncfusion
+title: Serialization | Windows Forms | Syncfusion
 description: serialization
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---

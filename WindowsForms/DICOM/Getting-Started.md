@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: DICOM 
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Feature Summary
 
-Essential DICOM is a 100% native .NET library that converts the standard image formats to the DICOM format (.dc). Essential DICOM is a solution for users who need to convert the ordinary image formats namely JPEG, BMP, PNG, EMF, TIFF, GIF to the DICOM format. It requires a DICOM Viewer or an equivalent viewer to view the converted DICOM image.
+Essential DICOM is a 100% native .NET library that converts the standard image formats to the DICOM format (.dcm). Essential DICOM is a solution for users who need to convert the ordinary image formats namely JPEG, BMP, PNG, EMF, TIFF, GIF to the DICOM format. It requires a DICOM Viewer or an equivalent viewer to view the converted DICOM image.
 
 The following image shows the converted DICOM Image using Essential DICOM.
 

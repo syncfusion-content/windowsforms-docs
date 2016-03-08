@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Bind a Datasource to the Grouping Engine | WindowsForms | Syncfusion
+title: How to Bind a Datasource to the Grouping Engine | Windows Forms | Syncfusion
 description: How to Bind a Datasource to the Grouping Engine
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

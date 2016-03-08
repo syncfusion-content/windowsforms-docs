@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing-Appearance | WindowsForms | Syncfusion
+title: Customizing-Appearance | Windows Forms | Syncfusion
 description: customizing appearance
-platform: WindowsForms
+platform: windowsforms
 control: Schedule
 documentation: ug
 ---

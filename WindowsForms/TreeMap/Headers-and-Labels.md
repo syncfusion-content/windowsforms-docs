@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Headers-and-Labels | WindowsForms | Syncfusion
+title: Headers-and-Labels | Windows Forms | Syncfusion
 description: headers and labels
-platform: WindowsForms
+platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---

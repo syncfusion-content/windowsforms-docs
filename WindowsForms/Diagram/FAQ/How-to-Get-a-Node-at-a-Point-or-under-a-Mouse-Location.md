@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Get a Node at a Point or under a Mouse Loca | Diagram | WindowsForms | Syncfusion
+title: How to Get a Node at a Point or under a Mouse Loca | Diagram | Windows Forms | Syncfusion
 description: how to get a node at a point or under a mouse location?
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: FolderBrowserCallback Event | WindowsForms | Syncfusion
+title: FolderBrowserCallback Event | Windows Forms | Syncfusion
 description: folderbrowsercallback event
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
@@ -34,7 +34,7 @@ Gets / sets the contextual string based upon the FolderBrowserCallbackSetState p
 <tr>
 <td>
 FolderBrowserMessage</td><td>
-Returns a value indentify the event.</td></tr>
+Returns a value indentifying the event.</td></tr>
 <tr>
 <td>
 Path</td><td>

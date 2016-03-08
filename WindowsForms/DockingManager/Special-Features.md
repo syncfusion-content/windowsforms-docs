@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Special-Features | WindowsForms | Syncfusion
+title: Special-Features | Windows Forms | Syncfusion
 description: special features
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
@@ -72,7 +72,7 @@ DockAbility</td><td>
 Indicates where the user can dock in this control using drag providers.</td></tr>
 <tr>
 <td>
-OuterDockAbility</td><td>
+OuterDockAbilility</td><td>
 Indicates where the user can dock the controls in a form using the drag providers.</td></tr>
 </table>
 

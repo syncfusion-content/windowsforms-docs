@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customize-the-Distance-between-the-Tab-and-the-Control-in-TabbedMDIManager | WindowsForms | Syncfusion
+title: Customize-the-Distance-between-the-Tab-and-the-Control-in-TabbedMDIManager | Windows Forms | Syncfusion
 description: customize the distance between the tab and the control in tabbedmdimanager
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
 # Customize the Distance between the Tab and the Control in TabbedMDIManager
 
-The height between the Tab and the Control can be set using the BottomBorderHeight property of the TabHost. This property can be accessed by overriding the TabbedMDIManager as shown in the code snippet.
+The height between the Tab and the Control can be set using the BottomBorderHeight property of the TabHost. This property can be accessed by overriding the TabbdedMDIManager as shown in the code snippet.
 
 ![Description: Description: C:/Users/vallarasus/Desktop/CustomTabbedMDIManager.png](Customize-the-Distance-between-the-Tab-and-the-Con_images/Customize-the-Distance-between-the-Tab-and-the-Con_img1.png)
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style Settings | WindowsForms | Syncfusion
+title: Style Settings | Windows Forms | Syncfusion
 description: style settings
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Editors-Package | WindowsForms | Syncfusion
+title: Editors-Package | Windows Forms | Syncfusion
 description: editors package
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

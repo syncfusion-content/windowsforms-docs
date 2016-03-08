@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Control-Events | WindowsForms | Syncfusion
+title: Control-Events | Windows Forms | Syncfusion
 description: control events
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

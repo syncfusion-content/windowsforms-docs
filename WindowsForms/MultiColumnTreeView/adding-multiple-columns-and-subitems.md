@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Adding-Multiple-Columns-and-SubItems | WindowsForms | Syncfusion
+title: Adding-Multiple-Columns-and-SubItems | Windows Forms | Syncfusion
 description: adding multiple columns and subitems
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
@@ -128,7 +128,7 @@ LeftImagePadding</td><td>
 Sets the padding of the left image.</td></tr>
 <tr>
 <td>
-RightImagePadding</td><td>
+RightImagPadding</td><td>
 Sets the padding of the right image.</td></tr>
 <tr>
 <td>
@@ -213,7 +213,7 @@ You can add SubItems for the nodes using the SubItems Collection available in No
 
 ### Properties for Customizing the SubItems
 
-The below properties lets you customize the sub items using the SubItems Collection dialog.
+The below properties lets you customize the subitems using the SubItems Collection dialog.
 
 
 
@@ -229,11 +229,11 @@ Sets the alignment of the SubItem text.</td></tr>
 <tr>
 <td>
 Background</td><td>
-Sets the background for the sub item.</td></tr>
+Sets the background for the subitem.</td></tr>
 <tr>
 <td>
 LineAlignment</td><td>
-Sets the vertical alignment of the sub item text.</td></tr>
+Sets the vertical alignment of the subitem text.</td></tr>
 <tr>
 <td>
 Text</td><td>
@@ -245,7 +245,7 @@ Sets the color for the SubItem text.</td></tr>
 <tr>
 <td>
 Visible</td><td>
-Sets the visibility of the sub item.</td></tr>
+Sets the visibility of the subitem.</td></tr>
 <tr>
 <td>
 BaseStyle</td><td>
@@ -273,7 +273,7 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 </table>
 
 
-The below image displays sub items with similar settings in the property grid above.
+The below image displays subitems with similar settings in the property grid above.
 
 ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img7.jpeg) 
 

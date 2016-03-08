@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-export-CellCommentTips-to-Excel-using-GridExcelConverterControl | WindowsForms | Syncfusion
+title: How-to-export-CellCommentTips-to-Excel-using-GridExcelConverterControl | Windows Forms | Syncfusion
 description: how to export cellcommenttips to excel using gridexcelconvertercontrol
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

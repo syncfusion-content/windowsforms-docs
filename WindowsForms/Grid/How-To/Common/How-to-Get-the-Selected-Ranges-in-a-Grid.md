@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-the-Selected-Ranges-in-a-Grid | WindowsForms | Syncfusion
+title: How-to-Get-the-Selected-Ranges-in-a-Grid | Windows Forms | Syncfusion
 description: how to get the selected ranges in a grid
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

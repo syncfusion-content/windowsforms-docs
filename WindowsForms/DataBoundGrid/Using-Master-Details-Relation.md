@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using-Master-Details-Relation | WindowsForms | Syncfusion
+title: Using-Master-Details-Relation | Windows Forms | Syncfusion
 description: using master-details relation
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

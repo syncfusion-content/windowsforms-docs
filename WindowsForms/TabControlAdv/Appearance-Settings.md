@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
+title: Appearance-Settings | Windows Forms | Syncfusion
 description: appearance settings
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---
@@ -46,7 +46,7 @@ Specifies the alignment of the image relative to the text. The options include,L
 <tr>
 <td>
 ImageIndex</td><td>
-Gets / sets the image for the tab item.</td></tr>
+Gets / sets the image for the tabitem.</td></tr>
 </table>
 Code snippets showing the Image Settings
 
@@ -114,7 +114,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundImage</td><td>
-Specifies the background image for the tab page.</td></tr>
+Specifies the background image for the tabpage.</td></tr>
 <tr>
 <td>
 BackgroundImageLayout</td><td>
@@ -188,23 +188,23 @@ Description</th></tr>
 <tr>
 <td>
 ActiveTabColor</td><td>
-Specifies the back color for the selected tab.</td></tr>
+Specifies the backcolor for the selected tab.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
-Specifies the back color for all the TabPages.</td></tr>
+Specifies the backcolor for all the TabPages.</td></tr>
 <tr>
 <td>
 InActiveTabColor</td><td>
-Specifies the back color to be used for the InActive tabs.</td></tr>
+Specifies the backcolor to be used for the InActive tabs.</td></tr>
 <tr>
 <td>
 TabPanelBackColor</td><td>
-Specifies the color for the tab panel over which the tab items are laid.</td></tr>
+Specifies the color for the tabpanel over which the tabitems are laid.</td></tr>
 </table>
 BackColor Settings for the TabItems
 
-The BackColor of the individual tab items can be customized by setting the `TabBackColor` property of the corresponding tabpages.
+The BackColor of the individual tabitems can be customized by setting the `TabBackColor` property of the corresponding tabpages.
 
 <table>
 <tr>
@@ -214,7 +214,7 @@ Description</th></tr>
 <tr>
 <td>
 TabBackColor</td><td>
-Specifies the back color for the tab item.</td></tr>
+Specifies the backcolor for the tabitem.</td></tr>
 </table>
 
 {% tabs %}
@@ -273,11 +273,11 @@ Description</th></tr>
 <tr>
 <td>
 ActiveTabFont</td><td>
-Specifies the font of the selected tab item text.</td></tr>
+Specifies the font of the selected tabitem text.</td></tr>
 <tr>
 <td>
 Font</td><td>
-Specifies the font for all the tab item's text.</td></tr>
+Specifies the font for all the tabitem's text.</td></tr>
 </table>
 
 {% tabs %}
@@ -311,7 +311,7 @@ Description</th></tr>
 <tr>
 <td>
 TabFont</td><td>
-Specifies the Font for the tab item.</td></tr>
+Specifies the Font for the tabitem.</td></tr>
 </table>
 
 {% tabs %}
@@ -339,7 +339,7 @@ To set image for tab items, see [BackgroundImage Settings](#backgroundimage-sett
 
 ### ForeColor Settings
 
-The text color of the tab items can be customized by setting the `TabForeColor` property of the corresponding TabPages.
+The text color of the tabitems can be customized by setting the `TabForeColor` property of the corresponding TabPages.
 
 <table>
 <tr>
@@ -349,7 +349,7 @@ Description</th></tr>
 <tr>
 <td>
 TabForeColor</td><td>
-Specifies the color for the text of the tab item.</td></tr>
+Specifies the color for the text of the tabitem.</td></tr>
 </table>
 
 {% tabs %}

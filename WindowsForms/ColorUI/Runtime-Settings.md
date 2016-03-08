@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Runtime Settings | WindowsForms | Syncfusion
+title: Runtime Settings | Windows Forms | Syncfusion
 description: runtime settings
-platform: WindowsForms
+platform: windowsforms
 control: ColorUI
 documentation: ug
 ---
 # Runtime Settings
 
-At run time a particular color group tab should be focused or selected. Use SelectedColorGroup property of the ColorUI property for this purpose.
+At run time a particular color group tab should be focussed or selected. Use SelectedColorGroup property of the ColorUI property for this purpose.
 
 The options are as follows. 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SpinButton | WindowsForms | Syncfusion
+title: SpinButton | Windows Forms | Syncfusion
 description: spinbutton
-platform: WindowsForms
+platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
@@ -16,7 +16,7 @@ This section will discuss the properties which controls the alignment and orient
 
 ## Orientation
 
-The spin button orientation can be changed to vertical or horizontal using theSpinOrientation property.
+The spin button orientation can be changed to vertical or horizontal using theSpinOrientationproperty.
 
 
 {% highlight c# %}
@@ -53,7 +53,7 @@ Me.domainUpDownExt1.SpinOrientation = Orientation.Vertical
 
 ## Alignment
 
-The spin button alignment can be set throughUpDownAlign property. By default it is set to right.
+The spin button alignment can be set throughUpDownAlignproperty. By default it is set to right.
 
 
 

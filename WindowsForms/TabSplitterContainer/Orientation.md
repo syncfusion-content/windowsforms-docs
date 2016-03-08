@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Orientation | WindowsForms | Syncfusion
+title: Orientation | Windows Forms | Syncfusion
 description: orientation
-platform: WindowsForms
+platform: windowsforms
 control: TabSplitterContainer 
 documentation: ug
 ---

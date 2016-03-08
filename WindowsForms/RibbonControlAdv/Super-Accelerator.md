@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Super-Accelerator | WindowsForms | Syncfusion
+title: Super-Accelerator | Windows Forms | Syncfusion
 description: super accelerator
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv
 documentation: ug
 ---
@@ -15,7 +15,7 @@ To invoke any command using KeyBoard, RibbonControlAdv provides KeyTip support t
 
    ![](Super-Accelerator_images/Super-Accelerator_img1.jpeg)
 
-2. When the SuperAccelerator component is added to a form, an extended property will be added to the properties of every item in the tool strip or tab item in the RibbonControlAdv.
+2. When the SuperAccelerator component is added to a form, an extended property will be added to the properties of every item in the toolstrip or tabitem in the RibbonControlAdv.
 
    ![](Super-Accelerator_images/Super-Accelerator_img2.jpeg)
 
@@ -48,7 +48,7 @@ Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
-Gets / sets the back color for the accelerator key.</td></tr>
+Gets / sets the backcolor for the accelerator key.</td></tr>
 <tr>
 <td>
 Font</td><td>

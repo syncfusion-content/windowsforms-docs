@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Value-Settings | WindowsForms | Syncfusion
+title: Value-Settings | Windows Forms | Syncfusion
 description: value settings
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

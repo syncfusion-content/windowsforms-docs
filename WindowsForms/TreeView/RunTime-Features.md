@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RunTime-Features | WindowsForms | Syncfusion
+title: RunTime-Features | Windows Forms | Syncfusion
 description: runTime features
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
@@ -324,11 +324,11 @@ Description</th></tr>
 <tr>
 <td>
 HorizontalScrollTips</td><td>
-Specifies if the control should display scroll tip when the user is dragging a horizontal scrollbar thumb.</td></tr>
+Specifies if the control should display scrolltip when the user is dragging a horizontal scrollbar thumb.</td></tr>
 <tr>
 <td>
 VerticalScrollTips</td><td>
-Specifies if the control should display scroll tip when the user is dragging a vertical scrollbar thumb.</td></tr>
+Specifies if the control should display scrolltip when the user is dragging a vertical scrollbar thumb.</td></tr>
 <tr>
 <td>
 HorizontalThumbTrack</td><td>
@@ -377,7 +377,7 @@ MouseWheelScrollLine</td><td>
 Specifies the value which controls the scrolling behavior, when the user rolls the mouse wheel. Default value is 3.</td></tr>
 <tr>
 <td>
-EnableIntellijMouse</td><td>
+EnableIntelliMouse</td><td>
 Specifies whether scrolling is allowed using middle mouse button.</td></tr>
 <tr>
 <td>
@@ -386,7 +386,7 @@ Specifies the acceleration behavior for scrollbars.FastImmediateNoneDefault</td>
 <tr>
 <td>
 AllowIncreaseSmallChange</td><td>
-When set to true, the scroll control can increase the scrollbar.small change property when doing accelerated scrolling.</td></tr>
+When set to true, the scroll control can increase the scrollbar.smallchange property when doing accelerated scrolling.</td></tr>
 </table>
 
 ### Sizing Grip for the Scrollbars
@@ -466,7 +466,7 @@ Hot Tracking is a feature available for nodes of the TreeViewAdv control. This g
 
 Enabling the HotTracking property to true and when the mouse hovers over any node, 
 
-* The fore color will change to blue and the text will be underlined with blue color, giving the node label a hyperlink appearance.
+* The forecolor will change to blue and the text will be underlined with blue color, giving the node label a hyperlink appearance.
 * In the below image the node "France" is given a link approach by setting the HotTracking property to true and by moving the mouse over the node.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img30.jpeg)

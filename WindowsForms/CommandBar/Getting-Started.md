@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Creating CommandBar
 
-This section will give a step by step procedure to design a CommandBar control through designer, through programmatically approach and also through the XP Menus framework.
+This section will give a step by step procedure to design a CommandBar control through designer, through programmatical approach and also through the XP Menus framework.
 
 ### Through Designer
 
@@ -31,7 +31,7 @@ To add a CommandBar using the properties window, follow the procedure given belo
 
 The CommandBars can also be added or removed using the Add CommandBar design time verb or smart tag that is found in the property grid.
 
-New CommandBars will be initially docked to the top border of the form. The command bars can then be dragged, redocked or floated to the desired location.
+New CommandBars will be initially docked to the top border of the form. The commandbars can then be dragged, redocked or floated to the desired location.
 
  ![](Getting-Started_images/Getting-Started_img2.jpeg) 
 
@@ -166,7 +166,7 @@ The following section covers the steps involved in creating, initializing and se
    {:.prettyprint}
 
 
-6. Add the CommandBar to the CommandBarController through the CommandBarController's CommandBars collection property.
+6. Add the CommandBar to the CommandBarController through the CommandBarController's CommandBars collectionproperty.
 
    ~~~ cs
 

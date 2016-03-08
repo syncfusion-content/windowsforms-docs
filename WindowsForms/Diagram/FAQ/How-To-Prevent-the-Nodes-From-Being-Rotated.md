@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Prevent the Nodes From Being Rotated | Diagram | WindowsForms | Syncfusion
+title: How To Prevent the Nodes From Being Rotated | Diagram | Windows Forms | Syncfusion
 description: how to prevent the nodes from being rotated
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

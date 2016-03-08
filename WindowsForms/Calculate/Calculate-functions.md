@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calculate-functions | WindowsForms | Syncfusion
+title: Calculate-functions | Windows Forms | Syncfusion
 description: calculate functions
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---
@@ -223,7 +223,7 @@ The ACCRINT function returns the accrued interest for a security with periodic i
 
 #### Syntax:
 
-ACCRINT(IssueDate,FirstInterestDate,settlementDate,rate,parvalue,frequency,basis) where:
+ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis) where:
 
 * IssueDate - issue date of security.
 * FirstInterest - first interest date of security.
@@ -1256,7 +1256,7 @@ NORM.DIST(x,mean,stdev,cumulative) where:
 
 ### NORMINV
 
-Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
+Returns theinverse of the normal cumulative distribution for the specified mean and standard deviation.
 
 
 #### Syntax:
@@ -1379,7 +1379,7 @@ The GAMMA.DIST function returns either the cumulative distribution or the probab
 
 GAMMA.DIST(x,y,z,cumulative) where:
 
-* x is the value that evaluates the function.
+* x is the value that eveluates the function.
 * y is a distribution parameter.
 * z is a distribution parameter.
 * cumulative is a logical value that indicates which form of the exponential function to provide.

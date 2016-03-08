@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Data-Binding | WindowsForms | Syncfusion
+title: Data-Binding | Windows Forms | Syncfusion
 description: data binding
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
 # Data Binding
 
-TreeViewAdv control supports data binding with hierarchical data source like xml and displays the information.
+TreeViewAdv control supports databindingwith hierarchical data source like xml and displays the information.
 
-The TreeViewAdv architecture provides a way to consume information from an external XML file, DataSet objects etc and allows the user to convert the Tree to XML structure and vice versa. To implement this data binding concept in TreeViewAdv, the user should drag and drop a TreeViewAdv control, RichTextBox control and MainFrameBarManager to the form. Create bar items and handle the below click events accordingly.
+The TreeViewAdv architecture provides a way to consume information from an external XML file, DataSet objects etc and allows the user to convert the Tree to XML structure and vice versa. To implement this databinding concept in TreeViewAdv, the user should drag and drop a TreeViewAdv control, RichTextBox control and MainFrameBarManager to the form. Create bar items and handle the below click events accordingly.
 
 {% highlight c# %}
 

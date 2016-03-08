@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-the-cursor-to-GridGroupingControl-inste | WindowsForms | Syncfusion
+title: How-to-set-the-cursor-to-GridGroupingControl-inste | Windows Forms | Syncfusion
 description: how to set the cursor to gridgroupingcontrol instead of the default one
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

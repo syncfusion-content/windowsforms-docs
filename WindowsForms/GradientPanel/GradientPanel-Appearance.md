@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GradientPanel Appearance | WindowsForms | Syncfusion
+title: GradientPanel Appearance | Windows Forms | Syncfusion
 description: GradientPanel Appearance
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

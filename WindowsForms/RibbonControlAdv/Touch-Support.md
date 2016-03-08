@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Touch-Support | WindowsForms | Syncfusion
+title: Touch-Support | Windows Forms | Syncfusion
 description:  touch support
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -25,7 +25,7 @@ Description<br/><br/></th></tr>
 <td>
 RibbonTouchModeEnabled<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Enabling the RibbonTouchModeEnabled property in RibbonControlAdv, increases the size according to Microsoft touch mode size. Disabling the property retains its original size.<br/><br/></td></tr>
+Enabling the RibbonTouchModeEnabled property in RibbonContolAdv, increases the size according to Microsoft touch mode size. Disabling the property retains its original size.<br/><br/></td></tr>
 </table>
 
 

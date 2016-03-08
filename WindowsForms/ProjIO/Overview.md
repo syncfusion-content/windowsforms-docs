@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
@@ -78,11 +78,11 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the ProjIO User Guide.) {{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
+Online{{ '<http://help.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the ProjIO User Guide.) {{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the desired platform and Select {{ '_ProjIO_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://help.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the desired platform and Select {{ '_ProjIO_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

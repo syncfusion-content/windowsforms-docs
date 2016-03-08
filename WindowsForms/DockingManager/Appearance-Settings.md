@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
+title: Appearance-Settings | Windows Forms | Syncfusion
 description: appearance settings
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
@@ -42,7 +42,7 @@ Gets or sets the height for the tab control used in the tabbed docking group.</t
 <tr>
 <td>
 DockTabForeColor</td><td>
-Gets or sets the fore color of the Docked tab control. This property is not applicable when the visual style is set to Metro.</td></tr>
+Gets or sets the forecolor of the Docked tab control. This property is not applicable when the visual style is set to Metro.</td></tr>
 </table>
 
 
@@ -148,7 +148,7 @@ Tabbing the Docked controls in [Tabbed Docking](/windowsforms/dockingmanager/Doc
 
 ### AutoHidden Tabs
 
-The font style for the [auto hidden tabs](#autohidden-tabs) can be specified in AutoHideTabFont property.
+The font style for the [autohidden tabs](#autohidden-tabs) can be specified in AutoHideTabFont property.
 
 
 <table>
@@ -159,7 +159,7 @@ Description</th></tr>
 <tr>
 <td>
 AutoHideTabFont</td><td>
-Gets or sets the tab for the auto hide tab control.</td></tr>
+Gets or sets the tab for the autohide tab control.</td></tr>
 </table>
 
 N> This setting will effect only with DockingManager.VisualStyle property set as Default.
@@ -203,7 +203,7 @@ Description</th></tr>
 <tr>
 <td>
 AutoHideTabHeight</td><td>
-Gets or sets the height of the auto hide tab control.</td></tr>
+Gets or sets the height of the autohide tab control.</td></tr>
 </table>
 
 

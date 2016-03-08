@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Visualization | WindowsForms | Syncfusion
+title: Text-Visualization | Windows Forms | Syncfusion
 description: text visualization
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
@@ -129,7 +129,7 @@ Description</th></tr>
 <tr>
 <td>
 MoveToLineStart</td><td>
-Moves caret to the beginning of the line. First whitespace will be skipped.</td></tr>
+Moves caret to the beginning of the line. First whitespaces will be skipped.</td></tr>
 <tr>
 <td>
 MoveToLineEnd</td><td>
@@ -599,7 +599,7 @@ _..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows
 
 ## Content Dividers
 
-Edit Control supports content dividers just like VB.NET code in Visual Studio.NET code editor. This helps in logical division and better organization of the contents of the Edit Control, thereby improving the readability of the code.
+Edit Control supports content dividers just like VB.NET code in Visual Studio.NET code editor. This helps in logical divisioning and better organization of the contents of the Edit Control, thereby improving the readability of the code.
 
 
 
@@ -646,9 +646,9 @@ A sample which demonstrates Content Dividers is available in the following sampl
 
 _..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-## Underlines, Wave lines and StrikeThrough
+## Underlines, Wavelines and StrikeThrough
 
-Underlines and Wave lines are mainly used to highlight certain sections of text, possibly to notify the user about errors or important sections of the document. Edit Control allows you to underline any desired text in its contents. The underlines can be of different styles, colors and weights, with each of them being used to convey a different meaning. Edit Control supports underlines of the following styles: Solid, Dot, Dash, Wave and DashDot styles. You can also specify the weight of the underlines to be Single or Double.
+Underlines and Wavelines are mainly used to highlight certain sections of text, possibly to notify the user about errors or important sections of the document. Edit Control allows you to underline any desired text in its contents. The underlines can be of different styles, colors and weights, with each of them being used to convey a different meaning. Edit Control supports underlines of the following styles: Solid, Dot, Dash, Wave and DashDot styles. You can also specify the weight of the underlines to be Single or Double.
 
 Before the underlining can be applied to the selected text, a custom underlining format has to be defined. The RegisterUnderlineFormat method of ISnippetFormat, registers the custom underline format to be used while underlining a region. You can create a custom underlining format, as shown in the code below.
 
@@ -1376,7 +1376,7 @@ Me.editControl1.RemoveTabsFromSelection()
 
 ### WhiteSpace Indicators
 
-Edit Control has the ability to indicate whitespace in its contents with default indicators, explained as follows.
+Edit Control has the ability to indicatewhitespaces in its contents with default indicators, explained as follows.
 
 
 
@@ -1410,7 +1410,7 @@ Description</th></tr>
 <tr>
 <td>
 ShowWhiteSpaces</td><td>
-Gets / sets value indicating whether whitespace should be shown as special symbols.</td></tr>
+Gets / sets value indicating whether whitespaces should be shown as special symbols.</td></tr>
 </table>
 
 
@@ -1426,7 +1426,7 @@ Description</th></tr>
 <tr>
 <td>
 ToggleShowingWhiteSpaces</td><td>
-Toggles showing of whitespace.</td></tr>
+Toggles showing of whitespaces.</td></tr>
 </table>
 
 
@@ -1465,7 +1465,7 @@ Me.editControl1.ToggleShowingWhiteSpaces()
 
 #### Showing / Hiding Indicators
 
-You can selectively show / hide the whitespace indicators by using the following sub properties of the WhiteSpaceIndicators property - ShowSpaces, ShowTabs and ShowNewLines.
+You can selectively show / hide the whitespace indicators by using the following subproperties of the WhiteSpaceIndicators property - ShowSpaces, ShowTabs and ShowNewLines.
 
 
 
@@ -1533,7 +1533,7 @@ Me.editControl1.WhiteSpaceIndicators.SpaceNewLines = True
 
 {% endhighlight %}
 
-You can also set the indicators to indicate single spaces, tabs and line feeds by using the NewLineString, TabString and SpaceChar sub properties of the WhiteSpaceIndicators property, as shown below.
+You can also set the indicators to indicate single spaces, tabs and line feeds by using the NewLineString, TabString and SpaceChar subproperties of the WhiteSpaceIndicators property, as shown below.
 
 
 
@@ -1612,7 +1612,7 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 Line Numbers can be automatically assigned to the contents of the Edit Control by enabling its ShowLineNumbers property.
 
-The number of lines in the Edit Control can be obtained by using the PhysicalLineCount property. This property returns the actual number of lines in the Edit Control, without considering the lines that maybe hidden because of a collapsed outlining block or new lines that maybe added because of word wrap.
+The number of lines in the Edit Control can be obtained by using the PhysicalLineCount property. This property returns the actual number of lines in the Edit Control, without considering the lines that maybe hidden because of a collapsed outlining block or new lines that maybe added because of wordwrap.
 
 
 
@@ -2670,7 +2670,7 @@ Me.editcontrol1.EnableSmartInBlockIndent = True
 
 ### AutoFormatting
 
-The Edit Control offers auto formatting and smart indentation support for code as in Visual Studio. Currently, only C# has built-in support for this feature.
+The Edit Control offers autoformatting and smart indentation support for code as in Visual Studio. Currently, only C# has built-in support for this feature.
 
 AutoFormatting can be enabled by using the below given method.
 
@@ -2714,7 +2714,7 @@ Essential Edit provides an extensible interface, IAutoFormatter, which can be im
 
 
 
-* XML or HTML text of the following format - <abc> <xyz> .... </xyz> </abc> should be auto formatted as follows.
+* XML or HTML text of the following format - <abc> <xyz> .... </xyz> </abc> should be autoformatted as follows.
 
 
 

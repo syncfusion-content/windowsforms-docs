@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Utilities | WindowsForms | Syncfusion
+title: Utilities | Windows Forms | Syncfusion
 description: utilities
-platform: WindowsForms
+platform: windowsforms
 control: QTP
 documentation: ug
 ---
@@ -17,7 +17,7 @@ An XML file in QTP called SwfConfig is the configuration file located at (Ins
 
 
 
-1) Open the Syncfusion Essential QTP Configuration located at (Installed location of Essential QuickTest Professional)\Utilities\SwfConfigUtility\SwfConfigUtility.exe. Enter the QTP assemblies’ location in the QTP Assemblies Location textbox and the Essential Studio version with framework in the Product Version textbox. After entering the details, click Check & Configure. It creates the swfconfig.xml file for that particular version. Refer to the following image.
+1) Open the Syncfusion Essential QTP Configurator located at (Installed location of Essential QuickTest Professional)\Utilities\SwfConfigUtility\SwfConfigUtility.exe. Enter the QTP assemblies’ location in the QTP Assemblies Location textbox and the Essential Studio version with framework in the Product Version textbox. After entering the details, click Check & Configure. It creates the swfconfig.xml file for that particular version. Refer to the following image.
    
    ![](Utilities_images/Utilities_img1.png)
    
@@ -25,7 +25,7 @@ An XML file in QTP called SwfConfig is the configuration file located at (Ins
 
 
 
-2) Then Essential QTP Configuration shows the dialog box for appending the swfconfig.xml file. Click Yes to append the swfconfig.xml file in the QTP machine.
+2) Then Essential QTP Configurator shows the dialog box for appending the swfconfig.xml file. Click Yes to append the swfconfig.xml file in the QTP machine.
    
    ![](Utilities_images/Utilities_img2.png) 
    

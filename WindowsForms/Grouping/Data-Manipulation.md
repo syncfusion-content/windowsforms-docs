@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-Manipulation | WindowsForms | Syncfusion
+title: Data-Manipulation | Windows Forms | Syncfusion
 description: data manipulation
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---
@@ -697,8 +697,8 @@ Console.ReadLine()
 We used a simplest overload in the previous section for sorting the data. The TableDescriptor.SortedColumns.Add method has three overloads as shown below:
 
 * Add(string propertyName) 
-* Add(string propertyName, ListSortDirection Dir) 
-* Add(SortColumnDescriptor Sdc)
+* Add(string propertyName, ListSortDirection dir) 
+* Add(SortColumnDescriptor sdc)
 
 The following code snippets illustrate the syntax for these overloads:
 

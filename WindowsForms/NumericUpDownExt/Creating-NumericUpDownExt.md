@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating-NumericUpDownExt | WindowsForms | Syncfusion
+title: Creating-NumericUpDownExt | Windows Forms | Syncfusion
 description: creating numericupdownext
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
 # Creating NumericUpDownExt
 
-This section will give a step-by-step procedure to design a NumericUpDownExt control through designer and also through programming approach.
+This section will give a step-by-step procedure to design a NumericUpDownExt control through designer and also through programmatical approach.
 
 ## Through Designer
 
@@ -28,7 +28,7 @@ This section will give a step-by-step procedure to design a NumericUpDownExt con
 
 
 
-## Through Programming Approach
+## Through Programmatical Approach
 
 1. Declare an instance of the NumericUpDownExt control.
 

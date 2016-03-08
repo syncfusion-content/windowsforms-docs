@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scrolling | WindowsForms | Syncfusion
+title: Scrolling | Windows Forms | Syncfusion
 description:  scrolling
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

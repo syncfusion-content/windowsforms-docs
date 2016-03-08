@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Header Customization Settings | WindowsForms | Syncfusion
+title: Header Customization Settings | Windows Forms | Syncfusion
 description: Header Customization Settings
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

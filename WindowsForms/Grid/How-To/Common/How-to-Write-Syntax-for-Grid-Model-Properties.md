@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Write-Syntax-for-Grid-Model-Properties | WindowsForms | Syncfusion
+title: How-to-Write-Syntax-for-Grid-Model-Properties | Windows Forms | Syncfusion
 description: how to write syntax for grid model properties 
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

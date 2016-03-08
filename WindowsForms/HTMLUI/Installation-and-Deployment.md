@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion
+title: Installation-and-Deployment | Windows Forms | Syncfusion
 description: installation and deployment
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
@@ -33,7 +33,7 @@ For licensing, patches and information on adding or removing selective component
 
 
 
-This section covers the location of the installed samples and describes the procedure to run the samples through the sample browser. It also lists the location of source code.
+This sectio covers the location of the installed samples and describes the procedure to run the samples through the sample browser. It also lists the location of source code.
 
 
 

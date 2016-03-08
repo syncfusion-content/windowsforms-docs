@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
+title: Appearance-Settings | Windows Forms | Syncfusion
 description: appearance settings
-platform: WindowsForms
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---
@@ -271,6 +271,6 @@ Calculates the CommandBar's maximum length for the specified client width.</td><
 
 {% seealso %}
 
-[Interactive Features](/WindowsForms/CommandBar/Interactive-Features), [Themes And Visual Styles](/WindowsForms/CommandBar/Themes-And-Visual-Styles)
+[Interactive Features](/windowsforms/CommandBar/Interactive-Features), [Themes And Visual Styles](/windowsforms/CommandBar/Themes-And-Visual-Styles)
 
 {% endseealso %}

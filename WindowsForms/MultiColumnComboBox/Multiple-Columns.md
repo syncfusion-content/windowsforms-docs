@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multiple-Columns | WindowsForms | Syncfusion
+title: Multiple-Columns | Windows Forms | Syncfusion
 description: multiple columns
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

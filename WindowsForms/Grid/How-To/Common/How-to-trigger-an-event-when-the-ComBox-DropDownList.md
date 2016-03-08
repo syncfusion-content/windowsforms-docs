@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-trigger-an-event-when-the-ComBox-DropDownList-has-null-value-or-has-no-datasource-bound-to-it | WindowsForms | Syncfusion
+title: How-to-trigger-an-event-when-the-ComBox-DropDownList-has-null-value-or-has-no-datasource-bound-to-it | Windows Forms | Syncfusion
 description: how to trigger an event when the combox dropdownlist has null value or has no datasource bound to it
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

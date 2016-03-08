@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-achieve-Excel-like-Text-Alignment-in-Grid-Control | WindowsForms | Syncfusion
+title: How-to-achieve-Excel-like-Text-Alignment-in-Grid-Control | Windows Forms | Syncfusion
 description: how to achieve excel-like text alignment in grid control?
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

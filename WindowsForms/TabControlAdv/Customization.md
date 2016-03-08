@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabControlAdv | WindowsForms | Syncfusion
+title: TabControlAdv | Windows Forms | Syncfusion
 description: tabcontroladv
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 LabelEdit</td><td>
-Specifies whether the text of the tab item is editable. Default value is False.</td></tr>
+Specifies whether the text of the tabitem is editable. Default value is False.</td></tr>
 </table>
 
 To bring the text of the TabItem to the edit mode, the following can be done.
@@ -150,7 +150,7 @@ Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Gets / sets the border styles for the tab pages. It includes the following styles:FixedSingle,Fixed3D and None</td></tr>
+Gets / sets the border styles for the tabpages. It includes the following styles:FixedSingle,Fixed3D and None</td></tr>
 </table>
 
 ![](TabControlAdv_images/TabControlAdv_img6.jpeg)

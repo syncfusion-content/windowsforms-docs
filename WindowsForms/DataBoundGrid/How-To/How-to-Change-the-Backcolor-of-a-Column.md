@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Column | WindowsForms | Syncfusion
+title: How-to-Change-the-Backcolor-of-a-Column | Windows Forms | Syncfusion
 description: how to change the backcolor of a column
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

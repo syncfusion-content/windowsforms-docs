@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating DateTimePickerAdv | WindowsForms | Syncfusion
+title: Creating DateTimePickerAdv | Windows Forms | Syncfusion
 description: creating datetimepickeradv
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePicker
 documentation: ug
 ---

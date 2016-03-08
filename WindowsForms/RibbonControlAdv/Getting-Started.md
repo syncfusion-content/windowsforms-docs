@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description:  getting started
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -169,16 +169,16 @@ You can also add the items through Items Collection Editor using the Edit Items 
 ![](GettingStarted_images/GettingStarted_img10.jpeg)
 
 
-The ToolStripEx allows you to add standard ToolStripItems and other user interface elements such as labels, split button, dropdown button, separator, combobox, textbox, progressbar and PanelItem.
+The ToolStripEx allows you to add standard ToolStripItems and other user interface elements such as labels, splitbutton, dropdownbutton, separator, combobox, textbox, progressbar and PanelItem.
 
 ![](GettingStarted_images/GettingStarted_img11.jpeg)
 
 
 ### Adding Standard Items
 
-ToolStripEx comes with standard tool strip items that can be added to the control through "Insert Standard Items" option in the smart tag. You can even add the items through context menu at design time.
+ToolStripEx comes with standard toolstrip items that can be added to the control through "Insert Standard Items" option in the smart tag. You can even add the items through context menu at design time.
 
-We can insert the standard items through the following ways.
+We can insert the standard items throughthe following ways.
 
 1) Inserting Standard Items Through Context Menu
 
@@ -299,7 +299,7 @@ Me.ribbonControlAdv1.QuickPanelVisible = True
 
 ####  Add Items to the Quick Access ToolBar
 
-Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items Button link in the smart tag of the RibbonControlAdv control. This opens Customize Quick Access Tool bar Dialog which displays the existing toolstrip items. You can add the required items to the Quick Access Toolbar. 
+Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items Button link in the smart tag of the RibbonControlAdv control. This opens Customize Quick Access Toolbar Dialog which displays the existing toolstrip items. You can add the required items to the Quick Access Toolbar. 
 
 The dialog comes with Office2007 look and feel.
 
@@ -309,7 +309,7 @@ The dialog comes with Office2007 look and feel.
 ![](GettingStarted_images/GettingStarted_img19.jpeg)
 
 
-N> You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControl1 extended property for any control in the designer.
+N> You can also add items to the Quick Access Toolbar by enabling the UseInQuickAccessMenu On RibbonControlAdv extended property for any control in the designer.
 
 A sample code snippet which adds a ToolStripButton named "File" to the QuickAccessToolbar through code. 
 
@@ -368,7 +368,7 @@ Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 
 Ribbon enables you to work in the document and Backstage enables you to work with the document. Using this you can alter contents and provide end-user options that are related to specific solution requirements.
 
-N> Backstage view can not be accessed when Ribbon style is set to Office2007.
+N> Backstageview can not be accessed when Ribbon style is set to Office2007.
 
 The following are steps to create a BackStageView:
 
@@ -601,7 +601,7 @@ The panels are:
 
 **Adding** **ToolStrip** **Items** **to** **the** **Panels**
 
-Each Panel has Items property which invokes the Items Collection Editor. Using this editor you can add the tool strip items easily.
+Each Panel has Items property which invokes the Items Collection Editor. Using this editor you can add the toolstrip items easily.
 
 <table>
 <tr>

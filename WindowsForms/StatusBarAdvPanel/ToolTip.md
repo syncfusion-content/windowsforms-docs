@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ToolTip | WindowsForms | Syncfusion
+title: ToolTip | Windows Forms | Syncfusion
 description: tooltip
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdvPanel
 documentation: ug
 ---
