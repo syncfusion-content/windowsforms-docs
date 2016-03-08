@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Selection | WindowsForms | Syncfusion
+title: Text-Selection | Windows Forms | Syncfusion
 description: text selection
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

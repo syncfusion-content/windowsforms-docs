@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using-CurrencyManager | WindowsForms | Syncfusion
+title: Using-CurrencyManager | Windows Forms | Syncfusion
 description: using currencymanager
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

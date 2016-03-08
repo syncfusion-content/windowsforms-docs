@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-customize-BackStageView-arrow-color-in-Touc | WindowsForms | Syncfusion
+title: How-to-customize-BackStageView-arrow-color-in-Touc | Windows Forms | Syncfusion
 description: how to customize backstageview arrow color in touchstyle ribboncontroladv?
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

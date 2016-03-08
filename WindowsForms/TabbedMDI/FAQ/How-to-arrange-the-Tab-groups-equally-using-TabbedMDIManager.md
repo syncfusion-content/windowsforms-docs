@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-arrange-the-Tab-groups-equally-using-TabbedMDIManager | WindowsForms | Syncfusion
+title: How-to-arrange-the-Tab-groups-equally-using-TabbedMDIManager | Windows Forms | Syncfusion
 description: how to arrange the tab groups equally using tabbedmdimanager
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
 # How to arrange the Tab groups equally using TabbedMDIManager
 
-TabbedMDIManager has AdjustTabGroupWeightsEqually() method to arrange the Tab groups equally.
+TabbedMDIManager has AdjustTabGroupWeightsEqually() method to arrange the Tabgroups equally.
 
 _Table_ _860_: _Method Table_
 

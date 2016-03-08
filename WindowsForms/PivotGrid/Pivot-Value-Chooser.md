@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Pivot-Value-Chooser | WindowsForms | Syncfusion
+title: Pivot-Value-Chooser | Windows Forms | Syncfusion
 description: pivot value chooser
-platform: WindowsForms
+platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---

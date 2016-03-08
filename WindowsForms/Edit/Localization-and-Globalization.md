@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization-and-Globalization | WindowsForms | Syncfusion
+title: Localization-and-Globalization | Windows Forms | Syncfusion
 description: localization and globalization
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
@@ -67,7 +67,7 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
 8. Now, in the Visual Studio.NET 2005 Command Prompt, type the following command, and then press ENTER. Make sure that you have the sf.publicsnk file from the Localization folder.
    
-   al /t:lib /culture:de-DE /out:Syncfusion.Edit.Windows.resources.dll /v:1.0.0.0 /delay+ /keys:sf.publicsnk /embed: Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog.de-DE.resources
+   al /t:lib /culture:de-DE /out:Syncfusion.Edit.Windows.resources.dll /v:1.0.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog.de-DE.resources
 
 
 
@@ -75,7 +75,7 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
 
 
-10. The version (1.0.0.0) that you specify for these DLLs in the above all command, should be based on the SatelliteContractVersionAttribute setting in the product AssemblyInfo.cs file in Edit source. Note that the incorrect version won't localize the assembly properly.
+10. The version (1.0.0.0) that you specify for these DLLs in the above al command, should be based on the SatelliteContractVersionAttribute setting in the product AssemblyInfo.cs file in Edit source. Note that the incorrect version won't localize the assembly properly.
 
 
 

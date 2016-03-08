@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-SplitButtonEx| WindowsForms | Syncfusion
+title: Ribbon-SplitButtonEx| Windows Forms | Syncfusion
 description:  ribbon splitbuttonex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon SplitButtonEx
+# ToolStripSplitButtonEx
 
 ToolStripSplitButtonEx can be added to a ToolStripEx directly or through a panel. 
 

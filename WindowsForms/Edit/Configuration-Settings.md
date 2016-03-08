@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Configuration-Settings | WindowsForms | Syncfusion
+title: Configuration-Settings | Windows Forms | Syncfusion
 description: configuration settings
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
@@ -110,7 +110,7 @@ Language configuration is divided into the following four sections:
 
 
 
-* Splits-Contains a list of expressions that must be treated as one word. By default, "=" and "+" are splitters; So each of them will be returned by the token as a single char. But if you want to specify some configuration for "+=", you should specify "+=" in the Splits section. To do this, just add the below string to the Splits section:
+* Splits-Contains a list of expressions that must be treated as one word. By default, "=" and "+" are splitters; So each of them will be returned by the tokenizer as a single char. But if you want to specify some configuration for "+=", you should specify "+=" in the Splits section. To do this, just add the below string to the Splits section:
 
 
 
@@ -119,9 +119,9 @@ Language configuration is divided into the following four sections:
 
 
 * Formats-Contains a list of definitions of the formats that can be used later in lexem configuration. Every format is specified by a tag <format>. Every format contains the attributes such as name, font, fore color, font color, back color, style, weight, underline and line color.
-* Name-Specifies the name of the format. SelectedText is always used for selection (if font color is not specified, selected text is drawn with its own color; only the background is changed).
+* Name-Specifies the name of the format. SelectedText is always used for selection (if fontcolor is not specified, selected text is drawn with its own color; only the background is changed).
 * Font-String with XML representation of the font. Refer to the default configuration file for examples.
-* Fore color-Specifies the color of the rectangle that is drawn around the text. It is not drawn if fore color is not specified.
+* Forecolor-Specifies the color of the rectangle that is drawn around the text. It is not drawn if fore color is not specified.
 * FontColor-Specifies the color of the text.
 * BackColor-Specifies the background color of the text.
 * Style-Specifies the fill style of the background. Look at the HatchStyle enumeration members for the list of possible values.

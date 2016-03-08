@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-CheckBoxAdv | WindowsForms | Syncfusion
+title: Creating-CheckBoxAdv | Windows Forms | Syncfusion
 description: creating checkboxadv
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

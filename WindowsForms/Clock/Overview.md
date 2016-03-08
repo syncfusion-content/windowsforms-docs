@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: Overview
-platform: WindowsForms
+platform: windowsforms
 control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
@@ -26,7 +26,7 @@ Description</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-AlignAMonrPM</td><td>
+AlignAMorPM</td><td>
 Specifies the alignment of AM/PM.</td><td>
 enum</td></tr>
 <tr>
@@ -91,7 +91,7 @@ Specifies the renderer.</td><td>
 --</td></tr>
 <tr>
 <td>
-ShowAMornPM</td><td>
+ShowAMorPM</td><td>
 Specifies to show AM or PM.</td><td>
 bool</td></tr>
 <tr>

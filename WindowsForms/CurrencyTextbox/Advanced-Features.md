@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced-Features | WindowsForms | Syncfusion
+title: Advanced-Features | Windows Forms | Syncfusion
 description: advanced features
-platform: WindowsForms
+platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---
@@ -48,7 +48,7 @@ Me.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.
 
 ## Overflow Indicator
 
-You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in OverflowIndicatorToolTipText.Set ShowOverflowIndicator property to true to enable this feature. Set ShowOverflowIndicatorToolTip property to true to display the tooltip text.
+You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in OverflowIndicatorToolTipText.Set ShowOverflowIndicatorproperty to true to enable this feature. Set ShowOverflowIndicatorToolTip property to true to display the tooltip text.
 
 {% highlight c# %}
 
@@ -180,7 +180,7 @@ Gets the culture name in the format "&lt;language full&gt;(&lt;country/region fu
 <tr>
 <td>
 EnglishName</td><td>
-Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in English.</td></tr>
+Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in english.</td></tr>
 <tr>
 <td>
 NativeName</td><td>

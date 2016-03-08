@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupBar Events | WindowsForms | Syncfusion
+title: GroupBar Events | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---
@@ -132,7 +132,7 @@ End Sub
 
 ## GroupBarItemRenamed Event
 
-This event is handled after a GroupBar Item is renamed by an Inplace edit operation. It is handled when a GroupBar Item is renamed at runtime.
+This event is handled after a GroupBar Item is renamed by an inplace edit operation. It is handled when a GroupBar Item is renamed at runtime.
 
 The event handler of this event receives an argument of type GroupItemRenamedEventArgs.
 

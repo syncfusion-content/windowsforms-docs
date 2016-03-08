@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Advanced-Features | WindowsForms | Syncfusion
+title: Advanced-Features | Windows Forms | Syncfusion
 description: advanced features
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
 
 # Advanced Features
 
-This section will discuss the auto complete support available for the ComboBoxAdv control and data binding using external source.
+This section will discuss the auto complete support available for the ComboBoxAdv control and databinding using external source.
 
 ## AutoComplete Support
 
@@ -67,7 +67,7 @@ ComboBoxAdv control can be bound with an external data source. Objects that can 
 * DataView
 * DataTable
 
-You can add objects to the ComboBoxAdv by using the Items method. You can also add objects to a ComboBoxAdv using the DataSource, DisplayMember and Value member properties to fill the ComboBox.
+You can add objects to the ComboBoxAdv by using the Items method. You can also add objects to a ComboBoxAdv using the DataSource, DisplayMember and Valuemember properties to fill the ComboBox.
 
 When the DataSource property is set, you cannot modify the items collection. If setting the DataSource property causes the data source to change, the Datasource event is raised. If setting this property causes the data member to change, theDisplayMember event is raised.
 

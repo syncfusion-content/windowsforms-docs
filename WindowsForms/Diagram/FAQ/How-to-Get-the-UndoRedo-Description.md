@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Get the UndoRedo Description | Diagram | WindowsForms | Syncfusion
+title: How to Get the UndoRedo Description | Diagram | Windows Forms | Syncfusion
 description: how to get the undo/redo description?
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styles-Settings | WindowsForms | Syncfusion
+title: Styles-Settings | Windows Forms | Syncfusion
 description: styles settings
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 TabStyle</td><td>
-Specifies the look and feel of the TabControlAdv. The options include,2D,3D,Workbook,InternetExplorer7Style,OneNoteStyle,VS2005DockingStyle,Office2007Style,VS2005Style,VS2005DockingStyleBeta,Office2003Style, VS2008Style and Metro.</td></tr>
+Specifies the look and feel of the TabcontrolAdv. The options include,2D,3D,Workbook,InternetExplorer7Style,OneNoteStyle,VS2005DockingStyle,Office2007Style,VS2005Style,VS2005DockingStyleBeta,Office2003Style, VS2008Style and Metro.</td></tr>
 </table>
 {% tabs %}
 

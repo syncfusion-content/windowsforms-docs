@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RadioButtonAdv-Events | WindowsForms | Syncfusion
+title: RadioButtonAdv-Events | Windows Forms | Syncfusion
 description: radiobuttonadv events
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

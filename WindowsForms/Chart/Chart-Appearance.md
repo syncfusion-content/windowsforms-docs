@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Appearance | WindowsForms | Syncfusion
+title: Chart-Appearance | Windows Forms | Syncfusion
 description: chart appearance
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---
@@ -493,7 +493,7 @@ Specifies the way the text is drawn. Possible values: * AntiAlias - each charact
 <tr>
 <td>
 <br>SmoothingMode</td><td>
-Specifies how chart elements should be rendered. Possible values:* AntiAlias * HighQuality* HighSpeed* Invalid* None* Default(default setting)</td></tr>
+Specifies how chart elements should be rendered. Possible values:* AntiAlias * HighQuality* HighSpeed* Invalid* None* Default(defaultsetting)</td></tr>
 </table>
 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Display-Placeholder-Characters-when-Cell-Content-exceeds-cell-width | WindowsForms | Syncfusion
+title: How-to-Display-Placeholder-Characters-when-Cell-Content-exceeds-cell-width | Windows Forms | Syncfusion
 description: how to display placeholder characters when cell content exceeds cell width
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

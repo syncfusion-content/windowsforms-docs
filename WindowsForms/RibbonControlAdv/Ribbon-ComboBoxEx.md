@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-ComboBoxEx| WindowsForms | Syncfusion
+title: Ribbon-ComboBoxEx| Windows Forms | Syncfusion
 description:  ribbon comboboxex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon ComboBoxEx
+# ToolStripComboBoxEx
 
 ToolStripComboBoxEx control is used to display the list of items, as ComboBox. It can be added to a ToolStripEx directly or through a panel. 
 
@@ -48,5 +48,5 @@ Me.toolStripEx2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tool
 
 {% endtabs %}
 
- N> We can set banner text for the ComboBoxEx control. Refer [BannerTextProvider Component](http://docs.syncfusion.com/windowsforms/bannertextprovider/overview#overview)  topic for more details.
+ N> We can set banner text for the ComboBoxEx control. Refer [BannerTextProvider Component](http://help.syncfusion.com/windowsforms/bannertextprovider/overview#overview)  topic for more details.
 

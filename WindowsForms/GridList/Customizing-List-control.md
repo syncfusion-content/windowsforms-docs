@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing-List-control | WindowsForms | Syncfusion
+title: Customizing-List-control | Windows Forms | Syncfusion
 description: customizing list control
-platform: WindowsForms
+platform: windowsforms
 control: GridList
 documentation: ug
 ---

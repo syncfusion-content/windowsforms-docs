@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Toggle-State-Configuration | WindowsForms | Syncfusion
+title: Toggle-State-Configuration | Windows Forms | Syncfusion
 description: toggle state configuration
-platform: WindowsForms
+platform: windowsforms
 control: ToggleButton 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Run Time Interactive Features | WindowsForms | Syncfusion
+title: Run Time Interactive Features | Windows Forms | Syncfusion
 description: run time interactive features
-platform: WindowsForms
+platform: windowsforms
 control: Menus Package 
 documentation: ug
 ---
@@ -53,7 +53,7 @@ Me.superToolTip1.SetToolTip(Me.barItem2, toolTipInfo1)
 
 
 
-A sample illustrating the super tooltip feature is available in the below sample installation location.
+A sample illustrating the supertooltip feature is available in the below sample installation location.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes-And-Styles | WindowsForms | Syncfusion
+title: Themes-And-Styles | Windows Forms | Syncfusion
 description: themes and styles
-platform: WindowsForms
+platform: windowsforms
 control: ComboDropDown
 documentation: ug
 ---
@@ -20,7 +20,7 @@ Description</th></tr>
 <tr>
 <td>
 IgnoreThemeBackground</td><td>
-Specifies whether the control will ignore the theme's background color and draw the back color instead.</td></tr>
+Specifies whether the control will ignore the theme's background color and draw the backcolor instead.</td></tr>
 <tr>
 <td>
 Style</td><td>

@@ -1,498 +1,476 @@
 ---
 layout: post
-title: MS-Excel-like-Features | WindowsForms | Syncfusion
-description: ms excel-like features
+title: Excel-Like Features of GridControl for Syncfusion Essential WindowsForms
+description: This sections provides information about the various features like Excel
 platform: WindowsForms
-control: Grid
+control: GridControl
 documentation: ug
 ---
 
-# MS Excel-like Features
+# Excel-Like Features
+The GridControl provides some of the functionalities of MS Excel as the features. This section will walk through the implementation of these features. 
 
-Essential Grid offers a wide range of MS Excel-like features. Following is the list of features offered:
+## Excel Like Selection Frame
+To enable excel like selection frame in the grid, the [ExcelLikeSelectionFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridDataBoundGrid~ExcelLikeSelectionFrame.html) property can be used. This enables the selected cells in a frame to be highlighted. 
 
-## Selection Frame
-
-Essential Grid supports MS Excel-like Selection Frame feature. This enables the selected cells in a frame to be highlighted. This feature can be enabled by setting ExcelLikeSelectionFrame property to _true_. Selection Frame feature can be enabled for Essential Grid by using the following code:
-
-
-
-
-{% highlight c#  %}
+{% tabs %}
+{% highlight c# %}
+//Enable the Excel like selection frame to the GridControl
 this.gridControl1.ExcelLikeSelectionFrame = true;
-
-
-{% endhighlight  %}
-
-{% highlight vbnet  %}
-
-
+{% endhighlight %}
+{% highlight vb %}
+'Enable the Excel like selection frame to the GridControl
 Me.gridControl1.ExcelLikeSelectionFrame = True
+{% endhighlight %}
+{% endtabs %}
 
-{% endhighlight   %}
+![](Excel-Like-Features_images/Excel-Like-Features_img1.jpeg)
 
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img1.jpeg) 
+## Excel-Like Current Cell
+To have the Excel-Like current cell in the GridControl, set the [ExcelLikeCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeCurrentCell.html) property to `true`. When the current cell moves out of a selected range, then the range will be cleared. Whereas the current cell can be moved inside a selected range, the range will be stayed.
 
-
-
-## Current Cell
-
-Essential Grid supports MS-Excel like Current Cell feature. This feature can be enabled by setting ExcelLikeCurrentCell property to _true_. When the user moves the current cell out of a selected range, the range will be cleared. If the user moves the current cell inside a selected range, the range will stay. Current Cell feature can be enabled for Essential Grid by using the following code:
-
-
-{% highlight c#  %}
-
-
+{% tabs %}
+{% highlight c# %}
+//Enable Excel like current cell in Grid 
 this.gridControl1.ExcelLikeCurrentCell = true;
+{% endhighlight %}
 
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
+{% highlight vb %}
+'Enable Excel like current cell in Grid 
 Me.gridControl1.ExcelLikeCurrentCell = True
+{% endhighlight %}
+{% endtabs %}
+![](Excel-Like-Features_images/Excel-Like-Features_img2.jpeg)
 
-{% endhighlight   %}
+## Excel-Like Alignments
+In Excel, by default the strings are aligned to left and the integer, double or decimal values are aligned to the right side of the cell. The text alignments in grid cells can be similar to text alignment in Excel cells by setting the [ExcelLikeAlignment](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ExcelLikeAlignment.html) property to `true`. 
 
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img2.jpeg)
+{% tabs %}
+{% highlight c# %}
+//Enable Excel-Like Alignment to the Grid control
+this.gridControl1.ExcelLikeAlignment = true;
+{% endhighlight %}
+{% highlight vb %}
+'Enable Excel-Like Alignment to the Grid control
+Me.gridControl1.ExcelLikeAlignment = True
+{% endhighlight %}
+{% endtabs %}
+![](Excel-Like-Features_images/Excel-Like-Features_img3.jpeg)
 
+## Work Book
+The GridControl can be used like workbook in Excel. This can be achieved by adding the [TabBarSplitterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.TabBarSplitterControl.html) to the form. In this control, add the number of [TabBarPage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.TabBarPage.html) (work sheets) to be shown in the workbook. Fill each page with the GridControl to look like the work sheets in excel. The following code snippet will perform the above process,
 
-
-
-
-## Workbook
-
-Worksheets in a workbook can be displayed as tabs for easier view and selection of worksheets similar to Excel. This is achieved by using the Tab Bar Splitter control. You can add any number of Tab Bar pages to Tab Bar Splitter control and then add the Grid control to each Tab Bar page to get the appearance similar to the Workbook in Excel.
-
-
-
-{% highlight c#  %}
-
+{% tabs %}
+{% highlight c# %}
+//Creating Tab pages
+//TabBarPage tabBarPage = new Syncfusion.Windows.Forms.TabBarPage();
+//Add TabBarPage to the TabBarSplitterControl
 this.tabBarSplitterControl1.Controls.Add(this.tabBarPage1);
-
 this.tabBarSplitterControl1.Controls.Add(this.tabBarPage2);
-
 this.tabBarSplitterControl1.Controls.Add(this.tabBarPage3);
+//Adding Grid control to the Tab bar pages
+this.tabBarPage1.Controls.Add(gridcontrol1);
+this.tabBarPage2.Controls.Add(gridControl2);
+this.tabBarPage3.Controls.Add(gridControl3);
+{% endhighlight %}
+{% highlight vb %}
+'Creating Tab pages
+'Dim tabBarPage As TabBarPage = New Syncfusion.Windows.Forms.TabBarPage()
 
-
-
-//Adds Grid controls to the Tab Bar Pages.
-
-this.tabBarPage1.Controls.Add(this.gridControl1);
-
-this.tabBarPage2.Controls.Add(this.gridControl2);
-
-this.tabBarPage3.Controls.Add(this.gridControl3);
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-
+'Add TabBarPage to the TabBarSplitterControl
 Me.tabBarSplitterControl1.Controls.Add(Me.tabBarPage1)
-
 Me.tabBarSplitterControl1.Controls.Add(Me.tabBarPage2)
-
 Me.tabBarSplitterControl1.Controls.Add(Me.tabBarPage3)
 
-' Adds Grid controls to the Tab Bar Pages.
+'Adding Grid control to the Tab bar pages
+Me.tabBarPage1.Controls.Add(gridcontrol1)
+Me.tabBarPage2.Controls.Add(gridControl2)
+Me.tabBarPage3.Controls.Add(gridControl3)
+{% endhighlight %}
+{% endtabs %}
+![](Excel-Like-Features_images/Excel-Like-Features_img4.jpeg)
 
-Me.tabBarPage1.Controls.Add(Me.gridControl1)
+## Excel-like comment tip
+Excel-like cell comment tips can be included in the GridControl by implementing the[IMouseController](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.IMouseController.html) interface. The `GridExcelTipStyleProperties` class is used to define the `Excel-Like comment tip` for the cell. To add, delete or modify the comment, right-click on the cell or left-click the red corner.
 
-Me.tabBarPage2.Controls.Add(Me.gridControl2)
+{% tabs %}
+{% highlight c# %}
+//Code for add Comment tip
+private ExcelTip.CommentMouseController commentMouseController1;
 
-Me.tabBarPage3.Controls.Add(Me.gridControl3)
-{% endhighlight   %}
+//Create the Comment mouse controller.
+this.commentMouseController1 = new ExcelTip.CommentMouseController(gridControl1);
 
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img3.jpeg) 
+//allow context menu to edit/add comments
+this.commentMouseController1.ContextMenuEnabled = true;
 
+//register the controller
+gridControl1.MouseControllerDispatcher.Add(commentMouseController1);
 
+//set the comment using custom style property, ExcelTipText
+ExcelTip.GridExcelTipStyleProperties style = new ExcelTip.GridExcelTipStyleProperties(gridControl1[2, 2]);
+style.ExcelTipText = "Comment for cell 2,2.";
+{% endhighlight %}
+{% highlight vb %}
+'Code for add Comment tip
+Private commentMouseController1 As ExcelTip.CommentMouseController
+
+'Create the Comment mouse controller.
+Me.commentMouseController1 = New ExcelTip.CommentMouseController(gridControl1)
+
+'allow context menu to edit/add comments
+Me.commentMouseController1.ContextMenuEnabled = True
+
+'register the controller
+gridControl1.MouseControllerDispatcher.Add(commentMouseController1)
+
+'set the comment using custom style property, ExcelTipText
+Dim style As New ExcelTip.GridExcelTipStyleProperties(gridControl1(2, 2))
+style.ExcelTipText = "Comment for cell 2,2."
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Excel-Like-Features_images/Excel-Like-Features_img5.jpeg)
+
+For more details about the Excel-Like comment tip, refer the following dashboard sample,<br/>
+**&lt;Install Location&gt; \Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\ToolTip\Cell Comment Tip Demo**
 
 ## Splitter
+Splitter is used to display the multiple view of the grid. This MS Excel-like feature enables the user to view more than one copy of a worksheet and scroll through each pane of worksheet independently. The panes are working simultaneously, i.e., the changes made in one pane are reflected in the other. 
 
-A dynamic-splitter window can be embedded in Essential Grid to show multiple views of the same grid by using a Splitter. This MS Excel-like feature enables you to view more than one copy of a worksheet and scroll through each pane of worksheet independently. The panes work simultaneously, i.e., the changes made in one pane are reflected in the other. The splitter can be scrolled by placing the mouse pointer over it, holding down the left mouse button and dragging it to the required position. It can be split horizontally and vertically. Following are the events associated with the Splitter control.
+The splitter can be scrolled by placing the mouse pointer over it, holding down the left mouse button and dragging it to the required position. It can be split horizontally and vertically.
 
+{% tabs %}
+{% highlight c# %}
+//Adding GridControl to the SplitterControl
+this.splitterControl1.Controls.Add(this.gridControl);
 
+//Events triggered while creating and closing the splitter pane
+this.splitterControl1.PaneCreated += splitterControl1_PaneCreated;
+this.splitterControl1.PaneClosing += splitterControl1_PaneClosing;
 
-<table>
-<tr>
-<th>
-EVENTS</th><th>
-DESCRIPTION</th></tr>
-<tr>
-<td>
-PaneCreated</td><td>
-This event is triggered when the splitter is moved across the Grid.</td></tr>
-<tr>
-<td>
-PaneClosing</td><td>
-This event is either triggered when the splitter is moved to the end/beginning or when it cannot be located on the worksheet.</td></tr>
-</table>
-The splitter can be created in a worksheet by using the following code:
-
-
-
-{% highlight c#  %}
-
-this.splitterControl1.Controls.Add(this.gridControl1);
-
-
-
-//PaneCreated event.
-
-private void splitterControl1_PaneCreated(object sender, Syncfusion.Windows.Forms.SplitterPaneEventArgs e)
-
+void splitterControl1_PaneClosing(object sender, SplitterPaneEventArgs e)
 {
-
-Console.WriteLine("Created: " + e.ToString());
-
+    Console.WriteLine("Splitter pane is closing");
 }
 
-
-
-//PaneClosing event.
-
-private void splitterControl1_PaneClosing(object sender, Syncfusion.Windows.Forms.SplitterPaneEventArgs e)
-
+void splitterControl1_PaneCreated(object sender, SplitterPaneEventArgs e)
 {
-
-Console.WriteLine("Closed: " + e.ToString());
-
+    Console.WriteLine("Splitter pane is created");
 }
 
+{% endhighlight %}
+{% highlight vb %}
+'Adding GridControl to the SplitterControl
+Me.splitterControl1.Controls.Add(Me.gridControl)
 
+'Events triggered while creating and closing the splitter pane
+Me.splitterControl1.PaneCreated += splitterControl1_PaneCreated
+Me.splitterControl1.PaneClosing += splitterControl1_PaneClosing
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+Private Sub splitterControl1_PaneClosing(ByVal sender As Object, ByVal e As SplitterPaneEventArgs)
+    Console.WriteLine("Splitter pane is closing")
+End Sub
 
+Private Sub splitterControl1_PaneCreated(ByVal sender As Object, ByVal e As SplitterPaneEventArgs)
+    Console.WriteLine("Splitter pane is created")
+End Sub
+{% endhighlight %}
+{% endtabs %}
 
+![](Excel-Like-Features_images/Excel-Like-Features_img6.jpeg)
 
-Me.splitterControl1.Controls.Add(Me.gridControl1)
+## Freeze pane
+The GridControl supports MS Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables to freeze either columns or rows in the grid, so that they may remain visible while scrolling. The number of rows to be frozen can be specified by using [Model.Rows.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property and the number of columns to be frozen can be specified by using [Model.Cols.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property.
 
+{% tabs %}
+{% highlight c# %}
+//Frozen the Rows and columns in the Grid control
+this.gridControl1.Rows.FrozenCount = 3;
+this.gridControl1.Cols.FrozenCount = 2;
+//Clear the Frozen range of Rows and Columns
+this.gridControl1.Rows.RestoreFrozen();
+this.gridControl1.Cols.RestoreFrozen();
+{% endhighlight %}
+{% highlight vb %}
+'Frozen the Rows and columns in the Grid control
+Me.gridControl1.Rows.FrozenCount = 3
+Me.gridControl1.Cols.FrozenCount = 2
 
+'Clear the Frozen range of Rows and Columns
+Me.gridControl1.Rows.RestoreFrozen()
+Me.gridControl1.Cols.RestoreFrozen()
+{% endhighlight %}
+{% endtabs %}
 
-'PaneCreated event.
+The frozen lines of the GridControl can be hidden by setting the [HighlightFrozenLines](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~HighlightFrozenLine.html) property to `false`. By default, it will be enabled to display the frozen lines.
 
-private void splitterControl1_PaneCreated(Object sender, Syncfusion.Windows.Forms.SplitterPaneEventArgs e)
+{% tabs %}
+{% highlight c# %}
+// To hide the highlighting of Frozen lines 
+this.gridControl1.HighlightFrozenLine = false;
+{% endhighlight %}
+{% highlight vb %}
+' To hide the highlighting of Frozen lines 
+Me.gridControl1.HighlightFrozenLine = False
+{% endhighlight %}
+{% endtabs %}
 
-Console.WriteLine("Created: " & e.ToString())
+![](Excel-Like-Features_images/Excel-Like-Features_img7.jpeg)
 
+The frozen line color can be changed by using [FixedLinesColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~FixedLinesColor.html) property. This frozen line color will be changed only when the `HighlightFrozenLine` property is enabled.
 
+{% tabs %}
+{% highlight c# %}
+//Set Frozen Line color
+this.gridControl1.Model.Properties.FixedLinesColor = Color.Green;
+{% endhighlight %}
+{% highlight vb %}
+'Set Frozen Line color 
+Me.gridControl1.Model.Properties.FixedLinesColor = Color.Green
+{% endhighlight %}
+{% endtabs %}
 
-'PaneClosing event.
+![](Excel-Like-Features_images/Excel-Like-Features_img8.jpeg)
 
-private void splitterControl1_PaneClosing(Object sender, Syncfusion.Windows.Forms.SplitterPaneEventArgs e)
+## Copy/Fill Series
+The GridControl can have the copy/fill series like Excel. The copy series is used to copy the content of the current cell to the entire selection whereas the fill series is used to fill the selection with the increment of the current cell. 
 
-Console.WriteLine("Closed: " & e.ToString())
+An [ExcelSelectionMarkerMouseController](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ExcelSelectionMarkerMouseController.html) helper class that implements the behavior of `Copy/Fill` series in the GridControl. This class is available in the `Syncfusion.GridHelperClasses.Windows` assembly. 
 
-{% endhighlight   %}
+N>  To enable this feature, the [ExcelLikeCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeCurrentCell.html) property has to be enabled for GridControl.
 
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img4.jpeg) 
+{% tabs %}
+{% highlight c# %}
+//Enable Excel like current cell in Grid 
+this.gridControl1.ExcelLikeCurrentCell = true;
 
+//Create Selection marker for Copy/Fill series
+ExcelSelectionMarkerMouseController marker = new Syncfusion.GridHelperClasses.ExcelSelectionMarkerMouseController(this.gridControl1);
 
+//Add the selection marker to the MouseControllerDispatcher
+this.gridControl1.MouseControllerDispatcher.Add(marker);
+{% endhighlight %}
+{% highlight vb %}
+'Enable Excel like current cell in Grid 
+Me.gridControl1.ExcelLikeCurrentCell = True
 
-## Freeze Pane
+'Create Selection marker for Copy/Fill series
+Dim marker As ExcelSelectionMarkerMouseController = New Syncfusion.GridHelperClasses.ExcelSelectionMarkerMouseController(Me.gridControl1)
 
-Essential Grid supports MS Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables you to freeze either columns or rows in the Grid, so that they may remain visible while you scroll. The number of rows to be frozen can be specified by using Model.Rows.FrozenCount property and the number of columns to be frozen can be specified by using Model.Cols.FrozenCount property. The Freeze Pane feature can be enabled for Essential Grid by using the following code:
+'Add the selection marker to the MouseControllerDispatcher
+Me.gridControl1.MouseControllerDispatcher.Add(marker)
+{% endhighlight %}
+{% endtabs %}
 
+The following examples are showing the difference between the Copy and Fill series,
 
-{% highlight c#  %}
+1. The following example shows the Fill series is selected,
+   
+   ![](Excel-Like-Features_images/Excel-Like-Features_img9.jpeg)
 
+2. The range of cells are filled with the series,
+   
+   ![](Excel-Like-Features_images/Excel-Like-Features_img10.jpeg)
 
-this.gridControl1.Model.Rows.FrozenCount = 4;
+3. The following example shows the `Copy Series` is selected for January cell,
+   
+   ![](Excel-Like-Features_images/Excel-Like-Features_img11.jpeg)
 
-this.gridControl1.Model.Cols.FrozenCount = 3;
+4. The range of cells are copied and filled with the January,
+   
+   ![](Excel-Like-Features_images/Excel-Like-Features_img12.jpeg)
 
+## Highlighting Row/Column Header
+This feature is used to highlight the corresponding row and column headers of one or more selected cells. It can be enabled by setting the [MarkRowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~MarkRowHeader.html) and [MarkColHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~MarkColHeader.html)  property value as `true`.
 
+{% tabs %}
+{% highlight c# %}
+//Highlight Row/Column header while having the current cell
+this.gridControl1.MarkRowHeader = true;
+this.gridControl1.MarkColHeader = true;
+{% endhighlight %}
+{% highlight vb %}
+'Highlight Row/Column header while having the current cell
+Me.gridControl1.MarkRowHeader = True
+Me.gridControl1.MarkColHeader = True
+{% endhighlight %}
+{% endtabs %}
 
+![](Excel-Like-Features_images/Excel-Like-Features_img13.jpeg)
 
+## Unhide Columns Using Double Click
+The hidden columns can be shown by double clicking on the column headers as like Excel. This behavior can be determined by using the [UnHideColsOnDblClick](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UnHideColsOnDblClick.html) property. The default value of this property is `true`. So the unhide behavior can be disabled by setting this property as `false`.
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% tabs %}
+{% highlight c# %}
+//Disabling Un hide the columns on double click 
+this.gridControl1.UnHideColsOnDblClick = false;  
+{% endhighlight %}
+{% highlight vb %}
+' Disabling Un hide the columns on double click 
+Me.gridControl1.UnHideColsOnDblClick = False
+{% endhighlight %}
+{% endtabs %}
 
-Me.gridControl1.Model.Rows.FrozenCount = 4
+For more details about the hiding columns and rows, refer the link over [here](/windowsforms/grid/managing-the-rows-and-columns).
 
-Me.gridControl1.Model.Cols.FrozenCount = 3
-{% endhighlight   %}
+## FormatCell Dialog
+The Format Cell Dialog is used to dynamically format the contents of the cell or range of cells in the GridControl. This can be enabled in the GridControl by using the [GridFormatCellsDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridFormatCellDialog.html) class.
 
-N> You can unfreeze the frozen rows or columns by clicking Unfreeze Current Row/Col button on the UI.
+{% tabs %}
+{% highlight c# %}
+// Add the format Cells dialog into the GridControl
+GridFormatCellDialog formatCellDialog = new GridFormatCellDialog(this.gridControl1);
+// To display the dialog 
+formatCellDialog.ShowDialog();
+{% endhighlight %}
+{% highlight vb %}
+' Add the format Cells dialog into the GridControl
+Dim formatCellDialog As New GridFormatCellDialog(Me.gridControl1)
+' To display the dialog 
+formatCellDialog.ShowDialog()
+{% endhighlight %}
+{% endtabs %}
 
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img6.jpeg) 
+![](Excel-Like-Features_images/Excel-Like-Features_img14.jpeg)
 
+N> You can refer the [FormatCellDialog](#formatcell-dialog) section for detailed information. 
 
+## Covered Ranges
+The range of cells can be covered like Excel merging functionality. In this technique, range of cells which has different data or same data can be covered. The range of cells can be covered by adding the [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) to the [CoveredRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~CoveredRanges.html) collection. The range can be cell, range of cells, table, row or column.
 
-## MultiLevel Undo and Redo
+The CoveredRanges will be maintained in the [GridModelCoveredRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCoveredRanges.html) collection.
 
-Essential Grid has flexible support for Multilevel Undo/Redo. This feature enables the user to undo history for most actions that are performed. This feature can be enabled by setting CommandStack.Enabled property to _true_. Using the functions of GridModelCommandManager class, various tasks like undo and redo can be done. You can access this class from a Grid with CommandStack property of a GridModel instance. Multilevel Undo/Redo feature can be enabled for Essential Grid by using the following code:
+{% tabs %}
+{% highlight c# %}
+// Add covered range for the range of cells
+this.gridControl1.Model.CoveredRanges.Add(GridRangeInfo.Cells(2, 2, 5, 5));
+{% endhighlight %}
+{% highlight vb %}
+' Add covered range for the range of cells
+Me.gridControl1.Model.CoveredRanges.Add(GridRangeInfo.Cells(2, 2, 5, 5))
 
+{% endhighlight %}
+{% endtabs %}
 
-{% highlight c#  %}
+![](Excel-Like-Features_images/Excel-Like-Features_img15.jpeg)
 
+N> For more information about `CoveredRanges`, see the link over [here](/windowsforms/grid/covered-ranges).
 
+## Cell Merging
+The cell merging also one of the technique to merge the range of cells in the GridControl. The range of cells will be merged based on the data. The cells which has same data will be merged in row wise in same column or column wise in same row. To enable the merging support in grid, the [MergeCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~MergeCell.html), [MergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~MergeCellsMode.html) and [MergeCellsLayout](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties can be used.
+
+The following code snippet is used to enable the merging in GridControl,
+
+{% tabs %}
+{% highlight c# %}
+// Set MergeCells direction for the GridControl
+this.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both;
+// Set merge cells behavior for the Grid
+this.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation
+    | GridMergeCellsMode.MergeColumnsInRow | GridMergeCellsMode.MergeRowsInColumn;
+this.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid;
+{% endhighlight %}
+{% highlight vb %}
+' Set MergeCells direction for the GridControl
+Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both
+' Set merge cells behavior for the Grid
+Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation Or GridMergeCellsMode.MergeColumnsInRow Or GridMergeCellsMode.MergeRowsInColumn
+Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
+{% endhighlight %}
+{% endtabs %}
+
+![](Excel-Like-Features_images/Excel-Like-Features_img16.jpeg)
+
+N> Any range of cells cannot be merged like the covered ranges because merging has different functionality than the covered ranges, which allows only to merge the adjacent cells with same data. 
+
+For more details about the `Cell Merging`, refer the link over [here](/windowsforms/grid/cell-merging).
+
+## Floating
+Floating cells  are those cells whose content floats over empty, adjacent cells. The floating cells can be enabled by setting [GridControl.FloatCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~FloatCellsMode.html) property. Setting this property to[GridFloatCellsMode.BeforeDisplayCalculation](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFloatCellsMode.html) will force the floating cells to always be calculated just prior to being displayed. Setting the property to [GridFloatCellsMode.OnDemandCalculation](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFloatCellsMode.html) will calculate the floating cells only if the cell contents or size changes.
+
+The preventing of a cell being flooded by using [FloodCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~FloodCell.html) property.
+
+{% tabs %}
+{% highlight c# %}
+// Enable Float Cells for GridControl
+this.gridControl1.TableStyle.FloatCell = true;
+// Set mode for calculating the float cells
+this.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation;
+{% endhighlight %}
+{% highlight vb %}
+' Enable Float Cells for GridControl
+Me.gridControl1.TableStyle.FloatCell = True
+' Set mode for calculating the float cells
+Me.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation
+{% endhighlight %}
+{% endtabs %}
+
+![](Excel-Like-Features_images/Excel-Like-Features_img17.jpeg)
+
+For more information about this section, refer the link over [here](/windowsforms/grid/floating).
+
+## Multilevel Undo Redo
+GridControl lets you do the multilevel undo and redo operations which are used to revert the changes made in the grid. This can be enabled by setting [CommandStack.Enabled](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCommandManager~Enabled.html) property to true. Using the functions of [GridModelCommandManager](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCommandManager_members.html) class, various tasks like undo and redo can be done. User can access this class from a grid using the[CommandStack](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~CommandStack.html) property of a [GridModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel.html) instance.
+
+{% tabs %}
+{% highlight c# %}
+//Enable Undo Redo
 this.gridControl1.CommandStack.Enabled = true;
 
+//Undo the last action performed in the grid
 this.gridControl1.CommandStack.Undo();
 
+//Redo the last action performed
 this.gridControl1.CommandStack.Redo();
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-
+{% endhighlight %}
+{% highlight vb %}
+'Enable Undo Redo
 Me.gridControl1.CommandStack.Enabled = True
 
+'Undo the last action performed in the grid
 Me.gridControl1.CommandStack.Undo()
 
+'Redo the last action performed
 Me.gridControl1.CommandStack.Redo()
+{% endhighlight %}
+{% endtabs %}
 
-{% endhighlight   %}
-
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img7.jpeg) 
-
-
+For more information about the `Undo-Redo`, See [Undo - Redo](/windowsforms/grid/undo-redo)
 
 ## Find and Replace
-
-Find and Replace feature enables you to search and replace the required element present in Grid/Worksheet. You can implement the fastest Find and Replace functionality with Grid controls by using GridFindReplaceDialogSink and GridFindReplaceEventArgs classes. GridFindReplaceDialogSink class provides methods that are necessary to perform a Find and Replace operation. GridFindReplaceEventArgs class provides information about Find and Replace dialog box.
-
-The value entered in the Search For field is highlighted in the worksheet after search action is performed. You can switch over to each highlighted text by clicking Find Next button. This functionality is available only when there is more than one search result.
-
-### Search and Replace Options
-
-The search and replace actions:
-
-* Can be performed independently or simultaneously.
-* Can be done for individual search or for the entire worksheet by using the Find Next/Replace buttons.
-* Can be done for all the search results by clicking Find All/Replace All buttons.
-
-### Search Options
-
-The search options are as follows:
-
-* Match Case-Matches case while performing search.
-* Match Whole Cell-Matches the search text with the entire text in a grid cell.
-* Search Up-Specifies if the search can be performed bottom-up.
-* Column Only-Searches only the current column.
-* Selection Only-Searches only the current selection.
-* Whole Table-Searches the whole table.
-
-
-
-The Find and Replace feature can be enabled for Essential Grid by using the following code:
-
-{% highlight c#  %}
-
-
-
-GridFindTextOptions options = GridFindTextOptions.WholeTable | GridFindTextOptions.SearchUp;
-
-object locInfo = GridRangeInfo.Table();
-
-GridFindReplaceEventArgs frEvents = new GridFindReplaceEventArgs(cmbSearch.Text, "", options, locInfo);
-
-GridFindReplaceDialogSink frDialog.Find(frEvents);
-
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-Private options As GridFindTextOptions = GridFindTextOptions.WholeTable Or GridFindTextOptions.SearchUp
-
-
-
-Private locInfo As Object = GridRangeInfo.Table()
-
-Private frEvents As New GridFindReplaceEventArgs(cmbSearch.Text, "", options, locInfo)
-
-GridFindReplaceDialogSink(frDialog.Find(frEvents))
-{% endhighlight   %}
-
-
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img8.jpeg) 
-
-
-
-## Highlighting Search Text
-
-Grid control supports highlighting all or part of the search text in a cell. GridHighlightSearchText class is used to define search text for highlighting. This class exposes WireGrid method, which is used for passing Grid control. With HighLightText and HighlightColor properties, you can specify search text to be highlighted and the color for highlighting the search text. By default, the highlight color is _yellow_. The highlight color for the search text is optional.
-
-
-
-
-
-{% highlight c#  %}
-
-//Creates an object for the class “GridHighlightSearchText”.
-
-GridHighlightSearchText highlighttext = new GridHighlightSearchText();
-
-
-
-//Wires the grid to the object.
-
-highlighttext.WireGrid(this.gridControl1);
-
-
-
-//Assigns the text that needs to be highlighted.
-
-highlighttext.HighlightText = cmbSearch.Text;
-
-
-
-//Assigns the color (optional).
-
-highlighttext.HighlightColor = Color.Yellow;
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-
-
-'Creates an object for the class “GridHighlightSearchText”.
-
-Private highlighttext As New GridHighlightSearchText()
-
-
-
-'Wires the grid to the object.
-
-highlighttext.WireGrid(Me.gridControl1)
-
-
-
-'Assigns the text that needs to be highlighted.
-
-highlighttext.HighlightText = cmbSearch.Text
-
-
-
-'Assigns the color (optional).
-
-highlighttext.HighlightColor = Color.Yellow
-
-{% endhighlight   %}
-
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img9.png)
-
-
-
-
-
-To view a sample on Highlighting Search Text, see _<Installed Location>\Syncfusion\EssentialStudio_
-
-_\<Version>\Windows\Grid.Windows\Samples\Editing \Find-Replace Demo_
-
-## Unhide Column by Double-Clicking Disabled
-
-
-
-Essential Grid has changed the unhide column operation to emulate the behavior found in Microsoft Excel. Previously, hidden columns could be shown by double-clicking a row. This behavior has been disabled so that applications created using Essential Grid will be similar to the hide/unhide behavior found in Microsoft Excel.
-
-
-
-<table>
-<tr>
-<th>
-PROPERTY</th><th>
-DESCRIPTION</th><th>
-TYPE</th><th>
-DATA TYPE</th><th>
-REFERENCE LINKS</th></tr>
-<tr>
-<td>
-UnHideColsOnDblClick</td><td>
-Indicates whether to unhide the hidden columns when the row is double clicked. </td><td>
-Property </td><td>
-Boolean </td><td>
-N/A.</td></tr>
-</table>
-
-### Disabling Unhide Column by Double-Clicking 
-
-To disable unhide column by double- clicking, set the UnHideColsOnDblClick property to true. By default this is set to true. 
-
-
-{% highlight c#  %}
-//Disables unhide column when double clicking as found in Excel.
-
-            this.gridControl1.UnHideColsOnDblClick = true;
-
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-'Disables unhide column when double clicking as found in Excel.
-
-            Me.gridControl1.UnHideColsOnDblClick = True
-{% endhighlight   %}
-
-## ighlighting Row and Column Headers
-
-This feature is used to highlight the corresponding row and column headers of one or more cells that you selected. Using the MarkRowHeader and MarkColHeader properties, you can enable highlighting the row and column headers of the selected cells.
-
-
-
-<table>
-<tr>
-<th>
-PROPERTY </th><th>
-DESCRIPTION </th><th>
-DATA TYPE </th></tr>
-<tr>
-<td>
-MarkRowHeader</td><td>
-It is used to highlight row headers of the selected cells.</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-MarkColHeader</td><td>
-It is used to highlight the column headers of the selected cells.</td><td>
-Boolean</td></tr>
-</table>
-By default, MarkRowHeader and MarkColHeader properties are set to false. To enable highlighting row and column headers, set MarkRowHeader and MarkColHeader properties to true. The following code examples illustrate this.
-
-
-{% highlight c#  %}
-this.gridControl1.MarkColHeader = true;
-
-this.gridControl1.MarkRowHeader = true;
-
-{% endhighlight   %}
-{% highlight vbnet  %}
-
-
-
-Me.gridControl1.MarkColHeader = true
-
-Me.gridControl1.MarkRowHeader = true
-{% endhighlight   %}
-
-
-![](MS-Excel-like-Features_images/MS-Excel-like-Features_img10.png) 
-
-
-
-
-
-### Sample Link
-
-To view samples from the dashboard:
-
-* Open Syncfusion Dashboard. 
-* Select UI > Windows Forms.
-* Click Run Samples.  
-* Navigate to Grid > MS Excel-Style Features > Mark Header Demo
+The GridControl provides the support to search and replace the text and numbers like the Find and Replace feature of Excel. This feature can be added to the GridControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the `Find and Replace` technique in GridControl. 
+
+* [GridFindReplaceDialogSink](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html)<br/>
+* [GridFindReplaceDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialog.html)<br/>
+
+The `GridFindReplaceDialogSink` class is used to perform the `Find and Replace` of text in GridControl. The `GridFindReplaceDialog` is the built-in dialog which shows the options for finding and replacing of the text. If this dialog is used for finding and replacing, there is no need to implement the methods for finding and replacing the text programmatically. 
+
+The below example shows the `Find and Replace` dialog is shown in GridControl,
+
+{% tabs %}
+{% highlight c# %}
+// Setting the Dialog sink
+GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(this.gridControl1);
+// Setting the Dialog
+GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
+// Setting the sink to dialog
+findReplaceDialog.ActiveSink = findReplaceSink;
+findReplaceDialog.ShowDialog();
+{% endhighlight %}
+{% highlight vb %}
+' Setting the Dialog sink
+Dim findReplaceSink As New GridFindReplaceDialogSink(Me.gridControl1)
+' Setting the Dialog
+Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance
+' Setting the sink to dialog
+findReplaceDialog.ActiveSink = findReplaceSink
+findReplaceDialog.ShowDialog()
+{% endhighlight %}
+{% endtabs %}
+
+![](Excel-Like-Features_images/Excel-Like-Features_img18.jpeg)
+
+N> This section has been explained briefly in [Find and Replace](/windowsforms/grid/find-and-replace) section.

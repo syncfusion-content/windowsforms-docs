@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-hide-an-unnecessary-column-from-the-multiple-columns | WindowsForms | Syncfusion
+title: How-to-hide-an-unnecessary-column-from-the-multiple-columns | Windows Forms | Syncfusion
 description: how to hide an unnecessary column from the multiple columns
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 # How to hide an unnecessary column from the multiple columns
 
 
-MultiColumnComboBox allows us to hide unnecessary columns. If you want to hide a particular column, follow this method anywhere in code but before displaying the dropdown.
+MultiColumComboBox allows us to hide unnecessary columns. If you want to hide a particular column, follow this method anywhere in code but before displaying the dropdown.
 
 {% highlight c# %}
 

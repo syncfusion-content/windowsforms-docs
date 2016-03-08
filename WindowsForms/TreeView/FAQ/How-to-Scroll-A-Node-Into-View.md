@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Scroll-A-Node-Into-View | WindowsForms | Syncfusion
+title: How-to-Scroll-A-Node-Into-View | Windows Forms | Syncfusion
 description: how to scroll a node into view
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

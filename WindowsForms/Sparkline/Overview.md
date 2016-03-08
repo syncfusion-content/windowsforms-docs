@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: Sparkline
 documentation: ug
 ---
 
 # Overview
 
-A Sparkline control is a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
+A Sparkline controlis a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
 
 ### Use Case Scenarios
 
@@ -59,7 +59,7 @@ NA</td></tr>
 <tr>
 <td>
 ColumnStyle</td><td>
-Customizes the styles of Column and Win loss sparklines</td><td>
+Customizes the styles of Column and Winloss sparklines</td><td>
 NA</td><td>
 NA</td><td>
 NA</td></tr>
@@ -138,7 +138,7 @@ To access a Sparkline sample Demo:
 
 ### Types of Sparklines
 
-Presently, SyncfusionSparkLine control supports three types of Sparklines and the sparkline control must be bound to a data source. It supports a variety of datasource such as DataTable and any component that implements the interface IEnumerable, ICollection, IList. 
+Presently, SyncfusionSparkLine control supports three types of Sparklines and the sparkline control must be bound to a data source. It supports a variety of datasource such as DataTable and any component that implements the interface IEumerable, ICollection, IList. 
 
 * Line
 * Column
@@ -231,7 +231,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. Column
 
 ### Drawing WinLoss Sparkline in an Application
 
-The Win loss type of spark line is similar to column type but all columns have equal length for data points.   The vertical column direction represents the negative or positive value.
+The Winloss type of spark line is similar to column type but all columns have equal length for data points.   The vertical column direction represents the negative or positive value.
 Refer to the following code samples to draw the WinLoss sparkline:
 
 
@@ -308,7 +308,7 @@ Gets or sets the marker color for line type sparkline. This property color is se
 <tr>
 <td>
 HighPointColor</td><td>
-Gets or sets the high point color for line type sparkline. This property color is set to sparkline marker when enabling the ShowHighPoint property.</td></tr>
+Gets or sets the high point color for  line type sparkline. This property color is set to sparkline marker when enablinge the ShowHighPoint property.</td></tr>
 <tr>
 <td>
 LowPointColor</td><td>

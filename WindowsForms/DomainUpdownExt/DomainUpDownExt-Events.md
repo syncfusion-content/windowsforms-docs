@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DomainUpDownExt Events | WindowsForms | Syncfusion
+title: DomainUpDownExt Events | Windows Forms | Syncfusion
 description: domainupdownext events
-platform: WindowsForms
+platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---

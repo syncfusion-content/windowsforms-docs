@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Caption-Settings | WindowsForms | Syncfusion
+title: Caption-Settings | Windows Forms | Syncfusion
 description: caption settings
-platform: WindowsForms
+platform: windowsforms
 control: Office2007 Form
 documentation: ug
 ---

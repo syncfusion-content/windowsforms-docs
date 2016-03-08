@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-Events-available-in-HubTile-and-purpo | WindowsForms | Syncfusion
+title: What-are-the-Events-available-in-HubTile-and-purpo | Windows Forms | Syncfusion
 description: what are the events available in hubtile and purpose of the events?
 platform: wpf
 control: TabbedMDIPackage
@@ -215,7 +215,7 @@ This Event is triggered after the HubTile image content is Zoomed In and Out.
 
 #### Event Data
 
-ZoomCompleted contains the following members that provide information specific to this Event:
+ZoomCompletedcontains the following members that provide information specific to this Event:
 
 _Table_ _980_: _Members Table_
 

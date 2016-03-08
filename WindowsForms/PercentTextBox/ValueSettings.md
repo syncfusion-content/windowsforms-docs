@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Value Settings | WindowsForms | Syncfusion
+title: Value Settings | Windows Forms | Syncfusion
 description: Value Settings
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
@@ -157,7 +157,7 @@ Gets / sets the minimum value that can be set through the PercentTextBox. The de
 <tr>
 <td>
 EnforceMinMaxDuringValidating</td><td>
-If the min and max values are not met, the Validating event will be handled and canceled if this property is set to 'True'.</td></tr>
+If the min and max values are not met, the Validating event will be handled and cancelled if this property is set to 'True'.</td></tr>
 </table>
 
 

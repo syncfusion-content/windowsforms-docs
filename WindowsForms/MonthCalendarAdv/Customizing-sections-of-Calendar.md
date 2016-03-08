@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing sections of Calendar | WindowsForms | Syncfusion
+title: Customizing sections of Calendar | Windows Forms | Syncfusion
 description: customizing sections of calendar
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime 
 documentation: ug
 ---
@@ -596,7 +596,7 @@ Me.monthCalendarAdv1.DaysHeaderInterior = New Syncfusion.Drawing.BrushInfo(Syncf
 
 ## Today's Date 
 
-The fore color for Today's date is set using TodayFontColor property. Using Today button at the bottom of the control, today's date can be focused. See Buttons for details.
+The fore color for Today's date is set using TodayFontColor property. Using Today button at the bottom of the control, today's date can be focussed. See Buttons for details.
 
 
 {% highlight c# %}
@@ -739,7 +739,7 @@ LeftScrollButtonImage</td><td>
 Specifies Image for left scroll button.</td></tr>
 <tr>
 <td>
-RightScrollButtonImage</td><td>
+RightftScrollButtonImage</td><td>
 Specifies Image for right scroll button.</td></tr>
 <tr>
 <td>

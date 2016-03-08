@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to programmatically nest various layouts | WindowsForms | Syncfusion
+title: How to programmatically nest various layouts | Windows Forms | Syncfusion
 description: how to programmatically nest various layouts
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

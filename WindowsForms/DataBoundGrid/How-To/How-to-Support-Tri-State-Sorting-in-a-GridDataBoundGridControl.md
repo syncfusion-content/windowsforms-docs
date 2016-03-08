@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Support-Tri-State-Sorting-in-a-GridDataBoundGridControl | WindowsForms | Syncfusion
+title: How-to-Support-Tri-State-Sorting-in-a-GridDataBoundGridControl | Windows Forms | Syncfusion
 description: how to support tri-state sorting in a griddataboundgridcontrol
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

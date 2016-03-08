@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabbedMDIManager-Events | WindowsForms | Syncfusion
+title: TabbedMDIManager-Events | Windows Forms | Syncfusion
 description: tabbedmdimanager events
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -40,7 +40,7 @@ TabControlRemoved Event</td><td>
 This event is handled after a tab control is removed from a tab group.</td></tr>
 <tr>
 <td>
-UnLockingMdIClient Event</td><td>
+UnLockingMdiClient Event</td><td>
 This event is handled to notify that the locked MDI client area is being unlocked.</td></tr>
 </table>
 
@@ -142,7 +142,7 @@ End Sub
 
 {% endhighlight %}
 
-## UnLockingMdIClient Event
+## UnLockingMdiClient Event
 
 This event is handled to notify that the locked MDI client area is being unlocked.
 

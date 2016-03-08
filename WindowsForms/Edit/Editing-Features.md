@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Editing-Features | WindowsForms | Syncfusion
+title: Editing-Features | Windows Forms | Syncfusion
 description: editing features
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
@@ -216,7 +216,7 @@ Edit Control allows you to specify a new line style, or get the currently used n
 
 SetNewLineStyle method sets the current new line style in the Edit Control. SetNewLineStyle method accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix and Control, which correspond to new line styles "\r\n", "\r", "\n\r" and "\n\r" respectively.
 
-Similarly, the GetNewLineStyle method returns a NewLineStyle enumerator value which indicates the currently used new line style in the Edit Control.
+Similarly, the GetNewLineStyle method returns a NewLineStyle enumerator value which indicates the currently used new line stye in the Edit Control.
 
 
 
@@ -590,7 +590,7 @@ Edit Control offers complete support to a variety of common constructs for regul
 
 #### Lexical Macros
 
-Lexical macros definitions create named regular expressions that can be used to replace certain sections of the regular expression patterns. This improves the reusable of common patterns and simplifies the task of creating lexems in configuration files. Refer to the Lexical Macros topic for more information in this regard.
+Lexical macros definitions create named regular expressions that can be used to replace certain sections of the regular expression patterns. This improves the reusability of common patterns and simplifies the task of creating lexems in configuration files. Refer to the Lexical Macros topic for more information in this regard.
 
 
 
@@ -756,7 +756,7 @@ Quantifiers add optional quantity data to a regular expression. A quantifier exp
 
 
 
-The following table describes the meta characters that affect the matching quantity.
+The following table describes the metacharacters that affect the matching quantity.
 
 
 
@@ -768,15 +768,15 @@ Description</th></tr>
 <tr>
 <td>
 *</td><td>
-Specifies zero or more matches; for example, \w* or (ab)*. Same as {0,}.</td></tr>
+Specifies zero or more matches; for example, \w* or (abc)*. Same as {0,}.</td></tr>
 <tr>
 <td>
 +</td><td>
-Specifies one or more matches; for example, \w+ or (ab)+. Same as {1,}</td></tr>
+Specifies one or more matches; for example, \w+ or (abc)+. Same as {1,}</td></tr>
 <tr>
 <td>
 ?</td><td>
-Specifies zero or one matches; for example, \w? or (ab)?. Same as {0,1}.</td></tr>
+Specifies zero or one matches; for example, \w? or (abc)?. Same as {0,1}.</td></tr>
 <tr>
 <td>
 {n}</td><td>
@@ -784,7 +784,7 @@ Specifies exactly n matches; for example, (pizza){2}.</td></tr>
 <tr>
 <td>
 {n,}</td><td>
-Specifies at least n matches; for example, (ab){2,}.</td></tr>
+Specifies at least n matches; for example, (abc){2,}.</td></tr>
 <tr>
 <td>
 {n,m}</td><td>
@@ -794,7 +794,7 @@ Specifies at least n, but no more than m, matches.</td></tr>
 
 #### Atomic Zero-Width Assertions
 
-The meta characters described in the following table do not cause the engine to advance through the string or consume characters. They simply cause a match to succeed or fail depending on the current position in the string. For instance, ^ specifies that the current position is at the beginning of a line or string. Thus, the regular expression ^#region, returns only those occurrences of the character string #region that occur at the beginning of a line.
+The metacharacters described in the following table do not cause the engine to advance through the string or consume characters. They simply cause a match to succeed or fail depending on the current position in the string. For instance, ^ specifies that the current position is at the beginning of a line or string. Thus, the regular expression ^#region, returns only those occurrences of the character string #region that occur at the beginning of a line.
 
 
 
@@ -826,7 +826,7 @@ Specifies that the match must occur at the end of the document.</td></tr>
 <tr>
 <td>
 \b</td><td>
-Specifies that the match must occur on a boundary between \w (alphanumeric) and \W (non alphanumeric) characters. </td></tr>
+Specifies that the match must occur on a boundary between \w (alphanumeric) and \W (nonalphanumeric) characters. </td></tr>
 <tr>
 <td>
 \B</td><td>
@@ -1097,11 +1097,11 @@ Indents selected text.</td></tr>
 <tr>
 <td>
 OutdentText</td><td>
-Outdent text in the specified range.</td></tr>
+Outdents text in the specified range.</td></tr>
 <tr>
 <td>
 OutdentSelection</td><td>
-Outdent selected text.</td></tr>
+Outdents selected text.</td></tr>
 </table>
 
 

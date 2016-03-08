@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TextBoxExt-Events | WindowsForms | Syncfusion
+title: TextBoxExt-Events | Windows Forms | Syncfusion
 description: textboxext events
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

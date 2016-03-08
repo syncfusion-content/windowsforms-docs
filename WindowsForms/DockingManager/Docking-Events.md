@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Docking-Events | WindowsForms | Syncfusion
+title: Docking-Events | Windows Forms | Syncfusion
 description: docking events
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential Tools DockingManager provides the functionality for creating and working with enhanced docking windows that support attaching to a host form's border, dragging around and docking to different edges within the form and also be dragged off the host form and floated as an individual top-level window. 
 
-The Essential Tools docking framework allows just about any child control on a form to be made into a fully qualified docking window. The Docking manager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events. 
+The Essential Tools docking framework allows just about any child control on a form to be made into a fully qualified docking window. The Docking manager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, autohide mode, state persistence etc., by raising several events. 
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -24,11 +24,11 @@ Description</th></tr>
 <tr>
 <td>
 AutoHideAnimationStart</td><td>
-The AutoHideAnimationStart event occurs just before the start of an auto hide animation.</td></tr>
+The AutoHideAnimationStart event occurs just before the start of an autohide animation.</td></tr>
 <tr>
 <td>
 AutoHideAnimationStop</td><td>
-The AutoHideAnimationStop event occurs immediately after the end of an auto hide animation.</td></tr>
+The AutoHideAnimationStop event occursimmediately after the end of an autohideanimation.</td></tr>
 <tr>
 <td>
 AutoHideTabContextMenu</td><td>
@@ -56,23 +56,23 @@ This event occurs after the control is restored.</td></tr>
 <tr>
 <td>
 DockAllow</td><td>
-The DockAllow event occurs when a docking window is dragged over a potential dock target.</td></tr>
+The DockAllow event occurs when a dockingwindow is dragged over a potential dock target.</td></tr>
 <tr>
 <td>
 DockContextMenu</td><td>
-The DockContextMenu event occurs when the right mouse button is clicked over a docking window's caption.</td></tr>
+The DockContextMenu event occurs when theright mouse button is clicked over a dockingwindow's caption.</td></tr>
 <tr>
 <td>
 DockControlActivated</td><td>
-The DockControlActivated event occurs when a dockable control gets activated.</td></tr>
+The DockControlActivated event occurs when adockable control gets activated.</td></tr>
 <tr>
 <td>
 DockControlDeactivated</td><td>
-The DockControlDeactivated event occurs when a dockable control gets deactivated.</td></tr>
+The DockControlDeactivated event occurs when adockable control gets deactivated.</td></tr>
 <tr>
 <td>
 DockStateChanged</td><td>
-The DockStateChanged event occurs immediately after a dock operation.</td></tr>
+The DockStateChanged event occurs immediatelyafter a dock operation.</td></tr>
 <tr>
 <td>
 DockStateChanging</td><td>
@@ -108,31 +108,31 @@ Occurs when the ImageList property changes.</td></tr>
 <tr>
 <td>
 InitializeControlOnLoad</td><td>
-The InitializeControlOnLoad event occurs when the DockingManager is not able to locate a control during a LoadDockState call.</td></tr>
+The InitializeControlOnLoad event occurs whenthe DockingManager is not able to locate acontrol during a LoadDockState call.</td></tr>
 <tr>
 <td>
 NewDockStateBeginLoad</td><td>
-The NewDockStateBeginLoad event occurs just before a new dock state is loaded.</td></tr>
+The NewDockStateBeginLoad event occurs justbefore a new dock state is loaded.</td></tr>
 <tr>
 <td>
 NewDockStateEndLoad</td><td>
-The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded.</td></tr>
+The NewDockStateEndLoad event occursimmediately after a new dock state has beenloaded.</td></tr>
 <tr>
 <td>
 ProvideGraphicsItems</td><td>
-The ProvideGraphicsItems event occurs whenever a dockable control's caption needs to be painted.</td></tr>
+The ProvideGraphicsItems event occurs whenevera dockable control's caption needs to be painted.</td></tr>
 <tr>
 <td>
 ProvidePersistenceID</td><td>
-Lets you specify a unique ID used to distinguish the persistence information of different instances of the Form type.</td></tr>
+Lets you specify a unique ID used to distinguishthe persistence information of different instancesof the Form type.</td></tr>
 <tr>
 <td>
 TransferredToManager</td><td>
-The TransferredToManager event occurs after a dockable control that previously belonged to some other DockingManager has been transferred to the docking layout hosted by this DockingManager.</td></tr>
+The TransferredToManager event occurs after adockable control that previously belonged to someother DockingManager has been transferred to thedocking layout hosted by this DockingManager.</td></tr>
 <tr>
 <td>
 TransferringFromManager</td><td>
-The TransferringFromManager event occurs when a dockable control hosted by this DockingManager is about to be transferred to the docking layout hosted by some other DockingManager.</td></tr>
+The TransferringFromManager event occurs whena dockable control hosted by thisDockingManager is about to be transferred to thedocking layout hosted by some otherDockingManager.</td></tr>
 </table>
 
 ## Docking
@@ -288,11 +288,11 @@ End Sub
 
 ## AutoHide Animation
 
-This section discusses the below events that are raised at the start and end of auto hide animation.
+This section discusses the below events that are raised at the start and end of autohide animation.
 
 ### AutoHideAnimationStart Event
 
-The AutoHideAnimationStart event occurs just before the start of an auto hide animation. When the user tries to click the auto hide button to hide the docked control, this event will be triggered.
+The AutoHideAnimationStart event occurs just before the start of an autohide animation. When the user tries to click the auto hide button to hide the docked control, this event will be triggered.
 
 #### Event Data
 
@@ -306,7 +306,7 @@ Description</th></tr>
 <tr>
 <td>
 Bounds</td><td>
-The display bounds of the auto hidden control.</td></tr>
+The display bounds of the autohidden control.</td></tr>
 <tr>
 <td>
 DockBorder</td><td>
@@ -384,7 +384,7 @@ End Sub
 
 ### AutoHideAnimationStop Event
 
-The AutoHideAnimationStop event occurs immediately after the end of an auto hide animation. When the user click the auto hide button, the docked control will be hidden, and once this happens, the AutoHideAnimationStop event will be triggered.
+The AutoHideAnimationStop event occurs immediately after the end of an autohide animation. When the user click the auto hide button, the docked control will be hidden, and once this happens, the AutoHideAnimationStop event will be triggered.
 
 #### Event Data
 
@@ -399,7 +399,7 @@ Description</th></tr>
 <tr>
 <td>
 Bounds</td><td>
-The display bounds of the auto hidden control.</td></tr>
+The display bounds of the autohidden control.</td></tr>
 <tr>
 <td>
 DockBorder</td><td>
@@ -478,15 +478,15 @@ End Sub
 
 This section covers the following events:
 
-* [AutoHideTabContextMenu Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#autohidetabcontextmenu-event)
-* [DockContextMenu Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockcontextmenu-event)
-* [DocMenuClick Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#docmenuclick-event)
+* [AutoHideTabContextMenu Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#autohidetabcontextmenu-event)
+* [DockContextMenu Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockcontextmenu-event)
+* [DocMenuClick Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#docmenuclick-event)
 
 
 
 ### AutoHideTabContextMenu Event
 
-This event occurs when the right mouse button is clicked over a auto hidden tab control.
+This event occurs when the right mouse button is clicked over a autohidden tab control.
 
 #### Event Data
 
@@ -993,11 +993,11 @@ End Sub
 
 This section covers the following events:
 
-* [DockStateChanged Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanged-event)
-* [DockStateChanging Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanging-event)
-* [DockStateUnavailable Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstateunavailable-event)
-* [NewDockStateBeginLoad Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
-* [NewDockStateEndLoad Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
+* [DockStateChanged Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanged-event)
+* [DockStateChanging Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanging-event)
+* [DockStateUnavailable Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstateunavailable-event)
+* [NewDockStateBeginLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
+* [NewDockStateEndLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
 
 ### DockStateChanged Event
 
@@ -1110,7 +1110,7 @@ Description</th></tr>
 <tr>
 <td>
 Control</td><td>
-Gets the collection of controls undergoing the dock state transfer.</td></tr>
+Gets the collection of controls undergoingthe dockstate transfer.</td></tr>
 </table>
 
 
@@ -1369,8 +1369,8 @@ End Sub
 
  This section covers the following events:
 
-* [DockVisibilityChanged Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanged-event)
-* [DockVisibilityChanging Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanging-event)
+* [DockVisibilityChanged Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanged-event)
+* [DockVisibilityChanging Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanging-event)
 
 ### DockVisibilityChanged Event
 
@@ -1464,9 +1464,9 @@ An use case demonstrating this event is available at How to prevent closing of d
 
 This section covers the following events:
 
-* [DragAllow Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dragallow-event)
-* [DragFeedbackStart Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstart-event)
-* [DragFeedbackStop Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstop-event)
+* [DragAllow Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragallow-event)
+* [DragFeedbackStart Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstart-event)
+* [DragFeedbackStop Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstop-event)
 
 ### DragAllow Event
 
@@ -1688,12 +1688,12 @@ End Sub
 
 This section covers the following events:
 
-* [TransferredToManager Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#transferredtomanager-event)
-* [TransferringFromManager Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#transferringfrommanager-event)
-* [ImageListChanged Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#imagelistchanged-event)
-* [InitializeControlOnLoad Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#initializecontrolonload-event)
-* [ProvideGraphicsItems Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#providegraphicsitems-event)
-* [ProvidePersistenceID Event](http://docs.syncfusion.com/windowsforms/dockingmanager/docking-events#providepersistenceid-event)
+* [TransferredToManager Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#transferredtomanager-event)
+* [TransferringFromManager Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#transferringfrommanager-event)
+* [ImageListChanged Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#imagelistchanged-event)
+* [InitializeControlOnLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#initializecontrolonload-event)
+* [ProvideGraphicsItems Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#providegraphicsitems-event)
+* [ProvidePersistenceID Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#providepersistenceid-event)
 
 ### TransferredToManager Event
 
@@ -1832,7 +1832,7 @@ End Sub
 
 ## ImageListChanged Event
 
-When the image list property is changed, ImageListChanged event will be raised. Every docked control will have SetDockIcon property to set the icons for the control. When this property is changed, the above event will be triggered.
+When the imagelist property is changed, ImageListChanged event will be raised. Every docked control will have SetDockIcon property to set the icons for the control. When this property is changed, the above event will be triggered.
 
 
 <table>
@@ -1843,7 +1843,7 @@ Description</th></tr>
 <tr>
 <td>
 Control</td><td>
-Gets the docked control for which the image list property is changed.</td></tr>
+Gets the docked control for which the imagelist property is changed.</td></tr>
 </table>
 
 

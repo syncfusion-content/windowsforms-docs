@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ToolStripEx | WindowsForms | Syncfusion
+title: ToolStripEx | Windows Forms | Syncfusion
 description:  toolstripex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -93,7 +93,7 @@ Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 
 ### Grip Style
 
-The tool strip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
+The toolstrip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
 
 <table>
 <tr>
@@ -217,7 +217,7 @@ Me.toolStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.C
 
 ## AutoSizing of ToolStripEx
 
-By enabling the **AutoSize** property of ToolStripEx, the tool strip width will be resized automatically while adding controls to the tool strip in the designer.
+By enabling the **AutoSize** property of ToolStripEx, the toolstrip width will be resized automatically while adding controls to the toolstrip in the designer.
 
 <table>
 <tr>
@@ -227,7 +227,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoSize<br/><br/></td><td>
-Setting this to true, will automatically resize the tool strip as the controls gets added.<br/><br/></td></tr>
+Setting this to true, will automatically resize the toolstrip as the controls gets added.<br/><br/></td></tr>
 </table>
 
 {% tabs %}
@@ -258,7 +258,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 Flow<br/><br/></td><td>
-Specifies that items flow horizontally or vertically as necessary.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items flow horizontally or vertically as necessary.<br/><br/>**Note**: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 HorizontalStackWithOverflow<br/><br/></td><td>
@@ -270,7 +270,7 @@ Specifies that items are laid out automatically.<br/><br/></td></tr>
 <tr>
 <td>
 Table<br/><br/></td><td>
-Specifies that items are laid out flush left.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items are laid out flush left.<br/><br/>**Note**: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 VerticalStackWithOverflow<br/><br/></td><td>
@@ -338,12 +338,12 @@ Smart Tag of the ToolStripEx opens the Task Windows which lets you to set some i
 
 ### Context Menu
 
-The context menu on a tool strip item provides advanced options which minimizes your time in customizing the ToolStrip container.
+The context menu on a toolstrip item provides advanced options which minimizes your time in customizing the ToolStrip container.
 
 ![](ToolStripEx_images/ToolStripEx_img10.jpeg)
 
 
-* Set Image - This options lets you to modify the image for the particular tool strip item.
+* Set Image - This options lets you to modify the image for the particular toolstrip item.
 * Enabled - Specifies whether the item is enabled or not.
 * Alignment - Aligns the item to Left or Right.
 * DisplayStyle - Specifies the display style, whether None, Image, Text or ImageAndText.

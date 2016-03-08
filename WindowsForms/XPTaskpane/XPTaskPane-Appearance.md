@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPTaskPane-Appearance | WindowsForms | Syncfusion
+title: XPTaskPane-Appearance | Windows Forms | Syncfusion
 description: xptaskpane appearance
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---
@@ -40,7 +40,7 @@ Me.xpTaskPane1.ForeColor = System.Drawing.Color.SteelBlue
 
 ### Header Foreground
 
-The font style and fore color for the Header text is controlled through HeaderLabel.Font and HeaderLabel.ForeColor properties.
+The font style and forecolor for the Header text is controlled through HeaderLabel.Font and HeaderLabel.ForeColor properties.
 
 {% highlight c# %}
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multiple Columns | WindowsForms | Syncfusion
+title: Multiple Columns | Windows Forms | Syncfusion
 description: Multiple Columns
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---
@@ -126,6 +126,6 @@ N> You can also add images to the dropdown items using internal source and exter
 
 {% seealso %}
 
- [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control), [How to match items in all the columns using AutoCompleteControl?](http://docs.syncfusion.com/windowsforms/autocomplete/faq/how-to-match-items-in-all-the-columns-using-autocompletecontrol)
+ [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control), [How to match items in all the columns using AutoCompleteControl?](http://help.syncfusion.com/windowsforms/autocomplete/faq/how-to-match-items-in-all-the-columns-using-autocompletecontrol)
  
 {% endseealso %}

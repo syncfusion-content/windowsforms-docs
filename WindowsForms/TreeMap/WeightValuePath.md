@@ -1,8 +1,8 @@
 ---
 layout: post
-title: WeightValuePath | WindowsForms | Syncfusion
+title: WeightValuePath | Windows Forms | Syncfusion
 description: weightvaluepath
-platform: WindowsForms
+platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---

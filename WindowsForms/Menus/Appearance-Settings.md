@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance Settings | WindowsForms | Syncfusion
+title: Appearance Settings | Windows Forms | Syncfusion
 description: appearance settings
-platform: WindowsForms
+platform: windowsforms
 control: Menus Package 
 documentation: ug
 ---
@@ -108,7 +108,7 @@ Description</th></tr>
 <tr>
 <td>
 CommandBarBackColor</td><td>
-Gets / sets the background color for a toolbar / command bar.</td></tr>
+Gets / sets the background color for a toolbar / commandbar.</td></tr>
 <tr>
 <td>
 CheckedSelColor</td><td>
@@ -128,11 +128,11 @@ Gets / sets the border color for a drop-down menu.</td></tr>
 <tr>
 <td>
 ExpandedMenuStripBackColor</td><td>
-Gets / sets the Back color for the expanded, left-aligned menu strip region. This is the region you see when a partial menu gets expanded to show all the menu items.</td></tr>
+Gets / sets the Backcolor for the expanded, left-aligned menu strip region. This is the region you see when a partial menu gets expanded to show all the menu items.</td></tr>
 <tr>
 <td>
 FloatingCommandBarCaptionColor</td><td>
-Gets / sets the Caption background color for a floating toolbar / command bar.</td></tr>
+Gets / sets the Caption background color for a floating toolbar / commandbar.</td></tr>
 <tr>
 <td>
 InactiveItemAlphaBlendFactor</td><td>
@@ -399,7 +399,7 @@ BarItemCheckLightColor </td><td>
 Gets / sets light color for background of the checked bar item.</td></tr>
 <tr>
 <td>
-Bar itemHighlightBorderColor </td><td>
+BaritemHighlightBorderColor </td><td>
 Gets / sets color for highlighted border of the BarItem.</td></tr>
 <tr>
 <td>
@@ -588,31 +588,31 @@ Gets or Sets light color of groupbar item when it is highlighted.</td></tr>
 <tr>
 <td>
 GroupBarItemColorDark </td><td>
-Color of groupBar item.</td></tr>
+Color of groupBaritem.</td></tr>
 <tr>
 <td>
 GroupBarItemColorLight  </td><td>
-Color of groupBar item (Top half).</td></tr>
+Color of groupBaritem (Top half).</td></tr>
 <tr>
 <td>
 GroupBarItemTextColor</td><td>
-Text color of the groupbar item.</td></tr>
+Text color of the groupbaritem.</td></tr>
 <tr>
 <td>
 GroupBarItemSelectedColorDark</td><td>
-Selected Item color (Top gradient).</td></tr>
+Selected Itemcolor (Top gradient).</td></tr>
 <tr>
 <td>
 GroupBarItemSelectedColorLight </td><td>
-Selected Item color (Bottom gradient).</td></tr>
+Selected Itemcolor (Bottom gradient).</td></tr>
 <tr>
 <td>
 GroupBarItemSelectedHighlightColorDark  </td><td>
-Selected Item Color (Top gradient).</td></tr>
+Selected ItemColor (Top gradient).</td></tr>
 <tr>
 <td>
 GroupBarItemSelectedHighlightColorLight </td><td>
-Selected Item Color (Bottom gradient).</td></tr>
+Selected ItemColor (Bottom gradient).</td></tr>
 <tr>
 <td>
 GroupBarSplitterColorDark </td><td>
@@ -680,11 +680,11 @@ Color of combo button in menu dropdown (Bottom half).</td></tr>
 <tr>
 <td>
 MenuItemArrowDarkColor </td><td>
-Arrow button dark color of submenu parent / dropdown barItem.</td></tr>
+Arrow button dark color of submenu parent / dropdownbarItem.</td></tr>
 <tr>
 <td>
 MenuItemArrowLightColor </td><td>
-Arrow button light color of submenu parent / dropdown barItem.</td></tr>
+Arrow button light color of submenu parent / dropdownbarItem.</td></tr>
 <tr>
 <td>
 MenuItemBorderColor </td><td>

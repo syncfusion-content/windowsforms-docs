@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Menus Framework | WindowsForms | Syncfusion
+title: Menus Framework | Windows Forms | Syncfusion
 description: menus framework
-platform: WindowsForms
+platform: windowsforms
 control: Menus Package 
 documentation: ug
 ---
@@ -16,7 +16,7 @@ The XP Menus framework provides the flexibility to add detached toolbars through
 
 ### Through Designer
 
-Right click on the MainFrameBarManager in the designer and choose the "Add Detached CommandBar" option, to add a detached command bar. 
+Right click on the MainFrameBarManager in the designer and choose the "Add Detached CommandBar" option, to add a detached commandbar. 
 
 ![](Overview_images/Overview_img102.jpeg) 
 
@@ -103,7 +103,7 @@ BackgroundImage</td><td>
 Sets the background image for the control.</td></tr>
 <tr>
 <td>
-BackgroundImage layout</td><td>
+BackgroundImagelayout</td><td>
 Specifies the layout of the image. Title, Center, Stretch, Zoom are the options. Default value is Tile.</td></tr>
 <tr>
 <td>
@@ -313,7 +313,7 @@ BackgroundImage</td><td>
 Sets the background image for the XPToolbar.</td></tr>
 <tr>
 <td>
-BackgroundImage layout</td><td>
+BackgroundImagelayout</td><td>
 Specifies the layout of the image.Title, Center, Stretch, Zoom are the option. Default value is Tile.</td></tr>
 <tr>
 <td>
@@ -437,7 +437,7 @@ N> Control Bar can also be added by clicking the verb in the properties window.
 
 
 
- The resulted screen shot displays control bar in the designer.
+ The resulted screen shot displays controlbar in the designer.
 
 ![](Overview_images/Overview_img116.jpeg)
 

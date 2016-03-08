@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to set the Color Palette for a Chart | WindowsForms | Syncfusion
+title: How to set the Color Palette for a Chart | Windows Forms | Syncfusion
 description: How to set the Color Palette for a Chart
-platform: WindowsForms
+platform: windowsforms
 control: PivotChart
 documentation: ug
 ---

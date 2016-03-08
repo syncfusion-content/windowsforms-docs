@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-apply-text-color-for-RichText-celltype-in-G | WindowsForms | Syncfusion
+title: How-to-apply-text-color-for-RichText-celltype-in-G | Windows Forms | Syncfusion
 description: how to apply text color for richtext celltype in gridgroupingcontrol
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

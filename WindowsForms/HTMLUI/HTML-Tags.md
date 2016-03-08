@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML-Tags | WindowsForms | Syncfusion
+title: HTML-Tags | Windows Forms | Syncfusion
 description:  html tags
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
@@ -544,7 +544,7 @@ The Horizontal Rule tag is used to draw an horizontal line in the document. The 
 
 * width:Specifies the width of the line
 * size:Specifies the thickness or height of the line
-* no shade: Renders the specified line in a solid color
+* noshade: Renders the specified line in a solid color
 
 
 
@@ -730,7 +730,7 @@ Submit Button</td></tr>
 * value: Specifies the default text that will appear on the control after being rendered on the document
 * size: Specifies the size of the input document
 * name: Specifies a unique name to the control. In HTMLUI the Control.Name property will access the name given to the control in code and not the value of this name attribute. The user has to access this value with the help of the Control.Attributes["name"].Value property. This will return the value of this attribute.
-* max length: Specifies the maximum number of characters that can be displayed inside the text fields
+* maxlength: Specifies the maximum number of characters that can be displayed inside the text fields
 * disabled: Disables the control. Any change that the user makes in the control will not be updated in the control.
 * checked: Displays the checkbox or the radio button selected by default in the document
 
@@ -843,7 +843,7 @@ The Link tag is used to link another document to the current HTML document. This
 
 * rel: Specifies the relationship between the two documents
 * type: Specifies the type of the document to be linked, either text or image
-* href:Specifies the location of the document to be linked to the current document
+* href:Specifies thelocation of the document to be linked to the current document
 
 
 
@@ -1056,9 +1056,9 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html")
 
 {% endhighlight %}
 
-## PRE - Pre formatted Tag
+## PRE - Preformatted Tag
 
-The HTMLUI control renders pre formatted texts written inside the <pre> tags. These texts are rendered with the fixed-pitch fonts and the control preserves the spaces and the line breaks used in the document.
+The HTMLUI control renders preformatted texts written inside the <pre> tags. These texts are rendered with the fixed-pitch fonts and the control preserves the spaces and the line breaks used in the document.
 
 
 
@@ -1108,7 +1108,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html")
 
 The Script tag is used to include executable user defined code snippets inside the HTML document. This is to make the HTML document self-contained and not to depend on external means for executing an action.
 
-HTMLUI supports C#, Visual Basic and Javascript. The language attribute is used to choose the script language from the supported types.
+HTMLUI supports C#, Visual Basic and Jscript. The language attribute is used to choose the script language from the supported types.
 
 
 
@@ -1530,7 +1530,7 @@ A Table tag defines a table in an HTML document. The table tag uses the <tr> tag
 
 
 
-* backgroundcolor: Specifies the background color of the table
+* bgcolor: Specifies the background color of the table
 * border: Specifies the thickness of the table border
 
 
@@ -1586,12 +1586,12 @@ The Table Cell tag defines a cell inside a table. The <td> tag has a parent <tr>
 
 
 * align: Specifies the alignment of the text inside the table cell
-* backgroundcolor: Specifies a background color for the specified cell
-* columnspan: Spans the cell to the specified number of columns. This is used in merging the columns in the table.
-* height:Specifies custom height for the cells
-* no wrap: Extends the text inside a particular cell into a single line. This display extends the width of the cell according to the contents inside it.
-* row span: Extends the height of the cell to the specified number of rows. This is helpful in custom merging the rows of the given cell
-* verticalalign: Determines the vertical alignment of the text inside the table cell
+* bgcolor: Specifies a background color for the specified cell
+* colspan: Spans the cell to the specified number of columns. This is used in merging the columns in the table.
+* height:Specifiescustom height for the cells
+* nowrap: Extends the text inside a particular cell into a single line. This display extends the width of the cell according to the contents inside it.
+* rowspan: Extends the height of the cell to the specified number of rows. This is helpful in custom merging the rows of the given cell
+* valign: Determines the vertical alignment of the text inside the table cell
 * width: Specifies user-defined width for the specified cells
 
 
@@ -1740,12 +1740,12 @@ The Table Header tag is used to define header cells for the cells in a table. Th
 
 
 * align: Specifies the alignment of the text inside the table cell
-* backgroundcolor: Specifies a background color for the specified cell
-* column span: Spans the cell to the specified number of columns. This is used in merging the columns in the table.
+* bgcolor: Specifies a background color for the specified cell
+* colspan: Spans the cell to the specified number of columns. This is used in merging the columns in the table.
 * height:Specifiescustom height for the cells
-* no wrap: Extends the text inside a particular cell into a single line. This display extends the width of the cell according to the contents inside it.
-* row span: Extends the height of the cell to the specified number of rows. This is helpful in custom merging the rows of the given cell.
-* vertical align: Determines the vertical alignment of the text inside the table cell
+* nowrap: Extends the text inside a particular cell into a single line. This display extends the width of the cell according to the contents inside it.
+* rowspan: Extends the height of the cell to the specified number of rows. This is helpful in custom merging the rows of the given cell.
+* valign: Determines the vertical alignment of the text inside the table cell
 * width: Specifies user-defined width for the specified cells
 
 

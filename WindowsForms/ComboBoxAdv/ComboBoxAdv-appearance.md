@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboBoxAdv-appearance | WindowsForms | Syncfusion
+title: ComboBoxAdv-appearance | Windows Forms | Syncfusion
 description: comboboxadv appearance
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
@@ -224,7 +224,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
 ## Background Settings
 
-When ComboBoxAdv control is set with some style, theme background is drawn. You can override this background with the BackColor property using the IgnoreThemeBackground property. When IgnoreThemeBackground is set to true, the control ignores the theme background and draws the back color as the background.
+When ComboBoxAdv control is set with some style, theme background is drawn. You can override this background with the BackColor property using the IgnoreThemeBackground property. When IgnoreThemeBackground is set to true, the control ignores the theme background and draws the backcolor as the background.
 
 {% highlight c# %}
 
@@ -263,7 +263,7 @@ Description</th></tr>
 <tr>
 <td>
 ImageList</td><td>
-Specifies the image list that is used for the ComboBoxAdv control.</td></tr>
+Specifies the imagelist that is used for the ComboBoxAdv control.</td></tr>
 <tr>
 <td>
 ShowImageInTextBox</td><td>

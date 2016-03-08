@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Copy  Paste Nodes In Essential Diagram | Diagram | WindowsForms | Syncfusion
+title: How To Copy  Paste Nodes In Essential Diagram | Diagram | Windows Forms | Syncfusion
 description: how to copy / paste nodes in essential diagram
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

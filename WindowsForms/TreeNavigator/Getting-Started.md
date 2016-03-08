@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: TreeNavigator 
 documentation: ug
 ---
 
 # Getting Started
 
-This section briefly describes how to design a TreeNavigator Control in a WindowsForms Application.
+This section briefly describes how to design a TreeNavigator Control in a Windows Forms Application.
 
 * Adding a TreeNavigator Control 
 * Configuring the TreeNavigator Control

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PivotItem | WindowsForms | Syncfusion
+title: PivotItem | Windows Forms | Syncfusion
 description: pivotitem
-platform: WindowsForms
+platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---

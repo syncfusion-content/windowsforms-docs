@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-show-a-Customize-Quick-Access-Toolbar-Dialo | WindowsForms | Syncfusion
+title: How-to-show-a-Customize-Quick-Access-Toolbar-Dialo | Windows Forms | Syncfusion
 description: how to show a customize quick access toolbar dialog programmatically at run time?
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

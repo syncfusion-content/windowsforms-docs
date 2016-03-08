@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Background-Settings | WindowsForms | Syncfusion
+title: Background-Settings | Windows Forms | Syncfusion
 description: background settings
-platform: WindowsForms
+platform: windowsforms
 control: ProgressBarAdv
 documentation: ug
 ---
@@ -28,7 +28,7 @@ BackgroundStyle</td><td>
 Determines the style of the background. It includes the options given below.Image,Gradient,VerticalGradient,Tube,MultipleGradient,System andNone.</td></tr>
 <tr>
 <td>
-BackgroundFallBackStyle</td><td>
+BackgroundFallbackStyle</td><td>
 Determines the style of the background when BackgroundStyle is set to 'System', provided the system does not support themes.</td></tr>
 </table>
 

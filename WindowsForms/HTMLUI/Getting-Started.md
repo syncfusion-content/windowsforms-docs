@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
@@ -231,7 +231,7 @@ In this lesson, you will learn about about the following:
    ~~~
    {:.prettyprint }
 
-4. As shown in the HTML document above, a textbox, a text area and a button control has been added in the HTML document. The objective is to create an user interface by adding a Click event to the button element and on clicking the button, the text controls are made to display some text.
+4. As shown in the HTML document above, a textbox, a textarea and a button control has been added in the HTML document. The objective is to create an user interface by adding a Click event to the button element and on clicking the button, the text controls are made to display some text.
 
 
 
@@ -387,7 +387,7 @@ To create and display Custom Controls:
    ~~~
    {:.prettyprint }
 
-   Note the custom tags masked edit box, month calendar, and datagrid. These tags do not have any relation to the name of the control type they represent. Set the desired size of the custom control by setting the width and height attributes.
+   Note the custom tags maskededitbox, monthcalendar, and datagrid. These tags do not have any relation to the name of the control type they represent. Set the desired size of the custom control by setting the width and height attributes.
 
    In the previous step, three custom controls were defined as part of the HTMLUI interface. The actual Windows Forms controls that represent these definitions have to be added to the form. 
 

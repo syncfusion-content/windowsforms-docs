@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Image Settings | WindowsForms | Syncfusion
+title: Image Settings | Windows Forms | Syncfusion
 description: Image Settings
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
@@ -40,7 +40,7 @@ Description</th></tr>
 <tr>
 <td>
 ImageList</td><td>
-Sets the image list used for this control.</td></tr>
+Sets the imagelist used for this control.</td></tr>
 <tr>
 <td>
 ImageAlign</td><td>
@@ -91,7 +91,7 @@ TextAboveImage.</td></tr>
 
 
 
-N> The Image settings will be effective only when [ButtonType](http://docs.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
+N> The Image settings will be effective only when [ButtonType](http://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
 
 
 

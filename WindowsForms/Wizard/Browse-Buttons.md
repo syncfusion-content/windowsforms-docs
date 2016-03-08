@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Browse-Buttons | WindowsForms | Syncfusion
+title: Browse-Buttons | Windows Forms | Syncfusion
 description: browse buttons
-platform: WindowsForms
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---
@@ -193,7 +193,7 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5
 
 #### Reordering the Button Sequence
 
-In order to change the position of the buttons, user should handle the GridPostX property and change the position programmatically.
+In order to change the position of the buttons, user should handle the GridPosX property and change the position programmatically.
 
 N> Wizard control automatically sets position for some buttons after page change. Setting the position for controls manually, is not supported in those cases.
 

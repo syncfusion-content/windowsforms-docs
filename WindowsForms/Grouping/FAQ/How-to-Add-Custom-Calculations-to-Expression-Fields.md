@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Add Custom Calculations to Expression Fields | WindowsForms | Syncfusion
+title: How to Add Custom Calculations to Expression Fields | Windows Forms | Syncfusion
 description: How to Add Custom Calculations to Expression Fields
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

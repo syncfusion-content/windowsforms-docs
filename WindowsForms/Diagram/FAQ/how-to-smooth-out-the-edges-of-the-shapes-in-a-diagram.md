@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Smooth out the Edges Of the Shapes In a Dia | Diagram | WindowsForms | Syncfusion
+title: How To Smooth out the Edges Of the Shapes In a Dia | Diagram | Windows Forms | Syncfusion
 description: how to smooth-out the edges of the shapes in a diagram
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

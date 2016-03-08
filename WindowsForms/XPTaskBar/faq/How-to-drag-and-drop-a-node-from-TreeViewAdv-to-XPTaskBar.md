@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to drag and drop a node from TreeViewAdv to XPTaskBar | WindowsForms | Syncfusion
+title: How to drag and drop a node from TreeViewAdv to XPTaskBar | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

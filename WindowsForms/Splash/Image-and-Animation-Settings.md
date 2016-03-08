@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Image-and-Animation-Settings | WindowsForms | Syncfusion
+title: Image-and-Animation-Settings | Windows Forms | Syncfusion
 description: image and animation settings
-platform: WindowsForms
+platform: windowsforms
 control: SplashControl
 documentation: ug
 ---

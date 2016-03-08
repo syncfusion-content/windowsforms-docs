@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Item-Selection | WindowsForms | Syncfusion
+title: Item-Selection | Windows Forms | Syncfusion
 description: item selection
-platform: WindowsForms
+platform: windowsforms
 control: TreeNavigator 
 documentation: ug
 ---

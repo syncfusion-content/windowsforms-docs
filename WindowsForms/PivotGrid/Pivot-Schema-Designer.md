@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Pivot-Schema-Designer | WindowsForms | Syncfusion
+title: Pivot-Schema-Designer | Windows Forms | Syncfusion
 description: pivot schema designer
-platform: WindowsForms
+platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---

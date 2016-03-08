@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Function-Library | WindowsForms | Syncfusion
+title: Function-Library | Windows Forms | Syncfusion
 description: function library
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---
@@ -473,7 +473,7 @@ Date</td><td>
 Returns the sequential serial number that represents a particular date. </td></tr>
 <tr>
 <td>
-Date value</td><td>
+Datevalue</td><td>
 Returns the serial number of the date value.</td></tr>
 <tr>
 <td>
@@ -509,7 +509,7 @@ Time</td><td>
 Returns serial number time.</td></tr>
 <tr>
 <td>
-Time value</td><td>
+Timevalue</td><td>
 Returns the serial number time from a string.</td></tr>
 <tr>
 <td>
@@ -681,7 +681,7 @@ Ceiling</td><td>
 Returns the rounded up value.</td></tr>
 <tr>
 <td>
-Combine</td><td>
+Combin</td><td>
 Returns the number of combinations.</td></tr>
 <tr>
 <td>
@@ -1564,7 +1564,7 @@ FORMULA</th><th>
 RESULT</th></tr>
 <tr>
 <td>
-=IFNA(“InCorrect,N/A”,”Incorrect”)</td><td>
+=IFNA(“#N/A”,”Incorrect”)</td><td>
 Incorrect</td></tr>
 <tr>
 <td>

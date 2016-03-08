@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PercentTextBox | WindowsForms | Syncfusion
+title: PercentTextBox | Windows Forms | Syncfusion
 description: PercentTextBox
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
@@ -16,4 +16,4 @@ The PercentTextBox is a textbox-derived control that can display double data t
 
 
 
-The PercentTextBox is derived from Windows Forms Framework textbox control. The PercentTextBox supports display and collection of percentage values. It handles user keyboard input and percent formatting and uses the globalization features of the .NET platform to provide locale-specific formatting.
+The PercentTextBox is derived from Windows Forms framework textbox control. The PercentTextBox supports display and collection of percentage values. It handles user keyboard input and percent formatting and uses the globalization features of the .NET platform to provide locale-specific formatting.

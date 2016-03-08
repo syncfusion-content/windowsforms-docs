@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Status-Bar | WindowsForms | Syncfusion
+title: Status-Bar | Windows Forms | Syncfusion
 description: status bar
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
@@ -17,7 +17,7 @@ The Edit control provides support to include a built-in status bar at the bottom
 * StatusPanel
 * EncodingPanel
 * FileNamePanel
-* CoordinatePanel
+* CoordsPanel
 * InsertPanel
 
 
@@ -32,7 +32,7 @@ The Edit control provides support to include a built-in status bar at the bottom
 
 ## Status Bar Settings
 
-The StatusBarSettings property consists of the following sub properties, which can be used to customize the appearance and visibility of the status bar and its panels.
+The StatusBarSettings property consists of the following subproperties, which can be used to customize the appearance and visibility of the status bar and its panels.
 
 
 
@@ -59,8 +59,8 @@ FileNamePanel</td><td>
 Specifies StatusBarPanelSettings object for FileName panel.</td></tr>
 <tr>
 <td>
-CoordinatePanel</td><td>
-Specifies StatusBarPanelSettings object for Coordinate panel.</td></tr>
+CoordsPanel</td><td>
+Specifies StatusBarPanelSettings object for Coords panel.</td></tr>
 <tr>
 <td>
 InsertPanel</td><td>

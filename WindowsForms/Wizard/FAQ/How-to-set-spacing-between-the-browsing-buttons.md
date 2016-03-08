@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-spacing-between-the-browsing-buttons | WindowsForms | Syncfusion
+title: How-to-set-spacing-between-the-browsing-buttons | Windows Forms | Syncfusion
 description: how to set spacing between the browsing buttons?
-platform: WindowsForms
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---

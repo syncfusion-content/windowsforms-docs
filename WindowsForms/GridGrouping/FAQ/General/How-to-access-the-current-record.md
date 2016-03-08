@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-access-the-current-record | WindowsForms | Syncfusion
+title: How-to-access-the-current-record | Windows Forms | Syncfusion
 description: how to access the current record
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

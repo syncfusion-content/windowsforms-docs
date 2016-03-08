@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Series | WindowsForms | Syncfusion
+title: Chart-Series | Windows Forms | Syncfusion
 description: chart series
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---

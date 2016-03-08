@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to apply grouping properties for ChildLevelGroups | WindowsForms | Syncfusion
+title: How to apply grouping properties for ChildLevelGroups | Windows Forms | Syncfusion
 description: how to apply grouping properties for childlevelgroups
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-RightToLeft-property-for-XPMenus | WindowsForms | Syncfusion
+title: How-to-set-RightToLeft-property-for-XPMenus | Windows Forms | Syncfusion
 description: how to set righttoleft property for xpmenus
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

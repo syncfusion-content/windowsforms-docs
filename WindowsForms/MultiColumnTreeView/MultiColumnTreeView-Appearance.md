@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MultiColumnTreeView-Appearance | WindowsForms | Syncfusion
+title: MultiColumnTreeView-Appearance | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
@@ -12,7 +12,7 @@ The appearance of the MultiColumnTreeView can be customized using background, fo
 
 ## SubItem Appearance
 
-The background, foreground and border settings of a sub item can be specified using SubItem Style Editor. Refer to SubItem Styles for all the style settings.
+The background, foreground and border settings of a subitem can be specified using SubItem Style Editor. Refer to SubItem Styles for all the style settings.
 
 {% highlight c# %}  
 

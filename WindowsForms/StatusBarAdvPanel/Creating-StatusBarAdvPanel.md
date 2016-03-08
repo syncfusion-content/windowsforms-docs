@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating-StatusBarAdvPanel | WindowsForms | Syncfusion
+title: Creating-StatusBarAdvPanel | Windows Forms | Syncfusion
 description: creating statusbaradvpanel
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
 # Creating StatusBarAdvPanel
 
-This section will give a step by step procedure to design a StatusBarAdvPanel control through designer and also through programming approach.
+This section will give a step by step procedure to design a StatusBarAdvPanel control through designer and also through programmatical approach.
 
 ## Through Designer
 

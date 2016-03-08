@@ -1,8 +1,8 @@
 ---
 layout: post
-title: LoadOnDemand | WindowsForms | Syncfusion
+title: LoadOnDemand | Windows Forms | Syncfusion
 description: loadondemand
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 LoadOnDemand feature is to give a delay in loading a node in a Tree, before the user initiates a node to expand.
 
-By setting LoadOnDemand property to true, the plus(+) and minus(-) of all the nodes will be visible in the beginning. By handling the BeforeExpand event of the nodes, sub nodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether or not the children are added.
+By setting LoadOnDemand property to true, the plus(+) and minus(-) of all the nodes will be visible in the beginning. By handling the BeforeExpand event of the nodes, subnodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether or not the children are added.
 
 _Table_ _914_: _Property Table_
 

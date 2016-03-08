@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to use multiple Layout Managers in a single form | WindowsForms | Syncfusion
+title: How to use multiple Layout Managers in a single form | Windows Forms | Syncfusion
 description: How to use multiple Layout Managers in a single form
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

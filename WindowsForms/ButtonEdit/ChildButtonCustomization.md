@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Editors-Package | WindowsForms | Syncfusion
+title: Editors-Package | Windows Forms | Syncfusion
 description: editors package
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
@@ -81,7 +81,7 @@ Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 {% seealso %}
 
-[Style Settings](/windowsforms/buttonedit/buttoneditappearance#style-settings), [How to set tooltip for ButtonEdit Child buttons?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-set-tooltip-for-buttonedit-child-buttons)
+[Style Settings](/windowsforms/buttonedit/buttoneditappearance#style-settings), [How to set tooltip for ButtonEdit Child buttons?](http://help.syncfusion.com/windowsforms/buttonedit/faq/how-to-set-tooltip-for-buttonedit-child-buttons)
 
 {% endseealso %}
 
@@ -152,7 +152,7 @@ Sets the index of the image to be set for the child button.</td></tr>
 <tr>
 <td>
 ImageList</td><td>
-Indicates the image list to be used for child button.</td></tr>
+Indicates the imagelist to be used for child button.</td></tr>
 <tr>
 <td>
 PreferredWidth</td><td>
@@ -278,7 +278,7 @@ N> Visual style of a child buttons is inherited from the visual style of it's pa
 
 ### Focusing the Child Button at Runtime
 
-The Child buttons can be focused based on the order of the ChildButton.TabIndex set for individual buttons. ChildButton.TabStop property should be set to true to make this effective. While focusing the button, we can either display or don't display a focus rectangle, by using the  ButtonEdit.KeepFocusRectangle property. 
+The Child buttons can be focussed based on the order of the ChildButton.TabIndex set for individual buttons. ChildButton.TabStop property should be set to true to make this effective. While focusing the button, we can either display or don't display a focus rectangle, by using the  ButtonEdit.KeepFocusRectangle property. 
 
 {%highlight c# %}
 
@@ -302,6 +302,6 @@ Me.buttonEditChildButton3.KeepFocusRectangle = True
 
 {% seealso %}
 
-[How to hide a child button of a ButtonEdit control?](http://docs.syncfusion.com/windowsforms/buttonedit/faq/how-to-hide-a-child-button-of-a-buttonedit-control)
+[How to hide a child button of a ButtonEdit control?](http://help.syncfusion.com/windowsforms/buttonedit/faq/how-to-hide-a-child-button-of-a-buttonedit-control)
 
 {% endseealso %}
