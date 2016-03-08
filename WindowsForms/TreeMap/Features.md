@@ -25,7 +25,7 @@ The ColorValuePath ofTreeMap is a path to a field on the source object, which se
 
 TreeMap control supports Data Binding and it can be achieved using ItemsSource property.
 
-The ItemsSource property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as itemssource for TreeMap.
+The ItemsSource property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as items source for TreeMap.
 
 {% highlight c# %}
 
@@ -1479,7 +1479,7 @@ _Figure_ _11_: _TreeMap with Labels_
 
 ## Leaf Item Setting 
 
-You can customize the Leaf level TreeMapitems using LeafItemSettings. Label values take the property of bound object that is referred in the labelPath when defined.
+You can customize the Leaf level TreeMap items using LeafItemSettings. Label values take the property of bound object that is referred in the labelPath when defined.
 
 
 

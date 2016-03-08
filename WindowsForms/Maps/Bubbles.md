@@ -45,7 +45,7 @@ Gets or sets the border thickness of the bubbles.</td></tr>
 <td>
 ColorValuePath</td><td>
 String</td><td>
-Gets or sets the value for bubble colormapping</td></tr>
+Gets or sets the value for bubble color mapping</td></tr>
 <tr>
 <td>
 ValuePath</td><td>

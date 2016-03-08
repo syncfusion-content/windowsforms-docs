@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-Tree mapsare a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. Tree mapscan also use color to represent any number of values, but colors are often used to categorize the various boxes within the tree map.
+Tree maps are a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. Tree maps can also use color to represent any number of values, but colors are often used to categorize the various boxes within the tree map.
 
 Creating Tree Map for Windows Form Applications
 
