@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: BannerTextProviderComponent
 documentation: ug
 ---
@@ -26,7 +26,7 @@ Essential Tools implements the latest Windows XP, Office XP, Office 2007 and Vis
 * XP Menus framework allows you to create elegant menus and menu items on the toolbar, that supports multi-level cascading menus as in Microsoft Office, capable of creating multiple menus on a single form. It had advanced features like adding separators in between the bar items, grouping the items, etc, are supported.
 * Custom Colors can be applied for GroupBar control.
 * Controls under notification package can be completely customized using their display and appearance properties.
-* TabControlAdv provides an easy way to navigate through tabs. By setting TabPrimitives, previously, TabControlAdv's  NavigationControl property, you can traverse between tabs and pages easily, that enable you to go to the next or previous tab or page and first or last tab, close buttons can be added that close the active tab page when clicked and the dropdown with all the tab pages listed, that you can access to select the tab page to be traversed. NavigationControl offers more flexibility that allows you to change the button's image, show or hide certain buttons and also cancel the navigation and use it as an Add or Remove TabPages through code.
+* TabControlAdv provides an easy way to navigate through tabs. By setting TabPrimitives, previously, TabControlAdv's  NavigationControl property, you can traverse between tabs and pages easily, that enable you to go to the next or previous tab or page and first or last tab, close buttons can be added that close the active tab page when clicked and the dropdown with all the tabpages listed, that you can access to select the tab page to be traversed. NavigationControl offers more flexibility that allows you to change the button's image, show or hide certain buttons and also cancel the navigation and use it as an Add or Remove TabPages through code.
 * TabbedMDI supports wide range of Tab Styles and Window Styles. Windows in the TabbedMDI framework can be arranged in four different styles such as horizontal, vertical, cascade and inside the client area of the parent form. It also provides advanced features to set the styles for the DropDown Menus and Context Menus. 
 * TreeViewAdv control is available with enhanced performance by reducing the loading time of the nodes by displaying the nodes only on demand by the user. This provides the user to delay the loading of nodes in Trees, until the you initiate the nodes to expand.
 * TreeNodeAdv has now provided option to enable multiline text for each node by using the Multiline property which is available for individual nodes. This can be set through NodeCollection Editor and it has to be set for individual nodes. This feature is available for both TreeView and MultiColumnTreeView controls.

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Use-a-Comma-as-a-Decimal-Separator-in-Formula | WindowsForms | Syncfusion
+title: How-to-Use-a-Comma-as-a-Decimal-Separator-in-Formula | Windows Forms | Syncfusion
 description: how to use a comma as a decimal separator in formula?
-platform: WindowsForms
+platform: windowsforms
 control: Calculate
 documentation: ug
 ---

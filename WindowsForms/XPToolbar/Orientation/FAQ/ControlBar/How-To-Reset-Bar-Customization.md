@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Reset-Bar-Customization | WindowsForms | Syncfusion
+title: How-To-Reset-Bar-Customization | Windows Forms | Syncfusion
 description: how to reset bar customization
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Quick-Access-Toolbar | WindowsForms | Syncfusion
+title: Quick-Access-Toolbar | Windows Forms | Syncfusion
 description:  quick access toolbar
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -29,7 +29,7 @@ Me.ribbonControlAdv1.QuickPanelVisible = True
 
 ## Adding Controls to QuickAccessToolbar
 
-Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items in the smart tag of the RibbonControlAdv. This opens Customize Quick Access Toolbar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar.
+Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items in the smart tag of the RibbonControlAdv. This opens Customize Quick Access Toolbar Dialog which displays the existing toolstrip items. You can add the required items to the Quick Access Toolbar.
 
 ![](Quick-Access-Toolbar_images/quick-access-toolbar_img1.jpg)
 
@@ -37,7 +37,7 @@ N> You can also add items to the Quick Access Toolbar by enabling the UseInQuick
 
 N> Ribbon provides option to edit the items at run time also. See [RunTime Customization](/windowsforms/ribboncontroladv/ribbon-customization#adding-item-to-qat-using-customized-window)  for more details. 
 
-The following code snippet allows us to add ToolStripButton to Quick Access Toolbar.
+The following code snippet allows us to add ToolStripButton to Qucik Access Toolbar.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ We can also align the QAT, above or below the ribbon using the context menu of t
 
 In the Quick Access Toolbar, the labels present in a customized Quick Access Toolbar dialog box can be localized to a user-defined language. These labels can be localized by using the appropriate localizer keywords. In the below code snippets the return value of the switch case is the localized text for the labels.
 
-N> The following changes must be done within a localizer class used for the application which is inherited from the ILocalizationProvider.
+N> The following changes must be done within a localizer class used for the application which is inherited from the IlocalizationProvider.
 
 {% tabs %}
 

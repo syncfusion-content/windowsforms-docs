@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-achieve-Numeric-Column-Sorting-in-GridDataBoundGrid | WindowsForms | Syncfusion
+title: How-to-achieve-Numeric-Column-Sorting-in-GridDataBoundGrid | Windows Forms | Syncfusion
 description: how to achieve numeric column sorting in griddataboundgrid
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

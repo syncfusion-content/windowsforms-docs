@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Runtime Selection | WindowsForms | Syncfusion
+title: Runtime Selection | Windows Forms | Syncfusion
 description: runtime selection
-platform: WindowsForms
+platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---

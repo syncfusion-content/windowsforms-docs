@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calculator-Appearance | WindowsForms | Syncfusion
+title: Calculator-Appearance | Windows Forms | Syncfusion
 description: calculator appearance
-platform: WindowsForms
+platform: windowsforms
 control: Calculator
 documentation: ug
 ---
@@ -60,7 +60,7 @@ The background of the Calculator can be painted using the below properties.
 <table>
 <tr>
 <th>
-Calculator control Properties</th><th>
+Calculatorcontrol Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -133,7 +133,7 @@ The below property will let you specify the border style for the Calculator cont
 <table>
 <tr>
 <th>
-Calculator control Properties</td><td>
+Calculatorcontrol Properties</td><td>
 Description</td></tr>
 <tr>
 <td>
@@ -171,7 +171,7 @@ The default spacing between the Calculator buttons can be modified by enabling _
 <table>
 <tr>
 <th>
-Calculator control Properties</th><th>
+Calculatorcontrol Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -224,7 +224,7 @@ Using SetButtonFont and SetButtonColor properties, we can set the font style and
 <table>
 <tr>
 <th>
-Calculator control Methods</th><th>
+Calculatorcontrol Methods</th><th>
 Description</th></tr>
 <tr>
 <td>

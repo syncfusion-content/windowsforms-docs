@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Number Settings | WindowsForms | Syncfusion
+title: Number Settings | Windows Forms | Syncfusion
 description: number settings
-platform: WindowsForms
+platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes | WindowsForms | Syncfusion
+title: Themes | Windows Forms | Syncfusion
 description: themes
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdvPanel
 documentation: ug
 ---
@@ -25,7 +25,7 @@ Indicates if the background color will be set to 'Transparent'. Indicated Settin
 <tr>
 <td>
 IgnoreThemeBackground</td><td>
-Indicates whether the control will ignore the theme's background color and draw the back color instead.</td></tr>
+Indicates whether the control will ignore the theme's background color and draw the backcolor instead.</td></tr>
 </table>
 
 

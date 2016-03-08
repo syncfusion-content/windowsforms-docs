@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Background Settings | WindowsForms | Syncfusion
+title: Background Settings | Windows Forms | Syncfusion
 description: Background Settings
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
@@ -30,11 +30,11 @@ Specifies the brush style.{{ 'Solid,' | markdownify }}{{ 'Pattern and' | markdow
 <tr>
 <td>
 BackColor</td><td>
-Specifies the back color of the control.</td></tr>
+Specifies the backcolor of the control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Specifies the fore color for any text or graphics in the control.</td></tr>
+Specifies the forecolor for any text or graphics in the control.</td></tr>
 <tr>
 <td>
 PatternStyle</td><td>

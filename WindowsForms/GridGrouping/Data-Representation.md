@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-Representation | WindowsForms | Syncfusion
+title: Data-Representation | Windows Forms | Syncfusion
 description: data representation
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

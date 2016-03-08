@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
+title: Appearance | Windows Forms | Syncfusion
 description: Appearance
-platform: WindowsForms
+platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---
@@ -110,11 +110,11 @@ Description</th></tr>
 <tr>
 <td>
 PositiveColor</td><td>
-Specifies Fore color when the current value is positive.</td></tr>
+Specifies Forecolor when the current value is positive.</td></tr>
 <tr>
 <td>
 NegativeColor</td><td>
-Specifies Fore color when the current value is negative.</td></tr>
+Specifies Forecolor when the current value is negative.</td></tr>
 <tr>
 <td>
 ReadOnlyBackColor</td><td>
@@ -122,7 +122,7 @@ Specifies the color to be used for back color when the control is read only. Set
 <tr>
 <td>
 ZeroColor</td><td>
-Specifies Fore color when the current value is Zero.</td></tr>
+Specifies Forecolor when the current value is Zero.</td></tr>
 </table>
 
 

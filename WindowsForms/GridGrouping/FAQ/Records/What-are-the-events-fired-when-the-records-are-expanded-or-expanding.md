@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-the-records-are-exp | WindowsForms | Syncfusion
+title: What-are-the-events-fired-when-the-records-are-exp | Windows Forms | Syncfusion
 description: what are the events fired when the records are expanded or expanding
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

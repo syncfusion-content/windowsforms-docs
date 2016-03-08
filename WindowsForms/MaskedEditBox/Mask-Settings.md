@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Mask Settings | WindowsForms | Syncfusion
+title: Mask Settings | Windows Forms | Syncfusion
 description: Mask Settings
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---
@@ -30,7 +30,7 @@ The Mask is a string that is composed of literal characters and mask characters.
 
 Literal characters give visual cues about the type of data being used. Mask characters are the placeholders for the data input. For example, a US telephone number can be represented by the following mask.
 
-(###) - ### #### Extent ####
+(###) - ### #### Extn ####
 
 In the above Mask, all the non # characters are Literal characters and the #’s are Mask characters.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wizard-Control-Appearance | WindowsForms | Syncfusion
+title: Wizard-Control-Appearance | Windows Forms | Syncfusion
 description: wizard control appearance
 platform: windowsform
 control: Wizard Package 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TrackBarEx | WindowsForms | Syncfusion
+title: TrackBarEx | Windows Forms | Syncfusion
 description: trackbarex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -221,23 +221,23 @@ Description</th></tr>
 <tr>
 <td>
 Minimum</td><td>
-Specifies the minimum value of the track bar. Default is 10.</td></tr>
+Specifies the minimum value of the trackbar. Default is 10.</td></tr>
 <tr>
 <td>
 Maximum</td><td>
-Specifies the maximum value of the track bar. Default is 20.</td></tr>
+Specifies the maximum value of the trackbar. Default is 20.</td></tr>
 <tr>
 <td>
 Value</td><td>
-Specifies the value of the track bar position. i.e, slider position. Default is 5.</td></tr>
+Specifies the value of the trackbar position. i.e, slider position. Default is 5.</td></tr>
 <tr>
 <td>
 SmallChange</td><td>
-Specifies the small change of Track bar value. Default is 1. </td></tr>
+Specifies the small change of Trackbar value. Default is 1. </td></tr>
 <tr>
 <td>
 LargeChange</td><td>
-Specifies the large change of Track bar value. Default is 5.</td></tr>
+Specifies the large change of Trackbar value. Default is 5.</td></tr>
 <tr>
 <td>
 TimeInterval</td><td>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating Double TextBox | WindowsForms | Syncfusion
+title: Creating Double TextBox | Windows Forms | Syncfusion
 description: creating double textbox
-platform: WindowsForms
+platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---

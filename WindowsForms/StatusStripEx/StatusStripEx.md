@@ -1,8 +1,8 @@
 ---
 layout: post
-title: StatusStripEx | WindowsForms | Syncfusion
+title: StatusStripEx | Windows Forms | Syncfusion
 description: statusstripex
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -137,7 +137,7 @@ The options are,
 
 * Add StatusLabel - Adds a status label item.
 * Add ProgressBar - Adds a ProgressBar item.
-* Add DropDownButton - Adds a dropdown button item.
+* Add DropDownButton - Adds a dropdownbutton item.
 * Add SplitButton - Adds a split button item.
 * Add PanelItem - Adds a Panel item.
 * Add TrackBar Item - Adds a TrackBar item.
@@ -242,7 +242,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 ## Custom Context Menu
 
-It is possible to customize the statusbar context menu that displays in StatusStripEx, to look like Word2007. This can be done by setting StatusString property of NotificationItems like StatusStrip Button, StatusStripLabel, so on.
+It is possible to customize the statusbar context menu that displays in StatusStripEx, to look like Word2007. This can be done by setting StatusString property of NotificationItems like StatusStripButton, StatusStripLabel, so on.
 
 {% highlight c# %}
 

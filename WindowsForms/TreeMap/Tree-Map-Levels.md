@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tree-Map-Levels | WindowsForms | Syncfusion
+title: Tree-Map-Levels | Windows Forms | Syncfusion
 description: tree map levels
-platform: WindowsForms
+platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---

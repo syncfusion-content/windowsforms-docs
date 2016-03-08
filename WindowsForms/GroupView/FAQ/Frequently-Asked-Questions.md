@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Frequently Asked Questions | WindowsForms | Syncfusion
+title: Frequently Asked Questions | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

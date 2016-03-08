@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RunTime-Features | WindowsForms | Syncfusion
+title: RunTime-Features | Windows Forms | Syncfusion
 description: runtime features
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
@@ -108,7 +108,7 @@ Indicates the SuperToolTip associated with the docking manager.</td></tr>
 </table>
 
 
-A SuperToolTip can be added to the docking manager programmatically using the below code snippet.
+A SuperToolip can be added to the docking manager programmatically using the below code snippet.
 
 
 {% highlight C# %}
@@ -136,7 +136,7 @@ Me.dockingManager1.SuperToolTip = Me.superToolTip1
  ![](RunTime-Features_images/RunTime-Features_img5.jpeg) 
 
 
-Text for the super tooltip and other customizing options can be specified for a particular button by using the CaptionButton Collection Editor.
+Text for the supertooltip and other customizing options can be specified for a particular button by using the CaptionButton Collection Editor.
 
  ![](RunTime-Features_images/RunTime-Features_img6.jpeg) 
 
@@ -145,7 +145,7 @@ Text for the super tooltip and other customizing options can be specified for a 
 
 A context menu will be displayed whenever the user right clicks the caption bar or clicks the menu button in the caption bar. EnableContextMenu property should be true for displaying the context menu. By default it is true.
 
-When the docked control is in auto hide mode and when the auto hide tab is right-clicked, an unique context menu will be displayed, similar to Visual Studio. EnableAutoHideTabContextMenu property should be true for this. By default this value is true.
+When the docked control is in autohide mode and when the auto hide tab is right-clicked, an unique context menu will be displayed, similar to Visual Studio. EnableAutoHideTabContextMenu property should be true for this. By default this value is true.
 
 
 

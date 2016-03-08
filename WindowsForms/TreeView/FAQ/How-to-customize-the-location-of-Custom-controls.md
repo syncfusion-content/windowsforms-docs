@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-customize-the-location-of-Custom-controls-added-in-the-TreeNodeAdv | WindowsForms | Syncfusion
+title: How-to-customize-the-location-of-Custom-controls-added-in-the-TreeNodeAdv | Windows Forms | Syncfusion
 description: how to customize the location of custom controls added in the treenodeadv?
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Linear-Gauge | WindowsForms | Syncfusion
+title: Linear-Gauge | Windows Forms | Syncfusion
 description: linear gauge
-platform: WindowsForms
+platform: windowsforms
 control: Gauge
 documentation: ug
 ---
@@ -167,22 +167,22 @@ Description</th></tr>
 <td>
 MajorTickMarkColor</td><td>
 Color</td><td>
-Gets or sets the color of the major tick marks.</td></tr>
+Gets or sets the color of the major tickmarks.</td></tr>
 <tr>
 <td>
 MajorTickMarkHeight</td><td>
 Integer</td><td>
-Gets or sets the height of the major tick marks.</td></tr>
+Gets or sets the height of the major tickmarks.</td></tr>
 <tr>
 <td>
 MinorTickMarkColor</td><td>
 Color</td><td>
-Gets or sets the color of the minor tic marks.</td></tr>
+Gets or sets the color of the minor tickmarks.</td></tr>
 <tr>
 <td>
 MinorTickMarkHeight</td><td>
 Integer</td><td>
-Gets or sets the height of the minor tick marks.</td></tr>
+Gets or sets the height of the minor tickmarks.</td></tr>
 <tr>
 <td>
 Pointer Placement</td><td>
@@ -288,7 +288,7 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-StartValue</td><td>
+StartSalue</td><td>
 Integer</td><td>
 Specify the start value of the range. Default value is set to 0.</td></tr>
 <tr>
@@ -370,7 +370,7 @@ Me.linearGauge1.Ranges.Add(range1)
 
 #### Scaling Divisions
 
-The Gauge control for Windows Forms includes support for customizing the number of major tick lines and minor tick lines using the Major Difference and MinorTickCount properties. It also provides support to customize the number of tick lines using the MaximumValue and MinimumValue properties.
+The Gauge control for Windows Forms includes support for customizing the number of major tick lines and minor tick lines using the Major Difference and MinorTickCount properties. It also provides support to customize the number of tick lines using the MaximumValue and MinimunValue properties.
 
 
 <table>

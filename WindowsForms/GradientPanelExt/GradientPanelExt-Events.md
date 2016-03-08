@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GradientPanelExt Events | WindowsForms | Syncfusion
+title: GradientPanelExt Events | Windows Forms | Syncfusion
 description: gradientpanelext events
-platform: WindowsForms
+platform: windowsforms
 control: EditorPackage 
 documentation: ug
 ---

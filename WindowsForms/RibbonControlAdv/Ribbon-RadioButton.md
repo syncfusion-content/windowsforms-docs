@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-RadioButton| WindowsForms | Syncfusion
+title: Ribbon-RadioButton| Windows Forms | Syncfusion
 description:  ribbon radiobutton
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Show-or-Hide-Header | WindowsForms | Syncfusion
+title: Show-or-Hide-Header | Windows Forms | Syncfusion
 description: show or hide header
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

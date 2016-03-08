@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Behavior Settings | WindowsForms | Syncfusion
+title: Behavior Settings | Windows Forms | Syncfusion
 description: Behavior Settings
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
@@ -39,7 +39,7 @@ Prompt Character</td><td>
 Gets / sets the character that will be used instead of the mask characters when the mask position has not been filled.</td></tr>
 <tr>
 <td>
-PromptCharacterInt</td><td>
+PrompCharacterInt</td><td>
 Gets / sets the integer version of the PromptCharacter.</td></tr>
 <tr>
 <td>

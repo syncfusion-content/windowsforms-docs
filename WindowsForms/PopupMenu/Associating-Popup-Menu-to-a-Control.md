@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Associating-Popup-Menu-to-a-Control | WindowsForms | Syncfusion
+title: Associating-Popup-Menu-to-a-Control | Windows Forms | Syncfusion
 description: associating popup menu to a control
-platform: WindowsForms
+platform: windowsforms
 control: Popup-Menu
 documentation: ug
 ---
@@ -89,8 +89,8 @@ N> We can even show the popup menu without implementing the PopupMenusManager cl
 
 {% seealso %}
 
-* [Adding and filling a popup menu](http://docs.syncfusion.com/windowsforms/popupmenu/adding-and-filling-a-popupmenu)
-* [Grouping Items in a Popup Menu](http://docs.syncfusion.com/windowsforms/popupmenu/grouping-items-in-a-popup-menu)
+* [Adding and filling a popup menu](http://help.syncfusion.com/windowsforms/popupmenu/adding-and-filling-a-popupmenu)
+* [Grouping Items in a Popup Menu](http://help.syncfusion.com/windowsforms/popupmenu/grouping-items-in-a-popup-menu)
 * How to programmatically show a Popup Menu
 
 {% endseealso %}

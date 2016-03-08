@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Child Controls | WindowsForms | Syncfusion
+title: Child Controls | Windows Forms | Syncfusion
 description: child controls
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePicker
 documentation: ug
 ---
@@ -33,7 +33,7 @@ Shows or hides the UpDown buttons.</td></tr>
 <tr>
 <td>
 ShowUpDownOnFocus</td><td>
-Shows or hides the UpDown button when focused. By default it is set to false.</td></tr>
+Shows or hides the UpDown button when focussed. By default it is set to false.</td></tr>
 <tr>
 <td>
 VSLikeUpDown</td><td>
@@ -62,7 +62,7 @@ Me.dateTimePickerAdv2.ShowUpDownOnFocus = True
 {% endhighlight   %}
 
 
-In the below image, when focus is on button control, the updown button is hidden. In the second image, DateTimePickerAdv is focused and the UpDown button is shown.
+In the below image, when focus is on button control, the updown button is hidden. In the second image, DateTimePickerAdv is focussed and the UpDown button is shown.
 
 ![](DateTimePicker_images/Overview_img184.jpeg) 
 
@@ -93,15 +93,15 @@ Description</th></tr>
 <tr>
 <td>
 DropDownNormalColor</td><td>
-Gets or Sets the dropdown back color in Normal mode.</td></tr>
+Gets or Sets the dropdown backcolor in Normal mode.</td></tr>
 <tr>
 <td>
 DropDownPressedColor</td><td>
-Gets or Sets the dropdown back color in Pressed mode, i.e, when the date is selected in the text field.</td></tr>
+Gets or Sets the dropdown backcolor in Pressed mode, i.e, when the date is selected in the text field.</td></tr>
 <tr>
 <td>
 DropDownSelectedColor</td><td>
-Gets or Sets the dropdown back color in Selected mode, i.e, when a date is selected using the popup calendar.</td></tr>
+Gets or Sets the dropdown backcolor in Selected mode, i.e, when a date is selected using the popup calendar.</td></tr>
 </table>
 
 
@@ -446,7 +446,7 @@ Description</th></tr>
 <tr>
 <td>
 EnableNullDate</td><td>
-Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text field displays the selected date even when {{ '_None_' | markdownify }} button is selected. By default it is true.</td></tr>
+Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text fielddisplays the selected date even when {{ '_None_' | markdownify }} button is selected. By default it is true.</td></tr>
 <tr>
 <td>
 EnableNullKeys</td><td>

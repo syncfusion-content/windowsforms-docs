@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
-platform: WindowsForms
+platform: windowsforms
 control: SplitButton 
 documentation: ug
 ---
@@ -127,7 +127,7 @@ Reference links </th></tr>
 <tr>
 <td>
 DropDownItemChecked</td><td>
-Will be triggered when drop-down item is clicked. </td><td>
+Will be triggered when drop-down litem is clicked. </td><td>
 ToolStripItemClickedEventArgs</td><td>
 NA </td><td>
 NA </td></tr>

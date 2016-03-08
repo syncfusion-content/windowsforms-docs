@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-can-we-make-the-Current-Row-Bold | WindowsForms | Syncfusion
+title: How-can-we-make-the-Current-Row-Bold | Windows Forms | Syncfusion
 description: how can we make the current row bold?
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

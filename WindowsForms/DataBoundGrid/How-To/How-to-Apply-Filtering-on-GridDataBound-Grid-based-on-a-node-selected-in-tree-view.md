@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Apply-Filtering-on-GridDataBound-Grid-based-on-a-node-selected-in-tree-view | WindowsForms | Syncfusion
+title: How-to-Apply-Filtering-on-GridDataBound-Grid-based-on-a-node-selected-in-tree-view | Windows Forms | Syncfusion
 description: how to apply filtering on griddatabound grid based on a node selected in tree view
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

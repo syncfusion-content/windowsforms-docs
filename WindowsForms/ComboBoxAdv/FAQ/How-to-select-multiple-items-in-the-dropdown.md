@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-select-multiple-items-in-the-dropdown | WindowsForms | Syncfusion
+title: How-to-select-multiple-items-in-the-dropdown | Windows Forms | Syncfusion
 description: how to select multiple items in the dropdown?
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
 
 # How to select multiple items in the dropdown?
 
-In order to perform multiple selection, you can use the ComboboxAdv or MultiColumnComboBox controls, that contains a normal ListBox that allows you to select multiple items, internally.
+In order to perform multiple selection, you can use the ComboxAdv or MultiColumnComboBox controls, that contains a normal ListBox that allows you to select multiple items, internally.
 
 
 

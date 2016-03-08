@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Merging | WindowsForms | Syncfusion
+title: Ribbon-Merging | Windows Forms | Syncfusion
 description: ribbon merging
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -13,7 +13,7 @@ RibbonControlAdv allows merging of RibbonPanel in a child form to the RibbonPane
 
 To merge the RibbonPanel in the ChildForm with the RibbonPanel in the parent form, follow the below given steps.
 
-* In a Ribbon form, add a RibbonControlAdv control and the required ToolStripTabItems and the ToolStripEx items.
+* In a Ribbonform, add a RibbonControlAdv control and the required ToolStripTabItems and the ToolStripEx items.
 
 * From the ToolBox, add a RibbonPanelMergeContainer to the ChildForm. ToolStripEx can be added into this by right Clicking on it. 
 
@@ -46,7 +46,7 @@ frm.Show()
 
 {% endtabs %}
 
-N> The form's IsMDIContainer property must be set as true . Also the MDIParent Ribbon form should host a RibbonControlAdv to get the ChildForm's panels to be merged.
+N> The form's IsMDIContainer property must be set as true . Also the MDIParent Ribbonform should host a RibbonControlAdv to get the ChildForm's panels to be merged.
 
 ![](Ribbon-Merging_images/Ribbon-Merging_img2.jpeg)
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Freeze HubTile functionality in runtime | WindowsForms | Syncfusion
+title: How to Freeze HubTile functionality in runtime | Windows Forms | Syncfusion
 description: How to Freeze HubTile functionality in runtime
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 --- 

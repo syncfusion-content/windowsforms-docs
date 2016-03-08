@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Digital-Gauge | WindowsForms | Syncfusion
+title: Digital-Gauge | Windows Forms | Syncfusion
 description: digital gauge
-platform: WindowsForms
+platform: windowsforms
 control: Gauge
 documentation: ug
 ---
@@ -17,7 +17,7 @@ The digital gauge control includes the following elements: SegmentSpacing, ShowI
 
 Here is a brief overview of various features of the DigitalGauge control:
 
-* SegmentSpacing - Specifies the space between the gauge segments. 
+* SegmentSpacing - Specifies thespace between the gauge segments. 
 * VisualStyle - Allows you to specify the visual style for the digital gauge.
 * CharacterType - Provides different segment styles for the digital gauge.
 * CharacterCount - Provides the number of characters that can be displayed.
@@ -310,7 +310,7 @@ Me.digitalGauge1.Value = 123456
 
 
 
-### Show Visible Segments 
+### Show Visible Segements 
 
 The ShowInvisibleSegments property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to false.
 

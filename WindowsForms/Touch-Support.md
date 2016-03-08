@@ -2,7 +2,7 @@
 layout: post
 title: Touch support for Syncfusion Windows Forms controls
 description: Touch Support Overview
-platform: WindowsForms
+platform: windowsforms
 control: General
 documentation: ug
 ---
@@ -51,7 +51,7 @@ Right-Click<br/><br/></td></tr>
 <td>
 Data Visualization<br/><br/></td><td>
 Diagram<br/><br/></td><td>
-Pan/Rubber band Selection<br/><br/></td><td>
+Pan/Rubberband Selection<br/><br/></td><td>
 Zoom<br/><br/></td><td>
 Select<br/><br/></td><td>
 Context Menu<br/><br/></td></tr>
@@ -186,7 +186,7 @@ Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-TabbedMdI Manager<br/><br/></td><td>
+TabbedMdi Manager<br/><br/></td><td>
 TabMove<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>
@@ -570,7 +570,7 @@ Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-MultiColumnTreeView<br/><br/></td><td>
+MultiColumnTreeVIew<br/><br/></td><td>
 Scroll<br/><br/></td><td>
 -<br/><br/></td><td>
 Click, Select, Collapse and expand<br/><br/></td><td>

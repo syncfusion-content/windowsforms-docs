@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Printing-and-Print-Preview | WindowsForms | Syncfusion
+title: Printing-and-Print-Preview | Windows Forms | Syncfusion
 description: printing and print preview 
-platform: WindowsForms
+platform: windowsforms
 control: Chart
 documentation: ug
 ---

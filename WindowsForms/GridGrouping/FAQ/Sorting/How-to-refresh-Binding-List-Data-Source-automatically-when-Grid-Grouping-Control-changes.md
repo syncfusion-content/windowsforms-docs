@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-refresh-Binding-List-Data-Source-automatica | WindowsForms | Syncfusion
+title: How-to-refresh-Binding-List-Data-Source-automatica | Windows Forms | Syncfusion
 description: how to refresh binding list data source automatically when grid grouping control changes
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

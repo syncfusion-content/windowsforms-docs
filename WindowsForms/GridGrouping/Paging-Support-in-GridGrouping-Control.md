@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Paging-Support-in-GridGrouping-Control | WindowsForms | Syncfusion
+title: Paging-Support-in-GridGrouping-Control | Windows Forms | Syncfusion
 description: paging support in gridgrouping control
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

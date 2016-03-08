@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes-And-Visual-Styles | WindowsForms | Syncfusion
+title: Themes-And-Visual-Styles | Windows Forms | Syncfusion
 description: themes and visual styles
-platform: WindowsForms
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---

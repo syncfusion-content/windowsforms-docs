@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Zooming | WindowsForms | Syncfusion
+title: Zooming | Windows Forms | Syncfusion
 description: zooming
-platform: WindowsForms
+platform: windowsforms
 control: Maps
 documentation: ug
 ---

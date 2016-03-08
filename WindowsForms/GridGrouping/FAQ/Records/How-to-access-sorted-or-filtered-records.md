@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-access-sorted-or-filtered-records | WindowsForms | Syncfusion
+title: How-to-access-sorted-or-filtered-records | Windows Forms | Syncfusion
 description: how to access sorted or filtered records
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

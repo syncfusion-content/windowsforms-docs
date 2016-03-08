@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Freezing | WindowsForms | Syncfusion
+title: Freezing | Windows Forms | Syncfusion
 description: freezing
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---

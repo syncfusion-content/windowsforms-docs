@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-find-value-maximum-value-and-minimum-value- | WindowsForms | Syncfusion
+title: How-to-find-value-maximum-value-and-minimum-value- | Windows Forms | Syncfusion
 description: how to find value, maximum value and minimum value of the data points
-platform: WindowsForms
+platform: windowsforms
 control: chart
 documentation: ug
 ---

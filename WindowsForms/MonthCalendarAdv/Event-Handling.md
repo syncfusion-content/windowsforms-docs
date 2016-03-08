@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event Handling | WindowsForms | Syncfusion
+title: Event Handling | Windows Forms | Syncfusion
 description: event handling
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---
@@ -275,7 +275,7 @@ Specifies the row index of GridCell.</td></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets or sets a value indicating whether the event should be canceled.</td></tr>
+Gets or sets a value indicating whether the event should be cancelled.</td></tr>
 <tr>
 <td>
 CellButton</td><td>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Load-PDF-without-ToolStrip-in-Viewer | WindowsForms | Syncfusion
+title: Load-PDF-without-ToolStrip-in-Viewer | Windows Forms | Syncfusion
 description: load pdf without toolstrip in viewer?
-platform: WindowsForms
+platform: windowsforms
 control: PDF Viewer
 documentation: ug
 ---

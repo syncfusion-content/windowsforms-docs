@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Remove-Hidden-Columns-from-Field-Chooser | WindowsForms | Syncfusion
+title: How-to-Remove-Hidden-Columns-from-Field-Chooser | Windows Forms | Syncfusion
 description: how to remove hidden columns from field chooser
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

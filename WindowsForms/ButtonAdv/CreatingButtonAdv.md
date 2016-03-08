@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating  ButtonAdv | WindowsForms | Syncfusion
+title: Creating  ButtonAdv | Windows Forms | Syncfusion
 description: Creating  ButtonAdv
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

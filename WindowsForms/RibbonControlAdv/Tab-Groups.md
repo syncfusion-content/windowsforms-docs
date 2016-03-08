@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tab-Groups | WindowsForms | Syncfusion
+title: Tab-Groups | Windows Forms | Syncfusion
 description: tab groups
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -15,13 +15,13 @@ RibbonControlAdv allows to create TabGroups using the **TabGroups** property ava
 
 ### Through Designer
 
-* Click the TabGroup property of the RibbonControlAdv, TabGroup collection editor is opened. Add the tab group using the editor
+* Click the TabGroup property of the RibbonControlAdv, TabGroup collection editor is opened. Add the tabgroup using the editor
 
  ![](Tab-Groups_images/Tab-Group_img1.jpeg)
  
 * Now create a ToolStripTabItem using the smart tag of the Ribbon.
 
-* Click the TabGroup property in the ToolStripTabItem and select the tab group from the available list.
+* Click the TabGroup property in the ToolStripTabItem and select the tabgroup from the available list.
 
    ![](Tab-Groups_images/Tab-Group_img2.jpeg)
 

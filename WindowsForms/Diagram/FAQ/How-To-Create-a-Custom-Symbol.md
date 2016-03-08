@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Create a Custom Symbol | Diagram | WindowsForms | Syncfusion
+title: How To Create a Custom Symbol | Diagram | Windows Forms | Syncfusion
 description: how to create a custom symbol
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

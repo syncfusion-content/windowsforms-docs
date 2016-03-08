@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SplitContainerAdv | WindowsForms | Syncfusion
+title: SplitContainerAdv | Windows Forms | Syncfusion
 description: SplitContainerAdv
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

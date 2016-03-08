@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization-Support | WindowsForms | Syncfusion
+title: Localization-Support | Windows Forms | Syncfusion
 description: localization support
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---
@@ -19,7 +19,7 @@ With this feature, you can localize the options in the grid to display the conte
 
 To open sample project, navigate to the following sample location in your system:
 
-    <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo
+    &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Localization Samples\Localization Demo
 
 ### Adding Localization Support to Grid Controls
 

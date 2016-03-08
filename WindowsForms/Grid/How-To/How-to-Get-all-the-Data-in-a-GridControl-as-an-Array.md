@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-all-the-Data-in-a-GridControl-as-an-Arr | WindowsForms | Syncfusion
+title: How-to-Get-all-the-Data-in-a-GridControl-as-an-Arr | Windows Forms | Syncfusion
 description: how to get all the data in a gridcontrol as an array
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

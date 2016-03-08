@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeViewAdv-Events | WindowsForms | Syncfusion
+title: TreeViewAdv-Events | Windows Forms | Syncfusion
 description: treeviewadv events
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
@@ -392,7 +392,7 @@ Description</th></tr>
 <tr>
 <td>
 NewCheckState</td><td>
-Gets the check state of the node.</td></tr>
+Gets the checkstate of the node.</td></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -402,7 +402,7 @@ A boolean property which indicates whether the event is to be canceled.</td></tr
 Node</td><td>
 Gets the TreeNodeAdv which is associated with this action.</td></tr>
 </table>
-Check or uncheck TreeNodeAdv using the Mouse
+Check or uncheck TreeNodeAdvs using the Mouse
 
 This can be done by handling the TreeViewAdv's BeforeCheck event as shown below.
 
@@ -460,7 +460,7 @@ End Sub
 
 ### Leave Event
 
-This event is triggered when the control is no longer the active control of the form. An example which uses the Leave event is as follows.
+This event is triggered when the control is no longer the active control of the form. An example which uses the Leaveevent is as follows.
 
 How to Use Delete Key for Deleting and as a Shortcut to BarItems / MenuItems of TreeViewAdv
 
@@ -468,7 +468,7 @@ The form contains a treeViewAdv with nodes with LabelEdit property set to true a
 
 After editing the node by pressing F2, if the Delete key is pressed, to avoid the menu shortcut from getting triggered and trigger the deletion of text in the editor, follow the procedure below.
 
-Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the TreeViewAdv's BeforeEdit event, setting the bar item's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
+Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the TreeViewAdv's BeforeEdit event, setting the baritem's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
 
 {% highlight c# %}
 
@@ -1099,12 +1099,12 @@ Gets or Sets a value indicating whether the event should be canceled.</td></tr>
 
 #### Method to set UnEditable Nodes
 
-Methods to make a node completely un editable even when the,
+Methods to make a node completely uneditable even when the,
 
 1. Node is visible.
-2. Node is click able.
+2. Node is clickable.
 
-BeforeEdit event can be used for this purpose. In this example, the Parent Nodes are made un editable.TreeNodeAdvBeforeEditEventArgs.Node indicates the target node for editing.
+BeforeEdit event can be used for this purpose. In this example, the Parent Nodes are made uneditable.TreeNodeAdvBeforeEditEventArgs.Node indicates the target node for editing.
 
 The desired condition is checked on that node and based on the result, the TreeNodeAdvBeforeEditEventArgs.Cancel property is set appropriately.
 
@@ -1150,7 +1150,7 @@ End Sub
 
 Cancel Read / Write property for particular user nodes
 
-By canceling the BeforeEdit event for particular nodes of particular users, the Read/Write property can be canceled. 
+By cancelling the BeforeEdit event for particular nodes of particular users, the Read/Write property can be canceled. 
 
 {% highlight c# %}
 
@@ -1330,7 +1330,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of number of detentes the mouse wheel has rotated. A detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of number of detents the mouse wheel has rotated. A detent is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -1489,13 +1489,13 @@ End Sub
 
 {% endhighlight %}
 
-### IntellijMouseDragScrolling Event
+### IntelliMouseDragScrolling Event
 
 This event is triggered when the user presses the mouse wheel and drags the mouse. 
 
 Event Data
 
-The event handler receives an argument of type IntellijMouseDragScrollEventArgs containing data related to this event. The following IntellijMouseDragScrollEventArgs members provide information specific to this event.
+The event handler receives an argument of type IntelliMouseDragScrollEventArgs containing data related to this event. The following IntelliMouseDragScrollEventArgs members provide information specific to this event.
 
 _Table_ _935_: Members Table
 
@@ -1627,7 +1627,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the number of detentes the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the number of detents the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -2011,7 +2011,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the detentes the mouse had rotated, whereas a detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the detents the mouse had rotated, whereas a detent is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -2145,7 +2145,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the detentes the mouse had rotated, whereas a detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the detents the mouse had rotated, whereas a detent is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -2471,27 +2471,27 @@ Returns a ScrollTipAction value that specifies the user action that led to this 
 <tr>
 <td>
 BackColor</td><td>
-Gets or sets the back color to be used for the scroll tip text.</td></tr>
+Gets or sets the back color to be used for the scrolltip text.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Gets or sets the border style to be used for the scroll tip text.</td></tr>
+Gets or sets the border style to be used for the scrolltip text.</td></tr>
 <tr>
 <td>
 Font</td><td>
-Gets or sets the Font to be used for the scroll tip text.</td></tr>
+Gets or sets the Font to be used for the scrolltip text.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Gets or sets the text color to be used for the scroll tip text.</td></tr>
+Gets or sets the text color to be used for the scrolltip text.</td></tr>
 <tr>
 <td>
 Format</td><td>
-Gets or sets the text layout information for the text in the Scroll tip.</td></tr>
+Gets or sets the text layout information for the text in the Scrolltip.</td></tr>
 <tr>
 <td>
 Location</td><td>
-Gets or sets the location of the scroll tip window.</td></tr>
+Gets or sets the location of the scrolltip window.</td></tr>
 <tr>
 <td>
 ScrollBar</td><td>
@@ -2499,11 +2499,11 @@ Returns the scrollbar that is the source of this event.</td></tr>
 <tr>
 <td>
 Size</td><td>
-Gets or sets the size of the scroll tip window.</td></tr>
+Gets or sets the size of the scrolltip window.</td></tr>
 <tr>
 <td>
 Text</td><td>
-Get or sets the text to display in scroll tip.</td></tr>
+Get or sets the text to display in scrolltip.</td></tr>
 <tr>
 <td>
 Value</td><td>

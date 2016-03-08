@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Splitter-Position | WindowsForms | Syncfusion
+title: Splitter-Position | Windows Forms | Syncfusion
 description: splitter position
-platform: WindowsForms
+platform: windowsforms
 control: TabSplitterContainer 
 documentation: ug
 ---

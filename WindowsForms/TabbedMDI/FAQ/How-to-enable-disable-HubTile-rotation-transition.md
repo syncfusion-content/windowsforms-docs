@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-enable--disable-HubTile-rotation-transition | WindowsForms | Syncfusion
+title: How-to-enable--disable-HubTile-rotation-transition | Windows Forms | Syncfusion
 description:  how to enable / disable hubtile rotation transition in runtime?
 platform: wpf
 control: TabbedMDIPackage

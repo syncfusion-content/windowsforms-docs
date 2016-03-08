@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: Control Name undefined
 documentation: ug
 ---
@@ -17,7 +17,7 @@ Follow the steps below to create MDI parent form and MDI child form.
 
 ## Creating MDI ParentForm
 
-1. Set up an MDIParent form by setting Form.IsMdIContainer property to true.
+1. Set up an MDIParent form by setting Form.IsMdiContainer property to true.
 2. Add bar items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. Refer to Creating Menus.
 
    ![](Overview_images/Overview_img1.jpeg)

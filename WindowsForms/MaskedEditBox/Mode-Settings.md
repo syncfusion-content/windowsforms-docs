@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Mode Settings | WindowsForms | Syncfusion
+title: Mode Settings | Windows Forms | Syncfusion
 description: Mode Settings
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
@@ -26,7 +26,7 @@ Specifies the format of the text that will be returned by the MaskedEdit control
 <tr>
 <td>
 InputMode</td><td>
-Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'Over typeOnly'.</td></tr>
+Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'OvertypeOnly'.</td></tr>
 <tr>
 <td>
 UsageMode</td><td>
@@ -43,7 +43,7 @@ Setting the ClipMode property of the MaskedEditBox to 'ExcludeLiterals', will ge
 
 The different modes of the input can be determined by the InputMode property.
 
-Setting the InputMode to 'Normal', allows the user to work in insert mode and the INSERT key is not allowed. In Over typeOnly mode, the INSERT key will not have any effect.
+Setting the InputMode to 'Normal', allows the user to work in insert mode and the INSERT key is not allowed. In OvertypeOnly mode, the INSERT key will not have any effect.
 
 ## UsageMode
 

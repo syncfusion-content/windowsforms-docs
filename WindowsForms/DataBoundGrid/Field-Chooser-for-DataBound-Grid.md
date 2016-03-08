@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Field-Chooser-for-DataBound-Grid | WindowsForms | Syncfusion
+title: Field-Chooser-for-DataBound-Grid | Windows Forms | Syncfusion
 description: field chooser for databound grid 
-platform: WindowsForms
+platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---

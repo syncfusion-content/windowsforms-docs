@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating SplitContainerAdv | WindowsForms | Syncfusion
+title: Creating SplitContainerAdv | Windows Forms | Syncfusion
 description: Creating SplitContainerAdv
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
 # Creating SplitContainerAdv
 
-This section will give a step-by-step procedure to design a SplitContainerAdv control through designer and also through programming approach.
+This section will give a step-by-step procedure to design a SplitContainerAdv control through designer and also through programmatical approach.
 
 ## Through Designer
 

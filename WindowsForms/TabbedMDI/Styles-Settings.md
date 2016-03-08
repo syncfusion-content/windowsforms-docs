@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styles-Settings | WindowsForms | Syncfusion
+title: Styles-Settings | Windows Forms | Syncfusion
 description: styles settings
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -53,7 +53,7 @@ The various tab styles are listed in the below image.
 
 The windows in the TabbedMDI framework can be arranged in four different styles. To set the styles of the windows, the MDIParent form should be detached from the TabbedMDIManager.
 
-N> The DetachFromMdIContainer method is used to detach an MDIParent from the TabbedMDIManager.
+N> The DetachFromMdiContainer method is used to detach an MDIParent from the TabbedMDIManager.
 
 <table>
 <tr>

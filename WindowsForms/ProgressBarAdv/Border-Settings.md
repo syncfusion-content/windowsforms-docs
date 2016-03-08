@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Border-Settings | WindowsForms | Syncfusion
+title: Border-Settings | Windows Forms | Syncfusion
 description: border settings
-platform: WindowsForms
+platform: windowsforms
 control: ProgressBarAdv
 documentation: ug
 ---

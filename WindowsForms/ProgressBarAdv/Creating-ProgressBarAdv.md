@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating-ProgressBarAdv | WindowsForms | Syncfusion
+title: Creating-ProgressBarAdv | Windows Forms | Syncfusion
 description: creating progressbaradv
-platform: WindowsForms
+platform: windowsforms
 control: ProgressBarAdv
 documentation: ug
 ---
 
 # Creating ProgressBarAdv
 
-This section will give a step-by-step procedure to design a ProgressBarAdv control through designer and also through programming approach.
+This section will give a step-by-step procedure to design a ProgressBarAdv control through designer and also through programmatical approach.
 
 ## Through Designer
 

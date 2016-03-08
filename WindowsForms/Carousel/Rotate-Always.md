@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Rotate Always | WindowsForms | Syncfusion
+title: Rotate Always | Windows Forms | Syncfusion
 description: Rotate Always
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

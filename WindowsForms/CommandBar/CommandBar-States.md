@@ -1,8 +1,8 @@
 ---
 layout: post
-title: CommandBar-States | WindowsForms | Syncfusion
+title: CommandBar-States | Windows Forms | Syncfusion
 description: commandbar states
-platform: WindowsForms
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---

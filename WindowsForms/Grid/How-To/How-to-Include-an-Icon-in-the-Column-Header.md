@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Include-an-Icon-in-the-Column-Header | WindowsForms | Syncfusion
+title: How-to-Include-an-Icon-in-the-Column-Header | Windows Forms | Syncfusion
 description: how to include an icon in the column header
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---

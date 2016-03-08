@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ButtonEdit Appearance | WindowsForms | Syncfusion
+title: ButtonEdit Appearance | Windows Forms | Syncfusion
 description: ButtonEdit Appearance
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
@@ -16,7 +16,7 @@ A ButtonEdit control is a combination of controls with textbox and buttons. The 
 
 {% seealso %}
 
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), Child Button Customization](http://docs.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
+[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), Child Button Customization](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
 
 
 {% endseealso %}
@@ -218,7 +218,7 @@ This section discusses the foreground settings available for the ButtonEdit cont
 
 Font and ForeColor
 
-The font style and the fore color for the ButtonEdit text can be set using Font and ForeColor properties. These property settings can be overridden by TextBox.Font and TextBox.ForeColor respectively.
+The font style and the forecolor for the ButtonEdit text can be set using Font and ForeColor properties. These property settings can be overridden by TextBox.Font and TextBox.ForeColor respectively.
 
 
 {%highlight c#%}
@@ -274,6 +274,6 @@ N> This case setting can be overridden by TextBox.CharacterCasing property.
 
 {% seealso %}
 
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), Child Button Customization](http://docs.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
+[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), Child Button Customization](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
 
 {% endseealso %}

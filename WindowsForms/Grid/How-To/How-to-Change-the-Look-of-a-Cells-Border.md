@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Look-of-a-Cells-Border | WindowsForms | Syncfusion
+title: How-to-Change-the-Look-of-a-Cells-Border | Windows Forms | Syncfusion
 description: how to change the look of a cell's border
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-Use the Borders property of [GridStyleInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) to change the style and the appearance of the grid cells border. Each border side of the cell can be configured individually with GridBorder value. There is a BorderMargins property to control margins on all four sides. 
+Use the Borders property of [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) to change the style and the appearance of the grid cells border. Each border side of the cell can be configured individually with GridBorder value. There is a BorderMargins property to control margins on all four sides. 
 
 ### Example
 

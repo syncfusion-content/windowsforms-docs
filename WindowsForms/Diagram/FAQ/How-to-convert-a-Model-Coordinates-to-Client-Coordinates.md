@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to convert a Model Coordinates to Client Coord | Diagram | WindowsForms | Syncfusion
+title: How to convert a Model Coordinates to Client Coord | Diagram | Windows Forms | Syncfusion
 description: how to convert a model coordinates to client coordinates
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

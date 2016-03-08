@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to customize the Splitter color in the GroupBar | WindowsForms | Syncfusion
+title: How to customize the Splitter color in the GroupBar | Windows Forms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---
@@ -23,11 +23,11 @@ StackedMode</td><td>
 Gets / sets a value indicating whether GroupBarItems are stacked</td></tr>
 <tr>
 <td>
-Splitter color</td><td>
+Splittercolor</td><td>
 Gets / sets the color of the splitter in GroupBar, if it is in stacked mode</td></tr>
 <tr>
 <td>
-EnableSplitter colorCustomization</td><td>
+EnableSplittercolorCustomization</td><td>
 Enable to change the color of the splitter in stacked mode</td></tr>
 </table>
 

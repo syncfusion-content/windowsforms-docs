@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Color Groups | WindowsForms | Syncfusion
+title: Color Groups | Windows Forms | Syncfusion
 description: Color Groups
-platform: WindowsForms
+platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
@@ -111,7 +111,7 @@ Me.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1)
 
 
 N> The properties to customize the color groups are similar to default color groups. 
-See how to Customize the Color Groups in [Customizing the Color Groups](#customizincolor-items) topic.
+See how to Customize the Color Groups in [Customizing the Color Groups](#customizincolor-items)topic.
 
 ## Customizing the Color Groups
 
@@ -195,7 +195,7 @@ N> To know how to customize a color item, refer_ Color Items _topic.
 
 Size of the color items can be set through ColorItemSize property. Default width is 13 and height is 13.
 
-N> The colors within the groups are click able at design time and you can change the color using property grid as in the below image.
+N> The colors within the groups are clickable at design time and you can change the color using property grid as in the below image.
 
 ![](ColorPickerUIAdv_Images/Overview_img266.jpeg)
 

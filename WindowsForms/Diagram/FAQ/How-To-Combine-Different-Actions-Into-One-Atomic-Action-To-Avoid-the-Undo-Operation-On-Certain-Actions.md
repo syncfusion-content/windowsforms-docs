@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Combine Different Actions Into One Atomic A | Diagram | WindowsForms | Syncfusion
+title: How To Combine Different Actions Into One Atomic A | Diagram | Windows Forms | Syncfusion
 description: how to combine different actions into one atomic action to avoid the undo operation on certain actions
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---

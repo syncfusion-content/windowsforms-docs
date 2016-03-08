@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Support to Set Maximum Limit for Suggestion List  | WindowsForms | Syncfusion
+title: Support to Set Maximum Limit for Suggestion List  | Windows Forms | Syncfusion
 description: Support to Set Maximum Limit for Suggestion List 
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---
@@ -31,7 +31,7 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-MaxNumber of Suggestion</td><td>
+MaxNumberofSuggestion</td><td>
 Set the maximum limit for the suggestion list. </td><td>
 NA</td><td>
 Integer. </td><td>

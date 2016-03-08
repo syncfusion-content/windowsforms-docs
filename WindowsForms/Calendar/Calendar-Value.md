@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calendar Value | WindowsForms | Syncfusion
+title: Calendar Value | Windows Forms | Syncfusion
 description: calendar value
-platform: WindowsForms
+platform: windowsforms
 control: Calendar
 documentation: ug
 ---
@@ -52,6 +52,6 @@ Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 1, 1, 0, 0, 0, 0)
 
 {% seealso %}
 
-[Customizing the Calendar](http://docs.syncfusion.com/windowsforms/calendar/customizing-the-calendar)
+[Customizing the Calendar](http://help.syncfusion.com/windowsforms/calendar/customizing-the-calendar)
 
 {% endseealso %}

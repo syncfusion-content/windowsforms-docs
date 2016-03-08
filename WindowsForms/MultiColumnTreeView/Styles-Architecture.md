@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styles-Architecture | WindowsForms | Syncfusion
+title: Styles-Architecture | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
@@ -62,7 +62,7 @@ Indicates the styles that all the nodes inherit from.</td></tr>
 <tr>
 <td>
 StandardSubItemStyle</td><td>
-Indicates the style that all the sub items will inherit from.</td></tr>
+Indicates the style that all the subitems will inherit from.</td></tr>
 </table>
 
 
@@ -95,7 +95,7 @@ Indicates the default styles that all the columns will inherit.</td></tr>
 <tr>
 <td>
 NodeSubItemStyle</td><td>
-Indicates the style that all the sub items will inherit from.</td></tr>
+Indicates the style that all the subitems will inherit from.</td></tr>
 </table>
 
 ## Standard Style
@@ -202,7 +202,7 @@ Specifies the base style of the node.</td></tr>
 <tr>
 <td>
 EnsureDefaultOptionedChild</td><td>
-Specifies if at least one child of the parent node should be optioned at all times.</td></tr>
+Specifies if atleast one child of the parent node should be optioned at all times.</td></tr>
 <tr>
 <td>
 InteractiveCheckbox</td><td>
@@ -214,11 +214,11 @@ Indicates the imageindex for closed node.</td></tr>
 <tr>
 <td>
 CollapseImageIndex</td><td>
-Indicates the image index in the NodeStateImageList, when the node is collapsed.</td></tr>
+Indicates the imageindex in the NodeStateImageList, when the node is collapsed.</td></tr>
 <tr>
 <td>
 ExpandImageIndex</td><td>
-Indicates the image index in the NodeStateImageList, when the node is Expanded.</td></tr>
+Indicates the imageindex in the NodeStateImageList, when the node is Expanded.</td></tr>
 <tr>
 <td>
 LeftImageIndices</td><td>
@@ -234,15 +234,15 @@ Padding for the left state image.</td></tr>
 <tr>
 <td>
 NoChildrenImageIndex</td><td>
-Indicates the image index in the StateImageList where node has no children.</td></tr>
+Indicates the imageindex in the StateImageList where node has no children.</td></tr>
 <tr>
 <td>
 OpenImageIndex</td><td>
-Indicates the image index for the open node.</td></tr>
+Indicates the imageindex for the open node.</td></tr>
 <tr>
 <td>
 RightImageIndices</td><td>
-Specifies the image index for the right image.</td></tr>
+Specifies the imageindex for the right image.</td></tr>
 <tr>
 <td>
 RightImagePadding</td><td>
@@ -396,11 +396,11 @@ Indicates the imageindex for closed node.</td></tr>
 <tr>
 <td>
 CollapseImageIndex</td><td>
-Indicates the image index in the NodeStateImageList, when the node is collapsed.</td></tr>
+Indicates the imageindex in the NodeStateImageList, when the node is collapsed.</td></tr>
 <tr>
 <td>
 ExpandImageIndex</td><td>
-Indicates the image index in the NodeStateImageList, when the node is Expanded.</td></tr>
+Indicates the imageindex in the NodeStateImageList, when the node is Expanded.</td></tr>
 <tr>
 <td>
 LeftImageIndices</td><td>
@@ -416,15 +416,15 @@ Padding for the left state image.</td></tr>
 <tr>
 <td>
 NoChildrenImageIndex</td><td>
-Indicates the image index in the StateImageList where node has no children.</td></tr>
+Indicates the imageindex in the StateImageList where node has no children.</td></tr>
 <tr>
 <td>
 OpenImageIndex</td><td>
-Indicates the image index for the open node.</td></tr>
+Indicates the imageindex for the open node.</td></tr>
 <tr>
 <td>
 RightImageIndices</td><td>
-Specifies the image index for the right image.</td></tr>
+Specifies the imageindex for the right image.</td></tr>
 <tr>
 <td>
 RightImagePadding</td><td>
@@ -561,11 +561,11 @@ The user-defined column style can be applied to any of the columns, using Column
 
 ## SubItem Styles
 
-Standard - SubItem style in the BaseStyles Collection Editor will be applied by default to all the sub items that are added to the tree nodes. User can also edit the default style settings.
+Standard - SubItem style in the BaseStyles Collection Editor will be applied by default to all the subitems that are added to the tree nodes. User can also edit the default style settings.
 
 ### Properties
 
-The below properties lets you customize the sub items using the Styles editor.
+The below properties lets you customize the subitems using the Styles editor.
 
 
 
@@ -581,11 +581,11 @@ Sets the alignment of the SubItem text.</td></tr>
 <tr>
 <td>
 Background</td><td>
-Sets the background for the sub item.</td></tr>
+Sets the background for the subitem.</td></tr>
 <tr>
 <td>
 LineAlignment</td><td>
-Sets the vertical alignment of the sub item text.</td></tr>
+Sets the vertical alignment of the subitem text.</td></tr>
 <tr>
 <td>
 TextColor</td><td>

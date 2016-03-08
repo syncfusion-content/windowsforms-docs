@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeNode-Features | WindowsForms | Syncfusion
+title: TreeNode-Features | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: UpdateUI-Event | WindowsForms | Syncfusion
+title: UpdateUI-Event | Windows Forms | Syncfusion
 description: updateui event
-platform: WindowsForms
+platform: windowsforms
 control: Orientation
 documentation: ug
 ---

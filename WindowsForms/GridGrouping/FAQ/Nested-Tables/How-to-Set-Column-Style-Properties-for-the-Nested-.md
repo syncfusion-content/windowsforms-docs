@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Set-Column-Style-Properties-for-the-Nested- | WindowsForms | Syncfusion
+title: How-to-Set-Column-Style-Properties-for-the-Nested- | Windows Forms | Syncfusion
 description: how to set column style properties for the nested tables in a grouping grid
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

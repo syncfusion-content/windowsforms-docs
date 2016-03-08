@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
 
 # Overview
 
-The Docking Package comprises of the Essential Tools docking windows architecture that allows users to add Visual Studio .NET type dockable controls to Windows Forms applications. Any control can be set as a docking window and docking layouts can be hosted within Forms, UserControls or any derivative of the ContainerControl type. The framework supports the complete range of docking behaviors such as docking/floating, nested levels, tabbed groups, state transitions, auto hide, MDIChild transitions, non-dockable/non-floatable options, a unique fill mode and full state persistence. An advanced designer allows users to harness full WYSIWYG configuration of the dock layout.
+The Docking Package comprises of the Essential Tools docking windows architecture that allows users to add Visual Studio .NET type dockable controls to Windows Forms applications. Any control can be set as a docking window and docking layouts can be hosted within Forms, UserControls or any derivative of the ContainerControl type. The framework supports the complete range of docking behaviors such as docking/floating, nested levels, tabbed groups, state transitions, autohide, MDIChild transitions, non-dockable/non-floatable options, a unique fill mode and full state persistence. An advanced designer allows users to harness full WYSIWYG configuration of the dock layout.
 
 The Essential Tools docking framework implements the core docking interactions and additionally implements certain other complex features such as multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto-hide mode and full state persistence.
 
@@ -31,7 +31,7 @@ Docking window may be defined as a control that attaches itself to a host contro
 
 Docking manager renders various styles that adds standard look and feel to your application. The [Visual Styles](/windowsforms/dockingmanager/appearance-settings#visual-styles) includes VS2005, Office 2003, Office2007, Office2007 Outlook. It supports blue, silver and black themes in Office2007 visual style.
 
-* Docking window
+* Dockingwindow
 
 Docking window wraps the host control that is docked and enables the control to be dragged to the required position.
 
@@ -53,7 +53,7 @@ Docking manager provides an auto hide facility to the docked control. Docked con
 
 * Toggle docking
 
-The docked control can toggle its docking capability to floating and vice versa by double clicking on the caption or the title bar of the docking window. See [Floating](/windowsforms/dockingmanager/docking-styles#floating) topic.
+The docked conrol can toggle its docking capability to floating and vice versa by double clicking on the caption or the title bar of the docking window. See [Floating](/windowsforms/dockingmanager/docking-styles#floating) topic.
 
 * State Persistence
 
@@ -81,7 +81,7 @@ The docking manager allows the users to set the visibility of the close button, 
 
 * Custom Caption Button
 
-[Custom Caption Buttons](/windowsforms/dockingmanager/caption-bar#custom-caption-buttons) is a newly added feature in Docking Manager. This allows user to customize the existing caption buttons like menu button, close button, auto hide button and maximize button and also to create a new caption button and customize it.
+[Custom Caption Buttons](/windowsforms/dockingmanager/caption-bar#custom-caption-buttons) is a newly added feature in Docking Manager. This allows user to customize the existing caption buttons like menu button, close button, autohide button and maximize button and also to create a new caption button and customize it.
 
 * Container control support
 
@@ -99,7 +99,7 @@ The docked controls can display context menu on right clicking the caption bar. 
 
 Previously, the diamond docking indicators did not have the ability to hide certain docking arrows, and hence it could be docked to certain sides only and we have to handle events to achieve this.
 
-Now, DockAbility / OuterDockAbility features allow to hide docking arrows so that we can dock a window only to certain sides of a form / user control.
+Now, DockAbility / OuterDockAbility features allow to hide docking arrows so that we can dock a window only to certain sides of a form / usercontrol.
 
 {% seealso %}
 

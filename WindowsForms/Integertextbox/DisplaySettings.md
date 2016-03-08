@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display Settings | WindowsForms | Syncfusion
+title: Display Settings | Windows Forms | Syncfusion
 description: display settings
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
@@ -96,7 +96,7 @@ DefaultValue</td><td>
 Specifies the default value. The default value is set to 'Null'.</td></tr>
 <tr>
 <td>
-Bind able Value</td><td>
+BindableValue</td><td>
 Wrapper property that indicates the value. This property can be used to set the value of the control to 'Null'.</td></tr>
 </table>
 
@@ -152,7 +152,7 @@ Specifies the Null State of the Control.</td></tr>
 <tr>
 <td>
 AllowNull</td><td>
-Specifies whether the control can be Nulled,Null String will be set when the control becomes null.</td></tr>
+Specifes whether the control can be Nulled,Null String will be set when the control becomes null.</td></tr>
 </table>
 
 

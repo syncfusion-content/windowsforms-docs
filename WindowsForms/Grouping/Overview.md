@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---
@@ -168,13 +168,13 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/windowsforms/grouping/overview>' | markdownify }} (Navigate to the Grouping User Guide.)![](Overview_images/Overview_img5.jpeg)
+Online{{ '<http://help.syncfusion.com/windowsforms/grouping/overview>' | markdownify }} (Navigate to the Grouping User Guide.)![](Overview_images/Overview_img5.jpeg)
 
 N> Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online {{ '<http://docs.syncfusion.com>'| markdownify }} (Navigate to the Reporting User Guide. Select {{ '_Grouping_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online {{ '<http://help.syncfusion.com>'| markdownify }} (Navigate to the Reporting User Guide. Select {{ '_Grouping_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

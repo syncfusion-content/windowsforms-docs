@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Print-a-Grid | WindowsForms | Syncfusion
+title: How-to-Print-a-Grid | Windows Forms | Syncfusion
 description: how to print a grid
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ### Introduction
 
-GridPrintDocument class will allow you to [print](/windowsforms/grid/virtual-grids#print-preview-and-printing) your grids. Here is a button click event handler that will show you how to use this class.
+GridPrintDocument class will allow you to [print](http://help.syncfusion.com/windowsforms/grid/virtual-grid#print-preview-and-printing) your grids. Here is a button click event handler that will show you how to use this class.
 
 #### Example
 

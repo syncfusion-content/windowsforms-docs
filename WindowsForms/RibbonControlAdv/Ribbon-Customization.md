@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Customization| WindowsForms | Syncfusion
+title: Ribbon-Customization| Windows Forms | Syncfusion
 description:  ribbon customization
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -97,73 +97,4 @@ The Changes are reflected in the output window.
 ![](Ribbon-Customization_images/Ribbon-Customization_img10.jpeg)
 
 
-## Events
-
-### QATCustomizationMenuClicked
-
-This event will be triggered when the Customize Quick Access Toolbar is clicked from the Ribbon Context Menu.
-
-{% tabs %}
-
-{% highlight c# %}
-
-this.ribbonControlAdv1.QATCustomizationMenuClicked += ribbonControlAdv1_QATCustomizationMenuClicked;
-
-void ribbonControlAdv1_QATCustomizationMenuClicked(object sender, BeforeQATEventArgs e)
-
-{
-
-MessageBox.Show("Customize Quick Access Toolbar context menu is clicked");
-
-}
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-AddHandler Me.ribbonControlAdv1.QATCustomizationMenuClicked, AddressOf ribbonControlAdv1_QATCustomizationMenuClicked
-
-Private Sub ribbonControlAdv1_QATCustomizationMenuClicked(ByVal sender As Object, ByVal e As BeforeQATEventArgs)
-
-MessageBox.Show("Customize Quick Access Toolbar context menu is clicked")
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### RibbonCustomizationMenuClicked
-
-This event will be triggered when the Customize the Ribbon is clicked from the Ribbon Context Menu.
-
-{% tabs %}
-
-{% highlight c# %}
-
-this.ribbonControlAdv1.RibbonCustomizationMenuClicked += ribbonControlAdv1_RibbonCustomizationMenuClicked;
-
-void ribbonControlAdv1_RibbonCustomizationMenuClicked(object sender, BeforeCustomizeRibbonEventArgs e)
-
-{
-
-MessageBox.Show("Customize Ribbon context menu is clicked");
-
-}
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-AddHandler Me.ribbonControlAdv1.RibbonCustomizationMenuClicked, AddressOf ribbonControlAdv1_RibbonCustomizationMenuClicked
-
-Private Sub ribbonControlAdv1_RibbonCustomizationMenuClicked(ByVal sender As Object, ByVal e As BeforeCustomizeRibbonEventArgs)
-
-MessageBox.Show("Customize Ribbon context menu is clicked")
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
 

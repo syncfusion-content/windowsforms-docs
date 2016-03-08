@@ -1,8 +1,8 @@
 ---
 layout: post
-title: FlowLayout | WindowsForms | Syncfusion
+title: FlowLayout | Windows Forms | Syncfusion
 description: flowlayout
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
@@ -22,7 +22,7 @@ FlowLayout uses the preferred size of a Child component in it's layout logic. Th
 
 The FlowLayout features can be split based on simple and constraint-based scenarios.
 
-In a simple scenario, the Layout Manager does not expect any constraints to be associated with the Child components. In a constraint-based scenario, you specify constraints for each Child component over the layout logic.
+In a simple scenario, the Layout Manager does not expect any constraints to be associated with the Child components. In a constraint-basedscenario, you specify constraints for each Child component over the layout logic.
 
 The various features are discussed in the topics given below.
 
@@ -32,7 +32,7 @@ A Sample which demonstrates the FlowLayout is available in the below sample inst
 
 {% seealso %}
 
-[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)t
 
 {% endseealso %}
 
@@ -314,7 +314,7 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildCon
 
 
 
-N> Refer[FlowLayout - Configuring Child Controls](#configuring-child-controls) topic to know about HAlign, VAlign and other options provided by the Constraints on flowLayout property.
+N> Refer[FlowLayout - Configuring Child Controls](#configuring-child-controls)topic to know about HAlign, VAlign and other options provided by the Constraints on flowLayout property.
 
 {% seealso %}
 
@@ -360,7 +360,7 @@ N> The Alignment property should be set to 'True' for the above properties to ta
 
 Figure 706: Children with different HAlign Settings
 
-N> In the figure above, the textboxes have auto labels associated with them.
+N> In the figure above, the textboxes have autolabels associated with them.
 
 ### Layout Participation
 
@@ -480,7 +480,7 @@ This topic illustrates how to center the Child controls both vertically and hori
 
 N> Constraints need to be used because the Child controls will otherwise be centered either vertically or horizontally based on whether the layout mode is 'Vertical' or 'Horizontal'._
 
-When the layout mode is 'Horizontal', set the HAlign property to 'Center' and ProportionalRowHeight property to 'True' in the constraints for all the Child controls. This will center the Child controls vertically and horizontally as shown.
+When the layout mode is 'Horizontal', set the HAlign property to 'Center' and ProportionalRowHeight property to 'True' in theconstraints for all the Child controls. This will center the Child controls vertically and horizontally as shown.
 
 
 {% highlight C# %}
@@ -524,7 +524,7 @@ Configuring FlowLayout, FlowLayout - Configuring Child Controls, Enabling Constr
 
 This section will illustrate how Constrained FlowLayout can be used to implement complex form layout logic.
 
-For example, create a 'User Info entry' panel with auto labels, textboxes and combobox to allow the user to enter personal information. This Container panel should also be capable of handling different widths by repositioning and resizing the Child controls appropriately.
+For example, create a 'User Info entry' panel with autolabels, textboxes and comboboxes to allow the user to enter personal information. This Container panel should also be capable of handling different widths by repositioning and resizing the Child controls appropriately.
 
 Steps to achieve the above layout and behavior are described below.
 
@@ -644,7 +644,7 @@ Steps to achieve the above layout and behavior are described below.
    ~~~
    {:.prettyprint}
 
-2. Add one auto label for each control and set the auto label's LabeledControl property to the corresponding control. Also, change the Text property of the auto label control appropriately and set the AutoSize property to 'True'. 
+2. Add one autolabel for each control and set the autolabel's LabeledControl property to the corresponding control. Also, change the Text property of the autolabel control appropriately and set the AutoSize property to 'True'. 
 
    ~~~ vbnet
 
@@ -810,7 +810,7 @@ Steps to achieve the above layout and behavior are described below.
 
 3. Now add theFlowLayout component and set the panel to be its Container control. The FlowLayout will layout the controls in the order in which they were added to the panel. Use the Bring To Front and Send To Back design time verbs to move the controls to the front or back of the layout order. 
 
-   N> The FlowLayout will treat each control and it's auto label pair as a single unit during layout.
+   N> The FlowLayout will treat each control and it's autolabel pair as a single unit during layout.
 
 
  
@@ -853,7 +853,7 @@ Steps to achieve the above layout and behavior are described below.
    * The Middle Initial textbox needs to be left aligned and not justified. This is the default constraint setting, so we don't need to make any changes to it's constraints.
    * Select the Last Name textbox and specify the same constraints as the 'First Name'textbox.
    * The Address textbox should always begin in a new row, so set the NewLine property to 'True' in it's constraints. Also, set the HAlign property to 'Justify' and also provide a preferred size.
-   * The State combobox and Zip textbox controls can also be left with the default constraints.
+   * The State combobox and Zip textboxcontrols can also be left with the default constraints.
 
 
    ~~~ cs
@@ -978,7 +978,7 @@ The FlowLayout manager arranges the controls in the way it gets added into the C
 
 ### Through Code
 
-We can also programmatically change the order of the controls laid out by the Flow layout. This can be done using the method given below.
+We can also programmatically change the order of the controls laid out by the Flowlayout. This can be done using the method given below.
 
 * Set up a form with Panel1 and drag the Flowlayout onto the Panel1 which would act as the Container control.
 
@@ -988,7 +988,7 @@ We can also programmatically change the order of the controls laid out by the Fl
 
 
 
-* Drag another three Panels onto the Panel1. The Flow Layout automatically arranges the Child controls as given below.
+* Drag another three Panels onto the Panel1. The FlowLayout automatically arranges the Child controls as given below.
 
 ![](FlowLayout_images/FlowLayout_img25.jpeg)
 

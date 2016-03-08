@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Printing | WindowsForms | Syncfusion
+title: Printing | Windows Forms | Syncfusion
 description: printing
-platform: WindowsForms
+platform: windowsforms
 control: Edit
 documentation: ug
 ---
@@ -22,7 +22,7 @@ In brief, the printing functionality of the Edit Control supports the following 
 * Document Name
 * Page Numbers
 * Content Dividers
-* Word wrap
+* Wordwrap
 * Color Printing to preserve Syntax Highlighting
 * Selected Text Printing
 * Line Numbers

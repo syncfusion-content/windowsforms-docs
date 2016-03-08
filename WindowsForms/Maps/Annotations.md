@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Annotations | WindowsForms | Syncfusion
+title: Annotations | Windows Forms | Syncfusion
 description: annotations
-platform: WindowsForms
+platform: windowsforms
 control: Maps
 documentation: ug
 ---

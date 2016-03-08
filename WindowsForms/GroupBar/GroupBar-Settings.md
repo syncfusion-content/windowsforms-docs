@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupBar Settings | WindowsForms | Syncfusion
+title: GroupBar Settings | Windows Forms | Syncfusion
 description: GroupBar Settings
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---
@@ -13,7 +13,7 @@ discussed in detail in the below topics.
 
 ## Integrated Scrolling
 
-Scroll buttons can be included for the client controls in the GroupBar by setting the IntegratedScrolling property to 'True'.
+Scroll buttons can be included for the client controls in the GroupBar by setting the IntegratedScrolling propertyto 'True'.
 
 
 

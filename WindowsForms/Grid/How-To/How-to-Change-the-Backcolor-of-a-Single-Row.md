@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Single-Row | WindowsForms | Syncfusion
+title: How-to-Change-the-Backcolor-of-a-Single-Row | Windows Forms | Syncfusion
 description: how to change the backcolor of a single row
-platform: WindowsForms
+platform: windowsforms
 control: Grid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-GridControl.RowStyles collection contains [GridStyleInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) objects that provide row style settings for the GridControl. Changing the properties on a particular RowStyle will affect all the cells in that row (unless a particular cell has a more specific style setting, like a [cellstyle](/WindowsForms/Grid/Cell-Style-Architecture#properties), applied).
+GridControl.RowStyles collection contains [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) objects that provide row style settings for the GridControl. Changing the properties on a particular RowStyle will affect all the cells in that row (unless a particular cell has a more specific style setting, like a [cellstyle](/windowsforms/Grid/Cell-Style-Architecture#properties), applied).
 
 ### Example
 

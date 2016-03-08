@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Image Settings of GroupView  | WindowsForms | Syncfusion
+title: Image Settings of GroupView  | Windows Forms | Syncfusion
 description: Concepts and Features
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 
 This section describes the image options available for GroupView.
 
-To add images to the GroupView, ImageList control must be added to the form with images. ImageList control containing large or small images can be set using the properties given below.
+To add images to the GroupView, ImageListcontrol must be added to the form with images. ImageList control containing large or small images can be set using the properties given below.
 
 
 N> If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list._
@@ -57,7 +57,7 @@ Me.groupView1.SmallImageList = Me.imageList1
 
  {% endhighlight %}
  
-N> Setting Image list component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
+N> Setting Imagelist component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
 
  ![](Overview_images/Overview_img79.jpeg) 
 
@@ -174,7 +174,7 @@ Resets the HighlightImageOffset property to it's default value.</td></tr>
 
 We can provide spacing between the highlighted edge of a GroupView Item and the image by setting the ImageSpacing property to integer values. 
 
-HighlightImage property must be set to 'True'.
+HighlightImage propertymust be set to 'True'.
 
 
 

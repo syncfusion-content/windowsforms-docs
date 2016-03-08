@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating an XPTaskBar | WindowsForms | Syncfusion
+title: Creating an XPTaskBar | Windows Forms | Syncfusion
 description: overview
-platform: WindowsForms
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---
@@ -32,7 +32,7 @@ In this tutorial, we will create a simple XPTaskBar.
    ![](Overview_images/Overview_img96.jpeg) 
   
 
-4. Select the newly added XPTaskBar Box and open it's XPTaskBarItem Collection Editor. There you can add one or more XPTaskBar Items specifying the text, image (using the ImageIndex property), etc. for each item. To distinguish one item from the other, you can specify a unique Tag property for each item.
+4. Select the newly added XPTaskBar Box and open it's XPTaskBarItem Collection Editor. There you can add one or more XPTaskBar Items specifying the text, image (using the ImageIndex property), etc. for each item. To distinguish one item from the other, ou can specify a unique Tag property for each item.
 
    ![](Overview_images/Overview_img97.jpeg) 
    

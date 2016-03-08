@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Why-doesnt-the-Icon-representing-the-MDIChild-in-TabbedMDIManager-change-when-the-form-icon-property-is-changed | WindowsForms | Syncfusion
+title: Why-doesnt-the-Icon-representing-the-MDIChild-in-TabbedMDIManager-change-when-the-form-icon-property-is-changed | Windows Forms | Syncfusion
 description: why doesn't the icon representing the mdichild in the tabbedmdimanager change when the form.icon property is changed?
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---

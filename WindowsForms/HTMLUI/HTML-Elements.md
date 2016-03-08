@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML-Elements | WindowsForms | Syncfusion
+title: HTML-Elements | Windows Forms | Syncfusion
 description: html elements
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
@@ -216,7 +216,7 @@ Private Me.label1.Text=Constants.vbLf & "A(IsVisited and VisitedFormat):" & Me.a
 
 ## B - Bold Element
 
-The B element is responsible for formatting the specified text in bold style. The BElementImpl class contains the properties and methods of this element. The SUBElementImpl and SUPElementImpl classes are also responsible to bold elements. They also contain the properties and methods for the element's behavior.
+The B element is responsible for formatting the specified text in bold style. The BElementImpl class contains the properties and methods of this element. The SUBElementImpl and SUPElementImpl classes are also responsible for bolding elements. They also contain the properties and methods for the element's behavior.
 
 ## BODY Element
 
@@ -264,7 +264,7 @@ Me.label1.Text = Constants.vbLf & "BR(IsVisible):" & Me.br.IsVisible.ToString()
 
 ## CODE Element
 
-The CODE element is used in marking the specified text as a computer code, formatted using mono spaced font. It uses the CODElementImpl class which contains the properties and methods determining the element's behavior.
+The CODE element is used in marking the specified text as a computer code, formatted using monospaced font. It uses the CODElementImpl class which contains the properties and methods determining the element's behavior.
 
 ## CUSTOM Element
 
@@ -487,9 +487,9 @@ The OL element is used in generating an ordered list as specified by the user. T
 
 The P element is used to define a paragraph in the document. The user can determine the properties and methods for the P element by invoking the PElementImpl class.
 
-## PRE - Pre formatted Element
+## PRE - Preformatted Element
 
-The PRE element defines pre formatted text. The text enclosed in the pre element usually preserves the spaces and line breaks. The enclosed text appears exactly as in the HTML document. The properties and methods for this element can be determined from the PREElementImpl class.
+The PRE element defines preformatted text. The text enclosed in the pre element usually preserves the spaces and line breaks. The enclosed text appears exactly as in the HTML document. The properties and methods for this element can be determined from the PREElementImpl class.
 
 
 
@@ -767,7 +767,7 @@ The TR element is used to create rows inside a table. The TRElementImpl class co
 
 
 * CellsCount: Gets the number of cells present in the row
-* VirtualCellsCount: Gets the total number of cells including the Column panel
+* VirtualCellsCount: Gets the total number of cells including the Colspan
 
 
 
