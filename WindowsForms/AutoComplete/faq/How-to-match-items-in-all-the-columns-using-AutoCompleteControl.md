@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to match items in all the columns using AutoComplete control | Windows Forms | Syncfusion
+title: How to match items in all the columns using AutoComplete control | WindowsForms | Syncfusion
 description: How to match items in all the columns using AutoComplete control
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

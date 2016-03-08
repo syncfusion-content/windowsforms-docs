@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to display empty string in editor controls when databound value is null | Windows Forms | Syncfusion
+title: How to display empty string in editor controls when databound value is null | WindowsForms | Syncfusion
 description: how to display empty string in editor controls when databound value is null
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# How to display empty string in editor controls when databound value is null?
+# How to display empty string in editor controls when data bound value is null?
 
 We can display empty string when data bound value is null. For this we need to bind the editor controls (like IntegerTextBox, DoubleTextBox, etc.,) to BindableValue property and also we need to set AllowNull to true and NullString property to empty string.
 

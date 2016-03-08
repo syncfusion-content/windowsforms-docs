@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-make-resizing-possible-in-additional-row-he | Windows Forms | Syncfusion
+title: How-to-make-resizing-possible-in-additional-row-he | WindowsForms | Syncfusion
 description: how to make resizing possible in additional row headers of a gridcontrol and griddataboundgrid
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

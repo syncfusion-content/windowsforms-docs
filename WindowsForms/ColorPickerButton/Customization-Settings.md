@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization Settings | Windows Forms | Syncfusion
+title: Customization Settings | WindowsForms | Syncfusion
 description: customization settings
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerButton 
 documentation: ug
 ---
@@ -43,7 +43,7 @@ Description</th></tr>
 <tr>
 <td>
 SelectedAsBackColor</td><td>
-Specifies whether ColorPickerButton.SelectedColor is set as the button backcolor.</td></tr>
+Specifies whether ColorPickerButton.SelectedColor is set as the button back color.</td></tr>
 <tr>
 <td>
 SelectedAsText</td><td>

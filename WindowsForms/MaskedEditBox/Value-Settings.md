@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Value Settings | Windows Forms | Syncfusion
+title: Value Settings | WindowsForms | Syncfusion
 description: Value Settings
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 

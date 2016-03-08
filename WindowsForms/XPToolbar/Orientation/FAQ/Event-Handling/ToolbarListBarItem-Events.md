@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ToolbarListBarItem-Events | Windows Forms | Syncfusion
+title: ToolbarListBarItem-Events | WindowsForms | Syncfusion
 description: toolbarlistbaritem events
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

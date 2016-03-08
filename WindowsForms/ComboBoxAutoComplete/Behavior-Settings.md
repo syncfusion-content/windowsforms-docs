@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Behavior Settings | Windows Forms | Syncfusion
+title: Behavior Settings | WindowsForms | Syncfusion
 description: Behavior Settings
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
@@ -30,7 +30,7 @@ Gets or Sets value indicating whether changes can be done to the combobox.</td><
 <tr>
 <td>
 UpdateComboSelectionProperties</td><td>
-UpdateComboSelectionProperties set to true means the Property SelectedItem will return the AutoCompleteControl's SelectedItem. Else if it is set to false, then SelectedItem property should return the base class SelectedItem ie., the Windows ComboBox SelectedItem value.</td></tr>
+UpdateComboSelectionProperties set to true means the Property SelectedItem will return the AutoCompleteControl's SelectedItem. Else if it is set to false, then SelectedItem property should return the base class SelectedItem that is, the Windows ComboBox SelectedItem value.</td></tr>
 </table>
 
 

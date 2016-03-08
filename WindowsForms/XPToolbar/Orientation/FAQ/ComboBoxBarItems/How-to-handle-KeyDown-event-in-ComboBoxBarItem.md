@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-handle-KeyDown-event-in-ComboBoxBarItem | Windows Forms | Syncfusion
+title: How-to-handle-KeyDown-event-in-ComboBoxBarItem | WindowsForms | Syncfusion
 description: how to handle keydown event in comboboxbaritem
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

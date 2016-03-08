@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-boolean | Windows Forms | Syncfusion
+title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-boolean | WindowsForms | Syncfusion
 description: how to databind a checkboxadv to an sql database if the corresponding datatable field is boolean
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# How to databind a CheckBoxAdv to an SQL database if the corresponding datatable field is boolean
+# How to data bind a CheckBoxAdv to an SQL database if the corresponding data table field is boolean
 
-The CheckBoxAdv's BoolValue property can be used to databind bool values as illustrated below.
+The CheckBoxAdv's BoolValue property can be used to data bind bool values as illustrated below.
 
 {% highlight c# %}
 

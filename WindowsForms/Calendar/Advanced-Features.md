@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced Features | Windows Forms | Syncfusion
+title: Advanced Features | WindowsForms | Syncfusion
 description: advanced features
-platform: windowsforms
+platform: WindowsForms
 control: Calendar
 documentation: ug
 ---
@@ -19,7 +19,7 @@ N>: Always use BindableValue property if dataset contains Null value. In cases w
 To bind a DateTimePickerAdv, perform the following steps.
 
 1. Add a DateTimePickerAdv and a DataGrid controls to the form.
-2. Create a daaset using the code below.
+2. Create a dataset using the code below.
 
 
    ~~~ cs

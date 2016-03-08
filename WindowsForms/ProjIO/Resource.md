@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Resource | Windows Forms | Syncfusion
+title: Resource | WindowsForms | Syncfusion
 description: resource
-platform: windowsforms
+platform: WindowsForms
 control: ProjIO
 documentation: ug
 ---

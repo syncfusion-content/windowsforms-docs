@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Color-Mapping | Windows Forms | Syncfusion
+title: Color-Mapping | WindowsForms | Syncfusion
 description: color mapping
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

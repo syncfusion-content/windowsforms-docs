@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Settings | Windows Forms | Syncfusion
+title: Text-Settings | WindowsForms | Syncfusion
 description: text settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -77,7 +77,7 @@ A sample which demonstrates the TextShadow property of CheckBoxAdv is available 
 
 {% seealso %}
 
-[Alignment Settings](http://help.syncfusion.com/windowsforms/checkboxadv/alignment-settings)
+[Alignment Settings](http://docs.syncfusion.com/windowsforms/checkboxadv/alignment-settings)
 
 {% endseealso %}
 

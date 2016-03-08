@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Title-Settings | Windows Forms | Syncfusion
+title: Title-Settings | WindowsForms | Syncfusion
 description: title settings 
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---

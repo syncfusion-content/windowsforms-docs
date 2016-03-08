@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Show-ContextMenu-in-the-Center-of-CurrentCe | Windows Forms | Syncfusion
+title: How-to-Show-ContextMenu-in-the-Center-of-CurrentCe | WindowsForms | Syncfusion
 description: how to show contextmenu in the center of currentcell or selected cells irrespective of the mouse click
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

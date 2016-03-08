@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Control-Overview | Windows Forms | Syncfusion
+title: Control-Overview | WindowsForms | Syncfusion
 description: control overview
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---

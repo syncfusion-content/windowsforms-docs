@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Enable-ColorStyle-Settings-in-Windows-Grids | Windows Forms | Syncfusion
+title: How-to-Enable-ColorStyle-Settings-in-Windows-Grids | WindowsForms | Syncfusion
 description: how to enable colorstyle settings in windows grids
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

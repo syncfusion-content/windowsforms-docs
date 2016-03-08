@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to resize columns to fit in a page while exporting to PDF | Windows Forms | Syncfusion
+title: How to resize columns to fit in a page while exporting to PDF | WindowsForms | Syncfusion
 description: how to resize columns to fit in a page while exporting to pdf
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

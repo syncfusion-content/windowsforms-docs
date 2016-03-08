@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Persistence | Windows Forms | Syncfusion
+title: Persistence | WindowsForms | Syncfusion
 description: Persistence
-platform: windowsforms
+platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---

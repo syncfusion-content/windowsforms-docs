@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Features Overview | Windows Forms | Syncfusion
+title: Features Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Will-it-be-possible-to-view-the-generated-project-xml-file-using-ProjIO | Windows Forms | Syncfusion
+title: Will-it-be-possible-to-view-the-generated-project-xml-file-using-ProjIO | WindowsForms | Syncfusion
 description: will it be possible to view the generated project [.xml file] using projio?
-platform: windowsforms
+platform: WindowsForms
 control: ProjIO
 documentation: ug
 ---

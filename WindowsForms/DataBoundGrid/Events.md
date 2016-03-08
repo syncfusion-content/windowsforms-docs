@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events | Windows Forms | Syncfusion
+title: Events | WindowsForms | Syncfusion
 description: events
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

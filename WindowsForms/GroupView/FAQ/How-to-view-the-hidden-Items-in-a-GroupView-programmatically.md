@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to view the hidden Items in a GroupView programmatically | Windows Forms | Syncfusion
+title: How to view the hidden Items in a GroupView programmatically | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

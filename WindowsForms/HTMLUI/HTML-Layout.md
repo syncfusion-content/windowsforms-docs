@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML-Layout | Windows Forms | Syncfusion
+title: HTML-Layout | WindowsForms | Syncfusion
 description: html layout
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
@@ -20,7 +20,7 @@ The display purposes involve the functionality similar to Web browsers in displa
 
 HTMLUI control can be used in a variety of applications which are common in our day-to-day life. 
 
-With HTMLUI control's support to images and animated images, Chat applications can be developed. The form based dialog box applications used in the office desks can also be developed at ease by simply changing different HTML documents as per the needs. The other interesting applications that can be developed using HTMLUI include games, animations, user blogs, and so on.
+With HTMLUI control's support to images and animated images, Chat applications can be developed. The form based dialog box applications used in the office desks can also be developed at ease by simply changing different HTML documents as per the needs. The other interesting applications that can be developed using HTMLUI include games, animations, user blog, and so on.
 
 The following figure shows a form based dialog that illustrates HTMLUI as a Layout Engine.
 

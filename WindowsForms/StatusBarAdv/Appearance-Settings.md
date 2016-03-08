@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | Windows Forms | Syncfusion
+title: Appearance-Settings | WindowsForms | Syncfusion
 description: appearance settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
@@ -33,11 +33,11 @@ Specifies the brush style.Solid,Pattern andGradient.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
-Specifies the backcolor of the control.</td></tr>
+Specifies the back color of the control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Specifies the forecolor for any text or graphics in the control.</td></tr>
+Specifies the fore color for any text or graphics in the control.</td></tr>
 <tr>
 <td>
 PatternStyle</td><td>

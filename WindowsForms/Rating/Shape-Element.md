@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Shape-Element | Windows Forms | Syncfusion
+title: Shape-Element | WindowsForms | Syncfusion
 description: shape element
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---
@@ -46,7 +46,7 @@ User-defined shapes can be used in the form of images.
 
 this.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages;
 
-customImageCollection1.NormalImage = global::Windows FormsApplication20.Properties.Resources.xmen;
+customImageCollection1.NormalImage = global::WindowsFormsApplication20.Properties.Resources.xmen;
 
             this.ratingControl1.Images = customImageCollection1;
 
@@ -58,7 +58,7 @@ customImageCollection1.NormalImage = global::Windows FormsApplication20.Properti
 
 Me.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages
 
-customImageCollection1.NormalImage = Global.Windows FormsApplication20.Properties.Resources.xmen
+customImageCollection1.NormalImage = Global.WindowsFormsApplication20.Properties.Resources.xmen
 
 Me.ratingControl1.Images = customImageCollection1
 

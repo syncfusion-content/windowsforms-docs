@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sorting | Windows Forms | Syncfusion
+title: Sorting | WindowsForms | Syncfusion
 description: sorting
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

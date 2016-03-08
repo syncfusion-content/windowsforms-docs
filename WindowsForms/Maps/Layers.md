@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Layers | Windows Forms | Syncfusion
+title: Layers | WindowsForms | Syncfusion
 description: layers
-platform: windowsforms
+platform: WindowsForms
 control: Maps
 documentation: ug
 ---

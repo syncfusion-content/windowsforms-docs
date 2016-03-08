@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---
@@ -186,11 +186,11 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/pivotgrid> (Navigate to the Pivot Grid for Windows Forms User Guide.)' | markdownify }}
+Online{{ '<http://docs.syncfusion.com/windowsforms/pivotgrid> (Navigate to the Pivot Grid for Windows Forms User Guide.)' | markdownify }}
 
 Note: Click Download as PDF to access a PDF version.Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ ' <http://help.syncfusion.com/cr/windowsforms> ' | markdownify }} Navigate to the Windows Forms User Guide. Select Pivot Analysis - Pivot Grid, and then click the Class Reference link found in the upper right section of the page)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ ' <http://docs.syncfusion.com/cr/windowsforms> ' | markdownify }} Navigate to the Windows Forms User Guide. Select Pivot Analysis - Pivot Grid, and then click the Class Reference link found in the upper right section of the page)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

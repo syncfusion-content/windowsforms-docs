@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Exporting | Windows Forms | Syncfusion
+title: Exporting | WindowsForms | Syncfusion
 description: exporting
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Draw Custom Handles For Nodes Using the Cus | Diagram | Windows Forms | Syncfusion
+title: How To Draw Custom Handles For Nodes Using the Cus | Diagram | WindowsForms | Syncfusion
 description: how to draw custom handles for nodes using the customhandlerenderer property
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

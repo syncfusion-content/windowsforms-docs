@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating DomainUpDownExt | Windows Forms | Syncfusion
+title: Creating DomainUpDownExt | WindowsForms | Syncfusion
 description: creating domainupdownext
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

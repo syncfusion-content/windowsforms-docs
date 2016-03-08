@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Layout-Management | Windows Forms | Syncfusion
+title: Layout-Management | WindowsForms | Syncfusion
 description: layout management
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

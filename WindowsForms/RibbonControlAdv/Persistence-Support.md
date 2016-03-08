@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Persistence-Support | Windows Forms | Syncfusion
+title: Persistence-Support | WindowsForms | Syncfusion
 description:  persistence support
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---

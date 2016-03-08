@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Get-page-count | Windows Forms | Syncfusion
+title: Get-page-count | WindowsForms | Syncfusion
 description: get page count?
-platform: windowsforms
+platform: WindowsForms
 control: PDF Viewer
 documentation: ug
 ---

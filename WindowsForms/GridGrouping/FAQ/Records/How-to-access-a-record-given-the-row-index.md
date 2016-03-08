@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-access-a-record-given-the-row-index | Windows Forms | Syncfusion
+title: How-to-access-a-record-given-the-row-index | WindowsForms | Syncfusion
 description: how to access a record given the row index
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

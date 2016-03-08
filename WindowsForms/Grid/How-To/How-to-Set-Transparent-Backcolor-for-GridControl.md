@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Set-Transparent-Backcolor-for-GridControl | Windows Forms | Syncfusion
+title: How-to-Set-Transparent-Backcolor-for-GridControl | WindowsForms | Syncfusion
 description: how to set transparent backcolor for gridcontrol
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-Setting the transparent [backcolor](/windowsforms/Grid/Cell-Style-Architecture#backcolor) for a GridControl can be done easily with simple code.
+Setting the transparent [backcolor](/WindowsForms/Grid/Cell-Style-Architecture#backcolor) for a GridControl can be done easily with simple code.
 
 ### Example
 

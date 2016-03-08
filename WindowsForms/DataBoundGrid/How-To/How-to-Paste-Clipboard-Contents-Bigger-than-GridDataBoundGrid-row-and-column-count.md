@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Paste-Clipboard-Contents-Bigger-than-GridDataBoundGrid-row-and-column-count | Windows Forms | Syncfusion
+title: How-to-Paste-Clipboard-Contents-Bigger-than-GridDataBoundGrid-row-and-column-count | WindowsForms | Syncfusion
 description: how to paste clipboard contents bigger than griddataboundgrid row and column count
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: Overview
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -28,4 +28,4 @@ In code, call ShowPopup to show the popup anywhere in an application. It also al
 
 The PopupControlContainer also exposes its top-level parent host (a form-derived class) that lets you configure the parent form (to make the parent's borders resizable, for example). 
 
-The Syncfusion XP Menus framework lets users associate a PopupControlContainer with a menu item and show it from within a menu or toolbar. The Syncfusion CommandBars also let you associate a PopupControlContainer with it to be shown when the user clicks on the command bar drop-down button.
+The Syncfusion XP Menus Framework lets users associate a PopupControlContainer with a menu item and show it from within a menu or toolbar. The Syncfusion CommandBars also let you associate a PopupControlContainer with it to be shown when the user clicks on the command bar drop-down button.

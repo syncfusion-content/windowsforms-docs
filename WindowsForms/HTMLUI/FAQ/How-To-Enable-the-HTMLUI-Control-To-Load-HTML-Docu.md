@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Enable-the-HTMLUI-Control-To-Load-HTML-Docu | Windows Forms | Syncfusion
+title: How-To-Enable-the-HTMLUI-Control-To-Load-HTML-Docu | WindowsForms | Syncfusion
 description: how to enable the htmlui control to load html documents that have been dragged onto the control?
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

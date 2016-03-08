@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Navigation-Bar | Windows Forms | Syncfusion
+title: Navigation-Bar | WindowsForms | Syncfusion
 description: navigation bar
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

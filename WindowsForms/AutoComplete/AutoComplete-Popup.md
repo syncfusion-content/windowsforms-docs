@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoComplete Popup | Windows Forms | Syncfusion
+title: AutoComplete Popup | WindowsForms | Syncfusion
 description: AutoComplete Popup
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -42,7 +42,7 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-N> You can also set multiple columns. Refer [Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
+N> You can also set multiple columns. Refer [Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
 
 ## Close Button and Gripper Settings
 
@@ -232,7 +232,7 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 
 
 
-N> You can also set multiple columns. Refer [Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
+N> You can also set multiple columns. Refer [Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
 
 ### Close Button and Gripper Settings
 

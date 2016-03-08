@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ToolTip | Windows Forms | Syncfusion
+title: ToolTip | WindowsForms | Syncfusion
 description: tooltip
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Toolbar-State-Persistence | Windows Forms | Syncfusion
+title: Toolbar-State-Persistence | WindowsForms | Syncfusion
 description: toolbar state persistence
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---
@@ -81,7 +81,7 @@ Reads the previously serialized toolbar/menus states.</td></tr>
 <tr>
 <td>
 SaveCustomData</td><td>
-Saves the user customized information such as save/load custom baritems, which were created and added during application runtime.</td></tr>
+Saves the user customized information such as save/load custom bar items, which were created and added during application runtime.</td></tr>
 <tr>
 <td>
 LoadCustomData</td><td>
@@ -393,7 +393,7 @@ These are things you can do in a derived form in Visual Inheritance mode.
 
 These are the limitations of Visual Inheritance mode.
 
-* Cannot add menu items created in a base form to any bars/submenus in a derived form.
+* Cannot add menu items created in a base form to any bars/sub menus in a derived form.
 * When the items in a base form's toolbar/submenu are repositioned, any previous repositioning that occurred in the derived form will be lost and the results may be unpredictable.
 
 ## UI Command Update Patterns

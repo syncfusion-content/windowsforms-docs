@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hosting-Child-Controls | Windows Forms | Syncfusion
+title: Hosting-Child-Controls | WindowsForms | Syncfusion
 description: hosting child controls
-platform: windowsforms
+platform: WindowsForms
 control: CommandBars
 documentation: ug
 ---

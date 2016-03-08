@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance Settings | Windows Forms | Syncfusion
+title: Appearance Settings | WindowsForms | Syncfusion
 description: Appearance Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -31,7 +31,7 @@ Specifies the background color of the component.</td></tr>
 <tr>
 <td>
 ReadOnlyBackColor</td><td>
-Specifies the backcolor to be used when the control is in the ReadOnly mode.</td></tr>
+Specifies the back color to be used when the control is in the ReadOnly mode.</td></tr>
 </table>
 
 
@@ -116,15 +116,15 @@ Description</th></tr>
 <tr>
 <td>
 PositiveColor</td><td>
-Gets / sets the forecolor when the current value is positive.</td></tr>
+Gets / sets the fore color when the current value is positive.</td></tr>
 <tr>
 <td>
 NegativeColor</td><td>
-Gets / sets the forecolor when the current value is negative. The default value is set to 'Red'.</td></tr>
+Gets / sets the fore color when the current value is negative. The default value is set to 'Red'.</td></tr>
 <tr>
 <td>
 ZeroColor</td><td>
-Gets / sets the forecolor when the current value is zero.</td></tr>
+Gets / sets the fore color when the current value is zero.</td></tr>
 </table>
 
 
@@ -172,7 +172,7 @@ Description</th></tr>
 <tr>
 <td>
 ResetForeColor</td><td>
-Resets the forecolor of the control to it's default value.</td></tr>
+Resets the fore color of the control to it's default value.</td></tr>
 <tr>
 <td>
 ResetPositiveColor</td><td>
@@ -188,7 +188,7 @@ Resets the ZeroColor property to it's default value.</td></tr>
 <tr>
 <td>
 SetControlColor</td><td>
-Sets the forecolor of the control depending on whether the current value is negative.</td></tr>
+Sets the fore color of the control depending on whether the current value is negative.</td></tr>
 <tr>
 <td>
 ShouldSerializePositiveColor</td><td>

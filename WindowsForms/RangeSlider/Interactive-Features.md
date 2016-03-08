@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive-Features | Windows Forms | Syncfusion
+title: Interactive-Features | WindowsForms | Syncfusion
 description: interactive features
-platform: windowsforms
+platform: WindowsForms
 control: RangeSlider 
 documentation: ug
 ---
@@ -22,7 +22,7 @@ The following are the key interactive features of the Range Slider:
 * SliderSize- Specifies the size of the slider.
 * ThumbColor- Specifies the color of the thumb.
 * ShowTicks- Specifies the visibility of the thumb.
-* TickFrquency- Specifies the frequency of ticks.
+* TickFrequency- Specifies the frequency of ticks.
 * Orientation- Specifies the orientation of the RangeSlider.
 * SliderMin and SliderMax- Specifies the position of right and left thumb.
 

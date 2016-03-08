@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: SkinManager 
 documentation: ug
 ---

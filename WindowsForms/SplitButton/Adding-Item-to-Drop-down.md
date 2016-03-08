@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Adding-Item-to-Drop-down | Windows Forms | Syncfusion
+title: Adding-Item-to-Drop-down | WindowsForms | Syncfusion
 description: adding item to drop-down
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---

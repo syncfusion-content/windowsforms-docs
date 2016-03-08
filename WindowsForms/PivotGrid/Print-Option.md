@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Print-Option | Windows Forms | Syncfusion
+title: Print-Option | WindowsForms | Syncfusion
 description: print option
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style | Windows Forms | Syncfusion
+title: Style | WindowsForms | Syncfusion
 description: style
-platform: windowsforms
+platform: WindowsForms
 control: GridRecordNavigation
 documentation: ug
 ---

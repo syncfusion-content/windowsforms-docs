@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Datasource | Windows Forms | Syncfusion
+title: Datasource | WindowsForms | Syncfusion
 description: datasource
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

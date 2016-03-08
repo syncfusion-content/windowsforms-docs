@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using-Grouping | Windows Forms | Syncfusion
+title: Using-Grouping | WindowsForms | Syncfusion
 description: using grouping
-platform: windowsforms
+platform: WindowsForms
 control: Grouping
 documentation: ug
 ---

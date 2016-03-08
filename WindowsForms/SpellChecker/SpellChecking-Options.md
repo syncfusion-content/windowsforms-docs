@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SpellChecking-Options | Windows Forms | Syncfusion
+title: SpellChecking-Options | WindowsForms | Syncfusion
 description: spellcheckingoptions
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -81,11 +81,11 @@ These options are accessible at runtime through the Spell Checker Options dialog
 
 ### Custom Dictionary:
 
-SpellChecker comes with the custom dictionary support, the spellchecking engine always look for the words in the custom dictionary list when a word does not exists in the spellcheckers dictionary.
+SpellChecker comes with the custom dictionary support, the spell checking engine always look for the words in the custom dictionary list when a word does not exists in the spell checkers dictionary.
 
-Words can be added to the custom dictionary with the Add to dictionary button in the SpellChecker dialog. Custom Dictionary will be created when a word that does not exists in the spellchecker dictionary is about to be added, and will be placed in the common application data path for the application. 
+Words can be added to the custom dictionary with the Add to dictionary button in the SpellChecker dialog. Custom Dictionary will be created when a word that does not exists in the spell checker dictionary is about to be added, and will be placed in the common application data path for the application. 
 
-Users can add their own custom dictionary by refereing to the dictionary file path in the Custom Dictionary Editor dialog.
+Users can add their own custom dictionary by referring to the dictionary file path in the Custom Dictionary Editor dialog.
 
 Word list can be customized with the Custom Dictionary Editor dialog, and this can be invoked by the Custom Dictionary button in the SpellChecker dialog. Users can add, delete words from the dictionary.
 
@@ -240,7 +240,7 @@ ArrayList</td><td>
 <td>
 WriteToDictionary</td><td>
 Writes the specified word to the dictionary.</td><td>
-custDictPath -Specifies the path of the dictionary file.Word - Specifies the word to be added to the dictionary.</td><td>
+customDictumPath -Specifies the path of the dictionary file.Word - Specifies the word to be added to the dictionary.</td><td>
 </td><td>
 void</td><td>
 </td></tr>
@@ -262,14 +262,14 @@ Reference links </th></tr>
 <td>
 Error</td><td>
 Raised whenever exceptions occur while handling the dictionary files or streams. </td><td>
-Sender – sender of the exceptionsex – the details of the exception occurred.</td><td>
+Sender – sender of the exceptions ex – the details of the exception occurred.</td><td>
 NA</td><td>
 </td></tr>
 </table>
 
 ### Adding SpellChecker to a RichTextbox
 
-Spellchecker can easily be associated with the controls of type TextBoxBase via the SpellEditorWrapper class. The following code snippet exhibits how spellchecker can be associated with RichTextBox.
+Spell checker can easily be associated with the controls of type TextBoxBase via the SpellEditorWrapper class. The following code snippet exhibits how spell checker can be associated with RichTextBox.
 
 {% highlight c# %}
 

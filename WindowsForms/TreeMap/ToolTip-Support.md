@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tooltip-Support | Windows Forms | Syncfusion
+title: Tooltip-Support | WindowsForms | Syncfusion
 description: tooltip support
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

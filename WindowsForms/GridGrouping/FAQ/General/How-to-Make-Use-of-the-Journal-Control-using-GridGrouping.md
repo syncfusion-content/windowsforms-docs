@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Make-Use-of-the-Journal-Control-using-GridG | Windows Forms | Syncfusion
+title: How-to-Make-Use-of-the-Journal-Control-using-GridG | WindowsForms | Syncfusion
 description: how to make use of the journal control using gridgrouping controls
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

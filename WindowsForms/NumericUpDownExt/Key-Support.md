@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Key-Support | Windows Forms | Syncfusion
+title: Key-Support | WindowsForms | Syncfusion
 description: key support
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

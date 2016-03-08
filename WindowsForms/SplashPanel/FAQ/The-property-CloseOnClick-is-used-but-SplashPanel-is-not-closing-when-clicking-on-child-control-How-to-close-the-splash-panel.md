@@ -1,8 +1,8 @@
 ---
 layout: post
-title: The-property-CloseOnClick-is-used-but-SplashPanel-is-not-closing-when-clicking-on-child-control.-How-to-close-the-splash-panel | Windows Forms | Syncfusion
+title: The-property-CloseOnClick-is-used-but-SplashPanel-is-not-closing-when-clicking-on-child-control.-How-to-close-the-splash-panel | WindowsForms | Syncfusion
 description: the property CloseOnClick is used but splashsanel is not closing when clicking on child control. how to close the splash panel
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---

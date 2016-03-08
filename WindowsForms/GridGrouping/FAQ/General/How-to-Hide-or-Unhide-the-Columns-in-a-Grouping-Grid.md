@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Hide-or-Unhide-the-Columns-in-a-Grouping-Gr | Windows Forms | Syncfusion
+title: How-to-Hide-or-Unhide-the-Columns-in-a-Grouping-Gr | WindowsForms | Syncfusion
 description: how to hide or unhide the columns in a grouping grid
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ControlBar | Windows Forms | Syncfusion
+title: ControlBar | WindowsForms | Syncfusion
 description: controlbar
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

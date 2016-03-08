@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Use-Logical-Expressions-In-Other-Calculated-expressions | Windows Forms | Syncfusion
+title: How-To-Use-Logical-Expressions-In-Other-Calculated-expressions | WindowsForms | Syncfusion
 description: how to use logical expressions in other calculated expressions?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---
