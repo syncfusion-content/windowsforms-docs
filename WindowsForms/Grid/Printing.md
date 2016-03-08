@@ -247,7 +247,7 @@ printDialog.Document = mgpd
 
 ![](Printing_images/Printing_img3.jpeg)
 
-N> The headers and footers can be printed for all the pages by setting the [ShowHeaderFooterOnAllPages](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~ShowHeaderFooterOnAllPages.html) property to `ture`. The particular grid can be removed from the printing grid collection by handling the [MultipleGridPrint](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~MultipleGridPrint_EV.html) event.
+N> The headers and footers can be printed for all the pages by setting the [ShowHeaderFooterOnAllPages](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~ShowHeaderFooterOnAllPages.html) property to `true`. The particular grid can be removed from the printing grid collection by handling the [MultipleGridPrint](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~MultipleGridPrint_EV.html) event.
 
 The sample illustrates this feature is given in the following location,<br/>
 _&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_No&gt;\Windows\Grid.Windows\Samples\Printing\Multi-Grid Printing\CS_

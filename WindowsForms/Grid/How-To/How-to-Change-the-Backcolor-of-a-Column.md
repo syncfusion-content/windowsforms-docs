@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Change the Backcolor of a Column
+# How to Change the BackColor of a Column
 
 ## Introduction
 

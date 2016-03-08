@@ -821,7 +821,7 @@ The `CHOOSE` function returns the value from a range of values on a specific i
 CHOOSE(index, valuearray)
 
 #### Where:
-* **index** is to specify the index from where you want to retrive the value.
+* **index** is to specify the index from where you want to retrieve the value.
 * **valuearray** is the array of value from where you want to take the value.
 
 ### CLEAN
@@ -2942,7 +2942,7 @@ Match( value, array, match_type )
 N> 
 N> 1. The Match function does not distinguish between uppercase and lowercase when searching. 
 N> 2.If the Match function does not find a match, it returns #N/A error. 
-N> 3.match_type is optional. The Match Function assumes match_type as 1 when the parametter is omitted. 
+N> 3.match_type is optional. The Match Function assumes match_type as 1 when the parameter is omitted. 
 N> 4.If the match_type parameter is 0 and a text value, then you can use wildcards in the value parameter. 
 N> where, 
 N> * - matches any sequence of characters 
@@ -4715,7 +4715,7 @@ WORKDAY.INTL( startDate, days, [weekend], [holidays] )
 Xirr(cashflow, datelist, value)
 
 #### Where:
-cashflow is the range of cash flow. datelist is the list of serial number of the corresponding date values. value is an initial guess interger value which reflects in the result of the function.
+cashflow is the range of cash flow. datelist is the list of serial number of the corresponding date values. value is an initial guess integer value which reflects in the result of the function.
 
 ### XOR
 `XOR` function returns the exclusive `OR` for the given arguments.

@@ -36,7 +36,7 @@ N>  The system prompts you to save the changes to the Grid control in the design
 This section would explain the list of properties that changes the Appearance, Print Styles, and Scroll Bar settings of GridControl.
 
 ### Appearance Properties
-The properties that majorly affect the appearance of cells in GridControl are listed below.
+The properties that mainly affect the appearance of cells in GridControl are listed below.
 
 #### Hiding VerticalLines
 To display the grid without the vertical lines, set the [DisplayVerticalLines](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~DisplayVerticalLines.html) property to `false`.
@@ -247,7 +247,7 @@ Me.gridControl.Model.Options.NumberedRowHeaders = False
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img12.jpeg)
 
 #### Changing Frozen Line Color
-The color of the frozen grid lines can be set by using [FixedLinescolor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~FixedLinesColor.html) property. This property is applicable for both frozen column and frozen rows grid lines.
+The color of the frozen grid lines can be set by using [FixedLinesColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~FixedLinesColor.html) property. This property is applicable for both frozen column and frozen rows grid lines.
 
 {% tabs %}
 {% highlight c# %}
@@ -379,7 +379,7 @@ formatDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-N> The grid cells which needs to be formatted needs to be selected before actiavting this dialog.
+N> The grid cells which needs to be formatted needs to be selected before activating this dialog.
 
 ## Formatting Options
 `GridFormatCellDialog` contains four kinds of formatting option in it.

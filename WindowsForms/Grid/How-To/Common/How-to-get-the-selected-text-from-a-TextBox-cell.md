@@ -101,5 +101,5 @@ Refer to the following sample file for more details:
 
 [http://www.syncfusion.com/downloads/Support/DirectTrac/99890/99890_SelectedText653111008.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/99890/99890_SelectedText653111008.zip)
 
-Similarly, the text from the Combobox cell, Richtextbox cell, etc., can be acquired by taking their respective renderers. You can also achieve the same behavior for the Grid control and GridGrouping control.
+Similarly, the text from the ComboBox cell, RichTextBox cell, etc., can be acquired by taking their respective renderers. You can also achieve the same behavior for the Grid control and GridGrouping control.
 

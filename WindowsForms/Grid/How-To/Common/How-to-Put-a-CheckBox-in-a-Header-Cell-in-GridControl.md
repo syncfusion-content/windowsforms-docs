@@ -11,7 +11,7 @@ documentation: ug
 
 ### Introduction
 
-To place a CheckBox in GridControl, you must set CellType to CheckBox and assign string values for CheckedValue and UncheckedValue in the CheckBoxOptions property. The value of CheckBox will be stored to a particular cell in the GridControl. When the CheckBox is clicked, CheckBoxClick event gets triggered. To place a CheckBox in GridDataBoundGrid, two events have to be implemented: QueryCellInfo event, which is used to set the style properties and SaveCellInfo event, which is used to save the cell's value. The value of the CheckBox cannot be stored in GridDataBoundGrid, so any datatype or collection can be used to store the value. CheckBoxClick event gets triggered when the CheckBox is clicked.
+To place a CheckBox in GridControl, you must set CellType to CheckBox and assign string values for CheckedValue and UncheckedValue in the CheckBoxOptions property. The value of CheckBox will be stored to a particular cell in the GridControl. When the CheckBox is clicked, CheckBoxClick event gets triggered. To place a CheckBox in GridDataBoundGrid, two events have to be implemented: QueryCellInfo event, which is used to set the style properties and SaveCellInfo event, which is used to save the cell's value. The value of the CheckBox cannot be stored in GridDataBoundGrid, so any data type or collection can be used to store the value. CheckBoxClick event gets triggered when the CheckBox is clicked.
 
 #### Example
 

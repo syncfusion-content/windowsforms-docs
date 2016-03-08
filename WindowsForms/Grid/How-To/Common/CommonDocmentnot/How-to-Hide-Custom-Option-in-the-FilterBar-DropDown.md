@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Hide Custom Option in the FilterBar DropDown
 
-To achieve this, you need to implement custom filterbar cell deriving cellmodel/cellrenderer from GridTableFilterBarCellModel/GridTableFilterBarCellRenderer.
+To achieve this, you need to implement custom FilterBar cell deriving CellModel/CellRenderer from GridTableFilterBarCellModel/GridTableFilterBarCellRenderer.
 
 * GridTableFilterBarCellModel.FillWithChoices method is overridden to remove the string "Custom" from the list.
-* GridTableFilterBarCellModel.Select method is rewritten with "Select_withoutcustom" method, which specifies the index for the selected item. You can pass the index for the "Custom" selected item as 0.
-* GridTableFilterBarCellModel.ListBoxMouseUp() method is overridden to invoke Select_withoutcustom method instead of the Select method.
+* GridTableFilterBarCellModel.Select method is rewritten with "Select_WithoutCustom" method, which specifies the index for the selected item. You can pass the index for the "Custom" selected item as 0.
+* GridTableFilterBarCellModel.ListBoxMouseUp() method is overridden to invoke Select_WithoutCustom method instead of the Select method.
 
 
 {% highlight c# %}

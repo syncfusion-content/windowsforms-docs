@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 # Visual Styles
-The GridControl can be displayed with the different themes by using the [GridVisulStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~GridVisualStyles.html) property. The following themes are available for GridControl,
+The GridControl can be displayed with the different themes by using the [GridVisualStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~GridVisualStyles.html) property. The following themes are available for GridControl,
 
 * Office2003
 * Office2007Blue
@@ -49,7 +49,7 @@ Me.gridControl1.ThemesEnabled = True
 {% endtabs %}
 
 ## Applying skin for ComboBox Cell
-There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInCobmoBox](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~EnableGridListControlInComboBox.html)  property to false. It will add the [GridListControl](http://help.syncfusion.com/windowsforms/gridlist/creating-grid-list-control) to the ComboBox drop down and the visual style of the grid will be applied. 
+There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInComboBox](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~EnableGridListControlInComboBox.html)  property to false. It will add the [GridListControl](http://help.syncfusion.com/windowsforms/gridlist/creating-grid-list-control) to the ComboBox drop down and the visual style of the grid will be applied. 
 {% tabs %}
 {% highlight c# %}
 // To Use GridComboBoxCellModel in Grid
@@ -281,5 +281,5 @@ The following KB demonstrates the same with the sample,
 
 [https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) 
 
-N> Each theme can be customized by deriving their `GridVisulaStylesDrawing` class. 
+N> Each theme can be customized by deriving their `GridVisualStylesDrawing` class. 
 N> Ex:[GridVisualStylesOffice2007Black](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.GridVisualStylesOffice2007Black.html) 

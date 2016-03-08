@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Scrolling
-GridControl has provide the built in support for scrolling. This section will explain about types of scrolling and different types of scrollbars available for Gridcontrol.
+GridControl has provide the built in support for scrolling. This section will explain about types of scrolling and different types of scrollbars available for GridControl.
 
 ## Enable Auto Scrolling 
 The auto scrolling can be enabled or disabled for both horizontal and vertical scrollbars by setting the [AutoScrolling](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~AutoScrolling.html) property to `ScrollBars.Both`. This can also enabled separately for horizontal and vertical scrollbars.

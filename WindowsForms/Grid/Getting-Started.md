@@ -77,7 +77,7 @@ Syncfusion.Grid.Windows assembly contains classes that handles all UI operations
 <tr>
 <td>
 {{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfudion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
+Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
 </table>
 In addition to these assemblies there are also other optional assemblies.
 

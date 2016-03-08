@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Align Image Button at the Centre of a Cell 
+# How to Align Image Button at the Center of a Cell 
 
 To align the button at the center of the cell, customize the model and the renderer of the cell. Specify the bounds of the button using the OnLayout() method. The following code illustrates how to align the button at the center of the grid cell: 
 
