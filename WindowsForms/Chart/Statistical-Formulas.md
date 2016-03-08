@@ -28,7 +28,7 @@ Statistical Formulas</th><th>
 Description</th></tr>
 <tr>
 <td>
-Anova Test</td><td>
+ANOVA Test</td><td>
 An ANOVA test is used to test the differences between the means of two or more groups of data.</td></tr>
 <tr>
 <td>
@@ -76,13 +76,13 @@ Z Test</td><td>
 This formula performs a Z Test using Normal distribution.</td></tr>
 </table>
 
-### Anova Test
+### ANOVA Test
 
-Anova stands for Analysis Of Variance. It is a technique to test the hypothesis that the means among two or more groups of data are equal and thereby, testing the differences between their variances, under the assumption that the sampled groups are normally distributed. 
+ANOVA stands for Analysis Of Variance. It is a technique to test the hypothesis that the means among two or more groups of data are equal and thereby, testing the differences between their variances, under the assumption that the sampled groups are normally distributed. 
 
 The test actually compares the variation between the groups with the variation within the groups and produces the results based on the values of these variations. If the between variation is larger than the within variation, the means of the groups will not be equal. If both these variations are of approximately the same size, then there will not be any significant difference between the means.
 
-Steps to perform an Anova test
+Steps to perform an ANOVA test
 
 The null hypothesis is that there is no difference between the means and the alternative hypothesis is that at least one means is different.
 
@@ -154,7 +154,7 @@ The following assumptions must be satisfied before performing the test.
 
 #### APIs Used
 
-EssentialChart provides support to perform Anova Test by implementing a method named Anova in the BasicStatisticalFormulas class. This method does the above described calculations and returns the test results as an instance of AnovaResult class. The AnovaResult is a class implemented to store the anova test results such as sum of squares, degrees of freedom and mean squares for different variations and also stores the FRatio and FCriticalValue of the test. Below is a detailed table for the Anova method.
+EssentialChart provides support to perform ANOVA Test by implementing a method named Anova in the BasicStatisticalFormulas class. This method does the above described calculations and returns the test results as an instance of AnovaResult class. The AnovaResult is a class implemented to store the ANOVA test results such as sum of squares, degrees of freedom and mean squares for different variations and also stores the FRatio and FCriticalValue of the test. Below is a detailed table for the ANOVA method.
 
 
 
@@ -176,7 +176,7 @@ An Anova has the following members:* DegreeOfFreedomBetweenGroups * DegreeOfFre
 
 
 
-Here is a sample code snippet to simulate an Anova test.
+Here is a sample code snippet to simulate an ANOVA test.
 
 
 
@@ -773,7 +773,7 @@ Steps to perform the test
 1. Specify the null hypothesis and alternate hypothesis.
    * Null Hypothesis: Difference between the two means is zero.
    * Alternate Hypothesis: Difference between the two means is not zero.
-2. Calculate the difference between two series on each pair of values. Calculate the mean difference ( Mdiff ), ie., mean of the new series values.
+2. Calculate the difference between two series on each pair of values. Calculate the mean difference ( Mdiff ), i.e. mean of the new series values.
 3. Calculate the Standard Deviation of the differences( _Sd_ ).
 4. Get the degrees of freedom.
 
@@ -922,7 +922,7 @@ This test requires the sample to be random and is taken from a population that i
 
    #### Using the Formula
 
-The Z-test can be carried out on any two series values by using the ZTest method of BasicStatisticalFormuals class. Below table gives the detailed description of this method. The method returns an instance of ZTestResult object that saves the intermediate results and also the final z score of the test.
+The Z-test can be carried out on any two series values by using the ZTest method of BasicStatisticalFormulas class. Below table gives the detailed description of this method. The method returns an instance of ZTestResult object that saves the intermediate results and also the final z score of the test.
 
 
 
@@ -1776,7 +1776,7 @@ double x = Statistics.UtilityFunctions.NormalDistribution( p )
 
 ### Normal Distribution Density
 
-In probability and statistics, the log-normal distribution is the probability of distribution of any random variable whose logarithm is normally distributed (the base of the logarithmic function is immaterial in that loga x is normally distributed if and only if logb X is normally distributed). If x is a random variable with a normal distribution, then exp(X) will have a log-normal distribution.
+In probability and statistics, the log-normal distribution is the probability of distribution of any random variable whose logarithm is normally distributed (the base of the logarithmic function is immaterial in that log<sub>a</sub> x is normally distributed if and only if log<sub>b</sub> X is normally distributed). If x is a random variable with a normal distribution, then exp(X) will have a log-normal distribution.
 
 "Log-normal" can also be written as "log normal", "lognormal" or "logistic normal".
 

@@ -493,7 +493,7 @@ Specifies the way the text is drawn. Possible values: * AntiAlias - each charact
 <tr>
 <td>
 <br>SmoothingMode</td><td>
-Specifies how chart elements should be rendered. Possible values:* AntiAlias * HighQuality* HighSpeed* Invalid* None* Default(defaultsetting)</td></tr>
+Specifies how chart elements should be rendered. Possible values:* AntiAlias * HighQuality* HighSpeed* Invalid* None* Default(default setting)</td></tr>
 </table>
 
 
@@ -565,7 +565,7 @@ Specifies the position relative to the chart at which to render the chart title 
 <tr>
 <td>
 <br>Alignment</td><td>
-When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.<ul><li> Center - will be aligned to center. Defaultsetting.</li><li> Far - will be aligned Far.</li><li> Near - will be aligned Near.</ul></li></td></tr>
+When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.<ul><li> Center - will be aligned to center(default setting).</li><li> Far - will be aligned Far.</li><li> Near - will be aligned Near.</ul></li></td></tr>
 <tr>
 <td>
 <br>Behavior</td><td>

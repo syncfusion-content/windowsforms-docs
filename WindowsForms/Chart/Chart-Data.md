@@ -13,7 +13,7 @@ documentation: ug
 
 EssentialChart has built-in support for binding to DataTables, DataSets, DataViews or any implementation of IListSource, IBindingList or ITypedList.
 
-The ChartSeries data points and the axis labels are the ones that can be databound.
+The ChartSeries data points and the axis labels are the ones that can be data bound.
 
 There is however no DESIGN-TIME support for data binding. This has to be setup in code.
 
@@ -168,7 +168,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 
 ## Implementing Custom Data Binding Interfaces
 
-Note that the ChartDataBindModel type in the previous topic implements a simple interface called IChartSeriesModel. This interface requires the implementation ofone property, two methods and one optional event. So, you can easily provide a custom implementation of this interface instead of using the ChartDataBindModel.
+Note that the ChartDataBindModel type in the previous topic implements a simple interface called IChartSeriesModel. This interface requires the implementation of one property, two methods and one optional event. So, you can easily provide a custom implementation of this interface instead of using the ChartDataBindModel.
 
 Shown below is some sample code that implements IChartSeriesModel interface for use with the chart.
 
@@ -366,9 +366,9 @@ Me.chartControl1.Series.Add(series1)
 
 Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can instead implement the IChartSeriesIndexedModel interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
 
-## Chart Data Binding with IEnumerables
+## Chart Data Binding with IEnumerable
 
-Syncfusionchart provides an option of binding the Chart with IEnumerables, like ArrayList for Indexed or Non Indexed model data through ChartDataBindModel implementation.
+Syncfusion chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through ChartDataBindModel implementation.
 
 {% highlight c# %}
 
@@ -744,7 +744,7 @@ Here, MyBindingSource is a binding source present in the form.
 
 Step-4:
 
-Click Series Data tab to map the binding source fields with X and Yvalues of the Chart. Select a series in the combo box and other fields in this tab are enabled.
+Click Series Data tab to map the binding source fields with X and Y values of the Chart. Select a series in the combo box and other fields in this tab are enabled.
 
 ![](Chart-Data_images/Chart-Data_img26.png)
 
@@ -760,11 +760,11 @@ Designer displays default chart with random values but you can see the series bo
 
 ### Bind Chart with a binding source in code behind
 
-Binding Chart with a BindingSource in code behind is similar to binding IEnumerables. Follow the steps to bind the BindingSource with Chart Series.
+Binding Chart with a BindingSource in code behind is similar to binding IEnumerable. Follow the steps to bind the BindingSource with Chart Series.
 
 Step-1
 
-Create a ChartDataBindModel object with BinidngSource as data source
+Create a ChartDataBindModel object with BindingSource as data source
 
 {% highlight c# %}
 

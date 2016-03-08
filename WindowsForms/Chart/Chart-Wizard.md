@@ -168,7 +168,7 @@ The below properties can be set separately for x-axis and y-axis.
 * Inversed, Opposed - Specifies whether the axes are inversed, opposed.
 * Value Type - If you know the type of data points you will be adding to this axis, specify it using the combo box. Possible value types are double, datetime, custom and logarithmic.
 * Format - Specifies the label format.
-* Edit Labels - The labels at the axes can be varied by entering the values in the Collection Editor Dialog box, which popsup when the Edit Labels button is clicked.
+* Edit Labels - The labels at the axes can be varied by entering the values in the Collection Editor Dialog box, which pops up when the Edit Labels button is clicked.
 
 
 
