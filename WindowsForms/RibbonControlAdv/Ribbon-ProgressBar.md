@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-ProgressBar| Windows Forms | Syncfusion
+title: Ribbon-ProgressBar| WindowsForms | Syncfusion
 description:  ribbon progressbar
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripProgressBar
+# Ribbon ProgressBar
 
 ToolStripProgressBar can be used to provide a visual cue that the application is indeed working and the task is being completed.item. It can be added to a ToolStripEx directly or through a panel. 
 
@@ -15,7 +15,7 @@ ToolStripProgressBar can be used to provide a visual cue that the application is
 
 The below properties controls the appearance and behavior of the ToolStripProgressBar Item.
 
-## Foreground Settings
+### Foreground Settings
 
 <table>
 <tr>
@@ -32,7 +32,7 @@ ForeColor<br/><br/></td><td>
 Sets the fore color for the display text.<br/><br/></td></tr>
 </table>
 
-## Style Settings
+### Style Settings
 
 <table>
 <tr>
@@ -92,7 +92,7 @@ PerformStep()<br/><br/></td><td>
 Advances the current position of the progressbar by the value specified in ToolStripProgressBar.Step property.<br/><br/></td></tr>
 </table>
 
-## ToolTip Settings
+### ToolTip Settings
 
 <table>
 <tr>
@@ -109,7 +109,7 @@ ToolTipText<br/><br/></td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></tr>
 </table>
 
-## RTL Support
+### RTL Support
 
 <table>
 <tr>

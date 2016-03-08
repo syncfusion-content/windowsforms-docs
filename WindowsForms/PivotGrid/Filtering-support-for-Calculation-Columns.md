@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Filtering-support-for-Calculation-Columns | Windows Forms | Syncfusion
+title: Filtering-support-for-Calculation-Columns | WindowsForms | Syncfusion
 description: filtering support for calculation columns
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---

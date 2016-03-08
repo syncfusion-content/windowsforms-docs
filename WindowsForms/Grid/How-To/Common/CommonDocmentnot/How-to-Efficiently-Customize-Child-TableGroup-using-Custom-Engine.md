@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Efficiently Customize Child Table/Group using Custom Engine | Windows Forms | Syncfusion
+title: How to Efficiently Customize Child Table/Group using Custom Engine | WindowsForms | Syncfusion
 description: how to efficiently customize child table/group using custom engine
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

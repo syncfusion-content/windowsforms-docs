@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Change the Selection Mode of the SelectTool | Diagram | Windows Forms | Syncfusion
+title: How To Change the Selection Mode of the SelectTool | Diagram | WindowsForms | Syncfusion
 description: how to change the selection mode of the selecttool
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

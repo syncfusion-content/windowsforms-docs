@@ -1,8 +1,8 @@
 ---
 layout: post
-title: VisualItemInputMode-Configuration | Windows Forms | Syncfusion
+title: VisualItemInputMode-Configuration | WindowsForms | Syncfusion
 description: visualiteminputmode configuration
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

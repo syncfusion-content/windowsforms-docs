@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-Border-color-and-Border-thickness-for-t | Windows Forms | Syncfusion
+title: How-to-set-Border-color-and-Border-thickness-for-t | WindowsForms | Syncfusion
 description: how to set border color and border thickness for the treenavigator control?
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sort-by-DisplayMember | Windows Forms | Syncfusion
+title: Sort-by-DisplayMember | WindowsForms | Syncfusion
 description: sort by displaymember
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

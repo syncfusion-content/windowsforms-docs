@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Visual-Styles-for-the-Popup-Menu | Windows Forms | Syncfusion
+title: Visual-Styles-for-the-Popup-Menu | WindowsForms | Syncfusion
 description: visual styles for the popup menu
-platform: windowsforms
+platform: WindowsForms
 control: Popup-Menu
 documentation: ug
 ---
 
 # Visual Styles for the Popup Menu
 
-Visual Style for a popupmenu can be controlled by using PopupMenu.ParentBarItem.Style property.
+Visual Style for a popup menu can be controlled by using PopupMenu.ParentBarItem.Style property.
 
 {% highlight c# %}
 

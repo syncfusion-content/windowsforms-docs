@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PercentTextBox Events | Windows Forms | Syncfusion
+title: PercentTextBox Events | WindowsForms | Syncfusion
 description: PercentTextBox Events
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -625,7 +625,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets a value indicating whether the event should be cancelled.</td></tr>
+Gets / sets a value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
 NullValue</td><td>

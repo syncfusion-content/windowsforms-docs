@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
+title: Features | WindowsForms | Syncfusion
 description: features
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 * Appearance Settings
 
-The background of the StatusBarAdv control can be displayed with an appealing gradient or pattern style provided by the various options in the BackgroundColor property.The backcolor and forecolor can be set for the background.In addition to the above settings, a sizing grip can also be displayed for the control.
+The background of the StatusBarAdv control can be displayed with an appealing gradient or pattern style provided by the various options in the BackgroundColor property.The back color and fore color can be set for the background.In addition to the above settings, a sizing grip can also be displayed for the control.
 
 * Behavior Settings
 
@@ -35,7 +35,7 @@ The StatusBarAdv control can be displayed with a 2D or 3D border. Their styles a
 
 * Themes
 
-Themes can be enabled for the StatusBarAdv control. This automatically resets the BorderStyle property to 'None'.The IgnoreThemeBackground property when set to 'True', ignores the theme's background color and draws the StatusBarAdv with the backcolor instead.
+Themes can be enabled for the StatusBarAdv control. This automatically resets the BorderStyle property to 'None'.The IgnoreThemeBackground property when set to 'True', ignores the theme's background color and draws the StatusBarAdv with the back color instead.
 
 A Sample which demonstrates the StatusBarAdv is available in the below sample installation path.
 

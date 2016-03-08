@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Change the Calculator layout using CalcPopup property | Windows Forms | Syncfusion
+title: How to Change the Calculator layout using CalcPopup property | WindowsForms | Syncfusion
 description: how to change the calculator layout using calcpopup property
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

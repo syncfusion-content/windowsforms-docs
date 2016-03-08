@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Move  Place the Nodes Outside the Diagram M | Diagram | Windows Forms | Syncfusion
+title: How To Move  Place the Nodes Outside the Diagram M | Diagram | WindowsForms | Syncfusion
 description: how to move / place the nodes outside the diagram model's bounds
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

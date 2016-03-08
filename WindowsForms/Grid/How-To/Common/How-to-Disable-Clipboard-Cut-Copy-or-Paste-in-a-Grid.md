@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Disable-Clipboard-Cut-Copy-or-Paste-in-a-Grid | Windows Forms | Syncfusion
+title: How-to-Disable-Clipboard-Cut-Copy-or-Paste-in-a-Grid | WindowsForms | Syncfusion
 description: how to disable clipboard cut, copy, or paste in a grid
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

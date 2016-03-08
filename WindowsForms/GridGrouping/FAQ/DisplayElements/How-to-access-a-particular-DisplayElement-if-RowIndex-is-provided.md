@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-access-a-particular-DisplayElement-if-RowIn | Windows Forms | Syncfusion
+title: How-to-access-a-particular-DisplayElement-if-RowIn | WindowsForms | Syncfusion
 description: how to access a particular displayelement if rowindex is provided
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

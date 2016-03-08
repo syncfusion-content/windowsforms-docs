@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Metro-Form | Windows Forms | Syncfusion
+title: Metro-Form | WindowsForms | Syncfusion
 description: metro form
-platform: windowsforms
+platform: WindowsForms
 control: Metro Form
 documentation: ug
 ---
@@ -79,7 +79,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the number of detents the mouse wheel has rotated. A detent is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the number of detentes the mouse wheel has rotated. A detente is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -103,7 +103,7 @@ Gets or sets the background color for the caption image.</td></tr>
 <tr>
 <td>
 Image</td><td>
-Getsor sets the image for the caption image.</td></tr>
+Gets or sets the image for the caption image.</td></tr>
 </table>
 
 {% highlight c# %}

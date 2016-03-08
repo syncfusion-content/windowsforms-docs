@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Map-Shape-Customization | Windows Forms | Syncfusion
+title: Map-Shape-Customization | WindowsForms | Syncfusion
 description: map shape customization
-platform: windowsforms
+platform: WindowsForms
 control: Maps
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Working-with-PDF-Viewer | Windows Forms | Syncfusion
+title: Working-with-PDF-Viewer | WindowsForms | Syncfusion
 description: working with pdf viewer
-platform: windowsforms
+platform: WindowsForms
 control: PDF Viewer
 documentation: ug
 ---

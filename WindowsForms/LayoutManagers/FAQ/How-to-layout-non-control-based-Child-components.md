@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to layout non-control based Child components | Windows Forms | Syncfusion
+title: How to layout non-control based Child components | WindowsForms | Syncfusion
 description: how to layout non-control based child components
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
@@ -158,7 +158,7 @@ Use Step 1 to Step 5 in Form_Load event,
    ~~~
    {:.prettyprint }
 
-4. Set the FillType, WeightX, WeightY, GridPosX and GridPosY properties for the components.
+4. Set the FillType, WeightX, WeightY, GridPostX and GridPostY properties for the components.
 
 
 

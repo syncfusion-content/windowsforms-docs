@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes and Styles | Windows Forms | Syncfusion
+title: Themes and Styles | WindowsForms | Syncfusion
 description: themes and styles
-platform: windowsforms
+platform: WindowsForms
 control: Calendar
 documentation: ug
 ---

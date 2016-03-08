@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to customize the appearance of the diagonal columns? | Windows Forms | Syncfusion
+title: How to customize the appearance of the diagonal columns? | WindowsForms | Syncfusion
 description: how to customize the appearance of the diagonal columns?
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

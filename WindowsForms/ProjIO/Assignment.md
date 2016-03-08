@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Assignment | Windows Forms | Syncfusion
+title: Assignment | WindowsForms | Syncfusion
 description: assignment
-platform: windowsforms
+platform: WindowsForms
 control: ProjIO
 documentation: ug
 ---

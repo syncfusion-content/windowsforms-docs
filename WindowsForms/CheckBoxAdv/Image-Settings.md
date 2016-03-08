@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Image-Settings | Windows Forms | Syncfusion
+title: Image-Settings | WindowsForms | Syncfusion
 description: image settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

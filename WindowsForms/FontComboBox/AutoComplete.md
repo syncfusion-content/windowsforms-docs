@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoComplete | Windows Forms | Syncfusion
+title: AutoComplete | WindowsForms | Syncfusion
 description: AutoComplete
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

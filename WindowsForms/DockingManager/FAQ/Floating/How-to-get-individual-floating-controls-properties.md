@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to get individual floating controls properties | Windows Forms | Syncfusion
+title: How to get individual floating controls properties | WindowsForms | Syncfusion
 description: How to get individual floating controls properties
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
@@ -12,7 +12,7 @@ documentation: ug
 To get the x,y coordinates if it is floating
 
 1. Add a list view and a docking manager to your form.
-2. Enable the listview as a dock control.
+2. Enable the list view as a dock control.
 
    ~~~ cs
 

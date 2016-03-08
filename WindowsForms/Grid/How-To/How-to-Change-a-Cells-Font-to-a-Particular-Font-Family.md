@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-a-Cells-Font-to-a-Particular-Font-Fa | Windows Forms | Syncfusion
+title: How-to-Change-a-Cells-Font-to-a-Particular-Font-Fa | WindowsForms | Syncfusion
 description: how to change a cell's font to a particular font family
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

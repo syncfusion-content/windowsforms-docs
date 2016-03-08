@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Put-a-Cell-in-Overstrike-Mode-so-Characters | Windows Forms | Syncfusion
+title: How-to-Put-a-Cell-in-Overstrike-Mode-so-Characters | WindowsForms | Syncfusion
 description: how to put a cell in overstrike mode so characters get replaced instead of inserted as you type
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

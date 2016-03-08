@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Create-a-Multi-Select-DropDown-Grid-in-a-Ce | Windows Forms | Syncfusion
+title: How-to-Create-a-Multi-Select-DropDown-Grid-in-a-Ce | WindowsForms | Syncfusion
 description: how to create a multi-select dropdown grid in a cell
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

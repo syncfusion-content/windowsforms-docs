@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add Expression columns | Windows Forms | Syncfusion
+title: How to add Expression columns | WindowsForms | Syncfusion
 description: how to add expression columns
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

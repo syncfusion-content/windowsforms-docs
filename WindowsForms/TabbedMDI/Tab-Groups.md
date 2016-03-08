@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tab-Groups | Windows Forms | Syncfusion
+title: Tab-Groups | WindowsForms | Syncfusion
 description:  tab groups
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---

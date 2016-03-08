@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display-TextBox | Windows Forms | Syncfusion
+title: Display-TextBox | WindowsForms | Syncfusion
 description: display textbox
-platform: windowsforms
+platform: WindowsForms
 control: Calculator
 documentation: ug
 ---
@@ -18,7 +18,7 @@ _Property Table_
 <table>
 <tr>
 <th>
-Calculatorcontrol Properties</th><th>
+Calculator control Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -71,7 +71,7 @@ The behavior of the TextBox value can be controlled using the below properties.
 <table>
 <tr>
 <th>
-Calculatorcontrol Properties</th><th>
+Calculator control Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -114,7 +114,7 @@ Me.calculatorControl1.UseUserOverride = True
 
 {% seealso %}
 
-[How to customize the calculator display text area to use NumberGroupSeparator?](http://help.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
+[How to customize the calculator display text area to use NumberGroupSeparator?](http://docs.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
 
 {% endseealso %}
 

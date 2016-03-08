@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SummaryType | Windows Forms | Syncfusion
+title: SummaryType | WindowsForms | Syncfusion
 description: summarytype
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---

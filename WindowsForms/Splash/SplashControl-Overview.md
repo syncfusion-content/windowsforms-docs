@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SplashControl-Overview | Windows Forms | Syncfusion
+title: SplashControl-Overview | WindowsForms | Syncfusion
 description: splashcontrol overview
-platform: windowsforms
+platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---

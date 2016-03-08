@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Map-Points | Windows Forms | Syncfusion
+title: Map-Points | WindowsForms | Syncfusion
 description: map points
-platform: windowsforms
+platform: WindowsForms
 control: Maps
 documentation: ug
 ---

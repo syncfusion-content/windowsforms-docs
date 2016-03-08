@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-drag-the-Chart-Series-Points-at-run-time | Windows Forms | Syncfusion
+title: How-to-drag-the-Chart-Series-Points-at-run-time | WindowsForms | Syncfusion
 description: how to drag the chart series points at run time
-platform: windowsforms
+platform: WindowsForms
 control: chart
 documentation: ug
 ---

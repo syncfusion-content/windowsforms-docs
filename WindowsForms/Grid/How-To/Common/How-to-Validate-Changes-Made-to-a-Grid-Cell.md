@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Validate-Changes-Made-to-a-Grid-Cell | Windows Forms | Syncfusion
+title: How-to-Validate-Changes-Made-to-a-Grid-Cell | WindowsForms | Syncfusion
 description: how to validate changes made to a grid cell
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

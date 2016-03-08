@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Freezing-Headers | Windows Forms | Syncfusion
+title: Freezing-Headers | WindowsForms | Syncfusion
 description: freezing headers
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---

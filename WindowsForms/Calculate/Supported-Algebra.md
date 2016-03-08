@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Supported-Algebra | Windows Forms | Syncfusion
+title: Supported-Algebra | WindowsForms | Syncfusion
 description: supported algebra
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

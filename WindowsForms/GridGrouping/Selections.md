@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Selections | Windows Forms | Syncfusion
+title: Selections | WindowsForms | Syncfusion
 description: selections
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

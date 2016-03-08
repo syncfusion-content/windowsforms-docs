@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Set-the-Cell-Properties-for-a-Range-of-Cell | Windows Forms | Syncfusion
+title: How-to-Set-the-Cell-Properties-for-a-Range-of-Cell | WindowsForms | Syncfusion
 description: how to set the cell properties for a range of cells
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/windowsforms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
+Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
 
 ### Example
 

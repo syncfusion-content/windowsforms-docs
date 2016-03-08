@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grouping-Bar | Windows Forms | Syncfusion
+title: Grouping-Bar | WindowsForms | Syncfusion
 description: grouping bar
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment-Settings | Windows Forms | Syncfusion
+title: Alignment-Settings | WindowsForms | Syncfusion
 description: alignment settings
-platform: windowsforms
+platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-Calculator-control | Windows Forms | Syncfusion
+title: Creating-Calculator-control | WindowsForms | Syncfusion
 description: creating calculator control
-platform: windowsforms
+platform: WindowsForms
 control: Calculator
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Suspend-Calculations-While-a-Series-Of-Values-are-Updated | Windows Forms | Syncfusion
+title: How-To-Suspend-Calculations-While-a-Series-Of-Values-are-Updated | WindowsForms | Syncfusion
 description: how to suspend calculations while a series of values are updated?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

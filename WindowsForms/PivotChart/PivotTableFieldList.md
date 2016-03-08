@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PivotTableFieldList | Windows Forms | Syncfusion
+title: PivotTableFieldList | WindowsForms | Syncfusion
 description: pivottablefieldlist
-platform: windowsforms
+platform: WindowsForms
 control: PivotChart
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Have-Character-Casing-Settings-for-a-Cell | Windows Forms | Syncfusion
+title: How-to-Have-Character-Casing-Settings-for-a-Cell | WindowsForms | Syncfusion
 description: how to have character casing settings for a cell
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

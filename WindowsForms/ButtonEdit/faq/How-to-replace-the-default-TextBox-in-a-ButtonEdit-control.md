@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to hide a child button of a ButtonEdit control | Windows Forms | Syncfusion
+title: How to hide a child button of a ButtonEdit control | WindowsForms | Syncfusion
 description: How to hide a child button of a ButtonEdit control
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
@@ -23,7 +23,7 @@ Description</th></tr>
 <td>
 HideButton</td><td>
 Indicates whether a child button is hidden or visible. The parameters are,
-btnIndex - Specifies the index of the button.
+buttonIndex - Specifies the index of the button.
 visible - Specifies the visibility of the button. 
 It can be true or false. 
 If true, the button will be visible and if false, 

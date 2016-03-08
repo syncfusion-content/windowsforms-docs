@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Disable-Sorting-While-Record-Added | Windows Forms | Syncfusion
+title: How-to-Disable-Sorting-While-Record-Added | WindowsForms | Syncfusion
 description: how to disable sorting while record added 
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

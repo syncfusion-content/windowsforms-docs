@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-customize-QuickPanelAlignment-in-RibbonCont | Windows Forms | Syncfusion
+title: How-to-customize-QuickPanelAlignment-in-RibbonCont | WindowsForms | Syncfusion
 description: how to customize quickpanelalignment in ribboncontroladv touchstyle
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

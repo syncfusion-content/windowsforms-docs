@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Move-Groups-Upward-or-Downward-Using-Custom | Windows Forms | Syncfusion
+title: How-to-Move-Groups-Upward-or-Downward-Using-Custom | WindowsForms | Syncfusion
 description: how to move groups upward or downward using custom comparer
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

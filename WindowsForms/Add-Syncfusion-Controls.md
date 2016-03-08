@@ -2,7 +2,7 @@
 layout: post
 title: Steps to add Syncfusion Essential Windows Forms controls 
 description: Steps to Add syncfusion controls
-platform: windowsforms
+platform: WindowsForms
 control: Introduction
 documentation: ug
 ---

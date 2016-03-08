@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Area | Windows Forms | Syncfusion
+title: Chart-Area | WindowsForms | Syncfusion
 description: chart area
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---
@@ -48,7 +48,7 @@ ChartSeries.ConfigItems.FunnelItem.ShowSeriesTitle = True
 ChartSeries.ConfigItems.PyramidItem.ShowSeriesTitle = True
 
 {% endhighlight %}
-A sample which demonstrates the chartdividearea support is available in the following sample installation location.
+A sample which demonstrates the chart divide area support is available in the following sample installation location.
 
 &lt;sample installed location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Chart Divide Area
 

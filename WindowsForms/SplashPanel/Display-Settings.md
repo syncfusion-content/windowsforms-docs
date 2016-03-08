@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display-Settings | Windows Forms | Syncfusion
+title: Display-Settings | WindowsForms | Syncfusion
 description: display settings
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
@@ -381,7 +381,7 @@ Indicates whether the SplashPanel gets closed when the user clicks on it.</td></
 </table>
 
 
-When the AllowMove property is setto 'True', the user will be allowed to click within the SplashPanel and move the SplashPanel on the screen.
+When the AllowMove property is set to 'True', the user will be allowed to click within the SplashPanel and move the SplashPanel on the screen.
 
 When the AllowResize property is set to 'True', resize handles will be displayed when the user moves the mouse near the border of the SplashPanel.
 

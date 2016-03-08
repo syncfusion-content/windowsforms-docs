@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Improving-Performance | Windows Forms | Syncfusion
+title: Improving-Performance | WindowsForms | Syncfusion
 description: improving performance
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---

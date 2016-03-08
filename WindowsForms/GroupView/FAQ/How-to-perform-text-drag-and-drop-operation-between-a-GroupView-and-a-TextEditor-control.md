@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to perform text drag-and-drop operation between a GroupView and a TextEditor control | Windows Forms | Syncfusion
+title: How to perform text drag-and-drop operation between a GroupView and a TextEditor control | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-get-rowindex-given-the-record-index | Windows Forms | Syncfusion
+title: How-to-get-rowindex-given-the-record-index | WindowsForms | Syncfusion
 description: how to get rowindex given the record index
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

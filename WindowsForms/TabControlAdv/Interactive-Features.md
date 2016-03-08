@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Applying-Themes | Windows Forms | Syncfusion
+title: Applying-Themes | WindowsForms | Syncfusion
 description: interactive features
-platform: windowsforms
+platform: WindowsForms
 control: TabControlAdv 
 documentation: ug
 ---
@@ -125,12 +125,12 @@ Description</th></tr>
 <tr>
 <td>
 ShowScroll</td><td>
-Specifies whether to show the scrollbutton.</td></tr>
+Specifies whether to show the scroll button.</td></tr>
 </table>
 
-ScrollButtons can have a VS like scrollbutton-look and normal button look.
+ScrollButtons can have a VS like scroll button-look and normal button look.
 
-For VS like scrollbutton-look, the `VSLikeScrollButton` property has to be set to true.
+For VS like scroll button-look, the `VSLikeScrollButton` property has to be set to true.
 
 ![](Interactive-Features_images/Interactive-Features_img11.png)
 
@@ -174,7 +174,7 @@ Description</th></tr>
 <tr>
 <td>
 AutoScroll</td><td>
-Specifies to add a scrollbar to the tabpage. Default value is False.</td></tr>
+Specifies to add a scrollbar to the tab page. Default value is False.</td></tr>
 <tr>
 <td>
 AutoScrollMargin</td><td>
@@ -182,7 +182,7 @@ Specifies the distance to be maintained between any control that is placed insid
 <tr>
 <td>
 AutoScrollMinSize</td><td>
-Specifies the size of the tabpage, which if exceeded, would  enable scrollbars to be added.</td></tr>
+Specifies the size of the tab page, which if exceeded, would  enable scrollbars to be added.</td></tr>
 </table>
 
 

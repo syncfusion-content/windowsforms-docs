@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Drag-And-Drop | Windows Forms | Syncfusion
+title: Drag-And-Drop | WindowsForms | Syncfusion
 description: drag and drop
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -890,11 +890,11 @@ Parameter</th></tr>
 <tr>
 <td>
 ExtendSelectionTo</td><td>
-Extends the selection of the node to a specified node.SelNode - Represents a treeNodeAdv.</td></tr>
+Extends the selection of the node to a specified node.SelectionNode - Represents a treeNodeAdv.</td></tr>
 <tr>
 <td>
 ExtendSelectionTo (Overloaded)</td><td>
-SelNode - Represents a treeNodeAdv.removeCurrentMultipleSelection - Indicates whether or not any current selection should be removed.</td></tr>
+SelectionNode - Represents a treeNodeAdv.removeCurrentMultipleSelection - Indicates whether or not any current selection should be removed.</td></tr>
 </table>
 
 > Note : This method will be effective only when the SelectionMode is MultiSelectSameLevel or MultiSelectAll.
@@ -939,11 +939,11 @@ Description</th></tr>
 <tr>
 <td>
 ShouldSelectNodeOnEnter</td><td>
-Indicates whether a default node should be selected when the treeviewadv control gains focus. By default this property is true.</td></tr>
+Indicates whether a default node should be selected when the TreeViewAdv control gains focus. By default this property is true.</td></tr>
 <tr>
 <td>
 HideSelection</td><td>
-Indicates if the treeviewadv hides its selected nodes when not focussed. This should be set to false to highlight the select the nodes.</td></tr>
+Indicates if the TreeViewAdv hides its selected nodes when not focused. This should be set to false to highlight the select the nodes.</td></tr>
 </table>
 
 {% seealso %}
@@ -953,7 +953,7 @@ How to select a particular node as a first visible node?
 
 ## Mouse and Keyboard Based Selection
 
-Setting AllowKeyboardSearch property of the treeview to true, will allow the user to search for a node by typing the name of the node using the keyboard. User have to ensure that the TreeViewAdv control is focussed while searching.
+Setting AllowKeyboardSearch property of the treeview to true, will allow the user to search for a node by typing the name of the node using the keyboard. User have to ensure that the TreeViewAdv control is focused while searching.
 
 By setting the AllowMouseBasedSelection property to true, multiple nodes can be selected with mouse down and these selected nodes can be dragged.
 

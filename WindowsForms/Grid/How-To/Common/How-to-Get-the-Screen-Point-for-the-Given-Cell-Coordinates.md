@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-the-Screen-Point-for-the-Given-Cell-Coordinates | Windows Forms | Syncfusion
+title: How-to-Get-the-Screen-Point-for-the-Given-Cell-Coordinates | WindowsForms | Syncfusion
 description: how to get the screen point for the given cell coordinates
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

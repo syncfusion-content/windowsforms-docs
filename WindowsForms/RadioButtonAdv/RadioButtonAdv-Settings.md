@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RadioButtonAdv -Settings | Windows Forms | Syncfusion
+title: RadioButtonAdv -Settings | WindowsForms | Syncfusion
 description: radiobuttonAdvsettings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

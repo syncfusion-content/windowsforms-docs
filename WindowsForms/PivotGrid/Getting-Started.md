@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---
@@ -18,7 +18,7 @@ To create the PivotGrid through Visual Studio:
 
    ![](Getting-Started_images/Getting-Started_img1.png)
 
-3. Select Windows Forms Application, and then click OK.
+3. Select WindowsForms Application, and then click OK.
 4. Drag the PivotGridControl control from the Toolbox to the Design page.
 
    ![](Getting-Started_images/Getting-Started_img2.png)

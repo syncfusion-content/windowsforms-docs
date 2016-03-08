@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing-Leaf-Nodes | Windows Forms | Syncfusion
+title: Customizing-Leaf-Nodes | WindowsForms | Syncfusion
 description: customizing leaf nodes
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Highlight a Particular Node At Run time | Diagram | Windows Forms | Syncfusion
+title: How To Highlight a Particular Node At Run time | Diagram | WindowsForms | Syncfusion
 description: how to highlight a particular node at run-time
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

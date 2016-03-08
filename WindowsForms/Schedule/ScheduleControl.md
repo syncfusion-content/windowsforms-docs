@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ScheduleControl | Windows Forms | Syncfusion
+title: ScheduleControl | WindowsForms | Syncfusion
 description: schedulecontrol
-platform: windowsforms
+platform: WindowsForms
 control: Schedule
 documentation: ug
 ---

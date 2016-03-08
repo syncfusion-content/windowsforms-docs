@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How do I paint the GroupBarItem image without scaling the image | Windows Forms | Syncfusion
+title: How do I paint the GroupBarItem image without scaling the image | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

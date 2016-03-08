@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML-Renderer | Windows Forms | Syncfusion
+title: HTML-Renderer | WindowsForms | Syncfusion
 description:  html renderer
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

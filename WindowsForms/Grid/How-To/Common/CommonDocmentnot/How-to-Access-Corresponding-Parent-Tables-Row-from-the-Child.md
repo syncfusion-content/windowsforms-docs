@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Access Corresponding Parent Table's Row from the Child | Windows Forms | Syncfusion
+title: How to Access Corresponding Parent Table's Row from the Child | WindowsForms | Syncfusion
 description: How to Access Corresponding Parent Table's Row from the Child
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

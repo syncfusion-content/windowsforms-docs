@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-Binding | Windows Forms | Syncfusion
+title: Data-Binding | WindowsForms | Syncfusion
 description: data binding
-platform: windowsforms
+platform: WindowsForms
 control: PivotChart
 documentation: ug
 ---

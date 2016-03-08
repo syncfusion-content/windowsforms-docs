@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Wizard | Windows Forms | Syncfusion
+title: Chart-Wizard | WindowsForms | Syncfusion
 description: chart wizard
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---
@@ -119,11 +119,11 @@ Below are the three tabs in the Wizard for Series.
 
 
 
-Data source - The data source to connect with, can be selected using the data source page. Once the data source is selected, it will guide you through the connectivity steps. Refer [Data Binding in Chart Through Chart Wizard](http://help.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information. This topic describes data binding techniques at the design-time through Chart Wizard tools.
+Data source - The data source to connect with, can be selected using the data source page. Once the data source is selected, it will guide you through the connectivity steps. Refer [Data Binding in Chart Through Chart Wizard](http://docs.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information. This topic describes data binding techniques at the design-time through Chart Wizard tools.
 
 Series Data - Using this tab, we can change the type of the chart. Whenever an external data source is selected using the Data Source tab, XValue and YValue ComboBox will be supplied with all the column names of the external data source.
 
-Select one column for XValue and another for YValue, between which you wanted to draw the chart. Refer [Data Binding in Chart Through Chart Wizard](http://help.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information.
+Select one column for XValue and another for YValue, between which you wanted to draw the chart. Refer [Data Binding in Chart Through Chart Wizard](http://docs.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information.
 
 
 
@@ -133,7 +133,7 @@ Select one column for XValue and another for YValue, between which you wanted to
 
  {% seealso %}
 
-[Chart Series](http://help.syncfusion.com/windowsforms/chart/chart-series)
+[Chart Series](http://docs.syncfusion.com/windowsforms/chart/chart-series)
 
  {% endseealso %}
 
@@ -153,7 +153,7 @@ There are three tabs available in the wizard, for appearance settings.
 
  {% seealso %}
 
-[Appearance Settings](http://help.syncfusion.com/windowsforms/chart/chart-appearance)
+[Appearance Settings](http://docs.syncfusion.com/windowsforms/chart/chart-appearance)
 
  {% endseealso %}
 
@@ -187,7 +187,7 @@ The below properties can be set separately for x-axis and y-axis.
 
 {% seealso %}
 
-[Chart Axes](http://help.syncfusion.com/windowsforms/chart/chart-axes)
+[Chart Axes](http://docs.syncfusion.com/windowsforms/chart/chart-axes)
 
 {% endseealso %}
 
@@ -243,7 +243,7 @@ Toolbar's border, border style, border width and border color can be set through
 
 {% seealso %}
 
-[Chart Toolbar](http://help.syncfusion.com/windowsforms/chart/runtime-features#toolbars)
+[Chart Toolbar](http://docs.syncfusion.com/windowsforms/chart/runtime-features#toolbars)
 
 {% endseealso %}
 
@@ -274,6 +274,6 @@ The various properties of the chart legend such as position, alignment, orientat
 
 {% seealso %}
 
-[Chart Legend](http://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items)
+[Chart Legend](http://docs.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items)
 
 {% endseealso %}

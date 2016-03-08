@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-is-the-Difference-between-TextAlign-Horizonta | Windows Forms | Syncfusion
+title: What-is-the-Difference-between-TextAlign-Horizonta | WindowsForms | Syncfusion
 description: what is the difference between textalign, horizontalalignment, and verticalalignment?
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

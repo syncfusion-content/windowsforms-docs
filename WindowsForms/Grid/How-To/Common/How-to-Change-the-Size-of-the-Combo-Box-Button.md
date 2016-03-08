@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Size-of-the-Combo-Box-Button | Windows Forms | Syncfusion
+title: How-to-Change-the-Size-of-the-Combo-Box-Button | WindowsForms | Syncfusion
 description: how to change the size of the combo box button
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

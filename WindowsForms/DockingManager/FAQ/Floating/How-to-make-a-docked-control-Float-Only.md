@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to make a docked control Float Only | Windows Forms | Syncfusion
+title: How to make a docked control Float Only | WindowsForms | Syncfusion
 description: How to make a docked control Float Only
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---

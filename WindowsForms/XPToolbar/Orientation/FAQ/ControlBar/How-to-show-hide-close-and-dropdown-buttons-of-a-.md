@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-show--hide-close-and-dropdown-buttons-of-a- | Windows Forms | Syncfusion
+title: How-to-show--hide-close-and-dropdown-buttons-of-a- | WindowsForms | Syncfusion
 description: how to show / hide close and dropdown buttons of a floating bar in xpmenus
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

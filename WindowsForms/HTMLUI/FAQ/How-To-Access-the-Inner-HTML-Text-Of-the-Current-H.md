@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Access-the-Inner-HTML-Text-Of-the-Current-H | Windows Forms | Syncfusion
+title: How-To-Access-the-Inner-HTML-Text-Of-the-Current-H | WindowsForms | Syncfusion
 description: how to access the inner html text of the current html element in the htmlui control?
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

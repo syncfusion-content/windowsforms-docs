@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scripting | Windows Forms | Syncfusion
+title: Scripting | WindowsForms | Syncfusion
 description:  scripting
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

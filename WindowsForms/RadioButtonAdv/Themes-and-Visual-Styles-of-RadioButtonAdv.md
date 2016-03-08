@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes-and-Visual-Styles-of-RadioButtonAdv | Windows Forms | Syncfusion
+title: Themes-and-Visual-Styles-of-RadioButtonAdv | WindowsForms | Syncfusion
 description: themes and visual styles of radioButtonAdv
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

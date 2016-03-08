@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Right-To-Left-Support | Windows Forms | Syncfusion
+title: Right-To-Left-Support | WindowsForms | Syncfusion
 description: right-to-left support
-platform: windowsforms
+platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---

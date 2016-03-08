@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-the-records-are-sel | Windows Forms | Syncfusion
+title: What-are-the-events-fired-when-the-records-are-sel | WindowsForms | Syncfusion
 description: what are the events fired when the records are selected
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

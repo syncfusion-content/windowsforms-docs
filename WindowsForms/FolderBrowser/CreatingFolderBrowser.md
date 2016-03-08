@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating FolderBrowser | Windows Forms | Syncfusion
+title: Creating FolderBrowser | WindowsForms | Syncfusion
 description: creating folderbrowser
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

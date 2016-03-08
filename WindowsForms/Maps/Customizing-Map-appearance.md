@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing-Map-appearance | Windows Forms | Syncfusion
+title: Customizing-Map-appearance | WindowsForms | Syncfusion
 description: customizing map appearance
-platform: windowsforms
+platform: WindowsForms
 control: Maps
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-New-Form-Window-in-Front-of-an-Active-W | Windows Forms | Syncfusion
+title: How-to-Get-New-Form-Window-in-Front-of-an-Active-W | WindowsForms | Syncfusion
 description: how to get new form window in front of an active window while double clicking a cell
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

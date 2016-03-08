@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML-Tables | Windows Forms | Syncfusion
+title: HTML-Tables | WindowsForms | Syncfusion
 description: html tables
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

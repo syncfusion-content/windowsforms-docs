@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeNode-Features | Windows Forms | Syncfusion
+title: TreeNode-Features | WindowsForms | Syncfusion
 description: treeNode features
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -78,11 +78,11 @@ Description</th></tr>
 <tr>
 <td>
 LeftImageList</td><td>
-Indicates the imagelist that holds the images to be drawn on the left of the Node. </td></tr>
+Indicates the image list that holds the images to be drawn on the left of the Node. </td></tr>
 <tr>
 <td>
 RightImageList</td><td>
-This indicates the imagelist that holds the images to be drawn on the right of the Node.</td></tr>
+This indicates the image list that holds the images to be drawn on the right of the Node.</td></tr>
 </table>
 
 _Table_ _855_:Property Table
@@ -117,7 +117,7 @@ It is the space provided between the RightImage of the node and node.</td></tr>
 
 Setting State Images
 
-Different images can be set for expand / collapse states of the node, using StateImageList property. To apply the left open and close images, set the ClosedImgIndex and the OpenImgIndex to the indices that points to the images in the StateImageList respectively. Nodes without child can be set with a separate image using NoChildrenImageIndex.
+Different images can be set for expand / collapse states of the node, using StateImageList property. To apply the left open and close images, set the ClosedImageIndex and the OpenImageIndex to the indices that points to the images in the StateImageList respectively. Nodes without child can be set with a separate image using NoChildrenImageIndex.
 
 _Table_ _856_: _Property Table_
 
@@ -128,24 +128,24 @@ TreeViewAdv Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-ClosedImgIndex</td><td>
+ClosedImageIndex</td><td>
 It is the StateImageList index value of the image that is displayed, when a tree node is collapsed.</td></tr>
 <tr>
 <td>
-NoChildrenImgIndex</td><td>
+NoChildrenImageIndex</td><td>
 It is the StateImageList index value of the image that is displayed, when a tree node has no children.</td></tr>
 <tr>
 <td>
 NodeStateImageList</td><td>
-Indicates the imagelist with images that are displayed instead of expand / collapse button.</td></tr>
+Indicates the imageclist with images that are displayed instead of expand / collapse button.</td></tr>
 <tr>
 <td>
-OpenImgIndex</td><td>
+OpenImageIndex</td><td>
 It is the StateImageList index value of the image that is displayed, when a tree node is expanded.</td></tr>
 <tr>
 <td>
 StateImageList</td><td>
-This indicates the imagelist that holds the images to be drawn based on the state of the Node.</td></tr>
+This indicates the image list that holds the images to be drawn based on the state of the Node.</td></tr>
 </table>
 
 N> The above properties can also be set for individual nodes.
@@ -158,15 +158,15 @@ Description</th></tr>
 <tr>
 <td>
 ClosedImageIndex</td><td>
-It is the imageindex in StateImageList where the node is collapsed.</td></tr>
+It is the image index in StateImageList where the node is collapsed.</td></tr>
 <tr>
 <td>
-NoChildrenImgIndex</td><td>
-It is the imageindex indicating the image in the StateImageList where the node has no children.</td></tr>
+NoChildrenImageIndex</td><td>
+It is the image index indicating the image in the StateImageList where the node has no children.</td></tr>
 <tr>
 <td>
-OpenImgIndex</td><td>
-It is the imageindex in StateImageList where the node is expanded.</td></tr>
+OpenImageIndex</td><td>
+It is the image index in StateImageList where the node is expanded.</td></tr>
 <tr>
 <td>
 LeftStateImagePadding</td><td>
@@ -224,7 +224,7 @@ Styles Architecture
 
 When child nodes are added to a node, automatically the expand / collapse (+/-) images are set by default, to the parent node, which indicates whether the nodes are opened or closed. These default images can be replaced with custom images using NodeStateImageList property.
 
-* Images to be displayed for the expanded and collapsed nodes can be specified in the DefaultExandImageIndex and DefaultCollapseImageIndex properties respectively.
+* Images to be displayed for the expanded and collapsed nodes can be specified in the DefaultExpandImageIndex and DefaultCollapseImageIndex properties respectively.
 * Images for individual nodes can be specified in treeNodeAdv.ExpandImageIndex / treeNodeAdv.CollapseImageIndex properties. Setting these properties will override the expand / collapse image settings that is applied for the control.
 
 _Table_ _858_: _Property Table_
@@ -241,15 +241,15 @@ Indicates if the node is expanded.</td></tr>
 <tr>
 <td>
 DefaultCollapseImageIndex</td><td>
-It is the default imageindex when a tree node is collapsed.</td></tr>
+It is the default image index when a tree node is collapsed.</td></tr>
 <tr>
 <td>
 DefaultExpandImageIndex</td><td>
-It is the default imageindex when a tree node is expanded.</td></tr>
+It is the default image index when a tree node is expanded.</td></tr>
 <tr>
 <td>
 NodeStateImageList</td><td>
-Indicates the imagelist with images that are displayed instead of expand / collapse button.</td></tr>
+Indicates the image list with images that are displayed instead of expand / collapse button.</td></tr>
 </table>
 
 
@@ -265,11 +265,11 @@ Description</th></tr>
 <tr>
 <td>
 CollapseImageIndex</td><td>
-It is the imageindex for collapse button.</td></tr>
+It is the image index for collapse button.</td></tr>
 <tr>
 <td>
 ExpandImageIndex</td><td>
-It is the imageindex for expand button.</td></tr>
+It is the image index for expand button.</td></tr>
 </table>
 
 
@@ -281,7 +281,7 @@ It is the imageindex for expand button.</td></tr>
 
 
 
-N> You can customize the background of the plusminus control. Click here to know more about this.
+N> You can customize the background of the plus minus control. Click here to know more about this.
 
 {% seealso %}
 
@@ -521,7 +521,7 @@ Given below is a screen shot of this.
 
 The ShowCheckBoxes property when set will display check box for all the nodes. To apply checkbox to individual nodes, set the TreeNodeAdv.ShowCheckBox property, only for the required nodes in the NodeCollection Editor.
 
-The InteractiveCheckBoxes indicates whether the state of the parent node's checkbox is based on the checkstate of it's child nodes checkboxes. To set this for individual nodes set the InteractiveCheckBox property of the TreeNodeAdv.
+The InteractiveCheckBoxes indicates whether the state of the parent node's checkbox is based on the check state of it's child nodes checkboxes. To set this for individual nodes set the InteractiveCheckBox property of the TreeNodeAdv.
 
 _Table_ _863_:Property Table
 
@@ -537,7 +537,7 @@ Indicates if the checkbox will be shown for the nodes.</td></tr>
 <tr>
 <td>
 InteractiveCheckBoxes</td><td>
-Indicates if the state of the node's checkbox indicates the checkstate of the child node's checkboxes.</td></tr>
+Indicates if the state of the node's checkbox indicates the check state of the child node's checkboxes.</td></tr>
 </table>
 
 _Table_ _864_: _Property Table_
@@ -557,7 +557,7 @@ InteractiveCheckBox</td><td>
 Indicates if the node will have an interactive checkbox.</td></tr>
 </table>
 
-N> On Changing the checkstate of the checkbox, AfterInteractiveChecks event will be triggered.
+N> On Changing the check state of the checkbox, AfterInteractiveChecks event will be triggered.
 
 Tristate CheckBox Settings
 
@@ -646,7 +646,7 @@ Indicates the color of the option button in the selected state.</td></tr>
 <tr>
 <td>
 ShowOptionButton</td><td>
-Indicates if the optionbutton of the node is visible.</td></tr>
+Indicates if the option button of the node is visible.</td></tr>
 <tr>
 <td>
 OptionButtonColor</td><td>

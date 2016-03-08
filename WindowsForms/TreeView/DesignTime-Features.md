@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DesignTime-Features | Windows Forms | Syncfusion
+title: DesignTime-Features | WindowsForms | Syncfusion
 description: designTime features
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -17,7 +17,7 @@ TaskWindow can be accessed using smart tag.
 
 
 
-The above window lets you open the NodeCollection Editor, modify the appearance settings, assign imagelists, enable options like editing the node text, load on demand, owner draw nodes and HotTracking properties. It also lets you set the layout settings for the control.
+The above window lets you open the NodeCollection Editor, modify the appearance settings, assign image lists, enable options like editing the node text, load on demand, owner draw nodes and HotTracking properties. It also lets you set the layout settings for the control.
 
 ## Context Menu at Design time
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Adding GroupView to GroupBar | Windows Forms | Syncfusion
+title: Adding GroupView to GroupBar | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

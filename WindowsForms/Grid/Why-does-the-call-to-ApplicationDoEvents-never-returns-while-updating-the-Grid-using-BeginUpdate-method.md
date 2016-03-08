@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Why-does-the-call-to-ApplicationDoEvents-never-returns-while-updating-the-Grid-using-BeginUpdate-method | Windows Forms | Syncfusion
+title: Why-does-the-call-to-ApplicationDoEvents-never-returns-while-updating-the-Grid-using-BeginUpdate-method | WindowsForms | Syncfusion
 description: why does the call to application.doevents never returns while updating the grid using beginupdate() method
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

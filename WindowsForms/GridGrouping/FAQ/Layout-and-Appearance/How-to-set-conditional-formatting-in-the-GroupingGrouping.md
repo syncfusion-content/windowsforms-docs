@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-conditional-formatting-in-the-GroupingG | Windows Forms | Syncfusion
+title: How-to-set-conditional-formatting-in-the-GroupingG | WindowsForms | Syncfusion
 description: how to set conditional formatting in the groupinggrid
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

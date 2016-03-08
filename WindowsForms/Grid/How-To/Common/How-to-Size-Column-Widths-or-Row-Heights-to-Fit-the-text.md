@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Size-Column-Widths-or-Row-Heights-to-Fit-the-text | Windows Forms | Syncfusion
+title: How-to-Size-Column-Widths-or-Row-Heights-to-Fit-the-text | WindowsForms | Syncfusion
 description: how to size column widths or row heights to fit the text
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

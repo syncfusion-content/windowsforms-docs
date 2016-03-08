@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Create-a-Cell-that-contains-Hypertext-Link- | Windows Forms | Syncfusion
+title: How-to-Create-a-Cell-that-contains-Hypertext-Link- | WindowsForms | Syncfusion
 description: how to create a cell that contains hypertext link along with different formatted texts
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

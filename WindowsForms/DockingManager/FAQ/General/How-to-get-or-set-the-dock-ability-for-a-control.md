@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to get or set the dock ability for a control | Windows Forms | Syncfusion
+title: How to get or set the dock ability for a control | WindowsForms | Syncfusion
 description: How to get or set the dock ability for a control
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---

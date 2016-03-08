@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-add-custom-TrendLine-in-Chart | Windows Forms | Syncfusion
+title: How-to-add-custom-TrendLine-in-Chart | WindowsForms | Syncfusion
 description: how to add custom trendline in chart
-platform: windowsforms
+platform: WindowsForms
 control: chart
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Popup-MenuContext-MenuXPMenu-Bars | Windows Forms | Syncfusion
+title: Popup-MenuContext-MenuXPMenu-Bars | WindowsForms | Syncfusion
 description: popup menucontext menuxpmenu bars
-platform: windowsforms
+platform: WindowsForms
 control: Popup-MenuContext-MenuXPMenu-Bars
 documentation: ug
 ---
@@ -42,8 +42,8 @@ This is a horizontal menu that appears on the bottom of a window and has the Bar
 
 {% seealso %}
 
-[Bar Items](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items), 
-[BarManagers](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#barmanagers),
+[Bar Items](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items), 
+[BarManagers](http://docs.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#barmanagers),
 Bar Styles
 
 Toolbar Properties
@@ -289,7 +289,7 @@ A ParentBarItem represents a submenu (drop-down menu) which can display one or m
 
 #### Behavior Settings
 
-The following propertieslet you control the behavior of the ParentBarItem.
+The following properties let you control the behavior of the ParentBarItem.
 
 _Table_ _472__: Property Table_
 
@@ -337,7 +337,7 @@ Gets or sets padding for items.</td></tr>
 <tr>
 <td>
 ScrollingSpeed</td><td>
-Specifies the scrollingspeed for the displayed child menu items.</td></tr>
+Specifies the scrolling speed for the displayed child menu items.</td></tr>
 <tr>
 <td>
 ScrollOnMouseMove</td><td>
@@ -438,7 +438,7 @@ Enables automatic expansion of the partial menus into full menus after a delay.<
 <tr>
 <td>
 UsePartialMenus</td><td>
-Enables or disables partial menus mode in submenus.</td></tr>
+Enables or disables partial menus mode in submenu.</td></tr>
 <tr>
 <td>
 PartialMenusResetDelay</td><td>
@@ -1269,7 +1269,7 @@ Indicates the ImageList.</td></tr>
 </table>
 
 
-By selecting the imagelist using Imagelist property and choosing the index of the image through ImageIndex property, we can display images. The images can also be directly set by using the Image property.
+By selecting the image list using Image list property and choosing the index of the image through ImageIndex property, we can display images. The images can also be directly set by using the Image property.
 
 {% highlight c# %}
 
@@ -1359,7 +1359,7 @@ Setting images for bar items when it is pressed
 
 You can set the image for the bar item when it is pressed. You need to associate the corresponding ImageList to the PressedImageList property of bar item and you can set the image index using PressedImageIndex property. Similarly you can associate ImageListAdv with PressedImageListAdv property.
 
-N> It is required to set image to Baritem before it is pressed.
+N> It is required to set image to Bar item before it is pressed.
 
 {% highlight C# %}
 
@@ -1444,7 +1444,7 @@ Me.barItem2.TextAlignment = Syncfusion.Windows.Forms.Tools.XPMenus.TextAlignment
 ![](Bar-Items_images/Bar-Items_img47.jpeg)
 
 
-N> We can also change the text color for the Baritems using_ MenuColors.SelTextColor _property.
+N> We can also change the text color for the Bar items using MenuColors.SelTextColor property.
 
 {% seealso %}
 
@@ -1877,11 +1877,11 @@ N> The editing option for the bar item text at run time can be disabled by setti
 ![](Advanced-Options_images/Advanced-Options_img4.jpeg)
 
 
- Image Icon Option of a Baritem for CustomizingPopupMenu
+ Image Icon Option of a Bar item for CustomizingPopupMenu
 
-ChangeImage option is added in CustomizingPopupMenu. Baritem’s image can be changed using ChangeImage option.
+ChangeImage option is added in CustomizingPopupMenu. Bar item’s image can be changed using ChangeImage option.
 
-1. Right click at the baritem during runtime customization.
+1. Right click at the bar item during runtime customization.
 
    N>  CustomizingPopupMenu appears.
 
@@ -1891,7 +1891,7 @@ ChangeImage option is added in CustomizingPopupMenu. Baritem’s image can be ch
 2. Click ChangeImage 
    N> File Dialog Opens.
 
-3. You can select any image for the baritem using this dialog.
+3. You can select any image for the bar item using this dialog.
 
 ### Deleting a Bar Item
 
@@ -1914,7 +1914,7 @@ Description</th></tr>
 <tr>
 <td>
 Remove</td><td>
-Removes the first occurrence of the specific object.{{ '_obj_'  | markdownify }}- System.object to remove from System.Collections.Arraylist.</td></tr>
+Removes the first occurrence of the specific object.{{ '_obj_'  | markdownify }}- System.object to remove from System.Collections.ArrayList.</td></tr>
 <tr>
 <td>
 RemoveAt</td><td>
