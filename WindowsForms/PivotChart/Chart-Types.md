@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Types | Windows Forms | Syncfusion
+title: Chart-Types | WindowsForms | Syncfusion
 description: chart types
-platform: windowsforms
+platform: WindowsForms
 control: PivotChart
 documentation: ug
 ---

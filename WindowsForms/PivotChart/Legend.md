@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Legend | Windows Forms | Syncfusion
+title: Legend | WindowsForms | Syncfusion
 description: legend
-platform: windowsforms
+platform: WindowsForms
 control: PivotChart
 documentation: ug
 ---

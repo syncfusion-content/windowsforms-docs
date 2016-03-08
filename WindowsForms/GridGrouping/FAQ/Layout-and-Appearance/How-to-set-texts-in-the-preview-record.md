@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-texts-in-the-preview-record | Windows Forms | Syncfusion
+title: How-to-set-texts-in-the-preview-record | WindowsForms | Syncfusion
 description: how to set texts in the preview record
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

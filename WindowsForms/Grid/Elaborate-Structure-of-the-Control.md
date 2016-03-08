@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Elaborate-Structure-of-the-Control | Windows Forms | Syncfusion
+title: Elaborate-Structure-of-the-Control | WindowsForms | Syncfusion
 description: elaborate structure of the control
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

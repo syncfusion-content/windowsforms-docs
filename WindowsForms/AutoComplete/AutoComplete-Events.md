@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoComplete Events | Windows Forms | Syncfusion
+title: AutoComplete Events | WindowsForms | Syncfusion
 description: AutoComplete Events
-platform: windowsforms
+platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
@@ -59,7 +59,7 @@ Occurs when the target control of the AutoComplete control changes.</td></tr>
 
 AutoCompleteItemSelected Event is raised, when you select a new item, when the AutoComplete mode is set to AutoSuggest.
 
-This event is discussed in [External Datasource](http://help.syncfusion.com/windowsforms/autocomplete/datasource#external-datasource) topic.
+This event is discussed in [External Datasource](http://docs.syncfusion.com/windowsforms/autocomplete/datasource#external-datasource) topic.
 
 ## BeforeAddItem Event
 

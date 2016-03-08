@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to display context menu of a docked control at a specified point | Windows Forms | Syncfusion
+title: How to display context menu of a docked control at a specified point | WindowsForms | Syncfusion
 description: How to display context menu of a docked control at a specified point
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---

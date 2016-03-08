@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPTaskBar Events | Windows Forms | Syncfusion
+title: XPTaskBar Events | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---

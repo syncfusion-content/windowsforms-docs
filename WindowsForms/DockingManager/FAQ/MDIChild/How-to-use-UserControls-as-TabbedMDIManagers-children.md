@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to use UserControls as TabbedMDIManager’s children | Windows Forms | Syncfusion
+title: How to use UserControls as TabbedMDIManager’s children | WindowsForms | Syncfusion
 description: How to use UserControls as TabbedMDIManager’s children
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
@@ -16,7 +16,7 @@ documentation: ug
 
 
 
-N> Set the IsMdiContainer property of the form to true. Otherwise this will not work.
+N> Set the IsMdIContainer property of the form to true. Otherwise this will not work.
 
 
 {% highlight C# %}

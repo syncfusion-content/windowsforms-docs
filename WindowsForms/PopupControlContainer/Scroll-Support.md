@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scroll Support | Windows Forms | Syncfusion
+title: Scroll Support | WindowsForms | Syncfusion
 description: Scroll Support
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

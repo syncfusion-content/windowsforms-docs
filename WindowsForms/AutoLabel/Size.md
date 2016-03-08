@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Size | Windows Forms | Syncfusion
+title: Size | WindowsForms | Syncfusion
 description: Size
-platform: windowsforms
+platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---

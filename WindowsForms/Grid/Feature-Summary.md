@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Feature-Summary | Windows Forms | Syncfusion
+title: Feature-Summary | WindowsForms | Syncfusion
 description: feature summary
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

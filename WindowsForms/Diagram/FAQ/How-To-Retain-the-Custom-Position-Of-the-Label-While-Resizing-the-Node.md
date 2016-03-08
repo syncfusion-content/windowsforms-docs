@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Retain the Custom Position Of the Label Whi | Diagram | Windows Forms | Syncfusion
+title: How To Retain the Custom Position Of the Label Whi | Diagram | WindowsForms | Syncfusion
 description: how to retain the custom position of the label while resizing the node
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

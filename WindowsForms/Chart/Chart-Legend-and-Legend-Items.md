@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart-Legend-and-Legend-Items | Windows Forms | Syncfusion
+title: Chart-Legend-and-Legend-Items | WindowsForms | Syncfusion
 description: chart legend and legend items
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Stop-Errors-Thrown-when-Pasting-Larger-Clipboard-contents-in-Griddataboundgrid | Windows Forms | Syncfusion
+title: How-to-Stop-Errors-Thrown-when-Pasting-Larger-Clipboard-contents-in-Griddataboundgrid | WindowsForms | Syncfusion
 description: how to stop errors thrown when pasting larger clipboard contents in griddataboundgrid
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

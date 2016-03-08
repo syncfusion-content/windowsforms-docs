@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeMap-Layout | Windows Forms | Syncfusion
+title: TreeMap-Layout | WindowsForms | Syncfusion
 description: treeMap layout
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

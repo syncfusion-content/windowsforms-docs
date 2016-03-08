@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RowPivots-Support-in-PivotGrid | Windows Forms | Syncfusion
+title: RowPivots-Support-in-PivotGrid | WindowsForms | Syncfusion
 description: rowpivots support in pivotgrid.
-platform: windowsforms
+platform: WindowsForms
 control: PivotGrid
 documentation: ug
 ---

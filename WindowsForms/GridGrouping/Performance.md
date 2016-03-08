@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Performance | Windows Forms | Syncfusion
+title: Performance | WindowsForms | Syncfusion
 description: performance
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

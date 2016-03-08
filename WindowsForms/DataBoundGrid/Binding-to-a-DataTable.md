@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Binding-to-a-DataTable | Windows Forms | Syncfusion
+title: Binding-to-a-DataTable | WindowsForms | Syncfusion
 description: binding to a datatable
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

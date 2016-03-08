@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
+title: Features | WindowsForms | Syncfusion
 description: features
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap
 documentation: ug
 ---

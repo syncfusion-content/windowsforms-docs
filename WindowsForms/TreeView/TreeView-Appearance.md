@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeView-Appearance | Windows Forms | Syncfusion
+title: TreeView-Appearance | WindowsForms | Syncfusion
 description: treeview appearance
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -29,7 +29,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundColor</td><td>
-Indicates the background color of the control. It provides options to set style, backcolor, forecolor, gradientcolor and gradient styles.</td></tr>
+Indicates the background color of the control. It provides options to set style, back color, fore color, gradient color and gradient styles.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -224,11 +224,11 @@ Paints the background of the selected node.</td></tr>
 <tr>
 <td>
 InactiveSelectedNodeBackground</td><td>
-Indicates the background of the selected node when the control is not focussed.</td></tr>
+Indicates the background of the selected node when the control is not focused.</td></tr>
 <tr>
 <td>
 InactiveSelectedNodeForeColor</td><td>
-Indicates the text color of the selected node when not focussed.</td></tr>
+Indicates the text color of the selected node when not focused.</td></tr>
 </table>
 
 
@@ -402,7 +402,7 @@ Description</th></tr>
 <tr>
 <td>
 SelectedNodeForeColor</td><td>
-Indicates the forecolor of the node that is selected.</td></tr>
+Indicates the fore color of the node that is selected.</td></tr>
 </table>
 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Place a Checkbox in a Header Cell | Windows Forms | Syncfusion
+title: How to Place a Checkbox in a Header Cell | WindowsForms | Syncfusion
 description: How to Place a Checkbox in a Header Cell
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

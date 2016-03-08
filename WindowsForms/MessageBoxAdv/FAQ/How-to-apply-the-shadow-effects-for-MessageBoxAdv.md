@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-apply-the-shadow-effects-for-MessageBoxAdv | Windows Forms | Syncfusion
+title: How-to-apply-the-shadow-effects-for-MessageBoxAdv | WindowsForms | Syncfusion
 description: how to apply the shadow effects for messageboxadv?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

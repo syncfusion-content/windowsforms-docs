@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating AutoLabel | Windows Forms | Syncfusion
+title: Creating AutoLabel | WindowsForms | Syncfusion
 description: Creating AutoLabel
-platform: windowsforms
+platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---

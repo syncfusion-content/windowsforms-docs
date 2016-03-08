@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RunTime-Features | Windows Forms | Syncfusion
+title: RunTime-Features | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---

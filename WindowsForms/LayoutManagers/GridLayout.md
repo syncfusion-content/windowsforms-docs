@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GridLayout | Windows Forms | Syncfusion
+title: GridLayout | WindowsForms | Syncfusion
 description: gridlayout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---

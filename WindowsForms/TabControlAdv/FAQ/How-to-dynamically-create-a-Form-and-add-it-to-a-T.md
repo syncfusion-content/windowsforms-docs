@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-dynamically-create-a-Form-and-add-it-to-a-T | Windows Forms | Syncfusion
+title: How-to-dynamically-create-a-Form-and-add-it-to-a-T | WindowsForms | Syncfusion
 description: how to dynamically create a form and add it to a tab
-platform: windowsforms
+platform: WindowsForms
 control: TabsPackage
 documentation: ug
 ---

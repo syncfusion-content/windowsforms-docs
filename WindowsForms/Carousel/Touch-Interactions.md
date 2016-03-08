@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Touch-Interactions | Windows Forms | Syncfusion
+title: Touch-Interactions | WindowsForms | Syncfusion
 description: touch interactions
-platform: windowsforms
+platform: WindowsForms
 control: Carousel
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-enable-or-disable-Grouping-in-MultiSelectionComboBox-at-Runtime | Windows Forms | Syncfusion
+title: How-to-enable-or-disable-Grouping-in-MultiSelectionComboBox-at-Runtime | WindowsForms | Syncfusion
 description: how to enable or disable grouping in multiselectioncombobox at runtime
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Runtime-Features | Windows Forms | Syncfusion
+title: Runtime-Features | WindowsForms | Syncfusion
 description: runtime features
-platform: windowsforms
+platform: WindowsForms
 control: Edit
 documentation: ug
 ---
@@ -1139,7 +1139,7 @@ _My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Sam
 
 
 
-### IntelliPrompt Features
+### IntellijPrompt Features
 
 This section covers the following topics:
 
@@ -1396,7 +1396,7 @@ The preceding code has to be placed within the <lexems> section of the configura
 
 #### AutoCompleteSingleLexem
 
-The AutoCompleteSingleLexem property indicates whether the Context Choice list gets autocompleted when a single lexem remains in the list.
+The AutoCompleteSingleLexem property indicates whether the Context Choice list gets auto completed when a single lexem remains in the list.
 
 
 
@@ -1742,7 +1742,7 @@ This event is raised when a Context Choice list item is selected.</td></tr>
 <tr>
 <td>
 ContextChoiceSelectedTextInsert</td><td>
-This event is raised when the editor is about to insert selected Context Choice item to the text. Action can be cancelled.</td></tr>
+This event is raised when the editor is about to insert selected Context Choice item to the text. Action can be canceled.</td></tr>
 </table>
 
 
@@ -2324,7 +2324,7 @@ End Sub
 
 If you wish to do some advanced customization in the Context Prompt feature, like highlighting the current parameter to be input in bold, you can use the ContextPromptOpen and ContextPromptUpdate events.
 
-For example, add the bolded items in the ContextPromptOpen event handler. The indices for the exact position of the text that needs to be bolded has to be manually calculated and specified along with some text information associated with that particular argument. The following code snippet illustrates this.
+For example, add the bold items in the ContextPromptOpen event handler. The indices for the exact position of the text that needs to be bold has to be manually calculated and specified along with some text information associated with that particular argument. The following code snippet illustrates this.
 
 
 
@@ -2428,7 +2428,7 @@ item = e.AddPrompt("Control.Items.Add(string text, string tooltipText)", "Specif
 
 {% endhighlight %}
 
-Select the items that should be bolded in the ContextPromptUpdate event handler. The following code snippet illustrates this.
+Select the items that should be bold in the ContextPromptUpdate event handler. The following code snippet illustrates this.
 
 {% highlight c# %}
 
@@ -2862,8 +2862,8 @@ Sets the cursor that is displayed when the mouse pointer is over the control. Th
 <li> IBeam</li>
 <li> No</li>
 <li> NoMove2D</li>
-<li> NoMoveHoriz</li>
-<li> NoMoveVert</li>
+<li> NoMoveHorizon</li>
+<li> NoMoveVertical</li>
 <li> PanEast</li>
 <li> PanNE</li>
 <li> PanNorth</li>
@@ -2948,9 +2948,9 @@ A sample demonstrating the Custom Cursor feature is available in the below sampl
 
 _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-#### Intellimouse Scrolling
+#### Intellijmouse Scrolling
 
-Essential Edit provides excellent support for viewport navigation including intellimouse scrolling. Commonly used keyboard navigation functions like PAGE UP/PAGE DOWN keys, ARROW keys, and CTRL+ARROW keys are fully supported by Essential Edit.
+Essential Edit provides excellent support for viewport navigation including intellijmouse scrolling. Commonly used keyboard navigation functions like PAGE UP/PAGE DOWN keys, ARROW keys, and CTRL+ARROW keys are fully supported by Essential Edit.
 
 
 
@@ -2971,7 +2971,7 @@ Some of the intellisense features.
 
 The Edit Control fully supports the file drop functionality.Any text file can be dragged onto the Edit Control, which then displays the contents of the file, as if the file had been opened with the Edit Control.
 
-The Edit Control also supports the text drag-and-dropfunctionality. In other words, you can drag a piece of text from one region in the Edit Control to another. You can also drag text from other editor controls like the RichTextBox onto the Edit Control. These features are supported out of the box, and no explicit handling of drag-and-drop operations are required.
+The Edit Control also supports the text drag-and-drop functionality. In other words, you can drag a piece of text from one region in the Edit Control to another. You can also drag text from other editor controls like the RichTextBox onto the Edit Control. These features are supported out of the box, and no explicit handling of drag-and-drop operations are required.
 
 Make sure to set the AllowDrop property of the Edit Control to True for this purpose.
 

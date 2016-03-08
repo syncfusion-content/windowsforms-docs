@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calculate-functions | Windows Forms | Syncfusion
+title: Calculate-functions | WindowsForms | Syncfusion
 description: calculate functions
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Column | Windows Forms | Syncfusion
+title: How-to-Change-the-Backcolor-of-a-Column | WindowsForms | Syncfusion
 description: how to change the backcolor of a column
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-The GridControl.ColStyles collection contains [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) objects that provide column style settings for the GridControl. Changing the properties on a particular column style will affect all the cells in that row (unless a particular cell has a more specific style setting, like a [cell style](/windowsforms/Grid/Cell-Style-Architecture#properties), applied).
+The GridControl.ColStyles collection contains [GridStyleInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) objects that provide column style settings for the GridControl. Changing the properties on a particular column style will affect all the cells in that row (unless a particular cell has a more specific style setting, like a [cell style](/WindowsForms/Grid/Cell-Style-Architecture#properties), applied).
 
 
 ### Example

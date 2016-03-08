@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Get the Individual Docked control's Properties | Windows Forms | Syncfusion
+title: How to Get the Individual Docked control's Properties | WindowsForms | Syncfusion
 description: How to Get the Individual Docked control's Properties
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
@@ -31,8 +31,8 @@ Me.dockingManager1.IsFloating(this.listBox1);
 
 ### To get the Dock location
 
-1. Add a listview and a docking manager in your form.
-2. Enable the listview as a docked control.
+1. Add a list view and a docking manager in your form.
+2. Enable the list view as a docked control.
 
    ~~~ cs
    
@@ -102,6 +102,6 @@ Me.dockingManager1.IsFloating(this.listBox1);
 
 4. Just before you close a docked / floating control, access the control’s parent and cast this to type Syncfusion.Windows.Forms.Tools.DockHost. 
 5. Now access the DockHost's InternalController and get it’s current serialization info by using the GetSerCurrInfo() method. This will fetch an object of type Syncfusion.Windows.Forms.Tools.DockInfo. The DockInfo.DockingStyle member gives the dock position of the particular control with respect to the host form and the DockInfo.rcDockArea member returns the control bounds. 
-6. If the control is floating, then DockingStyle will be equal to Syncfusion.Windows.Forms.Tools.DockingStyle.Fill. You can serialize this information against the control’s name and later upon loading, appropriately use either the DockingManager.DockControl() / FloatControl() method, based on the serialized DockingStyle / rcbounds values, to set the control’s dock state.
+6. If the control is floating, then DockingStyle will be equal to Syncfusion.Windows.Forms.Tools.DockingStyle.Fill. You can serialize this information against the control’s name and later upon loading, appropriately use either the DockingManager.DockControl() / FloatControl() method, based on the serialized DockingStyle / Rectanglebounds values, to set the control’s dock state.
 
 

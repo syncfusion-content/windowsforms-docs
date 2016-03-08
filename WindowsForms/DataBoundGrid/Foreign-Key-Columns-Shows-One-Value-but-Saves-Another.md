@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Foreign-Key-Columns-Shows-One-Value-but-Saves-Another | Windows Forms | Syncfusion
+title: Foreign-Key-Columns-Shows-One-Value-but-Saves-Another | WindowsForms | Syncfusion
 description: foreign key columns shows one value but saves another
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

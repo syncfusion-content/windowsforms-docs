@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Get-the-Position-of-a-Row-in-the-DataSource | Windows Forms | Syncfusion
+title: How-to-Get-the-Position-of-a-Row-in-the-DataSource | WindowsForms | Syncfusion
 description: how to get the position of a row in the datasource from the current record
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multiple-Headers | Windows Forms | Syncfusion
+title: Multiple-Headers | WindowsForms | Syncfusion
 description: multiple headers
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

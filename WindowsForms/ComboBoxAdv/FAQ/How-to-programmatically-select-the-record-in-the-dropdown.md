@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-programmatically-select-the-record-in-the-d | Windows Forms | Syncfusion
+title: How-to-programmatically-select-the-record-in-the-d | WindowsForms | Syncfusion
 description: how to programmatically select the record in the dropdown that matches the text typed in comboboxadv?
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---

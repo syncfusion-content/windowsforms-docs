@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Performance-of-DataBound-Grid | Windows Forms | Syncfusion
+title: Performance-of-DataBound-Grid | WindowsForms | Syncfusion
 description: performance of databound grid 
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

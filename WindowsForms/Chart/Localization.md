@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization | Windows Forms | Syncfusion
+title: Localization | WindowsForms | Syncfusion
 description: localization 
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---

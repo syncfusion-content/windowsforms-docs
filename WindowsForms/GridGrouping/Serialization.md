@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization | Windows Forms | Syncfusion
+title: Serialization | WindowsForms | Syncfusion
 description: serialization
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

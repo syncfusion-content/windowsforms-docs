@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Color-of-All-Headers | Windows Forms | Syncfusion
+title: How-to-Change-the-Color-of-All-Headers | WindowsForms | Syncfusion
 description: how to change the color of all headers
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

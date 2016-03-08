@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-apply-grouping-properties-for-a-particular- | Windows Forms | Syncfusion
+title: How-to-apply-grouping-properties-for-a-particular- | WindowsForms | Syncfusion
 description: how to apply grouping properties for a particular column
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

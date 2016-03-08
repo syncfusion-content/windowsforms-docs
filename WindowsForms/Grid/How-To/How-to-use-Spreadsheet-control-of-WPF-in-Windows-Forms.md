@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-use-Spreadsheet-control-of-WPF-in-Windows-F | Windows Forms | Syncfusion
+title: How-to-use-Spreadsheet-control-of-WPF-in-Windows-F | WindowsForms | Syncfusion
 description: how to use spreadsheet control of wpf in windows forms?
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

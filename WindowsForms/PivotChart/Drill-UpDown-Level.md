@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Drill-UpDown-Level | Windows Forms | Syncfusion
+title: Drill-UpDown-Level | WindowsForms | Syncfusion
 description: drill up/down level
-platform: windowsforms
+platform: WindowsForms
 control: PivotChart
 documentation: ug
 ---

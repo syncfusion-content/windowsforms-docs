@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation-and-Deployment | Windows Forms | Syncfusion
+title: Installation-and-Deployment | WindowsForms | Syncfusion
 description: installation and deployment
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---

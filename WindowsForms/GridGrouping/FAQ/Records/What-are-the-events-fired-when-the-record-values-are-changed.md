@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-the-record-values-a | Windows Forms | Syncfusion
+title: What-are-the-events-fired-when-the-record-values-a | WindowsForms | Syncfusion
 description: what are the events fired when the record values are changed
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

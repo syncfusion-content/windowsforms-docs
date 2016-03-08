@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Column-Header-Text | Windows Forms | Syncfusion
+title: How-to-Change-the-Column-Header-Text | WindowsForms | Syncfusion
 description: how to change the column header text
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

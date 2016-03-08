@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Common | Windows Forms | Syncfusion
+title: Common | WindowsForms | Syncfusion
 description: common
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

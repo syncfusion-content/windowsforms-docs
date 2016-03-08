@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Foreground-Settings | Windows Forms | Syncfusion
+title: Foreground-Settings | WindowsForms | Syncfusion
 description: foreground settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
@@ -181,7 +181,7 @@ MultipleColors</td><td>
 Specifies the array of colors used to draw the multiple gradient of the foreground.The ProgressStyle property should be set to 'MultipleGradient'.</td></tr>
 <tr>
 <td>
-StretchMultGrad</td><td>
+StretchMultiGrad</td><td>
 Determines if the multiple gradient will be stretched.</td></tr>
 </table>
 
@@ -308,7 +308,7 @@ ProgressStyle</td><td>
 Determines the foreground drawing style. It includes the options given below.Constant, Gradient, MultipleGradient, Tube, Image and System.</td></tr>
 <tr>
 <td>
-ProgressFallbackStyle</td><td>
+ProgressFallBackStyle</td><td>
 Determines the foreground drawing style when the ProgressStyle is set to 'System', provided the system doesn't support themes.</td></tr>
 </table>
 

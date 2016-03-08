@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Add a Custom Property To Diagram And Displa | Diagram | Windows Forms | Syncfusion
+title: How To Add a Custom Property To Diagram And Displa | Diagram | WindowsForms | Syncfusion
 description: how to add a custom property to diagram and display it in the property editor
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

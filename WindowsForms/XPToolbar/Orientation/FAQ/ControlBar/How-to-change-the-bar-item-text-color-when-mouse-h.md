@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-change-the-bar-item-text-color-when-mouse-h | Windows Forms | Syncfusion
+title: How-to-change-the-bar-item-text-color-when-mouse-h | WindowsForms | Syncfusion
 description: how to change the bar item text color, when mouse hovers over it
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

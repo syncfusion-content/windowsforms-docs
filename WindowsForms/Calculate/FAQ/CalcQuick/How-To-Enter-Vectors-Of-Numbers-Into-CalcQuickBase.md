@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Enter-Vectors-Of-Numbers-Into-CalcQuickBase | Windows Forms | Syncfusion
+title: How-To-Enter-Vectors-Of-Numbers-Into-CalcQuickBase | WindowsForms | Syncfusion
 description: how to enter vectors of numbers into calcquickbase?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

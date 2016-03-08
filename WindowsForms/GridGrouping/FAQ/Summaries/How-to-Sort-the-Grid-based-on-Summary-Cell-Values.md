@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Sort-the-Grid-based-on-Summary-Cell-Values | Windows Forms | Syncfusion
+title: How-to-Sort-the-Grid-based-on-Summary-Cell-Values | WindowsForms | Syncfusion
 description: how to sort the grid based on summary cell values 
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Banner-Settings | Windows Forms | Syncfusion
+title: Banner-Settings | WindowsForms | Syncfusion
 description: banner settings
-platform: windowsforms
+platform: WindowsForms
 control: Wizard
 documentation: ug
 ---
@@ -158,7 +158,7 @@ Sets the font style for the Page Title in the Wizard Control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Sets the forecolor for the Page Title in the Wizard Control.</td></tr>
+Sets the fore color for the Page Title in the Wizard Control.</td></tr>
 </table>
 
 
@@ -212,7 +212,7 @@ Sets the font style for the Page description in the Wizard Control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Sets the forecolor for the Page description in the Wizard Control.</td></tr>
+Sets the fore color for the Page description in the Wizard Control.</td></tr>
 </table>
 
 

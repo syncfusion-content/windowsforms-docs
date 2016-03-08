@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Creating GroupBar | Windows Forms | Syncfusion
+title:  Creating GroupBar | WindowsForms | Syncfusion
 description:  Creating GroupBar
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

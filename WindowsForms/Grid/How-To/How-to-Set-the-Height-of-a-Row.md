@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Set-the-Height-of-a-Row | Windows Forms | Syncfusion
+title: How-to-Set-the-Height-of-a-Row | WindowsForms | Syncfusion
 description: how to set the height of a row
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

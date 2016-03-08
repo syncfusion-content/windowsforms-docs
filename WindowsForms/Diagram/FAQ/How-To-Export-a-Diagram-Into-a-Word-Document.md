@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Export a Diagram Into a Word Document | Diagram | Windows Forms | Syncfusion
+title: How To Export a Diagram Into a Word Document | Diagram | WindowsForms | Syncfusion
 description: how to export a diagram into a word document
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

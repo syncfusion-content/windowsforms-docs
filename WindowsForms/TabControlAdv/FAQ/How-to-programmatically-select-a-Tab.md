@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-programmatically-select-a-Tab | Windows Forms | Syncfusion
+title: How-to-programmatically-select-a-Tab | WindowsForms | Syncfusion
 description: how to programmatically select a tab
-platform: windowsforms
+platform: WindowsForms
 control: TabsPackage
 documentation: ug
 ---

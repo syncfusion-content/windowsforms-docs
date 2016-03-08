@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-use-OLD-Metro-Style-in-Grid | Windows Forms | Syncfusion
+title: How-to-use-OLD-Metro-Style-in-Grid | WindowsForms | Syncfusion
 description: how to use old metro style in grid?
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

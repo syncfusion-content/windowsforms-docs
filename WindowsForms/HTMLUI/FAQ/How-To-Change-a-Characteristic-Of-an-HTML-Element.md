@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Change-a-Characteristic-Of-an-HTML-Element- | Windows Forms | Syncfusion
+title: How-To-Change-a-Characteristic-Of-an-HTML-Element- | WindowsForms | Syncfusion
 description: how to change a characteristic of an html element before it is displayed?
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

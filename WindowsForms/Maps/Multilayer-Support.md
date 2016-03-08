@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multilayer-Support | Windows Forms | Syncfusion
+title: Multilayer-Support | WindowsForms | Syncfusion
 description: multilayer support
-platform: windowsforms
+platform: WindowsForms
 control: Maps
 documentation: ug
 ---

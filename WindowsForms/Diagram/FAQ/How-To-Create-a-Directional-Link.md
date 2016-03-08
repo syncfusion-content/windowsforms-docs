@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Create a Directional Link | Diagram | Windows Forms | Syncfusion
+title: How To Create a Directional Link | Diagram | WindowsForms | Syncfusion
 description: how to create a directional link
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

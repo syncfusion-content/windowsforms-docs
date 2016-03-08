@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Show-Multiple-Images-in-a-Cell | Windows Forms | Syncfusion
+title: How-to-Show-Multiple-Images-in-a-Cell | WindowsForms | Syncfusion
 description: how to show multiple images in a cell
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

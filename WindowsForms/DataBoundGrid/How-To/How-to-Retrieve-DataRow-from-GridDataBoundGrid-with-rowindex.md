@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Retrieve-DataRow-from-GridDataBoundGrid-with-rowindex | Windows Forms | Syncfusion
+title: How-to-Retrieve-DataRow-from-GridDataBoundGrid-with-rowindex | WindowsForms | Syncfusion
 description: how to retrieve datarow from griddataboundgrid with rowindex
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

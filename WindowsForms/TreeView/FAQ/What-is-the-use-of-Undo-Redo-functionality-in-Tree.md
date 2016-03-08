@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-is-the-use-of-Undo-Redo-functionality-in-TreeViewAdv-using-HistoryManager-property | Windows Forms | Syncfusion
+title: What-is-the-use-of-Undo-Redo-functionality-in-TreeViewAdv-using-HistoryManager-property | WindowsForms | Syncfusion
 description: what is the use of undo/ redo functionality in treeviewadv using historymanager property?
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

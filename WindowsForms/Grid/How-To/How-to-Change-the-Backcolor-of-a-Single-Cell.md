@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Single-Cell | Windows Forms | Syncfusion
+title: How-to-Change-the-Backcolor-of-a-Single-Cell | WindowsForms | Syncfusion
 description: how to change the backcolor of a single cell
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-The style object holds all the information that affects the cells appearance. One property contained in the style object is its [BackColor](/windowsforms/grid/cell-style-architecture#backcolor). Use a two-parameter indexer (rowIndex, colIndex) on your GridControl object to get a reference to that particular cells style, a [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) object. 
+The style object holds all the information that affects the cells appearance. One property contained in the style object is its [BackColor](/windowsforms/grid/cell-style-architecture#backcolor). Use a two-parameter indexer (rowIndex, colIndex) on your GridControl object to get a reference to that particular cells style, a [GridStyleInfo](/WindowsForms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) object. 
 
 
 ### Example

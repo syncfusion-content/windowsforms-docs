@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SplashPanel-Events | Windows Forms | Syncfusion
+title: SplashPanel-Events | WindowsForms | Syncfusion
 description: splashpanel events
-platform: windowsforms
+platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
@@ -322,7 +322,7 @@ End Sub
 
 {% endhighlight %}
 
-SplashClosedevent is raised when the SplashFormDisplayedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is displayed.
+SplashClosed event is raised when the SplashFormDisplayedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is displayed.
 
 {% highlight c# %}
 
@@ -570,7 +570,7 @@ End Sub
 
 {% endhighlight %}
 
-SplashClosedevent is raised when the SplashFormClosedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closed.
+SplashClosed event is raised when the SplashFormClosedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is closed.
 
 {% highlight c# %}
 

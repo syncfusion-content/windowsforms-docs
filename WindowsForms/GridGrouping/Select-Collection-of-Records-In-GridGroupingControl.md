@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Select-Collection-of-Records-In-GridGroupingControl | Windows Forms | Syncfusion
+title: Select-Collection-of-Records-In-GridGroupingControl | WindowsForms | Syncfusion
 description: select collection of records in gridgroupingcontrol
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

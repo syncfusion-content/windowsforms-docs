@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-options-in-the-summary-columns | Windows Forms | Syncfusion
+title: What-are-the-options-in-the-summary-columns | WindowsForms | Syncfusion
 description: what are the options in the summary columns
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

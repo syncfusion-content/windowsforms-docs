@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: QTP
 documentation: ug
 ---
@@ -33,7 +33,7 @@ Essential QuickTest Professional contains custom libraries, that help HP QuickTe
 
 The custom libraries allow Syncfusion controls to be used as a native object inside the QTP testing environment and enable testing of applications in QTP. Essential QuickTest Professional helps you perform regression test on your application containing Syncfusion controls and thereby increase the reliability of the end product. The following chapters demonstrate the usage of the custom library in QTP.
 
-Essential QuickTest Professional comes with numerous samples as well as extensive documentation to guide you step-by-step. This user guide provides detailed information on the features and functionalities of ssential QuickTest Professional and is organized in the following order:
+Essential QuickTest Professional comes with numerous samples as well as extensive documentation to guide you step-by-step. This user guide provides detailed information on the features and functionalities of essential QuickTest Professional and is organized in the following order:
 
 
 

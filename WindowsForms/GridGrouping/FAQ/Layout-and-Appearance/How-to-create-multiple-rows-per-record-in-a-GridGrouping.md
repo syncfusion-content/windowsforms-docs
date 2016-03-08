@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-create-multiple-rows-per-record-in-a-GridGr | Windows Forms | Syncfusion
+title: How-to-create-multiple-rows-per-record-in-a-GridGr | WindowsForms | Syncfusion
 description: how to create multiple rows per record in a gridgroupingcontrol
-platform: windowsforms
+platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---

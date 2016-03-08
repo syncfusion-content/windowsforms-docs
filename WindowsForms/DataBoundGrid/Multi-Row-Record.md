@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multi-Row-Record | Windows Forms | Syncfusion
+title: Multi-Row-Record | WindowsForms | Syncfusion
 description: multi row record
-platform: windowsforms
+platform: WindowsForms
 control: DataBoundGrid
 documentation: ug
 ---

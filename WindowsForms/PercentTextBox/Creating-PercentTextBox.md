@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating PercentTextBox | Windows Forms | Syncfusion
+title: Creating PercentTextBox | WindowsForms | Syncfusion
 description: Creating PercentTextBox
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 # Creating PercentTextBox
 
 
-This section will give a step-by-step procedure to design a PercentTextBox control through designer and also through programmatical approach.
+This section will give a step-by-step procedure to design a PercentTextBox control through designer and also through programming approach.
 
 ## Through Designer
 
@@ -24,7 +24,7 @@ This section will give a step-by-step procedure to design a PercentTextBox contr
 
 
 
-## Through Programmatical Approach
+## Through Programming Approach
 
 1. Declare an instance of the PercentTextBox control.
 

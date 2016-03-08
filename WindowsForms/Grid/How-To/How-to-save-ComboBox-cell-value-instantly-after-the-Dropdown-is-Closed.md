@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-save-ComboBox-cell-value-instantly-after-th | Windows Forms | Syncfusion
+title: How-to-save-ComboBox-cell-value-instantly-after-th | WindowsForms | Syncfusion
 description: how to save combobox cell value instantly after the dropdown is closed?
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

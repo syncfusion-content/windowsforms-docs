@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-improve-the-performance-of-CalcEngine | Windows Forms | Syncfusion
+title: How-to-improve-the-performance-of-CalcEngine | WindowsForms | Syncfusion
 description: how to improve the performance of calcengine ?
-platform: windowsforms
+platform: WindowsForms
 control: Calculate
 documentation: ug
 ---

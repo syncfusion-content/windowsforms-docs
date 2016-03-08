@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupView Items Settings | Windows Forms | Syncfusion
+title: GroupView Items Settings | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

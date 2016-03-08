@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Populate-the-ParentNode-and-ChildNode-for-t | Windows Forms | Syncfusion
+title: How-to-Populate-the-ParentNode-and-ChildNode-for-t | WindowsForms | Syncfusion
 description: how to populate the parentnode and childnode for the selected node programmatically
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

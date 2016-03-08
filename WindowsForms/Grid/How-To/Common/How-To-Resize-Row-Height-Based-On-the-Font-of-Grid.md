@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Resize-Row-Height-Based-On-the-Font-of-Grid | Windows Forms | Syncfusion
+title: How-To-Resize-Row-Height-Based-On-the-Font-of-Grid | WindowsForms | Syncfusion
 description: how to resize row height based on the font of grid cell content
-platform: windowsforms
+platform: WindowsForms
 control: Grid
 documentation: ug
 ---

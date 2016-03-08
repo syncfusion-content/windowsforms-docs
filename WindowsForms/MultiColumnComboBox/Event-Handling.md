@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event-Handling | Windows Forms | Syncfusion
+title: Event-Handling | WindowsForms | Syncfusion
 description: event handling
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

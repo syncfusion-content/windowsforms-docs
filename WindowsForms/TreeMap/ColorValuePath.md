@@ -1,8 +1,8 @@
 ---
 layout: post
-title: colorvaluepath | Windows Forms | Syncfusion
+title: colorvaluepath | WindowsForms | Syncfusion
 description: ColorValuePath
-platform: windowsforms
+platform: WindowsForms
 control: TreeMap 
 documentation: ug
 ---

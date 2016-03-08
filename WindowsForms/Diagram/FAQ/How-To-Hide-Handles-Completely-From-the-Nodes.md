@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How To Hide Handles Completely From the Nodes | Diagram | Windows Forms | Syncfusion
+title: How To Hide Handles Completely From the Nodes | Diagram | WindowsForms | Syncfusion
 description: how to hide handles completely from the nodes
-platform: windowsforms
+platform: WindowsForms
 control: Diagram
 documentation: ug
 ---

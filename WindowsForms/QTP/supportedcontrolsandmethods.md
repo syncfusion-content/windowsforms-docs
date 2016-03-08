@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Supported-Controls-and-Methods | Windows Forms | Syncfusion
+title: Supported-Controls-and-Methods | WindowsForms | Syncfusion
 description: supported controls and methods
-platform: windowsforms
+platform: WindowsForms
 control: QTP
 documentation: ug
 ---
@@ -82,15 +82,15 @@ SelectRange(string range, int top, int left, int bottom, int right)</td><td>
 Selects the range.</td></tr>
 <tr>
 <td>
-SetCellData(int row, int col, string str)</td><td>
+SetCellData(int row, int col, string string)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
-SetCellCheckBox(int row, int col, string str)</td><td>
+SetCellCheckBox(int row, int col, string string)</td><td>
 Sets the cell value of the check box cell.</td></tr>
 <tr>
 <td>
-SetCellRadioButton(int row, int col, string str)</td><td>
+SetCellRadioButton(int row, int col, string string)</td><td>
 Sets the cell value of the radio button cell.</td></tr>
 <tr>
 <td>
@@ -126,7 +126,7 @@ Finds the column index for the given column name, returns 0 when the search fail
 <tr>
 <td>
 string GetFormattedText(int row, int col)</td><td>
-Retrives the formatted cell format.</td></tr>
+Retrieves the formatted cell format.</td></tr>
 <tr>
 <td>
 bool IsFormulaCell(int row, int col, out string formula, out string computedValue)</td><td>
@@ -245,15 +245,15 @@ Resizes the specified rows.</td></tr>
 Selects the range.</td></tr>
 <tr>
 <td>
- SetCellData(int row, int col, string str)</td><td>
+ SetCellData(int row, int col, string string)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
- SetCellCheckBox(int row, int col, string str)</td><td>
+ SetCellCheckBox(int row, int col, string string)</td><td>
 Sets the cell value of the check box cell.</td></tr>
 <tr>
 <td>
- SetCellRadioButton(int row, int col, string str)</td><td>
+ SetCellRadioButton(int row, int col, string string)</td><td>
 Sets the cell value of the radio button cell.</td></tr>
 <tr>
 <td>
@@ -417,11 +417,11 @@ Retrieves the absolute RowIndex.</td></tr>
 <tr>
 <td>
 GetBackColor(int row)</td><td>
-Gets the backcolor of the record.</td></tr>
+Gets the back color of the record.</td></tr>
 <tr>
 <td>
 GetCellBackColor(object row, object col)</td><td>
-Gets the backcolor of the Cell.</td></tr>
+Gets the back color of the Cell.</td></tr>
 <tr>
 <td>
 GetCellData(object row, object col)</td><td>
@@ -444,7 +444,7 @@ GetColSortOrder(int col)</td><td>
 Returns the sort order of the sorted column (Ascending or Descending).</td></tr>
 <tr>
 <td>
-GetColumnName(string tablename, int colindex)</td><td>
+GetColumnName(string table name, int columnindex)</td><td>
 For a given table name and column index, the column name in which an element resides can be obtained.</td></tr>
 <tr>
 <td>
@@ -484,7 +484,7 @@ GetTableNameByLevel(int level)</td><td>
 Gets the level of the table for the given table name.</td></tr>
 <tr>
 <td>
- GroupBy(string tablename,string column, string status)</td><td>
+ GroupBy(string table name,string column, string status)</td><td>
 Defines grouping and ungrouping of specified columns.</td></tr>
 <tr>
 <td>
@@ -496,7 +496,7 @@ Raises the MouseDown.</td></tr>
 Raises the MouseDown on the RowHeader.</td></tr>
 <tr>
 <td>
- MoveColumn(string tablename, object fromColumn, object count, object target)</td><td>
+ MoveColumn(string table name, object fromColumn, object count, object target)</td><td>
 Moves a range of columns.</td></tr>
 <tr>
 <td>
@@ -520,11 +520,11 @@ IsRecordExpanded(object record)</td><td>
 Determines whether the specified record is expanded.</td></tr>
 <tr>
 <td>
- ResizeColumn(string tablename, int fromColumn, int to, int width)</td><td>
+ ResizeColumn(string table name, int fromColumn, int to, int width)</td><td>
 Resizes the specified column.</td></tr>
 <tr>
 <td>
- ResizeRow(string tablename, int fromRow, int to, int height)</td><td>
+ ResizeRow(string table name, int fromRow, int to, int height)</td><td>
 Resizes the specified rows.</td></tr>
 <tr>
 <td>
@@ -536,15 +536,15 @@ Selects the range.</td></tr>
 Selects a record for the GridGroupingControl.</td></tr>
 <tr>
 <td>
- SetCellData(object row, object col, string str)</td><td>
+ SetCellData(object row, object col, string string)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
- SetCellCheckBox(object row, object col, string str)</td><td>
+ SetCellCheckBox(object row, object col, string string)</td><td>
 Sets the cell value of the check box cell.</td></tr>
 <tr>
 <td>
- SetCellRadioButton(object row, object col, string str)</td><td>
+ SetCellRadioButton(object row, object col, string string)</td><td>
 Sets the cell value of the radio button cell.</td></tr>
 <tr>
 <td>
@@ -556,15 +556,15 @@ Sets the location of current cell.</td></tr>
 Sets the scroll position.</td></tr>
 <tr>
 <td>
- SortColumn(string tablename,object col, string sortBehavior, bool cntrl)</td><td>
+ SortColumn(string table name,object col, string sortBehavior, bool control)</td><td>
 Sorts the column.</td></tr>
 <tr>
 <td>
 SelectRecords(object row, object count)</td><td>
-Selects mutiple records for the GridGroupingControl.</td></tr>
+Selects multiple records for the GridGroupingControl.</td></tr>
 <tr>
 <td>
-ScrollToColumn(string tablename, object col)</td><td>
+ScrollToColumn(string table name, object col)</td><td>
 The grid will scroll to the given column.</td></tr>
 <tr>
 <td>
@@ -572,7 +572,7 @@ ScrollToRow(int row)</td><td>
 The grid will scroll to the given row.</td></tr>
 <tr>
 <td>
- AddNewRow(string objn)</td><td>
+ AddNewRow(string obj)</td><td>
 A new row will be added.</td></tr>
 <tr>
 <td>
@@ -664,7 +664,7 @@ The following controls are supported by Essential Tools.
 * GroupBar
 * GroupView
 * MultiColumnComboBox
-* Popupmenu
+* Popup menu
 * ProgressBarAdv
 * RadioButtonAdv
 * RibbonControlAdv
@@ -744,7 +744,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string chkState)</td><td>
+Set(string checkState)</td><td>
 The CheckState of the CheckBoxAdv.</td></tr>
 <tr>
 <td colspan = "2">
@@ -887,11 +887,11 @@ void PopupClose(object visible);</td><td>
 Interface to close the popup window.</td></tr>
 <tr>
 <td>
-void SetTodayValue(string str);</td><td>
+void SetTodayValue(string string);</td><td>
 Interface to set the today value when the today button is clicked.</td></tr>
 <tr>
 <td>
-void SetNoValue(string str);</td><td>
+void SetNoValue(string string);</td><td>
 Interface to set the null value when the None button is clicked.</td></tr>
 <tr>
 <td>
@@ -1083,7 +1083,7 @@ Restore()</td><td>
 Restores the parent form of RibbonControlAdv.</td></tr>
 <tr>
 <td>
-SelecTab(object tabItem)</td><td>
+SelectTab(object tabItem)</td><td>
 Selects the Ribbon Tab item.</td></tr>
 <tr>
 <td>
@@ -1150,7 +1150,7 @@ Selects the tab page in the TabPageAdv control.</td></tr>
 <tr>
 <td>
 RightClick(object tab)</td><td>
-Performs a rightclick on the tab page in the TabPageAdv control.</td></tr>
+Performs a right click on the tab page in the TabPageAdv control.</td></tr>
 <tr>
 <td>
 ClosePage(object tab)</td><td>
@@ -1244,7 +1244,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string chkState)</td><td>
+Set(string checkState)</td><td>
 Sets the CheckState of the CheckBox in the DateTimeAdv.</td></tr>
 <tr>
 <td>
@@ -1293,7 +1293,7 @@ Perform the drag and drop operation for the nodes in the SelectedNodes list, tha
 <tr>
 <td>
 AddToSelectedNodeList(string fullPath)</td><td>
-Adds the specifed node into selected node list during Drag over event.</td></tr>
+Adds the specified node into selected node list during Drag over event.</td></tr>
 <tr>
 <td>
 DoubleClick(string fullPath)</td><td>
@@ -1340,8 +1340,8 @@ string TraceParentRoot(string barItemText)</td><td>
 For the given text of the required menu, TraceParentRoot retrieves the full path as recoded.</td></tr>
 <tr>
 <td>
-int MenuItemPos(string ParentText, string barItemText)</td><td>
-For the given text of the required menu, MenuItemPos returns the position of the menu item.</td></tr>
+int MenuItemPost(string ParentText, string barItemText)</td><td>
+For the given text of the required menu, MenuItemPost returns the position of the menu item.</td></tr>
 </table>
 
 
@@ -1591,7 +1591,7 @@ LegendClick(int x, int y)</td><td>
 The region on the legend to be clicked.</td></tr>
 <tr>
 <td>
-SetItemCheckState(string itemtext, string checkstate)</td><td>
+SetItemCheckState(string item text, string check state)</td><td>
 Setting the legend item check box.</td></tr>
 <tr>
 <td>
@@ -1599,7 +1599,7 @@ SetLegendFloatingLocation(int x, int y)</td><td>
 The location of the legend if it is floating.</td></tr>
 <tr>
 <td>
-SetLegendNonFloatingLocation(object pos, object align);</td><td>
+SetLegendNonFloatingLocation(object post, object align);</td><td>
 The location of the fixed position in or on the QTP.</td></tr>
 <tr>
 <td>
@@ -1607,7 +1607,7 @@ SetTitleFloatingLocation(int x, int y)</td><td>
 The location of the legend if it is floating.</td></tr>
 <tr>
 <td>
-SetTitleNonFloatingLocation(object pos, object align)</td><td>
+SetTitleNonFloatingLocation(object post, object align)</td><td>
 The location of the fixed position in or on the QTP.</td></tr>
 <tr>
 <td>
@@ -1631,7 +1631,7 @@ double GetMaxYValue(int series, int point);</td><td>
 The maximum Y-value of the specified point.</td></tr>
 <tr>
 <td>
-double GetXvalue(int series, int point);</td><td>
+double GetX value(int series, int point);</td><td>
 The X-value of the specified point.</td></tr>
 <tr>
 <td>

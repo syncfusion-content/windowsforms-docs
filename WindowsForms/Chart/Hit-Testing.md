@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hit-Testing | Windows Forms | Syncfusion
+title: Hit-Testing | WindowsForms | Syncfusion
 description: hit testing
-platform: windowsforms
+platform: WindowsForms
 control: Chart
 documentation: ug
 ---
