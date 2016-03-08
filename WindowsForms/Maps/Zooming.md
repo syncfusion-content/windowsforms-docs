@@ -17,7 +17,7 @@ There are two ways to zoom the Maps. They are:
 ## Zoom with ZoomFactor 
 
 
-By changing the ZoomFactor value it is possible to Zoom the Map. If ZoomFactor value is increased then Map will be ZoomIn each time based on the ZoomFactor vaue and vice versa.
+By changing the ZoomFactor value it is possible to Zoom the Map. If ZoomFactor value is increased then Map will be ZoomIn each time based on the ZoomFactor value and vice versa.
 
 
 
