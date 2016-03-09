@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupBar Items Settings | Windows Forms | Syncfusion
+title: GroupBar Items Settings | WindowsForms | Syncfusion
 description: GroupBar Items Settings
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
@@ -122,7 +122,7 @@ Me.groupBarItem1.Image = (CType(resources.GetObject("groupBarItem1.Image"), Syst
 
 
 Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by 
-setting the ShowItemImageInHeader propertyto 'True'. 
+setting the ShowItemImageInHeader property to 'True'. 
 
 
 
@@ -186,13 +186,13 @@ Me.groupBar1.FlatLook = True
 {% endhighlight %}
 
 The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the BarHighlight 
-propertyto 'True'.
+property to 'True'.
 
 ![](Overview_images/Overview_img20.jpeg) 
 
 
 The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by 
-setting the FlatLook propertyto 'True'. 
+setting the FlatLook property to 'True'. 
 
 ![](Overview_images/Overview_img21.jpeg)
 

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Installation process for Syncfusion Essential Studio Windows Forms products
 description: Installation
-platform: windowsforms
+platform: WindowsForms
 control: Installation
 documentation: ug
 ---

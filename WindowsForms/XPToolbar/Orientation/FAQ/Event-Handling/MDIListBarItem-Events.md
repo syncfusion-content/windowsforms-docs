@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MDIListBarItem-Events | Windows Forms | Syncfusion
+title: MDIListBarItem-Events | WindowsForms | Syncfusion
 description: mdilistbaritem events
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---
@@ -21,11 +21,11 @@ Description</th></tr>
 <tr>
 <td>
 BeforeExpand</td><td>
-Triggers before the MdiListBarItem displays.</td></tr>
+Triggers before the MdIListBarItem displays.</td></tr>
 <tr>
 <td>
 AfterExpand</td><td>
-Triggers when the MdiListBarItem is displayed.</td></tr>
+Triggers when the MdIListBarItem is displayed.</td></tr>
 </table>
 
 

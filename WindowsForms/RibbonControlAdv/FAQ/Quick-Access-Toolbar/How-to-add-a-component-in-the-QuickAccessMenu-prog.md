@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-add-a-component-in-the-QuickAccessMenu-prog | Windows Forms | Syncfusion
+title: How-to-add-a-component-in-the-QuickAccessMenu-prog | WindowsForms | Syncfusion
 description: how to add a component in the quickaccessmenu programmatically?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

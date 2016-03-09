@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-HubTile-using-code-example | Windows Forms | Syncfusion
+title: How-to-add-HubTile-using-code-example | WindowsForms | Syncfusion
 description: how to add hubtile using code example?
 platform: wpf
 control: TabbedMDIPackage

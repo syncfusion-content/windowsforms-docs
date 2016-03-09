@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-prevent-drawing-highlight-for-some-nodes | Windows Forms | Syncfusion
+title: How-to-prevent-drawing-highlight-for-some-nodes | WindowsForms | Syncfusion
 description: how to prevent drawing highlight for some nodes
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

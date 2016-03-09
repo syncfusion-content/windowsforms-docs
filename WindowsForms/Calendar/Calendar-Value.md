@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calendar Value | Windows Forms | Syncfusion
+title: Calendar Value | WindowsForms | Syncfusion
 description: calendar value
-platform: windowsforms
+platform: WindowsForms
 control: Calendar
 documentation: ug
 ---

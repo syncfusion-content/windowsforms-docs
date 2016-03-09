@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to identify the docking window which is currently being closed | Windows Forms | Syncfusion
+title: How to identify the docking window which is currently being closed | WindowsForms | Syncfusion
 description: How to identify the docking window which is currently being closed
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---

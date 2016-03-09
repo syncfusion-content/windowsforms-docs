@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Collapse Expand Animation | Windows Forms | Syncfusion
+title: Collapse Expand Animation | WindowsForms | Syncfusion
 description: collapse expand animation
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---

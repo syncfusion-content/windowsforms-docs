@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Runtime Features | Windows Forms | Syncfusion
+title: Runtime Features | WindowsForms | Syncfusion
 description: Runtime Features
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

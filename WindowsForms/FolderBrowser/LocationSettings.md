@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Location Settings | Windows Forms | Syncfusion
+title: Location Settings | WindowsForms | Syncfusion
 description: location settings
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
@@ -53,13 +53,13 @@ CommonPictures,
 CommonVideo,
 Resources,
 ResourcesLocalized,
-CommonOemLinks,
+CommonOhmLinks,
 CDBurnArea,
 ComputersNearMe,
 CustomStartLocation,
 FlagPerUserInit,
 FlagNoAlias,
-FlagDontVerify,
+FlagDon'tVerify,
 FlagCreate and
 FlagMask.</td></tr>
 <tr>

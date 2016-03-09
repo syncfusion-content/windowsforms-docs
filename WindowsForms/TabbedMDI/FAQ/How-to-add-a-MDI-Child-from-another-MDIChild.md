@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-add-a-MDI-Child-from-another-MDIChild | Windows Forms | Syncfusion
+title: How-to-add-a-MDI-Child-from-another-MDIChild | WindowsForms | Syncfusion
 description: how to add a mdi child from another mdichild
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

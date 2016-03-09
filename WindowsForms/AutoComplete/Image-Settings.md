@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Image Settings | Windows Forms | Syncfusion
+title: Image Settings | WindowsForms | Syncfusion
 description: Image Settings
-platform: windowsforms
+platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
 # Image Settings
 
-You can add a dropdown item with image to the AutoComplete popup, through the AutoComplete.AddHistoryItem method. An imagelist should be associated with AutoComplete control for this purpose. Specify the item text and the image index in this method.
+You can add a dropdown item with image to the AutoComplete popup, through the AutoComplete.AddHistoryItem method. An image list should be associated with AutoComplete control for this purpose. Specify the item text and the image index in this method.
 
 <table> 
 <tr>

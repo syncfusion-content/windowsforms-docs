@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style-Sheets-CSS | Windows Forms | Syncfusion
+title: Style-Sheets-CSS | WindowsForms | Syncfusion
 description:  style sheets css
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
@@ -1125,7 +1125,7 @@ The following HTML coding shows the different methods of changing the background
 
 {% endhighlight %}
 
-The following figure shows the backcolor of the HTML document customized by using HTMLUI.
+The following figure shows the back color of the HTML document customized by using HTMLUI.
 
 
 

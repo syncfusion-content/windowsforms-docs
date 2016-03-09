@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-find-the-way-for-the-disappearance-of-the-focus-rectangle-if-the-focus-is-lost-in-the-treeviewadv | Windows Forms | Syncfusion
+title: How-to-find-the-way-for-the-disappearance-of-the-focus-rectangle-if-the-focus-is-lost-in-the-treeviewadv | WindowsForms | Syncfusion
 description: how to find the way for the disappearance of the focus rectangle if the focus is lost in the treeviewadv
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

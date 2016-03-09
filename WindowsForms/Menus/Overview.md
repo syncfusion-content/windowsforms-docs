@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
@@ -30,7 +30,7 @@ A Bar is a data structure that represents a toolbar in the XP Menus framework. A
 
 ## BarItem
 
-A BarItem is a data structure that represents a clickable item that can be used in toolbars, drop-down menus and context menus. This is analogous to a MenuItem in the .NET framework. To learn more about BarItems, [click here](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items).
+A BarItem is a data structure that represents a click able item that can be used in toolbars, drop-down menus and context menus. This is analogous to a MenuItem in the .NET framework. To learn more about BarItems, [click here](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items).
 
 ![](Overview_images/Overview_img7.jpeg)
 
@@ -46,6 +46,6 @@ A [ControlBar](/windowsforms/menus/menus-framework#detached-controlbars) is a fu
 
 ## XPToolbar
 
-An [XP Toolbar](/windowsforms/xptoolbar/overview) is a toolbar-like control with look-and-feel of the XP Menus toolbar. This toolbar can be dropped inside a commandbar. To know how to use XPToolbar in Menus, see XPToolbar topic.
+An [XP Toolbar](/windowsforms/xptoolbar/overview) is a toolbar-like control with look-and-feel of the XP Menus toolbar. This toolbar can be dropped inside a command bar. To know how to use XPToolbar in Menus, see XPToolbar topic.
 
 

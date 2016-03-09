@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Frequently-Asked-Questions | Windows Forms | Syncfusion
+title: Frequently-Asked-Questions | WindowsForms | Syncfusion
 description: frequently asked questions
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

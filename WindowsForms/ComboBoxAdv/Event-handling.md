@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event-handling | Windows Forms | Syncfusion
+title: Event-handling | WindowsForms | Syncfusion
 description: event handling
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Selection Events
 
-The events present in the ComboxBox can be applied for ComboxBoxAdv control. 
+The events present in the Comboxbox can be applied for ComboxBoxAdv control. 
 
 
 <table>

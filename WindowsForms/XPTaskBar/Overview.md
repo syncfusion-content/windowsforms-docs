@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
 # Overview
 
 The XPTaskBar control simulates the new TaskBar feature popularized in Windows XP. The XPTaskBar is the encompassing control that 
-can show one or more XPTaskBar Boxes. Each Box can in turn show user clickable command items represented by the XPTaskBar Item 
+can show one or more XPTaskBar Boxes. Each Box can in turn show user click able command items represented by the XPTaskBar Item 
 type. The box can also take a single child panel inside which you can drop any custom control. It also provides keyboard 
 navigational support.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Deployment process for Syncfusion Essential Studio Windows Forms products
 description: Deployment
-platform: windowsforms
+platform: WindowsForms
 control: Deployment
 documentation: ug
 ---

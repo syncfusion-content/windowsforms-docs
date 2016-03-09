@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboBoxAdv | Windows Forms | Syncfusion
+title: ComboBoxAdv | WindowsForms | Syncfusion
 description: comboboxadv-Overview
-platform: windowsforms overview
+platform: WindowsForms overview
 control: ComboBoxAdv
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Primitives | Windows Forms | Syncfusion
+title: Primitives | WindowsForms | Syncfusion
 description: primitives
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---

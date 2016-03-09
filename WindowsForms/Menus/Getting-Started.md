@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started | Windows Forms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Getting Started
-platform: windowsforms
+platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Creating Menus 
 
-This section will provide a step by step procedure to create a toolbar with menu items added by using the designer and by using programmatical approach in .NET application. 
+This section will provide a step by step procedure to create a toolbar with menu items added by using the designer and by using programming approach in .NET application. 
 
 ### Through Designer
 
@@ -83,14 +83,14 @@ To add a toolbar and populate it with the bar items follow the below steps.
 
 
 
-* Fill your toolbars with items by simply dragging-and-dropping the items from the Command tab into the toolbars and submenus. To fill the sub menu of the parent bar items, again drag the required bar items inside it.
+* Fill your toolbars with items by simply dragging-and-dropping the items from the Command tab into the toolbars and submenu. To fill the sub menu of the parent bar items, again drag the required bar items inside it.
 
 ![](Overview_images/Overview_img19.jpeg) 
 
 
 
 * You can drag and dock the toolbars on all four sides of the designer by dragging through the gripper on the left of the toolbar and moving them to any desired position. The toolbars can also be floated. See [Toolbar Properties](/windowsforms/xptoolbar/xptoolbar-properties) for more details.
-N> If a toolbar from the mainFrameBarManager and one (or more) from the child forms gets merged (the rules for merging are discussed in the [MDI Merging](/windowsforms/mdichildforms/mdi-merging)topic), the BarItems in the toolbar will be ordered based on their MergeOrder property
+N> If a toolbar from the mainFrameBarManager and one (or more) from the child forms gets merged (the rules for merging are discussed in the [MDI Merging](/windowsforms/mdichildforms/mdi-merging) topic), the BarItems in the toolbar will be ordered based on their MergeOrder property
 
 If this is a ChildFrameBarManager, all the toolbars (including the main menu) will be floating at design-time. This is because the child toolbars will be docked to the main form rather than to your child form during run-time, and hence, floating avoids polluting your child forms during design-time.
 

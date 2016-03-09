@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Slider-Customization | Windows Forms | Syncfusion
+title: Slider-Customization | WindowsForms | Syncfusion
 description: slider customization
-platform: windowsforms
+platform: WindowsForms
 control: ToggleButton 
 documentation: ug
 ---

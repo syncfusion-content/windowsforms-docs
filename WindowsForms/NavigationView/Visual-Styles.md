@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual-Styles | Windows Forms | Syncfusion
+title: Visual-Styles | WindowsForms | Syncfusion
 description: visual styles
-platform: windowsforms
+platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---

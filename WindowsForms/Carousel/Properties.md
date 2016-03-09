@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties  | Windows Forms | Syncfusion
+title: Properties  | WindowsForms | Syncfusion
 description: Properties 
-platform: windowsforms
+platform: WindowsForms
 control: Carousel
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to customize the color cells of the UserColors group | Windows Forms | Syncfusion
+title: How to customize the color cells of the UserColors group | WindowsForms | Syncfusion
 description: How to customize the color cells of the UserColors group
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI
 documentation: ug
 ---

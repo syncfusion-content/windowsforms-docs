@@ -2,7 +2,7 @@
 layout: post
 title: Section 508 Compilance for Syncfusion Windows Forms products
 description: Voluntary Product Accessibility Template for Syncfusion Windows Forms products
-platform: windowsforms
+platform: WindowsForms
 control: General
 documentation: ug
 ---
@@ -75,7 +75,7 @@ All Essential Studio for Windows Forms controls do not disable any accessibility
 <td>
 (c) A well-defined on-screen indication of the current focus is provided to move among interactive interface elements as the input focus changes. The focus is programmatically exposed so that Assistive Technology can track focus and focus changes.<br/><br/></td><td>
 Supported with minor exceptions<br/><br/></td><td>
-Essential Tools: Supported with minor exceptions. Controls provide a well-defined onscreen indication of the current focus that moves among interactive<br/><br/>Interface elements as the input focus changes with minor exceptions such as Docking Manager, Ribbon.<br/><br/>Essential Chart: Fully Supported.<br/><br/>Essential Diagram: Fully Supported. Also provides hover styles and selection styles that highlight the position of the focus.<br/><br/>Essential Schedule: Fully Supported.<br/><br/>Essential Edit: Fully Supported.<br/><br/></td></tr>
+Essential Tools: Supported with minor exceptions. Controls provide a well-defined on-screen indication of the current focus that moves among interactive<br/><br/>Interface elements as the input focus changes with minor exceptions such as Docking Manager, Ribbon.<br/><br/>Essential Chart: Fully Supported.<br/><br/>Essential Diagram: Fully Supported. Also provides hover styles and selection styles that highlight the position of the focus.<br/><br/>Essential Schedule: Fully Supported.<br/><br/>Essential Edit: Fully Supported.<br/><br/></td></tr>
 <tr>
 <td>
 (d) Sufficient information about user interface element including identity, operation and state of the element is available to Assistive Technology. When an image represents a program element, the information conveyed by the image must also be available in text.<br/><br/></td><td>

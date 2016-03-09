@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: gettingstarted
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

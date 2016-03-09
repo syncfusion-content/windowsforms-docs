@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-CheckBox| Windows Forms | Syncfusion
+title: Ribbon-CheckBox| WindowsForms | Syncfusion
 description:  ribbon checkbox
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripCheckBox
+# Ribbon CheckBox
 
 ToolStripCheckBox is used to select or unselect options. It provides similar set of functionalities like normal CheckBox control in Ribbon.It can be added to a ToolStripEx directly or through a panel. 
 

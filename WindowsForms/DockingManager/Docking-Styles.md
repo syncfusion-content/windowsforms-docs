@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Docking-Styles | Windows Forms | Syncfusion
+title: Docking-Styles | WindowsForms | Syncfusion
 description: docking styles
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
@@ -14,7 +14,7 @@ This section will discuss the below four docking styles.
 * Docking - Lets you dock the control on any of the four sides of the container control.
 * Tabbed Docking - Lets you tab two or more controls.
 * Floating - Floats the dockable control.
-* AutoHiding - Auto hides the dockable controls and displays as autohidden tabs.
+* AutoHiding - Auto hides the dockable controls and displays as auto hidden tabs.
 
 ## Docking
 
@@ -381,13 +381,13 @@ End Sub
 
 Docking manager provides auto hide facility to the docked control. When the auto hide button (looks like a bell) is clicked, the docked controls will be hidden, and will be placed along the side of the container control on which it was placed. When mouse is moved over it, the auto hidden control will be displayed and the control will restore its appearance when the auto hidden button is clicked again.
 
-The below image displays an autohidden docked control.
+The below image displays an auto hidden docked control.
 
  ![](Docking-Styles_images/Docking-Styles_img11.jpeg) 
 
 
 
-The below properties controls the autohiding feature of the docked controls.
+The below properties controls the auto hiding feature of the docked controls.
 
 <table>
 <tr>
@@ -401,11 +401,11 @@ Gets or sets a value indicating whether to slide back selected auto hidden contr
 <tr>
 <td>
 AutoHideInterval</td><td>
-Specifies the time interval for showing or hiding an autohidden control.</td></tr>
+Specifies the time interval for showing or hiding an auto hidden control.</td></tr>
 <tr>
 <td>
 AutoHideSelectionStyle</td><td>
-Specifies the selection style for the autohidden windows. The styles are,MouseHover - Allows the user to select an autohidden tab by mouse hovering over the tab. Click - Allows the user to select the autohidden tab by clicking on the tab.</td></tr>
+Specifies the selection style for the auto hidden windows. The styles are,MouseHover - Allows the user to select an auto hidden tab by mouse hovering over the tab. Click - Allows the user to select the auto hidden tab by clicking on the tab.</td></tr>
 </table>
 
 
@@ -436,7 +436,7 @@ Me.DockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.AutoH
 
 ### Displaying Full Caption In AutoHide Mode
 
-Create a docked window with two listbox. Dock the controls. Tab the controls and set the FullCaptionInAutoHideMode property. Setting this property to true, will display the full caption text in the auto hidden tabgroup's page. It displays full caption within the application if necessary with a scrollbar, so that end user can scroll and view the hidden tab's full caption.
+Create a docked window with two listbox. Dock the controls. Tab the controls and set the FullCaptionInAutoHideMode property. Setting this property to true, will display the full caption text in the auto hidden tab group's page. It displays full caption within the application if necessary with a scrollbar, so that end user can scroll and view the hidden tab's full caption.
 
 
 {% highlight C# %}
@@ -465,11 +465,11 @@ Me.dockingManager1.FullCaptionsInAutoHideMode = True
 
 
 
-Animation in Auto Hiding is discussed in Auto Hide Animation Speed topic and Dragging Autohidden tabs topic discusses how to drag the autohidden tabs.
+Animation in Auto Hiding is discussed in Auto Hide Animation Speed topic and Dragging Auto hidden tabs topic discusses how to drag the auto hidden tabs.
 
 {% seealso %}
 
-[Context Menu](/windowsforms/dockingmanager/runtime-features#context-menu), Animation Events, AutoHide TabContextMenu Event, How to autohide a control when an application loads
+[Context Menu](/windowsforms/dockingmanager/runtime-features#context-menu), Animation Events, AutoHide TabContextMenu Event, How to auto hide a control when an application loads
 
 {% endseealso %}
 
@@ -479,7 +479,7 @@ DockingPanel allows you to change the speed at which your docking panes are disp
 
 The speed of animation can be controlled by AnimationSpeed and AnimationStep Property. 
 
-AnimationSpeed property of the DockingManager indicates the speed of animation during auto hide or the timer interval in milli secs. AnimationStep indicates the step value for the animation. It is common to all the docked control. AnimationStep property can be implemented using the code below.
+AnimationSpeed property of the DockingManager indicates the speed of animation during auto hide or the timer interval in Milli secs. AnimationStep indicates the step value for the animation. It is common to all the docked control. AnimationStep property can be implemented using the code below.
 
 
 {% highlight C# %}
@@ -505,15 +505,15 @@ DockingManager.AnimationStep = 1000;  '(arg.Bounds.Width)
 {% endhighlight %}
 
 
-N> For a control to show animation in autohide mode, the animation step value should be more than the width of the particular hidden control.
+N> For a control to show animation in auto hide mode, the animation step value should be more than the width of the particular hidden control.
 
 ### Context Menu for AutoHidden Tabs
 
 This is discussed in [Context Menu](/windowsforms/dockingmanager/runtime-features#context-menu) topic.
 
-### Dragging Autohidden tabs
+### Dragging Auto hidden tabs
 
-The docked controls that are autohidden, can be dragged with their tabs, and can be docked or set to floating by setting EnableDragAutoHiddenTabs property to true.
+The docked controls that are auto hidden, can be dragged with their tabs, and can be docked or set to floating by setting EnableDragAutoHiddenTabs property to true.
 
 
 {% highlight C# %}

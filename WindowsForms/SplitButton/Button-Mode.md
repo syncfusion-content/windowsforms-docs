@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button-Mode | Windows Forms | Syncfusion
+title: Button-Mode | WindowsForms | Syncfusion
 description: button mode
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---
@@ -11,8 +11,8 @@ documentation: ug
 
 This feature enables you to set the button in normal or toggle mode.
 
-* Norma Mode -  Executenormal button command
-* Toggle Mode  - Executetoggle mode click event
+* Norma Mode -  Execute normal button command
+* Toggle Mode  - Execute toggle mode click event
 
 ## Setting Button Mode
 

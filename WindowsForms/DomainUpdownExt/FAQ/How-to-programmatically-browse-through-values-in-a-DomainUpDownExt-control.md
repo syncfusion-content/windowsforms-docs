@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to programmatically browse through values in a DomainUpDownExt control | Windows Forms | Syncfusion
+title: How to programmatically browse through values in a DomainUpDownExt control | WindowsForms | Syncfusion
 description: How to programmatically browse through values in a DomainUpDownExt control
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

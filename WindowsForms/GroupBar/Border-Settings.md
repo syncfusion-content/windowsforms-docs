@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Border Settings  | Windows Forms | Syncfusion
+title: Border Settings  | WindowsForms | Syncfusion
 description: Border Settings 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

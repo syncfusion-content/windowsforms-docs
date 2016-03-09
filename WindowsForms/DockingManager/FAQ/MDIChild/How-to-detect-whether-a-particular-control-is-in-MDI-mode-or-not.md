@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to detect whether a particular control is in MDI mode or not | Windows Forms | Syncfusion
+title: How to detect whether a particular control is in MDI mode or not | WindowsForms | Syncfusion
 description: How to detect whether a particular control is in MDI mode or not
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---

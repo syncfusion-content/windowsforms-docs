@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Culture Settings | Windows Forms | Syncfusion
+title: Culture Settings | WindowsForms | Syncfusion
 description: Culture Settings
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---

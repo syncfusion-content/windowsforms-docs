@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Element-Binding | Windows Forms | Syncfusion
+title: Element-Binding | WindowsForms | Syncfusion
 description: element binding
-platform: windowsforms
+platform: WindowsForms
 control: RadialMenu 
 documentation: ug
 ---

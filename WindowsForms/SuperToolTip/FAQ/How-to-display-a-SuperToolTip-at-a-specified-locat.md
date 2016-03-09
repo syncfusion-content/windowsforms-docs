@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-display-a-SuperToolTip-at-a-specified-locat | Windows Forms | Syncfusion
+title: How-to-display-a-SuperToolTip-at-a-specified-locat | WindowsForms | Syncfusion
 description: how to display a supertooltip at a specified location
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

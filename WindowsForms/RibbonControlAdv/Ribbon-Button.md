@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-Button| Windows Forms | Syncfusion
+title: Ribbon-Button| WindowsForms | Syncfusion
 description:  ribbon button
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripButton
+# Ribbon Button
 
 ToolStripButton can be added to a ToolStripEx directly or through a panel. 
 

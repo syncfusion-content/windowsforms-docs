@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overriding the Behavior of certain KeyStrokes in a DoubleTextBox | Windows Forms | Syncfusion
+title: Overriding the Behavior of certain KeyStrokes in a DoubleTextBox | WindowsForms | Syncfusion
 description: Overriding the Behavior of certain KeyStrokes in a DoubleTextBox
-platform: windowsforms
+platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
 ---

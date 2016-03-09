@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ButtonEdit Appearance | Windows Forms | Syncfusion
+title: ButtonEdit Appearance | WindowsForms | Syncfusion
 description: ButtonEdit Appearance
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
@@ -218,7 +218,7 @@ This section discusses the foreground settings available for the ButtonEdit cont
 
 Font and ForeColor
 
-The font style and the forecolor for the ButtonEdit text can be set using Font and ForeColor properties. These property settings can be overridden by TextBox.Font and TextBox.ForeColor respectively.
+The font style and the fore color for the ButtonEdit text can be set using Font and ForeColor properties. These property settings can be overridden by TextBox.Font and TextBox.ForeColor respectively.
 
 
 {%highlight c#%}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-Currency-TextBox | Windows Forms | Syncfusion
+title: Creating-Currency-TextBox | WindowsForms | Syncfusion
 description: creating currency textbox
-platform: windowsforms
+platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
 ---
