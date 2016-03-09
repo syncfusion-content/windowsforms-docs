@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating GroupView | Windows Forms | Syncfusion
+title: Creating GroupView | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

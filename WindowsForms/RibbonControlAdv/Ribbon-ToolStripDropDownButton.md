@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-ToolStripDropDownButton | Windows Forms | Syncfusion
+title: Ribbon-ToolStripDropDownButton | WindowsForms | Syncfusion
 description:  ribbon toolstripdropdownbutton
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripDropDownButton
+# Ribbon ToolStripDropDownButton
 
 DropDownButton appears like normal button that contains a drop arrow. It displays some items, while click on it. It accepts DropDownMenuItem as its children.
 

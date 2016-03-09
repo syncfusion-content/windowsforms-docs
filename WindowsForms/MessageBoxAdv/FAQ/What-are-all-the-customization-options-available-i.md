@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-all-the-customization-options-available-i | Windows Forms | Syncfusion
+title: What-are-all-the-customization-options-available-i | WindowsForms | Syncfusion
 description: what are all the customization options available in messageboxadv?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

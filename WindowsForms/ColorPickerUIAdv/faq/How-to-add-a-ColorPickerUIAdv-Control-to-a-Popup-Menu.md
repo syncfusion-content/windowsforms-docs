@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add a ColorPickerUIAdv Control to a Popup Menu? | Windows Forms | Syncfusion
+title: How to add a ColorPickerUIAdv Control to a Popup Menu? | WindowsForms | Syncfusion
 description: how to add a colorpickeruiadv control to a popup menu?
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerUIAdv 
 documentation: ug
 ---

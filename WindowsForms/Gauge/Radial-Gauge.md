@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Radial-Gauge | Windows Forms | Syncfusion
+title: Radial-Gauge | WindowsForms | Syncfusion
 description: radial gauge
-platform: windowsforms
+platform: WindowsForms
 control: Gauge
 documentation: ug
 ---
@@ -174,7 +174,7 @@ Color</td><td>
 Gets or sets the arc color of the gauge.</td></tr>
 <tr>
 <td>
-GaugeLableColor</td><td>
+GaugeLabelColor</td><td>
 Color</td><td>
 Gets or sets the gauge label color.</td></tr>
 <tr>
@@ -327,27 +327,27 @@ Description</th></tr>
 <td>
 TickPlacement</td><td>
 Enum</td><td>
-Gets or sets whether to place the tickmarks inside or outside the arc.</td></tr>
+Gets or sets whether to place the tick marks inside or outside the arc.</td></tr>
 <tr>
 <td>
 MajorTickMarkColor</td><td>
 Color</td><td>
-Gets or sets the color of the major tickmarks.</td></tr>
+Gets or sets the color of the major tick marks.</td></tr>
 <tr>
 <td>
 MajorTickMarkHeight</td><td>
 Integer</td><td>
-Gets or sets the height of the major tickmarks.</td></tr>
+Gets or sets the height of the major tick marks.</td></tr>
 <tr>
 <td>
 MinorTickMarkColor</td><td>
 Color</td><td>
-Gets or sets the color of the minor tickmarks.</td></tr>
+Gets or sets the color of the minor tick marks.</td></tr>
 <tr>
 <td>
 MinorTickMarkHeight</td><td>
 Integer</td><td>
-Gets or sets the height of the minor tickmarks.</td></tr>
+Gets or sets the height of the minor tick marks.</td></tr>
 <tr>
 <td>
 InterLinesColor</td><td>
@@ -479,12 +479,12 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-Startvalue</td><td>
+Start value</td><td>
 Integer</td><td>
 Specify the start value of the range. Default value is set to 0.</td></tr>
 <tr>
 <td>
-Endvalue</td><td>
+End value</td><td>
 Integer</td><td>
 Specify the end value of the range. Default value is set to 0.</td></tr>
 <tr>
@@ -571,7 +571,7 @@ Me.radialGauge1.Ranges.Add(range1)
 
 ### Scaling Divisions
 
-The Gauge control for Windows Forms includes support for customizing the number of major tick lines and number of minor tick lines using the Major Difference and Minor Difference. It also provides support to customize the number of tick lines using MaximumValue and MinimunValue.
+The Gauge control for Windows Forms includes support for customizing the number of major tick lines and number of minor tick lines using the Major Difference and Minor Difference. It also provides support to customize the number of tick lines using MaximumValue and MinimumValue.
 
 
 <table>

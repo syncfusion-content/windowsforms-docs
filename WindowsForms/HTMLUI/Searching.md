@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Searching | Windows Forms | Syncfusion
+title: Searching | WindowsForms | Syncfusion
 description:  searching
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
 #  Searching
 
-Like in popular browsers, the HTMLUI control helps the users to search for a given text in the document displayed in the HTMLUI control. The HTMLUI control uses the DisplayFindForm method for this purpose. This feature comes with an Updown search and also the Matchcase search that helps the user to easily find the required text from the displayed document.
+Like in popular browsers, the HTMLUI control helps the users to search for a given text in the document displayed in the HTMLUI control. The HTMLUI control uses the DisplayFindForm method for this purpose. This feature comes with an Updown search and also the Match case search that helps the user to easily find the required text from the displayed document.
 
 The CTRL+F shortcut can also be used for enabling this feature.
 

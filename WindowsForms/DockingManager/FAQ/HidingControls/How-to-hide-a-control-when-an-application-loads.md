@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to hide a control when an application loads | Windows Forms | Syncfusion
+title: How to hide a control when an application loads | WindowsForms | Syncfusion
 description: How to hide a control when an application loads
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---

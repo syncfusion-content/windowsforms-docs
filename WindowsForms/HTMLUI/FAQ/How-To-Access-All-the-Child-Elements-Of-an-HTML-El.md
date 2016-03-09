@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Access-All-the-Child-Elements-Of-an-HTML-El | Windows Forms | Syncfusion
+title: How-To-Access-All-the-Child-Elements-Of-an-HTML-El | WindowsForms | Syncfusion
 description: how to access all the child elements of an html element in the htmlui control?
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Printing | Windows Forms | Syncfusion
+title: Printing | WindowsForms | Syncfusion
 description:  printing
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

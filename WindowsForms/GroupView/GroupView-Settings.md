@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupView Settings | Windows Forms | Syncfusion
+title: GroupView Settings | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
@@ -51,7 +51,7 @@ Me.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
-The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook propertyto 'True'. 
+The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook property to 'True'. 
 
 ![](Overview_images/Overview_img56.jpeg) 
 
@@ -149,7 +149,7 @@ Figure 966: GroupBar with ItemXSpacing = "5" and ItemYSpacing = '"10"
 
 ## Scroll Settings
 
-We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling propertyto 'True'.
+We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling property to 'True'.
 
 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What are FolderBrowser Flags | Windows Forms | Syncfusion
+title: What are FolderBrowser Flags | WindowsForms | Syncfusion
 description: what are folderbrowser flags
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

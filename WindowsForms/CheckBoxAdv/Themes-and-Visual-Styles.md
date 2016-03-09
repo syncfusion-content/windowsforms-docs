@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes-and-Visual-Styles | Windows Forms | Syncfusion
+title: Themes-and-Visual-Styles | WindowsForms | Syncfusion
 description: themes and visual styles
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

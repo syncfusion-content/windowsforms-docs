@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-Label| Windows Forms | Syncfusion
+title: Ribbon-Label| WindowsForms | Syncfusion
 description:  ribbon label
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripLabel
+# Ribbon Label
 
 ToolStripLabel can be added to a ToolStripEx directly or through a panel. 
 

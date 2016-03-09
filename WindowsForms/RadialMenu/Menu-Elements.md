@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Menu-Elements | Windows Forms | Syncfusion
+title: Menu-Elements | WindowsForms | Syncfusion
 description: menu elements 
-platform: windowsforms
+platform: WindowsForms
 control: RadialMenu 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoComplete Popup | Windows Forms | Syncfusion
+title: AutoComplete Popup | WindowsForms | Syncfusion
 description: AutoComplete Popup
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

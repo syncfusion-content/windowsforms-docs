@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-enable-themes-in-TabControlAdv | Windows Forms | Syncfusion
+title: How-to-enable-themes-in-TabControlAdv | WindowsForms | Syncfusion
 description: how to enable themes in tabcontroladv
-platform: windowsforms
+platform: WindowsForms
 control: TabsPackage
 documentation: ug
 ---

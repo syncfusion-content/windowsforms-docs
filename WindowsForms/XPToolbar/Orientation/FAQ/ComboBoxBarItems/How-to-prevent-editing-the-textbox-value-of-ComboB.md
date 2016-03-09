@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-prevent-editing-the-textbox-value-of-ComboB | Windows Forms | Syncfusion
+title: How-to-prevent-editing-the-textbox-value-of-ComboB | WindowsForms | Syncfusion
 description: how to prevent editing the textbox value of comboboxbaritem
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

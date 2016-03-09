@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Orientation | Windows Forms | Syncfusion
+title: Orientation | WindowsForms | Syncfusion
 description: orientation
-platform: windowsforms
+platform: WindowsForms
 control: Rating  
 documentation: ug
 ---

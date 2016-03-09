@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ContextMenuStripEx | Windows Forms | Syncfusion
+title: ContextMenuStripEx | WindowsForms | Syncfusion
 description: contextmenustripex
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -479,7 +479,7 @@ CheckedState</td><td>
 Specifies the check state of the item. They can be Checked, Unchecked or Indeterminate.</td></tr>
 <tr>
 <td>
-ShowShortcutkeys</td><td>
+ShowShortcut keys</td><td>
 Indicates whether a shortcut key should be displayed in the menu item. User can access the particular menu item using this shortcut key specified in ShortcutKeys property.</td></tr>
 <tr>
 <td>

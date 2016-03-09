@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data-binding | Windows Forms | Syncfusion
+title: Data-binding | WindowsForms | Syncfusion
 description: data binding
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
 # Data binding
 
-Databinding concepts for the MultiColumnComboBox are discussed in the below topics.
+Data binding concepts for the MultiColumnComboBox are discussed in the below topics.
 
 ### DataView as Data Source
 
@@ -124,7 +124,7 @@ This section deals with data binding in MultiColumnComboBox using OleDBDataAdapt
 * Add a MultiColumnComboBox control to your form. 
 * Add the appropriate DataAdapter and DataSets for your datasource. 
 * Set the combobox's datasource, DisplayMember and ValueMember properties. 
-* Alternatively, you can set up the databinding in code, in the form's load event handler as follows.
+* Alternatively, you can set up the data binding in code, in the form's load event handler as follows.
 
 {% highlight c# %}
 
@@ -172,7 +172,7 @@ End Sub
 
 {% endhighlight %}
 
-A sample which demonstrates the OleDbDataAdapter databinding is available in the below sample installation location.
+A sample which demonstrates the OleDbDataAdapter data binding is available in the below sample installation location.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
@@ -182,7 +182,7 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 
 1. Open VS .NET IDE and click File  New  Project  Windows Application. 
 2. Right click the project in the Solutions Explorer and click Add  New Item and Add New Item dialog box will be displayed. 
-3. Select DataSet from templates pane, give the name (Say newdataset.xsd) and click Open. This will add file by name newdataset.xsd to the solution. 
+3. Select DataSet from templates pane, give the name (Say new dataset.xsd) and click Open. This will add file by name new dataset.xsd to the solution. 
 4. Add the XML Schema as shown below. 
 
    ~~~ xml
@@ -213,7 +213,7 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
    {:.prettyprint }
 
 5. Validate the written Schema. 
-6. Add an XML file (Say newdataset.xml) with the following data. 
+6. Add an XML file (Say new dataset.xml) with the following data. 
 
    ~~~ xml
 	   <?xml version="1.0" standalone="yes" ?>

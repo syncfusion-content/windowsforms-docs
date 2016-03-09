@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TextBox Settings For ButtonEdit | Windows Forms | Syncfusion
+title: TextBox Settings For ButtonEdit | WindowsForms | Syncfusion
 description: TextBox Settings For ButtonEdit
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

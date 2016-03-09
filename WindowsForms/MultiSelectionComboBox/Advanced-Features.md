@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced-Features | Windows Forms | Syncfusion
+title: Advanced-Features | WindowsForms | Syncfusion
 description: advanced features
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization-support | Windows Forms | Syncfusion
+title: Serialization-support | WindowsForms | Syncfusion
 description: serialization support
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---

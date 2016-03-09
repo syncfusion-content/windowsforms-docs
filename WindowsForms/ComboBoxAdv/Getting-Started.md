@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 
-This section briefly describes how to design a ComboBoxAdv Control in a Windows Forms Application.
+This section briefly describes how to design a ComboBoxAdv Control in a WindowsForms Application.
 
 * Adding a ComboBoxAdv Control 
 * Configuring the ComboBoxAdv Control

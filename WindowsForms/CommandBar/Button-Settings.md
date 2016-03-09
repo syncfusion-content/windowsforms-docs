@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button-Settings | Windows Forms | Syncfusion
+title: Button-Settings | WindowsForms | Syncfusion
 description: button settings
-platform: windowsforms
+platform: WindowsForms
 control: CommandBars
 documentation: ug
 ---

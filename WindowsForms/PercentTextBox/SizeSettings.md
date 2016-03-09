@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Size Settings | Windows Forms | Syncfusion
+title: Size Settings | WindowsForms | Syncfusion
 description: Size Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Splitter-Behavior | Windows Forms | Syncfusion
+title: Splitter-Behavior | WindowsForms | Syncfusion
 description: splitter behavior
-platform: windowsforms
+platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating ColorUIControl | Windows Forms | Syncfusion
+title: Creating ColorUIControl | WindowsForms | Syncfusion
 description: creating coloruicontrol
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI 
 documentation: ug
 ---
 
 # Creating ColorUIControl
 
-ColorUIControl can be added through designer by just dragging-and-dropping it from thetoolbox onto the Windows Form Designer. 
+ColorUIControl can be added through designer by just dragging-and-dropping it from the toolbox onto the Windows Form Designer. 
 
 ![](ColorUI_images/Overview_img226.jpeg)
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calendar Appearance | Windows Forms | Syncfusion
+title: Calendar Appearance | WindowsForms | Syncfusion
 description: Calendar Appearance
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

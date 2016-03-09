@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event-Handling | Windows Forms | Syncfusion
+title: Event-Handling | WindowsForms | Syncfusion
 description: event handling
-platform: windowsforms
+platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
 ---
@@ -108,7 +108,7 @@ So if the user wants to enter 32000, he just needs to enter 32 and then press  '
 
 ## Error Validation
 
-When invalid text is entered by the user, we can handle ValidationError eventto raise an alarm. Follow the steps below.
+When invalid text is entered by the user, we can handle ValidationError event to raise an alarm. Follow the steps below.
 
 * Drag the CurrencyTextBox, ErrorProvider control and TextBox onto the form.
 * Handle ValidationError event of CurrencyTextBox.

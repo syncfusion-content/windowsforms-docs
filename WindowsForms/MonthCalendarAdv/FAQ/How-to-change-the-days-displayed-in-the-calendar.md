@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to change the days displayed in the calendar | Windows Forms | Syncfusion
+title: How to change the days displayed in the calendar | WindowsForms | Syncfusion
 description: how to change the days displayed in the calendar
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

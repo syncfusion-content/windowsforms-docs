@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating-SplashControl | Windows Forms | Syncfusion
+title: Creating-SplashControl | WindowsForms | Syncfusion
 description: creating splashcontrol
-platform: windowsforms
+platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
 
 # Creating SplashControl
 
-This section will give a step by step procedure to design a SplashControl through designer and also through programmatical approach.
+This section will give a step by step procedure to design a SplashControl through designer and also through programming approach.
 
 ## Through Designer
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MDI-Merging | Windows Forms | Syncfusion
+title: MDI-Merging | WindowsForms | Syncfusion
 description: mdi merging
-platform: windowsforms
+platform: WindowsForms
 control: Control Name undefined
 documentation: ug
 ---
@@ -45,5 +45,5 @@ The following applies to the explicit merging scenario only:
 
 _Warning_ Explicit merging imposes the requirement that the child form types should have a public default constructor (constructor with no arguments). 
 
-N> During explicit merging, a new 'dummy' instance of the child forms (one for each type) will be created by the framework in the background. However, these child forms will never be made visible.
+N> During explicit merging, a new 'dummy' instance of the child forms (one for each type) will be created by the Framework in the background. However, these child forms will never be made visible.
 

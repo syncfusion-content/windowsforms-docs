@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ribbon-Form | Windows Forms | Syncfusion
+title: Ribbon-Form | WindowsForms | Syncfusion
 description: ribbon form
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---

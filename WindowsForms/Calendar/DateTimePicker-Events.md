@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DateTimePicker Events | Windows Forms | Syncfusion
+title: DateTimePicker Events | WindowsForms | Syncfusion
 description: datetimepicker events
-platform: windowsforms
+platform: WindowsForms
 control: Calendar 
 documentation: ug
 ---

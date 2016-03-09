@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Adding-and-Filling-the-XPToolbar | Windows Forms | Syncfusion
+title: Adding-and-Filling-the-XPToolbar | WindowsForms | Syncfusion
 description: adding and filling the xptoolbar
-platform: windowsforms
+platform: WindowsForms
 control: XPToolbar
 documentation: ug
 ---

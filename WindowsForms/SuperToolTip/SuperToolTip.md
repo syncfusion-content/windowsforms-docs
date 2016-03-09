@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SuperToolTip | Windows Forms | Syncfusion
+title: SuperToolTip | WindowsForms | Syncfusion
 description: supertooltip
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv
 documentation: ug
 ---
@@ -20,7 +20,7 @@ In Office 2007, Microsoft has introduced a SuperToolTip control to display the t
 ### Creating SuperToolTip Through Designer
 
 1. Drag and drop the SuperToolTip on your form.
-2. When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the toolstrip or tabitem in the RibbonControlAdv.
+2. When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the tool strip or tab item in the RibbonControlAdv.
 
    ![](SuperToolTip_images/SuperToolTip_img2.jpeg)
 
@@ -160,7 +160,7 @@ Indicates the time (ms) before the tooltip is displayed.</td></tr>
 <tr>
 <td>
 MaxWidth</td><td>
-Sets the maximum width for the tooltip to be displayed. When the text of the tooltip exceeds the maxwidth, the text wraps to the next line.</td></tr>
+Sets the maximum width for the tooltip to be displayed. When the text of the tooltip exceeds the max width, the text wraps to the next line.</td></tr>
 <tr>
 <td>
 ToolTipDuration</td><td>
@@ -438,7 +438,7 @@ Below are the events for the SuperToolTip control.
 
 PopupToolTip event of the SuperToolTip control can be handled to set the tooltip at any desired position.
 
-Here, the parameter "rc" will pass the (x, y) coordinates for each single object that has been specified through the parameter "component".
+Here, the parameter "rectangle" will pass the (x, y) coordinates for each single object that has been specified through the parameter "component".
 
 
 <table>

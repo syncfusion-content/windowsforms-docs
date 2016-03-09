@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced-Features | Windows Forms | Syncfusion
+title: Advanced-Features | WindowsForms | Syncfusion
 description: advanced features
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
@@ -33,7 +33,7 @@ The following sequence lists the steps involved in setting up a docking layout o
 2. Select the DockingClientPanel control from the designer tool box and drop it onto the form hosting the DockingManager. Size the control so that its bounds are sufficient to accommodate any non-dockable child controls that may already be present on the form.
 3. If any non-dockable controls are present on the form, then drag-and-drop these controls onto the DockingClientPanel instance.
 4. Set the DockingClientPanel.SizeToFit property to be true. Turning on the SizeToFit property will force the DockingClientPanel to start interacting with the Essential Tools docking architecture and the control will automatically be resized / repositioned to occupy the form's client bounds, left unoccupied by the docking windows. 
-5. Set the BorderStyle property to get the 3D or fixed single effect to the dockingclientpanel control.
+5. Set the BorderStyle property to get the 3D or fixed single effect to the docking client panel control.
 6. The DockingClientPanel will now function as a proxy for the form's client surface and all controls originally intended to be placed on the form should henceforth be located on the DockingClientPanel; any anchoring / layout features for the child controls should be set relative to the DockingClientPanel. 
 7. To add controls directly to the form, the SizeToFit property can temporarily be turned off within the designer and the form resized to expose its surface. At run-time, the SizeToFit property is always enabled. 
 
@@ -211,7 +211,7 @@ Me.dockingClientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.
 
 {% endhighlight %}
 
-The font used to display the text in the control is set through Font property and the forecolor through ForeColor property. Below are the code snippets to set these two properties programmatically.
+The font used to display the text in the control is set through Font property and the fore color through ForeColor property. Below are the code snippets to set these two properties programmatically.
 
 <table>
 <tr>
@@ -420,15 +420,15 @@ Description</th></tr>
 <tr>
 <td>
 LoadDockState</td><td>
-Reads the persisted dockstate from the Isolated Storage. </td></tr>
+Reads the persisted dock state from the Isolated Storage. </td></tr>
 <tr>
 <td>
 LoadDockState (Overloaded)</td><td>
-Reads a previously serialized dockstate using the AppStateSerializer object. Parameter is,Serializer - An instance of AppStateSerializer class.</td></tr>
+Reads a previously serialized dock state using the AppStateSerializer object. Parameter is,Serializer - An instance of AppStateSerializer class.</td></tr>
 <tr>
 <td>
 LoadDockState (Overloaded)</td><td>
-Reads a previously serialized dockstate for the specified dockable control and applies the new state. The parameters are, Serializer - An instance of AppStateSerializer class.Ctrl - Indicates the docked control.</td></tr>
+Reads a previously serialized dock state for the specified dockable control and applies the new state. The parameters are, Serializer - An instance of AppStateSerializer class.Ctrl - Indicates the docked control.</td></tr>
 </table>
 
 
@@ -469,15 +469,15 @@ Description</th></tr>
 <tr>
 <td>
 SaveDockState</td><td>
-Saves the current dockstate to Isolated Storage.</td></tr>
+Saves the current dock state to Isolated Storage.</td></tr>
 <tr>
 <td>
 SaveDockState (Overloaded)</td><td>
-Saves the current dockstate information to the specified AppStateSerializer. Parameter is,Serializer - An instance of AppStateSerializer class.</td></tr>
+Saves the current dock state information to the specified AppStateSerializer. Parameter is,Serializer - An instance of AppStateSerializer class.</td></tr>
 <tr>
 <td>
 LoadDockState (Overloaded)</td><td>
-Saves the dockstate information for the specified dockable control. The parameters are, Serializer - An instance of AppStateSerializer class.Ctrl - Indicates the docked control.</td></tr>
+Saves the dock state information for the specified dockable control. The parameters are, Serializer - An instance of AppStateSerializer class.Ctrl - Indicates the docked control.</td></tr>
 </table>
 
 
@@ -802,7 +802,7 @@ You can convert the docked control to an MDI child form and vice versa by referr
 
 1. Add the required Syncfusion assembly references.
 2. Declare and initialize the DockingManager and other controls. 
-3. Set the properties required and add the controls to the form. Set the IsMdiContainer property of the form to true.
+3. Set the properties required and add the controls to the form. Set the IsMdIContainer property of the form to true.
 4. Call the SetAsMDIChild method. This method sets the specified docked control as an MDI child.
 
    <table>
@@ -1009,7 +1009,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\13.2.0.13\Windows
 
 ## Linked Managers
 
-Linked Manager concept allows the transfer of a docking window from one form to another form or usercontrol. It is done with a single method call. 
+Linked Manager concept allows the transfer of a docking window from one form to another form or user control. It is done with a single method call. 
 
 AddToTargetManagersList method will let you add the DockingManager to the Target DockingManagers list, and hence transfers the docking window to the selected target form. 
 
@@ -1024,11 +1024,11 @@ Description</th></tr>
 <tr>
 <td>
 AddToTargetManagersList </td><td>
-Adds the DockingManager to the Target Providers List, belonging to the current manager. The parameter is,dockingmgr - docking manager to be added to the target list.</td></tr>
+Adds the DockingManager to the Target Providers List, belonging to the current manager. The parameter is,docking mgr - docking manager to be added to the target list.</td></tr>
 <tr>
 <td>
 RemoveFromTargetManagersList</td><td>
-Removes the DockingManager from the Target Providers List, belonging to the current manager. The parameter is,dockingmgr - docking manager to be removed from the target list.</td></tr>
+Removes the DockingManager from the Target Providers List, belonging to the current manager. The parameter is,docking mgr - docking manager to be removed from the target list.</td></tr>
 </table>
 
 

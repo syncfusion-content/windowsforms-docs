@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display-Settings | Windows Forms | Syncfusion
+title: Display-Settings | WindowsForms | Syncfusion
 description: display settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

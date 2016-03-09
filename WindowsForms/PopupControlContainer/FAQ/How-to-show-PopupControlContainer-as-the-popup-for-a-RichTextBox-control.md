@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to show PopupControlContainer as the popup for a RichTextBox control | Windows Forms | Syncfusion
+title: How to show PopupControlContainer as the popup for a RichTextBox control | WindowsForms | Syncfusion
 description: How to show PopupControlContainer as the popup for a RichTextBox control
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Caption-Fore-Color-Settings | Windows Forms | Syncfusion
+title: Caption-Fore-Color-Settings | WindowsForms | Syncfusion
 description: caption fore color settings 
-platform: windowsforms
+platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---

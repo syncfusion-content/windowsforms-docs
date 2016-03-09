@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-dock-the-ControlBars-to-any-edge-of-the-hos | Windows Forms | Syncfusion
+title: How-to-dock-the-ControlBars-to-any-edge-of-the-hos | WindowsForms | Syncfusion
 description: how to dock the controlbars to any edge of the host form
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: StatusBarAdvPanel-Events | Windows Forms | Syncfusion
+title: StatusBarAdvPanel-Events | WindowsForms | Syncfusion
 description: statusbaradvpanel events
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---

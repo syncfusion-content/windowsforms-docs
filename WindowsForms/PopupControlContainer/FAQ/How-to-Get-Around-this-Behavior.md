@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Get Around this Behavior | Windows Forms | Syncfusion
+title: How to Get Around this Behavior | WindowsForms | Syncfusion
 description: How to Get Around this Behavior
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
