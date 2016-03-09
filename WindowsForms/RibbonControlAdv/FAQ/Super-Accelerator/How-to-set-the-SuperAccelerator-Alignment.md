@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-the-SuperAccelerator-Alignment | Windows Forms | Syncfusion
+title: How-to-set-the-SuperAccelerator-Alignment | WindowsForms | Syncfusion
 description: how to set the superaccelerator alignment?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

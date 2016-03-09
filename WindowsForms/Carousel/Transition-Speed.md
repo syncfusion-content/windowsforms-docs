@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Transition Speed | Windows Forms | Syncfusion
+title: Transition Speed | WindowsForms | Syncfusion
 description: Transition Speed
-platform: windowsforms
+platform: WindowsForms
 control: Carousel
 documentation: ug
 ---

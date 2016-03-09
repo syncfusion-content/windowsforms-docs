@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PulsingTile | Windows Forms | Syncfusion
+title: PulsingTile | WindowsForms | Syncfusion
 description: pulsingtile
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

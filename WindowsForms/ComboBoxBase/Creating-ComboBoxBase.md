@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-ComboBoxBase | Windows Forms | Syncfusion
+title: Creating-ComboBoxBase | WindowsForms | Syncfusion
 description: creating comboboxbase
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style | Windows Forms | Syncfusion
+title: Style | WindowsForms | Syncfusion
 description: Style
-platform: windowsforms
+platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---

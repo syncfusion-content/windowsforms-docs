@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboDropDown-Appearance | Windows Forms | Syncfusion
+title: ComboDropDown-Appearance | WindowsForms | Syncfusion
 description: combodropdown appearance
-platform: windowsforms
+platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---

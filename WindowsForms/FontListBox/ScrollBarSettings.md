@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ScrollBar Settings | Windows Forms | Syncfusion
+title: ScrollBar Settings | WindowsForms | Syncfusion
 description: ScrollBar Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Edit-Control-Events | Windows Forms | Syncfusion
+title: Edit-Control-Events | WindowsForms | Syncfusion
 description: edit control events
-platform: windowsforms
+platform: WindowsForms
 control: Edit
 documentation: ug
 ---
@@ -49,7 +49,7 @@ End Sub
 
 ## Closing Event
 
-This event is discussed in the Saving and Cancelling Changes topic.
+This event is discussed in the Saving and Canceling Changes topic.
 
 
 
@@ -63,7 +63,7 @@ This section discusses the below given code snippet events.
 
 This event occurs when the code snippet is to be activated.
 
-The event handler receives an argument of type CancellableCodeSnippetsEventArgs. The following CancellableCodeSnippetsEventArgs members provide information, specific to this event.
+The event handler receives an argument of type CancelableCodeSnippetsEventArgs. The following CancelableCodeSnippetsEventArgs members provide information, specific to this event.
 
 
 
@@ -75,7 +75,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Indicates whether action has to be cancelled.</td></tr>
+Indicates whether action has to be canceled.</td></tr>
 <tr>
 <td>
 CodeSnippet</td><td>
@@ -269,7 +269,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Indicates whether action has to be cancelled.</td></tr>
+Indicates whether action has to be canceled.</td></tr>
 <tr>
 <td>
 CodeSnippet</td><td>
@@ -431,7 +431,7 @@ End Sub
 
 This event is raised when the CollapseAll method is called.
 
-The event handler receives an argument of type CancelEventArgs. The following CancellableEventArgs member provides information, specific to this event.
+The event handler receives an argument of type CancelEventArgs. The following CancelableEventArgs member provides information, specific to this event.
 
 
 
@@ -443,7 +443,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets a value indicating whether the event should be cancelled.</td></tr>
+Gets / sets a value indicating whether the event should be canceled.</td></tr>
 </table>
 
 
@@ -687,7 +687,7 @@ This event is discussed in the Context Choice topic.
 
 This event is raised when the context choice item is right-clicked.
 
-The event handler receives an argument of type ContextChoiceItemEventArgs. The following CancellableCodeSnippetsEventArgs member provides information, specific to this event.
+The event handler receives an argument of type ContextChoiceItemEventArgs. The following CancelableCodeSnippetsEventArgs member provides information, specific to this event.
 
 
 
@@ -883,7 +883,7 @@ End Sub
 
 This event is raised when the ExpandAll method is called.
 
-The event handler receives an argument of type CancelEventArgs. The following CancellableEventArgs member provides information, specific to this event.
+The event handler receives an argument of type CancelEventArgs. The following CancelableEventArgs member provides information, specific to this event.
 
 
 
@@ -895,7 +895,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets a value indicating whether the event should be cancelled.</td></tr>
+Gets / sets a value indicating whether the event should be canceled.</td></tr>
 </table>
 
 

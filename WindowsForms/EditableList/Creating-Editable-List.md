@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-Editable-List | Windows Forms | Syncfusion
+title: Creating-Editable-List | WindowsForms | Syncfusion
 description: creating editable list
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---

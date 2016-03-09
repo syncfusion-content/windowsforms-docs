@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-remove-the-Context-Menu-for-a-particular-tab | Windows Forms | Syncfusion
+title: How-to-remove-the-Context-Menu-for-a-particular-tab | WindowsForms | Syncfusion
 description: how to remove the context menu for a particular tab
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-ListControl-Derived-Controls | Windows Forms | Syncfusion
+title: Creating-ListControl-Derived-Controls | WindowsForms | Syncfusion
 description: creating listcontrol - derived controls
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Applying Themes | Windows Forms | Syncfusion
+title: Applying Themes | WindowsForms | Syncfusion
 description: Applying Themes
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

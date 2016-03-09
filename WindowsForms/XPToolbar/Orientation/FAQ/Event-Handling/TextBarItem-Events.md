@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TextBarItem-Events | Windows Forms | Syncfusion
+title: TextBarItem-Events | WindowsForms | Syncfusion
 description: textbaritem events
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-ProgressBar| Windows Forms | Syncfusion
+title: Ribbon-ProgressBar| WindowsForms | Syncfusion
 description:  ribbon progressbar
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripProgressBar
+# Ribbon ProgressBar
 
 ToolStripProgressBar can be used to provide a visual cue that the application is indeed working and the task is being completed.item. It can be added to a ToolStripEx directly or through a panel. 
 

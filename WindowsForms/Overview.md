@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion Essential Studio Windows Forms products
 description: Overview
-platform: windowsforms
+platform: WindowsForms
 control: Introduction
 documentation: ug
 ---

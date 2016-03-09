@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-disable-Tooltip-for-particular-nodes-of-the-TreenodeAdv | Windows Forms | Syncfusion
+title: How-to-disable-Tooltip-for-particular-nodes-of-the-TreenodeAdv | WindowsForms | Syncfusion
 description: how to disable tooltip for particular nodes of the treenodeadv
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -13,7 +13,7 @@ The TreeViewAdv control provides an option to disable tooltips for particular no
 
 Disable ToolTips for particular nodes
 
-Thetooltip for some of the nodes, which have a HelpText can be disabled by handling the ToolTipControl_BeforePopup event.
+The tooltip for some of the nodes, which have a HelpText can be disabled by handling the ToolTipControl_BeforePopup event.
 
 Here in the TreeViewAdv, for some of the nodes, the e.Cancel property is set to true by getting the node's position in the ToolTipControl's BeforePopup event handler where the tooltips for the respective nodes are disabled. The tooltips for the same nodes can be enabled by setting the e.Cancel = false in the tooltip control's BeforePopup Event.
 

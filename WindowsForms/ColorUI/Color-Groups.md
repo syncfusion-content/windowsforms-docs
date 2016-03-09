@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Color Groups | Windows Forms | Syncfusion
+title: Color Groups | WindowsForms | Syncfusion
 description: color groups
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI
 documentation: ug
 ---

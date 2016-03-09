@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -66,7 +66,7 @@ Themes can be enabled for the CheckBoxAdv.
 
 It provides the Office2007 Visual Style that comes in the blue, silver and black colors. The Office2007 style also supports custom colors that can be applied to the CheckBoxAdv control.
 
-* Databinding
+* Data binding
 
 You can bind the CheckBoxAdv to a datasource such as an SQL database.
 

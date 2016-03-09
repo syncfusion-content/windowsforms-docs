@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GroupView Events | Windows Forms | Syncfusion
+title: GroupView Events | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: GroupView
 documentation: ug
 ---

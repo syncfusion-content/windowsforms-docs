@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ribbon-TextBox| Windows Forms | Syncfusion
+title: Ribbon-TextBox| WindowsForms | Syncfusion
 description:  ribbon textbox
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
-# ToolStripTextBox
+# Ribbon TextBox
 
 Ribbon TextBox control provide similar set of functionalities like normal TextBox control in Ribbon Instance. It can be added to a ToolStripEx directly or through a panel. 
 

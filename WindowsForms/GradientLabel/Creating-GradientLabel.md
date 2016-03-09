@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating GradientLabel | Windows Forms | Syncfusion
+title: Creating GradientLabel | WindowsForms | Syncfusion
 description: Creating GradientLabel
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

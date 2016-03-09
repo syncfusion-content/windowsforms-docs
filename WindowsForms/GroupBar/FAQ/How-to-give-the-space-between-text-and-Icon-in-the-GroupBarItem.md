@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to give the space between text and Icon in the GroupBarItem | Windows Forms | Syncfusion
+title: How to give the space between text and Icon in the GroupBarItem | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

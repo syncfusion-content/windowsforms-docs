@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Popup-Menu | Windows Forms | Syncfusion
+title: Popup-Menu | WindowsForms | Syncfusion
 description: popup menu
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

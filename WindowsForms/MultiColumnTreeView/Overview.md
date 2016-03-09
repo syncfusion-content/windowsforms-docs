@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
@@ -15,7 +15,7 @@ MultiColumnTreeView comes with complete design-time support. The [Styles Archite
 ## Features
 
 * Styles Architecture - Supports a flexible style architecture to let users define the styles for nodes at different levels of the Tree. It helps the users to specify the styles for a specific node or for a class of nodes.
-* Columns - Lets you add multiple columns and subitems.
+* Columns - Lets you add multiple columns and sub items.
 * Checkbox and Option Buttons support - Interactive check boxes that could be checked or unchecked, which will indicate the check state of the child node's check boxes. Node can also hold option buttons.
 * Node Images - Tree nodes can hold left images, right images and images for different state of the nodes like expand and collapse.
 * Load on demand - Enhances the performance by reducing the loading time of the nodes by displaying the nodes only on demand by the user. This provides the user to delay the loading of nodes in Trees, until the user initiates the nodes to expand.
@@ -26,7 +26,7 @@ MultiColumnTreeView comes with complete design-time support. The [Styles Archite
    * OwnerDrawNodes - property that allows user to paint the background of the node. 
    * Text Color - option to customize node text color.
    * Font - option to change the node's font.
-   * Helptext - can be enabled for each and every nodes in the first column. Each nodes can display its own information.
+   * Help text - can be enabled for each and every nodes in the first column. Each nodes can display its own information.
    
 * Scroll support - Provides automatic scrolling support for the treeview controls as well as hidden nodes when the mouse is near the borders. 
 * Sorting - Different types of sorting can be performed for the tree nodes like ascending, descending.

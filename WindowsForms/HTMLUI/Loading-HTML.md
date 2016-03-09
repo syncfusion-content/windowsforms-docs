@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Loading-HTML | Windows Forms | Syncfusion
+title: Loading-HTML | WindowsForms | Syncfusion
 description: loading html
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

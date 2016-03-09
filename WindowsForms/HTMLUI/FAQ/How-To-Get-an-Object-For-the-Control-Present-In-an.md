@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Get-an-Object-For-the-Control-Present-In-an | Windows Forms | Syncfusion
+title: How-To-Get-an-Object-For-the-Control-Present-In-an | WindowsForms | Syncfusion
 description: how to get an object for the control present in an html element in the htmlui control?
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---

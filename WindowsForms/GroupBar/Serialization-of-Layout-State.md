@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization of Layout State  | Windows Forms | Syncfusion
+title: Serialization of Layout State  | WindowsForms | Syncfusion
 description: Serialization of Layout State 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

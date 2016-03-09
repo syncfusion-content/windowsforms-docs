@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data-Settings | Windows Forms | Syncfusion
+title: Data-Settings | WindowsForms | Syncfusion
 description: data settings
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---

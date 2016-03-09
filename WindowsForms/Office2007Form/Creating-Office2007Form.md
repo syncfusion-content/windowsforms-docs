@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-Office2007Form | Windows Forms | Syncfusion
+title: Creating-Office2007Form | WindowsForms | Syncfusion
 description: creating office2007form
-platform: windowsforms
+platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---

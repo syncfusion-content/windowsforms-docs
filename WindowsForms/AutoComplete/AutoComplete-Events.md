@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoComplete Events | Windows Forms | Syncfusion
+title: AutoComplete Events | WindowsForms | Syncfusion
 description: AutoComplete Events
-platform: windowsforms
+platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---

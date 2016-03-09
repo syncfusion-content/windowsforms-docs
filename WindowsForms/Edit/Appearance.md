@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance | Windows Forms | Syncfusion
+title: Appearance | WindowsForms | Syncfusion
 description: appearance
-platform: windowsforms
+platform: WindowsForms
 control: Edit
 documentation: ug
 ---
@@ -23,7 +23,7 @@ This section discusses the size settings of the Edit Control.
 
 #### AutoSize
 
-The Edit Control can be autoresized by setting the AutoSize property to True.
+The Edit Control can be auto resized by setting the AutoSize property to True.
 
 
 
@@ -47,7 +47,7 @@ Me.editControl1.AutoSize = True
 
 #### Minimum Size
 
-The MinimumSize property gets / sets the minimum size of the control in autosize mode.
+The MinimumSize property gets / sets the minimum size of the control in auto size mode.
 
 {% highlight c# %}
 
@@ -688,15 +688,15 @@ Specifies the brush style. The options provided are as follows:{{ '_Solid_' | ma
 <tr>
 <td>
 BackColor</td><td>
-Specifies the backcolor of the control.</td></tr>
+Specifies the back color of the control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Specifies the forecolor of the control.</td></tr>
+Specifies the fore color of the control.</td></tr>
 <tr>
 <td>
 PatternStyle</td><td>
-Specifies the pattern style. The options provided are as folows:
+Specifies the pattern style. The options provided are as follows:
 <ul>
 <li> Horizontal</li>
 <li> Vertical</li>
@@ -762,7 +762,7 @@ Specifies the gradient colors. The options provided are as follows:
 <li> Horizontal</li>
 <li> Vertical</li>
 <li> PathRectangle</li>
-<li> PathEllipse</li></ul><br/>The first entry in this list will be the same as the backcolor property, and the last entry will be the same as the forecolor property.</td></tr>
+<li> PathEllipse</li></ul><br/>The first entry in this list will be the same as the back color property, and the last entry will be the same as the fore color property.</td></tr>
 </table>
 
 
@@ -823,7 +823,7 @@ Edit Control allows setting custom background color for individual lines as well
 
 You can set any desired background to a particular line or block of selection, as explained below.
 
-* Register a backcolor format with the Edit Control by using its RegisterBackColorFormat method, with appropriate values for BackgroundColor, ForegroundColor and HatchStyle parameters.
+* Register a back color format with the Edit Control by using its RegisterBackColorFormat method, with appropriate values for BackgroundColor, ForegroundColor and HatchStyle parameters.
 
 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tab Text | Windows Forms | Syncfusion
+title: Tab Text | WindowsForms | Syncfusion
 description: tab text
-platform: windowsforms
+platform: WindowsForms
 control: ColorUI 
 documentation: ug
 ---

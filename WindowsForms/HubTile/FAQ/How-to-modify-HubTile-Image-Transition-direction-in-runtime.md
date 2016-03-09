@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to modify HubTile Image Transition direction in runtime | Windows Forms | Syncfusion
+title: How to modify HubTile Image Transition direction in runtime | WindowsForms | Syncfusion
 description: How to modify HubTile Image Transition direction in runtime
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 --- 

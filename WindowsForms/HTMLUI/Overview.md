@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
@@ -35,7 +35,7 @@ Some of the key features of Essential HTMLUI are listed below:
 
 * Essential HTMLUI uses the unique Syncfusion Flex-Layout mechanism to lay out any kind of user interface in a flexible manner. Defining the HTML for the layout renders the display with the rules of HTML layout applied automatically. This flexible approach to layout brings several advantages to applications that need their interfaces to be flexible. 
 * HTMLUI is primarily used as an HTML renderer / viewer. The completely managed browser interface provided by HTMLUI is a natural choice for any HTML rendering interfaces such as custom web browsers, HTML help viewers, email readers, and so on.
-* MHTML enables you to send and receive Web pages and other HTML documents using e-mail programs. MHTML enables you to embed images directly into the body of your e-mail messages rather than attaching them to the message. MHTML uses MIME (Multipurpose Internet Mail Extensions) which provides facilities to allow multiple objects in a single Internet e-mail message; represents formatted multifont text messages; represents non-textual material such as images, and so on.
+* MHTML enables you to send and receive Web pages and other HTML documents using e-mail programs. MHTML enables you to embed images directly into the body of your e-mail messages rather than attaching them to the message. MHTML uses MIME (Multipurpose Internet Mail Extensions) which provides facilities to allow multiple objects in a single Internet e-mail message; represents formatted multi font text messages; represents non-textual material such as images, and so on.
 
 
 

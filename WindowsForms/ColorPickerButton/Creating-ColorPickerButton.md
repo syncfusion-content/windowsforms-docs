@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating ColorPickerButton | Windows Forms | Syncfusion
+title: Creating ColorPickerButton | WindowsForms | Syncfusion
 description: creating colorpickerbutton
-platform: windowsforms
+platform: WindowsForms
 control: ColorPickerButton
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Styles | Windows Forms | Syncfusion
+title: Visual Styles | WindowsForms | Syncfusion
 description: visual styles
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---
@@ -89,7 +89,7 @@ Me.domainUpDownExt1.ThemesEnabled =True
 
 ## Custom Colors
 
-We can also apply custom colors to the DomainUpDownExt control by setting ColorScheme to "Managed" and specifying the custom color through theApplyManagedColorsmethod as follows.
+We can also apply custom colors to the DomainUpDownExt control by setting ColorScheme to "Managed" and specifying the custom color through theApplyManagedColors method as follows.
 
 
 

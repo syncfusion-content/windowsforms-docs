@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event Handling | Windows Forms | Syncfusion
+title: Event Handling | WindowsForms | Syncfusion
 description: Event Handling 
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -33,7 +33,7 @@ It occurs when a Popup is closed. The event handler receives an argument of type
 </table>
 
 
-Refer the following topicswhich gives you an idea on the above events.
+Refer the following topics which gives you an idea on the above events.
 
 
 ## Popup Event

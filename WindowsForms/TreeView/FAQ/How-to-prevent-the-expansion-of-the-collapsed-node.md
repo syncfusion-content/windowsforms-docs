@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-prevent-the-expansion-of-the-collapsed-nodes-when-it-is-been-double-clicked | Windows Forms | Syncfusion
+title: How-to-prevent-the-expansion-of-the-collapsed-nodes-when-it-is-been-double-clicked | WindowsForms | Syncfusion
 description: how to prevent the expansion of the collapsed nodes when it is been double clicked
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to access the default panel of a SplashControl | Windows Forms | Syncfusion
+title: How to access the default panel of a SplashControl | WindowsForms | Syncfusion
 description: How to access the default panel of a SplashControl
-platform: windowsforms
+platform: WindowsForms
 control: Notification Package 
 documentation: ug
 ---

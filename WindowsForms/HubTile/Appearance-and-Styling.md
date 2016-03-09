@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-and-Styling | Windows Forms | Syncfusion
+title: Appearance-and-Styling | WindowsForms | Syncfusion
 description: appearance and styling
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: File-Sharing-and-Stream-Handling | Windows Forms | Syncfusion
+title: File-Sharing-and-Stream-Handling | WindowsForms | Syncfusion
 description: file sharing and stream handling
-platform: windowsforms
+platform: WindowsForms
 control: Edit
 documentation: ug
 ---
@@ -459,7 +459,7 @@ Description</th></tr>
 <tr>
 <td>
 FileOpened</td><td>
-Gets / sets the filestream that is used as an input.</td></tr>
+Gets / sets the file stream that is used as an input.</td></tr>
 </table>
 
 
@@ -485,7 +485,7 @@ Me.editControl1.FileOpened = New FileStream("Temp.txt", FileMode.Create)
 
 {% seealso %}
 
-[Creating, Loading and Saving a File](/windowsforms/edit/file-sharing-and-stream-handling#creating-loading-saving-and-dropping-files), [Saving and Cancelling Changes](/windowsforms/edit/file-sharing-and-stream-handling#saving-and-cancelling-changes)
+[Creating, Loading and Saving a File](/windowsforms/edit/file-sharing-and-stream-handling#creating-loading-saving-and-dropping-files), [Saving and Canceling Changes](/windowsforms/edit/file-sharing-and-stream-handling#saving-and-cancelling-changes)
 
 {% endseealso %}
 
@@ -513,7 +513,7 @@ Me.editControl1.DiscardChanges();
 
 {% endhighlight %}
 
-## Saving And Cancelling Changes
+## Saving And Canceling Changes
 
 This section demonstrates how changes made to the contents of the Edit Control can be saved or discarded.
 
@@ -822,7 +822,7 @@ Dim lexemParser As RenderableLexemParser = Me.editControl1.Parser
 
 #### Parsing Modes
 
-Edit Control supports several modes of text parsing which can be specified to the ParsingMode property by using the TextParsingMode enumerator. The default value of the ParsingMode property is set to PartialParsingNoFallback.
+Edit Control supports several modes of text parsing which can be specified to the ParsingMode property by using the TextParsingMode enumerator. The default value of the ParsingMode property is set to PartialParsingNoFall back.
 
 
 
@@ -834,16 +834,16 @@ Description</th></tr>
 <tr>
 <td>
 ParsingMode</td><td>
-Gets / sets text parsing mode. User can select between high parsing speed or high syntax highlighting accuracy. The options provided are* FullParsing* PartialParsingNoFallback* PartialParsingWithFallback</td></tr>
+Gets / sets text parsing mode. User can select between high parsing speed or high syntax highlighting accuracy. The options provided are* FullParsing* PartialParsingNoFall back* PartialParsingWithFall back</td></tr>
 </table>
 
 
 
 When ParsingMode is set to FullParsing, the text in the Edit Control is parsed completely and accurately, and then features like syntax highlighting, outlining, bracket highlighting, indentation guidelines, and so on are applied. FullParsing is time consuming, and can potentially cause performance issues as Edit Control stays frozen till this process is completed. Ideally, it should be undertaken for small files only.
 
-When ParsingMode is set to PartialParsingNoFallback, text parsing is done on a need basis, i.e., only those regions of the text in the Edit Control that have to be displayed get parsed. The text parsing is not always accurate in such scenarios, and hence features like syntax highlighting, outlining, bracket highlighting, indentation guidelines, and so on, maybe incorrectly applied. This is the fastest ParsingMode in the Edit Control, and hence should be used in large file handling scenarios.
+When ParsingMode is set to PartialParsingNoFall back, text parsing is done on a need basis, i.e., only those regions of the text in the Edit Control that have to be displayed get parsed. The text parsing is not always accurate in such scenarios, and hence features like syntax highlighting, outlining, bracket highlighting, indentation guidelines, and so on, maybe incorrectly applied. This is the fastest ParsingMode in the Edit Control, and hence should be used in large file handling scenarios.
 
-When ParsingMode is set to PartialParsingWithFallback, text parsing is once again done on a need basis like in PartialParsingNoFallback mode. The only difference is that if the text gets incorrectly parsed, the incorrectly parsed text is treated as of type regular "Text" format, and features like syntax highlighting, outlining, bracket highlighting, indentation guidelines, and so on, get applied as per Text format specifications in the associated configuration settings.
+When ParsingMode is set to PartialParsingWithFall back, text parsing is once again done on a need basis like in PartialParsingNoFall back mode. The only difference is that if the text gets incorrectly parsed, the incorrectly parsed text is treated as of type regular "Text" format, and features like syntax highlighting, outlining, bracket highlighting, indentation guidelines, and so on, get applied as per Text format specifications in the associated configuration settings.
 
 
 
