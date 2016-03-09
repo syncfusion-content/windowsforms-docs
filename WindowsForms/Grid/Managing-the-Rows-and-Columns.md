@@ -413,7 +413,7 @@ N> The same row or column styles can also be set using [QueryCellInfo](/windowsf
 The resizing behavior of columns and rows can be customized by using the [ResizeColsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResizeColsBehavior.html) and [ResizeRowsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResizeRowsBehavior.html) properties. The[GridResizeCellsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.html) enumeration has provide the following options to control resizing behavior,
 
 * **AllowDragOutside** - Allows the user to drag the cell boundary outside the grid client area and resize specific row or column.
-* **IgnoreHeaders** –Do not allow the users to resize the rows or columns by grapping the divider between rows or column headers.
+* **IgnoreHeaders** –Do not allow the users to resize the rows or columns by moving the divider between rows or column headers.
 * **InsideGrid** - Allows the user to resize rows or columns from anywhere inside the grid by dragging the divider between any two row or column headers.
 * **None** - Turns off the mouse control over resizing rows and columns.
 * **OutlineBounds** - Highlights the original cell boundaries of resizing row or column.
@@ -496,15 +496,15 @@ this.gridControl.TableStyle.AutoSize = true;
 Me.gridControl.TableStyle.AutoSize = True
 {% endhighlight %}
 {% endtabs %}
-![](working-with-rows-and-columns_images/working-with-rows-and-columns_img18.png)
+![](working-with-rows-and-columns_images/working-with-rows-and-columns_img18.png)  
 
 ## Auto Sizing Custom Cells
-When custom controls are placed in the Grid, the corresponding cell can be automatically resized to fit the controls. It can be achieved by overriding the [OnQueryPrefferedClientSize](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase~OnQueryPrefferedClientSize.html) method in the model class. The [ResizeToFit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFit.html)  method is used to resize the cells while enter the text, but it will not work for Custom controls. The `ResizeToFit` method will resize the cell to the size returned by the `OnQueryPrefferedClientSize` method.
+When custom controls are placed in the Grid, the corresponding cell can be automatically resized to fit the controls. It can be achieved by overriding the [OnQueryPrefferedClientSize](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase~OnQueryPrefferedClientSize.html) method in the model class. The [ResizeToFit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFit.html)  method is used to resize the cells while enter the text, but it will not work for Custom controls. The `ResizeToFit` method will resize the cell to the size returned by the `OnQueryPreferredClientSize` method.
 
 {% tabs %}
 {% highlight c# %}
 // Overrides this method to calculate proper control size and returns the same.
-protected override Size OnQueryPrefferedClientSize(Graphics g, int rowIndex, int colIndex, GridStyleInfo style, GridQueryBounds queryBounds)
+protected override Size OnQueryPreferredClientSize(Graphics g, int rowIndex, int colIndex, GridStyleInfo style, GridQueryBounds queryBounds)
 {
 if(Grid[rowIndex,colIndex].Tag == null)
 throw new Exception("No User Control is tagged");
@@ -524,7 +524,7 @@ return size;
 {% endhighlight %}
 {% highlight vb %}
 'Overrides this method to calculate proper control size and return the same.
-Protected Overrides Function OnQueryPrefferedClientSize(ByVal g As Graphics, ByVal rowIndex As Integer, ByVal colIndex As Integer, ByVal style As GridStyleInfo, ByVal queryBounds As GridQueryBounds) As Size
+Protected Overrides Function OnQueryPreferredClientSize(ByVal g As Graphics, ByVal rowIndex As Integer, ByVal colIndex As Integer, ByVal style As GridStyleInfo, ByVal queryBounds As GridQueryBounds) As Size
 If Grid(rowIndex, colIndex).Tag Is Nothing Then
 Throw New Exception("No User Control is tagged")
 Else
@@ -580,7 +580,7 @@ The `EnterKeyBehavior` is worked based on the [WrapCellBehavior](http://help.syn
 
 The [GridWrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.html) has the following list of options,
 
-* **WrapRow** – It will move the cell selection to the leftmost cell of the next row or right most cell of the previous row according to the `EnterkeyBehavior`.
+* **WrapRow** – It will move the cell selection to the leftmost cell of the next row or right most cell of the previous row according to the `EnterKeyBehavior`.
 * **WrapGrid** – It includes the WrapRow behavior additionally it will navigate the selection to the topmost left cell when it reaches the bottommost right cell.
 * **NextControlInForm** – It also includes the WrapRow behavior, instead of moving to the Topmost left cell it will move the focus to the next control of the form.
 * **None** – It will not move the selection at the end of the row.

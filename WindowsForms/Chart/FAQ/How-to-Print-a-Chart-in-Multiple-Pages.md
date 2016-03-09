@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Print a Chart in Multiple Pages 
 
-To print a Chart in multiple page, use the PrintPage event to specify the range of X and Y axis. Specify the minium and maxium value in the _Range_ property of the axis you want to divide. Set the HasMorePages__property to true in the events before specifying the range values and set this to false after chart default maxium value. The following code illustrates this: 
+To print a Chart in multiple page, use the PrintPage event to specify the range of X and Y axis. Specify the minimum and maximum value in the _Range_ property of the axis you want to divide. Set the HasMorePages__property to true in the events before specifying the range values and set this to false after chart default maximum value. The following code illustrates this: 
 
  {% highlight c# %}
 
@@ -473,7 +473,7 @@ End Sub
 
 {% endhighlight %}
 
-N> Note: The initial page will be printed based on the specified minium and maxium value. In further pages minum value will be the maxium value of previous page and maxium will be the sum of current page minum value and the specified maxium value in the Range._
+N> Note: The initial page will be printed based on the specified minimum and maximum value. In further pages minimum value will be the maximum value of previous page and maximum will be the sum of current page minimum value and the specified maximum value in the Range._
 
 
 _Events_

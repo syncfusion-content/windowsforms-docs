@@ -59,7 +59,7 @@ To view the samples, follow the steps below
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
   
    
-3. Select Chart frombottom-left pane. Chart samples will be displayed.
+3. Select Chart from bottom-left pane. Chart samples will be displayed.
    
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
    

@@ -244,7 +244,7 @@ Renko chart.</td></tr>
 <td>
 {{ '[DisplayShadow](/windowsforms/chart/chart-series#displayshadow)' | markdownify }}</td><td>
 Series and points</td><td>
-Area Chart, Bar Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, Stepline Chart, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Threeline Break Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart.</td></tr>
+Area Chart, Bar Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, Stepline Chart, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Three line Break Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart.</td></tr>
 <tr>
 <td>
 {{ '[DisplayText](/windowsforms/chart/chart-series#displaytext)' | markdownify }}</td><td>
@@ -499,7 +499,7 @@ Kagi, PointAndFigure, Renko</td></tr>
 <td>
 {{ '[Rotate](/windowsforms/chart/chart-series#rotate)' | markdownify }}</td><td>
 Series</td><td>
-Column Charts, Bar Charts, Area charts, Line Chart, Spline Chart, Stepline Chart, Candle Chart, HiLo Chart, HiLo Open Chart, Kagi Chart, BoxandWhisker chart, Histogram chart, Polar and Radar Chart.</td></tr>
+Column Charts, Bar Charts, Area charts, Line Chart, Spline Chart, Stepline Chart, Candle Chart, HiLo Chart, HiLo Open Chart, Kagi Chart, Box and Whisker chart, Histogram chart, Polar and Radar Chart.</td></tr>
 <tr>
 <td>
 {{ '[ScatterConnectType](/windowsforms/chart/chart-series#scatterconnecttype)' | markdownify }}</td><td>
@@ -1381,7 +1381,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-<ul><li> <b>DarkLight</b> -Draws series data points as a darklight colorsmode.</li><li> <b>Fixed</b> - Draws series data points as a Fixed colorsmode.</li><li> <b>Mixed</b> - Draws series data points as a Mixed colorsmode.</li></ul></td></tr>
+<ul><li> <b>DarkLight</b> -Draws series data points as a dark light colors mode.</li><li> <b>Fixed</b> - Draws series data points as a Fixed color smode.</li><li> <b>Mixed</b> - Draws series data points as a Mixed colors mode.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -1535,7 +1535,7 @@ All series and points</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Area Chart, Bar Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, Stepline Chart, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Threeline Break Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart, Pie Chart, Polar And Radar Chart, Step Area Chart</td></tr>
+Area Chart, Bar Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, Stepline Chart, Candle Chart, Kagi Chart, Point and Figure Chart, Renko Chart, Three line Break Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart, Pie Chart, Polar And Radar Chart, Step Area Chart</td></tr>
 </table>
 
 
@@ -1690,7 +1690,7 @@ Me.chartControl1.Series(0).Styles(0).TextColor = Color.LightSlateGray
 
 {%endseealso %}
 
-### DoughnutCoeficient
+### DoughnutCoefficient
 
 Specifies the percentage of the overall radius of the chart that will be used for the Doughnut center hole. For example, if it is set to 0, the doughnut hole will not exist, therefore, the chart will look like a Pie chart. 
 
@@ -1726,9 +1726,9 @@ Doughnut Chart, Pie Chart.</td></tr>
 </table>
 
 
-PieCharts with a DoughnutCoeficient specified will be rendered as doughnuts. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie.
+PieCharts with a DoughnutCoefficient specified will be rendered as doughnuts. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie.
 
-The DoughnutCoeficient property specifies the fraction of the radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
+The DoughnutCoefficient property specifies the fraction of the radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
 {% highlight c# %}
 
@@ -2324,7 +2324,7 @@ this.chartControl1.Series(0).Styles(0).ElementBorders = cbi
 
 ### EnablePhongStyle
 
-Specifies if the PhongStyle is enabled.
+Specifies if the phong style is enabled.
 
 
 
@@ -3465,7 +3465,7 @@ Me.chartControl1.ChartArea.Depth = 25f
 
 {% endseealso %}
 
-### HeightCoeficient
+### HeightCoefficient
 
 When in 3D mode, the relative height of the pie chart can be specified via the property. Note that the HeightByAreaDepth property should be set as false for this to take effect. 
 
@@ -3864,7 +3864,7 @@ series1.Styles(1).Symbol.Shape = ChartSymbolShape.Image
 
 ### Images
 
-Gets / sets the imagelist that is to be associated with this ChartPoint. This property is used in conjunction with the ImageIndex property to display images associated with this point.
+Gets / sets the image list that is to be associated with this ChartPoint. This property is used in conjunction with the ImageIndex property to display images associated with this point.
 
 
 
@@ -5197,7 +5197,7 @@ Kagi Chart, Point and Figure Chart, Renko Chart, Three Line Break Chart</td></tr
 </table>
 
 
-Here is code snippet using PriceDownColor in PointandFigure Chart.
+Here is code snippet using PriceDownColor in point and figure Chart.
 
 {% highlight c# %}
 
@@ -5257,7 +5257,7 @@ Any series</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Kagi Chart, PointandFigure Chart, Renko Chart, Three Line Break Chart</td></tr>
+Kagi Chart, Point and Figure Chart, Renko Chart, Three Line Break Chart</td></tr>
 </table>
 
 
@@ -5719,7 +5719,7 @@ Any Series</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Column Charts, Bar Charts, Area charts, Line Chart, Spline Chart, Stepline Chart, BoxandWhisker chart, Histogram chart, Polar and Radar Chart, Bubble And Scatter Chart</td></tr>
+Column Charts, Bar Charts, Area charts, Line Chart, Spline Chart, Stepline Chart, Box and Whisker chart, Histogram chart, Polar and Radar Chart, Bubble And Scatter Chart</td></tr>
 </table>
 
 
@@ -5746,7 +5746,7 @@ Private Me.chartControl1.Series(0).Rotate = True
 
 {% seealso %}
 
-[Column Charts](/windowsforms/chart/chart-types#column-charts) , [Bar Charts](/windowsforms/chart/chart-types#bar-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Line Chart](/windowsforms/chart/chart-types#line-chart), [Spline Chart](/windowsforms/chart/chart-types#spline-chart), [Stepline Chart](/windowsforms/chart/chart-types#step-line-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [BoxandWhisker chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Bubble And Scatter Chart](/windowsforms/chart/chart-types#xy-charts-bubble-and-scatter)
+[Column Charts](/windowsforms/chart/chart-types#column-charts) , [Bar Charts](/windowsforms/chart/chart-types#bar-charts), [AreaChart](/windowsforms/chart/chart-types#area-chart), [Line Chart](/windowsforms/chart/chart-types#line-chart), [Spline Chart](/windowsforms/chart/chart-types#spline-chart), [Stepline Chart](/windowsforms/chart/chart-types#step-line-chart), [Kagi Chart](/windowsforms/chart/chart-types#kagi-chart), [Box and Whisker chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Histogram chart](/windowsforms/chart/chart-types#histogram-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [Bubble And Scatter Chart](/windowsforms/chart/chart-types#xy-charts-bubble-and-scatter)
 
 {% endseealso %}
 
@@ -5992,7 +5992,7 @@ All Series</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Column Chart, BarCharts, Candle Chart, HiLO Chart, HiLoOpenClose Chart, Tornado chart, BoxandWhisker chart, Gantt Chart, Histogram Chart, Polar and Radar Chart</td></tr>
+Column Chart, BarCharts, Candle Chart, HiLO Chart, HiLoOpenClose Chart, Tornado chart, Box and Whisker chart, Gantt Chart, Histogram Chart, Polar and Radar Chart</td></tr>
 </table>
 
 
@@ -6243,7 +6243,7 @@ Details</th></tr>
 <tr>
 <td>
 Possible Values</td><td colspan = "2">
-<ul><li>True - Displays the databind labels.</li><li> False - Hides the databind labels.</li></ul></td></tr>
+<ul><li>True - Displays the data bind labels.</li><li> False - Hides the data bind labels.</li></ul></td></tr>
 <tr>
 <td>
 <br>Default Value     </td><td colspan = "2">
@@ -6987,7 +6987,7 @@ Any Series</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Column Chart, Bar Chart, Bubble Chart, Financial Chart, Line Chart, BoxandWhisker Chart, Gantt chart, Tornado chart, Radar Chart, Polar Chart, Area Charts, Scatter Chart</td></tr>
+Column Chart, Bar Chart, Bubble Chart, Financial Chart, Line Chart, Box and Whisker Chart, Gantt chart, Tornado chart, Radar Chart, Polar Chart, Area Charts, Scatter Chart</td></tr>
 </table>
 
 
@@ -7779,7 +7779,7 @@ Any Series</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Scatter Chart, Hilo Open Close Chart(3D),Column Charts, BarCharts, Bubble Chart,Line Charts,  BoxandWhisker Chart, Tornado Chart, Combination Chart, Gantt Chart,Candle Chart, HiLo Chart(3D), PolarAndRadar, PieChart,Accumulation Charts, Area Charts</td></tr>
+Scatter Chart, Hilo Open Close Chart(3D),Column Charts, BarCharts, Bubble Chart,Line Charts,  Box and Whisker Chart, Tornado Chart, Combination Chart, Gantt Chart,Candle Chart, HiLo Chart(3D), PolarAndRadar, PieChart,Accumulation Charts, Area Charts</td></tr>
 </table>
 
 
@@ -7909,7 +7909,7 @@ Any Series and Points</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Scatter Chart, Hilo Open Close Chart(3D),Column Charts, BarCharts, Bubble Chart,Line Charts,  BoxandWhisker Chart, Tornado Chart, Combination Chart, Gantt Chart,Candle Chart, HiLo Chart(3D), PolarAndRadar, PieChart,Accumulation Charts, Area Charts</td></tr>
+Scatter Chart, Hilo Open Close Chart(3D),Column Charts, BarCharts, Bubble Chart,Line Charts,  Box and Whisker Chart, Tornado Chart, Combination Chart, Gantt Chart,Candle Chart, HiLo Chart(3D), PolarAndRadar, PieChart,Accumulation Charts, Area Charts</td></tr>
 </table>
 
 
@@ -7940,7 +7940,7 @@ Me.chartControl1.Series[1].Style.ToolTipFormat = "Y = {0}"
 
 #### Specific Data Point Setting
 
-ToolTipformat can be applied for individual points by using Series.Styles[0].ToolTipFormat property settings.
+Tooltip format can be applied for individual points by using Series.Styles[0].ToolTipFormat property settings.
 
 {% highlight c# %}
 
@@ -7994,7 +7994,7 @@ Details</th></tr>
 <tr>
 <td colspan = "2">
 Possible Values</td><td>
-<ul><li> True - Unhides the associated series.</li><li> False - Hides the associated series.</li></ul></td></tr>
+<ul><li> True - Unhide the associated series.</li><li> False - Hides the associated series.</li></ul></td></tr>
 <tr>
 <td colspan = "2">
 <br>Default Value     </td><td>

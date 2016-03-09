@@ -21,7 +21,7 @@ The above problem can be resolved in the following two ways:
 
 ## Solution 1:
 
-If the usage of Application.DoEvents is mandatory, then the simplest way to get rid of this problem is by calling the grid.CancelUpdate before triggering Appplication.DoEvents. After that, the grid can be updated with the call to Grid.BeginUpdate.
+If the usage of Application.DoEvents is mandatory, then the simplest way to get rid of this problem is by calling the grid.CancelUpdate before triggering Application.DoEvents. After that, the grid can be updated with the call to Grid.BeginUpdate.
 
 ## Solution 2:
 
