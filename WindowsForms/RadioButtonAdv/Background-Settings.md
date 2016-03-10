@@ -13,7 +13,7 @@ The background settings of the RadioButtonAdv are discussed below.
 
 The RadioButtonAdv can be provided with a gradient background using the properties given below.
 
-Table 415 : Property Table
+Property Table
 
 <table>
 <tr>

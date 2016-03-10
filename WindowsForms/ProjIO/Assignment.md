@@ -15,7 +15,7 @@ Assignment class is used to bind resources to tasks. It can also be used to retr
 
 ### Constructors
 
-_Table_ _13_: _Assignment Constructor_
+Assignment Constructor
 
 <table>
 <tr>
@@ -30,7 +30,7 @@ Initializes a new instance of Assignment class.</td></tr>
 
 ### Properties
 
-_Table_ _14_: _Assignment Properties_
+Assignment Properties
 
 <table>
 <tr>
@@ -305,7 +305,7 @@ Gets or sets the time phased data associated with the assignment.</td></tr>
 
 ### Methods
 
-_Table_ _15_: _Assignment Methods_
+Assignment Methods
 
 <table>
 <tr>

@@ -225,7 +225,7 @@ The AllowTabGroupCustomizing property indicates whether the user can drag and dr
 
 The below methods can be used for specific functionalities in TabGroups.
 
-_Table_ _853_: Methods Table
+Methods Table
 
 <table>
 <tr>

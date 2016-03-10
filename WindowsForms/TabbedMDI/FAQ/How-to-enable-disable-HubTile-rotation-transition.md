@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve it by setting HubTileTileType property as DefaultType, so that rotation transition will be disabled.
 
-_Table_ _986_: _Property Table_
+Property Table
 
 <table>
 <tr>

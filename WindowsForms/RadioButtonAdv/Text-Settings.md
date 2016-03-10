@@ -13,7 +13,7 @@ This section discusses the text settings of the RadioButtonAdv.
 
 Text in the RadioButtonAdv can be shadowed and wrapped as illustrated below.
 
-Table 409 : Property Table
+Property Table
 
 <table>
 <tr>

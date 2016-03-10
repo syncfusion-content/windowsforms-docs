@@ -11,7 +11,7 @@ documentation: ug
 
 TouchStyleColorTable helps to customize appearance of each and every item in RibbonControlAdv. The items of the RibbonControlAdv can be customized by using the property given here.
 
-_Table805: Property Table_
+Property Table
 
 <table>
 <tr>

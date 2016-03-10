@@ -13,7 +13,7 @@ LoadOnDemand feature is to give a delay in loading a node in a Tree, before the 
 
 By setting LoadOnDemand property to true, the plus(+) and minus(-) of all the nodes will be visible in the beginning. By handling the BeforeExpand event of the nodes, sub nodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether or not the children are added.
 
-_Table_ _914_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -30,7 +30,7 @@ AddSeparatorAtEnd</td><td>
 Indicates if the TreeNodeAdv.GetPath method adds a separator at the end of the path string returned.</td></tr>
 </table>
 
-_Table_ _915_: _Methods Table_
+Methods Table
 
 <table>
 <tr>

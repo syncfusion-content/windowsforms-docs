@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve it by using HubTileIsSelectionMarked property.
 
-_Table_ _985_: _Property Table_
+Property Table
 
 <table>
 <tr>

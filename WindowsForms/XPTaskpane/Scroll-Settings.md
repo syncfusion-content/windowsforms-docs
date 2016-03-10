@@ -11,7 +11,7 @@ documentation: ug
 
 XPTaskPane Enables vertical scrolling for the pages using VerticalScroll property. On mouse hovering over the scroll bar, the task page automatically moves and show the hidden contents. Scrolling speed can be fixed using ScrollSpeed property.
 
-_Table_ _976_: Property Table
+Property Table
 
 <table>
 <tr>

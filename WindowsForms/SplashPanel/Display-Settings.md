@@ -13,7 +13,7 @@ The section illustrates the display settings available for the SplashPanel contr
 
 The SplashPanel can be displayed or hidden according to the needs of the user. It can be displayed at any specified location. The display settings of the SplashPanel control are illustrated through the following methods.
 
-Table 627: Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -46,7 +46,7 @@ ShowSplash() - This method is used to display the SplashPanel at run time.
 
 The parameters discussed for the ShowSplash() method are as follows.
 
-Table 628: Parameters Table
+Parameters Table
 
 <table>
 <tr>
@@ -128,7 +128,7 @@ When this method is called, the user will not be able to interact with the appli
 
 The parameters discussed for the method are as follows.
 
-Table 629: Parameters Table
+Parameters Table
 
 <table>
 <tr>
@@ -246,7 +246,7 @@ End Sub
 
 The location for displaying the splash window is specified using the property given below.
 
-Table 630: Property Table
+Property Table
 
 <table>
 <tr>
@@ -270,7 +270,7 @@ A Sample which demonstrates the ShowSplash() and ShowSplashDialog() methods is a
 
 The SplashPanel can be displayed in the taskbar and it's appearance can be customized using the properties given below.
 
-Table 631: Property Table
+Property Table
 
 <table>
 <tr>
@@ -323,7 +323,7 @@ Me.splashPanel1.Text = "Splash Panel"
 
 The SplashPanel is, by default, a timed display splash screen. The SplashPanel uses internally, a System.Windows.Forms.Timer, to automatically close the splash screen after the set interval is elapsed. This behavior can be changed by setting the TimerInterval property to -1. 
 
-Table 632: Property Table
+Property Table
 
 <table>
 <tr>
@@ -359,7 +359,7 @@ Me.splashPanel1.TimerInterval = 7000
 
 The user will not be able to close or resize the splash image, which is displayed during run time, normally. But by setting certain properties of the SplashPanel, the user can alter the SplashPanel. These properties are explained below in detail.
 
-Table 638: Property Table
+Property Table
 
 <table>
 <tr>

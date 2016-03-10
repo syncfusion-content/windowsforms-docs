@@ -17,7 +17,7 @@ The topics discussed in this section are given below.
 
 TabbedMDI framework provides the ability to support a number of tab styles. The tabbedMDIManager's TabStyle property lets users specify the required style for the Tabs.
 
-Table 850: Property Table
+Property Table
 
 <table>
 <tr>

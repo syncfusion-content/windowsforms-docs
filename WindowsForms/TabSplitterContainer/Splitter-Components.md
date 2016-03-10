@@ -27,7 +27,7 @@ The splitter in the TabSplitterContainer control has in-built options for changi
 
 The properties which customizes the Splitter page are as follows.
 
-_Table_ _862_: Property Table
+Property Table
 
 <table>
 <tr>

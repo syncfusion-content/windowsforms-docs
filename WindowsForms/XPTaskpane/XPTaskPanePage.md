@@ -15,7 +15,7 @@ XPTaskPane has a TaskPanePageContainer which hosts the Task pages. Any number of
 
 The title text for an XPTaskPage can be edited using XPTaskPage.Title property.
 
-_Table_ _972_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -64,7 +64,7 @@ Me.xpTaskPage1.LayoutName = "Card1"
 
 The below properties controls the border settings for a Task page.
 
-_Table_ _973_: Property Table
+Property Table
 
 <table>
 <tr>

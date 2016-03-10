@@ -200,7 +200,7 @@ This section deals with creating a custom popup window for the DateTimePickerAdv
 
 IDateTimePickerAdvCalendar Interface Members
 
-Table196: Member Table
+Member Table
 
 <table>
 <tr>

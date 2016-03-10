@@ -13,7 +13,7 @@ StatusBarAdvPanel has several text settings which will be discussed in this sect
 
 The text for the StatusBarAdvPanel can be set through the following property.
 
-Table 670: Property Table
+Property Table
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ N> The GetText() method returns text according to the key state.
 
 The text inside the control can be made to float in the marquee style by enabling the property given below.
 
-Table 671: Property Table
+Property Table
 
 <table>
 <tr>
@@ -85,7 +85,7 @@ Me.statusBarAdvPanel1.IsMarquee = True
 
 The animation that has been applied to the text of the StatusBarAdvPanel control can be customized using the properties given below.
 
-Table 672: Property Table
+Property Table
 
 <table>
 <tr>
@@ -142,7 +142,7 @@ Me.statusBarAdvPanel1.AnimationStyle = Syncfusion.Windows.Forms.Tools.MarqueeSty
 
 The animation for the text can be enabled and disabled using the methods associated with the above properties. These methods are given below.
 
-Table 673: Methods Table
+Methods Table
 
 <table>
 <tr>

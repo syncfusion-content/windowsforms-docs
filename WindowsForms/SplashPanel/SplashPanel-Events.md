@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 647: Events Table
+Events Table
 
 <table>
 <tr>
@@ -180,7 +180,7 @@ When the application is loaded and before the splash screen is displayed, the Be
 
 The event handler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs member provides information specific to this event.
 
-Table 648: Member Table
+Member Table
 
 <table>
 <tr>
@@ -354,7 +354,7 @@ At run time, after the splash screen is displayed for a specified time and when 
 
 The event handler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs member provides information specific to this event.
 
-Table 649: Member Table
+Member Table
 
 <table>
 <tr>
@@ -460,7 +460,7 @@ At run time, after the splash screen is displayed for a specified time and when 
 
 The event handler receives an argument of type SplashClosedEventArgs containing data related to this event. The following SplashClosedEventArgs member provides information specific to this event.
 
-Table 650: Member Table
+Member Table
 
 <table>
 <tr>

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appearance Properties
 
-_Table 507: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ Specifies whether XP theme is enabled or not.</td></tr>
 
 ## Behavior Properties
 
-_Table508: Property Table_
+Property Table
 
 <table>
 <tr>

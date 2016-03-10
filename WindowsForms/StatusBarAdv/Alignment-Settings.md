@@ -11,7 +11,7 @@ documentation: ug
 
 The panels and child controls that are added to the StatusBarAdv control can be aligned according to the needs of the user using the property given below.
 
-Table 660: Property Table
+Property Table
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ Me.statusBarAdv1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Center
 
 If the Alignment property is set to 'ChildConstraints', the positioning and resizing of the panels and child controls can be set by calling the SetHAlign() method.
 
-Table 661: Method Table
+Method Table
 
 <table>
 <tr>
@@ -63,7 +63,7 @@ Sets the horizontal alignment options for the control.</td></tr>
 
 The parameters discussed for the SetHAlign() method are as follows.
 
-Table 662: Parameter Table
+Parameter Table
 
 <table>
 <tr>

@@ -15,7 +15,7 @@ The ProgressBarAdv control consists of various properties to customize the backg
 
 The style of the background can be set using the properties given below.
 
-_Table_ _596_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ N> To display the above styles in different colors the BackGradientStartColor an
 
 The background of the ProgressBarAdv can be displayed with a segmented appearance using the property given below.
 
-_Table_ _597_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ This section illustrates the color settings that can be applied to the backgroun
 
 The color of the background gradient can be changed using the properties given below.
 
-_Table_ _598_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -133,7 +133,7 @@ Me.progressBarAdv1.BackGradientStartColor = System.Drawing.Color.IndianRed
 
 The background gradient can be displayed with multiple colors using the property given below.
 
-_Table_ _599_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -165,7 +165,7 @@ Me.progressBarAdv1.BackMultipleColors = New System.Drawing.Color[] {System.Drawi
 
 Colors can be set for the background tube of the ProgressBarAdv.
 
-_Table_ _600_: _Property Table_
+Property Table
 
 <table>
 <tr>

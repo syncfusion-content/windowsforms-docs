@@ -11,7 +11,7 @@ documentation: ug
 
 TabbedMDIManager has AdjustTabGroupWeightsEqually() method to arrange the Tab groups equally.
 
-_Table_ _860_: _Method Table_
+Method Table
 
 <table>
 <tr>

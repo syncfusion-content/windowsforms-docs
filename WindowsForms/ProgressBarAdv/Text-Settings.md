@@ -11,7 +11,7 @@ documentation: ug
 
 The below are ProgressBarAdv properties to customize the text and its alignment.
 
-_Table_ _614_: _Property Table_
+Property Table
 
 <table>
 <tr>

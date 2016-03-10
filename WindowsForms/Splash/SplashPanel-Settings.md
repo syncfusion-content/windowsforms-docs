@@ -13,7 +13,7 @@ This section discusses how a SplashPanel control can be displayed as a SplashScr
 
 The SplashControl allows the user to display a SplashPanel control as the splash screen. The following settings can be changed to customize the SplashPanel in the SplashControl.
 
-Table 620: Property Table
+Property Table
 
 <table>
 <tr>

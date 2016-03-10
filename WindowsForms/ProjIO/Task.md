@@ -15,7 +15,7 @@ Task class exposes ways to create a task for a Project. Task is useful in creati
 
 ### Constructors
 
-_Table_ _7_: _Task Constructors_
+Task Constructors
 
 <table>
 <tr>
@@ -34,7 +34,7 @@ Initializes a new instance of the Task class with the task name. </td></tr>
 
 ### Properties
 
-_Table_ _8_: _Task Properties_
+Task Properties
 
 <table>
 <tr>
@@ -461,7 +461,7 @@ Gets or sets the time phased data block associated with the task.</td></tr>
 
 ### Methods
 
-_Table_ _9_: _Task Methods_
+Task Methods
 
 <table>
 <tr>

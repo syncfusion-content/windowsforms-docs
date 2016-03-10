@@ -17,7 +17,7 @@ The background settings of the TextBoxExt control are discussed below.
 
 The background color of the control can be set using the property given below.
 
-Table 371 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ The foreground settings of the TextBoxExt control are discussed below.
 
 The foreground color of the control can be set using the property given below.
 
-Table 372 : Property Table
+Property Table
 
 <table>
 <tr>

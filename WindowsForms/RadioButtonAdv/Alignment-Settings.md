@@ -15,7 +15,7 @@ This section discusses the alignment settings of the RadioButtonAdv.
 
 Text in the RadioButtonAdv can be aligned to the desired location as given below.
 
-Table 413 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -52,7 +52,7 @@ Me.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.Middle
 
 The RadioButton itself can be aligned to any desired location that can be chosen from the options given in the following property.
 
-Table 414 : Property Table
+Property Table
 
 <table>
 <tr>

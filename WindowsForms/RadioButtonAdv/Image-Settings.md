@@ -13,7 +13,7 @@ The image settings of the RadioButtonAdv control have been discussed in this sec
 
 Images can be set to the RadioButtonAdv when it is in the Checked, Unchecked or Indeterminate state. The RadioButtonAdv allows us to set the following properties in order to display images.
 
-Table 417 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ Me.radioButtonAdv1.StretchImage = False
 
 Images can also be set when the mouse is hovered over the RadioButtonAdv control.
 
-Table 418 : Property Table
+Property Table
 
 <table>
 <tr>

@@ -15,7 +15,7 @@ You can open, modify and create Project files using the Project Class. Project c
 
 ### Constructors
 
-_Table_ _4_: _Project Constructor_
+Project Constructor
 
 <table>
 <tr>
@@ -30,7 +30,7 @@ Initializes a new instance of the Project class</td></tr>
 
 ### Properties
 
-_Table_ _5_: _Project Properties_
+Project Properties
 
 <table>
 <tr>
@@ -341,7 +341,7 @@ Gets or sets the collection of assignments that make up the project.</td></tr>
 
 ### Methods
 
-_Table_ _6_: _Project Methods_
+Project Methods
 
 <table>
 <tr>

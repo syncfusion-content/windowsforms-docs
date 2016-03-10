@@ -612,7 +612,7 @@ This feature can be enabled for sections of the Edit Control contents, by settin
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -742,7 +742,7 @@ You can also set the underlining from the configuration file, as shown in the be
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2618,7 +2618,7 @@ The Auto Indentation characters can be specified by setting the Indent field to 
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

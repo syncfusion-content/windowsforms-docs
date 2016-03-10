@@ -37,7 +37,7 @@ this.dockingManager1.ShowMenu(this.listBox1, new Point(100,100));
 }
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

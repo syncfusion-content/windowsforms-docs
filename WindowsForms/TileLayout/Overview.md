@@ -17,7 +17,7 @@ This feature can be used in any kind of application that is used to showcase ite
 
 #### Properties
 
-_Table_ _863_: Property Table
+Property Table
 
 <table>
 <tr>

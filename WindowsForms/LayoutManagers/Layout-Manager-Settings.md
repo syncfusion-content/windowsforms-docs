@@ -176,7 +176,8 @@ Me.borderLayout1.HorzNearMargin = 20
 Me.borderLayout1.BottomMargin = 20
 
 {% endhighlight  %}
-![](Overview_images/Overview_img11.jpeg) | markdownify }
+
+![](Overview_images/Overview_img11.jpeg)
 
 
 

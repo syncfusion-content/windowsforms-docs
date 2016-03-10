@@ -35,7 +35,7 @@ InteractiveCheckBox settings available for the treeNodeAdv indicates whether the
 
 The TreeNodeAdvEventHandler receives an argument of type TreeNodeAdvEventArgs containing data related to this event. The following TreeNodeAdvEventArgs members provide information specific to this event.
 
-_Table_ _924_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -185,7 +185,7 @@ This event is triggered when the key is first pressed. An example which uses the
 
 The KeyEventHandler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs members provide information specific to this event.
 
-_Table_ _925_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -293,7 +293,7 @@ This event is triggered when the key is first pressed. An example which uses the
 
 The KeyEventHandler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs members provide information specific to this event.
 
-_Table 925: Members Table_
+Members Table
 <table>
 <tr>
 <th>
@@ -371,7 +371,8 @@ End Sub
  
 ![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
 
-_Figure 1555: Nodes added using Keyboard_
+Nodes added using Keyboard
+{:.caption}
 
 
 ### BeforeCheck Event
@@ -382,7 +383,7 @@ This event is triggered when the checkbox is checked in the control. Below is an
 
 The TreeNodeAdvBeforeCheckEventHandler receives an argument of type TreeNodeAdvBeforeCheckEventArgs containing data related to this event. The following  TreeNodeAdvBeforeCheckEventArgs' members provide information specific to this event.
 
-_Table_ _926_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -639,7 +640,7 @@ End Sub
 
 TreeViewAdv has properties that specifies the collection of expanded nodes, collapsed nodes, checked nodes and selected nodes.
 
-_Table_ _927_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -809,7 +810,7 @@ Event Data
 
 The TreeNodeAdvCancelableEditEventHandler receives an argument of type TreeNodeAdvCancelableEditEventArgs containing data related to this event. The following TreeNodeAdvCancelableEditEventArgs members provide information specific to this event.
 
-_Table_ _928_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -896,7 +897,7 @@ Event Data
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _929_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -964,7 +965,7 @@ This event is triggered when the text entered by the user changes in the Node ed
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _930_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1076,7 +1077,7 @@ This event is raised before the node goes into edit mode. Below are examples whi
 
 The TreeNodeAdvBeforeEditEventHandler receives an argument of type TreeNodeAdvBeforeEditEventArgs containing data related to this event. The following  TreeNodeAdvBeforeEditEventArgs' members provide information specific to this event.
 
-_Table_ _931_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1251,7 +1252,7 @@ If a user needs to get a particular node’s details as it is being tracked by t
 
 #### Event Table
 
-_Table_ _932_: Events Table
+Events Table
 
 <table>
 <tr>
@@ -1312,7 +1313,7 @@ Event Data
 
 The MouseEventHandler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _933_: Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1442,7 +1443,7 @@ MouseWheelZoom event occurs when the user holds the Control Key and rolls the mo
 
 The event handler receives an argument of type MouseWheelZoomEventArgs containing data related to this event. The following MouseWheelZoomEventArgs member provide information specific to this event.
 
-_Table_ _934_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -1497,7 +1498,7 @@ Event Data
 
 The event handler receives an argument of type IntellijMouseDragScrollEventArgs containing data related to this event. The following IntellijMouseDragScrollEventArgs members provide information specific to this event.
 
-_Table_ _935_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -1609,7 +1610,7 @@ The event NodeMouseClick is raised when the mouse pointer is over the TreeNodeAd
 
 The TreeViewAdvMouseClickEventArgs contain the following members to provide information specific to this event.
 
-_Table_ _936_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1859,7 +1860,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _937_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -1993,7 +1994,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _938_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2127,7 +2128,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _939_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2261,7 +2262,7 @@ The event, MouseDown is raised when the mouse pointer is over the control and a 
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _940_: Members Table_
+Members Table
 
 <table>
 <tr>
@@ -2325,7 +2326,7 @@ Event Data
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _941_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2389,7 +2390,7 @@ The event, MouseUp is raised when the mouse pointer is over the control and a mo
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _942_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2457,7 +2458,7 @@ This event is triggered when the user is dragging the scrollbar thumb.
 
 The event handler receives an argument of type ScrollTipFeedbackEventArgs containing data related to this event. The following ScrollTipFeedbackEventArgs members provide information specific to this event.
 
-_Table_ _943_: Members Table
+Members Table
 
 <table>
 <tr>

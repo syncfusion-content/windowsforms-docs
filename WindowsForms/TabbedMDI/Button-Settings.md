@@ -191,7 +191,7 @@ Using this feature you can hide the close button for the tabs you want to restri
 
 #### Methods
 
-_Table_ _852_: Method Table_
+Method Table
 
 <table>
 <tr>
