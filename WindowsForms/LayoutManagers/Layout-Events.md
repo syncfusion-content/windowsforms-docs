@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Events | Windows Forms | Syncfusion
+title: Layout Events | WindowsForms | Syncfusion
 description: layout events
 control: Layout Managers Package
 documentation: ug
@@ -119,7 +119,7 @@ Gets / sets the size to be returned.</td></tr>
 </table>
 
 
-You can handle this event to autosize the Label control when you increase / decrease the form width.
+You can handle this event to auto size the Label control when you increase / decrease the form width.
 
 
 {% highlight c# %}

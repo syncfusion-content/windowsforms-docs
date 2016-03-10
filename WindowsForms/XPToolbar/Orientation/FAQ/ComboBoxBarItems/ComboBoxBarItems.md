@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboBoxBarItems | Windows Forms | Syncfusion
+title: ComboBoxBarItems | WindowsForms | Syncfusion
 description: comboboxbaritems
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

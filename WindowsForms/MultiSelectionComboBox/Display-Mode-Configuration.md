@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display-Mode-Configuration | Windows Forms | Syncfusion
+title: Display-Mode-Configuration | WindowsForms | Syncfusion
 description: display mode configuration
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

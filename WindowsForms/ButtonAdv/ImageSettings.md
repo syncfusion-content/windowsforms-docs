@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Image Settings | Windows Forms | Syncfusion
+title: Image Settings | WindowsForms | Syncfusion
 description: Image Settings
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
@@ -40,7 +40,7 @@ Description</th></tr>
 <tr>
 <td>
 ImageList</td><td>
-Sets the imagelist used for this control.</td></tr>
+Sets the image list used for this control.</td></tr>
 <tr>
 <td>
 ImageAlign</td><td>

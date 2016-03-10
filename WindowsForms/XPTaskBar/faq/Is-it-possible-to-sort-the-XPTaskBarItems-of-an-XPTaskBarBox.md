@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Is it possible to sort the XPTaskBarItems of an XPTaskBarBox | Windows Forms | Syncfusion
+title: Is it possible to sort the XPTaskBarItems of an XPTaskBarBox | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---

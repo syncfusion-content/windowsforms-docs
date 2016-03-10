@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Algebra-Supported-In-Expressions--Filters | Windows Forms | Syncfusion
+title: Algebra-Supported-In-Expressions--Filters | WindowsForms | Syncfusion
 description: algebra supported in expressions / filters
-platform: windowsforms
+platform: WindowsForms
 control: Grouping
 documentation: ug
 ---

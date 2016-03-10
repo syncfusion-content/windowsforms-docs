@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-a-Simple-XPTaskPane | Windows Forms | Syncfusion
+title: Creating-a-Simple-XPTaskPane | WindowsForms | Syncfusion
 description: creating a simple xptaskpane
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskPane
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tooltip Settings  | Windows Forms | Syncfusion
+title: Tooltip Settings  | WindowsForms | Syncfusion
 description: Tooltip Settings 
-platform: windowsforms
+platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---

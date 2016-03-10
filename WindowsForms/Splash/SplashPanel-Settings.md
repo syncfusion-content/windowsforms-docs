@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SplashPanel-Settings | Windows Forms | Syncfusion
+title: SplashPanel-Settings | WindowsForms | Syncfusion
 description: splashpanel settings
-platform: windowsforms
+platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---

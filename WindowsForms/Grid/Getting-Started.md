@@ -108,7 +108,7 @@ Syncfusion.XlsIO.Base.WPF contains fundamental and base classes for creating and
 
 This section explains about creating Simple GridControl with some basic functionalities of it.
 
-### Adding GridControl via Designer
+### Adding GridControl through Designer
 
 Grid Control can be added through designer by following the below steps.
 
@@ -128,7 +128,7 @@ Grid Control can be added through designer by following the below steps.
   ![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img2.jpeg)
 
 
-### Adding GridControl via Code
+### Adding GridControl through Code
 
 GridControl can be added through code-behind by following the below steps.
 

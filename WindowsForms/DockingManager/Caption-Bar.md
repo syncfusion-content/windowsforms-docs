@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Caption-Bar | Windows Forms | Syncfusion
+title: Caption-Bar | WindowsForms | Syncfusion
 description: caption bar
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
@@ -223,7 +223,7 @@ The visibility of the Close button can be controlled using the CloseEnabled prop
 
 ### AutoHide Button
 
-Setting AutoHideEnabled property shows or hides the auto hide button in the docked control. Clicking this button will [autohide the docked controls](/windowsforms/dockingmanager/Docking-Styles.html#oncaptiondoubleclick-event).
+Setting AutoHideEnabled property shows or hides the auto hide button in the docked control. Clicking this button will [auto hide the docked controls](/windowsforms/dockingmanager/Docking-Styles.html#oncaptiondoubleclick-event).
 
 
 N> Docking Manager let you customize the above default buttons and also add custom caption buttons. See [Custom Caption Buttons](/windowsforms/dockingmanager/caption-bar.html#custom-caption-buttons) for more details.

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DefaultTile | Windows Forms | Syncfusion
+title: DefaultTile | WindowsForms | Syncfusion
 description: defaulttile
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---

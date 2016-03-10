@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-customize-the-Context-Menu-to-display-the-name-of-the-selected-node-when-right-clicked-on-it | Windows Forms | Syncfusion
+title: How-to-customize-the-Context-Menu-to-display-the-name-of-the-selected-node-when-right-clicked-on-it | WindowsForms | Syncfusion
 description: how to customize the context menu to display the name of the selected node when right clicked on it
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

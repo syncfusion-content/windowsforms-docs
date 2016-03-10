@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization-and-Globalization | Windows Forms | Syncfusion
+title: Localization-and-Globalization | WindowsForms | Syncfusion
 description: localization and globalization
-platform: windowsforms
+platform: WindowsForms
 control: Edit
 documentation: ug
 ---
@@ -75,7 +75,7 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
 
 
-10. The version (1.0.0.0) that you specify for these DLLs in the above al command, should be based on the SatelliteContractVersionAttribute setting in the product AssemblyInfo.cs file in Edit source. Note that the incorrect version won't localize the assembly properly.
+10. The version (1.0.0.0) that you specify for these DLLs in the above all command, should be based on the SatelliteContractVersionAttribute setting in the product AssemblyInfo.cs file in Edit source. Note that the incorrect version won't localize the assembly properly.
 
 
 

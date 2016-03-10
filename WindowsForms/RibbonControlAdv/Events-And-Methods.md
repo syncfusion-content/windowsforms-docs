@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events-And-Methods | Windows Forms | Syncfusion
+title: Events-And-Methods | WindowsForms | Syncfusion
 description: events and methods
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---

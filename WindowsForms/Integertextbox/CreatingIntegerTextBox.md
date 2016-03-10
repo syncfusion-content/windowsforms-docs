@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating IntegerTextBox | Windows Forms | Syncfusion
+title: Creating IntegerTextBox | WindowsForms | Syncfusion
 description: creating integertextbox
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 # Creating IntegerTextBox
 
 
-This section will give a step by step procedure to design an IntegerTextBox control through designer and also through programmatical approach.
+This section will give a step by step procedure to design an IntegerTextBox control through designer and also through programming approach.
 
 ## Through Designer
 
@@ -30,7 +30,7 @@ This section will give a step by step procedure to design an IntegerTextBox cont
 
 ## Through Programmatical Approach
 
-The IntegerTextBox control can be created programmatically through code as detailed below.
+The IntegerTextBox control can be created programming through code as detailed below.
 
 1. Include the required namespace.
    

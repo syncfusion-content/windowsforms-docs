@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing the Calendar | Windows Forms | Syncfusion
+title: Customizing the Calendar | WindowsForms | Syncfusion
 description: customizing the calendar
-platform: windowsforms
+platform: WindowsForms
 control: Calendar
 documentation: ug
 ---

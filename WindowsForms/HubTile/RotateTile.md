@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RotateTile | Windows Forms | Syncfusion
+title: RotateTile | WindowsForms | Syncfusion
 description: rotatetile
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
@@ -49,7 +49,7 @@ Me.HubTile1.RotationTransition = TileFlipDirection.Horizontal
 
 ## Vertical Transition
 
-Tile gets rotated vertically. The following image illustrates the Verticalrotation.
+Tile gets rotated vertically. The following image illustrates the Vertical rotation.
 
 ![](Concept-and-Features_images/Concept-and-Features_img5.png) 
 

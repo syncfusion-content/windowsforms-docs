@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoAppend | Windows Forms | Syncfusion
+title: AutoAppend | WindowsForms | Syncfusion
 description: AutoAppend
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
@@ -89,7 +89,7 @@ Description</th></tr>
 <tr>
 <td>
 SetAutoAppend</td><td>
-Sets AutoAppend behavior for the control specified. The parameters are,{{ 'control' | markdownify }} - control to which auto append class has to be associated.{{ 'autoAppendInfo' | markdownify }} - Initializes an AutoAppendInfo class which  has three parameters - {{ 'AutoAppend' | markdownify }} - specifies whether autoappend is enabled or not (true or false){{ 'categoryName' | markdownify }} - category to which contents in this control belong to.{{ 'items' | markdownify }} - Reference to an item list.{{ 'maxItems' | markdownify }} - specifies maximum number of items.</td></tr>
+Sets AutoAppend behavior for the control specified. The parameters are,{{ 'control' | markdownify }} - control to which auto append class has to be associated.{{ 'autoAppendInfo' | markdownify }} - Initializes an AutoAppendInfo class which  has three parameters - {{ 'AutoAppend' | markdownify }} - specifies whether auto append is enabled or not (true or false){{ 'categoryName' | markdownify }} - category to which contents in this control belong to.{{ 'items' | markdownify }} - Reference to an item list.{{ 'maxItems' | markdownify }} - specifies maximum number of items.</td></tr>
 <tr>
 <td>
 GetAutoAppend</td><td>

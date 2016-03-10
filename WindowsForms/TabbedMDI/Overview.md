@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -32,7 +32,7 @@ The TabbedMDI framework contains the TabbedMDIManager control with features to c
 
 * Button Settings - Options to add [DropDown](/windowsforms/tabbedmdi/button-settings#dropdown-button) and [Close buttons](/windowsforms/tabbedmdi/button-settings#close-button) are available. Close buttons can be displayed individually for each tab. The color of the close button can be set according to the needs of the user. It also provides options to close tabs on clicking the middle button of the mouse.
 * Appearance Settings - User Controls, Images and Icons can be added to the Tabs. Options are provided to customize the tab's text and image and control the tab's image size. Themed tabs can be displayed using the ThemesEnabled property.
-* Context Menu - [Context Menu](/windowsforms/tabbedmdi/interactive-features#context-menu) Items of the Tabs can be customized. Customized Bar Items can be added to the default context menu by accessing the ParentBarItem instance through the contextMenuItem.Items.Add(baritem) property.
+* Context Menu - [Context Menu](/windowsforms/tabbedmdi/interactive-features#context-menu) Items of the Tabs can be customized. Customized Bar Items can be added to the default context menu by accessing the ParentBarItem instance through the contextMenuItem.Items.Add(bar item) property.
 * Automatic State Persistence - TabbedMDI provides full state persistence support. The TabbedMDIManager automatically persists Tab Groups and Tab Group Sizes for use across application invocations.
 * Serialization Support - Provides [serialization support](/windowsforms/tabbedmdi/serialization-support) to save and load the Tab States.
 * Tooltip Support - Tooltips can be enabled for individual Tabs.
@@ -101,7 +101,7 @@ To create a TabbedMDIManager through designer,
 
 
 
-N> The DetachFromMdiContainer method is used to detach an MDIParent from the TabbedMDIManager.
+N> The DetachFromMdIContainer method is used to detach an MDIParent from the TabbedMDIManager.
 
 ### Through Code
 
@@ -178,7 +178,7 @@ To create a TabbedMDIManager programmatically,
 
 
 
-6. Attach it to Form1 (MDIContainer). Make sure that the Form1's IsMdiContainer property is set to True. Now the TabbedMDI mode will be turned ON and any new MDIChildren created will be grouped as Tabs. 
+6. Attach it to Form1 (MDIContainer). Make sure that the Form1's IsMdIContainer property is set to True. Now the TabbedMDI mode will be turned ON and any new MDIChildren created will be grouped as Tabs. 
 7. Switch to the design view. Add a new Form (Form2) to your application.
 8. In the Form1_Load event, include the code snippet given below. This calls Form2 that is created and displays it in Form1. 
 

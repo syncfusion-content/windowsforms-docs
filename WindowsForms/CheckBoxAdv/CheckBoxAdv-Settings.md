@@ -1,8 +1,8 @@
 ---
 layout: post
-title: CheckBoxAdv-Settings | Windows Forms | Syncfusion
+title: CheckBoxAdv-Settings | WindowsForms | Syncfusion
 description: checkboxadv settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -111,7 +111,7 @@ Gets or sets the string value.</td></tr>
 <tr>
 <td>
 BoolValue</td><td>
-Gets / sets a value indicating the check state. This property can be set to use bool values for databinding. Refer Frequently Asked Questions section. </td></tr>
+Gets / sets a value indicating the check state. This property can be set to use bool values for data binding. Refer Frequently Asked Questions section. </td></tr>
 <tr>
 <td>
 IntValue</td><td>

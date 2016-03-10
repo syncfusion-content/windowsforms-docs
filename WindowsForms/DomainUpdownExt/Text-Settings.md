@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text Settings | Windows Forms | Syncfusion
+title: Text Settings | WindowsForms | Syncfusion
 description: text settings
-platform: windowsforms
+platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---

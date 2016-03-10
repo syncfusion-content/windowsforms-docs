@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Behavior Settings | Windows Forms | Syncfusion
+title: Behavior Settings | WindowsForms | Syncfusion
 description: Behavior Settings
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

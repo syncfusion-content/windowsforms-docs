@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating ButtonEdit | Windows Forms | Syncfusion
+title: Creating ButtonEdit | WindowsForms | Syncfusion
 description: Creating ButtonEdit
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
@@ -34,7 +34,7 @@ The ButtonEdit control can be used in situations where a set of buttons are need
 
 
 
-4. Set properties for buttons using the Editor. You can specify the attributes for any of the child buttons through the collection editor or by clicking any button and then selecting the properties in theproperty grid, that display the properties for the selected button.
+4. Set properties for buttons using the Editor. You can specify the attributes for any of the child buttons through the collection editor or by clicking any button and then selecting the properties in the property grid, that display the properties for the selected button.
 
    ![](Overview_images/Overview_img82.jpeg)
 

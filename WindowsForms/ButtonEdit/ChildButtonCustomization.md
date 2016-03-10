@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Editors-Package | Windows Forms | Syncfusion
+title: Editors-Package | WindowsForms | Syncfusion
 description: editors package
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---
@@ -152,7 +152,7 @@ Sets the index of the image to be set for the child button.</td></tr>
 <tr>
 <td>
 ImageList</td><td>
-Indicates the imagelist to be used for child button.</td></tr>
+Indicates the image list to be used for child button.</td></tr>
 <tr>
 <td>
 PreferredWidth</td><td>
@@ -278,7 +278,7 @@ N> Visual style of a child buttons is inherited from the visual style of it's pa
 
 ### Focusing the Child Button at Runtime
 
-The Child buttons can be focussed based on the order of the ChildButton.TabIndex set for individual buttons. ChildButton.TabStop property should be set to true to make this effective. While focusing the button, we can either display or don't display a focus rectangle, by using the  ButtonEdit.KeepFocusRectangle property. 
+The Child buttons can be focused based on the order of the ChildButton.TabIndex set for individual buttons. ChildButton.TabStop property should be set to true to make this effective. While focusing the button, we can either display or don't display a focus rectangle, by using the  ButtonEdit.KeepFocusRectangle property. 
 
 {%highlight c# %}
 

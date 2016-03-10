@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DesignTime-Features | Windows Forms | Syncfusion
+title: DesignTime-Features | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
@@ -17,7 +17,7 @@ TaskWindow can be accessed using smart tag as follows.
  
 
 
-The above window lets you open the NodeCollection Editor, modify the appearance settings, assign imagelists, enable 
+The above window lets you open the NodeCollection Editor, modify the appearance settings, assign image lists, enable 
 options like editing the node text, load on demand, owner draw nodes and HotTracking properties. It also lets you set
 the layout settings for the control.
 
@@ -53,7 +53,7 @@ This editor lets you add nodes, SubItems for the nodes and customize them using 
 
 This editor can be accessed using the below options.
 
-* Through the Context Menu of the control during designtime.
+* Through the Context Menu of the control during design time.
 * Tasks Windows.
 * Using MultiColumnTreeView.Nodes property in the property Grid.
 * Command at the bottom of the property grid.
@@ -74,13 +74,13 @@ This lets you add columns and customize those columns appearance with style sett
 
 This editor can be accessed using the following options.
 
-* Through the Context Menu of the control during designtime.
+* Through the Context Menu of the control during design time.
 * Using MultiColumnTreeView.Columns property in the property Grid.
 * Command at the bottom of the property grid.
 
 #### TreeNodeAdvSubItems Collection Editor
 
-This editor lets you add subitems to the nodes and customize the subitems using the property settings. It can be accessed through Node Collection Editor and selecting the SubItems Collection property.
+This editor lets you add sub items to the nodes and customize the sub items using the property settings. It can be accessed through Node Collection Editor and selecting the SubItems Collection property.
 
  ![](DesignTime-Features_images/DesignTime-Features_img6.jpeg) 
  
@@ -89,7 +89,7 @@ This editor lets you add subitems to the nodes and customize the subitems using 
 
 ### Styles Editor
 
-This editor comes with default styles and also lets you add new style and apply to the nodes, subitems, and so on. The property settings are discussed in Styles Architecture.
+This editor comes with default styles and also lets you add new style and apply to the nodes, sub items, and so on. The property settings are discussed in Styles Architecture.
 
 ![](DesignTime-Features_images/DesignTime-Features_img7.jpeg) 
 
@@ -98,6 +98,6 @@ This editor comes with default styles and also lets you add new style and apply 
 
 This editor can be accessed using the below options.
 
-* Through the Context Menu of the control during designtime.
+* Through the Context Menu of the control during design time.
 * Using MultiColumnTreeView.BaseStyles property in the property Grid.
 * Command at the bottom of the property grid.

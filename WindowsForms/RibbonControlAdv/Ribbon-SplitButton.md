@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-SplitButton| Windows Forms | Syncfusion
+title: Ribbon-SplitButton| WindowsForms | Syncfusion
 description:  ribbon splitbutton
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripSplitButton
+# Ribbon SplitButton
 
 SplitButton can perform like both normal Button as well as DropDownButton. It allow to click the button directly by clicking the upper part of the button and also it display list of items while click on the arrow. It can be added to a ToolStripEx directly or through a panel.
  

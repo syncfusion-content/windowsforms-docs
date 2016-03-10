@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to display BannerIcon in Banner of HubTile | Windows Forms | Syncfusion
+title: How to display BannerIcon in Banner of HubTile | WindowsForms | Syncfusion
 description: How to display BannerIcon in Banner of HubTile
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 --- 

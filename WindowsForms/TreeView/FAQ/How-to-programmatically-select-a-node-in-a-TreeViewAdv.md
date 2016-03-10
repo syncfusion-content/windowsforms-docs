@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-programmatically-select-a-node-in-a-TreeViewAdv-Control | Windows Forms | Syncfusion
+title: How-to-programmatically-select-a-node-in-a-TreeViewAdv-Control | WindowsForms | Syncfusion
 description: how to programmatically select a node in a treeviewadv control
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
 # How to programmatically select a node in a TreeViewAdv control
 
-Set the HideSelectionproperty of the TreeViewAdv control to false and use the code snippet shown below.
+Set the HideSelection property of the TreeViewAdv control to false and use the code snippet shown below.
 
 {% highlight c# %}
 
