@@ -13,7 +13,7 @@ documentation: ug
 
 The AutoComplete control allows you to display multiple columns of information for each matching entry in the AutoSuggest mode of operation. Columns can be configured through AutoComplete.Columns property. 
 
-Table 121: Property Table
+Property Table
 
 <table>
 <tr>

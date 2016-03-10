@@ -11,7 +11,7 @@ documentation: ug
 
 Themes defines the look and feel of the control. This can be enabled using the below given property.
 
-Table 377 : Property Table
+Property Table
 
 <table>
 <tr>

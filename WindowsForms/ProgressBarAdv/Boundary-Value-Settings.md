@@ -13,7 +13,7 @@ The ProgressBarAdv during it's progressive operation indicates a minimum value a
 
 It provides the below properties to set the boundary values for the control and also the interval for the progression.
 
-_Table_ _611_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -70,7 +70,7 @@ Me.progressBarAdv1.Value = 100
 
 The methods associated with the above properties are given below.
 
-_Table_ _612_: _Methods Table_
+Methods Table
 
 <table>
 <tr>

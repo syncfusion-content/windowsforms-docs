@@ -22,7 +22,7 @@ This event is triggered before the TreeMenuItem selection.
 
 SelectionStateChangingEventArgs contains the following members that provide information specific to this event.
 
- _Table_ _948_: _Selection Changing Event_
+Selection Changing Event
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ This event triggers after the selection of the TreeMenuItem.
 
 SelectionStateChangedEventArgs contains the following members that provide information specific to this event.
 
-_Table_ _949_: _Selection Changed Event_
+Selection Changed Event
 
 <table>
 <tr>

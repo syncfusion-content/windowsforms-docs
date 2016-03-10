@@ -11,7 +11,7 @@ documentation: ug
 
 ToolTip can be set for the StatusBarAdvPanel using the property given below.
 
-Table 676: Property Table
+Property Table
 
 <table>
 <tr>

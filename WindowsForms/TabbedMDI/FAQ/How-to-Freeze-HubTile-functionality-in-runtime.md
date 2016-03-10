@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve it by setting HubTileFreeze property to ‘true’.
 
-_Table_ _983_: _Property Table_
+Property Table
 
 <table>
 <tr>

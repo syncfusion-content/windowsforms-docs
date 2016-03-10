@@ -10,7 +10,7 @@ documentation: ug
 
 The TreeViewAdv performance can be improved by the following properties and methods.
 
-_Table_ _918_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -26,7 +26,8 @@ Improves performance of the TreeViewAdv with large number of nodes. Generally th
 RecalculateExpansion</td><td>
 Indicates if node dimension calculation should be done on load. By default it is true. This property when set to false, greatly improves the performance of the tree nodes on load.</td></tr>
 </table>
-_Table_ _919_: _Methods Table_
+
+Methods Table
 
 <table>
 <tr>

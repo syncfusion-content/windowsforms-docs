@@ -12,7 +12,7 @@ documentation: ug
 
 We can apply themes for the DateTimePickerAdv and also the child controls using the below properties.
 
-Table193: Property Table
+Property Table
 
 <table>
 <tr>
@@ -71,7 +71,7 @@ Me.dateTimePickerAdv1.IgnoreThemeBackground = True
 
 Visual Styles for the DateTimePickerAdv and its child controls can be applied using the Style property. 
 
-Table194: Property Table
+Property Table
 
 <table>
 <tr>

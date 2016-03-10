@@ -11,7 +11,7 @@ documentation: ug
 
 PopupControlContainer handles events before and after the Popup is shown. The most commonly used events are discussed below.
 
-Table 235: Events Table
+Events Table
 
 <table>
 <tr>

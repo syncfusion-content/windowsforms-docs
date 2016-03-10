@@ -163,7 +163,7 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 User Guide (this document)</td><td>
 Online{{ '<http://help.syncfusion.com/windowsforms/calculate/overview>' | markdownify }} (Navigate to the Calculate User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
 
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }} Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>

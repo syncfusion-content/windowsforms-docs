@@ -15,7 +15,7 @@ You can enhance the appearance of the StatusBarAdv control by using the followin
 
 You can customize the StatusBarAdv control's background by using the various options provided in the BackgroundColor property as follows.
 
-Table 651: Property Table
+Property Table
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ Gets or sets whether to set MetroColor as its Border color.</td></tr>
 
 A sizing grip can be displayed for the StatusBarAdv control using the property given below.
 
-Table 652: Property Table
+Property Table
 
 <table>
 <tr>

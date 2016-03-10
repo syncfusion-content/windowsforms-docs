@@ -960,7 +960,7 @@ The Edit Control supports customization of fonts through the configuration file,
 
 
 
-{%highlight xml %}
+{% highlight xaml %}
 
 
 

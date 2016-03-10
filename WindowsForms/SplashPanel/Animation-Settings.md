@@ -13,7 +13,7 @@ This section demonstrates how to display a splash image with animation.
 
 When animation is set for the splash image, by default, the splash image will be drawn from left to right. 
 
-Table 633: Property Table
+Property Table
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ Me.splashPanel1.ShowAsTopMost = True
 
 The splash image, can not only be displayed from left to right, but can be displayed in different styles using the property given below.
 
-Table 634: Property Table
+Property Table
 
 <table>
 <tr>
@@ -103,7 +103,7 @@ This section discusses the properties that can be set for the animation of Splas
 
 Auto closing of the SplashPanel can be accomplished using the property given below.
 
-Table 635: Property Table
+Property Table
 
 <table>
 <tr>
@@ -139,7 +139,7 @@ Me.splashPanel1.SuspendAutoCloseWhenMouseOver = True
 
 AutoClose mode of the splash screen can be suspended or restored using the below methods.
 
-Table 636: Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -223,7 +223,7 @@ The SplashPanel allows the user to customize the appearance of the panel using t
 
 The background of the SplashPanel can be customized using the properties given below.
 
-Table 637: Property Table
+Property Table
 
 <table>
 <tr>
@@ -304,7 +304,7 @@ N> The RefreshRegionFromImage() method can be used to refresh the region from th
 
 The user will not be able to close or resize the splash image, which is displayed during run time, normally. But by setting certain properties of the SplashPanel, the user can alter the SplashPanel. These properties are explained below in detail.
 
-Table 638: Property Table
+Property Table
 
 <table>
 <tr>
@@ -367,7 +367,7 @@ Me.splashPanel1.CloseOnClick = True
 
  The border settings of the SplashPanel control can be customized to provide a 3D look for the border.
 
-Table 639: Property Table
+Property Table
 
 <table>
 <tr>
@@ -412,7 +412,7 @@ Me.splashPanel1.BorderType = Syncfusion.Windows.Forms.Tools.SplashBorderType.Bor
 
 The position of the SplashPanel in the desktop can be changed according to the needs of the user using the property given below.
 
-Table 640: Property Table
+Property Table
 
 <table>
 <tr>
@@ -455,7 +455,7 @@ A Sample which demonstrates theDesktop Alignment options is available in the bel
 
 ToolTip can be displayed for the SplashPanel when the mouse is moved over the control. This can be done using the following property.
 
-Table 641: Property Table
+Property Table
 
 <table>
 <tr>

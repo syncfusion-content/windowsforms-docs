@@ -13,7 +13,7 @@ This section illustrates the border settings available for the StatusBarAdv cont
 
 The border settings for the StatusBarAdv control can be set through the properties listed below.
 
-Table 656: Property Table
+Property Table
 
 <table>
 <tr>

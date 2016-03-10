@@ -1163,10 +1163,10 @@ this.groupingEngine.TableControl.CellClick+=new Syncfusion.Windows.Forms.Grid.Gr
 
 {% highlight vbnet %} 
 
-{% endhighlight %}
+
 
 AddHandler groupingEngine.TableControl.CellClick, AddressOf TableControl_CellClick
-
+{% endhighlight %}
 The event handler receives an argument of type GridCellClickEventArgs containing data related to this event.
 
 The following GridCellClickEventArgs properties provide information specific to this event.
@@ -2260,7 +2260,7 @@ NA</th></tr>
 ### Triggering Selection Events
 
 Refer to the following code to trigger the Selection events:  
-
+{% highlight C# %}
 //Events hooked in the form load...
 
 
@@ -2298,7 +2298,7 @@ void gridGroupingControl1_FilterBarSelectedItemChanging(object sender, FilterBar
         }
 
 
-
+{% endhighlight %} 
 
 
 {% highlight vbnet %} 

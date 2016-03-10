@@ -11,7 +11,7 @@ documentation: ug
 
 The drag and drop functionality is fully supported through the various drag drop events.
 
-_Table_ _870_:Events Table
+Events Table
 
 <table>
 <tr>
@@ -501,7 +501,7 @@ The semi-transparent image which is drawn besides the cursor, during the drag an
 
 The semi-transparent image that is drawn, can be hidden or shown using the ShowDragNodeCue property. 
 
-_Table_ _882_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -529,7 +529,7 @@ Specifies whether a semitransparent image of the selected node is drawn besides 
 
 To cancel the selection or editing, use CancelMode and CancelEditMode methods.
 
-_Table_ _883_: Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -554,7 +554,7 @@ Gets the last mouse position to the client or returns the last point at which th
 
 The FullRowSelect property allows you to specify if the entire row of the selected item is highlighted and clicking anywhere on an item's row causes it to be selected.
 
-_Table_ _884_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -567,7 +567,7 @@ FullRowSelect</td><td>
 Specifies whether the whole row of a treeview needs to be selected on selecting a node of that row.</td></tr>
 </table>
 
-_Table_ _885_: Method Table
+Method Table
 
 <table>
 <tr>
@@ -765,7 +765,7 @@ Painting the HighlightTracker Pen
 
 This can be done using TreeViewAdvDragHighlightTracker.QueryDragInsertInfo event.
 
-_Table_ _886_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -842,7 +842,7 @@ Drag Drop Events
 
 During drag and drop operation of the tree nodes, a single node or same level nodes or multi level nodes can be selected and dragged based on the selection mode set for the treeview control. SelectionMode property is used for this purpose.
 
-_Table_ _887_: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -880,7 +880,7 @@ Extending the Selection
 
 We can extend the selection of the nodes using ExtendSelectionTo method. 
 
-_Table_ _888_: Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -929,7 +929,7 @@ Me.treeViewAdv1.ExtendSelectionTo(Me.treenode1, False)
 
 On Focus / Off Focus
 
-_Table_ _889_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -957,7 +957,7 @@ Setting AllowKeyboardSearch property of the treeview to true, will allow the use
 
 By setting the AllowMouseBasedSelection property to true, multiple nodes can be selected with mouse down and these selected nodes can be dragged.
 
-_Table_ _890_: Property Table
+Property Table
 
 <table>
 <tr>

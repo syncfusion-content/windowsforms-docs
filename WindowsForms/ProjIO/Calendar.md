@@ -15,7 +15,7 @@ Calendar class is used to create calendars and add them to the project. Using th
 
 ### Constructors
 
-_Table_ _16_: _Calendar Constructors_
+Calendar Constructors
 
 <table>
 <tr>
@@ -34,7 +34,7 @@ Initializes a new instance of Calendar class with the calendar name.</td></tr>
 
 ### Properties
 
-_Table_ _17_: _Calendar Properties_
+Calendar Properties
 
 <table>
 <tr>
@@ -77,7 +77,7 @@ Gets or sets the collection of effective work weeks associated with the calendar
 
 ### Methods
 
-_Table_ _18_: _Calendar Methods_
+Calendar Methods
 
 <table>
 <tr>

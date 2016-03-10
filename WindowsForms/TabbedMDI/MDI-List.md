@@ -11,7 +11,7 @@ documentation: ug
 
 By using the TabbedMDIManager framework, you can make your MDI container form's MDIChildren property obsolete. The value returned by this property will not be an accurate reflection of the MDIChildren. You should instead use the TabbedMDIManager's MDIChildren property, to get a list of the MDIChild forms.
 
-_Table_ _854_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -85,7 +85,7 @@ If you want an MDI List in your menus, use the TabbedMDIManager's MDIListMenuIte
 
 Also you can add an MDI List to your tool strip menus, using the TabbedMDIManager's MDIListToolStripItem property. This will duplicate the exact functionality that the MDI List property of the ToolStripItem class provides.
 
-_Table_ _855_: Property Table
+Property Table
 
 <table>
 <tr>

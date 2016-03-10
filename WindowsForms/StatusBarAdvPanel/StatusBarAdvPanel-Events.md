@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 678: Events Table
+Events Table
 
 <table>
 <tr>

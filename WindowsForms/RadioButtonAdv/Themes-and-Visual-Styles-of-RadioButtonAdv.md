@@ -15,7 +15,7 @@ This section discusses the themes and visual style settings that are supported b
 
 The RadioButtonAdv can be provided with a themed appearance using the below given property.
 
-Table 419 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Me.radioButtonAdv1.ThemesEnabled = True
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
 
-Table 420 : Property Table
+Property Table
 
 <table>
 <tr>

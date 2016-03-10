@@ -42,7 +42,7 @@ In the presence of a BarManager, you can also add separators to the items by rig
 
 During design-time, in the absence of BarManager, the XP Toolbar can be filled through the BarItems collection editor, which is invoked using Items property. In the collection editor, you can add any of the available BarItem types to the XP Toolbar's list. A customized text can be provided for the BarItems using Text property.
 
-_Table 505: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -92,7 +92,7 @@ Me.parentBarItem2.Text = "ParentBarItem"
 
 In the absence of a BarManager, you can add separators to the items by editing the XPToolBar.SeparatorIndices property list.
 
-_Table 506: Property Table_
+Property Table
 
 <table>
 <tr>

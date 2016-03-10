@@ -11,7 +11,7 @@ documentation: ug
 
 This can be done by setting the SortWithChildNodes property to true.
 
-_Table_ _947_: _Property Table_
+Property Table
 
 <table>
 <tr>

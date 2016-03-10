@@ -68,7 +68,7 @@ The tree nodes can be set with left / right images using LeftImageList and Right
 
 The nodes with the images can be given an enhanced appearance using LeftImagePadding and RightImagePadding.
 
-_Table_ _854_:Property Table
+Property Table
 
 <table>
 <tr>
@@ -85,7 +85,7 @@ RightImageList</td><td>
 This indicates the image list that holds the images to be drawn on the right of the Node.</td></tr>
 </table>
 
-_Table_ _855_:Property Table
+Property Table
 
 <table>
 <tr>
@@ -119,7 +119,7 @@ Setting State Images
 
 Different images can be set for expand / collapse states of the node, using StateImageList property. To apply the left open and close images, set the ClosedImageIndex and the OpenImageIndex to the indices that points to the images in the StateImageList respectively. Nodes without child can be set with a separate image using NoChildrenImageIndex.
 
-_Table_ _856_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -227,7 +227,7 @@ When child nodes are added to a node, automatically the expand / collapse (+/-) 
 * Images to be displayed for the expanded and collapsed nodes can be specified in the DefaultExpandImageIndex and DefaultCollapseImageIndex properties respectively.
 * Images for individual nodes can be specified in treeNodeAdv.ExpandImageIndex / treeNodeAdv.CollapseImageIndex properties. Setting these properties will override the expand / collapse image settings that is applied for the control.
 
-_Table_ _858_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -255,7 +255,7 @@ Indicates the image list with images that are displayed instead of expand / coll
 
 These properties can be set at the node level using the below properties.
 
-_Table_ _859_:_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -305,7 +305,7 @@ The standard +/- signs for the expand/collapse buttons in the TreeViewAdv can be
 
 ShowPlusMinus when disabled, does not display the plus / minus images for the parent nodes, i.e., the expand/collapse images will not be displayed.
 
-_Table_ _860_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -450,7 +450,7 @@ LoadOnDemand property should be set to true for this feature to be effected.
 
 The BeforeExpand event will be raised when the plus is clicked again and when in expanded mode so that you can check the datasource for changes. 
 
-_Table_ _862_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -523,7 +523,7 @@ The ShowCheckBoxes property when set will display check box for all the nodes. T
 
 The InteractiveCheckBoxes indicates whether the state of the parent node's checkbox is based on the check state of it's child nodes checkboxes. To set this for individual nodes set the InteractiveCheckBox property of the TreeNodeAdv.
 
-_Table_ _863_:Property Table
+Property Table
 
 <table>
 <tr>
@@ -540,7 +540,7 @@ InteractiveCheckBoxes</td><td>
 Indicates if the state of the node's checkbox indicates the check state of the child node's checkboxes.</td></tr>
 </table>
 
-_Table_ _864_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -565,7 +565,7 @@ In the TreeViewAdv, the partial checking of the child nodes are supported. They 
 
 The CheckColor and CheckState property is used to set the color and the state of the check mark of the particular selected node. The options for the CheckState property are Checked, Unchecked and Indeterminate.
 
-_Table_ _876_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -632,7 +632,7 @@ TreeNodeAdv8.Checked = True
 
 ShowOptionButtons property, when set, will add option buttons to all the nodes which can be applied for the required nodes alone, by setting the property for the respective nodes in the NodeCollection Editor.
 
-_Table_ _866_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -692,7 +692,7 @@ Disabling a node's Checkbox or Option button
 
 The user can disable the checkbox or the option button of a node and can still select and deselect the node by setting the EnabledButtons property to false of the respective TreeNodeAdv.
 
-_Table_ _867_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -734,7 +734,7 @@ A sample which demonstrates Custom Controls feature is available in the below sa
 
 The TreeView control can be enabled using the below properties.
 
-_Table_ _868_:Property Table
+Property Table
 
 <table>
 <tr>
@@ -746,7 +746,8 @@ Description</th></tr>
 Enabled</td><td>
 Indicates whether the control is enabled and can respond to user interactions.</td></tr>
 </table>
-_Table_ _869_: _Property Table_
+
+Property Table
 
 <table>
 <tr>

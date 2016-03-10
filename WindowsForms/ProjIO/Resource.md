@@ -15,7 +15,7 @@ Resources class can be used to create resources and add them to Projects. Howeve
 
 ### Constructors
 
-_Table_ _10_: _Resource Constructor_
+Resource Constructor
 
 <table>
 <tr>
@@ -30,7 +30,7 @@ Initializes a new instance of the Resource class.</td></tr>
 
 ### Properties
 
-_Table_ _11_: _Resource Properties_
+Resource Properties
 
 <table>
 <tr>
@@ -325,7 +325,7 @@ Gets or sets the time phased data.</td></tr>
 
 ### Methods
 
-_Table_ _12_: _Resource Methods_
+Resource Methods
 
 <table>
 <tr>

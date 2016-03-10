@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 625: Events Table
+Events Table
 
 <table>
 <tr>
@@ -138,7 +138,7 @@ You can handle the BeforeSplash event to process any code just before the splas
 
 The event handler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs member provides information specific to this event.
 
-Table 626: Member Table
+Member Table
 
 <table>
 <tr>

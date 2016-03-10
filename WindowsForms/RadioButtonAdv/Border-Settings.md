@@ -11,7 +11,7 @@ documentation: ug
 
 Color and Styles can be applied to the border of the RadioButtonAdv as discussed below.
 
-Table 416 : Property Table
+Property Table
 
 <table>
 <tr>

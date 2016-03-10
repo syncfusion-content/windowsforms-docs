@@ -79,7 +79,7 @@ Following are the steps to add the SplitButton control to an application through
 
 ### Properties
 
-Table 812: Property Table
+Property Table
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ Adding Items to Drop-Down</td></tr>
 
 ### Events
 
-Table 813: Events Table
+Events Table
 
 <table>
 <tr>

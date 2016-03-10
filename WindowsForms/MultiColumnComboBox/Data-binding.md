@@ -185,7 +185,7 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 3. Select DataSet from templates pane, give the name (Say new dataset.xsd) and click Open. This will add file by name new dataset.xsd to the solution. 
 4. Add the XML Schema as shown below. 
 
-   ~~~ xml
+   ~~~ xaml
 	   <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
 	   <xs:complexType>
 	   <xs:choice maxOccurs="unbounded">
@@ -215,7 +215,7 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 5. Validate the written Schema. 
 6. Add an XML file (Say new dataset.xml) with the following data. 
 
-   ~~~ xml
+   ~~~ xaml
 	   <?xml version="1.0" standalone="yes" ?>
 	   <NewDataSet xmlns="http://tempuri.org/NewDataSet.xsd">
 	   <roster>

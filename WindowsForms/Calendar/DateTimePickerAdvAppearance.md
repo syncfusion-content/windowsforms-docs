@@ -18,7 +18,7 @@ DateTimePickerAdv control can have custom back color and background images using
 
 The control's back color can be set using the below properties.
 
-Table188: Property Table
+Property Table
 
 <table>
 <tr>
@@ -64,7 +64,7 @@ Me.dateTimePickerAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 Background image for the DateTimePickerAdv is set using the below property.
 
-Table189: Property Table
+Property Table
 
 <table>
 <tr>
@@ -112,7 +112,7 @@ Me.dateTimePickerAdv2.BackgroundImage = DirectCast((resources.GetObject("dateTim
 
 Border for a MonthCalendarAdv control can be in 2D or 3D modes. The below properties controls the border settings for the MonthCalendarAdv control. 
 
-Table160: Property Table
+Property Table
 
 <table>
 <tr>

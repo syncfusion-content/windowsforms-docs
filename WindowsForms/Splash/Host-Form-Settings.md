@@ -11,7 +11,7 @@ documentation: ug
 
 The host form of a SplashControl application can be hidden or shown, when the splash image is displayed. The properties given below illustrate this.
 
-Table 624: Property Table
+Property Table
 
 <table>
 <tr>

@@ -11,7 +11,7 @@ documentation: ug
 
 TabbedMDIManager has LockMDIClientUpdate() and UnLockMDIClientUpdate() methods to lock and unlock the MDIClients from updating.
 
-_Table_ _861_: _Methods Table_
+Methods Table
 
 <table>
 <tr>
