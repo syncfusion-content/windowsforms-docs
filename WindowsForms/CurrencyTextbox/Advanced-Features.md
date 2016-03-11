@@ -22,7 +22,7 @@ The CurrencyTextBox control also provides support for clipboard operations that 
 <tr>
 <td>
 ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ 'ExcludeFormatting and' | markdownify }}{{ 'IncludeFormatting.' | markdownify }}</td></tr>
+Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ 'ExcludeFormatting and' | markdownify }} {{ 'IncludeFormatting.' | markdownify }}</td></tr>
 </table>
 
 
@@ -95,7 +95,7 @@ Specifies whether the culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify }}{{ 'CurrentCulture (default),' | markdownify }}{{ 'InstalledCulture, '| markdownify }}{{ 'UICulture. '| markdownify }}</td></tr>
+It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify }} {{ 'CurrentCulture (default),' | markdownify }} {{ 'InstalledCulture, '| markdownify }} {{ 'UICulture. '| markdownify }}</td></tr>
 </table>
 
 

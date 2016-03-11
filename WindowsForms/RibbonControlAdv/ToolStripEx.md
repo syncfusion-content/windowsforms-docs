@@ -527,11 +527,11 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 SetShortcut<br/><br/></td><td>
-Sets shortcut key. The parameters are,<br/><br/>{{'__Component__ '| markdownify }}- Component of the RibbonForm.<br/><br/>{{'__Value__ '| markdownify }}- Represents the shortcut key for the component specified.<br/><br/></td></tr>
+Sets shortcut key. The parameters are,<br/><br/>{{'__Component__ '| markdownify }} - Component of the RibbonForm.<br/><br/>{{'__Value__ '| markdownify }}- Represents the shortcut key for the component specified.<br/><br/></td></tr>
 <tr>
 <td>
 GetShortcut<br/><br/></td><td>
-Gets shortcut key. The parameter is,<br/><br/>{{'__Component__ '| markdownify }}- Component of the RibbonForm.<br/><br/></td></tr>
+Gets shortcut key. The parameter is,<br/><br/>{{'__Component__ '| markdownify }} - Component of the RibbonForm.<br/><br/></td></tr>
 </table>
 
 {% tabs %}

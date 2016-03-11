@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
+Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }} {{ '_VerticalGradient and_' | markdownify }} {{ '_Default._' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
