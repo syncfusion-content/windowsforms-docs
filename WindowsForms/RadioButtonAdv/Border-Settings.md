@@ -21,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Raised,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Sunken,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options included are as follows.{{ '_RaisedOuter,_' | markdownify }} {{ '_SunkenOuter,_' | markdownify }} {{ '_RaisedInner,_' | markdownify }} {{ '_SunkenInner,_' | markdownify }} {{ '_Raised,_' | markdownify }} {{ '_Etched,_' | markdownify }} {{ '_Bump,_' | markdownify }} {{ '_Sunken,_' | markdownify }} {{ '_Adjust and_' | markdownify }} {{ '_Flat._' | markdownify }} The default value is set to 'Sunken'.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -29,11 +29,11 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }}{{ '_Dashed,_' | markdownify }}{{ '_Solid,_' | markdownify }}{{ '_Inset,_' | markdownify }}{{ '_Outset and_' | markdownify }}{{ '_None._' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options included are as follows.{{ '_Dotted,_' | markdownify }} {{ '_Dashed,_' | markdownify }} {{ '_Solid,_' | markdownify }} {{ '_Inset,_' | markdownify }} {{ '_Outset and_' | markdownify }} {{ '_None._' | markdownify }} The BorderStyle property should be set to 'FixedSingle'.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
+Indicates whether the panel should have a border. The options included are given below.{{ '_FixedSingle,_' | markdownify }} {{ '_Fixed3D and_' | markdownify }} {{ '_None._' | markdownify }}</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>

@@ -57,11 +57,11 @@ Sets the style of the border. The options includes:FixedSingle,Fixed3D andNone (
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
+Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }} {{ '_RaisedOuter,_' | markdownify }} {{ '_RaisedInner,_' | markdownify }} {{ '_Sunken (default),_' | markdownify }} {{ '_SunkenOuter,_' | markdownify }} {{ '_SunkenInner,_' | markdownify }} {{ '_Etched,_' | markdownify }} {{ '_Bump,_' | markdownify }} {{ '_Adjust and_' | markdownify }} {{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the border sides. The options includes{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
+Specifies the border sides. The options includes{{ '_Left,_' | markdownify }} {{ '_Top,_' | markdownify }} {{ '_Right,_' | markdownify }} {{ '_Bottom,_' | markdownify }} {{ '_Middle and_' | markdownify }} {{ '_All (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>

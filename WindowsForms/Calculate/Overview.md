@@ -167,5 +167,5 @@ Online{{ '<http://help.syncfusion.com/windowsforms/calculate/overview>' | markdo
 <tr>
 <td>
 Class Reference</td><td>
-Online {{ '<http://help.syncfusion.com/cr/windowsforms/>'| markdownify }}   (Navigate to the Reporting User Guide. Select {{ ''_Calculate_'' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online {{ '<http://help.syncfusion.com/cr/windowsforms/>'| markdownify }}   (Navigate to the Reporting User Guide. Select {{ ''_Calculate_'' | markdownify }} , and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>

@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }} {{ '_TopCenter,_' | markdownify }} {{ '_TopRight,_' | markdownify }} {{ '_MiddleLeft,_' | markdownify }} {{ '_MiddleCenter,_' | markdownify }} {{ '_MiddleRight,_' | markdownify }} {{ '_BottomLeft,_' | markdownify }} {{ '_BottomCenter and_' | markdownify }} {{ '_BottomRight._' | markdownify }} WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
 </table>
 
 
@@ -62,7 +62,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }} {{ '_TopCenter,_' | markdownify }} {{ '_TopRight,_' | markdownify }} {{ '_MiddleLeft,_' | markdownify }} {{ '_MiddleCenter,_' | markdownify }} {{ '_MiddleRight,_' | markdownify }} {{ '_BottomLeft,_' | markdownify }} {{ '_BottomCenter and_' | markdownify }} {{ '_BottomRight._' | markdownify }}</td></tr>
 </table>
 
 
