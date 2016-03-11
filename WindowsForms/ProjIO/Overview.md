@@ -25,7 +25,7 @@ This section covers the requirements that are mandatory for using Essential Proj
 
 The prerequisites details are tabulated as follows:
 
-_Table_ _1_: _Prerequisites_
+Prerequisites
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ Development Environments</th><th>
 
 The compatibility details are tabulated as follows
 
-_Table_ _2_: _Compatibility_
+Compatibility
 
 <table>
 <tr>
@@ -60,7 +60,7 @@ Operating Systems</th><th>
 
 Syncfusion provides the following documentation segments to provide all the necessary information pertaining to Essential ProjIO.
 
-_Table_ _3_: _Documentation_
+Documentation
 
 <table>
 <tr>

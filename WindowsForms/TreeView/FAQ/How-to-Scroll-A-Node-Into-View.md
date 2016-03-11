@@ -11,7 +11,7 @@ documentation: ug
 
 This section illustrates how a particular node can be scrolled into view if it is hidden because its parent is hidden or because the scrollbar has scrolled it out of view.
 
-_Table_ _945_: _Methods Table_
+Methods Table
 
 <table>
 <tr>

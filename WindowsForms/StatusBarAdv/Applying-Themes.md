@@ -11,7 +11,7 @@ documentation: ug
 
 The StatusBarAdv control can be provided with a themed look and feel using the properties given below.
 
-Table 663: Property Table
+Property Table
 
 <table>
 <tr>

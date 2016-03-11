@@ -13,7 +13,7 @@ The border settings of the TextBoxExt control are discussed in this section.
 
 Color and Styles can be applied to the border of the TextBoxExt control as discussed below.
 
-Table 375 : Property Table
+Property Table
 
 <table>
 <tr>

@@ -19,7 +19,7 @@ Tooltip can be enabled for child windows or tabs using the below code snippet, w
 
 The GetTooltip method is used to set the Tooltips for the tabs.
 
-_Table_ _857_: Methods Table
+Methods Table
 
 <table>
 <tr>

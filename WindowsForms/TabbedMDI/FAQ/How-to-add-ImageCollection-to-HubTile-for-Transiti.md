@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve this requirement using HubTileImageList and ImageListAdv properties.
 
-_Table_ _981_: _Property Table_
+Property Table
 
 <table>
 <tr>

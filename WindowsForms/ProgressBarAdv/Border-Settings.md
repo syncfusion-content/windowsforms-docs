@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses the border settings of the ProgressBarAdv control.
 
-_Table_ _613_: _Property Table_
+Property Table
 
 <table>
 <tr>

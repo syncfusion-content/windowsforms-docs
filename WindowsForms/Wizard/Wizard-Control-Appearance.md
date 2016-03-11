@@ -17,7 +17,7 @@ This section discusses the various appearance settings of the Wizard controls.
 
 The appearance of the text in the Wizard control can be controlled using the Font and ForeColor properties. 
 
-_Table 961: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -70,7 +70,7 @@ The foreground settings for the Button text can be overridden by the WizardPage.
 
 The font and fore color for the display text in a Wizard page can be controlled through below properties.
 
-_Table 962: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -116,7 +116,7 @@ Me.wizardControl1.ForeColor = System.Drawing.Color.Black
 
 The background of the Wizard control can be customized through the below properties.
 
-_Table 963: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -163,7 +163,7 @@ N> By default the background settings of the Wizard control will be overridden b
 
 The below properties lets you customize the banner panel in a Wizard Control.
 
-_Table 964: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Me.gradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 
 The below properties lets you customize the Wizard page in a Wizard Control.
 
-_Table 965: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -327,7 +327,7 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 You can use the below properties to set 2D border style for the Banner Control when GradientPanel.BorderStyle property is set to "FixedSingle".
 
-_Table 966: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -352,7 +352,7 @@ Specifies the 2D Border style for the panel when BorderStyle property is set to 
 
 The below properties controls the border settings for a Wizard control page.
 
-_Table 967: Property Table_
+Property Table
 
 <table>
 <tr>

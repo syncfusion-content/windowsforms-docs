@@ -26,7 +26,7 @@ Properties and Methods Tables for Skin Manager
 
 ### Properties
 
-Table 810: Property Table
+Property Table
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ NA</td></tr>
 </table>
 Methods
 
-Table 811: Methods Table
+Methods Table
 
 <table>
 <tr>

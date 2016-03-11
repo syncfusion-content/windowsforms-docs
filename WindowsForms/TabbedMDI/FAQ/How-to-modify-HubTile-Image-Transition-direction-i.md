@@ -11,7 +11,7 @@ documentation: ug
 
 You can set HubTileSlideTransition property to achieve this.
 
-_Table_ _984_: _Property Table_
+Property Table
 
 <table>
 <tr>

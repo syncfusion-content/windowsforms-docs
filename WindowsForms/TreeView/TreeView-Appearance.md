@@ -19,7 +19,7 @@ TreeView control lets you customize its background with colors and image.
 
 The below properties sets the background color for the treeview and also the node text.
 
-_Table_ _897_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ N> The Background property is available for individual nodes also.
 
 Use the BackgroundImage property to specify a custom image as the background of the chart. The image layout can also be specified using the properties below.
 
-_Table_ _898_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -63,7 +63,7 @@ Indicates the layout for the background image in the control.</td></tr>
 
 The controls in the TreeViewAdv like PlusMinus control will have a transparent background, if the TransparentControls property is set to true.
 
-_Table_ _899_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -98,7 +98,7 @@ Me.treeViewAdv1.TransparentControls = True
 
 Themes can be enabled for the control by enabling ThemesEnabled property. This can also be enabled for individual nodes also by using the TreeNodeAdv.ThemesEnabled property.
 
-_Table_ _900_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -111,7 +111,7 @@ ThemesEnabled</td><td>
 Indicates if the control is drawn themed.</td></tr>
 </table>
 
-_Table_ _901_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -128,7 +128,7 @@ Indicates if the node control will be themed.</td></tr>
 
 To draw the node's background, users need to turn on OwnerDrawnNodesBackground property, in theTreeViewAdv and then listen to the tree's NodeBackgroundPaint event which will be called for each node. This can be implemented by using the following code snippet.
 
-_Table_ _902_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -283,7 +283,7 @@ Specifies the text color of the nodes.</td></tr>
 </table>
 
 
-_Table_ _906_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -312,7 +312,7 @@ Painting the foreground of the Specified Nodes
 
 User can paint specific nodes using the BeforeNodePaint event.
 
-_Table_ _907_: _Event Table_
+Event Table
 
 <table>
 <tr>
@@ -392,7 +392,7 @@ Active Node Foreground Settings
 
 SelectedNodeForeColor property lets you paint the selected node.
 
-_Table_ _909_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -422,7 +422,7 @@ Post Default Drawing
 
 Users can also draw on the node, after the default drawing routines have rendered the node appropriately. Users can do so by first turning on OwnerDrawnNodes in the tree and listening to the AfterNodePaint event.
 
-_Table_ _910_: _Event Table_
+Event Table
 
 <table>
 <tr>
@@ -446,7 +446,7 @@ Image Overlaying
 
 The following properties sets 3D border for the treeview.
 
-_Table_ _911_: _Property Table_
+Property Table
 
 <table>
 <tr>

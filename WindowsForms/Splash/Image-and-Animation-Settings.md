@@ -15,7 +15,7 @@ This section demonstrates how to set a splash image and how to display it with a
 
 The splash image can be displayed by setting the property given below.
 
-Table 622: Property Table
+Property Table
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ Me.splashControl1.SplashImage = CType((resources.GetObject("splashControl1.Splas
 
 When animation is set for the splash image, by default, the splash image will be drawn from left to right.
 
-Table 623: Property Table
+Property Table
 
 <table>
 <tr>

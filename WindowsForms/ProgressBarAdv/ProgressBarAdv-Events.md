@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _615_: _Events Table_
+Events Table
 
 <table>
 <tr>
@@ -39,7 +39,7 @@ This event lets you do the desired drawing. If you perform custom drawing, you s
 
 The event handler receives an argument of the type ProgressBarAdvDrawEventArgs containing data related to this event. The following ProgressBarAdvDrawEventArgs members provide information specific to this event.
 
-_Table_ _616_: _Member Table_
+Member Table
 
 <table>
 <tr>

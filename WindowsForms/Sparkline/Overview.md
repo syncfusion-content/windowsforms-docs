@@ -25,7 +25,7 @@ The following screenshot shows three types of sparklines, which are drawn inside
 
 #### Properties
 
-_Table_ _1_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -82,7 +82,7 @@ NA</td></tr>
 
 #### Methods
 
-_Table_ _2_: _Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -270,7 +270,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. WinLoss
 
 The markers are visual indicators to represent the location of data points in the Sparkline graph. The markers can support three types of sparklines.
 
-_Table_ _3_: _Marker Property Table_
+Marker Property Table
 
 <table>
 <tr>

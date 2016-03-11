@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve this by using HubTileShowBannerTileIcon and BannerIcon property.
 
-_Table_ _982_: _Property Table_
+Property Table
 
 <table>
 <tr>

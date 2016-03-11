@@ -10,7 +10,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table 588: Events Table_
+Events Table
 
 <table>
 <tr>
@@ -172,7 +172,7 @@ should set unique names for the XPTaskBar Items through the Tag property in the 
 The event handler receives an argument of the type XPTaskBarItemClickArgs. The event property associated with the 
 XPTaskBarItemClickArgs is as follows.
 
-_Table 594: Member Table_
+Member Table
 
 <table>
 <tr>
@@ -305,7 +305,7 @@ XPTaskBar Box with different colors.
 The event handler receives an argument of type ProvideBrushEventArgs. The event properties associated with the 
 ProvideBrushEventArgs are as follows.
 
-_Table 595: Members Table_
+Members Table
 
 <table>
 <tr>

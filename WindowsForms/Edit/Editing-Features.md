@@ -598,7 +598,7 @@ Lexical macros definitions create named regular expressions that can be used to 
 
 There are certain regular expression command characters that must be translated to an XML compatible format while being used in an XML-based configuration file. The following is an example of a lexem tag block that has been used for outlining.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

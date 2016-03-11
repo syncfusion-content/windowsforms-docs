@@ -19,7 +19,7 @@ The following code snippet illustrates a sample XML-based configuration file.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -139,7 +139,7 @@ The simplest case of lexem definition looks like the following:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -166,7 +166,7 @@ If you want to use regular expressions in [Begin / Continue / EndBlock], you sho
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -186,7 +186,7 @@ To parse a C# string, a typical lexem would be as shown below:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -206,7 +206,7 @@ To collapse complex lexems, set IsCollapsible to 'True'. CollapseName property s
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

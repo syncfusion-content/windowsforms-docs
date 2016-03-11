@@ -396,7 +396,7 @@ Syntax Highlighting is accomplished in Essential Edit through the use of XML-bas
 
 The language-specific configuration is stored in XML files. The below given code snippet illustrates a sample configuration file that can be used for syntax highlighting a LISP-like code.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

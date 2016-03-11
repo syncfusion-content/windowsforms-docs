@@ -20,7 +20,7 @@ This event is triggered in Toggle Button when its state is changing.
 
 #### Event Data
 
-_Table_ _987_: _Member Table_
+Member Table
 
 <table>
 <tr>
@@ -64,7 +64,7 @@ This event is triggered in Toggle Button after its value is changed. 
 
 #### Event Data
 
-_Table_ _988_: _Member Table_
+Member Table
 
 <table>
 <tr>

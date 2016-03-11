@@ -52,7 +52,7 @@ Toolbar Properties
 
 The properties of a toolbar are as follows.
 
-Table 468 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -91,7 +91,7 @@ The XPMenus bar can be docked on any of the four sides of the host form, both at
 
 #### Floating Bar Properties
 
-_Table_ _469_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -109,7 +109,7 @@ Specifies whether to allow resizing of the toolbar when the toolbar is floating.
 
 
 
-_Table_ _470_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -203,7 +203,7 @@ A BarItem is a simple child bar item which can be dragged and dropped to a Paren
 
 Some properties are as follows.
 
-_Table_ _471__: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -291,7 +291,7 @@ A ParentBarItem represents a submenu (drop-down menu) which can display one or m
 
 The following properties let you control the behavior of the ParentBarItem.
 
-_Table_ _472__: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -356,7 +356,7 @@ It indicates whether to show underlines with mnemonic always.</td></tr>
 
 XPMenus FrameWork lets you merge menu items of different ParentBarItems using MergeItems method.
 
-_Table_ _473__: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -424,7 +424,7 @@ The following figures display the parent styles.
 
 The ParentBarItem can hide some of its menu items and display them on clicking an expand button at the bottom of the menu list, by using the UsePartialMenus and IsRecentlyUsedItem properties. With this feature we can display only the recently used items and can hide the rest. We can do this in ParentBarItem.BeforePopup event.
 
-_Table_ _474_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -453,7 +453,7 @@ N> To know all the properties of BarManager, click here.
 
 #### Applying Partial Menus
 
-_Table475: Event Table_
+Event Table
 
 <table>
 <tr>
@@ -613,7 +613,7 @@ A list of items can be specified in ComboBoxBarItem.ChoiceList property. ComboBo
 
 The following properties deal with settings contents for the ComboBoxBarItem.
 
-_Table_ _476_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -653,7 +653,8 @@ Specifies custom listbox in the dropdown. You can drag and drop a FontListContro
 ChoiceList</td><td>
 Specifies the list for the bar item.</td></tr>
 </table>
-_Table_ _477__: Method Table_
+
+Method Table
 
 <table>
 <tr>
@@ -793,7 +794,7 @@ Adding Items for the ListBarItems
 
 A list of items can be specified in ListBarItem.ChildCaptions property and this ListBarItem should be added to a ParentBarItem. The list can be numbered by enabling UseNumberedList property.
 
-_Table_ _478_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -880,7 +881,7 @@ An MDIListBarItem is a ListBarItem that will expand itself to show a list of MDI
 
 Specify the MDI List Size in MDIListSize property.
 
-_Table_ _479_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -978,7 +979,7 @@ End Sub
 
 #### Behavior Settings
 
-_Table_ _480_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1161,7 +1162,7 @@ The MenuItem can be displayed as a TextOnly, ImageOnly or Image and Text using P
 
 
 
-_Table_ _481_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1247,7 +1248,7 @@ Image Settings
 
 The properties which let you set images for the menu items are as follows.
 
-_Table_ _482_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1305,7 +1306,7 @@ A BarItem can be enabled or disabled Enabled property. Images for disabled (Enab
 
 DisabledImageList, DisabledImageIndex or HighlightedImageList, HighlightedImageIndex properties can also be used instead.
 
-_Table_ _483_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1403,7 +1404,7 @@ BarItem Text
 
 Text for a bar item can be edited through Text property. Alignment of text can be specified in TextAlignment property.
 
-_Table_ _484_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1456,7 +1457,7 @@ Foreground Settings
 
 Foreground of the bar item text can be controlled using the below properties.
 
-_Table_ _485_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1624,7 +1625,7 @@ Image Settings
 {% endseealso %}
 
 
-_Table_ _487_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1663,7 +1664,7 @@ The ImageList to which the BarItems refer to, when in LargeIcons mode.</td></tr>
 
 ### Foreground and Style Settings
 
-_Table_ _488_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1686,7 +1687,7 @@ Specify whether to apply themes.</td></tr>
 
 ### Data Settings
 
-_Table_ _489_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1705,7 +1706,7 @@ Lists the categories defined in this bar manager.</td></tr>
 
 ### Misc Properties
 
-_Table_ _490_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1728,7 +1729,7 @@ Indicates whether to highlight bar items when moving mouse over it.</td></tr>
 
 ## Shadow Settings
 
-_Table_ _491_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1766,7 +1767,7 @@ ChildFrameBarManager Properties
 
 ### Image Settings
 
-_Table_ _492_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1800,7 +1801,7 @@ The ImageList to which the BarItems refer to, when in LargeIcons mode.</td></tr>
 </table>
 Style Settings
 
-_Table_ _493__: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1815,7 +1816,7 @@ Sets the common visual style for the toolbars and main menus.</td></tr>
 
 ### Data Settings
 
-_Table_ _494_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1833,7 +1834,7 @@ Lists the categories defined in this bar manager.</td></tr>
 </table>
 Shadow and Highlight Rectangle Settings
 
-_Table_ _495_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1904,7 +1905,7 @@ In the designer, right click on the bar item which you want to delete and select
 
 You can remove the BarItem from a submenu using any of the below two methods also.
 
-_Table_ _496_: _Methods Table_
+Methods Table
 
 <table>
 <tr>

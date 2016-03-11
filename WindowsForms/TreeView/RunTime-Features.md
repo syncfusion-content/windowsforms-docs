@@ -212,7 +212,7 @@ Editing the nodes using "Edit" Menu Item
 
 We can include editing functionality when you click the Edit menu item using the EditItem_Click event. In the below example, it calls the BeginEdit method and begins editing the node that is selected.
 
-_Table_ _891_: Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -314,7 +314,7 @@ TreeViewAdv control provides scrollbar support to show additional content that i
 
 The text of the ScrollTip can be set through ScrollTipFormat property. It lets you identify the scroll position.
 
-_Table_ _892_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -360,7 +360,7 @@ Me.treeViewAdv1.ScrollTipFormat = "Position {0}"
 
 The following properties support scrolling using mouse wheel.
 
-_Table_ _893_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -393,7 +393,7 @@ When set to true, the scroll control can increase the scrollbar.small change pro
 
 Setting the value for the SizeGripStyle property, will display a sizing grip at the bottom right corner of the control when both the scrollbars are visible. The options available are Show, which will show the sizing grip; Auto, which will automatically show the sizing grip whenever needed; Hide, which will hide the sizing grip.
 
-_Table_ _894_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -423,7 +423,7 @@ Color schemes can be selected using Office2007ScrollBarsColorScheme property.
 
 When the control is been used under a splitter window and if it is sharing the scrollbars with the parent control or the parent window, then setting FillSplitterPane property to true, will toggle support for doing that.
 
-_Table_ _895_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -477,7 +477,7 @@ Enabling the HotTracking property to true and when the mouse hovers over any nod
 
 The TreeView control can display help text for individual nodes, when the mouse is moved over a node, by setting the HelpText property of the nodes. 
 
-_Table_ _896_: _Property Table_
+Property Table
 
 <table>
 <tr>

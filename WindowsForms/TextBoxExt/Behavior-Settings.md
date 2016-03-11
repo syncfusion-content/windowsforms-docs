@@ -15,7 +15,7 @@ The behavior settings of the TextBoxExt control are discussed below.
 
 The maximum length of the text can be set using the property given below.
 
-Table 373 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ Me.textBoxExt1.MaxLength = 32800
 
 The ReadOnly mode can be enabled for the TextBoxExt control using the below given property.
 
-Table 374 : Property Table
+Property Table
 
 <table>
 <tr>

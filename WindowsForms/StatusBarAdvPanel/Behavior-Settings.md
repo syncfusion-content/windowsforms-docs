@@ -13,7 +13,7 @@ documentation: ug
 
 The format of the data in the panel can be set using the property given below.
 
-Table 667: Property Table
+Property Table
 
 <table>
 <tr>
@@ -55,7 +55,7 @@ Me.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPan
 
 The StatusBarAdvPanel can be automatically resized using the property given below.
 
-Table 668: Property Table
+Property Table
 
 <table>
 <tr>

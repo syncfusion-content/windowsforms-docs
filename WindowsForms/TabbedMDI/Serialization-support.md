@@ -21,7 +21,7 @@ The TabGroupStates can be serialized in,
 
 The TabbedMDIManager class uses the SaveTabGroupState and LoadTabGroupState methods to save and load TabGroupState respectively.
 
-Table 858: Methods Table
+Methods Table
 
 <table>
 <tr>

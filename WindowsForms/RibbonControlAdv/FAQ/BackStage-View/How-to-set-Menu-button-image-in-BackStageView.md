@@ -11,7 +11,7 @@ documentation: ug
 
 You can change the BackStage menu button by using the BackStageViewNavigationButtonImage property in BackStageView.
 
-_Table 808: Property Table_
+Property Table
 
 <table>
 <tr>

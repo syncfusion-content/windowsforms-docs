@@ -97,7 +97,7 @@ Properties, Methods, and Events Tables for SpellChecker
 
 #### Properties
 
-Table 422 : Property/Properties Table
+Property/Properties Table
 
 <table>
 <tr>
@@ -207,9 +207,9 @@ Stream</td><td>
 NA</td></tr>
 </table>
 
-Methods 
+Methods
 
-Table 423 : Method/s Table
+Method/s Table
 
 <table>
 <tr>
@@ -248,7 +248,7 @@ void</td><td>
 
 Events
 
-Table 424: Event/sTable
+Event/sTable
 
 <table>
 <tr>

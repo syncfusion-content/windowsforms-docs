@@ -240,7 +240,7 @@ To create TileLayout programmatically: 
 
 ## Properties
 
-Table 864: Property Table
+Property Table
 
 <table>
 <tr>

@@ -1380,7 +1380,7 @@ The Context Choice displaying characters are specified in the configuration file
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1926,7 +1926,7 @@ The Context Prompt displaying characters are specified in the configuration file
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <lexem BeginBlock="(" Type="Operator" IsComplex="true" DropContextPrompt="true" />
 

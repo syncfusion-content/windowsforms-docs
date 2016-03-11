@@ -30,7 +30,7 @@ The splash panel supports the following slide transitions:
 
 If the animation direction is set as Default, the transition of the panel occurs from the bottom to the top for the LeftBottom or RightBottom DesktopAlignment.
 
-Table 642: Property Table
+Property Table
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ Me.splashPanel1.ShowSplash()
 
 If the splash panel DesktopAlignment is set to BottomLeft or TopLeft, support can also be enabled for a left-to-right slide transition using the sample code that follows.
 
-Table 643: Property Table
+Property Table
 
 <table>
 <tr>
@@ -156,7 +156,7 @@ Me.splashPanel1.ShowSplash()
 
 If the splash panel DesktopAlignment is set to BottomRight or TopRight, support can also be enabled for a right-to-left slide transition using the sample code that follows.
 
-Table 644: Property Table
+Property Table
 
 <table>
 <tr>
@@ -230,7 +230,7 @@ The splash panel supports the following marquee transitions:
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as LeftToRight, the marquee will traverse the screen from left to right.
 
-Table 645: Property Table
+Property Table
 
 <table>
 <tr>
@@ -293,7 +293,7 @@ Me.splashPanel1.ShowSplash()
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as RightToLeft, the marquee will traverse the screen from right to left.
 
-Table 646: Property Table
+Property Table
 
 <table>
 <tr>
