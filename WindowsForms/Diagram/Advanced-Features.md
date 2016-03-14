@@ -21,7 +21,7 @@ A node's behavior can be customized and modified using the EditStyle collection 
 
 
 
-_Node Selections_
+Node Selections
 
 <table>
 <tr>
@@ -223,7 +223,7 @@ By default, the central port for a diagram is enabled using the EnableCentralPor
 
 
 
-_Port Properties_
+Port Properties
 
 <table>
 <tr>
@@ -340,7 +340,7 @@ The VisualType property available for the port can be used for customizing the s
 
 
 
-_Port Shapes_
+Port Shapes
 
 <table>
 <tr>
@@ -391,7 +391,7 @@ The ConnectionPointType and ConnectionsLimit properties are available for the po
 
 
 
-_ConnectionPointType_
+ConnectionPointType
 
 <table>
 <tr>
@@ -680,7 +680,7 @@ The actions can be recorded into the history manager such that the undo and redo
 
 
 
-_Undo / Redo Properties_
+Undo / Redo Properties
 
 <table>
 <tr>
@@ -885,7 +885,7 @@ Layers can be added to the model through LayersCollectionEditor, which can be op
 
 
 
-_Layers_
+Layers
 
 <table>
 <tr>
@@ -961,7 +961,7 @@ Rulers can be enabled by setting the ShowRulers property for the diagram control
 
 The height of the ruler can be set through RulersHeight property.
 
-_RulersHeight_
+RulersHeight
 
 <table>
 <tr>
@@ -1017,7 +1017,7 @@ Horizontal and vertical rulers can be displayed by setting the ShowRulers proper
 
 
 
-_Diagram With Rulers_
+Diagram With Rulers
 
 <table>
 <tr>
@@ -4531,7 +4531,7 @@ Gets or sets the visual style for Diagram Guides.</td></tr>
 <tr>
 <td>
 Type</td><td>
-Specifies the Guide Type for nodes. The options included are as follows:{{ '_Boundary_' | markdownify }}{{ '_Center_' | markdownify }}{{ '_Margin_' | markdownify }}{{ '_All_' | markdownify }}</td></tr>
+Specifies the Guide Type for nodes. The options included are as follows:{{ '_Boundary_' | markdownify }} {{ '_Center_' | markdownify }} {{ '_Margin_' | markdownify }} {{ '_All_' | markdownify }}</td></tr>
 <tr>
 <td>
 Margin</td><td>

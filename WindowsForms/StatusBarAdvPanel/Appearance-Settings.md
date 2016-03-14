@@ -15,7 +15,7 @@ The appearance of the StatusBarAdvPanel control can be enhanced using the proper
 
 The StatusBarAdvPanel control's background can be customized using the various options provided in the BackgroundColor property given below.
 
-Table 665: Property Table
+Property Table
 
 <table>
 <tr>
@@ -81,7 +81,7 @@ Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 Icons can be added to the StatusBarAdvPanels using the property given below.
 
-Table 666: Property Table
+Property Table
 
 <table>
 <tr>

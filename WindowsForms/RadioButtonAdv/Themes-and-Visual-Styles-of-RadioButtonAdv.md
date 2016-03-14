@@ -61,11 +61,11 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }} {{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }} {{ '_Blue,_' | markdownify }} {{ '_Silver and_' | markdownify }} {{ '_Black._' | markdownify }} The Style property should be set to "Office2007".</td></tr>
 </table>
 
 
