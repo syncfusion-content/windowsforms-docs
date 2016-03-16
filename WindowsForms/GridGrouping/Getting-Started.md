@@ -63,6 +63,7 @@ This section will explain how to create a simple GridGroupingControl in WindowsF
 GridGroupingControl can be added through designer by following the below steps.
 
 1.Create a new Windows Form Application.
+
 2.Drag and Drop GridGroupingControl from the toolbox into the designer page. 
 
 ![](Getting-Started_images/Getting-Started_img1.png)
@@ -190,7 +191,7 @@ Me.gridGroupingControl1.TableOptions.AllowSortColumns = True
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 ## Filtering
-GridGroupingControl is specially designed for supporting the filtering options. It supports three types of filtering namely Normal Filter, Excel-Like Filter and Dynamic Filter. To enable the Filter in GridGroupingControl make use of the [AllowFilter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~AllowFilter.html) property. Refer the[Filtering](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
+GridGroupingControl is specially designed for supporting the filtering options. It supports three types of filtering namely Normal Filter, Excel-Like Filter and Dynamic Filter. To enable the Filter in GridGroupingControl make use of the [AllowFilter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~AllowFilter.html) property. Refer the [Filtering](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
 
 {% tabs %}
 {% highlight c# %}

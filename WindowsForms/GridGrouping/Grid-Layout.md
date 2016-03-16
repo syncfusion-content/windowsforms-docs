@@ -374,7 +374,7 @@ Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
-N> For more information, refer the dashboard sample which is located in this path &lt;Installe_Location&gt;\Syncfusion\EssentialStudio\&lt;installed_version&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Stacked Headers Demo\CS
+N> For more information, refer the dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Stacked Headers Demo\CS
 
 ![](Grid-Layout_images/Grid-Layout_img13.png)
 
@@ -534,7 +534,7 @@ Me.gridGroupingControl1.TableDescriptor.ColumnSets.Add(csd)
 
 ![](Grid-Layout_images/Grid-Layout_img17.png)
 
-N> For more information regarding the Multi-Row record, refer our dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Installed_Version&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Record Customization Demo\
+N> For more information regarding the Multi-Row record, refer our dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Record Customization Demo\
 
 ![](Grid-Layout_images/Grid-Layout_img18.png)
 
@@ -682,7 +682,7 @@ End Sub
 {% endtabs %}
 ![](Grid-Layout_images/Grid-Layout_img21.png)
 
-N> FieldChooser support can also be added in [StackedHeaders](#_Stacked_Headers ""). 
+N> FieldChooser support can also be added in [StackedHeaders](#stacked-headers). 
 
 ### Remove Hidden Columns from FieldChooser Dialog
 To remove the hidden columns from the FieldChooser dialog, it is necessary to bypass the original column collection in the FieldChooser with a cloned [GridColumnDesriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptorCollection.html). The following steps illustrates how to do this:
@@ -786,7 +786,7 @@ Me.gridGroupingControl1.GetTableDescriptor("MyGrandChildTable").FrozenColumn = "
 
 ![](Grid-Layout_images/Grid-Layout_img23.png)
 
-N> For more information on Freezing columns, refer the dashboard sample located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Installed_Version&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Frozen Column Demo\
+N> For more information on Freezing columns, refer the dashboard sample located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Frozen Column Demo\
 
 ### Freezing Specified Columns
 It is possible to freeze specified columns in GridGroupingControl by using the [Cols.FreezeRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FreezeRange.html) method. Set the column range in this method by mentioning the index values.
@@ -815,7 +815,7 @@ Me.gridgroupingcontrol.FreezeCaption = True
 {% endhighlight %}
 {% endtabs %}
 
-N> To view a sample on Freezing the Caption Row, refer the dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Installed_Version&gt;\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Events Demo
+N> To view a sample on Freezing the Caption Row, refer the dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Events Demo
 
 ![](Grid-Layout_images/Grid-Layout_img24.png)
 

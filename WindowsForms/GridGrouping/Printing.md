@@ -233,7 +233,7 @@ Me.gridGroupingControl1.TableModel.Properties.BlackWhite = True
 ## Multiple Grid Printing
 Multiple GridGroupingControl can be printed across various pages using helper class [MultipleGridPrintDocument](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument.html). This is achieved by drawing full-size grid to a large bitmap and then scaling this bitmap to fit the output page.
 
-The [GridPrintOption](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument+GridPrintOptions.html) property is used to specify the multiple grids printing options. 
+The [GridPrintOption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~GridPrintOption.html) property is used to specify the multiple grids printing options. 
 
 **MultiGridPrinting** - Customizes the way printing support is provided for grids. It enables multiple grids to be printed in a single print.<br/>
 **PrintGridInNewPage** - Multiple grids can be printed continuously. However, the consecutive grid’s starting page will begin on a new page.<br/>
@@ -609,8 +609,10 @@ helper.ShowLayoutLines = true
 {% endhighlight %}
 {% endtabs %}
 The detailed information about the Layout helper is discussed in the following sections.
+
 ## Page Break
 Properties are available to define colors for the line and text of the page layout. The number of rows and columns to be printed for each page can be set by using the [PageBreakRows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LayoutSupportHelper~PageBreakRows.html) and [PageBreakCols](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LayoutSupportHelper~PageBreakCols.html) through `LayoutSupportHelper`. The following code examples illustrate how to set the line and text color of the page layout.
+
 {% tabs %}
 {% highlight c# %}
 LayoutSupportHelper helper = new LayoutSupportHelper(this.gridGroupingControl1.TableControl);
