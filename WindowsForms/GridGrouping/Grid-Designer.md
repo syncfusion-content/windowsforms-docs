@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Designer for Syncfusion Essential WindowsForms
-description: This section provides the information about vatious options of designer setting for GridGroupingControl
+description: This section provides the information about various options of designer setting for GridGroupingControl
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
