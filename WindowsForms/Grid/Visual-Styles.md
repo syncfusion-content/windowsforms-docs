@@ -33,6 +33,19 @@ Me.gridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Off
 ![](Visual-Syles_images/Visual-Syles_img1.jpeg)
 
 N> To apply the enhanced themes to the GridControl, set [EnableLegacyStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel~EnableLegacyStyle.html) property to `false`. 
+
+Along with the basic themes defined by `GridVisulStyles`, you can also apply themes by using [GridSkins](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins.html# ""). It is available as an add-on feature in the [GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html# "") library. Currently, it comes with `Vista` skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the[ApplySkin](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins~ApplySkin.html# "") method.
+{% tabs %}
+{% highlight c# %}
+//Apply skin to the GridControl
+GridSkins.ApplySkin(this.gridControl1.Model, Skins.Vista);
+{% endhighlight %}
+{% highlight vb %}
+'Apply skin to the GridControl
+GridSkins.ApplySkin(Me.gridControl1.Model, Skins.Vista)
+{% endhighlight %}
+{% endtabs %}
+
 The change of visual styles can be handled by using the [ThemesChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ThemeChanged_EV.html) event. It will be fired while changing the[GridVisualStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~GridVisualStyles.html) of the GridControl.
 
 ## Enabling Visual Styles   
@@ -126,19 +139,6 @@ Me.gridControl1.MetroColorTable.ThumbNormal = Color.Blue
 ![](Visual-Syles_images/Visual-Syles_img3.jpeg)
 
 N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling) section.
-
-### Apply Skins to the GridControl
-The more advanced themes along with the basic themes defined by GridVisualStyles can be added to the grid by using the [GridSkins](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html) library. `GridSkins` depict the custom skin of `GridVisualStyles`. Currently, it comes with Vista skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins~ApplySkin.html) method.
-{% tabs %}
-{% highlight c# %}
-//Apply skin to the GridControl
-GridSkins.ApplySkin(this.gridControl1.Model, Skins.Vista);
-{% endhighlight %}
-{% highlight vb %}
-'Apply skin to the GridControl
-GridSkins.ApplySkin(Me.gridControl1.Model, Skins.Vista)
-{% endhighlight %}
-{% endtabs %}
 
 ## Skin Manager
 Theme can also be applied to the GridControl by using [SetVisualStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.IContextMenuProvider~SetVisualStyle.html) method of [SkinManager](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager_members.html).
