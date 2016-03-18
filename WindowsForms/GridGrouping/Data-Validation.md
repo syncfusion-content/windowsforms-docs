@@ -47,7 +47,7 @@ this.gridGroupingControl1.TableControl.CurrentCell.ShowErrorMessageBox = false;
 {% endhighlight %}
 {% highlight vb %}
 'Disable the Error Message Box
-this.gridGroupingControl1.TableControl.CurrentCell.ShowErrorMessageBox = false;
+this.gridGroupingControl1.TableControl.CurrentCell.ShowErrorMessageBox = false
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,7 +59,7 @@ The Error provider will also show the error message in the comment tips while mo
 N> When the error is occurred, the current cell will not leave from the edit mode. So that the grid will not allow to perform other actions like moving the current cells, clicking, etc. The <kbd>Esc</kbd> key is used to get out from the exception with the old value of the cell
 
 ## Programmatic Validation
-While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html) and [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html) events. Therefore, the validation will not work at this type of editing. To validate this type of editing, call[CurrentCell.Validate](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~Validate.html) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
+While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html) and [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html) events. Therefore, the validation will not work at this type of editing. To validate this type of editing, call [CurrentCell.Validate](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~Validate.html) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
 
 The below examples shows the `Phone` column is validated when string value is entered,
 

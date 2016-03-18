@@ -175,7 +175,7 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 Check the [Grouping](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic, to know more information regarding grouping.
 
 ## Sorting
-Sorting can be done in GridGroupingControl by just clicking the column header of the grid. It can be configured by using the [AllowSortColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSortColumns.html) property. By default, sorting will be enabled in GridGroupingControl. Refer the[Sorting](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
+Sorting can be done in GridGroupingControl by just clicking the column header of the grid. It can be configured by using the [AllowSortColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSortColumns.html) property. By default, sorting will be enabled in GridGroupingControl. Refer the [Sorting](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
 
 {% tabs %}
 {% highlight c# %}
