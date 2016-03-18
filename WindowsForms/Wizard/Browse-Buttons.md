@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Browse-Buttons | Windows Forms | Syncfusion
+title: Browse-Buttons | WindowsForms | Syncfusion
 description: browse buttons
-platform: windowsforms
+platform: WindowsForms
 control: Wizard
 documentation: ug
 ---
@@ -17,7 +17,7 @@ N> You can navigate between the pages at Design Time also. See Page Navigation a
 
 By default, all the buttons are visible for all the Wizard pages. To change their visibility, use the below properties in individual pages.
 
-Table 947: Property Table
+Property Table
 
 <table>
 <tr>
@@ -82,7 +82,7 @@ Me.wizardControlPage1.FinishVisible = True
 
 You can enable or disable the buttons using the respective button enabled properties.
 
-Table 948: Property Table
+Property Table
 
 <table>
 <tr>
@@ -193,7 +193,7 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5
 
 #### Reordering the Button Sequence
 
-In order to change the position of the buttons, user should handle the GridPosX property and change the position programmatically.
+In order to change the position of the buttons, user should handle the GridPostX property and change the position programmatically.
 
 N> Wizard control automatically sets position for some buttons after page change. Setting the position for controls manually, is not supported in those cases.
 
@@ -241,7 +241,7 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.HelpButton).
 
 The default browse buttons are the normal windows button controls. Appearance of the buttons can be controlled using the properties available. Some appearance properties are listed below.
 
-Table 949: Property Table
+Property Table
 
 <table>
 <tr>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance | Windows Forms | Syncfusion
+title: Appearance | WindowsForms | Syncfusion
 description: Appearance
-platform: windowsforms
+platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
 ---
@@ -57,11 +57,11 @@ Sets the style of the border. The options includes:FixedSingle,Fixed3D andNone (
 <tr>
 <td>
 Border3DStyle</td><td>
-Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }}{{ '_RaisedOuter,_' | markdownify }}{{ '_RaisedInner,_' | markdownify }}{{ '_Sunken (default),_' | markdownify }}{{ '_SunkenOuter,_' | markdownify }}{{ '_SunkenInner,_' | markdownify }}{{ '_Etched,_' | markdownify }}{{ '_Bump,_' | markdownify }}{{ '_Adjust and_' | markdownify }}{{ '_Flat._' | markdownify }}</td></tr>
+Sets 3D border style of the CurrencyTextBox when the BorderStyle is in Fixed3D. The options includes:{{ '_Raised,_' | markdownify }} {{ '_RaisedOuter,_' | markdownify }} {{ '_RaisedInner,_' | markdownify }} {{ '_Sunken (default),_' | markdownify }} {{ '_SunkenOuter,_' | markdownify }} {{ '_SunkenInner,_' | markdownify }} {{ '_Etched,_' | markdownify }} {{ '_Bump,_' | markdownify }} {{ '_Adjust and_' | markdownify }} {{ '_Flat._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderSides</td><td>
-Specifies the border sides. The options includes{{ '_Left,_' | markdownify }}{{ '_Top,_' | markdownify }}{{ '_Right,_' | markdownify }}{{ '_Bottom,_' | markdownify }}{{ '_Middle and_' | markdownify }}{{ '_All (default)._' | markdownify }}</td></tr>
+Specifies the border sides. The options includes{{ '_Left,_' | markdownify }} {{ '_Top,_' | markdownify }} {{ '_Right,_' | markdownify }} {{ '_Bottom,_' | markdownify }} {{ '_Middle and_' | markdownify }} {{ '_All (default)._' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -110,11 +110,11 @@ Description</th></tr>
 <tr>
 <td>
 PositiveColor</td><td>
-Specifies Forecolor when the current value is positive.</td></tr>
+Specifies Fore color when the current value is positive.</td></tr>
 <tr>
 <td>
 NegativeColor</td><td>
-Specifies Forecolor when the current value is negative.</td></tr>
+Specifies Fore color when the current value is negative.</td></tr>
 <tr>
 <td>
 ReadOnlyBackColor</td><td>
@@ -122,7 +122,7 @@ Specifies the color to be used for back color when the control is read only. Set
 <tr>
 <td>
 ZeroColor</td><td>
-Specifies Forecolor when the current value is Zero.</td></tr>
+Specifies Fore color when the current value is Zero.</td></tr>
 </table>
 
 

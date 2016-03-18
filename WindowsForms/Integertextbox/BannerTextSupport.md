@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Banner Text Support | Windows Forms | Syncfusion
+title: Banner Text Support | WindowsForms | Syncfusion
 description: banner text support
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

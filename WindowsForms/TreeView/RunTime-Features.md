@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RunTime-Features | Windows Forms | Syncfusion
+title: RunTime-Features | WindowsForms | Syncfusion
 description: runTime features
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -212,7 +212,7 @@ Editing the nodes using "Edit" Menu Item
 
 We can include editing functionality when you click the Edit menu item using the EditItem_Click event. In the below example, it calls the BeginEdit method and begins editing the node that is selected.
 
-_Table_ _891_: Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -314,7 +314,7 @@ TreeViewAdv control provides scrollbar support to show additional content that i
 
 The text of the ScrollTip can be set through ScrollTipFormat property. It lets you identify the scroll position.
 
-_Table_ _892_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -324,11 +324,11 @@ Description</th></tr>
 <tr>
 <td>
 HorizontalScrollTips</td><td>
-Specifies if the control should display scrolltip when the user is dragging a horizontal scrollbar thumb.</td></tr>
+Specifies if the control should display scroll tip when the user is dragging a horizontal scrollbar thumb.</td></tr>
 <tr>
 <td>
 VerticalScrollTips</td><td>
-Specifies if the control should display scrolltip when the user is dragging a vertical scrollbar thumb.</td></tr>
+Specifies if the control should display scroll tip when the user is dragging a vertical scrollbar thumb.</td></tr>
 <tr>
 <td>
 HorizontalThumbTrack</td><td>
@@ -360,7 +360,7 @@ Me.treeViewAdv1.ScrollTipFormat = "Position {0}"
 
 The following properties support scrolling using mouse wheel.
 
-_Table_ _893_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -377,7 +377,7 @@ MouseWheelScrollLine</td><td>
 Specifies the value which controls the scrolling behavior, when the user rolls the mouse wheel. Default value is 3.</td></tr>
 <tr>
 <td>
-EnableIntelliMouse</td><td>
+EnableIntellijMouse</td><td>
 Specifies whether scrolling is allowed using middle mouse button.</td></tr>
 <tr>
 <td>
@@ -386,14 +386,14 @@ Specifies the acceleration behavior for scrollbars.FastImmediateNoneDefault</td>
 <tr>
 <td>
 AllowIncreaseSmallChange</td><td>
-When set to true, the scroll control can increase the scrollbar.smallchange property when doing accelerated scrolling.</td></tr>
+When set to true, the scroll control can increase the scrollbar.small change property when doing accelerated scrolling.</td></tr>
 </table>
 
 ### Sizing Grip for the Scrollbars
 
 Setting the value for the SizeGripStyle property, will display a sizing grip at the bottom right corner of the control when both the scrollbars are visible. The options available are Show, which will show the sizing grip; Auto, which will automatically show the sizing grip whenever needed; Hide, which will hide the sizing grip.
 
-_Table_ _894_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -423,7 +423,7 @@ Color schemes can be selected using Office2007ScrollBarsColorScheme property.
 
 When the control is been used under a splitter window and if it is sharing the scrollbars with the parent control or the parent window, then setting FillSplitterPane property to true, will toggle support for doing that.
 
-_Table_ _895_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -466,7 +466,7 @@ Hot Tracking is a feature available for nodes of the TreeViewAdv control. This g
 
 Enabling the HotTracking property to true and when the mouse hovers over any node, 
 
-* The forecolor will change to blue and the text will be underlined with blue color, giving the node label a hyperlink appearance.
+* The fore color will change to blue and the text will be underlined with blue color, giving the node label a hyperlink appearance.
 * In the below image the node "France" is given a link approach by setting the HotTracking property to true and by moving the mouse over the node.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img30.jpeg)
@@ -477,7 +477,7 @@ Enabling the HotTracking property to true and when the mouse hovers over any nod
 
 The TreeView control can display help text for individual nodes, when the mouse is moved over a node, by setting the HelpText property of the nodes. 
 
-_Table_ _896_: _Property Table_
+Property Table
 
 <table>
 <tr>

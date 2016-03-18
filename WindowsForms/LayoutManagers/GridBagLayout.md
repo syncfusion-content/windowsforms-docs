@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GridBagLayout | Windows Forms | Syncfusion
+title: GridBagLayout | WindowsForms | Syncfusion
 description: gridbaglayout
-platform: windowsforms
+platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
@@ -38,7 +38,7 @@ The GridBagLayout is completely configured through the GridBag Constraints set f
 
 Setting the Constraints Through Designer
 
-### GridPosX and GridPosY
+### GridPostX and GridPostY
 
 The primary objective in setting the constraint for a Child control is usually to determine in which cell it should be laid out. 
 
@@ -51,16 +51,16 @@ Child Control Constraints </th><th>
 Description</th></tr>
 <tr>
 <td>
-GridPosX</td><td>
+GridPostX</td><td>
 Specifies the column in the virtual grid, where the component's layout bounds begin. The default value is set to -1.</td></tr>
 <tr>
 <td>
-GridPosY</td><td>
+GridPostY</td><td>
 Specifies the row in the virtual grid, where the component's layout bounds begin. The default value is set to -1.</td></tr>
 </table>
 
 
-The following screen shot shows four buttons with non-zero weights with the GridPosX and GridPosY setting as follows: (0, 0), (0, 1), (1 ,0), (1, 1), resulting in a 2 x 2 virtual grid.
+The following screen shot shows four buttons with non-zero weights with the GridPostX and GridPostY setting as follows: (0, 0), (0, 1), (1 ,0), (1, 1), resulting in a 2 x 2 virtual grid.
 
 ![](Overview_images/Overview_img66.jpeg) 
 
@@ -68,7 +68,7 @@ The following screen shot shows four buttons with non-zero weights with the Grid
 
 ### WeightX and WeightY
 
-The next setting determines the weights for each row and column. The GridBagLayout determines the width and height of the rows based on the preferredsize setting of the Child components. Then it allocates the extra horizontal and vertical space available between these columns and rows based on their weights. The weight of a row or column is basically the largest weight of all the Child components in that row or column.
+The next setting determines the weights for each row and column. The GridBagLayout determines the width and height of the rows based on the preferred size setting of the Child components. Then it allocates the extra horizontal and vertical space available between these columns and rows based on their weights. The weight of a row or column is basically the largest weight of all the Child components in that row or column.
 
 
 
@@ -195,11 +195,11 @@ Child Control Constraints</th><th>
 Description</th></tr>
 <tr>
 <td>
-IpadX</td><td>
+IpaddingX</td><td>
 Specifies the pixels to be added to the size of the component when determining its overall width. The default value is set to 'Null'.</td></tr>
 <tr>
 <td>
-IpadY</td><td>
+IpadiingY</td><td>
 Specifies the pixels to be added to the size of the component when determining its overall height. The default value is set to 'Null'.</td></tr>
 </table>
 
@@ -257,7 +257,7 @@ In code, you can specify constraints through the SetConstraints() method. The Gr
 
 Setting the Constraints Programmatically
 
-In the code given below, the GridBagLayout constraints can be set for the controls along with the constraint values for Insets, WeightX, WeightY, Anchor, Fill, GridPosX, GridPosY, IPadX and IPadY.
+In the code given below, the GridBagLayout constraints can be set for the controls along with the constraint values for Insets, WeightX, WeightY, Anchor, Fill, GridPostX, GridPostY, IPadX and IPadY.
 
 
 

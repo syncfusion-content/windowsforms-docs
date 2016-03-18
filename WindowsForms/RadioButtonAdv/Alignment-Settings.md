@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment-Settings | Windows Forms | Syncfusion
+title: Alignment-Settings | WindowsForms | Syncfusion
 description: alignment settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -15,7 +15,7 @@ This section discusses the alignment settings of the RadioButtonAdv.
 
 Text in the RadioButtonAdv can be aligned to the desired location as given below.
 
-Table 413 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
+Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }} {{ '_TopCenter,_' | markdownify }} {{ '_TopRight,_' | markdownify }} {{ '_MiddleLeft,_' | markdownify }} {{ '_MiddleCenter,_' | markdownify }} {{ '_MiddleRight,_' | markdownify }} {{ '_BottomLeft,_' | markdownify }} {{ '_BottomCenter and_' | markdownify }} {{ '_BottomRight._' | markdownify }} WrapText property must be set to 'False'. Refer Text Settings.</td></tr>
 </table>
 
 
@@ -52,7 +52,7 @@ Me.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.Middle
 
 The RadioButton itself can be aligned to any desired location that can be chosen from the options given in the following property.
 
-Table 414 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -62,7 +62,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }}{{ '_TopCenter,_' | markdownify }}{{ '_TopRight,_' | markdownify }}{{ '_MiddleLeft,_' | markdownify }}{{ '_MiddleCenter,_' | markdownify }}{{ '_MiddleRight,_' | markdownify }}{{ '_BottomLeft,_' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ '_BottomRight._' | markdownify }}</td></tr>
+Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }} {{ '_TopCenter,_' | markdownify }} {{ '_TopRight,_' | markdownify }} {{ '_MiddleLeft,_' | markdownify }} {{ '_MiddleCenter,_' | markdownify }} {{ '_MiddleRight,_' | markdownify }} {{ '_BottomLeft,_' | markdownify }} {{ '_BottomCenter and_' | markdownify }} {{ '_BottomRight._' | markdownify }}</td></tr>
 </table>
 
 

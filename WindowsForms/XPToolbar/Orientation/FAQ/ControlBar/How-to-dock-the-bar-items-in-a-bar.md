@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-dock-the-bar-items-in-a-bar | Windows Forms | Syncfusion
+title: How-to-dock-the-bar-items-in-a-bar | WindowsForms | Syncfusion
 description: how to dock the bar items in a bar
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---
 
 # How to dock the bar items in a bar
 
-We can dock the baritems in a bar using XPMenus CommandBarExt class as follows.
+We can dock the bar items in a bar using XPMenus CommandBarExt class as follows.
 
 {% highlight c# %}
 

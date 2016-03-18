@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | Windows Forms | Syncfusion
+title: Appearance-Settings | WindowsForms | Syncfusion
 description: appearance settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
@@ -15,7 +15,7 @@ The appearance of the StatusBarAdvPanel control can be enhanced using the proper
 
 The StatusBarAdvPanel control's background can be customized using the various options provided in the BackgroundColor property given below.
 
-Table 665: Property Table
+Property Table
 
 <table>
 <tr>
@@ -33,11 +33,11 @@ Specifies the brush style.{{ '_Solid,_' | markdownify }}{{ '_Pattern and_' | mar
 <tr>
 <td>
 BackColor</td><td>
-Specifies the backcolor of the control.</td></tr>
+Specifies the back color of the control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Specifies the forecolor for any text or graphics in the control.</td></tr>
+Specifies the fore color for any text or graphics in the control.</td></tr>
 <tr>
 <td>
 PatternStyle</td><td>
@@ -81,7 +81,7 @@ Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 Icons can be added to the StatusBarAdvPanels using the property given below.
 
-Table 666: Property Table
+Property Table
 
 <table>
 <tr>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-select-a-particular-node-as-a-first-visible-node | Windows Forms | Syncfusion
+title: How-to-select-a-particular-node-as-a-first-visible-node | WindowsForms | Syncfusion
 description: how to select a particular node as a first visible node
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This can be done by using the code snippet given below. This will allow the user to make a particular node as the first visible node. The EnsureVisibleSelectedNode property will help the user to bring the invisible node into a visible state by scrolling the ScrollBar to the SelectedNode, if necessary.
 
-_Table_ _946_: _Property Table_
+Property Table
 
 <table>
 <tr>

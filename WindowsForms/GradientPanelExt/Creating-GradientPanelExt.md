@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating GradientPanelExt | Windows Forms | Syncfusion
+title: Creating GradientPanelExt | WindowsForms | Syncfusion
 description: creating gradientpanelext
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
 # Creating GradientPanelExt
 
 
-This section will guide you to create a GradientPanelExt through designer and also through programmatical approach.
+This section will guide you to create a GradientPanelExt through designer and also through programming approach.
 
 ## Through Designer
 

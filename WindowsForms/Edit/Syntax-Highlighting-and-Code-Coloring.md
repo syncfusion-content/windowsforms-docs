@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Syntax-Highlighting-and-Code-Coloring | Windows Forms | Syncfusion
+title: Syntax-Highlighting-and-Code-Coloring | WindowsForms | Syncfusion
 description: syntax highlighting and code coloring
-platform: windowsforms
+platform: WindowsForms
 control: Edit
 documentation: ug
 ---
@@ -300,7 +300,7 @@ Syntax Highlighting and Code Coloring can be implemented at run time by using th
 
 
 
-The Language Coloring Configuration Editorcan be invoked programmatically as follows.
+The Language Coloring Configuration Editor can be invoked programmatically as follows.
 
 {% highlight c# %}
 
@@ -396,7 +396,7 @@ Syntax Highlighting is accomplished in Essential Edit through the use of XML-bas
 
 The language-specific configuration is stored in XML files. The below given code snippet illustrates a sample configuration file that can be used for syntax highlighting a LISP-like code.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -482,7 +482,7 @@ Configuration Settings section.
 
 ## Multiple Language Syntax Highlighting
 
-Edit Control supportssyntax highlighting in scenarios where more than one language is involved. For example, HTML files with embedded JScript.
+Edit Control supports syntax highlighting in scenarios where more than one language is involved. For example, HTML files with embedded JScript.
 
 
 

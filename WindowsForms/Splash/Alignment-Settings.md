@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment-Settings | Windows Forms | Syncfusion
+title: Alignment-Settings | WindowsForms | Syncfusion
 description: alignment settings
-platform: windowsforms
+platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section discusses the alignment settings available in SplashControl.
 
 SplashControl provides options to customize the alignment of the splash image in the desktop. The property that is related to this feature is given below.
 
-Table 621: Property Table
+Property Table
 
 <table>
 <tr>

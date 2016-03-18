@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-prevent-a-TreeMenuItem-from-being-selected | Windows Forms | Syncfusion
+title: How-to-prevent-a-TreeMenuItem-from-being-selected | WindowsForms | Syncfusion
 description: how to prevent a treemenuitem from being selected?
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator
 documentation: ug
 ---

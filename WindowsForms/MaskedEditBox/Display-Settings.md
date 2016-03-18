@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display Settings | Windows Forms | Syncfusion
+title: Display Settings | WindowsForms | Syncfusion
 description: Display Settings
-platform: windowsforms
+platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
@@ -43,7 +43,7 @@ Specifies the character to use when a time separator position is specified.The d
 
 For example, if you want to display the user data in date time format say mm/dd/yy, the mask character should be '##/##/##'.
 
-We can change the default separators used. If you want to display the date time as 'mm-dd-yy', change the DateSeparatorproperty from '/' to '-'.
+We can change the default separators used. If you want to display the date time as 'mm-dd-yy', change the DateSeparator property from '/' to '-'.
 
 Similarly other separators can be used.
 
@@ -174,7 +174,7 @@ The group alignments will only be enforced after the control has lost focus.
 
 The MaskedEditDataGroupInfo.Value property can be used to get the value of a group without any parsing. For example, if the mask is given as follows,
 
-(###) - ### #### Extn ####
+(###) - ### #### Extent ####
 
 3 groups can be defined as follows:
 
@@ -182,7 +182,7 @@ Group1 - (###)
 
 Group2 - ### ####
 
-Group3 Extn - ####
+Group3 Extent - ####
 
 The value of Group 1 will be the area code, Group 2 will be the phone number, and Group 3 will be the extension.
 

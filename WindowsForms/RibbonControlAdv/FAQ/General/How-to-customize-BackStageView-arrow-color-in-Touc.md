@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-customize-BackStageView-arrow-color-in-Touc | Windows Forms | Syncfusion
+title: How-to-customize-BackStageView-arrow-color-in-Touc | WindowsForms | Syncfusion
 description: how to customize backstageview arrow color in touchstyle ribboncontroladv?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 In TouchStyle Ribbon, Menu button arrow color can be customized on BackStageView by enabling the “UseTouchStyleArrowColor” property in RibbonControlAdv. It helps to enable the “MenuButtonArrowColor” and “MenuButtonHoverArrowColor” properties in BackStageView.
 
-_Table804: Property Table:_
+Property Table
 
 <table>
 <tr>

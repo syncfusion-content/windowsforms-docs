@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RadioButtonAdv-Events | Windows Forms | Syncfusion
+title: RadioButtonAdv-Events | WindowsForms | Syncfusion
 description: radiobuttonadv events
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 421 : Events Table
+Events Table
 
 <table>
 <tr>

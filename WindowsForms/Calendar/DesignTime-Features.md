@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DesignTime Features | Windows Forms | Syncfusion
+title: DesignTime Features | WindowsForms | Syncfusion
 description: designtime features
-platform: windowsforms
+platform: WindowsForms
 control: Calendar 
 documentation: ug
 ---

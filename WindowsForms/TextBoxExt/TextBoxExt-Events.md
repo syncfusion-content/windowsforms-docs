@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TextBoxExt-Events | Windows Forms | Syncfusion
+title: TextBoxExt-Events | WindowsForms | Syncfusion
 description: textboxext events
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Table 378 : Events Table
+Events Table
 
 <table>
 <tr>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-activate-a-ProgressBarAdv | Windows Forms | Syncfusion
+title: How-to-activate-a-ProgressBarAdv | WindowsForms | Syncfusion
 description: how to activate a progressbaradv
-platform: windowsforms
+platform: WindowsForms
 control: Notification Package 
 documentation: ug
 ---

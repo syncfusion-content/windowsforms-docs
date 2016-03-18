@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-customize-QuickPanelAlignment-in-RibbonCont | Windows Forms | Syncfusion
+title: How-to-customize-QuickPanelAlignment-in-RibbonCont | WindowsForms | Syncfusion
 description: how to customize quickpanelalignment in ribboncontroladv touchstyle
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 By default, QAT DropDownButton is placed on the left of the ToolStripTabItems. It can be placed on the right side of the ToolStripTabItems by using the property named “QuickPanelAlignment” and it helps to specify the alignment of the QATDropDownButton.
 
-_Table 806: Property Table:_
+Property Table
 
 <table>
 <tr>

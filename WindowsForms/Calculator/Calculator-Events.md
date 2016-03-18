@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Calculator-Events | Windows Forms | Syncfusion
+title: Calculator-Events | WindowsForms | Syncfusion
 description: calculator events
-platform: windowsforms
+platform: WindowsForms
 control: Calculator
 documentation: ug
 ---

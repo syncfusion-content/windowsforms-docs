@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Access the Value of a Record Or Field | Windows Forms | Syncfusion
+title: How to Access the Value of a Record Or Field | WindowsForms | Syncfusion
 description: How to Access the Value of a Record Or Field
-platform: windowsforms
+platform: WindowsForms
 control: Grouping
 documentation: ug
 ---

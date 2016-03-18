@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sorting | Windows Forms | Syncfusion
+title: Sorting | WindowsForms | Syncfusion
 description: Sorting
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -13,7 +13,7 @@ Sorting can be performed on the tree nodes using the Sort function and specifyin
 
 The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the SortWithChildNode property should be set to true. The sort function can be done based on the value type which can be specified using SortType to either the option of Checkbox or Tag or Text. The order in which the sort function has to be performed can be specified using the SortOrder that holds the values of Ascending or Descending.
 
-_Table_ _916_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -54,9 +54,9 @@ TreeNodeAdv9.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.Check
 Comparing Options for Sorting
 
 * The CompareOptions property gives additional options of comparing the texts of the nodes.
-* The Comparer property is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the subnodes. 
+* The Comparer property is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the sub nodes. 
 
-_Table_ _917_: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ Description</th></tr>
 <tr>
 <td>
 CompareOptions</td><td>
-Indicates the compare options used in the sorting of the nodes. The below are the options.IgnoreCase,IgnoreNonSpace,IgnoreSymbols,IgnoreKanaType,IgnoreWidth,OrdinalIgnoreCase,StringSort andOrdinal.</td></tr>
+Indicates the compare options used in the sorting of the nodes. The below are the options.IgnoreCase,IgnoreNonSpace,IgnoreSymbols,IgnoreType,IgnoreWidth,OrdinalIgnoreCase,StringSort andOrdinal.</td></tr>
 <tr>
 <td>
 Comparer</td><td>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Layout-Settings | Windows Forms | Syncfusion
+title: Layout-Settings | WindowsForms | Syncfusion
 description: layout settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -13,7 +13,7 @@ The layout settings of the TextBoxExt control are discussed in this section.
 
 The size of the TextBoxExt control can be set according to the needs of the user using the properties discussed below.
 
-Table 376 : Property Table
+Property Table
 
 <table>
 <tr>

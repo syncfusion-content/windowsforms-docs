@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Drop-Down-Selection | Windows Forms | Syncfusion
+title: Drop-Down-Selection | WindowsForms | Syncfusion
 description: drop-down selection
-platform: windowsforms
+platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---

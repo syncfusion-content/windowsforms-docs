@@ -1,8 +1,8 @@
 ---
 layout: post
-title: StatusBarAdvPanel | Windows Forms | Syncfusion
+title: StatusBarAdvPanel | WindowsForms | Syncfusion
 description: statusbaradvpanel
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 StatusBarAdvPanels can also be added to the StatusBarAdv control using the Panels property. On clicking the Panels property, the StatusBarAdvPanel Collection Editor pops up. Using this window, the user can add any number of panels to the control and customize them according to their requirements.
 
-Table 657: Property Table
+Property Table
 
 <table>
 <tr>
@@ -33,7 +33,7 @@ Indicates the StatusBarAdvPanel controls contained in the StatusBarAdv.</td></tr
 
 The space between the panels can be set using the property given below.
 
-Table 658: Property Table
+Property Table
 
 <table>
 <tr>
@@ -70,7 +70,7 @@ Me.statusBarAdv1.Spacing = New System.Drawing.Size(5, 5)
 
 The rectangle that is used to display the panels can be customized using the property given below.
 
-Table 659 : Property Table
+Property Table
 
 <table>
 <tr>

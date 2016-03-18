@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Settings | Windows Forms | Syncfusion
+title: Text-Settings | WindowsForms | Syncfusion
 description: text settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The below are ProgressBarAdv properties to customize the text and its alignment.
 
-_Table_ _614_: _Property Table_
+Property Table
 
 <table>
 <tr>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tab-Groups | Windows Forms | Syncfusion
+title: Tab-Groups | WindowsForms | Syncfusion
 description:  tab groups
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -225,7 +225,7 @@ The AllowTabGroupCustomizing property indicates whether the user can drag and dr
 
 The below methods can be used for specific functionalities in TabGroups.
 
-_Table_ _853_: Methods Table
+Methods Table
 
 <table>
 <tr>

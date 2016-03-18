@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Border-Settings | Windows Forms | Syncfusion
+title: Border-Settings | WindowsForms | Syncfusion
 description: border settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses the border settings of the ProgressBarAdv control.
 
-_Table_ _613_: _Property Table_
+Property Table
 
 <table>
 <tr>

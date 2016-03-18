@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events-of-BarManager | Windows Forms | Syncfusion
+title: Events-of-BarManager | WindowsForms | Syncfusion
 description: events of barmanager
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

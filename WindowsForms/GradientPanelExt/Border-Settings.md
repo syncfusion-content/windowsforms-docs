@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Border Settings | Windows Forms | Syncfusion
+title: Border Settings | WindowsForms | Syncfusion
 description: border settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
@@ -12,7 +12,7 @@ documentation: ug
 
 The GradientPanelExt comes as a rounded rectangle by default. The rounded corners can be removed or their radius can be modified using the CornerRadius property.
 
-Table241: Property Table
+Property Table
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ Private gradientPanelExt1.CornerRadius = 0
 
 The GradientPanelExt comes with a margin for all the four sides. The spacing between the margin and the control's border can be set using the BorderGap property.
 
-Table242: Property Table
+Property Table
 
 <table>
 <tr>

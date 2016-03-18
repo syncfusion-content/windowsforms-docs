@@ -173,7 +173,7 @@ Release Notes</td><td>
 User Guide (this document)</td><td>
 Online{{ '<http://help.syncfusion.com/windowsforms/chart/overview>' | markdownify }} (Navigate to the Chart for Windows Forms User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
 
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }} Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes-and-Visual-Styles-of-RadioButtonAdv | Windows Forms | Syncfusion
+title: Themes-and-Visual-Styles-of-RadioButtonAdv | WindowsForms | Syncfusion
 description: themes and visual styles of radioButtonAdv
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -15,7 +15,7 @@ This section discusses the themes and visual style settings that are supported b
 
 The RadioButtonAdv can be provided with a themed appearance using the below given property.
 
-Table 419 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Me.radioButtonAdv1.ThemesEnabled = True
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
 
-Table 420 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -61,11 +61,11 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }} {{ '_Office2007._' | markdownify }}</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
+Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }} {{ '_Blue,_' | markdownify }} {{ '_Silver and_' | markdownify }} {{ '_Black._' | markdownify }} The Style property should be set to "Office2007".</td></tr>
 </table>
 
 

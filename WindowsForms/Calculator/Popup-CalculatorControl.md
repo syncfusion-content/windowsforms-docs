@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Popup-CalculatorControl | Windows Forms | Syncfusion
+title: Popup-CalculatorControl | WindowsForms | Syncfusion
 description: popup calculatorControl
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

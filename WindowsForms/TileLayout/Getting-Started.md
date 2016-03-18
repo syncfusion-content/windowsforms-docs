@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
@@ -240,7 +240,7 @@ To create TileLayout programmatically: 
 
 ## Properties
 
-Table 864: Property Table
+Property Table
 
 <table>
 <tr>

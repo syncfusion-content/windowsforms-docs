@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | Windows Forms | Syncfusion
+title: Appearance-Settings | WindowsForms | Syncfusion
 description: appearance settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
@@ -15,7 +15,7 @@ You can enhance the appearance of the StatusBarAdv control by using the followin
 
 You can customize the StatusBarAdv control's background by using the various options provided in the BackgroundColor property as follows.
 
-Table 651: Property Table
+Property Table
 
 <table>
 <tr>
@@ -33,11 +33,11 @@ Specifies the brush style.Solid,Pattern andGradient.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
-Specifies the backcolor of the control.</td></tr>
+Specifies the back color of the control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Specifies the forecolor for any text or graphics in the control.</td></tr>
+Specifies the fore color for any text or graphics in the control.</td></tr>
 <tr>
 <td>
 PatternStyle</td><td>
@@ -121,7 +121,7 @@ Gets or sets whether to set MetroColor as its Border color.</td></tr>
 
 A sizing grip can be displayed for the StatusBarAdv control using the property given below.
 
-Table 652: Property Table
+Property Table
 
 <table>
 <tr>

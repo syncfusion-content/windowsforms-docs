@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to display DateTimePickerAdv control programmatically? | Windows Forms | Syncfusion
+title: How to display DateTimePickerAdv control programmatically? | WindowsForms | Syncfusion
 description: how to display datetimepickeradv control programmatically?
-platform: windowsforms
+platform: WindowsForms
 control: Calendar 
 documentation: ug
 ---

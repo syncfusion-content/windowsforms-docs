@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Sort a Collection | Windows Forms | Syncfusion
+title: How to Sort a Collection | WindowsForms | Syncfusion
 description: How to Sort a Collection
-platform: windowsforms
+platform: WindowsForms
 control: Grouping
 documentation: ug
 ---

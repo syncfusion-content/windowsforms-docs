@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive-Features | Windows Forms | Syncfusion
+title: Interactive-Features | WindowsForms | Syncfusion
 description: interactive features
-platform: windowsforms
+platform: WindowsForms
 control: CommandBars
 documentation: ug
 ---

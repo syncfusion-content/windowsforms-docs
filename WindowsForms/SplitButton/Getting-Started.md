@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---
@@ -79,7 +79,7 @@ Following are the steps to add the SplitButton control to an application through
 
 ### Properties
 
-Table 812: Property Table
+Property Table
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ Adding Items to Drop-Down</td></tr>
 
 ### Events
 
-Table 813: Events Table
+Events Table
 
 <table>
 <tr>
@@ -127,7 +127,7 @@ Reference links </th></tr>
 <tr>
 <td>
 DropDownItemChecked</td><td>
-Will be triggered when drop-down litem is clicked. </td><td>
+Will be triggered when drop-down item is clicked. </td><td>
 ToolStripItemClickedEventArgs</td><td>
 NA </td><td>
 NA </td></tr>

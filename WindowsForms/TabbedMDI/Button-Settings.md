@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button-Settings | Windows Forms | Syncfusion
+title: Button-Settings | WindowsForms | Syncfusion
 description: button settings
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -33,7 +33,7 @@ Me.tabbedMDIManager.DropDownButtonVisible = True
 
 {% endhighlight %}
 
-The visual dropdown styles can be set by handling the BeforeDropDownPopup eventusing the below code snippet.
+The visual dropdown styles can be set by handling the BeforeDropDownPopup event using the below code snippet.
 
 {% highlight c# %}
 
@@ -191,7 +191,7 @@ Using this feature you can hide the close button for the tabs you want to restri
 
 #### Methods
 
-_Table_ _852_: Method Table_
+Method Table
 
 <table>
 <tr>

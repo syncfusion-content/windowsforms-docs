@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Reordering-XPTaskPage | Windows Forms | Syncfusion
+title: Reordering-XPTaskPage | WindowsForms | Syncfusion
 description: reordering xptaskpage
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskPane
 documentation: ug
 ---
@@ -35,7 +35,7 @@ When the end user adds a page to the XPTaskPane control, the order of the page i
 
 XPTaskPage allows you to set the next or the previous page to the currently selected page through the NextPage and PreviousPage properties.
 
-Table 974: Property Table
+Property Table
 
 <table>
 <tr>

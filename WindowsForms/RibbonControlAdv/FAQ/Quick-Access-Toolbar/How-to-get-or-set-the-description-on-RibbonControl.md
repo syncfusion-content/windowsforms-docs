@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-get-or-set-the-description-on-RibbonControl | Windows Forms | Syncfusion
+title: How-to-get-or-set-the-description-on-RibbonControl | WindowsForms | Syncfusion
 description: how to get or set the description on ribboncontroladv?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---

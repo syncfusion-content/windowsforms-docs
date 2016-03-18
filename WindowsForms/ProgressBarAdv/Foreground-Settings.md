@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Foreground-Settings | Windows Forms | Syncfusion
+title: Foreground-Settings | WindowsForms | Syncfusion
 description: foreground settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
@@ -19,7 +19,7 @@ The foreground segment settings available in the ProgressBarAdv control are expl
 
 The foreground of the ProgressBarAdv can be displayed with a segmented appearance using the property given below.
 
-_Table_ _601_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ Me.progressBarAdv1.ForeSegments = False
 
 The foreground segments can be customized using the property given below.
 
-_Table_ _602_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ This section illustrates the color settings that can be applied to the foregroun
 
 The font color and the fore color can be set using the properties given below.
 
-_Table_ _603_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -130,7 +130,7 @@ Me.progressBarAdv1.ForeColor = System.Drawing.Color.Turquoise
 
 The color of the foreground gradient can be changed using the properties given below.
 
-_Table_ _604_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -168,7 +168,7 @@ Me.progressBarAdv1.GradientStartColor = System.Drawing.Color.OrangeRed
 
 The foreground can be displayed with multiple colors using the property given below.
 
-_Table_ _605_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -181,7 +181,7 @@ MultipleColors</td><td>
 Specifies the array of colors used to draw the multiple gradient of the foreground.The ProgressStyle property should be set to 'MultipleGradient'.</td></tr>
 <tr>
 <td>
-StretchMultGrad</td><td>
+StretchMultiGrad</td><td>
 Determines if the multiple gradient will be stretched.</td></tr>
 </table>
 
@@ -212,7 +212,7 @@ Me.progressBarAdv1.StretchMultGrad = False
 
 Colors can be set for the foreground tube of the ProgressBarAdv.
 
-_Table_ _606_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -255,7 +255,7 @@ This section discusses the foreground image settings of ProgressBarAdv.
 
 When the BackgroundStyle and ProgressStyle are set to the 'Image' style, then the foreground image can be specified using the below given property.
 
-_Table_ _607_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -295,7 +295,7 @@ Me.progressBarAdv1.StretchImage = True
 
 The progress style of the ProgressBarAdv control can be set using the properties given below.
 
-_Table_ _608_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -308,7 +308,7 @@ ProgressStyle</td><td>
 Determines the foreground drawing style. It includes the options given below.Constant, Gradient, MultipleGradient, Tube, Image and System.</td></tr>
 <tr>
 <td>
-ProgressFallbackStyle</td><td>
+ProgressFallBackStyle</td><td>
 Determines the foreground drawing style when the ProgressStyle is set to 'System', provided the system doesn't support themes.</td></tr>
 </table>
 
@@ -334,7 +334,7 @@ Me.progressBarAdv1.ProgressFallbackStyle = Syncfusion.Windows.Forms.Tools.Progre
 
 The Waiting Gradient Style of the ProgressBarAdv consists of the following properties that can be used to change the appearance and behavior of the style.
 
-_Table_ _609_: _Property Table_
+Property Table
 
 <table>
 <tr>

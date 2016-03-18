@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-all-the-properties-available-in-RibbonCon | Windows Forms | Syncfusion
+title: What-are-all-the-properties-available-in-RibbonCon | WindowsForms | Syncfusion
 description: what are all the properties available in ribboncontroladv touchstyle and its purpose?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 TouchStyleColorTable helps to customize appearance of each and every item in RibbonControlAdv. The items of the RibbonControlAdv can be customized by using the property given here.
 
-_Table805: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -21,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 ActiveToolStripTabItemBackColor</td><td>
-Gets or sets the back color of active toolstriptabitem.</td></tr>
+Gets or sets the back color of active tool strip tab item.</td></tr>
 <tr>
 <td>
 BackStageButtonColor</td><td>
@@ -40,7 +40,7 @@ BackStageCloseButtonBackground</td><td>
 Gets or sets the color of the CloseButton in BackStageVisible mode.</td></tr>
 <tr>
 <td>
-BackStageSysytemButtonBackground</td><td>
+BackStageSytemButtonBackground</td><td>
 Gets or sets the color of the SystemButton in BackstageVisible mode.</td></tr>
 <tr>
 <td>
@@ -68,7 +68,7 @@ ButtonPressedColor</td><td>
 Gets or sets the color of the Button for pressed state.</td></tr>
 <tr>
 <td>
-CheckedToolstripTabItemForeColor</td><td>
+CheckedTool stripTabItemForeColor</td><td>
 Gets or sets the color of the ToolStripTabItem.</td></tr>
 <tr>
 <td>
@@ -117,7 +117,7 @@ Gets or sets the color for Image Margin.</td></tr>
 <tr>
 <td>
 InActiveToolStripTabItemBackColor</td><td>
-Gets or sets the back color of the in active toolstriptabitem.</td></tr>
+Gets or sets the back color of the in active tool strip tab item.</td></tr>
 <tr>
 <td>
 MenuButtonArrowColor</td><td>
@@ -164,7 +164,7 @@ TabScrollArrowColor</td><td>
 Gets or sets the color for TabScrollArrow.</td></tr>
 <tr>
 <td>
-ToolstripActiveTabItemForeColor</td><td>
+ToolStripActiveTabItemForeColor</td><td>
 Gets or sets the color of the ToolStripTab.</td></tr>
 <tr>
 <td>
@@ -176,31 +176,31 @@ ToolStripBorderColor</td><td>
 Gets or sets the color for ToolStripBorder.</td></tr>
 <tr>
 <td>
-ToolstripButtonPressedBorder</td><td>
+ToolStripButtonPressedBorder</td><td>
 Gets or sets the color for Button Border.</td></tr>
 <tr>
 <td>
-ToolstripSelectedTabItemBorder</td><td>
+ToolStripSelectedTabItemBorder</td><td>
 Gets or sets the color of the SelectedTabBorder.</td></tr>
 <tr>
 <td>
-ToolStripSpliterColor</td><td>
-Gets or sets the color for Spliter.</td></tr>
+ToolStripSplitterColor</td><td>
+Gets or sets the color for Splitter.</td></tr>
 <tr>
 <td>
-ToolstripTabItemBorder</td><td>
+ToolStripTabItemBorder</td><td>
 Gets or sets the color of the TabBorder.</td></tr>
 <tr>
 <td>
-ToolstripTabItemCheckedGradientBegin</td><td>
+ToolStripTabItemCheckedGradientBegin</td><td>
 Gets or sets the color of the CheckedTab.</td></tr>
 <tr>
 <td>
-ToolstripTabItemForeColor</td><td>
+ToolStripTabItemForeColor</td><td>
 Gets or sets the color of the TabForeColor.</td></tr>
 <tr>
 <td>
-ToolstripTabItemSelectedGradientBegin</td><td>
+ToolStripTabItemSelectedGradientBegin</td><td>
 Gets or sets the color of the ToolStripTab.</td></tr>
 </table>
 

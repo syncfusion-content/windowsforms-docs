@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RadioButtonAdv -Settings | Windows Forms | Syncfusion
+title: RadioButtonAdv -Settings | WindowsForms | Syncfusion
 description: radiobuttonAdvsettings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -17,7 +17,7 @@ It includes the below given topics.
 
 The RadioButtonAdv can be displayed in two different states which have been described below.
 
-Table 407 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -58,7 +58,7 @@ This section discusses how values can be associated with the various check state
 
 Both integer and string values can be associated with the check states as follows.
 
-Table 408 : Property Table
+Property Table
 
 <table>
 <tr>

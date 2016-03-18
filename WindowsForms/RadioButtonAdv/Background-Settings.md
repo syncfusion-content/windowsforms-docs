@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Background-Settings | Windows Forms | Syncfusion
+title: Background-Settings | WindowsForms | Syncfusion
 description: background settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -13,7 +13,7 @@ The background settings of the RadioButtonAdv are discussed below.
 
 The RadioButtonAdv can be provided with a gradient background using the properties given below.
 
-Table 415 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }}{{ '_VerticalGradient and_' | markdownify }}{{ '_Default._' | markdownify }}</td></tr>
+Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }} {{ '_VerticalGradient and_' | markdownify }} {{ '_Default._' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>

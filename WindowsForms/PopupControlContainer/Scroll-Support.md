@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scroll Support | Windows Forms | Syncfusion
+title: Scroll Support | WindowsForms | Syncfusion
 description: Scroll Support
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -12,7 +12,7 @@ documentation: ug
 
 We can enable scrollbars automatically for the PopupContainer control, when its items are shown beyond its size by setting AutoScroll to true. When AutoScroll is enabled for the control, we can set the margin and logical size for the autoscroll region by AutoScrollMargin and AutoScrollMinSize properties.
 
-Table 234: Property Table
+Property Table
 
 <table>
 <tr>

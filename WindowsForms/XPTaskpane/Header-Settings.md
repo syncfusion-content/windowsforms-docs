@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Header-Settings | Windows Forms | Syncfusion
+title: Header-Settings | WindowsForms | Syncfusion
 description: header settings
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskPane
 documentation: ug
 ---
@@ -137,7 +137,7 @@ Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1
 
 The Header Menu Item image can be changed through ImageIndex property which lists a set of pre-defined images, else set the Image property to the custom image you want to set for the dropdown image.
 
-Table 975: Property Table
+Property Table
 
 <table>
 <tr>

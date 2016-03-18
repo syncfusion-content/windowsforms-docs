@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-return-the-node-at-a-specified-location | Windows Forms | Syncfusion
+title: How-to-return-the-node-at-a-specified-location | WindowsForms | Syncfusion
 description: how to return the node at a specified location
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 GetNodeAtPoint method will get or returns the node at the specified location. There are three overloads for this method. This method can be called inside DragOver event. The parameters are as follows. To return the node at the specified point, GetNodeAtPointEx method can be called.
 
-_Table_ _944_: _Parameter Table_
+Parameter Table
 
 <table>
 <tr>
@@ -24,7 +24,7 @@ pt</td><td>
 Indicates the location.</td></tr>
 <tr>
 <td>
-textbounds</td><td>
+text bounds</td><td>
 Indicates whether testing will be done using the bounds of text and not the whole bounds of the node.</td></tr>
 <tr>
 <td>

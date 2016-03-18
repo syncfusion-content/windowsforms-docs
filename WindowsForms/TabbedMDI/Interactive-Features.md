@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive-Features | Windows Forms | Syncfusion
+title: Interactive-Features | WindowsForms | Syncfusion
 description: interactive features
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -19,7 +19,7 @@ Tooltip can be enabled for child windows or tabs using the below code snippet, w
 
 The GetTooltip method is used to set the Tooltips for the tabs.
 
-_Table_ _857_: Methods Table
+Methods Table
 
 <table>
 <tr>

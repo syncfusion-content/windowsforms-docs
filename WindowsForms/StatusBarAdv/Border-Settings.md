@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Border-Settings | Windows Forms | Syncfusion
+title: Border-Settings | WindowsForms | Syncfusion
 description: border settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section illustrates the border settings available for the StatusBarAdv cont
 
 The border settings for the StatusBarAdv control can be set through the properties listed below.
 
-Table 656: Property Table
+Property Table
 
 <table>
 <tr>

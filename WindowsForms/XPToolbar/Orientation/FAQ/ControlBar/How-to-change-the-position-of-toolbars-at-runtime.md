@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-change-the-position-of-toolbars-at-runtime | Windows Forms | Syncfusion
+title: How-to-change-the-position-of-toolbars-at-runtime | WindowsForms | Syncfusion
 description: how to change the position of toolbars at runtime?
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPTaskBar Box Settings  | Windows Forms | Syncfusion
+title: XPTaskBar Box Settings  | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: XPtaskBar
 documentation: ug
 ---
@@ -16,7 +16,7 @@ This section lists the properties used for customizing the header of the XPTaskB
 
 The Header of the XPTaskBar Box contains the Collapse button and text. The header text can be changed using the Text property of the XPTaskBar Box. The other properties are discussed below.
 
-_Table 581: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ This section discusses the button settings of the XPTaskBar Box.
 The collapsed button is used to expand or collapse the XPTaskBar Items. The following table lists the properties associated with
 collapsing or expanding the XPTaskBar Box.
 
-_Table 582: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -142,7 +142,7 @@ Me.xpTaskBarBox1.ToggleByButton = True
 
 The methods associated with the above properties are given below.
 
-_Table 583: Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -164,7 +164,7 @@ Saves the expanded child taskbar boxes to the AppStateSerializer.</td></tr>
 Animation during expanding / collapsing of the Taskbar items in an XPTaskBar can be controlled using the following properties. 
 Animation can also be enabled while adding or removing any TaskBar items.
 
-_Table 584: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -217,7 +217,7 @@ This section discusses the mouse hover settings of the XPTaskBar control.
 
 The position of the mouse with respect to the control can be known using the properties given below.
 
-_Table 585: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -258,7 +258,7 @@ Me.xpTaskBarBox1.HeaderHit = True
 
 To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the PreferredChildPanelHeight property.
 
-_Table 586: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -285,7 +285,8 @@ Me.xpTaskBarBox1.PreferredChildPanelHeight = 35
 {% endhighlight %}
 
 ![](Overview_images/Overview_img109.jpeg) 
-Figure 1010: PreferredChildPanelHeight = "35"
+PreferredChildPanelHeight = "35"
+{:.caption}
 
 ## XPTaskBar- ToolTips
 
@@ -295,7 +296,7 @@ for the disabled TaskBar Items.
 The ToolTipText property of the XPTaskBar control can be used to set the text of the tooltip, while the tooltip can be displayed
 using the ShowToolTip property.
 
-_Table 587: Property Table_
+Property Table
 
 <table>
 <tr>

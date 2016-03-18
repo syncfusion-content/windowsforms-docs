@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sizing-Grip | Windows Forms | Syncfusion
+title: Sizing-Grip | WindowsForms | Syncfusion
 description: sizing grip
-platform: windowsforms
+platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---

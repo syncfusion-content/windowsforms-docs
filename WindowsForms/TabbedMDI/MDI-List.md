@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MDI-List | Windows Forms | Syncfusion
+title: MDI-List | WindowsForms | Syncfusion
 description: mdi list
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 By using the TabbedMDIManager framework, you can make your MDI container form's MDIChildren property obsolete. The value returned by this property will not be an accurate reflection of the MDIChildren. You should instead use the TabbedMDIManager's MDIChildren property, to get a list of the MDIChild forms.
 
-_Table_ _854_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -83,9 +83,9 @@ End Sub
 
 If you want an MDI List in your menus, use the TabbedMDIManager's MDIListMenuItem property. This will duplicate the exact functionality that the MDIList property of the MenuItem class provides. This menu item will then be managed by the TabbedMDIManager, even when it is not attached to your container form.
 
-Also you can add an MDI List to your toolstrip menus, using the TabbedMDIManager's MDIListToolStripItem property. This will duplicate the exact functionality that the MDI List property of the ToolStripItem class provides.
+Also you can add an MDI List to your tool strip menus, using the TabbedMDIManager's MDIListToolStripItem property. This will duplicate the exact functionality that the MDI List property of the ToolStripItem class provides.
 
-_Table_ _855_: Property Table
+Property Table
 
 <table>
 <tr>
@@ -99,7 +99,7 @@ Specifies the menu item to which the MDIChildren list should be added. </td></tr
 <tr>
 <td>
 MDIListToolStripItem</td><td>
-Specifies the toolstrip menu item to which the MDIChildren list should be added. </td></tr>
+Specifies the tool strip menu item to which the MDIChildren list should be added. </td></tr>
 </table>
 
 

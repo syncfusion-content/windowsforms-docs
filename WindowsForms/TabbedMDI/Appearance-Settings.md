@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Settings | Windows Forms | Syncfusion
+title: Appearance-Settings | WindowsForms | Syncfusion
 description: appearance settings
-platform: windowsforms
+platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
@@ -27,7 +27,7 @@ The text of the tabs can be set by directly setting the Text property of the for
 
 The below properties controls the appearance and behavior of the icon settings.
 
-_Table_ _856_: Property Table
+Property Table
 
 <table>
 <tr>

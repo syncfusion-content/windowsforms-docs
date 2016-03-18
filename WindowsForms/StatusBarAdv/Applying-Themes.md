@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Applying-Themes | Windows Forms | Syncfusion
+title: Applying-Themes | WindowsForms | Syncfusion
 description: applying themes
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The StatusBarAdv control can be provided with a themed look and feel using the properties given below.
 
-Table 663: Property Table
+Property Table
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Indicates if the StatusBar will draw a themed background. Indicated Settings: Bo
 <tr>
 <td>
 IgnoreThemeBackground</td><td>
-Indicates whether the control will ignore the theme's background color and draw the backcolor instead.</td></tr>
+Indicates whether the control will ignore the theme's background color and draw the back color instead.</td></tr>
 </table>
 
 

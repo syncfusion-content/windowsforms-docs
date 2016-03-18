@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-programmatically-begin-a-group-or-remove-an | Windows Forms | Syncfusion
+title: How-to-programmatically-begin-a-group-or-remove-an | WindowsForms | Syncfusion
 description: how to programmatically begin a group or remove an existing group in a popup menu
-platform: windowsforms
+platform: WindowsForms
 control: Orientation
 documentation: ug
 ---

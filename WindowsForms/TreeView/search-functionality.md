@@ -1,8 +1,8 @@
 ---
 layout: post
-title: search-functionality | Windows Forms | Syncfusion
+title: search-functionality | WindowsForms | Syncfusion
 description: search functionality
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -104,7 +104,7 @@ Event Data
 
 TreeNodeAdvBeforeFindArgs contains the following members that provide information specific to this event:
 
-_Table_ _920_: Members Table_
+Members Table
 
 <table>
 <tr>
@@ -180,7 +180,7 @@ Event Data
 
 TreeNodeAdvAfterFindArgs contains the following members that provide information specific to this event:
 
-_Table_ _921_: Members Table_
+Members Table
 
 <table>
 <tr>
@@ -244,7 +244,7 @@ Event Data
 
 TreeNodeAdvOnReplacingArgs contains the following members that provide information specific to this event:
 
-_Table_ _922_: Members Table_
+Members Table
 
 <table>
 <tr>
@@ -352,7 +352,7 @@ Event Data
 
 The TreeViewOnReplacedArgs contains the following members that provide information specific to this event:
 
-_Table_ _923_: Members Table_
+Members Table
 
 <table>
 <tr>

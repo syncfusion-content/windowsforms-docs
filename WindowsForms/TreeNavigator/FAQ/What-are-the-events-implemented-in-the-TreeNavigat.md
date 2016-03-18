@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-implemented-in-the-TreeNavigat | Windows Forms | Syncfusion
+title: What-are-the-events-implemented-in-the-TreeNavigat | WindowsForms | Syncfusion
 description: what are the events implemented in the treenavigator?
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator
 documentation: ug
 ---
@@ -22,7 +22,7 @@ Event Data
 
 SelectionStateChangingEventArgs contains the following members that provide information specific to this event.
 
- _Table_ _948_: _Selection Changing Event_
+Selection Changing Event
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ This event triggers after the selection of the TreeMenuItem.
 
 SelectionStateChangedEventArgs contains the following members that provide information specific to this event.
 
-_Table_ _949_: _Selection Changed Event_
+Selection Changed Event
 
 <table>
 <tr>

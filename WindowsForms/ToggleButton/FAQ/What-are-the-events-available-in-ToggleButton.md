@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-the-events-available-in-ToggleButton | Windows Forms | Syncfusion
+title: What-are-the-events-available-in-ToggleButton | WindowsForms | Syncfusion
 description: what are the events available in togglebutton
-platform: windowsforms
+platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
@@ -20,7 +20,7 @@ This event is triggered in Toggle Button when its state is changing.
 
 #### Event Data
 
-_Table_ _987_: _Member Table_
+Member Table
 
 <table>
 <tr>
@@ -30,7 +30,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets or sets the value indicating whether the state change should be cancelled or not.</td></tr>
+Gets or sets the value indicating whether the state change should be canceled or not.</td></tr>
 </table>
 
 
@@ -64,7 +64,7 @@ This event is triggered in Toggle Button after its value is changed. 
 
 #### Event Data
 
-_Table_ _988_: _Member Table_
+Member Table
 
 <table>
 <tr>

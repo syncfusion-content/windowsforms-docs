@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TreeViewAdv-Events | Windows Forms | Syncfusion
+title: TreeViewAdv-Events | WindowsForms | Syncfusion
 description: treeviewadv events
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -35,7 +35,7 @@ InteractiveCheckBox settings available for the treeNodeAdv indicates whether the
 
 The TreeNodeAdvEventHandler receives an argument of type TreeNodeAdvEventArgs containing data related to this event. The following TreeNodeAdvEventArgs members provide information specific to this event.
 
-_Table_ _924_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -185,7 +185,7 @@ This event is triggered when the key is first pressed. An example which uses the
 
 The KeyEventHandler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs members provide information specific to this event.
 
-_Table_ _925_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -293,7 +293,7 @@ This event is triggered when the key is first pressed. An example which uses the
 
 The KeyEventHandler receives an argument of type KeyEventArgs containing data related to this event. The following KeyEventArgs members provide information specific to this event.
 
-_Table 925: Members Table_
+Members Table
 <table>
 <tr>
 <th>
@@ -371,7 +371,8 @@ End Sub
  
 ![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
 
-_Figure 1555: Nodes added using Keyboard_
+Nodes added using Keyboard
+{:.caption}
 
 
 ### BeforeCheck Event
@@ -382,7 +383,7 @@ This event is triggered when the checkbox is checked in the control. Below is an
 
 The TreeNodeAdvBeforeCheckEventHandler receives an argument of type TreeNodeAdvBeforeCheckEventArgs containing data related to this event. The following  TreeNodeAdvBeforeCheckEventArgs' members provide information specific to this event.
 
-_Table_ _926_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -392,7 +393,7 @@ Description</th></tr>
 <tr>
 <td>
 NewCheckState</td><td>
-Gets the checkstate of the node.</td></tr>
+Gets the check state of the node.</td></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -402,7 +403,7 @@ A boolean property which indicates whether the event is to be canceled.</td></tr
 Node</td><td>
 Gets the TreeNodeAdv which is associated with this action.</td></tr>
 </table>
-Check or uncheck TreeNodeAdvs using the Mouse
+Check or uncheck TreeNodeAdv using the Mouse
 
 This can be done by handling the TreeViewAdv's BeforeCheck event as shown below.
 
@@ -460,7 +461,7 @@ End Sub
 
 ### Leave Event
 
-This event is triggered when the control is no longer the active control of the form. An example which uses the Leaveevent is as follows.
+This event is triggered when the control is no longer the active control of the form. An example which uses the Leave event is as follows.
 
 How to Use Delete Key for Deleting and as a Shortcut to BarItems / MenuItems of TreeViewAdv
 
@@ -468,7 +469,7 @@ The form contains a treeViewAdv with nodes with LabelEdit property set to true a
 
 After editing the node by pressing F2, if the Delete key is pressed, to avoid the menu shortcut from getting triggered and trigger the deletion of text in the editor, follow the procedure below.
 
-Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the TreeViewAdv's BeforeEdit event, setting the baritem's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
+Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the TreeViewAdv's BeforeEdit event, setting the bar item's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
 
 {% highlight c# %}
 
@@ -639,7 +640,7 @@ End Sub
 
 TreeViewAdv has properties that specifies the collection of expanded nodes, collapsed nodes, checked nodes and selected nodes.
 
-_Table_ _927_: _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -809,7 +810,7 @@ Event Data
 
 The TreeNodeAdvCancelableEditEventHandler receives an argument of type TreeNodeAdvCancelableEditEventArgs containing data related to this event. The following TreeNodeAdvCancelableEditEventArgs members provide information specific to this event.
 
-_Table_ _928_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -896,7 +897,7 @@ Event Data
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _929_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -964,7 +965,7 @@ This event is triggered when the text entered by the user changes in the Node ed
 
 The event handler receives an argument of type TreeNodeAdvEditEventArgs containing data related to this event. The following TreeNodeAdvEditEventArgs properties provide information specific to this event.
 
-_Table_ _930_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1076,7 +1077,7 @@ This event is raised before the node goes into edit mode. Below are examples whi
 
 The TreeNodeAdvBeforeEditEventHandler receives an argument of type TreeNodeAdvBeforeEditEventArgs containing data related to this event. The following  TreeNodeAdvBeforeEditEventArgs' members provide information specific to this event.
 
-_Table_ _931_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1099,12 +1100,12 @@ Gets or Sets a value indicating whether the event should be canceled.</td></tr>
 
 #### Method to set UnEditable Nodes
 
-Methods to make a node completely uneditable even when the,
+Methods to make a node completely un editable even when the,
 
 1. Node is visible.
-2. Node is clickable.
+2. Node is click able.
 
-BeforeEdit event can be used for this purpose. In this example, the Parent Nodes are made uneditable.TreeNodeAdvBeforeEditEventArgs.Node indicates the target node for editing.
+BeforeEdit event can be used for this purpose. In this example, the Parent Nodes are made un editable.TreeNodeAdvBeforeEditEventArgs.Node indicates the target node for editing.
 
 The desired condition is checked on that node and based on the result, the TreeNodeAdvBeforeEditEventArgs.Cancel property is set appropriately.
 
@@ -1150,7 +1151,7 @@ End Sub
 
 Cancel Read / Write property for particular user nodes
 
-By cancelling the BeforeEdit event for particular nodes of particular users, the Read/Write property can be canceled. 
+By canceling the BeforeEdit event for particular nodes of particular users, the Read/Write property can be canceled. 
 
 {% highlight c# %}
 
@@ -1251,7 +1252,7 @@ If a user needs to get a particular node’s details as it is being tracked by t
 
 #### Event Table
 
-_Table_ _932_: Events Table
+Events Table
 
 <table>
 <tr>
@@ -1312,7 +1313,7 @@ Event Data
 
 The MouseEventHandler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _933_: Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1330,7 +1331,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of number of detents the mouse wheel has rotated. A detent is one notch of the mouse wheel.</td></tr>
+Gets a signed count of number of detentes the mouse wheel has rotated. A detente is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -1442,7 +1443,7 @@ MouseWheelZoom event occurs when the user holds the Control Key and rolls the mo
 
 The event handler receives an argument of type MouseWheelZoomEventArgs containing data related to this event. The following MouseWheelZoomEventArgs member provide information specific to this event.
 
-_Table_ _934_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -1489,15 +1490,15 @@ End Sub
 
 {% endhighlight %}
 
-### IntelliMouseDragScrolling Event
+### IntellijMouseDragScrolling Event
 
 This event is triggered when the user presses the mouse wheel and drags the mouse. 
 
 Event Data
 
-The event handler receives an argument of type IntelliMouseDragScrollEventArgs containing data related to this event. The following IntelliMouseDragScrollEventArgs members provide information specific to this event.
+The event handler receives an argument of type IntellijMouseDragScrollEventArgs containing data related to this event. The following IntellijMouseDragScrollEventArgs members provide information specific to this event.
 
-_Table_ _935_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -1609,7 +1610,7 @@ The event NodeMouseClick is raised when the mouse pointer is over the TreeNodeAd
 
 The TreeViewAdvMouseClickEventArgs contain the following members to provide information specific to this event.
 
-_Table_ _936_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -1627,7 +1628,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the number of detents the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the number of detentes the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detente is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -1859,7 +1860,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _937_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -1993,7 +1994,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _938_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2011,7 +2012,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the detents the mouse had rotated, whereas a detent is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the detentes the mouse had rotated, whereas a detente is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -2127,7 +2128,7 @@ Event Data
 
 The event handler receives an argument of type MouseEventArgs containing data related to this event. The following MouseEventArgs members provide information specific to this event.
 
-_Table_ _939_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2145,7 +2146,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the detents the mouse had rotated, whereas a detent is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the detentes the mouse had rotated, whereas a detente is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -2261,7 +2262,7 @@ The event, MouseDown is raised when the mouse pointer is over the control and a 
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _940_: Members Table_
+Members Table
 
 <table>
 <tr>
@@ -2325,7 +2326,7 @@ Event Data
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _941_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2389,7 +2390,7 @@ The event, MouseUp is raised when the mouse pointer is over the control and a mo
 
 The event handler receives an argument of type CancelMouseEventArgs containing data related to this event. The following CancelMouseEventArgs members provide information specific to this event.
 
-_Table_ _942_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2457,7 +2458,7 @@ This event is triggered when the user is dragging the scrollbar thumb.
 
 The event handler receives an argument of type ScrollTipFeedbackEventArgs containing data related to this event. The following ScrollTipFeedbackEventArgs members provide information specific to this event.
 
-_Table_ _943_: Members Table
+Members Table
 
 <table>
 <tr>
@@ -2471,27 +2472,27 @@ Returns a ScrollTipAction value that specifies the user action that led to this 
 <tr>
 <td>
 BackColor</td><td>
-Gets or sets the back color to be used for the scrolltip text.</td></tr>
+Gets or sets the back color to be used for the scroll tip text.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Gets or sets the border style to be used for the scrolltip text.</td></tr>
+Gets or sets the border style to be used for the scroll tip text.</td></tr>
 <tr>
 <td>
 Font</td><td>
-Gets or sets the Font to be used for the scrolltip text.</td></tr>
+Gets or sets the Font to be used for the scroll tip text.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Gets or sets the text color to be used for the scrolltip text.</td></tr>
+Gets or sets the text color to be used for the scroll tip text.</td></tr>
 <tr>
 <td>
 Format</td><td>
-Gets or sets the text layout information for the text in the Scrolltip.</td></tr>
+Gets or sets the text layout information for the text in the Scroll tip.</td></tr>
 <tr>
 <td>
 Location</td><td>
-Gets or sets the location of the scrolltip window.</td></tr>
+Gets or sets the location of the scroll tip window.</td></tr>
 <tr>
 <td>
 ScrollBar</td><td>
@@ -2499,11 +2500,11 @@ Returns the scrollbar that is the source of this event.</td></tr>
 <tr>
 <td>
 Size</td><td>
-Gets or sets the size of the scrolltip window.</td></tr>
+Gets or sets the size of the scroll tip window.</td></tr>
 <tr>
 <td>
 Text</td><td>
-Get or sets the text to display in scrolltip.</td></tr>
+Get or sets the text to display in scroll tip.</td></tr>
 <tr>
 <td>
 Value</td><td>

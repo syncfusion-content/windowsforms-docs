@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MessageBoxAdv | Windows Forms | Syncfusion
+title: MessageBoxAdv | WindowsForms | Syncfusion
 description: messageboxadv
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv
 documentation: ug
 ---
@@ -50,7 +50,7 @@ In MessageBoxAdv, MetroColorTable is implemented for color customization of butt
 
 #### MetroStyleColorTable
 
-The MetroStyleColortable helps to customize the buttons, captions and text color in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties.
+The MetroStyleColor table helps to customize the buttons, captions and text color in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties.
 
 <table>
 <tr>
@@ -60,15 +60,15 @@ Description</th></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Gets or sets the forecolor.</td></tr>
+Gets or sets the fore color.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
-Gets or sets the backcolor.</td></tr>
+Gets or sets the back color.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
-Gets or sets the bordercolor.</td></tr>
+Gets or sets the border color.</td></tr>
 <tr>
 <td>
 CancelButtonBackColor</td><td>
@@ -76,11 +76,11 @@ Gets or sets the CancelButtonBackColor.</td></tr>
 <tr>
 <td>
 CaptionBarColor</td><td>
-Gets or sets the captionbarcolor.</td></tr>
+Gets or sets the captionbar color.</td></tr>
 <tr>
 <td>
 CaptionForeColor</td><td>
-Gets or sets the captionforecolor.</td></tr>
+Gets or sets the captionfore color.</td></tr>
 <tr>
 <td>
 CloseButtonColor</td><td>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Padding | Windows Forms | Syncfusion
+title: Padding | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 --- 
@@ -10,11 +10,11 @@ documentation: ug
 
 ## Padding Settings for XPTaskBar
 
-The interior spacing of the XPTaskBar control can be specified by setting the DockPadding propertyto integer values.
+The interior spacing of the XPTaskBar control can be specified by setting the DockPadding property to integer values.
 
 The horizontal and vertical padding can be specified using the HorizontalPadding and VerticalPadding properties. The default value of the both is 'Zero'.
 
-_Table 589: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ Me.xpTaskBar1.VerticalPadding = 3
 
 Padding provides spacing between the text of the header and it's borders. Horizontal and vertical padding can be set using the PADX and PADY properties.
 
-_Table 590: Property Table_
+Property Table
 
 <table>
 <tr>

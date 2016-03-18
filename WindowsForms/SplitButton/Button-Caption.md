@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button-Caption | Windows Forms | Syncfusion
+title: Button-Caption | WindowsForms | Syncfusion
 description: button caption
-platform: windowsforms
+platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Customize-TabRendering | Windows Forms | Syncfusion
+title: How-to-Customize-TabRendering | WindowsForms | Syncfusion
 description: how to customize tabrendering
-platform: windowsforms
+platform: WindowsForms
 control: TabsPackage
 documentation: ug
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What-are-the-Events-available-in-HubTile-and-purpo | Windows Forms | Syncfusion
+title: What-are-the-Events-available-in-HubTile-and-purpo | WindowsForms | Syncfusion
 description: what are the events available in hubtile and purpose of the events?
 platform: wpf
 control: TabbedMDIPackage
@@ -25,7 +25,7 @@ Event Data
 
 BeforeTransitionEventArgs contain the following members that provide information specific to this Event.
 
-_Table_ _977_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ This Event is triggered after the image Transition and Rotation Transition are c
 
 TransitionCompletedEventArgs contain the following members that provide information specific to this Event.
 
-_Table_ _978_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -169,7 +169,7 @@ This Event is triggered once the HubTile is Selection marked.
 
 SelectionMarker contains the following members that provide information specific to this Event.
 
-_Table_ _979_: _Members Table_
+Members Table
 
 <table>
 <tr>
@@ -215,9 +215,9 @@ This Event is triggered after the HubTile image content is Zoomed In and Out.
 
 #### Event Data
 
-ZoomCompletedcontains the following members that provide information specific to this Event:
+ZoomCompleted contains the following members that provide information specific to this Event:
 
-_Table_ _980_: _Members Table_
+Members Table
 
 <table>
 <tr>

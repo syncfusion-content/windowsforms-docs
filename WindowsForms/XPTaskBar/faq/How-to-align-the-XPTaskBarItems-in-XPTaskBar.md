@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to align the XPTaskBarItems in XPTaskBar | Windows Forms | Syncfusion
+title: How to align the XPTaskBarItems in XPTaskBar | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---

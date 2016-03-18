@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Applying-Themes | Windows Forms | Syncfusion
+title: Applying-Themes | WindowsForms | Syncfusion
 description: applying themes
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 Themes defines the look and feel of the control. This can be enabled using the below given property.
 
-Table 377 : Property Table
+Property Table
 
 <table>
 <tr>

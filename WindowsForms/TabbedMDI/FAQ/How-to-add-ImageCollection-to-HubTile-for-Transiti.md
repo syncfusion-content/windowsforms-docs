@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-ImageCollection-to-HubTile-for-Transiti | Windows Forms | Syncfusion
+title: How-to-add-ImageCollection-to-HubTile-for-Transiti | WindowsForms | Syncfusion
 description: how to add imagecollection to hubtile for transition effects?
 platform: wpf
 control: TabbedMDIPackage
@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve this requirement using HubTileImageList and ImageListAdv properties.
 
-_Table_ _981_: _Property Table_
+Property Table
 
 <table>
 <tr>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: StatusBarAdv-Behavior-Settings | Windows Forms | Syncfusion
+title: StatusBarAdv-Behavior-Settings | WindowsForms | Syncfusion
 description: statusbaradv - behavior settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
@@ -15,7 +15,7 @@ This section discusses the properties that determine the behavior of the StatusB
 
 This includes the properties that enable auto sizing of the StatusBarAdv control.
 
-Table 653: Property Table
+Property Table
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ Me.statusBarAdv1.AutoHeightControls = True
 
 The height of the panels can be made to change automatically when the height of the StatusBarAdv control changes. This can be accomplished using the property given below.
 
-Table 654: Property Table
+Property Table
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ Me.statusBarAdv1.AutoHeightControls = True
 
 The methods associated with the above properties are given below.
 
-Table 655: Methods Table
+Methods Table
 
 <table>
 <tr>

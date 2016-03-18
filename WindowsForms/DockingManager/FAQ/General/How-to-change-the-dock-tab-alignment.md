@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to change the dock tab alignment | Windows Forms | Syncfusion
+title: How to change the dock tab alignment | WindowsForms | Syncfusion
 description: How to change the dock tab alignment
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---

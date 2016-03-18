@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-ToolStripDropDownButton | Windows Forms | Syncfusion
+title: Ribbon-ToolStripDropDownButton | WindowsForms | Syncfusion
 description:  ribbon toolstripdropdownbutton
-platform: windowsforms
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolStripDropDownButton
+# Ribbon ToolStripDropDownButton
 
 DropDownButton appears like normal button that contains a drop arrow. It displays some items, while click on it. It accepts DropDownMenuItem as its children.
 
@@ -134,11 +134,11 @@ Specifies the alignment of the text in the item. The options are,<br/><br/>TopLe
 <tr>
 <td>
 TextDirection<br/><br/></td><td>
-Specifies the direction of drawing the text. The direction are,<br/><br/>{{'__Horizontal__ '| markdownify }}- Text is placed horizontally,<br/><br/>{{'__Vertical90__ '| markdownify }}- Text is placed vertically and <br/><br/>{{'__Vertical270__ '| markdownify }}- Text is placed vertically at 270 degrees.<br/><br/></td></tr>
+Specifies the direction of drawing the text. The direction are,<br/><br/>{{'__Horizontal__ '| markdownify }} - Text is placed horizontally,<br/><br/>{{'__Vertical90__ '| markdownify }} - Text is placed vertically and <br/><br/>{{'__Vertical270__ '| markdownify }} - Text is placed vertically at 270 degrees.<br/><br/></td></tr>
 <tr>
 <td>
 TextImageRelation<br/><br/></td><td>
-Specifies the relative location of the image to the text on the item. The options are,<br/><br/>{{'__Overlay__ '| markdownify }}- Image and text shares the same space in the control,<br/><br/>{{'__ImageAboveText__ '| markdownify }}- Image will be placed above the text,<br/><br/>{{'__TextAboveImage__ '| markdownify }}- Text will be placed above the image,<br/><br/>{{'__ImageBeforeText__ '| markdownify }}- Image will be placed before the text and <br/><br/>{{'__TextBeforeImage__ '| markdownify }}- Text will be placed before the image.<br/><br/></td></tr>
+Specifies the relative location of the image to the text on the item. The options are,<br/><br/>{{'__Overlay__ '| markdownify }} - Image and text shares the same space in the control,<br/><br/>{{'__ImageAboveText__ '| markdownify }} - Image will be placed above the text,<br/><br/>{{'__TextAboveImage__ '| markdownify }} - Text will be placed above the image,<br/><br/>{{'__ImageBeforeText__ '| markdownify }} - Image will be placed before the text and <br/><br/>{{'__TextBeforeImage__ '| markdownify }} - Text will be placed before the image.<br/><br/></td></tr>
 </table>
 
 ### Image Settings
@@ -176,7 +176,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 DisplayStyle<br/><br/></td><td>
-Specifies how the image and text are rendered. The styles are,<br/><br/>{{'__Text__ '| markdownify }}- Displays only text,<br/><br/>{{'__Image__ '| markdownify }}- Displays only image,<br/><br/>{{'__ImageAndText__ '| markdownify }}- Displays image and text.<br/><br/></td></tr>
+Specifies how the image and text are rendered. The styles are,<br/><br/>{{'__Text__ '| markdownify }} - Displays only text,<br/><br/>{{'__Image__ '| markdownify }} - Displays only image,<br/><br/>{{'__ImageAndText__ '| markdownify }} - Displays image and text.<br/><br/></td></tr>
 <tr>
 <td>
 Enabled<br/><br/></td><td>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Settings | Windows Forms | Syncfusion
+title: Text-Settings | WindowsForms | Syncfusion
 description: text settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section discusses the text settings of the TextBoxExt control.
 
 The text associated with the TextBoxExt control can be set and customized using the below given settings.
 
-Table 367 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -105,7 +105,7 @@ Me.textBoxExt1.DrawActiveWhenDisabled = True
 
 The methods associated with the above properties are given below.
 
-Table 368 : Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -154,7 +154,7 @@ Selects all text in the TextBox.</td></tr>
 
 The text settings of the TextBoxExt control can be customized to display multiline text using the below given properties.
 
-Table 369 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -222,7 +222,7 @@ N> The ScrollToCaret() method can be used to scroll the contents of the contr
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
 
-Table 370 : Property Table
+Property Table
 
 <table>
 <tr>

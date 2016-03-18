@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Navigation-Mode | Windows Forms | Syncfusion
+title: Navigation-Mode | WindowsForms | Syncfusion
 description: navigation mode
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---

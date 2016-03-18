@@ -1,8 +1,8 @@
 ---
 layout: post
-title: IntegerTextBox Events | Windows Forms | Syncfusion
+title: IntegerTextBox Events | WindowsForms | Syncfusion
 description: IntegerTextBox Events
-platform: windowsforms
+platform: WindowsForms
 control: Tools
 documentation: ug
 ---

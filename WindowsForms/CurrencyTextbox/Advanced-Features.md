@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced-Features | Windows Forms | Syncfusion
+title: Advanced-Features | WindowsForms | Syncfusion
 description: advanced features
-platform: windowsforms
+platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
 ---
@@ -22,7 +22,7 @@ The CurrencyTextBox control also provides support for clipboard operations that 
 <tr>
 <td>
 ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ 'ExcludeFormatting and' | markdownify }}{{ 'IncludeFormatting.' | markdownify }}</td></tr>
+Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ 'ExcludeFormatting and' | markdownify }} {{ 'IncludeFormatting.' | markdownify }}</td></tr>
 </table>
 
 
@@ -48,7 +48,7 @@ Me.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.
 
 ## Overflow Indicator
 
-You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in OverflowIndicatorToolTipText.Set ShowOverflowIndicatorproperty to true to enable this feature. Set ShowOverflowIndicatorToolTip property to true to display the tooltip text.
+You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in OverflowIndicatorToolTipText.Set ShowOverflowIndicator property to true to enable this feature. Set ShowOverflowIndicatorToolTip property to true to display the tooltip text.
 
 {% highlight c# %}
 
@@ -95,7 +95,7 @@ Specifies whether the culture property is to be refreshed when the culture chang
 <tr>
 <td>
 SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify }}{{ 'CurrentCulture (default),' | markdownify }}{{ 'InstalledCulture, '| markdownify }}{{ 'UICulture. '| markdownify }}</td></tr>
+It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify }} {{ 'CurrentCulture (default),' | markdownify }} {{ 'InstalledCulture, '| markdownify }} {{ 'UICulture. '| markdownify }}</td></tr>
 </table>
 
 
@@ -180,7 +180,7 @@ Gets the culture name in the format "&lt;language full&gt;(&lt;country/region fu
 <tr>
 <td>
 EnglishName</td><td>
-Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in english.</td></tr>
+Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in English.</td></tr>
 <tr>
 <td>
 NativeName</td><td>

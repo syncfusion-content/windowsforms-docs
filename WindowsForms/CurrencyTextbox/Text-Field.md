@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Field | Windows Forms | Syncfusion
+title: Text-Field | WindowsForms | Syncfusion
 description: text field
-platform: windowsforms
+platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
 ---
@@ -177,7 +177,7 @@ This property specifies the pattern to use when the value is positive.</td></tr>
 <tr>
 <td>
 CurrencyNegativePattern</td><td>
-This property specifies the pattern to use when the value is negative. For example, set CurrencyNegativePattern to be 2 or 3 and then hit -ve symbol, you will know the change of display.</td></tr>
+This property specifies the pattern to use when the value is negative. For example, set CurrencyNegativePattern to be 2 or 3 and then hit Negative symbol, you will know the change of display.</td></tr>
 </table>
 
 
@@ -282,7 +282,7 @@ The default negative sign '-' can be changed by NegativeSign property to any oth
 
 For example, if the current value of the TextBox is 1.00 with all the text being selected and when the user presses the negative key followed by key 5, the value will be  '-5'.
 
-When it is set to false, the current value is changed to negative value immediately. For example, if the current value of the TextBox is 1.00 awith all the text being selected and when the user presses the negative key, the value is '-1'.
+When it is set to false, the current value is changed to negative value immediately. For example, if the current value of the TextBox is 1.00 with all the text being selected and when the user presses the negative key, the value is '-1'.
 
 {% highlight c# %}
 
@@ -321,7 +321,7 @@ It sets the minimum value to the currency TextBox. The default value is 79228162
 <tr>
 <td>
 EnforceMinMaxDuringValidating</td><td>
-If the minimum and maximum values are not met, the validating event will be handled and cancelled if this property is set to true.</td></tr>
+If the minimum and maximum values are not met, the validating event will be handled and canceled if this property is set to true.</td></tr>
 </table>
 
 

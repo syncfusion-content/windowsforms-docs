@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPTaskBar Settings  | Windows Forms | Syncfusion
+title: XPTaskBar Settings  | WindowsForms | Syncfusion
 description: Concepts and Features
-platform: windowsforms
+platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
@@ -14,7 +14,7 @@ The behavior of the XPTaskBar can be controlled using the properties given below
 
 This section discusses the behavior settings of the XPTaskBar.
 
-_Table 579: Property Table_
+Property Table
 
 <table>
 <tr>
@@ -104,7 +104,7 @@ area, provided the XPTaskBar is in the Vertical Layout mode.
 In the Horizontal Layout mode, the horizontal scrollbar appears on setting the ColWidthOnHorizontalLayout property to large 
 values.
 
-_Table 580: Property Table_
+Property Table
 
 <table>
 <tr>

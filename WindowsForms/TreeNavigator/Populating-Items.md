@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Populating-Items | Windows Forms | Syncfusion
+title: Populating-Items | WindowsForms | Syncfusion
 description: populating items
-platform: windowsforms
+platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---

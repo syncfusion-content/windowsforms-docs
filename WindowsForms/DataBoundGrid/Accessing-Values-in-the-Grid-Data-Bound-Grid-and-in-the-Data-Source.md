@@ -20,6 +20,8 @@ To access values in the Grid Data Bound Grid, use the indexer and retrieve the v
 object myValue = this.gridDataBoundGrid1[row, col].CellValue; 
 
 {% endhighlight  %}
+
+
 {% highlight vbnet %}
 
 
@@ -52,6 +54,7 @@ int col = this.gridDataBoundGrid1.Binder.FieldToColIndex(nField);
 object myValue = this.gridDataBoundGrid1[row, col].CellValue;
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
 

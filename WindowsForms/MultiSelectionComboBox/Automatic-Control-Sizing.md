@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Automatic-Control-Sizing | Windows Forms | Syncfusion
+title: Automatic-Control-Sizing | WindowsForms | Syncfusion
 description: automatic control sizing
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

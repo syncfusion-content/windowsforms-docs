@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-set-Menu-button-image-in-BackStageView | Windows Forms | Syncfusion
+title: How-to-set-Menu-button-image-in-BackStageView | WindowsForms | Syncfusion
 description: how to set menu button image in backstageview?
-platform: windowsforms
+platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 You can change the BackStage menu button by using the BackStageViewNavigationButtonImage property in BackStageView.
 
-_Table 808: Property Table_
+Property Table
 
 <table>
 <tr>

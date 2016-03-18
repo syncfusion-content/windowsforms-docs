@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-hide-the-Focus-Rectangle-which-gets-display | Windows Forms | Syncfusion
+title: How-to-hide-the-Focus-Rectangle-which-gets-display | WindowsForms | Syncfusion
 description: how to hide the focus rectangle which gets displayed on the selected tab
-platform: windowsforms
+platform: WindowsForms
 control: TabsPackage
 documentation: ug
 ---

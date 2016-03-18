@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ToolTip | Windows Forms | Syncfusion
+title: ToolTip | WindowsForms | Syncfusion
 description: tooltip
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ToolTip can be set for the StatusBarAdvPanel using the property given below.
 
-Table 676: Property Table
+Property Table
 
 <table>
 <tr>

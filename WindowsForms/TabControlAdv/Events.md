@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabControlAdv-Events | Windows Forms | Syncfusion
+title: TabControlAdv-Events | WindowsForms | Syncfusion
 description: tabcontroladv events
-platform: windowsforms
+platform: WindowsForms
 control: TabControlAdv 
 documentation: ug
 ---
@@ -1207,7 +1207,7 @@ End Sub
 
 ## Closing Event
 
-The TabPageAdv.Closing event is raised when a Tabpage is closing.
+The TabPageAdv.Closing event is raised when a Tab page is closing.
 
 {% tabs %}
 

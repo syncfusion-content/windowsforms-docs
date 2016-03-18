@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
-platform: windowsforms
+platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
 # Getting Started
 
-This section will provide step by step procedure to design a dockingwindow layout through designer and through programmatical approach in a .NET application. 
+This section will provide step by step procedure to design a docking window layout through designer and through programmating approach in a .NET application. 
 
 ## Through Designer
 
@@ -50,7 +50,7 @@ The following steps outline the sequence of steps involved in setting up a simpl
 
 
 
-7. Use the AutoHideOnLoad and HiddenOnLoad extended properties for setting the autohidden and hidden dock states for the controls.
+7. Use the AutoHideOnLoad and HiddenOnLoad extended properties for setting the auto hidden and hidden dock states for the controls.
 
     ![](Getting-Started_images/Getting-Started_img6.jpeg) 
 

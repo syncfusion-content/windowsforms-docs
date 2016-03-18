@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ProgressBarAdv-Events | Windows Forms | Syncfusion
+title: ProgressBarAdv-Events | WindowsForms | Syncfusion
 description: progressbaradv events
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-_Table_ _615_: _Events Table_
+Events Table
 
 <table>
 <tr>
@@ -33,13 +33,13 @@ This event is handled to set the text of the ProgressBarAdv when the value chang
 
 The CustomWaitingRender property indicates whether the waiting gradient will be replaced by another custom waiting render which is defaulted to segments. When this property is set to 'True', it enables the custom waiting render behavior which will fire this DrawWaitingCustomRender event.
 
-This event lets you do the desired drawing. If you perform custom drawing, you should specify that to the ProgressBarAdv (so that it does not perform it's default painting), by setting e.Handled = true. If no custom painting is done, then you do not have to set e.Handled value, and the ProgressBarAdv draws it's default segmented waiting gradient. The type of segments are specified through the ProgressFallbackStyle with the options Continuous, Tube, Gradient and System.
+This event lets you do the desired drawing. If you perform custom drawing, you should specify that to the ProgressBarAdv (so that it does not perform it's default painting), by setting e.Handled = true. If no custom painting is done, then you do not have to set e.Handled value, and the ProgressBarAdv draws it's default segmented waiting gradient. The type of segments are specified through the ProgressFallBackStyle with the options Continuous, Tube, Gradient and System.
 
 ### Event Data
 
 The event handler receives an argument of the type ProgressBarAdvDrawEventArgs containing data related to this event. The following ProgressBarAdvDrawEventArgs members provide information specific to this event.
 
-_Table_ _616_: _Memb Table_
+Member Table
 
 <table>
 <tr>

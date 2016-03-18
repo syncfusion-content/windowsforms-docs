@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ComboBoxAdv-Concepts-and-features | Windows Forms | Syncfusion
+title: ComboBoxAdv-Concepts-and-features | WindowsForms | Syncfusion
 description: comboboxadv concepts and features
-platform: windowsforms
+platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
@@ -241,7 +241,7 @@ You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvid
 
 ## DropDown Settings
 
-Dropdown for the ComboBoxAdv control can be customized using the folllowing properties.
+Dropdown for the ComboBoxAdv control can be customized using the following properties.
 
 
 <table>

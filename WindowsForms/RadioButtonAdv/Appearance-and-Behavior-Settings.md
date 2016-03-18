@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-and-Behavior-Settings | Windows Forms | Syncfusion
+title: Appearance-and-Behavior-Settings | WindowsForms | Syncfusion
 description: appearance and behavior settings
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
@@ -18,7 +18,7 @@ DrawFocusRectangle
 
 The focus rectangle can be hidden or made visible using the below given property.
 
-Table 410: Property Table
+Property Table
 
 <table>
 <tr>
@@ -54,7 +54,7 @@ Me.radioButtonAdv1.DrawFocusRectangle = True
 
 The height of the RadioButtonAdv can be automatically set using the property given below.
 
-Table 411 : Property Table
+Property Table
 
 <table>
 <tr>
@@ -84,7 +84,7 @@ Me.radioButtonAdv1.AutoHeight = True
 
 The below given property can be used to fire the OnClick event of the RadioButtonAdv.
 
-Table 412 : Property Table
+Property Table
 
 <table>
 <tr>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SplitContainerAdv | Windows Forms | Syncfusion
+title: SplitContainerAdv | WindowsForms | Syncfusion
 description: SplitContainerAdv
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
@@ -79,7 +79,7 @@ Me.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPan
 
 We can make any of the panels to be collapsed at run time. The below properties helps you to do that.
 
-Table 243: Property Table
+Property Table
 
 <table>
 <tr>
@@ -176,7 +176,7 @@ The properties which changes the behavior of the Splitter in a SplitContainerAdv
 
 The below table describes the properties to control the behavior of the splitter. 
 
-Table 244: Property Table
+Property Table
 
 <table>
 <tr>
@@ -240,7 +240,7 @@ Me.splitContainerAdv1.SplitterWidth = 20
 
 SplitContainerAdv control supports various appearance settings for the ThumbnailArrow in the control which are discussed in detail below. The properties which control the appearance of the splitter components are as follows.
 
-Table 245: Property Table
+Property Table
 
 <table>
 <tr>
@@ -304,7 +304,7 @@ Me.splitContainerAdv2.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawin
 
 The properties to control the appearance of the thumbnail arrows, and grip, while mouse hovering at runtime, are as follows.
 
-Table 246: Property Table
+Property Table
 
 <table>
 <tr>
@@ -382,7 +382,7 @@ This section discusses the properties which controls the appearance of the Split
 
 The below table describes the background settings.
 
-Table 247: Property Table
+Property Table
 
 <table>
 <tr>
@@ -438,7 +438,7 @@ Me.splitContainerAdv1.Panel2.BackColor = System.Drawing.Color.AliceBlue
 
 The below table describes the foreground settings.
 
-Table 248: Property Table
+Property Table
 
 <table>
 <tr>

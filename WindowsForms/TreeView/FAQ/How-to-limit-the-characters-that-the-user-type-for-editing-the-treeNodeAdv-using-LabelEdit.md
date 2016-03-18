@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-limit-the-characters-that-the-user-type-for-editing-the-treenodeadv-using-labeledit | Windows Forms | Syncfusion
+title: How-to-limit-the-characters-that-the-user-type-for-editing-the-treenodeadv-using-labeledit | WindowsForms | Syncfusion
 description: how to limit the characters, that the user type for editing the treenodeadv using labeledit
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---

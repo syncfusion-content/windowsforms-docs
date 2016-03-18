@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to Add Expression Fields | Windows Forms | Syncfusion
+title: How to Add Expression Fields | WindowsForms | Syncfusion
 description: How to Add Expression Fields
-platform: windowsforms
+platform: WindowsForms
 control: Grouping
 documentation: ug
 ---

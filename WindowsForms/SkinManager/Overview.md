@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: overview
-platform: windowsforms
+platform: WindowsForms
 control: SkinManager 
 documentation: ug
 ---
@@ -26,7 +26,7 @@ Properties and Methods Tables for Skin Manager
 
 ### Properties
 
-Table 810: Property Table
+Property Table
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ NA</td></tr>
 </table>
 Methods
 
-Table 811: Methods Table
+Methods Table
 
 <table>
 <tr>

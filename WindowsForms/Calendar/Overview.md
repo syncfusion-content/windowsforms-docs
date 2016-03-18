@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | WindowsForms | Syncfusion
 description: Overview
-platform: windowsforms
+platform: WindowsForms
 control: Calendar
 documentation: ug
 ---

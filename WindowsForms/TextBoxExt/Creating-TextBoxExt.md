@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Creating-TextBoxExt | Windows Forms | Syncfusion
+title: Creating-TextBoxExt | WindowsForms | Syncfusion
 description: creating textboxext
-platform: windowsforms
+platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
 # Creating TextBoxExt
 
-This section will give a step-by-step procedure to design a TextBoxExt control through designer and also through programmatical approach.
+This section will give a step-by-step procedure to design a TextBoxExt control through designer and also through programming approach.
 
 ## Through Designer
 
@@ -26,7 +26,7 @@ This section will give a step-by-step procedure to design a TextBoxExt control t
 
 
 
-### Through Programmatical Approach
+### Through Programming Approach
 
 1. Declare an instance of the TextBoxExt control.
 

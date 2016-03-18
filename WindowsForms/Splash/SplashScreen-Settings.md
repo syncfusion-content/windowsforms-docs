@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SplashScreen-Settings | Windows Forms | Syncfusion
+title: SplashScreen-Settings | WindowsForms | Syncfusion
 description: splashscreen settings
-platform: windowsforms
+platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
@@ -15,7 +15,7 @@ The following are the splash settings available for the SplashControl.
 
 The properties given below describe the AutoMode features of the SplashControl.
 
-Table 617: Property Table
+Property Table
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ Me.splashControl1.AutoModeDisableOwner = True
 
 The methods given below can also be used to show / hide the splash screen at run time. 
 
-Table 618: Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -159,7 +159,7 @@ End Sub
 
 The SplashControl is, by default, a timed display splash screen. The splash screen will be displayed for a specific time period and will then be closed. By default, the value will be set as 5000. User can change this value, run the application and see the difference.
 
-Table 619: Property Table
+Property Table
 
 <table>
 <tr>

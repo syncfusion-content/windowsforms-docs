@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Wizard-Page-Settings | Windows Forms | Syncfusion
+title: Wizard-Page-Settings | WindowsForms | Syncfusion
 description: wizard page settings 
-platform: windowsforms
+platform: WindowsForms
 control: Wizard Package 
 documentation: ug
 ---
@@ -17,7 +17,7 @@ Creating a Basic Wizard topic discussed how to add Wizard Pages. Let us see how 
 
 You can specify the title and description in the Banner Panel, for a particular Wizard Page using the WizardPage.Title and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. See Title and Description Settings for details.
 
-Table 943: Property Table
+Property Table
 
 <table>
 <tr>
@@ -63,7 +63,7 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 We can also access the properties of a Wizard Page using SelectedWizardPage property of the WizardControl in the Designer.
 
-Table 944: Property Table
+Property Table
 
 <table>
 <tr>
@@ -87,7 +87,7 @@ The individual Wizard page is identified using its LayoutName in the SelectedWiz
 
 The header section (GradientPanel and its child controls) can be hidden by setting FullPage property to true. This makes the page occupy the entire space without the header.
 
-Table 945: Property Table
+Property Table
 
 <table>
 <tr>
@@ -152,7 +152,7 @@ By default, the WizardControl will use the order in which the pages are added to
 
 * The WizardControlPage has the NextPage and PreviousPage properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
 
-Table 946: Property Table
+Property Table
 
 <table>
 <tr>

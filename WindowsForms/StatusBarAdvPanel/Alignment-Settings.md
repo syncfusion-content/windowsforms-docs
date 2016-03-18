@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Alignment-Settings | Windows Forms | Syncfusion
+title: Alignment-Settings | WindowsForms | Syncfusion
 description: alignment settings
-platform: windowsforms
+platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section discusses the alignment settings of the StatusBarAdvPanel control.
 
 The contents of the StatusBarAdvPanel can be aligned using the property given below.
 
-Table 674: Property Table
+Property Table
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ Me.statusBarAdvPanel1.Alignment = System.Windows.Forms.HorizontalAlignment.Left
 
 The horizontal alignment of the StatusBarAdvPanels in the StatusBarAdv control can be customized using the property given below.
 
-Table 675: Property Table
+Property Table
 
 <table>
 <tr>

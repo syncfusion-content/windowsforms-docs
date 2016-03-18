@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-Programmatically-control-the-Page-Sequence | Windows Forms | Syncfusion
+title: How-to-Programmatically-control-the-Page-Sequence | WindowsForms | Syncfusion
 description: how to programmatically control the page sequence?
-platform: windowsforms
+platform: WindowsForms
 control: Wizard
 documentation: ug
 ---

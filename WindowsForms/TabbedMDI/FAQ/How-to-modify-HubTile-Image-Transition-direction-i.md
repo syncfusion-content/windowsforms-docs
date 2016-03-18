@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-modify-HubTile-Image-Transition-direction-i | Windows Forms | Syncfusion
+title: How-to-modify-HubTile-Image-Transition-direction-i | WindowsForms | Syncfusion
 description:  how to modify hubtile image transition direction in runtime?
 platform: wpf
 control: TabbedMDIPackage
@@ -11,7 +11,7 @@ documentation: ug
 
 You can set HubTileSlideTransition property to achieve this.
 
-_Table_ _984_: _Property Table_
+Property Table
 
 <table>
 <tr>

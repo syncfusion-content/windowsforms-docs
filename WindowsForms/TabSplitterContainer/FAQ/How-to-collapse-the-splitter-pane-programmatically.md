@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-collapse-the-splitter-pane-programmatically | Windows Forms | Syncfusion
+title: How-to-collapse-the-splitter-pane-programmatically | WindowsForms | Syncfusion
 description: how to collapse the splitter pane programmatically
-platform: windowsforms
+platform: WindowsForms
 control: TabsPackage
 documentation: ug
 ---

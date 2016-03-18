@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating MonthCalendarAdv | Windows Forms | Syncfusion
+title: Creating MonthCalendarAdv | WindowsForms | Syncfusion
 description: creating monthcalendaradv
-platform: windowsforms
+platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hosting ComboBoxBase Control  | Windows Forms | Syncfusion
+title: Hosting ComboBoxBase Control  | WindowsForms | Syncfusion
 description: Hosting ComboBoxBase Control 
-platform: windowsforms
+platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---

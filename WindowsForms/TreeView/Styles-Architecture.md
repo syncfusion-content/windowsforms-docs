@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styles-Architecture | Windows Forms | Syncfusion
+title: Styles-Architecture | WindowsForms | Syncfusion
 description: styles architecture
-platform: windowsforms
+platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
@@ -32,7 +32,7 @@ The different levels in the above hierarchy are,
 
 Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 
-_Table_ _913_: Property Table_
+Property Table
 
 <table>
 <tr>

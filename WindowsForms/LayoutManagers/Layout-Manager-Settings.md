@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Manager Settings | Windows Forms | Syncfusion
+title: Layout Manager Settings | WindowsForms | Syncfusion
 description: Layout Manager Settings
 control: Layout Managers Package
 documentation: ug
@@ -136,15 +136,15 @@ TopMargin</td><td>
 Gets / sets the top margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
-HorzNearMargin</td><td>
+HortNearMargin</td><td>
 Gets / sets the left margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
-HorzFarMargin</td><td>
+HortFarMargin</td><td>
 Gets / sets the right margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
-BottonMargin</td><td>
+BottomMargin</td><td>
 Gets / sets the bottom margin between the client rectangle and the layout rectangle.</td></tr>
 </table>
 
@@ -176,7 +176,8 @@ Me.borderLayout1.HorzNearMargin = 20
 Me.borderLayout1.BottomMargin = 20
 
 {% endhighlight  %}
-![](Overview_images/Overview_img11.jpeg) | markdownify }
+
+![](Overview_images/Overview_img11.jpeg)
 
 
 
@@ -194,7 +195,7 @@ The Child control settings for the Layout Managers are given below.
 
 ### Preferred Size
 
-The Layout Managers usually layout the components based on their preferred sizes. But a .NETcontrol does not provide information regarding it's preferred size. To overcome this, a PreferredSize extended property is provided for each Child control at design time.
+The Layout Managers usually layout the components based on their preferred sizes. But a .NET control does not provide information regarding it's preferred size. To overcome this, a PreferredSize extended property is provided for each Child control at design time.
 
 In code, you can perform the same using the methods given below.
 

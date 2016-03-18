@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Orientation-Settings | Windows Forms | Syncfusion
+title: Orientation-Settings | WindowsForms | Syncfusion
 description: orientation settings
-platform: windowsforms
+platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The direction of display of the ProgressBarAdv control can be changed using the property given below.
 
-_Table_ _610_: _Property Table_
+Property Table
 
 <table>
 <tr>
