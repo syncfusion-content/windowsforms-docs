@@ -23,7 +23,7 @@ The external data source will be a class with two public properties (`RowCount` 
 
 Notice that the constructor accepts row and column count, and then populates an integer array. User can modify this class in any way as long as you define the class indexer and `RowCount` and `ColCount` properties, so that the virtual grid can access the data when needed.
 
-N> The `ExternalData` class is just a model class. Any additional properties or methods can be used in this class but the basic structure should not be changed **Ex.** The class indexer.
+N> The `ExternalData` class is just a model class. Any additional properties or methods can be used in this class but the basic structure should not be changed.
 
 {% tabs %}
 {% highlight c# %}
@@ -447,7 +447,7 @@ End Sub
 
 ## Covered Ranges
 
-or merging range of cells in Virtual Grid use the [QueryCoveredRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryCoveredRange_EV.html#) event. This event is used to provide covered ranges on demand. The desired range of cells can be merged using the [e.Range](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryCoveredRangeEventArgs~Range.html#) property.
+For merging range of cells in Virtual Grid use the [QueryCoveredRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryCoveredRange_EV.html#) event. This event is used to provide covered ranges on demand. The desired range of cells can be merged using the [e.Range](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryCoveredRangeEventArgs~Range.html#) property.
 
 {% tabs %}
 {% highlight c# %}
