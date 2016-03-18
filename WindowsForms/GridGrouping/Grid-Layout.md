@@ -69,7 +69,7 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
    
    ![](Grid-Layout_images/Grid-Layout_img1.png)
 
-2. Enable the[ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property to display the stacked headers for the table and groups.
+2. Enable the [ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property to display the stacked headers for the table and groups.
    
    ![](Grid-Layout_images/Grid-Layout_img2.png)
 
@@ -77,7 +77,7 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
    
    ![](Grid-Layout_images/Grid-Layout_img3.png)
 
- 3. Visible columns gets affected automatically while rearranging stacked headers as of follows,
+3. Visible columns gets affected automatically while rearranging stacked headers as of follows,
    
    ![](Grid-Layout_images/Grid-Layout_img4.png)
 
@@ -361,7 +361,7 @@ Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd2)
 ![](Grid-Layout_images/Grid-Layout_img12.png)
 
 ### FieldChooser for StackedHeaders
-User can show or hide the columns of a stacked header in a grid by using the [FieldChooser](#_Field_Chooser_1 "") functionality.
+User can show or hide the columns of a stacked header in a grid by using the [FieldChooser](#field-chooser) functionality.
 
 {% tabs %}
 {% highlight c# %}
@@ -453,7 +453,8 @@ Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.RemoveAt(0)
 
 ## Multi-Row Record
 GridGroupingControl offers built-in support for Multi-Row Records. Using this support user can modify the default alignment of visible columns. It allows the records to span across multiple rows and columns. This can be achieved by using [TableDescriptor.ColumnSets](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ColumnSets.html). 
-`ColumnSets` act as superset of[TableDescriptor.Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowGroupByColumnEventArgs~Column.html) collection. Once `ColumnSets` are defined, the grid will loop through the collection and organize data display accordingly.
+
+`ColumnSets` act as superset of [TableDescriptor.Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowGroupByColumnEventArgs~Column.html) collection. Once `ColumnSets` are defined, the grid will loop through the collection and organize data display accordingly.
 
 ### Adding Column Spans through Designer
 To create `ColumnSets` that defines [ColumnSpans](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor~ColumnSpans.html) for a grid, select `TableDescriptor.ColumnSets` property in the property window. This will open [GridColumnSetDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) collection editor that will let you specify the columns to span and the range for each of the columns.
@@ -810,7 +811,7 @@ GridGroupingControl provides support to freeze caption row to make sure it stays
 this.gridgroupingcontrol.FreezeCaption = true
 {% endhighlight %}
 {% highlight vb %}
-‘Freezes the caption row
+'Freezes the caption row
 Me.gridgroupingcontrol.FreezeCaption = True
 {% endhighlight %}
 {% endtabs %}
@@ -888,51 +889,57 @@ void TableControl_HScrollPixelPosChanging(object sender, GridScrollPositionChang
 {% endhighlight %}
 {% highlight vb %}
 AddHandler ResizeEnd, AddressOf Form1_ResizeEnd
-AddHandler oGrid.TableControl.HScrollPixelPosChanging, AddressOf TableControl_HScrollPixelPosChanging
+Private Me.oGrid.TableControl.HScrollPixelPosChanging += New GridScrollPositionChangingEventHandler(AddressOf TableControl_HScrollPixelPosChanging)
 Private Sub Form1_ResizeEnd(ByVal sender As Object, ByVal e As EventArgs)
-Dim fieldIndex As Integer = Convert.ToInt32(textBox1.Text)
-Dim col = oGrid.TableDescriptor.VisibleColumns(fieldIndex-1)
-Dim last = oGrid.TableControl.ViewLayout.LastVisibleCol
-If col IsNot Nothing Then
-If last < fieldIndex + 2 AndAlso buttonClick Then
-oGrid.TableModel.ResetColHiddenEntries()
-oGrid.TableDescriptor.FrozenColumn = ""
-oGrid.TableControl.SetCurrentHScrollPixelPos(1)
-notfrozenview = True
-frozenview = False
-ElseIf buttonClick Then
-oGrid.TableDescriptor.FrozenColumn = col.Name
-frozenview = True
-notfrozenview = False
-End If
-End If
+    Dim fieldIndex As Integer = Convert.ToInt32(textBox1.Text)
+    Dim col = oGrid.TableDescriptor.VisibleColumns(fieldIndex-1)
+    Dim last = oGrid.TableControl.ViewLayout.LastVisibleCol
+    If col IsNot Nothing Then
+        If last < fieldIndex + 2 AndAlso buttonClick Then
+             oGrid.TableModel.ResetColHiddenEntries()
+             oGrid.TableDescriptor.FrozenColumn = ""
+             oGrid.TableControl.SetCurrentHScrollPixelPos(1)
+             notfrozenview = True
+             frozenview = False
+         ElseIf buttonClick Then
+               oGrid.TableDescriptor.FrozenColumn = col.Name
+               frozenview = True
+               notfrozenview = False
+         End If
+    End If
 End Sub
+
 Private Sub TableControl_HScrollPixelPosChanging(ByVal sender As Object, ByVal e As GridScrollPositionChangingEventArgs)
-Dim fieldIndex As Integer = Convert.ToInt32(textBox1.Text)
-Dim col = oGrid.TableDescriptor.VisibleColumns(fieldIndex - 1)
-Dim colpos As Integer = 0
-Dim pixelDelta As Integer
-oGrid.TableControl.HScrollPixelPosToColIndex(e.ScrollPosition, colpos, pixelDelta)
-Dim LeftmostPixel =oGrid.TableControl.GetHScrollPixelMinimum()
-Dim last = oGrid.TableControl.ViewLayout.LastVisibleCol
-Dim vCount = oGrid.TableControl.ViewLayout.VisibleColumnsList.Count
-If colpos=0 Then
-e.Cancel = True
-End If
-If notfrozenview AndAlso buttonClick AndAlso last Is fieldIndex+1 Then
-For i As Integer = 1 To fieldIndex-(vCount-3)
-Dim hid As New GridColHidden(i)
-oGrid.TableModel.ColHiddenEntries.Add(hid)
-Next i
-oGrid.TableDescriptor.FrozenColumn = col.Name
-unfreeze = True
-End If
-If colpos = fieldIndex + 1 AndAlso LeftmostPixel Is e.ScrollPosition AndAlso unfreeze AndAlso (Not frozenview) AndAlso buttonClick Then
-oGrid.TableModel.ResetColHiddenEntries()
-oGrid.TableDescriptor.FrozenColumn = ""
-unfreeze = False
-End If
+
+    Dim fieldIndex As Integer = Convert.ToInt32(textBox1.Text)
+    Dim col = oGrid.TableDescriptor.VisibleColumns(fieldIndex - 1)
+    Dim colpos As Integer = 0
+    Dim pixelDelta As Integer
+    oGrid.TableControl.HScrollPixelPosToColIndex(e.ScrollPosition, colpos, pixelDelta)
+    Dim LeftmostPixel =oGrid.TableControl.GetHScrollPixelMinimum()
+    Dim last = oGrid.TableControl.ViewLayout.LastVisibleCol
+    Dim vCount = oGrid.TableControl.ViewLayout.VisibleColumnsList.Count
+    If colpos=0 Then
+        e.Cancel = True
+    End If
+
+    If notfrozenview AndAlso buttonClick AndAlso last Is fieldIndex+1 Then
+        For i As Integer = 1 To fieldIndex-(vCount-3)
+            Dim hid As New GridColHidden(i)
+            oGrid.TableModel.ColHiddenEntries.Add(hid)
+        Next i
+        oGrid.TableDescriptor.FrozenColumn = col.Name
+        unfreeze = True
+
+    End If
+    If colpos = fieldIndex + 1 AndAlso LeftmostPixel Is e.ScrollPosition AndAlso unfreeze AndAlso (Not frozenview) AndAlso buttonClick Then
+        oGrid.TableModel.ResetColHiddenEntries()
+        oGrid.TableDescriptor.FrozenColumn = ""
+        unfreeze = False
+    End If
+
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
 To know in detail with sample, refer the KB [article](https://www.syncfusion.com/kb/5941/how-to-set-the-scrollbar-when-the-freeze-columns-exceeds-the-client-area) which explains about this.
