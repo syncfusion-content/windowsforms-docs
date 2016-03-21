@@ -470,50 +470,6 @@ Me.toolStripEx1.GroupedButtons = True
 
 ![](ToolStripEx_images/ToolStripEx_img14.jpeg)
 
-## Collapse Behavior
-
-When the RibbonControlAdv is resized at run time, the items in the ToolStripEx are resized in two different ways.
-
-* The items are collapsed to smaller icons, then to collapsed state with a dropdown button as like Office 2010 style.
-* The items are collapsed to dropdownbuttons.
-
-The above functions can be switched using the `CollapseBehavior` property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-// Resizes to small icon then to DropDownButton
-
-this.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010;
-
-// Resizes to DropDownButton 
-
-this.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2013;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Resizes to small icon then to DropDownButton
-
-Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010
-
-'Resizes to DropDownButton
-
-Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2013
-
-{% endhighlight %}
-
-{% endtabs %}
-
-* Office 2010 Collapse behavior
-
-![](ToolStripEx_images/ToolStripEx_img53.jpg)
-
-* Office 2013 Collapse behavior
-
-![](ToolStripEx_images/ToolStripEx_img15.jpeg)
 
 ## Collapsed State Settings 
 
