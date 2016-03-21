@@ -68,7 +68,7 @@ ButtonPressedColor</td><td>
 Gets or sets the color of the Button for pressed state.</td></tr>
 <tr>
 <td>
-CheckedTool stripTabItemForeColor</td><td>
+CheckedToolstripTabItemForeColor</td><td>
 Gets or sets the color of the ToolStripTabItem.</td></tr>
 <tr>
 <td>
