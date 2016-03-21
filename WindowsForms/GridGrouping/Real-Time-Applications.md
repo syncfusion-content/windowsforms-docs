@@ -16,7 +16,7 @@ The user can simulate Portfolio Manager Application by using GridGroupingControl
 ![](Real-Time-Applications_images/Real-Time-Applications_img1.png)
 
 
-N> For more details, refer to the following dashboard sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Product Showcase\Portfolio Grid*
+N> For more details, refer to the following dashboard sample: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Product Showcase\Portfolio Grid
 
 The Portfolio manager application consists of following three modules. They are,
 
@@ -55,14 +55,14 @@ The Outlook 2007 look and feel can also be implemented with the GridGroupingCont
 
 ![](Real-Time-Applications_images/Real-Time-Applications_img5.png)
 
-N> For more details, refer to the following dashboard sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Grid.Grouping.Windows\Samples\Product Showcase\Outlook Demo
+N> For more details, refer to the following dashboard sample: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Grid.Grouping.Windows\Samples\Product Showcase\Outlook Demo
 
 ### Outlook 2013
 The Outlook 2013 look and feel can be customized using GridGroupingControl. The GridGroupingControl has the built-in theme support named as `Metro` which provides the Office 2013 look and feel. 
 
 ![](Real-Time-Applications_images/Real-Time-Applications_img6.png)
 
-N> For more details, refer to the following dashboard sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Outlook Demo\
+N> For more details, refer to the following dashboard sample: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Outlook Demo\
 
 The following customizations are implemented in both the application,
 
@@ -99,7 +99,7 @@ The expense analysis details can be exported to Excel, PDF, or Word files. The d
 
 ![](Real-Time-Applications_images/Real-Time-Applications_img9.png)
 
-N> For more details, refer to the following dashboard sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Expense Analysis Demo
+N> For more details, refer to the following dashboard sample: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Expense Analysis Demo
 
 ## Weather Analysis
 The weather analysis application can be simulated using GridGroupingControl. The weather details can be simulated with animation in the GridGroupingControl. 
@@ -108,7 +108,7 @@ The GridGroupingControl allows an user to implement the animation icons wherever
 
 ![](Real-Time-Applications_images/Real-Time-Applications_img10.png)
 
-N> For more details, refer to the following dashboard sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Weather Analysis Demo
+N> For more details, refer to the following dashboard sample: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Weather Analysis Demo
 
 ## Trader Grid Test
 The financial instruments like stocks, bonds, commodities and derivatives are requiring frequent update of data in real time. GridGroupingControl supports the frequent data update without compromising on performance.
@@ -117,11 +117,11 @@ The GridGroupingControl supports grouping, filtering, sorting and coloring on re
 
 ![](Real-Time-Applications_images/Real-Time-Applications_img11.png)
 
-N> For more details, refer to the following dashboard sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Grouping Trader Grid Test Demo
+N> For more details, refer to the following dashboard sample: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\Grouping Trader Grid Test Demo
 
 ## Patient monitoring
 The `Patient Monitoring Application` allows user to monitor or track the health details of the patient. In this application, the GridGroupingControl can be used to display the details of the patient.
 
 ![](Real-Time-Applications_images/Real-Time-Applications_img12.png)
 
-N> For more details, refer to the following dashboard sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\PatientMonitoringDemo
+N> For more details, refer to the following dashboard sample: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Showcase\PatientMonitoringDemo
