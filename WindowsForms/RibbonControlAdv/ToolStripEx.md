@@ -96,7 +96,7 @@ Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 The tool strip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
 
 <table>
-<tr>
+<tr> 
 <th>
 Property<br/><br/></th><th>
 Description<br/><br/></th></tr>
@@ -258,7 +258,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 Flow<br/><br/></td><td>
-Specifies that items flow horizontally or vertically as necessary.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items flow horizontally or vertically as necessary.<br/><br/> Note: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 HorizontalStackWithOverflow<br/><br/></td><td>
@@ -270,7 +270,7 @@ Specifies that items are laid out automatically.<br/><br/></td></tr>
 <tr>
 <td>
 Table<br/><br/></td><td>
-Specifies that items are laid out flush left.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items are laid out flush left.<br/><br/>Note: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 VerticalStackWithOverflow<br/><br/></td><td>
@@ -470,6 +470,50 @@ Me.toolStripEx1.GroupedButtons = True
 
 ![](ToolStripEx_images/ToolStripEx_img14.jpeg)
 
+## Collapse Behavior
+
+When the RibbonControlAdv is resized at run time, the items in the ToolStripEx are resized in two different ways.
+
+* The items are collapsed to smaller icons, then to collapsed state with a dropdown button as like Office 2010 style.
+* The items are collapsed to dropdownbuttons.
+
+The above functions can be switched using the `CollapseBehavior` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+// Resizes to small icon then to DropDownButton
+
+this.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010;
+
+// Resizes to DropDownButton 
+
+this.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2013;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+'Resizes to small icon then to DropDownButton
+
+Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010
+
+'Resizes to DropDownButton
+
+Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2013
+
+{% endhighlight %}
+
+{% endtabs %}
+
+* Office 2010 Collapse behavior
+
+![](ToolStripEx_images/ToolStripEx_img53.jpg)
+
+* Office 2013 Collapse behavior
+
+![](ToolStripEx_images/ToolStripEx_img15.jpeg)
 
 ## Collapsed State Settings 
 
