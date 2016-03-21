@@ -96,7 +96,7 @@ Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 The toolstrip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
 
 <table>
-<tr>
+<tr> 
 <th>
 Property<br/><br/></th><th>
 Description<br/><br/></th></tr>

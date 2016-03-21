@@ -186,7 +186,7 @@ Context Menu<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-TabbedMdI Manager<br/><br/></td><td>
+TabbedMDI Manager<br/><br/></td><td>
 TabMove<br/><br/></td><td>
 -<br/><br/></td><td>
 Click<br/><br/></td><td>

@@ -76,11 +76,11 @@ Gets or sets the CancelButtonBackColor.</td></tr>
 <tr>
 <td>
 CaptionBarColor</td><td>
-Gets or sets the captionbar color.</td></tr>
+Gets or sets the caption bar color.</td></tr>
 <tr>
 <td>
 CaptionForeColor</td><td>
-Gets or sets the captionfore color.</td></tr>
+Gets or sets the caption fore color.</td></tr>
 <tr>
 <td>
 CloseButtonColor</td><td>
