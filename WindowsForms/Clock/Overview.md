@@ -26,7 +26,7 @@ Description</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-AlignAMonrPM</td><td>
+AlignAMornPM</td><td>
 Specifies the alignment of AM/PM.</td><td>
 enum</td></tr>
 <tr>
