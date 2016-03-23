@@ -23,7 +23,7 @@ Through Code-Behind
 
 Syncfusion UI for Windows Forms can added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code. 
 
-1. Create a Windows Forms project in Visual Studio and refer to the following assemblies.
+1. Create a Windows Forms project in Visual Studio and refer to the following assemblies .
 	* Syncfusion.Tools.Base.dll
 	* Syncfusion.Tools.Windows.dll
 	* Syncfusion.Shared.Base.dll
