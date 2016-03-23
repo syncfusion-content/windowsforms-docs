@@ -39,7 +39,7 @@ e.Cancel = false;
 
 {% endhighlight %}
 
-{% highlight %}
+{% highlight vb %}
 
 'Disables the SlideOnTop on Left position when Transition begins.
 
