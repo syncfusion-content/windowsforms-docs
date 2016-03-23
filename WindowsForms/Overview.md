@@ -725,6 +725,14 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
+			<a href="/windowsforms/navigationdrawer/overview">NavigationDrawer</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
 			<a href="/windowsforms/ribboncontroladv/getting-started">BackStageView</a><br/><br/>
 		</td>
 	</tr>
