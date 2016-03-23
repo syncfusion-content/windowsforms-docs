@@ -92,7 +92,7 @@ The following steps will guide you to deploy Essential Grouping:
  
 N> For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._
 
-DLL's needed for deployment
+Dll's needed for deployment
 
 * Syncfusion.Core.dll
 * Syncfusion.Grouping.Base.dll

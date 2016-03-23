@@ -396,7 +396,7 @@ _(Installed location of the product)\Bin\_
 
 
 
-Uninstallation can be done with the help of the unins000 file available in the installed location. Double-clicking the file uninstall the Essential QuickTest Professional.
+Uninstallation can be done with the help of the unins000 file available in the installed location. Double-clicking the file uninstalls the Essential QuickTest Professional.
 
 ### Assembly information
 
@@ -632,7 +632,7 @@ Type Name</th><th>
 Control Name</th></tr>
 <tr>
 <td>
-Diagram{{ '_._' | markdownify }} dll</td><td>
+Diagram{{ '_._' | markdownify }}dll</td><td>
 Syncfusion.TestStudio.Diagram.Diagram</td><td>
 Syncfusion.Windows.Forms.Diagram.Controls.Diagram</td></tr>
 </table>
