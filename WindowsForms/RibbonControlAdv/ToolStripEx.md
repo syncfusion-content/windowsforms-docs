@@ -93,7 +93,7 @@ Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 
 ### Grip Style
 
-The tool strip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
+The toolstrip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
 
 <table>
 <tr> 
@@ -217,7 +217,7 @@ Me.toolStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.C
 
 ## AutoSizing of ToolStripEx
 
-By enabling the **AutoSize** property of ToolStripEx, the tool strip width will be resized automatically while adding controls to the tool strip in the designer.
+By enabling the **AutoSize** property of ToolStripEx, the toolstrip width will be resized automatically while adding controls to the tool strip in the designer.
 
 <table>
 <tr>
