@@ -299,7 +299,7 @@ Me.ribbonControlAdv1.QuickPanelVisible = True
 
 ####  Add Items to the Quick Access ToolBar
 
-Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items Button link in the smart tag of the RibbonControlAdv control. This opens Customize Quick Access Tool bar Dialog which displays the existing toolstrip items. You can add the required items to the Quick Access Toolbar. 
+Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items Button link in the smart tag of the RibbonControlAdv control. This opens Customize Quick Access Tool bar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar. 
 
 The dialog comes with Office2007 look and feel.
 
@@ -368,7 +368,7 @@ Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 
 Ribbon enables you to work in the document and Backstage enables you to work with the document. Using this you can alter contents and provide end-user options that are related to specific solution requirements.
 
-N> Backstage view can not be accessed when Ribbon style is set to Office2007.
+N> Back stage view can not be accessed when Ribbon style is set to Office2007.
 
 The following are steps to create a BackStageView:
 

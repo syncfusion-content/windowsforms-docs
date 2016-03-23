@@ -167,12 +167,12 @@ Description</th></tr>
 <td>
 MajorTickMarkColor</td><td>
 Color</td><td>
-Gets or sets the color of the major tickmarks.</td></tr>
+Gets or sets the color of the major tick marks.</td></tr>
 <tr>
 <td>
 MajorTickMarkHeight</td><td>
 Integer</td><td>
-Gets or sets the height of the major tickmarks.</td></tr>
+Gets or sets the height of the major tick marks.</td></tr>
 <tr>
 <td>
 MinorTickMarkColor</td><td>
@@ -182,7 +182,7 @@ Gets or sets the color of the minor tickmarks.</td></tr>
 <td>
 MinorTickMarkHeight</td><td>
 Integer</td><td>
-Gets or sets the height of the minor tickmarks.</td></tr>
+Gets or sets the height of the minor tick marks.</td></tr>
 <tr>
 <td>
 Pointer Placement</td><td>

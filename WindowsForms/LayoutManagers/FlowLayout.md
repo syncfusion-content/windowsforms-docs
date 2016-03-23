@@ -505,7 +505,7 @@ Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.Fl
 
 
 
-When the ProportionalRowHeight propertyis set to 'True', any extra space at the bottom will be equally distributed among all the available rows, thereby increasing the logical height of the rows. The Child controls within these rows will then vertically align to the center of the row (since VAlign property is set to'Center', by default), thereby resulting in the layout seen above. 
+When the ProportionalRowHeight property is set to 'True', any extra space at the bottom will be equally distributed among all the available rows, thereby increasing the logical height of the rows. The Child controls within these rows will then vertically align to the center of the row (since VAlign property is set to'Center', by default), thereby resulting in the layout seen above. 
 
 When resized to a smaller width, two rows are created resulting in the layout shown below.
 
@@ -980,7 +980,7 @@ The FlowLayout manager arranges the controls in the way it gets added into the C
 
 We can also programmatically change the order of the controls laid out by the Flow layout. This can be done using the method given below.
 
-* Set up a form with Panel1 and drag the Flowlayout onto the Panel1 which would act as the Container control.
+* Set up a form with Panel1 and drag the Flow layout onto the Panel1 which would act as the Container control.
 
 
 

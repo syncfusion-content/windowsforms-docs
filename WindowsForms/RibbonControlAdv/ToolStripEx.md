@@ -93,10 +93,10 @@ Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 
 ### Grip Style
 
-The toolstrip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
+The tool strip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
 
 <table>
-<tr>
+<tr> 
 <th>
 Property<br/><br/></th><th>
 Description<br/><br/></th></tr>
@@ -217,7 +217,7 @@ Me.toolStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.C
 
 ## AutoSizing of ToolStripEx
 
-By enabling the **AutoSize** property of ToolStripEx, the toolstrip width will be resized automatically while adding controls to the toolstrip in the designer.
+By enabling the **AutoSize** property of ToolStripEx, the tool strip width will be resized automatically while adding controls to the tool strip in the designer.
 
 <table>
 <tr>
@@ -227,7 +227,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 AutoSize<br/><br/></td><td>
-Setting this to true, will automatically resize the toolstrip as the controls gets added.<br/><br/></td></tr>
+Setting this to true, will automatically resize the tool strip as the controls gets added.<br/><br/></td></tr>
 </table>
 
 {% tabs %}
@@ -338,12 +338,12 @@ Smart Tag of the ToolStripEx opens the Task Windows which lets you to set some i
 
 ### Context Menu
 
-The context menu on a toolstrip item provides advanced options which minimizes your time in customizing the ToolStrip container.
+The context menu on a tool strip item provides advanced options which minimizes your time in customizing the ToolStrip container.
 
 ![](ToolStripEx_images/ToolStripEx_img10.jpeg)
 
 
-* Set Image - This options lets you to modify the image for the particular toolstrip item.
+* Set Image - This options lets you to modify the image for the particular tool strip item.
 * Enabled - Specifies whether the item is enabled or not.
 * Alignment - Aligns the item to Left or Right.
 * DisplayStyle - Specifies the display style, whether None, Image, Text or ImageAndText.
