@@ -21,6 +21,10 @@ documentation: ug
 
 RichTextBox richTextBox = new RichTextBox();
 
+//Specifies the Text
+
+this.richTextBox.Text = "Content View" + "\n" + "\n" + "This is Navigation Drawer content View";
+
 //Add RichTextBox into the NavigationDrawer Container Control.
 
 this.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox);
@@ -33,6 +37,10 @@ this.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox);
 
 Dim richTextbox As New RichTextBox()
 
+'Specifies the Text
+
+Me.richTextBox.Text = ("Content View" + ("" & vbLf + ("" & vbLf + "This is Navigation Drawer content View")))
+
 'Add RichTextBox into the NavigationDrawer Container Control.
 
 Me.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox)
@@ -43,14 +51,13 @@ Me.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox)
 
 ![](Concepts-And-Features_images/Concepts-And-Features_img1.jpg)
 
-Content View
 
 ## DrawerView
 
-**DrawerView** is a container, that will be displayed upon selection on top, along and below with the Content view section. This will contain below sections.</br></br></br>
+**DrawerView** is a container, that will be displayed upon selection on top, along and below with the Content view section. This will contain below sections.
+
 ![](Concepts-And-Features_images/Concepts-And-Features_img2.png)
 
-Drawer View
 
 ## Transition
 
@@ -84,10 +91,9 @@ Me.navigationDrawer1.Transition = Transition.SlideOnTop
 
 {% endtabs %}
 
-</br>
 
 ![](Concepts-And-Features_images/Concepts-And-Features_img3.jpg)
-SlideOnTop </br></br>
+
 
 ### Push
 
@@ -113,11 +119,9 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 {% endtabs %}
 
-</br>
 
 ![](Concepts-And-Features_images/Concepts-And-Features_img4.jpg)
 
-Push</br>
 
 ### Reveal
 
@@ -143,11 +147,10 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 {% endtabs %}
 
-</br>
 
 ![](Concepts-And-Features_images/Concepts-And-Features_img5.jpg)
 
-</br>Reveal
+
 
 ## Position
 
@@ -178,16 +181,20 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 {% endtabs %}
 
-* Left </br></br>
+* Left 
+
 ![](Concepts-And-Features_images/Concepts-And-Features_img6.jpg)
 
-* Right </br></br>
+* Right 
+
 ![](Concepts-And-Features_images/Concepts-And-Features_img7.jpg)
 
-* Top </br></br>
+* Top 
+
 ![](Concepts-And-Features_images/Concepts-And-Features_img8.jpg)
 
-* Bottom </br></br>
+* Bottom 
+
 ![](Concepts-And-Features_images/Concepts-And-Features_img9.jpg)
 
 
