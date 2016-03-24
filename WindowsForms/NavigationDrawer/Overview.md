@@ -7,7 +7,7 @@ control: NavigtaionDrawer
 documentation: ug
 ---
 
-## Overview 
+# Overview 
 
 **NavigationDrawer** is a sliding panel menu to navigate between major modules of the application.  Most of the time the Navigation Drawer will be hidden and can be shown by swiping from any of the four screen edges or button clicks.
 

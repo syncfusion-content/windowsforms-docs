@@ -57,5 +57,5 @@ Dim navigationDrawer1 As New NavigationDrawer()
 ![](Getting-Started_images/start.png)
 
 
-NavigationDrawer control
+
 
