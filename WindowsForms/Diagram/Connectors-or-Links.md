@@ -13,10 +13,10 @@ Connectors and lines have the following decorators:
 
 * Circle
 * CircleCross
-* CirclereverseArrow
+* CircleReverseArrow
 * Cross45
 * Cross90
-* CrossreverseArrow
+* CrossReverseArrow
 * Custom
 * Diamond
 * DimensionLine

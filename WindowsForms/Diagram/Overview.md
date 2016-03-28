@@ -27,9 +27,9 @@ Essential Diagram lets users create interactive diagrams easily using the Diagra
 Some of the key features of Essential Diagram are listed below.
 
 * Essential Diagram supports Matrix Transformations likeTranslate (Move), Rotate and Scale.
-* Shape nodes are the graphical objects that can be drawn on the diagram area by activating one of several drawing tools such as the RectangleTool, RoundRectTool, EllipseTool, LineTool, PolylineTool, OrthogonallineTool, BezierTool, CurveTool, ArcTool and PolygonTool.
+* Shape nodes are the graphical objects that can be drawn on the diagram area by activating one of several drawing tools such as the RectangleTool, RoundRectTool, EllipseTool, LineTool, PolylineTool, OrthogonalLineTool, BezierTool, CurveTool, ArcTool and PolygonTool.
 * DecoratorShape can be added at the head and tail of Connectors. The shapes include arrows, circles, diamonds, crosses, squares and custom decorators.
-* Essential Diagram supports rendering Textnodes and RichTextnodes, and offers full text formatting through sufficient properties. Text editing and text rotation are also supported.
+* Essential Diagram supports rendering TextNodes and RichTextNodes, and offers full text formatting through sufficient properties. Text editing and text rotation are also supported.
 * Zooming, scrolling, and panning are supported and can be achieved using sufficient interactive diagram tools.
 * Automatic Line Routing and Line Bridging: while a link is drawn between two nodes and if any other node is found in between them, the line will be automatically re-routed around those nodes.
 * The PrintDialog class enables the user to set the printer to be used, and allows to define the pages and the number of copies to be printed. 

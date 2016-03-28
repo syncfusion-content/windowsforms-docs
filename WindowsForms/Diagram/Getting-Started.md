@@ -38,7 +38,7 @@ The model contains the data (node/connector) portion of a diagram. The view is r
 
 ### Overview
 
-The Overview control provides a perspective view of a diagram model and allows users to dynamicallypan/zoom the diagram. It features a viewport window that can be moved and/or resized using the mouse to modify the diagram’s origin and magnification properties at run time.
+The Overview control provides a perspective view of a diagram model and allows users to dynamically pan/zoom the diagram. It features a viewport window that can be moved and/or resized using the mouse to modify the diagram’s origin and magnification properties at run time.
 
 
 
@@ -60,7 +60,7 @@ The PaletteGroupBar control provides a way for users to drag symbols onto a diag
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from a resource file of a form. At design time, users can attach a symbol palette to the PaletteGroupView control in the form. Selecting PaletteGroupView and clicking the Palette property in the Visual Studio .NET Properties window will open a standard Open File dialog, which allows the user to select a symbol palette file that has been created with the Symbol Designer.
 
-It displays the symbol models belonging to a symbol palette in the GroupView control of Essential Tools for Windows Froms. It contains a list of icons and labels that can be hosted in the PaletteGroupBar control. The symbol models can be dragged from this control and dropped onto the diagram. It also provides preview of symbols during drag-and-drop operation.
+It displays the symbol models belonging to a symbol palette in the GroupView control of Essential Tools for Windows Forms. It contains a list of icons and labels that can be hosted in the PaletteGroupBar control. The symbol models can be dragged from this control and dropped onto the diagram. It also provides preview of symbols during drag-and-drop operation.
 
 ### PropertyEditor
 
@@ -84,7 +84,7 @@ The DocumentExplorer control allows you to visualize the details of the various 
 
 ## Essential Diagram in Windows Forms Application
 
-This section helps you to create the Diagram, PaletteGroupBar, PaletteGroupView, Overview, PropertyEditor, and DocumenExplorer controls through the designer and code in a Windows Forms application.
+This section helps you to create the Diagram, PaletteGroupBar, PaletteGroupView, Overview, PropertyEditor, and DocumentExplorer controls through the designer and code in a Windows Forms application.
 
 ### Diagram
 
@@ -1686,7 +1686,7 @@ Diagram1.Controller.SelectAll();</td></tr>
 
 #### Pan & Zoom Tool
 
-The following screenshot illustrates the pan and zoomtools.
+The following screenshot illustrates the pan and zoom tools.
 
 
 
@@ -1737,7 +1737,7 @@ Diagram1.ShowRulers=true;</td></tr>
 
 #### Alignment Tool
 
-The following screen shot illustrates the Alignmenttools.
+The following screen shot illustrates the Alignment tools.
 
 
 
@@ -1789,7 +1789,7 @@ diagram1.AlignBottom();</td></tr>
 
 #### Rotate Tool
 
-The following screen shot illustrates the Rotatetools.
+The following screen shot illustrates the Rotate tools.
 
 
 
@@ -1828,7 +1828,7 @@ diagram1.FlipHorizontal();</td></tr>
 
 #### Resize Tool
 
-The following screen shot illustrates the Resizetools.
+The following screen shot illustrates the Resize tools.
 
 
 
@@ -1873,7 +1873,7 @@ diagram1.SameWidth();</td></tr>
 
 #### Nudge Tool
 
-The following screen shot illustrates the Nudgetools.
+The following screen shot illustrates the Nudge tools.
 
 
 
@@ -1912,7 +1912,7 @@ diagram1.NudgeRight();</td></tr>
 
 Text Formatting Tool
 
-The following screen shot illustrates the Text Formattingtools.
+The following screen shot illustrates the Text Formatting tools.
 
 
 
@@ -1930,7 +1930,7 @@ Code Snippet</th></tr>
 <td>
 Font Family</td><td>
 The FamilyName property is used to  get or set the font family name.</td><td>
-string strFamilyName = this.comboBoxBarItemFontFamily.ListBox.SelectedItem.ToString();if(this.diagram1.Controller.TextEditor.FamilyName != strFamilyName )this.diagram1.Controller.TextEditor.FamilyName = strFamilyName;</td></tr>
+string name = this.comboBoxBarItemFontFamily.ListBox.SelectedItem.ToString();if(this.diagram1.Controller.TextEditor.FamilyName != name )this.diagram1.Controller.TextEditor.FamilyName = name;</td></tr>
 <tr>
 <td>
 Font Size</td><td>
@@ -1960,7 +1960,7 @@ bool newValue = !( this.diagram1.Controller.TextEditor.Strikeout );this.diagram1
 <td>
 TextColor</td><td>
 Gets or sets the color of the text.</td><td>
-ColorDialog dlg = new ColorDialog( );dlg.Color this.diagram1.Controller.TextEditor.TextColor; if ( dlg.ShowDialog( this ) == DialogResult.OK ){this.diagram1.Controller.TextEditor.TextColor = dlg.Color; }</td></tr>
+ColorDialog dialog = new ColorDialog( );dialog.Color = this.diagram1.Controller.TextEditor.TextColor; if ( dialog.ShowDialog( this ) == DialogResult.OK ){this.diagram1.Controller.TextEditor.TextColor = dialog.Color; }</td></tr>
 <tr>
 <td>
 Align Text Left</td><td>
@@ -2001,7 +2001,7 @@ int nCurrentOffset = this.diagram1.Controller.TextEditor.CharOffset;nCurrentOffs
 
 #### Group & Order Tool
 
-The following screen shot illustrates the Group and Ordertools.
+The following screen shot illustrates the Group and Order tools.
 
 
 
@@ -2025,7 +2025,7 @@ diagram1.Controller.Group();</td></tr>
 <tr>
 <td>
 UnGroup</td><td>
-Ungroups the currently selected group in a diagram.</td><td>
+Ungroup the currently selected group in a diagram.</td><td>
 diagram1.Controller.UnGroup();</td></tr>
 <tr>
 <td>
@@ -2052,7 +2052,7 @@ Diagram1.Controller.SendBackward();</td></tr>
 
 #### Drawing Tools
 
-The following screen shot illustrates the drawingtools.
+The following screen shot illustrates the drawing tools.
 
 
 
@@ -2150,7 +2150,7 @@ diagram1.Controller.ActivateTool("ConnectionPointTool");</td></tr>
 
 #### Diagram Connector Tools
 
-The following screen shot illustrates the Diagram Connectortools.
+The following screen shot illustrates the Diagram Connector tools.
 
 
 
@@ -2441,7 +2441,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 1. Symbol palette
 2. Object model
 3.  Properties Window
-* If you want to create a new palette, select New option in the File menu. Ttype a name for the palette as shown in the below sample and click OK.
+* If you want to create a new palette, select New option in the File menu. Type a name for the palette as shown in the below sample and click OK.
 
 
 
@@ -2487,7 +2487,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-* After modifying the default settings, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SumbolPalette dialog will appear as in the following screen shot.
+* After modifying the default settings, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SymbolPalette dialog will appear as in the following screen shot.
 
 
 
@@ -2652,7 +2652,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
    {:.prettyprint }
 
 
-3. Use the following code example to establish the connection with the Database and retrieve the data in the form of Datatable.
+3. Use the following code example to establish the connection with the Database and retrieve the data in the form of DataTable.
 
    ~~~ vbnet
 

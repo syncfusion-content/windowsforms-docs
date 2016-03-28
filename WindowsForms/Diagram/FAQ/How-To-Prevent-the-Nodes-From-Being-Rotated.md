@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Prevent the Nodes From Being Rotated
 
-This can be done by raising the Diagram.Model.EventSink.RotationChanging event and cancelling the operation.
+This can be done by raising the Diagram.Model.EventSink.RotationChanging event and canceling the operation.
 
 {% tabs %}
 
