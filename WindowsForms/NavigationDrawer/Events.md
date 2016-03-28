@@ -18,7 +18,7 @@ The below four events are implemented in Transition.
 
 ## Opening
 
-Occurs when the Transition expands begins. It should be the CancelEventArgs type.
+Occurs when the Transition expands begins. 
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ End Sub
 
 ## Closing
 
-Occurs when the Transition Collapses begins. It should be the CancelEventArgs type.
+Occurs when the Transition Collapses begins. 
 
 {% tabs %}
 

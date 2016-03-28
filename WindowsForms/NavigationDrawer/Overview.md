@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview 
 
-**NavigationDrawer** is a sliding panel menu to navigate between major modules of the application.  Most of the time the Navigation Drawer will be hidden and can be shown by swiping from any of the four screen edges or button clicks.
+The Essential Windows Forms **NavigationDrawer** is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
 
 ### Key Features
 
@@ -17,7 +17,7 @@ documentation: ug
 
 * **Transition** : Specifies the **transition** **type** of the **Navigation** **Drawer**. 
 
-* **ToggleDrawer** : ToggleDrawer function decides whether to open or close the DrawerContent based on the truth of IsOpen property.
+* **Toggle Drawer** : This support helps to toggle between Sliding Panel visibility. 
 
 * **AnimationDuration** : Specifies the **Timespan** by which the DrawerContent opens up to the view. AnimationDuration is applied only when **ToggleDrawer** function is used.
 

@@ -224,7 +224,7 @@ Me.navigationDrawer1.AnimationDuration = 100
 
 ## Toggle Drawer
 
-This function decides whether to open or close the DrawerContent based on the truth of IsOpen property.
+ This support helps to toggle between Sliding Panel visibility. 
 
 {% tabs %}
 
