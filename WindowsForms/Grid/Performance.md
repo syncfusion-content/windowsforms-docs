@@ -249,7 +249,7 @@ GridControlBase.UseOldHiddenScrollLogic = True
 {% endhighlight %}
 {% endtabs %}
 
-N> There is a separate topic named Scrolling which explains all the properties and methods about scrolling. Refer that topic for more information on scrolling.
+N> There is a separate topic named [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling) which explains all the properties and methods about scrolling. Refer that topic for more information on scrolling.
 
 ## Exporting
 GridControl provides a rich set of options for exporting data to Microsoft Excel file formats, word, PDF, CSV with proficient performance. Exporting performance can be improved, if styles for the grid is not been exported. This can be achieved by setting the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterBase~ExportStyle.html) property as `false`.
@@ -265,7 +265,7 @@ converter.ExportStyle = True
 {% endhighlight %}
 {% endtabs %}
 
-N> To know more on how to export and other properties, methods related to it please refer our Exporting topic.
+N> To know more on how to export and other properties, methods related to it please refer our [Exporting](http://help.syncfusion.com/windowsforms/grid/exporting) topic.
 
 ## Importing
 GridControl gives support for importing the Microsoft Excel contents with smooth performance. To optimize the importing process, GridControl provides virtual importing support. Virtual importing will import the data from excel sheet only when on demand. This technique is the efficient way to import the Excel sheet to GridControl when it is needed. And also, importing performance can be significantly improved if styles and borders have been restricted while importing. 
@@ -283,4 +283,4 @@ excelConverter.ImportStyles = False
 {% endhighlight %}
 {% endtabs %}
 
-N> To know more how to use virtual import, refer our Importing topic
+N> To know more how to use virtual import, refer our [Importing](http://help.syncfusion.com/windowsforms/grid/importing) topic
