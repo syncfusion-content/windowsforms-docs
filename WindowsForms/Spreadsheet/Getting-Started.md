@@ -83,6 +83,8 @@ Spreadsheet control can be added into the application either via designer or via
 
 2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  Spreadsheet/SpreadsheetRibbon toolbox items 
 
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 3.Drag **Spreadsheet** and drop in the Designer area from the Toolbox
 
 4.Ribbon can be added to the application by dragging **SpreadsheetRibbon** to the Designer area.
