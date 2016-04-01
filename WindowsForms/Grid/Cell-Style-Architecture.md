@@ -213,7 +213,7 @@ Me.gridControl1(2, 2).CellTipText = "TipText for cell 2,2"
 ## BaseStyles
 
 [BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BaseStyle.html) is one of the parent-type style which is used to customize the cell’s appearance. BaseStyles are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. 
-Base styles that are used in GridControl are.
+Base styles that used in GridControl are,
 
 1. [Standard](#standard)
 2. [Header](#header)
