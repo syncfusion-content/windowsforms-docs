@@ -96,7 +96,7 @@ Me.gridControl1.ControllerOptions ~= GridControllerOptions.DragColumnHeader
 
 ### Disabling drag and drop for a particular column header
 
-There is an event named [QueryAllowDragColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~QueryAllowDragColumnHeader_EV.html#) which gets fired while dragging the header. This event can be used to prevent drag drop operation between particular headers by setting the [AllowDrag](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryDragColumnHeaderEventArgs~AllowDrag.html#) property as `false`.
+There is an event named [QueryAllowDragColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~QueryAllowDragColumnHeader_EV.html#) which gets fired while dragging the header. This event can be used to prevent drag drop operation between particular headers by setting the [AllowDrag](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryDragColumnHeaderEventArgs~AllowDrag.html#) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -265,7 +265,7 @@ End Sub
 
 ### Drag and Drop for merged cells
 
-Drag Drop can also be done for merged cells but while dropping the contents to another location the merged cells will be removed. To overcome this problem make use of the [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#)  event and add the merged range in the selection property.
+Drag Drop can also be done for merged cells but while dropping the contents to another location, the merging of cells operation will be cancelled. To overcome this problem make use of the [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#)  event and add the merged range in the selection property.
 
 {% tabs %}
 {% highlight c# %}
