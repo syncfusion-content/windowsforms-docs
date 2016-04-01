@@ -42,7 +42,7 @@ Me.gridControl1.CommandStack.Enabled = False
 
 ### Undo
 
-The undo operation can be done in GridControl by using the [CommandStack.Undo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCommandManager~Undo.html#s) method. By default, GridControl also give support for undoing the actions using keyboard shortcuts. Use <kbd>Ctrl</kbd>+<kbd>Z</kbd>combination for Undo operation to happen.
+The undo operation can be done in GridControl by using the [CommandStack.Undo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCommandManager~Undo.html#s) method. By default, GridControl also give support for undoing the actions using keyboard shortcuts. Use <kbd>Ctrl</kbd>+<kbd>Z</kbd> combination for Undo operation to happen.
 
 {% tabs %}
 
