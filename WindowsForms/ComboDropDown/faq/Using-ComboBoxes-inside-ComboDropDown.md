@@ -9,7 +9,7 @@ documentation: ug
 
 # Using ComboBoxes inside ComboDropDown
 
-This section deals on how to use two combo box within the dropdown area of a ComboDropDown. The panel contains two ComboBoxes and a Button. The text will change only after the Button had pressed. 
+This section deals on how to use two combobox within the dropdown area of a ComboDropDown. The panel contains two ComboBoxes and a Button. The text will change only after the Button had pressed. 
 
 The steps are as follows.
 

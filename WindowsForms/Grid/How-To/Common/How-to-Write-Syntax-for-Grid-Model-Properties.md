@@ -27,63 +27,67 @@ ShowColumnHeaders</td><td>
 Specifies whether column headers have to be shown </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Show or Hider Header](/windowsforms/grid/how-to/common/show-or-hide-header)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/show-or-hide-header">Show or Hider Header</a>
+</td></tr>
 <tr>
 <td>
 ShowRowHeaders</td><td>
 Specifies whether row headers have to be shown. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Show or Hider Header](/windowsforms/grid/how-to/common/show-or-hide-header)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/show-or-hide-header">Show or Hider Header</a>
+</td></tr>
 <tr>
 <td>
 DisplayHorizontalLines</td><td>
 Specifies whether horizontal lines have to be displayed. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Customize the Appearance](/windowsforms/grid/how-to/common/customize-appearance)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/customize-appearance">Customize the Appearance</a>
+</td></tr>
 <tr>
 <td>
 DisplayVerticalLines</td><td>
 Specifies whether vertical lines have to be displayed. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Customize the Appearance](/windowsforms/grid/how-to/common/customize-appearance)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/customize-appearance">Customize the Appearance</a></td></tr>
 <tr>
 <td>
 GridLineColor</td><td>
 Specifies the grid line color.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Customize the Appearance](/windowsforms/grid/how-to/common/customize-appearance)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/customize-appearance">Customize the Appearance</a></td></tr>
 <tr>
 <td>
 PrintColumnHeader</td><td>
 Specifies whether column header has to be printed. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Printing Options](/windowsforms/grid/how-to/common/printing-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a>
+</td></tr>
 <tr>
 <td>
 PrintHorizontalLines</td><td>
 Specifies whether horizontal lines have to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Printing Options](/windowsforms/grid/how-to/common/printing-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a></td></tr>
 <tr>
 <td>
 PrintRowHeader</td><td>
 Specifies whether row header has to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Printing Options](/windowsforms/grid/how-to/common/printing-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a></td></tr>
 <tr>
 <td>
 PrintVerticalLines</td><td>
 Specifies whether vertical lines have to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-{{'[Printing Options](/windowsforms/grid/how-to/common/printing-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a></td></tr>
 </table>
 
 
@@ -103,42 +107,43 @@ ActivateCurrentCellBehavior</td><td>
 Used to set CurrentCell behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
-{{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a>
+</td></tr>
 <tr>
 <td>
 AllowScrollCurrentCellInView</td><td>
 To set Allow Scroll in current cell view </td><td>
 GridControl</td><td>
 Enum</td><td>
-{{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 AlphaBlendSelectionColor</td><td>
 To select alpha blend selection color </td><td>
 GridControl</td><td>
 Enum</td><td>
-{{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 ClickedOnDisabledCellBehavior</td><td>
 Disable to click behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
-{{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 ShowCurrentCellBorderBehavior</td><td>
 To show CurrentCell border behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
-{{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 DefaultGridBorderStyle</td><td>
 To set Default Grid Border style.</td><td>
 GridControl</td><td>
 Enum</td><td>
-{{'[Grid Model Options](/windowsforms/grid/how-to/common/grid-model-options)'| markdownify }}</td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
 </table>
 
 

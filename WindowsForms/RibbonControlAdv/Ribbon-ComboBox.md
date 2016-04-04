@@ -148,7 +148,7 @@ Represents the source of strings used for autocompletion. The sources can be,<br
 <tr>
 <td>
 AutoCompleteMode<br/><br/></td><td>
-Indicates text completion behavior of the combo box. The modes are,<br/><br/>{{'__Suggest__ '| markdownify }}- Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,<br/><br/>{{'__Append__ '| markdownify }}- Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and <br/><br/>{{'__SuggestAppend__ '| markdownify }}- Displays the drop down, also appends the highlighted string.<br/><br/></td></tr>
+Indicates text completion behavior of the combo box. The modes are,<br/><br/>{{ '__Suggest__ ' | markdownify }} - Displays the drop down list associated with the EditControl. This dropdown list is populated with one or more suggested completion strings,<br/><br/>{{ '__Append__ ' | markdownify }} - Appends the reminder of the most likely candidate string to the existing character, highlighting the appended character, and <br/><br/>{{ '__SuggestAppend__ ' | markdownify }} - Displays the drop down, also appends the highlighted string.<br/><br/></td></tr>
 <tr>
 <td>
 ShortCut on Form1<br/><br/></td><td>

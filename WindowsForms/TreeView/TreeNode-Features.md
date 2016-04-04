@@ -137,7 +137,7 @@ It is the StateImageList index value of the image that is displayed, when a tree
 <tr>
 <td>
 NodeStateImageList</td><td>
-Indicates the image list with images that are displayed instead of expand / collapse button.</td></tr>
+Indicates the imageclist with images that are displayed instead of expand / collapse button.</td></tr>
 <tr>
 <td>
 OpenImageIndex</td><td>

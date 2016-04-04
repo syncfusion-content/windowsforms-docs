@@ -1726,7 +1726,7 @@ Doughnut Chart, Pie Chart.</td></tr>
 </table>
 
 
-PieChart with a DoughnutCoefficient specified will be rendered as doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie.
+PieCharts with a DoughnutCoefficient specified will be rendered as doughnuts. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie.
 
 The DoughnutCoefficient property specifies the fraction of the radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
