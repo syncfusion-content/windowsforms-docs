@@ -9,9 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Create your first NavigationDrawer in Windows Forms
-
-Through Designer
+## Through Designer
 
 Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential Windows Forms control through drag and drop from Toolbox. 
 
@@ -19,7 +17,20 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 2. Find **NavigationDrawer** by typing the name of the “NavigationDrawer” in the search box.
 
-Through Code-Behind
+![](Getting-Started_images/icon.png)
+
+3. Drag-and-drop a `NavigationDrawer` control from the VS.NET toolbox onto the form. This will create an instance of the `NavigationDrawer` control on the form.
+
+![](Getting-Started_images/start.png)
+
+4. The NavigationDrawer is populated with the collection of DrawMenuItems using the `Items` property in the property window.
+
+![](Getting-Started_images/designer.png)
+
+![](Getting-Started_images/items.png)
+
+
+## Through Code-Behind
 
 Syncfusion UI for Windows Forms can added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code. 
 
@@ -53,20 +64,7 @@ Dim navigationDrawer1 As New NavigationDrawer()
 
 {% endtabs %}
 
-
-![](Getting-Started_images/start.png)
-
-## Populating Items
-
-The NavigationDrawer is populated with the collection of DrawMenuItems using the `Items` property.
-
-**Through Designer**
-
-![](Getting-Started_images/designer.png)
-
-Through Code-Behind
-
-The following code example allows you to add DrawMenuItem to the NavigationDrawer.
+3. Add DrawMenuItem to the NavigationDrawer control using the following code example.
 
 {% tabs %}
 

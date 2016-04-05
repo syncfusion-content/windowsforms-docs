@@ -56,7 +56,7 @@ Me.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox)
 
 **DrawerView** is a container, that will be displayed upon selection on top, along and below with the Content view section. This will contain below sections.
 
-![](Concepts-And-Features_images/Concepts-And-Features_img2.png)
+![](Concepts-And-Features_images/navigationdrawer_img2.png)
 
 
 ## Transition
@@ -92,7 +92,7 @@ Me.navigationDrawer1.Transition = Transition.SlideOnTop
 {% endtabs %}
 
 
-![](Concepts-And-Features_images/Concepts-And-Features_img3.jpg)
+![](Concepts-And-Features_images/navigationdrawer_img2.png)
 
 
 ### Push
@@ -120,7 +120,7 @@ Me.navigationDrawer1.Transition = Transition.Push
 {% endtabs %}
 
 
-![](Concepts-And-Features_images/Concepts-And-Features_img4.jpg)
+![](Concepts-And-Features_images/navigationdrawer_img3.png)
 
 
 ### Reveal
@@ -148,7 +148,7 @@ Me.navigationDrawer1.Transition = Transition.Push
 {% endtabs %}
 
 
-![](Concepts-And-Features_images/Concepts-And-Features_img5.jpg)
+![](Concepts-And-Features_images/navigationdrawer_img4.png)
 
 
 
@@ -183,19 +183,19 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 * Left 
 
-![](Concepts-And-Features_images/Concepts-And-Features_img6.jpg)
+![](Concepts-And-Features_images/navigationdrawer_img5.png)
 
 * Right 
 
-![](Concepts-And-Features_images/Concepts-And-Features_img7.jpg)
+![](Concepts-And-Features_images/navigationdrawer_img6.png)
 
 * Top 
 
-![](Concepts-And-Features_images/Concepts-And-Features_img8.jpg)
+![](Concepts-And-Features_images/navigationdrawer_img7.png)
 
 * Bottom 
 
-![](Concepts-And-Features_images/Concepts-And-Features_img9.jpg)
+![](Concepts-And-Features_images/navigationdrawer_img8.png)
 
 
 ## Animation Duration
