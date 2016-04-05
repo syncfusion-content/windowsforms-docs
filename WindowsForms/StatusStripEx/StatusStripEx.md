@@ -242,7 +242,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 ## Custom Context Menu
 
-It is possible to customize the status bar context menu that displays in StatusStripEx, to look like Word2007. This can be done by setting StatusString property of NotificationItems like StatusStrip Button, StatusStripLabel, so on.
+It is possible to customize the statusbar context menu that displays in StatusStripEx, to look like Word2007. This can be done by setting StatusString property of NotificationItems like StatusStrip Button, StatusStripLabel, so on.
 
 {% highlight c# %}
 

@@ -65,7 +65,7 @@ Specifies the visibility of the Launcher in the control.<br/><br/></td></tr>
 <tr>
 <td>
 LauncherStyle<br/><br/></td><td>
-Sets the Style for the launcher. The styles are,<br/><br/>{{'____'| markdownify }}Office12,<br/><br/>Office2007<br/><br/></td></tr>
+Sets the Style for the launcher. The styles are,<br/><br/>{{ '____' | markdownify }} Office12,<br/><br/>Office2007<br/><br/></td></tr>
 </table>
 
 {% tabs %}
@@ -93,10 +93,10 @@ Me.toolStripEx1.LauncherStyle = LauncherStyle.Office2007
 
 ### Grip Style
 
-The toolstrip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
+The tool strip can hold a grip, which can be visible by setting the GripStyle property. We can enable GripStyle easily, using the smart tag of the ToolStripEx control.
 
 <table>
-<tr> 
+<tr>
 <th>
 Property<br/><br/></th><th>
 Description<br/><br/></th></tr>
@@ -217,7 +217,7 @@ Me.toolStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.C
 
 ## AutoSizing of ToolStripEx
 
-By enabling the **AutoSize** property of ToolStripEx, the toolstrip width will be resized automatically while adding controls to the tool strip in the designer.
+By enabling the **AutoSize** property of ToolStripEx, the tool strip width will be resized automatically while adding controls to the tool strip in the designer.
 
 <table>
 <tr>
@@ -258,7 +258,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 Flow<br/><br/></td><td>
-Specifies that items flow horizontally or vertically as necessary.<br/><br/> Note: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items flow horizontally or vertically as necessary.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 HorizontalStackWithOverflow<br/><br/></td><td>
@@ -270,7 +270,7 @@ Specifies that items are laid out automatically.<br/><br/></td></tr>
 <tr>
 <td>
 Table<br/><br/></td><td>
-Specifies that items are laid out flush left.<br/><br/>Note: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Specifies that items are laid out flush left.<br/><br/>**Note****:** The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
 <tr>
 <td>
 VerticalStackWithOverflow<br/><br/></td><td>
@@ -398,7 +398,7 @@ Sets the FontStyle for the caption.<br/><br/></td></tr>
 <tr>
 <td>
 CaptionTextStyle<br/><br/></td><td>
-Sets the text style for the caption. The options are, <br/><br/>{{'____'| markdownify }}Plain, <br/><br/>Etched and <br/><br/>Shadow.<br/><br/></td></tr>
+Sets the text style for the caption. The options are, <br/><br/>{{ '____' | markdownify }} Plain, <br/><br/>Etched and <br/><br/>Shadow.<br/><br/></td></tr>
 <tr>
 <td>
 CaptionAlignment<br/><br/></td><td>
@@ -527,11 +527,11 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 SetShortcut<br/><br/></td><td>
-Sets shortcut key. The parameters are,<br/><br/>{{'__Component__ '| markdownify }}- Component of the RibbonForm.<br/><br/>{{'__Value__ '| markdownify }}- Represents the shortcut key for the component specified.<br/><br/></td></tr>
+Sets shortcut key. The parameters are,<br/><br/>{{ '__Component__ ' | markdownify }} - Component of the RibbonForm.<br/><br/>{{ '__Value__ ' | markdownify }} - Represents the shortcut key for the component specified.<br/><br/></td></tr>
 <tr>
 <td>
 GetShortcut<br/><br/></td><td>
-Gets shortcut key. The parameter is,<br/><br/>{{'__Component__ '| markdownify }}- Component of the RibbonForm.<br/><br/></td></tr>
+Gets shortcut key. The parameter is,<br/><br/>{{ '__Component__ ' | markdownify }} - Component of the RibbonForm.<br/><br/></td></tr>
 </table>
 
 {% tabs %}

@@ -177,7 +177,7 @@ Gets or sets the height of the major tickmarks.</td></tr>
 <td>
 MinorTickMarkColor</td><td>
 Color</td><td>
-Gets or sets the color of the minor tickmarks.</td></tr>
+Gets or sets the color of the minor tic marks.</td></tr>
 <tr>
 <td>
 MinorTickMarkHeight</td><td>
@@ -313,22 +313,12 @@ Specify the height of the range. Default value is set to 5.</td></tr>
 Color</td><td>
 Color</td><td>
 Gets or sets the color of the range.</td></tr>
-<tr>
-<td>
-StartWidth</td><td>
-Integer</td><td>
-Gets or sets the start width of the range.</td></tr>
-<tr>
-<td>
-EndWidth</td><td>
-Integer</td><td>
-Gets or sets the end width of the range.</td></tr>
 </table>
 
 
 The following code sample demonstrates how to add ranges to the linear gauge:
 
-{% tabs %}
+
 
 {% highlight c# %}
 
@@ -336,21 +326,17 @@ Syncfusion.Windows.Forms.Gauge.LinearRange range1 = new Syncfusion.Windows.Forms
 
 range1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
 
-range1.EndValue = 60F;
+            range1.EndValue = 0F;
 
-range1.Height = 5;
+            range1.Height = 5;
 
-range1.InRange = false;
+            range1.InRange = false;
 
-range1.Name = "GaugeRange1";
+            range1.Name = "GaugeRange1";
 
-range1.StartValue = 0F;
-            
-range1.StartWidth=10;
+            range1.StartValue = 0F;
 
-range.EndWidth=20;
-            
-this.linearGauge1.Ranges.Add(range1);
+            this.linearGauge1.Ranges.Add(range1);
 
 {% endhighlight %}
 
@@ -362,7 +348,7 @@ Dim range1 As New Syncfusion.Windows.Forms.Gauge.LinearRange range()
 
 range1.Color = System.Drawing.Color.FromArgb(CInt(CByte(225)), CInt(CByte(128)), CInt(CByte(128)))
 
-range1.EndValue = 60F
+range1.EndValue = 0F
 
 range1.Height = 5
 
@@ -372,16 +358,11 @@ range1.Name = "GaugeRange1"
 
 range1.StartValue = 0F
 
-range1.StartWidth=10
-
-range.EndWidth=20
-
 Me.linearGauge1.Ranges.Add(range1)
 
 
 {% endhighlight %}
 
-{% endtabs %}
 
 ![](Linear-Gauge_images/Linear-Gauge_img6.png)
 

@@ -102,6 +102,7 @@ A resource file can also be created by using the `Text` file. The resource file 
 ### Creating a Satellite Assembly
 
 The following steps illustrate on creating a Satellite Assembly:
+
 1.Enter the following command in the Visual Studio Command Prompt for creating resource file from the text file:
 
 {% highlight text %}

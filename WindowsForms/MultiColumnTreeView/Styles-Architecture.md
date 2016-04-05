@@ -210,7 +210,7 @@ Sets the visibility of the InteractiveCheckbox for the node.</td></tr>
 <tr>
 <td>
 ClosedImageIndex</td><td>
-Indicates the image index for closed node.</td></tr>
+Indicates the imageindex for closed node.</td></tr>
 <tr>
 <td>
 CollapseImageIndex</td><td>
@@ -392,7 +392,7 @@ Sets the visibility of the InteractiveCheckbox for the node.</td></tr>
 <tr>
 <td>
 ClosedImageIndex</td><td>
-Indicates the image index for closed node.</td></tr>
+Indicates the imageindex for closed node.</td></tr>
 <tr>
 <td>
 CollapseImageIndex</td><td>

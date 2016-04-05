@@ -12,7 +12,7 @@ GridControl provides support to validate the cell while editing. When an incorre
 
 ## Built-in Validation
 
-The GridControl has the built-in data validation. It will shows the error icon on the current cell to notify the error is occurred. The visibility of the error icon can be changed by setting the [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html#) and [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html#) property.  
+The GridControl has the built-in data validation. It will shows the error icon on the current cell to notify the error is occurred. The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html#) and [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html#) property.  
 
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ if (renderer != null && !int.TryParse(renderer.ControlText, out val))
 
 {
 
-//Display custom error provider
+//Disply custom error provider
 this.gridControl1.CurrentCell.SetError("Please enter the valid input");
 
 }
@@ -125,7 +125,7 @@ Dim renderer As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Re
 
 If renderer IsNot Nothing AndAlso (Not Integer.TryParse(renderer.ControlText, val)) Then
 
-'Display custom error provider
+'Disply custom error provider
 Me.gridControl1.CurrentCell.SetError("Please enter the valid input")
 
 End If
