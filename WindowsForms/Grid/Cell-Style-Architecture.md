@@ -10,7 +10,7 @@ documentation: ug
 #Cell Style Architecture
 
 GridControl can be thought of as a rectangular table of grid cells. Each cell contains distinct information and can be displayed independently of other cells. 
-GridControl uses [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like Font, BackColor, CellValue and CellType are all reflected in a single `GridStyleInfo` object. This section explains how to access and use the `GridStyleInfo` objects.
+GridControl uses [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like font, BackColor, CellValue and CellType are all reflected in a single GridStyleInfo object. This section explains how to access and use the GridStyleInfo objects.
 
 ## GridStyleInfo properties
 
@@ -62,7 +62,7 @@ Me.gridControl1(3, 3).Font.Strikeout = True
 
 ### Text and CellValue
 
-Value of the cells can be changed by using either [Text](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Text.html) or [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html) property. Both the properties are closely related. The major difference is that, `Text` property is a string and `CellValue` property is an object.
+Value for the cells can be changed by using either [Text](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Text.html) or [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html) property. Both the properties are closely related. The major difference is that, `Text` property is a string and `CellValue` property is an object.
 
 {% tabs %}{% highlight c# %}
 this.gridControl1[2, 2].Text = "Essential Grid";
@@ -179,7 +179,7 @@ gridControl1(2, 2).Font.Orientation = 180
 
 ### Format
 
-The formats of a cell value can be changed by using [Format](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Format.html) property. For more details on the different types of formatting types, please check the msdn [link](https://msdn.microsoft.com/en-us/library/26etazsy.aspx).
+The formats of a cell value can be changed by using [Format](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Format.html) property. For more details on the different types of formatting types, please check the msdn link over [here.](https://msdn.microsoft.com/en-us/library/26etazsy.aspx)
 {% tabs %}{% highlight c# %}
 gridControl1[2, 2].CellValue = 31456;
 this.gridControl1[2, 2].Format = "C";
@@ -212,12 +212,15 @@ Me.gridControl1(2, 2).CellTipText = "TipText for cell 2,2"
 
 ## BaseStyles
 
-[BaseStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BaseStyle.html)s is one of the parent-type style which is used to customize the cell’s appearance. BaseStyles are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. 
-Base styles that are used in GridControl are.
+[BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BaseStyle.html) is one of the parent-type style which is used to customize the cell’s appearance. BaseStyles are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. 
+Base styles that used in GridControl are,
 
 1. [Standard](#standard)
+
 2. [Header](#header)
+
 3. [Row Header](#row-header)
+
 4. [Column Header](#column-header)
 
 ### BaseStyles Editor
@@ -321,8 +324,8 @@ In this section let’s discuss on some of the ways that can be used to assign t
 
 ### ChangeCells Method
 
-For assigning the `GridStyleInfo` objects for a range of cells, make use of the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ChangeCells.html) method. This overloaded method accepts `GridRangeInfo` and `GridStyleInfo` objects. [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class specifies a range of cells in GridControl.
-The `ChangeCells` method depends on the [StyleModifyType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Styles.StyleModifyType.html) parameter. This modify type defines the style operations. Default modify type is `StyleModifyType.Override`.
+For assigning the `GridStyleInfo` objects for a range of cells, make use of the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ChangeCells.html)()method. This overloaded method accepts `GridRangeInfo` and `GridStyleInfo` objects. [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class specifies a range of cells in GridControl.
+The ChangeCells method depends on the [StyleModifyType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Styles.StyleModifyType.html) parameter. This modify type defines the style operations. Default modify type is `StyleModifyType.Override`.
 
 {% tabs %} {% highlight c# %}
 // Creates a GridStyleInfo object

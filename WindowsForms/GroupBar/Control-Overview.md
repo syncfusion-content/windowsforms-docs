@@ -43,7 +43,7 @@ collection can be accessed through the GroupBar.GroupBarItems property.
    * Text Settings
       Provides options to align the text of the GroupBar Items to the Left , Right or Center. 
 
-      GroupBar control provides options for renaming the GroupBar Items at run-time. This is described as the Inplace Renaming 
+      GroupBar control provides options for renaming the GroupBar Items at run-time. This is described as the In place Renaming 
 	  feature of the GroupBar control.
 
    * Image Settings 

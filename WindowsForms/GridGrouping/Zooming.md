@@ -75,7 +75,7 @@ ZoomGroupingGrid.zoomCell = True
 ## Customize Zooming
 
 ### Zooming in Ellipse Mode
-By default, GridGroupingControl uses the ellipse mode while clicking the cells for zooming. To change the mode make use of the [ZoomImageMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid~ZoomImageMode.html) property. The display of the ellipse shape can be controlled by using the[ZoomSize](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid~ZoomSize.html) property in which you can set the height and width of the ellipse. The default height and width is `150`. The default value of the zoom factor is `1.5`.
+By default, GridGroupingControl uses the ellipse mode while clicking the cells for zooming. To change the mode make use of the [ZoomImageMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid~ZoomImageMode.html) property. The display of the ellipse shape can be controlled by using the [ZoomSize](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid~ZoomSize.html) property in which you can set the height and width of the ellipse. The default height and width is `150`. The default value of the zoom factor is `1.5`.
 
 {% tabs %}
 {% highlight c# %}
