@@ -497,7 +497,7 @@ The following image illustrates the above settings.
 
 #### LineStyle
 
-This property inturn has customization properties to set the style for the Connection Point Lines, similar to the other line types.
+This property in turn has customization properties to set the style for the Connection Point Lines, similar to the other line types.
 
 
 
@@ -1687,7 +1687,7 @@ Me.diagram1.VerticalThumbTrack = True
 
 ScrollTips can be enabled or disabled for horizontal and vertical scroll bars individually by setting the HorizontalScrollTips and VerticalScrollTips properties.
 
-The format in which the scrolltip should be displayed can be specified using the ScrollTipFormat property. The default format is 'Position{0}'.
+The format in which the ScrollTip should be displayed can be specified using the ScrollTipFormat property. The default format is 'Position{0}'.
 
 
 
@@ -1709,7 +1709,7 @@ Specifies whether to display the vertical scroll bar.</td></tr>
 <tr>
 <td>
 ScrollTipFormat</td><td>
-Specifies the format for the scrolltip to be displayed.</td></tr>
+Specifies the format for the ScrollTip to be displayed.</td></tr>
 </table>
 
 
@@ -3510,7 +3510,7 @@ Returns the node's name by which the node was affected.</td></tr>
 <tr>
 <td>
 ZOrder</td><td>
-Returns the current zorder value.</td></tr>
+Returns the current Z-order value.</td></tr>
 </table>
 
 
@@ -4341,7 +4341,7 @@ NA</td></tr>
 
 ### Enabling Preview Support
 
-To enable preview for the dragged item from Symbol Palette, set the _DragNodeCueEnabled_ property of _PalatteGroupBar/PaletteGroupView_ to true. To disable preview set this to false. By default this is set to true.  
+To enable preview for the dragged item from Symbol Palette, set the _DragNodeCueEnabled_ property of _PaletteGroupBar/PaletteGroupView_ to true. To disable preview set this to false. By default this is set to true.  
 
 Following code example illustrates how to enable preview support:  
 
@@ -4499,7 +4499,7 @@ diagram1.Controller.RotatingStyle = RenderingHelperStyle.DashedOutline
 
 ## Guides
 
-Guides for the Diagram control are viewable, nonprinting guidelines used to align a diagram node with other nodes. They provide support to align a diagram node with the boundary, center, or margin of other nodes.
+Guides for the Diagram control are viewable, non printing guidelines used to align a diagram node with other nodes. They provide support to align a diagram node with the boundary, center, or margin of other nodes.
 
 You can also change the visual style of Guides by using its LineStyle property.
 

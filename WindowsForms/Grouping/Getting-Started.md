@@ -142,7 +142,7 @@ N> They can also be in the GAC, in which case, they should be referenced in Web.
 
 N> The version numbers in the above references will vary depending on the version you are linking to.
 
-Data Files-If you have .xml, .md, or other data files, ensure that they have sufficient security permission. Authenticated Users should have full control over the files and the directories in order to give ASP.NET code, enough permissions to open the file during runtime.
+Data Files-If you have .xml, .mdb, or other data files, ensure that they have sufficient security permission. Authenticated Users should have full control over the files and the directories in order to give ASP.NET code, enough permissions to open the file during runtime.
 
 Refer to the document in the following path, for step by step process of Syncfusion assemblies’ deployment in ASP.NET.
 

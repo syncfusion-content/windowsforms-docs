@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Move Nodes on a Diagram Programmatically?
 
-You can move the desired collection of nodes to a diagam using the MoveNodes method. The following code example illustrates this.
+You can move the desired collection of nodes to a diagram using the MoveNodes method. The following code example illustrates this.
 
 {% tabs %}
 

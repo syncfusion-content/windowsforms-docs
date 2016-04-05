@@ -226,7 +226,7 @@ The ACCRINT function returns the accrued interest for a security with periodic i
 ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis) where:
 
 * IssueDate - issue date of security.
-* FirstInterest - first interest date of security.
+* FirstInterestDate - first interest date of security.
 * SettlementDate - date on which the security traded to buyer.
 * rate - yearly coupon rate of the security.
 * parvalue - par value of the security.

@@ -713,8 +713,8 @@ ImageKey</td><td>
 Default image key for the nodes.</td></tr>
 <tr>
 <td>
-Imagelist</td><td>
-Imagelist with images to be used for the nodes.</td></tr>
+ImageList</td><td>
+ImageList with images to be used for the nodes.</td></tr>
 <tr>
 <td>
 Indent</td><td>
@@ -734,7 +734,7 @@ Node Collection of the TreeView control.</td></tr>
 <tr>
 <td>
 PathSeparator</td><td>
-String Delimiter used for the path returned by a node's Fullpath property.</td></tr>
+String Delimiter used for the path returned by a node's FullPath property.</td></tr>
 <tr>
 <td>
 Scrollable</td><td>

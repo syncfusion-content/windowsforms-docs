@@ -27,7 +27,20 @@ Description</th></tr>
 <tr>
 <td>
 Alignment</td><td>
-Determines the alignment of the SuperAccelerator. The options include are given below* Default* TopCenter* TopLeft* TopRight* MiddleLeft* MiddleCenter* MiddleRight* BottomLeft* BottomCenter* BottomRight</td></tr>
+Determines the alignment of the SuperAccelerator. The options include are given below
+
+<br/><br/> Default
+<br/><br/> TopCenter
+<br/><br/> TopLeft
+<br/><br/> TopRight
+<br/><br/> MiddleLeft
+<br/><br/> MiddleCenter
+<br/><br/> MiddleRight
+<br/><br/> BottomLeft
+<br/><br/> BottomCenter
+<br/><br/> BottomRight
+
+</td></tr>
 </table>
 
 
