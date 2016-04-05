@@ -84,7 +84,7 @@ gridControl1(2, 3).ImageIndex = 2
 
 ![](Cell-Types_images/Cell-Types_img3.png)
 
-N> Though static cells cannot be edited, it can be deleted by using the&lt;kbd&gt; DELETE&lt;/kbd&gt; key.
+N> Though static cells cannot be edited, it can be deleted by using the&lt;kbd&gt DELETE&lt;/kbd&gt; key.
 
 ### Header Cells
 Header cells are as same as that of static cells, in addition, this cell type has a button-like border that can have a depressed state. Header cell type is mainly used as header for rows and columns. If a particular cell needs to be of type header, then make use of this cell type.
@@ -888,7 +888,7 @@ Me.gridControl1(2, 2) = currencyStyle
 ![](Cell-Types_images/Cell-Types_img24.png)
 
 ### Formula Cells
-`FormulaCell` cell type adds algebraic formulas to a cell that depends on other cells. The cell value should be a well-formed formula starting with an `=` and the `CellType` property set to `FormulaCell`. If a formula cell does not begin with an '=', the cell is treated as a text box cell. For details, refer the topic [Formula Support](http://help.syncfusion.com/windowsforms/grid/formula-support).
+`FormulaCell` cell type adds algebraic formulas to a cell that depends on other cells. The cell value should be a well-formed formula starting with an `=` and the `CellType` property set to `FormulaCell`. If a formula cell does not begin with an `=`, the cell is treated as a text box cell. For details, refer the topic [Formula Support](http://help.syncfusion.com/windowsforms/grid/formula-support).
 
 {% tabs %}
 {% highlight c# %}
@@ -1271,7 +1271,7 @@ Me.gridControl1(2, 2).CellType = CustomCellTypes.ButtonEdit.ToString()
 ![](Cell-Types_images/Cell-Types_img32.png)
 
 #### ButtonEdit Style Properties 
-The style properties related to the `ButtonEdit` are maintained in [ButtonEditStyleProperties](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ButtonEditStyleProperties.html) class. This class consists of two main properties[ButtonEditInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ButtonEditInfo.html) and `StyleInfo`.
+The style properties related to the `ButtonEdit` are maintained in [ButtonEditStyleProperties](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ButtonEditStyleProperties.html) class. This class consists of two main properties [ButtonEditInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ButtonEditInfo.html) and `StyleInfo`.
 
 `ButtonEditInfo` property consists of style properties that are related to the `ButtonEdit`. `StyleInfo` property consists of all the style properties that belongs to the cell in which the `ButtonEdit` cell type is added.
 
@@ -1471,11 +1471,11 @@ Me.gridControl1(2, 2).Format = "MM/dd/yyyy hh:mm"
 
 ![](Cell-Types_images/Cell-Types_img37.png)
 
-FNumericUpDown Cells
+### FNumericUpDown Cells
 
 Numeric Up/Down cell type has been enhanced to provide more styles and properties that can be added to the numeric up down control by using [FloatNumericUpDownStyleProperties](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FloatNumericUpDownStyleProperties.html) class. It enables to set the limitations of the numeric values and several other properties.
 
-### FloatNumericUpDown Style Properties
+#### FloatNumericUpDown Style Properties
 
 <table>
 <tr>
