@@ -15,7 +15,7 @@ The Essential Windows Forms **NavigationDrawer** is a sliding panel menu that c
 
 ### Key Features
 
-* **Position** : Specifies the rendering **position** for the **Navigation** **Drawer**. That is you can display it from right or left or top or bottom edges
+* **Position** : Specifies the sliding **position** of the **Drawer** **Panel**.
 
 * **Transition** : Specifies the **transition** **type** of the **Navigation** **Drawer**. 
 
