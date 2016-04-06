@@ -18,13 +18,13 @@ The below four events are implemented in Transition.
 
 ## Opening
 
-Occurs when the Transition expands begins. 
+Occurs when expand Transition begins. 
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Raises when Transition expands begins.
+//Raises when expand Transition begins.
 
 public event OpeningEventHandler Opening;
 
@@ -44,7 +44,7 @@ public void navigationDrawer1_Opening(object sender, OpeningEventArgs e)
 
 {% highlight vb %}
 
-'Raises when Transition expands begins.
+'Raises when expand Transition begins.
 
 Public event OpeningEventHandler Opening
 
@@ -64,13 +64,13 @@ End Sub
 
 ## Closing
 
-Occurs when the Transition Collapses begins. 
+Occurs when collapse Transition begins. 
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Raises when Transition collapses begins.
+//Raises when collapse Transition begins.
 
 public event ClosingEventHandler Closing;
 
@@ -89,11 +89,7 @@ MessageBox.Show(“Collapses begins”);
 
 {% highlight vb %}
 
-'Raises when Transition collapses begins.
-
-Public event ClosingEventHandler Closing
-
-'Raises when Transition collapses begins.
+'Raises when collapse Transition begins.
 
 Public event ClosingEventHandler Closing
 
@@ -114,13 +110,13 @@ End Sub
 
 ## Opened
 
-Occurs when the Transition expands ends.
+Occurs when expand Transition ends.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Raises when Transition expands ends.
+//Raises when expand Transition ends.
 
 public event OpenedEventHandler Opened;
 
@@ -140,7 +136,7 @@ MessageBox.Show(“Transition Ends”);
 
 {% highlight vb %}
 
-'Raises when Transition expands ends.
+'Raises when expand Transition ends.
 
 Public event OpenedEventHandler Opened
 
@@ -160,13 +156,13 @@ End Sub
 
 ## Closed
 
-Occurs when the Transition Collapses ends.
+Occurs when collapse Transition ends.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Raises when Transition collapses ends.
+//Raises when collapse Transition ends.
 
 public event ClosedEventHandler Closed;
 
@@ -186,7 +182,7 @@ MessageBox.Show(“Collapses ends”);
 
 {% highlight vb %}
 
-'Raises when Transition collapses ends.
+'Raises when collapse Transition ends.
 
 Public event ClosedEventHandler Closed
 
