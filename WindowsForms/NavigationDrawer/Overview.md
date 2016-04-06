@@ -11,6 +11,8 @@ documentation: ug
 
 The Essential Windows Forms **NavigationDrawer** is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
 
+![](Concepts-And-Features_images/navigationdrawer_img2.png)
+
 ### Key Features
 
 * **Position** : Specifies the rendering **position** for the **Navigation** **Drawer**. That is you can display it from right or left or top or bottom edges
