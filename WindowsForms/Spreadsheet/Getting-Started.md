@@ -126,7 +126,7 @@ this.Controls.Add(ribbon);
 
 _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application_.
 
-![](Getting-Started_images/Getting-Started_img2.jpg)
+![](Getting-Started_images/Getting-Started_img2.JPG)
 <br/>
 
 ## Creating a new Excel Workbook
@@ -172,7 +172,7 @@ The Excel Workbook can be opened in Spreadsheet using the **Open** method in var
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.jpg)
+![](Getting-Started_images/Getting-Started_img4.JPG)
 
 
 Opening Excel File in Spreadsheet
