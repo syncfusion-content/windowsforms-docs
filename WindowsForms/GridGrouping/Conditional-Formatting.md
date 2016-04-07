@@ -154,6 +154,38 @@ After applying the conditional formatting the color will be changed for the reco
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img8.png)
 
+## Data Bar
+Data bar is an Excel Inspired Data bar which is used to visualize the negative and positive values of the column in a different range of colors. The data bars will be drawn based on the criteria given in the expression of the [ConditionalFormats](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ConditionalFormats.html).
+
+{% tabs %}
+{% highlight c# %}
+//Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
+GridConditionalFormatDescriptor conditionalDescriptor = new GridConditionalFormatDescriptor();
+//object for data bar rule
+ConditionalFormatDataBarRule conditionDataBarRule1 = new ConditionalFormatDataBarRule();
+//Assigning column for data bar
+conditionDataBarRule1.ColumnName = "Profit";
+//Adding the rule to rules collection
+conditionalDescriptor.Rules.Add(conditionDataBarRule1);
+//Adding descriptor.
+this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalDescriptor);
+{% endhighlight %}
+{% highlight vb %}
+'Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
+Dim conditionalDescriptor As New GridConditionalFormatDescriptor()
+'object for data bar rule
+Dim conditionDataBarRule1 As New ConditionalFormatDataBarRule()
+'Assigning column for data bar
+conditionDataBarRule1.ColumnName = "Profit"
+'Adding the rule to rules collection
+conditionalDescriptor.Rules.Add(conditionDataBarRule1)
+'Adding descriptor.
+Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalDescriptor)
+{% endhighlight %}
+{% endtabs %}
+
+![](Data-Bar_images/Data-Bar_img1.jpeg)
+
 ## Dynamic Formatting
 The cells can be formatted dynamically based on the given condition by using the [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryCellStyleInfo_EV.html) event. The appearance of the cells can be changed dynamically by using this formatting.
 
