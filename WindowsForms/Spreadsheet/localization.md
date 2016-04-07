@@ -13,7 +13,7 @@ Spreadsheet provides support to localize all the static text in a Ribbon and all
 
 Spreadsheet allows you to set custom resource using Resx file. You can define your string values in resource file for a specific culture and set the culture in your application. The given string value will be set to the Spreadsheet.
 
-The following steps shows how to localize the Spreadsheet,
+The following steps show how to localize the Spreadsheet,
 
 * Create folder names as ‘Resources’ in the application, 
 * Create a resource(.resx) file and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. For example, Syncfusion.Spreadsheet.Windows.ja.resx.
