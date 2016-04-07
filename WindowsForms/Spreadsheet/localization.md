@@ -13,13 +13,12 @@ Spreadsheet provides support to localize all the static text in a Ribbon and all
 
 Spreadsheet allows you to set custom resource using Resx file. You can define your string values in resource file for a specific culture and set the culture in your application. The given string value will be set to the Spreadsheet.
 
-The following steps show how to implement the localization,
+The following steps shows how to localize the Spreadsheet,
 
-* Create folder names as ‘Resources’ in your application, 
-* Create Resx(resource) file and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. For example, Syncfusion.Spreadsheet.Windows.ja.resx.
-* Add default Resx (resource) file in the Resource folder named as Syncfusion.Spreadsheet.Windows.resx
+* Create folder names as ‘Resources’ in the application, 
+* Create a resource(.resx) file and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. For example, Syncfusion.Spreadsheet.Windows.ja.resx.
 
-Set the CultureInformation in the Application, before the InitializeComponent() method is called. 
+Set the CultureInformation in the application, before the InitializeComponent() method is called. 
 
 Setting of the culture information,
 
@@ -31,7 +30,7 @@ Setting of the culture information,
 {% endhighlight %}
 {% endtabs %}
 
-Now, the Application is set to the Japanese Culture info. 
+Now, the application is set to the Japanese CultureInfo. 
 
 The following screenshot shows you the localization in Spreadsheet,
 
