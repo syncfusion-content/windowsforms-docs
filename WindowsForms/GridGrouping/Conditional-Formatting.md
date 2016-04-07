@@ -396,8 +396,6 @@ The axis between positive and negative bars can be disabled or enabled by using 
 **Automatic** – Axis position will be assigned based on the highest minimum value.<br/>
 **None** - Draws both negative and positive in the same direction.
 
-![](Data-Bar_images/Data-Bar_img12.jpeg)
-
 {% tabs %}
 {% highlight c# %}
 // calculates axis position based on particular column minimum and maximum values.
@@ -408,6 +406,8 @@ dataBarRule.AxisPosition = AxisPosition.None;
 dataBarRule.AxisPosition = AxisPosition.None;
 {% endhighlight %}
 {% endtabs %}
+
+![](Data-Bar_images/Data-Bar_img12.jpeg)
 
 ### Applying Axis Color
 Axis color can be changed by using [ConditionalFormatDataBarRule.AxisColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule~AxisColor.html) property. Default color is `Black`.
@@ -422,6 +422,8 @@ conditionDataBarRule1.AxisColor = Color.Red;
 conditionDataBarRule1.AxisColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
+
+![](Data-Bar_images/Data-Bar_img14)
 
 ### Getting Rule through Column Name
 The rule applied for the specific column can be retrieved by using the [GridConditionalFormatDescriptor.GetRule](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor~GetRule.html) method.
