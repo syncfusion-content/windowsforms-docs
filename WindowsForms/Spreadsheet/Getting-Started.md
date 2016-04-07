@@ -131,7 +131,7 @@ _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application
 
 ## Creating a new Excel Workbook
 
-A new workbook can be created by using a **Create** method of Spreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
+A new workbook can be created by using a `Create` method of Spreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
 
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +144,7 @@ A new workbook can be created by using a **Create** method of Spreadsheet. By de
 
 ## Opening the Existing Excel Workbook
 
-The Excel Workbook can be opened in Spreadsheet using the **Open** method in various ways,
+The Excel Workbook can be opened in Spreadsheet using the `Open` method in various ways,
 
 {% tabs %}
 {% highlight c# %}
@@ -182,7 +182,7 @@ Opening Excel File in Spreadsheet
 
 ## Saving the Excel Workbook
 
-The Excel workbook can be saved in Spreadsheet using **Save** method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. 
+The Excel workbook can be saved in Spreadsheet using `Save` method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. 
 
 {% tabs %}
 {% highlight c# %}
@@ -192,7 +192,7 @@ The Excel workbook can be saved in Spreadsheet using **Save** method. If the wor
 {% endhighlight %}
 {% endtabs %}
 
-You can also use **SaveAs** method directly to save the existing excel file with modifications.
+You can also use `SaveAs` method directly to save the existing excel file with modifications.
 
 The SaveAs method in Spreadsheet can be used in various ways,
 
