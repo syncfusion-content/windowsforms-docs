@@ -423,7 +423,7 @@ conditionDataBarRule1.AxisColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Bar_images/Data-Bar_img14)
+![](Data-Bar_images/Data-Bar_img14.png)
 
 ### Getting Rule through Column Name
 The rule applied for the specific column can be retrieved by using the [GridConditionalFormatDescriptor.GetRule](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor~GetRule.html) method.
