@@ -77,22 +77,22 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-`CurrentCellBeginEdit`</td><td>
+<B>CurrentCellBeginEdit</B></td><td>
 Occurs when the current cell enters into edit mode. This event allows to cancel entering the edit mode.</td></tr>
 <tr>
 <td>
-`CurrentCellValueChanged` </td><td>
+<B>CurrentCellValueChanged</B></td><td>
 Occurs when the current cell value is changed in edit mode</td></tr>
 <tr>
 <td>
-`CurrentCellValidating`</td><td>
+<B>CurrentCellValidating</B></td><td>
 Occurs when the current cell value is going to be validated</td></tr>
 <tr>
 <td>
-`CurrentCellValidated`</td><td>
+<B>CurrentCellValidated</B></td><td>
 Occurs after the current cell is validated</td></tr>
 <tr>
 <td>
-`CurrentCellEndEdit`</td><td>
+<B>CurrentCellEndEdit</B></td><td>
 Occurs when the current cell leaves from edit mode</td></tr>
 </table>
