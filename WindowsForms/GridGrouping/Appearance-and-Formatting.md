@@ -179,7 +179,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionRowHeaderCell.Interior = New Brus
 {% endtabs %}
 
 ## Header Images
-Images can be added to the header of GridGroupingControl by using the [HeaderImage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImage.html) property. Also the alignment of the header image can be altered by using the [HeaderImageAlignment](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImageAlignment.html) property.
+Images can be added to the header of GridGroupingControl by using the [HeaderImage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImage.html) property. Also the alignment of the header image can be altered by using the[HeaderImageAlignment](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImageAlignment.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -349,7 +349,7 @@ dialog.ShowDialog()
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img13.jpeg)
 
 ## Conditional Formatting
-Conditional Formatting can be specified by accessing the [TableDescriptor.ConditionalFormats](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ConditionalFormats.html) property. You need to add the filter criteria either by adding [RecordFilters](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor~RecordFilters.html) or by an expression in the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html) class. Using this descriptor, you can specify the filter criteria for the cells and the style to be applied for filtered cells. Check the topic [Conditional Formatting](http://help.syncfusion.com/windowsforms/gridgrouping/conditional-formatting) for detailed explanation. 
+Conditional Formatting can be specified by accessing the [TableDescriptor.ConditionalFormats](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ConditionalFormats.html) property. You need to add the filter criteria either by adding [RecordFilters](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor~RecordFilters.html) or by an expression in the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html) class. Using this descriptor, you can specify the filter criteria for the cells and the style to be applied for filtered cells. Check the topic[Conditional Formatting](http://help.syncfusion.com/windowsforms/gridgrouping/appearance#conditional-formatting) for detailed explanation. 
 
 {% tabs %}
 {% highlight c# %}
