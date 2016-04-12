@@ -9,10 +9,8 @@ documentation: ug
 
 # Rows and Columns
 This section explains about the operations related with rows and columns in Spreadsheet
-<br/>
 
 ## Insert and Delete
-<br/>
 
 ### Inserting Rows and Columns
 
@@ -35,7 +33,7 @@ Spreadsheet provides support for dynamically inserting rows and columns into a w
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ### Deleting Rows and Columns
 
@@ -58,10 +56,9 @@ Spreadsheet provides support for deleting rows and columns from a worksheet,
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Hide and Unhide
-<br/>
 
 ### Hiding Rows/Columns
 
@@ -84,7 +81,7 @@ Spreadsheet provides support to hide rows/columns and this can be done by `HideR
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ### Unhiding Rows/Columns
 
@@ -107,7 +104,7 @@ Unhide the rows/columns in Spreadsheet can be done by `ShowRow` and `ShowColumn`
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Row Height and Column Width
 
@@ -130,7 +127,6 @@ Spreadsheet provides support to adjust the row height and column width. And also
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 N> Incase if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, `RefreshOutlines` method must be invoked to refresh/update the Outlines of the Group.	
 

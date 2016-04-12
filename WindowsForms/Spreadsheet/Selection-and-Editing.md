@@ -10,7 +10,7 @@ documentation: ug
 # Selection and Editing
 
 This section explains about the Selection and Editing behavior in Spreadsheet
-<br/>
+
 
 ## Selection
 
@@ -36,7 +36,7 @@ The Events associated with the Selection behavior are
 * `CurrentCellActivating` - Occurs when the current cell is going to be activated. This event allow to cancel the current cell activation.
 * `CurrentCellActivated`  - Occurs after the current cell is activated
 * `CellClick`             - Occurs when you click on the cell
-<br/><br/>
+
 
 ## Editing
 

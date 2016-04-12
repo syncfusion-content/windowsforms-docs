@@ -10,8 +10,7 @@ documentation: ug
 # Formatting
 
 This section explains about the formatting options similar to excel in Spreadsheet
-<br/>
-<br/>
+
 
 ## Cell Styles
 
@@ -58,11 +57,8 @@ foreach (var range in selectedRanges)
 {% endtabs %}
 
 For more information regarding formatting options, please go through [XlsIO](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
-<br/>
-<br/>
 
 ## Merge Cells
-<br/>
 
 ### Merge
 
@@ -87,7 +83,7 @@ spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ### Unmerge
 

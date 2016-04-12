@@ -10,8 +10,6 @@ documentation: ug
 # Interactive Features
 
  This section explains about the interactive operations with Spreadsheet
-<br/>
-<br/>
 
 ## Clipboard Operations
 
@@ -128,8 +126,6 @@ copyPaste.Paste(range, PasteOptions.Paste);
 
 N> When the content is copied from external source, Spreadsheet does not support the format settings (paste options).
 
-<br/>
-
 ## Undo/Redo
 
 Spreadsheet provides support for Undo/Redo functionality like MS Excel.
@@ -166,13 +162,10 @@ spreadsheet.HistoryManager.Redo();
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Context menu
 
 Context menu in Spreadsheet is customizable menu which can be used for various functionalities
-<br/>
-<br/>
 
 ### TabItem context menu
 
@@ -185,7 +178,6 @@ By default, `AllowTabItemContextMenu` property is set to true to enable the TabI
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ### Cell Context menu
 
@@ -214,7 +206,6 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Cell Comments
 
