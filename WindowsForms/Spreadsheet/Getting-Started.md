@@ -31,7 +31,7 @@ Contains the classes which holds the controls like TabBarPage, TabBarSplitterCon
 <tr>
 <td>
 Syncfusion.Tools.Windows.dll</td><td>
-Contains the classes which holds the controls like ToolStripPanelItem,MaskedEditBox,ToolStripGallery,BackStageButton  etc which are used in Spreadsheet.</td></tr>
+Contains the classes which holds the controls like Ribbon, ToolStripPanelItem,MaskedEditBox,ToolStripGallery,BackStageButton  etc which are used in Spreadsheet.</td></tr>
 <tr>
 <td>
 Syncfusion.XlsIO.Base.dll</td><td>
