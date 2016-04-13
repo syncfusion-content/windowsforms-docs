@@ -1,4 +1,4 @@
----
+----
 layout: post
 title: Getting Started with Spreadsheet
 description: How to create, open and save the workbook in Spreadsheet
@@ -10,7 +10,6 @@ documentation: ug
 # Getting Started
 
 This section helps you to get started with the Spreadsheet
-<br/>
 
 ## Assemblies Deployment
 
@@ -70,18 +69,16 @@ Contains the base and fundamental classes which is responsible for converting ex
 Syncfusion.Pdf.Base.dll</td><td>
 Contains the base and fundamental classes for creating PDF.</td></tr>
 </table>
-<br/>
 
 ## Create a Simple Application with Spreadsheet
 
 Spreadsheet control can be added into the application either via designer or via coding. 
-<br/><br/>
 
 ### Adding a Control via Designer
 
 1.Create new Windows Forms application in Visual Studio.
 
-2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  Spreadsheet/SpreadsheetRibbon toolbox items 
+2.Open the Visual Studio **Tool** **box**. Navigate to Syncfusion Controls tab, and find the  Spreadsheet/SpreadsheetRibbon toolbox items 
 
 ![](Getting-Started_images/Getting-Started_img1.jpg)
 
@@ -91,12 +88,9 @@ Spreadsheet control can be added into the application either via designer or via
 
 5.To make an interaction between Ribbon items and Spreadsheet, bind the Spreadsheet as DataContext to the SpreadsheetRibbon.
 
-<br/>
-<br/>
-
 ### Adding Control via Coding
 
-Spreadsheet is available in the following namespace “Syncfusion.Windows.Forms.Spreadsheet” and it can be created programmatically by using below code. 
+Spreadsheet is available in the following namespace Syncfusion.Windows.Forms.Spreadsheet and it can be created programmatically by using below code. 
 
 _For_ _Spreadsheet_
 
@@ -109,8 +103,6 @@ private Spreadsheet spreadsheet;
 spreadsheet = new Spreadsheet();
             
 SpreadsheetRibbon ribbon = new SpreadsheetRibbon() { Spreadsheet = spreadsheet };
-
-this.DataBindings.Add("Text", this.spreadsheet, "FileName");
 
 spreadsheet.Dock = DockStyle.Fill;
 
@@ -126,8 +118,7 @@ this.Controls.Add(ribbon);
 
 _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application_.
 
-![](Getting-Started_images/Getting-Started_img2.JPG)
-<br/>
+![](Getting-Started_images/Getting-Started_img2.PNG)
 
 ## Creating a new Excel Workbook
 
@@ -140,7 +131,6 @@ A new workbook can be created by using a `Create` method of Spreadsheet. By defa
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Opening the Existing Excel Workbook
 
@@ -172,13 +162,11 @@ The Excel Workbook can be opened in Spreadsheet using the `Open` method in vario
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.JPG)
+![](Getting-Started_images/Getting-Started_img3.PNG)
 
 
 Opening Excel File in Spreadsheet
    {:.caption}
-
-<br/>
 
 ## Saving the Excel Workbook
 

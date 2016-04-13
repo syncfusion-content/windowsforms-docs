@@ -22,15 +22,15 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
     AddCustomFormula(grid); 
   
   //Computing the formula at runtime
-   var range = spreadsheetControl.ActiveSheet.Range["B2"];
-   spreadsheetControl.ActiveGrid.SetCellValue(range,"=Find(aaa)");
+   var range = spreadsheet.ActiveSheet.Range["B2"];
+   spreadsheet.ActiveGrid.SetCellValue(range,"=FindLength(aaa)");
          
 }  
 
 private void AddCustomFormula(SpreadsheetGrid grid)
 {
-  // Add a formula named Find to the Library.
-   grid.FormulaEngine.AddFunction("Find", new FormulaEngine.LibraryFunction(ComputeLength));      
+  // Add a formula named FindLength to the Library.
+   grid.FormulaEngine.AddFunction("FindLength", new FormulaEngine.LibraryFunction(ComputeLength));      
 }    
 
 //Implementation of formula

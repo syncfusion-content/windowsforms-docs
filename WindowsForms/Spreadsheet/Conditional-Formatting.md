@@ -22,7 +22,6 @@ IConditionalFormats condition = worksheet.Range["A1"].ConditionalFormats;
 IConditionalFormat condition1 = condition.AddCondition();
 
 {% endhighlight %}
-<br/><br/>
 
 ## Highlight Cell Rules
 
@@ -99,12 +98,11 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img1.jpeg)
-
+![](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
 
 ## Data Bars
 
-To apply the conditional format based on data bars,define the conditional format type as a **DataBar** and specify the properties associated with DataBars such as barcolor, MinPoint, MaxPoint etc.,.to the specified cell or range. Finally, invalidate that cells to update the view.
+To apply the conditional format based on data bars,define the conditional format type as a **DataBar** and specify the properties associated with DataBars such as bar color, MinPoint, MaxPoint etc.,.to the specified cell or range. Finally, invalidate that cells to update the view.
 
 {% highlight c# %}
 
@@ -128,13 +126,11 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img2.jpeg)
-
-
+![](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
 
 ## Color Scales
 
-To apply the conditional format based on color scales, define the conditional format type as a **ColorScale** and specify the other properties associated with ColorScale such as condtioncount,color criteria etc.,to the specified cell or range. Finally,invalidate that cells to update the view.
+To apply the conditional format based on color scales, define the conditional format type as a **ColorScale** and specify the other properties associated with ColorScale such as condition count,color criteria etc.,to the specified cell or range. Finally,invalidate that cells to update the view.
 
 {% highlight c# %}
 
@@ -158,7 +154,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img3.jpeg)
+![](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
 
 
 ## Icon Sets
@@ -183,4 +179,4 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img4.jpeg)
+![](Conditional-Formatting_images/Conditional-Formatting_img4.PNG)

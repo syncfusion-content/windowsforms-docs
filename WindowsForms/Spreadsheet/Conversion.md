@@ -9,7 +9,6 @@ documentation: ug
 
 # Conversion
 This section explains about the conversion of workbook in Spreadsheet into image, pdf and html
-<br/>
 
 ## Image
 
@@ -34,7 +33,7 @@ System.Diagnostics.Process.Start("Sample.png");
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Pdf
 
@@ -77,7 +76,6 @@ System.Diagnostics.Process.Start("Sample.pdf");
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Html
 
