@@ -864,7 +864,7 @@ The Syntax: of the ISEVEN function is
 
 The given value must be a numeric value. If it is non-integer value, the value is rounded down.
 
-N> If the given value is nonnumeric, the ISEVEN function returns the ‘&#35;VALUE!’ error value.
+N> If the given value is non-numeric, the ISEVEN function returns the ‘&#35;VALUE!’ error value.
 
 #### Example:
 
@@ -901,7 +901,7 @@ The Syntax: of the ISODD function is
 
 The given value must be a numeric value. If it is a non-integer value, the value is rounded down.
 
-N> If the given value is nonnumeric, ISODD function returns the ‘&#35;VALUE!’ error value.
+N> If the given value is non-numeric, ISODD function returns the ‘&#35;VALUE!’ error value.
 
 
 
@@ -1499,8 +1499,8 @@ FORMULA</th><th>
 RESULT</th></tr>
 <tr>
 <td>
-=T(“SYNCFUSION”)</td><td>
-SYNCFUSION</td></tr>
+=T(“Syncfusion”)</td><td>
+Syncfusion</td></tr>
 <tr>
 <td>
 =T(TRUE)</td><td>
@@ -1580,7 +1580,7 @@ The CLEAN function is used to remove the non-printable characters from the given
 
 =Clean(Text)
 
-Text: Required. String or text from which to remove nonprintable characters.
+Text: Required. String or text from which to remove non-printable characters.
 
 #### Example  
 

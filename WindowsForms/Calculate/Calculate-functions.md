@@ -223,7 +223,7 @@ The ACCRINT function returns the accrued interest for a security with periodic i
 
 #### Syntax:
 
-ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis) where:
+ACCRINT(IssueDate,FirstInterestDate,settlementDate,rate,parvalue,frequency,basis) where:
 
 * IssueDate - issue date of security.
 * FirstInterestDate - first interest date of security.
@@ -297,7 +297,7 @@ DCOUNT(collection,column,condition) where:
 
 ### DCOUNTA
 
-The DCOUNTA function counts the number of nonblank cells in a column of a list that matches the given conditions.
+The DCOUNTA function counts the number of non-blank cells in a column of a list that matches the given conditions.
 
 #### Syntax:
 
@@ -1256,7 +1256,7 @@ NORM.DIST(x,mean,stdev,cumulative) where:
 
 ### NORMINV
 
-Returns theinverse of the normal cumulative distribution for the specified mean and standard deviation.
+Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
 
 
 #### Syntax:
@@ -1379,7 +1379,7 @@ The GAMMA.DIST function returns either the cumulative distribution or the probab
 
 GAMMA.DIST(x,y,z,cumulative) where:
 
-* x is the value that eveluates the function.
+* x is the value that evaluates the function.
 * y is a distribution parameter.
 * z is a distribution parameter.
 * cumulative is a logical value that indicates which form of the exponential function to provide.
@@ -3268,14 +3268,14 @@ The FILTERXML function retrieves specific data from the XML content by using the
 
 FILTERXML(xml, xpath) where:
 
-* xml is a string in valid XML format.
+* XML is a string in valid XML format.
 * xpath is a string in standard XPath format.
 
 
 
 #### Remarks:
 
-&#35;VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
+&#35;VALUE! - occurs if XML is not valid or  if XML contains a namespace with a prefix that is not valid.
 
 #### Example:
 
@@ -3291,13 +3291,13 @@ WEBSERVICE function retrieves data from a web service on the Internet.
 
 WEBSERVICE(url) where:
 
-* url is the url of the web service.
+* URL is the URL of the web service.
 
 
 
 #### Remarks:
 
-&#35;VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
+&#35;VALUE! - occurs if URL is unable to return the data, if URL result in a string that is not valid and if URL is a string that contains more than the 2048 characters.
 
 #### Example:
 

@@ -125,9 +125,9 @@ The default location of the ASP.NET Calculate source code is:
 
 This section elaborates on the deployment requirements for using Essential Calculate in various applications. It comprises the following topics:
 
-### DLLs
+### Assemblies
 
-The following dlls need to be referenced in your application for the usage of Essential Calculate.
+The following assemblies need to be referenced in your application for the usage of Essential Calculate.
 
 * Syncfusion.Core.dll
 * Syncfusion.Calculate.Base.dll

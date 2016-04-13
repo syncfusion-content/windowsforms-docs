@@ -3987,7 +3987,7 @@ where,
 
 #### Remarks:
 
-* If x, alpha, or beta is nonnumeric, WEIBULL returns the #VALUE! error value.
+* If x, alpha, or beta is non-numeric, WEIBULL returns the #VALUE! error value.
 * If x < 0, WEIBULL returns the #NUM! error value.
 * If alpha ≤ 0 or if beta ≤ 0, WEIBULL returns the #NUM! error value.
 
