@@ -154,7 +154,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img3.jpeg)
+![](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
 
 
 ## Icon Sets
