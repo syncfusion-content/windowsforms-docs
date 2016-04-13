@@ -89,7 +89,7 @@ Bitmap</td></tr>
 <tr>
 <td>
 FindText</td><td>
-Searches for the occurence of given input text in the PDF document and returns all the occurances and its location in all pages of the PDF document.</td><td>
+Searches for the occurrence of given input text in the PDF document and returns all the occurrences and its location in all pages of the PDF document.</td><td>
 Overloads:(String text, out Dictionary<int, List><<System.Drawing.RectangleF>> matchRect)</td><td>
 N/A</td><td>
 bool</td></tr>
