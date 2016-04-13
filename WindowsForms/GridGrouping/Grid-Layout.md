@@ -84,11 +84,11 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
 ### Adding Stacked Headers through Code
 The stacked headers can be added through code by using the below method,
 
-1. Need to create an object of [GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html) for adding the stacked column header.
+1. Need to create an object of[GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html) for adding the stacked column header.
 2. Add the visible columns that needs to be under the `GridStackedHeaderDescriptor` object.
-3. Add the `GridStackedHeaderDescriptor` collection to the [GridStackedHeaderRowDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptor.html) collection.
+3. Add the `GridStackedHeaderDescriptor` collection to the[GridStackedHeaderRowDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptor.html) collection.
 4. Add the `GridStackedHeaderRowDescriptor` collection to the `StackedHeaderRows` collection of the grid.
-5. Finally, display the stacked headers in grid by using the [TopLevelGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property.
+5. Finally, display the stacked headers in grid by using the[TopLevelGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -613,7 +613,7 @@ End Sub
 FieldChooser events are used to customize FieldChooser dialog box. It allows the user to modify control of the FieldChooser dialog and change its caption name. It has events to perform operations in FieldChooser dialog box such as [FieldChooserShowing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html), [FieldChooserShown](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShown_EV.html), [FieldChooserClosing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserClosing_EV.html) and [FieldChooserClosed](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserClosed_EV.html) events.
 
 ### Updating Layout on Closing
-By default, the GridGroupingControl will update the changes in the visibility of the columns while check/ unchecking the checkbox in the **FieldChooser dialog box**. To update the visibility or invisibility of columns after closing the FieldChooser Dialog box, set the [DeferLayoutUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridDataBoundFieldChooser~DeferLayoutUpdate.html) property to `True`.
+By default, the GridGroupingControl will update the changes in the visibility of the columns while check/ unchecking the checkbox in the **FieldChooser dialog box**. To update the visibility or invisibility of columns after closing the FieldChooser Dialog box, set the [DeferLayoutUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridDataBoundFieldChooser~DeferLayoutUpdate.html) property to ‘True’.
 
 {% tabs %}
 {% highlight c# %}
@@ -689,7 +689,7 @@ N> FieldChooser support can also be added in [StackedHeaders](#stacked-headers).
 To remove the hidden columns from the FieldChooser dialog, it is necessary to bypass the original column collection in the FieldChooser with a cloned [GridColumnDesriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptorCollection.html). The following steps illustrates how to do this:
 
 1. Get the collection of the visible columns that are removed from the column collection.
-2. Create a cloned column collection `GridColumnDescriptorCollection` from the [TableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~TableDescriptor.html).
+2. Create a cloned column collection `GridColumnDescriptorCollection` from the[TableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~TableDescriptor.html).
 
 Pass the cloned collection object as an argument to the FieldChooser to ensure that changes are made correctly. 
 
@@ -803,7 +803,7 @@ Me.gridGroupingControl1.TableModel.Cols.FreezeRange(1, 3)
 {% endtabs %}
 
 ### Freezing the Caption Row
-GridGroupingControl provides support to freeze caption row to make sure it stays visible while scrolling content to the left or right. With [FreezeCaption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FreezeCaption.html) property, you can freeze or unfreeze the caption row in the GridGroupingControl.
+GridGroupingControl provides support to freeze caption row to make sure it stays visible while scrolling content to the left or right. With [FreezeCaption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FreezeCaption.html) property, you can freeze or unfreeze the caption row in the Grid Grouping control.
 
 {% tabs %}
 {% highlight c# %}
