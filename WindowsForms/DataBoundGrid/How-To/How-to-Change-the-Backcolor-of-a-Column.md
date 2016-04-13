@@ -7,15 +7,15 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Change the Backcolor of a Column
+# How to Change the BackColor of a Column
 
 ### Introduction
 
-The GridDataBoundGrid maintains a collection of GridBoundColumn objects that will allow you to set column properties like backcolor, textcolor, font, etc. You can explicitly add GridBoundColumns to this.gridDataBoundGrid1.GridBoundColumns property either from code or at design-time. If you do not explicitly add GridBoundColumns to this collection, then the grid will generate an internal set of columns that you can use, this.gridDataBoundGrid1.Binder.InternalColumns. 
+The GridDataBoundGrid maintains a collection of GridBoundColumn objects that will allow you to set column properties like BackColor, TextColor, Font, etc. You can explicitly add GridBoundColumns to this.gridDataBoundGrid1.GridBoundColumns property either from code or at design-time. If you do not explicitly add GridBoundColumns to this collection, then the grid will generate an internal set of columns that you can use, this.gridDataBoundGrid1.Binder.InternalColumns. 
 
 #### Example
 
-To change the backcolor of a column named "Price", use the code given below. 
+To change the BackColor of a column named "Price", use the code given below. 
 
 {% highlight c# %}
 
